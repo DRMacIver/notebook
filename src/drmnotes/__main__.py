@@ -84,6 +84,8 @@ def md(text):
     return markdown.markdown(
         text, extensions=[
             MathJaxExtension(),
+            'markdown.extensions.fenced_code',
+            'markdown.extensions.codehilite',
         ]
     )
 
