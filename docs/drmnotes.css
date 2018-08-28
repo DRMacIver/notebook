@@ -1,0 +1,29 @@
+dl.metadata{
+    font-family: Courier, monospace;
+    font-size: 0.8em;
+    color: #3e6f45;
+    word-wrap: break-word;
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0
+}
+
+dl.metadata dt::after {
+  content: ": ";
+}
+
+dl.metadata dt {
+  clear: left;
+  float: left;
+  padding: 0;
+  margin: 0
+}
+
+dl.metadata dd {
+  float: left;
+  padding: 0;
+  margin-left: 1em 
+}
+
+#the-post p.subtitle { display: none; }
