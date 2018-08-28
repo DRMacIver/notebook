@@ -125,6 +125,10 @@ def build(rebuild):
             title = ' '.join(map(str, title_elt.contents))
             title_elt.decompose()
 
+        for d in [3, 2]:
+            for f in soup.findAll('h%d' % (d,)):
+                f.name = 'h%d' % (d + 1,)
+
         date = datetime.strptime(name.replace('.md', ''), POST_DATE_FORMAT)
 
         with open(dest, 'w') as o:
@@ -133,6 +137,13 @@ def build(rebuild):
                 title=title,
                 date=date.strftime('%Y-%m-%d'),
             ))
+
+    for post in glob(os.path.join(HTML_POSTS, "*.html")):
+        source = os.path.join(
+            POSTS, os.path.basename(post).replace('.html', '.md')
+        )
+        if not os.path.exists(source):
+            os.unlink(post)
 
     posts = []
 
