@@ -10,6 +10,7 @@ markdown = "*"
 drmnotes = {editable = true, path = "."}
 ipython = "*"
 "beautifulsoup4" = "*"
+feedgen = "*"
 
 [dev-packages]
 

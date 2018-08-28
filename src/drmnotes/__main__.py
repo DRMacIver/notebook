@@ -8,12 +8,13 @@ import markdown
 from bs4 import BeautifulSoup
 import attr
 import cgi
-
+from feedgen.feed import FeedGenerator
 
 
 @attr.s()
 class Post(object):
     name = attr.ib()
+    title = attr.ib()
     date = attr.ib()
     body = attr.ib()
     url = attr.ib()
@@ -171,12 +172,22 @@ def build(rebuild):
         with open(post) as i:
             contents = i.read()
         soup = BeautifulSoup(contents, 'html.parser')
+        title_elts = soup.select("p.subtitle")
+
+        name = os.path.basename(post)
+
+        if not title_elts:
+            title = name.replace('.html', '')
+        else:
+            title = ' '.join(map(str, title_elts[0].contents))
+
         date = soup.select('dd.post-date')[0].text.strip()
         url = '/posts/' + os.path.basename(post)
         posts.append(Post(
-            name=os.path.basename(post),
+            name=name,
             date=date, url=url,
-            body='\n'.join(map(str, soup.select('#the-post')[0].children))
+            body='\n'.join(map(str, soup.select('#the-post')[0].children)),
+            title=title,
         ))
 
     posts.sort(key=lambda p: p.name, reverse=True)
@@ -186,3 +197,20 @@ def build(rebuild):
         o.write(TEMPLATE_LOOKUP.get_template('index.html').render(
             posts=posts,
         ))
+
+
+    fg = FeedGenerator()
+    fg.id('https://notebook.drmaciver.com/')
+    fg.title("DRMacIver's notebook")
+    fg.author( {'name':'David R. MacIver','email':'david@drmaciver.com'} )
+    fg.link(href='https://notebook.drmaciver.com', rel='alternate')
+    fg.link(href='https://notebook.drmaciver.com/feed.xml', rel='self')
+    fg.language('en')
+
+    for post in posts:
+        fe = fg.add_entry()
+        fe.id('https://notebook.drmaciver.com' + post.url)
+        fe.link(href='https://notebook.drmaciver.com' + post.url)
+        fe.title(post.title or post.name)
+
+    fg.atom_file(os.path.join(HTML_ROOT, 'feed.xml'))
