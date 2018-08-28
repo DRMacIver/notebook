@@ -71,8 +71,7 @@ class MathJaxPattern(markdown.inlinepatterns.Pattern):
 
     def handleMatch(self, m):
         return self.markdown.htmlStash.store(
-            cgi.escape(m.group(0))
-
+            r"\(" + cgi.escape(m.group(2)) + r"\)"
         )
 
 class MathJaxExtension(markdown.Extension):
