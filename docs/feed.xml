@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-08-29T13:26:10.343301+00:00</updated>
+  <updated>2018-08-29T13:26:33.427674+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -15,7 +15,7 @@
     <title>
 First!
 </title>
-    <updated>2018-08-29T13:26:10.359460+00:00</updated>
+    <updated>2018-08-28T14:18:34+01:00</updated>
     <link href="https://notebook.drmaciver.com/posts/2018-08-28-08:14.html" rel="alternate"/>
   </entry>
   <entry>
@@ -23,7 +23,7 @@ First!
     <title>
 Notes on tiling with polyominoes
 </title>
-    <updated>2018-08-29T13:26:10.343373+00:00</updated>
+    <updated>2018-08-29T12:23:11+01:00</updated>
     <link href="https://notebook.drmaciver.com/posts/2018-08-29-09:35.html" rel="alternate"/>
   </entry>
 </feed>

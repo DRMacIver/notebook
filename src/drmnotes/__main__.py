@@ -9,10 +9,12 @@ from bs4 import BeautifulSoup
 import attr
 import cgi
 from feedgen.feed import FeedGenerator
+import subprocess
 
 
 @attr.s()
 class Post(object):
+    original_file = attr.ib()
     name = attr.ib()
     title = attr.ib()
     date = attr.ib()
@@ -184,6 +186,7 @@ def build(rebuild):
         date = soup.select('dd.post-date')[0].text.strip()
         url = '/posts/' + os.path.basename(post)
         posts.append(Post(
+            original_file=os.path.join(POSTS, name.replace('.html', '.md')),
             name=name,
             date=date, url=url,
             body='\n'.join(map(str, soup.select('#the-post')[0].children)),
@@ -212,5 +215,9 @@ def build(rebuild):
         fe.id('https://notebook.drmaciver.com' + post.url)
         fe.link(href='https://notebook.drmaciver.com' + post.url)
         fe.title(post.title or post.name)
+        updated = subprocess.check_output([
+        "git", "log", "-1", '--date=iso8601', '--format="%ad"', "--", post.original_file,
+        ]).decode('ascii').strip().strip('"')
+        fe.updated(updated)
 
-    fg.atom_file(os.path.join(HTML_ROOT, 'feed.xml'))
+    fg.atom_file(os.path.join(HTML_ROOT, 'feed.xml'), pretty=True)
