@@ -10,6 +10,9 @@ import attr
 import cgi
 from feedgen.feed import FeedGenerator
 import subprocess
+from dateutil import tz
+import re
+from markdown.inlinepatterns import HtmlPattern, SimpleTagPattern
 
 
 def git(*args):
@@ -79,18 +82,6 @@ def new_post():
 
 
 
-class MathJaxPattern(markdown.inlinepatterns.Pattern):
-
-    def __init__(self, md):
-        markdown.inlinepatterns.Pattern.__init__(self, r'(?<!\\)(\$\$?)(.+?)\2', md)
-
-    def handleMatch(self, m):
-        # Pass the math code through, unmodified except for basic entity substitutions.
-        # Stored in htmlStash so it doesn't get further processed by Markdown.
-        text = cgi.escape(m.group(2) + m.group(3) + m.group(2))
-        return self.markdown.htmlStash.store(text)
-
-
 class MathJaxExtension(markdown.Extension):
     def extendMarkdown(self, md, md_globals):
         # Needs to come before escape matching because \ is pretty important in LaTeX
@@ -103,29 +94,54 @@ class MathJaxPattern(markdown.inlinepatterns.Pattern):
         markdown.inlinepatterns.Pattern.__init__(self, r'\\\((.+?)\\\)', md)
 
     def handleMatch(self, m):
+        assert False
         return self.markdown.htmlStash.store(
             r"\(" + cgi.escape(m.group(2)) + r"\)"
         )
 
-class MathJaxExtension(markdown.Extension):
+
+LATEX_BLOCK = r"(\\begin{[^}]+}.+?\\end{[^}]+})"
+LATEX_EXPR = r"(\\\(.+?\\\))"
+
+
+DEL_RE = r'(~~)(.*?)~~'
+
+
+
+class MathJaxAlignExtension(markdown.Extension):
     def extendMarkdown(self, md, md_globals):
-        md.inlinePatterns.add('mathjax', MathJaxPattern(md), '<escape')
+        # Needs to come before escape matching because \ is pretty important in LaTeX
+        md.inlinePatterns.add('mathjaxblocks', HtmlPattern(LATEX_BLOCK, md), '<escape')
+        md.inlinePatterns.add('mathjaxexprs', HtmlPattern(LATEX_EXPR, md), '<escape')
+        md.inlinePatterns.add('del', SimpleTagPattern(DEL_RE, 'del') , '>not_strong')
 
 
 def md(text):
     return markdown.markdown(
         text, extensions=[
-            MathJaxExtension(),
+            MathJaxAlignExtension(),
             'markdown.extensions.fenced_code',
             'markdown.extensions.codehilite',
         ]
     )
 
 
+PULL_IN_TAGS = re.compile("\s+</", re.MULTILINE)
+
+
+def clean_html(soup):
+    html = soup.prettify()
+    return PULL_IN_TAGS.sub("</", html)
+
+
 @main.command()
 @click.option('--rebuild/--no-rebuild', default=False)
-def build(rebuild):
+@click.option('--full/--posts-only', default=True)
+@click.argument('name', default='')
+def build(rebuild, full, name):
     post_template = TEMPLATE_LOOKUP.get_template("post.html")
+
+    only = name
 
     try:
         os.makedirs(HTML_POSTS)
@@ -134,6 +150,8 @@ def build(rebuild):
 
     for source in glob(os.path.join(POSTS, '*.md')):
         name = os.path.basename(source)
+        if not name.startswith(only):
+            continue
         dest = os.path.join(HTML_POSTS, name.replace('.md', '.html'))
 
         if not (
@@ -167,10 +185,13 @@ def build(rebuild):
 
         with open(dest, 'w') as o:
             o.write(post_template.render(
-                post=soup.prettify(),
+                post=clean_html(soup),
                 title=title,
                 date=date.strftime('%Y-%m-%d'),
             ))
+
+    if not full:
+        return
 
     for post in glob(os.path.join(HTML_POSTS, "*.html")):
         source = os.path.join(
@@ -229,6 +250,10 @@ def build(rebuild):
         updated = subprocess.check_output([
         "git", "log", "-1", '--date=iso8601', '--format="%ad"', "--", post.original_file,
         ]).decode('ascii').strip().strip('"')
+        if not updated:
+            updated = datetime.strptime(post.name.replace('.html', ''), POST_DATE_FORMAT).replace(
+                tzinfo=tz.gettz()
+            )
         fe.updated(updated)
 
     fg.atom_file(os.path.join(HTML_ROOT, 'feed.xml'), pretty=True)
