@@ -61,7 +61,7 @@ In particular I have not been enjoying the markdown extension API at
  <pre><span></span><span class="kn">from</span> <span class="nn">markdown.inlinepatterns</span> <span class="kn">import</span> <span class="n">HtmlPattern</span>
 
 <span class="n">LATEX_BLOCK</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">"(</span><span class="se">\\</span><span class="s2">begin{[^}]+}.+?</span><span class="se">\\</span><span class="s2">end{[^}]+})"</span>
-<span class="n">LATEX_EXPR</span>  <span class="o">=</span> <span class="sa">r</span><span class="s2">"(</span><span class="se">\\</span><span class="s2">$.+?</span><span class="se">\\</span><span class="s2">$)"</span>
+<span class="n">LATEX_EXPR</span>  <span class="o">=</span> <span class="sa">r</span><span class="s2">"(</span><span class="se">\\</span><span class="s2">\(.+?</span><span class="se">\\</span><span class="s2">\))"</span>
 
 
 <span class="k">class</span> <span class="nc">MathJaxAlignExtension</span><span class="p">(</span><span class="n">markdown</span><span class="o">.</span><span class="n">Extension</span><span class="p">):</span>
@@ -74,7 +74,7 @@ In particular I have not been enjoying the markdown extension API at
 <p>
  Some caveats to note:</p>
 <div class="codehilite">
- <pre><span></span>* Those brackets around the expression? Those are *important*. The way that the regular expression processing works is that it messes with your regex a bit, and then uses capturing group $2$ as the output ($1$ will be everything in the current block prior to the start of your regex). This means that if you must use groups in your regex, make them named groups.
+ <pre><span></span>* Those brackets around the expression? Those are *important*. The way that the regular expression processing works is that it messes with your regex a bit, and then uses capturing group \(2\) as the output (\(1\) will be everything in the current block prior to the start of your regex). This means that if you must use groups in your regex, make them named groups.
 * For reasons I haven't fully understood and have chosen not to bother understanding because the current behaviour is correct for my needs, despite allegedly being an HTML block, this extension does seem to do entity escaping on the contents of your MathJax.</pre></div>
 </section>
 

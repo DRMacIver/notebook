@@ -19,7 +19,14 @@ DRMacIver's Notebook: First!
 
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
-  tex2jax: {inlineMath: [['$','$']]}
+  tex2jax: {inlineMath: [['$','$'], ['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
 });
 </script>
 
@@ -45,66 +52,50 @@ First!
 It will likely be biased towards short notes rather than longform essays.
 It's loosely inspired by
  <a href="https://shitpost.plover.com/">
-  Mark Jason Dominus's shitposting blog
- </a>
- and by my frustrations with WordPress, but I'm not really sure where it's going yet.
-</p>
+  Mark Jason Dominus's shitposting blog</a>
+ and by my frustrations with WordPress, but I'm not really sure where it's going yet.</p>
 <p>
  It's also a place where I'll be experimenting with notation,
 and generally trying to find a low friction way to express myself in a manner that I like.
-As such it's all a bit cobbled together out of spit, bailing wire, and Python.
-</p>
+As such it's all a bit cobbled together out of spit, bailing wire, and Python.</p>
 <h3>
- Notational Highlights
-</h3>
+ Notational Highlights</h3>
 <p>
  I kinda hate LaTeX, but it's the best typesetting language for mathematics that I know of,
 so this notebook supports it using
  <a href="https://www.mathjax.org/">
-  mathjax
- </a>
- .
-</p>
+  mathjax</a>
+ .</p>
 <p>
- Testing: $e^{i\pi} = -1$
-</p>
+ Testing: \(e^{i\pi} = -1\)</p>
 <p>
- A test of code highlighting.
-</p>
+ A test of code highlighting.</p>
 <div class="codehilite">
  <pre><span></span><span class="k">class</span> <span class="nc">SomeClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="sd">""""A python class"""</span>
 
     <span class="k">def</span> <span class="nf">method</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="sd">"""A method definition"""</span>
-</pre>
-</div>
+        <span class="sd">"""A method definition"""</span></pre></div>
 <p>
  As you've probably noticed, I'm using
  <a href="https://edwardtufte.github.io/tufte-css/">
-  Tufte CSS
- </a>
+  Tufte CSS</a>
  .
 I'm not sure it's exactly what I want, but it's a lot closer to what I want than most other things I've tried.
-I will likely be messing aroudn with this further.
-</p>
+I will likely be messing aroudn with this further.</p>
 <p>
  I'm also using
  <a href="http://www.makotemplates.org">
-  mako templates
- </a>
+  mako templates</a>
  ,
-and fully intend to define a metric tonne of macros to make this usable.
-</p>
+and fully intend to define a metric tonne of macros to make this usable.</p>
 <p>
  In general I expect the actual source code for this site to be totally unusable to anyone who is not me.
 If anything,
 if it's
  <em>
-  not
- </em>
- then I probably haven't done enough customization for my brain.
-</p>
+  not</em>
+ then I probably haven't done enough customization for my brain.</p>
 </section>
 
     </article>

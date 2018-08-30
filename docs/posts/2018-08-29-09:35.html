@@ -19,7 +19,14 @@ DRMacIver's Notebook: Notes on tiling with polyominoes
 
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
-  tex2jax: {inlineMath: [['$','$']]}
+  tex2jax: {inlineMath: [['$','$'], ['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
 });
 </script>
 
@@ -43,90 +50,66 @@ Notes on tiling with polyominoes
 <p>
  Gary Fredericks wrote about
  <a href="https://gfredericks.com/gfrlog/99">
-  a backtracking algorithm for tiling a board with polyominoes
- </a>
- .
-</p>
+  a backtracking algorithm for tiling a board with polyominoes</a>
+ .</p>
 <p>
  His solution is roughly "turn the problem into exact cover and then apply a bunch of interesting optimisations in this context to the naive backtracking algorithm".
 The paper
  <a href="https://arxiv.org/pdf/cs/0011047.pdf">
-  Dancing Links
- </a>
- by Donald E. Knuth in fact studies this exact problem as an application of the exact cover algorithm.
-</p>
+  Dancing Links</a>
+ by Donald E. Knuth in fact studies this exact problem as an application of the exact cover algorithm.</p>
 <p>
  I think some of the optimisations Gary performs are not ones that would be performed by a modern SAT solver because they are actually too expensive to be worth it if you're good at the SAT problem-e.g.
 I know modern SAT solvers tend not to bother decomposing problems into independent problems because the cost is too high-but
 it's possible they synergise well enough to be worth it. e.g. the number theory optimisation combined with the independent components may well be worth it,
-especially with the heuristic of prioritising moves that disconnect the board.
-</p>
+especially with the heuristic of prioritising moves that disconnect the board.</p>
 <p>
  I've been doing a bit of casual reading about this class of problem recently.
 I thought I'd use the opportunity of this new notebook to collect some references.
 Ideally these would be proper cites,
-but I haven't got the citation part of the notebook system working yet.
-</p>
+but I haven't got the citation part of the notebook system working yet.</p>
 <p>
  <a href="https://www.jstor.org/stable/pdf/2307321.pdf">
-  Checker Boards and Polyominoes
- </a>
+  Checker Boards and Polyominoes</a>
  by Solomon W. Golomb is a classic here.
 It looks at the question of tiling the chessboard with a single square monomino and 11 tetrominos of various shapes.
-In particular it establishes:
-</p>
+In particular it establishes:</p>
 <ul>
  <li>
-  You can do this with right tetrominoes given any placement of the monomino
- </li>
+  You can do this with right tetrominoes given any placement of the monomino</li>
  <li>
-  There are only four squares where you can place the monomino if you want to do it with straight tetrominoes.
- </li>
-</ul>
+  There are only four squares where you can place the monomino if you want to do it with straight tetrominoes.</li></ul>
 <p>
  <a href="http://chalkdustmagazine.com/blog/polyominoes/">
-  How to Tile a Chessboard
- </a>
- by Trupti Patel is a nice expository piece on this.
-</p>
+  How to Tile a Chessboard</a>
+ by Trupti Patel is a nice expository piece on this.</p>
 <p>
  Golomb also wrote
  <a href="http://publisher-connector.core.ac.uk/resourcesync/data/elsevier/pdf/03f/aHR0cDovL2FwaS5lbHNldmllci5jb20vY29udGVudC9hcnRpY2xlL3BpaS9zMDAyMTk4MDA2NjgwMDMzOQ%3D%3D.pdf">
-  Tiling with Polyominoes
- </a>
+  Tiling with Polyominoes</a>
  ,
-studying much more general questions of how to tile truncated chessboards with polyominoes.
-</p>
+studying much more general questions of how to tile truncated chessboards with polyominoes.</p>
 <p>
  A classic version of this is what
  <a href="https://en.wikipedia.org/wiki/Mutilated_chessboard_problem">
-  Wikipedia refers to as the mutilated chessboard problem
- </a>
- (apparently following Max Black):
-</p>
+  Wikipedia refers to as the mutilated chessboard problem</a>
+ (apparently following Max Black):</p>
 <blockquote>
  <p>
-  Suppose a standard 8×8 chessboard has two diagonally opposite corners removed, leaving 62 squares. Is it possible to place 31 dominoes of size 2×1 so as to cover all of these squares?
- </p>
-</blockquote>
+  Suppose a standard 8×8 chessboard has two diagonally opposite corners removed, leaving 62 squares. Is it possible to place 31 dominoes of size 2×1 so as to cover all of these squares?</p></blockquote>
 <p>
  The answer is no. In
  <a href="https://www.tandfonline.com/doi/pdf/10.1080/07468342.2004.11922062">
-  Tiling with Dominoes
- </a>
- , N. S. Mendelsohn discusses two proofs:
-</p>
+  Tiling with Dominoes</a>
+ , N. S. Mendelsohn discusses two proofs:</p>
 <blockquote>
  <h3>
-  First solution
- </h3>
+  First solution</h3>
  <p>
   From the checkerboard diagram, the region contains 30 black cells and 32 white cells.
-Since each domino covers 1 black and 1 white cell, tiling is impossible.
- </p>
+Since each domino covers 1 black and 1 white cell, tiling is impossible.</p>
  <h3>
-  Second solution
- </h3>
+  Second solution</h3>
  <p>
   When I was first shown the problem many years ago, it did not occur to me to colour
 the cells. The region itself had seven cells in the top and bottom rows and eight cells in
@@ -144,40 +127,31 @@ between any pair of consecutive rows. Hence the total number of vertical dominoe
 the sum of seven odd numbers, which is odd. In the same way, using columns instead
 of rows, there is an odd number of horizontal dominoes. Hence the total number of
 dominoes is even. Since there are 62 cells to cover, the number of dominoes required
-is 31, an odd number. Therefore, tiling is impossible.
- </p>
-</blockquote>
+is 31, an odd number. Therefore, tiling is impossible.</p></blockquote>
 <p>
- He goes on to say:
-</p>
+ He goes on to say:</p>
 <blockquote>
  <p>
   Why do I produce two solutions to the puzzle? It is because I am interested in
 the question of which is the better solution. At first glance, it appears that the first
 solution is the better. It is much shorter and is easily understood by many people with
 virtually no knowledge of mathematics. But are there considerations that might judge
-the second solution to be the better one?
- </p>
-</blockquote>
+the second solution to be the better one?</p></blockquote>
 <p>
  He then discusses whether the second one is better because it generalises better,
 when setting out to prove Gomory's theorem (which I've not been able to find a copy of the original of so far, but I haven't looked very hard):
 If you remove two squares of the same colour, you can always tiling the remainder with dominoes.
 The proof involves the construction of a hamiltonian circuit on the adjacency graph,
 and seems fiddly but interesting.
-I've only skimmed it and would like to digest it further.
-</p>
+I've only skimmed it and would like to digest it further.</p>
 <p>
  However note that we saw a generalisation in a different direction in the first paper linked! Golomb's proof of the impossibility tiling with straight tetrominoes unless the monomino was in a very specific location was
  <em>
-  also
- </em>
- a colouring argument.
-</p>
+  also</em>
+ a colouring argument.</p>
 <p>
  The wikipedia page references "Across the board: the mathematics of chessboard problems" by John J. Watkins.
-I should probably look up a copy.
-</p>
+I should probably look up a copy.</p>
 </section>
 
     </article>

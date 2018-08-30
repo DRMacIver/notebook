@@ -168,8 +168,6 @@ def do_build(rebuild=False, full=True, name=''):
         with open(source) as i:
             source_text = i.read()
 
-        source_text = source_text.replace(r"\(", "$").replace(r"\)", "$")
-
         source_html = md(source_text)
         soup = BeautifulSoup(source_html, 'html.parser')
 

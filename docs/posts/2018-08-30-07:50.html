@@ -19,7 +19,7 @@ DRMacIver's Notebook
 
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
-  tex2jax: {inlineMath: [['$','$']]},
+  tex2jax: {inlineMath: [['$','$'], ['\\(', '\\)']]},
   multiLine: true,
   "HTML-CSS": { 
        linebreaks: { automatic: true }
@@ -57,9 +57,9 @@ This will require some figuring out in terms of how to present maths.</p>
  As a starting point,
 here's a theorem:</p>
 <p>
- $H(m) = \sum\limits_{q = 1}^m {(-1)}^{q - 1} {m \choose q} \frac{1}{q}$</p>
+ \(H(m) = \sum\limits_{q = 1}^m {(-1)}^{q - 1} {m \choose q} \frac{1}{q}\)</p>
 <p>
- Where $H(m)$ is the m'th harmonic number $H(m) = \sum\limits_{i}^m \frac{1}{i}$.</p>
+ Where \(H(m)\) is the m'th harmonic number \(H(m) = \sum\limits_{i}^m \frac{1}{i}\).</p>
 <p>
  This came up in "Birthday Paradox, Coupon Collectors, Caching Algorithms and Self-Organizing Search" by Flajolet et al. (which is excellent) where it was stated as "well known". It wasn't well known to
  <em>
@@ -73,11 +73,11 @@ so I set out to prove it.</p>
 We use the following standard results:</p>
 <ul>
  <li>
-  $\frac{1}{n} = \int\limits_0^1 x^{n - 1}dx$</li>
+  \(\frac{1}{n} = \int\limits_0^1 x^{n - 1}dx\)</li>
  <li>
-  $(1 + x)^m = \sum\limits_{q=1}^m {m \choose q} x^q$</li>
+  \((1 + x)^m = \sum\limits_{q=1}^m {m \choose q} x^q\)</li>
  <li>
-  $(1 - x)^{-1} = \sum\limits_{q = 0}^\infty x^q$ for $|x| &lt; 1$.</li></ul>
+  \((1 - x)^{-1} = \sum\limits_{q = 0}^\infty x^q\) for \(|x| &lt; 1\).</li></ul>
 <p>
  We then perform the following manipulations (don't worry if some of these are clear as mud. They kinda should be):</p>
 <p>
@@ -98,12 +98,12 @@ We use the following standard results:</p>
  Notable magic tricks performed:</p>
 <ul>
  <li>
-  $\int\limits_0^1 -x^{-1} \left( {(1 - x)}^m - 1 \right)dx  \to \int\limits_0^1 {(1 - x)}^{-1} (x^m - 1) dx $ is a change of variables $x \to 1 - x$.</li>
+  \(\int\limits_0^1 -x^{-1} \left( {(1 - x)}^m - 1 \right)dx  \to \int\limits_0^1 {(1 - x)}^{-1} (x^m - 1) dx \) is a change of variables \(x \to 1 - x\).</li>
  <li>
-  $\sum\limits_{n = 0}^\infty \frac{1}{n + m} - \frac{1}{n} \to \lim\limits_{k \to \infty}  H(m) - \sum\limits_{n = k}^{m + k} \frac{1}{n + m}$ is because you can use a change of variables $k \to k - m$,
+  \(\sum\limits_{n = 0}^\infty \frac{1}{n + m} - \frac{1}{n} \to \lim\limits_{k \to \infty}  H(m) - \sum\limits_{n = k}^{m + k} \frac{1}{n + m}\) is because you can use a change of variables \(k \to k - m\),
 and then group the terms that cancel out.</li>
  <li>
-  The final limit is because $|\sum\limits_{n = k}^{m + k} \frac{1}{n + m}| \leq \frac{m}{k}$.</li></ul>
+  The final limit is because \(|\sum\limits_{n = k}^{m + k} \frac{1}{n + m}| \leq \frac{m}{k}\).</li></ul>
 <p>
  This is a style of calculation I think of as the Feynmann style because
  <del>
