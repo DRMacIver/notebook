@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+DRMacIver's Notebook: Mathjax and Python Markdown
+    </title>
+    <link rel="stylesheet" href="/tufte.css"/>
+    <link rel="stylesheet" href="/latex.css"/>
+    <link rel="stylesheet" href="/pygments.css"/>
+    <link rel="stylesheet" href="/drmnotes.css"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml/" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
+});
+</script>
+
+  </head>
+
+  <body>
+    <article>
+        <h1><a href="/">DRMacIver's Notebook</a></h1>
+        <p class=subtitle>
+Mathjax and Python Markdown
+</p>
+
+        
+
+<section id="the-post">
+<p class=subtitle>Mathjax and Python Markdown</p>
+<dl class=metadata>
+<dt>Published</dt>
+<dd class="post-date">2018-08-30</dd>
+</dl>
+<p>
+ I've been having an interesting time of things with this notebook and getting Python markdown and Mathjax to play well with each other.
+In particular I have not been enjoying the markdown extension API at
+ <em>
+  all</em>
+ .</p>
+<p>
+ Anyway, it turns out that it is easy to do what I need, just slightly undocumented and with some annoyingly silent failure modes.</p>
+<p>
+ Here is the (slightly simplified) code from this notebook that makes MathJax work correctly:</p>
+<div class="codehilite">
+ <pre><span></span><span class="kn">from</span> <span class="nn">markdown.inlinepatterns</span> <span class="kn">import</span> <span class="n">HtmlPattern</span>
+
+<span class="n">LATEX_BLOCK</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">"(</span><span class="se">\\</span><span class="s2">begin{[^}]+}.+?</span><span class="se">\\</span><span class="s2">end{[^}]+})"</span>
+<span class="n">LATEX_EXPR</span>  <span class="o">=</span> <span class="sa">r</span><span class="s2">"(</span><span class="se">\\</span><span class="s2">$.+?</span><span class="se">\\</span><span class="s2">$)"</span>
+
+
+<span class="k">class</span> <span class="nc">MathJaxAlignExtension</span><span class="p">(</span><span class="n">markdown</span><span class="o">.</span><span class="n">Extension</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">extendMarkdown</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">md</span><span class="p">,</span> <span class="n">md_globals</span><span class="p">):</span>
+        <span class="c1"># Needs to come before escape so that markdown doesn't break use of \ in LaTeX</span>
+        <span class="n">md</span><span class="o">.</span><span class="n">inlinePatterns</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s1">'mathjaxblocks'</span><span class="p">,</span> <span class="n">HtmlPattern</span><span class="p">(</span><span class="n">LATEX_BLOCK</span><span class="p">,</span> <span class="n">md</span><span class="p">),</span> <span class="s1">'&lt;escape'</span><span class="p">)</span>
+        <span class="n">md</span><span class="o">.</span><span class="n">inlinePatterns</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s1">'mathjaxexprs'</span><span class="p">,</span> <span class="n">HtmlPattern</span><span class="p">(</span><span class="n">LATEX_EXPR</span><span class="p">,</span> <span class="n">md</span><span class="p">),</span> <span class="s1">'&lt;escape'</span><span class="p">)</span></pre></div>
+<p>
+ The HtmlPattern class takes an expression and treats anything matching that expression as something that the markdown processor should not touch further.</p>
+<p>
+ Some caveats to note:</p>
+<div class="codehilite">
+ <pre><span></span>* Those brackets around the expression? Those are *important*. The way that the regular expression processing works is that it messes with your regex a bit, and then uses capturing group $2$ as the output ($1$ will be everything in the current block prior to the start of your regex). This means that if you must use groups in your regex, make them named groups.
+* For reasons I haven't fully understood and have chosen not to bother understanding because the current behaviour is correct for my needs, despite allegedly being an HTML block, this extension does seem to do entity escaping on the contents of your MathJax.</pre></div>
+</section>
+
+    </article>
+<footer>
+Copyright David R. MacIver.
+
+CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
+</footer>
+  </body>
+</html>
