@@ -247,6 +247,8 @@ def do_build(rebuild=False, full=True, name=''):
     fg.link(href='https://notebook.drmaciver.com/feed.xml', rel='self')
     fg.language('en')
 
+    dates = []
+
     for post in posts:
         fe = fg.add_entry()
         fe.id('https://notebook.drmaciver.com' + post.url)
@@ -259,6 +261,9 @@ def do_build(rebuild=False, full=True, name=''):
             updated = datetime.strptime(post.name.replace('.html', ''), POST_DATE_FORMAT).replace(
                 tzinfo=tz.gettz()
             )
+        dates.append(updated)
         fe.updated(updated)
+
+    fg.updated(max(dates))
 
     fg.atom_file(os.path.join(HTML_ROOT, 'feed.xml'), pretty=True)
