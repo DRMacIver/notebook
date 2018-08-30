@@ -19,7 +19,14 @@ DRMacIver's Notebook
 
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
-  tex2jax: {inlineMath: [['$','$']]}
+  tex2jax: {inlineMath: [['$','$']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
 });
 </script>
 
@@ -34,6 +41,77 @@ A collection of thoughts by David R. MacIver
 
         
 
+<section>
+<h2><a href="/posts/2018-08-30-07:50.html">2018-08-30</a></h2>
+
+
+<dl class="metadata">
+<dt>Published</dt>
+<dd class="post-date">2018-08-30</dd>
+</dl>
+
+
+<p>
+ I'm going to start trying to port over some contents from
+ <a href="https://github.com/DRMacIver/research-notebook">
+  my research notebook
+ </a>
+ into here,
+as this is intended long-term to be a replacement for it.
+</p>
+
+
+<p>
+ This will require some figuring out in terms of how to present maths.
+</p>
+
+
+<p>
+ Here's a theorem: $\sum\limits_{q = 1}^m {(-1)}^{q - 1} {m \choose q} \frac{1}{q} = H(m)$,
+where $H(m)$ is the m'th harmonic number $H(m) = \sum\limits_{i}^m \frac{1}{i}$.
+</p>
+
+
+<p>
+ Proof:
+</p>
+
+
+<p>
+ The main idea is to use the standard trick of turning a sum into an integral.
+We start by using the standard result that $\frac{1}{n} = \int\limits_0^1 x^{n - 1}dx$
+and rearranging as follows:
+</p>
+
+
+<p>
+ $\sum\limits_{q = 1}^m {(-1)}^{q - 1} {m \choose q} \frac{1}{q}$
+$= \sum\limits_{q = 1}^m {(-1)}^{q - 1} {m \choose q} \int\limits_0^1 x^{q - 1} dx$
+$= \int\limits_0^1 \sum\limits_{q = 1}^m {(-1)}^{q - 1} {m \choose q} x^{q - 1} dx$
+$= \int\limits_0^1 -x^{-1} \sum\limits_{q = 1}^m {m \choose q} {(-x)}^q dx$
+$= \int\limits_0^1 -x^{-1} \left( \sum\limits_{q = 0}^m {m \choose q} {(-x)}^q - 1 \right)dx $
+</p>
+
+
+<p>
+ We can now recognise that inner sum as the standard binomial expansion of $(1 - x)^m$,
+giving us $\int\limits_0^1 -x^{-1} \left( {(1 - x)}^m - 1 \right)dx $.
+By a change of variables $x \to 1 - x$,
+we get:
+</p>
+
+
+<p>
+ $\int\limits_0^1 {(1 - x)}^{-1} (x^m - 1) dx $
+$= \int\limits_0^1 \sum\limits_{n = 0}^\infty x^n (x^m - 1) dx $)
+$= \sum\limits_{n = 0}^\infty \int\limits_0^1 x^n (x^m - 1) $
+$= \sum\limits_{n = 0}^\infty \frac{1}{n + m} - \frac{1}{n} $
+$= \lim\limits_{k \to \infty}  H(m) - \sum\limits_{n = k}^{m + k} \frac{1}{n + m}$
+$= H(m)$
+</p>
+
+
+</section>
 <section>
 <h2><a href="/posts/2018-08-29-09:35.html">2018-08-29</a></h2>
 

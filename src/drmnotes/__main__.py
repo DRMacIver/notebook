@@ -73,7 +73,7 @@ def new_post():
         POSTS, name + '.md'
     )
     call([EDITOR, post_file])
-    build(rebuild=False)
+    do_build(rebuild=False)
     files = [post_file, os.path.join(HTML_POSTS, name + '.html')]
     git("add", *files)
     git("add", "-u", HTML_ROOT)
@@ -139,6 +139,10 @@ def clean_html(soup):
 @click.option('--full/--posts-only', default=True)
 @click.argument('name', default='')
 def build(rebuild, full, name):
+    do_build(rebuild, full, name)
+
+
+def do_build(rebuild=False, full=True, name=''):
     post_template = TEMPLATE_LOOKUP.get_template("post.html")
 
     only = name
