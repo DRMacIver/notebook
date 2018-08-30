@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-08-30T12:01:12.272701+00:00</updated>
+  <updated>2018-08-30T13:01:27+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -39,7 +39,7 @@ A collection of thoughts by David R. MacIver
     <title>
 Mathjax and Python Markdown
 </title>
-    <updated>2018-08-30T12:52:51+01:00</updated>
+    <updated>2018-08-30T13:01:27+01:00</updated>
     <link href="https://notebook.drmaciver.com/posts/2018-08-30-12:39.html" rel="alternate"/>
   </entry>
 </feed>
