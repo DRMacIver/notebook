@@ -127,11 +127,14 @@ def md(text):
 
 
 PULL_IN_TAGS = re.compile("\s+</", re.MULTILINE)
+PULL_IN_FULL_STOP = re.compile(r">\s+\.", re.MULTILINE)
 
 
 def clean_html(soup):
     html = soup.prettify()
-    return PULL_IN_TAGS.sub("</", html)
+    html = PULL_IN_TAGS.sub("</", html)
+    html = PULL_IN_FULL_STOP.sub(">.", html)
+    return html
 
 
 @main.command()
