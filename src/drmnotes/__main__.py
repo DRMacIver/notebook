@@ -12,6 +12,10 @@ from feedgen.feed import FeedGenerator
 import subprocess
 
 
+def git(*args):
+    subprocess.check_call(["git", *args])
+
+
 @attr.s()
 class Post(object):
     original_file = attr.ib()
@@ -61,10 +65,17 @@ POST_DATE_FORMAT = '%Y-%m-%d-%H:%M'
 @main.command(name='new-post')
 def new_post():
     now = datetime.now()
+    name = now.strftime(POST_DATE_FORMAT) 
     post_file = os.path.join(
-        POSTS, now.strftime(POST_DATE_FORMAT) + '.md'
+        POSTS, name + '.md'
     )
     call([EDITOR, post_file])
+    build(rebuild=False)
+    files = [post_file, os.path.join(HTML_POSTS, name + '.html')]
+    git("add", *files)
+    git("add", "-u", HTML_ROOT)
+    git("commit", *files, "-m", "Add new post %r" % (name,))
+
 
 
 
