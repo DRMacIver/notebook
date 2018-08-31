@@ -236,7 +236,9 @@ introduced in "Derivatives of regular expressions" by Janusz A. Brzozowski.</p>
 and some string \(u\) over \(L\),
 you can define the derivative language \(\partial(L, u) = \{v: uv \in L\}\).
 We can extend this further (and it will be useful to do so below).
-If \(M\) is some other language, we can define \(\partial(L, M) = \{v: \exists u \in M, uv \in L\}\).</p>
+If \(M\) is some other language, we can define \(\partial(L, M) = \{v: \exists u \in M, uv \in L\}\).
+I'm not currently sure if the derivative of a regular language by a regular langauge is regular in general. It is in the case we'll see later,
+and I suspect it is in general.</p>
 
 
 <p>
@@ -345,9 +347,10 @@ That is, at each character we can either:</p>
 <p>
  As long as the number of reachable representations for the original languages is finite,
 so is the number of reachable states in our Levenshtein construction:
-Every state is labelled by some set of combinations of \(n\) and \(\partial(L, \cdot^k\)) for some \(0 \leq k \leq n\), so there are only finitely many.
-In principle this may be exponentially bad in \(n\),
-but because of the laziness of our construction that often won't matter - you can still determine membership for a string of length \(k\) with only \(O(k)\) state traversals (though calculating those states could in principle require up to \(O(nm)\) work, where \(m\) is the number of states in the original automaton).</p>
+Every state is labelled by a set of languages of the form \(E(\partial(L, U), k)\) where \(U\) is a language defined by \(u_1 \ldots u_m\) with each \(u_i\) either a single character or a \(\cdot\),
+and \(m + k \leq n\). There are only finitely many such labels as long as there are only finitely many derivatives of \(L\),
+although in principle there may be exponentially many.
+Because of the laziness of our construction that often won't matter - you can still determine membership for a string of length \(k\) with only \(O(k)\) state traversals (though calculating those states could in principle require up to \(O(nm)\) work, where \(m\) is the number of states in the original automaton).</p>
 
 
 <p>
