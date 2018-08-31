@@ -78,7 +78,7 @@ def new_post():
     files = [post_file, os.path.join(HTML_POSTS, name + '.html')]
     git("add", *files)
     git("add", "-u", HTML_ROOT)
-    git("commit", *files, "-m", "Add new post %r" % (name,))
+    git("commit", "-m", "Add new post %r" % (name,))
 
 
 
