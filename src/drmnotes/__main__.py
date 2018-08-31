@@ -13,6 +13,7 @@ import subprocess
 from dateutil import tz
 import re
 from markdown.inlinepatterns import HtmlPattern, SimpleTagPattern
+import dateutil
 
 
 def git(*args):
@@ -257,7 +258,9 @@ def do_build(rebuild=False, full=True, name=''):
         updated = subprocess.check_output([
         "git", "log", "-1", '--date=iso8601', '--format="%ad"', "--", post.original_file,
         ]).decode('ascii').strip().strip('"')
-        if not updated:
+        if updated:
+            updated = dateutil.parser.parse(updated)
+        else:
             updated = datetime.strptime(post.name.replace('.html', ''), POST_DATE_FORMAT).replace(
                 tzinfo=tz.gettz()
             )
