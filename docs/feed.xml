@@ -12,33 +12,25 @@
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2018-08-28-08:14.html</id>
-    <title>
-First!
-</title>
+    <title>First!</title>
     <updated>2018-08-28T14:18:34+01:00</updated>
     <link href="https://notebook.drmaciver.com/posts/2018-08-28-08:14.html" rel="alternate"/>
   </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2018-08-29-09:35.html</id>
-    <title>
-Notes on tiling with polyominoes
-</title>
+    <title>Notes on tiling with polyominoes</title>
     <updated>2018-08-29T12:23:11+01:00</updated>
     <link href="https://notebook.drmaciver.com/posts/2018-08-29-09:35.html" rel="alternate"/>
   </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2018-08-30-07:50.html</id>
-    <title>
-A collection of thoughts by David R. MacIver
-</title>
+    <title>2018-08-30-07:50</title>
     <updated>2018-08-30T12:39:05+01:00</updated>
     <link href="https://notebook.drmaciver.com/posts/2018-08-30-07:50.html" rel="alternate"/>
   </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2018-08-30-12:39.html</id>
-    <title>
-Mathjax and Python Markdown
-</title>
+    <title>Mathjax and Python Markdown</title>
     <updated>2018-08-30T13:01:27+01:00</updated>
     <link href="https://notebook.drmaciver.com/posts/2018-08-30-12:39.html" rel="alternate"/>
   </entry>

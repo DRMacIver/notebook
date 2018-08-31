@@ -235,7 +235,7 @@ def do_build(rebuild=False, full=True, name=''):
 
     with open(INDEX_PAGE, 'w') as o:
         o.write(TEMPLATE_LOOKUP.get_template('index.html').render(
-            posts=posts,
+            posts=posts, title="Thoughts from David R. MacIver",
         ))
 
 
