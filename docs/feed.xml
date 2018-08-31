@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-08-31T06:57:00+01:00</updated>
+  <updated>2018-08-31T09:43:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -37,7 +37,13 @@
   <entry>
     <id>https://notebook.drmaciver.com/posts/2018-08-31-06:57.html</id>
     <title>2018-08-31-06:57</title>
-    <updated>2018-08-31T06:57:00+01:00</updated>
+    <updated>2018-08-31T08:11:29+01:00</updated>
     <link href="https://notebook.drmaciver.com/posts/2018-08-31-06:57.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-08-31-09:43.html</id>
+    <title>Some free user experience consulting for Google</title>
+    <updated>2018-08-31T09:43:00+01:00</updated>
+    <link href="https://notebook.drmaciver.com/posts/2018-08-31-09:43.html" rel="alternate"/>
   </entry>
 </feed>
