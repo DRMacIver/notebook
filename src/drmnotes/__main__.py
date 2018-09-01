@@ -65,21 +65,46 @@ def main():
 
 POST_DATE_FORMAT = '%Y-%m-%d-%H:%M'
 
+def contents(filename):
+    try:
+        with open(filename) as i:
+            return i.read()
+    except FileNotFoundError:
+        pass
 
-@main.command(name='new-post')
-def new_post():
-    now = datetime.now()
-    name = now.strftime(POST_DATE_FORMAT) 
+
+def edit_and_commit_post(name):
     post_file = os.path.join(
         POSTS, name + '.md'
     )
+
+    prev = contents(post_file)
+
     call([EDITOR, post_file])
+
+    if contents(post_file) == prev:
+        return
+
     do_build(rebuild=False)
     files = [post_file, os.path.join(HTML_POSTS, name + '.html')]
     git("add", *files)
     git("add", "-u", HTML_ROOT)
     git("commit", "-m", "Add new post %r" % (name,))
 
+
+@main.command(name='new-post')
+def new_post():
+    now = datetime.now()
+    name = now.strftime(POST_DATE_FORMAT) 
+    edit_and_commit_post(name)
+
+
+@main.command(name='edit-post')
+@click.argument('name')
+def edit_post(name):
+    name = os.path.basename(name)
+    name = name.replace('.md', '')
+    edit_and_commit_post(name)
 
 
 
