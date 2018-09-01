@@ -11,599 +11,100 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
-    <id>https://notebook.drmaciver.com/posts/2018-08-28-08:14.html</id>
-    <title>First!</title>
-    <updated>2018-08-28T14:18:34+01:00</updated>
+    <id>https://notebook.drmaciver.com/posts/2018-09-01-16:08.html</id>
+    <title>Modes of writing</title>
+    <updated>2018-09-01T16:11:23+01:00</updated>
     <content>
 
-&lt;p class="subtitle"&gt;First!&lt;/p&gt;
+&lt;p class="subtitle"&gt;Modes of writing&lt;/p&gt;
 
 
 &lt;dl class="metadata"&gt;
 &lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2018-08-28&lt;/dd&gt;
+&lt;dd class="post-date"&gt;2018-09-01&lt;/dd&gt;
 &lt;/dl&gt;
 
 
 &lt;p&gt;
- This is an experimental new blog intended for notes, thoughts, and whatever else I want to put here.
-It will likely be biased towards short notes rather than longform essays.
-It's loosely inspired by
- &lt;a href="https://shitpost.plover.com/"&gt;
-  Mark Jason Dominus's shitposting blog&lt;/a&gt;
- and by my frustrations with WordPress, but I'm not really sure where it's going yet.&lt;/p&gt;
-
-
-&lt;p&gt;
- It's also a place where I'll be experimenting with notation,
-and generally trying to find a low friction way to express myself in a manner that I like.
-As such it's all a bit cobbled together out of spit, bailing wire, and Python.&lt;/p&gt;
-
-
-&lt;h3&gt;
- Notational Highlights&lt;/h3&gt;
-
-
-&lt;p&gt;
- I kinda hate LaTeX, but it's the best typesetting language for mathematics that I know of,
-so this notebook supports it using
- &lt;a href="https://www.mathjax.org/"&gt;
-  mathjax&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;
- Testing: \(e^{i\pi} = -1\)&lt;/p&gt;
-
-
-&lt;p&gt;
- A test of code highlighting.&lt;/p&gt;
-
-
-&lt;div class="codehilite"&gt;
-&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;SomeClass&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;object&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="sd"&gt;""""A python class"""&lt;/span&gt;
-
-    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;method&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-        &lt;span class="sd"&gt;"""A method definition"""&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;
- As you've probably noticed, I'm using
- &lt;a href="https://edwardtufte.github.io/tufte-css/"&gt;
-  Tufte CSS&lt;/a&gt;.
-I'm not sure it's exactly what I want, but it's a lot closer to what I want than most other things I've tried.
-I will likely be messing aroudn with this further.&lt;/p&gt;
-
-
-&lt;p&gt;
- I'm also using
- &lt;a href="http://www.makotemplates.org"&gt;
-  mako templates&lt;/a&gt;
- ,
-and fully intend to define a metric tonne of macros to make this usable.&lt;/p&gt;
-
-
-&lt;p&gt;
- In general I expect the actual source code for this site to be totally unusable to anyone who is not me.
-If anything,
-if it's
- &lt;em&gt;
-  not&lt;/em&gt;
- then I probably haven't done enough customization for my brain.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2018-08-28-08:14.html" rel="alternate"/>
-  </entry>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2018-08-29-09:35.html</id>
-    <title>Notes on tiling with polyominoes</title>
-    <updated>2018-08-29T12:23:11+01:00</updated>
-    <content>
-
-&lt;p class="subtitle"&gt;Notes on tiling with polyominoes&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2018-08-29&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;
- Gary Fredericks wrote about
- &lt;a href="https://gfredericks.com/gfrlog/99"&gt;
-  a backtracking algorithm for tiling a board with polyominoes&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;
- His solution is roughly "turn the problem into exact cover and then apply a bunch of interesting optimisations in this context to the naive backtracking algorithm".
-The paper
- &lt;a href="https://arxiv.org/pdf/cs/0011047.pdf"&gt;
-  Dancing Links&lt;/a&gt;
- by Donald E. Knuth in fact studies this exact problem as an application of the exact cover algorithm.&lt;/p&gt;
-
-
-&lt;p&gt;
- I think some of the optimisations Gary performs are not ones that would be performed by a modern SAT solver because they are actually too expensive to be worth it if you're good at the SAT problem-e.g.
-I know modern SAT solvers tend not to bother decomposing problems into independent problems because the cost is too high-but
-it's possible they synergise well enough to be worth it. e.g. the number theory optimisation combined with the independent components may well be worth it,
-especially with the heuristic of prioritising moves that disconnect the board.&lt;/p&gt;
-
-
-&lt;p&gt;
- I've been doing a bit of casual reading about this class of problem recently.
-I thought I'd use the opportunity of this new notebook to collect some references.
-Ideally these would be proper cites,
-but I haven't got the citation part of the notebook system working yet.&lt;/p&gt;
-
-
-&lt;p&gt;
-&lt;a href="https://www.jstor.org/stable/pdf/2307321.pdf"&gt;
-  Checker Boards and Polyominoes&lt;/a&gt;
- by Solomon W. Golomb is a classic here.
-It looks at the question of tiling the chessboard with a single square monomino and 11 tetrominos of various shapes.
-In particular it establishes:&lt;/p&gt;
+ Two posts on writing to contrast:&lt;/p&gt;
 
 
 &lt;ul&gt;
 &lt;li&gt;
-  You can do this with right tetrominoes given any placement of the monomino&lt;/li&gt;
+&lt;a href="https://blog.malignat.us/2018-05-12/on-the-creative-merits-of-paper"&gt;
+   On the creative merits of paper&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;
-  There are only four squares where you can place the monomino if you want to do it with straight tetrominoes.&lt;/li&gt;&lt;/ul&gt;
+&lt;a href="http://devonzuegel.com/post/comparison-of-text-editing-methods"&gt;
+   Comparison of text editing methods&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 
 
 &lt;p&gt;
-&lt;a href="http://chalkdustmagazine.com/blog/polyominoes/"&gt;
-  How to Tile a Chessboard&lt;/a&gt;
- by Trupti Patel is a nice expository piece on this.&lt;/p&gt;
+ Devon posted the second on twitter and it reminded me of the first, which I struggled to refind, which is part of why I'm posting it here.&lt;/p&gt;
 
 
 &lt;p&gt;
- Golomb also wrote
- &lt;a href="http://publisher-connector.core.ac.uk/resourcesync/data/elsevier/pdf/03f/aHR0cDovL2FwaS5lbHNldmllci5jb20vY29udGVudC9hcnRpY2xlL3BpaS9zMDAyMTk4MDA2NjgwMDMzOQ%3D%3D.pdf"&gt;
-  Tiling with Polyominoes&lt;/a&gt;
- ,
-studying much more general questions of how to tile truncated chessboards with polyominoes.&lt;/p&gt;
+ I've been finding having a paper journal very useful, but I'm also finding having this new notebook useful in an entirely different way.
+The contrast is very interesting.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-09-01-16:08.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-09-01-09:17.html</id>
+    <title>Can a machine design?</title>
+    <updated>2018-09-01T09:22:46+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Can a machine design?&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-09-01&lt;/dd&gt;
+&lt;/dl&gt;
 
 
 &lt;p&gt;
- A classic version of this is what
- &lt;a href="https://en.wikipedia.org/wiki/Mutilated_chessboard_problem"&gt;
-  Wikipedia refers to as the mutilated chessboard problem&lt;/a&gt;
- (apparently following Max Black):&lt;/p&gt;
+&lt;a href="http://echo.iat.sfu.ca/library/cross_01_machine_des.pdf"&gt;
+  Can a machine design?&lt;/a&gt;
+ by Nigel Cross is an interesting paper about architecture (the real kind!) and its relation to automation.
+I found it via Adam Marshall Smith's PhD thesis
+ &lt;a href="https://adamsmith.as/papers/mechanizing_exploratory_game_design_book.pdf"&gt;
+  Mechanizing exploratory game design&lt;/a&gt;
+ (truthfully via
+ &lt;a href="https://twitter.com/maxkreminski/status/964923822766833664"&gt;
+  this tweet&lt;/a&gt;
+ about it from Max Kreminski),
+which is an excellent thesis on mechanically assisted creativity (I must admit I skimmed the technical content as less relevant to me - I care about the meta more than I care about game design qua game design).&lt;/p&gt;
+
+
+&lt;p&gt;
+ Most relevant quote for me:&lt;/p&gt;
 
 
 &lt;blockquote&gt;
 &lt;p&gt;
-  Suppose a standard 8×8 chessboard has two diagonally opposite corners removed, leaving 62 squares. Is it possible to place 31 dominoes of size 2×1 so as to cover all of these squares?&lt;/p&gt;&lt;/blockquote&gt;
+  Despite this apparently
+easy pace of interaction, all of the designers reported that they
+found the experiments hard work and stressful. They reported that
+the main benefit of using the "computer" was increased work
+speed, principally by reducing uncertainty (i.e., they relatively
+quickly received answers to queries, which they accepted as reliable
+information).
+I also tried a few variations from my standard experiments. The most interesting was to reverse the normal set of expectations of the functions of the designer and the "computer."
+The "computer" was given the job of having to produce a design to the
+satisfaction of the observing designer. It immediately was apparent
+that, in this situation, there was no stress on the designer—in fact, it
+became quite fun—and it was the "computer" that found the experience
+to be hard work.&lt;/p&gt;&lt;/blockquote&gt;
 
 
 &lt;p&gt;
- The answer is no. In
- &lt;a href="https://www.tandfonline.com/doi/pdf/10.1080/07468342.2004.11922062"&gt;
-  Tiling with Dominoes&lt;/a&gt;
- , N. S. Mendelsohn discusses two proofs:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;h3&gt;
-  First solution&lt;/h3&gt;
-&lt;p&gt;
-  From the checkerboard diagram, the region contains 30 black cells and 32 white cells.
-Since each domino covers 1 black and 1 white cell, tiling is impossible.&lt;/p&gt;
-&lt;h3&gt;
-  Second solution&lt;/h3&gt;
-&lt;p&gt;
-  When I was first shown the problem many years ago, it did not occur to me to colour
-the cells. The region itself had seven cells in the top and bottom rows and eight cells in
-the remaining rows. The same held for the columns. I proceeded to obtain information
-on how many dominoes pointed horizontally and how many vertically. The first count
-dealt with the vertical dominoes. If the region is tiled, the horizontal dominoes in the
-top row occupies an even number of cells. Hence, the cells in the top row that are not
-occupied by horizontal dominoes are odd in number. Thus there are an odd number of
-vertical dominoes between the first and second rows. Since the second row has eight
-cells, and an odd number are occupied by vertical dominoes coming down from the
-first row, there remain an odd number of cells in the second row. The same argument
-now shows there is an odd number of vertical dominoes from the second row to the
-third. Continuing this way, we see that there is an odd number of vertical dominoes
-between any pair of consecutive rows. Hence the total number of vertical dominoes is
-the sum of seven odd numbers, which is odd. In the same way, using columns instead
-of rows, there is an odd number of horizontal dominoes. Hence the total number of
-dominoes is even. Since there are 62 cells to cover, the number of dominoes required
-is 31, an odd number. Therefore, tiling is impossible.&lt;/p&gt;&lt;/blockquote&gt;
-
-
-&lt;p&gt;
- He goes on to say:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;
-  Why do I produce two solutions to the puzzle? It is because I am interested in
-the question of which is the better solution. At first glance, it appears that the first
-solution is the better. It is much shorter and is easily understood by many people with
-virtually no knowledge of mathematics. But are there considerations that might judge
-the second solution to be the better one?&lt;/p&gt;&lt;/blockquote&gt;
-
-
-&lt;p&gt;
- He then discusses whether the second one is better because it generalises better,
-when setting out to prove Gomory's theorem (which I've not been able to find a copy of the original of so far, but I haven't looked very hard):
-If you remove two squares of the same colour, you can always tiling the remainder with dominoes.
-The proof involves the construction of a hamiltonian circuit on the adjacency graph,
-and seems fiddly but interesting.
-I've only skimmed it and would like to digest it further.&lt;/p&gt;
-
-
-&lt;p&gt;
- However note that we saw a generalisation in a different direction in the first paper linked! Golomb's proof of the impossibility tiling with straight tetrominoes unless the monomino was in a very specific location was
- &lt;em&gt;
-  also&lt;/em&gt;
- a colouring argument.&lt;/p&gt;
-
-
-&lt;p&gt;
- The wikipedia page references "Across the board: the mathematics of chessboard problems" by John J. Watkins.
-I should probably look up a copy.&lt;/p&gt;
+ i.e. it's much more fun to tweak a computer's output than it is to be critiqued by one.
+An important observation for people in correctness research I think!&lt;/p&gt;
 
 </content>
-    <link href="https://notebook.drmaciver.com/posts/2018-08-29-09:35.html" rel="alternate"/>
-  </entry>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2018-08-30-07:50.html</id>
-    <title>2018-08-30-07:50</title>
-    <updated>2018-08-30T12:39:05+01:00</updated>
-    <content>
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2018-08-30&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;
- I'm going to start trying to port over some contents from
- &lt;a href="https://github.com/DRMacIver/research-notebook"&gt;
-  my research notebook&lt;/a&gt;
- into here,
-as this is intended long-term to be a replacement for it.
-This will require some figuring out in terms of how to present maths.&lt;/p&gt;
-
-
-&lt;p&gt;
- As a starting point,
-here's a theorem:&lt;/p&gt;
-
-
-&lt;p&gt;
- \(H(m) = \sum\limits_{q = 1}^m {(-1)}^{q - 1} {m \choose q} \frac{1}{q}\)&lt;/p&gt;
-
-
-&lt;p&gt;
- Where \(H(m)\) is the m'th harmonic number \(H(m) = \sum\limits_{i}^m \frac{1}{i}\).&lt;/p&gt;
-
-
-&lt;p&gt;
- This came up in "Birthday Paradox, Coupon Collectors, Caching Algorithms and Self-Organizing Search" by Flajolet et al. (which is excellent) where it was stated as "well known". It wasn't well known to
- &lt;em&gt;
-  me&lt;/em&gt;
- ,
-so I set out to prove it.&lt;/p&gt;
-
-
-&lt;p&gt;
- The following is my proof:&lt;/p&gt;
-
-
-&lt;p&gt;
- The main idea is to use a standard tricks of turning sums and integrals into other sums and integrals that happen to be easier to solve.
-We use the following standard results:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;
-  \(\frac{1}{n} = \int\limits_0^1 x^{n - 1}dx\)&lt;/li&gt;
-&lt;li&gt;
-  \((1 + x)^m = \sum\limits_{q=1}^m {m \choose q} x^q\)&lt;/li&gt;
-&lt;li&gt;
-  \((1 - x)^{-1} = \sum\limits_{q = 0}^\infty x^q\) for \(|x| &amp;lt; 1\).&lt;/li&gt;&lt;/ul&gt;
-
-
-&lt;p&gt;
- We then perform the following manipulations (don't worry if some of these are clear as mud. They kinda should be):&lt;/p&gt;
-
-
-&lt;p&gt;
- \begin{align}
-\sum\limits_{q = 1}^m {(-1)}^{q - 1} {m \choose q} \frac{1}{q} &amp;amp;= \sum\limits_{q = 1}^m {(-1)}^{q - 1} {m \choose q} \int\limits_0^1 x^{q - 1} dx\\
-&amp;amp;= \int\limits_0^1 \sum\limits_{q = 1}^m {(-1)}^{q - 1} {m \choose q} x^{q - 1} dx\\
-&amp;amp;= \int\limits_0^1 -x^{-1} \sum\limits_{q = 1}^m {m \choose q} {(-x)}^q dx\\
-&amp;amp;= \int\limits_0^1 -x^{-1} \left( \sum\limits_{q = 0}^m {m \choose q} {(-x)}^q - 1 \right)dx \\
-&amp;amp;= \int\limits_0^1 -x^{-1} \left( {(1 - x)}^m - 1 \right)dx \\
-&amp;amp;= \int\limits_0^1 {(1 - x)}^{-1} (x^m - 1) dx \\
-&amp;amp;= \int\limits_0^1 \sum\limits_{n = 0}^\infty x^n (x^m - 1) dx \\
-&amp;amp;= \sum\limits_{n = 0}^\infty \int\limits_0^1 x^n (x^m - 1) \\
-&amp;amp;= \sum\limits_{n = 0}^\infty \frac{1}{n + m} - \frac{1}{n} \\
-&amp;amp;= \lim\limits_{k \to \infty}  H(m) - \sum\limits_{n = k}^{m + k} \frac{1}{n + m}\\
-&amp;amp;= H(m)\\
-\end{align}&lt;/p&gt;
-
-
-&lt;p&gt;
- Notable magic tricks performed:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;
-  \(\int\limits_0^1 -x^{-1} \left( {(1 - x)}^m - 1 \right)dx  \to \int\limits_0^1 {(1 - x)}^{-1} (x^m - 1) dx \) is a change of variables \(x \to 1 - x\).&lt;/li&gt;
-&lt;li&gt;
-  \(\sum\limits_{n = 0}^\infty \frac{1}{n + m} - \frac{1}{n} \to \lim\limits_{k \to \infty}  H(m) - \sum\limits_{n = k}^{m + k} \frac{1}{n + m}\) is because you can use a change of variables \(k \to k - m\),
-and then group the terms that cancel out.&lt;/li&gt;
-&lt;li&gt;
-  The final limit is because \(|\sum\limits_{n = k}^{m + k} \frac{1}{n + m}| \leq \frac{m}{k}\).&lt;/li&gt;&lt;/ul&gt;
-
-
-&lt;p&gt;
- This is a style of calculation I think of as the Feynmann style because
- &lt;del&gt;
-  it's very good at seeming more clever than it actually is&lt;/del&gt;
- he was fond of smugly boasting about using this sort of trick in preference to contour integration.
-Given its prevalence prior to Feynmann, my only defence of the terminology is that it's not really intended as a compliment.&lt;/p&gt;
-
-
-&lt;p&gt;
- I find the Feynmann style completely unenlightening to read - the only way to read a Feynmann style proof is to do it yourself, using the original as a guide when you get stuck.&lt;/p&gt;
-
-
-&lt;p&gt;
- I think that's in some ways its point. It's not a proof technique designed to leverage enlightenment,
-but instead it leans heavily on your puzzle solving skills. That can be useful sometimes when you just want to brute force your way through a problem and don't really care about understanding it on any sort of deeper level.&lt;/p&gt;
-
-
-&lt;p&gt;
- I was exposed to the Feynmann style quite early on,
-due to reading Schaum's Outlines of Advanced Calculus (an earlier edition. I'm not sure how early. Brown covered one. I sadly gave away my copy, and the 1974 edition one I ordered doesn't seem to be quite it) prior to going to university.
-It has quite a lot of exercises using calculations like this,
-and afterwards I realised that this is what Feynmann had been talking about in "Surely you're joking, Mr Feynmann" (I didn't understand what a contour integral was until a few years later).&lt;/p&gt;
-
-
-&lt;p&gt;
- Somehow despite this the Feynmann style of brute force problem solving never really integrated into my mathematics,
-and it's only some years later I've come to appreciate its merits.
-I
- &lt;em&gt;
-  still&lt;/em&gt;
- prefer to achieve insight and make the problem trivial,
-but sometimes the problem isn't worth the insight and you're better off just putting in the hard work and solving it.&lt;/p&gt;
-
-
-&lt;p&gt;
- Putting in the hard work is also useful because sometimes it leads you to the insight you missed and you can throw away most of the work.
-This didn't happen here,
-but I think that's OK - it's not that interesting a problem,
-so I don't really feel upset by the lack of insight into it.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2018-08-30-07:50.html" rel="alternate"/>
-  </entry>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2018-08-30-12:39.html</id>
-    <title>Mathjax and Python Markdown</title>
-    <updated>2018-08-30T13:01:27+01:00</updated>
-    <content>
-
-&lt;p class="subtitle"&gt;Mathjax and Python Markdown&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2018-08-30&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;
- I've been having an interesting time of things with this notebook and getting Python markdown and Mathjax to play well with each other.
-In particular I have not been enjoying the markdown extension API at
- &lt;em&gt;
-  all&lt;/em&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;
- Anyway, it turns out that it is easy to do what I need, just slightly undocumented and with some annoyingly silent failure modes.&lt;/p&gt;
-
-
-&lt;p&gt;
- Here is the (slightly simplified) code from this notebook that makes MathJax work correctly:&lt;/p&gt;
-
-
-&lt;div class="codehilite"&gt;
-&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;markdown.inlinepatterns&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;HtmlPattern&lt;/span&gt;
-
-&lt;span class="n"&gt;LATEX_BLOCK&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="sa"&gt;r&lt;/span&gt;&lt;span class="s2"&gt;"(&lt;/span&gt;&lt;span class="se"&gt;\\&lt;/span&gt;&lt;span class="s2"&gt;begin{[^}]+}.+?&lt;/span&gt;&lt;span class="se"&gt;\\&lt;/span&gt;&lt;span class="s2"&gt;end{[^}]+})"&lt;/span&gt;
-&lt;span class="n"&gt;LATEX_EXPR&lt;/span&gt;  &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="sa"&gt;r&lt;/span&gt;&lt;span class="s2"&gt;"(&lt;/span&gt;&lt;span class="se"&gt;\\&lt;/span&gt;&lt;span class="s2"&gt;\(.+?&lt;/span&gt;&lt;span class="se"&gt;\\&lt;/span&gt;&lt;span class="s2"&gt;\))"&lt;/span&gt;
-
-
-&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;MathJaxAlignExtension&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;markdown&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Extension&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;extendMarkdown&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;md&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;md_globals&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-        &lt;span class="c1"&gt;# Needs to come before escape so that markdown doesn't break use of \ in LaTeX&lt;/span&gt;
-        &lt;span class="n"&gt;md&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;inlinePatterns&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;add&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'mathjaxblocks'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;HtmlPattern&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;LATEX_BLOCK&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;md&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="s1"&gt;'&amp;lt;escape'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-        &lt;span class="n"&gt;md&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;inlinePatterns&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;add&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'mathjaxexprs'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;HtmlPattern&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;LATEX_EXPR&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;md&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="s1"&gt;'&amp;lt;escape'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;
- The HtmlPattern class takes an expression and treats anything matching that expression as something that the markdown processor should not touch further.&lt;/p&gt;
-
-
-&lt;p&gt;
- Some caveats to note:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;
-  Those brackets around the expression? Those are
-  &lt;em&gt;
-   important&lt;/em&gt;. The way that the regular expression processing works is that it messes with your regex a bit, and then uses capturing group \(2\) as the output (\(1\) will be everything in the current block prior to the start of your regex). This means that if you must use groups in your regex, make them named groups.&lt;/li&gt;
-&lt;li&gt;
-  For reasons I haven't fully understood and have chosen not to bother understanding because the current behaviour is correct for my needs, despite allegedly being an HTML block, this extension does seem to do entity escaping on the contents of your MathJax.&lt;/li&gt;&lt;/ul&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2018-08-30-12:39.html" rel="alternate"/>
-  </entry>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2018-08-31-06:57.html</id>
-    <title>2018-08-31-06:57</title>
-    <updated>2018-08-31T10:57:28+01:00</updated>
-    <content>
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2018-08-31&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;
- I'm a big fan of the
- &lt;a href="https://en.wikipedia.org/wiki/Brzozowski_derivative"&gt;
-  Brzozowski derivative&lt;/a&gt;
- ,
-introduced in "Derivatives of regular expressions" by Janusz A. Brzozowski.&lt;/p&gt;
-
-
-&lt;p&gt;
- The basic idea is that given some language \(L\) over an alphabet \(A\),
-and some string \(u\) over \(L\),
-you can define the derivative language \(\partial(L, u) = \{v: uv \in L\}\).
-We can extend this further (and it will be useful to do so below).
-If \(M\) is some other language, we can define \(\partial(L, M) = \{v: \exists u \in M, uv \in L\}\).
-I'm not currently sure if the derivative of a regular language by a regular langauge is regular in general. It is in the case we'll see later,
-and I suspect it is in general.&lt;/p&gt;
-
-
-&lt;p&gt;
- This seems like a pretty trivial observation until you realise the following three things:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;
-  \(u \in L\) if and only if \(\epsilon \in \partial(L, u)\)&lt;/li&gt;
-&lt;li&gt;
-  \(uv \in L\) if and only if \(v \in \partial(L, u)\)&lt;/li&gt;
-&lt;li&gt;
-  For most common representations of languages, it's actually pretty easy to calculate a representation of their derivative.&lt;/li&gt;&lt;/ol&gt;
-
-
-&lt;p&gt;
- Putting these together, you can use the Brzozowski derivative to calculate a deterministic (not necessarily finite!) automaton for almost any language that you can easily represent.
-You label states with descriptions of languages,
-a state is accepting if it matches the empty string,
-and transitions to the states labelled by the derivatives.&lt;/p&gt;
-
-
-&lt;p&gt;
-&lt;a href="http://www.ccs.neu.edu/home/turon/re-deriv.pdf"&gt;
-  Regular-expression derivatives reexamined&lt;/a&gt;
- by Owens et al. has some nice practical details of doing this in the context of functional programming.&lt;/p&gt;
-
-
-&lt;p&gt;
- To see this in action, consider the standard regular expression operators.
-These satisfy the following identifies:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;
-  \(\partial(A | B, u) = \partial(A, u) | \partial(B, u)\)&lt;/li&gt;
-&lt;li&gt;
-  \(\partial(AB, u) = \partial(A, u)B | \nu(A) \partial(B, u)\), where \(\nu(A) = \epsilon\) if \(\epsilon \in A\) or \(\emptyset\) otherwise (i.e. the derivative can skip over \(A\) if and only if \(A\) contains the empty string)&lt;/li&gt;
-&lt;li&gt;
-  \(\partial(A^*, u) = \partial(A, u) A^*\)&lt;/li&gt;&lt;/ol&gt;
-
-
-&lt;p&gt;
- A result proved in Brzozowski's original paper (apparently. I can't currently seem to access it, and am going off thecite in "Regular-expression derivatives reexamined) is that a small number of reasonable normalisation rules over the representation of the language is enough to ensure that you only get finitely many states in the state machine generated by partial derivatives of regular expressions.
-It's certainly true that you only get finitely many if you have full equivalence for the regular languages labelling the states - the derivative automaton is actually the minimal automaton representing a language.&lt;/p&gt;
-
-
-&lt;p&gt;
- There are two very nice things about this representation of the language's automaton though:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;
-  It can be done
-  &lt;em&gt;
-   lazily&lt;/em&gt;. This means that even when your deterministic automaton has exponentially (or infinitely!) many states, you only ever need to explore the states that you walk when matching strings.&lt;/li&gt;
-&lt;li&gt;
-  It is very easy to extend with new operators.&lt;/li&gt;&lt;/ol&gt;
-
-
-&lt;p&gt;
- An example of (2) is that regular expressions reexamined actually does it for extended regular expressions with intersection and negation, because might as well right? It's no harder than doing it with the normal ones, even though adding these to your regular expression language can cause exponential blowup in the size of the automata compiled from your regex.&lt;/p&gt;
-
-
-&lt;p&gt;
- But there are even more interesting ones if you're prepared to go for more esoteric operations!&lt;/p&gt;
-
-
-&lt;p&gt;
- Have you heard of the
- &lt;a href="https://en.wikipedia.org/wiki/Levenshtein_automaton"&gt;
-  Levenshtein automaton&lt;/a&gt;
- ? The set of strings within some finite edit distance of another string is a regular language and you can define a nice automaton matching it.
-But in fact, a stronger result is true: For any regular language \(L\) and natural number \(n\), the set \(E(L, n) = \{u: \exists v \in L, d(u, v) \leq n\}\) is a regular language.
-Why?&lt;/p&gt;
-
-
-&lt;p&gt;
- Well, we can calculate its derivative!
-The derivative of \(E\) is \(\partial(E(L, n), u) = E(\partial(L, u), n) | E(L, n - 1) | E(\partial(L, \cdot), n - 1) | \partial(E(\partial(L, \cdot), n - 1), u)\).
-That is, at each character we can either:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;
-  Continue matching the original language (cost 0).&lt;/li&gt;
-&lt;li&gt;
-  Insert a new character in front of something in the original language (cost 1)&lt;/li&gt;
-&lt;li&gt;
-  Replace a character in the original language with \(u\) (cost 1)&lt;/li&gt;
-&lt;li&gt;
-  Drop a character from the original language and try again (cost 1)&lt;/li&gt;&lt;/ol&gt;
-
-
-&lt;p&gt;
- In the course of doing this we apply the following rewrite rules:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;
-  \(E(L, 0) = L\)&lt;/li&gt;
-&lt;li&gt;
-  \(E(\emptyset, n) = \emptyset\)&lt;/li&gt;&lt;/ol&gt;
-
-
-&lt;p&gt;
- As long as the number of reachable representations for the original languages is finite,
-so is the number of reachable states in our Levenshtein construction:
-Every state is labelled by a set of languages of the form \(E(\partial(L, U), k)\) where \(U\) is a language defined by \(u_1 \ldots u_m\) with each \(u_i\) either a single character or a \(\cdot\),
-and \(m + k \leq n\). There are only finitely many such labels as long as there are only finitely many derivatives of \(L\),
-although in principle there may be exponentially many.
-Because of the laziness of our construction that often won't matter - you can still determine membership for a string of length \(k\) with only \(O(k)\) state traversals (though calculating those states could in principle require up to \(O(nm)\) work, where \(m\) is the number of states in the original automaton).&lt;/p&gt;
-
-
-&lt;p&gt;
- You can also use this to determine the minimum edit distance between two regular languages,
-because you can test whether \(E(L, n) \cap L' = \emptyset\) by calculating and walking the generated DFA for the left hand side,
-so this gives you a decision procedure for \(d(L, L') \leq n\).&lt;/p&gt;
-
-
-&lt;p&gt;
- Is this a practical algorithm? Not sure. I've played with it a little bit, but I've not really put it to the test,
-but I think it's an interesting example of the flexibility of the Brzozowski derivative,
-and it was at least mildly surprising to me that the edit ball of a regular language is itself regular.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2018-08-31-06:57.html" rel="alternate"/>
+    <link href="https://notebook.drmaciver.com/posts/2018-09-01-09:17.html" rel="alternate"/>
   </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2018-08-31-09:43.html</id>
@@ -783,99 +284,598 @@ but I don't realistically expect those to be fixed, especially with the UK doomi
     <link href="https://notebook.drmaciver.com/posts/2018-08-31-09:43.html" rel="alternate"/>
   </entry>
   <entry>
-    <id>https://notebook.drmaciver.com/posts/2018-09-01-09:17.html</id>
-    <title>Can a machine design?</title>
-    <updated>2018-09-01T09:22:46+01:00</updated>
+    <id>https://notebook.drmaciver.com/posts/2018-08-31-06:57.html</id>
+    <title>2018-08-31-06:57</title>
+    <updated>2018-08-31T10:57:28+01:00</updated>
     <content>
-
-&lt;p class="subtitle"&gt;Can a machine design?&lt;/p&gt;
-
 
 &lt;dl class="metadata"&gt;
 &lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2018-09-01&lt;/dd&gt;
+&lt;dd class="post-date"&gt;2018-08-31&lt;/dd&gt;
 &lt;/dl&gt;
 
 
 &lt;p&gt;
-&lt;a href="http://echo.iat.sfu.ca/library/cross_01_machine_des.pdf"&gt;
-  Can a machine design?&lt;/a&gt;
- by Nigel Cross is an interesting paper about architecture (the real kind!) and its relation to automation.
-I found it via Adam Marshall Smith's PhD thesis
- &lt;a href="https://adamsmith.as/papers/mechanizing_exploratory_game_design_book.pdf"&gt;
-  Mechanizing exploratory game design&lt;/a&gt;
- (truthfully via
- &lt;a href="https://twitter.com/maxkreminski/status/964923822766833664"&gt;
-  this tweet&lt;/a&gt;
- about it from Max Kreminski),
-which is an excellent thesis on mechanically assisted creativity (I must admit I skimmed the technical content as less relevant to me - I care about the meta more than I care about game design qua game design).&lt;/p&gt;
+ I'm a big fan of the
+ &lt;a href="https://en.wikipedia.org/wiki/Brzozowski_derivative"&gt;
+  Brzozowski derivative&lt;/a&gt;
+ ,
+introduced in "Derivatives of regular expressions" by Janusz A. Brzozowski.&lt;/p&gt;
 
 
 &lt;p&gt;
- Most relevant quote for me:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;
-  Despite this apparently
-easy pace of interaction, all of the designers reported that they
-found the experiments hard work and stressful. They reported that
-the main benefit of using the "computer" was increased work
-speed, principally by reducing uncertainty (i.e., they relatively
-quickly received answers to queries, which they accepted as reliable
-information).
-I also tried a few variations from my standard experiments. The most interesting was to reverse the normal set of expectations of the functions of the designer and the "computer."
-The "computer" was given the job of having to produce a design to the
-satisfaction of the observing designer. It immediately was apparent
-that, in this situation, there was no stress on the designer—in fact, it
-became quite fun—and it was the "computer" that found the experience
-to be hard work.&lt;/p&gt;&lt;/blockquote&gt;
+ The basic idea is that given some language \(L\) over an alphabet \(A\),
+and some string \(u\) over \(L\),
+you can define the derivative language \(\partial(L, u) = \{v: uv \in L\}\).
+We can extend this further (and it will be useful to do so below).
+If \(M\) is some other language, we can define \(\partial(L, M) = \{v: \exists u \in M, uv \in L\}\).
+I'm not currently sure if the derivative of a regular language by a regular langauge is regular in general. It is in the case we'll see later,
+and I suspect it is in general.&lt;/p&gt;
 
 
 &lt;p&gt;
- i.e. it's much more fun to tweak a computer's output than it is to be critiqued by one.
-An important observation for people in correctness research I think!&lt;/p&gt;
+ This seems like a pretty trivial observation until you realise the following three things:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;
+  \(u \in L\) if and only if \(\epsilon \in \partial(L, u)\)&lt;/li&gt;
+&lt;li&gt;
+  \(uv \in L\) if and only if \(v \in \partial(L, u)\)&lt;/li&gt;
+&lt;li&gt;
+  For most common representations of languages, it's actually pretty easy to calculate a representation of their derivative.&lt;/li&gt;&lt;/ol&gt;
+
+
+&lt;p&gt;
+ Putting these together, you can use the Brzozowski derivative to calculate a deterministic (not necessarily finite!) automaton for almost any language that you can easily represent.
+You label states with descriptions of languages,
+a state is accepting if it matches the empty string,
+and transitions to the states labelled by the derivatives.&lt;/p&gt;
+
+
+&lt;p&gt;
+&lt;a href="http://www.ccs.neu.edu/home/turon/re-deriv.pdf"&gt;
+  Regular-expression derivatives reexamined&lt;/a&gt;
+ by Owens et al. has some nice practical details of doing this in the context of functional programming.&lt;/p&gt;
+
+
+&lt;p&gt;
+ To see this in action, consider the standard regular expression operators.
+These satisfy the following identifies:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;
+  \(\partial(A | B, u) = \partial(A, u) | \partial(B, u)\)&lt;/li&gt;
+&lt;li&gt;
+  \(\partial(AB, u) = \partial(A, u)B | \nu(A) \partial(B, u)\), where \(\nu(A) = \epsilon\) if \(\epsilon \in A\) or \(\emptyset\) otherwise (i.e. the derivative can skip over \(A\) if and only if \(A\) contains the empty string)&lt;/li&gt;
+&lt;li&gt;
+  \(\partial(A^*, u) = \partial(A, u) A^*\)&lt;/li&gt;&lt;/ol&gt;
+
+
+&lt;p&gt;
+ A result proved in Brzozowski's original paper (apparently. I can't currently seem to access it, and am going off thecite in "Regular-expression derivatives reexamined) is that a small number of reasonable normalisation rules over the representation of the language is enough to ensure that you only get finitely many states in the state machine generated by partial derivatives of regular expressions.
+It's certainly true that you only get finitely many if you have full equivalence for the regular languages labelling the states - the derivative automaton is actually the minimal automaton representing a language.&lt;/p&gt;
+
+
+&lt;p&gt;
+ There are two very nice things about this representation of the language's automaton though:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;
+  It can be done
+  &lt;em&gt;
+   lazily&lt;/em&gt;. This means that even when your deterministic automaton has exponentially (or infinitely!) many states, you only ever need to explore the states that you walk when matching strings.&lt;/li&gt;
+&lt;li&gt;
+  It is very easy to extend with new operators.&lt;/li&gt;&lt;/ol&gt;
+
+
+&lt;p&gt;
+ An example of (2) is that regular expressions reexamined actually does it for extended regular expressions with intersection and negation, because might as well right? It's no harder than doing it with the normal ones, even though adding these to your regular expression language can cause exponential blowup in the size of the automata compiled from your regex.&lt;/p&gt;
+
+
+&lt;p&gt;
+ But there are even more interesting ones if you're prepared to go for more esoteric operations!&lt;/p&gt;
+
+
+&lt;p&gt;
+ Have you heard of the
+ &lt;a href="https://en.wikipedia.org/wiki/Levenshtein_automaton"&gt;
+  Levenshtein automaton&lt;/a&gt;
+ ? The set of strings within some finite edit distance of another string is a regular language and you can define a nice automaton matching it.
+But in fact, a stronger result is true: For any regular language \(L\) and natural number \(n\), the set \(E(L, n) = \{u: \exists v \in L, d(u, v) \leq n\}\) is a regular language.
+Why?&lt;/p&gt;
+
+
+&lt;p&gt;
+ Well, we can calculate its derivative!
+The derivative of \(E\) is \(\partial(E(L, n), u) = E(\partial(L, u), n) | E(L, n - 1) | E(\partial(L, \cdot), n - 1) | \partial(E(\partial(L, \cdot), n - 1), u)\).
+That is, at each character we can either:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;
+  Continue matching the original language (cost 0).&lt;/li&gt;
+&lt;li&gt;
+  Insert a new character in front of something in the original language (cost 1)&lt;/li&gt;
+&lt;li&gt;
+  Replace a character in the original language with \(u\) (cost 1)&lt;/li&gt;
+&lt;li&gt;
+  Drop a character from the original language and try again (cost 1)&lt;/li&gt;&lt;/ol&gt;
+
+
+&lt;p&gt;
+ In the course of doing this we apply the following rewrite rules:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;
+  \(E(L, 0) = L\)&lt;/li&gt;
+&lt;li&gt;
+  \(E(\emptyset, n) = \emptyset\)&lt;/li&gt;&lt;/ol&gt;
+
+
+&lt;p&gt;
+ As long as the number of reachable representations for the original languages is finite,
+so is the number of reachable states in our Levenshtein construction:
+Every state is labelled by a set of languages of the form \(E(\partial(L, U), k)\) where \(U\) is a language defined by \(u_1 \ldots u_m\) with each \(u_i\) either a single character or a \(\cdot\),
+and \(m + k \leq n\). There are only finitely many such labels as long as there are only finitely many derivatives of \(L\),
+although in principle there may be exponentially many.
+Because of the laziness of our construction that often won't matter - you can still determine membership for a string of length \(k\) with only \(O(k)\) state traversals (though calculating those states could in principle require up to \(O(nm)\) work, where \(m\) is the number of states in the original automaton).&lt;/p&gt;
+
+
+&lt;p&gt;
+ You can also use this to determine the minimum edit distance between two regular languages,
+because you can test whether \(E(L, n) \cap L' = \emptyset\) by calculating and walking the generated DFA for the left hand side,
+so this gives you a decision procedure for \(d(L, L') \leq n\).&lt;/p&gt;
+
+
+&lt;p&gt;
+ Is this a practical algorithm? Not sure. I've played with it a little bit, but I've not really put it to the test,
+but I think it's an interesting example of the flexibility of the Brzozowski derivative,
+and it was at least mildly surprising to me that the edit ball of a regular language is itself regular.&lt;/p&gt;
 
 </content>
-    <link href="https://notebook.drmaciver.com/posts/2018-09-01-09:17.html" rel="alternate"/>
+    <link href="https://notebook.drmaciver.com/posts/2018-08-31-06:57.html" rel="alternate"/>
   </entry>
   <entry>
-    <id>https://notebook.drmaciver.com/posts/2018-09-01-16:08.html</id>
-    <title>Modes of writing</title>
-    <updated>2018-09-01T16:11:23+01:00</updated>
+    <id>https://notebook.drmaciver.com/posts/2018-08-30-12:39.html</id>
+    <title>Mathjax and Python Markdown</title>
+    <updated>2018-08-30T13:01:27+01:00</updated>
     <content>
 
-&lt;p class="subtitle"&gt;Modes of writing&lt;/p&gt;
+&lt;p class="subtitle"&gt;Mathjax and Python Markdown&lt;/p&gt;
 
 
 &lt;dl class="metadata"&gt;
 &lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2018-09-01&lt;/dd&gt;
+&lt;dd class="post-date"&gt;2018-08-30&lt;/dd&gt;
 &lt;/dl&gt;
 
 
 &lt;p&gt;
- Two posts on writing to contrast:&lt;/p&gt;
+ I've been having an interesting time of things with this notebook and getting Python markdown and Mathjax to play well with each other.
+In particular I have not been enjoying the markdown extension API at
+ &lt;em&gt;
+  all&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Anyway, it turns out that it is easy to do what I need, just slightly undocumented and with some annoyingly silent failure modes.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Here is the (slightly simplified) code from this notebook that makes MathJax work correctly:&lt;/p&gt;
+
+
+&lt;div class="codehilite"&gt;
+&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;markdown.inlinepatterns&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;HtmlPattern&lt;/span&gt;
+
+&lt;span class="n"&gt;LATEX_BLOCK&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="sa"&gt;r&lt;/span&gt;&lt;span class="s2"&gt;"(&lt;/span&gt;&lt;span class="se"&gt;\\&lt;/span&gt;&lt;span class="s2"&gt;begin{[^}]+}.+?&lt;/span&gt;&lt;span class="se"&gt;\\&lt;/span&gt;&lt;span class="s2"&gt;end{[^}]+})"&lt;/span&gt;
+&lt;span class="n"&gt;LATEX_EXPR&lt;/span&gt;  &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="sa"&gt;r&lt;/span&gt;&lt;span class="s2"&gt;"(&lt;/span&gt;&lt;span class="se"&gt;\\&lt;/span&gt;&lt;span class="s2"&gt;\(.+?&lt;/span&gt;&lt;span class="se"&gt;\\&lt;/span&gt;&lt;span class="s2"&gt;\))"&lt;/span&gt;
+
+
+&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;MathJaxAlignExtension&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;markdown&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Extension&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;extendMarkdown&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;md&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;md_globals&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+        &lt;span class="c1"&gt;# Needs to come before escape so that markdown doesn't break use of \ in LaTeX&lt;/span&gt;
+        &lt;span class="n"&gt;md&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;inlinePatterns&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;add&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'mathjaxblocks'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;HtmlPattern&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;LATEX_BLOCK&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;md&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="s1"&gt;'&amp;lt;escape'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="n"&gt;md&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;inlinePatterns&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;add&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'mathjaxexprs'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;HtmlPattern&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;LATEX_EXPR&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;md&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="s1"&gt;'&amp;lt;escape'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;
+ The HtmlPattern class takes an expression and treats anything matching that expression as something that the markdown processor should not touch further.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Some caveats to note:&lt;/p&gt;
 
 
 &lt;ul&gt;
 &lt;li&gt;
-&lt;a href="https://blog.malignat.us/2018-05-12/on-the-creative-merits-of-paper"&gt;
-   On the creative merits of paper&lt;/a&gt;&lt;/li&gt;
+  Those brackets around the expression? Those are
+  &lt;em&gt;
+   important&lt;/em&gt;. The way that the regular expression processing works is that it messes with your regex a bit, and then uses capturing group \(2\) as the output (\(1\) will be everything in the current block prior to the start of your regex). This means that if you must use groups in your regex, make them named groups.&lt;/li&gt;
 &lt;li&gt;
-&lt;a href="http://devonzuegel.com/post/comparison-of-text-editing-methods"&gt;
-   Comparison of text editing methods&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
-
-
-&lt;p&gt;
- Devon posted the second on twitter and it reminded me of the first, which I struggled to refind, which is part of why I'm posting it here.&lt;/p&gt;
-
-
-&lt;p&gt;
- I've been finding having a paper journal very useful, but I'm also finding having this new notebook useful in an entirely different way.
-The contrast is very interesting.&lt;/p&gt;
+  For reasons I haven't fully understood and have chosen not to bother understanding because the current behaviour is correct for my needs, despite allegedly being an HTML block, this extension does seem to do entity escaping on the contents of your MathJax.&lt;/li&gt;&lt;/ul&gt;
 
 </content>
-    <link href="https://notebook.drmaciver.com/posts/2018-09-01-16:08.html" rel="alternate"/>
+    <link href="https://notebook.drmaciver.com/posts/2018-08-30-12:39.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-08-30-07:50.html</id>
+    <title>2018-08-30-07:50</title>
+    <updated>2018-08-30T12:39:05+01:00</updated>
+    <content>
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-08-30&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ I'm going to start trying to port over some contents from
+ &lt;a href="https://github.com/DRMacIver/research-notebook"&gt;
+  my research notebook&lt;/a&gt;
+ into here,
+as this is intended long-term to be a replacement for it.
+This will require some figuring out in terms of how to present maths.&lt;/p&gt;
+
+
+&lt;p&gt;
+ As a starting point,
+here's a theorem:&lt;/p&gt;
+
+
+&lt;p&gt;
+ \(H(m) = \sum\limits_{q = 1}^m {(-1)}^{q - 1} {m \choose q} \frac{1}{q}\)&lt;/p&gt;
+
+
+&lt;p&gt;
+ Where \(H(m)\) is the m'th harmonic number \(H(m) = \sum\limits_{i}^m \frac{1}{i}\).&lt;/p&gt;
+
+
+&lt;p&gt;
+ This came up in "Birthday Paradox, Coupon Collectors, Caching Algorithms and Self-Organizing Search" by Flajolet et al. (which is excellent) where it was stated as "well known". It wasn't well known to
+ &lt;em&gt;
+  me&lt;/em&gt;
+ ,
+so I set out to prove it.&lt;/p&gt;
+
+
+&lt;p&gt;
+ The following is my proof:&lt;/p&gt;
+
+
+&lt;p&gt;
+ The main idea is to use a standard tricks of turning sums and integrals into other sums and integrals that happen to be easier to solve.
+We use the following standard results:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;
+  \(\frac{1}{n} = \int\limits_0^1 x^{n - 1}dx\)&lt;/li&gt;
+&lt;li&gt;
+  \((1 + x)^m = \sum\limits_{q=1}^m {m \choose q} x^q\)&lt;/li&gt;
+&lt;li&gt;
+  \((1 - x)^{-1} = \sum\limits_{q = 0}^\infty x^q\) for \(|x| &amp;lt; 1\).&lt;/li&gt;&lt;/ul&gt;
+
+
+&lt;p&gt;
+ We then perform the following manipulations (don't worry if some of these are clear as mud. They kinda should be):&lt;/p&gt;
+
+
+&lt;p&gt;
+ \begin{align}
+\sum\limits_{q = 1}^m {(-1)}^{q - 1} {m \choose q} \frac{1}{q} &amp;amp;= \sum\limits_{q = 1}^m {(-1)}^{q - 1} {m \choose q} \int\limits_0^1 x^{q - 1} dx\\
+&amp;amp;= \int\limits_0^1 \sum\limits_{q = 1}^m {(-1)}^{q - 1} {m \choose q} x^{q - 1} dx\\
+&amp;amp;= \int\limits_0^1 -x^{-1} \sum\limits_{q = 1}^m {m \choose q} {(-x)}^q dx\\
+&amp;amp;= \int\limits_0^1 -x^{-1} \left( \sum\limits_{q = 0}^m {m \choose q} {(-x)}^q - 1 \right)dx \\
+&amp;amp;= \int\limits_0^1 -x^{-1} \left( {(1 - x)}^m - 1 \right)dx \\
+&amp;amp;= \int\limits_0^1 {(1 - x)}^{-1} (x^m - 1) dx \\
+&amp;amp;= \int\limits_0^1 \sum\limits_{n = 0}^\infty x^n (x^m - 1) dx \\
+&amp;amp;= \sum\limits_{n = 0}^\infty \int\limits_0^1 x^n (x^m - 1) \\
+&amp;amp;= \sum\limits_{n = 0}^\infty \frac{1}{n + m} - \frac{1}{n} \\
+&amp;amp;= \lim\limits_{k \to \infty}  H(m) - \sum\limits_{n = k}^{m + k} \frac{1}{n + m}\\
+&amp;amp;= H(m)\\
+\end{align}&lt;/p&gt;
+
+
+&lt;p&gt;
+ Notable magic tricks performed:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;
+  \(\int\limits_0^1 -x^{-1} \left( {(1 - x)}^m - 1 \right)dx  \to \int\limits_0^1 {(1 - x)}^{-1} (x^m - 1) dx \) is a change of variables \(x \to 1 - x\).&lt;/li&gt;
+&lt;li&gt;
+  \(\sum\limits_{n = 0}^\infty \frac{1}{n + m} - \frac{1}{n} \to \lim\limits_{k \to \infty}  H(m) - \sum\limits_{n = k}^{m + k} \frac{1}{n + m}\) is because you can use a change of variables \(k \to k - m\),
+and then group the terms that cancel out.&lt;/li&gt;
+&lt;li&gt;
+  The final limit is because \(|\sum\limits_{n = k}^{m + k} \frac{1}{n + m}| \leq \frac{m}{k}\).&lt;/li&gt;&lt;/ul&gt;
+
+
+&lt;p&gt;
+ This is a style of calculation I think of as the Feynmann style because
+ &lt;del&gt;
+  it's very good at seeming more clever than it actually is&lt;/del&gt;
+ he was fond of smugly boasting about using this sort of trick in preference to contour integration.
+Given its prevalence prior to Feynmann, my only defence of the terminology is that it's not really intended as a compliment.&lt;/p&gt;
+
+
+&lt;p&gt;
+ I find the Feynmann style completely unenlightening to read - the only way to read a Feynmann style proof is to do it yourself, using the original as a guide when you get stuck.&lt;/p&gt;
+
+
+&lt;p&gt;
+ I think that's in some ways its point. It's not a proof technique designed to leverage enlightenment,
+but instead it leans heavily on your puzzle solving skills. That can be useful sometimes when you just want to brute force your way through a problem and don't really care about understanding it on any sort of deeper level.&lt;/p&gt;
+
+
+&lt;p&gt;
+ I was exposed to the Feynmann style quite early on,
+due to reading Schaum's Outlines of Advanced Calculus (an earlier edition. I'm not sure how early. Brown covered one. I sadly gave away my copy, and the 1974 edition one I ordered doesn't seem to be quite it) prior to going to university.
+It has quite a lot of exercises using calculations like this,
+and afterwards I realised that this is what Feynmann had been talking about in "Surely you're joking, Mr Feynmann" (I didn't understand what a contour integral was until a few years later).&lt;/p&gt;
+
+
+&lt;p&gt;
+ Somehow despite this the Feynmann style of brute force problem solving never really integrated into my mathematics,
+and it's only some years later I've come to appreciate its merits.
+I
+ &lt;em&gt;
+  still&lt;/em&gt;
+ prefer to achieve insight and make the problem trivial,
+but sometimes the problem isn't worth the insight and you're better off just putting in the hard work and solving it.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Putting in the hard work is also useful because sometimes it leads you to the insight you missed and you can throw away most of the work.
+This didn't happen here,
+but I think that's OK - it's not that interesting a problem,
+so I don't really feel upset by the lack of insight into it.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-08-30-07:50.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-08-29-09:35.html</id>
+    <title>Notes on tiling with polyominoes</title>
+    <updated>2018-08-29T12:23:11+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Notes on tiling with polyominoes&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-08-29&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ Gary Fredericks wrote about
+ &lt;a href="https://gfredericks.com/gfrlog/99"&gt;
+  a backtracking algorithm for tiling a board with polyominoes&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;
+ His solution is roughly "turn the problem into exact cover and then apply a bunch of interesting optimisations in this context to the naive backtracking algorithm".
+The paper
+ &lt;a href="https://arxiv.org/pdf/cs/0011047.pdf"&gt;
+  Dancing Links&lt;/a&gt;
+ by Donald E. Knuth in fact studies this exact problem as an application of the exact cover algorithm.&lt;/p&gt;
+
+
+&lt;p&gt;
+ I think some of the optimisations Gary performs are not ones that would be performed by a modern SAT solver because they are actually too expensive to be worth it if you're good at the SAT problem-e.g.
+I know modern SAT solvers tend not to bother decomposing problems into independent problems because the cost is too high-but
+it's possible they synergise well enough to be worth it. e.g. the number theory optimisation combined with the independent components may well be worth it,
+especially with the heuristic of prioritising moves that disconnect the board.&lt;/p&gt;
+
+
+&lt;p&gt;
+ I've been doing a bit of casual reading about this class of problem recently.
+I thought I'd use the opportunity of this new notebook to collect some references.
+Ideally these would be proper cites,
+but I haven't got the citation part of the notebook system working yet.&lt;/p&gt;
+
+
+&lt;p&gt;
+&lt;a href="https://www.jstor.org/stable/pdf/2307321.pdf"&gt;
+  Checker Boards and Polyominoes&lt;/a&gt;
+ by Solomon W. Golomb is a classic here.
+It looks at the question of tiling the chessboard with a single square monomino and 11 tetrominos of various shapes.
+In particular it establishes:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;
+  You can do this with right tetrominoes given any placement of the monomino&lt;/li&gt;
+&lt;li&gt;
+  There are only four squares where you can place the monomino if you want to do it with straight tetrominoes.&lt;/li&gt;&lt;/ul&gt;
+
+
+&lt;p&gt;
+&lt;a href="http://chalkdustmagazine.com/blog/polyominoes/"&gt;
+  How to Tile a Chessboard&lt;/a&gt;
+ by Trupti Patel is a nice expository piece on this.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Golomb also wrote
+ &lt;a href="http://publisher-connector.core.ac.uk/resourcesync/data/elsevier/pdf/03f/aHR0cDovL2FwaS5lbHNldmllci5jb20vY29udGVudC9hcnRpY2xlL3BpaS9zMDAyMTk4MDA2NjgwMDMzOQ%3D%3D.pdf"&gt;
+  Tiling with Polyominoes&lt;/a&gt;
+ ,
+studying much more general questions of how to tile truncated chessboards with polyominoes.&lt;/p&gt;
+
+
+&lt;p&gt;
+ A classic version of this is what
+ &lt;a href="https://en.wikipedia.org/wiki/Mutilated_chessboard_problem"&gt;
+  Wikipedia refers to as the mutilated chessboard problem&lt;/a&gt;
+ (apparently following Max Black):&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;
+  Suppose a standard 8×8 chessboard has two diagonally opposite corners removed, leaving 62 squares. Is it possible to place 31 dominoes of size 2×1 so as to cover all of these squares?&lt;/p&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;
+ The answer is no. In
+ &lt;a href="https://www.tandfonline.com/doi/pdf/10.1080/07468342.2004.11922062"&gt;
+  Tiling with Dominoes&lt;/a&gt;
+ , N. S. Mendelsohn discusses two proofs:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;h3&gt;
+  First solution&lt;/h3&gt;
+&lt;p&gt;
+  From the checkerboard diagram, the region contains 30 black cells and 32 white cells.
+Since each domino covers 1 black and 1 white cell, tiling is impossible.&lt;/p&gt;
+&lt;h3&gt;
+  Second solution&lt;/h3&gt;
+&lt;p&gt;
+  When I was first shown the problem many years ago, it did not occur to me to colour
+the cells. The region itself had seven cells in the top and bottom rows and eight cells in
+the remaining rows. The same held for the columns. I proceeded to obtain information
+on how many dominoes pointed horizontally and how many vertically. The first count
+dealt with the vertical dominoes. If the region is tiled, the horizontal dominoes in the
+top row occupies an even number of cells. Hence, the cells in the top row that are not
+occupied by horizontal dominoes are odd in number. Thus there are an odd number of
+vertical dominoes between the first and second rows. Since the second row has eight
+cells, and an odd number are occupied by vertical dominoes coming down from the
+first row, there remain an odd number of cells in the second row. The same argument
+now shows there is an odd number of vertical dominoes from the second row to the
+third. Continuing this way, we see that there is an odd number of vertical dominoes
+between any pair of consecutive rows. Hence the total number of vertical dominoes is
+the sum of seven odd numbers, which is odd. In the same way, using columns instead
+of rows, there is an odd number of horizontal dominoes. Hence the total number of
+dominoes is even. Since there are 62 cells to cover, the number of dominoes required
+is 31, an odd number. Therefore, tiling is impossible.&lt;/p&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;
+ He goes on to say:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;
+  Why do I produce two solutions to the puzzle? It is because I am interested in
+the question of which is the better solution. At first glance, it appears that the first
+solution is the better. It is much shorter and is easily understood by many people with
+virtually no knowledge of mathematics. But are there considerations that might judge
+the second solution to be the better one?&lt;/p&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;
+ He then discusses whether the second one is better because it generalises better,
+when setting out to prove Gomory's theorem (which I've not been able to find a copy of the original of so far, but I haven't looked very hard):
+If you remove two squares of the same colour, you can always tiling the remainder with dominoes.
+The proof involves the construction of a hamiltonian circuit on the adjacency graph,
+and seems fiddly but interesting.
+I've only skimmed it and would like to digest it further.&lt;/p&gt;
+
+
+&lt;p&gt;
+ However note that we saw a generalisation in a different direction in the first paper linked! Golomb's proof of the impossibility tiling with straight tetrominoes unless the monomino was in a very specific location was
+ &lt;em&gt;
+  also&lt;/em&gt;
+ a colouring argument.&lt;/p&gt;
+
+
+&lt;p&gt;
+ The wikipedia page references "Across the board: the mathematics of chessboard problems" by John J. Watkins.
+I should probably look up a copy.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-08-29-09:35.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-08-28-08:14.html</id>
+    <title>First!</title>
+    <updated>2018-08-28T14:18:34+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;First!&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-08-28&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ This is an experimental new blog intended for notes, thoughts, and whatever else I want to put here.
+It will likely be biased towards short notes rather than longform essays.
+It's loosely inspired by
+ &lt;a href="https://shitpost.plover.com/"&gt;
+  Mark Jason Dominus's shitposting blog&lt;/a&gt;
+ and by my frustrations with WordPress, but I'm not really sure where it's going yet.&lt;/p&gt;
+
+
+&lt;p&gt;
+ It's also a place where I'll be experimenting with notation,
+and generally trying to find a low friction way to express myself in a manner that I like.
+As such it's all a bit cobbled together out of spit, bailing wire, and Python.&lt;/p&gt;
+
+
+&lt;h3&gt;
+ Notational Highlights&lt;/h3&gt;
+
+
+&lt;p&gt;
+ I kinda hate LaTeX, but it's the best typesetting language for mathematics that I know of,
+so this notebook supports it using
+ &lt;a href="https://www.mathjax.org/"&gt;
+  mathjax&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Testing: \(e^{i\pi} = -1\)&lt;/p&gt;
+
+
+&lt;p&gt;
+ A test of code highlighting.&lt;/p&gt;
+
+
+&lt;div class="codehilite"&gt;
+&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;SomeClass&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;object&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="sd"&gt;""""A python class"""&lt;/span&gt;
+
+    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;method&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+        &lt;span class="sd"&gt;"""A method definition"""&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;
+ As you've probably noticed, I'm using
+ &lt;a href="https://edwardtufte.github.io/tufte-css/"&gt;
+  Tufte CSS&lt;/a&gt;.
+I'm not sure it's exactly what I want, but it's a lot closer to what I want than most other things I've tried.
+I will likely be messing aroudn with this further.&lt;/p&gt;
+
+
+&lt;p&gt;
+ I'm also using
+ &lt;a href="http://www.makotemplates.org"&gt;
+  mako templates&lt;/a&gt;
+ ,
+and fully intend to define a metric tonne of macros to make this usable.&lt;/p&gt;
+
+
+&lt;p&gt;
+ In general I expect the actual source code for this site to be totally unusable to anyone who is not me.
+If anything,
+if it's
+ &lt;em&gt;
+  not&lt;/em&gt;
+ then I probably haven't done enough customization for my brain.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-08-28-08:14.html" rel="alternate"/>
   </entry>
 </feed>
