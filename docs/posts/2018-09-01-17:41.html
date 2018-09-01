@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+DRMacIver's Notebook: Notation for test-case reducers
+    </title>
+    <link rel="stylesheet" href="/pygments.css"/>
+    <link rel="stylesheet" href="/tufte.css"/>
+    <link rel="stylesheet" href="/latex.css"/>
+    <link rel="stylesheet" href="/drmnotes.css"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
+});
+</script>
+
+  </head>
+
+  <body>
+    <article>
+        <h1><a href="/">DRMacIver's Notebook</a></h1>
+        <p class=subtitle>Notation for test-case reducers</p>
+
+        
+
+<section id="the-post">
+<p class=subtitle>Notation for test-case reducers</p>
+<dl class=metadata>
+<dt>Published</dt>
+<dd class="post-date">2018-09-01</dd>
+</dl>
+<p>
+ A thing I've been noticing recently is that it's really useful to have compact notation for describing things.
+Usually this is equivalent to primivitives + some combinators.</p>
+<p>
+ One thing that I think it would be useful to have such a notation for is (greedy) test-case reduction passes.
+They combine pretty well, and it makes it useful to discuss various things.</p>
+<p>
+ For example, if you have reducers \(A\), \(B\), you can define the reducer \(AB\) which runs \(A\), then
+runs \(B\) on its result. You can also define the reducer \(A^+\) which runs \(A\) to a fixed point.</p>
+<p>
+ Another interesting combinator is \(/\). \(A / B\) runs \(A\), then runs \(B\) if \(A\) didn't do anything..</p>
+<p>
+ There are a bunch of really basic algebraic relations that hold, like composition and \(/\) are associative,
+and \((A^+)^+ = A^+\), but not a huge amount beyond that.</p>
+<p>
+ A bunch of interesting questions about test-case reduction can be compactly expressed in this notation though.
+For example, suppose you want to reduce to something that is a fixed point of both \(A\) and \(B\).
+You could do \((AB)^+\), but you could also do \((A^+B^+)^+\), and it's quite natural to do this in some contexts.
+My suspicion, which I've yet to verify, is that it's almost never the right thing to do.</p>
+<p>
+ You can kinda regard the quadratic mode failure of greedy search as an instance of this problem:
+If \(\delta_i\) is the operation that deletes the element at position \(i\), the correct pass to run for greedy deletion is \((\delta_0^+ \ldots \delta_n^+)^+\),
+but if you start again at the beginning every time you succeed you are running \((\delta_0 / \ldots / \delta_n)^+\).</p>
+</section>
+
+    </article>
+<footer>
+Copyright David R. MacIver.
+
+CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
+</footer>
+  </body>
+</html>
