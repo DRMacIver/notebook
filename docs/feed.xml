@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-09-02T13:13:00+01:00</updated>
+  <updated>2018-09-02T21:22:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,137 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-09-02-21:22.html</id>
+    <title>Fiction for Kristian</title>
+    <updated>2018-09-02T21:22:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Fiction for Kristian&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-09-02&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ This is a small collection of fiction I've written that I like enough to actively recommend and think count as "finished".&lt;/p&gt;
+
+
+&lt;h3&gt;
+ Fan fiction&lt;/h3&gt;
+
+
+&lt;p&gt;
+ The two pieces of Stargate fan fiction that I've written and would recommend are
+ &lt;a href="https://archiveofourown.org/works/3673335"&gt;
+  Stargate Physics 101&lt;/a&gt;
+ and
+ &lt;a href="https://archiveofourown.org/works/5023654"&gt;
+  Interview with a System Lord&lt;/a&gt;.
+Both are not only canon-compatible (more or less. Stargate Physics 101 doesn't quite line up with Stargate Universe, but I don't care about Universe),
+but are 100% my headcanons of how the universe works.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Completion status: 100% finished standalone pieces. I may write other Stargate fan fiction at some point, and if I do then as part of the universe's canon those will naturally be part of its backstory,
+but there will never be sequels per se to these pieces.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Recommendation strength: Stargate Physics 101 is one of my most popular pieces and works even if you have never watched Stargate. If you like any of infrastructure science fiction, software testing, or stargate, it's worth reading.
+Interview with a System Lord is worth reading if and only if you like Stargate SG1 (and especially if you like Ba'al) and want a moderately amusing story exploring a weird headcanon. Warning: May cause mild sympathy for the devil.&lt;/p&gt;
+
+
+&lt;p&gt;
+&lt;a href="https://archiveofourown.org/works/4637439/chapters/10575111"&gt;
+  The Rules of Wishing&lt;/a&gt;
+ is a piece of fan fiction of Disney's Aladdin.
+Premise:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;
+  What if people were good at wishing? The Genie's rules have holes you could drive a herd of camels through, but they don't have to. Aladdin and Jafar's wishes are shallow and limited, and lack the foresight that really effective wishing entails, but wouldn't a battle between effective wishers be much more interesting? And while we're at it, why does Jasmine have so little agency and basically act as a prize to be won in a battle between two men when literally the entire point of her narrative is that she's not that?&lt;/p&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;
+ It has been argued to be rational!fic though I'm not sure I agree with the classification.
+Jasmine in this is probably my joint favourite character I've ever written.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Completion status: Has a mini non-canon sequel
+ &lt;a href="https://archiveofourown.org/works/13523703"&gt;
+  The Consequences of Wishing&lt;/a&gt;
+ that explains the divergence between this story and the film.
+May, but probably won't, spawn another sequel, but the current ending wraps it up entirely to my satisfaction and any sequel would be a new story in the same universe with the same characters rather than a continuation of this story.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Trigger warning: Moderately violent.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Recommendation strength: Honestly, you should read this if you like my fiction at all and are not put off by the trigger warning.&lt;/p&gt;
+
+
+&lt;p&gt;
+&lt;a href="https://archiveofourown.org/works/13354146"&gt;
+  Counterparts&lt;/a&gt;
+ is a crossover fic between Lucifer (the TV show) and Old Harry's Game (the radio show).&lt;/p&gt;
+
+
+&lt;p&gt;
+ Completion status: Very standalone. It's not impossible I may do a followup involving The Good Place, but it stands on its own regardless of whether I do.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Recommendation strength: Well it amuses
+ &lt;em&gt;
+  me&lt;/em&gt;. Based on feedback, if you like Lucifer it will probably also amuse you. Familiarity with the Old Harry's Game is helpful but not strictly required.&lt;/p&gt;
+
+
+&lt;h3&gt;
+ Original Fiction&lt;/h3&gt;
+
+
+&lt;p&gt;
+&lt;a href="https://archiveofourown.org/works/9233966/chapters/20941043"&gt;
+  Programmer at Large&lt;/a&gt;
+ is a story about gender, social anxiety, and legacy code.
+It seems to have a lot of fans.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Completion status: Abandoned, but it kinda works that way. It's a series of slice of life chapters, and the protagonist's life is never really "finished". However it definitely has some unsatisfying dangling plot threads that will never be resolved. However most of the strength of this story is at the chapter level anyway - it has some of my best writing in it, but as a whole story I do not feel that it works. I intend at some point to take it apart and refactor and modularise it into several smaller stories. I am fully aware of the irony of saying this about a story about legacy code.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Recommendation strength: Mixed. There's some stuff in there I really like, and a lot of people seem to love it, but like I said I don't feel that it hangs together in its current incarnation.&lt;/p&gt;
+
+
+&lt;p&gt;
+&lt;a href="https://archiveofourown.org/series/754683"&gt;
+  The Diaries of Vicky Frankenstein&lt;/a&gt;
+ more normally AKA "The Vicky Stories". Series of short stories about Dr Vicky Frankenstein and her adventures in joining a biotech startup run by the vampire Ada Lovelace.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Completion Status: (Hopefully permanently) incomplete in the sense that I fully intend to keep writing Vicky stories (but don't more than about one every six months), but each Vicky story is a complete standalone short story that happens to be set in the same world and use the same characters. There are minimal to no dangling plot threads between the stories.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Recommendation Status: I ♥ writing Vicky and think you should read these. Also, contains a (99% SFW) lesbian sex scene between two amoral monsters that reviewers describe as "ridiculously adorable", so there's that.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-09-02-21:22.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-09-02-13:13.html</id>
     <title>2018-09-02-13:13</title>
-    <updated>2018-09-02T13:13:00+01:00</updated>
+    <updated>2018-09-02T13:34:22+01:00</updated>
     <content>
 
 &lt;dl class="metadata"&gt;
