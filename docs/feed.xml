@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-09-01T17:41:00+01:00</updated>
+  <updated>2018-09-02T13:13:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,56 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-09-02-13:13.html</id>
+    <title>2018-09-02-13:13</title>
+    <updated>2018-09-02T13:13:00+01:00</updated>
+    <content>
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-09-02&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ Compare and contrast two interesting links:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;
+  Siderea's
+  &lt;a href="https://siderea.livejournal.com/1230660.html"&gt;
+   The Asshole Filter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+  Cormac Herley's
+  &lt;a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/WhyFromNigeria.pdf"&gt;
+   Why do Nigerian Scammers Say They are from Nigeria?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+  Karl Popper's "The Paradox of Tolerance"&lt;/li&gt;&lt;/ul&gt;
+
+
+&lt;p&gt;
+ (Note that I've not read the latter two and should. I've only read digested versions of them).&lt;/p&gt;
+
+
+&lt;p&gt;
+ In general often the right way to judge an action is not actually on its immediate effects,
+but on what long-run effect they will have on the sort of people you will surround yourself with.
+This can make seemingly good actions harmful and seemingly bad or nonsensical ones quite useful.&lt;/p&gt;
+
+
+&lt;p&gt;
+ I think about this a bunch in the context of codes of conduct:
+Often the benefit of the code of conduct is not whether it is ever enforced,
+but that it filters out people who don't like codes of conduct.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-09-02-13:13.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-09-01-17:41.html</id>
     <title>Notation for test-case reducers</title>
-    <updated>2018-09-01T17:41:00+01:00</updated>
+    <updated>2018-09-01T20:15:35+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Notation for test-case reducers&lt;/p&gt;
