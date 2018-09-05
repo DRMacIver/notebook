@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-09-02T21:22:00+01:00</updated>
+  <updated>2018-09-05T11:08:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,98 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-09-05-11:08.html</id>
+    <title>My parents, Ayn Rand and God</title>
+    <updated>2018-09-05T11:08:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;My parents, Ayn Rand and God&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-09-05&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+&lt;a href="https://twitter.com/bazzalisk/status/1037277763219152897"&gt;
+  From bazzalisk on Twitter&lt;/a&gt;
+ :&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;
+  “You know him better than I” and “You know him better than me” are both grammatically valid but mean different things&lt;/p&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;
+ The former means "You know him better than I do", the latter means "You know him better than you know me".&lt;/p&gt;
+
+
+&lt;p&gt;
+ The title of this note comes from the following probably-apocryphal book dedication,
+used as an argument for the oxford comma:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;
+  This book is dedicated to my parents, Ayn Rand and God.&lt;/p&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;
+ Without the Oxford comma,
+the implication is that the author's parents are Ayn Rand and God,
+with the Oxford comma, this is a dedication to four people (the author's parents, and also to Ayn Rand and God).
+ &lt;a href="http://mentalfloss.com/article/33637/best-shots-fired-oxford-comma-wars"&gt;
+  Mental Floss has a bunch of similar ones&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;
+&lt;a href="http://msgboard.snopes.com/cgi-bin/ultimatebb.cgi?ubb=get_topic;f=95;t=000863;p=0"&gt;
+  Snopes think this probably never happened&lt;/a&gt;
+ ,
+but OTOH the following is part of their argument:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;
+  Since Rand was such an outspoken atheist, I find it hard to believe that anyone would mention both her and God as sources of inspiration.&lt;/p&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;
+ And, well, this seems to ignore the existence of Paul Ryan and a significant chunk of the US political right.
+Also I'm now amused by the idea of Ayn Rand's atheism being a reaction to God being a deadbeat dad.
+Someone should write that fanfic, but it's not going to be me.&lt;/p&gt;
+
+
+&lt;p&gt;
+ There is of course
+ &lt;a href="https://amzn.to/2LYsLcz"&gt;
+  an entire book about comedic misinterpretations due to bad grammar&lt;/a&gt;
+ ,
+but that's not exactly what's going on here:
+Instead these are interesting grammatically valid examples that are right on the edge of ambiguity.&lt;/p&gt;
+
+
+&lt;p&gt;
+ It's unclear to me whether this actually tells us anything useful.
+We could probably derive some normative advice about correct use of grammar from it,
+but this sort of thinking about things in terms of their edge cases is a very modern-mathematician view of the world,
+which doesn't come very naturally to others.&lt;/p&gt;
+
+
+&lt;p&gt;
+ The general widely deployed solution to linguistic ambiguity is instead that we just guess or ask,
+and frankly that probably works better than trying to remove it.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-09-05-11:08.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-09-02-21:22.html</id>
     <title>Fiction for Kristian</title>
-    <updated>2018-09-02T21:22:00+01:00</updated>
+    <updated>2018-09-02T21:54:40+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Fiction for Kristian&lt;/p&gt;
