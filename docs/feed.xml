@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-09-05T13:24:00+01:00</updated>
+  <updated>2018-09-06T09:18:55+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -13,7 +13,7 @@
   <entry>
     <id>https://notebook.drmaciver.com/posts/2018-09-05-13:24.html</id>
     <title>Mechanisms for talk scheduling and voting</title>
-    <updated>2018-09-05T13:24:00+01:00</updated>
+    <updated>2018-09-06T09:18:55+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Mechanisms for talk scheduling and voting&lt;/p&gt;
@@ -53,6 +53,13 @@ but I no longer believe that's true.&lt;/p&gt;
  Suppose you're running a Python conference, and 60% of the people attending are web developers and 40% are data scientists.
 You put together a set of talk proposals, people vote on them, and you take all of the top voted talks.
 What you end up with is of course a conference consisting entirely of web development talks.&lt;/p&gt;
+
+
+&lt;p&gt;
+ (Note: Despite the running Python example, this post is not actually about
+ &lt;a href="https://2018.hq.pyconuk.org/schedule/"&gt;
+  The PyCon UK Schedule&lt;/a&gt;
+ , which I've barely looked at.)&lt;/p&gt;
 
 
 &lt;p&gt;
