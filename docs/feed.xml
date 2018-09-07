@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-09-07T12:47:07+01:00</updated>
+  <updated>2018-09-07T15:27:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,59 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-09-07-15:27.html</id>
+    <title>2018-09-07-15:27</title>
+    <updated>2018-09-07T15:27:00+01:00</updated>
+    <content>
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-09-07&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ Compare and contrast:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href="https://www.cambridge.org/core/journals/journal-of-the-american-philosophical-association/article/aristotle-on-trolling/540BB557C82186C33BFFB61E35A0B5B6"&gt;
+   "Aristotle" on trolling&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://www.drmaciver.com/2014/02/etiquette-for-the-devils-advocates/"&gt;
+   Etiquette for the Devil's advocates&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+
+
+&lt;p&gt;
+ I think the role the "Aristotle" (AKA
+ &lt;a href="http://individual.utoronto.ca/rbarney/Home.html"&gt;
+  Rachel Barney&lt;/a&gt;
+ ) describes is probably quite a useful one in the right context,
+the problem is that the nature of Trolling as defined in that paper is intrinsically that it is done
+ &lt;em&gt;
+  not&lt;/em&gt;
+ in the right context.&lt;/p&gt;
+
+
+&lt;p&gt;
+ There's a thing that happens in Vernor Vinge's "A Deepness in the Sky" where the Evil Overlord ™ is experimenting with different configurations you can put a group mind in.
+I sometimes think about this as an analogy for how to construct better modes of group problem solving (in a non-evil-overlord way that in no way involves my using the army of crows that I don't have to impose my will on the unsuspecting masses. Yes) .&lt;/p&gt;
+
+
+&lt;p&gt;
+ In particular, I think it's often actively useful for someone to explicitly take an adversarial role in a group discussion,
+and it improves the resulting group's intelligence.
+The difficulty is that you need to do this in a context where the group consents to this, and with a fairly explicit discussion in advance of boundaries.
+It also helps to be able to ask the adversary to step out of the adversarial role and clarify their position.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-09-07-15:27.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-09-07-12:32.html</id>
     <title>When come back bring pie(s)</title>
-    <updated>2018-09-07T12:47:07+01:00</updated>
+    <updated>2018-09-07T12:58:38+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;When come back bring pie(s)&lt;/p&gt;
