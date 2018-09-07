@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-09-07T15:27:00+01:00</updated>
+  <updated>2018-09-07T15:47:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,115 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-09-07-15:47.html</id>
+    <title>2018-09-07-15:47</title>
+    <updated>2018-09-07T15:47:00+01:00</updated>
+    <content>
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-09-07&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ The thing I called
+ &lt;a href="https://notebook.drmaciver.com/posts/2018-08-30-07:50.html"&gt;
+  the Feynmann style&lt;/a&gt;
+ relates to Tim Gowers's
+ &lt;a href="https://www.dpmms.cam.ac.uk/~wtg10/2cultures.pdf"&gt;
+  The Two Cultures of Mathematics&lt;/a&gt;
+ ,
+where he suggests that there are two cultures of mathematics: Theory building and problem solving. The latter tends to get organised not along the lines of general big ideas and broad theorems,
+but instead along heuristics and guiding principles.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Gowers refers to the areas of mathematics that are primarily problem-solving as
+ &lt;em&gt;
+  combinatorial&lt;/em&gt;
+ ,
+but I feel like this kind of problem solving is one that it doesn't seem right to refer to as combinatorial - it's more... calculation?&lt;/p&gt;
+
+
+&lt;p&gt;
+ There's a similar sense of being guided by heuristics and general ideas though.&lt;/p&gt;
+
+
+&lt;p&gt;
+ For example, one general idea is "replace annoying terms with integrals over some new variables, then swap out the variable".&lt;/p&gt;
+
+
+&lt;p&gt;
+ Suppose we didn't know what \(\sum\limits_{n = 1}^\infty (-1)^{n - 1} \frac{1}{n}\) was.
+How would we deal with this?&lt;/p&gt;
+
+
+&lt;p&gt;
+ (Note: There's all sorts of playing fast and loose with convergence in this post that you can shore up later with some proper calculation but I'm not actually going to do. That's very common in this sort of proof).&lt;/p&gt;
+
+
+&lt;p&gt;
+ Well, that \(\frac{1}{n}\) is an annoying term. Lets get rid of it with.
+A classic way of doing this is to replace it with \(\int\limits_0^1 x^{n - 1} dx\).&lt;/p&gt;
+
+
+&lt;p&gt;
+ We can now do the computation as follows:&lt;/p&gt;
+
+
+&lt;p&gt;
+ \begin{align}
+\sum\limits_{n = 1}^\infty (-1)^{n - 1} \frac{1}{n} &amp;amp; = \sum\limits_{n = 1}^\infty (-1)^{n - 1} \int\limits_0^1 x^{n - 1} \\
+&amp;amp; = \sum\limits_{n = 0}^\infty (-1)^n \int\limits_0^1 x^n \\
+&amp;amp; = \int\limits_0^1 \sum\limits_{n = 0}^\infty (-x)^n \\
+&amp;amp; = \int\limits_0^1 \frac{1}{1 + x} \\
+&amp;amp; = \ln(1 + x) \\
+\end{align}&lt;/p&gt;
+
+
+&lt;p&gt;
+ Roughly the steps here are:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;
+  Try replacing tricky terms with integrals over simpler terms&lt;/li&gt;
+&lt;li&gt;
+  Use standard sums that you already know the answer for&lt;/li&gt;
+&lt;li&gt;
+  Try swapping sums and integrations&lt;/li&gt;&lt;/ol&gt;
+
+
+&lt;p&gt;
+ Another useful calculational heuristic is "try changing the variable".&lt;/p&gt;
+
+
+&lt;p&gt;
+ e.g. what's the limit as \(n \to \infty\) of \(n \ln (1 + \frac{1}{n})\)?&lt;/p&gt;
+
+
+&lt;p&gt;
+ Well, let \(x = \frac{1}{n}\). This expression is now \(\frac{ln(1 + x)}{x} = \frac{ln(1 + x) - \ln(1)}{x}\) as \(x \to 0\).
+i.e. it's the derivative of \(\ln\) at \(1\), i.e. \(1\).&lt;/p&gt;
+
+
+&lt;p&gt;
+ It's hard to explain exactly what the thought process is here. It's like solving a puzzle - you have a bunch of known tricks that you think might work and you try to apply them all.
+If you were to mechanize the process then it wuold end up looking like a brute force solver for the problem, but by using intuition you can kinda guide the way.&lt;/p&gt;
+
+
+&lt;p&gt;
+ I think maybe one part of the split between problem-solving and theory building is how much of what you end up building escapes the head of the mathematician building it:
+Problem-solving skills are much harder to teach to another person than theory is (once that other person has build the skill of acquiring theory, which is also hard to teach)&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-09-07-15:47.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-09-07-15:27.html</id>
     <title>2018-09-07-15:27</title>
-    <updated>2018-09-07T15:27:00+01:00</updated>
+    <updated>2018-09-07T15:44:40+01:00</updated>
     <content>
 
 &lt;dl class="metadata"&gt;
