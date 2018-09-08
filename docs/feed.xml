@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-09-07T15:47:00+01:00</updated>
+  <updated>2018-09-08T08:06:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,179 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-09-08-08:06.html</id>
+    <title>2018-09-08-08:06</title>
+    <updated>2018-09-08T08:06:00+01:00</updated>
+    <content>
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-09-08&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ I've been trying to come up with a definition of mathematics that I like and think would be useful in the course of teaching people mathematics.&lt;/p&gt;
+
+
+&lt;p&gt;
+ This is of course a big ask, as
+ &lt;a href="https://en.wikipedia.org/wiki/Definitions_of_mathematics"&gt;
+  according to Wikipedia there is a great deal of spirited philosophical debate on the subject&lt;/a&gt;
+ ,
+but on the other hand I think most of those definitions are
+ &lt;em&gt;
+  terrible&lt;/em&gt;
+ , so I don't feel too bad about trying myself.&lt;/p&gt;
+
+
+&lt;p&gt;
+ The one I dislike the least from that list is
+ &lt;a href="http://mathworld.wolfram.com/Mathematics.html"&gt;
+  Eric Weisstein's&lt;/a&gt;
+ :&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;
+  Mathematics is a broad-ranging field of study in which the properties and interactions of idealized objects are examined.&lt;/p&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;
+ It's a bit long-winded but mostly captures the sense I want. The phrasing I've been thinking of in preference is something more like:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;
+  Mathematics is the rigorous study of hypothetical objects.&lt;/p&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;
+ The idea is that in mathematics we're not really concerned with real life physical objects,
+we can just say "Suppose there were objects satisfying the following properties, what can we reliably say about them?"&lt;/p&gt;
+
+
+&lt;p&gt;
+ Sometimes those objects are ones that can easily be realised as real physical objects. For example the
+ &lt;a href="https://en.wikipedia.org/wiki/Mathematical_chess_problem"&gt;
+  Mathematics of Chess&lt;/a&gt;
+ studies hypothetical chess boards,
+but those hypothetical chess boards can easily be realised by going out and buying an actual physical chessboard.
+However, many of them can not be. There is no way to construct a real physical set of natural numbers,
+but from a mathematical point of view that's OK - we can reason about the properties of the hypothetical one perfectly well.&lt;/p&gt;
+
+
+&lt;p&gt;
+ There are a couple axes of variation on which people differ about the nature of mathematics:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;
+  Is informal mathematics legitimate, or should all mathematics be considered a (possibly bad) approximation to an entirely formal set of reasoning rules?&lt;/li&gt;
+&lt;li&gt;
+  Are some hypothetical objects privileged as the true platonic mathematical objects in a way that others are not?&lt;/li&gt;&lt;/ol&gt;
+
+
+&lt;p&gt;
+ I think this definition is more or less compatible with any combination of answers to these questions:
+Formalism is a question of what we count as "rigorous",
+and even if there
+ &lt;em&gt;
+  are&lt;/em&gt;
+ platonic mathematical objects, we still must study them
+ &lt;em&gt;
+  as if&lt;/em&gt;
+ they were hypothetical because by its very nature we cannot have access to the platonic realm.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Traditionally the answers to these questions have been correlated more than I think is logically required:
+The formalist position is that mathematics doesn't real and that everything is formal manipulation of symbols,
+while the platonist position is that we are seeking to discover truths about the ideal platonic realm and the truths are what matter regardless of how we reason about them.&lt;/p&gt;
+
+
+&lt;p&gt;
+ I think there's room for a third position though, which is that formalism is interesting but not strictly required, but the objects we describe have no inherent reality and really are allowed to be purely hypothetical.
+I've historically self-described as a formalist, but I think this third position is closer to my true beliefs:
+I don't think Platonism is philosophically defensible,
+but I do think there is a lot of interesting mathematical content and activity that cannot be adequately captured by the formalist position.&lt;/p&gt;
+
+
+&lt;p&gt;
+ In many ways this third position is that of Lakatos in his "Proofs and Refutations".
+Most of the interesting mathematics happens in a fuzzy middle-ground where you are making your definitions precise enough to be defensible.
+This could go all the way to formalism, but it doesn't have to.&lt;/p&gt;
+
+
+&lt;p&gt;
+ The mathematics of chess is again an interesting test case here:
+Chess is a purely arbitrary set of rules. I think it would be hard to argue that there is a platonic game of chess that is in some essential way different than it would have been if,
+say, kings moved like knights or you could win by killing the queen
+ &lt;em&gt;
+  or&lt;/em&gt;
+ the king. These are both perfectly valid games that someone could play,
+and there is a perfectly valid mathematics in studying them, but we study the mathematics of chess in preference to them because that is the actual game people play.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Conversely,
+there really is a set of true statements about the game of chess (in an informal sense of chess),
+and while mechanising and formalising the study of them might be
+ &lt;em&gt;
+  useful&lt;/em&gt;
+ for determining what they are, I think it's fair to say that what actually matters is whether the statement is true of real games of chess,
+and the formalisation only matters to the degree that it helps us discover those truths.&lt;/p&gt;
+
+
+&lt;p&gt;
+ I don't think the above definition is enough to fully reconstruct an idea of what mathematics is like,
+because it leaves open two big questions:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;
+  How do we select which hypothetical objects to study?&lt;/li&gt;
+&lt;li&gt;
+  How do we study them?&lt;/li&gt;&lt;/ol&gt;
+
+
+&lt;p&gt;
+ The answer to the first is comparatively easy, which is that it's based on what I think of as "The Three Good Reasons To Do Things":&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;
+  It's useful.&lt;/li&gt;
+&lt;li&gt;
+  It's interesting.&lt;/li&gt;
+&lt;li&gt;
+  Some asshole is forcing you to do something useless and boring.&lt;/li&gt;&lt;/ol&gt;
+
+
+&lt;p&gt;
+ (Most people's encounters with mathematics is of type 3, sadly, which is why I always hear "Oh I
+ &lt;em&gt;
+  hated&lt;/em&gt;
+ mathematics at school" when I tell people I did mathematics at university)&lt;/p&gt;
+
+
+&lt;p&gt;
+ Of course, point 2 is slightly subtle, because doing mathematics is much easier if other people have done similar mathematics, so you're constrained not just by what
+ &lt;em&gt;
+  you&lt;/em&gt;
+ think is interesting, but by what you can convince other people is interesting.&lt;/p&gt;
+
+
+&lt;p&gt;
+ The second question is the hard part, and I think we currently do a very poor job of explaining it to people. I need to think further about it.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-09-08-08:06.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-09-07-15:47.html</id>
     <title>2018-09-07-15:47</title>
-    <updated>2018-09-07T15:47:00+01:00</updated>
+    <updated>2018-09-07T16:29:06+01:00</updated>
     <content>
 
 &lt;dl class="metadata"&gt;
