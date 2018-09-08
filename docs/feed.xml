@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-09-08T08:06:00+01:00</updated>
+  <updated>2018-09-08T10:39:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,30 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-09-08-10:39.html</id>
+    <title>2018-09-08-10:39</title>
+    <updated>2018-09-08T10:39:00+01:00</updated>
+    <content>
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-09-08&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+&lt;a href="https://how.complexsystems.fail/"&gt;
+  How Complex Systems Fail&lt;/a&gt;
+ is very good. A lot of the citations have been on my reading stack for a while,
+and given that I'd already deprioritised them I'm now inclined to just not bother now that I've read the TLDR.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-09-08-10:39.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-09-08-08:06.html</id>
     <title>2018-09-08-08:06</title>
-    <updated>2018-09-08T08:06:00+01:00</updated>
+    <updated>2018-09-08T10:38:49+01:00</updated>
     <content>
 
 &lt;dl class="metadata"&gt;
