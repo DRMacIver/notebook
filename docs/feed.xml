@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-09-08T10:40:00+01:00</updated>
+  <updated>2018-09-08T10:59:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,77 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-09-08-10:59.html</id>
+    <title>2018-09-08-10:59</title>
+    <updated>2018-09-08T10:59:00+01:00</updated>
+    <content>
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-09-08&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ Terry Tao has an interesting series of posts:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href="https://terrytao.wordpress.com/2009/11/05/the-no-self-defeating-object-argument/"&gt;
+   The “no self-defeating object” argument&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://terrytao.wordpress.com/2010/10/18/the-no-self-defeating-object-argument-revisited/"&gt;
+   The “no self-defeating object” argument, revisited&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://terrytao.wordpress.com/2010/11/02/the-no-self-defeating-object-argument-and-the-vagueness-paradox/"&gt;
+   https://terrytao.wordpress.com/2010/11/02/the-no-self-defeating-object-argument-and-the-vagueness-paradox/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+
+
+&lt;p&gt;
+ The idea of the "no self-defeating object" argument is, roughly, that suppose there were some some object that "defats" all objects,
+then it would also defeat itself, and thus cannot exist. It's a specific form of reductio ad absurdum,
+and can be applied to many different forms of "object" and notions of "defeat".&lt;/p&gt;
+
+
+&lt;p&gt;
+ Examples:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;
+  There is no largest number ("defeat" here meaning something like \(\geq n + 1\)).&lt;/li&gt;
+&lt;li&gt;
+  There is no set of sets ("defeat" meaning \(\in\)).&lt;/li&gt;&lt;/ul&gt;
+
+
+&lt;p&gt;
+ In the second post he outlines how we can almost always turn these arguments instead into "every object is defeated by some other object", and this often works better for people uncomfortable with proof by contradiction (which is most non-mathematicians).&lt;/p&gt;
+
+
+&lt;p&gt;
+ The third post is especially interesting in the light of
+ &lt;a href="https://notebook.drmaciver.com/posts/2018-09-08-08:06.html"&gt;
+  my recent post about the nature of mathematics&lt;/a&gt;
+ ,
+in that it observes that an unusual characteristic of mathematics is that mathematical statements are intended to have a precise meaning in a way that natural language statements typically are not.&lt;/p&gt;
+
+
+&lt;p&gt;
+ This suggests the following modified definition:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;
+  Mathematics is the study of unambiguous statements about hypothetical objects&lt;/p&gt;&lt;/blockquote&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-09-08-10:59.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-09-08-10:40.html</id>
     <title>2018-09-08-10:40</title>
-    <updated>2018-09-08T10:40:00+01:00</updated>
+    <updated>2018-09-08T10:49:21+01:00</updated>
     <content>
 
 &lt;dl class="metadata"&gt;
