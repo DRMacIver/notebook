@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-09-08T10:39:00+01:00</updated>
+  <updated>2018-09-08T10:40:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,43 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-09-08-10:40.html</id>
+    <title>2018-09-08-10:40</title>
+    <updated>2018-09-08T10:40:00+01:00</updated>
+    <content>
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-09-08&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ The
+ &lt;a href="http://cs.brown.edu/courses/csci0190/2018/laptop-policy.html"&gt;
+  laptop policy&lt;/a&gt;
+ from Shriram Krishnamurthi's "Accelerated Introduction to Computer Science" class is an interesting collection of resources on laptop usage in class.&lt;/p&gt;
+
+
+&lt;p&gt;
+ I've definitely found that it is true that longhand note taking improves my retention and focus while device usage immediately kills it. The point about device usage distracting
+ &lt;em&gt;
+  other&lt;/em&gt;
+ people around you is particularly interesting though.&lt;/p&gt;
+
+
+&lt;p&gt;
+ I feel like imposing this sort of rule is a deeply unpopular move in my social group,
+but I think they're mostly wrong about that.
+OTOH this is very much a question of competing access needs and I'm not sure what the best way to resolve it is.`&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-09-08-10:40.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-09-08-10:39.html</id>
     <title>2018-09-08-10:39</title>
-    <updated>2018-09-08T10:39:00+01:00</updated>
+    <updated>2018-09-08T10:39:50+01:00</updated>
     <content>
 
 &lt;dl class="metadata"&gt;
