@@ -100,8 +100,10 @@ def new_post():
 
 
 @main.command(name='edit-post')
-@click.argument('name')
+@click.argument('name', default='')
 def edit_post(name):
+    if not name:
+        name = max(os.listdir(POSTS))
     name = os.path.basename(name)
     name = name.replace('.md', '')
     edit_and_commit_post(name)
