@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-09-09T21:02:00+01:00</updated>
+  <updated>2018-09-09T21:43:04+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -13,7 +13,7 @@
   <entry>
     <id>https://notebook.drmaciver.com/posts/2018-09-09-21:02.html</id>
     <title>Physical and Topological Limitations to Rational Choice</title>
-    <updated>2018-09-09T21:02:00+01:00</updated>
+    <updated>2018-09-09T21:43:04+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Physical and Topological Limitations to Rational Choice&lt;/p&gt;
@@ -66,7 +66,7 @@ even if you grant the existence of logically omniscient agents (you can do it if
 
 &lt;p&gt;
  Well, suppose we have some total preorder \(\preceq \subseteq \mathcal{L}^2\), where \(\mathcal{L}\) is the set of lotteries over some finite set of outcomes.
-Take this total order and define the choice function \(\tau : \mathcal{L}^2 \to \{-1, 0, 1\}\) where \(\tau(u, v) = 0\) if \(u \preceq v\) and \(v \preqec u\),
+Take this total order and define the choice function \(\tau : \mathcal{L}^2 \to \{-1, 0, 1\}\) where \(\tau(u, v) = 0\) if \(u \preceq v\) and \(v \preceq u\),
 else if \(u \prec v\) then \(\tau(u, v) = -1 = -\tau(v, u)\). i.e. \(\tau\) is a functioning determining whether we strictly prefer one or are indifferent between the two.&lt;/p&gt;
 
 
