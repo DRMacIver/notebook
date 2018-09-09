@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-09-08T11:07:02+01:00</updated>
+  <updated>2018-09-09T19:26:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,88 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-09-09-19:26.html</id>
+    <title>2018-09-09-19:26</title>
+    <updated>2018-09-09T19:26:00+01:00</updated>
+    <content>
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-09-09&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ I previously wrote
+ &lt;a href="https://www.drmaciver.com/2014/10/order-dependence-in-preference-elicitation/"&gt;
+  a post about NP-hardness in decision theory&lt;/a&gt;.
+On rereading it, I think its tone really doesn't help its point at all, so I thought I'd quickly write up a more formal version.&lt;/p&gt;
+
+
+&lt;p&gt;
+ The basic point is this: If you don't assume computation is free, NP-hard problems prove an interesting barrier to decision making that satisfies the classical "rationality" axioms.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Suppose you have an NP-hard problem (say a SAT instance), \(S\), and are offered a choice between the following three options:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;
+  A certain reward \(R_1\).&lt;/li&gt;
+&lt;li&gt;
+  A reward \(R_2 &amp;gt; R_1\) if a particular solution \(x\) witnesses that \(S\) is satisfiable.&lt;/li&gt;
+&lt;li&gt;
+  A reward \(R_3 &amp;gt; R_2\) if \(S\) is satisfiable.&lt;/li&gt;&lt;/ol&gt;
+
+
+&lt;p&gt;
+ Arrange the values such that \(\alpha_2 \ll R_2 - R_1 &amp;lt; R_3 - R_1 &amp;lt; \alpha_3\),
+where \(\alpha_i\) is the cost of solving the computational problem that would allow you to determine the pay off of these choices.
+i.e. the difference in reward is big enough that it is worth evaluating one solution, but small enough that it's not worth solving the problem.&lt;/p&gt;
+
+
+&lt;p&gt;
+ You should always strictly prefer \(3\) to \(2\),
+because under every circumstance where \(2\) pays anything, \(3\) pays a larger amount.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Additionally, you should prefer \(2\) to \(1\) if and only if \(x\)
+ &lt;em&gt;
+  is&lt;/em&gt;
+ a witness - because it's cheap enough to check,
+you just acquire the information and be done with it (if you want to quibble about expected payoffs, assume that \(\alpha_2\) is really really small).&lt;/p&gt;
+
+
+&lt;p&gt;
+ However, you should also prefer \(1\) to \(3\),
+because the possible reward you can gain by solving the problem is not worth the cost,
+so you should take the certain reward instead.&lt;/p&gt;
+
+
+&lt;p&gt;
+ This means that if \(x\) is chosen so that it
+ &lt;em&gt;
+  is&lt;/em&gt;
+ a witness,
+you have an intransitive preference \(2 &amp;gt; 3 &amp;gt; 2 &amp;gt; 1\).&lt;/p&gt;
+
+
+&lt;p&gt;
+ Another way of thinking about this is that the choices over this problem are not
+ &lt;em&gt;
+  subset consistent&lt;/em&gt;.
+The choice you make from \(\{1, 2, 3\}\) in the case that \(x\) is a solution is either \(3\) - evaluating \(2\) tells you that it's worth choosing \(3\) over \(1\),
+so you can skip paying the cost and just choose the good option. In contrast, your choice when picking from \(\{1, 3\}\) would be \(2\) - removing a value that was not the chosen answer has caused your opinion to flip.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-09-09-19:26.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-09-08-10:59.html</id>
     <title>2018-09-08-10:59</title>
-    <updated>2018-09-08T11:07:02+01:00</updated>
+    <updated>2018-09-08T11:34:11+01:00</updated>
     <content>
 
 &lt;dl class="metadata"&gt;
