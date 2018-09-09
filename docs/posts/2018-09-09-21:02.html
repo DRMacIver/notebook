@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+DRMacIver's Notebook: Physical and Topological Limitations to Rational Choice
+    </title>
+    <link rel="stylesheet" href="/pygments.css"/>
+    <link rel="stylesheet" href="/tufte.css"/>
+    <link rel="stylesheet" href="/latex.css"/>
+    <link rel="stylesheet" href="/drmnotes.css"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
+});
+</script>
+
+  </head>
+
+  <body>
+    <article>
+        <h1><a href="/">DRMacIver's Notebook</a></h1>
+        <p class=subtitle>Physical and Topological Limitations to Rational Choice</p>
+
+        
+
+<section id="the-post">
+<p class=subtitle>Physical and Topological Limitations to Rational Choice</p>
+<dl class=metadata>
+<dt>Published</dt>
+<dd class="post-date">2018-09-09</dd>
+</dl>
+<p>
+ Epistemic status: Confident.</p>
+<p>
+ Attention conservation notice: So much inside baseball.</p>
+<p>
+ Context: This is something I've known about for a while but couldn't find a concise write-up of that I had previously written and still liked,
+so I thought I'd just rewrite it here.</p>
+<hr/>
+<p>
+ The
+ <a href="https://en.wikipedia.org/wiki/Von_Neumann%E2%80%93Morgenstern_utility_theorem">
+  Von-Neumann-Morgenstern utility theorem</a>
+ states that if you ask people to choose between finite lotteries over outcomes,
+any "rational" behaviour looks like picking based on whichever gives the greatest expected utility according to some utility function over the outcomes.</p>
+<p>
+ I have a number of objections to this idea,
+but my main one is this:
+Regardless of the axioms you choose for rationality,
+it's physically impossible to implement an agent that can express the sort of total order over lotteries that VNM rationality is a theorem about,
+even if you grant the existence of logically omniscient agents (you can do it if you grant the existence of
+ <em>
+  actually</em>
+ omniscient agents).</p>
+<p>
+ Why?</p>
+<p>
+ Well, suppose we have some total preorder \(\preceq \subseteq \mathcal{L}^2\), where \(\mathcal{L}\) is the set of lotteries over some finite set of outcomes.
+Take this total order and define the choice function \(\tau : \mathcal{L}^2 \to \{-1, 0, 1\}\) where \(\tau(u, v) = 0\) if \(u \preceq v\) and \(v \preqec u\),
+else if \(u \prec v\) then \(\tau(u, v) = -1 = -\tau(v, u)\). i.e. \(\tau\) is a functioning determining whether we strictly prefer one or are indifferent between the two.</p>
+<p>
+ Any choice that a physical agent makes must be based on a finite (but not necessarily bounded up front) set of observations.
+Each of those observations can only give you information about the world up to some non-zero (but potentially arbitrarily small) tolerance.
+In particular, if we have lotteries \(u_1 \preceq u_2\), there is some \(\epsilon &gt; 0\) such that if \(d((u_1, u_2), (v_1, v_2) &lt; \epsilon\),
+we must have \(\tau(v_1, v_2) = \tau(u_1, u_2)\), because we only ever looked at \(u_1, u_2\) up to some finite precision.</p>
+<p>
+ In particular this means that \(\tau: \mathcal{L}^2 \to \{-1, 0, 1\}\) is a continuous function!</p>
+<p>
+ Unfortunately, \(\mathcal{L}^2\) is a connected topological space and \(\{-1, 0, 1\}\) is totally disconnected.
+Thus any continuous function must be constant. We know that \(\tau(u, u) = 0\), so we must have \(\tau(u, v) = 0\) for all \(u, v\).
+i.e. the only physically possible total preorder that we can express is the one that is totally indifferent between lotteries.</p>
+<p>
+ If the above argument makes no sense to you, another way to look at it is that you need to know \(u\) and \(v\) to infinite precision at the boundary.
+If you are on a boundary point where \(\tau(u, v) = 0\), moving slightly in the direction of \(u \prec v\) immediately forces your hand,
+so you cannot satisfy that continuity property at the boundary.</p>
+<p>
+ This problem can be made to go away by removing the indifferent set from the set of lotteries you consider - it's perfectly physically possible to distinguish the lotteries if you know a priori that you will definitely have a preference for one of them.
+Unfortunately there are several problems with this:</p>
+<ol>
+ <li>
+  Where does that a priori knowledge come from? It's obviously not true in general - you have to somehow avoid ever being asked to choose between a lottery and itself.</li>
+ <li>
+  The VNM axioms rely crucially on the use of indifference in the continuity axiom.</li>
+ <li>
+  The implementation of such a choice function is still physically fraught, because as you approach the boundary the amount of precision you require to decide tends to infinity.</li></ol>
+<p>
+ It is possible that there is some cunning workaround that lets you rescue VNM choice theory, but I find it very implausible that this is the case.
+The basic requirement that you construct a discrete function of the world is intrinsically aphysical, and it seems very hard to rescue that.</p>
+<p>
+ I have yet to sit down and think through exactly what I would like in its place in any great depth, mostly because nobody except me cares about this problem and I don't care enough to pursue it solo,
+but my preferred primitive is to replace the choice function with a continuously varying choice probability, so instead you have a function  \(\tau: \mathcal{L}^2 \to [0, 1]\), where \(\tau(u, v)\) is the probability of choosing \(u\) over \(v\),
+and \(\tau(v, u) = 1 - \tau(u, v)\).
+This neatly side steps all of the problems with using a discrete choice function, because you don't need to know the outcome probabilities with infinite precision in order to make your choice, and \([0, 1]\) is a connected topological space so, unlike discrete choices, it's perfectly possible to construct such functions.</p>
+</section>
+
+    </article>
+<footer>
+Copyright David R. MacIver.
+
+CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
+</footer>
+  </body>
+</html>

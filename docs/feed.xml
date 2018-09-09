@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-09-09T19:26:00+01:00</updated>
+  <updated>2018-09-09T21:02:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,120 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-09-09-21:02.html</id>
+    <title>Physical and Topological Limitations to Rational Choice</title>
+    <updated>2018-09-09T21:02:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Physical and Topological Limitations to Rational Choice&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-09-09&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ Epistemic status: Confident.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Attention conservation notice: So much inside baseball.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Context: This is something I've known about for a while but couldn't find a concise write-up of that I had previously written and still liked,
+so I thought I'd just rewrite it here.&lt;/p&gt;
+
+
+&lt;hr/&gt;
+
+
+&lt;p&gt;
+ The
+ &lt;a href="https://en.wikipedia.org/wiki/Von_Neumann%E2%80%93Morgenstern_utility_theorem"&gt;
+  Von-Neumann-Morgenstern utility theorem&lt;/a&gt;
+ states that if you ask people to choose between finite lotteries over outcomes,
+any "rational" behaviour looks like picking based on whichever gives the greatest expected utility according to some utility function over the outcomes.&lt;/p&gt;
+
+
+&lt;p&gt;
+ I have a number of objections to this idea,
+but my main one is this:
+Regardless of the axioms you choose for rationality,
+it's physically impossible to implement an agent that can express the sort of total order over lotteries that VNM rationality is a theorem about,
+even if you grant the existence of logically omniscient agents (you can do it if you grant the existence of
+ &lt;em&gt;
+  actually&lt;/em&gt;
+ omniscient agents).&lt;/p&gt;
+
+
+&lt;p&gt;
+ Why?&lt;/p&gt;
+
+
+&lt;p&gt;
+ Well, suppose we have some total preorder \(\preceq \subseteq \mathcal{L}^2\), where \(\mathcal{L}\) is the set of lotteries over some finite set of outcomes.
+Take this total order and define the choice function \(\tau : \mathcal{L}^2 \to \{-1, 0, 1\}\) where \(\tau(u, v) = 0\) if \(u \preceq v\) and \(v \preqec u\),
+else if \(u \prec v\) then \(\tau(u, v) = -1 = -\tau(v, u)\). i.e. \(\tau\) is a functioning determining whether we strictly prefer one or are indifferent between the two.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Any choice that a physical agent makes must be based on a finite (but not necessarily bounded up front) set of observations.
+Each of those observations can only give you information about the world up to some non-zero (but potentially arbitrarily small) tolerance.
+In particular, if we have lotteries \(u_1 \preceq u_2\), there is some \(\epsilon &amp;gt; 0\) such that if \(d((u_1, u_2), (v_1, v_2) &amp;lt; \epsilon\),
+we must have \(\tau(v_1, v_2) = \tau(u_1, u_2)\), because we only ever looked at \(u_1, u_2\) up to some finite precision.&lt;/p&gt;
+
+
+&lt;p&gt;
+ In particular this means that \(\tau: \mathcal{L}^2 \to \{-1, 0, 1\}\) is a continuous function!&lt;/p&gt;
+
+
+&lt;p&gt;
+ Unfortunately, \(\mathcal{L}^2\) is a connected topological space and \(\{-1, 0, 1\}\) is totally disconnected.
+Thus any continuous function must be constant. We know that \(\tau(u, u) = 0\), so we must have \(\tau(u, v) = 0\) for all \(u, v\).
+i.e. the only physically possible total preorder that we can express is the one that is totally indifferent between lotteries.&lt;/p&gt;
+
+
+&lt;p&gt;
+ If the above argument makes no sense to you, another way to look at it is that you need to know \(u\) and \(v\) to infinite precision at the boundary.
+If you are on a boundary point where \(\tau(u, v) = 0\), moving slightly in the direction of \(u \prec v\) immediately forces your hand,
+so you cannot satisfy that continuity property at the boundary.&lt;/p&gt;
+
+
+&lt;p&gt;
+ This problem can be made to go away by removing the indifferent set from the set of lotteries you consider - it's perfectly physically possible to distinguish the lotteries if you know a priori that you will definitely have a preference for one of them.
+Unfortunately there are several problems with this:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;
+  Where does that a priori knowledge come from? It's obviously not true in general - you have to somehow avoid ever being asked to choose between a lottery and itself.&lt;/li&gt;
+&lt;li&gt;
+  The VNM axioms rely crucially on the use of indifference in the continuity axiom.&lt;/li&gt;
+&lt;li&gt;
+  The implementation of such a choice function is still physically fraught, because as you approach the boundary the amount of precision you require to decide tends to infinity.&lt;/li&gt;&lt;/ol&gt;
+
+
+&lt;p&gt;
+ It is possible that there is some cunning workaround that lets you rescue VNM choice theory, but I find it very implausible that this is the case.
+The basic requirement that you construct a discrete function of the world is intrinsically aphysical, and it seems very hard to rescue that.&lt;/p&gt;
+
+
+&lt;p&gt;
+ I have yet to sit down and think through exactly what I would like in its place in any great depth, mostly because nobody except me cares about this problem and I don't care enough to pursue it solo,
+but my preferred primitive is to replace the choice function with a continuously varying choice probability, so instead you have a function  \(\tau: \mathcal{L}^2 \to [0, 1]\), where \(\tau(u, v)\) is the probability of choosing \(u\) over \(v\),
+and \(\tau(v, u) = 1 - \tau(u, v)\).
+This neatly side steps all of the problems with using a discrete choice function, because you don't need to know the outcome probabilities with infinite precision in order to make your choice, and \([0, 1]\) is a connected topological space so, unlike discrete choices, it's perfectly possible to construct such functions.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-09-09-21:02.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-09-09-19:26.html</id>
     <title>2018-09-09-19:26</title>
-    <updated>2018-09-09T19:26:00+01:00</updated>
+    <updated>2018-09-09T19:48:39+01:00</updated>
     <content>
 
 &lt;dl class="metadata"&gt;
