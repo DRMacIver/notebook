@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-09-10T08:45:00+01:00</updated>
+  <updated>2018-09-10T08:50:02+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -13,7 +13,7 @@
   <entry>
     <id>https://notebook.drmaciver.com/posts/2018-09-10-08:45.html</id>
     <title>Programming vs Mathematics</title>
-    <updated>2018-09-10T08:45:00+01:00</updated>
+    <updated>2018-09-10T08:50:02+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Programming vs Mathematics&lt;/p&gt;
@@ -30,7 +30,7 @@
 
 
 &lt;p&gt;
- Mathematics: "Let \(\alpha, \gamma, \beta\) be as in theorem 17.1. If \(\gamma \wedge \beta\) is a normal R-domain, then \(\mu(\alpha \oplus \gamma) \dagger \beta\) is quasi-uniform.&lt;/p&gt;
+ Mathematics: "Let \(\alpha, \gamma, \beta\) be as in theorem 17.1. If \(\gamma \wedge \beta\) is a normal R-domain, then \(\mu(\alpha \oplus \gamma) \dagger \beta\) is quasi-uniform."&lt;/p&gt;
 
 
 &lt;p&gt;
