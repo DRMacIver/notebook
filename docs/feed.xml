@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-09-09T21:55:51+01:00</updated>
+  <updated>2018-09-10T08:45:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,38 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-09-10-08:45.html</id>
+    <title>Programming vs Mathematics</title>
+    <updated>2018-09-10T08:45:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Programming vs Mathematics&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-09-10&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ Programming: "Custom operators and single letter variable names? Why so terse? Bytes are cheap! Suspish. Not sure if want. Code should be optimised for reading, not writing!"&lt;/p&gt;
+
+
+&lt;p&gt;
+ Mathematics: "Let \(\alpha, \gamma, \beta\) be as in theorem 17.1. If \(\gamma \wedge \beta\) is a normal R-domain, then \(\mu(\alpha \oplus \gamma) \dagger \beta\) is quasi-uniform.&lt;/p&gt;
+
+
+&lt;p&gt;
+ (No, that's not an actual quote and those terms don't really mean anything)&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-09-10-08:45.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-09-09-21:02.html</id>
     <title>Physical and Topological Limitations to Rational Choice</title>
-    <updated>2018-09-09T21:55:51+01:00</updated>
+    <updated>2018-09-09T22:28:23+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Physical and Topological Limitations to Rational Choice&lt;/p&gt;
