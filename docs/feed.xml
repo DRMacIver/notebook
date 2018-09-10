@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-09-10T09:52:44+01:00</updated>
+  <updated>2018-09-10T13:14:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,49 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-09-10-13:14.html</id>
+    <title>2018-09-10-13:14</title>
+    <updated>2018-09-10T13:14:00+01:00</updated>
+    <content>
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-09-10&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ (Lightly edited)
+ &lt;a href="https://twitter.com/DRMacIver/status/1039106038425903104"&gt;
+  exchange from Twitter&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;
+  Me: These days I think I'm in favour of a hung parliament. *checks dictionary* Oh that's not what it means. Never mind.
+Jack: Are you fishing for "hanged parliament"?
+Me: No, people are hanged.
+  &lt;em&gt;
+   Animals&lt;/em&gt;
+  are hung.&lt;/p&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;
+ I don't actually ascribe to this worldview (I believe very strongly that dehumanizing your opponents is morally indefensible no matter how evil you think they are),
+and there are literally dozens of MPs who I would be sad if they were hanged,
+but sometimes my inner evil overlord just insists on coming out to play.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Also I really want to use this line in a story now.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-09-10-13:14.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-09-10-09:52.html</id>
     <title>What might a continuous rational agent look like?</title>
-    <updated>2018-09-10T09:52:00+01:00</updated>
+    <updated>2018-09-10T10:32:35+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;What might a continuous rational agent look like?&lt;/p&gt;
