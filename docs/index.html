@@ -40,6 +40,133 @@ MathJax.Hub.Config({
         
 
 <section>
+<h2><a href="/posts/2018-09-13-13:07.html">2018-09-13</a></h2>
+
+
+<dl class="metadata">
+<dt>Published</dt>
+<dd class="post-date">2018-09-13</dd>
+</dl>
+
+
+<p>
+ This is a fairly involved example which I don't expect to convince anyone,
+and is just the result of me thinking through such things.</p>
+
+
+<p>
+ Suppose we have a bunch of propositions \(A_1, \ldots, A_n\).
+We know a priori that \(A_i \not\implies A_j\) for \(i &gt; j\),
+but do not know whether there are any forwards implications.
+We have an "implication oracle" which acts as follows:</p>
+
+
+<ol>
+<li>
+  It has access to a number of "primitive implications" of the form \(A_i \implies A_j\).
+   These implications are considered to be unreliable: They are true with probability \(1 - \epsilon\),
+   but with probability \(\epsilon\) they provide no information (i.e. the proposition may be true, we just don't know that).
+   These errors are independent.</li>
+<li>
+  We may query the proof oracle with any pair \(A_i, A_j\) and it tells us the probability of there being a valid proof of \(A_i \implies A_j\) given only a true set of primitive implications.</li></ol>
+
+
+<p>
+ We also have a "plausibility oracle" that gives us our prior probabilities of \(p_i = A_i\) being true.</p>
+
+
+<p>
+ Suppose we want to define an agent that chooses between these propositions, with a reward if the proposition chosen is true.</p>
+
+
+<p>
+ We can define a Bayesian agent that picks whichever of \(k \in \{i, j\}\) has the highest posterior probability\((1 - \epsilon) P(A_k | A_i \implies A_j + \epsilon p_i\).</p>
+
+
+<p>
+ The problem with this agent is that it is not transitive!</p>
+
+
+<p>
+ Consider the following example: Let \(\epsilon = 0.11\),
+and suppose we have the primitive implications \(A_1 \implies A_2\), \(A_2 \implies A_3\) and the prior probabilities \(p_1 = 0.2\), \(p_2 = p_3 = 0.01\).</p>
+
+
+<p>
+ This results in the above agent preferring \(A_2\) to \(A_1\), \(A_3\) to \(A_2\) and \(A_1\) to \(A_3\).
+The reason is that the strength of the implication \(A_1 \implies A_3\) is weaker than that of either the individual implications, as it is \(1 - (1 - \epsilon)^2 \approx 0.21\).
+Thus even though we still "believe" this implication, the weaker strength of it makes our prior probabilities overwhelm it.</p>
+
+
+<p>
+ Now, this paradox goes away if we have access to the inner workings of the implication oracle:
+If we know all of the primitive implications a priori then we can just calculate the "true" posterior probabilities across all possible combinations of whether the implications are valid or not,
+and pick the answer with the highest posterior.</p>
+
+
+<p>
+ But this effectively requires us to know the entire space of propositions in advance.</p>
+
+
+<p>
+ So the question is, does there exist a decision procedure that has the following property:</p>
+
+
+<ol>
+<li>
+  It depends only on the output of our two oracles.</li>
+<li>
+  It is transitive.</li>
+<li>
+  It weakly dominates the above oracle.</li></ol>
+
+
+<p>
+ My suspicion is that the answer is no, but I'm not sure how one would go about proving that.</p>
+
+
+</section>
+<section>
+<h2><a href="/posts/2018-09-13-11:02.html">2018-09-13</a></h2>
+
+
+<p class="subtitle">Notes from reading "Rigour and Structure"</p>
+
+
+<dl class="metadata">
+<dt>Published</dt>
+<dd class="post-date">2018-09-13</dd>
+</dl>
+
+
+<blockquote>
+<p>
+  The distinctive definition-theorem-proof format of professional publications is the single most conspicuous feature of mathematical practice.</p>
+<p>
+  The quality whose presence in a purported proof makes it a genuine proof by present-day journal standards, and whose absence makes the proof spurious in a way that if discovered will call for retraction, is called rigor.</p>
+<p>
+  The assessment of purported proofs for rigor is generally not the topic of a separate course.</p>
+<p>
+  Mathematicians’ views on the nature of rigor and proof may more often be expressed in aphorisms and epigrams, in anecdotes and jokes, for instance, of the common ‘an engineer, a physicist, and a mathematician…’ genre, than in formal theoretical pronouncements.</p>
+<p>
+  contrary to the dictum that a proof is what convinces, not everything that convinces is a proof</p>
+<p>
+  such methods, and other aspects of early modern mathematics, also exemplify what I will call reliance on generic reasoning. By this I mean performing calculations or manipulations that usually or generally work but sometimes or exceptionally fail, treating as universally applicable techniques that are — and may be known to be — only applicable in favorable cases, in the hope and belief that the case in which one is interested is one of the favorable ones, but without any rigorous justification for supposing this to be so.</p></blockquote>
+
+
+<p>
+ On uniform continuity:</p>
+
+
+<blockquote>
+<p>
+  The distinction is a matter of the order of quantifiers (all-all-exists vs all-exists-all, or in logicians’ notation \(\forall\forall\exists\) and \(\forall\exists\forall\) cannot be made unless the quantifiers have been made explicit and not left implicit in expressions like ‘close as desired’ or ‘close enough’.</p>
+<p>
+  Proofs depending on calculations, in particular, are especially likely to go wrong if the calculations are long and complicated enough.</p></blockquote>
+
+
+</section>
+<section>
 <h2><a href="/posts/2018-09-10-13:14.html">2018-09-10</a></h2>
 
 

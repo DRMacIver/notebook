@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-09-10T13:17:51+01:00</updated>
+  <updated>2018-09-13T13:07:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,142 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-09-13-13:07.html</id>
+    <title>2018-09-13-13:07</title>
+    <updated>2018-09-13T13:07:00+01:00</updated>
+    <content>
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-09-13&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ This is a fairly involved example which I don't expect to convince anyone,
+and is just the result of me thinking through such things.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Suppose we have a bunch of propositions \(A_1, \ldots, A_n\).
+We know a priori that \(A_i \not\implies A_j\) for \(i &amp;gt; j\),
+but do not know whether there are any forwards implications.
+We have an "implication oracle" which acts as follows:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;
+  It has access to a number of "primitive implications" of the form \(A_i \implies A_j\).
+   These implications are considered to be unreliable: They are true with probability \(1 - \epsilon\),
+   but with probability \(\epsilon\) they provide no information (i.e. the proposition may be true, we just don't know that).
+   These errors are independent.&lt;/li&gt;
+&lt;li&gt;
+  We may query the proof oracle with any pair \(A_i, A_j\) and it tells us the probability of there being a valid proof of \(A_i \implies A_j\) given only a true set of primitive implications.&lt;/li&gt;&lt;/ol&gt;
+
+
+&lt;p&gt;
+ We also have a "plausibility oracle" that gives us our prior probabilities of \(p_i = A_i\) being true.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Suppose we want to define an agent that chooses between these propositions, with a reward if the proposition chosen is true.&lt;/p&gt;
+
+
+&lt;p&gt;
+ We can define a Bayesian agent that picks whichever of \(k \in \{i, j\}\) has the highest posterior probability\((1 - \epsilon) P(A_k | A_i \implies A_j + \epsilon p_i\).&lt;/p&gt;
+
+
+&lt;p&gt;
+ The problem with this agent is that it is not transitive!&lt;/p&gt;
+
+
+&lt;p&gt;
+ Consider the following example: Let \(\epsilon = 0.11\),
+and suppose we have the primitive implications \(A_1 \implies A_2\), \(A_2 \implies A_3\) and the prior probabilities \(p_1 = 0.2\), \(p_2 = p_3 = 0.01\).&lt;/p&gt;
+
+
+&lt;p&gt;
+ This results in the above agent preferring \(A_2\) to \(A_1\), \(A_3\) to \(A_2\) and \(A_1\) to \(A_3\).
+The reason is that the strength of the implication \(A_1 \implies A_3\) is weaker than that of either the individual implications, as it is \(1 - (1 - \epsilon)^2 \approx 0.21\).
+Thus even though we still "believe" this implication, the weaker strength of it makes our prior probabilities overwhelm it.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Now, this paradox goes away if we have access to the inner workings of the implication oracle:
+If we know all of the primitive implications a priori then we can just calculate the "true" posterior probabilities across all possible combinations of whether the implications are valid or not,
+and pick the answer with the highest posterior.&lt;/p&gt;
+
+
+&lt;p&gt;
+ But this effectively requires us to know the entire space of propositions in advance.&lt;/p&gt;
+
+
+&lt;p&gt;
+ So the question is, does there exist a decision procedure that has the following property:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;
+  It depends only on the output of our two oracles.&lt;/li&gt;
+&lt;li&gt;
+  It is transitive.&lt;/li&gt;
+&lt;li&gt;
+  It weakly dominates the above oracle.&lt;/li&gt;&lt;/ol&gt;
+
+
+&lt;p&gt;
+ My suspicion is that the answer is no, but I'm not sure how one would go about proving that.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-09-13-13:07.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-09-13-11:02.html</id>
+    <title>Notes from reading "Rigour and Structure"</title>
+    <updated>2018-09-13T11:02:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Notes from reading "Rigour and Structure"&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-09-13&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;
+  The distinctive definition-theorem-proof format of professional publications is the single most conspicuous feature of mathematical practice.&lt;/p&gt;
+&lt;p&gt;
+  The quality whose presence in a purported proof makes it a genuine proof by present-day journal standards, and whose absence makes the proof spurious in a way that if discovered will call for retraction, is called rigor.&lt;/p&gt;
+&lt;p&gt;
+  The assessment of purported proofs for rigor is generally not the topic of a separate course.&lt;/p&gt;
+&lt;p&gt;
+  Mathematicians’ views on the nature of rigor and proof may more often be expressed in aphorisms and epigrams, in anecdotes and jokes, for instance, of the common ‘an engineer, a physicist, and a mathematician…’ genre, than in formal theoretical pronouncements.&lt;/p&gt;
+&lt;p&gt;
+  contrary to the dictum that a proof is what convinces, not everything that convinces is a proof&lt;/p&gt;
+&lt;p&gt;
+  such methods, and other aspects of early modern mathematics, also exemplify what I will call reliance on generic reasoning. By this I mean performing calculations or manipulations that usually or generally work but sometimes or exceptionally fail, treating as universally applicable techniques that are — and may be known to be — only applicable in favorable cases, in the hope and belief that the case in which one is interested is one of the favorable ones, but without any rigorous justification for supposing this to be so.&lt;/p&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;
+ On uniform continuity:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;
+  The distinction is a matter of the order of quantifiers (all-all-exists vs all-exists-all, or in logicians’ notation \(\forall\forall\exists\) and \(\forall\exists\forall\) cannot be made unless the quantifiers have been made explicit and not left implicit in expressions like ‘close as desired’ or ‘close enough’.&lt;/p&gt;
+&lt;p&gt;
+  Proofs depending on calculations, in particular, are especially likely to go wrong if the calculations are long and complicated enough.&lt;/p&gt;&lt;/blockquote&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-09-13-11:02.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-09-10-13:14.html</id>
     <title>2018-09-10-13:14</title>
-    <updated>2018-09-10T13:17:51+01:00</updated>
+    <updated>2018-09-10T13:18:33+01:00</updated>
     <content>
 
 &lt;dl class="metadata"&gt;
