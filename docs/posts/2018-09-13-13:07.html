@@ -48,7 +48,7 @@ MathJax.Hub.Config({
 and is just the result of me thinking through some things.</p>
 <p>
  Suppose we have a bunch of propositions \(A_1, \ldots, A_n\).
-We know a priori that \(A_i \not\implies A_j\) for \(i &gt; j\),
+We know a priori that \(A_i \centernot\implies A_j\) for \(i &gt; j\),
 but do not know whether there are any forwards implications.
 We have an "implication oracle" which acts as follows:</p>
 <ol>
@@ -64,7 +64,7 @@ We have an "implication oracle" which acts as follows:</p>
 <p>
  Suppose we want to define an agent that chooses between these propositions, with a reward if the proposition chosen is true.</p>
 <p>
- We can define a Bayesian agent that picks whichever of \(k \in \{i, j\}\) has the highest posterior probability\((1 - \epsilon) P(A_k | A_i \implies A_j + \epsilon p_i\).</p>
+ We can define a Bayesian agent that picks whichever of \(k \in \{i, j\}\) has the highest posterior probability\((1 - \epsilon) P(A_k | A_i \implies A_j) + \epsilon p_i\).</p>
 <p>
  The problem with this agent is that it is not transitive!</p>
 <p>
@@ -86,6 +86,16 @@ but this effectively requires us to know the entire space of propositions in adv
  strategy which has to decide based only on the answer of those two oracles on the current pair can dominate this strategy,
 because this is the dominant strategy for the case where there are only two propositions and the oracles are exactly correct about the probabilities,
 but I haven't checked the details of this argument.</p>
+<p>
+ So what this means in practice is that if some elements of your reasoning are "screened off" from you as black boxes,
+and you do not have full knowledge in advance of the set of available options,
+even a fully VNM-rational Bayesian reasoner will necessarily exhibit intransitive preferences.</p>
+<p>
+ However! Note that
+ <em>
+  this does not mean that they can be Dutch Booked</em>.
+The reason for this is that the proper Bayesian reasoner will update their posteriors about propositions as they are forced to make choices.
+This may in fact mean that the time varying preferences they make are actually transitive, at least in the limit, while their instantaneous preferences are not.</p>
 </section>
 
     </article>

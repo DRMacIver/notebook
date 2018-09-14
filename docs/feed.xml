@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-09-13T14:26:29+01:00</updated>
+  <updated>2018-09-14T16:31:24+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -13,7 +13,7 @@
   <entry>
     <id>https://notebook.drmaciver.com/posts/2018-09-13-13:07.html</id>
     <title>2018-09-13-13:07</title>
-    <updated>2018-09-13T14:26:29+01:00</updated>
+    <updated>2018-09-14T16:31:24+01:00</updated>
     <content>
 
 &lt;dl class="metadata"&gt;
@@ -29,7 +29,7 @@ and is just the result of me thinking through some things.&lt;/p&gt;
 
 &lt;p&gt;
  Suppose we have a bunch of propositions \(A_1, \ldots, A_n\).
-We know a priori that \(A_i \not\implies A_j\) for \(i &amp;gt; j\),
+We know a priori that \(A_i \centernot\implies A_j\) for \(i &amp;gt; j\),
 but do not know whether there are any forwards implications.
 We have an "implication oracle" which acts as follows:&lt;/p&gt;
 
@@ -53,7 +53,7 @@ We have an "implication oracle" which acts as follows:&lt;/p&gt;
 
 
 &lt;p&gt;
- We can define a Bayesian agent that picks whichever of \(k \in \{i, j\}\) has the highest posterior probability\((1 - \epsilon) P(A_k | A_i \implies A_j + \epsilon p_i\).&lt;/p&gt;
+ We can define a Bayesian agent that picks whichever of \(k \in \{i, j\}\) has the highest posterior probability\((1 - \epsilon) P(A_k | A_i \implies A_j) + \epsilon p_i\).&lt;/p&gt;
 
 
 &lt;p&gt;
@@ -85,6 +85,20 @@ but this effectively requires us to know the entire space of propositions in adv
  strategy which has to decide based only on the answer of those two oracles on the current pair can dominate this strategy,
 because this is the dominant strategy for the case where there are only two propositions and the oracles are exactly correct about the probabilities,
 but I haven't checked the details of this argument.&lt;/p&gt;
+
+
+&lt;p&gt;
+ So what this means in practice is that if some elements of your reasoning are "screened off" from you as black boxes,
+and you do not have full knowledge in advance of the set of available options,
+even a fully VNM-rational Bayesian reasoner will necessarily exhibit intransitive preferences.&lt;/p&gt;
+
+
+&lt;p&gt;
+ However! Note that
+ &lt;em&gt;
+  this does not mean that they can be Dutch Booked&lt;/em&gt;.
+The reason for this is that the proper Bayesian reasoner will update their posteriors about propositions as they are forced to make choices.
+This may in fact mean that the time varying preferences they make are actually transitive, at least in the limit, while their instantaneous preferences are not.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2018-09-13-13:07.html" rel="alternate"/>
