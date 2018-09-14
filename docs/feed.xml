@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-09-14T16:36:35+01:00</updated>
+  <updated>2018-09-14T16:37:28+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -13,7 +13,7 @@
   <entry>
     <id>https://notebook.drmaciver.com/posts/2018-09-13-13:07.html</id>
     <title>2018-09-13-13:07</title>
-    <updated>2018-09-14T16:36:35+01:00</updated>
+    <updated>2018-09-14T16:37:28+01:00</updated>
     <content>
 
 &lt;dl class="metadata"&gt;
@@ -29,7 +29,7 @@ and is just the result of me thinking through some things.&lt;/p&gt;
 
 &lt;p&gt;
  Suppose we have a bunch of propositions \(A_1, \ldots, A_n\).
-We know a priori that \(A_i \centernot\implies A_j\) for \(i &amp;gt; j\),
+We know a priori that \(A_i \implies A_j\) is false for \(i &amp;gt; j\),
 but do not know whether there are any forwards implications.
 We have an "implication oracle" which acts as follows:&lt;/p&gt;
 
