@@ -51,7 +51,7 @@ MathJax.Hub.Config({
 
 <p>
  This is a fairly involved example which I don't expect to convince anyone,
-and is just the result of me thinking through such things.</p>
+and is just the result of me thinking through some things.</p>
 
 
 <p>
@@ -101,28 +101,17 @@ Thus even though we still "believe" this implication, the weaker strength of it 
 <p>
  Now, this paradox goes away if we have access to the inner workings of the implication oracle:
 If we know all of the primitive implications a priori then we can just calculate the "true" posterior probabilities across all possible combinations of whether the implications are valid or not,
-and pick the answer with the highest posterior.</p>
+and pick the answer with the highest posterior,
+but this effectively requires us to know the entire space of propositions in advance.</p>
 
 
 <p>
- But this effectively requires us to know the entire space of propositions in advance.</p>
-
-
-<p>
- So the question is, does there exist a decision procedure that has the following property:</p>
-
-
-<ol>
-<li>
-  It depends only on the output of our two oracles.</li>
-<li>
-  It is transitive.</li>
-<li>
-  It weakly dominates the above oracle.</li></ol>
-
-
-<p>
- My suspicion is that the answer is no, but I'm not sure how one would go about proving that.</p>
+ I think that
+ <em>
+  no</em>
+ strategy which has to decide based only on the answer of those two oracles on the current pair can dominate this strategy,
+because this is the dominant strategy for the case where there are only two propositions and the oracles are exactly correct about the probabilities,
+but I haven't checked the details of this argument.</p>
 
 
 </section>
@@ -162,7 +151,30 @@ and pick the answer with the highest posterior.</p>
 <p>
   The distinction is a matter of the order of quantifiers (all-all-exists vs all-exists-all, or in logicians’ notation \(\forall\forall\exists\) and \(\forall\exists\forall\) cannot be made unless the quantifiers have been made explicit and not left implicit in expressions like ‘close as desired’ or ‘close enough’.</p>
 <p>
-  Proofs depending on calculations, in particular, are especially likely to go wrong if the calculations are long and complicated enough.</p></blockquote>
+  Proofs depending on calculations, in particular, are especially likely to go wrong if the calculations are long and complicated enough.</p>
+<p>
+  Rigorism imposes no restriction on definitions other than rigor, and leaves one perfectly free to explore definitions that may at first seem complicated and unnatural, if there are grounds for hoping they will be useful and fruitful.</p>
+<p>
+  Owing to the freedom to introduce useful new notions regardless of simplicity or naturalness, so long only as they are rigorously defined, nothing need be lost.</p>
+<p>
+  Time and again during the early twentieth century non-rigorous but useful methods introduced by physicists or engineers were found to have rigorous counterparts, the development of which at the very least clarified the scope and limits of the techniques, and more often than not had other side benefits as well.</p>
+<p>
+  Brouwer’s mysticism led him to believe that mathematics is largely an incommunicable mental activity, not to say an ineffable meditative practice, and as a result the rules of intuitionist game were never clearly articulated</p>
+<p>
+  Deduction and Deducibility. Here one must confront the fact that if one looks to logic textbooks, though one will find an agreed characterization of logical consequence, which I have already discussed, one finds no agreed characterization of logical deduction.</p></blockquote>
+
+
+<p>
+ The point being that logic has more to say about the process that determines what the true statements are than how to actually determine the true statements. This is analagous to the enumeration vs predicate view of a set.</p>
+
+
+<blockquote>
+<p>
+  [Mathematical logic] resembles mathematical physics and mathematical economics in that its models are highly idealized. In particular, as I have been emphasizing, it gives a quite good model of mathematical deducibility, but a much poorer model of mathematical deduction.</p></blockquote>
+
+
+<p>
+ The point being that formal logic is a kind of "spherical cow in a vacuum" version of actual logic performed by real mathematicians.</p>
 
 
 </section>
