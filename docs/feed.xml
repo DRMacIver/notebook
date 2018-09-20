@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-09-20T09:17:00+01:00</updated>
+  <updated>2018-09-20T11:31:28+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -13,7 +13,7 @@
   <entry>
     <id>https://notebook.drmaciver.com/posts/2018-09-20-09:17.html</id>
     <title>Lean Coffee at PyCon UK</title>
-    <updated>2018-09-20T09:17:00+01:00</updated>
+    <updated>2018-09-20T11:31:28+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Lean Coffee at PyCon UK&lt;/p&gt;
@@ -56,7 +56,16 @@ so I passed on the duties - one person took up moderating, another took up scrib
 &lt;p&gt;
  The point of the system is to provide a structured conversation about a large range of topics in a very short space of time.
 We select a card (more on that below). This has a discussion prompt (often a question) and the name of the person who proposed it.
-The proposer gets a (short!) opportunity to elaborate on the theme, then the group votes on whether they want to discuss it.
+At this point anyone may veto discussing the card. People shouldn't veto cards just because they're uninterested, the veto system exists for topics that would make you unhappy or uncomfortable to have discussed.
+This never actually came up in practice. I don't know if that is because people didn't feel empowered to veto or because it was never necessary - I
+ &lt;em&gt;
+  think&lt;/em&gt;
+ it is the latter,
+but I don't feel like people would have necessarily been willing to veto if they needed to.&lt;/p&gt;
+
+
+&lt;p&gt;
+ The proposer gets a (short!) opportunity to elaborate on the theme, then the group votes on whether they want to discuss it.
 If a strict majority raise their hands, a 5 minute clock is started, and the group discusses it until the time runs out.
 At that point, the group votes whether they want to continue it. If a strict majority does, a new 5 minute timer is started,
 and the discussion continues.
@@ -106,7 +115,15 @@ shuffled the cards that had been put aside, and started the process again.&lt;/p
    much&lt;/em&gt;
   easier taking notes when I wasn't also moderating, and I would rather omit the note taking activity altogether than try to combine it with moderation duties in future (Note: Be careful when asking for volunteers to be note-taker. This is one of those things that instantly gets gendered, and a woman will probably end up doing it by default if you ask for volunteers, so it's best to either assign the role or do it by lot or something. That being said our volunteer note-taker in the third round was a man. On the third tentacle, PyCon UK attendees are lovely and are probably less prone to this failure mode).&lt;/li&gt;
 &lt;li&gt;
-  We wrote down everyone's email addresses on a card and I'm going to email the notes around to give people an opportunity to sanitize (I already carefully omitted a few things that I didn't think should be public) and then I'll publish the notes publicly.&lt;/li&gt;&lt;/ul&gt;
+  We wrote down everyone's email addresses on a card and I'm going to email the notes around to give people an opportunity to sanitize (I already carefully omitted a few things that I didn't think should be public) and then I'll publish the notes publicly.&lt;/li&gt;
+&lt;li&gt;
+  We didn't clarify the meaning of the voting system until quite late, but an important distinction is that you should raise your hand if you
+  &lt;em&gt;
+   want&lt;/em&gt;
+  to discuss the topic, not just if you're
+  &lt;em&gt;
+   happy&lt;/em&gt;
+  to discuss the topic.&lt;/li&gt;&lt;/ul&gt;
 
 
 &lt;h3&gt;
@@ -115,13 +132,15 @@ shuffled the cards that had been put aside, and started the process again.&lt;/p
 
 &lt;ul&gt;
 &lt;li&gt;
-  I wasn't a fan of the show of hands system. I would like simultaneous anonymous voting - there was a lot of social pressure to conform I think, with people looking at other people before deciding what to vote. I would also like it to be easier to count, as it turns out that I am bad at counting majority voting in a group that is constantly changing and includes me.&lt;/li&gt;
+  I wasn't a fan of the show of hands system. I would like simultaneous, and maybe anonymous, voting - there was a lot of social pressure to conform I think, with people looking at other people before deciding what to vote. I would also like it to be easier to count, as it turns out that I am bad at counting majority voting in a group that is constantly changing and includes me.&lt;/li&gt;
 &lt;li&gt;
   I thought people were too nice early on - we had a lot of unanimous votes in favour of discussion. Some of these were legitimately high quality topics, but I feel like the unanimity was implausible for some of them. I'm going to think about mechanisms for offsetting this, but I think simultaneous voting might be enough.&lt;/li&gt;
 &lt;li&gt;
   There is definitely a size limit on how large the group can get before this gets a bit unwieldy. Four people was viable but maybe a bit too small. Once we were past ten it was definitely too large. The sweet spot is probably somewhere in the five to eight range.&lt;/li&gt;
 &lt;li&gt;
-  I'd like a way to encourage some of the more quiet members of the group to speak as well as to encourage the louder members not to - there were some people in the group (mostly women) who I was pretty sure had interesting things to say but didn't feel able to (possibly due to being unable to get a word in edgewise). They may also just have been enjoying listening, I don't know - I know some people explicitly came just to listen in. Unfortunately they had to leave midway through, so I wasn't able to ask them. I'll do so when I email them.&lt;/li&gt;&lt;/ul&gt;
+  I'd like a way to encourage some of the more quiet members of the group to speak as well as to encourage the louder members not to - there were some people in the group (mostly women) who I was pretty sure had interesting things to say but didn't feel able to (possibly due to being unable to get a word in edgewise). They may also just have been enjoying listening, I don't know - I know some people explicitly came just to listen in. Unfortunately they had to leave midway through, so I wasn't able to ask them. I'll do so when I email them.&lt;/li&gt;
+&lt;li&gt;
+  We had a veto system - anyone was allowed to veto a card if they didn't want it discussed. This was introduced halfway through when&lt;/li&gt;&lt;/ul&gt;
 
 
 &lt;h3&gt;
