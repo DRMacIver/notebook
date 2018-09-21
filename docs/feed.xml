@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-09-20T13:09:00+01:00</updated>
+  <updated>2018-09-21T07:04:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,141 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-09-21-07:04.html</id>
+    <title>Some of my favourite PyCon UK talks</title>
+    <updated>2018-09-21T07:04:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Some of my favourite PyCon UK talks&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-09-21&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ The PyCon UK team are amazingly fast at uploading their videos,
+which means
+ &lt;a href="https://www.youtube.com/channel/UChA9XP_feY1-1oSy2L7acog"&gt;
+  the entire conference is now online on youtube&lt;/a&gt;
+ (There was some problem with one video but I'm not sure whether that's been resolved, so maybe the entire conference bar one talk).&lt;/p&gt;
+
+
+&lt;p&gt;
+ If I'm being honest, I don't go to PyCon UK for the talks - I go because it's an amazing community. In general I don't get a huge amount out of talks in most conferences I go to.
+However I thought there were some especially high quality talks this year,
+including some that I not just watched but am going to
+ &lt;em&gt;
+  rewatch&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;
+ So, here are some of my favourite talks that I would actively recommend.&lt;/p&gt;
+
+
+&lt;p&gt;
+ The two talks that were so good that I intend to rewatch them (mostly to mine for citations and talking points) are:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href="https://youtu.be/2xI42pfz5Ec"&gt;
+   Sue Sentance - Teaching programming: What's in a teacher's toolkit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://www.youtube.com/watch?v=yQo8C_ZHOM8&amp;amp;t=5s"&gt;
+   Hannah Hazi - The Knowledge in the Code&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+
+
+&lt;p&gt;
+ Sue Sentance's keynote basically made me go "Welp, I need to redesign all my workshops". Hannah's talk had a lot of interesting material on reading code, and I want to follow the references to read more about it - I don't currently need most of the specific advice on legacy code, but reading code is still a very useful skill, especially given Sue's emphasis on its importance for education!&lt;/p&gt;
+
+
+&lt;p&gt;
+ Daniele also gave an impromptu talk about documentation that is going to significantly impact how I write documentation in future.
+It was not recorded, but I believe it was a variation on
+ &lt;a href="https://www.youtube.com/watch?v=t4vKPhjcMZg"&gt;
+  this talk at PyCon Australia&lt;/a&gt;
+ (or possibly
+ &lt;a href="https://www.youtube.com/watch?v=azf6yzuJt54"&gt;
+  this one at PyCon US&lt;/a&gt;
+ ).&lt;/p&gt;
+
+
+&lt;p&gt;
+ Talks I would recommend but was already too much of a member of the choir to get that much out of (all of these are by people I'd consider friends or at least friendly acquaintances. This probably isn't coincidental but wasn't deliberate in my selection except in the sense that I always go to friends' talks if they don't clash with anything else that grabs me):&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;
+  Alex Chan's talks on trust and user safety. His keynote was on
+  &lt;a href="https://www.youtube.com/watch?v=B3XxPnbehqQ"&gt;
+   Building Trust&lt;/a&gt;
+  , and he followed up with another talk
+  &lt;a href="https://www.youtube.com/watch?v=B3XxPnbehqQ"&gt;
+   Assume Worst Intent&lt;/a&gt;. Alex and I have already talked about some of these issues before, and have broadly similar opinions on them, so I didn't personally get a huge amount out of them, but they're good material and Alex gave great talks on them.&lt;/li&gt;
+&lt;li&gt;
+  Nikoleta Glynatsi's keynote,
+  &lt;a href="https://www.youtube.com/watch?v=z8tL7iqGvnw"&gt;
+   Why does a smile make a difference?&lt;/a&gt;
+  was a lot of fun. She discussed her research on game theory, and why bats are awesome.&lt;/li&gt;
+&lt;li&gt;
+  Kristian Glass on
+  &lt;a href="https://www.youtube.com/watch?v=AtJ4p27e1r8"&gt;
+   How to screw up hiring&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+  Sean Sabbage on
+  &lt;a href="https://www.youtube.com/watch?v=U07aAQciHx0"&gt;
+   Coming to a shared understanding&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+
+
+&lt;p&gt;
+ Misc talks I enjoyed and got something out of but that don't have any particularly insightful categorisation of&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href="https://www.youtube.com/watch?v=R-6n-WGMOU8"&gt;
+   The Story of a 53 year old database&lt;/a&gt;
+  - I don't think I got anything out of this in the sense of things I will now do differently, but I enjoyed hearing this story. Pairs well with Hannah Hazi's talk.&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://www.youtube.com/watch?v=NvRSDV4edY8"&gt;
+   Coding as a Second Career&lt;/a&gt;
+  was a fairly personal story but one I think it is helpful to hear.&lt;/li&gt;&lt;/ul&gt;
+
+
+&lt;p&gt;
+ I also thought the lightning talks this year were excellent:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href="https://www.youtube.com/watch?v=hp-1plTKOqc"&gt;
+   Saturday lightning talks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://www.youtube.com/watch?v=7w_qgGZM4ao"&gt;
+   Sunday lightning talks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://www.youtube.com/watch?v=9j2AhPmjtOQ"&gt;
+   Monday lightning talks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://www.youtube.com/watch?v=F5jSUJVymXk"&gt;
+   Tuesday lightning talks&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+
+
+&lt;p&gt;
+ If you have a burning urge to see me speak (which I'm mostly not doing this year), I gave
+ &lt;a href="https://youtu.be/9j2AhPmjtOQ?t=133"&gt;
+  a talk about voting system&lt;/a&gt;. I'm mostly pretty happy with how this turned out.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-09-21-07:04.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-09-20-13:09.html</id>
     <title>Notes on Tweeting Too Much At Conferences</title>
-    <updated>2018-09-20T13:09:00+01:00</updated>
+    <updated>2018-09-20T19:53:10+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Notes on Tweeting Too Much At Conferences&lt;/p&gt;
