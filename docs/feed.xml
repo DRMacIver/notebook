@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-09-21T07:04:00+01:00</updated>
+  <updated>2018-09-21T08:46:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,58 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-09-21-08:46.html</id>
+    <title>2018-09-21-08:46</title>
+    <updated>2018-09-21T08:46:00+01:00</updated>
+    <content>
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-09-21&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ I just read Richard Gabriel's
+ &lt;a href="https://www.dreamsongs.com/Files/Incommensurability.pdf"&gt;
+  The Structure of a Programming Language Revolution&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;
+ I don't think I have enough grounding in either lisp or the philosophy of science to fully understand it, and want to do a second and closer read with citation chasing,
+but one point really stood out for me:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;
+  I believe that, in general, this view of engineering and science is false: I believe engineering and science are intertwined, and for programming languages and software creation techniques, it’s often the case that engineering precedes science—and it’s very easy to see it.&lt;/p&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;...&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;
+  One good example is the steam engine. Engineers began its development while scientists were making their way from the phlogiston theory of combustion to the caloric theory of heat, both today considered hilarious.&lt;/p&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;
+ I think this observation is
+ &lt;em&gt;
+  obviously true&lt;/em&gt;
+ , and I'm kicking myself for the fact that I didn't think it was obviously true until it was pointed out to me.&lt;/p&gt;
+
+
+&lt;p&gt;
+ This is also interesting in the context of the way pure and applied maths work. Often physicists are doing interesting mathematical things that are "completely wrong" until a pure mathematician comes along and provides a theory of how they could work.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-09-21-08:46.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-09-21-07:04.html</id>
     <title>Some of my favourite PyCon UK talks</title>
-    <updated>2018-09-21T07:04:00+01:00</updated>
+    <updated>2018-09-21T08:44:16+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Some of my favourite PyCon UK talks&lt;/p&gt;
