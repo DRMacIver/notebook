@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-09-21T08:46:00+01:00</updated>
+  <updated>2018-09-24T08:27:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,47 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-09-24-08:27.html</id>
+    <title>2018-09-24-08:27</title>
+    <updated>2018-09-24T08:27:00+01:00</updated>
+    <content>
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-09-24&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ A thing I've been noticing a lot recently in how I think about problems is what an essential role switching between different models of the system has.&lt;/p&gt;
+
+
+&lt;p&gt;
+ For example, when thinking about groups of people, it's important to think about the systems - what incentives are at play, how does the group response to events, etc.
+You treat the group as an abstracted object that is not made up of complex individuals but instead has a few very simple variables in play.&lt;/p&gt;
+
+
+&lt;p&gt;
+ It's
+ &lt;em&gt;
+  also&lt;/em&gt;
+ important, both ethically and practically, to think about the group as a collection of individual people. People are complex and will surprise you, and if you neglect their individual needs then you will usually treat people badly.&lt;/p&gt;
+
+
+&lt;p&gt;
+ It might be tempting to think that the ideal is a single unified view of the system which accounts for everything, but realistically that's almost always impossible, and switching between multiple very distinct models can often work nearly as well.&lt;/p&gt;
+
+
+&lt;p&gt;
+ One thing this does is it combats the problem of legibility - the thing where the easiest way to understand something simply is to make it simple enough to understand, destroying much of its essential complexity and causing massive damage - but this seems to be true even without that. e.g. in mathematics it is often useful to switch between different representations because they make different features more salient.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-09-24-08:27.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-09-21-08:46.html</id>
     <title>2018-09-21-08:46</title>
-    <updated>2018-09-21T08:46:00+01:00</updated>
+    <updated>2018-09-21T08:48:53+01:00</updated>
     <content>
 
 &lt;dl class="metadata"&gt;
