@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-09-24T08:59:20+01:00</updated>
+  <updated>2018-09-25T08:28:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,6 +10,40 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-09-25-08:28.html</id>
+    <title>Lightweight RPG Systems</title>
+    <updated>2018-09-25T08:28:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Lightweight RPG Systems&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-09-25&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+&lt;a href="https://twitter.com/CHGardiner/status/1043568602283171842"&gt;
+  This was a good thread about Fail Better Games's new RPG&lt;/a&gt;
+ ,
+which in particular links to a lot of other interesting lightweight systems.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Mostly putting this here to save for later because I struggled tor refind it.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Another thing which isn't in this thread but was mentioned to me recently and looks a lot of fun is
+ &lt;a href="http://onesevendesign.com/lasers_and_feelings_rpg.pdf"&gt;
+  Lasers and Feelings&lt;/a&gt;&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-09-25-08:28.html" rel="alternate"/>
+  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2018-09-24-08:27.html</id>
     <title>2018-09-24-08:27</title>
@@ -100,7 +134,7 @@ but one point really stood out for me:&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2018-09-21-07:04.html</id>
     <title>Some of my favourite PyCon UK talks</title>
-    <updated>2018-09-21T08:44:16+01:00</updated>
+    <updated>2018-09-24T13:30:27+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Some of my favourite PyCon UK talks&lt;/p&gt;
