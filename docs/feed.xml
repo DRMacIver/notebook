@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-09-25T08:28:00+01:00</updated>
+  <updated>2018-09-26T09:29:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,110 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-09-26-09:29.html</id>
+    <title>Group Decisions on Names</title>
+    <updated>2018-09-26T09:29:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Group Decisions on Names&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-09-26&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ Here's a question I'm currently wondering about: How would you design a group decision making procedure for naming things?&lt;/p&gt;
+
+
+&lt;p&gt;
+ For
+ &lt;a href="https://twitter.com/sinister_katze"&gt;
+  Sinister&lt;/a&gt;
+ and
+ &lt;a href="https://twitter.com/dexter_katze"&gt;
+  Dexter&lt;/a&gt;
+ we used
+ &lt;a href="https://en.wikipedia.org/wiki/Majority_judgment"&gt;
+  Majority Judgment&lt;/a&gt;.
+We brainstormed pairs of names until we ran out, then we cast a vote on them.&lt;/p&gt;
+
+
+&lt;p&gt;
+ The voting went as follows:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;
+  Sinister and Dexter: 4, 4, 5&lt;/li&gt;
+&lt;li&gt;
+  Gin and Tonic: 5, 1, 2&lt;/li&gt;
+&lt;li&gt;
+  Lorem and Ipsum: 4, 3, 5&lt;/li&gt;
+&lt;li&gt;
+  Gipfeli and Bretzeli: 2, 3, 4&lt;/li&gt;
+&lt;li&gt;
+  Kappa and Lambda: 5, 3, 3&lt;/li&gt;
+&lt;li&gt;
+  Jam and Chutney: 3, 1, 1&lt;/li&gt;
+&lt;li&gt;
+  Terror and Erebus: 2, 5, 3&lt;/li&gt;&lt;/ul&gt;
+
+
+&lt;p&gt;
+ So how this played out was that in the first round "Sinister and Dexter" and "Lorem and Ipsum" both scored 4, and everything else scored less, so those were the two candidates that made it through to the second round.
+We then removed a 4 from each of their scores, and now "Sinister and Dexter" still scored 4 while "Lorem and Ipsum" scored 3, so the cats were named Sinister and Dexter.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Was this a good system? No, not really. I'm happy with the result, but the fact that you got a good outcome doesn't mean you had a good system.&lt;/p&gt;
+
+
+&lt;p&gt;
+ There are a couple of problems with this. Firstly, the voting system. I don't have a problem with majority judgment (range voters don't @ me), but I think for this kind of very small group decision making any voting system has a legitimacy problem.
+For example, imagine we had an option where the votes were 5, 5, 1. This would win, because its initial score was 5, despite one of us hating the name.&lt;/p&gt;
+
+
+&lt;p&gt;
+ The bigger problem with this though is that it treats naming as a closed list decision procedure: We decide on the names up front, then we vote on it, and use the outcome of that vote. This is nonsense. Naming is intrinsically open ended - generating new candidates is cheap.&lt;/p&gt;
+
+
+&lt;p&gt;
+&lt;em&gt;
+  For example&lt;/em&gt;
+ the following might have been a better procedure:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;
+  Everyone sits silently and writes down as many names as they like.&lt;/li&gt;
+&lt;li&gt;
+  People read out the names they've chosen and, if they like, explain their reasoning and origin. Anyone has the opportunity to veto a name. Vetos are encouraged - the goal is to only leave names in the list where everyone is
+  &lt;em&gt;
+   happy&lt;/em&gt;
+  to use the name, even if it's not their favourite.&lt;/li&gt;
+&lt;li&gt;
+  We vote on the names as above using majority judgement.&lt;/li&gt;
+&lt;li&gt;
+  This gives us a candidate name.&lt;/li&gt;&lt;/ol&gt;
+
+
+&lt;p&gt;
+ If we have an existing candidate name, we now take a majority vote whether to replace it with the new one. We then take a vote as to whether to continue the process or use the current candidate name. If we continue, repeat as above, possibly after some break.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Note that I don't think this is a particularly good system, it's just a sketch - the point is to incorporate the deliberative process of naming things into the mechanism, and to treat voting as a guideline rather than a source of legitimacy.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-09-26-09:29.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-09-25-08:28.html</id>
     <title>Lightweight RPG Systems</title>
-    <updated>2018-09-25T08:28:00+01:00</updated>
+    <updated>2018-09-25T08:30:23+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Lightweight RPG Systems&lt;/p&gt;
