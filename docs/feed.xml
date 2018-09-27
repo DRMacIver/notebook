@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-09-27T09:10:00+01:00</updated>
+  <updated>2018-09-27T09:19:17+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,154 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-09-27-09:19.html</id>
+    <title>2018-09-27-09:19</title>
+    <updated>2018-09-27T09:19:00+01:00</updated>
+    <content>
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-09-27&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ I attended the London
+ &lt;a href="http://www.liberatingstructures.com/"&gt;
+  Liberating Structures&lt;/a&gt;
+ meetup the other day. I really enjoyed it.
+We did a
+ &lt;a href="http://www.liberatingstructures.com/17-conversation-cafe/"&gt;
+  conversation cafe&lt;/a&gt;
+ which was an interesting format that I'm definitely going to borrow some ideas from.&lt;/p&gt;
+
+
+&lt;p&gt;
+ The subject of our cafe was "Making Difficult Decisions". I found this really useful and have been wanting to write up my thoughts on our discussion in a proper article,
+but haven't been finding the time or spoons, so here are my notes on the topic so that I can remember what I wanted to say when I actually get around to that.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Note: Various of these points were made by various people. I'm going to make them without attribution, partly because the conversation was quite personal, and partly because I haven't recorded the attribution!
+I just want to make it clear that althoguh I agree with all of this, it is not at all original to me. I've tried to make this a fair representation of what people said, but it's inevitably filtered and biased by my views on it and what I found interesting. Where my thoughts are things from writing this post rather than from the conversation itself, I have tried to mark them clearly by prefacing them with "Aside:".&lt;/p&gt;
+
+
+&lt;p&gt;
+ A theme we hit on early is that it's rarely the decision that is difficult. Once you have got to the point where you understand that there is a decision to be made, we haven't actually found that it's very hard to make it,
+and once we've made it we feel an incredible sense of relief.
+The difficulty is getting to the point where we have anything as concrete and simple as a single decision.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Examples (these are all super paraphrased, I don't have the actual quotes written down):&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;
+  "It's easy for me to decide what I want to do at any given moment, but I have no idea how to deal with big picture questions like what to do with my life."&lt;/li&gt;
+&lt;li&gt;
+  "I stayed in a job for seven years that I probably should have stayed in for two." (there were several of these)&lt;/li&gt;
+&lt;li&gt;
+  "I had to admit that a project that I was personally very deeply invested in wasn't working and leave it."&lt;/li&gt;
+&lt;li&gt;
+  "I had been in a miserable relationship for some time and despite my best efforts to make it work, it wasn't."&lt;/li&gt;
+&lt;li&gt;
+  "I had just moved to start a new job and had to admit to myself that it wasn't working out." (there were several of these, one of which was me)&lt;/li&gt;&lt;/ul&gt;
+
+
+&lt;p&gt;
+ In many of these cases, we reported that once we had identified and made the decision we felt
+ &lt;em&gt;
+  great&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;
+ A key point that we identified in this "making decisions is easy" aspect is resilience - the ability to feel safe making these decisions. We knew that regardless of which we decided, nothing
+ &lt;em&gt;
+  too&lt;/em&gt;
+ bad was going to happen to us.
+We mostly talked about emotional resilience.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Aside: Financial resilience is also important, but we had a group of people from (I assume) fairly high-paying jobs by nature of the meetup, so this didn't end up really factoring in to the discussion.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Another thing that came up was the observation that often there was some sort of crystalising event that prompted the decision. e.g. being asked "Are you happy?", or some particularly bad event at work that forced them to realise that it was time to think about leaving.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Aside: I have two personal examples related to this that I didn't bring up. The first is that when I left Google it was prompted by reading the GCL ("
+ &lt;del&gt;
+  Google&lt;/del&gt;
+ General Configuration Language") specification from cover to cover and going "fuck this shit". I didn't quite over GCL, but GCL was what prompted me to realise that I should. If you want an idea of what GCL is like, I refer you to
+ &lt;a href="http://flabbergast.org/"&gt;
+  flabbergast&lt;/a&gt;
+ which is basically an open source implementation of it. The second is that I was recently asked "If you weren't working on this, what
+ &lt;em&gt;
+  would&lt;/em&gt;
+ you be working on?" RE Hypothesis, which was a very useful clarifying question for a number of reasons that alas this margin is too large to contain.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Some good points that were made in the course of the discussion:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;
+  We like to pretend we make decisions logically, but often they are based on emotion and the logic just exists to post-rationalise the decision.&lt;/li&gt;
+&lt;li&gt;
+  Often the hardest decisions are about leaving a situation where we have a great deal of our identity or relationships bound up in it.&lt;/li&gt;
+&lt;li&gt;
+  The relationships that tie us in to a place are often actually improved by leaving it - if we're miserable there then we might not be much fun to be around!&lt;/li&gt;
+&lt;li&gt;
+  Often when you're staying for other people, they're staying for you, and everyone would be happier if they just all up and left.&lt;/li&gt;&lt;/ul&gt;
+
+
+&lt;p&gt;
+ Someone made the point that we were very focused on "making decisions in hard situations" and asked whether there were easy situations that had hard decisions.
+The joking example was that "chocolate or ice cream" is never a hard decision.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Aside: This is an instance of the
+ &lt;a href="https://en.wikipedia.org/wiki/Buridan%27s_ass"&gt;
+  Buridan's Ass&lt;/a&gt;
+ problem. It's tempting to treat making a decision between very similar things as hard, when in fact it should be easy - just flip a coin because it doesn't matter very much.&lt;/p&gt;
+
+
+&lt;p&gt;
+ One example we identified as a hard decision was "Should I flake on this event or not?" - not going feels like letting people down, even if you really don't have the energy or health to go.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Aside: Part of why this is a difficult decision is because even though (in most cases) the individual decision doesn't matter, the aggregate effect of it does. I have flaked on two events in a row with a friend recently, both for good reasons (one iron-clad, one merely good), but this feels much worse than twice as bad as flaking on one event, because it shows a pattern of flakiness. See also
+ &lt;a href="https://www.vox.com/first-person/2018/8/16/17694356/how-to-make-friends-adulthood"&gt;
+  this vox article on losing friends&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Some questions we finished with:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;
+  How do we notice the decisions that we are not making?&lt;/li&gt;
+&lt;li&gt;
+  How would one practice the skill of hard decisions?&lt;/li&gt;
+&lt;li&gt;
+  How can one cultivate emotional resilience?&lt;/li&gt;
+&lt;li&gt;
+  How can one create an environment that enables others around you to make hard decisions?&lt;/li&gt;&lt;/ul&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-09-27-09:19.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-09-27-09:10.html</id>
     <title>2018-09-27-09:10</title>
-    <updated>2018-09-27T09:10:00+01:00</updated>
+    <updated>2018-09-27T09:19:17+01:00</updated>
     <content>
 
 &lt;dl class="metadata"&gt;
