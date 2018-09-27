@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-09-27T10:01:23+01:00</updated>
+  <updated>2018-09-27T12:18:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,55 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-09-27-12:18.html</id>
+    <title>Principles of (Social) System Design</title>
+    <updated>2018-09-27T12:18:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Principles of (Social) System Design&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-09-27&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ I think the following two points are under-appreciated when designing systems for people:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;
+  Everything works well in high trust environments where people are personally invested in the goal of the system.&lt;/li&gt;
+&lt;li&gt;
+  Nothing works well in low trust environments or where people are opposed or indifferent to the goal of the system.&lt;/li&gt;&lt;/ul&gt;
+
+
+&lt;p&gt;
+ Therefore when designing systems the most important questions are:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;
+  How can we eject bad actors?&lt;/li&gt;
+&lt;li&gt;
+  How can we retain trust in the system?&lt;/li&gt;
+&lt;li&gt;
+  How can the system help people to achieve the things that they already want to do?&lt;/li&gt;&lt;/ol&gt;
+
+
+&lt;p&gt;
+ I have found this to be very true when designing systems for myself (skipping the first step - I may be a bad actor, but I can't eject myself). I don't have enough practical experience at group system design to say for sure it applies there,
+but just based on what I've observed of other systems' failure modes I'm pretty confident that it does.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-09-27-12:18.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-09-27-09:19.html</id>
     <title>2018-09-27-09:19</title>
-    <updated>2018-09-27T10:01:23+01:00</updated>
+    <updated>2018-09-27T10:09:08+01:00</updated>
     <content>
 
 &lt;dl class="metadata"&gt;
