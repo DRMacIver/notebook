@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-09-27T09:19:17+01:00</updated>
+  <updated>2018-09-27T10:01:23+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -13,7 +13,7 @@
   <entry>
     <id>https://notebook.drmaciver.com/posts/2018-09-27-09:19.html</id>
     <title>2018-09-27-09:19</title>
-    <updated>2018-09-27T09:19:00+01:00</updated>
+    <updated>2018-09-27T10:01:23+01:00</updated>
     <content>
 
 &lt;dl class="metadata"&gt;
@@ -92,7 +92,7 @@ We mostly talked about emotional resilience.&lt;/p&gt;
  Aside: I have two personal examples related to this that I didn't bring up. The first is that when I left Google it was prompted by reading the GCL ("
  &lt;del&gt;
   Google&lt;/del&gt;
- General Configuration Language") specification from cover to cover and going "fuck this shit". I didn't quite over GCL, but GCL was what prompted me to realise that I should. If you want an idea of what GCL is like, I refer you to
+ General Configuration Language") specification from cover to cover and going "fuck this shit". I didn't quit over GCL, but GCL was what prompted me to realise that I should. If you want an idea of what GCL is like, I refer you to
  &lt;a href="http://flabbergast.org/"&gt;
   flabbergast&lt;/a&gt;
  which is basically an open source implementation of it. The second is that I was recently asked "If you weren't working on this, what
