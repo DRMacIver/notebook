@@ -88,13 +88,47 @@ There are many ways to do machine learning, and any given instance of it is a pa
  Any machine learning always starts with some set of data that we "train" on.
 Typically we present this to the machine learning algorithm as a collection of
  <em>
-  features</em>. These might be, say, raw pixel data from an image, or they might be properties like "age", "gender", "country of birth". Whatever they are, they are some abstracted view of the picture that allows us to represent the data as a collection of numbers.
-Sometimes the data is presented entirely up front, and sometimes the algorithm is designed so that it can learn as you go. I believe the former is much more common, especially with neural networks.</p>
+  features</em>
+ ,
+which are a way of breaking down the objects we want to work on into a set of numeric or categorical (i.e. one of a small number of possibilities) properties.
+For example:</p>
+
+
+<ul>
+<li>
+  We might represent an image as a list of red-green-blue integer values for each pixel.</li>
+<li>
+  We might represent a person in terms of things like "age", "country of birth", "gender".</li>
+<li>
+  We might represent a piece of text as a "bag of words", which counts the number of times each word appears in it.</li></ul>
 
 
 <p>
- One important difference between machine and human learning is that machine learning tends to need a lot more data than you would expect. Often we train our machine learning algorithms on hundreds of thousands, or millions of data points, where you might expect a human to learn after only a few. It takes a lot longer for most machine learning approaches to learn what a picture of a dog looks like than it does a toddler. Some of this is probably because of the generality of these approaches (a toddler will take much longer to learn to predict life expectancy accurately), with humans having a lot of visual processing stuff "baked in", while some of it is probably due to genuine limitations of the approaches we use.
-This is where "big data" comes in. There are a lot of arguments as to what should count as big data, but a good rule of thumb is "if you can fit it on a single computer then it's not big data". Given how large computers can affordably get these days, most things that people call big data probably aren't.</p>
+ The process of turning real world things into useful features is something of an art, and is often as or more important than the actual machine learning you do.</p>
+
+
+<p>
+ Once we have turned our data set into features, we train on it. Sometimes we do this with the data presented entirely up front, and sometimes the algorithm is designed so that it can learn as you go.
+The former is much more common, especially with neural networks, but both approaches are possible.</p>
+
+
+<p>
+ One important difference between machine and human learning is that machine learning tends to need a lot more data than you would expect. Often we train our machine learning algorithms on hundreds of thousands, or millions of data points, where you might expect a human to learn after only a few. It takes a lot longer for most machine learning approaches to learn what a picture of a dog looks like than it does a toddler.
+Why this is is complicated, and how to do better is an open research problem, but the main reason is:</p>
+
+
+<ul>
+<li>
+  the toddler has a lot of built in machinery about how to do image processing already, while the machine learning system has to do that from scratch</li>
+<li>
+  the machine learning system is much more general and can learn things that humans are bad at as easily as it can learn things that humans are good at - e.g. a toddler would struggle to do much with actuarial data that a machine learning algorithm would find
+  <em>
+   easier</em>
+  than recognising dogs.</li></ul>
+
+
+<p>
+ The need for these large data sets for training is where "big data" comes in. There are a lot of arguments as to what should count as big data, but a good rule of thumb is "if you can fit it on a single computer then it's not big data". Given how large computers can affordably get these days, most things that people call big data probably aren't.</p>
 
 
 <p>
@@ -105,7 +139,7 @@ This is where "big data" comes in. There are a lot of arguments as to what shoul
 <li>
   Supervised learning, which takes some input data and some labels or scores for it, and tries to learn how to predict those labels or scores for other similar data. For example, you might want to classify an email as "spam" or "not spam", or you might want to predict the life expectancy of someone given a set of data about their health.</li>
 <li>
-  Reinforcement learning, where you have a bunch of input data and you want to make decisions about it. Based on the outcome of the decision, you feed back into the process with either a "reward" or a "punishment" (I want to emphasise again that this is a metaphor and the algorithm is not in any meaningful sense thinking), and the algorithm adjusts its decision making process to favour decisions that look like ones that have rewarded it and to avoid ones that ook like ones that have punished it. e.g. you might use this for stock picking, and reward the algorithm for picking stocks that do well and punish it for picking stocks that do badly.</li>
+  Reinforcement learning, where you have a bunch of input data and you want to make decisions about it. Based on the outcome of the decision, you feed back into the process with either a "reward" or a "punishment" (I want to emphasise again that this is a metaphor and the algorithm is not in any meaningful sense thinking), and the algorithm adjusts its decision making process to favour decisions that look like ones that have rewarded it and to avoid ones that look like ones that have punished it. e.g. you might use this for stock picking, and reward the algorithm for picking stocks that do well and punish it for picking stocks that do badly.</li>
 <li>
   Unsupervised, which builds a model of the "shape" of the data. I won't talk about this too much, but if you've seen those deep dream pictures or "I trained a bot on this corpus of text and this is what I got" articles, that's what's going on here: The system has built a predictive model of the data and is used to randomly generate something that matches that model.</li></ul>
 
