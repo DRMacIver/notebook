@@ -112,11 +112,15 @@ Why is complicated, and how to do better is an open research problem, but the ma
  Anyway, given a set of input data, there are roughly three types of commonly studied machine learning that we can do with it:</p>
 <ul>
  <li>
-  Supervised learning, which takes some input data and some labels or scores for it, and tries to learn how to predict those labels or scores for other similar data. For example, you might want to classify an email as "spam" or "not spam", or you might want to predict the life expectancy of someone given a set of data about their health.</li>
+  <em>
+   Supervised learning</em>
+  takes some input data and some labels or scores for it, and tries to learn how to predict those labels or scores for other similar data. For example, you might want to classify an email as "spam" or "not spam", or you might want to predict the life expectancy of someone given a set of data about their health.</li>
  <li>
-  Reinforcement learning, where you have a bunch of input data and you want to make decisions about it. Based on the outcome of the decision, you feed back into the process with either a "reward" or a "punishment" (I want to emphasise again that this is a metaphor and the algorithm is not in any meaningful sense thinking), and the algorithm adjusts its decision making process to favour decisions that look like ones that have rewarded it and to avoid ones that look like ones that have punished it. e.g. you might use this for stock picking, and reward the algorithm for picking stocks that do well and punish it for picking stocks that do badly.</li>
+  <em>
+   Reinforcement learning</em>
+  is for making decisions based on data. Based on the outcome of the decision, you feed back into the process with either a "reward" or a "punishment" (I want to emphasise again that this is a metaphor and the algorithm is not in any meaningful sense thinking or able to experience pleasure or pain), and the algorithm adjusts its decision making process to favour decisions that are similar to previous ones that have worked well and different from previous ones that have worked badly. e.g. you might use this for stock picking, and reward the algorithm for picking stocks that do well and punish it for picking stocks that do badly.</li>
  <li>
-  Unsupervised, which builds a model of the "shape" of the data. I won't talk about this too much, but if you've seen those deep dream pictures or "I trained a bot on this corpus of text and this is what I got" articles, that is usually what's going on here (althouh the much more common case, particularly with the articles, is that someone has just made it up): The system has built a predictive model of the data and is used to randomly generate something that matches that model.</li></ul>
+  Unsupervised learning builds a model of the "shape" of the data. I won't talk about this too much, but if you've seen those deep dream pictures or "I trained a bot on this corpus of text and this is what I got" articles, that is usually what's going on here (although the much more common case, particularly with the articles, is that someone has just made it up and no machine learning was involved at all): The system has built a predictive model of the data and is used to randomly generate something that matches that model.</li></ul>
 <p>
  Almost all applications of machine learning you hear about are one of these three things, possibly with some additional logic layered on top.
 For example AlphaGo, Google's Go playing AI, is roughly a combination of all three in a rules based system that describes the rules of Go, and uses the output of the machine learning to choose moves.</p>
