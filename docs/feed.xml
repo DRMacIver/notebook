@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-09-28T13:37:27+01:00</updated>
+  <updated>2018-09-28T13:38:53+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -13,7 +13,7 @@
   <entry>
     <id>https://notebook.drmaciver.com/posts/2018-09-28-10:49.html</id>
     <title>What is a neural network?</title>
-    <updated>2018-09-28T13:37:27+01:00</updated>
+    <updated>2018-09-28T13:38:53+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;What is a neural network?&lt;/p&gt;
@@ -122,7 +122,7 @@ Why this is is complicated, and how to do better is an open research problem, bu
 &lt;li&gt;
   Reinforcement learning, where you have a bunch of input data and you want to make decisions about it. Based on the outcome of the decision, you feed back into the process with either a "reward" or a "punishment" (I want to emphasise again that this is a metaphor and the algorithm is not in any meaningful sense thinking), and the algorithm adjusts its decision making process to favour decisions that look like ones that have rewarded it and to avoid ones that look like ones that have punished it. e.g. you might use this for stock picking, and reward the algorithm for picking stocks that do well and punish it for picking stocks that do badly.&lt;/li&gt;
 &lt;li&gt;
-  Unsupervised, which builds a model of the "shape" of the data. I won't talk about this too much, but if you've seen those deep dream pictures or "I trained a bot on this corpus of text and this is what I got" articles, that's what's going on here: The system has built a predictive model of the data and is used to randomly generate something that matches that model.&lt;/li&gt;&lt;/ul&gt;
+  Unsupervised, which builds a model of the "shape" of the data. I won't talk about this too much, but if you've seen those deep dream pictures or "I trained a bot on this corpus of text and this is what I got" articles, that is usually what's going on here (althouh the much more common case, particularly with the articles, is that someone has just made it up): The system has built a predictive model of the data and is used to randomly generate something that matches that model.&lt;/li&gt;&lt;/ul&gt;
 
 
 &lt;p&gt;
