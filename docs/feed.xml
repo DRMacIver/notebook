@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-09-28T12:10:18+01:00</updated>
+  <updated>2018-09-28T12:18:38+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -13,7 +13,7 @@
   <entry>
     <id>https://notebook.drmaciver.com/posts/2018-09-28-10:49.html</id>
     <title>What is a neural network?</title>
-    <updated>2018-09-28T12:10:18+01:00</updated>
+    <updated>2018-09-28T12:18:38+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;What is a neural network?&lt;/p&gt;
@@ -80,7 +80,7 @@ This is where "big data" comes in. There are a lot of arguments as to what shoul
 &lt;li&gt;
   Reinforcement learning, where you have a bunch of input data and you want to make decisions about it. Based on the outcome of the decision, you feed back into the process with either a "reward" or a "punishment" (I want to emphasise again that this is a metaphor and the algorithm is not in any meaningful sense thinking), and the algorithm adjusts its decision making process to favour decisions that look like ones that have rewarded it and to avoid ones that ook like ones that have punished it. e.g. you might use this for stock picking, and reward the algorithm for picking stocks that do well and punish it for picking stocks that do badly.&lt;/li&gt;
 &lt;li&gt;
-  Unsupervised, which builds a model of the "shape" of the data. I won't talk about this too much, but if you've seen those deep dream pictures or "I trained a bot on this corpus of text and this is what I got" articles, that's what's goign on here: The system has built a predictive model of the data and is used to randomly generate something that matches that model.&lt;/li&gt;&lt;/ul&gt;
+  Unsupervised, which builds a model of the "shape" of the data. I won't talk about this too much, but if you've seen those deep dream pictures or "I trained a bot on this corpus of text and this is what I got" articles, that's what's going on here: The system has built a predictive model of the data and is used to randomly generate something that matches that model.&lt;/li&gt;&lt;/ul&gt;
 
 
 &lt;p&gt;
@@ -113,8 +113,9 @@ This is where the "deep" in "deep learning" comes from - a deep neural network i
 
 
 &lt;p&gt;
- What this means in practice is that decisions that are "obvious" given the right representation of the data but completely non-obvious given the original representation of the data may be tractable to neural networks but insoluble for machine learning techniques that are in some sense "shallower".
-Some times these higher level representations will be ones that are obvious to humans (e.g. lines in images), but often they will not be, especially (e.g. they capture some strategic aspect of the Go board).&lt;/p&gt;
+ The result of this is that where a "shallower" machine learning system might suffer from a problem of not being able to see the wood for the trees,
+neural networks can make predictions based on a more structured representation of the data, which makes things obvious that were hard for the algorithm to see from the more fine-grained representation.
+Some times these structured representations will be ones that are obvious to humans (e.g. lines in images), but often they will not be, especially (e.g. they capture some strategic aspect of the Go board).&lt;/p&gt;
 
 
 &lt;h3&gt;
@@ -156,7 +157,7 @@ The main things that it is important to understand about this are:&lt;/p&gt;
 &lt;li&gt;
   Compared to a human decision maker, neural networks are
   &lt;em&gt;
-   fragile&lt;/em&gt;. There is an entire class of things called "adversarial examples" where trivial changes that a human wouldn't even notice cause the neural network to output an entirely different answer.&lt;/li&gt;
+   fragile&lt;/em&gt;. There is an entire class of things called "adversarial examples" where carefully chosen trivial changes that a human wouldn't even notice can cause the neural network to output an entirely different answer.&lt;/li&gt;
 &lt;li&gt;
   Even without adversaries, machine learning algorithm
   &lt;em&gt;

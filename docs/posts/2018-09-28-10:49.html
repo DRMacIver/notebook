@@ -84,7 +84,7 @@ This is where "big data" comes in. There are a lot of arguments as to what shoul
  <li>
   Reinforcement learning, where you have a bunch of input data and you want to make decisions about it. Based on the outcome of the decision, you feed back into the process with either a "reward" or a "punishment" (I want to emphasise again that this is a metaphor and the algorithm is not in any meaningful sense thinking), and the algorithm adjusts its decision making process to favour decisions that look like ones that have rewarded it and to avoid ones that ook like ones that have punished it. e.g. you might use this for stock picking, and reward the algorithm for picking stocks that do well and punish it for picking stocks that do badly.</li>
  <li>
-  Unsupervised, which builds a model of the "shape" of the data. I won't talk about this too much, but if you've seen those deep dream pictures or "I trained a bot on this corpus of text and this is what I got" articles, that's what's goign on here: The system has built a predictive model of the data and is used to randomly generate something that matches that model.</li></ul>
+  Unsupervised, which builds a model of the "shape" of the data. I won't talk about this too much, but if you've seen those deep dream pictures or "I trained a bot on this corpus of text and this is what I got" articles, that's what's going on here: The system has built a predictive model of the data and is used to randomly generate something that matches that model.</li></ul>
 <p>
  Almost all applications of machine learning you hear about are one of these three things, possibly with some additional logic layered on top.
 For example AlphaGo, Google's Go playing AI, is roughly a combination of all three in a rules based system that describes the rules of Go, and uses the output of the machine learning to choose moves.</p>
@@ -107,8 +107,9 @@ Each layer is essentially a new set of features that takes the overly detailed p
 This allows us to combine a very simple learning technique (the "neurons" that are really just a very simple bit of machine learning that tries to turn a set of features into a score between zero and one) into a much more complex one that is able to handle high level features of the data.
 This is where the "deep" in "deep learning" comes from - a deep neural network is one with many layers.</p>
 <p>
- What this means in practice is that decisions that are "obvious" given the right representation of the data but completely non-obvious given the original representation of the data may be tractable to neural networks but insoluble for machine learning techniques that are in some sense "shallower".
-Some times these higher level representations will be ones that are obvious to humans (e.g. lines in images), but often they will not be, especially (e.g. they capture some strategic aspect of the Go board).</p>
+ The result of this is that where a "shallower" machine learning system might suffer from a problem of not being able to see the wood for the trees,
+neural networks can make predictions based on a more structured representation of the data, which makes things obvious that were hard for the algorithm to see from the more fine-grained representation.
+Some times these structured representations will be ones that are obvious to humans (e.g. lines in images), but often they will not be, especially (e.g. they capture some strategic aspect of the Go board).</p>
 <h3>
  Why are neural networks cool right now?</h3>
 <p>
@@ -136,7 +137,7 @@ The main things that it is important to understand about this are:</p>
  <li>
   Compared to a human decision maker, neural networks are
   <em>
-   fragile</em>. There is an entire class of things called "adversarial examples" where trivial changes that a human wouldn't even notice cause the neural network to output an entirely different answer.</li>
+   fragile</em>. There is an entire class of things called "adversarial examples" where carefully chosen trivial changes that a human wouldn't even notice can cause the neural network to output an entirely different answer.</li>
  <li>
   Even without adversaries, machine learning algorithm
   <em>
