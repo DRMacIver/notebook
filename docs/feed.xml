@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-09-28T13:38:53+01:00</updated>
+  <updated>2018-09-28T13:39:57+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -13,7 +13,7 @@
   <entry>
     <id>https://notebook.drmaciver.com/posts/2018-09-28-10:49.html</id>
     <title>What is a neural network?</title>
-    <updated>2018-09-28T13:38:53+01:00</updated>
+    <updated>2018-09-28T13:39:57+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;What is a neural network?&lt;/p&gt;
@@ -95,12 +95,12 @@ The former is much more common, especially with neural networks, but both approa
 &lt;p&gt;
  One important difference between machine and human learning is that machine learning tends to need a lot more data than you would expect a human to.
 Often we train our machine learning algorithms on hundreds of thousands, or millions of data points, where you might expect a human to learn after only a few. It takes a lot longer for most machine learning approaches to learn what a picture of a dog looks like than it does a toddler.
-Why this is is complicated, and how to do better is an open research problem, but the main reason is:&lt;/p&gt;
+Why is complicated, and how to do better is an open research problem, but the main reasons are:&lt;/p&gt;
 
 
 &lt;ul&gt;
 &lt;li&gt;
-  the toddler has a lot of built in machinery about how to do image processing already, while the machine learning system has to do that from scratch&lt;/li&gt;
+  the toddler has a lot of built in machinery about how to do image processing already, while the machine learning system has to learn that from scratch.&lt;/li&gt;
 &lt;li&gt;
   the machine learning system is much more general and can learn things that humans are bad at as easily as it can learn things that humans are good at - e.g. a toddler would struggle to do much with actuarial data that a machine learning algorithm would find
   &lt;em&gt;
@@ -229,6 +229,8 @@ but there might be something simpler and better suited for your problem.&lt;/p&g
   &lt;em&gt;
    maybe&lt;/em&gt;
   talk to an expert (some problems don't look like this on the face of it but can still benefit - e.g. translation isn't obviously of this form, but it can benefit from machine learning), but you're probably out of luck and even if you're not this is going to be a huge and expensive research project.&lt;/li&gt;
+&lt;li&gt;
+  Could you just write down a short list of rules that are sufficient to make those decisions? If yes, just do that instead of trying to learn them from data.&lt;/li&gt;
 &lt;li&gt;
   If you had an averagely intelligent training human with maybe a couple of days of on the job training and enough background knowledge to understand the problem making those decisions, would their answers be good enough? If no, you're really going to struggle to get your machine learning to be good enough.&lt;/li&gt;
 &lt;li&gt;
