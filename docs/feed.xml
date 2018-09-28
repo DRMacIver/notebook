@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-09-28T13:34:57+01:00</updated>
+  <updated>2018-09-28T13:37:27+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -13,7 +13,7 @@
   <entry>
     <id>https://notebook.drmaciver.com/posts/2018-09-28-10:49.html</id>
     <title>What is a neural network?</title>
-    <updated>2018-09-28T13:34:57+01:00</updated>
+    <updated>2018-09-28T13:37:27+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;What is a neural network?&lt;/p&gt;
@@ -77,7 +77,8 @@ For example:&lt;/p&gt;
 
 
 &lt;p&gt;
- Features are not intended to
+ All decisions made by the machine learning process are based only on these features - two things that are somehow different in a way not captured by their features will still get the same result.
+Features are not intended to
  &lt;em&gt;
   fully&lt;/em&gt;
  represent the things we study, but capture some aspects of it that we think are important and should be sufficient to predict the results we want to know.
