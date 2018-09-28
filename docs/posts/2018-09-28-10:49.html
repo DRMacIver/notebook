@@ -77,18 +77,25 @@ which are a way of breaking down the objects we want to work on into a set of nu
 For example:</p>
 <ul>
  <li>
-  We might represent an image as a list of red-green-blue integer values for each pixel.</li>
+  We might represent an image as red-green-blue integer values for each pixel.</li>
  <li>
-  We might represent a person in terms of things like "age", "country of birth", "gender".</li>
+  We might represent a person in terms of "age", "country of birth", "gender".</li>
  <li>
   We might represent a piece of text as a "bag of words", which counts the number of times each word appears in it.</li></ul>
 <p>
- The process of turning real world things into useful features is something of an art, and is often as or more important than the actual machine learning you do.</p>
+ Features are not intended to
+ <em>
+  fully</em>
+ represent the things we study, but capture some aspects of it that we think are important and should be sufficient to predict the results we want to know.
+The process of turning real world things into useful features is something of an art, and is often as or more important than the actual machine learning you do.</p>
 <p>
- Once we have turned our data set into features, we train on it. Sometimes we do this with the data presented entirely up front, and sometimes the algorithm is designed so that it can learn as you go.
+ Once we have turned our data set into features, we train on it.
+This is the process of taking our data set and turning it into a model that we will use as the basis of our future decisions.
+Sometimes we do this with the data presented entirely up front, and sometimes the algorithm is designed so that it can learn as you go.
 The former is much more common, especially with neural networks, but both approaches are possible.</p>
 <p>
- One important difference between machine and human learning is that machine learning tends to need a lot more data than you would expect. Often we train our machine learning algorithms on hundreds of thousands, or millions of data points, where you might expect a human to learn after only a few. It takes a lot longer for most machine learning approaches to learn what a picture of a dog looks like than it does a toddler.
+ One important difference between machine and human learning is that machine learning tends to need a lot more data than you would expect a human to.
+Often we train our machine learning algorithms on hundreds of thousands, or millions of data points, where you might expect a human to learn after only a few. It takes a lot longer for most machine learning approaches to learn what a picture of a dog looks like than it does a toddler.
 Why this is is complicated, and how to do better is an open research problem, but the main reason is:</p>
 <ul>
  <li>
