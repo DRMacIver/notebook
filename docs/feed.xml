@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-09-28T13:43:56+01:00</updated>
+  <updated>2018-10-01T08:17:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,99 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-10-01-08:17.html</id>
+    <title>Notes on Interviewing</title>
+    <updated>2018-10-01T08:17:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Notes on Interviewing&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-10-01&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+&lt;a href="https://twitter.com/DRMacIver/status/1046341533992128512"&gt;
+  Twitter thread from me&lt;/a&gt;
+ :&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;
+  The worst thing about all of these "diversity shouldn't get in the way of finding the best person!!" arguments (I know, it's a hard choice) is the complete and utter disconnect from reality required to believe that anyone has a clue about how to find the best person.
+Santa Claus isn't real, and your interview/talk selection/whatever process is probably almost entirely noise rather than signal.
+The good news about this is that it means you might as well decide on the outcome you want and then apply your process to select among the options within that outcome.&lt;/p&gt;
+&lt;p&gt;
+  The bad news is I'm going to assume that you've done that, so the outcome you got is the outcome you wanted.
+These are legitimately hard problems, and I have more sympathy than most for the trade offs involved in them, so I'm not e.g. going to assume you're a terrible person because of a failure to hire diverse candidates, but I am going to assume you probably weren't trying very hard.
+Source: I've fucked up this way, and in retrospect I wasn't trying very hard.&lt;/p&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;
+ The two books I recommend to people interviewing are
+ &lt;a href="https://amzn.to/2P0g8Qr"&gt;
+  The Halo Effect&lt;/a&gt;
+ and
+ &lt;a href="https://amzn.to/2ReeP1J"&gt;
+  Epistemology and the Psychology of Human Judgment&lt;/a&gt;.
+Neither will, unfortunately, teach you to interview well. I don't know of anything that will. If you have book recommendations on this subject then I would like to hear them.
+Instead what these books will teach you is to doubt your own judgement when interviewing, which I think is a pretty good start - the worst interview processes I've been involved in have failed due to people trusting their own judgement over the process.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Things I would like people to understand about interviewing:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;
+  Your process has false positive and false negative rates. You mostly can't see the false negative rate, so it's probably very high.&lt;/li&gt;
+&lt;li&gt;
+  Without a better idea of what you're actually looking for, your false positive rate is basically meaningless anyway.&lt;/li&gt;
+&lt;li&gt;
+  You are not actually looking for the best person for the job. You are looking for a person who can do the job well. Trying to find the best person for the job would
+  &lt;em&gt;
+   extremely&lt;/em&gt;
+  expensive in interviewing time.&lt;/li&gt;
+&lt;li&gt;
+  The job will change people, so even among a small candidate pool the person who is currently the best fit for the job may not be the same as the person who is the best fit in three months anyway.&lt;/li&gt;
+&lt;li&gt;
+  The "person who is best at the job" according to most easy to track measures may be very different from the person who brings the most to the team.&lt;/li&gt;&lt;/ol&gt;
+
+
+&lt;p&gt;
+ Given this, my advice to you is
+ &lt;em&gt;
+  not&lt;/em&gt;
+ throw out your whole interview process. Not because I think your current interview process is good, but because throwing it out and replacing it with something else will cost a lot of political capital and you probably still won't create a good interview process because interviewing is bloody impossible.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Instead my advice to you is this:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;
+  Keep an eye on your false negative rate. Maybe let a random or biased set of candidates through the early stage of your pipeline who you would otherwise have ignored.&lt;/li&gt;
+&lt;li&gt;
+  Do pay attention to stuff like what your job ads look like. I don't currently have a good link for advice on this but if someone sends me one I'll edit it in.&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://www.youtube.com/watch?v=AtJ4p27e1r8"&gt;
+   Watch Kristian's Talk&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+  Think in advance about what you actually want and what you would settle for.&lt;/li&gt;
+&lt;li&gt;
+  Try to make sure you're getting a broader and more diverse audience in to your process in the first place. Watch out for filtering that happens before they reach you - e.g. based on recruiters, job platforms, etc.&lt;/li&gt;&lt;/ol&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-10-01-08:17.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-09-28-10:49.html</id>
     <title>What is a neural network?</title>
-    <updated>2018-09-28T13:43:56+01:00</updated>
+    <updated>2018-09-28T13:46:09+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;What is a neural network?&lt;/p&gt;
