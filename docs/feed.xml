@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-10-01T08:17:00+01:00</updated>
+  <updated>2018-10-02T10:39:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,91 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-10-02-10:39.html</id>
+    <title>On Formal Mathematics</title>
+    <updated>2018-10-02T10:39:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;On Formal Mathematics&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-10-02&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ Some thoughts on the question of the formalisability of mathematics.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Based on "Rigor and Structure" by John P. Burgess
+ &lt;a href="https://twitter.com/DRMacIver/status/1040505316201385986"&gt;
+  I tweeted&lt;/a&gt;
+ the following a while back:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;
+  I'm reading "Rigor and Structure" by John P. Burgess at the moment, and a point he makes that I really like is that formal logic is best viewed as analogous to a sort of... physics or economics of mathematics. It is a (very good) theoretical model of Actual Mathematics.
+And one way the model breaks down is that it's a great model of deducibility, but a poor model of deduction - you can be reasonably confident that if a proposition is formally deducible then it's real-maths deducible, and we also believe the converse mostly on faith but it doesn't follow (and mostly isn't true) that the actual process of proof is well modelled by the formal logic - e.g. proof lengths in informal and formal mathematics are not well correlated, and the styles of proof that you adopt are radically different.&lt;/p&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;
+ Ron Pressler took exception to this framing, and I believe in particular to the part that we believe mostly on faith that every informal proof is formalisable.
+I've tried several times to write what I believe Ron's argument against this is, but it kept coming out as such an implausible strawman that I must assume that I am misunderstanding some crucial aspect of his point.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Another informative text on the subject is Imre Lakatos's "Proofs and Refutations" which makes, I think, a compelling argument that understanding proof purely in terms of its formal content is a very limiting view.
+Burgess is arguing around (though not entirely for) the idea that "a proof is that which convinces", but Lakatos is arguing that the primary purpose of a proof is not to convince but to illuminate (this is a huge oversimplification).&lt;/p&gt;
+
+
+&lt;p&gt;
+ The problem I have with the idea that we should naturally expect all informal proofs to be formalisable is as follows:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;
+  It's obviously false. Informal proofs lead to formal proof
+  &lt;em&gt;
+   schemas&lt;/em&gt;
+  unless you pick your logic very carefully. In particular informal proofs can e.g. quantify over predicates.&lt;/li&gt;
+&lt;li&gt;
+  The arguments I have seen that we should expect it to be true from the deeper Church-Turing principle seem so obviously wrong that I can't even interpret them as coherent: The ability to simulate a human brain well enough to replicate an informal proof on a Turing machine doesn't tell you anything about formal provability of a propostion, it provides a formal proof that an informal proof exists.&lt;/li&gt;
+&lt;li&gt;
+  Many informal proofs most interesting characteristic is that they demonstrate a contradiction or paradox in the natural language that goes away when you attempt to formalise them. For example
+  &lt;a href="https://en.wikipedia.org/wiki/Interesting_number_paradox"&gt;
+   the interesting number paradox&lt;/a&gt;
+  or
+  &lt;a href="https://en.wikipedia.org/wiki/Berry_paradox"&gt;
+   the Berry paradox&lt;/a&gt;. This means that the formalisation process in itself has interesting semantic content.&lt;/li&gt;
+&lt;li&gt;
+  It is typical for any informal proof to have so many logic gaps in it that finding a formal refinement of the proof really constitutes creating an entirely new proof. Therefore even if this is true, it is true in a fairly weak sense.&lt;/li&gt;&lt;/ol&gt;
+
+
+&lt;p&gt;
+ Do I think that any sufficiently precise informal proof of a statement whose natural language meaning has an unambiguous formal equivalent can be refined to a formal proof schema?
+Yes, almost certainly.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Do I think that the above is obviously true rather than a belief? No, and I don't think it would be possible for it to be obviously true - we don't have a sufficiently pinned down notion of what an informal proof even
+ &lt;em&gt;
+  is&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Do I think this is all a pointless distraction from the actually interesting point made above, which is that formal proof is a much better model of provability than it is of proof? Yes, definitely.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-10-02-10:39.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-10-01-08:17.html</id>
     <title>Notes on Interviewing</title>
-    <updated>2018-10-01T08:17:00+01:00</updated>
+    <updated>2018-10-01T09:17:33+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Notes on Interviewing&lt;/p&gt;
