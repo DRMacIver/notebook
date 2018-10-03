@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-10-03T07:31:00+01:00</updated>
+  <updated>2018-10-03T07:55:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,73 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-10-03-07:55.html</id>
+    <title>The Duties</title>
+    <updated>2018-10-03T07:55:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;The Duties&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-10-03&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ I am generally deeply suspicious of normative ethical theories. I think ethics is hard, and attempts to simplify it to a set of rules inevitably have the problems that taking a complex space and making it legible always do.
+They're potentially a useful mental tool, but as soon as you start arguing about which one is true you've lost. Even if I was a moral realist, which I'm not, it seems obviously the case that the ethics that can be told is not the true ethics.&lt;/p&gt;
+
+
+&lt;p&gt;
+ So obviously I thought it might be an interesting experiment to set out to build one. The following is part of what I came up with.
+This is something I at most weakly believe. I think it's a good model for evaluation of actions, but I don't think it's one I would actually attempt to follow dogmatically.&lt;/p&gt;
+
+
+&lt;p&gt;
+ You have one duty: The world and all that is in it should thrive. Things should get better over time, not worse.&lt;/p&gt;
+
+
+&lt;p&gt;
+ You have four duties: To yourself, to those around you, to humanity, and to the world.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Until you have fulfilled the earlier duties, you should not consider the later.&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;
+  Your duty to yourself is that you thrive.&lt;/li&gt;
+&lt;li&gt;
+  Your duty to those around you is that you help them thrive.&lt;/li&gt;
+&lt;li&gt;
+  Your duty to humanity is that your existence should help rather than hinder it in thriving.&lt;/li&gt;
+&lt;li&gt;
+  Your duty to the world is that your existence should help rather than hinder it in thriving.&lt;/li&gt;&lt;/ol&gt;
+
+
+&lt;p&gt;
+ Each duty supersedes the later ones: Ensure you thrive, then others around you, then humanity, then the world.
+This does not mean that you should always prioritise yourself above others, but it does mean that you should put your oxygen mask on first before helping others with theirs.&lt;/p&gt;
+
+
+&lt;p&gt;
+ To live a good life is to discharge your duties to the best of your ability.
+There is no shame in failing to uphold these duties because you are unable, only because you are unwilling.&lt;/p&gt;
+
+
+&lt;p&gt;
+ (I originally had a bunch of text explaining the reasoning behind this, but actually this is more intended as an interesting artifact than something I'd propose to defend, so I just deleted it).&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-10-03-07:55.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-10-03-07:31.html</id>
     <title>You Can't Trust Lawful Good</title>
-    <updated>2018-10-03T07:31:00+01:00</updated>
+    <updated>2018-10-03T07:53:49+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;You Can't Trust Lawful Good&lt;/p&gt;
