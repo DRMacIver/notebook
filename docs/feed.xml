@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-10-04T08:52:00+01:00</updated>
+  <updated>2018-10-05T07:01:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,53 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-10-05-07:01.html</id>
+    <title>Vegetables and diet</title>
+    <updated>2018-10-05T07:01:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Vegetables and diet&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-10-05&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ This post by Sarah Constantin about the
+ &lt;a href="https://srconstantin.wordpress.com/2018/10/04/fasting-mimicking-diet-looks-pretty-good/"&gt;
+  Fasting Mimicking Diet&lt;/a&gt;
+ looks interesting (I generally trust her health recommendations, insofar as I trust anyone's).&lt;/p&gt;
+
+
+&lt;p&gt;
+ In particular the concrete diet plan suggested is:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;
+  For the first five weekdays of every month, eat nothing but (non-potato) vegetables, cooked in fat if desired.  The rest of the time, eat whatever you want.&lt;/p&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;
+ I've
+ &lt;a href="https://www.drmaciver.com/2018/07/notes-on-eating-more-vegetables/"&gt;
+  previously written about trying to eat more vegetables&lt;/a&gt;
+ , where I'm trying to bring my meals up to at least half vegetables by volume. I've been doing pretty well on this for most non-breakfast meals, with the exception of lunches when I go in to imperial.&lt;/p&gt;
+
+
+&lt;p&gt;
+ I'm quite tempted to try this diet, in large part because it will I think force me to sort out my bringing lunch to work situation.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-10-05-07:01.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-10-04-08:52.html</id>
     <title>Questions</title>
-    <updated>2018-10-04T08:52:00+01:00</updated>
+    <updated>2018-10-04T08:53:03+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Questions&lt;/p&gt;
