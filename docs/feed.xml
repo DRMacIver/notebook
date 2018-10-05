@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-10-05T07:24:00+01:00</updated>
+  <updated>2018-10-05T10:00:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,49 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-10-05-10:00.html</id>
+    <title>Maybe these two great flavours go together</title>
+    <updated>2018-10-05T10:00:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Maybe these two great flavours go together&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-10-05&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ A problem I have is that when trying to fix stuff I want to do too many things at once, and then I don't know which of them worked.&lt;/p&gt;
+
+
+&lt;p&gt;
+ A thing that I just occurred to me is that I know rather a lot about test-case reduction.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Maybe these things could go together...&lt;/p&gt;
+
+
+&lt;p&gt;
+ (You still have the problem that the things you try may interfere with each other but I think that's a lesser issue)&lt;/p&gt;
+
+
+&lt;p&gt;
+ Really the proper frame for this is probably
+ &lt;a href="https://en.wikipedia.org/wiki/Group_testing"&gt;
+  group testing&lt;/a&gt;
+ rather than test case reduction, but use what you know.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-10-05-10:00.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-10-05-07:24.html</id>
     <title>Things you didn't know you can be bad at</title>
-    <updated>2018-10-05T07:24:00+01:00</updated>
+    <updated>2018-10-05T07:32:28+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Things you didn't know you can be bad at&lt;/p&gt;
