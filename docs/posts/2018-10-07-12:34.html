@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+DRMacIver's Notebook: Branch and Consolidate
+    </title>
+    <link rel="stylesheet" href="/pygments.css"/>
+    <link rel="stylesheet" href="/tufte.css"/>
+    <link rel="stylesheet" href="/latex.css"/>
+    <link rel="stylesheet" href="/drmnotes.css"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
+});
+</script>
+
+  </head>
+
+  <body>
+    <article>
+        <h1><a href="/">DRMacIver's Notebook</a></h1>
+        <p class=subtitle>Branch and Consolidate</p>
+
+        
+
+<section id="the-post">
+<p class=subtitle>Branch and Consolidate</p>
+<dl class=metadata>
+<dt>Published</dt>
+<dd class="post-date">2018-10-07</dd>
+</dl>
+<p>
+ Attention conservation notice: This note is even more note to self than then normally are, so may not make much sense.</p>
+<p>
+ The following implementation strategy has just occurred to me, for writing code that can be both a randomized algorithm and a dynamic programming solution for giving you the full distribution (you can also achieve this by just writing it abstracted by a suitable monad implementation of course).</p>
+<p>
+ Add two primitives:</p>
+<ol>
+ <li>
+  <code>
+   branch(n)</code>
+  conceptually generates a uniform random number \(0, \ldots, n - 1\).</li>
+ <li>
+  <code>
+   consolidate(data)</code>
+  says "the rest of the computation is uniquely determined by this value".</li></ol>
+<p>
+ In random generation,
+ <code>
+  branch</code>
+ has the obvious implementation and
+ <code>
+  consolidate</code>
+ does nothing.</p>
+<p>
+ When doing the dynamic programming, we use the standard trick for exhaustively enumerating a tree of unknown shape:
+Explore based on prefixes, filling with infinitely many zeroes for branches drawn past the prefix, and increment it lexicographically until we can't any more.
+The difference is that whenever we call
+ <code>
+  consolidate</code>
+ with a value we have already seen, we raise an exception to terminate the process and add an entry that says to use the final value.
+Conceptually this is the same as just exhaustively enumerating all the possibilities, but with shortcuts.</p>
+<p>
+ At the end we just solve the obvious dynamic programming problem to calculate the probabilities.</p>
+</section>
+
+    </article>
+<footer>
+Copyright David R. MacIver.
+
+CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
+</footer>
+  </body>
+</html>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-10-05T10:00:00+01:00</updated>
+  <updated>2018-10-07T12:34:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,73 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-10-07-12:34.html</id>
+    <title>Branch and Consolidate</title>
+    <updated>2018-10-07T12:34:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Branch and Consolidate&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-10-07&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ Attention conservation notice: This note is even more note to self than then normally are, so may not make much sense.&lt;/p&gt;
+
+
+&lt;p&gt;
+ The following implementation strategy has just occurred to me, for writing code that can be both a randomized algorithm and a dynamic programming solution for giving you the full distribution (you can also achieve this by just writing it abstracted by a suitable monad implementation of course).&lt;/p&gt;
+
+
+&lt;p&gt;
+ Add two primitives:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;
+&lt;code&gt;
+   branch(n)&lt;/code&gt;
+  conceptually generates a uniform random number \(0, \ldots, n - 1\).&lt;/li&gt;
+&lt;li&gt;
+&lt;code&gt;
+   consolidate(data)&lt;/code&gt;
+  says "the rest of the computation is uniquely determined by this value".&lt;/li&gt;&lt;/ol&gt;
+
+
+&lt;p&gt;
+ In random generation,
+ &lt;code&gt;
+  branch&lt;/code&gt;
+ has the obvious implementation and
+ &lt;code&gt;
+  consolidate&lt;/code&gt;
+ does nothing.&lt;/p&gt;
+
+
+&lt;p&gt;
+ When doing the dynamic programming, we use the standard trick for exhaustively enumerating a tree of unknown shape:
+Explore based on prefixes, filling with infinitely many zeroes for branches drawn past the prefix, and increment it lexicographically until we can't any more.
+The difference is that whenever we call
+ &lt;code&gt;
+  consolidate&lt;/code&gt;
+ with a value we have already seen, we raise an exception to terminate the process and add an entry that says to use the final value.
+Conceptually this is the same as just exhaustively enumerating all the possibilities, but with shortcuts.&lt;/p&gt;
+
+
+&lt;p&gt;
+ At the end we just solve the obvious dynamic programming problem to calculate the probabilities.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-10-07-12:34.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-10-05-10:00.html</id>
     <title>Maybe these two great flavours go together</title>
-    <updated>2018-10-05T10:00:00+01:00</updated>
+    <updated>2018-10-05T11:26:42+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Maybe these two great flavours go together&lt;/p&gt;
