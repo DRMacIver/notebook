@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-10-11T13:37:00+01:00</updated>
+  <updated>2018-10-11T14:54:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,48 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-10-11-14:54.html</id>
+    <title>Stories about Data</title>
+    <updated>2018-10-11T14:54:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Stories about Data&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-10-11&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ Consider the difference between the following:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;
+  The result was non-significant but when we split it up into N groups it became significant for subgroup Y. Therefore there is a significant effect for group Y.&lt;/p&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;
+ Versus:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;
+  The result was non-significant but when we split it up into N groups it became significant for subgroup Y. Obviously this is invalid statistically, but that might be an interesting followup experiment to perform.&lt;/p&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;
+ It's OK to tell whatever stories you want about your data, as long as you make it clear which ones are and aren't valid inferences.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-10-11-14:54.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-10-11-13:37.html</id>
     <title>Auto-parallelising test-case reduction</title>
-    <updated>2018-10-11T13:37:00+01:00</updated>
+    <updated>2018-10-11T14:13:42+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Auto-parallelising test-case reduction&lt;/p&gt;
