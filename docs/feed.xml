@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-10-13T10:04:00+01:00</updated>
+  <updated>2018-10-13T10:21:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,55 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-10-13-10:21.html</id>
+    <title>Communicating Knowledge</title>
+    <updated>2018-10-13T10:21:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Communicating Knowledge&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-10-13&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+&lt;a href="https://twitter.com/DRMacIver/status/1048166537172013056"&gt;
+  Copied over from Twitter&lt;/a&gt;
+ so I don't lose this.&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;
+  My brain is currently trying to synthesise some stuff together that I'm not sure I can articulate in less than a Chidi-thesis worth of content and it's very annoying.&lt;/p&gt;
+&lt;p&gt;
+  The following combine in a way that I have not yet been able to tease out a small t thesis from:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+   "The Shock of the Old" - David Edgerton&lt;/li&gt;
+&lt;li&gt;
+   "Shop Class as Soulcraft" - Matthew Crawford&lt;/li&gt;
+&lt;li&gt;
+   "The Two Cultures of Mathematics" - Tim Gowers&lt;/li&gt;
+&lt;li&gt;
+   "Telling is Listening" - Ursula Le Guin&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;
+  Roughly the area I am attempting to sound out is the idea of knowledge which is embodied in a person or a group, and cannot be separated from that without essentially rebuilding it from scratch (possibly with some gentle editing from a teacher who already understands it).&lt;/p&gt;
+&lt;p&gt;
+  Physical skills are very much like this (you can't just read a book to learn a martial art), but I think we treat cognitive skills as if they're
+  &lt;em&gt;
+   not&lt;/em&gt;
+  like this, when they absolutely are, and we privilege knowledge based on how close it is to the ideal of transmissibility.&lt;/p&gt;&lt;/blockquote&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-10-13-10:21.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-10-13-10:04.html</id>
     <title>Implicit vs Explicit</title>
-    <updated>2018-10-13T10:04:00+01:00</updated>
+    <updated>2018-10-13T10:19:25+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Implicit vs Explicit&lt;/p&gt;
