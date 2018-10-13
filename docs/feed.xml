@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-10-13T09:36:00+01:00</updated>
+  <updated>2018-10-13T10:04:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,113 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-10-13-10:04.html</id>
+    <title>Implicit vs Explicit</title>
+    <updated>2018-10-13T10:04:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Implicit vs Explicit&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-10-13&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+&lt;a href="https://www.python.org/dev/peps/pep-0020/"&gt;
+  The Zen of Python&lt;/a&gt;
+ :&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;
+  Beautiful is better than ugly.&lt;/li&gt;
+&lt;li&gt;
+  Explicit is better than implicit.&lt;/li&gt;
+&lt;li&gt;
+  Simple is better than complex.&lt;/li&gt;
+&lt;li&gt;
+  Complex is better than complicated.&lt;/li&gt;
+&lt;li&gt;
+  Flat is better than nested.&lt;/li&gt;
+&lt;li&gt;
+  Sparse is better than dense.&lt;/li&gt;
+&lt;li&gt;
+  Readability counts.&lt;/li&gt;
+&lt;li&gt;
+  Special cases aren't special enough to break the rules.&lt;/li&gt;
+&lt;li&gt;
+  Although practicality beats purity.&lt;/li&gt;
+&lt;li&gt;
+  Errors should never pass silently.&lt;/li&gt;
+&lt;li&gt;
+  Unless explicitly silenced.&lt;/li&gt;
+&lt;li&gt;
+  In the face of ambiguity, refuse the temptation to guess.&lt;/li&gt;
+&lt;li&gt;
+  There should be one-- and preferably only one --obvious way to do it.&lt;/li&gt;
+&lt;li&gt;
+  Although that way may not be obvious at first unless you're Dutch.&lt;/li&gt;
+&lt;li&gt;
+  Now is better than never.&lt;/li&gt;
+&lt;li&gt;
+  Although never is often better than
+  &lt;em&gt;
+   right&lt;/em&gt;
+  now.&lt;/li&gt;
+&lt;li&gt;
+  If the implementation is hard to explain, it's a bad idea.&lt;/li&gt;
+&lt;li&gt;
+  If the implementation is easy to explain, it may be a good idea.&lt;/li&gt;
+&lt;li&gt;
+  Namespaces are one honking great idea -- let's do more of those!&lt;/li&gt;&lt;/ul&gt;
+
+
+&lt;p&gt;
+ The only one of these people seem to remember is "explicit is better than implicit".
+Unfortunately, it falls afoul of the problem that almost all "X is better than Y" advice has,
+which is that the important qualification "All else being equal" is left, well, implicit.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Explicit is more verbose than implicit. Explicit is more expensive than implicit. If you try to make everything explicit then you will
+ &lt;em&gt;
+  never get anything done&lt;/em&gt;
+ ,
+because as with everything, being explicit has costs as well as benefits. Explicit may be better than implicit, but implicit is cheaper than explicit.
+Everything is a trade-off.&lt;/p&gt;
+
+
+&lt;p&gt;
+ It can be worth adjusting where you are in trade off space though - just because everything is a trade off doesn't mean you're automatically in the right region of trade off space,
+and it's much easier to err in the direction of making things too explicit rather than too implicit.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Tying into past posts:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;
+  One theme of the
+  &lt;a href="https://notebook.drmaciver.com/posts/2018-09-27-09:19.html"&gt;
+   making difficult decisions discussion&lt;/a&gt;
+  is that making your decision making process explicit is often beneficial when you're struggling.&lt;/li&gt;
+&lt;li&gt;
+  In
+  &lt;a href="https://notebook.drmaciver.com/posts/2018-10-09-09:57.html"&gt;
+   Try not to think about it&lt;/a&gt;
+  I argued that for many decisions it's actually better to make them implicitly rather than explicitly, by building the answer into your habits and environment, because if you make them explicitly then you open up the possibility of making them incorrectly.&lt;/li&gt;&lt;/ul&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-10-13-10:04.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-10-13-09:36.html</id>
     <title>Beeminder for Enforced Participation</title>
-    <updated>2018-10-13T09:36:00+01:00</updated>
+    <updated>2018-10-13T09:56:04+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Beeminder for Enforced Participation&lt;/p&gt;
