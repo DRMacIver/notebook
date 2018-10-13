@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-10-13T17:43:00+01:00</updated>
+  <updated>2018-10-13T17:56:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,62 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-10-13-17:56.html</id>
+    <title>Teaching from worked examples</title>
+    <updated>2018-10-13T17:56:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Teaching from worked examples&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-10-13&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ Mostly saving this for later so I can find it again.&lt;/p&gt;
+
+
+&lt;p&gt;
+&lt;a href="https://cacm.acm.org/blogs/blog-cacm/45725-how-we-teach-introductory-computer-science-is-wrong/fulltext"&gt;
+  How We Teach Introductory Computer Science Is Wrong&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;
+ In particular the following cites from it are interesting:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href="http://www.cogtech.usc.edu/publications/kirschner_Sweller_Clark.pdf"&gt;
+   Why Minimal Guidance During Instruction Does Not Work&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://www.tandfonline.com/doi/abs/10.1207/s1532690xci0201_3"&gt;
+   The Use of Worked Examples as a Substitute for Problem Solving in Learning Algebra&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+
+
+&lt;p&gt;
+ The general point being that getting people to try to solve the problem on their own as a starting point is not actually a good teaching model,
+and you're better off showing them a number of worked examples first.
+I find this counterintuitive personally, and I suspect they're framing it as a more certain thing than it really is, but I still think it's worth taking note of.&lt;/p&gt;
+
+
+&lt;p&gt;
+ I wonder how this ties in with
+ &lt;a href="https://www.youtube.com/watch?v=2xI42pfz5Ec"&gt;
+  Sue Sentance's PyCon UK keynote&lt;/a&gt;
+ suggestion of teaching programming by giving people something to modify.
+There I guess you are giving them a worked example first, so the two seem mutually supportive.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-10-13-17:56.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-10-13-17:43.html</id>
     <title>Beware Threshold Effects</title>
-    <updated>2018-10-13T17:43:00+01:00</updated>
+    <updated>2018-10-13T17:55:46+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Beware Threshold Effects&lt;/p&gt;
