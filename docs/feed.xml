@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-10-13T10:21:00+01:00</updated>
+  <updated>2018-10-13T17:43:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,74 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-10-13-17:43.html</id>
+    <title>Beware Threshold Effects</title>
+    <updated>2018-10-13T17:43:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Beware Threshold Effects&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-10-13&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+&lt;a href="https://www.lesswrong.com/posts/pHhRt2q3K6KfFE5kd/nyoom"&gt;
+  Nyoom&lt;/a&gt;
+ by Alicorn is a lovely piece about her new mobility scooter.
+There's a refrain throughout that hit me particularly hard:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;
+  Not like, you know, really disabled.&lt;/p&gt;
+&lt;p&gt;...&lt;/p&gt;
+&lt;p&gt;
+  I wasn't
+  &lt;em&gt;
+   disabled&lt;/em&gt;
+  or anything!&lt;/p&gt;
+&lt;p&gt;...&lt;/p&gt;
+&lt;p&gt;
+  Because I thought I wasn't disabled.&lt;/p&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;
+ I hate this idea that "disabled" is a binary category that you either are or aren't. There's no magic threshold at which it's suddenly OK to need help. Everyone needs help, and if something helps you you should do it.&lt;/p&gt;
+
+
+&lt;p&gt;
+ I don't think Alicorn disagrees with this, and I think this is probably a deliberate point of the piece, I just want to emphasise it.&lt;/p&gt;
+
+
+&lt;p&gt;
+ The world is
+ &lt;a href="https://www.drmaciver.com/2018/06/on-not-quite-fitting/"&gt;
+  full of threshold effects&lt;/a&gt;
+ where we take some continuous spectrum and declare that everything that is past this point counts and everything that's not doesn't. This is bullshit.&lt;/p&gt;
+
+
+&lt;p&gt;
+ You see this a lot with psychological issues as well, and it ties in to the war on drugs. There are a lot of drugs that are currently prescription only that I suspect would be much more widely useful - ADHD or modafinil for example. Hell,
+ &lt;em&gt;
+  I'd&lt;/em&gt;
+ probably benefit from one or both of these - do I have ADHD? No, I am almost certainly not able to meet the clinical definition of ADHD, but I've had more than one person look at my output on the internet and go "So, David...", and I'm definitely at least halfway in that direction. Do I have a sleep disorder? Yes, almost certainly. Is it one of the two that you can get modafinil prescribed for? Nah.&lt;/p&gt;
+
+
+&lt;p&gt;
+ We need to stop thinking of medication and assistive tech and, well, everything else, in terms of "Here is some discrete set of conditions that they fix" and more in terms of "this is the class of problems they help with".
+If you have a problem and there is something that would help you with it, the solution should be available to you regardless of whether you cross the threshold of "really needing it".&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-10-13-17:43.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-10-13-10:21.html</id>
     <title>Communicating Knowledge</title>
-    <updated>2018-10-13T10:21:00+01:00</updated>
+    <updated>2018-10-13T10:23:22+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Communicating Knowledge&lt;/p&gt;
