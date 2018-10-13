@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-10-11T14:54:00+01:00</updated>
+  <updated>2018-10-13T09:36:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,75 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-10-13-09:36.html</id>
+    <title>Beeminder for Enforced Participation</title>
+    <updated>2018-10-13T09:36:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Beeminder for Enforced Participation&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-10-13&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ I'm a huge fan of
+ &lt;a href="https://www.beeminder.com/"&gt;
+  beeminder&lt;/a&gt;.
+I was on a break with it for a while, not for any very good reason, but I've been back using it for a couple of months now, and it's really good to be back.&lt;/p&gt;
+
+
+&lt;p&gt;
+ A lot of the things I've been using beeminder for recently are a sort of... "making the fundamental feature of Beeminder contagious".
+The fundamental feature of Beeminder for me is that you cannot simply decide to give up on a goal - because the goal will charge you if you don't satisfy it,
+and because you have to wait a week for changes to take effect, the choice to stop a goal has to be a deliberate decision planned out in advance.&lt;/p&gt;
+
+
+&lt;p&gt;
+ This is fairly huge to me.&lt;/p&gt;
+
+
+&lt;p&gt;
+ A lot of goals I've had recently are basically of the form "keep doing the thing". This allows me to create systems with this property - beeminder doesn't track my
+ &lt;em&gt;
+  success&lt;/em&gt;
+ at using the system, it just tracks that I'm doing it at all.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Examples:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;
+  Writing in my journal&lt;/li&gt;
+&lt;li&gt;
+  Keeping up my book kanban&lt;/li&gt;
+&lt;li&gt;
+  This notebook&lt;/li&gt;
+&lt;li&gt;
+  Using the day plan system&lt;/li&gt;&lt;/ul&gt;
+
+
+&lt;p&gt;
+ The notebook and day plan goals do have some quantity attached to them but it's not that important. The journal and book goals literally all they track is "Did I do the thing today?". If yes, I get a point. If no, I don't.
+I can do as much or as little as I like as long as I do
+ &lt;em&gt;
+  something&lt;/em&gt;. The
+ &lt;a href="https://notebook.drmaciver.com/posts/2018-09-27-12:18.html"&gt;
+  system itself is then what keeps me doing it well&lt;/a&gt;
+ , "all" beeminder is doing is keeping me participating in it.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-10-13-09:36.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-10-11-14:54.html</id>
     <title>Stories about Data</title>
-    <updated>2018-10-11T14:54:00+01:00</updated>
+    <updated>2018-10-11T15:02:29+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Stories about Data&lt;/p&gt;
