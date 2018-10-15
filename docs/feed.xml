@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-10-15T07:06:00+01:00</updated>
+  <updated>2018-10-15T07:53:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,38 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-10-15-07:53.html</id>
+    <title>Book Review: How to understand your gender</title>
+    <updated>2018-10-15T07:53:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Book Review: How to understand your gender&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-10-15&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ I thought this was a good book, and I would recommend it to people who either are trying to do just that, or to people who want to understand a bit more about what others go through in this space.
+It's well written, reasonably thorough, and provides sensible, compassionate, advice.&lt;/p&gt;
+
+
+&lt;p&gt;
+ I didn't personally get a huge amount out of it. This is partly because I've already had a lot of these discussions and done a lot of the relevant reading, partly because I sped through it rather than doing the reflective exercises they encouraged, and partly because my own relationship with my own gender could perhaps best be described as "mild antipathy" - other people talk about gender as this deeply felt lived experience, and it's not something I can relate to at all (I think
+ &lt;a href="https://thingofthings.wordpress.com/2015/01/28/cis-by-default/"&gt;
+  Ozy Frantz's notion of "cis by default"&lt;/a&gt;
+ ) is helpful here. The result is that the book was written as if a lot of its content should have deep emotional impact and, while I think this was the correct way to write it, a lot of it failed to land for me.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-10-15-07:53.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-10-15-07:06.html</id>
     <title>Book Review: How to Talk about Books You Haven't Read, by Pierre Bayard</title>
-    <updated>2018-10-15T07:06:00+01:00</updated>
+    <updated>2018-10-15T07:16:46+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Book Review: How to Talk about Books You Haven't Read, by Pierre Bayard&lt;/p&gt;
