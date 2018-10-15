@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-10-15T07:01:43+01:00</updated>
+  <updated>2018-10-15T07:06:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,60 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-10-15-07:06.html</id>
+    <title>Book Review: How to Talk about Books You Haven't Read, by Pierre Bayard</title>
+    <updated>2018-10-15T07:06:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Book Review: How to Talk about Books You Haven't Read, by Pierre Bayard&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-10-15&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ A surprisingly charming book. It sounds like it should be funny, but it's not (and I don't think is intended to be).&lt;/p&gt;
+
+
+&lt;p&gt;
+ Instead the author, a literature professor, discusses the roles of books in our lives, and how they are interpreted and exist within our cultural framework and views on the world.&lt;/p&gt;
+
+
+&lt;p&gt;
+ One of his key points is that there is not really a binary of books we have "read" versus "not read" - every book we have read, we immediately start to forget, so at some point even books we have ostensibly read may achieve the same status as books we have never read.&lt;/p&gt;
+
+
+&lt;p&gt;
+ He uses a cute set of categorisations: UB (book that is unknown to me), SB (book I have skimmed), HB (book I have heard about), FB (book I have forgotten), coupled with a rating of --, -, +, ++ to indicate a negative or positive opinion about them.&lt;/p&gt;
+
+
+&lt;p&gt;
+ I am glad to have read this book for, ironically perhaps, a reason that I think is the major... if not missed, at least brushed over, point, which is that I think his view of books is very fiction-centric. What he is saying is not
+ &lt;em&gt;
+  wrong&lt;/em&gt;
+ for non-fiction, but I feel it is incomplete and elides much of the impact that a book can have on your thinking. His point is still valuable here - there are many ways to achieve that impact other than a thorough in-depth reading of the book, and some of them will even work
+ &lt;em&gt;
+  better&lt;/em&gt;
+ than a close reading the book (e.g. in-depth discussion interspersed with skimming and the occasional read) - but given that I think of this as one of the major point of books I would have appreciated more discussion.&lt;/p&gt;
+
+
+&lt;p&gt;
+ On the other hand this is a bit of a "Why didn't you include...?" and if he had included everything that could be said on the the subject the book would have been significantly less pleasingly short, so perhaps it is best left as is.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Possibly interesting to contrast with "How to Read a Book".&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-10-15-07:06.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-10-15-06:39.html</id>
     <title>Books</title>
-    <updated>2018-10-15T07:01:43+01:00</updated>
+    <updated>2018-10-15T07:05:58+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Books&lt;/p&gt;
