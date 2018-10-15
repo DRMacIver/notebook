@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-10-15T07:53:00+01:00</updated>
+  <updated>2018-10-15T08:36:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,34 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-10-15-08:36.html</id>
+    <title>Book Review: We Should All Be Feminists by Chimamanda Ngozi Adichie</title>
+    <updated>2018-10-15T08:36:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Book Review: We Should All Be Feminists by Chimamanda Ngozi Adichie&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-10-15&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ Short, persuasively written, and a lovely interweaving of the personal and the political.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Unless you haven't been paying attention (which is a lot of people), probably doesn't contain anything very new to you except some of the details of how gendered issues play out specifically in Nigeria, but still a good read.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-10-15-08:36.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-10-15-07:53.html</id>
     <title>Book Review: How to understand your gender</title>
-    <updated>2018-10-15T07:53:00+01:00</updated>
+    <updated>2018-10-15T07:59:02+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Book Review: How to understand your gender&lt;/p&gt;
