@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-10-15T08:36:00+01:00</updated>
+  <updated>2018-10-16T10:42:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,45 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-10-16-10:42.html</id>
+    <title>Big Capital: Who is London for? by Anna Minton</title>
+    <updated>2018-10-16T10:42:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Big Capital: Who is London for? by Anna Minton&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-10-16&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ This was a good book that I don't think I can really recommend.&lt;/p&gt;
+
+
+&lt;p&gt;
+ It's a compassionate, well-written, account of the extent of the problems with treating London property as an investment vehicle,
+the extent of the personal cost to people, and the degree of culpability of the councils in this problem.
+I knew much of this, but it filled in a lot of details for me.&lt;/p&gt;
+
+
+&lt;p&gt;
+ I was very impressed with how level a tone the author managed to keep throughout the book. The style would have been almost painfully dry, except that the material has such a high emotional impact and the writing is sufficiently concise and to the point as to offset the worst of the dryness. Instead it is a very effective accounting of the situation we find ourselves in.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Unfortunately, I don't know what to do with that information, so the book just made me angry and sad, and I was already angry and sad about this.
+Some concrete proposals were made in the last chapter, and they seem like good ones, but they're not ones where I feel like I have much agency, and to the degree that I have agency I would probably spend it on other things.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-10-16-10:42.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-10-15-08:36.html</id>
     <title>Book Review: We Should All Be Feminists by Chimamanda Ngozi Adichie</title>
-    <updated>2018-10-15T08:36:00+01:00</updated>
+    <updated>2018-10-15T08:38:36+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Book Review: We Should All Be Feminists by Chimamanda Ngozi Adichie&lt;/p&gt;
