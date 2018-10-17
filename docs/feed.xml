@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-10-16T10:49:25+01:00</updated>
+  <updated>2018-10-17T17:57:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,6 +10,52 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-10-17-17:57.html</id>
+    <title>Compare and Contrast: Big Capital vs Radical Markets</title>
+    <updated>2018-10-17T17:57:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Compare and Contrast: Big Capital vs Radical Markets&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-10-17&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ Copied and expanded upon
+ &lt;a href="https://twitter.com/DRMacIver/status/1052592117879463937"&gt;
+  from Twitter&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;
+ I said in
+ &lt;a href="https://notebook.drmaciver.com/posts/2018-10-16-10:42.html"&gt;
+  my review of Big Capital&lt;/a&gt;
+ that I didn't think I'd got a lot out of it other than being sad and angry, but actually one thing I've gotten out of it is that I think it's helped me put my finger on why the property model in Radical Markets is so dangerous.
+The problem is that you end up effectively charging people for community - people put down roots, form connections, etc. This creates an unwillingness to move that means that the value to the incumbent is significantly greater than the value to the purchaser.
+Either this is reflected in their personal valuation of the house (which means they are taxed more) or they inevitably lose value when someone buys their house from under them.
+As well as being very class correlated that's an awful incentive gradient you've got there.&lt;/p&gt;
+
+
+&lt;p&gt;
+ The way this has played out in London is in the context of council housing, where people who have bought their homes under right to buy schemes have been met with mandatory purchase orders from the council where they want to redevelop the estate.
+The COST model proposed by Radical Markets is basically a form of mandatory purchase order - you don't have the same injustice over being paid below market rates (except in the sense that "market rates" are set by what people can afford to pay in their COST taxes, and estates typically house poorer people!), but other than that the effect is the same.&lt;/p&gt;
+
+
+&lt;p&gt;
+ This destroys communities, and because these are the communities that people have built their lives in and around, that destroys lives.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Anyway, given that it has helped me make sense of something important, I tentatively revise my review from "Very good but I can't recommend it" to "Very good, will make you sad and angry, but may help you make sense of some things around property and is a useful counterpoint to Radical Markets, and I leave the cost-benefit analysis to you".&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-10-17-17:57.html" rel="alternate"/>
+  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2018-10-16-10:42.html</id>
     <title>Big Capital: Who is London for? by Anna Minton</title>
@@ -1422,7 +1468,7 @@ Instead what these books will teach you is to doubt your own judgement when inte
   <entry>
     <id>https://notebook.drmaciver.com/posts/2018-09-28-10:49.html</id>
     <title>What is a neural network?</title>
-    <updated>2018-09-28T13:46:09+01:00</updated>
+    <updated>2018-10-17T09:13:11+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;What is a neural network?&lt;/p&gt;
