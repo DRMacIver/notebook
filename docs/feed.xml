@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-10-17T17:57:00+01:00</updated>
+  <updated>2018-10-21T15:53:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,67 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-10-21-15:53.html</id>
+    <title>Book Review: Writing to Learn</title>
+    <updated>2018-10-21T15:53:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Book Review: Writing to Learn&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-10-21&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ The biggest problem with this book for me is that it is not really
+ &lt;em&gt;
+  about&lt;/em&gt;
+ writing to learn, instead writing to learn is better thought of as its recurring theme.&lt;/p&gt;
+
+
+&lt;p&gt;
+ The book exemplifies a style that it also advocates for: Personal, privileging peple over knowledge. Every piece of information should be presented in the context of a story, and about how the people relate to that knowledge.&lt;/p&gt;
+
+
+&lt;p&gt;
+ I'm not a huge fan of this style. I think it can work, and certainly personal books of the type it encourages are fine (and sometimes even great), but as a way of presenting knowledge I think it fails. The point being made is obfuscated by being tangled up in the story, while the story suffers because I'm constantly thinking "OK get to the point" and thus want to rush through the story.&lt;/p&gt;
+
+
+&lt;p&gt;
+ As, frankly, happens in this book. The book is well written, and contains a lot of interesting examples of good writing. I think if I hadn't been wanting to learn more about its actual theme of "writing to learn" and just sat back to enjoy it as a piece of writing I would have liked it a lot more.&lt;/p&gt;
+
+
+&lt;p&gt;
+ The actual structure of the book is roughly this:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;
+  The fact that writing is left to the English department to teach does an injustice to the student and to the teachers - writing is better integrated across the curriculum.&lt;/li&gt;
+&lt;li&gt;
+  A couple of useful pieces of information about how to integrate that.
+  &lt;ul&gt;
+&lt;li&gt;
+    Get people to use writing to make their reasoning process explicit.&lt;/li&gt;
+&lt;li&gt;
+    Require well-written essay answers on exams, but if an answer is correct but poorly written, give students an opportunity to revisit it, with the help of a writing workshop.&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;
+  A very large number of anecdotal and extract evidence of the fairly obvious proposition that yes you really can write well in any field.&lt;/li&gt;&lt;/ol&gt;
+
+
+&lt;p&gt;
+ I'm particularly disappointed by the third part because almost none of these felt like examples of people writing to learn - they were almost all examples of writing to teach.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-10-21-15:53.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-10-17-17:57.html</id>
     <title>Compare and Contrast: Big Capital vs Radical Markets</title>
-    <updated>2018-10-17T17:57:00+01:00</updated>
+    <updated>2018-10-17T18:05:36+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Compare and Contrast: Big Capital vs Radical Markets&lt;/p&gt;
