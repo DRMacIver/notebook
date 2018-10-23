@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-10-21T15:53:00+01:00</updated>
+  <updated>2018-10-23T09:47:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,50 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-10-23-09:47.html</id>
+    <title>Book Review: All The Lives I Want by Alana Massey</title>
+    <updated>2018-10-23T09:47:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Book Review: All The Lives I Want by Alana Massey&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-10-23&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ Reasonably strongly recommended.&lt;/p&gt;
+
+
+&lt;p&gt;
+ This is a collection of essays about the lives of famous women, and the author's life, and the experience of being a woman.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Confession: When this book arrived from Amazon I went "Wait, why did I order this again?". Fortunately past me was wiser than other-past me and it was a good order.
+I'm pretty indifferent to a lot of popular culture, so many of the people referenced in this book were ones I didn't or barely recognised. That didn't really matter.&lt;/p&gt;
+
+
+&lt;p&gt;
+ This is another book that is slightly meandering and personal in the way that I complained about for Writing to Learn. Unlike Writing to Learn, that was fine - I never felt that the book should get to the point, because the story it was telling
+ &lt;em&gt;
+  was&lt;/em&gt;
+ the point.&lt;/p&gt;
+
+
+&lt;p&gt;
+ I don't have a good summary of the book, except perhaps that it's about giving a sympathetic eye to women who do not normally get one, and it does that very well. It's not exactly a light read - the content is at times fairly distressing - but it is well written and to the point in a way that means it also never feels like a heavy one.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-10-23-09:47.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-10-21-15:53.html</id>
     <title>Book Review: Writing to Learn</title>
-    <updated>2018-10-21T15:53:00+01:00</updated>
+    <updated>2018-10-21T16:09:08+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Book Review: Writing to Learn&lt;/p&gt;
