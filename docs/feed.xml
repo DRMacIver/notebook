@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-10-26T15:47:00+01:00</updated>
+  <updated>2018-10-26T19:33:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,40 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-10-26-19:33.html</id>
+    <title>Book Review: A Field Guide To Getting Lost by Rebecca Solnit</title>
+    <updated>2018-10-26T19:33:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Book Review: A Field Guide To Getting Lost by Rebecca Solnit&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-10-26&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ This a lovely book that I can't really easily summarise. It's a melancholy exploration of our relationship to the world, through the lens of loss and what it means to be lost.&lt;/p&gt;
+
+
+&lt;p&gt;
+ One thing that was interesting for me personally when reading it is how very clearly it is the sort of book which I could never possibly have written.
+I don't just mean that the author is a much better writer than me (although she absolutely is), but the nature of our relationships with memory are very different:
+The book is full of detail-rich memory of her life, with the themes she's discussing being woven in and out and illustrated with personal stories and how they played out in those cases.&lt;/p&gt;
+
+
+&lt;p&gt;
+ I simply don't have that sort of memory, which makes it very hard for me to... relate is not the right word, because I can absolutely relate, but I cannot imagine what it would be like to have that level of access to my history. Usually this just feels normal, but being confronted with how wide that gap is is a strange (and, indeed, lost) feeling.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-10-26-19:33.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-10-26-15:47.html</id>
     <title>Deleting larger intervals in test case reduction</title>
-    <updated>2018-10-26T15:47:00+01:00</updated>
+    <updated>2018-10-26T16:00:09+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Deleting larger intervals in test case reduction&lt;/p&gt;
