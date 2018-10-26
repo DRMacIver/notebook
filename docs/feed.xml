@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-10-26T19:33:00+01:00</updated>
+  <updated>2018-10-26T19:38:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,37 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-10-26-19:38.html</id>
+    <title>Book Review: Thinking in Systems by Donella H. Meadows</title>
+    <updated>2018-10-26T19:38:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Book Review: Thinking in Systems by Donella H. Meadows&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-10-26&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ Decent introduction to systems thinking. Not super useful for me given that it was a bit preaching to the choir, but helped fill in some gaps and I'd recommend it as an intro for people who
+ &lt;em&gt;
+  don't&lt;/em&gt;
+ naturally think this way.&lt;/p&gt;
+
+
+&lt;p&gt;
+ I found some of the examples a bit dated and the politics a little annoying in a few places. I also feel like it was less actionable than the author believes it to be. All told though it's a nice, clear, and enjoyable read.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-10-26-19:38.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-10-26-19:33.html</id>
     <title>Book Review: A Field Guide To Getting Lost by Rebecca Solnit</title>
-    <updated>2018-10-26T19:33:00+01:00</updated>
+    <updated>2018-10-26T19:37:56+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Book Review: A Field Guide To Getting Lost by Rebecca Solnit&lt;/p&gt;
