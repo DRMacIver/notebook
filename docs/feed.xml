@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-10-26T19:38:00+01:00</updated>
+  <updated>2018-10-30T14:57:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,75 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-10-30-14:57.html</id>
+    <title>Book Review: "An Astronaut's Guide to Life on Earth" Chris Hadfield</title>
+    <updated>2018-10-30T14:57:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Book Review: "An Astronaut's Guide to Life on Earth" Chris Hadfield&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-10-30&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ When I mentioned to a friend that I was reading this she said "Oh is that actually good? I assumed it was pop science trash". It is actually good and it's not pop science trash.&lt;/p&gt;
+
+
+&lt;p&gt;
+ There are roughly two interesting bits to this book:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;
+  Advocating for a particular attitude to life.&lt;/li&gt;
+&lt;li&gt;
+  A lot of anecdotes about space and what the life of an astronaut is like.&lt;/li&gt;&lt;/ol&gt;
+
+
+&lt;p&gt;
+ I found both sides of the book interesting, although I think the life advice would have fallen very flat without the space component,
+while the space component might have stood just fine on its own.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Some of the attitude stuff that is advocated for:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;
+  work hard&lt;/li&gt;
+&lt;li&gt;
+  over plan for everything&lt;/li&gt;
+&lt;li&gt;
+  be a team player&lt;/li&gt;
+&lt;li&gt;
+  don't be afraid to shoot for your ultimate goal but arrange your life so that if you don't achieve it that's OK&lt;/li&gt;
+&lt;li&gt;
+  have an awful lot of under-acknowledged privilege (Helene Hadfield is in many ways the true hero of the story)&lt;/li&gt;&lt;/ul&gt;
+
+
+&lt;p&gt;
+ I've been thinking about trying to get better at strategic planning, and this book was a useful nudge in that direction.
+In particular there's a bunch of advice in there for
+ &lt;em&gt;
+  constructively&lt;/em&gt;
+ over-thinking things which might be useful.
+The main gist is that rather than worrying about everything that might go wrong and stressing about it as a result,
+worry about everything that that might go wrong and
+ &lt;em&gt;
+  plan what you will do when it does&lt;/em&gt;.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-10-30-14:57.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-10-26-19:38.html</id>
     <title>Book Review: Thinking in Systems by Donella H. Meadows</title>
-    <updated>2018-10-26T19:38:00+01:00</updated>
+    <updated>2018-10-26T19:45:00+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Book Review: Thinking in Systems by Donella H. Meadows&lt;/p&gt;
