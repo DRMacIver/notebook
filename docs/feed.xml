@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-10-31T17:40:00+00:00</updated>
+  <updated>2018-10-31T18:59:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,257 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-10-31-18:59.html</id>
+    <title>Notes from London Liberating Structures 2018-10-30</title>
+    <updated>2018-10-31T18:59:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Notes from London Liberating Structures 2018-10-30&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-10-31&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ Yesterday was my second London Liberating Structures, where we did two different Liberating Structures.
+These are my notes from them.&lt;/p&gt;
+
+
+&lt;h3&gt;
+ Notes from Discovery &amp;amp; Action Dialogue&lt;/h3&gt;
+
+
+&lt;p&gt;
+&lt;a href="http://www.liberatingstructures.com/10-discovery-action-dialogue/"&gt;
+  Discovery &amp;amp; Action Dialogue&lt;/a&gt;
+ is a structure for identifying
+ &lt;a href="https://en.wikipedia.org/wiki/Positive_deviance"&gt;
+  positive deviance&lt;/a&gt;
+ : Given some widespread problem, some people fare better than others at it than others. Can we identify and copy those strategies?
+The question we asked was "How can we improve our London commute?".&lt;/p&gt;
+
+
+&lt;p&gt;
+ DADs have seven structuring questions, but we combined the last two.&lt;/p&gt;
+
+
+&lt;h4&gt;
+ How do you know when problem X is present?&lt;/h4&gt;
+
+
+&lt;p&gt;
+ We identified three major types of problem we have with our commutes:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;
+  "Lost" time - when the commute is such that you can't actually do anything else useful on it because it's too crowded to e.g. read a book.&lt;/li&gt;
+&lt;li&gt;
+  Physically unpleasant, due to crowding, heat, air quality, etc.&lt;/li&gt;
+&lt;li&gt;
+  Unpredictability can be a source of stress - if you might get delayed getting somewhere as a result of train cancellations, etc.&lt;/li&gt;&lt;/ul&gt;
+
+
+&lt;h4&gt;
+ How do you contribute effectively to solving problem X?&lt;/h4&gt;
+
+
+&lt;p&gt;
+ We identified a number of strategies we used:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;
+  Replace your "optimal" route with a slower but more predictable or pleasant approach. e.g. We talked about:
+  &lt;ul&gt;
+&lt;li&gt;
+    Using the Thames Clippers boat.&lt;/li&gt;
+&lt;li&gt;
+    Alternate tube routes that involve slightly more walking (e.g. I rearranged my commute to involve walking from Lancaster Gate to work instead of Gloucester Road - it's a 15-20 minute walk instead of a 10 minute walk, but it's a bit faster so you hardly lose any time on it and the walk across Hyde park is
+    &lt;em&gt;
+     much&lt;/em&gt;
+    nicer).&lt;/li&gt;
+&lt;li&gt;
+    Taking the overground instead of the underground - less crowded, so you have more space to read a book.&lt;/li&gt;
+&lt;li&gt;
+    Motor biking, biking, or even walking.&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;
+  When there's nothing else you can do due to crowding, people suggested they used podcasts for this.&lt;/li&gt;
+&lt;li&gt;
+  Be better about advance planning - e.g. think about your layers, balance of your bag, etc. so that it's easy to adjust your comfort and temperature level when you're on the tube.&lt;/li&gt;
+&lt;li&gt;
+  Working from home and flexible working hours - if you can avoid commuting during rush hour, the problem mostly goes away.&lt;/li&gt;
+&lt;li&gt;
+  Leave earlier when it's less crowded and schedule something before work - e.g. swimming, meeting someone for coffee, morning glory.&lt;/li&gt;&lt;/ol&gt;
+
+
+&lt;h4&gt;
+ What prevents you from doing this or taking these actions all the time?&lt;/h4&gt;
+
+
+&lt;p&gt;
+ A mix of being bad at organisation and constraints outside our control: e.g. if your job is not one you can do from home then you're basically stuck as to when you commute.
+If you don't live and work near to the river you can't take the Thames Clippers&lt;/p&gt;
+
+
+&lt;h4&gt;
+ Do you know anybody who is able to frequently solve problem X and overcome barriers? What behaviors or practices made their success possible?&lt;/h4&gt;
+
+
+&lt;p&gt;
+ We didn't really have any suggestions other than the ones we already said in "How do you contribute effectively to solving problem X?" (though there were a few things that got brought up here that were basically "Oh yeah I forgot to say...") and "people who are more organised than me"&lt;/p&gt;
+
+
+&lt;h4&gt;
+ Do you have any ideas?&lt;/h4&gt;
+
+
+&lt;p&gt;
+ The main useful ideas we had were:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;
+  Bring a thermos of tea or coffee on the tube (I'm not sure how this fits in to any of the specific problems we suggested, but apparently it makes it more pleasant).&lt;/li&gt;
+&lt;li&gt;
+  Encourage working from home more where possible. Even if you don't do it all day, work from home in the morning so you don't commute during rush hour. We highlighted that unfortunately there's a culture of shaming around this.&lt;/li&gt;
+&lt;li&gt;
+  Experiment with your route - try alternatives to see if you like htem better.&lt;/li&gt;&lt;/ul&gt;
+
+
+&lt;p&gt;
+ We also talked about things councils could do - e.g. making more bus lanes suitable for motorbike use.&lt;/p&gt;
+
+
+&lt;h4&gt;
+ What needs to be done? Who needs to be involved?&lt;/h4&gt;
+
+
+&lt;p&gt;
+ This rather blended into the previous section to be honest - I'm not sure there was much of a noticeable difference between the sort of things we suggested in this and the previous section.&lt;/p&gt;
+
+
+&lt;p&gt;
+ The ideas we suggested in this section were:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;
+  Shifting cultures to make working from home more acceptable - e.g. calling out "jokes" about working from home as not OK.&lt;/li&gt;
+&lt;li&gt;
+  More vehicle free areas and times.&lt;/li&gt;
+&lt;li&gt;
+  More tube strikes! (This was in response to the observation that tube strikes often result in long run improvements to people's commutes as they find routes they like better)&lt;/li&gt;
+&lt;li&gt;
+  Restructure our entire economy to move more jobs out of London so this is less of a problem.&lt;/li&gt;&lt;/ul&gt;
+
+
+&lt;p&gt;
+ We made the observation at this point that almost all of our solutions were about mitigating or avoiding the problem rather than really solving it.&lt;/p&gt;
+
+
+&lt;h3&gt;
+ Notes from 15% Solutions&lt;/h3&gt;
+
+
+&lt;p&gt;
+&lt;a href="http://www.liberatingstructures.com/7-15-solutions/"&gt;
+  15% solutions&lt;/a&gt;
+ is a structure for identifying immediate points of action - what can you do to improve the situation right now without requiring any additional resources or authority.&lt;/p&gt;
+
+
+&lt;p&gt;
+ I don't have any detailed notes from this because I forgot to bring my journal with me. Fortunately
+ &lt;a href="https://alexwlchan.net/"&gt;
+  Alex&lt;/a&gt;
+ assures me that he will be writing up his (and we were in the same group).&lt;/p&gt;
+
+
+&lt;p&gt;
+ We discussed the question "What can we do to address power imbalances in meetings?". What I remember of
+ &lt;em&gt;
+  my&lt;/em&gt;
+ suggestions were that I had roughly two categories of suggestion: Roughly, "better structures for meetings" and "develop ally skills".&lt;/p&gt;
+
+
+&lt;p&gt;
+ In the former I suggested:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;
+  Use liberating structures!&lt;/li&gt;
+&lt;li&gt;
+  Develop a culture of hand signals as a parallel communication channel (easier for people who have difficulty speaking up).&lt;/li&gt;
+&lt;li&gt;
+  Arrange a meeting agenda in advance in writing, with everyone contributing.&lt;/li&gt;&lt;/ul&gt;
+
+
+&lt;p&gt;
+ For ally skills I suggested the following:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;
+  Exemplify behaviours that you want people with less power or experience to be able to do. e.g. I try to ask "stupid" questions to encourage the notion that it's OK to do that. Similarly I try to be good about admitting when I don't understand.&lt;/li&gt;
+&lt;li&gt;
+  Checking in with people after meetings to see what they thought about it (especially useful to do if you're
+  &lt;em&gt;
+   not&lt;/em&gt;
+  the person running the meeting)&lt;/li&gt;
+&lt;li&gt;
+  Signal boost people when their point seems to have got ignored - "I think X made a good point when they said..."&lt;/li&gt;&lt;/ul&gt;
+
+
+&lt;p&gt;
+ Alex also suggested note-taking as a good tool here. There are two senses in which this is true: It can be very useful for making sure you give credit where credit is due, and also if there is some sort of formal minutes process where someone is expected to volunteer themselves, often that ends up going to a woman (being aware of this dynamic is part of why I almost always volunteer as note taker. The other part is that I'm decent at it and it helps me focus on the subject being discussed)&lt;/p&gt;
+
+
+&lt;h3&gt;
+ General Reflections&lt;/h3&gt;
+
+
+&lt;p&gt;
+ I'm afraid neither of these landed for me. I liked the idea of both and would be up for doing them again, but the specific instances as we did them didn't work.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Part of this is due to something I left as feedback for the organisers already: I do not think there is enough time to do two liberating structures in two hours. This is especially true because there's a break in the middle and because people arrive on London time, so two hours isn't really two hours, it's at best about an hour and a half, less if you don't count explanation time.
+The result was that the DAD felt a little rushed and the 15% solutions was too rushed to do anything meaningful with.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Personally, I think I would also like a more in depth discussion of the structures before we did them (in theory I had read the sections in the book before hand, but in practice I didn't remember anything from what I read).&lt;/p&gt;
+
+
+&lt;p&gt;
+ I also had some specific complaints with both structures.&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;
+  I thought DAD's structuring questions were too unstructured, and the timing was insufficiently clear. I also thought the problem we were talking about was not really shared reliably enough among the people involved - the problem was that everyone had such different constraints that we didn't have much in the way of solutions we could transfer.&lt;/li&gt;
+&lt;li&gt;
+  I did not think that 15% solutions worked without more careful timekeeping than we did, and by the time we got to the second round everyone had forgotten people's specific suggestions from the first round. I think it would have worked much better if people had given their suggestions and then immediately been asked the clarifying questions (with a time box per person). This makes it somewhat closer to
+  &lt;a href="http://www.liberatingstructures.com/8-troika-consulting/"&gt;
+   Troika Consulting&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;
+  I missed having the talking objects aspect from conversation cafe.&lt;/li&gt;&lt;/ol&gt;
+
+
+&lt;p&gt;
+ All that griping aside, I still found it an enjoyable evening and an interesting experience - although I didn't think the structures worked for their intended purpose, it was still useful to try them out and observe their failure modes.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-10-31-18:59.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-10-31-17:40.html</id>
     <title>Notes on Blocking Sets</title>
-    <updated>2018-10-31T17:40:00+00:00</updated>
+    <updated>2018-10-31T17:56:55+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Notes on Blocking Sets&lt;/p&gt;
