@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-10-31T16:54:00+00:00</updated>
+  <updated>2018-10-31T17:40:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,92 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-10-31-17:40.html</id>
+    <title>Notes on Blocking Sets</title>
+    <updated>2018-10-31T17:40:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Notes on Blocking Sets&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-10-31&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ Here's some stuff I'm playing with related to some problems in the combinatorics of test case reduction.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Let \(X = \{1, \ldots, n\}\).&lt;/p&gt;
+
+
+&lt;p&gt;
+ Let \(S \subseteq X\) and \(\pi\) be a permutation of \(X\). Say \(S\)
+ &lt;em&gt;
+  starts&lt;/em&gt;
+ \(\pi\) if \(S = \{\pi_1, \ldots, \pi_{|S|}\}\).&lt;/p&gt;
+
+
+&lt;p&gt;
+ Let \(B \subseteq \mathcal{P}(X)\). Say \(B\) blocks \(\pi\) if \(S\) starts \(\pi\) for some \(S \in B\).
+If \(B\) blocks every possible \(\pi\), say it is blocking.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Lemma: Suppose \(B\) is a blocking set such that \(k \leq |U| \leq n - k\) for all \(U \in B\). Then \(|B| \geq n\choose{k}\),
+and this bound is tight.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Proof:&lt;/p&gt;
+
+
+&lt;p&gt;
+ To see that the bound must be tight note that the we can choose the set of all subsets of \(X\) of size \(k\),
+and this is a blocking set of the desired size.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Suppose now that \(|B| &amp;lt;  n\choose{k}\). Pick a permutation \(\pi\) uniformly at random. For each \(k\), \(\pi\) starts with each subset of \(X\) of size \(k\) with equal probability.
+Thus for any given subset of size \(k\) the probability that \(\pi\) starts with it is \(\frac{1}{n\choose{k}}\).
+Thus the expected number of sets in \(B\) that start \(\pi\) is \(\sum\limits_{U \in B} \frac{1}{n\choose{|U|}} \leq \frac{|B|}{n\choose{k}} &amp;lt; 1\).&lt;/p&gt;
+
+
+&lt;p&gt;
+ If the expected number of sets that start \(\pi\) is less than one, then the probability of it being equal to zero must be non-zero. In particular,
+there is some \(\pi\) that does not start with any of these sets, and thus is not blocked by \(B\). Therefore \(B\) is not blocking.&lt;/p&gt;
+
+
+&lt;p&gt;
+ QED&lt;/p&gt;
+
+
+&lt;p&gt;
+ The question I'm really interested in is the following:&lt;/p&gt;
+
+
+&lt;p&gt;
+ Say \(S\) is a critical set for \(B\) if \(B\) is non-blocking but \(B \cup \{S\}\) is blocking.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Suppose \(B\) is some non-blocking set such that \(|U| \geq 2\) for all \(U \in B\), and suppose that \(B\) has a critical set of size \(2\).
+How small can \(B\) be?&lt;/p&gt;
+
+
+&lt;p&gt;
+ I believe the answer is that it most have at least \({n - 1}\choose{2}\) elements, but I keep failing to pin down the details.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-10-31-17:40.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-10-31-16:54.html</id>
     <title>The No Genies Conjecture</title>
-    <updated>2018-10-31T16:54:00+00:00</updated>
+    <updated>2018-10-31T16:58:31+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;The No Genies Conjecture&lt;/p&gt;
