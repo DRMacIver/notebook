@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-10-30T14:57:00+00:00</updated>
+  <updated>2018-10-31T16:54:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,63 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-10-31-16:54.html</id>
+    <title>The No Genies Conjecture</title>
+    <updated>2018-10-31T16:54:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;The No Genies Conjecture&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-10-31&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ A thing I often end up explaining to people is that in testing you can go broad or you can go deep: Example-based testing tends to be deep, property-based testing tends to be broad. There's no real way to go broad and deep at once other than doing a stupid amount of work.&lt;/p&gt;
+
+
+&lt;p&gt;
+ A similar dichotomy is between physical and digital tools. Physical tools tend to be flexible but limited power, while digital tools tend to be powerful but inflexible. There are very few tools that are both powerful and flexible without you having to do an awful lot of work.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Roughly there's a "pick two" thing going on between:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;
+  Powerful&lt;/li&gt;
+&lt;li&gt;
+  Flexible&lt;/li&gt;
+&lt;li&gt;
+  Easy to use&lt;/li&gt;&lt;/ol&gt;
+
+
+&lt;p&gt;
+ If you're lucky you get one of these. If you're
+ &lt;em&gt;
+  really&lt;/em&gt;
+ lucky you get two. You basically never get all three.&lt;/p&gt;
+
+
+&lt;p&gt;
+&lt;a href="https://archiveofourown.org/works/4637439/chapters/10575111"&gt;
+  Except in fiction&lt;/a&gt;. A genie's wishes are powerful, flexible, and easy to use.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Thus, one might reasonably term the statement that you cannot have all three of these things at once as the conjecture that genies do not exist.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-10-31-16:54.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-10-30-14:57.html</id>
     <title>Book Review: "An Astronaut's Guide to Life on Earth" Chris Hadfield</title>
-    <updated>2018-10-30T14:57:00+00:00</updated>
+    <updated>2018-10-30T15:08:41+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Book Review: "An Astronaut's Guide to Life on Earth" Chris Hadfield&lt;/p&gt;
@@ -2841,6 +2895,72 @@ This may in fact mean that the time varying preferences they make are actually t
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2018-09-13-13:07.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-09-13-11:02.html</id>
+    <title>Notes from reading "Rigour and Structure"</title>
+    <updated>2018-09-13T11:02:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Notes from reading "Rigour and Structure"&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-09-13&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;
+  The distinctive definition-theorem-proof format of professional publications is the single most conspicuous feature of mathematical practice.&lt;/p&gt;
+&lt;p&gt;
+  The quality whose presence in a purported proof makes it a genuine proof by present-day journal standards, and whose absence makes the proof spurious in a way that if discovered will call for retraction, is called rigor.&lt;/p&gt;
+&lt;p&gt;
+  The assessment of purported proofs for rigor is generally not the topic of a separate course.&lt;/p&gt;
+&lt;p&gt;
+  Mathematicians’ views on the nature of rigor and proof may more often be expressed in aphorisms and epigrams, in anecdotes and jokes, for instance, of the common ‘an engineer, a physicist, and a mathematician…’ genre, than in formal theoretical pronouncements.&lt;/p&gt;
+&lt;p&gt;
+  contrary to the dictum that a proof is what convinces, not everything that convinces is a proof&lt;/p&gt;
+&lt;p&gt;
+  such methods, and other aspects of early modern mathematics, also exemplify what I will call reliance on generic reasoning. By this I mean performing calculations or manipulations that usually or generally work but sometimes or exceptionally fail, treating as universally applicable techniques that are — and may be known to be — only applicable in favorable cases, in the hope and belief that the case in which one is interested is one of the favorable ones, but without any rigorous justification for supposing this to be so.&lt;/p&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;
+ On uniform continuity:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;
+  The distinction is a matter of the order of quantifiers (all-all-exists vs all-exists-all, or in logicians’ notation \(\forall\forall\exists\) and \(\forall\exists\forall\) cannot be made unless the quantifiers have been made explicit and not left implicit in expressions like ‘close as desired’ or ‘close enough’.&lt;/p&gt;
+&lt;p&gt;
+  Proofs depending on calculations, in particular, are especially likely to go wrong if the calculations are long and complicated enough.&lt;/p&gt;
+&lt;p&gt;
+  Rigorism imposes no restriction on definitions other than rigor, and leaves one perfectly free to explore definitions that may at first seem complicated and unnatural, if there are grounds for hoping they will be useful and fruitful.&lt;/p&gt;
+&lt;p&gt;
+  Owing to the freedom to introduce useful new notions regardless of simplicity or naturalness, so long only as they are rigorously defined, nothing need be lost.&lt;/p&gt;
+&lt;p&gt;
+  Time and again during the early twentieth century non-rigorous but useful methods introduced by physicists or engineers were found to have rigorous counterparts, the development of which at the very least clarified the scope and limits of the techniques, and more often than not had other side benefits as well.&lt;/p&gt;
+&lt;p&gt;
+  Brouwer’s mysticism led him to believe that mathematics is largely an incommunicable mental activity, not to say an ineffable meditative practice, and as a result the rules of intuitionist game were never clearly articulated&lt;/p&gt;
+&lt;p&gt;
+  Deduction and Deducibility. Here one must confront the fact that if one looks to logic textbooks, though one will find an agreed characterization of logical consequence, which I have already discussed, one finds no agreed characterization of logical deduction.&lt;/p&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;
+ The point being that logic has more to say about the process that determines what the true statements are than how to actually determine the true statements. This is analagous to the enumeration vs predicate view of a set.&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;
+  [Mathematical logic] resembles mathematical physics and mathematical economics in that its models are highly idealized. In particular, as I have been emphasizing, it gives a quite good model of mathematical deducibility, but a much poorer model of mathematical deduction.&lt;/p&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;
+ The point being that formal logic is a kind of "spherical cow in a vacuum" version of actual logic performed by real mathematicians.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-09-13-11:02.html" rel="alternate"/>
   </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2018-09-10-13:14.html</id>
