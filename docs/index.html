@@ -40,6 +40,147 @@ MathJax.Hub.Config({
         
 
 <section>
+<h2><a href="/posts/2018-11-02-12:16.html">2018-11-02</a></h2>
+
+
+<p class="subtitle">Notes on "Towards a general mathematical theory of experimental science"</p>
+
+
+<dl class="metadata">
+<dt>Published</dt>
+<dd class="post-date">2018-11-02</dd>
+</dl>
+
+
+<p>
+ A friend
+ <a href="https://arxiv.org/pdf/1807.07896.pdf">
+  linked to this paper</a>
+ and I thought it sounded interesting.
+These are my first-pass notes. The paper failed to clear my threshold for a close reading, which was a shame because I was quite into it in the abstract.
+I would potentially like to do a close reading of something longer on this subject, but I don't feel this paper would be worth the close reading.</p>
+
+
+<h3>
+ Close Reading Questions</h3>
+
+
+<p>
+ Scores go from -1 to +2. The threshold for a close reading is that the total score must be 2 or higher.</p>
+
+
+<ul>
+<li>
+  Is this paper interesting? +1</li>
+<li>
+  Is this paper useful? -1</li>
+<li>
+  Is this paper well written? +1</li></ul>
+
+
+<p>
+ Total score: 1</p>
+
+
+<h3>
+ Summary</h3>
+
+
+<p>
+ The general goal here is to provide an abstract mathematical notion of what it means to do experimental science.
+I believe they have provided a reasonable basis for doing so, but it is unclear to me what the actual implications of this are and I feel like if they have really been working on it for as long as they say then one of the following must be true:</p>
+
+
+<ol>
+<li>
+  There aren't any very interesting ones.</li>
+<li>
+  The authors are weirdly bad at motivating their work.</li></ol>
+
+
+<p>
+ Based on the fact that the paper is reasonably well written and that
+ <a href="https://www.drmaciver.com/2017/10/reality-is-a-countably-infinite-sierpinski-cube/">
+  I have also thought about this issue and didn't come up with any very interesting implications</a>
+ ,
+I am inclined to think that it is the former,
+but I hope to be wrong.</p>
+
+
+<p>
+ Roughly the model of the paper is the following:</p>
+
+
+<p>
+ We have some abstract set of statements associated with physical reality.
+These are closed under arbitrary boolean functions (i.e. if we have some set of statements \(U\) and a function \(f: \mathbb{B}^U \to \mathbb{B}\), where \(\mathbb{B} = \{\text{true}, \text{false}\}\),
+we can construct a statement \(f(U)\) which is interpreted as combining the truth values of all of the elements of \(U\) and passing them to \(f\).
+This assumption gives the statements (up to equivalence) the structure of a complete boolean algebra.</p>
+
+
+<p>
+ They consider as a starting point statements which are
+ <em>
+  verifiable</em>
+ - that is, there are is some experimental procedure that would allow us to eventually determine that the statement were true. These procedures are allowed to run for infinite time if the statement is false, but must eventually terminate in finite time if the statement is true.
+The verifiable statements are closed under finite disjunction (i.e. if A and B are both verifiable then the statement "A and B" is also verifiable) and countably infinite disjunction (i.e. if \(A_n\) are all verifiable then \(A_1\) or \(A_2\) or \(\ldots\) is verifiable).</p>
+
+
+<p>
+ They make the interesting (to me) observation that is useful to define an experimental science in terms of two sets of statements:
+An
+ <em>
+  experimental domain</em>
+ , which is a set of statements we interpret as being verifiable by some set of experimental procedures and thus is closed under countable disjunction and finite conjunction,
+and a
+ <em>
+  theoretical domain</em>
+ , which is the closure of the experimental domain under those operations plus negation. i.e. we can state theoretically things which we cannot verify but can only refute.
+This seems like a sensible and useful distinction, and their reasoning for doing so seems sound.</p>
+
+
+<p>
+ They then define the "possibilities" as the elements of the theoretical domain that are sufficient to determine the truth value of all other statements in the theoretical domain.
+These form the points that we are trying to distinguish by experimental procedure.</p>
+
+
+<p>
+ Probably the key observation of the paper is that these points acquire two natural structures - from the experimental domain they acquire a
+ <em>
+  topological</em>
+ structure,
+while from the theoretical domain they acquire the structure of a \(\sigma\)-algebra. This is a nice observation.</p>
+
+
+<h3>
+ Problems I have with the paper</h3>
+
+
+<p>
+ My biggest problem is the one I already alluded to above - "OK but so what?". I think the formalism is interesting, but without seeing anything built on it it currently just stands as a pleasing intellectual curiousity.
+I don't have a problem with such, but this one doesn't really give me anything to get excited about beyond a sense of "Huh, neat",
+and I feel like the authors are treating this as a much deeper result than it actually justifies at present.
+If they
+ <em>
+  can</em>
+ show some interesting implications from it, then I would revise this opinion.</p>
+
+
+<p>
+ I also found some of the formalism a bit sloppy. There are a bunch of places where I've written "???" or "suspish" on the paper that I would want to work through more carefully if I were to do a close reading.
+Notably I think they're playing quite fast and loose with the countability arguments, and I am rather suspicious of the claim that statements are closed under
+ <em>
+  arbitrary</em>
+ boolean functions - I would have expected some continuity requirement,
+and I think the fact that they don't impose that calls into question some of their other claims about countable generation.</p>
+
+
+<p>
+ I think these formalism issues can probably be fixed, but as I said I don't plan to do a closer reading of the paper at present, so I haven't worked through the details of how.</p>
+
+
+</section>
+<section>
 <h2><a href="/posts/2018-11-01-17:48.html">2018-11-01</a></h2>
 
 
@@ -3302,69 +3443,6 @@ even a fully VNM-rational Bayesian reasoner will necessarily exhibit intransitiv
   this does not mean that they can be Dutch Booked</em>.
 The reason for this is that the proper Bayesian reasoner will update their posteriors about propositions as they are forced to make choices.
 This may in fact mean that the time varying preferences they make are actually transitive, at least in the limit, while their instantaneous preferences are not.</p>
-
-
-</section>
-<section>
-<h2><a href="/posts/2018-09-13-11:02.html">2018-09-13</a></h2>
-
-
-<p class="subtitle">Notes from reading "Rigour and Structure"</p>
-
-
-<dl class="metadata">
-<dt>Published</dt>
-<dd class="post-date">2018-09-13</dd>
-</dl>
-
-
-<blockquote>
-<p>
-  The distinctive definition-theorem-proof format of professional publications is the single most conspicuous feature of mathematical practice.</p>
-<p>
-  The quality whose presence in a purported proof makes it a genuine proof by present-day journal standards, and whose absence makes the proof spurious in a way that if discovered will call for retraction, is called rigor.</p>
-<p>
-  The assessment of purported proofs for rigor is generally not the topic of a separate course.</p>
-<p>
-  Mathematicians’ views on the nature of rigor and proof may more often be expressed in aphorisms and epigrams, in anecdotes and jokes, for instance, of the common ‘an engineer, a physicist, and a mathematician…’ genre, than in formal theoretical pronouncements.</p>
-<p>
-  contrary to the dictum that a proof is what convinces, not everything that convinces is a proof</p>
-<p>
-  such methods, and other aspects of early modern mathematics, also exemplify what I will call reliance on generic reasoning. By this I mean performing calculations or manipulations that usually or generally work but sometimes or exceptionally fail, treating as universally applicable techniques that are — and may be known to be — only applicable in favorable cases, in the hope and belief that the case in which one is interested is one of the favorable ones, but without any rigorous justification for supposing this to be so.</p></blockquote>
-
-
-<p>
- On uniform continuity:</p>
-
-
-<blockquote>
-<p>
-  The distinction is a matter of the order of quantifiers (all-all-exists vs all-exists-all, or in logicians’ notation \(\forall\forall\exists\) and \(\forall\exists\forall\) cannot be made unless the quantifiers have been made explicit and not left implicit in expressions like ‘close as desired’ or ‘close enough’.</p>
-<p>
-  Proofs depending on calculations, in particular, are especially likely to go wrong if the calculations are long and complicated enough.</p>
-<p>
-  Rigorism imposes no restriction on definitions other than rigor, and leaves one perfectly free to explore definitions that may at first seem complicated and unnatural, if there are grounds for hoping they will be useful and fruitful.</p>
-<p>
-  Owing to the freedom to introduce useful new notions regardless of simplicity or naturalness, so long only as they are rigorously defined, nothing need be lost.</p>
-<p>
-  Time and again during the early twentieth century non-rigorous but useful methods introduced by physicists or engineers were found to have rigorous counterparts, the development of which at the very least clarified the scope and limits of the techniques, and more often than not had other side benefits as well.</p>
-<p>
-  Brouwer’s mysticism led him to believe that mathematics is largely an incommunicable mental activity, not to say an ineffable meditative practice, and as a result the rules of intuitionist game were never clearly articulated</p>
-<p>
-  Deduction and Deducibility. Here one must confront the fact that if one looks to logic textbooks, though one will find an agreed characterization of logical consequence, which I have already discussed, one finds no agreed characterization of logical deduction.</p></blockquote>
-
-
-<p>
- The point being that logic has more to say about the process that determines what the true statements are than how to actually determine the true statements. This is analagous to the enumeration vs predicate view of a set.</p>
-
-
-<blockquote>
-<p>
-  [Mathematical logic] resembles mathematical physics and mathematical economics in that its models are highly idealized. In particular, as I have been emphasizing, it gives a quite good model of mathematical deducibility, but a much poorer model of mathematical deduction.</p></blockquote>
-
-
-<p>
- The point being that formal logic is a kind of "spherical cow in a vacuum" version of actual logic performed by real mathematicians.</p>
 
 
 </section>
