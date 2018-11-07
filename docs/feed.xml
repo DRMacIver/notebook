@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-11-05T21:01:00+00:00</updated>
+  <updated>2018-11-07T09:01:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,81 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-11-07-09:01.html</id>
+    <title>Book Review: The Knowledge Illusion</title>
+    <updated>2018-11-07T09:01:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Book Review: The Knowledge Illusion&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-11-07&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ This book is 80% great and 20% red flags, but that doesn't mean it averages out to a book that is merely good,
+instead it is a great book that should be consumed well salted.&lt;/p&gt;
+
+
+&lt;p&gt;
+ What do I mean by this?&lt;/p&gt;
+
+
+&lt;p&gt;
+ Well, I really like the conclusions of the book and it has taught me a number of useful and interesting things,
+but it is fundamentally written in a popular science style. This means that its claims are stated with much higher confidence than I think is warranted,
+especially given the replication crisis,
+and it is often overly credulous about things outside of the authors' area of expertise - apparently blockchain is an amazing technology that is going to change the community of knowledge, and I nearly permanently put the book down when they started waxing lyrical about chaos theory and fractals early on.
+I feel like the authors should take their own advice and write causal explanations of the things they are referencing in their book in order to evaluate their own understanding.&lt;/p&gt;
+
+
+&lt;p&gt;
+ But it's a
+ &lt;em&gt;
+  really&lt;/em&gt;
+ useful framing of how knowledge, cognition, and understanding work, and I think I would recommend it to everyone despite the above reservations.&lt;/p&gt;
+
+
+&lt;p&gt;
+ The following are some of the interesting things in it:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;
+  Intelligence is fundamentally
+  &lt;em&gt;
+   action oriented&lt;/em&gt;
+  - we are trying to achieve things, and our ability to reason about things is largely in support of that goal. As a result we are much better at causal than logical reasoning.&lt;/li&gt;
+&lt;li&gt;
+  Cognition is fundamentally
+  &lt;em&gt;
+   embodied&lt;/em&gt;. e.g. we don't actually catch a baseball by plotting a parabola in our heads, we delegate some of the computation to our body and the world around us, and use an adaptive method that involves moving around in a way that adjusts our position until we catch the ball.&lt;/li&gt;
+&lt;li&gt;
+  In the same way we delegate our understanding to the environment, we delegate our understanding to other people. In some sense this is obvious, because nobody can be an expert in everything, but we greatly underestimate how much of our thinking process is delegated.&lt;/li&gt;
+&lt;li&gt;
+  In particular, we suffer from
+  &lt;em&gt;
+   the knowledge illusion&lt;/em&gt;
+  that is the title of the book - we confuse our ability to delegate understanding to the world or the people around us with the understanding itself. If we know that we have access to someone who understands something, or can otherwise acquire the information through experimentation or reading the internet, we rate our understanding of the subject more highly.&lt;/li&gt;&lt;/ul&gt;
+
+
+&lt;p&gt;
+ The titular knowledge illusion is probably the main thing that I didn't know
+ &lt;em&gt;
+  something&lt;/em&gt;
+ about before reading this book, but I found the rest of it significantly increased my understanding of it.
+I think there is a decent chance that I will do a reread and take copious notes the second time through.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-11-07-09:01.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-11-05-21:01.html</id>
     <title>Pork Meatballs with Ground Almonds</title>
-    <updated>2018-11-05T21:01:00+00:00</updated>
+    <updated>2018-11-05T21:05:52+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Pork Meatballs with Ground Almonds&lt;/p&gt;
