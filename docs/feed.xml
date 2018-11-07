@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-11-07T19:02:12+00:00</updated>
+  <updated>2018-11-07T19:03:12+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -13,7 +13,7 @@
   <entry>
     <id>https://notebook.drmaciver.com/posts/2018-11-07-18:02.html</id>
     <title>Notes on Lagrangian Duality</title>
-    <updated>2018-11-07T19:02:12+00:00</updated>
+    <updated>2018-11-07T19:03:12+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Notes on Lagrangian Duality&lt;/p&gt;
@@ -182,6 +182,249 @@ Convex optimisation is easy, so calculating the dual is hopefully easy once you'
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2018-11-07-18:02.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-11-07-10:40.html</id>
+    <title>Dietary Experimentation</title>
+    <updated>2018-11-07T10:40:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Dietary Experimentation&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-11-07&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ Content Warning: Food, weight.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Attention Conservation Notice: Person on a diet is talking about the diet he is on.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Disclaimer: I am not a doctor please do not take any of this as professional medical advice.&lt;/p&gt;
+
+
+&lt;hr/&gt;
+
+
+&lt;p&gt;
+ I'm fucking around with my diet a lot at the moment.
+This is a post about some of the things I'm doing, how I'm making them doable, and why I think it makes sense.
+It's 50% note to self, 50% explanation of what this weird thing I'm doing is.&lt;/p&gt;
+
+
+&lt;p&gt;
+ This is still very early days, so although initial impressions are positive and I am hopeful about its effects,
+it is very much not advice to follow my specific diet.
+Even
+ &lt;em&gt;
+  I&lt;/em&gt;
+ don't intend to follow this diet indefinitely.&lt;/p&gt;
+
+
+&lt;h3&gt;
+ Background&lt;/h3&gt;
+
+
+&lt;p&gt;
+ As you may or may not know I have a lot of lowgrade ongoing health problems.
+I've been considering the possibility that some of these might be diet related for the while but not really doing anything about that.
+I recently read
+ &lt;a href="https://blog.valerieaurora.org/2018/11/02/finding-food-allergies-and-sensitivities/"&gt;
+  Valerie Aurora's post on the subject&lt;/a&gt;
+ in which she lists the following problems as possibly diet linked:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+   Skin problems (acne, blackheads, red spots, redness, scaly skin, oily skin, rashes, etc.)&lt;/li&gt;
+&lt;li&gt;
+   Fatigue&lt;/li&gt;
+&lt;li&gt;
+   Depression&lt;/li&gt;
+&lt;li&gt;
+   Insomnia&lt;/li&gt;
+&lt;li&gt;
+   Gastrointestinal problems (acid reflux, gas, IBS, diarrhea, constipation, etc.)&lt;/li&gt;
+&lt;li&gt;
+   Joint pain&lt;/li&gt;
+&lt;li&gt;
+   Muscle pain&lt;/li&gt;
+&lt;li&gt;
+   Migraines or headaches&lt;/li&gt;
+&lt;li&gt;
+   Asthma&lt;/li&gt;
+&lt;li&gt;
+   Frequent colds and sinus infections&lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;
+ Remember when I said I have low grade health problems? What I mean is I experience
+ &lt;em&gt;
+  literally all of these&lt;/em&gt;
+ (except maybe asthma. My doctor is trying to convince me I have asthma, but I disbelieve their statistical methodology. I think I have some sort of non-asthma related breathing problem and all of the interventions they claim allegedly reversed some of it were noise they were pretending was signal).&lt;/p&gt;
+
+
+&lt;p&gt;
+ Some of this is obviously
+ &lt;a href="https://en.wikipedia.org/wiki/Barnum_effect"&gt;
+  the Barnum/Forer effect&lt;/a&gt;. These are all things that "everybody" has to some degree, but I'm an outlier on most of them.
+I don't consider this conclusive evidence of anything but it's at least a nudge that this is something I should be looking into.&lt;/p&gt;
+
+
+&lt;p&gt;
+ I identified the following as candidates for suspicion:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;
+  Brassicas - cauliflower, broccoli, cabbage, etc. I
+  &lt;em&gt;
+   know&lt;/em&gt;
+  these sometimes gives me issues, so they should be at the top of my hit list.&lt;/li&gt;
+&lt;li&gt;
+  Alium (onions, garlics, etc) often cause people problems so I added them to the list. Sad face.&lt;/li&gt;
+&lt;li&gt;
+  Nightshades (peppers, tomatoes, aubergine, etc.). My sister has a food intolerance to these so genetics suggests it's something to watch.&lt;/li&gt;
+&lt;li&gt;
+  Dairy - known to be a root cause in a lot of breathing problems, something I've had problems with in the past that I thought went away, but possibly they didn't and I just started ignoring them.&lt;/li&gt;
+&lt;li&gt;
+  Gluten - the classic. It would be silly to not consider that it might be a problem.&lt;/li&gt;
+&lt;li&gt;
+  Maybe dried pulses (I have noticed some digestive problems from these. Probably not anything atypical but if I'm trying to control digestive problems...)&lt;/li&gt;&lt;/ul&gt;
+
+
+&lt;p&gt;
+ On top of this I've already been trying to
+ &lt;a href="https://www.drmaciver.com/2018/07/notes-on-eating-more-vegetables/"&gt;
+  eat more vegetables&lt;/a&gt;
+ , and I've recently decided to make a concerted effort to lose weight (although haven't been doing a
+ &lt;em&gt;
+  great&lt;/em&gt;
+ job) so I've been trying to reduce the amount of carbs I eat on top of that.
+While I experiment with the dietary restrictions these are not the priority, but it would be nice to keep them up if I can.&lt;/p&gt;
+
+
+&lt;h3&gt;
+ Approach&lt;/h3&gt;
+
+
+&lt;p&gt;
+ My approach is to change literally everything about my diet.
+This probably sounds like a terrible idea, but it's OK - I promise I know what I'm doing.
+It's not completely outside the realms of what people advise, and it's something that works well with my particular psychology and health level.&lt;/p&gt;
+
+
+&lt;p&gt;
+ The point of changing everything is not to learn what is causing the problem or to fix things.
+The point of changing everything is to find out if there
+ &lt;em&gt;
+  is&lt;/em&gt;
+ a dietary intervention that will have a non-trivial effect.
+The new diet is not intended for long-term use, but is an existence proof.&lt;/p&gt;
+
+
+&lt;p&gt;
+ I know that the new diet will be safe for me because I don't have anything really badly wrong, just a lot of low grade problems, so I'm free to experiment and basically shunt my entire diet onto a new and very diffierent equilibrium point.
+Once I have reached that point and observed the results, I can triangulate between it and my prior diet - reintroducing things, eliminating things, and see what happens as I make incremental changes.
+I've
+ &lt;a href="https://notebook.drmaciver.com/posts/2018-10-05-10:00.html"&gt;
+  alluded to this approach before&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;p&gt;
+ So, I'm making the following dietary changes:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;
+  Eliminate everything on the list of suspicious foods.&lt;/li&gt;
+&lt;li&gt;
+  Remove almost all of my normal restrictions - e.g. my diet is normally low in meat and contains almost no fish, and I try not to buy snack food.&lt;/li&gt;
+&lt;li&gt;
+  Generally aim for a high-protein, high-fat, high-fiber diet.&lt;/li&gt;
+&lt;li&gt;
+  Eat a lot more fruit.&lt;/li&gt;
+&lt;li&gt;
+  Meals should still be at least 50%&lt;/li&gt;
+&lt;li&gt;
+  As long as I satisfy the above requirements I may eat whatever I want, and I am forbidden from feeling guilty about doing so.&lt;/li&gt;&lt;/ol&gt;
+
+
+&lt;h3&gt;
+ Initial Results&lt;/h3&gt;
+
+
+&lt;p&gt;
+ How's it going so far?
+Well, it's a lot of fun.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Yes, really.&lt;/p&gt;
+
+
+&lt;p&gt;
+ There are roughly three things going on here:&lt;/p&gt;
+
+
+&lt;p&gt;
+ The first is what I'm terming "restriction as reward" for the moment, though that name isn't quite right.
+Because I have such strong restrictions in place I am
+ &lt;em&gt;
+  explicitly&lt;/em&gt;
+ giving myself permission to not feel guilty about what I do once those restrictions are met.
+I made
+ &lt;a href="https://notebook.drmaciver.com/posts/2018-11-05-21:01.html"&gt;
+  meatballs&lt;/a&gt;
+ recently! I bought chocolate! I'm going to experiment with variations on my brownie recipe to finally perfect a gluten-free dairy-free version, at which point I will nom the hell out of them. Although I am putting restrictions in place, the fact that I don't have to think about what I'm eating beyond those restrictions makes the whole thing a mini holiday - here David, have a delicious reward.&lt;/p&gt;
+
+
+&lt;p&gt;
+ (If this causes me to eat too much sugar then I might have to dial it back a bit, but the meat and fish are a pretty big part of the reward aspect and they are an active part of the experiment).&lt;/p&gt;
+
+
+&lt;p&gt;
+ The second is that this gives me an excuse to experiment. I like cooking, and have fallen into a bit of a rut, so this is forcing me to try all sorts of new things that I don't normally do.
+Expect a bunch of recipe posts on the notebook as a result.
+This aspect is also a useful learning experience for how to cook better for people I know with dietary restrictions, which is always nice (I would describe myself as "good but not great" at this normally. A large chunk of what I cook is naturally almost vegan and almost gluten free, so it's not too hard to adapt that, but it tends to result in food that is on the less interesting end of what I'd normally make)..&lt;/p&gt;
+
+
+&lt;p&gt;
+ The third is what you might think of as the "tube strike effect": When there's a tube strike, a lot of commutes permanently change afterwards, because the constraint forced people to try something different and they discovered they liked it better than their existing system (repeat after me: People are not optimizers).
+Trying out these restrictions gives me a kick to find out things that I would like and keep eating even if the restriction is lifted.
+For example, I have learned (or possibly been reminded - I can't imagine ever
+ &lt;em&gt;
+  not&lt;/em&gt;
+ knowing, but I might not have known that I knew) that fresh pineapple is ridiculously cheap and I really like it.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Is it helping? Hard to say so far, but I think so. Subjectively I feel maybe a bit better. The period since starting it has been
+ &lt;em&gt;
+  incredibly&lt;/em&gt;
+ productive, but it's hard to distinguish hypomania from health.&lt;/p&gt;
+
+
+&lt;p&gt;
+ My bowel movements have
+ &lt;em&gt;
+  definitely&lt;/em&gt;
+ become more regular. I have dropped almost a kilo in the two days since starting dothis. I'd be alarmed by that fact except that I'm pretty sure I literally dropped it (and then flushed it), so it's probably just a happy side effect of whatever has made me more regular. All of this should be treated firmly as anecdote and not data.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Will report back later.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-11-07-10:40.html" rel="alternate"/>
   </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2018-11-07-09:01.html</id>
@@ -3892,6 +4135,72 @@ This may in fact mean that the time varying preferences they make are actually t
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2018-09-13-13:07.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-09-13-11:02.html</id>
+    <title>Notes from reading "Rigour and Structure"</title>
+    <updated>2018-09-13T11:02:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Notes from reading "Rigour and Structure"&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-09-13&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;
+  The distinctive definition-theorem-proof format of professional publications is the single most conspicuous feature of mathematical practice.&lt;/p&gt;
+&lt;p&gt;
+  The quality whose presence in a purported proof makes it a genuine proof by present-day journal standards, and whose absence makes the proof spurious in a way that if discovered will call for retraction, is called rigor.&lt;/p&gt;
+&lt;p&gt;
+  The assessment of purported proofs for rigor is generally not the topic of a separate course.&lt;/p&gt;
+&lt;p&gt;
+  Mathematicians’ views on the nature of rigor and proof may more often be expressed in aphorisms and epigrams, in anecdotes and jokes, for instance, of the common ‘an engineer, a physicist, and a mathematician…’ genre, than in formal theoretical pronouncements.&lt;/p&gt;
+&lt;p&gt;
+  contrary to the dictum that a proof is what convinces, not everything that convinces is a proof&lt;/p&gt;
+&lt;p&gt;
+  such methods, and other aspects of early modern mathematics, also exemplify what I will call reliance on generic reasoning. By this I mean performing calculations or manipulations that usually or generally work but sometimes or exceptionally fail, treating as universally applicable techniques that are — and may be known to be — only applicable in favorable cases, in the hope and belief that the case in which one is interested is one of the favorable ones, but without any rigorous justification for supposing this to be so.&lt;/p&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;
+ On uniform continuity:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;
+  The distinction is a matter of the order of quantifiers (all-all-exists vs all-exists-all, or in logicians’ notation \(\forall\forall\exists\) and \(\forall\exists\forall\) cannot be made unless the quantifiers have been made explicit and not left implicit in expressions like ‘close as desired’ or ‘close enough’.&lt;/p&gt;
+&lt;p&gt;
+  Proofs depending on calculations, in particular, are especially likely to go wrong if the calculations are long and complicated enough.&lt;/p&gt;
+&lt;p&gt;
+  Rigorism imposes no restriction on definitions other than rigor, and leaves one perfectly free to explore definitions that may at first seem complicated and unnatural, if there are grounds for hoping they will be useful and fruitful.&lt;/p&gt;
+&lt;p&gt;
+  Owing to the freedom to introduce useful new notions regardless of simplicity or naturalness, so long only as they are rigorously defined, nothing need be lost.&lt;/p&gt;
+&lt;p&gt;
+  Time and again during the early twentieth century non-rigorous but useful methods introduced by physicists or engineers were found to have rigorous counterparts, the development of which at the very least clarified the scope and limits of the techniques, and more often than not had other side benefits as well.&lt;/p&gt;
+&lt;p&gt;
+  Brouwer’s mysticism led him to believe that mathematics is largely an incommunicable mental activity, not to say an ineffable meditative practice, and as a result the rules of intuitionist game were never clearly articulated&lt;/p&gt;
+&lt;p&gt;
+  Deduction and Deducibility. Here one must confront the fact that if one looks to logic textbooks, though one will find an agreed characterization of logical consequence, which I have already discussed, one finds no agreed characterization of logical deduction.&lt;/p&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;
+ The point being that logic has more to say about the process that determines what the true statements are than how to actually determine the true statements. This is analagous to the enumeration vs predicate view of a set.&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;
+  [Mathematical logic] resembles mathematical physics and mathematical economics in that its models are highly idealized. In particular, as I have been emphasizing, it gives a quite good model of mathematical deducibility, but a much poorer model of mathematical deduction.&lt;/p&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;
+ The point being that formal logic is a kind of "spherical cow in a vacuum" version of actual logic performed by real mathematicians.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-09-13-11:02.html" rel="alternate"/>
   </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2018-09-10-13:14.html</id>
