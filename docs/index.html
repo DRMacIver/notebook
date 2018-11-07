@@ -40,6 +40,176 @@ MathJax.Hub.Config({
         
 
 <section>
+<h2><a href="/posts/2018-11-07-18:02.html">2018-11-07</a></h2>
+
+
+<p class="subtitle">Notes on Lagrangian Duality</p>
+
+
+<dl class="metadata">
+<dt>Published</dt>
+<dd class="post-date">2018-11-07</dd>
+</dl>
+
+
+<p>
+ A long standing failure of mine is that I've never really understand Lagrangian duality,
+and it's come up enough times that this is starting to get embarrassing.
+The big problem I've always had is that I could follow the logic but I didn't really get why this was at all a sensible thing to do,
+so it never really stuck in my head.</p>
+
+
+<p>
+ Today was dedicated study time for me, and the subject came up again, so I decided to have another crack at it.
+I
+ <em>
+  think</em>
+ I've finally understood what's going on, and that the problem I was having was that people kept filling their explanations with distracting details.
+I'm sure someone must have explained it to me this way before, for some reason this time I was able to frame it in exactly the right way for me and it clicked.
+As such, this may not resonate for you.</p>
+
+
+<p>
+ The trick for me to was to make the problem more abstract to start with.</p>
+
+
+<p>
+ Suppose we've got some abstract set \(D\) and a function \(g: D \to \mathbb{R} \cup \{\infty\}\).
+Suppose further we've got some \(C \subseteq D\). The
+ <em>
+  constrained minimization</em>
+ problem is that we want to find \(p^* = \inf\limits\_{x \in C} g(x)\).</p>
+
+
+<p>
+ In general this is intractable, but if \(g\) and \(C\) have some special structure we may find it pretty easy. e.g. if \(g\) is a convex function and \(C\) is a convex set,
+you can just differentiate or do gradient descent or whatever.</p>
+
+
+<p>
+ One way to make optimisation problems more tractable is the idea of
+ <em>
+  relaxations</em>
+ ,
+where you replace the problem with one that is "easier" in the sense that any optimal solution to the harder problem can be turned into a solution to the easier problem that is at least as good,
+but not vice versa ("at least as good" is important. For example replacing \(g\) with \(g(x) - 1\) is a valid relaxation, though not a very useful one).</p>
+
+
+<p>
+ The utility of relaxations is two-fold:</p>
+
+
+<ul>
+<li>
+  they give a
+  <em>
+   lower bound</em>
+  on the optimal solution.</li>
+<li>
+  by finding increasingly tight relaxations you may be able to get to the true exact value. e.g. we could add "slop" to the problem that makes it easier by allowing us to get some bits wrong,
+  and then iteratively reduce the amount of slop to zero.</li></ul>
+
+
+<p>
+ The easiest relaxation is just to minimize \(g\) over all of \(D\) instead of \(C\), throwing away the constraints,
+but this doesn't give us a way of tightening up the relaxations easily.
+Other examples of relaxations include e.g. dropping some constraints, allowing an integer valued variable to take arbitrary reals, requiring the constraints to only be satisfied to within \(\epsilon\).</p>
+
+
+<p>
+ There is one particularly useful class of relaxations.
+Let \(\mathcal{F} = \left(\mathbb{R} \cup \{\infty\}\right)^D\) and \(f \in \mathcal{F}\) be such that \(f|_C \leq g_|C\).
+i.e. \(f\) can be arbitrary outside \(C\) but on \(C\) it cannot ever exceed \(g\). Let \(R_{g, C}\) be the set of such \(f\).
+Then necessarily \(\inf\limits\_{x \in D} f(x) \leq \inf\limits\_{x \in C} f(x) \leq \inf\limits\_{x \in C} g(x)\) - i.e. such an \(f\) is a valid relaxation,
+and as such gives us a lower bound on \(p^*\).</p>
+
+
+<p>
+ Our goal is to choose \(f\) so that it is very large outside of \(C\) and very close to \(g\) inside of \(C\).
+If we can ensure that \(|f - g|(x) \leq \epsilon\) inside of \(C\) and that \(f\) attains within \(\epsilon\) of its local minimum in \(C\),
+we can get our approximation to within \(2 \epsilon\),</p>
+
+
+<p>
+ In fact, we can reduce \(\epsilon\) to zero! Pick \(f(x) = g(x)\) when \(x \in C\) and \(f(x) = \infty\) when \(x \in D \setminus C\).
+Then we have \(\inf\limits\_{x \in D} f(x) = \inf\limits\_{x \in C} f(x) = \inf\limits\_{x \in C} g(x)\), and so the bound is exact.</p>
+
+
+<p>
+ Thus we have \(p^* = \max\limits_{f \in R_{g, C}}\inf\limits\_{x \in D} f(x)\) - all such \(f\) give us a lower bound on \(p^*\), and there is at least one such \(f\) that achieves that bound.</p>
+
+
+<p>
+ The problem with this observation is that it is useless on its own - this version isn't any easier to solve than the previous one!</p>
+
+
+<p>
+ The thing that makes it easier is that we can now consider a restricted subset of \(R_{g, C}\) where this problem is easier to solve.
+Unfortunately, this destroys our equality. Suppose we have \(M \subseteq R_{g, C}\), all we can now claim is \(p^* \geq \sup\limits_{f \in M}\inf\limits\_{x \in D} f(x)\),
+as we might have thrown away the values which are sufficiently close to the maximum as to actually attain it.</p>
+
+
+<p>
+ The Lagrangian gives us such a family of nicer functions.
+Suppose we can define \(C\) as the solution set to \(\textbf{h}(x) \leq 0\) for some vector valued \(\textbf{h}\).
+For any \(\textbf{\lambda} \geq 0\) the function \(f_\textbf{\lambda} = g(x) + \textbf{\lambda} \cdot h(x) \in R_{g, C}\),
+as we know that \(h(x) \leq 0\) and \(\textbf{\lambda} \geq 0\), so we know that on \(C\),  \(\textbf{\lambda} \cdot h(x) \leq 0\) and so \(f_\textbf{\lambda} \leq g\).</p>
+
+
+<p>
+ Suppose we can calculate \(t(\textbf{\lambda}) = \inf\limits\_{x \in D} f_{\textbf{\lambda}}(x)\) (literally we suppose that. In general we can't, but if \(f\) and \(h\) have some nice form then this is now a simple unconstrained optimisation problem).
+By our above discussion we know that \(p^* \geq \sup\limits_{\textbf{\lambda}} t(\textbf{\lambda})\).
+This latter quantity is called the
+ <em>
+  dual</em>
+ solution, \(d^*\), and we have proved the primal-dual inequality that \(d^* \leq p^*\).</p>
+
+
+<p>
+ Why is this a remotely useful thing to do?</p>
+
+
+<p>
+ Well the main reason is that calculating the dual solution can be
+ <em>
+  much</em>
+ easier for two reasons:</p>
+
+
+<ol>
+<li>
+  It has much simpler constraints - the only constraint is that \(\textbf{\lambda} \geq 0\), so the domain of our optimisation is a particularly simple convex set.</li>
+<li>
+  It is the maximization of a
+  <em>
+   concave function</em>. We defined it as the infimum of a number of linear functions (of \(\textbf{\lambda}\). They may be highly non-linear in \(x\), but that doesn't matter!), so it is the infimum of a set of concave functions and thus concave.</li></ol>
+
+
+<p>
+ What this means in particular is that what we have is a convex optimisation problem (the function is concave, but we're maximizing it so it's convex optimisation)!
+Convex optimisation is easy, so calculating the dual is hopefully easy once you've got to this point.</p>
+
+
+<p>
+ Note that this is true regardless of literally anything about the original problem - no structure or continuity is assumed (although good luck calculating \(t\) if you don't have
+ <em>
+  some</em>
+ structure and continuity).</p>
+
+
+<p>
+ Things I still do not understand:</p>
+
+
+<ol>
+<li>
+  When the primal-dual gap is zero (i.e. when the inequality is an equality). I'm aware of some of the theorems about this but I need to study them.</li>
+<li>
+  What the actual interpretations of the lagrange multipliers (\(\textbf{\lambda}\)) means. I've seen a bunch of things about "shadow prices" and I had some idea what that meant, but I don't yet understand how that fits in with this interpretation.</li></ol>
+
+
+</section>
+<section>
 <h2><a href="/posts/2018-11-07-09:01.html">2018-11-07</a></h2>
 
 
@@ -3593,69 +3763,6 @@ even a fully VNM-rational Bayesian reasoner will necessarily exhibit intransitiv
   this does not mean that they can be Dutch Booked</em>.
 The reason for this is that the proper Bayesian reasoner will update their posteriors about propositions as they are forced to make choices.
 This may in fact mean that the time varying preferences they make are actually transitive, at least in the limit, while their instantaneous preferences are not.</p>
-
-
-</section>
-<section>
-<h2><a href="/posts/2018-09-13-11:02.html">2018-09-13</a></h2>
-
-
-<p class="subtitle">Notes from reading "Rigour and Structure"</p>
-
-
-<dl class="metadata">
-<dt>Published</dt>
-<dd class="post-date">2018-09-13</dd>
-</dl>
-
-
-<blockquote>
-<p>
-  The distinctive definition-theorem-proof format of professional publications is the single most conspicuous feature of mathematical practice.</p>
-<p>
-  The quality whose presence in a purported proof makes it a genuine proof by present-day journal standards, and whose absence makes the proof spurious in a way that if discovered will call for retraction, is called rigor.</p>
-<p>
-  The assessment of purported proofs for rigor is generally not the topic of a separate course.</p>
-<p>
-  Mathematicians’ views on the nature of rigor and proof may more often be expressed in aphorisms and epigrams, in anecdotes and jokes, for instance, of the common ‘an engineer, a physicist, and a mathematician…’ genre, than in formal theoretical pronouncements.</p>
-<p>
-  contrary to the dictum that a proof is what convinces, not everything that convinces is a proof</p>
-<p>
-  such methods, and other aspects of early modern mathematics, also exemplify what I will call reliance on generic reasoning. By this I mean performing calculations or manipulations that usually or generally work but sometimes or exceptionally fail, treating as universally applicable techniques that are — and may be known to be — only applicable in favorable cases, in the hope and belief that the case in which one is interested is one of the favorable ones, but without any rigorous justification for supposing this to be so.</p></blockquote>
-
-
-<p>
- On uniform continuity:</p>
-
-
-<blockquote>
-<p>
-  The distinction is a matter of the order of quantifiers (all-all-exists vs all-exists-all, or in logicians’ notation \(\forall\forall\exists\) and \(\forall\exists\forall\) cannot be made unless the quantifiers have been made explicit and not left implicit in expressions like ‘close as desired’ or ‘close enough’.</p>
-<p>
-  Proofs depending on calculations, in particular, are especially likely to go wrong if the calculations are long and complicated enough.</p>
-<p>
-  Rigorism imposes no restriction on definitions other than rigor, and leaves one perfectly free to explore definitions that may at first seem complicated and unnatural, if there are grounds for hoping they will be useful and fruitful.</p>
-<p>
-  Owing to the freedom to introduce useful new notions regardless of simplicity or naturalness, so long only as they are rigorously defined, nothing need be lost.</p>
-<p>
-  Time and again during the early twentieth century non-rigorous but useful methods introduced by physicists or engineers were found to have rigorous counterparts, the development of which at the very least clarified the scope and limits of the techniques, and more often than not had other side benefits as well.</p>
-<p>
-  Brouwer’s mysticism led him to believe that mathematics is largely an incommunicable mental activity, not to say an ineffable meditative practice, and as a result the rules of intuitionist game were never clearly articulated</p>
-<p>
-  Deduction and Deducibility. Here one must confront the fact that if one looks to logic textbooks, though one will find an agreed characterization of logical consequence, which I have already discussed, one finds no agreed characterization of logical deduction.</p></blockquote>
-
-
-<p>
- The point being that logic has more to say about the process that determines what the true statements are than how to actually determine the true statements. This is analagous to the enumeration vs predicate view of a set.</p>
-
-
-<blockquote>
-<p>
-  [Mathematical logic] resembles mathematical physics and mathematical economics in that its models are highly idealized. In particular, as I have been emphasizing, it gives a quite good model of mathematical deducibility, but a much poorer model of mathematical deduction.</p></blockquote>
-
-
-<p>
- The point being that formal logic is a kind of "spherical cow in a vacuum" version of actual logic performed by real mathematicians.</p>
 
 
 </section>
