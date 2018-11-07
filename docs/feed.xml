@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-11-07T18:02:00+00:00</updated>
+  <updated>2018-11-07T19:00:11+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -13,7 +13,7 @@
   <entry>
     <id>https://notebook.drmaciver.com/posts/2018-11-07-18:02.html</id>
     <title>Notes on Lagrangian Duality</title>
-    <updated>2018-11-07T18:02:00+00:00</updated>
+    <updated>2018-11-07T19:00:11+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Notes on Lagrangian Duality&lt;/p&gt;
@@ -51,7 +51,7 @@ As such, this may not resonate for you.&lt;/p&gt;
 Suppose further we've got some \(C \subseteq D\). The
  &lt;em&gt;
   constrained minimization&lt;/em&gt;
- problem is that we want to find \(p^* = \inf\limits\_{x \in C} g(x)\).&lt;/p&gt;
+ problem is that we want to find \(p^* = \inf\limits_{x \in C} g(x)\).&lt;/p&gt;
 
 
 &lt;p&gt;
@@ -93,7 +93,7 @@ Other examples of relaxations include e.g. dropping some constraints, allowing a
  There is one particularly useful class of relaxations.
 Let \(\mathcal{F} = \left(\mathbb{R} \cup \{\infty\}\right)^D\) and \(f \in \mathcal{F}\) be such that \(f|_C \leq g_|C\).
 i.e. \(f\) can be arbitrary outside \(C\) but on \(C\) it cannot ever exceed \(g\). Let \(R_{g, C}\) be the set of such \(f\).
-Then necessarily \(\inf\limits\_{x \in D} f(x) \leq \inf\limits\_{x \in C} f(x) \leq \inf\limits\_{x \in C} g(x)\) - i.e. such an \(f\) is a valid relaxation,
+Then necessarily \(\inf\limits_{x \in D} f(x) \leq \inf\limits_{x \in C} f(x) \leq \inf\limits_{x \in C} g(x)\) - i.e. such an \(f\) is a valid relaxation,
 and as such gives us a lower bound on \(p^*\).&lt;/p&gt;
 
 
@@ -105,11 +105,11 @@ we can get our approximation to within \(2 \epsilon\),&lt;/p&gt;
 
 &lt;p&gt;
  In fact, we can reduce \(\epsilon\) to zero! Pick \(f(x) = g(x)\) when \(x \in C\) and \(f(x) = \infty\) when \(x \in D \setminus C\).
-Then we have \(\inf\limits\_{x \in D} f(x) = \inf\limits\_{x \in C} f(x) = \inf\limits\_{x \in C} g(x)\), and so the bound is exact.&lt;/p&gt;
+Then we have \(\inf\limits_{x \in D} f(x) = \inf\limits_{x \in C} f(x) = \inf\limits_{x \in C} g(x)\), and so the bound is exact.&lt;/p&gt;
 
 
 &lt;p&gt;
- Thus we have \(p^* = \max\limits_{f \in R_{g, C}}\inf\limits\_{x \in D} f(x)\) - all such \(f\) give us a lower bound on \(p^*\), and there is at least one such \(f\) that achieves that bound.&lt;/p&gt;
+ Thus we have \(p^* = \max\limits_{f \in R_{g, C}}\inf\limits_{x \in D} f(x)\) - all such \(f\) give us a lower bound on \(p^*\), and there is at least one such \(f\) that achieves that bound.&lt;/p&gt;
 
 
 &lt;p&gt;
@@ -118,7 +118,7 @@ Then we have \(\inf\limits\_{x \in D} f(x) = \inf\limits\_{x \in C} f(x) = \inf\
 
 &lt;p&gt;
  The thing that makes it easier is that we can now consider a restricted subset of \(R_{g, C}\) where this problem is easier to solve.
-Unfortunately, this destroys our equality. Suppose we have \(M \subseteq R_{g, C}\), all we can now claim is \(p^* \geq \sup\limits_{f \in M}\inf\limits\_{x \in D} f(x)\),
+Unfortunately, this destroys our equality. Suppose we have \(M \subseteq R_{g, C}\), all we can now claim is \(p^* \geq \sup\limits_{f \in M}\inf\limits_{x \in D} f(x)\),
 as we might have thrown away the values which are sufficiently close to the maximum as to actually attain it.&lt;/p&gt;
 
 
@@ -130,7 +130,7 @@ as we know that \(h(x) \leq 0\) and \(\textbf{\lambda} \geq 0\), so we know that
 
 
 &lt;p&gt;
- Suppose we can calculate \(t(\textbf{\lambda}) = \inf\limits\_{x \in D} f_{\textbf{\lambda}}(x)\) (literally we suppose that. In general we can't, but if \(f\) and \(h\) have some nice form then this is now a simple unconstrained optimisation problem).
+ Suppose we can calculate \(t(\textbf{\lambda}) = \inf\limits_{x \in D} f_{\textbf{\lambda}}(x)\) (literally we suppose that. In general we can't, but if \(f\) and \(h\) have some nice form then this is now a simple unconstrained optimisation problem).
 By our above discussion we know that \(p^* \geq \sup\limits_{\textbf{\lambda}} t(\textbf{\lambda})\).
 This latter quantity is called the
  &lt;em&gt;
