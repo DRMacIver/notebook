@@ -151,14 +151,14 @@ as we might have thrown away the values which are sufficiently close to the maxi
 
 <p>
  The Lagrangian gives us such a family of nicer functions.
-Suppose we can define \(C\) as the solution set to \(\textbf{h}(x) \leq 0\) for some vector valued \(\textbf{h}\).
-For any \(\textbf{\lambda} \geq 0\) the function \(f_\textbf{\lambda} = g(x) + \textbf{\lambda} \cdot h(x) \in R_{g, C}\),
-as we know that \(h(x) \leq 0\) and \(\textbf{\lambda} \geq 0\), so we know that on \(C\),  \(\textbf{\lambda} \cdot h(x) \leq 0\) and so \(f_\textbf{\lambda} \leq g\).</p>
+Suppose we can define \(C\) as the solution set to \(\boldsymbol{h}(x) \leq 0\) for some vector valued \(\boldsymbol{h}\).
+For any \(\boldsymbol{\lambda} \geq 0\) the function \(f_\boldsymbol{\lambda} = g(x) + \boldsymbol{\lambda} \cdot h(x) \in R_{g, C}\),
+as we know that \(h(x) \leq 0\) and \(\boldsymbol{\lambda} \geq 0\), so we know that on \(C\),  \(\boldsymbol{\lambda} \cdot h(x) \leq 0\) and so \(f_\boldsymbol{\lambda} \leq g\).</p>
 
 
 <p>
- Suppose we can calculate \(t(\textbf{\lambda}) = \inf\limits_{x \in D} f_{\textbf{\lambda}}(x)\) (literally we suppose that. In general we can't, but if \(f\) and \(h\) have some nice form then this is now a simple unconstrained optimisation problem).
-By our above discussion we know that \(p^* \geq \sup\limits_{\textbf{\lambda}} t(\textbf{\lambda})\).
+ Suppose we can calculate \(t(\boldsymbol{\lambda}) = \inf\limits_{x \in D} f_{\boldsymbol{\lambda}}(x)\) (literally we suppose that. In general we can't, but if \(f\) and \(h\) have some nice form then this is now a simple unconstrained optimisation problem).
+By our above discussion we know that \(p^* \geq \sup\limits_{\boldsymbol{\lambda}} t(\boldsymbol{\lambda})\).
 This latter quantity is called the
  <em>
   dual</em>
@@ -178,11 +178,11 @@ This latter quantity is called the
 
 <ol>
 <li>
-  It has much simpler constraints - the only constraint is that \(\textbf{\lambda} \geq 0\), so the domain of our optimisation is a particularly simple convex set.</li>
+  It has much simpler constraints - the only constraint is that \(\boldsymbol{\lambda} \geq 0\), so the domain of our optimisation is a particularly simple convex set.</li>
 <li>
   It is the maximization of a
   <em>
-   concave function</em>. We defined it as the infimum of a number of linear functions (of \(\textbf{\lambda}\). They may be highly non-linear in \(x\), but that doesn't matter!), so it is the infimum of a set of concave functions and thus concave.</li></ol>
+   concave function</em>. We defined it as the infimum of a number of linear functions (of \(\boldsymbol{\lambda}\). They may be highly non-linear in \(x\), but that doesn't matter!), so it is the infimum of a set of concave functions and thus concave.</li></ol>
 
 
 <p>
@@ -205,7 +205,7 @@ Convex optimisation is easy, so calculating the dual is hopefully easy once you'
 <li>
   When the primal-dual gap is zero (i.e. when the inequality is an equality). I'm aware of some of the theorems about this but I need to study them.</li>
 <li>
-  What the actual interpretations of the lagrange multipliers (\(\textbf{\lambda}\)) means. I've seen a bunch of things about "shadow prices" and I had some idea what that meant, but I don't yet understand how that fits in with this interpretation.</li></ol>
+  What the actual interpretations of the lagrange multipliers (\(\boldsymbol{\lambda}\)) means. I've seen a bunch of things about "shadow prices" and I had some idea what that meant, but I don't yet understand how that fits in with this interpretation.</li></ol>
 
 
 </section>

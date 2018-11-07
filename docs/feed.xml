@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-11-07T19:00:11+00:00</updated>
+  <updated>2018-11-07T19:02:12+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -13,7 +13,7 @@
   <entry>
     <id>https://notebook.drmaciver.com/posts/2018-11-07-18:02.html</id>
     <title>Notes on Lagrangian Duality</title>
-    <updated>2018-11-07T19:00:11+00:00</updated>
+    <updated>2018-11-07T19:02:12+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Notes on Lagrangian Duality&lt;/p&gt;
@@ -124,14 +124,14 @@ as we might have thrown away the values which are sufficiently close to the maxi
 
 &lt;p&gt;
  The Lagrangian gives us such a family of nicer functions.
-Suppose we can define \(C\) as the solution set to \(\textbf{h}(x) \leq 0\) for some vector valued \(\textbf{h}\).
-For any \(\textbf{\lambda} \geq 0\) the function \(f_\textbf{\lambda} = g(x) + \textbf{\lambda} \cdot h(x) \in R_{g, C}\),
-as we know that \(h(x) \leq 0\) and \(\textbf{\lambda} \geq 0\), so we know that on \(C\),  \(\textbf{\lambda} \cdot h(x) \leq 0\) and so \(f_\textbf{\lambda} \leq g\).&lt;/p&gt;
+Suppose we can define \(C\) as the solution set to \(\boldsymbol{h}(x) \leq 0\) for some vector valued \(\boldsymbol{h}\).
+For any \(\boldsymbol{\lambda} \geq 0\) the function \(f_\boldsymbol{\lambda} = g(x) + \boldsymbol{\lambda} \cdot h(x) \in R_{g, C}\),
+as we know that \(h(x) \leq 0\) and \(\boldsymbol{\lambda} \geq 0\), so we know that on \(C\),  \(\boldsymbol{\lambda} \cdot h(x) \leq 0\) and so \(f_\boldsymbol{\lambda} \leq g\).&lt;/p&gt;
 
 
 &lt;p&gt;
- Suppose we can calculate \(t(\textbf{\lambda}) = \inf\limits_{x \in D} f_{\textbf{\lambda}}(x)\) (literally we suppose that. In general we can't, but if \(f\) and \(h\) have some nice form then this is now a simple unconstrained optimisation problem).
-By our above discussion we know that \(p^* \geq \sup\limits_{\textbf{\lambda}} t(\textbf{\lambda})\).
+ Suppose we can calculate \(t(\boldsymbol{\lambda}) = \inf\limits_{x \in D} f_{\boldsymbol{\lambda}}(x)\) (literally we suppose that. In general we can't, but if \(f\) and \(h\) have some nice form then this is now a simple unconstrained optimisation problem).
+By our above discussion we know that \(p^* \geq \sup\limits_{\boldsymbol{\lambda}} t(\boldsymbol{\lambda})\).
 This latter quantity is called the
  &lt;em&gt;
   dual&lt;/em&gt;
@@ -151,11 +151,11 @@ This latter quantity is called the
 
 &lt;ol&gt;
 &lt;li&gt;
-  It has much simpler constraints - the only constraint is that \(\textbf{\lambda} \geq 0\), so the domain of our optimisation is a particularly simple convex set.&lt;/li&gt;
+  It has much simpler constraints - the only constraint is that \(\boldsymbol{\lambda} \geq 0\), so the domain of our optimisation is a particularly simple convex set.&lt;/li&gt;
 &lt;li&gt;
   It is the maximization of a
   &lt;em&gt;
-   concave function&lt;/em&gt;. We defined it as the infimum of a number of linear functions (of \(\textbf{\lambda}\). They may be highly non-linear in \(x\), but that doesn't matter!), so it is the infimum of a set of concave functions and thus concave.&lt;/li&gt;&lt;/ol&gt;
+   concave function&lt;/em&gt;. We defined it as the infimum of a number of linear functions (of \(\boldsymbol{\lambda}\). They may be highly non-linear in \(x\), but that doesn't matter!), so it is the infimum of a set of concave functions and thus concave.&lt;/li&gt;&lt;/ol&gt;
 
 
 &lt;p&gt;
@@ -178,7 +178,7 @@ Convex optimisation is easy, so calculating the dual is hopefully easy once you'
 &lt;li&gt;
   When the primal-dual gap is zero (i.e. when the inequality is an equality). I'm aware of some of the theorems about this but I need to study them.&lt;/li&gt;
 &lt;li&gt;
-  What the actual interpretations of the lagrange multipliers (\(\textbf{\lambda}\)) means. I've seen a bunch of things about "shadow prices" and I had some idea what that meant, but I don't yet understand how that fits in with this interpretation.&lt;/li&gt;&lt;/ol&gt;
+  What the actual interpretations of the lagrange multipliers (\(\boldsymbol{\lambda}\)) means. I've seen a bunch of things about "shadow prices" and I had some idea what that meant, but I don't yet understand how that fits in with this interpretation.&lt;/li&gt;&lt;/ol&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2018-11-07-18:02.html" rel="alternate"/>
