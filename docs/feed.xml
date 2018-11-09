@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-11-07T19:03:12+00:00</updated>
+  <updated>2018-11-09T10:48:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,6 +10,100 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-11-09-10:48.html</id>
+    <title>How to write when writing is hard</title>
+    <updated>2018-11-09T10:48:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;How to write when writing is hard&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-11-09&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ (Lightly edited and expanded upon from a message to a friend. Will turn into something longer at some point)&lt;/p&gt;
+
+
+&lt;p&gt;
+ Meta advice on how to do hard things:
+Find things that you can already do that are like the things that you can't do.
+Analyse what the difference is, and then try variations where you change one thing about them to make them more like the thing you can't do.
+Work on those variations until they are no longer hard.&lt;/p&gt;
+
+
+&lt;p&gt;
+ As a specific application to writing,
+the most important thing if you are writing less than you want to be writing is to
+ &lt;em&gt;
+  get comfortable with the basic process of writing&lt;/em&gt;.
+Write literally anything. Tweeting is writing. All writing counts.&lt;/p&gt;
+
+
+&lt;p&gt;
+ If you struggle with the process of writing, try keeping a journal, where you write whatever you want (it doesn't have to be a diary. I am practically allergic to the concept of keeping a diary for some reasons, but a journal where I just write stuff I'm thinking about down is fine).
+The journal is a place for fully unfiltered writing where there is no question of editing it or quality control.&lt;/p&gt;
+
+
+&lt;p&gt;
+ I like journalling. The nice thing about journalling is it's just for me. There is no chance of me ever sharing my journal. I will eat my journal before I let you read it.
+This makes it much easier to shut out the inner perfectionist.&lt;/p&gt;
+
+
+&lt;p&gt;
+ If unstructured journalling doesn't work for you, try coming up with some good prompts.
+I don't do structured journalling, so I don't have any
+ &lt;em&gt;
+  great&lt;/em&gt;
+ suggestions, but maybe start by taking notes on who you saw today and what you talked about.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Back to the meta advice, the following are things that it is common to struggle with in writing:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;
+  Perfectionism&lt;/li&gt;
+&lt;li&gt;
+  "What do I write about?"&lt;/li&gt;
+&lt;li&gt;
+  The actual physical process of writing - typing, hand writing, etc.&lt;/li&gt;
+&lt;li&gt;
+  Editing&lt;/li&gt;
+&lt;li&gt;
+  How to structure it&lt;/li&gt;
+&lt;li&gt;
+  Fear of showing others your work&lt;/li&gt;
+&lt;li&gt;
+  Knowing when to stop&lt;/li&gt;
+&lt;li&gt;
+  Turning a complex tangle of ideas into a straightforward linear structure&lt;/li&gt;&lt;/ul&gt;
+
+
+&lt;p&gt;
+ Not everyone struggles with all of these. Most people struggle with more than one of them.&lt;/p&gt;
+
+
+&lt;p&gt;
+ I cannot say this strongly enough: If you are struggling with more than one of them and it is impacting your ability to write then
+ &lt;em&gt;
+  work on a single one of them at a time&lt;/em&gt;.
+Find a form of writing where that is your only problem and do that until you are comfortable with it.&lt;/p&gt;
+
+
+&lt;p&gt;
+ The problem is that if you are struggling with multiple hard things then a) You are playing on hard mode and b) You are playing on hard mode and
+ &lt;em&gt;
+  learning less than you would be if you were playing on easy mode&lt;/em&gt;. Having multiple sources of difficulty means you are trying to figure out multiple problems at once and they're all getting in the way of each other, which means you are getting worse feedback than you would if you were only working on one problem at once. Work on one problem at a time and you will get better at it much faster than if you try to get better at many things at once.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-11-09-10:48.html" rel="alternate"/>
+  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2018-11-07-18:02.html</id>
     <title>Notes on Lagrangian Duality</title>
@@ -186,7 +280,7 @@ Convex optimisation is easy, so calculating the dual is hopefully easy once you'
   <entry>
     <id>https://notebook.drmaciver.com/posts/2018-11-07-10:40.html</id>
     <title>Dietary Experimentation</title>
-    <updated>2018-11-07T10:40:00+00:00</updated>
+    <updated>2018-11-07T20:13:39+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Dietary Experimentation&lt;/p&gt;
