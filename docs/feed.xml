@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-11-09T10:48:00+00:00</updated>
+  <updated>2018-11-10T09:57:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,303 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-11-10-09:57.html</id>
+    <title>Notes from TickTalk</title>
+    <updated>2018-11-10T09:57:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Notes from TickTalk&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-11-10&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ We ran the first play test of
+ &lt;a href="https://github.com/DRMacIver/systems/blob/master/tempo.md"&gt;
+  TickTalk&lt;/a&gt;
+ recently.
+We ended up undoing a bunch of changes I'd made to it and implementing a couple more.
+It went it extremely well and was some of the most insight dense conversation I have had in recent memory.&lt;/p&gt;
+
+
+&lt;p&gt;
+ I didn't do note taking during the session because I was trying to focus on the system and also participating and I didn't have enough bandwidth.
+Others took notes, but I don't know if they're going to write them up.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Fortunately what I
+ &lt;em&gt;
+  do&lt;/em&gt;
+ have is the topics we discussed, so these are my notes based on those and memory.
+Note: I'm treating these notes as if we were under Chatham house rule,
+so I've not attributed anything to anybody except occasionally me. I don't think there's anything in here that would be at all embarrassing to identify,
+but better to err on the side of caution.
+Also because I'm going from memory I don't remember who every point or question came from.&lt;/p&gt;
+
+
+&lt;p&gt;
+ These were:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;
+  What can we learn about meeting design from tabletop roleplaying games?&lt;/li&gt;
+&lt;li&gt;
+  How do we tackle a conversation where you need to disappoint the expectations of your counterpart? Especially e.g. quitting your job.&lt;/li&gt;
+&lt;li&gt;
+  What can we use to refocus a meeting that has gone off-topic?&lt;/li&gt;
+&lt;li&gt;
+  How do you deal with challenging people/conversations in a group?&lt;/li&gt;
+&lt;li&gt;
+  Remote communication (e.g. via slack) - what are the benefits and draw backs versus face to face communication?&lt;/li&gt;
+&lt;li&gt;
+  How do you introduce checkins (e.g. making sure that the friend you are interacting with is happy and feeling positive about what you're currently doing) without people feeling they have done something wrong?&lt;/li&gt;
+&lt;li&gt;
+  How do you decide what your career should be, or what you should do with your life?&lt;/li&gt;
+&lt;li&gt;
+  How do you notice what decisions you are procrastinating on making?&lt;/li&gt;
+&lt;li&gt;
+  How do you prioritise how you spend your free time? e.g. Learning things, free time with friends. What are the pros and cons?&lt;/li&gt;
+&lt;li&gt;
+  How do you talk to people about their privilege?&lt;/li&gt;&lt;/ul&gt;
+
+
+&lt;p&gt;
+ I don't remember offhand which we discussed for five minutes and which we discussed for ten.&lt;/p&gt;
+
+
+&lt;p&gt;
+ I'm going off memory and editorialising heavily, but the following are ideas I remember us generating.&lt;/p&gt;
+
+
+&lt;h3&gt;
+ What can we learn about meeting design from tabletop roleplaying games?&lt;/h3&gt;
+
+
+&lt;p&gt;
+ This turned out not to be a very good question. I intended it as a sort of troll question but annoyingly it was the first that came up.
+Some things I liked:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;
+  Is there an analogue for
+  &lt;a href="https://en.wikipedia.org/wiki/GNS_theory"&gt;
+   GNS theory&lt;/a&gt;
+  in meetings? Certainly some meetings have different purposes.&lt;/li&gt;
+&lt;li&gt;
+  In RPGs there tends to be a single common goal that everyone is working towards (although it sometimes feels like herding cats to get them to do so).&lt;/li&gt;
+&lt;li&gt;
+  Everyone has to take turns.&lt;/li&gt;&lt;/ul&gt;
+
+
+&lt;p&gt;
+ I'm not sure we learned everything very deep from this question though.&lt;/p&gt;
+
+
+&lt;h3&gt;
+ How do we tackle a conversation where you need to disappoint the expectations of your counterpart? Especially e.g. quitting your job.&lt;/h3&gt;
+
+
+&lt;p&gt;
+ There were two perspectives on this: shit sandwich (something nice, something bad, something nice) vs launch right into it.&lt;/p&gt;
+
+
+&lt;p&gt;
+ We also talked about how much you want to forewarn someone. The use of "Can we have a meeting" gives someone time to prepare, but "I'd like to hand in my notice" is the equivalent of breaking up with someone over text.&lt;/p&gt;
+
+
+&lt;p&gt;
+ We suggested that it helps to make clear that this isn't a decision you've come to lightly, and that you don't think that this is their fault (even if you do think that it is their fault).
+Unpack some of the reasons in your meeting, but don't overwhelm them with information - they need time to process.
+Offer to send them a written statement elaborating. It may be helpful to write that statement in advance to put your thoughts in order anyway.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Remember that, ultimately, people quitting is a thing that happens, and dealing with that is part of their job as a manager.
+Handling it well is a good thing for you to do, but if they handle it badly then ultimately that's your problem.&lt;/p&gt;
+
+
+&lt;h3&gt;
+ What can we use to refocus a meeting that has gone off-topic?&lt;/h3&gt;
+
+
+&lt;p&gt;
+ This went a bit all over the place and I don't remember it very well.
+Suggestions I remember:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;
+  Agreeing on what the focus of the meeting actually
+  &lt;em&gt;
+   is&lt;/em&gt;
+  up front.&lt;/li&gt;
+&lt;li&gt;
+  Getting people to contribute to a written agenda before the meeting.&lt;/li&gt;
+&lt;li&gt;
+  Having some sort of timer that goes off every five minutes that acts as a prompt as to whether you're still no topic.&lt;/li&gt;&lt;/ul&gt;
+
+
+&lt;h3&gt;
+ How do you deal with challenging people/conversations in a group?&lt;/h3&gt;
+
+
+&lt;p&gt;
+ Depends on the context. It's better to take them aside afterwards and explain the problem than it is to try and confront them in the meeting, especially if they are someone with power, as they will tend to double down.
+Try to get them to buy in to the actual point of the meeting.&lt;/p&gt;
+
+
+&lt;p&gt;
+ In a meetup group, if this doesn't work you can just kick them out.&lt;/p&gt;
+
+
+&lt;h3&gt;
+ Remote communication (e.g. via slack) - what are the benefits and draw backs versus face to face communication?&lt;/h3&gt;
+
+
+&lt;p&gt;
+ Remote communication is good for low importance low interrupt stuff ("Can anyone help me with X?" "Hey, Y, when you have a minute I need Z but it's not urgent") so is good for not disrupting people,
+but it goes sour fast for things that require nuance or depth. Face to face communication is ridiculously high bandwidth in comparison (we didn't talk about voice calls - probably a good substitute when remote?).&lt;/p&gt;
+
+
+&lt;p&gt;
+ The approach we suggested was start conversations remove but quickly move them face to face as soon as they got in depth.
+We talked a bit about one couple who found they always got into major fights over whatsapp but never in person so dialled down their usage of it.&lt;/p&gt;
+
+
+&lt;p&gt;
+ One question I have now writing this up is where things like IRC and Twitter fall in. I've had some amazing conversations on both that would never have worked in meatspace.&lt;/p&gt;
+
+
+&lt;h3&gt;
+ How do you introduce checkins (e.g. making sure that the friend you are interacting with is happy and feeling positive about what you're currently doing) without people feeling they have done something wrong?&lt;/h3&gt;
+
+
+&lt;p&gt;
+ A bunch of good suggestions here. I don't remember enough of them. I hope someone who took notes on this writes this one up.&lt;/p&gt;
+
+
+&lt;p&gt;
+ From what I recall:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;
+  Explain check ins as a concept before you first need to do them.&lt;/li&gt;
+&lt;li&gt;
+  Try to start with positive check ins. "I'm really enjoying what we're doing and I think you are to, but I'd just like to confirm that"&lt;/li&gt;
+&lt;li&gt;
+  Explain things like "I have previously experienced this problem due to lack of communication and like to err on the side of overcommunication as a result. This is part of that..."&lt;/li&gt;
+&lt;li&gt;
+  Own the fact that what you're doing is weird. "So I know this is weird, but I like to do check ins..."&lt;/li&gt;
+&lt;li&gt;
+  Get them to hang out with more people in LGBT, poly, and sex positives community and pick up the habits naturally.&lt;/li&gt;&lt;/ul&gt;
+
+
+&lt;h3&gt;
+ How do you decide what your career should be, or what you should do with your life?&lt;/h3&gt;
+
+
+&lt;p&gt;
+ Don't.
+Long-term planning is for suckers and vocations are mostly a lie.
+Instead work on watching for opportunities, experimenting, doing interesting things, and building a foundation for later.&lt;/p&gt;
+
+
+&lt;p&gt;
+ We talked about a variety of ways of knowing when that's working for you - setting personal goals, journalling, deciding what you're actually getting out of it.
+Make milestones in the future to check in on your progress, setting yourself
+ &lt;a href="https://en.wikipedia.org/wiki/OKR"&gt;
+  OKRs&lt;/a&gt;. Look into the future and telling yourself a story about how it goes if you keep doing what you doing, then seeing how you feel about it.
+Journalling and use the journal for emotional processing.&lt;/p&gt;
+
+
+&lt;p&gt;
+ There were some good suggestions here. I hope someone else writes up their notes, because I'm sure I'm forgetting some.&lt;/p&gt;
+
+
+&lt;h3&gt;
+ How do you notice what decisions you are procrastinating on making?&lt;/h3&gt;
+
+
+&lt;p&gt;
+ I think the answers we had here have merged in my head into the answers we had to the previous question.&lt;/p&gt;
+
+
+&lt;h3&gt;
+ How do you prioritise how you spend your free time? e.g. Learning things, free time with friends. What are the pros and cons?&lt;/h3&gt;
+
+
+&lt;p&gt;
+ This mostly became a question about calendaring and todo lists. I only remember two specifics:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;
+  I proposed using a "GP appointment booking" system to prevent your calendar filling up too far in advance - have a certain number of evenings, weekends, etc. reserved for "emergency booking" that can only be scheduled closer to the time. Someone reported that they already implicitly do something by booking free days in their calendar explicitly and occasionally overriding them closer to the time.&lt;/li&gt;
+&lt;li&gt;
+  We should spend some of our free time doing more of these because it was great.&lt;/li&gt;&lt;/ol&gt;
+
+
+&lt;p&gt;
+ We also talked about the problem of cycles of overbooking and burnout leading to underbooking.&lt;/p&gt;
+
+
+&lt;h3&gt;
+ How do you talk to people about their privilege?&lt;/h3&gt;
+
+
+&lt;p&gt;
+ I thought this was a good discussion but frustratingly I don't remember the specific suggestions very well.
+I remember us suggesting:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;
+  avoiding the word privilege&lt;/li&gt;
+&lt;li&gt;
+  trying to frame it more as "here is a perspective you may not have considered" than "this is what's wrong with you"&lt;/li&gt;
+&lt;li&gt;
+  getting useful books into their reading queue&lt;/li&gt;&lt;/ul&gt;
+
+
+&lt;p&gt;
+ I swear we had some other specific concrete things.&lt;/p&gt;
+
+
+&lt;h3&gt;
+ General Conclusions&lt;/h3&gt;
+
+
+&lt;p&gt;
+ I wish I had been taking more detailed notes, but this was otherwise very good. I think the main things I will take from it are:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;
+  I really
+  &lt;em&gt;
+   should&lt;/em&gt;
+  be doing some sort of OKR setting for myself.&lt;/li&gt;
+&lt;li&gt;
+  I should try to treat weeks in the future as fully booked when they are only
+  &lt;em&gt;
+   mostly&lt;/em&gt;
+  full, and then can fill evenings closer to the time if I must.&lt;/li&gt;&lt;/ul&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-11-10-09:57.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-11-09-10:48.html</id>
     <title>How to write when writing is hard</title>
-    <updated>2018-11-09T10:48:00+00:00</updated>
+    <updated>2018-11-09T11:03:44+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;How to write when writing is hard&lt;/p&gt;
