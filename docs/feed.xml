@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-11-12T07:26:05+00:00</updated>
+  <updated>2018-11-12T08:38:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,44 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-11-12-08:38.html</id>
+    <title>Not the Box</title>
+    <updated>2018-11-12T08:38:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Not the Box&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-11-12&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ This is an analogy that's been bouncing around in my head waiting for something to glom onto for a few weeks.&lt;/p&gt;
+
+
+&lt;p&gt;
+ I don't think they still do this, but for the longest time my parents had an amusing verbal quirk,
+which is that they would refer to the main tower of the desktop computer as "the CPU" (the CPU being actually just a single component of the computer).
+They conflated the thing that does the core part of the function of the computer with the entire system - ignoring the fact that a CPU without a motherboard, RAM, a hard drive, etc. wouldn't really do very much of interest.&lt;/p&gt;
+
+
+&lt;p&gt;
+ People do this with brains too. Dualism isn't real, but you are not a brain, you are a body, and your mind doesn't live in the brain, the brain is just the CPU. The mind is the whole box.&lt;/p&gt;
+
+
+&lt;p&gt;
+ (Yes I know brains have memory and long-term storage as well as processing. It's not a perfect analogy, and brains don't work like computers anyway)&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-11-12-08:38.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-11-12-06:24.html</id>
     <title>Book Review: Trans Like Me</title>
-    <updated>2018-11-12T07:26:05+00:00</updated>
+    <updated>2018-11-12T07:29:33+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Book Review: Trans Like Me&lt;/p&gt;
