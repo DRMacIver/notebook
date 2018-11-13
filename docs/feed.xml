@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-11-12T08:38:00+00:00</updated>
+  <updated>2018-11-13T07:18:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,93 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-11-13-07:18.html</id>
+    <title>Book Review: 100 Ways to Improve Your Writing, by Gary Provost</title>
+    <updated>2018-11-13T07:18:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Book Review: 100 Ways to Improve Your Writing, by Gary Provost&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-11-13&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ I mostly bought this book because of how much I love the following passage:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;
+  This sentence has five words. Here are five more words. Five-word sentences are fine. But several together become monotonous. Listen to what is happening. The writing is getting boring. The sound of it drones. It’s like a stuck record. The ear demands some variety. Now listen. I vary the sentence length, and I create music. Music. The writing sings. It has a pleasant rhythm, a lilt, a harmony. I use short sentences. And I use sentences of medium length. And sometimes, when I am certain the reader is rested, I will engage him with a sentence of considerable length, a sentence that burns with energy and builds with all the impetus of a crescendo, the roll of the drums, the crash of the cymbals–sounds that say listen to this, it is important.&lt;/p&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;
+ As you can see in this passage, Provost is very keen on writing in a style that works well when spoken.
+Fortunately, this is the objectively correct position, so that's a point in his favour.
+In fact, this book made me realise that
+ &lt;em&gt;
+  actually&lt;/em&gt;
+ reading out loud is very different from reading in your head,
+so I'm going to try to do that more often when writing.&lt;/p&gt;
+
+
+&lt;p&gt;
+ This is one of the best passages in the book, but the rest of the book is also very good,
+and contains a large number of useful tips.
+It's also very short.&lt;/p&gt;
+
+
+&lt;p&gt;
+ In general the book is very prescriptivist, but it's a
+ &lt;em&gt;
+  good&lt;/em&gt;
+ kind of prescriptivism - one that makes it clear that prescriptive suggestions are tools, not laws.
+He's quick to point out the limitations of the techniques he suggests, and that no rule is universal.&lt;/p&gt;
+
+
+&lt;p&gt;
+ I also liked the following passage from the conclusion:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;
+  Writing is art, not science, and when I finish a piece of writing, I do not review every single one of my tips. I ask, have I communicated well? Have I pleased my readers, have I given them something that is a joy to read? Have I entertained them, informed them, persuaded them, and made my thoughts clear to them? Have I given them what they wanted?&lt;/p&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;
+ I like this because it not only points out the limitations of the rest of the book,
+but also stands alone as an excellent piece of advice in its own right.&lt;/p&gt;
+
+
+&lt;p&gt;
+ I don't agree with everything Provost suggests, but nobody's perfect.
+For example he hates footnotes (and parentheses), which I love, and the material on research feels a bit dated.
+Fortunately, because it's a tool box rather than a set of commandments, you are feel free to pick and choose whichever of its tools work for you,
+and ignore the ones which don't.&lt;/p&gt;
+
+
+&lt;p&gt;
+ If you're looking to improve your writing, I recommend this book as a useful and accessible way to do so.&lt;/p&gt;
+
+
+&lt;p&gt;
+ On which note, I will leave you with the following quote from the introduction to the book:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;
+  If your writing does not improve after you have read this book, you have not failed. I have. It is the writer's job, not the reader's, to see that the writing accomplishes whatever goal the writer has set for it.&lt;/p&gt;&lt;/blockquote&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-11-13-07:18.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-11-12-08:38.html</id>
     <title>Not the Box</title>
-    <updated>2018-11-12T08:38:00+00:00</updated>
+    <updated>2018-11-12T08:42:26+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Not the Box&lt;/p&gt;
