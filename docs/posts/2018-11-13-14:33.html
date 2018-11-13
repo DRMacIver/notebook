@@ -51,7 +51,7 @@ Let \(\epsilon &gt; 0\).
 Can you decide whether the relationship \(x \tilde y \equiv d(x, y) \leq \epsilon\) is an equivalence relationship in better than \(O(n^3)\) time?</p>
 <p>
  You certainly can't do it in less than \(O(n^2)\) time.
-Consider \(d(x_i, x_j) = 1_{(i, j) = (u, v)\) and \(\epsilon = \frac{1}{2}\).
+Consider \(d(x_i, x_j) = 1_{(i, j) = (u, v)}\) and \(\epsilon = \frac{1}{2}\).
 Any algorithm that has not checked all pairs \(u, v\) will fail to distinguish one of these from the pseudometric that is always \(0\).</p>
 <p>
  I'm reasonably confident the answer is that there is no better than \(O(n^3)\) solution but I haven't checked.

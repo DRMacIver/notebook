@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-11-13T14:43:05+00:00</updated>
+  <updated>2018-11-13T15:01:35+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -13,7 +13,7 @@
   <entry>
     <id>https://notebook.drmaciver.com/posts/2018-11-13-14:33.html</id>
     <title>Testing if nearness is an equivalence.</title>
-    <updated>2018-11-13T14:43:05+00:00</updated>
+    <updated>2018-11-13T15:01:35+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Testing if nearness is an equivalence.&lt;/p&gt;
@@ -33,7 +33,7 @@ Can you decide whether the relationship \(x \tilde y \equiv d(x, y) \leq \epsilo
 
 &lt;p&gt;
  You certainly can't do it in less than \(O(n^2)\) time.
-Consider \(d(x_i, x_j) = 1_{(i, j) = (u, v)\) and \(\epsilon = \frac{1}{2}\).
+Consider \(d(x_i, x_j) = 1_{(i, j) = (u, v)}\) and \(\epsilon = \frac{1}{2}\).
 Any algorithm that has not checked all pairs \(u, v\) will fail to distinguish one of these from the pseudometric that is always \(0\).&lt;/p&gt;
 
 
