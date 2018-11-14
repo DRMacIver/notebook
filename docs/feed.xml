@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-11-13T15:02:51+00:00</updated>
+  <updated>2018-11-14T09:53:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,162 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-11-14-09:53.html</id>
+    <title>Notes on Queer Life as Combat Epistemology</title>
+    <updated>2018-11-14T09:53:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Notes on Queer Life as Combat Epistemology&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-11-14&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;
+ There are a bunch of concepts that my brain is still processing and I need to work on a bit more before I can turn them into a real essay,
+but here are some interim notes on them that may be useful. They're not fully formed and may be poorly explained.&lt;/p&gt;
+
+
+&lt;p&gt;
+ The two concepts I want to talk about are the experience being
+ &lt;em&gt;
+  illegible&lt;/em&gt;
+ ,
+and marginalisation (with a particular focus on LGBT issues and neurodivergence, because that's what I know about) as a form of
+ &lt;em&gt;
+  combat epistemology&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;
+ That sounds very esoteric but I promise you they're both extremely useful concepts.&lt;/p&gt;
+
+
+&lt;p&gt;
+ The notion of legibility comes from James Scott, who is an anthropologist with a focus on anarchism.
+I know nothing about James Scott's sexuality or neurotypicality, but his analysis of the similarities between Soviet farm collectivization and 19th German scientific forestry turns out to be a very useful tool for understanding LGBT issues.&lt;/p&gt;
+
+
+&lt;p&gt;
+ I'm not fucking with you, honest.&lt;/p&gt;
+
+
+&lt;p&gt;
+ The
+ &lt;em&gt;
+  legibility&lt;/em&gt;
+ of something is how easily comprehensible it is in simple terms. Shared land ownership with complex covenants and rights is legible to the few people involved in the process, but illegible to a central government who doesn't really care about the land usage except to the degree that it can tax it. To make it
+ &lt;em&gt;
+  legible&lt;/em&gt;
+ , the government insists on a simple land ownership model where one person owns and has sole rights over that land, and they tax that person accordingly. This, being backed by government power, in turn changes the relationship that the locals have with the land, possibly in very negative ways.&lt;/p&gt;
+
+
+&lt;p&gt;
+ There's a classic (i.e. mid 20th century) saying that "the map is not the territory", meaning that the terms and models we use to describe reality are not the same as the underlying reality they describe.
+This is true, but Scott's observation is that the map is the tool that those with power will use to reshape the territory,
+and they will do so by prioritising their need for comprehension over the needs of the people they have power over.&lt;/p&gt;
+
+
+&lt;p&gt;
+ If you want to know more about the role of legibility in Scott's original analysis of it, I gave
+ &lt;a href="https://www.youtube.com/watch?v=F8mi1LxtOAc"&gt;
+  a keynote&lt;/a&gt;
+ about this to a bunch of Python programmers back in 2017.There's also
+ &lt;a href="https://www.drmaciver.com/2017/11/shaping-the-world/"&gt;
+  a written version&lt;/a&gt;
+ , but they don't actually say the same thing because I got up on stage, saw 800 impressionable minds staring back at me, and panicked and all the words went out of my head.&lt;/p&gt;
+
+
+&lt;p&gt;
+ What does this have to do with LGBT issues and neurodivergence?&lt;/p&gt;
+
+
+&lt;p&gt;
+ Well, it comes back to some of the things I described in my review of
+ &lt;a href="https://notebook.drmaciver.com/posts/2018-11-12-06:24.html"&gt;
+  Trans Like Me&lt;/a&gt;.
+One of the major experiences of being LGBT, neurodivergent, or (presumably) otherwise marginalised,
+is that the tools of interpretation that you need to understand the world are those of society.
+It is powerful to have a concept of nonbinary, or asexuality, or aphantasia, or dyspraxia, or any one of dozens other hermeneutical resources (tools of interpretation) available to you.
+Doing so will significantly improve your life if these are the concepts you need to understand your experiences.&lt;/p&gt;
+
+
+&lt;p&gt;
+ After which, you will find that the fact that you have that concept does not mean that the society around you does,
+and they may be actively hostile to acquiring it.&lt;/p&gt;
+
+
+&lt;p&gt;
+ What does this mean? It means that you are now
+ &lt;em&gt;
+  illegible to them&lt;/em&gt;. You do not fit the simplified model of the world that they have in their head,
+and they will constantly be trying to fit you into that model anyway.
+Every time you find that the bathrooms only say male or female, or you encounter advice that works great if you're neurotypical and terribly for your brain,
+or you otherwise fail to fit into the right box, you are experiencing your own illegibility to society.
+Every time someone passes a bathroom bill, or refuses to make a venue accessible, or bans plastic straws, you are experiencing society's attempt to legibilise your role in it,
+possibly by excluding you altogether.&lt;/p&gt;
+
+
+&lt;p&gt;
+ This is a shared experience of marginalisation: We do not make sense to the broader society, but in all our interactions with it they will try to make sense of us.
+They do this not by trying to understand our experience, but by trying to fit us into their own.
+This will fail in ways that harm us, because we are illegible to them.&lt;/p&gt;
+
+
+&lt;p&gt;
+ It is also a shared experience of the non-marginalised to a lesser degree: Nobody conforms to society's expectations perfectly, and even those who are close are often in constant anxiety about it.
+A large driver of that anxiety is driven by the fear of being weird, which is mostly about having your behaviour be illegible to others.&lt;/p&gt;
+
+
+&lt;p&gt;
+ Now lets talk about combat epistemology.&lt;/p&gt;
+
+
+&lt;p&gt;
+ As far as I know this is a term I've made up for what I'm about to describe. I've seen occasional usage of it, but mostly in reference to Charles Stross using it in one of his books.
+I think his use is compatible with but a subset of mine.&lt;/p&gt;
+
+
+&lt;p&gt;
+ What do I mean by combat epistemology?
+Combat epistemology is the set of techniques that lets you fight epistemic injustice (injustice done to you in your capacity as someone who is attempting to understand the world).
+Combat epistemology is the construction of knowledge and understanding while embedded in an adversarial environment.
+You need to understand the world, but the world does not want you to understand it.
+They deny you information, they feed you lies.
+In this environment, how will you come to understand what you need to?&lt;/p&gt;
+
+
+&lt;p&gt;
+ How do you do combat epistemology?
+That is an excellent question that I would very much like a good answer to,
+but I would like to suggest that LGBT+ and other marginalised communities contain a great many experts in practical combat epistemology,
+and identifying them and finding out exactly what it is they do would be a great way to work on this.
+For example, Meg-John Barker's "Rewriting the Rules" (which I'm currently about halfway through. Review to follow when I've finished) can be regarded as an excellent handbook in practical combat epistemology.&lt;/p&gt;
+
+
+&lt;p&gt;
+ So, more research is required. In the mean time I would like to tentatively offer the following possible tactics for fighting an epistemic war:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;
+  Build communities of knowledge around differences and marginalisations and actively discuss the ways in which your understanding of the world is under attack. Attempt to construct a better understanding of the world between you. (Hopefully you are already doing this).&lt;/li&gt;
+&lt;li&gt;
+  Err strongly on the side of over-communication, at least among people you trust. It is much easier to notice that this is happening if you share your experiences with others.&lt;/li&gt;
+&lt;li&gt;
+  Actively create tools for understanding the world. Have you noticed something important? Talk about it with other people. Build a language for describing it.&lt;/li&gt;
+&lt;li&gt;
+  By differing from mainstream society, you become a domain expert on a particular shared aspect of human experience. There are problems you experience more acutely than the norm, and which you have access to more perspectives on, but that doesn't mean that people who lack your shared experience are not experiencing those problems and suffering as a result. This means that you are in a very powerful learning environment for figuring out how to tackle a widely experienced problem. For example, asexual people often understand sexual attraction much better than sexual people. ADHD people know a great deal about attention management. Poly people know a great deal about communication in relationships. These are things everyone struggles to understand, but that some communities do dramatically better than others. Share those tools, both because they will help people and because with their success you will bring the broader society's understanding of the world some way towards your own.&lt;/li&gt;&lt;/ol&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-11-14-09:53.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-11-13-14:33.html</id>
     <title>Testing if nearness is an equivalence.</title>
-    <updated>2018-11-13T15:02:51+00:00</updated>
+    <updated>2018-11-13T15:05:52+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Testing if nearness is an equivalence.&lt;/p&gt;
@@ -4870,6 +5023,72 @@ This may in fact mean that the time varying preferences they make are actually t
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2018-09-13-13:07.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-09-13-11:02.html</id>
+    <title>Notes from reading "Rigour and Structure"</title>
+    <updated>2018-09-13T11:02:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Notes from reading "Rigour and Structure"&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-09-13&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;
+  The distinctive definition-theorem-proof format of professional publications is the single most conspicuous feature of mathematical practice.&lt;/p&gt;
+&lt;p&gt;
+  The quality whose presence in a purported proof makes it a genuine proof by present-day journal standards, and whose absence makes the proof spurious in a way that if discovered will call for retraction, is called rigor.&lt;/p&gt;
+&lt;p&gt;
+  The assessment of purported proofs for rigor is generally not the topic of a separate course.&lt;/p&gt;
+&lt;p&gt;
+  Mathematicians’ views on the nature of rigor and proof may more often be expressed in aphorisms and epigrams, in anecdotes and jokes, for instance, of the common ‘an engineer, a physicist, and a mathematician…’ genre, than in formal theoretical pronouncements.&lt;/p&gt;
+&lt;p&gt;
+  contrary to the dictum that a proof is what convinces, not everything that convinces is a proof&lt;/p&gt;
+&lt;p&gt;
+  such methods, and other aspects of early modern mathematics, also exemplify what I will call reliance on generic reasoning. By this I mean performing calculations or manipulations that usually or generally work but sometimes or exceptionally fail, treating as universally applicable techniques that are — and may be known to be — only applicable in favorable cases, in the hope and belief that the case in which one is interested is one of the favorable ones, but without any rigorous justification for supposing this to be so.&lt;/p&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;
+ On uniform continuity:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;
+  The distinction is a matter of the order of quantifiers (all-all-exists vs all-exists-all, or in logicians’ notation \(\forall\forall\exists\) and \(\forall\exists\forall\) cannot be made unless the quantifiers have been made explicit and not left implicit in expressions like ‘close as desired’ or ‘close enough’.&lt;/p&gt;
+&lt;p&gt;
+  Proofs depending on calculations, in particular, are especially likely to go wrong if the calculations are long and complicated enough.&lt;/p&gt;
+&lt;p&gt;
+  Rigorism imposes no restriction on definitions other than rigor, and leaves one perfectly free to explore definitions that may at first seem complicated and unnatural, if there are grounds for hoping they will be useful and fruitful.&lt;/p&gt;
+&lt;p&gt;
+  Owing to the freedom to introduce useful new notions regardless of simplicity or naturalness, so long only as they are rigorously defined, nothing need be lost.&lt;/p&gt;
+&lt;p&gt;
+  Time and again during the early twentieth century non-rigorous but useful methods introduced by physicists or engineers were found to have rigorous counterparts, the development of which at the very least clarified the scope and limits of the techniques, and more often than not had other side benefits as well.&lt;/p&gt;
+&lt;p&gt;
+  Brouwer’s mysticism led him to believe that mathematics is largely an incommunicable mental activity, not to say an ineffable meditative practice, and as a result the rules of intuitionist game were never clearly articulated&lt;/p&gt;
+&lt;p&gt;
+  Deduction and Deducibility. Here one must confront the fact that if one looks to logic textbooks, though one will find an agreed characterization of logical consequence, which I have already discussed, one finds no agreed characterization of logical deduction.&lt;/p&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;
+ The point being that logic has more to say about the process that determines what the true statements are than how to actually determine the true statements. This is analagous to the enumeration vs predicate view of a set.&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;
+  [Mathematical logic] resembles mathematical physics and mathematical economics in that its models are highly idealized. In particular, as I have been emphasizing, it gives a quite good model of mathematical deducibility, but a much poorer model of mathematical deduction.&lt;/p&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;
+ The point being that formal logic is a kind of "spherical cow in a vacuum" version of actual logic performed by real mathematicians.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-09-13-11:02.html" rel="alternate"/>
   </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2018-09-10-13:14.html</id>
