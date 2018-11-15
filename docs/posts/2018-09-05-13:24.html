@@ -45,95 +45,56 @@ MathJax.Hub.Config({
 <dt>Published</dt>
 <dd class="post-date">2018-09-05</dd>
 </dl>
-<p>
- I've been thinking about mechanism design for conference scheduling again.
-I've
- <a href="https://www.youtube.com/watch?v=OkusHEBOhmQ">
-  previously argued that conference scheduling should be treated as an optimisation problem</a>
- ,
+
+<p>I've been thinking about mechanism design for conference scheduling again.
+I've <a href="https://www.youtube.com/watch?v=OkusHEBOhmQ">previously argued that conference scheduling should be treated as an optimisation problem</a>,
 but I no longer believe that's true.</p>
-<p>
- In particular I think the following hold:</p>
+<p>In particular I think the following hold:</p>
 <ul>
- <li>
-  If we treat talk selection as a voting problem, we must employ some mechanism of proportional representation</li>
- <li>
-  In a multi-track conference, scheduling and selection cannot be separated.</li></ul>
-<p>
- Lets see some examples in support of this.</p>
-<p>
- Suppose you're running a Python conference, and 60% of the people attending are web developers and 40% are data scientists.
+<li>If we treat talk selection as a voting problem, we must employ some mechanism of proportional representation</li>
+<li>In a multi-track conference, scheduling and selection cannot be separated.</li>
+</ul>
+<p>Lets see some examples in support of this.</p>
+<p>Suppose you're running a Python conference, and 60% of the people attending are web developers and 40% are data scientists.
 You put together a set of talk proposals, people vote on them, and you take all of the top voted talks.
 What you end up with is of course a conference consisting entirely of web development talks.</p>
-<p>
- (Note: Despite the running Python example, this post is not actually about
- <a href="https://2018.hq.pyconuk.org/schedule/">
-  The PyCon UK Schedule</a>
- , which I've barely looked at.)</p>
-<p>
- For some contexts maybe that's OK, but given that a lot of the value in conferences is the hallway track, it's nice to be able to put together heterogenous conferences.
+<p>(Note: Despite the running Python example, this post is not actually about <a href="https://2018.hq.pyconuk.org/schedule/">The PyCon UK Schedule</a>, which I've barely looked at.)</p>
+<p>For some contexts maybe that's OK, but given that a lot of the value in conferences is the hallway track, it's nice to be able to put together heterogenous conferences.
 You could fix this by artificially selecting for certain subjects, but proportional representation seems like a much better approach because it doesn't require you to know all the ways in which your audience is heterogenous in advance.
 So, in the above example, we would have roughly 60% web dev talks and 40% data science talks,
 but also if it turned out that about 10% of the audience were really excited about Flask,
 we could have about 10% Flask talks.</p>
-<p>
- If the conference is single-track we're more or less done: Pick your favourite (non party-list based, so probably some variant of STV), proportional voting system,
+<p>If the conference is single-track we're more or less done: Pick your favourite (non party-list based, so probably some variant of STV), proportional voting system,
 use that to select your talks, and call it a day.</p>
-<p>
- I'd like to pause here by saying that I'm increasingly a fan of single track conferences, so I think "do a single track conference and call it a day" might actually be the correct solution.</p>
-<p>
- But lets suppose you're less on board with that and want a multi-track conference.</p>
-<p>
- For simplicity, lets imagine that our Python conference now has two rooms,
+<p>I'd like to pause here by saying that I'm increasingly a fan of single track conferences, so I think "do a single track conference and call it a day" might actually be the correct solution.</p>
+<p>But lets suppose you're less on board with that and want a multi-track conference.</p>
+<p>For simplicity, lets imagine that our Python conference now has two rooms,
 with talks running in the same time slots in each room,
 and attendees now have to choose which of the two to attend.
 Lets say it's a single day conference and there are five time slots,
 so ten talks.</p>
-<p>
- According to our above PR argument, we should run six web dev talks,
+<p>According to our above PR argument, we should run six web dev talks,
 but does it really make sense for us to do so?
 There are only five time slots,
-so (by
- <a href="https://en.wikipedia.org/wiki/Pigeonhole_principle">
-  the pigeonhole principle</a>
- if you want to get fancy about it) you're inevitably going to put two web dev talks back to back.
+so (by <a href="https://en.wikipedia.org/wiki/Pigeonhole_principle">the pigeonhole principle</a> if you want to get fancy about it) you're inevitably going to put two web dev talks back to back.
 That might be OK - maybe you're scheduling a Django and a Flask talk against each other - but maybe there's a strict preference where there are five obviously best web dev talks and the sixth is pretty good (preferable by web devs to any data science talk) but not good enough (will not get any attendees when scheduled against any of the top five talks). What's the point in selecting that talk given that?</p>
-<p>
- In the other direction, lets say we have 20% of the audience who are really interested in random forests,
+<p>In the other direction, lets say we have 20% of the audience who are really interested in random forests,
 and so we select two random forests talks,
 which we then proceed to schedule in the same time slot.
 Now despite 20% representation at the talk level,
 they only have 10% representation at the time slot level!</p>
-<p>
- (I want to draw an analogy to
- <a href="https://en.wikipedia.org/wiki/Gerrymandering">
-  gerrymandering</a>
- here but I don't think it quite works)</p>
-<p>
- So, tracking creates an upper bound on how much proportional representation is worth doing, and also scheduling within those tracks affects the amount of proportionality you actually get.</p>
-<p>
- So what to do about it?</p>
-<p>
- Well, I'm not entirely sure. I started designing a whole complex system in support of this that this note was originally supposed to be about, but I decided I didn't like it very much.</p>
-<p>
- The basic ideas were:</p>
+<p>(I want to draw an analogy to <a href="https://en.wikipedia.org/wiki/Gerrymandering">gerrymandering</a> here but I don't think it quite works)</p>
+<p>So, tracking creates an upper bound on how much proportional representation is worth doing, and also scheduling within those tracks affects the amount of proportionality you actually get.</p>
+<p>So what to do about it?</p>
+<p>Well, I'm not entirely sure. I started designing a whole complex system in support of this that this note was originally supposed to be about, but I decided I didn't like it very much.</p>
+<p>The basic ideas were:</p>
 <ol>
- <li>
-  Give each participant a "voting currency" - everyone starts with an equal amount, and talk slots effectively get auctioned off, with the proceeds distributed among everyone equally (possibly among everyone who still has any interest in attending remaining talks).</li>
- <li>
-  Participants will only vote for talks in slots that are strictly better for them than the talks already scheduled in that slot.</li>
- <li>
-  Define a threshold of "Minimum number of people required to be worth running a talk". Whenever a talk no longer would meet that requirement (because every slot it could be scheduled in has talks people prefer more), it is immediately excluded and the process restarts from the beginning. This is akin to how exclusions work in
-  <a href="https://en.wikipedia.org/wiki/Wright_system">
-   The Wright System of STV</a>
-  , and is designed to avoid "spoiler" talks, where people who preferred them effectively get screened off from voting in the process until the talk is excluded.</li></ol>
-<p>
- The details kinda became a weird hybrid of STV and the
- <a href="https://en.wikipedia.org/wiki/Vickrey%E2%80%93Clarke%E2%80%93Groves_mechanism">
-  Vickrey-Clarke-Groves mechanism</a>
- and the more I looked at it the less convinced I became that it was the right way to do things or that I actually understood how the VCG mechanism plays out in practice.</p>
-<p>
- I do think the above examples are important to consider though.</p>
+<li>Give each participant a "voting currency" - everyone starts with an equal amount, and talk slots effectively get auctioned off, with the proceeds distributed among everyone equally (possibly among everyone who still has any interest in attending remaining talks).</li>
+<li>Participants will only vote for talks in slots that are strictly better for them than the talks already scheduled in that slot.</li>
+<li>Define a threshold of "Minimum number of people required to be worth running a talk". Whenever a talk no longer would meet that requirement (because every slot it could be scheduled in has talks people prefer more), it is immediately excluded and the process restarts from the beginning. This is akin to how exclusions work in <a href="https://en.wikipedia.org/wiki/Wright_system">The Wright System of STV</a>, and is designed to avoid "spoiler" talks, where people who preferred them effectively get screened off from voting in the process until the talk is excluded.</li>
+</ol>
+<p>The details kinda became a weird hybrid of STV and the <a href="https://en.wikipedia.org/wiki/Vickrey%E2%80%93Clarke%E2%80%93Groves_mechanism">Vickrey-Clarke-Groves mechanism</a> and the more I looked at it the less convinced I became that it was the right way to do things or that I actually understood how the VCG mechanism plays out in practice.</p>
+<p>I do think the above examples are important to consider though.</p>
 </section>
 
     </article>

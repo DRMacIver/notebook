@@ -45,22 +45,18 @@ MathJax.Hub.Config({
 <dt>Published</dt>
 <dd class="post-date">2018-11-13</dd>
 </dl>
-<p>
- Suppose you have points \(X = \{x_1, \ldots, x_n\}\) and an arbitrary pseudometric \(d: X^2 \to \mathbb{R}^+\).
+
+<p>Suppose you have points \(X = \{x_1, \ldots, x_n\}\) and an arbitrary pseudometric \(d: X^2 \to \mathbb{R}^+\).
 Let \(\epsilon &gt; 0\).
 Can you decide whether the relationship \(x \tilde y \equiv d(x, y) \leq \epsilon\) is an equivalence relationship in better than \(O(n^3)\) time?</p>
-<p>
- You certainly can't do it in less than \(O(n^2)\) time.
+<p>You certainly can't do it in less than \(O(n^2)\) time.
 Consider \(d(x_i, x_j) = 1_{(i, j) = (u, v)}\) and \(\epsilon = \frac{1}{2}\).
 Any algorithm that has not checked all pairs \(u, v\) will fail to distinguish one of these from the pseudometric that is always \(0\).</p>
-<p>
- I'm reasonably confident the answer is that there is no better than \(O(n^3)\) solution but I haven't checked.
+<p>I'm reasonably confident the answer is that there is no better than \(O(n^3)\) solution but I haven't checked.
 I'm just writing this problem down because I popped into my head and I wanted to get it out of there.</p>
-<p>
- Update: No I'm being stupid. There's a general \(O(n^2 \log(n))\) algorithm to check if any reflexive and symmetric relationship is an equivalence relationship.
+<p>Update: No I'm being stupid. There's a general \(O(n^2 \log(n))\) algorithm to check if any reflexive and symmetric relationship is an equivalence relationship.
 It works as follows:</p>
-<div class="codehilite">
- <pre><span></span><span class="kn">import</span> <span class="nn">itertools</span>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">itertools</span>
 
 <span class="k">def</span> <span class="nf">is_equivalence</span><span class="p">(</span><span class="n">points</span><span class="p">,</span> <span class="n">r</span><span class="p">):</span>
   <span class="n">vec_to_fingerprint</span> <span class="o">=</span> <span class="p">{}</span>
@@ -76,17 +72,13 @@ It works as follows:</p>
   <span class="k">return</span> <span class="nb">all</span><span class="p">(</span>
     <span class="ow">not</span> <span class="n">r</span><span class="p">(</span><span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">fingerprints</span><span class="p">[</span><span class="n">u</span><span class="p">]</span> <span class="o">==</span> <span class="n">fingerprints</span><span class="p">[</span><span class="n">v</span><span class="p">])</span>
     <span class="k">for</span> <span class="n">u</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">itertools</span><span class="o">.</span><span class="n">combinations</span><span class="p">(</span><span class="n">points</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-  <span class="p">)</span></pre></div>
-<p>
- We "fingerprint" each point by the set of points it is equivalent to, turning it into integers we can compare in \(O(\log(n))\) time.
+  <span class="p">)</span>
+</pre></div>
+<p>We "fingerprint" each point by the set of points it is equivalent to, turning it into integers we can compare in \(O(\log(n))\) time.
 We now test whether every equivalent pair has the same fingerprint.
 If yes, then the equivalence relationship is just whether the two points have the same fingerprint.
 If no, that witnesses an intransitivity.</p>
-<p>
- I don't know if you can get rid of the \(\log(n)\) factor, but now I
- <em>
-  really</em>
- don't care.</p>
+<p>I don't know if you can get rid of the \(\log(n)\) factor, but now I <em>really</em> don't care.</p>
 </section>
 
     </article>

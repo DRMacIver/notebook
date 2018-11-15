@@ -43,57 +43,39 @@ MathJax.Hub.Config({
 <dt>Published</dt>
 <dd class="post-date">2018-09-13</dd>
 </dl>
-<p>
- This is a fairly involved example which I don't expect to convince anyone,
+<p>This is a fairly involved example which I don't expect to convince anyone,
 and is just the result of me thinking through some things.</p>
-<p>
- Suppose we have a bunch of propositions \(A_1, \ldots, A_n\).
+<p>Suppose we have a bunch of propositions \(A_1, \ldots, A_n\).
 We know a priori that \(A_i \implies A_j\) is false for \(i &gt; j\),
 but do not know whether there are any forwards implications.
 We have an "implication oracle" which acts as follows:</p>
 <ol>
- <li>
-  It has access to a number of "primitive implications" of the form \(A_i \implies A_j\).
+<li>It has access to a number of "primitive implications" of the form \(A_i \implies A_j\).
    These implications are considered to be unreliable: They are true with probability \(1 - \epsilon\),
    but with probability \(\epsilon\) they provide no information (i.e. the proposition may be true, we just don't know that).
    These errors are independent.</li>
- <li>
-  We may query the proof oracle with any pair \(A_i, A_j\) and it tells us the probability of there being a valid proof of \(A_i \implies A_j\) given only a true set of primitive implications.</li></ol>
-<p>
- We also have a "plausibility oracle" that gives us our prior probabilities of \(p_i = A_i\) being true.</p>
-<p>
- Suppose we want to define an agent that chooses between these propositions, with a reward if the proposition chosen is true.</p>
-<p>
- We can define a Bayesian agent that picks whichever of \(k \in \{i, j\}\) has the highest posterior probability\((1 - \epsilon) P(A_k | A_i \implies A_j) + \epsilon p_i\).</p>
-<p>
- The problem with this agent is that it is not transitive!</p>
-<p>
- Consider the following example: Let \(\epsilon = 0.11\),
+<li>We may query the proof oracle with any pair \(A_i, A_j\) and it tells us the probability of there being a valid proof of \(A_i \implies A_j\) given only a true set of primitive implications.</li>
+</ol>
+<p>We also have a "plausibility oracle" that gives us our prior probabilities of \(p_i = A_i\) being true.</p>
+<p>Suppose we want to define an agent that chooses between these propositions, with a reward if the proposition chosen is true.</p>
+<p>We can define a Bayesian agent that picks whichever of \(k \in \{i, j\}\) has the highest posterior probability\((1 - \epsilon) P(A_k | A_i \implies A_j) + \epsilon p_i\).</p>
+<p>The problem with this agent is that it is not transitive!</p>
+<p>Consider the following example: Let \(\epsilon = 0.11\),
 and suppose we have the primitive implications \(A_1 \implies A_2\), \(A_2 \implies A_3\) and the prior probabilities \(p_1 = 0.2\), \(p_2 = p_3 = 0.01\).</p>
-<p>
- Some boring computation that I can't be bothered to carry over to text results in the above agent preferring \(A_2\) to \(A_1\), \(A_3\) to \(A_2\) and \(A_1\) to \(A_3\).
+<p>Some boring computation that I can't be bothered to carry over to text results in the above agent preferring \(A_2\) to \(A_1\), \(A_3\) to \(A_2\) and \(A_1\) to \(A_3\).
 The reason is that the strength of the implication \(A_1 \implies A_3\) is weaker than that of either the individual implications, as it is \(1 - (1 - \epsilon)^2 \approx 0.21\).
 Thus even though we still "believe" this implication, the weaker strength of it makes our prior probabilities overwhelm it.</p>
-<p>
- Now, this paradox goes away if we have access to the inner workings of the implication oracle:
+<p>Now, this paradox goes away if we have access to the inner workings of the implication oracle:
 If we know all of the primitive implications a priori then we can just calculate the "true" posterior probabilities across all possible combinations of whether the implications are valid or not,
 and pick the answer with the highest posterior,
 but this effectively requires us to know the entire space of propositions in advance.</p>
-<p>
- I think that
- <em>
-  no</em>
- strategy which has to decide based only on the answer of those two oracles on the current pair can dominate this strategy,
+<p>I think that <em>no</em> strategy which has to decide based only on the answer of those two oracles on the current pair can dominate this strategy,
 because this is the dominant strategy for the case where there are only two propositions and the oracles are exactly correct about the probabilities,
 but I haven't checked the details of this argument.</p>
-<p>
- So what this means in practice is that if some elements of your reasoning are "screened off" from you as black boxes,
+<p>So what this means in practice is that if some elements of your reasoning are "screened off" from you as black boxes,
 and you do not have full knowledge in advance of the set of available options,
 even a fully VNM-rational Bayesian reasoner will necessarily exhibit intransitive preferences.</p>
-<p>
- However! Note that
- <em>
-  this does not mean that they can be Dutch Booked</em>.
+<p>However! Note that <em>this does not mean that they can be Dutch Booked</em>.
 The reason for this is that the proper Bayesian reasoner will update their posteriors about propositions as they are forced to make choices.
 This may in fact mean that the time varying preferences they make are actually transitive, at least in the limit, while their instantaneous preferences are not.</p>
 </section>

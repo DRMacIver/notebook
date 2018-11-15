@@ -43,42 +43,25 @@ MathJax.Hub.Config({
 <dt>Published</dt>
 <dd class="post-date">2018-08-30</dd>
 </dl>
-<p>
- I'm going to start trying to port over some contents from
- <a href="https://github.com/DRMacIver/research-notebook">
-  my research notebook</a>
- into here,
+<p>I'm going to start trying to port over some contents from <a href="https://github.com/DRMacIver/research-notebook">my research notebook</a> into here,
 as this is intended long-term to be a replacement for it.
 This will require some figuring out in terms of how to present maths.</p>
-<p>
- As a starting point,
+<p>As a starting point,
 here's a theorem:</p>
-<p>
- \(H(m) = \sum\limits_{q = 1}^m {(-1)}^{q - 1} {m \choose q} \frac{1}{q}\)</p>
-<p>
- Where \(H(m)\) is the m'th harmonic number \(H(m) = \sum\limits_{i}^m \frac{1}{i}\).</p>
-<p>
- This came up in "Birthday Paradox, Coupon Collectors, Caching Algorithms and Self-Organizing Search" by Flajolet et al. (which is excellent) where it was stated as "well known". It wasn't well known to
- <em>
-  me</em>
- ,
+<p>\(H(m) = \sum\limits_{q = 1}^m {(-1)}^{q - 1} {m \choose q} \frac{1}{q}\)</p>
+<p>Where \(H(m)\) is the m'th harmonic number \(H(m) = \sum\limits_{i}^m \frac{1}{i}\).</p>
+<p>This came up in "Birthday Paradox, Coupon Collectors, Caching Algorithms and Self-Organizing Search" by Flajolet et al. (which is excellent) where it was stated as "well known". It wasn't well known to <em>me</em>,
 so I set out to prove it.</p>
-<p>
- The following is my proof:</p>
-<p>
- The main idea is to use a standard tricks of turning sums and integrals into other sums and integrals that happen to be easier to solve.
+<p>The following is my proof:</p>
+<p>The main idea is to use a standard tricks of turning sums and integrals into other sums and integrals that happen to be easier to solve.
 We use the following standard results:</p>
 <ul>
- <li>
-  \(\frac{1}{n} = \int\limits_0^1 x^{n - 1}dx\)</li>
- <li>
-  \((1 + x)^m = \sum\limits_{q=1}^m {m \choose q} x^q\)</li>
- <li>
-  \((1 - x)^{-1} = \sum\limits_{q = 0}^\infty x^q\) for \(|x| &lt; 1\).</li></ul>
-<p>
- We then perform the following manipulations (don't worry if some of these are clear as mud. They kinda should be):</p>
-<p>
- \begin{align}
+<li>\(\frac{1}{n} = \int\limits_0^1 x^{n - 1}dx\)</li>
+<li>\((1 + x)^m = \sum\limits_{q=1}^m {m \choose q} x^q\)</li>
+<li>\((1 - x)^{-1} = \sum\limits_{q = 0}^\infty x^q\) for \(|x| &lt; 1\).</li>
+</ul>
+<p>We then perform the following manipulations (don't worry if some of these are clear as mud. They kinda should be):</p>
+<p>\begin{align}
 \sum\limits_{q = 1}^m {(-1)}^{q - 1} {m \choose q} \frac{1}{q} &amp;= \sum\limits_{q = 1}^m {(-1)}^{q - 1} {m \choose q} \int\limits_0^1 x^{q - 1} dx\\
 &amp;= \int\limits_0^1 \sum\limits_{q = 1}^m {(-1)}^{q - 1} {m \choose q} x^{q - 1} dx\\
 &amp;= \int\limits_0^1 -x^{-1} \sum\limits_{q = 1}^m {m \choose q} {(-x)}^q dx\\
@@ -91,42 +74,27 @@ We use the following standard results:</p>
 &amp;= \lim\limits_{k \to \infty}  H(m) - \sum\limits_{n = k}^{m + k} \frac{1}{n + m}\\
 &amp;= H(m)\\
 \end{align}</p>
-<p>
- Notable magic tricks performed:</p>
+<p>Notable magic tricks performed:</p>
 <ul>
- <li>
-  \(\int\limits_0^1 -x^{-1} \left( {(1 - x)}^m - 1 \right)dx  \to \int\limits_0^1 {(1 - x)}^{-1} (x^m - 1) dx \) is a change of variables \(x \to 1 - x\).</li>
- <li>
-  \(\sum\limits_{n = 0}^\infty \frac{1}{n + m} - \frac{1}{n} \to \lim\limits_{k \to \infty}  H(m) - \sum\limits_{n = k}^{m + k} \frac{1}{n + m}\) is because you can use a change of variables \(k \to k - m\),
+<li>\(\int\limits_0^1 -x^{-1} \left( {(1 - x)}^m - 1 \right)dx  \to \int\limits_0^1 {(1 - x)}^{-1} (x^m - 1) dx \) is a change of variables \(x \to 1 - x\).</li>
+<li>\(\sum\limits_{n = 0}^\infty \frac{1}{n + m} - \frac{1}{n} \to \lim\limits_{k \to \infty}  H(m) - \sum\limits_{n = k}^{m + k} \frac{1}{n + m}\) is because you can use a change of variables \(k \to k - m\),
 and then group the terms that cancel out.</li>
- <li>
-  The final limit is because \(|\sum\limits_{n = k}^{m + k} \frac{1}{n + m}| \leq \frac{m}{k}\).</li></ul>
-<p>
- This is a style of calculation I think of as the Feynmann style because
- <del>
-  it's very good at seeming more clever than it actually is</del>
- he was fond of smugly boasting about using this sort of trick in preference to contour integration.
+<li>The final limit is because \(|\sum\limits_{n = k}^{m + k} \frac{1}{n + m}| \leq \frac{m}{k}\).</li>
+</ul>
+<p>This is a style of calculation I think of as the Feynmann style because <del>it's very good at seeming more clever than it actually is</del> he was fond of smugly boasting about using this sort of trick in preference to contour integration.
 Given its prevalence prior to Feynmann, my only defence of the terminology is that it's not really intended as a compliment.</p>
-<p>
- I find the Feynmann style completely unenlightening to read - the only way to read a Feynmann style proof is to do it yourself, using the original as a guide when you get stuck.</p>
-<p>
- I think that's in some ways its point. It's not a proof technique designed to leverage enlightenment,
+<p>I find the Feynmann style completely unenlightening to read - the only way to read a Feynmann style proof is to do it yourself, using the original as a guide when you get stuck.</p>
+<p>I think that's in some ways its point. It's not a proof technique designed to leverage enlightenment,
 but instead it leans heavily on your puzzle solving skills. That can be useful sometimes when you just want to brute force your way through a problem and don't really care about understanding it on any sort of deeper level.</p>
-<p>
- I was exposed to the Feynmann style quite early on,
+<p>I was exposed to the Feynmann style quite early on,
 due to reading Schaum's Outlines of Advanced Calculus (an earlier edition. I'm not sure how early. Brown covered one. I sadly gave away my copy, and the 1974 edition one I ordered doesn't seem to be quite it) prior to going to university.
 It has quite a lot of exercises using calculations like this,
 and afterwards I realised that this is what Feynmann had been talking about in "Surely you're joking, Mr Feynmann" (I didn't understand what a contour integral was until a few years later).</p>
-<p>
- Somehow despite this the Feynmann style of brute force problem solving never really integrated into my mathematics,
+<p>Somehow despite this the Feynmann style of brute force problem solving never really integrated into my mathematics,
 and it's only some years later I've come to appreciate its merits.
-I
- <em>
-  still</em>
- prefer to achieve insight and make the problem trivial,
+I <em>still</em> prefer to achieve insight and make the problem trivial,
 but sometimes the problem isn't worth the insight and you're better off just putting in the hard work and solving it.</p>
-<p>
- Putting in the hard work is also useful because sometimes it leads you to the insight you missed and you can throw away most of the work.
+<p>Putting in the hard work is also useful because sometimes it leads you to the insight you missed and you can throw away most of the work.
 This didn't happen here,
 but I think that's OK - it's not that interesting a problem,
 so I don't really feel upset by the lack of insight into it.</p>

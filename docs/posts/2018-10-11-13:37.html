@@ -45,52 +45,33 @@ MathJax.Hub.Config({
 <dt>Published</dt>
 <dd class="post-date">2018-10-11</dd>
 </dl>
-<p>
- There's a new parallel test-case reducer called
- <a href="https://github.com/googleprojectzero/halfempty">
-  half-empty</a>.</p>
-<p>
- It uses what is a new to me approach to parallelisation but is apparently also what C-Reduce does, which they call pessimistic parallelism.
+
+<p>There's a new parallel test-case reducer called <a href="https://github.com/googleprojectzero/halfempty">half-empty</a>.</p>
+<p>It uses what is a new to me approach to parallelisation but is apparently also what C-Reduce does, which they call pessimistic parallelism.
 The basic idea is that you parallelise based on the assumption that what you're going to try isn't actually going to work, you fork a background process to check if it does actually work,
 and the main calculation just proceeds as if it was false. If your assumption that it rarely works mostly holds true, this lets you turn what seem like highly sequential processes into highly parallel ones.</p>
-<p>
- It occurred to me that you could fairly easily automate this in a way that lets you write a test-case reducer exactly as if it were sequential but have it magically automatically parallelised in the background.</p>
-<p>
- The way it would work is this: You have some test case reducer state object which has a cached version of the predicate. You wrap a reduction pass in some special function (say a decorator in Python).
+<p>It occurred to me that you could fairly easily automate this in a way that lets you write a test-case reducer exactly as if it were sequential but have it magically automatically parallelised in the background.</p>
+<p>The way it would work is this: You have some test case reducer state object which has a cached version of the predicate. You wrap a reduction pass in some special function (say a decorator in Python).
 Now when you call the predicate from within the reduction pass what happens is as follows:</p>
 <ol>
- <li>
-  If the result has already been cached, use that.</li>
- <li>
-  If the result
-  <em>
-   hasn't</em>
-  been cached, return false and queue the result for background computation, which will update the cache when it is finished.</li>
- <li>
-  If at any point a backgrounded job returns true instead of false, clear the queue, wait for the current computations to finish, and then restart the reduction pass from the beginning.</li></ol>
-<p>
- This makes a couple of assumptions:</p>
+<li>If the result has already been cached, use that.</li>
+<li>If the result <em>hasn't</em> been cached, return false and queue the result for background computation, which will update the cache when it is finished.</li>
+<li>If at any point a backgrounded job returns true instead of false, clear the queue, wait for the current computations to finish, and then restart the reduction pass from the beginning.</li>
+</ol>
+<p>This makes a couple of assumptions:</p>
 <ol>
- <li>
-  Running the full reduction pass is cheaper than running the predicate.</li>
- <li>
-  The predicate will rarely return true.</li></ol>
-<p>
- Ways it might be useful to patch this:</p>
+<li>Running the full reduction pass is cheaper than running the predicate.</li>
+<li>The predicate will rarely return true.</li>
+</ol>
+<p>Ways it might be useful to patch this:</p>
 <ol>
- <li>
-  Keep the queue size bounded. When the test function calls the predicate and the queue is at capacity, have it block until the queue is emptier.</li>
- <li>
-  If the pessimistic assumption does not hold, e.g. say if at least 5 of the last 10 predicate calls were true, run the predicate in the foreground instead of backgrounding it.</li></ol>
-<p>
- If you want a
- <em>
-  really</em>
- cheeky approach (I don't think this will work), here's a neat trick you could try: Use some sort of classifier (language inference, machine learning, whatever) to predict the result of the predicate and use that,
+<li>Keep the queue size bounded. When the test function calls the predicate and the queue is at capacity, have it block until the queue is emptier.</li>
+<li>If the pessimistic assumption does not hold, e.g. say if at least 5 of the last 10 predicate calls were true, run the predicate in the foreground instead of backgrounding it.</li>
+</ol>
+<p>If you want a <em>really</em> cheeky approach (I don't think this will work), here's a neat trick you could try: Use some sort of classifier (language inference, machine learning, whatever) to predict the result of the predicate and use that,
 invalidating when the parallel computation gets it wrong..
 You could even just be very lazy and just predict whichever outcome is the most common.</p>
-<p>
- Actually speaking of language learning, this approach would also work well for L* with a bit more tracking of dependencies, which would give you a fully parallel language learner.</p>
+<p>Actually speaking of language learning, this approach would also work well for L* with a bit more tracking of dependencies, which would give you a fully parallel language learner. </p>
 </section>
 
     </article>

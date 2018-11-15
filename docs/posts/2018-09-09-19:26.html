@@ -43,49 +43,28 @@ MathJax.Hub.Config({
 <dt>Published</dt>
 <dd class="post-date">2018-09-09</dd>
 </dl>
-<p>
- I previously wrote
- <a href="https://www.drmaciver.com/2014/10/order-dependence-in-preference-elicitation/">
-  a post about NP-hardness in decision theory</a>.
+<p>I previously wrote <a href="https://www.drmaciver.com/2014/10/order-dependence-in-preference-elicitation/">a post about NP-hardness in decision theory</a>.
 On rereading it, I think its tone really doesn't help its point at all, so I thought I'd quickly write up a more formal version.</p>
-<p>
- The basic point is this: If you don't assume computation is free, NP-hard problems prove an interesting barrier to decision making that satisfies the classical "rationality" axioms.</p>
-<p>
- Suppose you have an NP-hard problem (say a SAT instance), \(S\), and are offered a choice between the following three options:</p>
+<p>The basic point is this: If you don't assume computation is free, NP-hard problems prove an interesting barrier to decision making that satisfies the classical "rationality" axioms.</p>
+<p>Suppose you have an NP-hard problem (say a SAT instance), \(S\), and are offered a choice between the following three options:</p>
 <ol>
- <li>
-  A certain reward \(R_1\).</li>
- <li>
-  A reward \(R_2 &gt; R_1\) if a particular solution \(x\) witnesses that \(S\) is satisfiable.</li>
- <li>
-  A reward \(R_3 &gt; R_2\) if \(S\) is satisfiable.</li></ol>
-<p>
- Arrange the values such that \(\alpha_2 \ll R_2 - R_1 &lt; R_3 - R_1 &lt; \alpha_3\),
+<li>A certain reward \(R_1\).</li>
+<li>A reward \(R_2 &gt; R_1\) if a particular solution \(x\) witnesses that \(S\) is satisfiable.</li>
+<li>A reward \(R_3 &gt; R_2\) if \(S\) is satisfiable.</li>
+</ol>
+<p>Arrange the values such that \(\alpha_2 \ll R_2 - R_1 &lt; R_3 - R_1 &lt; \alpha_3\),
 where \(\alpha_i\) is the cost of solving the computational problem that would allow you to determine the pay off of these choices.
 i.e. the difference in reward is big enough that it is worth evaluating one solution, but small enough that it's not worth solving the problem.</p>
-<p>
- You should always strictly prefer \(3\) to \(2\),
+<p>You should always strictly prefer \(3\) to \(2\),
 because under every circumstance where \(2\) pays anything, \(3\) pays a larger amount.</p>
-<p>
- Additionally, you should prefer \(2\) to \(1\) if and only if \(x\)
- <em>
-  is</em>
- a witness - because it's cheap enough to check,
+<p>Additionally, you should prefer \(2\) to \(1\) if and only if \(x\) <em>is</em> a witness - because it's cheap enough to check,
 you just acquire the information and be done with it (if you want to quibble about expected payoffs, assume that \(\alpha_2\) is really really small).</p>
-<p>
- However, you should also prefer \(1\) to \(3\),
+<p>However, you should also prefer \(1\) to \(3\),
 because the possible reward you can gain by solving the problem is not worth the cost,
 so you should take the certain reward instead.</p>
-<p>
- This means that if \(x\) is chosen so that it
- <em>
-  is</em>
- a witness,
+<p>This means that if \(x\) is chosen so that it <em>is</em> a witness,
 you have an intransitive preference \(2 &gt; 3 &gt; 2 &gt; 1\).</p>
-<p>
- Another way of thinking about this is that the choices over this problem are not
- <em>
-  subset consistent</em>.
+<p>Another way of thinking about this is that the choices over this problem are not <em>subset consistent</em>.
 The choice you make from \(\{1, 2, 3\}\) in the case that \(x\) is a solution is either \(3\) - evaluating \(2\) tells you that it's worth choosing \(3\) over \(1\),
 so you can skip paying the cost and just choose the good option. In contrast, your choice when picking from \(\{1, 3\}\) would be \(2\) - removing a value that was not the chosen answer has caused your opinion to flip.</p>
 </section>

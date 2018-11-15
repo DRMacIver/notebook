@@ -45,67 +45,39 @@ MathJax.Hub.Config({
 <dt>Published</dt>
 <dd class="post-date">2018-09-10</dd>
 </dl>
-<p>
- In a
- <a href="https://notebook.drmaciver.com/posts/2018-09-09-21:02.html">
-  previous post</a>
- I said I didn't care much about this problem,
+
+<p>In a <a href="https://notebook.drmaciver.com/posts/2018-09-09-21:02.html">previous post</a> I said I didn't care much about this problem,
 which obviously nerd-sniped me into thinking about it.</p>
-<p>
- So, the question is: We have a "rational" agent which is making choices over pairs of lotteries \(\mathcal{L}\),
+<p>So, the question is: We have a "rational" agent which is making choices over pairs of lotteries \(\mathcal{L}\),
 and it does this in terms of a function \(\tau : \mathcal{L}^2 \to [0, 1]\) where \(\tau(u, v)\) means "the probability of choosing \(u\) in preference to \(v\).</p>
-<p>
- We had the nice (ish) VNM theory for physically impossible discontinuous rational agents,
+<p>We had the nice (ish) VNM theory for physically impossible discontinuous rational agents,
 but what should the axioms for a continuous rational agent look like?</p>
-<p>
- The following seem like they should obviously hold:</p>
+<p>The following seem like they should obviously hold:</p>
 <ol>
- <li>
-  \(\tau(L, M) = 1 - \tau(M, L)\).</li>
- <li>
-  If we define \(L \prec M\) as meaning \(\tau(L, M) = 1\) then \(\preceq\) should be a partial order.</li>
- <li>
-  If we define \(L \tilde M\) as meaning \(\tau(L, M) = \frac{1}{2}\) then whenever \(L \tilde L', M \tilde M'\) we have \(\tau(L, M) = \tau(L', M')\).</li>
- <li>
-  If \(\tau(L, pL + (1 - p) M)\) should be monotonic in \(p\), and whenever it is non-constant that monotonicity should be strict.</li>
- <li>
-  For any pure lotteries (that is, lotteries which take a single outcome with probability \(1\)) \(\tau(L, M) \in \{0, 1, \frac{1}{2}\). i.e. for any concrete outcomes the agent either has a strict preference or is indifferent between them.</li>
- <li>
-  \(\tau(L, pM + (1 - p)N) \geq \min \tau(L, M), \tau(L, N)\)</li></ol>
-<p>
- Together with the continuity requirement, these give us roughly the equivalence of the first four
- <a href="https://en.wikipedia.org/wiki/Von_Neumann%E2%80%93Morgenstern_utility_theorem">
-  VNM axioms in Wikipedia's ordering</a>.</p>
-<p>
- In contrast, the independence requirement obviously doesn't and can not hold in any meaningful sense for such an agent.
+<li>\(\tau(L, M) = 1 - \tau(M, L)\).</li>
+<li>If we define \(L \prec M\) as meaning \(\tau(L, M) = 1\) then \(\preceq\) should be a partial order.</li>
+<li>If we define \(L \tilde M\) as meaning \(\tau(L, M) = \frac{1}{2}\) then whenever \(L \tilde L', M \tilde M'\) we have \(\tau(L, M) = \tau(L', M')\).</li>
+<li>If \(\tau(L, pL + (1 - p) M)\) should be monotonic in \(p\), and whenever it is non-constant that monotonicity should be strict.</li>
+<li>For any pure lotteries (that is, lotteries which take a single outcome with probability \(1\)) \(\tau(L, M) \in \{0, 1, \frac{1}{2}\). i.e. for any concrete outcomes the agent either has a strict preference or is indifferent between them.</li>
+<li>\(\tau(L, pM + (1 - p)N) \geq \min \tau(L, M), \tau(L, N)\)</li>
+</ol>
+<p>Together with the continuity requirement, these give us roughly the equivalence of the first four <a href="https://en.wikipedia.org/wiki/Von_Neumann%E2%80%93Morgenstern_utility_theorem">VNM axioms in Wikipedia's ordering</a>.</p>
+<p>In contrast, the independence requirement obviously doesn't and can not hold in any meaningful sense for such an agent.
 Pick two lotteries with \(L \prec M\). Consider \(\tau(pL + (1 - p)N, pM + (1 - p)N)\).
 This is a continuous function of \(p\), and when \(p = 0\) it is equal to \(\frac{1}{2}\),
 therefore for any \(\epsilon &gt; 0\) there must be some \(0 &lt; p &lt; 1\) we must have \(\tau(pL + (1 - p)N, pM + (1 - p)N) &lt; \epsilon\),
 which breaks independence in a very strong way.</p>
-<p>
- I think this lack of independence is in some sense the "essential difference" between a continuous and a discrete rational agent.</p>
-<p>
- I'm not sure the above are the full set of axioms required. They feel a bit weak - I think more may need to be said about the relationships between \(\tau\) values over convex combinations of lotteries.</p>
-<p>
- However,
-the following two examples might be illuminating in terms of things that obviously
- <em>
-  should</em>
- be considered rational agents:</p>
-<p>
- Let \(\mu\) be some utility function over outcomes and let \(\alpha: [0, \infty) \to [0, 1]\) be monotonic decreasing with \(\alpha(0) = 1\) and \(\alpha(x) \to 0\) as \(x \to \infty\).
+<p>I think this lack of independence is in some sense the "essential difference" between a continuous and a discrete rational agent.</p>
+<p>I'm not sure the above are the full set of axioms required. They feel a bit weak - I think more may need to be said about the relationships between \(\tau\) values over convex combinations of lotteries.</p>
+<p>However,
+the following two examples might be illuminating in terms of things that obviously <em>should</em> be considered rational agents:</p>
+<p>Let \(\mu\) be some utility function over outcomes and let \(\alpha: [0, \infty) \to [0, 1]\) be monotonic decreasing with \(\alpha(0) = 1\) and \(\alpha(x) \to 0\) as \(x \to \infty\).
 If \(E(\mu(L)) &gt; E(\mu(M))\) then let \(\tau(L, M) = \frac{1 - \alpha(E(\mu(L)) - E(\mu(M)))}{2}\).
 Otherwise extend according to the requirement that \(\tau(L, M) = 1 - \tau(M, L)\).</p>
-<p>
- The idea is basically that \(\alpha\) acts as a decision procedure about whether it's worth finding out more information - it represents the probability of giving up and flipping a coin. You run this procedure by observing to increasingly high precision until you either know that alpha is large enough that you should give up (based on a non-deterministic choice of doing so) or which side of the border you're on.</p>
-<p>
- Another procedure that I think can not be realised as an instance of that but should still be considered rational is how a logically omniscient Bayesian agent who is only able to access the lotteries through sampling might behave.
+<p>The idea is basically that \(\alpha\) acts as a decision procedure about whether it's worth finding out more information - it represents the probability of giving up and flipping a coin. You run this procedure by observing to increasingly high precision until you either know that alpha is large enough that you should give up (based on a non-deterministic choice of doing so) or which side of the border you're on.</p>
+<p>Another procedure that I think can not be realised as an instance of that but should still be considered rational is how a logically omniscient Bayesian agent who is only able to access the lotteries through sampling might behave.
 You start with some prior distribution over lotteries (maybe an improper one) and query the sampler for each, with some cost function \(\alpha: \mathbb{N} \to [0, \infty)\) for how expensive it is to evaluate \(n\) samples (probably \(\alpha\) is a linear function). You stop and choose as soon as you hit a point where your expected value (under your posterior distributions) of acquiring more information is strictly less than the expected value of choosing one of the outcomes.</p>
-<p>
- I don't want to suggest that either of the two above are the
- <em>
-  only</em>
- possible rational agents in such circumstances.
+<p>I don't want to suggest that either of the two above are the <em>only</em> possible rational agents in such circumstances.
 I suspect in fact that there's a much broader diversity of behaviour possible than for VNM rational agents,
 which might make any axiomatic classification hard.</p>
 </section>
