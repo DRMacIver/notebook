@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-11-17T10:34:52+00:00</updated>
+  <updated>2018-11-19T20:14:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,39 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-11-19-20:14.html</id>
+    <title>Book Review: Rereadings, edited by Anne Fadiman</title>
+    <updated>2018-11-19T20:14:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Book Review: Rereadings, edited by Anne Fadiman&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-11-19&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Unusually for a review, I didn't like this book.
+This is a shame as I really wanted to, which is why I finished it, but 'twas not to be.&lt;/p&gt;
+
+
+&lt;p&gt;It's a collection of essays by people talking about rereading books,
+usually ones they had read when they were in their teens or younger.
+They talked about the impact of rereading and how their views of the books changed as they got older.&lt;/p&gt;
+
+
+&lt;p&gt;The problem was that fundamentally all of these essays were really stories about the authors' lives and how their reading of a book intertwined with that and fundamentally... I just didn't care.
+I can see ways it could have worked for me, and I kept reading it hoping to find some gems, but as it stood it was just many brief glimpses into the lives of people I didn't care about viewed through the lens of books I didn't care about.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-11-19-20:14.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-11-17-09:53.html</id>
     <title>Miscellaneous Notes on Vegetarian Cooking</title>
-    <updated>2018-11-17T10:34:52+00:00</updated>
+    <updated>2018-11-17T15:31:25+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Miscellaneous Notes on Vegetarian Cooking&lt;/p&gt;
