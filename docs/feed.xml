@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-11-19T20:46:35+00:00</updated>
+  <updated>2018-11-23T17:52:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,66 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-11-23-17:52.html</id>
+    <title>Reading a Paper</title>
+    <updated>2018-11-23T17:52:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Reading a Paper&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-11-23&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I mentioned this system in passing before but thought it would worth noting down explicitly and commenting on some of its reasoning.&lt;/p&gt;
+
+
+&lt;p&gt;When trying to decide whether to do a close reading of a paper I've started using a points based system.
+Ideally I should be able to evaluate this score in about 10 minutes of reading maximum.&lt;/p&gt;
+
+
+&lt;p&gt;I ask three questions:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;How well written is this paper?&lt;/li&gt;
+&lt;li&gt;How interesting (to me) is this paper?&lt;/li&gt;
+&lt;li&gt;How useful (to me) is this paper?&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;Each question gets a score from -1 to 2,
+with -1 meaning unusually bad and 2 meaning among the best I've seen recently in that category.
+These scores are added together to get a total score for the paper.
+A paper with a score of 2 or higher gets read in more detail.&lt;/p&gt;
+
+
+&lt;p&gt;The scoring is slightly odd but basically the reasoning is this gives the following combinations worth reading:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;One is great, others both neutral or better&lt;/li&gt;
+&lt;li&gt;One is great, one is good, one is bad&lt;/li&gt;
+&lt;li&gt;Two are good, remaining neutral&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;In particular a paper has to be doing well on two of these characteristics or amazingly on one of them in order to be worth reading.&lt;/p&gt;
+
+
+&lt;p&gt;While doing the initial casual reading towards, one thing I make sure to do is note anywhere I'm confused and then move on as quickly as possible.
+When doing the second reading I start with those points.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-11-23-17:52.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-11-19-20:14.html</id>
     <title>Book Review: Rereadings, edited by Anne Fadiman</title>
-    <updated>2018-11-19T20:46:35+00:00</updated>
+    <updated>2018-11-19T20:52:35+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Book Review: Rereadings, edited by Anne Fadiman&lt;/p&gt;
