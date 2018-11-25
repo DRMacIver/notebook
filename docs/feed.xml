@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-11-24T10:36:00+00:00</updated>
+  <updated>2018-11-25T13:38:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,65 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-11-25-13:38.html</id>
+    <title>The people that live in your head</title>
+    <updated>2018-11-25T13:38:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;The people that live in your head&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-11-25&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;There's &lt;a href="https://twitter.com/search?f=tweets&amp;amp;vertical=default&amp;amp;q=https%3A%2F%2Ftwitter.com%2FDrunkestLibrary%2Fstatus%2F1066346270992842752&amp;amp;src=typd"&gt;a good Twitter question&lt;/a&gt; about books that have changed your worldview for the better. A lot of the ones listed are fiction, including mine.&lt;/p&gt;
+
+
+&lt;p&gt;A &lt;a href="https://twitter.com/DRMacIver/status/1065381021158449153"&gt;related question I asked the other day&lt;/a&gt; was about genre fiction provides good role models.&lt;/p&gt;
+
+
+&lt;p&gt;Although the primary purpose of fiction is of course entertainment, the primary &lt;em&gt;benefit&lt;/em&gt; of fiction is that it &lt;a href="https://www.drmaciver.com/2015/03/how-to-make-other-people-seem-like-humans/"&gt;fills your head with people&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;There's a study from a few years back about how reading fiction improves theory of mind:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Kidd, David Comer, and Emanuele Castano. "Reading literary fiction improves theory of mind." Science 342.6156 (2013): 377-380. &lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;Their conclusions were that literary fiction does improve theory of mind and popular fiction does not. I'm a little skeptical of this claim - it's not that I doubt their conclusions in the particular experiment, but I think the implications are far less general than they claim.&lt;/p&gt;
+
+
+&lt;p&gt;I think a more reasonable (but perhaps less exciting / conducive to sharpening the axe they want to grind) set of conclusions would be:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Reading fiction &lt;em&gt;can&lt;/em&gt; improve your theory of mind.&lt;/li&gt;
+&lt;li&gt;Which fiction you read may have a dramatic effect on how well it achieves that.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;For example I think reading Pratchett's witches books is likey to have a very strong impact on your theory of mind (it did for me), while reading, say, Xanth might go as far as to having a &lt;em&gt;negative&lt;/em&gt; impact on your theory of mind.&lt;/p&gt;
+
+
+&lt;p&gt;That being said, while quality is of course important, I think quantity has a virtue all of its own, as long as there is a reasonable diversity of failure modes in that quantity.
+The nice thing about genre fiction is that people can and do read a lot of it, which gives you a large number of people in your head.&lt;/p&gt;
+
+
+&lt;p&gt;This is one of the reasons why having a good range of diversity of authors and protagonists is helpful - it begins to give you a theory of mind that encompasses a wide range of human experience.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-11-25-13:38.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-11-24-10:36.html</id>
     <title>How to build a superintelligence</title>
-    <updated>2018-11-24T10:36:00+00:00</updated>
+    <updated>2018-11-24T10:49:16+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;How to build a superintelligence&lt;/p&gt;
