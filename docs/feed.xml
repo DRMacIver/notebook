@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-11-25T14:01:51+00:00</updated>
+  <updated>2018-11-26T17:12:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,85 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-11-26-17:12.html</id>
+    <title>Building Friendships</title>
+    <updated>2018-11-26T17:12:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Building Friendships&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-11-26&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;A reframing that I've been finding helpful recently is to stop thinking in terms of "making friends" and move to thinking in terms of "building friendships".
+I don't think you should feel any particular obligation to do the same, but it's been helpful to me.&lt;/p&gt;
+
+
+&lt;p&gt;Why?&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Someone is not binary either your friend or not your friend. You don't just "make friends" with them and instantly become BFFs. This framing makes the growing nature of the frienship obvious.&lt;/li&gt;
+&lt;li&gt;A friendship is a collaborative activity. You don't make someone your friend, you build a friendship together.&lt;/li&gt;
+&lt;li&gt;Honestly "make" has weirdly coercive overtones to it that I don't like very much.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;One of the things that has got me thinking along these lines is how you go about explicitly building (and maintaining) friendships. 
+I &lt;a href="https://notebook.drmaciver.com/posts/2018-10-13-10:04.html"&gt;wrote a little while back about how explicit decision making is often better&lt;/a&gt; but one of the problems here is that making your decision making around frienships explicit inevitably comes off as &lt;em&gt;creepy&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;For example, here are two things that have come up:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Maintaining a list of friends you want to prioritise and actively trying to spend more time with them.&lt;/li&gt;
+&lt;li&gt;Having a "frienship onboarding" process where when you want to be friends with someone you can basically just invite them into the process without it seeming strange.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;Of course, I think most people who are good at frienship are doing these things &lt;em&gt;anyway&lt;/em&gt;, they're just not admitting (possibly even to themselves) that this is the case.&lt;/p&gt;
+
+
+&lt;p&gt;To be concrete, I don't do the former but have a friend who does, which I only found out because I mentioned to her that I was thinking about doing it.
+I don't &lt;em&gt;really&lt;/em&gt; do the latter but I've been thinking about it - some things I do implicitly are in that general shape, and I'm starting to think about making it more explicit.&lt;/p&gt;
+
+
+&lt;p&gt;And in doing so, it sure feels creepy, even from the inside.&lt;/p&gt;
+
+
+&lt;p&gt;Part of this is &lt;a href="https://www.goodreads.com/quotes/8998140-sin-young-man-is-when-you-treat-people-like-things"&gt;due to something Granny Weatherwax said&lt;/a&gt;:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;sin, young man, is when you treat people as things. Including yourself. That’s what sin is.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;(I don't think most people got this lesson from Granny Weatherwax, but it's a widely shared belief)&lt;/p&gt;
+
+
+&lt;p&gt;Starting to build these explicit systems around people sounds very like treating people like things to me.&lt;/p&gt;
+
+
+&lt;p&gt;Friendships though? Friendships are things. Or rather they're systems - a complex set of implicit and explicit agreements and shared knowledge and understanding between people.
+Systems are, I think, OK to treat as things, as long as you do so with respect for the agency of the people who make them up.&lt;/p&gt;
+
+
+&lt;p&gt;It still feels manipulative. I think that goes away somewhat by being up front with people about it, but I don't yet know how to do that - even in a culture which successfully promotes overcommunication you still end up with this being a tricky subject.
+e.g. the list system is I think good, but once you've admitted its existence people will want to know if they're on it, and it's hard to do that without hurting people's feelings.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-11-26-17:12.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-11-25-13:38.html</id>
     <title>The people that live in your head</title>
-    <updated>2018-11-25T14:01:51+00:00</updated>
+    <updated>2018-11-25T14:10:25+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;The people that live in your head&lt;/p&gt;
