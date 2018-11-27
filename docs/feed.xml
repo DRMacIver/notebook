@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-11-27T09:44:00+00:00</updated>
+  <updated>2018-11-27T10:33:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,93 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-11-27-10:33.html</id>
+    <title>Teach People How To Do Things</title>
+    <updated>2018-11-27T10:33:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Teach People How To Do Things&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-11-27&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;You know what makes me mad?&lt;/p&gt;
+
+
+&lt;p&gt;Well, everything makes me mad. It's kinda my brand.&lt;/p&gt;
+
+
+&lt;p&gt;But &lt;em&gt;specifically&lt;/em&gt; a thing that has raised me to incandescent levels of rage recently is this:
+The idea that hard work is sufficient for success.&lt;/p&gt;
+
+
+&lt;p&gt;This idea is toxic and if you spread it you are hurting people. Cut it the fuck out.&lt;/p&gt;
+
+
+&lt;p&gt;This post is triggered somewhat by answers to &lt;a href="https://twitter.com/DRMacIver/status/1067357012730814464"&gt;a question I had about how to learn to write poetry&lt;/a&gt;,
+but it's not really the people giving those answers I'm mad at. This is mostly leftover &lt;a href="https://twitter.com/DRMacIver/status/1062418357788532736"&gt;rage from an awful book about writing&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Hard work is &lt;em&gt;necessary&lt;/em&gt; for success. You will never get good at something without a lot of practice at it. "Natural talent" is an illusion mostly caused by natural interest - the people who are naturally good at something are the people who are constantly thinking about it and doing it.
+Even when some people are naturally better at some things than others, that does not change the necessity of hard work, only the effectiveness of the work you do.&lt;/p&gt;
+
+
+&lt;p&gt;But when you treat hard work as sufficient for success you are basically throwing people who have not figured out the right approach themselves under a bus.
+They may be working incredibly hard and you are telling them that the reason they are failing is because they're not working hard enough.
+This advice will burn people out and possibly literally kill them.&lt;/p&gt;
+
+
+&lt;p&gt;The correct way to get better at anything is the following:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Figure out what aspect you need to improve.&lt;/li&gt;
+&lt;li&gt;Figure out how to improve that aspect.&lt;/li&gt;
+&lt;li&gt;Work hard on improving that aspect.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;For example, the thing I really need to work on if I want my writing to improve is probably to work on my editing skills.
+My writing quality has mostly plateaued, and I haven't prioritised fixing that, so I mostly &lt;em&gt;haven't&lt;/em&gt; been working on improving it,
+but that's what I would do if I wanted to.&lt;/p&gt;
+
+
+&lt;p&gt;If you do not do the first two steps then step three will work only by luck.
+Many people are lucky and figure out the first two steps on their own, possibly without even noticing that they have done so,
+but many do not and are then made sad by your terrible awful dangerous advice that step three is sufficient on its own.&lt;/p&gt;
+
+
+&lt;p&gt;Please note: I will not accept your exceptionalist bullshit about why your subject is special and comes from the soul and these rules do not apply.
+Your subject is not fucking special.
+It is a skill.&lt;/p&gt;
+
+
+&lt;p&gt;Nobody can do your hard work for you, but steps 1 and 2 are &lt;em&gt;absolutely&lt;/em&gt; something that experts can help you overcome,
+by giving you an idea of the shape of the answer and providing you with help on debugging your current weaknesses.
+There is no royal road to philosophy or any other skill,
+but it sure helps if someone hands you a machete and points you in the right direction rather than just dropping you in the middle of the forest and saying "I'm sure it's somewhere around here. Good luck, have fun!".&lt;/p&gt;
+
+
+&lt;p&gt;As a teacher your moral obligation is not to save people from having to work hard, it is to ensure that when they work hard they do so in a way that helps them improve.&lt;/p&gt;
+
+
+&lt;p&gt;This is something our education system reliably fails to do. Depending on the subject in question we vary from dismal to appalling, but it is very rare for the education system to reach the heady heights of mediocrity in this regard.&lt;/p&gt;
+
+
+&lt;p&gt;I do not know how to fix our education system. It's a mess. Instead I am doing damage control, trying to counterbalance its worst excesses.
+We live in a world where most people have been damaged by it, and I would greatly appreciate it if you would stop rubbing salt into their wounds by repeating the worst of its lies.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-11-27-10:33.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-11-27-09:44.html</id>
     <title>Book list from CUP.</title>
-    <updated>2018-11-27T09:44:00+00:00</updated>
+    <updated>2018-11-27T09:50:03+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Book list from CUP.&lt;/p&gt;
