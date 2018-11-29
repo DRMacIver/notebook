@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-11-27T10:33:00+00:00</updated>
+  <updated>2018-11-29T12:13:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,86 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-11-29-12:13.html</id>
+    <title>You Can Do Anything (But You Can't Do Everything)</title>
+    <updated>2018-11-29T12:13:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;You Can Do Anything (But You Can't Do Everything)&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-11-29&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I posted a link to &lt;a href="https://basicbitch.software/posts/2018-09-30-On-Fluency.html"&gt;On Fluency&lt;/a&gt; on Twitter the other day,
+which prompted a short conversation about the following paragraph:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Across these experiences, at a low level, my brain has recognized that it can understand things, that given the time and resources, I can figure out what is going on, in almost any domain!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;I think this is true, but there is an important caveat: Most of the time you don't have the time and resources.&lt;/p&gt;
+
+
+&lt;p&gt;It still is a useful thing to believe, and makes for a useful reflective exercise.&lt;/p&gt;
+
+
+&lt;p&gt;Pick a skill it would be nice to learn. Now pretend you have unlimited time, money, and motivation to learn it.
+Can you learn it? Yes, you almost certainly can. Can you learn it to the standard you want to achieve? Almost certainly unless your standards are incredibly unrealistic.&lt;/p&gt;
+
+
+&lt;p&gt;In fact you have sharp limits on time, money, and motivation, but by imagining you don't you can start to construct a plan for how you would learn it if you did.&lt;/p&gt;
+
+
+&lt;p&gt;Say I wanted to learn to speak Japanese fluently (I don't especially. It's not even high up on my list of languages it would be nice to know).
+I might do the following:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Move to Japan&lt;/li&gt;
+&lt;li&gt;Hire several language tutors&lt;/li&gt;
+&lt;li&gt;Hire an expensive voice coach to help work on my accent&lt;/li&gt;
+&lt;li&gt;Spend at least eight hours per day immersed in Japanese - reading, writing, talking to people&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;After five years of that I think it's fair to say that I would be a fluent Japanese speaker with a reasonable accent.&lt;/p&gt;
+
+
+&lt;p&gt;Could I achieve the same result with less than that? Some of it is overkill. At that level of immersion I might be fluent in, say, two years (probably not, but lets be optimistic).
+After that, it's a matter of deciding my trade-offs.
+If I spent less time on the subject it would take longer.
+If I didn't hire the tutors it would require more work and also take longer.&lt;/p&gt;
+
+
+&lt;p&gt;By playing with these numbers I can get a reasonable idea of what sort of time investment would be required and get a rough range of the parameters involved.
+These don't have to be especially realistic predictions, they just have to give me a broad sense of what it &lt;em&gt;might&lt;/em&gt; look like.&lt;/p&gt;
+
+
+&lt;p&gt;There are a couple things you can then do with this information, but in my case the answer is easy:
+I'm sure I &lt;em&gt;can&lt;/em&gt; learn Japanese, but that is way more work than I want to invest in it, especially given that I don't particularly care about learning Japanese in the first place.&lt;/p&gt;
+
+
+&lt;p&gt;Because once you leave counterfactual land with your estimate of how much work learning the skill will &lt;em&gt;actually&lt;/em&gt; take you, the correct decision is often that it's not worth that much work.
+This is because if you decide to spend those years full time working on your Japanese you are then &lt;em&gt;not spending those times on other things you value more highly&lt;/em&gt;.
+As soon as you are resource constrained, you have to start prioritising.&lt;/p&gt;
+
+
+&lt;p&gt;I think this is a thing that it's often easy to miss: The fact that you can do anything doesn't mean that you can do everything at once,
+and deciding to do something necessarily means that there are many other things you are deciding not to do in its place.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-11-29-12:13.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-11-27-10:33.html</id>
     <title>Teach People How To Do Things</title>
-    <updated>2018-11-27T10:33:00+00:00</updated>
+    <updated>2018-11-27T11:02:44+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Teach People How To Do Things&lt;/p&gt;
