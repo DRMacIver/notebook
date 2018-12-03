@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-12-03T10:43:00+00:00</updated>
+  <updated>2018-12-03T19:59:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,55 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-12-03-19:59.html</id>
+    <title>Crispy Spicy Green Beans</title>
+    <updated>2018-12-03T19:59:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Crispy Spicy Green Beans&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-12-03&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;h3&gt;Ingredients&lt;/h3&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Frozen Green Beans&lt;/li&gt;
+&lt;li&gt;Vegetable oil&lt;/li&gt;
+&lt;li&gt;Salt&lt;/li&gt;
+&lt;li&gt;Dried crushed chilli&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h3&gt;Steps&lt;/h3&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Put the green beans in a roasting dish&lt;/li&gt;
+&lt;li&gt;Cover them with oil&lt;/li&gt;
+&lt;li&gt;Add salt and chill to taste.&lt;/li&gt;
+&lt;li&gt;Toss until well coated&lt;/li&gt;
+&lt;li&gt;Roast at 250C until crispy (I wasn't paying attention to time, but I think this was 10-20 minutes)&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;h3&gt;Result&lt;/h3&gt;
+
+
+&lt;p&gt;Oh gods these are like crack. They are &lt;em&gt;so good&lt;/em&gt;.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-12-03-19:59.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-12-03-10:43.html</id>
     <title>Book Review: Learn to Write Badly by Michael Billig</title>
-    <updated>2018-12-03T10:43:00+00:00</updated>
+    <updated>2018-12-03T17:54:23+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Book Review: Learn to Write Badly by Michael Billig&lt;/p&gt;
