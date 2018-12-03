@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-12-03T19:59:00+00:00</updated>
+  <updated>2018-12-03T21:56:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,40 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-12-03-21:56.html</id>
+    <title>Democracy Can't Work</title>
+    <updated>2018-12-03T21:56:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Democracy Can't Work&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-12-03&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;(Title somewhat overstating the case, but only somewhat)&lt;/p&gt;
+
+
+&lt;p&gt;A challenge for the interested reader: How do you reconcile the following facts?&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Voting theory and social mechanism design is a complicated specialist subject that it is is not reasonable to expect most people to invest the time required to understand.&lt;/li&gt;
+&lt;li&gt;People who do not understand the details of the implementation of their particular democracy inevitbaly become extremely attached to it, making it difficult to change.&lt;/li&gt;
+&lt;li&gt;Whoever designs the voting mechanism and sets the voting agenda has vastly more power in determining the end results than any individual voter does.&lt;/li&gt;
+&lt;li&gt;Whenever you concentrate power in a small number of individuals you create a strong incentive to manipulate those individuals.&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-12-03-21:56.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-12-03-19:59.html</id>
     <title>Crispy Spicy Green Beans</title>
-    <updated>2018-12-03T19:59:00+00:00</updated>
+    <updated>2018-12-03T20:03:46+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Crispy Spicy Green Beans&lt;/p&gt;
