@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-11-29T12:13:00+00:00</updated>
+  <updated>2018-12-03T10:43:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,116 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-12-03-10:43.html</id>
+    <title>Book Review: Learn to Write Badly by Michael Billig</title>
+    <updated>2018-12-03T10:43:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Book Review: Learn to Write Badly by Michael Billig&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-12-03&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I picked this up thinking that it would be a book of writing advice. Even before I bought it it was reasonably clear that wasn't what it was, but it seemed like it might be interesting anyway.&lt;/p&gt;
+
+
+&lt;p&gt;It was interesting, and I would cautiously recommend it, but it's something of a niche interest and was a surprising amount of work to read (it's not badly written - that would be a bit too ironic - but it is quite dense).&lt;/p&gt;
+
+
+&lt;p&gt;Roughly what the book is about is the pressures that social scientists find themselves under from the academic system, and the way they write in order to conform to those pressures.
+Billig argues that academics in the social sciences have a number of habits of language including the following:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Use precise technical terms in imprecise ways.&lt;/li&gt;
+&lt;li&gt;Use terms in ways that pun between their colloquial and technical meanings (e.g. significant).&lt;/li&gt;
+&lt;li&gt;Omit necessary quantifiers from terms ("participants did X" instead of "all participants did X" vs "60% of participants did X").&lt;/li&gt;
+&lt;li&gt;Use the passive voice to omit necessary details about who did what.&lt;/li&gt;
+&lt;li&gt;Use noun phrases which are actually quite ambiguous (he had some good examples but these were early in the book and there was a gap in my reading, so I don't remember them and didn't easily refind them when writing this review).&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;The common thread of all of these is that they allow the authors to give the impression of being more precise than colloquial language would allow, while in fact being less precise.
+It allows for a language in which they can sound more impressive while being less impressive.&lt;/p&gt;
+
+
+&lt;p&gt;If this sounds a lot like cranky reactionary objections to postmodernism, it is worth noting that a) The author, Michael Billig, is very much himself a social scientist and b) The book consists of a large number of quite specific, measured, and well researched and cited criticisms.&lt;/p&gt;
+
+
+&lt;p&gt;I think I would need to reread it in pieces before I felt I fully appreciated the scope of his objections, but the main thing I was left with was that it reinforced two things I already believed and somewhat damaged my faith in something I quite like.&lt;/p&gt;
+
+
+&lt;p&gt;The two things I already believed:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Academic writing is mostly terrible and the reasons that academics use to defend this style of writing are generally false.&lt;/li&gt;
+&lt;li&gt;The argument that there is no universally good style of writing and you need to adopt different styles for different community norms is mostly a defence used by people who want to write badly and feel good about themselves.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;The book is a pretty compelling argument for the former (although Billig mostly restricts himself to the social sciences, and his arguments have more strength there, &lt;em&gt;I&lt;/em&gt; don't object to generalising even though I think he would encourage me to resist the urge to generalise), and thus implicitly for the latter. Or, at least, on the latter it is pretty good at demolishing the arguments that academic social scientists use to defend their terrible writing (which seems suspiciously similar to the ones that I've seen from other academics).&lt;/p&gt;
+
+
+&lt;p&gt;The thing that the book also implicitly argues against that I've previously believed, and still mostly believe, is roughly something along the lines of... "abstraction is good".
+&lt;a href="https://twitter.com/DRMacIver/status/1061184444839665665"&gt;I've previously argued that the way mathematicians use words has some powerful characteristics&lt;/a&gt;, but the book is mostly arguing that if you try to apply those ways in the social sciences then the way people actually use them in practice is quite unhealthy.
+I feel compelled to say "Yes but that's because &lt;em&gt;they're doing it wrong&lt;/em&gt;", but this isn't actually a very good defence - if a tool makes it very easy to misuse, that is a fault of the tool and not the people misusing it. I need to think about this further.&lt;/p&gt;
+
+
+&lt;p&gt;A recurring argument that he makes in support of this is that when we turn something into a noun, we rhetorically sidestep a lot of the work of demonstrating that it exists.
+Nouns come with a sense of reality that isn't necessarily supported by the evidence.
+I could define a "tonon" as "The headache you get from being stared at by a cat" (this is not his example, but it's something I thought up in another context).
+This isn't a thing that actually happens, but it was still perfectly legitimate to make the definition.
+Only now I can write extensively about tonons and by the time you've read an entire essay about the role of tonons in popular culture it will be just that little bit harder to remember that this isn't actually a real thing.
+After all, there's a noun for it, and nouns are very real, solid sounding, words.&lt;/p&gt;
+
+
+&lt;p&gt;Billig is quite keen to make it clear that the book is an analysis of the problem and its consequences rather than actually a book about writing style, and goes through most of the book without making much in the way of recommendations, but doesn't &lt;em&gt;quite&lt;/em&gt; escape recommendation free and the last couple of pages do suggest some things that might help (with a long preamble explaining why they probably won't).
+He mentions Orwell's &lt;a href="http://www.orwell.ru/library/essays/politics/english/e_polit"&gt;Politics and the English Language&lt;/a&gt; which makes the following six helpful suggestions:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;Never use a metaphor, simile, or other figure of speech which you are used to seeing in print.&lt;/li&gt;
+&lt;li&gt;Never use a long word where a short one will do.&lt;/li&gt;
+&lt;li&gt;If it is possible to cut a word out, always cut it out.&lt;/li&gt;
+&lt;li&gt;Never use the passive where you can use the active.&lt;/li&gt;
+&lt;li&gt;Never use a foreign phrase, a scientific word, or a jargon word if you can think of an everyday English equivalent.&lt;/li&gt;
+&lt;li&gt;Break any of these rules sooner than say anything outright barbarous.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;I'm not exactly Orwell's biggest fan but these all seem basically sensible rules.&lt;/p&gt;
+
+
+&lt;p&gt;Billig offers a somewhat overlapping set of advice in a similar vein. Paraphrased, his suggestions are:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Use simple language and avoid technical terms as much as possible.&lt;/li&gt;
+&lt;li&gt;Prefer the active voice over the passive, in order to give more specific information about what occurred.&lt;/li&gt;
+&lt;li&gt;Prefer verb-heavy over noun-heavy sentences, especially avoiding phrases that consist of multiple nouns clumped together.&lt;/li&gt;
+&lt;li&gt;Treat all of these suggestions as guidelines over rules.&lt;/li&gt;
+&lt;li&gt;When writing about things concerning people, do so in a way that is &lt;em&gt;populated&lt;/em&gt; - rather than talking about abstract systems and properties thereof, illustrate with examples of real people doing real things.&lt;/li&gt;
+&lt;li&gt;Technical terms can be useful, but don't fall in love with them or become too attached.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;This seems like broadly sensible advice, although I'm not sure (and am pretty sure that Billig doesn't believe) that some basically sensible advice can possibly counteract people's tendency to follow incentives,
+and there's an entire book about how the incentives push you away from doing any of these that I just read...&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-12-03-10:43.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-11-29-12:13.html</id>
     <title>You Can Do Anything (But You Can't Do Everything)</title>
-    <updated>2018-11-29T12:13:00+00:00</updated>
+    <updated>2018-11-29T12:40:41+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;You Can Do Anything (But You Can't Do Everything)&lt;/p&gt;
