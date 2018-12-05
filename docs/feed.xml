@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-12-05T11:13:00+00:00</updated>
+  <updated>2018-12-05T11:37:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,50 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-12-05-11:37.html</id>
+    <title>Book Review: How to Improve Your Foreign Language Immediately Paperback by Boris Shekhtman</title>
+    <updated>2018-12-05T11:37:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Book Review: How to Improve Your Foreign Language Immediately Paperback by Boris Shekhtman&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-12-05&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I really like this book. It has a few flaws that annoy me slightly and are worth commenting on, but it's basically a very good book.
+I can't personally say if it &lt;em&gt;works&lt;/em&gt;, as my foreign language skills are extremely poor and I'm not actively working on that (I have at various points spoken French and German badly, and I can mostly still puzzle them out in written form, but it would be a lie to say I really speak them),
+but even without that context I think it's a good book.&lt;/p&gt;
+
+
+&lt;p&gt;Fundamentally this is a book about how to have a conversation, and how to develop sets of concrete communication skills that allow that to work for you.
+This is particularly valuable when speaking in a language that you don't know very well, but I think the lessons are important for native speakers as well - in particular the advice on how to deal with stalled conversations is something that I think most people should learn.&lt;/p&gt;
+
+
+&lt;p&gt;The book is very short, so I won't try to summarise its lessons here, and I'd just recommend reading it instead, but I would add two caveats:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Some of the specifics of his advice will come across as &lt;em&gt;extremely&lt;/em&gt; rude. In particular he recommends changing the subject by saying "I'm not really interested in this subject". Don't do that. Say "I don't know very much about this subject" or similar. The former comes across as saying "Your interests are boring".&lt;/li&gt;
+&lt;li&gt;The strategy of inserting colloquialisms into your speech in order to sound more natural is high variance. It is very obvious when a foreign speaker is doing this badly, and it starts to grate. As a native speaker it is my responsibility to have patience with foreign speakers (and when the roles are reversed I hope they would grant me the same), so by all means go for it, just be aware of this dynamic.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;I suspect if you were to use this book as it is intended then it would be very helpful to practice all of these techniques with a trusted friend who is fluent (ideally native speaking) in the target language.&lt;/p&gt;
+
+
+&lt;p&gt;This book is staying on my shelves for circulation to friends who are interested in it and maybe the occasional reread (this was already my second reading of it).&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-12-05-11:37.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-12-05-11:13.html</id>
     <title>Book Review "The Tao of Pooh and the Te of Piglet" by Benjamin Hoff</title>
-    <updated>2018-12-05T11:13:00+00:00</updated>
+    <updated>2018-12-05T11:36:58+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Book Review "The Tao of Pooh and the Te of Piglet" by Benjamin Hoff&lt;/p&gt;
