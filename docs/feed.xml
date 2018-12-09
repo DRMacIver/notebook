@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-12-05T11:37:00+00:00</updated>
+  <updated>2018-12-09T19:55:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,51 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-12-09-19:55.html</id>
+    <title>Wheat-and-Dairy-Free Brownies</title>
+    <updated>2018-12-09T19:55:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Wheat-and-Dairy-Free Brownies&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-12-09&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Due to the restriction diet I can't eat wheat or dairy, so I'm experimenting with my brownie recipe to try to make it work without.&lt;/p&gt;
+
+
+&lt;p&gt;The following seems to work reasonably:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;1 cup ground almonds&lt;/li&gt;
+&lt;li&gt;1.5 cups granulated white sugar&lt;/li&gt;
+&lt;li&gt;1.5 cups dark cocoa powder&lt;/li&gt;
+&lt;li&gt;0.5 cups vegetable oil&lt;/li&gt;
+&lt;li&gt;0.5 tsp salt&lt;/li&gt;
+&lt;li&gt;5 eggs&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;Mix all together, bake at 200C for 25 minutes.&lt;/p&gt;
+
+
+&lt;h3&gt;TODO&lt;/h3&gt;
+
+
+&lt;p&gt;These were pretty good but didn't work as well as they could have, I think partly due to my succumbing to the urge to tinker with too much at once. When I try it next I 'll go back to the correct ratios of sugar and cocoa (2 cups sugar, 1 cup cocoa). I also feel like there wasn't quite enough liquid in them - I didn't want to put too much oil in because the almonds implicitly add a lot of fat, but it would maybe have benefited from a little bit more. This might also have been because the cocoa absorbs more liquid than the same amount of sugar would.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-12-09-19:55.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-12-05-11:37.html</id>
     <title>Book Review: How to Improve Your Foreign Language Immediately Paperback by Boris Shekhtman</title>
-    <updated>2018-12-05T11:37:00+00:00</updated>
+    <updated>2018-12-05T11:57:23+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Book Review: How to Improve Your Foreign Language Immediately Paperback by Boris Shekhtman&lt;/p&gt;
