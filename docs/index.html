@@ -40,6 +40,75 @@ MathJax.Hub.Config({
         
 
 <section>
+<h2><a href="/posts/2018-12-10-20:12.html">2018-12-10</a></h2>
+
+
+<p class="subtitle">Levy's theorem</p>
+
+
+<dl class="metadata">
+<dt>Published</dt>
+<dd class="post-date">2018-12-10</dd>
+</dl>
+
+
+<p>I have this theorem from "Combinatorics of Permutations" by Miklós Bóna, where it's frustratingly referred to as Levy's theorem and neither proved nor referenced.
+Fortunately despite its incredibly odd looking nature it's not actually that hard to prove.</p>
+
+
+<p>Theorem: Let \(a_0, \ldots, a_n\) be a sequence of non-negative real numbers and let \(A(z) = \sum a_k z^k\).
+If \(A(z) &gt; 1\) then the following two statements are equiovalent:</p>
+
+
+<ul>
+<li>The polynomial \(A(z)\) is either constant or has real zeros only.</li>
+<li>There are probabilities \(p_i\) such that if \(X_i\) are independent Bernoulli random variables with \(P(X_i = 1) = p_i\) then \(P(\sigma X_i = k\) = \frac{a_k}{A(1)}). The roots of \(A(z)\) are \(-\frac{1 - p_i}{p_i}\) for the \(p_i\) with \(p_i &gt; 0\). </li>
+</ul>
+
+
+<p>This theorem took me completely aback when I saw it but once you see the proof it's quite natural.</p>
+
+
+<p>Let \(p_i\) be arbitrary probabilities. Without loss of generality assume that \(p_i &gt; 0\) (if some of the \(p_i\) are non-zero this will just result in some of the high coefficients being 0).
+Let \(X_i\) be independent bernoulli variables as above, and let \(d_k = P(\sum X_i = k)\).</p>
+
+
+<p>Construct the generating function \(f(z) = \sum d_k z^k\).
+This can be written as \(f(z) = \sum\limits_{A \subseteq [n]} \prod\limits_{i \in A} z p_i  \prod\limits_{i \not\in A} (1 - p_i)\),
+but this is \(\prod\limits_{i} (z_i p_i + 1 - p_i)\).
+This is a polynomial with roots at \(z = -\frac{1 - p_i}{p_i}\) as desired.</p>
+
+
+<p>This gives us our implication from the second to the first. By construction and the fact that \(f(1) = P(0 \leq \sum X_i \leq n) = 1\), \(A(z) = A(1) f(z)\),
+so the roots of \(A(z)\) are the roots of \(f\) and \(d_k = \frac{a_k}{A(1)}\).</p>
+
+
+<p>To get the other implication we just need to show every possible \(A(z)\) arises this way.
+i.e. we can always find \(p_i\) such that \(A(z) = A(1) f(z)\).</p>
+
+
+<p>Let \(A(z)\) be non-constant and have real roots. Note that these roots must be negative, because for any \(z &gt; 0\) we have \(A(z) \geq a_0 + \min(z, z^n) \min\limits_{i \geq 1} a_i &gt; 0\).
+So suppose these roots are \(r_1, \ldots \r_n\).</p>
+
+
+<p>Because the formula for the roots of \(f\) takes the value \(0\) when \(p_i = 1\) and tends to \(-\infty\) as \(p_i \to 0\),
+we can choose our \(p_i\) so that \(r_i = -\frac{1 - p_i}{p_i}\).
+This ensures that \(A\) is proportional to \(f\), and again because \(f(z) = 1\) this means that \(A(z) = A(1) f(z)\) as desired.</p>
+
+
+<p>QED</p>
+
+
+<p>A rather surprising (to me) implication of this theorem is that unless there are \(j, k\) such that \(a_i &gt; 0\) if and only if \(j \leq i \leq k\),
+\(A(z)\) has at least one non-real root.
+There's presumably some elementary way of proving that, but it's direct from Levy's theorem because the probabilities of getting \(k\) successes have this property.</p>
+
+
+<p>In general this seems to put strong constraints on the coefficients of polynomials with non-negative coefficients and real zeroes, but I haven't fully understood what they are yet (something to do with log concativity of their coefficients?).</p>
+
+
+</section>
+<section>
 <h2><a href="/posts/2018-12-09-19:55.html">2018-12-09</a></h2>
 
 
