@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-12-10T21:10:33+00:00</updated>
+  <updated>2018-12-11T10:30:56+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -13,7 +13,7 @@
   <entry>
     <id>https://notebook.drmaciver.com/posts/2018-12-10-20:12.html</id>
     <title>Levy's theorem</title>
-    <updated>2018-12-10T21:10:33+00:00</updated>
+    <updated>2018-12-11T10:30:56+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Levy's theorem&lt;/p&gt;
@@ -35,7 +35,7 @@ If \(A(z) &amp;gt; 1\) then the following two statements are equiovalent:&lt;/p&
 
 &lt;ul&gt;
 &lt;li&gt;The polynomial \(A(z)\) is either constant or has real zeros only.&lt;/li&gt;
-&lt;li&gt;There are probabilities \(p_i\) such that if \(X_i\) are independent Bernoulli random variables with \(P(X_i = 1) = p_i\) then \(P(\sigma X_i = k = \frac{a_k}{A(1)}\). The roots of \(A(z)\) are \(-\frac{1 - p_i}{p_i}\) for the \(p_i\) with \(p_i &amp;gt; 0\). &lt;/li&gt;
+&lt;li&gt;There are probabilities \(p_i\) such that if \(X_i\) are independent Bernoulli random variables with \(P(X_i = 1) = p_i\) then \(P(\sum X_i = k = \frac{a_k}{A(1)}\). The roots of \(A(z)\) are \(-\frac{1 - p_i}{p_i}\) for the \(p_i\) with \(p_i &amp;gt; 0\). &lt;/li&gt;
 &lt;/ul&gt;
 
 
