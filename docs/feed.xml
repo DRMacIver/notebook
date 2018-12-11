@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-12-11T11:32:02+00:00</updated>
+  <updated>2018-12-11T18:07:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,35 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-12-11-18:07.html</id>
+    <title>Placeholder</title>
+    <updated>2018-12-11T18:07:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Placeholder&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-12-11&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;One of the advantages of using beeminder is that it keeps me on track.&lt;/p&gt;
+
+
+&lt;p&gt;One of the disadvantages is that it can't judge &lt;em&gt;quality&lt;/em&gt; of data points, so sometimes I phone it in...&lt;/p&gt;
+
+
+&lt;p&gt;For example by posting something like this in order to prevent my notebook goal from derailing.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-12-11-18:07.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-12-10-20:12.html</id>
     <title>Levy's theorem</title>
-    <updated>2018-12-11T11:32:02+00:00</updated>
+    <updated>2018-12-11T11:43:45+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Levy's theorem&lt;/p&gt;
