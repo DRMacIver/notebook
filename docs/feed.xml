@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-12-12T09:29:00+00:00</updated>
+  <updated>2018-12-12T09:54:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,58 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-12-12-09:54.html</id>
+    <title>When is it OK for a book to be long?</title>
+    <updated>2018-12-12T09:54:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;When is it OK for a book to be long?&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-12-12&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I have a very strong preference for short books. In &lt;a href="https://www.drmaciver.com/2018/11/faq-how-do-you-read-so-many-books/"&gt;How do you read so many books?&lt;/a&gt; I suggested the following rules of thumb:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;If the book is under a hundred pages I’m probably just going to read it. I can do that in two hours, no problem. I can always stop if I hate it.&lt;/li&gt;
+&lt;li&gt;If the book is between one and two hundred pages it’s worth spending a bit of time determining if it’s worthwhile, especially if it’s not that well written.&lt;/li&gt;
+&lt;li&gt;If the book is more than three hundred pages I am very unlikely to read it if it’s badly written. If it’s well written then I hold it to a higher standard of value but am still willing to read it.&lt;/li&gt;
+&lt;li&gt;If the book is more than five hundred pages then I basically want someone signing a promise in blood that it’s worth my time to read it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;I've noticed that there are some exceptions to this rule where I'm perefectly OK with longer books. The main one is textbooks. I don't expect textbooks to be short, but that's OK because &lt;a href="https://www.drmaciver.com/2016/05/how-to-read-a-mathematics-textbook/"&gt;I don't expect to read them cover to cover either&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;There are some non textbook examples as well. I &lt;a href="https://notebook.drmaciver.com/posts/2018-11-15-18:17.html"&gt;really liked Rewriting the Rules&lt;/a&gt; despite its 400 pages.
+I'm currently reading and enjoying &lt;a href="https://amzn.to/2zUVY4F"&gt;Watching the English&lt;/a&gt; despite it being more than 500 pages and nobody having signed that promise in blood I asked for.&lt;/p&gt;
+
+
+&lt;p&gt;It occurs to me that there are two defining characteristics of an acceptable long book:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;The purpose of the length is to create a sense of &lt;a href="https://thiscontinuity.tumblr.com/post/174940553579/notateapot-thiscontinuity-hey-psst-over-here"&gt;thamagar&lt;/a&gt; - the length is not compressible, because it is mostly occupied by conveying details that you would not be able to infer from the rest.&lt;/li&gt;
+&lt;li&gt;The book is well cross-referenced for skippability. I've just skipped the sections on racing and squaddie talk in Watching the English because I just don't care about those bits and because I trust the author to refer back if I turn out to need them after all.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;In contrast I really like the concepts from "Seeing Like a State" but I felt like the book did not justify its length because almost all of the length was composed of making the same point over and over again.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-12-12-09:54.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-12-12-09:29.html</id>
     <title>Privacy as Friction Reduction</title>
-    <updated>2018-12-12T09:29:00+00:00</updated>
+    <updated>2018-12-12T09:35:17+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Privacy as Friction Reduction&lt;/p&gt;
