@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-12-11T18:07:00+00:00</updated>
+  <updated>2018-12-12T09:29:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,42 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-12-12-09:29.html</id>
+    <title>Privacy as Friction Reduction</title>
+    <updated>2018-12-12T09:29:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Privacy as Friction Reduction&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-12-12&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;&lt;a href="https://mhollyelmoreblog.wordpress.com/2018/12/12/on-privacy/"&gt;This piece on privacy&lt;/a&gt; is interesting.&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;I now think privacy is important for maximizing self-awareness and self-transparency. The primary function of privacy is not to hide things society finds unacceptable, but to create an environment in which your own mind feels safe to tell you things.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;It ties in to some thoughts I've been having recently about the role of private discussion spaces:
+People are generally willing to acknowledge and discuss things in much greater nuance in private than they are in public.
+What I'd previously noticed happening at the group level is that public sharing of discussion essentially forces you to bring everyone listening in up to the same level of shared understanding in order to have the conversation, and also you have to be constantly self-monitoring for the potential weaponisation of the things you're saying.&lt;/p&gt;
+
+
+&lt;p&gt;In some sense these are the same thing, applied at the level of the group mind.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-12-12-09:29.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-12-11-18:07.html</id>
     <title>Placeholder</title>
-    <updated>2018-12-11T18:07:00+00:00</updated>
+    <updated>2018-12-11T18:14:23+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Placeholder&lt;/p&gt;
