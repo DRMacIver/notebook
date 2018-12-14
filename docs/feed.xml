@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-12-12T14:44:00+00:00</updated>
+  <updated>2018-12-14T19:18:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,41 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-12-14-19:18.html</id>
+    <title>Etymology of property-based testing</title>
+    <updated>2018-12-14T19:18:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Etymology of property-based testing&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-12-14&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Fun Fact: People say that property-based testing was invented in Haskell but this isn't actually true.
+Property-based testing was invented in Erlang.&lt;/p&gt;
+
+
+&lt;p&gt;&lt;em&gt;QuickCheck&lt;/em&gt; was invented in Haskell, but they didn't start referring to it as property based testing until the Erlang version of QuickCheck.
+The term was then widely adopted and came to include the original Haskell QuickCheck too.&lt;/p&gt;
+
+
+&lt;p&gt;The first time that the term "property-based testing" was used for this style of testing was in 2006, in "Testing telecoms software with Quviq QuickCheck".
+I asked John Hughes about this and he says that they were pushed into giving it a better name by Ulf Wiger.&lt;/p&gt;
+
+
+&lt;p&gt;Funnily, there's a much earlier usage of the term property-based testing, in the work of George Fink leading up to his PhD thesis. I didn't really look into his system in detail, and it doesn't seem to have taken off, but as far as I can tell there's not much relationship between the two concepts.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-12-14-19:18.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-12-12-14:44.html</id>
     <title>Another attempt at brownies.</title>
-    <updated>2018-12-12T14:44:00+00:00</updated>
+    <updated>2018-12-12T14:47:25+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Another attempt at brownies.&lt;/p&gt;
