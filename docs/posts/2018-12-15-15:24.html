@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+DRMacIver's Notebook: Test-case reduction as graph search
+    </title>
+    <link rel="stylesheet" href="/pygments.css"/>
+    <link rel="stylesheet" href="/tufte.css"/>
+    <link rel="stylesheet" href="/latex.css"/>
+    <link rel="stylesheet" href="/drmnotes.css"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
+});
+</script>
+
+  </head>
+
+  <body>
+    <article>
+        <h1><a href="/">DRMacIver's Notebook</a></h1>
+        <p class=subtitle>Test-case reduction as graph search</p>
+
+        
+
+<section id="the-post">
+<p class=subtitle>Test-case reduction as graph search</p>
+<dl class=metadata>
+<dt>Published</dt>
+<dd class="post-date">2018-12-15</dd>
+</dl>
+
+<p>Attention conservation notice: Infodump of an idea I haven't tried yet. Very poorly explained.</p>
+<p>This is an idea that's been bouncing around in my head a bunch recently and has recently crystalised into an interesting form.</p>
+<p>Suppose you've got a test-case reducer consisting of passes \(r_1, \ldots, r_n\) and are trying to reduce some test-case to a simultaneous-fixed point of all of these passes.
+How do you decide what order to apply the passes in?</p>
+<p>One difficulty is that there are two different things to optimise for: Cost of reduction, and quality of final results.</p>
+<p>However, what I realised recently is that actually this is wrong. You shouldn't be trying to optimise for quality of final results at all.
+That should be implicit in your definition of the passes:
+<em>any</em> final result that you get that is a fixed point of all of your passes is somewhere you can get stuck.
+If you didn't want to get stuck there then you need to define more passes rather than worrying about how to carefully apply your passes so as not to get stuck.</p>
+<p>Given that, our cost model is now easy: We just want to minimize the number of predicate calls.</p>
+<p>And there's a nice way to do this! We can regard the set of test cases satisfying the predicate as a labelled weighted digraph,
+whose vertices are test cases satisfying our predicate,
+and whose edges are labelled with a reduction pass, go to the test case that that pass takes the current one too,
+and carry a cost of number of evaluations made during running that pass.</p>
+<p>This means that we can basically run a shortest path graph search to find a fixed point of all of the reducer passes!
+Except that's not quite right, because we also need to include the cost of verifying that we are at a fixed point.
+So what we are trying to minimize is the total number of reducer calls made during running passes added to the cost of running each path at our destination.</p>
+<p>As this stands, that's probably not a very useful thing to do, but some additional assumptions and tricks let us turn it into an improper version of \(A^*\) search which may well be quite efficient!</p>
+<p>The main trick to note is that we can evaluate passes with other predicates.
+In particular we can evaluate them with a predicate that returns False for everything but its starting point but records its result.</p>
+<p>This gives us two interesting things:</p>
+<ol>
+<li>By doing this for each pass we can work out what the cost of that node would be if it were a fixed point (by counting all of the values considered when running all of the passes).</li>
+<li>We can simultaneously work out a pessimistic speculative version of the graph, which makes the assumption that each pass pays its full cost for the version that always returns False and leads to the worst strict improvement.</li>
+</ol>
+<p>We now do a species of \(A^*\) search as follows:</p>
+<ol>
+<li>For each test-case satisfying our predicate we keep track of the shortest known path to it following the real graph.</li>
+<li>We maintain a priority queue of pairs test-case/reduction pass, keyed off the sum of the actual cost of reaching that test case, the speculative cost of the pass, and the speculative cost of its pessimistic destination.</li>
+<li>We maintain a counter for each test case of the number of reduction passes it is a fixed point of and a total cost of all reduction passes we've run on it.</li>
+<li>We maintain a current shortest path length, initially set to infinity.</li>
+</ol>
+<p>We start by putting our initial test case along with each reduction pass into the queue.
+While the queue is non-empty we iterate the following algorithm:</p>
+<ol>
+<li>We pop the smallest item from the queue.</li>
+<li>If the current real cost is greater than or equal to the current shortest past length, we discard it.</li>
+<li>Similarly if the current real cost is greater than or equal to the current known shortest path to this test case, discard it.</li>
+<li>Otherwise we run the reduction pass on its test case, keeping track of the number of calls made. This gives us a new edge.</li>
+<li>If this edge is a self-loop, add the loop cost to the cost of this test case and increment the counter. If we now know it is a fixed point of all reducers as a result of that, set the current shortest path length to the cost of reaching this test case plus its loop cost.</li>
+<li>Otherwise, if this results in a new shortest path to the destination, put edges for it in the queue (use real ones when known).</li>
+</ol>
+<p>Generally speaking as soon as a pass works we will tend to prioritise it, because it will be lower cost than our pessimistic assumptions,
+but once we've run several passes we will tend to backtrack a bit to see if any of those earlier passes were worth trying after all.</p>
+</section>
+
+    </article>
+<footer>
+Copyright David R. MacIver.
+
+CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
+</footer>
+  </body>
+</html>
