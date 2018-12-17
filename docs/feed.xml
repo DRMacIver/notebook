@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-12-15T15:24:00+00:00</updated>
+  <updated>2018-12-17T13:49:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,65 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-12-17-13:49.html</id>
+    <title>Flying Lessons</title>
+    <updated>2018-12-17T13:49:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Flying Lessons&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-12-17&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;For a long time I've been using Douglas Adams's flying lessons in "So Long And Thanks For All The Fish" as a very useful analogy for a certain type of lesson.&lt;/p&gt;
+
+
+&lt;p&gt;In my head the instructions Arthur gives to Fenchurch on how to fly go roughly "First left up your left foot, then lift up your right foot". The analogy being that I find that a lot of instructions (e.g. for meditation) consist of a sequence of individually reasonable steps but put together I can't help but feel like &lt;em&gt;something&lt;/em&gt; is missing.&lt;/p&gt;
+
+
+&lt;p&gt;I've just looked up the actual instructions:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;‘Ask me how I did that.’
+‘How... did you do that?’
+‘No idea. Not a clue.’
+She shrugged in bewilderment.
+‘So how can I . . . ?’
+Arthur bobbed down a little lower and held out his hand.
+‘I want you to try,’ he said, ‘to step onto my hand. Just one foot.’
+‘What?’
+‘Try it.’
+Nervously, hesitantly, almost, she told herself, as if she was trying to step onto the hand of someone who was floating in front of her in mid-air, she stepped onto his hand.
+‘Now the other.’
+‘What?’
+‘Take the weight off your back foot.’
+‘I can’t.’
+‘Try it.’
+‘Like this?’
+‘Like that.’
+Nervously, hesitantly, almost, she told herself, as if - She stopped telling herself what what she was doing was like because she had a feeling she didn’t altogether want to know. She fixed her eyes very very firmly on the guttering of the roof of the decrepit warehouse opposite which had been annoying her for weeks because it was clearly going to fall off and she wondered if anyone was going to do anything about it or whether she ought to say something to somebody, and didn’t think for a moment about the fact that she was standing on the hands of someone who wasn’t standing on anything at all.
+‘Now,’ said Arthur, ‘take your weight off your left foot.’
+She thought that the warehouse belonged to the carpet company who had their offices round the corner, and took her weight off her left foot, so she should probably go and see them about the gutter.
+‘Now,’ said Arthur, ‘take the weight off your right foot.’
+‘I can’t.’
+‘Try.’&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;I'm not sure if this works better or worse than the version I remembered. They're much more detailed, but they more directly state the core message of forgetting that what you're trying to do is impossible and just do it anyway. The big problem with that message is that what &lt;em&gt;actually&lt;/em&gt; happens when you do that is that you fall down.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-12-17-13:49.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-12-15-15:24.html</id>
     <title>Test-case reduction as graph search</title>
-    <updated>2018-12-15T15:24:00+00:00</updated>
+    <updated>2018-12-15T16:22:18+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Test-case reduction as graph search&lt;/p&gt;
