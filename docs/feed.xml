@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-12-17T13:49:00+00:00</updated>
+  <updated>2018-12-18T15:44:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,58 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-12-18-15:44.html</id>
+    <title>Derivative of a polynomial with real roots</title>
+    <updated>2018-12-18T15:44:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Derivative of a polynomial with real roots&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-12-18&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Theorem: Let \(P\) be a polynomial with real roots. Its derivative, \(P'\), also has real roots.&lt;/p&gt;
+
+
+&lt;p&gt;Note that there is something essentially analytic going on here, because the theorem is false if you replace "real" with "rational":
+Consider the polynomial \((x^2 - 1)(x + 2) = x^3 + 2x^2 - x -2\). This obviously has real roots (they are \(-1, 1, -2\)), but its derivative is \(3x^2 + 4x - 1\) which has roots at \(\frac{-2 \pm \sqrt{7}}{6}\), which are not rational.&lt;/p&gt;
+
+
+&lt;p&gt;This isn't hard to prove but I found my first proof of it a little unsatisfying - there's an easy bit and then an annoying thing you have to do to patch it up.
+I &lt;a href="https://twitter.com/DRMacIver/status/1075013004708757504"&gt;asked on Twitter for nice proofs&lt;/a&gt;, and there is indeed a nicer proof using an only modestly large hammer of the &lt;a href="https://en.wikipedia.org/wiki/Gauss%E2%80%93Lucas_theorem"&gt;Gauss-Lucas theorem&lt;/a&gt; which I hadn't previously encountered and is indeed very neat. This states that the roots of the derivative of any polynomial lie in the convex hull of the roots of the polynomial. In particular because the reals form a convex set, if the roots are real then so are the roots of the derivative.&lt;/p&gt;
+
+
+&lt;p&gt;This is a note about the other... I don't really want to say it's more elementary, because in some sense it's less elementary, but the one that most people seemed to naturally reach for.&lt;/p&gt;
+
+
+&lt;p&gt;Lemma: Suppose \(P\) has a root at \(w\) with multiplicity \(k &amp;gt; 1\). Then \(P'\) has a root at \(w\) with multiplicity at least \(k - 1\).&lt;/p&gt;
+
+
+&lt;p&gt;Proof: Let \(P(x) = (x - w)^k Q(x)\). Then \(P'(x) = (x - w)^{k - 1}(k Q(x) + (x - w) Q'(x))\), so has a root of multiplicity at least (k - 1\0 desired (as the right hand side is a polynomial).&lt;/p&gt;
+
+
+&lt;p&gt;Lemma: Suppose \(P\) has distinct roots \(x_1 &amp;lt; \ldots &amp;lt; x_k\), then there are \(y_k\) with \(x_1 &amp;lt; y_1 &amp;lt; x_2 &amp;lt; \ldots &amp;lt; y_{k - 1} &amp;lt; x_k\) and \(P'(y_i) = 0\).&lt;/p&gt;
+
+
+&lt;p&gt;Proof: Rolle's theorem. \(P(x_i) = P(x_{i + 1}) = 0\) so there is some \(y_i\) with \(x_i &amp;lt; y_i &amp;lt; x_{i + 1}\) and \(P'(y_i) = 0\).&lt;/p&gt;
+
+
+&lt;p&gt;Proof of theorem: Let \(x_1 &amp;lt; \ldots &amp;lt; x_k\) be the roots of \(P\) with multiplicities \(n_i\). Then by Lemma 1 we have at least \(\sigma (n_i - 1) = n - k\) roots at the real values \(x_i\) and by Lemma 2 we have \(k - 1\) real \(y_i\) with roots, giving us a total of \(n - k + k - 1 = n - 1\) roots. \(P'\) is a polynomial of degree \(n - 1\) so only &lt;em&gt;has&lt;/em&gt; \(n - 1\) roots, thus we have accounted for them all.&lt;/p&gt;
+
+
+&lt;p&gt;As an amusing alternative you can use a density argument (the set of polynomials with distinct roots is dense in the set of polynomials with real roots, the derivative function is continuous on the set of polynomials of degree at most \(n\), and the set of polynomials with real roots is closed), but this seems like overkill.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-12-18-15:44.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-12-17-13:49.html</id>
     <title>Flying Lessons</title>
-    <updated>2018-12-17T13:49:00+00:00</updated>
+    <updated>2018-12-17T13:57:27+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Flying Lessons&lt;/p&gt;
