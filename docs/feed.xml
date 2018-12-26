@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-12-18T15:44:00+00:00</updated>
+  <updated>2018-12-25T23:07:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,52 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2018-12-25-23:07.html</id>
+    <title>Book Review: The Cooking Gene by Michael W. Twitty</title>
+    <updated>2018-12-25T23:07:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Book Review: The Cooking Gene by Michael W. Twitty&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2018-12-25&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I would describe this book as "good but not great", which is a shame because a lot about it is very good.
+This is a powerfully written book about the (black) author's experiences travelling around the south and learning about his ancestry.
+I learned a bunch of interesting and important details about:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;the &lt;a href="https://www.currentaffairs.org/2017/09/the-question-of-cultural-appropriation"&gt;cultural exploitation&lt;/a&gt; of African American cuisine.&lt;/li&gt;
+&lt;li&gt;some of the ways in which food has been intensely political, especially in the USA's history of enslavement.&lt;/li&gt;
+&lt;li&gt;the important cultural role food has played in people hanging on to their history.&lt;/li&gt;
+&lt;li&gt;the difficulty of retracing your lineage and history when much of it has been forcibly destroyed by slavery.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;Unfortunately, &lt;em&gt;most&lt;/em&gt; of what I learned was details. The book meanders quite a lot, with very little in the way of unifying direction or synthesis,
+and often repeats itself.
+It felt more like a collection of essays that had loosely been edited together into a book, without any attempt to really tie them together or unify their content.&lt;/p&gt;
+
+
+&lt;p&gt;This would be fine in principle, except the book is quite long.
+The length is not in and of itself unwarranted - I would certainly have happily read a book of the same length on the same subject if I felt the length was well used - but it made me significantly more impatient with its structural flaws,
+and the result is a book that is locally very well written but globally fails to hold together, and as a result by the end of the book I was mostly impatient for it to be over despite mostly liking it.&lt;/p&gt;
+
+
+&lt;p&gt;I don't regret reading it, and I'm going to keep it around for a bit (mostly to try out a few of the recipes that are sprinkled throughout it), but I don't feel like I can really recommend it to anyone whose reading time or rate are more constrained than mine.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2018-12-25-23:07.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-12-18-15:44.html</id>
     <title>Derivative of a polynomial with real roots</title>
-    <updated>2018-12-18T15:44:00+00:00</updated>
+    <updated>2018-12-18T16:31:09+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Derivative of a polynomial with real roots&lt;/p&gt;
