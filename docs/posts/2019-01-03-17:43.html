@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+DRMacIver's Notebook: Using unsound A* search to improve a greedy algorithm
+    </title>
+    <link rel="stylesheet" href="/pygments.css"/>
+    <link rel="stylesheet" href="/tufte.css"/>
+    <link rel="stylesheet" href="/latex.css"/>
+    <link rel="stylesheet" href="/drmnotes.css"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
+});
+</script>
+
+  </head>
+
+  <body>
+    <article>
+        <h1><a href="/">DRMacIver's Notebook</a></h1>
+        <p class=subtitle>Using unsound A* search to improve a greedy algorithm</p>
+
+        
+
+<section id="the-post">
+<p class=subtitle>Using unsound A* search to improve a greedy algorithm</p>
+<dl class=metadata>
+<dt>Published</dt>
+<dd class="post-date">2019-01-03</dd>
+</dl>
+
+<p>I figured out something quite neat today,
+which is that you can use improper \(A^*\) search to find a good set of test-case reduction pass orderings.</p>
+<p>The basic idea is that you have some set of interesting test cases \(X\) a number of reduction passes \(f_i: X \to (\mathbb{N}^+, X)\) with \(f(x)_1 \leq x\).
+The pass returns a shrink (possibly the same value) and a cost (i.e. number of test evaluations) of getting there.
+We're looking for a minimum cost sequence of applications of the \(f_i\) until we get to a fixed point.</p>
+<p>This can be viewed as a graph search problem. Each \(f_i\) defines an edge of weight \(f_i(x)_0\) from \(x\) to \(f_i(x)_1\).
+You can run Dijsktra's algorithm to find an exact shortest path to a fixed point,
+but this takes basically forever.</p>
+<p>\(A^*\) is an algorithm that speeds up Dijsktra by using a lower bound on the possible path length to preferentially select good directions.
+There's no way to run a <em>proper</em> version of \(A^*\) because the problem is not well enough posed to get a good lower bound on the cost of reduction,
+but you can run an improper one by setting that lower bound heuristic to whatever you like.
+Depending on how close it is to being a true lower bound you may still get a good path which may or may not be optimal (in my experiments it seems to be within about 10-20% of optimal, which is pretty good).</p>
+<p>The trick for test-case reduciton is that greedy search works pretty well but not brilliantly.
+You can set the lower bound heuristic to be the cost of running a greedy search (I'm using one which always selects the lowest cost edge that makes progress).
+This then ensures that your lower bound always corresponds to the cost of <em>some</em> path, even if it's not the optimal one. In particular if you wanted it to be this could become an any time algorithm.</p>
+<p>I suspect this trick generalises but I haven't quite figured out its essential characteristics yet.</p>
+</section>
+
+    </article>
+<footer>
+Copyright David R. MacIver.
+
+CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
+</footer>
+  </body>
+</html>

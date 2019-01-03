@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-12-25T23:07:00+00:00</updated>
+  <updated>2019-01-03T17:43:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,54 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2019-01-03-17:43.html</id>
+    <title>Using unsound A* search to improve a greedy algorithm</title>
+    <updated>2019-01-03T17:43:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Using unsound A* search to improve a greedy algorithm&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2019-01-03&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I figured out something quite neat today,
+which is that you can use improper \(A^*\) search to find a good set of test-case reduction pass orderings.&lt;/p&gt;
+
+
+&lt;p&gt;The basic idea is that you have some set of interesting test cases \(X\) a number of reduction passes \(f_i: X \to (\mathbb{N}^+, X)\) with \(f(x)_1 \leq x\).
+The pass returns a shrink (possibly the same value) and a cost (i.e. number of test evaluations) of getting there.
+We're looking for a minimum cost sequence of applications of the \(f_i\) until we get to a fixed point.&lt;/p&gt;
+
+
+&lt;p&gt;This can be viewed as a graph search problem. Each \(f_i\) defines an edge of weight \(f_i(x)_0\) from \(x\) to \(f_i(x)_1\).
+You can run Dijsktra's algorithm to find an exact shortest path to a fixed point,
+but this takes basically forever.&lt;/p&gt;
+
+
+&lt;p&gt;\(A^*\) is an algorithm that speeds up Dijsktra by using a lower bound on the possible path length to preferentially select good directions.
+There's no way to run a &lt;em&gt;proper&lt;/em&gt; version of \(A^*\) because the problem is not well enough posed to get a good lower bound on the cost of reduction,
+but you can run an improper one by setting that lower bound heuristic to whatever you like.
+Depending on how close it is to being a true lower bound you may still get a good path which may or may not be optimal (in my experiments it seems to be within about 10-20% of optimal, which is pretty good).&lt;/p&gt;
+
+
+&lt;p&gt;The trick for test-case reduciton is that greedy search works pretty well but not brilliantly.
+You can set the lower bound heuristic to be the cost of running a greedy search (I'm using one which always selects the lowest cost edge that makes progress).
+This then ensures that your lower bound always corresponds to the cost of &lt;em&gt;some&lt;/em&gt; path, even if it's not the optimal one. In particular if you wanted it to be this could become an any time algorithm.&lt;/p&gt;
+
+
+&lt;p&gt;I suspect this trick generalises but I haven't quite figured out its essential characteristics yet.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2019-01-03-17:43.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2018-12-25-23:07.html</id>
     <title>Book Review: The Cooking Gene by Michael W. Twitty</title>
-    <updated>2018-12-25T23:07:00+00:00</updated>
+    <updated>2018-12-26T13:01:18+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Book Review: The Cooking Gene by Michael W. Twitty&lt;/p&gt;
