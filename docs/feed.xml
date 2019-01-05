@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-01-03T17:43:00+00:00</updated>
+  <updated>2019-01-05T10:18:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,38 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2019-01-05-10:18.html</id>
+    <title>Book Review: Aphantasia: Experiences, Perceptions, and Insights, by Alan Kendle</title>
+    <updated>2019-01-05T10:18:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Book Review: Aphantasia: Experiences, Perceptions, and Insights, by Alan Kendle&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2019-01-05&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I didn't find this book very interesting. You might find it more interesting if you don't have aphantasia and are one of the people who find its existence mind-blowing,
+but most of this book was very obvious to me as someone who has had aphantasia and talked to a bunch of other people with it.&lt;/p&gt;
+
+
+&lt;p&gt;The big problem with it for me was that it made no real attempt at science or synthesis. It was just a bunch of people talking about their personal experience.
+I can see why that seems interesting in principle, but the problem in practice is that it's a bunch of people trying to generalise about a vastly heterogenous experience from their personal &lt;code&gt;n=1&lt;/code&gt; sample.
+As a result I didn't find it very informative.&lt;/p&gt;
+
+
+&lt;p&gt;This book will probably get passed on to some acquaintance who is more curious or less informed about other people's experiences of aphantasia than I am.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2019-01-05-10:18.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2019-01-03-17:43.html</id>
     <title>Using unsound A* search to improve a greedy algorithm</title>
-    <updated>2019-01-03T17:43:00+00:00</updated>
+    <updated>2019-01-03T18:07:27+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Using unsound A* search to improve a greedy algorithm&lt;/p&gt;
