@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-01-06T21:27:00+00:00</updated>
+  <updated>2019-01-14T15:54:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,66 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2019-01-14-15:54.html</id>
+    <title>Reducer Pass Budgeting</title>
+    <updated>2019-01-14T15:54:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Reducer Pass Budgeting&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2019-01-14&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;One of the hard problems in designing test-case reducers is pass ordering: You've split the reducer up into a number of different passes,
+now you want to know what order to run them in.&lt;/p&gt;
+
+
+&lt;p&gt;A lot of why this is tricky is that some passes you just really don't want to run until you have to because they're much more expensive.
+I'm currently exploring a solution to this problem that mostly avoids it by just making that not the case.&lt;/p&gt;
+
+
+&lt;p&gt;The solution is &lt;em&gt;budgeting&lt;/em&gt; - running a reduction pass with a maximum number of calls it's allowed to make.&lt;/p&gt;
+
+
+&lt;p&gt;The following algorithm seems to work fairly well:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Set the budget to infinity, mark all passes as active.&lt;/li&gt;
+&lt;li&gt;For each active reduction pass:&lt;ol&gt;
+&lt;li&gt;Run it, but halt it once it has made a number of &lt;em&gt;unsuccessful&lt;/em&gt; calls that exceed the current budget.&lt;/li&gt;
+&lt;li&gt;If it succeeded, set the budget to something appropriate. I'm currently trying double the mean number of calls made by a successful pass on this run through.&lt;/li&gt;
+&lt;li&gt;If it failed, mark the pass as inactive.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;If the number of active passes is one or fewer, mark all passes as active.&lt;/li&gt;
+&lt;li&gt;If no passes made progress, halt (note that the budget is infinite unless a pass has made progress, so this doesn't affect correctness). Otherwise go back to step 2.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;This seems to do a pretty decent job of keeping the badly behaved passes under control while still making good progress.&lt;/p&gt;
+
+
+&lt;p&gt;Other things I have tried:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Starting the budget low and working upwards causes a lot of wasted work.&lt;/li&gt;
+&lt;li&gt;Being more aggressive with lowering the budget on each pass does the same.&lt;/li&gt;
+&lt;li&gt;Allowing just a single pass to remain active tends to result in a lot of pointless small shrinks and not much useful progress.&lt;/li&gt;
+&lt;/ol&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2019-01-14-15:54.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2019-01-06-21:27.html</id>
     <title>Brexit Prep</title>
-    <updated>2019-01-06T21:27:00+00:00</updated>
+    <updated>2019-01-06T21:57:36+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Brexit Prep&lt;/p&gt;
