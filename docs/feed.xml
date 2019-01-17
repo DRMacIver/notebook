@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-01-17T10:56:00+00:00</updated>
+  <updated>2019-01-17T11:01:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,72 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2019-01-17-11:01.html</id>
+    <title>Onion, Bacon, and Potato Pancakes</title>
+    <updated>2019-01-17T11:01:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Onion, Bacon, and Potato Pancakes&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2019-01-17&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;One of the things I miss about not being able to eat wheat and dairy is pancakes.
+I'm currently experimenting with fixing this.&lt;/p&gt;
+
+
+&lt;p&gt;The main thing I've learned is that potato starch works &lt;em&gt;really&lt;/em&gt; well as a flour substitute for this, to the point where I almost prefer it to real flour.
+Unfortunately I haven't yet figured out how to make pancakes without dairy that taste normal and aren't a bit boring. The baseline is fine but a bit bland.&lt;/p&gt;
+
+
+&lt;p&gt;This was an attempt to pull the pancakes slightly in the direction of more conventional potato pancakes flavour wise. I would describe it as "worked pretty well but needs work".&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;1 cup potato starch&lt;/li&gt;
+&lt;li&gt;6 rashers unsoked bacon&lt;/li&gt;
+&lt;li&gt;1 medium onion&lt;/li&gt;
+&lt;li&gt;3 medium duck eggs&lt;/li&gt;
+&lt;li&gt;\(\frac{1}{2}\) tsp bicarbonate of soda&lt;/li&gt;
+&lt;li&gt;\(\frac{1}{2}\) tsp cream of tartar&lt;/li&gt;
+&lt;li&gt;lots of sunflower oil&lt;/li&gt;
+&lt;li&gt;lots of black pepper&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;Preparation steps:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Dice the onion and chop up the bacon. Fry it in oil until browned.&lt;/li&gt;
+&lt;li&gt;Put everything in a food processor and blend until smooth&lt;/li&gt;
+&lt;li&gt;Add more oil to the pan, spoon pancake mix into it, and fry. Flip over a couple of times.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;Unlike my normal pancake recipe, using potato flour seems to demand a fairly well oiled pan and a much higher heat.&lt;/p&gt;
+
+
+&lt;p&gt;Things I would change next time:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;I think the addition of the bacon was a mistake. It might work well &lt;em&gt;with&lt;/em&gt; bacon, but it's a bit weird in the pancakes.&lt;/li&gt;
+&lt;li&gt;More rising agent&lt;/li&gt;
+&lt;li&gt;Less black pepper&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2019-01-17-11:01.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2019-01-17-10:56.html</id>
     <title>Some female SFF authors to read</title>
-    <updated>2019-01-17T10:56:00+00:00</updated>
+    <updated>2019-01-17T11:00:14+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Some female SFF authors to read&lt;/p&gt;
