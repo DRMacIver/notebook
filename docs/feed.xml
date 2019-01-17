@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-01-14T15:54:00+00:00</updated>
+  <updated>2019-01-17T10:56:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,45 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2019-01-17-10:56.html</id>
+    <title>Some female SFF authors to read</title>
+    <updated>2019-01-17T10:56:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Some female SFF authors to read&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2019-01-17&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Elsewhere someone was noting that their bookshelf was looking very male dominated and asked for a recommendation of good books by women that they could read.
+Here's the list I gave them.&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Louis McMaster Bujold is one of my favourite authors. Top pick are definitely the Vorkosigan books, but her Chalion books and her Penric books are also very good. I like the others outside those, but they're not as strong and are definitely more of an aqcuired taste.&lt;/li&gt;
+&lt;li&gt;Celia Friedman (Also writes as C.S Friedman) is reliably good. Tends towards faustian bargains with likeable characters who would be villains in almost any other setting. The Magister series (Fantasy, starts with Feast of Souls) or The Madness Season (one off scifi) are probably the best ones.&lt;/li&gt;
+&lt;li&gt;Everything T. Kingfisher (alternate pen name of Ursula Vernon, who wrote the webcomic Digger) writes is great. Fun/cute yet lightly cynical modern fantasy with a hefty helping of weird mythology. Clockwork Boys would be a good starting point, though I like her earlier work too.&lt;/li&gt;
+&lt;li&gt;Ruthanna Emry's "Innsmouth Legacy" (The Lovecraft mythos from the point of view of the survivors of the US government's genocide against the people of Innsmouth) is one of the few instances of Lovecraft derived fiction genuinely worth reading.&lt;/li&gt;
+&lt;li&gt;Jo Walton's "Thessaly" books are a very good read - an attempt to build plato's republic run by greek gods and robots. Her "My Real Children" is an extremely good but fairly emotionally harrowing book about alternate histories and the spiralling effect of small decisions.&lt;/li&gt;
+&lt;li&gt;N. K. Jemisin's "The Fifth Season" and sequels. Interesting deep time/post apocalyptic fantasy. Recently won a Hugo.&lt;/li&gt;
+&lt;li&gt;It's been a while since I've read her, so my memory is a bit blurry, but Hilari Bell does fantasy which is typically centered around providing multiple competing viewpoints on the same events (e.g. the story versus the legend told afterwards, or two characters who each more or less rightly perceive themselves as the hero and the other as the villain).&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;There are a &lt;em&gt;lot&lt;/em&gt; more I could recommend as for a variety of reasons (mostly unintentional, but with some deliberate selection once I noticed the pattern) I tend to mostly read fiction written by women,
+but this is a pretty good "top pick" list.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2019-01-17-10:56.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2019-01-14-15:54.html</id>
     <title>Reducer Pass Budgeting</title>
-    <updated>2019-01-14T15:54:00+00:00</updated>
+    <updated>2019-01-14T16:00:37+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Reducer Pass Budgeting&lt;/p&gt;
