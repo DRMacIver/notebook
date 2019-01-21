@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-01-17T11:01:00+00:00</updated>
+  <updated>2019-01-21T15:56:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,55 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2019-01-21-15:56.html</id>
+    <title>Book Review: A Paradise Built in Hell by Rebecca Solnit</title>
+    <updated>2019-01-21T15:56:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Book Review: A Paradise Built in Hell by Rebecca Solnit&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2019-01-21&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;This book was very good. The subject was interesting, and Rebecca Solnit remains an excellent writer.
+It took me a surprisingly long time to read despite not being particularly long by page count.
+It took me about three weeks, which means it's probably a multiple month book for people who read less or more slowly than me.
+I'm not entirely sure why, and this may be due to external factors distracting me, but if you are not a fast reader this means my recommendation is more qualified.&lt;/p&gt;
+
+
+&lt;p&gt;The claim of the book (which is supported by the reports she provides from a lot of individual disasters. It's mostly anecdotal / qualitative, but the reports are reasonably convincing nevertheless) is that the portrayal of how people behave in disasters is backwards: People on the ground &lt;em&gt;don't&lt;/em&gt; panic and descend into chaos, instead they band together and look out for eachother. It's the kind of anarchy that means bottom up organisation, not the kind of anarchy that means chaos.&lt;/p&gt;
+
+
+&lt;p&gt;There are some exceptions to this of course:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Typically in a disaster the &lt;em&gt;people in charge&lt;/em&gt; panic. The term Solnit uses for this is "elite panic". Often much of the damage done in a disaster is caused or exarcerbated by the authority's responses to it.&lt;/li&gt;
+&lt;li&gt;People who believe in the looters narrative will often "defend" themselves against people who are just trying to survive and have no interest or intention in harming them. This is particularly the case when racism is a factor - she gives the example of white people in New Orleans after Katrina who murdered many entirely innocent black people, claiming that they were defending their property against looters despite no obvious intention of looting.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;In general she is extremely negative about "looting" as a concept, which is fair enough. The point she makes in this regard is that it essentially covers two entirely different things: The sensible and ethically justified requisitioning of supplies in the breakdown of a market economy (if you're in the middle of a disaster and nothing is running then &lt;em&gt;of course&lt;/em&gt; you should break into a supermarket to get food and medicines) and the use of a disaster for opportunistic theft. The latter is a relatively rare occurrence, a relatively minor problem, and tends only to occur in cases of extreme breakdown of society with high prior inequality. Further, atttempts to prevent it are more likely to prevent the entirely justifiable requisitioning, and people who are there to "prevent" it are likely to engage in it themselves.&lt;/p&gt;
+
+
+&lt;p&gt;There is an interesting tie in between this and the "Production of Ignorance" discussed in CN Lester's "Trans Like Me" (see &lt;a href="https://notebook.drmaciver.com/posts/2018-11-12-06:24.html"&gt;my prior review here&lt;/a&gt;),
+which is that much of the harm caused by disasters is caused by these false narratives of how people behave during them.&lt;/p&gt;
+
+
+&lt;p&gt;The other half of the point made in the book is that far from being a terrible experience for the people involved, often people who survive disasters remember it as a time of joy.
+Everyone bands together with a common cause, and the utopian communities they form to help one another out form a profound source of meaning, which is absent from day to day life.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2019-01-21-15:56.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2019-01-17-11:01.html</id>
     <title>Onion, Bacon, and Potato Pancakes</title>
-    <updated>2019-01-17T11:01:00+00:00</updated>
+    <updated>2019-01-17T11:11:55+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Onion, Bacon, and Potato Pancakes&lt;/p&gt;
