@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-01-24T09:57:40+00:00</updated>
+  <updated>2019-01-26T10:46:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,70 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2019-01-26-10:46.html</id>
+    <title>Recipe Write-Up: Not really Soboro</title>
+    <updated>2019-01-26T10:46:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Recipe Write-Up: Not really Soboro&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2019-01-26&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Soboro is &lt;a href="https://www.contemplatingsweets.com/ground-beef-soboro/"&gt;a Japanese sweet beef dish&lt;/a&gt; that a friend told me about.
+I've never actually had it, but it sounded good.&lt;/p&gt;
+
+
+&lt;p&gt;In a typical Western cook manner, I decided to take this recipe I have never tasted an authentic version of and mangle it completely,
+using none of the intended ingredients.
+The result can at best be described as "soboro inspired", but is sufficiently good that I don't feel too guilty about its inauthenticity.&lt;/p&gt;
+
+
+&lt;h3&gt;Ingredients&lt;/h3&gt;
+
+
+&lt;p&gt;There are no quantities in this recipe because I have no idea what quantitites I used.&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Sunflower oil&lt;/li&gt;
+&lt;li&gt;Spring onions&lt;/li&gt;
+&lt;li&gt;Fresh Ginger&lt;/li&gt;
+&lt;li&gt;Ground beef&lt;/li&gt;
+&lt;li&gt;Soy Sauce (gluten free kikkoman)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://amzn.to/2RRogbh"&gt;Clearspring Brown Rice Vinegar&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Honey&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;(I didn't have the correct ingredients so basically went for roughly the right flavour profile, and honey + soy sauce + brown rice vinegat did a pretty good job of getting what I imagine to be the correct umami/sweet/sour flavour. I think real soboro is sweeter than what I made but I wouldn't have wanted it much sweeter).&lt;/p&gt;
+
+
+&lt;p&gt;To give a ballpark idea I used about 1kg of ground beef and probably about 5 or 6 spring onions and a couple inches of ginger.
+The sauce I made filled a mug and wasn't quite enough so I added more of the liquid ingredients as I went, with roughly equal proportions of vinegar and soy sauce.&lt;/p&gt;
+
+
+&lt;h3&gt;Cooking&lt;/h3&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Chop and fry the spring onions and ginger (traditionally you would put raw spring onion on top of the soboro. I hate raw alium in all its forms).&lt;/li&gt;
+&lt;li&gt;Once those are well cooked, add the beef. Stir and break it up until it is mostly browned and well separated.&lt;/li&gt;
+&lt;li&gt;Add the honey, brown rice vinegar, and soy sauce, stir, then reduce heat, cover and simmer. Keep an eye on it, stirring occasionally. It is done when the liquid is all absorbed.&lt;/li&gt;
+&lt;li&gt;Serve. I served it with brown rice and steamed green beans because I serve everything with steamed green beans and I wanted to try out &lt;a href="https://amzn.to/2Ted59f"&gt;the brown rice I bought for Brexit prep&lt;/a&gt; (verdict: it's very good brown rice and I'll probably buy another bag as I expect to use most of this one before March).&lt;/li&gt;
+&lt;/ol&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2019-01-26-10:46.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2019-01-24-09:09.html</id>
     <title>Book Review: Every Cradle is a Grave by Sarah Perry</title>
-    <updated>2019-01-24T09:57:40+00:00</updated>
+    <updated>2019-01-24T10:02:49+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Book Review: Every Cradle is a Grave by Sarah Perry&lt;/p&gt;
