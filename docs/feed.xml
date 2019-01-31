@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-01-28T14:06:00+00:00</updated>
+  <updated>2019-01-31T13:17:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,54 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2019-01-31-13:17.html</id>
+    <title>Reducing the Reduction Pass Ordering Problem</title>
+    <updated>2019-01-31T13:17:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Reducing the Reduction Pass Ordering Problem&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2019-01-31&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Most test-case reducers are composed of many different passes, each performing a different class of operation.
+For example, you might have a pass that reorders values and a pass that deletes them.&lt;/p&gt;
+
+
+&lt;p&gt;The reduction pass ordering problem is that what order you run these passes in can have a &lt;em&gt;huge&lt;/em&gt; impact on performance,
+and a moderate impact on the quality of end result.&lt;/p&gt;
+
+
+&lt;p&gt;I'm starting to be of the opinion however that this is an illusion, caused by the fact that our reduction passes are too large.
+If you have a reduction pass that, say, tries deleting each element, then when you start from \(N\) elements you could instead just have \(N\) reduction passes that try deleting a single element.&lt;/p&gt;
+
+
+&lt;p&gt;Once you've made your reduction passes this small, running any given pass is very cheap, and it seems like then &lt;em&gt;most&lt;/em&gt; orderings do a pretty good job.
+For example, the following seems to work pretty well as the core loop of a reducer:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Generate the set of all reduction passes that could have an effect on the current reducer.&lt;/li&gt;
+&lt;li&gt;Run them in a random order.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;This works particularly well if your passes are adaptive, so that they make \(O(1)\) SUT calls when they fail to do anything and may make up to \(O(\log(k))\) calls when making \(k\) to achieve progress equivalent to running \(k\) appropriate choices of pass from the same category (e.g. deleting an interval around the element).&lt;/p&gt;
+
+
+&lt;p&gt;It does seem possible to do better than uniformly at random for choosing these, but there doesn't really seem to be more than a factor of two variation regardless of how clever you are with your ordering (unless I'm missing an option that is better than anything I've tried so far).&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2019-01-31-13:17.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2019-01-28-14:06.html</id>
     <title>Vegan Chartreuse Hot Chocolate</title>
-    <updated>2019-01-28T14:06:00+00:00</updated>
+    <updated>2019-01-28T14:11:20+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Vegan Chartreuse Hot Chocolate&lt;/p&gt;

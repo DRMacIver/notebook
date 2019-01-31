@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+DRMacIver's Notebook: Reducing the Reduction Pass Ordering Problem
+    </title>
+    <link rel="stylesheet" href="/pygments.css"/>
+    <link rel="stylesheet" href="/tufte.css"/>
+    <link rel="stylesheet" href="/latex.css"/>
+    <link rel="stylesheet" href="/drmnotes.css"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
+});
+</script>
+
+  </head>
+
+  <body>
+    <article>
+        <h1><a href="/">DRMacIver's Notebook</a></h1>
+        <p class=subtitle>Reducing the Reduction Pass Ordering Problem</p>
+
+        
+
+<section id="the-post">
+<p class=subtitle>Reducing the Reduction Pass Ordering Problem</p>
+<dl class=metadata>
+<dt>Published</dt>
+<dd class="post-date">2019-01-31</dd>
+</dl>
+
+<p>Most test-case reducers are composed of many different passes, each performing a different class of operation.
+For example, you might have a pass that reorders values and a pass that deletes them.</p>
+<p>The reduction pass ordering problem is that what order you run these passes in can have a <em>huge</em> impact on performance,
+and a moderate impact on the quality of end result.</p>
+<p>I'm starting to be of the opinion however that this is an illusion, caused by the fact that our reduction passes are too large.
+If you have a reduction pass that, say, tries deleting each element, then when you start from \(N\) elements you could instead just have \(N\) reduction passes that try deleting a single element.</p>
+<p>Once you've made your reduction passes this small, running any given pass is very cheap, and it seems like then <em>most</em> orderings do a pretty good job.
+For example, the following seems to work pretty well as the core loop of a reducer:</p>
+<ol>
+<li>Generate the set of all reduction passes that could have an effect on the current reducer.</li>
+<li>Run them in a random order.</li>
+</ol>
+<p>This works particularly well if your passes are adaptive, so that they make \(O(1)\) SUT calls when they fail to do anything and may make up to \(O(\log(k))\) calls when making \(k\) to achieve progress equivalent to running \(k\) appropriate choices of pass from the same category (e.g. deleting an interval around the element).</p>
+<p>It does seem possible to do better than uniformly at random for choosing these, but there doesn't really seem to be more than a factor of two variation regardless of how clever you are with your ordering (unless I'm missing an option that is better than anything I've tried so far).</p>
+</section>
+
+    </article>
+<footer>
+Copyright David R. MacIver.
+
+CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
+</footer>
+  </body>
+</html>
