@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-01-31T13:17:00+00:00</updated>
+  <updated>2019-02-02T13:20:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,47 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2019-02-02-13:20.html</id>
+    <title>TV Show Review: A Series of Unfortunate Events</title>
+    <updated>2019-02-02T13:20:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;TV Show Review: A Series of Unfortunate Events&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2019-02-02&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I nearly stopped watching this show quite early on, due to violently felt distress.
+My reaction appears to be idiosyncratic, and after perservering for a bit I mostly got past that.
+I still found the show quite unsettling - something about being surrounded by people who have power of you, are obviously wrong, and will not listen to anything you have to say on the subject is very stressful to me.&lt;/p&gt;
+
+
+&lt;p&gt;It's probably less stressful watching it as a child, as it's probably a fairly accurate rendition of their reality.
+It's a very dark show, but as the Chesterton line goes:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Fairy tales do not give the child his first idea of bogey. What fairy tales give the child is his first clear idea of the possible defeat of bogey. The baby has known the dragon intimately ever since he had an imagination. What the fairy tale provides for him is a St. George to kill the dragon.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;In contrast, watching as an adult, you know that when St George valiantly fights dragons he is likely to die a violent fiery death.&lt;/p&gt;
+
+
+&lt;p&gt;Distress aside, it's an odd show. I think I liked it more for how peculiar it was than any real merit on its part.
+It felt like it had a lot of underexplored characters, which I think is partly because of how it was adapted from the books - one book per two episodes is not a lot of screen time to get to know people in.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2019-02-02-13:20.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2019-01-31-13:17.html</id>
     <title>Reducing the Reduction Pass Ordering Problem</title>
-    <updated>2019-01-31T13:17:00+00:00</updated>
+    <updated>2019-01-31T13:27:26+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Reducing the Reduction Pass Ordering Problem&lt;/p&gt;
