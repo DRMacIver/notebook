@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-02-02T13:20:00+00:00</updated>
+  <updated>2019-02-04T09:26:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,47 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2019-02-04-09:26.html</id>
+    <title>Updating Random Samplers</title>
+    <updated>2019-02-04T09:26:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Updating Random Samplers&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2019-02-04&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I often struggle to refind the references for this, so this is mostly a note to self for future reference.&lt;/p&gt;
+
+
+&lt;p&gt;If you want to randomly sample from \(N\) items with probability of picking \(i\) proportional to \(w_i &amp;gt; 0\)
+you can use &lt;a href="http://www.keithschwarz.com/darts-dice-coins/"&gt;the Alias method&lt;/a&gt; for this and it works very well.&lt;/p&gt;
+
+
+&lt;p&gt;Suppose now you want to be able to update the weights.
+It turns out this is possible in morally-\(O(1)\) time (one of the algorithms linked is \(O(\log(n^*))\), which is the smallest \(k\) such that \(\log^k(n) &amp;lt; 1\). This isn't quite Inverse Ackermann levels of morally-\(O(1)\) but it's pretty close).&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://people.mpi-inf.mpg.de/~mehlhorn/ftp/DiscreteRandomVariates.pdf"&gt;Hagerup, T., K. Mehlhorn, and J. I. Munro. "Optimal algorithms for generating discrete random variables with changing distributions." Lecture Notes in Computer Science 700 (1993): 253-264&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.645.7960&amp;amp;rep=rep1&amp;amp;type=pdf"&gt;Matias, Yossi, Jeffrey Scott Vitter, and Wen-Chun Ni. "Dynamic generation of discrete random variates." Theory of Computing Systems 36.4 (2003): 329-358&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;The key observation that makes the above two papers work is that if you can guarantee that the ratio of the largest to smallest weight is bounded then the naive method of sampling by picking uniformly at random and accepting with probability \(\frac{w_i}{\max w_j}\) runs in \(O(1)\) time.
+When you can't guarantee this, you can instead bucket together all values with similar weights, then pick a bucket with probability proportional to its total weight using some other method, then sample from within that bucket. &lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2019-02-04-09:26.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2019-02-02-13:20.html</id>
     <title>TV Show Review: A Series of Unfortunate Events</title>
-    <updated>2019-02-02T13:20:00+00:00</updated>
+    <updated>2019-02-02T13:40:08+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;TV Show Review: A Series of Unfortunate Events&lt;/p&gt;

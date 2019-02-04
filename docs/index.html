@@ -40,6 +40,41 @@ MathJax.Hub.Config({
         
 
 <section>
+<h2><a href="/posts/2019-02-04-09:26.html">2019-02-04</a></h2>
+
+
+<p class="subtitle">Updating Random Samplers</p>
+
+
+<dl class="metadata">
+<dt>Published</dt>
+<dd class="post-date">2019-02-04</dd>
+</dl>
+
+
+<p>I often struggle to refind the references for this, so this is mostly a note to self for future reference.</p>
+
+
+<p>If you want to randomly sample from \(N\) items with probability of picking \(i\) proportional to \(w_i &gt; 0\)
+you can use <a href="http://www.keithschwarz.com/darts-dice-coins/">the Alias method</a> for this and it works very well.</p>
+
+
+<p>Suppose now you want to be able to update the weights.
+It turns out this is possible in morally-\(O(1)\) time (one of the algorithms linked is \(O(\log(n^*))\), which is the smallest \(k\) such that \(\log^k(n) &lt; 1\). This isn't quite Inverse Ackermann levels of morally-\(O(1)\) but it's pretty close).</p>
+
+
+<ul>
+<li><a href="https://people.mpi-inf.mpg.de/~mehlhorn/ftp/DiscreteRandomVariates.pdf">Hagerup, T., K. Mehlhorn, and J. I. Munro. "Optimal algorithms for generating discrete random variables with changing distributions." Lecture Notes in Computer Science 700 (1993): 253-264</a>.</li>
+<li><a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.645.7960&amp;rep=rep1&amp;type=pdf">Matias, Yossi, Jeffrey Scott Vitter, and Wen-Chun Ni. "Dynamic generation of discrete random variates." Theory of Computing Systems 36.4 (2003): 329-358</a>.</li>
+</ul>
+
+
+<p>The key observation that makes the above two papers work is that if you can guarantee that the ratio of the largest to smallest weight is bounded then the naive method of sampling by picking uniformly at random and accepting with probability \(\frac{w_i}{\max w_j}\) runs in \(O(1)\) time.
+When you can't guarantee this, you can instead bucket together all values with similar weights, then pick a bucket with probability proportional to its total weight using some other method, then sample from within that bucket. </p>
+
+
+</section>
+<section>
 <h2><a href="/posts/2019-02-02-13:20.html">2019-02-02</a></h2>
 
 
