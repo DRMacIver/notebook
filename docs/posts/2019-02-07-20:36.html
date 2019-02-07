@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+DRMacIver's Notebook: Easy parallel test-case reduction
+    </title>
+    <link rel="stylesheet" href="/pygments.css"/>
+    <link rel="stylesheet" href="/tufte.css"/>
+    <link rel="stylesheet" href="/latex.css"/>
+    <link rel="stylesheet" href="/drmnotes.css"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
+});
+</script>
+
+  </head>
+
+  <body>
+    <article>
+        <h1><a href="/">DRMacIver's Notebook</a></h1>
+        <p class=subtitle>Easy parallel test-case reduction</p>
+
+        
+
+<section id="the-post">
+<p class=subtitle>Easy parallel test-case reduction</p>
+<dl class=metadata>
+<dt>Published</dt>
+<dd class="post-date">2019-02-07</dd>
+</dl>
+
+<p>As part of my current work in Hypothesis I'm redesigning the reducer to be very fine grained.
+Rather than having a coarse reduction pass that may run many operations,
+each shrink pass is explicitly written as a function that generates a set of small-step reduction steps.</p>
+<p>Each of these steps can be run on any test case, and is designed to run only a very small number of operations (typically they are adaptive passes that run \(O(1)\) test invocations in the event that they make no progress or \(O(\log(n))\) if they make progress).</p>
+<p>An example of this would be that instead of a greedy pass that tries deleting each of \(N\) elements, it generates \(N\) steps where step \(i\) tries deleting the element at position \(i\) (actually a contiguous region around that element, which is where the adaptiveness comes in).</p>
+<p>The idea is that logically the original coarse grained shrink pass is equivalent to generating all of the steps then running all of them in turn.</p>
+<p>The reason for doing it this way is twofold:</p>
+<ol>
+<li>It makes it easy to run operations for all reduction passes in a random order, which is often useful.</li>
+<li>It lets you interleave the operations of two different reduction passes - this is particularly useful because often reduction passes get "stuck", and having other passes running at the same time at them means that you make progress anyway (which reduces the amount of work that the stuck pass has to do, so even if you run it to completion it takes less time than it would have if you'd done it all at once).</li>
+</ol>
+<p>However, the thing I noticed earlier is that it <em>also</em> makes it very easy to run the operations in parallel!</p>
+<p>The way this works is very simple:</p>
+<ol>
+<li>Maintain a single globally best known result.</li>
+<li>In some arbitrary order run each of the shrink steps with as much parallelism as you like.</li>
+<li>Each step takes the globally best known result at the beginning of its run, performs some test cases, and possibly finds a better test case.</li>
+<li>If a step <em>does</em> find a better test case, it attempts to atomically update the globally best test case as follows:<ol>
+<li>If it hasn't changed since the start of its run, it just updates it, no problem.</li>
+<li>If it has changed since the start of its run but the value it currently has is worse than the one found, just update it.</li>
+<li>If it has changed since the start of its run and the new best value is better than the one found, restart the current shrink step (which has proven likely worth running) on the new global best.</li>
+</ol>
+</li>
+</ol>
+<p>In the case where the test case is already fully reduced, this is embarrassingly parallel.
+In the case where everything makes progress, this is quite heavily contended, but also everything is making progress which tends to be the fast path for a test case reducer.
+It's probably worth scaling back the concurrency in this case.</p>
+<p>My suspicion is that in most cases this will run quite close to the embarassingly parallel version - prior art on parallelising test case reducers (e.g. <a href="https://blog.regehr.org/archives/749">C-Reduce</a>, <a href="https://github.com/googleprojectzero/halfempty">halfempty</a>) has based its concurrency on an assumption that test cases all fail.</p>
+<p>One thing that is worth noting is that this parallel algorithm can cause some "dropped" work in the following sense: A and B run in parallel and both succeed, but A completes before B and B overwrites its work.
+If B ran again it would make further progress.
+Fortunately, this is actually fine, because in test case reduction we will iterate to a fixed point, so anything we drop will get an opportunity to run the next time,
+because this kind of dropped work only occurs when we're failing to make progress, and whenever we succeed at making progress we know we'll get another go.</p>
+</section>
+
+    </article>
+<footer>
+Copyright David R. MacIver.
+
+CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
+</footer>
+  </body>
+</html>

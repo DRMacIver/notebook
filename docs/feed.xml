@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-02-04T09:26:00+00:00</updated>
+  <updated>2019-02-07T20:36:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,82 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2019-02-07-20:36.html</id>
+    <title>Easy parallel test-case reduction</title>
+    <updated>2019-02-07T20:36:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Easy parallel test-case reduction&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2019-02-07&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;As part of my current work in Hypothesis I'm redesigning the reducer to be very fine grained.
+Rather than having a coarse reduction pass that may run many operations,
+each shrink pass is explicitly written as a function that generates a set of small-step reduction steps.&lt;/p&gt;
+
+
+&lt;p&gt;Each of these steps can be run on any test case, and is designed to run only a very small number of operations (typically they are adaptive passes that run \(O(1)\) test invocations in the event that they make no progress or \(O(\log(n))\) if they make progress).&lt;/p&gt;
+
+
+&lt;p&gt;An example of this would be that instead of a greedy pass that tries deleting each of \(N\) elements, it generates \(N\) steps where step \(i\) tries deleting the element at position \(i\) (actually a contiguous region around that element, which is where the adaptiveness comes in).&lt;/p&gt;
+
+
+&lt;p&gt;The idea is that logically the original coarse grained shrink pass is equivalent to generating all of the steps then running all of them in turn.&lt;/p&gt;
+
+
+&lt;p&gt;The reason for doing it this way is twofold:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;It makes it easy to run operations for all reduction passes in a random order, which is often useful.&lt;/li&gt;
+&lt;li&gt;It lets you interleave the operations of two different reduction passes - this is particularly useful because often reduction passes get "stuck", and having other passes running at the same time at them means that you make progress anyway (which reduces the amount of work that the stuck pass has to do, so even if you run it to completion it takes less time than it would have if you'd done it all at once).&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;However, the thing I noticed earlier is that it &lt;em&gt;also&lt;/em&gt; makes it very easy to run the operations in parallel!&lt;/p&gt;
+
+
+&lt;p&gt;The way this works is very simple:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Maintain a single globally best known result.&lt;/li&gt;
+&lt;li&gt;In some arbitrary order run each of the shrink steps with as much parallelism as you like.&lt;/li&gt;
+&lt;li&gt;Each step takes the globally best known result at the beginning of its run, performs some test cases, and possibly finds a better test case.&lt;/li&gt;
+&lt;li&gt;If a step &lt;em&gt;does&lt;/em&gt; find a better test case, it attempts to atomically update the globally best test case as follows:&lt;ol&gt;
+&lt;li&gt;If it hasn't changed since the start of its run, it just updates it, no problem.&lt;/li&gt;
+&lt;li&gt;If it has changed since the start of its run but the value it currently has is worse than the one found, just update it.&lt;/li&gt;
+&lt;li&gt;If it has changed since the start of its run and the new best value is better than the one found, restart the current shrink step (which has proven likely worth running) on the new global best.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;In the case where the test case is already fully reduced, this is embarrassingly parallel.
+In the case where everything makes progress, this is quite heavily contended, but also everything is making progress which tends to be the fast path for a test case reducer.
+It's probably worth scaling back the concurrency in this case.&lt;/p&gt;
+
+
+&lt;p&gt;My suspicion is that in most cases this will run quite close to the embarassingly parallel version - prior art on parallelising test case reducers (e.g. &lt;a href="https://blog.regehr.org/archives/749"&gt;C-Reduce&lt;/a&gt;, &lt;a href="https://github.com/googleprojectzero/halfempty"&gt;halfempty&lt;/a&gt;) has based its concurrency on an assumption that test cases all fail.&lt;/p&gt;
+
+
+&lt;p&gt;One thing that is worth noting is that this parallel algorithm can cause some "dropped" work in the following sense: A and B run in parallel and both succeed, but A completes before B and B overwrites its work.
+If B ran again it would make further progress.
+Fortunately, this is actually fine, because in test case reduction we will iterate to a fixed point, so anything we drop will get an opportunity to run the next time,
+because this kind of dropped work only occurs when we're failing to make progress, and whenever we succeed at making progress we know we'll get another go.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2019-02-07-20:36.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2019-02-04-09:26.html</id>
     <title>Updating Random Samplers</title>
-    <updated>2019-02-04T09:26:00+00:00</updated>
+    <updated>2019-02-04T09:40:06+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Updating Random Samplers&lt;/p&gt;
