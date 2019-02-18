@@ -61,10 +61,13 @@ MathJax.Hub.Config({
 <p>Epistemic status: My philosophy of mathematics is slightly idiosyncratic, in the sense that most people appear to believe ridiculously wrong things so it is unusual to be correct about this. I'm aware that feeling this is a bad sign for one's reliability.</p>
 
 
+<p>Content warning: <em>Highly</em> informal mathematics.</p>
+
+
 <hr/>
 
 
-<p>My glib answer to this question which is completely 100% true and is actually quite deep when unpacked is "Depends. What do you want it to be?"</p>
+<p>My glib answer to this question which is completely 100% true and is actually quite deep when unpacked is "Depends. What do you want it to be?".</p>
 
 
 <p>This is an answer that took a few hundred years of very heated arguing and people defending their own aesthetic preferences about numbers to arrive at. You can see some of that history of what we call the different sorts of numbers:</p>
@@ -80,7 +83,245 @@ MathJax.Hub.Config({
 
 
 <p>You can view this as a process of discovery, with people finding out new things that are also numbers.
-This viewpoint is factually incorrect, and misunderstands the basic nature of mathematics.</p>
+You would be factually incorrect in doing so, and misunderstanding the basic nature of mathematics, but you <em>could</em>.</p>
+
+
+<p>Anyway, before we talk about the fundamental nature of mathematics, lets talk about sheep.</p>
+
+
+<p>Suppose you are a farmer and you want to keep track of your sheep.
+In particular you want to make sure that all of your sheep who left the enclosure in the morning return to it in the evening.
+Unfortunately, numbers haven't been invented yet.
+What do you do?</p>
+
+
+<p>(This is not a true history and is only a parable. Also it is definitely not my own invention but I can't figure out who the original source for this story is.)</p>
+
+
+<p>Well, there's a very easy trick!
+You keep a small bag. Every time a sheep leaves the enclosure in the morning, you put a pebble in the bag.
+Every time a sheep returns to the enclosure, you take a stone out of the bag.</p>
+
+
+<p>There are a couple of scenarios here:</p>
+
+
+<ol>
+<li>If all the sheep are in the enclosure and the bag is empty then the same number of sheep have left as returned, yay.</li>
+<li>If all the sheep you see are in the enclosure and there are still stones in the bag, you're missing some sheep. One sheep per stone remaining is missing.</li>
+<li>If the bag is empty and there are still sheep outside of the enclosure, something has gone a bit wrong. You seem to have picked up some extra sheep from somewhere.</li>
+</ol>
+
+
+<p>To take a simple system and make it complicated, what we have done is create a <em>correspondence</em> between the set of stones in the bag and the set of sheep outside the enclosure,
+such that we can perform equivalent operations on each of these things.
+In this correspondence we have the following:</p>
+
+
+<ul>
+<li>There is a ground state of emptiness.</li>
+<li>We can add an item to the set (a sheep leaves the enclosure, a stone enters the bag), at which point it becomes non-empty.</li>
+<li>If the set is non-empty, we can remove an item from it (a sheep enters the enclosure, a stone leaves the bag).</li>
+</ul>
+
+
+<p>The thing that makes this correspondence work is that the set of stones and the set of sheep <em>behave in the same way</em>, and so we can set up parallel arguments based on the behaviour of these two different systems matching at every step of the way.</p>
+
+
+<p>Our claim is that the sheep are all in the enclosure if and only if the bag is empty.
+How can we know that this is the case?</p>
+
+
+<p>Lets represent a series of operations on one of these things (the bag or the sheep) by writing them down as follows:
+We write down a \(+\) every time something is added to the collection (the rocks in the bag, the sheep in the enclosure), and a \(-\) every time something is removed.
+So for example if three sheep leave the enclosure and then two enter it (three rocks enter the bag, two are taken out of it), we would write that as \(+++--\).</p>
+
+
+<p>These sequences obey the following rules:</p>
+
+
+<ol>
+<li>If the sequence <em>starts</em> with \(-\) then something has gone wrong - we've tried to take a rock out of an empty bad, or a sheep out of a world with no sheep in it.</li>
+<li>If the sequence <em>ends</em> with a \(+\) then the collection is not empty (we've just added something to it - we put a rock in the bag, a sheep left the enclosure).</li>
+<li>If there is a \(+-\) somewhere in the sequence (we put a rock in the bag then immediately took one out, a sheep left the enclosure and then a sheep returned) then the sequence of operations is equivalent to the same sequence with that \(+-\) removed (any two sheep and any two rocks are interchangeable for our purposes).</li>
+</ol>
+
+
+<p>We can now determine whether the end state of any sequence of operations is empty solely from its representation in this notation by running the following procedure:</p>
+
+
+<ol>
+<li>If there are no operations, we are in the starting state of emptiness so the set is empty.</li>
+<li>If the last element is a \(+\) then by the above rules the set is not empty.</li>
+<li>If the first element is a \(-\) then we're in an error state. Thus the first element must be a \(+\) and we contain at least one \(-\). Scan forward until we find the first \(-\). This must follow a \(+\) (because it's the first). Remove that \(+-\) pair from the sequence to get a shorter sequence, and determine if the new sequence is empty.</li>
+</ol>
+
+
+<p>In each step of this process one of two things happen:</p>
+
+
+<ol>
+<li>We determine the answer and stop.</li>
+<li>We replace the sequence with a strictly shorter sequence and try again.</li>
+</ol>
+
+
+<p>This process of replacing the sequence with a strictly shorter one must eventually stop, because we can run it for no longer than it took us to build the sequence in the first place.
+This means we eventually end up either with an empty sequence (the set is empty) or with a sequence with only \(+\) operations in it (the set is not empty).
+Importantly, because these operations represent either sheep or stones, and because both sheep and stones obey the rules we laid out above,
+we know that the set of sheep in the outside world is empty if and only if the bag is empty: We can represent the current state of each by the same sequence of \(+\) and \(-\) operations,
+and we can determine solely from those operations whether the set is empty.</p>
+
+
+<p>We can abstract this further.</p>
+
+
+<p>Say something is <em>a counter</em> if you can do the following three things and obey the following rules:</p>
+
+
+<ol>
+<li>Ask if it is currently empty.</li>
+<li>Increment it.</li>
+<li>If it is not currently empty, decrement it.</li>
+</ol>
+
+
+<p>Say two counters are <em>observationally equivalent</em> if, after doing the same sequence of increment/decrement operations to each side, they are either both empty or both not-empty.</p>
+
+
+<p>Now, counters must obey the following rules:</p>
+
+
+<ol>
+<li>After incrementing it, the counter is not empty.</li>
+<li>Incrementing it then decrementing it results in a counter that is observationally equivalent to the original counter (and in particular is empty if and only if it started empty).</li>
+</ol>
+
+
+<p>The above argument provides the stronger conclusion: Any two empty counters are observationally equivalent.
+We can represent the sequences of operations with our \(+/-\) notation, and at the end we will have concluded that either both counters are empty or both counters are non-empty.</p>
+
+
+<p>OK, what does this have to do with the original question about numbers?</p>
+
+
+<p>A counter can be anything that implements those increment and decrement operations.
+You can ask "What <em>is</em> a counter?" and the answer isn't any one thing. It could be a flock of sheep, it could be a bag of stones. Both of those things are counters, because they allow you to implement the counter operations in a way that obeys the rules.
+The notion of a counter is not that of a single concrete class of object,
+it is an abstract description of the behaviour of a system providing certain operations satisfying certain rules.</p>
+
+
+<p>The nice thing about the counter rules is that to a certain degree we don't need to <em>care</em> what a counter is - the power of the behaviour is that we can know that whichever counter implementation we have,
+they will behave the same way.
+Because any two empty counters are observationally equivalent you can talk about <em>the</em> empty counter, but this is a polite fiction:
+There are an infinite variety of empty counters, we just don't care because they all behave the same way as far as counting is concerned.</p>
+
+
+<p>This is also what a number is.
+A number is not any one thing,
+it is any one of any number of things that implement some operations (and there are different types of number depending on what operations you want to implement).</p>
+
+
+<p>The numbers closest to the counters we've discussed are what are called the <em>natural</em> numbers: \(0, 1, 2, \ldots\).
+They don't include negative numbers like \(-3\) or fractional numbers like \(\frac{1}{2}\).
+We could also call them counting numbers, as these are the numbers which can be used to represent operations that correspond to counting things</p>
+
+
+<p>The operations you can perform on natural numbers are that you can take their <em>successor</em> (the next element), and you can test if two numbers are equal.
+Additionally, there is a special element called zero (or \(0\)).
+The rules they have to satisfy are the following:</p>
+
+
+<ol>
+<li>\(0\) is not the successor of any element.</li>
+<li>Every element has a successor element.</li>
+<li>If two elements are equal then their successor is equal (this is important to state because there may e.g. be irrelevant information in the representation. Think of how we represented counts with stones - two bags of stones represent the same if they have the same number of stones, regardless of whether they're literally the same stones).</li>
+<li>If the successor of two elements are equal then those elements are also equal.</li>
+<li>Every number can be formed by writing down a series of successor operations from zero.</li>
+</ol>
+
+
+<p>For example, one implementation of the natural numbers is our sequences of \(+\) operations for a counter.
+The empty sequence is our \(0\) element, taking the successor is adding a \(+\) to the end,
+two elements are equal if they are the same word.</p>
+
+
+<p>In the same way that we reasoned about the behaviour of counters without having to know exactly what counter implementation we were using,
+we can reason about the behaviour of numbers without knowing how they work,
+and conclude properties that must hold for any implementations.</p>
+
+
+<p>In particular, we can conclude from \(4) that every element other than \(0\) is the successor of some other element:
+Suppose for an arbitrary number that we'll call \(n\), we write the successor of \(n\) as \(S(n)\).
+Then any number other than \(0\) can be written as \(S(S(\ldotsS(0)\ldots))\) by rule \(4\),
+so is the successor of the bit inside the brackets. By rule \(3\), every non-zero number has a <em>unique</em> element that it is the successor of.
+Call this its predecessor. Similarly if \(n\) is some arbitrary non-zero number then we write its predecessor as \(P(n)\).</p>
+
+
+<p>This means that we can use any implementation of natural numbers to implement a counter as follows:</p>
+
+
+<ol>
+<li>A counter wraps a single number.</li>
+<li>It is empty if that number is \(0\)</li>
+<li>When incrementing the counter we replace the number with its successor.</li>
+<li>When decrementing the counter we replace the number with its predecessor (which is valid because the counter is non-empty if and only if it contains a non-zero number).</li>
+</ol>
+
+
+<p>Two of these counters are observationally equivalent if and only if they wrap equal numbers, because for any such counter you can produce a unique sequence of decrements that makes it empty (this isn't totally obvious, but the details are fiddly and unenlightening without getting much more formal than I want to).</p>
+
+
+<p>This means that we can use any implementation of numbers to define the notion of the size of any given counter: It is the unique (up to equality) number that is observationally equivalent to the current counter.</p>
+
+
+<p>The careful reader will notice a slight of hand there:
+I haven't proven that there is always such a number, only that if there is one then it is unique.
+This is because there is not always such a number!</p>
+
+
+<p>The following is a perfectly valid implementation of a counter:</p>
+
+
+<ol>
+<li>The counter is never empty.</li>
+<li>Incrementing the counter does nothing.</li>
+<li>Decrementing the counter does nothing.</li>
+</ol>
+
+
+<p>Such a counter cannot be represented by a number, because for any number based counter implemented as above you can eventually run a sequence of decrement operations to make it empty.
+You could think of such a thing as representing an infinite collection, but note that this doesn't require any foundational assumptions about whether infinity is in some sense real or realisable,
+it's just a straightforward implementation of a set of rules.</p>
+
+
+<p>In fact, every counter as defined is equivalent to either this infinite counter or some number,
+but I'll leave proving that as an exercise for the interested reader.</p>
+
+
+<hr/>
+
+
+<p>OK, after all of that, what actually is a number?</p>
+
+
+<p>Depends. What do you want it to be?</p>
+
+
+<p>The problem with asking this question about abstract mathematical entities like numbers is that they are not any one thing.
+A number is not its representation, any more than a counter is a bag of rocks or a flock of sheep.
+A number is an entity that comes from some implementation of the operations that we have decided to consider distinctively numeric.</p>
+
+
+<p>An interesting feature of something like the natural numbers is that we can choose the rules to uniquely constrain the behaviour of the implementation (with some caveats about formal systems that I won't go into here),
+but there are many other classes of mathematical objects that are also interesting where this is not the case.</p>
+
+
+<p>There is a more foundational question, which is whether numbers "exist" in any meaningful sense.
+My answer is "Almost certainly not, but if so why would we care?". It may be that there is some pure platonic realm of numbers where the true numbers exist,
+but we don't need it to exist to do mathematics,
+and it's unclear what its existence would imply about how we do mathematics anyway - it's not like this view of mathematical objects as reasoning about abstract systems obeying rules stops working in that event,
+the platonic realm just becomes another system that we can model this way.</p>
 
 
 </section>
