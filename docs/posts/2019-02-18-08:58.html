@@ -174,7 +174,7 @@ Call this its predecessor. Similarly if \(n\) is some arbitrary non-zero number 
 </ol>
 <p>Two of these counters are observationally equivalent if and only if they wrap equal numbers, because for any such counter you can produce a unique sequence of decrements that makes it empty (this isn't totally obvious, but the details are fiddly and unenlightening without getting much more formal than I want to).</p>
 <p>This means that we can use any implementation of numbers to define the notion of the size of any given counter: It is the unique (up to equality) number that is observationally equivalent to the current counter.</p>
-<p>The careful reader will notice a slight of hand there:
+<p>The careful reader will notice a sleight of hand there:
 I haven't proven that there is always such a number, only that if there is one then it is unique.
 This is because there is not always such a number!</p>
 <p>The following is a perfectly valid implementation of a counter:</p>

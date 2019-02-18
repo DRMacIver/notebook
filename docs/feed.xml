@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-02-18T15:24:50+00:00</updated>
+  <updated>2019-02-18T15:31:04+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -13,7 +13,7 @@
   <entry>
     <id>https://notebook.drmaciver.com/posts/2019-02-18-08:58.html</id>
     <title>What even is a number?</title>
-    <updated>2019-02-18T15:24:50+00:00</updated>
+    <updated>2019-02-18T15:31:04+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;What even is a number?&lt;/p&gt;
@@ -251,7 +251,7 @@ Call this its predecessor. Similarly if \(n\) is some arbitrary non-zero number 
 &lt;p&gt;This means that we can use any implementation of numbers to define the notion of the size of any given counter: It is the unique (up to equality) number that is observationally equivalent to the current counter.&lt;/p&gt;
 
 
-&lt;p&gt;The careful reader will notice a slight of hand there:
+&lt;p&gt;The careful reader will notice a sleight of hand there:
 I haven't proven that there is always such a number, only that if there is one then it is unique.
 This is because there is not always such a number!&lt;/p&gt;
 
