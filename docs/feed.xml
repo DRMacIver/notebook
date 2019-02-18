@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-02-18T15:31:04+00:00</updated>
+  <updated>2019-02-18T15:35:03+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -13,7 +13,7 @@
   <entry>
     <id>https://notebook.drmaciver.com/posts/2019-02-18-08:58.html</id>
     <title>What even is a number?</title>
-    <updated>2019-02-18T15:31:04+00:00</updated>
+    <updated>2019-02-18T15:35:03+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;What even is a number?&lt;/p&gt;
@@ -43,16 +43,12 @@
 &lt;p&gt;My glib answer to this question which is completely 100% true and is actually quite deep when unpacked is "Depends. What do you want it to be?".&lt;/p&gt;
 
 
-&lt;p&gt;This is an answer that took a few hundred years of very heated arguing and people defending their own aesthetic preferences about numbers to arrive at. You can see some of that history of what we call the different sorts of numbers:&lt;/p&gt;
+&lt;p&gt;This is an answer that took a few hundred years of very heated arguing and people defending their own aesthetic preferences about numbers to arrive at. You can see some of that history of what we call some of the different sorts of numbers: e.g. Negative, irrational, and imaginary numbers.&lt;/p&gt;
 
 
-&lt;ul&gt;
-&lt;li&gt;Natural numbers&lt;/li&gt;
-&lt;li&gt;Negative numbers&lt;/li&gt;
-&lt;li&gt;Rational numbers&lt;/li&gt;
-&lt;li&gt;Real numbers&lt;/li&gt;
-&lt;li&gt;Imaginary numbers&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Each of these represents a bitter argument about whether a new type of number should be allowed,
+all of which were eventually won by the people on the side of the new numbers,
+but with a legacy of our distaste for them left in the name.&lt;/p&gt;
 
 
 &lt;p&gt;You can view this as a process of discovery, with people finding out new things that are also numbers.
