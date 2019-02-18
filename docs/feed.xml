@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-02-15T14:37:00+00:00</updated>
+  <updated>2019-02-18T08:58:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,57 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2019-02-18-08:58.html</id>
+    <title>What even is a number?</title>
+    <updated>2019-02-18T08:58:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;What even is a number?&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2019-02-18&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Context: A philosopher friend asked me this question. This is my attempt to answer.&lt;/p&gt;
+
+
+&lt;p&gt;Attention Conservation Notice: It may not be a very good attempt to answer.&lt;/p&gt;
+
+
+&lt;p&gt;Epistemic status: My philosophy of mathematics is slightly idiosyncratic, in the sense that most people appear to believe ridiculously wrong things so it is unusual to be correct about this. I'm aware that feeling this is a bad sign for one's reliability.&lt;/p&gt;
+
+
+&lt;hr/&gt;
+
+
+&lt;p&gt;My glib answer to this question which is completely 100% true and is actually quite deep when unpacked is "Depends. What do you want it to be?"&lt;/p&gt;
+
+
+&lt;p&gt;This is an answer that took a few hundred years of very heated arguing and people defending their own aesthetic preferences about numbers to arrive at. You can see some of that history of what we call the different sorts of numbers:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Natural numbers&lt;/li&gt;
+&lt;li&gt;Negative numbers&lt;/li&gt;
+&lt;li&gt;Rational numbers&lt;/li&gt;
+&lt;li&gt;Real numbers&lt;/li&gt;
+&lt;li&gt;Imaginary numbers&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;You can view this as a process of discovery, with people finding out new things that are also numbers.
+This viewpoint is factually incorrect, and misunderstands the basic nature of mathematics.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2019-02-18-08:58.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2019-02-15-14:37.html</id>
     <title>Caching interactions with an arbitrary interface</title>
-    <updated>2019-02-15T14:37:00+00:00</updated>
+    <updated>2019-02-15T15:49:25+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Caching interactions with an arbitrary interface&lt;/p&gt;
