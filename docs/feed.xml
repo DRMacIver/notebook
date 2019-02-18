@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-02-18T09:21:18+00:00</updated>
+  <updated>2019-02-18T13:02:26+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -13,7 +13,7 @@
   <entry>
     <id>https://notebook.drmaciver.com/posts/2019-02-18-08:58.html</id>
     <title>What even is a number?</title>
-    <updated>2019-02-18T09:21:18+00:00</updated>
+    <updated>2019-02-18T13:02:26+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;What even is a number?&lt;/p&gt;
@@ -57,6 +57,9 @@
 
 &lt;p&gt;You can view this as a process of discovery, with people finding out new things that are also numbers.
 You would be factually incorrect in doing so, and misunderstanding the basic nature of mathematics, but you &lt;em&gt;could&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;The main problems with this viewpoint are that there isn't really a single thing that we mean by "number", and each of these types of number is better viewed as having been invented than discovered.&lt;/p&gt;
 
 
 &lt;p&gt;Anyway, before we talk about the fundamental nature of mathematics, lets talk about sheep.&lt;/p&gt;
