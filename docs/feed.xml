@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-02-21T18:58:00+00:00</updated>
+  <updated>2019-02-21T19:48:10+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -13,7 +13,7 @@
   <entry>
     <id>https://notebook.drmaciver.com/posts/2019-02-21-18:58.html</id>
     <title>Do numbers exist?</title>
-    <updated>2019-02-21T18:58:00+00:00</updated>
+    <updated>2019-02-21T19:48:10+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Do numbers exist?&lt;/p&gt;
@@ -38,7 +38,7 @@
 
 &lt;p&gt;The problem is that this is a &lt;em&gt;bad question&lt;/em&gt; because there are no non-misleading answers to it.
 Both the statements "numbers exist" and "numbers do not exist" are more likely to cause you to believe false things than true ones,
-and which answer you prefer says more about what you mean by "exist" than it does about numbers&lt;/p&gt;
+and which answer you prefer says more about what you mean by "exist" than it does about numbers.&lt;/p&gt;
 
 
 &lt;p&gt;Numbers don't exist, in that there is no platonic realm where you will find the authentic number 3. At least, there is no evidence that there is such a realm, there isn't even a suggestion of what such evidence would look like, and it doesn't seem to be especially useful to postulate that one exists, so there might as well not be. Insert your own atheism analogy here. &lt;a href="https://arxiv.org/abs/1508.00001"&gt;Michelangelo's Stone: an Argument against Platonism in Mathematics&lt;/a&gt; is a good argument against the idea that one exists, basically by pointing out that if such a thing existed it would be too large to serve the role that its proponents want it to - it is basically the infinite library of Borges, with every random string written down in a book. All published works exist there, but finding them is a harder task than creating them would be.&lt;/p&gt;
@@ -47,7 +47,7 @@ and which answer you prefer says more about what you mean by "exist" than it doe
 &lt;p&gt;Additionally, they don't exist because as I argued, numbers aren't really any one thing. There is not "the number 3", there is only "the value that corresponds to the number 3 in our current implementation of natural numbers." In &lt;a href="https://www.jstor.org/stable/2183530?seq=1#metadata_info_tab_contents"&gt;What Numbers Could not Be&lt;/a&gt; Paul Benacerraf argues quite convincingly that it is a category error to equate the number 3 with any particular instantiation of it.&lt;/p&gt;
 
 
-&lt;p&gt;So numbers really don't exist. I promise.&lt;/p&gt;
+&lt;p&gt;So numbers really don't exist in any literal physical sense. I promise.&lt;/p&gt;
 
 
 &lt;p&gt;And yet numbers obviously exist.&lt;/p&gt;
@@ -89,7 +89,8 @@ I think it would require an extremely convincing argument to persuade me that th
 
 
 &lt;p&gt;So, any reasonable definition of the word "exist" should incorporate abstract concepts with rules and names defined purely by human convention.
-Numbers are such a thing, and as purely abstract concepts it is perfectly reasonable to say that they exist, but you should be careful about what you infer from that.&lt;/p&gt;
+Numbers are such a thing, and as purely abstract concepts it is perfectly reasonable to say that they exist.
+They exist in the same way and for the same reasons that France and Chess exist: Because we say so.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2019-02-21-18:58.html" rel="alternate"/>
