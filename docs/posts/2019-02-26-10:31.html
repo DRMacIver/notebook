@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+DRMacIver's Notebook: The Lazy Collection Trick
+    </title>
+    <link rel="stylesheet" href="/pygments.css"/>
+    <link rel="stylesheet" href="/tufte.css"/>
+    <link rel="stylesheet" href="/latex.css"/>
+    <link rel="stylesheet" href="/drmnotes.css"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
+});
+</script>
+
+  </head>
+
+  <body>
+    <article>
+        <h1><a href="/">DRMacIver's Notebook</a></h1>
+        <p class=subtitle>The Lazy Collection Trick</p>
+
+        
+
+<section id="the-post">
+<p class=subtitle>The Lazy Collection Trick</p>
+<dl class=metadata>
+<dt>Published</dt>
+<dd class="post-date">2019-02-26</dd>
+</dl>
+
+<p>The opening to <a href="https://github.com/HypothesisWorks/hypothesis/pull/1830">a recent pull request</a>:</p>
+<blockquote>
+<p>Hey, psst, buddy, would you like to see some really weird code? Then boy do I have the PR for you.</p>
+</blockquote>
+<p>A thing I've been working on right now is Hypothesis's memory consumption.
+This is as part of some work on driving <a href="https://embed.cs.utah.edu/csmith/">Csmith</a> with Hypothesis.</p>
+<p>Unfortunately it turns out that the following facts are in tension:</p>
+<ul>
+<li>Csmith test cases are much larger than Hypothesis is used to.</li>
+<li>Hypothesis has a fairly rich parse tree of the test case's internal representation.</li>
+<li>Python is not very good at compact data representation.</li>
+</ul>
+<p>The result was that Hypothesis ends up spending literal gigabytes on representing parse trees (not per parse tree, but it's not as far off that per parse tree as I'd like).</p>
+<p>How do we make these two facts play well together?</p>
+<p>Well, most of the parse trees are never used. Test case reduction is a fairly local process and only cares about small bits of it.</p>
+<p>In the linked pull request, we are representing the test case as a list of blocks. A block is just an open interval in the underlying byte stream,
+with a bunch of metadata about it.
+Most of the time we only need one or two blocks. Sometimes we need all blocks. Sometimes we need none at all.</p>
+<p>How do we solve this without being massively intrusive to calling code?</p>
+<p>Easy! We implement it lazily. We store a compact representation of the endpoints of the block. From that and the underlying buffer we can build the Block object at any given index,
+and construct it on first access.</p>
+<p>That's the basic idea of the lazy collection trick. There are lots of extra details involved in the implementing PR.</p>
+<p>The result is a huge memory saving for Hypothesis's access patterns and I'll probably be using this more inside Hypothesis in a few other places too.</p>
+</section>
+
+    </article>
+<footer>
+Copyright David R. MacIver.
+
+CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
+</footer>
+  </body>
+</html>

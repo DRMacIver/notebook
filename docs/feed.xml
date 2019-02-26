@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-02-21T19:48:10+00:00</updated>
+  <updated>2019-02-26T10:31:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,75 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2019-02-26-10:31.html</id>
+    <title>The Lazy Collection Trick</title>
+    <updated>2019-02-26T10:31:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;The Lazy Collection Trick&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2019-02-26&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;The opening to &lt;a href="https://github.com/HypothesisWorks/hypothesis/pull/1830"&gt;a recent pull request&lt;/a&gt;:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Hey, psst, buddy, would you like to see some really weird code? Then boy do I have the PR for you.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;A thing I've been working on right now is Hypothesis's memory consumption.
+This is as part of some work on driving &lt;a href="https://embed.cs.utah.edu/csmith/"&gt;Csmith&lt;/a&gt; with Hypothesis.&lt;/p&gt;
+
+
+&lt;p&gt;Unfortunately it turns out that the following facts are in tension:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Csmith test cases are much larger than Hypothesis is used to.&lt;/li&gt;
+&lt;li&gt;Hypothesis has a fairly rich parse tree of the test case's internal representation.&lt;/li&gt;
+&lt;li&gt;Python is not very good at compact data representation.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;The result was that Hypothesis ends up spending literal gigabytes on representing parse trees (not per parse tree, but it's not as far off that per parse tree as I'd like).&lt;/p&gt;
+
+
+&lt;p&gt;How do we make these two facts play well together?&lt;/p&gt;
+
+
+&lt;p&gt;Well, most of the parse trees are never used. Test case reduction is a fairly local process and only cares about small bits of it.&lt;/p&gt;
+
+
+&lt;p&gt;In the linked pull request, we are representing the test case as a list of blocks. A block is just an open interval in the underlying byte stream,
+with a bunch of metadata about it.
+Most of the time we only need one or two blocks. Sometimes we need all blocks. Sometimes we need none at all.&lt;/p&gt;
+
+
+&lt;p&gt;How do we solve this without being massively intrusive to calling code?&lt;/p&gt;
+
+
+&lt;p&gt;Easy! We implement it lazily. We store a compact representation of the endpoints of the block. From that and the underlying buffer we can build the Block object at any given index,
+and construct it on first access.&lt;/p&gt;
+
+
+&lt;p&gt;That's the basic idea of the lazy collection trick. There are lots of extra details involved in the implementing PR.&lt;/p&gt;
+
+
+&lt;p&gt;The result is a huge memory saving for Hypothesis's access patterns and I'll probably be using this more inside Hypothesis in a few other places too.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2019-02-26-10:31.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2019-02-21-18:58.html</id>
     <title>Do numbers exist?</title>
-    <updated>2019-02-21T19:48:10+00:00</updated>
+    <updated>2019-02-21T19:53:10+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Do numbers exist?&lt;/p&gt;
