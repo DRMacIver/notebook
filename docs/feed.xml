@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-02-26T10:31:00+00:00</updated>
+  <updated>2019-02-27T12:03:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,70 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2019-02-27-12:03.html</id>
+    <title>The Core Problem with Democracy</title>
+    <updated>2019-02-27T12:03:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;The Core Problem with Democracy&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2019-02-27&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;As far as things that are likely to trigger a massive crisis of faith go, flipping through a social epistemology textbook (&lt;a href="https://amzn.to/2Em7J5A"&gt;Social Epistemology: Essential Readings&lt;/a&gt;) and reading a highly technical chapter with lots of numbers in it probably not ranked very highly, but there we go.&lt;/p&gt;
+
+
+&lt;p&gt;The chapter in question was &lt;a href="http://eprints.lse.ac.uk/5830/1/Group_knowledge_and_group_rationality_%28LSERO%29.pdf"&gt;Group knowledge and group rationality: a judgement aggregation perspective&lt;/a&gt;,
+and it pointed out the following fairly fundamental problem.&lt;/p&gt;
+
+
+&lt;p&gt;Suppose you have a proposition \(A\), and people believe it independently with probablity \(p\). Then for large populations, with overwhelmingly high probability the majority vote on whether it's true will be yes if \(p &amp;gt; 0.5\), no if \(p &amp;lt; 0.5\). How large the population has to be is mostly determined by how far \(p\) is from \(0.5\).&lt;/p&gt;
+
+
+&lt;p&gt;Now suppose you have two true propositions \(A\) and \(B\), and people believe each with probability \(p\).
+As a result, they believe the proposition \(A \wedge B\) (\(A\) and \(B\)) with probability \(p^2\).&lt;/p&gt;
+
+
+&lt;p&gt;Now suppose we have \(0.5 &amp;lt; p &amp;lt; 0.7\). Then \(p &amp;gt; 0.5\), so the majority believe each of \(A\) and \(B\), but \(p^2 &amp;lt; 0.49 &amp;lt; 0.5\), so the majority &lt;em&gt;disbelieve&lt;/em&gt; \(A \wedge B\).
+This means that if you put each of \(A\) and \(B\) to the vote separately that you will conclude that \(A \wedge B\) is true, but if you put \(A \wedge B\) to the vote on its own you will conclude it is false.&lt;/p&gt;
+
+
+&lt;p&gt;The situation gets worse the more conjunctions you add.
+If you want to get the same answer for three propositions then you need \(p &amp;gt; 0.79\).
+Eventually, you need almost everyone to be entirely right about everything to get the correct outcome.&lt;/p&gt;
+
+
+&lt;p&gt;This is only a model, and the underlying assumptions are certainly unrealistic, but I do think it points to a true problem: Individual people are much more likely to be correct about premises than conclusions.
+I was aware of this as a possibility before, but I hadn't previously appreciated that it wasn't just possible but overwhelmingly normal.&lt;/p&gt;
+
+
+&lt;p&gt;The problem is that almost everything we vote on is not a premise but a conclusion.
+Democracy has essentially two functions that are being conflated:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;What is the desired end state of the world?&lt;/li&gt;
+&lt;li&gt;What is the best way to achieve that?&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;You are aggregating both values and judgement, and you are doing so with exactly the sort of conflation of things that we've just shown can't possibly be expected to work well.&lt;/p&gt;
+
+
+&lt;p&gt;What's the solution? I don't know. It's certainly not a dictatorship (which has its own worse problems) and markets have essentially the same issue.
+I need to think about this more.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2019-02-27-12:03.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2019-02-26-10:31.html</id>
     <title>The Lazy Collection Trick</title>
-    <updated>2019-02-26T10:31:00+00:00</updated>
+    <updated>2019-02-26T10:40:52+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;The Lazy Collection Trick&lt;/p&gt;
