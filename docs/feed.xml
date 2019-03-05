@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-02-27T12:03:00+00:00</updated>
+  <updated>2019-03-05T15:57:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,56 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2019-03-05-15:57.html</id>
+    <title>Book Review:  Sorting Things Out: Classification and Its Consequences  by Geoffrey C. Bowker and Susan Leigh Star</title>
+    <updated>2019-03-05T15:57:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Book Review:  Sorting Things Out: Classification and Its Consequences  by Geoffrey C. Bowker and Susan Leigh Star&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2019-03-05&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;(This is a bit of a placeholder review because I've been putting off writing it).&lt;/p&gt;
+
+
+&lt;p&gt;This is a book about classification and its consequences, and in particular about the politics and decision making that goes on behind them.
+It makes the point that classification forms a complex set of interlocking infrastructure,
+and discusses how that plays out in a variety of real world settings.&lt;/p&gt;
+
+
+&lt;p&gt;I really liked this book, but I'm not sure how strongly to recommend it. It varies wildly between extremely readable and fairly obtuse in its prose.
+I don't know whether this reflects which bit was written by which author, or whether both authors have the style.
+Nevertheless, I'm keeping it on my "further reading" shelf and intend to return to it regularly.&lt;/p&gt;
+
+
+&lt;p&gt;A couple of interesting points:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;I liked their definition of infrastructure, and their discussion of classification as infrastructure.&lt;/li&gt;
+&lt;li&gt;I am generally rather down on classification and labelling and even in the course of discussing how problematic it is, they did quite a good job of explaining its upsides.&lt;/li&gt;
+&lt;li&gt;They make the point that in a pragmatic sense anything that we treat as real might as well be real, and that in this sense the categories we describe are real despite being made up.&lt;/li&gt;
+&lt;li&gt;They introduce the notion of &lt;em&gt;torque&lt;/em&gt; - the twisting of lives that are created as you seek to match yourself to categories that don't really fit.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;This book definitely falls under the heading of books I think are secretly about combat epistemology.&lt;/p&gt;
+
+
+&lt;p&gt;I need to do some reading and comparative study before I hvae much more to say about it.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2019-03-05-15:57.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2019-02-27-12:03.html</id>
     <title>The Core Problem with Democracy</title>
-    <updated>2019-02-27T12:03:00+00:00</updated>
+    <updated>2019-02-27T12:37:42+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;The Core Problem with Democracy&lt;/p&gt;
