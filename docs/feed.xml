@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-03-05T15:57:00+00:00</updated>
+  <updated>2019-03-07T19:11:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,52 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2019-03-07-19:11.html</id>
+    <title>Unkind / Unfair / Untrue</title>
+    <updated>2019-03-07T19:11:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Unkind / Unfair / Untrue&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2019-03-07&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;This is a classification system I use, mostly for humour: Ask if a statement is unkind, unfair, or untrue.&lt;/p&gt;
+
+
+&lt;p&gt;The optimal number is one or two. Really the optimal number is one, but if the joke is strong enough you can get away with two.&lt;/p&gt;
+
+
+&lt;p&gt;Zero doesn't really work, because kind, fair, and true statements are good and valuable and have important social and therapeutic roles, but they're rarely &lt;em&gt;funny&lt;/em&gt;. At least not if you're as bitchy as I am (people somehow think I'm a nice person. I don't know where they get this idea).&lt;/p&gt;
+
+
+&lt;p&gt;Three doesn't work because then you're just telling lies, and lies aren't funny.&lt;/p&gt;
+
+
+&lt;p&gt;Honestly my favourite is unkind/fair/true, because you can just double down on it. There's no lie there, you're not even &lt;em&gt;really&lt;/em&gt; misrepresenting anything, you're just highlighting its worst aspects.&lt;/p&gt;
+
+
+&lt;p&gt;&lt;a href="https://twitter.com/DRMacIver/status/1103733487742402561"&gt;An example from earlier&lt;/a&gt;:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;In space, noone can hear you scream, but that doesn't really matter when Musk is involved because honestly it's implied.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;Peak unkind/fair/true right there.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2019-03-07-19:11.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2019-03-05-15:57.html</id>
     <title>Book Review:  Sorting Things Out: Classification and Its Consequences  by Geoffrey C. Bowker and Susan Leigh Star</title>
-    <updated>2019-03-05T15:57:00+00:00</updated>
+    <updated>2019-03-05T16:07:34+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Book Review:  Sorting Things Out: Classification and Its Consequences  by Geoffrey C. Bowker and Susan Leigh Star&lt;/p&gt;
