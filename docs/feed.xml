@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-03-22T20:35:22+00:00</updated>
+  <updated>2019-03-26T17:59:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,264 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2019-03-26-17:59.html</id>
+    <title>Boltzmann Samplers for Consistent Epistemic Actors</title>
+    <updated>2019-03-26T17:59:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Boltzmann Samplers for Consistent Epistemic Actors&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2019-03-26&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;(This post will make little sense to you)&lt;/p&gt;
+
+
+&lt;p&gt;A question I have been wondering in relation to judgement aggregation is how we should be measuring reliability on sets of connected proposition.&lt;/p&gt;
+
+
+&lt;p&gt;Suppose we have \(C = A \wedge B\), with the true state of the world being that \(A\) and \(B\) are both true,
+If we choose \(A\) and \(B\) independently with probability \(p\) then we conclude \(C\) with probability \(p^2\).
+This leads to the result that a majority can be right about each of \(A\) and \(B\) but wrong about \(C = A \wedge B\) if \(0.5 &amp;lt; p &amp;lt; 0.5^{0.5} \approx 0.71\).&lt;/p&gt;
+
+
+&lt;p&gt;But what if the problem here is that we have a bad measure of reliability? Judges with \(p &amp;gt; 0.50\) is enough to get the right answer on each of \(A\) and \(B\), but as most of the time they get the wrong conclusion they're clearly not a very good judge.
+Certainly it would be &lt;em&gt;nice&lt;/em&gt; to be able to assemble unreliable actors into reliable parts, but it's hard to do that if we don't know what reliability looks like.&lt;/p&gt;
+
+
+&lt;p&gt;Suppose we measured the reliability of a judge on a set of propositions with the expected fraction they got right.
+For independent propositions this is just \(p\) as above, but if we add \(C\) into the set then the reliability is \(r(p) = \frac{2p + p^2}{3}\).
+Some basic calculation (for which I used sympy) shows us that if \(p &amp;gt; 0.582\) then \(r(p) &amp;gt; 0.5\),
+and that the when \(P(C) = 0.5\), \(r(p) \approx 0.64\).
+So under this notion of reliability we can still have that a "reliable" judge will get \(C\) wrong most of the time.&lt;/p&gt;
+
+
+&lt;p&gt;What if the problem is now our generative model? Why are we picking \(A\) and \(B\) independently rather than considering \(C\)?
+Suppose we want to consider a maximally uninformative distribution of possible beliefs given a fixed reliability, what should we do?&lt;/p&gt;
+
+
+&lt;p&gt;Well, this is a &lt;em&gt;Boltzmann sampler&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;If size is number of true propositions believed, the Boltzmann generating function for this problem is \(B(x) = 1 + 2x + x^3\),
+so the expected size of a Boltzmann sampler is \(E(x) = x \frac{B'(x)}{B(x)} = \frac{2x^2 + 3x^3}{1 + 2x + x^3}\).
+This has a reliability of \(0.5\) for \(x \approx 1.21\).
+At this value of \(x\) we have \(P(C) = \frac{x^3}{B(x) \approx 0.35\).
+We have \(P(C) = 0.5\) for \(x \approx 1.62\), which corresponds to a reliability of \(\approx 0.63\).
+This is only a slightly lower reliability than in the model where we chose \(A\) and \(B\) independently.&lt;/p&gt;
+
+
+&lt;p&gt;Now, suppose we take into account the logic structure of the propositions in our voting as follows:
+For each voter we define the &lt;em&gt;distance&lt;/em&gt; of their beliefs to the chosen outcome,
+and we choose the consistent set of beliefs that minimizes the total distance to each voter's belief.
+(You could think of this as analogous to the Kemeny-Young rule)
+What outcome does this give us?&lt;/p&gt;
+
+
+&lt;p&gt;Well, we can calculate the expected distance of each possible outcome.
+The possible outcomes are \(v_1 = \neg A \wedge \neg B \wedge \neg C, v2 = A \wedge \neg B \wedge \neg C, v3 = \neg A \wedge B \wedge \neg C, v4 = A \wedge B \wedge C\).&lt;/p&gt;
+
+
+&lt;p&gt;Discounting the \(B(x)\) factor, we get expected scores proportional to:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;\(S_1 = 2 x + 3 x^3\)&lt;/li&gt;
+&lt;li&gt;\(S_2 = S_3 = 1 + 3x + 2 x^3\)&lt;/li&gt;
+&lt;li&gt;\(S_4 = 3 + 4 x \)&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;We have \(S_4 \leq \max(S_1, S_2, S_3)\) for \(x \geq 1.29\),
+which corresponds to a reliability of \(\approx 0.525\).
+This is &lt;em&gt;much&lt;/em&gt; lower than the reliability we required to get the majority of people believing in \(C\) under any model where we voted on the propositions independently.
+Because we knew the logical structure of the problem space, we could take advantage of that to combine the independent support for \(A\) and \(B\) into support for \(C\).&lt;/p&gt;
+
+
+&lt;p&gt;One of the debates in judgement aggregation is about how to do this without dividing the set of propositions up into premises and conclusions, and this does that pretty well.
+My suspicion is this sort of agreement maximisation will tend to produce relatively high reliability results from relatively low reliability inputs.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2019-03-26-17:59.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2019-03-23-10:51.html</id>
+    <title>How do you nurture your imagination?</title>
+    <updated>2019-03-23T10:51:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;How do you nurture your imagination?&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2019-03-23&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;&lt;a href="https://twitter.com/sehurlburt/status/1109142957523779589"&gt;Stephanie Hurlburt asked this great question on Twitter&lt;/a&gt;.
+I gave her a bunch of answers, but I thought it would be worth expanding on them further.&lt;/p&gt;
+
+
+&lt;p&gt;Up front disclaimer: This is not something that has ever been a problem for me.
+If anything, &lt;a href="https://www.drmaciver.com/2018/11/reaching-into-the-whirlwind/"&gt;the opposite is true&lt;/a&gt;.
+So all of this is an attempt to reverse engineer &lt;em&gt;why&lt;/em&gt; it is not a problem for me and to point out things that seem to work well,
+in the hope that they are things that you can learn to consciously apply,
+but I'm not necessarily going to be the best person to provide advice on how to do that.&lt;/p&gt;
+
+
+&lt;p&gt;Also this advice is very much tailored to the sort of imagination I do.
+If you want a more visual or artistic approach, I'm very much not the person to go to for advice.&lt;/p&gt;
+
+
+&lt;hr/&gt;
+
+
+&lt;p&gt;My core advice is as follows:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Imagination is probably not what you think it is, and what it actually is is much more useful.&lt;/li&gt;
+&lt;li&gt;Imagination is something you can work on like anything else.&lt;/li&gt;
+&lt;li&gt;Your imagination will not improve unless you do things that need you to improve your imagination.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;I'm going to repeat &lt;a href="https://notebook.drmaciver.com/posts/2018-11-09-10:48.html"&gt;my previous advice on how to do hard things&lt;/a&gt; here:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Meta advice on how to do hard things: Find things that you can already do that are like the things that you can't do. Analyse what the difference is, and then try variations where you change one thing about them to make them more like the thing you can't do. Work on those variations until they are no longer hard.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;Imagination is no different in this regard.&lt;/p&gt;
+
+
+&lt;p&gt;You can definitely use your imagination.
+The human brain is &lt;em&gt;very&lt;/em&gt; good at imagining things.
+It's a significant chunk of what it's for - prediction and problem problem are at the heart of what we do,
+and imagination is integral to those.
+The problem is not that you can't use your imagination, the problem is that you can't use your imagination in the way you want to,
+or as well as you want to,
+and &lt;em&gt;that&lt;/em&gt; is something you can just work on like anything else,
+by figuring out how to expand on the things you can already do until that encompasses the things you want to be able to do.&lt;/p&gt;
+
+
+&lt;p&gt;In aid of this, I think it's helpful to understand what imagination is &lt;em&gt;for&lt;/em&gt;.
+Neil Gaiman has a great essay, &lt;a href="http://www.neilgaiman.com/Cool_Stuff/Essays/Essays_By_Neil/Where_do_you_get_your_ideas%3F"&gt;Where do you get your ideas?&lt;/a&gt; (I do not 100% agree with this essay for reasons I'll get into, but it's still a great essay).
+I'm particularly fond of the following passage:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;The Ideas aren't the hard bit. They're a small component of the whole. Creating believable people who do more or less what you tell them to is much harder. And hardest by far is the process of simply sitting down and putting one word after another to construct whatever it is you're trying to build: making it interesting, making it new. &lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;This is very true. The ideas aren't the hard bit. Ideas don't do the work, and if you don't do the work then the idea on its own does nothing.
+What ideas are for is &lt;em&gt;enabling you to do the work&lt;/em&gt;.
+Without the right idea, the work is impossible, or at least prohibitively difficult, but the right idea lets you find the cleavage point where you can apply the work that will break the whole problem apart,
+making the impossible possible.&lt;/p&gt;
+
+
+&lt;p&gt;Do you know how to do the work?
+If so, then you don't need your imagination for it. Do the work, or don't if you decide you'd rather not, but either way it won't push your imagination anywhere.&lt;/p&gt;
+
+
+&lt;p&gt;(Please note that doing the work is &lt;em&gt;good&lt;/em&gt;, both because it's where the end result is actually achieved, and because it gives you the practice you need to develop your skills. The overwhelming majority of your time in any creative endeavour should be spent on work, not imagination. However this is an article about how to nurture your imagination, so I'm mostly going to ignore that)&lt;/p&gt;
+
+
+&lt;p&gt;Often one of the best ways to nurture your imagination is to be &lt;em&gt;stuck&lt;/em&gt; (This is essentially &lt;a href="https://mathwithbaddrawings.com/2017/09/20/the-state-of-being-stuck/"&gt;Andre Wiles's point about how to do mathematics well&lt;/a&gt;).
+Do the work until you can't go any further, and then stay there.
+Resist the urge to give up and say you can't solve the problem.
+You &lt;em&gt;will&lt;/em&gt; defeat the problem.
+You don't have to do it now, but you're not going to give up, and you're going to think about it and try many different angles of attack on it.
+Demand a solution to the problem.
+Even if you don't solve it, you will learn many interesting things that &lt;em&gt;don't&lt;/em&gt; solve it.&lt;/p&gt;
+
+
+&lt;p&gt;I find some mix of affront and interest to be an especially good emotional state here.
+The problem is interesting, so I &lt;em&gt;want&lt;/em&gt; to solve it,
+and I am affronted that it dare challenge me and I &lt;em&gt;will&lt;/em&gt; defeat it.
+If this does not work for you, please pick some other emotional profile that will help you achieve the necessary tenacity.&lt;/p&gt;
+
+
+&lt;p&gt;A category of answer a lot of people gave to Stephanie is that things that give you space are very good for nurturing your imagination.
+This is partially true, and is certainly a technique I use (my go to options are long showers and walks where I leave my phone behind),
+but the missing ingredient is that these only work &lt;em&gt;once you are already good at engaging your imagination&lt;/em&gt;.
+They give you space to let the imaginative process do its work,
+but if you don't know how to or can't currently do that then they won't help at all.
+I bring this up now because the point at which you get stuck is an &lt;em&gt;excellent&lt;/em&gt; point to deploy this technique.
+When you're stuck, go for a walk. Bring pen and paper maybe. Definitely don't bring a phone.
+Give your mind nothing to do but move and think about the problem that is currently offending your sensibilities by being unsolved.&lt;/p&gt;
+
+
+&lt;p&gt;Where do you find good problems to work on?&lt;/p&gt;
+
+
+&lt;p&gt;The best way is to start with something you care about and poke at it.
+Find problems that you already know how to solve and ask if you can solve them &lt;em&gt;better&lt;/em&gt;.
+e.g. With less resources, or avoiding a particular thing you did in the solution,
+or look for some deficiency in the existing solution and see if you can fix that.&lt;/p&gt;
+
+
+&lt;p&gt;Or vary the problem. Change a feature so that your old solution no longer works,
+or no longer seems so appealing.
+Even seemingly trivial changes or things that shouldn't affect things can have a surprisingly large impact.
+Good at writing? Try &lt;a href="https://blog.malignat.us/2018-05-12/on-the-creative-merits-of-paper"&gt;writing by hand&lt;/a&gt;.
+You'll be surprised at how different the experience is.&lt;/p&gt;
+
+
+&lt;p&gt;I'm especially fond of deploying the following virtuous circle:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;How do I solve this problem?&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.drmaciver.com/2017/02/thinking-through-the-implications/"&gt;Now that I have figured out how to solve this problem, what other problems can I apply that technique to&lt;/a&gt;?&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;Once you get good at this loop your problem will very much not be an idea shortage.&lt;/p&gt;
+
+
+&lt;p&gt;A useful way of viewing this loop, and the role of imagination in general,
+is that you are trying to expand your own personal &lt;em&gt;adjacent possible&lt;/em&gt;,
+and imagination is the tool you use to do so.
+The "adjacent possible" is more or less the set of things that you can reach but have not yet tried,
+because they are exactly one step away from what you can already do.&lt;/p&gt;
+
+
+&lt;p&gt;You reach the adjacent possible through variation and recombination.
+You try a twist on something you know, or combining two things in an unexpected way.&lt;/p&gt;
+
+
+&lt;p&gt;Trying to explain the solution to a problem to someone else is often a great way to work on it.
+It's especially good if you &lt;/p&gt;
+
+
+&lt;p&gt;Other things that work well:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Poking at inconsistencies and trying to reconcile them.&lt;/li&gt;
+&lt;li&gt;Asking what happens if I change some aspect of a thing.&lt;/li&gt;
+&lt;li&gt;Trying to explain something in a different way from how I usually understand it (e.g. to someone without the background)&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;Oh, and reading books from fields I'm unfamiliar with. Often gives me new modes of thinking to adopt, which is a pretty reliable driver of imagination.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2019-03-23-10:51.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2019-03-22-20:21.html</id>
     <title>Book Review: The Body Keeps the Score by Bessel Van Der Kolk</title>
-    <updated>2019-03-22T20:35:22+00:00</updated>
+    <updated>2019-03-22T21:06:58+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Book Review: The Body Keeps the Score by Bessel Van Der Kolk&lt;/p&gt;
