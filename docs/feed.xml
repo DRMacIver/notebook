@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-03-26T19:33:28+00:00</updated>
+  <updated>2019-04-02T16:45:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,6 +10,36 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2019-04-02-16:45.html</id>
+    <title>A Boltzmann Agent with Very Bad Judgement</title>
+    <updated>2019-04-02T16:45:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;A Boltzmann Agent with Very Bad Judgement&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2019-04-02&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;As per &lt;a href="https://notebook.drmaciver.com/posts/2019-03-26-17:59.html"&gt;previous post&lt;/a&gt;, it can make sense when looking at a set of consistent propositions to consider agents as Boltzmann samplers over the set of valid consistent beliefs, with their reliability measured by the expected number of true beliefs.&lt;/p&gt;
+
+
+&lt;p&gt;A thing I hadn't previously realised is that this can cause an agent that is on average reliable to be reliably wrong for some propositions.&lt;/p&gt;
+
+
+&lt;p&gt;Consider a chain of propositions of the form \(P_1 \implies \ldots \implies P_n\). There are exactly \(n + 1\) possible consistent beliefs for this sampler (each defined by the first \(P_i\) that the agent believes), so the Boltzmann generating function is \(B(x) = 1 + \ldots + x^n\).
+Suppose \(n = 10\). Some simple maths (by which I mean I used sympy) shows that this agent ends up believing \(P_1\) with probability at least half only when \(x \approx 2\), which leds to the expected number of propositions believed being \(\approx 9\). So in order to achieve \(50%\) reliability on the base proposition we have to achieve \(90%\) overall reliability!&lt;/p&gt;
+
+
+&lt;p&gt;This isn't very surprising in some sense, but probably puts a bound on how good we can expect judgement aggregation to be in this case.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2019-04-02-16:45.html" rel="alternate"/>
+  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2019-03-26-17:59.html</id>
     <title>Boltzmann Samplers for Consistent Epistemic Actors</title>
@@ -98,7 +128,7 @@ My suspicion is this sort of agreement maximisation will tend to produce relativ
   <entry>
     <id>https://notebook.drmaciver.com/posts/2019-03-22-20:21.html</id>
     <title>Book Review: The Body Keeps the Score by Bessel Van Der Kolk</title>
-    <updated>2019-03-22T21:06:58+00:00</updated>
+    <updated>2019-03-28T10:17:49+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Book Review: The Body Keeps the Score by Bessel Van Der Kolk&lt;/p&gt;
