@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-04-02T16:45:00+01:00</updated>
+  <updated>2019-04-04T17:00:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,129 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2019-04-04-17:00.html</id>
+    <title>You're walking wrong</title>
+    <updated>2019-04-04T17:00:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;You're walking wrong&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2019-04-04&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;This started out life as an extended metaphor for how we treat people's support mechanisms in general,
+but I think it works pretty well on a literal reading too.&lt;/p&gt;
+
+
+&lt;p&gt;Note that I am essentially able-bodied (minor caveats only), but I did check this post with a cane user before publishing it.&lt;/p&gt;
+
+
+&lt;hr/&gt;
+
+
+&lt;p&gt;A: &lt;a href="http://bactra.org/weblog/569.html"&gt;Hey, you over there, the one walking! You're doing it wrong.&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;p&gt;B: Excuse me?&lt;/p&gt;
+
+
+&lt;p&gt;A: You're using a cane! You shouldn't do that!&lt;/p&gt;
+
+
+&lt;p&gt;B: ...&lt;/p&gt;
+
+
+&lt;p&gt;A: You should be walking with your own two feet, like a normal person!&lt;/p&gt;
+
+
+&lt;p&gt;B: I will fall over if I do that.&lt;/p&gt;
+
+
+&lt;p&gt;A: Have you tried?&lt;/p&gt;
+
+
+&lt;p&gt;B: Yes. I fell over.&lt;/p&gt;
+
+
+&lt;p&gt;A: Maybe you should try harder?&lt;/p&gt;
+
+
+&lt;p&gt;B: That would cause me to fall over harder.&lt;/p&gt;
+
+
+&lt;p&gt;A: You just need more practice! The problem is, you're using the cane as a crutch.&lt;/p&gt;
+
+
+&lt;p&gt;B: Well, technically a cane and a crutch are different assistive devices. You see a crutch-&lt;/p&gt;
+
+
+&lt;p&gt;A: I mean you're using your &lt;em&gt;cane&lt;/em&gt; to support your &lt;em&gt;weight&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;B: It's more about stability, but yes that's what it's for.&lt;/p&gt;
+
+
+&lt;p&gt;A: You should be using your legs to do that!&lt;/p&gt;
+
+
+&lt;p&gt;B: I literally can't. I have a torn ligament in my ankle. It will not hold my weight properly.&lt;/p&gt;
+
+
+&lt;p&gt;A: That's no excuse. You should fix that then!&lt;/p&gt;
+
+
+&lt;p&gt;B: I am on a waiting list for surgery, yes.&lt;/p&gt;
+
+
+&lt;p&gt;A: Well if you know how to fix it, why are you using that cane?&lt;/p&gt;
+
+
+&lt;p&gt;B: Because I haven't had the surgery yet and I need to walk &lt;em&gt;now&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;A: But what if your cane is made with conflict minerals?&lt;/p&gt;
+
+
+&lt;p&gt;B: Uh, is it?&lt;/p&gt;
+
+
+&lt;p&gt;A: I don't know, did you even &lt;em&gt;check&lt;/em&gt;?&lt;/p&gt;
+
+
+&lt;p&gt;B: Not really, no. Who made your shoes?&lt;/p&gt;
+
+
+&lt;p&gt;A: (waves hand dismissively) oh who cares about that? &lt;em&gt;Everyone&lt;/em&gt; wears shoes. You're wearing shoes. But &lt;em&gt;your cane&lt;/em&gt; might be made with conflict minerals, and I don't have one of those.&lt;/p&gt;
+
+
+&lt;p&gt;B: In the grand scheme of things I don't think canes are a significant contributor to global conflict.&lt;/p&gt;
+
+
+&lt;p&gt;A: But it's &lt;em&gt;all&lt;/em&gt; of our responsibility to care about these things! You should be more responsible in how you walk.&lt;/p&gt;
+
+
+&lt;p&gt;B: OK. If we're all responsible, would you like to pay for me to be able to have my surgery sooner?&lt;/p&gt;
+
+
+&lt;p&gt;A: No, it's your responsibility to do that too.&lt;/p&gt;
+
+
+&lt;p&gt;B: ...&lt;/p&gt;
+
+
+&lt;p&gt;A: Anyway, have you tried yoga?&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2019-04-04-17:00.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2019-04-02-16:45.html</id>
     <title>A Boltzmann Agent with Very Bad Judgement</title>
-    <updated>2019-04-02T16:45:00+01:00</updated>
+    <updated>2019-04-02T16:51:31+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;A Boltzmann Agent with Very Bad Judgement&lt;/p&gt;
