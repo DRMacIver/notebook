@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-04-04T17:00:00+01:00</updated>
+  <updated>2019-04-08T11:47:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,43 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2019-04-08-11:47.html</id>
+    <title>Book Review: "Daring Greatly" by Brene Brown</title>
+    <updated>2019-04-08T11:47:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Book Review: "Daring Greatly" by Brene Brown&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2019-04-08&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;This was a pretty good book, and is going onto my rereadings shelf.&lt;/p&gt;
+
+
+&lt;p&gt;A friend described Brene Brown as "A bit too shiny and US American self-helpy" and that's not an unfair description,
+but I found the book fairly useful anyway.&lt;/p&gt;
+
+
+&lt;p&gt;The most useful aspect of this book for me was clarifying the distinction of &lt;em&gt;shame&lt;/em&gt; vs &lt;em&gt;guilt&lt;/em&gt;. Guilt is feeling that you have done something bad, shame is feeling that you are something bad. The former is often a productive emotion (within bounds), the latter almost never is, because thinking you are in some way &lt;em&gt;intrinsically&lt;/em&gt; bad mostly causes you to lock down and blocks you from becoming better.&lt;/p&gt;
+
+
+&lt;p&gt;I also found the discussion of how shame plays out differently depending on gender helpful for reasons that I don't currently feel able to elaborate well.&lt;/p&gt;
+
+
+&lt;p&gt;There are a number of suggested interventions in this book. I've yet to try any of them and I'm not convinced that I'm going to, but I intend to revisit it and that may change when I do.
+Even without those interventions, I found it helpful for reshaping some of my perspectives and giving me better language to talk about it.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2019-04-08-11:47.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2019-04-04-17:00.html</id>
     <title>You're walking wrong</title>
-    <updated>2019-04-04T17:00:00+01:00</updated>
+    <updated>2019-04-04T17:02:49+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;You're walking wrong&lt;/p&gt;
