@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-04-08T11:47:00+01:00</updated>
+  <updated>2019-04-08T11:55:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,41 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2019-04-08-11:55.html</id>
+    <title>Book Review: Illness (Art of Living) by Havi Carel</title>
+    <updated>2019-04-08T11:55:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Book Review: Illness (Art of Living) by Havi Carel&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2019-04-08&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;This was a good book, and is going on my rereadings shelf. I've already recommended it to several people before I finished it. I have maybe a few more caveats after having finished it, but I still think it was a helpful read.&lt;/p&gt;
+
+
+&lt;p&gt;The book is what happens when a professional philosopher discovers that she is terminally ill and decides to do philosophy to it.
+What results is an exploration of the &lt;em&gt;phenomenology&lt;/em&gt; of being ill - the subjective and social experience of it.
+She does not deny that there is an objective physical component to illness of course,
+but explores how understanding illness on a purely objective, physical, level in many ways misses the point and that the subjective experience of the patient should be be considered.&lt;/p&gt;
+
+
+&lt;p&gt;I'm not really sure what to do with the information from this book yet.
+I tried to summarise it in this review, and my summaries kept coming out as quite uncharitable,
+so I'm going to leave it at this: I liked the book and found it a useful perspective, but I'm not sure it's a perspective I'm able to or want to adopt.
+I disagree significantly with several of the arguments presented, but think they are probably still quite useful mental frameworks to adopt in some circumstances.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2019-04-08-11:55.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2019-04-08-11:47.html</id>
     <title>Book Review: "Daring Greatly" by Brene Brown</title>
-    <updated>2019-04-08T11:47:00+01:00</updated>
+    <updated>2019-04-08T11:54:24+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Book Review: "Daring Greatly" by Brene Brown&lt;/p&gt;
