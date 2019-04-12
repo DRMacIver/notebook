@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-04-08T11:55:00+01:00</updated>
+  <updated>2019-04-12T10:14:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,46 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2019-04-12-10:14.html</id>
+    <title>Book Review: The Descent of Man by Grayson Perry</title>
+    <updated>2019-04-12T10:14:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Book Review: The Descent of Man by Grayson Perry&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2019-04-12&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;This book was one I ended up with as a result of &lt;a href="https://twitter.com/DRMacIver/status/1110866349906112512"&gt;asking the following question&lt;/a&gt;:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Suppose I wanted to read books written by men which are either about or in some way exemplify healthy models of masculinity, what would you recommend?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;I don't feel it's an &lt;em&gt;especially&lt;/em&gt; good answer to that question, as it's mostly yet more writing about the problems with traditional masculinity.&lt;/p&gt;
+
+
+&lt;p&gt;It's perfectly fine as an instance of that. It's short, well written, and I'm sure there are many men out there who would benefit from it,
+but I was very much a member of the choir being preached to, and I didn't really find it especially insightful or clarifying.
+I feel like everything useful I could have got out of it I'd already gotten better out of &lt;a href="https://notebook.drmaciver.com/posts/2019-04-08-11:47.html"&gt;Brene Brown&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;There were a few bits towards the end that I vaguely intend to take notes on, so I'm going to hang onto this book for a few weeks to see if I do,
+and then I'm probably going to dump it on the book exchange shelves at my tube station in the hope that someone else finds it who is more in need of it than I am.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2019-04-12-10:14.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2019-04-08-11:55.html</id>
     <title>Book Review: Illness (Art of Living) by Havi Carel</title>
-    <updated>2019-04-08T11:55:00+01:00</updated>
+    <updated>2019-04-09T13:57:17+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Book Review: Illness (Art of Living) by Havi Carel&lt;/p&gt;
