@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-04-12T10:22:31+01:00</updated>
+  <updated>2019-04-18T14:19:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,70 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2019-04-18-14:19.html</id>
+    <title>Short Reviews</title>
+    <updated>2019-04-18T14:19:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Short Reviews&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2019-04-18&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I've read a whole bunch of good books recently that I've failed to review. Here are some very short reviews of them, pending possible longer ones later.
+This post is more by way of an IOU longer reviews and a note to self.&lt;/p&gt;
+
+
+&lt;h3&gt;A Slip of the Keyboard, by Terry Pratchett&lt;/h3&gt;
+
+
+&lt;p&gt;A collection of nonfiction by Terry Pratchett. It is good, but probably only for Pratchett completionists.
+Main outcomes of my reading it are impulse buying a copy of Brewer's Encyclopedia of Phrase and Fable despite knowing full well that the last time I owned one I barely ever even &lt;em&gt;opened&lt;/em&gt; it,
+and reminding me that I should have another go at Nation.&lt;/p&gt;
+
+
+&lt;p&gt;At some point I will have read everything Terry Pratchett ever wrote, and I do not look forward to the kick in the feels that day will bring,
+so I'm rather putting it off.&lt;/p&gt;
+
+
+&lt;h3&gt;Teaching What You Don't Know by Therese Huston&lt;/h3&gt;
+
+
+&lt;p&gt;This was good, but if you're going in looking for insights on a broader topic, you probably won't get them. This book is &lt;em&gt;very&lt;/em&gt; specialised for its problem domain, and quite USA centric in many of the details. Still, this was what I needed (USA centricity aside), so I found it useful. It also contains a bunch of recommendations for other books that I'll be following up on.&lt;/p&gt;
+
+
+&lt;h3&gt;The Communication Book: 44 Ideas for Better Conversations Every Day by Mikael Krogerus and Roman Tschäppeler&lt;/h3&gt;
+
+
+&lt;p&gt;I don't remember why I own this book, but decided to finally sit down and read it cover to cover. It's fine. There are some neat ideas in there, and it's good for flicking through.
+I'll probably get some benefit out of it at some point and am going to keep it around, but nothing life changing.&lt;/p&gt;
+
+
+&lt;h3&gt;Invitation to Personal Construct Psychology by Trevor Butt and Vivien Burr&lt;/h3&gt;
+
+
+&lt;p&gt;This book is very good but also very expensive. I bought it second hand at a much lower price but all the cheap(ish) ones are gone and I'm not sure I can in good conscious recommend spending £44 on it.&lt;/p&gt;
+
+
+&lt;h3&gt;Where Good Ideas Come From by Steven Johnson&lt;/h3&gt;
+
+
+&lt;p&gt;Very good, strongly recommended. I agree with most of it, though I think he oversimplifies in places, and I'm suspicious of how well he really understands technology and/or evolutionary biology (some things where I feel like he's misrepresented the tech side to a degree larger than lies to children would permit, no specific misgivings about the biology side of things it's just a bit pat and that raises alarm bells).&lt;/p&gt;
+
+
+&lt;p&gt;That being said, the model of how idea generation works as an evolutionary process is spot on. It filled in some useful details for me and I think a lot of people would benefit from understanding this better.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2019-04-18-14:19.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2019-04-12-10:22.html</id>
     <title>Book Review: Agnotology: The Making and Unmaking of Ignorance, edited by Robert N. Proctor and Londa Schiebinger</title>
-    <updated>2019-04-12T10:22:00+01:00</updated>
+    <updated>2019-04-12T10:40:23+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Book Review: Agnotology: The Making and Unmaking of Ignorance, edited by Robert N. Proctor and Londa Schiebinger&lt;/p&gt;
