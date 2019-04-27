@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-04-26T07:48:00+01:00</updated>
+  <updated>2019-04-27T12:32:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,38 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2019-04-27-12:32.html</id>
+    <title>TIL: Libguides</title>
+    <updated>2019-04-27T12:32:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;TIL: Libguides&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2019-04-27&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I happened to log into tumblr for the first time in ages and found &lt;a href="https://porcupine-girl.tumblr.com/post/184478497014/librariandragon-diebrarian"&gt;this possibly lifechanging piece of information&lt;/a&gt;:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;I’m sure it’s common knowledge that scholars and writers have academic specialties. The same is true for subject librarians! Most libraries use a tool called Libguides to amass and describe resources on a given topic, course, work, person, etc. (I use them for everything. All hail Libguides.) These resources can include: print and ebooks, databases, journals, full-text collections, films/video, leading scholars, data visualizations, recommended search terms, archival collections, digital collections, reliable web resources, oral histories, and professional organizations. 
+...
+An even better way to search for libguides?&lt;/p&gt;
+&lt;p&gt;https://community.libguides.com&lt;/p&gt;
+&lt;p&gt;Use the libguide community site and search by topic, institution, or even your friendly neighborhood librarian! (If you have a librarian or two who you trust to put you on the right path, you might be able to get that guidance even if you don’t have time to reach out directly!) If their site says “LibGuide” it’ll show up in THAT community somewhere!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2019-04-27-12:32.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2019-04-26-07:48.html</id>
     <title>Lashon Hara</title>
-    <updated>2019-04-26T07:48:00+01:00</updated>
+    <updated>2019-04-26T07:58:26+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Lashon Hara&lt;/p&gt;
