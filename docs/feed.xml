@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-04-30T14:13:23+01:00</updated>
+  <updated>2019-04-30T14:39:14+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -13,7 +13,7 @@
   <entry>
     <id>https://notebook.drmaciver.com/posts/2019-04-30-13:03.html</id>
     <title>Improving Binary Search by Guessing</title>
-    <updated>2019-04-30T14:13:23+01:00</updated>
+    <updated>2019-04-30T14:39:14+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Improving Binary Search by Guessing&lt;/p&gt;
@@ -66,6 +66,9 @@
             &lt;span class="n"&gt;hi&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;mid&lt;/span&gt;
     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;lo&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;This is loosely based on ideas from &lt;a href="https://bugs.python.org/file4451/timsort.txt"&gt;timsort&lt;/a&gt;.&lt;/p&gt;
 
 
 &lt;p&gt;The reason this code is so useful is that it lets you make many operations &lt;em&gt;adaptive&lt;/em&gt; at zero cost:

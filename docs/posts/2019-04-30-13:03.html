@@ -85,6 +85,7 @@ MathJax.Hub.Config({
             <span class="n">hi</span> <span class="o">=</span> <span class="n">mid</span>
     <span class="k">return</span> <span class="n">lo</span>
 </pre></div>
+<p>This is loosely based on ideas from <a href="https://bugs.python.org/file4451/timsort.txt">timsort</a>.</p>
 <p>The reason this code is so useful is that it lets you make many operations <em>adaptive</em> at zero cost:
 If you have an operation that it may be useful to do some large number of times, you can compose it and do only \(O(\log(n))\) checks to do \(O(n)\) work.</p>
 <p>In particular the nice feature of this that justifies the term adaptive is that the amount of work it does is logarithmic in the size of the <em>output</em>.
