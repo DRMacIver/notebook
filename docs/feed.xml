@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-04-30T13:03:00+01:00</updated>
+  <updated>2019-04-30T14:13:23+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -13,7 +13,7 @@
   <entry>
     <id>https://notebook.drmaciver.com/posts/2019-04-30-13:03.html</id>
     <title>Improving Binary Search by Guessing</title>
-    <updated>2019-04-30T13:03:00+01:00</updated>
+    <updated>2019-04-30T14:13:23+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Improving Binary Search by Guessing&lt;/p&gt;
@@ -101,7 +101,7 @@ but can potentially do very large deletions with much less work than that when t
     &lt;span class="sd"&gt;"""Find n such that lo &amp;lt;= n &amp;lt; hi and f(lo) == f(n) != f(n + 1). It is&lt;/span&gt;
 &lt;span class="sd"&gt;    assumed that f(hi) != f(lo) and will not be checked.&lt;/span&gt;
 
-&lt;span class="sd"&gt;    ``guess`` is a prediction of the value of m and defaults to lo.&lt;/span&gt;
+&lt;span class="sd"&gt;    ``guess`` is a prediction of the value of n and defaults to lo.&lt;/span&gt;
 &lt;span class="sd"&gt;    This function runs in O(log(abs(guess - n))).&lt;/span&gt;
 &lt;span class="sd"&gt;    """&lt;/span&gt;
 
@@ -125,7 +125,7 @@ but can potentially do very large deletions with much less work than that when t
 
 &lt;p&gt;This is a binary search with a twist, which is that you start with a &lt;em&gt;guess&lt;/em&gt; as to what you expect the answer to be.
 The cost of the search is still logarithmic, but it's logarithmic with respect to how bad your guess is rather than how large the range of the search is.
-If you can rely on your guess being pretty good, this will sometimes let you do the binary search in \(O(\log(n))\).&lt;/p&gt;
+If you can rely on your guess being pretty good, this will sometimes let you do the binary search in \(O(1)\) instead of \(O(\log(n))\).&lt;/p&gt;
 
 
 &lt;p&gt;Naturally this can't improve on binary search (which is optimal) in the general case, so how useful this is depends entirely on how good your guess is.

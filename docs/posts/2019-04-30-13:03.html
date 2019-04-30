@@ -106,7 +106,7 @@ but can potentially do very large deletions with much less work than that when t
     <span class="sd">"""Find n such that lo &lt;= n &lt; hi and f(lo) == f(n) != f(n + 1). It is</span>
 <span class="sd">    assumed that f(hi) != f(lo) and will not be checked.</span>
 
-<span class="sd">    ``guess`` is a prediction of the value of m and defaults to lo.</span>
+<span class="sd">    ``guess`` is a prediction of the value of n and defaults to lo.</span>
 <span class="sd">    This function runs in O(log(abs(guess - n))).</span>
 <span class="sd">    """</span>
 
@@ -128,7 +128,7 @@ but can potentially do very large deletions with much less work than that when t
 </pre></div>
 <p>This is a binary search with a twist, which is that you start with a <em>guess</em> as to what you expect the answer to be.
 The cost of the search is still logarithmic, but it's logarithmic with respect to how bad your guess is rather than how large the range of the search is.
-If you can rely on your guess being pretty good, this will sometimes let you do the binary search in \(O(\log(n))\).</p>
+If you can rely on your guess being pretty good, this will sometimes let you do the binary search in \(O(1)\) instead of \(O(\log(n))\).</p>
 <p>Naturally this can't improve on binary search (which is optimal) in the general case, so how useful this is depends entirely on how good your guess is.
 If your guess is maximally bad (i.e. you guess one end and the correct answer was the other), this can make up to twice as many calls to the test function as a classic binary search does,
 but as long as your guesses are on average pretty good it will tend to win out.</p>
