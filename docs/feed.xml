@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-04-30T14:39:14+01:00</updated>
+  <updated>2019-05-09T15:33:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,63 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2019-05-09-15:33.html</id>
+    <title>Further thoughts on Lashon Hara</title>
+    <updated>2019-05-09T15:33:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Further thoughts on Lashon Hara&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2019-05-09&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Since my last post on &lt;a href="https://notebook.drmaciver.com/posts/2019-04-26-07:48.html"&gt;Lashon Hara&lt;/a&gt; I've done a bit more reading,
+including an English translation of &lt;a href="https://amzn.to/2JbnLnY"&gt;the Sefer Chofetz Chaim&lt;/a&gt; (which I don't particularly recommend),
+and &lt;a href="http://rclhistorys15.pbworks.com/w/file/fetch/91566363/Jewish%20Laws%20of%20Speech.pdf"&gt;"Jewish Laws of Speech: Towards a Multicultural Rhetoric" by Erika Falk&lt;/a&gt;,
+which I do.&lt;/p&gt;
+
+
+&lt;p&gt;There has also been an interesting test case of this in the Python community recently,
+which is &lt;a href="https://vorpus.org/blog/why-im-not-collaborating-with-kenneth-reitz/"&gt;njs's post about Kenneth Reitz&lt;/a&gt;.
+This is unambiguously Lashon Hara (well except in the sense that the concept doesn't apply because they're not as far as I know Jewish),
+and by repeating it and discussing it we're undoubtedly committing sins of spreading and believing Lashon Hara (same caveats).
+It turns out I'm OK with this.&lt;/p&gt;
+
+
+&lt;p&gt;The strong impression I get reading the Sefer Chofetz Chaim was that it was a set of norms that was really not very interested in minimizing harm to individuals,
+but was instead designed to promote community cohesion and conformance. I can see why that would be a useful thing in many contexts,
+but I don't think it is a set of structures I'd want to emulate.
+In particular, I don't think I could willingly accept the standards of evidence required, which require at least two first hand witnesses before an accusation is to be believed.&lt;/p&gt;
+
+
+&lt;p&gt;It's an interesting set of norms, and one that I think is worth thinking about when designing community norms,
+but ultimately I think I will continue to spread Lashon Hara and hope the fact that I'm only a bit Jewish will protect me from any divine retribution that may be forthcoming.&lt;/p&gt;
+
+
+&lt;p&gt;Another thing that was linked to as a result of the Lashon Hara discussions were the &lt;a href="https://www.inc.com/justin-bariso/these-3-questions-will-immediately-increase-your-emotional-intelligence.html"&gt;three vital questions&lt;/a&gt;:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Does this need to be said?&lt;/li&gt;
+&lt;li&gt;Does this need to be said &lt;em&gt;by me&lt;/em&gt;?&lt;/li&gt;
+&lt;li&gt;Does this need to be said by me &lt;em&gt;now&lt;/em&gt;?&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;I like these much better as a framework to think about limiting your own speech,
+but will note that I might often find myself answering "No, but it would amuse me to do so, so I will".&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2019-05-09-15:33.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2019-04-30-13:03.html</id>
     <title>Improving Binary Search by Guessing</title>
-    <updated>2019-04-30T14:39:14+01:00</updated>
+    <updated>2019-04-30T21:22:12+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Improving Binary Search by Guessing&lt;/p&gt;
