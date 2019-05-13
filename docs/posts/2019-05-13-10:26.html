@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+DRMacIver's Notebook: Why don't I understand combinatorics?
+    </title>
+    <link rel="stylesheet" href="/pygments.css"/>
+    <link rel="stylesheet" href="/tufte.css"/>
+    <link rel="stylesheet" href="/latex.css"/>
+    <link rel="stylesheet" href="/drmnotes.css"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
+});
+</script>
+
+  </head>
+
+  <body>
+    <article>
+        <h1><a href="/">DRMacIver's Notebook</a></h1>
+        <p class=subtitle>Why don't I understand combinatorics?</p>
+
+        
+
+<section id="the-post">
+<p class=subtitle>Why don't I understand combinatorics?</p>
+<dl class=metadata>
+<dt>Published</dt>
+<dd class="post-date">2019-05-13</dd>
+</dl>
+
+<p>(This post is mostly my jotting down a half formed thought so that I don't get distracted by it now or forget it later).</p>
+<p>A persistent mathematical failing of mine is that I'm not very good at combinatorics.
+This might seem like a minor issue (there are lots of areas of mathematics I'm not good at!) but there's increasingly often a sort of "combinatorial core" to problems I'm interested in,
+so it's started to be something of a problem,
+because it's not just that I'm not <em>interested</em> in being good at combinatorics (though my interest is almost entirely extrinsic rather than intrinsic). It's that I'm interested and have tried to be good at it (a bit) but I'm still not good at it.</p>
+<p>An interesting question is <em>why</em> this is the case.</p>
+<p>Thanks to The Fully General System For Learning To Do Hard Things there are only three reasons not to be good at something:</p>
+<ol>
+<li>I haven't done the work required.</li>
+<li>I haven't figured out the right way to decompose the problem so that I can do the work required.</li>
+<li>I have hit some blocker where it is literally impossible for me to get good at it.</li>
+</ol>
+<p>I'm entirely sure it's not the third (it's almost never the third).
+It's definitely <em>partially</em> the first - I haven't done enough work, that's for sure - but I feel like I've made much better progress on other subjects with the amount of effort I've already invested in combinatorics.
+Some of that might be intrinsic. People laugh when I say I'm a mathematician who is bad at numbers, but a) That's because they don't realise that that's actually normal and b) I'm particularly bad at numbers for a mathematician.
+But I think it's worth considering that it might be the second.
+If nothing else, time spent thinking about how to decompose the problem is almost always productive for understanding the problem even if you don't succeed at decomposing it.</p>
+<p>One of my favourite papers is Tim Gowers's <a href="https://www.dpmms.cam.ac.uk/~wtg10/2cultures.pdf">Two Cultures of Mathematics</a>.
+In it he suggests that the following two questions are useful for determining a mathematician's allegiance:</p>
+<ol>
+<li>The point of solving problems is to understand mathematics better.</li>
+<li>The point of understanding mathematics is to become better able to solve problems.</li>
+</ol>
+<p>Grouping mathematicians into roughly two groups: Theory builders and problem solvers. Every mathematician is a bit of both of course, but there's a big difference in where you put the emphasis.</p>
+<p>He offers the following delightful definition in this paper:</p>
+<blockquote>
+<p>I often use the word “combinatorics” not quite in its conventional sense, but as a general term to refer to problems that it is reasonable to attack more or less from first principles.</p>
+</blockquote>
+<p>I'd like to suggest that if this is a reasonable definition of combinatorics then one of the reasons I struggle with combinatorics is the universal reason for struggling to decompose a subject:
+You were taught it badly.</p>
+<p>Note that this doesn't necessarily mean badly in some absolute sense, only that the way it was taught was bad for you, though it often <em>does</em> mean that it's taught badly in an absolute sense.</p>
+<p>One of the things that I am currently thinking is problematic about how combinatorics is taught is that it is poorly toolkit-ized.</p>
+<p>What do I mean by that?</p>
+<p>Well, a cognitive toolkit is... a general grab bag of techniques. A hammer you can use to hit a thorny problem with, a saw you can use to take it apart, that sort of thing.</p>
+<p>In theory-builder mathematics the items in your toolkits are usually theorems and definitions. e.g. topology is an <em>amazing</em> selection of tools for tearing apart interesting problems.
+Fixed point theorems are another nice example - you want to show an object exists, you just construct a suitable function that you have a theorem about and show that the function necessarily has a fixed point and that a fixed point of the function has the desired property.</p>
+<p>This theorems as tools feature is a fundamental feature of how most people do mathematics,
+and as a result of how mathematics is taught,
+but in combinatorics <em>the tools are not theorems</em>.</p>
+<p>Example from Gowers's paper:</p>
+<blockquote>
+<p>If a combinatorialist were to interrupt such a gathering andask roughly how many subsets of \(\{1, 2, \ldots, n\}\) can be found such that the symmetric difference of any two of them has size at least \(\frac{n}{3}\), the response might very well be a little frosty. (This  problem  is  very  easy  if  and  only  if  one  knows  the  appropriate  technique, which  is  to  choose  sets  randomly  and  show  that  the  chances  of  any  given  pair  of  them having a symmetric difference of size less than \(\frac{n}{3}\) are exponentially small. So the answer is \(e^{cn}\) for some constant \(c &gt; 0\).)</p>
+</blockquote>
+<p>There's not really a theorem here, there's just a general idea that it might be worth trying things at random.
+That general idea is <em>much</em> more powerful than any one theorem in combinatorics.</p>
+<p>I've previously suggested that one of the more powerful learning loops is:</p>
+<ol>
+<li>I have a problem, how do I solve it?</li>
+<li>I have a solution, what problems can I apply it to?</li>
+</ol>
+<p>In theory-builder mathematics a solution is usually the application of a particular theorem, so it makes sense to organise your learning around theorems,
+while in combinatorics theorems are more like an accidental byproduct of the problem solving process,
+and so organising your learning around them will make the whole subject seem weird and disconnected and difficult to learn.</p>
+<p>On top of that, Gowers's definition of combinatorics as problems that are amenable to an elementary approach means that you don't necessarily need to learn a great deal of surrounding context and theory to tackle a problem. All you need is the definitions and a clever idea.
+So, instead of trying to learn about, say, combinatorics of finite sets, or permutations, or whatever, it might be worth organising your learning around these general principles:
+Rather than try to understand a particular class of combinatorial object,
+take a particular combinatorical trick and try applying it to a wide class of objects.</p>
+<p>If you've already read the Gowers paper, you may now be thinking "Yes David, this is exactly what Gowers <em>said</em>" and in some sense this is true,
+but he was trying to justify the appeal of the subject.
+Somehow I had failed to miss the key insight that the natural organising principle of a subject <em>might be a good thing to orient your learning around</em>.</p>
+<p>I would feel more embarrassed about this if it were not a failure mode shared by every combinatorics textbook I have ever read.</p>
+</section>
+
+    </article>
+<footer>
+Copyright David R. MacIver.
+
+CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
+</footer>
+  </body>
+</html>
