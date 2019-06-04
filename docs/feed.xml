@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-05-13T10:58:52+01:00</updated>
+  <updated>2019-06-04T09:58:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,99 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2019-06-04-09:58.html</id>
+    <title>Notes on the Legibility War</title>
+    <updated>2019-06-04T09:58:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Notes on the Legibility War&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2019-06-04&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;There's a thesis that I've been mulling over for the last six months or so that I don't feel like I've got fully formed enough to properly write down,
+but equally have been thinking about too much to &lt;em&gt;not&lt;/em&gt; write down, so this post is some partial notes on the subject.
+I don't know how much any of this will make sense, but it's at least a starting point.&lt;/p&gt;
+
+
+&lt;p&gt;The basic thesis is this:
+Underlying much of life and politics is the &lt;em&gt;legibility war&lt;/em&gt;, a conflict to over how how we make people intelligible to each other.&lt;/p&gt;
+
+
+&lt;p&gt;A partial reading list for the Legibility War:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://amzn.to/2WjNL7v"&gt;"Seeing Like a State" by James Scott&lt;/a&gt; (but really you can just read &lt;a href="https://www.drmaciver.com/2017/11/shaping-the-world/"&gt;Shaping the World&lt;/a&gt; by me or &lt;a href="https://www.ribbonfarm.com/2010/07/26/a-big-little-idea-called-legibility/"&gt;A Big Little Idea Called Legibility&lt;/a&gt; by Venkatesh Rao).&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://amzn.to/2Wj5YCd"&gt;"Sorting Things Out: Classification and its Consequences" by Geoffrey C. Bowker and Susan Leigh Star&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.jstor.org/stable/10.5250/fronjwomestud.33.1.0024?seq=1#page_scan_tab_contents"&gt;"A Cautionary Tale: On Limiting Epistemic Oppression" by Kristie Dotson&lt;/a&gt; (a response to &lt;a href="https://amzn.to/316rA3y"&gt;"Epistemic Injustice" by Miranda Fricker&lt;/a&gt; but much shorter and I think better).&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;(You don't have to read these to understand this post, they're just some of my key influences here).&lt;/p&gt;
+
+
+&lt;p&gt;I'm also currently reading &lt;a href="https://amzn.to/2ZaHR5J"&gt;Discipline and Punish&lt;/a&gt; by Foucault, and I think it will probably be relevant to how this plays out.
+Certainly the notion of power I hold is already fairly Foucaldian.&lt;/p&gt;
+
+
+&lt;p&gt;The basic idea of legibility is that the act of making something comprehensible enough to control is itself an act that shapes the thing to be controlled,
+often with far greater consequences than the control itself.
+This is because it removes complexity that is deemed as irrelevant that makes it harder to control,
+and that complexity may be in some way essential to the health of the system.&lt;/p&gt;
+
+
+&lt;p&gt;Compare this with "Sorting Thing's Out"'s idea of &lt;em&gt;torque&lt;/em&gt;.
+Torque is the metaphorical force that acts between lives and classification systems,
+shaping each to the other - the boundaries of classification are negotiated,
+so that they work for at least &lt;em&gt;most&lt;/em&gt; people,
+while people's lives are forced to fit into boxes when classification is linked to power.
+A minority may remain miscellaneous, and the majority may fit more or less well,
+but through the exercise of torque the lives and classification system are twisted to more or less meet eachother.
+In the process of classification, people are made legible,
+so one way of looking at torque is as the legibilising force.&lt;/p&gt;
+
+
+&lt;p&gt;&lt;a href="https://notebook.drmaciver.com/posts/2018-11-14-09:53.html"&gt;As I've discussed before&lt;/a&gt; legibility is not just a thing inflicted by institutions on people,
+but on people to each other.
+We make other people explain themselves in terms we can understand,
+we &lt;a href="https://twitter.com/DRMacIver/status/1127149931804942336"&gt;hire people who we can understand better&lt;/a&gt;.
+People are punished (even if only by making them work harder, but often more than that) when they fail to make sense to us,
+and rewarded when they make sense.
+But equally, the way we make sense of the world is shaped by the people we have to understand.
+In this way we all exert torque on eachother.&lt;/p&gt;
+
+
+&lt;p&gt;Miranda Fricker proposed the notion of &lt;em&gt;epistemic injustice&lt;/em&gt;, which is injustice done to someone in their capacity as an epistemic actor. That is to say, as someone who seeks to understand and know things about the world.
+The two types of epistemic injustice relevant to the legibility war are Fricker's notion of &lt;em&gt;hermeneutical&lt;/em&gt; injustice and Dotson's notion of &lt;em&gt;contributory&lt;/em&gt; injustice.
+These are both framed in terms of what Fricker calls &lt;em&gt;hermeneutical resources&lt;/em&gt; - tools of interpretation, things that help you understand the world.
+e.g. concepts, words, stories you can use as analogies.
+Hermeneutical injustice is injustice which denies you the hermeneutical resources you need,
+contributory injustice is injustice in refusing to take on the hermeneutical resources you need to understand someone else's experience.&lt;/p&gt;
+
+
+&lt;p&gt;I'm less convinced than I used to be that "hermeneutical resource" is a good framing for this.
+It is possible to deny someone's ability to interpret the world without denying them hermeneutical resources (e.g. gaslighting), and it is possible to aid someone's ability to interpret the world without providing them with them (e.g. rubber ducking).
+I think a better way of looking at this is Bowker and Star's notion of an &lt;em&gt;information infrastructure&lt;/em&gt;.
+Society is an infrastructure that each of us relies on to interpret the world,
+but access to and support from that infrastructure is not evenly distributed.
+Hermeneutic and contributory injustice can be both thought of as structural prejudices in the information infrastructure and how we interact with it.&lt;/p&gt;
+
+
+&lt;p&gt;The legibility war is thus the conflict we all participate in over this infrastructure,
+trying to shape society's collective interpretative faculties to work in our favour.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2019-06-04-09:58.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2019-05-13-10:26.html</id>
     <title>Why don't I understand combinatorics?</title>
-    <updated>2019-05-13T10:58:52+01:00</updated>
+    <updated>2019-05-13T18:48:17+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Why don't I understand combinatorics?&lt;/p&gt;
