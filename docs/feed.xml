@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-06-04T09:58:00+01:00</updated>
+  <updated>2019-06-13T20:54:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,46 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2019-06-13-20:54.html</id>
+    <title>Notes on Disagreement</title>
+    <updated>2019-06-13T20:54:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Notes on Disagreement&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2019-06-13&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;We did what I thought was a very good TickTalk session about &lt;em&gt;disagreement&lt;/em&gt; today (actually we disagreed on whether it was about disagreement, in that everyone except me forgot that it was supposed to have a theme, but I ended up interpreting everything through a disagremeent themed lens. This worked surprisingly well).&lt;/p&gt;
+
+
+&lt;p&gt;We identified what I thought were some quite good themes / advice. In no particular order:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Identify who you can trust and be more honest with them in disagreements. Adopt a sense of curiousity as to &lt;em&gt;why&lt;/em&gt; you disagree and treat it as a collaborative attempt to identify that disagreement together.&lt;/li&gt;
+&lt;li&gt;"I think we're talking past eachother" is a good phrase to deescalate an argument that you think has got needlessly heated and could be resolved productively.&lt;/li&gt;
+&lt;li&gt;If the main person you are disagreeing with is &lt;em&gt;not&lt;/em&gt; someone you can trust, identify mutual friends and acquintances who you &lt;em&gt;can&lt;/em&gt; trust and can talk about the situation with first.&lt;/li&gt;
+&lt;li&gt;Identify whether you &lt;em&gt;need&lt;/em&gt; to resolve the disagreement.&lt;/li&gt;
+&lt;li&gt;If you are disagreeing with someone you don't trust and don't value (e.g. because you think they're a jerk or out to get you), your disagremeent is &lt;em&gt;adversarial&lt;/em&gt;. Your goal is to manipulate them into a desired outcome, not resolve the disagremeent per se. You don't need them to agree with you, just to do what you want.&lt;/li&gt;
+&lt;li&gt;If they're a random on the internet, you almost certainly don't need to resolve the disagreement. It may still be useful to argue to demonstrate that their opinion is not OK, or you might just want to block them.&lt;/li&gt;
+&lt;li&gt;In adversarial disagreements, always give the adversary the opportunity to save face. If they have no good options to choose from, they might not choose the bad option you were hoping for.&lt;/li&gt;
+&lt;li&gt;If you have to back down in an adversarial disagreement, it can be useful to say "When I said X, I believed Y, which has turned out not to be the case (or was true but changed)". &lt;/li&gt;
+&lt;li&gt;You should read Thomas Schelling's "The Strategy of Conflict"&lt;/li&gt;
+&lt;li&gt;Alain de Botton gives bad advice about honesty and you shouldn't trust him.&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2019-06-13-20:54.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2019-06-04-09:58.html</id>
     <title>Notes on the Legibility War</title>
-    <updated>2019-06-04T09:58:00+01:00</updated>
+    <updated>2019-06-04T15:51:40+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Notes on the Legibility War&lt;/p&gt;
