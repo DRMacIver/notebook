@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-07-03T09:50:00+01:00</updated>
+  <updated>2019-07-09T21:32:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,71 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2019-07-09-21:32.html</id>
+    <title>Two Player TickTalk</title>
+    <updated>2019-07-09T21:32:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Two Player TickTalk&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2019-07-09&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Today's &lt;a href="https://github.com/DRMacIver/systems/blob/master/tempo.md"&gt;TickTalk&lt;/a&gt; had a high drop out rate so ended up with just two of us there,
+so we tinkered with the format to try to make it work.&lt;/p&gt;
+
+
+&lt;p&gt;The main thing we did here was that we did away with the cards and just passed it back and forth with each taking it in turns to talk about things.
+Often this would be digging more into something we'd just be talking about.
+Voting was just a question of "Shall we talk about this some more?" "Sure"&lt;/p&gt;
+
+
+&lt;p&gt;We did maintain talking object protocol. We weren't always very good at it, which I've noticed tends to happen in TickTalk in general (especially with small groups) but I still think it was worth having.&lt;/p&gt;
+
+
+&lt;p&gt;I found we often lost track of the timer and in particular whether we were in the second or first flip of it,
+so I think the way I would run a two person TickTalk in future is this:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;The person with the timer gets to pick the topic for this five minute session and puts it in front of them.&lt;/li&gt;
+&lt;li&gt;When the timer runs out, the other person can choose to just flip it over and leave it in front of the current person to continue the topic.&lt;/li&gt;
+&lt;li&gt;They can also claim the timer, flipping it and putting it in front of them and saying "I'd like to change the topic / focus on X / etc." (it should be very acceptable to change topic)&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;In particular it's perfectly fine to continue on with a topic for more than ten minutes in two player TickTalk. The format is naturally more flexible than with more than two players,
+which I think is good for a two person conversation.&lt;/p&gt;
+
+
+&lt;p&gt;This session was &lt;em&gt;extremely&lt;/em&gt; good. Rachael (the other attendee) and I always have good conversations, so that's not necessarily indicative of it in general,
+but I did think it was an unusually good conversation with her even given that.&lt;/p&gt;
+
+
+&lt;p&gt;I won't write detailed notes on our conversation, but one thread in it that was very helpful was to help clarify what some of the value of TickTalk is:
+It creates an environment where a lot of the emotional work you have to do of managing a conversation (e.g. making sure you're not dominating it) is taken care of automatically by the structure of it,
+so that you can stop worrying about it and focus on having an actual conversation.
+These actual conversations are then very good at getting you to explain yourself to other people,
+which lets you use the group as a way of understanding and analysing your assumptions about your situation.&lt;/p&gt;
+
+
+&lt;p&gt;I've thought of TickTalk before as a way to get a group to have a conversation that is about as good a conversation as the group could have in principle but probably wouldn't in practice,
+and I do think that emotional management aspect is a big part of it.
+I think it also tends to push the structure more naturally towards the analytical mode,
+so among the optimal conversations the group has it will tend to select for more analytical ones,
+which is often very helpful to get some perspective on the problem.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2019-07-09-21:32.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2019-07-03-09:50.html</id>
     <title>Separating Sampling and Removal</title>
-    <updated>2019-07-03T09:50:00+01:00</updated>
+    <updated>2019-07-03T10:32:28+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Separating Sampling and Removal&lt;/p&gt;
