@@ -68,7 +68,7 @@ So this boils down to the claim that if \(X, Y, Z \sim \textrm{Exp}(1)\) then \(
 <p>The proof of this is as follows:</p>
 <p>\begin{align}
 P(X + Y \leq 2Z) &amp;= P\left(Z \geq \frac{X + Y}{2}\right) \\
-&amp; = \int\limits_{x, y \geq 0} e^{-x - y} \int\limits_{z \geq \frac{x + y}{2}} e^{-z} dx dx dy \\
+&amp; = \int\limits_{x, y \geq 0} e^{-x - y} \int\limits_{z \geq \frac{x + y}{2}} e^{-z} dz dx dy \\
 &amp; = \int\limits_{x, y \geq 0} e^{-x - y} \left(1 - e^{-\frac{x + y}{2}}\right) dx dy \\
 &amp; = \int\limits_{x, y \geq 0} e^{-x} e^{- y} dx dy  - \int\limits_{x, y \geq 0} e^{-\frac{3}{2} x}  e^{-\frac{3}{2} y} dx dy  \\
 &amp; = \left(\int\limits_{x, y \geq 0} e^{-x} dx\right)^2  -  \left(\int\limits_{x, y \geq 0} e^{-\frac{3}{2}x} dx\right)^2 \\
