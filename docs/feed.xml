@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-08-03T07:25:29+01:00</updated>
+  <updated>2019-08-03T08:11:52+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -13,7 +13,7 @@
   <entry>
     <id>https://notebook.drmaciver.com/posts/2019-08-03-04:42.html</id>
     <title>A Fun Puzzle</title>
-    <updated>2019-08-03T07:25:29+01:00</updated>
+    <updated>2019-08-03T08:11:52+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;A Fun Puzzle&lt;/p&gt;
@@ -90,91 +90,6 @@ Note that if \(A, B\) are independent then \(F_{A + B}(t) = E(e^{t(A + N)}) = E(
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2019-08-03-04:42.html" rel="alternate"/>
-  </entry>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2019-07-13-22:50.html</id>
-    <title>Notes On How To Think About Developer Performance</title>
-    <updated>2019-07-13T22:50:00+01:00</updated>
-    <content>
-
-&lt;p class="subtitle"&gt;Notes On How To Think About Developer Performance&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2019-07-13&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Epistemic status: Reasonably confident, but not making many emprical claims.&lt;/p&gt;
-
-
-&lt;p&gt;Apparently we're doing 10x developer discourse on Twitter again. As usual, I hate most people's claims on every side of the argument - the 10x developer claims are nonsense obviously, but I also don't like other people's responses to it very much - so I thought I'd write up some notes on how I wish people would think about the problem.&lt;/p&gt;
-
-
-&lt;h3&gt;A Note on Ethics&lt;/h3&gt;
-
-
-&lt;p&gt;Suppose you had a true and accurate understanding of "productivity" and could reliably predict and control things to maximize achievable productivity.
-Should you do it?
-Not necessarily.&lt;/p&gt;
-
-
-&lt;p&gt;Suppose the threat of being thrown into a meatgrinder reliably improved your staff's performance
-(it's unlikely that it does, but our ethics should be robust against inconvenient truths).
-Would this mean you were now justified in threating your staff with a meatgrinder in order to improve productivity?&lt;/p&gt;
-
-
-&lt;p&gt;No, obviously not.
-If your answer wasn't "obviously not", please go away.
-But the reason (in our hypothetical world where this approach works) not to do that isn't because it doesn't work, it's because it's unethical!&lt;/p&gt;
-
-
-&lt;p&gt;This matters particularly in the context of productivity because there's an argument that you should hire asshole geniuses and make them the centerpiece of your team without curbing their behaviour,
-and that this is justified because they're super productive as individuals.&lt;/p&gt;
-
-
-&lt;p&gt;People get into long back and forth arguments as to whether this is a good strategy from a productivity point of view. I think it's probably not (with some caveats),
-but I also think it's missing the point. The reason you shouldn't adopt this strategy isn't dependent on whether it does or doesn't work,
-you shouldn't adopt this strategy because it makes people miserable. It doesn't even do the asshole any favours - if they never have to face the consequences of being an asshole,
-they'll never grow as a person.&lt;/p&gt;
-
-
-&lt;p&gt;Another example of where this gets debated is death marches and other high stress working patterns like you find in the games industry and a lot of startups.
-We discuss a lot whether making people work 100 hour weeks is actually in any way a good idea from a productivity point of view.
-Is it? I think probably not. I don't care though: Making people work 100 hour work weeks on a regular basis is unethical,
-regardless of whether it works.&lt;/p&gt;
-
-
-&lt;h3&gt;The Unit of Productivity Is The Team&lt;/h3&gt;
-
-
-&lt;p&gt;One of the standard counter arguments to 10x programmer discourse is that individual productivity doesn't matter,
-what matters is the productivity of the team. This is obviously true - your success is determined by your total productivity,
-not by the productivity of any individual member.&lt;/p&gt;
-
-
-&lt;p&gt;What is less obvious and is the main point of contention is that team productivity is not just the total result of individual productivity.&lt;/p&gt;
-
-
-&lt;p&gt;There are a couple reasons for this. Some of them:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;Some people can be individually unproductive but very good at helping others. e.g. from the point of view of software development a manager or a tester "produces" no software, but they are still useful! Similarly a senior engineer who is spending time helping junior engineers get up to speed is spending that time "less productively" from a software development point of view but it's obviously a good use of time.&lt;/li&gt;
-&lt;li&gt;People get blocked on others. If you have three highly productive front-end developers and one backend developer who isn't very productive (possibly because they're overworked?) then they're the bottleneck and it doesn't really matter how productive the other three are.&lt;/li&gt;
-&lt;li&gt;Some people are highly individually productive but at the cost of other people's productivity (e.g. because they're assholes, but this might also be because they introduce a lot of technical debt that others have to clean up)&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;This starts to become important as soon as your team grows above one, but I think by the time you reach a team of 5-10 people (made up numbers klaxon) these effects probably dominate.&lt;/p&gt;
-
-
-&lt;p&gt;I &lt;em&gt;do&lt;/em&gt; think that individual productivity matters a lot, and I &lt;em&gt;do&lt;/em&gt; think that there is a high degree of variability in it, and I feel like a lot of the "Only team productivity matters!" discourse pretends that's not the case,
-but it still makes sense to prioritise team productivity: &lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2019-07-13-22:50.html" rel="alternate"/>
   </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2019-07-09-21:32.html</id>

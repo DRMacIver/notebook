@@ -32,6 +32,11 @@ MathJax.Hub.Config({
        linebreaks: { automatic: true } 
   }
 });
+
+MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
+  console.log(message)
+});
+
 </script>
 
   </head>
