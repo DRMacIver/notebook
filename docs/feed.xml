@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-08-03T05:09:58+01:00</updated>
+  <updated>2019-08-03T05:16:59+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -13,7 +13,7 @@
   <entry>
     <id>https://notebook.drmaciver.com/posts/2019-08-03-04:42.html</id>
     <title>A Fun Puzzle</title>
-    <updated>2019-08-03T05:09:58+01:00</updated>
+    <updated>2019-08-03T05:16:59+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;A Fun Puzzle&lt;/p&gt;
@@ -53,9 +53,9 @@ So this boils down to the claim that if \(X, Y, Z \sim \textrm{Exp}(1)\) then \(
 
 
 &lt;p&gt;\begin{align}
-P(X + Y \leq 2Z) &amp;amp;= P(Z \geq \frac{X + Y}{2}) \\
+P(X + Y \leq 2Z) &amp;amp;= P\left(Z \geq \frac{X + Y}{2}\right) \\
 &amp;amp; = \int\limits_{x, y \geq 0} e^{-x - y} \int\limits_{z \geq \frac{x + y}{2}} e^{-z} dx dx dy \\
-&amp;amp; = \int\limits_{x, y \geq 0} e^{-x - y} (1 - e^{-\frac{x + y}{2}}) dx dy \\
+&amp;amp; = \int\limits_{x, y \geq 0} e^{-x - y} \left(1 - e^{-\frac{x + y}{2}}\right) dx dy \\
 &amp;amp; = \int\limits_{x, y \geq 0} e^{-x} e^{- y} dx dy  - \int\limits_{x, y \geq 0} e^{-\frac{3}{2} x}  e^{-\frac{3}{2} y} dx dy  \\
 &amp;amp; = \left(\int\limits_{x, y \geq 0} e^{-x} dx\right)^2  -  \left(\int\limits_{x, y \geq 0} e^{-\frac{3}{2}x} dx\right)^2 \\
 &amp;amp; = 1^2 - \left(\frac{2}{3}\right)^2 \\
