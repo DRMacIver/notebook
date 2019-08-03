@@ -40,6 +40,143 @@ MathJax.Hub.Config({
         
 
 <section>
+<h2><a href="/posts/2019-08-03-04:42.html">2019-08-03</a></h2>
+
+
+<p class="subtitle">A Fun Puzzle</p>
+
+
+<dl class="metadata">
+<dt>Published</dt>
+<dd class="post-date">2019-08-03</dd>
+</dl>
+
+
+<p><a href="https://twitter.com/Ghast_NEOH/status/1157366361200451585">From Twitter</a>:</p>
+
+
+<blockquote>
+<p>fun math game:</p>
+<p>there are two players, and a machine that outputs a random number between 0.0 and 1.0 when you press a button </p>
+<p>(inclusive, chosen uniformly and independently, from the reals, etc)
+player 1 pushes the button twice, and multiplies the two outputs together to get a score (e.g. 0.45 x 0.9=0.4).</p>
+<p>then player 2 pushes the button once, and squares the result to get their score (e.g. 0.67 x 0.67 = 0.4489)</p>
+<p>the higher score wins. which player wins more often?</p>
+</blockquote>
+
+
+<p>The answer is that player two wins with probability \(\frac{5}{9}\).</p>
+
+
+<p>Why?</p>
+
+
+<p>I originally just brute forced solved the integral, but it's easier to see after a change of variables.
+The log of a uniform \(0, 1\) random variable is exponentially distributed with parameter \(1\).
+So this boils down to the claim that if \(X, Y, Z \tilde \textrm{Exp}(1)\) then \(P(X + Y \leq 2Z) = \frac{5}{9}\).</p>
+
+
+<p>The proof of this is as follows:</p>
+
+
+<p>\begin{align}
+P(X + Y \leq 2Z) &amp;= P(Z \geq \frac{X + Y}{2}) \\
+&amp; = \int\limits_{x, y \geq 0} e^{-x - y} \int\limits_{z \geq \frac{x + y}{2}} e^{-z} dx dx dy \\
+&amp; = \int\limits_{x, y \geq 0} e^{-x - y} (1 - e^{-\frac{x + y}{2}}) dx dy \\
+&amp; = \int\limits_{x, y \geq 0} e^{-x} e^{- y} dx dy  - \int\limits_{x, y \geq 0} e^{-\frac{3}{2} x}  e^{-\frac{3}{2} y} dx dy  \\
+&amp; = \left(\int\limits_{x, y \geq 0} e^{-x} dx\right)^2  -  \left(\int\limits_{x, y \geq 0} e^{-\frac{3}{2}x} dx\right)^2 \\
+&amp; = 1^2 - \lef(\frac{2}{3}\right)^2 \\
+&amp; = \frac{5}{9} \\
+\end{align}</p>
+
+
+<p>I still feel like there should be a nicer solution than this. It's a step above just brute force solving the integral in tidiness, but I don't feel it makes it any more intuitive where the actual number comes from.</p>
+
+
+</section>
+<section>
+<h2><a href="/posts/2019-07-13-22:50.html">2019-07-13</a></h2>
+
+
+<p class="subtitle">Notes On How To Think About Developer Performance</p>
+
+
+<dl class="metadata">
+<dt>Published</dt>
+<dd class="post-date">2019-07-13</dd>
+</dl>
+
+
+<p>Epistemic status: Reasonably confident, but not making many emprical claims.</p>
+
+
+<p>Apparently we're doing 10x developer discourse on Twitter again. As usual, I hate most people's claims on every side of the argument - the 10x developer claims are nonsense obviously, but I also don't like other people's responses to it very much - so I thought I'd write up some notes on how I wish people would think about the problem.</p>
+
+
+<h3>A Note on Ethics</h3>
+
+
+<p>Suppose you had a true and accurate understanding of "productivity" and could reliably predict and control things to maximize achievable productivity.
+Should you do it?
+Not necessarily.</p>
+
+
+<p>Suppose the threat of being thrown into a meatgrinder reliably improved your staff's performance
+(it's unlikely that it does, but our ethics should be robust against inconvenient truths).
+Would this mean you were now justified in threating your staff with a meatgrinder in order to improve productivity?</p>
+
+
+<p>No, obviously not.
+If your answer wasn't "obviously not", please go away.
+But the reason (in our hypothetical world where this approach works) not to do that isn't because it doesn't work, it's because it's unethical!</p>
+
+
+<p>This matters particularly in the context of productivity because there's an argument that you should hire asshole geniuses and make them the centerpiece of your team without curbing their behaviour,
+and that this is justified because they're super productive as individuals.</p>
+
+
+<p>People get into long back and forth arguments as to whether this is a good strategy from a productivity point of view. I think it's probably not (with some caveats),
+but I also think it's missing the point. The reason you shouldn't adopt this strategy isn't dependent on whether it does or doesn't work,
+you shouldn't adopt this strategy because it makes people miserable. It doesn't even do the asshole any favours - if they never have to face the consequences of being an asshole,
+they'll never grow as a person.</p>
+
+
+<p>Another example of where this gets debated is death marches and other high stress working patterns like you find in the games industry and a lot of startups.
+We discuss a lot whether making people work 100 hour weeks is actually in any way a good idea from a productivity point of view.
+Is it? I think probably not. I don't care though: Making people work 100 hour work weeks on a regular basis is unethical,
+regardless of whether it works.</p>
+
+
+<h3>The Unit of Productivity Is The Team</h3>
+
+
+<p>One of the standard counter arguments to 10x programmer discourse is that individual productivity doesn't matter,
+what matters is the productivity of the team. This is obviously true - your success is determined by your total productivity,
+not by the productivity of any individual member.</p>
+
+
+<p>What is less obvious and is the main point of contention is that team productivity is not just the total result of individual productivity.</p>
+
+
+<p>There are a couple reasons for this. Some of them:</p>
+
+
+<ul>
+<li>Some people can be individually unproductive but very good at helping others. e.g. from the point of view of software development a manager or a tester "produces" no software, but they are still useful! Similarly a senior engineer who is spending time helping junior engineers get up to speed is spending that time "less productively" from a software development point of view but it's obviously a good use of time.</li>
+<li>People get blocked on others. If you have three highly productive front-end developers and one backend developer who isn't very productive (possibly because they're overworked?) then they're the bottleneck and it doesn't really matter how productive the other three are.</li>
+<li>Some people are highly individually productive but at the cost of other people's productivity (e.g. because they're assholes, but this might also be because they introduce a lot of technical debt that others have to clean up)</li>
+</ul>
+
+
+<p>This starts to become important as soon as your team grows above one, but I think by the time you reach a team of 5-10 people (made up numbers klaxon) these effects probably dominate.</p>
+
+
+<p>I <em>do</em> think that individual productivity matters a lot, and I <em>do</em> think that there is a high degree of variability in it, and I feel like a lot of the "Only team productivity matters!" discourse pretends that's not the case,
+but it still makes sense to prioritise team productivity: </p>
+
+
+</section>
+<section>
 <h2><a href="/posts/2019-07-09-21:32.html">2019-07-09</a></h2>
 
 

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+DRMacIver's Notebook: A Fun Puzzle
+    </title>
+    <link rel="stylesheet" href="/pygments.css"/>
+    <link rel="stylesheet" href="/tufte.css"/>
+    <link rel="stylesheet" href="/latex.css"/>
+    <link rel="stylesheet" href="/drmnotes.css"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
+});
+</script>
+
+  </head>
+
+  <body>
+    <article>
+        <h1><a href="/">DRMacIver's Notebook</a></h1>
+        <p class=subtitle>A Fun Puzzle</p>
+
+        
+
+<section id="the-post">
+<p class=subtitle>A Fun Puzzle</p>
+<dl class=metadata>
+<dt>Published</dt>
+<dd class="post-date">2019-08-03</dd>
+</dl>
+
+<p><a href="https://twitter.com/Ghast_NEOH/status/1157366361200451585">From Twitter</a>:</p>
+<blockquote>
+<p>fun math game:</p>
+<p>there are two players, and a machine that outputs a random number between 0.0 and 1.0 when you press a button </p>
+<p>(inclusive, chosen uniformly and independently, from the reals, etc)
+player 1 pushes the button twice, and multiplies the two outputs together to get a score (e.g. 0.45 x 0.9=0.4).</p>
+<p>then player 2 pushes the button once, and squares the result to get their score (e.g. 0.67 x 0.67 = 0.4489)</p>
+<p>the higher score wins. which player wins more often?</p>
+</blockquote>
+<p>The answer is that player two wins with probability \(\frac{5}{9}\).</p>
+<p>Why?</p>
+<p>I originally just brute forced solved the integral, but it's easier to see after a change of variables.
+The log of a uniform \(0, 1\) random variable is exponentially distributed with parameter \(1\).
+So this boils down to the claim that if \(X, Y, Z \tilde \textrm{Exp}(1)\) then \(P(X + Y \leq 2Z) = \frac{5}{9}\).</p>
+<p>The proof of this is as follows:</p>
+<p>\begin{align}
+P(X + Y \leq 2Z) &amp;= P(Z \geq \frac{X + Y}{2}) \\
+&amp; = \int\limits_{x, y \geq 0} e^{-x - y} \int\limits_{z \geq \frac{x + y}{2}} e^{-z} dx dx dy \\
+&amp; = \int\limits_{x, y \geq 0} e^{-x - y} (1 - e^{-\frac{x + y}{2}}) dx dy \\
+&amp; = \int\limits_{x, y \geq 0} e^{-x} e^{- y} dx dy  - \int\limits_{x, y \geq 0} e^{-\frac{3}{2} x}  e^{-\frac{3}{2} y} dx dy  \\
+&amp; = \left(\int\limits_{x, y \geq 0} e^{-x} dx\right)^2  -  \left(\int\limits_{x, y \geq 0} e^{-\frac{3}{2}x} dx\right)^2 \\
+&amp; = 1^2 - \lef(\frac{2}{3}\right)^2 \\
+&amp; = \frac{5}{9} \\
+\end{align}</p>
+<p>I still feel like there should be a nicer solution than this. It's a step above just brute force solving the integral in tidiness, but I don't feel it makes it any more intuitive where the actual number comes from.</p>
+</section>
+
+    </article>
+<footer>
+Copyright David R. MacIver.
+
+CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
+</footer>
+  </body>
+</html>
