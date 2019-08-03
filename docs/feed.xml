@@ -88,6 +88,9 @@ Note that if \(A, B\) are independent then \(F_{A + B}(t) = E(e^{t(A + N)}) = E(
 
 &lt;p&gt;Thus, plugging in the numbers, we have \(P(X + Y \geq 2Z) = \left(\frac{1}{1 + \frac{1}{2}}\right)^2 = \frac{4}{9}\) as desired.&lt;/p&gt;
 
+
+&lt;p&gt;Update 2: &lt;a href="https://twitter.com/icecolbeveridge/status/1157575092806868992"&gt;Colin's solution is much better than mine&lt;/a&gt;.&lt;/p&gt;
+
 </content>
     <link href="https://notebook.drmaciver.com/posts/2019-08-03-04:42.html" rel="alternate"/>
   </entry>
