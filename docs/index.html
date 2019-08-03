@@ -98,6 +98,24 @@ P(X + Y \leq 2Z) &amp;= P\left(Z \geq \frac{X + Y}{2}\right) \\
 <p>I still feel like there should be a nicer solution than this. It's a step above just brute force solving the integral in tidiness, but I don't feel it makes it any more intuitive where the actual number comes from.</p>
 
 
+<p>Update: OK, here is probably as nice as it's going to get.</p>
+
+
+<p>For a random variable \(A\) define the exponential generating function of \(A\) as \(F_A(t) = E(e^{tA})\).
+Note that if \(A, B\) are independent then \(F_{A + B}(t) = E(e^{t(A + N)} = E(e^{tA} e^t{B}) =  E(e^{tA}) E(e^t{B})  = F_A(t) F_B(t)\).</p>
+
+
+<p>Note also that if \(Z \sim \mathrm{Exp}(\lambda)\)  and \(P(A \geq 0) = 1\) then \(P(Z \geq A) = E(P(Z \geq a | A = a)) = e^{-\lambda A} = F_A(-\lambda)\).</p>
+
+
+<p>Now, with \(X, Y, Z\) as above, we have \(P(X + Y \geq 2Z) = F_{X + Y}(-\frac{1}{2}).
+With \(t &lt; 1\) we have \(F_X(t) = F_Y(t) = \int\limits_0^\infty e^{(t - 1)x} = \frac{1}{1 - t}\),
+so \(F_{X + Y}(t) = \frac{1}{(1 - t)^2\).</p>
+
+
+<p>Thus, plugging in the numbers, we have \(P(X + Y \geq 2Z) = \left(\frac{1}{1 + \frac{1}{2}}\right)^2 = \frac{4}{9}\) as desired.</p>
+
+
 </section>
 <section>
 <h2><a href="/posts/2019-07-13-22:50.html">2019-07-13</a></h2>
