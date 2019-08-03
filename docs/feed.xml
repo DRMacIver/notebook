@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-08-03T07:03:31+01:00</updated>
+  <updated>2019-08-03T07:06:53+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -13,7 +13,7 @@
   <entry>
     <id>https://notebook.drmaciver.com/posts/2019-08-03-04:42.html</id>
     <title>A Fun Puzzle</title>
-    <updated>2019-08-03T07:03:31+01:00</updated>
+    <updated>2019-08-03T07:06:53+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;A Fun Puzzle&lt;/p&gt;
@@ -76,9 +76,14 @@ Note that if \(A, B\) are independent then \(F_{A + B}(t) = E(e^{t(A + N)}) = E(
 &lt;p&gt;Note also that if \(Z \sim \mathrm{Exp}(\lambda)\)  and \(P(A \geq 0) = 1\) then \(P(Z \geq A) = E(P(Z \geq a | A = a)) = e^{-\lambda A} = F_A(-\lambda)\).&lt;/p&gt;
 
 
-&lt;p&gt;Now, with \(X, Y, Z\) as above, we have \(P(X + Y \geq 2Z) = F_{X + Y}(-\frac{1}{2})\) (because if \(Z \sim \mathrm{Exp}(1)\) then \(2Z \sim \mathrm{Exp}(\frac{1}{2})\)).
-With \(t &amp;lt; 1\) we have \(F_X(t) = F_Y(t) = \int\limits_0^\infty e^{(t - 1)x} = \frac{1}{1 - t}\),
-so \(F_{X + Y}(t) = \frac{1}{(1 - t)^2}\).&lt;/p&gt;
+&lt;p&gt;Now, with \(X, Y, Z\) as above, we have:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;\(P(X + Y \geq 2Z) = F_{X + Y}(-\frac{1}{2})\) (because if \(Z \sim \mathrm{Exp}(1)\) then \(2Z \sim \mathrm{Exp}(\frac{1}{2})\)).&lt;/li&gt;
+&lt;li&gt;If \(t &amp;lt; 1\) then \(F_X(t) = F_Y(t) = \int\limits_0^\infty e^{(t - 1)x} = \frac{1}{1 - t}\)&lt;/li&gt;
+&lt;li&gt;\(F_{X + Y}(t) = F_X(t) F_Y(t) = F_X(t)^2 = \frac{1}{(1 - t)^2}\)&lt;/li&gt;
+&lt;/ol&gt;
 
 
 &lt;p&gt;Thus, plugging in the numbers, we have \(P(X + Y \geq 2Z) = \left(\frac{1}{1 + \frac{1}{2}}\right)^2 = \frac{4}{9}\) as desired.&lt;/p&gt;
