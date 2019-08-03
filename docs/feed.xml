@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-08-03T04:42:00+01:00</updated>
+  <updated>2019-08-03T05:09:01+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -13,7 +13,7 @@
   <entry>
     <id>https://notebook.drmaciver.com/posts/2019-08-03-04:42.html</id>
     <title>A Fun Puzzle</title>
-    <updated>2019-08-03T04:42:00+01:00</updated>
+    <updated>2019-08-03T05:09:01+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;A Fun Puzzle&lt;/p&gt;
@@ -46,7 +46,7 @@ player 1 pushes the button twice, and multiplies the two outputs together to get
 
 &lt;p&gt;I originally just brute forced solved the integral, but it's easier to see after a change of variables.
 The log of a uniform \(0, 1\) random variable is exponentially distributed with parameter \(1\).
-So this boils down to the claim that if \(X, Y, Z \tilde \textrm{Exp}(1)\) then \(P(X + Y \leq 2Z) = \frac{5}{9}\).&lt;/p&gt;
+So this boils down to the claim that if \(X, Y, Z \sim \textrm{Exp}(1)\) then \(P(X + Y \leq 2Z) = \frac{5}{9}\).&lt;/p&gt;
 
 
 &lt;p&gt;The proof of this is as follows:&lt;/p&gt;
