@@ -28,6 +28,11 @@ MathJax.Hub.Config({
        linebreaks: { automatic: true } 
   }
 });
+
+MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
+  console.log(message)
+});
+
 </script>
 
   </head>
@@ -85,7 +90,7 @@ P(X + Y \leq 2Z) &amp;= P(Z \geq \frac{X + Y}{2}) \\
 &amp; = \int\limits_{x, y \geq 0} e^{-x - y} (1 - e^{-\frac{x + y}{2}}) dx dy \\
 &amp; = \int\limits_{x, y \geq 0} e^{-x} e^{- y} dx dy  - \int\limits_{x, y \geq 0} e^{-\frac{3}{2} x}  e^{-\frac{3}{2} y} dx dy  \\
 &amp; = \left(\int\limits_{x, y \geq 0} e^{-x} dx\right)^2  -  \left(\int\limits_{x, y \geq 0} e^{-\frac{3}{2}x} dx\right)^2 \\
-&amp; = 1^2 - \lef(\frac{2}{3}\right)^2 \\
+&amp; = 1^2 - \left(\frac{2}{3}\right)^2 \\
 &amp; = \frac{5}{9} \\
 \end{align}</p>
 
