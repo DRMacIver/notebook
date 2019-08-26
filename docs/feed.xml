@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-08-03T08:11:52+01:00</updated>
+  <updated>2019-08-26T12:03:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,59 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2019-08-26-12:03.html</id>
+    <title>Expected Time To Hit A Score Difference</title>
+    <updated>2019-08-26T12:03:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Expected Time To Hit A Score Difference&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2019-08-26&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;For reasons I've recently found myself interested in the following problem:
+Suppose you have a series of bernoulli random variables \(X_1, \ldots, X_n, \ldots\) independently distributed with identical parameter \(p &amp;gt; \frac{1}{2}\).
+What is the expected time until you have at least \(k\) more successes than failures?&lt;/p&gt;
+
+
+&lt;p&gt;I spent an annoyingly long time with it before realising in the shower this morning that it's actually very easy. The key to solving this is to realise the critical role that the \(k = 1\) version plays.&lt;/p&gt;
+
+
+&lt;p&gt;Let \(a_k\) be the expected time to get \(k\) more successes than failures.
+Then \(a_0 = 0\) clearly.
+The key observation is that for \(n \geq 1\) we have \(a_n = 1 + (1 - p)(a_1 + a_n) + p a_{n - 1}\).&lt;/p&gt;
+
+
+&lt;p&gt;Why does this hold?&lt;/p&gt;
+
+
+&lt;p&gt;Think of it as an infinite state markov chain. When you are at state \(n\), you can either drop down to state \(n - 1\) with probability \(p\),
+or go up to state \(n + 1\) with probability \(1 - p\).
+If we go up a state, in order to return to the current state subsequent draws need to have exactly one more success than failure.
+By definition, this takes an expected time of \(a_1\).&lt;/p&gt;
+
+
+&lt;p&gt;We can now plug in \(a_1\) to this and do some simple algebra to get that \(a_1 = (2 p - 1)^{-1}\).&lt;/p&gt;
+
+
+&lt;p&gt;For \(n &amp;gt; 1\) we again do some algebra and get \(a_n = p^{-1}(1 + (1 - p)a_1) + a_{n - 1}\),
+or \(a_n = (2p - 1)^{-1} + a_{n - 1}\).
+Putting these all together we get that \(a_n = n (2p - 1)^{-1}\)&lt;/p&gt;
+
+
+&lt;p&gt;Which all told is a much nicer result than I was expecting.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2019-08-26-12:03.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2019-08-03-04:42.html</id>
     <title>A Fun Puzzle</title>
-    <updated>2019-08-03T08:11:52+01:00</updated>
+    <updated>2019-08-03T09:55:25+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;A Fun Puzzle&lt;/p&gt;

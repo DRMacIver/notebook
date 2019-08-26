@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+DRMacIver's Notebook: Expected Time To Hit A Score Difference
+    </title>
+    <link rel="stylesheet" href="/pygments.css"/>
+    <link rel="stylesheet" href="/tufte.css"/>
+    <link rel="stylesheet" href="/latex.css"/>
+    <link rel="stylesheet" href="/drmnotes.css"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
+});
+
+MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
+  console.log(message)
+});
+
+</script>
+
+  </head>
+
+  <body>
+    <article>
+        <h1><a href="/">DRMacIver's Notebook</a></h1>
+        <p class=subtitle>Expected Time To Hit A Score Difference</p>
+
+        
+
+<section id="the-post">
+<p class=subtitle>Expected Time To Hit A Score Difference</p>
+<dl class=metadata>
+<dt>Published</dt>
+<dd class="post-date">2019-08-26</dd>
+</dl>
+
+<p>For reasons I've recently found myself interested in the following problem:
+Suppose you have a series of bernoulli random variables \(X_1, \ldots, X_n, \ldots\) independently distributed with identical parameter \(p &gt; \frac{1}{2}\).
+What is the expected time until you have at least \(k\) more successes than failures?</p>
+<p>I spent an annoyingly long time with it before realising in the shower this morning that it's actually very easy. The key to solving this is to realise the critical role that the \(k = 1\) version plays.</p>
+<p>Let \(a_k\) be the expected time to get \(k\) more successes than failures.
+Then \(a_0 = 0\) clearly.
+The key observation is that for \(n \geq 1\) we have \(a_n = 1 + (1 - p)(a_1 + a_n) + p a_{n - 1}\).</p>
+<p>Why does this hold?</p>
+<p>Think of it as an infinite state markov chain. When you are at state \(n\), you can either drop down to state \(n - 1\) with probability \(p\),
+or go up to state \(n + 1\) with probability \(1 - p\).
+If we go up a state, in order to return to the current state subsequent draws need to have exactly one more success than failure.
+By definition, this takes an expected time of \(a_1\).</p>
+<p>We can now plug in \(a_1\) to this and do some simple algebra to get that \(a_1 = (2 p - 1)^{-1}\).</p>
+<p>For \(n &gt; 1\) we again do some algebra and get \(a_n = p^{-1}(1 + (1 - p)a_1) + a_{n - 1}\),
+or \(a_n = (2p - 1)^{-1} + a_{n - 1}\).
+Putting these all together we get that \(a_n = n (2p - 1)^{-1}\)</p>
+<p>Which all told is a much nicer result than I was expecting.</p>
+</section>
+
+    </article>
+<footer>
+Copyright David R. MacIver.
+
+CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
+</footer>
+  </body>
+</html>
