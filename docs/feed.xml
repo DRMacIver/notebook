@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-08-26T12:03:00+01:00</updated>
+  <updated>2019-09-12T12:01:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,57 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2019-09-12-12:01.html</id>
+    <title>How To Make Good Coleslaw</title>
+    <updated>2019-09-12T12:01:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;How To Make Good Coleslaw&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2019-09-12&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I need to write a notebook post for beeminder reasons and don't have the bandwidth to make it good,
+so here have a piece of information that is apparently idiosyncratic to me: My coleslaw recipe.&lt;/p&gt;
+
+
+&lt;p&gt;The trick is to basically "lengthen" the mayonaisse into a dressing by adding more of the mayonaisse ingredients that aren't eggs and fat.&lt;/p&gt;
+
+
+&lt;p&gt;This way of doing it gets a good compromise between two coleslaw extremes - coleslaw which is just a bunch of shredded vegetables is too bland, coleslaw which is swimming in mayonaisse is just gross,
+but this kind of lengthened mayonaisse dressing lets you pack in a lot more flavour without ever being at risk of hitting that danger zone of disgusting supermarket mayonaisse soup.
+It's probably also a lot healthier, but that's not really why I do it, it just tastes much nicer this way.&lt;/p&gt;
+
+
+&lt;p&gt;There are no quantities per se, because I do it entirely by eye and taste, but the ingredients are:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Whole grain mustard&lt;/li&gt;
+&lt;li&gt;Cider vinegar&lt;/li&gt;
+&lt;li&gt;Salt&lt;/li&gt;
+&lt;li&gt;Mayonnaise&lt;/li&gt;
+&lt;li&gt;Vegetables (traditionally carrot and cabbage. Don't add onions unless you're a monster)&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;Add a fairly generous amount of the mustard, then add salt and vinegar to taste, mixing thoroughly, until the vegetables taste sharp and moderately savoury (there's more salt coming from the mayonaisse, so don't oversalt it).
+Now add mayonaisse in a little bit at a time until the coleslaw "looks" right - it should look very lightly coated in mayonaisse, not swimming in it.&lt;/p&gt;
+
+
+&lt;p&gt;The resulting coleslaw tends to pool some of its liquid at the bottom, so if it's been sitting for a while (I often make a big batch and keep it in the fridge) before serving it needs to be tossed again to get the full flavour.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2019-09-12-12:01.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2019-08-26-12:03.html</id>
     <title>Expected Time To Hit A Score Difference</title>
-    <updated>2019-08-26T12:03:00+01:00</updated>
+    <updated>2019-08-26T12:16:38+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Expected Time To Hit A Score Difference&lt;/p&gt;
