@@ -108,6 +108,10 @@ where \(k\) is the number of forced variables.</p>
 this make model counting tractable in cases where it was previously intractable.</p>
 
 
+<p>Similarly, you can use this to speed up random sampling, because you can randomly sample by generating a random sample from the reduced problem,
+assigning all forced variables based on that, and uniformly at random assigning all free variables.</p>
+
+
 <p>So how do we do this? Partition refinement!</p>
 
 

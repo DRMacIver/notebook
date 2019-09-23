@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-09-23T09:32:00+01:00</updated>
+  <updated>2019-09-23T11:52:06+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -13,7 +13,7 @@
   <entry>
     <id>https://notebook.drmaciver.com/posts/2019-09-23-09:32.html</id>
     <title>Faster SAT model counting</title>
-    <updated>2019-09-23T09:32:00+01:00</updated>
+    <updated>2019-09-23T11:52:06+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Faster SAT model counting&lt;/p&gt;
@@ -74,6 +74,10 @@ where \(k\) is the number of forced variables.&lt;/p&gt;
 
 &lt;p&gt;If the reduced problem is much smaller than the original problem, which it often will be,
 this make model counting tractable in cases where it was previously intractable.&lt;/p&gt;
+
+
+&lt;p&gt;Similarly, you can use this to speed up random sampling, because you can randomly sample by generating a random sample from the reduced problem,
+assigning all forced variables based on that, and uniformly at random assigning all free variables.&lt;/p&gt;
 
 
 &lt;p&gt;So how do we do this? Partition refinement!&lt;/p&gt;
