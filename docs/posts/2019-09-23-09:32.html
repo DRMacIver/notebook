@@ -64,7 +64,7 @@ both in the complexity sense (assuming modest "these complexity classes we're pr
 and also in the sense that most of the tricks used to make SAT-solving fast don't work for SAT-counting because they involve aggressively pruning the search space.
 e.g. one thing you do in a SAT solver is that whenever a variable appears only negated or never negated in formulae, you can unconditionally set it to a compatible value to prune out all the clauses it appears in.
 With model counting you need to consider both values.</p>
-<p>Anyway, it turns out there is a trick that lets you <em>vastly</em> speed up model counting in some circumstances.
+<p>Anyway, it turns out there is a trick that lets you speed up model counting in some circumstances.
 It doesn't speed things up massively in all circumstances by any means,
 but in situations where the problem has a nice underlying structure it can have a huge impact by cutting down the problem size significantly.</p>
 <p>The way it works is by calculating things:</p>

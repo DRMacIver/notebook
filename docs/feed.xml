@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-09-23T12:35:40+01:00</updated>
+  <updated>2019-09-23T15:41:19+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -13,7 +13,7 @@
   <entry>
     <id>https://notebook.drmaciver.com/posts/2019-09-23-09:32.html</id>
     <title>Faster SAT model counting</title>
-    <updated>2019-09-23T12:35:40+01:00</updated>
+    <updated>2019-09-23T15:41:19+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Faster SAT model counting&lt;/p&gt;
@@ -44,7 +44,7 @@ e.g. one thing you do in a SAT solver is that whenever a variable appears only n
 With model counting you need to consider both values.&lt;/p&gt;
 
 
-&lt;p&gt;Anyway, it turns out there is a trick that lets you &lt;em&gt;vastly&lt;/em&gt; speed up model counting in some circumstances.
+&lt;p&gt;Anyway, it turns out there is a trick that lets you speed up model counting in some circumstances.
 It doesn't speed things up massively in all circumstances by any means,
 but in situations where the problem has a nice underlying structure it can have a huge impact by cutting down the problem size significantly.&lt;/p&gt;
 
