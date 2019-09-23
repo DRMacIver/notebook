@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-09-12T12:01:00+01:00</updated>
+  <updated>2019-09-23T09:32:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,9 +11,172 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="http://lkiesow.github.io/python-feedgen" version="0.7.0">python-feedgen</generator>
   <entry>
+    <id>https://notebook.drmaciver.com/posts/2019-09-23-09:32.html</id>
+    <title>Faster SAT model counting</title>
+    <updated>2019-09-23T09:32:00+01:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Faster SAT model counting&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2019-09-23&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Here's a trick I figured out a while ago and have yet to deploy in anger because it's so far outside my wheelhouse (sometimes I tackle problems I know I won't be able to solve just to see if anything interesting falls out and/or to learn more about the research in that area).
+As far as I can tell this is novel to me - I've read a bunch of the relevant research, and there are recent papers that should have used this trick if it were known.
+I should probably write a paper about it but, well, haven't.&lt;/p&gt;
+
+
+&lt;p&gt;SAT, the boolean satisfiability problem, is the canonical NP-hard problem. &lt;code&gt;#SAT&lt;/code&gt; is the canonical worse than NP hard problem.
+Rather than finding out if a set of formulae is satisfiable, you want to find out how many satisfying assignments it has (or, in the version I prefer, the probability of a uniform at random assignment satisfying it - these are obviously equivalent by just multiplying by \(2^n\) where \(n\) is the number of variables, but the nice thing about this is that it is not affected by adding extra "free" variables that don't appear in the formulae).&lt;/p&gt;
+
+
+&lt;p&gt;This is obviously at least as hard as SAT because SAT is equivalent to the number of satisfying assignments being non-zero,
+but in fact it is &lt;em&gt;much&lt;/em&gt; harder than SAT,
+both in the complexity sense (assuming modest "these complexity classes we're pretty sure are inequivalent really are" assumptions. Certainly \(P \neq NP\) is enough),
+and also in the sense that most of the tricks used to make SAT-solving fast don't work for SAT-counting because they involve aggressively pruning the search space.
+e.g. one thing you do in a SAT solver is that whenever a variable appears only negated or never negated in formulae, you can unconditionally set it to a compatible value to prune out all the clauses it appears in.
+With model counting you need to consider both values.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, it turns out there is a trick that lets you &lt;em&gt;vastly&lt;/em&gt; speed up model counting in some circumstances.
+It doesn't speed things up massively in all circumstances by any means,
+but in situations where the problem has a nice underlying structure it can have a huge impact by cutting down the problem size significantly.&lt;/p&gt;
+
+
+&lt;p&gt;The way it works is by calculating things:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;The &lt;em&gt;backbone&lt;/em&gt; of the problem - the set of literals that will always be assigned true in any satisfying assignment.&lt;/li&gt;
+&lt;li&gt;The &lt;em&gt;literal equivalences&lt;/em&gt; of the problem - an equivalence relationship over literals such that every equivalent pair of literals will have the same value in any satisfying assignment.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;Combining these you can significantly reduce the complexity of the problem by merging all equivalent literals, assigning the backbone to true,
+and computing a reduced version of the problem.
+Every variable in original is either:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Forced (it is a backbone element, or is equivalent to some literal of strictly smaller variable number)&lt;/li&gt;
+&lt;li&gt;Free (it is not equivalent to any strictly smaller variable number and does not appear in the reduced problem, so its value is irrelevant)&lt;/li&gt;
+&lt;li&gt;Uniquely determined by an assignment of the reduced problem.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;Therefore the probability of an assignment satisfying the clauses is \(2^{-k}\) times the probability of an assignment satisfying the reduced problem,
+where \(k\) is the number of forced variables.&lt;/p&gt;
+
+
+&lt;p&gt;If the reduced problem is much smaller than the original problem, which it often will be,
+this make model counting tractable in cases where it was previously intractable.&lt;/p&gt;
+
+
+&lt;p&gt;So how do we do this? Partition refinement!&lt;/p&gt;
+
+
+&lt;p&gt;We can simultaneously calculate both the backbone and the literal equivalence with at most \(n + 1\) SAT queries, where \(n\) is the number of variables,
+as follows.&lt;/p&gt;
+
+
+&lt;p&gt;We maintain three data structures:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;A &lt;a href="https://en.wikipedia.org/wiki/Disjoint-set_data_structure"&gt;union/find&lt;/a&gt; data structure for keeping track of merges, modified so that it understands the negation relationship (i.e. if \(x \tilde y\) then \(\neg x \tilde \neg y\).&lt;/li&gt;
+&lt;li&gt;A &lt;a href="https://en.wikipedia.org/wiki/Partition_refinement"&gt;partition refinement&lt;/a&gt; data structure for keeping track of candidate literals for merging, using the literal with the smallest variable number as the canonical representative of a partition.&lt;/li&gt;
+&lt;li&gt;A set of literals that might be members of the backbone.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;We initialise the partition refinement data structure with the set of all literals (note: Not all variables, it's important to contain negations too - a variable might be equivalent to the negation of another variable).
+We initialise the backbone with the set of all literals.&lt;/p&gt;
+
+
+&lt;p&gt;Every time we calculate a new assignment for our clauses we:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Update the partition refinement to be compatible with the assignment, so that every member of the same partition takes the same value in that assignment.&lt;/li&gt;
+&lt;li&gt;We intersect the backbone set with it, so that only literals which are assigned true in this assignment remain in the backbone.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;To start with, calculate a single satisfying assignment for the clauses, and update in the above way.&lt;/p&gt;
+
+
+&lt;p&gt;Now, for each variable \(a\), in increasing variable number order, do the following:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;We look it up in the partition refinement data structure to get the canonical representative of its partition, \(b\). If \(a = b\) then  stop and do nothing for this variable (this will always be where we stop for variable \(1\)).&lt;/li&gt;
+&lt;li&gt;If it is not, look for a satisfying assignment to the problem with the addition of the clauses \(a \vee b\) and \(\neg a \vee \neg b\). These extra clauses force \(a\) and \(b\) to be assigned distinct values.&lt;ol&gt;
+&lt;li&gt;If there is such an assignment, update the backbone and equivalence as above.&lt;/li&gt;
+&lt;li&gt;If on the other hand there is no such assignment, merge \(a\) and \(b\) in our union/find data structure.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;At the end of this process, the potential backbone will either be empty, or every element of it will be equivalent.
+If it is non-empty pick an arbitrary element \(a\) of the backbone set and add \(\neg a\) to the clauses temporarily and look for an assignment to that.
+If there is one, the problem has no backbone.
+If there is not one, the current candidate backbone set is the actual backbone of the problem.&lt;/p&gt;
+
+
+&lt;p&gt;Additionally, we will have exactly the literal equivalence relationship in the union/find data structure:
+For every pair of literals, either we will have proven they can be distinct by demonstrating this with an assignment,
+or that they cannot, by finding that there is no satisfying assignment.&lt;/p&gt;
+
+
+&lt;p&gt;In addition to this core algorithm there are a bunch of good tricks you can do to speed it up by avoiding making SAT queries where the answer is more obvious.&lt;/p&gt;
+
+
+&lt;p&gt;The first, is that there's a nice way of precomputing a lot of the equivalences from the 2-SAT structure of the problem,
+using &lt;a href="https://en.wikipedia.org/wiki/Tarjan%27s_strongly_connected_components_algorithm"&gt;Tarjan's algorithm&lt;/a&gt; for finding strongly connected components of the graph.
+Create a graph where the nodes are literals, and for every clause \(a \vee b\), add edges \(\neg a \to b\) and \(\neg b \to a\).
+Now compute the strongly connected components of the graph,
+and merge each strongly connected component together (because if \(a\) and \(b\) are in the same component then we know that each implies the other so they must be equivalent).
+If this results in any merges, replace any literals in the problem that have been merged. If this results in any new 2-clauses, repeat this process until there are no more merges.&lt;/p&gt;
+
+
+&lt;p&gt;Additionally, we can partially compute the backbone as we go.
+As well as maintaining a set of backbone candidates,
+we can also maintain a set of things that are definitely in the backbone,
+by just running the unit propagation part of a SAT solver:
+We maintain a standard data structure where we keep track of two watched literals for each clause.
+Whenever we merge, we update the watches for the replaced literal.
+If this results in any new units, we run unit propagation,
+add every resulting literal to a known backbone set,
+and mark the relevant variables as forced and thus skippable in our iteration.&lt;/p&gt;
+
+
+&lt;p&gt;You can also use unit propagation to speed up the merge step in a common case by using &lt;a href="https://notebook.drmaciver.com/posts/2019-07-03-09:50.html"&gt;a trick I've described before&lt;/a&gt;.
+By making a version of the watched literals data structure that does a lazy copy,
+you can easily calculate what the resulting set of units would be if you added a clause \(a\) to the current clauses.
+Thus when testing whether \(a\) and \(b\) are equivalent, you can first start by discovering whether each implies the other through unit propagation alone (this can also tell you that in fact one or both of them might always false if unit propagation leads to a contradiction).
+If this is the case, you can merge them without doing a SAT query.&lt;/p&gt;
+
+
+&lt;p&gt;Things I should probably do but haven't:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Bundle this all up as a convenient bit of code. I have some code for doing this, but it's all very entangled with a bunch of barely working code for sampling from SAT instances (barely working because slow. Turns out the thing that is a major research field is a hard problem who knew?!)&lt;/li&gt;
+&lt;li&gt;See if this is interesting enough to people to get a paper out of it.&lt;/li&gt;
+&lt;/ol&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2019-09-23-09:32.html" rel="alternate"/>
+  </entry>
+  <entry>
     <id>https://notebook.drmaciver.com/posts/2019-09-12-12:01.html</id>
     <title>How To Make Good Coleslaw</title>
-    <updated>2019-09-12T12:01:00+01:00</updated>
+    <updated>2019-09-12T12:08:58+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;How To Make Good Coleslaw&lt;/p&gt;

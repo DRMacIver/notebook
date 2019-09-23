@@ -45,6 +45,166 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
         
 
 <section>
+<h2><a href="/posts/2019-09-23-09:32.html">2019-09-23</a></h2>
+
+
+<p class="subtitle">Faster SAT model counting</p>
+
+
+<dl class="metadata">
+<dt>Published</dt>
+<dd class="post-date">2019-09-23</dd>
+</dl>
+
+
+<p>Here's a trick I figured out a while ago and have yet to deploy in anger because it's so far outside my wheelhouse (sometimes I tackle problems I know I won't be able to solve just to see if anything interesting falls out and/or to learn more about the research in that area).
+As far as I can tell this is novel to me - I've read a bunch of the relevant research, and there are recent papers that should have used this trick if it were known.
+I should probably write a paper about it but, well, haven't.</p>
+
+
+<p>SAT, the boolean satisfiability problem, is the canonical NP-hard problem. <code>#SAT</code> is the canonical worse than NP hard problem.
+Rather than finding out if a set of formulae is satisfiable, you want to find out how many satisfying assignments it has (or, in the version I prefer, the probability of a uniform at random assignment satisfying it - these are obviously equivalent by just multiplying by \(2^n\) where \(n\) is the number of variables, but the nice thing about this is that it is not affected by adding extra "free" variables that don't appear in the formulae).</p>
+
+
+<p>This is obviously at least as hard as SAT because SAT is equivalent to the number of satisfying assignments being non-zero,
+but in fact it is <em>much</em> harder than SAT,
+both in the complexity sense (assuming modest "these complexity classes we're pretty sure are inequivalent really are" assumptions. Certainly \(P \neq NP\) is enough),
+and also in the sense that most of the tricks used to make SAT-solving fast don't work for SAT-counting because they involve aggressively pruning the search space.
+e.g. one thing you do in a SAT solver is that whenever a variable appears only negated or never negated in formulae, you can unconditionally set it to a compatible value to prune out all the clauses it appears in.
+With model counting you need to consider both values.</p>
+
+
+<p>Anyway, it turns out there is a trick that lets you <em>vastly</em> speed up model counting in some circumstances.
+It doesn't speed things up massively in all circumstances by any means,
+but in situations where the problem has a nice underlying structure it can have a huge impact by cutting down the problem size significantly.</p>
+
+
+<p>The way it works is by calculating things:</p>
+
+
+<ol>
+<li>The <em>backbone</em> of the problem - the set of literals that will always be assigned true in any satisfying assignment.</li>
+<li>The <em>literal equivalences</em> of the problem - an equivalence relationship over literals such that every equivalent pair of literals will have the same value in any satisfying assignment.</li>
+</ol>
+
+
+<p>Combining these you can significantly reduce the complexity of the problem by merging all equivalent literals, assigning the backbone to true,
+and computing a reduced version of the problem.
+Every variable in original is either:</p>
+
+
+<ol>
+<li>Forced (it is a backbone element, or is equivalent to some literal of strictly smaller variable number)</li>
+<li>Free (it is not equivalent to any strictly smaller variable number and does not appear in the reduced problem, so its value is irrelevant)</li>
+<li>Uniquely determined by an assignment of the reduced problem.</li>
+</ol>
+
+
+<p>Therefore the probability of an assignment satisfying the clauses is \(2^{-k}\) times the probability of an assignment satisfying the reduced problem,
+where \(k\) is the number of forced variables.</p>
+
+
+<p>If the reduced problem is much smaller than the original problem, which it often will be,
+this make model counting tractable in cases where it was previously intractable.</p>
+
+
+<p>So how do we do this? Partition refinement!</p>
+
+
+<p>We can simultaneously calculate both the backbone and the literal equivalence with at most \(n + 1\) SAT queries, where \(n\) is the number of variables,
+as follows.</p>
+
+
+<p>We maintain three data structures:</p>
+
+
+<ol>
+<li>A <a href="https://en.wikipedia.org/wiki/Disjoint-set_data_structure">union/find</a> data structure for keeping track of merges, modified so that it understands the negation relationship (i.e. if \(x \tilde y\) then \(\neg x \tilde \neg y\).</li>
+<li>A <a href="https://en.wikipedia.org/wiki/Partition_refinement">partition refinement</a> data structure for keeping track of candidate literals for merging, using the literal with the smallest variable number as the canonical representative of a partition.</li>
+<li>A set of literals that might be members of the backbone.</li>
+</ol>
+
+
+<p>We initialise the partition refinement data structure with the set of all literals (note: Not all variables, it's important to contain negations too - a variable might be equivalent to the negation of another variable).
+We initialise the backbone with the set of all literals.</p>
+
+
+<p>Every time we calculate a new assignment for our clauses we:</p>
+
+
+<ol>
+<li>Update the partition refinement to be compatible with the assignment, so that every member of the same partition takes the same value in that assignment.</li>
+<li>We intersect the backbone set with it, so that only literals which are assigned true in this assignment remain in the backbone.</li>
+</ol>
+
+
+<p>To start with, calculate a single satisfying assignment for the clauses, and update in the above way.</p>
+
+
+<p>Now, for each variable \(a\), in increasing variable number order, do the following:</p>
+
+
+<ol>
+<li>We look it up in the partition refinement data structure to get the canonical representative of its partition, \(b\). If \(a = b\) then  stop and do nothing for this variable (this will always be where we stop for variable \(1\)).</li>
+<li>If it is not, look for a satisfying assignment to the problem with the addition of the clauses \(a \vee b\) and \(\neg a \vee \neg b\). These extra clauses force \(a\) and \(b\) to be assigned distinct values.<ol>
+<li>If there is such an assignment, update the backbone and equivalence as above.</li>
+<li>If on the other hand there is no such assignment, merge \(a\) and \(b\) in our union/find data structure.</li>
+</ol>
+</li>
+</ol>
+
+
+<p>At the end of this process, the potential backbone will either be empty, or every element of it will be equivalent.
+If it is non-empty pick an arbitrary element \(a\) of the backbone set and add \(\neg a\) to the clauses temporarily and look for an assignment to that.
+If there is one, the problem has no backbone.
+If there is not one, the current candidate backbone set is the actual backbone of the problem.</p>
+
+
+<p>Additionally, we will have exactly the literal equivalence relationship in the union/find data structure:
+For every pair of literals, either we will have proven they can be distinct by demonstrating this with an assignment,
+or that they cannot, by finding that there is no satisfying assignment.</p>
+
+
+<p>In addition to this core algorithm there are a bunch of good tricks you can do to speed it up by avoiding making SAT queries where the answer is more obvious.</p>
+
+
+<p>The first, is that there's a nice way of precomputing a lot of the equivalences from the 2-SAT structure of the problem,
+using <a href="https://en.wikipedia.org/wiki/Tarjan%27s_strongly_connected_components_algorithm">Tarjan's algorithm</a> for finding strongly connected components of the graph.
+Create a graph where the nodes are literals, and for every clause \(a \vee b\), add edges \(\neg a \to b\) and \(\neg b \to a\).
+Now compute the strongly connected components of the graph,
+and merge each strongly connected component together (because if \(a\) and \(b\) are in the same component then we know that each implies the other so they must be equivalent).
+If this results in any merges, replace any literals in the problem that have been merged. If this results in any new 2-clauses, repeat this process until there are no more merges.</p>
+
+
+<p>Additionally, we can partially compute the backbone as we go.
+As well as maintaining a set of backbone candidates,
+we can also maintain a set of things that are definitely in the backbone,
+by just running the unit propagation part of a SAT solver:
+We maintain a standard data structure where we keep track of two watched literals for each clause.
+Whenever we merge, we update the watches for the replaced literal.
+If this results in any new units, we run unit propagation,
+add every resulting literal to a known backbone set,
+and mark the relevant variables as forced and thus skippable in our iteration.</p>
+
+
+<p>You can also use unit propagation to speed up the merge step in a common case by using <a href="https://notebook.drmaciver.com/posts/2019-07-03-09:50.html">a trick I've described before</a>.
+By making a version of the watched literals data structure that does a lazy copy,
+you can easily calculate what the resulting set of units would be if you added a clause \(a\) to the current clauses.
+Thus when testing whether \(a\) and \(b\) are equivalent, you can first start by discovering whether each implies the other through unit propagation alone (this can also tell you that in fact one or both of them might always false if unit propagation leads to a contradiction).
+If this is the case, you can merge them without doing a SAT query.</p>
+
+
+<p>Things I should probably do but haven't:</p>
+
+
+<ol>
+<li>Bundle this all up as a convenient bit of code. I have some code for doing this, but it's all very entangled with a bunch of barely working code for sampling from SAT instances (barely working because slow. Turns out the thing that is a major research field is a hard problem who knew?!)</li>
+<li>See if this is interesting enough to people to get a paper out of it.</li>
+</ol>
+
+
+</section>
+<section>
 <h2><a href="/posts/2019-09-12-12:01.html">2019-09-12</a></h2>
 
 
