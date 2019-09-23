@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-09-23T11:52:06+01:00</updated>
+  <updated>2019-09-23T11:57:26+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -13,7 +13,7 @@
   <entry>
     <id>https://notebook.drmaciver.com/posts/2019-09-23-09:32.html</id>
     <title>Faster SAT model counting</title>
-    <updated>2019-09-23T11:52:06+01:00</updated>
+    <updated>2019-09-23T11:57:26+01:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Faster SAT model counting&lt;/p&gt;
@@ -27,7 +27,8 @@
 
 &lt;p&gt;Here's a trick I figured out a while ago and have yet to deploy in anger because it's so far outside my wheelhouse (sometimes I tackle problems I know I won't be able to solve just to see if anything interesting falls out and/or to learn more about the research in that area).
 As far as I can tell this is novel to me - I've read a bunch of the relevant research, and there are recent papers that should have used this trick if it were known.
-I should probably write a paper about it but, well, haven't.&lt;/p&gt;
+I should probably write a paper about it but, well, haven't. I'm almost certain it's not revolutionary in any meaningful sense,
+but it does seem to be a nicer approach than similar things I've seen in the literature.&lt;/p&gt;
 
 
 &lt;p&gt;SAT, the boolean satisfiability problem, is the canonical NP-hard problem. &lt;code&gt;#SAT&lt;/code&gt; is the canonical worse than NP hard problem.
