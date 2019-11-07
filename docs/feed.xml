@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-11-07T06:25:00+00:00</updated>
+  <updated>2019-11-07T07:52:59+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -13,7 +13,7 @@
   <entry>
     <id>https://notebook.drmaciver.com/posts/2019-11-07-06:25.html</id>
     <title>Speeding Up Conditional Random Sampling</title>
-    <updated>2019-11-07T06:25:00+00:00</updated>
+    <updated>2019-11-07T07:52:59+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Speeding Up Conditional Random Sampling&lt;/p&gt;
@@ -33,7 +33,8 @@ It currently has no implementation and so I can't make any promises about how we
 and you want to sample from the conditional distribution \(X | f\) - i.e. the subset of values of \(X\) for which \(f\) holds, with probabilities proportional to their usual probabilities for \(X\).&lt;/p&gt;
 
 
-&lt;p&gt;The connection to John's problem of interest is that binary samples already have the property that their distribution is uniform &lt;em&gt;among examples of the same size&lt;/em&gt; (size here being number of choices made). They are what's called &lt;a href="http://algo.inria.fr/flajolet/Publications/DuFlLoSc04.pdf"&gt;a Boltzmann Sampler&lt;/a&gt;, with a particular choice of the parameter as \(\frac{1}{2}\), so if you pick \(f\) to be a size constraint then it will naturally get something approximating what John wants for the constrained generator.&lt;/p&gt;
+&lt;p&gt;The connection to John's problem of interest is that samplers based on binary choices already have the property that the probability of any given sequence \(s\) depends only on its length, and is proportional to \(2^{-|x|}\). They are what's called &lt;a href="http://algo.inria.fr/flajolet/Publications/DuFlLoSc04.pdf"&gt;a Boltzmann Sampler&lt;/a&gt;, with a particular choice of the parameter as \(\frac{1}{2}\).
+In particular this means that the conditional distribution on any fixed size is already uniform, so if you pick \(f\) to be a size constraint then it will naturally get something approximating what John wants for the constrained generator.&lt;/p&gt;
 
 
 &lt;p&gt;The easy and normal way to do this is to do rejection sampling. Generate independent copies \(X_1, \ldots, X_i\) until you find some \(i\) with \(f(X_i)\) and return that. The problem with this being that this takes on average \(\frac{1}{P(f(X)}\) generator calls, which if \(f\) is hard to satisfy can be &lt;em&gt;very&lt;/em&gt; slow. I've been interested and idly thinking for a while about how we can use the structure of random generation to speed it up. I think the following algorithm does it:&lt;/p&gt;
