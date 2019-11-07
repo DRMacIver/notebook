@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+DRMacIver's Notebook: Speeding Up Conditional Random Sampling
+    </title>
+    <link rel="stylesheet" href="/pygments.css"/>
+    <link rel="stylesheet" href="/tufte.css"/>
+    <link rel="stylesheet" href="/latex.css"/>
+    <link rel="stylesheet" href="/drmnotes.css"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
+});
+
+MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
+  console.log(message)
+});
+
+</script>
+
+  </head>
+
+  <body>
+    <article>
+        <h1><a href="/">DRMacIver's Notebook</a></h1>
+        <p class=subtitle>Speeding Up Conditional Random Sampling</p>
+
+        
+
+<section id="the-post">
+<p class=subtitle>Speeding Up Conditional Random Sampling</p>
+<dl class=metadata>
+<dt>Published</dt>
+<dd class="post-date">2019-11-07</dd>
+</dl>
+
+<p>This is an elaboration of an algorithm I described in an email to John Regehr, when talking to him about <a href="https://blog.regehr.org/archives/1700">his recent blog post about generative fuzzers</a> and its connection to Boltzmann sampling.
+It currently has no implementation and so I can't make any promises about how well it works, but it's interesting and I don't currently have time to work on it, so I wanted to write it down before the idea gets away from me.</p>
+<p>The basic problem I'm interested in here is this: Suppose you have some random variable \(X\) which is implemented by making a series of non-deterministic binary choices (coin flips), and some condition \(f(X)\),
+and you want to sample from the conditional distribution \(X | f\) - i.e. the subset of values of \(X\) for which \(f\) holds, with probabilities proportional to their usual probabilities for \(X\).</p>
+<p>The connection to John's problem of interest is that binary samples already have the property that their distribution is uniform <em>among examples of the same size</em> (size here being number of choices made). They are what's called <a href="http://algo.inria.fr/flajolet/Publications/DuFlLoSc04.pdf">a Boltzmann Sampler</a>, with a particular choice of the parameter as \(\frac{1}{2}\), so if you pick \(f\) to be a size constraint then it will naturally get something approximating what John wants for the constrained generator.</p>
+<p>The easy and normal way to do this is to do rejection sampling. Generate independent copies \(X_1, \ldots, X_i\) until you find some \(i\) with \(f(X_i)\) and return that. The problem with this being that this takes on average \(\frac{1}{P(f(X)}\) generator calls, which if \(f\) is hard to satisfy can be <em>very</em> slow. I've been interested and idly thinking for a while about how we can use the structure of random generation to speed it up. I think the following algorithm does it:</p>
+<p>In order to do this it helps to think of \(X\) as a function \(c: \{0, 1\}^{\mathbb{n}} \to T\) taking a series of binary choices and turning them into a test case, with the property that \(c(u)\) only depends on some finite initial prefix of \(u\) (and we can observe what that prefix is by instrumenting the random generator).
+We can simulate \(X\) by lazily generating a uniform-at-random infinite binary sequence, but we can also just as easily try \(c\) on any other binary sequence (this observation is also how test-case reduction and a bunch of other things work in Hypothesis).</p>
+<p>The algorithm works as follows: We maintain a list of <em>starts</em> \(S = \{s_1, \ldots, s_n\}\). This list is a set of finite bit strings in \(\{0, 1\}^{&lt;\omega}\) with the following properties:</p>
+<ol>
+<li>It is <em>prefix free</em> - that is if \(i \neq j\) then \(s_i\) does not start with \(s_j\).</li>
+<li>If \(f(c(u))\) for some \(u\) then \(u\) starts with some (necessarily unique) \(s_i\).</li>
+</ol>
+<p>We will update this set as we learn more about the shape of the problem. Initially we start with \(S\) containing just the empty string.</p>
+<p>Suppose we have any such set \(S\). The following algorithm perfectly simulates the conditional distribution \(X|f\):</p>
+<ol>
+<li>Pick \(s_i \in S\) with probability proportional to \(2^{-|s_i|}\).</li>
+<li>Evaluate \(x = c(s_i u)\) for some uniformly chosen \(u \in \{0, 1\}^{\mathbb{n}}\).</li>
+<li>If \(f(x)\) then return \(x\), else go back to \(1\) and try again.</li>
+</ol>
+<p>This is certainly true if we have the property that every \(u \in \{0, 1\}^{\mathbb{n}}\) starts with some \(s_i\),
+because we're picking \(s_i\) with the probability that a uniform at random string starts with it, and then we're drawing the rest uniformly at random,
+so our input sequence is a pure uniform at random series of choices.</p>
+<p>If \(S\) does <em>not</em> have this property, imagine enlarging it by adding strings until it does.
+Every \(s\) added has the property that no extension of it will cause \(f(su)\) to be true (because by assumption such an \(su\) would have to start with one of the existing \(s_i\), which by prefix-freeness is incompatible with starting with \(s\)).
+This means step 3 will always fail, so the distribution is the same as the conditional distribution on always choosing from one of our original \(s_i\).</p>
+<p>This algorithm is a speedup only if the chosen set \(S\) can prune a lot of possible prefixes. This actually <em>does</em> sometimes help because if the tree has a lot of shallow branches then we can evaluate them in full, determine whether they lead to a desired value, and if not discard them, but this will mostly not be the case.
+It does how motivate the next algorithm:</p>
+<ol>
+<li>Pick \(s_i \in S\) with probability proportional to \(2^{-|s_i|} P(f(sU))\) where \(U\) is a uniform at random infinite bit sequence..</li>
+<li>Evaluate the sequence \(x_i = c(s_i u_i)\) for some uniformly chosen \(u_i \in \{0, 1\}^{\mathbb{n}}\) until you find some \(x_i\) with \(f(x_i)\) being true, and return that.</li>
+</ol>
+<p>This is essentially the same algorithm as before, but with the rejection sampling moved inside:
+We pick a prefix with probability weighted to how likely it is to work, and then we run rejection sampling until it works.</p>
+<p>The easiest way for me to see that this works was to note that this is a disjoint union of Boltzmann generators weighted in the right way, but it's probably easy to check it from elementary principles.</p>
+<p>There are two big problems with this algorithm:</p>
+<ol>
+<li>For many sets \(S\) it's no speedup at all. In particular when \(S = \{''\}\) it's literally just rejection sampling.</li>
+<li>We have no way to calculate those probabilities.</li>
+</ol>
+<p>Fixing this is where the details of the algorithm get a bit fuzzy and would require me to actually have an implementation to test and see how it performs, as there are a bunch of tuning parameters and choices made in the design.
+The basic idea is that we maintain a distribution of beliefs about these probabilities, Bayesian style, and then use a <a href="https://en.wikipedia.org/wiki/Thompson_sampling">Thompson Sampling</a> style approach to build our sampler with a suitable explore/exploit tradeoff.</p>
+<p>For each \(s_i\) we maintain counts of the number of times we've tried a sequence starting with it, \(n_i\), and the number of times that has resulted in satisfying \(f\), \(g_i\). This gives us a posterior distribution for \(P(f(sU))\) of \(\beta(g_i + 1, n_i - g_i + 1)\) (this would not be true if our observations were not drawn uniformly at random but the algorithm will proceed in a way that guarantees that's always the case).
+We can record all draws we perform in a <a href="https://en.wikipedia.org/wiki/Radix_tree">Patricia Trie</a> so that these are easy to recalculate when we modify \(S\).</p>
+<p>The algorithm now proceeds as follows:</p>
+<ol>
+<li>For each \(s_i\) draw a value \(q_i\) from its posterior distribution.</li>
+<li>Pick \(s_i\) with probability proportional to \(2^{-|s_i|} q_i\).</li>
+<li>Perform "some amount of" rejection sampling on \(s_i U\) to attempt to find an \(X\) satisfying \(X\) (updating the statistics for \(s_i\) as we do).</li>
+<li>If the rejection sampling succeeds, return that. If not, possibly <em>split</em> \(s_i\), setting \(S' = S \cup \{s_i 0, s_i 1\} \setminus \{s_i\}\) (possibly not adding any of these which define a complete prefix for \(c\) that doesn't satisfy \(f\)), then  go back to \(1\).</li>
+</ol>
+<p>The idea being that we sample according to what we would in some configuration of our estimate of the true probabilities. As the algorithm runs, we get more and more information about those probabilities, so this algorithm should converge on our exact algorithm above.</p>
+<p>This leaves two questions:</p>
+<ol>
+<li>How much rejection sampling to perform? Our estimate of the probability might be wildly off, so we can't rejection sample indefinitely: We might even be at a prefix where the true probability is zero!</li>
+<li>When should we split a node?</li>
+</ol>
+<p>This is something that I think needs careful experimentation and tuning and can't be figured out from first principles, but my guess is:</p>
+<ol>
+<li>The number of rejection sampling loops should be roughly tuned to how certain our estimate of the probability is. Something alone the lines of updating the stats after drawing af ailure, drawing a new \(p\) from the posterior, and terminating the loop with probability \(1 - \max(1, \frac{p}{q_i})\) where \(q_i\) is our initially drawn estimate of the probability is likely to work pretty well: If we start to think that it's <em>really</em> unlikely that we're going to succeed because we've got a large number of failures in a row, we'll bail out, but if we knew we were an unlikely scenario early on with fairly high certainty and thought it worth picking anyway.</li>
+<li>We should split fairly aggressively once we've seen at least one success under a node, and fairly conservatively if we haven't. There might be something clever we can do with estimating the benefits of splitting based on observed data, but my suspicion is that a dumb heuristic to the tune of "Split a node once you've seen at least \(10\) data points under it, at least one of which has succeeded and one of which has failed" is probably likely to be pretty good. </li>
+</ol>
+<p>Alternatively, here's another interesting possibility for <em>really</em> aggressive splitting: Every time we observe a success \(f(c(u))\), find the \(s_i \in S\) that starts \(u\) and split it.</p>
+<p>The reason why these heuristics are a bit uncertain is that they're essentially a quality/performance tradeoff:
+splitting will almost always improve the quality of our generator (the "almost" qualifier is because each child node will have less data gathered for it, so we will tend to spend a little more time exploring them due to our uncertainty, which may be useless), so the goal of the splitting heuristic is mostly going to be to keep memory usage under control, and similarly running more rejection samples will almost always give us a higher quality result, but it will also cause us to be slower.</p>
+<p>I don't know if this idea will work well. It has the nice property that it can't really work <em>badly</em>, in that its failure modes are essentially no worse than the status quo, but it may well be that they're also no better.
+My plan is to at some point (hopefully in the next few weeks but realistically probably not) and see if I can use this in Hypothesis.
+It's particularly interesting for solving a problem that has long been a bit of a sore point in Hypothesis, which is <em>size control</em>.</p>
+<p>QuickCheck has some special functionality for dealing with sizes of examples. Examples in QuickCheck are generated with both a random seed and a particular value of a size parameter. This is used to explore small examples first and then gradually work up to big ones, which also helps it with bounding the size of recursive subexamples and preventing cases where they don't terminate.</p>
+<p>Hypothesis doesn't do this. Instead it bounds the maximum length of the choice sequence, effectively performing rejection sampling to keep the size under control, and biases the distribution in ways that make it more likely to fit within that cap.
+This has historically worked out pretty OK, but it would be nice to be able to explicitly fuzz in smaller sized regions first - it improves test performance and makes the shrinker's life easier.</p>
+</section>
+
+    </article>
+<footer>
+Copyright David R. MacIver.
+
+CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
+</footer>
+  </body>
+</html>
