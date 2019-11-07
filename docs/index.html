@@ -65,7 +65,8 @@ It currently has no implementation and so I can't make any promises about how we
 and you want to sample from the conditional distribution \(X | f\) - i.e. the subset of values of \(X\) for which \(f\) holds, with probabilities proportional to their usual probabilities for \(X\).</p>
 
 
-<p>The connection to John's problem of interest is that samplers based on binary choices already have the property that the probability of any given sequence \(s\) depends only on its length, and is proportional to \(2^{-|x|}\). They are what's called <a href="http://algo.inria.fr/flajolet/Publications/DuFlLoSc04.pdf">a Boltzmann Sampler</a>, with a particular choice of the parameter as \(\frac{1}{2}\).
+<p>The connection to John's problem of interest is that samplers based on binary choices already have the property that the probability of drawing any given sequence of choices \(s\) depends only on its length, and is proportional to \(2^{-|s|}\).
+Such random variables are called <a href="http://algo.inria.fr/flajolet/Publications/DuFlLoSc04.pdf">Boltzmann Samplers</a> with parameter \(\frac{1}{2}\).
 In particular this means that the conditional distribution on any fixed size is already uniform, so if you pick \(f\) to be a size constraint then it will naturally get something approximating what John wants for the constrained generator.</p>
 
 
