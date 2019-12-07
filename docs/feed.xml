@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-12-07T21:28:00+00:00</updated>
+  <updated>2019-12-07T21:41:52+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -13,7 +13,7 @@
   <entry>
     <id>https://notebook.drmaciver.com/posts/2019-12-07-21:28.html</id>
     <title>Almost every set is immune</title>
-    <updated>2019-12-07T21:28:00+00:00</updated>
+    <updated>2019-12-07T21:41:52+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Almost every set is immune&lt;/p&gt;
@@ -49,7 +49,7 @@ Every \(x \in C\) is the indicator function of \(A = \{n: x_n = 1\}\) so this ma
 &lt;p&gt;In this note I'll show that a randomly chosen \(x \in C\) corresponds to an immune set with probability one.&lt;/p&gt;
 
 
-&lt;p&gt;To see this, let \(A \subsetq N\) be any infinite set. The probability that a random element of \(C\) contains \(A\) as a subset of its corresponding set must be zero, because this happens if and only if \(x_n = 1\) for all \(n \in A\).
+&lt;p&gt;To see this, let \(A \subseteq \mathbb{N}\) be any infinite set. The probability that a random element of \(C\) contains \(A\) as a subset of its corresponding set must be zero, because this happens if and only if \(x_n = 1\) for all \(n \in A\).
 The probability of any \(n\) given coordinates being \(1\) is \(2^{-n}\), so the probability of infinitely many specified coordinates being \(1\) must be \(\leq 2^{n}\) for all \(n\), i.e. \(0\).&lt;/p&gt;
 
 
