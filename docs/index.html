@@ -45,6 +45,55 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
         
 
 <section>
+<h2><a href="/posts/2019-12-07-21:28.html">2019-12-07</a></h2>
+
+
+<p class="subtitle">Almost every set is immune</p>
+
+
+<dl class="metadata">
+<dt>Published</dt>
+<dd class="post-date">2019-12-07</dd>
+</dl>
+
+
+<p>A set \(A \subseteq N\) is recursively enumerable if it can be enumerated by a computable function (formally, if there is some turing machine that halts on an input if and only if it's in the set).
+If an infinite set contains no infinite recursively enumerable subsets, it is called immune.
+I was introduced to this concept by <a href="https://twitter.com/gfredericks_/status/1203345019115053056">Gary Fredericks</a>:</p>
+
+
+<blockquote>
+<p>An "immune set" is an infinite set of natural numbers of which no computer program can print out any infinite subset.</p>
+<p>The fact that they "exist" at all is pretty weird.</p>
+</blockquote>
+
+
+<p>In fact they are not weird, they are normal. Almost every infinite subset of \(\mathbb{N}\) is immune.</p>
+
+
+<p>To see this, consider the set \(C = \{0, 1\}^\mathbb{N}\). This can be mapped to the power set of the natural numbers by mapping a set to its indicator function \(1_A\), where \(1_A(x) = 1\) if \(x \in A\) and \(0\) otherwise.
+Every \(x \in C\) is the indicator function of \(A = \{n: x_n = 1\}\) so this mapping is a bijection.</p>
+
+
+<p>\(C\) is <a href="https://en.wikipedia.org/wiki/Probability_space">a probability space</a>, with the probability corresponding to the probability of observing an event with an infinite sequence of uniform coin tosses.</p>
+
+
+<p>In this note I'll show that a randomly chosen \(x \in C\) corresponds to an immune set with probability one.</p>
+
+
+<p>To see this, let \(A \subsetq N\) be any infinite set. The probability that a random element of \(C\) contains \(A\) as a subset of its corresponding set must be zero, because this happens if and only if \(x_n = 1\) for all \(n \in A\).
+The probability of any \(n\) given coordinates being \(1\) is \(2^{-n}\), so the probability of infinitely many specified coordinates being \(1\) must be \(\leq 2^{n}\) for all \(n\), i.e. \(0\).</p>
+
+
+<p>There are only countably many infinite recursively enumerable sets (because each is defined by a turing machine and there are only countably many turing machines).
+Enumerate them as \(R_i\).
+\(P(x \text{ is not immune}) = P(\bigcup\limits_n \{1_C : R_n \subseteq C\}) \leq \sum\limits_n P(\{1_C: R_n \subseteq C\}) = \sum\limits_n 0 = 0\).
+So the probability of a randomly picked subset of \(\mathbb{N}\) <em>not</em> being immune is zero,
+and thus the probability of a randomly picked subset of \(\mathbb{N}\) is \(1\).</p>
+
+
+</section>
+<section>
 <h2><a href="/posts/2019-11-07-06:25.html">2019-11-07</a></h2>
 
 
