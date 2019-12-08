@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2019-12-07T21:42:30+00:00</updated>
+  <updated>2019-12-08T10:04:56+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -13,7 +13,7 @@
   <entry>
     <id>https://notebook.drmaciver.com/posts/2019-12-07-21:28.html</id>
     <title>Almost every set is immune</title>
-    <updated>2019-12-07T21:42:30+00:00</updated>
+    <updated>2019-12-08T10:04:56+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Almost every set is immune&lt;/p&gt;
@@ -61,7 +61,7 @@ So the probability of a randomly picked subset of \(\mathbb{N}\) &lt;em&gt;not&l
 and thus the probability of a randomly picked subset of \(\mathbb{N}\) is \(1\).&lt;/p&gt;
 
 
-&lt;p&gt;Another way of seeing the same thing is to note that the set of points containing some infinite set \(A\) is a closed set (because its complement is \(\bigcup\limits_{i \in A} \{x: x_i = 0\}\)) and has empty interior (because for any finite set of natural numbers there is some \(i \in A\) not in that set, so those numbers are not enough to demonstate membership of \(A\)). Therefore the set of non-immune sets is &lt;a href="https://en.wikipedia.org/wiki/Meagre_set"&gt;meager&lt;/a&gt; and by the Baire Category Theorem its complement is uncountable and "large" in some sense.&lt;/p&gt;
+&lt;p&gt;Another way of seeing more or less the same thing (they are not actually the same theorem, but they have the same interpretation that the "typical" set is immune - it's just a different notion of typicality): the set of points containing some infinite set \(A\) is a closed set (because its complement is \(\bigcup\limits_{i \in A} \{x: x_i = 0\}\)) and has empty interior (because for any finite set of natural numbers there is some \(i \in A\) not in that set, so those numbers are not enough to demonstate membership of \(A\)). Therefore the set of non-immune sets is &lt;a href="https://en.wikipedia.org/wiki/Meagre_set"&gt;meager&lt;/a&gt;. The comeager sets are another type of "large" set, and in particular by &lt;a href="https://en.wikipedia.org/wiki/Baire_category_theorem"&gt;the Baire Category Theorem&lt;/a&gt; comeager sets are necessarily uncountable.&lt;/p&gt;
 
 
 &lt;p&gt;This kind of reasoning might be a bit strange if you're not used to it, but it's fairly common in set theory - rather than constructing objects satisfying a particular property,
