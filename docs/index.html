@@ -75,7 +75,8 @@ I was introduced to this concept by <a href="https://twitter.com/gfredericks_/st
 Every \(x \in C\) is the indicator function of \(A = \{n: x_n = 1\}\) so this mapping is a bijection.</p>
 
 
-<p>\(C\) is <a href="https://en.wikipedia.org/wiki/Probability_space">a probability space</a>, with the probability corresponding to the probability of observing an event with an infinite sequence of uniform coin tosses.</p>
+<p>\(C\) is <a href="https://en.wikipedia.org/wiki/Probability_space">a probability space</a>, with the probability corresponding to the probability of observing an event with an infinite sequence of uniform coin tosses.
+This is equivalent to picking a set by randomly assigning every natural number to be an element of it with probability \(\frac{1}{2}\).</p>
 
 
 <p>In this note I'll show that a randomly chosen \(x \in C\) corresponds to an immune set with probability one.</p>
@@ -90,6 +91,14 @@ Enumerate them as \(R_i\).
 \(P(x \text{ is not immune}) = P(\bigcup\limits_n \{1_C : R_n \subseteq C\}) \leq \sum\limits_n P(\{1_C: R_n \subseteq C\}) = \sum\limits_n 0 = 0\).
 So the probability of a randomly picked subset of \(\mathbb{N}\) <em>not</em> being immune is zero,
 and thus the probability of a randomly picked subset of \(\mathbb{N}\) is \(1\).</p>
+
+
+<p>Another way of seeing the same thing is to note that the set of points containing some infinite set \(A\) is a closed set (because its complement is \(\bigcup\limits_{i \in A} \{x: x_i = 0\}\)) and has empty interior (because for any finite set of natural numbers there is some \(i \in A\) not in that set, so those numbers are not enough to demonstate membership of \(A\)). Therefore the set of non-immune sets is <a href="https://en.wikipedia.org/wiki/Meagre_set">meager</a> and by the Baire Category Theorem its complement is uncountable and "large" in some sense.</p>
+
+
+<p>This kind of reasoning might be a bit strange if you're not used to it, but it's fairly common in set theory - rather than constructing objects satisfying a particular property,
+we show that in some sense it is "typical" that objects satisfy that property,
+and the ones that don't that we normally concern ourselves with are a weird uncommon special case (this sort of reasoning is also common in more concrete subjects like combinatorics).</p>
 
 
 </section>
