@@ -16,6 +16,7 @@ from markdown.inlinepatterns import HtmlPattern, SimpleTagPattern
 import dateutil
 import sqlite3
 import hashlib
+import functools
 
 
 _DATABASE = None
@@ -26,6 +27,34 @@ def database():
         _DATABASE = sqlite3.connect(os.path.join(CACHE_DIR, "cache.db"))
     return _DATABASE
 
+def cached(f):
+    name = f.__name__
+
+    cache = {}
+
+    @functools.wraps(f)
+    def accept(*args):
+        key = cache_key(':'.join(args))
+
+        try:
+            return cache[key]
+        except KeyError:
+            pass
+        db = database()
+        cursor = db.cursor()
+        cursor.execute("create table if not exists cache_objects(name text, key unsigned bigint, result text, unique (name, key))")
+        cursor.execute("select result from cache_objects where name = ? and key = ?", (name, key))
+        row = cursor.fetchone()
+        if row is None:
+            result = f(*args)
+            cursor.execute("insert into cache_objects(name, key, result) values(?, ?, ?)", (name, key, result))
+        else:
+            result = row[0]
+        db.commit()
+        cache[key] = result
+        return result
+
+    return accept
 
 def git(*args):
     subprocess.check_call(["git", *args])
@@ -155,6 +184,7 @@ class MathJaxAlignExtension(markdown.Extension):
         md.inlinePatterns.add('del', SimpleTagPattern(DEL_RE, 'del') , '>not_strong')
 
 
+@cached
 def md(text):
     return markdown.markdown(
         text, extensions=[
@@ -246,6 +276,7 @@ def post_object(name):
     )
     POSTS_CACHE[name] = result
     return result
+
 
 def do_build(rebuild=False, full=True, name=''):
     post_template = TEMPLATE_LOOKUP.get_template("post.html")
