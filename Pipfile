@@ -6,7 +6,8 @@ name = "pypi"
 [packages]
 mako = "*"
 pygments = "*"
-markdown = "*"
+markdown = "==2.6.11"
+tqdm = "*"
 drmnotes = {editable = true, path = "."}
 ipython = "*"
 "beautifulsoup4" = "*"
