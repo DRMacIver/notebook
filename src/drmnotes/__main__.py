@@ -59,7 +59,6 @@ def cached(f):
 def git(*args):
     subprocess.check_call(["git", *args])
 
-
 @attr.s()
 class Post(object):
     original_file = attr.ib()
@@ -162,7 +161,6 @@ class MathJaxPattern(markdown.inlinepatterns.Pattern):
         markdown.inlinepatterns.Pattern.__init__(self, r'\\\((.+?)\\\)', md)
 
     def handleMatch(self, m):
-        assert False
         return self.markdown.htmlStash.store(
             r"\(" + cgi.escape(m.group(2)) + r"\)"
         )
@@ -217,12 +215,11 @@ def cache_key(s):
 
 def post_names():
     return [
-        os.path.basename(f)[:-5] for f in glob(os.path.join(HTML_POSTS, "*.html"))
+        os.path.basename(f)[:-3] for f in glob(os.path.join(POSTS, "*.md"))
     ]
 
 
 POSTS_CACHE = {}
-
 
 def post_object(name):
     try:
@@ -277,10 +274,34 @@ def post_object(name):
     POSTS_CACHE[name] = result
     return result
 
+@cached
+def post_html(name, source_text):
+    source_html = md(source_text)
+    soup = BeautifulSoup(source_html, 'html.parser')
 
-def do_build(rebuild=False, full=True, name=''):
+    title_elt = soup.find("h1")
+
+    if title_elt is None:
+        title = None
+    else:
+        title = ' '.join(map(str, title_elt.contents))
+        title_elt.decompose()
+
+    for d in [3, 2]:
+        for f in soup.findAll('h%d' % (d,)):
+            f.name = 'h%d' % (d + 1,)
+
+    date = datetime.strptime(name, POST_DATE_FORMAT)
     post_template = TEMPLATE_LOOKUP.get_template("post.html")
 
+    return post_template.render(
+        post=clean_html(soup),
+        title=title,
+        date=date.strftime('%Y-%m-%d'),
+    )
+
+
+def do_build(rebuild=False, full=True, name=''):
     only = name
 
     try:
@@ -288,11 +309,12 @@ def do_build(rebuild=False, full=True, name=''):
     except FileExistsError:
         pass
 
-    for source in glob(os.path.join(POSTS, '*.md')):
-        name = os.path.basename(source)
+    for name in post_names():
+        source = os.path.join(POSTS, name + ".md")
         if not name.startswith(only):
             continue
-        dest = os.path.join(HTML_POSTS, name.replace('.md', '.html'))
+
+        dest = os.path.join(HTML_POSTS, name + ".html")
 
         if not (
             rebuild or
@@ -304,29 +326,9 @@ def do_build(rebuild=False, full=True, name=''):
         with open(source) as i:
             source_text = i.read()
 
-        source_html = md(source_text)
-        soup = BeautifulSoup(source_html, 'html.parser')
-
-        title_elt = soup.find("h1")
-
-        if title_elt is None:
-            title = None
-        else:
-            title = ' '.join(map(str, title_elt.contents))
-            title_elt.decompose()
-
-        for d in [3, 2]:
-            for f in soup.findAll('h%d' % (d,)):
-                f.name = 'h%d' % (d + 1,)
-
-        date = datetime.strptime(name.replace('.md', ''), POST_DATE_FORMAT)
-
         with open(dest, 'w') as o:
-            o.write(post_template.render(
-                post=clean_html(soup),
-                title=title,
-                date=date.strftime('%Y-%m-%d'),
-            ))
+            o.write(post_html(name, source_text))
+
 
     if not full:
         return
