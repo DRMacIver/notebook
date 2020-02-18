@@ -187,7 +187,7 @@ def cache_key(s):
 
 def post_names():
     return [
-        f[:-5] for f in glob(os.path.join(HTML_POSTS, "*.html"))
+        os.path.basename(f)[:-5] for f in glob(os.path.join(HTML_POSTS, "*.html"))
     ]
 
 
@@ -236,7 +236,7 @@ def post_object(name):
             key, name, date, title, body
         ))
     db.commit()
-    url = '/posts/' + name
+    url = '/posts/' + name + ".html"
     result = Post(
         original_file=os.path.join(POSTS, name + ".md"),
         name=name,
