@@ -14,6 +14,17 @@ from dateutil import tz
 import re
 from markdown.inlinepatterns import HtmlPattern, SimpleTagPattern
 import dateutil
+import sqlite3
+import hashlib
+
+
+_DATABASE = None
+
+def database():
+    global _DATABASE
+    if _DATABASE is None:
+        _DATABASE = sqlite3.connect(os.path.join(CACHE_DIR, "cache.db"))
+    return _DATABASE
 
 
 def git(*args):
@@ -170,6 +181,72 @@ def build(rebuild, full, name):
     do_build(rebuild, full, name)
 
 
+def cache_key(s):
+    return int.from_bytes(hashlib.sha1(s.encode('utf-8')).digest()[:4], 'big')
+
+
+def post_names():
+    return [
+        f[:-5] for f in glob(os.path.join(HTML_POSTS, "*.html"))
+    ]
+
+
+POSTS_CACHE = {}
+
+
+def post_object(name):
+    try:
+        return POSTS_CACHE[name]
+    except KeyError:
+        pass
+    post_html_file = os.path.join(HTML_POSTS, name + ".html")
+    
+    with open(post_html_file) as i:
+        contents = i.read()
+
+    key = cache_key(contents)
+
+    db = database()
+
+    cursor = db.cursor()
+
+    cursor.execute("""
+        create table if not exists posts(
+            name text, key unsigned bigint, date text, body text, title text,
+            unique (name, key)
+        )
+    """)
+
+    cursor.execute("select date, title, body from posts where key = ? and name = ?", (key, name))
+
+    row = cursor.fetchone()
+    if row is not None:
+        date, title, body = row
+    else:
+        soup = BeautifulSoup(contents, 'html.parser')
+        title_elts = soup.select("p.subtitle")
+
+        if not title_elts:
+            title = name
+        else:
+            title = ' '.join(map(str, title_elts[0].contents))
+        body = '\n'.join(map(str, soup.select('#the-post')[0].children))
+        date = soup.select('dd.post-date')[0].text.strip()
+        cursor.execute("insert into posts (key, name, date, title, body) values (?, ?, ?, ?, ?)", (
+            key, name, date, title, body
+        ))
+    db.commit()
+    url = '/posts/' + name
+    result = Post(
+        original_file=os.path.join(POSTS, name + ".md"),
+        name=name,
+        date=date, url=url,
+        body=body,
+        title=title,
+    )
+    POSTS_CACHE[name] = result
+    return result
+
 def do_build(rebuild=False, full=True, name=''):
     post_template = TEMPLATE_LOOKUP.get_template("post.html")
 
@@ -230,30 +307,7 @@ def do_build(rebuild=False, full=True, name=''):
         if not os.path.exists(source):
             os.unlink(post)
 
-    posts = []
-
-    for post in glob(os.path.join(HTML_POSTS, "*.html")):
-        with open(post) as i:
-            contents = i.read()
-        soup = BeautifulSoup(contents, 'html.parser')
-        title_elts = soup.select("p.subtitle")
-
-        name = os.path.basename(post)
-
-        if not title_elts:
-            title = name.replace('.html', '')
-        else:
-            title = ' '.join(map(str, title_elts[0].contents))
-
-        date = soup.select('dd.post-date')[0].text.strip()
-        url = '/posts/' + os.path.basename(post)
-        posts.append(Post(
-            original_file=os.path.join(POSTS, name.replace('.html', '.md')),
-            name=name,
-            date=date, url=url,
-            body='\n'.join(map(str, soup.select('#the-post')[0].children)),
-            title=title,
-        ))
+    posts = [post_object(name) for name in post_names()]
 
     posts.sort(key=lambda p: p.name, reverse=True)
 
