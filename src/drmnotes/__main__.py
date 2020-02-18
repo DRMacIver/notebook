@@ -361,7 +361,7 @@ def do_build(rebuild=False, full=True, name=''):
 
     dates = []
 
-    for post in reversed(posts):
+    for post in list(reversed(posts))[:10]:
         fe = fg.add_entry()
         fe.id('https://notebook.drmaciver.com' + post.url)
         fe.link(href='https://notebook.drmaciver.com' + post.url)
