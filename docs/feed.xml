@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2018-09-02T13:34:22+01:00</updated>
+  <updated>2020-02-22T11:45:55+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -11,765 +11,1047 @@
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
   <entry>
-    <id>https://notebook.drmaciver.com/posts/2018-09-02-13:13.html</id>
-    <title>2018-09-02-13:13</title>
-    <updated>2018-09-02T13:34:22+01:00</updated>
+    <id>https://notebook.drmaciver.com/posts/2019-11-07-06:25.html</id>
+    <title>Speeding Up Conditional Random Sampling</title>
+    <updated>2019-11-07T19:03:32+00:00</updated>
     <content>
 
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2018-09-02&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Compare and contrast two interesting links:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;Siderea's &lt;a href="https://siderea.livejournal.com/1230660.html"&gt;The Asshole Filter&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Cormac Herley's &lt;a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/WhyFromNigeria.pdf"&gt;Why do Nigerian Scammers Say They are from Nigeria?&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Karl Popper's "The Paradox of Tolerance"&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;(Note that I've not read the latter two and should. I've only read digested versions of them).&lt;/p&gt;
-
-
-&lt;p&gt;In general often the right way to judge an action is not actually on its immediate effects,
-but on what long-run effect they will have on the sort of people you will surround yourself with.
-This can make seemingly good actions harmful and seemingly bad or nonsensical ones quite useful.&lt;/p&gt;
-
-
-&lt;p&gt;I think about this a bunch in the context of codes of conduct:
-Often the benefit of the code of conduct is not whether it is ever enforced,
-but that it filters out people who don't like codes of conduct.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2018-09-02-13:13.html" rel="alternate"/>
-  </entry>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2018-09-01-17:41.html</id>
-    <title>Notation for test-case reducers</title>
-    <updated>2018-09-01T20:15:35+01:00</updated>
-    <content>
-
-&lt;p class="subtitle"&gt;Notation for test-case reducers&lt;/p&gt;
+&lt;p class="subtitle"&gt;Speeding Up Conditional Random Sampling&lt;/p&gt;
 
 
 &lt;dl class="metadata"&gt;
 &lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2018-09-01&lt;/dd&gt;
+&lt;dd class="post-date"&gt;2019-11-07&lt;/dd&gt;
 &lt;/dl&gt;
 
 
-&lt;p&gt;A thing I've been noticing recently is that it's really useful to have compact notation for describing things.
-Usually this is equivalent to primivitives + some combinators.&lt;/p&gt;
+&lt;p&gt;This is an elaboration of an algorithm I described in an email to John Regehr, when talking to him about &lt;a href="https://blog.regehr.org/archives/1700"&gt;his recent blog post about generative fuzzers&lt;/a&gt; and its connection to Boltzmann sampling.
+It currently has no implementation and so I can't make any promises about how well it works, but it's interesting and I don't currently have time to work on it, so I wanted to write it down before the idea gets away from me.&lt;/p&gt;
 
 
-&lt;p&gt;One thing that I think it would be useful to have such a notation for is (greedy) test-case reduction passes.
-They combine pretty well, and it makes it useful to discuss various things.&lt;/p&gt;
+&lt;p&gt;The basic problem I'm interested in here is this: Suppose you have some random variable \(X\) which is implemented by making a series of non-deterministic binary choices (coin flips), and some condition \(f(X)\),
+and you want to sample from the conditional distribution \(X | f\) - i.e. the subset of values of \(X\) for which \(f\) holds, with probabilities proportional to their usual probabilities for \(X\).&lt;/p&gt;
 
 
-&lt;p&gt;For example, if you have reducers \(A\), \(B\), you can define the reducer \(AB\) which runs \(A\), then
-runs \(B\) on its result. You can also define the reducer \(A^+\) which runs \(A\) to a fixed point.&lt;/p&gt;
+&lt;p&gt;The connection to John's problem of interest is that samplers based on binary choices already have the property that the probability of drawing any given sequence of choices \(s\) depends only on its length, and is proportional to \(2^{-|s|}\).
+Such random variables are called &lt;a href="http://algo.inria.fr/flajolet/Publications/DuFlLoSc04.pdf"&gt;Boltzmann Samplers&lt;/a&gt; with parameter \(\frac{1}{2}\).
+In particular this means that the conditional distribution on any fixed size is already uniform, so if you pick \(f\) to be a size constraint then it will naturally get something approximating what John wants for the constrained generator.&lt;/p&gt;
 
 
-&lt;p&gt;Another interesting combinator is \(/\). \(A / B\) runs \(A\), then runs \(B\) if \(A\) didn't do anything..&lt;/p&gt;
+&lt;p&gt;The easy and normal way to do this is to do rejection sampling. Generate independent copies \(X_1, \ldots, X_i\) until you find some \(i\) with \(f(X_i)\) and return that. The problem with this being that this takes on average \(\frac{1}{P(f(X)}\) generator calls, which if \(f\) is hard to satisfy can be &lt;em&gt;very&lt;/em&gt; slow. I've been interested and idly thinking for a while about how we can use the structure of random generation to speed it up. I think the following algorithm does it:&lt;/p&gt;
 
 
-&lt;p&gt;There are a bunch of really basic algebraic relations that hold, like composition and \(/\) are associative,
-and \((A^+)^+ = A^+\), but not a huge amount beyond that.&lt;/p&gt;
+&lt;p&gt;In order to do this it helps to think of \(X\) as a function \(c: \{0, 1\}^{\mathbb{n}} \to T\) taking a series of binary choices and turning them into a test case, with the property that \(c(u)\) only depends on some finite initial prefix of \(u\) (and we can observe what that prefix is by instrumenting the random generator).
+We can simulate \(X\) by lazily generating a uniform-at-random infinite binary sequence, but we can also just as easily try \(c\) on any other binary sequence (this observation is also how test-case reduction and a bunch of other things work in Hypothesis).&lt;/p&gt;
 
 
-&lt;p&gt;A bunch of interesting questions about test-case reduction can be compactly expressed in this notation though.
-For example, suppose you want to reduce to something that is a fixed point of both \(A\) and \(B\).
-You could do \((AB)^+\), but you could also do \((A^+B^+)^+\), and it's quite natural to do this in some contexts.
-My suspicion, which I've yet to verify, is that it's almost never the right thing to do.&lt;/p&gt;
-
-
-&lt;p&gt;You can kinda regard the quadratic mode failure of greedy search as an instance of this problem:
-If \(\delta_i\) is the operation that deletes the element at position \(i\), the correct pass to run for greedy deletion is \((\delta_0^+ \ldots \delta_n^+)^+\),
-but if you start again at the beginning every time you succeed you are running \((\delta_0 / \ldots / \delta_n)^+\).&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2018-09-01-17:41.html" rel="alternate"/>
-  </entry>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2018-09-01-16:08.html</id>
-    <title>Modes of writing</title>
-    <updated>2018-09-01T16:11:23+01:00</updated>
-    <content>
-
-&lt;p class="subtitle"&gt;Modes of writing&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2018-09-01&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Two posts on writing to contrast:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://blog.malignat.us/2018-05-12/on-the-creative-merits-of-paper"&gt;On the creative merits of paper&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://devonzuegel.com/post/comparison-of-text-editing-methods"&gt;Comparison of text editing methods&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;Devon posted the second on twitter and it reminded me of the first, which I struggled to refind, which is part of why I'm posting it here.&lt;/p&gt;
-
-
-&lt;p&gt;I've been finding having a paper journal very useful, but I'm also finding having this new notebook useful in an entirely different way.
-The contrast is very interesting.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2018-09-01-16:08.html" rel="alternate"/>
-  </entry>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2018-09-01-09:17.html</id>
-    <title>Can a machine design?</title>
-    <updated>2018-09-01T09:22:46+01:00</updated>
-    <content>
-
-&lt;p class="subtitle"&gt;Can a machine design?&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2018-09-01&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;&lt;a href="http://echo.iat.sfu.ca/library/cross_01_machine_des.pdf"&gt;Can a machine design?&lt;/a&gt; by Nigel Cross is an interesting paper about architecture (the real kind!) and its relation to automation.
-I found it via Adam Marshall Smith's PhD thesis &lt;a href="https://adamsmith.as/papers/mechanizing_exploratory_game_design_book.pdf"&gt;Mechanizing exploratory game design&lt;/a&gt; (truthfully via &lt;a href="https://twitter.com/maxkreminski/status/964923822766833664"&gt;this tweet&lt;/a&gt; about it from Max Kreminski),
-which is an excellent thesis on mechanically assisted creativity (I must admit I skimmed the technical content as less relevant to me - I care about the meta more than I care about game design qua game design).&lt;/p&gt;
-
-
-&lt;p&gt;Most relevant quote for me:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Despite this apparently
-easy pace of interaction, all of the designers reported that they
-found the experiments hard work and stressful. They reported that
-the main benefit of using the "computer" was increased work
-speed, principally by reducing uncertainty (i.e., they relatively
-quickly received answers to queries, which they accepted as reliable
-information).
-I also tried a few variations from my standard experiments. The most interesting was to reverse the normal set of expectations of the functions of the designer and the "computer."
-The "computer" was given the job of having to produce a design to the
-satisfaction of the observing designer. It immediately was apparent
-that, in this situation, there was no stress on the designer—in fact, it
-became quite fun—and it was the "computer" that found the experience
-to be hard work. &lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;i.e. it's much more fun to tweak a computer's output than it is to be critiqued by one.
-An important observation for people in correctness research I think!&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2018-09-01-09:17.html" rel="alternate"/>
-  </entry>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2018-08-31-09:43.html</id>
-    <title>Some free user experience consulting for Google</title>
-    <updated>2018-08-31T10:12:30+01:00</updated>
-    <content>
-
-&lt;p class="subtitle"&gt;Some free user experience consulting for Google&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2018-08-31&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I am not a UX expert. I've worked with people who are, and I'm probably a lot better than my otherwise utter incompetence at front-end work would suggest,
-but I'm at best OK.&lt;/p&gt;
-
-
-&lt;p&gt;Nevertheless, as a user I get to see a lot of the sharp edge of the problems, and I'm good enough at UX that I think I can see what the shape of the solution is.&lt;/p&gt;
-
-
-&lt;p&gt;The product I would like to offer Google some free advice on is the following: Google Maps's driving navigation.&lt;/p&gt;
-
-
-&lt;p&gt;On a related note, if you can recommend a good driving navigation app to me (iPhone, sadly), that would be delightful.
-It would be especially useful if it were one that understood features of English roads like "has roundabouts" and "is verrah verrah smol" that seem alien to people from the US (although given how much of Google maps is in Zurich,
-I'm still surprised by its failure to understand these).&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, free UX consulting.
-User stories are cool I hear, so here are my two user stories for Google maps:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;As a driver, I would like to survive my trip.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;and&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;As a driver, I would like to be able to drive without a constant sense of paranoia.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;Currently Google Maps fails both of these so hard that I have conjectured that I have somehow triggered a special murder-mode for ex-Googlers,
-because honestly if Google Maps treats most drivers like it treats me then either not many people can be using it or I would have expected a better publicised death toll from it.
-I am not actually being hyperbolic here (or even parabolic).&lt;/p&gt;
-
-
-&lt;p&gt;Google maps reliably does everything in its power to destroy my trust in it, which is not ideal in something that I have to use while driving.&lt;/p&gt;
-
-
-&lt;p&gt;As the most basic minimum that would be required to restore my trust, I would like to propose the following feature:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Google maps should never, under any circumstances, exit navigation without an audible confirmation that it has done so.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;There is what is almost certainly a bug in Google maps where sometimes it just goes "lol, I'm done here" and exits navigation without telling me.
-This is &lt;em&gt;functionally indistinguishable&lt;/em&gt; from the sort of confirmation Google maps uses to tell me to just keep going straight.
-As a result, whenever Google maps is silent for an extended period of time, I end up feeling a gnawing sense of paranoia that it's just not telling me what to do and I'm going in completely the wrong direction.&lt;/p&gt;
-
-
-&lt;p&gt;Almost all of the time this is not the case and the correct thing to do is to keep going straight (although Google maps's notion of what "keep going straight" is is often very funny and involves amusing interpretations of the word "going straight" that include things like "turning left" - it is not very good at actually knowing where the road markings are, and if the road follows around to the right it will often confuse a left turn with keep going straight. However, I will forgive it data problems, particularly on the weird back country roads I often drive),
-but this bug triggers just often enough (last incidence: about an hour ago) that the exceedingly common operation of &lt;em&gt;driving in a straight line&lt;/em&gt; fills me with deep unease whenever I use Google maps for navigation.&lt;/p&gt;
-
-
-&lt;p&gt;Even if this bug were fixed, the damage is done, and I will never believe Google maps is still running if it is silent.&lt;/p&gt;
-
-
-&lt;p&gt;On top of that, I would like to propose the following feature:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Google maps should never be silent for an extended period of time.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;I'll grant that if the last instructions were "Keep going for 500 miles" it doesn't need to give me a mile counter every five minutes,
-but if it could tell me every half hour or so "Yup, everything is cool, keep going" that would be great.
-In normal operation,
-every five minutes sounds about right.&lt;/p&gt;
-
-
-&lt;p&gt;The second source of paranoia is that Google maps gives absolutely no feedback as to when you have done something wrong.
-I know the whole nagging satnav going "Make a U-Turn. Make a U-Turn. Make a- *urk* (noise as satnav is thrown out window)" has a bad reputation,
-but there's a happy medium: When you do something Google maps does not expect,
-it should say something along the lines of "You missed a turn, I'm going to try to turn you around" or "You missed a turn, finding a new route".&lt;/p&gt;
-
-
-&lt;p&gt;Fun instances where it was very useful to have a second person in the car yesterday:&lt;/p&gt;
+&lt;p&gt;The algorithm works as follows: We maintain a list of &lt;em&gt;starts&lt;/em&gt; \(S = \{s_1, \ldots, s_n\}\). This list is a set of finite bit strings in \(\{0, 1\}^{&amp;lt;\omega}\) with the following properties:&lt;/p&gt;
 
 
 &lt;ol&gt;
-&lt;li&gt;When Google maps took me 30 miles up the wrong motorway before eventually turning me around.&lt;/li&gt;
-&lt;li&gt;When Google maps was very upset that I didn't drive through the traffic cones blocking the route it wanted me to take and insistently tried to turn me around for another go.&lt;/li&gt;
+&lt;li&gt;It is &lt;em&gt;prefix free&lt;/em&gt; - that is if \(i \neq j\) then \(s_i\) does not start with \(s_j\).&lt;/li&gt;
+&lt;li&gt;If \(f(c(u))\) for some \(u\) then \(u\) starts with some (necessarily unique) \(s_i\).&lt;/li&gt;
 &lt;/ol&gt;
 
 
-&lt;p&gt;Feedback that I had done the wrong thing would have been very helpful on the first, because I would have spent a lot of time confused without it.
-Feedback on the second that it was taking me around for another pass would also have been very helpful. I would have probably ignored its instructions even without Luke to assist me,
-but I would have felt much less certain about it.&lt;/p&gt;
+&lt;p&gt;We will update this set as we learn more about the shape of the problem. Initially we start with \(S\) containing just the empty string.&lt;/p&gt;
 
 
-&lt;p&gt;Anyway, those is the main sources of paranoia.
-Lets talk about the other moderately important feature:
-Not dying and/or killing people.&lt;/p&gt;
+&lt;p&gt;Suppose we have any such set \(S\). The following algorithm perfectly simulates the conditional distribution \(X|f\):&lt;/p&gt;
 
 
-&lt;p&gt;This is a very simple issue:
-Google maps literally never gives you enough advance warning.
-This is especially true in the following two cases:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Pick \(s_i \in S\) with probability proportional to \(2^{-|s_i|}\).&lt;/li&gt;
+&lt;li&gt;Evaluate \(x = c(s_i u)\) for some uniformly chosen \(u \in \{0, 1\}^{\mathbb{n}}\).&lt;/li&gt;
+&lt;li&gt;If \(f(x)\) then return \(x\), else go back to \(1\) and try again.&lt;/li&gt;
+&lt;/ol&gt;
 
 
-&lt;ul&gt;
-&lt;li&gt;with motorway driving. If you tell me "In one mile, take the exit" when I am doing 70 mph (yes, um, definitely 70 mph, that's the speed limit after all) in the right hand lane of a motorway,
-  you are saying "In the next 30 seconds, merge across three lanes of possibly quite busy traffic". This is a style of advice that will literally kill people and, worse, make them miss their turning.&lt;/li&gt;
-&lt;li&gt;with roundaboutes and other turnings where there is a lane you need to be in, I need to know what lane that is &lt;em&gt;before&lt;/em&gt; reaching the roundabout. It happens all the time that I either exit a roundabout,
-  leave a motorway and Google maps is like "tum ti tum, la la, nothing to see here, oh hey there's a roundabout coming up. Atttt... theeee.... rouuuundabout.... taaaake..... the.... third... exit....".
-  Often I am &lt;em&gt;on the fucking roundabout&lt;/em&gt; before it tells me what lane I need to be in.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;This is certainly true if we have the property that every \(u \in \{0, 1\}^{\mathbb{n}}\) starts with some \(s_i\),
+because we're picking \(s_i\) with the probability that a uniform at random string starts with it, and then we're drawing the rest uniformly at random,
+so our input sequence is a pure uniform at random series of choices.&lt;/p&gt;
 
 
-&lt;p&gt;Giving this sort of last minute instruction is deeply unsafe,
-and needs to stop.&lt;/p&gt;
+&lt;p&gt;If \(S\) does &lt;em&gt;not&lt;/em&gt; have this property, imagine enlarging it by adding strings until it does.
+Every \(s\) added has the property that no extension of it will cause \(f(su)\) to be true (because by assumption such an \(su\) would have to start with one of the existing \(s_i\), which by prefix-freeness is incompatible with starting with \(s\)).
+This means step 3 will always fail, so the distribution is the same as the conditional distribution on always choosing from one of our original \(s_i\).&lt;/p&gt;
 
 
-&lt;p&gt;On top of that there's all sorts of data problems and things where Google maps just clearly doesn't understand UK roads,
-but I don't realistically expect those to be fixed, especially with the UK dooming itself to irrelevance next year and the only Google UK presence being in a city where you already have to embrace paranoia and risk loss of life and limb to drive in anyway, so I won't bother venting about those now.&lt;/p&gt;
+&lt;p&gt;This algorithm is a speedup only if the chosen set \(S\) can prune a lot of possible prefixes. This actually &lt;em&gt;does&lt;/em&gt; sometimes help because if the tree has a lot of shallow branches then we can evaluate them in full, determine whether they lead to a desired value, and if not discard them, but this will mostly not be the case.
+It does how motivate the next algorithm:&lt;/p&gt;
 
 
-&lt;p&gt;In the meantime, I'm serious about that desire for recommendations of less murdery navigation apps. Please?&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Pick \(s_i \in S\) with probability proportional to \(2^{-|s_i|} P(f(sU))\) where \(U\) is a uniform at random infinite bit sequence..&lt;/li&gt;
+&lt;li&gt;Evaluate the sequence \(x_i = c(s_i u_i)\) for some uniformly chosen \(u_i \in \{0, 1\}^{\mathbb{n}}\) until you find some \(x_i\) with \(f(x_i)\) being true, and return that.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;This is essentially the same algorithm as before, but with the rejection sampling moved inside:
+We pick a prefix with probability weighted to how likely it is to work, and then we run rejection sampling until it works.&lt;/p&gt;
+
+
+&lt;p&gt;The easiest way for me to see that this works was to note that this is a disjoint union of Boltzmann generators weighted in the right way, but it's probably easy to check it from elementary principles.&lt;/p&gt;
+
+
+&lt;p&gt;There are two big problems with this algorithm:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;For many sets \(S\) it's no speedup at all. In particular when \(S = \{''\}\) it's literally just rejection sampling.&lt;/li&gt;
+&lt;li&gt;We have no way to calculate those probabilities.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;Fixing this is where the details of the algorithm get a bit fuzzy and would require me to actually have an implementation to test and see how it performs, as there are a bunch of tuning parameters and choices made in the design.
+The basic idea is that we maintain a distribution of beliefs about these probabilities, Bayesian style, and then use a &lt;a href="https://en.wikipedia.org/wiki/Thompson_sampling"&gt;Thompson Sampling&lt;/a&gt; style approach to build our sampler with a suitable explore/exploit tradeoff.&lt;/p&gt;
+
+
+&lt;p&gt;For each \(s_i\) we maintain counts of the number of times we've tried a sequence starting with it, \(n_i\), and the number of times that has resulted in satisfying \(f\), \(g_i\). This gives us a posterior distribution for \(P(f(sU))\) of \(\beta(g_i + 1, n_i - g_i + 1)\) (this would not be true if our observations were not drawn uniformly at random but the algorithm will proceed in a way that guarantees that's always the case).
+We can record all draws we perform in a &lt;a href="https://en.wikipedia.org/wiki/Radix_tree"&gt;Patricia Trie&lt;/a&gt; so that these are easy to recalculate when we modify \(S\).&lt;/p&gt;
+
+
+&lt;p&gt;The algorithm now proceeds as follows:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;For each \(s_i\) draw a value \(q_i\) from its posterior distribution.&lt;/li&gt;
+&lt;li&gt;Pick \(s_i\) with probability proportional to \(2^{-|s_i|} q_i\).&lt;/li&gt;
+&lt;li&gt;Perform "some amount of" rejection sampling on \(s_i U\) to attempt to find an \(X\) satisfying \(X\) (updating the statistics for \(s_i\) as we do).&lt;/li&gt;
+&lt;li&gt;If the rejection sampling succeeds, return that. If not, possibly &lt;em&gt;split&lt;/em&gt; \(s_i\), setting \(S' = S \cup \{s_i 0, s_i 1\} \setminus \{s_i\}\) (possibly not adding any of these which define a complete prefix for \(c\) that doesn't satisfy \(f\)), then  go back to \(1\).&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;The idea being that we sample according to what we would in some configuration of our estimate of the true probabilities. As the algorithm runs, we get more and more information about those probabilities, so this algorithm should converge on our exact algorithm above.&lt;/p&gt;
+
+
+&lt;p&gt;This leaves two questions:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;How much rejection sampling to perform? Our estimate of the probability might be wildly off, so we can't rejection sample indefinitely: We might even be at a prefix where the true probability is zero!&lt;/li&gt;
+&lt;li&gt;When should we split a node?&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;This is something that I think needs careful experimentation and tuning and can't be figured out from first principles, but my guess is:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;The number of rejection sampling loops should be roughly tuned to how certain our estimate of the probability is. Something alone the lines of updating the stats after drawing af ailure, drawing a new \(p\) from the posterior, and terminating the loop with probability \(1 - \max(1, \frac{p}{q_i})\) where \(q_i\) is our initially drawn estimate of the probability is likely to work pretty well: If we start to think that it's &lt;em&gt;really&lt;/em&gt; unlikely that we're going to succeed because we've got a large number of failures in a row, we'll bail out, but if we knew we were an unlikely scenario early on with fairly high certainty and thought it worth picking anyway.&lt;/li&gt;
+&lt;li&gt;We should split fairly aggressively once we've seen at least one success under a node, and fairly conservatively if we haven't. There might be something clever we can do with estimating the benefits of splitting based on observed data, but my suspicion is that a dumb heuristic to the tune of "Split a node once you've seen at least \(10\) data points under it, at least one of which has succeeded and one of which has failed" is probably likely to be pretty good. &lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;Alternatively, here's another interesting possibility for &lt;em&gt;really&lt;/em&gt; aggressive splitting: Every time we observe a success \(f(c(u))\), find the \(s_i \in S\) that starts \(u\) and split it.&lt;/p&gt;
+
+
+&lt;p&gt;The reason why these heuristics are a bit uncertain is that they're essentially a quality/performance tradeoff:
+splitting will almost always improve the quality of our generator (the "almost" qualifier is because each child node will have less data gathered for it, so we will tend to spend a little more time exploring them due to our uncertainty, which may be useless), so the goal of the splitting heuristic is mostly going to be to keep memory usage under control, and similarly running more rejection samples will almost always give us a higher quality result, but it will also cause us to be slower.&lt;/p&gt;
+
+
+&lt;p&gt;I don't know if this idea will work well. It has the nice property that it can't really work &lt;em&gt;badly&lt;/em&gt;, in that its failure modes are essentially no worse than the status quo, but it may well be that they're also no better.
+My plan is to at some point (hopefully in the next few weeks but realistically probably not) and see if I can use this in Hypothesis.
+It's particularly interesting for solving a problem that has long been a bit of a sore point in Hypothesis, which is &lt;em&gt;size control&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;QuickCheck has some special functionality for dealing with sizes of examples. Examples in QuickCheck are generated with both a random seed and a particular value of a size parameter. This is used to explore small examples first and then gradually work up to big ones, which also helps it with bounding the size of recursive subexamples and preventing cases where they don't terminate.&lt;/p&gt;
+
+
+&lt;p&gt;Hypothesis doesn't do this. Instead it bounds the maximum length of the choice sequence, effectively performing rejection sampling to keep the size under control, and biases the distribution in ways that make it more likely to fit within that cap.
+This has historically worked out pretty OK, but it would be nice to be able to explicitly fuzz in smaller sized regions first - it improves test performance and makes the shrinker's life easier.&lt;/p&gt;
 
 </content>
-    <link href="https://notebook.drmaciver.com/posts/2018-08-31-09:43.html" rel="alternate"/>
+    <link href="https://notebook.drmaciver.com/posts/2019-11-07-06:25.html" rel="alternate"/>
   </entry>
   <entry>
-    <id>https://notebook.drmaciver.com/posts/2018-08-31-06:57.html</id>
-    <title>2018-08-31-06:57</title>
-    <updated>2018-08-31T10:57:28+01:00</updated>
+    <id>https://notebook.drmaciver.com/posts/2019-12-07-21:28.html</id>
+    <title>Almost every set is immune</title>
+    <updated>2019-12-08T10:10:13+00:00</updated>
     <content>
 
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2018-08-31&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I'm a big fan of the &lt;a href="https://en.wikipedia.org/wiki/Brzozowski_derivative"&gt;Brzozowski derivative&lt;/a&gt;,
-introduced in "Derivatives of regular expressions" by Janusz A. Brzozowski.&lt;/p&gt;
-
-
-&lt;p&gt;The basic idea is that given some language \(L\) over an alphabet \(A\),
-and some string \(u\) over \(L\),
-you can define the derivative language \(\partial(L, u) = \{v: uv \in L\}\).
-We can extend this further (and it will be useful to do so below).
-If \(M\) is some other language, we can define \(\partial(L, M) = \{v: \exists u \in M, uv \in L\}\).
-I'm not currently sure if the derivative of a regular language by a regular langauge is regular in general. It is in the case we'll see later,
-and I suspect it is in general.&lt;/p&gt;
-
-
-&lt;p&gt;This seems like a pretty trivial observation until you realise the following three things:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;\(u \in L\) if and only if \(\epsilon \in \partial(L, u)\)&lt;/li&gt;
-&lt;li&gt;\(uv \in L\) if and only if \(v \in \partial(L, u)\)&lt;/li&gt;
-&lt;li&gt;For most common representations of languages, it's actually pretty easy to calculate a representation of their derivative.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;Putting these together, you can use the Brzozowski derivative to calculate a deterministic (not necessarily finite!) automaton for almost any language that you can easily represent.
-You label states with descriptions of languages,
-a state is accepting if it matches the empty string,
-and transitions to the states labelled by the derivatives.&lt;/p&gt;
-
-
-&lt;p&gt;&lt;a href="http://www.ccs.neu.edu/home/turon/re-deriv.pdf"&gt;Regular-expression derivatives reexamined&lt;/a&gt; by Owens et al. has some nice practical details of doing this in the context of functional programming.&lt;/p&gt;
-
-
-&lt;p&gt;To see this in action, consider the standard regular expression operators.
-These satisfy the following identifies:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;\(\partial(A | B, u) = \partial(A, u) | \partial(B, u)\)&lt;/li&gt;
-&lt;li&gt;\(\partial(AB, u) = \partial(A, u)B | \nu(A) \partial(B, u)\), where \(\nu(A) = \epsilon\) if \(\epsilon \in A\) or \(\emptyset\) otherwise (i.e. the derivative can skip over \(A\) if and only if \(A\) contains the empty string)&lt;/li&gt;
-&lt;li&gt;\(\partial(A^*, u) = \partial(A, u) A^*\)&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;A result proved in Brzozowski's original paper (apparently. I can't currently seem to access it, and am going off thecite in "Regular-expression derivatives reexamined) is that a small number of reasonable normalisation rules over the representation of the language is enough to ensure that you only get finitely many states in the state machine generated by partial derivatives of regular expressions.
-It's certainly true that you only get finitely many if you have full equivalence for the regular languages labelling the states - the derivative automaton is actually the minimal automaton representing a language.&lt;/p&gt;
-
-
-&lt;p&gt;There are two very nice things about this representation of the language's automaton though:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;It can be done &lt;em&gt;lazily&lt;/em&gt;. This means that even when your deterministic automaton has exponentially (or infinitely!) many states, you only ever need to explore the states that you walk when matching strings.&lt;/li&gt;
-&lt;li&gt;It is very easy to extend with new operators.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;An example of (2) is that regular expressions reexamined actually does it for extended regular expressions with intersection and negation, because might as well right? It's no harder than doing it with the normal ones, even though adding these to your regular expression language can cause exponential blowup in the size of the automata compiled from your regex.&lt;/p&gt;
-
-
-&lt;p&gt;But there are even more interesting ones if you're prepared to go for more esoteric operations!&lt;/p&gt;
-
-
-&lt;p&gt;Have you heard of the &lt;a href="https://en.wikipedia.org/wiki/Levenshtein_automaton"&gt;Levenshtein automaton&lt;/a&gt;? The set of strings within some finite edit distance of another string is a regular language and you can define a nice automaton matching it.
-But in fact, a stronger result is true: For any regular language \(L\) and natural number \(n\), the set \(E(L, n) = \{u: \exists v \in L, d(u, v) \leq n\}\) is a regular language.
-Why?&lt;/p&gt;
-
-
-&lt;p&gt;Well, we can calculate its derivative!
-The derivative of \(E\) is \(\partial(E(L, n), u) = E(\partial(L, u), n) | E(L, n - 1) | E(\partial(L, \cdot), n - 1) | \partial(E(\partial(L, \cdot), n - 1), u)\).
-That is, at each character we can either:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Continue matching the original language (cost 0).&lt;/li&gt;
-&lt;li&gt;Insert a new character in front of something in the original language (cost 1)&lt;/li&gt;
-&lt;li&gt;Replace a character in the original language with \(u\) (cost 1)&lt;/li&gt;
-&lt;li&gt;Drop a character from the original language and try again (cost 1)&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;In the course of doing this we apply the following rewrite rules:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;\(E(L, 0) = L\)&lt;/li&gt;
-&lt;li&gt;\(E(\emptyset, n) = \emptyset\)&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;As long as the number of reachable representations for the original languages is finite,
-so is the number of reachable states in our Levenshtein construction:
-Every state is labelled by a set of languages of the form \(E(\partial(L, U), k)\) where \(U\) is a language defined by \(u_1 \ldots u_m\) with each \(u_i\) either a single character or a \(\cdot\),
-and \(m + k \leq n\). There are only finitely many such labels as long as there are only finitely many derivatives of \(L\),
-although in principle there may be exponentially many.
-Because of the laziness of our construction that often won't matter - you can still determine membership for a string of length \(k\) with only \(O(k)\) state traversals (though calculating those states could in principle require up to \(O(nm)\) work, where \(m\) is the number of states in the original automaton).&lt;/p&gt;
-
-
-&lt;p&gt;You can also use this to determine the minimum edit distance between two regular languages,
-because you can test whether \(E(L, n) \cap L' = \emptyset\) by calculating and walking the generated DFA for the left hand side,
-so this gives you a decision procedure for \(d(L, L') \leq n\).&lt;/p&gt;
-
-
-&lt;p&gt;Is this a practical algorithm? Not sure. I've played with it a little bit, but I've not really put it to the test,
-but I think it's an interesting example of the flexibility of the Brzozowski derivative,
-and it was at least mildly surprising to me that the edit ball of a regular language is itself regular.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2018-08-31-06:57.html" rel="alternate"/>
-  </entry>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2018-08-30-12:39.html</id>
-    <title>Mathjax and Python Markdown</title>
-    <updated>2018-08-30T13:01:27+01:00</updated>
-    <content>
-
-&lt;p class="subtitle"&gt;Mathjax and Python Markdown&lt;/p&gt;
+&lt;p class="subtitle"&gt;Almost every set is immune&lt;/p&gt;
 
 
 &lt;dl class="metadata"&gt;
 &lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2018-08-30&lt;/dd&gt;
+&lt;dd class="post-date"&gt;2019-12-07&lt;/dd&gt;
 &lt;/dl&gt;
 
 
-&lt;p&gt;I've been having an interesting time of things with this notebook and getting Python markdown and Mathjax to play well with each other.
-In particular I have not been enjoying the markdown extension API at &lt;em&gt;all&lt;/em&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, it turns out that it is easy to do what I need, just slightly undocumented and with some annoyingly silent failure modes.&lt;/p&gt;
-
-
-&lt;p&gt;Here is the (slightly simplified) code from this notebook that makes MathJax work correctly:&lt;/p&gt;
-
-
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;markdown.inlinepatterns&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;HtmlPattern&lt;/span&gt;
-
-&lt;span class="n"&gt;LATEX_BLOCK&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="sa"&gt;r&lt;/span&gt;&lt;span class="s2"&gt;"(&lt;/span&gt;&lt;span class="se"&gt;\\&lt;/span&gt;&lt;span class="s2"&gt;begin{[^}]+}.+?&lt;/span&gt;&lt;span class="se"&gt;\\&lt;/span&gt;&lt;span class="s2"&gt;end{[^}]+})"&lt;/span&gt;
-&lt;span class="n"&gt;LATEX_EXPR&lt;/span&gt;  &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="sa"&gt;r&lt;/span&gt;&lt;span class="s2"&gt;"(&lt;/span&gt;&lt;span class="se"&gt;\\&lt;/span&gt;&lt;span class="s2"&gt;\(.+?&lt;/span&gt;&lt;span class="se"&gt;\\&lt;/span&gt;&lt;span class="s2"&gt;\))"&lt;/span&gt;
-
-
-&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;MathJaxAlignExtension&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;markdown&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Extension&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;extendMarkdown&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;md&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;md_globals&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-        &lt;span class="c1"&gt;# Needs to come before escape so that markdown doesn't break use of \ in LaTeX&lt;/span&gt;
-        &lt;span class="n"&gt;md&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;inlinePatterns&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;add&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'mathjaxblocks'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;HtmlPattern&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;LATEX_BLOCK&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;md&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="s1"&gt;'&amp;lt;escape'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-        &lt;span class="n"&gt;md&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;inlinePatterns&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;add&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'mathjaxexprs'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;HtmlPattern&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;LATEX_EXPR&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;md&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="s1"&gt;'&amp;lt;escape'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;The HtmlPattern class takes an expression and treats anything matching that expression as something that the markdown processor should not touch further.&lt;/p&gt;
-
-
-&lt;p&gt;Some caveats to note:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;Those brackets around the expression? Those are &lt;em&gt;important&lt;/em&gt;. The way that the regular expression processing works is that it messes with your regex a bit, and then uses capturing group \(2\) as the output (\(1\) will be everything in the current block prior to the start of your regex). This means that if you must use groups in your regex, make them named groups.&lt;/li&gt;
-&lt;li&gt;For reasons I haven't fully understood and have chosen not to bother understanding because the current behaviour is correct for my needs, despite allegedly being an HTML block, this extension does seem to do entity escaping on the contents of your MathJax.&lt;/li&gt;
-&lt;/ul&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2018-08-30-12:39.html" rel="alternate"/>
-  </entry>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2018-08-30-07:50.html</id>
-    <title>2018-08-30-07:50</title>
-    <updated>2018-08-30T12:39:05+01:00</updated>
-    <content>
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2018-08-30&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I'm going to start trying to port over some contents from &lt;a href="https://github.com/DRMacIver/research-notebook"&gt;my research notebook&lt;/a&gt; into here,
-as this is intended long-term to be a replacement for it.
-This will require some figuring out in terms of how to present maths.&lt;/p&gt;
-
-
-&lt;p&gt;As a starting point,
-here's a theorem:&lt;/p&gt;
-
-
-&lt;p&gt;\(H(m) = \sum\limits_{q = 1}^m {(-1)}^{q - 1} {m \choose q} \frac{1}{q}\)&lt;/p&gt;
-
-
-&lt;p&gt;Where \(H(m)\) is the m'th harmonic number \(H(m) = \sum\limits_{i}^m \frac{1}{i}\).&lt;/p&gt;
-
-
-&lt;p&gt;This came up in "Birthday Paradox, Coupon Collectors, Caching Algorithms and Self-Organizing Search" by Flajolet et al. (which is excellent) where it was stated as "well known". It wasn't well known to &lt;em&gt;me&lt;/em&gt;,
-so I set out to prove it.&lt;/p&gt;
-
-
-&lt;p&gt;The following is my proof:&lt;/p&gt;
-
-
-&lt;p&gt;The main idea is to use a standard tricks of turning sums and integrals into other sums and integrals that happen to be easier to solve.
-We use the following standard results:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;\(\frac{1}{n} = \int\limits_0^1 x^{n - 1}dx\)&lt;/li&gt;
-&lt;li&gt;\((1 + x)^m = \sum\limits_{q=1}^m {m \choose q} x^q\)&lt;/li&gt;
-&lt;li&gt;\((1 - x)^{-1} = \sum\limits_{q = 0}^\infty x^q\) for \(|x| &amp;lt; 1\).&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;We then perform the following manipulations (don't worry if some of these are clear as mud. They kinda should be):&lt;/p&gt;
-
-
-&lt;p&gt;\begin{align}
-\sum\limits_{q = 1}^m {(-1)}^{q - 1} {m \choose q} \frac{1}{q} &amp;amp;= \sum\limits_{q = 1}^m {(-1)}^{q - 1} {m \choose q} \int\limits_0^1 x^{q - 1} dx\\
-&amp;amp;= \int\limits_0^1 \sum\limits_{q = 1}^m {(-1)}^{q - 1} {m \choose q} x^{q - 1} dx\\
-&amp;amp;= \int\limits_0^1 -x^{-1} \sum\limits_{q = 1}^m {m \choose q} {(-x)}^q dx\\
-&amp;amp;= \int\limits_0^1 -x^{-1} \left( \sum\limits_{q = 0}^m {m \choose q} {(-x)}^q - 1 \right)dx \\
-&amp;amp;= \int\limits_0^1 -x^{-1} \left( {(1 - x)}^m - 1 \right)dx \\
-&amp;amp;= \int\limits_0^1 {(1 - x)}^{-1} (x^m - 1) dx \\
-&amp;amp;= \int\limits_0^1 \sum\limits_{n = 0}^\infty x^n (x^m - 1) dx \\
-&amp;amp;= \sum\limits_{n = 0}^\infty \int\limits_0^1 x^n (x^m - 1) \\
-&amp;amp;= \sum\limits_{n = 0}^\infty \frac{1}{n + m} - \frac{1}{n} \\
-&amp;amp;= \lim\limits_{k \to \infty}  H(m) - \sum\limits_{n = k}^{m + k} \frac{1}{n + m}\\
-&amp;amp;= H(m)\\
-\end{align}&lt;/p&gt;
-
-
-&lt;p&gt;Notable magic tricks performed:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;\(\int\limits_0^1 -x^{-1} \left( {(1 - x)}^m - 1 \right)dx  \to \int\limits_0^1 {(1 - x)}^{-1} (x^m - 1) dx \) is a change of variables \(x \to 1 - x\).&lt;/li&gt;
-&lt;li&gt;\(\sum\limits_{n = 0}^\infty \frac{1}{n + m} - \frac{1}{n} \to \lim\limits_{k \to \infty}  H(m) - \sum\limits_{n = k}^{m + k} \frac{1}{n + m}\) is because you can use a change of variables \(k \to k - m\),
-and then group the terms that cancel out.&lt;/li&gt;
-&lt;li&gt;The final limit is because \(|\sum\limits_{n = k}^{m + k} \frac{1}{n + m}| \leq \frac{m}{k}\).&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;This is a style of calculation I think of as the Feynmann style because &lt;del&gt;it's very good at seeming more clever than it actually is&lt;/del&gt; he was fond of smugly boasting about using this sort of trick in preference to contour integration.
-Given its prevalence prior to Feynmann, my only defence of the terminology is that it's not really intended as a compliment.&lt;/p&gt;
-
-
-&lt;p&gt;I find the Feynmann style completely unenlightening to read - the only way to read a Feynmann style proof is to do it yourself, using the original as a guide when you get stuck.&lt;/p&gt;
-
-
-&lt;p&gt;I think that's in some ways its point. It's not a proof technique designed to leverage enlightenment,
-but instead it leans heavily on your puzzle solving skills. That can be useful sometimes when you just want to brute force your way through a problem and don't really care about understanding it on any sort of deeper level.&lt;/p&gt;
-
-
-&lt;p&gt;I was exposed to the Feynmann style quite early on,
-due to reading Schaum's Outlines of Advanced Calculus (an earlier edition. I'm not sure how early. Brown covered one. I sadly gave away my copy, and the 1974 edition one I ordered doesn't seem to be quite it) prior to going to university.
-It has quite a lot of exercises using calculations like this,
-and afterwards I realised that this is what Feynmann had been talking about in "Surely you're joking, Mr Feynmann" (I didn't understand what a contour integral was until a few years later).&lt;/p&gt;
-
-
-&lt;p&gt;Somehow despite this the Feynmann style of brute force problem solving never really integrated into my mathematics,
-and it's only some years later I've come to appreciate its merits.
-I &lt;em&gt;still&lt;/em&gt; prefer to achieve insight and make the problem trivial,
-but sometimes the problem isn't worth the insight and you're better off just putting in the hard work and solving it.&lt;/p&gt;
-
-
-&lt;p&gt;Putting in the hard work is also useful because sometimes it leads you to the insight you missed and you can throw away most of the work.
-This didn't happen here,
-but I think that's OK - it's not that interesting a problem,
-so I don't really feel upset by the lack of insight into it.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2018-08-30-07:50.html" rel="alternate"/>
-  </entry>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2018-08-29-09:35.html</id>
-    <title>Notes on tiling with polyominoes</title>
-    <updated>2018-08-29T12:23:11+01:00</updated>
-    <content>
-
-&lt;p class="subtitle"&gt;Notes on tiling with polyominoes&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2018-08-29&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Gary Fredericks wrote about &lt;a href="https://gfredericks.com/gfrlog/99"&gt;a backtracking algorithm for tiling a board with polyominoes&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;His solution is roughly "turn the problem into exact cover and then apply a bunch of interesting optimisations in this context to the naive backtracking algorithm".
-The paper &lt;a href="https://arxiv.org/pdf/cs/0011047.pdf"&gt;Dancing Links&lt;/a&gt; by Donald E. Knuth in fact studies this exact problem as an application of the exact cover algorithm.&lt;/p&gt;
-
-
-&lt;p&gt;I think some of the optimisations Gary performs are not ones that would be performed by a modern SAT solver because they are actually too expensive to be worth it if you're good at the SAT problem-e.g.
-I know modern SAT solvers tend not to bother decomposing problems into independent problems because the cost is too high-but
-it's possible they synergise well enough to be worth it. e.g. the number theory optimisation combined with the independent components may well be worth it,
-especially with the heuristic of prioritising moves that disconnect the board.&lt;/p&gt;
-
-
-&lt;p&gt;I've been doing a bit of casual reading about this class of problem recently.
-I thought I'd use the opportunity of this new notebook to collect some references.
-Ideally these would be proper cites,
-but I haven't got the citation part of the notebook system working yet.&lt;/p&gt;
-
-
-&lt;p&gt;&lt;a href="https://www.jstor.org/stable/pdf/2307321.pdf"&gt;Checker Boards and Polyominoes&lt;/a&gt; by Solomon W. Golomb is a classic here.
-It looks at the question of tiling the chessboard with a single square monomino and 11 tetrominos of various shapes.
-In particular it establishes:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;You can do this with right tetrominoes given any placement of the monomino&lt;/li&gt;
-&lt;li&gt;There are only four squares where you can place the monomino if you want to do it with straight tetrominoes.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;&lt;a href="http://chalkdustmagazine.com/blog/polyominoes/"&gt;How to Tile a Chessboard&lt;/a&gt; by Trupti Patel is a nice expository piece on this.&lt;/p&gt;
-
-
-&lt;p&gt;Golomb also wrote &lt;a href="http://publisher-connector.core.ac.uk/resourcesync/data/elsevier/pdf/03f/aHR0cDovL2FwaS5lbHNldmllci5jb20vY29udGVudC9hcnRpY2xlL3BpaS9zMDAyMTk4MDA2NjgwMDMzOQ%3D%3D.pdf"&gt;Tiling with Polyominoes&lt;/a&gt;,
-studying much more general questions of how to tile truncated chessboards with polyominoes.&lt;/p&gt;
-
-
-&lt;p&gt;A classic version of this is what &lt;a href="https://en.wikipedia.org/wiki/Mutilated_chessboard_problem"&gt;Wikipedia refers to as the mutilated chessboard problem&lt;/a&gt; (apparently following Max Black):&lt;/p&gt;
+&lt;p&gt;A set \(A \subseteq N\) is recursively enumerable if it can be enumerated by a computable function (formally, if there is some turing machine that halts on an input if and only if it's in the set).
+If an infinite set contains no infinite recursively enumerable subsets, it is called immune.
+I was introduced to this concept by &lt;a href="https://twitter.com/gfredericks_/status/1203345019115053056"&gt;Gary Fredericks&lt;/a&gt;:&lt;/p&gt;
 
 
 &lt;blockquote&gt;
-&lt;p&gt;Suppose a standard 8×8 chessboard has two diagonally opposite corners removed, leaving 62 squares. Is it possible to place 31 dominoes of size 2×1 so as to cover all of these squares?&lt;/p&gt;
+&lt;p&gt;An "immune set" is an infinite set of natural numbers of which no computer program can print out any infinite subset.&lt;/p&gt;
+&lt;p&gt;The fact that they "exist" at all is pretty weird.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 
-&lt;p&gt;The answer is no. In &lt;a href="https://www.tandfonline.com/doi/pdf/10.1080/07468342.2004.11922062"&gt;Tiling with Dominoes&lt;/a&gt;, N. S. Mendelsohn discusses two proofs:&lt;/p&gt;
+&lt;p&gt;In fact they are not weird, they are normal. Almost every infinite subset of \(\mathbb{N}\) is immune.&lt;/p&gt;
 
 
-&lt;blockquote&gt;
-&lt;h3&gt;First solution&lt;/h3&gt;
-&lt;p&gt;From the checkerboard diagram, the region contains 30 black cells and 32 white cells.
-Since each domino covers 1 black and 1 white cell, tiling is impossible.&lt;/p&gt;
-&lt;h3&gt;Second solution&lt;/h3&gt;
-&lt;p&gt;When I was first shown the problem many years ago, it did not occur to me to colour
-the cells. The region itself had seven cells in the top and bottom rows and eight cells in
-the remaining rows. The same held for the columns. I proceeded to obtain information
-on how many dominoes pointed horizontally and how many vertically. The first count
-dealt with the vertical dominoes. If the region is tiled, the horizontal dominoes in the
-top row occupies an even number of cells. Hence, the cells in the top row that are not
-occupied by horizontal dominoes are odd in number. Thus there are an odd number of
-vertical dominoes between the first and second rows. Since the second row has eight
-cells, and an odd number are occupied by vertical dominoes coming down from the
-first row, there remain an odd number of cells in the second row. The same argument
-now shows there is an odd number of vertical dominoes from the second row to the
-third. Continuing this way, we see that there is an odd number of vertical dominoes
-between any pair of consecutive rows. Hence the total number of vertical dominoes is
-the sum of seven odd numbers, which is odd. In the same way, using columns instead
-of rows, there is an odd number of horizontal dominoes. Hence the total number of
-dominoes is even. Since there are 62 cells to cover, the number of dominoes required
-is 31, an odd number. Therefore, tiling is impossible.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;To see this, consider the set \(C = \{0, 1\}^\mathbb{N}\). This can be mapped to the power set of the natural numbers by mapping a set to its indicator function \(1_A\), where \(1_A(x) = 1\) if \(x \in A\) and \(0\) otherwise.
+Every \(x \in C\) is the indicator function of \(A = \{n: x_n = 1\}\) so this mapping is a bijection.&lt;/p&gt;
 
 
-&lt;p&gt;He goes on to say:&lt;/p&gt;
+&lt;p&gt;\(C\) is &lt;a href="https://en.wikipedia.org/wiki/Probability_space"&gt;a probability space&lt;/a&gt;, with the probability corresponding to the probability of observing an event with an infinite sequence of uniform coin tosses.
+This is equivalent to picking a set by randomly assigning every natural number to be an element of it with probability \(\frac{1}{2}\).&lt;/p&gt;
 
 
-&lt;blockquote&gt;
-&lt;p&gt;Why do I produce two solutions to the puzzle? It is because I am interested in
-the question of which is the better solution. At first glance, it appears that the first
-solution is the better. It is much shorter and is easily understood by many people with
-virtually no knowledge of mathematics. But are there considerations that might judge
-the second solution to be the better one?&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;In this note I'll show that a randomly chosen \(x \in C\) corresponds to an immune set with probability one.&lt;/p&gt;
 
 
-&lt;p&gt;He then discusses whether the second one is better because it generalises better,
-when setting out to prove Gomory's theorem (which I've not been able to find a copy of the original of so far, but I haven't looked very hard):
-If you remove two squares of the same colour, you can always tiling the remainder with dominoes.
-The proof involves the construction of a hamiltonian circuit on the adjacency graph,
-and seems fiddly but interesting.
-I've only skimmed it and would like to digest it further.&lt;/p&gt;
+&lt;p&gt;To see this, let \(A \subseteq \mathbb{N}\) be any infinite set. The probability that a random element of \(C\) contains \(A\) as a subset of its corresponding set must be zero, because this happens if and only if \(x_n = 1\) for all \(n \in A\).
+The probability of any \(n\) given coordinates being \(1\) is \(2^{-n}\), so the probability of infinitely many specified coordinates being \(1\) must be \(\leq 2^{n}\) for all \(n\), i.e. \(0\).&lt;/p&gt;
 
 
-&lt;p&gt;However note that we saw a generalisation in a different direction in the first paper linked! Golomb's proof of the impossibility tiling with straight tetrominoes unless the monomino was in a very specific location was &lt;em&gt;also&lt;/em&gt; a colouring argument.&lt;/p&gt;
+&lt;p&gt;There are only countably many infinite recursively enumerable sets (because each is defined by a turing machine and there are only countably many turing machines).
+Enumerate them as \(R_i\).
+\(P(x \text{ is not immune}) = P(\bigcup\limits_n \{1_C : R_n \subseteq C\}) \leq \sum\limits_n P(\{1_C: R_n \subseteq C\}) = \sum\limits_n 0 = 0\).
+So the probability of a randomly picked subset of \(\mathbb{N}\) &lt;em&gt;not&lt;/em&gt; being immune is zero,
+and thus the probability of a randomly picked subset of \(\mathbb{N}\) is \(1\).&lt;/p&gt;
 
 
-&lt;p&gt;The wikipedia page references "Across the board: the mathematics of chessboard problems" by John J. Watkins.
-I should probably look up a copy.&lt;/p&gt;
+&lt;p&gt;Another way of seeing more or less the same thing (they are not actually the same theorem, but they have the same interpretation that the "typical" set is immune - it's just a different notion of typicality): the set of points containing some infinite set \(A\) is a closed set (because its complement is \(\bigcup\limits_{i \in A} \{x: x_i = 0\}\)) and has empty interior (because for any finite set of natural numbers there is some \(i \in A\) not in that set, so those numbers are not enough to demonstate membership of \(A\)). Therefore the set of non-immune sets is &lt;a href="https://en.wikipedia.org/wiki/Meagre_set"&gt;meager&lt;/a&gt;. The comeager sets are another type of "large" set, and in particular by &lt;a href="https://en.wikipedia.org/wiki/Baire_category_theorem"&gt;the Baire Category Theorem&lt;/a&gt; comeager sets are necessarily uncountable.&lt;/p&gt;
+
+
+&lt;p&gt;This kind of reasoning might be a bit strange if you're not used to it, but it's fairly common in set theory - rather than constructing objects satisfying a particular property,
+we show that in some sense it is "typical" that objects satisfy that property,
+and the ones that don't that we normally concern ourselves with are a weird uncommon special case (this sort of reasoning is also common in more concrete subjects like combinatorics).&lt;/p&gt;
 
 </content>
-    <link href="https://notebook.drmaciver.com/posts/2018-08-29-09:35.html" rel="alternate"/>
+    <link href="https://notebook.drmaciver.com/posts/2019-12-07-21:28.html" rel="alternate"/>
   </entry>
   <entry>
-    <id>https://notebook.drmaciver.com/posts/2018-08-28-08:14.html</id>
-    <title>First!</title>
-    <updated>2018-08-28T14:18:34+01:00</updated>
+    <id>https://notebook.drmaciver.com/posts/2019-12-13-09:19.html</id>
+    <title>Notes on Conscious Experience</title>
+    <updated>2019-12-13T15:33:53+00:00</updated>
     <content>
 
-&lt;p class="subtitle"&gt;First!&lt;/p&gt;
+&lt;p class="subtitle"&gt;Notes on Conscious Experience&lt;/p&gt;
 
 
 &lt;dl class="metadata"&gt;
 &lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2018-08-28&lt;/dd&gt;
+&lt;dd class="post-date"&gt;2019-12-13&lt;/dd&gt;
 &lt;/dl&gt;
 
 
-&lt;p&gt;This is an experimental new blog intended for notes, thoughts, and whatever else I want to put here.
-It will likely be biased towards short notes rather than longform essays.
-It's loosely inspired by &lt;a href="https://shitpost.plover.com/"&gt;Mark Jason Dominus's shitposting blog&lt;/a&gt; and by my frustrations with WordPress, but I'm not really sure where it's going yet. &lt;/p&gt;
+&lt;p&gt;These are some notes on some my more eccentric beliefs about consciousness and theory of mind, which I keep promising to write up for people.
+I kinda lost steam halfway through writing them, so they peter out a bit, but I am happy to take questions and write up any answers in more detail.&lt;/p&gt;
 
 
-&lt;p&gt;It's also a place where I'll be experimenting with notation,
-and generally trying to find a low friction way to express myself in a manner that I like.
-As such it's all a bit cobbled together out of spit, bailing wire, and Python.&lt;/p&gt;
+&lt;p&gt;Apologies in advance: This is going to be very poorly cited, because I have synthesised these beliefs out of a wide variety of sources, over a long period of time.
+I have arrived at these opinions drawing &lt;em&gt;heavily&lt;/em&gt; on other people's work, but I have somewhat lost track on which bits come from where,
+and of which bits are original to me. Most of the originality will be framing and synthesising things that are not normally connected.&lt;/p&gt;
 
 
-&lt;h3&gt;Notational Highlights&lt;/h3&gt;
+&lt;p&gt;The briefest possible summary of my position is &lt;em&gt;bounded materialist panpsychism&lt;/em&gt;.
+That is, I hold that in some sense "everything" is conscious, with a bunch of caveats on this and what it means which causes my beliefs to fall short of traditional panpsychism,
+but that there is no supernatural mechanism behind this and that it is fully explainable using boring physical theories involving atoms and physics and suchlike.&lt;/p&gt;
 
 
-&lt;p&gt;I kinda hate LaTeX, but it's the best typesetting language for mathematics that I know of,
-so this notebook supports it using &lt;a href="https://www.mathjax.org/"&gt;mathjax&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;More specifically what I believe is that consciousness is a distributed phenomenon, and that it does not really make sense to talk about the number of conscious entities,
+because conscious entities put together form composite conscious entities, and many examples (including humans) that we think of as a single conscious entity are themselves composite.&lt;/p&gt;
 
 
-&lt;p&gt;Testing: \(e^{i\pi} = -1\)&lt;/p&gt;
+&lt;p&gt;In the rest of these notes I'm going to argue for this position. I don't necessarily expect my argument to be convincing unless you are already sympathetic to it,
+it's more by way of explaining why I hold it.&lt;/p&gt;
 
 
-&lt;p&gt;A test of code highlighting.&lt;/p&gt;
+&lt;p&gt;In brief, my argument position is:&lt;/p&gt;
 
 
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;SomeClass&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;object&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="sd"&gt;""""A python class"""&lt;/span&gt;
-
-    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;method&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-        &lt;span class="sd"&gt;"""A method definition"""&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;As you've probably noticed, I'm using &lt;a href="https://edwardtufte.github.io/tufte-css/"&gt;Tufte CSS&lt;/a&gt;.
-I'm not sure it's exactly what I want, but it's a lot closer to what I want than most other things I've tried.
-I will likely be messing aroudn with this further.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Cognition is an inherently distributed process with no natural "point of origin", and a smaller proportion of it happens in single people than we tend to assume.&lt;/li&gt;
+&lt;li&gt;Consciousness extends into the world through the means by which we act in it and experience it.&lt;/li&gt;
+&lt;li&gt;Our experience of cognition is an integral feature of our consciousness.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Most&lt;/em&gt; of that cognition we experience is wholly or partly distributed.&lt;/li&gt;
+&lt;/ol&gt;
 
 
-&lt;p&gt;I'm also using &lt;a href="http://www.makotemplates.org"&gt;mako templates&lt;/a&gt;,
-and fully intend to define a metric tonne of macros to make this usable.&lt;/p&gt;
+&lt;h3&gt;Philosophical Notes&lt;/h3&gt;
 
 
-&lt;p&gt;In general I expect the actual source code for this site to be totally unusable to anyone who is not me.
-If anything,
-if it's &lt;em&gt;not&lt;/em&gt; then I probably haven't done enough customization for my brain.&lt;/p&gt;
+&lt;p&gt;Before I get into the details, I'd like to explain a few things:
+I am going to use a bunch of terms which have many possible meanings and are hotly debated.
+I will try to give a precise idea of how I am using them, with a sort of over/under definition system:
+I will give a hand wavy ballpark definition of what I am trying to point to with them,
+and some examples of things that I think do and don't fit that definition.&lt;/p&gt;
+
+
+&lt;p&gt;In particular, I am going to be using the words &lt;em&gt;consciousness&lt;/em&gt; and &lt;em&gt;cognition&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;By cognition I roughly mean anything that looks like a thought process, in a very broad and expansive sense.
+For example: I would consider both human thought and a chess program as examples of cognition.
+I would not consider a rock just sitting there an example of cognition.
+I am somewhat ambivalent as to whether I would consider a reflexive action (e.g. flinching away from pain) as cognition,
+but would lean towards no.&lt;/p&gt;
+
+
+&lt;p&gt;By consciousness I mean something like "the ability to have a subjective experience" - there being "something it is like to be this thing".
+This is closer to what philosophers would call &lt;em&gt;phenomenal consciousness&lt;/em&gt;.
+A human is conscious, and so is a rabbit. A rock or a chess program are not conscious.&lt;/p&gt;
+
+
+&lt;p&gt;Secondly, I'm going to adopt the following general philosophical principles:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;If two things can be observed to behave differently then they are different.&lt;/li&gt;
+&lt;li&gt;If two things &lt;em&gt;can't&lt;/em&gt; be observed to behave differently then you should be suspicious of but not automatically reject claims that they are different.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;In particular if you have examples of things that have one property but not another then those properties are not the same thing.
+So in the above, cognition and consciousness are not the same thing,
+because a chess program has cognition but not consciousness.
+It may or may not be possible to have consciousness without cognition - certain drug induced or meditative states could be examples of this - but whether it is or not is not an essential feature of my argument.&lt;/p&gt;
+
+
+&lt;h3&gt;Cognition Combines&lt;/h3&gt;
+
+
+&lt;p&gt;By "cognitive system" I mean "any assemblage of things, considered in its capacity as something that exhibits cognition".
+"Cognitive system" is a descriptive word rather than a category word - essentially everything is a cognitive system,
+but some things are more interesting to think of as cognitive systems than others.
+The term describes &lt;em&gt;how we think of the system&lt;/em&gt;, not &lt;em&gt;what the systems is&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Most things are what you might think of as "the null cognitive system" - a thing you can consider as exhibiting no cognition.
+A rock is a null cognitive system, a human is a more interesting cognitive system.
+We will largely be concerned with the more interesting type of cognitive system.&lt;/p&gt;
+
+
+&lt;p&gt;A brain is certainly a cognitive system, but I'm going to argue that the brain is not the natural cognitive system of interest for human thought.
+This is because:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Human thought is intrinsically &lt;em&gt;embodied&lt;/em&gt;. Your body is very much an important participant in your thought processes.&lt;/li&gt;
+&lt;li&gt;Human thought extends out into the world, and many human thoughts are not possible with an unassisted body.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;The evidence for (1) is relatively strong from the neuroscience and psychology worlds:
+Your body certainly affects your thought processes (consider how differently you think when hungry. "Am I depressed, is everything terrible, or am I just hungry?" is a common ambiguous experience.
+In general, emotions are a very embodied process. Much of your emotional experience exists primarily in your body, and a functioning emotional experience seems to be fairly essential to making good decisions:
+Without emotions to guide you, you don't become a sensible being of pure logic, you become a disorganised mess who can't prioritise.&lt;/p&gt;
+
+
+&lt;p&gt;For an example of (2), consider mathematics. It is almost impossible to do non-trivial mathematics without external working memory.
+A mathematician with pencil and paper is capable of vastly more mathematics than a mathematician without them.
+The cognitive system that includes the pencil and paper is capable of different things than the base mathematician,
+so should be considered a different cognitive system in its own right.&lt;/p&gt;
+
+
+&lt;p&gt;Additionally, cognitive systems combine.
+&lt;a href="https://en.wikipedia.org/wiki/Advanced_chess"&gt;Advanced Chess&lt;/a&gt; is the most commonly cited example of this:
+Both the human player and the chess program are cognitive systems in their own right,
+but the combined human/program chess player is capable of chess play that is fundamentally different than either can manage on their own.&lt;/p&gt;
+
+
+&lt;p&gt;Cognitive systems can also combine when the individual cognitive systems are conscious.
+A collaboration between two humans is often capable of things that neither human is capable of on their own - either due to not having the same skill sets or just by distributing work.
+A common example of the latter is &lt;a href="https://en.wikipedia.org/wiki/Transactive_memory"&gt;transactive memory&lt;/a&gt; - we often "remember" things by delegating that memory to someone else,
+e.g. a partner or a coworker. We remember who is responsible for a category of information and ask them.&lt;/p&gt;
+
+
+&lt;p&gt;This, incidentally, illustrates a problem with a possible alternative interpretation:
+It is not enough to just think of these tools as cognitive aids. A human can extend the cognition of another human,
+but in doing so the converse is true too: Their cognition is being extended in turn.
+It doesn't make sense to ask which one is the "real" source of cognition: They both are!
+The combined system is not a centralised one with assistance, it is a collaboration resulting in a new cognitive system in its own right.&lt;/p&gt;
+
+
+&lt;p&gt;Cognitive systems also typically divide. You are a cognitive system divided up into your brain and body, but each of those subdivide - your gut contributes differently to your cognition than your foot does,
+different parts of your brain contribute differently. If part of it is physically removed or damaged, you may continue to be a cognitive system (not all brain damage still permits meaningful thought of course, but much of it still leaves you as someone who can think, albeit in an impaired manner).&lt;/p&gt;
+
+
+&lt;p&gt;Note however that cognitive systems are usually more than the sum of their parts - most of cognition lives in the interaction, not in the physical object.
+A pencil and paper is the null cognitive system (it exhibits no cognition on its own),
+and yet a mathematician with a pencil and paper is a different cognitive system than a mathematician on their own.
+If however you don't let the mathematician interact with the pencil and paper, the result is just a slightly frustrated sum of its parts.
+The interaction is important.&lt;/p&gt;
+
+
+&lt;p&gt;Given this tendency to combine and divide, I do not believe it makes sense to privilege any particular level of cognition as special.
+Thoughts occur at every level, and transmit between different parts of the system, and this happens (albeit through different mechanisms).&lt;/p&gt;
+
+
+&lt;h3&gt;Consciousness is Extended and Overlapping&lt;/h3&gt;
+
+
+&lt;p&gt;Where does your consciousness extend out to?
+That is, what physical objects can be "part" of your conscious experience?&lt;/p&gt;
+
+
+&lt;p&gt;It is not totally clear what this question means of course, partly because it's not totally clear what a conscious experience &lt;em&gt;is&lt;/em&gt;, but hopefully we can still provide partial answers to it based on things we think should be true of any reasonable interpretation of it.&lt;/p&gt;
+
+
+&lt;p&gt;For example, I think it is fair to assume that we are conscious of our body. Things that happen to it are part of our subjective experience, more or less (we may not be conscious of &lt;em&gt;all&lt;/em&gt; of our body - e.g. most internal organs we don't have easy conscious access to unless they have an associated pain).&lt;/p&gt;
+
+
+&lt;p&gt;Equally it's clear that there are some things that are &lt;em&gt;not&lt;/em&gt; part of our conscious experience.
+A teapot in orbit of alpha centauri is not something I have a subjective experience of
+(Neither are most things closer to home of course, but I wanted an unambiguous example).&lt;/p&gt;
+
+
+&lt;p&gt;Much (most? all?) of consciousness - the ability to have a subjective experience - is consciousness &lt;em&gt;of&lt;/em&gt; something. It has an aboutness, what philosophers (phenomenologists specifically) often call intentionality.
+I'd like to consider some distinctive features of this intentional consciousness.
+A lot of this will follow fairly standard phenomenology of perception work from &lt;a href="https://plato.stanford.edu/entries/merleau-ponty/"&gt;Merleau-Ponty&lt;/a&gt; but full disclosure I have not actually read Merleau-Ponty.&lt;/p&gt;
+
+
+&lt;p&gt;Try running your hand over a couple of surfaces. Say a smooth surface and a rough one (I used a table and a couch for this experiment). Notice how it feels.
+It may help to close your eyes while doing this to focus on the sensation of touching the surface.&lt;/p&gt;
+
+
+&lt;p&gt;When you are doing this you are conscious &lt;em&gt;of&lt;/em&gt; the texture of the surfaces, but you experience that texture &lt;em&gt;through&lt;/em&gt; your hands.
+The table is (probably) not part of your consciousness, but your hands are.
+Which parts of your hands are part of that consciousness? The experience is primarily had through your nerves, but equally your skin is a major part of it - you are experiencing its give,
+and your conscious experience of the surface is an interactive process that depends on your muscles,
+and many other details besides.
+I think it is reasonable to describe this as a conscious process that involves your hands as a whole.&lt;/p&gt;
+
+
+&lt;p&gt;Now put on a pair of gloves (ideally a thin pair) and do it again.
+You probably had a broadly similar subjective experience with and without the gloves, but with the sensations somewhat muted.
+So the gloves muted your subjective experience of sensing the texture of the surface, but you still had a subjective experience of the texture of the surface, right?&lt;/p&gt;
+
+
+&lt;p&gt;But there's a key difference here: you never touched the surface. What your senses were directly experiencing was not the texture of the surface, but the inside of your gloves.
+Nevertheless, what you &lt;em&gt;experienced&lt;/em&gt; was the texture of the surface.&lt;/p&gt;
+
+
+&lt;p&gt;Try it again a few times and see if you can experience it as feeling the inside of your gloves. It's hard. I can't.&lt;/p&gt;
+
+
+&lt;p&gt;In the same way that you were previously experiencing the texture of the surface through your hands, you are now experiencing it through your gloves (really through the combination of your gloves and your hands).
+So your conscious experience can extend to include not just your body, but the physical tools you are using.&lt;/p&gt;
+
+
+&lt;p&gt;You can see this with other tools that less directly map to your normal sensations. Try picking up a pen and running it along the surfaces. Maybe practice a bit more, using it to feel out the shape of other objects with your eyes closed. Try writing some things by hand like it's the twentieth century.
+After a while, you should have a similar experience as you get used to it: You are having a subjective experience not of the pen itself, but the things you are interacting with the pen through.
+Your consciousness has extended into the pen.&lt;/p&gt;
+
+
+&lt;p&gt;I want to reemphasise that this is not a mystical process. You have not acquired any extrasensory awareness of the pen, you're just manipulating it with your hands, and getting physical feedback through it.
+But you have a subjective experience of what you are doing that is experienced through the tools you are using to do it,
+while the tools themselves can fade into the background unless you focus explicitly on them.&lt;/p&gt;
+
+
+&lt;p&gt;Now go find another conscious entity who it wouldn't be weird to hold hands with. I used a cat, which she was not best pleased about. It would probably work better to use a human because they're more likely to cooperate, but I had a cat immediately to hand and I didn't have a human immediately to hand.&lt;/p&gt;
+
+
+&lt;p&gt;Now use their hand (paw) like a pen to feel some textures and objects. It will be weird, but just roll with it.
+After a while you can have a similar subjective experience as you did with the pen - their hand becomes an extension of your conscious experience which you can use to feel the world through.
+So as well as being able to extend your consciousness into inanimate objects, there is nothing stopping you from extending it into physical spaces that are "owned" by another conscious entity.&lt;/p&gt;
+
+
+&lt;p&gt;Note that there is something significantly different happening when you do this:
+While previously, only you were consciously experiencing the world through the pen, when you do it through someone else, there is a physical object which is contained in both of your conscious experiences.
+You are feeling the world through the cat's paw, while the cat is simultaneously feeling the world through her paw and also feeling very annoyed and affronted at the interfering human.&lt;/p&gt;
+
+
+&lt;p&gt;You can also see this with the pen. Ask your partner-in-subjectivity to grab hold of the other end of the pen, both close your eyes, and now move the pen around.
+You are each having a subjective experience of the other person's movements, mediated by the pen. The pen is now an object which you both experience as part of your consciousness.&lt;/p&gt;
+
+
+&lt;p&gt;Note that I am &lt;em&gt;not&lt;/em&gt; suggesting that you are having the &lt;em&gt;same&lt;/em&gt; conscious experience of the pen here. You are not. You each have your own distinct subjective experiences which are not shared with the other person, but the same physical object is acting as part of each of your consciousnesses, and there is no obstacle to it doing so.&lt;/p&gt;
+
+
+&lt;h3&gt;Consciousness of Cognition&lt;/h3&gt;
+
+
+&lt;p&gt;At this point I lost a bit of steam writing this so I'm just going to summarise the remainder of the argument:&lt;/p&gt;
+
+
+&lt;p&gt;A major part of what we are conscious of is our own thoughts, but our own thoughts are less "ours" than we think they are.
+Cognition is intrinsically distributed,
+and we routinely delegate our thinking to the distributed cognition that we are embedded in.&lt;/p&gt;
+
+
+&lt;p&gt;In doing so, we often subjectively experience that cognition as "ours".
+Knowledge construction is an intrinsically social activity, and most of our opinions and behaviours are copied from those arounds us (possibly with modification),
+but we still experience them as ours.
+Transactive memory mentioned above is ubiquitous, and we seem to treat things that are stored in transactive memory as if we know them (there's research that supposedly supports this, but I haven't followed up on the primary sources and replication crisis caveats apply),
+so our subjective experience of "our" thoughts are really our subjective experience of the distributed cognitive system that we're hooked up to.
+In the same way that we experience the world through the tools we interact with it,
+our experience of cognition is not bounded by our own skin,
+but extends into the whole of the cognitive system through which we have thoughts.&lt;/p&gt;
 
 </content>
-    <link href="https://notebook.drmaciver.com/posts/2018-08-28-08:14.html" rel="alternate"/>
+    <link href="https://notebook.drmaciver.com/posts/2019-12-13-09:19.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-02-16-14:22.html</id>
+    <title>We are surrounded by ghosts</title>
+    <updated>2020-02-16T15:23:06+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;We are surrounded by ghosts&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-02-16&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;(This is part of an attempt to get back to using my notebook to write more half formed thoughts)&lt;/p&gt;
+
+
+&lt;p&gt;I recently read "Epistemic injustice in mathematics" by Rittberg, Tanswell, and Van Bendegem.
+In it they talk about the idea of &lt;em&gt;ghost theorems&lt;/em&gt;:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;There are mathematical results which are taken as accepted in a mathematical community,
+relied upon in talks, discussion, and proving further results, but which cannot be
+traced to a concrete proof in the literature. These results are part of the expert knowledge
+one is expected to have in certain communities and we will present examples
+below.
+...
+The kind of result we wish to discuss, i.e. the kind of result whose proof cannot be traced
+in the literature, thus seems to be a special kind of folk theorem for which we propose
+the term “ghost theorem”; these theorems are immaterial in the sense that they are not
+proven in the literature yet they “haunt” parts of daily mathematical life.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;They highlight ghost theorems as a particular source of &lt;em&gt;epistemic injustice&lt;/em&gt; against people trying to participate in mathematics as an epistemic community.
+They focus on an example of someone trying to get some results published, and having them be rejected because they were ghost theorems - even though their submission had never been published, it was "obvious".
+I think it would still have been an injustice of sorts without that gatekeeping,
+because presumably these results are useful, and there is no way to discover them without privileged access to the community.
+As someone who does a lot of solo reading in a variety of fields,
+a kind of &lt;a href="https://fanlore.org/wiki/Feral_(glossary_term)"&gt;feral fan&lt;/a&gt; for a variety of academic disciplines,
+this is an injustice that particularly matters to me:
+There are probably many things that are &lt;em&gt;completely obvious&lt;/em&gt; if you've been trained in, say, phenomenology,
+that I as an outsider will never discover no matter how much of the literature on the subject I read.&lt;/p&gt;
+
+
+&lt;p&gt;I'd like to call the more general phenomenon that this is a specific instance of this "ghost knowledge":
+It is knowledge that is present &lt;em&gt;somewhere&lt;/em&gt; in the epistemic community, and is perhaps readily accessible to some central member of that community,
+but it is not really written down anywhere and it's not clear how to access it.
+Roughly what makes something ghost knowledge is two things:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;It is readily discoverable if you have trusted access to expert members of the community.&lt;/li&gt;
+&lt;li&gt;It is almost completely inaccessible if you are not.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;In this sense, &lt;em&gt;most&lt;/em&gt; knowledge is ghost, particularly if you take an expansive view of what counts as an epistemic community.&lt;/p&gt;
+
+
+&lt;p&gt;A recent (more recent than the publishing of this paper) related example was "Eigenvectors from Eigenvalues: a survey of a basic identity in linear algebra" by Denton, Parke, Tao, and Zhang.
+A couple of physicists found an interesting (to them, and apparently to others who care about such things, I confess I find it too technical to be interesting - I understand the mathematics well enough but don't work in this field so have a differently tuned sense of interest).
+The story of this as I understand it is roughly:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;A bunch of physicists discovered an interesting and, apparently, novel identity.&lt;/li&gt;
+&lt;li&gt;They emailed Terence Tao and he almost immediately was able to provide multiple proofs of it.&lt;/li&gt;
+&lt;li&gt;They published a paper together.&lt;/li&gt;
+&lt;li&gt;It got a lot of press because Terence Tao is something of a big deal and discovering a new result in such a mature field is surprising.&lt;/li&gt;
+&lt;li&gt;Turns out it was actually a result that was not so much "well known" as repeatedly rediscovered in myriad different places, but had never made a splash before.&lt;/li&gt;
+&lt;li&gt;They wrote a new survey paper about this.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;If you look at only parts (1-3) this is a perfect example of ghost knowledge.
+But &lt;em&gt;the result already existed in the literature&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;To quote a great philosopher:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;“But the plans were on display…”
+“On display? I eventually had to go down to the cellar to find them.”
+“That’s the display department.”
+“With a flashlight.”
+“Ah, well, the lights had probably gone.”
+“So had the stairs.”
+“But look, you found the notice, didn’t you?”
+“Yes,” said Arthur, “yes I did. It was on display in the bottom of a locked filing cabinet stuck in a disused lavatory with a sign on the door saying ‘Beware of the Leopard.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;It is very often the case that even when knowledge &lt;em&gt;is&lt;/em&gt; written down somewhere, it's nearly impossible to find it.
+This has happened to me in mathematics before:
+A friend and I once discovered a result that we thought was very interesting (under certain conditions, the best possible continuous approximation to a discontinuous fucntion exists), only to eventually discover that the result &lt;em&gt;was&lt;/em&gt; known, it had just been published in an obscure mathematical journal, in the 1970s, in Poland,
+so virtually nobody knew about it.
+Fortunately we had never put in much serious effort into trying to publish it before discovering that (honestly we probably should have, but neither of us were professional mathematicians by that point),
+but it was still annoying.&lt;/p&gt;
+
+
+&lt;p&gt;The core problem that causes all of this is that there's a leaky pipeline of knowledge from epistemic communities to the outside world.
+In order for you to discover a piece of knowledge:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;It has to be interesting enough for someone to think it is worth writing down.&lt;/li&gt;
+&lt;li&gt;It has to be interesting enough that it gets accepted (though if not, it may end up on a random blog post if you're lucky).&lt;/li&gt;
+&lt;li&gt;It has to be interesting or well organised enough that it gets surfaced in a way you can find.&lt;/li&gt;
+&lt;li&gt;It has to be accessible enough for you to be able to find it (e.g. it can't use super technical terms that you'll have no way to ever discover without access to an expert).&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;This pipeline is leaky enough that it would be very surprising if &lt;em&gt;most&lt;/em&gt; knowledge produced by an epistemic community were accessible to you.&lt;/p&gt;
+
+
+&lt;p&gt;This may not seem like a big deal when you think of communities like mathematics, where most consumers of its contents are also members of the community, but it's a big deal when you consider two things:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Everything&lt;/em&gt; is like this, including subjects that everyone would benefit from. I read a lot of therapy books for example and I'll bet that there's at least two orders of magnitude more ghost knowledge about therapy than I have access to.&lt;/li&gt;
+&lt;li&gt;Every community is an epistemic community. Many lessons are e.g. learned over and over again inside companies, and are never written down anywhere, or when they are are so defanged that nobody can benefit from them. The pipeline is different, but the problem is the same.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;Given this, we are surrounded by ghosts:
+The information that is written down and that we can access is so thin on the ground compared to what's actually out there,
+it's astonishing that we ever get anything done.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-02-16-14:22.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-02-17-09:56.html</id>
+    <title>Coevolution and the bad take machine</title>
+    <updated>2020-02-17T10:23:48+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Coevolution and the bad take machine&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-02-17&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;This may come as a surprise to you, but there are some people on Twitter whose tweets are &lt;em&gt;really bad&lt;/em&gt;.
+I don't just mean that they're not very good, I mean that their tweets are so bad that it feels like they sat down and twirled a metaphorical moustache and went "I wonder how I can make the most people mad today?".
+I have three particular examples in mind, but I'm sure you can come up with hundreds more.&lt;/p&gt;
+
+
+&lt;p&gt;Why are they like this?
+Two reasons, basically:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;They want to be.&lt;/li&gt;
+&lt;li&gt;We've trained them to be good at it.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;The first I feel should be obvious: If this level of negative response doesn't deter them,
+it's clear that they must be getting something out of it. Either they enjoy the negative reaction (annoying people is funny), they feel like they're "sparking important debate", or some other reason.
+At the very least if they found the reactions unpleasant they would have learned to stop doing this.
+It's mostly smart people doing it after all.&lt;/p&gt;
+
+
+&lt;p&gt;For the second... lets talk about evolution.&lt;/p&gt;
+
+
+&lt;p&gt;Life makes more sense when you view a lot of the world as systems of replicating patterns:
+Patterns mutate, successful patterns get copied, unsuccessful patterns die off,
+and the shape of the world is patterned after what worked,
+for a value of worked that means nothing more than "was able to replicate itself".
+We tend to talk about these patterns as "replicators", as if they were concrete things that reproduced themselves,
+and I will use that terminology, but I find thinking of them in terms of patterns is more helpful.&lt;/p&gt;
+
+
+&lt;p&gt;Genes are the classic replicator, but there are many others.
+Memes in the Dawkins sense (Dawkins-memes) are another, as are memes in the modern sense (cat-memes).
+Cat-memes are both driven by and drive Dawkins-memes, which is an important example of coevolution:
+We can look at cat-memes as replicators in their own right (cat-memes are copied and modified and selected for),
+but their replication will make much more sense when we consider the Dawkins-memes.
+The replication has a significant loop where Cat-memes replicate partly by generating Dawkins-memes which replicate and generate more cat-memes.&lt;/p&gt;
+
+
+&lt;p&gt;This is an oversimplified view of the process that ignores many important details and other loops,
+but I think it is still an illuminating one.&lt;/p&gt;
+
+
+&lt;p&gt;These coevolutionary processes are common. Culture and genes are another one:
+e.g. consider lactose tolerance. Lactose tolerance is widespread in the west,
+because of the coevolution of dairy farming techniques (culture) and genetics (the ability to consume milk as an adult without getting very ill).
+Each replicator drives the other.&lt;/p&gt;
+
+
+&lt;p&gt;Another replicator is &lt;em&gt;behaviour&lt;/em&gt;.
+We typically model our behaviour on past behaviours of ours (new behaviours can of course be introduced, but most behaviour is derived from past behaviour).
+When a behaviour goes well, we do it more, when it goes badly, we do it less. This is classic &lt;a href="https://en.wikipedia.org/wiki/Operant_conditioning"&gt;operant conditioning&lt;/a&gt;, the thing with the salivating dogs, viewed as an evolutionary process.&lt;/p&gt;
+
+
+&lt;p&gt;Another thing that counts as a replicator is "things people are talking about on Twitter".
+People talk about stuff, so others engage with it, or find out what's going on and talk about it too, etc.
+So tweets are a replicator.&lt;/p&gt;
+
+
+&lt;p&gt;So when you have a bad take machine, you get the following processes:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;They make a bad take.&lt;/li&gt;
+&lt;li&gt;People are outraged and talk about it.&lt;/li&gt;
+&lt;li&gt;The bad take machine likes it and does more of that behaviour in future.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;If, on the other hand, they make a take and nobody cares, they do not get reward and the behaviour is selected against.&lt;/p&gt;
+
+
+&lt;p&gt;The behaviours drove the spread of the outrage replicator, and the outrage replicator provides the selection mechanism for the behaviours.
+Thus, via the spread of our outrage on Twitter, we have operant conditioned the bad take machine into producing worse takes.&lt;/p&gt;
+
+
+&lt;p&gt;Which is to say, it's bad on purpose to make you replicate it.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-02-17-09:56.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-02-18-12:24.html</id>
+    <title>Extracts from "How to talk about books you haven't read"</title>
+    <updated>2020-02-18T13:07:20+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Extracts from "How to talk about books you haven't read"&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-02-18&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I'm a big fan of Pierre Bayard's "How to talk about books you haven't read".
+I've even read it twice (insert witty joke about title here).&lt;/p&gt;
+
+
+&lt;p&gt;Unfortunately, it is written exactly like you would expect nonfiction written by someone who specialises in literature to be written:
+Badly.&lt;/p&gt;
+
+
+&lt;p&gt;This isn't entirely fair. The quality of the writing is excellent. The problem with it is written to tell a story,
+but in fact it is a book that is trying to teach you something.
+This makes it a pleasure to read, but a pain to actually use because every time you go back to it you need to hunt through it to find the bits you want because there is no goddamn index and the crucial terms are introduced embedded halfway through a story.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, I've hunted down these terms enough times that I thought I'd just write them down.
+So I thought I'd write a note about the three types of representations of a book that Bayard talks about.
+Page numbers all refer to my copy, so yours might not be the same, sorry.&lt;/p&gt;
+
+
+&lt;h3&gt;Three types of library&lt;/h3&gt;
+
+
+&lt;h4&gt;Collective Library (p. 12)&lt;/h4&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Most statements about a book are not about the book itself, despite appearances, but about the larger set of books on which our culture depends at that moment. It is that set, which I shall henceforth refer to as the collective library, that truly matters, since it is our mastery of this collective library that is at stake in all discussions about books. But this mastery is a command of relations, not of any book in isolation, and it easily accommodates ignorance of a large part of the whole.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;h4&gt;Inner Library (p. 73)&lt;/h4&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;We might use the term inner library to characterize that set of books—a subset of the collective library—around which every personality is constructed, and which then shapes each person’s individual relationship to books and to other people. Specific titles figure in these private libraries, but, like Montaigne’s, they are primarily composed of fragments of forgotten and imaginary books through which we apprehend the world.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;h4&gt;Virtual Library (p. 125)&lt;/h4&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;The third type of library that I am introducing here, the virtual library, is the realm in which books are discussed, in either written or oral form, with other people. It is a mobile sector of every culture’s collective library and is located at the point of intersection of the various inner libraries of each participant in the discussion.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;h3&gt;Three types of book&lt;/h3&gt;
+
+
+&lt;h4&gt;Screen books (p. 44)&lt;/h4&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Freud uses the term screen memory to designate false or insignificant childhood memories whose function is to conceal others less acceptable to the conscious mind.&lt;/p&gt;
+&lt;p&gt;...&lt;/p&gt;
+&lt;p&gt;...the books we talk about are only glancingly related to "real" books - indeed what else would we expect? - and are often no more than screen books. Or, if you prefer, what we talk about is not the books themselves, but substitute objects we create for the occasion.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;h4&gt;Inner books (p. 83)&lt;/h4&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;I propose the term &lt;em&gt;inner book&lt;/em&gt; to designate the set of mythic representations, be they collective or individual, that come between the reader and any new piece of writing, shaping his reading without realizing it. Largely unconscious, this imaginary book acts as a filter and determines the reception of new texts by selecting which of its elements will be retained and how they will be interpreted.&lt;/p&gt;
+&lt;p&gt;...&lt;/p&gt;
+&lt;p&gt;The second of three "books" studied in this essay, the &lt;em&gt;inner&lt;/em&gt; book influences all the transformations to which we subject books, turning htem into &lt;em&gt;screen books&lt;/em&gt;. The term &lt;em&gt;inner book&lt;/em&gt; appears in Proust with a meaning close to the one I am giving it: "As for the inner book of unknown symbols (symbols carved in relief they might have been, which my attention, as it explored my unconscious, groped for and stumbled against and followed the contorus of, like a diver exploring the ocean-bed), if I tried to read them, no one could help me with any rules, for to read them was an act of creation in which no one can do our work for us or even collaborate with us [...] This book, more laborious to decipher than any other, is also the only one which has been dictated to us by reality, the only one of which the 'impression' has been printed in us by reality itself"&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;h4&gt;Phantom books (p. 160)&lt;/h4&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;The third type of book I am introducing here, the &lt;em&gt;phantom book&lt;/em&gt;, is that mobile and ungraspable object that we will call into being, in writing or in speech, when we talk about a book. It is located at the point where readers' various &lt;em&gt;screen books&lt;/em&gt; meet - screen books that reads have constructed based on their &lt;em&gt;inner books&lt;/em&gt;. The phantom book belongs to the virtual library of our exchanges, as the screen book belongs to the collective library and the inner book belongs to the inner library.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;h3&gt;Thoughts on the book overall&lt;/h3&gt;
+
+
+&lt;p&gt;I really like this book but am also very frustrated by it.
+I might have to read it a third time to get it out of my head,
+at which point I will attempt to turn it into some essays.&lt;/p&gt;
+
+
+&lt;p&gt;The source of my frustration is that it is a very good book,
+and it achieves its purpose in a way that a more technical essay of its nature would not have I feel,
+but I &lt;em&gt;really&lt;/em&gt; wish that technical essay also existed, and I don't want to have to be the one to write it.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-02-18-12:24.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-02-19-10:37.html</id>
+    <title>Books by writers are the worst</title>
+    <updated>2020-02-19T11:46:02+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Books by writers are the worst&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-02-19&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;One of the big problems with being good at writing is that it makes you think that your writing is good,
+but this is unfortunately not the case.&lt;/p&gt;
+
+
+&lt;p&gt;This is a problem I run into particularly with people who have "writer" as part of their identity.
+Often they are very good at writing, so are entirely justified in this identity claim, which is why they write really badly.&lt;/p&gt;
+
+
+&lt;p&gt;The basic problem is that &lt;em&gt;writing is communication&lt;/em&gt;, and at some point what you're bottlenecked on in the quality of your writing is not actually the quality of your writing, but the quality of your communication, and because people think "I'm a writer so all I need to do is write well and the writing is good" they overfocus on things that are no longer the rate limiting factor.&lt;/p&gt;
+
+
+&lt;p&gt;In particular, the two skills that I often see writers &lt;em&gt;utterly&lt;/em&gt; failing at are clarity of explanation and organisation of information.&lt;/p&gt;
+
+
+&lt;p&gt;Here are some sins I regularly see nonfiction books by writers fall into:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Being very sloppy about how they introduce terms. The terms are casually introduced in the middle of a paragraph, as if the reader should obviously understand what they mean, without examples or any real clear delineation of how they are supposed to be used.&lt;/li&gt;
+&lt;li&gt;Not organising their book for nonlinear reading. In particular, not organising their book for rereading.&lt;/li&gt;
+&lt;li&gt;A particularly egregious sin in (2) is bad indexing.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;You saw some of this whinging in the post about &lt;a href="https://notebook.drmaciver.com/posts/2020-02-18-12:24.html"&gt;How to talk about books you haven't read&lt;/a&gt;.
+I think in general this is a common problem: Writers experienced in fiction really don't have the skillset for writing nonfiction by default (and vice versa!). Frequently they are great essayists anyway, because the essay is a format much more forgiving of these sins, but they've concluded that all book writing is the same and not bothered to confront how it's different.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-02-19-10:37.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-02-20-09:31.html</id>
+    <title>Emotional reactions as legacy code</title>
+    <updated>2020-02-20T09:54:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Emotional reactions as legacy code&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-02-20&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;&lt;a href="https://twitter.com/DRMacIver/status/1214492384089792513"&gt;One of my most popular tweets ever&lt;/a&gt;:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;"Minds are basically computers" is wrong if you think of computers as abstract turing machines but spot on if you think of computers as a horrible assemblage of kludges bridging incompatible legacy code which only work because critical bugs are masking other critical bugs.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;I think a lot of our emotional reactions are like this:
+They are a lifetime of legacy that we have learned and implemented,
+and they mostly fit together well enough to work,
+but they are kludgy and unwieldy and often in need of some serious refactoring.&lt;/p&gt;
+
+
+&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/Individual_psychology"&gt;Adlerian psychology&lt;/a&gt; maintains a distinction between &lt;em&gt;aetiology&lt;/em&gt; (the study of the causes of things) and &lt;em&gt;teleology&lt;/em&gt; (the study of the purposes of things),
+and maintains that in order to change you should ask not "where does this behaviour come from?" (to which the classic psychotherapy answer is "trauma") but instead "what purpose does this behaviour serve?".
+e.g. someone might experience social anxiety in order to prevent them from talking to people, which serves as a protective mechanism against being hurt by those people.
+The aetiology might be that they learned they would be hurt by people as a child, but the teleology is the protective mechanism.&lt;/p&gt;
+
+
+&lt;p&gt;Adlerian psychology seems to go as far as to say that trauma does not exist, which I think is a bit much,
+but a useful synthesis of the two ideas of aetiology and teleology is this:
+An emotional reaction serves a purpose, but that purpose is not necessarily still relevant.&lt;/p&gt;
+
+
+&lt;p&gt;When you have an emotional reaction in a situation, you can ask what purpose it serves,
+but the real question is &lt;em&gt;where did I learn this and what purpose did it serve there&lt;/em&gt;?&lt;/p&gt;
+
+
+&lt;p&gt;For example, many reactions were learned in childhood, where you were surrounded by very different people and had a very different power dynamic. You might have had abusive parents, you might have been bullied at school,
+and in both of those circumstances you were trapped unable to leave.
+The protective emotional reactions that you learned there are &lt;em&gt;very&lt;/em&gt; different from the ones that you need as an adult with more control over your own life and who you associate with.&lt;/p&gt;
+
+
+&lt;p&gt;Looking at this prior context allows you to examine the emotional reaction critically and decide whether and how to change it.
+If &lt;a href="https://www.lesswrong.com/posts/i9xyZBS3qzA8nFXNQ/book-summary-unlocking-the-emotional-brain"&gt;coherence therapy&lt;/a&gt; is to be believed,
+this can best be done when the emotion is active.
+When it is active, you can relearn a new and better version of it.&lt;/p&gt;
+
+
+&lt;p&gt;A principle I've been trying to adopt recently is to notice emotional reactions as they occur and, rather than dismissing them or leaning into them,
+instead ask "Where does this come from?" and try to understand it and think about whether it's needed in this scenario.&lt;/p&gt;
+
+
+&lt;p&gt;Learning &lt;a href="https://amzn.to/39TBwRv"&gt;Focusing&lt;/a&gt; was a big help for this,
+and understanding how to recognise triggers was a good next step for knowing when to deploy it (essentially: If you have a physical reaction to an emotional event, that's a trigger. They don't have to be big scary flashbacky things, those are just the extreme end).&lt;/p&gt;
+
+
+&lt;p&gt;A thing my friend Alex suggested which I've been partly implementing off the back of this is to apply &lt;a href="https://amzn.to/37HpZ6h"&gt;Marie Kondo&lt;/a&gt; style decluttering to these reactions:
+Thank them for their service, tell them they have done their job in protecting you but that they are no longer needed,
+and let them go.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-02-20-09:31.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-02-21-10:04.html</id>
+    <title>Constraints on skill growth</title>
+    <updated>2020-02-21T10:53:19+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Constraints on skill growth&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-02-21&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Previously:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.drmaciver.com/2019/05/how-to-do-hard-things/"&gt;How to do hard things&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.drmaciver.com/2014/07/programming-and-mathematics/"&gt;Why mathematics makes you better at programming (and so does everything else)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;Have you noticed how when you first start learning a skill, you rapidly get better at it?
+Then, after a while of that rapid growth, you start to plateau. You've seemingly picked all the low hanging fruit and are no longer improving.
+Why is that?&lt;/p&gt;
+
+
+&lt;p&gt;Well there probably isn't any one reason, and some of it is legitimately the low hanging fruit problem - some ways of getting better at a skill are easier than others, and once you've done all of those things you're left with the hard ones - but I'd like to suggest one reason that I think is underappreciated.
+It's because you've hit a &lt;em&gt;constraint&lt;/em&gt;, and the skill you are practicing does not give you a good feedback loop for improving on that constraint.&lt;/p&gt;
+
+
+&lt;p&gt;The theory of constraints is a management philosophy thing.
+It is the very obvious common sense idea (which is to say that it's an idea that in the moment people find completely nonobvious and never think of): If something isn't where the bottleneck is, it doesn't matter how much better you make it.
+e.g.~it doesn't matter if you improve your widget production if the distribution system can't keep up with the new number of widgets.&lt;/p&gt;
+
+
+&lt;p&gt;This is true for skills too and ties in to a problem I talked about in &lt;a href="https://notebook.drmaciver.com/posts/2020-02-19-10:37.html"&gt;Books by writers are the worst&lt;/a&gt;.
+If the quality of your written works is bottlenecked on communication skills, it doesn't matter how much you improve your writing skills your books are just not going to get much better.&lt;/p&gt;
+
+
+&lt;p&gt;Skills are generally improved by tight feedback loops, and often simply using the skill to achieve your goals is not a very tight feedback loop for the particular aspect of it you are constrained on,
+because there's so much else going on that it makes the feedback loop very slow.&lt;/p&gt;
+
+
+&lt;p&gt;To continue the writing example, say you want to improve your communication skills.
+You &lt;em&gt;could&lt;/em&gt; write more books in order to practice that, but writing a book takes a very long time.
+You don't necessarily have that many books in you.
+You could instead practice these skills by writing essays,
+or even by having conversations with people on Twitter or in person.&lt;/p&gt;
+
+
+&lt;p&gt;This is the point I made in "why mathematics makes you better at programming": Different subjects and tasks give different feedback loops on different aspects of skill,
+so often the best way to get good at a skill is to practice a different but related skill.&lt;/p&gt;
+
+
+&lt;p&gt;Additionally, sometimes constraints are hidden from you.
+Often the constraint on a skill is anxiety management, or discomfort tolerance,
+or one of various other things that you don't even really think of as skills you can get better at.
+Sometimes the best way to unconstrain yourself are to go and do something &lt;em&gt;completely&lt;/em&gt; different which force you to confront that.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-02-21-10:04.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-02-22-11:37.html</id>
+    <title>You should try bad things</title>
+    <updated>2020-02-22T11:45:55+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;You should try bad things&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-02-22&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Earlier &lt;a href="https://twitter.com/avyfain/status/1231148942756237312"&gt;Avy asked me the following question&lt;/a&gt;:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Why would you read something if you expect to be terrible?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;My answer started with a few specific reasons, but finished with the following general observation:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Also fundamentally... If you never to anything you think is going to fail, you'll repeatedly fall victim to confirmation bias and never leave your comfort zone. Sometimes it's worth branching out just to see what happens when you do&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;This is a problem I talked about in &lt;a href="https://www.drmaciver.com/2020/02/theres-no-single-error-rate/"&gt;There's no single error rate&lt;/a&gt;:
+If you only only observe the consequences of one part of your selection process (what happens when you try things you expect to be good) you've given the other part (what happens when you try things you expect to be bad) free reign to be basically arbitrarily wrong. This means you're missing out.&lt;/p&gt;
+
+
+&lt;p&gt;In particular it means you're missing out &lt;em&gt;systematically&lt;/em&gt;, because you will never correct on traits that you think of as signalling something terrible because you will always avoid them.&lt;/p&gt;
+
+
+&lt;p&gt;I do a lot of reading outside of my comfort zone, because that's where things I don't know about live. Sometimes this requires gritting my teeth and reading something bad because it contains information I will get nowhere else (I find a lot of therapy reading like this - it's written in a style I &lt;em&gt;really&lt;/em&gt; dislike), and sometimes this requires reading something I expect to be bad and finding out that it's actually very good.&lt;/p&gt;
+
+
+&lt;p&gt;If you only try things that you expect to be good, your interests will narrow over time, because you will learn that more things that you thought were good are actually bad, but you will never learn that things you thought were bad are actually good.&lt;/p&gt;
+
+
+&lt;p&gt;If you're &lt;em&gt;certain&lt;/em&gt; something's going to be bad because you've tried it enough times to know, skip it sure. If something is very high effort, or very high risk, you similarly shouldn't push yourself into doing it. But if you can find or create relatively cheap and safe opportunities to try out something that might be bad, try it out. You might learn something important.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-02-22-11:37.html" rel="alternate"/>
   </entry>
 </feed>
