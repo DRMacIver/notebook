@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-02-24T10:37:00+00:00</updated>
+  <updated>2020-02-25T10:39:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,268 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2019-12-13-09:19.html</id>
-    <title>Notes on Conscious Experience</title>
-    <updated>2019-12-13T15:33:53+00:00</updated>
-    <content>
-
-&lt;p class="subtitle"&gt;Notes on Conscious Experience&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2019-12-13&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;These are some notes on some my more eccentric beliefs about consciousness and theory of mind, which I keep promising to write up for people.
-I kinda lost steam halfway through writing them, so they peter out a bit, but I am happy to take questions and write up any answers in more detail.&lt;/p&gt;
-
-
-&lt;p&gt;Apologies in advance: This is going to be very poorly cited, because I have synthesised these beliefs out of a wide variety of sources, over a long period of time.
-I have arrived at these opinions drawing &lt;em&gt;heavily&lt;/em&gt; on other people's work, but I have somewhat lost track on which bits come from where,
-and of which bits are original to me. Most of the originality will be framing and synthesising things that are not normally connected.&lt;/p&gt;
-
-
-&lt;p&gt;The briefest possible summary of my position is &lt;em&gt;bounded materialist panpsychism&lt;/em&gt;.
-That is, I hold that in some sense "everything" is conscious, with a bunch of caveats on this and what it means which causes my beliefs to fall short of traditional panpsychism,
-but that there is no supernatural mechanism behind this and that it is fully explainable using boring physical theories involving atoms and physics and suchlike.&lt;/p&gt;
-
-
-&lt;p&gt;More specifically what I believe is that consciousness is a distributed phenomenon, and that it does not really make sense to talk about the number of conscious entities,
-because conscious entities put together form composite conscious entities, and many examples (including humans) that we think of as a single conscious entity are themselves composite.&lt;/p&gt;
-
-
-&lt;p&gt;In the rest of these notes I'm going to argue for this position. I don't necessarily expect my argument to be convincing unless you are already sympathetic to it,
-it's more by way of explaining why I hold it.&lt;/p&gt;
-
-
-&lt;p&gt;In brief, my argument position is:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Cognition is an inherently distributed process with no natural "point of origin", and a smaller proportion of it happens in single people than we tend to assume.&lt;/li&gt;
-&lt;li&gt;Consciousness extends into the world through the means by which we act in it and experience it.&lt;/li&gt;
-&lt;li&gt;Our experience of cognition is an integral feature of our consciousness.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Most&lt;/em&gt; of that cognition we experience is wholly or partly distributed.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;h3&gt;Philosophical Notes&lt;/h3&gt;
-
-
-&lt;p&gt;Before I get into the details, I'd like to explain a few things:
-I am going to use a bunch of terms which have many possible meanings and are hotly debated.
-I will try to give a precise idea of how I am using them, with a sort of over/under definition system:
-I will give a hand wavy ballpark definition of what I am trying to point to with them,
-and some examples of things that I think do and don't fit that definition.&lt;/p&gt;
-
-
-&lt;p&gt;In particular, I am going to be using the words &lt;em&gt;consciousness&lt;/em&gt; and &lt;em&gt;cognition&lt;/em&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;By cognition I roughly mean anything that looks like a thought process, in a very broad and expansive sense.
-For example: I would consider both human thought and a chess program as examples of cognition.
-I would not consider a rock just sitting there an example of cognition.
-I am somewhat ambivalent as to whether I would consider a reflexive action (e.g. flinching away from pain) as cognition,
-but would lean towards no.&lt;/p&gt;
-
-
-&lt;p&gt;By consciousness I mean something like "the ability to have a subjective experience" - there being "something it is like to be this thing".
-This is closer to what philosophers would call &lt;em&gt;phenomenal consciousness&lt;/em&gt;.
-A human is conscious, and so is a rabbit. A rock or a chess program are not conscious.&lt;/p&gt;
-
-
-&lt;p&gt;Secondly, I'm going to adopt the following general philosophical principles:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;If two things can be observed to behave differently then they are different.&lt;/li&gt;
-&lt;li&gt;If two things &lt;em&gt;can't&lt;/em&gt; be observed to behave differently then you should be suspicious of but not automatically reject claims that they are different.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;In particular if you have examples of things that have one property but not another then those properties are not the same thing.
-So in the above, cognition and consciousness are not the same thing,
-because a chess program has cognition but not consciousness.
-It may or may not be possible to have consciousness without cognition - certain drug induced or meditative states could be examples of this - but whether it is or not is not an essential feature of my argument.&lt;/p&gt;
-
-
-&lt;h3&gt;Cognition Combines&lt;/h3&gt;
-
-
-&lt;p&gt;By "cognitive system" I mean "any assemblage of things, considered in its capacity as something that exhibits cognition".
-"Cognitive system" is a descriptive word rather than a category word - essentially everything is a cognitive system,
-but some things are more interesting to think of as cognitive systems than others.
-The term describes &lt;em&gt;how we think of the system&lt;/em&gt;, not &lt;em&gt;what the systems is&lt;/em&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;Most things are what you might think of as "the null cognitive system" - a thing you can consider as exhibiting no cognition.
-A rock is a null cognitive system, a human is a more interesting cognitive system.
-We will largely be concerned with the more interesting type of cognitive system.&lt;/p&gt;
-
-
-&lt;p&gt;A brain is certainly a cognitive system, but I'm going to argue that the brain is not the natural cognitive system of interest for human thought.
-This is because:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Human thought is intrinsically &lt;em&gt;embodied&lt;/em&gt;. Your body is very much an important participant in your thought processes.&lt;/li&gt;
-&lt;li&gt;Human thought extends out into the world, and many human thoughts are not possible with an unassisted body.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;The evidence for (1) is relatively strong from the neuroscience and psychology worlds:
-Your body certainly affects your thought processes (consider how differently you think when hungry. "Am I depressed, is everything terrible, or am I just hungry?" is a common ambiguous experience.
-In general, emotions are a very embodied process. Much of your emotional experience exists primarily in your body, and a functioning emotional experience seems to be fairly essential to making good decisions:
-Without emotions to guide you, you don't become a sensible being of pure logic, you become a disorganised mess who can't prioritise.&lt;/p&gt;
-
-
-&lt;p&gt;For an example of (2), consider mathematics. It is almost impossible to do non-trivial mathematics without external working memory.
-A mathematician with pencil and paper is capable of vastly more mathematics than a mathematician without them.
-The cognitive system that includes the pencil and paper is capable of different things than the base mathematician,
-so should be considered a different cognitive system in its own right.&lt;/p&gt;
-
-
-&lt;p&gt;Additionally, cognitive systems combine.
-&lt;a href="https://en.wikipedia.org/wiki/Advanced_chess"&gt;Advanced Chess&lt;/a&gt; is the most commonly cited example of this:
-Both the human player and the chess program are cognitive systems in their own right,
-but the combined human/program chess player is capable of chess play that is fundamentally different than either can manage on their own.&lt;/p&gt;
-
-
-&lt;p&gt;Cognitive systems can also combine when the individual cognitive systems are conscious.
-A collaboration between two humans is often capable of things that neither human is capable of on their own - either due to not having the same skill sets or just by distributing work.
-A common example of the latter is &lt;a href="https://en.wikipedia.org/wiki/Transactive_memory"&gt;transactive memory&lt;/a&gt; - we often "remember" things by delegating that memory to someone else,
-e.g. a partner or a coworker. We remember who is responsible for a category of information and ask them.&lt;/p&gt;
-
-
-&lt;p&gt;This, incidentally, illustrates a problem with a possible alternative interpretation:
-It is not enough to just think of these tools as cognitive aids. A human can extend the cognition of another human,
-but in doing so the converse is true too: Their cognition is being extended in turn.
-It doesn't make sense to ask which one is the "real" source of cognition: They both are!
-The combined system is not a centralised one with assistance, it is a collaboration resulting in a new cognitive system in its own right.&lt;/p&gt;
-
-
-&lt;p&gt;Cognitive systems also typically divide. You are a cognitive system divided up into your brain and body, but each of those subdivide - your gut contributes differently to your cognition than your foot does,
-different parts of your brain contribute differently. If part of it is physically removed or damaged, you may continue to be a cognitive system (not all brain damage still permits meaningful thought of course, but much of it still leaves you as someone who can think, albeit in an impaired manner).&lt;/p&gt;
-
-
-&lt;p&gt;Note however that cognitive systems are usually more than the sum of their parts - most of cognition lives in the interaction, not in the physical object.
-A pencil and paper is the null cognitive system (it exhibits no cognition on its own),
-and yet a mathematician with a pencil and paper is a different cognitive system than a mathematician on their own.
-If however you don't let the mathematician interact with the pencil and paper, the result is just a slightly frustrated sum of its parts.
-The interaction is important.&lt;/p&gt;
-
-
-&lt;p&gt;Given this tendency to combine and divide, I do not believe it makes sense to privilege any particular level of cognition as special.
-Thoughts occur at every level, and transmit between different parts of the system, and this happens (albeit through different mechanisms).&lt;/p&gt;
-
-
-&lt;h3&gt;Consciousness is Extended and Overlapping&lt;/h3&gt;
-
-
-&lt;p&gt;Where does your consciousness extend out to?
-That is, what physical objects can be "part" of your conscious experience?&lt;/p&gt;
-
-
-&lt;p&gt;It is not totally clear what this question means of course, partly because it's not totally clear what a conscious experience &lt;em&gt;is&lt;/em&gt;, but hopefully we can still provide partial answers to it based on things we think should be true of any reasonable interpretation of it.&lt;/p&gt;
-
-
-&lt;p&gt;For example, I think it is fair to assume that we are conscious of our body. Things that happen to it are part of our subjective experience, more or less (we may not be conscious of &lt;em&gt;all&lt;/em&gt; of our body - e.g. most internal organs we don't have easy conscious access to unless they have an associated pain).&lt;/p&gt;
-
-
-&lt;p&gt;Equally it's clear that there are some things that are &lt;em&gt;not&lt;/em&gt; part of our conscious experience.
-A teapot in orbit of alpha centauri is not something I have a subjective experience of
-(Neither are most things closer to home of course, but I wanted an unambiguous example).&lt;/p&gt;
-
-
-&lt;p&gt;Much (most? all?) of consciousness - the ability to have a subjective experience - is consciousness &lt;em&gt;of&lt;/em&gt; something. It has an aboutness, what philosophers (phenomenologists specifically) often call intentionality.
-I'd like to consider some distinctive features of this intentional consciousness.
-A lot of this will follow fairly standard phenomenology of perception work from &lt;a href="https://plato.stanford.edu/entries/merleau-ponty/"&gt;Merleau-Ponty&lt;/a&gt; but full disclosure I have not actually read Merleau-Ponty.&lt;/p&gt;
-
-
-&lt;p&gt;Try running your hand over a couple of surfaces. Say a smooth surface and a rough one (I used a table and a couch for this experiment). Notice how it feels.
-It may help to close your eyes while doing this to focus on the sensation of touching the surface.&lt;/p&gt;
-
-
-&lt;p&gt;When you are doing this you are conscious &lt;em&gt;of&lt;/em&gt; the texture of the surfaces, but you experience that texture &lt;em&gt;through&lt;/em&gt; your hands.
-The table is (probably) not part of your consciousness, but your hands are.
-Which parts of your hands are part of that consciousness? The experience is primarily had through your nerves, but equally your skin is a major part of it - you are experiencing its give,
-and your conscious experience of the surface is an interactive process that depends on your muscles,
-and many other details besides.
-I think it is reasonable to describe this as a conscious process that involves your hands as a whole.&lt;/p&gt;
-
-
-&lt;p&gt;Now put on a pair of gloves (ideally a thin pair) and do it again.
-You probably had a broadly similar subjective experience with and without the gloves, but with the sensations somewhat muted.
-So the gloves muted your subjective experience of sensing the texture of the surface, but you still had a subjective experience of the texture of the surface, right?&lt;/p&gt;
-
-
-&lt;p&gt;But there's a key difference here: you never touched the surface. What your senses were directly experiencing was not the texture of the surface, but the inside of your gloves.
-Nevertheless, what you &lt;em&gt;experienced&lt;/em&gt; was the texture of the surface.&lt;/p&gt;
-
-
-&lt;p&gt;Try it again a few times and see if you can experience it as feeling the inside of your gloves. It's hard. I can't.&lt;/p&gt;
-
-
-&lt;p&gt;In the same way that you were previously experiencing the texture of the surface through your hands, you are now experiencing it through your gloves (really through the combination of your gloves and your hands).
-So your conscious experience can extend to include not just your body, but the physical tools you are using.&lt;/p&gt;
-
-
-&lt;p&gt;You can see this with other tools that less directly map to your normal sensations. Try picking up a pen and running it along the surfaces. Maybe practice a bit more, using it to feel out the shape of other objects with your eyes closed. Try writing some things by hand like it's the twentieth century.
-After a while, you should have a similar experience as you get used to it: You are having a subjective experience not of the pen itself, but the things you are interacting with the pen through.
-Your consciousness has extended into the pen.&lt;/p&gt;
-
-
-&lt;p&gt;I want to reemphasise that this is not a mystical process. You have not acquired any extrasensory awareness of the pen, you're just manipulating it with your hands, and getting physical feedback through it.
-But you have a subjective experience of what you are doing that is experienced through the tools you are using to do it,
-while the tools themselves can fade into the background unless you focus explicitly on them.&lt;/p&gt;
-
-
-&lt;p&gt;Now go find another conscious entity who it wouldn't be weird to hold hands with. I used a cat, which she was not best pleased about. It would probably work better to use a human because they're more likely to cooperate, but I had a cat immediately to hand and I didn't have a human immediately to hand.&lt;/p&gt;
-
-
-&lt;p&gt;Now use their hand (paw) like a pen to feel some textures and objects. It will be weird, but just roll with it.
-After a while you can have a similar subjective experience as you did with the pen - their hand becomes an extension of your conscious experience which you can use to feel the world through.
-So as well as being able to extend your consciousness into inanimate objects, there is nothing stopping you from extending it into physical spaces that are "owned" by another conscious entity.&lt;/p&gt;
-
-
-&lt;p&gt;Note that there is something significantly different happening when you do this:
-While previously, only you were consciously experiencing the world through the pen, when you do it through someone else, there is a physical object which is contained in both of your conscious experiences.
-You are feeling the world through the cat's paw, while the cat is simultaneously feeling the world through her paw and also feeling very annoyed and affronted at the interfering human.&lt;/p&gt;
-
-
-&lt;p&gt;You can also see this with the pen. Ask your partner-in-subjectivity to grab hold of the other end of the pen, both close your eyes, and now move the pen around.
-You are each having a subjective experience of the other person's movements, mediated by the pen. The pen is now an object which you both experience as part of your consciousness.&lt;/p&gt;
-
-
-&lt;p&gt;Note that I am &lt;em&gt;not&lt;/em&gt; suggesting that you are having the &lt;em&gt;same&lt;/em&gt; conscious experience of the pen here. You are not. You each have your own distinct subjective experiences which are not shared with the other person, but the same physical object is acting as part of each of your consciousnesses, and there is no obstacle to it doing so.&lt;/p&gt;
-
-
-&lt;h3&gt;Consciousness of Cognition&lt;/h3&gt;
-
-
-&lt;p&gt;At this point I lost a bit of steam writing this so I'm just going to summarise the remainder of the argument:&lt;/p&gt;
-
-
-&lt;p&gt;A major part of what we are conscious of is our own thoughts, but our own thoughts are less "ours" than we think they are.
-Cognition is intrinsically distributed,
-and we routinely delegate our thinking to the distributed cognition that we are embedded in.&lt;/p&gt;
-
-
-&lt;p&gt;In doing so, we often subjectively experience that cognition as "ours".
-Knowledge construction is an intrinsically social activity, and most of our opinions and behaviours are copied from those arounds us (possibly with modification),
-but we still experience them as ours.
-Transactive memory mentioned above is ubiquitous, and we seem to treat things that are stored in transactive memory as if we know them (there's research that supposedly supports this, but I haven't followed up on the primary sources and replication crisis caveats apply),
-so our subjective experience of "our" thoughts are really our subjective experience of the distributed cognitive system that we're hooked up to.
-In the same way that we experience the world through the tools we interact with it,
-our experience of cognition is not bounded by our own skin,
-but extends into the whole of the cognitive system through which we have thoughts.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2019-12-13-09:19.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-02-16-14:22.html</id>
     <title>We are surrounded by ghosts</title>
@@ -903,7 +641,7 @@ too difficult for you to easily quantify.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-02-24-10:37.html</id>
     <title>All knowledge is connected</title>
-    <updated>2020-02-24T10:37:00+00:00</updated>
+    <updated>2020-02-24T11:04:21+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;All knowledge is connected&lt;/p&gt;
@@ -960,5 +698,91 @@ there's this long chain of connections, and updates in one place might inform up
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-02-24-10:37.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-02-25-10:39.html</id>
+    <title>How to make decisions</title>
+    <updated>2020-02-25T10:39:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;How to make decisions&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-02-25&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;The base model for decision making is a coin flip.&lt;/p&gt;
+
+
+&lt;p&gt;I'm not saying that you should flip a coin for all your decisions, I'm saying that any decision making strategy you adopt &lt;em&gt;needs to be demonstrable better than flipping a coin&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Or, when is more normal, you are making decisions between a number of options, your decision making strategy needs to be better than choosing among them uniformly at random (drawing lots, etc).&lt;/p&gt;
+
+
+&lt;p&gt;People think that the best decision making approach given n items is to choose the best item.
+This is foolish and wrong, which is why the entirety of economics is based on this theory.&lt;/p&gt;
+
+
+&lt;p&gt;(This is a mean dig and is not true, but it's also not unfair. Economists don't @ me)&lt;/p&gt;
+
+
+&lt;p&gt;The reason it is foolish and wrong is that the effort of determining which is the best may exceed the benefit of choosing the best over one of many other options. Consider &lt;a href="https://en.wikipedia.org/wiki/Buridan%27s_ass"&gt;Buridan's ass&lt;/a&gt; (but don't ogle it, that would be uncouth):&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Buridan's ass is an illustration of a paradox in philosophy in the conception of free will. It refers to a hypothetical situation wherein a donkey that is equally hungry and thirsty is placed precisely midway between a stack of hay and a pail of water. Since the paradox assumes the ass will always go to whichever is closer, it dies of both hunger and thirst since it cannot make any rational decision between the hay and water. A common variant of the paradox substitutes two identical piles of hay for the hay and water; the ass, unable to choose between the two, dies of hunger.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;Dying of hunger is an obviously worse strategy than flipping a coin. I do not recommend it.&lt;/p&gt;
+
+
+&lt;p&gt;But consider... what happens if one of the piles of hay has an extra mouthful on it. That's obviously the better pile of hay, right? You should pick that one and then eat from it, right?
+But how long will it take you to find out which one has more hay on it? You'll get quite hungry and waste a lot of time doing it, you ass.&lt;/p&gt;
+
+
+&lt;p&gt;So this is the first thing we should learn from the coin flip:
+If the decision doesn't matter much, just pick something, more or less at random.&lt;/p&gt;
+
+
+&lt;p&gt;What do we do if the decision &lt;em&gt;does&lt;/em&gt; matter that much?&lt;/p&gt;
+
+
+&lt;p&gt;The following is a pretty good heuristic solution:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Eliminate any options that are &lt;em&gt;obviously&lt;/em&gt; worse than another. Like, if you're being offered £200 or £300 you don't need to think hard to pick the £300.&lt;/li&gt;
+&lt;li&gt;Identify pairs of options that are obviously more or less equivalent to eachother and randomly discard one of them.&lt;/li&gt;
+&lt;li&gt;If you have more than one option left, maybe gather some more information to improve your knowledge of the situation if there's still a wide range of potential outcomes. Only do this if the cost of gathering information isn't too high or the benefit of gaining it is much higher. Repeat (1) and (2) if this changes anything there.&lt;/li&gt;
+&lt;li&gt;If you still have more than one option do something like &lt;a href="https://en.wikipedia.org/wiki/Probability_matching"&gt;probability matching&lt;/a&gt; on what's left, picking an item with probability equal to the (subjective) probability of it being the best outcome. If this seems hard, just pick uniformly at random. Or pick a pair uniformly at random and invest in a bit more effort in deciding between the two.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;You almost never need to do anything this formal, but the general idea is:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Don't spend too much effort on eliminating options.&lt;/li&gt;
+&lt;li&gt;Spend only as much effort on improving your knowledge of the situation as the situation warrants.&lt;/li&gt;
+&lt;li&gt;If after you've done that it's still not obvious what to do from the remaining options, deploy whimsy and gut feel.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;Related:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.drmaciver.com/2019/10/vocabulary-building-satisficing/"&gt;Vocabulary Building: Satisficing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://notebook.drmaciver.com/posts/2020-02-22-11:37.html"&gt;You should try bad things&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.drmaciver.com/2020/02/theres-no-single-error-rate/"&gt;There's no single error rate&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-02-25-10:39.html" rel="alternate"/>
   </entry>
 </feed>
