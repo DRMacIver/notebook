@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-02-25T10:39:00+00:00</updated>
+  <updated>2020-02-26T16:07:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,141 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-02-16-14:22.html</id>
-    <title>We are surrounded by ghosts</title>
-    <updated>2020-02-16T15:23:06+00:00</updated>
-    <content>
-
-&lt;p class="subtitle"&gt;We are surrounded by ghosts&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-02-16&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;(This is part of an attempt to get back to using my notebook to write more half formed thoughts)&lt;/p&gt;
-
-
-&lt;p&gt;I recently read "Epistemic injustice in mathematics" by Rittberg, Tanswell, and Van Bendegem.
-In it they talk about the idea of &lt;em&gt;ghost theorems&lt;/em&gt;:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;There are mathematical results which are taken as accepted in a mathematical community,
-relied upon in talks, discussion, and proving further results, but which cannot be
-traced to a concrete proof in the literature. These results are part of the expert knowledge
-one is expected to have in certain communities and we will present examples
-below.
-...
-The kind of result we wish to discuss, i.e. the kind of result whose proof cannot be traced
-in the literature, thus seems to be a special kind of folk theorem for which we propose
-the term “ghost theorem”; these theorems are immaterial in the sense that they are not
-proven in the literature yet they “haunt” parts of daily mathematical life.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;They highlight ghost theorems as a particular source of &lt;em&gt;epistemic injustice&lt;/em&gt; against people trying to participate in mathematics as an epistemic community.
-They focus on an example of someone trying to get some results published, and having them be rejected because they were ghost theorems - even though their submission had never been published, it was "obvious".
-I think it would still have been an injustice of sorts without that gatekeeping,
-because presumably these results are useful, and there is no way to discover them without privileged access to the community.
-As someone who does a lot of solo reading in a variety of fields,
-a kind of &lt;a href="https://fanlore.org/wiki/Feral_(glossary_term)"&gt;feral fan&lt;/a&gt; for a variety of academic disciplines,
-this is an injustice that particularly matters to me:
-There are probably many things that are &lt;em&gt;completely obvious&lt;/em&gt; if you've been trained in, say, phenomenology,
-that I as an outsider will never discover no matter how much of the literature on the subject I read.&lt;/p&gt;
-
-
-&lt;p&gt;I'd like to call the more general phenomenon that this is a specific instance of this "ghost knowledge":
-It is knowledge that is present &lt;em&gt;somewhere&lt;/em&gt; in the epistemic community, and is perhaps readily accessible to some central member of that community,
-but it is not really written down anywhere and it's not clear how to access it.
-Roughly what makes something ghost knowledge is two things:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;It is readily discoverable if you have trusted access to expert members of the community.&lt;/li&gt;
-&lt;li&gt;It is almost completely inaccessible if you are not.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;In this sense, &lt;em&gt;most&lt;/em&gt; knowledge is ghost, particularly if you take an expansive view of what counts as an epistemic community.&lt;/p&gt;
-
-
-&lt;p&gt;A recent (more recent than the publishing of this paper) related example was "Eigenvectors from Eigenvalues: a survey of a basic identity in linear algebra" by Denton, Parke, Tao, and Zhang.
-A couple of physicists found an interesting (to them, and apparently to others who care about such things, I confess I find it too technical to be interesting - I understand the mathematics well enough but don't work in this field so have a differently tuned sense of interest).
-The story of this as I understand it is roughly:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;A bunch of physicists discovered an interesting and, apparently, novel identity.&lt;/li&gt;
-&lt;li&gt;They emailed Terence Tao and he almost immediately was able to provide multiple proofs of it.&lt;/li&gt;
-&lt;li&gt;They published a paper together.&lt;/li&gt;
-&lt;li&gt;It got a lot of press because Terence Tao is something of a big deal and discovering a new result in such a mature field is surprising.&lt;/li&gt;
-&lt;li&gt;Turns out it was actually a result that was not so much "well known" as repeatedly rediscovered in myriad different places, but had never made a splash before.&lt;/li&gt;
-&lt;li&gt;They wrote a new survey paper about this.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;If you look at only parts (1-3) this is a perfect example of ghost knowledge.
-But &lt;em&gt;the result already existed in the literature&lt;/em&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;To quote a great philosopher:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;“But the plans were on display…”
-“On display? I eventually had to go down to the cellar to find them.”
-“That’s the display department.”
-“With a flashlight.”
-“Ah, well, the lights had probably gone.”
-“So had the stairs.”
-“But look, you found the notice, didn’t you?”
-“Yes,” said Arthur, “yes I did. It was on display in the bottom of a locked filing cabinet stuck in a disused lavatory with a sign on the door saying ‘Beware of the Leopard.”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;It is very often the case that even when knowledge &lt;em&gt;is&lt;/em&gt; written down somewhere, it's nearly impossible to find it.
-This has happened to me in mathematics before:
-A friend and I once discovered a result that we thought was very interesting (under certain conditions, the best possible continuous approximation to a discontinuous fucntion exists), only to eventually discover that the result &lt;em&gt;was&lt;/em&gt; known, it had just been published in an obscure mathematical journal, in the 1970s, in Poland,
-so virtually nobody knew about it.
-Fortunately we had never put in much serious effort into trying to publish it before discovering that (honestly we probably should have, but neither of us were professional mathematicians by that point),
-but it was still annoying.&lt;/p&gt;
-
-
-&lt;p&gt;The core problem that causes all of this is that there's a leaky pipeline of knowledge from epistemic communities to the outside world.
-In order for you to discover a piece of knowledge:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;It has to be interesting enough for someone to think it is worth writing down.&lt;/li&gt;
-&lt;li&gt;It has to be interesting enough that it gets accepted (though if not, it may end up on a random blog post if you're lucky).&lt;/li&gt;
-&lt;li&gt;It has to be interesting or well organised enough that it gets surfaced in a way you can find.&lt;/li&gt;
-&lt;li&gt;It has to be accessible enough for you to be able to find it (e.g. it can't use super technical terms that you'll have no way to ever discover without access to an expert).&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;This pipeline is leaky enough that it would be very surprising if &lt;em&gt;most&lt;/em&gt; knowledge produced by an epistemic community were accessible to you.&lt;/p&gt;
-
-
-&lt;p&gt;This may not seem like a big deal when you think of communities like mathematics, where most consumers of its contents are also members of the community, but it's a big deal when you consider two things:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;&lt;em&gt;Everything&lt;/em&gt; is like this, including subjects that everyone would benefit from. I read a lot of therapy books for example and I'll bet that there's at least two orders of magnitude more ghost knowledge about therapy than I have access to.&lt;/li&gt;
-&lt;li&gt;Every community is an epistemic community. Many lessons are e.g. learned over and over again inside companies, and are never written down anywhere, or when they are are so defanged that nobody can benefit from them. The pipeline is different, but the problem is the same.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;Given this, we are surrounded by ghosts:
-The information that is written down and that we can access is so thin on the ground compared to what's actually out there,
-it's astonishing that we ever get anything done.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-02-16-14:22.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-02-17-09:56.html</id>
     <title>Coevolution and the bad take machine</title>
@@ -702,7 +567,7 @@ there's this long chain of connections, and updates in one place might inform up
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-02-25-10:39.html</id>
     <title>How to make decisions</title>
-    <updated>2020-02-25T10:39:00+00:00</updated>
+    <updated>2020-02-25T11:18:14+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;How to make decisions&lt;/p&gt;
@@ -784,5 +649,62 @@ If the decision doesn't matter much, just pick something, more or less at random
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-02-25-10:39.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-02-26-16:07.html</id>
+    <title>The fastest way to learn something is to do something</title>
+    <updated>2020-02-26T16:07:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;The fastest way to learn something is to do something&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-02-26&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Suppose you have a problem to solve. What do you do?&lt;/p&gt;
+
+
+&lt;p&gt;Well, you sit down and think real hard,
+and after extensive and careful planning you try the well thought out and rigorous solution that you have thought up.
+Right?&lt;/p&gt;
+
+
+&lt;p&gt;No, wrong! Bad.&lt;/p&gt;
+
+
+&lt;p&gt;The correct thing to do when you have a problem is:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Think for a &lt;em&gt;short&lt;/em&gt; amount of time.&lt;/li&gt;
+&lt;li&gt;Make sure it is safe to try things.&lt;/li&gt;
+&lt;li&gt;Try something you think will work.&lt;/li&gt;
+&lt;li&gt;Observe the result.&lt;ul&gt;
+&lt;li&gt;If you succeeded, yay you solved the problem!&lt;/li&gt;
+&lt;li&gt;If it didn't work, think about what that means for the nature of the problem and try again.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;Every attempt to solve the problem is an opportunity to learn about the nature of the problem,
+and the nature of the tools you can use for solving problems in general.
+It will often teach you &lt;em&gt;significantly&lt;/em&gt; more than either sitting and thinking about the problem or trying a less directed experiment will.&lt;/p&gt;
+
+
+&lt;h3&gt;Caveats&lt;/h3&gt;
+
+
+&lt;p&gt;Obviously there is a place for learning about things that is less connected to a specific problem (given the number of books I read for general interest I would be a hypocrite to claim otherwise). Additionally, some problems are not well suited to this because e.g. They are high risk or they are long cycle time, but even then there will usually be subproblems like this.&lt;/p&gt;
+
+
+&lt;p&gt;The reason this is quite as strident as it is is as a necessary corrective to a tendency that most people have to overplan and get too hung up on finding the "right" solution. The lessons on &lt;a href="https://notebook.drmaciver.com/posts/2020-02-25-10:39.html"&gt;cost of decision making&lt;/a&gt; apply in spades to solving problems.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-02-26-16:07.html" rel="alternate"/>
   </entry>
 </feed>
