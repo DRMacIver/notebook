@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-02-26T16:07:00+00:00</updated>
+  <updated>2020-02-27T17:48:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,103 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-02-17-09:56.html</id>
-    <title>Coevolution and the bad take machine</title>
-    <updated>2020-02-17T10:23:48+00:00</updated>
-    <content>
-
-&lt;p class="subtitle"&gt;Coevolution and the bad take machine&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-02-17&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;This may come as a surprise to you, but there are some people on Twitter whose tweets are &lt;em&gt;really bad&lt;/em&gt;.
-I don't just mean that they're not very good, I mean that their tweets are so bad that it feels like they sat down and twirled a metaphorical moustache and went "I wonder how I can make the most people mad today?".
-I have three particular examples in mind, but I'm sure you can come up with hundreds more.&lt;/p&gt;
-
-
-&lt;p&gt;Why are they like this?
-Two reasons, basically:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;They want to be.&lt;/li&gt;
-&lt;li&gt;We've trained them to be good at it.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;The first I feel should be obvious: If this level of negative response doesn't deter them,
-it's clear that they must be getting something out of it. Either they enjoy the negative reaction (annoying people is funny), they feel like they're "sparking important debate", or some other reason.
-At the very least if they found the reactions unpleasant they would have learned to stop doing this.
-It's mostly smart people doing it after all.&lt;/p&gt;
-
-
-&lt;p&gt;For the second... lets talk about evolution.&lt;/p&gt;
-
-
-&lt;p&gt;Life makes more sense when you view a lot of the world as systems of replicating patterns:
-Patterns mutate, successful patterns get copied, unsuccessful patterns die off,
-and the shape of the world is patterned after what worked,
-for a value of worked that means nothing more than "was able to replicate itself".
-We tend to talk about these patterns as "replicators", as if they were concrete things that reproduced themselves,
-and I will use that terminology, but I find thinking of them in terms of patterns is more helpful.&lt;/p&gt;
-
-
-&lt;p&gt;Genes are the classic replicator, but there are many others.
-Memes in the Dawkins sense (Dawkins-memes) are another, as are memes in the modern sense (cat-memes).
-Cat-memes are both driven by and drive Dawkins-memes, which is an important example of coevolution:
-We can look at cat-memes as replicators in their own right (cat-memes are copied and modified and selected for),
-but their replication will make much more sense when we consider the Dawkins-memes.
-The replication has a significant loop where Cat-memes replicate partly by generating Dawkins-memes which replicate and generate more cat-memes.&lt;/p&gt;
-
-
-&lt;p&gt;This is an oversimplified view of the process that ignores many important details and other loops,
-but I think it is still an illuminating one.&lt;/p&gt;
-
-
-&lt;p&gt;These coevolutionary processes are common. Culture and genes are another one:
-e.g. consider lactose tolerance. Lactose tolerance is widespread in the west,
-because of the coevolution of dairy farming techniques (culture) and genetics (the ability to consume milk as an adult without getting very ill).
-Each replicator drives the other.&lt;/p&gt;
-
-
-&lt;p&gt;Another replicator is &lt;em&gt;behaviour&lt;/em&gt;.
-We typically model our behaviour on past behaviours of ours (new behaviours can of course be introduced, but most behaviour is derived from past behaviour).
-When a behaviour goes well, we do it more, when it goes badly, we do it less. This is classic &lt;a href="https://en.wikipedia.org/wiki/Operant_conditioning"&gt;operant conditioning&lt;/a&gt;, the thing with the salivating dogs, viewed as an evolutionary process.&lt;/p&gt;
-
-
-&lt;p&gt;Another thing that counts as a replicator is "things people are talking about on Twitter".
-People talk about stuff, so others engage with it, or find out what's going on and talk about it too, etc.
-So tweets are a replicator.&lt;/p&gt;
-
-
-&lt;p&gt;So when you have a bad take machine, you get the following processes:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;They make a bad take.&lt;/li&gt;
-&lt;li&gt;People are outraged and talk about it.&lt;/li&gt;
-&lt;li&gt;The bad take machine likes it and does more of that behaviour in future.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;If, on the other hand, they make a take and nobody cares, they do not get reward and the behaviour is selected against.&lt;/p&gt;
-
-
-&lt;p&gt;The behaviours drove the spread of the outrage replicator, and the outrage replicator provides the selection mechanism for the behaviours.
-Thus, via the spread of our outrage on Twitter, we have operant conditioned the bad take machine into producing worse takes.&lt;/p&gt;
-
-
-&lt;p&gt;Which is to say, it's bad on purpose to make you replicate it.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-02-17-09:56.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-02-18-12:24.html</id>
     <title>Extracts from "How to talk about books you haven't read"</title>
@@ -653,7 +556,7 @@ If the decision doesn't matter much, just pick something, more or less at random
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-02-26-16:07.html</id>
     <title>The fastest way to learn something is to do something</title>
-    <updated>2020-02-26T16:07:00+00:00</updated>
+    <updated>2020-02-26T16:22:35+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;The fastest way to learn something is to do something&lt;/p&gt;
@@ -706,5 +609,43 @@ It will often teach you &lt;em&gt;significantly&lt;/em&gt; more than either sitt
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-02-26-16:07.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-02-27-17:48.html</id>
+    <title>Supersaturation of knowledge</title>
+    <updated>2020-02-27T17:48:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Supersaturation of knowledge&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-02-27&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;There's something interesting that happens when you read at the rate that I do.&lt;/p&gt;
+
+
+&lt;p&gt;You might expect that the amount of knowledge you get out of reading scales linearly with the rate you read,
+and in some sense this is true, but there is a major qualitative change that happens to me once I start reading fast enough (multiple books a week, ideally related), and the metaphor I use for this is &lt;em&gt;supersaturation&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Supersaturation is when you have more solute dissolved in a solution than is strictly supposed to be there at the current temperature.
+It's a very unstable state - if you add a bit more of the dissolved substance, give it a sharp tap, or sometimes just look at it funny, suddenly you get a huge crystal formation. It's pretty cool, and yet for some reason all the youtube videos about it are &lt;em&gt;incredibly&lt;/em&gt; bad, so I can't link you to a demo. Take my word for it though.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, the thing about reading at a high rate is that it feels like it creates supersaturation in my brain.
+Knowledge is coming in faster than it is getting banked into longer term memory and I'm still thinking about them, so I have all of these ideas that are still floating around in easy reach of eachother, until my brain feels "full" and there are too many related concepts that I'm thinking about.&lt;/p&gt;
+
+
+&lt;p&gt;And what happens then sometimes is that the right event or piece of information triggers a thought and suddenly everything connects up together and my brain fills up with new and exciting thoughts as I realise that &lt;a href="https://notebook.drmaciver.com/posts/2020-02-24-10:37.html"&gt;everything is connected&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Things like the model described in &lt;a href="https://notebook.drmaciver.com/posts/2020-02-20-09:31.html"&gt;emotional reactions as legacy code&lt;/a&gt; are the type of thing that come out of this, as are a number of recent helpful therapeutic realisations reading about discomfort tolerance and similar that I may write about in a future notebook post.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-02-27-17:48.html" rel="alternate"/>
   </entry>
 </feed>
