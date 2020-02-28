@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-02-27T17:48:00+00:00</updated>
+  <updated>2020-02-28T06:33:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,112 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-02-18-12:24.html</id>
-    <title>Extracts from "How to talk about books you haven't read"</title>
-    <updated>2020-02-18T13:07:20+00:00</updated>
-    <content>
-
-&lt;p class="subtitle"&gt;Extracts from "How to talk about books you haven't read"&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-02-18&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I'm a big fan of Pierre Bayard's "How to talk about books you haven't read".
-I've even read it twice (insert witty joke about title here).&lt;/p&gt;
-
-
-&lt;p&gt;Unfortunately, it is written exactly like you would expect nonfiction written by someone who specialises in literature to be written:
-Badly.&lt;/p&gt;
-
-
-&lt;p&gt;This isn't entirely fair. The quality of the writing is excellent. The problem with it is written to tell a story,
-but in fact it is a book that is trying to teach you something.
-This makes it a pleasure to read, but a pain to actually use because every time you go back to it you need to hunt through it to find the bits you want because there is no goddamn index and the crucial terms are introduced embedded halfway through a story.&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, I've hunted down these terms enough times that I thought I'd just write them down.
-So I thought I'd write a note about the three types of representations of a book that Bayard talks about.
-Page numbers all refer to my copy, so yours might not be the same, sorry.&lt;/p&gt;
-
-
-&lt;h3&gt;Three types of library&lt;/h3&gt;
-
-
-&lt;h4&gt;Collective Library (p. 12)&lt;/h4&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Most statements about a book are not about the book itself, despite appearances, but about the larger set of books on which our culture depends at that moment. It is that set, which I shall henceforth refer to as the collective library, that truly matters, since it is our mastery of this collective library that is at stake in all discussions about books. But this mastery is a command of relations, not of any book in isolation, and it easily accommodates ignorance of a large part of the whole.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;h4&gt;Inner Library (p. 73)&lt;/h4&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;We might use the term inner library to characterize that set of books—a subset of the collective library—around which every personality is constructed, and which then shapes each person’s individual relationship to books and to other people. Specific titles figure in these private libraries, but, like Montaigne’s, they are primarily composed of fragments of forgotten and imaginary books through which we apprehend the world.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;h4&gt;Virtual Library (p. 125)&lt;/h4&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;The third type of library that I am introducing here, the virtual library, is the realm in which books are discussed, in either written or oral form, with other people. It is a mobile sector of every culture’s collective library and is located at the point of intersection of the various inner libraries of each participant in the discussion.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;h3&gt;Three types of book&lt;/h3&gt;
-
-
-&lt;h4&gt;Screen books (p. 44)&lt;/h4&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Freud uses the term screen memory to designate false or insignificant childhood memories whose function is to conceal others less acceptable to the conscious mind.&lt;/p&gt;
-&lt;p&gt;...&lt;/p&gt;
-&lt;p&gt;...the books we talk about are only glancingly related to "real" books - indeed what else would we expect? - and are often no more than screen books. Or, if you prefer, what we talk about is not the books themselves, but substitute objects we create for the occasion.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;h4&gt;Inner books (p. 83)&lt;/h4&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;I propose the term &lt;em&gt;inner book&lt;/em&gt; to designate the set of mythic representations, be they collective or individual, that come between the reader and any new piece of writing, shaping his reading without realizing it. Largely unconscious, this imaginary book acts as a filter and determines the reception of new texts by selecting which of its elements will be retained and how they will be interpreted.&lt;/p&gt;
-&lt;p&gt;...&lt;/p&gt;
-&lt;p&gt;The second of three "books" studied in this essay, the &lt;em&gt;inner&lt;/em&gt; book influences all the transformations to which we subject books, turning htem into &lt;em&gt;screen books&lt;/em&gt;. The term &lt;em&gt;inner book&lt;/em&gt; appears in Proust with a meaning close to the one I am giving it: "As for the inner book of unknown symbols (symbols carved in relief they might have been, which my attention, as it explored my unconscious, groped for and stumbled against and followed the contorus of, like a diver exploring the ocean-bed), if I tried to read them, no one could help me with any rules, for to read them was an act of creation in which no one can do our work for us or even collaborate with us [...] This book, more laborious to decipher than any other, is also the only one which has been dictated to us by reality, the only one of which the 'impression' has been printed in us by reality itself"&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;h4&gt;Phantom books (p. 160)&lt;/h4&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;The third type of book I am introducing here, the &lt;em&gt;phantom book&lt;/em&gt;, is that mobile and ungraspable object that we will call into being, in writing or in speech, when we talk about a book. It is located at the point where readers' various &lt;em&gt;screen books&lt;/em&gt; meet - screen books that reads have constructed based on their &lt;em&gt;inner books&lt;/em&gt;. The phantom book belongs to the virtual library of our exchanges, as the screen book belongs to the collective library and the inner book belongs to the inner library.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;h3&gt;Thoughts on the book overall&lt;/h3&gt;
-
-
-&lt;p&gt;I really like this book but am also very frustrated by it.
-I might have to read it a third time to get it out of my head,
-at which point I will attempt to turn it into some essays.&lt;/p&gt;
-
-
-&lt;p&gt;The source of my frustration is that it is a very good book,
-and it achieves its purpose in a way that a more technical essay of its nature would not have I feel,
-but I &lt;em&gt;really&lt;/em&gt; wish that technical essay also existed, and I don't want to have to be the one to write it.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-02-18-12:24.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-02-19-10:37.html</id>
     <title>Books by writers are the worst</title>
@@ -613,7 +507,7 @@ It will often teach you &lt;em&gt;significantly&lt;/em&gt; more than either sitt
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-02-27-17:48.html</id>
     <title>Supersaturation of knowledge</title>
-    <updated>2020-02-27T17:48:00+00:00</updated>
+    <updated>2020-02-27T18:56:35+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Supersaturation of knowledge&lt;/p&gt;
@@ -647,5 +541,62 @@ Knowledge is coming in faster than it is getting banked into longer term memory 
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-02-27-17:48.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-02-28-06:33.html</id>
+    <title>Culture is deeply contingent</title>
+    <updated>2020-02-28T06:33:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Culture is deeply contingent&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-02-28&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;This is an example I got from &lt;a href="https://twitter.com/DavidRickmann/"&gt;Dave&lt;/a&gt; recently which I thought perfectly illustrated something I've been thinking about on and off for a while, and was most recently prompted to think about in depth by ]The Origins of Unfairness](https://twitter.com/DRMacIver/status/1228233781317734401).&lt;/p&gt;
+
+
+&lt;p&gt;When you are walking down the street and someone is coming towards you, do you step left or right?&lt;/p&gt;
+
+
+&lt;p&gt;Well, obviously you step right.&lt;/p&gt;
+
+
+&lt;p&gt;...of course, I would say that. I'm a Londoner. If you're from a different city and you are visiting London (or, theoretically, if I were visiting your city, but as I said I'm a Londoner, we don't actually leave London).&lt;/p&gt;
+
+
+&lt;p&gt;It turns out that which direction you step is a strong cultural norm that varies from city to city. Different cities pick different directions to step in, and it doesn't really matter which you pick as long as you all pick the same one, and because most interactions are within-city there's no strong pressure to conform between cities.&lt;/p&gt;
+
+
+&lt;p&gt;A decent lens to look at this through is evolutionary game theory. Everyone is adopting a mixed strategy where they step right with some probability \(p\).
+When two people interact, if they both step the same way they reinforce the decision to step that way (increase \(p\) if they both step right, decrease it if they both step left), otherwise they move towards stepping the other way (the opposite). This is of course a toy model, but it captures the idea pretty well.&lt;/p&gt;
+
+
+&lt;p&gt;If you look at the population average of \(p\), the chance that a randomly selected person will step right, what you find is that under these dynamics there are three points of equilibrium, that is points where this average remains constant over time: \(p = 0\), \(p = 1\), \(p = \frac{1}{2}\).
+However, these three are not created equal:
+The \(p = \frac{1}{2}\) point has two crucial features that the others lack: 1) It's much worse. People are miscuing about half the time, and everyone gets annoyed. 2) It's unstable. Although it's an equilibrium point, if you perturb it even slightly (e.g. \(p = 0.5000001\)) the value will tend to shift away over time, eventually ending up at whichever of \(p = 0\) or \(p = 1\) is on that side (this isn't quite true - if you're close enough to \(\frac{1}{2}\) randomness can cause you to switch which side you're on and oscillate for a bit, but eventually you get far enough away and from then on it's essentially a done deal).
+As a result, what happens is that essentially arbitrary starting conditions get amplified into one of two simple deterministic states, where everyone adopts the same convention.&lt;/p&gt;
+
+
+&lt;p&gt;An important feature of this model is that this is &lt;em&gt;only&lt;/em&gt; true in interacting populations, which is why we see different effects in different cities. There's no reason to expect people to pick the same left/right convention if they don't interact, because the convention is entirely arbitrary and has no significance except to be the same as everyone else's. Where people don't interact, they likely create different norms, because the norm is the result of a mix of evolutionary pressure on the strategies and the entirely arbitrary starting point they happened to be in.&lt;/p&gt;
+
+
+&lt;p&gt;A lot of culture is like this. It exists not because of any particularly good reason, but because you needed to do &lt;em&gt;something&lt;/em&gt; and this is where you happened to end up. If culture is the way we do things around here, culture is by necessity deeply contingent.&lt;/p&gt;
+
+
+&lt;p&gt;Two consequences of this that matter:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;When you join a new culture, expect a lot of things to be different than you expect for no particularly good reason except that's how they happened to pan out here.&lt;/li&gt;
+&lt;li&gt;If you want to change a culture, think in terms of the evolutionary aspects of it. You might be able to do it by just shaking things up and letting it slide into a new equilibrium, but this only works if there's an equilibrium where you want to be. Fighting the adaptation pressure is a losing game.&lt;/li&gt;
+&lt;/ol&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-02-28-06:33.html" rel="alternate"/>
   </entry>
 </feed>
