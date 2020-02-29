@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-02-28T07:09:13+00:00</updated>
+  <updated>2020-02-29T10:30:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,51 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-02-19-10:37.html</id>
-    <title>Books by writers are the worst</title>
-    <updated>2020-02-19T11:46:02+00:00</updated>
-    <content>
-
-&lt;p class="subtitle"&gt;Books by writers are the worst&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-02-19&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;One of the big problems with being good at writing is that it makes you think that your writing is good,
-but this is unfortunately not the case.&lt;/p&gt;
-
-
-&lt;p&gt;This is a problem I run into particularly with people who have "writer" as part of their identity.
-Often they are very good at writing, so are entirely justified in this identity claim, which is why they write really badly.&lt;/p&gt;
-
-
-&lt;p&gt;The basic problem is that &lt;em&gt;writing is communication&lt;/em&gt;, and at some point what you're bottlenecked on in the quality of your writing is not actually the quality of your writing, but the quality of your communication, and because people think "I'm a writer so all I need to do is write well and the writing is good" they overfocus on things that are no longer the rate limiting factor.&lt;/p&gt;
-
-
-&lt;p&gt;In particular, the two skills that I often see writers &lt;em&gt;utterly&lt;/em&gt; failing at are clarity of explanation and organisation of information.&lt;/p&gt;
-
-
-&lt;p&gt;Here are some sins I regularly see nonfiction books by writers fall into:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Being very sloppy about how they introduce terms. The terms are casually introduced in the middle of a paragraph, as if the reader should obviously understand what they mean, without examples or any real clear delineation of how they are supposed to be used.&lt;/li&gt;
-&lt;li&gt;Not organising their book for nonlinear reading. In particular, not organising their book for rereading.&lt;/li&gt;
-&lt;li&gt;A particularly egregious sin in (2) is bad indexing.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;You saw some of this whinging in the post about &lt;a href="https://notebook.drmaciver.com/posts/2020-02-18-12:24.html"&gt;How to talk about books you haven't read&lt;/a&gt;.
-I think in general this is a common problem: Writers experienced in fiction really don't have the skillset for writing nonfiction by default (and vice versa!). Frequently they are great essayists anyway, because the essay is a format much more forgiving of these sins, but they've concluded that all book writing is the same and not bothered to confront how it's different.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-02-19-10:37.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-02-20-09:31.html</id>
     <title>Emotional reactions as legacy code</title>
@@ -545,7 +500,7 @@ Knowledge is coming in faster than it is getting banked into longer term memory 
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-02-28-06:33.html</id>
     <title>Culture is deeply contingent</title>
-    <updated>2020-02-28T07:09:13+00:00</updated>
+    <updated>2020-02-28T07:10:27+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Culture is deeply contingent&lt;/p&gt;
@@ -598,5 +553,75 @@ As a result, what happens is that essentially arbitrary starting conditions get 
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-02-28-06:33.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-02-29-10:30.html</id>
+    <title>The social obligation to be bad at things</title>
+    <updated>2020-02-29T10:30:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;The social obligation to be bad at things&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-02-29&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;A thing I got pissed off at a while ago was reactions to someone talking about having weekly one-on-ones with his wife.
+&lt;a href="https://twitter.com/DRMacIver/status/1141648249255686144"&gt;My thread about it&lt;/a&gt; went as follows:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;I honestly think this sounds like a pretty good idea - structured communication is great, and better communication with partners is also great. Even if it turns out not to work, it's something that seems at least reasonable to try.&lt;/p&gt;
+&lt;p&gt;Regardless of whether it's good or not, I'm actually pretty pissed off at everyone who has been making fun of it. I am very much not here for your mocking someone's attempts to improve their communication in their relationships because you think the way they're doing it is weird.&lt;/p&gt;
+&lt;p&gt;And yes it's framed in a very business speak language. So what? Person in taking valuable communication skills learned in one context and seeing if they can use them to make other communication in their life better shocker!&lt;/p&gt;
+&lt;p&gt;I don't know the OP and I don't know if the way they are handling their romantic relationship(s) is healthy and productive, but what you're doing is making fun of people for being a different sort of weird than the one you approve of and it's not a good look&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;I was at a &lt;a href="http://www.liberatingstructures.com/"&gt;liberating structures&lt;/a&gt; event recently,
+and one of the people I was working with related an anecdote in which he tried a party game as an ice breaker.
+Many of those are cringe, but this one sounded fun and inoffensive (it was a sentence continuation game where each person said a word following on from a previous one, in an attempt to construct something that sounded like an aphorism).
+Most people were reluctant initially but got into the swing of things, but a few people just dug their heels in and would not engage properly with it because of concern over looking weird.&lt;/p&gt;
+
+
+&lt;p&gt;But trying something new, or in a different context, is always going to look weird.&lt;/p&gt;
+
+
+&lt;p&gt;When someone tries to do something good and we don't think it's the right thing, we punish them.
+When someone tries to do something and fails, we laugh at them.
+This means that if you want to avoid punishment the only way is to not try until you are certain that you are doing the right thing and will succeed at it, but &lt;a href="https://notebook.drmaciver.com/posts/2020-02-26-16:07.html"&gt;the fastest way to learn something is to try something&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;When you say you are good at something, that's arrogant. When you say you're bad at something, people tell you that you're not, or treat it as weakness. This makes it very hard to talk honestly about how good you are about things,
+and people are very bad at judging how good they are at things so it's very hard to know how good you are without talking about it.
+Unfortunately, self-knowledge of your own abilities is also essential for getting good at it.&lt;/p&gt;
+
+
+&lt;p&gt;If, despite all of this, you succeed, we put you on a pedestal, and worship you, and then as soon as you inevitably turn out to be a flawed human being like everyone else,
+we tear you down and destroy you.&lt;/p&gt;
+
+
+&lt;p&gt;So to recap:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;You will be punished for trying new things.&lt;/li&gt;
+&lt;li&gt;You will be punished for trying things that don't work.&lt;/li&gt;
+&lt;li&gt;You will be punished for trying to understand how good you are at something.&lt;/li&gt;
+&lt;li&gt;You will be punished for succeeding.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;If I sat down and tried to design a set of social norms for discouraging people from being their best selves,
+I honestly don't think I could have done a better job than this.&lt;/p&gt;
+
+
+&lt;p&gt;Why don't we want people to be good at things?&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-02-29-10:30.html" rel="alternate"/>
   </entry>
 </feed>
