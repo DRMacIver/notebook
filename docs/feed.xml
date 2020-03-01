@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-03-01T08:04:00+00:00</updated>
+  <updated>2020-03-01T09:10:22+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -556,11 +556,11 @@ I honestly don't think I could have done a better job than this.&lt;/p&gt;
   </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-01-08:04.html</id>
-    <title>All voting is nondeterministic</title>
-    <updated>2020-03-01T08:04:00+00:00</updated>
+    <title>There are no deterministic voting systems</title>
+    <updated>2020-03-01T09:10:22+00:00</updated>
     <content>
 
-&lt;p class="subtitle"&gt;All voting is nondeterministic&lt;/p&gt;
+&lt;p class="subtitle"&gt;There are no deterministic voting systems&lt;/p&gt;
 
 
 &lt;dl class="metadata"&gt;
