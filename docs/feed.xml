@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-03-01T09:10:22+00:00</updated>
+  <updated>2020-03-02T09:31:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,71 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-02-21-10:04.html</id>
-    <title>Constraints on skill growth</title>
-    <updated>2020-02-21T10:53:19+00:00</updated>
-    <content>
-
-&lt;p class="subtitle"&gt;Constraints on skill growth&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-02-21&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Previously:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.drmaciver.com/2019/05/how-to-do-hard-things/"&gt;How to do hard things&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.drmaciver.com/2014/07/programming-and-mathematics/"&gt;Why mathematics makes you better at programming (and so does everything else)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;Have you noticed how when you first start learning a skill, you rapidly get better at it?
-Then, after a while of that rapid growth, you start to plateau. You've seemingly picked all the low hanging fruit and are no longer improving.
-Why is that?&lt;/p&gt;
-
-
-&lt;p&gt;Well there probably isn't any one reason, and some of it is legitimately the low hanging fruit problem - some ways of getting better at a skill are easier than others, and once you've done all of those things you're left with the hard ones - but I'd like to suggest one reason that I think is underappreciated.
-It's because you've hit a &lt;em&gt;constraint&lt;/em&gt;, and the skill you are practicing does not give you a good feedback loop for improving on that constraint.&lt;/p&gt;
-
-
-&lt;p&gt;The theory of constraints is a management philosophy thing.
-It is the very obvious common sense idea (which is to say that it's an idea that in the moment people find completely nonobvious and never think of): If something isn't where the bottleneck is, it doesn't matter how much better you make it.
-e.g.~it doesn't matter if you improve your widget production if the distribution system can't keep up with the new number of widgets.&lt;/p&gt;
-
-
-&lt;p&gt;This is true for skills too and ties in to a problem I talked about in &lt;a href="https://notebook.drmaciver.com/posts/2020-02-19-10:37.html"&gt;Books by writers are the worst&lt;/a&gt;.
-If the quality of your written works is bottlenecked on communication skills, it doesn't matter how much you improve your writing skills your books are just not going to get much better.&lt;/p&gt;
-
-
-&lt;p&gt;Skills are generally improved by tight feedback loops, and often simply using the skill to achieve your goals is not a very tight feedback loop for the particular aspect of it you are constrained on,
-because there's so much else going on that it makes the feedback loop very slow.&lt;/p&gt;
-
-
-&lt;p&gt;To continue the writing example, say you want to improve your communication skills.
-You &lt;em&gt;could&lt;/em&gt; write more books in order to practice that, but writing a book takes a very long time.
-You don't necessarily have that many books in you.
-You could instead practice these skills by writing essays,
-or even by having conversations with people on Twitter or in person.&lt;/p&gt;
-
-
-&lt;p&gt;This is the point I made in "why mathematics makes you better at programming": Different subjects and tasks give different feedback loops on different aspects of skill,
-so often the best way to get good at a skill is to practice a different but related skill.&lt;/p&gt;
-
-
-&lt;p&gt;Additionally, sometimes constraints are hidden from you.
-Often the constraint on a skill is anxiety management, or discomfort tolerance,
-or one of various other things that you don't even really think of as skills you can get better at.
-Sometimes the best way to unconstrain yourself are to go and do something &lt;em&gt;completely&lt;/em&gt; different which force you to confront that.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-02-21-10:04.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-02-22-11:37.html</id>
     <title>You should try bad things</title>
@@ -557,7 +492,7 @@ I honestly don't think I could have done a better job than this.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-01-08:04.html</id>
     <title>There are no deterministic voting systems</title>
-    <updated>2020-03-01T09:10:22+00:00</updated>
+    <updated>2020-03-01T09:15:01+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;There are no deterministic voting systems&lt;/p&gt;
@@ -652,5 +587,80 @@ What I want to do by pointing this out is to shift the argument from "Is nondete
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-03-01-08:04.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-03-02-09:31.html</id>
+    <title>Legibility as a relationship</title>
+    <updated>2020-03-02T09:31:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Legibility as a relationship&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-03-02&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;An idea that has been fairly foundational to my thinking is &lt;em&gt;legibility&lt;/em&gt;, an idea introduced in James Scott's "Seeing Like a State". &lt;a href="https://www.ribbonfarm.com/2010/07/26/a-big-little-idea-called-legibility/"&gt;Venkatesh Rao's introduction&lt;/a&gt; is probably where you need to go if you're not familiar with it. I've also &lt;a href="https://www.drmaciver.com/2017/11/shaping-the-world/"&gt;previously given a talk about it&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;I've written a bit (&lt;a href="https://notebook.drmaciver.com/posts/2019-06-04-09:58.html"&gt;notes on the legibility war&lt;/a&gt;, &lt;a href="https://notebook.drmaciver.com/posts/2020-02-23-09:37.html"&gt;legibility privileges&lt;/a&gt;) about how legibility interacts with identity, privilege, etc. What you might not have noticed in these posts is that I was using the concept "wrong".
+I think my usage is better than the original, so I'd like to expand on it a bit.&lt;/p&gt;
+
+
+&lt;p&gt;In my usage, illegibility is the amount of work required for the entity to understand the system - a highly legible system is one that is low effort to understand.
+Legibility is that which streamlines things and makes the system low effort to understand.&lt;/p&gt;
+
+
+&lt;p&gt;The thing about how the concept is originally used is that it treats legibility as a property of the system,
+but it's not. Legibility is a property of the &lt;em&gt;relationship between the system and some entity&lt;/em&gt;.
+A thing is not legible or illegible in and of itself,
+it's legible or illegible to someone (or something - a government, a company, etc).&lt;/p&gt;
+
+
+&lt;p&gt;A useful analogy might be attractiveness.
+Attractiveness is at a fairly fundamental level attractiveness to someone in particular,
+but it still makes sense to talk about someone being more or less attractive.
+People can be more or less attractive in some "objective" sense, but all that really means is that there are as many different notions of attractiveness as there are people, but there are a number of strong correlations between those different notions.
+These correlations will depend strongly on local norms, and less but still strongly on a few universals,
+but there will also be a huge amount of individual variation and you cannot really understand attractiveness without paying attention to that variation.&lt;/p&gt;
+
+
+&lt;p&gt;Scott's work is a piece of anarchist theory, so he's particularly interested in the legibility of the relationship between a single large and powerful entity (perhaps a large company, but more ordinarily a state) and many comparatively powerless individuals, but equally important (especially to marginalised people) is the power individuals exert over each other, and focusing on legibility as a relationship.&lt;/p&gt;
+
+
+&lt;p&gt;The important point in Scott's work on legibility is that when we couple understanding to power,
+we force the world to become more legible to us through our attempts to control it.&lt;/p&gt;
+
+
+&lt;p&gt;A good example of this is the standardisation of weights and measures.
+Prior to standardisation, there were a large number of local weights and measures with each village (and often each individual merchant!) using their own, but the government imposed a single unified standard so that, among other reasons, they could tax things properly (this is often the reason for government's imposing legibility).&lt;/p&gt;
+
+
+&lt;p&gt;Importantly, no individual choice of weights or measures was more or less legible than any other.
+The thing that created the illegibility was that people using different standards were not mutually intelligible to eachother without additional work. You can translate, but you &lt;em&gt;have&lt;/em&gt; to translate if you want to become mutually understood.
+Because the government was interacting with many more of these local standards, the cost of translation was &lt;em&gt;much&lt;/em&gt; higher (to the point of being almost impossible), and their ability to impose their own standards was also much higher,
+so standardisation happened.&lt;/p&gt;
+
+
+&lt;p&gt;But standardisation happens locally too. Although individual merchants may have their own weights and measures,
+if two merchants interact regularly enough they're going to come up with some common standards.
+They might not adopt them for everything, but at some point it becomes easier for them to just share a standard.
+If, in contrast, they hardly ever interact, there is no such incentive.
+This is akin to &lt;a href="https://notebook.drmaciver.com/posts/2020-02-28-06:33.html"&gt;the way people learn which way to veer in a collision&lt;/a&gt; - conformity is driven by interactions.&lt;/p&gt;
+
+
+&lt;p&gt;The role of power in this is that of determining which side has a stronger incentive to conform to the other.
+A merchant interacting with a government has a very strong incentive to conform (the government has much more power) while the government has a comparatively weak incentive (as well as the merchant having less power, there are many other merchants with equal and competing demands).
+Thus the merchant becomes legible to the government rather than the other way around.&lt;/p&gt;
+
+
+&lt;p&gt;Similarly, marginalised people are forced to become legible to the mainstream rather than the other way around,
+because by definition there are fewer of them and they have less power, so they have less ability to impose their standards of legibility on others.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-03-02-09:31.html" rel="alternate"/>
   </entry>
 </feed>
