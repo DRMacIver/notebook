@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-03-03T09:27:03+00:00</updated>
+  <updated>2020-03-04T11:18:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,67 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-02-23-09:37.html</id>
-    <title>Legibility Privileges</title>
-    <updated>2020-02-23T10:01:13+00:00</updated>
-    <content>
-
-&lt;p class="subtitle"&gt;Legibility Privileges&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-02-23&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;There is the notion of passing privileges: The privileges you get when your marginalisation is one where you can pass as a member of a non-marginalised group. e.g. bisexual people have the ability to pass for straight, some people of colour have light enough skin that they can pass for white, some trans people are not read as such and can pass as cis, autistic people who can mask well enough can pass as neurotypical.&lt;/p&gt;
-
-
-&lt;p&gt;Passing is not a universally desirable thing (if you &lt;em&gt;can&lt;/em&gt; pass then you can be coerced into passing), but nevertheless passing privileges are a real and important thing that it is useful to be aware of.&lt;/p&gt;
-
-
-&lt;p&gt;I'd like to suggest that there is another form of privileges related to marginalisation, and that this form is underappreciated.
-For example, I have the following experiences:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;I have complicated dietary requirements where some foods will make me ill, but there's not a simple summary of what these foods are.&lt;/li&gt;
-&lt;li&gt;Standing for protracted periods of time will make me very uncomfortable.&lt;/li&gt;
-&lt;li&gt;Crowded rooms with poor acoustics will make it hard for me to function and cause me to be very anxious.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;None of these are easily summarisable, and don't necessarily correspond to any particularly clean identity lines.&lt;/p&gt;
-
-
-&lt;p&gt;Are they a big deal? Well... sometimes? The food one is a particularly big deal - I've more or less stopped eating out,
-because there's a high chance I will end up eating something that I shouldn't because I don't fit in to any of the neat boxes that people understand food intolerances to fit into, and even if I don't it's high effort to avoid that.&lt;/p&gt;
-
-
-&lt;p&gt;I'm not suggesting that these make me unusually marginalised in degree. I'm clearly not. I doubt these even make me uniquely marginalised in kind - all of the things I've described are fairly common - what I'm suggesting is that there is a specific character to these issues that is underappreciated:
-These marginalisations are &lt;em&gt;illegible&lt;/em&gt; to society.&lt;/p&gt;
-
-
-&lt;p&gt;Because they do not fit into a clean categorisation scheme which allows me to readily communicate them,
-they come with their own specific set of disadvantages that are not shared by more legible marginalisations.&lt;/p&gt;
-
-
-&lt;p&gt;In fact I think &lt;em&gt;most&lt;/em&gt; marginalisations are illegible to some greater or larger degree - e.g. everyone with even very legible food needs is used to having to explain in great detail that yes actually cheese &lt;em&gt;is&lt;/em&gt; a dairy product or similar - but some marginalisations are significantly less legible than others, and my suspicion is that most people experience some illegible marginalisations,
-things that exclude them from some aspect of life that they cannot readily communicate without being seen as difficult,
-of varying degrees of severity.&lt;/p&gt;
-
-
-&lt;p&gt;Moreover, I think a lot of the ways that we do feminism and social justice, e.g. with focuses on diversity, end up reinforcing that:
-e.g. It's very easy to look at a conference and say "Have we made accommodations for wheelchair accessibility? What percentage of attendees are women? Do we have a gluten free food option?" because these are legible categories you can focus your diversity efforts on.
-It is, in contrast, much harder to think about and optimise for illegible marginalisations because they are,
-by definition,
-too difficult for you to easily quantify.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-02-23-09:37.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-02-24-10:37.html</id>
     <title>All knowledge is connected</title>
@@ -617,7 +556,7 @@ because by definition there are fewer of them and they have less power, so they 
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-03-09:07.html</id>
     <title>Your emotions are valid but probably wrong</title>
-    <updated>2020-03-03T09:27:03+00:00</updated>
+    <updated>2020-03-03T16:48:53+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Your emotions are valid but probably wrong&lt;/p&gt;
@@ -681,5 +620,55 @@ because by definition there are fewer of them and they have less power, so they 
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-03-03-09:07.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-03-04-11:18.html</id>
+    <title>Skirting the edge of disaster</title>
+    <updated>2020-03-04T11:18:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Skirting the edge of disaster&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-03-04&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Have you ever looked at a system and marvelled at the fact that it works at all?&lt;/p&gt;
+
+
+&lt;p&gt;Of course you have, you are one. You also work at one, live in one, if you're in London you certainly commute on one.
+Complex systems are a mess and the only reason we can believe that they work is that they, somehow, do.&lt;/p&gt;
+
+
+&lt;p&gt;Why does this happen?&lt;/p&gt;
+
+
+&lt;p&gt;It's a boundary defined between two competing forces:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;If an important system is broken, we fix it.&lt;/li&gt;
+&lt;li&gt;If a system has spare capacity, we place more demands on it.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;Any system subject to these forces will skirt the edge of disaster: It will constantly be on the verge of being broken, and yet somehow work.&lt;/p&gt;
+
+
+&lt;p&gt;The reason is very simple: If the system is &lt;em&gt;not&lt;/em&gt; on the edge of disaster, it will either be currently broken, and move towards the edge by getting better, or it will currently be under capacity and more demands will be put on it, and move towards the edge by getting worse. The edge is the only point of equilibrium.&lt;/p&gt;
+
+
+&lt;p&gt;The best way to fix this that seems in widespread use is not to try and remove this dynamic, but instead to &lt;em&gt;move the edge&lt;/em&gt;, by changing what counts as a problem that needs fixing.
+You still skirt the edge of "disaster" but your definition of disaster is now that the system is working suboptimally instead of just broken.&lt;/p&gt;
+
+
+&lt;p&gt;One way in particular to do that is to treat situations in which disaster was plausible rather than actual (near misses) as things that need fixing in their own right. &lt;a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1758026/pdf/v012p00465.pdf"&gt;Learning from samples of one or fewer&lt;/a&gt; is a good paper about this, describing how organisations can learn to avoid low probability high cost events which they, thankfully, not yet actually experienced.
+Experiencing &lt;em&gt;near misses&lt;/em&gt; as things to learn from and feed back into the system is a key part of this.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-03-04-11:18.html" rel="alternate"/>
   </entry>
 </feed>
