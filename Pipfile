@@ -12,6 +12,9 @@ drmnotes = {editable = true, path = "."}
 ipython = "*"
 "beautifulsoup4" = "*"
 feedgen = "*"
+pandas = "*"
+seaborn = "*"
+scipy = "*"
 
 [dev-packages]
 
