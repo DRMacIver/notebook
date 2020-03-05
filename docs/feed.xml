@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-03-04T11:18:00+00:00</updated>
+  <updated>2020-03-05T11:27:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,67 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-02-24-10:37.html</id>
-    <title>All knowledge is connected</title>
-    <updated>2020-02-24T11:04:21+00:00</updated>
-    <content>
-
-&lt;p class="subtitle"&gt;All knowledge is connected&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-02-24&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I read a lot. You might have noticed.&lt;/p&gt;
-
-
-&lt;p&gt;Additionally, I read a lot about a really broad range of subjects.&lt;/p&gt;
-
-
-&lt;p&gt;It gives me a lot of really weird spikes in my skill set,
-and one of my favourite things is getting about half an hour into a conversation with some specialist and having them suddenly go "wait, hang on, aren't you a computer science? I forgot you weren't actually in my field" when I ask some really dumb question despite having been able to talk about the subject at expert level up until then.&lt;/p&gt;
-
-
-&lt;p&gt;One of the things that you notice when you read this widely is that (extremely Dirk Gently voice) everything is connected.&lt;/p&gt;
-
-
-&lt;p&gt;You may not think that understanding nuclear war has much to do with understanding gender (ICBM dick jokes and recent controversial stories about the militarization of gender technology aside),
-but Thomas Schelling's "The Strategy of Conflict" was one of the most informative things I've read about gender until I read "The Origins of Unfairness" which is more directly about the game theory of gender.
-These both tie in well to "Conflict is not Abuse" (a book about speech norms in LGBT and social justice communities),
-and to "Queer Phenomenology", about how we use gender to orient our way through society,
-or to "Models: Attract Women through Honesty" (a surprisingly good book of dating advice for men),
-or to Raewyn Connol's "Masculinities", or to...&lt;/p&gt;
-
-
-&lt;p&gt;You get the idea.&lt;/p&gt;
-
-
-&lt;p&gt;When I say "All knowledge is connected" I don't mean that "Every piece of knowledge is directly connected to every other piece of knowledge". The link between "The Strategy of Conflict" and "Models" would not have been at all obvious without some of those other books as intermediaries.
-I call such books &lt;em&gt;bridging books&lt;/em&gt; - ones which unify two previously unconnected things in a way that enriches your understanding of all of them - but increasingly I think that limiting it to books is too confining and I should just call them bridges.&lt;/p&gt;
-
-
-&lt;p&gt;One prompt for this was the paper I read recently on &lt;a href="https://notebook.drmaciver.com/posts/2020-02-16-14:22.html"&gt;ghost knowledge&lt;/a&gt;. This ruined the idea of bridging as a book specific thing both by pointing out how much of the world's knowledge isn't written down &lt;em&gt;anywhere&lt;/em&gt;, let alone in books, and also by itself being a bridge between &lt;a href="https://notebook.drmaciver.com/posts/2020-02-18-12:24.html"&gt;How to talk about books you haven't read&lt;/a&gt;'s ideas about communal libraries and the notions of &lt;a href="https://notebook.drmaciver.com/posts/2019-06-04-09:58.html"&gt;hermeneutic and contributory injustice&lt;/a&gt; from the epistemic justice school of thought.&lt;/p&gt;
-
-
-&lt;p&gt;A useful metaphor for understanding how this works is Susan Haack's &lt;a href="https://link.springer.com/article/10.1007/BF02683186"&gt;Puzzling out science&lt;/a&gt;, and obscure-ish piece of philosophy of science.
-In it, she argues that a great metaphor for the process of science and reasoning about the world is the crossword puzzle.
-In a crossword puzzle you have both the clues, and the grid. The clues are things you observe about the world, and the grid is the thing that forces them to be consistent with eachother.
-You might fill in parts of the puzzle independently of eachother,
-and then try to join them up and discover to your annoyance that this square that you thought was a "c" cannot possibly be one and still fit with this other clue.
-The process of solving a crossword puzzle is thus a constant tension between solving it locally based on evidence and using the constraints to force updates to other part of the puzzle when you discover inconsistencies.&lt;/p&gt;
-
-
-&lt;p&gt;This propagation is why the connectedness of knowledge matters:
-Although there's no real direct connection between nuclear war and gender,
-there's this long chain of connections, and updates in one place might inform updates in others by propagating through that chain.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-02-24-10:37.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-02-25-10:39.html</id>
     <title>How to make decisions</title>
@@ -624,7 +563,7 @@ because by definition there are fewer of them and they have less power, so they 
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-04-11:18.html</id>
     <title>Skirting the edge of disaster</title>
-    <updated>2020-03-04T11:18:00+00:00</updated>
+    <updated>2020-03-04T11:34:37+00:00</updated>
     <content>
 
 &lt;p class="subtitle"&gt;Skirting the edge of disaster&lt;/p&gt;
@@ -670,5 +609,62 @@ Experiencing &lt;em&gt;near misses&lt;/em&gt; as things to learn from and feed b
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-03-04-11:18.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-03-05-11:27.html</id>
+    <title>Seeking out existence proofs in everyday life</title>
+    <updated>2020-03-05T11:27:00+00:00</updated>
+    <content>
+
+&lt;p class="subtitle"&gt;Seeking out existence proofs in everyday life&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-03-05&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;When trying to solve a problem, it is worth separating out two things:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Can I solve this problem to a level that is useful?&lt;/li&gt;
+&lt;li&gt;Is it even possible to solve this problem at all?&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;An example that I think of a lot is Hypothesis and the way it integrates test-case reduction into generation.
+The idea isn't novel to me, although some of the details and most of the engineering are,
+but unlike previous attempts at achieving this sort of integrated test-case reduction it actually worked.&lt;/p&gt;
+
+
+&lt;p&gt;The thing that allowed me to do it was that I knew something like it could work, because I had already demonstrated that the thing that it was doing was possible with a previous, much worse, version.&lt;/p&gt;
+
+
+&lt;p&gt;I am slightly embarrassed at having shipped that version to production. It was awful. It was buggy, overcomplicated, and offence against good taste. But it &lt;em&gt;worked&lt;/em&gt;, and that gave me both the knowledge that what I was trying to do could be done, and helped me get a rough sense of that.&lt;/p&gt;
+
+
+&lt;p&gt;Another example: Skill development. I was talking to a friend who does climbing, and she was relating an experience she had at practicing jumps during climbs. This was one of the big &lt;a href="https://notebook.drmaciver.com/posts/2020-02-21-10:04.html"&gt;constraints on her skill growth&lt;/a&gt;, because she's quite short so needed to be able to jump to traverse some routes, and she wasn't making progress on it.
+Eventually she realised that part of the problem was that actually she had literally just never jumped and caught something and supported her whole weight on it, and she was worried about it hurting or even dislocating her arms (not a rational fear, which she knew, but an understandable one).
+So she practiced jumping and grabbing on to a pullup bar. Turns out, arms are pretty robust, and now she knew the thing she was trying to do was possible.&lt;/p&gt;
+
+
+&lt;p&gt;Yet another example: Emotional range is a thing that I'm working on. Mine is quite restricted, and I don't like it. Turns out "restricted emotional range" is a long way of saying "depression". So I'm working on the skill of having emotions (yes it's a skill, shut up). But this is hard if you don't know what emotions are supposed to feel like,
+so it's worth doing a bit of experimenting in order to try to induce specific emotional states.
+Cuddle a cat and really narrow in on what that's like to experience contentment, play untitled goose game to experience malicious glee, get really high to experience joy (disclaimer: First travel to somewhere where weed is legal. May I recommend Amsterdam if you're in Europe? But don't be a dick about it. They're bored of high tourists).
+These are not sustainable ways to experience those emotions all the time, but they're great for demonstrating to you that it is possible to feel those emotions,
+which is great for being able to find your way back to them the hard way (and can be refreshed every now and then if you forget what it's like).&lt;/p&gt;
+
+
+&lt;p&gt;I think of these things as &lt;em&gt;existence proofs&lt;/em&gt;, because I'm a maths nerd.
+They don't help you construct a specific example, but they let you know that such an example must exist,
+and that you're not wasting your time chasing something that is logically impossible.&lt;/p&gt;
+
+
+&lt;p&gt;You can also think of it as looking for feasible solutions in an optimisation problem (or &lt;a href="https://www.drmaciver.com/2019/10/vocabulary-building-satisficing/"&gt;a satisficing problem&lt;/a&gt;). First, solve the problem any which way, then worry about improving that solution into one you'd actually be happy to use.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-03-05-11:27.html" rel="alternate"/>
   </entry>
 </feed>
