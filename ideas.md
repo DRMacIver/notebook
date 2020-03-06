@@ -36,3 +36,5 @@
 * [ ] Support Group and how to run your own
 * [ ] Permission as the fundamental social need
 * [ ] You're probably underestimating how bad school was
+* [ ] The tyrranny of false positives as a driver of homophily
+* [ ] Plausible deniability as a technical feature
