@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-03-05T11:27:00+00:00</updated>
+  <updated>2020-03-05T11:44:07+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -14,7 +14,7 @@
     <id>https://notebook.drmaciver.com/posts/2020-02-25-10:39.html</id>
     <title>How to make decisions</title>
     <updated>2020-02-25T11:18:14+00:00</updated>
-    <content>
+    <content type="html">
 
 &lt;p class="subtitle"&gt;How to make decisions&lt;/p&gt;
 
@@ -100,7 +100,7 @@ If the decision doesn't matter much, just pick something, more or less at random
     <id>https://notebook.drmaciver.com/posts/2020-02-26-16:07.html</id>
     <title>The fastest way to learn something is to do something</title>
     <updated>2020-02-26T16:22:35+00:00</updated>
-    <content>
+    <content type="html">
 
 &lt;p class="subtitle"&gt;The fastest way to learn something is to do something&lt;/p&gt;
 
@@ -157,7 +157,7 @@ It will often teach you &lt;em&gt;significantly&lt;/em&gt; more than either sitt
     <id>https://notebook.drmaciver.com/posts/2020-02-27-17:48.html</id>
     <title>Supersaturation of knowledge</title>
     <updated>2020-02-27T18:56:35+00:00</updated>
-    <content>
+    <content type="html">
 
 &lt;p class="subtitle"&gt;Supersaturation of knowledge&lt;/p&gt;
 
@@ -195,7 +195,7 @@ Knowledge is coming in faster than it is getting banked into longer term memory 
     <id>https://notebook.drmaciver.com/posts/2020-02-28-06:33.html</id>
     <title>Culture is deeply contingent</title>
     <updated>2020-02-28T07:10:27+00:00</updated>
-    <content>
+    <content type="html">
 
 &lt;p class="subtitle"&gt;Culture is deeply contingent&lt;/p&gt;
 
@@ -252,7 +252,7 @@ As a result, what happens is that essentially arbitrary starting conditions get 
     <id>https://notebook.drmaciver.com/posts/2020-02-29-10:30.html</id>
     <title>The social obligation to be bad at things</title>
     <updated>2020-02-29T10:50:52+00:00</updated>
-    <content>
+    <content type="html">
 
 &lt;p class="subtitle"&gt;The social obligation to be bad at things&lt;/p&gt;
 
@@ -322,7 +322,7 @@ I honestly don't think I could have done a better job than this.&lt;/p&gt;
     <id>https://notebook.drmaciver.com/posts/2020-03-01-08:04.html</id>
     <title>There are no deterministic voting systems</title>
     <updated>2020-03-01T09:15:01+00:00</updated>
-    <content>
+    <content type="html">
 
 &lt;p class="subtitle"&gt;There are no deterministic voting systems&lt;/p&gt;
 
@@ -421,7 +421,7 @@ What I want to do by pointing this out is to shift the argument from "Is nondete
     <id>https://notebook.drmaciver.com/posts/2020-03-02-09:31.html</id>
     <title>Legibility as a relationship</title>
     <updated>2020-03-02T10:36:07+00:00</updated>
-    <content>
+    <content type="html">
 
 &lt;p class="subtitle"&gt;Legibility as a relationship&lt;/p&gt;
 
@@ -496,7 +496,7 @@ because by definition there are fewer of them and they have less power, so they 
     <id>https://notebook.drmaciver.com/posts/2020-03-03-09:07.html</id>
     <title>Your emotions are valid but probably wrong</title>
     <updated>2020-03-03T16:48:53+00:00</updated>
-    <content>
+    <content type="html">
 
 &lt;p class="subtitle"&gt;Your emotions are valid but probably wrong&lt;/p&gt;
 
@@ -564,7 +564,7 @@ because by definition there are fewer of them and they have less power, so they 
     <id>https://notebook.drmaciver.com/posts/2020-03-04-11:18.html</id>
     <title>Skirting the edge of disaster</title>
     <updated>2020-03-04T11:34:37+00:00</updated>
-    <content>
+    <content type="html">
 
 &lt;p class="subtitle"&gt;Skirting the edge of disaster&lt;/p&gt;
 
@@ -613,8 +613,8 @@ Experiencing &lt;em&gt;near misses&lt;/em&gt; as things to learn from and feed b
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-05-11:27.html</id>
     <title>Seeking out existence proofs in everyday life</title>
-    <updated>2020-03-05T11:27:00+00:00</updated>
-    <content>
+    <updated>2020-03-05T11:44:07+00:00</updated>
+    <content type="html">
 
 &lt;p class="subtitle"&gt;Seeking out existence proofs in everyday life&lt;/p&gt;
 

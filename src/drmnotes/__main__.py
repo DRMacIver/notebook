@@ -366,7 +366,7 @@ def do_build(rebuild=False, full=True, name=''):
         fe.id('https://notebook.drmaciver.com' + post.url)
         fe.link(href='https://notebook.drmaciver.com' + post.url)
         fe.title(post.title or post.name)
-        fe.content(post.body)
+        fe.content(post.body, type="html")
         updated = subprocess.check_output([
         "git", "log", "-1", '--date=iso8601', '--format="%ad"', "--", post.original_file,
         ]).decode('ascii').strip().strip('"')
