@@ -32,3 +32,7 @@
 * [ ] Sometimes your enemies are just sad, but that doesn't make them not your enemies.
 * [ ] Group responsibilities are more than the sum of individual responsibilities.
 * [ ] Reliability as the indicator of skill.
+* [ ] The "Why are you saying this?" heuristic
+* [ ] Support Group and how to run your own
+* [ ] Permission as the fundamental social need
+* [ ] You're probably underestimating how bad school was
