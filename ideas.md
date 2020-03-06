@@ -27,3 +27,8 @@
 * [ ] Everyone in tech has a sleeping disorder
 * [ ] Conditioning on the the assumption that a solution is possible
 * [ ] Making things harder in order to make them possible
+* [ ] "Just the way the world works" and cultural norms.
+* [ ] Doing people a favour by making decisions.
+* [ ] Sometimes your enemies are just sad, but that doesn't make them not your enemies.
+* [ ] Group responsibilities are more than the sum of individual responsibilities.
+* [ ] Reliability as the indicator of skill.
