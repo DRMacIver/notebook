@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-03-06T07:46:00+00:00</updated>
+  <updated>2020-03-06T09:31:26+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -584,7 +584,7 @@ and that you're not wasting your time chasing something that is logically imposs
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-06-07:46.html</id>
     <title>Depression as felt restriction on emotional range</title>
-    <updated>2020-03-06T07:46:00+00:00</updated>
+    <updated>2020-03-06T09:31:26+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Depression as felt restriction on emotional range&lt;/p&gt;
@@ -618,11 +618,12 @@ You can lack any particular hope without feeling hopeless.&lt;/p&gt;
 
 
 &lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;A Corrector declares that you are doing something dangerous. "You must stop right now, because you're moving your hand toward aflame."&lt;/li&gt;
-&lt;li&gt;A Suppressor interrupts before you begin the action you're planning to take. "Don't start to move your hand toward that flame, lest it get burned."&lt;/li&gt;
-&lt;li&gt;A Censor acts yet earlier, to prevent that idea from occurring to you—so you never even consider the option of moving your hand in that direction.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;A Corrector declares that you are doing something dangerous.
+  "You must stop right now, because you're moving your hand toward aflame."&lt;/p&gt;
+&lt;p&gt;A Suppressor interrupts before you begin the action you're planning to take.
+  "Don't start to move your hand toward that flame, lest it get burned."&lt;/p&gt;
+&lt;p&gt;A Censor acts yet earlier, to prevent that idea from occurring to you -
+  so you never even consider the option of moving your hand in that direction.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 
