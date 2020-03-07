@@ -10,12 +10,12 @@
 * [x] Everyone in tech has a sleeping disorder
 * [x] Making things harder in order to make them possible
 * [x] Untanging various ethical concepts as per https://twitter.com/DRMacIver/status/1223628070738939905
+* [x] Therapeutic applications of video games
 * [ ] Ways in which I could improve my communication skills
 * [ ] Notes on my experience of poly
 * [ ] Specific binary goals as a tool for self-development
 * [ ] The physical world is much more hackable than the digital one
 * [ ] "Wanting to do the thing real hard" is not actually a plan
-* [ ] Therapeutic applications of video games
 * [ ] Correlation-in-the-mechanism (outcomes that are correlated just because there aren't enough input variables to go round)
 * [ ] Toolkitized thinking
 * [ ] Abstract models as toy worlds
