@@ -8,6 +8,7 @@
 * [x] You don't (and probably can't) know why things happen to you
 * [x] Everyone in London is tired
 * [x] Everyone in tech has a sleeping disorder
+* [x] Making things harder in order to make them possible
 * [ ] Ways in which I could improve my communication skills
 * [ ] Untanging various ethical concepts as per https://twitter.com/DRMacIver/status/1223628070738939905
 * [ ] Notes on my experience of poly
@@ -26,7 +27,6 @@
 * [ ] Experiments in phenomenal consciousness
 * [ ] "How are you so productive?" (answer: It's a depression coping strategy )
 * [ ] Conditioning on the the assumption that a solution is possible
-* [ ] Making things harder in order to make them possible
 * [ ] "Just the way the world works" and cultural norms.
 * [ ] Doing people a favour by making decisions.
 * [ ] Sometimes your enemies are just sad, but that doesn't make them not your enemies.
