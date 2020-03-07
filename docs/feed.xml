@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-03-07T11:33:00+00:00</updated>
+  <updated>2020-03-07T11:43:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,76 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-02-29-10:30.html</id>
-    <title>The social obligation to be bad at things</title>
-    <updated>2020-02-29T10:50:52+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;The social obligation to be bad at things&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-02-29&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;A thing I got pissed off at a while ago was reactions to someone talking about having weekly one-on-ones with his wife.
-&lt;a href="https://twitter.com/DRMacIver/status/1141648249255686144"&gt;My thread about it&lt;/a&gt; went as follows:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;I honestly think this sounds like a pretty good idea - structured communication is great, and better communication with partners is also great. Even if it turns out not to work, it's something that seems at least reasonable to try.&lt;/p&gt;
-&lt;p&gt;Regardless of whether it's good or not, I'm actually pretty pissed off at everyone who has been making fun of it. I am very much not here for your mocking someone's attempts to improve their communication in their relationships because you think the way they're doing it is weird.&lt;/p&gt;
-&lt;p&gt;And yes it's framed in a very business speak language. So what? Person in taking valuable communication skills learned in one context and seeing if they can use them to make other communication in their life better shocker!&lt;/p&gt;
-&lt;p&gt;I don't know the OP and I don't know if the way they are handling their romantic relationship(s) is healthy and productive, but what you're doing is making fun of people for being a different sort of weird than the one you approve of and it's not a good look&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;I was at a &lt;a href="http://www.liberatingstructures.com/"&gt;liberating structures&lt;/a&gt; event recently,
-and one of the people I was working with related an anecdote in which he tried a party game as an ice breaker.
-Many of those are cringe, but this one sounded fun and inoffensive (it was a sentence continuation game where each person said a word following on from a previous one, in an attempt to construct something that sounded like an aphorism).
-Most people were reluctant initially but got into the swing of things, but a few people just dug their heels in and would not engage properly with it because of concern over looking weird.&lt;/p&gt;
-
-
-&lt;p&gt;But trying something new, or in a different context, is always going to look weird.&lt;/p&gt;
-
-
-&lt;p&gt;When someone tries to do something good and we don't think it's the right thing, we punish them.
-When someone tries to do something and fails, we laugh at them.
-This means that if you want to avoid punishment the only way is to not try until you are certain that you are doing the right thing and will succeed at it, but &lt;a href="https://notebook.drmaciver.com/posts/2020-02-26-16:07.html"&gt;the fastest way to learn something is to try something&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;When you say you are good at something, that's arrogant. When you say you're bad at something, people tell you that you're not, or treat it as weakness. This makes it very hard to talk honestly about how good you are about things,
-and people are very bad at judging how good they are at things so it's very hard to know how good you are without talking about it.
-Unfortunately, self-knowledge of your own abilities is also essential for getting good at it.&lt;/p&gt;
-
-
-&lt;p&gt;If, despite all of this, you succeed, we put you on a pedestal, and worship you, and then as soon as you inevitably turn out to be a flawed human being like everyone else,
-we tear you down and destroy you.&lt;/p&gt;
-
-
-&lt;p&gt;So to recap:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;You will be punished for trying new things.&lt;/li&gt;
-&lt;li&gt;You will be punished for trying things that don't work.&lt;/li&gt;
-&lt;li&gt;You will be punished for trying to understand how good you are at something.&lt;/li&gt;
-&lt;li&gt;You will be punished for succeeding.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;If I sat down and tried to design a set of social norms for discouraging people from being their best selves,
-I honestly don't think I could have done a better job than this.&lt;/p&gt;
-
-
-&lt;p&gt;Why don't we want people to be good at things?&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-02-29-10:30.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-01-08:04.html</id>
     <title>There are no deterministic voting systems</title>
@@ -629,7 +559,7 @@ When you want to generate ideas, give yourself a prompt (ways to do X, Y, Z), de
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-07-11:33.html</id>
     <title>COULDDO vs TODO</title>
-    <updated>2020-03-07T11:33:00+00:00</updated>
+    <updated>2020-03-07T11:41:42+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;COULDDO vs TODO&lt;/p&gt;
@@ -676,5 +606,52 @@ When you're feeling listless and not really sure what to do and nothing sparks j
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-03-07-11:33.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-03-07-11:43.html</id>
+    <title>Stuff just happens and you probably don't know why</title>
+    <updated>2020-03-07T11:43:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Stuff just happens and you probably don't know why&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-03-07&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I get ill a lot.&lt;/p&gt;
+
+
+&lt;p&gt;Why? Who knows. It's always happened to me. There are any number of theories. Maybe I have a weird immune system. Maybe I touch my face a lot. Maybe I'm a bit too stressed and not breathing properly as a result and that makes me notice mild illnesses more. Maybe it's a consequence of bad diet.&lt;/p&gt;
+
+
+&lt;p&gt;It is almost certain not monocausal and is because of a number of independent things that don't actually interact but each just up my chances of getting ill, because getting ill is a highly nondeterministic process that is an accumulation of many different things.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, you know that big 20th century crime wave? Due to social breakdown, modernity, changing demographics, toxic masculinity responding to the different gender roles in an increasingly feminist world, the consequences of multiple wars, globalisation, and &lt;a href="https://en.wikipedia.org/wiki/Lead%E2%80%93crime_hypothesis"&gt;oops never mind it was probably just lead&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;While we're on the subject of toxic masculinity, you know how every woman has experiences of being cat called in public by men?&lt;/p&gt;
+
+
+&lt;p&gt;No, that's not true actually. It's definitely the &lt;em&gt;majority&lt;/em&gt; experience, but there are multiple women I know who have cautiously said to me "It's really weird. This just doesn't happen to me. Other women talk about how this is some ubiquitous thing and I've just never seen it". It's not an attractiveness thing - the women I've heard this from are mostly very attractive.&lt;/p&gt;
+
+
+&lt;p&gt;That's not to say that cat calling isn't a problem. It's a problem, of course, a major one. But somehow it's one that some women don't experience, and it's fairly mysterious as to why. It's easy to generate hypotheses, but it's hard to say which of them are accurate because it's &lt;em&gt;extremely&lt;/em&gt; unlikely that it's monocausal, and if it is monocausal it's probably caused by something completely random like preferred colour palette or getting enough sleep or something.&lt;/p&gt;
+
+
+&lt;p&gt;Rival Voices has this idea of &lt;a href="https://twitter.com/nosilverv/status/1205082282979184640"&gt;secret handshake theory&lt;/a&gt; as implicit ways of groups signalling compatibility, and secret handshakes control what parts of the world you have access to, but I think this if anything &lt;em&gt;understates&lt;/em&gt; how weirdly specific our lived experiences are, and how many areas of life are opened to or locked away from us by seemingly inconsequential choices and behaviours.&lt;/p&gt;
+
+
+&lt;p&gt;We like the idea that the world makes sense and things happen to us for reasons, but this greatly underestimates its complexity, and the number of things that are indirect consequences of seemingly unrelated things that just change the numbers enough to completely shift our lived experience into a different pattern from other people.&lt;/p&gt;
+
+
+&lt;p&gt;Because we focus on this idea that the world makes sense, we tend to fit our experiences to simple narratives, and this causes us to assume they are much more shared than they are. We talk about the typical mind fallacy, but the typical lived experience fallacy is if anything more pervasive. Your lived experience is probably less universally shared than you think it is.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-03-07-11:43.html" rel="alternate"/>
   </entry>
 </feed>
