@@ -3,8 +3,8 @@
 * [x] Depression as felt restriction on emotional range
 * [x] Nerd raiding
 * [x] On the nature of nerdery as a way of being interested in things
+* [x] How to never run out of ideas (lateral/critical thinking)
 * [ ] Ways in which I could improve my communication skills
-* [ ] How to never run out of ideas (lateral/critical thinking)
 * [ ] Untanging various ethical concepts as per https://twitter.com/DRMacIver/status/1223628070738939905
 * [ ] Notes on my experience of poly
 * [ ] Specific binary goals as a tool for self-development
