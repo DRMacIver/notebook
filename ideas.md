@@ -9,8 +9,8 @@
 * [x] Everyone in London is tired
 * [x] Everyone in tech has a sleeping disorder
 * [x] Making things harder in order to make them possible
+* [x] Untanging various ethical concepts as per https://twitter.com/DRMacIver/status/1223628070738939905
 * [ ] Ways in which I could improve my communication skills
-* [ ] Untanging various ethical concepts as per https://twitter.com/DRMacIver/status/1223628070738939905
 * [ ] Notes on my experience of poly
 * [ ] Specific binary goals as a tool for self-development
 * [ ] The physical world is much more hackable than the digital one
