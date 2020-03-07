@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-03-06T09:49:38+00:00</updated>
+  <updated>2020-03-07T07:38:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,63 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-02-26-16:07.html</id>
-    <title>The fastest way to learn something is to do something</title>
-    <updated>2020-02-26T16:22:35+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;The fastest way to learn something is to do something&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-02-26&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Suppose you have a problem to solve. What do you do?&lt;/p&gt;
-
-
-&lt;p&gt;Well, you sit down and think real hard,
-and after extensive and careful planning you try the well thought out and rigorous solution that you have thought up.
-Right?&lt;/p&gt;
-
-
-&lt;p&gt;No, wrong! Bad.&lt;/p&gt;
-
-
-&lt;p&gt;The correct thing to do when you have a problem is:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Think for a &lt;em&gt;short&lt;/em&gt; amount of time.&lt;/li&gt;
-&lt;li&gt;Make sure it is safe to try things.&lt;/li&gt;
-&lt;li&gt;Try something you think will work.&lt;/li&gt;
-&lt;li&gt;Observe the result.&lt;ul&gt;
-&lt;li&gt;If you succeeded, yay you solved the problem!&lt;/li&gt;
-&lt;li&gt;If it didn't work, think about what that means for the nature of the problem and try again.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;Every attempt to solve the problem is an opportunity to learn about the nature of the problem,
-and the nature of the tools you can use for solving problems in general.
-It will often teach you &lt;em&gt;significantly&lt;/em&gt; more than either sitting and thinking about the problem or trying a less directed experiment will.&lt;/p&gt;
-
-
-&lt;h3&gt;Caveats&lt;/h3&gt;
-
-
-&lt;p&gt;Obviously there is a place for learning about things that is less connected to a specific problem (given the number of books I read for general interest I would be a hypocrite to claim otherwise). Additionally, some problems are not well suited to this because e.g. They are high risk or they are long cycle time, but even then there will usually be subproblems like this.&lt;/p&gt;
-
-
-&lt;p&gt;The reason this is quite as strident as it is is as a necessary corrective to a tendency that most people have to overplan and get too hung up on finding the "right" solution. The lessons on &lt;a href="https://notebook.drmaciver.com/posts/2020-02-25-10:39.html"&gt;cost of decision making&lt;/a&gt; apply in spades to solving problems.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-02-26-16:07.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-02-27-17:48.html</id>
     <title>Supersaturation of knowledge</title>
@@ -584,7 +527,7 @@ and that you're not wasting your time chasing something that is logically imposs
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-06-07:46.html</id>
     <title>Depression as felt restriction on emotional range</title>
-    <updated>2020-03-06T09:49:38+00:00</updated>
+    <updated>2020-03-06T09:50:18+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Depression as felt restriction on emotional range&lt;/p&gt;
@@ -638,5 +581,75 @@ and that feeling is an integral feature of the depressive experience.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-03-06-07:46.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-03-07-07:38.html</id>
+    <title>Nerding</title>
+    <updated>2020-03-07T07:38:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Nerding&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-03-07&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Definitions are gauche, but I'm going to attempt a definition of "nerd".&lt;/p&gt;
+
+
+&lt;p&gt;Prompts:&lt;/p&gt;
+
+
+&lt;p&gt;&lt;a href="https://twitter.com/DRMacIver/status/1234959895486660609"&gt;Me getting mad on the internet&lt;/a&gt;:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;I am utterly baffled by the question "What are some things you love that aren't nerd-related?"&lt;/p&gt;
+&lt;p&gt;What do you mean things that are not nerd related? Everything is nerd related. Nerd is a way to relate to a subject, not a property of the subject.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;Another prompt is the recent run of &lt;a href="https://www.egscomics.com/comic/party-126"&gt;El Goonish Shive&lt;/a&gt; where this is a topic of conversation (yes I read EGS, no I'm not embarrassed about this. It's fun. Shush).&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, the definition I would like to propose is this: Nerding is being interested in a subject for intrinsic reasons, rather than for anything that that subject can bring you.
+It's a way of engaging with the subject where if someone asks you why you're spending so much time on it, any answer you give other than "Because it's &lt;em&gt;interesting&lt;/em&gt;" would be a rationalisation.&lt;/p&gt;
+
+
+&lt;p&gt;I'm going to use &lt;em&gt;grounding&lt;/em&gt; as the antonym for nerding - that is, engaging with a subject as interesting for &lt;em&gt;extrinsic&lt;/em&gt; reasons. Grounding is what you do when you want to get shit done with the subject. The strategy I outlined in &lt;a href="https://www.drmaciver.com/2013/08/how-did-you-get-started-so-quickly/"&gt;how to quickly become effective&lt;/a&gt; is a grounding strategy - you don't avoid learning about the subject, but your learning is very much directed towards a specific goal,
+and the subject is secondary.&lt;/p&gt;
+
+
+&lt;p&gt;(I'm not at all happy with "grounding" as a term and reserve the right to replace it with something better later)&lt;/p&gt;
+
+
+&lt;p&gt;My interest in cooking is grounding, because it's primarily driven by a need to eat and a desire to eat tasty things. My interest in voting systems is about 90% nerding, because although I occasionally use it in practical ways it's primarily driven by the fact that voting systems are intrinsically interesting to me.&lt;/p&gt;
+
+
+&lt;p&gt;As a result, the distinguishing feature of nerding about a subject is that you know far more about it than is reasonable for what you need.&lt;/p&gt;
+
+
+&lt;p&gt;Virtually everyone nerds at least a bit. Unless you are fundamentally incurious about the world, you're going to find out stuff just because you find it interesting. In the same way that you can write without being a writer, you can nerd without being a nerd. Nerds are just those of us with a strong tendency to nerd, and for whom that is an important part of our identity.&lt;/p&gt;
+
+
+&lt;p&gt;Nerding often arises after grounding. You pick up a subject because you need it for stuff, and then you find some aspect of it &lt;em&gt;fascinating&lt;/em&gt; and you're just kinda hooked. Again, voting theory was this for me - I got interested because of the UK referendum on electoral reform. Test-case reduction is another one. Actually &lt;em&gt;most&lt;/em&gt; of my nerding arises this way.&lt;/p&gt;
+
+
+&lt;p&gt;The thing about being a nerd about a subject is that it often unlocks levels of practical functional capability that are useful to everyone, even when they're grounding.
+Because you spend so much time thinking about it, your personal (or social) ecosystem of thoughts and ideas around the material is so much richer than that of someone who is just functionally interested in it.
+It means that when you have a concrete problem to deal with, you have a whole set of tools that are ready to hand that you can apply to it that nobody who wasn't intrinsically interested in the subject would have bothered to acquire.
+This means that nerding is often a necessary step to making real, practical, progress.&lt;/p&gt;
+
+
+&lt;p&gt;(Of course, someone whose interest in a subject is 100% nerding will often go off in a weird useless direction that has no practical applications. That's fine too, but progress requires a certain mix of grounding and nerding).&lt;/p&gt;
+
+
+&lt;p&gt;Because of this I often do what I call &lt;em&gt;nerd raiding&lt;/em&gt; - when I have a subject where my interest in it is mostly grounding, I still go seek out the subject nerds so that I can steal their good ideas, because often there's enough material in there that they arrived at the hard way that I can just package up and use without doing the same level of work.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-03-07-07:38.html" rel="alternate"/>
   </entry>
 </feed>
