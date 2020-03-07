@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-03-07T12:00:24+00:00</updated>
+  <updated>2020-03-07T12:12:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,105 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-03-01-08:04.html</id>
-    <title>There are no deterministic voting systems</title>
-    <updated>2020-03-01T09:15:01+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;There are no deterministic voting systems&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-03-01&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;As many of you are aware, one of my weird niche fandoms is random ballot, which I initially proposed &lt;a href="https://www.drmaciver.com/2013/09/towards-a-more-perfect-democracy/"&gt;using for parliamentary democracy&lt;/a&gt; but am also keen on for &lt;a href="https://www.drmaciver.com/2016/11/democracy-for-lunch/"&gt;deciding where to eat&lt;/a&gt; and many other decisions.&lt;/p&gt;
-
-
-&lt;p&gt;One of the objections that I often hear to it is that people don't like nondeterminism in their voting systems.
-Well, I have bad news for you: There are no deterministic voting systems.
-The question is not whether you have nondeterminism, the question is how sharp the transitions between regions where the probability of an outcome is nearly deterministic are.&lt;/p&gt;
-
-
-&lt;p&gt;Lets take an easy example: Suppose you have a vote between two options, and the population of voters is largeish, say a thousand people for convenience. You want to choose between these two with a simple majority.
-Suppose, despite that large population, you somehow manage to get an &lt;em&gt;exact&lt;/em&gt; tie.
-\(500\) people vote for the bikeshed to be blue, \(500\) for it to be orange.&lt;/p&gt;
-
-
-&lt;p&gt;What you do in this circumstance is flip a coin, right? This is a time honoured tradition for resolving ties.&lt;/p&gt;
-
-
-&lt;p&gt;So, even our simple, deterministic, majority system has at least one case where it's nondeterministic. However that seems fine: In practice that doesn't really happen, right?&lt;/p&gt;
-
-
-&lt;p&gt;Now suppose that the vote goes slightly differently and \(501\) people vote for orange and the other \(499\) vote for blue. This is a "clear" win for orange.&lt;/p&gt;
-
-
-&lt;p&gt;Does it seem vastly more fair than coin flipping though? It doesn't to me, but it's OK if it does to you, and it's indeed deterministic in these regions.&lt;/p&gt;
-
-
-&lt;p&gt;There's a problem though: The determinacy is an illusion. It's a deterministic function of &lt;em&gt;votes cast&lt;/em&gt;, it's not a deterministic function of &lt;em&gt;voters' actual beliefs&lt;/em&gt;,
-it just moves the nondeterminacy from the voting system and into the voters.&lt;/p&gt;
-
-
-&lt;p&gt;Suppose voters fail to vote with a dropout rate of \(1\%\). e.g. through getting lost on the way to the ballot box, misreading the instructions, spoiling their ballot, etc.
-What are the chances of orange winning now?&lt;/p&gt;
-
-
-&lt;p&gt;Here's some Python code for calculating these probabilities:&lt;/p&gt;
-
-
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt;
-&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;scipy.stats&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;st&lt;/span&gt;
-
-&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;win_probability&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;dropout&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mf"&gt;0.01&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="sd"&gt;"""If there are ``a`` votes for orange and ``b`` votes&lt;/span&gt;
-&lt;span class="sd"&gt;    for blue, and people drop out with a dropout rate of&lt;/span&gt;
-&lt;span class="sd"&gt;    ``dropout```, what is the probability of orange winning?&lt;/span&gt;
-&lt;span class="sd"&gt;    """&lt;/span&gt;
-    &lt;span class="n"&gt;p_voted&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;dropout&lt;/span&gt;
-    &lt;span class="n"&gt;a_votes&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;st&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;binom&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;p_voted&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="n"&gt;b_votes&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;st&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;binom&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;p_voted&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="n"&gt;tie_possibilities&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;arange&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;min&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-
-    &lt;span class="c1"&gt;# Probability of winning from a tie is the probability&lt;/span&gt;
-    &lt;span class="c1"&gt;# of the two having the same number of votes exactly&lt;/span&gt;
-    &lt;span class="c1"&gt;# times half for the coin flip.&lt;/span&gt;
-    &lt;span class="n"&gt;tie_wins&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mf"&gt;0.5&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;
-        &lt;span class="n"&gt;a_votes&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pmf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;tie_possibilities&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;b_votes&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pmf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;tie_possibilities&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="p"&gt;)&lt;/span&gt;
-
-    &lt;span class="c1"&gt;# A clear win happens when a has strictly more votes&lt;/span&gt;
-    &lt;span class="c1"&gt;# than b.&lt;/span&gt;
-    &lt;span class="n"&gt;all_possibilities&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;arange&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;max&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="n"&gt;b_chances&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;b_votes&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pmf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;all_possibilities&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="n"&gt;a_exceeding&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;a_votes&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cdf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;all_possibilities&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="n"&gt;clear_wins&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a_exceeding&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;b_chances&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;tie_wins&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;clear_wins&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;You can play with this a bit to get a feel for it, but the short version is that the result is nondeterministic but quite sharp. With the numbers above orange has a \(74\%\) chance of winning. If the dropout rate goes up to \(5\%\) orange has a \(61%\) chance of winnning.&lt;/p&gt;
-
-
-&lt;p&gt;In contrast if we raise the majority to \(510\) vs \(490\) the dropout rate has to go really very high before it becomes nondeterministic. A dropout rate of \(10\%\) gives orange a \(97\%\) chance of winning, a dropout rate of \(50\%\) gives it a \(74\%\).&lt;/p&gt;
-
-
-&lt;p&gt;Under this model simple majority voting is a nondeterministic system, but it's one where the curve between regions that are "morally" deterministic is very sharp. Exactly how sharp depends on the dropout rate.&lt;/p&gt;
-
-
-&lt;p&gt;How high is the dropout rate in practice? Hard to say, but given that voter turnout rates in the UK seem to hover in the \(60\% - 80\%\) region, \(5\%\) seems if anything optimistically low.&lt;/p&gt;
-
-
-&lt;p&gt;None of this is intended to suggest that because voting is intrinsically nondeterministic any nondeterminism is valid.
-What I want to do by pointing this out is to shift the argument from "Is nondeterministic voting acceptable?" to "How do we want to manage nondeterminism in voting?"&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-03-01-08:04.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-02-09:31.html</id>
     <title>Legibility as a relationship</title>
@@ -610,7 +511,7 @@ When you're feeling listless and not really sure what to do and nothing sparks j
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-07-11:43.html</id>
     <title>Stuff just happens and you probably don't know why</title>
-    <updated>2020-03-07T12:00:24+00:00</updated>
+    <updated>2020-03-07T12:02:47+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Stuff just happens and you probably don't know why&lt;/p&gt;
@@ -659,5 +560,41 @@ When you're feeling listless and not really sure what to do and nothing sparks j
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-03-07-11:43.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-03-07-12:12.html</id>
+    <title>If a task is impossible, try making it harder</title>
+    <updated>2020-03-07T12:12:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;If a task is impossible, try making it harder&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-03-07&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;If a lecture is a struggle, try speeding up the video.&lt;/p&gt;
+
+
+&lt;p&gt;If you struggle to read fast enough, try using a speed reader app that just scrolls the words by at 1000wpm.&lt;/p&gt;
+
+
+&lt;p&gt;If a book is too hard, try making it harder by reading it aloud. Maybe do weird balancing acts while doing it.&lt;/p&gt;
+
+
+&lt;p&gt;Often the rate limiting factor on difficult tasks is not actually that they're too hard, it's that we are failing to engage our full attention on them. This is particularly true if you're very smart and/or ADHD or somewhere vaguely in its vicinity. The world is literally moving too slowly for you, which means that you cannot bring your full attention to it, and as a result you never enter flow and the entire thing becomes a painful exercise which you can't help but fail.&lt;/p&gt;
+
+
+&lt;p&gt;This creates the paradoxical solution that impossible seeming tasks are not too hard for you, they're too easy for you.
+If you make them harder, you might find that they become possible, because they become something that can absorb your full attention. &lt;/p&gt;
+
+
+&lt;p&gt;I feel like this is actually the true secret to success to a lot of productivity methodologies. They don't actually help, but by focusing on the methodology they become something that &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-07:38.html"&gt;you can nerd out about&lt;/a&gt; and because your nerding task is integrated with your grounding task, the two together can consume your full attention in a way that the mere task on its own could not. &lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-03-07-12:12.html" rel="alternate"/>
   </entry>
 </feed>
