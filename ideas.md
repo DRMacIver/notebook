@@ -13,6 +13,8 @@
 * [x] Therapeutic applications of video games
 * [x] Group responsibilities are not the aggregate of individual ones
 * [x] Touch starvation is widespread and very bad
+* [x] Doing people a favour by making decisions.
+* [x] Installing cut out switches in your thought processes
 * [ ] Ways in which I could improve my communication skills
 * [ ] Notes on my experience of poly
 * [ ] Specific binary goals as a tool for self-development
@@ -28,7 +30,6 @@
 * [ ] "How are you so productive?" (answer: It's a depression coping strategy )
 * [ ] Conditioning on the the assumption that a solution is possible
 * [ ] "Just the way the world works" and cultural norms.
-* [ ] Doing people a favour by making decisions.
 * [ ] Sometimes your enemies are just sad, but that doesn't make them not your enemies.
 * [ ] Group responsibilities are more than the sum of individual responsibilities.
 * [ ] Reliability as the indicator of skill.
@@ -38,6 +39,5 @@
 * [ ] You're probably underestimating how bad school was
 * [ ] The tyrranny of false positives as a driver of homophily
 * [ ] Plausible deniability as a technical feature
-* [ ] Installing cut out switches in your thought processes
 * [ ] Clearing out emotional noise
 * [ ] Fixing anxiety
