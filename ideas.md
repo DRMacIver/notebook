@@ -4,6 +4,7 @@
 * [x] Nerd raiding
 * [x] On the nature of nerdery as a way of being interested in things
 * [x] How to never run out of ideas (lateral/critical thinking)
+* [x] COULDDO vs TODO
 * [ ] Ways in which I could improve my communication skills
 * [ ] Untanging various ethical concepts as per https://twitter.com/DRMacIver/status/1223628070738939905
 * [ ] Notes on my experience of poly
@@ -14,7 +15,6 @@
 * [ ] Correlation-in-the-mechanism (outcomes that are correlated just because there aren't enough input variables to go round)
 * [ ] Toolkitized thinking
 * [ ] Abstract models as toy worlds
-* [ ] COULDDO vs TODO
 * [ ] Why I am not a utilitarian
 * [ ] Probability lower bounds and disaster planning
 * [ ] Group responsibilities are not the aggregate of individual ones
