@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-03-07T15:21:06+00:00</updated>
+  <updated>2020-03-07T15:27:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,63 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-03-05-11:27.html</id>
-    <title>Seeking out existence proofs in everyday life</title>
-    <updated>2020-03-05T11:44:07+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Seeking out existence proofs in everyday life&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-03-05&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;When trying to solve a problem, it is worth separating out two things:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Can I solve this problem to a level that is useful?&lt;/li&gt;
-&lt;li&gt;Is it even possible to solve this problem at all?&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;An example that I think of a lot is Hypothesis and the way it integrates test-case reduction into generation.
-The idea isn't novel to me, although some of the details and most of the engineering are,
-but unlike previous attempts at achieving this sort of integrated test-case reduction it actually worked.&lt;/p&gt;
-
-
-&lt;p&gt;The thing that allowed me to do it was that I knew something like it could work, because I had already demonstrated that the thing that it was doing was possible with a previous, much worse, version.&lt;/p&gt;
-
-
-&lt;p&gt;I am slightly embarrassed at having shipped that version to production. It was awful. It was buggy, overcomplicated, and offence against good taste. But it &lt;em&gt;worked&lt;/em&gt;, and that gave me both the knowledge that what I was trying to do could be done, and helped me get a rough sense of that.&lt;/p&gt;
-
-
-&lt;p&gt;Another example: Skill development. I was talking to a friend who does climbing, and she was relating an experience she had at practicing jumps during climbs. This was one of the big &lt;a href="https://notebook.drmaciver.com/posts/2020-02-21-10:04.html"&gt;constraints on her skill growth&lt;/a&gt;, because she's quite short so needed to be able to jump to traverse some routes, and she wasn't making progress on it.
-Eventually she realised that part of the problem was that actually she had literally just never jumped and caught something and supported her whole weight on it, and she was worried about it hurting or even dislocating her arms (not a rational fear, which she knew, but an understandable one).
-So she practiced jumping and grabbing on to a pullup bar. Turns out, arms are pretty robust, and now she knew the thing she was trying to do was possible.&lt;/p&gt;
-
-
-&lt;p&gt;Yet another example: Emotional range is a thing that I'm working on. Mine is quite restricted, and I don't like it. Turns out "restricted emotional range" is a long way of saying "depression". So I'm working on the skill of having emotions (yes it's a skill, shut up). But this is hard if you don't know what emotions are supposed to feel like,
-so it's worth doing a bit of experimenting in order to try to induce specific emotional states.
-Cuddle a cat and really narrow in on what that's like to experience contentment, play untitled goose game to experience malicious glee, get really high to experience joy (disclaimer: First travel to somewhere where weed is legal. May I recommend Amsterdam if you're in Europe? But don't be a dick about it. They're bored of high tourists).
-These are not sustainable ways to experience those emotions all the time, but they're great for demonstrating to you that it is possible to feel those emotions,
-which is great for being able to find your way back to them the hard way (and can be refreshed every now and then if you forget what it's like).&lt;/p&gt;
-
-
-&lt;p&gt;I think of these things as &lt;em&gt;existence proofs&lt;/em&gt;, because I'm a maths nerd.
-They don't help you construct a specific example, but they let you know that such an example must exist,
-and that you're not wasting your time chasing something that is logically impossible.&lt;/p&gt;
-
-
-&lt;p&gt;You can also think of it as looking for feasible solutions in an optimisation problem (or &lt;a href="https://www.drmaciver.com/2019/10/vocabulary-building-satisficing/"&gt;a satisficing problem&lt;/a&gt;). First, solve the problem any which way, then worry about improving that solution into one you'd actually be happy to use.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-03-05-11:27.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-06-07:46.html</id>
     <title>Depression as felt restriction on emotional range</title>
@@ -610,5 +553,38 @@ The strongest moral requirement I would put forth here is that if you personally
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-03-07-14:34.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-03-07-15:27.html</id>
+    <title>Be the more decisive person</title>
+    <updated>2020-03-07T15:27:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Be the more decisive person&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-03-07&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Let me tell you an amazing favour you can do for your friends: Be the one to make decisions when nobody else is willing to step up. Especially unimportant ones.&lt;/p&gt;
+
+
+&lt;p&gt;I learned this skill the hard way. Getting a bunch of indecisive socially awkward nerds to decide where to go for a meal is worse than herding cats, because it's watching cats try to self organise,
+so at some point I just started saying "Hey, why don't we go to $RESTAURANT. Any objections?" and observing how much easier the whole process became once I started doing that.&lt;/p&gt;
+
+
+&lt;p&gt;People don't want to be the one to make a decision for any number of reasons, but it's mostly anxiety, and they're mostly offloading anxiety onto everyone else. You can stop the cycle of anxiety through the simple realisation that 90% of the decisions that are causing this just don't matter that much. It doesn't matter that much where you go for a meal.&lt;/p&gt;
+
+
+&lt;p&gt;If you want to help people this way, go read &lt;a href="https://notebook.drmaciver.com/posts/2020-02-25-10:39.html"&gt;how to make decisions&lt;/a&gt; so that this is low cost for you, and then start making suggestions like this once it's clear you're stuck in an indecision loop that nobody involved wants to break out of.&lt;/p&gt;
+
+
+&lt;p&gt;For more important decisions you need to start looking into serious facilitation skills and techniques for running meetings and such, but that's a different problem. For now, just help people break out of indecision on the simple stuff.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-03-07-15:27.html" rel="alternate"/>
   </entry>
 </feed>
