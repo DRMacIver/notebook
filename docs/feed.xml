@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-03-07T14:34:00+00:00</updated>
+  <updated>2020-03-07T15:21:06+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -540,7 +540,7 @@ This is why it works - it is &lt;a href="https://notebook.drmaciver.com/posts/20
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-07-14:34.html</id>
     <title>Touch starvation and group responsibility</title>
-    <updated>2020-03-07T14:34:00+00:00</updated>
+    <updated>2020-03-07T15:21:06+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Touch starvation and group responsibility&lt;/p&gt;
