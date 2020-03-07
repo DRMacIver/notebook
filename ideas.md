@@ -11,6 +11,8 @@
 * [x] Making things harder in order to make them possible
 * [x] Untanging various ethical concepts as per https://twitter.com/DRMacIver/status/1223628070738939905
 * [x] Therapeutic applications of video games
+* [x] Group responsibilities are not the aggregate of individual ones
+* [x] Touch starvation is widespread and very bad
 * [ ] Ways in which I could improve my communication skills
 * [ ] Notes on my experience of poly
 * [ ] Specific binary goals as a tool for self-development
@@ -21,8 +23,6 @@
 * [ ] Abstract models as toy worlds
 * [ ] Why I am not a utilitarian
 * [ ] Probability lower bounds and disaster planning
-* [ ] Group responsibilities are not the aggregate of individual ones
-* [ ] Touch starvation is widespread and very bad
 * [ ] The candle writing exercise
 * [ ] Experiments in phenomenal consciousness
 * [ ] "How are you so productive?" (answer: It's a depression coping strategy )
