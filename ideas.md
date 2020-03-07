@@ -1,9 +1,10 @@
 * [x] Separating "doing it properly" from "demonstrating it's possible"
 * [x] Minsky's notion of censors
 * [x] Depression as felt restriction on emotional range
+* [x] Nerd raiding
+* [x] On the nature of nerdery as a way of being interested in things
 * [ ] Ways in which I could improve my communication skills
 * [ ] How to never run out of ideas (lateral/critical thinking)
-* [ ] On the nature of nerdery as a way of being interested in things
 * [ ] Untanging various ethical concepts as per https://twitter.com/DRMacIver/status/1223628070738939905
 * [ ] Notes on my experience of poly
 * [ ] Specific binary goals as a tool for self-development
@@ -13,7 +14,6 @@
 * [ ] Correlation-in-the-mechanism (outcomes that are correlated just because there aren't enough input variables to go round)
 * [ ] Toolkitized thinking
 * [ ] Abstract models as toy worlds
-* [ ] Nerd raiding
 * [ ] COULDDO vs TODO
 * [ ] Why I am not a utilitarian
 * [ ] Probability lower bounds and disaster planning
@@ -38,3 +38,6 @@
 * [ ] You're probably underestimating how bad school was
 * [ ] The tyrranny of false positives as a driver of homophily
 * [ ] Plausible deniability as a technical feature
+* [ ] Installing cut out switches in your thought processes
+* [ ] Clearing out emotional noise
+* [ ] Fixing anxiety
