@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-03-07T16:39:45+00:00</updated>
+  <updated>2020-03-08T08:53:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,79 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-03-07-07:38.html</id>
-    <title>Nerding</title>
-    <updated>2020-03-07T08:47:25+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Nerding&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-03-07&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Definitions are gauche, but I'm going to attempt a definition of "nerd".&lt;/p&gt;
-
-
-&lt;p&gt;Prompts:&lt;/p&gt;
-
-
-&lt;p&gt;&lt;a href="https://twitter.com/DRMacIver/status/1234959895486660609"&gt;Me getting mad on the internet&lt;/a&gt;:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;I am utterly baffled by the question "What are some things you love that aren't nerd-related?"&lt;/p&gt;
-&lt;p&gt;What do you mean things that are not nerd related? Everything is nerd related. Nerd is a way to relate to a subject, not a property of the subject.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;Another prompt is the recent run of &lt;a href="https://www.egscomics.com/comic/party-126"&gt;El Goonish Shive&lt;/a&gt; where this is a topic of conversation (yes I read EGS, no I'm not embarrassed about this. It's fun. Shush).&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, the definition I would like to propose is this: Nerding is being interested in a subject for intrinsic reasons, rather than for anything that that subject can bring you.
-It's a way of engaging with the subject where if someone asks you why you're spending so much time on it, any answer you give other than "Because it's &lt;em&gt;interesting&lt;/em&gt;" would be a rationalisation.&lt;/p&gt;
-
-
-&lt;p&gt;I'm going to use &lt;em&gt;grounding&lt;/em&gt; as the antonym for nerding - that is, engaging with a subject as interesting for &lt;em&gt;extrinsic&lt;/em&gt; reasons. Grounding is what you do when you want to get shit done with the subject. The strategy I outlined in &lt;a href="https://www.drmaciver.com/2013/08/how-did-you-get-started-so-quickly/"&gt;how to quickly become effective&lt;/a&gt; is a grounding strategy - you don't avoid learning about the subject, but your learning is very much directed towards a specific goal,
-and the subject is secondary.&lt;/p&gt;
-
-
-&lt;p&gt;(I'm not at all happy with "grounding" as a term and reserve the right to replace it with something better later)&lt;/p&gt;
-
-
-&lt;p&gt;My interest in cooking is grounding, because it's primarily driven by a need to eat and a desire to eat tasty things. My interest in voting systems is about 90% nerding, because although I occasionally use it in practical ways it's primarily driven by the fact that voting systems are intrinsically interesting to me.&lt;/p&gt;
-
-
-&lt;p&gt;As a result, the distinguishing feature of nerding about a subject is that you know far more about it than is reasonable for what you need.&lt;/p&gt;
-
-
-&lt;p&gt;Virtually everyone nerds at least a bit. Unless you are fundamentally incurious about the world, you're going to find out stuff just because you find it interesting. In the same way that you can write without being a writer, you can nerd without being a nerd. Nerds are just those of us with a strong tendency to nerd, and for whom that is an important part of our identity.&lt;/p&gt;
-
-
-&lt;p&gt;People think of some subjects as nerdier than others, and it's probably true that some subjects are intrinsically more suitable for nerding about, but people nerd about all sorts of things. I'm nerding about communication and emotional processing skills at the moment. I have a friend who is a dedicated sex nerd. Sports nerds are everywhere. The best bartenders I know are drinks nerds. Chefs are &lt;em&gt;certainly&lt;/em&gt; food nerds. It's &lt;em&gt;really&lt;/em&gt; hard to find subjects that nobody nerds about.&lt;/p&gt;
-
-
-&lt;p&gt;Nerding often arises after grounding. You pick up a subject because you need it for stuff, and then you find some aspect of it &lt;em&gt;fascinating&lt;/em&gt; and you're just kinda hooked. Again, voting theory was this for me - I got interested because of the UK referendum on electoral reform. Test-case reduction is another one. Actually &lt;em&gt;most&lt;/em&gt; of my nerding arises this way.&lt;/p&gt;
-
-
-&lt;p&gt;The thing about being a nerd about a subject is that it often unlocks levels of practical functional capability that are useful to everyone, even when they're grounding.
-Because you spend so much time thinking about it, your personal (or social) ecosystem of thoughts and ideas around the material is so much richer than that of someone who is just functionally interested in it.
-It means that when you have a concrete problem to deal with, you have a whole set of tools that are ready to hand that you can apply to it that nobody who wasn't intrinsically interested in the subject would have bothered to acquire.
-This means that nerding is often a necessary step to making real, practical, progress.&lt;/p&gt;
-
-
-&lt;p&gt;(Of course, someone whose interest in a subject is 100% nerding will often go off in a weird useless direction that has no practical applications. That's fine too, but progress requires a certain mix of grounding and nerding).&lt;/p&gt;
-
-
-&lt;p&gt;Because of this I often do what I call &lt;em&gt;nerd raiding&lt;/em&gt; - when I have a subject where my interest in it is mostly grounding, I still go seek out the subject nerds so that I can steal their good ideas, because often there's enough material in there that they arrived at the hard way that I can just package up and use without doing the same level of work.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-03-07-07:38.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-07-09:44.html</id>
     <title>You can't actually run out of ideas</title>
@@ -535,7 +462,7 @@ so at some point I just started saying "Hey, why don't we go to $RESTAURANT. Any
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-07-15:59.html</id>
     <title>Install cut out switches in your mind</title>
-    <updated>2020-03-07T16:39:45+00:00</updated>
+    <updated>2020-03-07T17:48:37+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Install cut out switches in your mind&lt;/p&gt;
@@ -590,5 +517,65 @@ Someone visits the planet and tells them, “Hey, why are you still using this a
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-03-07-15:59.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-03-08-08:53.html</id>
+    <title>You can't actually explain everything to laypeople</title>
+    <updated>2020-03-08T08:53:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;You can't actually explain everything to laypeople&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-03-08&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;There's an annoying meme that, as with many annoying memes oft-cited by nerds, seems to date back to Feynmann.
+It's that your ability to explain a subject to a layperson is a test of whether you understand it.
+I often hear it as "If you can't explain it to your grandmother you don't understand it". The version I heard earlier was "explain to a five year old".&lt;/p&gt;
+
+
+&lt;p&gt;Feynmann, to his partial credit, doesn't seem to have deliberately coined an aphorism here and also said "freshman" (i.e. first year university student). &lt;a href="https://en.wikiquote.org/wiki/Talk:Richard_Feynman#Teaching_quote"&gt;Discussion at wikiquote&lt;/a&gt;:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Feynman was a truly great teacher. He prided himself on being able to devise ways to explain even the most profound ideas to beginning students. Once, I said to him, "Dick, explain to me, so that I can understand it, why spin one-half particles obey Fermi-Dirac statistics." Sizing up his audience perfectly, Feynman said, "I'll prepare a freshman lecture on it." But he came back a few days later to say, "I couldn't do it. I couldn't reduce it to the freshman level. That means we don't really understand it."&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;Freshman students are already not laypeople, but even so I don't think this is a reasonable standard for understanding.
+It &lt;em&gt;might&lt;/em&gt; be a reasonable standard for the specific context, I don't know enough about quantum mechanics to say, but it's certainly not universal.&lt;/p&gt;
+
+
+&lt;p&gt;But first, lets consider how freshmen already differ from laypeople:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;They've got a lot of prerequisites that a layperson doesn't. A freshman in a physics lecture already knows a lot more about physics than a five year old, or indeed most educated people.&lt;/li&gt;
+&lt;li&gt;They're prepared to learn and engage with the material.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;(2) is one of the most important parts, because the main reason that you can't explain most things you do to laypeople is that they don't care. When someone who isn't a software developer / computer scientists / etc asks me about my PhD I can just about explain the problem before they switch off (which honestly is doing better than most PhDs in computer science, but I have a relatively accessible problem domain), I'm certainly not going to get them to sit through an explanation about the solution.&lt;/p&gt;
+
+
+&lt;p&gt;(1) is also a major feature: Some areas of knowledge just have prerequisites. It's a simple fact. And often there are a lot more prerequisites than you think. &lt;a href="https://notebook.drmaciver.com/posts/2020-02-18-12:24.html"&gt;How to talk about books you haven't read&lt;/a&gt; has a great section on reading Hamlet to the Tiv tribe in Western Africa, and how much cultural bridging that required. Hamlet is pretty much designed to be accessible to laypeople (Shakespeare was a popular entertainer!) but because these are laypeople from a different cultural context, it failed to land without a lot of explanation.&lt;/p&gt;
+
+
+&lt;p&gt;My degree is in mathematics. There were a number of courses in the final year I struggled with, though I generally got there in the end. If you had thrown me in the deep end on those courses in my first year, I would have had no chance, because they built on material that I had learned earlier.
+Knowledge has prerequisites, and you have to teach those first.&lt;/p&gt;
+
+
+&lt;p&gt;Could I have somehow taught those courses to my younger self anyway? Certainly. I'd have done it by putting him through a four year maths degree.&lt;/p&gt;
+
+
+&lt;p&gt;This is, in the end, the biggest problem with the idea that you can teach anything to laypeople:
+Sometimes the only way to do that is to first make them not a layperson.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-03-08-08:53.html" rel="alternate"/>
   </entry>
 </feed>
