@@ -41,3 +41,11 @@
 * [ ] Plausible deniability as a technical feature
 * [ ] Clearing out emotional noise
 * [ ] Fixing anxiety
+* [ ] Emotional regulation as resolving alief/belief inconsistencies
+* [ ] You can't turn off skills and it's annoying
+* [ ] Notes on attraction and sexuality
+* [ ] Policy as non-aggregate of individual ethical decisions
+* [ ] Intuition as guiding heuristic in reasoning processes
+* [ ] Being willing to blackbox areas of knowledge
+* [ ] Transactive memory and loss
+* [ ] Eye pressure and switching contexts as an enabling technology
