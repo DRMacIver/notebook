@@ -15,6 +15,8 @@
 * [x] Touch starvation is widespread and very bad
 * [x] Doing people a favour by making decisions.
 * [x] Installing cut out switches in your thought processes
+* [ ] Permission as the fundamental social need
+* [ ] Pluralistic ignorance
 * [ ] Ways in which I could improve my communication skills
 * [ ] Notes on my experience of poly
 * [ ] Specific binary goals as a tool for self-development
@@ -27,7 +29,6 @@
 * [ ] Probability lower bounds and disaster planning
 * [ ] The candle writing exercise
 * [ ] Experiments in phenomenal consciousness
-* [ ] "How are you so productive?" (answer: It's a depression coping strategy )
 * [ ] Conditioning on the the assumption that a solution is possible
 * [ ] "Just the way the world works" and cultural norms.
 * [ ] Sometimes your enemies are just sad, but that doesn't make them not your enemies.
@@ -35,7 +36,6 @@
 * [ ] Reliability as the indicator of skill.
 * [ ] The "Why are you saying this?" heuristic
 * [ ] Support Group and how to run your own
-* [ ] Permission as the fundamental social need
 * [ ] You're probably underestimating how bad school was
 * [ ] The tyrranny of false positives as a driver of homophily
 * [ ] Plausible deniability as a technical feature
@@ -49,3 +49,12 @@
 * [ ] Being willing to blackbox areas of knowledge
 * [ ] Transactive memory and loss
 * [ ] Eye pressure and switching contexts as an enabling technology
+* [ ] Anxiety management as intelligence enhancement
+* [ ] Safety as an enabling technology
+* [ ] Need and desire as drivers of progress
+* [ ] The market for lemons is everywhere
+* [ ] Developing the mind as a platform for thought
+* [ ] Signalling impossibility to avoid coercion
+* [ ] Polarizing as a general practice
+* [ ] Helping others level up
+* ~~[ ] "How are you so productive?" (answer: It's a depression coping strategy )~~
