@@ -57,4 +57,4 @@
 * [ ] Signalling impossibility to avoid coercion
 * [ ] Polarizing as a general practice
 * [ ] Helping others level up
-* [ ] ~~"How are you so productive?" (answer: It's a depression coping strategy )~~
+* [x] ~~"How are you so productive?" (answer: It's a depression coping strategy )~~
