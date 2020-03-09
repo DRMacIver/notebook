@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-03-08T08:53:00+00:00</updated>
+  <updated>2020-03-09T11:13:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,72 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-03-07-09:44.html</id>
-    <title>You can't actually run out of ideas</title>
-    <updated>2020-03-07T13:38:18+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;You can't actually run out of ideas&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-03-07&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;You can't actually run out of ideas, because ideas are generated not found.
-The way to get more ideas is just to work at it, and if you're struggling it's probably because you're approaching the problem wrong.&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, let me tell you about two books.&lt;/p&gt;
-
-
-&lt;p&gt;The first book is de Bono's "&lt;a href="https://amzn.to/38y5E3H"&gt;Lateral Thinking&lt;/a&gt;". This book is annoyingly good. By which I mean this book is good, and that's annoying.&lt;/p&gt;
-
-
-&lt;p&gt;The second is Steven Johnson's "&lt;a href="https://amzn.to/2TvxGIV"&gt;Where Good Ideas Come From&lt;/a&gt;", which is about innovation in the world but also works just as well at a more personal scale.&lt;/p&gt;
-
-
-&lt;p&gt;De Bono's argument is that there are essentially two types of thinking: Lateral and vertical. I tend to think of the split as more lateral and critical: &lt;em&gt;generating&lt;/em&gt; ideas and &lt;em&gt;ensuring that your ideas are good&lt;/em&gt; as separated tasks.&lt;/p&gt;
-
-
-&lt;p&gt;Steven Johnson's argument is that ideas are an evolutionary process.
-Ideas build on other ideas, through combination, mutation, variation.
-Exaptation happens and ideas are borrowed from other contexts.
-Selection pressure happens when ideas hit the real world and you find out if they actually &lt;em&gt;work&lt;/em&gt;.
-At any given point, you have the ever growing adjacent possible - the set of ideas it's currently possible to have, based on the set of ideas that have already been had and developed.&lt;/p&gt;
-
-
-&lt;p&gt;This is how it works on the inside as well: You have your own personal version of the adjacent possible, which is ever expanding, and which contains all the potential ideas you could have.
-Having ideas is about exploring that.&lt;/p&gt;
-
-
-&lt;p&gt;If you are failing to explore the adjacent possibly to your satisfaction, there's probably a very simple reason for that: You're trying to not have bad ideas, when you should be trying to have good ideas.&lt;/p&gt;
-
-
-&lt;p&gt;Bad ideas are great. Having bad ideas is &lt;em&gt;super&lt;/em&gt; fun. You can toy with them, &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-07:38.html"&gt;nerd out about them&lt;/a&gt;, and you can &lt;a href="https://notebook.drmaciver.com/posts/2020-02-26-16:07.html"&gt;learn from them&lt;/a&gt;.
-You need to be careful about &lt;em&gt;implementing&lt;/em&gt; them, especially at scale, but &lt;em&gt;having&lt;/em&gt; them is a harmless and necessary part of the idea generation process.&lt;/p&gt;
-
-
-&lt;p&gt;This is especially true because they provide grounding for your adjacent possible. Bad ideas can generate good ideas, because they act as &lt;a href="https://notebook.drmaciver.com/posts/2020-03-05-11:27.html"&gt;existence proofs&lt;/a&gt; that show you what a solution &lt;em&gt;might&lt;/em&gt; look like, and you can riff off that to generate good ideas.&lt;/p&gt;
-
-
-&lt;p&gt;You will never get the benefit of this if you are integrating critical thinking too early in the process, because you are &lt;a href="https://notebook.drmaciver.com/posts/2020-03-06-07:46.html"&gt;censoring&lt;/a&gt; a critical part of the process.
-Reproduction and selection are &lt;em&gt;separate parts&lt;/em&gt; of the evolution of ideas, and if you try to integrate them too tightly your idea generation process will feel unneccessarily difficult.&lt;/p&gt;
-
-
-&lt;p&gt;I recommend both of the books I mentioned, but especially de Bono's lateral thinking book.
-However, I can tell you the most useful idea in the book in one sentence:
-When you want to generate ideas, give yourself a prompt (ways to do X, Y, Z), decide how many you want (fifty is a good number, but start with ten if you're unsure), and write down that many ideas. They can be ridiculous, they can certainly be bad, they don't have to be things you'd want to do or even could do, they just have to be ideas attached to the prompt.&lt;/p&gt;
-
-
-&lt;p&gt;After you've done that, &lt;em&gt;then&lt;/em&gt; is the time to mine through the ideas to see if there's anything interesting there, but until you've actually generated the ideas there's no point being too critical.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-03-07-09:44.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-07-11:33.html</id>
     <title>COULDDO vs TODO</title>
@@ -521,7 +455,7 @@ Someone visits the planet and tells them, “Hey, why are you still using this a
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-08-08:53.html</id>
     <title>You can't actually explain everything to laypeople</title>
-    <updated>2020-03-08T08:53:00+00:00</updated>
+    <updated>2020-03-08T09:27:49+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;You can't actually explain everything to laypeople&lt;/p&gt;
@@ -577,5 +511,60 @@ Sometimes the only way to do that is to first make them not a layperson.&lt;/p&g
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-03-08-08:53.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-03-09-11:13.html</id>
+    <title>The art of not having opinions</title>
+    <updated>2020-03-09T11:13:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;The art of not having opinions&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-03-09&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;In the same conversation with Dave that lead to us &lt;a href="https://notebook.drmaciver.com/posts/2020-02-28-06:33.html"&gt;talking about which way people veer to avoid collisions&lt;/a&gt; we ended up playing a sort of game.&lt;/p&gt;
+
+
+&lt;p&gt;For context: Dave works in transport. Transport is something we all encounter on a very regular basis, so we all tend to think about it a lot. However, transport is a complex system, so it's &lt;a href="https://notebook.drmaciver.com/posts/2020-03-04-11:18.html"&gt;more broken&lt;/a&gt; and &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-11:43.html"&gt;less comprehensible&lt;/a&gt; than you might intuitively expect it to be. As a result, most people's opinions on transport are &lt;em&gt;bad&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;So, the game: I had to keep coming up with transport opinions I held, and Dave would judge if they were bad opinions.&lt;/p&gt;
+
+
+&lt;p&gt;Eventually we ran out of time or got distracted or something (I forget) and I made it to that point without having any bad opinions. I was quite pleased by this.&lt;/p&gt;
+
+
+&lt;p&gt;Another place I was pleased with myself recently was my performance on the &lt;a href="https://programs.clearerthinking.org/common_misconceptions.html"&gt;common misconceptions&lt;/a&gt; test. The number of things I got right was only so so (I forget exactly, but I think about 85% right?), but I was almost perfectly calibrated: The ones where my confidence was high were right, the ones where my confidence was low were right in about the proportion they should be.
+This was a bit surprising to me, as in the past I have definitely not been that well calibrated on similar things.&lt;/p&gt;
+
+
+&lt;p&gt;I think these both happened for fairly general reasons: Over the last decade, I've gotten much better at not having opinions on things.&lt;/p&gt;
+
+
+&lt;p&gt;This might be surprising to you, as I have a &lt;em&gt;lot&lt;/em&gt; of opinions, but it makes sense: I've not gotten better at having fewer opinions, I've gotten better at not having opinions on any given thing unless it makes sense for me to do so.&lt;/p&gt;
+
+
+&lt;p&gt;There's a lot of social pressure against doing this.
+We basically use having opinions at eachother as a social bonding activity to make sure that the person we're talking to has the "right" sort of politics, so there's a lot of social pressure against this, but I think it's worth doing if we want our opinions to be truth tracking.&lt;/p&gt;
+
+
+&lt;p&gt;Two useful prompts for recalibrating opinions:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Is it &lt;em&gt;useful&lt;/em&gt; for me to have an opinion on this? If not, why do I have one?&lt;/li&gt;
+&lt;li&gt;If this opinion were wrong, would I be able to tell?&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;If the answer to either of these is no, why are you having an opinion on it? At the very least, you should be less confident in asserting it.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-03-09-11:13.html" rel="alternate"/>
   </entry>
 </feed>
