@@ -68,3 +68,4 @@
 * [ ] Everything is a teachable moment
 * [ ] Berkson's paradox is everywhere
 * [ ] The market for lemons is everywhere
+* [ ] You can read however you like. You don't have to read the whole thing.
