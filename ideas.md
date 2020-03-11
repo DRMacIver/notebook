@@ -66,3 +66,5 @@
 * [ ] The Inner Game of Celeste
 * [ ] Separating emotional responses from the need to act
 * [ ] Everything is a teachable moment
+* [ ] Berkson's paradox is everywhere
+* [ ] The market for lemons is everywhere
