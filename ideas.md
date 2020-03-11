@@ -60,4 +60,6 @@
 * [ ] How to communicate about problems
 * [ ] You don't actually have to respect people as much as they want you to
 * [ ] The Inner Game of Tennis on competition
+* [ ] Notes on confidence
+* [ ] Nonagreement vs disagreement: Just because you don't agree with someone doesn't mean you have to disagree
 * [x] ~~"How are you so productive?" (answer: It's a depression coping strategy )~~
