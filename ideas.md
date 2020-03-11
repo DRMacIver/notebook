@@ -62,4 +62,7 @@
 * [ ] The Inner Game of Tennis on competition
 * [ ] Notes on confidence
 * [ ] Nonagreement vs disagreement: Just because you don't agree with someone doesn't mean you have to disagree
-* [x] ~~"How are you so productive?" (answer: It's a depression coping strategy )~~
+* [ ] Firewalls as a way to create safe places to experiment
+* [ ] The Inner Game of Celeste
+* [ ] Separating emotional responses from the need to act
+* [ ] Everything is a teachable moment
