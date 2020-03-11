@@ -344,10 +344,23 @@ def do_build(rebuild=False, full=True, name=''):
 
     posts.sort(key=lambda p: p.name, reverse=True)
 
+    new_count = 5
+    new_posts = posts[:new_count]
+
+    old_posts = []
+
+    for post in posts[new_count:]:
+        date = dateutil.parser.parse(post.date)
+        date = f"{date.year}-{date.month:02d}"
+
+        if not old_posts or date != old_posts[-1][0]:
+            old_posts.append((date, []))
+        old_posts[-1][-1].append(post)
+
 
     with open(INDEX_PAGE, 'w') as o:
         o.write(TEMPLATE_LOOKUP.get_template('index.html').render(
-            posts=posts, title="Thoughts from David R. MacIver",
+            new_posts=new_posts, old_posts=old_posts, title="Thoughts from David R. MacIver",
         ))
 
 
