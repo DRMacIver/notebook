@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-03-10T12:38:00+00:00</updated>
+  <updated>2020-03-11T07:15:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,59 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-03-07-11:43.html</id>
-    <title>Stuff just happens and you probably don't know why</title>
-    <updated>2020-03-07T12:02:47+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Stuff just happens and you probably don't know why&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-03-07&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I get ill a lot.&lt;/p&gt;
-
-
-&lt;p&gt;Why? Who knows. It's always happened to me. There are any number of theories. Maybe I have a weird immune system. Maybe I touch my face a lot. Maybe I'm a bit too stressed and not breathing properly as a result and that makes me notice mild illnesses more. Maybe it's a consequence of bad diet.&lt;/p&gt;
-
-
-&lt;p&gt;It is almost certain not monocausal and is because of a number of independent things that don't actually interact but each just up my chances of getting ill, because getting ill is a highly nondeterministic process that is an accumulation of many different things.&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, you know that big 20th century crime wave? Due to social breakdown, modernity, changing demographics, toxic masculinity responding to the different gender roles in an increasingly feminist world, the consequences of multiple wars, globalisation, and &lt;a href="https://en.wikipedia.org/wiki/Lead%E2%80%93crime_hypothesis"&gt;oops never mind it was probably just lead&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;While we're on the subject of toxic masculinity, you know how every woman has experiences of being cat called in public by men?&lt;/p&gt;
-
-
-&lt;p&gt;No, that's not true actually. It's definitely the &lt;em&gt;majority&lt;/em&gt; experience, but there are multiple women I know who have cautiously said to me "It's really weird. This just doesn't happen to me. Other women talk about how this is some ubiquitous thing and I've just never seen it". It's not an attractiveness thing - the women I've heard this from are mostly very attractive.&lt;/p&gt;
-
-
-&lt;p&gt;That's not to say that cat calling isn't a problem. It's a problem, of course, a major one. But somehow it's one that some women don't experience, and it's fairly mysterious as to why. It's easy to generate hypotheses, but it's hard to say which of them are accurate because it's &lt;em&gt;extremely&lt;/em&gt; unlikely that it's monocausal, and if it is monocausal it's probably caused by something completely random like preferred colour palette or getting enough sleep or something.&lt;/p&gt;
-
-
-&lt;p&gt;Seemingly almost everyone in London is tired. Seemingly almost everyone in tech has a sleeping disorder. Why? Who knows. It's probably not monocausal, and if it is it's probably something random like the design of the tube network or homophily along shared social traits of people who sleep badly.&lt;/p&gt;
-
-
-&lt;p&gt;Rival Voices has this idea of &lt;a href="https://twitter.com/nosilverv/status/1205082282979184640"&gt;secret handshake theory&lt;/a&gt; as implicit ways of groups signalling compatibility, and secret handshakes control what parts of the world you have access to, but I think this if anything &lt;em&gt;understates&lt;/em&gt; how weirdly specific our lived experiences are, and how many areas of life are opened to or locked away from us by seemingly inconsequential choices and behaviours.&lt;/p&gt;
-
-
-&lt;p&gt;We like the idea that the world makes sense and things happen to us for reasons, but this greatly underestimates its complexity, and the number of things that are indirect consequences of seemingly unrelated things that just change the numbers enough to completely shift our lived experience into a different pattern from other people.&lt;/p&gt;
-
-
-&lt;p&gt;Because we focus on this idea that the world makes sense, we tend to fit our experiences to simple narratives, and this causes us to assume they are much more shared than they are. We talk about the typical mind fallacy, but the typical lived experience fallacy is if anything more pervasive. Your lived experience is probably less universally shared than you think it is, and where it's shared it's probably not for the reasons you think it is.&lt;/p&gt;
-
-
-&lt;p&gt;Questions like this are frustrating because they're in some sense purely empirical and &lt;em&gt;should&lt;/em&gt; be answerable by empirical and logical means, but you're probably never going to know the answer until the nature of the world shifts and the problem fixes itself and becomes obvious in retrospect.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-03-07-11:43.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-07-12:12.html</id>
     <title>If a task is impossible, try making it harder</title>
@@ -519,7 +466,7 @@ We basically use having opinions at eachother as a social bonding activity to ma
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-10-12:38.html</id>
     <title>Homophily and the tyranny of false positives</title>
-    <updated>2020-03-10T12:38:00+00:00</updated>
+    <updated>2020-03-10T13:37:44+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Homophily and the tyranny of false positives&lt;/p&gt;
@@ -552,5 +499,59 @@ My suspicion is that a lot of communities will tend to become more homogenous ov
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-03-10-12:38.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-03-11-07:15.html</id>
+    <title>Suspension of annoyance</title>
+    <updated>2020-03-11T07:15:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Suspension of annoyance&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-03-11&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I've been banging on a bit about "&lt;a href="https://amzn.to/38I7D5z"&gt;The Courage to be Disliked&lt;/a&gt;" since &lt;a href="https://twitter.com/m_ashcroft/"&gt;Michael Ashcroft&lt;/a&gt; recommended it.
+My friend &lt;a href="https://twitter.com/rixxtr"&gt;Tobi&lt;/a&gt; read it as a result, and the following is his review from &lt;a href="https://discord.gg/jm97tDN"&gt;bookchat discord&lt;/a&gt;:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;I finished The Courage to be Disliked. It's a thoroughly annoying book, obnoxiously written, and I strongly disagree with a whole lot of what it says. At the same time it has been extremely useful to me, in an immediate and actionable way, and I'm very glad I've read it.&lt;/p&gt;
+&lt;p&gt;Useful, yet punchable.&lt;/p&gt;
+&lt;p&gt;I only found this thread on Twitter afterwards, and it contains pretty much all of the book without the obnoxiousness: https://twitter.com/visakanv/status/1037715339314847747&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;I cannot disagree with this review. The book is objectively very annoying. However I was not particularly annoyed while reading it.&lt;/p&gt;
+
+
+&lt;p&gt;Part of this I've had practice. The particular foibles of this book were new to me, but I've read a lot of self-help and niche (especially trauma centric) therapy books recently, which has allowed me to get used to a particular style: That of a slightly self-obsessed author telling you their life story and the transformation they've been through, wrapped around what would probably be a fairly decent essay about a useful technique threaded through the entire thing in a way that makes it slightly hard to skip reading about the journey.&lt;/p&gt;
+
+
+&lt;p&gt;(I said I wasn't annoyed while &lt;em&gt;reading&lt;/em&gt; the books, not that I wasn't annoyed about the books)&lt;/p&gt;
+
+
+&lt;p&gt;When reading those books, I could look for things to argue with. It wouldn't be hard. The books are full of poorly supported pseudoscience, weak arguments, and irrelevant digressions. But I knew they would be going in, so why worry about it? I'm there to see if I can extract anything interesting from the book. I don't really care about whether the author is right or wrong, and I expect they're mostly wrong, but I can still try to derive some useful insights from their work.&lt;/p&gt;
+
+
+&lt;p&gt;To go a bit Adlerian about this, what purpose is the annoyance with the book serving you?&lt;/p&gt;
+
+
+&lt;p&gt;I think it's mostly protective: Someone is saying wrong things, and you want to treat it as someone arguing with you, because if you were to take on the wrong things you would go on to believe wrong things, and that's bad.&lt;/p&gt;
+
+
+&lt;p&gt;But you could just do neither of those things. Don't read the book on the assumption that you'll believe anything the author has to say, but also don't be annoyed when you don't.&lt;/p&gt;
+
+
+&lt;p&gt;Instead, take on the information that this is what the author believes. Acknowledge the possibility that some of it &lt;a href="https://notebook.drmaciver.com/posts/2020-02-26-16:07.html"&gt;might be worth trying&lt;/a&gt;, but don't read it with any greater expectation of truth than that.
+Once you've done that, the protective mechanism of annoyance is not especially useful,
+and you might as well just choose not to do that.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-03-11-07:15.html" rel="alternate"/>
   </entry>
 </feed>
