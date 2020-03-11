@@ -15,6 +15,7 @@
 * [x] Touch starvation is widespread and very bad
 * [x] Doing people a favour by making decisions.
 * [x] Installing cut out switches in your thought processes
+* [x] The tyranny of false positives as a driver of homophily
 * [ ] Permission as the fundamental social need
 * [ ] Pluralistic ignorance
 * [ ] Ways in which I could improve my communication skills
@@ -37,7 +38,6 @@
 * [ ] The "Why are you saying this?" heuristic
 * [ ] Support Group and how to run your own
 * [ ] You're probably underestimating how bad school was
-* [ ] The tyrranny of false positives as a driver of homophily
 * [ ] Plausible deniability as a technical feature
 * [ ] Clearing out emotional noise
 * [ ] Fixing anxiety
@@ -57,4 +57,7 @@
 * [ ] Signalling impossibility to avoid coercion
 * [ ] Polarizing as a general practice
 * [ ] Helping others level up
+* [ ] How to communicate about problems
+* [ ] You don't actually have to respect people as much as they want you to
+* [ ] The Inner Game of Tennis on competition
 * [x] ~~"How are you so productive?" (answer: It's a depression coping strategy )~~
