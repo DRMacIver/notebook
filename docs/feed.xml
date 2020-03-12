@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-03-11T09:35:51+00:00</updated>
+  <updated>2020-03-12T07:45:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,42 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-03-07-12:12.html</id>
-    <title>If a task is impossible, try making it harder</title>
-    <updated>2020-03-07T12:18:55+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;If a task is impossible, try making it harder&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-03-07&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;If a lecture is a struggle, try speeding up the video.&lt;/p&gt;
-
-
-&lt;p&gt;If you struggle to read fast enough, try using a speed reader app that just scrolls the words by at 1000wpm.&lt;/p&gt;
-
-
-&lt;p&gt;If a book is too hard, try making it harder by reading it aloud. Maybe do weird balancing acts while doing it.&lt;/p&gt;
-
-
-&lt;p&gt;Often the rate limiting factor on difficult tasks is not actually that they're too hard, it's that we are failing to engage our full attention on them. This is particularly true if you're very smart and/or ADHD or somewhere vaguely in its vicinity. The world is literally moving too slowly for you, which means that you cannot bring your full attention to it, and as a result you never enter flow and the entire thing becomes a painful exercise which you can't help but fail.&lt;/p&gt;
-
-
-&lt;p&gt;This creates the paradoxical solution that impossible seeming tasks are not too hard for you, they're too easy for you.
-If you make them harder, you might find that they become possible, because they become something that can absorb your full attention. &lt;/p&gt;
-
-
-&lt;p&gt;I feel like this is actually the true secret to success to a lot of productivity methodologies. They don't actually help, but by focusing on the methodology they become something that &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-07:38.html"&gt;you can nerd out about&lt;/a&gt; and because your nerding task is integrated with your grounding task, the two together can consume your full attention in a way that the mere task on its own could not. &lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-03-07-12:12.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-07-12:35.html</id>
     <title>Untangling moral concepts</title>
@@ -553,5 +517,70 @@ and you might as well just choose not to do that.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-03-11-07:15.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-03-12-07:45.html</id>
+    <title>How to read books without getting religion</title>
+    <updated>2020-03-12T07:45:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;How to read books without getting religion&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-03-12&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;fvathynevgl (I've got official sanction to pronounce this "Vathy" if that's helpful to you in reading this post without demonic incursions) has &lt;a href="https://www.fvathynevgl.com/cooperative-spherical-cows/"&gt;written about cooperative spherical cows&lt;/a&gt; as a model of various self-help ideologies:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Cooperative spherical cow philosophies postulate a certain model of human behaviour and give advice on how to fix your relationships. Unfortunately, whether the advice works is conditional on all humans adhering to the ideal model, which they don't.&lt;/p&gt;
+&lt;p&gt;All cooperative spherical cow philosophies have a hidden precondition which makes them applicable in the real world. If it is mentioned in a book at all, it will be as an off-hand remark or digression, accepted at face value and not explored in depth. You can tell it's a hidden precondition because it makes the philosophy no longer look like a silver bullet.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;This is somewhat in response to The Courage to be Disliked which I wrote about in &lt;a href="https://notebook.drmaciver.com/posts/2020-03-11-07:15.html"&gt;suspension of annoyance&lt;/a&gt;. Apparently &lt;a href="https://twitter.com/fvathynevgl/status/1237666299146272768"&gt;the timing is a coincidence&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, I agree with their post, I just think that it's only true under hidden preconditions that makes it look applicable in the real world.&lt;/p&gt;
+
+
+&lt;p&gt;OK, that's unfair, but I couldn't resist the opportunity for the line. My more nuanced counterbalance to the post is this: Books like they are describing work best when you take them seriously but not literally, and the failure mode they are describing only occurs if you take them literally. If you read the books described and get religion over them and try to apply them verbatim to your life, it will likely go very badly for you, but the solution is just not to do that.&lt;/p&gt;
+
+
+&lt;p&gt;This is a good thing to point out, because a lot of people do take books literally and get religion over them, and this reliably goes badly. I have likely been undercautious with my book recommendations as a result because I've assumed people have a better attitude to reading than they do, and will update accordingly.&lt;/p&gt;
+
+
+&lt;p&gt;That being said... I think this is, similarly, a post that should be taken seriously and not literally, because it will cause you to miss out on a lot of useful ideas.
+There is enough &lt;a href="https://notebook.drmaciver.com/posts/2020-02-16-14:22.html"&gt;ghost knowledge&lt;/a&gt; out there without also ignoring that which is written down.
+The books fvathynevgl recommends sound good, and I intend to read them, but only being able to extract knowledge from impeccable sources is a severe limitation that I cannot really recommend.&lt;/p&gt;
+
+
+&lt;p&gt;As a side note, I am also interested as to why exactly these books are not best sellers if they are so much better than the books that are best sellers.
+This is not a disagreement with fvathynevgl, I'm just genuinely curious. Is there a need that the others are filling that these are not?&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, here is my base recommendation for how to engage with books:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;The author is &lt;em&gt;always&lt;/em&gt; overly convinced of the truth and usefullness of their position. If they weren't, they wouldn't be writing the book. You cannot rely on them to provide the necessary preconditions, to the point where even if they do provide those preconditions you should &lt;em&gt;still&lt;/em&gt; assume you need to figure them out on your own.&lt;/li&gt;
+&lt;li&gt;The author is a nerd about the subject, in the sense outlined in &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-07:38.html"&gt;my post on nerding&lt;/a&gt;. They are much more interested in the subject than you are, and all of their advice has the precondition3. The book is a book. As such, &lt;a href="https://notebook.drmaciver.com/posts/2020-02-18-12:24.html"&gt;the books you create out of it in your head&lt;/a&gt; are more interesting than the book as an actual physical or digital object.&lt;/li&gt;
+&lt;li&gt;The book is best treated not as a source of truth but as a textual artefact that you are examining.&lt;/li&gt;
+&lt;li&gt;The artefact is an &lt;a href="https://notebook.drmaciver.com/posts/2020-03-05-11:27.html"&gt;existence proof&lt;/a&gt; of a particular sort of mindset. You're not trying to adopt that mindset for daily use, but by being able to engage with it and figure out what it's like you are more prepared to adapt the tools from it.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;In order to treat books as artefacts of study rather than sources of truth you need to have reliable belief formation skills (so that you don't get lead in bad directions), and you need to have confidence that you do (so that reading things that are not true &lt;em&gt;feels&lt;/em&gt; safe as well as &lt;em&gt;is&lt;/em&gt; safe).&lt;/p&gt;
+
+
+&lt;p&gt;Recommended starting points for this: &lt;a href="https://notebook.drmaciver.com/posts/2020-03-09-11:13.html"&gt;Don't believe things unless you can act on them&lt;/a&gt;, and then &lt;a href="https://notebook.drmaciver.com/posts/2020-02-26-16:07.html"&gt;experiment with those beliefs and see how it pans out&lt;/a&gt;.
+You will rapidly find the preconditions for applicability of anything you learn from books when you do this, and you will do so much more reliably than anything the authors tell you about those preconditions.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-03-12-07:45.html" rel="alternate"/>
   </entry>
 </feed>
