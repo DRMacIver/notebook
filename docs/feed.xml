@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-03-12T10:32:08+00:00</updated>
+  <updated>2020-03-13T09:49:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,78 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-03-07-12:35.html</id>
-    <title>Untangling moral concepts</title>
-    <updated>2020-03-07T13:33:55+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Untangling moral concepts&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-03-07&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;The following are not the same thing:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;You &lt;em&gt;must&lt;/em&gt; do the thing.&lt;/li&gt;
-&lt;li&gt;You &lt;em&gt;should&lt;/em&gt; do the thing.&lt;/li&gt;
-&lt;li&gt;You have an &lt;em&gt;obligation&lt;/em&gt; to do the thing.&lt;/li&gt;
-&lt;li&gt;It is &lt;em&gt;morally permissible&lt;/em&gt; to do the thing.&lt;/li&gt;
-&lt;li&gt;It is &lt;em&gt;morally virtuous&lt;/em&gt; to do the thing.&lt;/li&gt;
-&lt;li&gt;It is &lt;em&gt;morally required&lt;/em&gt; to do the thing.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;Figuring this out is a process I call &lt;em&gt;untangling&lt;/em&gt;, which is essentially just a skill that you learn doing mathematics:
-Finding a bunch of examples where the concepts separate.&lt;/p&gt;
-
-
-&lt;p&gt;When untangling it's important that your examples pass the "c'mon, really?" test. They shouldn't be contrived or annoying, but should be points of separation that actually matter in daily life.&lt;/p&gt;
-
-
-&lt;p&gt;"Obey the laws of physics". This is definitely 1 and 4, and definitely not 3, 5, or 6. There's no real moral component to physics, so there's no real moral significance to it. It's certainly permissible, because if you literally have no option but to do the thing it would be bizarre to consider it forbidden.&lt;/p&gt;
-
-
-&lt;p&gt;"Obey the speed limit" is an example where 2 through 6 apply to varying degrees, but 1 does not. People clearly &lt;em&gt;can&lt;/em&gt; break the speed limit and do so all the time.&lt;/p&gt;
-
-
-&lt;p&gt;More, it's &lt;em&gt;common&lt;/em&gt; to have examples like this where people behave low grade unmorally for convenience.
-Moral norms are more like guidelines than rules, and almost everyone implicitly understands this and treats them as such.
-So, when considering moral norms, don't consider them as ironclad rules, consider them as things you're going to &lt;em&gt;mostly&lt;/em&gt; follow. Depending on how serious they are, you'll probably want to follow them more often than not (the moral norms against killing people are stronger than the moral norms against spitting. You would probably still kill someone in some circumstances, even ones you didn't consider morally justified, but they'd have to be pretty extreme).&lt;/p&gt;
-
-
-&lt;p&gt;"Brush your teeth" is something you should do which mostly lacks an moral component, so is (2) without any of the others.&lt;/p&gt;
-
-
-&lt;p&gt;Suppose you have made a promise to do something minor. Say, meet a friend for coffee. Suppose also that a major family crisis has occurred and they need you. "Meeting your friend for coffee" is an example of 3 on its own. You have an obligation (3) but you shouldn't do it, it's not permissible, it's not required, and it's not virtuous.&lt;/p&gt;
-
-
-&lt;p&gt;Suppose someone is being a dick to you. You get angry at them. This is morally permitted, but it's not required or virtuous. Whether you &lt;em&gt;should&lt;/em&gt; do it is situation dependent (it might be tactically wise to do so), but lets say it's not a good idea. So this is an example of (4) without any of the others.&lt;/p&gt;
-
-
-&lt;p&gt;So none of (1) through (4) imply anything else on the list. Now we get into the tricky bits where I'm not entirely sure how cleanly they separate.&lt;/p&gt;
-
-
-&lt;p&gt;Staying calm in a heated situation where someone is being a dick to you is an example of (5) that is not (6) - it is morally virtuous without being required. Giving all your money to charity is another example.&lt;/p&gt;
-
-
-&lt;p&gt;Are there things which are morally virtuous but not morally permissible? I'm not sure. I can come up with some contrived examples where the answer is "Maybe?" (trolley problem type stuff). I think in practice this is probably not an interesting category and all the details will be too contextual.&lt;/p&gt;
-
-
-&lt;p&gt;Are there examples which are morally required but not morally virtuous? Another maybe. I'd say "not committing murder" is definitely ethically required, but it's not particularly praiseworthy. Unclear that it's virtuous, but it's certainly more virtuous than committing murder.&lt;/p&gt;
-
-
-&lt;p&gt;My inclination is that for practical purposes we have (6) implies (5) implies (4), and the examples above show that these are the only implications possible.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-03-07-12:35.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-07-14:06.html</id>
     <title>Computer games as therapeutic tools</title>
@@ -521,7 +449,7 @@ and you might as well just choose not to do that.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-12-07:45.html</id>
     <title>Books should be taken seriously but not literally</title>
-    <updated>2020-03-12T10:32:08+00:00</updated>
+    <updated>2020-03-12T10:33:06+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Books should be taken seriously but not literally&lt;/p&gt;
@@ -582,5 +510,95 @@ You will rapidly find the preconditions for applicability of anything you learn 
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-03-12-07:45.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-03-13-09:49.html</id>
+    <title>Communication: Collaboration and Conflict</title>
+    <updated>2020-03-13T09:49:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Communication: Collaboration and Conflict&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-03-13&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;This is loosely a follow-on to &lt;a href="https://twitter.com/fvathynevgl/status/1238082764609671170"&gt;discussions with Vathy&lt;/a&gt; about &lt;a href="https://notebook.drmaciver.com/posts/2020-03-12-07:45.html"&gt;the previous post&lt;/a&gt; but this isn't about books, it's about communication.&lt;/p&gt;
+
+
+&lt;p&gt;The model scene for communication that I'll be thinking about in this post is two people talking to each other in person. A lot of what I'm going to be saying applies in general, but there are different constraints and considerations.&lt;/p&gt;
+
+
+&lt;p&gt;Every act of communication contains two things: collaboration and conflict.&lt;/p&gt;
+
+
+&lt;p&gt;You are &lt;em&gt;collaborating&lt;/em&gt; in the sense that you are producing an artefact (the conversation) together, but you are in &lt;em&gt;conflict&lt;/em&gt; (in the Schelling sense) in that you are two presumably-human people whose values are imperfectly aligned.&lt;/p&gt;
+
+
+&lt;p&gt;How much of each is present varies, but no communication is free of either.&lt;/p&gt;
+
+
+&lt;p&gt;I've previously claimed &lt;a href="https://twitter.com/DRMacIver/status/1232716902352523264"&gt;you are underinvested in communication skills&lt;/a&gt;, but I think it's worth unpacking what communication skills &lt;em&gt;do&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Lets think about teaching. Teaching is very much an act of communication. As I've previously argued, &lt;a href="https://notebook.drmaciver.com/posts/2020-03-08-08:53.html"&gt;you can't teach anything to anyone&lt;/a&gt; (I've also &lt;a href="https://www.drmaciver.com/2018/10/how-to-explain-anything-to-anyone/"&gt;previously claimed that you can&lt;/a&gt;. I'll admit I was being a bit hyperbolic there),
+and the reason for that is that the other person &lt;em&gt;may not be willing to do the work&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;I've done a modest amount of one-on-one maths tutoring. Not a lot, and only with a handful of students, so I definitely wouldn't claim expertise in this, but I've taken a couple of students from "this makes no sense and I hate it" to "oh, this makes total sense and is kinda neat". I've also had one student who I &lt;em&gt;completely&lt;/em&gt; failed to teach.
+Why? Because he didn't care, and would not engage. He would not do the work, and it was impossible for me to open his skull and insert mathematics directly into his brain, so no matter how well I taught him he would never learn.
+It's possible, likely even, that I was missing some skill that would get him interested, but without fundamentally changing his values around willingness to learn mathematics (which I didn't know how to do), it didn't matter how clearly I communicated the subject to him, he wasn't going to learn it.&lt;/p&gt;
+
+
+&lt;p&gt;In teaching, there are two categories of communication skills that are relevant (there are more than two, but I'm only going to point out two):&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Getting someone interested in the subject.&lt;/li&gt;
+&lt;li&gt;Communicating the subject in a way that they can understand it.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;I'm quite bad at (1) because I'm very bad at not being interested in things. Mea culpa. So in this post, I'm going to focus on (2).&lt;/p&gt;
+
+
+&lt;p&gt;One way to think of this aspect of communication skills is that it is about &lt;em&gt;workload management&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Suppose you had never been exposed to any mathematics, and you had to derive modern statistics from scratch.
+Obviously you can't do this, but imagine that you could in principle do this, and think about how much work it would be.
+That's the baseline for learning statistics.
+Every aspect of teaching is designed to make it easier to learn statistics than that.
+Ultimately you, the student, still need to do the work of learning and understanding statistics, but the purpose of the teacher is to save you a few thousand years of effort.&lt;/p&gt;
+
+
+&lt;p&gt;Ultimately, a lesson is primarily a collaboration between the teacher and the student, in which the goal of the teacher is to shoulder as much of the work as they reasonably can.
+This is, I think, a key feature of all communication skills:
+They are designed to manage the workload of the other party.&lt;/p&gt;
+
+
+&lt;p&gt;Even a bad communicator can communicate to a sufficiently dedicated student, but a good one can lower the level of dedication required.&lt;/p&gt;
+
+
+&lt;p&gt;These are what you might think of as the cooperative communication skills, ones that are designed to make the collaboration go as well as possible.
+But as I said at the beginning: Communication has two parts, collaboration and conflict.
+You can think of communication skills centered on the conflict as adversarial communication skills.&lt;/p&gt;
+
+
+&lt;p&gt;There is a useful workload management spin on adversarial communication skills too:
+They are designed to &lt;em&gt;increase&lt;/em&gt; the workload of the other party where they are trying to achieve goals that you don't want.&lt;/p&gt;
+
+
+&lt;p&gt;The &lt;a href="https://www.healthline.com/health/grey-rock#offer-nothing"&gt;grey rock&lt;/a&gt; method is a perfect example of this. When you are dealing with a toxic person, you distance and shut down your visible emotional responses.
+Their goal (which you do not want) is to get a rise out of you, and gray rocking makes it harder for them to do that.&lt;/p&gt;
+
+
+&lt;p&gt;From a collaboration point of view this looks like not communicating, but from a conflict point of view this is absolutely a communication skill, because it's managing the communication so that it goes in a way that you want rather than the other person wants.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-03-13-09:49.html" rel="alternate"/>
   </entry>
 </feed>
