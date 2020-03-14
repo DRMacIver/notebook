@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-03-13T10:32:14+00:00</updated>
+  <updated>2020-03-14T13:55:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,67 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-03-07-14:06.html</id>
-    <title>Computer games as therapeutic tools</title>
-    <updated>2020-03-07T14:21:47+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Computer games as therapeutic tools&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-03-07&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I think computer games are underrated therapeutic tools. Many people seem to know this, but it seems surprising to others, so I'd like to tell you about three that I find useful.&lt;/p&gt;
-
-
-&lt;p&gt;These are:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;Celeste&lt;/li&gt;
-&lt;li&gt;Slay the Spire&lt;/li&gt;
-&lt;li&gt;Untitled Goose Game&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;They each have slightly different functions.&lt;/p&gt;
-
-
-&lt;p&gt;Celeste is very good for inducing flow state. If I'm in a bad mood, or otherwise need to recover from something, Celeste allows me to drop into flow state almost instantly, because it's impossible to play Celeste and think at the same time, and it is a rich source of challenges that are right at the edge of my skill level.
-This is why it works - it is &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-12:12.html"&gt;hard enough to require full concentration&lt;/a&gt; but not too hard to be unachievable.&lt;/p&gt;
-
-
-&lt;p&gt;Another game in a similar genre to this is Hollow Knight. Hollow Knight does not work like Celeste for this. It's a decent enough game, but it's a bit too erratic in its pacing and the sort of decision making it requires to be a flow state on tap like Celeste is.&lt;/p&gt;
-
-
-&lt;p&gt;Slay the Spire's function is very simple: When I need a break from my brain I can play it for however long I want. It's the opposite of Celeste, in that it doesn't require flow, it just requires very basic reactivity and can be played while half zoned out. If Celeste lets me dial up my level of presentness in the moment, slay the spire lets me dial it way down.&lt;/p&gt;
-
-
-&lt;p&gt;(Playing Slay the Spire well requires more concentration and thought than that, but I never claimed I played it well)&lt;/p&gt;
-
-
-&lt;p&gt;Untitled Goose Game has an entirely different purpose. It's a diagnostic tool.&lt;/p&gt;
-
-
-&lt;p&gt;As &lt;a href="https://shkspr.mobi/blog/2020/01/the-value-of-videogames-or-why-i-think-untitled-goose-game-was-a-rip-off/"&gt;edent has pointed out&lt;/a&gt;, when considered on its merits as a game, Untitled Goose Game doesn't really have any. It's a very weak puzzle based game with not much play time and not a great deal of challenge to it.&lt;/p&gt;
-
-
-&lt;p&gt;On the other hand, you're a goose wreaking mayhem, and you can steal a man's slippers and drop them in the pond, then run around with his pipe in your beak, so there's that.&lt;/p&gt;
-
-
-&lt;p&gt;Untitled Goose Game is great if and only if you are currently able to experience the emotion of &lt;em&gt;malicious glee&lt;/em&gt;. You are causing problems on purpose, and that's hilarious. As such I find it a very useful diagnostic tool for telling how depressed I am. &lt;a href="https://notebook.drmaciver.com/posts/2020-03-06-07:46.html"&gt;Depression is in large part a restriction on emotional range&lt;/a&gt;, and having a tool that will reliably provoke a particular emotional response if I'm currently capable of experiencing it is very helpful for calibrating my current level. "Gleelessness" may lack the cachet of "Hopelessness", but it still seems to be a pretty reliable predictor of my depression levels. HONK.&lt;/p&gt;
-
-
-&lt;p&gt;These aren't the only games I play, but they're the main ones. And having a small library of them that I've played a lot of is helpful because they serve as a sort of &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-11:33.html"&gt;COULDDO list&lt;/a&gt; where if I'm not sure what to do, I can pick one of these up, and play them more or less on autopilot, and the effect works reliably. I expect I'll add to the list over time, but for now these seem to be a good set of tools for my personal therapeutic toolkit.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-03-07-14:06.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-07-14:34.html</id>
     <title>Touch starvation and group responsibility</title>
@@ -449,7 +388,7 @@ and you might as well just choose not to do that.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-12-07:45.html</id>
     <title>Books should be taken seriously but not literally</title>
-    <updated>2020-03-12T10:33:06+00:00</updated>
+    <updated>2020-03-13T11:06:34+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Books should be taken seriously but not literally&lt;/p&gt;
@@ -601,5 +540,64 @@ Their goal (which you do not want) is to get a rise out of you, and gray rocking
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-03-13-09:49.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-03-14-13:55.html</id>
+    <title>Alief/Belief Coherence</title>
+    <updated>2020-03-14T13:55:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Alief/Belief Coherence&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-03-14&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Let me start with a word: Alief. An Alief is like a belief, but instead of it being something you &lt;em&gt;think&lt;/em&gt; is true it's something you &lt;em&gt;feel&lt;/em&gt; is true (it's a pun you see - a-liefs come before b-liefs).&lt;/p&gt;
+
+
+&lt;p&gt;Alief is a very good word that I use a lot. If you don't have it yet, you're welcome, because you'll see it everywhere now.&lt;/p&gt;
+
+
+&lt;p&gt;It's particularly interesting to notice where your aliefs and beliefs diverge. Sometimes you believe things but you don't alieve them (e.g. you might know you are good at your job but experience impostor syndrome anyway), sometimes you alieve things but you don't believe them (you might think your friends secretly hate you).&lt;/p&gt;
+
+
+&lt;p&gt;As you might have noticed from those examples, it is often my experience that our beliefs are more functional than our aliefs.
+This isn't always the case. For example you might get a weird vibe off someone and go "No I'm just being unfair" and try to ignore it, only to later discover that they are indeed a massive creep who you are better off ignoring.
+You alieved that they were dangerous but you didn't believe it, and the belief let you astray.
+Hunches and intuition in general are often like this - you might have no objective reason to believe that a particular direction is promising, but you've got a strong hunch (an alief) that it would be.&lt;/p&gt;
+
+
+&lt;p&gt;An alief is just a felt sense (in &lt;a href="https://rivalvoices.substack.com/p/what-even-is-focusing-and-why-eugene"&gt;the Gendlin sense&lt;/a&gt;) that something is true, but it's a felt sense that is usefully framed as being like a belief where you've just skipped over the surrounding propositional infrastructure.&lt;/p&gt;
+
+
+&lt;p&gt;One of the advantages of beliefs is that we can use &lt;a href="https://en.wikipedia.org/wiki/Metacognition"&gt;metacognition&lt;/a&gt; to examine them. It's not actually true that we arrive at beliefs through simple propositional reasoning, but we're much more able to pretend that we are - we can put forth logical arguments for them, sometimes backfilling to construct ones where we realise we don't have them, etc.
+Often once we attack a belief with metacognition we might find it degrades to an alief - we no longer think it's true, but we feel it's true.&lt;/p&gt;
+
+
+&lt;p&gt;As this process suggests, there isn't actually a clear distinction between aliefs and beliefs: Beliefs are formed on aliefs, aliefs are informed by beliefs, and the whole thing is really a much more complicated network of interplay between felt sense, explicit verbal thought, and action.&lt;/p&gt;
+
+
+&lt;p&gt;It is perhaps better to think of alief and belief as &lt;em&gt;directions&lt;/em&gt; - the more your relationship to a proposition is built on felt sense, the more like an alief it is, the more it is built on explicit reasoning, the more like a belief it is, but the reality is that there are no pure aliefs and no pure beliefs, only things that are more or less each (note that alief and belief are not opposite directions, but orthogonal ones).&lt;/p&gt;
+
+
+&lt;p&gt;Regardless of how pure they are though, we will still run into situations where we find that what we &lt;em&gt;think&lt;/em&gt; is true is in conflict with what we &lt;em&gt;feel&lt;/em&gt; is true.
+What do we do then?&lt;/p&gt;
+
+
+&lt;p&gt;A difficulty that people may have is that because they can explicitly work with beliefs through metacognition, they can update their beliefs relatively easily, but they have no such tools for updating their aliefs.
+Thus in a conflict one of two things will happen: Their beliefs will change, or they will be stuck with unhelpful aliefs (which they believe to be false but cannot shake).&lt;/p&gt;
+
+
+&lt;p&gt;This is where tools like Focusing come in, allowing us to work better with the felt sense.&lt;/p&gt;
+
+
+&lt;p&gt;In this sense, things such as the tools I outlined in &lt;a href="https://notebook.drmaciver.com/posts/2020-02-20-09:31.html"&gt;Emotional reactions as legacy code&lt;/a&gt; can be thought of as the other half of the toolkit for ensuring coherence between your beliefs and your aliefs, bringing your aliefs into alignment with your beliefs when it is &lt;a href="https://notebook.drmaciver.com/posts/2020-03-03-09:07.html"&gt;the feeling that is wrong and that needs to change&lt;/a&gt;.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-03-14-13:55.html" rel="alternate"/>
   </entry>
 </feed>
