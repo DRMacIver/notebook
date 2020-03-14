@@ -16,8 +16,10 @@
 * [x] Doing people a favour by making decisions.
 * [x] Installing cut out switches in your thought processes
 * [x] The tyranny of false positives as a driver of homophily
+* [x] Emotional regulation as resolving alief/belief inconsistencies
 * [ ] Permission as the fundamental social need
 * [ ] Pluralistic ignorance
+* [ ] Eye pressure and switching contexts as an enabling technology
 * [ ] Ways in which I could improve my communication skills
 * [ ] Notes on my experience of poly
 * [ ] Specific binary goals as a tool for self-development
@@ -41,14 +43,12 @@
 * [ ] Plausible deniability as a technical feature
 * [ ] Clearing out emotional noise
 * [ ] Fixing anxiety
-* [ ] Emotional regulation as resolving alief/belief inconsistencies
 * [ ] You can't turn off skills and it's annoying
 * [ ] Notes on attraction and sexuality
 * [ ] Policy as non-aggregate of individual ethical decisions
 * [ ] Intuition as guiding heuristic in reasoning processes
 * [ ] Being willing to blackbox areas of knowledge
 * [ ] Transactive memory and loss
-* [ ] Eye pressure and switching contexts as an enabling technology
 * [ ] Anxiety management as intelligence enhancement
 * [ ] Safety as an enabling technology
 * [ ] Need and desire as drivers of progress
