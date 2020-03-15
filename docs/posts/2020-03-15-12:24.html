@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+DRMacIver's Notebook: Berkson's paradox is everywhere
+    </title>
+    <link rel="stylesheet" href="/pygments.css"/>
+    <link rel="stylesheet" href="/tufte.css"/>
+    <link rel="stylesheet" href="/latex.css"/>
+    <link rel="stylesheet" href="/drmnotes.css"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
+});
+
+MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
+  console.log(message)
+});
+
+</script>
+
+  </head>
+
+  <body>
+    <article>
+        <h1><a href="/">DRMacIver's Notebook</a></h1>
+        <p class=subtitle>Berkson's paradox is everywhere</p>
+
+        
+
+<section id="the-post">
+<p class=subtitle>Berkson's paradox is everywhere</p>
+<dl class=metadata>
+<dt>Published</dt>
+<dd class="post-date">2020-03-15</dd>
+</dl>
+
+<p>Everyone likes to tell you that correlation is not causation. They're right, but they're also boring. Also <a href="https://www.drmaciver.com/2014/05/spurious-correlations-and-causation/">all of their examples are wrong</a>.</p>
+<p>What they don't tell you about so often is the most common reason why correlation does not imply correlation is that most of the correlations you see in day to day life are, in some sense, fake: They are not present in the underlying reality, they're an artifact of how you're looking at it. This is <em>Berkson's paradox</em>.</p>
+<p>My go to example of this (I don't actually know if it's true, but it's a nice illustration) is that professional tennis players tend to be either tall or fast - tall tennis players tend to be slower, fast tennis players tend to be shorter.</p>
+<p>You could come up with some complicated biological explanation about why these two traits might be negatively correlated, but it would be wrong, because they're not negatively correlated in the general population, or at least not to the same degree. The reason is much simpler than that: Short, slow, people will rarely play tennis professionally.</p>
+<p>As a result, if height and speed are entirely independent of eachother (even if they're slightly positively correlated!) when you look at professional tennis players they will become negatively correlated, because it's more likely to be one or the other than it is to be both.</p>
+<p>This may seem like a weird niche edge case, but once you start noticing it it's <em>everywhere</em>.</p>
+<p>For example, you know how popular things are often kinda bad and the really good things are niche? Is that true, or is it just that you don't notice things that are bad and unpopular?</p>
+<p>You know how people who disagree with you seem kinda shouty? Do you notice people who disagree with you and are not shouty?</p>
+<p>This repeats over and over again: The patterns we see in day to day life come as much from the process that causes us to observe the data as it does from any underlying causal mechanism.</p>
+<p>Does this matter? I think it does, for two reasons:</p>
+<ol>
+<li>As with "correlation does not imply causation" in general, we need to be careful about letting the inferences we draw suggest actions unless we understand what the actual causal mechanism is.</li>
+<li>Because these correlations come from the process rather than reality, if the process changes then many of our old inferences become invalid.</li>
+</ol>
+<p>(2) is particularly important when we experience <a href="https://notebook.drmaciver.com/posts/2020-02-28-06:33.html">culture shifts</a>, because the entire generating process will have changed, so many things we thought were true become invalid.</p>
+</section>
+
+    </article>
+<footer>
+Copyright David R. MacIver.
+
+CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
+</footer>
+  </body>
+</html>

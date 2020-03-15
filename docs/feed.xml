@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-03-14T13:55:00+00:00</updated>
+  <updated>2020-03-15T12:24:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,80 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-03-07-14:34.html</id>
-    <title>Touch starvation and group responsibility</title>
-    <updated>2020-03-07T15:21:06+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Touch starvation and group responsibility&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-03-07&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I'm going to use this post to talk about the intersection of two things dear to my heart:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Touch starvation, especially in men.&lt;/li&gt;
-&lt;li&gt;Group responsibility as distinct from the sum of individual responsibilities.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;Touch starvation is also common in other groups. I've heard and read a lot about it in disabled women too for example. I'm talking about men primarily because that's the aspect I'm most qualified to talk about.&lt;/p&gt;
-
-
-&lt;p&gt;Touch starvation is a big deal. Regular physical contact, ideally with other human beings, seems to be fairly essential to our emotional regulation. This isn't a sex thing, people just really need to be touched.
-I could probably cite studies etc for that but this is a notebook post, so I won't.&lt;/p&gt;
-
-
-&lt;p&gt;Touch starvation is a very personal subject for me because I've spent a &lt;em&gt;lot&lt;/em&gt; of time touch starved, mostly because I've spent a lot of time single (which I'm fine with) and society is weirdly precious about men and platonic touch (which I'm very much not).
-I'm also a very huggy person (a fact which I think the overwhelming majority of my friends would be suprised to hear, for reasons), so this feels extra acute to me, but it's probably pretty bad for everyone in a similar situation.
-Right now I'm in a great relationship so I'm getting plenty of touch in the official socially approved way for men, but that doesn't make me less grumpy about the whole thing.&lt;/p&gt;
-
-
-&lt;p&gt;These norms are of course a thing done by men as well as to men. There are no conspiracy theories here about how this is somehow women's fault. Gender norms are a product of collective behaviour, and women are absolutely part of the shaping of norms around masculinity in approximately the same way that men are responsible for shaping the norms around femininity (if you find this a controversial point, I invite you to not argue with me about it), but it's at the very least a problem &lt;em&gt;primarily&lt;/em&gt; driven by men.&lt;/p&gt;
-
-
-&lt;p&gt;But setting aside who exactly is included in "we", I think it is clear that we are collectively failing men in this way.
-Touch starvation in men is epidemic, and it's a major problem.&lt;/p&gt;
-
-
-&lt;p&gt;Set against this is the fact that no one individual is obligated to participate in fixing it.
-I feel when we, society, are failing half of our members to such a large degree, we are &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-12:35.html"&gt;morally required&lt;/a&gt; to do something about that,
-but that does not imply that any individual person is morally required to individually participate in the solution.&lt;/p&gt;
-
-
-&lt;p&gt;It's certainly morally virtuous to go hug the men in your life if you want to do that. They'll probably be very grateful, unless &lt;a href="https://www.drmaciver.com/2019/08/jiminy-cricket-must-die/"&gt;they've internalised the norm too heavily&lt;/a&gt; to accept, but it's in no sense morally required.
-The moral obligation is at the collective level, and trying to address that at an individual level is so far into "I don't even know where to start" territory that I'm not even sure "morally virtuous" is enough to cover it.
-The strongest moral requirement I would put forth here is that if you personally are actively enforcing these norms (which is distinct from being silently complicit in them), it is morally imperative that you should get in the sea.&lt;/p&gt;
-
-
-&lt;p&gt;(Uh, sorry, I did say I was quite angry about this)&lt;/p&gt;
-
-
-&lt;p&gt;This is another untangling: When men are upset about this issue, a number of bad things happen.&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;They conflate touch starvation with a need for romantic and/or sexual love, again because they've internalised the norms around touch too heavily.&lt;/li&gt;
-&lt;li&gt;They confuse collective and individual obligations to them ("society is failing me, you are part of society, therefore you are failing me" is a very tempting trap to fall into)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Even if they successfully understand the problem&lt;/em&gt; people pattern match them into one of the first two.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;Honestly (3) is my biggest concern in writing this piece. I'm kinda expecting to get told I'm a horrible patriarch who thinks he's entitled to women's bodies just for pointing out this problem (please note: Men are allowed to hug men. It doesn't have to be women providing the hugs. Although as someone who is mostly friends with women I would ideally prefer a gender neutral solution).&lt;/p&gt;
-
-
-&lt;p&gt;It would be nice to wrap this post up with a nice pithy call to action, but I don't really have one. Lets just pretend I asked you to normalize hugging men or something equally inspiring but unactionable like that.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-03-07-14:34.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-07-15:27.html</id>
     <title>Be the more decisive person</title>
@@ -544,7 +470,7 @@ Their goal (which you do not want) is to get a rise out of you, and gray rocking
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-14-13:55.html</id>
     <title>Alief/Belief Coherence</title>
-    <updated>2020-03-14T13:55:00+00:00</updated>
+    <updated>2020-03-14T15:19:03+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Alief/Belief Coherence&lt;/p&gt;
@@ -599,5 +525,61 @@ Thus in a conflict one of two things will happen: Their beliefs will change, or 
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-03-14-13:55.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-03-15-12:24.html</id>
+    <title>Berkson's paradox is everywhere</title>
+    <updated>2020-03-15T12:24:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Berkson's paradox is everywhere&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-03-15&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Everyone likes to tell you that correlation is not causation. They're right, but they're also boring. Also &lt;a href="https://www.drmaciver.com/2014/05/spurious-correlations-and-causation/"&gt;all of their examples are wrong&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;What they don't tell you about so often is the most common reason why correlation does not imply correlation is that most of the correlations you see in day to day life are, in some sense, fake: They are not present in the underlying reality, they're an artifact of how you're looking at it. This is &lt;em&gt;Berkson's paradox&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;My go to example of this (I don't actually know if it's true, but it's a nice illustration) is that professional tennis players tend to be either tall or fast - tall tennis players tend to be slower, fast tennis players tend to be shorter.&lt;/p&gt;
+
+
+&lt;p&gt;You could come up with some complicated biological explanation about why these two traits might be negatively correlated, but it would be wrong, because they're not negatively correlated in the general population, or at least not to the same degree. The reason is much simpler than that: Short, slow, people will rarely play tennis professionally.&lt;/p&gt;
+
+
+&lt;p&gt;As a result, if height and speed are entirely independent of eachother (even if they're slightly positively correlated!) when you look at professional tennis players they will become negatively correlated, because it's more likely to be one or the other than it is to be both.&lt;/p&gt;
+
+
+&lt;p&gt;This may seem like a weird niche edge case, but once you start noticing it it's &lt;em&gt;everywhere&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;For example, you know how popular things are often kinda bad and the really good things are niche? Is that true, or is it just that you don't notice things that are bad and unpopular?&lt;/p&gt;
+
+
+&lt;p&gt;You know how people who disagree with you seem kinda shouty? Do you notice people who disagree with you and are not shouty?&lt;/p&gt;
+
+
+&lt;p&gt;This repeats over and over again: The patterns we see in day to day life come as much from the process that causes us to observe the data as it does from any underlying causal mechanism.&lt;/p&gt;
+
+
+&lt;p&gt;Does this matter? I think it does, for two reasons:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;As with "correlation does not imply causation" in general, we need to be careful about letting the inferences we draw suggest actions unless we understand what the actual causal mechanism is.&lt;/li&gt;
+&lt;li&gt;Because these correlations come from the process rather than reality, if the process changes then many of our old inferences become invalid.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;(2) is particularly important when we experience &lt;a href="https://notebook.drmaciver.com/posts/2020-02-28-06:33.html"&gt;culture shifts&lt;/a&gt;, because the entire generating process will have changed, so many things we thought were true become invalid.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-03-15-12:24.html" rel="alternate"/>
   </entry>
 </feed>
