@@ -17,6 +17,8 @@
 * [x] Installing cut out switches in your thought processes
 * [x] The tyranny of false positives as a driver of homophily
 * [x] Emotional regulation as resolving alief/belief inconsistencies
+* [x] Group responsibilities are more than the sum of individual responsibilities.
+* [x] Berkson's paradox is everywhere
 * [ ] Permission as the fundamental social need
 * [ ] Pluralistic ignorance
 * [ ] Eye pressure and switching contexts as an enabling technology
@@ -35,7 +37,6 @@
 * [ ] Conditioning on the the assumption that a solution is possible
 * [ ] "Just the way the world works" and cultural norms.
 * [ ] Sometimes your enemies are just sad, but that doesn't make them not your enemies.
-* [ ] Group responsibilities are more than the sum of individual responsibilities.
 * [ ] Reliability as the indicator of skill.
 * [ ] The "Why are you saying this?" heuristic
 * [ ] Support Group and how to run your own
@@ -66,6 +67,5 @@
 * [ ] The Inner Game of Celeste
 * [ ] Separating emotional responses from the need to act
 * [ ] Everything is a teachable moment
-* [ ] Berkson's paradox is everywhere
 * [ ] The market for lemons is everywhere
 * [ ] You can read however you like. You don't have to read the whole thing.
