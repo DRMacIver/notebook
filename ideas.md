@@ -19,8 +19,8 @@
 * [x] Emotional regulation as resolving alief/belief inconsistencies
 * [x] Group responsibilities are more than the sum of individual responsibilities.
 * [x] Berkson's paradox is everywhere
-* [ ] Permission as the fundamental social need
-* [ ] Pluralistic ignorance
+* [x] Permission as the fundamental social need
+* [x] Pluralistic ignorance
 * [ ] Eye pressure and switching contexts as an enabling technology
 * [ ] Ways in which I could improve my communication skills
 * [ ] Notes on my experience of poly

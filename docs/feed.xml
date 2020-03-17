@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-03-15T12:24:00+00:00</updated>
+  <updated>2020-03-17T11:40:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,42 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-03-07-15:27.html</id>
-    <title>Be the more decisive person</title>
-    <updated>2020-03-07T15:51:21+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Be the more decisive person&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-03-07&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Let me tell you an amazing favour you can do for your friends: Be the one to make decisions when nobody else is willing to step up. Especially unimportant ones.&lt;/p&gt;
-
-
-&lt;p&gt;I learned this skill the hard way. Getting a bunch of indecisive socially awkward nerds to decide where to go for a meal is worse than herding cats, because it's watching cats try to self organise,
-so at some point I just started saying "Hey, why don't we go to $RESTAURANT. Any objections?" and observing how much easier the whole process became once I started doing that. Nobody minds you doing this, everyone is grateful, and a long annoying pointless dither is averted.&lt;/p&gt;
-
-
-&lt;p&gt;People don't want to be the one to make a decision for any number of reasons, but it's mostly anxiety, and they're mostly offloading anxiety onto everyone else. You can stop the cycle of anxiety through the simple realisation that 90% of the decisions that are causing this just don't matter that much. It doesn't matter that much where you go for a meal.&lt;/p&gt;
-
-
-&lt;p&gt;If you want to help people this way, go read &lt;a href="https://notebook.drmaciver.com/posts/2020-02-25-10:39.html"&gt;how to make decisions&lt;/a&gt; so that this is low cost for you, and then start making suggestions like this once it's clear you're stuck in an indecision loop that nobody involved wants to break out of.&lt;/p&gt;
-
-
-&lt;p&gt;Remember that the decision you're making is a &lt;em&gt;first pass&lt;/em&gt;. People can object to it, and that's fine. The system is working. This is a &lt;a href="https://notebook.drmaciver.com/posts/2020-02-26-16:07.html"&gt;fastest way to learn something is to do something&lt;/a&gt; situation. By making a suggestion (doing something) you are learning about people's constraints, which you can then feed back in by making another suggestion, or by asking that person to make some more concrete suggestions.&lt;/p&gt;
-
-
-&lt;p&gt;For more important decisions you need to start looking into serious facilitation skills and techniques for running meetings and such, but that's a different problem. For now, just help people break out of indecision on the simple stuff.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-03-07-15:27.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-07-15:59.html</id>
     <title>Install cut out switches in your mind</title>
@@ -529,7 +493,7 @@ Thus in a conflict one of two things will happen: Their beliefs will change, or 
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-15-12:24.html</id>
     <title>Berkson's paradox is everywhere</title>
-    <updated>2020-03-15T12:24:00+00:00</updated>
+    <updated>2020-03-15T13:07:06+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Berkson's paradox is everywhere&lt;/p&gt;
@@ -581,5 +545,48 @@ Thus in a conflict one of two things will happen: Their beliefs will change, or 
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-03-15-12:24.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-03-17-11:40.html</id>
+    <title>Everybody is looking for permission</title>
+    <updated>2020-03-17T11:40:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Everybody is looking for permission&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-03-17&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;A lens I started looking at the social world through a while back is &lt;em&gt;permission&lt;/em&gt;.
+Specifically, that everybody is looking for it, and that many situations, relationships, and activities can be thought of in terms of what permission they give you.&lt;/p&gt;
+
+
+&lt;p&gt;A common, practical, example of this is asking stupid questions in meetings: Often everybody is confused, but nobody feels they have permission to ask, so once somebody is prepared to break the silence everyone is more able to (although a friend has expressed concern that asking stupid questions has instead become high status as people have learned this).&lt;/p&gt;
+
+
+&lt;p&gt;Another example that has been very relevant recently is giving people permission to freak out about COVID-19. I think at this point everyone has officially been given that permission, so it's no longer quite so useful (that may be more local / political. Certainly some people &lt;em&gt;aren't&lt;/em&gt; freaking out about it, and I suspect some of their friends still need permission), but there was a period of a few weeks where it was a bit more controversial to do so and people were fairly actively saying "Look, this is a thing I am worried about, it's OK to be worried about it".&lt;/p&gt;
+
+
+&lt;p&gt;In general, &lt;a href="https://www.drmaciver.com/2018/06/on-not-quite-fitting/"&gt;everyone is a bit worried about being weird&lt;/a&gt;, and despite these worries being widespread, a mix of everyone being weird in different ways and pluralistic ignorance (the majority privately reject a norm that the majority publicly enforce), and needs permission to break out of the norms that society has imposed on them.&lt;/p&gt;
+
+
+&lt;p&gt;The problem is that permission often needs to be a lot stronger than just providing an example, or telling someone it's OK. They don't necessarily believe you, or even if they do believe you they've &lt;a href="https://www.drmaciver.com/2019/08/jiminy-cricket-must-die/"&gt;internalised societal norms too much&lt;/a&gt;.
+Frequently mere verbal permission will be met with active opposition.&lt;/p&gt;
+
+
+&lt;p&gt;Again, pluralistic ignorance is a good example of this: Suppose most straight people are just not that fussed about heterosexuality (I think this is actually pretty likely, but if you disagree pretend it's a thought experiment). It's not that they're gay, or even that they're particularly bi, but they're open to the idea in principle and don't really see what all the fuss is about. However, if there are very strong norms enforcing it, these more-or-less-heterosexual straight people will probably enforce those norms &lt;em&gt;harder&lt;/em&gt; for fear of being caught on the wrong end of them. So you can't just straightforwardly give them permission, you need some way of committing to it. If they've sufficiently internalised the norms, it might not even be possible to give them permission, because the thing withholding permission is their own shame and the only person who can give them that permission is themself.&lt;/p&gt;
+
+
+&lt;p&gt;I think a lot of circumstances end up implicitly granting permission by making the action "playing the game". For example, people behave very differently when drunk, but a lot of this isn't actually because alcohol, it's because the fact that you're drunk gives you permission to behave like a drunk person. You see this with things like stag parties, hen does, etc. where people are given permission by the format to behave like complete asses in ways they normally wouldn't do.&lt;/p&gt;
+
+
+&lt;p&gt;I think this is also why a lot of "mandatory fun" fails: There is a certain sort of permission that you need to behave like a person in a fun situation, and often mandatory fun skips the "foreplay" element that is needed to provide that permission, so people end up in a situation where people are being expected to behave in a way that they do not feel they have permission to.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-03-17-11:40.html" rel="alternate"/>
   </entry>
 </feed>
