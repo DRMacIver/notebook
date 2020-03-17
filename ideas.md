@@ -69,3 +69,4 @@
 * [ ] Everything is a teachable moment
 * [ ] The market for lemons is everywhere
 * [ ] You can read however you like. You don't have to read the whole thing.
+* [ ] You don't have to treat other people as worth arguing with
