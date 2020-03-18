@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-03-17T11:40:00+00:00</updated>
+  <updated>2020-03-18T11:24:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,65 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-03-07-15:59.html</id>
-    <title>Install cut out switches in your mind</title>
-    <updated>2020-03-07T17:48:37+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Install cut out switches in your mind&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-03-07&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Let me tell you my favourite joke. It comes from Scott Aaronson's "Quantum Computing Since Democritus":&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;There’s a joke about a planet full of people who believe in antiinduction: if the sun has risen every day in the past, then today, we should expect that it won’t.
-As a result, these people are all starving and living in poverty.
-Someone visits the planet and tells them, “Hey, why are you still using this anti-induction philosophy? You’re living in horrible poverty!”
-“Well, it never worked before...”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;A different Scott recently wrote about &lt;a href="https://slatestarcodex.com/2020/02/12/confirmation-bias-as-misfire-of-normal-bayesian-reasoning/"&gt;Confirmation bias&lt;/a&gt;. His view is very Bayesian, which I'm not that into, but the basic premise is sound: If you come across a piece of evidence that contradicts your worldview, it's probably right to discount it.&lt;/p&gt;
-
-
-&lt;p&gt;In a recent discussion of &lt;a href="https://www.jstor.org/stable/10.5250/fronjwomestud.33.1.0024?seq=1"&gt;one of my favourite papers&lt;/a&gt; a friend pointed out that the arguments depended in quite a critical way on certain values (obvious sensible ones like "racism bad" which he agreed with, but even so) and that this presented difficulties with how to use it properly for breaking out of your frame of reference.&lt;/p&gt;
-
-
-&lt;p&gt;The common thread here is that in all of these cases there is an underlying concern: "But what if my fundamental worldview was wrong in some critical way? How would I break out of that?" - the arguments that were being presented were fine, but they intrinsically rested on unjustified, and possibly unjustifiable, assumptions.&lt;/p&gt;
-
-
-&lt;p&gt;I recently reread "Zen and the Art of Motorcycle Maintenance", which is a deeply flawed book that is much more interesting in its flaws than in the things people normally get out of it. One of the things I found fascinating was observing the author's thought process (the author is schizophrenic, and this was very obvious to me when reading it). This provoked the following thought process.&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Yes, this is a very familiar line of reasoning.&lt;/li&gt;
-&lt;li&gt;Now comes the bit where you stop.&lt;/li&gt;
-&lt;li&gt;...why aren't you stopping?&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;He was getting involved in thought loops that were obviously deeply unproductive, and he wasn't stopping. This was quite distressing to me to watch because of how carefully I have cultivated a series of cutoff switches in my thought processes to avoid this from happening.&lt;/p&gt;
-
-
-&lt;p&gt;The most basic one is this: If you are concerned with your worldview being fundamentally wrong in some way... Eh, don't worry about it. It's probably fine. Put that to one side and come back to it later if you really feel like it.&lt;/p&gt;
-
-
-&lt;p&gt;Fundamentally &lt;em&gt;everything&lt;/em&gt; you do grounds out in basic premises about how the world works and what the appropriate values are, and those things are arbitrary and contingent and not even necessarily that consistent. If you allow yourself to reevaluate your worldview as part of every basic thought process, what will happen is that you will be constantly spiralling into unproductive areas of thought.&lt;/p&gt;
-
-
-&lt;p&gt;You should, of course, occasionally consider that your fundamental worldview might be wrong, but mostly the way to do that is by talking to people who are different from you and learning from them and how they see the world. Getting trapped in thought spirals will not do this, and you need to install cut off switches to block off those spirals when you run into them.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-03-07-15:59.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-08-08:53.html</id>
     <title>You can't actually explain everything to laypeople</title>
@@ -549,7 +490,7 @@ Thus in a conflict one of two things will happen: Their beliefs will change, or 
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-17-11:40.html</id>
     <title>Everybody is looking for permission</title>
-    <updated>2020-03-17T11:40:00+00:00</updated>
+    <updated>2020-03-17T13:36:48+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Everybody is looking for permission&lt;/p&gt;
@@ -588,5 +529,53 @@ Frequently mere verbal permission will be met with active opposition.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-03-17-11:40.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-03-18-11:24.html</id>
+    <title>Safety as an enabler of growth</title>
+    <updated>2020-03-18T11:24:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Safety as an enabler of growth&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-03-18&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;My friend Alex Chan &lt;a href="https://alexwlchan.net/2020/03/rich-enough-to-make-bad-choices/"&gt;recently wrote about how one of the big advantages of being rich is that the rich can afford to make risky investments&lt;/a&gt;:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Being rich gives you a safety net to make bad investments, which helps you find more good ones. Over time, the rich don’t just spend less money, they find new ways to earn more money. In terms Samuel Vimes would understand: they don’t just invest in a pair of sturdy boots, they invest in experimental boot-making startups.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;As Alex points out, this ties in to my argument that &lt;a href="https://notebook.drmaciver.com/posts/2020-02-22-11:37.html"&gt;you should try bad things&lt;/a&gt;.
+You can only try bad things if you have the resources to ensure that failure is no big deal.&lt;/p&gt;
+
+
+&lt;p&gt;For some bad things, this isn't an issue, but for things which have a relatively high cost (financial, time, or otherwise), being poor (or even just not rich!) blocks them off from you.
+This is particularly egregious in the examples that Alex points out, where the lack of financial security is the very thing that prevents you from gaining more financial security.&lt;/p&gt;
+
+
+&lt;p&gt;This is a general pattern that repeats in many other contexts.
+In order to grow, it needs to be safe to try things, and lacking the thing that you want to grow is what makes it unsafe.&lt;/p&gt;
+
+
+&lt;p&gt;This is often connected with learning. &lt;a href="https://notebook.drmaciver.com/posts/2020-02-26-16:07.html"&gt;The fastest way to learn something is to do something&lt;/a&gt;, but if doing something can go catastrophically wrong then you're not going to risk it, so whole avenues of learning are blocked off for you.&lt;/p&gt;
+
+
+&lt;p&gt;As well as financial, two common places this occurs are social and emotional safety (which can be tightly connected, but also can fail independently in their own way).
+There's all the literature on &lt;a href="https://en.wikipedia.org/wiki/Psychological_safety"&gt;psychological safety&lt;/a&gt; about how feeling safe in your team is an enabler of success, because people are more able to propose ideas and learn from them.
+This ties in to what I was saying yesterday about &lt;a href="https://notebook.drmaciver.com/posts/2020-03-17-11:40.html"&gt;permission&lt;/a&gt;: One of the key features of psychological safety in a group environment is the way it gives you permission to experiment and try things that might not work.&lt;/p&gt;
+
+
+&lt;p&gt;Another type of safety is &lt;em&gt;emotional&lt;/em&gt; safety. For a lot of us the insides of our own heads are not safe. As I wrote about in &lt;a href="https://www.drmaciver.com/2020/01/a-crash-course-in-having-feelings/"&gt;a crash course in having feelings&lt;/a&gt;, one of the key steps to emotional growth is getting to a point where you can have feelings (especially negative ones) without being overwhelmed by them. As long as your feelings are dangerous to you, it's impossible to experiment with and learn about them, and this stops you from growing emotionally.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-03-18-11:24.html" rel="alternate"/>
   </entry>
 </feed>
