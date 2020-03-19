@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-03-18T14:15:22+00:00</updated>
+  <updated>2020-03-19T10:22:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,66 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-03-08-08:53.html</id>
-    <title>You can't actually explain everything to laypeople</title>
-    <updated>2020-03-08T09:27:49+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;You can't actually explain everything to laypeople&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-03-08&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;There's an annoying meme that, as with many annoying memes oft-cited by nerds, seems to date back to Feynmann.
-It's that your ability to explain a subject to a layperson is a test of whether you understand it.
-I often hear it as "If you can't explain it to your grandmother you don't understand it". The version I heard earlier was "explain to a five year old".&lt;/p&gt;
-
-
-&lt;p&gt;Feynmann, to his partial credit, doesn't seem to have deliberately coined an aphorism here and also said "freshman" (i.e. first year university student). &lt;a href="https://en.wikiquote.org/wiki/Talk:Richard_Feynman#Teaching_quote"&gt;Discussion at wikiquote&lt;/a&gt;:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Feynman was a truly great teacher. He prided himself on being able to devise ways to explain even the most profound ideas to beginning students. Once, I said to him, "Dick, explain to me, so that I can understand it, why spin one-half particles obey Fermi-Dirac statistics." Sizing up his audience perfectly, Feynman said, "I'll prepare a freshman lecture on it." But he came back a few days later to say, "I couldn't do it. I couldn't reduce it to the freshman level. That means we don't really understand it."&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;Freshman students are already not laypeople, but even so I don't think this is a reasonable standard for understanding.
-It &lt;em&gt;might&lt;/em&gt; be a reasonable standard for the specific context, I don't know enough about quantum mechanics to say, but it's certainly not universal.&lt;/p&gt;
-
-
-&lt;p&gt;But first, lets consider how freshmen already differ from laypeople:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;They've got a lot of prerequisites that a layperson doesn't. A freshman in a physics lecture already knows a lot more about physics than a five year old, or indeed most educated people.&lt;/li&gt;
-&lt;li&gt;They're prepared to learn and engage with the material.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;(2) is one of the most important parts, because the main reason that you can't explain most things you do to laypeople is that they don't care. When someone who isn't a software developer / computer scientists / etc asks me about my PhD I can just about explain the problem before they switch off (which honestly is doing better than most PhDs in computer science, but I have a relatively accessible problem domain), I'm certainly not going to get them to sit through an explanation about the solution.&lt;/p&gt;
-
-
-&lt;p&gt;(1) is also a major feature: Some areas of knowledge just have prerequisites. It's a simple fact. And often there are a lot more prerequisites than you think. &lt;a href="https://notebook.drmaciver.com/posts/2020-02-18-12:24.html"&gt;How to talk about books you haven't read&lt;/a&gt; has a great section on reading Hamlet to the Tiv tribe in Western Africa, and how much cultural bridging that required. Hamlet is pretty much designed to be accessible to laypeople (Shakespeare was a popular entertainer!) but because these are laypeople from a different cultural context, it failed to land without a lot of explanation.&lt;/p&gt;
-
-
-&lt;p&gt;My degree is in mathematics. There were a number of courses in the final year I struggled with, though I generally got there in the end. If you had thrown me in the deep end on those courses in my first year, I would have had no chance, because they built on material that I had learned earlier.
-Knowledge has prerequisites, and you have to teach those first.&lt;/p&gt;
-
-
-&lt;p&gt;Could I have somehow taught those courses to my younger self anyway? Certainly. I'd have done it by putting him through a four year maths degree.&lt;/p&gt;
-
-
-&lt;p&gt;This is, in the end, the biggest problem with the idea that you can teach anything to laypeople:
-Sometimes the only way to do that is to first make them not a layperson.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-03-08-08:53.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-09-11:13.html</id>
     <title>The art of not having opinions</title>
@@ -533,7 +473,7 @@ Frequently mere verbal permission will be met with active opposition.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-18-11:24.html</id>
     <title>Safety as an enabler of growth</title>
-    <updated>2020-03-18T14:15:22+00:00</updated>
+    <updated>2020-03-18T14:43:27+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Safety as an enabler of growth&lt;/p&gt;
@@ -589,5 +529,39 @@ This ties in to what I was saying yesterday about &lt;a href="https://notebook.d
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-03-18-11:24.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-03-19-10:22.html</id>
+    <title>Good strategies often fail</title>
+    <updated>2020-03-19T10:22:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Good strategies often fail&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-03-19&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I &lt;a href="https://www.drmaciver.com/2019/02/you-should-be-stockpiling-food-for-brexit/"&gt;stockpiled food for Brexit&lt;/a&gt;. A lot of people were skeptical of me for that, and many people have said that the way Brexit played out proved me wrong and that it was an overreaction.&lt;/p&gt;
+
+
+&lt;p&gt;They are wrong and I was right. Stockpiling food for Brexit and not needing it was the expected outcome. It was never something that I thought I was likely to need, it was a capacity I was building in case of a low probability high cost event. The logic was that either food stockpiling wouldn't be useful, in which case I had a surplus to use up, or it would be kinda useful in which case it was a net positive, or it would be essential, in which case I would be incredibly glad I had it.&lt;/p&gt;
+
+
+&lt;p&gt;&lt;a href="https://amzn.to/3926VQH"&gt;Annie Duke&lt;/a&gt; calls this fallacy &lt;em&gt;resulting&lt;/em&gt;, and I think it's a rare instance of something escaping &lt;a href="https://maartenboudry.blogspot.com/2017/06/the-fallacy-fork-why-its-time-to-get.html"&gt;the fallacy fork&lt;/a&gt;.
+Resulting is the fallacy of assuming that because you got a bad outcome you must have made a bad choice, when in fact you might just have got a bad outcome because you picked the option with a 60% chance of success instead of a 40% chance but it turns out that you're in the 40% chance world. Chance means that you can never perfectly control the outcome, and you should be careful not to let random chance inform your learning too much.&lt;/p&gt;
+
+
+&lt;p&gt;More complicated is that often good strategies you'll never even know if you succeeded or not. A lot of mitigations for COVID-19 are like this: You'll never know whether it really mattered that you were washing your hands, or socially isolating, because all you're doing is stacking the odds on a numbers game. You might get the virus anyway, or you might have never got the virus, there's no way to know. It's still a good strategy.&lt;/p&gt;
+
+
+&lt;p&gt;Capacity building strategies in particular are often a good idea, because they can be useful in unexpected ways.
+I didn't immediately dismantle my Brexit stockpile when it seemed unlikely that we'd need it, I've just been using it as a buffer, so now if we do end up on pandemic lockdown we'll be well placed for food supplies while self isolating.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-03-19-10:22.html" rel="alternate"/>
   </entry>
 </feed>
