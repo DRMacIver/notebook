@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-03-19T10:22:00+00:00</updated>
+  <updated>2020-03-20T10:33:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,61 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-03-09-11:13.html</id>
-    <title>The art of not having opinions</title>
-    <updated>2020-03-09T12:52:35+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;The art of not having opinions&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-03-09&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;In the same conversation with Dave that lead to us &lt;a href="https://notebook.drmaciver.com/posts/2020-02-28-06:33.html"&gt;talking about which way people veer to avoid collisions&lt;/a&gt; we ended up playing a sort of game.&lt;/p&gt;
-
-
-&lt;p&gt;For context: Dave works in transport. Transport is something we all encounter on a very regular basis, so we all tend to think about it a lot. However, transport is a complex system, so it's &lt;a href="https://notebook.drmaciver.com/posts/2020-03-04-11:18.html"&gt;more broken&lt;/a&gt; and &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-11:43.html"&gt;less comprehensible&lt;/a&gt; than you might intuitively expect it to be. As a result, most people's opinions on transport are &lt;em&gt;bad&lt;/em&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;So, the game: I had to keep coming up with transport opinions I held, and Dave would judge if they were bad opinions.&lt;/p&gt;
-
-
-&lt;p&gt;Eventually we ran out of time or got distracted or something (I forget) and I made it to that point without having any bad opinions. I was quite pleased by this.&lt;/p&gt;
-
-
-&lt;p&gt;Another place I was pleased with myself recently was my performance on the &lt;a href="https://programs.clearerthinking.org/common_misconceptions.html"&gt;common misconceptions&lt;/a&gt; test. The number of things I got right was only so so (I forget exactly, but I think about 85% right?), but I was almost perfectly calibrated: The ones where my confidence was high were right, the ones where my confidence was low were right in about the proportion they should be.
-This was a bit surprising to me, as in the past I have definitely not been that well calibrated on similar things.&lt;/p&gt;
-
-
-&lt;p&gt;I think these both happened for fairly general reasons: Over the last decade, I've gotten much better at not having opinions on things.&lt;/p&gt;
-
-
-&lt;p&gt;This might be surprising to you, as I have a &lt;em&gt;lot&lt;/em&gt; of opinions, but it makes sense: I've not gotten better at having fewer opinions, I've gotten better at not having opinions on any given thing unless it makes sense for me to do so.&lt;/p&gt;
-
-
-&lt;p&gt;There's a lot of social pressure against doing this.
-We basically use having opinions at eachother as a social bonding activity to make sure that the person we're talking to has the "right" sort of politics, so there's a lot of social pressure against this, but I think it's worth doing if we want our opinions to be truth tracking.&lt;/p&gt;
-
-
-&lt;p&gt;Two useful prompts for recalibrating opinions:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Is it &lt;em&gt;useful&lt;/em&gt; for me to have an opinion on this? If not, why do I have one?&lt;/li&gt;
-&lt;li&gt;If this opinion were wrong, would I be able to tell?&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;If the answer to either of these is no, why are you having an opinion on it? At the very least, you should be less confident in asserting it.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-03-09-11:13.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-10-12:38.html</id>
     <title>Homophily and the tyranny of false positives</title>
@@ -533,7 +478,7 @@ This ties in to what I was saying yesterday about &lt;a href="https://notebook.d
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-19-10:22.html</id>
     <title>Good strategies often fail</title>
-    <updated>2020-03-19T10:22:00+00:00</updated>
+    <updated>2020-03-19T10:32:18+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Good strategies often fail&lt;/p&gt;
@@ -563,5 +508,69 @@ I didn't immediately dismantle my Brexit stockpile when it seemed unlikely that 
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-03-19-10:22.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-03-20-10:33.html</id>
+    <title>On feeling blocked</title>
+    <updated>2020-03-20T10:33:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;On feeling blocked&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-03-20&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I'm finding it significantly hard to write at the moment, so I thought I'd pull out that old lazy trick and write about writer's block. Or rather, the feeling of being blocked more generally.&lt;/p&gt;
+
+
+&lt;p&gt;An analogy I use for certain types of explanation is based on a fairly butchered Douglas Adams reference, which is that flying is easy. There are only two steps:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Lift up your left foot.&lt;/li&gt;
+&lt;li&gt;Lift up your right foot.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;Being blocked often feels a bit like this. It's not that you don't know what to do. You understand the steps precisely. They're not hard. They're just impossible, because although you know what to do the world doesn't work like that. &lt;/p&gt;
+
+
+&lt;p&gt;Except it doesn't feel exactly like that, because they are instructions you know you &lt;em&gt;could&lt;/em&gt; have followed if your lived world was different. Your world &lt;em&gt;has&lt;/em&gt; been like that, but now it's not.&lt;/p&gt;
+
+
+&lt;p&gt;As I've talked about, &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-14:06.html"&gt;I play Celeste quite a bit&lt;/a&gt;. I recently also played through most of Hollow Knight.
+An interesting thing that happened there was how much worse I became at Celeste as a result.&lt;/p&gt;
+
+
+&lt;p&gt;Why?
+Well, the capabilities of your character are slightly different.
+Specifically, certain capabilities were absent.
+I kept trying to double jump and couldn't.
+There were plenty of things you can do in Celeste that you can't do in Hollow Knight, but that doesn't matter, because I kept reaching for the ways of moving through the world that had become familiar to me and they weren't there.&lt;/p&gt;
+
+
+&lt;p&gt;I imagine it's a little like &lt;a href="https://www.youtube.com/watch?v=PVxaL8CAO4M"&gt;astronauts forgetting about gravity&lt;/a&gt;. The world behaves &lt;em&gt;wrong&lt;/em&gt; in some way.&lt;/p&gt;
+
+
+&lt;p&gt;Being blocked feels like this. It's not that there's an actual block, it's that you reach for a part of your brain where the words come from and it's not there. &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-09:44.html"&gt;You can't run out of ideas&lt;/a&gt; and you know this, but you try to follow the steps of the idea generating process and the world glitches and you realise you cut off mid-sentence and have been reading Twitter for the last half hour.&lt;/p&gt;
+
+
+&lt;p&gt;Switching between Celeste and Hollow Knight comes with a pervasive sense of wrongness. &lt;a href="https://www.youtube.com/watch?v=yorTG9at90g"&gt;Movement in Celeste is very finely tuned&lt;/a&gt;, and I imagine Hollow Knight has a fair bit of thought put into its movement parameters too, but they are &lt;em&gt;differently&lt;/em&gt; tuned. These aren't strictly connected, in that you can imagine a game that is Celeste-but-tuned-like-Hollow-Knight or vice versa, but they're not entirely incidental either - both games are tuned so that each part of the game fits into a whole.&lt;/p&gt;
+
+
+&lt;p&gt;Blockedness is like this too. There is an &lt;a href="https://notebook.drmaciver.com/posts/2020-03-06-07:46.html"&gt;existential feeling&lt;/a&gt; associated with being blocked: It is not just that any given action is blocked, it's that you can &lt;em&gt;feel&lt;/em&gt; blocked. The absence of the capability is palpable.&lt;/p&gt;
+
+
+&lt;p&gt;In many ways the correct solution is to lean into this. Trying to force yourself into productivity when blocked is like trying to leave the pen in midair. The capability you are relying on just isn't there, and trying to pretend it is won't help you. Instead you should try to find something that you &lt;em&gt;can&lt;/em&gt; do, that instead helps you recharge the capability you need.&lt;/p&gt;
+
+
+&lt;p&gt;Sometimes however there aren't really any good options, so you just decide to force a post out anyway. Either you find your way around the blockage, or you just accept that it will take you ten times as long to produce and you'll check a lot of twitter while you do.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-03-20-10:33.html" rel="alternate"/>
   </entry>
 </feed>
