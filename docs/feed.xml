@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-03-20T10:33:00+00:00</updated>
+  <updated>2020-03-21T12:35:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,43 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-03-10-12:38.html</id>
-    <title>Homophily and the tyranny of false positives</title>
-    <updated>2020-03-10T13:37:44+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Homophily and the tyranny of false positives&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-03-10&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;A while ago a friend of mine told me about what he called his Terribly Goth Theory of Friendship:
-You can't trust people who don't have problems.&lt;/p&gt;
-
-
-&lt;p&gt;The reason is of course that &lt;em&gt;we&lt;/em&gt; have problems, and that it's hard to trust people without them to know how to handle that well.&lt;/p&gt;
-
-
-&lt;p&gt;I think it goes deeper than that: Actually many people with fewer or different problems than ours are in fact perfectly lovely human beings who we would get on fine with, but we can't tell that.
-So we select for people who are like us because we can predict how they will react.
-This is &lt;a href="https://en.wikipedia.org/wiki/Homophily"&gt;homophily&lt;/a&gt;, the tendency to hang out with people like us. &lt;/p&gt;
-
-
-&lt;p&gt;In general, the question of who to be friends with is a classic example of the sort of thing I talked about in &lt;a href="https://www.drmaciver.com/2020/02/theres-no-single-error-rate/"&gt;there's no single error rate&lt;/a&gt;, where the only error rate that is visible to you is the false positive rate. As I argued in &lt;a href="https://notebook.drmaciver.com/posts/2020-02-22-11:37.html"&gt;you should try bad things&lt;/a&gt; this will tend to cause you to narrow your selection over time:
-If you only ever update to remove false positives, you will tend to increase the degree of homophily you exhibit.&lt;/p&gt;
-
-
-&lt;p&gt;This isn't necessarily a bad thing at the individual level, but bear in mind the way that bad rejections (false negatives) can contain &lt;a href="https://www.drmaciver.com/2019/06/the-ethics-of-false-negatives-in-interviewing/"&gt;systemic biases&lt;/a&gt;.
-My suspicion is that a lot of communities will tend to become more homogenous over time purely as a result of this effect: People who don't match the community expectations will tend to get filtered out, not necessarily because they're a bad fit, but because they don't act like the kind of people the community understands how to tell if they're a fit or not.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-03-10-12:38.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-11-07:15.html</id>
     <title>Suspension of annoyance</title>
@@ -512,7 +475,7 @@ I didn't immediately dismantle my Brexit stockpile when it seemed unlikely that 
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-20-10:33.html</id>
     <title>On feeling blocked</title>
-    <updated>2020-03-20T10:33:00+00:00</updated>
+    <updated>2020-03-20T13:26:30+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;On feeling blocked&lt;/p&gt;
@@ -572,5 +535,125 @@ There were plenty of things you can do in Celeste that you can't do in Hollow Kn
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-03-20-10:33.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-03-21-12:35.html</id>
+    <title>The Inner Game of Celeste</title>
+    <updated>2020-03-21T12:35:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;The Inner Game of Celeste&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-03-21&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I read &lt;a href="https://amzn.to/2wszUzR"&gt;The Inner Game of Tennis&lt;/a&gt; recently, on the recommendation of my Alexander Technique teacher. I was surprised by how much I enjoyed it - both because it's always a bit weird when classic self-help books are actually good, and also because I am under a vow to never play Tennis so it didn't seem that relevant to me.&lt;/p&gt;
+
+
+&lt;p&gt;There was a lot of it I liked. I'm particularly interested in the chapter on competition, which I intend to write more about later, but most of the book is about how you relate to yourself,
+and how to stop overthinking your actions and let your verbal mind get out of the way and let your body do its thing. Verbal processing is in many ways much smarter than the body,
+but it is slow and not particularly good at coordinating the things you need to do to move in the right way as you focus on the task you're trying to achieve.&lt;/p&gt;
+
+
+&lt;p&gt;The Inner Game of Tennis suggests that we consider ourself as divided into two parts, a self 1 and a self 2, and I've &lt;em&gt;already&lt;/em&gt; forgotten which is supposed to be which because thing 1 and thing 2 terminology is bad and only terrible people use it, so I'm going to call them the speaker and the doer. The speaker is your verbal self, the doer is your self that moves your body.&lt;/p&gt;
+
+
+&lt;p&gt;Particularly in Western cultures we tend to overidentify with the speaker, and think of it as being in command of of our actions.
+In reality the opposite is more likely to be true, with the speaker being a thin layer on top of a much deeper web of decision making in the doer, but one thing is certain: The speaker has the ability to fuck you up.
+The Inner Game of Tennis talks about how an overly judgemental and opinionated speaker tries to take direct control of your actions, and then shouts at you for getting it wrong.
+The doer knows how to play tennis without the speaker's intervention, so the solution is to silence the speaker and act as a pure doer.&lt;/p&gt;
+
+
+&lt;p&gt;Naturally, this all makes me think of Celeste.&lt;/p&gt;
+
+
+&lt;p&gt;Firstly it makes me think of Celeste because Celeste is much like tennis in this sense:
+If you try to think too much while playing it, you will die horribly, probably impaled on spikes.&lt;/p&gt;
+
+
+&lt;p&gt;(That's how tennis works, right? I haven't played it since I was about twelve, when I swore the vow, so my memory is a bit fuzzy)&lt;/p&gt;
+
+
+&lt;p&gt;Playing Celeste very much teaches you to act solely as the doer. If you try to think during a complicated wall jump and dash sequence, you will die. You have to be in flow state while playing Celeste if you want to make any progress.&lt;/p&gt;
+
+
+&lt;p&gt;But Celeste also teaches you to act solely as the speaker. Celeste levels are quite small, so you can see the route you want to take, and plot it out in advance. You don't have to, but particularly on the harder levels you will often want to pause and think about what you're doing, and talk things over with yourself.&lt;/p&gt;
+
+
+&lt;p&gt;Both of these parts of yourself are important to playing a good game of Celeste, as they probably are to playing a good game of tennis (certainly it wasn't the doer part of W. Timothy Gallwey who wrote a book about tennis).
+The problem is not the speaker any more than it is the doer, the problem is that one of them is trying to run things, when a healthily functioning mind is a collaboration between the two. Your speaking self is good at planning, your doing self is good at acting, and these are not the same thing.&lt;/p&gt;
+
+
+&lt;p&gt;Celeste has more to teach us here, not through play but through its plot.
+Celeste is ultimately a game about shadow work, and embracing our inner demons.&lt;/p&gt;
+
+
+&lt;p&gt;Celeste's plot centers around the protagonist Madeline's attempts to overcome her anxiety, by climbing a death trap of a mountain that wants to kill her at every turn.
+Quite early on, she encounters a magic mirror, which brings out a part of her that sometimes gets called Badeline (the game never uses this term except internally, she's always referred to just as "Part of Madeline").&lt;/p&gt;
+
+
+&lt;p&gt;I've always felt Badeline was a rather cruel thing to call her, particularly as the game progresses, but in defence of the name she does spend a significant portion of it trying to kill Madeline, including by firing giant laser beams at her and throwing her down to the ground from on high, and generally being rather mean.&lt;/p&gt;
+
+
+&lt;p&gt;One of the things that she repeatedly tells Madeline is that she is not a mountain climber and that she will fail.
+Again, Celeste is a giant death trap, so this is not an unreasonable concern, but she's very mean about it.
+Badeline's role is to personify Madeline's fears and anxieties,
+and to tell her all the things she should be afraid of,
+and to give external voice to all of the negative things that Madeline tells herself.&lt;/p&gt;
+
+
+&lt;p&gt;Eventually after quite a lot of this, Madeline says the following to Badeline:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;You're everything I need to leave behind.
+You're cruel, paranoid, controlling...
+I understand now.
+I don't need you any more.
+I'm setting you free.
+We'll both be so much happier.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;How would you feel if someone said that to you?&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, this goes about as poorly as you might expect it to, and Badeline casts her down to the base of the mountain.&lt;/p&gt;
+
+
+&lt;p&gt;Later, climbing out of the pit she's fallen into (this is literal, although she's in a bad enough mood that it's also metaphorical), she encounters Granny, the wise old lady who lives at the base of the mountain (who is a real jerk). She gives Madeline the following advice:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;It sounds like she's holding you back.
+Talk to her. Figure out why she's so scared.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;Madeline follows this advice, tracks Badeline down, gives her a big hug, and tells her it's OK to be scared.
+After that, they work together.&lt;/p&gt;
+
+
+&lt;p&gt;I don't imagine the authors of Celeste have ever read &lt;a href="https://amzn.to/2J3N60V"&gt;Feeding your demons&lt;/a&gt;, but there is a lot of similarity in the approaches.
+Rather than treating your inner fears as demons who you should exorcise, you ask them what they need, and you give them love, and you turn them into your allies.&lt;/p&gt;
+
+
+&lt;p&gt;(Feeding Your Demons is a weird book and I like it but I don't know that I recommend it exactly)&lt;/p&gt;
+
+
+&lt;p&gt;The way Madeline talks to Badeline is exactly as bad as the way Badeline talks to Madeline.
+You could argue that Badeline deserves it because she started it, but even if that were true it is unhelpful,
+because the way the game actually refers to Badeline is more accurate: She is &lt;em&gt;part of Madeline&lt;/em&gt;.
+Madeline's attacks on Badeline are attacks on herself.&lt;/p&gt;
+
+
+&lt;p&gt;When you have an inner voice that is harsh and critical towards you, the problem is not that you have an inner voice, but how it talks to you. You need to &lt;a href="https://www.drmaciver.com/2020/01/a-crash-course-in-having-feelings/"&gt;learn how have a better relationship with it, and how to talk to yourself in a healthier way&lt;/a&gt;, rather than treat it as being intrinsically the source of the problem.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-03-21-12:35.html" rel="alternate"/>
   </entry>
 </feed>
