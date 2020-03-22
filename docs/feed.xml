@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-03-21T12:35:00+00:00</updated>
+  <updated>2020-03-22T18:01:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,60 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-03-11-07:15.html</id>
-    <title>Suspension of annoyance</title>
-    <updated>2020-03-11T09:35:51+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Suspension of annoyance&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-03-11&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I've been banging on a bit about "&lt;a href="https://amzn.to/38I7D5z"&gt;The Courage to be Disliked&lt;/a&gt;" since &lt;a href="https://twitter.com/m_ashcroft/"&gt;Michael Ashcroft&lt;/a&gt; recommended it.
-My friend &lt;a href="https://twitter.com/rixxtr"&gt;Tobi&lt;/a&gt; read it as a result, and the following is his review from &lt;a href="https://discord.gg/jm97tDN"&gt;bookchat discord&lt;/a&gt;:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;I finished The Courage to be Disliked. It's a thoroughly annoying book, obnoxiously written, and I strongly disagree with a whole lot of what it says. At the same time it has been extremely useful to me, in an immediate and actionable way, and I'm very glad I've read it.&lt;/p&gt;
-&lt;p&gt;Useful, yet punchable.&lt;/p&gt;
-&lt;p&gt;I only found this thread on Twitter afterwards, and it contains pretty much all of the book without the obnoxiousness: &lt;a href="https://twitter.com/visakanv/status/1037715339314847747"&gt;https://twitter.com/visakanv/status/1037715339314847747&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;I cannot disagree with this review. The book is objectively very annoying. However I was not particularly annoyed while reading it.&lt;/p&gt;
-
-
-&lt;p&gt;Part of this I've had practice. The particular foibles of this book were new to me, but I've read a lot of self-help and niche (especially trauma centric) therapy books recently, which has allowed me to get used to a particular style: That of a slightly self-obsessed author telling you their life story and the transformation they've been through, wrapped around what would probably be a fairly decent essay about a useful technique threaded through the entire thing in a way that makes it slightly hard to skip reading about the journey.&lt;/p&gt;
-
-
-&lt;p&gt;(I said I wasn't annoyed while &lt;em&gt;reading&lt;/em&gt; the books, not that I wasn't annoyed about the books)&lt;/p&gt;
-
-
-&lt;p&gt;When reading those books, I could look for things to argue with. It wouldn't be hard. The books are full of poorly supported pseudoscience, weak arguments, and irrelevant digressions. But I knew they would be going in, so why worry about it? I'm there to see if I can extract anything interesting from the book. I don't really care about whether the author is right or wrong, and I expect they're mostly wrong, but I can still try to derive some useful insights from their work.&lt;/p&gt;
-
-
-&lt;p&gt;To go a bit Adlerian about this, what purpose is the annoyance with the book serving you?&lt;/p&gt;
-
-
-&lt;p&gt;I think it's mostly protective: Someone is saying wrong things, and you want to treat it as someone arguing with you, because if you were to take on the wrong things you would go on to believe wrong things, and that's bad.&lt;/p&gt;
-
-
-&lt;p&gt;But you could just do neither of those things. Don't read the book on the assumption that you'll believe anything the author has to say, but also don't be annoyed when you don't.&lt;/p&gt;
-
-
-&lt;p&gt;Instead, take on the information that this is what the author believes. Acknowledge the possibility that some of it &lt;a href="https://notebook.drmaciver.com/posts/2020-02-26-16:07.html"&gt;might be worth trying&lt;/a&gt;, but don't read it with any greater expectation of truth than that.
-Once you've done that, the protective mechanism of annoyance is not especially useful,
-and you might as well just choose not to do that.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-03-11-07:15.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-12-07:45.html</id>
     <title>Books should be taken seriously but not literally</title>
@@ -539,7 +485,7 @@ There were plenty of things you can do in Celeste that you can't do in Hollow Kn
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-21-12:35.html</id>
     <title>The Inner Game of Celeste</title>
-    <updated>2020-03-21T12:35:00+00:00</updated>
+    <updated>2020-03-21T15:59:47+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;The Inner Game of Celeste&lt;/p&gt;
@@ -655,5 +601,50 @@ Madeline's attacks on Badeline are attacks on herself.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-03-21-12:35.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-03-22-18:01.html</id>
+    <title>Leaving knowledge in the box</title>
+    <updated>2020-03-22T18:01:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Leaving knowledge in the box&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-03-22&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;&lt;a href="https://notebook.drmaciver.com/posts/2020-02-24-10:37.html"&gt;All knowledge is connected&lt;/a&gt;.
+It might be tenuous, but the connection is there. You will probably learn something about cooking in studying ancient Greek culture, and you will probably learn something about mathematics by studying feminism,
+possibly via some intermediaries.&lt;/p&gt;
+
+
+&lt;p&gt;A consequence of this is that whatever problem you are working on at the moment, you will never learn everything that might be relevant to it, because everything that might be relevant is... everything.&lt;/p&gt;
+
+
+&lt;p&gt;Fortunately you don't need to actually learn everything relevant to a problem to act. You can just flip a coin, &lt;a href="https://notebook.drmaciver.com/posts/2020-02-25-10:39.html"&gt;or do anything strictly better than that&lt;/a&gt;.
+The goal of learning is often to &lt;a href="https://www.drmaciver.com/2013/08/how-did-you-get-started-so-quickly/"&gt;learn just enough to solve the problem&lt;/a&gt;, and often you're better off learning enough &lt;/p&gt;
+
+
+&lt;p&gt;As a result, this is a major &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-15:59.html"&gt;cut out switch&lt;/a&gt; you need to install: The ability to reflectively go "I don't need to know this", and treat some areas of knowledge as black boxes that you're never going to open.&lt;/p&gt;
+
+
+&lt;p&gt;This requires learning the skill of working with black box knowledge.
+Typically you deal with a black box in one of two ways:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Learn just enough about how it works to use it and taboo understanding it. I don't need to know how the London Underground system works to ride the tube (although also don't ride the tube right now if you can possibly avoid it).&lt;/li&gt;
+&lt;li&gt;Ask for help. Find someone whose problem it &lt;em&gt;is&lt;/em&gt; to understand this, and let them solve it for you. You may need to develop &lt;a href="https://www.drmaciver.com/2015/02/what-are-developer-adjacent-skills/"&gt;adjacent skills&lt;/a&gt; for their job, but you don't need &lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;If neither of these work, maybe it's time to open the box after all.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-03-22-18:01.html" rel="alternate"/>
   </entry>
 </feed>

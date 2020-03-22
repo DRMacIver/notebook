@@ -21,6 +21,10 @@
 * [x] Berkson's paradox is everywhere
 * [x] Permission as the fundamental social need
 * [x] Pluralistic ignorance
+* [x] Safety as an enabling technology
+* [x] The Inner Game of Celeste
+* [x] Being willing to blackbox areas of knowledge
+* [ ] Anxiety management as intelligence enhancement
 * [ ] Eye pressure and switching contexts as an enabling technology
 * [ ] Ways in which I could improve my communication skills
 * [ ] Notes on my experience of poly
@@ -48,10 +52,7 @@
 * [ ] Notes on attraction and sexuality
 * [ ] Policy as non-aggregate of individual ethical decisions
 * [ ] Intuition as guiding heuristic in reasoning processes
-* [ ] Being willing to blackbox areas of knowledge
 * [ ] Transactive memory and loss
-* [ ] Anxiety management as intelligence enhancement
-* [ ] Safety as an enabling technology
 * [ ] Need and desire as drivers of progress
 * [ ] The market for lemons is everywhere
 * [ ] Developing the mind as a platform for thought
@@ -64,9 +65,10 @@
 * [ ] Notes on confidence
 * [ ] Nonagreement vs disagreement: Just because you don't agree with someone doesn't mean you have to disagree
 * [ ] Firewalls as a way to create safe places to experiment
-* [ ] The Inner Game of Celeste
 * [ ] Separating emotional responses from the need to act
 * [ ] Everything is a teachable moment
 * [ ] The market for lemons is everywhere
 * [ ] You can read however you like. You don't have to read the whole thing.
 * [ ] You don't have to treat other people as worth arguing with
+* [ ] Science vs engineering as forall vs exists
+* [ ] Anxiety vs worry
