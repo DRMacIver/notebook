@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-03-22T18:01:00+00:00</updated>
+  <updated>2020-03-22T21:38:04+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -605,7 +605,7 @@ Madeline's attacks on Badeline are attacks on herself.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-22-18:01.html</id>
     <title>Leaving knowledge in the box</title>
-    <updated>2020-03-22T18:01:00+00:00</updated>
+    <updated>2020-03-22T21:38:04+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Leaving knowledge in the box&lt;/p&gt;
@@ -625,6 +625,13 @@ possibly via some intermediaries.&lt;/p&gt;
 &lt;p&gt;A consequence of this is that whatever problem you are working on at the moment, you will never learn everything that might be relevant to it, because everything that might be relevant is... everything.&lt;/p&gt;
 
 
+&lt;p&gt;Even with more restricted areas, knowing everything is impossible.
+In software development we talk about "full stack" developers, but nobody actually understands the whole stack,
+at best we can do a reasonable job across a reasonably broad subset of it.
+Certainly nobody actually understands how the whole stack works if you all the way down from the user interface to the hardware.
+Modern computers are too complicated for any one person to understand the whole thing.&lt;/p&gt;
+
+
 &lt;p&gt;Fortunately you don't need to actually learn everything relevant to a problem to act. You can just flip a coin, &lt;a href="https://notebook.drmaciver.com/posts/2020-02-25-10:39.html"&gt;or do anything strictly better than that&lt;/a&gt;.
 The goal of learning is often to &lt;a href="https://www.drmaciver.com/2013/08/how-did-you-get-started-so-quickly/"&gt;learn just enough to solve the problem&lt;/a&gt;, and often you're better off learning enough &lt;/p&gt;
 
@@ -632,7 +639,10 @@ The goal of learning is often to &lt;a href="https://www.drmaciver.com/2013/08/h
 &lt;p&gt;As a result, this is a major &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-15:59.html"&gt;cut out switch&lt;/a&gt; you need to install: The ability to reflectively go "I don't need to know this", and treat some areas of knowledge as black boxes that you're never going to open.&lt;/p&gt;
 
 
-&lt;p&gt;This requires learning the skill of working with black box knowledge.
+&lt;p&gt;This requires developing skills of discomfort tolerance: Relying on something mysterious that you don't understand how it works is scary, but you're going to have to get used to it.&lt;/p&gt;
+
+
+&lt;p&gt;It also requires learning the skill of working with black box knowledge.
 Typically you deal with a black box in one of two ways:&lt;/p&gt;
 
 
