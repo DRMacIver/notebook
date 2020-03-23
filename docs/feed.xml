@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-03-23T15:52:00+00:00</updated>
+  <updated>2020-03-23T16:18:50+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -582,7 +582,7 @@ Typically you deal with a black box in one of two ways:&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Learn just enough about how it works to use it and taboo understanding it. I don't need to know how the London Underground system works to ride the tube (although also don't ride the tube right now if you can possibly avoid it).&lt;/li&gt;
-&lt;li&gt;Ask for help. Find someone whose problem it &lt;em&gt;is&lt;/em&gt; to understand this, and let them solve it for you. You may need to develop &lt;a href="https://www.drmaciver.com/2015/02/what-are-developer-adjacent-skills/"&gt;adjacent skills&lt;/a&gt; for their job, but you don't need &lt;/li&gt;
+&lt;li&gt;Ask for help. Find someone whose problem it &lt;em&gt;is&lt;/em&gt; to understand this, and let them solve it for you. You may need to develop &lt;a href="https://www.drmaciver.com/2015/02/what-are-developer-adjacent-skills/"&gt;adjacent skills&lt;/a&gt; for their job, but you don't need to develop anything like the whole skill set.&lt;/li&gt;
 &lt;/ol&gt;
 
 
@@ -594,7 +594,7 @@ Typically you deal with a black box in one of two ways:&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-23-15:52.html</id>
     <title>Life as an anytime algorithm</title>
-    <updated>2020-03-23T15:52:00+00:00</updated>
+    <updated>2020-03-23T16:18:50+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Life as an anytime algorithm&lt;/p&gt;
