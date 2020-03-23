@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-03-22T21:38:04+00:00</updated>
+  <updated>2020-03-23T15:52:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,72 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-03-12-07:45.html</id>
-    <title>Books should be taken seriously but not literally</title>
-    <updated>2020-03-13T11:06:34+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Books should be taken seriously but not literally&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-03-12&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;fvathynevgl (I've got official sanction to pronounce this "Vathy" if that's helpful to you in reading this post without demonic incursions) has &lt;a href="https://www.fvathynevgl.com/cooperative-spherical-cows/"&gt;written about cooperative spherical cows&lt;/a&gt; as a model of various self-help ideologies:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Cooperative spherical cow philosophies postulate a certain model of human behaviour and give advice on how to fix your relationships. Unfortunately, whether the advice works is conditional on all humans adhering to the ideal model, which they don't.&lt;/p&gt;
-&lt;p&gt;All cooperative spherical cow philosophies have a hidden precondition which makes them applicable in the real world. If it is mentioned in a book at all, it will be as an off-hand remark or digression, accepted at face value and not explored in depth. You can tell it's a hidden precondition because it makes the philosophy no longer look like a silver bullet.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;This is somewhat in response to The Courage to be Disliked which I wrote about in &lt;a href="https://notebook.drmaciver.com/posts/2020-03-11-07:15.html"&gt;suspension of annoyance&lt;/a&gt;. Apparently &lt;a href="https://twitter.com/fvathynevgl/status/1237666299146272768"&gt;the timing is a coincidence&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, I agree with their post, I just think that it's only true under hidden preconditions that makes it look applicable in the real world.&lt;/p&gt;
-
-
-&lt;p&gt;OK, that's unfair, but I couldn't resist the opportunity for the line. My more nuanced counterbalance to the post is this: Books like they are describing work best when you take them seriously but not literally, and the failure mode they are describing only occurs if you take them literally. If you read the books described and get religion over them and try to apply them verbatim to your life, it will likely go very badly for you, but the solution is just not to do that.&lt;/p&gt;
-
-
-&lt;p&gt;This is a good thing to point out, because a lot of people do take books literally and get religion over them, and this reliably goes badly. I have likely been undercautious with my book recommendations as a result because I've assumed people have a better attitude to reading than they do, and will update accordingly.&lt;/p&gt;
-
-
-&lt;p&gt;That being said... I think this is, similarly, a post that should be taken seriously and not literally, because it will cause you to miss out on a lot of useful ideas.
-There is enough &lt;a href="https://notebook.drmaciver.com/posts/2020-02-16-14:22.html"&gt;ghost knowledge&lt;/a&gt; out there without also ignoring that which is written down.
-The books fvathynevgl recommends sound good, and I intend to read them, but only being able to extract knowledge from impeccable sources is a severe limitation that I cannot really recommend.&lt;/p&gt;
-
-
-&lt;p&gt;As a side note, I am also interested as to why exactly these books are not best sellers if they are so much better than the books that are best sellers.
-This is not a disagreement with fvathynevgl, I'm just genuinely curious. Is there a need that the others are filling that these are not?&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, here is my base recommendation for how to engage with books:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;The author is &lt;em&gt;always&lt;/em&gt; overly convinced of the truth and usefullness of their position. If they weren't, they wouldn't be writing the book. You cannot rely on them to provide the necessary preconditions, to the point where even if they do provide those preconditions you should &lt;em&gt;still&lt;/em&gt; assume you need to figure them out on your own.&lt;/li&gt;
-&lt;li&gt;The author is a nerd about the subject, in the sense outlined in &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-07:38.html"&gt;my post on nerding&lt;/a&gt;. They are much more interested in the subject than you are, and all of their advice has the precondition&lt;/li&gt;
-&lt;li&gt;The book is a book. As such, &lt;a href="https://notebook.drmaciver.com/posts/2020-02-18-12:24.html"&gt;the books you create out of it in your head&lt;/a&gt; are more interesting than the book as an actual physical or digital object.&lt;/li&gt;
-&lt;li&gt;The book is best treated not as a source of truth but as a textual artefact that you are examining.&lt;/li&gt;
-&lt;li&gt;The artefact is an &lt;a href="https://notebook.drmaciver.com/posts/2020-03-05-11:27.html"&gt;existence proof&lt;/a&gt; of a particular sort of mindset. You're not trying to adopt that mindset for daily use, but by being able to engage with it and figure out what it's like you are more prepared to adapt the tools from it.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;In order to treat books as artefacts of study rather than sources of truth you need to have reliable belief formation skills (so that you don't get lead in bad directions), and you need to have confidence that you do (so that reading things that are not true &lt;em&gt;feels&lt;/em&gt; safe as well as &lt;em&gt;is&lt;/em&gt; safe).&lt;/p&gt;
-
-
-&lt;p&gt;Recommended starting points for this: &lt;a href="https://notebook.drmaciver.com/posts/2020-03-09-11:13.html"&gt;Don't believe things unless you can act on them&lt;/a&gt;, and then &lt;a href="https://notebook.drmaciver.com/posts/2020-02-26-16:07.html"&gt;experiment with those beliefs and see how it pans out&lt;/a&gt;.
-You will rapidly find the preconditions for applicability of anything you learn from books when you do this, and you will do so much more reliably than anything the authors tell you about those preconditions.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-03-12-07:45.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-13-09:49.html</id>
     <title>Communication: Collaboration and Conflict</title>
@@ -605,7 +539,7 @@ Madeline's attacks on Badeline are attacks on herself.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-22-18:01.html</id>
     <title>Leaving knowledge in the box</title>
-    <updated>2020-03-22T21:38:04+00:00</updated>
+    <updated>2020-03-22T21:43:41+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Leaving knowledge in the box&lt;/p&gt;
@@ -656,5 +590,42 @@ Typically you deal with a black box in one of two ways:&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-03-22-18:01.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-03-23-15:52.html</id>
+    <title>Life as an anytime algorithm</title>
+    <updated>2020-03-23T15:52:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Life as an anytime algorithm&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-03-23&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;In computer science we have the (slightly obscure) notion of an &lt;a href="https://en.wikipedia.org/wiki/Anytime_algorithm"&gt;anytime algorithm&lt;/a&gt;.
+This is an algorithm that is trying to find some solution to a problem (say, a configuration of a problem that gives the highest score, or a plan that minimizes a cost) and will run to completion if you let it, but also at any point when you get bored you can stop it and ask it for its current best answer and it will give it to you.&lt;/p&gt;
+
+
+&lt;p&gt;An important feature of anytime algorithms is that although they are trying to achieve a specific goal, they make meaningful progress towards that goal along the way, and are designed on the assumption that they might be interrupted at any point and fail to achieve that goal, so do their best to ensure that regardless of when you stop them the effort has not been wasted.&lt;/p&gt;
+
+
+&lt;p&gt;This is often a good way to structure goals in life as well as in algorithm design.&lt;/p&gt;
+
+
+&lt;p&gt;For one thing, this is a partial antidote to &lt;a href="https://www.fvathynevgl.com/momentum/"&gt;the problem of grind&lt;/a&gt;.
+Grinding for a goal in the distant future is unrewarding, but grinding where you are seeing meaningful progress along the way which makes things progressively better on an ongoing basis.&lt;/p&gt;
+
+
+&lt;p&gt;The &lt;a href="https://twitter.com/DRMacIver/status/1229061018019651587"&gt;daily notebook blogging&lt;/a&gt; I am doing at the moment is an example of this approach. I think it is likely that I will turn some large fraction of it into a book at some point, but if I were to just work on the book then it would be a giant project that would fail to motivate me due to its size and lack of feedback, while by posting these daily people will riff off them, and respond to them, and they will be useful to the world almost immediately even if I never write that book.&lt;/p&gt;
+
+
+&lt;p&gt;Another example is that of properly investing in capabilities rather than just making a beeline for the goal. Do more or less the opposite of the &lt;a href="https://www.drmaciver.com/2013/08/how-did-you-get-started-so-quickly/"&gt;how to quickly become effective&lt;/a&gt; strategy, and invest carefully in the skills that will allow your goal to be more readily achievable. That way if you abandon the goal, for whatever reason, you will retain the skills and may repurpose them in other contexts.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-03-23-15:52.html" rel="alternate"/>
   </entry>
 </feed>
