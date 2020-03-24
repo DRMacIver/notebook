@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-03-23T16:18:50+00:00</updated>
+  <updated>2020-03-24T09:46:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,96 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-03-13-09:49.html</id>
-    <title>Communication: Collaboration and Conflict</title>
-    <updated>2020-03-13T10:32:14+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Communication: Collaboration and Conflict&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-03-13&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;This is loosely a follow-on to &lt;a href="https://twitter.com/fvathynevgl/status/1238082764609671170"&gt;discussions with Vathy&lt;/a&gt; about &lt;a href="https://notebook.drmaciver.com/posts/2020-03-12-07:45.html"&gt;the previous post&lt;/a&gt; but this isn't about books, it's about communication.&lt;/p&gt;
-
-
-&lt;p&gt;The model scene for communication that I'll be thinking about in this post is two people talking to each other in person. A lot of what I'm going to be saying applies in general, but there are different constraints and considerations.&lt;/p&gt;
-
-
-&lt;p&gt;Every act of communication contains two things: collaboration and conflict.&lt;/p&gt;
-
-
-&lt;p&gt;You are &lt;em&gt;collaborating&lt;/em&gt; in the sense that you are producing an artefact (the conversation) together, but you are in &lt;em&gt;conflict&lt;/em&gt; (in the Schelling sense) in that you are two presumably-human people whose values are imperfectly aligned.&lt;/p&gt;
-
-
-&lt;p&gt;How much of each is present varies, but no communication is free of either.&lt;/p&gt;
-
-
-&lt;p&gt;I've previously claimed &lt;a href="https://twitter.com/DRMacIver/status/1232716902352523264"&gt;you are underinvested in communication skills&lt;/a&gt;, but I think it's worth unpacking what communication skills &lt;em&gt;do&lt;/em&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;Lets think about teaching. Teaching is very much an act of communication. As I've previously argued, &lt;a href="https://notebook.drmaciver.com/posts/2020-03-08-08:53.html"&gt;you can't teach anything to anyone&lt;/a&gt; (I've also &lt;a href="https://www.drmaciver.com/2018/10/how-to-explain-anything-to-anyone/"&gt;previously claimed that you can&lt;/a&gt;. I'll admit I was being a bit hyperbolic there),
-and the reason for that is that the other person &lt;em&gt;may not be willing to do the work&lt;/em&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;I've done a modest amount of one-on-one maths tutoring. Not a lot, and only with a handful of students, so I definitely wouldn't claim expertise in this, but I've taken a couple of students from "this makes no sense and I hate it" to "oh, this makes total sense and is kinda neat". I've also had one student who I &lt;em&gt;completely&lt;/em&gt; failed to teach.
-Why? Because he didn't care, and would not engage. He would not do the work, and it was impossible for me to open his skull and insert mathematics directly into his brain, so no matter how well I taught him he would never learn.
-It's possible, likely even, that I was missing some skill that would get him interested, but without fundamentally changing his values around willingness to learn mathematics (which I didn't know how to do), it didn't matter how clearly I communicated the subject to him, he wasn't going to learn it.&lt;/p&gt;
-
-
-&lt;p&gt;In teaching, there are two categories of communication skills that are relevant (there are more than two, but I'm only going to point out two):&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Getting someone interested in the subject.&lt;/li&gt;
-&lt;li&gt;Communicating the subject in a way that they can understand it.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;I'm quite bad at (1) because I'm very bad at not being interested in things. Mea culpa. So in this post, I'm going to focus on (2).&lt;/p&gt;
-
-
-&lt;p&gt;One way to think of this aspect of communication skills is that it is about &lt;em&gt;workload management&lt;/em&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;Suppose you had never been exposed to any mathematics, and you had to derive modern statistics from scratch.
-Obviously you can't do this, but imagine that you could in principle do this, and think about how much work it would be.
-That's the baseline for learning statistics.
-Every aspect of teaching is designed to make it easier to learn statistics than that.
-Ultimately you, the student, still need to do the work of learning and understanding statistics, but the purpose of the teacher is to save you a few thousand years of effort.&lt;/p&gt;
-
-
-&lt;p&gt;Ultimately, a lesson is primarily a collaboration between the teacher and the student, in which the goal of the teacher is to shoulder as much of the work as they reasonably can.
-This is, I think, a key feature of all communication skills:
-They are designed to manage the workload of the other party.&lt;/p&gt;
-
-
-&lt;p&gt;Even a bad communicator can communicate to a sufficiently dedicated student, but a good one can lower the level of dedication required.&lt;/p&gt;
-
-
-&lt;p&gt;These are what you might think of as the cooperative communication skills, ones that are designed to make the collaboration go as well as possible.
-But as I said at the beginning: Communication has two parts, collaboration and conflict.
-You can think of communication skills centered on the conflict as adversarial communication skills.&lt;/p&gt;
-
-
-&lt;p&gt;There is a useful workload management spin on adversarial communication skills too:
-They are designed to &lt;em&gt;increase&lt;/em&gt; the workload of the other party where they are trying to achieve goals that you don't want.&lt;/p&gt;
-
-
-&lt;p&gt;The &lt;a href="https://www.healthline.com/health/grey-rock#offer-nothing"&gt;grey rock&lt;/a&gt; method is a perfect example of this. When you are dealing with a toxic person, you distance and shut down your visible emotional responses.
-Their goal (which you do not want) is to get a rise out of you, and gray rocking makes it harder for them to do that.&lt;/p&gt;
-
-
-&lt;p&gt;From a collaboration point of view this looks like not communicating, but from a conflict point of view this is absolutely a communication skill, because it's managing the communication so that it goes in a way that you want rather than the other person wants.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-03-13-09:49.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-14-13:55.html</id>
     <title>Alief/Belief Coherence</title>
@@ -539,7 +449,7 @@ Madeline's attacks on Badeline are attacks on herself.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-22-18:01.html</id>
     <title>Leaving knowledge in the box</title>
-    <updated>2020-03-22T21:43:41+00:00</updated>
+    <updated>2020-03-23T21:49:51+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Leaving knowledge in the box&lt;/p&gt;
@@ -627,5 +537,86 @@ Grinding for a goal in the distant future is unrewarding, but grinding where you
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-03-23-15:52.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-03-24-09:46.html</id>
+    <title>Trust beyond reason</title>
+    <updated>2020-03-24T09:46:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Trust beyond reason&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-03-24&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;To quote from &lt;a href="https://amzn.to/2Uewqdp"&gt;one of my all time favourite books&lt;/a&gt;:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;"You? I know you! You trust beyond reason."&lt;/p&gt;
+&lt;p&gt;"Yes. It's how I get results beyond hope. As you may recall."&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;This is a very powerful strategy, and as a result of following it (and, it must be said, a great deal of luck) almost everyone who is important to me is someone I trust.&lt;/p&gt;
+
+
+&lt;p&gt;I don't trust them all the same amount of course. They're also not important to me to the same amount.
+But, by and large, the more important someone is to me the more I am able to trust them.&lt;/p&gt;
+
+
+&lt;p&gt;Let's back up. What do I mean by trust? And important?&lt;/p&gt;
+
+
+&lt;p&gt;A good rule of thumb for what "trust" means that I came up with a while ago is this: Central to trust is the ability to tell someone true things, especially about yourself, and be confident that this will not go badly for you.
+It's not that their interests are perfectly aligned with yours, but they are in some relatively fundamental sense on your side and will not use your confidence against you.
+There are many other senses of trust, many of them well correlated, but this is the one I will focus on.&lt;/p&gt;
+
+
+&lt;p&gt;(Unfortunately it turned out that I could not, in this sense, trust the friend who I came up with this definition in tandem with, and we are no longer friends. Trust is a powerful but high risk strategy).&lt;/p&gt;
+
+
+&lt;p&gt;Importance in the sense I'm talking about is how much power you have over eachother's lives, how intertwined they are with you, how much you &lt;em&gt;need&lt;/em&gt; to care about what they think or do. A stranger is low importance. A friend is higher importance. A romantic partner potentially higher yet (but not necessarily! It depends a lot on the friend, or the partner).&lt;/p&gt;
+
+
+&lt;p&gt;Importance in this sense isn't about moral worth (a stranger is unimportant to me in this sense, but that doesn't mean they lack moral significance. They're still important &lt;em&gt;as a person&lt;/em&gt;, but that doesn't make them important to you). It's also not about love - your boss is very important to you in this sense, but that doesn't necessarily mean you even like them.&lt;/p&gt;
+
+
+&lt;p&gt;For a lot of people, family are among the most important people. They have a huge impact on us, and on our emotional lives. This is one of the senses in which this circumstance is lucky: I have a great family, and I trust them. This was probably foundational for me in being able to build trust with other people.&lt;/p&gt;
+
+
+&lt;p&gt;But the rest, that's strategy, and it's strategy based on one very simple observation:
+It is much easier to make people who you already trust important to you than it is to learn to trust people who are already important to you.&lt;/p&gt;
+
+
+&lt;p&gt;If someone has power over you, revealing information to them is a high risk strategy almost definitionally. If they can use that information to harm you, and they have the power to harm you, you are literally putting yourself in danger.
+&lt;a href="https://notebook.drmaciver.com/posts/2020-03-18-11:24.html"&gt;Safety&lt;/a&gt; is very important to being able to grow trust, and people who are important to you but untrustworthy are not safe.&lt;/p&gt;
+
+
+&lt;p&gt;In Mark Manson's surprisingly good book about dating, &lt;a href="https://amzn.to/2Ur16XG"&gt;Models&lt;/a&gt; he talks about polarising as a dating strategy: People are in one of three categories "Not interested", "Interested", and "Unsure". When they are in the "Not interested" category it's not worth trying to move them out of it. Your job when dating is to move people from the "Unsure" category into one of the other two. And, to a first approximation, moving them into &lt;em&gt;either&lt;/em&gt; category is a success, as long as you do so by being authentically yourself in ways that they would find out anyway later.&lt;/p&gt;
+
+
+&lt;p&gt;Polarizing is not a dating specific strategy, it's fairly general purpose: It's a specific implementation of &lt;a href="https://notebook.drmaciver.com/posts/2020-02-26-16:07.html"&gt;doing something as a cheap experiment to learn about the world&lt;/a&gt;.
+However, it does rely quite heavily on one specific feature of dating: Early on in the dating process, the people you're trying to date just don't matter to you that much. You need to behave decently towards them, but their opinion of you isn't actually very important. If they decide they don't like you, that's fine.&lt;/p&gt;
+
+
+&lt;p&gt;In this sense, trust is a polarizing strategy, and it's one that is important to apply early on in the relationship before someone becomes important to you. If you trust someone excessively and it goes badly, but they don't matter to you, you can just kick them to the curb.
+In general, trusting someone at a level that seems slightly excessive for their level of importance to you will help you sort people in your life who you want to be more important to you than they are from those who you want to be less important than they are.&lt;/p&gt;
+
+
+&lt;p&gt;And it does need to be excessive. It needs to be trust beyond reason. Not beyond &lt;em&gt;all&lt;/em&gt; reason, but somewhat beyond what currently seems reasonable. If it is not, then unless they are prepared to take the first move, you will never find the signs you need to move to a higher level of mutual trust.&lt;/p&gt;
+
+
+&lt;p&gt;Sometimes this will go badly, but &lt;a href="https://notebook.drmaciver.com/posts/2020-02-22-11:37.html"&gt;you need to be able to try bad things&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;It's important not to be reckless (especially when physical safety is concerned), and it's easy to fall into the trap of oversharing. This strategy is scary, not simple, and definitely not easy, but when you can pull it off it provides amazing rewards.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-03-24-09:46.html" rel="alternate"/>
   </entry>
 </feed>
