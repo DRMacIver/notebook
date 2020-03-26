@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-03-25T20:02:20+00:00</updated>
+  <updated>2020-03-26T09:48:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,62 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-03-15-12:24.html</id>
-    <title>Berkson's paradox is everywhere</title>
-    <updated>2020-03-15T13:07:06+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Berkson's paradox is everywhere&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-03-15&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Everyone likes to tell you that correlation is not causation. They're right, but they're also boring. Also &lt;a href="https://www.drmaciver.com/2014/05/spurious-correlations-and-causation/"&gt;all of their examples are wrong&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;What they don't tell you about so often is the most common reason why correlation does not imply correlation is that most of the correlations you see in day to day life are, in some sense, fake: They are not present in the underlying reality, they're an artifact of how you're looking at it. This is &lt;em&gt;Berkson's paradox&lt;/em&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;My go to example of this (I don't actually know if it's true, but it's a nice illustration) is that professional tennis players tend to be either tall or fast - tall tennis players tend to be slower, fast tennis players tend to be shorter.&lt;/p&gt;
-
-
-&lt;p&gt;You could come up with some complicated biological explanation about why these two traits might be negatively correlated, but it would be wrong, because they're not negatively correlated in the general population, or at least not to the same degree. The reason is much simpler than that: Short, slow, people will rarely play tennis professionally.&lt;/p&gt;
-
-
-&lt;p&gt;As a result, if height and speed are entirely independent of eachother (even if they're slightly positively correlated!) when you look at professional tennis players they will become negatively correlated, because it's more likely to be one or the other than it is to be both.&lt;/p&gt;
-
-
-&lt;p&gt;This may seem like a weird niche edge case, but once you start noticing it it's &lt;em&gt;everywhere&lt;/em&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;For example, you know how popular things are often kinda bad and the really good things are niche? Is that true, or is it just that you don't notice things that are bad and unpopular?&lt;/p&gt;
-
-
-&lt;p&gt;You know how people who disagree with you seem kinda shouty? Do you notice people who disagree with you and are not shouty?&lt;/p&gt;
-
-
-&lt;p&gt;This repeats over and over again: The patterns we see in day to day life come as much from the process that causes us to observe the data as it does from any underlying causal mechanism.&lt;/p&gt;
-
-
-&lt;p&gt;Does this matter? I think it does, for two reasons:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;As with "correlation does not imply causation" in general, we need to be careful about letting the inferences we draw suggest actions unless we understand what the actual causal mechanism is.&lt;/li&gt;
-&lt;li&gt;Because these correlations come from the process rather than reality, if the process changes then many of our old inferences become invalid.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;(2) is particularly important when we experience &lt;a href="https://notebook.drmaciver.com/posts/2020-02-28-06:33.html"&gt;culture shifts&lt;/a&gt;, because the entire generating process will have changed, so many things we thought were true become invalid.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-03-15-12:24.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-17-11:40.html</id>
     <title>Everybody is looking for permission</title>
@@ -572,7 +516,7 @@ In general, trusting someone at a level that seems slightly excessive for their 
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-25-16:02.html</id>
     <title>Notes on Running a Mutual Support Group</title>
-    <updated>2020-03-25T20:02:20+00:00</updated>
+    <updated>2020-03-25T20:05:50+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Notes on Running a Mutual Support Group&lt;/p&gt;
@@ -655,5 +599,79 @@ You might want to tinker with (1) and (2) in particular if you're less inclined 
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-03-25-16:02.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-03-26-09:48.html</id>
+    <title>Pragmatic Problem Solving (aka Kludges)</title>
+    <updated>2020-03-26T09:48:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Pragmatic Problem Solving (aka Kludges)&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-03-26&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;&lt;a href="https://twitter.com/DRMacIver/status/1243110036341248000"&gt;On Twitter&lt;/a&gt;:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Guiding principle: If you can't solve a problem it's probably because you've not tried an ugly enough kludge yet.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;Our shower broke this morning. It's been running in a degraded state for a while, but the knob for controlling water flow finally stopped working entirely. We could get our landlord to fix it, he's pretty good about fixing things, but unfortunately we're under quarantine for another week so that's not a viable option.&lt;/p&gt;
+
+
+&lt;p&gt;So I fixed it, of sorts.&lt;/p&gt;
+
+
+&lt;p&gt;From flatmate WhatsApp this morning:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;The shower is, in a sense, fixed now. It is probably a temporary fix and will likely break again.&lt;/p&gt;
+&lt;p&gt;The fix consists of two ingenious solutions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I returned the missing plastic gizmo to the inside of the shower knob (it came out a while ago and the shower was difficult to make work with it in, so I didn't return it).&lt;/li&gt;
+&lt;li&gt;In the event that you find you do not have enough grip strength to operate the shower in its current configuration (and you will find this), there is a tea towel hanging on the shower door and you should use that to grip the control knob and will find it much more manageable.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Behold, science.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;(This is, in fact, not science, but engineering. More on that in a later post).&lt;/p&gt;
+
+
+&lt;p&gt;I live with other very smart people, and I am not the most practically minded of souls, so why was it me who fixed the shower?&lt;/p&gt;
+
+
+&lt;p&gt;Probably the answer is timing and coincidence as much as anything else. I'm sure someone else would have come up with something eventually. However I think I had a couple of straightforward advantages that lead to this being a thing I just shrugged and solved almost immediately.&lt;/p&gt;
+
+
+&lt;p&gt;These were:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;I had some ideas of things to try and was prepared to &lt;a href="https://www.drmaciver.com/2017/02/thinking-through-the-implications/"&gt;just hit things with them&lt;/a&gt; until something worked. I was originally going to try these two independently (either put the gizmo back, or take the knob off entirely and use the tea towel on the control shaft directly). Neither quite worked, but together they work fine.&lt;/li&gt;
+&lt;li&gt;I didn't care about fixing the shower, I just cared about being able to have one.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;(Another flatmate adopted a bucket shower solution. I considered this unacceptable as long as the possibility of an actual shower existed)&lt;/p&gt;
+
+
+&lt;p&gt;It's &lt;a href="https://notebook.drmaciver.com/posts/2020-03-05-11:27.html"&gt;often worth having bad solutions to demonstrate that a solution is possible&lt;/a&gt; but there's another case in which it's worth having bad solutions:
+Often you &lt;em&gt;don't care whether the solution is bad&lt;/em&gt;, you just care that the problem is solved.
+If you can't solve the problem, you might just be being limited by good taste.&lt;/p&gt;
+
+
+&lt;p&gt;"Use a tea towel to operate the shower" is not a good taste solution. It's ugly, it's kludgy, and for now it's more than good enough, and I can assure you that the way my flatmates and I would smell after a few days without access to a shower is also not in good taste.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-03-26-09:48.html" rel="alternate"/>
   </entry>
 </feed>
