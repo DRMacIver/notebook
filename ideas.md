@@ -72,3 +72,4 @@
 * [ ] You don't have to treat other people as worth arguing with
 * [ ] Science vs engineering as forall vs exists
 * [ ] Anxiety vs worry
+* [ ] You should often assign larger interventions to fewer people
