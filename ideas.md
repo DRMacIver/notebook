@@ -73,3 +73,7 @@
 * [ ] Science vs engineering as forall vs exists
 * [ ] Anxiety vs worry
 * [ ] You should often assign larger interventions to fewer people
+* [ ] How's the stockpile working out?
+* [ ] Problem solving, good taste, and kludges.
+* [ ] Showers as a creative space
+* [ ] Emulation mode for feelings
