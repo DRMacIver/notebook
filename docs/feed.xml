@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-03-26T10:04:34+00:00</updated>
+  <updated>2020-03-27T08:18:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,49 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-03-17-11:40.html</id>
-    <title>Everybody is looking for permission</title>
-    <updated>2020-03-17T13:36:48+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Everybody is looking for permission&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-03-17&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;A lens I started looking at the social world through a while back is &lt;em&gt;permission&lt;/em&gt;.
-Specifically, that everybody is looking for it, and that many situations, relationships, and activities can be thought of in terms of what permission they give you.&lt;/p&gt;
-
-
-&lt;p&gt;A common, practical, example of this is asking stupid questions in meetings: Often everybody is confused, but nobody feels they have permission to ask, so once somebody is prepared to break the silence everyone is more able to (although a friend has expressed concern that asking stupid questions has instead become high status as people have learned this).&lt;/p&gt;
-
-
-&lt;p&gt;Another example that has been very relevant recently is giving people permission to freak out about COVID-19. I think at this point everyone has officially been given that permission, so it's no longer quite so useful (that may be more local / political. Certainly some people &lt;em&gt;aren't&lt;/em&gt; freaking out about it, and I suspect some of their friends still need permission), but there was a period of a few weeks where it was a bit more controversial to do so and people were fairly actively saying "Look, this is a thing I am worried about, it's OK to be worried about it".&lt;/p&gt;
-
-
-&lt;p&gt;In general, &lt;a href="https://www.drmaciver.com/2018/06/on-not-quite-fitting/"&gt;everyone is a bit worried about being weird&lt;/a&gt;, and despite these worries being widespread, a mix of everyone being weird in different ways and pluralistic ignorance (the majority privately reject a norm that the majority publicly enforce), and needs permission to break out of the norms that society has imposed on them.&lt;/p&gt;
-
-
-&lt;p&gt;The problem is that permission often needs to be a lot stronger than just providing an example, or telling someone it's OK. They don't necessarily believe you, or even if they do believe you they've &lt;a href="https://www.drmaciver.com/2019/08/jiminy-cricket-must-die/"&gt;internalised societal norms too much&lt;/a&gt;.
-Frequently mere verbal permission will be met with active opposition.&lt;/p&gt;
-
-
-&lt;p&gt;Again, pluralistic ignorance is a good example of this: Suppose most straight people are just not that fussed about heterosexuality (I think this is actually pretty likely, but if you disagree pretend it's a thought experiment). It's not that they're gay, or even that they're particularly bi, but they're open to the idea in principle and don't really see what all the fuss is about. However, if there are very strong norms enforcing it, these more-or-less-heterosexual straight people will probably enforce those norms &lt;em&gt;harder&lt;/em&gt; for fear of being caught on the wrong end of them. So you can't just straightforwardly give them permission, you need some way of committing to it. If they've sufficiently internalised the norms, it might not even be possible to give them permission, because the thing withholding permission is their own shame and the only person who can give them that permission is themself.&lt;/p&gt;
-
-
-&lt;p&gt;I think a lot of circumstances end up implicitly granting permission by making the action "playing the game". For example, people behave very differently when drunk, but a lot of this isn't actually because alcohol, it's because the fact that you're drunk gives you permission to behave like a drunk person. You see this with things like stag parties, hen does, etc. where people are given permission by the format to behave like complete asses in ways they normally wouldn't do.&lt;/p&gt;
-
-
-&lt;p&gt;I think this is also why a lot of "mandatory fun" fails: There is a certain sort of permission that you need to behave like a person in a fun situation, and often mandatory fun skips the "foreplay" element that is needed to provide that permission, so people end up in a situation where people are being expected to behave in a way that they do not feel they have permission to.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-03-17-11:40.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-18-11:24.html</id>
     <title>Safety as an enabler of growth</title>
@@ -603,7 +560,7 @@ You might want to tinker with (1) and (2) in particular if you're less inclined 
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-26-09:48.html</id>
     <title>Pragmatic Problem Solving (aka Kludges)</title>
-    <updated>2020-03-26T10:04:34+00:00</updated>
+    <updated>2020-03-26T10:05:21+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Pragmatic Problem Solving (aka Kludges)&lt;/p&gt;
@@ -671,5 +628,115 @@ If you can't solve the problem, you might just be being limited by good taste.&l
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-03-26-09:48.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-03-27-08:18.html</id>
+    <title>Competence is sexy</title>
+    <updated>2020-03-27T08:18:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Competence is sexy&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-03-27&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;(Up front disclaimer: I am treating my personal experiences as universal in this post. I think the things I am saying in this post are fairly universally true, but there are obviously going to be people who experience this differently)&lt;/p&gt;
+
+
+&lt;p&gt;"Be attractive, don't be unattractive" sounds like trite advice, but actually it contains an important insight (or at least can be read in a deep way): In order to attract people you need to &lt;em&gt;not turn them off&lt;/em&gt; (don't be unattractive) and you need to &lt;em&gt;draw them in&lt;/em&gt; (be attractive).
+Sexiness is what draws people in.&lt;/p&gt;
+
+
+&lt;p&gt;What is sexiness?&lt;/p&gt;
+
+
+&lt;p&gt;Well, to a large degree, sexiness is competence.&lt;/p&gt;
+
+
+&lt;p&gt;I'm serious.
+You must have noticed how sexy people being good at things is.
+This is a general thing. There's something intrinsically attractive about competence.&lt;/p&gt;
+
+
+&lt;p&gt;Experiencing someone as sexy is about fascination. You see something about them, and it draws you in, and makes you want to learn more about them and to explore it. It makes you want more of it. And nothing does this like looking at someone and noticing just how phenomenally &lt;em&gt;good&lt;/em&gt; they are at something.&lt;/p&gt;
+
+
+&lt;p&gt;Not all competencies are equally sexy of course. An amazingly good ballet dancer is (for most people) intrinsically sexy than an equally amazing chess player. But... the latter isn't &lt;em&gt;not&lt;/em&gt; sexy, as long as you're well placed to appreciate their competence (If you don't understand chess you probably won't find it sexy).&lt;/p&gt;
+
+
+&lt;p&gt;But, even for most people who understand chess, the ballet dancer is probably still sexier.&lt;/p&gt;
+
+
+&lt;p&gt;This is true even independently of body type. If you somehow had someone who was both an expert ballet dancer and an expert chess player, almost everyone would experience watching them perform ballet as sexier than watching them play chess.&lt;/p&gt;
+
+
+&lt;p&gt;Which competencies are perceived as sexy is highly individual, but by and large physical and emotional components of competencies are sexier than mental ones. The reason for this is pretty straightforward: For most (but by no means all) people, the physical and emotional components of sex take precedence over the intellectual ones, so this sort of competence is intrinsically more sexual.&lt;/p&gt;
+
+
+&lt;p&gt;You may, of course, be puzzled at the fact that I am talking about sexiness and ignoring physical appearance.
+But actually physical appearance is a perfect example of what I'm talking about:
+Physical appearance is &lt;em&gt;very&lt;/em&gt; much a competency.&lt;/p&gt;
+
+
+&lt;p&gt;Some people are, of course, unambiguously better at physical appearance than others. Some people really are just going to be &lt;a href="https://www.fvathynevgl.com/effortlessness/"&gt;effortlessly&lt;/a&gt; attractive. The rest of us have to work at it, to a greater or lesser extent.
+However, this is a normal part of competency. Someone who is an amazing ballet dancer has worked incredibly hard at it, but they also probably have intrinsic advantages (strength, balance, body type) that others who are less good do not.&lt;/p&gt;
+
+
+&lt;p&gt;How do you do competence at physical appearance? You do it by &lt;em&gt;performing an aesthetic&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Different aesthetics will appeal differently to different people, but unless the aesthetic is utterly absurd (clowns aren't sexy no matter how good they are at performing the clown aesthetic. No shaming intended if you're into that, but I am never going to understand your mindset on this subject), performing it well is always going to be fairly sexy.&lt;/p&gt;
+
+
+&lt;p&gt;This is why gender is such a big thing in most people's experience of sexiness: Aesthetics tend to be heavily gendered, and a great deal (not all, maybe not even most, but a major component) of what gender &lt;em&gt;is&lt;/em&gt; for most people is conformance to a specific gendered aesthetic.
+It would be an exaggeration to say that gender is intrinsically sexy, but performance of gender gives people many exciting opportunities for exhibiting sexiness.&lt;/p&gt;
+
+
+&lt;p&gt;Interestingly, this is true even for aesthetics that are "wrong" for your gender. Competent performance of an aesthetic designed for a gender different from your own can be &lt;em&gt;incredibly&lt;/em&gt; sexy if you can pull it off, it's just easier for most people (both through training and through how the aesthetic was designed) to perform sexiness with an aesthetic that matches their gender. It's the performance of the aesthetic itself that is sexy, your appearance just defines how easy it is for you to perform any given aesthetic competently.&lt;/p&gt;
+
+
+&lt;p&gt;It is at this point I must tell you a fact that I, as a card carrying bisexual, am all too acutely aware of:
+in western anglophone cultures, women are on average substantially more attractive than men.&lt;/p&gt;
+
+
+&lt;p&gt;Before I continue, let me show you an extremely attractive man.&lt;/p&gt;
+
+
+&lt;p&gt;&lt;img alt="A spanish soldier" src="/images/spanish-soldier.jpg"/&gt;&lt;/p&gt;
+
+
+&lt;p&gt;(&lt;a href="https://twitter.com/JillFilipovic/status/1241857598778900481"&gt;From a thirst tweet&lt;/a&gt;)&lt;/p&gt;
+
+
+&lt;p&gt;Sexy, right? (Dear Spanish soldier man: In the extremely unlikely event that you're reading this, I'm very sorry for objectifying you in this way. Well... mostly sorry. It's in a good cause.).&lt;/p&gt;
+
+
+&lt;p&gt;Why is he sexy? It's because he is performing an extremely masculine aesthetic &lt;em&gt;very&lt;/em&gt; competently.
+You don't need to be nearly this good at masculinity to perform it competently enough to be sexy. This is fairly upper tier.&lt;/p&gt;
+
+
+&lt;p&gt;Also, if you read the comments, a lot of people are coming to an inescapable conclusion: He looks really gay.&lt;/p&gt;
+
+
+&lt;p&gt;This is bullshit of course. Maybe he is, I don't know him, but just based on weight of numbers I'm going to say probably not. He certainly &lt;em&gt;reads&lt;/em&gt; as gay in our (western, anglophone) culture, but there's a very specific reason for this: We treat competent performance of most masculine aesthetics as gay (there are a few exceptions, but they mostly tend to be for celebrities or people who can pretend to be doing it on natural talent alone, and even then there's a bit of it).&lt;/p&gt;
+
+
+&lt;p&gt;The basic reason why women are more attractive on average is that they are better at performing an aesthetic than men are. This is for reasons that are actually quite bad, for both men and women but in different ways.&lt;/p&gt;
+
+
+&lt;p&gt;Women are punished (through misogyny) for not performing an aesthetic competently, while men are punished for trying to excel at it. The result is that there is vastly more cultural knowledge around how women can perform feminine aesthetics competently than there is for men performing masculine aesthetics competently.&lt;/p&gt;
+
+
+&lt;p&gt;In addition to men being punished for success, everyone is punished for failure. The problem is that with aesthetic competence, trying and failing is much worse than not trying. This is especially true for men, not because men are punished more for trying and failing (this is something we are terrible about for people of every gender), but because men are punished less for not trying. It is safer for women to experiment with their aesthetic not because the punishments for failure are less, but because they start from a less safe place so the difference is less.&lt;/p&gt;
+
+
+&lt;p&gt;The result is that men are &lt;a href="https://notebook.drmaciver.com/posts/2020-02-29-10:30.html"&gt;socially punished for trying to be good&lt;/a&gt; at sexiness, and exist in an environment that is mostly &lt;a href="https://notebook.drmaciver.com/posts/2020-03-18-11:24.html"&gt;extremely unsafe&lt;/a&gt; for them to &lt;a href="https://notebook.drmaciver.com/posts/2020-02-26-16:07.html"&gt;experiment&lt;/a&gt;, and the result is a kind of massive cultural learned helplessness where men want to be sexy but honestly don't know how to be.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-03-27-08:18.html" rel="alternate"/>
   </entry>
 </feed>
