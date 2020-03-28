@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-03-27T13:48:47+00:00</updated>
+  <updated>2020-03-28T10:26:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,66 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-03-18-11:24.html</id>
-    <title>Safety as an enabler of growth</title>
-    <updated>2020-03-18T14:43:27+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Safety as an enabler of growth&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-03-18&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;My friend Alex Chan &lt;a href="https://alexwlchan.net/2020/03/rich-enough-to-make-bad-choices/"&gt;recently wrote about how one of the big advantages of being rich is that the rich can afford to make risky investments&lt;/a&gt;:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Being rich gives you a safety net to make bad investments, which helps you find more good ones. Over time, the rich don’t just spend less money, they find new ways to earn more money. In terms Samuel Vimes would understand: they don’t just invest in a pair of sturdy boots, they invest in experimental boot-making startups.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;As Alex points out, this ties in to my argument that &lt;a href="https://notebook.drmaciver.com/posts/2020-02-22-11:37.html"&gt;you should try bad things&lt;/a&gt;.
-You can only try bad things if you have the resources to ensure that failure is no big deal.&lt;/p&gt;
-
-
-&lt;p&gt;For some bad things, this isn't an issue, but for things which have a relatively high cost (financial, time, or otherwise), being poor (or even just not rich!) blocks them off from you.
-This is particularly egregious in the examples that Alex points out, where the lack of financial security is the very thing that prevents you from gaining more financial security.&lt;/p&gt;
-
-
-&lt;p&gt;This is a general pattern that repeats in many other contexts.
-In order to grow, it needs to be safe to try things, and lacking the thing that you want to grow is what makes it unsafe.&lt;/p&gt;
-
-
-&lt;p&gt;This is often connected with learning. &lt;a href="https://notebook.drmaciver.com/posts/2020-02-26-16:07.html"&gt;The fastest way to learn something is to do something&lt;/a&gt;, but if doing something can go catastrophically wrong then you're not going to risk it, so whole avenues of learning are blocked off for you.&lt;/p&gt;
-
-
-&lt;p&gt;As well as financial, two common places this occurs are social and emotional safety (which can be tightly connected, but also can fail independently in their own way).
-There's all the literature on &lt;a href="https://en.wikipedia.org/wiki/Psychological_safety"&gt;psychological safety&lt;/a&gt; about how feeling safe in your team is an enabler of success, because people are more able to propose ideas and learn from them.
-This ties in to what I was saying yesterday about &lt;a href="https://notebook.drmaciver.com/posts/2020-03-17-11:40.html"&gt;permission&lt;/a&gt;: One of the key features of psychological safety in a group environment is the way it gives you permission to experiment and try things that might not work.&lt;/p&gt;
-
-
-&lt;p&gt;Another type of safety is &lt;em&gt;emotional&lt;/em&gt; safety. For a lot of us the insides of our own heads are not safe. As I wrote about in &lt;a href="https://www.drmaciver.com/2020/01/a-crash-course-in-having-feelings/"&gt;a crash course in having feelings&lt;/a&gt;, one of the key steps to emotional growth is getting to a point where you can have feelings (especially negative ones) without being overwhelmed by them. As long as your feelings are dangerous to you, it's impossible to experiment with and learn about them, and this stops you from growing emotionally.&lt;/p&gt;
-
-
-&lt;p&gt;There are a couple of insidious traps that one can fall into that can make an otherwise safe situation unsafe:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;Overidentification with success. You see this a lot with smart people and learning. If failure is an indication that you are not smart, because a smart person would have succeeded at this, and you strongly identify with being smart, you will often struggle to learn because anything that fails is a direct attack on your self-identity.&lt;/li&gt;
-&lt;li&gt;Success as implying commitment. By doing something, you have demonstrated that you are able to do it, and now in future you can be coerced or pressured into doing it.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;In both of these cases, the cost of trying things is raised considerably: In the first, the cost of failure is made much worse. In the second, success itself becomes the costly thing. Either way, you have found yourself in an environment where trying things cannot be safe, because success has become too high stakes.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-03-18-11:24.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-19-10:22.html</id>
     <title>Good strategies often fail</title>
@@ -632,7 +572,7 @@ If you can't solve the problem, you might just be being limited by good taste.&l
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-27-08:18.html</id>
     <title>Competence is sexy</title>
-    <updated>2020-03-27T13:48:47+00:00</updated>
+    <updated>2020-03-27T22:37:11+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Competence is sexy&lt;/p&gt;
@@ -747,5 +687,71 @@ You don't need to be nearly this good at masculinity to perform it competently e
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-03-27-08:18.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-03-28-10:26.html</id>
+    <title>On having different thresholds</title>
+    <updated>2020-03-28T10:26:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;On having different thresholds&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-03-28&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Observe the following behaviours:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Not expressing your wants or needs until they become essential for you.&lt;/li&gt;
+&lt;li&gt;Not talking about your feelings until you can't cope with them.&lt;/li&gt;
+&lt;li&gt;Not telling someone that their behaviour is bad until you can't deal with it.&lt;/li&gt;
+&lt;li&gt;Not expressing an opinion until you are certain it's true.&lt;/li&gt;
+&lt;li&gt;Not articulating a thought process until you've fully understood it.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;These share the following major features:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;They are about where you set a &lt;em&gt;threshold for action&lt;/em&gt;. How X does a thing have to be before you do Y?&lt;/li&gt;
+&lt;li&gt;They are very common.&lt;/li&gt;
+&lt;li&gt;They are really really unhealthy.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;For most people, lowering these thresholds will significantly improve your experience of and behaviour in the world.
+That's not to say that the thresholds should be set at zero, and there are definitely people who have them set too low, but by and large the norms around where they &lt;em&gt;should&lt;/em&gt; be set are much too high.&lt;/p&gt;
+
+
+&lt;p&gt;Why? Well because if you don't do anything until something breaks then you will be constantly &lt;a href="https://notebook.drmaciver.com/posts/2020-03-04-11:18.html"&gt;skirting the edge of disaster&lt;/a&gt;. For example if you don't express needs until they're essential, none of your non-essential needs are going to be adequately met. You'll maybe not be in crisis, but you'll be low-grade miserable.&lt;/p&gt;
+
+
+&lt;p&gt;But, once you learn healthier behaviour and set these thresholds lower, you're going to run into a huge problem.
+You've suddenly become &lt;a href="https://notebook.drmaciver.com/posts/2020-03-02-09:31.html"&gt;illegible to other people&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;The problem is this: Other people do not have access to your internal state. They do not know how X the thing is, they only know that you have done Y. This will cause them to assume that when you do Y, the thing is as X for you as it would be when other people do Y. This means that if you express an emotion, people will think it is a big deal. If you complain about a bad behaviour, people will think you must be really bothered by it.&lt;/p&gt;
+
+
+&lt;p&gt;A concrete example is that I was trying Capoeira last year. About halfway through my second lesson I realised that actually this really isn't for me right now, and that I could cope with the rest of the lesson but it would be moderately unpleasant and I definitely wouldn't be coming back for another one, so I made my apologies and left.
+I realised afterwards that people probably thought I was in quite a lot of distress, because that felt like a major move to them. I wasn't. I was just making what for me was a perfectly sensible decision, but most people wouldn't have made it until breaking point.&lt;/p&gt;
+
+
+&lt;p&gt;This is why talking about feelings often feels like high drama / making a big deal out of nothing. It's not. Talking about feelings is great, and is in fact how you avoid drama and making big deals out of things that don't need to be. But because people are used to not talking about feelings until they absolutely need to be dealt with, when you talk about feelings before they need to be dealt with people assume you're making more of an issue of it than not.&lt;/p&gt;
+
+
+&lt;p&gt;Differing thresholds are like &lt;a href="https://sambleckley.com/writing/church-of-interruption.html"&gt;the church of interruption&lt;/a&gt;. People have incompatible conversation norms, and they don't realise that they do or don't know how to fluently speak the other's, so they are constantly miscuing off each other.&lt;/p&gt;
+
+
+&lt;p&gt;The solution, I'm afraid, is more talking. It has long been my stance that you need to have conversations about how to have conversations with people, and a crucial part of that is talking about what bringing things up means and how best to do it.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-03-28-10:26.html" rel="alternate"/>
   </entry>
 </feed>
