@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-03-28T10:26:00+00:00</updated>
+  <updated>2020-03-29T21:16:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,40 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-03-19-10:22.html</id>
-    <title>Good strategies often fail</title>
-    <updated>2020-03-19T10:32:18+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Good strategies often fail&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-03-19&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I &lt;a href="https://www.drmaciver.com/2019/02/you-should-be-stockpiling-food-for-brexit/"&gt;stockpiled food for Brexit&lt;/a&gt;. A lot of people were skeptical of me for that, and many people have said that the way Brexit played out proved me wrong and that it was an overreaction.&lt;/p&gt;
-
-
-&lt;p&gt;They are wrong and I was right. Stockpiling food for Brexit and not needing it was the expected outcome. It was never something that I thought I was likely to need, it was a capacity I was building in case of a low probability high cost event. The logic was that either food stockpiling wouldn't be useful, in which case I had a surplus to use up, or it would be kinda useful in which case it was a net positive, or it would be essential, in which case I would be incredibly glad I had it.&lt;/p&gt;
-
-
-&lt;p&gt;&lt;a href="https://amzn.to/3926VQH"&gt;Annie Duke&lt;/a&gt; calls this fallacy &lt;em&gt;resulting&lt;/em&gt;, and I think it's a rare instance of something escaping &lt;a href="https://maartenboudry.blogspot.com/2017/06/the-fallacy-fork-why-its-time-to-get.html"&gt;the fallacy fork&lt;/a&gt;.
-Resulting is the fallacy of assuming that because you got a bad outcome you must have made a bad choice, when in fact you might just have got a bad outcome because you picked the option with a 60% chance of success instead of a 40% chance but it turns out that you're in the 40% chance world. Chance means that you can never perfectly control the outcome, and you should be careful not to let random chance inform your learning too much.&lt;/p&gt;
-
-
-&lt;p&gt;More complicated is that often good strategies you'll never even know if you succeeded or not. A lot of mitigations for COVID-19 are like this: You'll never know whether it really mattered that you were washing your hands, or socially isolating, because all you're doing is stacking the odds on a numbers game. You might get the virus anyway, or you might have never got the virus, there's no way to know. It's still a good strategy.&lt;/p&gt;
-
-
-&lt;p&gt;Capacity building strategies in particular are often a good idea, because they can be useful in unexpected ways.
-I didn't immediately dismantle my Brexit stockpile when it seemed unlikely that we'd need it, I've just been using it as a buffer, so now if we do end up on pandemic lockdown we'll be well placed for food supplies while self isolating.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-03-19-10:22.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-20-10:33.html</id>
     <title>On feeling blocked</title>
@@ -691,7 +657,7 @@ You don't need to be nearly this good at masculinity to perform it competently e
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-28-10:26.html</id>
     <title>On having different thresholds</title>
-    <updated>2020-03-28T10:26:00+00:00</updated>
+    <updated>2020-03-28T11:28:42+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;On having different thresholds&lt;/p&gt;
@@ -753,5 +719,57 @@ I realised afterwards that people probably thought I was in quite a lot of distr
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-03-28-10:26.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-03-29-21:16.html</id>
+    <title>Everything is a teachable moment</title>
+    <updated>2020-03-29T21:16:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Everything is a teachable moment&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-03-29&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Previously I have written blog posts about:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.drmaciver.com/2017/02/thinking-through-the-implications/"&gt;A cat who can open doors&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://notebook.drmaciver.com/posts/2020-03-26-09:48.html"&gt;Fixing a shower&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.drmaciver.com/2013/08/how-did-you-get-started-so-quickly/"&gt;How to get started in a new code base&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;Except that's not what any of these are about.&lt;/p&gt;
+
+
+&lt;p&gt;They're actually about:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Toolkitized thinking&lt;/em&gt; - how to apply things that you've learned in other contexts&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Pragmatic problem solving&lt;/em&gt; - how to let go of the desire to solve the problem properly and just solve the problem&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Efficient learning&lt;/em&gt; - how not to get distracted by &lt;a href="https://notebook.drmaciver.com/posts/2020-03-22-18:01.html"&gt;the impossibly large number of things to learn&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;Each of them are of course about both these things: Something happened, and by looking at what happened you can learn something generalisable about it.&lt;/p&gt;
+
+
+&lt;p&gt;Typically of course, you don't actually see a single thing and get the general insight, you acquire the general insight after seeing many different things, but often a specific example is exactly what you need to &lt;a href="https://www.drmaciver.com/2018/10/how-to-explain-anything-to-anyone/"&gt;explain the point&lt;/a&gt;, possibly to someone else, possibly to yourself.&lt;/p&gt;
+
+
+&lt;p&gt;One way of looking at mathematics is that it's about taking a look at an argument and paring it down to its bare essentials and generalising it. Trying to take something hyper specific and turn it into a simple reusable principle that canbe applied, by asking what about the problem actually matters.&lt;/p&gt;
+
+
+&lt;p&gt;Our interactions with the world are like this too. Everything is a teachable moment, all you have to do is look at it through the right lens and use it to teach something.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-03-29-21:16.html" rel="alternate"/>
   </entry>
 </feed>

@@ -24,6 +24,9 @@
 * [x] Safety as an enabling technology
 * [x] The Inner Game of Celeste
 * [x] Being willing to blackbox areas of knowledge
+* [x] Problem solving, good taste, and kludges.
+* [x] Toolkitized thinking
+* [x] Everything is a teachable moment
 * [ ] Anxiety management as intelligence enhancement
 * [ ] Eye pressure and switching contexts as an enabling technology
 * [ ] Ways in which I could improve my communication skills
@@ -32,7 +35,6 @@
 * [ ] The physical world is much more hackable than the digital one
 * [ ] "Wanting to do the thing real hard" is not actually a plan
 * [ ] Correlation-in-the-mechanism (outcomes that are correlated just because there aren't enough input variables to go round)
-* [ ] Toolkitized thinking
 * [ ] Abstract models as toy worlds
 * [ ] Why I am not a utilitarian
 * [ ] Probability lower bounds and disaster planning
@@ -66,7 +68,6 @@
 * [ ] Nonagreement vs disagreement: Just because you don't agree with someone doesn't mean you have to disagree
 * [ ] Firewalls as a way to create safe places to experiment
 * [ ] Separating emotional responses from the need to act
-* [ ] Everything is a teachable moment
 * [ ] The market for lemons is everywhere
 * [ ] You can read however you like. You don't have to read the whole thing.
 * [ ] You don't have to treat other people as worth arguing with
@@ -74,6 +75,8 @@
 * [ ] Anxiety vs worry
 * [ ] You should often assign larger interventions to fewer people
 * [ ] How's the stockpile working out?
-* [ ] Problem solving, good taste, and kludges.
 * [ ] Showers as a creative space
 * [ ] Emulation mode for feelings
+* [ ] People probably were just right all along
+* [ ] Separating problems from solutions
+* [ ] Ideological foundations as sets of problems you care about
