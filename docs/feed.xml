@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-03-29T21:16:00+01:00</updated>
+  <updated>2020-03-29T21:47:11+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -723,7 +723,7 @@ I realised afterwards that people probably thought I was in quite a lot of distr
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-29-21:16.html</id>
     <title>Everything is a teachable moment</title>
-    <updated>2020-03-29T21:16:00+01:00</updated>
+    <updated>2020-03-29T21:47:11+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Everything is a teachable moment&lt;/p&gt;
@@ -762,6 +762,9 @@ I realised afterwards that people probably thought I was in quite a lot of distr
 
 
 &lt;p&gt;Typically of course, you don't actually see a single thing and get the general insight, you acquire the general insight after seeing many different things, but often a specific example is exactly what you need to &lt;a href="https://www.drmaciver.com/2018/10/how-to-explain-anything-to-anyone/"&gt;explain the point&lt;/a&gt;, possibly to someone else, possibly to yourself.&lt;/p&gt;
+
+
+&lt;p&gt;The important feature of these generalisations is that by doing this you learn beyond the specific circumstances you encounter and &lt;a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1758026/"&gt;experience the world richly&lt;/a&gt;, letting you draw on your past experience more effectively in novel situations.&lt;/p&gt;
 
 
 &lt;p&gt;One way of looking at mathematics is that it's about taking a look at an argument and paring it down to its bare essentials and generalising it. Trying to take something hyper specific and turn it into a simple reusable principle that canbe applied, by asking what about the problem actually matters.&lt;/p&gt;
