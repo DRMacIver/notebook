@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-03-29T21:51:24+01:00</updated>
+  <updated>2020-03-30T23:12:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,70 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-03-20-10:33.html</id>
-    <title>On feeling blocked</title>
-    <updated>2020-03-20T13:26:30+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;On feeling blocked&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-03-20&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I'm finding it significantly hard to write at the moment, so I thought I'd pull out that old lazy trick and write about writer's block. Or rather, the feeling of being blocked more generally.&lt;/p&gt;
-
-
-&lt;p&gt;An analogy I use for certain types of explanation is based on a fairly butchered Douglas Adams reference, which is that flying is easy. There are only two steps:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Lift up your left foot.&lt;/li&gt;
-&lt;li&gt;Lift up your right foot.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;Being blocked often feels a bit like this. It's not that you don't know what to do. You understand the steps precisely. They're not hard. They're just impossible, because although you know what to do the world doesn't work like that. &lt;/p&gt;
-
-
-&lt;p&gt;Except it doesn't feel exactly like that, because they are instructions you know you &lt;em&gt;could&lt;/em&gt; have followed if your lived world was different. Your world &lt;em&gt;has&lt;/em&gt; been like that, but now it's not.&lt;/p&gt;
-
-
-&lt;p&gt;As I've talked about, &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-14:06.html"&gt;I play Celeste quite a bit&lt;/a&gt;. I recently also played through most of Hollow Knight.
-An interesting thing that happened there was how much worse I became at Celeste as a result.&lt;/p&gt;
-
-
-&lt;p&gt;Why?
-Well, the capabilities of your character are slightly different.
-Specifically, certain capabilities were absent.
-I kept trying to double jump and couldn't.
-There were plenty of things you can do in Celeste that you can't do in Hollow Knight, but that doesn't matter, because I kept reaching for the ways of moving through the world that had become familiar to me and they weren't there.&lt;/p&gt;
-
-
-&lt;p&gt;I imagine it's a little like &lt;a href="https://www.youtube.com/watch?v=PVxaL8CAO4M"&gt;astronauts forgetting about gravity&lt;/a&gt;. The world behaves &lt;em&gt;wrong&lt;/em&gt; in some way.&lt;/p&gt;
-
-
-&lt;p&gt;Being blocked feels like this. It's not that there's an actual block, it's that you reach for a part of your brain where the words come from and it's not there. &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-09:44.html"&gt;You can't run out of ideas&lt;/a&gt; and you know this, but you try to follow the steps of the idea generating process and the world glitches and you realise you cut off mid-sentence and have been reading Twitter for the last half hour.&lt;/p&gt;
-
-
-&lt;p&gt;Switching between Celeste and Hollow Knight comes with a pervasive sense of wrongness. &lt;a href="https://www.youtube.com/watch?v=yorTG9at90g"&gt;Movement in Celeste is very finely tuned&lt;/a&gt;, and I imagine Hollow Knight has a fair bit of thought put into its movement parameters too, but they are &lt;em&gt;differently&lt;/em&gt; tuned. These aren't strictly connected, in that you can imagine a game that is Celeste-but-tuned-like-Hollow-Knight or vice versa, but they're not entirely incidental either - both games are tuned so that each part of the game fits into a whole.&lt;/p&gt;
-
-
-&lt;p&gt;Blockedness is like this too. There is an &lt;a href="https://notebook.drmaciver.com/posts/2020-03-06-07:46.html"&gt;existential feeling&lt;/a&gt; associated with being blocked: It is not just that any given action is blocked, it's that you can &lt;em&gt;feel&lt;/em&gt; blocked. The absence of the capability is palpable.&lt;/p&gt;
-
-
-&lt;p&gt;In many ways the correct solution is to lean into this. Trying to force yourself into productivity when blocked is like trying to leave the pen in midair. The capability you are relying on just isn't there, and trying to pretend it is won't help you. Instead you should try to find something that you &lt;em&gt;can&lt;/em&gt; do, that instead helps you recharge the capability you need.&lt;/p&gt;
-
-
-&lt;p&gt;Sometimes however there aren't really any good options, so you just decide to force a post out anyway. Either you find your way around the blockage, or you just accept that it will take you ten times as long to produce and you'll check a lot of twitter while you do.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-03-20-10:33.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-21-12:35.html</id>
     <title>The Inner Game of Celeste</title>
@@ -723,7 +659,7 @@ I realised afterwards that people probably thought I was in quite a lot of distr
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-29-21:16.html</id>
     <title>Everything is a teachable moment</title>
-    <updated>2020-03-29T21:51:24+01:00</updated>
+    <updated>2020-03-29T22:24:23+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Everything is a teachable moment&lt;/p&gt;
@@ -774,5 +710,58 @@ I realised afterwards that people probably thought I was in quite a lot of distr
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-03-29-21:16.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-03-30-23:12.html</id>
+    <title>Desire as a driver of growth</title>
+    <updated>2020-03-30T23:12:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Desire as a driver of growth&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-03-30&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I wrote before about how &lt;a href="https://notebook.drmaciver.com/posts/2020-03-18-11:24.html"&gt;safety is the enabler of growth&lt;/a&gt;: The thing that allows you to grow is to be safe to experiment, so you can learn new ways of being.&lt;/p&gt;
+
+
+&lt;p&gt;This is true as far as it goes, but it has a big problem: If you're safe, it's very easy to just stay where you are.
+The possibility to grow exists, but you have no particular reason to take it, so you don't.&lt;/p&gt;
+
+
+&lt;p&gt;You can see this in the stereotype of the spoiled rich kid (although often they're not exactly in safe environments either, so this is weak evidence. Consider it an illustrative example).&lt;/p&gt;
+
+
+&lt;p&gt;The basic problem is that growth is hard work. You have to want to do it. You have to actually &lt;em&gt;desire&lt;/em&gt; to grow.&lt;/p&gt;
+
+
+&lt;p&gt;One key to doing this is what I wrote about in &lt;a href="https://notebook.drmaciver.com/posts/2020-03-23-15:52.html"&gt;life as an anytime algorithm&lt;/a&gt;: Designing goals so that you gain partial benefits as you go. This ensures that you're getting feedback on growth as you proceed, and it doesn't feel like &lt;a href="https://www.fvathynevgl.com/momentum/"&gt;a long hard slog with hopefully a reward at the end&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;This isn't enough, because it depends on what type of progress you're making. In particular, I reliably find that progress that just makes things less bad doesn't have the right shape. 
+The nagging urge is always there to backslide and just fall back to the old ways. The old ways weren't good, but they sure were easier, and stable, and stability is comforting.&lt;/p&gt;
+
+
+&lt;p&gt;In order to create a desire for growth you need the changes you see to be an actively positive thing.
+It makes you hungry for more, and the work feels less like work and more like achievement.&lt;/p&gt;
+
+
+&lt;p&gt;Two examples where I have encountered this:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;In my various work on &lt;a href="https://notebook.drmaciver.com/posts/2020-02-20-09:31.html"&gt;emotions&lt;/a&gt; one of my specific goals has been around the experience of positive emotions. I don't just want to be less miserable, I want to be happier.&lt;/li&gt;
+&lt;li&gt;I've been working on my diet. This means I no longer have a permanently upset stomach. That's great and all, but it sure is tempting to backslide because pizza is delicious. But... I must admit, I'm really enjoying the weight loss. I know, I know, body positivity, but I feel &lt;a href="https://notebook.drmaciver.com/posts/2020-03-27-08:18.html"&gt;a lot better about my body&lt;/a&gt; than I have in some time, and that's really nice.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;You need to clear out the negative stuff too (more of my emotion work is on anxiety than joy, but the two feed into each other). It's important not to overfocus on the positive, but without the positive to drive growth you will often give up, and that means you end up doing less work on the negatives in total.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-03-30-23:12.html" rel="alternate"/>
   </entry>
 </feed>
