@@ -80,3 +80,4 @@
 * [ ] People probably were just right all along
 * [ ] Separating problems from solutions
 * [ ] Ideological foundations as sets of problems you care about
+* [ ] Teleology is fake
