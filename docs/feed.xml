@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-03-31T10:59:23+01:00</updated>
+  <updated>2020-04-01T09:41:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,61 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-03-22-18:01.html</id>
-    <title>Leaving knowledge in the box</title>
-    <updated>2020-03-23T21:49:51+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Leaving knowledge in the box&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-03-22&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;&lt;a href="https://notebook.drmaciver.com/posts/2020-02-24-10:37.html"&gt;All knowledge is connected&lt;/a&gt;.
-It might be tenuous, but the connection is there. You will probably learn something about cooking in studying ancient Greek culture, and you will probably learn something about mathematics by studying feminism,
-possibly via some intermediaries.&lt;/p&gt;
-
-
-&lt;p&gt;A consequence of this is that whatever problem you are working on at the moment, you will never learn everything that might be relevant to it, because everything that might be relevant is... everything.&lt;/p&gt;
-
-
-&lt;p&gt;Even with more restricted areas, knowing everything is impossible.
-In software development we talk about "full stack" developers, but nobody actually understands the whole stack,
-at best we can do a reasonable job across a reasonably broad subset of it.
-Certainly nobody actually understands how the whole stack works if you all the way down from the user interface to the hardware.
-Modern computers are too complicated for any one person to understand the whole thing.&lt;/p&gt;
-
-
-&lt;p&gt;Fortunately you don't need to actually learn everything relevant to a problem to act. You can just flip a coin, &lt;a href="https://notebook.drmaciver.com/posts/2020-02-25-10:39.html"&gt;or do anything strictly better than that&lt;/a&gt;.
-The goal of learning is often to &lt;a href="https://www.drmaciver.com/2013/08/how-did-you-get-started-so-quickly/"&gt;learn just enough to solve the problem&lt;/a&gt;, and often you're better off learning enough &lt;/p&gt;
-
-
-&lt;p&gt;As a result, this is a major &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-15:59.html"&gt;cut out switch&lt;/a&gt; you need to install: The ability to reflectively go "I don't need to know this", and treat some areas of knowledge as black boxes that you're never going to open.&lt;/p&gt;
-
-
-&lt;p&gt;This requires developing skills of discomfort tolerance: Relying on something mysterious that you don't understand how it works is scary, but you're going to have to get used to it.&lt;/p&gt;
-
-
-&lt;p&gt;It also requires learning the skill of working with black box knowledge.
-Typically you deal with a black box in one of two ways:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Learn just enough about how it works to use it and taboo understanding it. I don't need to know how the London Underground system works to ride the tube (although also don't ride the tube right now if you can possibly avoid it).&lt;/li&gt;
-&lt;li&gt;Ask for help. Find someone whose problem it &lt;em&gt;is&lt;/em&gt; to understand this, and let them solve it for you. You may need to develop &lt;a href="https://www.drmaciver.com/2015/02/what-are-developer-adjacent-skills/"&gt;adjacent skills&lt;/a&gt; for their job, but you don't need to develop anything like the whole skill set.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;If neither of these work, maybe it's time to open the box after all.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-03-22-18:01.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-23-15:52.html</id>
     <title>Life as an anytime algorithm</title>
@@ -647,7 +592,7 @@ It makes you hungry for more, and the work feels less like work and more like ac
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-31-09:52.html</id>
     <title>Vampire bats as a model for flirting</title>
-    <updated>2020-03-31T10:59:23+01:00</updated>
+    <updated>2020-03-31T11:02:31+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Vampire bats as a model for flirting&lt;/p&gt;
@@ -707,5 +652,80 @@ It makes you hungry for more, and the work feels less like work and more like ac
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-03-31-09:52.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-04-01-09:41.html</id>
+    <title>The problem of deduction</title>
+    <updated>2020-04-01T09:41:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;The problem of deduction&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-04-01&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;As &lt;a href="https://twitter.com/DRMacIver/status/1245261142966050822"&gt;I mentioned on Twitter earlier&lt;/a&gt; I am trying to reread books I've already read a bit more, because I'm failing to read new material. Not reading them cover to cover, just dipping in and refreshing my mind about interesting bits, seeing how it fits in with new information, etc.&lt;/p&gt;
+
+
+&lt;p&gt;The book I picked up to do this with this morning is Harman and Kulkarni's book &lt;a href="https://amzn.to/2R2dL2z"&gt;Reliable Reasoning&lt;/a&gt;. Great book. Strong recommend if you've got the prerequisites (mild mathematical and philosophical sophistication) and are interested in the subject (inductive reasoning and what we can learn about it from statistics).&lt;/p&gt;
+
+
+&lt;p&gt;I opened it in the middle, decided I needed some refreshing on the first chapter, so went back to that and read it for a bit. On doing so I encountered a bit which caused me to go "Hmm. This is a good and powerful insight. I must remember it."&lt;/p&gt;
+
+
+&lt;p&gt;There is, however, a problem, which is that having that insight makes me realise that this is the &lt;em&gt;third time that's happened&lt;/em&gt;. So now I'm going to explain it to you so that hopefully I'll remember it.&lt;/p&gt;
+
+
+&lt;p&gt;The official story: Deductive reasoning is when you go "All A are B. This is an A. Therefore it is a B". Inductive reasoning is when you go "All A I've seen so far are B. This is an A. Therefore it is a B". The former is obviously valid. The latter is obviously invalid.&lt;/p&gt;
+
+
+&lt;p&gt;I've &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-15:59.html"&gt;mentioned my favourite joke before&lt;/a&gt; but here it is again:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;There’s a joke about a planet full of people who believe in antiinduction: if the sun has risen every day in the past, then today, we should expect that it won’t. As a result, these people are all starving and living in poverty. Someone visits the planet and tells them, “Hey, why are you still using this anti-induction philosophy? You’re living in horrible poverty!” “Well, it never worked before...”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;The problem of induction is basically "Why is induction so weird compared to deduction?". Deduction is based on seemingly universally applicable principles, it's reliable and trustworthy. It really is true that if all A are B and this is an A it must be a B. That's just how logic works. In contrast, the inductive version &lt;em&gt;isn't&lt;/em&gt; true - we're in the middle of a major &lt;a href="https://en.wikipedia.org/wiki/Black_swan_theory"&gt;black swan event&lt;/a&gt; right now, so we know damn well that sometimes the world surprises you.&lt;/p&gt;
+
+
+&lt;p&gt;This book offers a surprisingly good answer: This question is a category error.&lt;/p&gt;
+
+
+&lt;p&gt;Deductive reasoning isn't a thing, because deduction is not a reasoning process. It is a logic of what follows from what. You can build reasoning on top of that, but you cannot do reasoning with it.&lt;/p&gt;
+
+
+&lt;p&gt;Suppose you believe all swans are white, and that this bird is a swan, and that this bird is black. This is, deductively speaking, an inconsistent set of beliefs. As it is inconsistent, anything follows from it. From a black swan it follows that eating cabbage grants you immortality. However, we would look quite suspiciously on this as a line of reasoning I hope.&lt;/p&gt;
+
+
+&lt;p&gt;The way the book puts this is:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;From inconsistent beliefs, everything follows. But it is not the case that from inconsistent beliefs one can infer everything.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;It is true that if we believe all three of 1) All swans are white, 2) This bird is a swan, and 3) This bird is black,
+then anything follows, but our inference procedure from here is not that we infer whatever we like, it's that we stop believing one of these things (or choose to remain inconsistent and are very cautious about what we infer from them).
+Deductive logic doesn't give us any insight as to which of these things we should drop.&lt;/p&gt;
+
+
+&lt;p&gt;It is still the case that a deductive argument from premises to conclusions is universally valid.
+It is &lt;em&gt;true&lt;/em&gt; that if all three of these things hold then cabbage makes you immortal. This is a valid deductive argument. But a deductive argument is not a reasoning process.&lt;/p&gt;
+
+
+&lt;p&gt;The category error is thus that deduction is a process of argumentation about what follows from what, and induction is a process of reasoning of how we infer beliefs from information. These are not the same thing, and when you properly integrate deduction into the reasoning process what you find is that actually most of the things that were straightforward about it don't help you.&lt;/p&gt;
+
+
+&lt;p&gt;So, if you want to know why induction is so weird, the reason is that induction is the bit that lets you actually reason and infer things about reality, and the problem of deduction is that it can't actually do that for you.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-04-01-09:41.html" rel="alternate"/>
   </entry>
 </feed>
