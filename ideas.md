@@ -27,6 +27,9 @@
 * [x] Problem solving, good taste, and kludges.
 * [x] Toolkitized thinking
 * [x] Everything is a teachable moment
+* [x] Teleology is fake
+* [x] Need and desire as drivers of progress
+* [ ] Separating emotional responses from the need to act
 * [ ] Anxiety management as intelligence enhancement
 * [ ] Eye pressure and switching contexts as an enabling technology
 * [ ] Ways in which I could improve my communication skills
@@ -55,7 +58,6 @@
 * [ ] Policy as non-aggregate of individual ethical decisions
 * [ ] Intuition as guiding heuristic in reasoning processes
 * [ ] Transactive memory and loss
-* [ ] Need and desire as drivers of progress
 * [ ] The market for lemons is everywhere
 * [ ] Developing the mind as a platform for thought
 * [ ] Signalling impossibility to avoid coercion
@@ -67,7 +69,6 @@
 * [ ] Notes on confidence
 * [ ] Nonagreement vs disagreement: Just because you don't agree with someone doesn't mean you have to disagree
 * [ ] Firewalls as a way to create safe places to experiment
-* [ ] Separating emotional responses from the need to act
 * [ ] The market for lemons is everywhere
 * [ ] You can read however you like. You don't have to read the whole thing.
 * [ ] You don't have to treat other people as worth arguing with
@@ -80,4 +81,5 @@
 * [ ] People probably were just right all along
 * [ ] Separating problems from solutions
 * [ ] Ideological foundations as sets of problems you care about
-* [ ] Teleology is fake
+* [ ] Legibility Work
+* [ ] Desire hacking
