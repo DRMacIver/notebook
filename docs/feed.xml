@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-04-02T11:01:35+01:00</updated>
+  <updated>2020-04-03T13:40:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,96 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-03-24-09:46.html</id>
-    <title>Trust beyond reason</title>
-    <updated>2020-03-24T12:42:43+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Trust beyond reason&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-03-24&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;To quote from &lt;a href="https://amzn.to/2Uewqdp"&gt;one of my all time favourite books&lt;/a&gt;:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;"You? I know you! You trust beyond reason."&lt;/p&gt;
-&lt;p&gt;"Yes. It's how I get results beyond hope. As you may recall."&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;This is a very powerful strategy, and as a result of following it (and, it must be said, a great deal of luck) almost everyone who is important to me is someone I trust.&lt;/p&gt;
-
-
-&lt;p&gt;I don't trust them all the same amount of course. They're also not important to me to the same amount.
-But, by and large, the more important someone is to me the more I am able to trust them.&lt;/p&gt;
-
-
-&lt;p&gt;Let's back up. What do I mean by trust? And important?&lt;/p&gt;
-
-
-&lt;p&gt;A good rule of thumb for what "trust" means that I came up with a while ago is this: Central to trust is the ability to tell someone true things, especially about yourself, and be confident that this will not go badly for you.
-It's not that their interests are perfectly aligned with yours, but they are in some relatively fundamental sense on your side and will not use your confidence against you.
-There are many other senses of trust, many of them well correlated, but this is the one I will focus on.&lt;/p&gt;
-
-
-&lt;p&gt;(Unfortunately it turned out that I could not, in this sense, trust the friend who I came up with this definition in tandem with, and we are no longer friends. Trust is a powerful but high risk strategy).&lt;/p&gt;
-
-
-&lt;p&gt;Importance in the sense I'm talking about is how much power you have over eachother's lives, how intertwined they are with you, how much you &lt;em&gt;need&lt;/em&gt; to care about what they think or do. A stranger is low importance. A friend is higher importance. A romantic partner potentially higher yet (but not necessarily! It depends a lot on the friend, or the partner).&lt;/p&gt;
-
-
-&lt;p&gt;Importance in this sense isn't about moral worth (a stranger is unimportant to me in this sense, but that doesn't mean they lack moral significance. They're still important &lt;em&gt;as a person&lt;/em&gt;, but that doesn't make them important to you). It's also not about love - your boss is very important to you in this sense, but that doesn't necessarily mean you even like them.&lt;/p&gt;
-
-
-&lt;p&gt;Having people who are important to you but whom you don't trust is a very bad thing. Your life becomes unsafe, and you are constantly hiding from them, worrying about how they will use their power against you if they discover your secret. This is an awful place to be in, and it is one that &lt;em&gt;most&lt;/em&gt; people find themselves in to some degree or another.&lt;/p&gt;
-
-
-&lt;p&gt;For a lot of people, family are among the most important people. They have a huge impact on us, and on our emotional lives. In this sense, my strong link between trust and importance is luck: I have a great family, and I trust them. This was probably foundational for me in being able to build trust with other people. For a lot of people, this is not true, and that is where they learn &lt;a href="https://notebook.drmaciver.com/posts/2020-03-03-09:07.html"&gt;about trust and learn to avoid it&lt;/a&gt;.
-I had my own problems in this regard, mostly school related. It took me a long time to learn that more people were trustworthy than I thought.&lt;/p&gt;
-
-
-&lt;p&gt;Given the freedom of adulthood, you don't have to have the same problems,
-because of one very simple observation:
-It is much easier to make people who you already trust important to you than it is to learn to trust people who are already important to you.&lt;/p&gt;
-
-
-&lt;p&gt;If someone has power over you, revealing information to them is high risk. If they can use that information to harm you, and they have the power to harm you, you are literally putting yourself in danger by revealing this information.
-&lt;a href="https://notebook.drmaciver.com/posts/2020-03-18-11:24.html"&gt;Safety&lt;/a&gt; is very important to being able to grow trust, and people who are important to you but untrustworthy are not safe.&lt;/p&gt;
-
-
-&lt;p&gt;This means that you need to start by trusting people much earlier than you are inclined to do so,
-&lt;em&gt;before&lt;/em&gt; they become important to you.&lt;/p&gt;
-
-
-&lt;p&gt;In Mark Manson's surprisingly good book about dating, &lt;a href="https://amzn.to/2Ur16XG"&gt;Models&lt;/a&gt; he talks about polarising as a dating strategy: People are in one of three categories "Not interested", "Interested", and "Unsure". When they are in the "Not interested" category it's not worth trying to move them out of it. Your job when dating is to move people from the "Unsure" category into one of the other two. And, to a first approximation, moving them into &lt;em&gt;either&lt;/em&gt; category is a success, as long as you do so by being authentically yourself in ways that they would find out anyway later.&lt;/p&gt;
-
-
-&lt;p&gt;Polarizing is not a dating specific strategy, it's fairly general purpose: It's a specific implementation of &lt;a href="https://notebook.drmaciver.com/posts/2020-02-26-16:07.html"&gt;doing something as a cheap experiment to learn about the world&lt;/a&gt;.
-However, it does rely quite heavily on one specific feature of dating: Early on in the dating process, the people you're trying to date just don't matter to you that much. You need to behave decently towards them, but their opinion of you isn't actually very important. If they decide they don't like you, that's fine.&lt;/p&gt;
-
-
-&lt;p&gt;In this sense, trust is a polarizing strategy, and it's one that is important to apply early on in the relationship before someone becomes important to you. If you trust someone excessively and it goes badly, but they don't matter to you, you can just kick them to the curb.
-In general, trusting someone at a level that seems slightly excessive for their level of importance to you will help you sort people in your life who you want to be more important to you than they are from those who you want to be less important than they are.&lt;/p&gt;
-
-
-&lt;p&gt;And it does need to be excessive. It needs to be trust beyond reason. Not beyond &lt;em&gt;all&lt;/em&gt; reason, but somewhat beyond what currently seems reasonable. If it is not, then unless they are prepared to take the first move, you will never find the signs you need to move to a higher level of mutual trust.&lt;/p&gt;
-
-
-&lt;p&gt;Sometimes this will go badly, but &lt;a href="https://notebook.drmaciver.com/posts/2020-02-22-11:37.html"&gt;you need to be able to try bad things&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;It's important not to be reckless (especially when physical safety is concerned), and it's easy to fall into the trap of oversharing. This strategy is scary, not simple, and definitely not easy, but when you can pull it off it provides amazing rewards.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-03-24-09:46.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-25-16:02.html</id>
     <title>Notes on Running a Mutual Support Group</title>
@@ -694,7 +604,7 @@ It is &lt;em&gt;true&lt;/em&gt; that if all three of these things hold then cabb
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-04-02-09:44.html</id>
     <title>Teleology is fake</title>
-    <updated>2020-04-02T11:01:35+01:00</updated>
+    <updated>2020-04-02T11:28:32+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Teleology is fake&lt;/p&gt;
@@ -807,5 +717,62 @@ Why do giraffes have long necks?&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-04-02-09:44.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-04-03-13:40.html</id>
+    <title>Anxiety vs Worry</title>
+    <updated>2020-04-03T13:40:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Anxiety vs Worry&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-04-03&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Here is a distinction I've found useful recently: You are &lt;em&gt;anxious&lt;/em&gt; about something if the emotion attaches to the uncertainty in the situation, you are &lt;em&gt;worried&lt;/em&gt; about something if the emotion attaches to the possible outcomes.&lt;/p&gt;
+
+
+&lt;p&gt;NB that this doesn't &lt;em&gt;perfectly&lt;/em&gt; track colloquial usage, but I think it works pretty well with it.
+Also if you're not sure how to tell what the emotion attaches to, may I recommend &lt;a href="https://amzn.to/2UWXQDL"&gt;Focusing&lt;/a&gt;?&lt;/p&gt;
+
+
+&lt;p&gt;It's certainly possible to worry about things without being particularly anxious about them. Sensible precautions often work like this: e.g. I lock my door because I'm worried that if I don't people might otherwise come in and steal stuff, but there's no anxiety attached to that worry because it's just something I can act on to limit the chances.&lt;/p&gt;
+
+
+&lt;p&gt;You can be anxious without worry in situations when all of the potential outcomes are positive (it's also possible &lt;a href="https://en.wikipedia.org/wiki/Misattribution_of_arousal"&gt;to mistake excitement for anxiety&lt;/a&gt; in these scenarios, but the anxiety can be real too). If one possible outcome &lt;/p&gt;
+
+
+&lt;p&gt;Anxiety and worry are far from mutually exclusive, and indeed tend to go hand in hand, but it is worth &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-12:35.html"&gt;untangling&lt;/a&gt; the two conceptually,
+and even where both are present they are still different emotions.&lt;/p&gt;
+
+
+&lt;p&gt;For example, with COVID-19, I  am &lt;em&gt;worried&lt;/em&gt; about specific outcomes - harm to people in general, harm to people I love, overall negative societal effects, but am also also COVID-19 has more or less destroyed my ability to reason about the future, and that makes me &lt;em&gt;anxious&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;In the COVID-19 case the anxiety feels almost more like an &lt;a href="https://notebook.drmaciver.com/posts/2020-03-06-07:46.html"&gt;existential feeling&lt;/a&gt; - there's not a specific thing I'm anxious about so much as a general sense that the unknown unknowns are dwarfing the known unknowns, let alone the known knowns (the unknown knowns remain huge given how ideological responses are being). The thing that is making me anxious is the uncertainty itself, not the bad outcomes possible.&lt;/p&gt;
+
+
+&lt;p&gt;Reducing worry is often more tractable than reducing anxiety, because you can reduce worry by planning. If you have a scenario you're worried about, you can ensure that you're prepared for it (e.g. COVID-19 precautions, or talking through your concerns about a situation with the people involved before you get into it). I like Chris Hadfield's advice for dealing with worry, which is "Figure out the next thing that's going to kill you" - plan for the worst, and convince yourself you can handle it. Also often what you're worrying about is &lt;a href="https://notebook.drmaciver.com/posts/2020-03-03-09:07.html"&gt;outdated scenarios that no longer apply&lt;/a&gt;, so &lt;a href="https://notebook.drmaciver.com/posts/2020-02-20-09:31.html"&gt;learning to debug that can help with this&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Anxiety can be resolved by reducing uncertainty by making the situation more deterministic, but often that's not a good idea! &lt;a href="https://notebook.drmaciver.com/posts/2020-02-25-10:39.html"&gt;A certain amount of nondeterminism is often very useful&lt;/a&gt;, and many of the ways to reduce uncertainty do this by increasing the chances of failure (e.g. procrastination until it's too late to do a good job).&lt;/p&gt;
+
+
+&lt;p&gt;There are a couple of things you can do:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Focus on any worries first, because often a lack of &lt;a href="https://notebook.drmaciver.com/posts/2020-03-18-11:24.html"&gt;safety&lt;/a&gt; is the thing that makes uncertainty uncomfortable. Uncertainty isn't intrinsically bad, because if you're always certain you'll never learn anything.&lt;/li&gt;
+&lt;li&gt;See if you can reframe any of the anxiety. For example, you can be uncertain about the outcome but certain of your ability to handle it. Can you focus on that? Are there good things about the uncertainty too? Can you appreciate those as excitement? (This one rarely to never works for me)&lt;/li&gt;
+&lt;li&gt;If you've managed to get your anxiety down to a low enough level, it can be worth practicing a certain amount of discomfort tolerance. Anxiety isn't intrinsically bad, it may be telling you useful information about the world, so the correct amount of anxiety may be non-zero, and it's important to acknowledge that and be prepared to sit with it.&lt;/li&gt;
+&lt;li&gt;If you've not managed to get your anxiety down to a low enough level, often me neither I'm afraid (I've got a lot better since I've acquired the "legacy code" tools). Consult someone with better advice than me and let me know what they said.&lt;/li&gt;
+&lt;/ol&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-04-03-13:40.html" rel="alternate"/>
   </entry>
 </feed>

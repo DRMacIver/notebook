@@ -29,8 +29,8 @@
 * [x] Everything is a teachable moment
 * [x] Teleology is fake
 * [x] Need and desire as drivers of progress
+* [x] Anxiety management as intelligence enhancement
 * [ ] Separating emotional responses from the need to act
-* [ ] Anxiety management as intelligence enhancement
 * [ ] Eye pressure and switching contexts as an enabling technology
 * [ ] Ways in which I could improve my communication skills
 * [ ] Notes on my experience of poly
@@ -83,3 +83,6 @@
 * [ ] Ideological foundations as sets of problems you care about
 * [ ] Legibility Work
 * [ ] Desire hacking
+* [ ] How to be spontaneous
+* [ ] Notes on playfulness
+* [ ] Stretching yourself
