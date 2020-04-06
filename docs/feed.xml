@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-04-03T13:40:00+01:00</updated>
+  <updated>2020-04-06T15:20:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,93 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-03-25-16:02.html</id>
-    <title>Notes on Running a Mutual Support Group</title>
-    <updated>2020-03-25T20:05:50+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Notes on Running a Mutual Support Group&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-03-25&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I've talked about this a little bit in places, but one of the better things I've implemented in the last year is starting
-a mutual support group where myself and a number of other friends get together and talk about our problems.&lt;/p&gt;
-
-
-&lt;p&gt;It's great, and I strongly recommend it. Especially while the world is on fire.&lt;/p&gt;
-
-
-&lt;p&gt;Our support group is tailored for us, and you should tailor yours for you, so I'll explain the general format,
-and then go on to talk a bit more about what ours is like.&lt;/p&gt;
-
-
-&lt;p&gt;How to form a support group:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Decide what style of group you like. I'll talk about how ours works, but yours may be different.&lt;/li&gt;
-&lt;li&gt;Find some people. I picked friends of mine with whom I regularly had good conversations of the sort I wanted. Four is a good number of people. Three is doable but slightly too small, six feels like an absolute upper bound. It's important to pick people you can &lt;a href="https://notebook.drmaciver.com/posts/2020-03-24-09:46.html"&gt;trust&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Discuss the remaining details together until a support group plan emerges.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;A support group needs the following features:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;A group agreement, about what the group is for, and how you will talk to eachother. This should be written down, and you should all agree to abide by it, and you should point out when you are not doing it. YOU NEED THE GROUP AGREEMENT I CANNOT STRESS THIS ENOUGH IT WILL BE VERY BAD IF YOU DON'T HAVE IT. You should also explicitly write it yourselves and agree what is actually important to you, not just pick up a canned one.&lt;/li&gt;
-&lt;li&gt;A decision on how often you want to meet and where. We do every three weeks on Tuesday evening, meeting for dinner in one of our flats. Now that we're on lockdown, we'll probably do Zoom or something (we did it via text on WhatsApp once. This was a bad idea)&lt;/li&gt;
-&lt;li&gt;A way to communicate outside of the meetings (we use a WhatsApp group, it's relatively low volume)&lt;/li&gt;
-&lt;li&gt;A format, but you should use ours for a bit and then tinker with it to suit you.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;The specific format we use is:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;We take turns to set a topic, usually a problem that we'd like help on.&lt;/li&gt;
-&lt;li&gt;We set a ten minute timer in which the person explains the topic and then we all discuss it. After the timer goes off we don't cut off dead, but we wrap up, make closing statements, etc.&lt;/li&gt;
-&lt;li&gt;We use a talking object which you have to be holding to speak beyond very minimalist agreements etc. Ours is a stuffed rabbit. We rely on good etiquette (don't hog the talking object, pass it to people who want it)&lt;/li&gt;
-&lt;li&gt;Theoretically you can wave at someone to suggest that it's a good time to stop talking but we never really need to use it.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;Our specific group is a group of queer, lefty, intelligent, emotionally self-aware, analytical problem solvers (if you ever need to answer the question "Who does David consider to be His People?" that's a pretty good description).
-Our style and our topics are very heavily based on that, and based on a heavy amount of therapy skills in the group.&lt;/p&gt;
-
-
-&lt;p&gt;Our group agreement is designed to support this. In particular, our basic rules are:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;This isn't a format for venting. If you're bringing something up it's because you actually want advice.&lt;/li&gt;
-&lt;li&gt;Also not a format for debating. It's OK to disagree, but if it's turning into an argument, stop.&lt;/li&gt;
-&lt;li&gt;Extend good faith. Assume good intentions, and that the person who is speaking has a good reason for saying what they do (this one is really important - it doesn't work in groups of strangers, but everyone here should be someone you can trust).&lt;/li&gt;
-&lt;li&gt;Be someone deserving of (3). When you're not sure, say so. Don't claim more confidence than you have.&lt;/li&gt;
-&lt;li&gt;Chatham house rule: it's OK to mention that something came up in support group, but it needs to not be clear who said it.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;My recommendation would be to try something like these rules and see how they work for you,
-but they're definitely skewed towards our desire to treat these problems analytically.
-You might want to tinker with (1) and (2) in particular if you're less inclined towards coolly (but empathetically!) discussing your problems and want something that is a bit more emotionally engaged.&lt;/p&gt;
-
-
-&lt;p&gt;There's something really nice about sitting together in a room with people you trust and talking about your problems in ways where you know that they will be taken seriously, and that people there are invested in helping you solving your problem.&lt;/p&gt;
-
-
-&lt;p&gt;There's also something really valuable in helping other people solve their problems. I think most of us get at least as much out of helping others at support group as we do out of being helped. The process is one that gets us in the mindset of taking problems in our life seriously, and as things are both solvable and worth solving.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-03-25-16:02.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-26-09:48.html</id>
     <title>Pragmatic Problem Solving (aka Kludges)</title>
@@ -721,7 +634,7 @@ Why do giraffes have long necks?&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-04-03-13:40.html</id>
     <title>Anxiety vs Worry</title>
-    <updated>2020-04-03T13:40:00+01:00</updated>
+    <updated>2020-04-03T17:46:23+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Anxiety vs Worry&lt;/p&gt;
@@ -774,5 +687,55 @@ and even where both are present they are still different emotions.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-04-03-13:40.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-04-06-15:20.html</id>
+    <title>Being safe for others</title>
+    <updated>2020-04-06T15:20:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Being safe for others&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-04-06&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;It will come as no surprise to the regular reader of this blog that personal growth is a bit of a thing for me right now.
+It is unlikely to come as a surprise (given that I'm writing about growth and run a &lt;a href="https://notebook.drmaciver.com/posts/2020-03-25-16:02.html"&gt;support group&lt;/a&gt;) that I'm also keen to help others with theirs.
+I've had a lot of good experiences on this front recently, many of which I owe to other people, and want to help pay it forward, both to my friends and also to random people on the internet.&lt;/p&gt;
+
+
+&lt;p&gt;One of the skills that seems most helpful in doing this is &lt;em&gt;being safe to tell things to&lt;/em&gt;.
+People are mostly OK at the &lt;a href="https://notebook.drmaciver.com/posts/2020-03-30-23:12.html"&gt;desire&lt;/a&gt; part, and where they're not you can't really help them with that outside of a very close relationship, but everyone is lacking in &lt;a href="https://notebook.drmaciver.com/posts/2020-03-18-11:24.html"&gt;safety&lt;/a&gt;, and if you're to be able to provide people with a platform for growth you need to be able to extend that safety to them.&lt;/p&gt;
+
+
+&lt;p&gt;There is only one thing you really must do for this: Don't react badly, especially don't react judgementally, when people tell you things that they've been hiding about themself.
+You need to be someone people can &lt;a href="https://notebook.drmaciver.com/posts/2020-03-24-09:46.html"&gt;extend trust to&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;This is, of course, extremely difficult in general. If someone confesses to some truly terrible crime, of course you're going to react badly to it, no matter how highly you think of them. It doesn't matter how much good faith you're extending, some things are just too much.
+Fortunately, usually it isn't this bad.&lt;/p&gt;
+
+
+&lt;p&gt;I'm not yet sure what to advise on developing this skill, but some things that seem to help:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Learning good boundaries - being able to say "Actually, I'm sorry, I don't think I can help you with this" rather than trying and failing to help, or reacting defensively.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://notebook.drmaciver.com/posts/2020-02-20-09:31.html"&gt;Learning to manage your own reactions&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Appreciating just how weird and diverse humanity is, and how many seemingly "unhealthy" things are actually very normal.&lt;/li&gt;
+&lt;li&gt;Asking whether it's &lt;a href="https://notebook.drmaciver.com/posts/2020-03-09-11:13.html"&gt;useful to have an opinion&lt;/a&gt; as to whether the thing being described is good or bad (if you're judgemental, will they stop doing it, or will they just go find someone who will encourage them to do it more?).&lt;/li&gt;
+&lt;li&gt;Look for the underlying pain, rather than focusing on how they're conceptualising a solution to it.&lt;/li&gt;
+&lt;li&gt;Apply the communication skills from &lt;a href="https://amzn.to/2RehhHl"&gt;the customer service survival kit&lt;/a&gt; to empathically defuse highly emotional communication.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;A lot of these are, of course, the skills that one learns to apply as a therapist, but I'm hopeful that more people can develop them without retraining as therapists.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-04-06-15:20.html" rel="alternate"/>
   </entry>
 </feed>
