@@ -30,6 +30,7 @@
 * [x] Teleology is fake
 * [x] Need and desire as drivers of progress
 * [x] Anxiety management as intelligence enhancement
+* [ ] Offering the gift of safe reactions
 * [ ] Separating emotional responses from the need to act
 * [ ] Eye pressure and switching contexts as an enabling technology
 * [ ] Ways in which I could improve my communication skills
@@ -86,3 +87,9 @@
 * [ ] How to be spontaneous
 * [ ] Notes on playfulness
 * [ ] Stretching yourself
+* [ ] Relationship building as mutual escalation
+* [ ] Affection as an antidote to unsexiness
+* [ ] Stages of friendship
+* [ ] The loneliness problem
+* [ ] Nice isn't kind
+* [ ] The friendship problem
