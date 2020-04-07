@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-04-06T15:20:00+01:00</updated>
+  <updated>2020-04-07T10:05:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,78 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-03-26-09:48.html</id>
-    <title>Pragmatic Problem Solving (aka Kludges)</title>
-    <updated>2020-03-26T10:05:21+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Pragmatic Problem Solving (aka Kludges)&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-03-26&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;&lt;a href="https://twitter.com/DRMacIver/status/1243110036341248000"&gt;On Twitter&lt;/a&gt;:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Guiding principle: If you can't solve a problem it's probably because you've not tried an ugly enough kludge yet.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;Our shower broke this morning. It's been running in a degraded state for a while, but the knob for controlling water flow finally stopped working entirely. We could get our landlord to fix it, he's pretty good about fixing things, but unfortunately we're under quarantine for another week so that's not a viable option.&lt;/p&gt;
-
-
-&lt;p&gt;So I fixed it, of sorts.&lt;/p&gt;
-
-
-&lt;p&gt;From flatmate WhatsApp this morning:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;The shower is, in a sense, fixed now. It is probably a temporary fix and will likely break again.&lt;/p&gt;
-&lt;p&gt;The fix consists of two ingenious solutions:&lt;/p&gt;
-&lt;p&gt;Firstly, I returned the missing plastic gizmo to the inside of the shower knob (it came out a while ago and the shower was difficult to make work with it in, so I didn't return it).&lt;/p&gt;
-&lt;p&gt;Secondly, in the event that you find you do not have enough grip strength to operate the shower in its current configuration (and you will find this), there is a tea towel hanging on the shower door and you should use that to grip the flow control knob and will find it much more manageable.&lt;/p&gt;
-&lt;p&gt;Behold, science.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;(This is, in fact, not science, but engineering. More on that in a later post).&lt;/p&gt;
-
-
-&lt;p&gt;I live with other very smart people, and I am not the most practically minded of souls, so why was it me who fixed the shower?&lt;/p&gt;
-
-
-&lt;p&gt;Probably the answer is timing and coincidence as much as anything else. I'm sure someone else would have come up with something eventually. However I think I had a couple of straightforward advantages that lead to this being a thing I just shrugged and solved almost immediately.&lt;/p&gt;
-
-
-&lt;p&gt;These were:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;I had some ideas of things to try and was prepared to &lt;a href="https://www.drmaciver.com/2017/02/thinking-through-the-implications/"&gt;just hit things with them&lt;/a&gt; until something worked. I was originally going to try these two independently (either put the gizmo back, or take the knob off entirely and use the tea towel on the control shaft directly). Neither quite worked, but together they work fine.&lt;/li&gt;
-&lt;li&gt;I didn't care about fixing the shower, I just cared about being able to have one.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;(Another flatmate adopted a bucket shower solution. I considered this unacceptable as long as the possibility of an actual shower existed)&lt;/p&gt;
-
-
-&lt;p&gt;It's &lt;a href="https://notebook.drmaciver.com/posts/2020-03-05-11:27.html"&gt;often worth having bad solutions to demonstrate that a solution is possible&lt;/a&gt; but there's another case in which it's worth having bad solutions:
-Often you &lt;em&gt;don't care whether the solution is bad&lt;/em&gt;, you just care that the problem is solved.
-If you can't solve the problem, you might just be being limited by good taste.&lt;/p&gt;
-
-
-&lt;p&gt;"Use a tea towel to operate the shower" is not a good taste solution. It's ugly, it's kludgy, and for now it's more than good enough, and I can assure you that the way my flatmates and I would smell after a few days without access to a shower is also not in good taste.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-03-26-09:48.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-27-08:18.html</id>
     <title>Competence is sexy</title>
@@ -691,7 +619,7 @@ and even where both are present they are still different emotions.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-04-06-15:20.html</id>
     <title>Being safe for others</title>
-    <updated>2020-04-06T15:20:00+01:00</updated>
+    <updated>2020-04-06T15:52:38+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Being safe for others&lt;/p&gt;
@@ -737,5 +665,153 @@ Fortunately, usually it isn't this bad.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-04-06-15:20.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-04-07-10:05.html</id>
+    <title>What's cooking?</title>
+    <updated>2020-04-07T10:05:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;What's cooking?&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-04-07&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;h3&gt;A Recipe&lt;/h3&gt;
+
+
+&lt;p&gt;Let's start with a recipe, because everybody hates it when food blogs start with a long preamble before you finally get to the recipe:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Raw cashew pieces&lt;/li&gt;
+&lt;li&gt;Three apples (one granny smith, two... IDK something red?)&lt;/li&gt;
+&lt;li&gt;Raisins&lt;/li&gt;
+&lt;li&gt;Oil&lt;/li&gt;
+&lt;li&gt;Salt&lt;/li&gt;
+&lt;li&gt;Allspice&lt;/li&gt;
+&lt;li&gt;Honey&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;Quantities left to your own judgement, but roughly I had about a 3 : 3 : 1 ratio of apples, cashews, raisins.&lt;/p&gt;
+
+
+&lt;p&gt;Making this:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Coat the cashews in just enough oil to lubricate them (don't use too much! They'll get super oily if you do), add salt to taste, mix thoroughly, and bake at 180C for 15 minutes.&lt;/li&gt;
+&lt;li&gt;Meanwhile, chop the apples as finely as you can be bothered. Toss them with "an amount" of allspice (honestly I would have used cinammon but I could &lt;em&gt;find&lt;/em&gt; the allspice)&lt;/li&gt;
+&lt;li&gt;Take the cashews out of the oven, add the raisins and apple to them, mix thoroughly with a suitable amount of honey.&lt;/li&gt;
+&lt;li&gt;Raise the oven to 210C and bake for another half hour (then turn the oven off and leave it while you finish making the rest of dinner, in my case a chicken, vegetable, and lentil, soup)&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;You may notice a couple of key features of this recipe:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;It's a little weird&lt;/li&gt;
+&lt;li&gt;The instructions are completely half-arsed&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;It is, fortunately, delicious, but it will probably be tinkered with endlessly if I make it again, and I doubt I'll ever formalise it with anything so gauche as &lt;em&gt;quantities&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;h3&gt;A Story&lt;/h3&gt;
+
+
+&lt;p&gt;As this is apparently now a food blog, it's time for a deeply personal anecdote about my relationship with this food.
+It's a story in two tragedies, first &lt;a href="https://amzn.to/2xXqsF2"&gt;one sort of plague&lt;/a&gt; and then another (and after all, &lt;a href="http://clarkesworldmagazine.com/kritzer_11_15/"&gt;food blogging during a plague is a fine tradition&lt;/a&gt;).&lt;/p&gt;
+
+
+&lt;p&gt;Why did I make this recipe? Well, because I had far too many of the ingredients. This is something I tend to call "forced abundance": When you have too much of a good thing and have to reorient your plans around making use of that.&lt;/p&gt;
+
+
+&lt;p&gt;First, we had Brexit. We still have Brexit, and we're probably going to massively self-own at a crucial pandemic-handling moment as a result of it, but last year I argued (And I still believe my argument was correct) that &lt;a href="https://www.drmaciver.com/2019/02/you-should-be-stockpiling-food-for-brexit/"&gt;you should be stockpiling food for the event of a no deal Brexit&lt;/a&gt;. Either the food would be neutral to mildly positive to have or the food would be essential to have, and the probabilities of the latter were low but far enough from zero to be worth planning around.&lt;/p&gt;
+
+
+&lt;p&gt;As it turns out, I underestimated how positive this could be, because now that we're trapped in lockdown due to COVID-19 it's really useful to have a giant larder of food supplies. As I put it, annoyingly presciently, in that post:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Another scenario is to consider is that if things get unpleasant, we’ll have a situation reminscient of the London riots – it’s not that you can’t leave the house, you’d just maybe... rather not.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;Unfortunately my prepping supplies were less sensible than my argument, and one of the things I didn't realise is how short the shelf life on some items were. In particular the cashew nuts and the raisins mentioned above are about 6 months out of date. They're mostly fine still - the cashews are a little stale, but fine as long as they're cooked. The raisins are very dry but perfectly edible. No sense at all in throwing them away, but better to use them up.&lt;/p&gt;
+
+
+&lt;p&gt;Also, it turns out that 2.5kg of cashews and 5kg of raisins are really quite a lot of cashews and raisins.&lt;/p&gt;
+
+
+&lt;p&gt;On top of this I placed an order for a fruit and veg box from &lt;a href="https://allgreens.co.uk/"&gt;allgreens&lt;/a&gt;. Allgreens allow no customisation of their boxes, and as a result I had a great deal of apples.&lt;/p&gt;
+
+
+&lt;p&gt;How do I like them apples? Cooked. For some reason I'm just really not very into raw apples. Not sure why.&lt;/p&gt;
+
+
+&lt;p&gt;So, long story short, I had a great many apples, cashews, and raisins to use up, and I was pretty sure that was a flavour combination that would work well, and after some cursory googling confirmed that I probably wasn't completely off base, and the above is what I came up with. It is indeed a flavour combination that works well.&lt;/p&gt;
+
+
+&lt;h3&gt;An Observation&lt;/h3&gt;
+
+
+&lt;p&gt;One of the interesting things about forced abundance is how rarely it happens in modern life.&lt;/p&gt;
+
+
+&lt;p&gt;My parents have a garden, so I'm used to it. During the appropriate seasons you discover that there is, for example, such a thing as too many delicious, fresh, raspberries, and that it is perfectly feasible to fill yourself up on artichokes.
+The degree and specifics of this vary from year to year, but the feeling of sometimes having too much is a thing that everyone with a garden is used to.&lt;/p&gt;
+
+
+&lt;p&gt;Supermarkets don't do that to you. The only time I've ever had anything resembling forced abundance from a supermarket was the year where a Sainsbury's misjudged how many blueberries people wanted for Christmas and so on the 27th we discovered that there were a very large number of blueberries a day or two before their use by date available for about 20p per punnet. We bought a lot of them.&lt;/p&gt;
+
+
+&lt;p&gt;Another relatively common experience of forced abundance is leftovers - when you've made a really large quantity of something and then end up having to eat it up for a week. Especially common after Christmas or Thanksgiving if you've roasted an entire turkey for fewer people than an entire turkey is needed for (Solution: Have a better bird for your holiday meals. Turkey is fine I guess but mostly very boring).&lt;/p&gt;
+
+
+&lt;p&gt;As I discovered this week, vegetable boxes are another one. I used to have an Abel and Cole subscription and the "Oh gods what do I do with all these vegetables?" struggle was significant. Even with the allgreens boxes being purchased on demand I expect I'll still have this, because the thing about boxes is that they bundle everything together. Being out of bananas and fixing that suddenly mean that you've got a lot of tomatoes to use up too.&lt;/p&gt;
+
+
+&lt;p&gt;Generically, two main things that can create forced abundance:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Things coming in at a greater rate than you can use or store them.&lt;/li&gt;
+&lt;li&gt;Things that you already have stored that are about to go off.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;The apples are an example of (1), the cashews and raisins of (2).&lt;/p&gt;
+
+
+&lt;p&gt;The reason these things don't happen with supermarkets is basically supply and demand. If a supermarket needs to get rid of something, they lower the price on it (either on individual items through reductions or sales, or more globally for in season produce and the like) until it clears. If &lt;em&gt;nothing&lt;/em&gt; will move a product then they throw it away, which is essentially a limited version of &lt;a href="https://edition.cnn.com/2020/04/01/business/oil-prices-crash-storage-space/index.html"&gt;the price going negative&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Supply and demand and market pricing is very good at distributing abundance (it's not necessarily good at distributing it &lt;em&gt;fairly&lt;/em&gt; mind you, that may require other mechanisms), and through supermarkets we are all the beneficiaries of that.&lt;/p&gt;
+
+
+&lt;p&gt;However, as an individual who is not set up to sell things, we can't do this. Theoretically my parents could sell the output of their garden (and they now have an informal deal where they dump excess on a local cafe in exchange for favours in kind), but because they are not set up for selling things already it's vastly more effort than it's worth. Some years my mother tries to sell her pumpkins and even that is just not worth the trouble.&lt;/p&gt;
+
+
+&lt;p&gt;For most people, in normal times, our food supply comes from supermarkets on a fairly as needed basis this limitation doesn't really come up, because we're operating on a pull-based rather than push-based model: We decide what we need to make, informed by availability and price certainly, and acquire what we need to make it. Any surplus on the supply end is not our problem.&lt;/p&gt;
+
+
+&lt;p&gt;This creates what is, historically, a somewhat anomalous relationship to food: We treat ingredients as something we have free choice over rather than the starting point. Cooking is a process of creating meals, not a process of turning raw ingredients into meals.&lt;/p&gt;
+
+
+&lt;p&gt;This is a subtle but important difference that you can see even during normalcy. There are, roughly, two types of cook:Those who decide what they're going to make before they go to the supermarket, and those who use the supermarket to find out what they're going to make (this is, of course, actually a spectrum rather than a binary). I'm very much in the latter camp, and I feel like we're having a much better time of cooking in quarantine.&lt;/p&gt;
+
+
+&lt;p&gt;There's nothing wrong with recipes of course, and in many ways pull-based cooking is excellent. I'd be hard pressed to argue that forced abundance is a &lt;em&gt;good&lt;/em&gt; thing - it's quite annoying in some ways, and it's tellingly not something that people opt into unless created by circumstances - but it's certainly an interesting thing, serving as the culinary equivalent of a writing prompt, and it forces you in creative directions that you otherwise wouldn't have taken.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-04-07-10:05.html" rel="alternate"/>
   </entry>
 </feed>
