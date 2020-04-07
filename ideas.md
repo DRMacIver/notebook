@@ -30,6 +30,8 @@
 * [x] Teleology is fake
 * [x] Need and desire as drivers of progress
 * [x] Anxiety management as intelligence enhancement
+* [x] Forced abundance
+* [x] Cooking as improvisation
 * [ ] Offering the gift of safe reactions
 * [ ] Separating emotional responses from the need to act
 * [ ] Eye pressure and switching contexts as an enabling technology
@@ -93,3 +95,4 @@
 * [ ] The loneliness problem
 * [ ] Nice isn't kind
 * [ ] The friendship problem
+* [ ] When is it a good idea to write something? (Always)
