@@ -32,6 +32,9 @@
 * [x] Anxiety management as intelligence enhancement
 * [x] Forced abundance
 * [x] Cooking as improvisation
+* [x] People probably were just right all along
+* [x] Ideological foundations as sets of problems you care about
+* [ ] Separating problems from solutions
 * [ ] Offering the gift of safe reactions
 * [ ] Separating emotional responses from the need to act
 * [ ] Eye pressure and switching contexts as an enabling technology
@@ -81,9 +84,6 @@
 * [ ] How's the stockpile working out?
 * [ ] Showers as a creative space
 * [ ] Emulation mode for feelings
-* [ ] People probably were just right all along
-* [ ] Separating problems from solutions
-* [ ] Ideological foundations as sets of problems you care about
 * [ ] Legibility Work
 * [ ] Desire hacking
 * [ ] How to be spontaneous

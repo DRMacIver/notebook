@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-04-08T16:12:00+01:00</updated>
+  <updated>2020-04-10T10:53:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,72 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-03-28-10:26.html</id>
-    <title>On having different thresholds</title>
-    <updated>2020-03-28T11:28:42+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;On having different thresholds&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-03-28&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Observe the following behaviours:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;Not expressing your wants or needs until they become essential for you.&lt;/li&gt;
-&lt;li&gt;Not talking about your feelings until you can't cope with them.&lt;/li&gt;
-&lt;li&gt;Not telling someone that their behaviour is bad until you can't deal with it.&lt;/li&gt;
-&lt;li&gt;Not expressing an opinion until you are certain it's true.&lt;/li&gt;
-&lt;li&gt;Not articulating a thought process until you've fully understood it.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;These share the following major features:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;They are about where you set a &lt;em&gt;threshold for action&lt;/em&gt;. How X does a thing have to be before you do Y?&lt;/li&gt;
-&lt;li&gt;They are very common.&lt;/li&gt;
-&lt;li&gt;They are really really unhealthy.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;For most people, lowering these thresholds will significantly improve your experience of and behaviour in the world.
-That's not to say that the thresholds should be set at zero, and there are definitely people who have them set too low, but by and large the norms around where they &lt;em&gt;should&lt;/em&gt; be set are much too high.&lt;/p&gt;
-
-
-&lt;p&gt;Why? Well because if you don't do anything until something breaks then you will be constantly &lt;a href="https://notebook.drmaciver.com/posts/2020-03-04-11:18.html"&gt;skirting the edge of disaster&lt;/a&gt;. For example if you don't express needs until they're essential, none of your non-essential needs are going to be adequately met. You'll maybe not be in crisis, but you'll be low-grade miserable.&lt;/p&gt;
-
-
-&lt;p&gt;But, once you learn healthier behaviour and set these thresholds lower, you're going to run into a huge problem.
-You've suddenly become &lt;a href="https://notebook.drmaciver.com/posts/2020-03-02-09:31.html"&gt;illegible to other people&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;The problem is this: Other people do not have access to your internal state. They do not know how X the thing is, they only know that you have done Y. This will cause them to assume that when you do Y, the thing is as X for you as it would be when other people do Y. This means that if you express an emotion, people will think it is a big deal. If you complain about a bad behaviour, people will think you must be really bothered by it.&lt;/p&gt;
-
-
-&lt;p&gt;A concrete example is that I was trying Capoeira last year. About halfway through my second lesson I realised that actually this really isn't for me right now, and that I could cope with the rest of the lesson but it would be moderately unpleasant and I definitely wouldn't be coming back for another one, so I made my apologies and left.
-I realised afterwards that people probably thought I was in quite a lot of distress, because that felt like a major move to them. I wasn't. I was just making what for me was a perfectly sensible decision, but most people wouldn't have made it until breaking point.&lt;/p&gt;
-
-
-&lt;p&gt;This is why talking about feelings often feels like high drama / making a big deal out of nothing. It's not. Talking about feelings is great, and is in fact how you avoid drama and making big deals out of things that don't need to be. But because people are used to not talking about feelings until they absolutely need to be dealt with, when you talk about feelings before they need to be dealt with people assume you're making more of an issue of it than not.&lt;/p&gt;
-
-
-&lt;p&gt;Differing thresholds are like &lt;a href="https://sambleckley.com/writing/church-of-interruption.html"&gt;the church of interruption&lt;/a&gt;. People have incompatible conversation norms, and they don't realise that they do or don't know how to fluently speak the other's, so they are constantly miscuing off each other.&lt;/p&gt;
-
-
-&lt;p&gt;The solution, I'm afraid, is more talking. It has long been my stance that you need to have conversations about how to have conversations with people, and a crucial part of that is talking about what bringing things up means and how best to do it.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-03-28-10:26.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-29-21:16.html</id>
     <title>Everything is a teachable moment</title>
@@ -698,7 +632,7 @@ The degree and specifics of this vary from year to year, but the feeling of some
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-04-08-16:12.html</id>
     <title>The rule of three twos</title>
-    <updated>2020-04-08T16:12:00+01:00</updated>
+    <updated>2020-04-08T16:25:23+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;The rule of three twos&lt;/p&gt;
@@ -742,5 +676,85 @@ This restricts the problem of making it great to:&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-04-08-16:12.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-04-10-10:53.html</id>
+    <title>Maybe everyone was right all along</title>
+    <updated>2020-04-10T10:53:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Maybe everyone was right all along&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-04-10&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;A common subject of mockery right now is that a lot of people are treating COVID-19 as evidence that their ideologies were right all along.&lt;/p&gt;
+
+
+&lt;p&gt;I do share a certain amount of amusement over this, but would like to suggest the following counterpoint: Actually, most of these people probably &lt;em&gt;were&lt;/em&gt; right all along, at least in some ways.&lt;/p&gt;
+
+
+&lt;p&gt;The easy example is that people calling for greater social safety nets, medical care, etc. who are now going "Hey, you know, maybe those things would have been useful in a pandemic??" are obviously right. Those things &lt;em&gt;would&lt;/em&gt; have been useful in a pandemic. The pandemic genuinely is providing good evidence for why people need &lt;a href="https://www.bloomberg.com/news/articles/2020-04-05/spanish-government-aims-to-roll-out-basic-income-soon"&gt;universal basic income&lt;/a&gt;, and it really is a damning criticism of a lot of countries' healthcare.&lt;/p&gt;
+
+
+&lt;p&gt;Specifically what's happening here is that the pandemic is highlighting two major problems that were present all along:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Many people's lives are extremely financially precarious.&lt;/li&gt;
+&lt;li&gt;Healthcare, especially emergency care and infectious disease control, is a collective problem that we cannot ethically or practically rely on individuals being able to afford.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;People who have built significant aspects of their ideology around these problems are in fact entirely justified in saying that the pandemic is proving them right all along, because these problems are real and major and the pandemic really is highlighting them, and there's nothing remotely surprising or controversial about pointing that out.&lt;/p&gt;
+
+
+&lt;p&gt;What I'd like to suggest though is that most other examples of people saying they've been right all along are like this too.&lt;/p&gt;
+
+
+&lt;p&gt;It's tempting to think of ideologies in terms of what proposals they make for radically restructing society,
+but I think it's more useful to start with what their &lt;em&gt;critiques&lt;/em&gt; of society are. An ideology is, first and foremost, a set of problems that you care about. The proposals made by the ideology are, largely, grounded in those critiques and designed to solve those problems.&lt;/p&gt;
+
+
+&lt;p&gt;Generally critiques start from a real source of pain, and a more or less accurate understanding of the world.
+Sometimes that pain is one we want to consider "invalid" (e.g. it's selfish), sometimes that more or less accurate understanding of the world is less more and more less, but on the whole society is messed up in too many different ways for people to &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-07:38.html"&gt;nerd&lt;/a&gt; about all of them, so you end up with a lot of specialist bodies of knowledge each focused on a specific critique, so it's not surprising that this results in a lot of different ideologies.&lt;/p&gt;
+
+
+&lt;p&gt;People's intuition is that all of these ideologies can't be right at the same time, and in some sense that's true,
+but I think it misunderstands the nature of ideological conflict.
+Ideologies come into conflict in (at least) two different ways:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;They have incompatible critiques.&lt;/li&gt;
+&lt;li&gt;They have incompatible solutions.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;The first absolutely happens of course - e.g. white supremacist ideologies and intersectional feminist ideologies are genuinely in conflict - but I think more often than not it's the second, and it would be perfectly plausible to synthesise the two ideologies into something workable,
+because what's actually happening is that they have perfectly compatible complementary critiques of society, but the solutions they proposed don't take into account the other's critiques.&lt;/p&gt;
+
+
+&lt;p&gt;It may not be obvious from the inside that this is happening, because people overidentify problems and solutions (this happens literally all the time, not just in ideological contexts), and even once you realise it's happening it may be genuinely very hard to form that synthesis, but I think until you've done the work to diagnose a conflict it can be worth assuming that this is what's happening - it makes it easier to extend empathy across ideological differences and to learn from other people's critiques of society.&lt;/p&gt;
+
+
+&lt;p&gt;Backtracking to COVID-19 this is, I think, why most people are treating it as evidence that they were right all along:
+Their critiques of society were, within their own values, actually pretty accurate, in ways that COVID-19 is showcasing.
+Society is constantly &lt;a href="https://notebook.drmaciver.com/posts/2020-03-04-11:18.html"&gt;skirting the edge of disaster&lt;/a&gt; and COVID-19 came in and threw a spanner in the works, so a lot of the things we did to paper over issues are now fraying, and all of the problems that they were previously noticing are suddenly brought into stark relief.
+As a result nobody is going to go "Actually I was wrong, this thing I thought was a problem isn't a problem after all", because the thing they were critiquing is now if anything &lt;em&gt;more&lt;/em&gt; of a problem.&lt;/p&gt;
+
+
+&lt;p&gt;As a result, the only way COVID-19 can really change your ideological stance is by convincing you that things you had previously dismissed as non-problems are actually problems they do need to care about. We see this happening with e.g. libertarians and anarchists who are going "Actually, most of my critiques are still valid, but you know this does seem something where massive central coordinated response is helpful. BTW have you noticed that the institutions for doing so are exactly as broken as we said they were?" (We're also seeing this with some privacy advocates who are about facing and going "Wait no surveillance is good actually" but I'm less impressed with those people).
+This is largely what I was suggesting was the good sort of ideological incompatibility: The underlying critiques are perfectly compatible, we just need to figure out how to put those together in a more productive way.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, in short, my ideological stance has always been that we can learn a lot from people with different problems and areas of knowledge than us, and that although it's not true that the "truth lies somewhere in the middle", we probably do need to synthesise things from a wide variety of ideologies and viewpoints if we want to come to a useful conclusion that works for everyone. Fortunately, COVID-19 has proven that I've been right about this all along.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-04-10-10:53.html" rel="alternate"/>
   </entry>
 </feed>
