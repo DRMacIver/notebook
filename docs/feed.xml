@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-04-10T10:53:00+01:00</updated>
+  <updated>2020-04-11T14:47:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,61 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-03-29-21:16.html</id>
-    <title>Everything is a teachable moment</title>
-    <updated>2020-03-29T22:24:23+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Everything is a teachable moment&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-03-29&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Previously I have written blog posts about:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.drmaciver.com/2017/02/thinking-through-the-implications/"&gt;A cat who can open doors&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://notebook.drmaciver.com/posts/2020-03-26-09:48.html"&gt;Fixing a shower&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.drmaciver.com/2013/08/how-did-you-get-started-so-quickly/"&gt;How to get started in a new code base&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;Except that's not what any of these are about.&lt;/p&gt;
-
-
-&lt;p&gt;They're actually about:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Toolkitized thinking&lt;/em&gt; - how to apply things that you've learned in other contexts&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Pragmatic problem solving&lt;/em&gt; - how to let go of the desire to solve the problem properly and just solve the problem&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Efficient learning&lt;/em&gt; - how not to get distracted by &lt;a href="https://notebook.drmaciver.com/posts/2020-03-22-18:01.html"&gt;the impossibly large number of things to learn&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;Each of them are of course about both these things: Something happened, and by looking at what happened you can learn something generalisable about it.&lt;/p&gt;
-
-
-&lt;p&gt;Typically of course, you don't actually see a single thing and get the general insight, you acquire the general insight after seeing many different things, but often a specific example is exactly what you need to &lt;a href="https://www.drmaciver.com/2018/10/how-to-explain-anything-to-anyone/"&gt;explain the point&lt;/a&gt;, possibly to someone else, possibly to yourself.&lt;/p&gt;
-
-
-&lt;p&gt;The important feature of these generalisations is that by doing this you learn beyond the specific circumstances you encounter and &lt;a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1758026/"&gt;experience the world richly&lt;/a&gt;, letting you draw on your past experience more effectively in novel situations.&lt;/p&gt;
-
-
-&lt;p&gt;One way of looking at mathematics is that it's about taking a look at an argument and paring it down to its bare essentials and generalising it. Trying to take something hyper specific and turn it into a simple reusable principle that can be applied, by asking what about the problem actually matters.&lt;/p&gt;
-
-
-&lt;p&gt;Our interactions with the world are like this too. Everything is a teachable moment, all you have to do is look at it through the right lens and use it to teach something.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-03-29-21:16.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-30-23:12.html</id>
     <title>Desire as a driver of growth</title>
@@ -680,7 +625,7 @@ This restricts the problem of making it great to:&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-04-10-10:53.html</id>
     <title>Maybe everyone was right all along</title>
-    <updated>2020-04-10T10:53:00+01:00</updated>
+    <updated>2020-04-10T12:23:47+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Maybe everyone was right all along&lt;/p&gt;
@@ -756,5 +701,53 @@ This is largely what I was suggesting was the good sort of ideological incompati
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-04-10-10:53.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-04-11-14:47.html</id>
+    <title>Trivial irritations as inhibiting factors</title>
+    <updated>2020-04-11T14:47:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Trivial irritations as inhibiting factors&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-04-11&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Historically speaking, I hate podcasts. I could tell you all sorts of reasons why they don't work for me as a medium - auditory processing issues, the fact that I don't really like receiving information in a spoken format, etc.&lt;/p&gt;
+
+
+&lt;p&gt;I've also listened to a lot of podcasts in the last week, and it turns out all of those reasons were wrong, and the actual reason that I didn't like podcasts was that I didn't own wireless headphones.&lt;/p&gt;
+
+
+&lt;p&gt;It turns out that I think podcasts as a medium are &lt;em&gt;fine&lt;/em&gt;. They're not great. I very much don't think they're the ideal medium for many things. But there's a lot of good information available in podcast form, so by picking out the ones that work best for me it's relatively easy to get reasonable benefit out of podcasts.&lt;/p&gt;
+
+
+&lt;p&gt;In order to take advantage of that benefit though two things need to hold true:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;There can't be something I'd rather be doing with that time.&lt;/li&gt;
+&lt;li&gt;The cost of listening to the podcast has to be smaller than the benefit, otherwise listening to it is a net negative.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;So for example for (1) podcasts are a good thing to listen to in otherwise "dead" time. e.g. doing chores, during exercise, etc. because they're a good thing for occupying attention then that I wouldn't otherwise be using if that's what I want. This was always true and the benefits of them for that were always present.&lt;/p&gt;
+
+
+&lt;p&gt;But also listening to podcasts on speakers or wired headphones is just that little bit too annoying. Wired headphones to a phone in my pocket during exercise is very annoying - it constrains my movement, there's a risk of the headphones being pulled out, etc. The result was that prior to having wireless headphones it was always just a little bit too irritating for me to listen to podcasts.
+As a result, having wireless headphones takes the cost-benefit of podcasts from mildly negative to mildly positive.&lt;/p&gt;
+
+
+&lt;p&gt;This, it turns out, is actually a bigger deal than it sounds, because once the cost-benefit analysis is positive I can start to properly get into it. I've even (gasp) &lt;em&gt;listened to podcasts on wired headphones&lt;/em&gt; and it was mostly fine, because I'd already done the work to get into it. So I think in the end the cost-benefit analysis of podcasts will be moderately positive - still not my favourite medium, but something I get a fair bit out of it.&lt;/p&gt;
+
+
+&lt;p&gt;None of my original objections were &lt;em&gt;wrong&lt;/em&gt; exactly - they're still all things that I expect mean that podcasts will never be my favourite thing, but they were slightly missing the point because what I needed was to overcome a trivial irritation that I didn't realise was there rather than to make podcasts work better for me.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-04-11-14:47.html" rel="alternate"/>
   </entry>
 </feed>
