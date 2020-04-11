@@ -34,8 +34,9 @@
 * [x] Cooking as improvisation
 * [x] People probably were just right all along
 * [x] Ideological foundations as sets of problems you care about
+* [x] Anxiety vs worry
+* [x] Offering the gift of safe reactions
 * [ ] Separating problems from solutions
-* [ ] Offering the gift of safe reactions
 * [ ] Separating emotional responses from the need to act
 * [ ] Eye pressure and switching contexts as an enabling technology
 * [ ] Ways in which I could improve my communication skills
@@ -79,7 +80,6 @@
 * [ ] You can read however you like. You don't have to read the whole thing.
 * [ ] You don't have to treat other people as worth arguing with
 * [ ] Science vs engineering as forall vs exists
-* [ ] Anxiety vs worry
 * [ ] You should often assign larger interventions to fewer people
 * [ ] How's the stockpile working out?
 * [ ] Showers as a creative space
