@@ -45,6 +45,76 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
         
 
 <section>
+<h2><a href="/posts/2020-04-12-11:35.html">2020-04-12</a></h2>
+
+
+<p class="subtitle">Intuition as search prioritisation</p>
+
+
+<dl class="metadata">
+<dt>Published</dt>
+<dd class="post-date">2020-04-12</dd>
+</dl>
+
+
+<p>Computers and algorithms are not an especially good model of the human mind, but they often provide nice toy models for reasoning processes. These don't necessarily capture general features of human reasoning, but they're often still useful toy models for thinking about how reason might work in particular contexts.</p>
+
+
+<p>In this post I'd like to look at some such toy models and see how intuition can have a big impact on them.</p>
+
+
+<p>Suppose we have \(N\) items, and we want to find a good one (and know a priori that at least one of them is good). We can check whether any given item is good, but it requires reasonably careful investigation in order to determine an item's goodness.</p>
+
+
+<p>There's no mystery about what we have to do in in order to find a good item: We go through \(N\) items, one at a time, and keep asking "Is this one good? How about this one? This one?" until we find a good item and return it.</p>
+
+
+<p>This simplicity hides an important question though: What order do we search through the items in?</p>
+
+
+<p>If we're lucky and get a good item first, we only need to examine one item. If we're unlucky, we might have to examine all \(N\). If \(N\) is large this may be <em>very</em> expensive.</p>
+
+
+<p>As a result, our iteration order is the major driver of how efficient this process is. It has no effect on the result of the algorithm, but it significantly impacts its performance.</p>
+
+
+<p>Intuition can be thought of as the search ordering in this problem: We have some really cheap test that lets us guess whether something is good enough, and we go through the items in order of guessed-good to guessed-bad. If our guesses are remotely accurate, this will speed up the time this takes to find the item.</p>
+
+
+<p>At this stage, intuition affects only the performance, not the outcome, but in real world decision making often we are time constrained, so we might not have time to search through all \(N\) items. A <a href="https://www.drmaciver.com/2019/10/vocabulary-building-satisficing/">satisficing</a> behaviour might be that rather than looking for goodness in some absolute sense, we evaluate \(k\) out of \(N\) items and pick the best among those.</p>
+
+
+<p>This is effectively the same algorithm as before, but now treated as an <a href="https://notebook.drmaciver.com/posts/2020-03-23-15:52.html">anytime algorithm</a> - we're allowing for the possibility of interrupting early and using our best result.
+<em>Now</em> the order of iteration is still important, because we can observe the quality over time and pick an earlier time to stop, but for essentially the same reason that it affected performance before.</p>
+
+
+<p>This feature becomes especially important when it's not just impractical but utterly infeasible to evaluate all \(N\) possibilities.
+<a href="https://discovery.ucl.ac.uk/id/eprint/10045895/1/agz_unformatted_nature.pdf">AlphaGo Zero</a> is a particularly good practical instance of a real computer program working a bit like this.</p>
+
+
+<p>AlphaGo Zero has essentially two components:</p>
+
+
+<ol>
+<li>A tree search, that reasons through and evaluates potential moves for their impact.</li>
+<li>A neural network, that looks at the board and history and outputs a set of move probabilities.</li>
+</ol>
+
+
+<p>The tree search is the "reasoning" of the AlphaGo Zero, in that it's the bit that actually attempts to strategise and think through the implications of varying moves, but the neural network is the fast gut feel play.</p>
+
+
+<p>In theory, AlphaGo Zero would play fine if you were to just make the neural network always pick every move at random and let the tree search be unboundedly deep. In practice, it would play fine by just sitting there generating heat and net never making a move, because trying to do a full tree search on the space of possible Go moves would take longer than the lifetime of the universe.</p>
+
+
+<p>This means we're in the situation like the above partial search algorithm: Because are constrained on time, the quality of the moves output by the neural network will heavily influence the quality of AlphaGo Zero's decision making.</p>
+
+
+<p>This is a general phenomenon that repeats over and over again: Making decisions perfectly requires unbounded amounts of time, so at some point we have to <a href="https://notebook.drmaciver.com/posts/2020-02-25-10:39.html">terminate our decision making process and just make our best guess</a>, and the quality of our intuition helps us prioritise what to consider before we give up. Thus, even the most logical and well reasoned decision making process will usually be heavily dependent on intuition for the quality of its outcome.</p>
+
+
+</section>
+<section>
 <h2><a href="/posts/2020-04-11-14:47.html">2020-04-11</a></h2>
 
 
@@ -356,58 +426,12 @@ The degree and specifics of this vary from year to year, but the feeling of some
 
 
 </section>
-<section>
-<h2><a href="/posts/2020-04-06-15:20.html">2020-04-06</a></h2>
-
-
-<p class="subtitle">Being safe for others</p>
-
-
-<dl class="metadata">
-<dt>Published</dt>
-<dd class="post-date">2020-04-06</dd>
-</dl>
-
-
-<p>It will come as no surprise to the regular reader of this blog that personal growth is a bit of a thing for me right now.
-It is unlikely to come as a surprise (given that I'm writing about growth and run a <a href="https://notebook.drmaciver.com/posts/2020-03-25-16:02.html">support group</a>) that I'm also keen to help others with theirs.
-I've had a lot of good experiences on this front recently, many of which I owe to other people, and want to help pay it forward, both to my friends and also to random people on the internet.</p>
-
-
-<p>One of the skills that seems most helpful in doing this is <em>being safe to tell things to</em>.
-People are mostly OK at the <a href="https://notebook.drmaciver.com/posts/2020-03-30-23:12.html">desire</a> part, and where they're not you can't really help them with that outside of a very close relationship, but everyone is lacking in <a href="https://notebook.drmaciver.com/posts/2020-03-18-11:24.html">safety</a>, and if you're to be able to provide people with a platform for growth you need to be able to extend that safety to them.</p>
-
-
-<p>There is only one thing you really must do for this: Don't react badly, especially don't react judgementally, when people tell you things that they've been hiding about themself.
-You need to be someone people can <a href="https://notebook.drmaciver.com/posts/2020-03-24-09:46.html">extend trust to</a>.</p>
-
-
-<p>This is, of course, extremely difficult in general. If someone confesses to some truly terrible crime, of course you're going to react badly to it, no matter how highly you think of them. It doesn't matter how much good faith you're extending, some things are just too much.
-Fortunately, usually it isn't this bad.</p>
-
-
-<p>I'm not yet sure what to advise on developing this skill, but some things that seem to help:</p>
-
-
-<ul>
-<li>Learning good boundaries - being able to say "Actually, I'm sorry, I don't think I can help you with this" rather than trying and failing to help, or reacting defensively.</li>
-<li><a href="https://notebook.drmaciver.com/posts/2020-02-20-09:31.html">Learning to manage your own reactions</a>.</li>
-<li>Appreciating just how weird and diverse humanity is, and how many seemingly "unhealthy" things are actually very normal.</li>
-<li>Asking whether it's <a href="https://notebook.drmaciver.com/posts/2020-03-09-11:13.html">useful to have an opinion</a> as to whether the thing being described is good or bad (if you're judgemental, will they stop doing it, or will they just go find someone who will encourage them to do it more?).</li>
-<li>Look for the underlying pain, rather than focusing on how they're conceptualising a solution to it.</li>
-<li>Apply the communication skills from <a href="https://amzn.to/2RehhHl">the customer service survival kit</a> to empathically defuse highly emotional communication.</li>
-</ul>
-
-
-<p>A lot of these are, of course, the skills that one learns to apply as a therapist, but I'm hopeful that more people can develop them without retraining as therapists.</p>
-
-
-</section>
 
 
 <h2>2020-04</h2>
 
 <ul class=postarchive>
+<li><a href="/posts/2020-04-06-15:20.html">Being safe for others</a></li>
 <li><a href="/posts/2020-04-03-13:40.html">Anxiety vs Worry</a></li>
 <li><a href="/posts/2020-04-02-09:44.html">Teleology is fake</a></li>
 <li><a href="/posts/2020-04-01-09:41.html">The problem of deduction</a></li>

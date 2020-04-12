@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-04-11T14:47:00+01:00</updated>
+  <updated>2020-04-12T11:35:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,59 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-03-30-23:12.html</id>
-    <title>Desire as a driver of growth</title>
-    <updated>2020-03-30T23:37:46+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Desire as a driver of growth&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-03-30&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I wrote before about how &lt;a href="https://notebook.drmaciver.com/posts/2020-03-18-11:24.html"&gt;safety is the enabler of growth&lt;/a&gt;: The thing that allows you to grow is to be safe to experiment, so you can learn new ways of being.&lt;/p&gt;
-
-
-&lt;p&gt;This is true as far as it goes, but it has a big problem: If you're safe, it's very easy to just stay where you are.
-The possibility to grow exists, but you have no particular reason to take it, so you don't.&lt;/p&gt;
-
-
-&lt;p&gt;You can see this in the stereotype of the spoiled rich kid (although often they're not exactly in safe environments either, so this is weak evidence. Consider it an illustrative example).&lt;/p&gt;
-
-
-&lt;p&gt;The basic problem is that growth is hard work. You have to want to do it. You have to actually &lt;em&gt;desire&lt;/em&gt; to grow.&lt;/p&gt;
-
-
-&lt;p&gt;One key to doing this is what I wrote about in &lt;a href="https://notebook.drmaciver.com/posts/2020-03-23-15:52.html"&gt;life as an anytime algorithm&lt;/a&gt;: Designing goals so that you gain partial benefits as you go. This ensures that you're getting feedback on growth as you proceed, and it doesn't feel like &lt;a href="https://www.fvathynevgl.com/momentum/"&gt;a long hard slog with hopefully a reward at the end&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;This isn't enough, because it depends on what type of progress you're making. In particular, I reliably find that progress that just makes things less bad doesn't have the right shape. 
-The nagging urge is always there to backslide and just fall back to the old ways. The old ways weren't good, but they sure were easier, and stable, and stability is comforting.&lt;/p&gt;
-
-
-&lt;p&gt;In order to create a desire for growth you need the changes you see to be an actively positive thing.
-It makes you hungry for more, and the work feels less like work and more like achievement.&lt;/p&gt;
-
-
-&lt;p&gt;Two examples where I have encountered this:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;In my various work on &lt;a href="https://notebook.drmaciver.com/posts/2020-02-20-09:31.html"&gt;emotions&lt;/a&gt; one of my specific goals has been around the experience of positive emotions. I don't just want to be less miserable, I want to be happier.&lt;/li&gt;
-&lt;li&gt;I've been working on my diet. This means I no longer have a permanently upset stomach. That's great and all, but it sure is tempting to backslide because pizza is delicious. But... I must admit, I'm really enjoying the weight loss. I know, I know, body positivity, but I feel &lt;a href="https://notebook.drmaciver.com/posts/2020-03-27-08:18.html"&gt;a lot better about my body&lt;/a&gt; than I have in some time, and that's really nice.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;You need to clear out the negative stuff too (more of my emotion work is on anxiety than joy, but the two feed into each other). It's important not to overfocus on the positive, but without the positive to drive growth you will often give up, and that means you end up doing less work on the negatives in total.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-03-30-23:12.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-03-31-09:52.html</id>
     <title>Vampire bats as a model for flirting</title>
@@ -705,7 +652,7 @@ This is largely what I was suggesting was the good sort of ideological incompati
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-04-11-14:47.html</id>
     <title>Trivial irritations as inhibiting factors</title>
-    <updated>2020-04-11T14:47:00+01:00</updated>
+    <updated>2020-04-11T15:42:13+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Trivial irritations as inhibiting factors&lt;/p&gt;
@@ -749,5 +696,78 @@ As a result, having wireless headphones takes the cost-benefit of podcasts from 
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-04-11-14:47.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-04-12-11:35.html</id>
+    <title>Intuition as search prioritisation</title>
+    <updated>2020-04-12T11:35:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Intuition as search prioritisation&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-04-12&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Computers and algorithms are not an especially good model of the human mind, but they often provide nice toy models for reasoning processes. These don't necessarily capture general features of human reasoning, but they're often still useful toy models for thinking about how reason might work in particular contexts.&lt;/p&gt;
+
+
+&lt;p&gt;In this post I'd like to look at some such toy models and see how intuition can have a big impact on them.&lt;/p&gt;
+
+
+&lt;p&gt;Suppose we have \(N\) items, and we want to find a good one (and know a priori that at least one of them is good). We can check whether any given item is good, but it requires reasonably careful investigation in order to determine an item's goodness.&lt;/p&gt;
+
+
+&lt;p&gt;There's no mystery about what we have to do in in order to find a good item: We go through \(N\) items, one at a time, and keep asking "Is this one good? How about this one? This one?" until we find a good item and return it.&lt;/p&gt;
+
+
+&lt;p&gt;This simplicity hides an important question though: What order do we search through the items in?&lt;/p&gt;
+
+
+&lt;p&gt;If we're lucky and get a good item first, we only need to examine one item. If we're unlucky, we might have to examine all \(N\). If \(N\) is large this may be &lt;em&gt;very&lt;/em&gt; expensive.&lt;/p&gt;
+
+
+&lt;p&gt;As a result, our iteration order is the major driver of how efficient this process is. It has no effect on the result of the algorithm, but it significantly impacts its performance.&lt;/p&gt;
+
+
+&lt;p&gt;Intuition can be thought of as the search ordering in this problem: We have some really cheap test that lets us guess whether something is good enough, and we go through the items in order of guessed-good to guessed-bad. If our guesses are remotely accurate, this will speed up the time this takes to find the item.&lt;/p&gt;
+
+
+&lt;p&gt;At this stage, intuition affects only the performance, not the outcome, but in real world decision making often we are time constrained, so we might not have time to search through all \(N\) items. A &lt;a href="https://www.drmaciver.com/2019/10/vocabulary-building-satisficing/"&gt;satisficing&lt;/a&gt; behaviour might be that rather than looking for goodness in some absolute sense, we evaluate \(k\) out of \(N\) items and pick the best among those.&lt;/p&gt;
+
+
+&lt;p&gt;This is effectively the same algorithm as before, but now treated as an &lt;a href="https://notebook.drmaciver.com/posts/2020-03-23-15:52.html"&gt;anytime algorithm&lt;/a&gt; - we're allowing for the possibility of interrupting early and using our best result.
+&lt;em&gt;Now&lt;/em&gt; the order of iteration is still important, because we can observe the quality over time and pick an earlier time to stop, but for essentially the same reason that it affected performance before.&lt;/p&gt;
+
+
+&lt;p&gt;This feature becomes especially important when it's not just impractical but utterly infeasible to evaluate all \(N\) possibilities.
+&lt;a href="https://discovery.ucl.ac.uk/id/eprint/10045895/1/agz_unformatted_nature.pdf"&gt;AlphaGo Zero&lt;/a&gt; is a particularly good practical instance of a real computer program working a bit like this.&lt;/p&gt;
+
+
+&lt;p&gt;AlphaGo Zero has essentially two components:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;A tree search, that reasons through and evaluates potential moves for their impact.&lt;/li&gt;
+&lt;li&gt;A neural network, that looks at the board and history and outputs a set of move probabilities.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;The tree search is the "reasoning" of the AlphaGo Zero, in that it's the bit that actually attempts to strategise and think through the implications of varying moves, but the neural network is the fast gut feel play.&lt;/p&gt;
+
+
+&lt;p&gt;In theory, AlphaGo Zero would play fine if you were to just make the neural network always pick every move at random and let the tree search be unboundedly deep. In practice, it would play fine by just sitting there generating heat and net never making a move, because trying to do a full tree search on the space of possible Go moves would take longer than the lifetime of the universe.&lt;/p&gt;
+
+
+&lt;p&gt;This means we're in the situation like the above partial search algorithm: Because are constrained on time, the quality of the moves output by the neural network will heavily influence the quality of AlphaGo Zero's decision making.&lt;/p&gt;
+
+
+&lt;p&gt;This is a general phenomenon that repeats over and over again: Making decisions perfectly requires unbounded amounts of time, so at some point we have to &lt;a href="https://notebook.drmaciver.com/posts/2020-02-25-10:39.html"&gt;terminate our decision making process and just make our best guess&lt;/a&gt;, and the quality of our intuition helps us prioritise what to consider before we give up. Thus, even the most logical and well reasoned decision making process will usually be heavily dependent on intuition for the quality of its outcome.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-04-12-11:35.html" rel="alternate"/>
   </entry>
 </feed>
