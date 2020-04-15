@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-04-15T06:31:00+01:00</updated>
+  <updated>2020-04-15T06:57:25+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -720,7 +720,7 @@ The problem is that because we only experience Spock from the outside, we conclu
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-04-15-06:31.html</id>
     <title>Capabilities can be coerced</title>
-    <updated>2020-04-15T06:31:00+01:00</updated>
+    <updated>2020-04-15T06:57:25+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Capabilities can be coerced&lt;/p&gt;
@@ -750,6 +750,9 @@ You win (unless your opponent has done the same thing at the same time of you, i
 
 
 &lt;p&gt;Conflicts don't have to be quite as adversarial as the game of Chicken. Consider something like choosing a meal. Suppose you have a reasonably strong preference against eating meat. Chances are you're often going to be coerced (explicitly or implicitly) into eating meat a lot more often than you want. If, instead, you tell people that you're vegetarian and &lt;em&gt;don't&lt;/em&gt; eat meat, that coercion goes down significantly (not to zero, sadly, but you've got a stronger argument to make against them when they try).&lt;/p&gt;
+
+
+&lt;p&gt;(This is, of course, often also a game of chicken. More specifically a game of eating chicken).&lt;/p&gt;
 
 
 &lt;p&gt;This is also why today's favour is tomorrow's obligation: Once you have demonstrated the ability to perform the favour, now any future refusal to do it is evidence that you are choosing not to do it because it is known that you can do it, so the cost of refusal is now significantly higher.&lt;/p&gt;
