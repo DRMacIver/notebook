@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-04-14T14:24:16+01:00</updated>
+  <updated>2020-04-15T06:31:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,123 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-04-02-09:44.html</id>
-    <title>Teleology is fake</title>
-    <updated>2020-04-02T11:28:32+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Teleology is fake&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-04-02&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Tobi has written about &lt;a href="https://ramble.rixx.de/2020/03/30/on-origin-stories.html"&gt;origin stories&lt;/a&gt; and the importance of asking "What is this for?" instead of "Where does this come from?". He doesn't use the word teleology (the study of the purpose of things) but in the Adlerian psychology the post is based on that is what he's talking about.&lt;/p&gt;
-
-
-&lt;p&gt;I've previously talked about &lt;a href="https://notebook.drmaciver.com/posts/2020-02-20-09:31.html"&gt;the usefulness of teleology in understanding our emotional reactions&lt;/a&gt; and how understanding the purpose of an emotional reaction (its teleology) is important to adjusting it.&lt;/p&gt;
-
-
-&lt;p&gt;Both Tobi and my posts have the same aetiology (origin story), which is that we read The Courage to be Disliked (a &lt;a href="https://notebook.drmaciver.com/posts/2020-03-11-07:15.html"&gt;useful yet punchable book&lt;/a&gt;), which is in large part about using an understanding of teleology to change your social behaviours.&lt;/p&gt;
-
-
-&lt;p&gt;I do not want to minimize the importance of this approach, which is very powerful and important, but it does have a critical problem with it: Teleology is fake. &lt;a href="https://notebook.drmaciver.com/posts/2020-03-11-07:15.html"&gt;Things don't happen for reasons&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;Questions to ponder:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;Why is this fence here?&lt;/li&gt;
-&lt;li&gt;Why do giraffes have long necks?&lt;/li&gt;
-&lt;li&gt;Why am I taking singing classes?&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;The answer to all of these questions is: There isn't a good reason, but they're still important. Teleology is fake.&lt;/p&gt;
-
-
-&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/G._K._Chesterton#Chesterton's_fence"&gt;Chesterton's fence&lt;/a&gt; is the idea that if there is a fence in a field, you should not take it down unless you know the reason why it is there:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;In the matter of reforming things, as distinct from deforming them, there is one plain and simple principle; a principle which will probably be called a paradox. There exists in such a case a certain institution or law; let us say, for the sake of simplicity, a fence or gate erected across a road. The more modern type of reformer goes gaily up to it and says, 'I don't see the use of this; let us clear it away.' To which the more intelligent type of reformer will do well to answer: 'If you don't see the use of it, I certainly won't let you clear it away. Go away and think. Then, when you can come back and tell me that you do see the use of it, I may allow you to destroy it.'&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;But "Why is this fence here?" is a slippery question. Do we mean it as a question of aetiology or teleology? "What is the use of this fence?" is a very different question from "Who put this fence here and why?". You might answer the latter, find out that it is for reasons that no longer apply, and tear the fence down, and discover that the local ecology collapses because now grazing sheep can get somewhere they previously couldn't.&lt;/p&gt;
-
-
-&lt;p&gt;There's a quote that is &lt;a href="https://www.goodreads.com/quotes/7659686-tradition-is-a-set-of-solutions-for-which-we-have"&gt;apparently from a sci-fi novel I've never read&lt;/a&gt;, by Donald Kingsbury:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;“Tradition is a set of solutions for which we have forgotten the problems. Throw away the solution and you get the problem back. Sometimes the problem has mutated or disappeared. Often it is still there as strong as it ever was.”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;This, like Chesterton's fence, is an extremely conservative principle against reform that is also wildly optimistic about how easy reform is.&lt;/p&gt;
-
-
-&lt;p&gt;The problem is that tradition is not just a solution to problems we've forgotten, it's also a foundational layer on which we have built subsequent things. In the fence example, maybe the sheep came long after the fence, and were just never a problem before now. Changing the tradition invalidates foundational assumptions for many other things you were doing, possibly without even knowing they were there.&lt;/p&gt;
-
-
-&lt;p&gt;Now lets talk about giraffes. &lt;a href="https://notebook.drmaciver.com/posts/2020-03-31-09:52.html"&gt;Animals are a good model for social behaviour after all&lt;/a&gt;.
-Why do giraffes have long necks?&lt;/p&gt;
-
-
-&lt;p&gt;Well there are &lt;a href="https://en.wikipedia.org/wiki/Giraffe#Neck"&gt;a couple possible reasons&lt;/a&gt;:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;Access to high up leaves which lets them outcompete other grazers by having more food supply.&lt;/li&gt;
-&lt;li&gt;Sexual selection (male giraffes fight by beating each other using their necks. It's terrifying).&lt;/li&gt;
-&lt;li&gt;Being able to see predators from further away.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;All of these seem to be good hypotheses. Which one is the true reason?&lt;/p&gt;
-
-
-&lt;p&gt;Well... probably all of them. Evolution doesn't actually do things for reasons. Evolution just tries random nonsense, and sometimes the random nonsense proves useful in ways that gives a net advantage. If something is useful for multiple weak reasons, that's just as good as it being useful for a single strong reason (potentially even better! More robust, more directions to develop in). So the "reason" giraffes have long necks might just be "All of the above, plus some things we didn't think of, plus these add up to being worth the cost".&lt;/p&gt;
-
-
-&lt;p&gt;Evolution doesn't design things how a human designer sits down and design things (although in practice things created by humans are also designed in an evolutionary way, but the "mutation" process is a bit more directed) - it doesn't need simple legible reasons for what it does, it just &lt;a href="https://notebook.drmaciver.com/posts/2020-02-26-16:07.html"&gt;tries stuff&lt;/a&gt; and sees how it pans out.&lt;/p&gt;
-
-
-&lt;p&gt;(Even this is of course too much of an anthropomorphisation of evolution, but it's a useful one)&lt;/p&gt;
-
-
-&lt;p&gt;Moving away from complex messy evolved systems that make no sense to instead discussing the human mind and its decision making, which obviously makes complete sense, I'm going to be taking singing lessons once the pandemic has lifted and I can find a teacher.&lt;/p&gt;
-
-
-&lt;p&gt;Why? Well...&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;I'm not very good at breathing and want to get better at it.&lt;/li&gt;
-&lt;li&gt;I'm slightly embarrassed about how bad I am at singing.&lt;/li&gt;
-&lt;li&gt;I do a lot of public speaking and I'd like to be better at projecting as a result.&lt;/li&gt;
-&lt;li&gt;Better voice control seems an interesting skill.&lt;/li&gt;
-&lt;li&gt;It's a great embodiment practice.&lt;/li&gt;
-&lt;li&gt;It ties in well with Alexander Technique, which I'm learning.&lt;/li&gt;
-&lt;li&gt;It seems fun.&lt;/li&gt;
-&lt;li&gt;It would be a good self-confidence boost to be able to be good at singing.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;Those are the big ones, but there are more. But no single one of these is remotely close to enough to convince me to learn to sing. Any two or three wouldn't be. What's convinced me to learn to sing is that an accumulation of enough good, individually insufficient, reasons, has tipped it over to the point where the cost-benefit analysis is a clear net win.&lt;/p&gt;
-
-
-&lt;p&gt;This is how everything works. Teleology is a useful lens to look at problems through, and should not be discarded, but ultimately if we think things are happening for a simple, clear, and comprehensible purpose, and that if we change them then nothing will change except insofar as it is related to that purpose, we're going to be in for an unpleasant surprise.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-04-02-09:44.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-04-03-13:40.html</id>
     <title>Anxiety vs Worry</title>
@@ -774,7 +657,7 @@ thereby domesticating each other. Torque creates domestication.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-04-14-13:56.html</id>
     <title>Spock is a Lie</title>
-    <updated>2020-04-14T14:24:16+01:00</updated>
+    <updated>2020-04-14T14:25:06+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Spock is a Lie&lt;/p&gt;
@@ -833,5 +716,63 @@ The problem is that because we only experience Spock from the outside, we conclu
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-04-14-13:56.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-04-15-06:31.html</id>
+    <title>Capabilities can be coerced</title>
+    <updated>2020-04-15T06:31:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Capabilities can be coerced&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-04-15&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;If I can force you to take an action, that implies that you are able to take that action.
+The converse of this is that you are &lt;em&gt;not&lt;/em&gt; able to take that action, I cannot force you to do it.
+Thus, your inability gives you a certain power over me - you force me to plan in ways that compensate for this inability.&lt;/p&gt;
+
+
+&lt;p&gt;The classic example of this is how to win a game of Chicken (theoretically. I do not recommend you do this).
+Chicken is played as follows: Two people drive their cars directly at each other. The one who swerves, loses.&lt;/p&gt;
+
+
+&lt;p&gt;There is a simple winning move in Chicken: Visibly clamp your steering wheel, or otherwise remove your ability to swerve in a way that is visible to your opponent (the visibility part is &lt;em&gt;very&lt;/em&gt; important).
+Now your opponent knows that you not just won't swerve you &lt;em&gt;can't&lt;/em&gt; swerve, so they are forced to swerve instead.
+You win (unless your opponent has done the same thing at the same time of you, in which case you both lose very badly).&lt;/p&gt;
+
+
+&lt;p&gt;Thomas Schelling goes into this and similar things in great and illuminating detail in &lt;a href="https://amzn.to/3a7N3MM"&gt;The Strategy of Conflict&lt;/a&gt;, but this example has the core of it: When interacting with someone in a situation of conflict, the other party will choose their strategy based only on the moves that you can make, so removing the ability to make certain moves can cause them to choose strategies that are more advantageous to you.&lt;/p&gt;
+
+
+&lt;p&gt;Conflicts don't have to be quite as adversarial as the game of Chicken. Consider something like choosing a meal. Suppose you have a reasonably strong preference against eating meat. Chances are you're often going to be coerced (explicitly or implicitly) into eating meat a lot more often than you want. If, instead, you tell people that you're vegetarian and &lt;em&gt;don't&lt;/em&gt; eat meat, that coercion goes down significantly (not to zero, sadly, but you've got a stronger argument to make against them when they try).&lt;/p&gt;
+
+
+&lt;p&gt;This is also why today's favour is tomorrow's obligation: Once you have demonstrated the ability to perform the favour, now any future refusal to do it is evidence that you are choosing not to do it because it is known that you can do it, so the cost of refusal is now significantly higher.&lt;/p&gt;
+
+
+&lt;p&gt;This dynamic is, I think, at the core of a number of identities. As I've previously written, &lt;a href="https://www.drmaciver.com/2018/06/on-not-quite-fitting/"&gt;I'm something of a skeptic of the universality of "born this way"&lt;/a&gt; for sexualities (I'm agnostic as to whether some people's sexuality is biologically determined - it could well be the case, certainly, and I don't think it would be useful to argue with individuals' experiences of this, but at the very least I doubt it's the majority case).
+However, it's a very useful &lt;em&gt;political&lt;/em&gt; tool, because it allows you to credibly claim that people have to accept you as you are, because you do not have the option to be otherwise.&lt;/p&gt;
+
+
+&lt;p&gt;On what is, in some sense, the other side of the fence, I think this also explains many popular uses of evopsych (evolutionary psychology, that is to say explaining psychological features of behaviour by arguing that they were evolutionarily advantageous).&lt;/p&gt;
+
+
+&lt;p&gt;Evopsych has one really compelling "feature": It's so underdetermined and so hard to verify that you can use it to explain just about anything you want.
+That's not to say that evolution didn't influence our psychology. Of course it did. But the specific ways in which evolution influenced our psychology are &lt;em&gt;really&lt;/em&gt; hard to test for, and most evopsych arguments don't constitute anything remotely resembling a reasonable standard of evidence.&lt;/p&gt;
+
+
+&lt;p&gt;As a result if you are, say, a man who experiences a particular socially constructed version of masculinity that you're quite attached to and don't want to do the work of changing,
+evopsych is &lt;em&gt;really&lt;/em&gt; useful for you, because it lets you make the born this way argument - so sorry, can't possibly change this behaviour, it's just hardwired into us.&lt;/p&gt;
+
+
+&lt;p&gt;Fortunately, the internet seems to have iterated this observation to its logical conclusion, and we are now mostly credibly signalling that we are just unable to accept evopsych arguments.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-04-15-06:31.html" rel="alternate"/>
   </entry>
 </feed>
