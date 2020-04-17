@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-04-15T08:51:37+01:00</updated>
+  <updated>2020-04-17T10:16:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,63 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-04-03-13:40.html</id>
-    <title>Anxiety vs Worry</title>
-    <updated>2020-04-03T17:46:23+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Anxiety vs Worry&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-04-03&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Here is a distinction I've found useful recently: You are &lt;em&gt;anxious&lt;/em&gt; about something if the emotion attaches to the uncertainty in the situation, you are &lt;em&gt;worried&lt;/em&gt; about something if the emotion attaches to the possible outcomes.&lt;/p&gt;
-
-
-&lt;p&gt;NB that this doesn't &lt;em&gt;perfectly&lt;/em&gt; track colloquial usage, but I think it works pretty well with it.
-Also if you're not sure how to tell what the emotion attaches to, may I recommend &lt;a href="https://amzn.to/2UWXQDL"&gt;Focusing&lt;/a&gt;?&lt;/p&gt;
-
-
-&lt;p&gt;It's certainly possible to worry about things without being particularly anxious about them. Sensible precautions often work like this: e.g. I lock my door because I'm worried that if I don't people might otherwise come in and steal stuff, but there's no anxiety attached to that worry because it's just something I can act on to limit the chances.&lt;/p&gt;
-
-
-&lt;p&gt;You can be anxious without worry in situations when all of the potential outcomes are positive (it's also possible &lt;a href="https://en.wikipedia.org/wiki/Misattribution_of_arousal"&gt;to mistake excitement for anxiety&lt;/a&gt; in these scenarios, but the anxiety can be real too). If one possible outcome &lt;/p&gt;
-
-
-&lt;p&gt;Anxiety and worry are far from mutually exclusive, and indeed tend to go hand in hand, but it is worth &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-12:35.html"&gt;untangling&lt;/a&gt; the two conceptually,
-and even where both are present they are still different emotions.&lt;/p&gt;
-
-
-&lt;p&gt;For example, with COVID-19, I  am &lt;em&gt;worried&lt;/em&gt; about specific outcomes - harm to people in general, harm to people I love, overall negative societal effects, but am also also COVID-19 has more or less destroyed my ability to reason about the future, and that makes me &lt;em&gt;anxious&lt;/em&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;In the COVID-19 case the anxiety feels almost more like an &lt;a href="https://notebook.drmaciver.com/posts/2020-03-06-07:46.html"&gt;existential feeling&lt;/a&gt; - there's not a specific thing I'm anxious about so much as a general sense that the unknown unknowns are dwarfing the known unknowns, let alone the known knowns (the unknown knowns remain huge given how ideological responses are being). The thing that is making me anxious is the uncertainty itself, not the bad outcomes possible.&lt;/p&gt;
-
-
-&lt;p&gt;Reducing worry is often more tractable than reducing anxiety, because you can reduce worry by planning. If you have a scenario you're worried about, you can ensure that you're prepared for it (e.g. COVID-19 precautions, or talking through your concerns about a situation with the people involved before you get into it). I like Chris Hadfield's advice for dealing with worry, which is "Figure out the next thing that's going to kill you" - plan for the worst, and convince yourself you can handle it. Also often what you're worrying about is &lt;a href="https://notebook.drmaciver.com/posts/2020-03-03-09:07.html"&gt;outdated scenarios that no longer apply&lt;/a&gt;, so &lt;a href="https://notebook.drmaciver.com/posts/2020-02-20-09:31.html"&gt;learning to debug that can help with this&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;Anxiety can be resolved by reducing uncertainty by making the situation more deterministic, but often that's not a good idea! &lt;a href="https://notebook.drmaciver.com/posts/2020-02-25-10:39.html"&gt;A certain amount of nondeterminism is often very useful&lt;/a&gt;, and many of the ways to reduce uncertainty do this by increasing the chances of failure (e.g. procrastination until it's too late to do a good job).&lt;/p&gt;
-
-
-&lt;p&gt;There are a couple of things you can do:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Focus on any worries first, because often a lack of &lt;a href="https://notebook.drmaciver.com/posts/2020-03-18-11:24.html"&gt;safety&lt;/a&gt; is the thing that makes uncertainty uncomfortable. Uncertainty isn't intrinsically bad, because if you're always certain you'll never learn anything.&lt;/li&gt;
-&lt;li&gt;See if you can reframe any of the anxiety. For example, you can be uncertain about the outcome but certain of your ability to handle it. Can you focus on that? Are there good things about the uncertainty too? Can you appreciate those as excitement? (This one rarely to never works for me)&lt;/li&gt;
-&lt;li&gt;If you've managed to get your anxiety down to a low enough level, it can be worth practicing a certain amount of discomfort tolerance. Anxiety isn't intrinsically bad, it may be telling you useful information about the world, so the correct amount of anxiety may be non-zero, and it's important to acknowledge that and be prepared to sit with it.&lt;/li&gt;
-&lt;li&gt;If you've not managed to get your anxiety down to a low enough level, often me neither I'm afraid (I've got a lot better since I've acquired the "legacy code" tools). Consult someone with better advice than me and let me know what they said.&lt;/li&gt;
-&lt;/ol&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-04-03-13:40.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-04-06-15:20.html</id>
     <title>Being safe for others</title>
@@ -777,5 +720,77 @@ evopsych is &lt;em&gt;really&lt;/em&gt; useful for you, because it lets you make
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-04-15-06:31.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-04-17-10:16.html</id>
+    <title>Ubiquitous Incommensurability</title>
+    <updated>2020-04-17T10:16:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Ubiquitous Incommensurability&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-04-17&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;We were talking in &lt;a href="https://discord.gg/jm97tDN"&gt;bookchat&lt;/a&gt; about favourite books the other day, and how difficult some people find the problem of listing, say, your top ten favourite books.&lt;/p&gt;
+
+
+&lt;p&gt;I claim the reason that this question is hard is that it's actually impossible, and not in a good way, because even within a category such as books, many things are incommensurable - it doesn't really make sense to compare them in such a way as to say that one is definitively better than another.&lt;/p&gt;
+
+
+&lt;p&gt;In order to illustrate this, let me tell you about two of my favourite books. &lt;a href="https://amzn.to/2VdFtMd"&gt;Sorting Things Out: Classification and its Consequences&lt;/a&gt; and &lt;a href="https://amzn.to/2yiOQBs"&gt;A Civil Campaign&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Sorting Things Out is a nonfiction book about the way classification systems are developed and how this affects the people interacting with or being classified by them. A Civil Campaign is a book late in a space opera series that is mostly a romantic comedy about marriage and edible bug byproducts.&lt;/p&gt;
+
+
+&lt;p&gt;Both of these are favourite books of mine in the following senses:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;My life is significantly improved by having read them.&lt;/li&gt;
+&lt;li&gt;I would unambiguously recommend them to anyone who thought they sounded appealing.&lt;/li&gt;
+&lt;li&gt;There is no book I strictly prefer to them.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;Which of these books do I like better? I don't think the question makes sense.
+Each book serves a very different role for me, and those roles are not at all interchangeable.&lt;/p&gt;
+
+
+&lt;p&gt;There is an idea in economics of &lt;a href="https://en.wikipedia.org/wiki/Revealed_preference"&gt;revealed preferences&lt;/a&gt;, which suggests that preferences can be inferred from behaviour. &lt;a href="https://en.wikipedia.org/wiki/Von_Neumann%E2%80%93Morgenstern_utility_theorem"&gt;Von Neumann-Morgenstern Utility Theory&lt;/a&gt; uses a similar idea to attach a single scalar utility value to a set of things being chosen over. These may both be true in some sense, but a naive adoption of them hides something very important: How incredibly context sensitive choices between objects are.&lt;/p&gt;
+
+
+&lt;p&gt;You might imagine that you can find out which of these books I prefer by asking me to make decisions, but the problem is that which book I choose will be heavily influenced by how you ask the question.&lt;/p&gt;
+
+
+&lt;p&gt;Some possible variants:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;If I had to give away one of these books, which would I pick? A Civil Campaign, because Sorting Things Out costs more to replace. (Advantage: Sorting Things Out)&lt;/li&gt;
+&lt;li&gt;If I were given an extra copy of one of these books, which would I pick? A Civil Campaign again, because I know many more people who would enjoy it than the former and I'd gift that on. (Advantage: A Civil Campaign)&lt;/li&gt;
+&lt;li&gt;If I could only ever read one of these books again, which would I pick? Sorting Things Out, because I use and refer to its ideas much more often. (Advantage: Sorting Things Out)&lt;/li&gt;
+&lt;li&gt;If I were stuck on a desert island with one of these books, which would I pick? A Civil Campaign, because it's much more emotionally comforting to reread and I'm not likely to be up to much more than that on a desert island. (Advantage: A Civil Campaign)&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;One way to think of this is in terms of &lt;a href="https://en.wikipedia.org/wiki/Pareto_efficiency"&gt;pareto optimality&lt;/a&gt;: You can only count a book as better than another if it is better in all degrees. I think this is too strong - for example I'd consider either of these books better than, say, The Tao of Pooh, because I consider the latter to be a dreadful book that I would not recommend to anyone. Are there senses in which The Tao of Pooh is better than either of these books? Yeah, probably. It's more accessible than Sorting Things Out for example, but I would still say Sorting Things Out is the unambiguously better book.&lt;/p&gt;
+
+
+&lt;p&gt;Nevertheless, I think it is still true that many pairs of books are &lt;em&gt;incommensurable&lt;/em&gt; - you cannot readily say that one of these things is better than the other, because "better" is so context dependent. Further, nothing about this is book specific - the same is true for meals, films, people, and almost everything else. Context is important a driver of preference between objects as the objects themselves.&lt;/p&gt;
+
+
+&lt;p&gt;You can certainly demand that I reduce those contexts to probabilities, and make decisions about what I would prefer in each context to reveal my preferences, in order decide which one I strictly prefer by comparing the resulting subjective utilities.&lt;/p&gt;
+
+
+&lt;p&gt;To this demand, I offer the following rebuttal: Nope. Shan't.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-04-17-10:16.html" rel="alternate"/>
   </entry>
 </feed>
