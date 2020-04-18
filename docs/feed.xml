@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-04-18T11:10:00+01:00</updated>
+  <updated>2020-04-18T12:24:18+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -746,7 +746,7 @@ Each book serves a very different role for me, and those roles are not at all in
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-04-18-11:10.html</id>
     <title>Dust Motes and Electric Plugs</title>
-    <updated>2020-04-18T11:10:00+01:00</updated>
+    <updated>2020-04-18T12:24:18+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Dust Motes and Electric Plugs&lt;/p&gt;
@@ -794,7 +794,7 @@ Implicit in the trolley problem is that you &lt;em&gt;can't ask questions&lt;/em
 &lt;p&gt;There are plenty of less harmless ones.&lt;/p&gt;
 
 
-&lt;p&gt;Another annoying thought experiment is &lt;a href="https://www.lesswrong.com/posts/3wYTFWY3LKQCnAptN/torture-vs-dust-specks"&gt;torture vs dust specks&lt;/a&gt;, which asks whether it is better to torture someone horribly for 50 years or to give each of an inconceivably large (more than the number of atoms in the universe by some inconceviably large number of orders of magnitude). Yudkowsky thinks the answer is obvious, and so do I: The answer is that the question is bad, and he should feel bad for posing it.&lt;/p&gt;
+&lt;p&gt;Another annoying thought experiment is &lt;a href="https://www.lesswrong.com/posts/3wYTFWY3LKQCnAptN/torture-vs-dust-specks"&gt;torture vs dust specks&lt;/a&gt;, which asks whether it is better to torture someone horribly for 50 years or to give each of an inconceivably large (more than the number of atoms in the universe by some inconceviably large number of orders of magnitude) a speck of dust in their eye. Yudkowsky thinks the answer is obvious, and so do I: The answer is that the question is bad, and he should feel bad for posing it.&lt;/p&gt;
 
 
 &lt;p&gt;That being said, I reluctantly agree with what I presume is his position, that the torture is probably the preferable option, and we can see this with a (somewhat) less ridiculous variant: Would you rather one random person on earth have their eye painfully removed, or every single person on earth have a slightly annoying dust speck in their eye?&lt;/p&gt;
