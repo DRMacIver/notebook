@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-04-18T12:24:18+01:00</updated>
+  <updated>2020-04-19T10:52:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,154 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-04-07-10:05.html</id>
-    <title>What's cooking?</title>
-    <updated>2020-04-07T11:17:06+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;What's cooking?&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-04-07&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;h3&gt;A Recipe&lt;/h3&gt;
-
-
-&lt;p&gt;Let's start with a recipe, because everybody hates it when food blogs start with a long preamble before you finally get to the recipe:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;Raw cashew pieces&lt;/li&gt;
-&lt;li&gt;Three apples (one granny smith, two... IDK something red?)&lt;/li&gt;
-&lt;li&gt;Raisins&lt;/li&gt;
-&lt;li&gt;Oil&lt;/li&gt;
-&lt;li&gt;Salt&lt;/li&gt;
-&lt;li&gt;Allspice&lt;/li&gt;
-&lt;li&gt;Honey&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;Quantities left to your own judgement, but roughly I had about a 3 : 3 : 1 ratio of apples, cashews, raisins.&lt;/p&gt;
-
-
-&lt;p&gt;Making this:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Coat the cashews in just enough oil to lubricate them (don't use too much! They'll get super oily if you do), add salt to taste, mix thoroughly, and bake at 180C for 15 minutes.&lt;/li&gt;
-&lt;li&gt;Meanwhile, chop the apples as finely as you can be bothered. Toss them with "an amount" of allspice (honestly I would have used cinammon but I could &lt;em&gt;find&lt;/em&gt; the allspice)&lt;/li&gt;
-&lt;li&gt;Take the cashews out of the oven, add the raisins and apple to them, mix thoroughly with a suitable amount of honey.&lt;/li&gt;
-&lt;li&gt;Raise the oven to 210C and bake for another half hour (then turn the oven off and leave it while you finish making the rest of dinner, in my case a chicken, vegetable, and lentil, soup)&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;You may notice a couple of key features of this recipe:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;It's a little weird&lt;/li&gt;
-&lt;li&gt;The instructions are completely half-arsed&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;It is, fortunately, delicious, but it will probably be tinkered with endlessly if I make it again, and I doubt I'll ever formalise it with anything so gauche as &lt;em&gt;quantities&lt;/em&gt;.&lt;/p&gt;
-
-
-&lt;h3&gt;A Story&lt;/h3&gt;
-
-
-&lt;p&gt;As this is apparently now a food blog, it's time for a deeply personal anecdote about my relationship with this food.
-It's a story in two tragedies, first &lt;a href="https://amzn.to/2xXqsF2"&gt;one sort of plague&lt;/a&gt; and then another (and after all, &lt;a href="http://clarkesworldmagazine.com/kritzer_11_15/"&gt;food blogging during a plague is a fine tradition&lt;/a&gt;).&lt;/p&gt;
-
-
-&lt;p&gt;Why did I make this recipe? Well, because I had far too many of the ingredients. This is something I tend to call "forced abundance": When you have too much of a good thing and have to reorient your plans around making use of that.&lt;/p&gt;
-
-
-&lt;p&gt;First, we had Brexit. We still have Brexit, and we're probably going to massively self-own at a crucial pandemic-handling moment as a result of it, but last year I argued (And I still believe my argument was correct) that &lt;a href="https://www.drmaciver.com/2019/02/you-should-be-stockpiling-food-for-brexit/"&gt;you should be stockpiling food for the event of a no deal Brexit&lt;/a&gt;. Either the food would be neutral to mildly positive to have or the food would be essential to have, and the probabilities of the latter were low but far enough from zero to be worth planning around.&lt;/p&gt;
-
-
-&lt;p&gt;As it turns out, I underestimated how positive this could be, because now that we're trapped in lockdown due to COVID-19 it's really useful to have a giant larder of food supplies. As I put it, annoyingly presciently, in that post:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Another scenario is to consider is that if things get unpleasant, we’ll have a situation reminscient of the London riots – it’s not that you can’t leave the house, you’d just maybe... rather not.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;Unfortunately my prepping supplies were less sensible than my argument, and one of the things I didn't realise is how short the shelf life on some items were. In particular the cashew nuts and the raisins mentioned above are about 6 months out of date. They're mostly fine still - the cashews are a little stale, but fine as long as they're cooked. The raisins are very dry but perfectly edible. No sense at all in throwing them away, but better to use them up.&lt;/p&gt;
-
-
-&lt;p&gt;Also, it turns out that 2.5kg of cashews and 5kg of raisins are really quite a lot of cashews and raisins.&lt;/p&gt;
-
-
-&lt;p&gt;On top of this I placed an order for a fruit and veg box from &lt;a href="https://allgreens.co.uk/"&gt;allgreens&lt;/a&gt;. Allgreens allow no customisation of their boxes, and as a result I had a great deal of apples.&lt;/p&gt;
-
-
-&lt;p&gt;How do I like them apples? Cooked. For some reason I'm just really not very into raw apples. Not sure why.&lt;/p&gt;
-
-
-&lt;p&gt;So, long story short, I had a great many apples, cashews, and raisins to use up, and I was pretty sure that was a flavour combination that would work well, and after some cursory googling confirmed that I probably wasn't completely off base, and the above is what I came up with. It is indeed a flavour combination that works well.&lt;/p&gt;
-
-
-&lt;h3&gt;An Observation&lt;/h3&gt;
-
-
-&lt;p&gt;One of the interesting things about forced abundance is how rarely it happens in modern life.&lt;/p&gt;
-
-
-&lt;p&gt;My parents have a garden, so I'm used to it. During the appropriate seasons you discover that there is, for example, such a thing as too many delicious, fresh, raspberries, and that it is perfectly feasible to fill yourself up on artichokes.
-The degree and specifics of this vary from year to year, but the feeling of sometimes having too much is a thing that everyone with a garden is used to.&lt;/p&gt;
-
-
-&lt;p&gt;Supermarkets don't do that to you. The only time I've ever had anything resembling forced abundance from a supermarket was the year where a Sainsbury's misjudged how many blueberries people wanted for Christmas and so on the 27th we discovered that there were a very large number of blueberries a day or two before their use by date available for about 20p per punnet. We bought a lot of them.&lt;/p&gt;
-
-
-&lt;p&gt;Another relatively common experience of forced abundance is leftovers - when you've made a really large quantity of something and then end up having to eat it up for a week. Especially common after Christmas or Thanksgiving if you've roasted an entire turkey for fewer people than an entire turkey is needed for (Solution: Have a better bird for your holiday meals. Turkey is fine I guess but mostly very boring).&lt;/p&gt;
-
-
-&lt;p&gt;As I discovered this week, vegetable boxes are another one. I used to have an Abel and Cole subscription and the "Oh gods what do I do with all these vegetables?" struggle was significant. Even with the allgreens boxes being purchased on demand I expect I'll still have this, because the thing about boxes is that they bundle everything together. Being out of bananas and fixing that suddenly mean that you've got a lot of tomatoes to use up too.&lt;/p&gt;
-
-
-&lt;p&gt;Generically, two main things that can create forced abundance:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Things coming in at a greater rate than you can use or store them.&lt;/li&gt;
-&lt;li&gt;Things that you already have stored that are about to go off.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;The apples are an example of (1), the cashews and raisins of (2).&lt;/p&gt;
-
-
-&lt;p&gt;The reason these things don't happen with supermarkets is basically supply and demand. If a supermarket needs to get rid of something, they lower the price on it (either on individual items through reductions or sales, or more globally for in season produce and the like) until it clears. If &lt;em&gt;nothing&lt;/em&gt; will move a product then they throw it away, which is essentially a limited version of &lt;a href="https://edition.cnn.com/2020/04/01/business/oil-prices-crash-storage-space/index.html"&gt;the price going negative&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;Supply and demand and market pricing is very good at distributing abundance (it's not necessarily good at distributing it &lt;em&gt;fairly&lt;/em&gt; mind you, that may require other mechanisms), and through supermarkets we are all the beneficiaries of that.&lt;/p&gt;
-
-
-&lt;p&gt;However, as an individual who is not set up to sell things, we can't do this. Theoretically my parents could sell the output of their garden (and they now have an informal deal where they dump excess on a local cafe in exchange for favours in kind), but because they are not set up for selling things already it's vastly more effort than it's worth. Some years my mother tries to sell her pumpkins and even that is just not worth the trouble.&lt;/p&gt;
-
-
-&lt;p&gt;For most people, in normal times, our food supply comes from supermarkets on a fairly as needed basis this limitation doesn't really come up, because we're operating on a pull-based rather than push-based model: We decide what we need to make, informed by availability and price certainly, and acquire what we need to make it. Any surplus on the supply end is not our problem.&lt;/p&gt;
-
-
-&lt;p&gt;This creates what is, historically, a somewhat anomalous relationship to food: We treat ingredients as something we have free choice over rather than the starting point. Cooking is a process of creating meals, not a process of turning raw ingredients into meals.&lt;/p&gt;
-
-
-&lt;p&gt;This is a subtle but important difference that you can see even during normalcy. There are, roughly, two types of cook:Those who decide what they're going to make before they go to the supermarket, and those who use the supermarket to find out what they're going to make (this is, of course, actually a spectrum rather than a binary). I'm very much in the latter camp, and I feel like we're having a much better time of cooking in quarantine.&lt;/p&gt;
-
-
-&lt;p&gt;There's nothing wrong with recipes of course, and in many ways pull-based cooking is excellent. I'd be hard pressed to argue that forced abundance is a &lt;em&gt;good&lt;/em&gt; thing - it's quite annoying in some ways, and it's tellingly not something that people opt into unless created by circumstances - but it's certainly an interesting thing, serving as the culinary equivalent of a writing prompt, and it forces you in creative directions that you otherwise wouldn't have taken.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-04-07-10:05.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-04-08-16:12.html</id>
     <title>The rule of three twos</title>
@@ -746,7 +598,7 @@ Each book serves a very different role for me, and those roles are not at all in
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-04-18-11:10.html</id>
     <title>Dust Motes and Electric Plugs</title>
-    <updated>2020-04-18T12:24:18+01:00</updated>
+    <updated>2020-04-18T12:44:46+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Dust Motes and Electric Plugs&lt;/p&gt;
@@ -845,5 +697,118 @@ So, here we are presented with a policy trade off between injured feet and elect
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-04-18-11:10.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-04-19-10:52.html</id>
+    <title>Notes on becoming a cis man</title>
+    <updated>2020-04-19T10:52:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Notes on becoming a cis man&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-04-19&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Please note: I ask for clemency and/or good faith reading of this post. This is stuff that is difficult to talk about without stepping on someone's toes.&lt;/p&gt;
+
+
+&lt;p&gt;Required prior reading:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://twitter.com/alexwlchan/status/1251790486341390338"&gt;Lexie's thread about why cis people should be allowed to think about gender too&lt;/a&gt; (to be possibly replaced with a link to a blog post later if they write one)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.drmaciver.com/2019/05/the-inner-sense-of-gender/"&gt;The Inner Sense of Gender&lt;/a&gt; (this was in fact written based on a conversation with Lexie)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.drmaciver.com/2018/06/on-not-quite-fitting/"&gt;On Not Quite Fitting&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;In particular this tweet from Lexie's thread is relevant:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;And I have cis friends who have done introspection of their gender, and are now more sure that they’re cis – but talking about it gets shouted down as “you’re trans but you haven’t realised yet”.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;I'm one of those cis friends, and I thought it might be useful to talk about this process given that it's not one that gets talked about much.&lt;/p&gt;
+
+
+&lt;p&gt;First off, some politics: My basic stance on transition is that if you want to do it, go for it, you're entitled to. There may be some sort of intrinsic transness vs cisness, I don't know, but I don't think it matters for the purposes of who gets to count as eligible to transition. Bodily autonomy is important, gender is a thing that it is good for people to experiment with if they want to, and people should be trusted to make their own decisions in this space.&lt;/p&gt;
+
+
+&lt;p&gt;&lt;em&gt;In particular&lt;/em&gt; while I would never suggest this about anyone in particular (and indeed don't have anyone in particular I even suspect of this) I'm morally certain that there are people out there who are at about the same point on the cis/trans spectrum as I am and have decided to transition. That's cool by me. It would both be inappropriate of me to police that, and also I wouldn't want to police that. It's just a thing that they're entitled to do.&lt;/p&gt;
+
+
+&lt;p&gt;I personally decided that transition wasn't the most useful route for me to go down and took an alternative path, but there's no reason other people should make the same decisions as me even presented with broadly the same experience of gender as I have.&lt;/p&gt;
+
+
+&lt;p&gt;Another political-ish note: I'm going to be disagreeing with a lot of things trans people say in this post. This can be dicey, but I feel reasonably confident in doing so because what I'm going to be disagreeing with his how they interpret &lt;em&gt;my&lt;/em&gt; lived experience, not how they interpret theirs.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, on to the main point of this post...&lt;/p&gt;
+
+
+&lt;p&gt;When I wrote "the inner sense of gender" I described myself as "almost certain that I am cis". This fluctuated a bit (both up and down) in the interim, and various people predicted that I would in the end decide I was trans, but I have largely largely settled on certainty that I am cis, at least to the degree that I think the question still makes sense.&lt;/p&gt;
+
+
+&lt;p&gt;One of the reasons I'm not sure it makes sense is that I'm increasingly unconvinced that gender is really a thing.
+Many things are &lt;a href="https://www.drmaciver.com/2019/09/gendering/"&gt;gendered&lt;/a&gt;, and that the orientation of gendering is kinda defined by the statistical differences between some sort of "archetypal cis" men and women, but that doesn't neatly fall into saying that there is any one thing that we might call gender. Gender isn't a linear progression from man to woman, it's more like a big ball of biopsychosocial... stuff. This is a lot of why my politics of transition are basically "bodily autonomy, end of story" (the other part is that gatekeeping is not a thing that has historically covered itself in glory in this space).&lt;/p&gt;
+
+
+&lt;p&gt;But, to be concrete: My pronouns will remain he/him, I'm unlikely to engage in any meaningful gender defiance regarding my aesthetic, and it's basically certain that I will never attempt any sort of medical transition (I'll confess to a certain amount of curiousity about the effects of hormones, but it really is just curiousity). To a very large degree I will continue to play the social role of man, and I will become increasingly comfortable with that (and also comfortable with ditching the bits of masculinity that I think are bullshit).&lt;/p&gt;
+
+
+&lt;p&gt;I still think if we had magic Culture level body changing tech I would experiment with other gender presentations, and I still think there's a decent chance that I might end up choosing a feminine or androgynous presentation as my default given that option, but I'd also like to be able to fly and the level of emotional significance these two facts hold is broadly equivalent.&lt;/p&gt;
+
+
+&lt;p&gt;What's changed?&lt;/p&gt;
+
+
+&lt;p&gt;Well, Lexie has been writing about &lt;a href="https://alexwlchan.net/2020/04/adventures-in-embodiment/"&gt;embodiment&lt;/a&gt; recently. I've been part of some of the conversations that prompted that, and have been working on it myself too. I've, sadly, not achieved the same level of euphoria, but I don't think this is a gender thing I just think euphoria is hard emotion for me to access (I'm working on it). I've specifically been working on it in the context of Focusing and &lt;a href="https://notebook.drmaciver.com/posts/2020-02-20-09:31.html"&gt;my work on feelings&lt;/a&gt;, which has been extraordinarily helpful. I've also been working on it in the context of Alexander Technique and some of what I've been learning from that in the context of &lt;a href="https://notebook.drmaciver.com/posts/2020-03-21-12:35.html"&gt;letting my body drive&lt;/a&gt; (one of the minor personal annoyances of the pandemic is that it's interrupted my study of this).&lt;/p&gt;
+
+
+&lt;p&gt;One side effect of this is that it has resulted in a great deal more comfort in my body, and reduced my dissociation from it. A lot of things that previously looked kinda like gender dysphoria turned out to be fantasies of "If only my body were completely different I'd be able to connect to it", but it turns out to be perfectly possible for me to connect to my body as it is, and to enjoy my experience of it, it's just quite hard work to acquire the skillset. well maybe it would be easier (certainly it's a common reaction to going on estrogen, but I suspect that some of that is genuinely just that estrogen makes it easier to connect to your embodied emotional state).&lt;/p&gt;
+
+
+&lt;p&gt;This also ties in to a lot of trauma. A thing that I saw on Twitter the other day (I don't want to refind the tweet because it's a general theme and I don't want to pick on her in particular) was a trans woman saying that one of the reasons why she knew she was trans was that "cis men don't typically experience their masculinity as traumatic" and... I'm sorry to report that this is not true. I'm not going to say that we experience exactly the same sort of traumas from it as trans women do (I'd be very surprised if we do, but I'd also be very surprised if there weren't some large overlap). Some of this is that &lt;a href="https://www.drmaciver.com/2019/08/jiminy-cricket-must-die/"&gt;norm acquisition in general is traumatic&lt;/a&gt;, some of that is that many of our norms around masculinity are really quite bad.
+Going through masculinity training just &lt;em&gt;is&lt;/em&gt; traumatic. I expect the same is true for going through femininity training, though the traumas are different.&lt;/p&gt;
+
+
+&lt;p&gt;Some of my specific traumas around this are that many masculine norms are very violent, both literally and figuratively, and are quite damaging to be coerced into. Current western masculine norms are also very homophobic. This is both a problem if you're not actually straight (which I'm not), and if you just happen to have some more feminine traits (I perform masculinity reasonably well in some ways and quite badly in others - for example I'm much more into talking about feelings than I think even the average woman, let alone the average man).&lt;/p&gt;
+
+
+&lt;p&gt;In general, gender non-comformance is punished (both by people of the same gender and the opposite), and almost nobody is perfectly gender conformant, so most people will have gender related traumas. Unpacking some of mine was essential for acquiring a healthier relationship with masculinity (and part of that healthier relationship is boundaries! I'm now much happier saying "No, fuck off, that's a stupid way to be a man. Shan't." to the worse bits).&lt;/p&gt;
+
+
+&lt;p&gt;The final aspect for me has been sex. I've been having a lot of it over the last year or two, and it's been very helpful. I don't plan to go into details here, but I'll note a couple significant features.&lt;/p&gt;
+
+
+&lt;p&gt;First off, lets talk about autogynephilia. I basically agree with Scott Alexander on this: &lt;a href="https://slatestarcodex.com/2020/02/10/autogenderphilia-is-common-and-not-especially-related-to-transgender/"&gt;Autogenderphilia is common and not especially related to transgender&lt;/a&gt;. I've had more than a few fantasies about myself as a woman. I've had more than a few fantasies about myself as a man. I am reasonably gender flexible in fantasy. It's fun and I don't intend to stop. &lt;a href="https://notebook.drmaciver.com/posts/2020-03-27-08:18.html"&gt;Gender is sexy&lt;/a&gt; and fantasies are supposed to be sexy.&lt;/p&gt;
+
+
+&lt;p&gt;If you don't realise that this is a thing, it can be very confusing, and the way that literally everybody talks about it (from "autogynephilia isn't real" to "autogynephilia is the main reason people are trans". Both seem to be obviously false) is extraordinarily unhelpful for making sense of a perfectly healthy and common experience.
+People do a lot of things in fantasies that they don't especially want to do in real life, and turning this into a whole big thing is a great way to confuse people.&lt;/p&gt;
+
+
+&lt;p&gt;Secondly, a lot of gender related traumas are connected to sex. I don't want to go into details here, but they definitely were for me (it's less dramatic than you might be imagining from that). There is a lot of shame connected up with masculinity and desire, and acquiring a whole bunch of emotions skills while also having a whole bunch of sex was a great way to expose, confront, and defuse those.&lt;/p&gt;
+
+
+&lt;p&gt;Thirdly, for me at least having a penis is fairly central to my experience of masculinity (I'm aware that this is complex for many trans people, so treat this as a personal claim, but I expect it's a personal claim a lot of cis men would make), so uh getting comfortable with using it was a pretty good way of getting comfortable with masculinity.&lt;/p&gt;
+
+
+&lt;p&gt;Finally, sex ties in a lot to embodiment. In many ways the key to good sex is to embody well during it, so sex works very well for providing the &lt;a href="https://notebook.drmaciver.com/posts/2020-03-30-23:12.html"&gt;desire&lt;/a&gt; for growth in this space (of course, finding people you feel &lt;a href="https://notebook.drmaciver.com/posts/2020-03-18-11:24.html"&gt;safe&lt;/a&gt; with is equally important here).&lt;/p&gt;
+
+
+&lt;p&gt;None of this has added up to me suddenly being completely clear or comfortable with my own gender or body, but I'm vastly more so than I've historically been, and I've acquired the skill set and the understanding that allows me to continually improve on that over time.&lt;/p&gt;
+
+
+&lt;p&gt;So, at this point, I am reasonably comfortable in saying that yes I've thought about my gender a lot and I have concluded that I am a cis man, and that I am confident that the more work I do in this space the more thoroughly I will come to understand and embody that.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-04-19-10:52.html" rel="alternate"/>
   </entry>
 </feed>
