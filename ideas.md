@@ -99,3 +99,6 @@
 * [ ] Optimisation as fragility
 * [ ] Codes of Conduct as Normed Spaces
 * [ ] Chaos Monkey all the things
+* [ ] Traits that exist only through correlations
+* [ ] The brake/accelerator model of motivation
+* [ ] Setting low bars for successful habits.
