@@ -102,3 +102,4 @@
 * [ ] Traits that exist only through correlations
 * [ ] The brake/accelerator model of motivation
 * [ ] Setting low bars for successful habits.
+* [ ] Asking for things is good
