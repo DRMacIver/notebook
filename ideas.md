@@ -36,6 +36,8 @@
 * [x] Ideological foundations as sets of problems you care about
 * [x] Anxiety vs worry
 * [x] Offering the gift of safe reactions
+* [x] Policy as non-aggregate of individual ethical decisions
+* [x] Intuition as guiding heuristic in reasoning processes
 * [ ] Separating problems from solutions
 * [ ] Separating emotional responses from the need to act
 * [ ] Eye pressure and switching contexts as an enabling technology
@@ -62,8 +64,6 @@
 * [ ] Fixing anxiety
 * [ ] You can't turn off skills and it's annoying
 * [ ] Notes on attraction and sexuality
-* [ ] Policy as non-aggregate of individual ethical decisions
-* [ ] Intuition as guiding heuristic in reasoning processes
 * [ ] Transactive memory and loss
 * [ ] The market for lemons is everywhere
 * [ ] Developing the mind as a platform for thought
@@ -96,3 +96,6 @@
 * [ ] Nice isn't kind
 * [ ] The friendship problem
 * [ ] When is it a good idea to write something? (Always)
+* [ ] Optimisation as fragility
+* [ ] Codes of Conduct as Normed Spaces
+* [ ] Chaos Monkey all the things
