@@ -38,6 +38,7 @@
 * [x] Offering the gift of safe reactions
 * [x] Policy as non-aggregate of individual ethical decisions
 * [x] Intuition as guiding heuristic in reasoning processes
+* [x] Signalling impossibility to avoid coercion
 * [ ] Separating problems from solutions
 * [ ] Separating emotional responses from the need to act
 * [ ] Eye pressure and switching contexts as an enabling technology
@@ -67,7 +68,6 @@
 * [ ] Transactive memory and loss
 * [ ] The market for lemons is everywhere
 * [ ] Developing the mind as a platform for thought
-* [ ] Signalling impossibility to avoid coercion
 * [ ] Polarizing as a general practice
 * [ ] Helping others level up
 * [ ] How to communicate about problems
