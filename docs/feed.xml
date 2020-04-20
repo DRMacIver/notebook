@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-04-19T14:09:26+01:00</updated>
+  <updated>2020-04-20T10:52:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,54 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-04-08-16:12.html</id>
-    <title>The rule of three twos</title>
-    <updated>2020-04-08T16:25:23+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;The rule of three twos&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-04-08&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;&lt;a href="https://notebook.drmaciver.com/posts/2020-04-07-10:05.html"&gt;In the last post I wrote about improvised cooking&lt;/a&gt;.
-Some people find this much easier than others.
-Here I thought I'd share a quick tip that usually makes it quite easy:
-the rule of three twos.&lt;/p&gt;
-
-
-&lt;p&gt;The rule is very simple: If you have three flavours, each pair of which works together, then the combination of the three can probably be made to work well and be interesting.&lt;/p&gt;
-
-
-&lt;p&gt;This works well for both food and drinks, and is often the basis for a good cocktail.&lt;/p&gt;
-
-
-&lt;p&gt;This was the basis of the recipe I made the other day, because cashews/apples/raisins was reasonably certain to work (I wasn't sure about cashews and apples, but cashews are such an innocuous flavour it seemed unlikely they wouldn't).&lt;/p&gt;
-
-
-&lt;p&gt;This is essentially the practical implication of the &lt;a href="https://www.georgehart.com/triad.html"&gt;incompatible food triad problem&lt;/a&gt;: Even if such a triad exists, it's really hard to find it, so most things will work.&lt;/p&gt;
-
-
-&lt;p&gt;Of course, you can't just mix the three things together any which way and expect it to be great, but the rule gives you a good foundation because it lets you start from something that you can be pretty sure will work.
-This restricts the problem of making it great to:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Figuring out the right proportions, especially which flavour you want to dominate (e.g. the fact that that recipe had much fewer raisins than the other ingredients, or figuring out the right quantity of spirit in a cocktail)&lt;/li&gt;
-&lt;li&gt;Figuring out supporting flavours that you can use to accent or bridge the base three (e.g. salt and allspice in the above, bitters to add to a cocktail)&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;Not every good meal can be produced this way of course, but that's not the point. The rule lets you produce something reliably good without worrying too much about it, which is often a useful &lt;a href="https://notebook.drmaciver.com/posts/2020-03-05-11:27.html"&gt;existence proof&lt;/a&gt; to have when doing improvised cooking, and gives you safe fallbacks if you don't feel like doing anything fancy.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-04-08-16:12.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-04-10-10:53.html</id>
     <title>Maybe everyone was right all along</title>
@@ -701,7 +653,7 @@ So, here we are presented with a policy trade off between injured feet and elect
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-04-19-10:52.html</id>
     <title>Notes on becoming a cis man</title>
-    <updated>2020-04-19T14:09:26+01:00</updated>
+    <updated>2020-04-19T17:20:57+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Notes on becoming a cis man&lt;/p&gt;
@@ -810,5 +762,57 @@ People do a lot of things in fantasies that they don't especially want to do in 
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-04-19-10:52.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-04-20-10:52.html</id>
+    <title>The Accelerator/Brake Model</title>
+    <updated>2020-04-20T10:52:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;The Accelerator/Brake Model&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-04-20&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I recently read &lt;a href="https://amzn.to/2VOS9IK"&gt;Come As You Are&lt;/a&gt;, a book about sexuality (primarily women's sexuality, but it mostly works for everyone).&lt;/p&gt;
+
+
+&lt;p&gt;It is by far the most &lt;a href="https://notebook.drmaciver.com/posts/2020-03-11-07:15.html"&gt;annoying&lt;/a&gt; book that I will nevertheless recommend. It was about 50% stuff I already knew (which I only skimmed but seemed pretty good), but the other 50% contained a lot of useful ideas that helped make sense of some things I only partially knew. It was also 100% annoying and I hated the author's writing style. I will grant I am not in the target audience for it (it is primarily written for women), but the friend who recommended it was a woman and she also hates the writing style so I don't think that's why, I just think it's objectively very annoying (especially if you're not from the USA).
+Nevertheless, it was on balance very worth reading.&lt;/p&gt;
+
+
+&lt;p&gt;One thing that was particularly helpful was the brake/accelerator model for sexual arousal. &lt;/p&gt;
+
+
+&lt;p&gt;The model is very simple: There are two systems, the Sexual Excitation System (SES), the accelerator, and the Sexual Inhibition System (SIS), the brake.
+The SES is what turns you on, the SIS is what turns you off.&lt;/p&gt;
+
+
+&lt;p&gt;If you're currently not interested in sex and you'd like to be, you need to understand which of these is at play:
+It might be that your accelerator isn't being pushed by the current sexual context, or it might be that something is pressing hard on your brake.&lt;/p&gt;
+
+
+&lt;p&gt;Different people have different levels of sensitivity on each of the brake and accelerator. On average women have much more sensitive brakes (i.e. are much easier to turn off) and men have much more sensitive accelerators (i.e. are much more easy to turn on), but there's a lot of individual variation.&lt;/p&gt;
+
+
+&lt;p&gt;One of the least helpful things you can do is make a mistake about which system is in play. It doesn't help to try to turn someone on if their foot is slammed hard on the brake, and it doesn't help to try to make someone comfortable and at ease if they're already fine and the problem is just that the context isn't at all arousing.&lt;/p&gt;
+
+
+&lt;p&gt;The former is particularly bad, because pressure is one of the things most likely to activate someone's brakes, because it creates negative emotional association with the whole experience. It's also particularly common, because people (especially people who have relatively insensitive brakes, like most guys) often don't realise that the brake is a potential problem at all.&lt;/p&gt;
+
+
+&lt;p&gt;Since reading about the brake/accelerator model I've been seeing it everywhere. I think a lot of motivation is like this, where there are things that we really want to do (the accelerator is on hard) but also procrastinate hard because there's a huge ugh field around the thing and we find it massively hard (so are the brakes) and we just end up with the gearbox in our head grinding.
+In the same way as with sex, trying to want to do the thing even more isn't going to help, and treating it as an issue of motivation will just cause one to build up even more guilt and shame around the subject, making it even more aversive.&lt;/p&gt;
+
+
+&lt;p&gt;This likely also ties in to the &lt;a href="https://notebook.drmaciver.com/posts/2020-03-30-23:12.html"&gt;desire&lt;/a&gt; and &lt;a href="https://notebook.drmaciver.com/posts/2020-03-18-11:24.html"&gt;safety&lt;/a&gt; model of growth, where desire acts as the accelerator and a lack of safety acts as the brake (and indeed a lack of safety is often a major brake activator in a sexual context).
+Given &lt;a href="https://notebook.drmaciver.com/posts/2020-04-19-10:52.html"&gt;the context&lt;/a&gt; in which I've been thinking about a lot of the personal growth work, it's probably not entirely a coincidence that these track.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-04-20-10:52.html" rel="alternate"/>
   </entry>
 </feed>
