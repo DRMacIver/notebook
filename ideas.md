@@ -103,3 +103,4 @@
 * [ ] The brake/accelerator model of motivation
 * [ ] Setting low bars for successful habits.
 * [ ] Asking for things is good
+* [ ] Physical books are good
