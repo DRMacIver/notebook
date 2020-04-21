@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-04-21T08:39:42+01:00</updated>
+  <updated>2020-04-21T08:40:48+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -738,7 +738,7 @@ Given &lt;a href="https://notebook.drmaciver.com/posts/2020-04-19-10:52.html"&gt
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-04-21-08:02.html</id>
     <title>Does a fish have a face?</title>
-    <updated>2020-04-21T08:39:42+01:00</updated>
+    <updated>2020-04-21T08:40:48+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Does a fish have a face?&lt;/p&gt;
@@ -758,10 +758,13 @@ Given &lt;a href="https://notebook.drmaciver.com/posts/2020-04-19-10:52.html"&gt
 
 &lt;ol&gt;
 &lt;li&gt;I pick a book of my choosing.&lt;/li&gt;
-&lt;li&gt;I generate a page number uniformly at random (using Python) from the main book contents.&lt;/li&gt;
+&lt;li&gt;I generate a page number uniformly at random from the main book contents.&lt;/li&gt;
 &lt;li&gt;I pick an interesting passage and copy it out here.&lt;/li&gt;
 &lt;li&gt;I then write something inspired by it.&lt;/li&gt;
 &lt;/ol&gt;
+
+
+&lt;p&gt;If this takes off I'll probably build some tooling into the notebook for getting me to do this properly but for now I'm mostly hand cranking it.&lt;/p&gt;
 
 
 &lt;p&gt;This is partly inspired by having recently-ish been listening to &lt;a href="https://www.harrypottersacredtext.com/"&gt;Harry Potter and the Sacred Text&lt;/a&gt;. I'm deeply indifferent to Harry Potter but have been enjoying their sacred text reading techniques. This process in particular is very loosely inspired by their (in turn somewhat loosely interpreted) practice of &lt;a href="https://en.wikipedia.org/wiki/Lectio_Divina"&gt;Lectio Divina&lt;/a&gt;&lt;/p&gt;
