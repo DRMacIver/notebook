@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+DRMacIver's Notebook: Proportionality and identity
+    </title>
+    <link rel="stylesheet" href="/pygments.css"/>
+    <link rel="stylesheet" href="/tufte.css"/>
+    <link rel="stylesheet" href="/latex.css"/>
+    <link rel="stylesheet" href="/drmnotes.css"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
+});
+
+MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
+  console.log(message)
+});
+
+</script>
+
+  </head>
+
+  <body>
+    <article>
+        <h1><a href="/">DRMacIver's Notebook</a></h1>
+        <p class=subtitle>Proportionality and identity</p>
+
+        
+
+<section id="the-post">
+<p class=subtitle>Proportionality and identity</p>
+<dl class=metadata>
+<dt>Published</dt>
+<dd class="post-date">2020-04-23</dd>
+</dl>
+
+<p>Today's reading comes from <a href="https://amzn.to/2VMdTVs">Random Justice: On Lotteries and Legal Decision-Making</a>, page 75-76:</p>
+<blockquote>
+<p>random selection is intended to provide defendants and litigants with the opportunity to be tried by a representative cross-section of the population. The idea here is that fair and democratic social arrangements require that people be accorded the chance to be tried by juries drawn from a cross-sectionally representative pool. That a randomly selected jury will provide the opportunity to be tried by a representative cross-section of the population is, however, by no means guaranteed. [...] a perfectly representative sample is the average ideal of many random samples of a population and is not to be expected in any particular randomly drawn sample - or on any particular petit jury. Perhaps most importantly of all, even if random selection were to yield a jury perfectly representative of the population, the appropriateness of the outcome might still be contested.</p>
+</blockquote>
+<p>This is actually a really excellent point for tying together a number of my interest areas.</p>
+<p>In particular it prompts me to think about:</p>
+<ul>
+<li>The difference between statistical fairness and individual fairness.</li>
+<li>What "representative" really means.</li>
+<li>Is representativeness good?</li>
+<li>The interplay between justice and identity.</li>
+<li>The role of legibility in diversity initiatives.</li>
+</ul>
+<p>As is well known <a href="https://www.drmaciver.com/2013/09/towards-a-more-perfect-democracy/">I'm rather a big fan of random selection</a>, and one of the reasons for it is the guaranteed proportionality properties of it. However, there are some major distinctive features of juries compared to the situations I've focused on that I'd not previously appreciated until reading this passage just now (despite having read it before!).</p>
+<p>First off, consider the difficulty of representativeness. Say we've got 12 jurors. Any group whose prevalence in the population is not a multiple of \(\frac{1}{12}\) will not be perfectly represented in the jury - they'll either be over or underrepresented.</p>
+<p>This is a particularly big deal for minority groups. For example, consider Muslims. <a href="https://en.wikipedia.org/wiki/Islam_in_the_United_Kingdom">Wikipedia tells me</a> that 4.4% of the UK population are muslim. Therefore the correct number of muslims on a jury of 12 people is 0.528. This is, obviously, hard to achieve.
+Random selection achieves this on average by assigning one muslim to the jury 32% of the time, no muslims 59% of the time, and more than one muslim 9% of the time (these numbers are all rounded). That's all very well, but if you're a muslim and you consider it important to have muslims on your jury, it's of small comfort if you're one of the 59% who doesn't get any. Statistical fairness is all very well, but an individual up for trial might quite reasonably expect that it should be fair in their individual case too.</p>
+<p>This leads further to the question of which groups you want represented.
+For example, it might be important to consider ethnicity.
+Again, <a href="https://en.wikipedia.org/wiki/White_British">according to Wikipedia</a>, 81.9% of the UK population is white. This means you want 9.83 white people on your jury. Depending on whether you round that to 9 or 10, that gives you 2 or 3 people of colour on your jury. But which racial groups do you want in those 2 or 3? People of colour have certain unifying experiences, certainly (e.g. being on the receiving end of racism), but they're very far from a unified group.</p>
+<p>This gets worse when you consider intersections. For example, one can be representative of both ethnicity and gender without being representative of their intersection. Does it matter if all three of your people of colour are men but you make up the gender balance by including more white women? It probably does. Intersectionality tells us that the interplay of racism and sexism is significant in ways that are more than the sum of their parts.</p>
+<p>Let's take a step back and ask why this matters. It matters because how we form judgements about people is significantly affected by how legible they are to us, and identity is a big part of this.
+I've <a href="https://www.drmaciver.com/2019/06/the-ethics-of-false-negatives-in-interviewing/">previously written about how this affects interviewing</a>: The heuristics we use for judging people are based on those that are reliable for people who we are familiar with, a group that is generally heavily biased towards people who are like us. These heuristics are not necessarily prejudicial outside that group, but they may be wildly inaccurate.</p>
+<p>This suggests one obvious modification to the principle of representativeness in juries: Where the speaker is part of a minority group, we should aim to err on the side of overrepresentation of that group in the jury.</p>
+<p>However, this is tricky, and risks falling afoul of what Amartya Sen, in his book <a href="https://amzn.to/3cDC1jV">Identity and Violence</a> calls the <em>assumption of singularity</em> - the idea that we all have a single immutable identity that has primacy.</p>
+<p>A particularly ironic example of how identity can affect our judgement comes from Miranda Fricker's book, <a href="https://amzn.to/3cGXfgG">Epistemic Injustice</a>:</p>
+<blockquote>
+<p>Imagine that a hearer responsibly judges a speaker to be untrustworthy (because insincere) owing to the fact that the speaker avoids looking her in the eye, frequently looks askance, and pauses self-consciously in mid-sentence as if to work out his story. The speaker’s behaviour justifies the hearer’s judgement inasmuch as it fits an empirically reliable stereotype of insincerity. In fact, however, this individual is speaking entirely ingenuously, and his shifty manner is simply due to the rather idiosyncratic manifestations of his extraordinary personal shyness. This speaker, let us agree, constitutes an exception to an empirically reliable rule, and thus the testimonial injustice he suffers is caused not by prejudice but simply by bad luck. What should be said about such an example?</p>
+<p>If we were to consider this shyness example to be an instance of testimonial injustice, then it would be a case of non-culpable testimonial injustice: clearly the hearer has done nothing for which she is blameworthy, either epistemically or ethically.</p>
+</blockquote>
+<p>What should be said about this example is that somehow Fricker has managed to be either unaware of or indifferent to the existence of people with autism. She has taken a generally (but not wholly! Difficulty with eye contact may also result from e.g. trauma) reliable heuristic on neurotypical people, and declared that because the error is not based on an identity group that she recognises as valid, the error is not culpable.</p>
+<p>This is almost an example of what I've previously described as <a href="https://notebook.drmaciver.com/posts/2020-02-23-09:37.html">legibility privileges</a>: The relevant features of identity are ones that are, apparently, illegible to Fricker (autism as a feature identity is perfectly legible, but <a href="https://notebook.drmaciver.com/posts/2020-03-02-09:31.html">legibility is a relationship</a>), and so are discounted from consideration.
+If you have an autistic muslim woman on the jury and the jury selection carefully is carefully padded out with muslim women in order to give her a fair trial but you end up with a jury of 100% neurotypicals (which is highly likely due to the relatively low prevalence of autism) then the selection would potentially be completely missing the point.</p>
+<p>As with many seemingly intractable problems, this admits a relatively feasible solution: You have to ask them. People have choice over what aspects of their identity have primacy, and we have a moral duty to respect those choices.</p>
+<p>In the case of the jury, what seems like a natural solution to me is to start the process of jury selection with a negotiation between the prosecution, the defence, and the judge, about some criteria that the defence would like to ensure is represented in the jury, and then ensure that (say) three out of the twelve jurors satisfy those criteria. Both those three and the other nine would still be randomly selected, but they would be selected from within fixed subsets of the population.</p>
+<p>You'd need careful guidelines for how this is to be implemented in practice, and I'm not at all an expert in law or jury selection, so it's likely that I'm missing important features, but I do think some principle like this is worth considering every time you're making a decision about someone - whether it's a jury, as in this example, a hiring panel, or otherwise.</p>
+</section>
+
+    </article>
+<footer>
+Copyright David R. MacIver.
+
+CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
+</footer>
+  </body>
+</html>

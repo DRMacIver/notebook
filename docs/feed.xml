@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-04-22T09:54:02+01:00</updated>
+  <updated>2020-04-23T07:48:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,79 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-04-12-11:35.html</id>
-    <title>Intuition as search prioritisation</title>
-    <updated>2020-04-12T12:17:26+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Intuition as search prioritisation&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-04-12&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Computers and algorithms are not an especially good model of the human mind, but they often provide nice toy models for reasoning processes. These don't necessarily capture general features of human reasoning, but they're often still useful toy models for thinking about how reason might work in particular contexts.&lt;/p&gt;
-
-
-&lt;p&gt;In this post I'd like to look at some such toy models and see how intuition can have a big impact on them.&lt;/p&gt;
-
-
-&lt;p&gt;Suppose we have \(N\) items, and we want to find a good one (and know a priori that at least one of them is good). We can check whether any given item is good, but it requires reasonably careful investigation in order to determine an item's goodness.&lt;/p&gt;
-
-
-&lt;p&gt;There's no mystery about what we have to do in in order to find a good item: We go through \(N\) items, one at a time, and keep asking "Is this one good? How about this one? This one?" until we find a good item and return it.&lt;/p&gt;
-
-
-&lt;p&gt;This simplicity hides an important question though: What order do we search through the items in?&lt;/p&gt;
-
-
-&lt;p&gt;If we're lucky and get a good item first, we only need to examine one item. If we're unlucky, we might have to examine all \(N\). If \(N\) is large this may be &lt;em&gt;very&lt;/em&gt; expensive.&lt;/p&gt;
-
-
-&lt;p&gt;As a result, our iteration order is the major driver of how efficient this process is. It has no effect on the result of the algorithm, but it significantly impacts its performance.&lt;/p&gt;
-
-
-&lt;p&gt;Intuition can be thought of as the search ordering in this problem: We have some really cheap test that lets us guess whether something is good enough, and we go through the items in order of guessed-good to guessed-bad. If our guesses are remotely accurate, this will speed up the time this takes to find the item.&lt;/p&gt;
-
-
-&lt;p&gt;At this stage, intuition affects only the performance, not the outcome, but in real world decision making often we are time constrained, so we might not have time to search through all \(N\) items. A &lt;a href="https://www.drmaciver.com/2019/10/vocabulary-building-satisficing/"&gt;satisficing&lt;/a&gt; behaviour might be that rather than looking for goodness in some absolute sense, we evaluate \(k\) out of \(N\) items and pick the best among those.&lt;/p&gt;
-
-
-&lt;p&gt;This is effectively the same algorithm as before, but now treated as an &lt;a href="https://notebook.drmaciver.com/posts/2020-03-23-15:52.html"&gt;anytime algorithm&lt;/a&gt; - we're allowing for the possibility of interrupting early and using our best result.
-&lt;em&gt;Now&lt;/em&gt; the order of iteration is still important, because we can observe the quality over time and pick an earlier time to stop, but for essentially the same reason that it affected performance before.&lt;/p&gt;
-
-
-&lt;p&gt;This feature becomes especially important when it's not just impractical but utterly infeasible to evaluate all \(N\) possibilities.
-&lt;a href="https://discovery.ucl.ac.uk/id/eprint/10045895/1/agz_unformatted_nature.pdf"&gt;AlphaGo Zero&lt;/a&gt; is a particularly good practical instance of a real computer program working a bit like this.&lt;/p&gt;
-
-
-&lt;p&gt;AlphaGo Zero has essentially two components:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;A tree search, that reasons through and evaluates potential moves for their impact.&lt;/li&gt;
-&lt;li&gt;A neural network, that looks at the board and history and outputs a set of move probabilities.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;The tree search is the "reasoning" of the AlphaGo Zero, in that it's the bit that actually attempts to strategise and think through the implications of varying moves, but the neural network is the fast gut feel play.&lt;/p&gt;
-
-
-&lt;p&gt;In theory, AlphaGo Zero would play fine if you were to just make the neural network always pick every move at random and let the tree search be unboundedly deep. In practice, it would play fine by just sitting there generating heat and net never making a move, because trying to do a full tree search on the space of possible Go moves would take longer than the lifetime of the universe.&lt;/p&gt;
-
-
-&lt;p&gt;This means we're in the situation like the above partial search algorithm: Because are constrained on time, the quality of the moves output by the neural network will heavily influence the quality of AlphaGo Zero's decision making.&lt;/p&gt;
-
-
-&lt;p&gt;This is a general phenomenon that repeats over and over again: Making decisions perfectly requires unbounded amounts of time, so at some point we have to &lt;a href="https://notebook.drmaciver.com/posts/2020-02-25-10:39.html"&gt;terminate our decision making process and just make our best guess&lt;/a&gt;, and the quality of our intuition helps us prioritise what to consider before we give up. Thus, even the most logical and well reasoned decision making process will usually be heavily dependent on intuition for the quality of its outcome.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-04-12-11:35.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-04-13-11:35.html</id>
     <title>The memetic domus</title>
@@ -769,7 +696,7 @@ His essential argument is that this empathic experience leads us astray from goo
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-04-22-08:31.html</id>
     <title>Power, baby, power</title>
-    <updated>2020-04-22T09:54:02+01:00</updated>
+    <updated>2020-04-22T14:08:40+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Power, baby, power&lt;/p&gt;
@@ -838,5 +765,98 @@ His essential argument is that this empathic experience leads us astray from goo
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-04-22-08:31.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-04-23-07:48.html</id>
+    <title>Proportionality and identity</title>
+    <updated>2020-04-23T07:48:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Proportionality and identity&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-04-23&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Today's reading comes from &lt;a href="https://amzn.to/2VMdTVs"&gt;Random Justice: On Lotteries and Legal Decision-Making&lt;/a&gt;, page 75-76:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;random selection is intended to provide defendants and litigants with the opportunity to be tried by a representative cross-section of the population. The idea here is that fair and democratic social arrangements require that people be accorded the chance to be tried by juries drawn from a cross-sectionally representative pool. That a randomly selected jury will provide the opportunity to be tried by a representative cross-section of the population is, however, by no means guaranteed. [...] a perfectly representative sample is the average ideal of many random samples of a population and is not to be expected in any particular randomly drawn sample - or on any particular petit jury. Perhaps most importantly of all, even if random selection were to yield a jury perfectly representative of the population, the appropriateness of the outcome might still be contested.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;This is actually a really excellent point for tying together a number of my interest areas.&lt;/p&gt;
+
+
+&lt;p&gt;In particular it prompts me to think about:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;The difference between statistical fairness and individual fairness.&lt;/li&gt;
+&lt;li&gt;What "representative" really means.&lt;/li&gt;
+&lt;li&gt;Is representativeness good?&lt;/li&gt;
+&lt;li&gt;The interplay between justice and identity.&lt;/li&gt;
+&lt;li&gt;The role of legibility in diversity initiatives.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;As is well known &lt;a href="https://www.drmaciver.com/2013/09/towards-a-more-perfect-democracy/"&gt;I'm rather a big fan of random selection&lt;/a&gt;, and one of the reasons for it is the guaranteed proportionality properties of it. However, there are some major distinctive features of juries compared to the situations I've focused on that I'd not previously appreciated until reading this passage just now (despite having read it before!).&lt;/p&gt;
+
+
+&lt;p&gt;First off, consider the difficulty of representativeness. Say we've got 12 jurors. Any group whose prevalence in the population is not a multiple of \(\frac{1}{12}\) will not be perfectly represented in the jury - they'll either be over or underrepresented.&lt;/p&gt;
+
+
+&lt;p&gt;This is a particularly big deal for minority groups. For example, consider Muslims. &lt;a href="https://en.wikipedia.org/wiki/Islam_in_the_United_Kingdom"&gt;Wikipedia tells me&lt;/a&gt; that 4.4% of the UK population are muslim. Therefore the correct number of muslims on a jury of 12 people is 0.528. This is, obviously, hard to achieve.
+Random selection achieves this on average by assigning one muslim to the jury 32% of the time, no muslims 59% of the time, and more than one muslim 9% of the time (these numbers are all rounded). That's all very well, but if you're a muslim and you consider it important to have muslims on your jury, it's of small comfort if you're one of the 59% who doesn't get any. Statistical fairness is all very well, but an individual up for trial might quite reasonably expect that it should be fair in their individual case too.&lt;/p&gt;
+
+
+&lt;p&gt;This leads further to the question of which groups you want represented.
+For example, it might be important to consider ethnicity.
+Again, &lt;a href="https://en.wikipedia.org/wiki/White_British"&gt;according to Wikipedia&lt;/a&gt;, 81.9% of the UK population is white. This means you want 9.83 white people on your jury. Depending on whether you round that to 9 or 10, that gives you 2 or 3 people of colour on your jury. But which racial groups do you want in those 2 or 3? People of colour have certain unifying experiences, certainly (e.g. being on the receiving end of racism), but they're very far from a unified group.&lt;/p&gt;
+
+
+&lt;p&gt;This gets worse when you consider intersections. For example, one can be representative of both ethnicity and gender without being representative of their intersection. Does it matter if all three of your people of colour are men but you make up the gender balance by including more white women? It probably does. Intersectionality tells us that the interplay of racism and sexism is significant in ways that are more than the sum of their parts.&lt;/p&gt;
+
+
+&lt;p&gt;Let's take a step back and ask why this matters. It matters because how we form judgements about people is significantly affected by how legible they are to us, and identity is a big part of this.
+I've &lt;a href="https://www.drmaciver.com/2019/06/the-ethics-of-false-negatives-in-interviewing/"&gt;previously written about how this affects interviewing&lt;/a&gt;: The heuristics we use for judging people are based on those that are reliable for people who we are familiar with, a group that is generally heavily biased towards people who are like us. These heuristics are not necessarily prejudicial outside that group, but they may be wildly inaccurate.&lt;/p&gt;
+
+
+&lt;p&gt;This suggests one obvious modification to the principle of representativeness in juries: Where the speaker is part of a minority group, we should aim to err on the side of overrepresentation of that group in the jury.&lt;/p&gt;
+
+
+&lt;p&gt;However, this is tricky, and risks falling afoul of what Amartya Sen, in his book &lt;a href="https://amzn.to/3cDC1jV"&gt;Identity and Violence&lt;/a&gt; calls the &lt;em&gt;assumption of singularity&lt;/em&gt; - the idea that we all have a single immutable identity that has primacy.&lt;/p&gt;
+
+
+&lt;p&gt;A particularly ironic example of how identity can affect our judgement comes from Miranda Fricker's book, &lt;a href="https://amzn.to/3cGXfgG"&gt;Epistemic Injustice&lt;/a&gt;:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Imagine that a hearer responsibly judges a speaker to be untrustworthy (because insincere) owing to the fact that the speaker avoids looking her in the eye, frequently looks askance, and pauses self-consciously in mid-sentence as if to work out his story. The speaker’s behaviour justifies the hearer’s judgement inasmuch as it fits an empirically reliable stereotype of insincerity. In fact, however, this individual is speaking entirely ingenuously, and his shifty manner is simply due to the rather idiosyncratic manifestations of his extraordinary personal shyness. This speaker, let us agree, constitutes an exception to an empirically reliable rule, and thus the testimonial injustice he suffers is caused not by prejudice but simply by bad luck. What should be said about such an example?&lt;/p&gt;
+&lt;p&gt;If we were to consider this shyness example to be an instance of testimonial injustice, then it would be a case of non-culpable testimonial injustice: clearly the hearer has done nothing for which she is blameworthy, either epistemically or ethically.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;What should be said about this example is that somehow Fricker has managed to be either unaware of or indifferent to the existence of people with autism. She has taken a generally (but not wholly! Difficulty with eye contact may also result from e.g. trauma) reliable heuristic on neurotypical people, and declared that because the error is not based on an identity group that she recognises as valid, the error is not culpable.&lt;/p&gt;
+
+
+&lt;p&gt;This is almost an example of what I've previously described as &lt;a href="https://notebook.drmaciver.com/posts/2020-02-23-09:37.html"&gt;legibility privileges&lt;/a&gt;: The relevant features of identity are ones that are, apparently, illegible to Fricker (autism as a feature identity is perfectly legible, but &lt;a href="https://notebook.drmaciver.com/posts/2020-03-02-09:31.html"&gt;legibility is a relationship&lt;/a&gt;), and so are discounted from consideration.
+If you have an autistic muslim woman on the jury and the jury selection carefully is carefully padded out with muslim women in order to give her a fair trial but you end up with a jury of 100% neurotypicals (which is highly likely due to the relatively low prevalence of autism) then the selection would potentially be completely missing the point.&lt;/p&gt;
+
+
+&lt;p&gt;As with many seemingly intractable problems, this admits a relatively feasible solution: You have to ask them. People have choice over what aspects of their identity have primacy, and we have a moral duty to respect those choices.&lt;/p&gt;
+
+
+&lt;p&gt;In the case of the jury, what seems like a natural solution to me is to start the process of jury selection with a negotiation between the prosecution, the defence, and the judge, about some criteria that the defence would like to ensure is represented in the jury, and then ensure that (say) three out of the twelve jurors satisfy those criteria. Both those three and the other nine would still be randomly selected, but they would be selected from within fixed subsets of the population.&lt;/p&gt;
+
+
+&lt;p&gt;You'd need careful guidelines for how this is to be implemented in practice, and I'm not at all an expert in law or jury selection, so it's likely that I'm missing important features, but I do think some principle like this is worth considering every time you're making a decision about someone - whether it's a jury, as in this example, a hiring panel, or otherwise.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-04-23-07:48.html" rel="alternate"/>
   </entry>
 </feed>
