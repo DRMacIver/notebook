@@ -104,3 +104,9 @@
 * [ ] Setting low bars for successful habits.
 * [ ] Asking for things is good
 * [ ] Physical books are good
+* [ ] The role of theories in ethics
+* [ ] Debugging feelings
+* [ ] You have to be able to abandon things when they're not working
+* [ ] People don't understand why I read so much
+* [ ] The stress of being confused by the world
+* [ ] Treating feelings as information
