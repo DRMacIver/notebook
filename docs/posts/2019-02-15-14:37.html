@@ -74,19 +74,19 @@ Each node either records which method was called and its arguments, or that no m
 <span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
 
 
-<span class="nd">@attr.s</span><span class="p">()</span>
+<span class="nd">@attr</span><span class="o">.</span><span class="n">s</span><span class="p">()</span>
 <span class="k">class</span> <span class="nc">TreeNode</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="sd">"""Node wrapping a previous observation. Having a mutable</span>
 <span class="sd">    wrapper class around the value makes the implementation a lot</span>
 <span class="sd">    tidier."""</span>
-    <span class="n">observation</span> <span class="o">=</span> <span class="n">attr</span><span class="o">.</span><span class="n">ib</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="bp">None</span><span class="p">)</span>
+    <span class="n">observation</span> <span class="o">=</span> <span class="n">attr</span><span class="o">.</span><span class="n">ib</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
 
-<span class="nd">@attr.s</span><span class="p">()</span>
+<span class="nd">@attr</span><span class="o">.</span><span class="n">s</span><span class="p">()</span>
 <span class="k">class</span> <span class="nc">Result</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="sd">"""A previously observed return value."""</span>
     <span class="n">value</span> <span class="o">=</span> <span class="n">attr</span><span class="o">.</span><span class="n">ib</span><span class="p">()</span>
 
-<span class="nd">@attr.s</span><span class="p">()</span>
+<span class="nd">@attr</span><span class="o">.</span><span class="n">s</span><span class="p">()</span>
 <span class="k">class</span> <span class="nc">Decision</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="sd">"""A previously observed call to the underlying implementation."""</span>
     <span class="n">method</span> <span class="o">=</span> <span class="n">attr</span><span class="o">.</span><span class="n">ib</span><span class="p">()</span>
@@ -101,11 +101,11 @@ Each node either records which method was called and its arguments, or that no m
 
     <span class="k">def</span> <span class="fm">__getattr__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
         <span class="n">base</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__underlying</span><span class="p">,</span> <span class="s1">'name'</span><span class="p">)</span>
-        <span class="k">if</span> <span class="ow">not</span> <span class="nb">callable</span><span class="p">(</span><span class="n">base</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">callable</span><span class="p">(</span><span class="n">base</span><span class="p">):</span>
             <span class="k">return</span> <span class="n">base</span>
 
         <span class="k">def</span> <span class="nf">accept</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
-            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__tree</span><span class="o">.</span><span class="n">observation</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__tree</span><span class="o">.</span><span class="n">observation</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
                 <span class="bp">self</span><span class="o">.</span><span class="n">__tree</span><span class="o">.</span><span class="n">observation</span> <span class="o">=</span> <span class="n">Decision</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">args</span><span class="p">)</span>
             <span class="n">rv</span> <span class="o">=</span> <span class="n">base</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">)</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">__tree</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__tree</span><span class="o">.</span><span class="n">observation</span><span class="o">.</span><span class="n">children</span><span class="p">[</span><span class="n">rv</span><span class="p">]</span>
@@ -126,7 +126,7 @@ Each node either records which method was called and its arguments, or that no m
 
     <span class="n">previous</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">observation</span>
 
-    <span class="k">if</span> <span class="n">previous</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">previous</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
         <span class="k">raise</span> <span class="n">UnknownResult</span><span class="p">()</span>
 
     <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">previous</span><span class="p">,</span> <span class="n">Result</span><span class="p">):</span>

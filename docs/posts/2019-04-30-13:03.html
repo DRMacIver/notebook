@@ -108,7 +108,7 @@ It either gives you a very large result or costs very little.</p>
 <p>This allows for a test-case reduction pass that never does substantially more work than the naive greedy algorithm which tries deleting one item at a time,
 but can potentially do very large deletions with much less work than that when the opportunity arises.</p>
 <p>A neat variant I realised earlier is that you can use this function to define the following variant of binary search:</p>
-<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">binary_search_with_guess</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">lo</span><span class="p">,</span> <span class="n">hi</span><span class="p">,</span> <span class="n">guess</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">binary_search_with_guess</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">lo</span><span class="p">,</span> <span class="n">hi</span><span class="p">,</span> <span class="n">guess</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
     <span class="sd">"""Find n such that lo &lt;= n &lt; hi and f(lo) == f(n) != f(n + 1). It is</span>
 <span class="sd">    assumed that f(hi) != f(lo) and will not be checked.</span>
 
@@ -116,7 +116,7 @@ but can potentially do very large deletions with much less work than that when t
 <span class="sd">    This function runs in O(log(abs(guess - n))).</span>
 <span class="sd">    """</span>
 
-    <span class="k">if</span> <span class="n">guess</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">guess</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
         <span class="n">guess</span> <span class="o">=</span> <span class="n">lo</span>
 
     <span class="k">assert</span> <span class="n">lo</span> <span class="o">&lt;=</span> <span class="n">guess</span> <span class="o">&lt;</span> <span class="n">hi</span>
