@@ -24,6 +24,10 @@ _DATABASE = None
 def database():
     global _DATABASE
     if _DATABASE is None:
+        try:
+            os.makedirs(CACHE_DIR)
+        except FileExistsError:
+            pass
         _DATABASE = sqlite3.connect(os.path.join(CACHE_DIR, "cache.db"))
     return _DATABASE
 
