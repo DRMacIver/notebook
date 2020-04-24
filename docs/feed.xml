@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-04-23T10:09:44+01:00</updated>
+  <updated>2020-04-24T09:38:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,146 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-04-13-11:35.html</id>
-    <title>The memetic domus</title>
-    <updated>2020-04-13T15:13:25+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;The memetic domus&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-04-13&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;NB this is a very &lt;a href="https://notes.andymatuschak.org/Work_with_the_garage_door_up"&gt;working with the garage door up&lt;/a&gt; post.
-Sometimes you just get a sense that there's a there there, but you're not quite sure what it is yet.
-This post is an attempt to gesture vaguely in the sense of the there that may or may not be there. It probably won't quite make sense yet, because it doesn't yet make sense to &lt;em&gt;me&lt;/em&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;Sources:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://amzn.to/2Ry9RyJ"&gt;Against the Grain&lt;/a&gt; by James Scott&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://amzn.to/2V2LNGg"&gt;Sorting Things Out: Classification and its Consequences&lt;/a&gt; by Bowker and Star&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://amzn.to/3edMIeC"&gt;Where Good Ideas Come From&lt;/a&gt; by Steven Johnson.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://amzn.to/3abawwE"&gt;How to talk about books you haven't read&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://amzn.to/3ab7hW1"&gt;The Meme Machine&lt;/a&gt; by Susan Blackmore&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://amzn.to/3cfSN8E"&gt;The Economy of Cities&lt;/a&gt; by Jane Jacobs&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://amzn.to/2V1VDbo"&gt;The Origins of Unfairness&lt;/a&gt; by Cailin O'Connor&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://amzn.to/3es4meS"&gt;The Limits of Organization&lt;/a&gt; by Kenneth Arrow&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;Plus a lot of general background stuff beyond that. You don't have to read any of these to understand this post (I hope), but they vaguely are defining the cluster of what I'm thinking about right now. Also I can't promise that this post will make sense if you &lt;em&gt;have&lt;/em&gt; read them.&lt;/p&gt;
-
-
-&lt;p&gt;Against the Grain talks about the idea of a &lt;em&gt;domus&lt;/em&gt;. The term comes from &lt;a href="https://en.wikipedia.org/wiki/Domus"&gt;the Latin word meaning home&lt;/a&gt;, but can more broadly be used to refer to a freeholding and its surrounding cultivation. It is the origin of "domestication", which can be thought of as the process of taking other species and making them suitable for inclusion in the domus.&lt;/p&gt;
-
-
-&lt;p&gt;Because not enough people write like mathematicians, Scott never really precisely defines what he &lt;em&gt;means&lt;/em&gt; by domus in any easy to extract form, but the condensation of it in &lt;a href="https://proteviblog.typepad.com/files/notes-on-scott-against-the-grain.pdf"&gt;these notes&lt;/a&gt; is pretty good:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;The “domus” is an assemblage, or concatenation of multiple species and environmental 
-features – landscape changes, animal pens, houses, butcher shops, blacksmiths, marketplaces 
-and so on – that are put together in varying proportions. It is multi-dimensional long-term 
-inherited niche construction&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;Scott talks more broadly about the &lt;em&gt;domus complex&lt;/em&gt; as the effect of humanity on the landscape. We don't just produce small, tightly concentrated, domestic units, but we broadly reshape the landscape around us, and have been doing so long before anything recognisable as modern agriculture.&lt;/p&gt;
-
-
-&lt;p&gt;Within this broader domus complex, the domus is more like a local increase in concentration of domestication, but the the domestication of the landscape extends out far beyond where you might naturally think of as being the boundary of human presence. The village is domesticated, certainly, but so are the forests around it where humans hunt, and possibly clear with fire, so are the places where evolution is shaped by human predation, or by escaped domesticated species (plant and animal).&lt;/p&gt;
-
-
-&lt;p&gt;And it is not just the rest of the world that is shaped by domestication, but also humanity. In one sense, humanity has shaped grain to serve us. In another sense, grain has shaped humanity to propagate itself. The situation is even more murky when you look at a species like dogs, who we essentially co-evolved with to domesticate each other.&lt;/p&gt;
-
-
-&lt;p&gt;I have &lt;a href="https://twitter.com/DRMacIver/status/1126046264125267968"&gt;previously argued&lt;/a&gt; that you can look at books in the same way as grain: In one sense we create books to serve us, but in another sense books are best seen as a replicator in their own right, using humanity as the background medium of replication.&lt;/p&gt;
-
-
-&lt;p&gt;One could look at a kind of generalised definition of a domus as this: A domus is a set of tightly co-evolved replicators, each of which are dependent on each other and the domus as a whole as a platform driving their success, and which would be significantly altered (and possibly fail entirely) by its removal from the domus.&lt;/p&gt;
-
-
-&lt;p&gt;Books in the absence of humanity cannot replicate. Grain in the absence of humanity is much more subject to the vagaries of weeds, and drought. Humanity in the absence of books would find itself at a significant disadvantage compared to where we are today. Humanity in the absence of grain would starve.&lt;/p&gt;
-
-
-&lt;p&gt;As with Scott's domus complex, the boundary of a generalised domus will usually be fuzzy. There will be things that are obviously in a domus together, and things that are obviously not in a domus together, and a wide range in between. There will also likely tend to be overlapping domus which do not themselves necessarily constitute a larger domus. For example, both a large international business's culture and a city's culture might usefully be considered as domus in their own right, but are not usefully considered as a single unified domus even when the business has an office in that city - although the two domus interact, they do not interact densely enough to be usefully considered as part of the same domus.&lt;/p&gt;
-
-
-&lt;p&gt;This density of interaction is key to whether it is useful to think of a set of replicators as a domus.
-Replicators in a domus will create pressure on each other to become more usable to them, by "offering" services. Books create a culture of literacy by turning humans into readers. Grains create a culture of mass agriculture by turning humans into states.&lt;/p&gt;
-
-
-&lt;p&gt;In "Sorting Things Out", Bowker and Star introduce the idea of &lt;em&gt;torque&lt;/em&gt;, the twisting of time lines created by people and categorisation systems on each other: When a person interacts with a categorisation, this creates pressure on both the person (to conform) and the categorisation system (to include the person). People's behaviour and categorisation systems are both examples of replicators (they literally evolve over time, in response to replication with variation and selection), and the torque between these replicators as they interact is the process of each making the other more usable to each other. Mutual torque&lt;/p&gt;
-
-
-&lt;p&gt;So, generalising this, we might say that &lt;em&gt;torque&lt;/em&gt; is the influence between two replicators to make each other more usable to each other. A domus is thus a set of replicators that exert significant torque on each other,
-thereby domesticating each other. Torque creates domestication.&lt;/p&gt;
-
-
-&lt;p&gt;"Where Good Ideas Come From" is a book largely about treating innovation as an evolutionary process (It's not especially convincingly argued, but that's OK for me because I was already on board with most of its ideas and it was nice to see them sketched out a bit more). In it he describes the idea of a &lt;em&gt;platform&lt;/em&gt; - an ecosystem that essentially acts as a foundation for other things to develop on top of them. Two examples he gives of such platforms are how coral reefs create atolls, which are highly nutrient dense environments supporting a huge amount of diversity of life, and cities, which have the same function for memetic diversity.&lt;/p&gt;
-
-
-&lt;p&gt;In "The Economy of Cities", Jane Jacobs talks about how cities are essentially the driver of innovation. She also talks about how cities predate agriculture, which I think "Against the Grain" convincingly disproves (depending on what you "count" as agriculture), but I think her broader point is still sound if you replace "city" with "domus", because there really isn't a city / not-city binary. Instead a better reading of this would be that &lt;em&gt;domus density&lt;/em&gt; is a huge driver of evolutionary diversity. Any domus serves as a platform, both for the replicators currently in it and for new ones to be brought into the fold.&lt;/p&gt;
-
-
-&lt;p&gt;Jacobs talks about "import replacement", where a city starts producing goods it has previously imported, as a driver of city group. In a domus sense this also occurs as something we might call &lt;em&gt;replicator integration&lt;/em&gt;. Once, cats were not part of the domus. Then they started essentially feeding off it (by eating creatures that were parasitizing off the domus). Now cats are a thoroughly integrated part of humanity's domus complex.&lt;/p&gt;
-
-
-&lt;p&gt;The main human domus complex inextricably contains memes (in the original Dawkins sense. Pictures with text on them are less load bearing although still a major feature) - ideas and complexes of ideas which replicate themselves by spreading from person to person. The memetic domus in the title of this post is really just the part of that broader domus that centers on these memetic replicators. It's not necessarily cleanly separable from the rest of the human domus complex, but it's worth considering as an object of study in its own right.&lt;/p&gt;
-
-
-&lt;p&gt;One way in which it is worth studying is cultural. As I wrote before, &lt;a href="https://notebook.drmaciver.com/posts/2020-02-28-06:33.html"&gt;culture is deeply contingent&lt;/a&gt;. Here the memes that we are interested in are particularly &lt;em&gt;behaviours&lt;/em&gt;. When you have a domus, people interact often enough and exert enough torque on each other, than where it is useful to synchronise behaviours to be the same, they generally will. Whenever there is a coordination problem, a domus will tend to create homogoneity through torque.&lt;/p&gt;
-
-
-&lt;p&gt;A domus will also tend to use that torque to resist change. If two previously unlinked domuses start interacting, each will induce torque on the behaviours of the other, but because changing one replicator within a domus will cause it to be less useful to the others, the within-domus torque will tend to be greater than the between-domus torque. If interactions are common enough, the two domus might eventually "merge", and eventually the within-domus torque might be enough to eventually remove the inhomogeneity, but without that the two will tend to remain separate.&lt;/p&gt;
-
-
-&lt;p&gt;A particularly important feature of this when the domus contains humans (technically "human behaviours" as humans don't have to be present in their capacity as replicators for this to be relevant) is &lt;a href="https://notebook.drmaciver.com/posts/2020-03-02-09:31.html"&gt;legibility&lt;/a&gt; within the domus. Because of this homogenising effect, two people within the same domus will tend to make more sense to each other than people from other domus - many core assumptions about behaviour and communication will be shared and not need explaining, and many shorthands will have been developed that are useful for describing behaviour within the domus. These shorthands will be shared.&lt;/p&gt;
-
-
-&lt;p&gt;This shared legibility is related to something that Kenneth Arrow talks about in "the limits of organization". This is a book about why, if we assume that the price system is very good (which it mostly is, and as an economist Kenneth Arrow is particularly predisposed to believe that it is), why do non-market organisations form? One of the answers he presents to this is that organisations exist to lower communication costs within the organisation, which enables people to acquire information that is valuable but not worth the cost of acquiring it in a broader market economy. Thus by forming an organisation in which communication is cheaper, a number of market failures become soluble.&lt;/p&gt;
-
-
-&lt;p&gt;The mutual legibility within the domus serves a similar function. People will find it easier to communicate with each other, and so many ideas become possible to spread that would not in isolation. Essentially, the domus becomes a platform for a much richer memetic ecosystem that would not be possible without it.&lt;/p&gt;
-
-
-&lt;p&gt;One example of a set of replicators that it is useful to think of as part of a memetic domus is &lt;a href="https://notebook.drmaciver.com/posts/2020-02-18-12:24.html"&gt;the libraries of Pierre Bayard&lt;/a&gt;, consisting of various types of books, both literal and figurative, and the collective discussions we have centered around them.&lt;/p&gt;
-
-
-&lt;p&gt;This is all now quite far from the thought process that spawned this post, and I think I will let these ideas bed down a bit more and try to explain it more coherently and go into this thought process a bit more in a later post, but to touch on it briefly: It is useful to think of yourself as embedded in a domus with your own surrounding information architecture (your "exobrain" as I'd often think of it), and it's worth thinking about behaviours in terms of promoting the health of that domus.&lt;/p&gt;
-
-
-&lt;p&gt;For example my own personal memetic domus (something to make me share, something to make me like and subscribe) might contain:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;The thoughts I have&lt;/li&gt;
-&lt;li&gt;The conversations I have&lt;/li&gt;
-&lt;li&gt;Posts on this notebook&lt;/li&gt;
-&lt;li&gt;Tweets&lt;/li&gt;
-&lt;li&gt;Books I read&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;It may not seem natural to think of these all as replicators, and some of them are a bit of a stretch I'll grant, but they definitely all exert torque on each other.&lt;/p&gt;
-
-
-&lt;p&gt;The domus forms a platform largely to the degree that it is well connected through torque, so behaviours which &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-09:44.html"&gt;promote the formation of ideas&lt;/a&gt; will largely be ones that increase torque within your personal memetic domus.&lt;/p&gt;
-
-
-&lt;p&gt;An example of this, which is largely what prompted this very post, is that I've taken to dipping in and out of books and rereading bits of them to remind me of their contents. This has created significantly higher torque between thoughts and books, and (indirectly) between books and this very notebook.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-04-13-11:35.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-04-14-13:56.html</id>
     <title>Spock is a Lie</title>
@@ -769,7 +629,7 @@ His essential argument is that this empathic experience leads us astray from goo
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-04-23-07:48.html</id>
     <title>Proportionality and identity</title>
-    <updated>2020-04-23T10:09:44+01:00</updated>
+    <updated>2020-04-23T12:08:45+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Proportionality and identity&lt;/p&gt;
@@ -858,5 +718,73 @@ If you have an autistic muslim woman on trial and the jury selection carefully i
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-04-23-07:48.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-04-24-09:38.html</id>
+    <title>Democracy isn't just voting</title>
+    <updated>2020-04-24T09:38:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Democracy isn't just voting&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-04-24&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;This post's reading comes from Amartya Sen's "&lt;a href="https://amzn.to/2XYL8aP"&gt;Identity and Violence&lt;/a&gt;", page 55, although actually it mostly comes from Nelson Mandela's "Long Walk to Freedom" (which I haven't read).&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;In his autobiography &lt;em&gt;Long Walk to Freedom&lt;/em&gt;, Nelson Mandela describes how influenced he was, as a young boy, by seeing the democratic nature of the proceedings of the local meetings in his African hometown.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Everyone who wanted to speak did so. It was democracy in its purest form. There may have been a hierarchy of importance among the speakers, but everyone was heard, chief and subject, warrior and medicine man, shopkeeper and farmer, landowner and laborer.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;In context the point that Sen is making is that the idea we have of democracy as a "western" ideal that we've inherited from the greeks and imposed on the rest of the world is bogus, and in fact democracy taken in the general 
+as any form of collective decision making that involves its participants equally in the process is found in my cultures.&lt;/p&gt;
+
+
+&lt;p&gt;I'd like to highlight something else: The democratic ideal that he is describing is actually quite far from the western one, and it's better.
+These days in a lot of the west we have this very anemic idea of democracy, where we've basically reduced it to voting,
+and voting is in many ways supposed to be the thing you do when better ways of doing democracy have failed.
+Reducing democracy to voting is already failure, even before you get into the question of what voting system you should use.&lt;/p&gt;
+
+
+&lt;p&gt;Really the starting point for democracy is not the vote but the discussion (not the debate!) - people getting together to try to figure out the best solution, in a way that respects everyone's needs and viewpoints. Everyone speaks, everyone listens. You don't necessarily have to all agree at the end (&lt;a href="https://en.wikipedia.org/wiki/Consensus_decision-making"&gt;Consensus-building&lt;/a&gt;) is sometimes a good idea, but it's hard and not always worth it), but everyone has the option to be heard.&lt;/p&gt;
+
+
+&lt;p&gt;This isn't to say that voting is never a good feature in democracy. Voting has a lot of advantages when what you want is a relatively low cost way of deciding between a small number of options, but most decision making isn't like that (and the decision theorists who tell you it is are lying to you). Most of the interesting parts of the democratic process consist of getting to the point where you can reduce things to that small number of decisions.&lt;/p&gt;
+
+
+&lt;p&gt;This is particularly useful for &lt;a href="https://www.drmaciver.com/2016/11/democracy-for-lunch/"&gt;decisions that don't matter very much&lt;/a&gt;, because it lets you get them out of the way quickly, but for more momentous decisions it largely comes at the end when you've exhausted the possibility of agreement.&lt;/p&gt;
+
+
+&lt;p&gt;One of the big limitations of voting over discussion is that it cannot put new things on the table. You can vote for &lt;a href="https://en.wikipedia.org/wiki/None_of_the_above#Re-open_Nominations_(RON)"&gt;RON&lt;/a&gt; (the only candidate that can promise change!) in some systems, but most voting in practice does not meaningfully allow that.&lt;/p&gt;
+
+
+&lt;p&gt;This, I think, suggests a feature that is important and absent from most voting systems: They need to be able to fail. One possible conclusion of voting should be that it concludes that you weren't ready for voting yet.&lt;/p&gt;
+
+
+&lt;p&gt;Consensus seeking votes are the easiest example of such a thing: Unless 100% of people agree on an option, the vote fails and you have to go back to discussion. You can do similar things by requiring supermajorities: If \(\frac{2}{3}\) of people approve some outcome, you select that, otherwise back to the drawing board.&lt;/p&gt;
+
+
+&lt;p&gt;I think one reason we overfocus on voting is that it's easier to do at scale (lotteries are also easy to do at scale, but we don't like those for various reasons - some good, some bad). The democratic ideal of discussion really only works with small groups - even our parliaments are too large to really manage it, let alone our populations.&lt;/p&gt;
+
+
+&lt;p&gt;I feel like there are probably systems that solve this by essentially patchworking together many small democratic groups, but perhaps the biggest problem with getting there is how little small scale democracy there is in most people's lives. The overwhelming majority of small group interactions we have result in &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-15:27.html"&gt;someone basically taking charge&lt;/a&gt;, and because people are increasingly atomized most of us don't seem to be part of any communities that could be or would benefit from being democratically run (maybe this isn't true? It's certainly my impression).&lt;/p&gt;
+
+
+&lt;p&gt;I do think one part of that is the absence of good &lt;a href="https://www.drmaciver.com/2019/08/the-missing-social-technology-sector/"&gt;social technology&lt;/a&gt; for this. John Gastil's &lt;a href="https://amzn.to/3ePnt2m"&gt;Democracy in Small Groups&lt;/a&gt; describes how small group democracy is actually implemented in practice in some of the communities where we do have that, and frankly I'm a democracy fan and I still think it sounds &lt;em&gt;awful&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Maybe what is needed is something like &lt;a href="http://www.liberatingstructures.com/"&gt;Liberating Structures&lt;/a&gt;? A toolkit of easy to use small group democratic processes that people can just plug in to their lives and use where appropriate.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-04-24-09:38.html" rel="alternate"/>
   </entry>
 </feed>
