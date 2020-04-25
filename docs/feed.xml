@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-04-24T09:38:11+01:00</updated>
+  <updated>2020-04-25T10:40:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,69 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-04-14-13:56.html</id>
-    <title>Spock is a Lie</title>
-    <updated>2020-04-14T14:25:06+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Spock is a Lie&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-04-14&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;A lot of people's model of peak intelligence is something like Spock (Star Trek Spock, not developmental psychology Spock): Freed from the petty constraints of petty human emotions, one can become a being of pure logic who can reason perfectly as a result.&lt;/p&gt;
-
-
-&lt;p&gt;There are two basic problems with this goal.&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Emotions are how you assign value, and it doesn't really matter how good you are at reasoning if you don't have preferences over outcomes.&lt;/li&gt;
-&lt;li&gt;Also freeing yourself of emotion makes you very bad at reasoning.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;My favourite representation of Vulcans comes from Diane Duane's &lt;a href="https://amzn.to/2VqGmjn"&gt;Spock's World&lt;/a&gt;, where she presents the version of Vulcan logic that makes the most sense to me: Vulcans aren't intrinsically logical, we're just seeing the results of a world-wide religious norm of good behaviour. Vulcans absolutely have emotions, it would just be considered extremely rude for them to show them, and as part of that they've got &lt;a href="https://notebook.drmaciver.com/posts/2020-02-20-09:31.html"&gt;very good at managing them&lt;/a&gt;. The Vulcans who wouldn't get on board with this religious program left and became Romulans (Romulans also have their own norms around emotion management, but they tend to be more around staying ruthlessly secretive in the face of totalitarian opression. Or follow the path of Absolute Candor and tell everyone about their feelings as part of their assassin training).&lt;/p&gt;
-
-
-&lt;p&gt;Vulcans are thus basically a more emotionally healthy version of the British: The British (especially the British upper middle class) also consider it rude to have emotions in public, but nobody taught us how to manage them, so the result is that most of us are neurotic messes. Vulcans presumably know better than to do this, so probably meditate on their feelings and write emo poetry about them in private.
-The problem is that because we only experience Spock from the outside, we conclude that his presentation is his internal experience, and it is impossible that this can be the case given what we see of his behaviour.&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, this is a post about reasoning and emotions, not about Spock's emo poetry about Kirk (I confess I've never actually read any Spock/Kirk, because Kirk does nothing for me and Spock does little).&lt;/p&gt;
-
-
-&lt;p&gt;Damasio's book &lt;a href="https://amzn.to/2xkCetv"&gt;Descartes' Error&lt;/a&gt; lays out some of the evidence for this in practice: Damage which affects emotional processing usually results in people being unable to make good decisions, in large part because of inability to prioritise.&lt;/p&gt;
-
-
-&lt;p&gt;From a more theoretical standpoint, there are two major obvious candidates for the role of emotion in reasoning:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Intuition is a fundamentally emotional experience, and is &lt;a href="https://notebook.drmaciver.com/posts/2020-04-12-11:35.html"&gt;essential for good reasoning under time constraints&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Cognitive dissonance is an emotion, and paying attention to it is a major guide for improving our reasoning.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;Carol Tavris talks about cognitive dissonance in &lt;a href="https://www.preposterousuniverse.com/podcast/2018/07/09/episode-1-carol-tavris-on-mistakes-justification-and-cognitive-dissonance/"&gt;Episode 1 of Mindscape&lt;/a&gt; and it's very good. She also has a book about this, &lt;a href="https://amzn.to/2XzN7lz"&gt;Mistakes Were Made (But Not By Me)&lt;/a&gt; that I've not yet got around to reading. The really short version is this though: Cognitive dissonance is the unpleasant feeling of noticing yourself holding two contradictory beliefs.&lt;/p&gt;
-
-
-&lt;p&gt;Cognitive dissonance is not intrinsically a bad thing - noticing that contradiction &lt;em&gt;should&lt;/em&gt; feel bad, in that you should be driven to reduce it, but because we're all so bad at discomfort tolerance we tend to overreact to cognitive dissonance and as a result come to bad conclusions where we justify having been right all along (often this is learned in a social environment where mistakes were &lt;a href="https://notebook.drmaciver.com/posts/2020-03-18-11:24.html"&gt;unsafe&lt;/a&gt;).&lt;/p&gt;
-
-
-&lt;p&gt;The correct response to cognitive dissonance is to treat it as useful information, and to allow it to feed a &lt;a href="https://notebook.drmaciver.com/posts/2020-03-30-23:12.html"&gt;desire&lt;/a&gt; to be more correct, without overreacting to it. This is hard, and it's easy to fail in either direction: We can ignore the cognitive dissonance altogether, which leaves us with no impetus to improve our reasoning, or we can overreact to it and double down on our existing position, which leaves us stuck in a bad reason.&lt;/p&gt;
-
-
-&lt;p&gt;As a result, epistemic competence (being good at acquiring true knowledge) is fundamentally dependent on emotion management skills: We need to be aware of our emotions, and we need to experience them as safe, otherwise we will end up stuck with bad beliefs.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-04-14-13:56.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-04-15-06:31.html</id>
     <title>Capabilities can be coerced</title>
@@ -722,7 +659,7 @@ If you have an autistic muslim woman on trial and the jury selection carefully i
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-04-24-09:38.html</id>
     <title>Democracy isn't just voting</title>
-    <updated>2020-04-24T09:38:11+01:00</updated>
+    <updated>2020-04-24T12:42:29+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Democracy isn't just voting&lt;/p&gt;
@@ -786,5 +723,60 @@ Reducing democracy to voting is already failure, even before you get into the qu
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-04-24-09:38.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-04-25-10:40.html</id>
+    <title>The conditional love of a small town</title>
+    <updated>2020-04-25T10:40:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;The conditional love of a small town&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-04-25&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;From bell hooks's "&lt;a href="https://amzn.to/2W0Q9gk"&gt;All About Love&lt;/a&gt;", Page 100:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;I like living in small towns precisely because they are most often the places in our nation where basic principles underlying a love ethic exist and are the standards by which most people try to live their lives. In the small town where I live (now only some of the time) there is a spirit of neighborliness [...] We protect and nurture our collective well-being. We try to make our home place a positive environment for everyone. We all agree that integrity and care enhance all our lives. We try to live by the principles of a love ethic.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;Earlier in the book she defines love based on the work of Erich Fromm as "The will to extend one's self for the purpose of one's own or another's spiritual growth", which is a definition I quite like (with perhaps mild quibbles about the word "spiritual"), although given how into personal growth I am (it's practically a love language), I would.&lt;/p&gt;
+
+
+&lt;p&gt;So a community that lives by a love ethic is one where everyone is committed to contributing to each other's personal growth.
+Such a community is &lt;em&gt;incredibly&lt;/em&gt; appealing to me, and I often fantasize about finding or creating it.&lt;/p&gt;
+
+
+&lt;p&gt;Also, the idea of finding such a community in a small town? Not just no, but hell no.&lt;/p&gt;
+
+
+&lt;p&gt;One thing I think this illustrates is how non-transferable experiences of marginalisation are.
+bell hooks obviously has more experience of marginalisation than I do - she is a black woman in the US, while I am in most regards a fairly privileged white man. But I am also a queer neurodivergent person, and the experience of small towns for people like me is literally the worst.&lt;/p&gt;
+
+
+&lt;p&gt;If you're sufficiently "weird" and live or go to school in a small town, chances are pretty good you know almost nobody like you, and it's awful.
+In a large city you may still struggle to find people like you, but those people are at least there and once you've found a few you will find more through them. It is possible to build a community of people like you, and to build a love ethic within that community, in a way that I don't think people like me are ever going to really find in a small town.&lt;/p&gt;
+
+
+&lt;p&gt;I've been reading James C. Scott's "&lt;a href="https://amzn.to/2Kzllyc"&gt;The Art of Not Being Governed&lt;/a&gt;" recently (a book I suspect has never previously been linked to bell hooks's "All About Love"), which is about the hill people of Zomia, a large region of South East Asia, and their relationship to the states. In particular it points out that that rather than being some sort of "living ancestors" of the people of the valley states, the hill people are typically the descendants of refugees who fled the state.&lt;/p&gt;
+
+
+&lt;p&gt;One of the things that this has been making me think about is the use of marginalisation as an enabling technology. Many schemes for organising humanity along legible lines work much better if you can just get the people who don't fit to leave. Otherwise you'd have to force them to conform to the system (hard, probably causes rebellions), kill them (same. Also ethics I guess), or adapt the system in order to accommodate the actual richness of human experience (yeah right).&lt;/p&gt;
+
+
+&lt;p&gt;In the case of Zomia this is a flight from the large to the small - from the big states to the small isolated communities of the hills - but when it comes to towns there's an equal flight from the small to the large. The people who are weird and don't fit in nope out of the small towns and go find somewhere where they're less constrained. Small communities enforce their own sort of legibility on the people within them, and those who are illegible to them flee to the cities.&lt;/p&gt;
+
+
+&lt;p&gt;It may well be that small towns do exhibit the sort of love aesthetic that bell hooks describes, where everyone living in them promotes each other's spiritual growth, but if so they do so by driving out everyone who tries to &lt;a href="https://notebook.drmaciver.com/posts/2020-02-29-10:30.html"&gt;grow in ways that are not approved&lt;/a&gt;.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-04-25-10:40.html" rel="alternate"/>
   </entry>
 </feed>
