@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-04-25T14:18:57+01:00</updated>
+  <updated>2020-04-26T07:28:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,67 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-04-15-06:31.html</id>
-    <title>Capabilities can be coerced</title>
-    <updated>2020-04-15T08:51:37+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Capabilities can be coerced&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-04-15&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;If I can force you to take an action, that implies that you are able to take that action.
-The converse of this is that you are &lt;em&gt;not&lt;/em&gt; able to take that action, I cannot force you to do it.
-Thus, your inability gives you a certain power over me - you force me to plan in ways that compensate for this inability.&lt;/p&gt;
-
-
-&lt;p&gt;The classic example of this is how to win a game of Chicken (theoretically. I do not recommend you do this).
-Chicken is played as follows: Two people drive their cars directly at each other. The one who swerves, loses.&lt;/p&gt;
-
-
-&lt;p&gt;There is a simple winning move in Chicken: Visibly clamp your steering wheel, or otherwise remove your ability to swerve in a way that is visible to your opponent (the visibility part is &lt;em&gt;very&lt;/em&gt; important).
-Now your opponent knows that you not just won't swerve you &lt;em&gt;can't&lt;/em&gt; swerve, so they are forced to swerve instead.
-You win (unless your opponent has done the same thing at the same time of you, in which case you both lose very badly).&lt;/p&gt;
-
-
-&lt;p&gt;Thomas Schelling goes into this and similar things in great and illuminating detail in &lt;a href="https://amzn.to/3a7N3MM"&gt;The Strategy of Conflict&lt;/a&gt;, but this example has the core of it: When interacting with someone in a situation of conflict, the other party will choose their strategy based only on the moves that you can make, so removing the ability to make certain moves can cause them to choose strategies that are more advantageous to you.&lt;/p&gt;
-
-
-&lt;p&gt;Conflicts don't have to be quite as adversarial as the game of Chicken. Consider something like choosing a meal. Suppose you have a reasonably strong preference against eating meat. Chances are you're often going to be coerced (explicitly or implicitly) into eating meat a lot more often than you want. If, instead, you tell people that you're vegetarian and &lt;em&gt;don't&lt;/em&gt; eat meat, that coercion goes down significantly (not to zero, sadly, but you've got a stronger argument to make against them when they try).&lt;/p&gt;
-
-
-&lt;p&gt;(This is, of course, often also a game of chicken. More specifically a game of eating chicken).&lt;/p&gt;
-
-
-&lt;p&gt;This is also why today's favour is tomorrow's obligation: Once you have demonstrated the ability to perform the favour, now any future refusal to do it is evidence that you are choosing not to do it because it is known that you can do it, so the cost of refusal is now significantly higher.&lt;/p&gt;
-
-
-&lt;p&gt;This dynamic is, I think, at the core of a number of identities. As I've previously written, &lt;a href="https://www.drmaciver.com/2018/06/on-not-quite-fitting/"&gt;I'm something of a skeptic of the universality of "born this way"&lt;/a&gt; for sexualities (I'm agnostic as to whether some people's sexuality is biologically determined - it could well be the case, certainly, and I don't think it would be useful to argue with individuals' experiences of this, but at the very least I doubt it's the majority case).
-However, it's a very useful &lt;em&gt;political&lt;/em&gt; tool, because it allows you to credibly claim that people have to accept you as you are, because you do not have the option to be otherwise.&lt;/p&gt;
-
-
-&lt;p&gt;On what is, in some sense, the other side of the fence, I think this also explains many popular uses of evopsych (evolutionary psychology, that is to say explaining psychological features of behaviour by arguing that they were evolutionarily advantageous).&lt;/p&gt;
-
-
-&lt;p&gt;Evopsych has one really compelling "feature": It's so underdetermined and so hard to verify that you can use it to explain just about anything you want.
-That's not to say that evolution didn't influence our psychology. Of course it did. But the specific ways in which evolution influenced our psychology are &lt;em&gt;really&lt;/em&gt; hard to test for, and most evopsych arguments don't constitute anything remotely resembling a reasonable standard of evidence.&lt;/p&gt;
-
-
-&lt;p&gt;As a result if you are, say, a man who experiences a particular socially constructed version of masculinity that you're quite attached to and don't want to do the work of changing,
-evopsych is &lt;em&gt;really&lt;/em&gt; useful for you, because it lets you make the born this way argument - so sorry, can't possibly change this behaviour, it's just hardwired into us.&lt;/p&gt;
-
-
-&lt;p&gt;Fortunately, the internet seems to have iterated this observation to its logical conclusion, and we are now mostly credibly signalling that we are just unable to accept evopsych arguments.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-04-15-06:31.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-04-17-10:16.html</id>
     <title>Ubiquitous Incommensurability</title>
@@ -249,7 +188,7 @@ So, here we are presented with a policy trade off between injured feet and elect
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-04-19-10:52.html</id>
     <title>Notes on becoming a cis man</title>
-    <updated>2020-04-25T14:18:57+01:00</updated>
+    <updated>2020-04-25T14:51:48+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Notes on becoming a cis man&lt;/p&gt;
@@ -778,5 +717,105 @@ In a large city you may still struggle to find people like you, but those people
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-04-25-10:40.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-04-26-07:28.html</id>
+    <title>Fixed and growth relationships</title>
+    <updated>2020-04-26T07:28:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Fixed and growth relationships&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-04-26&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Today the successor group to our Rewriting the Rules reading group is meeting, and we're talking about daily habits we've tried to implement over the last couple of weeks. My habit has been rereading - dropping into books I've already read and reading at least one page from them (usually more, but the success criterion is one page). That habit lead more or less directly to the current "Today's reading" style of notebook posts, so I thought I would honour it with an appropriate choice of book today.&lt;/p&gt;
+
+
+&lt;p&gt;From "&lt;a href="https://amzn.to/3eQhfQ3"&gt;Rewriting the Rules&lt;/a&gt;", Page 207:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Actually, fixing or objectifying yourself is extremely common. It comes back to the sense that we're lacking, which we explored in Chapter 2. Much of the power of falling in love comes from the fact we find ourselves fixed in the gaze of another person in a wonderful way. This person dancing opposite me in a nightclub, sitting across from me over a candlelit dinner, or lying next to me in bed, gazes at me in adoration. The vision of myself that I see reflected in their eyes is a person I'd dearly love to be. It's like they see all the good stuff and none of the bad. As long as they look at me like that perhaps I can pretend there &lt;em&gt;isn't&lt;/em&gt; any bad in me. Maybe they're right and I really &lt;em&gt;am&lt;/em&gt; that loveable through and through. No wonder love can feel like a drug we can't get enough of.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;In context "fixed" is meant to mean "set" or "frozen", not the opposite of broken. MJB is talking about the tendency to want to see ourselves as singular, well-defined, identities rather than, to use their term, plural and in progress. This is in a chapter about conflict, and follows on from talking about how Sartre considers us to be unavoidably in conflict with each other.&lt;/p&gt;
+
+
+&lt;p&gt;Things that immediately come to mind in response to this:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Naturally, thinking about conflict makes me think of Thomas Schelling's book about nuclear war, &lt;a href="https://amzn.to/3bGnLXp"&gt;The Strategy of Conflict&lt;/a&gt; where he defines conflicts as positive-sum games with imperfectly aligned incentives. This is a perfect way of looking at relationships, romantic and otherwise.&lt;/li&gt;
+&lt;li&gt;Thinking about relationship problems inevitably makes me think of my own post &lt;a href="https://notebook.drmaciver.com/posts/2020-03-24-09:46.html"&gt;Trust beyond reason&lt;/a&gt;, because it has become my explain-everything theory for relationship problems: Relationship problems exist because you do not trust someone at a level that is needed for their importance to you to be safe.&lt;/li&gt;
+&lt;li&gt;Relationships as fixing you contrasts interestingly with bell hooks's notion of love as growth that I mentioned in my &lt;a href="https://notebook.drmaciver.com/posts/2020-04-25-10:40.html"&gt;last post&lt;/a&gt;, putting me in mind of a relationship version of &lt;a href="https://en.wikipedia.org/wiki/Mindset#Fixed_and_Growth_Mindset"&gt;fixed vs growth mindset&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;I have roughly two experiences of romantic love. In one, it was definitely quite in line with this idea of fixing each other into ideal versions of our selves. In the other (the current one), it is much more in line with bell hooks's notion of love as growth. The latter is much better, let me tell you.&lt;/p&gt;
+
+
+&lt;p&gt;Sartre is correct, people are unavoidably in conflict, at least in the Schelling sense: Our relationships are positive sum games, in which our incentives are perfectly aligned. What we want out from the other is not exactly the same as what the other wants for themself. That doesn't necessarily mean that we would ever want to force them to do what we want instead of what they want, it just means that we have preferences and feelings about what they do that are somewhat separated from their own.&lt;/p&gt;
+
+
+&lt;p&gt;In and of itself there is nothing wrong with this, but one thing that I think goes wrong is that we are terrified of our partners rejecting us, and we fear that going against their preferences will cause them to do so. We may not believe this, but we certainly &lt;a href="https://notebook.drmaciver.com/posts/2020-03-14-13:55.html"&gt;alieve&lt;/a&gt; it.&lt;/p&gt;
+
+
+&lt;p&gt;One strategy for conflict is to credibly threaten to punish the other party for going against your interests. Even if the punishment is costly, this can be worth doing. Mutually Assured Destruction is an example of this - once you know the other side has launched nuclear weapons at you, there is literally no benefit to you launching nuclear weapons back. It's a purely vindictive act that will not save you but will destroy them. However, the fact that you were able to credibly commit to doing this makes it very unlikely (unless they fuck up, which is always the concern) that they will ever launch those nuclear missiles in the first place. By making the threat you have changed the pay off matrix, so that the option where they launch nuclear missiles at you is no longer high payoff for them (because it results in their obliteration as well).&lt;/p&gt;
+
+
+&lt;p&gt;In this analogy, the fear of rejection is the nuclear threat.
+While rejection is not quite as bad as having your country obliterated and millions of lives lost to atomic fire, from the inside it can be hard to remember that, especially if you're &lt;a href="https://www.rewriting-the-rules.com/self/trauma-and-cptsd-101/"&gt;traumatised&lt;/a&gt; by a history of being treated badly (whether by family, peers, or in relationships).&lt;/p&gt;
+
+
+&lt;p&gt;You may argue that one should note be adopting manipulative tactics in a relationship (you certainly shouldn't be &lt;em&gt;threatening&lt;/em&gt; your partner!), and you would be right, but unfortunately it's not that simple: Generally speaking tactics we adopt are not the result of deliberate forethought, they are the result of our behaviours being shaped over time in response to feedback and incentives. Many of our behaviours are &lt;a href="https://notebook.drmaciver.com/posts/2020-02-20-09:31.html"&gt;legacy code&lt;/a&gt;, and many more of them are &lt;a href="https://notebook.drmaciver.com/posts/2020-02-28-06:33.html"&gt;contingent cultural effects&lt;/a&gt; that we have learned in response to each other in a given context.&lt;/p&gt;
+
+
+&lt;p&gt;The nice thing about mutually assured destruction is that, generally speaking, nobody dies in atomic fire. That's good. It is strictly better than people dying in atomic fire. Good outcome.&lt;/p&gt;
+
+
+&lt;p&gt;The &lt;em&gt;less&lt;/em&gt; nice thing about mutually assured destruction is that &lt;em&gt;everybody is constantly stressed out about the possibility of dying in atomic fire&lt;/em&gt;. This is still vastly better than dying, but is quite a lot worse than not being stressed out about dying.&lt;/p&gt;
+
+
+&lt;p&gt;The same is true in relationships. Not being rejected is good, but being constantly afraid of being rejected as a way to achieve that is bad. This fear of rejection is a major part of what causes us to fix ourselves into a version seen by our partner: We try to fix ourselves as the version that will not be rejected.&lt;/p&gt;
+
+
+&lt;p&gt;bell hooks defines love as "The will to extend one's self for the purpose of one's own or another's spiritual growth". But growth &lt;a href="https://notebook.drmaciver.com/posts/2020-03-18-11:24.html"&gt;requires safety&lt;/a&gt; - if you are living in fear of rejection, you will not feel safe, and you will not be able to grow.&lt;/p&gt;
+
+
+&lt;p&gt;This means love in hooks sense requires us to &lt;a href="https://notebook.drmaciver.com/posts/2020-04-06-15:20.html"&gt;be safe for others&lt;/a&gt; who we are to be in a relationship with. If your partner is to express themselves honestly, it needs to be safe for them to do so. This means you need to:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Not react with judgement or blame when they tell you how they're feeling.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Also&lt;/em&gt; not automatically change your behaviour to accommodate everything that they're feeling.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;The first is a form of rejection, and is exactly what people are afraid of. The second is often an overreaction and, because your partner loves you, may cause them to avoid telling you things for fear of causing you harm.
+After all, if you know that someone you love will react as if they're a terrible person because they caused you some mild discomfort, are you going to share that discomfort with them?&lt;/p&gt;
+
+
+&lt;p&gt;Once you have this safety, it becomes possible to build trust to a much greater degree, because you know that that trust building will not be met with rejection. This is the extending of one's self that bell hooks is talking about: You are putting yourself into the relationship, in a way that allows the other to know you, and gives them &lt;a href="https://notebook.drmaciver.com/posts/2020-03-17-11:40.html"&gt;permission&lt;/a&gt; to be known by you in turn.&lt;/p&gt;
+
+
+&lt;p&gt;This also allows you to know yourself in a way that is almost impossible to achieve on your own.
+Self-awareness allows us to know many things about our selves that are not visible to others,
+and that this fear of extending ourselves into the world causes us to deliberately hide from them,
+but we discount how many things about ourselves that we have no idea about are visible to others.&lt;/p&gt;
+
+
+&lt;p&gt;In "&lt;a href="https://amzn.to/3cOWfXU"&gt;Mindfulness in 3D&lt;/a&gt;" Peter Nobes talks about &lt;em&gt;Faulty Sensory Appreciation&lt;/em&gt; - the idea that our image of our self, especially of our posture, is often completely wrong in ways that are really obvious to others. He goes into this less in the book, but talking to Peter makes it clear how broadly he thinks it applies, and I agree. Often our moods are more obvious to those around us than they are to ourselves. Certainly how we come across to others is often invisible to us, and is often reflective of underlying learned reactions that we are not consciously aware of.&lt;/p&gt;
+
+
+&lt;p&gt;When our reactions in a relationship are safe, it becomes possible not only for our partners to tell us about their selves, but also for them to tell us about ourselves, and through this reciprocated love we can grow together.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-04-26-07:28.html" rel="alternate"/>
   </entry>
 </feed>
