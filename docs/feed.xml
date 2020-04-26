@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-04-26T12:07:00+01:00</updated>
+  <updated>2020-04-26T13:18:53+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -749,7 +749,7 @@ but we discount how many things about ourselves that we have no idea about are v
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-04-26-12:07.html</id>
     <title>78 Thinking Hats</title>
-    <updated>2020-04-26T12:07:00+01:00</updated>
+    <updated>2020-04-26T13:18:53+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;78 Thinking Hats&lt;/p&gt;
@@ -793,14 +793,12 @@ but we discount how many things about ourselves that we have no idea about are v
 
 
 &lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;White Hat&lt;/strong&gt; White is neutral and objective. The white hat is concerned with objective facts and figures.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Red Hat&lt;/strong&gt; Red suggests anger (seeing red), rage and emotions. The red hat gives the emotional view.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Black Hat&lt;/strong&gt; Black is sombre and serious. The black hat is cautious and careful. It points out the weaknesses in an idea.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Yellow Hat&lt;/strong&gt; Yellow is sunny and positive. The yellow hat is optimistic and covers hope and positive thinking.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Green Hat&lt;/strong&gt; Green is grass, vegetation and abundant, fertile growth. The green hat indicates creativity and new ideas.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Blue Hat&lt;/strong&gt; Blue is cool, and it is also the colour of the sky, which is above everything else. The blue hat is concerned with control, the organization of the thinking process and the use of other hats.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;White Hat&lt;/strong&gt; White is neutral and objective. The white hat is concerned with objective facts and figures.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Red Hat&lt;/strong&gt; Red suggests anger (seeing red), rage and emotions. The red hat gives the emotional view.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Black Hat&lt;/strong&gt; Black is sombre and serious. The black hat is cautious and careful. It points out the weaknesses in an idea.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Yellow Hat&lt;/strong&gt; Yellow is sunny and positive. The yellow hat is optimistic and covers hope and positive thinking.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Green Hat&lt;/strong&gt; Green is grass, vegetation and abundant, fertile growth. The green hat indicates creativity and new ideas.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Blue Hat&lt;/strong&gt; Blue is cool, and it is also the colour of the sky, which is above everything else. The blue hat is concerned with control, the organization of the thinking process and the use of other hats.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 
