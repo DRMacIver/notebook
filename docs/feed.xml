@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-04-28T08:11:19+01:00</updated>
+  <updated>2020-04-29T09:33:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,85 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-04-21-08:02.html</id>
-    <title>Does a fish have a face?</title>
-    <updated>2020-04-21T08:44:15+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Does a fish have a face?&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-04-21&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I'm trying a new thing today, which is to integrate my daily notebook practice, my daily rereading practice, and a bit of &lt;a href="https://notebook.drmaciver.com/posts/2020-02-25-10:39.html"&gt;randomization of decision making&lt;/a&gt;. I don't plan to do this every day, but I may do it more often.&lt;/p&gt;
-
-
-&lt;p&gt;The basic mechanism:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;I pick a book of my choosing.&lt;/li&gt;
-&lt;li&gt;I generate a page number uniformly at random from the main book contents.&lt;/li&gt;
-&lt;li&gt;I pick an interesting passage and copy it out here.&lt;/li&gt;
-&lt;li&gt;I then write something inspired by it.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;If this takes off I'll probably build some tooling into the notebook for getting me to do this properly but for now I'm mostly hand cranking it.&lt;/p&gt;
-
-
-&lt;p&gt;This is partly inspired by having recently-ish been listening to &lt;a href="https://www.harrypottersacredtext.com/"&gt;Harry Potter and the Sacred Text&lt;/a&gt;. I'm deeply indifferent to Harry Potter but have been enjoying their sacred text reading techniques. This process in particular is very loosely inspired by their (in turn somewhat loosely interpreted) practice of &lt;a href="https://en.wikipedia.org/wiki/Lectio_Divina"&gt;Lectio Divina&lt;/a&gt;&lt;/p&gt;
-
-
-&lt;p&gt;Today's reading comes from &lt;a href="https://amzn.to/3exHrih"&gt;Finding Our Sea Legs&lt;/a&gt;, page 126:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;While he hedges his bets when it comes to dogs, it is hard to imagine Levinas having much time for the idea that a fish might have a face, or the idea that I could be infinitely responsible for a fish. Fish, as far as we human beings are concerned, are more alien to us than the stranger who knocks on our door, or the dog who wags his tail in greeting. They move in a different element, they have no lungs, their blood is cold, not warm, they do not sleep. And yet, while they may not have faces in the sense that Levinas means, they still hav efaces, in the ordinary everyday sense: We can look them in the eye, and these denizens of another world can look back.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;This might seem like a strange passage (of course fish have faces) but the idea of a "face" in this context is more about our experience of the other as a person. Backtracking to earlier in the book (pages 52-53) we have the following passage:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;This curious and seemingly paradoxical idea of the 'face' is that the heart of Levinas's phenomenology of ethics. When we encounter the face of another [our relationship] is 'straightaway ethical.' When I encounter another person, I find myself responsible for them - I find myself unable to do anything other than to respond to them &lt;em&gt;as&lt;/em&gt; another person - whether I like it or not.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;So the question of whether a fish "has a face" is about whether our interactions with a fish have this phenomenological character: Do we treat a fish as a subject of ethical experience?&lt;/p&gt;
-
-
-&lt;p&gt;Experiences on this tend to differ, both by person and by context. Many people are vegetarian precisely because they experience animals as ethically relevant, and I know one person who as a child became vegetarian in a way that they literally framed as not wanting to eat anything with a face, a category in which they included fish.&lt;/p&gt;
-
-
-&lt;p&gt;Personally, I don't consider fish to be all that ethically relevant (oddly, I consider animals more ethically relevant than fish and yet I eat animals and mostly don't eat fish. This is primarily for environmental reasons though). I will not mourn the death of a fish. And yet, encountering a fish out of water, gasping on dry land, it is hard not to feel sorry for it.
-In the abstract, I don't care about the fish, but confronted with the actual reality of the fish and its suffering, it is hard not to experience it as ethically relevant, as having a face.&lt;/p&gt;
-
-
-&lt;p&gt;Almost (I may have been subconsciously inspired in my choice of book) entirely coincidentally, yesterday I was listening to &lt;a href="https://www.preposterousuniverse.com/podcast/2019/02/18/episode-34-paul-bloom-on-empathy-rationality-morality-and-cruelty/"&gt;the Mindscape podcast episode with Paul Bloom&lt;/a&gt;, the author of &lt;a href="https://amzn.to/2xCBEYd"&gt;Against Empathy&lt;/a&gt; (which I haven't read).
-His essential argument is that this empathic experience leads us astray from good ethical behaviour. It causes us to overfocus on the individual in front of us - this empathy is what causes us to treat the fish as ethically relevant even if we don't "rationally" believe it to be. It's what causes us to be kind to our neighbour but ignore millions of people living in poverty.&lt;/p&gt;
-
-
-&lt;p&gt;It's also what causes us to overvalue people like us and undervalue people different to us - it's much easier to be empathic to someone whose lived experience we can easily understand, and if we tie our ethics to our empathy then we will tend to prioritise those like us and neglect the Other.&lt;/p&gt;
-
-
-&lt;p&gt;Of course, one can bite this philosophical bullet and say that yes we should be rational in our ethics but also we should consider fish as ethically relevant. This is how you end up with things like &lt;a href="https://concepts.effectivealtruism.org/concepts/wild-animal-suffering/"&gt;Effective Altruists who are very concerned about wild animal suffering&lt;/a&gt;. It's possibly they're right - I don't agree with their concerns, but I don't think they're in principle invalid.&lt;/p&gt;
-
-
-&lt;p&gt;I do think he has a point, and that a certain amount of rationality and deliberation in ethics is important, but I think too much of that will drive us towards utilitarianism, which is more like &lt;a href="https://notebook.drmaciver.com/posts/2020-04-18-11:10.html"&gt;policy&lt;/a&gt; than the sort of living ethics that I think improves our behaviour in day to day life.&lt;/p&gt;
-
-
-&lt;p&gt;It's worth using rationality as a tool to improve our ethical behaviour, but &lt;a href="https://notebook.drmaciver.com/posts/2020-04-14-13:56.html"&gt;emotion is key to effective rationality&lt;/a&gt;, and empathy and the experience of the other is a crucial tool in navigating any sort of rational ethics.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-04-21-08:02.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-04-22-08:31.html</id>
     <title>Power, baby, power</title>
@@ -909,5 +830,163 @@ When people ask you to spend your energy on them, you have to be able to say no.
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-04-28-06:45.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-04-29-09:33.html</id>
+    <title>The Casting of Leaders</title>
+    <updated>2020-04-29T09:33:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;The Casting of Leaders&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-04-29&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Today's Card: The Magician:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;The Magician is the archetype of the active, masculine principle - the ultimate achiever. He symbolizes the power to tap universal forces and use them for creative purposes. Note his stance in the picture. He acts as a lightening rod - one arm extended up into the Divine for inspiration, the other pointing toward Earth to ground this potent energy. [note] His abilities appear magical at times because his will helps him achieve what seem to be miracles.&lt;/p&gt;
+&lt;p&gt;What makes the Magician so powerful? First, he is not afraid to act. He believes in himself and is willing to put that belief on the line. He also knows what he intends to do and why. He doesn't hesitate because he understands his situation exactly. The Magician can focus with single-minded determination. As long as he remembers the divine source of his power, the Magician remains the perfect conduit for miracles.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;Susanna Clarke's "&lt;a href="https://amzn.to/3cYqmwd"&gt;Jonathan Strange and Mr Norrel&lt;/a&gt;" is my natural association for magicians.
+A random selection from it gives:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;The old King is dead. The new King approaches! And at his approach the world sheds its sorrow. The sins of the old King dissolve like morning mist! The world assumes the character of the new. His virtues fill up the wood and the wold!"&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;(I've misplaced my physical copy, so this comes from a slightly dodgy PDF so no page number for now until a new copy arrives)&lt;/p&gt;
+
+
+&lt;p&gt;In this scene, Stephen Black has killed The Man With The Thistledown Hair (yes this is really how he is referred to throughout the entire book). As a consequence of this, Stephen Black is now the new king of The Man With The Thistledown Hair's Faerie kingdom of Lost Hope. He intends to be a very different king:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;"This house," he told them at last, "is disordered and dirty. Its inhabitants have idled away
+their days in pointless pleasures and in celebrations of past cruelties - things that ought not
+to be remembered, let alone celebrated. I have often observed it and often regretted it. All
+these faults, I shall in time set right."&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;This isn't the main point I want to cover in this post, but a thing I can't help but noticing is that the interactions between Stephen Black and The Man With The Thistledown Hair are an interesting study in colonialism. Each is a member of a colonised people who has been shaped into a particular vision of what Englishness looks like, and each has deployed that Englishness against others.&lt;/p&gt;
+
+
+&lt;p&gt;In the case of The Man With The Thistledown Hair, he has spent the entire book tormenting Stephen Black by "helping" him in ways that are of no help whatsoever and mostly cause him distress, all the while ignoring what he wants and needs.
+Principle among those is that he wants and needs The Man With The Thistledown Hair to &lt;em&gt;leave him alone&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Stephen Black, meanwhile, when given power over Faeries responses as the British (really, the English) have always done: By denigrating the local population as disordered, unclean, and slovenly, and in need of having some proper British values imposed upon them.&lt;/p&gt;
+
+
+&lt;p&gt;(In the context of the story he is of course &lt;em&gt;right&lt;/em&gt; that the Faerie are these things, but we are usually right in the version of the stories we tell, and Jonathan Strange and Mr Norrell is very English in its viewpoint).&lt;/p&gt;
+
+
+&lt;p&gt;The idea of the new king as the opportunity for the rebirth of society is an interesting one, and is in many ways how we view leaders more broadly. It typically fails in practice, because a leader is less important than the inertia of the system they lead, but we nevertheless persist in the idea that it is possible, and I think a lot of this is because of the role leaders serve for us as vessels into which we can pour our hopes.&lt;/p&gt;
+
+
+&lt;p&gt;I've recently finished reading James C. Scott's "&lt;a href="https://amzn.to/2YfwKer"&gt;The Art of Not Being Governed&lt;/a&gt;". Chapter 8, "Prophets of Renewal", is about how many of the recurring rebellions by the hill people of South East Asia against the valley dwelling padi states are lead by people styling themselves as prophets and miracle workers (magicians!).&lt;/p&gt;
+
+
+&lt;p&gt;These miracle-workers are often themselves the subject of prophecy, the subject of utopian visions in which the oppressive state is replaced with a utopian one:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;That a Karen King would yet appear.
+The Talain [Mon] Kings have had their season
+The Burmese Kings have had their season
+ANd the foreign Kings will have their season
+But the Karen King will yet appear
+When the Karen King arriaves
+There will only be one monarch
+When the Karen King arrives
+There will be neither rich nor poor
+When the Karen King arrives
+Every thing [creature] will be happy
+Lions and leopards will lose their savageness&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;(Please note that &lt;a href="https://en.wikipedia.org/wiki/Karen_people"&gt;the Karen in question&lt;/a&gt; have no desire to speak to your manager)&lt;/p&gt;
+
+
+&lt;p&gt;These prophecies are part of a general cultural impetus to rebellion and, as Scott puts it, "prophets are a dime a dozen". It is less that prophets create rebellions and more that prophets are created by the people they lead:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Charisma is, above all, a specific cultural relationship between a would-be prophetic figure and his or her potential following. And because it is a relationship or an interpresonal resonance, we cannot claim that an individual has charisma in the same way we might say that someone has a gold coin in his pocket.&lt;/p&gt;
+&lt;p&gt;[...] a charismatic connection might be conceived as a specific congregation looking for a preacher whose message it can wholeheartedly embrace and whom it believes it can trust. It is as if the destination is largely known and specified (however ambitious it may be), and the congregation is in search of reliable transportation. The prophet is, in this sense, a vehicle.&lt;/p&gt;
+&lt;p&gt;[...]&lt;/p&gt;
+&lt;p&gt;It is the society within which a successful prophet appears that, in effect, lays down the basic script that shapes the prophet's repertoise.&lt;/p&gt;
+&lt;p&gt;[...]&lt;/p&gt;
+&lt;p&gt;Let us imagine a bard who lives exclusively by the voluntary contributions of ordinary people in the marketplace. And let us assume, for the sake of argument, that each of those who like what he sings gives him an identical small "copper." Having conjured up a bard who wants to please a large audience, let us further imagine that this bard has a repertoire of, say, a thousand songs and stories from which to select. Assuming that his audience has definite tastes, I imagine that, little by little, as the bard comes to know his audience, the actual songs he sings in the market square - perhaps even the order and style in which he sings them - will come to more closely approximate the distribution of tastes among his audience.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;Rather than the prophets leading the the people into rebellion, prophets are a technology that the people use to achieve their goal of rebellion.
+A &lt;a href="https://notebook.drmaciver.com/posts/2020-04-13-11:35.html"&gt;domus&lt;/a&gt; forms between the general memetic background of the people, their behaviour, and the behaviour of the prophet, with each shaping the others to be better suited to their needs.&lt;/p&gt;
+
+
+&lt;p&gt;Scott is quick to point out that we do need to consider the individual prophets in this:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;[This analogy] allows too little for the creativity of the prophet and his capacity to add to the repertoire and to change tastes.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;The prophet is absolutely a shaper of the rebellion, but what they are shaping is a kind of... filtering and simplification of the memetic background. A large body of knowledge and beliefs is being filtered through the prophet, and the prophet's job is to essentially distill it into a coherent and punchy narrative. The prophet is the elevator pitch for a larger body of cultural knowledge, and which of many potential prophets succeed is a function of how well they embody this role.&lt;/p&gt;
+
+
+&lt;p&gt;Though we can think of the prophet as the magician, like the two magicians of the book they are also the spell:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;"They have their faults, as other men do, but their achievements are still
+remarkable. Make no mistake; I am John Uskglass's man. Or would be, if he were here. But
+you must admit that the restoration of English magic is their work, not his."&lt;/p&gt;
+&lt;p&gt;"Their work!" scoffed Vinculus. "Theirs? Do you still not understand? They are the spell John
+Uskglass is doing. That is all they have ever been. And he is doing it now!"&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;Strange and Norrell may be the spell cast by John Uskglass, but in many ways John Uskglass it not a person, but a personification. John Uskglass &lt;em&gt;is&lt;/em&gt; English magic, in more sense than one: He is the codifier of it, but also English magic is grounded in his alliances with England. If Strange and Norrell are the spell cast by John Uskglass, John Uskglass is as much the spell cast by England.&lt;/p&gt;
+
+
+&lt;p&gt;Stephen Black, too, is ultimately the product of this sort of spellcraft. His rise to power comes off the back of a literal spell cast by Strange and Norrell that causes him to, temporarily, embody the power of English magic. Although he is no magician-king, his ability to channel the power of English magic is what grants him the ability to defeat The Man With The Thistledown Hair.&lt;/p&gt;
+
+
+&lt;p&gt;(I cannot help but point out how interesting it is that English magic employed by English aristocrats is both what decides a conflict between two colonised people, and what brought them into conflict in the first place)&lt;/p&gt;
+
+
+&lt;p&gt;Prior to the casting of that spell, Stephen Black is a character distinctly lacking in agency. This isn't his fault, he's merely trapped by someone with significantly more power than him. Prior to that point, all he can do is appease and try to limit the damage that The Man With The Thistledown Hair can do.&lt;/p&gt;
+
+
+&lt;p&gt;However, once he is granted power, with it comes agency: He has the ability to act on that power, and he does.
+He embodies the card of the Magician, and through his willingness to act becomes a conduit for miracles.&lt;/p&gt;
+
+
+&lt;p&gt;This, I think, is the other aspect of the role of prophet in a rebellion that it is important to acknowledge:
+The prophet may be but the conduit for the power that cast them in this role,
+but that power grants them a greater agency than they would otherwise possess, and it is that agency that allows them to make those choices.&lt;/p&gt;
+
+
+&lt;p&gt;In many ways, this increased agency is the purpose of the leader. The &lt;a href="https://notebook.drmaciver.com/posts/2020-04-24-09:38.html"&gt;basic unit of democracy is the discussion&lt;/a&gt;, and discussion is slow and ponderous.
+The reason why we create and empower these leaders is not just to give &lt;em&gt;them&lt;/em&gt; agency, but to experience that agency ourselves through them.&lt;/p&gt;
+
+
+&lt;p&gt;This approach of course has many failure modes, and we're seeing many of those modes in the rise of populism, but it is an understandable desire, and a powerful social technology if we can use it safely. If we get good enough at that technology, perhaps it really will become indistinguishable from magic.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-04-29-09:33.html" rel="alternate"/>
   </entry>
 </feed>
