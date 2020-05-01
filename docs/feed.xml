@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-04-30T15:20:00+01:00</updated>
+  <updated>2020-05-01T08:32:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,99 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-04-23-07:48.html</id>
-    <title>Proportionality and identity</title>
-    <updated>2020-04-23T12:08:45+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Proportionality and identity&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-04-23&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Today's reading comes from &lt;a href="https://amzn.to/2VMdTVs"&gt;Random Justice: On Lotteries and Legal Decision-Making&lt;/a&gt;, page 75-76:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;random selection is intended to provide defendants and litigants with the opportunity to be tried by a representative cross-section of the population. The idea here is that fair and democratic social arrangements require that people be accorded the chance to be tried by juries drawn from a cross-sectionally representative pool. That a randomly selected jury will provide the opportunity to be tried by a representative cross-section of the population is, however, by no means guaranteed. [...] a perfectly representative sample is the average ideal of many random samples of a population and is not to be expected in any particular randomly drawn sample - or on any particular petit jury. Perhaps most importantly of all, even if random selection were to yield a jury perfectly representative of the population, the appropriateness of the outcome might still be contested.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;This is actually a really excellent point for tying together a number of my interest areas.&lt;/p&gt;
-
-
-&lt;p&gt;In particular it prompts me to think about:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;The difference between statistical fairness and individual fairness.&lt;/li&gt;
-&lt;li&gt;What "representative" really means.&lt;/li&gt;
-&lt;li&gt;Is representativeness good?&lt;/li&gt;
-&lt;li&gt;The interplay between justice and identity.&lt;/li&gt;
-&lt;li&gt;The role of legibility in diversity initiatives.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;As is well known &lt;a href="https://www.drmaciver.com/2013/09/towards-a-more-perfect-democracy/"&gt;I'm rather a big fan of random selection&lt;/a&gt;, and one of the reasons for it is the guaranteed proportionality properties of it. However, there are some major distinctive features of juries compared to the situations I've focused on that I'd not previously appreciated until reading this passage just now (despite having read it before!).&lt;/p&gt;
-
-
-&lt;p&gt;First off, consider the difficulty of representativeness. Say we've got 12 jurors. Any group whose prevalence in the population is not a multiple of \(\frac{1}{12}\) will not be perfectly represented in the jury - they'll either be over or underrepresented.&lt;/p&gt;
-
-
-&lt;p&gt;This is a particularly big deal for minority groups. For example, consider Muslims. &lt;a href="https://en.wikipedia.org/wiki/Islam_in_the_United_Kingdom"&gt;Wikipedia tells me&lt;/a&gt; that 4.4% of the UK population are muslim. Therefore the correct number of muslims on a jury of 12 people is 0.528. This is, obviously, hard to achieve.
-Random selection achieves this on average by assigning one muslim to the jury 32% of the time, no muslims 59% of the time, and more than one muslim 9% of the time (these numbers are all rounded). That's all very well, but if you're a muslim and you consider it important to have muslims on your jury, it's of small comfort if you're one of the 59% who doesn't get any. Statistical fairness is all very well, but an individual up for trial might quite reasonably expect that it should be fair in their individual case too.&lt;/p&gt;
-
-
-&lt;p&gt;This leads further to the question of which groups you want represented.
-For example, it might be important to consider ethnicity.
-Again, &lt;a href="https://en.wikipedia.org/wiki/White_British"&gt;according to Wikipedia&lt;/a&gt;, 81.9% of the UK population is white. This means you want 9.83 white people on your jury. Depending on whether you round that to 9 or 10, that gives you 2 or 3 people of colour on your jury. But which racial groups do you want in those 2 or 3? People of colour have certain unifying experiences, certainly (e.g. being on the receiving end of racism), but they're very far from a unified group.&lt;/p&gt;
-
-
-&lt;p&gt;This gets worse when you consider intersections. For example, one can be representative of both ethnicity and gender without being representative of their intersection. Does it matter if all three of your people of colour are men but you make up the gender balance by including more white women? It probably does. Intersectionality tells us that the interplay of racism and sexism is significant in ways that are more than the sum of their parts.&lt;/p&gt;
-
-
-&lt;p&gt;Let's take a step back and ask why this matters. It matters because how we form judgements about people is significantly affected by how legible they are to us, and identity is a big part of this.
-I've &lt;a href="https://www.drmaciver.com/2019/06/the-ethics-of-false-negatives-in-interviewing/"&gt;previously written about how this affects interviewing&lt;/a&gt;: The heuristics we use for judging people are based on those that are reliable for people who we are familiar with, a group that is generally heavily biased towards people who are like us. These heuristics are not necessarily prejudicial outside that group, but they may be wildly inaccurate.&lt;/p&gt;
-
-
-&lt;p&gt;This suggests one obvious modification to the principle of representativeness in juries: Where the speaker is part of a minority group, we should aim to err on the side of overrepresentation of that group in the jury.&lt;/p&gt;
-
-
-&lt;p&gt;However, this is tricky, and risks falling afoul of what Amartya Sen, in his book &lt;a href="https://amzn.to/3cDC1jV"&gt;Identity and Violence&lt;/a&gt; calls the &lt;em&gt;assumption of singularity&lt;/em&gt; - the idea that we all have a single immutable identity that has primacy.&lt;/p&gt;
-
-
-&lt;p&gt;A particularly ironic example of how identity can affect our judgement comes from Miranda Fricker's book, &lt;a href="https://amzn.to/3cGXfgG"&gt;Epistemic Injustice&lt;/a&gt;:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Imagine that a hearer responsibly judges a speaker to be untrustworthy (because insincere) owing to the fact that the speaker avoids looking her in the eye, frequently looks askance, and pauses self-consciously in mid-sentence as if to work out his story. The speaker’s behaviour justifies the hearer’s judgement inasmuch as it fits an empirically reliable stereotype of insincerity. In fact, however, this individual is speaking entirely ingenuously, and his shifty manner is simply due to the rather idiosyncratic manifestations of his extraordinary personal shyness. This speaker, let us agree, constitutes an exception to an empirically reliable rule, and thus the testimonial injustice he suffers is caused not by prejudice but simply by bad luck. What should be said about such an example?&lt;/p&gt;
-&lt;p&gt;If we were to consider this shyness example to be an instance of testimonial injustice, then it would be a case of non-culpable testimonial injustice: clearly the hearer has done nothing for which she is blameworthy, either epistemically or ethically.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;What should be said about this example is that somehow Fricker has managed to be either unaware of or indifferent to the existence of people with autism. She has taken a generally (but not wholly! Difficulty with eye contact may also result from e.g. trauma) reliable heuristic on neurotypical people, and declared that because the error is not based on an identity group that she recognises as valid, the error is not culpable.&lt;/p&gt;
-
-
-&lt;p&gt;This is almost an example of what I've previously described as &lt;a href="https://notebook.drmaciver.com/posts/2020-02-23-09:37.html"&gt;legibility privileges&lt;/a&gt;: The relevant features of identity are ones that are, apparently, illegible to Fricker (autism as a feature identity is perfectly legible, but &lt;a href="https://notebook.drmaciver.com/posts/2020-03-02-09:31.html"&gt;legibility is a relationship&lt;/a&gt;), and so are discounted from consideration.
-If you have an autistic muslim woman on trial and the jury selection carefully is carefully padded out with muslim women in order to give her a fair trial but you end up with a jury of 100% neurotypicals (which is highly likely due to the relatively low prevalence of autism) then the selection would potentially be completely missing the point.&lt;/p&gt;
-
-
-&lt;p&gt;As with many seemingly intractable problems, this admits a relatively feasible solution: You have to ask them. People have choice over what aspects of their identity have primacy, and we have a moral duty to respect those choices.&lt;/p&gt;
-
-
-&lt;p&gt;In the case of the jury, what seems like a natural solution to me is to start the process of jury selection with a negotiation between the prosecution, the defence, and the judge, about some criteria that the defence would like to ensure is represented in the jury, and then ensure that (say) three out of the twelve jurors satisfy those criteria. Both those three and the other nine would still be randomly selected, but they would be selected from within fixed subsets of the population.&lt;/p&gt;
-
-
-&lt;p&gt;You'd need careful guidelines for how this is to be implemented in practice, and I'm not at all an expert in law or jury selection, so it's likely that I'm missing important features, but I do think some principle like this is worth considering every time you're making a decision about someone - whether it's a jury, as in this example, a hiring panel, or otherwise.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-04-23-07:48.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-04-24-09:38.html</id>
     <title>Democracy isn't just voting</title>
@@ -919,7 +826,7 @@ The reason why we create and empower these leaders is not just to give &lt;em&gt
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-04-30-15:20.html</id>
     <title>Care Work and Fixing Things</title>
-    <updated>2020-04-30T15:20:00+01:00</updated>
+    <updated>2020-04-30T20:12:35+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Care Work and Fixing Things&lt;/p&gt;
@@ -1072,5 +979,189 @@ The reason why we create and empower these leaders is not just to give &lt;em&gt
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-04-30-15:20.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-05-01-08:32.html</id>
+    <title>Ritual and Freedom</title>
+    <updated>2020-05-01T08:32:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Ritual and Freedom&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-05-01&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Cards:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.learntarot.com/maj19.htm"&gt;The Sun&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.learntarot.com/p9.htm"&gt;The Nine of Pentacles&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.learntarot.com/maj03.htm"&gt;The Empress&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;I drew the nine of pentacles first and my reaction was an instant dislike, so I drew another two cards to see if they could help me make sense of this a bit better.&lt;/p&gt;
+
+
+&lt;p&gt;The Nine of Pentacles and the Empress are in natural opposition to each other. The nine represents discipline and refinement, in opposition to the Empress's focus on luxury and the senses.&lt;/p&gt;
+
+
+&lt;p&gt;Part of why I dislike the Nine of Pentacles so much is how relatable she is. Not necessarily as an internal experience, but as a role in which I am cast. I am &lt;em&gt;not&lt;/em&gt; a disciplined person, but I often come across that way as part of &lt;a href="https://www.drmaciver.com/2018/11/reaching-into-the-whirlwind/"&gt;my attempts to claw back some structure out of a disordered internal world&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;One part where the Nine of Pentacles is internally relatable is that I'm definitely a &lt;em&gt;controlled&lt;/em&gt; person, in the sense that I have a lot of my emotions far too tightly held. This is very much in opposition to the Empress, whose role is more about getting in touch with abundance and our feelings. This is something I am actively working on, as &lt;a href="https://notebook.drmaciver.com/posts/2020-04-26-12:07.html"&gt;I wrote before&lt;/a&gt;:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;One of the ways I have been deploying both sides of this recently - Focusing and Alexander Technique - is to try to have more fun doing exercise. Doing exercise not because I think I &lt;em&gt;should&lt;/em&gt; exercise, but because my body invites me to do so and to enjoy it. Using exercise as a way to engage with my embodied self, and to drop into a flow state. So far it hasn't resulted in a massive amount of exercise, but I've done some most days, and the amount I am doing seems to be going up over time rather than down, and at no point have I done any exercise and resented it.
+This is pretty amazing, and makes me think there might be something to &lt;a href="https://notebook.drmaciver.com/posts/2020-04-14-13:56.html"&gt;this human notion of "fun"&lt;/a&gt; you people are always going on about.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;The Sun can be taken to represent enlightenment, insight, and understanding. Finding the sense behind the chaos, attaining a new level of insight.&lt;/p&gt;
+
+
+&lt;p&gt;Unlearning Meditation, p 95 (The Sun):&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Many impasses are made up of concepts and the mental constructs built up around them, and those are harder to become aware of than the ones that just pertain to meditation practice. The constructs may have to do with beliefs about reality, about the nature of existence, the truth of things, and so forth. They may also be personal narratives about your life or the people in it. They may also be reasons, justifications, and explanations for various behaviours and attitudes that have been running your life from behind the scenes.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;Defined earlier (p 73):&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;An impasse is "a predicament affording no obvious escape" according to &lt;em&gt;Webster's Third New International Dictionary&lt;/em&gt;. Using that definition, one would find oneself at an impasse in meditation when there is no "obvious" way of going through something. All of the usual methods, the bright ideas and good advice, the right-sounding strategies and correc tbeliefs, don't help one go through with something that one is stuck in, one's "predicament." There is a caged feeling around such impasses. You have come face-to-face with your limitations, your ignorance, your lack of creativity, inventiveness, or insight.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;"Unlearning meditation" is a very "&lt;a href="https://notebook.drmaciver.com/posts/2020-04-30-15:20.html"&gt;fixing things&lt;/a&gt;" approach to meditation. You reach an impasse, and you fix it through cleverness.&lt;/p&gt;
+
+
+&lt;p&gt;Ritual and its Consequences, p 25-26 (The Nine of Pentacles), quoting Johnathan Z. Smith:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;There is, I believe, an essential truth to the old interpretation of "sympathetic magic" as an "offensive against the objective world" but that the wrong consequences were deduced. It is not that "magical" rituals compel the world through representation and manipulation; rather they express a realistic assessment of the fact that the world cannot be compelled"&lt;/p&gt;
+&lt;p&gt;[...]&lt;/p&gt;
+&lt;p&gt;I would suggest that, among other things, ritual represents the creation of a controlled environment where the variables (i.e. the accidents) of ordinary life may be displaced precisely because they are felt to be so overwhelmingly present and powerful. Ritual is a means of performing the way things out to be in conscious tension to the way things are in such a way that this ritualized perfection is recollected in the ordinary, uncontrolled course of things. Ritual relies for its power on the fact that it is concerned with quite ordinary activities, that what it describes and displays is, in principle, possible for every occurrence of these acts. But it relies, as well, for its power on the perceived fact that, in actuality, such possibilities cannot be realised.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;This is not the argument of the book itself, as they clarify shortly:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;a friendly amendment to Smith's argument may also be called for. Smith's attempt to save ritual practitioners from being read as prerational actors may have led him to go too far in emphasizing the cognitive aspects of incongruity - that ritual works because it allows the practitioners to think about the disjunction between ritualperformance and the real world. But it is important to note that ritual is not necessarily - or even primarily - something one thinks about. Indeed, if we take Smith's emphasis on incongruity seriously, it may actually help point us away from such a cognitive reading of ritual and toward one focusing more on the active, and endless, work on ritual.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;The emphasis on "the endless work of ritual" makes me think that in contrast to Unlearning Meditation's "fixing things" attitude, ritual is care work. In this view the antidote to an impasse is not to be clever and overcome some obstacle, but to repeatedly and insistently do the work. Many meditation practices are indeed like that (it's part of why I don't get on with them).&lt;/p&gt;
+
+
+&lt;p&gt;The core feature of ritual, the book argues, is that it is a collective creation of "a subjunctive world" - an illusion in which we behave &lt;em&gt;as if&lt;/em&gt; some thing is true. Courtesy behaviours (please and thank you) are, for example, are rituals acting in a subjunctive world of equality and free choice, in which everyone behaves as equals freely choosing to help each other. Religious rituals exist in the subjunctive world where the religious cosmology is true.&lt;/p&gt;
+
+
+&lt;p&gt;In Smith's vision of this, it is the fact that the subjunctive world is false that is key to the ritual, but in the vision of "Ritual and its Consequences" the factuality of the subjunctive world is, if not irrelevant, not the primary point. The purpose of the ritual is the ritual itself, and the world it allows us to operate in.&lt;/p&gt;
+
+
+&lt;p&gt;By learning to operate in this subjective world, we create an extension of ritual outside of its more specific forms (p 34):&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;From the point of view of what we have been calling a Protestant framework, ritual behaviour often appears as a submission of humans to external norms - as a rejection of autonomy. Ritual, from such a point of view, consists of discipline and constraint, whereas sincerity is a turn inward toward the true self. From the point of view of a ritual order, whowever, this is not the case at all: a ritual order does not assume that all action is or even necessarily should be a repetition of rituals from the past. By definition, most action is not. The point is that, ideally, such actions should, in a sense, be ritual without ritual precedent.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;Holy Foucault, Batman.&lt;/p&gt;
+
+
+&lt;p&gt;I am put in mind of the following passage from Nora Bateson's "Small Arcs of Larger Circles" (p73-74). Her son has been having nightmares about zombies, and has been acting up in school. These are related.&lt;/p&gt;
+
+
+&lt;p&gt;What's a zombie? Well, in his words:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;"zombies are people who cannot think for themselves, they want you to be like them. ...And, if you do what they say, your dignity flies out the window."&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;So Bateson makes the following suggestion:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Trevor is an actor, and he was already studying performance at the time. So I offered him his first paid acting job. I promised him 100 dollars to play the part of the Straight-A student until the end of the school year, (it was already February). If he could play that part the zombies would be fooled into thinking that they could stop trying to control him. Hopefully he would have some peace. But, I had one caveat: that he never, ever, ever believe that he actually was that Straight-A student the world wanted him to be. I said "Play the part, but I want my Trevor for a son, not a zombie."&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;Bateson seems very proud of her cunning plan, to such a degree that she appears to have missed that she has conned her son into becoming a zombie.&lt;/p&gt;
+
+
+&lt;p&gt;The problem is that &lt;a href="https://www.drmaciver.com/2019/08/jiminy-cricket-must-die/"&gt;you cannot norm to a group without a certain amount of internalising its ideals&lt;/a&gt;. If you put on the mask, the mask will eventually become your face, because you will have learned the skill set of performing in that group, and your skills performing outside of that role will atrophy. More, you will internalise the idea that stepping out of that role will get you punished, leaving you with a comfort zone that is sharply defined by the role you have learned to play.&lt;/p&gt;
+
+
+&lt;p&gt;Focusing-Oriented Psychotherapy, p 285 (The Empress):&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;In therapy the interaction should not too often duplicate the common childhood type in which someone defines reality for the client, and the client is supposed to listen. Everyone has had that kind of interaction with parents, teachers, experts, overweening friends, perhaps also with unskilled therapists.&lt;/p&gt;
+&lt;p&gt;In such an interaction &lt;em&gt;the other person&lt;/em&gt; is active, animated, perceiving clearly, explaining clearly, taking up space, defining the world, moving ahead - just the interactional modes that the client needs to discover. Meanwhile the client is passive, is impinged upon, is expected to listen and put away thoughts and feelings that are already there, pushing them back, crowding everything in further so as to make room for what is being expressed, then to wait till the other comes to the point, follow the other's reasoning, and see the other's good sense.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;This defining of reality for you is in many ways the &lt;em&gt;point&lt;/em&gt; of pervasive ritual. We are very much creatures who share our cognition, outsourcing as much of our thinking and behaviour to the people and world around us as we can get away with.&lt;/p&gt;
+
+
+&lt;p&gt;A lot of what I'm trying to navigate is figuring out &lt;a href="https://notebook.drmaciver.com/posts/2020-03-21-12:35.html"&gt;the synthesis between different sides of our self&lt;/a&gt;. Generally speaking, whenever you orient human experience between two extremes, you find that both of the extremes are a bit pathological, and healthy behaviour looks like not being stuck.&lt;/p&gt;
+
+
+&lt;p&gt;But there's a problem with this when it comes to discipline vs free expression of emotions: By its nature, discipline once acquired is a hard skill to turn off. Its mere presence is an inhibiting factor - consider a man pointing a gun at you. The man does not have to ever fire the gun to use it to control your behaviour, because the threat of being shot is sufficient. Once you have internalised the skills and norms of discipline, you are ever under its control, because your free expression is limited by the fact that if it ever gets too much (and what counts as "too much" is very much defined by external norms that you have internalised), you will act and bring it into line.&lt;/p&gt;
+
+
+&lt;p&gt;"Ritual and its Consequences" defines ritual as in opposition to &lt;em&gt;sincerity&lt;/em&gt;. From page 14:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Sincerity imagines a world "as is" instead of ritual's multiple worlds of "as if." It looks to discursive meanings and unique selves instead of repeated acts and fragmented realities.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;Frankly, speaking as someone vaguely on the autistic spectrum, the idea that the majority of human culture views the world &lt;em&gt;as it is&lt;/em&gt; seems very implausible to me. It's possible the authors will get more into this later (I'm only part of the way through the book), but I think the authors are perhaps confusing a widely shared intersubjective world with objective reality. The issue is less that we are focused on a single world as it is and more that we have adopted a single ritual world to the exclusion of all others. We've demanded excessive coherency, not with reality, but with each other.&lt;/p&gt;
+
+
+&lt;p&gt;However, the antidote is perhaps the same, in that we can counterbalance the norming effect of rituals with more rituals that we can switch between.
+If ritual got us into this mess, perhaps ritual can also get us out of it.&lt;/p&gt;
+
+
+&lt;p&gt;From "Invitation to Personal Construct Psychology", p 114, the chapter "Can You Really Hypnotise People?":&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;So make-believe, the world of "as if", affords us, in everyday life, opportunities to go beyond the confines of our immediate circumstances, to explore corners of our souls we hide from the world, to elaborate and give full weight to aspects of ourselves we often cannont safely explore in our day-to-day lives. This lack of 'safety' exists perhaps in the form of social constraints on some kinds of behaviour, or it may take the form of the threat and insecurity we feel when we consider the possibility of being a different kind of person. Perhaps we see ourselves as 'submissive' and would like to be more 'assertive'. But the costs are dear, in real life, of gaily throwing off our familiar ways of being and stepping into ... who knows what? Who has not, in imagination, 'practised' some confrontational encounter, playing out in their mind's eye the possibilities of different scenarios. So the first point we are making is that the world of 'as if' is an important part of our normal lives, and affords us opportunities for safe exploration which are of benefit to us in tackling life's problems, from returning faulty merchandise to becoming a more confident person.&lt;/p&gt;
+&lt;p&gt;To return to the issue of hypnosis, the link here is that research from a variety of sources has demonstrated that 'good' subjects, people who seem able to make best use of hypnotic suggestions and easily experience the suggested effects, are doing so by the use of the same kinds of imaginative strategies. The good subject enters into the make-believe spirit of hypnotic suggestion uncritically, and under this 'safe umbrellla' freely allows themselves to explore the possibilities for thought, feeling and experience that the hypontist (like the author) suggests. So we are now at a point of seeing hypnosis not as something abnormal and unusual, but as the harnessing of a mode of thought or psychological functioning which is part of our normal, everyday lives.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;In this scenario, hypnosis serves as a ritual playing a very different role from becoming a zombie, in that instead of creating an all encompassing subjunctive world in which you must behave &lt;em&gt;as if&lt;/em&gt; the rules of society were absolute, it creates a much smaller world in which you are temporarily given &lt;a href="https://notebook.drmaciver.com/posts/2020-03-17-11:40.html"&gt;permission&lt;/a&gt; to take off those strictures imposed upon you by society and explore an aspect of yourself that you would normally keep hiding.&lt;/p&gt;
+
+
+&lt;p&gt;We in fact have many of these ritual forms in daily life. For example, social drinking of alcohol is such a ritual. Much of drunkenness is socially constructed ritual: Alcohol certainly has a physiological and psychological effect on us, but little of the actual behaviour of drunkenness is that effect. Instead it is a shared illusion, entering into a world where we behave &lt;em&gt;as if&lt;/em&gt; we can be more free with our feelings.&lt;/p&gt;
+
+
+&lt;p&gt;Therapy is another example. In many cases the therapist is no more useful than a rubber duck (in many cases they are much more useful of course), but a significant part of the use of therapy is that it lets you enter into a space where you can talk about and attempt to solve your problems.&lt;/p&gt;
+
+
+&lt;p&gt;If the threat of our own discipline is what prevents us from embracing the freedom of our own emotions, then these sorts of ritual spaces can create the possibility of disarmament. The way to be free is not to reject discipline and ritual, but instead to use them to construct ways of being that give us the freedoms that we want.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-05-01-08:32.html" rel="alternate"/>
   </entry>
 </feed>
