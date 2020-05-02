@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-05-02T11:06:46+01:00</updated>
+  <updated>2020-05-02T11:23:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,106 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-04-26-07:28.html</id>
-    <title>Fixed and growth relationships</title>
-    <updated>2020-04-26T09:14:44+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Fixed and growth relationships&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-04-26&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Today the successor group to our Rewriting the Rules reading group is meeting, and we're talking about daily habits we've tried to implement over the last couple of weeks. My habit has been rereading - dropping into books I've already read and reading at least one page from them (usually more, but the success criterion is one page). That habit lead more or less directly to the current "Today's reading" style of notebook posts, so I thought I would honour it with an appropriate choice of book today.&lt;/p&gt;
-
-
-&lt;p&gt;From "&lt;a href="https://amzn.to/3eQhfQ3"&gt;Rewriting the Rules&lt;/a&gt;", Page 207:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Actually, fixing or objectifying yourself is extremely common. It comes back to the sense that we're lacking, which we explored in Chapter 2. Much of the power of falling in love comes from the fact we find ourselves fixed in the gaze of another person in a wonderful way. This person dancing opposite me in a nightclub, sitting across from me over a candlelit dinner, or lying next to me in bed, gazes at me in adoration. The vision of myself that I see reflected in their eyes is a person I'd dearly love to be. It's like they see all the good stuff and none of the bad. As long as they look at me like that perhaps I can pretend there &lt;em&gt;isn't&lt;/em&gt; any bad in me. Maybe they're right and I really &lt;em&gt;am&lt;/em&gt; that loveable through and through. No wonder love can feel like a drug we can't get enough of.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;In context "fixed" is meant to mean "set" or "frozen", not the opposite of broken. MJB is talking about the tendency to want to see ourselves as singular, well-defined, identities rather than, to use their term, plural and in progress. This is in a chapter about conflict, and follows on from talking about how Sartre considers us to be unavoidably in conflict with each other.&lt;/p&gt;
-
-
-&lt;p&gt;Things that immediately come to mind in response to this:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;Naturally, thinking about conflict makes me think of Thomas Schelling's book about nuclear war, &lt;a href="https://amzn.to/3bGnLXp"&gt;The Strategy of Conflict&lt;/a&gt; where he defines conflicts as positive-sum games with imperfectly aligned incentives. This is a perfect way of looking at relationships, romantic and otherwise.&lt;/li&gt;
-&lt;li&gt;Thinking about relationship problems inevitably makes me think of my own post &lt;a href="https://notebook.drmaciver.com/posts/2020-03-24-09:46.html"&gt;Trust beyond reason&lt;/a&gt;, because it has become my explain-everything theory for relationship problems: Relationship problems exist because you do not trust someone at a level that is needed for their importance to you to be safe.&lt;/li&gt;
-&lt;li&gt;Relationships as fixing you contrasts interestingly with bell hooks's notion of love as growth that I mentioned in my &lt;a href="https://notebook.drmaciver.com/posts/2020-04-25-10:40.html"&gt;last post&lt;/a&gt;, putting me in mind of a relationship version of &lt;a href="https://en.wikipedia.org/wiki/Mindset#Fixed_and_Growth_Mindset"&gt;fixed vs growth mindset&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;I have roughly two experiences of romantic love. In one, it was definitely quite in line with this idea of fixing each other into ideal versions of our selves. In the other (the current one), it is much more in line with bell hooks's notion of love as growth. The latter is much better, let me tell you.&lt;/p&gt;
-
-
-&lt;p&gt;Sartre is correct, people are unavoidably in conflict, at least in the Schelling sense: Our relationships are positive sum games, in which our incentives are perfectly aligned. What we want out from the other is not exactly the same as what the other wants for themself. That doesn't necessarily mean that we would ever want to force them to do what we want instead of what they want, it just means that we have preferences and feelings about what they do that are somewhat separated from their own.&lt;/p&gt;
-
-
-&lt;p&gt;In and of itself there is nothing wrong with this, but one thing that I think goes wrong is that we are terrified of our partners rejecting us, and we fear that going against their preferences will cause them to do so. We may not believe this, but we certainly &lt;a href="https://notebook.drmaciver.com/posts/2020-03-14-13:55.html"&gt;alieve&lt;/a&gt; it.&lt;/p&gt;
-
-
-&lt;p&gt;One strategy for conflict is to credibly threaten to punish the other party for going against your interests. Even if the punishment is costly, this can be worth doing. Mutually Assured Destruction is an example of this - once you know the other side has launched nuclear weapons at you, there is literally no benefit to you launching nuclear weapons back. It's a purely vindictive act that will not save you but will destroy them. However, the fact that you were able to credibly commit to doing this makes it very unlikely (unless they fuck up, which is always the concern) that they will ever launch those nuclear missiles in the first place. By making the threat you have changed the pay off matrix, so that the option where they launch nuclear missiles at you is no longer high payoff for them (because it results in their obliteration as well).&lt;/p&gt;
-
-
-&lt;p&gt;In this analogy, the fear of rejection is the nuclear threat.
-While rejection is not quite as bad as having your country obliterated and millions of lives lost to atomic fire, from the inside it can be hard to remember that, especially if you're &lt;a href="https://www.rewriting-the-rules.com/self/trauma-and-cptsd-101/"&gt;traumatised&lt;/a&gt; by a history of being treated badly (whether by family, peers, or in relationships).&lt;/p&gt;
-
-
-&lt;p&gt;You may argue that one should note be adopting manipulative tactics in a relationship (you certainly shouldn't be &lt;em&gt;threatening&lt;/em&gt; your partner!), and you would be right, but unfortunately it's not that simple: Generally speaking tactics we adopt are not the result of deliberate forethought, they are the result of our behaviours being shaped over time in response to feedback and incentives. Many of our behaviours are &lt;a href="https://notebook.drmaciver.com/posts/2020-02-20-09:31.html"&gt;legacy code&lt;/a&gt;, and many more of them are &lt;a href="https://notebook.drmaciver.com/posts/2020-02-28-06:33.html"&gt;contingent cultural effects&lt;/a&gt; that we have learned in response to each other in a given context.&lt;/p&gt;
-
-
-&lt;p&gt;The nice thing about mutually assured destruction is that, generally speaking, nobody dies in atomic fire. That's good. It is strictly better than people dying in atomic fire. Good outcome.&lt;/p&gt;
-
-
-&lt;p&gt;The &lt;em&gt;less&lt;/em&gt; nice thing about mutually assured destruction is that &lt;em&gt;everybody is constantly stressed out about the possibility of dying in atomic fire&lt;/em&gt;. This is still vastly better than dying, but is quite a lot worse than not being stressed out about dying.&lt;/p&gt;
-
-
-&lt;p&gt;The same is true in relationships. Not being rejected is good, but being constantly afraid of being rejected as a way to achieve that is bad. This fear of rejection is a major part of what causes us to fix ourselves into a version seen by our partner: We try to fix ourselves as the version that will not be rejected.&lt;/p&gt;
-
-
-&lt;p&gt;bell hooks defines love as "The will to extend one's self for the purpose of one's own or another's spiritual growth". But growth &lt;a href="https://notebook.drmaciver.com/posts/2020-03-18-11:24.html"&gt;requires safety&lt;/a&gt; - if you are living in fear of rejection, you will not feel safe, and you will not be able to grow.&lt;/p&gt;
-
-
-&lt;p&gt;This means love in hooks sense requires us to &lt;a href="https://notebook.drmaciver.com/posts/2020-04-06-15:20.html"&gt;be safe for others&lt;/a&gt; who we are to be in a relationship with. If your partner is to express themselves honestly, it needs to be safe for them to do so. This means you need to:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Not react with judgement or blame when they tell you how they're feeling.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Also&lt;/em&gt; not automatically change your behaviour to accommodate everything that they're feeling.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;The first is a form of rejection, and is exactly what people are afraid of. The second is often an overreaction and, because your partner loves you, may cause them to avoid telling you things for fear of causing you harm.
-After all, if you know that someone you love will react as if they're a terrible person because they caused you some mild discomfort, are you going to share that discomfort with them?&lt;/p&gt;
-
-
-&lt;p&gt;Once you have this safety, it becomes possible to build trust to a much greater degree, because you know that that trust building will not be met with rejection. This is the extending of one's self that bell hooks is talking about: You are putting yourself into the relationship, in a way that allows the other to know you, and gives them &lt;a href="https://notebook.drmaciver.com/posts/2020-03-17-11:40.html"&gt;permission&lt;/a&gt; to be known by you in turn.&lt;/p&gt;
-
-
-&lt;p&gt;This also allows you to know yourself in a way that is almost impossible to achieve on your own.
-Self-awareness allows us to know many things about our selves that are not visible to others,
-and that this fear of extending ourselves into the world causes us to deliberately hide from them,
-but we discount how many things about ourselves that we have no idea about are visible to others.&lt;/p&gt;
-
-
-&lt;p&gt;In "&lt;a href="https://amzn.to/3cOWfXU"&gt;Mindfulness in 3D&lt;/a&gt;" Peter Nobes talks about &lt;em&gt;Faulty Sensory Appreciation&lt;/em&gt; - the idea that our image of our self, especially of our posture, is often completely wrong in ways that are really obvious to others. He goes into this less in the book, but talking to Peter makes it clear how broadly he thinks it applies, and I agree. Often our moods are more obvious to those around us than they are to ourselves. Certainly how we come across to others is often invisible to us, and is often reflective of underlying learned reactions that we are not consciously aware of.&lt;/p&gt;
-
-
-&lt;p&gt;When our reactions in a relationship are safe, it becomes possible not only for our partners to tell us about their selves, but also for them to tell us about ourselves, and through this reciprocated love we can grow together.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-04-26-07:28.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-04-26-12:07.html</id>
     <title>78 Thinking Hats</title>
@@ -1143,7 +1043,7 @@ Moreover, he is in extremely high demand due, so it is his in his interests to u
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-02-08:46.html</id>
     <title>Strategy, reliability, and impersonality</title>
-    <updated>2020-05-02T11:06:46+01:00</updated>
+    <updated>2020-05-02T11:08:05+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Strategy, reliability, and impersonality&lt;/p&gt;
@@ -1296,5 +1196,124 @@ I had a conversation with a friend a while ago which went roughly along the line
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-05-02-08:46.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-05-02-11:23.html</id>
+    <title>Adoptive Identities</title>
+    <updated>2020-05-02T11:23:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Adoptive Identities&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-05-02&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Stephen felt oddly disappointed, though he did not know why he should be. After all he did not wish to be king of anywhere. He was not English; he was not African. He did not belong anywhere. Vinculus's words had briefly given him the sense of belonging to something, of being part of a pattern and of having a purpose. But it had all been illusory.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;I often hear people use the word "liminal" to describe experiences similar to Stephen Black's, because they are at a threshold between two identities (English and African in his case), but I don't think that's quite right for him.
+Stephen Black's problem is not actually that he's between two identities. It's that he has wholly embraced an identity, but it has not wholly embraced him, because a key part of that identity is regarding people like him as outsiders.&lt;/p&gt;
+
+
+&lt;p&gt;It's a consistent theme throughout the book that Stephen is &lt;em&gt;very&lt;/em&gt; English, despite his African origins. He has fully embraced a very proper Englishness suitable for his role as a butler.
+He has &lt;em&gt;adopted&lt;/em&gt; Englishness (albeit for reasons that are not entirely of his choice),.&lt;/p&gt;
+
+
+&lt;p&gt;He's also black, and is black in a very racist culture that will not allow him to succeed by its own standards. Stephen Black's problem is that he has thoroughly adopted a culture, but a key part of that culture is that he will never be judged according to his worth.&lt;/p&gt;
+
+
+&lt;p&gt;We see this elsewhere in the book:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Despite the fact that the cost of Stephen's clothes and boots could have bought the carrier's cart and horse twice over, the carrier assumed the cheerful superiority that white generally feels for black. He considered the matter and told Stephen that the first thing they must do was to arrange for the carcass to be removed. "She's a valuable beast - dead or alive. Your master won't be best pleased when he finds soom other fella has got t'horse and t'money."&lt;/p&gt;
+&lt;p&gt;"She was not my master's horse," said Stephen, "She was mine."&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;Because Stephen is black, he is judged as inferior, despite the fact of his relatively obvious high status (compared to the carrier). The other aspects of his identity are judged irrelevant, to the stranger.&lt;/p&gt;
+
+
+&lt;p&gt;Earlier in the book we see how Stephen is regarded by the other servants:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Of course in many households there is a servant who by virtue of his exceptional intelligence and abilities is given authority beyond what is customary. But in Stephen's case it was all the more extraordinary since Stephen was a negro. I say "extraordinary", for is it not generally the case that a negro servant is the least-regarded person in a household? No matter how hardworking he or she may be? No matter how clever? Yet somehow Stephen Black had found a way to thwart this universal principle. He had, it is true, certain natural advantages: a handsome face and a tall, well-made figure. It certainly did him no harm that his master was a politician who was pleased to advertise his liberal principles to the world by entrusting the management of his house and business to a black servant.&lt;/p&gt;
+&lt;p&gt;The other servants were a little surprised to find they were put under a black man -- a sort of person that many of them had never even seen before. Some were inclined to be indignant at first and told each other that if he dared to give them an order they would return him a very rude answer. But whatever their intentions, they discovered that when they were actually in Stephen's presence they did nothing of the sort. His grave looks, air of authority and reasonable instructions made it very natural to do whatever he told them.&lt;/p&gt;
+&lt;p&gt;The butcher's boy, the baker, the lamplighter and other similar new acquaintances of the Harley-street servants showed great interest in Stephen from the first. They asked the Harley-street servants questions about Stephen's mode of life. What did he eat and drink? Who were his friends? Where did he like to go whenever he should happen to be at liberty to go anywhere? When the Harley-street servants replied that Stephen had had three boiled eggs for breakfast, the Secretary at War's Welsh valet was a great friend of his and that he had attended a servants' ball in Wapping the night before, the butcher's boy, the baker and the lamplighter were most grateful for the information. The Harley-street servants asked them why they wished to know. The butcher's boy, the baker and the lamplighter were entirely astonished. Did the Harley-street servants really not know? The Harley-street servants really did not. The butcher's boy, the baker and the lamplighter explained that a rumour had been circulating London for years to the effect that Stephen Black was not really a butler at all. Secretly he was an African prince, the heir to a vast kingdom, and it was well known that as soon as he grew tired of being a butler he would return there and marry a princess as black as himself.&lt;/p&gt;
+&lt;p&gt;After this revelation the Harley-street servants watched Stephen out of the corners of their eyes and agreed among themselves that nothing was more likely. In fact, was not their own obedience to Stephen the best proof of it? For it was hardly likely that such independent, proud-spirited Englishmen and women would have submitted to the authority of a black man, had they not instinctively felt that respect and reverence which a commoner feels for a king!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;To the degree that Stephen has succeeded (which is, remember, only the first among servants) in his adopted culture,
+it was entirely in the form of an exception: He was an exceptional individual, whose presence was essentially mandated by a white man of high authority. Even then the white servants still had to construct an elaborate story as to why  he was one of the worthy ones.&lt;/p&gt;
+
+
+&lt;p&gt;We never see this in the books, but I think if Stephen ever &lt;em&gt;were&lt;/em&gt; to go to Africa (he has never been - he was born on a slaver ship leaving there) he would find himself thoroughly rejected in an entirely different way, because he carries with him all the cultural trappings of the English. African culture would be alien to him, and they would see him, probably not entirely unfairly, as on the side of their oppressors.&lt;/p&gt;
+
+
+&lt;p&gt;I think we see these sorts of adopted identities quite a lot, although usually not to quite the clear cut level of Stephen Black. Marginalised people in professional communities experience this problem - they norm to their profession, and take it on as part of their identity, but because the community is prejudiced against them they will often struggle to succeed by it, and consequently their own, standards.&lt;/p&gt;
+
+
+&lt;p&gt;Another area we see is people who are part of marginalised communities without sharing that marginalisation.
+Two common examples I see of this are straight people in queer communities and men in feminist communities (what counts as a feminist community is complicated - I'm using this as a shorthand for "primarily female and with a pervasive agreement that feminism is a good idea"). Generally these communities are not as hostile to such people as the dominant norms are to many marginalisations, but there's definitely still a pervasive sense of "not one of us".&lt;/p&gt;
+
+
+&lt;p&gt;This isn't necessarily the reversal of the power dynamic it seems. Often these are people who are still themselves marginalised, often in &lt;a href="https://notebook.drmaciver.com/posts/2020-02-23-09:37.html"&gt;illegible ways&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;There are a couple of reasons people do this. Ones that come to mind are:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;A lot of marginalised identities overlap. You might be autistic, and hang out with a lot of autistic people, and a lot of autistic people are queer, so you implicitly hang out with a lot of queer people and the two communities just blend together.&lt;/li&gt;
+&lt;li&gt;A lot of communities have distinguishing characteristics. For example, the queer community I am loosely part of in London is minority male (not &lt;em&gt;that&lt;/em&gt; minority, and it's hard for me to judge exactly due to the loose sense of what the "community" is, but certainly it's culturally female), so by virtue of my queerness while also being a cis man I am a cis man in a queer feminist community.&lt;/li&gt;
+&lt;li&gt;Although &lt;a href="https://notebook.drmaciver.com/posts/2020-04-25-10:40.html"&gt;experiences of marginalisation don't transfer that well&lt;/a&gt;, one that is shared of that of &lt;a href="https://notebook.drmaciver.com/posts/2020-05-01-16:42.html"&gt;not being like the others&lt;/a&gt;, so if you don't have a community for your own marginalisation you're probably still going to be better off in another marginalised community than you are trying to fit into the mainstream.&lt;/li&gt;
+&lt;li&gt;People make friends through their friends, and marginalised people are often friends with people of similar marginalisations, so if you make friends with one you might make friends with many. e.g. I was part of poly communities long before I was poly. ("Are poly people marginalised?" you might ask. To which I answer "Lets not have that argument right now". Either way it demonstrates how the process work).&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;One of the consequences of being part of a marginalised community is that you tend to start to adopt their assumptions and norms about the world. I've tended to use "culturally X" as the term for this in the past.
+&lt;a href="https://notebook.drmaciver.com/posts/2020-04-27-07:57.html"&gt;We tell each other stories&lt;/a&gt; and those stories reshape and become part of how we view the world. I was "culturally poly" long before I was ever actually poly, just by virtue of how many people around me were and how much I had started to take on their worldview.&lt;/p&gt;
+
+
+&lt;p&gt;This leads to a problem where you are now culturally out of synch with everyone. In your community of choice, you are not one of them. In the mainstream community, you will feel out of place due to their differing cultural norms, and you will often be &lt;em&gt;seen&lt;/em&gt; as out of place due to &lt;em&gt;your&lt;/em&gt; differing cultural norms.
+It's not really just a question of whether you are culturally with them, they are &lt;em&gt;your people&lt;/em&gt;, you just lack the characteristic that unifies them.&lt;/p&gt;
+
+
+&lt;p&gt;This often leads to people having big arguments about how expansive an identity label should be. I think &lt;a href="https://sexgeek.wordpress.com/2019/06/19/whos-queer-whose-queer-on-claims-identities-and-kink-among-other-things-at-pride-part-1/"&gt;the argument for making queer pretty expansive when it comes to self-identification&lt;/a&gt; is quite good, but even so you ar egoing to get people who are unambigously not queer (cis and straight but also monogamous, not kinky, etc), but all of their friends are queer, they are culturally queer, often they're even &lt;em&gt;aesthetically&lt;/em&gt; queer just because of how aesthetics tend to propagate in communities.&lt;/p&gt;
+
+
+&lt;p&gt;Why is this a problem?&lt;/p&gt;
+
+
+&lt;p&gt;Well, one reason why it's a problem is that being a part of a community where you're not one of them is intrinsically precarious. There is very much a sense that you are there only on sufferance, only as long as people can be convinced that you are one of the good ones. In a dispute, you will likely be seen as in the wrong, and if you are in the wrong people are more likely to turn against you.&lt;/p&gt;
+
+
+&lt;p&gt;Is this actually likely in practice? I don't know. It's certainly not entirely false (I've seen this play out at individual levels, but not at community levels), and regardless of its truth it &lt;em&gt;feels&lt;/em&gt; that way to the people involved and the way people typically talk about the outgroup sure makes it sound true.&lt;/p&gt;
+
+
+&lt;p&gt;I feel like I shouldn't really need to spell this out, but feeling constantly under threat of losing all your friends is &lt;em&gt;bad&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Stepping back, an article I really like is "&lt;a href="https://conscienceandconsciousness.com/2018/07/11/transwomen-and-adoptive-parents-an-analogy/"&gt;Transwomen and Adoptive Parents: An Analogy&lt;/a&gt;". The argument is that in many cases "trans women" is to "woman" as "adoptive parent" is to "parent": Yes, the underlying biology does not match what we think of as typical for that role, but as a society we generally regard adoptive parents as obviously parents except for where there's a specific concrete reason for us not to (e.g. needing to know about medical history).&lt;/p&gt;
+
+
+&lt;p&gt;In a similar way, I think we might want to start taking adoptive identities more seriously in some cases. I think there &lt;em&gt;is&lt;/em&gt; a case to consider some people adoptive queers. It requires careful handling - it's not a thing to impose on someone, and it's not a thing that people should adopt for themselves without checking in with at least a couple of others (you'll never get consensus of course - there is no queer council who can make official rulings that you know about).&lt;/p&gt;
+
+
+&lt;p&gt;Whether this makes sense for other identities, I don't know. Some, it probably does (for example "neurodivergent" seems to make sense as a pretty expansive identity), some it almost certainly doesn't (I doubt "adoptive black" would ever be an acceptable identity for a white person to take on, and "adoptive disabled person" is probably almost as problematic, although disabled is by its nature a more expansive identity).&lt;/p&gt;
+
+
+&lt;p&gt;In all honesty, I don't necessarily know how any of this should, could, or would play out in practice, but this is the place for half-formed thoughts after all. Mostly I just want people to have communities in which they can be safe, and I want us to take the fluidity of identity more seriously, and this seems to be an important area where those two concerns overlap.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-05-02-11:23.html" rel="alternate"/>
   </entry>
 </feed>
