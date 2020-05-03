@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-05-03T13:25:42+01:00</updated>
+  <updated>2020-05-03T13:31:07+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1202,7 +1202,7 @@ It's not really just a question of whether you are culturally with them, they ar
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-03-09:09.html</id>
     <title>Numbers and Feelings</title>
-    <updated>2020-05-03T13:25:42+01:00</updated>
+    <updated>2020-05-03T13:31:07+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Numbers and Feelings&lt;/p&gt;
@@ -1293,7 +1293,7 @@ It's not really just a question of whether you are culturally with them, they ar
 &lt;p&gt;Let \(N = \max N_i\). Then for \(x \in K\) we have some \(y_i\) with \(||x - y_i|| &amp;lt; \frac{\epsilon}{2}\) because the \(y_i\) are an \(\frac{\epsilon}{2}\) net.&lt;/p&gt;
 
 
-&lt;p&gt;Now \(||\sum\limits_{n \geq N} &lt;x, e_n=""&gt; e_n|| = ||\sum\limits_{n \geq N} &lt;y_i, e_n=""&gt; e_n + \sum\limits_{n \geq N} &lt;x -="" e_n="" y_i,=""&gt; e_n|| \leq ||\sum\limits_{n \geq N} &lt;y_i, e_n=""&gt; e_n|| + ||\sum\limits_{n \geq N} &lt;x -="" e_n="" y_i,=""&gt; e_n|| &amp;lt; \frac{\epsilon}{2} +  \frac{\epsilon}{2} = \epsilon\) as desired.&lt;/x&gt;&lt;/y_i,&gt;&lt;/x&gt;&lt;/y_i,&gt;&lt;/x,&gt;&lt;/p&gt;
+&lt;p&gt;Now \(||\sum\limits_{n \geq N} &lt;x, e_n=""&gt; e_n|| = ||\sum\limits_{n \geq N} &lt;y_i, e_n=""&gt; e_n + \sum\limits_{n \geq N} &lt;x -="" e_n="" y_i,=""&gt; e_n|| \leq ||\sum\limits_{n \geq N} \langle y_i, e_n \rangle e_n|| + ||\sum\limits_{n \geq N} \langle x - y_i, e_n \rangle e_n|| &amp;lt; \frac{\epsilon}{2} +  \frac{\epsilon}{2} = \epsilon\) as desired.&lt;/x&gt;&lt;/y_i,&gt;&lt;/x,&gt;&lt;/p&gt;
 
 
 &lt;p&gt;QED etc.&lt;/p&gt;

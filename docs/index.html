@@ -136,7 +136,7 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
 <p>Let \(N = \max N_i\). Then for \(x \in K\) we have some \(y_i\) with \(||x - y_i|| &lt; \frac{\epsilon}{2}\) because the \(y_i\) are an \(\frac{\epsilon}{2}\) net.</p>
 
 
-<p>Now \(||\sum\limits_{n \geq N} <x, e_n=""> e_n|| = ||\sum\limits_{n \geq N} <y_i, e_n=""> e_n + \sum\limits_{n \geq N} <x -="" e_n="" y_i,=""> e_n|| \leq ||\sum\limits_{n \geq N} <y_i, e_n=""> e_n|| + ||\sum\limits_{n \geq N} <x -="" e_n="" y_i,=""> e_n|| &lt; \frac{\epsilon}{2} +  \frac{\epsilon}{2} = \epsilon\) as desired.</x></y_i,></x></y_i,></x,></p>
+<p>Now \(||\sum\limits_{n \geq N} <x, e_n=""> e_n|| = ||\sum\limits_{n \geq N} <y_i, e_n=""> e_n + \sum\limits_{n \geq N} <x -="" e_n="" y_i,=""> e_n|| \leq ||\sum\limits_{n \geq N} \langle y_i, e_n \rangle e_n|| + ||\sum\limits_{n \geq N} \langle x - y_i, e_n \rangle e_n|| &lt; \frac{\epsilon}{2} +  \frac{\epsilon}{2} = \epsilon\) as desired.</x></y_i,></x,></p>
 
 
 <p>QED etc.</p>
