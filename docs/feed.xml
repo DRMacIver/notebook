@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-05-03T13:36:38+01:00</updated>
+  <updated>2020-05-03T13:39:03+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1202,7 +1202,7 @@ It's not really just a question of whether you are culturally with them, they ar
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-03-09:09.html</id>
     <title>Numbers and Feelings</title>
-    <updated>2020-05-03T13:36:38+01:00</updated>
+    <updated>2020-05-03T13:39:03+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Numbers and Feelings&lt;/p&gt;
@@ -1287,7 +1287,7 @@ It's not really just a question of whether you are culturally with them, they ar
 &lt;p&gt;I stared at it for a little bit then went to have a shower. In the shower the answer was obvious:&lt;/p&gt;
 
 
-&lt;p&gt;Let \(y_1, \ldots, y_n\) be an \(\frac{\epsilon}{2}\)-net for \(K\). Then for each \(i\) there exists \(N_i\) such that \(||\limits_{n \geq N_i} \langle y_i, e_n \rangle e_n|| &amp;lt; \frac{\epsilon}{2}\) because these are just the tail sums for \(||y||^2 = \sum \langle y, e_n \rangle^2\).&lt;/p&gt;
+&lt;p&gt;Let \(y_1, \ldots, y_n\) be an \(\frac{\epsilon}{2}\)-net for \(K\). Then for each \(i\) there exists \(N_i\) such that \(||\sum\limits_{n \geq N_i} \langle y_i, e_n \rangle e_n|| &amp;lt; \frac{\epsilon}{2}\) because these are just the tail sums for \(||y||^2 = \sum \langle y, e_n \rangle^2\).&lt;/p&gt;
 
 
 &lt;p&gt;Let \(N = \max N_i\). Then for \(x \in K\) we have some \(y_i\) with \(||x - y_i|| &amp;lt; \frac{\epsilon}{2}\) because the \(y_i\) are an \(\frac{\epsilon}{2}\) net.&lt;/p&gt;
@@ -1297,7 +1297,8 @@ It's not really just a question of whether you are culturally with them, they ar
 [\begin{align*}
 ||\sum\limits_{n \geq N} \langle x, e_n \rangle e_n|| &amp;amp; = ||\sum\limits_{n \geq N} \langle y_i, e_n \rangle e_n + \sum\limits_{n \geq N} \langle x - y_i, e_n \rangle e_n|| \\
 &amp;amp; \leq ||\sum\limits_{n \geq N} \langle y_i, e_n \rangle e_n|| + ||\sum\limits_{n \geq N} \langle x - y_i, e_n \rangle e_n|| \\
-&amp;amp; &amp;lt; \frac{\epsilon}{2} +  \frac{\epsilon}{2} = \epsilon \\
+&amp;amp; &amp;lt; \frac{\epsilon}{2} +  \frac{\epsilon}{2} \\
+&amp;amp; = \epsilon \\
 \end{align*}&lt;/p&gt;
 
 
