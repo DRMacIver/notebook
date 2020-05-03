@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-05-03T09:09:00+01:00</updated>
+  <updated>2020-05-03T12:32:28+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1202,7 +1202,7 @@ It's not really just a question of whether you are culturally with them, they ar
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-03-09:09.html</id>
     <title>Numbers and Feelings</title>
-    <updated>2020-05-03T09:09:00+01:00</updated>
+    <updated>2020-05-03T12:32:28+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Numbers and Feelings&lt;/p&gt;
@@ -1607,6 +1607,54 @@ It's not really just a question of whether you are culturally with them, they ar
 
 
 &lt;p&gt;First, an easy one. 2.5, show that \(l^\infty\) is not separable.&lt;/p&gt;
+
+
+&lt;p&gt;Ugh, I've just realised that a lot of the mathematics in this post is invalid LaTeX. I've also remembered how much I fucking hate LaTeX.&lt;/p&gt;
+
+
+&lt;p&gt;This is an area where the "optimised" workflow of my notebook is seriously lacking.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, maths.&lt;/p&gt;
+
+
+&lt;p&gt;This is easy. For any \(A \neq B \subseteq \mathbb{N}\), we have \(||1_A - 1_B||_\infty = 1\), so \(\{B(1_A, \frac{1}{2}): A \subseteq \mathbb{N}\) is an uncountable set of non-empty open sets. A dense set intersects every open set, so no dense set can be countable because it must contain at least one element of each of these.&lt;/p&gt;
+
+
+&lt;p&gt;This is kinda what I meant earlier about being better at the conceptual work than the details. Things that are easily solvable with an intuitive leap are fine (although I might have remembered this one, I'm not sure), but things where there are multiple steps involved to figure out the conclusion are hard.&lt;/p&gt;
+
+
+&lt;p&gt;I'm now trying 1.7: Let \(1 &amp;lt; p &amp;lt; \infty\) and let \(\frac{1}{p} + \frac{1}{q} = 1\). Show that for positive real numbers \(a and b\) we have \(ab \leq \frac{a^p}{p} + \frac{b^q}{q}\) with equality if and only if \(a = b\).&lt;/p&gt;
+
+
+&lt;p&gt;I'm a little suspicious of that "equality if" part but lets see how this goes.&lt;/p&gt;
+
+
+&lt;p&gt;First, lets check \(a = b\). Then the right hand side is \(\frac{a^p}{p} + \frac{a^q}{q}\). Sanity check, when \(p = q = 2\) this gives us \(a^2 = a^2\) as desired.&lt;/p&gt;
+
+
+&lt;p&gt;I feel like the claim that the two sides are equal if \(a = b\) just has to be bullshit in general though.&lt;/p&gt;
+
+
+&lt;p&gt;Pick, say, \(p = 3\). Then \(q = \fraction{3}{2}\). Then the claim that the two sides are equal is the claim that \(a^2 = \frac{1}{3} a^3 + \frac{2}{3} a^{\frac{3}{2}}\), which is just obvious nonsense (e.g. check a = 2). So I'm going to assume the "if" part is a mistake (a lot of the exercises in this book seem to be wrong).&lt;/p&gt;
+
+
+&lt;p&gt;Let \(f(a) = \frac{a^p}{p} + \frac{a^q}{q}\). Then \(f'(a) = a^{p - 1} + a^{q - 1}\).&lt;/p&gt;
+
+
+&lt;p&gt;I'd like to see how this scales. Without loss of generality, assume \(a \leq b\). Write \(b = x\) with \(x \geq 1\).&lt;/p&gt;
+
+
+&lt;p&gt;This inequality now becomes \(a^2 x \leq \frac{a^p}{p} + \frac{a^q}{q} x^q\)&lt;/p&gt;
+
+
+&lt;p&gt;There's a joke that mathematicians are machines for turning coffee into theorems. If, as previously observed, it is helpful to be angry when doing mathematics, and coffee makes you irritable (it certainly seems to), is that the mechanism?&lt;/p&gt;
+
+
+&lt;p&gt;At this point I moved to paper and the results were a mess, so I'm not going to bother to transcribe them.&lt;/p&gt;
+
+
+&lt;p&gt;I think, at this point, I have to admit that my skill in working with mathematics is severely degraded. This shouldn't be surprising, but somehow it is.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-05-03-09:09.html" rel="alternate"/>
