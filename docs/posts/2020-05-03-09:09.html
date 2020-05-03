@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+DRMacIver's Notebook: Numbers and Feelings
+    </title>
+    <link rel="stylesheet" href="/pygments.css"/>
+    <link rel="stylesheet" href="/tufte.css"/>
+    <link rel="stylesheet" href="/latex.css"/>
+    <link rel="stylesheet" href="/drmnotes.css"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
+});
+
+MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
+  console.log(message)
+});
+
+</script>
+
+  </head>
+
+  <body>
+    <article>
+        <h1><a href="/">DRMacIver's Notebook</a></h1>
+        <p class=subtitle>Numbers and Feelings</p>
+
+        
+
+<section id="the-post">
+<p class=subtitle>Numbers and Feelings</p>
+<dl class=metadata>
+<dt>Published</dt>
+<dd class="post-date">2020-05-03</dd>
+</dl>
+
+<p>Please note: This post is much more for me than these posts normally are. It's very stream of consciousness. You might find it interesting anyway, but I can't promise it will make sense.</p>
+<p>Do you remember being able to concentrate for a sustained period on some work?</p>
+<p>Neither do I, really, but I'm aware it must have happened at some point. A lot of my school reports are the usual smart kid thing to the tune of "David clearly understands the material but I wish he would do the work".</p>
+<p>There were a few points in my life where I actually did the work, but most of the rest of the time the work was pretty invisible to me too. I clearly understood the material, but I'm not sure when I did that.</p>
+<p>On the other hand I also spent an entire summer during my A-levels studying a mathematics textbook that would have been a bit advanced a few years into university.</p>
+<p>Imagine doing that. It's a struggle for me too. People think I read a lot, and I do, but it's not exactly uninterrupted, and reading a maths textbook is <em>hard</em>.</p>
+<p>But why can't I do it? It feels like <a href="https://notebook.drmaciver.com/posts/2020-03-20-10:33.html">being blocked</a>. The capability is clearly there, you just need to do the work.</p>
+<p>This is probably a feelings problem, isn't it? So today, it's time to do some maths and have some feelings about it.</p>
+<p>I'm going to work through some of the exercises in "A Short Course on Banach Space Theory" by Carothers.</p>
+<p>Why this book?</p>
+<p>Well, it's small, cute, and based on material that I always would have found a bit hard but was once upon a time relevant to my interests.</p>
+<p>It's also utterly useless. Why would you spend time on this material? I'm sure there's <em>some</em> application somewhere, but if so it's probably to things I also don't care about. I'm doing this for the pure joy of doing mathematics.</p>
+<p>Is there joy in mathematics? I feel like there used to be.</p>
+<p>Anyway, let's do this.</p>
+<p>Page 1:</p>
+<blockquote>
+<p>What follows is a list of the <em>classical</em> Banach  spaces. Roughly translated, this means the spaces known to Banach. Once we have these examples out in the open, we'll have plenty of time to fill in any unexplained terminology. For now, just let the words wash over you.</p>
+</blockquote>
+<p>I do like Carothers.</p>
+<p>The opening chapter has a lot of "It's easy to see" and "Clearly" and "It follows". I think I'm supposed to be annoyed about those for politics reasons, but fuck it. You're not going to be reading this book unless you have a library card for <a href="https://notebook.drmaciver.com/posts/2020-02-16-14:22.html">the ghost library</a>. Why would you?</p>
+<p>The funny thing is that it <em>is</em> easy to see. It's been 15 years more or less since I finished my maths degree. I've done a little bit of maths in the meantime, but not much, and not particularly advanced. But this is just like riding a bike.</p>
+<p>Anyway, enough feelings, lets do some mathematics.</p>
+<p>I don't plan to do all the exercises, just the ones that spark joy. Here's chapter 1, exercise 14:</p>
+<blockquote>
+<p>Let \(H\) be a separable Hilbert space with orthonormal basis \((e_n)\) and let \(K\) be a compact subset of H. Given \(\epsilon &gt; 0\), show there exists an \(N\) such that \(||\sum\limits_{n = N}^\infty <x, e_n=""> e_n&gt;|| &lt; \epsilon\) for every \(x \in K\).</x,></p>
+</blockquote>
+<p>I stared at it for a little bit then went to have a shower. In the shower the answer was obvious:</p>
+<p>Let \(y_1, \ldots, y_n\) be an \(\frac{\epsilon}{2}\)-net for \(K\). Then for each \(i\) there exists \(N_i\) such that \(||\limits_{n \geq N_i} <y_i, e_n=""> e_n|| &lt; \frac{\epsilon}{2}\) because these are just the tail sums for \(||y||^2 = \sum <y, e_n="">^2\).</y,></y_i,></p>
+<p>Let \(N = \max N_i\). Then for \(x \in K\) we have some \(y_i\) with \(||x - y_i|| &lt; \frac{\epsilon}{2}\) because the \(y_i\) are an \(\frac{\epsilon}{2}\) net.</p>
+<p>Now \(||\sum\limits_{n \geq N} <x, e_n=""> e_n|| = ||\sum\limits_{n \geq N} <y_i, e_n=""> e_n + \sum\limits_{n \geq N} <x -="" e_n="" y_i,=""> e_n|| \leq ||\sum\limits_{n \geq N} <y_i, e_n=""> e_n|| + ||\sum\limits_{n \geq N} <x -="" e_n="" y_i,=""> e_n|| &lt; \frac{\epsilon}{2} +  \frac{\epsilon}{2} = \epsilon\) as desired.</x></y_i,></x></y_i,></x,></p>
+<p>QED etc.</p>
+<p>That was pretty easy. I wasn't exactly <em>surprised</em> that it was easy, but I'm pretty sure I'm "supposed" to have forgotten that material.</p>
+<p>How was the proof obvious to me? Well, "compact" means "small" basically, so I needed to use that smallness somehow. The construction of an \(\epsilon\)-net is the obvious way to use that smallness for something like this.</p>
+<p>What makes it obvious? I don't know. Mostly that it tends to work I guess. It's <a href="https://notebook.drmaciver.com/posts/2020-04-12-11:35.html">intuition</a>. Once you think to try the approach it's relatively easy to see how it must work. I'm not sure what caused me to try the approach, my brain just said "Hey maybe an \(\epsilon\)-net?" and I checked it out and it seemed to work.</p>
+<p>Is this result interesting? I don't know. I don't find I care about the result intrinsically. Maybe it will be useful later?</p>
+<p>It doesn't need to be useful though. Joy of mathematics, remember? I'm doing this to see whether I can, not because I care about this. Part of why I picked this book up is that I have no conceivable use for the material. There will be no obligation to carry on after.</p>
+<p>I find I still don't <a href="https://notebook.drmaciver.com/posts/2020-03-14-13:55.html">alieve</a> I can concentrate on doing mathematics all day, but I'm prepared to try to suspend that alief for a while and see where the day takes me.</p>
+<p>Let's try another exercise. Exercise 2.1:</p>
+<p>Given a nonzero vector \(x\) in a normed space \(X\, show that there exists a norm one functional \(f \in X^*\) satisfying \(|f(x)| = ||x||\). On the othe rhand, give an example of a normed space \(X\) and a norm one linear functional \(f \in X^*\) such that \(|f(x)| &lt; ||x||\) for every \(0 \neq x \in X\).</p>
+<p>I just noticed that I was sitting at an extremely odd angle writing this, twisting my spine around. That can't be good for me. I should really use this to practice some Alexander Technique and pay more attention to unlearning those habits, but too much to try at once in think. For now I'll just notice and practice some basic posture unfucking.</p>
+<p>Anyway, the exercise.</p>
+<p>The first bit is just Hahn-Banach. Take the one-dimensional space spanned by \(x\) and define \(f(x) = ||x||\) there. This is a norm one functional and by Hahn-Banach you can extend it to a norm-one functional on the whole space.</p>
+<p>This feels too easy. Does he want me to prove Hahn-Banach? I doubt it. But the proof is just blah blah blah Zorn's lemma blah.</p>
+<p>Anyway, the second bit was more interesting and took a bit more thought. The answer is to take \(l^1\) and to define \(f(x) = \sum (1 - \frac{1}{n}) x_n\).</p>
+<p>This satisfies the requirements because \(|f(x)| = |\sum (1 - \frac{1}{n}) x_n| \leq \sum |(1 - \frac{1}{n}) x_n| =  \sum |(1 - \frac{1}{n})| |x_n| \leq \sum |x_n| = ||x||\) with the last inequality being an equality only when \(x = 0\). This gives us that \(||f|| \leq 1\) and that \(|f(x)| &lt; ||x||\) for \(x \neq 0\).</p>
+<p>(Odd twist to my posture again).</p>
+<p>To see that this has norm exactly one, note that \(f(e_n) = 1 - \frac{1}{n} \to 1\) as \(n \to \infty\).</p>
+<p>How did I spot this example?</p>
+<p>Well it was kinda obvious. You can't have such a space be finite dimensional (compactness of unit ball etc) so you need to make it so that the norm is closer and closer to \(1\) each time you extend it. Basically all this is doing is extending the functional for each unit vector one at a time, bringing it closer and closer to norm \(1\) with each step.</p>
+<p>That's a bit of a retcon though. The intuition was there but I spent a while futzing around trying to make this work with variants on \(l^\infty\) where it doesn't work for a variety of reasons.</p>
+<p>I find myself wondering why I'm doing this. What's the point?</p>
+<p>I found I wanted to describe this feeling as wanting to check Twitter. I don't think that's accurate. It's more a feeling of... restlessness? A desire to get up and pace?</p>
+<p>There's a definite sense that <em>I am not the sort of person who can do this</em>.</p>
+<p>Very well. I shall get up and pace. But I'll read chapter 2 while doing it.</p>
+<p>OK, I've read chapter 2 now.</p>
+<p>If it seems odd that I was reading chapter 2 after doing the exercises, bear in mind that a) I've read the first couple chapters of this book before. It has been sitting on my shelves for well over a decade now after all and b) This is mostly recap stuff.</p>
+<p>While reading this chapter I was definitely going "Blah blah blah proofs" for a lot of this. That will probably bite me later, but I think it's normal. Mathematicians mostly don't <em>like</em> proofs, we like nice, tidy theorems (unless we're into combinatorics in which case we like ugly technical theorems).</p>
+<p>I do notice that I still tend to think of myself as a mathematician despite it being objectively not true. I have a masters in mathematics, but I've never been a professional mathematician. Still, it's had a significant amount of influence on my thinking.</p>
+<p>I wonder if that identification is part of the emotional noise around doing mathematics? If I'm over-identified with being a mathematician, realising that I'm not actually very good at it would be emotionally painful. Attempting to get better at mathematics is <a href="https://notebook.drmaciver.com/posts/2020-03-18-11:24.html">unsafe</a> as a result, so it's no wonder that I tend to stall when I learn new things.</p>
+<p>It doesn't help that most of the mathematics I've tried to learn in the intervening period has been stuff that at university I would have turned my nose up at. Combinatorics, statistics, graph theory. It's all stuff that is objectively very <em>useful</em> but isn't something I find intrinsically interesting. There's no <a href="https://notebook.drmaciver.com/posts/2020-03-30-23:12.html">desire</a> there to drive the growth.</p>
+<p>This is stupid though. Statistics, for example, is just quantitative epistemology. I <em>like</em> epistemology. Maybe I'm doing it wrong.</p>
+<p>Anyway, for now, that doesn't matter. I'm focused on something that I would have liked at university. Joy of mathematics, don't you know.</p>
+<p>Not that I'm feeling much joy right now. It's not <em>unpleasant</em> though.</p>
+<p>Let's do another exercise. 2.6: Prove Riesz's lemma: Given a closed subspace \(Y\) of a normed space \(X\) and an \(\epsilon &gt; 0\), there is a norm one vector \(x \in X\) such that \(||x - y|| &gt; 1 - \epsilon\) for all \(y \in Y\). If \(X\) is infinite dimensional, use Riesz's lemma to construct a sequence of norm one vectors (x_n \in X) satisfying \(||x_n - x_m \geq \frac{1}{2}\) for all \(m \neq n\).</p>
+<p>NB. there's a stupid error in the question, in that obviously \(Y\) has to be a <em>proper</em> subspace for this to work otherwise \(X = Y\) is a counter-example.</p>
+<p>OK, prove the first bit...</p>
+<p>So we're all about the functionals right now, right? Suppose we had some norm one linear functional \(f\) such that \(f(y) = 0\) for \(y \in Y\). This would give us what we want, because we can find some \(x\) with \(||x|| = 1\) and \(f(x) &gt; 1 - \epsilon\). Then for \(y \in Y\) we have \(f(x - y) = f(x) &gt; 1 - \epsilon\). But \(|f(x - y)| \leq ||x - y||\), because \(f\) is norm one, so \(||x - y|| \geq |f(x - y)| &gt; 1 - \epsilon\) as desired.</p>
+<p>Can we construct such a functional?</p>
+<p>I want to say that it's obvious that we can as follows:</p>
+<p>(Actual desire to check Twitter just then. Apparently my brain wants to glitch out and stop me working on this)</p>
+<p>We can construct the quotient space \(Q = X / Y\), and there is a linear functional \(g\) of norm one on this space, which taking \(f = g \cdot q\) where \(q: X \to Q\) is the quotient map, gives us a linear functional of norm one on the original space.</p>
+<p>It's not obvious to me that this has norm one though? It certainly has norm at most one.</p>
+<p>You can also prove the following result by more blah blah Zorn nonsense: Let \(X\) be a vector space, \(Y \subseteq X\) a proper subspace and \(x \in Y \setminus X\), do the usual Hahn-Banach extension shenanigans to get a functional on \(&lt;\{x\} \cup Y&gt;\) by adding in elements of \(y\) not in the span of what's already covered and setting them to \(0\).</p>
+<p>I think this is more or less assuming what I'm trying to prove though. It's maybe simpler than this?</p>
+<p>One of the things I'm worrying about is that \(\epsilon\). Presumably we can't set \(\epsilon = 0\), so maybe there's some reason we can't expect to extend this with \(f(x) = 1\)?</p>
+<p>I'm currently being reminded of Andrew Wiles on <a href="https://mathwithbaddrawings.com/2017/09/20/the-state-of-being-stuck/">being stuck</a>. This is, I think, another example of <a href="https://notebook.drmaciver.com/posts/2020-04-14-13:56.html">discomfort tolerance</a> being very important for good epistemics, although I think the discomfort is net harmful here.</p>
+<p>What I'd <em>like</em> is to cultivate some open curiousity and just sit with the problem. I'm feeling restless though. I'm going to read up on the proof of the Hahn-Banach theorem from Rudin's "Real and Complex Analysis" and see how I get on with that, then probably go do some staff spinning in the garden for a bit. I've been doing this for over an hour now, so it's probably time to take a quick break.</p>
+<p>(Weird posture again. Found I was twisted around and also sitting on one my legs)</p>
+<p>I went to the bathroom instead and had some more thoughts, so writing these down before I go outside:</p>
+<ul>
+<li>I found myself wondering... I've been quite blocked on PhD work recently. If I can just sit down and grind through it like this, can I deploy the same skill at my PhD? I should be able to, and I <em>do not like</em> that thought. <a href="https://notebook.drmaciver.com/posts/2020-04-15-06:31.html">Capabilities can be coerced</a> and self-coercion is a thing. If I can do it, then I should do it, and if I should do it, then I am bad for not doing it. <a href="https://notebook.drmaciver.com/posts/2020-03-07-12:35.html">This isn't true</a> but it feels true. This almost put the <a href="https://notebook.drmaciver.com/posts/2020-04-20-10:52.html">brakes</a> on the whole thing but I'm going to try to stay with it.</li>
+<li>This whole thing feels <em>annoying</em>. There are <em>details</em> and I don't <em>like</em> details. The details are <em>stupid</em>. Being annoyed makes me want to say "Fuck it, this is pointless, don't want to deal with it".</li>
+<li>Thought just now: Of course it's pointless. It was deliberately chosen to be pointless. Why am I doing this again?</li>
+<li>Feels like I have an ulterior motive that I'm not admitting to myself.</li>
+<li>It's difficult to distinguish between "can't do this" and "don't want to do this", especially when the latter is liable to cause my brain to glitch out.</li>
+</ul>
+<p>Well I'm back from staff spinning now. That was interesting. The movements were energetic, violent, in a way that they usually aren't. I knew I was annoyed, but am I... angry? Does mathematics make me angry?</p>
+<p>It would make sense if it did maybe. Anger is very focusing. Certainly some of my more productive coding sessions have been because I got angry about something and decided to just defeat it.</p>
+<p>In many ways, focus is the <em>point</em> of anger. It lets you exclude everything but the problem in front of you, and raises the energy level you have to bring to bear on the problem.</p>
+<p>I'm not good at anger. Or rather, perhaps, the problem is that I am <em>very</em> good at anger, and that feels unsafe. You've seen me cranky, but believe me that's not the same thing. Very few people reading this will ever have seen me in a proper rage.</p>
+<p>Part of that is that I had a very angry childhood. I did not get on well with other children.</p>
+<p>Part of this was that I was a strange, poorly socialised, child who was quite hard to relate to. I hadn't really figured out how to human, and the people around me hadn't really figured out how to teach me.</p>
+<p>Part of this was systemic failures of the school system.</p>
+<p>A substantial part of this was that a significant number of kids around me were vicious little thugs and the teachers who were supposed to be responsible for protecting the children were culpable in a vast institutional betrayal of those in their care and they all deserve to die in a fire.</p>
+<p>Huh, yes. Apparently I <em>am</em> angry. I don't actually think they deserve to die in a fire. I understand adolescent development, I understand incentives, I mostly do not think the people involved were intrinsically bad people so much as part of a broken system. But normally I'm quite surprised at how inaccessible anger about the whole thing feels. I don't feel like I'm <em>allowed</em> to be angry, because of empathy and understanding of systemic problems.</p>
+<p>I saw a therapist briefly last year. She wasn't very useful, but she did get the ball rolling. We had a conversation at one point about how bad my school experience was and she said that I must be very angry about it. "Oh sure but blah blah systemic issues" I lightly answered. I thought I was telling the truth, but maybe I was lying.</p>
+<p>Anyway, enough about childhood trauma, lets focus on important things like irrelevant pure mathematics.</p>
+<p>...right after writing that the song that came on Spotify rotation was VNV Nation's "Illusion".</p>
+<p>Opening lyrics:</p>
+<blockquote>
+<p>I know it's hard to tell how mixed up you feel</p>
+<p>Hoping what you need is behind every door</p>
+<p>Each time you get hurt, I don't want you to change</p>
+<p>Because everyone has hopes, you're human after all</p>
+<p>The feeling sometimes, wishing you were someone else</p>
+<p>Feeling as though you never belong</p>
+<p>This feeling is not sadness, this feeling is not joy</p>
+<p>I truly understand. Please, don't cry now</p>
+</blockquote>
+<p>Reader, I did not obey their request, and had to retreat to my room to have a little cry.</p>
+<p>Accidentally <a href="https://nibrasi.co.uk/the-lost-art-of-crying">NEDERAing</a> myself with a textbook on some Banach space theory is some serious <a href="https://notebook.drmaciver.com/posts/2020-02-24-10:37.html">everything is connected</a> bullshit right there.</p>
+<p>It's almost like there's some unprocessed emotions associated with the thing that I spent four years of my life on, the last one burning me out right to the edge of quitting before giving me a decidedly mediocre grade on something that I had connected a significant chunk of my identity to.</p>
+<p>No, seems fake. Lets do some maths.</p>
+<p>The traditional approach on an exam when you're stuck is to go do some other questions, so lets try another one.</p>
+<p>First though, I have retrated to my room. I like my flatmates very much, but we do not have the sort of relationship where I particularly want to be crying in front of them, and apparently that's what's on the cards today.</p>
+<p>Of course this presents its own problem, which is that I don't <em>like</em> spending time in my room. I don't entirely know why. I've been vaguely intending to do Focusing on the problem by spending a bunch of time in my room and seeing how it feels, and by "vaguely intending" I mean "I have absolutely no intention of doing this because it sounds <em>awful</em>".</p>
+<p>One of the drivers of this is that I'm very bad at maintaining my personal space. I've bought a copy of <a href="https://amzn.to/2yeCQ4i">Unfuck Your Habitat</a> to try to offset that, but it hasn't arrived yet. Currently my habitat... well it's not <em>unhygienic</em> or anything but it's cluttered as fuck and I really should do something about that.</p>
+<p>For now though I'm going to do some vacuuming. My new coping board tells me I should do that on the weekends.</p>
+<p>Procrastinating? I'm sure I don't know what you mean. Next you'll be telling me that my sudden desire to rearrange all my furniture is procrastination.</p>
+<p>I have successfully resisted the urge to rearrange all my furniture. Time for some mathematics.</p>
+<p>2.7: Given linear functionals \(f\) and \((g_i)_{i = 1}^n\) on a vector space, prove that \(text{ker} f \supseteq \bigcap\limits_{i = 1}^n \text{ker} g_i\) if and only if \(f = \sum a_i g_i\) for some \(a_i \in \mathbb{R}\).</p>
+<p>The if is easy: If \(x \in  \bigcap\limits_{i = 1}^n \text{ker} g_i\) then \(f(x) = \sum a_i g_i(x) = \sum a_i 0 = 0\).</p>
+<p>The only if...</p>
+<p>I stared at a problem for a bit and did some work on it and then took a twenty minute WhatsApp break to chat to people.</p>
+<p>One of the problems with this is that the analysis bit I'm good at, the linear algebra, not so much.</p>
+<p>Suppose without loss of generality that the \(g_i\) are linearly independent. Then we can find \(x_i\) with \(g_i(x_i) = 1\) and and \(g_i(x_j) = 0\) for \(i \neq j\) basically by... the thing you do to to construct an orthogonal vector? <a href="https://en.wikipedia.org/wiki/Gram%E2%80%93Schmidt_process">Gram-Schmidt elimination</a>, right. You do it progressively, starting with any \(y\) such that \(g(y) = 1\) and \(y \not\in &lt;\{x_j : j &lt; i\}&gt;\). Then you set \(x_i = y - \sum\limits_{j &lt; i} g_i(x_j) x_j\).</p>
+<p>Does this work? I don't think this works.</p>
+<p>Ugh, the annoying thing I'm finding is that I've still got the right conceptual framework, but I'm no longer any good at the detail work.</p>
+<p>This might be a retcon though. I'm not sure I was <em>ever</em> good at the detail work. I've always leaned very heavily on conceptual framework stuff.</p>
+<p>Lets go back to my first thought, which is that there's a dimensionality trick here.</p>
+<p>Feelings interrupt: Persistent internal exchange to the tune of "Ugh this is awful. I'm being <em>forced to do things I'm bad at</em>." "Are you being forced? You can stop if you want. Do you want to stop?" "...no" "Well then lets keep going until you do.". Discomfort tolerance is hard.</p>
+<p>Anyway, dimension trick.</p>
+<p>For finite dimensional \(V\) we have \(\text{dim}(V) = \text{dim}(V*)\). So if \(f \not\in \text{span}(g_i)\) then we must be able to find \(x_1, \ldots, x_n\) such that the restriction of the \(g_i\) to \(X = &lt;\{x_i\}&gt;\) are linearly independent. Necessarily \(f|_X \in <g_i|_x\>\), say \(f|_X = \sum a_i g_i|_X\). Let \(f' = \sum a_i g_i\). </g_i|_x\></p>
+<p>If \(f' = f\) then we're done. Otherwise there is some \(y\) such that \(f'(y) \neq f(y)\).</p>
+<p>I'm going to go have some lunch.</p>
+<p>I'm back from lunch. I had stew. It was nice. I also now have a pot of genmaicha tea, and have taken some ibuprofen and theanine to go with it.</p>
+<p>The caffeine/theanine/ibuprofen stack is a fairly productive one for me, but I do suspect part of that is <a href="https://twitter.com/m_ashcroft/status/1246749019201732610">the suppression of feelings</a> oh well.</p>
+<p>Over lunch I was thinking about three things:</p>
+<ul>
+<li>Dissociation, and how many behaviours are about avoiding feelings.</li>
+<li>Anger, and the way we treat male anger as intrinsically dangerous and how much disservice this does to men.</li>
+<li>Linear algebra.</li>
+</ul>
+<p>Lets focus on the important one: Linear algebra.</p>
+<p>I had seemingly forgotten the obvious fact that a linear functional consists of a decomposition of a vector space \(V = <x> \oplus \text{ker}(f)\). I'm not sure if this helps here.</x></p>
+<p>I thought I might have a go at some of the chapter 1 exercises, see if I fare any better there.</p>
+<p>First, an easy one. 2.5, show that \(l^\infty\) is not separable.</p>
+</section>
+
+    </article>
+<footer>
+Copyright David R. MacIver.
+
+CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
+</footer>
+  </body>
+</html>
