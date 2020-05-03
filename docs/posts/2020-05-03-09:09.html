@@ -75,7 +75,7 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
 <p>Anyway, enough feelings, lets do some mathematics.</p>
 <p>I don't plan to do all the exercises, just the ones that spark joy. Here's chapter 1, exercise 14:</p>
 <blockquote>
-<p>Let \(H\) be a separable Hilbert space with orthonormal basis \((e_n)\) and let \(K\) be a compact subset of H. Given \(\epsilon &gt; 0\), show there exists an \(N\) such that \(||\sum\limits_{n = N}^\infty <x, e_n=""> e_n&gt;|| &lt; \epsilon\) for every \(x \in K\).</x,></p>
+<p>Let \(H\) be a separable Hilbert space with orthonormal basis \((e_n)\) and let \(K\) be a compact subset of H. Given \(\epsilon &gt; 0\), show there exists an \(N\) such that \(||\sum\limits_{n = N}^\infty \langle x, e_n \rangle e_n&gt;|| &lt; \epsilon\) for every \(x \in K\).</p>
 </blockquote>
 <p>I stared at it for a little bit then went to have a shower. In the shower the answer was obvious:</p>
 <p>Let \(y_1, \ldots, y_n\) be an \(\frac{\epsilon}{2}\)-net for \(K\). Then for each \(i\) there exists \(N_i\) such that \(||\limits_{n \geq N_i} <y_i, e_n=""> e_n|| &lt; \frac{\epsilon}{2}\) because these are just the tail sums for \(||y||^2 = \sum <y, e_n="">^2\).</y,></y_i,></p>

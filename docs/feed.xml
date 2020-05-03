@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-05-03T12:32:28+01:00</updated>
+  <updated>2020-05-03T13:25:42+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1202,7 +1202,7 @@ It's not really just a question of whether you are culturally with them, they ar
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-03-09:09.html</id>
     <title>Numbers and Feelings</title>
-    <updated>2020-05-03T12:32:28+01:00</updated>
+    <updated>2020-05-03T13:25:42+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Numbers and Feelings&lt;/p&gt;
@@ -1280,7 +1280,7 @@ It's not really just a question of whether you are culturally with them, they ar
 
 
 &lt;blockquote&gt;
-&lt;p&gt;Let \(H\) be a separable Hilbert space with orthonormal basis \((e_n)\) and let \(K\) be a compact subset of H. Given \(\epsilon &amp;gt; 0\), show there exists an \(N\) such that \(||\sum\limits_{n = N}^\infty &lt;x, e_n=""&gt; e_n&amp;gt;|| &amp;lt; \epsilon\) for every \(x \in K\).&lt;/x,&gt;&lt;/p&gt;
+&lt;p&gt;Let \(H\) be a separable Hilbert space with orthonormal basis \((e_n)\) and let \(K\) be a compact subset of H. Given \(\epsilon &amp;gt; 0\), show there exists an \(N\) such that \(||\sum\limits_{n = N}^\infty \langle x, e_n \rangle e_n&amp;gt;|| &amp;lt; \epsilon\) for every \(x \in K\).&lt;/p&gt;
 &lt;/blockquote&gt;
 
 
