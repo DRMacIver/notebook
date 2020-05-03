@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-05-03T13:31:57+01:00</updated>
+  <updated>2020-05-03T13:33:31+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1202,7 +1202,7 @@ It's not really just a question of whether you are culturally with them, they ar
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-03-09:09.html</id>
     <title>Numbers and Feelings</title>
-    <updated>2020-05-03T13:31:57+01:00</updated>
+    <updated>2020-05-03T13:33:31+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Numbers and Feelings&lt;/p&gt;
@@ -1320,7 +1320,7 @@ It's not really just a question of whether you are culturally with them, they ar
 &lt;p&gt;Let's try another exercise. Exercise 2.1:&lt;/p&gt;
 
 
-&lt;p&gt;Given a nonzero vector \(x\) in a normed space \(X\, show that there exists a norm one functional \(f \in X^*\) satisfying \(|f(x)| = ||x||\). On the othe rhand, give an example of a normed space \(X\) and a norm one linear functional \(f \in X^*\) such that \(|f(x)| &amp;lt; ||x||\) for every \(0 \neq x \in X\).&lt;/p&gt;
+&lt;p&gt;Given a nonzero vector \(x\) in a normed space \(X\), show that there exists a norm one functional \(f \in X^*\) satisfying \(|f(x)| = ||x||\). On the othe rhand, give an example of a normed space \(X\) and a norm one linear functional \(f \in X^*\) such that \(|f(x)| &amp;lt; ||x||\) for every \(0 \neq x \in X\).&lt;/p&gt;
 
 
 &lt;p&gt;I just noticed that I was sitting at an extremely odd angle writing this, twisting my spine around. That can't be good for me. I should really use this to practice some Alexander Technique and pay more attention to unlearning those habits, but too much to try at once in think. For now I'll just notice and practice some basic posture unfucking.&lt;/p&gt;
@@ -1536,7 +1536,7 @@ It's not really just a question of whether you are culturally with them, they ar
 &lt;p&gt;I have successfully resisted the urge to rearrange all my furniture. Time for some mathematics.&lt;/p&gt;
 
 
-&lt;p&gt;2.7: Given linear functionals \(f\) and \((g_i)_{i = 1}^n\) on a vector space, prove that \(text{ker} f \supseteq \bigcap\limits_{i = 1}^n \text{ker} g_i\) if and only if \(f = \sum a_i g_i\) for some \(a_i \in \mathbb{R}\).&lt;/p&gt;
+&lt;p&gt;2.7: Given linear functionals \(f\) and \((g_i)_{i = 1}^n\) on a vector space, prove that \(\text{ker} f \supseteq \bigcap\limits_{i = 1}^n \text{ker} g_i\) if and only if \(f = \sum a_i g_i\) for some \(a_i \in \mathbb{R}\).&lt;/p&gt;
 
 
 &lt;p&gt;The if is easy: If \(x \in  \bigcap\limits_{i = 1}^n \text{ker} g_i\) then \(f(x) = \sum a_i g_i(x) = \sum a_i 0 = 0\).&lt;/p&gt;

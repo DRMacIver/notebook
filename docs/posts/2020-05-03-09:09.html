@@ -30,6 +30,7 @@ MathJax.Hub.Config({
 });
 
 MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
+  console.log("Hello?")
   console.log(message)
 });
 
@@ -89,7 +90,7 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
 <p>It doesn't need to be useful though. Joy of mathematics, remember? I'm doing this to see whether I can, not because I care about this. Part of why I picked this book up is that I have no conceivable use for the material. There will be no obligation to carry on after.</p>
 <p>I find I still don't <a href="https://notebook.drmaciver.com/posts/2020-03-14-13:55.html">alieve</a> I can concentrate on doing mathematics all day, but I'm prepared to try to suspend that alief for a while and see where the day takes me.</p>
 <p>Let's try another exercise. Exercise 2.1:</p>
-<p>Given a nonzero vector \(x\) in a normed space \(X\, show that there exists a norm one functional \(f \in X^*\) satisfying \(|f(x)| = ||x||\). On the othe rhand, give an example of a normed space \(X\) and a norm one linear functional \(f \in X^*\) such that \(|f(x)| &lt; ||x||\) for every \(0 \neq x \in X\).</p>
+<p>Given a nonzero vector \(x\) in a normed space \(X\), show that there exists a norm one functional \(f \in X^*\) satisfying \(|f(x)| = ||x||\). On the othe rhand, give an example of a normed space \(X\) and a norm one linear functional \(f \in X^*\) such that \(|f(x)| &lt; ||x||\) for every \(0 \neq x \in X\).</p>
 <p>I just noticed that I was sitting at an extremely odd angle writing this, twisting my spine around. That can't be good for me. I should really use this to practice some Alexander Technique and pay more attention to unlearning those habits, but too much to try at once in think. For now I'll just notice and practice some basic posture unfucking.</p>
 <p>Anyway, the exercise.</p>
 <p>The first bit is just Hahn-Banach. Take the one-dimensional space spanned by \(x\) and define \(f(x) = ||x||\) there. This is a norm one functional and by Hahn-Banach you can extend it to a norm-one functional on the whole space.</p>
@@ -171,7 +172,7 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
 <p>For now though I'm going to do some vacuuming. My new coping board tells me I should do that on the weekends.</p>
 <p>Procrastinating? I'm sure I don't know what you mean. Next you'll be telling me that my sudden desire to rearrange all my furniture is procrastination.</p>
 <p>I have successfully resisted the urge to rearrange all my furniture. Time for some mathematics.</p>
-<p>2.7: Given linear functionals \(f\) and \((g_i)_{i = 1}^n\) on a vector space, prove that \(text{ker} f \supseteq \bigcap\limits_{i = 1}^n \text{ker} g_i\) if and only if \(f = \sum a_i g_i\) for some \(a_i \in \mathbb{R}\).</p>
+<p>2.7: Given linear functionals \(f\) and \((g_i)_{i = 1}^n\) on a vector space, prove that \(\text{ker} f \supseteq \bigcap\limits_{i = 1}^n \text{ker} g_i\) if and only if \(f = \sum a_i g_i\) for some \(a_i \in \mathbb{R}\).</p>
 <p>The if is easy: If \(x \in  \bigcap\limits_{i = 1}^n \text{ker} g_i\) then \(f(x) = \sum a_i g_i(x) = \sum a_i 0 = 0\).</p>
 <p>The only if...</p>
 <p>I stared at a problem for a bit and did some work on it and then took a twenty minute WhatsApp break to chat to people.</p>

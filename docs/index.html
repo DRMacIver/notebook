@@ -30,6 +30,7 @@ MathJax.Hub.Config({
 });
 
 MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
+  console.log("Hello?")
   console.log(message)
 });
 
@@ -163,7 +164,7 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
 <p>Let's try another exercise. Exercise 2.1:</p>
 
 
-<p>Given a nonzero vector \(x\) in a normed space \(X\, show that there exists a norm one functional \(f \in X^*\) satisfying \(|f(x)| = ||x||\). On the othe rhand, give an example of a normed space \(X\) and a norm one linear functional \(f \in X^*\) such that \(|f(x)| &lt; ||x||\) for every \(0 \neq x \in X\).</p>
+<p>Given a nonzero vector \(x\) in a normed space \(X\), show that there exists a norm one functional \(f \in X^*\) satisfying \(|f(x)| = ||x||\). On the othe rhand, give an example of a normed space \(X\) and a norm one linear functional \(f \in X^*\) such that \(|f(x)| &lt; ||x||\) for every \(0 \neq x \in X\).</p>
 
 
 <p>I just noticed that I was sitting at an extremely odd angle writing this, twisting my spine around. That can't be good for me. I should really use this to practice some Alexander Technique and pay more attention to unlearning those habits, but too much to try at once in think. For now I'll just notice and practice some basic posture unfucking.</p>
@@ -379,7 +380,7 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
 <p>I have successfully resisted the urge to rearrange all my furniture. Time for some mathematics.</p>
 
 
-<p>2.7: Given linear functionals \(f\) and \((g_i)_{i = 1}^n\) on a vector space, prove that \(text{ker} f \supseteq \bigcap\limits_{i = 1}^n \text{ker} g_i\) if and only if \(f = \sum a_i g_i\) for some \(a_i \in \mathbb{R}\).</p>
+<p>2.7: Given linear functionals \(f\) and \((g_i)_{i = 1}^n\) on a vector space, prove that \(\text{ker} f \supseteq \bigcap\limits_{i = 1}^n \text{ker} g_i\) if and only if \(f = \sum a_i g_i\) for some \(a_i \in \mathbb{R}\).</p>
 
 
 <p>The if is easy: If \(x \in  \bigcap\limits_{i = 1}^n \text{ker} g_i\) then \(f(x) = \sum a_i g_i(x) = \sum a_i 0 = 0\).</p>
