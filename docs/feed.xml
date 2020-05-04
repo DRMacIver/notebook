@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-05-04T06:21:00+01:00</updated>
+  <updated>2020-05-04T11:57:19+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1693,7 +1693,7 @@ It's not really just a question of whether you are culturally with them, they ar
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-04-06:21.html</id>
     <title>Model Monocropping</title>
-    <updated>2020-05-04T06:21:00+01:00</updated>
+    <updated>2020-05-04T11:57:19+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Model Monocropping&lt;/p&gt;
@@ -1771,6 +1771,9 @@ It's not really just a question of whether you are culturally with them, they ar
 
 
 &lt;p&gt;Often these models will be &lt;em&gt;worse&lt;/em&gt; in some sense. They will work less well if you're in the majority. Often they will be poorly thought through or optimised compared to mainstream models. This is because they are optimised for a smaller number of people for whom those mainstream models were optimised for.&lt;/p&gt;
+
+
+&lt;p&gt;Nevertheless, their inclusion in a healthy model ecosystem is vital, because they capture aspects of reality that we would otherwise ignore, because they come from people for whom those aspects are of vital importance. Further, often through synthesis they allow us to come up with hybrid models that work better for everybody.&lt;/p&gt;
 
 
 &lt;p&gt;There was &lt;a href="https://letter.wiki/conversation/610"&gt;an interesting discussion on letter wiki&lt;/a&gt; that John Nerst linked to recently that contained the following gem:&lt;/p&gt;
