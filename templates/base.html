@@ -9,6 +9,10 @@ DRMacIver's Notebook: ${title}
 DRMacIver's Notebook
 % endif
     </title>
+
+% if title:
+    <meta property="og:title" content="${title}">
+% endif
     <link rel="stylesheet" href="/pygments.css"/>
     <link rel="stylesheet" href="/tufte.css"/>
     <link rel="stylesheet" href="/latex.css"/>
