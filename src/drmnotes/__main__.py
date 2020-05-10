@@ -302,6 +302,7 @@ def post_html(name, source_text):
         post=clean_html(soup),
         title=title,
         date=date.strftime('%Y-%m-%d'),
+        url=f"https://notebook.drmaciver.com/posts/{name}.html",
     )
 
 
