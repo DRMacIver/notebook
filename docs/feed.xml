@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-05-09T13:12:13+01:00</updated>
+  <updated>2020-05-10T08:54:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,101 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-05-01-16:42.html</id>
-    <title>On not behaving like other people</title>
-    <updated>2020-05-01T18:12:39+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;On not behaving like other people&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-05-01&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;From Jonathan Strange and Mr Norrell (again, random dodgy PDF, waiting on paperback to arrive):&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;"Well, I suppose one ought not to employ a magician and then complain that he does not behave like other people," said Wellington.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;This makes me think of Eric Schwizgebel's "&lt;a href="http://schwitzsplinters.blogspot.com/2020/04/in-praise-of-weirdness.html"&gt;In Praise of Weirdness&lt;/a&gt;".&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;What is it to be weird? I propose this: Something is weird if it's not normal. To be weird, a thing has to be somehow unusual -- but simply being unusual isn't enough. A blade of grass might be bent slightly differently than most other blades of grass. That doesn't make it weird -- not unless it's bent in some weird way. Similarly, your car's license plate number is unusual (no one else has it) but probably not weird. To be weird, a thing must be in some respect strikingly contrary to expectations.&lt;/p&gt;
-&lt;p&gt;[...]&lt;/p&gt;
-&lt;p&gt;Statistical rarity isn't enough, as I just explained. But neither is the weird necessarily something that violates our ethical, epistemic, or aesthetic norms. On the contrary, weirdness in my sense is good.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;I agree with Schwitzgebel that weirdness is good. I don't entirely trust people who are not at least a little weird, and all else being equal I much prefer people who are willing to be quite weird in at least some ways.&lt;/p&gt;
-
-
-&lt;p&gt;(All else is usually not equal of course - many people who are weird are weird in ways that cause them to violate some social norms that are reasonably important. Weirdness is good if it does not come from being or cause you to be a jerk to other people. Fortunately many weird people are absolutely lovely)&lt;/p&gt;
-
-
-&lt;p&gt;Some of this is backlash. I'm sufficiently used to &lt;a href="https://www.drmaciver.com/2018/06/on-not-quite-fitting/"&gt;being weird being associated with punishment&lt;/a&gt; that it's very tempting to fall into the trap of "My side isn't bad! Your side is bad!" and reject normality as intrinsically terrible. As a card carrying member of "both sides are good actually" I'm not allowed to do that, but it sure is tempting.&lt;/p&gt;
-
-
-&lt;p&gt;I think normality is actually fine. Normality is a large set of cultural conventions which are designed to me mostly fine for most people, so most people are going to be pretty happy just settling for normality on many different axes, because life is so much easier when you do. What is bad is an excessive commitment to normality. If you are in every respects normal then you are, I'm afraid, definitionally not that interesting. That's fine. You're not required to be interesting to me. It's your choice, but equally it means that I'm probably not going to want to spend much time with you, and we're probably both better off for me acknowledging that.&lt;/p&gt;
-
-
-&lt;p&gt;Additionally, the &lt;em&gt;reasons&lt;/em&gt; for a commitment to a normality often mean that people like this are not safe to be around for me, because they usually come with significant moral weight: They both want other people to be normal, and are less likely to be understanding in ways that they are not.&lt;/p&gt;
-
-
-&lt;p&gt;Circling back to the Strange and Norrell quote though, I think there's more to this than that. I think weirdness is often a good sign that someone is going to be really interesting to talk to, and I think it's for the reason that Jonathan Strange does not behave like other people: He's a &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-07:38.html"&gt;nerd&lt;/a&gt;, and he's a nerd about a sufficiently niche and powerful subject that it permeates is every way of being in the world, and that way of being is alien to other people because of how few others are like him (literally only one other at this point in the story!)&lt;/p&gt;
-
-
-&lt;p&gt;Consider that &lt;a href="https://notebook.drmaciver.com/posts/2020-02-24-10:37.html"&gt;all knowledge is connected&lt;/a&gt; and that &lt;a href="https://notebook.drmaciver.com/posts/2020-02-21-10:04.html"&gt;learning any skill affects many other skills&lt;/a&gt;. If you have a speciality that others lack, you will have a sideways view on the world. You will be able to &lt;a href="https://notebook.drmaciver.com/posts/2020-04-30-15:20.html"&gt;fix things&lt;/a&gt; that others can't, because you have tools they do not. Properly integrated, this will tend to permeate into many other ways of looking at things, and you will gradually start to come off as a bit odd.&lt;/p&gt;
-
-
-&lt;p&gt;I think there is often another layer to it, which is that if you've no option but to be weird, it's often in your interests to be &lt;em&gt;very&lt;/em&gt; weird.&lt;/p&gt;
-
-
-&lt;p&gt;In a professional context like Strange's this serves a very good function: It's a polarizing strategy for filtering out potential work environments that will not deal well with your weirdness. Strange would not enjoy working for someone who was not able to properly work with him in his role as a Magician. If someone required him to behave like a normal person he would be literally unable to do his job.
-Moreover, he is in extremely high demand due, so it is his in his interests to use that leverage to ensure he does not work with such people, and by being as weird as possible early on he will filter them out sooner rather than later.&lt;/p&gt;
-
-
-&lt;p&gt;This is essentially a weirdness version of &lt;a href="http://www.thesmokinggun.com/documents/crime/van-halens-legendary-mms-rider"&gt;the brown M&amp;amp;Ms test&lt;/a&gt;: It lets you figure out early on whether someone is safe to work with or be around.&lt;/p&gt;
-
-
-&lt;p&gt;Another factor that tends to drive weird people to be weirder is that we might as well.&lt;/p&gt;
-
-
-&lt;p&gt;There's a parable that I think about a lot that I got from a Scott Alexander post that I do not otherwise recommend:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Chen Sheng was an officer serving the Qin Dynasty, famous for their draconian punishments. He was supposed to lead his army to a rendezvous point, but he got delayed by heavy rains and it became clear he was going to arrive late. The way I always hear the story told is this:&lt;/p&gt;
-&lt;p&gt;Chen turns to his friend Wu Guang and asks “What’s the penalty for being late?”&lt;/p&gt;
-&lt;p&gt;“Death,” says Wu.&lt;/p&gt;
-&lt;p&gt;“And what’s the penalty for rebellion?”&lt;/p&gt;
-&lt;p&gt;“Death,” says Wu.&lt;/p&gt;
-&lt;p&gt;“Well then…” says Chen Sheng.&lt;/p&gt;
-&lt;p&gt;And thus began the famous Dazexiang Uprising, which caused thousands of deaths and helped usher in a period of instability and chaos that resulted in the fall of the Qin Dynasty three years later.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;If you're not going to be able to pass as normal, you might as well relax on a bunch of other areas where you're not normal and struggle to conform, because at this point you're going to be punished anyway so you might as well claim what you want rather than just what you hoped you could get away with.&lt;/p&gt;
-
-
-&lt;p&gt;One problem I worry about with all of this that valuing weirdness for weirdness sake ends up losing a lot of the value of it as a signal. I've always been very mistrustful of people who lean hard into geek or nerd as an identity for this reason (I do tend to use it as a &lt;em&gt;description&lt;/em&gt; a lot, but I do feel like there's a difference) - it seems to be valuing the trappings of interestingness without doing the work to get you there. This tends to run into David Chapman's &lt;a href="https://meaningness.com/geeks-mops-sociopaths"&gt;Geeks, MOPs, and Sociopaths&lt;/a&gt; problem where people use deliberately use difference from the norm to come off as interesting rather than just doing interesting things and letting the differences arise naturally.&lt;/p&gt;
-
-
-&lt;p&gt;I don't currently have a solution for this - all of the things I can think of will tend to descend into gatekeeping, which I'm generally not in favour of due to &lt;a href="https://notebook.drmaciver.com/posts/2020-03-10-12:38.html"&gt;homophily of false positives problem&lt;/a&gt; among other reasons.&lt;/p&gt;
-
-
-&lt;p&gt;Fortunately, it's not really a problem I need to solve, because generally speaking the main way I'm interested in this is how it affects my own behaviour. One of the things I've been resolving to do over the last few years is to be more comfortable with my own weirdness, and with being weird around others, because I've never been very good at passing for normal in the first place.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-05-01-16:42.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-02-08:46.html</id>
     <title>Strategy, reliability, and impersonality</title>
@@ -1369,7 +1274,7 @@ I &lt;em&gt;do&lt;/em&gt; read a lot of books (typically between one and three a
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-09-11:26.html</id>
     <title>Initial Notes Towards a Manifesto</title>
-    <updated>2020-05-09T13:12:13+01:00</updated>
+    <updated>2020-05-09T13:57:51+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Initial Notes Towards a Manifesto&lt;/p&gt;
@@ -1453,5 +1358,100 @@ When I wrote &lt;a href="https://notebook.drmaciver.com/posts/2020-05-08-10:06.h
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-05-09-11:26.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-05-10-08:54.html</id>
+    <title>How to be a better person</title>
+    <updated>2020-05-10T08:54:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;How to be a better person&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-05-10&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;&lt;img alt="Shopping Cart test of Ethics" src="/images/shoppingcart.jpg"/&gt;&lt;/p&gt;
+
+
+&lt;p&gt;(&lt;a href="https://twitter.com/allenmmurray/status/1258954956473679873"&gt;Credit&lt;/a&gt;)&lt;/p&gt;
+
+
+&lt;p&gt;In response to my &lt;a href="https://notebook.drmaciver.com/posts/2020-05-09-11:26.html"&gt;Initial notes towards a manifesto&lt;/a&gt;, &lt;a href="https://twitter.com/joxn"&gt;@joXn&lt;/a&gt; quite reasonably asked how I would avoid falling afoul of the problem that, contra The Good Place, learning ethics doesn't actually make one more ethical. Eric Schwitzgebel has a lot of great research on this (see &lt;a href="https://faculty.ucr.edu/~eschwitz/"&gt;his publications&lt;/a&gt; and in particular the section "The Relationship Between Moral Reflection and Moral Behavior").&lt;/p&gt;
+
+
+&lt;p&gt;Of these, I think &lt;a href="https://faculty.ucr.edu/~eschwitz/SchwitzAbs/MoralMediocrity.htm"&gt;Aiming for Moral Mediocrity&lt;/a&gt; is perhaps the most important:
+Schwitzgebel argues that most people probably aim to be about as moral as their peers, and that this is mediocre (neither great, nor terrible) to do, but that most people could manage to be better than they are with no great hardship.&lt;/p&gt;
+
+
+&lt;p&gt;I think Schwitzgebel's claim is basically right, and the paper is a very good one, with two major caveats:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;He is underestimating the hardship, because (I think) he is missing one of the reasons why this happens.&lt;/li&gt;
+&lt;li&gt;He has fallen afoul of precisely the reason why learning ethics does not make you a better person.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;I think there are approximately four reasons why people fail to behave ethically:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;They do not care to do the right thing.&lt;/li&gt;
+&lt;li&gt;They are discouraged from doing the right thing by external factors.&lt;/li&gt;
+&lt;li&gt;They do not know what the right thing is.&lt;/li&gt;
+&lt;li&gt;They do not know how to do the right thing.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;Behaving ethically is a skillful practice, and most people are either not very good at the skill, not very motivated to practice it, or do not have an environment that enables them to practice it.&lt;/p&gt;
+
+
+&lt;p&gt;Ethicists primarily study what the right thing to do is, but I think for most people this is not the &lt;a href="https://notebook.drmaciver.com/posts/2020-02-21-10:04.html"&gt;constraint&lt;/a&gt; on the skillful practice of ethics.&lt;/p&gt;
+
+
+&lt;p&gt;I will, for the purpose of this post, assume that people &lt;em&gt;care&lt;/em&gt; to do the right thing. I think fixing that is a whole different question. This leaves the other three. Given that we know from Schwitzgebel's work that knowing the right thing to do is also not enough, lets assume for the moment that you, in most practical circumstances if not necessarily in general, know what the right thing to do is. Why don't you do it?&lt;/p&gt;
+
+
+&lt;p&gt;Well, lets take a look at Schwitzgebel's theme of Moral Mediocrity: Why do people aim to be morally mediocre?&lt;/p&gt;
+
+
+&lt;p&gt;I propose that there's a very straightforward reason: Moral Mediocrity is the option that won't get you punished.&lt;/p&gt;
+
+
+&lt;p&gt;If you behave badly, people will be judgemental towards you. But they will also react badly to you if you are especially moral. It's not just that you're not a saint it's that, in actual practice, we don't &lt;em&gt;like&lt;/em&gt; saints, because they make us feel bad about ourselves.&lt;/p&gt;
+
+
+&lt;p&gt;One of the examples in the paper is vegetarianism. Suppose you were reasonably convinced that, ethically speaking, you should be a vegetarian or vegan. Now, all your interactions with people around you around food come with extra friction. Even if you never say anything judgy about it, it's impossible for people to not know you're vegetarian (if they're sharing meals with you) and many of them will respond defensively or aggressively about it. You'll experience a constant, albeit low grade, pressure of the people around you trying to drag you back down to their moral level.&lt;/p&gt;
+
+
+&lt;p&gt;You'll see this with other things too: Someone who is unusually ethical will constantly have people telling them to relax, take things less seriously, etc. Being unusually ethical is weird, and triggers the &lt;a href="https://notebook.drmaciver.com/posts/2020-02-29-10:30.html"&gt;social obligation to be bad at things&lt;/a&gt; in a big way.&lt;/p&gt;
+
+
+&lt;p&gt;This is not, I hasten to add, a moral justification for being morally mediocre. It doesn't change what you &lt;em&gt;should&lt;/em&gt; do. If anything, the tendency of people to norm their behaviour to those around them creates a stronger moral obligation to be good, because it influences others to be good. It is a &lt;em&gt;practical barrier to ethical behaviour&lt;/em&gt;, and any theory of ethics that does not teach you to overcome such practical barriers will not result in more ethical behaviour any more than a detailed understanding of thermodynamics will allow you to build an internal combustion engine. A theory of ethics is all very well, but you need a &lt;em&gt;practice&lt;/em&gt; of ethics, which is what Schwitzgebel's paper.&lt;/p&gt;
+
+
+&lt;p&gt;Here's another practical barrier: If you realise that you are behaving badly, and decide to be better, you have to &lt;a href="https://notebook.drmaciver.com/posts/2020-05-07-07:57.html"&gt;reconcile yourself to the fact that you could always have been better&lt;/a&gt;, which is very painful, so you would much rather rationalise your behaviour as just fine the way it is to avoid that pain.&lt;/p&gt;
+
+
+&lt;p&gt;And for another, consider the following scenario: Suppose you decide to be vegetarian, and you're really good about it for about a month, virtuously resisting the temptation to eat meat, and absolutely hating how bland all your food has become because you don't know how to cook interesting vegetarian food and the cafeteria where you mostly eat has awful vegetarian food. After about a month, you go out for a meal with some friends, and you look at the incredibly disappointing vegetarian menu and your eyes are drawn to the cheesburger selection... and after that you're no longer vegetarian.&lt;/p&gt;
+
+
+&lt;p&gt;This actually demonstrates &lt;em&gt;two&lt;/em&gt; problems: Firstly, you don't know how to be vegetarian, and are trying to overcome that limitation with pure willpower rather than treating it as a practical problem you need to solve, and the second is that you don't understand behaviour change so you tried to go all in on the new behaviour and then gave up as soon as you failed once.&lt;/p&gt;
+
+
+&lt;p&gt;These are the three main practical barriers to overcome: Social norms, emotional difficulties, and missing skills, and all of these are emimently solvable problems that you can learn to overcome, and that you will find personally beneficial to learn to overcome regardless of whether you use them to become more ethical.&lt;/p&gt;
+
+
+&lt;p&gt;More, I think once you have acquired these skills, you will naturally become more ethical (or at least, more in line with your own values): If you can change when you feel like you should, and you feel like you should behave a particular way, then you'll just do that.&lt;/p&gt;
+
+
+&lt;p&gt;Mostly, at least. You'll probably still be bad occasionally. That's OK. It's more fun to be a bit evil from time to time.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-05-10-08:54.html" rel="alternate"/>
   </entry>
 </feed>
