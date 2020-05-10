@@ -132,7 +132,11 @@ def edit_and_commit_post(name):
     files = [post_file, os.path.join(HTML_POSTS, name + '.html')]
     git("add", *files)
     git("add", "-u", HTML_ROOT)
-    git("commit", "-m", "Add new post %r" % (name,))
+
+    if prev:
+        git("commit", "-m", "Edit post %r" % (name,))
+    else:
+        git("commit", "-m", "Add new post %r" % (name,))
 
 
 @main.command(name='new-post')
