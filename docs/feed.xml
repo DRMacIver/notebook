@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-05-10T10:59:39+01:00</updated>
+  <updated>2020-05-11T09:32:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,163 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-05-02-08:46.html</id>
-    <title>Strategy, reliability, and impersonality</title>
-    <updated>2020-05-02T11:08:05+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Strategy, reliability, and impersonality&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-05-02&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Three cards:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://www.learntarot.com/maj10.htm"&gt;Wheel of Fortune&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.learntarot.com/pkn.htm"&gt;Knight of Pentacles&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.learntarot.com/w6.htm"&gt;Six of Wands&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;In &lt;a href="https://en.wikipedia.org/wiki/Personal_construct_theory"&gt;Personal Construct Psychology&lt;/a&gt; we organise how we look at the world through a series of bipolar &lt;em&gt;constructs&lt;/em&gt;, axes around which we organise the world. For example Masculine/Feminine, Good/Evil, Strong/Weak. A construct is not necessarily a binary category (indeed usually is not) but is a line along which we can orient.&lt;/p&gt;
-
-
-&lt;p&gt;Kelly proposes we look for constructs by comparing three things:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;a construct is a way in which some things are alike and yet different from others. In its minimum context a construct would be a way in which two things are alike and different from a third. It should be kept in mind that the way in which the two things are like each other should be the same as the way in which they are different from the third. We do not explicitly express a whole construct if we say, ‘Mary and Alice have gentle dispositions but neither of them is as attractive as Jane.’ We would have to say something like this, if we were to express a true construct: ‘Mary and Alice are gentle; Jane is not.’ Or we might say, ‘Jane is more attractive than Mary or Alice.’&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;("The Psychology of Personal Constructs", Vol 1, p 79)&lt;/p&gt;
-
-
-&lt;p&gt;I've been finding using pairs of cards to define axes quite interesting in my previous posts, so I thought it might by a good way to look at a set of three cards, constructing a construct between each card and the pair defined by the other two.&lt;/p&gt;
-
-
-&lt;p&gt;Focusing first on The Wheel of Fortune suggests the construct Impersonal/Personal to me. The Wheel of Fortune seems to be intended to be more about destinty than chance, but as a non-believer in destiny I think destiny &lt;em&gt;is&lt;/em&gt; chance, it's just the pretty face we put on it to try to pretend that it is more personal than it is. Both the Knight of Pentacles and the Six of Wands in contrast represent people, each of them striving against chance in their own ways: The Knight of Pentacles doggedly plugging away at it, persevering in the face of setbacks, while the Six of Wands rides it to success, but ultimately both are people, in contrast to the faceless nature of fortune and chance.&lt;/p&gt;
-
-
-&lt;p&gt;This impersonality of random chance is one of the chief obstacles to using it in many contexts where it would be sensible to - there is no court of appeal against chance. If it was unfair, it was unfair. Them's the breaks.
-Even if &lt;em&gt;statistically&lt;/em&gt; a random procedure produces much better results than a deterministic one, people find this impersonality daunting. In many ways, this is one of the big failings of atheism as a foundation for systems of human organisation (NB I am an atheist): We can no longer pretend that random chance is the will of the gods, putting a face on the faceless.&lt;/p&gt;
-
-
-&lt;p&gt;To pick a random page from &lt;a href="https://amzn.to/2KRvRRh"&gt;Random Justice&lt;/a&gt; (p. 15):&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;While the lottery has never been adopted as a general social decision-making tool, we shall see in due course that it has, in the past, bene used to resolve a fairly wide variety of matters. Yet, today, seriously to entertain the prospect of extensive social decision-making by resort to lot would probably strike most people as absurd. "To a modern educated man," Tylor remarked over a centur  ago, "drawing lots or tossing up a coin is an appeal to chance, that is, to ignorance." To argue that, in general, social goods and burdens ought to be distributed randomly is to take no account of criteria such as merit, desert, competence, and need. Why, when important decisions have to be made, should we place our trust in the luck of the draw?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;This impersonality is, I think, key to this problem: We treat a person as knowledgeable, chance as ignorant. But individual &lt;a href="https://notebook.drmaciver.com/posts/2020-02-25-10:39.html"&gt;people's decision making should also be considered randomised&lt;/a&gt;, so the real question is not whether decision making should be personal or impersonal, but &lt;em&gt;how&lt;/em&gt; personal should we make it?&lt;/p&gt;
-
-
-&lt;p&gt;Now focusing on the Knight of Pentacles, we get the construct Reliable/Unreliable. The Knight of Pentacles's determining feature is his doggedness - he is dedicated to a task, he stubbornly pursues it. He's not exciting, but you can rely on him doing the work. Both success and chance are somewhat out of your control - you can influence them, but you cannot rely on them.&lt;/p&gt;
-
-
-&lt;p&gt;Reliability makes me think of resilience, because it requires weathering adversity regardless of what comes your way.
-Picking a random page from "&lt;a href="https://amzn.to/2VUQ4Mh"&gt;Resilience: The Science of Mastering Life's Greatest Challenges&lt;/a&gt;" (p. 183):&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Aerobic exercise can also help in reducing symptoms of depression. [...] Many other studies have found that exercise is substantially effective in easing symptoms of mild to moderate depression.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;"Exercise helps depression" is one of those pieces of advice that everybody knows is true and those of us who would benefit from it hates you telling them - partly because it doesn't feel internally valid, but mostly because it seems very victim blamey and doesn't suggest any way forward - if you're struggling to get out of bed you certainly don't want to go for a run, and telling you to do so will just make you feel worse about yourself.&lt;/p&gt;
-
-
-&lt;p&gt;Cultivating reliability when &lt;em&gt;not&lt;/em&gt; depressed (or at least less depressed) may partially be a way through that. Entraining habits and rituals that just get you to do the work come hell or highwater... may still not survive a severe depression, but may last into a deeper depression than mere motivation would.&lt;/p&gt;
-
-
-&lt;p&gt;Finally, focusing on the Six of Wands I think we have the construct Goal/Strategy.&lt;/p&gt;
-
-
-&lt;p&gt;The wheel of fortune is in part about working with destiny and chance, both of which are key components to success. You need both care work (the knight) and fixing things (the wheel of fortune) to respond to and take advantage of circumstances, and to keep going until success happens. The Six of Wands is about what happens once you succeed, and is less concerned with how he got there.&lt;/p&gt;
-
-
-&lt;p&gt;People are very bad at maintaining this construct, often to their detriment. 
-I had a conversation with a friend a while ago which went roughly along the lines:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;"I'm really struggling to go to bed earlier."&lt;/p&gt;
-&lt;p&gt;"OK what have you tried?"&lt;/p&gt;
-&lt;p&gt;"I've tried going to bed earlier."&lt;/p&gt;
-&lt;p&gt;"No, that's a goal. What have you &lt;em&gt;tried&lt;/em&gt;?"&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;Strategies here might be e.g. setting an early alarm and letting your sleep cycle catch up with you, taking a melatonin at 7pm and letting your body clock hit you when it's ready, creating an elaborate bedtime ritual. Just wanting the goal and forcing yourself into it against whatever habits and features of your life are currently causing you to struggle with going to bed is not a strategy.&lt;/p&gt;
-
-
-&lt;p&gt;From "&lt;a href="https://amzn.to/2VVfIAD"&gt;Thinking in Bets&lt;/a&gt;", p. 138:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;On our own, we have just one viewpoint. That's our limitation as humans. But if we take a bunch of people with that limitation and put them together in a group, we get exposed to diverse opinions, can test alternative hypotheses, and move toward accuracy. It is almost impossible for us, on our own, to get the diversity of viewpoints provided by the combined manpower of a well-formed decision pod. To get a more objective view of the world, we need an environment that exposes us to alternate hypotheses and different perspectives. That doesn't apply only to the world around us: to view &lt;em&gt;ourselves&lt;/em&gt; in a more realistic way, we need other people to fill in our blind spots.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;Obviously I buy into this given my &lt;a href="https://notebook.drmaciver.com/posts/2020-03-25-16:02.html"&gt;support group&lt;/a&gt;, but I think there are a couple interesting points to consider here.&lt;/p&gt;
-
-
-&lt;p&gt;The first is that while it is definitely true that other people are incredibly helpful in this, I don't think it is true that it is almost impossible for us to get exposed to get the diversity viewpoints on our own that a good decision pod will provide (a decision pod in this case is something more or less like support group, but more focused on strategy and knowledge than personal growth and emotional health), and I think I've been demonstrating some of the techniques for that recently: You can draw on viewpoints from a &lt;em&gt;vastly&lt;/em&gt; larger number of people if you're drawing from a well curated library, you can use &lt;a href="https://notebook.drmaciver.com/posts/2020-04-26-12:07.html"&gt;tarot or other randomisation&lt;/a&gt; to drive your thinking in directions you can not otherwise see. You can figure out &lt;a href="https://www.rewriting-the-rules.com/self/new-year-new-zine-plural-selves/"&gt;your plural selves&lt;/a&gt; and deliberately enter into their roles.&lt;/p&gt;
-
-
-&lt;p&gt;Don't get me wrong, support group is very good, but the &lt;em&gt;reason&lt;/em&gt; it is very good is not necessarily the different viewpoints that we each bring each other, but the &lt;a href="https://notebook.drmaciver.com/posts/2020-04-27-07:57.html"&gt;personal connection we have as a group&lt;/a&gt;. It's a specific feature of our support group that we are not there to argue with each other, and much of our perspective is shared and complementary.&lt;/p&gt;
-
-
-&lt;p&gt;These approaches to acquiring different perspectives yourself are, in the "&lt;a href="https://amzn.to/2Ss1rZY"&gt;Ritual and its Consequences&lt;/a&gt;" sense, rituals that let you enter a subjunctive world, where you look at the problem &lt;em&gt;as if&lt;/em&gt; you were someone else.&lt;/p&gt;
-
-
-&lt;p&gt;Random page from the bits of Ritual and its Consequences I've read so far gives us page 13:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;In its ability to play with boundaries - to see the dual role of boundaries as both separating and uniting - ritual action stands in opposition to modern forms of social organization, which most often tend to absolutize boundaries, either by doing away with them totally or by apotheosizing them into unquestionable and inviolable entities. We take up this issue directly in Chapter 4. There we open the discussion of how liberal modes of social organization - and of organizing the self, we might add - maintain interaction and solidarity by doing away with boundaries rather than by teaching how to negotiate them. The only boundaries maintained in such liberal visions are those predicated on instrumental distinctions, that is on the vagaries of the division of labor.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;I'm a little skeptical of the tail end of that but haven't read the chapter in question yet so will refrain from judgement.&lt;/p&gt;
-
-
-&lt;p&gt;I do think there is something to this idea that we tend to either do away with boundaries or treat them as inviolate, and that part of this is that people tend to get stuck at various points in construct space that they've conceptualised as integral features of themselves rather than something they can fluidly navigate. We rely on other people in part because we cannot move ourselves into the way of being that they naturally access.&lt;/p&gt;
-
-
-&lt;p&gt;That's fine of course. Other people are good, and &lt;a href="https://notebook.drmaciver.com/posts/2020-04-26-07:28.html"&gt;relationships are key to our growth as people&lt;/a&gt;, but sometimes our strategies could rely more on the impersonal than the personal, which helps avoid &lt;a href="https://notebook.drmaciver.com/posts/2020-04-28-06:45.html"&gt;exhausting others&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;Reliability is one where we often lean on others for it. Many people rely on others for care work (organisational, cleaning, emotional support). I'm very bad at it myself.&lt;/p&gt;
-
-
-&lt;p&gt;I think this is a key way in which we can move from the personal to the impersonal, by moving some of our reliability into the environment, finding ways to build physical constructs and rituals outside ourselves that help improve it.&lt;/p&gt;
-
-
-&lt;p&gt;The problem with this of course is that it's &lt;em&gt;scary&lt;/em&gt;. We &lt;a href="https://notebook.drmaciver.com/posts/2020-03-14-13:55.html"&gt;alieve&lt;/a&gt; ourselves to be unreliable, and trying to strategies our way out of that seems like it's setting us up for failure.&lt;/p&gt;
-
-
-&lt;p&gt;Writing this post has kinda convinced me that I need to address this, so here are some things I'm going to try:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Setting up a &lt;a href="https://howtosurvivementalillness.tumblr.com/post/162396810334/how-to-make-and-use-a-coping-board"&gt;coping board&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Starting couch to 5k.&lt;/li&gt;
-&lt;li&gt;Beginning using &lt;a href="https://todoist.com/"&gt;Todoist&lt;/a&gt; again (I expect to fail on this one. I find TODO lists incredibly aversive)&lt;/li&gt;
-&lt;/ol&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-05-02-08:46.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-02-11:23.html</id>
     <title>Adoptive Identities</title>
@@ -1362,7 +1205,7 @@ When I wrote &lt;a href="https://notebook.drmaciver.com/posts/2020-05-08-10:06.h
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-10-08:54.html</id>
     <title>How to be a better person</title>
-    <updated>2020-05-10T10:59:39+01:00</updated>
+    <updated>2020-05-10T12:24:24+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;How to be a better person&lt;/p&gt;
@@ -1450,5 +1293,137 @@ Schwitzgebel argues that most people probably aim to be about as moral as their 
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-05-10-08:54.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-05-11-09:32.html</id>
+    <title>Building and Rebuilding Foundational Skills</title>
+    <updated>2020-05-11T09:32:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Building and Rebuilding Foundational Skills&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-05-11&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I have a problem: I'm kinda OK at statistics.&lt;/p&gt;
+
+
+&lt;p&gt;Why is this a problem? Being kinda OK seems... kinda OK, right?&lt;/p&gt;
+
+
+&lt;p&gt;Well, it would be, but the problem isn't that I have an intermediate level of statistical skill. The problem is that I have a broad range of statistical skill, all of which I'm kinda OK at. I'm kinda OK at elementary statistics, and I'm kinda OK at advanced statistics too.&lt;/p&gt;
+
+
+&lt;p&gt;This is a real problem for learning more, because it is &lt;em&gt;hard&lt;/em&gt; to relearn basics because they feel too basic for my skill level.&lt;/p&gt;
+
+
+&lt;p&gt;I have another problem: Climbing is a fun sport that makes a good social activity and works on a number of strength skills that I would like to work on. Also I give myself a back injury 100% of the time I do it, because my ability to climb is much greater than my skill at climbing, because I'm hypermobile and have a decent strength to body weight ratio, and the result is that despite some things feeling easy, I do them badly and this results in me inadvertently harming myself while doing them.&lt;/p&gt;
+
+
+&lt;p&gt;All of these share a common theme: It is possible for something to be easy while still being bad at it, and this is especially true with foundational skills, where you've built capabilities on top of them, and going back and relearning the basics is hard and boring.&lt;/p&gt;
+
+
+&lt;p&gt;In order to get good at statistics, I'd need to grind a bunch of exercises that I frankly feel are beneath me.
+I'm probably going to try (despite my &lt;a href="https://notebook.drmaciver.com/posts/2020-05-03-09:09.html"&gt;complicated feelings about mathematics&lt;/a&gt;) because being good at statistics is important for me professionally and spiritually, and I'll never get good at it until I sort out the basics, and also being bad at those basics risks me tripping up in stupid ways.&lt;/p&gt;
+
+
+&lt;p&gt;In order to get good at climbing, I'd need to very carefully (and probably with supervision) try far easier routes than I can manage, and stop far sooner than it seems like I can. I'd have to deliberately hold myself back until I was much better at the basics than I am, despite my ability to do more. I don't value climbing enough at present to do this, so I probably will just avoid climbing.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, this is is why I'm currently restarting the first week of Couch to 5K despite having completed it relatively easily.&lt;/p&gt;
+
+
+&lt;p&gt;Here's another problem: I obviously breathe badly.&lt;/p&gt;
+
+
+&lt;p&gt;I'm not fully sold on the Buteyko method, which encourages you to breathe less and entirely through your nose, but I obviously mouth breathe at night based on my sleep quality and dry mouth in the morning, and my peak flow numbers aren't great. I'd like to work on this to the point where I breathe through my nose unconsciously and easily, even while sleeping. It probably won't change my life in the way that the Buteyko method promises (though it sure would be nice if it did!), but at the very least it might improve my sleep quality.&lt;/p&gt;
+
+
+&lt;p&gt;Breathing is definitely a foundational skill, and it's one I'm bad at, so I'd like to work on it, and working on breathing is &lt;em&gt;deathly&lt;/em&gt; boring.&lt;/p&gt;
+
+
+&lt;p&gt;This is where I link in three previous tools:&lt;/p&gt;
+
+
+&lt;p&gt;I can nose breathe just fine while at rest. I can complete couch to 5k week one (consistent of eight repetitions of a 60 second run followed by a 90 second walk) just fine. What I absolutely cannot do is complete Couch to 5K week one while nasal breathing. I can just about manage the first run and then I am &lt;em&gt;wrecked&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;I think this is the way to rebuild foundations, and one of the core reasons why &lt;a href="https://notebook.drmaciver.com/posts/2020-02-21-10:04.html"&gt;learning a different skill&lt;/a&gt; is often essential for progressing at your current goal: By transferring to a different context where the foundational skill is no longer easy, it becomes a thing that you can now actively work at. Working on a foundation in its existing context is often too easy to be possible, so &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-12:12.html"&gt;the way to work on it is to make it harder&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;I was in fact, already considering restarting week one of Couch to 5K, for two other reasons, both of which are also about foundational skills.&lt;/p&gt;
+
+
+&lt;p&gt;As well as breathing, I'm also bad at walking.&lt;/p&gt;
+
+
+&lt;p&gt;Yes, I'm aware that these are both ridiculous things to be bad at. I think a lot of you reading this are probably bad at them too though. As I said, we have &lt;a href="https://notebook.drmaciver.com/posts/2020-05-09-11:26.html"&gt;a widespread lack of the basic skills of being a human being&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Specifically, I have quite flat feet and weak arches, and a bunch of (probably) related joint pain. I've tried wearing arch support shoes and my considered opinion is that it was an expensive waste of time. (Well, it was a good &lt;a href="https://notebook.drmaciver.com/posts/2020-02-26-16:07.html"&gt;experiment&lt;/a&gt;).&lt;/p&gt;
+
+
+&lt;p&gt;A slightly less fringe (but still fringe) opinion is that the solution to this is actually to have &lt;em&gt;less&lt;/em&gt; arch support, and to wear barefoot shoes that are designed to protect your feet without supporting them,
+because this causes you to actually develop your muscles rather than weaken them.&lt;/p&gt;
+
+
+&lt;p&gt;This seems worth a shot, and I was noticing that my ankles were already starting to hurt a bit as a result of week one. I don't want to end up in the situation like with climbing where my ability to do a run exceeds my ability to do a run without injuring myself, so this too seems like a thing I could reasonably make harder in order to work on the foundational skills of.&lt;/p&gt;
+
+
+&lt;p&gt;Even without these foundations of breathing and walking, I was still thinking it might be worth repeating Couch to 5K, because I disagree with some of its philosophical premises.&lt;/p&gt;
+
+
+&lt;p&gt;Couch to 5K is designed to ramp up the difficulty level by making you run more, and more consistently. I personally think it ramps up the difficulty too quickly. I basically agree with Sarah Perry's point in &lt;a href="https://www.ribbonfarm.com/2017/08/03/body-pleasure/"&gt;Body Pleasure&lt;/a&gt;:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;[...] people enjoy exercise up to a certain level of intensity, which varies for each person. Most people who do low-intensity exercise feel better during the mild exertion. At the point when the body can no longer maintain levels of oxygen and (separately) lactate in the muscles, the exercise becomes so intense that basic affect (feeling good or feeling bad, the lowest-level evaluation of anything) plummets. Everybody feels terrible when they exercise too hard. Once people rest for a few minutes, they start feeling good again. However, this may not be enough such that people evaluate the entire experience as pleasurable.&lt;/p&gt;
+&lt;p&gt;Unfortunately, most on-ramps to exercise are at an intensity too high for previously-sedentary people to find them pleasurable. If people go to a fitness class, or focus on running a particular distance at a particular speed, they’ll likely miss the pleasure zone entirely. Refocusing on exercising only for one’s own individual pleasure, as slowly as one prefers, and only at intensities that are pleasurable, is more likely to motivate repeat and habitual exercising. At that point, the enjoyment of exercise pleasure can build on itself, motivating longer and longer intervals of experiencing the pleasure. I summarize Ekkekakis et al.’s result as: “learn to exercise out of extreme selfish laziness.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;I was a little skeptical about doing Couch to 5K because one of the things I'm trying to work on at the moment is to enjoy exercise, and honestly I don't enjoy running. I'd already been vaguely considering restarting week one so that I could get to the point where it was pleasurable rather than merely endurable.&lt;/p&gt;
+
+
+&lt;p&gt;I liked &lt;a href="https://twitter.com/davidklaing/status/1258846038552489984"&gt;David Laing's point the other day&lt;/a&gt;:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Advice on how to get better at a given thing should often be replaced with advice on how to take more pleasure in doing that thing.&lt;/p&gt;
+&lt;p&gt;Pleasure doesn't lead directly to learning, but it leads to &lt;em&gt;volume&lt;/em&gt;, which leads to learning. Also pleasure is an end in itself.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;I don't know exactly how to create pleasure in a thing, but I suspect fluidity is a huge part of it. There is something intrinsically pleasurable about being good enough at something hard that you can do it automatically and reliably, and I think fluidity is extremely helpful for being able to play with a skill.&lt;/p&gt;
+
+
+&lt;p&gt;I suspect this points to a general reason why we are so often bad at foundations: We treat the point at which we should progress as to when we &lt;em&gt;can&lt;/em&gt; do the thing, when in fact we should be progressing when it's &lt;em&gt;pleasurable&lt;/em&gt; to do it (or at least fluid where pleasure is impossible). This ties in to the idea that you are not good at doing a thing until you are able to do it reliably rather than able to do it at all.&lt;/p&gt;
+
+
+&lt;p&gt;If you progress as soon as you clear some minimum bar of being &lt;em&gt;able&lt;/em&gt; to do it, then what happens is that the skill will get progressively more and more frustrating as you move up it until you hit some "natural" limit where your frustration exceeds your willingness to progress, and you can no longer easily go back and work on the foundations, so you conclude that you're now as good as you're goign to get.&lt;/p&gt;
+
+
+&lt;p&gt;For reasons, I was reading about &lt;a href="https://en.wikipedia.org/wiki/Bloom%27s_2_sigma_problem"&gt;Bloom's 2 sigma problem&lt;/a&gt; recently, which is often used as evidence for the superiority of private tutoring over general classes, but I found the description of &lt;a href="https://en.wikipedia.org/wiki/Mastery_learning"&gt;mastery learning&lt;/a&gt;, which is the specific system being compared, especially interesting:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Mastery learning maintains that students must achieve a level of mastery (e.g., 90% on a knowledge test) in prerequisite knowledge before moving forward to learn subsequent information. If a student does not achieve mastery on the test, they are given additional support in learning and reviewing the information and then tested again. This cycle continues until the learner accomplishes mastery, and they may then move on to the next stage.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;In comparison, I think most of our school based learning techniques are like Couch to 5K: They assume that there is some straightforward time frame on which you can expect people to progress, and you should progress as long as you can just about manage the previous level, and failure to progress is a sign of significant failure.&lt;/p&gt;
+
+
+&lt;p&gt;How much of the 2 sigma system is about the benefits of individual instruction, and how much of it is just about giving people the time to build their foundations before progressing?&lt;/p&gt;
+
+
+&lt;p&gt;This all fits in well to the framework of the &lt;a href="https://www.drmaciver.com/2019/05/how-to-do-hard-things/"&gt;Fully General System for Learning to Do Hard Things&lt;/a&gt;, but I think I have previously neglected something important: It's not at all obvious what &lt;em&gt;hard&lt;/em&gt; and &lt;em&gt;easy&lt;/em&gt; mean in this context. I suspect the threshold for progression should be set much higher than I previously would have set it.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-05-11-09:32.html" rel="alternate"/>
   </entry>
 </feed>
