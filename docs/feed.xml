@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-05-12T10:02:48+01:00</updated>
+  <updated>2020-05-13T09:56:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,564 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-05-03-09:09.html</id>
-    <title>Numbers and Feelings</title>
-    <updated>2020-05-03T14:43:13+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Numbers and Feelings&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-05-03&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Please note: This post is much more for me than these posts normally are. It's very stream of consciousness. You might find it interesting anyway, but I can't promise it will make sense.&lt;/p&gt;
-
-
-&lt;p&gt;Basically, I tried to do some maths, and I ended up mostly processing a bunch of feelings instead.&lt;/p&gt;
-
-
-&lt;hr/&gt;
-
-
-&lt;p&gt;Do you remember being able to concentrate for a sustained period on some work?&lt;/p&gt;
-
-
-&lt;p&gt;Neither do I, really, but I'm aware it must have happened at some point. A lot of my school reports are the usual smart kid thing to the tune of "David clearly understands the material but I wish he would do the work".&lt;/p&gt;
-
-
-&lt;p&gt;There were a few points in my life where I actually did the work, but most of the rest of the time the work was pretty invisible to me too. I clearly understood the material, but I'm not sure when I did that.&lt;/p&gt;
-
-
-&lt;p&gt;On the other hand I also spent an entire summer during my A-levels studying a mathematics textbook that would have been a bit advanced a few years into university.&lt;/p&gt;
-
-
-&lt;p&gt;Imagine doing that. It's a struggle for me too. People think I read a lot, and I do, but it's not exactly uninterrupted, and reading a maths textbook is &lt;em&gt;hard&lt;/em&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;But why can't I do it? It feels like &lt;a href="https://notebook.drmaciver.com/posts/2020-03-20-10:33.html"&gt;being blocked&lt;/a&gt;. The capability is clearly there, you just need to do the work.&lt;/p&gt;
-
-
-&lt;p&gt;This is probably a feelings problem, isn't it? So today, it's time to do some maths and have some feelings about it.&lt;/p&gt;
-
-
-&lt;p&gt;I'm going to work through some of the exercises in "A Short Course on Banach Space Theory" by Carothers.&lt;/p&gt;
-
-
-&lt;p&gt;Why this book?&lt;/p&gt;
-
-
-&lt;p&gt;Well, it's small, cute, and based on material that I always would have found a bit hard but was once upon a time relevant to my interests.&lt;/p&gt;
-
-
-&lt;p&gt;It's also utterly useless. Why would you spend time on this material? I'm sure there's &lt;em&gt;some&lt;/em&gt; application somewhere, but if so it's probably to things I also don't care about. I'm doing this for the pure joy of doing mathematics.&lt;/p&gt;
-
-
-&lt;p&gt;Is there joy in mathematics? I feel like there used to be.&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, let's do this.&lt;/p&gt;
-
-
-&lt;p&gt;Page 1:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;What follows is a list of the &lt;em&gt;classical&lt;/em&gt; Banach  spaces. Roughly translated, this means the spaces known to Banach. Once we have these examples out in the open, we'll have plenty of time to fill in any unexplained terminology. For now, just let the words wash over you.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;I do like Carothers.&lt;/p&gt;
-
-
-&lt;p&gt;The opening chapter has a lot of "It's easy to see" and "Clearly" and "It follows". I think I'm supposed to be annoyed about those for politics reasons, but fuck it. You're not going to be reading this book unless you have a library card for &lt;a href="https://notebook.drmaciver.com/posts/2020-02-16-14:22.html"&gt;the ghost library&lt;/a&gt;. Why would you?&lt;/p&gt;
-
-
-&lt;p&gt;The funny thing is that it &lt;em&gt;is&lt;/em&gt; easy to see. It's been 15 years more or less since I finished my maths degree. I've done a little bit of maths in the meantime, but not much, and not particularly advanced. But this is just like riding a bike.&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, enough feelings, lets do some mathematics.&lt;/p&gt;
-
-
-&lt;p&gt;I don't plan to do all the exercises, just the ones that spark joy. Here's chapter 1, exercise 14:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Let \(H\) be a separable Hilbert space with orthonormal basis \((e_n)\) and let \(K\) be a compact subset of H. Given \(\epsilon &amp;gt; 0\), show there exists an \(N\) such that \(||\sum\limits_{n = N}^\infty \langle x, e_n \rangle e_n&amp;gt;|| &amp;lt; \epsilon\) for every \(x \in K\).&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;I stared at it for a little bit then went to have a shower. In the shower the answer was obvious:&lt;/p&gt;
-
-
-&lt;p&gt;Let \(y_1, \ldots, y_n\) be an \(\frac{\epsilon}{2}\)-net for \(K\). Then for each \(i\) there exists \(N_i\) such that \(||\sum\limits_{n \geq N_i} \langle y_i, e_n \rangle e_n|| &amp;lt; \frac{\epsilon}{2}\) because these are just the tail sums for \(||y||^2 = \sum \langle y, e_n \rangle^2\).&lt;/p&gt;
-
-
-&lt;p&gt;Let \(N = \max N_i\). Then for \(x \in K\) we have some \(y_i\) with \(||x - y_i|| &amp;lt; \frac{\epsilon}{2}\) because the \(y_i\) are an \(\frac{\epsilon}{2}\) net.&lt;/p&gt;
-
-
-&lt;p&gt;Now
-[\begin{align*}
-||\sum\limits_{n \geq N} \langle x, e_n \rangle e_n|| &amp;amp; = ||\sum\limits_{n \geq N} \langle y_i, e_n \rangle e_n + \sum\limits_{n \geq N} \langle x - y_i, e_n \rangle e_n|| \\
-&amp;amp; \leq ||\sum\limits_{n \geq N} \langle y_i, e_n \rangle e_n|| + ||\sum\limits_{n \geq N} \langle x - y_i, e_n \rangle e_n|| \\
-&amp;amp; &amp;lt; \frac{\epsilon}{2} +  \frac{\epsilon}{2} \\
-&amp;amp; = \epsilon \\
-\end{align*}&lt;/p&gt;
-
-
-&lt;p&gt;as desired.&lt;/p&gt;
-
-
-&lt;p&gt;QED etc.&lt;/p&gt;
-
-
-&lt;p&gt;That was pretty easy. I wasn't exactly &lt;em&gt;surprised&lt;/em&gt; that it was easy, but I'm pretty sure I'm "supposed" to have forgotten that material.&lt;/p&gt;
-
-
-&lt;p&gt;How was the proof obvious to me? Well, "compact" means "small" basically, so I needed to use that smallness somehow. The construction of an \(\epsilon\)-net is the obvious way to use that smallness for something like this.&lt;/p&gt;
-
-
-&lt;p&gt;What makes it obvious? I don't know. Mostly that it tends to work I guess. It's &lt;a href="https://notebook.drmaciver.com/posts/2020-04-12-11:35.html"&gt;intuition&lt;/a&gt;. Once you think to try the approach it's relatively easy to see how it must work. I'm not sure what caused me to try the approach, my brain just said "Hey maybe an \(\epsilon\)-net?" and I checked it out and it seemed to work.&lt;/p&gt;
-
-
-&lt;p&gt;Is this result interesting? I don't know. I don't find I care about the result intrinsically. Maybe it will be useful later?&lt;/p&gt;
-
-
-&lt;p&gt;It doesn't need to be useful though. Joy of mathematics, remember? I'm doing this to see whether I can, not because I care about this. Part of why I picked this book up is that I have no conceivable use for the material. There will be no obligation to carry on after.&lt;/p&gt;
-
-
-&lt;p&gt;I find I still don't &lt;a href="https://notebook.drmaciver.com/posts/2020-03-14-13:55.html"&gt;alieve&lt;/a&gt; I can concentrate on doing mathematics all day, but I'm prepared to try to suspend that alief for a while and see where the day takes me.&lt;/p&gt;
-
-
-&lt;p&gt;Let's try another exercise. Exercise 2.1:&lt;/p&gt;
-
-
-&lt;p&gt;Given a nonzero vector \(x\) in a normed space \(X\), show that there exists a norm one functional \(f \in X^*\) satisfying \(|f(x)| = ||x||\). On the othe rhand, give an example of a normed space \(X\) and a norm one linear functional \(f \in X^*\) such that \(|f(x)| &amp;lt; ||x||\) for every \(0 \neq x \in X\).&lt;/p&gt;
-
-
-&lt;p&gt;I just noticed that I was sitting at an extremely odd angle writing this, twisting my spine around. That can't be good for me. I should really use this to practice some Alexander Technique and pay more attention to unlearning those habits, but too much to try at once in think. For now I'll just notice and practice some basic posture unfucking.&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, the exercise.&lt;/p&gt;
-
-
-&lt;p&gt;The first bit is just Hahn-Banach. Take the one-dimensional space spanned by \(x\) and define \(f(x) = ||x||\) there. This is a norm one functional and by Hahn-Banach you can extend it to a norm-one functional on the whole space.&lt;/p&gt;
-
-
-&lt;p&gt;This feels too easy. Does he want me to prove Hahn-Banach? I doubt it. But the proof is just blah blah blah Zorn's lemma blah.&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, the second bit was more interesting and took a bit more thought. The answer is to take \(l^1\) and to define \(f(x) = \sum (1 - \frac{1}{n}) x_n\).&lt;/p&gt;
-
-
-&lt;p&gt;This satisfies the requirements because \(|f(x)| = |\sum (1 - \frac{1}{n}) x_n| \leq \sum |(1 - \frac{1}{n}) x_n| =  \sum |(1 - \frac{1}{n})| |x_n| \leq \sum |x_n| = ||x||\) with the last inequality being an equality only when \(x = 0\). This gives us that \(||f|| \leq 1\) and that \(|f(x)| &amp;lt; ||x||\) for \(x \neq 0\).&lt;/p&gt;
-
-
-&lt;p&gt;(Odd twist to my posture again).&lt;/p&gt;
-
-
-&lt;p&gt;To see that this has norm exactly one, note that \(f(e_n) = 1 - \frac{1}{n} \to 1\) as \(n \to \infty\).&lt;/p&gt;
-
-
-&lt;p&gt;How did I spot this example?&lt;/p&gt;
-
-
-&lt;p&gt;Well it was kinda obvious. You can't have such a space be finite dimensional (compactness of unit ball etc) so you need to make it so that the norm is closer and closer to \(1\) each time you extend it. Basically all this is doing is extending the functional for each unit vector one at a time, bringing it closer and closer to norm \(1\) with each step.&lt;/p&gt;
-
-
-&lt;p&gt;That's a bit of a retcon though. The intuition was there but I spent a while futzing around trying to make this work with variants on \(l^\infty\) where it doesn't work for a variety of reasons.&lt;/p&gt;
-
-
-&lt;p&gt;I find myself wondering why I'm doing this. What's the point?&lt;/p&gt;
-
-
-&lt;p&gt;I found I wanted to describe this feeling as wanting to check Twitter. I don't think that's accurate. It's more a feeling of... restlessness? A desire to get up and pace?&lt;/p&gt;
-
-
-&lt;p&gt;There's a definite sense that &lt;em&gt;I am not the sort of person who can do this&lt;/em&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;Very well. I shall get up and pace. But I'll read chapter 2 while doing it.&lt;/p&gt;
-
-
-&lt;p&gt;OK, I've read chapter 2 now.&lt;/p&gt;
-
-
-&lt;p&gt;If it seems odd that I was reading chapter 2 after doing the exercises, bear in mind that a) I've read the first couple chapters of this book before. It has been sitting on my shelves for well over a decade now after all and b) This is mostly recap stuff.&lt;/p&gt;
-
-
-&lt;p&gt;While reading this chapter I was definitely going "Blah blah blah proofs" for a lot of this. That will probably bite me later, but I think it's normal. Mathematicians mostly don't &lt;em&gt;like&lt;/em&gt; proofs, we like nice, tidy theorems (unless we're into combinatorics in which case we like ugly technical theorems).&lt;/p&gt;
-
-
-&lt;p&gt;I do notice that I still tend to think of myself as a mathematician despite it being objectively not true. I have a masters in mathematics, but I've never been a professional mathematician. Still, it's had a significant amount of influence on my thinking.&lt;/p&gt;
-
-
-&lt;p&gt;I wonder if that identification is part of the emotional noise around doing mathematics? If I'm over-identified with being a mathematician, realising that I'm not actually very good at it would be emotionally painful. Attempting to get better at mathematics is &lt;a href="https://notebook.drmaciver.com/posts/2020-03-18-11:24.html"&gt;unsafe&lt;/a&gt; as a result, so it's no wonder that I tend to stall when I learn new things.&lt;/p&gt;
-
-
-&lt;p&gt;It doesn't help that most of the mathematics I've tried to learn in the intervening period has been stuff that at university I would have turned my nose up at. Combinatorics, statistics, graph theory. It's all stuff that is objectively very &lt;em&gt;useful&lt;/em&gt; but isn't something I find intrinsically interesting. There's no &lt;a href="https://notebook.drmaciver.com/posts/2020-03-30-23:12.html"&gt;desire&lt;/a&gt; there to drive the growth.&lt;/p&gt;
-
-
-&lt;p&gt;This is stupid though. Statistics, for example, is just quantitative epistemology. I &lt;em&gt;like&lt;/em&gt; epistemology. Maybe I'm doing it wrong.&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, for now, that doesn't matter. I'm focused on something that I would have liked at university. Joy of mathematics, don't you know.&lt;/p&gt;
-
-
-&lt;p&gt;Not that I'm feeling much joy right now. It's not &lt;em&gt;unpleasant&lt;/em&gt; though.&lt;/p&gt;
-
-
-&lt;p&gt;Let's do another exercise. 2.6: Prove Riesz's lemma: Given a closed subspace \(Y\) of a normed space \(X\) and an \(\epsilon &amp;gt; 0\), there is a norm one vector \(x \in X\) such that \(||x - y|| &amp;gt; 1 - \epsilon\) for all \(y \in Y\). If \(X\) is infinite dimensional, use Riesz's lemma to construct a sequence of norm one vectors (x_n \in X) satisfying \(||x_n - x_m \geq \frac{1}{2}\) for all \(m \neq n\).&lt;/p&gt;
-
-
-&lt;p&gt;NB. there's a stupid error in the question, in that obviously \(Y\) has to be a &lt;em&gt;proper&lt;/em&gt; subspace for this to work otherwise \(X = Y\) is a counter-example.&lt;/p&gt;
-
-
-&lt;p&gt;OK, prove the first bit...&lt;/p&gt;
-
-
-&lt;p&gt;So we're all about the functionals right now, right? Suppose we had some norm one linear functional \(f\) such that \(f(y) = 0\) for \(y \in Y\). This would give us what we want, because we can find some \(x\) with \(||x|| = 1\) and \(f(x) &amp;gt; 1 - \epsilon\). Then for \(y \in Y\) we have \(f(x - y) = f(x) &amp;gt; 1 - \epsilon\). But \(|f(x - y)| \leq ||x - y||\), because \(f\) is norm one, so \(||x - y|| \geq |f(x - y)| &amp;gt; 1 - \epsilon\) as desired.&lt;/p&gt;
-
-
-&lt;p&gt;Can we construct such a functional?&lt;/p&gt;
-
-
-&lt;p&gt;I want to say that it's obvious that we can as follows:&lt;/p&gt;
-
-
-&lt;p&gt;(Actual desire to check Twitter just then. Apparently my brain wants to glitch out and stop me working on this)&lt;/p&gt;
-
-
-&lt;p&gt;We can construct the quotient space \(Q = X / Y\), and there is a linear functional \(g\) of norm one on this space, which taking \(f = g \cdot q\) where \(q: X \to Q\) is the quotient map, gives us a linear functional of norm one on the original space.&lt;/p&gt;
-
-
-&lt;p&gt;It's not obvious to me that this has norm one though? It certainly has norm at most one.&lt;/p&gt;
-
-
-&lt;p&gt;You can also prove the following result by more blah blah Zorn nonsense: Let \(X\) be a vector space, \(Y \subseteq X\) a proper subspace and \(x \in Y \setminus X\), do the usual Hahn-Banach extension shenanigans to get a functional on \(&amp;lt;\{x\} \cup Y&amp;gt;\) by adding in elements of \(y\) not in the span of what's already covered and setting them to \(0\).&lt;/p&gt;
-
-
-&lt;p&gt;I think this is more or less assuming what I'm trying to prove though. It's maybe simpler than this?&lt;/p&gt;
-
-
-&lt;p&gt;One of the things I'm worrying about is that \(\epsilon\). Presumably we can't set \(\epsilon = 0\), so maybe there's some reason we can't expect to extend this with \(f(x) = 1\)?&lt;/p&gt;
-
-
-&lt;p&gt;I'm currently being reminded of Andrew Wiles on &lt;a href="https://mathwithbaddrawings.com/2017/09/20/the-state-of-being-stuck/"&gt;being stuck&lt;/a&gt;. This is, I think, another example of &lt;a href="https://notebook.drmaciver.com/posts/2020-04-14-13:56.html"&gt;discomfort tolerance&lt;/a&gt; being very important for good epistemics, although I think the discomfort is net harmful here.&lt;/p&gt;
-
-
-&lt;p&gt;What I'd &lt;em&gt;like&lt;/em&gt; is to cultivate some open curiousity and just sit with the problem. I'm feeling restless though. I'm going to read up on the proof of the Hahn-Banach theorem from Rudin's "Real and Complex Analysis" and see how I get on with that, then probably go do some staff spinning in the garden for a bit. I've been doing this for over an hour now, so it's probably time to take a quick break.&lt;/p&gt;
-
-
-&lt;p&gt;(Weird posture again. Found I was twisted around and also sitting on one my legs)&lt;/p&gt;
-
-
-&lt;p&gt;I went to the bathroom instead and had some more thoughts, so writing these down before I go outside:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;I found myself wondering... I've been quite blocked on PhD work recently. If I can just sit down and grind through it like this, can I deploy the same skill at my PhD? I should be able to, and I &lt;em&gt;do not like&lt;/em&gt; that thought. &lt;a href="https://notebook.drmaciver.com/posts/2020-04-15-06:31.html"&gt;Capabilities can be coerced&lt;/a&gt; and self-coercion is a thing. If I can do it, then I should do it, and if I should do it, then I am bad for not doing it. &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-12:35.html"&gt;This isn't true&lt;/a&gt; but it feels true. This almost put the &lt;a href="https://notebook.drmaciver.com/posts/2020-04-20-10:52.html"&gt;brakes&lt;/a&gt; on the whole thing but I'm going to try to stay with it.&lt;/li&gt;
-&lt;li&gt;This whole thing feels &lt;em&gt;annoying&lt;/em&gt;. There are &lt;em&gt;details&lt;/em&gt; and I don't &lt;em&gt;like&lt;/em&gt; details. The details are &lt;em&gt;stupid&lt;/em&gt;. Being annoyed makes me want to say "Fuck it, this is pointless, don't want to deal with it".&lt;/li&gt;
-&lt;li&gt;Thought just now: Of course it's pointless. It was deliberately chosen to be pointless. Why am I doing this again?&lt;/li&gt;
-&lt;li&gt;Feels like I have an ulterior motive that I'm not admitting to myself.&lt;/li&gt;
-&lt;li&gt;It's difficult to distinguish between "can't do this" and "don't want to do this", especially when the latter is liable to cause my brain to glitch out.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;Well I'm back from staff spinning now. That was interesting. The movements were energetic, violent, in a way that they usually aren't. I knew I was annoyed, but am I... angry? Does mathematics make me angry?&lt;/p&gt;
-
-
-&lt;p&gt;It would make sense if it did maybe. Anger is very focusing. Certainly some of my more productive coding sessions have been because I got angry about something and decided to just defeat it.&lt;/p&gt;
-
-
-&lt;p&gt;In many ways, focus is the &lt;em&gt;point&lt;/em&gt; of anger. It lets you exclude everything but the problem in front of you, and raises the energy level you have to bring to bear on the problem.&lt;/p&gt;
-
-
-&lt;p&gt;I'm not good at anger. Or rather, perhaps, the problem is that I am &lt;em&gt;very&lt;/em&gt; good at anger, and that feels unsafe. You've seen me cranky, but believe me that's not the same thing. Very few people reading this will ever have seen me in a proper rage.&lt;/p&gt;
-
-
-&lt;p&gt;Part of that is that I had a very angry childhood. I did not get on well with other children.&lt;/p&gt;
-
-
-&lt;p&gt;Part of this was that I was a strange, poorly socialised, child who was quite hard to relate to. I hadn't really figured out how to human, and the people around me hadn't really figured out how to teach me.&lt;/p&gt;
-
-
-&lt;p&gt;Part of this was systemic failures of the school system.&lt;/p&gt;
-
-
-&lt;p&gt;A substantial part of this was that a significant number of kids around me were vicious little thugs and the teachers who were supposed to be responsible for protecting the children were culpable in a vast institutional betrayal of those in their care and they all deserve to die in a fire.&lt;/p&gt;
-
-
-&lt;p&gt;Huh, yes. Apparently I &lt;em&gt;am&lt;/em&gt; angry. I don't actually think they deserve to die in a fire. I understand adolescent development, I understand incentives, I mostly do not think the people involved were intrinsically bad people so much as part of a broken system. But normally I'm quite surprised at how inaccessible anger about the whole thing feels. I don't feel like I'm &lt;em&gt;allowed&lt;/em&gt; to be angry, because of empathy and understanding of systemic problems.&lt;/p&gt;
-
-
-&lt;p&gt;I saw a therapist briefly last year. She wasn't very useful, but she did get the ball rolling. We had a conversation at one point about how bad my school experience was and she said that I must be very angry about it. "Oh sure but blah blah systemic issues" I lightly answered. I thought I was telling the truth, but maybe I was lying.&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, enough about childhood trauma, lets focus on important things like irrelevant pure mathematics.&lt;/p&gt;
-
-
-&lt;p&gt;...right after writing that the song that came on Spotify rotation was VNV Nation's "Illusion".&lt;/p&gt;
-
-
-&lt;p&gt;Opening lyrics:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;I know it's hard to tell how mixed up you feel&lt;/p&gt;
-&lt;p&gt;Hoping what you need is behind every door&lt;/p&gt;
-&lt;p&gt;Each time you get hurt, I don't want you to change&lt;/p&gt;
-&lt;p&gt;Because everyone has hopes, you're human after all&lt;/p&gt;
-&lt;p&gt;The feeling sometimes, wishing you were someone else&lt;/p&gt;
-&lt;p&gt;Feeling as though you never belong&lt;/p&gt;
-&lt;p&gt;This feeling is not sadness, this feeling is not joy&lt;/p&gt;
-&lt;p&gt;I truly understand. Please, don't cry now&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;Reader, I did not obey their request, and had to retreat to my room to have a little cry.&lt;/p&gt;
-
-
-&lt;p&gt;Accidentally &lt;a href="https://nibrasi.co.uk/the-lost-art-of-crying"&gt;NEDERAing&lt;/a&gt; myself with a textbook on some Banach space theory is some serious &lt;a href="https://notebook.drmaciver.com/posts/2020-02-24-10:37.html"&gt;everything is connected&lt;/a&gt; bullshit right there.&lt;/p&gt;
-
-
-&lt;p&gt;It's almost like there's some unprocessed emotions associated with the thing that I spent four years of my life on, the last one burning me out right to the edge of quitting before giving me a decidedly mediocre grade on something that I had connected a significant chunk of my identity to.&lt;/p&gt;
-
-
-&lt;p&gt;No, seems fake. Lets do some maths.&lt;/p&gt;
-
-
-&lt;p&gt;The traditional approach on an exam when you're stuck is to go do some other questions, so lets try another one.&lt;/p&gt;
-
-
-&lt;p&gt;First though, I have retrated to my room. I like my flatmates very much, but we do not have the sort of relationship where I particularly want to be crying in front of them, and apparently that's what's on the cards today.&lt;/p&gt;
-
-
-&lt;p&gt;Of course this presents its own problem, which is that I don't &lt;em&gt;like&lt;/em&gt; spending time in my room. I don't entirely know why. I've been vaguely intending to do Focusing on the problem by spending a bunch of time in my room and seeing how it feels, and by "vaguely intending" I mean "I have absolutely no intention of doing this because it sounds &lt;em&gt;awful&lt;/em&gt;".&lt;/p&gt;
-
-
-&lt;p&gt;One of the drivers of this is that I'm very bad at maintaining my personal space. I've bought a copy of &lt;a href="https://amzn.to/2yeCQ4i"&gt;Unfuck Your Habitat&lt;/a&gt; to try to offset that, but it hasn't arrived yet. Currently my habitat... well it's not &lt;em&gt;unhygienic&lt;/em&gt; or anything but it's cluttered as fuck and I really should do something about that.&lt;/p&gt;
-
-
-&lt;p&gt;For now though I'm going to do some vacuuming. My new coping board tells me I should do that on the weekends.&lt;/p&gt;
-
-
-&lt;p&gt;Procrastinating? I'm sure I don't know what you mean. Next you'll be telling me that my sudden desire to rearrange all my furniture is procrastination.&lt;/p&gt;
-
-
-&lt;p&gt;I have successfully resisted the urge to rearrange all my furniture. Time for some mathematics.&lt;/p&gt;
-
-
-&lt;p&gt;2.7: Given linear functionals \(f\) and \((g_i)_{i = 1}^n\) on a vector space, prove that \(\text{ker} f \supseteq \bigcap\limits_{i = 1}^n \text{ker} g_i\) if and only if \(f = \sum a_i g_i\) for some \(a_i \in \mathbb{R}\).&lt;/p&gt;
-
-
-&lt;p&gt;The if is easy: If \(x \in  \bigcap\limits_{i = 1}^n \text{ker} g_i\) then \(f(x) = \sum a_i g_i(x) = \sum a_i 0 = 0\).&lt;/p&gt;
-
-
-&lt;p&gt;The only if...&lt;/p&gt;
-
-
-&lt;p&gt;I stared at a problem for a bit and did some work on it and then took a twenty minute WhatsApp break to chat to people.&lt;/p&gt;
-
-
-&lt;p&gt;One of the problems with this is that the analysis bit I'm good at, the linear algebra, not so much.&lt;/p&gt;
-
-
-&lt;p&gt;Suppose without loss of generality that the \(g_i\) are linearly independent. Then we can find \(x_i\) with \(g_i(x_i) = 1\) and and \(g_i(x_j) = 0\) for \(i \neq j\) basically by... the thing you do to to construct an orthogonal vector? &lt;a href="https://en.wikipedia.org/wiki/Gram%E2%80%93Schmidt_process"&gt;Gram-Schmidt elimination&lt;/a&gt;, right. You do it progressively, starting with any \(y\) such that \(g(y) = 1\) and \(y \not\in &amp;lt;\{x_j : j &amp;lt; i\}&amp;gt;\). Then you set \(x_i = y - \sum\limits_{j &amp;lt; i} g_i(x_j) x_j\).&lt;/p&gt;
-
-
-&lt;p&gt;Does this work? I don't think this works.&lt;/p&gt;
-
-
-&lt;p&gt;Ugh, the annoying thing I'm finding is that I've still got the right conceptual framework, but I'm no longer any good at the detail work.&lt;/p&gt;
-
-
-&lt;p&gt;This might be a retcon though. I'm not sure I was &lt;em&gt;ever&lt;/em&gt; good at the detail work. I've always leaned very heavily on conceptual framework stuff.&lt;/p&gt;
-
-
-&lt;p&gt;Lets go back to my first thought, which is that there's a dimensionality trick here.&lt;/p&gt;
-
-
-&lt;p&gt;Feelings interrupt: Persistent internal exchange to the tune of "Ugh this is awful. I'm being &lt;em&gt;forced to do things I'm bad at&lt;/em&gt;." "Are you being forced? You can stop if you want. Do you want to stop?" "...no" "Well then lets keep going until you do.". Discomfort tolerance is hard.&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, dimension trick.&lt;/p&gt;
-
-
-&lt;p&gt;For finite dimensional \(V\) we have \(\text{dim}(V) = \text{dim}(V*)\). So if \(f \not\in \text{span}(g_i)\) then we must be able to find \(x_1, \ldots, x_n\) such that the restriction of the \(g_i\) to \(X = &amp;lt;\{x_i\}&amp;gt;\) are linearly independent. Necessarily \(f|_X \in &lt;g_i|_x\&gt;\), say \(f|_X = \sum a_i g_i|_X\). Let \(f' = \sum a_i g_i\). &lt;/g_i|_x\&gt;&lt;/p&gt;
-
-
-&lt;p&gt;If \(f' = f\) then we're done. Otherwise there is some \(y\) such that \(f'(y) \neq f(y)\).&lt;/p&gt;
-
-
-&lt;p&gt;I'm going to go have some lunch.&lt;/p&gt;
-
-
-&lt;p&gt;I'm back from lunch. I had stew. It was nice. I also now have a pot of genmaicha tea, and have taken some ibuprofen and theanine to go with it.&lt;/p&gt;
-
-
-&lt;p&gt;The caffeine/theanine/ibuprofen stack is a fairly productive one for me, but I do suspect part of that is &lt;a href="https://twitter.com/m_ashcroft/status/1246749019201732610"&gt;the suppression of feelings&lt;/a&gt; oh well.&lt;/p&gt;
-
-
-&lt;p&gt;Over lunch I was thinking about three things:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;Dissociation, and how many behaviours are about avoiding feelings.&lt;/li&gt;
-&lt;li&gt;Anger, and the way we treat male anger as intrinsically dangerous and how much disservice this does to men.&lt;/li&gt;
-&lt;li&gt;Linear algebra.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;Lets focus on the important one: Linear algebra.&lt;/p&gt;
-
-
-&lt;p&gt;I had seemingly forgotten the obvious fact that a linear functional consists of a decomposition of a vector space \(V = &lt;x&gt; \oplus \text{ker}(f)\). I'm not sure if this helps here.&lt;/x&gt;&lt;/p&gt;
-
-
-&lt;p&gt;I thought I might have a go at some of the chapter 1 exercises, see if I fare any better there.&lt;/p&gt;
-
-
-&lt;p&gt;First, an easy one. 2.5, show that \(l^\infty\) is not separable.&lt;/p&gt;
-
-
-&lt;p&gt;Ugh, I've just realised that a lot of the mathematics in this post is invalid LaTeX. I've also remembered how much I fucking hate LaTeX.&lt;/p&gt;
-
-
-&lt;p&gt;This is an area where the "optimised" workflow of my notebook is seriously lacking.&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, maths.&lt;/p&gt;
-
-
-&lt;p&gt;This is easy. For any \(A \neq B \subseteq \mathbb{N}\), we have \(||1_A - 1_B||_\infty = 1\), so \(\{B(1_A, \frac{1}{2}): A \subseteq \mathbb{N}\) is an uncountable set of non-empty open sets. A dense set intersects every open set, so no dense set can be countable because it must contain at least one element of each of these.&lt;/p&gt;
-
-
-&lt;p&gt;This is kinda what I meant earlier about being better at the conceptual work than the details. Things that are easily solvable with an intuitive leap are fine (although I might have remembered this one, I'm not sure), but things where there are multiple steps involved to figure out the conclusion are hard.&lt;/p&gt;
-
-
-&lt;p&gt;I'm now trying 1.7: Let \(1 &amp;lt; p &amp;lt; \infty\) and let \(\frac{1}{p} + \frac{1}{q} = 1\). Show that for positive real numbers \(a and b\) we have \(ab \leq \frac{a^p}{p} + \frac{b^q}{q}\) with equality if and only if \(a = b\).&lt;/p&gt;
-
-
-&lt;p&gt;I'm a little suspicious of that "equality if" part but lets see how this goes.&lt;/p&gt;
-
-
-&lt;p&gt;First, lets check \(a = b\). Then the right hand side is \(\frac{a^p}{p} + \frac{a^q}{q}\). Sanity check, when \(p = q = 2\) this gives us \(a^2 = a^2\) as desired.&lt;/p&gt;
-
-
-&lt;p&gt;I feel like the claim that the two sides are equal if \(a = b\) just has to be bullshit in general though.&lt;/p&gt;
-
-
-&lt;p&gt;Pick, say, \(p = 3\). Then \(q = \frac{3}{2}\). Then the claim that the two sides are equal is the claim that \(a^2 = \frac{1}{3} a^3 + \frac{2}{3} a^{\frac{3}{2}}\), which is just obvious nonsense (e.g. check a = 2). So I'm going to assume the "if" part is a mistake (a lot of the exercises in this book seem to be wrong).&lt;/p&gt;
-
-
-&lt;p&gt;Let \(f(a) = \frac{a^p}{p} + \frac{a^q}{q}\). Then \(f'(a) = a^{p - 1} + a^{q - 1}\).&lt;/p&gt;
-
-
-&lt;p&gt;I'd like to see how this scales. Without loss of generality, assume \(a \leq b\). Write \(b = x\) with \(x \geq 1\).&lt;/p&gt;
-
-
-&lt;p&gt;This inequality now becomes \(a^2 x \leq \frac{a^p}{p} + \frac{a^q}{q} x^q\)&lt;/p&gt;
-
-
-&lt;p&gt;There's a joke that mathematicians are machines for turning coffee into theorems. If, as previously observed, it is helpful to be angry when doing mathematics, and coffee makes you irritable (it certainly seems to), is that the mechanism?&lt;/p&gt;
-
-
-&lt;p&gt;At this point I moved to paper and the results were a mess, so I'm not going to bother to transcribe them.&lt;/p&gt;
-
-
-&lt;p&gt;I think, at this point, I have to admit that my skill in working with mathematics is severely degraded. This shouldn't be surprising, but somehow it is.&lt;/p&gt;
-
-
-&lt;p&gt;I think because I've retained a lot of the conceptual machinery of mathematics, I've assumed I could still do this sort of thing reasonably well, when in fact a lot of what matters is the detailed fine grained machinery of doing the work.&lt;/p&gt;
-
-
-&lt;p&gt;Equally, I'm not sure this was ever &lt;em&gt;easy&lt;/em&gt; for me, so maybe I'm inferring more loss than was there. This is very focused on the nitty gritty algebraic manipulation bits which, frankly, I've always been crap at.&lt;/p&gt;
-
-
-&lt;p&gt;At this point I did the standard thing I do when I get stuck in a puzzle game: Give up and look at a walkthrough.&lt;/p&gt;
-
-
-&lt;p&gt;This is apparently called Young's inequality (I remembered it was a standard one, but not what it was called), and according to Wikipedia is an easy consequence of the concavity of the logarithm. I can kinda see how that works and I could probably work through the details, but I think this requires me to have a refresher course.&lt;/p&gt;
-
-
-&lt;p&gt;I looked at &lt;a href="https://www.math.upenn.edu/~brweber/Courses/2011/Math361/Notes/YMandH.pdf"&gt;these notes&lt;/a&gt; and they instead use the convexity of the exponential, which I think is a little nicer.&lt;/p&gt;
-
-
-&lt;p&gt;Anyway I see the details of this but also find I &lt;em&gt;really&lt;/em&gt; don't want to work through them. The idea feels... disgusting? Beneath me?&lt;/p&gt;
-
-
-&lt;p&gt;I don't think it is. I think it would in fact be very good for me to work through the details. But I &lt;em&gt;really don't want to do it&lt;/em&gt;, and I think I will respect that.&lt;/p&gt;
-
-
-&lt;p&gt;I'm going to go outside for a bit and do some more staff spinning.&lt;/p&gt;
-
-
-&lt;p&gt;The earlier anger has passed. Instead I'm left with a kind of... despair? Despair isn't right. It feels &lt;em&gt;pointless&lt;/em&gt;, and it is. I deliberately picked it because it was a bit pointless. But I'm not actually struggling with any of those parts. I'm struggling with some really basic shit.&lt;/p&gt;
-
-
-&lt;p&gt;This all, I think, ties in with a bunch of basic blocks I have around maintenance and &lt;a href="https://notebook.drmaciver.com/posts/2020-04-30-15:20.html"&gt;care work&lt;/a&gt;. There's a kind of... what's the point of doing this when I'm just going to hve to do it again in future? I spent four years getting good at this sort of thing, but because I haven't maintained it, I've lost crucial skills.&lt;/p&gt;
-
-
-&lt;p&gt;I could probabbly claim some of them back, but doing so feels... futile? Like I'd just lose them again, and then I'd have wasted more time of the finite time left before I eventually die.&lt;/p&gt;
-
-
-&lt;p&gt;Bleak. The word for this mood is &lt;em&gt;bleak&lt;/em&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;I do feel like I would benefit from getting back into mathematics, but I don't think retreading old steps will get me there. I think it will just increase the level of negative pushback I'm getting from my emotions.&lt;/p&gt;
-
-
-&lt;p&gt;I think the feeling that I &lt;em&gt;should&lt;/em&gt; do this is part of the problem. There's a huge internal response of "Shan't. It's pointless".&lt;/p&gt;
-
-
-&lt;p&gt;I think picking something that I &lt;em&gt;used&lt;/em&gt; to find interesting was a mistake. I have an ongoing problem where I find something niche interesting, lose interest in it, and then feel like I've wasted my time.&lt;/p&gt;
-
-
-&lt;p&gt;Given that that's how I'm starting to feel about my PhD I think that was a particularly big mistake here.&lt;/p&gt;
-
-
-&lt;p&gt;If I &lt;em&gt;do&lt;/em&gt; want to find my way back into being able to do the detail work of mathematics, I think perhaps the way in is through statistics. It requires careful going - there are a number of problems with getting myself interested in statistics, but it's the most immediately useful to me and it ties in to a bunch of things I &lt;em&gt;do&lt;/em&gt; still care about.&lt;/p&gt;
-
-
-&lt;p&gt;I think it would be dangerous to try to push through this mood, so I'm going to call this post to a close soon, but let's try to end on a high note by seeing if my new book reading techniques work well for some things in this space.&lt;/p&gt;
-
-
-&lt;p&gt;Here's a random page from &lt;a href="https://amzn.to/2z3KLBu"&gt;Reliable Reasoning&lt;/a&gt;, page 49:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Half of this result is that, if the classification rules in C do &lt;em&gt;not&lt;/em&gt; have a finite VC dimension, then no matter how mnay data points are provided, there will be probability distributions for which enumerative induction will not select only rules with expected error close to the minimum for rules in C.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;Hmm. I think I get what this is getting at, but it's been long enough since I've read this book that I'm honestly not sure, I'm going to just reread the book up to that point (not normally viable with a textbook, I'll grant!) and see where we are here.&lt;/p&gt;
-
-
-&lt;p&gt;Nope, I think I'm done, the ugh field has got too strong for today.&lt;/p&gt;
-
-
-&lt;p&gt;To end on a high note, I think I've learned a couple of important things today:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;I actually &lt;em&gt;can&lt;/em&gt; manage much more focused work on something like this than I thought I could. Admittedly I mostly ended up processing feelings around the work than doing the work, but I think that in and of itself is quite productive.&lt;/li&gt;
-&lt;li&gt;There's an interesting link to anger with that.&lt;/li&gt;
-&lt;li&gt;Stream of consciousness writing while I attempt work is actually quite productive.&lt;/li&gt;
-&lt;li&gt;I should reread "Reliable Reasoning" as a possible next steps into regaining some skills I've lost.&lt;/li&gt;
-&lt;li&gt;There's probably a very strong set of emotional ughs tied together around this, and I suspect sorting some of the other ones out might make a lot of this more accessible.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;What I &lt;em&gt;haven't&lt;/em&gt; learned much about is Banach space theory, but oh well. It wasn't likely to be very useful anyway.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-05-03-09:09.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-04-06:21.html</id>
     <title>Model Monocropping</title>
@@ -1316,7 +758,7 @@ because this causes you to actually develop your muscles rather than weaken them
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-12-08:19.html</id>
     <title>Why are things hard?</title>
-    <updated>2020-05-12T10:02:48+01:00</updated>
+    <updated>2020-05-12T12:21:57+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Why are things hard?&lt;/p&gt;
@@ -1399,5 +841,94 @@ Here is a partial list:&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-05-12-08:19.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-05-13-09:56.html</id>
+    <title>How to read a book</title>
+    <updated>2020-05-13T09:56:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;How to read a book&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-05-13&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I have mixed feelings about Adler and Van Doren's classic &lt;a href="https://amzn.to/2LqWf50"&gt;How to read a book&lt;/a&gt;. There's a lot I like about it, and my reading definitely improved after I read it, but I also disagree with a lot of it. I have not engaged with the book in a way that they think entitles me to disagree with it, but that's OK because I also disagree with their claims around when you are entitled to disagree with a book.&lt;/p&gt;
+
+
+&lt;p&gt;But that's not what this post is about. This post is about what one might think of the central failing of the book: Despite the title, it never actually tells you how to read a book.
+It is not a book about how to read a book at all, it is a book about how to engage with the contents of a book.&lt;/p&gt;
+
+
+&lt;p&gt;This is not what reading is.
+Reading is not an act conducted by a pure mind engaging with an idealised platonic flow of information.
+Reading is an active engagement between a physical body and a physical object. The &lt;em&gt;purpose&lt;/em&gt; of reading is to engage with the content, but reading itself is a physical act.&lt;/p&gt;
+
+
+&lt;p&gt;And the physical act matters, clearly.&lt;/p&gt;
+
+
+&lt;p&gt;This is obvious in the extreme cases. If you are in constant pain while reading you're not going to be able to concentrate on the reading, right? But I think it matters far more than we expect it to.&lt;/p&gt;
+
+
+&lt;p&gt;People often are amused at how strong my opinions on book formats are, but this is because book formats are important.&lt;/p&gt;
+
+
+&lt;p&gt;Briefly my opinions on book formats are:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Audiobooks might be fine but I haven't been able to make them work for me (I should revisit this now that &lt;a href="https://notebook.drmaciver.com/posts/2020-04-11-14:47.html"&gt;I have solved my problems with podcasts&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Ebooks are a shit format for consuming hard material, but their convenience often outweighs their shittiness for lighter material.&lt;/li&gt;
+&lt;li&gt;Most hardbacks are a bad format made by bad people.&lt;/li&gt;
+&lt;li&gt;Trade paperbacks and other large paperback formats are a blight on humanity and the people responsible for them should be put on trial.&lt;/li&gt;
+&lt;li&gt;Small, light, ideally paperback, books are the god tier format and are the only one that allows you to properly engage with difficult material.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;You will tell me about textbooks etc that have too much content to be small and thus are better as large physical books or PDFs. I acknowledge those textbooks cannot be made smaller, but I contend that this is because they shouldn't have been written with that much content in the first place and should have been a series of shorter books. This is a separate argument.&lt;/p&gt;
+
+
+&lt;p&gt;The reason why ebooks are bad is twofold:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;The physicality of engaging with a book is actually very helpful for organising knowledge (you've got an intuitive sense of where things were in the book, and also physical libraries are a much better exobrain that digital ones).&lt;/li&gt;
+&lt;li&gt;They add significant latency and inconvenience to many of the actions you take in the course of reading (paging, especially backwards, flicking through the book at random, etc).&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;The reason large physical books are bad is that it is almost impossible to maintain &lt;a href="https://learnmuscles.com/blog/2017/10/18/reading-writing-and-posture/"&gt;a proper reading posture while reading them&lt;/a&gt; without a book stand or something, which let's be honest literally nobody is using. They also can't be carried in your bag (and a book stand certainly can't), which means your opportunities to read them will be limited.&lt;/p&gt;
+
+
+&lt;p&gt;Why am I telling you all of this?&lt;/p&gt;
+
+
+&lt;p&gt;I'm telling you all of this because if the physicality of reading matters, and you are struggling to read, then you may be able to improve your reading not by "improving your reading skills" in some sense, or by fixing whatever is stopping you from concentrating, but by simply changing actual practical physical details about your reading habits. It's possible that you're just fine at reading but are attempting to read in a way that doesn't work well for you.&lt;/p&gt;
+
+
+&lt;p&gt;Here are some interventions in the act of reading that have all worked pretty well for me:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Reading out loud. Reading out loud makes it &lt;em&gt;much&lt;/em&gt; easier to engage with difficult material. It causes you to remember it better, and the act of reading out loud &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-12:12.html"&gt;makes it harder in a way that makes it possible to concentrate&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Explicitly structuring your reading into a 20/10 pattern (20 minutes reading, 10 minutes mandatory break) so as to manage fatigue and concentration better.&lt;/li&gt;
+&lt;li&gt;Fix your reading posture so that you hold the book out in front of you rather than looking down at it. The looking down posture is not good for your neck and breathing in a way that I think disrupts the ability to concentrate and makes you feel more distracted while reading.&lt;/li&gt;
+&lt;li&gt;Reading while standing up (with the book held in front of you!) and vaguely walking or pacing is particularly good. This combines particularly well with reading out loud.&lt;/li&gt;
+&lt;li&gt;Reading while &lt;a href="https://alexandertechnique.co.uk/learning-it/semi-supine"&gt;Semi-Supine&lt;/a&gt; with the book held out in front of you. This combines particularly well with the 20/10 structure, with your phone deliberately left out of reach.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;All of these seem kinda dumb and like they shouldn't matter, because we have become overly attached to the idea of books as pure sources of information that we engage with intellectually, rather than physical objects that we interact with physically as part of a process with an intellectual goal, and little things often have a much larger effect on such processes than we think they do.&lt;/p&gt;
+
+
+&lt;p&gt;They're all also very easy, so if you really think they won't work, the fastest way to prove me wrong is to just &lt;a href="https://notebook.drmaciver.com/posts/2020-02-26-16:07.html"&gt;try them and see what happens&lt;/a&gt;.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-05-13-09:56.html" rel="alternate"/>
   </entry>
 </feed>
