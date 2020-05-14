@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-05-13T09:56:00+01:00</updated>
+  <updated>2020-05-14T07:22:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,123 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-05-04-06:21.html</id>
-    <title>Model Monocropping</title>
-    <updated>2020-05-04T11:59:58+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Model Monocropping&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-05-04&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;What is a model?&lt;/p&gt;
-
-
-&lt;p&gt;There's a good passage about models in the beginning of Cailin O'Connor's "&lt;a href="https://amzn.to/3c3Ap2Z"&gt;The Origins of Unfairness&lt;/a&gt;":&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Because the book addresses many related phenomena these discussions necessarily vary in levels of carefulness. Some of the models presented are tied to the relevant phenomena quite tightly. Others are suggestive of the phenomena, but the details are not filled in as meticulously. This means that the explanatory role of the models will differ from case to case.&lt;/p&gt;
-&lt;p&gt;In some cases, the models discussed can be thoguht of as providing "how-possibly" information. If something can evolve in an evolutionary model under basic conditions, we come to believe that these conditions are enough to possibly support the evolution of that behavior in the real world. In other cases, I take the models to have deeper explanatory power, giving us insight into how some patterns of behavior may have &lt;em&gt;potentially&lt;/em&gt; emerged. The difference here is not in the models but in the epistemic role they play. In the "how-potentially" cases, the models are intended to increase our confidence in the potential of a process to really have occurred. In particular, many of the examples of how-potentially modelling in the book will involve what Weisberg describes as minimalist  idealization, where the model pares away causally irrelevant factors to reveal candidates for the underlying causal variables responsible for a phenomenon. In still other cases, I will argue that the models discussed play an important epistemic role by outlining the minimal conditions for certain social patterns - especially inequitable ones - to arise, regardless of how those patterns were actually generated in the real world. This kind of "how-minimally" modelling is especially useful in thinking about intervention. For instance, suppose we intervene on real groups via implicit bias training. If inequity emerges under minimal conditions that do not include biases, we should not expect this intervention to fully solve our problem.&lt;/p&gt;
-&lt;p&gt;Importantly, sometimes the same model will play multiple epistemic roles. For example, I provide models of the emergence of gender roles that I think potentially illuminate how these patterns emerged in the real world. At the same time, they demonstrate how such roles can possibly emerge from minimal preconditions. Altogether, the explanatory picture that emerges echoes Downes (2011), who emphasizes the wide set of explanatory roles that models can play.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;Downes (2011) is &lt;a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1747-9991.2011.00441.x"&gt;Scientific Models by Stephen M. Downes&lt;/a&gt;, who says:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;The role of models in science has been a focus of philosophical discussion for at least a century. In what follows, I provide some examples of scientific models, introduce some of the relevant philosophical discussion about models and then focus in on issues arising from a specific view about what models do: all scientific models are representations of parts of the world. I side with an emerging consensus that this unified view is not tenable. Scientific models play a number of different epistemological roles in scientific inquiry and as a result, philosophical inquiry about models should be pursued in a number of different directions.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;I am reminded of a quote from Gelman and Shalizi's &lt;a href="http://www.stat.columbia.edu/~gelman/research/published/philosophy.pdf"&gt;Philosophy and the practice of Bayesian statistics&lt;/a&gt;:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Social-scientific data analysis is especially salient for our purposes because there is general agreement that, in this domain, all models in use are wrong – not merely falsifiable, but actually false. With enough data – and often only a fairly moderate amount – any analyst could reject any model now in use to any desired level of confidence.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;A model is in some sense a &lt;em&gt;toy world&lt;/em&gt;. It captures some salient feature of the real world in a way that you can reason about more concretely. These toy worlds idealise the real world, typically to some very large degree, but in doing so they have a powerful advantage over the real world: They can be manipulated and tested, and reasoned about from the omniscient view. The models contain uncertainty, but the uncertainty is generally purely probabilistic, not &lt;a href="https://en.wikipedia.org/wiki/Knightian_uncertainty"&gt;Knightian&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;This sort of abstraction of the real world is &lt;a href="https://notebook.drmaciver.com/posts/2019-02-18-08:58.html"&gt;how mathematics works in general&lt;/a&gt; - creating abstract objects that we can set up correspondences with, that are not themselves physically real, but that we can use to understand reality better through analogy.&lt;/p&gt;
-
-
-&lt;p&gt;This can illuminate our understanding of the world in a purely descriptive way - the model as hermeneutic resource, a tool of interpretation, one of &lt;a href="https://notebook.drmaciver.com/posts/2020-04-27-07:57.html"&gt;the stories we tell each other&lt;/a&gt; - but of course one of the key advantages of a model is that you can use them for decision support.&lt;/p&gt;
-
-
-&lt;p&gt;As I've argued before, the way to think about decision making is not to try to imagine what an optimal idealised decision maker would do, but to think instead about &lt;a href="https://notebook.drmaciver.com/posts/2020-02-25-10:39.html"&gt;doing a decent job under bounded resources&lt;/a&gt;. In this sense, models are clearly often going to be useful despite being "wrong", if they help you make better decisions than you would at random.&lt;/p&gt;
-
-
-&lt;p&gt;In this sense you can think of models as members of a &lt;a href="https://notebook.drmaciver.com/posts/2020-04-13-11:35.html"&gt;domus&lt;/a&gt; - abstract objects that we have domesticated to our service. When the models tend to result in bad decisions, they get culled, and new ones form in their place.&lt;/p&gt;
-
-
-&lt;p&gt;It will rarely be the case that these models get selected for &lt;em&gt;truth&lt;/em&gt; exactly, because truth is complex and not always that useful. Instead they will be selected for whether the errors they make are inconvenient. A model that is more accurate on average but less accurate in cases where it causes a critical error will tend to be selected against.&lt;/p&gt;
-
-
-&lt;p&gt;Statistics, in this view, is a tool for model generation (especially parameter tuning) and selection (model checking lets you cull models that produce worse results).&lt;/p&gt;
-
-
-&lt;p&gt;Of course, the passive voice there hides who is doing the selection. In a domus, evolution is no longer just a blind force, but is guided by intentional choices made by the people involved.&lt;/p&gt;
-
-
-&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/All_models_are_wrong"&gt;As the saying goes&lt;/a&gt;, all models are wrong, but some are useful. But useful to whom?&lt;/p&gt;
-
-
-&lt;p&gt;We have a tendency in agriculture to monocropping: Finding the "best" crop and just doing more of that. The results are less interesting and fragile, and tend to ignore certain externalities in their endless optimisation (this is why storebought tomatos are boring). This sucks if that monocrop is less suitable for you - a society that bases all their diet on wheat sucks if you're gluten intolerance.&lt;/p&gt;
-
-
-&lt;p&gt;We also tend to count "best" heavily weighted towards power, which tends to neglect the needs of those with less power, who are typically minorities. Therefore the errors in our models will tend to be heavily weighted towards minimizing ones that will affect those with power.&lt;/p&gt;
-
-
-&lt;p&gt;This is one of the reasons it's important to seek out niche &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-07:38.html"&gt;nerddoms&lt;/a&gt; - they will tend to provide you with models from outside the monocrop.&lt;/p&gt;
-
-
-&lt;p&gt;Often these models will be &lt;em&gt;worse&lt;/em&gt; in some sense. They will work less well if you're in the majority. Often they will be poorly thought through or optimised compared to mainstream models. This is because they are optimised for a smaller number of people for whom those mainstream models were optimised for.&lt;/p&gt;
-
-
-&lt;p&gt;Nevertheless, their inclusion in a healthy model ecosystem is vital, because they capture aspects of reality that we would otherwise ignore, because they come from people for whom those aspects are of vital importance. Further, often through synthesis they allow us to come up with hybrid models that work better for everybody.&lt;/p&gt;
-
-
-&lt;p&gt;There was &lt;a href="https://letter.wiki/conversation/610"&gt;an interesting discussion on letter wiki&lt;/a&gt; that John Nerst linked to recently that contained the following gem:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;New Atheism, to my mind, never grappled honestly with this fact about human nature, often preferring a speculative "mind virus" theory, which disparaged religion as a kind of cognitive parasite and suggested that we could, if only we inoculated the vulnerable, rid the human species of the nasty pestilence of religious belief. &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;I don’t think this was dishonesty as much as a form of projection. There are people for whom an established and popular idea never makes sense and they believe that they worked this out rather than just had a psychology for which it didn’t work.  It is then easy for them to assume that they can bring other people into this mindset. I see this with queer theorists. They are often people who lie outside of norms themselves when it comes to gender presentation and sexuality and they then rationalise &amp;amp; moralise this and try to get other people to do it but other people don’t want to because they don’t lie outside the norm. &lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;I in fact think both the religion-as-meme and queer theory models are very useful ones that are worthwhile to have in a healthy, functioning, memetic ecosystem.&lt;/p&gt;
-
-
-&lt;p&gt;(I also think a lot of people who are mostly "in the norm" could benefit from at least a bit of queer theory, but it's true that most people are probably right not to bother)&lt;/p&gt;
-
-
-&lt;p&gt;I do agree that both tend to get overapplied by their advocates, but I feel the world is richer for them.&lt;/p&gt;
-
-
-&lt;p&gt;The reason they get overapplied is that we've all bought too heavily into the idea of the model monocrop. We don't just want our models to be useful, we want them to be &lt;em&gt;true&lt;/em&gt;, and that must mean that other people's models are false, and so we must argue our model into dominance.&lt;/p&gt;
-
-
-&lt;p&gt;But this isn't healthy. The solution is not to replace the monocrop with a better one, it's to end monocropping altogether. If &lt;a href="https://notebook.drmaciver.com/posts/2020-02-24-10:37.html"&gt;all knowledge is connected&lt;/a&gt; then one consequence of that is that the problems we want to solve are too complicated to perfectly model with anything short of reality itself, which defeats the purpose of having the models.&lt;/p&gt;
-
-
-&lt;p&gt;Instead we need something closer to model &lt;a href="https://en.wikipedia.org/wiki/Permaculture"&gt;permaculture&lt;/a&gt;, holding a number of (potentially highly &lt;a href="https://notebook.lisamcnulty.co.uk/post/writing-20200504/"&gt;inconsistent&lt;/a&gt;) models, which we fluidly switch between as and when it seems needful.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-05-04-06:21.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-05-08:59.html</id>
     <title>Making Success Trivial</title>
@@ -845,7 +728,7 @@ Here is a partial list:&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-13-09:56.html</id>
     <title>How to read a book</title>
-    <updated>2020-05-13T09:56:00+01:00</updated>
+    <updated>2020-05-13T10:54:07+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;How to read a book&lt;/p&gt;
@@ -930,5 +813,139 @@ Reading is an active engagement between a physical body and a physical object. T
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-05-13-09:56.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-05-14-07:22.html</id>
+    <title>Joy in Sadness</title>
+    <updated>2020-05-14T07:22:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Joy in Sadness&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-05-14&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;From &lt;a href="https://amzn.to/2T377tI"&gt;A Field Guide to Getting Lost&lt;/a&gt;, pages 118-119:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;There is a voluptuous pleasure in all that sadness, and I wonder where it comes from, because as we usually construe the world, sadness and pleasure should be far apart. Is it that the joy that comes from other people always risks sadness, because even when love doesn't fail, mortality enters in; is it that there is a place where sadness and joy are not distinct, where all emotion lies together, a sort of ocean into which the tributary streams of distinct emotions go, a faraway deep inside; is it that such sadness is only the side effect of art that describes the depths of our lives, and to see that described in all its potential for loneliness and pain is beautiful? There are songs of insurgent power; they are essentially what rock and roll, an outgrowth of one strain of the blues, does best, these songs of being young and at the beginning of the world, full of a sense of your own potential. Country, at least the old stuff, has mostly been devoted instead to aftermath, to the hard work it takes to keep going or the awareness that comes after it is no longer possible to go on. If it is deeper than rock it is because failure is deeper than success. Failure is what we learn from, mostly.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;I find that I am reluctant to write about this passage, partly because I do not fully understand it.&lt;/p&gt;
+
+
+&lt;p&gt;Is there pleasure in sadness? Well, there can be of course. That which grounds you in your body is often easy to experience as pleasurable, at least until it becomes too intense, or you become bored of it, and you dissociate in order to numb yourself away from it. Feelings are experienced bodily, so can be a source of pleasure, even when those feelings are sadness - they connect you up with yourself, and you can revel in that connection.&lt;/p&gt;
+
+
+&lt;p&gt;But joy? I don't know. Sadness and joy &lt;em&gt;do&lt;/em&gt; seem opposed to me.&lt;/p&gt;
+
+
+&lt;p&gt;Perhaps the problem is that I don't really know what joy is.
+I've been trying to figure out how to expand my positive emotional range, and this lack of understanding of joy is part of that.&lt;/p&gt;
+
+
+&lt;p&gt;In &lt;a href="https://amzn.to/3bqscos"&gt;The Book of Human Emotions&lt;/a&gt;, Tiffany Watt Smith cites Spinoza:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Believing the stories of our lives were fundamentally beyond our control, Spinoza linked joyfulness to the accidental and unforeseen. It surges up when something is better than we can possibly have imagined. "Joy is pleasure accompanied by the idea of something past, which has had an issue &lt;em&gt;beyond our hope&lt;/em&gt;."&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;So perhaps there &lt;em&gt;can&lt;/em&gt; be a joy in sadness. We are bad at self-reflection, and an upswelling of sadness (if we do not ignore it) grounds us, shows us an aspect of who we are that we didn't know was there. Accompanied with the pleasure of being grounded in ourself, it's like the sudden appearance of an old friend. A joyous greeting ensues: "Hello, what are you doing here? I didn't expect to see you here at at all."&lt;/p&gt;
+
+
+&lt;p&gt;But certainly not all sadness prompts joy, as I think we are collectively discovering in the COVID-19 pandemic.&lt;/p&gt;
+
+
+&lt;p&gt;&lt;a href="https://twitter.com/avyfain/status/1260832192030097409"&gt;Avy observed the following earlier today&lt;/a&gt;:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Mindfulness is all about being fully present, and not letting your mind slip into thinking about past or future. It feels good.&lt;/p&gt;
+&lt;p&gt;At the same time, months of isolation have been all about the right now. Living in an infinite present is awful.&lt;/p&gt;
+&lt;p&gt;Not sure how to reconcile this.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;I think this reading of joy has something to add here.&lt;/p&gt;
+
+
+&lt;p&gt;Mindfulness can definitely be experienced as pleasure - I do, and honestly it's usually a bit too much for me to handle for more than short periods of time - but fundamentally undifferentiated pleasure is &lt;em&gt;boring&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;You can see this when you use attention to turn off pain.&lt;/p&gt;
+
+
+&lt;p&gt;The next time you're experiencing pain, focus your attention on it. You can often turn it off, or reframe it as interesting and enjoyable (whether this works is somewhat variable. For example I can't do this with headaches). But how long will you last doing it? If you're like me, lasting more than scant minutes is impossible - at some point the pain becomes preferable to the boredom.&lt;/p&gt;
+
+
+&lt;p&gt;Perhaps this is a lack of skill, and once one is at the point where one can sustain a two hour seated meditation, the boredom is entirely manageable, or perhaps even the boredom can be experienced as pleasurable. I don't know. Meditation is not among my skills.&lt;/p&gt;
+
+
+&lt;p&gt;But I suspect most people lack the skill to reframe boredom as pleasurable.&lt;/p&gt;
+
+
+&lt;p&gt;If joy is pleasure in the unexpected, then it is no surprise that mindfulness can bring joy in a way that the eternal now of pandemic time cannot, because mindfulness comes with a suspension of judgement that we, for the most part, cannot manage all the time.&lt;/p&gt;
+
+
+&lt;p&gt;&lt;a href="https://meaningness.com/wonder"&gt;David Chapman recently wrote about wonder&lt;/a&gt;:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;I suggest that wonder occurs in heightened agendaless attention combined with suspension of habitual interpretation. Heightened agendaless attention allows and perceives unexpected patterning; suspension of habitual interpretation allows and perceives unexpected nebulosity.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;(&lt;a href="https://meaningness.com/nebulosity"&gt;nebulosity&lt;/a&gt; is a term he uses in a technical sense idiosyncratic to his meaningness project. Nebulosity is the property of things that seem well defined to become vague at their boundaries)&lt;/p&gt;
+
+
+&lt;p&gt;I propose that this suspension of habitual interpretation is also one of the key differences between mindfulness and pandemic time. We experience joy because we are able to put aside, for a moment, our interpretation and thus our understanding, so whatever comes next will be equally surprising.&lt;/p&gt;
+
+
+&lt;p&gt;In the pandemic we are not able to do that, partly because we are not able to maintain this suspension for long periods of time anyway, and partly because it is &lt;em&gt;hard&lt;/em&gt; to suspend interpretation when we are under threat.
+Interpretation is a key part of our threat assessment and merely &lt;a href="https://notebook.drmaciver.com/posts/2020-03-14-13:55.html"&gt;knowing&lt;/a&gt; that doesn't help us feel safe enough to do it.&lt;/p&gt;
+
+
+&lt;p&gt;And without this suspension of interpretation, without the perpetual surprise that comes with it, an eternal now is not a joyous experience. We experience only the sadness, without the ability to joyously revel in it, because we &lt;em&gt;know&lt;/em&gt; what is there, and we are bored of it.&lt;/p&gt;
+
+
+&lt;p&gt;And without that joy, the eternal now takes a darker turn, because although an eternal now is experienced in mindfulness, it is also a symptom of depression.&lt;/p&gt;
+
+
+&lt;p&gt;I've &lt;a href="https://notebook.drmaciver.com/posts/2020-03-06-07:46.html"&gt;written before&lt;/a&gt; about Matthew Ratcliffe's book, &lt;a href="https://amzn.to/3fJk71w"&gt;Experiences of Depression&lt;/a&gt;, and his notion of &lt;em&gt;existential feelings&lt;/em&gt; - feelings which lack an aboutness, but are instead part of the background structure of our experience of reality. Feelings associated with the passage of time are a significant type of existential feeling.&lt;/p&gt;
+
+
+&lt;p&gt;Ratcliffe proposes that much of the depressive experience can be thought of as disruption to existential feelings. Given that, it's not surprising that we can experience the disruption to the passage of time as depression. Also, for those of us already prone to depression, I suspect that some disruption to existential feelings can prompt a broader depressive episode, through trained associations and kicking off feedback loops that drive us deeper into this depression.&lt;/p&gt;
+
+
+&lt;p&gt;What defines the difference between whether a disruption to the passage of time causes depression or joy?&lt;/p&gt;
+
+
+&lt;p&gt;I suspect part of it is &lt;em&gt;agency&lt;/em&gt;. In mindfulness, we are in a situation which we can choose to end whenever we need to. We have voluntarily entered into that state. It's a weird, inverted, image of the difference between a rollercoaster and a genuine threat: Because we are there voluntarily, the experience of the fear is qualitatively different even when the level of fear may be the same. Because we have chosen to suspend our experience of time, we can maintain an open curiousity, and can experience that disruption as joyous.&lt;/p&gt;
+
+
+&lt;p&gt;What does all this mean?&lt;/p&gt;
+
+
+&lt;p&gt;Well, it suggests at least three routes for dealing with the eternal now.&lt;/p&gt;
+
+
+&lt;p&gt;The first is that we can end it. We can take steps to texture time for ourselves. I've been working on this a bit recently and so far my experience is that it's good but also doesn't work. Previously I was living day to day, now I'm living week to week. The world is textured but still small.&lt;/p&gt;
+
+
+&lt;p&gt;The second is that we can cultivate agency without the eternal now. We may not be able to deal with it, but we can start projects, we can control that which we have access to. I think many people are taking this route.&lt;/p&gt;
+
+
+&lt;p&gt;The third, which is hardest and I barely know where to start, but ultimately may be the only option that works, is that we can try to learn to take joy in it. We can practice curiousity, reconcile ourselves to the endlessness in all of it, and try to explore the details of the world that is available to us. Maybe we'll be surprised by what we find there.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-05-14-07:22.html" rel="alternate"/>
   </entry>
 </feed>
