@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-05-16T07:43:00+01:00</updated>
+  <updated>2020-05-16T12:06:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,65 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-05-07-07:57.html</id>
-    <title>Easy changes and Uncomfortable Reflections</title>
-    <updated>2020-05-07T09:36:19+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Easy changes and Uncomfortable Reflections&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-05-07&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;As I've talked about in my last two posts (&lt;a href="https://notebook.drmaciver.com/posts/2020-05-05-08:59.html"&gt;Making success trivial&lt;/a&gt;, &lt;a href="https://notebook.drmaciver.com/posts/2020-05-06-09:51.html"&gt;Cleaning up the fnords in your environment&lt;/a&gt;), my bedroom is a mess. I'd like it not to be a mess, and I've recently made two changes that are enabling that:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;Using &lt;a href="https://howtosurvivementalillness.tumblr.com/post/162396810334/how-to-make-and-use-a-coping-board"&gt;a coping board&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Structuring longer cleaning around &lt;a href="https://www.unfuckyourhabitat.com/whats-a-2010/"&gt;20/10s&lt;/a&gt; (basically just pomodoros, but with some better ergonomics)&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;My room is not currently clean, but it's a little cleaner than it was a week ago, and I think in a month it'll probably be pretty clean and I kinda expect to be able to keep it that way (I'll need to make some more structural changes than this in order to enable that, but these changes will get me to the point where the structural changes that I should make become more obvious).&lt;/p&gt;
-
-
-&lt;p&gt;You may notice something important about these two changes: They're really really easy, and I could have done them at any time.&lt;/p&gt;
-
-
-&lt;p&gt;What this means, is that a long-running problem of mine, something that I've been feeling bad about for well over a decade (and had for longer), is something that I could have trivially fixed any time I wanted to.&lt;/p&gt;
-
-
-&lt;p&gt;So, should I feel guilty about not having done so? More, should I feel &lt;em&gt;ashamed&lt;/em&gt; about not having done so?&lt;/p&gt;
-
-
-&lt;p&gt;(Distinction in case it's helpful: Guilt is "I did a bad thing", shame is "I am bad")&lt;/p&gt;
-
-
-&lt;p&gt;I claim that the answer is no, and the answer is no for a variety of reasons.&lt;/p&gt;
-
-
-&lt;p&gt;The main one is that having negative emotional responses to success is maladaptive. It causes you to not want to succeed, and will tend to destroy the motivation to &lt;a href="https://notebook.drmaciver.com/posts/2020-02-26-16:07.html"&gt;try things&lt;/a&gt;, and will cause you to feel bad while building the habit, which will tend to sabotage the habit.&lt;/p&gt;
-
-
-&lt;p&gt;It might be right, in some circumstances, to feel a certain amount of guilt or shame over this, as long as they are proportionate (i.e. don't spiral out of control) and are more than counterbalanced by the positive feelings of success, but sucess does require confronting the honest truth that you are capable of succeeding, and that can be very unpleasant.&lt;/p&gt;
-
-
-&lt;p&gt;If you experience success as a negative, you will tend to discourage yourself from succeeding. This is relatively obvious when it's pointed out, but is a very easy trap to fall into. If you have this problem I'd recommend my previous &lt;a href="https://www.drmaciver.com/2020/01/a-crash-course-in-having-feelings/"&gt;Crash Course in Having Feelings&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;On top of that, I think it is &lt;em&gt;factually incorrect&lt;/em&gt; to feel guilt or shame about behaviour change, because it is the nature of change to be easy once it arrives: If you're having to force yourself through a gruelling process to change, you're probably just going to fail.&lt;/p&gt;
-
-
-&lt;p&gt;Instead what happens is that you gradually build up skills and relationships, or your circumstances change, or one of a dozen other possibilities occur and suddenly change is easy. The thing that makes change easy now wouldn't necessarily have worked if you'd tried it five years ago, or ten, and even if it had worked you wouldn't have necessarily known how to find it among the thousands of other equally easy things that seemed equally plausible but wouldn't have worked for you.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-05-07-07:57.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-08-10:06.html</id>
     <title>Separating Impulse from Action</title>
@@ -874,7 +815,7 @@ Interpretation is a key part of our threat assessment and merely &lt;a href="htt
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-16-07:43.html</id>
     <title>Truth and the Ghost Library</title>
-    <updated>2020-05-16T07:43:00+01:00</updated>
+    <updated>2020-05-16T10:22:04+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Truth and the Ghost Library&lt;/p&gt;
@@ -945,5 +886,113 @@ which can be thought of an elaborate ritual to maintain order, in which the oppr
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-05-16-07:43.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-05-16-12:06.html</id>
+    <title>Notes on Acedia</title>
+    <updated>2020-05-16T12:06:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Notes on Acedia&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-05-16&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I recently read &lt;a href="https://amzn.to/2X2QOP2"&gt;Leisure: The Basis of Culture&lt;/a&gt; which is a strange book, which I'll be exploring a different angle on in &lt;a href="https://drmaciver.substack.com/"&gt;my newsletter&lt;/a&gt; on Monday, but one thought from it that I thought was interesting and worth exploring further was the idea of &lt;em&gt;acedia&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;This post is just some gathering of notes from different sources related to the subject, plus some vague thoughts..&lt;/p&gt;
+
+
+&lt;p&gt;The &lt;a href="https://en.wikipedia.org/wiki/Acedia"&gt;Wikipedia entry on acedia&lt;/a&gt; has the following to say:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Acedia (/əˈsiːdiə/; also accidie or accedie /ˈæksɪdi/, from Latin acedĭa, and this from Greek ἀκηδία, "negligence", ἀ- "lack of" -κηδία "care") has been variously defined as a state of listlessness or torpor, of not caring or not being concerned with one's position or condition in the world. In ancient Greece akidía literally meant an inert state without pain or care. Early Christian monks used the term to define a spiritual state of listlessness and from there the term developed a markedly Christian moral tone. In modern times it has been taken up by literary figures and connected to depression.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;The wikipedia article &lt;a href="http://www.hermitary.com/solitude/acedia.html"&gt;cites what is apparently a blog for hermits&lt;/a&gt;:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Acedia (or accedie) has a narrow religious definition but is a far larger and wider psychological and spiritual term relevant to the history of eremiticism and solitude.&lt;/p&gt;
+&lt;p&gt;The narrow sense is that of sloth, indolence, laziness, as in the Western world's list of seven capital sins. Eastern Christianity is a little more comprehensive in referring to seven "temptations." Acedia is a psychological rather than moral condition, with implications for modern attitudes toward culture, conformity, and contentment. Acedia was a historical bane to monks, hermits, solitaries, and -- by extension -- to any one spiritually or intellectually inclined.&lt;/p&gt;
+&lt;p&gt;...&lt;/p&gt;
+&lt;p&gt;The concept of acedia begins with the ever-observant desert fathers and mothers who first perceived and diagnosed the condition. Their first impulse was to shoo it away like a pesky insect by keeping occupied, as in the narrative of Anthony beset "by many sinful thoughts" and cured by angelic advice to stay busy  plaiting rope. Poemen avers that "acedia is there every time one begins something, and there is no worse passion, but if one recognizes it for what it is, one will gain peace." And John Cassian adds:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It is also good to recall what Abba Moses, one of the most experienced of the fathers, told me. I had not been living long in the desert when I was troubled by listlessness [i.e., acedia]. So I went to him and said: Yesterday I was greatly troubled and weakened by listlessness, and I was not able to free myself from it until I went to see Abba Paul. Abba Moses replied to me by saying: So far from freeing yourself from it, you have surrendered to it completely and become its slave. You must realize that it will attack all the more severely because you have deserted your post, unless from now on you strive to subdue it through patience, prayer and manual labor.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Clearly acedia is not willful sloth or indolence, less so "sin," but a spiritual lethargy or indifference, a turpitude that affects the well-intentioned. Amma Theodora says:&lt;/p&gt;
+&lt;p&gt;You should realize that as soon as you intend to live in peace, at once evil comes and weighs down your soul through acedia, faint-heartedness, and evil thoughts. It also attacks your body through sickness, debility, weakening of the knees, and all the members. It dissipates the strength of soul and body. ... But if we are vigilant, all the temptations fall away.&lt;/p&gt;
+&lt;p&gt;A practical experience of acedia is described by the desert hermit Heraclides, who received a brother troubled by restlessness in his new cell. Heraclides advised him not to follow an extreme regimen of self-discipline but to eat, drink, and sleep as needed. He only asked that the brother not leave his cell. But, the narrator tells us, the brother fell "prey to acedia" and doubted the old man's advice. The brother followed his regimen but when he went to bed he found a demon lying on it, gnashing its teeth at him. The brother fled his cell to the old man's dwelling, imploring his help. Heraclides, seeing that the younger man had not followed his counsel to stay in his cell, refused to open, but the next morning, finding him still at the doorstep, Heraclides took pity on him. "Then, according to his capacity, he taught him the discipline of the solitary life, and in a short time he became a good monk."&lt;/p&gt;
+&lt;p&gt;John Cassian went further than his conversation with Abba Moses to describe the physical symptoms so literally, even to the hour of the day when they peak, that acedia became known as the "noonday devil." He provides an excellent description of the psychology of acedia as well, indicating that acedia is a "tedium or perturbation of heart ... akin to dejection and especially felt by wandering monks and solitaries, a persistent and obnoxious enemy to such as dwell in the desert." He goes on:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;When this [acedia] besieges the unhappy mind, it begets aversion from the place, boredom with one's cell, and scorn and contempt for one's brethren, whether they be dwelling with one or some way off, as careless and unspiritual-minded persons.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The listlessness of acedia is akin to a feeling of inertness, John Cassian notes, producing no spiritual fruit, a sense of any practice being "empty of spiritual profit." John's remedy, following desert tradition, is a level of sustained activity approximating rigorous physical labor and what were to be called works of mercy, which fend off cynicisms. Physical labor as a solution is seen in the example of the first Christian desert hermit Paul, who regularly wove baskets of palm leaves. But being too far from a market to sell them Paul would burn his handiwork once a year and start over.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;In The Book of Human Emotions, page 16, Tiffany Watt Smith describes it as:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Acedia (pronounced a-seed-ee-a) or sometimes called accidie, is an emotion that has no real equivalent today. It was a short-lived but disastrous emotional crisis, usually striking between 11AM and 4PM. Its first signs were listeness and irritability, but it didn't take long to turn into desolation and despair.&lt;/p&gt;
+&lt;p&gt;...&lt;/p&gt;
+&lt;p&gt;In the sixth century =, acedia was dropped from the list of mortal sins. Some of its symptoms were absorbed into the illness melancholia, a forerunner to our own states of depression and anxiety (see: MELANCHOLY). The rest became the moral vice sloth. Though people still spoke of feeling acedia, it came to mean something more like inertia - an equivalent, perhaps, to that listless feeling which descends on a rainy Sunday morning (see: APATHY).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;In "Leisure: The Basis of Culture" acedia is introduced as follows (p27):&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;What did the old code of conduct mean by idleness, by &lt;em&gt;acedia&lt;/em&gt;?&lt;/p&gt;
+&lt;p&gt;To begin with, it meant something other than we usually mean when we speak of the "root of all evils."&lt;/p&gt;
+&lt;p&gt;Idleness, for the older code of behavior, meant especially this: that the human being had given up on the very responsibility that comes with his dignity: that he does not want to be what God wants him to be, and that means that he does not want to be what he really, and in the ultimate sense, &lt;em&gt;is&lt;/em&gt;. &lt;em&gt;Acedia&lt;/em&gt; is the "despair of weakness," of which Kierkegaard said that it consists in someone "despairingly" not wanting "to be oneself". The metaphysical-theological concept of idleness means, then, that man finally does not agree with his own existence; that behind all his energetic activitity, he is not at one with himself; that, as the Middle Ages expressed it, sadness has seized him in the face of the divine Goodness that lives within him - and this sadness is that "sadness of the world" spoken of in the bible.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;In Voices: The Educational Formation of Conscience, Thomas Green has a slightly different take (p. 40):&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;[When one behaves correctly but does not care to be correct] the internal speech of the self would be: "It doesn't really matter, but this is the way they like it. I know what they want, so I'll go along with this senseless charade even though nothing vital is at stake." Such a posture of detachment is the perspective of the uninvolved, the apathetic. It is the condition of anomie.&lt;/p&gt;
+&lt;p&gt;The key to this interior speech is found in that indefinite, obscure, omnipresent, and distant 'they'. How remote, ho w disguised, 'they' always are! How senseless; yet, at the same time, how pervassive are the norms of everyday life when viewed simply as the edicts that 'they' deliver, and how thoroughly, under like circumstances, do those edicts lack even the most minute measure of moral authority! This condition, as nearly as I can describe it, is closely related to a kindred state that the medievals describe as &lt;em&gt;acedia&lt;/em&gt;. i.e., a kind of spiritual torpor or sickness that nowadays is often expressed as &lt;em&gt;ennui&lt;/em&gt; or boredom. The ancient idea extended, however, to something more fundamental even than mere boredom. It included the notion of a certain rebelllion, a conditon of being asleep to life, a resolute rejection of any possible contentment with being what one is, namely, a human being and thus essentially a creature.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;Both Green and Pieper seem to be framing acedia as a form of disconnection from sources of meaning. For Pieper this source of meaning is spiritual, for Green it is full participation as a member in a normative community.&lt;/p&gt;
+
+
+&lt;p&gt;It's interesting that the hermitage site suggests working with your hands as an antidote to acedia.
+I'm put in mind of Matthew Crawford's &lt;a href="https://amzn.to/3bzPSqt"&gt;Shop Class as Soulcraft&lt;/a&gt; where he argues that professions that are very hands on are in fact much more nourishing sources of meaning than office work (I do not especially recommend this book, although there are things I like about it).&lt;/p&gt;
+
+
+&lt;p&gt;I'm also put in mind of James C. Scott's &lt;a href="https://amzn.to/2X0qAN3"&gt;Two Cheers For Anarchism&lt;/a&gt;, where he argues that we should think about work not solely in terms of its productivity, but in terms of its effect on workers:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;What if we were to ask a different question of institutions and activities than the narrow neoclassical question of how efficient they are in terms of costs (e.g. resources, labor, capital) per unit of a given, specified product? What if we were to ask what kind of people a given activity or institution fostered&amp;gt; Any activity we can imagine, any institution, no matters what its manifest purpose, is also, willy-nilly, transforming people:&lt;/p&gt;
+&lt;p&gt;[...]&lt;/p&gt;
+&lt;p&gt;[the assembly line] was deliberately designed to eliminate the artisanal-craft knowledge, and the power this knowledge conferred on workers, that characterized the carriage-making era.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;In &lt;a href="https://amzn.to/2Lx4yMm"&gt;Talking About Machines&lt;/a&gt; Julian Orr describes such a community of artisanal-craft knowledge, in the form of photocopier technicians at Xerox PARC. These technicians clearly have both Scott's artisanal-craft knowledge and Green's normation to a community of practice. Reading Orr's descriptions of it, the technicians certainly &lt;em&gt;sound&lt;/em&gt; satisfied with their jobs, but it's also very clear that management would really rather not have to deal with the complex messy realities of depending on an actual community of experts.&lt;/p&gt;
+
+
+&lt;p&gt;I'm additionally put in mind of Rebecca Solnit's &lt;a href="https://amzn.to/2Ar3MOL"&gt;A Paradise Built in Hell&lt;/a&gt; where she talks about the communities that arise in disasters, where she shows how people band together towards a common cause, and find it a powerful source of meaning - in many ways the aftermath of a disaster is a positive experience for people in these communities.&lt;/p&gt;
+
+
+&lt;p&gt;Pieper argues that Total Work is the source of this acedia, or perhaps that acedia is the source of total work, but it seems to me that communities of people working together towards a common cause, in ways that allow each of us to grow as a person, are in fact the &lt;em&gt;cure&lt;/em&gt; for acedia, and the problem is perhaps not work per se but the way that power has reshaped work into something that treats workers as a resource to extract value from instead of people to develop alongside.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-05-16-12:06.html" rel="alternate"/>
   </entry>
 </feed>
