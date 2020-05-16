@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-05-15T10:49:03+01:00</updated>
+  <updated>2020-05-16T07:43:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,93 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-05-06-09:51.html</id>
-    <title>Cleaning up the fnords in your environment</title>
-    <updated>2020-05-06T11:30:15+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Cleaning up the fnords in your environment&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-05-06&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;A "Fnord" is a concept from the rather strange "&lt;a href="https://amzn.to/2SG4PRi"&gt;Illuminatus! trilogy&lt;/a&gt;". They are explained thus:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;That calmed me a little, so I set out the toast and coffee and fetched in the New York Times from the hallway. I turned the radio to WBAI and caught some good Vivaldi, sat down, grabbed a piece of toast and started skimming the first page.&lt;/p&gt;
-&lt;p&gt;Then I saw the fnords.&lt;/p&gt;
-&lt;p&gt;The feature story involved another of the endless squabbles between Russia and the U.S. in the UN General Assembly, and after each direct quote from the Russian delegate I read a quite distinct “Fnord!” The second lead was about a debate in Congress on getting the troops out of Costa Rica; every argument presented by Senator Bacon was followed by another “Fnord!” At the bottom of the page was a Times depth-type study of the growing pollution problem and the increasing use of gas masks among New Yorkers; the most distressing chemical facts were interpolated with more “Fnords.”&lt;/p&gt;
-&lt;p&gt;Suddenly I saw Hagbard’s eyes burning into me and heard his voice: “Your heart will remain calm. Your adrenalin gland will remain calm. Calm, all-over calm. You will not panic. You will look at the fnord and see it. You will not evade it or black it out. You will stay calm and face it.” And further back, way back: my first-grade teacher writing FNORD on the blackboard, while a wheel with a spiral design turned and turned on his desk, turned and turned, and his voice droned on,&lt;/p&gt;
-&lt;p&gt;IF YOU DON’T SEE THE FNORD IT CAN’T EAT YOU, DON’T SEE THE FNORD, DON’T SEE THE FNORD …&lt;/p&gt;
-&lt;p&gt;I looked back at the paper and still saw the fnords.&lt;/p&gt;
-&lt;p&gt;This was one step beyond Pavlov, I realized. The first conditioned reflex was to experience the panic reaction (the activation syndrome, it’s technically called) whenever encountering the word “fnord.” The second conditioned reflex was to black out what happened, including the word itself, and just to feel a general low-grade emergency without knowing why. And the third step, of course, was to attribute this anxiety to the news stories, which were bad enough in themselves anyway.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;A fnord is a thing that you have learned not to see, but that still triggers anxiety. It is not actually harmful in and of itself, except through the power of the emotional associations you have developed with it. The fnord can't actually eat you, but you are sufficiently terrified of it that you have learned to completely ignore its presence.&lt;/p&gt;
-
-
-&lt;p&gt;This is, of course, not how operant conditioning works in reality.&lt;/p&gt;
-
-
-&lt;p&gt;Suppose you have learned not to see the fnords. What would happen if I put my finger on the page where the fnord is and told you there was a fnord there?&lt;/p&gt;
-
-
-&lt;p&gt;Well, you'd get annoyed at me. "Of &lt;em&gt;course&lt;/em&gt; there's a fnord there." you'd say "Everyone knows there's a fnord there. Why are you drawing my attention to it?" and then you'd get annoyed with me for having the bad taste to talk about fnords.&lt;/p&gt;
-
-
-&lt;p&gt;I'm a big fan of John Regehr's &lt;a href="https://blog.regehr.org/archives/861"&gt;Operant Conditioning by Software Bugs&lt;/a&gt;:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Have you ever used a new program or system and found it to be obnoxiously buggy, but then after a while you didn’t notice the bugs anymore? If so, then congratulations: you have been trained by the computer to avoid some of its problems. For example, I used to have a laptop that would lock up to the point where the battery needed to be removed when I scrolled down a web page for too long (I’m guessing the video driver’s logic for handling a full command queue was defective). Messing with the driver version did not solve the problem and I soon learned to take little breaks when scrolling down a long web page. To this day I occasionally feel a twinge of guilt or fear when rapidly scrolling a web page.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;Negative responses from our environment &lt;a href="https://notebook.drmaciver.com/posts/2020-02-20-09:31.html"&gt;install learned beheaviours&lt;/a&gt; which cause us to avoid them. It's not that we &lt;em&gt;can't see&lt;/em&gt; the fnords, it's that we &lt;em&gt;don't look at them&lt;/em&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;The term "&lt;a href="https://www.lesswrong.com/posts/EFQ3F6kmt4WHXRqik/ugh-fields"&gt;ugh field&lt;/a&gt;" apparently comes from Less Wrong (the friend I got it from is not a LW person but maybe she got it from someone who was):&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;A problem with the human mind — your human mind — is that it's a horrific kludge that will fail when you most need it not to. The Ugh Field failure mode is one of those really annoying failures. The idea is simple: if a person receives constant negative conditioning via unhappy thoughts whenever their mind goes into a certain zone of thought, they will begin to develop a psychological flinch mechanism around the thought. The "Unhappy Thing" — the source of negative thoughts — is typically some part of your model of the world that relates to bad things being likely to happen to you.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;I've always had an ugh field around cleaning, and around &lt;a href="https://notebook.drmaciver.com/posts/2020-04-30-15:20.html"&gt;care work&lt;/a&gt; more generally. Reading "&lt;a href="https://amzn.to/2A4sFjg"&gt;Unfuck Your Habitat&lt;/a&gt;" recently has been quite helpful with coping with that, and I've added a daily 10 minute tidy of my room to &lt;a href="https://howtosurvivementalillness.tumblr.com/post/162396810334/how-to-make-and-use-a-coping-board"&gt;my coping board&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;My &lt;a href="https://notebook.drmaciver.com/posts/2020-05-05-08:59.html"&gt;prediction yesterday&lt;/a&gt; was that I would stick to that ten minutes to the letter. I was pleasantly surprised that this was not the case. I completed a full &lt;a href="https://www.unfuckyourhabitat.com/whats-a-2010/"&gt;20/10&lt;/a&gt; of cleaning and then did another 10 minutes to finish it off and restore some order.&lt;/p&gt;
-
-
-&lt;p&gt;Specifically what I did was go through a giant miscellaneous pile of papers and mail, take everything out of its envelopes, and shred or otherwise recycle all of the bits that didn't need to be kept. I then return the pile to where it was in a slightly tidier and smaller form.&lt;/p&gt;
-
-
-&lt;p&gt;A friend asked whether being in a slightly tidier space felt different. My initial answer was that I hadn't really done enough to achieve that - the space looked pretty much as it was before, just with one corner of it slightly tidier.&lt;/p&gt;
-
-
-&lt;p&gt;I later realised this wasn't true, there was one signficant difference: The pile of papers was no longer vaguely scary, because I knew what was in it and that it was all stuff that I either didn't need to deal with or was entirely able to deal with.
-It wasn't &lt;em&gt;tidy&lt;/em&gt; yet, and so visually speaking the room looked much the same, but the &lt;a href="https://focusing.org/sixsteps"&gt;felt sense&lt;/a&gt; of the room had changed.&lt;/p&gt;
-
-
-&lt;p&gt;The pile of papers was no longer a fnord.&lt;/p&gt;
-
-
-&lt;p&gt;I don't think this is all that's going on with me and cleaning, but I think it's a large part of it. A failure to care for the environment allows the fnords to breed, and once the environment is full of fnords, caring for it requires dealing with them, so the very idea of care acquires an ugh field.&lt;/p&gt;
-
-
-&lt;p&gt;&lt;a href="https://amzn.to/2L1VcrS"&gt;Marie Kondo&lt;/a&gt;'s recommendation of learning to tell if an item sparks joy &lt;em&gt;is&lt;/em&gt; genuinely an important skill for cleaning, but if you're not going to buy in to the full blown minimalism cult, maybe an equally important emotional skill is learning to see the fnords.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-05-06-09:51.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-07-07:57.html</id>
     <title>Easy changes and Uncomfortable Reflections</title>
@@ -957,5 +870,80 @@ Interpretation is a key part of our threat assessment and merely &lt;a href="htt
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-05-15-09:54.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-05-16-07:43.html</id>
+    <title>Truth and the Ghost Library</title>
+    <updated>2020-05-16T07:43:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Truth and the Ghost Library&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-05-16&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Ritual and its Consequences, p. 162:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;[Fundamentalism] equates truth, which is nonindividual and supraindividual, with its interpretation, which is invariably personal and conditional.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;I think this claim is interesting and mostly true, but also mostly false. That might be because of my interpretation of it, which is invariably personal and conditional.&lt;/p&gt;
+
+
+&lt;p&gt;I'm reading James C. Scott's "Domination and the Arts of Resistance" at the moment.&lt;/p&gt;
+
+
+&lt;p&gt;The book, as with most of Scott's work, looks at an aspect of how people behave in response to power imbalances.
+In societies when one group dominates another, such as caste societies, or historical slavery in North America,
+the way those groups talk among themselves is very different from the way they talk in public.&lt;/p&gt;
+
+
+&lt;p&gt;This leads to the idea of &lt;em&gt;hidden transcripts&lt;/em&gt;.
+The idea is that there is a public transcript, which is the record (usually implicit) of what goes on in public,
+and the hidden transcripts, which record how the groups talk among themselves.
+Both the oppressed and the oppressor have hidden transcripts that are very different from the public transcript,
+which can be thought of an elaborate ritual to maintain order, in which the oppressors perform strength and the oppressed perform deference.&lt;/p&gt;
+
+
+&lt;p&gt;Hidden transcripts are a key part of the &lt;a href="https://notebook.drmaciver.com/posts/2020-02-16-14:22.html"&gt;ghost knowledge&lt;/a&gt; that pervades society - knowledge that is built and widely shared inside a community of discourse, but is never written down and is not widely known outside of that community. Unlike much ghost knowledge, which is merely &lt;em&gt;not&lt;/em&gt; shared, the hidden transcripts are actively kept from those outside of the community as a protective measure.&lt;/p&gt;
+
+
+&lt;p&gt;You can think of knowledge about the world as being a kind of infinite ghost library, with different groups occupying (with varying degrees of jealousy) their territories within the library.&lt;/p&gt;
+
+
+&lt;p&gt;This is a key part my objection to the quoted passage I opened with: Interpretation is not just personal, it's very much driven by what you know, and who you talk to. People interpret in groups, and those interpretations become hidden transcripts within the ghost library.&lt;/p&gt;
+
+
+&lt;p&gt;Scott is careful to point out that these hidden transcripts &lt;em&gt;also&lt;/em&gt; don't necessarily represent any sort of "true selves" of the oppressed, but are instead another social order, which may have its own barriers to authenticity, but I do think though that there is a gradient where the more hidden a transcript it is, the more sincere it is:&lt;/p&gt;
+
+
+&lt;p&gt;Scott, on page 26, lists the following under "Hypothetical Discursive Sites, Arranged by Audience, under Slavery":&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Harsh master/overseer&lt;/li&gt;
+&lt;li&gt;Indulgent master or overseer&lt;/li&gt;
+&lt;li&gt;Whites having no direct authority&lt;/li&gt;
+&lt;li&gt;Slaves and free blacks&lt;/li&gt;
+&lt;li&gt;Slaves of same master&lt;/li&gt;
+&lt;li&gt;Closest slave friends&lt;/li&gt;
+&lt;li&gt;Immediate family&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;With the first three being part of the public transcripts, the last three being part of the hidden ones, and the 4th straddling the two. In the public transcripts you are very much participating in the ritual order of society, but in the private ones you can break character into sincerity and talk about what's &lt;em&gt;actually&lt;/em&gt; going on.&lt;/p&gt;
+
+
+&lt;p&gt;From this point of view, fundamentalist social orders can be thought of as access control in the ghost library: The idea that this secret body of knowledge is in some sense &lt;em&gt;immoral&lt;/em&gt;, and that that which cannot be discussed in public should not be discussed at all.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-05-16-07:43.html" rel="alternate"/>
   </entry>
 </feed>
