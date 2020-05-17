@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-05-16T14:45:31+01:00</updated>
+  <updated>2020-05-17T11:45:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,83 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-05-08-10:06.html</id>
-    <title>Separating Impulse from Action</title>
-    <updated>2020-05-08T13:04:37+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Separating Impulse from Action&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-05-08&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Here's a trick I figured out yesterday. It solves quite a specific problem that I have, but you might have similar problems, and even if not I think it demonstrates some useful general principles that could be applied in other circumstances.&lt;/p&gt;
-
-
-&lt;p&gt;The problem is this: I buy too many books.&lt;/p&gt;
-
-
-&lt;p&gt;It's not a &lt;em&gt;disaster&lt;/em&gt; because I also read a lot of books, but I buy books at a higher rate than I read them, and I often buy books that I later decide that actually I'm not realistically going to read.&lt;/p&gt;
-
-
-&lt;p&gt;The problem is basically that when I encounter an interesting book whose ideas I would like inside my brain, I often impulsively buy it.&lt;/p&gt;
-
-
-&lt;p&gt;Some of this is a problem of impulse control, for sure, and I could definitely fix it by being better at impulse control, but currently I'm trying to be &lt;em&gt;less&lt;/em&gt; good at impulse control, so that seems counterproductive.&lt;/p&gt;
-
-
-&lt;p&gt;An additional complication is that the correct amount of books for me to be buying is not zero. I &lt;em&gt;could&lt;/em&gt; just blanket ban myself from buying books. I would experience it as unpleasant, but it's manageable, but that would not result in my buying the right number of books.
-I &lt;em&gt;do&lt;/em&gt; read a lot of books (typically between one and three a week, not counting fiction which are a separate category because I read them as ebooks), and I like having new books around, and I can definitely afford to spend a certain amount of money on books.&lt;/p&gt;
-
-
-&lt;p&gt;The additional complicating factor is that my bookshelves serve as a kind of... thoughts I want to have later? They're a TODO list for reading, and my experience is that I will lose track of digital TODO lists for reading - they will get too large, and I will forget about them and leave them to rot (I am even worse at digital &lt;a href="https://notebook.drmaciver.com/posts/2020-04-30-15:20.html"&gt;care work&lt;/a&gt; than physical).&lt;/p&gt;
-
-
-&lt;p&gt;So, I:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Have a constant impulse to buy books, and suppressing it will be unpleasant.&lt;/li&gt;
-&lt;li&gt;Do actually want to buy a non-zero amount of books.&lt;/li&gt;
-&lt;li&gt;Need a way to keep track of the books I may want to buy later.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;Anyway, there's an easy solution, and it's &lt;a href="https://notebook.drmaciver.com/posts/2020-05-07-07:57.html"&gt;kinda stupid&lt;/a&gt; that it's taken me this long to realise it.&lt;/p&gt;
-
-
-&lt;p&gt;The solution that satisfies all of these is to have:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;a default Amazon list of books I wanted to buy.&lt;/li&gt;
-&lt;li&gt;a scheduled task every Sunday to buy a book.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;Now when I want to impulse buy a book I instead just click the add to list button instead of the buy now button. Then, every Sunday, I go through the list and decide which of these books is the one I want to buy the most right now. In the course of doing so, I remove any books from the list that I'm definitely sure I won't want to buy later.&lt;/p&gt;
-
-
-&lt;p&gt;This solution is actually very good, because it:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;puts the rate at which I buy things under my conscious control independently of the impulse to buy things (a thing I learned the value of from years with &lt;a href="http://beeminder.com/"&gt;Beeminder&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;gives a direct and (almost) equally satisfying replacement for the impulse activity by pressing a different and equally accessible button.&lt;/li&gt;
-&lt;li&gt;fights the digital rot that lists normally have for me by coupling it to a regularly scheduled activity that I &lt;em&gt;want&lt;/em&gt; to do because I get rewarded with a book.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;In addition I think it will significantly increase the quality of the books I do buy, because each book I buy will be a measured choice between alternatives where invest some effort in ensuring that my book this week will be a good one. I don't intend to &lt;a href="https://notebook.drmaciver.com/posts/2020-02-25-10:39.html"&gt;avoid all error&lt;/a&gt; and I of course &lt;a href="https://notebook.drmaciver.com/posts/2020-04-17-10:16.html"&gt;can't ensure I always pick the &lt;em&gt;best&lt;/em&gt; one&lt;/a&gt;, but I'm pretty sure that investing about twenty minutes of thought into the question will result in me improving on impulse decisions.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-05-08-10:06.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-09-11:26.html</id>
     <title>Initial Notes Towards a Manifesto</title>
@@ -890,7 +813,7 @@ which can be thought of an elaborate ritual to maintain order, in which the oppr
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-16-12:06.html</id>
     <title>Notes on Acedia</title>
-    <updated>2020-05-16T14:45:31+01:00</updated>
+    <updated>2020-05-16T14:50:07+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Notes on Acedia&lt;/p&gt;
@@ -994,5 +917,76 @@ I'm put in mind of Matthew Crawford's &lt;a href="https://amzn.to/3bzPSqt"&gt;Sh
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-05-16-12:06.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-05-17-11:45.html</id>
+    <title>Requiem for a pair of trousers</title>
+    <updated>2020-05-17T11:45:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Requiem for a pair of trousers&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-05-17&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Based on random prompting this morning think today's post is supposed to be about using stories to communicate philosophical ideas, but I don't wanna, so instead I'm going to tell you a story to communicate philosophical ideas.&lt;/p&gt;
+
+
+&lt;p&gt;I've spent about the last 45 minutes sitting out in the sun destroying a pair of trousers.&lt;/p&gt;
+
+
+&lt;p&gt;This isn't a euphemism, or a side effect, or anything else. I was literally sitting there in my garden taking a seam ripper to a pair of trousers, taking it apart for spare material.&lt;/p&gt;
+
+
+&lt;p&gt;The trousers were dying - there was a hole in the crotch, and the surrounding material was thin enough that if I'd patched it it'd probably have just ripped again. I didn't have any material to make a patch, and also the trousers weren't very good (and were a little tight) in the first place so I probably wouldn't have worn them even once patched. I have vague intentions of using some of the material to make home made face masks, but I'm not sure how suitable it will actually be for that, and most of it won't be used that way.&lt;/p&gt;
+
+
+&lt;p&gt;I didn't get very far. So far I've removed the back pockets and the zip and some of the other parts have been partially separated.&lt;/p&gt;
+
+
+&lt;p&gt;There is no sense in which this is a reasonable use of my time. I'm not especially good at sewing, or in this case unsewing. I could buy a cloth facemask for not that much money. If you look at the day rate I could charge a software company for my consulting services I could probably have bought two new pairs of trousers for the price.&lt;/p&gt;
+
+
+&lt;p&gt;These trousers came from somewhere. There's no spontaneous generation of trousers - someone sewed these together somewhere. Probably, I must admit, in a sweatshop. They're from Gap, who I doubt have the most ethical of production practices (there's a high cost in human suffering for the prevalence of cheap clothing. I'd be lying if I said I was very good at taking that into account in my purchasing habits).&lt;/p&gt;
+
+
+&lt;p&gt;I've probably already spent more disassembling these trousers than that unknown factory worker spent assembling them.&lt;/p&gt;
+
+
+&lt;p&gt;It may interest you to know that I'm alternating writing this post with continuing my trouser disassembly project. I just removed a belt loop.&lt;/p&gt;
+
+
+&lt;p&gt;It probably doesn't interest you to know this. That's OK. There is probably no sense in which reading this post is a reasonable use of your time either.&lt;/p&gt;
+
+
+&lt;p&gt;I said there was no sense in which disassembling these trousers was a reasonable use of my time, but actually that's not true. There are two important senses:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;I wanted to do it.&lt;/li&gt;
+&lt;li&gt;I feel better for having done so.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;I wrote yesterday about &lt;a href="https://notebook.drmaciver.com/posts/2020-05-16-12:06.html"&gt;acedia&lt;/a&gt;, the sense of being disconnected from sources of meaning, and how working with your hands is one possible antidote to that. I'm not going to claim trouser disassembly is the great cure for modern ills, but there's definitely something nice about sitting in the garden with your hands occupied, thinking as you work on semi autopilot.&lt;/p&gt;
+
+
+&lt;p&gt;I didn't know how to use a seam ripper before this. I was vaguely aware seam rippers were a thing, but I had to look them up in order to figure out that I already owned one in my sewing kit. So one nice side effect of this is that I now know how to use a seam ripper.&lt;/p&gt;
+
+
+&lt;p&gt;I was going to say that this was completely useless knowledge, but then I realised that actually I could use the seam ripper to remove the label from the inside T-shirt I was wearing, which has a really weirdly annoyingly large label.&lt;/p&gt;
+
+
+&lt;p&gt;Unfortunately, I forgot that the seams on labels are usually structural - they're not added on top of the seam they're attached to, but are sewn directly into it, so now I have a hole in my T-shirt that I need to sew up.&lt;/p&gt;
+
+
+&lt;p&gt;This is probably a metaphor for something, but I don't know what.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-05-17-11:45.html" rel="alternate"/>
   </entry>
 </feed>
