@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-05-17T13:48:43+01:00</updated>
+  <updated>2020-05-18T09:41:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,94 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-05-09-11:26.html</id>
-    <title>Initial Notes Towards a Manifesto</title>
-    <updated>2020-05-09T13:57:51+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Initial Notes Towards a Manifesto&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-05-09&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Mechanical Monk &lt;a href="https://twitter.com/i/status/1258738843630678016"&gt;invited his mutuals to write a manifesto&lt;/a&gt;. This is my response to that, though given that this is a notebook it's a more modest attempt to gesture in the direction of what a manifesto would look like when I'm a bit more ready for it.&lt;/p&gt;
-
-
-&lt;p&gt;So what do I want? How do I want to change the world?&lt;/p&gt;
-
-
-&lt;p&gt;Well I'd like to be able to claim some high minded ideal like universal love and cosmic oneness but that's not what I'm about. What I'm about is this: Dear humanity, we are &lt;em&gt;fucking this up&lt;/em&gt;, and it's annoying me and I'm embarrassed to be a part of it. I really shouldn't be the one to have to tell people how to sort their shit out because I'm terrible at this but apparently nobody else is going to do it right, so &lt;em&gt;fine&lt;/em&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;What do I mean by this?&lt;/p&gt;
-
-
-&lt;p&gt;I mean that we are universally lacking in the basic systems, skills, and ethics, of being functioning, healthy, happy, human beings, and we need to fix that, and instead we are making it worse. We do not have a society that supports the development of those, and in many ways &lt;a href="https://notebook.drmaciver.com/posts/2020-02-29-10:30.html"&gt;we actively punish their acquisition&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;An incomplete list of things we are bad at include thinking, feeling, moving, communicating, decision making, organisation, and helping each other out more broadly. Some of us are good enough at some of these things, but essentially nobody is at what I would like to consider the bare minimum standard for all of them (I sure as hell am not!).&lt;/p&gt;
-
-
-&lt;p&gt;Currently I think we have roughly the following models for acquiring these skills:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Dumb luck and/or privilege in having the right role models (unreliable).&lt;/li&gt;
-&lt;li&gt;School (monstrously bad at this, not really designed to do it)&lt;/li&gt;
-&lt;li&gt;Therapy and coaching (limited scope, expensive)&lt;/li&gt;
-&lt;li&gt;Weird borderline cults (tend to overfocus on an aspect of the problem and convince you it solves everything. Also, are cults)&lt;/li&gt;
-&lt;li&gt;Self-help books (similar problems to cults, also mostly very bad)&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;All of these are grossly inadequate to the task.&lt;/p&gt;
-
-
-&lt;p&gt;So I'm trying to push back on it. I cannot, at present, fix society and reshape it into a more pleasing image (though if you &lt;em&gt;want&lt;/em&gt; me to do that and can hand me the keys I uh have one or two ideas), but I &lt;em&gt;can&lt;/em&gt; provide people with tools that may help them under the current circumstances.&lt;/p&gt;
-
-
-&lt;p&gt;I'm acquiring the parts of these skills that I can figure out for myself, or with help, and I'm trying to be a model of how I think this should work. I'm helping other people around me take steps towards the same same, by writing about it, and by building relationships that support each other's growth.&lt;/p&gt;
-
-
-&lt;p&gt;And this &lt;em&gt;isn't going to work&lt;/em&gt;. You cannot rely on me to teach you all the skills you need for several reasons:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;The notebook is pretty good, and I hope to do better writing about this in future, but the really high value work is in personal relationships, and there's only one of me.&lt;/li&gt;
-&lt;li&gt;My work is intrinsically built around my particular strengths and weaknesses - I'm a weird, queer, hyperverbal, nerd and so the problems I'm solving and the tools I'm using are designed with that in mind.&lt;/li&gt;
-&lt;li&gt;I am, as alluded to, &lt;em&gt;not very good at this&lt;/em&gt;, and I'm going to miss things, get things wrong, or communicate them in unhelpful ways, and we need many different voices doing the same sorts of things if we are to have any chance of &lt;a href="https://notebook.drmaciver.com/posts/2020-04-28-06:45.html"&gt;climbing out of the crab bucket&lt;/a&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;(2) doesn't mean that you can't benefit from my writing if you're not like me, but it does mean that my tools are built in a very particular way for a very particular set of problems. They might or might not work for you (possibly with modification), but even if they work for you they might not solve all your problems because they're designed to solve &lt;em&gt;my&lt;/em&gt; problems (and, to a lesser extent, the problems of people I know well enough to help). You need to build your own tools too! And then, once you have, I want you to share them with other people.&lt;/p&gt;
-
-
-&lt;p&gt;And I want you to share them with other people while &lt;em&gt;understanding that their tools might not work for others&lt;/em&gt;.
-When I wrote &lt;a href="https://notebook.drmaciver.com/posts/2020-05-08-10:06.html"&gt;yesterday's post&lt;/a&gt; I very clearly spelled out why this was a good solution for me, and that these might not be the same for you. All tools will be like this, but right now people tend to get very evangelical about how their tool is the one size fits all to all problems, and this is extremely wrong, both factually and morally.&lt;/p&gt;
-
-
-&lt;p&gt;I'm losing steam on writing more of this right now, so I'm going to just end with a list of things I want people to do:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Cut people some slack. &lt;a href="https://notebook.drmaciver.com/posts/2020-04-06-15:20.html"&gt;Create&lt;/a&gt; &lt;a href="https://notebook.drmaciver.com/posts/2020-03-18-11:24.html"&gt;safety&lt;/a&gt; for those around you. Sign non-aggression pacts in the goddamn &lt;a href="https://notebook.drmaciver.com/posts/2019-06-04-09:58.html"&gt;legibility war&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Treat the problems in your life as interesting and worth solving.&lt;/li&gt;
-&lt;li&gt;Join and learn from &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-07:38.html"&gt;nerd&lt;/a&gt; communities who can help you solve them.&lt;/li&gt;
-&lt;li&gt;Build &lt;a href="https://notebook.drmaciver.com/posts/2020-04-26-07:28.html"&gt;growth relationships&lt;/a&gt;, where everyone involved helps everyone else be better versions of themselves. I'm particularly a fan of &lt;a href="https://notebook.drmaciver.com/posts/2020-03-25-16:02.html"&gt;the support group model&lt;/a&gt;, but this is one of those tools that might not work for everyone.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.drmaciver.com/2018/10/how-to-explain-anything-to-anyone/"&gt;Explain&lt;/a&gt; these things to others. Obviously I'm a fan of the notebook blog format, but again that might not be what works for you.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;I understand that what I am asking of you is difficult, and I understand that for some of you it may not yet be possible, but I'm trying my best to make it possible, and easy, for as many people as I can, and I hope that some of you will do the same.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-05-09-11:26.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-10-08:54.html</id>
     <title>How to be a better person</title>
@@ -921,7 +833,7 @@ I'm put in mind of Matthew Crawford's &lt;a href="https://amzn.to/3bzPSqt"&gt;Sh
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-17-11:45.html</id>
     <title>Requiem for a pair of trousers</title>
-    <updated>2020-05-17T13:48:43+01:00</updated>
+    <updated>2020-05-17T14:14:26+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Requiem for a pair of trousers&lt;/p&gt;
@@ -991,5 +903,78 @@ I'm put in mind of Matthew Crawford's &lt;a href="https://amzn.to/3bzPSqt"&gt;Sh
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-05-17-11:45.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-05-18-09:41.html</id>
+    <title>Bug Fixes and Performance Improvements</title>
+    <updated>2020-05-18T09:41:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Bug Fixes and Performance Improvements&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-05-18&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Today we release Version 37.0 of the DRMacIver software system. We've been working on it for a whole year, and are pretty excited to share the results with you.&lt;/p&gt;
+
+
+&lt;p&gt;In reality we of course practice continuous deployment and so have been rolling out releases through the entirety of the last year, and all of our changes are breaking changes so there's no hint of semantic versioning in our release process, but nevertheless bumping the major version number is a good chance to talk about some of the exciting new developments over the last year.&lt;/p&gt;
+
+
+&lt;p&gt;The major improvements we've seen since the Version 36.0 release are:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;We've refactored an awful lot of &lt;a href="https://notebook.drmaciver.com/posts/2020-02-20-09:31.html"&gt;legacy code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Significantly improved write performance&lt;/li&gt;
+&lt;li&gt;Modest improvements to read performance&lt;/li&gt;
+&lt;li&gt;We've fixed the bug where the brain randomly crashed in social situations&lt;/li&gt;
+&lt;li&gt;The system has finally &lt;a href="https://drmaciver.substack.com/"&gt;evolved to the point where it can send email&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;In case you don't get the joke (you probably get the joke) it's my 37th birthday today. Today is, legally speaking, the year where I have to start saying I'm in my mid to late 30s rather than in my mid 30s.&lt;/p&gt;
+
+
+&lt;p&gt;Back in ancient times, when I were a wee lad in my late 20s, I used to say that I didn't really mind the idea of hitting 30 (back then 30 seemed very old) because the people I knew in their 30s were mostly like the people I knew in their 20s only they had their shit a bit more together.&lt;/p&gt;
+
+
+&lt;p&gt;I then spent the first half of my thirties with my shit &lt;em&gt;very&lt;/em&gt; not together - life went a bit sideways in the dying months of 29 and it took me about five years before I hit rock bottom enough to start doing something about it.
+The result was me rather disconnecting from people emotionally, and it didn't have a great impact on my career either.&lt;/p&gt;
+
+
+&lt;p&gt;People don't really notice that I'm not a software developer any more, partly because I only became famous as a software developer after I stopped being one. Officially &lt;a href="https://www.jetbrains.com/lp/python-developers-survey-2019/"&gt;4% of Python developers are running my code&lt;/a&gt;. I wrote that code &lt;a href="https://twitter.com/i/status/1194550244496814081"&gt;entirely after burning out&lt;/a&gt;. I haven't actually been employed as a software developer since early 2015, outside of the occasional short term contract for Hypothesis work.&lt;/p&gt;
+
+
+&lt;p&gt;There's something about the software development industry that burns people out. I don't know what it is, but it does it to most people. Maybe every industry is like this and I just mostly see it in the one I know? Maybe it's just &lt;a href="https://notebook.drmaciver.com/posts/2020-05-16-12:06.html"&gt;acedia&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;I started to pull myself out of the hole around 2017 I guess - I moved back to London, started a PhD, kinda started seeing people. In late 2018 I started a new relationship, which has been going very well.
+It prompted some reflection, and I've spent a lot of the intervening period attempting to sort my shit out in the way that a decade ago I, apparently, naively assumed would come with age.&lt;/p&gt;
+
+
+&lt;p&gt;Is it working? I guess.&lt;/p&gt;
+
+
+&lt;p&gt;Part of why I wrote &lt;a href="https://notebook.drmaciver.com/posts/2020-05-07-07:57.html"&gt;Easy Changes and Uncomfortable Reflections&lt;/a&gt; was that it was what I needed to hear (that's why I write a lot of these posts). It's quite hard to escape the feeling that I could have done all this work seven years ago, or seventeen years ago, or even twenty seven years ago, and life would have gone a lot better for it. I think this is partly true, but mostly false, but it still feels like a wasted opportunity.&lt;/p&gt;
+
+
+&lt;p&gt;Today's Tarot draw (I've been doing daily draws even when they've not made it into the notebook) is the &lt;a href="http://www.learntarot.com/ca.htm"&gt;Ace of Cups&lt;/a&gt;, which signifies among other things getting in touch with your feelings. Well I've done that. It's got its good points, and there's yet more to do on that front, but also it kinda sucks in that one of the major downsides of becoming more in touch with your own feelings is that you're more aware of your feelings, and sometimes those feelings are bad. I think I've in many ways been less depressed over the last year than I've been... ever, possibly, but it doesn't necessarily &lt;em&gt;feel&lt;/em&gt; like that because I'm more aware of it.&lt;/p&gt;
+
+
+&lt;p&gt;Especially given, as you might have noticed, there's a global pandemic on at the moment.&lt;/p&gt;
+
+
+&lt;p&gt;This post was meant to be reasonably optimistic - I do think that the next few years will be quite good for me - but entering my late thirties in the middle of a global pandemic feels weird. I can barely predict what next week is going to look like, let alone the next three years.&lt;/p&gt;
+
+
+&lt;p&gt;All told, I'm doing what I can to lay a solid foundation for whatever comes next. It might even work.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-05-18-09:41.html" rel="alternate"/>
   </entry>
 </feed>
