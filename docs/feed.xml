@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-05-18T09:41:00+01:00</updated>
+  <updated>2020-05-19T09:35:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,98 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-05-10-08:54.html</id>
-    <title>How to be a better person</title>
-    <updated>2020-05-10T12:24:24+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;How to be a better person&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-05-10&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;In response to my &lt;a href="https://notebook.drmaciver.com/posts/2020-05-09-11:26.html"&gt;Initial notes towards a manifesto&lt;/a&gt;, &lt;a href="https://twitter.com/joxn"&gt;@joXn&lt;/a&gt; quite reasonably asked how I would avoid falling afoul of the problem that, contra The Good Place, learning ethics doesn't actually make one more ethical. Eric Schwitzgebel has a lot of great research on this (see &lt;a href="https://faculty.ucr.edu/~eschwitz/"&gt;his publications&lt;/a&gt; and in particular the section "The Relationship Between Moral Reflection and Moral Behavior").&lt;/p&gt;
-
-
-&lt;p&gt;Of these, I think &lt;a href="https://faculty.ucr.edu/~eschwitz/SchwitzAbs/MoralMediocrity.htm"&gt;Aiming for Moral Mediocrity&lt;/a&gt; is perhaps the most important:
-Schwitzgebel argues that most people probably aim to be about as moral as their peers, and that this is mediocre (neither great, nor terrible) to do, but that most people could manage to be better than they are with no great hardship.&lt;/p&gt;
-
-
-&lt;p&gt;I think Schwitzgebel's claim is basically right, and the paper is a very good one, with two major caveats:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;He is underestimating the hardship, because (I think) he is missing one of the reasons why this happens.&lt;/li&gt;
-&lt;li&gt;He has fallen afoul of precisely the reason why learning ethics does not make you a better person.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;I think there are approximately four reasons why people fail to behave ethically:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;They do not care to do the right thing.&lt;/li&gt;
-&lt;li&gt;They are discouraged from doing the right thing by external factors.&lt;/li&gt;
-&lt;li&gt;They do not know what the right thing is.&lt;/li&gt;
-&lt;li&gt;They do not know how to do the right thing.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;Behaving ethically is a skillful practice, and most people are either not very good at the skill, not very motivated to practice it, or do not have an environment that enables them to practice it.&lt;/p&gt;
-
-
-&lt;p&gt;Ethicists primarily study what the right thing to do is, but I think for most people this is not the &lt;a href="https://notebook.drmaciver.com/posts/2020-02-21-10:04.html"&gt;constraint&lt;/a&gt; on the skillful practice of ethics.&lt;/p&gt;
-
-
-&lt;p&gt;I will, for the purpose of this post, assume that people &lt;em&gt;care&lt;/em&gt; to do the right thing. I think fixing that is a whole different question. This leaves the other three. Given that we know from Schwitzgebel's work that knowing the right thing to do is also not enough, lets assume for the moment that you, in most practical circumstances if not necessarily in general, know what the right thing to do is. Why don't you do it?&lt;/p&gt;
-
-
-&lt;p&gt;Well, lets take a look at Schwitzgebel's theme of Moral Mediocrity: Why do people aim to be morally mediocre?&lt;/p&gt;
-
-
-&lt;p&gt;I propose that there's a very straightforward reason: Moral Mediocrity is the option that won't get you punished.&lt;/p&gt;
-
-
-&lt;p&gt;If you behave badly, people will be judgemental towards you. But they will also react badly to you if you are especially moral. It's not just that you're not a saint it's that, in actual practice, we don't &lt;em&gt;like&lt;/em&gt; saints, because they make us feel bad about ourselves.&lt;/p&gt;
-
-
-&lt;p&gt;One of the examples in the paper is vegetarianism. Suppose you were reasonably convinced that, ethically speaking, you should be a vegetarian or vegan. Now, all your interactions with people around you around food come with extra friction. Even if you never say anything judgy about it, it's impossible for people to not know you're vegetarian (if they're sharing meals with you) and many of them will respond defensively or aggressively about it. You'll experience a constant, albeit low grade, pressure of the people around you trying to drag you back down to their moral level.&lt;/p&gt;
-
-
-&lt;p&gt;You'll see this with other things too: Someone who is unusually ethical will constantly have people telling them to relax, take things less seriously, etc. Being unusually ethical is weird, and triggers the &lt;a href="https://notebook.drmaciver.com/posts/2020-02-29-10:30.html"&gt;social obligation to be bad at things&lt;/a&gt; in a big way.&lt;/p&gt;
-
-
-&lt;p&gt;This is not, I hasten to add, a moral justification for being morally mediocre. It doesn't change what you &lt;em&gt;should&lt;/em&gt; do. If anything, the tendency of people to norm their behaviour to those around them creates a stronger moral obligation to be good, because it influences others to be good. It is a &lt;em&gt;practical barrier to ethical behaviour&lt;/em&gt;, and any theory of ethics that does not teach you to overcome such practical barriers will not result in more ethical behaviour any more than a detailed understanding of thermodynamics will allow you to build an internal combustion engine. A theory of ethics is all very well, but you need a &lt;em&gt;practice&lt;/em&gt; of ethics, which is what Schwitzgebel's paper (along with most theory of ethics) misses: Telling people to behave a particular way tends not to work unless you tell them &lt;em&gt;how&lt;/em&gt; to behave that way.&lt;/p&gt;
-
-
-&lt;p&gt;Here's another practical barrier: If you realise that you are behaving badly, and decide to be better, you have to &lt;a href="https://notebook.drmaciver.com/posts/2020-05-07-07:57.html"&gt;reconcile yourself to the fact that you could always have been better&lt;/a&gt;, which is very painful, so you would much rather rationalise your behaviour as just fine the way it is to avoid that pain.&lt;/p&gt;
-
-
-&lt;p&gt;And for another, consider the following scenario: Suppose you decide to be vegetarian, and you're really good about it for about a month, virtuously resisting the temptation to eat meat, and absolutely hating how bland all your food has become because you don't know how to cook interesting vegetarian food and the cafeteria where you mostly eat has awful vegetarian food. After about a month, you go out for a meal with some friends, and you look at the incredibly disappointing vegetarian menu and your eyes are drawn to the cheesburger selection... and after that you're no longer vegetarian.&lt;/p&gt;
-
-
-&lt;p&gt;This actually demonstrates &lt;em&gt;two&lt;/em&gt; problems: Firstly, you don't know how to be vegetarian, and are trying to overcome that limitation with pure willpower rather than treating it as a practical problem you need to solve, and the second is that you don't understand behaviour change so you tried to go all in on the new behaviour and then gave up as soon as you failed once.&lt;/p&gt;
-
-
-&lt;p&gt;These are the three main practical barriers to overcome: Social norms, emotional difficulties, and missing skills, and all of these are emimently solvable problems that you can learn to overcome, and that you will find personally beneficial to learn to overcome regardless of whether you use them to become more ethical.&lt;/p&gt;
-
-
-&lt;p&gt;More, I think once you have acquired these skills, you will naturally become more ethical (or at least, more in line with your own values): If you can change when you feel like you should, and you feel like you should behave a particular way, then you'll just do that.&lt;/p&gt;
-
-
-&lt;p&gt;So this is my answer to how I'm intending to avoid this problem: I don't plan to try to persuade anyone of the rightness of a particular position, I'm just doing my best to convey some fragments of useful prosocial skills, and trusting that as you get better at those skills you'll become a better person automatically.&lt;/p&gt;
-
-
-&lt;p&gt;Mostly, at least. You'll probably still be bad occasionally. That's OK. It's more fun to be a bit evil from time to time.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-05-10-08:54.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-11-09:32.html</id>
     <title>Building and Rebuilding Foundational Skills</title>
@@ -907,7 +815,7 @@ I'm put in mind of Matthew Crawford's &lt;a href="https://amzn.to/3bzPSqt"&gt;Sh
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-18-09:41.html</id>
     <title>Bug Fixes and Performance Improvements</title>
-    <updated>2020-05-18T09:41:00+01:00</updated>
+    <updated>2020-05-18T12:46:52+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Bug Fixes and Performance Improvements&lt;/p&gt;
@@ -976,5 +884,71 @@ It prompted some reflection, and I've spent a lot of the intervening period atte
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-05-18-09:41.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-05-19-09:35.html</id>
+    <title>2020-05-19-09:35</title>
+    <updated>2020-05-19T09:35:00+01:00</updated>
+    <content type="html">
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-05-19&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;From Lois McMaster Bujold's "A Civil Campaign", page 137:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;"Madame Vorsoisson", Mark said with dignity, "is a very sensible woman. When presented with compelling facts, &lt;em&gt;she&lt;/em&gt; doesn't let a thoughtless emotional response overcome her clear reason."&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;"A Civil Campaign" is probably my favourite book in the Vorkosigan series. The Vorkosigan series is largely an "Adventures! In! Space!" series, but as it goes on there's increasingly fewer adventures in favour of exploring the lives of the characters.&lt;/p&gt;
+
+
+&lt;p&gt;Adventures in A Civil Campaign primarily center on a number of things:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Planning for the imperial wedding.&lt;/li&gt;
+&lt;li&gt;Miles (the protagonist of the series) attempting to woo the aforementioned Madame Vorsoisson, with a thoroughly inappropriately military approach.&lt;/li&gt;
+&lt;li&gt;Mark (Miles's clone/brother) attempting an early stage biotech startup.&lt;/li&gt;
+&lt;li&gt;Many exciting politics as a hereditary patriarchal nobility adjusts to things like gene tests and gender changes.&lt;/li&gt;
+&lt;li&gt;Probably some other things I'm forgetting.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;This exchange is about the third. Mark has just fed Ekaterin (Madame Vorsoisson) some of his startup's food product. It is a vaguely pleasing but mostly a bit bland product that I imagine as being a bit like cream cheese.
+The product is nutritious, flexible, cheap to produce, and has significant environmental benefits.
+It should be a miracle product that will make Mark extremely successful.&lt;/p&gt;
+
+
+&lt;p&gt;Also it comes from bugs. The bugs are particularly disgusting looking. They call it bug butter. The bugs are called butter bugs.&lt;/p&gt;
+
+
+&lt;p&gt;Also, they're trying to sell their product made from genetically engineered bugs on a planet that regards mutations with visceral horror.&lt;/p&gt;
+
+
+&lt;p&gt;Ekaterin has, kindly, reacted primarily to the quality of the bug butter as a food product rather than its origins. Miles and everyone else have reacted with horror to the name, the branding, and the general visceral association of the food product with its origins (it's vomited up by horrifying bug creatures).&lt;/p&gt;
+
+
+&lt;p&gt;Mark believes that Ekaterin is in the right and that Miles and the others are in the wrong. Mark is wrong. Mark is bad at startups.&lt;/p&gt;
+
+
+&lt;p&gt;Oh, Ekaterin is of course behaving very well. It's &lt;em&gt;good&lt;/em&gt; to be able to suspend emotional reactions and look at the potential in a situation. However, Mark is conflating how he feels people &lt;em&gt;should&lt;/em&gt; react to his product with how people are actually going to react to his product. Miles and everyone else are providing him with valuable insight.&lt;/p&gt;
+
+
+&lt;p&gt;Mark does eventually turn this around, mostly because of Ekaterin's help on branding, but without her he would have been insisting that people are reacting to his actions &lt;em&gt;wrong&lt;/em&gt; and complaining about the unfairness of it all.&lt;/p&gt;
+
+
+&lt;p&gt;This is an easy trap to fall in to, both in startups and in general: If people react badly to your actions that &lt;em&gt;might&lt;/em&gt; be unfair, and it's legitimate to feel aggrieved about it, but ultimately at some point you need to ask whether you want to have an impact or not, and if you want to have an impact it's usually better to ask how you can effectively work with people's reactions.&lt;/p&gt;
+
+
+&lt;p&gt;It's all very well to demand that people react to your actions differently, but it doesn't usually work. If you want to change the world, if you want people to use your product, you need to start from where you are and work with the audience you have. Even if you do, ultimately, want to change their behaviour, you're not generally going to get there by demanding that they comply - you need to instead work with rather than against their existing reactions.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-05-19-09:35.html" rel="alternate"/>
   </entry>
 </feed>
