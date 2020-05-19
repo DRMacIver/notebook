@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-05-19T09:35:00+01:00</updated>
+  <updated>2020-05-19T10:51:30+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -887,9 +887,12 @@ It prompted some reflection, and I've spent a lot of the intervening period atte
   </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-19-09:35.html</id>
-    <title>2020-05-19-09:35</title>
-    <updated>2020-05-19T09:35:00+01:00</updated>
+    <title>Working with the audience</title>
+    <updated>2020-05-19T10:51:30+01:00</updated>
     <content type="html">
+
+&lt;p class="subtitle"&gt;Working with the audience&lt;/p&gt;
+
 
 &lt;dl class="metadata"&gt;
 &lt;dt&gt;Published&lt;/dt&gt;
