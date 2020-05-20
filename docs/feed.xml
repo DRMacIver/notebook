@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-05-20T16:04:11+01:00</updated>
+  <updated>2020-05-20T17:58:35+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,95 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-05-13-09:56.html</id>
-    <title>How to read a book</title>
-    <updated>2020-05-13T10:54:07+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;How to read a book&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-05-13&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I have mixed feelings about Adler and Van Doren's classic &lt;a href="https://amzn.to/2LqWf50"&gt;How to read a book&lt;/a&gt;. There's a lot I like about it, and my reading definitely improved after I read it, but I also disagree with a lot of it. I have not engaged with the book in a way that they think entitles me to disagree with it, but that's OK because I also disagree with their claims around when you are entitled to disagree with a book.&lt;/p&gt;
-
-
-&lt;p&gt;But that's not what this post is about. This post is about what one might think of the central failing of the book: Despite the title, it never actually tells you how to read a book.
-It is not a book about how to read a book at all, it is a book about how to engage with the contents of a book.&lt;/p&gt;
-
-
-&lt;p&gt;This is not what reading is.
-Reading is not an act conducted by a pure mind engaging with an idealised platonic flow of information.
-Reading is an active engagement between a physical body and a physical object. The &lt;em&gt;purpose&lt;/em&gt; of reading is to engage with the content, but reading itself is a physical act.&lt;/p&gt;
-
-
-&lt;p&gt;And the physical act matters, clearly.&lt;/p&gt;
-
-
-&lt;p&gt;This is obvious in the extreme cases. If you are in constant pain while reading you're not going to be able to concentrate on the reading, right? But I think it matters far more than we expect it to.&lt;/p&gt;
-
-
-&lt;p&gt;People often are amused at how strong my opinions on book formats are, but this is because book formats are important.&lt;/p&gt;
-
-
-&lt;p&gt;Briefly my opinions on book formats are:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Audiobooks might be fine but I haven't been able to make them work for me (I should revisit this now that &lt;a href="https://notebook.drmaciver.com/posts/2020-04-11-14:47.html"&gt;I have solved my problems with podcasts&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Ebooks are a shit format for consuming hard material, but their convenience often outweighs their shittiness for lighter material.&lt;/li&gt;
-&lt;li&gt;Most hardbacks are a bad format made by bad people.&lt;/li&gt;
-&lt;li&gt;Trade paperbacks and other large paperback formats are a blight on humanity and the people responsible for them should be put on trial.&lt;/li&gt;
-&lt;li&gt;Small, light, ideally paperback, books are the god tier format and are the only one that allows you to properly engage with difficult material.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;You will tell me about textbooks etc that have too much content to be small and thus are better as large physical books or PDFs. I acknowledge those textbooks cannot be made smaller, but I contend that this is because they shouldn't have been written with that much content in the first place and should have been a series of shorter books. This is a separate argument.&lt;/p&gt;
-
-
-&lt;p&gt;The reason why ebooks are bad is twofold:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;The physicality of engaging with a book is actually very helpful for organising knowledge (you've got an intuitive sense of where things were in the book, and also physical libraries are a much better exobrain that digital ones).&lt;/li&gt;
-&lt;li&gt;They add significant latency and inconvenience to many of the actions you take in the course of reading (paging, especially backwards, flicking through the book at random, etc).&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;The reason large physical books are bad is that it is almost impossible to maintain &lt;a href="https://learnmuscles.com/blog/2017/10/18/reading-writing-and-posture/"&gt;a proper reading posture while reading them&lt;/a&gt; without a book stand or something, which let's be honest literally nobody is using. They also can't be carried in your bag (and a book stand certainly can't), which means your opportunities to read them will be limited.&lt;/p&gt;
-
-
-&lt;p&gt;Why am I telling you all of this?&lt;/p&gt;
-
-
-&lt;p&gt;I'm telling you all of this because if the physicality of reading matters, and you are struggling to read, then you may be able to improve your reading not by "improving your reading skills" in some sense, or by fixing whatever is stopping you from concentrating, but by simply changing actual practical physical details about your reading habits. It's possible that you're just fine at reading but are attempting to read in a way that doesn't work well for you.&lt;/p&gt;
-
-
-&lt;p&gt;Here are some interventions in the act of reading that have all worked pretty well for me:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Reading out loud. Reading out loud makes it &lt;em&gt;much&lt;/em&gt; easier to engage with difficult material. It causes you to remember it better, and the act of reading out loud &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-12:12.html"&gt;makes it harder in a way that makes it possible to concentrate&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Explicitly structuring your reading into a 20/10 pattern (20 minutes reading, 10 minutes mandatory break) so as to manage fatigue and concentration better.&lt;/li&gt;
-&lt;li&gt;Fix your reading posture so that you hold the book out in front of you rather than looking down at it. The looking down posture is not good for your neck and breathing in a way that I think disrupts the ability to concentrate and makes you feel more distracted while reading.&lt;/li&gt;
-&lt;li&gt;Reading while standing up (with the book held in front of you!) and vaguely walking or pacing is particularly good. This combines particularly well with reading out loud.&lt;/li&gt;
-&lt;li&gt;Reading while &lt;a href="https://alexandertechnique.co.uk/learning-it/semi-supine"&gt;Semi-Supine&lt;/a&gt; with the book held out in front of you. This combines particularly well with the 20/10 structure, with your phone deliberately left out of reach.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;All of these seem kinda dumb and like they shouldn't matter, because we have become overly attached to the idea of books as pure sources of information that we engage with intellectually, rather than physical objects that we interact with physically as part of a process with an intellectual goal, and little things often have a much larger effect on such processes than we think they do.&lt;/p&gt;
-
-
-&lt;p&gt;They're all also very easy, so if you really think they won't work, the fastest way to prove me wrong is to just &lt;a href="https://notebook.drmaciver.com/posts/2020-02-26-16:07.html"&gt;try them and see what happens&lt;/a&gt;.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-05-13-09:56.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-14-07:22.html</id>
     <title>Joy in Sadness</title>
@@ -405,7 +316,7 @@ which can be thought of an elaborate ritual to maintain order, in which the oppr
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-16-12:06.html</id>
     <title>Notes on Acedia</title>
-    <updated>2020-05-20T16:04:11+01:00</updated>
+    <updated>2020-05-20T17:58:35+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Notes on Acedia&lt;/p&gt;
@@ -867,5 +778,133 @@ If you ask "What is my duty?", an answer can assume that part of your duty is th
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-05-20-09:54.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-05-20-17:58.html</id>
+    <title>How I fix anxiety triggers</title>
+    <updated>2020-05-20T17:58:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;How I fix anxiety triggers&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-05-20&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;This is a sketch of the skillset I use to deal with anxiety. It works well when:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Anxiety is at a level that I can deal with.&lt;/li&gt;
+&lt;li&gt;It is anxiety &lt;em&gt;about&lt;/em&gt; something.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;For example:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;I currently feel vaguely anxious. Not sure what about. It's not especially hard to deal with, I'm just noticing a certain tension in my shoulders and that I feel slightly on edge. This is undirected anxiety, and I don't currently have a good skillset for dealing with it.&lt;/li&gt;
+&lt;li&gt;I'm currently putting off a whole bunch of accounting stuff because accounting stuff makes me super anxious and I don't &lt;em&gt;want&lt;/em&gt; to deal with it. I should do this, but I haven't, and forcing myself into doing it is probably not helpful for dealing with my anxiety on the subject.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h3&gt;Basic Procedure&lt;/h3&gt;
+
+
+&lt;p&gt;The procedure is very simple:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Notice that a thing is triggering anxiety.&lt;/li&gt;
+&lt;li&gt;Figure out &lt;em&gt;why&lt;/em&gt; it's triggering anxiety.&lt;/li&gt;
+&lt;li&gt;Ask if the current situation is actually one I need to be anxious about.&lt;ul&gt;
+&lt;li&gt;If yes, keep being anxious, taking appropriate steps to increase your safety.&lt;/li&gt;
+&lt;li&gt;If no, stop being anxious, and also be less anxious in similar situations in future.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;All three of these are very simple but they are not easy and require developing some foundational skills that I'll talk about at the end.&lt;/p&gt;
+
+
+&lt;p&gt;Does it work? In my experience, pretty reliably, as long as you can actually work through the procedure (which can be both intellectually and emotionally difficult).&lt;/p&gt;
+
+
+&lt;h3&gt;Why does this work?&lt;/h3&gt;
+
+
+&lt;p&gt;The basic philosophical premises of this are:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Anxiety is not in and of itself bad. Anxiety is your reaction to being in a dangerous situation, making you aware of it so that you can be prepared. It is good to be aware of when you are in a dangerous situation.&lt;/li&gt;
+&lt;li&gt;Your brain does not do a perfectly rational threat assessment of the situation, it learns simple pattern matching rules.&lt;/li&gt;
+&lt;li&gt;When a rule is active you can change it by better understanding the situation and gently guiding yourself towards understanding why it doesn't apply.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;(3) is the basic idea behind &lt;a href="https://www.lesswrong.com/posts/i9xyZBS3qzA8nFXNQ/book-summary-unlocking-the-emotional-brain"&gt;coherence therapy&lt;/a&gt;: You can retrain emotions when they are triggered.&lt;/p&gt;
+
+
+&lt;p&gt;I've previously explained the idea that your bundle of emotional reactions are a messy complex system that you can debug and refactor in the previous three posts:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://notebook.drmaciver.com/posts/2020-02-20-09:31.html"&gt;Emotional reactions as legacy code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://notebook.drmaciver.com/posts/2020-03-03-09:07.html"&gt;Your emotions are valid but probably wrong&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://notebook.drmaciver.com/posts/2020-03-14-13:55.html"&gt;Alief/Belief Coherence&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h3&gt;What doesn't work&lt;/h3&gt;
+
+
+&lt;p&gt;The main thing that people try to do with anxiety is suppress it. This doesn't work, and probably makes your anxiety worse, for several reasons:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;It causes you to ignore anxiety in unsafe situations where it's actually worth being anxious.&lt;/li&gt;
+&lt;li&gt;If you can only fix reactions when they're active, if you succeed at suppressing a reaction it'll just come back later.&lt;/li&gt;
+&lt;li&gt;Emotions tend to rise to the level that is required to get us to do something about them, so this will tend to make anxiety worse.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;Unfortunately because we've got into the habit of treating anxiety itself as the problem, this is the natural thing to do. My instinct is that you are better off palliating to deal with the anxious situation or avoiding it entirely rather than trying to suppress it.&lt;/p&gt;
+
+
+&lt;h3&gt;Foundational Skills&lt;/h3&gt;
+
+
+&lt;p&gt;Although the procedure is simple, it requires some relatively difficult foundational skills:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Self-compassion, the ability to talk compassionately and without judgement.&lt;/li&gt;
+&lt;li&gt;Focusing, the ability to use felt sense and verbalisation to understand your own feelings.&lt;/li&gt;
+&lt;li&gt;Discomfort tolerance, the ability to remain uncomfortable without treating it as an emergency.&lt;/li&gt;
+&lt;li&gt;Noticing triggers, the ability to explicitly notice and identify triggered states.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;I talked about some of these in &lt;a href="https://www.drmaciver.com/2020/01/a-crash-course-in-having-feelings/"&gt;A Crash Course in Having Feelings&lt;/a&gt;. I don't necessarily have good advice beyond that post on how to develop these skills, but some books that I found helpful in learning about each of these are:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Self-compassion: &lt;a href="https://amzn.to/3g52wRL"&gt;Rewriting the Rules&lt;/a&gt; by Meg-John Barker&lt;/li&gt;
+&lt;li&gt;Focusing: &lt;a href="https://amzn.to/3cPJEnN"&gt;Focusing&lt;/a&gt; by Eugene Gendlin&lt;/li&gt;
+&lt;li&gt;Discomfort Tolerance: &lt;a href="https://amzn.to/2ZlZ2EB"&gt;Conflict is not Abuse&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Noticing triggers: &lt;a href="https://amzn.to/36ghhg9"&gt;Complex PTSD: From Surviving to Thriving&lt;/a&gt; (I'd probably recommend starting with &lt;a href="https://www.rewriting-the-rules.com/self/trauma-and-cptsd-101/"&gt;Meg-John Barker's Post on this&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;But to be honest I think with all of these the real way to get good at them is just to practice. Of these I'd most strongly recommend "A Crash Course in Having Feelings", "Focusing", and MJB's post on trauma. The others were important to my development, but I read a lot of books so that's relatively cheap for me, and was only really a way to get started. The best thing for actually developing these skills was to use them in practice.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-05-20-17:58.html" rel="alternate"/>
   </entry>
 </feed>
