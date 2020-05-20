@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-05-19T17:31:00+01:00</updated>
+  <updated>2020-05-20T09:54:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,93 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-05-12-08:19.html</id>
-    <title>Why are things hard?</title>
-    <updated>2020-05-12T12:21:57+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Why are things hard?&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-05-12&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I've recently started a &lt;a href="https://drmaciver.substack.com/p/coming-soon"&gt;Substack Newsletter&lt;/a&gt; called "How to do hard things", based on &lt;a href="https://www.drmaciver.com/2019/05/how-to-do-hard-things/"&gt;my unexpectedly popular post of the same name&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;There will be a lot of overlap between the newsletter and this notebook. I'm not quite sure how I'm going to use it yet, but I'm expecting there will be a bit of a back and forth, with the newsletter being a place I use to collect and develop themes I've written about here, which will in turn spark more notebook posts here. If you're enjoying the notebook, I'd also recommend subscribing to the substack. For now at least, you don't need to sign up for a paid tier - the content is the same for all subscribers, but with the discussion / community features turned on for paid ones.&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, this has got me thinking about The Fully General System For Learning To Do Hard Things. I still think it's a good framework, but I think it's missing a lot of important features - some of which only require additions to it, some of which might require some modifications.&lt;/p&gt;
-
-
-&lt;p&gt;One of the principle problems with it is, I think, the fact that what it &lt;em&gt;does&lt;/em&gt; is extremely under defined. What is a "hard thing"? And how does one learn to do it?&lt;/p&gt;
-
-
-&lt;p&gt;The principle assumption in the post is that things are hard because you lack the skill to do them effortlessly. It's true, some things are like that. But that's a relatively tiny fraction of the ways in which things can be hard, and most things that are hard in one way are hard in multiple, not necessarily easily distinguishable, ways.&lt;/p&gt;
-
-
-&lt;p&gt;The Fully General System as previously described really only admits three possible reasons why things might be hard:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;You might not know how to do them.&lt;/li&gt;
-&lt;li&gt;You might know how to do them but not be able to execute.&lt;/li&gt;
-&lt;li&gt;You might not know exactly what it is you're trying to do.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;But there are quite a few other ways in which things can be hard.
-Here is a partial list:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;You might lack some simple trick.&lt;/li&gt;
-&lt;li&gt;You might be &lt;em&gt;wrong&lt;/em&gt; about what it is you're trying to do.&lt;/li&gt;
-&lt;li&gt;You might lack resources that you need to do them.&lt;/li&gt;
-&lt;li&gt;You might lack motivation to do them.&lt;/li&gt;
-&lt;li&gt;You might find the whole subject of doing them aversive.&lt;/li&gt;
-&lt;li&gt;There might be some &lt;a href="https://notebook.drmaciver.com/posts/2020-04-11-14:47.html"&gt;trivial irritation&lt;/a&gt; preventing you from doing the thing.&lt;/li&gt;
-&lt;li&gt;You might lack a foundational skill that they need but that isn't obvious.&lt;/li&gt;
-&lt;li&gt;You might be doing something foundational very badly.&lt;/li&gt;
-&lt;li&gt;You might lack awareness of or access to the expertise you need to learn how to do the thing.&lt;/li&gt;
-&lt;li&gt;You might need someone to help you do them.&lt;/li&gt;
-&lt;li&gt;You might be rusty at the relevant skills.&lt;/li&gt;
-&lt;li&gt;Someone else might be trying to stop you doing them.&lt;/li&gt;
-&lt;li&gt;The thing you are trying to do might have unacceptable consequences.&lt;/li&gt;
-&lt;li&gt;There might be social norms making it hard to do the thing in the easy way.&lt;/li&gt;
-&lt;li&gt;It might not be worth doing the thing.&lt;/li&gt;
-&lt;li&gt;The thing might be intrinsically hard in ways that require you to just do a lot of wor.&lt;/li&gt;
-&lt;li&gt;The thing might be intrinsically uncertain, making reliable success impossible.&lt;/li&gt;
-&lt;li&gt;The thing might be risky (and thus unsafe to experiment with while learning).&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;Additionally there are a whole bunch of general reasons why doing &lt;em&gt;anything&lt;/em&gt; might be hard for you:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;You might not have enough time.&lt;/li&gt;
-&lt;li&gt;You might have a distracting environment.&lt;/li&gt;
-&lt;li&gt;You might not be getting enough sleep.&lt;/li&gt;
-&lt;li&gt;You might be depressed.&lt;/li&gt;
-&lt;li&gt;You might have ADHD.&lt;/li&gt;
-&lt;li&gt;You might have other mental health problems.&lt;/li&gt;
-&lt;li&gt;You might have physical health problems.&lt;/li&gt;
-&lt;li&gt;You might lack more general skills around learning and habit formation.&lt;/li&gt;
-&lt;li&gt;You might lack more general skills around debugging why things are hard.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;In general, most hard things are some mix of multiple of these things, and usually not a small number of them, and any truly general system for learning to do hard things must take this into account.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-05-12-08:19.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-13-09:56.html</id>
     <title>How to read a book</title>
@@ -816,7 +729,7 @@ It should be a miracle product that will make Mark extremely successful.&lt;/p&g
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-19-17:31.html</id>
     <title>Parts of you are missing</title>
-    <updated>2020-05-19T17:31:00+01:00</updated>
+    <updated>2020-05-19T18:34:29+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Parts of you are missing&lt;/p&gt;
@@ -894,5 +807,65 @@ Long distance relationships are, of course, possible, but the longer we have bee
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-05-19-17:31.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-05-20-09:54.html</id>
+    <title>Morality and Emotion</title>
+    <updated>2020-05-20T09:54:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Morality and Emotion&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-05-20&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;From &lt;a href="https://amzn.to/3g53ayI"&gt;Voices: The Educational Formation of Conscience&lt;/a&gt;, page 18:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;"What is my duty?" is made, by many accounts, the entry question into philosophical ethics. For a philosophy of moral education, however, entry is gained more fully through the Socratic question, "How ought one to live?"&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;The distinction that Green is drawing in this book is between philosophy of ethics, which develops ethical theories of what it is like to behave ethically, and philosophy of moral education, which asks how people learn to behave ethically.&lt;/p&gt;
+
+
+&lt;p&gt;This is intimately tied to my point in &lt;a href="https://notebook.drmaciver.com/posts/2020-05-10-08:54.html"&gt;How to become a better person&lt;/a&gt; that as well as a &lt;em&gt;theory&lt;/em&gt; of ethics we need a &lt;em&gt;practice&lt;/em&gt; of ethics.
+A philosophy of moral education is not necessarily that practice, but it is at least less far removed from it:
+If you ask "What is my duty?", an answer can assume that part of your duty is that you are responsible for figuring out how to uphold your other duties. If you ask "How should I live?", you might quite reasonably object if the answer is a little light on practical details about how, exactly, you are supposed to be able to live in the manner described.&lt;/p&gt;
+
+
+&lt;p&gt;There's something about the question "How ought one to live?" that feels hopelessly naive and/or oppressive these days. Who are you to tell me what to do?&lt;/p&gt;
+
+
+&lt;p&gt;The &lt;em&gt;ought&lt;/em&gt; in particular feels dangerous. It feels like a question that can only be asked in the presence of a certain amount of coercive power - as if whatever answer you give to the question, that's the answer you're going to impose on others.&lt;/p&gt;
+
+
+&lt;p&gt;On top of that, there can be no single &lt;em&gt;ought&lt;/em&gt;, because are all different people with different desires and constraints. The idea of a one sized fits all "best life" seems both impossible and undesirable.&lt;/p&gt;
+
+
+&lt;p&gt;And yet, I still think there's something there. Perhaps not "How ought one to live?" but "How can one figure out how to live?" or "What tools are there to figure out how to live?" or "How can we help people live their best lives?".&lt;/p&gt;
+
+
+&lt;p&gt;I think we underestimate the interplay between morality and emotional health. Many of our strongest emotions and feelings have a moral component. Guilt and shame, certainly, but also love and empathy. Emotions and morality interplay strongly as we act in the world, especially with regards to other people.&lt;/p&gt;
+
+
+&lt;p&gt;I suggested in "How to be a better person" that improving your emotional skills would probably automatically make you a better person, but I think the converse might be true too: Becoming a better person will improve your emotional health (as long as it's paired with good skills for working with emotions - I still think those are the foundations).&lt;/p&gt;
+
+
+&lt;p&gt;Part of this is &lt;a href="https://notebook.drmaciver.com/posts/2020-05-16-12:06.html"&gt;acedia&lt;/a&gt;. I think one of the causes of acedia is living out of line with our values - sometimes because our values are bad, sometimes because we are forced to, and sometimes because it is easier to ignore that dissonance than deal with them. We learn not to care as a defence mechanism, and bringing ourselves more in line with our values allows us to repair some of that.&lt;/p&gt;
+
+
+&lt;p&gt;Another part is the &lt;a href="https://notebook.drmaciver.com/posts/2020-03-30-23:12.html"&gt;desire&lt;/a&gt; / &lt;a href="https://notebook.drmaciver.com/posts/2020-03-18-11:24.html"&gt;safety&lt;/a&gt; model. Emotional skills are what provide you with safety to become better, but others are often the spur for that. Certainly much of my current growth came from having people who I wanted to be better for.&lt;/p&gt;
+
+
+&lt;p&gt;In my first read of Green &lt;a href="https://www.drmaciver.com/2019/08/jiminy-cricket-must-die/"&gt;I was pretty negative about some of this themes&lt;/a&gt;. I still think that's right - a great deal of his work is about how we adopt a community's norms, and my experience is that most communities' norms are very unsafe to internalise. My current read is more sympathetic: I still think moral norms are dangerous tools that are often misused, but I think they also might be a key part of finding our way to better lives as long as we can find the right people to develop them with.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-05-20-09:54.html" rel="alternate"/>
   </entry>
 </feed>
