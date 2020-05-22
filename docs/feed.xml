@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-05-21T09:32:00+01:00</updated>
+  <updated>2020-05-22T09:34:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,100 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-05-15-09:54.html</id>
-    <title>Teach me of your human notions of love</title>
-    <updated>2020-05-15T10:49:03+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Teach me of your human notions of love&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-05-15&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;From &lt;a href="https://amzn.to/2y3eU3x"&gt;Finding Our Sea-Legs&lt;/a&gt;, p 41:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Perhaps it is not the oldest philosophical question in the book, but is one of the most recurrent, at least once puberty has kicked in: "What is this thing called love?"&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;Well, lets see what the book has to say about it. From Tiffany Watt Smith's &lt;a href="https://amzn.to/2Lu4EEF"&gt;The Book of Human Emotions&lt;/a&gt;:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Is there anything left to say about love? Reams of poetry and songs, libraries' worth of philosophy, are dedicated to trying to express it, to understand and define it. The very volume of words tells us not only how much there is to say on the subject, but also how little can be said with any certainty.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;Thanks Tiffany, that's very helpful.&lt;/p&gt;
-
-
-&lt;p&gt;Buckingham, on page 42, suggests that unlike philosophy (which asks questions like "What is love?"), storytelling tends to ask "What is love &lt;em&gt;like&lt;/em&gt;?".&lt;/p&gt;
-
-
-&lt;p&gt;He is quick to point out the flaw in this question (on page 43):&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Here, however, we need to be philosophically cautious. The way that this second question is phrased, "What is love like?" risks seducing us into thinking that there &lt;em&gt;is&lt;/em&gt; in fact, a single thing, love, towards which this new question will lead us. But the more we ask this kind of question, the more it becomes apparent that love is no more a single thing than is death. What emerges from our storytelling is not Love, but a multiplicity of loves.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;This multiplicity of loves is, I think, part of the core of the practical problems of love. In reality, we are not so much interested in the question "What is love like?" any more than we are interested in the question "What is love?". What we want to know tends to be questions more like:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;Do they love me?&lt;/li&gt;
-&lt;li&gt;Do I love them?&lt;/li&gt;
-&lt;li&gt;How do I find someone who will love me?&lt;/li&gt;
-&lt;li&gt;How do I love myself?&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;I think we will find that when we ask these questions they will not always mean the the same notion of love.&lt;/p&gt;
-
-
-&lt;p&gt;Love, like most things, doesn't really have a formal definition - you can look it up in a dictionary, but dictionaries describe use rather than providing authoritative definitions, and the dictionary's selection of meanings for love are particularly useless.&lt;/p&gt;
-
-
-&lt;p&gt;Most words used in practice are defined &lt;a href="https://en.wikipedia.org/wiki/Ostensive_definition"&gt;ostensively&lt;/a&gt;, meaning that we point to a bunch of examples and hope that you can figure out the general pattern because we sure as hell don't know how explain it to you.&lt;/p&gt;
-
-
-&lt;p&gt;This is particularly tricky for things which are primarily phenomenological - purely or predominantly aspects of our subjective experience. We barely have a coherent vocabulary for talking about &lt;em&gt;pain&lt;/em&gt;, and pain is at least relatively easy to reproduce on demand. How is this supposed to work for things like love, which are vastly more complicated, and which you cannot easily point to an example?&lt;/p&gt;
-
-
-&lt;p&gt;Buckingham's answer is to let go of the question and embrace this plurality. I think this concedes too much, because it runs into a substantial problem: We can &lt;em&gt;disagree&lt;/em&gt; what love is.&lt;/p&gt;
-
-
-&lt;p&gt;I've talked about Bell Hooks's notion of love as "The will to extend one's self for the purpose of one's own or another's spiritual growth". I think this is a &lt;em&gt;good&lt;/em&gt; definition. It's not true, in that I don't think one can meaningfully assign a truth value to the question of whether that is what love &lt;em&gt;is&lt;/em&gt;, but I think that it provides a good starting point for reasoning about many of the positive aspects of love.&lt;/p&gt;
-
-
-&lt;p&gt;But it's certainly not a definition that everyone can agree on.&lt;/p&gt;
-
-
-&lt;p&gt;David Chapman talks about &lt;a href="https://meaningness.com/nebulosity"&gt;nebulosity&lt;/a&gt;, the cloudlike nature of things - clouds are ill defined at the boundary. If you ask "What is the weight of a cloud?" you will end up with uncertainty that is in some sense fundamentally ontological (concerned with categories - which bits of matter do you consider "part of the cloud"?) rather than epistemic (concerned with knowledge - trying to pin down facts of empirical reality). Some parts of reality are clearly part of the cloud, some parts of reality are clearly not part of the cloud, but at the boundary there is a region where it's... kinda part of the cloud but it's not really clear, and the answer to your question about the mass of the cloud will depend on how we decide that question of categorisation.&lt;/p&gt;
-
-
-&lt;p&gt;When you ask "Do I love them?" you will experience this nebulosity of love: Some people the answer is obviously no, hopefully some people the answer is obviously yes, but if you are asking the question you are probably in that boundary zone where the answer is the rather frustating "It depends what you mean by love?".&lt;/p&gt;
-
-
-&lt;p&gt;But when you ask "Do they love me?" the question is more complicated yet.&lt;/p&gt;
-
-
-&lt;p&gt;Not everyone has the same notion of love. Some notions of love are different, and some notions of love are better than others (there's no total ordering here - it's &lt;a href="https://notebook.drmaciver.com/posts/2020-04-17-10:16.html"&gt;very unlikely that there's a single best notion of love&lt;/a&gt;). Many notions of love that we see in common use are coercive, abusive, or proprietary. "I would love you more if you changed to be what I want", "I hurt you because I love you", or "I love you, so you are mine".&lt;/p&gt;
-
-
-&lt;p&gt;In those cases the difficulty is still one of ontology. There are still questions about where the boundary of love is, but that boundary is now not merely fuzzy but contested. This is no longer a collaboration where you are trying to pin down an area of uncertainty, but a fight over the correct positioning of that boundary.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-05-15-09:54.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-16-07:43.html</id>
     <title>Truth and the Ghost Library</title>
@@ -778,7 +684,7 @@ If you ask "What is my duty?", an answer can assume that part of your duty is th
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-21-09:32.html</id>
     <title>Against the Classification of Books</title>
-    <updated>2020-05-21T09:32:00+01:00</updated>
+    <updated>2020-05-21T10:25:24+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Against the Classification of Books&lt;/p&gt;
@@ -853,5 +759,57 @@ This is not a style of engagement that a philosopher would generally be receptiv
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-05-21-09:32.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-05-22-09:34.html</id>
+    <title>Feeling Good About Being Good</title>
+    <updated>2020-05-22T09:34:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Feeling Good About Being Good&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-05-22&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I'm currently working through a (more or less) full reread of &lt;a href="https://amzn.to/3g53ayI"&gt;Voices: The Educational Formation of Conscience&lt;/a&gt;, so you're going to get treated to a lot of extracts from it. Today's extract comes from page 41:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;[...] normation just &lt;em&gt;is&lt;/em&gt; this structuring of the emotions of self-assessment -shame, guilt, embarassment, pride, and the like-both in our self-assessment and in our judgements of others. It follows, of course, that it structures also the positive emotions companion to these that I have called the emotions of self-assessment. That is to say normation structures also the appearance of elation, pride, self-assurance, and the joy and hope that accompany these. By saying that normation structures these emotions, I mean to refer not to the logic of their composition, whether they presuppose some propositional content, as in one or another version of a cognitive theory of the emotions. I mean to refer rather to their focus or object. Normation gives content to these emotions inasmuch as it provides their object. It tells us &lt;em&gt;what&lt;/em&gt; things are going to provoke such emotions. In short, normation makes these emotions specific. Structuring them in this way is precisely what mere compliance is powerless to accomplish. Again, absent these emotions and the norms themselves will vanish. Observance will deconstruct into mere compliance, governance into mere behavior.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;This continues to explore the theme of &lt;a href="https://notebook.drmaciver.com/posts/2020-05-20-09:54.html"&gt;the connection between morality and emotional health that I highlighted before&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;To unpack what Green is saying in this:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Normation is the social process by which we acquire norms of behaviour - voices of conscience with which we reflexively judge whether behaviour is good or bad.&lt;/li&gt;
+&lt;li&gt;"Observance" of a norm is distinguished from mere "compliance" when we feel the force of the norm internally rather than merely adhering to the behaviour it prescribes. e.g. we are observant to a norm of honesty if we feel guilty about lying, but we may still be honest (compliant with the norm of honesty) without internalising that norm if we think that honesty is the best policy for purely practical reasons.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;So the general point of the quote is that this process of internalising moral norms is about structuring how we &lt;em&gt;feel&lt;/em&gt; about action: When we do something we feel is morally good, we feel good, when we do something we feel is morally bad, we feel bad. Observance to moral norms is defined by part of the structure of our emotional responses.&lt;/p&gt;
+
+
+&lt;p&gt;One of the interesting things to me about this passage is its emphasis on both the negative &lt;em&gt;and&lt;/em&gt; positive emotional responses to observing a norms (it also amuses me that he lists "pride" under both). I don't know about you, but I think of morality as primarily experienced through negative emotions - especially guilt and shame - but there are of course positive emotions associated with it.&lt;/p&gt;
+
+
+&lt;p&gt;Part of why I've been interested in &lt;a href="https://plato.stanford.edu/entries/ethics-virtue/"&gt;Virtue Ethics&lt;/a&gt; recently is that it feels that this is the only one of the currently extant ethical frameworks that get this right (and, interestingly, although Green doesn't make this explicit, his voices of conscience sure sound a lot like virtues to me). If you are striving for excellence, there is a sort of joy in that. If morality is nothing more than a series of duties, or a number you are seeking to make constantly go up, then morality is purely a burden, a stick to beat ourselves with.&lt;/p&gt;
+
+
+&lt;p&gt;I previously wrote about the use of &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-12:35.html"&gt;fine-grained ethical distinctions&lt;/a&gt; - in particularly the distinction between it being virtuous to do something and being a duty to do something - and I think these track pretty well with emotional reactions. If you fail in your moral duties, it's proper to feel guilty over that. If you have a pattern of failing in your moral duties, it's proper to feel shame over that. But if you exemplify your moral virtues, it's also proper to feel joy in that.&lt;/p&gt;
+
+
+&lt;p&gt;This brings the &lt;a href="https://notebook.drmaciver.com/posts/2020-03-18-11:24.html"&gt;safety&lt;/a&gt; / &lt;a href="https://notebook.drmaciver.com/posts/2020-03-30-23:12.html"&gt;desire&lt;/a&gt; model into the question of &lt;a href="https://notebook.drmaciver.com/posts/2020-05-10-08:54.html"&gt;how to be a better person&lt;/a&gt; - if we can take joy in our moral successes, then we will want to be better people, and this will drive us to become such.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-05-22-09:34.html" rel="alternate"/>
   </entry>
 </feed>
