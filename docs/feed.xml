@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-05-22T09:34:00+01:00</updated>
+  <updated>2020-05-23T09:31:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,81 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-05-16-07:43.html</id>
-    <title>Truth and the Ghost Library</title>
-    <updated>2020-05-16T10:22:04+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Truth and the Ghost Library&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-05-16&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Ritual and its Consequences, p. 162:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;[Fundamentalism] equates truth, which is nonindividual and supraindividual, with its interpretation, which is invariably personal and conditional.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;I think this claim is interesting and mostly true, but also mostly false. That might be because of my interpretation of it, which is invariably personal and conditional.&lt;/p&gt;
-
-
-&lt;p&gt;I'm reading James C. Scott's "Domination and the Arts of Resistance" at the moment.&lt;/p&gt;
-
-
-&lt;p&gt;The book, as with most of Scott's work, looks at an aspect of how people behave in response to power imbalances.
-In societies when one group dominates another, such as caste societies, or historical slavery in North America,
-the way those groups talk among themselves is very different from the way they talk in public.&lt;/p&gt;
-
-
-&lt;p&gt;This leads to the idea of &lt;em&gt;hidden transcripts&lt;/em&gt;.
-The idea is that there is a public transcript, which is the record (usually implicit) of what goes on in public,
-and the hidden transcripts, which record how the groups talk among themselves.
-Both the oppressed and the oppressor have hidden transcripts that are very different from the public transcript,
-which can be thought of an elaborate ritual to maintain order, in which the oppressors perform strength and the oppressed perform deference.&lt;/p&gt;
-
-
-&lt;p&gt;Hidden transcripts are a key part of the &lt;a href="https://notebook.drmaciver.com/posts/2020-02-16-14:22.html"&gt;ghost knowledge&lt;/a&gt; that pervades society - knowledge that is built and widely shared inside a community of discourse, but is never written down and is not widely known outside of that community. Unlike much ghost knowledge, which is merely &lt;em&gt;not&lt;/em&gt; shared, the hidden transcripts are actively kept from those outside of the community as a protective measure.&lt;/p&gt;
-
-
-&lt;p&gt;You can think of knowledge about the world as being a kind of infinite ghost library, with different groups occupying (with varying degrees of jealousy) their territories within the library.&lt;/p&gt;
-
-
-&lt;p&gt;This is a key part my objection to the quoted passage I opened with: Interpretation is not just personal, it's very much driven by what you know, and who you talk to. People interpret in groups, and those interpretations become hidden transcripts within the ghost library.&lt;/p&gt;
-
-
-&lt;p&gt;Scott is careful to point out that these hidden transcripts &lt;em&gt;also&lt;/em&gt; don't necessarily represent any sort of "true selves" of the oppressed, but are instead another social order, which may have its own barriers to authenticity, but I do think though that there is a gradient where the more hidden a transcript it is, the more sincere it is:&lt;/p&gt;
-
-
-&lt;p&gt;Scott, on page 26, lists the following under "Hypothetical Discursive Sites, Arranged by Audience, under Slavery":&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Harsh master/overseer&lt;/li&gt;
-&lt;li&gt;Indulgent master or overseer&lt;/li&gt;
-&lt;li&gt;Whites having no direct authority&lt;/li&gt;
-&lt;li&gt;Slaves and free blacks&lt;/li&gt;
-&lt;li&gt;Slaves of same master&lt;/li&gt;
-&lt;li&gt;Closest slave friends&lt;/li&gt;
-&lt;li&gt;Immediate family&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;With the first three being part of the public transcripts, the last three being part of the hidden ones, and the 4th straddling the two. In the public transcripts you are very much participating in the ritual order of society, but in the private ones you can break character into sincerity and talk about what's &lt;em&gt;actually&lt;/em&gt; going on.&lt;/p&gt;
-
-
-&lt;p&gt;From this point of view, fundamentalist social orders can be thought of as access control in the ghost library: The idea that this secret body of knowledge is in some sense &lt;em&gt;immoral&lt;/em&gt;, and that that which cannot be discussed in public should not be discussed at all.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-05-16-07:43.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-16-12:06.html</id>
     <title>Notes on Acedia</title>
@@ -763,7 +688,7 @@ This is not a style of engagement that a philosopher would generally be receptiv
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-22-09:34.html</id>
     <title>Feeling Good About Being Good</title>
-    <updated>2020-05-22T09:34:00+01:00</updated>
+    <updated>2020-05-22T10:52:49+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Feeling Good About Being Good&lt;/p&gt;
@@ -811,5 +736,74 @@ This is not a style of engagement that a philosopher would generally be receptiv
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-05-22-09:34.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-05-23-09:31.html</id>
+    <title>You have to be pretty good at everything</title>
+    <updated>2020-05-23T09:31:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;You have to be pretty good at everything&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-05-23&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;"Fix a man's feet, and you will make him comfortable for a month. Teach a man to walk properly, and you will make him comfortable for life. Therefore denying people access to good foot education is key to monthly recurring revenue." - Ancient Capitalist Proverb.&lt;/p&gt;
+
+
+&lt;p&gt;I'm currently working on being good at feet.&lt;/p&gt;
+
+
+&lt;p&gt;Being bad at feet sounds ridiculous, right? Almost as ridiculous as &lt;a href="https://notebook.drmaciver.com/posts/2020-05-11-09:32.html"&gt;being bad at breathing&lt;/a&gt;. I am bad at both feet and breathing, and I'd wager that many of you reading this are too.&lt;/p&gt;
+
+
+&lt;p&gt;One of the reasons you can tell that I am bad at feet is that I've spent the last 10-15 years in semiconstant pain. Not, you know, a &lt;em&gt;lot&lt;/em&gt; of pain. Just a dull ache in most of the joints of my right leg that waxes and wanes but never really goes away. I've always been a bit reluctant to identify as someone who experiences chronic pain - it doesn't really match the definition of chronic pain, you know, other than being pain and being chronic - other people have it much worse than me (this is a bullshit line of thinking and I know it's a bullshit line of thinking. I have now more or less &lt;a href="https://notebook.drmaciver.com/posts/2020-03-14-13:55.html"&gt;reconciled the alief&lt;/a&gt; and recognised that, but it took a while).&lt;/p&gt;
+
+
+&lt;p&gt;Another way in which I am bad at feet is that standing for long periods of time is painful. Walking is generally fine, but if I stand for more than about half an hour my legs will be very sad and probably hate me the next day.&lt;/p&gt;
+
+
+&lt;p&gt;I've at various points tried to get medical professionals to take these problems seriously, but it's never worked very well. The best I got is about a year and a half ago I got custom insoles made. They... maybe helped a bit? Not much.&lt;/p&gt;
+
+
+&lt;p&gt;But now, in one of the rare upsides of the world going to hell, my chronic pain is at the lowest it's been since my early 20s - it's not gone, but it's mostly retreated to a vague twinge in my hip (which is where all this started).
+I attribute this largely to the almost total lack of wearing shoes, especially as it's accelerated since I've switched to barefoot shoes for running.&lt;/p&gt;
+
+
+&lt;p&gt;Standing for long periods of time is still a bit tricky, so I'm working on arch strength. I've switched to working standing in twenty minute stints recently, and doing a bunch of exercises for strengthening my arches, added a nightly (self) foot massage to my care routine, and I'm looking into toe straightening (one of the structural failings of my feet is that my outer toes curl inwards. I'm pretty sure this is related, because combining arch exercises with toe straightening is excruciating). These might or might not work, but I'm hopeful.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, this isn't really a post about feet. This is a post about being bad at things.&lt;/p&gt;
+
+
+&lt;p&gt;At no point in the more than a decade that I've been dealing with this problem did I consider that the root issue of my chronic pain might be that I was using my feet wrong. I knew that the problem with standing was related to flat feet, but I thought of that as an intrinsic structural issue rather than something that I could work on by changing how I use my feet. At no point did it occur to me that feet were a foundational skill that I could just work on getting better at and that this would significantly improve my life.&lt;/p&gt;
+
+
+&lt;p&gt;How much would it improve my life? Hard to say. Not being in constant pain is a pretty good improvement to start with but consider also...&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;I am bad at sleep. Some of that is due to the aforementioned being bad at breathing, but some of it is due to the fact that being in pain makes it hard to sleep!&lt;/li&gt;
+&lt;li&gt;I am bad at socialising in groups, especially parties. How much of that is because group social situations tend to involve a lot of standing, so I tend to be tired and in pain for a lot of them, which gives me fewer opportunities to get good at groups and also gives me negative associations with them?&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;(As an aside, being bad at standing is something I've mentioned before as an &lt;a href="https://notebook.drmaciver.com/posts/2020-02-23-09:37.html"&gt;illegible marginalisation&lt;/a&gt;)&lt;/p&gt;
+
+
+&lt;p&gt;I'm not saying that these are the only causes, because &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-11:43.html"&gt;very little is monocausal&lt;/a&gt;. I'm saying that among the weird and varied landscapes of life, these have exerted consistent pressure in some fairly negative directions.&lt;/p&gt;
+
+
+&lt;p&gt;I suspect there are a lot of foundational skills like this, and we currently don't have any infrastructure for identifying them, or learning to be better at them.&lt;/p&gt;
+
+
+&lt;p&gt;This is particularly problematic because being bad at these foundational skills is something you can kinda get away with early on - you have more energy to power through them, and have not been subjected to the constant low-grade degradation of your body (or mind! Much of the &lt;a href="https://notebook.drmaciver.com/posts/2020-02-20-09:31.html"&gt;emotions as legacy code&lt;/a&gt; model plays out this way too) that being bad at these skills causes, so by the time you start to notice the effects you're at the point where you feel like you should have life sorted out and you just treat these as the inevitable consequences of aging, when really they're a sign that you need to relearn a foundational skill.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-05-23-09:31.html" rel="alternate"/>
   </entry>
 </feed>
