@@ -17,6 +17,10 @@ import dateutil
 import sqlite3
 import hashlib
 import functools
+import urllib
+from urllib.parse import urlparse
+import json
+import requests
 
 
 _DATABASE = None
@@ -30,6 +34,18 @@ def database():
             pass
         _DATABASE = sqlite3.connect(os.path.join(CACHE_DIR, "cache.db"))
     return _DATABASE
+
+def json_cached(f):
+    @cached
+    @functools.wraps(f)
+    def returns_json(*args):
+        return json.dumps(f(*args))
+
+    @functools.wraps(f)
+    def accept(*args):
+        return json.loads(returns_json(*args))
+
+    return accept
 
 def cached(f):
     name = f.__name__
@@ -60,6 +76,44 @@ def cached(f):
 
     return accept
 
+@json_cached
+def fetch(url):
+    try:
+        req = requests.head(url)
+
+        content_types = req.headers.get("content-type", ('text/html',))
+        if "text/html" in content_types:
+            req = requests.get(req.url)
+            text = req.text
+        else:
+            text = None
+    except requests.ConnectionError:
+        return {'url': url, 'contents': None, 'status': None}
+
+    return {'url': req.url, 'contents': text, 'status': req.status_code}
+
+@cached
+def title(url):
+    parsed = urlparse(url)
+    if parsed.netloc in ('', 'notebook.drmaciver.com'):
+        if parsed.path == '/':
+            return "My Notebook"
+        else:
+            assert parsed.path.startswith('/posts/')
+            name = parsed.path[len("/posts/"):-len(".html")]
+            return post_object(name).title
+    fetched = fetch(url)
+    if fetched["status"] != 200:
+        return None
+    contents = fetched["contents"]
+    if contents is None:
+        return None
+    soup = BeautifulSoup(contents, "html.parser")
+    title = soup.find("title")
+    if title is None:
+        return None
+    return re.compile("\s+", re.MULTILINE).sub(" ", title.text).strip()
+
 def git(*args):
     subprocess.check_call(["git", *args])
 
@@ -71,6 +125,8 @@ class Post(object):
     date = attr.ib()
     body = attr.ib()
     url = attr.ib()
+
+    links = attr.ib()
 
 
 ROOT = os.path.abspath(os.path.join(
@@ -227,6 +283,24 @@ def post_names():
     ]
 
 
+def mine(url):
+    parsed = urllib.parse.urlparse(url)
+    return parsed.netloc in (
+        "drmaciver.com", "notebook.drmaciver.com", "drmaciver.substack.com", ""
+    )
+
+
+def ignore_url(url):
+    parsed = urllib.parse.urlparse(url)
+    if parsed.path == "/" and mine(url):
+        return True
+    if parsed.netloc in ("twitter.com", "www.twitter.com"):
+        return True
+    if fetch(url)["status"] != 200:
+        return True
+    return False
+
+
 POSTS_CACHE = {}
 
 def post_object(name):
@@ -241,36 +315,54 @@ def post_object(name):
 
     key = cache_key(contents)
 
-    db = database()
+    with database() as db:
 
-    cursor = db.cursor()
+        cursor = db.cursor()
 
-    cursor.execute("""
-        create table if not exists posts(
-            name text, key unsigned bigint, date text, body text, title text,
-            unique (name, key)
-        )
-    """)
+        cursor.execute("""
+            create table if not exists posts(
+                name text, key unsigned bigint, date text, body text, title text,
+                unique (name, key)
+            )
+        """)
 
-    cursor.execute("select date, title, body from posts where key = ? and name = ?", (key, name))
+        cursor.execute("""
+            create table if not exists links(
+                name text, key unsigned bigint, url text, sort_order unsigned bigint,
+                unique (name, key, url)
+            )
+        """)
 
-    row = cursor.fetchone()
-    if row is not None:
-        date, title, body = row
-    else:
-        soup = BeautifulSoup(contents, 'html.parser')
-        title_elts = soup.select("p.subtitle")
+        cursor.execute("select date, title, body from posts where key = ? and name = ?", (key, name))
 
-        if not title_elts:
-            title = name
+        row = cursor.fetchone()
+        if row is not None:
+            date, title, body = row
+            cursor.execute("select url from links where key = ? and name = ? order by sort_order", (key, name))
+            links = [url for url, in cursor if not ignore_url(url)]
         else:
-            title = ' '.join(map(str, title_elts[0].contents))
-        body = '\n'.join(map(str, soup.select('#the-post')[0].children))
-        date = soup.select('dd.post-date')[0].text.strip()
-        cursor.execute("insert into posts (key, name, date, title, body) values (?, ?, ?, ?, ?)", (
-            key, name, date, title, body
-        ))
-    db.commit()
+            soup = BeautifulSoup(contents, 'html.parser')
+            title_elts = soup.select("p.subtitle")
+
+            if not title_elts:
+                title = name
+            else:
+                title = ' '.join(map(str, title_elts[0].contents))
+            body = '\n'.join(map(str, soup.select('#the-post')[0].children))
+            date = soup.select('dd.post-date')[0].text.strip()
+            cursor.execute("insert into posts (key, name, date, title, body) values (?, ?, ?, ?, ?)", (
+                key, name, date, title, body
+            ))
+            links = []
+            for index, a in enumerate(soup.select("a")):
+                href = a["href"]
+                if ignore_url(href):
+                    continue
+                if href in links:
+                    continue
+                links.append(href)
+                cursor.execute("insert into links (key, name, url, sort_order) values (?, ?, ?, ?)", (key, name, href, index))
+        db.commit()
     url = '/posts/' + name + ".html"
     result = Post(
         original_file=os.path.join(POSTS, name + ".md"),
@@ -278,6 +370,7 @@ def post_object(name):
         date=date, url=url,
         body=body,
         title=title,
+        links=links,
     )
     POSTS_CACHE[name] = result
     return result
