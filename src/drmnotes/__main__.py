@@ -227,9 +227,9 @@ def new_post():
 @attr.s()
 class Book:
     title = attr.ib()
-    author = attr.ib()
     url = attr.ib()
     page_range = attr.ib()
+    author = attr.ib(default=None)
 
 
 CANON = [
@@ -305,6 +305,447 @@ CANON = [
         url="https://amzn.to/36wKnYH",
         page_range=(2, 366),
     ),
+    Book(
+        title="Talking About Machines",
+        author="Julian Orr",
+        url="https://amzn.to/2WYeYew",
+        page_range=(1, 161),
+    ),
+    Book(
+        title="The Shock of the Old",
+        author="David Edgerton",
+        url="https://amzn.to/3bW2J6t",
+        page_range=(1, 239),
+    ),
+    Book(
+        title="100 Ways to Improve your Writing",
+        author="Gary Provost",
+        url="https://amzn.to/2LYdFGs",
+        page_range=(3, 158),
+    ),
+    Book(
+        title="Zero Bugs and Program Faster",
+        author="Kate Thompson",
+        url="https://amzn.to/3bUQPde",
+        page_range=(1, 89),
+    ),
+    Book(
+        title="Experiences of Depression",
+        author="Matthew Ratcliffe",
+        url="https://amzn.to/3ddtAMI",
+        page_range=(1, 281),
+    ),
+    Book(
+        title="Feelings of Being",
+        author="Matthew Ratcliffe",
+        url="https://amzn.to/3cZVGLq",
+        page_range=(1, 292),
+    ),
+    Book(
+        title="Invitation to Personal Construct Psychology",
+        author="Trevor Butt and Vivien Burr",
+        url="https://amzn.to/2AU4nZy",
+        page_range=(1, 142),
+    ),
+    Book(
+        title="Identity and Violence",
+        author="Amartya Sen",
+        url="https://amzn.to/2LWfV0H",
+        page_range=(1, 197),
+    ),
+    Book(
+        title="The Limits of Organization",
+        author="Kenneth J. Arrow",
+        url="https://amzn.to/3gl4duI",
+        page_range=(15, 79),
+    ),
+    Book(
+        title="Sexual Consent",
+        author="Milena Popova",
+        url="https://amzn.to/2ZBc9SE",
+        page_range=(1, 196),
+    ),
+    Book(
+        title="The Master's Tools Will Never Dismantle the Master's House",
+        author="Audre Lorde",
+        url="https://amzn.to/2X1gAEl",
+        page_range=(1, 51),
+    ),
+    Book(
+        title="Managing Oneself",
+        author="Peter F. Drucker",
+        url="https://amzn.to/2zsA6AN",
+        page_range=(1, 60),
+    ),
+    Book(
+        title="100 Truths You Will Learn Too Late",
+        author="Luca Dellanna",
+        url="https://amzn.to/2M0PQgQ",
+        page_range=(7, 179),
+    ),
+    Book(
+        title="I'm very into you",
+        author="Kathy Acker and McKenzie Wark",
+        url="https://amzn.to/2X33eHY",
+        page_range=(5, 151),
+    ),
+    Book(
+        title="Numbers and the Making of Us",
+        author="Caleb Everett",
+        page_range=(1, 290),
+        url="https://amzn.to/3gm0uNn",
+    ),
+    Book(
+        title="The Art of Creative Thinking",
+        author="Rod Judkins",
+        page_range=(1, 276),
+        url="https://amzn.to/2M3iTAp",
+    ),
+    Book(
+        title="Epistemology and the Psychology of Human Judgment",
+        author="Bishop and Trout",
+        page_range=(3, 185),
+        url="https://amzn.to/3c1qcDl",
+    ),
+    Book(
+        title="Proofs and Refutations",
+        author="Imre Lakatos",
+        page_range=(1, 154),
+        url="https://amzn.to/2ztC5ou",
+    ),
+    Book(
+        title="Statistics as Principled Argument",
+        author="Robert P. Abelson",
+        page_range=(1, 198),
+        url="https://amzn.to/2zrNCEE",
+    ),
+    Book(
+        title="The Origins of Unfairness",
+        author="Cailin O'Connor",
+        page_range=(1, 215),
+        url="https://amzn.to/36vh60C",
+    ),
+    Book(
+        title="Agnotology: The Making & Unmaking of Ignorance",
+        page_range=(1, 282),
+        url="https://amzn.to/2ZvGcLo",
+    ),
+    Book(
+        title="The Dictator's Handbook",
+        author="Bruce Bueno de Mesquita and Alastair Smith",
+        page_range=(1, 299),
+        url="https://amzn.to/2X18tI0",
+    ),
+    Book(
+        title="Small Arcs of Larger Circles",
+        author="Nora Bateson",
+        page_range=(11, 211),
+        url="https://amzn.to/3emyIP3",
+    ),
+    Book(
+        title="Complex PTSD: From Surviving to Thriving",
+        author="Pete Walker",
+        page_range=(1, 334),
+        url="https://amzn.to/36FhMRj",
+    ),
+    Book(
+        title="The Best Kept Secrets of Peer Code Review",
+        author="Cohen et al.",
+        page_range=(7, 140),
+        url="https://amzn.to/2Xqygsg",
+    ),
+    Book(
+        title="The Art of Not Being Governed",
+        author="James C. Scott",
+        page_range=(1, 406),
+        url="https://amzn.to/2LZMM4W",
+    ),
+    Book(
+        title="Seeing Like a State",
+        author="James C. Scott",
+        page_range=(1, 432),
+        url="https://amzn.to/2ZB2wmE",
+    ),
+    Book(
+        title="Domination and the Arts of Resistance",
+        author="James C. Scott",
+        page_range=(1, 227),
+        url="https://amzn.to/2zt00V3",
+    ),
+    Book(
+        title="Against the Grain",
+        author="James C. Scott",
+        page_range=(1, 278),
+        url="https://amzn.to/2TC15R4",
+    ),
+    Book(
+        title="Manifesto of a Passionate Moderate",
+        author="Susan Haack",
+        page_range=(1, 212),
+        url="https://amzn.to/2AVkkyB",
+    ),
+    Book(
+        title="The Courage to be Disliked",
+        author="Ichiro Kishimi and Fumitake Koga",
+        page_range=(3, 272),
+        url="https://amzn.to/36vb9Rt",
+    ),
+    Book(
+        title="Don't Think of an Elephant!",
+        author="George Lakoff",
+        page_range=(3, 119),
+        url="https://amzn.to/2TDuCKh",
+    ),
+    Book(
+        title="Trans Like Me",
+        author="CN Lester",
+        page_range=(1, 226),
+        url="https://amzn.to/2TD3qva",
+    ),
+    Book(
+        title="Xenofeminism",
+        author="Helen Hester",
+        page_range=(1, 169),
+        url="https://amzn.to/2ZwZwYJ",
+    ),
+    Book(
+        title="The Tyranny of Metrics",
+        author="Jerry Z. Muller",
+        page_range=(1, 212),
+        url="https://amzn.to/2TyM7LO",
+    ),
+    Book(
+        title="Democracy in Small Groups",
+        author="John Gastil",
+        page_range=(1, 257),
+        url="https://amzn.to/2yvyoOw",
+    ),
+    Book(
+        title="Against Interpretation",
+        author="Susan Sontag",
+        page_range=(3, 312),
+        url="https://amzn.to/2TG85N8",
+    ),
+    Book(
+        title="Random Justice",
+        author="Neil Duxbury",
+        page_range=(1, 174),
+        url="https://amzn.to/2TCbsoa",
+    ),
+    Book(
+        title="Emergent Strategy",
+        author="adrienne maree brown",
+        page_range=(1, 274),
+        url="https://amzn.to/2ZHvam6",
+    ),
+    Book(
+        title="Handbook of Collective Intelligence",
+        page_range=(1, 210),
+        url="https://amzn.to/3bVjr68",
+    ),
+    Book(
+        title="Models",
+        author="Mark Manson",
+        page_range=(1, 235),
+        url="https://amzn.to/2LZKPFo",
+    ),
+    Book(
+        title="Unlearning Meditation",
+        author="Jason Siff",
+        page_range=(3, 200),
+        url="https://amzn.to/2LYHsig",
+    ),
+    Book(
+        title="A Paradise Built in Hell",
+        author="Rebecca Solnit",
+        page_range=(1, 345),
+        url="https://amzn.to/2ZA5hVr",
+    ),
+    Book(
+        title="A Field Guide to Getting Lost",
+        author="Rebecca Solnit",
+        page_range=(3, 206),
+        url="https://amzn.to/2TC4j78",
+    ),
+    Book(
+        title="Perplexities of Consciousness",
+        author="Eric Schwitzgebel",
+        page_range=(1, 186),
+        url="https://amzn.to/2AVz40p",
+    ),
+    Book(
+        title="The Economy of Cities",
+        author="Jane Jacobs",
+        page_range=(3, 161),
+        url="https://amzn.to/2WYUxyi",
+    ),
+    Book(
+        title="A Little Book on the Human Shadow",
+        author="Robert Bly",
+        page_range=(7, 81),
+        url="https://amzn.to/2ZCqSNc",
+    ),
+    Book(
+        title="Descartes' Error",
+        author="Antonio Damasio",
+        page_range=(3, 291),
+        url="https://amzn.to/2AUQ2vW",
+    ),
+    Book(
+        title="Pleasure Activism",
+        author="adrienne maree brown",
+        page_range=(3, 441),
+        url="https://amzn.to/3ejmK8U",
+    ),
+    Book(
+        title="A Slip of the Keyboard",
+        author="Terry Pratchett",
+        page_range=(13, 381),
+        url="https://amzn.to/3ejebL0",
+    ),
+    Book(
+        title="How you stand, how you move, how you live",
+        author="Missy Vineyard",
+        page_range=(1, 304),
+        url="https://amzn.to/36sFDTY",
+    ),
+    Book(
+        title="Lateral Thinking",
+        author="Edward de Bono",
+        page_range=(7, 260),
+        url="https://amzn.to/3gggmRz",
+    ),
+    Book(
+        title="Six Thinking Hats",
+        author="Edward de Bono",
+        page_range=(1, 177),
+        url="https://amzn.to/2LX896H",
+    ),
+    Book(
+        title="How to Read a Book",
+        author="Adler and Van Doren",
+        page_range=(3, 336),
+        url="https://amzn.to/2zlGgmp",
+    ),
+    Book(
+        title="How to Improve Your Foreign Language Immediately",
+        author="Boris Shekhtman",
+        page_range=(19, 103),
+        url="https://amzn.to/2X2Z9U1",
+    ),
+    Book(
+        title="Mindfulness in 3D",
+        author="Peter Nobes",
+        page_range=(12, 131),
+        url="https://amzn.to/3c3pi9B",
+    ),
+    Book(
+        title="The Knowledge Illusion",
+        author="Sloman and Fernbach",
+        page_range=(1, 265),
+        url="https://amzn.to/3ejqPtK",
+    ),
+    Book(
+        title="Every Cradle Is a Grave",
+        author="Sarah Perry",
+        page_range=(7, 213),
+        url="https://amzn.to/2yujvfk",
+    ),
+    Book(
+        title="The Postmodern Condition",
+        author="Jean-Francois Lyotard",
+        page_range=(3, 103),
+        url="https://amzn.to/2yvFBy3",
+    ),
+    Book(
+        title="The Current Affairs Mindset",
+        page_range=(11, 234),
+        url="https://amzn.to/2LZvV1S",
+    ),
+    Book(
+        title="The Strategy of Conflict",
+        author="Thomas C. Schelling",
+        page_range=(3, 303),
+        url="https://amzn.to/2X0KYyH",
+    ),
+    Book(
+        title="Focusing-Oriented Psychotherapy",
+        author="Eugene T. Gendlin",
+        page_range=(1, 304),
+        url="https://amzn.to/2yujHey",
+    ),
+    Book(
+        title="Feminism is for Everybody",
+        author="bell hooks",
+        page_range=(1, 118),
+        url="https://amzn.to/2MauUV7",
+    ),
+    Book(
+        title="The Inner Game of Tennis",
+        author="W. Timothy Gallwey",
+        page_range=(3, 134),
+        url="https://amzn.to/2LUnchH",
+    ),
+    Book(
+        title="Thinking in Bets",
+        author="Annie Duke",
+        page_range=(1, 252),
+        url="https://amzn.to/3deDz4N",
+    ),
+    Book(
+        title="Hope in the Dark",
+        author="Rebecca Solnit",
+        page_range=(1, 142),
+        url="https://amzn.to/3bZxFTC",
+    ),
+    Book(
+        title="Sherlock Holmes was Wrong",
+        author="Pierre Bayard",
+        page_range=(3, 188),
+        url="https://amzn.to/2LU8yqy",
+        
+    ),
+    Book(
+        title="Debt: The First 5,000 Years",
+        author="David Graeber",
+        page_range=(1, 462),
+        url="https://amzn.to/36sIEDX",
+    ),
+    Book(
+        title="Behind Human Error",
+        author="Woods et al.",
+        page_range=(1, 249),
+        url="https://amzn.to/2LZNHSF",
+    ),
+    Book(
+        title="The Emotion Machine",
+        author="Marvin Minsky",
+        page_range=(1, 360),
+        url="https://amzn.to/36uGZ0s",
+    ),
+    Book(
+        title="Exuberant Animal",
+        author="Frank Forencich",
+        page_range=(3, 311),
+        url="https://amzn.to/3c0QDt4",
+    ),
+    Book(
+        title="The Righteous Mind",
+        author="Jonathan Haidt",
+        page_range=(3, 449),
+        url="https://amzn.to/3d2oym9",
+    ),
+    Book(
+        title="Where Good Ideas Come From",
+        author="Steven Johnson",
+        page_range=(3, 302),
+        url="https://amzn.to/36FzofT",
+    ),
+    Book(
+        title="Sefer Chofetz Chaim",
+        page_range=(1, 302),
+        url="https://amzn.to/3d3RNoG",
+    )
 ]
 
 
@@ -334,7 +775,10 @@ def book_post():
             assert result is None
             return
 
-    prompt = f"From [{book.title}]({book.url}) by {book.author}, page {page}:"
+    if book.author:
+        prompt = f"From [{book.title}]({book.url}) by {book.author}, page {page}:"
+    else:
+        prompt = f"From [{book.title}]({book.url}), page {page}:"
 
     now = datetime.now()
     name = now.strftime(POST_DATE_FORMAT)
