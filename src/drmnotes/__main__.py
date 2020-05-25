@@ -27,6 +27,7 @@ from prompt_toolkit.shortcuts import radiolist_dialog
 
 _DATABASE = None
 
+
 def database():
     global _DATABASE
     if _DATABASE is None:
@@ -36,6 +37,7 @@ def database():
             pass
         _DATABASE = sqlite3.connect(os.path.join(CACHE_DIR, "cache.db"))
     return _DATABASE
+
 
 def json_cached(f):
     @cached
@@ -49,6 +51,7 @@ def json_cached(f):
 
     return accept
 
+
 def cached(f):
     name = f.__name__
 
@@ -56,7 +59,7 @@ def cached(f):
 
     @functools.wraps(f)
     def accept(*args):
-        key = cache_key(':'.join(args))
+        key = cache_key(":".join(args))
 
         try:
             return cache[key]
@@ -64,12 +67,19 @@ def cached(f):
             pass
         db = database()
         cursor = db.cursor()
-        cursor.execute("create table if not exists cache_objects(name text, key unsigned bigint, result text, unique (name, key))")
-        cursor.execute("select result from cache_objects where name = ? and key = ?", (name, key))
+        cursor.execute(
+            "create table if not exists cache_objects(name text, key unsigned bigint, result text, unique (name, key))"
+        )
+        cursor.execute(
+            "select result from cache_objects where name = ? and key = ?", (name, key)
+        )
         row = cursor.fetchone()
         if row is None:
             result = f(*args)
-            cursor.execute("insert into cache_objects(name, key, result) values(?, ?, ?)", (name, key, result))
+            cursor.execute(
+                "insert into cache_objects(name, key, result) values(?, ?, ?)",
+                (name, key, result),
+            )
         else:
             result = row[0]
         db.commit()
@@ -78,31 +88,33 @@ def cached(f):
 
     return accept
 
+
 @json_cached
 def fetch(url):
     try:
         req = requests.head(url)
 
-        content_types = req.headers.get("content-type", ('text/html',))
+        content_types = req.headers.get("content-type", ("text/html",))
         if "text/html" in content_types:
             req = requests.get(req.url)
             text = req.text
         else:
             text = None
     except requests.ConnectionError:
-        return {'url': url, 'contents': None, 'status': None}
+        return {"url": url, "contents": None, "status": None}
 
-    return {'url': req.url, 'contents': text, 'status': req.status_code}
+    return {"url": req.url, "contents": text, "status": req.status_code}
+
 
 @cached
 def title(url):
     parsed = urlparse(url)
-    if parsed.netloc in ('', 'notebook.drmaciver.com'):
-        if parsed.path == '/':
+    if parsed.netloc in ("", "notebook.drmaciver.com"):
+        if parsed.path == "/":
             return "My Notebook"
         else:
-            assert parsed.path.startswith('/posts/')
-            name = parsed.path[len("/posts/"):-len(".html")]
+            assert parsed.path.startswith("/posts/")
+            name = parsed.path[len("/posts/") : -len(".html")]
             return post_object(name).title
     fetched = fetch(url)
     if fetched["status"] != 200:
@@ -116,8 +128,10 @@ def title(url):
         return None
     return re.compile("\s+", re.MULTILINE).sub(" ", title.text).strip()
 
+
 def git(*args):
     subprocess.check_call(["git", *args])
+
 
 @attr.s()
 class Post(object):
@@ -131,31 +145,28 @@ class Post(object):
     links = attr.ib()
 
 
-ROOT = os.path.abspath(os.path.join(
-    os.path.dirname(__file__),
-    '..', '..',
-))
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 
-assert os.path.exists(os.path.join(ROOT, 'setup.py'))
+assert os.path.exists(os.path.join(ROOT, "setup.py"))
 
-CACHE_DIR = os.path.join(ROOT, '.cache')
+CACHE_DIR = os.path.join(ROOT, ".cache")
 
 
-TEMPLATES = os.path.join(ROOT, 'templates')
-POSTS = os.path.join(ROOT, 'posts')
+TEMPLATES = os.path.join(ROOT, "templates")
+POSTS = os.path.join(ROOT, "posts")
 
-HTML_ROOT = os.path.join(ROOT, 'docs')
+HTML_ROOT = os.path.join(ROOT, "docs")
 
-INDEX_PAGE = os.path.join(HTML_ROOT, 'index.html')
+INDEX_PAGE = os.path.join(HTML_ROOT, "index.html")
 
-HTML_POSTS = os.path.join(HTML_ROOT, 'posts')
+HTML_POSTS = os.path.join(HTML_ROOT, "posts")
 
-EDITOR = 'vim'
+EDITOR = "vim"
 
 
 TEMPLATE_LOOKUP = TemplateLookup(
     directories=[TEMPLATES, POSTS],
-    module_directory=os.path.join(CACHE_DIR, 'mako_modules')
+    module_directory=os.path.join(CACHE_DIR, "mako_modules"),
 )
 
 
@@ -164,7 +175,8 @@ def main():
     pass
 
 
-POST_DATE_FORMAT = '%Y-%m-%d-%H:%M'
+POST_DATE_FORMAT = "%Y-%m-%d-%H:%M"
+
 
 def contents(filename):
     try:
@@ -175,9 +187,7 @@ def contents(filename):
 
 
 def edit_and_commit_post(name, prompt=None):
-    post_file = os.path.join(
-        POSTS, name + '.md'
-    )
+    post_file = os.path.join(POSTS, name + ".md")
 
     exists = os.path.exists(post_file)
 
@@ -197,7 +207,7 @@ def edit_and_commit_post(name, prompt=None):
         return
 
     do_build(rebuild=False)
-    files = [post_file, os.path.join(HTML_POSTS, name + '.html')]
+    files = [post_file, os.path.join(HTML_POSTS, name + ".html")]
     git("add", *files)
     git("add", "-u", HTML_ROOT)
 
@@ -207,10 +217,10 @@ def edit_and_commit_post(name, prompt=None):
         git("commit", "-m", "Add new post %r" % (name,))
 
 
-@main.command(name='new-post')
+@main.command(name="new-post")
 def new_post():
     now = datetime.now()
-    name = now.strftime(POST_DATE_FORMAT) 
+    name = now.strftime(POST_DATE_FORMAT)
     edit_and_commit_post(name)
 
 
@@ -294,11 +304,11 @@ CANON = [
         author="Meg-John Barker",
         url="https://amzn.to/36wKnYH",
         page_range=(2, 366),
-    )
+    ),
 ]
 
 
-@main.command(name='book-post')
+@main.command(name="book-post")
 def book_post():
 
     book = random.choice(CANON)
@@ -331,58 +341,54 @@ def book_post():
     edit_and_commit_post(name, prompt=prompt)
 
 
-@main.command(name='edit-post')
-@click.argument('name', default='')
+@main.command(name="edit-post")
+@click.argument("name", default="")
 def edit_post(name):
     if not name:
         name = max(os.listdir(POSTS))
     name = os.path.basename(name)
-    name = name.replace('.md', '')
+    name = name.replace(".md", "")
     edit_and_commit_post(name)
-
 
 
 class MathJaxExtension(markdown.Extension):
     def extendMarkdown(self, md, md_globals):
         # Needs to come before escape matching because \ is pretty important in LaTeX
-        md.inlinePatterns.add('mathjax', MathJaxPattern(md), '<escape')
+        md.inlinePatterns.add("mathjax", MathJaxPattern(md), "<escape")
 
 
 class MathJaxPattern(markdown.inlinepatterns.Pattern):
-
     def __init__(self, md):
-        markdown.inlinepatterns.Pattern.__init__(self, r'\\\((.+?)\\\)', md)
+        markdown.inlinepatterns.Pattern.__init__(self, r"\\\((.+?)\\\)", md)
 
     def handleMatch(self, m):
-        return self.markdown.htmlStash.store(
-            r"\(" + cgi.escape(m.group(2)) + r"\)"
-        )
+        return self.markdown.htmlStash.store(r"\(" + cgi.escape(m.group(2)) + r"\)")
 
 
 LATEX_BLOCK = r"(\\begin{[^}]+}.+?\\end{[^}]+})"
 LATEX_EXPR = r"(\\\(.+?\\\))"
 
 
-DEL_RE = r'(~~)(.*?)~~'
-
+DEL_RE = r"(~~)(.*?)~~"
 
 
 class MathJaxAlignExtension(markdown.Extension):
     def extendMarkdown(self, md, md_globals):
         # Needs to come before escape matching because \ is pretty important in LaTeX
-        md.inlinePatterns.add('mathjaxblocks', HtmlPattern(LATEX_BLOCK, md), '<escape')
-        md.inlinePatterns.add('mathjaxexprs', HtmlPattern(LATEX_EXPR, md), '<escape')
-        md.inlinePatterns.add('del', SimpleTagPattern(DEL_RE, 'del') , '>not_strong')
+        md.inlinePatterns.add("mathjaxblocks", HtmlPattern(LATEX_BLOCK, md), "<escape")
+        md.inlinePatterns.add("mathjaxexprs", HtmlPattern(LATEX_EXPR, md), "<escape")
+        md.inlinePatterns.add("del", SimpleTagPattern(DEL_RE, "del"), ">not_strong")
 
 
 @cached
 def md(text):
     return markdown.markdown(
-        text, extensions=[
+        text,
+        extensions=[
             MathJaxAlignExtension(),
-            'markdown.extensions.fenced_code',
-            'markdown.extensions.codehilite',
-        ]
+            "markdown.extensions.fenced_code",
+            "markdown.extensions.codehilite",
+        ],
     )
 
 
@@ -395,27 +401,28 @@ def clean_html(soup):
 
 
 @main.command()
-@click.option('--rebuild/--no-rebuild', default=False)
-@click.option('--full/--posts-only', default=True)
-@click.argument('name', default='')
+@click.option("--rebuild/--no-rebuild", default=False)
+@click.option("--full/--posts-only", default=True)
+@click.argument("name", default="")
 def build(rebuild, full, name):
     do_build(rebuild, full, name)
 
 
 def cache_key(s):
-    return int.from_bytes(hashlib.sha1(s.encode('utf-8')).digest()[:4], 'big')
+    return int.from_bytes(hashlib.sha1(s.encode("utf-8")).digest()[:4], "big")
 
 
 def post_names():
-    return [
-        os.path.basename(f)[:-3] for f in glob(os.path.join(POSTS, "*.md"))
-    ]
+    return [os.path.basename(f)[:-3] for f in glob(os.path.join(POSTS, "*.md"))]
 
 
 def mine(url):
     parsed = urllib.parse.urlparse(url)
     return parsed.netloc in (
-        "drmaciver.com", "notebook.drmaciver.com", "drmaciver.substack.com", ""
+        "drmaciver.com",
+        "notebook.drmaciver.com",
+        "drmaciver.substack.com",
+        "",
     )
 
 
@@ -432,13 +439,14 @@ def ignore_url(url):
 
 POSTS_CACHE = {}
 
+
 def post_object(name):
     try:
         return POSTS_CACHE[name]
     except KeyError:
         pass
     post_html_file = os.path.join(HTML_POSTS, name + ".html")
-    
+
     with open(post_html_file) as i:
         contents = i.read()
 
@@ -448,40 +456,51 @@ def post_object(name):
 
         cursor = db.cursor()
 
-        cursor.execute("""
+        cursor.execute(
+            """
             create table if not exists posts(
                 name text, key unsigned bigint, date text, body text, title text,
                 unique (name, key)
             )
-        """)
+        """
+        )
 
-        cursor.execute("""
+        cursor.execute(
+            """
             create table if not exists links(
                 name text, key unsigned bigint, url text, sort_order unsigned bigint,
                 unique (name, key, url)
             )
-        """)
+        """
+        )
 
-        cursor.execute("select date, title, body from posts where key = ? and name = ?", (key, name))
+        cursor.execute(
+            "select date, title, body from posts where key = ? and name = ?",
+            (key, name),
+        )
 
         row = cursor.fetchone()
         if row is not None:
             date, title, body = row
-            cursor.execute("select url from links where key = ? and name = ? order by sort_order", (key, name))
+            cursor.execute(
+                "select url from links where key = ? and name = ? order by sort_order",
+                (key, name),
+            )
             links = [url for url, in cursor if not ignore_url(url)]
         else:
-            soup = BeautifulSoup(contents, 'html.parser')
+            soup = BeautifulSoup(contents, "html.parser")
             title_elts = soup.select("p.subtitle")
 
             if not title_elts:
                 title = name
             else:
-                title = ' '.join(map(str, title_elts[0].contents))
-            body = '\n'.join(map(str, soup.select('#the-post')[0].children))
-            date = soup.select('dd.post-date')[0].text.strip()
-            cursor.execute("insert into posts (key, name, date, title, body) values (?, ?, ?, ?, ?)", (
-                key, name, date, title, body
-            ))
+                title = " ".join(map(str, title_elts[0].contents))
+            body = "\n".join(map(str, soup.select("#the-post")[0].children))
+            date = soup.select("dd.post-date")[0].text.strip()
+            cursor.execute(
+                "insert into posts (key, name, date, title, body) values (?, ?, ?, ?, ?)",
+                (key, name, date, title, body),
+            )
             links = []
             for index, a in enumerate(soup.select("a")):
                 href = a["href"]
@@ -490,13 +509,17 @@ def post_object(name):
                 if href in links:
                     continue
                 links.append(href)
-                cursor.execute("insert into links (key, name, url, sort_order) values (?, ?, ?, ?)", (key, name, href, index))
+                cursor.execute(
+                    "insert into links (key, name, url, sort_order) values (?, ?, ?, ?)",
+                    (key, name, href, index),
+                )
         db.commit()
-    url = '/posts/' + name + ".html"
+    url = "/posts/" + name + ".html"
     result = Post(
         original_file=os.path.join(POSTS, name + ".md"),
         name=name,
-        date=date, url=url,
+        date=date,
+        url=url,
         body=body,
         title=title,
         links=links,
@@ -504,22 +527,23 @@ def post_object(name):
     POSTS_CACHE[name] = result
     return result
 
+
 @cached
 def post_html(name, source_text):
     source_html = md(source_text)
-    soup = BeautifulSoup(source_html, 'html.parser')
+    soup = BeautifulSoup(source_html, "html.parser")
 
     title_elt = soup.find("h1")
 
     if title_elt is None:
         title = None
     else:
-        title = ' '.join(map(str, title_elt.contents))
+        title = " ".join(map(str, title_elt.contents))
         title_elt.decompose()
 
     for d in [3, 2]:
-        for f in soup.findAll('h%d' % (d,)):
-            f.name = 'h%d' % (d + 1,)
+        for f in soup.findAll("h%d" % (d,)):
+            f.name = "h%d" % (d + 1,)
 
     date = datetime.strptime(name, POST_DATE_FORMAT)
     post_template = TEMPLATE_LOOKUP.get_template("post.html")
@@ -527,12 +551,12 @@ def post_html(name, source_text):
     return post_template.render(
         post=clean_html(soup),
         title=title,
-        date=date.strftime('%Y-%m-%d'),
+        date=date.strftime("%Y-%m-%d"),
         url=f"https://notebook.drmaciver.com/posts/{name}.html",
     )
 
 
-def do_build(rebuild=False, full=True, name=''):
+def do_build(rebuild=False, full=True, name=""):
     only = name
 
     try:
@@ -548,26 +572,23 @@ def do_build(rebuild=False, full=True, name=''):
         dest = os.path.join(HTML_POSTS, name + ".html")
 
         if not (
-            rebuild or
-            not os.path.exists(dest) or
-            os.path.getmtime(source) > os.path.getmtime(dest)
+            rebuild
+            or not os.path.exists(dest)
+            or os.path.getmtime(source) > os.path.getmtime(dest)
         ):
             continue
 
         with open(source) as i:
             source_text = i.read()
 
-        with open(dest, 'w') as o:
+        with open(dest, "w") as o:
             o.write(post_html(name, source_text))
-
 
     if not full:
         return
 
     for post in glob(os.path.join(HTML_POSTS, "*.html")):
-        source = os.path.join(
-            POSTS, os.path.basename(post).replace('.html', '.md')
-        )
+        source = os.path.join(POSTS, os.path.basename(post).replace(".html", ".md"))
         if not os.path.exists(source):
             os.unlink(post)
 
@@ -588,41 +609,56 @@ def do_build(rebuild=False, full=True, name=''):
             old_posts.append((date, []))
         old_posts[-1][-1].append(post)
 
-
-    with open(INDEX_PAGE, 'w') as o:
-        o.write(TEMPLATE_LOOKUP.get_template('index.html').render(
-            new_posts=new_posts, old_posts=old_posts, title="Thoughts from David R. MacIver",
-        ))
-
+    with open(INDEX_PAGE, "w") as o:
+        o.write(
+            TEMPLATE_LOOKUP.get_template("index.html").render(
+                new_posts=new_posts,
+                old_posts=old_posts,
+                title="Thoughts from David R. MacIver",
+            )
+        )
 
     fg = FeedGenerator()
-    fg.id('https://notebook.drmaciver.com/')
+    fg.id("https://notebook.drmaciver.com/")
     fg.title("DRMacIver's notebook")
-    fg.author( {'name':'David R. MacIver','email':'david@drmaciver.com'} )
-    fg.link(href='https://notebook.drmaciver.com', rel='alternate')
-    fg.link(href='https://notebook.drmaciver.com/feed.xml', rel='self')
-    fg.language('en')
+    fg.author({"name": "David R. MacIver", "email": "david@drmaciver.com"})
+    fg.link(href="https://notebook.drmaciver.com", rel="alternate")
+    fg.link(href="https://notebook.drmaciver.com/feed.xml", rel="self")
+    fg.language("en")
 
     dates = []
 
     for post in sorted(posts, key=lambda p: p.date, reverse=True)[:10]:
         fe = fg.add_entry()
-        fe.id('https://notebook.drmaciver.com' + post.url)
-        fe.link(href='https://notebook.drmaciver.com' + post.url)
+        fe.id("https://notebook.drmaciver.com" + post.url)
+        fe.link(href="https://notebook.drmaciver.com" + post.url)
         fe.title(post.title or post.name)
         fe.content(post.body, type="html")
-        updated = subprocess.check_output([
-        "git", "log", "-1", '--date=iso8601', '--format="%ad"', "--", post.original_file,
-        ]).decode('ascii').strip().strip('"')
+        updated = (
+            subprocess.check_output(
+                [
+                    "git",
+                    "log",
+                    "-1",
+                    "--date=iso8601",
+                    '--format="%ad"',
+                    "--",
+                    post.original_file,
+                ]
+            )
+            .decode("ascii")
+            .strip()
+            .strip('"')
+        )
         if updated:
             updated = dateutil.parser.parse(updated)
         else:
-            updated = datetime.strptime(post.name.replace('.html', ''), POST_DATE_FORMAT).replace(
-                tzinfo=tz.gettz()
-            )
+            updated = datetime.strptime(
+                post.name.replace(".html", ""), POST_DATE_FORMAT
+            ).replace(tzinfo=tz.gettz())
         dates.append(updated)
         fe.updated(updated)
 
     fg.updated(max(dates))
 
-    fg.atom_file(os.path.join(HTML_ROOT, 'feed.xml'), pretty=True)
+    fg.atom_file(os.path.join(HTML_ROOT, "feed.xml"), pretty=True)
