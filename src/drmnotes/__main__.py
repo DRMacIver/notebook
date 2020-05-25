@@ -21,6 +21,8 @@ import urllib
 from urllib.parse import urlparse
 import json
 import requests
+import random
+from prompt_toolkit.shortcuts import radiolist_dialog
 
 
 _DATABASE = None
@@ -172,16 +174,26 @@ def contents(filename):
         pass
 
 
-def edit_and_commit_post(name):
+def edit_and_commit_post(name, prompt=None):
     post_file = os.path.join(
         POSTS, name + '.md'
     )
+
+    exists = os.path.exists(post_file)
+
+    assert not (exists and prompt)
+
+    if prompt:
+        with open(post_file, "w") as o:
+            o.write(prompt)
 
     prev = contents(post_file)
 
     call([EDITOR, post_file])
 
     if contents(post_file) == prev:
+        if not exists and os.path.exists(post_file):
+            os.unlink(post_file)
         return
 
     do_build(rebuild=False)
@@ -200,6 +212,123 @@ def new_post():
     now = datetime.now()
     name = now.strftime(POST_DATE_FORMAT) 
     edit_and_commit_post(name)
+
+
+@attr.s()
+class Book:
+    title = attr.ib()
+    author = attr.ib()
+    url = attr.ib()
+    page_range = attr.ib()
+
+
+CANON = [
+    Book(
+        title="Leisure: The Basis of Culture",
+        author="Josef Pieper",
+        url="https://amzn.to/3gnbo5l",
+        page_range=(3, 156),
+    ),
+    Book(
+        title="Voices: The Educational Formation of Conscience",
+        author="Thomas F. Green",
+        url="https://amzn.to/2X0wxe2",
+        page_range=(1, 210),
+    ),
+    Book(
+        title="Conflict is Not Abuse",
+        author="Sarah Schulman",
+        url="https://amzn.to/3emI4ud",
+        page_range=(15, 285),
+    ),
+    Book(
+        title="How to talk about books you haven't read",
+        author="Pierre Bayard",
+        url="https://amzn.to/2yzEkGq",
+        page_range=(3, 185),
+    ),
+    Book(
+        title="Finding Our Sea-Legs",
+        author="Will Buckingham",
+        url="https://amzn.to/3d3M3vs",
+        page_range=(1, 180),
+    ),
+    Book(
+        title="Ritual and its Consequences",
+        author="Seligman, Weller, Puett, and Simon",
+        url="https://amzn.to/3d55qUM",
+        page_range=(3, 197),
+    ),
+    Book(
+        title="Epistemic Injustice: Power and the Ethics of Knowing",
+        author="Miranda Fricker",
+        url="https://amzn.to/3d3aby7",
+        page_range=(1, 177),
+    ),
+    Book(
+        title="all about love",
+        author="bell hooks",
+        url="https://amzn.to/2WYa559",
+        page_range=(3, 237),
+    ),
+    Book(
+        title="the wave in the mind",
+        author="Ursula K. Le Guin",
+        url="https://amzn.to/3d13X1P",
+        page_range=(3, 301),
+    ),
+    Book(
+        title="Two Cheers for Anarchism",
+        author="James C. Scott",
+        url="https://amzn.to/3c2iusJ",
+        page_range=(1, 149),
+    ),
+    Book(
+        title="Sorting Things Out: Classification and its Consequences",
+        author="Bowker and Star",
+        url="https://amzn.to/2A9stPS",
+        page_range=(1, 333),
+    ),
+    Book(
+        title="Rewriting the Rules",
+        author="Meg-John Barker",
+        url="https://amzn.to/36wKnYH",
+        page_range=(2, 366),
+    )
+]
+
+
+@main.command(name='book-post')
+def book_post():
+
+    book = random.choice(CANON)
+
+    while True:
+        page = random.randint(*book.page_range)
+        result = radiolist_dialog(
+            values=[
+                ("yes", "Yes"),
+                ("new-book", "Pick a different book"),
+                ("new-page", "Pick a different page"),
+            ],
+            text=f"Would you like to write about {book.title} page {page}?",
+        ).run()
+
+        if result == "yes":
+            break
+        elif result == "new-book":
+            book = random.choice(CANON)
+        elif result == "new-page":
+            pass
+        else:
+            assert result is None
+            return
+
+    prompt = f"From [{book.title}]({book.url}) by {book.author}, page {page}:"
+
+    now = datetime.now()
+    name = now.strftime(POST_DATE_FORMAT)
+    edit_and_commit_post(name, prompt=prompt)
 
 
 @main.command(name='edit-post')
