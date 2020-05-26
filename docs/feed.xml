@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-05-26T06:09:00+01:00</updated>
+  <updated>2020-05-25T09:48:09+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,6 +10,80 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-05-17-11:45.html</id>
+    <title>Requiem for a pair of trousers</title>
+    <updated>2020-05-17T14:14:26+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Requiem for a pair of trousers&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-05-17&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Based on random prompting this morning think today's post is supposed to be about using stories to communicate philosophical ideas, but I don't wanna, so instead I'm going to tell you a story to communicate philosophical ideas.&lt;/p&gt;
+
+
+&lt;p&gt;I've spent about the last 45 minutes sitting out in the sun destroying a pair of trousers.&lt;/p&gt;
+
+
+&lt;p&gt;This isn't a euphemism, or a side effect, or anything else. I was literally sitting there in my garden taking a seam ripper to a pair of trousers, taking it apart for spare material.&lt;/p&gt;
+
+
+&lt;p&gt;The trousers were dying - there was a hole in the crotch, and the surrounding material was thin enough that if I'd patched it it'd probably have just ripped again. I didn't have any material to make a patch, and also the trousers weren't very good (and were a little tight) in the first place so I probably wouldn't have worn them even once patched. I have vague intentions of using some of the material to make home made face masks, but I'm not sure how suitable it will actually be for that, and most of it won't be used that way.&lt;/p&gt;
+
+
+&lt;p&gt;I didn't get very far. So far I've removed the back pockets and the zip and some of the other parts have been partially separated.&lt;/p&gt;
+
+
+&lt;p&gt;There is no sense in which this is a reasonable use of my time. I'm not especially good at sewing, or in this case unsewing. I could buy a cloth facemask for not that much money. If you look at the day rate I could charge a software company for my consulting services I could probably have bought two new pairs of trousers for the price.&lt;/p&gt;
+
+
+&lt;p&gt;These trousers came from somewhere. There's no spontaneous generation of trousers - someone sewed these together somewhere. Probably, I must admit, in a sweatshop. They're from Gap, who I doubt have the most ethical of production practices (there's a high cost in human suffering for the prevalence of cheap clothing. I'd be lying if I said I was very good at taking that into account in my purchasing habits).&lt;/p&gt;
+
+
+&lt;p&gt;I've probably already spent more disassembling these trousers than that unknown factory worker spent assembling them.&lt;/p&gt;
+
+
+&lt;p&gt;It may interest you to know that I'm alternating writing this post with continuing my trouser disassembly project. I just removed a belt loop.&lt;/p&gt;
+
+
+&lt;p&gt;It probably doesn't interest you to know this. That's OK. There is probably no sense in which reading this post is a reasonable use of your time either.&lt;/p&gt;
+
+
+&lt;p&gt;I said there was no sense in which disassembling these trousers was a reasonable use of my time, but actually that's not true. There are two important senses:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;I wanted to do it.&lt;/li&gt;
+&lt;li&gt;I feel better for having done so.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;It certainly wasn't &lt;em&gt;less&lt;/em&gt; reasonable spending time doing this than it would have been, say, watching TV, or playing a game. I'm not going to claim it was more reasonable, but it's still something that could be considered a leisure activity for me.&lt;/p&gt;
+
+
+&lt;p&gt;I wrote yesterday about &lt;a href="https://notebook.drmaciver.com/posts/2020-05-16-12:06.html"&gt;acedia&lt;/a&gt;, the sense of being disconnected from sources of meaning, and how working with your hands is one possible antidote to that. I'm not going to claim trouser disassembly is the great cure for modern ills, but there's definitely something nice about sitting in the garden with your hands occupied, thinking as you work on semi autopilot.&lt;/p&gt;
+
+
+&lt;p&gt;I didn't know how to use a seam ripper before this. I was vaguely aware seam rippers were a thing, but I had to look them up in order to figure out that I already owned one in my sewing kit. So one nice side effect of this is that I now know how to use a seam ripper.&lt;/p&gt;
+
+
+&lt;p&gt;I was going to say that this was completely useless knowledge, but then I realised that actually I could use the seam ripper to remove the label from the inside T-shirt I was wearing, which has a really weirdly annoyingly large label.&lt;/p&gt;
+
+
+&lt;p&gt;Unfortunately, I forgot that the seams on labels are usually structural - they're not added on top of the seam they're attached to, but are sewn directly into it, so now I have a hole in my T-shirt that I need to sew up.&lt;/p&gt;
+
+
+&lt;p&gt;This is probably a metaphor for something, but I don't know what.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-05-17-11:45.html" rel="alternate"/>
+  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-18-09:41.html</id>
     <title>Bug Fixes and Performance Improvements</title>
@@ -627,7 +701,7 @@ I attribute this largely to the almost total lack of wearing shoes, especially a
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-25-09:18.html</id>
     <title>Identity and Legitimisation of Knowledge</title>
-    <updated>2020-05-25T09:55:20+01:00</updated>
+    <updated>2020-05-25T09:48:09+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Identity and Legitimisation of Knowledge&lt;/p&gt;
@@ -676,22 +750,5 @@ One of the roles of social power is control over the legitimisation process for 
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-05-25-09:18.html" rel="alternate"/>
-  </entry>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-05-26-06:09.html</id>
-    <title>2020-05-26-06:09</title>
-    <updated>2020-05-26T06:09:00+01:00</updated>
-    <content type="html">
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-05-26&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;From &lt;a href="https://amzn.to/2LU8yqy"&gt;Sherlock Holmes was Wrong&lt;/a&gt; by Pierre Bayard, page 20:&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-05-26-06:09.html" rel="alternate"/>
   </entry>
 </feed>
