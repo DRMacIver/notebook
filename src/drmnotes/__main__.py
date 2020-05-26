@@ -744,6 +744,24 @@ CANON = [
     Book(
         title="Sefer Chofetz Chaim", page_range=(1, 302), url="https://amzn.to/3d3RNoG"
     ),
+    Book(
+        title="Learn to write badly",
+        author="Michael Billig",
+        page_range=(1, 215),
+        url="https://amzn.to/3gjbcUK",
+    ),
+    Book(
+        title="Style: Towards Clarity and Grace",
+        author="Joseph M. Williams",
+        page_range=(1, 198),
+        url="https://amzn.to/2ZBIVTz",
+    ),
+    Book(
+        title="Clear and simple as the truth",
+        author="Thomas and Turner",
+        page_range=(1, 252),
+        url="https://amzn.to/3ekINM9",
+    ),
 ]
 
 
