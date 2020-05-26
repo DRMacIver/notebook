@@ -769,8 +769,9 @@ CANON = [
 def book_post():
 
     book = random.choice(CANON)
+    logfile = os.path.join(ROOT, "logs", "books.csv")
 
-    with open(os.path.join(ROOT, "logs", "books.csv"), "a") as o:
+    with open(logfile, "a") as o:
         log = csv.writer(o, delimiter="\t")
 
         while True:
@@ -788,6 +789,7 @@ def book_post():
                 result = "cancel"
 
             log.writerow([datetime.now().isoformat(), book.title, page, result])
+            git("commit", logfile, "--allow-empty", "-m", "Update book log")
 
             if result == "yes":
                 break
