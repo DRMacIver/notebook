@@ -23,6 +23,7 @@ import json
 import requests
 import random
 from prompt_toolkit.shortcuts import radiolist_dialog
+import csv
 
 
 _DATABASE = None
@@ -703,7 +704,6 @@ CANON = [
         author="Pierre Bayard",
         page_range=(3, 188),
         url="https://amzn.to/2LU8yqy",
-        
     ),
     Book(
         title="Debt: The First 5,000 Years",
@@ -742,10 +742,8 @@ CANON = [
         url="https://amzn.to/36FzofT",
     ),
     Book(
-        title="Sefer Chofetz Chaim",
-        page_range=(1, 302),
-        url="https://amzn.to/3d3RNoG",
-    )
+        title="Sefer Chofetz Chaim", page_range=(1, 302), url="https://amzn.to/3d3RNoG"
+    ),
 ]
 
 
@@ -754,26 +752,34 @@ def book_post():
 
     book = random.choice(CANON)
 
-    while True:
-        page = random.randint(*book.page_range)
-        result = radiolist_dialog(
-            values=[
-                ("yes", "Yes"),
-                ("new-book", "Pick a different book"),
-                ("new-page", "Pick a different page"),
-            ],
-            text=f"Would you like to write about {book.title} page {page}?",
-        ).run()
+    with open(os.path.join(ROOT, "logs", "books.csv"), "a") as o:
+        log = csv.writer(o, delimiter="\t")
 
-        if result == "yes":
-            break
-        elif result == "new-book":
-            book = random.choice(CANON)
-        elif result == "new-page":
-            pass
-        else:
-            assert result is None
-            return
+        while True:
+            page = random.randint(*book.page_range)
+            result = radiolist_dialog(
+                values=[
+                    ("yes", "Yes"),
+                    ("new-book", "Pick a different book"),
+                    ("new-page", "Pick a different page"),
+                ],
+                text=f"Would you like to write about {book.title} page {page}?",
+            ).run()
+
+            if result is None:
+                result = "cancel"
+
+            log.writerow([datetime.now().isoformat(), book.title, page, result])
+
+            if result == "yes":
+                break
+            elif result == "new-book":
+                book = random.choice(CANON)
+            elif result == "new-page":
+                pass
+            else:
+                assert result == "cancel"
+                return
 
     if book.author:
         prompt = f"From [{book.title}]({book.url}) by {book.author}, page {page}:"
