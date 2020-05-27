@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-05-26T06:22:00+01:00</updated>
+  <updated>2020-05-27T07:21:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,79 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-05-18-09:41.html</id>
-    <title>Bug Fixes and Performance Improvements</title>
-    <updated>2020-05-18T12:46:52+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Bug Fixes and Performance Improvements&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-05-18&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Today we release Version 37.0 of the DRMacIver software system. We've been working on it for a whole year, and are pretty excited to share the results with you.&lt;/p&gt;
-
-
-&lt;p&gt;In reality we of course practice continuous deployment and so have been rolling out releases through the entirety of the last year, and all of our changes are breaking changes so there's no hint of semantic versioning in our release process, but nevertheless bumping the major version number is a good chance to talk about some of the exciting new developments over the last year.&lt;/p&gt;
-
-
-&lt;p&gt;The major improvements we've seen since the Version 36.0 release are:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;We've refactored an awful lot of &lt;a href="https://notebook.drmaciver.com/posts/2020-02-20-09:31.html"&gt;legacy code&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Significantly improved write performance&lt;/li&gt;
-&lt;li&gt;Modest improvements to read performance&lt;/li&gt;
-&lt;li&gt;We've fixed the bug where the brain randomly crashed in social situations&lt;/li&gt;
-&lt;li&gt;The system has finally &lt;a href="https://drmaciver.substack.com/"&gt;evolved to the point where it can send email&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;In case you don't get the joke (you probably get the joke) it's my 37th birthday today. Today is, legally speaking, the year where I have to start saying I'm in my mid to late 30s rather than in my mid 30s.&lt;/p&gt;
-
-
-&lt;p&gt;Back in ancient times, when I were a wee lad in my late 20s, I used to say that I didn't really mind the idea of hitting 30 (back then 30 seemed very old) because the people I knew in their 30s were mostly like the people I knew in their 20s only they had their shit a bit more together.&lt;/p&gt;
-
-
-&lt;p&gt;I then spent the first half of my thirties with my shit &lt;em&gt;very&lt;/em&gt; not together - life went a bit sideways in the dying months of 29 and it took me about five years before I hit rock bottom enough to start doing something about it.
-The result was me rather disconnecting from people emotionally, and it didn't have a great impact on my career either.&lt;/p&gt;
-
-
-&lt;p&gt;People don't really notice that I'm not a software developer any more, partly because I only became famous as a software developer after I stopped being one. Officially &lt;a href="https://www.jetbrains.com/lp/python-developers-survey-2019/"&gt;4% of Python developers are running my code&lt;/a&gt;. I wrote that code &lt;a href="https://twitter.com/i/status/1194550244496814081"&gt;entirely after burning out&lt;/a&gt;. I haven't actually been employed as a software developer since early 2015, outside of the occasional short term contract for Hypothesis work.&lt;/p&gt;
-
-
-&lt;p&gt;There's something about the software development industry that burns people out. I don't know what it is, but it does it to most people. Maybe every industry is like this and I just mostly see it in the one I know? Maybe it's just &lt;a href="https://notebook.drmaciver.com/posts/2020-05-16-12:06.html"&gt;acedia&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;I started to pull myself out of the hole around 2017 I guess - I moved back to London, started a PhD, kinda started seeing people. In late 2018 I started a new relationship, which has been going very well.
-It prompted some reflection, and I've spent a lot of the intervening period attempting to sort my shit out in the way that a decade ago I, apparently, naively assumed would come with age.&lt;/p&gt;
-
-
-&lt;p&gt;Is it working? I guess.&lt;/p&gt;
-
-
-&lt;p&gt;Part of why I wrote &lt;a href="https://notebook.drmaciver.com/posts/2020-05-07-07:57.html"&gt;Easy Changes and Uncomfortable Reflections&lt;/a&gt; was that it was what I needed to hear (that's why I write a lot of these posts). It's quite hard to escape the feeling that I could have done all this work seven years ago, or seventeen years ago, or even twenty seven years ago, and life would have gone a lot better for it. I think this is partly true, but mostly false, but it still feels like a wasted opportunity.&lt;/p&gt;
-
-
-&lt;p&gt;Today's Tarot draw (I've been doing daily draws even when they've not made it into the notebook) is the &lt;a href="http://www.learntarot.com/ca.htm"&gt;Ace of Cups&lt;/a&gt;, which signifies among other things getting in touch with your feelings. Well I've done that. It's got its good points, and there's yet more to do on that front, but also it kinda sucks in that one of the major downsides of becoming more in touch with your own feelings is that you're more aware of your feelings, and sometimes those feelings are bad. I think I've in many ways been less depressed over the last year than I've been... ever, possibly, but it doesn't necessarily &lt;em&gt;feel&lt;/em&gt; like that because I'm more aware of it.&lt;/p&gt;
-
-
-&lt;p&gt;Especially given, as you might have noticed, there's a global pandemic on at the moment.&lt;/p&gt;
-
-
-&lt;p&gt;This post was meant to be reasonably optimistic - I do think that the next few years will be quite good for me - but entering my late thirties in the middle of a global pandemic feels weird. I can barely predict what next week is going to look like, let alone the next three years.&lt;/p&gt;
-
-
-&lt;p&gt;All told, I'm doing what I can to lay a solid foundation for whatever comes next. It might even work.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-05-18-09:41.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-19-09:35.html</id>
     <title>Working with the audience</title>
@@ -680,7 +607,7 @@ One of the roles of social power is control over the legitimisation process for 
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-26-06:22.html</id>
     <title>Attractive People on Magazine Covers as Hermeneutical Marketing</title>
-    <updated>2020-05-26T06:22:00+01:00</updated>
+    <updated>2020-05-26T07:40:18+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Attractive People on Magazine Covers as Hermeneutical Marketing&lt;/p&gt;
@@ -747,5 +674,89 @@ Also I &lt;a href="https://drmaciver.substack.com/p/life-as-nonproductive-act"&g
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-05-26-06:22.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-05-27-07:21.html</id>
+    <title>The Inner Pedestal of Tennis</title>
+    <updated>2020-05-27T07:21:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;The Inner Pedestal of Tennis&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-05-27&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;From &lt;a href="https://amzn.to/2LUnchH"&gt;The Inner Game of Tennis&lt;/a&gt; by W. Timothy Gallwey, page 129:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;I have been my own worst stressor. But slowly I have found that the demands I'm trying to fulfill when I'm stressing myself are not really my own, but ones I have "picked up" or "bought into" for perhaps no better reason than I heard them early in life, or because they seemed to be so generally accepted. Soon they begin to sound right - and are therefore easier to listen to than the subtle but insistent urging of my own being.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;I think this gets to the heart of &lt;a href="https://notebook.drmaciver.com/posts/2020-03-21-12:35.html"&gt;my disagreement with Gallwey&lt;/a&gt;, which largely stems from the fact that in this paragraph almost every word he says is wrong.&lt;/p&gt;
+
+
+&lt;p&gt;Indeed, I think this book is entirely a giant bait and switch: He makes the (mostly) useful distinction between (ugh) "Self 1", the teller, and "Self 2", the doer. This is a reasonable split which is useful in many circumstances. I don't necessarily think it's a &lt;em&gt;true&lt;/em&gt; split, but it works pretty well for about 90% of cases.&lt;/p&gt;
+
+
+&lt;p&gt;Unfortunately he then goes on to posit that:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Self 1 is intrinsically dysfunctional.&lt;/li&gt;
+&lt;li&gt;Self 2 is intrinsically functional.&lt;/li&gt;
+&lt;li&gt;Every other binary split of your self, including "the bad bits" and "the good bits" also lines up with this distinction.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;Every single one of these premises is badly wrong. It is certainly true for many people that Self 1 is dyfunctional and Self 2 is functional, but those dysfunctions are not intrinsic and treating them as such is actively harmful. The third is just intrinsically nonsense and is the sign of someone with an explain everything theory.&lt;/p&gt;
+
+
+&lt;p&gt;All of these errors manifest in this paragraph.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, specifically what he is wrong about in this paragraph boils down to two important glaring errors:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Almost everything in you is learned from outside of you. That's not you listening to things that are "not really your own". That is how being a person works. We socially construct our knowledge and behaviours by engaging with the people around us. You are complaining about being a person, Tim.&lt;/li&gt;
+&lt;li&gt;The arising internally/learned externally split of your behaviour &lt;em&gt;in no way&lt;/em&gt; maps on to the self 1 / self 2 distinction. Self 2 &lt;em&gt;absolutely&lt;/em&gt; learns and internalises lessons from the outside world. That's what trauma, and &lt;a href="https://notebook.drmaciver.com/posts/2020-02-20-09:31.html"&gt;emotional responses more broadly&lt;/a&gt;, are. This is why operant conditioning works.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;I mean FFS, really.&lt;/p&gt;
+
+
+&lt;p&gt;I listen to a lot of &lt;a href="https://www.therapistuncensored.com/"&gt;Therapist Uncensored&lt;/a&gt; and an interesting theme that keeps coming up listening to it is that they're also quite into a similar split to Self 1 vs Self 2 (they tend to neurowash it and refer to it by parts of the brain, but that's neither here nor there), but they think that &lt;em&gt;Self 2&lt;/em&gt; is the dysfunctional one and that a lot of the skills they're trying to learn are essentially trying to use Self 1 to help Self 2 heal from its entrained fear reactions.&lt;/p&gt;
+
+
+&lt;p&gt;I think here I must adopt my usual brand of fence sitting: Actually, both sides are wrong.&lt;/p&gt;
+
+
+&lt;p&gt;Self 1 and Self 2 each have their own strengths and weaknesses, and you cannot operate as a fully healthy human being without:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;A functional Self 1.&lt;/li&gt;
+&lt;li&gt;A functional Self 2.&lt;/li&gt;
+&lt;li&gt;A functional relationship between the two.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;Self 2 needs to give Self 1 a hug, and Self 1 needs to help Self 2 to talk about its feelings. They're literally both in this together, and they should behave as such.&lt;/p&gt;
+
+
+&lt;p&gt;The relationship is the important part, and Gallwey's framing basically fucks up any chance of a healthy relationship.&lt;/p&gt;
+
+
+&lt;p&gt;Putting someone on a pedestal basically dooms any possibility of a healthy relationship with them, and this is what we are doing when we claim Self 2 is in some sense intrinsically whole and just needs to be let free. &lt;a href="https://notebook.drmaciver.com/posts/2020-03-03-09:07.html"&gt;Self 2 is wrong all the time&lt;/a&gt; and that's OK. It's wrong in ways that &lt;a href="https://notebook.drmaciver.com/posts/2020-03-14-13:55.html"&gt;Self 1 is good at helping it resolve&lt;/a&gt;. Self 1 does tend to get a bit neurotic if left in control, it's true, but Self 2 just needs to give it a bit of a hug and tell it to calm down and let the body do its thing (I've not yet figured out a better tool for this than actual hugs unfortunately).&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-05-27-07:21.html" rel="alternate"/>
   </entry>
 </feed>
