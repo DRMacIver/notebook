@@ -316,7 +316,7 @@ CANON = [
         title="The Shock of the Old",
         author="David Edgerton",
         url="https://amzn.to/3bW2J6t",
-        page_range=(1, 239),
+        page_range=(1, 212),
     ),
     Book(
         title="100 Ways to Improve your Writing",
