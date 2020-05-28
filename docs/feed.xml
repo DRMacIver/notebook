@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-05-27T07:21:00+01:00</updated>
+  <updated>2020-05-28T07:42:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,75 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-05-19-09:35.html</id>
-    <title>Working with the audience</title>
-    <updated>2020-05-19T10:52:04+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Working with the audience&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-05-19&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;From Lois McMaster Bujold's "A Civil Campaign", page 137:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;"Madame Vorsoisson", Mark said with dignity, "is a very sensible woman. When presented with compelling facts, &lt;em&gt;she&lt;/em&gt; doesn't let a thoughtless emotional response overcome her clear reason."&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;"A Civil Campaign" is probably my favourite book in the Vorkosigan series. The Vorkosigan series is largely an "Adventures! In! Space!" series, but as it goes on there's increasingly fewer adventures in favour of exploring the lives of the characters.&lt;/p&gt;
-
-
-&lt;p&gt;Adventures in A Civil Campaign primarily center on a number of things:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Planning for the imperial wedding.&lt;/li&gt;
-&lt;li&gt;Miles (the protagonist of the series) attempting to woo the aforementioned Madame Vorsoisson, with a thoroughly inappropriately military approach.&lt;/li&gt;
-&lt;li&gt;Mark (Miles's clone/brother) attempting an early stage biotech startup.&lt;/li&gt;
-&lt;li&gt;Many exciting politics as a hereditary patriarchal nobility adjusts to things like gene tests and gender changes.&lt;/li&gt;
-&lt;li&gt;Probably some other things I'm forgetting.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;This exchange is about the third. Mark has just fed Ekaterin (Madame Vorsoisson) some of his startup's food product. It is a vaguely pleasing but mostly a bit bland product that I imagine as being a bit like cream cheese.
-The product is nutritious, flexible, cheap to produce, and has significant environmental benefits.
-It should be a miracle product that will make Mark extremely successful.&lt;/p&gt;
-
-
-&lt;p&gt;Also it comes from bugs. The bugs are particularly disgusting looking. They call it bug butter. The bugs are called butter bugs.&lt;/p&gt;
-
-
-&lt;p&gt;Also, they're trying to sell their product made from genetically engineered bugs on a planet that regards mutations with visceral horror.&lt;/p&gt;
-
-
-&lt;p&gt;Ekaterin has, kindly, reacted primarily to the quality of the bug butter as a food product rather than its origins. Miles and everyone else have reacted with horror to the name, the branding, and the general visceral association of the food product with its origins (it's vomited up by horrifying bug creatures).&lt;/p&gt;
-
-
-&lt;p&gt;Mark believes that Ekaterin is in the right and that Miles and the others are in the wrong. Mark is wrong. Mark is bad at startups.&lt;/p&gt;
-
-
-&lt;p&gt;Oh, Ekaterin is of course behaving very well. It's &lt;em&gt;good&lt;/em&gt; to be able to suspend emotional reactions and look at the potential in a situation. However, Mark is conflating how he feels people &lt;em&gt;should&lt;/em&gt; react to his product with how people are actually going to react to his product. Miles and everyone else are providing him with valuable insight.&lt;/p&gt;
-
-
-&lt;p&gt;Mark does eventually turn this around, mostly because of Ekaterin's help on branding, but without her he would have been insisting that people are reacting to his actions &lt;em&gt;wrong&lt;/em&gt; and complaining about the unfairness of it all.&lt;/p&gt;
-
-
-&lt;p&gt;This is an easy trap to fall in to, both in startups and in general: If people react badly to your actions that &lt;em&gt;might&lt;/em&gt; be unfair, and it's legitimate to feel aggrieved about it, but ultimately at some point you need to ask whether you want to have an impact or not, and if you want to have an impact it's usually better to ask how you can effectively work with people's reactions.&lt;/p&gt;
-
-
-&lt;p&gt;It's all very well to demand that people react to your actions differently, but it doesn't usually work. If you want to change the world, if you want people to use your product, you need to start from where you are and work with the audience you have. Even if you do, ultimately, want to change their behaviour, you're not generally going to get there by demanding that they comply - you need to instead work with rather than against their existing reactions.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-05-19-09:35.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-19-17:31.html</id>
     <title>Parts of you are missing</title>
@@ -678,7 +609,7 @@ Also I &lt;a href="https://drmaciver.substack.com/p/life-as-nonproductive-act"&g
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-27-07:21.html</id>
     <title>The Inner Pedestal of Tennis</title>
-    <updated>2020-05-27T07:21:00+01:00</updated>
+    <updated>2020-05-27T09:19:32+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;The Inner Pedestal of Tennis&lt;/p&gt;
@@ -758,5 +689,137 @@ Also I &lt;a href="https://drmaciver.substack.com/p/life-as-nonproductive-act"&g
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-05-27-07:21.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-05-28-07:42.html</id>
+    <title>Life is neither poker nor tennis</title>
+    <updated>2020-05-28T07:42:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Life is neither poker nor tennis&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-05-28&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;From &lt;a href="https://amzn.to/3deDz4N"&gt;Thinking in Bets&lt;/a&gt; by Annie Duke, page 10:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Hindsight bias is the tendency, after an outcome is known, to see the outcome as having been inevitable. When we say "I should have known that would happen," or, "I should have seen it coming," we are succumbing to hindsight bias.&lt;/p&gt;
+&lt;p&gt;Those beliefs develop from an overly tight connection between outcomes and decisions. That is typical of how we evaluate our past decisions."&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;This is from a chapter called "Life is poker, not chess."&lt;/p&gt;
+
+
+&lt;p&gt;Before I start, I'd like to say that I think "Thinking in Bets" is a very good book and I would recommend that most people read it. It is probably the most accessible practical manual of rationality that I know of (there may well be better ones, but I don't know of them), and most people's thinking would be improved by a good primer in that.&lt;/p&gt;
+
+
+&lt;p&gt;Which is why I now want to explain why it's also wrong about everything.&lt;/p&gt;
+
+
+&lt;p&gt;In discussions on Twitter about &lt;a href="https://notebook.drmaciver.com/posts/2020-05-27-07:21.html"&gt;yesterday's diatribe against The Inner Game of Tennis&lt;/a&gt;, I made &lt;a href="https://twitter.com/DRMacIver/status/1265765964915904514"&gt;the following point&lt;/a&gt;:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;The problem being that because he got his start in tennis where verbal intelligence mostly &lt;em&gt;does&lt;/em&gt; need to get out of the way, and because most people don't have tennis-related trauma, his model works pretty there but has fatal flaws when you try to generalise it off the court.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;Gallwey is making a classic error: He is a &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-07:38.html"&gt;nerd&lt;/a&gt;, and he thinks his special interest is universally applicable. Most of the advice in the inner game of tennis is very good &lt;em&gt;if you only ever apply it on the Tennis court&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;It's absolutely a good thing to take ideas from a specific nerddom and try to generalise them. I love doing that, and claiming that it was bad would be the rankest hypocrisy on my part. The problem is not generalising his Tennis related learning off the tennis court, the problem is that having learned all these skills in a context where they are useful close to 100% of the time, you do not learn to understand the preconditions under which those skills are useful.&lt;/p&gt;
+
+
+&lt;p&gt;Annie Duke has made the same mistake: She has learned a skill set within the context of a game of poker, and is now viewing the relevant skill set as applicable to life as a whole. Unfortunately, Poker has some very distinctive features over life:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;It is intrinsically adversarial.&lt;/li&gt;
+&lt;li&gt;It is highly structured.&lt;/li&gt;
+&lt;li&gt;The probabilities of different outcomes are well defined and easily calculable.&lt;/li&gt;
+&lt;li&gt;It has a single well-defined utility function (money made) describing success in the game.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;As you may or may not be aware I love to hate on &lt;a href="https://en.wikipedia.org/wiki/Subjective_expected_utility"&gt;Subjective Expected Utility Theory&lt;/a&gt;, but poker is an example where utility theory is great because you &lt;em&gt;do&lt;/em&gt; have a utility function and you &lt;em&gt;do&lt;/em&gt; have probabilities. Regardless of whether you believe in SEU, life outside poker simply isn't like that because the probabilities and the utility function are at best much more complex and less well defined.&lt;/p&gt;
+
+
+&lt;p&gt;(Note: Thanks to &lt;a href="https://en.wikipedia.org/wiki/Kelly_criterion"&gt;The Kelly Criterion&lt;/a&gt; the utility function of poker is &lt;em&gt;not&lt;/em&gt; just straight up money made, but its logarithm, but the point still stands).&lt;/p&gt;
+
+
+&lt;p&gt;Poker is an &lt;em&gt;excellent&lt;/em&gt; game with which to hone your skills for a particular type of technical rationality, but technical rationality will only take you so far.&lt;/p&gt;
+
+
+&lt;p&gt;C. Thi Nguyen suggests that games are &lt;a href="https://philpapers.org/archive/NGUGAT-2.pdf"&gt;ways of experimenting with different structures of agency&lt;/a&gt;. In playing a game, you are entering a world in which your choices are constrained to follow the rules of the game, and so you learn to play &lt;em&gt;as if&lt;/em&gt; those were the only choices possible. As a result you will &lt;a href="https://notebook.drmaciver.com/posts/2020-02-21-10:04.html"&gt;learn skills that you are neglecting in other contexts&lt;/a&gt; where those constraints on your agency do not apply. Learning the inner game of tennis &lt;em&gt;will&lt;/em&gt; teach you about embodied cognition, because you can't think your way out of the problem. Learning poker &lt;em&gt;will&lt;/em&gt; teach you about technical rationality, because you can't sweet talk your way out of the problem. Both embodied cognition and technical rationality are very good skills that you can apply in life more broadly, but because life lacks that restricted structure of agency that the game had. The reason the game taught you that skill so well was precisely &lt;em&gt;because&lt;/em&gt; the skill is not universally applicable.&lt;/p&gt;
+
+
+&lt;p&gt;David Chapman has recently published an &lt;a href="https://meaningness.com/eggplant/introduction"&gt;updated introduction to his Eggplant Book&lt;/a&gt;, which is about what he calls metarationality, that I rather like. In particular:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;[People with metarational skills] produce these insights by investigating the relationship between a system of technical rationality and its context. The context includes a specific situation in which rationality is applied, the purposes for which it is used, the social dynamics of its use, and other rational systems that might also be brought to bear. This work operates not within a system of technical rationality, but around, above, and then on the system.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;This applies more broadly than technical rationality: The foundational skill of life is figuring out what other skills you need to bring to bear on the situation. You cannot learn that from a game, because games work precisely by removing the need for that skill.
+Games are an excellent way to hone certain skills, but they intrinsically lack the ability to teach you the fundamental life skill of &lt;em&gt;knowing which game you are playing&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;All of which is a very long winded way of getting around to a very basic point prompted by the initial quote: Hindsight bias is good, actually.&lt;/p&gt;
+
+
+&lt;p&gt;Hindsight bias is generally bad in poker where you can have very well defined strategies and intrinsic quantifiable uncertainty in the problem, but in life more broadly hindsight bias serves several fairly important functions. For example:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;It forces you to look at problems much more carefully than you otherwise would have, giving you incentives to improve your skills.&lt;/li&gt;
+&lt;li&gt;It lets you hold people accountable for actions even when they are individually harmless.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;An example of the first is that when writing it is generally worth assuming that any misunderstands are your fault. They may often not be - many people are very bad readers - but by treating them as your fault anyway your writing skills will generally improve.&lt;/p&gt;
+
+
+&lt;p&gt;An example of the second is something I often use as a moral test case and requires a bit more of an extended anecdote.&lt;/p&gt;
+
+
+&lt;p&gt;Near my parents' place there is a more-or-less blind bend in the main road with a small road that joins on to the main road right after that bend. It is very poor design.&lt;/p&gt;
+
+
+&lt;p&gt;Almost nobody comes down that small road. I've seen someone joining on to the main road from there maybe two or three times during many years of driving that road.&lt;/p&gt;
+
+
+&lt;p&gt;It's entirely viable to take the bend at 60mph if you ignore the side road. It's not &lt;em&gt;that&lt;/em&gt; sharp a bend. However, the signage wants you to take it at 25mph in order to account for that basically-never-used side road.&lt;/p&gt;
+
+
+&lt;p&gt;Now, my question is this: How fast should you take that bend?&lt;/p&gt;
+
+
+&lt;p&gt;From a subjective expected utility point of view, it's actually probably fine to take that bend at 60mph. Slowing down at that point in the drive is quite annoying, and the chances of causing an accident are extremely low given the low usage of that side road (and it's not like an accident is inevitable at 60mph and more than it's entirely avoidable at 25mph, you're just increasing the likelihood and severity). Yes you're trading convenience for an increased probability of your own and/or someone else's death but of course you are, you're &lt;em&gt;driving&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;But, if everyone else makes the same calculation, driving in from that side road is now basically a death sentence.&lt;/p&gt;
+
+
+&lt;p&gt;Subjective Expected Utility calculations often look &lt;em&gt;very&lt;/em&gt; different if you universalise them by assuming that everyone else will make similar calculations, but SEU calculations are hard enough as it is without reasoning this way, and there's an easy kludge to achieve much the same effect: Hindsight bias.&lt;/p&gt;
+
+
+&lt;p&gt;If we treat low-probability consequences as if we should have seen them coming, and punish them accordingly, then we change the incentives to shape individual behaviour away from creating outcomes that were inevitable in aggregate even if they were low probability in any given instance.&lt;/p&gt;
+
+
+&lt;p&gt;Is this unfair on the indidual who happens to trigger the low probablity consequence? Probably. But so is dying because everyone else was making individually rational calculations that decided a low probability of your death was an acceptable consequence.&lt;/p&gt;
+
+
+&lt;p&gt;Is hindsight bias always good? No, of course not. You have to figure out from context whether it is or not. But that skill of figuring it out from context is not, I'm afraid, something you can learn from a game.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-05-28-07:42.html" rel="alternate"/>
   </entry>
 </feed>
