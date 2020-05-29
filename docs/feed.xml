@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-05-28T23:12:06+01:00</updated>
+  <updated>2020-05-29T05:46:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,66 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-05-20-09:54.html</id>
-    <title>Morality and Emotion</title>
-    <updated>2020-05-20T10:45:05+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Morality and Emotion&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-05-20&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;From &lt;a href="https://amzn.to/3g53ayI"&gt;Voices: The Educational Formation of Conscience&lt;/a&gt;, page 18:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;"What is my duty?" is made, by many accounts, the entry question into philosophical ethics. For a philosophy of moral education, however, entry is gained more fully through the Socratic question, "How ought one to live?"&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;The distinction that Green is drawing in this book is between philosophy of ethics, which develops ethical theories of what it is like to behave ethically, and philosophy of moral education, which asks how people learn to behave ethically.&lt;/p&gt;
-
-
-&lt;p&gt;This is intimately tied to my point in &lt;a href="https://notebook.drmaciver.com/posts/2020-05-10-08:54.html"&gt;How to become a better person&lt;/a&gt; that as well as a &lt;em&gt;theory&lt;/em&gt; of ethics we need a &lt;em&gt;practice&lt;/em&gt; of ethics.
-A philosophy of moral education is not necessarily that practice, but it is at least less far removed from it:
-If you ask "What is my duty?", an answer can assume that part of your duty is that you are responsible for figuring out how to uphold your other duties. If you ask "How should I live?", you might quite reasonably object if the answer is a little light on practical details about how, exactly, you are supposed to be able to live in the manner described.&lt;/p&gt;
-
-
-&lt;p&gt;There's something about the question "How ought one to live?" that feels hopelessly naive and/or oppressive these days. Who are you to tell me what to do?&lt;/p&gt;
-
-
-&lt;p&gt;The &lt;em&gt;ought&lt;/em&gt; in particular feels dangerous. It feels like a question that can only be asked in the presence of a certain amount of coercive power - as if whatever answer you give to the question, that's the answer you're going to impose on others.&lt;/p&gt;
-
-
-&lt;p&gt;On top of that, there can be no single &lt;em&gt;ought&lt;/em&gt;, because are all different people with different desires and constraints. The idea of a one sized fits all "best life" seems both impossible and undesirable.&lt;/p&gt;
-
-
-&lt;p&gt;And yet, I still think there's something there. Perhaps not "How ought one to live?" but "How can one figure out how to live?" or "What tools are there to figure out how to live?" or "How can we help people live their best lives?".&lt;/p&gt;
-
-
-&lt;p&gt;I think we underestimate the interplay between morality and emotional health. Many of our strongest emotions and feelings have a moral component. Guilt and shame, certainly, but also love and empathy. Emotions and morality interplay strongly as we act in the world, especially with regards to other people.&lt;/p&gt;
-
-
-&lt;p&gt;I suggested in "How to be a better person" that improving your emotional skills would probably automatically make you a better person, but I think the converse might be true too: Becoming a better person will improve your emotional health (as long as it's paired with good skills for working with emotions - I still think those are the foundations).&lt;/p&gt;
-
-
-&lt;p&gt;Part of this is &lt;a href="https://notebook.drmaciver.com/posts/2020-05-16-12:06.html"&gt;acedia&lt;/a&gt;. I think one of the causes of acedia is living out of line with our values - sometimes because our values are bad, sometimes because we are forced to, and sometimes because it is easier to ignore that dissonance than deal with them. We learn not to care as a defence mechanism, and bringing ourselves more in line with our values allows us to repair some of that.&lt;/p&gt;
-
-
-&lt;p&gt;Another part is the &lt;a href="https://notebook.drmaciver.com/posts/2020-03-30-23:12.html"&gt;desire&lt;/a&gt; / &lt;a href="https://notebook.drmaciver.com/posts/2020-03-18-11:24.html"&gt;safety&lt;/a&gt; model. Emotional skills are what provide you with safety to become better, but others are often the spur for that. Certainly much of my current growth came from having people who I wanted to be better for.&lt;/p&gt;
-
-
-&lt;p&gt;In my first read of Green &lt;a href="https://www.drmaciver.com/2019/08/jiminy-cricket-must-die/"&gt;I was pretty negative about some of this themes&lt;/a&gt;. I still think that's right - a great deal of his work is about how we adopt a community's norms, and my experience is that most communities' norms are very unsafe to internalise. My current read is more sympathetic: I still think moral norms are dangerous tools that are often misused, but I think they also might be a key part of finding our way to better lives as long as we can find the right people to develop them with.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-05-20-09:54.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-20-17:58.html</id>
     <title>How I fix anxiety triggers</title>
@@ -743,7 +683,7 @@ Games are an excellent way to hone certain skills, but they intrinsically lack t
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-28-21:05.html</id>
     <title>Key Performance Indicators</title>
-    <updated>2020-05-28T23:12:06+01:00</updated>
+    <updated>2020-05-28T23:41:11+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Key Performance Indicators&lt;/p&gt;
@@ -839,5 +779,102 @@ I am aware of it as a theoretical possibility, but it does not appear as a pract
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-05-28-21:05.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-05-29-05:46.html</id>
+    <title>Defects are the responsibility of programmers</title>
+    <updated>2020-05-29T05:46:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Defects are the responsibility of programmers&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-05-29&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;This post is an elaboration on a &lt;a href="https://twitter.com/DRMacIver/status/1265967699743649793"&gt;Twitter thread about software I did yesterday&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Hillel wrote &lt;a href="https://buttondown.email/hillelwayne/archive/defects-are-not-the-fault-of-programmers/"&gt;Defects are not the fault of programmers&lt;/a&gt;. It is a good post and I encourage you to read it.&lt;/p&gt;
+
+
+&lt;p&gt;In particular:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;No, the bigger issue with “programmers create defects” is an essential issue with the worldview. Its basis in facts is less important than its value as a “lens” we can use to understand defects. If we know where defects come from, we know what we need to do to manage them. To emphasize this: Our worldview on defects shapes our means of reducing defects. We measure the value of a lens by how useful it is.&lt;/p&gt;
+&lt;p&gt;So what does the “defects are the fault of programmers” worldview tell us about our means? It says that the only way to reduce defects is to improve programmer discipline. Either the programmer is sufficiently disciplined and nothing can cause defects, or the programmer is insufficiently disciplined and nothing can prevent defects. &lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;I'd like to argue that Hillel is mostly correct, but bugs should &lt;em&gt;also&lt;/em&gt; be considered the fault of the programmers.&lt;/p&gt;
+
+
+&lt;p&gt;I'd also like to argue that the idea that bugs are the fault of the programmer, as implemented in practice, is in fact &lt;em&gt;much&lt;/em&gt; worse than Hillel is making it out to be. The worst part of "defects are the fault of the programmer" is not that it doesn't help us to reduce defects, but that in fact that over time it virtually guarantees to increase them.&lt;/p&gt;
+
+
+&lt;p&gt;A software development process is not just there to produce software, it's also there to produce a software development team, and in order to understand the effect of any given process you need to consider its effect on both. Systems which have positive effects on the software while having negative effects on the team, will, in the long run (which often is not that long - a year or two if often more than enough) end up backfiring horribly on the software as well.&lt;/p&gt;
+
+
+&lt;p&gt;In particular, defects are a normal part of the software development process. People make mistakes, people misunderstand things. If you've never had a bug in production then that's probably because nobody is using your software or you spend &lt;em&gt;far&lt;/em&gt; too long developing it.&lt;/p&gt;
+
+
+&lt;p&gt;So independently of the question of whose &lt;em&gt;fault&lt;/em&gt; a defect is, the more important question is: When a defect occurs, does your software development team get better or worse?&lt;/p&gt;
+
+
+&lt;p&gt;I'd like to suggest that any system that relies &lt;em&gt;solely&lt;/em&gt; on personal responsibility will get worse in response to bugs, but so will any system that treats bugs as not the programmer's fault.&lt;/p&gt;
+
+
+&lt;p&gt;Ideally we want people to take responsibility for shipping high quality software. The basic problem is:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;If people don't care about getting good results, there is no system that will get good results.&lt;/li&gt;
+&lt;li&gt;If people do care about getting good results, basically every system works well.&lt;/li&gt;
+&lt;li&gt;The system you choose determines which of these scenarios are stable states.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;In particular if a system &lt;em&gt;relies&lt;/em&gt; on people caring about getting good results, in the absence of support for that, you will &lt;a href="https://drmaciver.substack.com/p/burnout-as-acedia"&gt;burn out the people who care the most&lt;/a&gt;, they will stop caring and/or leave, and you will end up with a team that doesn't care about getting good results.&lt;/p&gt;
+
+
+&lt;p&gt;One of the easiest ways to create this dynamic is to have a culture of personal responsibility for defects while pressuring people to ship, and providing no collective support for what to do in the event of failure.
+If you treat "defects are the programmer's fault" as your guiding correctness principle, you will end up with a team whose response to that is "Yeah, but who cares?".&lt;/p&gt;
+
+
+&lt;p&gt;But &lt;em&gt;also&lt;/em&gt; if you treat defects as intrinsically not the programmer's fault, you do this. "Human error" is a bad attribution in that you can always find a human to blame, but "System error" is also a bad attribution because you can always find a system to blame. Humans in the system are what create performance as well as defects, and if you treat humans as &lt;em&gt;never&lt;/em&gt; the problem, what you end up with is &lt;a href="https://www.tandfonline.com/doi/abs/10.1080/14773996.2018.1491147?journalCode=tphs20"&gt;safety clutter&lt;/a&gt; where people's hands are tied.
+And, once again, people will tend to get frustrated ane leave. They won't necessarily be the same people as left in the other scenario, but having a team full of people who are entirely comfortable with plodding bureaucratic slowness at every step of the way is also not a great end state.
+A key part of getting good results is that you have to get results.&lt;/p&gt;
+
+
+&lt;p&gt;I would suggest that a crucial part of getting to a system that creates a good team is that &lt;em&gt;guilt&lt;/em&gt;. When something goes wrong, the person responsible should feel appropriately guilty.&lt;/p&gt;
+
+
+&lt;p&gt;The problem with this is that we are all very bad at guilt.&lt;/p&gt;
+
+
+&lt;p&gt;Yes, I can hear you thinking "Oh don't worry David, I'm &lt;em&gt;very&lt;/em&gt; good at guilt". That is exactly the problem I am talking about.&lt;/p&gt;
+
+
+&lt;p&gt;Being good at guilt doesn't mean feeling a lot of guilt. It means feeling an appropriate amount of guilt, which can range from "Oops, my bad" to "Yeah that was a massive fuck up on my part. I'll make it right".&lt;/p&gt;
+
+
+&lt;p&gt;The problem we collectively have with guilt, both in terms of how we experience it and how we inflict it on others, is that we treat it as a binary with very little between no guilt and massive irredeemable shame. This is intrinsically unhealthy. Guilt, properly handled, is an acknowledgement that you have done badly and an impetus to do better. It cannot serve that function as we currently manage it.&lt;/p&gt;
+
+
+&lt;p&gt;The second crucial part of getting to a system that creates a good team is that "I'll make it right" part.
+If people feel guilty but are &lt;em&gt;not&lt;/em&gt; empowered to fix it, then you once again end up in the situation where everyone who cares burns out and/or leaves.&lt;/p&gt;
+
+
+&lt;p&gt;Sometimes that empowerment to make it right will consist of the programmer, as an individual, resolving and learning to do better. Sometimes it will be about changing the system. Sometimes they'll be able to manage it on their own, sometimes they'll need support.&lt;/p&gt;
+
+
+&lt;p&gt;There is, sadly, no universal prescription that works. The world is messy and complicated. But if you give people the support they need to do better, and create a system that tends to improve rather than degrade the moral, emotional, and professional skills of its members, and responds healthily to the normal trials and tribulations that the world has to throw at it, it will probably go pretty well for you.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-05-29-05:46.html" rel="alternate"/>
   </entry>
 </feed>

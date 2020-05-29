@@ -54,6 +54,100 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
         
 
 <section>
+<h2><a href="/posts/2020-05-29-05:46.html">2020-05-29</a></h2>
+
+
+<p class="subtitle">Defects are the responsibility of programmers</p>
+
+
+<dl class="metadata">
+<dt>Published</dt>
+<dd class="post-date">2020-05-29</dd>
+</dl>
+
+
+<p>This post is an elaboration on a <a href="https://twitter.com/DRMacIver/status/1265967699743649793">Twitter thread about software I did yesterday</a>.</p>
+
+
+<p>Hillel wrote <a href="https://buttondown.email/hillelwayne/archive/defects-are-not-the-fault-of-programmers/">Defects are not the fault of programmers</a>. It is a good post and I encourage you to read it.</p>
+
+
+<p>In particular:</p>
+
+
+<blockquote>
+<p>No, the bigger issue with “programmers create defects” is an essential issue with the worldview. Its basis in facts is less important than its value as a “lens” we can use to understand defects. If we know where defects come from, we know what we need to do to manage them. To emphasize this: Our worldview on defects shapes our means of reducing defects. We measure the value of a lens by how useful it is.</p>
+<p>So what does the “defects are the fault of programmers” worldview tell us about our means? It says that the only way to reduce defects is to improve programmer discipline. Either the programmer is sufficiently disciplined and nothing can cause defects, or the programmer is insufficiently disciplined and nothing can prevent defects. </p>
+</blockquote>
+
+
+<p>I'd like to argue that Hillel is mostly correct, but bugs should <em>also</em> be considered the fault of the programmers.</p>
+
+
+<p>I'd also like to argue that the idea that bugs are the fault of the programmer, as implemented in practice, is in fact <em>much</em> worse than Hillel is making it out to be. The worst part of "defects are the fault of the programmer" is not that it doesn't help us to reduce defects, but that in fact that over time it virtually guarantees to increase them.</p>
+
+
+<p>A software development process is not just there to produce software, it's also there to produce a software development team, and in order to understand the effect of any given process you need to consider its effect on both. Systems which have positive effects on the software while having negative effects on the team, will, in the long run (which often is not that long - a year or two if often more than enough) end up backfiring horribly on the software as well.</p>
+
+
+<p>In particular, defects are a normal part of the software development process. People make mistakes, people misunderstand things. If you've never had a bug in production then that's probably because nobody is using your software or you spend <em>far</em> too long developing it.</p>
+
+
+<p>So independently of the question of whose <em>fault</em> a defect is, the more important question is: When a defect occurs, does your software development team get better or worse?</p>
+
+
+<p>I'd like to suggest that any system that relies <em>solely</em> on personal responsibility will get worse in response to bugs, but so will any system that treats bugs as not the programmer's fault.</p>
+
+
+<p>Ideally we want people to take responsibility for shipping high quality software. The basic problem is:</p>
+
+
+<ol>
+<li>If people don't care about getting good results, there is no system that will get good results.</li>
+<li>If people do care about getting good results, basically every system works well.</li>
+<li>The system you choose determines which of these scenarios are stable states.</li>
+</ol>
+
+
+<p>In particular if a system <em>relies</em> on people caring about getting good results, in the absence of support for that, you will <a href="https://drmaciver.substack.com/p/burnout-as-acedia">burn out the people who care the most</a>, they will stop caring and/or leave, and you will end up with a team that doesn't care about getting good results.</p>
+
+
+<p>One of the easiest ways to create this dynamic is to have a culture of personal responsibility for defects while pressuring people to ship, and providing no collective support for what to do in the event of failure.
+If you treat "defects are the programmer's fault" as your guiding correctness principle, you will end up with a team whose response to that is "Yeah, but who cares?".</p>
+
+
+<p>But <em>also</em> if you treat defects as intrinsically not the programmer's fault, you do this. "Human error" is a bad attribution in that you can always find a human to blame, but "System error" is also a bad attribution because you can always find a system to blame. Humans in the system are what create performance as well as defects, and if you treat humans as <em>never</em> the problem, what you end up with is <a href="https://www.tandfonline.com/doi/abs/10.1080/14773996.2018.1491147?journalCode=tphs20">safety clutter</a> where people's hands are tied.
+And, once again, people will tend to get frustrated ane leave. They won't necessarily be the same people as left in the other scenario, but having a team full of people who are entirely comfortable with plodding bureaucratic slowness at every step of the way is also not a great end state.
+A key part of getting good results is that you have to get results.</p>
+
+
+<p>I would suggest that a crucial part of getting to a system that creates a good team is that <em>guilt</em>. When something goes wrong, the person responsible should feel appropriately guilty.</p>
+
+
+<p>The problem with this is that we are all very bad at guilt.</p>
+
+
+<p>Yes, I can hear you thinking "Oh don't worry David, I'm <em>very</em> good at guilt". That is exactly the problem I am talking about.</p>
+
+
+<p>Being good at guilt doesn't mean feeling a lot of guilt. It means feeling an appropriate amount of guilt, which can range from "Oops, my bad" to "Yeah that was a massive fuck up on my part. I'll make it right".</p>
+
+
+<p>The problem we collectively have with guilt, both in terms of how we experience it and how we inflict it on others, is that we treat it as a binary with very little between no guilt and massive irredeemable shame. This is intrinsically unhealthy. Guilt, properly handled, is an acknowledgement that you have done badly and an impetus to do better. It cannot serve that function as we currently manage it.</p>
+
+
+<p>The second crucial part of getting to a system that creates a good team is that "I'll make it right" part.
+If people feel guilty but are <em>not</em> empowered to fix it, then you once again end up in the situation where everyone who cares burns out and/or leaves.</p>
+
+
+<p>Sometimes that empowerment to make it right will consist of the programmer, as an individual, resolving and learning to do better. Sometimes it will be about changing the system. Sometimes they'll be able to manage it on their own, sometimes they'll need support.</p>
+
+
+<p>There is, sadly, no universal prescription that works. The world is messy and complicated. But if you give people the support they need to do better, and create a system that tends to improve rather than degrade the moral, emotional, and professional skills of its members, and responds healthily to the normal trials and tribulations that the world has to throw at it, it will probably go pretty well for you.</p>
+
+
+</section>
+<section>
 <h2><a href="/posts/2020-05-28-21:05.html">2020-05-28</a></h2>
 
 
@@ -428,61 +522,12 @@ Also I <a href="https://drmaciver.substack.com/p/life-as-nonproductive-act">did 
 
 
 </section>
-<section>
-<h2><a href="/posts/2020-05-25-09:18.html">2020-05-25</a></h2>
-
-
-<p class="subtitle">Identity and Legitimisation of Knowledge</p>
-
-
-<dl class="metadata">
-<dt>Published</dt>
-<dd class="post-date">2020-05-25</dd>
-</dl>
-
-
-<p>PSA: Posts this week are going to be especially short because I need to focus on actual writing for my PhD this week. I'll just be copying out interesting passages from random pages of random books from my "canon" and making very short commentaries on them.</p>
-
-
-<p>From <a href="https://amzn.to/3d3aby7">Epistemic Injustice: Power and the Ethics of Knowing</a> by Miranda Fricker, page 9:</p>
-
-
-<blockquote>
-<p>It is easy to see that [a silencing of a woman by a man] involves an exercise of power, of of gender power in particular. But what do we mean by power? And how does gender power relate to the general notion of social power? In order to paint a portrait of testimonial injustice and to home in on its distinctive central case, we need to answer these questions about the nature of social power in general and the particular kind of social power (of which gender power is one instance) that I shall call <em>identity</em> power.</p>
-</blockquote>
-
-
-<p>The "testimonial injustice" that Fricker is talking about here is a notion she introduces in this book, and is an injustice done to people in rejecting their testimony based on their identity - e.g. in the case she is talking about, rejecting someone's testimony because she is a woman.</p>
-
-
-<p>I've just finished reading Lyotard's "The Postmodern Condition", an experience which I cannot really recommend, and in it he talks about the role of <em>legitimisation</em> in knowledge - i.e. if we think of a community of practice as telling each other stories about the world, what are the social practices involved in accepting some of those stories into our canon as legitimate knowledge. He argues that sciences in particular can be thought of as having a set of particularly stringent set of criteria for legitimisation, and tend to reject other modes of legitimisation as hopelessly fuzzy and informal.</p>
-
-
-<p>Read in this light, I think one interesting lens on Fricker's work would be this:
-One of the roles of social power is control over the legitimisation process for knowledge. When social power is rooted in identities, this has the particularly pernicious effect of resulting in a community's canon of recognised legitimate knowledge that systemically underrepresents knowledge originating in marginalized groups.</p>
-
-
-<p>However, as has been pointed out before by <a href="https://www.jstor.org/stable/10.5250/fronjwomestud.33.1.0024?seq=1">Kirsty Dotson</a>, Fricker has badly misunderstood one aspect of the nature of knowledge in a way that this highlights: There is no single canon, but instead many loosely overlapping ones.</p>
-
-
-<p>This misunderstanding is also present in her notion of identity power. In fact, identity power does not exist, because social power does not exist in individuals. Social power is a relationship between an individual and a community. The same identity that denies you credibility in one community may gain you credibility in another.</p>
-
-
-<p>That is not to say that the problems of testimonial injustice she is pointing out don't exist - they absolutely do - but that they need to be more carefully contextualised. "You're only oppressed by the dominant community who controls most of the economy" is not actually any more reassuring than thinking you're oppressed in some absolute sense, but the fine grained distinction is still useful.</p>
-
-
-<p>This is particularly significant in another book I've read recently, which is James Scott's <a href="https://amzn.to/2yzIMF8">Domination and the Arts of Resistance</a>, where he introduces the idea of the <em>hidden transcript</em> - essentially the canon of knowledge that is present within a marginalised group and is actively concealed (possibly by hiding it in plain sight) from the more dominant group.</p>
-
-
-<p>Putting these together, one way of looking at Dotson's notion of contributory injustice, which is the refusal of dominant groups to take on the ideas of the marginalised (e.g. white people refusing to acknowledge the idea of racism), is that sometimes the transcripts of marginalised groups are hidden by the marginalised, but equally often they're instead ignored by the powerful.</p>
-
-
-</section>
 
 
 <h2>2020-05</h2>
 
 <ul class=postarchive>
+<li><a href="/posts/2020-05-25-09:18.html">Identity and Legitimisation of Knowledge</a></li>
 <li><a href="/posts/2020-05-23-09:31.html">Feet as a Foundational Skill</a></li>
 <li><a href="/posts/2020-05-22-09:34.html">Feeling Good About Being Good</a></li>
 <li><a href="/posts/2020-05-21-09:32.html">Against the Classification of Books</a></li>
