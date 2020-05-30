@@ -766,40 +766,57 @@ CANON = [
 
 
 @main.command(name="book-post")
-def book_post():
+@click.option("--select", default='')
+def book_post(select):
+    if select:
+        books = [b for b in CANON if select in b.title or select in (b.author or '')]
+        if not books:
+            print(f"No books include {repr(select)}")
+            sys.exit(1)
+        else:
+            if len(books) > 1:
+                exact_matches = [b for b in books if b.title == select or b.author == select]
+                if exact_matches:
+                    books = exact_matches
+    else:
+        books = CANON
 
-    book = random.choice(CANON)
+    book = random.choice(books)
     logfile = os.path.join(ROOT, "logs", "books.csv")
 
-    with open(logfile, "a") as o:
-        log = csv.writer(o, delimiter="\t")
+    values = [
+        ("yes", "Yes"),
+        ("new-page", "Pick a different page"),
+    ]
 
-        while True:
-            page = random.randint(*book.page_range)
-            result = radiolist_dialog(
-                values=[
-                    ("yes", "Yes"),
-                    ("new-book", "Pick a different book"),
-                    ("new-page", "Pick a different page"),
-                ],
-                text=f"Would you like to write about {book.title} page {page}?",
-            ).run()
+    if len(books) > 1:
+        values.insert(1, ("new-book", "Pick a different book"))
 
-            if result is None:
-                result = "cancel"
+    while True:
+        page = random.randint(*book.page_range)
+        result = radiolist_dialog(
+            values=values,
+            text=f"Would you like to write about {book.title} page {page}?",
+        ).run()
 
+        if result is None:
+            result = "cancel"
+
+        with open(logfile, "a") as o:
+            log = csv.writer(o, delimiter="\t")
             log.writerow([datetime.now().isoformat(), book.title, page, result])
-            git("commit", logfile, "--allow-empty", "-m", "Update book log")
 
-            if result == "yes":
-                break
-            elif result == "new-book":
-                book = random.choice(CANON)
-            elif result == "new-page":
-                pass
-            else:
-                assert result == "cancel"
-                return
+        git("commit", logfile, "--allow-empty", "-m", "Update book log")
+
+        if result == "yes":
+            break
+        elif result == "new-book":
+            book = random.choice(CANON)
+        elif result == "new-page":
+            pass
+        else:
+            assert result == "cancel"
+            return
 
     if book.author:
         prompt = f"From [{book.title}]({book.url}) by {book.author}, page {page}:"
