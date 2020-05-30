@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-05-29T05:46:00+01:00</updated>
+  <updated>2020-05-30T13:17:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,136 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-05-20-17:58.html</id>
-    <title>How I fix anxiety triggers</title>
-    <updated>2020-05-20T19:57:16+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;How I fix anxiety triggers&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-05-20&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;This is a sketch of the skillset I use to deal with anxiety. It works well when:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Anxiety is at a level that I can deal with.&lt;/li&gt;
-&lt;li&gt;It is anxiety &lt;em&gt;about&lt;/em&gt; something.&lt;/li&gt;
-&lt;li&gt;You are me.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;For example:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;I currently feel vaguely anxious. Not sure what about. It's not especially hard to deal with, I'm just noticing a certain tension in my shoulders and that I feel slightly on edge. This is undirected anxiety, and I don't currently have a good skillset for dealing with it.&lt;/li&gt;
-&lt;li&gt;I'm currently putting off a whole bunch of accounting stuff because accounting stuff makes me super anxious and I don't &lt;em&gt;want&lt;/em&gt; to deal with it. I should do this, but I haven't, and forcing myself into doing it is probably not helpful for dealing with my anxiety on the subject.&lt;/li&gt;
-&lt;li&gt;You might not be me, and have different sets of problems as a result. I'm reasonably confident that something in this space works for fairly general reasons, but I can't promise that doing exactly what I do will work for you.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;h3&gt;Basic Procedure&lt;/h3&gt;
-
-
-&lt;p&gt;The procedure is very simple:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Notice that a thing is triggering anxiety.&lt;/li&gt;
-&lt;li&gt;Figure out &lt;em&gt;why&lt;/em&gt; it's triggering anxiety.&lt;/li&gt;
-&lt;li&gt;Ask if the current situation is actually one I need to be anxious about.&lt;ul&gt;
-&lt;li&gt;If yes, keep being anxious, taking appropriate steps to increase your safety.&lt;/li&gt;
-&lt;li&gt;If no, stop being anxious, and also be less anxious in similar situations in future.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;All three of these are very simple but they are not easy and require developing some foundational skills that I'll talk about at the end.&lt;/p&gt;
-
-
-&lt;p&gt;Does it work? In my experience, pretty reliably, as long as you can actually work through the procedure (which can be both intellectually and emotionally difficult).&lt;/p&gt;
-
-
-&lt;h3&gt;Why does this work?&lt;/h3&gt;
-
-
-&lt;p&gt;The basic philosophical premises of this are:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Anxiety is not in and of itself bad. Anxiety is your reaction to being in a dangerous situation, making you aware of it so that you can be prepared. It is good to be aware of when you are in a dangerous situation.&lt;/li&gt;
-&lt;li&gt;Your brain does not do a perfectly rational threat assessment of the situation, it learns simple pattern matching rules.&lt;/li&gt;
-&lt;li&gt;When a rule is active you can change it by better understanding the situation and gently guiding yourself towards understanding why it doesn't apply.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;(3) is the basic idea behind &lt;a href="https://www.lesswrong.com/posts/i9xyZBS3qzA8nFXNQ/book-summary-unlocking-the-emotional-brain"&gt;coherence therapy&lt;/a&gt;: You can retrain emotions when they are triggered.&lt;/p&gt;
-
-
-&lt;p&gt;I've previously explained the idea that your bundle of emotional reactions are a messy complex system that you can debug and refactor in the previous three posts:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://notebook.drmaciver.com/posts/2020-02-20-09:31.html"&gt;Emotional reactions as legacy code&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://notebook.drmaciver.com/posts/2020-03-03-09:07.html"&gt;Your emotions are valid but probably wrong&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://notebook.drmaciver.com/posts/2020-03-14-13:55.html"&gt;Alief/Belief Coherence&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;h3&gt;What doesn't work&lt;/h3&gt;
-
-
-&lt;p&gt;The main thing that people try to do with anxiety is suppress it. This doesn't work, and probably makes your anxiety worse, for several reasons:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;It causes you to ignore anxiety in unsafe situations where it's actually worth being anxious.&lt;/li&gt;
-&lt;li&gt;If you can only fix reactions when they're active, if you succeed at suppressing a reaction it'll just come back later.&lt;/li&gt;
-&lt;li&gt;Emotions tend to rise to the level that is required to get us to do something about them, so this will tend to make anxiety worse.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;Unfortunately because we've got into the habit of treating anxiety itself as the problem, this is the natural thing to do. My instinct is that you are better off palliating to deal with the anxious situation or avoiding it entirely rather than trying to suppress it.&lt;/p&gt;
-
-
-&lt;h3&gt;Foundational Skills&lt;/h3&gt;
-
-
-&lt;p&gt;Although the procedure is simple, it requires some relatively difficult foundational skills:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;Self-compassion, the ability to talk compassionately and without judgement.&lt;/li&gt;
-&lt;li&gt;Focusing, the ability to use felt sense and verbalisation to understand your own feelings.&lt;/li&gt;
-&lt;li&gt;Discomfort tolerance, the ability to remain uncomfortable without treating it as an emergency.&lt;/li&gt;
-&lt;li&gt;Noticing triggers, the ability to explicitly notice and identify triggered states.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;I talked about some of these in &lt;a href="https://www.drmaciver.com/2020/01/a-crash-course-in-having-feelings/"&gt;A Crash Course in Having Feelings&lt;/a&gt;. I don't necessarily have good advice beyond that post on how to develop these skills, but some books that I found helpful in learning about each of these are:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;Self-compassion: &lt;a href="https://amzn.to/3g52wRL"&gt;Rewriting the Rules&lt;/a&gt; by Meg-John Barker&lt;/li&gt;
-&lt;li&gt;Focusing: &lt;a href="https://amzn.to/3cPJEnN"&gt;Focusing&lt;/a&gt; by Eugene Gendlin&lt;/li&gt;
-&lt;li&gt;Discomfort Tolerance: &lt;a href="https://amzn.to/2ZlZ2EB"&gt;Conflict is not Abuse&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Noticing triggers: &lt;a href="https://amzn.to/36ghhg9"&gt;Complex PTSD: From Surviving to Thriving&lt;/a&gt; (I'd probably recommend starting with &lt;a href="https://www.rewriting-the-rules.com/self/trauma-and-cptsd-101/"&gt;Meg-John Barker's Post on this&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;But to be honest I think with all of these the real way to get good at them is just to practice. Of these I'd most strongly recommend "A Crash Course in Having Feelings", "Focusing", and MJB's post on trauma. The others were important to my development, but I read a lot of books so that's relatively cheap for me, and was only really a way to get started. The best thing for actually developing these skills was to use them in practice.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-05-20-17:58.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-21-09:32.html</id>
     <title>Against the Classification of Books</title>
@@ -783,7 +653,7 @@ I am aware of it as a theoretical possibility, but it does not appear as a pract
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-29-05:46.html</id>
     <title>Defects are the responsibility of programmers</title>
-    <updated>2020-05-29T05:46:00+01:00</updated>
+    <updated>2020-05-29T08:34:06+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Defects are the responsibility of programmers&lt;/p&gt;
@@ -876,5 +746,42 @@ If people feel guilty but are &lt;em&gt;not&lt;/em&gt; empowered to fix it, then
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-05-29-05:46.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-05-30-13:17.html</id>
+    <title>Knowing what to look for</title>
+    <updated>2020-05-30T13:17:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Knowing what to look for&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-05-30&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;(A short post today because I have run out of brain)&lt;/p&gt;
+
+
+&lt;p&gt;From &lt;a href="https://amzn.to/3d3M3vs"&gt;Finding Our Sea-Legs&lt;/a&gt; by Will Buckingham, page 69:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;If I were to travel to Japan and stand before Mount Fuji, I would do so not with an attentiveness born of bare seeing, but with an attentiveness made keen by my love of Hokusai's prints. I would see the mountain with the care and the love that comes from knowing it is precisely &lt;em&gt;this&lt;/em&gt; mountain, and not some other, before which I stand.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;This ties interestingly in to my &lt;a href="https://notebook.drmaciver.com/posts/2020-05-26-06:22.html"&gt;previous post about visual hermeneutics&lt;/a&gt;. Because Buckingham has prior context the mountain, that causes him to interpret it in a particular way - he feels certain things about it, but also he attends to it differently. He knows things about it, and his eye is trained to look for them.&lt;/p&gt;
+
+
+&lt;p&gt;I think we often have a broken intuitive model of how vision works. Vision is not actually us statically observing what is there. It is an active, engaged, process, where our eye looks for and tracks certain details. Your visual field is mostly incredibly blurry, outside of a very narrow range, but your eyes dart around picking out detail wherever you're paying attention to so you mostly don't notice.&lt;/p&gt;
+
+
+&lt;p&gt;This means that interpretation isn't just a matter of post-processing after you've seen an image, it determines where you focus your attention, so it literally changes what you see.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-05-30-13:17.html" rel="alternate"/>
   </entry>
 </feed>
