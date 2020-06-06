@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-06-06T10:11:00+01:00</updated>
+  <updated>2020-06-06T11:18:42+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1024,7 +1024,7 @@ And there I get that a lot. It's a running joke: "Popular culture reference, Dav
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-06-06-10:11.html</id>
     <title>Testing Positive For vs Having</title>
-    <updated>2020-06-06T10:11:00+01:00</updated>
+    <updated>2020-06-06T11:18:42+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Testing Positive For vs Having&lt;/p&gt;
@@ -1088,6 +1088,12 @@ I'd probably still keep away from supermarkets, but I'd probably be a lot more w
 
 
 &lt;p&gt;Another use case is that even if tests are quite inaccurate at an individual level, they might be useful at a population level: If you know the false positive and false negative rates pretty well, and you implement mass testing, you can be pretty confident of the percentage of the population who have had the virus, and plan accordingly, even if you've got significant question marks about any individual person.&lt;/p&gt;
+
+
+&lt;p&gt;In the other direction, the government was criticised (somewhat correctly) early on for the lack of widespread testing, and widespread testing is good and important, but there was at least some reasonable logic behind not testing everyone with symptoms: If you have acute symptoms, you need to go to the hospital regardless of whether you have it, and if you don't have acute symptoms, you need to stay home regardless of whether you have it, so the test did not (at that point) add that much useful information. It is, at best, lightly informative of treatment and of the decision of whether you should be admitted to hospital. Often effective action requires triaging what information is worth acquiring.&lt;/p&gt;
+
+
+&lt;p&gt;(This is not to say that I think that the UK government response to COVID-19 has been anything less than shambolic, but some individual actions are not as obviously unreasonable as they seem, especially given other constraints caused by the rest of the response)&lt;/p&gt;
 
 
 &lt;p&gt;Ultimately I think this highlights two important things about knowledge:&lt;/p&gt;
