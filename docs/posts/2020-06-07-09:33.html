@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+DRMacIver's Notebook: A Meta For Computers
+    </title>
+
+    <meta property="og:title" content="A Meta For Computers">
+
+    <meta property="og:url" content="https://notebook.drmaciver.com/posts/2020-06-07-09:33.html" />
+
+    <meta name="twitter:card" content="summary" />
+
+    <meta property="og:creator" content="@DRMacIver">
+
+    <link rel="stylesheet" href="/pygments.css"/>
+    <link rel="stylesheet" href="/tufte.css"/>
+    <link rel="stylesheet" href="/latex.css"/>
+    <link rel="stylesheet" href="/drmnotes.css"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
+});
+
+MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
+  console.log(message)
+});
+
+</script>
+
+  </head>
+
+  <body>
+    <article>
+        <h1><a href="/">DRMacIver's Notebook</a></h1>
+        <p class=subtitle>A Meta For Computers</p>
+
+        
+
+<section id="the-post">
+<p class=subtitle>A Meta For Computers</p>
+<dl class=metadata>
+<dt>Published</dt>
+<dd class="post-date">2020-06-07</dd>
+</dl>
+
+<p>I use metaphors of legacy code and refactoring a lot, and this works very well but is comprehensible more or less in direct proportion to how well you understand software development.
+It turns out that a lot of people I know understand software development well enough to benefit from this, but by no means all.</p>
+<p>I was trying to think about how to explain this to other people, and I ended up with what I think is a reasonably pleasing way to explain how computers and software work in general.</p>
+<p>So, here's the metaphor I want to use: Think of a computer as a kind of archive, but you're not allowed in to the archive, you can only access it through someone at the front desk. We'll call him Steve.</p>
+<p>Behind the scenes the archive has a bunch of people working in it. When you ask Steve to do something, he doesn't do it himself, he just passes on appropriate orders to the people working there, they carry out the orders, bring something back to him, and he hands it over to you. Steve is not the one who is fulfilling your commands, he's just the interface to it.</p>
+<p>Now due to regulations, the archive runs on <em>very</em> strict rules. There's a rule for everything, a protocol to every request. Steve and the workers in it <em>will</em> not violate the rules, no matter how much you plead. It's more than their job's worth, don't you know?</p>
+<p>As long as you stick within the scenarios the rules are designed for this is mostly pretty well.
+You bring Steve a document and ask him to file it. He says "Certainly, I'll file this as document XYZ-1234" or some other ID, hands it to the a clerk, who files it appropriately.
+When you want it back you say "Steve, can I have document XYZ-1234?" and he passes on the request to a relevant clerk, they fetch the document and hand it back to you. The system is working as intended.</p>
+<p>Suppose one day you come in and you've forgotten the ID of the document you want. "Steve, can I have the document I gave you on Wednesday?".
+Steve can't do that. "The document I gave you on Wednesday" is not a request that the system has rules for, so he's not allowed to fulfill it.</p>
+<p>Eventually, after consulting the rule book as to what sort of queries you <em>are</em> allowed to make, you ask Steve to give you all documents filed by you on 2020-06-03. You filed only one document on that date (the Wednesday in question), so Steve hands you the document on Wednesday.</p>
+<p>This is what interacting with a computer is like: The computer is a system of rules that is there to do things you find useful, but everything you want to do with it has to be thought of and accounted for in advance.
+Sometimes the rules are so complicated as to <em>seem</em> more sophisticated than that, but they're not they're just a really complicated rule system. Sometimes the rules contain rules for changing the rules (this is what programming is), but you're still constrained to follow the rules.</p>
+<p>The fact that they're rules doesn't mean they're perfectly predictable of course. You can have rules for things like "Give me a random file" which involves a clerk drawing a card, rolling dice, etc. You can also have rules like "Send two clerks to do A and B and give me whichever result comes back" and the result will depend on which workers implement the task, whether they're having good days, etc. The rules can, in general, <em>underdetermine</em> the result, but they do specify how the result must be obtained.</p>
+<h3>What does a crash look like?</h3>
+<p>One day you go to Steve and you say "Steve, can you get me document QP-567?". As per usual, Steve sends a Clerk off to get the document. As he hands it back to you, he goes through the procedure to record that you've been given the document. At that point he pauses, a horrified look crosses his face, and he breaks down crying, without handing you the document.</p>
+<p>You ask him what's wrong, but he can't tell you: There's no rule for that. Also, Steve now won't answer any of your other questions, because the rules don't allow him to proceed until he's completed your request.</p>
+<p>Eventually, frustrated, you go to Kim, the administrator, who is in charge of managing the rules of the archive and ask them to look into it. After a while of investigating (they have a bunch of special privileges that allow them to ask Steve WTF is going on) they tell you that the problem is that the document you've asked for doesn't have an associated date or author, and that as part of their procedures Steve has to record those as part of the log of your request when handing you a document. The document you requested came from before they were recording that information on entry, and the recording rules came in after recording that information was mandatory, so don't account for this possibility.</p>
+<p>Kim updates the rules and tells you they've fixed the problem. You ask Steve for QP-567 again. He informs you that you don't have permission to view that document.</p>
+<p>You are less than impressed by this response and ask Kim what's up with it. They inform you that this seemed like the logical fix: If accessing a document requires this information, you must not be allowed to access documents that lack it. You patiently explain that this is all very well but you need to access the document from the archive and don't actually care about their recording requirements.
+Why is that rule even there?</p>
+<p>Kim consults Janet, the interface to their archive where they record information about the changes in the rules of the archive you want to manage, and after a number of queries comes to the following conclusion: The recording requirement doesn't seem to have been introduced for any particularly good reason, but all sorts of <em>other</em> rules and procedures depend on it now, so it's really hard to change.</p>
+<p>After a bit of back and forth and arguing about how important it is for you to be able to actually access documents from the archive anyway, you hit on a solution: When such a document is accessed, Steve will record it as having been authored by "Unknown" at the date of the creation of the archive.</p>
+<p>You retrieve your document.</p>
+<h3>What does legacy code look like?</h3>
+<p>One day you request a document and you get the wrong one back.</p>
+<p>You go to Kim and ask what's up with that. "Jesus, I have no idea, document retrieval is <em>complicated</em>."</p>
+<p>You express a certain amount of surprise about this. From your perspective you just give Steve the ID and he comes back to you with a document. What could be simpler?</p>
+<p>So Kim sits you down and explains to you the realities of archiving.</p>
+<p>First you have to understand, an archive is not some abstract place. These documents you're handing to Steve? They have to <em>go</em> somewhere. There are all these big rooms where the documents have to literally, physically, go. Although those rooms are big, there are a lot of documents, so sometimes rooms fill up and you have to build other rooms.</p>
+<p>So, when you look up a document, first someone has to look up in an index somewhere to find out what room to look in for it. This was reasonable simple up until a couple of years ago when the size of the index got too large for the room they were storing it in, so now the index is split across multiple rooms. So first they have a procedure to figure out which index to look at.</p>
+<p>This is all made more complicated by the fact that the ID system has changed multiple times over the lifetime of the archive, so depending on which room it's in and what ID system was in use when the item was entered into the archive you need different ways of looking it up (some rooms the documents are stored ordered by author, some by title, some by publication year, and this affects how you find a document there and is taken into account in the ID).</p>
+<p>In order to illustrate their point, Kim shows you the rules for looking up a document. They span three books. They are not small books.</p>
+<p>Eventually after making yourself enough of a nuisance, Kim acknowledges that yes of the dozen things they had to do today obviously your document is the most important thing they could be working on,
+and so they go to Steve and ask him to walk them through how exactly the document was retrieved.</p>
+<p>Eventually, after much deliberation, they determine that the problem is that it was looked up using the wrong ID system.
+You see, the way they determine which ID system to use is based on the date the document was entered into the archive. If there is no entry date, they try all of the different ways in which it could have been entered (there are three from before the system started requiring recording the entry date) and if there is more than one document they ask the person requesting the document to resolve the ambiguity.</p>
+<p>But the last time this document was requested, Steve noticed it didn't have an entry date, so as per the new rules implemented in response to your complaint before, set its entry date to the beginning of the archive. So now there is no ambiguity in what ID system it is using, but unfortunately it's a much more recent document than that, so it's unambiguously using the wrong one.</p>
+</section>
+
+    </article>
+<footer>
+Copyright David R. MacIver.
+
+CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
+</footer>
+  </body>
+</html>

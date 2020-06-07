@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-06-06T11:18:42+01:00</updated>
+  <updated>2020-06-07T09:33:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,138 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-05-28-07:42.html</id>
-    <title>Life is neither poker nor tennis</title>
-    <updated>2020-05-28T09:18:29+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Life is neither poker nor tennis&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-05-28&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;From &lt;a href="https://amzn.to/3deDz4N"&gt;Thinking in Bets&lt;/a&gt; by Annie Duke, page 10:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Hindsight bias is the tendency, after an outcome is known, to see the outcome as having been inevitable. When we say "I should have known that would happen," or, "I should have seen it coming," we are succumbing to hindsight bias.&lt;/p&gt;
-&lt;p&gt;Those beliefs develop from an overly tight connection between outcomes and decisions. That is typical of how we evaluate our past decisions."&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;This is from a chapter called "Life is poker, not chess."&lt;/p&gt;
-
-
-&lt;p&gt;Before I start, I'd like to say that I think "Thinking in Bets" is a very good book and I would recommend that most people read it. It is probably the most accessible practical manual of rationality that I know of (there may well be better ones, but I don't know of them), and most people's thinking would be improved by a good primer in that.&lt;/p&gt;
-
-
-&lt;p&gt;Which is why I now want to explain why it's also wrong about everything.&lt;/p&gt;
-
-
-&lt;p&gt;In discussions on Twitter about &lt;a href="https://notebook.drmaciver.com/posts/2020-05-27-07:21.html"&gt;yesterday's diatribe against The Inner Game of Tennis&lt;/a&gt;, I made &lt;a href="https://twitter.com/DRMacIver/status/1265765964915904514"&gt;the following point&lt;/a&gt;:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;The problem being that because he got his start in tennis where verbal intelligence mostly &lt;em&gt;does&lt;/em&gt; need to get out of the way, and because most people don't have tennis-related trauma, his model works pretty there but has fatal flaws when you try to generalise it off the court.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;Gallwey is making a classic error: He is a &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-07:38.html"&gt;nerd&lt;/a&gt;, and he thinks his special interest is universally applicable. Most of the advice in the inner game of tennis is very good &lt;em&gt;if you only ever apply it on the Tennis court&lt;/em&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;It's absolutely a good thing to take ideas from a specific nerddom and try to generalise them. I love doing that, and claiming that it was bad would be the rankest hypocrisy on my part. The problem is not generalising his Tennis related learning off the tennis court, the problem is that having learned all these skills in a context where they are useful close to 100% of the time, you do not learn to understand the preconditions under which those skills are useful.&lt;/p&gt;
-
-
-&lt;p&gt;Annie Duke has made the same mistake: She has learned a skill set within the context of a game of poker, and is now viewing the relevant skill set as applicable to life as a whole. Unfortunately, Poker has some very distinctive features over life:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;It is intrinsically adversarial.&lt;/li&gt;
-&lt;li&gt;It is highly structured.&lt;/li&gt;
-&lt;li&gt;The probabilities of different outcomes are well defined and easily calculable.&lt;/li&gt;
-&lt;li&gt;It has a single well-defined utility function (money made) describing success in the game.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;As you may or may not be aware I love to hate on &lt;a href="https://en.wikipedia.org/wiki/Subjective_expected_utility"&gt;Subjective Expected Utility Theory&lt;/a&gt;, but poker is an example where utility theory is great because you &lt;em&gt;do&lt;/em&gt; have a utility function and you &lt;em&gt;do&lt;/em&gt; have probabilities. Regardless of whether you believe in SEU, life outside poker simply isn't like that because the probabilities and the utility function are at best much more complex and less well defined.&lt;/p&gt;
-
-
-&lt;p&gt;(Note: Thanks to &lt;a href="https://en.wikipedia.org/wiki/Kelly_criterion"&gt;The Kelly Criterion&lt;/a&gt; the utility function of poker is &lt;em&gt;not&lt;/em&gt; just straight up money made, but its logarithm, but the point still stands).&lt;/p&gt;
-
-
-&lt;p&gt;Poker is an &lt;em&gt;excellent&lt;/em&gt; game with which to hone your skills for a particular type of technical rationality, but technical rationality will only take you so far.&lt;/p&gt;
-
-
-&lt;p&gt;C. Thi Nguyen suggests that games are &lt;a href="https://philpapers.org/archive/NGUGAT-2.pdf"&gt;ways of experimenting with different structures of agency&lt;/a&gt;. In playing a game, you are entering a world in which your choices are constrained to follow the rules of the game, and so you learn to play &lt;em&gt;as if&lt;/em&gt; those were the only choices possible. As a result you will &lt;a href="https://notebook.drmaciver.com/posts/2020-02-21-10:04.html"&gt;learn skills that you are neglecting in other contexts&lt;/a&gt; where those constraints on your agency do not apply. Learning the inner game of tennis &lt;em&gt;will&lt;/em&gt; teach you about embodied cognition, because you can't think your way out of the problem. Learning poker &lt;em&gt;will&lt;/em&gt; teach you about technical rationality, because you can't sweet talk your way out of the problem. Both embodied cognition and technical rationality are very good skills that you can apply in life more broadly, but because life lacks that restricted structure of agency that the game had. The reason the game taught you that skill so well was precisely &lt;em&gt;because&lt;/em&gt; the skill is not universally applicable.&lt;/p&gt;
-
-
-&lt;p&gt;David Chapman has recently published an &lt;a href="https://meaningness.com/eggplant/introduction"&gt;updated introduction to his Eggplant Book&lt;/a&gt;, which is about what he calls metarationality, that I rather like. In particular:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;[People with metarational skills] produce these insights by investigating the relationship between a system of technical rationality and its context. The context includes a specific situation in which rationality is applied, the purposes for which it is used, the social dynamics of its use, and other rational systems that might also be brought to bear. This work operates not within a system of technical rationality, but around, above, and then on the system.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;This applies more broadly than technical rationality: The foundational skill of life is figuring out what other skills you need to bring to bear on the situation. You cannot learn that from a game, because games work precisely by removing the need for that skill.
-Games are an excellent way to hone certain skills, but they intrinsically lack the ability to teach you the fundamental life skill of &lt;em&gt;knowing which game you are playing&lt;/em&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;All of which is a very long winded way of getting around to a very basic point prompted by the initial quote: Hindsight bias is good, actually.&lt;/p&gt;
-
-
-&lt;p&gt;Hindsight bias is generally bad in poker where you can have very well defined strategies and intrinsic quantifiable uncertainty in the problem, but in life more broadly hindsight bias serves several fairly important functions. For example:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;It forces you to look at problems much more carefully than you otherwise would have, giving you incentives to improve your skills.&lt;/li&gt;
-&lt;li&gt;It lets you hold people accountable for actions even when they are individually harmless.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;An example of the first is that when writing it is generally worth assuming that any misunderstands are your fault. They may often not be - many people are very bad readers - but by treating them as your fault anyway your writing skills will generally improve.&lt;/p&gt;
-
-
-&lt;p&gt;An example of the second is something I often use as a moral test case and requires a bit more of an extended anecdote.&lt;/p&gt;
-
-
-&lt;p&gt;Near my parents' place there is a more-or-less blind bend in the main road with a small road that joins on to the main road right after that bend. It is very poor design.&lt;/p&gt;
-
-
-&lt;p&gt;Almost nobody comes down that small road. I've seen someone joining on to the main road from there maybe two or three times during many years of driving that road.&lt;/p&gt;
-
-
-&lt;p&gt;It's entirely viable to take the bend at 60mph if you ignore the side road. It's not &lt;em&gt;that&lt;/em&gt; sharp a bend. However, the signage wants you to take it at 25mph in order to account for that basically-never-used side road.&lt;/p&gt;
-
-
-&lt;p&gt;Now, my question is this: How fast should you take that bend?&lt;/p&gt;
-
-
-&lt;p&gt;From a subjective expected utility point of view, it's actually probably fine to take that bend at 60mph. Slowing down at that point in the drive is quite annoying, and the chances of causing an accident are extremely low given the low usage of that side road (and it's not like an accident is inevitable at 60mph and more than it's entirely avoidable at 25mph, you're just increasing the likelihood and severity). Yes you're trading convenience for an increased probability of your own and/or someone else's death but of course you are, you're &lt;em&gt;driving&lt;/em&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;But, if everyone else makes the same calculation, driving in from that side road is now basically a death sentence.&lt;/p&gt;
-
-
-&lt;p&gt;Subjective Expected Utility calculations often look &lt;em&gt;very&lt;/em&gt; different if you universalise them by assuming that everyone else will make similar calculations, but SEU calculations are hard enough as it is without reasoning this way, and there's an easy kludge to achieve much the same effect: Hindsight bias.&lt;/p&gt;
-
-
-&lt;p&gt;If we treat low-probability consequences as if we should have seen them coming, and punish them accordingly, then we change the incentives to shape individual behaviour away from creating outcomes that were inevitable in aggregate even if they were low probability in any given instance.&lt;/p&gt;
-
-
-&lt;p&gt;Is this unfair on the indidual who happens to trigger the low probablity consequence? Probably. But so is dying because everyone else was making individually rational calculations that decided a low probability of your death was an acceptable consequence.&lt;/p&gt;
-
-
-&lt;p&gt;Is hindsight bias always good? No, of course not. You have to figure out from context whether it is or not. But that skill of figuring it out from context is not, I'm afraid, something you can learn from a game.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-05-28-07:42.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-28-21:05.html</id>
     <title>Key Performance Indicators</title>
@@ -1024,7 +892,7 @@ And there I get that a lot. It's a running joke: "Popular culture reference, Dav
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-06-06-10:11.html</id>
     <title>Testing Positive For vs Having</title>
-    <updated>2020-06-06T11:18:42+01:00</updated>
+    <updated>2020-06-06T11:36:21+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Testing Positive For vs Having&lt;/p&gt;
@@ -1106,5 +974,123 @@ I'd probably still keep away from supermarkets, but I'd probably be a lot more w
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-06-06-10:11.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-06-07-09:33.html</id>
+    <title>A Meta For Computers</title>
+    <updated>2020-06-07T09:33:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;A Meta For Computers&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-06-07&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I use metaphors of legacy code and refactoring a lot, and this works very well but is comprehensible more or less in direct proportion to how well you understand software development.
+It turns out that a lot of people I know understand software development well enough to benefit from this, but by no means all.&lt;/p&gt;
+
+
+&lt;p&gt;I was trying to think about how to explain this to other people, and I ended up with what I think is a reasonably pleasing way to explain how computers and software work in general.&lt;/p&gt;
+
+
+&lt;p&gt;So, here's the metaphor I want to use: Think of a computer as a kind of archive, but you're not allowed in to the archive, you can only access it through someone at the front desk. We'll call him Steve.&lt;/p&gt;
+
+
+&lt;p&gt;Behind the scenes the archive has a bunch of people working in it. When you ask Steve to do something, he doesn't do it himself, he just passes on appropriate orders to the people working there, they carry out the orders, bring something back to him, and he hands it over to you. Steve is not the one who is fulfilling your commands, he's just the interface to it.&lt;/p&gt;
+
+
+&lt;p&gt;Now due to regulations, the archive runs on &lt;em&gt;very&lt;/em&gt; strict rules. There's a rule for everything, a protocol to every request. Steve and the workers in it &lt;em&gt;will&lt;/em&gt; not violate the rules, no matter how much you plead. It's more than their job's worth, don't you know?&lt;/p&gt;
+
+
+&lt;p&gt;As long as you stick within the scenarios the rules are designed for this is mostly pretty well.
+You bring Steve a document and ask him to file it. He says "Certainly, I'll file this as document XYZ-1234" or some other ID, hands it to the a clerk, who files it appropriately.
+When you want it back you say "Steve, can I have document XYZ-1234?" and he passes on the request to a relevant clerk, they fetch the document and hand it back to you. The system is working as intended.&lt;/p&gt;
+
+
+&lt;p&gt;Suppose one day you come in and you've forgotten the ID of the document you want. "Steve, can I have the document I gave you on Wednesday?".
+Steve can't do that. "The document I gave you on Wednesday" is not a request that the system has rules for, so he's not allowed to fulfill it.&lt;/p&gt;
+
+
+&lt;p&gt;Eventually, after consulting the rule book as to what sort of queries you &lt;em&gt;are&lt;/em&gt; allowed to make, you ask Steve to give you all documents filed by you on 2020-06-03. You filed only one document on that date (the Wednesday in question), so Steve hands you the document on Wednesday.&lt;/p&gt;
+
+
+&lt;p&gt;This is what interacting with a computer is like: The computer is a system of rules that is there to do things you find useful, but everything you want to do with it has to be thought of and accounted for in advance.
+Sometimes the rules are so complicated as to &lt;em&gt;seem&lt;/em&gt; more sophisticated than that, but they're not they're just a really complicated rule system. Sometimes the rules contain rules for changing the rules (this is what programming is), but you're still constrained to follow the rules.&lt;/p&gt;
+
+
+&lt;p&gt;The fact that they're rules doesn't mean they're perfectly predictable of course. You can have rules for things like "Give me a random file" which involves a clerk drawing a card, rolling dice, etc. You can also have rules like "Send two clerks to do A and B and give me whichever result comes back" and the result will depend on which workers implement the task, whether they're having good days, etc. The rules can, in general, &lt;em&gt;underdetermine&lt;/em&gt; the result, but they do specify how the result must be obtained.&lt;/p&gt;
+
+
+&lt;h3&gt;What does a crash look like?&lt;/h3&gt;
+
+
+&lt;p&gt;One day you go to Steve and you say "Steve, can you get me document QP-567?". As per usual, Steve sends a Clerk off to get the document. As he hands it back to you, he goes through the procedure to record that you've been given the document. At that point he pauses, a horrified look crosses his face, and he breaks down crying, without handing you the document.&lt;/p&gt;
+
+
+&lt;p&gt;You ask him what's wrong, but he can't tell you: There's no rule for that. Also, Steve now won't answer any of your other questions, because the rules don't allow him to proceed until he's completed your request.&lt;/p&gt;
+
+
+&lt;p&gt;Eventually, frustrated, you go to Kim, the administrator, who is in charge of managing the rules of the archive and ask them to look into it. After a while of investigating (they have a bunch of special privileges that allow them to ask Steve WTF is going on) they tell you that the problem is that the document you've asked for doesn't have an associated date or author, and that as part of their procedures Steve has to record those as part of the log of your request when handing you a document. The document you requested came from before they were recording that information on entry, and the recording rules came in after recording that information was mandatory, so don't account for this possibility.&lt;/p&gt;
+
+
+&lt;p&gt;Kim updates the rules and tells you they've fixed the problem. You ask Steve for QP-567 again. He informs you that you don't have permission to view that document.&lt;/p&gt;
+
+
+&lt;p&gt;You are less than impressed by this response and ask Kim what's up with it. They inform you that this seemed like the logical fix: If accessing a document requires this information, you must not be allowed to access documents that lack it. You patiently explain that this is all very well but you need to access the document from the archive and don't actually care about their recording requirements.
+Why is that rule even there?&lt;/p&gt;
+
+
+&lt;p&gt;Kim consults Janet, the interface to their archive where they record information about the changes in the rules of the archive you want to manage, and after a number of queries comes to the following conclusion: The recording requirement doesn't seem to have been introduced for any particularly good reason, but all sorts of &lt;em&gt;other&lt;/em&gt; rules and procedures depend on it now, so it's really hard to change.&lt;/p&gt;
+
+
+&lt;p&gt;After a bit of back and forth and arguing about how important it is for you to be able to actually access documents from the archive anyway, you hit on a solution: When such a document is accessed, Steve will record it as having been authored by "Unknown" at the date of the creation of the archive.&lt;/p&gt;
+
+
+&lt;p&gt;You retrieve your document.&lt;/p&gt;
+
+
+&lt;h3&gt;What does legacy code look like?&lt;/h3&gt;
+
+
+&lt;p&gt;One day you request a document and you get the wrong one back.&lt;/p&gt;
+
+
+&lt;p&gt;You go to Kim and ask what's up with that. "Jesus, I have no idea, document retrieval is &lt;em&gt;complicated&lt;/em&gt;."&lt;/p&gt;
+
+
+&lt;p&gt;You express a certain amount of surprise about this. From your perspective you just give Steve the ID and he comes back to you with a document. What could be simpler?&lt;/p&gt;
+
+
+&lt;p&gt;So Kim sits you down and explains to you the realities of archiving.&lt;/p&gt;
+
+
+&lt;p&gt;First you have to understand, an archive is not some abstract place. These documents you're handing to Steve? They have to &lt;em&gt;go&lt;/em&gt; somewhere. There are all these big rooms where the documents have to literally, physically, go. Although those rooms are big, there are a lot of documents, so sometimes rooms fill up and you have to build other rooms.&lt;/p&gt;
+
+
+&lt;p&gt;So, when you look up a document, first someone has to look up in an index somewhere to find out what room to look in for it. This was reasonable simple up until a couple of years ago when the size of the index got too large for the room they were storing it in, so now the index is split across multiple rooms. So first they have a procedure to figure out which index to look at.&lt;/p&gt;
+
+
+&lt;p&gt;This is all made more complicated by the fact that the ID system has changed multiple times over the lifetime of the archive, so depending on which room it's in and what ID system was in use when the item was entered into the archive you need different ways of looking it up (some rooms the documents are stored ordered by author, some by title, some by publication year, and this affects how you find a document there and is taken into account in the ID).&lt;/p&gt;
+
+
+&lt;p&gt;In order to illustrate their point, Kim shows you the rules for looking up a document. They span three books. They are not small books.&lt;/p&gt;
+
+
+&lt;p&gt;Eventually after making yourself enough of a nuisance, Kim acknowledges that yes of the dozen things they had to do today obviously your document is the most important thing they could be working on,
+and so they go to Steve and ask him to walk them through how exactly the document was retrieved.&lt;/p&gt;
+
+
+&lt;p&gt;Eventually, after much deliberation, they determine that the problem is that it was looked up using the wrong ID system.
+You see, the way they determine which ID system to use is based on the date the document was entered into the archive. If there is no entry date, they try all of the different ways in which it could have been entered (there are three from before the system started requiring recording the entry date) and if there is more than one document they ask the person requesting the document to resolve the ambiguity.&lt;/p&gt;
+
+
+&lt;p&gt;But the last time this document was requested, Steve noticed it didn't have an entry date, so as per the new rules implemented in response to your complaint before, set its entry date to the beginning of the archive. So now there is no ambiguity in what ID system it is using, but unfortunately it's a much more recent document than that, so it's unambiguously using the wrong one.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-06-07-09:33.html" rel="alternate"/>
   </entry>
 </feed>
