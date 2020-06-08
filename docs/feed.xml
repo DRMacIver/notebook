@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-06-08T10:11:00+01:00</updated>
+  <updated>2020-06-08T11:03:12+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -996,7 +996,7 @@ You see, the way they determine which ID system to use is based on the date the 
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-06-08-10:11.html</id>
     <title>A Guide to Starting a Daily Writing Practice</title>
-    <updated>2020-06-08T10:11:00+01:00</updated>
+    <updated>2020-06-08T11:03:12+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;A Guide to Starting a Daily Writing Practice&lt;/p&gt;
@@ -1125,6 +1125,9 @@ If it's the latter, remind yourself that this practice is successful if and only
 
 
 &lt;p&gt;You should avoid any nontrivial activation energy for getting started and just start. Pick wherever to write is the lowest effort for you to do so, don't try to do anything complicated to get set up.&lt;/p&gt;
+
+
+&lt;p&gt;Social media is not generally a good choice for this. Twitter, or Facebook, are not very good for the essay format, and I do think it is important to write somewhere where you could write longer posts if you wanted to.&lt;/p&gt;
 
 
 &lt;p&gt;My ideal recommendation is to start a blog or a newsletter somewhere. I've been enjoying Substack for &lt;a href="https://drmaciver.substack.com/"&gt;my newsletter&lt;/a&gt;. If you're at all programmery doing a static site on GitHub pages is also a good way to go, otherwise &lt;a href="https://wordpress.com/"&gt;wordpress.com&lt;/a&gt; is a good option. &lt;a href="https://reading.supply/"&gt;reading.supply&lt;/a&gt; seems nice but I haven't used it (and it's currently difficult to subscribe to if you've not got an account there, but that may be a feature depending on how shy you're feeling).&lt;/p&gt;
