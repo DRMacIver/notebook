@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-06-09T10:23:00+01:00</updated>
+  <updated>2020-06-10T10:45:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,43 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-05-30-13:17.html</id>
-    <title>Knowing what to look for</title>
-    <updated>2020-05-30T15:12:09+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Knowing what to look for&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-05-30&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;(A short post today because I have run out of brain)&lt;/p&gt;
-
-
-&lt;p&gt;From &lt;a href="https://amzn.to/3d3M3vs"&gt;Finding Our Sea-Legs&lt;/a&gt; by Will Buckingham, page 69:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;If I were to travel to Japan and stand before Mount Fuji, I would do so not with an attentiveness born of bare seeing, but with an attentiveness made keen by my love of Hokusai's prints. I would see the mountain with the care and the love that comes from knowing it is precisely &lt;em&gt;this&lt;/em&gt; mountain, and not some other, before which I stand.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;This ties interestingly in to my &lt;a href="https://notebook.drmaciver.com/posts/2020-05-26-06:22.html"&gt;previous post about visual hermeneutics&lt;/a&gt;. Because Buckingham has prior context the mountain, that causes him to interpret it in a particular way - he feels certain things about it, but also he attends to it differently. He knows things about it, and his eye is trained to look for them.&lt;/p&gt;
-
-
-&lt;p&gt;I think we often have a broken intuitive model of how vision works. Vision is not actually us statically observing what is there. It is an active, engaged, process, where our eye looks for and tracks certain details. Your visual field is mostly incredibly blurry, outside of a very narrow range, but your eyes dart around picking out detail wherever you're paying attention to so you mostly don't notice.&lt;/p&gt;
-
-
-&lt;p&gt;This means that interpretation isn't just a matter of post-processing after you've seen an image, it determines where you focus your attention, so it literally changes what you see.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-05-30-13:17.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-05-31-09:20.html</id>
     <title>Norms of Excellence</title>
@@ -1064,7 +1027,7 @@ it's worth watching out for some things:&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-06-09-10:23.html</id>
     <title>A Book is a Tool for Thinking With</title>
-    <updated>2020-06-09T10:23:00+01:00</updated>
+    <updated>2020-06-09T11:11:42+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;A Book is a Tool for Thinking With&lt;/p&gt;
@@ -1127,5 +1090,72 @@ The random prompt isn't really "conveying information" per se (I've already read
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-06-09-10:23.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-06-10-10:45.html</id>
+    <title>Don't anthropomorphise fate, it hates that</title>
+    <updated>2020-06-10T10:45:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Don't anthropomorphise fate, it hates that&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-06-10&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;From Brewer's Dictionary of Phrase and Fable:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Fate. Fates, the: The Greeks and Romans supposed there were three Parcae or Fates, who arbitrarily controlled the birth, life and death of everyone. They were CLOTHO, LACHESIS and ATROPOS. They are sometimes called the 'cruel Fates' because they paid no head to anyone's wishes.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;Looking up each of these individually:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Atropos (Greek, 'not turning', 'unchangeable'). In Greek mythology the eldest of the three FATES, the the one who severs the thread of life.&lt;/p&gt;
+&lt;p&gt;Clotho (Greek klothein, 'to draw thread', 'to spin'). One of the three FATES in classic mythology. She presided over birth and drew from her distaff the thread of life. (See also Atropos, Lachesis)&lt;/p&gt;
+&lt;p&gt;Lachesis. One of the three FATES, and the one who spins life's thread and determines its length. Her name represents Greek &lt;em&gt;lakhesis&lt;/em&gt;, 'destiny'&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;One thing I notice is how utterly inconsistent the formatting is on the three fates. Only Clotho references the other two. Lachesis has a different formatting for the Greek representation of her name.
+That's by the by though.&lt;/p&gt;
+
+
+&lt;p&gt;(By the by. Incidentally. 'By-' can often denote something subsidiary or secondary, such as: by-election, an election in a single constituency; by-play, the secondary action in a play; by-product, a subsidiary product; and byroad, a minor road)&lt;/p&gt;
+
+
+&lt;p&gt;I've talked about &lt;a href="https://amzn.to/2TCbsoa"&gt;Random Justice&lt;/a&gt; before (e.g. in &lt;a href="https://notebook.drmaciver.com/posts/2020-04-23-07:48.html"&gt;Proportionality and identity&lt;/a&gt;), and about its point that one of the problems with lotteries for decision making is that they are a bit too arbitrary and impersonal in their fairness.&lt;/p&gt;
+
+
+&lt;p&gt;I still haven't got around to reading The Secret of our Success but reviews of it (e.g. &lt;a href="https://slatestarcodex.com/2019/06/04/book-review-the-secret-of-our-success/"&gt;Scott Alexander's review&lt;/a&gt; and &lt;a href="https://scholars-stage.blogspot.com/2018/08/tradition-is-smarter-than-you-are.html"&gt;Scholar's Stage's review&lt;/a&gt;) exposed me to its idea that one of the historic functions of divination is to introduce randomisation into your decision making, and the personification of it as a message from the gods was part of how you got over the unfairness of it.&lt;/p&gt;
+
+
+&lt;p&gt;Given that, it's interesting (if not entirely surprising) that the personifications of chance are the &lt;em&gt;cruel&lt;/em&gt; fates,
+who you can't argue with.&lt;/p&gt;
+
+
+&lt;p&gt;It seems like often one of the ways we deal with things is to personify them - treat them as an actual person. This works varyingly well. Sometimes it drives you to do useful activities like divination, where the reason it works is unrelated to the claimed purpose driven by that personification, but sometimes is causes you to treat objective reality as if it could be argued with, and that doesn't work out so great.&lt;/p&gt;
+
+
+&lt;p&gt;"Facts don't care about your feelings" is a bad meme because facts are socially constructed statements about the underlying reality. But it's true that the underlying reality does not, necessarily, care much what you think of it - a volcano is going to erupt no matter what you sacrifice to it, a pandemic is going to pandemic regardless of whether you're bored of it.&lt;/p&gt;
+
+
+&lt;p&gt;I think part of the problem is that we're used to the giant impersonal powers that control our fates being made out of people. Politics, capitalism, etc. aren't necessarily any less prone to crushing us with utter indifference to our lives, but that's because it feels like that's because the people involved in those systems &lt;em&gt;don't&lt;/em&gt; care. They could, in principle, be made to care if we exerted enough power over them (e.g. via protest). Whether or not that caring would result in systemic change is a bit more of a question mark, but the possibility is at least there.&lt;/p&gt;
+
+
+&lt;p&gt;A natural disaster has no such potential to care. Yellowstone could erupt tomorrow killing us all, and it really doesn't matter how problematic we think that is.&lt;/p&gt;
+
+
+&lt;p&gt;The temptation to personify is still there, and I think as long as we don't take it too seriously it's probably fine and maybe useful (omg coronachan is so mean), but it's important to remember: Fate is not cruel, fate is not kind, she isn't a person at all. The fates don't care about your feelings.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-06-10-10:45.html" rel="alternate"/>
   </entry>
 </feed>
