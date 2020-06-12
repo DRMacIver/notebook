@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-06-11T14:01:27+01:00</updated>
+  <updated>2020-06-12T09:45:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,112 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-06-02-08:25.html</id>
-    <title>Being friends with your coworkers</title>
-    <updated>2020-06-02T15:54:17+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Being friends with your coworkers&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-06-02&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;From &lt;a href="https://amzn.to/2WYeYew"&gt;Talking About Machines&lt;/a&gt; by Julian Orr, page 35:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;their [team] has developed personal bonds in addition to their professional association, including friendship outside the job. His narration reveals a division among technicians over the propriety of such bonds, and while he clearly values them, he is wary of revealing them to me.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;The question of whether you should be friends with your coworkers is an interesting one.
-For me the answer is "Obviously yes, except it's kinda problematic."&lt;/p&gt;
-
-
-&lt;p&gt;At a personal level, being friends with your coworkers is good. You're going to spend a &lt;em&gt;lot&lt;/em&gt; of your time together, and your life will be improved if you actually like spending time together.&lt;/p&gt;
-
-
-&lt;p&gt;At a professional level, being friends with your coworkers is also good: It significantly improves your team productivity. One of the things that is clear from Orr's book is that talking to each other, swapping war stories, sharing technical problems and advice, is almost inseparable from having a friendly conversation with each other. This isn't the equivalent of having a daily standup or a team meeting, it's a conversation, and it's much easier to have conversations with your friends. These conversations are an essential part of learning together and sharing important information.&lt;/p&gt;
-
-
-&lt;p&gt;Being friends with your coworkers makes literally everything better, and it is very hard to have a functioning company without a certain amount of bonds of friendship.&lt;/p&gt;
-
-
-&lt;p&gt;Also... this is how marginalisation works and reinforces itself, because not everybody can easily be friends with their coworkers.&lt;/p&gt;
-
-
-&lt;p&gt;I'm reminded of &lt;a href="https://www.ft.com/content/da6a33be-bd8f-11e8-8274-55b72926558f"&gt;this piece from the FT&lt;/a&gt; (apologies for the paywall):&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;This was an instant, if brutal, reminder of the value of smoking at work. It is one of the cheapest and most effective ways of finding out what is really going on in the office. &lt;/p&gt;
-&lt;p&gt;[...]&lt;/p&gt;
-&lt;p&gt;I am indebted to a reader for my favourite ploy: an office beer fridge. A man from the US who has started and managed several companies wrote to tell me on-site grog had several proven benefits. Everyone got to know each other quickly, he said, “from production worker to the CEO”, and that made a big difference to the way they worked with one another.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;These sorts of nonwork activities that promote socialisation end up being extremely good for establishing lines of information and common knowledge within the company that run orthogonally to formal lines of information.&lt;/p&gt;
-
-
-&lt;p&gt;Also, both smoking and drinking are hugely exclusionary ways of setting up those lines, right? They're &lt;em&gt;effective&lt;/em&gt;, but they're effective for the people who are willing to participate them. Personally, I don't mind office drinking (but no thanks on the beer), and will find the presence of smokers around the office actively unpleasant, never mind &lt;em&gt;joining&lt;/em&gt; them.&lt;/p&gt;
-
-
-&lt;p&gt;Many people have had bad experiences with alcohol, or avoid it for religious reasons, and above and beyond not drinking will not be at all comfortable around people who are drinking. It also tends to exacerbate other ways in which a group is exclusionary - if you're part of an underrepresented minority, people who are on their best behaviour while sober may start to show their true colours while drunk (and even if it turns out that their true colours are actually that they're perfectly nice people and there are zero problems, it's hard to know that in advance and this prevents the event from being relaxing and enjoyable).&lt;/p&gt;
-
-
-&lt;p&gt;There is a lot of criticism of the tech industry's reliance on alcohol for social bonding on grounds of it being exclusionary, and this criticism is entirely correct.&lt;/p&gt;
-
-
-&lt;p&gt;Unfortunately, the criticism tends not to get listened to, for one very simple reason: Drinking as a way of socialising works really well, and without something to replace it, this criticism asks the majority to make a significant personal sacrifice for the minority's comfort. This doesn't tend to go well. Should the majority do it? Well, maybe. But you need to &lt;a href="https://notebook.drmaciver.com/posts/2020-05-19-09:35.html"&gt;work with the audience that you have&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;Even if you overcome this and find a perfectly innocuous way of doing team socialisation,
-you end up with issues of conflicting identity.&lt;/p&gt;
-
-
-&lt;p&gt;I was at a London &lt;a href="http://www.liberatingstructures.com/"&gt;Liberating Structures&lt;/a&gt; meetup group right before lockdown started, and someone there suggested that on Mondays they tried to get a lot of discussion going between people about what they'd done over their weekend, as a kind of ice breaker / social bonding exercise.&lt;/p&gt;
-
-
-&lt;p&gt;I gently suggested to them that this might not work so well because you're trying to force people to disclose things they may not want to disclose. People don't generally want to tell their coworkers that they spent the weekend at a sex party (this is a common problem among my friend group).&lt;/p&gt;
-
-
-&lt;p&gt;It doesn't have to be a sex party either. People are probably equally unwilling to tell their staunchly atheist coworkers that they spent the weekend at a bible study. Telling people that they spent their weekend at a protest risks office politics.&lt;/p&gt;
-
-
-&lt;p&gt;More innocuously, you have a divide between parents and non parents. If a parent talks about how they spent their weekend with their kids, the other parents in the room may join in talking about their kids, while the non-parents sit there twiddling their thumbs. Or, equally, if you're the only parent in the room and everyone is talking about the fun things they were up to this weekend and you were mostly doing childcare duties.&lt;/p&gt;
-
-
-&lt;p&gt;I think part of the problem here is that we are too used to playing friendship on easy mode and largely lack the skill of having heterogenous friends groups. It's much easier to be friends if you can find strong points of commonality with each other and minimise points of conflict. When your main point of commonality is that you work together, you will often lack that easy mode.&lt;/p&gt;
-
-
-&lt;p&gt;The problem gets worse when you take into account that some people actually just may not be able to make friends that easily. They may be lacking in social skills, or they may just be kinda traumatised and find it difficult to trust people. Many of these people are lovely, brilliant, people, and even those who aren't probably need to work &lt;em&gt;somewhere&lt;/em&gt; - because, alas, capitalism. How do we make a system that works for them?&lt;/p&gt;
-
-
-&lt;p&gt;Also, when you try to deliberately help those people integrate, this may seem like an attack on them, because it reads like a social test that they can fail.&lt;/p&gt;
-
-
-&lt;p&gt;All of these problems are, I think, even worse at a small company. I wrote about &lt;a href="https://notebook.drmaciver.com/posts/2020-04-25-10:40.html"&gt;the problem with not fitting in in small towns&lt;/a&gt; before, and small companies are like that but more so. If you work in an office with a thousand other people there are probably others like you there (whether you can find them is another issue). That doesn't necessarily solve your problem if you're not on their team, but it at least &lt;em&gt;helps&lt;/em&gt;. If you work at a company of five other people, chances are good that you have a number of traits that are unique to you, and some of those may be ones that result in you being excluded.&lt;/p&gt;
-
-
-&lt;p&gt;It is at this point that I reveal the easy, brilliant, and obvious solution that will solve all of these problems.&lt;/p&gt;
-
-
-&lt;p&gt;Err.&lt;/p&gt;
-
-
-&lt;p&gt;Maybe it's not. I was kinda hoping you would do that for me. Because this problem seems like a giant insoluble mess and I barely have any idea where to start - any solution seems far too contextual for me to propose any general principles.&lt;/p&gt;
-
-
-&lt;p&gt;Mostly I'd like people to start by acknowledging the problem: Being friends with your coworkers is important and valuable, and currently we only make it accessible to people who get to play friendship on easy mode.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-06-02-08:25.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-06-03-09:56.html</id>
     <title>Some Useful Emotion Management Principles</title>
@@ -1036,5 +930,76 @@ I'm in favour of good writing style, of course I am, and of not writing in a sty
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-06-11-13:02.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-06-12-09:45.html</id>
+    <title>Morality tests as self-fulfilling prophecies</title>
+    <updated>2020-06-12T09:45:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Morality tests as self-fulfilling prophecies&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-06-12&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Suppose someone is making a bad argument for a political point that you basically agree with.
+Do you correct their argument?&lt;/p&gt;
+
+
+&lt;p&gt;Probably not. Because if you correct their argument, you will be treated as if you disagree with their conclusion.&lt;/p&gt;
+
+
+&lt;p&gt;This is not wrong of them per se: Almost everybody who corrects an argument does so because they disagree with the conclusion.&lt;/p&gt;
+
+
+&lt;p&gt;Why is that the case?&lt;/p&gt;
+
+
+&lt;p&gt;Well, because if you correct the argument you will be treated as disagreeing with the conclusion, which is rarely worth it unless you actually disagree with the conclusion, particularly in politics where disagreeing with the conclusion will usually be treated as a sign that you are a &lt;em&gt;bad person&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;This seems a little self-referential (A because B because A because B because...) but in fact it's a very straightforward feedback loop.&lt;/p&gt;
+
+
+&lt;p&gt;If you &lt;em&gt;do&lt;/em&gt; disagree with the conclusion, it is worth correcting the argument. Therefore there is a core population of people who will always (yes this is a simplification. This is a toy model. Deal with it) correct the argument.&lt;/p&gt;
+
+
+&lt;p&gt;Suppose about 50% of the population disagree with the conclusion, and initially the other 50% are all happy to. So if someone disagrees with your argument there's a 50% chance that they're a bad person. That's a reasonable chance, but it's not conclusive by any means. It creates a suspicion at best.&lt;/p&gt;
+
+
+&lt;p&gt;But now everyone who corrects an argument has to do a certain amount of work to pass the morality test: To demonstrate that they're not a bad person. Initially it's not much - "Look, obviously (conclusion), but I don't think this is the right reasoning because (correction). Instead (alternative)" will easily clear the bar.&lt;/p&gt;
+
+
+&lt;p&gt;But that's still a nontrivial amount of work. Say about 20% of the population who agree with the conclusion (i.e. 10% of the total population) just don't care enough to do the work. Now what you have is that 50% of the population will argue with you because they disagree with the conclusion, and 40% of the population will argue with you because they agree with the conclusion and disagree with the argument. Now, \(\frac{5}{9} \approx 56\%\) of people who disagree with your argument are bad people.
+This increases the level of suspicion, and thus the level of work required to pass the morality test, and so slightly more people drop out.
+Over time, thanks to this feedback loop, increasingly people only disagree with your argument if they also disagree with your conclusion &lt;em&gt;or&lt;/em&gt; if they are prepared to put in a huge (in some cases impossible) amount of effort to call you on your bad argument.&lt;/p&gt;
+
+
+&lt;p&gt;In this way the prediction (if you disagree with my argument you may be a bad person) has turned into a norm (only bad people disagree with my argument).&lt;/p&gt;
+
+
+&lt;p&gt;I don't know about you, but I hate this. I am extremely in favour of knowing true things, and making sure arguments are correct is a part of that. If my argument is wrong I usually &lt;em&gt;want&lt;/em&gt; to know (although I'll admit that this doesn't mean that I accept correction gracefully all the time, especially if it comes from strangers, especially especially if it comes from strangers on Hacker News). This norm essentially means that I cannot trust anybody's arguments to be reliably truth tracking.&lt;/p&gt;
+
+
+&lt;p&gt;I also hate it more because this pattern repeats over and over again. It's one of the driving factors of political polarisation - if you disagree with me on one political issue, that's evidence that you disagree with me on all the others (and thus are a bad person) etc. In general, people are not allowed to agree with the outgroup on anything, because that is treated as evidence that they are a member of the outgroup.&lt;/p&gt;
+
+
+&lt;p&gt;I would like to fix these feedback loops.&lt;/p&gt;
+
+
+&lt;p&gt;I think for public discourse with strangers we're basically fucked, and there's no way to fix them right now except to set up much harder boundaries. The best we can do hope to do in most of these cases right now is to deescalate - politely rebuff people instead of shouting at them. It won't fix the problem but it might ease off on accelerating it a bit.&lt;/p&gt;
+
+
+&lt;p&gt;But I do think we can do better with people we know, and I think this starts by accepting more of the burden of proof: If we suspect someone we know, especially a friend, of being a bad person, we should give them the benefit of the doubt. This doesn't require us to make excuses for them, but it does require us to be willing to do the work ourselves to figure out what's going on rather than immediately leaping to conclusions.&lt;/p&gt;
+
+
+&lt;p&gt;In order to get the ball rolling on that I will make the following prediction: if you're &lt;em&gt;not&lt;/em&gt; willing to do that, chances are you're a bad friend.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-06-12-09:45.html" rel="alternate"/>
   </entry>
 </feed>
