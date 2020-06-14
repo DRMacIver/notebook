@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-06-13T12:03:32+01:00</updated>
+  <updated>2020-06-14T10:26:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,74 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-06-04-08:42.html</id>
-    <title>Popular Culture Reference, David</title>
-    <updated>2020-06-04T09:07:00+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Popular Culture Reference, David&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-06-04&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;(A quick post today, due to needing to get on with other things very shortly)&lt;/p&gt;
-
-
-&lt;p&gt;From &lt;a href="https://amzn.to/2yzEkGq"&gt;How to talk about books you haven't read&lt;/a&gt; by Pierre Bayard, page 61:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;The most common literary confrontations are those that occur in our social lives, and of these the most vexing are those in which we are expected to express ourselves in front of a group. On such occasions, the conversation may turn to a book we have not read. If the book in question is assumed to be known by all cultivated individuals [...]&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;The thing that struck me about this is how much it doesn't happen to me. I don't think I have ever had a conversation in which someone is surprised that I haven't read a particular book, except very occasionally as a joke because they assume I've read everything. I can't think of any examples of books that have that level of cultural penetration among people I know.&lt;/p&gt;
-
-
-&lt;p&gt;Most of this is probably a difference between me and Pierre Bayard - he's coming from a French literary scene. His friends' notion of "all cultivated individuals" probably doesn't include me or my friends.&lt;/p&gt;
-
-
-&lt;p&gt;He's also quite a lot older than me, and my suspicion is that he's describing an event that is genuinely less common these days, because instead our shared cultural objects seem mostly to be TV shows and movies.
-And there I get that a lot. It's a running joke: "Popular culture reference, David, you wouldn't understand."&lt;/p&gt;
-
-
-&lt;p&gt;This is not, I hasten to add, because I'm too classy for TV and movies. Movies don't really work well for me as a format, but I do watch a lot of TV, most of it not very good. I just skip out on a lot of mainstream stuff because it doesn't work well for me (for example I cannot stand embarassment based humour and have no interest in watching things that make me whole body cringe).&lt;/p&gt;
-
-
-&lt;p&gt;I'm generally OK just saying that I haven't watched it. This does, often, result in a bunch of pressure to watch things. "You absolutely must watch it! It's amazing!" is somehow perfectly socially acceptable, despite a single season of a TV show probably being at least twelve hours of watching, but people get edgy and defensive when I recommend books to them.&lt;/p&gt;
-
-
-&lt;p&gt;I understand why this is. It's easy to find twelve hours to watch TV, it's hard to find five hours to read a book, because the latter requires focus and causes people to confront all sorts of unpleasant emotions about their relationship with reading, while the former allows them to palliate by fast-forwarding their brain through those twelve hours.&lt;/p&gt;
-
-
-&lt;p&gt;(There's nothing wrong with doing that if that's what you want to do, but I think people are kidding themselves about this)&lt;/p&gt;
-
-
-&lt;p&gt;I think in some ways TV shows also just work better as a shared cultural object than books, because there are so many fewer of them. It's very expensive to produce a TV show. It's not cheap to produce a book, but it's cheap enough that there are several orders of magnitude more books than TV shows. Even best sellers rarely have the penetration of a moderately popular TV show (with a few outliers like Harry Potter).&lt;/p&gt;
-
-
-&lt;p&gt;Unfortunately creating sharedness of our cultural objects by making them expensive to produce isn't so great. It creates a very high barrier to entry on whose voices become part of our shared culture, and it creates an incentive to make it accessible to as broad an audience as possible. It prioritises relatable over insightful.&lt;/p&gt;
-
-
-&lt;p&gt;That's not to say that TV shows are necessarily &lt;em&gt;bad&lt;/em&gt; shared cultural objects. There are some very good ones. I'm genuinely very grateful to The Good Place for existing. Trigonometry (which I still need to finish watching) is some great representation.&lt;/p&gt;
-
-
-&lt;p&gt;I'm not going to say Stargate is a &lt;em&gt;good&lt;/em&gt; shared cultural object (or, frankly, a particularly shared one - it's not unpopular by any means given how long it ran for, but it's not something I can reasonably &lt;em&gt;expect&lt;/em&gt; people to have watched), but I still like it and will enjoy talking Stargate with people.&lt;/p&gt;
-
-
-&lt;p&gt;But it does leave a popular culture that is strangely anemic. Fandom fills in the gaps, fleshing out the world of shared culture with the voices it lacks. Fandom is its own popular culture, building a richer world on top of the shared cultural objects provided to us. It is, however, a relatively niche thing that most people don't seem aware of or participate in - I'm only on the outskirts of it myself, and I don't really know how I would go about participating more deeply (or whether I want to).&lt;/p&gt;
-
-
-&lt;p&gt;I don't really have any closing thoughts, except that it'd actually be quite nice to have a group where there was a shared canon of books that actually I &lt;em&gt;could&lt;/em&gt; assume everyone in that group had read.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-06-04-08:42.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-06-05-09:08.html</id>
     <title>The Virtue Ethics of Potato Growing</title>
@@ -779,7 +711,7 @@ Over time, thanks to this feedback loop, increasingly people only disagree with 
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-06-13-11:45.html</id>
     <title>Help isn't always helpful</title>
-    <updated>2020-06-13T12:03:32+01:00</updated>
+    <updated>2020-06-13T12:11:17+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Help isn't always helpful&lt;/p&gt;
@@ -829,5 +761,60 @@ It's not necessarily a &lt;em&gt;worse&lt;/em&gt; one either. Instead the two ar
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-06-13-11:45.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-06-14-10:26.html</id>
+    <title>Uploading friendships to the cloud</title>
+    <updated>2020-06-14T10:26:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Uploading friendships to the cloud&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-06-14&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I'm sad, so you get a sad post today, sorry.&lt;/p&gt;
+
+
+&lt;p&gt;I basically grew up on the internet. I did not have a lot of friends at school, and lived in a remote village so had few to no local friends, but I had people I talked to online, and that was (possibly literally) a life saver.&lt;/p&gt;
+
+
+&lt;p&gt;Some of these internet friends turned into in person friends, and many more of them I at some point met in person at least once. So the line between online and offline friendships has always been a bit of a blurry one for me.
+There's definitely no hard and fast internet/offline friendship binary, but a very queer and shifting spectrum.&lt;/p&gt;
+
+
+&lt;p&gt;There was perhaps a bit of a lull in this during university, when I had a relatively constant source of offline friends, but even there I was quite active on university IRC networks and entirely legitimate university file sharing networks that we were definitely only using for sharing Linux ISOs. Many of those people were ones I met in person at the occasional meetup, but they were absolutely online-first friendships with an offline component.&lt;/p&gt;
+
+
+&lt;p&gt;When I first moved to London, online friendships once again became centered, because I didn't know anyone here.
+This became a bit more balanced as I started to make more offline friendships, but a combination of a long-distance relationship and starting to move more and more of my public brain onto Twitter meant that it was a more even balance between the two.&lt;/p&gt;
+
+
+&lt;p&gt;On top of this, a lot of my best offline friendships have always had a significant online component. We would have long-running conversations - on AIM (remember that?), IRC, google chat, or, more recently, WhatsApp. Almost all of my "real" friendships were maintained through the internet as much as in person.&lt;/p&gt;
+
+
+&lt;p&gt;All of which is to lay some backstory for what was, to me, a rather surprising realisation: it turns out that for many of my friendships, the offline component was load bearing to a far greater degree that I had supposed.&lt;/p&gt;
+
+
+&lt;p&gt;My ability to participate in some of the ongoing conversations that matter most to me has been evaporating recently, and those are ones with people who I was friends with in a way that was very much offline-first. We talked a lot on the internet, long before lockdown made that a necessity, but implicit in that was that it was a continuation of our offline friendship.&lt;/p&gt;
+
+
+&lt;p&gt;In contrast, many of my internet friendships and the conversations associated with them are doing just fine. They tend to ebb and flow with my mood, as always, but they're not evaporating in the same way because they were conversations without any strong implication that we would ever see each other in person - we probably would, and some of them are ones that I expect to turn into offline friendships when those become a thing again - but it was never something that formed a foundation to our friendship.&lt;/p&gt;
+
+
+&lt;p&gt;Some of this is &lt;a href="https://notebook.drmaciver.com/posts/2020-05-19-17:31.html"&gt;that parts of us are missing&lt;/a&gt;, and perhaps it was those parts who were such good friends with each other. The rest of us were friends too, but they weren't necessarily as close. They're the sort of friends who only see each other at parties, or group events, and the pandemic has cancelled those group events.&lt;/p&gt;
+
+
+&lt;p&gt;But some of it, I have to admit, is that in many ways online friendships are just kinda low fidelity, and many of the things that you could overlook when you had the in person foundation become &lt;a href="https://notebook.drmaciver.com/posts/2020-04-11-14:47.html"&gt;trivial irritations&lt;/a&gt; that are enough to &lt;a href="https://notebook.drmaciver.com/posts/2020-04-20-10:52.html"&gt;put the brakes on&lt;/a&gt; the whole thing.&lt;/p&gt;
+
+
+&lt;p&gt;I don't expect this is going to &lt;em&gt;damage&lt;/em&gt; the friendships in question per se - we'll figure out a way through it, even if the way is waiting until after the lockdown is over to resume - but in the meantime there is definitely a sense of loss, and it's one that I think is highlighting for me how much more I needed in person contact than I had realised.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-06-14-10:26.html" rel="alternate"/>
   </entry>
 </feed>
