@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-06-15T11:28:14+01:00</updated>
+  <updated>2020-06-17T11:14:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,92 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-06-06-10:11.html</id>
-    <title>Testing Positive For vs Having</title>
-    <updated>2020-06-06T11:36:21+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Testing Positive For vs Having&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-06-06&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;From &lt;a href="https://amzn.to/2A9stPS"&gt;Sorting Things Out: Classification and its Consequences&lt;/a&gt; by Bowker and Star, page 176:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;...it was decided that those who tested positive did not &lt;em&gt;have&lt;/em&gt; [tuberculosis], they were "considered to have tuberculous infection but not the disease" (&lt;em&gt;Diagnosis&lt;/em&gt; 1955, 15). Only those who could bring other evidence of disease to the table would be considered worthy of the classification of pulmonary or nonpulmonary tuberculosis.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;This is an interesting distinction. It reminds me of the distinction between HIV (the virus) and AIDS (the condition caused by the virus).&lt;/p&gt;
-
-
-&lt;p&gt;More generally, and tangentially, though I think we are seeing people becoming increasingly aware of the distinction between testing positive and having a disease in another way: You might test positive and just not have the disease. Equally, you might test negative and still have the disease.&lt;/p&gt;
-
-
-&lt;p&gt;I've written before in &lt;a href="https://www.drmaciver.com/2020/02/theres-no-single-error-rate/"&gt;There's no single error rate&lt;/a&gt; about how you need to think about error quite carefully, and that for any classification scheme there is an error rate per possible answer. In this case you can incorrectly say that someone does not have the disease, and you can incorrectly say that they do.&lt;/p&gt;
-
-
-&lt;p&gt;&lt;a href="https://www.nejm.org/doi/full/10.1056/NEJMp2015897"&gt;This is a good article about the error rates in testing and what they mean&lt;/a&gt; for diagnosis.&lt;/p&gt;
-
-
-&lt;p&gt;I know at least two people who have tested negative for COVID-19 but still seem pretty likely to have had it, due to symptoms and circumstances. That's not to say that you should &lt;em&gt;ignore&lt;/em&gt; the fact that there's a negative result - it should certainly make you seem less likely to have it - but it's far from indisputable proof.&lt;/p&gt;
-
-
-&lt;p&gt;I think I'm pretty likely to have had it. I'm currently saying 90% likely (this is a made up number, but I'm pretty good - albeit far from perfect - at making up numbers to gauge my level of confidence).&lt;/p&gt;
-
-
-&lt;p&gt;So what would it mean if I got tested with an antibody test for whether I've had it?&lt;/p&gt;
-
-
-&lt;p&gt;Although I'm generally quite thumbs down on Bayesianism, this is an example where Bayes rule (well, conditional probability anyway) is obviously the correct thing to do as a way to reason about testing. If we make up more numbers and assume that the probability of a negative result given that I &lt;em&gt;am&lt;/em&gt; infected is 10%, and the probability of a negative result given that I'm &lt;em&gt;not&lt;/em&gt; infected is 95% (i.e. 5% of noninfected people will falsely get a positive result), then I assign 9% confidence to being infected and getting a negative result (90% chance I'm infected multiplied by 10% chance that if I'm infected I get a negative result) and a 9.5% chance that I'm not infected and get a negative result (90% chance of not infected, 95% chance that if I'm not infected I'll get a negative result), so for a total of 18.5% chance of a negative result.&lt;/p&gt;
-
-
-&lt;p&gt;Note that, because of my high prior confidence that I've been infected, it's almost as likely that I get a negative result but still have it as that I get a negative result and don't have it. Specifically, if I get a negative result the chances of my having it are \(100 \times \frac{9}{9 + 9.5} \approx 48.6\%\). i.e. despite the negative result I'm only barely more likely to not have it than I am to have it.&lt;/p&gt;
-
-
-&lt;p&gt;Does this mean that the tests are useless?&lt;/p&gt;
-
-
-&lt;p&gt;Well, maybe. Certainly a negative test result doesn't tell me much, but there's also not much I'd do with a negative test result anyway: A negative test result just means that I have to keep doing what I'm already doing, which is maintaining a sensible level of caution about catching the virus. Whether that's because I actually haven't had the virus, or whether it's because I've had the virus and the test wrongly reports that I have not, it doesn't really matter for my decision making - I've got no new information that would allow me to change behaviour.&lt;/p&gt;
-
-
-&lt;p&gt;A positive test result is potentially more useful. Suppose similar numbers: 90% of people with the virus test positive, and 5% of people without the virus test positive. After a positive result I'd be about 99% certain I'd had it, and thus that I was pretty likely immune.&lt;/p&gt;
-
-
-&lt;p&gt;I still wouldn't be &lt;em&gt;certain&lt;/em&gt; that I had had the virus, or even that if I'd had the virus I would be immune, but behaviours that were previously unacceptable risks would now become acceptable risks.&lt;/p&gt;
-
-
-&lt;p&gt;This wouldn't change my behaviour much in that I'd just go out and start licking people, but it would change some of my risk profiles (I'm currently being significantly more careful than the government guidelines suggest, with one or two exceptions) and so I can use that to adjust my decisions.
-I'd probably still keep away from supermarkets, but I'd probably be a lot more willing to hang out with friends outside.&lt;/p&gt;
-
-
-&lt;p&gt;Another use case is that even if tests are quite inaccurate at an individual level, they might be useful at a population level: If you know the false positive and false negative rates pretty well, and you implement mass testing, you can be pretty confident of the percentage of the population who have had the virus, and plan accordingly, even if you've got significant question marks about any individual person.&lt;/p&gt;
-
-
-&lt;p&gt;In the other direction, the government was criticised (somewhat correctly) early on for the lack of widespread testing, and widespread testing is good and important, but there was at least some reasonable logic behind not testing everyone with symptoms: If you have acute symptoms, you need to go to the hospital regardless of whether you have it, and if you don't have acute symptoms, you need to stay home regardless of whether you have it, so the test did not (at that point) add that much useful information. It is, at best, lightly informative of treatment and of the decision of whether you should be admitted to hospital. Often effective action requires triaging what information is worth acquiring.&lt;/p&gt;
-
-
-&lt;p&gt;(This is not to say that I think that the UK government response to COVID-19 has been anything less than shambolic, but some individual actions are not as obviously unreasonable as they seem, especially given other constraints caused by the rest of the response)&lt;/p&gt;
-
-
-&lt;p&gt;Ultimately I think this highlights two important things about knowledge:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;There is absolutely no certainty, only degrees of confidence (some of which may be so high that they might as well be certainty, but often you cannot wait until you are that certain).&lt;/li&gt;
-&lt;li&gt;The acceptable margins of uncertainty significantly depend on what you're going to do with the knowledge, and you'll often have to just be comfortable with the fact that you might be acting on wrong information.&lt;/li&gt;
-&lt;/ol&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-06-06-10:11.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-06-07-09:33.html</id>
     <title>A Meta For Computers</title>
@@ -770,5 +684,66 @@ This became a bit more balanced as I started to make more offline friendships, b
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-06-15-11:15.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-06-17-11:14.html</id>
+    <title>Chatting with your consciences</title>
+    <updated>2020-06-17T11:14:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Chatting with your consciences&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-06-17&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;From &lt;a href="https://amzn.to/2X0wxe2"&gt;Voices: The Educational Formation of Conscience&lt;/a&gt; by Thomas F. Green, page 61:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;The voices of conscience are various. There is no reason to believe either that they can be or that they ought to be always - or even very often - in agreement. [...] The aim is not to calm the quarrels of conscience, but to encourage their enlargement an their elaboration.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;I talked before in &lt;a href="https://notebook.drmaciver.com/posts/2020-05-10-08:54.html"&gt;How to be a better person&lt;/a&gt; that what we need is not just a theory of ethics but a practice of it. Green's book, Voices, is the closest I have to a book on that subject.&lt;/p&gt;
+
+
+&lt;p&gt;Voices is a book about philosophy of moral education that neatly sidesteps the question of what morality &lt;em&gt;should&lt;/em&gt; be like by focusing on what it's actually like: Where, and how, do people learn their sense of moral?&lt;/p&gt;
+
+
+&lt;p&gt;Green argues that our experience of morality is structured around a number of different &lt;em&gt;voices of conscience&lt;/em&gt;, which we learn in different contexts and communities, which each provide a sense of reflexive appraisal about what matters. We have e.g. a conscience of craft which tells us to feel pride in doing good work and to feel guilt about doing shoddy work. &lt;a href="https://notebook.lisamcnulty.co.uk/2020/05/04/consistency-is-the-enemy/"&gt;Lisa has written about these voices in more detail previously&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;I've never entirely liked the metaphor of these consciences being a &lt;em&gt;voice&lt;/em&gt; per se. The experience of conscience is, first and foremost, a felt sense (in the Gendlin sense - a felt bodily experience of your emotions), rather than a voice. But it is useful to think of them as being their own self-contained entity. An aspect of the way we are, as Meg-John Barker &lt;a href="https://www.rewriting-the-rules.com/self/new-year-new-zine-plural-selves/"&gt;plural and in progress&lt;/a&gt;. Each of these "voices of conscience" can be thought of one of the various ways of being we can emobody at any given time, and we are constantly learning to be them.&lt;/p&gt;
+
+
+&lt;p&gt;Green is, here, arguing that we should &lt;em&gt;embrace&lt;/em&gt; that plurality. If our conscience is intrinsically plural, then we should not expect those plural voices to agree all the time, so instead we should focus on getting them to &lt;em&gt;disagree better&lt;/em&gt;:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;The aim must be to make those quarrels more incisive, more rational, more passionate,more perceptive, more discerning, and more expansive in their scope.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;I think for a lot of us engaging with our consciences is quite unpleasant, because we've developed very unhealthy relationships with guilt and shame.
+As a result, this exhortation to spend &lt;em&gt;more&lt;/em&gt; time arguing with our conscience probably sounds deeply unpleasant.&lt;/p&gt;
+
+
+&lt;p&gt;One of the reasons I'm so big on &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-12:35.html"&gt;the distinction between obligation and virtue&lt;/a&gt; is that I think part of the problem is that we overuse guilt in structuring our moral experience, which is why the process of engaging with morality is so unpleasant.&lt;/p&gt;
+
+
+&lt;p&gt;Guilt is important - it's a felt sense of having violated an obligation - but morality has to go above and beyond obligation. Obligation is a baseline of adequacy. Ideally we would aim beyond adequacy and into &lt;a href="https://notebook.drmaciver.com/posts/2020-05-31-09:20.html"&gt;excellence&lt;/a&gt;, and we should &lt;a href="https://notebook.drmaciver.com/posts/2020-05-22-09:34.html"&gt;feel good about being excellent&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Perhaps a key part of this is that our model for these disagreements between our voices of conscience is wrong. What if a conversation with our voices of conscience can just be an interesting discussion - a pleasant chat? Our voices may disagree, but are fundamentally on side with each other - they are us, and &lt;a href="https://notebook.drmaciver.com/posts/2020-03-21-12:35.html"&gt;we should not hate parts of ourselves&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;A disagreement between our consciences need not be an argument, let alone a fight, it can be a collaborative activity. If these disagreements are painful, we need better internal moderation skills.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-06-17-11:14.html" rel="alternate"/>
   </entry>
 </feed>
