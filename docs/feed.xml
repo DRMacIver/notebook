@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-06-17T11:14:00+01:00</updated>
+  <updated>2020-06-18T11:44:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,124 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-06-07-09:33.html</id>
-    <title>A Meta For Computers</title>
-    <updated>2020-06-07T10:55:32+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;A Meta For Computers&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-06-07&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I use metaphors of legacy code and refactoring a lot, and this works very well but is comprehensible more or less in direct proportion to how well you understand software development.
-It turns out that a lot of people I know understand software development well enough to benefit from this, but by no means all.&lt;/p&gt;
-
-
-&lt;p&gt;I was trying to think about how to explain this to other people, and I ended up with what I think is a reasonably pleasing way to explain how computers and software work in general.&lt;/p&gt;
-
-
-&lt;p&gt;So, here's the metaphor I want to use: Think of a computer as a kind of archive, but you're not allowed in to the archive, you can only access it through someone at the front desk. We'll call him Steve.&lt;/p&gt;
-
-
-&lt;p&gt;Behind the scenes the archive has a bunch of people working in it. When you ask Steve to do something, he doesn't do it himself, he just passes on appropriate orders to the people working there, they carry out the orders, bring something back to him, and he hands it over to you. Steve is not the one who is fulfilling your commands, he's just the interface to it.&lt;/p&gt;
-
-
-&lt;p&gt;Now due to regulations, the archive runs on &lt;em&gt;very&lt;/em&gt; strict rules. There's a rule for everything, a protocol to every request. Steve and the workers in it &lt;em&gt;will&lt;/em&gt; not violate the rules, no matter how much you plead. It's more than their job's worth, don't you know?&lt;/p&gt;
-
-
-&lt;p&gt;As long as you stick within the scenarios the rules are designed for this is mostly pretty well.
-You bring Steve a document and ask him to file it. He says "Certainly, I'll file this as document XYZ-1234" or some other ID, hands it to the a clerk, who files it appropriately.
-When you want it back you say "Steve, can I have document XYZ-1234?" and he passes on the request to a relevant clerk, they fetch the document and hand it back to you. The system is working as intended.&lt;/p&gt;
-
-
-&lt;p&gt;Suppose one day you come in and you've forgotten the ID of the document you want. "Steve, can I have the document I gave you on Wednesday?".
-Steve can't do that. "The document I gave you on Wednesday" is not a request that the system has rules for, so he's not allowed to fulfill it.&lt;/p&gt;
-
-
-&lt;p&gt;Eventually, after consulting the rule book as to what sort of queries you &lt;em&gt;are&lt;/em&gt; allowed to make, you ask Steve to give you all documents filed by you on 2020-06-03. You filed only one document on that date (the Wednesday in question), so Steve hands you the document on Wednesday.&lt;/p&gt;
-
-
-&lt;p&gt;This is what interacting with a computer is like: The computer is a system of rules that is there to do things you find useful, but everything you want to do with it has to be thought of and accounted for in advance.
-Sometimes the rules are so complicated as to &lt;em&gt;seem&lt;/em&gt; more sophisticated than that, but they're not they're just a really complicated rule system. Sometimes the rules contain rules for changing the rules (this is what programming is), but you're still constrained to follow the rules.&lt;/p&gt;
-
-
-&lt;p&gt;The fact that they're rules doesn't mean they're perfectly predictable of course. You can have rules for things like "Give me a random file" which involves a clerk drawing a card, rolling dice, etc. You can also have rules like "Send two clerks to do A and B and give me whichever result comes back" and the result will depend on which workers implement the task, whether they're having good days, etc. The rules can, in general, &lt;em&gt;underdetermine&lt;/em&gt; the result, but they do specify how the result must be obtained.&lt;/p&gt;
-
-
-&lt;h3&gt;What does a crash look like?&lt;/h3&gt;
-
-
-&lt;p&gt;One day you go to Steve and you say "Steve, can you attach this note to document QP-567?". As per usual, Steve sends a Clerk off to get the document. As he goes through the procedure to attach the note to it for you, he pauses, a horrified look crosses his face, and he breaks down crying, without attaching the note.&lt;/p&gt;
-
-
-&lt;p&gt;You ask him what's wrong, but he can't tell you: There's no rule for that. Also, Steve now won't answer any of your other questions, because the rules don't allow him to proceed until he's completed your request.&lt;/p&gt;
-
-
-&lt;p&gt;Eventually, frustrated, you go to Kim, the administrator, who is in charge of managing the rules of the archive and ask them to look into it. After a while of investigating (they have a bunch of special privileges that allow them to ask Steve WTF is going on) they tell you that the problem is that the document you've asked for doesn't have an associated date or author, and that as part of their procedures Steve has to record those as part of the log of your request when handing you a document. The document you attempted to attach a note to came from before they were recording that information on entry, and the recording rules came in after recording that information was mandatory, so don't account for this possibility.&lt;/p&gt;
-
-
-&lt;p&gt;Kim updates the rules and tells you they've fixed the problem. You ask Steve to attach the note to QP-567 again. He informs you that you don't have permission to do that.&lt;/p&gt;
-
-
-&lt;p&gt;You are less than impressed by this response and ask Kim what's up with it. They inform you that this seemed like the logical fix: If attaching a note a document requires this information, you must not be allowed to attach notes to documents that lack it. You patiently explain that this is all very well but you need to attach the note to the document from and don't actually care about their recording requirements.
-Why is that rule even there?&lt;/p&gt;
-
-
-&lt;p&gt;Kim consults Janet, the interface to their archive where they record information about the changes in the rules of the archive you want to manage, and after a number of queries comes to the following conclusion: The recording requirement doesn't seem to have been introduced for any particularly good reason, but all sorts of &lt;em&gt;other&lt;/em&gt; rules and procedures depend on it now, so it's really hard to change.&lt;/p&gt;
-
-
-&lt;p&gt;After a bit of back and forth and arguing about how important it is for you to be able to actually add notes to documents in the archive anyway, you hit on a solution: When attaching a note to such a document, Steve will record it as having been authored by "Unknown" at the date of the creation of the archive.&lt;/p&gt;
-
-
-&lt;p&gt;You can now attach the note to the document.&lt;/p&gt;
-
-
-&lt;h3&gt;What does legacy code look like?&lt;/h3&gt;
-
-
-&lt;p&gt;One day you request a document and you get the wrong one back.&lt;/p&gt;
-
-
-&lt;p&gt;You go to Kim and ask what's up with that. "Jesus, I have no idea, document retrieval is &lt;em&gt;complicated&lt;/em&gt;."&lt;/p&gt;
-
-
-&lt;p&gt;You express a certain amount of surprise about this. From your perspective you just give Steve the ID and he comes back to you with a document. What could be simpler?&lt;/p&gt;
-
-
-&lt;p&gt;So Kim sits you down and explains to you the realities of archiving.&lt;/p&gt;
-
-
-&lt;p&gt;First you have to understand, an archive is not some abstract place. These documents you're handing to Steve? They have to &lt;em&gt;go&lt;/em&gt; somewhere. There are all these big rooms where the documents have to literally, physically, go. Although those rooms are big, there are a lot of documents, so sometimes rooms fill up and you have to build other rooms.&lt;/p&gt;
-
-
-&lt;p&gt;So, when you look up a document, first someone has to look up in an index somewhere to find out what room to look in for it. This was reasonable simple up until a couple of years ago when the size of the index got too large for the room they were storing it in, so now the index is split across multiple rooms. So first they have a procedure to figure out which index to look at.&lt;/p&gt;
-
-
-&lt;p&gt;This is all made more complicated by the fact that the ID system has changed multiple times over the lifetime of the archive, so depending on which room it's in and what ID system was in use when the item was entered into the archive you need different ways of looking it up (some rooms the documents are stored ordered by author, some by title, some by publication year, and this affects how you find a document there and is taken into account in the ID).&lt;/p&gt;
-
-
-&lt;p&gt;In order to illustrate their point, Kim shows you the rules for looking up a document. They span three books. They are not small books.&lt;/p&gt;
-
-
-&lt;p&gt;Eventually after making yourself enough of a nuisance, Kim acknowledges that yes of the dozen things they had to do today obviously your document is the most important thing they could be working on,
-and so they go to Steve and ask him to walk them through how exactly the document was retrieved.&lt;/p&gt;
-
-
-&lt;p&gt;Eventually, after much deliberation, they determine that the problem is that it was looked up using the wrong ID system.
-You see, the way they determine which ID system to use is based on the date the document was entered into the archive. If there is no entry date, they try all of the different ways in which it could have been entered (there are three from before the system started requiring recording the entry date) and if there is more than one document they ask the person requesting the document to resolve the ambiguity.&lt;/p&gt;
-
-
-&lt;p&gt;But the last time someone atached a note to this document, Steve noticed it didn't have an entry date, so as per the new rules implemented in response to your complaint before, set its entry date to the beginning of the archive. So now there is no ambiguity in what ID system it is using, but unfortunately it's a much more recent document than that, so it's unambiguously using the wrong one.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-06-07-09:33.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-06-08-10:11.html</id>
     <title>A Guide to Starting a Daily Writing Practice</title>
@@ -688,7 +570,7 @@ This became a bit more balanced as I started to make more offline friendships, b
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-06-17-11:14.html</id>
     <title>Chatting with your consciences</title>
-    <updated>2020-06-17T11:14:00+01:00</updated>
+    <updated>2020-06-17T12:38:14+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Chatting with your consciences&lt;/p&gt;
@@ -745,5 +627,74 @@ As a result, this exhortation to spend &lt;em&gt;more&lt;/em&gt; time arguing wi
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-06-17-11:14.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-06-18-11:44.html</id>
+    <title>Conversations in a public</title>
+    <updated>2020-06-18T11:44:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Conversations in a public&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-06-18&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;From &lt;a href="https://amzn.to/2X0wxe2"&gt;Voices: The Educational Formation of Conscience&lt;/a&gt; by Thomas F. Green, page 164:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;What I object to, in short, is not a hermeneutic of suspicion, but an entirely different thing that I believe we have created, namely a &lt;em&gt;culture&lt;/em&gt; of suspicion, a culture of public speech in which it is simply assumed that because of role or position, because of the partiality or brokenness of reason, nothing any of us says can be entertainedat face value. [...] If I adopt that attitude, or if you adopt it, then our joint membership in a public, yours and mine, has come to an end.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;Well of &lt;em&gt;course&lt;/em&gt; Green would say this, he's a philosopher. Honestly.&lt;/p&gt;
+
+
+&lt;p&gt;Ahem.&lt;/p&gt;
+
+
+&lt;p&gt;I've largely avoided the later chapters of Voices, wher ehe talks about democracy and public speech, because I find it depressing how far from reality what he's describing as the ideal is.&lt;/p&gt;
+
+
+&lt;p&gt;A thing I've found myself increasingly aware of is that expecting norms of honest inquiry to occur in public feels naive. I don't think this is something where the good old days were especially good, but it does feel like something that has gone from bad to worse over my lifetime. It's popular - and probably not entirely unfair - to blame social media, but the mainstream media is at least equally to blame.&lt;/p&gt;
+
+
+&lt;p&gt;There are plenty of other people we can blame. The left will blame capitalism (it's the result of market incentives manipulating us this way), the right will blame identity politics (it's the result of people privileging identity and emotion over universal objective rational understanding of the world), probably everyone will blame political polarisation (sometimes without even meaning "too many people disagree with me"). &lt;/p&gt;
+
+
+&lt;p&gt;So some greater or lesser degree &lt;a href="https://notebook.drmaciver.com/posts/2020-04-10-10:53.html"&gt;they're probably all right&lt;/a&gt; - all of these things and more make it very hard to pursue inquiry together, because everyone is at each other's throats.&lt;/p&gt;
+
+
+&lt;p&gt;My personal contribution to the list of reasons is &lt;a href="https://notebook.drmaciver.com/posts/2020-06-12-09:45.html"&gt;morality tests as self-fulfilling prophecies&lt;/a&gt; - we are, at this stage, pretty primed to treat any political disagreement as a sign that the other person is our enemy, because our enemies will always disagree with us and our friends and allies have learned that it's not worth the effort of disagreeing with us.&lt;/p&gt;
+
+
+&lt;p&gt;I find this very frustrating, because a) Almost everyone (myself included) is wrong about almost everything and b) &lt;a href="https://notebook.drmaciver.com/posts/2020-02-24-10:37.html"&gt;All knowledge is connected&lt;/a&gt; so often the way to figure out your problem is to go talk to someone who is a &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-07:38.html"&gt;nerd&lt;/a&gt; about a very different field.&lt;/p&gt;
+
+
+&lt;p&gt;To pick the least controversial example available to me, I've been reading a bunch of Christian philosophy and theology recently. Josef Pieper's work is foundational in my &lt;a href="https://drmaciver.substack.com/p/life-as-nonproductive-act"&gt;Total Work&lt;/a&gt; series but is &lt;em&gt;very&lt;/em&gt; Christian (&lt;a href="https://books.rixx.de/reviews/2020/leisure-the-basis-of-culture/"&gt;Tobi's review&lt;/a&gt; is a good place to get a sense of that). As a result there's a &lt;em&gt;lot&lt;/em&gt; we disagree on.
+Green himself was a Presbyterian, apparently quite a devout one, and a number of his philosophical commitments appear to be grounded in that.&lt;/p&gt;
+
+
+&lt;p&gt;Some of these disagreements are ones where we could probably talk them out and come to a more interesting synthesis. Some of them are probably ones where we will never agree and that's mostly OK (I'm basically never going to agree with an opinion that ends "and therefore Jesus").
+Even where we disagree, the discussion has the potential to be enlightening (possibly simply be forcing us to clarify our own position).&lt;/p&gt;
+
+
+&lt;p&gt;Some disagreements are rather more urgent than others of course. A lot of disagreemenets sound like "I need X to be safe" "You don't deserve to be safe, so you can't have X". Unsurprisingly, these disagreements don't go well.&lt;/p&gt;
+
+
+&lt;p&gt;Part of why they don't go well is that they're not the sort of thing that you can usually expect to agree on if you don't already agree on them. They're not really disagreements, they're conflicts, and you need either a &lt;a href="https://extranewsfeed.com/tolerance-is-not-a-moral-precept-1af7007d6376"&gt;peace treaty&lt;/a&gt; or you'll have a fight (possibly verbal, possibly more literal).&lt;/p&gt;
+
+
+&lt;p&gt;Right now there doesn't seem to be any workable tools for getting to a peace treaty, certainly not without having a fight first, and this strikes me as a problem. My guess is that such tools have to start with assuming the possibility of a productive discussion, and that the culture of suspicion prevents us from assuming that possibility.&lt;/p&gt;
+
+
+&lt;p&gt;Green describes this as "our joint membership in a public, yours and mine, has come to an end". He's probably right, and I don't know what to do about it.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-06-18-11:44.html" rel="alternate"/>
   </entry>
 </feed>
