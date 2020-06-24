@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-06-23T12:14:00+01:00</updated>
+  <updated>2020-06-24T15:31:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,50 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-06-11-13:02.html</id>
-    <title>Losing the story for the style</title>
-    <updated>2020-06-11T14:01:27+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Losing the story for the style&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-06-11&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;From &lt;a href="https://amzn.to/2LYdFGs"&gt;100 Ways to Improve your Writing&lt;/a&gt; by Gary Provost, page 57:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;There is no subject that cannot be made fascinating by a well-informed and competent writer. And there is no subject that cannot be quickly turned into a literary sleeping pill by an incompetent writer.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;(This is as part of a section on style)&lt;/p&gt;
-
-
-&lt;p&gt;This isn't true, and the fact that Provost thinks it's true is heavily informed by sorts of things he writes about,
-which tend to be of more general interest.&lt;/p&gt;
-
-
-&lt;p&gt;Part of the problem is that fascination is a question of audience/writing fit. In a similar way that &lt;a href="https://notebook.drmaciver.com/posts/2020-03-08-08:53.html"&gt;you can't teach everything to a layperson&lt;/a&gt;, you cannot fascinate someone who refuses to be fascinated,
-and some people are just never going to be fascinated by some subjects, and you may well need to write about those subjects (possibly because of the people who &lt;em&gt;are&lt;/em&gt; going to be fascinated by it!).&lt;/p&gt;
-
-
-&lt;p&gt;It's true that there is a fascinating story to be told about most subjects for most people, but often you shouldn't tell that one because it's not the important bit.
-This reminds me of Zinsser's fucking terrible advice to tell a story about your engagement with the subject matter rather than the subject matter itself. There are circumstances under which that is the right thing to do, but those circumstances require me to care about you personally rather than the thing that I was expecting to learn.&lt;/p&gt;
-
-
-&lt;p&gt;It's certainly true that any story can be told in a way that fascinates the maximum number of people who are capable of being fascinated by it, and that style has a huge part to play in that.
-I'm in favour of good writing style, of course I am, and of not writing in a style that bores your audience, but it's important to not overstate the importance of style: You can't &lt;em&gt;make&lt;/em&gt; people fascinated by your writing, except by writing about a subject that they will be fascinated by when properly told, and sometimes that's not the subject you're there to write about.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-06-11-13:02.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-06-12-09:45.html</id>
     <title>Morality tests as self-fulfilling prophecies</title>
@@ -498,7 +454,7 @@ Status in an expert community is primarily (though not exclusively) defined by h
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-06-23-12:14.html</id>
     <title>Speech and Writing</title>
-    <updated>2020-06-23T12:14:00+01:00</updated>
+    <updated>2020-06-23T12:48:44+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Speech and Writing&lt;/p&gt;
@@ -543,5 +499,53 @@ Status in an expert community is primarily (though not exclusively) defined by h
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-06-23-12:14.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-06-24-15:31.html</id>
+    <title>Books are never finished, only abandoned</title>
+    <updated>2020-06-24T15:31:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Books are never finished, only abandoned&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-06-24&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I've been noticing something recently: I've really started to resent lending books.&lt;/p&gt;
+
+
+&lt;p&gt;If a book is good enough to be worth lending, it's probably good enough that I want to keep referring back to it, and lending out a book means that for an unknown amount of time I will lack access to the book.&lt;/p&gt;
+
+
+&lt;p&gt;I've turned this feeling into a feature rather than a bug: It helps me find out which books I really value. If I lend a book out to someone and find I'm missing it, I buy myself a new copy and now I have a loaner copy as well.&lt;/p&gt;
+
+
+&lt;p&gt;(This of course doesn't work that well with expensive or hard to find books. I'm going to solve that problem by not lending those books)&lt;/p&gt;
+
+
+&lt;p&gt;Part of why this has been interesting to observe is that it highlights some of my changing relationship with books. Instead of books being a thing to complete, &lt;a href="https://twitter.com/DRMacIver/status/1266093917885337600"&gt;books are part of an ongoing process of reading&lt;/a&gt;. The fact that I have read a book cover to cover doesn't necessarily take it out of that process. If nothing else, it just moves it into fodder for the &lt;a href="https://notebook.drmaciver.com/posts/2020-06-08-10:11.html"&gt;writing practice&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;&lt;a href="https://notebook.drmaciver.com/posts/2020-06-09-10:23.html"&gt;A Book is a Tool for Thinking With&lt;/a&gt;, so a book is only done when you no longer need that tool.&lt;/p&gt;
+
+
+&lt;p&gt;This might be because:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;You've acquired a strictly better tool.&lt;/li&gt;
+&lt;li&gt;You've internalised the book so well that you no longer need the tool.&lt;/li&gt;
+&lt;li&gt;You're no longer interested in having the thoughts it enables.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;In my experience this is roughly in increasing order of likelihood for books that were worth reading in the first place: You can hit the point of diminishing returns, but you rarely hit the point where you &lt;em&gt;can't&lt;/em&gt; get anything out of a book, you just get to the point where you're no longer interested in doing so.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-06-24-15:31.html" rel="alternate"/>
   </entry>
 </feed>
