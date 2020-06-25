@@ -762,12 +762,19 @@ CANON = [
         page_range=(1, 252),
         url="https://amzn.to/3ekINM9",
     ),
+    Book(
+        title="Jonathan Strange & Mr Norrell",
+        author="Susanna Clarke",
+        page_range=(1, 1006),
+        url="https://amzn.to/3fiWsnC",
+    ),
 ]
 
 
 @main.command(name="book-post")
-@click.option("--select", default='')
+@click.argument('select', nargs=-1)
 def book_post(select):
+    select = ' '.join(select).strip()
     if select:
         books = [b for b in CANON if select in b.title or select in (b.author or '')]
         if not books:
