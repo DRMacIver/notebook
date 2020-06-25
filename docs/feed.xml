@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-06-25T14:57:00+01:00</updated>
+  <updated>2020-06-25T21:25:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,60 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-06-13-11:45.html</id>
-    <title>Help isn't always helpful</title>
-    <updated>2020-06-13T12:11:17+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Help isn't always helpful&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-06-13&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;From &lt;a href="https://amzn.to/3fiWsnC"&gt;Jonathan Strange &amp;amp; Mr Norrell&lt;/a&gt; by Susanna Clarke, page 355:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;However, in London, where the Ministers knew as little of ships and seamanship as Strange, only one thing was clear: Strange had saved a ship, the loss of which would have cost the admiralty a vast amount of money.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;In context, Strange has just saved a ship that had beached using magic. The magic in question resulted in completely reconfiguring the sandbeds of the harbour, which now have to be remapped. So, although he has solved the proximate problem, he has created a different one.&lt;/p&gt;
-
-
-&lt;p&gt;This different problem is not necessarily a better one to have than the loss of the ship. 
-It's not necessarily a &lt;em&gt;worse&lt;/em&gt; one either. Instead the two are &lt;a href="https://notebook.drmaciver.com/posts/2020-04-17-10:16.html"&gt;incommensurable&lt;/a&gt;, because you can't decide between them without more context, and which problem is preferable to have depends on who you ask.&lt;/p&gt;
-
-
-&lt;p&gt;Solving the problem is very good for Strange's career because the problem he replaced it with is:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Less visible.&lt;/li&gt;
-&lt;li&gt;Requires a certain amount of expertise to understand.&lt;/li&gt;
-&lt;li&gt;Not the direct concern of the people with power.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;So although which problem is better depends on who you ask, when you ask the people with power over his career it's very clear which is the better one to have - they're not aware of the other problem at all!&lt;/p&gt;
-
-
-&lt;p&gt;Solving a problem by replacing it with one that matters less to people who matter and more to people who don't is often a winning (if selfish) move.&lt;/p&gt;
-
-
-&lt;p&gt;I'm put in mind of &lt;a href="https://blog.jaibot.com/the-copenhagen-interpretation-of-ethics/"&gt;the Copenhagen Interpretation of Ethics&lt;/a&gt;, where we punish people for improving the situation in suboptimal ways more than we punish them for not doing anything about it at all. I disagree with a lot of the examples in the linked post, but it still feels like there is something to the concept.&lt;/p&gt;
-
-
-&lt;p&gt;I wonder if this sort of problem is part of why we do that, and whether this is a rational thing to do after all: If we let people just swan in and "help", they will often do so in a way that is &lt;a href="https://notebook.drmaciver.com/posts/2020-03-02-09:31.html"&gt;legible&lt;/a&gt; to people who are not experts in what the actual problems are - partly because they themselves are not experts, partly because the audience who matters to them are not the people with the problems but the people watching whose opinions they actually care about. Punishing showy but suboptimal displays of helping by outsiders may result in strictly less help, but it might be worth it if it causes the people who &lt;em&gt;do&lt;/em&gt; help to actually consult with people on the ground and ask what they really need.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-06-13-11:45.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-06-14-10:26.html</id>
     <title>Uploading friendships to the cloud</title>
@@ -480,7 +426,7 @@ Status in an expert community is primarily (though not exclusively) defined by h
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-06-25-13:28.html</id>
     <title>Subsetting Life</title>
-    <updated>2020-06-25T14:57:00+01:00</updated>
+    <updated>2020-06-25T21:24:23+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Subsetting Life&lt;/p&gt;
@@ -543,5 +489,34 @@ Status in an expert community is primarily (though not exclusively) defined by h
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-06-25-13:28.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-06-25-21:25.html</id>
+    <title>Trying out this thing called Hypothesis</title>
+    <updated>2020-06-25T21:25:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Trying out this thing called Hypothesis&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-06-25&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Hey, you know that software called Hypothesis?&lt;/p&gt;
+
+
+&lt;p&gt;No, not &lt;a href="https://hypothesis.works/"&gt;that one&lt;/a&gt;, the one for &lt;a href="https://hypothes.is/"&gt;web annotation&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, &lt;a href="https://twitter.com/nibrasibn/status/1275811352225906688"&gt;nibras was expression an urge to comment inline on her friends' websites&lt;/a&gt; and I pointed out that this was exactly what hypothesis is for.&lt;/p&gt;
+
+
+&lt;p&gt;Then it occurred to me that it &lt;em&gt;would&lt;/em&gt; be nice to expose that sort of functionality directly on the notebook. It turns out you can embed hypothes.is directly into your site with an easy piece of javascript, so now I have. You should be able to add annotations to any of the notebook posts (it's not currently turned on for posts as they show up in the index, because I couldn't be bothered to figure out how).&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-06-25-21:25.html" rel="alternate"/>
   </entry>
 </feed>
