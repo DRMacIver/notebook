@@ -24,7 +24,7 @@ import requests
 import random
 from prompt_toolkit.shortcuts import radiolist_dialog
 import csv
-
+from tqdm import tqdm
 
 _DATABASE = None
 
@@ -1022,8 +1022,21 @@ def post_object(name):
     return result
 
 
+__template_cache_key = None
+
+def template_cache_key():
+    global __template_cache_key
+    if __template_cache_key is None:
+        hasher = hashlib.sha1()
+        for f in sorted(glob(os.path.join(TEMPLATES, ".html"))):
+            with open(f, "rb") as i:
+                hasher.update(i.read())
+        __template_cache_key = hasher.hexdigest()
+    return __template_cache_key
+
+
 @cached
-def post_html(name, source_text):
+def post_html(_unused_key, name, source_text):
     source_html = md(source_text)
     soup = BeautifulSoup(source_html, "html.parser")
 
@@ -1058,7 +1071,7 @@ def do_build(rebuild=False, full=True, name=""):
     except FileExistsError:
         pass
 
-    for name in post_names():
+    for name in tqdm(post_names()):
         source = os.path.join(POSTS, name + ".md")
         if not name.startswith(only):
             continue
@@ -1076,7 +1089,7 @@ def do_build(rebuild=False, full=True, name=""):
             source_text = i.read()
 
         with open(dest, "w") as o:
-            o.write(post_html(name, source_text))
+            o.write(post_html(template_cache_key(), name, source_text))
 
     if not full:
         return
@@ -1086,7 +1099,7 @@ def do_build(rebuild=False, full=True, name=""):
         if not os.path.exists(source):
             os.unlink(post)
 
-    posts = [post_object(name) for name in post_names()]
+    posts = [post_object(name) for name in tqdm(post_names())]
 
     posts.sort(key=lambda p: p.name, reverse=True)
 

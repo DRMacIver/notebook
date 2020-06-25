@@ -16,8 +16,12 @@ DRMacIver's Notebook
 
 % if url:
     <meta property="og:url" content="${url}" />
+    <link rel="canonical" href="${url}" />
+    <script src="https://hypothes.is/embed.js" async></script>
+
 % else:
     <meta property="og:url" content="https://notebook.drmaciver.com" />
+    <link rel=canonical href="https://notebook.drmaciver.com" />
 %endif
 
     <meta name="twitter:card" content="summary" />
