@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-06-25T21:25:00+01:00</updated>
+  <updated>2020-06-25T21:29:52+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -493,7 +493,7 @@ Status in an expert community is primarily (though not exclusively) defined by h
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-06-25-21:25.html</id>
     <title>Trying out this thing called Hypothesis</title>
-    <updated>2020-06-25T21:25:00+01:00</updated>
+    <updated>2020-06-25T21:29:52+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Trying out this thing called Hypothesis&lt;/p&gt;
@@ -515,6 +515,12 @@ Status in an expert community is primarily (though not exclusively) defined by h
 
 
 &lt;p&gt;Then it occurred to me that it &lt;em&gt;would&lt;/em&gt; be nice to expose that sort of functionality directly on the notebook. It turns out you can embed hypothes.is directly into your site with an easy piece of javascript, so now I have. You should be able to add annotations to any of the notebook posts (it's not currently turned on for posts as they show up in the index, because I couldn't be bothered to figure out how).&lt;/p&gt;
+
+
+&lt;p&gt;You'll need an account on &lt;a href="https://hypothes.is/"&gt;hypothes.is&lt;/a&gt; to make annotations, but you should be able to see any public annotations people make. The toolbar on the right will give you some options to control what you see.&lt;/p&gt;
+
+
+&lt;p&gt;To make an annotation just select some text, click "annotate" and write whatever you like there. It should hopefully all be fairly intuitive.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-06-25-21:25.html" rel="alternate"/>
