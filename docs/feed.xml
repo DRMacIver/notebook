@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-06-25T21:29:52+01:00</updated>
+  <updated>2020-06-26T09:43:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,61 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-06-14-10:26.html</id>
-    <title>Uploading friendships to the cloud</title>
-    <updated>2020-06-14T11:02:52+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Uploading friendships to the cloud&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-06-14&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I'm sad, so you get a sad post today, sorry.&lt;/p&gt;
-
-
-&lt;p&gt;I basically grew up on the internet. I did not have a lot of friends at school, and lived in a remote village so had few to no local friends, but I had people I talked to online, and that was (possibly literally) a life saver.&lt;/p&gt;
-
-
-&lt;p&gt;Some of these internet friends turned into in person friends, and many more of them I at some point met in person at least once. So the line between online and offline friendships has always been a bit of a blurry one for me.
-There's definitely no hard and fast internet/offline friendship binary, but a very queer and shifting spectrum.&lt;/p&gt;
-
-
-&lt;p&gt;There was perhaps a bit of a lull in this during university, when I had a relatively constant source of offline friends, but even there I was quite active on university IRC networks and entirely legitimate university file sharing networks that we were definitely only using for sharing Linux ISOs. Many of those people were ones I met in person at the occasional meetup, but they were absolutely online-first friendships with an offline component.&lt;/p&gt;
-
-
-&lt;p&gt;When I first moved to London, online friendships once again became centered, because I didn't know anyone here.
-This became a bit more balanced as I started to make more offline friendships, but a combination of a long-distance relationship and starting to move more and more of my public brain onto Twitter meant that it was a more even balance between the two.&lt;/p&gt;
-
-
-&lt;p&gt;On top of this, a lot of my best offline friendships have always had a significant online component. We would have long-running conversations - on AIM (remember that?), IRC, google chat, or, more recently, WhatsApp. Almost all of my "real" friendships were maintained through the internet as much as in person.&lt;/p&gt;
-
-
-&lt;p&gt;All of which is to lay some backstory for what was, to me, a rather surprising realisation: it turns out that for many of my friendships, the offline component was load bearing to a far greater degree that I had supposed.&lt;/p&gt;
-
-
-&lt;p&gt;My ability to participate in some of the ongoing conversations that matter most to me has been evaporating recently, and those are ones with people who I was friends with in a way that was very much offline-first. We talked a lot on the internet, long before lockdown made that a necessity, but implicit in that was that it was a continuation of our offline friendship.&lt;/p&gt;
-
-
-&lt;p&gt;In contrast, many of my internet friendships and the conversations associated with them are doing just fine. They tend to ebb and flow with my mood, as always, but they're not evaporating in the same way because they were conversations without any strong implication that we would ever see each other in person - we probably would, and some of them are ones that I expect to turn into offline friendships when those become a thing again - but it was never something that formed a foundation to our friendship.&lt;/p&gt;
-
-
-&lt;p&gt;Some of this is &lt;a href="https://notebook.drmaciver.com/posts/2020-05-19-17:31.html"&gt;that parts of us are missing&lt;/a&gt;, and perhaps it was those parts who were such good friends with each other. The rest of us were friends too, but they weren't necessarily as close. They're the sort of friends who only see each other at parties, or group events, and the pandemic has cancelled those group events.&lt;/p&gt;
-
-
-&lt;p&gt;But some of it, I have to admit, is that in many ways online friendships are just kinda low fidelity, and many of the things that you could overlook when you had the in person foundation become &lt;a href="https://notebook.drmaciver.com/posts/2020-04-11-14:47.html"&gt;trivial irritations&lt;/a&gt; that are enough to &lt;a href="https://notebook.drmaciver.com/posts/2020-04-20-10:52.html"&gt;put the brakes on&lt;/a&gt; the whole thing.&lt;/p&gt;
-
-
-&lt;p&gt;I don't expect this is going to &lt;em&gt;damage&lt;/em&gt; the friendships in question per se - we'll figure out a way through it, even if the way is waiting until after the lockdown is over to resume - but in the meantime there is definitely a sense of loss, and it's one that I think is highlighting for me how much more I needed in person contact than I had realised.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-06-14-10:26.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-06-15-11:15.html</id>
     <title>Surviving is good</title>
@@ -493,7 +438,7 @@ Status in an expert community is primarily (though not exclusively) defined by h
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-06-25-21:25.html</id>
     <title>Trying out this thing called Hypothesis</title>
-    <updated>2020-06-25T21:29:52+01:00</updated>
+    <updated>2020-06-25T21:33:53+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Trying out this thing called Hypothesis&lt;/p&gt;
@@ -524,5 +469,70 @@ Status in an expert community is primarily (though not exclusively) defined by h
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-06-25-21:25.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-06-26-09:43.html</id>
+    <title>Find a forking path</title>
+    <updated>2020-06-26T09:43:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Find a forking path&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-06-26&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Suppose you come to a fork in the road. You know that one arm of the fork goes to an amazing destination. The other arm goes to a mildly disappointing destination - nothing too terrible, but the knowledge that you've ended up there instead of the great destination will make you sad. There's nothing to distinguish which path is which.
+What do you do?&lt;/p&gt;
+
+
+&lt;p&gt;Well, based on my keen and insightful observation of human behaviour, I can tell you what you probably do:
+you sit down in the road and cry about it, and eventually waste away and die never having taken either path.&lt;/p&gt;
+
+
+&lt;p&gt;This is a bad plan. Just &lt;a href="https://notebook.drmaciver.com/posts/2020-02-25-10:39.html"&gt;flip a coin and use that outcome&lt;/a&gt;. If you want to spend a little while looking for clues first, you can do that, but picking either path is ging to be better than being paralysed for choice.&lt;/p&gt;
+
+
+&lt;p&gt;Even if you end up in the destination of mild disappointment, you're still better off than before. You've &lt;a href="https://notebook.drmaciver.com/posts/2020-02-26-16:07.html"&gt;learned something&lt;/a&gt;. Maybe that knowledge will help you find the great destination? If nothing else you could walk back up the path and go the other way.&lt;/p&gt;
+
+
+&lt;p&gt;Coming to forks like this is generally a really good thing, because:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Both outcomes are a strict improvement on the status quo.&lt;/li&gt;
+&lt;li&gt;One of the outcomes is really really good, easily justifying the effort of taking the fork.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;But because we are unable to deal with the fear of making a bad choice, we end up with decision paralysis instead, the very idea of taking the fork becomes scary, and we either sit down and cry or (more often) pretend the fork doesn't exist and back away slowly down the path.&lt;/p&gt;
+
+
+&lt;p&gt;As a result, forks like these are &lt;a href="https://notebook.drmaciver.com/posts/2020-05-06-09:51.html"&gt;fnords&lt;/a&gt; - things that we learn not to see, because seeing them makes us feel obliged to deal with them, so every time we run into them we flinch away and pretend not to have noticed.&lt;/p&gt;
+
+
+&lt;p&gt;A neat consequence of this is that we are probably &lt;em&gt;surrounded&lt;/em&gt; by high value opportunities that we are ignoring. If you start looking for this pattern, you'll probably find all sorts of examples.&lt;/p&gt;
+
+
+&lt;p&gt;Here are a couple I'm aware of:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://notebook.drmaciver.com/posts/2020-03-24-09:46.html"&gt;Trusting people (slightly) more than you're sure they're worthy of&lt;/a&gt; - either you learn more about how trustworthy they are, or you improve the level of trust between you.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://notebook.drmaciver.com/posts/2020-06-03-09:56.html"&gt;Approach emotions with the intention to act on them if they're accurate&lt;/a&gt; - either you improve your emotional response or you improve your understanding of the situation.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://notebook.drmaciver.com/posts/2020-03-05-11:27.html"&gt;Entertain bad ideas&lt;/a&gt; - either you learn more about the problem or you figure out how to make the idea good.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;Another one I'm currently entertaining but haven't really committed to: I think it might be possible to break habits that you don't like by trying to actively enjoy that habit. If you have a compulsive snacking problem, say "OK. It's completely fine for me to snack, but I've got to really revel in it. I'm going to &lt;em&gt;enjoy&lt;/em&gt; this food dammit". If you have a compulsive urge to check Twitter, aim to have fun on Twitter - go into a deep nerd dive on someone's timeline, do something interesting other than just scrolling.&lt;/p&gt;
+
+
+&lt;p&gt;If this works (I'm not sure the fork is viable, which is why I don't know if it will work yet), either you break the habit or you enjoy yourself more, and both of these are good things.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-06-26-09:43.html" rel="alternate"/>
   </entry>
 </feed>
