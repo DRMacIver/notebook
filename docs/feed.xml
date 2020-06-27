@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-06-26T09:43:00+01:00</updated>
+  <updated>2020-06-27T11:07:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,40 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-06-15-11:15.html</id>
-    <title>Surviving is good</title>
-    <updated>2020-06-15T11:28:14+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Surviving is good&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-06-15&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;From &lt;a href="https://amzn.to/3fiWsnC"&gt;Jonathan Strange &amp;amp; Mr Norrell&lt;/a&gt; by Susanna Clarke, page 578:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;The ranks of dead and wounded stretched away upon all sides as far as the eye could see. Simply being alive at that moment seemed, in some indefinable way, ungentlemanly.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;This is a classic example of &lt;a href="https://alexwlchan.net/2020/04/survivors-guilt/"&gt;survivor's guilt&lt;/a&gt;. In context, Strange and Captain Hadley-Bright have both survived the battle of Waterloo, but a lot of their comrades have not. This causes them to feel that their survival is, in some sense, inappropriate.&lt;/p&gt;
-
-
-&lt;p&gt;Survivor's guilt is obviously very relatable right now, what with the pandemic going on, but it's a broader phenomenon, and one that I think we need to be very careful of. If we let survivor's guilt overcome us then we will often let the suffering of others drag us back down, preventing survival. &lt;a href="https://twitter.com/quatoria/status/1253046971935469570"&gt;There was a good Twitter thread about this a while back&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;Ultimately, surviving is good, and you should not feel guilty about doing good things. We want everyone to survive, and if we are to do that we need to &lt;a href="https://notebook.drmaciver.com/posts/2020-06-03-09:56.html"&gt;get a handle on&lt;/a&gt; negative reactions to our own survival.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-06-15-11:15.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-06-17-11:14.html</id>
     <title>Chatting with your consciences</title>
@@ -473,7 +439,7 @@ Status in an expert community is primarily (though not exclusively) defined by h
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-06-26-09:43.html</id>
     <title>Find a forking path</title>
-    <updated>2020-06-26T09:43:00+01:00</updated>
+    <updated>2020-06-26T11:20:47+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Find a forking path&lt;/p&gt;
@@ -534,5 +500,64 @@ you sit down in the road and cry about it, and eventually waste away and die nev
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-06-26-09:43.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-06-27-11:07.html</id>
+    <title>Ideas Get You Unstuck</title>
+    <updated>2020-06-27T11:07:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Ideas Get You Unstuck&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-06-27&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;From &lt;a href="https://amzn.to/3d13X1P"&gt;the wave in the mind&lt;/a&gt; by Ursula K. Le Guin, page 279:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;I started the book five times, it got nowhere. I had to stop.&lt;/p&gt;
+&lt;p&gt;I had to sit patiently and say nothing, at the same time every day, while the fox looked at me from the corner of its eye, and slowly let me get a little bit closer.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;On the next page, 280:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Critics talk as if stories were all idea, but intellect does not make story and more than ideology makes art. The story had to make itself, find its center, find its voice, Sutty's voice. Then, because I was waiting for it, it could give itself to me.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;Le Guin is talking about the process of story formation, and how it comes through an accretion of pieces that cause it to fit together. However I find it strange that she uses the fact that she had to sit and wait for Sutty's voice as evidence that a story is &lt;em&gt;not&lt;/em&gt; just composed about ideas, because Sutty's voice is, itself, an idea, and it came to her as most ideas inevitably do - at first slowly, and then suddenly.&lt;/p&gt;
+
+
+&lt;p&gt;She's right of course that a story is not just composed of ideas. As with basically everything, a story is mostly composed of work, and skill in doing that work. Ideas serve the purpose they serve everywhere: They're there to get you unstuck.&lt;/p&gt;
+
+
+&lt;p&gt;Generally, if you're not currently stuck, you need to either do the work. If you're not good enough to do the work, you need to learn to be better at it (you can, of course, then get stuck in the learning process). That's where an idea helps you out: It &lt;a href="https://notebook.drmaciver.com/posts/2020-02-26-16:07.html"&gt;gives you something to try&lt;/a&gt;. An idea is a thought that points to a way to improve the situation.&lt;/p&gt;
+
+
+&lt;p&gt;The two main ways of getting stuck are:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;You don't know what to do.&lt;/li&gt;
+&lt;li&gt;You know what to do but you don't know how to do it.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;I think Le Guin is only using "idea" to refer to things that solve the first kind of getting stuck, but they're if anything more important for the second type. Ideas of the first kind are cheap: There are a million things to do at any moment, ideas about what to do are cheap, and if you're struggling to figure those out it's probably an emotional problem (e.g. "everything feels pointless and I hate myself" or "I'm not good enough to do any of these") rather than actual difficulty generating ideas.&lt;/p&gt;
+
+
+&lt;p&gt;The second version though is still idea generation, but it's idea generation on hard mode, because you can't just pick an idea and see where it leads the ideas you generate actually have to have a decent chance of working, for some very specific notion of work. These are the times that force you to actually develop the skill of idea generation,
+and the first part of that skill is that process that Le Guin describes of &lt;a href="https://mathwithbaddrawings.com/2017/09/20/the-state-of-being-stuck/"&gt;getting stuck and sitting with it&lt;/a&gt;.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-06-27-11:07.html" rel="alternate"/>
   </entry>
 </feed>
