@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-06-27T11:07:00+01:00</updated>
+  <updated>2020-06-27T12:28:23+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -422,7 +422,7 @@ Status in an expert community is primarily (though not exclusively) defined by h
 &lt;p&gt;No, not &lt;a href="https://hypothesis.works/"&gt;that one&lt;/a&gt;, the one for &lt;a href="https://hypothes.is/"&gt;web annotation&lt;/a&gt;.&lt;/p&gt;
 
 
-&lt;p&gt;Anyway, &lt;a href="https://twitter.com/nibrasibn/status/1275811352225906688"&gt;nibras was expression an urge to comment inline on her friends' websites&lt;/a&gt; and I pointed out that this was exactly what hypothesis is for.&lt;/p&gt;
+&lt;p&gt;Anyway, &lt;a href="https://twitter.com/nibrasibn/status/1275811352225906688"&gt;nibras was expressing an urge to comment inline on her friends' websites&lt;/a&gt; and I pointed out that this was exactly what hypothesis is for.&lt;/p&gt;
 
 
 &lt;p&gt;Then it occurred to me that it &lt;em&gt;would&lt;/em&gt; be nice to expose that sort of functionality directly on the notebook. It turns out you can embed hypothes.is directly into your site with an easy piece of javascript, so now I have. You should be able to add annotations to any of the notebook posts (it's not currently turned on for posts as they show up in the index, because I couldn't be bothered to figure out how).&lt;/p&gt;
@@ -504,7 +504,7 @@ you sit down in the road and cry about it, and eventually waste away and die nev
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-06-27-11:07.html</id>
     <title>Ideas Get You Unstuck</title>
-    <updated>2020-06-27T11:07:00+01:00</updated>
+    <updated>2020-06-27T12:28:23+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Ideas Get You Unstuck&lt;/p&gt;
