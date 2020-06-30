@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-06-28T15:58:00+01:00</updated>
+  <updated>2020-06-30T17:03:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,75 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-06-18-11:44.html</id>
-    <title>Conversations in a public</title>
-    <updated>2020-06-18T13:50:53+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Conversations in a public&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-06-18&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;From &lt;a href="https://amzn.to/2X0wxe2"&gt;Voices: The Educational Formation of Conscience&lt;/a&gt; by Thomas F. Green, page 164:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;What I object to, in short, is not a hermeneutic of suspicion, but an entirely different thing that I believe we have created, namely a &lt;em&gt;culture&lt;/em&gt; of suspicion, a culture of public speech in which it is simply assumed that because of role or position, because of the partiality or brokenness of reason, nothing any of us says can be entertainedat face value. [...] If I adopt that attitude, or if you adopt it, then our joint membership in a public, yours and mine, has come to an end.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;Well of &lt;em&gt;course&lt;/em&gt; Green would say this, he's a philosopher. Honestly.&lt;/p&gt;
-
-
-&lt;p&gt;Ahem.&lt;/p&gt;
-
-
-&lt;p&gt;I've largely avoided rereading the later chapters of Voices, where he talks about democracy and public speech, because I find it depressing how far from reality the ideal he's describing is.&lt;/p&gt;
-
-
-&lt;p&gt;A thing I've found myself increasingly aware of is that expecting norms of honest inquiry to occur in public feels naive. I don't think this is something where the good old days were especially good, but it does feel like something that has gone from bad to worse over my lifetime. It's popular - and probably not entirely unfair - to blame social media, but the mainstream media is at least equally to blame.&lt;/p&gt;
-
-
-&lt;p&gt;There are plenty of other people we can blame. The left will blame capitalism (it's the result of market incentives manipulating us this way), the right will blame identity politics (it's the result of people privileging identity and emotion over universal objective rational understanding of the world), probably everyone will blame political polarisation (sometimes without even meaning "too many people disagree with me"). &lt;/p&gt;
-
-
-&lt;p&gt;So some greater or lesser degree &lt;a href="https://notebook.drmaciver.com/posts/2020-04-10-10:53.html"&gt;they're probably all right&lt;/a&gt; - all of these things and more make it very hard to pursue inquiry together, because everyone is at each other's throats.&lt;/p&gt;
-
-
-&lt;p&gt;My personal contribution to the list of reasons is &lt;a href="https://notebook.drmaciver.com/posts/2020-06-12-09:45.html"&gt;morality tests as self-fulfilling prophecies&lt;/a&gt; - we are, at this stage, pretty primed to treat any political disagreement as a sign that the other person is our enemy, because our enemies will always disagree with us and our friends and allies have learned that it's not worth the effort of disagreeing with us.&lt;/p&gt;
-
-
-&lt;p&gt;I find this very frustrating, because a) Almost everyone (myself included) is wrong about almost everything and b) &lt;a href="https://notebook.drmaciver.com/posts/2020-02-24-10:37.html"&gt;All knowledge is connected&lt;/a&gt; so often the way to figure out your problem is to go talk to someone who is a &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-07:38.html"&gt;nerd&lt;/a&gt; about a very different field.&lt;/p&gt;
-
-
-&lt;p&gt;To pick the least controversial example available to me, I've been reading a bunch of Christian philosophy and theology recently. Josef Pieper's work is foundational in my &lt;a href="https://drmaciver.substack.com/p/life-as-nonproductive-act"&gt;Total Work&lt;/a&gt; series but is &lt;em&gt;very&lt;/em&gt; Christian (&lt;a href="https://books.rixx.de/reviews/2020/leisure-the-basis-of-culture/"&gt;Tobi's review&lt;/a&gt; is a good place to get a sense of that). As a result there's a &lt;em&gt;lot&lt;/em&gt; we disagree on.
-Green himself was a Presbyterian, apparently quite a devout one, and a number of his philosophical commitments appear to be grounded in that.&lt;/p&gt;
-
-
-&lt;p&gt;Some of these disagreements are ones where we could probably talk them out and come to a more interesting synthesis. Some of them are probably ones where we will never agree and that's mostly OK (I'm basically never going to agree with an opinion that ends "and therefore Jesus").
-Even where we disagree, the discussion has the potential to be enlightening (possibly simply be forcing us to clarify our own position).&lt;/p&gt;
-
-
-&lt;p&gt;Some disagreements are rather more urgent than others of course. A lot of disagreemenets sound like "I need X to be safe" "You don't deserve to be safe, so you can't have X". Unsurprisingly, these disagreements don't go well.&lt;/p&gt;
-
-
-&lt;p&gt;Part of why they don't go well is that they're not the sort of thing that you can usually expect to agree on if you don't already agree on them. They're not really disagreements, they're conflicts, and you need either a &lt;a href="https://extranewsfeed.com/tolerance-is-not-a-moral-precept-1af7007d6376"&gt;peace treaty&lt;/a&gt; or you'll have a fight (possibly verbal, possibly more literal).&lt;/p&gt;
-
-
-&lt;p&gt;Right now there doesn't seem to be any workable tools for getting to a peace treaty, certainly not without having a fight first, and this strikes me as a problem. My guess is that such tools have to start with assuming the possibility of a productive discussion, and that the culture of suspicion prevents us from assuming that possibility.&lt;/p&gt;
-
-
-&lt;p&gt;Green describes this as "our joint membership in a public, yours and mine, has come to an end". He's probably right, and I don't know what to do about it.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-06-18-11:44.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-06-20-15:10.html</id>
     <title>Fake Olds</title>
@@ -502,7 +433,7 @@ and the first part of that skill is that process that Le Guin describes of &lt;a
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-06-28-15:58.html</id>
     <title>I'm not actually that curious</title>
-    <updated>2020-06-28T15:58:00+01:00</updated>
+    <updated>2020-06-28T17:46:46+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;I'm not actually that curious&lt;/p&gt;
@@ -580,5 +511,54 @@ and thought I'd clear it up.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-06-28-15:58.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-06-30-17:03.html</id>
+    <title>Free and Open Source Social Technology</title>
+    <updated>2020-06-30T17:03:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Free and Open Source Social Technology&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-06-30&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;From &lt;a href="https://amzn.to/36FzofT"&gt;Where Good Ideas Come From&lt;/a&gt; by Steven Johnson, page 242:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;As Lawrence Lessig has so persuasively argued over the years, there is nothing "natural" about the artificial scarcity of intellectual property law. [...] Ideas are intrinsically copyable in the way that food and fuel are not. You have to build dams to keep ideas from flowing.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;This is in the context of Johnson talking about what he calls the &lt;em&gt;fourth quadrant&lt;/em&gt; - ideas generated by networks of people operating outside of market incentives. The fourth quadrant is in fact a great source of innovation, and a large part of that is this relative lack of intellectual property dams. If someone comes up with a great idea and isn't interested in making money off it, they're usually delighted if you copy them. Good etiquette requires that you &lt;em&gt;credit&lt;/em&gt; them, and ideally (in the spirit of open source) if you make any improvements to the idea you pay it back by telling them or others about it, so as long as everyone behaves like a vaguely good citizen sharing ideas that you don't intend to monetize is a net positive for everyone.&lt;/p&gt;
+
+
+&lt;p&gt;One difficulty is when ideas escape the network and into the market - if you share your idea and someone goes "that's a great idea, I'm going to make money off it", that's less good. Firstly, you feel exploited (in many cases this will be literally &lt;a href="https://www.currentaffairs.org/2017/09/the-question-of-cultural-appropriation"&gt;cultural exploitation&lt;/a&gt;) and secondly now there's an entity who likely has more money (and thus power) than you who is liable to claim ownership of the idea and/or make demands of you, and because you gave the idea away for free you have little leverage.&lt;/p&gt;
+
+
+&lt;p&gt;If I sound bitter, this is of course because we run into this problem in FOSS a lot.&lt;/p&gt;
+
+
+&lt;p&gt;But there's a nice example where this doesn't really come up that much, which is &lt;a href="https://www.drmaciver.com/2019/08/the-missing-social-technology-sector/"&gt;social technology&lt;/a&gt;. You do get people "selling" social technology through writing books and doing consulting or training courses, but even there it tends to be pretty much part of the network rather than the market, with members of the network also making money off it.&lt;/p&gt;
+
+
+&lt;p&gt;A lot more people are developing social technology, and more general technologies in the form of &lt;a href="https://notebook.drmaciver.com/posts/2020-05-09-11:26.html"&gt;the techniques of being human&lt;/a&gt;. In the last year or so I've been hanging out with the group who I tend to refer to as "feelings Twitter" - a very loosely aligned group of people who basically do a lot of weird therapy and talk about their feelings and the tools they've used to explore them. This is very much an example of fourth quadrant innovation, with people mixing and matching, generating new techniques, boosting ideas that have worked well for them.&lt;/p&gt;
+
+
+&lt;p&gt;So far this all seems to work out pretty well, and I think a large part of that is that even though you can make money off this sort of thing very few of us are trying to do so (I suppose I kinda am trying to make money off it, in that the newsletter is paid, but I'm pretty far from being there). Being better humans is &lt;a href="https://drmaciver.substack.com/p/what-do-you-do"&gt;our work but not our job&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;At the moment I don't see much risk of us falling into the FOSS trap of having to support companies who are using our stuff for free (providing free therapy in your DMs is a lot more likely, but I think quite a different problem and not necessarily a problem at all), and if a company uses our ideas that's generally going to be somewhere between neutral an positive for us (it might be a bit annoying if and when they butcher them).&lt;/p&gt;
+
+
+&lt;p&gt;And, to go back to the original quote, a lot of that is because you can't patent social technologies. Lets keep it that way.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-06-30-17:03.html" rel="alternate"/>
   </entry>
 </feed>
