@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-06-30T17:03:00+01:00</updated>
+  <updated>2020-07-01T09:38:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,59 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-06-20-15:10.html</id>
-    <title>Fake Olds</title>
-    <updated>2020-06-20T15:37:45+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Fake Olds&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-06-20&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;From &lt;a href="https://amzn.to/2TC15R4"&gt;Against the Grain&lt;/a&gt; by James C. Scott, page 213:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Episodes of collapse are frequently succeeded by what comes to be known as a "dark age." Just as the meaning of collapse merits close and critical inspection, so the term "dark age" needs to be queried: "dark" for whom and in what respects? Dark ages are just as ubiquitous as storied dynastic highpoints of consolidation. The term is often a form of propaganda by which a centralizing dynasty contrasts its achievement with what it casts as the disunity and decentralization that preceded it.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;There's a saying that those who do not learn history are doomed to repeat it (actually the original quote is probably "Those who cannot remember the past are condemned to repeat it" - and yes I find it very funny that this quote is not properly remembered).&lt;/p&gt;
-
-
-&lt;p&gt;The problem with learning from history is that the very notion of "history" is a bait and switch.
-We use it to mean two things:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Stuff that happened in the past.&lt;/li&gt;
-&lt;li&gt;The study of said stuff.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;But the study of the past heavily over-represents the sort of thing that leaves stable records. We have access to the physical libraries of the past (except the bits that got burned) but not to the &lt;a href="https://notebook.drmaciver.com/posts/2020-05-16-07:43.html"&gt;ghost library&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;Actual historians do, by and large, understand this of course, but to some extent there's only so much you can do: There's just vastly more information to study that represents what people with power wrote down. The best we can do with the rest is to read between the lines of that and infer what we can from archaeological remnants.&lt;/p&gt;
-
-
-&lt;p&gt;If you're not a historian, you may never really have learned how to engage properly with history (I certainly didn't), and so may have bought into a lot of historical propaganda.&lt;/p&gt;
-
-
-&lt;p&gt;People are, I think, aware of the problem of modern propaganda - we &lt;em&gt;know&lt;/em&gt; journalists are mostly somewhere between highly selective and outright lying to us - but we tend to forget that historical records are mostly written by people who were doing the same at the time.&lt;/p&gt;
-
-
-&lt;p&gt;This is before you even get into the problem of modern propaganda efforts which are actively selecting from history to paint a particular narrative - a lot of the people telling us about the glories of the British Empire, for example, know full well how bad it was, they just don't want us to know that.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-06-20-15:10.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-06-22-19:57.html</id>
     <title>Non-Experts and Status in Expert Communities</title>
@@ -515,7 +462,7 @@ and thought I'd clear it up.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-06-30-17:03.html</id>
     <title>Free and Open Source Social Technology</title>
-    <updated>2020-06-30T17:03:00+01:00</updated>
+    <updated>2020-06-30T18:39:22+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Free and Open Source Social Technology&lt;/p&gt;
@@ -560,5 +507,71 @@ and thought I'd clear it up.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-06-30-17:03.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-07-01-09:38.html</id>
+    <title>Cultivating the Skills of Context</title>
+    <updated>2020-07-01T09:38:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Cultivating the Skills of Context&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-07-01&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Have you noticed how there are jokes that really can only exist in their extremely specific context?&lt;/p&gt;
+
+
+&lt;p&gt;&lt;a href="https://twitter.com/DRMacIver/status/1268905827399761921"&gt;Here's an example&lt;/a&gt;. The joke is kinda obvious in context, but it entertained me, and there is really &lt;em&gt;no&lt;/em&gt; other context in which that joke could possibly have existed.&lt;/p&gt;
+
+
+&lt;p&gt;Something &lt;a href="https://twitter.com/DRMacIver/status/1276155095370084354"&gt;I lightly advocated for recently&lt;/a&gt; is the use of niche analogies. e.g. I get good mileage out of &lt;a href="https://notebook.drmaciver.com/posts/2020-02-20-09:31.html"&gt;analogies between programming and therapy&lt;/a&gt;. I also get good mileage out of analogies between farming and ethics. I also get good mileage out of &lt;a href="https://notebook.drmaciver.com/posts/2020-06-05-09:08.html"&gt;analogies between farming and ethics&lt;/a&gt; ("cultivating" is itself something of a farming analogy). These analogies will typically only work for a small group of people, because they have to be in the intersection of the groups who understand each of the things being compared, but they may work very well for those people.&lt;/p&gt;
+
+
+&lt;p&gt;In &lt;a href="https://drmaciver.substack.com/p/unusual-foundations"&gt;unusual foundations&lt;/a&gt; I argued that you have a unique set of skills and background, and as a result may be able to take advantage of them in unique ways that allow you to achieve things more easily than advice would suggest.&lt;/p&gt;
+
+
+&lt;p&gt;A lot of software is &lt;a href="https://www.drmaciver.com/2018/11/situated-software/"&gt;situated&lt;/a&gt; - it is extremely embedded in a particular environment and use case, and has none of the things that you might expect from a more general purpose piece of software, to the point where it may be easier to write a new one than to adapt the software to a new context (this notebook blog is itself a piece of situated software).&lt;/p&gt;
+
+
+&lt;p&gt;What all of these have in common is that they are things that only work in a very specific context. They don't generalise (or "scale" if you prefer) outside of that context, because they take advantage of hyper-specific features that are not widely shared.&lt;/p&gt;
+
+
+&lt;p&gt;Is that a bad thing?&lt;/p&gt;
+
+
+&lt;p&gt;When I tell (or, more realistically, hear) a really funny joke that works only in that specific context, I always feel a little annoyed because I would like to share the joke and can't. But maybe the reason the joke is so funny is precisely &lt;em&gt;because&lt;/em&gt; of its uniqueness - its reliance on the situation is what gives it its novelty and makes it funny.&lt;/p&gt;
+
+
+&lt;p&gt;Advice that generalises is great, because it can help more people, but the nature of advice is that the more you generalise it the less good it becomes, because you have to simplify it so people understand, you have to add preconditions or remove the things that depend on those preconditions. Often by the time you've reached enough people you've put in a lot of work and made it less good as a result. This is the whole reason I wrote the unusual foundations post - for any given general purpose piece of advice there is probably a better context specific piece of advice. So you end up trading off between number of people you help and how much you help them.&lt;/p&gt;
+
+
+&lt;p&gt;(This isn't entirely true because helping more people &lt;a href="https://notebook.drmaciver.com/posts/2020-06-30-17:03.html"&gt;gives you more people to innovate on the advice&lt;/a&gt;, but you can have your cake and eat it too by sharing the advice in its context-specific form, along with explaining the context, and let other people innovate to adapt it to themselves)&lt;/p&gt;
+
+
+&lt;p&gt;This pattern repeats over and over again, with generalising things being a lot of work and typically making them worse.&lt;/p&gt;
+
+
+&lt;p&gt;But of course one nice thing about generalising is that you often don't have to do that work in the first place. Someone &lt;a href="https://www.drmaciver.com/2017/02/thinking-through-the-implications/"&gt;has already invented the hammer&lt;/a&gt;, I don't need to come up with a custom context-specific artisanal solution to hammer in this particular nail.
+As a result, in the moment a general purpose solution is often easier than a context-specific one &lt;em&gt;as long as that general purpose solution already exists&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;This is, I think, the source of a lot of mediocrity: It's too much work to do the good thing, so we fall back to the known thing. We only use a context-specific solution when there isn't an easy general purpose one, or when the context-specific one is obvious to us (e.g. the jokes).&lt;/p&gt;
+
+
+&lt;p&gt;(The general-purpose solution is, of course, not &lt;em&gt;always&lt;/em&gt; worse than a context-specific one - often a general-purpose solution has been refined through a great deal of time and effort, and trying to adopt a context-specific one is like rolling your own crypto: It's bad)&lt;/p&gt;
+
+
+&lt;p&gt;But everything we do has a rich set of context. This means that we should expect there to be a rich set of context-specific solutions available to us, and we're often likely ignoring them and trying to fit an inappropriate general purpose solution to the situation in question.&lt;/p&gt;
+
+
+&lt;p&gt;The solution is, I think, to generalise from the solutions we find in context, but not by generalising the solution and instead generalising the process by which we found it. By cultivating the skills of looking at a context and identifying whether it permits things that are not possible in the broader world, we lower the effort of finding context-specific solutions, which will often allow us to move from mediocrity to excellence.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-07-01-09:38.html" rel="alternate"/>
   </entry>
 </feed>
