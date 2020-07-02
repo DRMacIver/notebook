@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-07-01T09:38:00+01:00</updated>
+  <updated>2020-07-02T10:06:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,50 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-06-22-19:57.html</id>
-    <title>Non-Experts and Status in Expert Communities</title>
-    <updated>2020-06-22T20:15:33+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Non-Experts and Status in Expert Communities&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-06-22&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;From &lt;a href="https://amzn.to/2WYeYew"&gt;Talking About Machines&lt;/a&gt; by Julian Orr, page 93:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;the use of the machines causes some ambivalence for the technicians. On the one hand, the only reason for having the machines is to use them, and the only reason for having technicians is that when machines are used they break. [...] On th eother hand, while technicians have a certain amount of their identity invested in the machines, the customers do not, yet the customers have the machines. Figuratively speaking, the technicians machines are in the hands of the heathen.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;I think this is a common problem for people with technical expertise: Technical expertise is useful more or less only to the degree that it serves the non-expert, but &lt;a href="https://notebook.drmaciver.com/posts/2020-03-08-08:53.html"&gt;the non-expert stubbornly refuses to understand your expertise&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;It is very easy to go from this to holding the non-expert in contempt: Looking down on the non-experts precisely because they are non-experts, despite the fact that your community of expertise is supported by the needs of the non-experts it serves.&lt;/p&gt;
-
-
-&lt;p&gt;I think this problem is particularly exacerbated by the fact that any area of expertise is a community of &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-07:38.html"&gt;nerds&lt;/a&gt; whose social bonds and status are centered on their area of expertise.
-Status in an expert community is primarily (though not exclusively) defined by how good you are at the subject.&lt;/p&gt;
-
-
-&lt;p&gt;From this perspective, a lack of expertise &lt;em&gt;is&lt;/em&gt; low status. Non-experts, more or less by definition, are not experts and thus do not do well by these stats metrics. They are outgroup.&lt;/p&gt;
-
-
-&lt;p&gt;This necessarily creates a deeply ambivalent relationship between the expert community and the non-experts on which they are dependent: The people who are essential for their survival are also people who they have to adopt a different mindset from their usual one in order to properly respect.&lt;/p&gt;
-
-
-&lt;p&gt;I think this feeds in to why usability work and user experience is so often considered low status within these communities: They force us to confront the congitive dissonance intrinsic in our dependence on those who are not one of us.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-06-22-19:57.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-06-23-12:14.html</id>
     <title>Speech and Writing</title>
@@ -511,7 +467,7 @@ and thought I'd clear it up.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-07-01-09:38.html</id>
     <title>Cultivating the Skills of Context</title>
-    <updated>2020-07-01T09:38:00+01:00</updated>
+    <updated>2020-07-01T11:12:32+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Cultivating the Skills of Context&lt;/p&gt;
@@ -573,5 +529,42 @@ As a result, in the moment a general purpose solution is often easier than a con
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-07-01-09:38.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-07-02-10:06.html</id>
+    <title>From Maintaining to Making</title>
+    <updated>2020-07-02T10:06:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;From Maintaining to Making&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-07-02&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;From &lt;a href="https://amzn.to/3bW2J6t"&gt;The Shock of the Old&lt;/a&gt; by David Edgerton, page 98:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;There are many examples in the history of twentieth-century technology where enterprises started by maintaining a technology, moved on to manufacture components or the whole thing, and then to innovate. But equally there are others where maintenance did not lead to such a development.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;This point is, of course, straight out of &lt;a href="https://amzn.to/2WYUxyi"&gt;The Economy of Cities&lt;/a&gt; by Jane Jacobs (and Edgerton explicitly mentions it).&lt;/p&gt;
+
+
+&lt;p&gt;I think one of the interesting dynamics of maintenance is that maintenance is intrinsically &lt;a href="https://notebook.drmaciver.com/posts/2020-07-01-09:38.html"&gt;context-specific&lt;/a&gt;. You're not maintaining cars, you're maintaining this specific car. Over time, two identical objects have their own events and history - sometimes they're deliberately modified, sometimes they're just used in a particular way which causes particular strains. This intimately affects what you need to do to maintain them.&lt;/p&gt;
+
+
+&lt;p&gt;The skill of generalising from that maintenance is differently hard - it involves thinking about how things behave when stripped of their context, and robs you of a lot of context-specific tools. For example, it is not in the nature of the &lt;a href="https://notebook.drmaciver.com/posts/2020-03-26-09:48.html"&gt;kludge&lt;/a&gt; to generalise.&lt;/p&gt;
+
+
+&lt;p&gt;But, equally, maintenance both gives you a strong incentive to generalise, because although each object you maintain is different, you get to see many objects and start to notice the patterns through them over and over again. A maintainer is significantly more aware of what the lifecycle of the objects in use is than the manufacturer, and this probably leads very naturally into superior manufacturing if you've got the means and inclination to do so.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-07-02-10:06.html" rel="alternate"/>
   </entry>
 </feed>
