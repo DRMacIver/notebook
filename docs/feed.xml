@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-07-02T10:06:00+01:00</updated>
+  <updated>2020-07-03T21:03:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,55 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-06-23-12:14.html</id>
-    <title>Speech and Writing</title>
-    <updated>2020-06-23T12:48:44+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Speech and Writing&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-06-23&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;(Heads up: I'm really struggling at the moment so I'm leaning extra hard on the fact that it's better to phone it in than not write)&lt;/p&gt;
-
-
-&lt;p&gt;From &lt;a href="https://amzn.to/2LZMM4W"&gt;The Art of Not Being Governed&lt;/a&gt; by James C. Scott, page 389:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;This is why Socrates believed that writing out his teachings effectively destroyed their meaning and value, whil it is just this instability, spontaneity, and improvisation of speech that made Plato so suspicious of drama and poetry.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;This is an endnote to page 230:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;From the moment a spoken text (a particular performance) is frozen in writing as preserved speech, it effaces most of the particularity of its origin - cadence, tone, pauses, accompanying music and dance, audience reaction, bodily and facial expression - any one of which might be essential to its original meaning.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;This connects up to a couple things for me:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;Ursula Le Guin's "Telling is Listening" Which is well summarised by &lt;a href="https://www.brainpickings.org/2015/10/21/telling-is-listening-ursula-k-le-guin-communication/"&gt;Brain Pickings&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://amzn.to/3emI4ud"&gt;Conflict is not Abuse&lt;/a&gt;, which claims that conflicts are generally better resolved in higher context higher bandwidth environments (ideally in person, if not in person on the phone, certainly not over text).&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://notebook.drmaciver.com/posts/2020-06-14-10:26.html"&gt;My recent sadposting about friendships in the cloud&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;I'm a big fan of writing. This should not be a surprise to you. But there does seem to be something fundamentally different about speech that is lost in writing (and vice versa), and I'm definitely feeling its lack at the moment.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-06-23-12:14.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-06-24-15:31.html</id>
     <title>Books are never finished, only abandoned</title>
@@ -533,7 +484,7 @@ As a result, in the moment a general purpose solution is often easier than a con
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-07-02-10:06.html</id>
     <title>From Maintaining to Making</title>
-    <updated>2020-07-02T10:06:00+01:00</updated>
+    <updated>2020-07-02T10:36:44+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;From Maintaining to Making&lt;/p&gt;
@@ -566,5 +517,51 @@ As a result, in the moment a general purpose solution is often easier than a con
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-07-02-10:06.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-07-03-21:03.html</id>
+    <title>Death of the Reader</title>
+    <updated>2020-07-03T21:03:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Death of the Reader&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-07-03&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;From &lt;a href="https://amzn.to/3ekINM9"&gt;Clear and simple as the truth&lt;/a&gt; by Thomas and Turner, page 138:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Word for word, Gallanda's version is the worst written, the most fraudulent and the weakest, but it was the most widely read. [...] Its orientalism, which we now find tame, dazzled the sort of person who inhaled snuff and plotted tragedies in five acts. [...] We, mere anachronistic readers of the twentieth century, perceive in these volumes the cloyingly sweet taste of the eighteenth century and not the evanescent oriental aroma that two hundred years ago was their innovation and their glory. No one is to blame for this missed encounter, least of all Galland.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Jorge Luis Borges, "Los traductores de las 1001 noches" [The translators of the 1001 nights]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;I wrote before about the difficulty of &lt;a href="https://notebook.drmaciver.com/posts/2020-06-20-15:10.html"&gt;understanding historical fact from historical records&lt;/a&gt;. This, I think, highlights another problem for understanding history: As modern readers, it is extremely difficult for us to understand how a text would have been read at the time.&lt;/p&gt;
+
+
+&lt;p&gt;I've encountered this problem with reading historical mathematics. It is very hard to read historical mathematics, because one tends to read them through the lens of modern mathematics. For example, reading texts from prior to the invention of modern mathematical notation, it's very easy to think of it in terms of its modern representation.&lt;/p&gt;
+
+
+&lt;p&gt;The thing is, that modern representation makes certain things very obvious that were not at all obvious to historical mathematicians.&lt;/p&gt;
+
+
+&lt;p&gt;In general, it is very hard to read a text without looking at it through the lens of culture that we have built since that text was written. That culture gives us ways of looking, and thinking, and feeling, about the contents of the text that make it impossible for us to read it as it would have been read at the time.&lt;/p&gt;
+
+
+&lt;p&gt;Sometimes that culture is even informed by the text. For example, I found reading 1984 very tedious, because I found its contents obvious and predictable, but a lot of why they are obvious and predictable is that everybody has read 1984.&lt;/p&gt;
+
+
+&lt;p&gt;I am reminded of people who read Lord of the Rings and find it laughable because all of the characters in it are fantasy cliches.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-07-03-21:03.html" rel="alternate"/>
   </entry>
 </feed>
