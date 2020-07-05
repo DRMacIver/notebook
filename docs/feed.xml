@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-07-03T21:14:17+01:00</updated>
+  <updated>2020-07-05T11:29:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,54 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-06-24-15:31.html</id>
-    <title>Books are never finished, only abandoned</title>
-    <updated>2020-06-24T15:54:22+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Books are never finished, only abandoned&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-06-24&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I've been noticing something recently: I've really started to resent lending books.&lt;/p&gt;
-
-
-&lt;p&gt;If a book is good enough to be worth lending, it's probably good enough that I want to keep referring back to it, and lending out a book means that for an unknown amount of time I will lack access to the book.&lt;/p&gt;
-
-
-&lt;p&gt;I've turned this feeling into a feature rather than a bug: It helps me find out which books I really value. If I lend a book out to someone and find I'm missing it, I buy myself a new copy and now I have a loaner copy as well.&lt;/p&gt;
-
-
-&lt;p&gt;(This of course doesn't work that well with expensive or hard to find books. I'm going to solve that problem by not lending those books)&lt;/p&gt;
-
-
-&lt;p&gt;Part of why this has been interesting to observe is that it highlights some of my changing relationship with books. Instead of books being a thing to complete, &lt;a href="https://twitter.com/DRMacIver/status/1266093917885337600"&gt;books are part of an ongoing process of reading&lt;/a&gt;. The fact that I have read a book cover to cover doesn't necessarily take it out of that process. If nothing else, it just moves it into fodder for the &lt;a href="https://notebook.drmaciver.com/posts/2020-06-08-10:11.html"&gt;writing practice&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;&lt;a href="https://notebook.drmaciver.com/posts/2020-06-09-10:23.html"&gt;A Book is a Tool for Thinking With&lt;/a&gt;, so a book is only done when you no longer need that tool.&lt;/p&gt;
-
-
-&lt;p&gt;This might be because:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;You've acquired a strictly better tool.&lt;/li&gt;
-&lt;li&gt;You've internalised the book so well that you no longer need the tool.&lt;/li&gt;
-&lt;li&gt;You're no longer interested in having the thoughts it enables.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;In my experience this is roughly in increasing order of likelihood for books that were worth reading in the first place: You can hit the point of diminishing returns, but you rarely hit the point where you &lt;em&gt;can't&lt;/em&gt; get anything out of a book, you just get to the point where you're no longer interested in doing so.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-06-24-15:31.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-06-25-13:28.html</id>
     <title>Subsetting Life</title>
@@ -521,7 +473,7 @@ As a result, in the moment a general purpose solution is often easier than a con
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-07-03-21:03.html</id>
     <title>Death of the Reader</title>
-    <updated>2020-07-03T21:14:17+01:00</updated>
+    <updated>2020-07-03T21:15:21+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Death of the Reader&lt;/p&gt;
@@ -561,5 +513,107 @@ As a result, in the moment a general purpose solution is often easier than a con
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-07-03-21:03.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-07-05-11:29.html</id>
+    <title>Getting Test-Case Reduction Unstuck with Automaton Inference</title>
+    <updated>2020-07-05T11:29:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Getting Test-Case Reduction Unstuck with Automaton Inference&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-07-05&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;A question I get asked a lot by friends is why I don't talk about my PhD much.
+The answer is generally very simple: It's because almost nobody actually wants to know about my PhD, and it's not worth the half hour of bringing them up to speed while they politely pretend that they do.&lt;/p&gt;
+
+
+&lt;p&gt;But, on the other hand, (a small handful of) people do generally seem interested when I talk about my technical work on Twitter, and this notebook is where I get to write about whatever the hell I want, and part of &lt;a href="https://drmaciver.substack.com/p/why-am-i-not-working-on-my-phd"&gt;the plan to sort out my PhD&lt;/a&gt; is to do some more non-paper research writing.&lt;/p&gt;
+
+
+&lt;p&gt;So today's post is about my research. Sorry for everyone who is here mainly for feelings and social commentary.&lt;/p&gt;
+
+
+&lt;p&gt;Context: I work on a thing called test-case reduction. Test-case reduction is basically "just" constrained optimisation of a total order (the reduction order), over some set (the test cases), where the constraint is just a black box predicate you've been handed (the interestingness test), and you've been handed a single witness of the set (the initial test case).&lt;/p&gt;
+
+
+&lt;p&gt;For reasons that are explained in &lt;a href="https://drmaciver.github.io/papers/reduction-via-generation-preview.pdf"&gt;our paper about Hypothesis&lt;/a&gt; I'm particularly interested in the case where the test cases are all byte strings (we present it as bit strings in the paper, but same deal really) where the order is the shortlex order. i.e. \(s \preceq t\) if \(|s| &amp;lt; |t|\) or \(|s| = |t|\) and \(s \leq t\) in the lexicographic order.&lt;/p&gt;
+
+
+&lt;p&gt;There is an idea that I've had in the back of my head for a while:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Given some interestingness test \(p\) and some starting test case \(s\), the set \(\{t: p(t) \wedge t \preceq s\}\) is finite and thus a regular language.&lt;/li&gt;
+&lt;li&gt;If we had a deterministic finite automaton for that language, we could just read off the shortlex-minimal string matched by that automaton using a breadth-first search, giving us the global minimum interesting test case.&lt;/li&gt;
+&lt;li&gt;We can infer (an approximation to) that automaton using &lt;a href="https://www.sciencedirect.com/science/article/pii/0890540187900526"&gt;the L* algorithm&lt;/a&gt; (or see &lt;a href="https://www.youtube.com/watch?v=zlHck7X4F20"&gt;my PyCon UK talk on the subject&lt;/a&gt; for a less technical account).&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;This suggests a great approach to test-case reduction: We set up the L* algorithm, make sure it gets the correct result on our initial test case, read off the minimal matching string of the automaton, check if that's correct and if not pdate the automaton, and iterate that until the automaton-minimal string is also interesting.&lt;/p&gt;
+
+
+&lt;p&gt;This idea is genuinely very good except for two small problems.&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;It's prohibitively slow.&lt;/li&gt;
+&lt;li&gt;It doesn't work.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;It's prohibitively slow because the complexity of L* is weird and depends a lot on the language being learned, but in practice you're lucky if it's only \(O(n^2)\) when you use it this way. It doesn't work because although the language is regular it doesn't have a particularly nice structure a lot of the time and the algorithm isn't always able to pick up on important details as a result. For example, L* does not easily learn the constraint that two bytes can be equal but it doesn't matter what value they take beyond that.&lt;/p&gt;
+
+
+&lt;p&gt;This is all very unfortunate because it's a lovely idea.
+Fortunately, as I discovered recently, there is actually a context in which L* can potentially be a significant boon to test-case reduction after all: You can use it offline to learn new reduction passes (a reduction pass is basically just a simple test-case reducer, but effective test-case reducers tend to be assembled out of multiple reduction passes) that are &lt;em&gt;not&lt;/em&gt; prohibitively slow and correspond to established deficiencies in your existing reducer.&lt;/p&gt;
+
+
+&lt;p&gt;We can find deficiencies in a reducer by basically looking for ways it gets "stuck". This is based on an idea called &lt;a href="https://agroce.github.io/issta17.pdf"&gt;test case normalization&lt;/a&gt; which is essentially that the goal of a reducer should be that its output does not depend on the initial test case, only the interestingness test.&lt;/p&gt;
+
+
+&lt;p&gt;If you have some interestingess test that demonstrable does not normalize on an initial corpus of test cases (in my case these are generated by Hypothesis) you can learn a set of new reduction passes that normalizes that corpus. You do this by picking the two smallest examples, adding a reduction pass that turns the larger of the two into the smaller, and rerunning until all of the corpus is normalized (which takes at most one pass per corpus element).&lt;/p&gt;
+
+
+&lt;p&gt;Suppose \(s \preceq t\) are the two smallest elements of that corpus after reduction. There is a trivial reduction pass that just replaces the string \(t\) with the string \(s\) wherever it finds it. This is actually quite good, because after reduction (assuming the initial reducer is doing an OKish job of normalizing) you're much more likely to see \(t\) than chance would suggest. You can improve these odds further by removing a common prefix and suffix from each of \(s\) and \(t\).&lt;/p&gt;
+
+
+&lt;p&gt;But you can also generalise this further. Suppose we've extracted those common prefixes, say \(u\) and \(v\).
+We now use L* to learn the predicate \(f(x) = s \preceq axb \wedge |axb| \leq |t| \wedge p(axt)\). i.e. we learn a smallish language that captures just enough information to turn the central bit of \(t\) into the central bit of \(s\).&lt;/p&gt;
+
+
+&lt;p&gt;We now use this language to define a new reduction pass which finds any substrings that match this DFA and replace them with the smallest element of it. By making sure L* has learned enough about \(s\) and \(t\) to correctly predict them, this ensures that the new pass can transform \(t\) into \(s\).&lt;/p&gt;
+
+
+&lt;p&gt;At a high level what this is doing is essentially learning patterns where your existing reducer gets "stuck" and learn just enough about the linguistic structure of the test case format to work around them.&lt;/p&gt;
+
+
+&lt;p&gt;Does this work?&lt;/p&gt;
+
+
+&lt;p&gt;Well, maybe.&lt;/p&gt;
+
+
+&lt;p&gt;There are roughly two ways this can go wrong:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;The DFA may still be impractical to learn.&lt;/li&gt;
+&lt;li&gt;The learned passes may not generalise well enough to be useful, so this ends up with a very large number of passes.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;Initial experiments on Hypothesis are pretty promising as to whether the DFAs can be learned, but the Hypothesis test-case format is very forgiving. I'll be surprised if this works well enough out of the box on human-readable test-case formats and I expect it will need more tinkering. In particular when the reduced test-cases in the corpus are far apart, I think one needs some intermediate steps to learn smaller transformations first (I have some ideas for how to use &lt;a href="https://en.wikipedia.org/wiki/A*_search_algorithm"&gt;A*&lt;/a&gt; to do this. I do know algorithms that aren't just a letter and an asterisk, I promise).&lt;/p&gt;
+
+
+&lt;p&gt;The number of learned passes is potentially more of a problem, but conveniently I was &lt;a href="https://github.com/HypothesisWorks/hypothesis/pull/2478"&gt;already working&lt;/a&gt; on an approach to make it practical to run test-case reduction with a large number of mostly useless passes.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-07-05-11:29.html" rel="alternate"/>
   </entry>
 </feed>

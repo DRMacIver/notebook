@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+DRMacIver's Notebook: Getting Test-Case Reduction Unstuck with Automaton Inference
+    </title>
+
+    <meta property="og:title" content="Getting Test-Case Reduction Unstuck with Automaton Inference">
+
+    <meta property="og:url" content="https://notebook.drmaciver.com/posts/2020-07-05-11:29.html" />
+    <link rel="canonical" href="https://notebook.drmaciver.com/posts/2020-07-05-11:29.html" />
+    <script src="https://hypothes.is/embed.js" async></script>
+
+
+    <meta name="twitter:card" content="summary" />
+
+    <meta property="og:creator" content="@DRMacIver">
+
+    <link rel="stylesheet" href="/pygments.css"/>
+    <link rel="stylesheet" href="/tufte.css"/>
+    <link rel="stylesheet" href="/latex.css"/>
+    <link rel="stylesheet" href="/drmnotes.css"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
+});
+
+MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
+  console.log(message)
+});
+
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169185204-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169185204-1');
+</script>
+
+  </head>
+
+  <body>
+    <article>
+        <h1><a href="/">DRMacIver's Notebook</a></h1>
+        <p class=subtitle>Getting Test-Case Reduction Unstuck with Automaton Inference</p>
+
+        
+
+<section id="the-post">
+<p class=subtitle>Getting Test-Case Reduction Unstuck with Automaton Inference</p>
+<dl class=metadata>
+<dt>Published</dt>
+<dd class="post-date">2020-07-05</dd>
+</dl>
+
+<p>A question I get asked a lot by friends is why I don't talk about my PhD much.
+The answer is generally very simple: It's because almost nobody actually wants to know about my PhD, and it's not worth the half hour of bringing them up to speed while they politely pretend that they do.</p>
+<p>But, on the other hand, (a small handful of) people do generally seem interested when I talk about my technical work on Twitter, and this notebook is where I get to write about whatever the hell I want, and part of <a href="https://drmaciver.substack.com/p/why-am-i-not-working-on-my-phd">the plan to sort out my PhD</a> is to do some more non-paper research writing.</p>
+<p>So today's post is about my research. Sorry for everyone who is here mainly for feelings and social commentary.</p>
+<p>Context: I work on a thing called test-case reduction. Test-case reduction is basically "just" constrained optimisation of a total order (the reduction order), over some set (the test cases), where the constraint is just a black box predicate you've been handed (the interestingness test), and you've been handed a single witness of the set (the initial test case).</p>
+<p>For reasons that are explained in <a href="https://drmaciver.github.io/papers/reduction-via-generation-preview.pdf">our paper about Hypothesis</a> I'm particularly interested in the case where the test cases are all byte strings (we present it as bit strings in the paper, but same deal really) where the order is the shortlex order. i.e. \(s \preceq t\) if \(|s| &lt; |t|\) or \(|s| = |t|\) and \(s \leq t\) in the lexicographic order.</p>
+<p>There is an idea that I've had in the back of my head for a while:</p>
+<ul>
+<li>Given some interestingness test \(p\) and some starting test case \(s\), the set \(\{t: p(t) \wedge t \preceq s\}\) is finite and thus a regular language.</li>
+<li>If we had a deterministic finite automaton for that language, we could just read off the shortlex-minimal string matched by that automaton using a breadth-first search, giving us the global minimum interesting test case.</li>
+<li>We can infer (an approximation to) that automaton using <a href="https://www.sciencedirect.com/science/article/pii/0890540187900526">the L* algorithm</a> (or see <a href="https://www.youtube.com/watch?v=zlHck7X4F20">my PyCon UK talk on the subject</a> for a less technical account).</li>
+</ul>
+<p>This suggests a great approach to test-case reduction: We set up the L* algorithm, make sure it gets the correct result on our initial test case, read off the minimal matching string of the automaton, check if that's correct and if not pdate the automaton, and iterate that until the automaton-minimal string is also interesting.</p>
+<p>This idea is genuinely very good except for two small problems.</p>
+<ol>
+<li>It's prohibitively slow.</li>
+<li>It doesn't work.</li>
+</ol>
+<p>It's prohibitively slow because the complexity of L* is weird and depends a lot on the language being learned, but in practice you're lucky if it's only \(O(n^2)\) when you use it this way. It doesn't work because although the language is regular it doesn't have a particularly nice structure a lot of the time and the algorithm isn't always able to pick up on important details as a result. For example, L* does not easily learn the constraint that two bytes can be equal but it doesn't matter what value they take beyond that.</p>
+<p>This is all very unfortunate because it's a lovely idea.
+Fortunately, as I discovered recently, there is actually a context in which L* can potentially be a significant boon to test-case reduction after all: You can use it offline to learn new reduction passes (a reduction pass is basically just a simple test-case reducer, but effective test-case reducers tend to be assembled out of multiple reduction passes) that are <em>not</em> prohibitively slow and correspond to established deficiencies in your existing reducer.</p>
+<p>We can find deficiencies in a reducer by basically looking for ways it gets "stuck". This is based on an idea called <a href="https://agroce.github.io/issta17.pdf">test case normalization</a> which is essentially that the goal of a reducer should be that its output does not depend on the initial test case, only the interestingness test.</p>
+<p>If you have some interestingess test that demonstrable does not normalize on an initial corpus of test cases (in my case these are generated by Hypothesis) you can learn a set of new reduction passes that normalizes that corpus. You do this by picking the two smallest examples, adding a reduction pass that turns the larger of the two into the smaller, and rerunning until all of the corpus is normalized (which takes at most one pass per corpus element).</p>
+<p>Suppose \(s \preceq t\) are the two smallest elements of that corpus after reduction. There is a trivial reduction pass that just replaces the string \(t\) with the string \(s\) wherever it finds it. This is actually quite good, because after reduction (assuming the initial reducer is doing an OKish job of normalizing) you're much more likely to see \(t\) than chance would suggest. You can improve these odds further by removing a common prefix and suffix from each of \(s\) and \(t\).</p>
+<p>But you can also generalise this further. Suppose we've extracted those common prefixes, say \(u\) and \(v\).
+We now use L* to learn the predicate \(f(x) = s \preceq axb \wedge |axb| \leq |t| \wedge p(axt)\). i.e. we learn a smallish language that captures just enough information to turn the central bit of \(t\) into the central bit of \(s\).</p>
+<p>We now use this language to define a new reduction pass which finds any substrings that match this DFA and replace them with the smallest element of it. By making sure L* has learned enough about \(s\) and \(t\) to correctly predict them, this ensures that the new pass can transform \(t\) into \(s\).</p>
+<p>At a high level what this is doing is essentially learning patterns where your existing reducer gets "stuck" and learn just enough about the linguistic structure of the test case format to work around them.</p>
+<p>Does this work?</p>
+<p>Well, maybe.</p>
+<p>There are roughly two ways this can go wrong:</p>
+<ol>
+<li>The DFA may still be impractical to learn.</li>
+<li>The learned passes may not generalise well enough to be useful, so this ends up with a very large number of passes.</li>
+</ol>
+<p>Initial experiments on Hypothesis are pretty promising as to whether the DFAs can be learned, but the Hypothesis test-case format is very forgiving. I'll be surprised if this works well enough out of the box on human-readable test-case formats and I expect it will need more tinkering. In particular when the reduced test-cases in the corpus are far apart, I think one needs some intermediate steps to learn smaller transformations first (I have some ideas for how to use <a href="https://en.wikipedia.org/wiki/A*_search_algorithm">A*</a> to do this. I do know algorithms that aren't just a letter and an asterisk, I promise).</p>
+<p>The number of learned passes is potentially more of a problem, but conveniently I was <a href="https://github.com/HypothesisWorks/hypothesis/pull/2478">already working</a> on an approach to make it practical to run test-case reduction with a large number of mostly useless passes.</p>
+</section>
+
+    </article>
+<footer>
+Copyright David R. MacIver.
+
+CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
+</footer>
+  </body>
+</html>
