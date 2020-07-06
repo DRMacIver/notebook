@@ -93,6 +93,9 @@ This morning in the shower I came up with a better one (disclaimer: I haven't wr
 <p>Maintain a dynamic programming table \(C(i, k)\) which counts the number of accepted strings of length \(k\) starting from state \(i\) in the DFA. Also maintain a dynamic programming table \(R(i, k) = \sum\limits_{j = 0}^k C(i, j)\) (i.e. the number of strings of length at most \(k\) accepted from state \(i\)).</p>
 
 
+<p>What this table lets you do is essentially skip over the bits of the breadth first search that you know won't lead to where you're going, and count how many strings you skipped by doing so.</p>
+
+
 <p>Now, you look up \(x_n\) by first comparing values of \(R(0, k)\) to find \(k\) with \(R(0, k) &lt; n \leq R(0, k + 1)\).
 We know \(k = |x_n|\). Now, walk the DFA, using \(C(i, k)\) to determine which node to transition to (using essentially the same idea - this is easier to explain in code, but I haven't written the code yet!).</p>
 

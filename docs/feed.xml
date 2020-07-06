@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-07-06T09:52:00+01:00</updated>
+  <updated>2020-07-06T10:25:05+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -552,7 +552,7 @@ We now use L* to learn the predicate \(f(x) = s \preceq axb \wedge |axb| \leq |t
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-07-06-09:52.html</id>
     <title>Indexing a DFA in shortlex order</title>
-    <updated>2020-07-06T09:52:00+01:00</updated>
+    <updated>2020-07-06T10:25:05+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Indexing a DFA in shortlex order&lt;/p&gt;
@@ -578,6 +578,9 @@ This morning in the shower I came up with a better one (disclaimer: I haven't wr
 
 
 &lt;p&gt;Maintain a dynamic programming table \(C(i, k)\) which counts the number of accepted strings of length \(k\) starting from state \(i\) in the DFA. Also maintain a dynamic programming table \(R(i, k) = \sum\limits_{j = 0}^k C(i, j)\) (i.e. the number of strings of length at most \(k\) accepted from state \(i\)).&lt;/p&gt;
+
+
+&lt;p&gt;What this table lets you do is essentially skip over the bits of the breadth first search that you know won't lead to where you're going, and count how many strings you skipped by doing so.&lt;/p&gt;
 
 
 &lt;p&gt;Now, you look up \(x_n\) by first comparing values of \(R(0, k)\) to find \(k\) with \(R(0, k) &amp;lt; n \leq R(0, k + 1)\).
