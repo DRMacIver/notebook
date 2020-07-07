@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-07-06T10:25:05+01:00</updated>
+  <updated>2020-07-07T22:30:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,41 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-06-25-21:25.html</id>
-    <title>Trying out this thing called Hypothesis</title>
-    <updated>2020-06-27T12:29:02+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Trying out this thing called Hypothesis&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-06-25&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Hey, you know that software called Hypothesis?&lt;/p&gt;
-
-
-&lt;p&gt;No, not &lt;a href="https://hypothesis.works/"&gt;that one&lt;/a&gt;, the one for &lt;a href="https://hypothes.is/"&gt;web annotation&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, &lt;a href="https://twitter.com/nibrasibn/status/1275811352225906688"&gt;nibras was expressing an urge to comment inline on her friends' websites&lt;/a&gt; and I pointed out that this was exactly what hypothesis is for.&lt;/p&gt;
-
-
-&lt;p&gt;Then it occurred to me that it &lt;em&gt;would&lt;/em&gt; be nice to expose that sort of functionality directly on the notebook. It turns out you can embed hypothes.is directly into your site with an easy piece of javascript, so now I have. You should be able to add annotations to any of the notebook posts (it's not currently turned on for posts as they show up in the index, because I couldn't be bothered to figure out how).&lt;/p&gt;
-
-
-&lt;p&gt;You'll need an account on &lt;a href="https://hypothes.is/"&gt;hypothes.is&lt;/a&gt; to make annotations, but you should be able to see any public annotations people make. The toolbar on the right will give you some options to control what you see.&lt;/p&gt;
-
-
-&lt;p&gt;To make an annotation just select some text, click "annotate" and write whatever you like there. It should hopefully all be fairly intuitive.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-06-25-21:25.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-06-26-09:43.html</id>
     <title>Find a forking path</title>
@@ -552,7 +517,7 @@ We now use L* to learn the predicate \(f(x) = s \preceq axb \wedge |axb| \leq |t
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-07-06-09:52.html</id>
     <title>Indexing a DFA in shortlex order</title>
-    <updated>2020-07-06T10:25:05+01:00</updated>
+    <updated>2020-07-06T10:56:10+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Indexing a DFA in shortlex order&lt;/p&gt;
@@ -595,5 +560,42 @@ This can be established relatively easily: First count \(R(0, |s| - 1)\), all st
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-07-06-09:52.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-07-07-22:30.html</id>
+    <title>The Possibility and the Actuality of Change</title>
+    <updated>2020-07-07T22:30:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;The Possibility and the Actuality of Change&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-07-07&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;(A very short post, because I've been struggling to maintain the daily writing habit recently and it's useful to remind myself that this is possible)&lt;/p&gt;
+
+
+&lt;p&gt;From &lt;a href="https://amzn.to/2ZCqSNc"&gt;A Little Book on the Human Shadow&lt;/a&gt; by Robert Bly, page 77:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Wallace Stevens was not willing to change his way of life, despite all the gifts he received, and all the advice he read in his own poems.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;This is, I think, a useful reminder to anyone who wants to change their life, but it's especially a useful reminder to me and others who have a perhaps overly intellectual approach to the problem. I'm building a practice of change on a huge amount of reading and writing, which can lead to the trap of confusing the knowledge of how to change with the change itself.&lt;/p&gt;
+
+
+&lt;p&gt;Much of what I write is, if I do say so myself, very good advice to how to change and improve your life (especially if your problems look like mine). I'm not always that great at following it - I'm no Wallace Stevens (though I do not know if Bly's criticisms of him are at all fair) - I do listen to my own advice, and I do follow it, but perhaps not as consistently as I might.&lt;/p&gt;
+
+
+&lt;p&gt;Knowing how and what to change is important - vital even - but change has to be grounded in a willingness to change, and to then do the work of changing.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-07-07-22:30.html" rel="alternate"/>
   </entry>
 </feed>
