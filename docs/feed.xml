@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-07-08T14:56:00+01:00</updated>
+  <updated>2020-07-08T16:41:55+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -417,7 +417,7 @@ Fortunately, as I discovered recently, there is actually a context in which L* c
 
 
 &lt;p&gt;But you can also generalise this further. Suppose we've extracted those common prefixes, say \(u\) and \(v\).
-We now use L* to learn the predicate \(f(x) = s \preceq axb \wedge |axb| \leq |t| \wedge p(axt)\). i.e. we learn a smallish language that captures just enough information to turn the central bit of \(t\) into the central bit of \(s\).&lt;/p&gt;
+We now use L* to learn the predicate \(f(x) = |uxv| \leq |t| \wedge p(uxv)\), making sure that it learns \(s\) correctly. i.e. we learn a smallish language that captures just enough information to turn the central bit of \(t\) into the central bit of \(s\).&lt;/p&gt;
 
 
 &lt;p&gt;We now use this language to define a new reduction pass which finds any substrings that match this DFA and replace them with the smallest element of it. By making sure L* has learned enough about \(s\) and \(t\) to correctly predict them, this ensures that the new pass can transform \(t\) into \(s\).&lt;/p&gt;
@@ -536,7 +536,7 @@ This can be established relatively easily: First count \(R(0, |s| - 1)\), all st
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-07-08-14:56.html</id>
     <title>Precarity and Conformity</title>
-    <updated>2020-07-08T14:56:00+01:00</updated>
+    <updated>2020-07-08T16:41:55+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Precarity and Conformity&lt;/p&gt;

@@ -269,7 +269,7 @@ Fortunately, as I discovered recently, there is actually a context in which L* c
 
 
 <p>But you can also generalise this further. Suppose we've extracted those common prefixes, say \(u\) and \(v\).
-We now use L* to learn the predicate \(f(x) = s \preceq axb \wedge |axb| \leq |t| \wedge p(axt)\). i.e. we learn a smallish language that captures just enough information to turn the central bit of \(t\) into the central bit of \(s\).</p>
+We now use L* to learn the predicate \(f(x) = |uxv| \leq |t| \wedge p(uxv)\), making sure that it learns \(s\) correctly. i.e. we learn a smallish language that captures just enough information to turn the central bit of \(t\) into the central bit of \(s\).</p>
 
 
 <p>We now use this language to define a new reduction pass which finds any substrings that match this DFA and replace them with the smallest element of it. By making sure L* has learned enough about \(s\) and \(t\) to correctly predict them, this ensures that the new pass can transform \(t\) into \(s\).</p>
