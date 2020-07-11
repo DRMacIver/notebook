@@ -65,6 +65,110 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
         
 
 <section>
+<h2><a href="/posts/2020-07-11-10:49.html">2020-07-11</a></h2>
+
+
+<p class="subtitle">Automatic Boltzmann Sampling for Context Free Grammars</p>
+
+
+<dl class="metadata">
+<dt>Published</dt>
+<dd class="post-date">2020-07-11</dd>
+</dl>
+
+
+<p>A Boltzmann sampler of parameter \(x\) for some class of combinatorial objects (e.g. strings in some language) is a random sampler that picks an object of size \(n\) with probability proportional to \(x^n\).</p>
+
+
+<p><a href="https://www.drmaciver.com/2017/03/fully-automated-luxury-boltzmann-sampling-for-regular-languages/">Ages ago</a> I figured out how to do Boltzmann Sampling for arbitrary regular languages, by computing the deterministic finite automaton for the language and doing some linear algebra.</p>
+
+
+<p>Its major limitation was basically that it required computing the whole deterministic finite automaton, which may be exponentially large. Implicitly this also meant that it doesn't work on anything <em>other</em> than regular languages, because you have to have finitely many states.</p>
+
+
+<p>Anyway, shower thought for this morning is that I can lift both these restrictions and automatically derive a Boltzmann sampler for any context free language, as long as \(|x| &lt; \frac{1}{|A|}\) (where \(x\) is the Boltzmann parameter and \(A\) is the alphabet of the language). This condition isn't too onerous and is necessary to guarantee that a Boltzmann sampler exists for any language over that alphabet, though some languages may have Boltzmann samplers with larger parameter values.</p>
+
+
+<p>The technique is actually very simple: Much simpler than the previous one in some ways, although partly because the complexity lives in black boxes.</p>
+
+
+<p>It works by breaking it down into two parts:</p>
+
+
+<ol>
+<li>Pick the size of the target string according to the right distribution.</li>
+<li>Sample uniformly among strings of that size.</li>
+</ol>
+
+
+<p>So all we need to do is figure out how to do these things.</p>
+
+
+<p>In order to do the first, let \(c(n)\) be the number of strings in the language of length \(n\).
+Necessarily \(c(n) \leq |A|^n\) because there are at most \(|A|^n\) strings of length \(n\), let alone in the language.</p>
+
+
+<p>The Boltzmann sampler distribution is that we pick a string of length \(n\) with probability proportional to \(c(n) x^n\).</p>
+
+
+<p>We can thus pick the length as follows: Pick a real number \(z\) uniformly at random in the region \([0, B(x)]\), where \(B(x) = \sum c(n) x^n\) and choose the first \(n\) such that \(\sum\limits_{k=0}^n c(k) x^k \geq z\).</p>
+
+
+<p>Unfortunately we don't know this infinite sum. You can calculate it relatively easy for some classes of language, but if the grammar for your language is ambiguous that gets harder.</p>
+
+
+<p>However! We don't actually need to do that at all, because the restriction on the parameter choice allows us to create increasingly good upper bounds on this sum as follows. Because we know that \(c(n) \leq |A|^n\) we know that \(\sum\limits_{k = n}^\infty c(k) x^k \leq \frac{(|A|x)^n}{1 - |A| x}\). Thus we can define sequences \(L_n = \sum\limits_{k \leq n} c(k) x^k \) \(U_n = \frac{(|A| x)^{n + 1}}{1 - |A|x} + L_n\). These have the property that \(L_n \leq B(x) \leq U_n\), the \(L_n\) are monotonically decreasing, the \(U_n\) are monotonically decreasing, and they both converge to \(B(x)\).</p>
+
+
+<p>We can now sample the size as follows:</p>
+
+
+<ol>
+<li>Maintain a value \(m\) which we have evaluated \(L_m, U_m\) up to.</li>
+<li>Pick a real number \(z\) uniformly in \([0, U_m]\).</li>
+<li>If \(z \leq L_m\) then as before find and return the first \(n\) such that \(L_n \leq z\). Necessarily \(n \leq m\).</li>
+<li>Otherwise, find \(m' &gt; m\) such that either \(z \leq L_{m'}\) or \(U_{m'} &lt; z\).<ol>
+<li>Set \(m = m'\).</li>
+<li>If \(z \leq m'\) then pick \(n\) as in (3) and stop.</li>
+<li>Go back to (2), drawing a new value of \(z\) based on our new \(m\).</li>
+</ol>
+</li>
+</ol>
+
+
+<p>(This is a relatively well known technique for values of "relatively well known" that mean "if you work in a very niche field you've definitely heard about it" but I think I independently reinvented it a while back because I don't work in that very niche field so hadn't heard about it)</p>
+
+
+<p>So that's how we pick the size. Now we are left with two problems:</p>
+
+
+<ol>
+<li>How do we calculate \(c(n)\)?</li>
+<li>How do we pick uniformly among values of size \(n\)?</li>
+</ol>
+
+
+<p>The answer to both is that we use the things I've been writing about recently!</p>
+
+
+<p>First, note that we can turn any context-free grammar into a deterministic <em>infinite</em> automaton by using language derivatives, as per the <a href="http://matt.might.net/articles/parsing-with-derivatives/">Parsing with Derivatives</a> approach: States are labelled by a derivative of the initial grammar, and are created lazily on demand as you traverse the automaton.</p>
+
+
+<p>You can now from this automaton use the same techniques I described in <a href="https://notebook.drmaciver.com/posts/2020-07-06-09:52.html">Indexing a DFA in shortlex order</a>, which work equally well on an infinite automaton (they only ever require looking a finite depth away from a given state).
+This means we can easily calculate \(c(n)\) using dynamic programming as before, and we can sample uniformly from the strings of length \(c(n)\) using the same technique we used to index: Pick a random integer \(i\) in the range \([0, c(n) - 1]\) and then walk the DFA the i'th string of length \(n\) in lexicographic order.</p>
+
+
+<p>One potential issue with the conversion to a DFA that this neatly avoids is that you can run into cases with context free languages where it is undecidable if the grammar contains any strings. Fortunately, for random sampling this doesn't matter! Because long strings are increasingly unlikely, there is (probabilistically speaking) no observable difference between a state that has no strings starting from it and a state that only has ridiculously long strings.</p>
+
+
+<p>How practical is this? I don't know exactly, but my suspicion is that for a lot of simple grammars it will work very well. I may attempt to put together an implementation soon.</p>
+
+
+<p>PS. It's likely that the parameter restriction can be lifted by making more precise estimates of the tail sums using the automaton, but I haven't quite figured out how yet. For my purposes it's generally a relatively mild restriction so I'm not that worried about it.</p>
+
+
+</section>
+<section>
 <h2><a href="/posts/2020-07-10-16:52.html">2020-07-10</a></h2>
 
 
@@ -253,110 +357,12 @@ This can be established relatively easily: First count \(R(0, |s| - 1)\), all st
 
 
 </section>
-<section>
-<h2><a href="/posts/2020-07-05-11:29.html">2020-07-05</a></h2>
-
-
-<p class="subtitle">Getting Test-Case Reduction Unstuck with Automaton Inference</p>
-
-
-<dl class="metadata">
-<dt>Published</dt>
-<dd class="post-date">2020-07-05</dd>
-</dl>
-
-
-<p>A question I get asked a lot by friends is why I don't talk about my PhD much.
-The answer is generally very simple: It's because almost nobody actually wants to know about my PhD, and it's not worth the half hour of bringing them up to speed while they politely pretend that they do.</p>
-
-
-<p>But, on the other hand, (a small handful of) people do generally seem interested when I talk about my technical work on Twitter, and this notebook is where I get to write about whatever the hell I want, and part of <a href="https://drmaciver.substack.com/p/why-am-i-not-working-on-my-phd">the plan to sort out my PhD</a> is to do some more non-paper research writing.</p>
-
-
-<p>So today's post is about my research. Sorry for everyone who is here mainly for feelings and social commentary.</p>
-
-
-<p>Context: I work on a thing called test-case reduction. Test-case reduction is basically "just" constrained optimisation of a total order (the reduction order), over some set (the test cases), where the constraint is just a black box predicate you've been handed (the interestingness test), and you've been handed a single witness of the set (the initial test case).</p>
-
-
-<p>For reasons that are explained in <a href="https://drmaciver.github.io/papers/reduction-via-generation-preview.pdf">our paper about Hypothesis</a> I'm particularly interested in the case where the test cases are all byte strings (we present it as bit strings in the paper, but same deal really) where the order is the shortlex order. i.e. \(s \preceq t\) if \(|s| &lt; |t|\) or \(|s| = |t|\) and \(s \leq t\) in the lexicographic order.</p>
-
-
-<p>There is an idea that I've had in the back of my head for a while:</p>
-
-
-<ul>
-<li>Given some interestingness test \(p\) and some starting test case \(s\), the set \(\{t: p(t) \wedge t \preceq s\}\) is finite and thus a regular language.</li>
-<li>If we had a deterministic finite automaton for that language, we could just read off the shortlex-minimal string matched by that automaton using a breadth-first search, giving us the global minimum interesting test case.</li>
-<li>We can infer (an approximation to) that automaton using <a href="https://www.sciencedirect.com/science/article/pii/0890540187900526">the L* algorithm</a> (or see <a href="https://www.youtube.com/watch?v=zlHck7X4F20">my PyCon UK talk on the subject</a> for a less technical account).</li>
-</ul>
-
-
-<p>This suggests a great approach to test-case reduction: We set up the L* algorithm, make sure it gets the correct result on our initial test case, read off the minimal matching string of the automaton, check if that's correct and if not pdate the automaton, and iterate that until the automaton-minimal string is also interesting.</p>
-
-
-<p>This idea is genuinely very good except for two small problems.</p>
-
-
-<ol>
-<li>It's prohibitively slow.</li>
-<li>It doesn't work.</li>
-</ol>
-
-
-<p>It's prohibitively slow because the complexity of L* is weird and depends a lot on the language being learned, but in practice you're lucky if it's only \(O(n^2)\) when you use it this way. It doesn't work because although the language is regular it doesn't have a particularly nice structure a lot of the time and the algorithm isn't always able to pick up on important details as a result. For example, L* does not easily learn the constraint that two bytes can be equal but it doesn't matter what value they take beyond that.</p>
-
-
-<p>This is all very unfortunate because it's a lovely idea.
-Fortunately, as I discovered recently, there is actually a context in which L* can potentially be a significant boon to test-case reduction after all: You can use it offline to learn new reduction passes (a reduction pass is basically just a simple test-case reducer, but effective test-case reducers tend to be assembled out of multiple reduction passes) that are <em>not</em> prohibitively slow and correspond to established deficiencies in your existing reducer.</p>
-
-
-<p>We can find deficiencies in a reducer by basically looking for ways it gets "stuck". This is based on an idea called <a href="https://agroce.github.io/issta17.pdf">test case normalization</a> which is essentially that the goal of a reducer should be that its output does not depend on the initial test case, only the interestingness test.</p>
-
-
-<p>If you have some interestingess test that demonstrable does not normalize on an initial corpus of test cases (in my case these are generated by Hypothesis) you can learn a set of new reduction passes that normalizes that corpus. You do this by picking the two smallest examples, adding a reduction pass that turns the larger of the two into the smaller, and rerunning until all of the corpus is normalized (which takes at most one pass per corpus element).</p>
-
-
-<p>Suppose \(s \preceq t\) are the two smallest elements of that corpus after reduction. There is a trivial reduction pass that just replaces the string \(t\) with the string \(s\) wherever it finds it. This is actually quite good, because after reduction (assuming the initial reducer is doing an OKish job of normalizing) you're much more likely to see \(t\) than chance would suggest. You can improve these odds further by removing a common prefix and suffix from each of \(s\) and \(t\).</p>
-
-
-<p>But you can also generalise this further. Suppose we've extracted those common prefixes, say \(u\) and \(v\).
-We now use L* to learn the predicate \(f(x) = |uxv| \leq |t| \wedge p(uxv)\), making sure that it learns \(s\) correctly. i.e. we learn a smallish language that captures just enough information to turn the central bit of \(t\) into the central bit of \(s\).</p>
-
-
-<p>We now use this language to define a new reduction pass which finds any substrings that match this DFA and replace them with the smallest element of it. By making sure L* has learned enough about \(s\) and \(t\) to correctly predict them, this ensures that the new pass can transform \(t\) into \(s\).</p>
-
-
-<p>At a high level what this is doing is essentially learning patterns where your existing reducer gets "stuck" and learn just enough about the linguistic structure of the test case format to work around them.</p>
-
-
-<p>Does this work?</p>
-
-
-<p>Well, maybe.</p>
-
-
-<p>There are roughly two ways this can go wrong:</p>
-
-
-<ol>
-<li>The DFA may still be impractical to learn.</li>
-<li>The learned passes may not generalise well enough to be useful, so this ends up with a very large number of passes.</li>
-</ol>
-
-
-<p>Initial experiments on Hypothesis are pretty promising as to whether the DFAs can be learned, but the Hypothesis test-case format is very forgiving. I'll be surprised if this works well enough out of the box on human-readable test-case formats and I expect it will need more tinkering. In particular when the reduced test-cases in the corpus are far apart, I think one needs some intermediate steps to learn smaller transformations first (I have some ideas for how to use <a href="https://en.wikipedia.org/wiki/A*_search_algorithm">A*</a> to do this. I do know algorithms that aren't just a letter and an asterisk, I promise).</p>
-
-
-<p>The number of learned passes is potentially more of a problem, but conveniently I was <a href="https://github.com/HypothesisWorks/hypothesis/pull/2478">already working</a> on an approach to make it practical to run test-case reduction with a large number of mostly useless passes.</p>
-
-
-</section>
 
 
 <h2>2020-07</h2>
 
 <ul class=postarchive>
+<li><a href="/posts/2020-07-05-11:29.html">Getting Test-Case Reduction Unstuck with Automaton Inference</a></li>
 <li><a href="/posts/2020-07-03-21:03.html">Death of the Reader</a></li>
 <li><a href="/posts/2020-07-02-10:06.html">From Maintaining to Making</a></li>
 <li><a href="/posts/2020-07-01-09:38.html">Cultivating the Skills of Context</a></li>

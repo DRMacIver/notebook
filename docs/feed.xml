@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-07-10T16:52:00+01:00</updated>
+  <updated>2020-07-11T10:49:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,88 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-06-28-15:58.html</id>
-    <title>I'm not actually that curious</title>
-    <updated>2020-06-28T17:46:46+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;I'm not actually that curious&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-06-28&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Small personal note, but I've noticed a number of people have a particular misconception of me,
-and thought I'd clear it up.&lt;/p&gt;
-
-
-&lt;p&gt;You know how I read insatiably, driven by pure curiosity, and know a huge amount of different things just because I wanted to know them?&lt;/p&gt;
-
-
-&lt;p&gt;Yeah, I don't do that.&lt;/p&gt;
-
-
-&lt;p&gt;At least, I don't do that often. It's a thing I do &lt;em&gt;sometimes&lt;/em&gt;, but an idle scan of my bookshelves suggests that no more than about one book in twenty is something I've read out of pure interest. Generally speaking if I'm reading something nonfiction it's because I expect it will actually improve my life in some material way.&lt;/p&gt;
-
-
-&lt;p&gt;I'd like this to not be the case: It would be wonderful if I could just read things because I thought they were interesting, but I actually find it very difficult to be interested in knowledge that I can't use in some way to solve practical problems. I suspect that will improve as the ongoing project to improve my emotional landscape progresses, but I'm very much not there yet.&lt;/p&gt;
-
-
-&lt;p&gt;Don't get me wrong, a lot of the books I read are super interesting in their own right, and I do appreciate that aspect of them. I also don't do well at reading boring books. But I don't &lt;em&gt;select&lt;/em&gt; books because they're interesting, I select books because they'll help me with something. The emotion that most commonly drives me to read a book isn't curiosity, it's distress: Something is bad, and my stress response is to understand more about the subject matter so I can make it better, so I read a book about it.&lt;/p&gt;
-
-
-&lt;p&gt;It's not &lt;em&gt;always&lt;/em&gt; distress. Sometimes it's because I'm annoyed that something doesn't make sense. Sometimes it's a simple desire for improvement, or some really concrete problem to solve. Sometimes it's just a general background faith that even if I don't have a specific problem I'm trying to solve then the book will be good for &lt;em&gt;something&lt;/em&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;This might seem odd given my reading material ("David, what are you reading?" "I'm reading a Christian theology book about how giving yourself over to Christ will solve capitalism." "Of course you are.") but what you have to bear in mind is that I am a deeply unreasonable person with a very idiosyncratic approach to knowledge.&lt;/p&gt;
-
-
-&lt;p&gt;If you read my &lt;a href="https://notebook.drmaciver.com/posts/2020-05-09-11:26.html"&gt;notes towards a manifesto&lt;/a&gt;, a lot of what I'm working on is "general humaning skills". What field do you need to read in in order to figure out how to do humaning better? Basically all of them I'm afraid.&lt;/p&gt;
-
-
-&lt;p&gt;When I say &lt;a href="https://notebook.drmaciver.com/posts/2020-02-24-10:37.html"&gt;All knowledge is connected&lt;/a&gt; I think most people nod sagely and agree that this is true in principle, and you do get people reading out their field a bit (e.g. Software developers reading architecture books is a thing, though mostly because books about software development are mostly terrible, and every field has a subculture of people telling you that you need to read &lt;a href="https://twitter.com/DRMacIver/status/1270346474027712513"&gt;Zen and the Art of Motorcycle Maintenance&lt;/a&gt; to truly understand it). But I don't think, by and large, people fully embrace it as a praxis, mostly because it's really hard and time consuming.&lt;/p&gt;
-
-
-&lt;p&gt;I have three advantages here:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;I take the idea seriously and am willing to put in the work.&lt;/li&gt;
-&lt;li&gt;I don't find it that hard. I'm good at reading books, I'm good at connecting up knowledge, and I generally prefer hitting practical problems with huge theory hammers.&lt;/li&gt;
-&lt;li&gt;I have a relatively large amount of time to devote to the problem, especially &lt;a href="https://drmaciver.substack.com/p/why-am-i-not-working-on-my-phd"&gt;on days when I'm failing to work on my PhD&lt;/a&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;The result is that yes I just really &lt;em&gt;am&lt;/em&gt; the sort of person who goes "Community drama seems like a really hard problem. Why don't I read &lt;a href="https://notebook.drmaciver.com/posts/2019-05-09-15:33.html"&gt;a text on Talmudic law&lt;/a&gt; so I can understand it better?" and have a project to learn phenomenology so I can improve my own subjective emotional experience.&lt;/p&gt;
-
-
-&lt;p&gt;Does this work?&lt;/p&gt;
-
-
-&lt;p&gt;Honestly, yes. I cannot say that I recommend it to everyone, or even to most people, but I've found it extraordinarily helpful. It's not sufficient in its own right, but I've been taking this seriously for a few years and really kicked it into high gear this year with the addition of the writing practice to properly integrate this knowledge, and I've seen huge improvements in my life enabled by it.&lt;/p&gt;
-
-
-&lt;p&gt;I expect I'll keep reading like this for at least another couple of years - with any luck I'll gradually include a higher fraction of pure interest reading as time goes on, but I doubt I'm at any risk of solving all my problems any time soon.&lt;/p&gt;
-
-
-&lt;p&gt;I can't read everything relevant to my problems of course. I'm not trying to. What I'm trying to do is cultivate a &lt;a href="https://notebook.drmaciver.com/posts/2020-04-13-11:35.html"&gt;domus&lt;/a&gt; that gives me a sufficient wealth of &lt;a href="https://notebook.drmaciver.com/posts/2020-06-27-11:07.html"&gt;ideas to get me unstuck&lt;/a&gt; on making progress with the problems I have.&lt;/p&gt;
-
-
-&lt;p&gt;(A domus is a concept I got from reading about the early history of civilisation and the role of grain cultivation - James C. Scott is an author I tend to just read because I assume I'll get something useful out of it even if I don't know what going in. Haven't been wrong yet)&lt;/p&gt;
-
-
-&lt;p&gt;When I encounter a limitation, I read new material to overcome it. Because the category of problems I am trying to solve is, in the limit, &lt;em&gt;all of human endeavour&lt;/em&gt;, there's no shortage of limitations. The result is a constant switching around of what I'm working on based on what I can currently make progress on, and reading whatever seems most currently accessible and relevant to the bits I'm actively stuck on. This tends to cause me to bounce around a lot between different fields, because once I've read a book (or a couple books sometimes) about a subject I need a while to let it bed in and try applying it and integrating it before I'm ready to read more in that area.&lt;/p&gt;
-
-
-&lt;p&gt;From the outside this process &lt;em&gt;does&lt;/em&gt; looks a lot like curiosity, but as a David expert I'm here to tell you that this isn't cute, and Davids only behave this way when they're under stress.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-06-28-15:58.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-06-30-17:03.html</id>
     <title>Free and Open Source Social Technology</title>
@@ -539,7 +457,7 @@ This can be established relatively easily: First count \(R(0, |s| - 1)\), all st
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-07-10-16:52.html</id>
     <title>Learning to use the system</title>
-    <updated>2020-07-10T16:52:00+01:00</updated>
+    <updated>2020-07-10T17:28:06+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Learning to use the system&lt;/p&gt;
@@ -590,5 +508,112 @@ Having an adequate mental model of the system seems to be a key part of that, be
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-07-10-16:52.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-07-11-10:49.html</id>
+    <title>Automatic Boltzmann Sampling for Context Free Grammars</title>
+    <updated>2020-07-11T10:49:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Automatic Boltzmann Sampling for Context Free Grammars&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-07-11&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;A Boltzmann sampler of parameter \(x\) for some class of combinatorial objects (e.g. strings in some language) is a random sampler that picks an object of size \(n\) with probability proportional to \(x^n\).&lt;/p&gt;
+
+
+&lt;p&gt;&lt;a href="https://www.drmaciver.com/2017/03/fully-automated-luxury-boltzmann-sampling-for-regular-languages/"&gt;Ages ago&lt;/a&gt; I figured out how to do Boltzmann Sampling for arbitrary regular languages, by computing the deterministic finite automaton for the language and doing some linear algebra.&lt;/p&gt;
+
+
+&lt;p&gt;Its major limitation was basically that it required computing the whole deterministic finite automaton, which may be exponentially large. Implicitly this also meant that it doesn't work on anything &lt;em&gt;other&lt;/em&gt; than regular languages, because you have to have finitely many states.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, shower thought for this morning is that I can lift both these restrictions and automatically derive a Boltzmann sampler for any context free language, as long as \(|x| &amp;lt; \frac{1}{|A|}\) (where \(x\) is the Boltzmann parameter and \(A\) is the alphabet of the language). This condition isn't too onerous and is necessary to guarantee that a Boltzmann sampler exists for any language over that alphabet, though some languages may have Boltzmann samplers with larger parameter values.&lt;/p&gt;
+
+
+&lt;p&gt;The technique is actually very simple: Much simpler than the previous one in some ways, although partly because the complexity lives in black boxes.&lt;/p&gt;
+
+
+&lt;p&gt;It works by breaking it down into two parts:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Pick the size of the target string according to the right distribution.&lt;/li&gt;
+&lt;li&gt;Sample uniformly among strings of that size.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;So all we need to do is figure out how to do these things.&lt;/p&gt;
+
+
+&lt;p&gt;In order to do the first, let \(c(n)\) be the number of strings in the language of length \(n\).
+Necessarily \(c(n) \leq |A|^n\) because there are at most \(|A|^n\) strings of length \(n\), let alone in the language.&lt;/p&gt;
+
+
+&lt;p&gt;The Boltzmann sampler distribution is that we pick a string of length \(n\) with probability proportional to \(c(n) x^n\).&lt;/p&gt;
+
+
+&lt;p&gt;We can thus pick the length as follows: Pick a real number \(z\) uniformly at random in the region \([0, B(x)]\), where \(B(x) = \sum c(n) x^n\) and choose the first \(n\) such that \(\sum\limits_{k=0}^n c(k) x^k \geq z\).&lt;/p&gt;
+
+
+&lt;p&gt;Unfortunately we don't know this infinite sum. You can calculate it relatively easy for some classes of language, but if the grammar for your language is ambiguous that gets harder.&lt;/p&gt;
+
+
+&lt;p&gt;However! We don't actually need to do that at all, because the restriction on the parameter choice allows us to create increasingly good upper bounds on this sum as follows. Because we know that \(c(n) \leq |A|^n\) we know that \(\sum\limits_{k = n}^\infty c(k) x^k \leq \frac{(|A|x)^n}{1 - |A| x}\). Thus we can define sequences \(L_n = \sum\limits_{k \leq n} c(k) x^k \) \(U_n = \frac{(|A| x)^{n + 1}}{1 - |A|x} + L_n\). These have the property that \(L_n \leq B(x) \leq U_n\), the \(L_n\) are monotonically decreasing, the \(U_n\) are monotonically decreasing, and they both converge to \(B(x)\).&lt;/p&gt;
+
+
+&lt;p&gt;We can now sample the size as follows:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Maintain a value \(m\) which we have evaluated \(L_m, U_m\) up to.&lt;/li&gt;
+&lt;li&gt;Pick a real number \(z\) uniformly in \([0, U_m]\).&lt;/li&gt;
+&lt;li&gt;If \(z \leq L_m\) then as before find and return the first \(n\) such that \(L_n \leq z\). Necessarily \(n \leq m\).&lt;/li&gt;
+&lt;li&gt;Otherwise, find \(m' &amp;gt; m\) such that either \(z \leq L_{m'}\) or \(U_{m'} &amp;lt; z\).&lt;ol&gt;
+&lt;li&gt;Set \(m = m'\).&lt;/li&gt;
+&lt;li&gt;If \(z \leq m'\) then pick \(n\) as in (3) and stop.&lt;/li&gt;
+&lt;li&gt;Go back to (2), drawing a new value of \(z\) based on our new \(m\).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;(This is a relatively well known technique for values of "relatively well known" that mean "if you work in a very niche field you've definitely heard about it" but I think I independently reinvented it a while back because I don't work in that very niche field so hadn't heard about it)&lt;/p&gt;
+
+
+&lt;p&gt;So that's how we pick the size. Now we are left with two problems:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;How do we calculate \(c(n)\)?&lt;/li&gt;
+&lt;li&gt;How do we pick uniformly among values of size \(n\)?&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;The answer to both is that we use the things I've been writing about recently!&lt;/p&gt;
+
+
+&lt;p&gt;First, note that we can turn any context-free grammar into a deterministic &lt;em&gt;infinite&lt;/em&gt; automaton by using language derivatives, as per the &lt;a href="http://matt.might.net/articles/parsing-with-derivatives/"&gt;Parsing with Derivatives&lt;/a&gt; approach: States are labelled by a derivative of the initial grammar, and are created lazily on demand as you traverse the automaton.&lt;/p&gt;
+
+
+&lt;p&gt;You can now from this automaton use the same techniques I described in &lt;a href="https://notebook.drmaciver.com/posts/2020-07-06-09:52.html"&gt;Indexing a DFA in shortlex order&lt;/a&gt;, which work equally well on an infinite automaton (they only ever require looking a finite depth away from a given state).
+This means we can easily calculate \(c(n)\) using dynamic programming as before, and we can sample uniformly from the strings of length \(c(n)\) using the same technique we used to index: Pick a random integer \(i\) in the range \([0, c(n) - 1]\) and then walk the DFA the i'th string of length \(n\) in lexicographic order.&lt;/p&gt;
+
+
+&lt;p&gt;One potential issue with the conversion to a DFA that this neatly avoids is that you can run into cases with context free languages where it is undecidable if the grammar contains any strings. Fortunately, for random sampling this doesn't matter! Because long strings are increasingly unlikely, there is (probabilistically speaking) no observable difference between a state that has no strings starting from it and a state that only has ridiculously long strings.&lt;/p&gt;
+
+
+&lt;p&gt;How practical is this? I don't know exactly, but my suspicion is that for a lot of simple grammars it will work very well. I may attempt to put together an implementation soon.&lt;/p&gt;
+
+
+&lt;p&gt;PS. It's likely that the parameter restriction can be lifted by making more precise estimates of the tail sums using the automaton, but I haven't quite figured out how yet. For my purposes it's generally a relatively mild restriction so I'm not that worried about it.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-07-11-10:49.html" rel="alternate"/>
   </entry>
 </feed>
