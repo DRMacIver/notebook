@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-07-16T09:22:00+01:00</updated>
+  <updated>2020-07-17T10:10:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,50 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-07-03-21:03.html</id>
-    <title>Death of the Reader</title>
-    <updated>2020-07-03T21:15:21+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Death of the Reader&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-07-03&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;From &lt;a href="https://amzn.to/3ekINM9"&gt;Clear and simple as the truth&lt;/a&gt; by Thomas and Turner, page 138:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Word for word, Gallanda's version is the worst written, the most fraudulent and the weakest, but it was the most widely read. [...] Its orientalism, which we now find tame, dazzled the sort of person who inhaled snuff and plotted tragedies in five acts. [...] We, mere anachronistic readers of the twentieth century, perceive in these volumes the cloyingly sweet taste of the eighteenth century and not the evanescent oriental aroma that two hundred years ago was their innovation and their glory. No one is to blame for this missed encounter, least of all Galland.&lt;/p&gt;
-&lt;p&gt;Jorge Luis Borges, "Los traductores de las 1001 noches" [The translators of the 1001 nights]&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;I wrote before about the difficulty of &lt;a href="https://notebook.drmaciver.com/posts/2020-06-20-15:10.html"&gt;understanding historical fact from historical records&lt;/a&gt;. This, I think, highlights another problem for understanding history: As modern readers, it is extremely difficult for us to understand how a text would have been read at the time.&lt;/p&gt;
-
-
-&lt;p&gt;I've encountered this problem with reading historical mathematics. It is very hard to read historical mathematics, because one tends to read them through the lens of modern mathematics. For example, reading texts from prior to the invention of modern mathematical notation, it's very easy to think of it in terms of its modern representation.&lt;/p&gt;
-
-
-&lt;p&gt;The thing is, that modern representation makes certain things very obvious that were not at all obvious to historical mathematicians.&lt;/p&gt;
-
-
-&lt;p&gt;In general, it is very hard to read a text without looking at it through the lens of culture that we have built since that text was written. That culture gives us ways of looking, and thinking, and feeling, about the contents of the text that make it impossible for us to read it as it would have been read at the time.&lt;/p&gt;
-
-
-&lt;p&gt;Sometimes that culture is even informed by the text. For example, I found reading 1984 very tedious, because I found its contents obvious and predictable, but a lot of why they are obvious and predictable is that everybody has read 1984.&lt;/p&gt;
-
-
-&lt;p&gt;I am reminded of people who read Lord of the Rings and find it laughable because all of the characters in it are fantasy cliches.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-07-03-21:03.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-07-05-11:29.html</id>
     <title>Getting Test-Case Reduction Unstuck with Automaton Inference</title>
@@ -604,7 +560,7 @@ As a result:&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-07-16-09:22.html</id>
     <title>Habit Overload</title>
-    <updated>2020-07-16T09:22:00+01:00</updated>
+    <updated>2020-07-16T10:14:56+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Habit Overload&lt;/p&gt;
@@ -653,5 +609,44 @@ so I'm attempting to take stock of this and try to figure out what to do about i
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-07-16-09:22.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-07-17-10:10.html</id>
+    <title>Questions to Ask When Bored</title>
+    <updated>2020-07-17T10:10:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Questions to Ask When Bored&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-07-17&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I was thinking about boredom yesterday and &lt;a href="https://twitter.com/DRMacIver/status/1283657884392460290"&gt;asked about it on Twitter&lt;/a&gt; and had a few conversations about it. This caused me to realise that there are really a lot of different things we're lumping under the heading of boredom, and it might be useful to distinguish them more carefully.&lt;/p&gt;
+
+
+&lt;p&gt;Some of the things we might label as boredom include depression, listlessness, restlessness, fatigue... but rather than trying to put labels on all the different states of being bored I thought it might be useful to narrow it down instead to concrete questions you can ask about the felt sense of the boredom:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Am I bored of a specific thing that I have to do? (Being in a meeting, working on something tedious, etc)&lt;/li&gt;
+&lt;li&gt;Do I not have anything interesting to do? (e.g. because all of your normal hobbies are inaccessible to you right now)&lt;/li&gt;
+&lt;li&gt;Am I unable to find &lt;em&gt;anything&lt;/em&gt; interesting right now? (You're probably depressed)&lt;/li&gt;
+&lt;li&gt;Do the things I am trying to do seem in principle interesting but I'm not in the mood for them? (You might have an unment need and anything that doesn't meet that need)&lt;/li&gt;
+&lt;li&gt;Am I trying to do things that I don't have the energy for? (You're tired, pick something easier)&lt;/li&gt;
+&lt;li&gt;Are there things that I want to do but also want not to do? (e.g. they've got a &lt;a href="https://notebook.drmaciver.com/posts/2020-05-06-09:51.html"&gt;fnord&lt;/a&gt; or an ugh field associated with them)&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;These questions are all useful debugging tools for helping understand what's actually going on, and treating it as a practical problem to solve. Some of them may be hard to solve in the moment (e.g. if you're exhausted and have no good low energy hobbies it's probably not the right time to try to think of one), but the information they provide in the moment can be used to solve the problem another time.&lt;/p&gt;
+
+
+&lt;p&gt;In general I find that better introspective understanding also tends to improve my emotional state. Boredom feels bad in part because it signals a poorly understood problem, and getting to the root of what that problem is lessens that feeling.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-07-17-10:10.html" rel="alternate"/>
   </entry>
 </feed>
