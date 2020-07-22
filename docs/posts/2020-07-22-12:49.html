@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+DRMacIver's Notebook: An Annoyingly Hard Algorithm to Beat
+    </title>
+
+    <meta property="og:title" content="An Annoyingly Hard Algorithm to Beat">
+
+    <meta property="og:url" content="https://notebook.drmaciver.com/posts/2020-07-22-12:49.html" />
+    <link rel="canonical" href="https://notebook.drmaciver.com/posts/2020-07-22-12:49.html" />
+    <script src="https://hypothes.is/embed.js" async></script>
+
+
+    <meta name="twitter:card" content="summary" />
+
+    <meta property="og:creator" content="@DRMacIver">
+
+    <link rel="stylesheet" href="/pygments.css"/>
+    <link rel="stylesheet" href="/tufte.css"/>
+    <link rel="stylesheet" href="/latex.css"/>
+    <link rel="stylesheet" href="/drmnotes.css"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
+});
+
+MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
+  console.log(message)
+});
+
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169185204-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169185204-1');
+</script>
+
+  </head>
+
+  <body>
+    <article>
+        <h1><a href="/">DRMacIver's Notebook</a></h1>
+        <p class=subtitle>An Annoyingly Hard Algorithm to Beat</p>
+
+        
+
+<section id="the-post">
+<p class=subtitle>An Annoyingly Hard Algorithm to Beat</p>
+<dl class=metadata>
+<dt>Published</dt>
+<dd class="post-date">2020-07-22</dd>
+</dl>
+
+<p>I have a vice, and that vice is clever solutions. I <em>love</em> it when I can hit a problem with some giant theory hammer that cracks it right open. I don't claim this is a <em>good</em> way to solve problems, but it sure is aesthetic.</p>
+<p>So let me tell you about an algorithm I resent <em>so</em> much. It looks like this:</p>
+<div class="codehilite"><pre><span></span><span class="n">failures</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="c1"># 10 is arbitrary and the value that works best</span>
+<span class="c1"># varies by problem.</span>
+<span class="k">while</span> <span class="n">failures</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+    <span class="n">try_a_random_thing</span><span class="p">()</span>
+
+    <span class="k">if</span> <span class="n">the_thing_succeeded</span><span class="p">():</span>
+        <span class="n">failures</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">elif</span> <span class="n">the_thing_was_bad</span><span class="p">():</span>
+        <span class="n">failures</span> <span class="o">+=</span> <span class="mi">1</span> 
+</pre></div>
+<p>I call these failure/success loops. As far as I know they're idiosyncratic to me but I'm sure it's a reinvention because they're so obvious.</p>
+<p>The basic idea is that you can use them to spend more time on things that have a high chance of succeeding. The parameter value (10 in this case) basically reduces variance at the cost of higher overhead, but either way you end up running things that have a higher chance of working for longer (I haven't bothered to do the maths of the exact distribution, because I inevitably end up using these in situations where success changes the probabiltiy of future successes anyway).</p>
+<p>Why do I resent the failure/success loop algorithm?</p>
+<p>Well because it's so dumb and it keeps beating better options.</p>
+<p>For example suppose you have a multi-armed bandit problem, where you have \(n\) arms and you want to pull arms that succeed and not pull arms that fail. Try the following:</p>
+<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">bandit</span><span class="p">(</span><span class="n">arms</span><span class="p">,</span> <span class="n">max_pulls</span><span class="p">):</span>
+    <span class="n">pulls</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">arm</span> <span class="ow">in</span> <span class="n">arms</span><span class="p">:</span>
+            <span class="n">failures</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="c1"># Why three? Who knows! But somehow three</span>
+            <span class="c1"># often ends up being a good choice here.</span>
+            <span class="k">while</span> <span class="n">failures</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>
+                <span class="n">result</span> <span class="o">=</span> <span class="n">arm</span><span class="o">.</span><span class="n">pull</span><span class="p">()</span>
+                <span class="n">pulls</span> <span class="o">+=</span> <span class="mi">1</span>
+                <span class="k">if</span> <span class="n">pulls</span> <span class="o">&gt;=</span> <span class="n">max_pulls</span><span class="p">:</span>
+                    <span class="k">return</span>
+                <span class="k">if</span> <span class="n">result</span><span class="p">:</span>
+                    <span class="n">failures</span> <span class="o">=</span> <span class="mi">0</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">failures</span> <span class="o">+=</span> <span class="mi">1</span>
+</pre></div>
+<p>This keeps pulling each arm until it's failed three times in a row, then moves on to the next one.</p>
+<p>Is this optimal? No, obviously not. This is a well studied problem with lots of interesting theory about regret bounds. From a theoretical point of view this algorithm is garbage.</p>
+<p>And also every damn time I try to write a multiarmed bandit code and feel super pleased with myself at getting to use some clever theory I find rough edges, go "Hmm... What if I just insert a bit of pregaming to prime the bandit with better information?" and then before I know it I've deleted the bandit code and am left with something that looks like the above.</p>
+<p>Why does this keep happening?</p>
+<p>I think there are a couple of reasons.</p>
+<p>The first is that the situations where they end up beating out clever algorithms for me tend to be ones where <em>nothing</em> is going to work especially well. For example the above bandit algorithm seems to work pretty well in cases where most of the bandit arms have no chance of working and a few of the arms have a not-terrible chance of working. What ends up happening in these cases is that clever algorithms end up not buying you much, occasionally get stuck in weird ways, and you pay high overhead for their complexity.</p>
+<p>The second is that the virtue of this algorithm is it's incredibly simple and thus it's easy to tinker with - you can fiddle with the parameter on the fly, you can try other things in the middle, and it pretty much all works fine. There's no complicated state to maintain, and there's plenty of room to maneuver as the result of the simplicity, so even if the base algorithm doesn't work something like it will.</p>
+<p>In some sense this is perhaps evidence that the algorithm is less dumb than it seems, but that doesn't mean I resent it any less.</p>
+</section>
+
+    </article>
+<footer>
+Copyright David R. MacIver.
+
+CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
+</footer>
+  </body>
+</html>

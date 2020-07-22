@@ -65,6 +65,99 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
         
 
 <section>
+<h2><a href="/posts/2020-07-22-12:49.html">2020-07-22</a></h2>
+
+
+<p class="subtitle">An Annoyingly Hard Algorithm to Beat</p>
+
+
+<dl class="metadata">
+<dt>Published</dt>
+<dd class="post-date">2020-07-22</dd>
+</dl>
+
+
+<p>I have a vice, and that vice is clever solutions. I <em>love</em> it when I can hit a problem with some giant theory hammer that cracks it right open. I don't claim this is a <em>good</em> way to solve problems, but it sure is aesthetic.</p>
+
+
+<p>So let me tell you about an algorithm I resent <em>so</em> much. It looks like this:</p>
+
+
+<div class="codehilite"><pre><span></span><span class="n">failures</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="c1"># 10 is arbitrary and the value that works best</span>
+<span class="c1"># varies by problem.</span>
+<span class="k">while</span> <span class="n">failures</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+    <span class="n">try_a_random_thing</span><span class="p">()</span>
+
+    <span class="k">if</span> <span class="n">the_thing_succeeded</span><span class="p">():</span>
+        <span class="n">failures</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">elif</span> <span class="n">the_thing_was_bad</span><span class="p">():</span>
+        <span class="n">failures</span> <span class="o">+=</span> <span class="mi">1</span> 
+</pre></div>
+
+
+<p>I call these failure/success loops. As far as I know they're idiosyncratic to me but I'm sure it's a reinvention because they're so obvious.</p>
+
+
+<p>The basic idea is that you can use them to spend more time on things that have a high chance of succeeding. The parameter value (10 in this case) basically reduces variance at the cost of higher overhead, but either way you end up running things that have a higher chance of working for longer (I haven't bothered to do the maths of the exact distribution, because I inevitably end up using these in situations where success changes the probabiltiy of future successes anyway).</p>
+
+
+<p>Why do I resent the failure/success loop algorithm?</p>
+
+
+<p>Well because it's so dumb and it keeps beating better options.</p>
+
+
+<p>For example suppose you have a multi-armed bandit problem, where you have \(n\) arms and you want to pull arms that succeed and not pull arms that fail. Try the following:</p>
+
+
+<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">bandit</span><span class="p">(</span><span class="n">arms</span><span class="p">,</span> <span class="n">max_pulls</span><span class="p">):</span>
+    <span class="n">pulls</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">arm</span> <span class="ow">in</span> <span class="n">arms</span><span class="p">:</span>
+            <span class="n">failures</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="c1"># Why three? Who knows! But somehow three</span>
+            <span class="c1"># often ends up being a good choice here.</span>
+            <span class="k">while</span> <span class="n">failures</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>
+                <span class="n">result</span> <span class="o">=</span> <span class="n">arm</span><span class="o">.</span><span class="n">pull</span><span class="p">()</span>
+                <span class="n">pulls</span> <span class="o">+=</span> <span class="mi">1</span>
+                <span class="k">if</span> <span class="n">pulls</span> <span class="o">&gt;=</span> <span class="n">max_pulls</span><span class="p">:</span>
+                    <span class="k">return</span>
+                <span class="k">if</span> <span class="n">result</span><span class="p">:</span>
+                    <span class="n">failures</span> <span class="o">=</span> <span class="mi">0</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">failures</span> <span class="o">+=</span> <span class="mi">1</span>
+</pre></div>
+
+
+<p>This keeps pulling each arm until it's failed three times in a row, then moves on to the next one.</p>
+
+
+<p>Is this optimal? No, obviously not. This is a well studied problem with lots of interesting theory about regret bounds. From a theoretical point of view this algorithm is garbage.</p>
+
+
+<p>And also every damn time I try to write a multiarmed bandit code and feel super pleased with myself at getting to use some clever theory I find rough edges, go "Hmm... What if I just insert a bit of pregaming to prime the bandit with better information?" and then before I know it I've deleted the bandit code and am left with something that looks like the above.</p>
+
+
+<p>Why does this keep happening?</p>
+
+
+<p>I think there are a couple of reasons.</p>
+
+
+<p>The first is that the situations where they end up beating out clever algorithms for me tend to be ones where <em>nothing</em> is going to work especially well. For example the above bandit algorithm seems to work pretty well in cases where most of the bandit arms have no chance of working and a few of the arms have a not-terrible chance of working. What ends up happening in these cases is that clever algorithms end up not buying you much, occasionally get stuck in weird ways, and you pay high overhead for their complexity.</p>
+
+
+<p>The second is that the virtue of this algorithm is it's incredibly simple and thus it's easy to tinker with - you can fiddle with the parameter on the fly, you can try other things in the middle, and it pretty much all works fine. There's no complicated state to maintain, and there's plenty of room to maneuver as the result of the simplicity, so even if the base algorithm doesn't work something like it will.</p>
+
+
+<p>In some sense this is perhaps evidence that the algorithm is less dumb than it seems, but that doesn't mean I resent it any less.</p>
+
+
+</section>
+<section>
 <h2><a href="/posts/2020-07-17-10:10.html">2020-07-17</a></h2>
 
 
@@ -281,115 +374,12 @@ You, a member of the community or one of many organisers, have the ability to sa
 
 
 </section>
-<section>
-<h2><a href="/posts/2020-07-11-10:49.html">2020-07-11</a></h2>
-
-
-<p class="subtitle">Automatic Boltzmann Sampling for Context Free Grammars</p>
-
-
-<dl class="metadata">
-<dt>Published</dt>
-<dd class="post-date">2020-07-11</dd>
-</dl>
-
-
-<p>A Boltzmann sampler of parameter \(x\) for some class of combinatorial objects (e.g. strings in some language) is a random sampler that picks an object of size \(n\) with probability proportional to \(x^n\).</p>
-
-
-<p><a href="https://www.drmaciver.com/2017/03/fully-automated-luxury-boltzmann-sampling-for-regular-languages/">Ages ago</a> I figured out how to do Boltzmann Sampling for arbitrary regular languages, by computing the deterministic finite automaton for the language and doing some linear algebra.</p>
-
-
-<p>Its major limitation was basically that it required computing the whole deterministic finite automaton, which may be exponentially large. Implicitly this also meant that it doesn't work on anything <em>other</em> than regular languages, because you have to have finitely many states.</p>
-
-
-<p>Anyway, shower thought for this morning is that I can lift both these restrictions and automatically derive a Boltzmann sampler for any context free language, as long as \(|x| &lt; \frac{1}{|A|}\) (where \(x\) is the Boltzmann parameter and \(A\) is the alphabet of the language). This condition isn't too onerous and is necessary to guarantee that a Boltzmann sampler exists for any language over that alphabet, though some languages may have Boltzmann samplers with larger parameter values.</p>
-
-
-<p>The technique is actually very simple: Much simpler than the previous one in some ways, although partly because the complexity lives in black boxes.</p>
-
-
-<p>It works by breaking it down into two parts:</p>
-
-
-<ol>
-<li>Pick the size of the target string according to the right distribution.</li>
-<li>Sample uniformly among strings of that size.</li>
-</ol>
-
-
-<p>So all we need to do is figure out how to do these things.</p>
-
-
-<p>In order to do the first, let \(c(n)\) be the number of strings in the language of length \(n\).
-Necessarily \(c(n) \leq |A|^n\) because there are at most \(|A|^n\) strings of length \(n\), let alone in the language.</p>
-
-
-<p>The Boltzmann sampler distribution is that we pick a string of length \(n\) with probability proportional to \(c(n) x^n\).</p>
-
-
-<p>We can thus pick the length as follows: Pick a real number \(z\) uniformly at random in the region \([0, B(x)]\), where \(B(x) = \sum c(n) x^n\) and choose the first \(n\) such that \(\sum\limits_{k=0}^n c(k) x^k \geq z\).</p>
-
-
-<p>Unfortunately we don't know this infinite sum. You can calculate it relatively easy for some classes of language, but if the grammar for your language is ambiguous that gets harder.</p>
-
-
-<p>However! We don't actually need to do that at all, because the restriction on the parameter choice allows us to create increasingly good upper bounds on this sum as follows. Because we know that \(c(n) \leq |A|^n\) we know that \(\sum\limits_{k = n}^\infty c(k) x^k \leq \frac{(|A|x)^n}{1 - |A| x}\). Thus we can define sequences \(L_n = \sum\limits_{k \leq n} c(k) x^k \) \(U_n = \frac{(|A| x)^{n + 1}}{1 - |A|x} + L_n\). These have the property that \(L_n \leq B(x) \leq U_n\), the \(L_n\) are monotonically decreasing, the \(U_n\) are monotonically decreasing, and they both converge to \(B(x)\).</p>
-
-
-<p>We can now sample the size as follows:</p>
-
-
-<ol>
-<li>Maintain a value \(m\) which we have evaluated \(L_m, U_m\) up to.</li>
-<li>Pick a real number \(z\) uniformly in \([0, U_m]\).</li>
-<li>If \(z \leq L_m\) then as before find and return the first \(n\) such that \(L_n \leq z\). Necessarily \(n \leq m\).</li>
-<li>Otherwise, find \(m' &gt; m\) such that either \(z \leq L_{m'}\) or \(U_{m'} &lt; z\).<ol>
-<li>Set \(m = m'\).</li>
-<li>If \(z \leq m'\) then pick \(n\) as in (3) and stop.</li>
-<li>Go back to (2), drawing a new value of \(z\) based on our new \(m\).</li>
-</ol>
-</li>
-</ol>
-
-
-<p>(This is a relatively well known technique for values of "relatively well known" that mean "if you work in a very niche field you've definitely heard about it" but I think I independently reinvented it a while back because I don't work in that very niche field so hadn't heard about it)</p>
-
-
-<p>So that's how we pick the size. Now we are left with two problems:</p>
-
-
-<ol>
-<li>How do we calculate \(c(n)\)?</li>
-<li>How do we pick uniformly among values of size \(n\)?</li>
-</ol>
-
-
-<p>The answer to both is that we use the things I've been writing about recently!</p>
-
-
-<p>First, note that we can turn any context-free grammar into a deterministic <em>infinite</em> automaton by using language derivatives, as per the <a href="http://matt.might.net/articles/parsing-with-derivatives/">Parsing with Derivatives</a> approach: States are labelled by a derivative of the initial grammar, and are created lazily on demand as you traverse the automaton.</p>
-
-
-<p>You can now from this automaton use the same techniques I described in <a href="https://notebook.drmaciver.com/posts/2020-07-06-09:52.html">Indexing a DFA in shortlex order</a>, which work equally well on an infinite automaton (they only ever require looking a finite depth away from a given state).
-This means we can easily calculate \(c(n)\) using dynamic programming as before, and we can sample uniformly from the strings of length \(c(n)\) using the same technique we used to index: Pick a random integer \(i\) in the range \([0, c(n) - 1]\) and then walk the DFA the i'th string of length \(n\) in lexicographic order.</p>
-
-
-<p>One potential issue with the conversion to a DFA that this neatly avoids is that you can run into cases with context free languages where it is undecidable if the grammar contains any strings. Fortunately, for random sampling this doesn't matter! Because long strings are increasingly unlikely, there is (probabilistically speaking) no observable difference between a state that has no strings starting from it and a state that only has ridiculously long strings.</p>
-
-
-<p>How practical is this? I don't know exactly, but my suspicion is that for a lot of simple grammars it will work very well. I may attempt to put together an implementation soon.</p>
-
-
-<p>PS. It's likely that the parameter restriction can be lifted by making more precise estimates of the tail sums using the automaton, but I haven't quite figured out how yet. For my purposes it's generally a relatively mild restriction so I'm not that worried about it.</p>
-
-
-</section>
 
 
 <h2>2020-07</h2>
 
 <ul class=postarchive>
+<li><a href="/posts/2020-07-11-10:49.html">Automatic Boltzmann Sampling for Context Free Grammars</a></li>
 <li><a href="/posts/2020-07-10-16:52.html">Learning to use the system</a></li>
 <li><a href="/posts/2020-07-08-14:56.html">Precarity and Conformity</a></li>
 <li><a href="/posts/2020-07-07-22:30.html">The Possibility and the Actuality of Change</a></li>
