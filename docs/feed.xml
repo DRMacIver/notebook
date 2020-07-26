@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-07-22T12:49:00+01:00</updated>
+  <updated>2020-07-26T10:40:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,53 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-07-06-09:52.html</id>
-    <title>Indexing a DFA in shortlex order</title>
-    <updated>2020-07-06T10:56:10+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Indexing a DFA in shortlex order&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-07-06&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Bad news feelings-readers, it's another technical post. Having feelings will resume shortly (probably in tomorrow's newsletter if nothing else)&lt;/p&gt;
-
-
-&lt;p&gt;I &lt;a href="https://twitter.com/DRMacIver/status/1278986162443636736"&gt;asked the other day&lt;/a&gt; about how to find the shortlex-predecessor of a string in a regular language represented by a DFA. I eventually came up with &lt;a href="https://gist.github.com/DRMacIver/89a7a27b70bbb795748fd20d1ad50f82"&gt;a solution that wasn't too bad&lt;/a&gt;.
-This morning in the shower I came up with a better one (disclaimer: I haven't written code for this or tested it, so it's probably subtly wrong and has off by one errors, and it may perform poorly, but the basic idea is sound in theory).&lt;/p&gt;
-
-
-&lt;p&gt;The basic idea is this: It's well known that using breadth first search we can enumerate the regular language in shortlex-ascending order as \(x_0, \ldots, x_n, \ldots\). Finding the predecessor of \(s\) given this enumeration is as simple as looking up \(s = x_n\) and returning \(x_{n - 1}\). Unfortunately, \(n\) may be exponentially large in \(|s|\) so doing the enumeration is horribly impractical.&lt;/p&gt;
-
-
-&lt;p&gt;But! It turns out, you don't have to, and this solution can be made workable (given a good bigint library to represent the indices) as follows:&lt;/p&gt;
-
-
-&lt;p&gt;Maintain a dynamic programming table \(C(i, k)\) which counts the number of accepted strings of length \(k\) starting from state \(i\) in the DFA. Also maintain a dynamic programming table \(R(i, k) = \sum\limits_{j = 0}^k C(i, j)\) (i.e. the number of strings of length at most \(k\) accepted from state \(i\)).&lt;/p&gt;
-
-
-&lt;p&gt;What this table lets you do is essentially skip over the bits of the breadth first search that you know won't lead to where you're going, and count how many strings you skipped by doing so.&lt;/p&gt;
-
-
-&lt;p&gt;Now, you look up \(x_n\) by first comparing values of \(R(0, k)\) to find \(k\) with \(R(0, k) &amp;lt; n \leq R(0, k + 1)\).
-We know \(k = |x_n|\). Now, walk the DFA, using \(C(i, k)\) to determine which node to transition to (using essentially the same idea - this is easier to explain in code, but I haven't written the code yet!).&lt;/p&gt;
-
-
-&lt;p&gt;Now, to find \(x_n = s\) we just count the number of strings in the langugage which are shortlex smaller than \(s\).
-This can be established relatively easily: First count \(R(0, |s| - 1)\), all strings that are shorter than \(s\), and then work out the number of strings of length \(|s|\) that are lexicographically smaller than \(s\) by adding up sum of the strings of length \(k - i\) by walking the DFA and after reading \(i\) characters count the number of strings of length \(|s| - i - 1\) that you would get from following each \(c &amp;lt; s_i\).&lt;/p&gt;
-
-
-&lt;p&gt;To be honest, I think this explanation was all clear as mud, sorry. I think either you'll get the idea immediately from the initial seed of "Use dynamic programming to get the indices" or the explanation won't clarify it, and I should have written the code instead of trying to explain this in prose. Alternatively, this is a sign that I really need to get much better at explaining this sort of thing in prose. &lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-07-06-09:52.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-07-07-22:30.html</id>
     <title>The Possibility and the Actuality of Change</title>
@@ -550,7 +503,7 @@ so I'm attempting to take stock of this and try to figure out what to do about i
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-07-22-12:49.html</id>
     <title>An Annoyingly Hard Algorithm to Beat</title>
-    <updated>2020-07-22T12:49:00+01:00</updated>
+    <updated>2020-07-22T13:25:55+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;An Annoyingly Hard Algorithm to Beat&lt;/p&gt;
@@ -642,5 +595,51 @@ so I'm attempting to take stock of this and try to figure out what to do about i
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-07-22-12:49.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-07-26-10:40.html</id>
+    <title>Notes on Reduced Output</title>
+    <updated>2020-07-26T10:40:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Notes on Reduced Output&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-07-26&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;You've probably noticed that, despite &lt;a href="https://notebook.drmaciver.com/posts/2020-06-08-10:11.html"&gt;my advocacy for daily writing&lt;/a&gt; I've stopped writing here daily.&lt;/p&gt;
+
+
+&lt;p&gt;I think there are a couple of things going on.&lt;/p&gt;
+
+
+&lt;p&gt;The first is, as noted in &lt;a href="https://notebook.drmaciver.com/posts/2020-07-16-09:22.html"&gt;habit overload&lt;/a&gt; I've got just a bit too much going on habit-wise at the moment, and the daily notebook post has been crowded out a bit.&lt;/p&gt;
+
+
+&lt;p&gt;The second is, a lot of the utility of the notebook has been supplanted for me by other things.
+This notebook is a place where I process thoughts and explain things I want to explain, but the former has been taken over by morning pages, and the latter has been taken over by the newsletter.&lt;/p&gt;
+
+
+&lt;p&gt;As a result, the notebook is left a bit vestigial. It's not clear what it's purpose is, and it's not quite clear where it fits into everything else in my habit schedule.&lt;/p&gt;
+
+
+&lt;p&gt;This is a shame, because I like the notebook and I'd quite like to stick with it,
+so I think for the next week I'm going to double down on it as follows:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;I'm going to write the notebook post immediately after lunch.&lt;/li&gt;
+&lt;li&gt;I'm going to use a book prompt every day regardless of whether I feel like writing something else.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;This should hopefully help it find a better place in my schedule and use cases.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-07-26-10:40.html" rel="alternate"/>
   </entry>
 </feed>
