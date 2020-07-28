@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-07-27T15:30:00+01:00</updated>
+  <updated>2020-07-28T09:52:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,68 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-07-08-14:56.html</id>
-    <title>Precarity and Conformity</title>
-    <updated>2020-07-08T16:41:55+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Precarity and Conformity&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-07-08&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;From &lt;a href="https://amzn.to/36wKnYH"&gt;Rewriting the Rules&lt;/a&gt; by Meg-John Barker, page 94:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;We've seen throughout this book that rigid rules are generally bad both for those who fall outside them &lt;em&gt;and&lt;/em&gt; for those who fit within them.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;A thing I find myself thinking about a lot is &lt;em&gt;precarity&lt;/em&gt;: Specifically, the scenario where nothing is wrong &lt;em&gt;now&lt;/em&gt;, but you are well aware that this could change at any time.&lt;/p&gt;
-
-
-&lt;p&gt;This is I think different from a lot of cases where we think of precarity as being associated with things being bad in the moment. e.g. poverty is a precarious situation, because you can't absorb sudden large financial blows, but poverty is also quite bad in the moment.&lt;/p&gt;
-
-
-&lt;p&gt;Many privileged states however have a form of precarity to them. This often goes hand in hand with privileges. For example, being able-bodied is a precarious situation - there are no invulnerable bodies, and you could lose your status as able-bodied at any time.&lt;/p&gt;
-
-
-&lt;p&gt;The reality, of course, is that &lt;em&gt;all&lt;/em&gt; situations are precarious. Just as there are no invulnerable bodies, there are no invulnerable lives. Everything can be lost, and we don't like to think about that.&lt;/p&gt;
-
-
-&lt;p&gt;But although everything is precarious, some situations are significantly more precarious than others.&lt;/p&gt;
-
-
-&lt;p&gt;One particular source of precarity is attached to changes of worldview. What if you are wrong about something major? It does happen. What if, in particular, you were wrong about some major source of ethics or value?&lt;/p&gt;
-
-
-&lt;p&gt;I think conformity to the rules often plays out this way: For people who fit the rules, their self-worth is often tied to the fact that very fact of conformity. This makes it precarious in several major ways:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;The rules can change.&lt;/li&gt;
-&lt;li&gt;You can change.&lt;/li&gt;
-&lt;li&gt;You can be deemed not "really" conforming.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;The third is particularly scary because actually all social rules are fake and the reality is a much more messy interplay between expectation and social power, so the only thing that is needed to be declared nonconforming is for someone with more social clout than you to want to declare you so. All conformity can buy you is a certain measure of defence against that attack.&lt;/p&gt;
-
-
-&lt;p&gt;The problem is that as long as you are using conformity as your measure of self-worth, or even just as a way to make your life easier, you &lt;em&gt;really&lt;/em&gt; don't want to be subject to that attack, or otherwise become nonconforming, and so are willing to sink in a lot of effort to reduce your precarity. Because conformance is central to your experience, that precarity feels central, so you end up sinking a lot of time and effort into conforming to the rules, and feeling anxious because you can never reduce the precarity to zero.&lt;/p&gt;
-
-
-&lt;p&gt;In contrast, nonconformity is often more robust. It's not necessarily &lt;em&gt;better&lt;/em&gt; - often the punishment for nonconformance is quite high - but because you don't have to worry about losing your privileged status you can devote your energies to other things. The bad thing you were worried about has already happened, and there's not much you can do about it other than get on with life.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-07-08-14:56.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-07-10-16:52.html</id>
     <title>Learning to use the system</title>
@@ -608,7 +546,7 @@ so I think for the next week I'm going to double down on it as follows:&lt;/p&gt
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-07-27-15:30.html</id>
     <title>Thinking Outside Your Head</title>
-    <updated>2020-07-27T15:30:00+01:00</updated>
+    <updated>2020-07-27T17:54:47+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Thinking Outside Your Head&lt;/p&gt;
@@ -670,5 +608,39 @@ In response to this pozorvlak pointed out how one of the features of good UI is 
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-07-27-15:30.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-07-28-09:52.html</id>
+    <title>Seeing Your Working</title>
+    <updated>2020-07-28T09:52:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Seeing Your Working&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-07-28&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;From &lt;a href="https://amzn.to/2ZBIVTz"&gt;Style: Towards Clarity and Grace&lt;/a&gt; by Joseph M. Williams, page 129:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;When someone is thoroughly at home in thinking through a problem, she can suppress in her prose the metadiscourse that records her thinking, allowing little or no of the intellectual process to reach the surface of her prose, or at least to remain the final draft.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;Coincidentally, &lt;a href="https://drmaciver.substack.com/p/writing-to-understand"&gt;today's newsletter is about the use of writing to understand rather than communicate&lt;/a&gt;. Using writing specifically as a place where all your thinking goes on the page, and is thereby improved.&lt;/p&gt;
+
+
+&lt;p&gt;This reminds me of a complaint I often have: It's essentially impossible to learn to do mathematics by reading research level mathematics, because research level mathematics is performance of this form. A proof as presented is almost &lt;em&gt;never&lt;/em&gt; a proof as discovered, because the authors have spent a great deal of time refining, generalising, and making the process more elegant. Additionally, it often contains little to no trace of the process that lead to that discovery, and is presented in an entirely different order from that which lead to the underlying insights.&lt;/p&gt;
+
+
+&lt;p&gt;It occurs to me that I would really enjoy reading a book that was just ethnographic studies and interviews of academics, where they talk about the process that lead to some great papers. Ideally these would be by embedded ethnographers who had spent some time observing the academics' actual research process, to try to offset the tendency to historical revisionism that we're all prone to.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-07-28-09:52.html" rel="alternate"/>
   </entry>
 </feed>
