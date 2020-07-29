@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-07-28T09:52:00+01:00</updated>
+  <updated>2020-07-29T14:50:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,61 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-07-10-16:52.html</id>
-    <title>Learning to use the system</title>
-    <updated>2020-07-10T17:28:06+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Learning to use the system&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-07-10&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;From &lt;a href="https://amzn.to/2WYeYew"&gt;Talking About Machines&lt;/a&gt; by Julian Orr, page 48:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;These same users, however, cannot be bothered to learn how they are supposed to use the machines. They claim they do not have time, he says. They seem to have plenty of time to stand around and bitch, though. [...] He finds this very frustrating, and the customers do not respond to his frustration.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;In context, a technician is frustrated that he is constantly having to fix problems caused by the users' improper use of the machines he maintains. If the users learned how to use the machines properly, which they refuse to do, the machines wouldn't be broken so often.&lt;/p&gt;
-
-
-&lt;p&gt;I share both the technician's irritation and the user's reluctance to learn: The limitation is probably not time but some mix of learned helplessness (believing that it's too difficult) and managerial unwilling to budget time and money for the training needed. On the other hand, the users could certainly stand to acquire some &lt;a href="https://www.drmaciver.com/2015/02/what-are-developer-adjacent-skills/"&gt;adjacent skills&lt;/a&gt; to make the technician's life easier. Every time you encounter a problem it's worth asking the person responsible for fixing it a little bit about what caused it and what you could have done to avoid that. A lot of the time you'll forget or not be able to implement the answer, but over time you might pick up enough by osmosis to make both of your lives better.&lt;/p&gt;
-
-
-&lt;p&gt;On the other hand, the technician is probably underestimating just how hard it is to use the system without breaking it.
-People are &lt;a href="https://blog.regehr.org/archives/861"&gt;operant conditioned by the systems they use&lt;/a&gt; into using them in a way that mostly doesn't break, and experts are the ones who have experienced the most of this, so probably experience the system very differently than the users do.&lt;/p&gt;
-
-
-&lt;p&gt;But even experience users sometimes still seem to use the system in ways that break it.
-I think part of what's going on here is that operant conditioning only works when you have the ability to learn,
-and many people never acquire enough of a working model of the system to be able to learn.
-If you don't know what it was you did that caused the bad result, how can you learn to avoid that?
-(This is why it's important to ask questions).&lt;/p&gt;
-
-
-&lt;p&gt;If we want to learn to use a system, part of that is speeding up this process of operant conditioning - learning what's safe, and what to avoid.
-Having an adequate mental model of the system seems to be a key part of that, because it lets you figure out this mapping of action to outcome.&lt;/p&gt;
-
-
-&lt;p&gt;I notice this a lot with git. There's a really huge difference in how people experience git, and it seems to largely come down to whether they have a good working model of it. git is a horrible mess of weird multipurpose arbitrary commands, and it has a number of sharp edges, but honestly for me it's basically fine and it causes me almost no problems, and it has been like that almost from day one, because I roughly know how it works and so can think of things in terms of what I'm trying to achieve in the underlying model. Without that model, you only see the external complexity, which is almost impossible to navigate.&lt;/p&gt;
-
-
-&lt;p&gt;Another place I've seen this is mathematics education. People try to teach maths as a bunch of facts that you have to memorise. This is basically impossible and nobody will ever learn to be a mathematician that way - they will either learn to be a mathematician on their own, they will brute force their way through some exams and then forget everything, or they will fail horribly, because without an underlying understanding of the nature of mathematics and how everything fits together it's just an unreasonable amount of pointless rules and facts to memorise and you will experience all of it as arbitrary.&lt;/p&gt;
-
-
-&lt;p&gt;People often seem very resistant to acquiring models of the systems they use, because that seems hard and time consuming, but the reality is that trying to use a system without some sort of model of it is much harder and will be a source of constant and bewildering suffering.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-07-10-16:52.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-07-11-10:49.html</id>
     <title>Automatic Boltzmann Sampling for Context Free Grammars</title>
@@ -612,7 +557,7 @@ In response to this pozorvlak pointed out how one of the features of good UI is 
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-07-28-09:52.html</id>
     <title>Seeing Your Working</title>
-    <updated>2020-07-28T09:52:00+01:00</updated>
+    <updated>2020-07-28T10:10:03+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Seeing Your Working&lt;/p&gt;
@@ -642,5 +587,73 @@ In response to this pozorvlak pointed out how one of the features of good UI is 
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-07-28-09:52.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-07-29-14:50.html</id>
+    <title>Inclusivity and Onboarding</title>
+    <updated>2020-07-29T14:50:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Inclusivity and Onboarding&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-07-29&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;From &lt;a href="https://amzn.to/2WYeYew"&gt;Talking About Machines&lt;/a&gt; by Julian Orr, page 70:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;The conversation of a closely cooperating group can be quite cryptic when the members are sharing information about work; they are considering a well-defined field which can be discussed with considerable economy, verging on code.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;A thing I have been thinking about a lot recently is the trade off between making a community accessible and the community being able to serve the needs of its core members.&lt;/p&gt;
+
+
+&lt;p&gt;In &lt;a href="https://drmaciver.substack.com/p/being-deep-in-an-abstraction-stack"&gt;Being Deep in an Abstraction Stack&lt;/a&gt; I talk about how you need a community of people who share your abstraction stack and there is really no substitute for this no matter how much we want one.&lt;/p&gt;
+
+
+&lt;p&gt;But unfortunately by creating such a community there is a certain amount of inherent gatekeeping: It is a community for people who have that abstraction stack, therefore if you do not have that abstraction stack you cannot participate in the community as a full member. I don't necessarily mean this as a moral judgement - sometimes gateekeeping is good - but there is nevertheless a certain amount of elitism implicit in the existence of such communities. In order to talk about our &lt;a href="https://drmaciver.substack.com/p/maintaining-niche-interests"&gt;niche interests&lt;/a&gt; we &lt;em&gt;need&lt;/em&gt; this cryptic shared language, and attempts to make the group more inclusive by avoiding that will also make it worse for us.&lt;/p&gt;
+
+
+&lt;p&gt;I don't really have an answer to that other than "deal with it". "I need other people to talk about my interests with" is a &lt;a href="https://notebook.drmaciver.com/posts/2020-07-15-09:33.html"&gt;nice problem to have&lt;/a&gt;, but it's still a need and it's one that it is reasonable to satisfy, and creating slightly exclusionary communities is pretty much the only way to solve that problem..&lt;/p&gt;
+
+
+&lt;p&gt;Part of why I've been thinking about this is &lt;a href="https://docs.google.com/document/d/1y3DkPGuAZiGbeNYlwje6jTlFxz9peIGnjSuZTwF4NGM/edit"&gt;Weird CS Theory Discord&lt;/a&gt;. The opening paragraph includes the sentence:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;You don’t have to “be” a computer scientist, or even know much computer science, to be here, but if you’re not interested in computer science you probably won’t enjoy the space.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;This hopefully makes it clear that we're not looking to gatekeep (I originally typoed that as "gategeek" which, well, valid) based on formal qualifications, but nevertheless there is a reasonably high bar to participating in the space. People are welcome to join, and they're welcome to learn to become full participants through their experience in the space, but that is there.&lt;/p&gt;
+
+
+&lt;p&gt;But, at the same time, we're a tiny free community that I created to serve my particular need for more chatter about weird CS theory. We're absolutely not a computer science institution. We cannot invest a tonne of effort in onboarding people, the best we can possibly hope to do is to be patient and welcoming to people who are still in the process of onboarding themselves.&lt;/p&gt;
+
+
+&lt;p&gt;One problem that occurs, and is important to avoid, is when this lack of inclusitivity becomes considered a feature rather than an unfortunate trade off. The specialised language becomes not a useful shorthand but a shibboleth.
+I have tried to head that off by making it clear that asking us to explain ourselves is always valid:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;[You are encouraged to] Ask questions. (“Can you explain that?” is always fine, though answering “No” is fine too)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;We have a specific norm that is designed to give people the space to indicate that they need help understanding something, but also a specific norm that we should not exhaust ourselves trying to bring people in.
+If people want to bring themselves in, the door is open, but we can only help so much.&lt;/p&gt;
+
+
+&lt;p&gt;Unfortunately, this too is exclusionary: Many people don't have the time or resources to do that work themselves.
+I feel bad about this, but ultimately the world is still a better place for the community, and there is only so much I can do about it.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-07-29-14:50.html" rel="alternate"/>
   </entry>
 </feed>
