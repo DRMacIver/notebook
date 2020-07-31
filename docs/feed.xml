@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-07-30T16:00:00+01:00</updated>
+  <updated>2020-07-31T13:14:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,90 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-07-14-13:42.html</id>
-    <title>Living Room Rules</title>
-    <updated>2020-07-14T16:27:56+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Living Room Rules&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-07-14&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;From &lt;a href="https://twitter.com/DRMacIver/status/1281131593948692480"&gt;my Twitter the other day&lt;/a&gt;:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;A pattern I notice over and over again: you don't have to get all of a community's norms right from day one, but you do have to get a community's norms of agreeing on community norms right from day one or your community is doomed to fall apart, probably messily.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;One of the ways in which I have seen this manifest is tech communities and the adoption of code of conducts.
-Tech communities that don't have codes of conduct from very early on tend to have vicious battles when it comes to adopting them, with a lot of the existing members of the community absolutely livid about the idea that they should be held to specific rules of behaviour.
-This is what happens if you build a community without building legitimacy for a mode of forming norms.&lt;/p&gt;
-
-
-&lt;p&gt;One way to solve this is to have a code of conduct from the beginning, and it may be worth doing this anyway (especially a generic "no racism, transphobia, etc." one), but I think using this as the main solution sets the bar too low, and there is an easier and more flexible approach that will build a healthy and functional community:
-Simply declare "Le code de conduite, c'est moi". This is your space, as the founder of the community, and the people there are your guests. They should behave accordingly, and if they are not prepared to behave accordingly they are welcome to leave.&lt;/p&gt;
-
-
-&lt;p&gt;These are what I call &lt;em&gt;living room rules&lt;/em&gt; - you are treating the space as your virtual living room. As the host you are responsible for people having a good time, and the guests are responsible for behaving well in your space.&lt;/p&gt;
-
-
-&lt;p&gt;Living room rules work best for small communities whose management is well within the scope of a single individual.
-The reason for this is that as a single individual founder you have authority over the space, and thus over how people behave within it. Your word is law. Once authority is delegated to multiple people, the possibility of conflict exists, and the authority is weakened (this can, of course, be a good thing too).&lt;/p&gt;
-
-
-&lt;p&gt;A Code of Conduct is essentially a tool you can use for claiming authority over people's behaviour without possessing that authority on your own.
-You, a member of the community or one of many organisers, have the ability to say "This behaviour is not on, because it says so in the code of conduct". By making the rules of the space explicit, authority to get people to conform to those rules is conferred.&lt;/p&gt;
-
-
-&lt;p&gt;But you can just skip that step and claim authority on your own. It's allowed, I promise. You do this every time you have your friends around for dinner (a thing that we used to do prior to 2020) and it generally works fine.&lt;/p&gt;
-
-
-&lt;p&gt;Why might you want to do this?&lt;/p&gt;
-
-
-&lt;p&gt;Well, it's more flexible and produces better results. The goal is not to get people to follow some set of rules to the letter, the goal is to get a community that behaves in a positive way. Explicit systems of rules are easy to rules lawyer, and it's hard for them to account for every scenario. That doesn't mean a code of conduct is bad in and of itself - they're on balance probably good things - but they are &lt;em&gt;insufficient&lt;/em&gt; and a community where people are constantly skirting the edge of the code of conduct is one that you might as well let fail because it's basically dead anyway.&lt;/p&gt;
-
-
-&lt;p&gt;In contrast, when a community is small enough that you can have it overseen by a single person, that person is able to use their judgement and shape the behaviour of the community into more positive directions, and it's much harder to rules lawyer against individual personal judgement.&lt;/p&gt;
-
-
-&lt;p&gt;There are a couple reasons people don't want to do this:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;Claiming authority is kinda scary, at least if you're the sort of person worth trusting with authority. "Because I say so" is a harder thing to say than "because these reasons", even if you are the one who defined those reasons.&lt;/li&gt;
-&lt;li&gt;Some people are going to try hard to argue with and manipulate you to get the outcomes they want, and then you have to go through the social awkwardness of showing that person the door.&lt;/li&gt;
-&lt;li&gt;It's hard to do well, and it feels like a personal judgement when you don't do it well.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;I'm still figuring out the details of how to do it well myself, but I think the following principles are roughly what I'm trying to follow:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;Claim this authority explicitly and early.&lt;/li&gt;
-&lt;li&gt;Be explicit about the sort of space that you are trying to achieve. "This is what I want out of this space, though details may be subject to change, and I am the arbiter of whether that is being achieved."&lt;/li&gt;
-&lt;li&gt;Don't be an asshole with your authority (obviously), but more than that do your best to be someone who people are glad has authority. Your role here is to be the host, and to use the authority that gives you to make sure everyone has a good time.&lt;/li&gt;
-&lt;li&gt;When you make decisions, record them somewhere. This can evolve into a document that you can use to better define and shape your community norms. Eventually it might acquire authority in its own right, once the community starts to outgrow you.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;I've run a few online spaces more or less on these principles. The most explicit is my recent creation of the Weird CS Theory Community Discord, which started with me creating &lt;a href="https://docs.google.com/document/d/1y3DkPGuAZiGbeNYlwje6jTlFxz9peIGnjSuZTwF4NGM/edit?usp=sharing"&gt;a document based on these principles fairly early on&lt;/a&gt;. Hard to say how it's going, because it's early days yet, but we've mostly got the vibe I want and the one incident which promtped the creation of the document was entirely civil even before I intervened, and the intervention was well received.&lt;/p&gt;
-
-
-&lt;p&gt;Should all online spaces be run this way? Absolutely not. Not even all small ones. But I do think there should be more online spaces run this way, and that many more people would benefit from running one than currently do.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-07-14-13:42.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-07-15-09:33.html</id>
     <title>Nice Problems to Have</title>
@@ -552,7 +468,7 @@ I feel bad about this, but ultimately the world is still a better place for the 
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-07-30-16:00.html</id>
     <title>Politics as long periods of boredom punctuated by moments of sheer terror</title>
-    <updated>2020-07-30T16:00:00+01:00</updated>
+    <updated>2020-07-30T16:16:22+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Politics as long periods of boredom punctuated by moments of sheer terror&lt;/p&gt;
@@ -609,5 +525,36 @@ This is basically how you end up with Brexit.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-07-30-16:00.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-07-31-13:14.html</id>
+    <title>Standardised Facts</title>
+    <updated>2020-07-31T13:14:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Standardised Facts&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-07-31&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;From &lt;a href="https://amzn.to/2ZB2wmE"&gt;Seeing Like a State&lt;/a&gt; by James C. Scott, page 80:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;State simplifications have at least five characteristics that deserve emphasis. Most obviously, state simplifications are observations of only those aspects of social life that are of official interest. They are &lt;em&gt;interested&lt;/em&gt;, utilitarian facts. Second, they are also nearly always written (verbal or numerical) &lt;em&gt;documentary&lt;/em&gt; facts. Third, they are typically &lt;em&gt;static&lt;/em&gt; facts. Fourth, most stylized state facts are also &lt;em&gt;aggregate&lt;/em&gt; facts. Aggregate facts may be impersonal (the density of transportation networks) or simply a collection of facts about individuals (employment rates, literacy rates, residence patterns). Finally, for most purposes, stateofficials need to group citizens in ways that permit them to make a collective assessment. Facts that can be aggregated and presented as averages or distributions must therefore by &lt;em&gt;standardized&lt;/em&gt; facts. However unique the actual circumstances of the various individuals who make up the aggregate, it is their sameness or, more precisely, their differences along a standardized scale or continuum that are of interest.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;This is a very interesting passage that I think I probably just nodded and skimmed over when first reading this book. I find that often the random page approach is a good way of highlighting such passages.&lt;/p&gt;
+
+
+&lt;p&gt;I don't have a huge amount to say about this passage right now (because I'm ill and it's hot and as a result I am quite stupid today) but I feel like it's especially relevant right now during the COVID-19 epidemic, where we're seeing a lot of this sort of thing. Death rates, hospitalisation rates, etc. are very much an example of standardised facts, and are eliding a lot of the weird and very unpleasant ways in which people's COVID-19 symptoms differ.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-07-31-13:14.html" rel="alternate"/>
   </entry>
 </feed>
