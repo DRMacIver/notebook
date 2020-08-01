@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-07-31T13:14:00+01:00</updated>
+  <updated>2020-08-01T15:39:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,59 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-07-15-09:33.html</id>
-    <title>Nice Problems to Have</title>
-    <updated>2020-07-15T09:48:35+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Nice Problems to Have&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-07-15&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I've been thinking about "nice problems to have" as a phenomenon recently. I have a feeling they're widely misunderstood.&lt;/p&gt;
-
-
-&lt;p&gt;My standard response to the concept has often been "Yes but nice problems to have are still problems", but actually I think it goes deeper than that: Nice problems to have are also rarely actually nice to have. The phrase is misleading.&lt;/p&gt;
-
-
-&lt;p&gt;What we generally mean when we say "nice problem to have" is that the &lt;em&gt;preconditions&lt;/em&gt; for having this problem are nice to have. i.e. you cannot have this problem unless some other nice thing happens first.
-This is not at all a reliable predictor of the amount of suffering involved.&lt;/p&gt;
-
-
-&lt;p&gt;Consider, for example, having all your friends and family constantly making demands on you, far beyond your capacity to satisfy, to the point where it would be emotionally exhausting even if you could say yes to everyone but also you have to say no to most of them and they will resent you for it.
-This is obviously an intensely painful problem, right?&lt;/p&gt;
-
-
-&lt;p&gt;Now suppose it's because you come from poverty and have landed a well paid job. Suddenly it's a "nice problem to have" (you have it because you're being well paid! Being well paid is good!), but that doesn't change how miserable it is.&lt;/p&gt;
-
-
-&lt;p&gt;The thing is, by definition, "nice problems to have" are ones that are not going to be shared by a lot of people (otherwise the preconditions would just be normal behaviour and it wouldn't be a nice problem to have).
-As a result:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Most people probably won't be able to relate to it, because their lived experiences will be so different.&lt;/li&gt;
-&lt;li&gt;People will be envious of you for the nice thing.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;Thus the defining characteristic about nice problems to have is not that they are nice, but that you will be afforded no sympathy for having them. Nice problems to have are the opposite of nice: They isolate you from the ability to &lt;a href="https://drmaciver.substack.com/p/you-should-complain-about-it"&gt;complain about them&lt;/a&gt;, which removes a major bonding activity with people who have not been successful in the same way as you, and also causes you to feel worse about the problems with those who do not share your burden.&lt;/p&gt;
-
-
-&lt;p&gt;There is a phenomenon of people succeeding and leaving their former friends behind, and there are many very bad reasons why people do this, but I suspect the nice problems to have issue is one of them: None of their former friends are able to be remotely sympathetic to things that are very real sources of their suffering (and indeed that unrelatability of it is probably &lt;em&gt;part&lt;/em&gt; of their suffering).&lt;/p&gt;
-
-
-&lt;p&gt;This is in many ways a variant of the &lt;a href="https://drmaciver.substack.com/p/being-deep-in-an-abstraction-stack"&gt;abstraction stack&lt;/a&gt; problem - you need people around you who just &lt;em&gt;get&lt;/em&gt; the things you want to talk about - and the solution is probably the same: Regardless of who else you hang out with (and you should hang out with a variety of people) you do need &lt;em&gt;some&lt;/em&gt; people you can talk to who understand your problems, even if they're supposedly nice problems to have.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-07-15-09:33.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-07-16-09:22.html</id>
     <title>Habit Overload</title>
@@ -529,7 +476,7 @@ This is basically how you end up with Brexit.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-07-31-13:14.html</id>
     <title>Standardised Facts</title>
-    <updated>2020-07-31T13:14:00+01:00</updated>
+    <updated>2020-07-31T13:19:12+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Standardised Facts&lt;/p&gt;
@@ -556,5 +503,46 @@ This is basically how you end up with Brexit.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-07-31-13:14.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-08-01-15:39.html</id>
+    <title>From a Certain Point of View</title>
+    <updated>2020-08-01T15:39:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;From a Certain Point of View&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-08-01&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;From &lt;a href="https://amzn.to/3fiWsnC"&gt;Jonathan Strange &amp;amp; Mr Norrell&lt;/a&gt; by Susanna Clarke, page 480:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;"Artists are tricky fellows, sir, forever reshaping the world according to some design of their own," said Strange. "Indeed they are not unlike magicians in that."&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;A thing I often think about is the blurry line between true and useful, communication and performance.&lt;/p&gt;
+
+
+&lt;p&gt;In the context of the story, this is about visual art, but the same happens with the written or spoken word: When we attempt to convey facts, we end up summarising, simplifying, focusing on what we think is important about it, and often when we do this we end up saying things that are not, in the strictest sense, true.&lt;/p&gt;
+
+
+&lt;p&gt;(In context, Norrell is complaining about a painting that has a mirror where there is none).&lt;/p&gt;
+
+
+&lt;p&gt;Sometimes this is because we elide crucial details. Sometimes it's a &lt;a href="https://en.wikipedia.org/wiki/Lie-to-children"&gt;lie-to-children&lt;/a&gt;. Sometimes it's to give the story the true aesthetic without the elaborate scaffolding needed to convey that aesthetic accurately (the mirror).
+Sometimes, of course, it's just a lie.&lt;/p&gt;
+
+
+&lt;p&gt;I think we end up doing this more than we think, because memory is more fallible than we like to treat it as, and we tend to think more in terms of aesthetic and narrative than detailed recollection of facts. In this sense we are all artists.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-08-01-15:39.html" rel="alternate"/>
   </entry>
 </feed>
