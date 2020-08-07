@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-08-01T16:03:44+01:00</updated>
+  <updated>2020-08-07T12:27:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,59 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-07-16-09:22.html</id>
-    <title>Habit Overload</title>
-    <updated>2020-07-16T10:14:56+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Habit Overload&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-07-16&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Attention Conservation Notice: Personal debugging. May be of interest if you have similar problems, which you probably do, but I've not made any particular effort to generalise it into a coherent point.&lt;/p&gt;
-
-
-&lt;p&gt;I've been noticing recently that a lot of my recurring habits have been slipping,
-so I'm attempting to take stock of this and try to figure out what to do about it.&lt;/p&gt;
-
-
-&lt;p&gt;I think the problem has a couple of roots:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;I'm trying to do too much. There's plenty of time to do all the habits if I do nothing else, and even if I do a reasonable amount of work on my PhD, but the reality is that I don't do a reasonable amount of work on my PhD because my two modes are "not really doing enough work on it" and "total all consuming obsession", and the latter tends to impinge on the habits and make me feel bad about neglecting them.&lt;/li&gt;
-&lt;li&gt;Some of the habits probably weren't working that well for me.&lt;/li&gt;
-&lt;li&gt;Some of the habits have lost cues that were previously helpful for keeping on top of them.&lt;/li&gt;
-&lt;li&gt;My planning system became lightly aversive because it was trying to keep me on track despite the above fighting against me.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;I think this can mostly be solved by taking stock a bit of what's reasonable, and deciding what habits to drop and what to keep, and part of that is looking at what's not working and dropping or modifying it based on where it fits into the above.&lt;/p&gt;
-
-
-&lt;p&gt;For example I've dropped my &lt;a href="https://twitter.com/DRMacIver/status/1283138137129193472"&gt;daily paper reading habit&lt;/a&gt; because I decided it wasn't working that well for me - it felt high overhead (because I had to decide to read) and low value (I'd be better served chatting on &lt;a href="https://docs.google.com/document/d/1y3DkPGuAZiGbeNYlwje6jTlFxz9peIGnjSuZTwF4NGM/edit?usp=sharing"&gt;Weird CS Theory Discord&lt;/a&gt;) or reading a book.&lt;/p&gt;
-
-
-&lt;p&gt;Another example is that I had a habit of rereading bits of books I'd previously read every day. I've almost entirely dropped that, not deliberately. I think I'm going to formally drop that - doing book driven posts on here fills the same need.&lt;/p&gt;
-
-
-&lt;p&gt;I've also, for the moment, dropped my planning system (which was coping board based). It's a good system and I want to get back to it but I think I need to leave some time for my life to normalise into a new routine before I bring it back, and right now it has a bit of guilt attached to it, so I've thrown away the cards and will resume when it feels right to do so.&lt;/p&gt;
-
-
-&lt;p&gt;Another thing that's been a problem is that I've been reading much less recently. This is I think a loss of a cue - I previously started reading during my morning coffee, which put me in the right mindset for the rest of the day and I would read more later as and when the mood struck me. Recently I've been doing morning pages during morning coffee, which is great and is a high value habit that I will absolutely retain, but robs me of that cue. I've started finishing morning pages by doing at least five minutes of reading, which I'm hoping will help with that.&lt;/p&gt;
-
-
-&lt;p&gt;This notebook itself is, of course, one of the daily habits. For the moment I don't plan to drop it as such - I get a lot of value out of it, and I think other people do. Recently it's become a bit erratic and lower quality I think, but it's in the nature of a daily writing practice that that will happen. I might however start skipping days where I've otherwise been doing a lot of writing, or otherwise make some minor modifications to it.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-07-16-09:22.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-07-17-10:10.html</id>
     <title>Questions to Ask When Bored</title>
@@ -544,5 +491,94 @@ Sometimes, of course, it's just a lie.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-08-01-15:39.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-08-07-12:27.html</id>
+    <title>Ensuring Downward Paths</title>
+    <updated>2020-08-07T12:27:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Ensuring Downward Paths&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-08-07&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I had some half-formed thoughts about test-case reduction that I wanted to work through, and this notebook is a place for working through half-formed thoughts, so here we go...&lt;/p&gt;
+
+
+&lt;p&gt;The thing I've been working on on and off for about a month now is &lt;a href="https://notebook.drmaciver.com/posts/2020-07-05-11:29.html"&gt;using language inference to figure out new reduction passes&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;It can be thought of as a way of taking an idea that doesn't work (using L* for test case reduction) and combining it with an idea that works but doesn't generalise well (learning a table of small string substitutions to make),
+and getting an idea that does work and does generalise.&lt;/p&gt;
+
+
+&lt;p&gt;This has me thinking: What, exactly, does it mean for an approach to test-case reduction to generalise?&lt;/p&gt;
+
+
+&lt;p&gt;Also &lt;em&gt;does&lt;/em&gt; this approach generalise well? The big question with it is basically whether it works well when you change the interestingness test. I think it will, but it probably depends a lot on the choice of interestingness test and how close your reducer is to normalising it already.&lt;/p&gt;
+
+
+&lt;p&gt;In the approach to test-case reduction I favour, test-case reduction starts from set of test cases \(X\) and a total order \(\preceq\) over \(X\) called the &lt;em&gt;reduction order&lt;/em&gt;,
+and a test-case reducer is a function \(r(U, x)\) where \(x \in U \subseteq X\), \(r(U, x) \in U\), and \(r(U, x) \preceq x\). For me usually \(X\) is a set of strings and \(\preceq\) is the shortlex order where \(x \preceq y\) if \(|x| &amp;lt; |y|\) or \(|x| = |y|\) and \(x \leq y\) lexicographically.&lt;/p&gt;
+
+
+&lt;p&gt;Your prototypical test-case reducer starts from a bunch of small-step reductions, which gives you a function \(t: X \to X^{&amp;lt;\omega}\), where \(t(x)_i \prec x\),
+and the reducer greedily tries each of \(t(x)_i\) in order. If none of them are in \(U\) it returns \(x\), otherwise it it recurses and returns \(r(U, t(x)_i)\) for the first \(i\) with \(t(x)_i \in U\).&lt;/p&gt;
+
+
+&lt;p&gt;More generally given such a function we might say that a reducer is \(t\)-local if it satisfies the following conditions:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;\(t(U, x) = x\) if and only if \(t(x)_i \not\in U\) for all \(i\).&lt;/li&gt;
+&lt;li&gt;For all \(U, x\) is some sequence \(x = x_0, \ldots, x_n = r(U, x)\) with \(x_{i + 1} \in t(x)_i\) (note that we don't necessarily require that \(x_i \in U\)).&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;That is, basically a \(t\)-local reducer is one that looks like the prototypical reducer but may have some optimisations and fiddly bits. e.g. delta debugging is a \(t\) local reducer where \(t\) is maps \(x\) to all test cases that can be formed by deleting a single element of \(x\). Delta debugging starts by trying large bulk combinations of these deletions and gradually narrows it down until it's only trying the small ones. Another approach which uses the same \(t\) but a different algorithm is what I've called &lt;a href="https://www.drmaciver.com/2017/06/adaptive-delta-debugging/"&gt;adaptive delta debugging&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Most reducers implemented in practice are roughly \(t\)-local for some \(t\) (often they fail to be \(t\)-local in some cases because they hit some internal limit and stop when they could be making more progress, and rerunning the reducer may produce further redctions) and I think this is good because it allows you to reason in terms of what transformations they are capable of performing.&lt;/p&gt;
+
+
+&lt;p&gt;So lets assume we have a \(t\)-local reducer. What makes it good?&lt;/p&gt;
+
+
+&lt;p&gt;Basically the tradeoff is this:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;The larger \(|t(x)|\) tends to be the better you will reduce \(x\).&lt;/li&gt;
+&lt;li&gt;The smaller \(|t(x)|\) is the better your reducer tends to perform.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;The ideal seems to be that you want \(|t(x)| = O(|x|)\), as per delta debugging, and the trick is to tweak the set within that constraints to try to get good results.&lt;/p&gt;
+
+
+&lt;p&gt;(Note that having \(|t(x)| = O(|x|)\) doesn't mean that the overall reducer runs in \(O(|x|)\) - even if you reduce the size at every step you can easily be made to make \(O(|x|^2)\) membership checks, and if you just make lexicographic transformations it's easy for performance to get exponentially bad)&lt;/p&gt;
+
+
+&lt;p&gt;The problem that you run into is that basically what you really want is not just for \(|t(x)|\) to be large, but for it to contain values that are in some sense "likely to be in \(U\)". One way this can fail to happen is when there is some sort of precondition on the range of \(U\) we are interested in. The biggest example of this is when interesting test cases have to be syntactically valid according to some grammar. When this happens, effectively you are censoring \(t\) by replacing it with its syntactically valid subset. Often when something like delta debugging gets stuck it's not because it's not because of any intrinsic limitation related to the interestingness test, it's just ended up at a point where \(t(x)\) contains no syntactically valid test-cases.&lt;/p&gt;
+
+
+&lt;p&gt;So, essentially what we want in order to get a good reducer for a format is to try to ensure that \(t(x)\) is always well populated with &lt;em&gt;syntactically valid&lt;/em&gt; reductions of \(x\). &lt;/p&gt;
+
+
+&lt;p&gt;One way to do this might be to artificially construct interestingness tests that are basically designed to expose small reductions. I'm not quite sure what those would be. One thing I was thinking of is having interestingness tests of where \(x\) is interesting if \(y \preceq x\) for some fixed \(y\), then once those are normalised gradually "censor" the tests by removing all intermediate parts, stopping when you can't learn anything other than the direct jump to \(y\).&lt;/p&gt;
+
+
+&lt;p&gt;This can be thought of as ensuring that whenever the final reduced result is \(y\) you have as rich a set of paths leading to it as the learning process is possibly able to find.&lt;/p&gt;
+
+
+&lt;p&gt;I don't yet know how likely this is to work. I'm planning to do more experiments soon on getting this running on hypothesis-csmith and we'll see how well it can learn that, but I think there's some interesting stuff to investigate here.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-08-07-12:27.html" rel="alternate"/>
   </entry>
 </feed>

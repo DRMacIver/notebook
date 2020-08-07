@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+DRMacIver's Notebook: Ensuring Downward Paths
+    </title>
+
+    <meta property="og:title" content="Ensuring Downward Paths">
+
+    <meta property="og:url" content="https://notebook.drmaciver.com/posts/2020-08-07-12:27.html" />
+    <link rel="canonical" href="https://notebook.drmaciver.com/posts/2020-08-07-12:27.html" />
+    <script src="https://hypothes.is/embed.js" async></script>
+
+
+    <meta name="twitter:card" content="summary" />
+
+    <meta property="og:creator" content="@DRMacIver">
+
+    <link rel="stylesheet" href="/pygments.css"/>
+    <link rel="stylesheet" href="/tufte.css"/>
+    <link rel="stylesheet" href="/latex.css"/>
+    <link rel="stylesheet" href="/drmnotes.css"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
+});
+
+MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
+  console.log(message)
+});
+
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169185204-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169185204-1');
+</script>
+
+  </head>
+
+  <body>
+    <article>
+        <h1><a href="/">DRMacIver's Notebook</a></h1>
+        <p class=subtitle>Ensuring Downward Paths</p>
+
+        
+
+<section id="the-post">
+<p class=subtitle>Ensuring Downward Paths</p>
+<dl class=metadata>
+<dt>Published</dt>
+<dd class="post-date">2020-08-07</dd>
+</dl>
+
+<p>I had some half-formed thoughts about test-case reduction that I wanted to work through, and this notebook is a place for working through half-formed thoughts, so here we go...</p>
+<p>The thing I've been working on on and off for about a month now is <a href="https://notebook.drmaciver.com/posts/2020-07-05-11:29.html">using language inference to figure out new reduction passes</a>.</p>
+<p>It can be thought of as a way of taking an idea that doesn't work (using L* for test case reduction) and combining it with an idea that works but doesn't generalise well (learning a table of small string substitutions to make),
+and getting an idea that does work and does generalise.</p>
+<p>This has me thinking: What, exactly, does it mean for an approach to test-case reduction to generalise?</p>
+<p>Also <em>does</em> this approach generalise well? The big question with it is basically whether it works well when you change the interestingness test. I think it will, but it probably depends a lot on the choice of interestingness test and how close your reducer is to normalising it already.</p>
+<p>In the approach to test-case reduction I favour, test-case reduction starts from set of test cases \(X\) and a total order \(\preceq\) over \(X\) called the <em>reduction order</em>,
+and a test-case reducer is a function \(r(U, x)\) where \(x \in U \subseteq X\), \(r(U, x) \in U\), and \(r(U, x) \preceq x\). For me usually \(X\) is a set of strings and \(\preceq\) is the shortlex order where \(x \preceq y\) if \(|x| &lt; |y|\) or \(|x| = |y|\) and \(x \leq y\) lexicographically.</p>
+<p>Your prototypical test-case reducer starts from a bunch of small-step reductions, which gives you a function \(t: X \to X^{&lt;\omega}\), where \(t(x)_i \prec x\),
+and the reducer greedily tries each of \(t(x)_i\) in order. If none of them are in \(U\) it returns \(x\), otherwise it it recurses and returns \(r(U, t(x)_i)\) for the first \(i\) with \(t(x)_i \in U\).</p>
+<p>More generally given such a function we might say that a reducer is \(t\)-local if it satisfies the following conditions:</p>
+<ol>
+<li>\(t(U, x) = x\) if and only if \(t(x)_i \not\in U\) for all \(i\).</li>
+<li>For all \(U, x\) is some sequence \(x = x_0, \ldots, x_n = r(U, x)\) with \(x_{i + 1} \in t(x)_i\) (note that we don't necessarily require that \(x_i \in U\)).</li>
+</ol>
+<p>That is, basically a \(t\)-local reducer is one that looks like the prototypical reducer but may have some optimisations and fiddly bits. e.g. delta debugging is a \(t\) local reducer where \(t\) is maps \(x\) to all test cases that can be formed by deleting a single element of \(x\). Delta debugging starts by trying large bulk combinations of these deletions and gradually narrows it down until it's only trying the small ones. Another approach which uses the same \(t\) but a different algorithm is what I've called <a href="https://www.drmaciver.com/2017/06/adaptive-delta-debugging/">adaptive delta debugging</a>.</p>
+<p>Most reducers implemented in practice are roughly \(t\)-local for some \(t\) (often they fail to be \(t\)-local in some cases because they hit some internal limit and stop when they could be making more progress, and rerunning the reducer may produce further redctions) and I think this is good because it allows you to reason in terms of what transformations they are capable of performing.</p>
+<p>So lets assume we have a \(t\)-local reducer. What makes it good?</p>
+<p>Basically the tradeoff is this:</p>
+<ol>
+<li>The larger \(|t(x)|\) tends to be the better you will reduce \(x\).</li>
+<li>The smaller \(|t(x)|\) is the better your reducer tends to perform.</li>
+</ol>
+<p>The ideal seems to be that you want \(|t(x)| = O(|x|)\), as per delta debugging, and the trick is to tweak the set within that constraints to try to get good results.</p>
+<p>(Note that having \(|t(x)| = O(|x|)\) doesn't mean that the overall reducer runs in \(O(|x|)\) - even if you reduce the size at every step you can easily be made to make \(O(|x|^2)\) membership checks, and if you just make lexicographic transformations it's easy for performance to get exponentially bad)</p>
+<p>The problem that you run into is that basically what you really want is not just for \(|t(x)|\) to be large, but for it to contain values that are in some sense "likely to be in \(U\)". One way this can fail to happen is when there is some sort of precondition on the range of \(U\) we are interested in. The biggest example of this is when interesting test cases have to be syntactically valid according to some grammar. When this happens, effectively you are censoring \(t\) by replacing it with its syntactically valid subset. Often when something like delta debugging gets stuck it's not because it's not because of any intrinsic limitation related to the interestingness test, it's just ended up at a point where \(t(x)\) contains no syntactically valid test-cases.</p>
+<p>So, essentially what we want in order to get a good reducer for a format is to try to ensure that \(t(x)\) is always well populated with <em>syntactically valid</em> reductions of \(x\). </p>
+<p>One way to do this might be to artificially construct interestingness tests that are basically designed to expose small reductions. I'm not quite sure what those would be. One thing I was thinking of is having interestingness tests of where \(x\) is interesting if \(y \preceq x\) for some fixed \(y\), then once those are normalised gradually "censor" the tests by removing all intermediate parts, stopping when you can't learn anything other than the direct jump to \(y\).</p>
+<p>This can be thought of as ensuring that whenever the final reduced result is \(y\) you have as rich a set of paths leading to it as the learning process is possibly able to find.</p>
+<p>I don't yet know how likely this is to work. I'm planning to do more experiments soon on getting this running on hypothesis-csmith and we'll see how well it can learn that, but I think there's some interesting stuff to investigate here.</p>
+</section>
+
+    </article>
+<footer>
+Copyright David R. MacIver.
+
+CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
+</footer>
+  </body>
+</html>
