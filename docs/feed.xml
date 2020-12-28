@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-12-28T22:24:21+00:00</updated>
+  <updated>2020-12-28T22:25:08+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -545,7 +545,7 @@ and the reducer greedily tries each of \(t(x)_i\) in order. If none of them are 
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-12-28-16:19.html</id>
     <title>Reducing Weird Tests</title>
-    <updated>2020-12-28T22:24:21+00:00</updated>
+    <updated>2020-12-28T22:25:08+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Reducing Weird Tests&lt;/p&gt;
@@ -638,6 +638,9 @@ but Hypothesis's test-case reduction is unable to reliably transform all of the 
 
 
 &lt;p&gt;If one &lt;em&gt;did&lt;/em&gt; have some sort of easy way to sample from test cases that are strictly smaller than the current interesting test case, it might be worth running that for longer than it would be intuitively obviously useful as a sort of crude but perhaps surprisingly effective reducer? It's certainly more robust to this sort of problem than any kind of local transformation based reducer would be. &lt;/p&gt;
+
+
+&lt;p&gt;This also suggests that possibly test-case reducers should try a bit more bounded exploration of the small test cases than they currently do, but I think this is probably misleading due to the relatively small number of test cases in this example - for most formats of interest the number of test cases of size &lt;code&gt;n&lt;/code&gt; is exponential in &lt;code&gt;n&lt;/code&gt;, so any amount of enumeration other than trying the globally minimal test case (which &lt;em&gt;is&lt;/em&gt; usually worth doing) is probably not worth it.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-12-28-16:19.html" rel="alternate"/>

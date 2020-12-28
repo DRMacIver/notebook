@@ -160,6 +160,9 @@ but Hypothesis's test-case reduction is unable to reliably transform all of the 
 <p>If one <em>did</em> have some sort of easy way to sample from test cases that are strictly smaller than the current interesting test case, it might be worth running that for longer than it would be intuitively obviously useful as a sort of crude but perhaps surprisingly effective reducer? It's certainly more robust to this sort of problem than any kind of local transformation based reducer would be. </p>
 
 
+<p>This also suggests that possibly test-case reducers should try a bit more bounded exploration of the small test cases than they currently do, but I think this is probably misleading due to the relatively small number of test cases in this example - for most formats of interest the number of test cases of size <code>n</code> is exponential in <code>n</code>, so any amount of enumeration other than trying the globally minimal test case (which <em>is</em> usually worth doing) is probably not worth it.</p>
+
+
 </section>
 <section>
 <h2><a href="/posts/2020-08-07-12:27.html">2020-08-07</a></h2>
