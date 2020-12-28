@@ -95,15 +95,12 @@ As part of his example he ended up with what was functionally the following inte
 
 <blockquote>
 <p>Running this gives us an erroneous input:</p>
-<p><code>python
-   Falsifying example: test_f(
-       a=5, b=6, c=5,
-   )</code></p>
+<p><code>Falsifying example: test_f(a=5, b=6, c=5,)</code></p>
 <p>This is nondeterministic: I’ve also gotten <code>(0, 4, 0)</code> and <code>(-114, -114, -26354)</code> as error cases.</p>
 </blockquote>
 
 
-<p><code>(0, 4, 0)</code> is the (probably globally) correct answer of all of these according to Hypothesis's internal reduction heuristics,
+<p><code>(0, 4, 0)</code> is the (probably globally) correct answer of all of these according to Hypothesis's reduction logic,
 but Hypothesis's test-case reduction is unable to reliably transform all of the failing examples to it.</p>
 
 

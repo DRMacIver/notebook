@@ -85,13 +85,10 @@ As part of his example he ended up with what was functionally the following inte
 <p>He mentions in the article that this gives nondeterministic results for Hypothesis:</p>
 <blockquote>
 <p>Running this gives us an erroneous input:</p>
-<p><code>python
-   Falsifying example: test_f(
-       a=5, b=6, c=5,
-   )</code></p>
+<p><code>Falsifying example: test_f(a=5, b=6, c=5,)</code></p>
 <p>This is nondeterministic: I’ve also gotten <code>(0, 4, 0)</code> and <code>(-114, -114, -26354)</code> as error cases.</p>
 </blockquote>
-<p><code>(0, 4, 0)</code> is the (probably globally) correct answer of all of these according to Hypothesis's internal reduction heuristics,
+<p><code>(0, 4, 0)</code> is the (probably globally) correct answer of all of these according to Hypothesis's reduction logic,
 but Hypothesis's test-case reduction is unable to reliably transform all of the failing examples to it.</p>
 <p>I reacted to this as I always do to such things: "Oh, I wonder if I can make the test-case reducer better". But the answer is no, no I cannot, and the reason is that this test contains what is basically a hash function (not a very good hash function, but good enough), and as a result the test cases are pretty much uniformly distributed throughout the set of test cases - if you generate test cases where the values are between <code>-10</code> and <code>10</code>, then of the <code>9261</code> possible test cases, <code>129</code> are interesting, i.e. about <code>1.4%</code> which is about what you'd expect if the computation of <code>abs(out) % 100</code> were roughly randomly distributed.</p>
 <p>For such functions we end up with the slightly awkward situation where:</p>

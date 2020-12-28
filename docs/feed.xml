@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-12-28T16:19:00+00:00</updated>
+  <updated>2020-12-28T18:27:50+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -545,7 +545,7 @@ and the reducer greedily tries each of \(t(x)_i\) in order. If none of them are 
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-12-28-16:19.html</id>
     <title>Reducing Weird Tests</title>
-    <updated>2020-12-28T16:19:00+00:00</updated>
+    <updated>2020-12-28T18:27:50+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Reducing Weird Tests&lt;/p&gt;
@@ -575,15 +575,12 @@ As part of his example he ended up with what was functionally the following inte
 
 &lt;blockquote&gt;
 &lt;p&gt;Running this gives us an erroneous input:&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;python
-   Falsifying example: test_f(
-       a=5, b=6, c=5,
-   )&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Falsifying example: test_f(a=5, b=6, c=5,)&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;This is nondeterministic: I’ve also gotten &lt;code&gt;(0, 4, 0)&lt;/code&gt; and &lt;code&gt;(-114, -114, -26354)&lt;/code&gt; as error cases.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 
-&lt;p&gt;&lt;code&gt;(0, 4, 0)&lt;/code&gt; is the (probably globally) correct answer of all of these according to Hypothesis's internal reduction heuristics,
+&lt;p&gt;&lt;code&gt;(0, 4, 0)&lt;/code&gt; is the (probably globally) correct answer of all of these according to Hypothesis's reduction logic,
 but Hypothesis's test-case reduction is unable to reliably transform all of the failing examples to it.&lt;/p&gt;
 
 
