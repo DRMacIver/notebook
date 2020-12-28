@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-08-07T12:27:00+01:00</updated>
+  <updated>2020-12-28T16:19:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,45 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-07-17-10:10.html</id>
-    <title>Questions to Ask When Bored</title>
-    <updated>2020-07-17T10:38:40+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Questions to Ask When Bored&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-07-17&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I was thinking about boredom yesterday and &lt;a href="https://twitter.com/DRMacIver/status/1283657884392460290"&gt;asked about it on Twitter&lt;/a&gt; and had a few conversations about it. This caused me to realise that there are really a lot of different things we're lumping under the heading of boredom, and it might be useful to distinguish them more carefully.&lt;/p&gt;
-
-
-&lt;p&gt;Some of the things we might label as boredom include depression, listlessness, restlessness, fatigue... but rather than trying to put labels on all the different states of being bored I thought it might be useful to narrow it down instead to concrete questions you can ask about the felt sense of the boredom:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;Am I bored of a specific thing that I have to do? (Being in a meeting, working on something tedious, etc)&lt;/li&gt;
-&lt;li&gt;Do I not have anything interesting to do? (e.g. because all of your normal hobbies are inaccessible to you right now)&lt;/li&gt;
-&lt;li&gt;Am I unable to find &lt;em&gt;anything&lt;/em&gt; interesting right now? (You're probably depressed)&lt;/li&gt;
-&lt;li&gt;Do the things I am trying to do seem in principle interesting but I'm not in the mood for them? (You might have an unment need and anything that doesn't meet that need)&lt;/li&gt;
-&lt;li&gt;Am I trying to do things that I don't have the energy for? (You're tired, pick something easier)&lt;/li&gt;
-&lt;li&gt;Are there things that I want to do but also want not to do? (e.g. they've got a &lt;a href="https://notebook.drmaciver.com/posts/2020-05-06-09:51.html"&gt;fnord&lt;/a&gt; or an ugh field associated with them)&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;These questions are all useful debugging tools for helping understand what's actually going on, and treating it as a practical problem to solve. Some of them may be hard to solve in the moment (e.g. if you're exhausted and have no good low energy hobbies it's probably not the right time to try to think of one), but the information they provide in the moment can be used to solve the problem another time.&lt;/p&gt;
-
-
-&lt;p&gt;In general I find that better introspective understanding also tends to improve my emotional state. Boredom feels bad in part because it signals a poorly understood problem, and getting to the root of what that problem is lessens that feeling.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-07-17-10:10.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-07-22-12:49.html</id>
     <title>An Annoyingly Hard Algorithm to Beat</title>
@@ -495,7 +456,7 @@ Sometimes, of course, it's just a lie.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-08-07-12:27.html</id>
     <title>Ensuring Downward Paths</title>
-    <updated>2020-08-07T12:27:00+01:00</updated>
+    <updated>2020-08-07T15:41:49+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Ensuring Downward Paths&lt;/p&gt;
@@ -580,5 +541,108 @@ and the reducer greedily tries each of \(t(x)_i\) in order. If none of them are 
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2020-08-07-12:27.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2020-12-28-16:19.html</id>
+    <title>Reducing Weird Tests</title>
+    <updated>2020-12-28T16:19:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Reducing Weird Tests&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2020-12-28&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Hillel recently wrote about &lt;a href="https://buttondown.email/hillelwayne/archive/fd1f0758-ae31-4e83-9138-33721cbd5ce3"&gt;cross-branch testing&lt;/a&gt; - comparing implementations of the same API in two different branches as a form of differential testing to see whether a change introduced any functional differences.
+As part of his example he ended up with what was functionally the following interestingness test:&lt;/p&gt;
+
+
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;is_interesting&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="n"&gt;out&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+        &lt;span class="n"&gt;out&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;out&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nb"&gt;abs&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nb"&gt;abs&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;out&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="mi"&gt;100&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;9&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;He mentions in the article that this gives nondeterministic results for Hypothesis:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Running this gives us an erroneous input:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;python
+   Falsifying example: test_f(
+       a=5, b=6, c=5,
+   )&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;This is nondeterministic: I’ve also gotten &lt;code&gt;(0, 4, 0)&lt;/code&gt; and &lt;code&gt;(-114, -114, -26354)&lt;/code&gt; as error cases.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;&lt;code&gt;(0, 4, 0)&lt;/code&gt; is the (probably globally) correct answer of all of these according to Hypothesis's internal reduction heuristics,
+but Hypothesis's test-case reduction is unable to reliably transform all of the failing examples to it.&lt;/p&gt;
+
+
+&lt;p&gt;I reacted to this as I always do to such things: "Oh, I wonder if I can make the test-case reducer better". But the answer is no, no I cannot, and the reason is that this test contains what is basically a hash function (not a very good hash function, but good enough), and as a result the test cases are pretty much uniformly distributed throughout the set of test cases - if you generate test cases where the values are between &lt;code&gt;-10&lt;/code&gt; and &lt;code&gt;10&lt;/code&gt;, then of the &lt;code&gt;9261&lt;/code&gt; possible test cases, &lt;code&gt;129&lt;/code&gt; are interesting, i.e. about &lt;code&gt;1.4%&lt;/code&gt; which is about what you'd expect if the computation of &lt;code&gt;abs(out) % 100&lt;/code&gt; were roughly randomly distributed.&lt;/p&gt;
+
+
+&lt;p&gt;For such functions we end up with the slightly awkward situation where:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;It's not that hard to find test cases (&lt;code&gt;1%&lt;/code&gt; isn't that infrequent! We can just exhaustively enumerate to find the globally minimal test case).&lt;/li&gt;
+&lt;li&gt;It's hard enoguh to find test cases that most test-cases are locally minimal.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;Suppose for a typical triple of integers we have, say, &lt;code&gt;10&lt;/code&gt; reductions we can perform, and those reductions are no more likely than chance to work, then &lt;code&gt;90%&lt;/code&gt; of interesting test cases are locally minimal, which means that we'll typically end the reduction process within a few steps.&lt;/p&gt;
+
+
+&lt;p&gt;In order to explore this, lets consider the following toy model: Our space of interesting test cases are triples of integers between &lt;code&gt;0&lt;/code&gt; and &lt;code&gt;10&lt;/code&gt;, and we have a local reducer that makes the following transformations:&lt;/p&gt;
+
+
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;reduce_tuple&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="c1"&gt;# First try sorting the tuple&lt;/span&gt;
+    &lt;span class="k"&gt;yield&lt;/span&gt; &lt;span class="nb"&gt;tuple&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;sorted&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt;
+            &lt;span class="n"&gt;reduced&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;list&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+            &lt;span class="n"&gt;reduced&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;reduced&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;reduced&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;reduced&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+            &lt;span class="k"&gt;yield&lt;/span&gt; &lt;span class="nb"&gt;tuple&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;reduced&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+    &lt;span class="c1"&gt;# Now try lowering each component&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)):&lt;/span&gt;
+        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+            &lt;span class="n"&gt;reduced&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;list&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+            &lt;span class="n"&gt;reduced&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;-=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
+            &lt;span class="k"&gt;yield&lt;/span&gt; &lt;span class="nb"&gt;tuple&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;reduced&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+            &lt;span class="c1"&gt;# If we can raise the next component then try that&lt;/span&gt;
+            &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="ow"&gt;and&lt;/span&gt; &lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+                &lt;span class="n"&gt;reduced&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
+                &lt;span class="k"&gt;yield&lt;/span&gt; &lt;span class="nb"&gt;tuple&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;reduced&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;(if this doesn't make sense to you don't worry about it too much, it's just the first local reducer that came to mind for triples of integers)&lt;/p&gt;
+
+
+&lt;p&gt;Suppose we're reducing subject to an interesting test where the maximal value &lt;code&gt;(10, 10, 10)&lt;/code&gt; is always interesting and every other test case is interesting with probability &lt;code&gt;p&lt;/code&gt;. What is the probability that this local reducer finds the globally optimal test case?&lt;/p&gt;
+
+
+&lt;p&gt;Based on some fairly crude simulations, the local reducer starts finding the globally optimal test-case more around &lt;code&gt;p = 0.93&lt;/code&gt;, which has the amusing property that the local reducer is reliably worse (in expectation) than the reducer that just always tries &lt;code&gt;(0, 0, 0)&lt;/code&gt; and gives up if that doesn't work. Some equally crude simulation suggests that an approach that just enumerates the smallest test cases for a while returns at least as good a result in the same number of calls to the interestingness test.&lt;/p&gt;
+
+
+&lt;p&gt;I'm not sure if there's any sort of general lesson to derive here - most interestingness tests are not quite this adversarial - but I do feel like there is often something like this going on, where the reduction problem isn't that hard despite being in a local minimum, and I wonder if something loosely inspired by this that estimates the density of interesting test cases below the current interesting test case, but I'm not sure if that's entirely useful.&lt;/p&gt;
+
+
+&lt;p&gt;If one &lt;em&gt;did&lt;/em&gt; have some sort of easy way to sample from test cases that are strictly smaller than the current interesting test case, it might be worth running that for longer than it would be intuitively obviously useful as a sort of crude but perhaps surprisingly effective reducer? It's certainly more robust to this sort of problem than any kind of local transformation based reducer would be. &lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2020-12-28-16:19.html" rel="alternate"/>
   </entry>
 </feed>

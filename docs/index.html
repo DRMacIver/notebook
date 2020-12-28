@@ -65,6 +65,106 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
         
 
 <section>
+<h2><a href="/posts/2020-12-28-16:19.html">2020-12-28</a></h2>
+
+
+<p class="subtitle">Reducing Weird Tests</p>
+
+
+<dl class="metadata">
+<dt>Published</dt>
+<dd class="post-date">2020-12-28</dd>
+</dl>
+
+
+<p>Hillel recently wrote about <a href="https://buttondown.email/hillelwayne/archive/fd1f0758-ae31-4e83-9138-33721cbd5ce3">cross-branch testing</a> - comparing implementations of the same API in two different branches as a form of differential testing to see whether a change introduced any functional differences.
+As part of his example he ended up with what was functionally the following interestingness test:</p>
+
+
+<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">is_interesting</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">):</span>
+    <span class="n">out</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+        <span class="n">out</span> <span class="o">=</span> <span class="n">out</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="nb">abs</span><span class="p">(</span><span class="n">y</span> <span class="o">*</span> <span class="n">z</span> <span class="o">-</span> <span class="n">i</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="n">y</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">x</span>
+    <span class="k">return</span> <span class="nb">abs</span><span class="p">(</span><span class="n">out</span><span class="p">)</span> <span class="o">%</span> <span class="mi">100</span> <span class="o">==</span> <span class="mi">9</span>
+</pre></div>
+
+
+<p>He mentions in the article that this gives nondeterministic results for Hypothesis:</p>
+
+
+<blockquote>
+<p>Running this gives us an erroneous input:</p>
+<p><code>python
+   Falsifying example: test_f(
+       a=5, b=6, c=5,
+   )</code></p>
+<p>This is nondeterministic: I’ve also gotten <code>(0, 4, 0)</code> and <code>(-114, -114, -26354)</code> as error cases.</p>
+</blockquote>
+
+
+<p><code>(0, 4, 0)</code> is the (probably globally) correct answer of all of these according to Hypothesis's internal reduction heuristics,
+but Hypothesis's test-case reduction is unable to reliably transform all of the failing examples to it.</p>
+
+
+<p>I reacted to this as I always do to such things: "Oh, I wonder if I can make the test-case reducer better". But the answer is no, no I cannot, and the reason is that this test contains what is basically a hash function (not a very good hash function, but good enough), and as a result the test cases are pretty much uniformly distributed throughout the set of test cases - if you generate test cases where the values are between <code>-10</code> and <code>10</code>, then of the <code>9261</code> possible test cases, <code>129</code> are interesting, i.e. about <code>1.4%</code> which is about what you'd expect if the computation of <code>abs(out) % 100</code> were roughly randomly distributed.</p>
+
+
+<p>For such functions we end up with the slightly awkward situation where:</p>
+
+
+<ol>
+<li>It's not that hard to find test cases (<code>1%</code> isn't that infrequent! We can just exhaustively enumerate to find the globally minimal test case).</li>
+<li>It's hard enoguh to find test cases that most test-cases are locally minimal.</li>
+</ol>
+
+
+<p>Suppose for a typical triple of integers we have, say, <code>10</code> reductions we can perform, and those reductions are no more likely than chance to work, then <code>90%</code> of interesting test cases are locally minimal, which means that we'll typically end the reduction process within a few steps.</p>
+
+
+<p>In order to explore this, lets consider the following toy model: Our space of interesting test cases are triples of integers between <code>0</code> and <code>10</code>, and we have a local reducer that makes the following transformations:</p>
+
+
+<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">reduce_tuple</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
+    <span class="c1"># First try sorting the tuple</span>
+    <span class="k">yield</span> <span class="nb">tuple</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">t</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">t</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">t</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+            <span class="n">reduced</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+            <span class="n">reduced</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">reduced</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">reduced</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">],</span> <span class="n">reduced</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+            <span class="k">yield</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">reduced</span><span class="p">)</span>
+
+    <span class="c1"># Now try lowering each component</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">)):</span>
+        <span class="k">if</span> <span class="n">t</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">reduced</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+            <span class="n">reduced</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-=</span> <span class="mi">1</span>
+            <span class="k">yield</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">reduced</span><span class="p">)</span>
+            <span class="c1"># If we can raise the next component then try that</span>
+            <span class="k">if</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> <span class="ow">and</span> <span class="n">t</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+                <span class="n">reduced</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+                <span class="k">yield</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">reduced</span><span class="p">)</span>
+</pre></div>
+
+
+<p>(if this doesn't make sense to you don't worry about it too much, it's just the first local reducer that came to mind for triples of integers)</p>
+
+
+<p>Suppose we're reducing subject to an interesting test where the maximal value <code>(10, 10, 10)</code> is always interesting and every other test case is interesting with probability <code>p</code>. What is the probability that this local reducer finds the globally optimal test case?</p>
+
+
+<p>Based on some fairly crude simulations, the local reducer starts finding the globally optimal test-case more around <code>p = 0.93</code>, which has the amusing property that the local reducer is reliably worse (in expectation) than the reducer that just always tries <code>(0, 0, 0)</code> and gives up if that doesn't work. Some equally crude simulation suggests that an approach that just enumerates the smallest test cases for a while returns at least as good a result in the same number of calls to the interestingness test.</p>
+
+
+<p>I'm not sure if there's any sort of general lesson to derive here - most interestingness tests are not quite this adversarial - but I do feel like there is often something like this going on, where the reduction problem isn't that hard despite being in a local minimum, and I wonder if something loosely inspired by this that estimates the density of interesting test cases below the current interesting test case, but I'm not sure if that's entirely useful.</p>
+
+
+<p>If one <em>did</em> have some sort of easy way to sample from test cases that are strictly smaller than the current interesting test case, it might be worth running that for longer than it would be intuitively obviously useful as a sort of crude but perhaps surprisingly effective reducer? It's certainly more robust to this sort of problem than any kind of local transformation based reducer would be. </p>
+
+
+</section>
+<section>
 <h2><a href="/posts/2020-08-07-12:27.html">2020-08-07</a></h2>
 
 
@@ -274,76 +374,12 @@ This is basically how you end up with Brexit.</p>
 
 
 </section>
-<section>
-<h2><a href="/posts/2020-07-29-14:50.html">2020-07-29</a></h2>
-
-
-<p class="subtitle">Inclusivity and Onboarding</p>
-
-
-<dl class="metadata">
-<dt>Published</dt>
-<dd class="post-date">2020-07-29</dd>
-</dl>
-
-
-<p>From <a href="https://amzn.to/2WYeYew">Talking About Machines</a> by Julian Orr, page 70:</p>
-
-
-<blockquote>
-<p>The conversation of a closely cooperating group can be quite cryptic when the members are sharing information about work; they are considering a well-defined field which can be discussed with considerable economy, verging on code.</p>
-</blockquote>
-
-
-<p>A thing I have been thinking about a lot recently is the trade off between making a community accessible and the community being able to serve the needs of its core members.</p>
-
-
-<p>In <a href="https://drmaciver.substack.com/p/being-deep-in-an-abstraction-stack">Being Deep in an Abstraction Stack</a> I talk about how you need a community of people who share your abstraction stack and there is really no substitute for this no matter how much we want one.</p>
-
-
-<p>But unfortunately by creating such a community there is a certain amount of inherent gatekeeping: It is a community for people who have that abstraction stack, therefore if you do not have that abstraction stack you cannot participate in the community as a full member. I don't necessarily mean this as a moral judgement - sometimes gateekeeping is good - but there is nevertheless a certain amount of elitism implicit in the existence of such communities. In order to talk about our <a href="https://drmaciver.substack.com/p/maintaining-niche-interests">niche interests</a> we <em>need</em> this cryptic shared language, and attempts to make the group more inclusive by avoiding that will also make it worse for us.</p>
-
-
-<p>I don't really have an answer to that other than "deal with it". "I need other people to talk about my interests with" is a <a href="https://notebook.drmaciver.com/posts/2020-07-15-09:33.html">nice problem to have</a>, but it's still a need and it's one that it is reasonable to satisfy, and creating slightly exclusionary communities is pretty much the only way to solve that problem..</p>
-
-
-<p>Part of why I've been thinking about this is <a href="https://docs.google.com/document/d/1y3DkPGuAZiGbeNYlwje6jTlFxz9peIGnjSuZTwF4NGM/edit">Weird CS Theory Discord</a>. The opening paragraph includes the sentence:</p>
-
-
-<blockquote>
-<p>You don’t have to “be” a computer scientist, or even know much computer science, to be here, but if you’re not interested in computer science you probably won’t enjoy the space.</p>
-</blockquote>
-
-
-<p>This hopefully makes it clear that we're not looking to gatekeep (I originally typoed that as "gategeek" which, well, valid) based on formal qualifications, but nevertheless there is a reasonably high bar to participating in the space. People are welcome to join, and they're welcome to learn to become full participants through their experience in the space, but that is there.</p>
-
-
-<p>But, at the same time, we're a tiny free community that I created to serve my particular need for more chatter about weird CS theory. We're absolutely not a computer science institution. We cannot invest a tonne of effort in onboarding people, the best we can possibly hope to do is to be patient and welcoming to people who are still in the process of onboarding themselves.</p>
-
-
-<p>One problem that occurs, and is important to avoid, is when this lack of inclusitivity becomes considered a feature rather than an unfortunate trade off. The specialised language becomes not a useful shorthand but a shibboleth.
-I have tried to head that off by making it clear that asking us to explain ourselves is always valid:</p>
-
-
-<blockquote>
-<p>[You are encouraged to] Ask questions. (“Can you explain that?” is always fine, though answering “No” is fine too)</p>
-</blockquote>
-
-
-<p>We have a specific norm that is designed to give people the space to indicate that they need help understanding something, but also a specific norm that we should not exhaust ourselves trying to bring people in.
-If people want to bring themselves in, the door is open, but we can only help so much.</p>
-
-
-<p>Unfortunately, this too is exclusionary: Many people don't have the time or resources to do that work themselves.
-I feel bad about this, but ultimately the world is still a better place for the community, and there is only so much I can do about it.</p>
-
-
-</section>
 
 
 <h2>2020-07</h2>
 
 <ul class=postarchive>
+<li><a href="/posts/2020-07-29-14:50.html">Inclusivity and Onboarding</a></li>
 <li><a href="/posts/2020-07-28-09:52.html">Seeing Your Working</a></li>
 <li><a href="/posts/2020-07-27-15:30.html">Thinking Outside Your Head</a></li>
 <li><a href="/posts/2020-07-26-10:40.html">Notes on Reduced Output</a></li>
