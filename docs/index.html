@@ -112,11 +112,11 @@ but Hypothesis's test-case reduction is unable to reliably transform all of the 
 
 <ol>
 <li>It's not that hard to find test cases (<code>1%</code> isn't that infrequent! We can just exhaustively enumerate to find the globally minimal test case).</li>
-<li>It's hard enoguh to find test cases that most test-cases are locally minimal.</li>
+<li>It's hard enough to find test cases that most test-cases are locally minimal.</li>
 </ol>
 
 
-<p>Suppose for a typical triple of integers we have, say, <code>10</code> reductions we can perform, and those reductions are no more likely than chance to work, then <code>90%</code> of interesting test cases are locally minimal, which means that we'll typically end the reduction process within a few steps.</p>
+<p>The reason for (2) is that if reductions are not any more likely to be interesting than any other test case (which seems roughly true for hillel's example and is true by construction for truly random examples), if you try \(N\) reductions you only expect \(0.01 N\) reductions to work. Suppose for a typical triple of integers we have, say, <code>10</code> reductions we can perform, and those reductions are no more likely than chance to work, then <code>90%</code> of interesting test cases are locally minimal, which means that we'll typically end the reduction process within a few steps.</p>
 
 
 <p>In order to explore this, lets consider the following toy model: Our space of interesting test cases are triples of integers between <code>0</code> and <code>10</code>, and we have a local reducer that makes the following transformations:</p>

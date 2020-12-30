@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2020-12-28T22:25:08+00:00</updated>
+  <updated>2020-12-28T22:26:53+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -545,7 +545,7 @@ and the reducer greedily tries each of \(t(x)_i\) in order. If none of them are 
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-12-28-16:19.html</id>
     <title>Reducing Weird Tests</title>
-    <updated>2020-12-28T22:25:08+00:00</updated>
+    <updated>2020-12-28T22:26:53+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Reducing Weird Tests&lt;/p&gt;
@@ -592,11 +592,11 @@ but Hypothesis's test-case reduction is unable to reliably transform all of the 
 
 &lt;ol&gt;
 &lt;li&gt;It's not that hard to find test cases (&lt;code&gt;1%&lt;/code&gt; isn't that infrequent! We can just exhaustively enumerate to find the globally minimal test case).&lt;/li&gt;
-&lt;li&gt;It's hard enoguh to find test cases that most test-cases are locally minimal.&lt;/li&gt;
+&lt;li&gt;It's hard enough to find test cases that most test-cases are locally minimal.&lt;/li&gt;
 &lt;/ol&gt;
 
 
-&lt;p&gt;Suppose for a typical triple of integers we have, say, &lt;code&gt;10&lt;/code&gt; reductions we can perform, and those reductions are no more likely than chance to work, then &lt;code&gt;90%&lt;/code&gt; of interesting test cases are locally minimal, which means that we'll typically end the reduction process within a few steps.&lt;/p&gt;
+&lt;p&gt;The reason for (2) is that if reductions are not any more likely to be interesting than any other test case (which seems roughly true for hillel's example and is true by construction for truly random examples), if you try \(N\) reductions you only expect \(0.01 N\) reductions to work. Suppose for a typical triple of integers we have, say, &lt;code&gt;10&lt;/code&gt; reductions we can perform, and those reductions are no more likely than chance to work, then &lt;code&gt;90%&lt;/code&gt; of interesting test cases are locally minimal, which means that we'll typically end the reduction process within a few steps.&lt;/p&gt;
 
 
 &lt;p&gt;In order to explore this, lets consider the following toy model: Our space of interesting test cases are triples of integers between &lt;code&gt;0&lt;/code&gt; and &lt;code&gt;10&lt;/code&gt;, and we have a local reducer that makes the following transformations:&lt;/p&gt;
