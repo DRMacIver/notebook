@@ -65,6 +65,147 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
         
 
 <section>
+<h2><a href="/posts/2021-01-01-11:22.html">2021-01-01</a></h2>
+
+
+<p class="subtitle">Basic Reducer Design</p>
+
+
+<dl class="metadata">
+<dt>Published</dt>
+<dd class="post-date">2021-01-01</dd>
+</dl>
+
+
+<p>There's a design of test-case reducer that I use and consider the natural way to do test-case reducers,
+but seems to be mildly idiosyncratic to me (though most of the details of it are found in other test-case reducers),
+which is basically this:</p>
+
+
+<ol>
+<li>Test cases are given some total order, the <em>reduction order</em>, and the goal of test-case reduction is to (ideally) find the minimal interesting test case in that reduction order.</li>
+<li>Test-case reduction is managed by a stateful object that automatically simplifies the book keeping of doing that.</li>
+<li>Test-case reduction consists of a sequence of passes that are run until none of them lowers the current most interesting test case.</li>
+</ol>
+
+
+<p>(the fact that there is a total reduction order plus some of the book keeping are the bits that seem not totally standard)</p>
+
+
+<p>The reduction order lets us keep track of the current best test case and this significantly simplifies keeping track of the progress of the reducer.
+This can all be encapsulated as the following Python code:</p>
+
+
+<div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">Reducer</span><span class="p">:</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">initial_test_case</span><span class="p">,</span>
+        <span class="n">is_interesting</span><span class="p">,</span> 
+        <span class="n">reduction_order</span><span class="p">,</span>
+        <span class="n">reduction_passes</span><span class="p">,</span>
+    <span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span> <span class="o">=</span> <span class="n">initial_test_case</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__is_interesting</span> <span class="o">=</span> <span class="n">is_interesting</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">reduction_order</span> <span class="o">=</span> <span class="n">reduction_order</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">reduction_passes</span> <span class="o">=</span> <span class="n">reduction_passes</span>
+
+        <span class="c1"># We cache the result of the interestingness test - this is pretty</span>
+        <span class="c1"># standard in test-case reduction.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__cache</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_interesting</span><span class="p">(</span><span class="n">initial_test_case</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">"Cannot reduce uninteresting initial test case"</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">is_interesting</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">test_case</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__cache</span><span class="p">[</span><span class="n">test_case</span><span class="p">]</span>
+        <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+            <span class="k">pass</span>
+
+        <span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__is_interesting</span><span class="p">(</span><span class="n">test_case</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__cache</span><span class="p">[</span><span class="n">test_case</span><span class="p">]</span> <span class="o">=</span> <span class="n">result</span>
+
+        <span class="c1"># If this is a smaller interesting test case than our current best</span>
+        <span class="c1"># known one, automatically update.</span>
+        <span class="k">if</span> <span class="p">(</span>
+            <span class="n">result</span> <span class="ow">and</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">reduction_order</span><span class="p">(</span><span class="n">test_case</span><span class="p">)</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">reduction_order</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span><span class="p">)</span>
+        <span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span> <span class="o">=</span> <span class="n">test_case</span>
+        <span class="k">return</span> <span class="n">result</span>
+
+    <span class="k">def</span> <span class="nf">reduce</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">prev</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">while</span> <span class="n">prev</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span><span class="p">:</span>
+            <span class="n">prev</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span>
+            <span class="c1"># Each reduction pass calls self.is_interesting in order to do</span>
+            <span class="c1"># any work, so we do not need to keep track of whether they</span>
+            <span class="c1"># succeeded or failed.</span>
+            <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">reduction_passes</span><span class="p">:</span>
+                <span class="n">f</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">reduce</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="n">reducer</span> <span class="o">=</span> <span class="n">Reducer</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+    <span class="n">reducer</span><span class="o">.</span><span class="n">reduce</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">reducer</span><span class="o">.</span><span class="n">best_test_case</span>
+</pre></div>
+
+
+<p>A reduction pass in this framework looks something like the following (this is a greedy algorithm for deleting elements from a list or other sequence, like delta debugging without the delta step):</p>
+
+
+<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">greedy_deletion</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span><span class="p">):</span>
+        <span class="n">attempt</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span><span class="p">[:</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">:]</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_interesting</span><span class="p">(</span><span class="n">attempt</span><span class="p">):</span>
+            <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+</pre></div>
+
+
+<p>This design has a lot of flexibility to it. For example, it makes arbitrary reduction passes into an anytime algorithm, because you always know the current best test case,
+and so you can design it work with arbitrary interruptions.
+e.g. If you wanted to impose a limit on the maximum number of calls you could do it by modifying the reducer as follows:</p>
+
+
+<div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">StopReducing</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
+    <span class="k">pass</span>
+
+<span class="k">class</span> <span class="nc">Reducer</span><span class="p">:</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+        <span class="o">...</span><span class="p">,</span>
+        <span class="n">max_calls</span><span class="o">=</span><span class="mi">1000</span>
+    <span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">max_calls</span> <span class="o">=</span> <span class="n">max_calls</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">call_count</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="o">...</span>
+
+    <span class="k">def</span> <span class="nf">is_interesting</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">test_case</span><span class="p">):</span>
+        <span class="o">...</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">call_count</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">call_count</span> <span class="o">&gt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_calls</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">StopReducing</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">result</span>
+
+    <span class="k">def</span> <span class="nf">reduce</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="o">...</span>
+        <span class="k">except</span> <span class="n">StopReducing</span><span class="p">:</span>
+            <span class="k">pass</span>
+</pre></div>
+
+
+<p>(People will, at this point, complain that I am using exceptions for control flow. Yes I am. What of it?)</p>
+
+
+<p>One downside to this design is that it doesn't play that well with multithreading. This isn't a major problem in Python, so I haven't spent much time working on it, but roughly there are two obvious things you can do with this design: You can make the best test case thread local and then merge by taking the minimum when you join threads, or you can make your reduction passes single-threaded but use speculative concurrency to speed them up. This latter approach is roughly what reducers like <a href="https://github.com/googleprojectzero/halfempty">halfempty</a>. I've experimented a bit with this in some reducer prototypes, but not in Hypothesis where it's not especially useful because Python.</p>
+
+
+</section>
+<section>
 <h2><a href="/posts/2020-12-28-16:19.html">2020-12-28</a></h2>
 
 
@@ -316,69 +457,12 @@ Sometimes, of course, it's just a lie.</p>
 
 
 </section>
-<section>
-<h2><a href="/posts/2020-07-30-16:00.html">2020-07-30</a></h2>
-
-
-<p class="subtitle">Politics as long periods of boredom punctuated by moments of sheer terror</p>
-
-
-<dl class="metadata">
-<dt>Published</dt>
-<dd class="post-date">2020-07-30</dd>
-</dl>
-
-
-<p>From <a href="https://amzn.to/2yvyoOw">Democracy in Small Groups</a> by John Gastil, page 145:</p>
-
-
-<blockquote>
-<p>Consensus and democracy didn't always work to the satisfaction of the faculty and students at the Meeting School. Even as students obtained ever-greater power, they remaind reluctant to deal with many important issues.</p>
-</blockquote>
-
-
-<p>I think an under-appreciated constraint on the running of human civilisation is just how incredibly boring well-functioning politics is. (2020 politics is of course, sadly, not boring).</p>
-
-
-<p>Worse, it manages to be simultaneously:</p>
-
-
-<ul>
-<li>Incredibly Boring</li>
-<li>Extremely detailed</li>
-<li>Highly Stressful</li>
-<li>Utterly Vital</li>
-</ul>
-
-
-<p>I feel like this is a combination of factors that a democratic process is almost uniquely poorly suited for, which is I guess why we end up delegating so much of the running of a country to its civil service.</p>
-
-
-<p>But there end up being all sorts of things which have these properties and you <em>can't</em> delegate to a civil service, because they require actual policy decisions, and I feel like we don't really have a good handle on how those work (or, at least <em>I</em> don't have a good handle on how those work. Is there some sort of ethnographic study of the UK parliament I could read?).</p>
-
-
-<p>The worst combination seems to happen when a decision <em>requires</em> an understanding of all these boring details, but people who are not willing to believe that have democratic oversight over the decision anyway.
-This is basically how you end up with Brexit.</p>
-
-
-<p>On the other hand, I know enough about how the sausage is made that I wouldn't want a country run entirely by the civil service either (I admit I might still prefer this to the current lot). Experts are, ultimately, still people, and those people <em>do</em> in some way need to be aligned with the wishes of the populace, at least to the degree that those wishes are reality-based and not actively murderous.</p>
-
-
-<p>(OK, maybe I <em>don't</em> want much democracy in the UK, as we seem to be pretty bad at both halves of that)</p>
-
-
-<p>I don't have any sort of solution here. I often describe the problem of how to coordinate large groups of people whose interests are only weakly mutually aligned as the fundamental problem of civilisation, so it's not surprising that I'm not going to solve it in a dashed off notebook post, but I do feel like managing this boredom aspect is more important than I had previously realised.</p>
-
-
-<p>Unfortunately, currently we manage the boredom of politics by getting increasingly frustrated with it and, as a result, eventually deciding to make politics exciting, and that doesn't go so well. </p>
-
-
-</section>
 
 
 <h2>2020-07</h2>
 
 <ul class=postarchive>
+<li><a href="/posts/2020-07-30-16:00.html">Politics as long periods of boredom punctuated by moments of sheer terror</a></li>
 <li><a href="/posts/2020-07-29-14:50.html">Inclusivity and Onboarding</a></li>
 <li><a href="/posts/2020-07-28-09:52.html">Seeing Your Working</a></li>
 <li><a href="/posts/2020-07-27-15:30.html">Thinking Outside Your Head</a></li>

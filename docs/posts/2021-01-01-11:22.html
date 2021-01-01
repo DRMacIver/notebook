@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+DRMacIver's Notebook: Basic Reducer Design
+    </title>
+
+    <meta property="og:title" content="Basic Reducer Design">
+
+    <meta property="og:url" content="https://notebook.drmaciver.com/posts/2021-01-01-11:22.html" />
+    <link rel="canonical" href="https://notebook.drmaciver.com/posts/2021-01-01-11:22.html" />
+    <script src="https://hypothes.is/embed.js" async></script>
+
+
+    <meta name="twitter:card" content="summary" />
+
+    <meta property="og:creator" content="@DRMacIver">
+
+    <link rel="stylesheet" href="/pygments.css"/>
+    <link rel="stylesheet" href="/tufte.css"/>
+    <link rel="stylesheet" href="/latex.css"/>
+    <link rel="stylesheet" href="/drmnotes.css"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
+});
+
+MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
+  console.log(message)
+});
+
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169185204-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169185204-1');
+</script>
+
+  </head>
+
+  <body>
+    <article>
+        <h1><a href="/">DRMacIver's Notebook</a></h1>
+        <p class=subtitle>Basic Reducer Design</p>
+
+        
+
+<section id="the-post">
+<p class=subtitle>Basic Reducer Design</p>
+<dl class=metadata>
+<dt>Published</dt>
+<dd class="post-date">2021-01-01</dd>
+</dl>
+
+<p>There's a design of test-case reducer that I use and consider the natural way to do test-case reducers,
+but seems to be mildly idiosyncratic to me (though most of the details of it are found in other test-case reducers),
+which is basically this:</p>
+<ol>
+<li>Test cases are given some total order, the <em>reduction order</em>, and the goal of test-case reduction is to (ideally) find the minimal interesting test case in that reduction order.</li>
+<li>Test-case reduction is managed by a stateful object that automatically simplifies the book keeping of doing that.</li>
+<li>Test-case reduction consists of a sequence of passes that are run until none of them lowers the current most interesting test case.</li>
+</ol>
+<p>(the fact that there is a total reduction order plus some of the book keeping are the bits that seem not totally standard)</p>
+<p>The reduction order lets us keep track of the current best test case and this significantly simplifies keeping track of the progress of the reducer.
+This can all be encapsulated as the following Python code:</p>
+<div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">Reducer</span><span class="p">:</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">initial_test_case</span><span class="p">,</span>
+        <span class="n">is_interesting</span><span class="p">,</span> 
+        <span class="n">reduction_order</span><span class="p">,</span>
+        <span class="n">reduction_passes</span><span class="p">,</span>
+    <span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span> <span class="o">=</span> <span class="n">initial_test_case</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__is_interesting</span> <span class="o">=</span> <span class="n">is_interesting</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">reduction_order</span> <span class="o">=</span> <span class="n">reduction_order</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">reduction_passes</span> <span class="o">=</span> <span class="n">reduction_passes</span>
+
+        <span class="c1"># We cache the result of the interestingness test - this is pretty</span>
+        <span class="c1"># standard in test-case reduction.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__cache</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_interesting</span><span class="p">(</span><span class="n">initial_test_case</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">"Cannot reduce uninteresting initial test case"</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">is_interesting</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">test_case</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__cache</span><span class="p">[</span><span class="n">test_case</span><span class="p">]</span>
+        <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+            <span class="k">pass</span>
+
+        <span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__is_interesting</span><span class="p">(</span><span class="n">test_case</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__cache</span><span class="p">[</span><span class="n">test_case</span><span class="p">]</span> <span class="o">=</span> <span class="n">result</span>
+
+        <span class="c1"># If this is a smaller interesting test case than our current best</span>
+        <span class="c1"># known one, automatically update.</span>
+        <span class="k">if</span> <span class="p">(</span>
+            <span class="n">result</span> <span class="ow">and</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">reduction_order</span><span class="p">(</span><span class="n">test_case</span><span class="p">)</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">reduction_order</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span><span class="p">)</span>
+        <span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span> <span class="o">=</span> <span class="n">test_case</span>
+        <span class="k">return</span> <span class="n">result</span>
+
+    <span class="k">def</span> <span class="nf">reduce</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">prev</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">while</span> <span class="n">prev</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span><span class="p">:</span>
+            <span class="n">prev</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span>
+            <span class="c1"># Each reduction pass calls self.is_interesting in order to do</span>
+            <span class="c1"># any work, so we do not need to keep track of whether they</span>
+            <span class="c1"># succeeded or failed.</span>
+            <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">reduction_passes</span><span class="p">:</span>
+                <span class="n">f</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">reduce</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="n">reducer</span> <span class="o">=</span> <span class="n">Reducer</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+    <span class="n">reducer</span><span class="o">.</span><span class="n">reduce</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">reducer</span><span class="o">.</span><span class="n">best_test_case</span>
+</pre></div>
+<p>A reduction pass in this framework looks something like the following (this is a greedy algorithm for deleting elements from a list or other sequence, like delta debugging without the delta step):</p>
+<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">greedy_deletion</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span><span class="p">):</span>
+        <span class="n">attempt</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span><span class="p">[:</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">:]</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_interesting</span><span class="p">(</span><span class="n">attempt</span><span class="p">):</span>
+            <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+</pre></div>
+<p>This design has a lot of flexibility to it. For example, it makes arbitrary reduction passes into an anytime algorithm, because you always know the current best test case,
+and so you can design it work with arbitrary interruptions.
+e.g. If you wanted to impose a limit on the maximum number of calls you could do it by modifying the reducer as follows:</p>
+<div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">StopReducing</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
+    <span class="k">pass</span>
+
+<span class="k">class</span> <span class="nc">Reducer</span><span class="p">:</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+        <span class="o">...</span><span class="p">,</span>
+        <span class="n">max_calls</span><span class="o">=</span><span class="mi">1000</span>
+    <span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">max_calls</span> <span class="o">=</span> <span class="n">max_calls</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">call_count</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="o">...</span>
+
+    <span class="k">def</span> <span class="nf">is_interesting</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">test_case</span><span class="p">):</span>
+        <span class="o">...</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">call_count</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">call_count</span> <span class="o">&gt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_calls</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">StopReducing</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">result</span>
+
+    <span class="k">def</span> <span class="nf">reduce</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="o">...</span>
+        <span class="k">except</span> <span class="n">StopReducing</span><span class="p">:</span>
+            <span class="k">pass</span>
+</pre></div>
+<p>(People will, at this point, complain that I am using exceptions for control flow. Yes I am. What of it?)</p>
+<p>One downside to this design is that it doesn't play that well with multithreading. This isn't a major problem in Python, so I haven't spent much time working on it, but roughly there are two obvious things you can do with this design: You can make the best test case thread local and then merge by taking the minimum when you join threads, or you can make your reduction passes single-threaded but use speculative concurrency to speed them up. This latter approach is roughly what reducers like <a href="https://github.com/googleprojectzero/halfempty">halfempty</a>. I've experimented a bit with this in some reducer prototypes, but not in Hypothesis where it's not especially useful because Python.</p>
+</section>
+
+    </article>
+<footer>
+Copyright David R. MacIver.
+
+CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
+</footer>
+  </body>
+</html>
