@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+DRMacIver's Notebook: Rejection Sampling in Hypothesis
+    </title>
+
+    <meta property="og:title" content="Rejection Sampling in Hypothesis">
+
+    <meta property="og:url" content="https://notebook.drmaciver.com/posts/2021-01-14-14:00.html" />
+    <link rel="canonical" href="https://notebook.drmaciver.com/posts/2021-01-14-14:00.html" />
+    <script src="https://hypothes.is/embed.js" async></script>
+
+
+    <meta name="twitter:card" content="summary" />
+
+    <meta property="og:creator" content="@DRMacIver">
+
+    <link rel="stylesheet" href="/pygments.css"/>
+    <link rel="stylesheet" href="/tufte.css"/>
+    <link rel="stylesheet" href="/latex.css"/>
+    <link rel="stylesheet" href="/drmnotes.css"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
+});
+
+MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
+  console.log(message)
+});
+
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169185204-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169185204-1');
+</script>
+
+  </head>
+
+  <body>
+    <article>
+        <h1><a href="/">DRMacIver's Notebook</a></h1>
+        <p class=subtitle>Rejection Sampling in Hypothesis</p>
+
+        
+
+<section id="the-post">
+<p class=subtitle>Rejection Sampling in Hypothesis</p>
+<dl class=metadata>
+<dt>Published</dt>
+<dd class="post-date">2021-01-14</dd>
+</dl>
+
+<p>(This post assumes you know roughly how Hypothesis does test-case reduction and generation. See <a href="https://2020.ecoop.org/details/ecoop-2020-papers/13/Test-Case-Reduction-via-Test-Case-Generation-Insights-From-the-Hypothesis-Reducer">our ECOOP paper</a> for a high level explanation)</p>
+<p>Suppose you have some generator <code>base</code> and you want to sample from it conditionally.
+In Hypotheis you can do this with <code>base.filter(condition)</code>.</p>
+<p>Conceptually, this does <em>rejection sampling</em>, which works roughly like this:</p>
+<div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">Filtered</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">base</span><span class="p">,</span> <span class="n">condition</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__base</span> <span class="o">=</span> <span class="n">base</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__condition</span> <span class="o">=</span> <span class="n">condition</span>
+
+    <span class="k">def</span> <span class="nf">do_draw</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+            <span class="n">attempt</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__base</span><span class="p">)</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__condition</span><span class="p">(</span><span class="n">attempt</span><span class="p">):</span>
+                <span class="k">return</span> <span class="n">attempt</span>
+</pre></div>
+<p>That is, we're attempting to draw from the conditional distribution of values that come from <code>base</code> that satisfy <code>condition</code> and we do this by repeatedly drawing values from it until one satisfies the condition.</p>
+<p>This has a couple of problems:</p>
+<ol>
+<li>The underlying choice sequence contains a lot of probably useless garbage - we made a bunch of choices in each iteration of the loop when drawing from the base (and possibly even when calling the condition! This is allowed), and these are probably all irrelevant.</li>
+<li>These loops are potentially very long, especially if the condition is hard or impossible to satisfy.</li>
+</ol>
+<p>We adopt the following heuristic approach to deal with the second problem:</p>
+<div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">Filtered</span><span class="p">:</span>
+    <span class="o">...</span>
+
+    <span class="k">def</span> <span class="nf">do_draw</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+            <span class="n">attempt</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__base</span><span class="p">)</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__condition</span><span class="p">(</span><span class="n">attempt</span><span class="p">):</span>
+                <span class="k">return</span> <span class="n">attempt</span>
+        <span class="n">data</span><span class="o">.</span><span class="n">mark_invalid</span><span class="p">()</span>
+</pre></div>
+<p>That is, we terminate all rejection sampling at three iterations - it may well be possible to proceed from there, but if so we have a chance at trying again at the next generation, and spending longer seems largely not worth it.</p>
+<p>(Why three you ask? Well, let me ask you a better question: Why not three?)</p>
+<p>(That is to say, no good reason. It's a fairly arbitrarily chosen number that seems to work OK)</p>
+<p>The first problem we have a slightly more principled way to deal with: We want to be able to reduce the choice sequence by removing all the redundant draws.</p>
+<p>(This is made <em>slightly</em> more complicated by the fact that the draws might not be redundant - Hypothesis generators are allowed to have side effects, such as inserting rows into a database, so it's possible for a filtered generator to do important work in the initial loops).</p>
+<p>Assuming for the moment that <code>condition</code> does not make any choices (which it mostly won't, and we're not that fussed about producing worse results if it does) this is actually relatively easy:
+The boundaries of the <code>draw</code> call are marked on the choice sequence, and the reducer can try deleting that region of the choice sequence. This allows it to delete the early iterations of the loop,
+resulting in an effect where in a reduced choice sequence we just get implausibly lucky and always satisfy the condition first time.</p>
+<p>We can, and do (although <a href="https://github.com/HypothesisWorks/hypothesis/pull/2757">it turns out this got silently broken at some point and I fixed it as a result of writing this blog post</a>), speed this up further by adding special boundary markers that indicate that the region is probably irrelevant.
+This looks like the following:</p>
+<div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">Filtered</span><span class="p">:</span>
+    <span class="o">...</span>
+
+    <span class="k">def</span> <span class="nf">do_draw</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+            <span class="n">data</span><span class="o">.</span><span class="n">start_example</span><span class="p">(</span><span class="n">FILTER_LABEL</span><span class="p">)</span>
+            <span class="n">attempt</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__base</span><span class="p">)</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__condition</span><span class="p">(</span><span class="n">attempt</span><span class="p">):</span>
+                <span class="n">data</span><span class="o">.</span><span class="n">stop_example</span><span class="p">()</span>
+                <span class="k">return</span> <span class="n">attempt</span>
+            <span class="n">data</span><span class="o">.</span><span class="n">stop_example</span><span class="p">(</span><span class="n">discard</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">data</span><span class="o">.</span><span class="n">mark_invalid</span><span class="p">()</span>
+</pre></div>
+<p>The reason this helps is that we can gather together all regions of the choice sequence that have been marked as discarded and attempt to delete them simultaneously.
+This will, usually, work. In particular it allows us to make all filtered generators implausibly lucky simultaneously with one call.</p>
+<p>This kind of annotation of the choice sequence with useful information about common patterns in generation is often quite helpful for Hypothesis's test-case reduction. I think a lot of it is not that necessary any more, but this distinction between used and discarded regions seems to help a great deal and often allows for some significant performance improvements during reduction.</p>
+</section>
+
+    </article>
+<footer>
+Copyright David R. MacIver.
+
+CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
+</footer>
+  </body>
+</html>

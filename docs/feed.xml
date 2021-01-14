@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2021-01-11T06:13:00+00:00</updated>
+  <updated>2021-01-14T14:00:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,72 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-07-27-15:30.html</id>
-    <title>Thinking Outside Your Head</title>
-    <updated>2020-07-27T17:54:47+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Thinking Outside Your Head&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-07-27&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;As per &lt;a href="https://notebook.drmaciver.com/posts/2020-07-26-10:40.html"&gt;notes on reduced output&lt;/a&gt; I'm trying to do more book post prompts. Right now I think this will be &lt;em&gt;very&lt;/em&gt; rough and ready stuff where I'm just gathering together some related thoughts.&lt;/p&gt;
-
-
-&lt;p&gt;From &lt;a href="https://amzn.to/2LZNHSF"&gt;Behind Human Error&lt;/a&gt; by Woods et al., page 173:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;flexibility tends to create and proliferate modes of operation which create new cognitive demands on practitioners. Practitioners must know more - both about how the system works in each different mode and about how to manage the new set of options in different operational contexts.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;Long ago I wrote &lt;a href="https://notebook.drmaciver.com/posts/2018-10-31-16:54.html"&gt;The No Genies Conjecture&lt;/a&gt;, in which I proposed that all systems have at most two of the following properties:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;Powerful&lt;/li&gt;
-&lt;li&gt;Flexible&lt;/li&gt;
-&lt;li&gt;Easy to use&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;This prompted a good conversation with &lt;a href="https://twitter.com/chrisamaphone/status/1252591089900572673"&gt;Chris Martens&lt;/a&gt; about what "easy to use" meant, in that most experts presumably find their tools easy to use.
-I think this is a good example of why that is not the case: As flexibility goes up, the amount of state that the expert has to manage in their head will usually exceed the capacity of their week fleshy game.&lt;/p&gt;
-
-
-&lt;p&gt;This is also the limitation of what I suggested in &lt;a href="https://notebook.drmaciver.com/posts/2020-07-10-16:52.html"&gt;learning to use the system&lt;/a&gt;, where I talked about how forming mental models is critical to using a system effectively.
-In response to this pozorvlak pointed out how one of the features of good UI is to enable the formation of mental models.&lt;/p&gt;
-
-
-&lt;p&gt;In particular I thought &lt;a href="https://twitter.com/pozorvlak/status/1282994011440021505"&gt;this point was particularly good&lt;/a&gt;:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;good UIs foster a good mental model of the system, &lt;em&gt;split over the mind of the user and the information available in the world&lt;/em&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;The problem is that this split is rarely well facilitated, especially in systems designed for experts, and this gets only worse as the flexibility of the system grows.&lt;/p&gt;
-
-
-&lt;p&gt;One of the big problems that comes up a lot in "Behind Human Error" is the problem of &lt;em&gt;modality&lt;/em&gt;. Modal systems are ones where you need different mental models for different states of the system. People commit mode errors when they use a mental model for a different mode.&lt;/p&gt;
-
-
-&lt;p&gt;This, I think, points to one of the difficulties of externalising parts of your mental model: what you're externalising it as is, itself, something you need a model for.&lt;/p&gt;
-
-
-&lt;p&gt;I don't know what to do about this, but evidence suggests neither do the people who work on such systems unfortunately.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-07-27-15:30.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-07-28-09:52.html</id>
     <title>Seeing Your Working</title>
@@ -650,7 +584,7 @@ e.g. If you wanted to impose a limit on the maximum number of calls you could do
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-01-11-06:13.html</id>
     <title>Representing Steps in Test-Case Reduction</title>
-    <updated>2021-01-11T06:13:00+00:00</updated>
+    <updated>2021-01-11T07:50:20+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Representing Steps in Test-Case Reduction&lt;/p&gt;
@@ -817,5 +751,118 @@ As well as turning out to be quite a convenient representation, this is pleasing
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2021-01-11-06:13.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2021-01-14-14:00.html</id>
+    <title>Rejection Sampling in Hypothesis</title>
+    <updated>2021-01-14T14:00:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Rejection Sampling in Hypothesis&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2021-01-14&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;(This post assumes you know roughly how Hypothesis does test-case reduction and generation. See &lt;a href="https://2020.ecoop.org/details/ecoop-2020-papers/13/Test-Case-Reduction-via-Test-Case-Generation-Insights-From-the-Hypothesis-Reducer"&gt;our ECOOP paper&lt;/a&gt; for a high level explanation)&lt;/p&gt;
+
+
+&lt;p&gt;Suppose you have some generator &lt;code&gt;base&lt;/code&gt; and you want to sample from it conditionally.
+In Hypotheis you can do this with &lt;code&gt;base.filter(condition)&lt;/code&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Conceptually, this does &lt;em&gt;rejection sampling&lt;/em&gt;, which works roughly like this:&lt;/p&gt;
+
+
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Filtered&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="fm"&gt;__init__&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;base&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;condition&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+        &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;__base&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;base&lt;/span&gt;
+        &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;__condition&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;condition&lt;/span&gt;
+
+    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;do_draw&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+        &lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+            &lt;span class="n"&gt;attempt&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;draw&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;__base&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+            &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;__condition&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;attempt&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+                &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;attempt&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;That is, we're attempting to draw from the conditional distribution of values that come from &lt;code&gt;base&lt;/code&gt; that satisfy &lt;code&gt;condition&lt;/code&gt; and we do this by repeatedly drawing values from it until one satisfies the condition.&lt;/p&gt;
+
+
+&lt;p&gt;This has a couple of problems:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;The underlying choice sequence contains a lot of probably useless garbage - we made a bunch of choices in each iteration of the loop when drawing from the base (and possibly even when calling the condition! This is allowed), and these are probably all irrelevant.&lt;/li&gt;
+&lt;li&gt;These loops are potentially very long, especially if the condition is hard or impossible to satisfy.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;We adopt the following heuristic approach to deal with the second problem:&lt;/p&gt;
+
+
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Filtered&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="o"&gt;...&lt;/span&gt;
+
+    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;do_draw&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+        &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;_&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+            &lt;span class="n"&gt;attempt&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;draw&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;__base&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+            &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;__condition&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;attempt&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+                &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;attempt&lt;/span&gt;
+        &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mark_invalid&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;That is, we terminate all rejection sampling at three iterations - it may well be possible to proceed from there, but if so we have a chance at trying again at the next generation, and spending longer seems largely not worth it.&lt;/p&gt;
+
+
+&lt;p&gt;(Why three you ask? Well, let me ask you a better question: Why not three?)&lt;/p&gt;
+
+
+&lt;p&gt;(That is to say, no good reason. It's a fairly arbitrarily chosen number that seems to work OK)&lt;/p&gt;
+
+
+&lt;p&gt;The first problem we have a slightly more principled way to deal with: We want to be able to reduce the choice sequence by removing all the redundant draws.&lt;/p&gt;
+
+
+&lt;p&gt;(This is made &lt;em&gt;slightly&lt;/em&gt; more complicated by the fact that the draws might not be redundant - Hypothesis generators are allowed to have side effects, such as inserting rows into a database, so it's possible for a filtered generator to do important work in the initial loops).&lt;/p&gt;
+
+
+&lt;p&gt;Assuming for the moment that &lt;code&gt;condition&lt;/code&gt; does not make any choices (which it mostly won't, and we're not that fussed about producing worse results if it does) this is actually relatively easy:
+The boundaries of the &lt;code&gt;draw&lt;/code&gt; call are marked on the choice sequence, and the reducer can try deleting that region of the choice sequence. This allows it to delete the early iterations of the loop,
+resulting in an effect where in a reduced choice sequence we just get implausibly lucky and always satisfy the condition first time.&lt;/p&gt;
+
+
+&lt;p&gt;We can, and do (although &lt;a href="https://github.com/HypothesisWorks/hypothesis/pull/2757"&gt;it turns out this got silently broken at some point and I fixed it as a result of writing this blog post&lt;/a&gt;), speed this up further by adding special boundary markers that indicate that the region is probably irrelevant.
+This looks like the following:&lt;/p&gt;
+
+
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Filtered&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="o"&gt;...&lt;/span&gt;
+
+    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;do_draw&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+        &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;_&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+            &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;start_example&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;FILTER_LABEL&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+            &lt;span class="n"&gt;attempt&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;draw&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;__base&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+            &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;__condition&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;attempt&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+                &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;stop_example&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+                &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;attempt&lt;/span&gt;
+            &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;stop_example&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;discard&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mark_invalid&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The reason this helps is that we can gather together all regions of the choice sequence that have been marked as discarded and attempt to delete them simultaneously.
+This will, usually, work. In particular it allows us to make all filtered generators implausibly lucky simultaneously with one call.&lt;/p&gt;
+
+
+&lt;p&gt;This kind of annotation of the choice sequence with useful information about common patterns in generation is often quite helpful for Hypothesis's test-case reduction. I think a lot of it is not that necessary any more, but this distinction between used and discarded regions seems to help a great deal and often allows for some significant performance improvements during reduction.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2021-01-14-14:00.html" rel="alternate"/>
   </entry>
 </feed>
