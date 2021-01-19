@@ -78,7 +78,7 @@ I'm doing a week of PhD related writing so I thought it would be good to write u
 <p>A test-case reducer is something that is designed to take an interesting test case and make it "simpler" in some sense while retaining the property of interest.</p>
 <p>Formally, a test-case reducer on some set of test-cases \(T\) is a function \(\{r : \{(U, x) : x \in U \subseteq T\} \to T\) such that \(r(U, x) \in U\). The set \(\{(U, x) : x \in U \subseteq T\}\) is called the set of reduction problems on \(T\).</p>
 <p>The first argument to the reducer is the interestingness test (the set of interesting test cases) and the second is some interesting test case that we want to reduce.</p>
-<p>A partial order \(\preceq) is a reduction order for \(r\) (or \(r\) is a reducer for \(\preceq\)) if \(r(U, x) \preceq x\).
+<p>A partial order \(\preceq\) is a reduction order for \(r\) (or \(r\) is a reducer for \(\preceq\)) if \(r(U, x) \preceq x\).
 The reduction order captures what we mean by saying that a reducer makes the test case "simpler". A test case is simpler if it's smaller in the reduction order.</p>
 <p>(It's hopefully faily uncontroversial that the "simpler" relationship should be a partial order - it's basically to avoid cycles where sometimes \(x\) reduces to \(y\) and sometimes \(y\) reduces to \(x\) depending on the interestingness test. It's easy to construct reducers that do have these cycles, so not every reducer has a reduction order, but generally I think those reducers are badly designed)</p>
 <p>As I mentioned in <a href="https://notebook.drmaciver.com/posts/2021-01-01-11:22.html">Basic Reducer Design</a> I generally prefer the reduction order to be a total order.

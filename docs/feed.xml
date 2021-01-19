@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2021-01-19T11:41:00+00:00</updated>
+  <updated>2021-01-19T14:34:56+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -834,7 +834,7 @@ This will, usually, work. In particular it allows us to make all filtered genera
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-01-19-11:41.html</id>
     <title>Some Theory of Test-Case Reduction</title>
-    <updated>2021-01-19T11:41:00+00:00</updated>
+    <updated>2021-01-19T14:34:56+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Some Theory of Test-Case Reduction&lt;/p&gt;
@@ -859,7 +859,7 @@ I'm doing a week of PhD related writing so I thought it would be good to write u
 &lt;p&gt;The first argument to the reducer is the interestingness test (the set of interesting test cases) and the second is some interesting test case that we want to reduce.&lt;/p&gt;
 
 
-&lt;p&gt;A partial order \(\preceq) is a reduction order for \(r\) (or \(r\) is a reducer for \(\preceq\)) if \(r(U, x) \preceq x\).
+&lt;p&gt;A partial order \(\preceq\) is a reduction order for \(r\) (or \(r\) is a reducer for \(\preceq\)) if \(r(U, x) \preceq x\).
 The reduction order captures what we mean by saying that a reducer makes the test case "simpler". A test case is simpler if it's smaller in the reduction order.&lt;/p&gt;
 
 
