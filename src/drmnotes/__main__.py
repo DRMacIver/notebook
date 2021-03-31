@@ -1169,3 +1169,7 @@ def do_build(rebuild=False, full=True, name=""):
     fg.updated(max(dates))
 
     fg.atom_file(os.path.join(HTML_ROOT, "feed.xml"), pretty=True)
+
+
+if __name__ == '__main__':
+    main()
