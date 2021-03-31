@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2021-01-19T14:34:56+00:00</updated>
+  <updated>2021-01-19T14:39:06+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -834,7 +834,7 @@ This will, usually, work. In particular it allows us to make all filtered genera
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-01-19-11:41.html</id>
     <title>Some Theory of Test-Case Reduction</title>
-    <updated>2021-01-19T14:34:56+00:00</updated>
+    <updated>2021-01-19T14:39:06+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Some Theory of Test-Case Reduction&lt;/p&gt;
