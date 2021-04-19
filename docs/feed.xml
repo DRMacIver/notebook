@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2021-01-19T14:39:06+00:00</updated>
+  <updated>2021-04-19T10:16:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,74 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-07-29-14:50.html</id>
-    <title>Inclusivity and Onboarding</title>
-    <updated>2020-07-29T15:09:42+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Inclusivity and Onboarding&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-07-29&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;From &lt;a href="https://amzn.to/2WYeYew"&gt;Talking About Machines&lt;/a&gt; by Julian Orr, page 70:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;The conversation of a closely cooperating group can be quite cryptic when the members are sharing information about work; they are considering a well-defined field which can be discussed with considerable economy, verging on code.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;A thing I have been thinking about a lot recently is the trade off between making a community accessible and the community being able to serve the needs of its core members.&lt;/p&gt;
-
-
-&lt;p&gt;In &lt;a href="https://drmaciver.substack.com/p/being-deep-in-an-abstraction-stack"&gt;Being Deep in an Abstraction Stack&lt;/a&gt; I talk about how you need a community of people who share your abstraction stack and there is really no substitute for this no matter how much we want one.&lt;/p&gt;
-
-
-&lt;p&gt;But unfortunately by creating such a community there is a certain amount of inherent gatekeeping: It is a community for people who have that abstraction stack, therefore if you do not have that abstraction stack you cannot participate in the community as a full member. I don't necessarily mean this as a moral judgement - sometimes gateekeeping is good - but there is nevertheless a certain amount of elitism implicit in the existence of such communities. In order to talk about our &lt;a href="https://drmaciver.substack.com/p/maintaining-niche-interests"&gt;niche interests&lt;/a&gt; we &lt;em&gt;need&lt;/em&gt; this cryptic shared language, and attempts to make the group more inclusive by avoiding that will also make it worse for us.&lt;/p&gt;
-
-
-&lt;p&gt;I don't really have an answer to that other than "deal with it". "I need other people to talk about my interests with" is a &lt;a href="https://notebook.drmaciver.com/posts/2020-07-15-09:33.html"&gt;nice problem to have&lt;/a&gt;, but it's still a need and it's one that it is reasonable to satisfy, and creating slightly exclusionary communities is pretty much the only way to solve that problem..&lt;/p&gt;
-
-
-&lt;p&gt;Part of why I've been thinking about this is &lt;a href="https://docs.google.com/document/d/1y3DkPGuAZiGbeNYlwje6jTlFxz9peIGnjSuZTwF4NGM/edit"&gt;Weird CS Theory Discord&lt;/a&gt;. The opening paragraph includes the sentence:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;You don’t have to “be” a computer scientist, or even know much computer science, to be here, but if you’re not interested in computer science you probably won’t enjoy the space.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;This hopefully makes it clear that we're not looking to gatekeep (I originally typoed that as "gategeek" which, well, valid) based on formal qualifications, but nevertheless there is a reasonably high bar to participating in the space. People are welcome to join, and they're welcome to learn to become full participants through their experience in the space, but that is there.&lt;/p&gt;
-
-
-&lt;p&gt;But, at the same time, we're a tiny free community that I created to serve my particular need for more chatter about weird CS theory. We're absolutely not a computer science institution. We cannot invest a tonne of effort in onboarding people, the best we can possibly hope to do is to be patient and welcoming to people who are still in the process of onboarding themselves.&lt;/p&gt;
-
-
-&lt;p&gt;One problem that occurs, and is important to avoid, is when this lack of inclusitivity becomes considered a feature rather than an unfortunate trade off. The specialised language becomes not a useful shorthand but a shibboleth.
-I have tried to head that off by making it clear that asking us to explain ourselves is always valid:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;[You are encouraged to] Ask questions. (“Can you explain that?” is always fine, though answering “No” is fine too)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;We have a specific norm that is designed to give people the space to indicate that they need help understanding something, but also a specific norm that we should not exhaust ourselves trying to bring people in.
-If people want to bring themselves in, the door is open, but we can only help so much.&lt;/p&gt;
-
-
-&lt;p&gt;Unfortunately, this too is exclusionary: Many people don't have the time or resources to do that work themselves.
-I feel bad about this, but ultimately the world is still a better place for the community, and there is only so much I can do about it.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-07-29-14:50.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-07-30-16:00.html</id>
     <title>Politics as long periods of boredom punctuated by moments of sheer terror</title>
@@ -907,5 +839,235 @@ After running a reducer once it's typically "pretty close" to fixation, and runn
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2021-01-19-11:41.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2021-04-19-10:16.html</id>
+    <title>Remastery Training</title>
+    <updated>2021-04-19T10:16:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Remastery Training&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2021-04-19&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I play a lot of Slay the Spire.&lt;/p&gt;
+
+
+&lt;p&gt;Slay the Spire is a game where you build up a deck of cards, which you use to fight a series of battles of varying difficulty.&lt;/p&gt;
+
+
+&lt;p&gt;You ascend through the levels of the spire, until at the end of the game you attempt to defeat its heart.&lt;/p&gt;
+
+
+&lt;p&gt;The game is divided into four acts, at the end of each of which you fight a boss.&lt;/p&gt;
+
+
+&lt;p&gt;The heart is the boss of the fourth act.&lt;/p&gt;
+
+
+&lt;p&gt;To get to Act 4, you must collect three keys before the end of Act 3.&lt;/p&gt;
+
+
+&lt;p&gt;If you do not, the game ends early, with "Victory?" instead of "Victory"&lt;/p&gt;
+
+
+&lt;p&gt;Slay the Spire has four characters, Ironclad, Silent, Defect, and Watcher.&lt;/p&gt;
+
+
+&lt;p&gt;My preference goes Defect, Ironclad, Silent, Watcher, from favourite to least favourite.&lt;/p&gt;
+
+
+&lt;p&gt;Slay the Spire has a series of difficulties called "Ascension levels".&lt;/p&gt;
+
+
+&lt;p&gt;Ascension levels go from 0 to 20.&lt;/p&gt;
+
+
+&lt;p&gt;You start at Ascension 0, and every time you complete Act 3 on an ascension level, you unlock the next one for that character.&lt;/p&gt;
+
+
+&lt;p&gt;I would like to be able to defeat the heart on Ascension 20 with each character.&lt;/p&gt;
+
+
+&lt;p&gt;So far I have managed this only with Defect.&lt;/p&gt;
+
+
+&lt;p&gt;I am currently working on defeating the heart on Ascension 20 with Ironclad.&lt;/p&gt;
+
+
+&lt;p&gt;My current, more modest, goal is to defeat Act 3, but so far I have not even been able to manage that.&lt;/p&gt;
+
+
+&lt;p&gt;This is somewhat frustrating.&lt;/p&gt;
+
+
+&lt;p&gt;I've tried quite a few times at this point.&lt;/p&gt;
+
+
+&lt;p&gt;Probably not more than 10, but still.&lt;/p&gt;
+
+
+&lt;p&gt;The problem is that I am no longer getting better at it, at least not very quickly.&lt;/p&gt;
+
+
+&lt;p&gt;I have identified a strategy that would likely allow me to beat the heart, but I am very bad at it.&lt;/p&gt;
+
+
+&lt;p&gt;To tell you about this strategy, I must first tell you about relics.&lt;/p&gt;
+
+
+&lt;p&gt;Relics are items you acquire as you ascend the spire, which modify your abilities.&lt;/p&gt;
+
+
+&lt;p&gt;Each character has a starter relic, unique to them.&lt;/p&gt;
+
+
+&lt;p&gt;The Ironclad's starter relic is called "burning blood", and it heals you slightly at the end of each fight.&lt;/p&gt;
+
+
+&lt;p&gt;One way to think about this is that it makes the game slightly easier, without making your character more powerful.&lt;/p&gt;
+
+
+&lt;p&gt;This is not entirely right, but it's pretty close.&lt;/p&gt;
+
+
+&lt;p&gt;At the beginning of the game, you encounter Neow, who offers you a blessing.&lt;/p&gt;
+
+
+&lt;p&gt;One of the blessings you can get is to swap your starter relic for a random boss relic.&lt;/p&gt;
+
+
+&lt;p&gt;Boss relics are very different from the Ironclad starter relic, in that most of them make the game harder while also making your character more powerful.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, I noticed that I was never taking boss relic swap, because I liked the Ironclad starter relic too much.&lt;/p&gt;
+
+
+&lt;p&gt;This suggested that my way through Ascension 20 might be to learn to boss relic swap on Ironclad.&lt;/p&gt;
+
+
+&lt;p&gt;I tried this, and I died badly every time, because Ascension 20 is too hard for me to experiment on.&lt;/p&gt;
+
+
+&lt;p&gt;So I went back down to Ascension 0.&lt;/p&gt;
+
+
+&lt;p&gt;But even with the boss relic swap, Ascension 0 is very easy for me now.&lt;/p&gt;
+
+
+&lt;p&gt;Slay the Spire is not an easy game, so a year or two ago this would have been inconceivable, but I've played more than 600 hours of it since then.&lt;/p&gt;
+
+
+&lt;p&gt;I'm not &lt;em&gt;amazing&lt;/em&gt; at the game, but I'm quite good at it and, as a result, I can all but sleepwalk my way through Ascension 0, even with the harder tactics.&lt;/p&gt;
+
+
+&lt;p&gt;So I decided that it wasn't enough for me to just beat act 3, I had to beat the heart to advance.&lt;/p&gt;
+
+
+&lt;p&gt;The idea being that I have to learn to overshoot my goal.&lt;/p&gt;
+
+
+&lt;p&gt;This starts to be at least a little difficult, even at the lower ascension levels.&lt;/p&gt;
+
+
+&lt;p&gt;Enough that I have to pay attention, certainly.&lt;/p&gt;
+
+
+&lt;p&gt;This approach lets me take advantage of the tighter feedback loops at lower ascension levels to focus on the parts of the game that I am still bad at.&lt;/p&gt;
+
+
+&lt;p&gt;It removes slack. &lt;/p&gt;
+
+
+&lt;p&gt;As a result I must be consistently good to progress, instead of just lucky.&lt;/p&gt;
+
+
+&lt;p&gt;I will still progress by luck to some degree, because the game is hard enough that if you get unlucky you can die, even at lower ascension levels.&lt;/p&gt;
+
+
+&lt;p&gt;But luck can only get you so far, and the changes I have made force me to develop more consistent skill.&lt;/p&gt;
+
+
+&lt;p&gt;This is a bit like an idea called Mastery Training.&lt;/p&gt;
+
+
+&lt;p&gt;Mastery Training is an approach where in order to learn something, you must master what comes before it.&lt;/p&gt;
+
+
+&lt;p&gt;For example, requiring an A in all the prerequisite courses before you're allowed to take a course.&lt;/p&gt;
+
+
+&lt;p&gt;This isn't always a good idea.&lt;/p&gt;
+
+
+&lt;p&gt;I suspect it's often a bad idea.&lt;/p&gt;
+
+
+&lt;p&gt;But what I'm doing here is an interesting variant of it.&lt;/p&gt;
+
+
+&lt;p&gt;It is not mastery, but remastery.&lt;/p&gt;
+
+
+&lt;p&gt;I have "completed the course" that is Ascensions 0 through 19.&lt;/p&gt;
+
+
+&lt;p&gt;And now I'm retaking them, but with additional constraints, and trying to retake them at a higher level.&lt;/p&gt;
+
+
+&lt;p&gt;I am relearning "familiar subjects" with the goal of getting an A in them this time.&lt;/p&gt;
+
+
+&lt;p&gt;The theory being that what is holding me back from progressing past my current level might be a lack of consistency at the foundations.&lt;/p&gt;
+
+
+&lt;p&gt;This seems like a good general lesson to apply.&lt;/p&gt;
+
+
+&lt;p&gt;When we are stuck, start again from the beginning, but this time you have to do it &lt;em&gt;right&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;You have a clear path you walked before.&lt;/p&gt;
+
+
+&lt;p&gt;You know the way.&lt;/p&gt;
+
+
+&lt;p&gt;But now you must walk it again.&lt;/p&gt;
+
+
+&lt;p&gt;This time carrying weights.&lt;/p&gt;
+
+
+&lt;p&gt;Or paying careful attention to how you place your feet.&lt;/p&gt;
+
+
+&lt;p&gt;Perhaps we should do this more generally?&lt;/p&gt;
+
+
+&lt;p&gt;When we have something that is too hard, we replace it with something that is too easy, but done differently.&lt;/p&gt;
+
+
+&lt;p&gt;For example, when we have reached a point where we feel our writing has plateaued, we start again with simpler writing, but done differently.&lt;/p&gt;
+
+
+&lt;p&gt;Perhaps with a writing exercise where we change the cadence of our writing.&lt;/p&gt;
+
+
+&lt;p&gt;And talk about mundane subjects.&lt;/p&gt;
+
+
+&lt;p&gt;And use this to practice our voice, or our editing.&lt;/p&gt;
+
+
+&lt;p&gt;You know, hypothetically.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2021-04-19-10:16.html" rel="alternate"/>
   </entry>
 </feed>
