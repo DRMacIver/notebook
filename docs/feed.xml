@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2021-06-07T06:51:00+01:00</updated>
+  <updated>2021-06-07T08:36:21+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1012,7 +1012,7 @@ After running a reducer once it's typically "pretty close" to fixation, and runn
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-06-07-06:51.html</id>
     <title>A round-tripping problem with expected utility theory</title>
-    <updated>2021-06-07T06:51:00+01:00</updated>
+    <updated>2021-06-07T08:36:21+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;A round-tripping problem with expected utility theory&lt;/p&gt;
@@ -1095,7 +1095,7 @@ this is (to me) obviously a problem with the theory, which is generally handwave
 The VNM theorem basically starts by saying "OK so first assume you're omniscient..." which is what allows it to start by assuming that you have this decision procedure.&lt;/p&gt;
 
 
-&lt;p&gt;The interesting thing about this result is that the VNM theorem runs into this problem even on its own terms, without introducing any additional assumptions of physical reasonableness (unless you count "cannot run a literally infinite amount of computation") &lt;/p&gt;
+&lt;p&gt;The interesting thing about this result is that the VNM theorem runs into this problem even on its own terms, without introducing any additional assumptions of physical reasonableness (unless you count "cannot run a literally infinite amount of computation"). The VNM theorem starts from an omniscient decision procedure and constructs a utility function, but you cannot run that process backwards from the utility function to such a decision procedure because of precisely the sorts of limitations that meant that you couldn't really have constructed that procedure in the first place. &lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2021-06-07-06:51.html" rel="alternate"/>
