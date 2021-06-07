@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+DRMacIver's Notebook: A round-tripping problem with expected utility theory
+    </title>
+
+    <meta property="og:title" content="A round-tripping problem with expected utility theory">
+
+    <meta property="og:url" content="https://notebook.drmaciver.com/posts/2021-06-07-06:51.html" />
+    <link rel="canonical" href="https://notebook.drmaciver.com/posts/2021-06-07-06:51.html" />
+    <script src="https://hypothes.is/embed.js" async></script>
+
+
+    <meta name="twitter:card" content="summary" />
+
+    <meta property="og:creator" content="@DRMacIver">
+
+    <link rel="stylesheet" href="/pygments.css"/>
+    <link rel="stylesheet" href="/tufte.css"/>
+    <link rel="stylesheet" href="/latex.css"/>
+    <link rel="stylesheet" href="/drmnotes.css"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
+});
+
+MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
+  console.log(message)
+});
+
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169185204-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169185204-1');
+</script>
+
+  </head>
+
+  <body>
+    <article>
+        <h1><a href="/">DRMacIver's Notebook</a></h1>
+        <p class=subtitle>A round-tripping problem with expected utility theory</p>
+
+        
+
+<section id="the-post">
+<p class=subtitle>A round-tripping problem with expected utility theory</p>
+<dl class=metadata>
+<dt>Published</dt>
+<dd class="post-date">2021-06-07</dd>
+</dl>
+
+<p>For reasons, I've been thinking about subjective expected utility theory and the <a href="https://en.wikipedia.org/wiki/Von_Neumann%E2%80%93Morgenstern_utility_theorem">Von Neumann-Morgenstern utility theorem</a> ("the VNM theorem" for short) recently.
+I have some significant philosophical objections to subjective expected utility and I'm going to explore a few of them in a series of notebook posts. This post is about an interesting thing I noticed while trying to articulate those objections.
+I don't necessarily expect it to persuade anyone of anything.</p>
+<p>The problem is this: The VNM theorem loses information. You cannot actually reconstruct the original decision procedure from the output of the VNM theorem, because the VNM theorem's output isn't quite what it's usually framed as.</p>
+<p>The VNM theorem is as follows: Suppose you have a set of outcomes \(\mathcal{O} = \{O_1, \ldots, O_n\}\).
+A lottery \(L\) is a random variable in \(\mathcal{O}\).</p>
+<p>An agent has preferences over lotteries, expressed by a preorder \(\preceq\) and an indifference relation \(\sim\).
+That is \(L \preceq L'\) means that \(L'\) is at least as good as \(L\), and \(L \sim L'\) means the agent is indifferent between them.</p>
+<p>The VNM theorem is that under certain reasonableness conditions, this preorder must be expressible in terms of a utility function \(u: \mathcal{O} \to \mathbb{R}\), such that \(L \preceq L'\) if and only if \(E(u(L)) \leq E(u(L'))\). i.e. we prefer a lottery if it has a higher expected utility, and are indifferent between two lotteries with the same expected utility.</p>
+<p>It's instructive to sketch the proof of this theorem:</p>
+<p>Because we have a total order over outcomes, there is a best outcome and a worst outcome. Call them \(B\) and \(W\) respectively. If \(B \sim W\) then we're necessarily indifferent between all lotteries, so assume \(W \prec B\).
+Now, consider the family of lotteries \(M_p\) such that \(M_p\) is \(B\) with probability \(p\) and \(W\) with probability \(1 - p\). So \(M_1 = B\) and \(M_0 = W\).</p>
+<p>Let \(L\) be some lottery. We must have \(M_0 = W \preceq L \preceq B = M_1\).
+Therefore (by the hypotheses of the theorem) we can find some \(p\) in the middle such that \(M_p \sim L\).
+Some computation shows that this number \(p\) behaves like an expected value.</p>
+<p>Thus the VNM theorem gives us the expected utility of an arbitrary lottery. Right?</p>
+<p>Except, it doesn't. It guarantees that this expected utility exists, but it does not actually give us a way to compute it.
+The hypothesis of the VNM theorem is that there is some point at which the switchover to indifference happens, but we are not given an oracle which computes that probability, only a guarantee of its existence.</p>
+<p>Instead what we have to do is turn our oracle for preferences into a sort of mathematical root finding algorithm to find increasingly fine grained approximations to \(p\). We construct a sequence of approximations \(q_k \leq p \leq r_k\) by setting \(q_0 = 0\), \(r_0 = 1\), then to calculate \(q_{k+1}, r_{k+q}\) we set \(s_k = \frac{q_k + r+k}{2}\) and then asking whether \(M_{s_k} \preceq L\). If yes, we set \(q_{k + 1} = r_k, r_{k + 1} = s_k\), if no we set \(q_{k + 1} = s_k, r_{k + 1} = r_k\).</p>
+<p>There is no guarantee that this process will ever terminate - the numbers for which it terminates are precisely the dyadic rationals, the integers divided by some power of two, so for example if \(p = \frac{1}{3}\) it will go on forever, producing increasingly good approximations. You can design other divide and conquer schemes - there's nothing special about this particular one - but they will all have this problem of there being some utility values that this doesn't converge to.</p>
+<p>(Honesty compels me to admit that this problem goes away if you insist that probabilities and utilities have to be rational numbers, because you can design a divide and conquer scheme that just enumerates all of the rationals between the current bounds. For technical reasons that I will not go into here I find this a fundamentally unsatisfying conclusion, but the short version is that the real numbers are a better approximation to the problems of physical measurement than the rational numbers are)</p>
+<p>Which is fine, in practical terms you will very rarely need to know your utility to the last decimal place, but the interesting thing to note is this: Given access to a procedure that provides these increasingly fine grained approximations to the expected utility, you cannot actually recreate the original decision procedure with a process that is guaranteed to terminate.</p>
+<p>The problem is this: Suppose we have some procedure that calculates a relationship \(\preceq'\) based on such converging approximate utilities. We want \(\preceq'\) to be identical with \(\preceq\), so lets assume we've succeeded and see if this leads to a contradiction.</p>
+<p>Let \(p\) be some number where the process doesn't terminate and ask whether \(M_p \preceq' M_p\) (using the same \(M_p\) as above). If \(\preceq'\) agrees with \(\preceq\) we will get the correct answer that \(\M_p \sim' M_p\).</p>
+<p>Now, look at how many steps of the approximation you had to compute in order to get to that point, say \(k\). This gives us an interval \(q_k \leq p \leq r_k\).</p>
+<p>Now at this point we decided that \(M_p \sim' M_p\) based on no information other than that \(p \in [q_k, r_k]\). Therefore for any other \(s \in [q_k, r_k]\) we would also decide that \(M_p \sim M_s\) (because we can't tell based on what we've computed that \(p \neq s\)). But in our original relationship we must have \(M_p \prec M_s\) or \(M_s \prec M_p\), because their utilities are \(p\) and \(s\) respectively. Therefore we have failed to recreate \(\preceq\) from the output of the VNM theorem.</p>
+<p>Why is this interesting?</p>
+<p>Well, mostly it's interesting because this looks exactly like my normal objections to the VNM theorem, but normally I justify it on practical grounds: You run into <a href="https://en.m.wikipedia.org/wiki/Fredkin%27s_paradox">Fredkin's paradox</a> (a term I've only recently learned - I've always thought of this as the <a href="https://en.m.wikipedia.org/wiki/Buridan%27s_ass">Buridan's ass problem</a>), where the amount of work you have to do to decide goes to infinity as you approach points of indifference.
+From a practical viewpoint where you have all sorts of measurement and approximation problems,
+this is (to me) obviously a problem with the theory, which is generally handwaved away by the setup:
+The VNM theorem basically starts by saying "OK so first assume you're omniscient..." which is what allows it to start by assuming that you have this decision procedure.</p>
+<p>The interesting thing about this result is that the VNM theorem runs into this problem even on its own terms, without introducing any additional assumptions of physical reasonableness (unless you count "cannot run a literally infinite amount of computation") </p>
+</section>
+
+    </article>
+<footer>
+Copyright David R. MacIver.
+
+CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
+</footer>
+  </body>
+</html>

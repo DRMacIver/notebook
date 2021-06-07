@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2021-04-19T10:16:00+01:00</updated>
+  <updated>2021-06-07T06:51:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,67 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-07-30-16:00.html</id>
-    <title>Politics as long periods of boredom punctuated by moments of sheer terror</title>
-    <updated>2020-07-30T16:16:22+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Politics as long periods of boredom punctuated by moments of sheer terror&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-07-30&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;From &lt;a href="https://amzn.to/2yvyoOw"&gt;Democracy in Small Groups&lt;/a&gt; by John Gastil, page 145:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Consensus and democracy didn't always work to the satisfaction of the faculty and students at the Meeting School. Even as students obtained ever-greater power, they remaind reluctant to deal with many important issues.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;I think an under-appreciated constraint on the running of human civilisation is just how incredibly boring well-functioning politics is. (2020 politics is of course, sadly, not boring).&lt;/p&gt;
-
-
-&lt;p&gt;Worse, it manages to be simultaneously:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;Incredibly Boring&lt;/li&gt;
-&lt;li&gt;Extremely detailed&lt;/li&gt;
-&lt;li&gt;Highly Stressful&lt;/li&gt;
-&lt;li&gt;Utterly Vital&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;I feel like this is a combination of factors that a democratic process is almost uniquely poorly suited for, which is I guess why we end up delegating so much of the running of a country to its civil service.&lt;/p&gt;
-
-
-&lt;p&gt;But there end up being all sorts of things which have these properties and you &lt;em&gt;can't&lt;/em&gt; delegate to a civil service, because they require actual policy decisions, and I feel like we don't really have a good handle on how those work (or, at least &lt;em&gt;I&lt;/em&gt; don't have a good handle on how those work. Is there some sort of ethnographic study of the UK parliament I could read?).&lt;/p&gt;
-
-
-&lt;p&gt;The worst combination seems to happen when a decision &lt;em&gt;requires&lt;/em&gt; an understanding of all these boring details, but people who are not willing to believe that have democratic oversight over the decision anyway.
-This is basically how you end up with Brexit.&lt;/p&gt;
-
-
-&lt;p&gt;On the other hand, I know enough about how the sausage is made that I wouldn't want a country run entirely by the civil service either (I admit I might still prefer this to the current lot). Experts are, ultimately, still people, and those people &lt;em&gt;do&lt;/em&gt; in some way need to be aligned with the wishes of the populace, at least to the degree that those wishes are reality-based and not actively murderous.&lt;/p&gt;
-
-
-&lt;p&gt;(OK, maybe I &lt;em&gt;don't&lt;/em&gt; want much democracy in the UK, as we seem to be pretty bad at both halves of that)&lt;/p&gt;
-
-
-&lt;p&gt;I don't have any sort of solution here. I often describe the problem of how to coordinate large groups of people whose interests are only weakly mutually aligned as the fundamental problem of civilisation, so it's not surprising that I'm not going to solve it in a dashed off notebook post, but I do feel like managing this boredom aspect is more important than I had previously realised.&lt;/p&gt;
-
-
-&lt;p&gt;Unfortunately, currently we manage the boredom of politics by getting increasingly frustrated with it and, as a result, eventually deciding to make politics exciting, and that doesn't go so well. &lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-07-30-16:00.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-07-31-13:14.html</id>
     <title>Standardised Facts</title>
@@ -843,7 +782,7 @@ After running a reducer once it's typically "pretty close" to fixation, and runn
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-04-19-10:16.html</id>
     <title>Remastery Training</title>
-    <updated>2021-04-19T10:16:00+01:00</updated>
+    <updated>2021-04-19T11:10:12+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Remastery Training&lt;/p&gt;
@@ -1069,5 +1008,96 @@ After running a reducer once it's typically "pretty close" to fixation, and runn
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2021-04-19-10:16.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2021-06-07-06:51.html</id>
+    <title>A round-tripping problem with expected utility theory</title>
+    <updated>2021-06-07T06:51:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;A round-tripping problem with expected utility theory&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2021-06-07&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;For reasons, I've been thinking about subjective expected utility theory and the &lt;a href="https://en.wikipedia.org/wiki/Von_Neumann%E2%80%93Morgenstern_utility_theorem"&gt;Von Neumann-Morgenstern utility theorem&lt;/a&gt; ("the VNM theorem" for short) recently.
+I have some significant philosophical objections to subjective expected utility and I'm going to explore a few of them in a series of notebook posts. This post is about an interesting thing I noticed while trying to articulate those objections.
+I don't necessarily expect it to persuade anyone of anything.&lt;/p&gt;
+
+
+&lt;p&gt;The problem is this: The VNM theorem loses information. You cannot actually reconstruct the original decision procedure from the output of the VNM theorem, because the VNM theorem's output isn't quite what it's usually framed as.&lt;/p&gt;
+
+
+&lt;p&gt;The VNM theorem is as follows: Suppose you have a set of outcomes \(\mathcal{O} = \{O_1, \ldots, O_n\}\).
+A lottery \(L\) is a random variable in \(\mathcal{O}\).&lt;/p&gt;
+
+
+&lt;p&gt;An agent has preferences over lotteries, expressed by a preorder \(\preceq\) and an indifference relation \(\sim\).
+That is \(L \preceq L'\) means that \(L'\) is at least as good as \(L\), and \(L \sim L'\) means the agent is indifferent between them.&lt;/p&gt;
+
+
+&lt;p&gt;The VNM theorem is that under certain reasonableness conditions, this preorder must be expressible in terms of a utility function \(u: \mathcal{O} \to \mathbb{R}\), such that \(L \preceq L'\) if and only if \(E(u(L)) \leq E(u(L'))\). i.e. we prefer a lottery if it has a higher expected utility, and are indifferent between two lotteries with the same expected utility.&lt;/p&gt;
+
+
+&lt;p&gt;It's instructive to sketch the proof of this theorem:&lt;/p&gt;
+
+
+&lt;p&gt;Because we have a total order over outcomes, there is a best outcome and a worst outcome. Call them \(B\) and \(W\) respectively. If \(B \sim W\) then we're necessarily indifferent between all lotteries, so assume \(W \prec B\).
+Now, consider the family of lotteries \(M_p\) such that \(M_p\) is \(B\) with probability \(p\) and \(W\) with probability \(1 - p\). So \(M_1 = B\) and \(M_0 = W\).&lt;/p&gt;
+
+
+&lt;p&gt;Let \(L\) be some lottery. We must have \(M_0 = W \preceq L \preceq B = M_1\).
+Therefore (by the hypotheses of the theorem) we can find some \(p\) in the middle such that \(M_p \sim L\).
+Some computation shows that this number \(p\) behaves like an expected value.&lt;/p&gt;
+
+
+&lt;p&gt;Thus the VNM theorem gives us the expected utility of an arbitrary lottery. Right?&lt;/p&gt;
+
+
+&lt;p&gt;Except, it doesn't. It guarantees that this expected utility exists, but it does not actually give us a way to compute it.
+The hypothesis of the VNM theorem is that there is some point at which the switchover to indifference happens, but we are not given an oracle which computes that probability, only a guarantee of its existence.&lt;/p&gt;
+
+
+&lt;p&gt;Instead what we have to do is turn our oracle for preferences into a sort of mathematical root finding algorithm to find increasingly fine grained approximations to \(p\). We construct a sequence of approximations \(q_k \leq p \leq r_k\) by setting \(q_0 = 0\), \(r_0 = 1\), then to calculate \(q_{k+1}, r_{k+q}\) we set \(s_k = \frac{q_k + r+k}{2}\) and then asking whether \(M_{s_k} \preceq L\). If yes, we set \(q_{k + 1} = r_k, r_{k + 1} = s_k\), if no we set \(q_{k + 1} = s_k, r_{k + 1} = r_k\).&lt;/p&gt;
+
+
+&lt;p&gt;There is no guarantee that this process will ever terminate - the numbers for which it terminates are precisely the dyadic rationals, the integers divided by some power of two, so for example if \(p = \frac{1}{3}\) it will go on forever, producing increasingly good approximations. You can design other divide and conquer schemes - there's nothing special about this particular one - but they will all have this problem of there being some utility values that this doesn't converge to.&lt;/p&gt;
+
+
+&lt;p&gt;(Honesty compels me to admit that this problem goes away if you insist that probabilities and utilities have to be rational numbers, because you can design a divide and conquer scheme that just enumerates all of the rationals between the current bounds. For technical reasons that I will not go into here I find this a fundamentally unsatisfying conclusion, but the short version is that the real numbers are a better approximation to the problems of physical measurement than the rational numbers are)&lt;/p&gt;
+
+
+&lt;p&gt;Which is fine, in practical terms you will very rarely need to know your utility to the last decimal place, but the interesting thing to note is this: Given access to a procedure that provides these increasingly fine grained approximations to the expected utility, you cannot actually recreate the original decision procedure with a process that is guaranteed to terminate.&lt;/p&gt;
+
+
+&lt;p&gt;The problem is this: Suppose we have some procedure that calculates a relationship \(\preceq'\) based on such converging approximate utilities. We want \(\preceq'\) to be identical with \(\preceq\), so lets assume we've succeeded and see if this leads to a contradiction.&lt;/p&gt;
+
+
+&lt;p&gt;Let \(p\) be some number where the process doesn't terminate and ask whether \(M_p \preceq' M_p\) (using the same \(M_p\) as above). If \(\preceq'\) agrees with \(\preceq\) we will get the correct answer that \(\M_p \sim' M_p\).&lt;/p&gt;
+
+
+&lt;p&gt;Now, look at how many steps of the approximation you had to compute in order to get to that point, say \(k\). This gives us an interval \(q_k \leq p \leq r_k\).&lt;/p&gt;
+
+
+&lt;p&gt;Now at this point we decided that \(M_p \sim' M_p\) based on no information other than that \(p \in [q_k, r_k]\). Therefore for any other \(s \in [q_k, r_k]\) we would also decide that \(M_p \sim M_s\) (because we can't tell based on what we've computed that \(p \neq s\)). But in our original relationship we must have \(M_p \prec M_s\) or \(M_s \prec M_p\), because their utilities are \(p\) and \(s\) respectively. Therefore we have failed to recreate \(\preceq\) from the output of the VNM theorem.&lt;/p&gt;
+
+
+&lt;p&gt;Why is this interesting?&lt;/p&gt;
+
+
+&lt;p&gt;Well, mostly it's interesting because this looks exactly like my normal objections to the VNM theorem, but normally I justify it on practical grounds: You run into &lt;a href="https://en.m.wikipedia.org/wiki/Fredkin%27s_paradox"&gt;Fredkin's paradox&lt;/a&gt; (a term I've only recently learned - I've always thought of this as the &lt;a href="https://en.m.wikipedia.org/wiki/Buridan%27s_ass"&gt;Buridan's ass problem&lt;/a&gt;), where the amount of work you have to do to decide goes to infinity as you approach points of indifference.
+From a practical viewpoint where you have all sorts of measurement and approximation problems,
+this is (to me) obviously a problem with the theory, which is generally handwaved away by the setup:
+The VNM theorem basically starts by saying "OK so first assume you're omniscient..." which is what allows it to start by assuming that you have this decision procedure.&lt;/p&gt;
+
+
+&lt;p&gt;The interesting thing about this result is that the VNM theorem runs into this problem even on its own terms, without introducing any additional assumptions of physical reasonableness (unless you count "cannot run a literally infinite amount of computation") &lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2021-06-07-06:51.html" rel="alternate"/>
   </entry>
 </feed>

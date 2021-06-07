@@ -65,6 +65,94 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
         
 
 <section>
+<h2><a href="/posts/2021-06-07-06:51.html">2021-06-07</a></h2>
+
+
+<p class="subtitle">A round-tripping problem with expected utility theory</p>
+
+
+<dl class="metadata">
+<dt>Published</dt>
+<dd class="post-date">2021-06-07</dd>
+</dl>
+
+
+<p>For reasons, I've been thinking about subjective expected utility theory and the <a href="https://en.wikipedia.org/wiki/Von_Neumann%E2%80%93Morgenstern_utility_theorem">Von Neumann-Morgenstern utility theorem</a> ("the VNM theorem" for short) recently.
+I have some significant philosophical objections to subjective expected utility and I'm going to explore a few of them in a series of notebook posts. This post is about an interesting thing I noticed while trying to articulate those objections.
+I don't necessarily expect it to persuade anyone of anything.</p>
+
+
+<p>The problem is this: The VNM theorem loses information. You cannot actually reconstruct the original decision procedure from the output of the VNM theorem, because the VNM theorem's output isn't quite what it's usually framed as.</p>
+
+
+<p>The VNM theorem is as follows: Suppose you have a set of outcomes \(\mathcal{O} = \{O_1, \ldots, O_n\}\).
+A lottery \(L\) is a random variable in \(\mathcal{O}\).</p>
+
+
+<p>An agent has preferences over lotteries, expressed by a preorder \(\preceq\) and an indifference relation \(\sim\).
+That is \(L \preceq L'\) means that \(L'\) is at least as good as \(L\), and \(L \sim L'\) means the agent is indifferent between them.</p>
+
+
+<p>The VNM theorem is that under certain reasonableness conditions, this preorder must be expressible in terms of a utility function \(u: \mathcal{O} \to \mathbb{R}\), such that \(L \preceq L'\) if and only if \(E(u(L)) \leq E(u(L'))\). i.e. we prefer a lottery if it has a higher expected utility, and are indifferent between two lotteries with the same expected utility.</p>
+
+
+<p>It's instructive to sketch the proof of this theorem:</p>
+
+
+<p>Because we have a total order over outcomes, there is a best outcome and a worst outcome. Call them \(B\) and \(W\) respectively. If \(B \sim W\) then we're necessarily indifferent between all lotteries, so assume \(W \prec B\).
+Now, consider the family of lotteries \(M_p\) such that \(M_p\) is \(B\) with probability \(p\) and \(W\) with probability \(1 - p\). So \(M_1 = B\) and \(M_0 = W\).</p>
+
+
+<p>Let \(L\) be some lottery. We must have \(M_0 = W \preceq L \preceq B = M_1\).
+Therefore (by the hypotheses of the theorem) we can find some \(p\) in the middle such that \(M_p \sim L\).
+Some computation shows that this number \(p\) behaves like an expected value.</p>
+
+
+<p>Thus the VNM theorem gives us the expected utility of an arbitrary lottery. Right?</p>
+
+
+<p>Except, it doesn't. It guarantees that this expected utility exists, but it does not actually give us a way to compute it.
+The hypothesis of the VNM theorem is that there is some point at which the switchover to indifference happens, but we are not given an oracle which computes that probability, only a guarantee of its existence.</p>
+
+
+<p>Instead what we have to do is turn our oracle for preferences into a sort of mathematical root finding algorithm to find increasingly fine grained approximations to \(p\). We construct a sequence of approximations \(q_k \leq p \leq r_k\) by setting \(q_0 = 0\), \(r_0 = 1\), then to calculate \(q_{k+1}, r_{k+q}\) we set \(s_k = \frac{q_k + r+k}{2}\) and then asking whether \(M_{s_k} \preceq L\). If yes, we set \(q_{k + 1} = r_k, r_{k + 1} = s_k\), if no we set \(q_{k + 1} = s_k, r_{k + 1} = r_k\).</p>
+
+
+<p>There is no guarantee that this process will ever terminate - the numbers for which it terminates are precisely the dyadic rationals, the integers divided by some power of two, so for example if \(p = \frac{1}{3}\) it will go on forever, producing increasingly good approximations. You can design other divide and conquer schemes - there's nothing special about this particular one - but they will all have this problem of there being some utility values that this doesn't converge to.</p>
+
+
+<p>(Honesty compels me to admit that this problem goes away if you insist that probabilities and utilities have to be rational numbers, because you can design a divide and conquer scheme that just enumerates all of the rationals between the current bounds. For technical reasons that I will not go into here I find this a fundamentally unsatisfying conclusion, but the short version is that the real numbers are a better approximation to the problems of physical measurement than the rational numbers are)</p>
+
+
+<p>Which is fine, in practical terms you will very rarely need to know your utility to the last decimal place, but the interesting thing to note is this: Given access to a procedure that provides these increasingly fine grained approximations to the expected utility, you cannot actually recreate the original decision procedure with a process that is guaranteed to terminate.</p>
+
+
+<p>The problem is this: Suppose we have some procedure that calculates a relationship \(\preceq'\) based on such converging approximate utilities. We want \(\preceq'\) to be identical with \(\preceq\), so lets assume we've succeeded and see if this leads to a contradiction.</p>
+
+
+<p>Let \(p\) be some number where the process doesn't terminate and ask whether \(M_p \preceq' M_p\) (using the same \(M_p\) as above). If \(\preceq'\) agrees with \(\preceq\) we will get the correct answer that \(\M_p \sim' M_p\).</p>
+
+
+<p>Now, look at how many steps of the approximation you had to compute in order to get to that point, say \(k\). This gives us an interval \(q_k \leq p \leq r_k\).</p>
+
+
+<p>Now at this point we decided that \(M_p \sim' M_p\) based on no information other than that \(p \in [q_k, r_k]\). Therefore for any other \(s \in [q_k, r_k]\) we would also decide that \(M_p \sim M_s\) (because we can't tell based on what we've computed that \(p \neq s\)). But in our original relationship we must have \(M_p \prec M_s\) or \(M_s \prec M_p\), because their utilities are \(p\) and \(s\) respectively. Therefore we have failed to recreate \(\preceq\) from the output of the VNM theorem.</p>
+
+
+<p>Why is this interesting?</p>
+
+
+<p>Well, mostly it's interesting because this looks exactly like my normal objections to the VNM theorem, but normally I justify it on practical grounds: You run into <a href="https://en.m.wikipedia.org/wiki/Fredkin%27s_paradox">Fredkin's paradox</a> (a term I've only recently learned - I've always thought of this as the <a href="https://en.m.wikipedia.org/wiki/Buridan%27s_ass">Buridan's ass problem</a>), where the amount of work you have to do to decide goes to infinity as you approach points of indifference.
+From a practical viewpoint where you have all sorts of measurement and approximation problems,
+this is (to me) obviously a problem with the theory, which is generally handwaved away by the setup:
+The VNM theorem basically starts by saying "OK so first assume you're omniscient..." which is what allows it to start by assuming that you have this decision procedure.</p>
+
+
+<p>The interesting thing about this result is that the VNM theorem runs into this problem even on its own terms, without introducing any additional assumptions of physical reasonableness (unless you count "cannot run a literally infinite amount of computation") </p>
+
+
+</section>
+<section>
 <h2><a href="/posts/2021-04-19-10:16.html">2021-04-19</a></h2>
 
 
@@ -643,149 +731,14 @@ As well as turning out to be quite a convenient representation, this is pleasing
 
 
 </section>
-<section>
-<h2><a href="/posts/2021-01-01-11:22.html">2021-01-01</a></h2>
 
 
-<p class="subtitle">Basic Reducer Design</p>
+<h2>2021-01</h2>
 
+<ul class=postarchive>
+<li><a href="/posts/2021-01-01-11:22.html">Basic Reducer Design</a></li>
 
-<dl class="metadata">
-<dt>Published</dt>
-<dd class="post-date">2021-01-01</dd>
-</dl>
-
-
-<p>There's a design of test-case reducer that I use and consider the natural way to do test-case reducers,
-but seems to be mildly idiosyncratic to me (though most of the details of it are found in other test-case reducers),
-which is basically this:</p>
-
-
-<ol>
-<li>Test cases are given some total order, the <em>reduction order</em>, and the goal of test-case reduction is to (ideally) find the minimal interesting test case in that reduction order.</li>
-<li>Test-case reduction is managed by a stateful object that automatically simplifies the book keeping of doing that.</li>
-<li>Test-case reduction consists of a sequence of passes that are run until none of them lowers the current most interesting test case.</li>
-</ol>
-
-
-<p>(the fact that there is a total reduction order plus some of the book keeping are the bits that seem not totally standard)</p>
-
-
-<p>The reduction order lets us keep track of the current best test case and this significantly simplifies keeping track of the progress of the reducer.
-This can all be encapsulated as the following Python code:</p>
-
-
-<div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">Reducer</span><span class="p">:</span>
-
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
-        <span class="bp">self</span><span class="p">,</span>
-        <span class="n">initial_test_case</span><span class="p">,</span>
-        <span class="n">is_interesting</span><span class="p">,</span> 
-        <span class="n">reduction_order</span><span class="p">,</span>
-        <span class="n">reduction_passes</span><span class="p">,</span>
-    <span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span> <span class="o">=</span> <span class="n">initial_test_case</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">__is_interesting</span> <span class="o">=</span> <span class="n">is_interesting</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">reduction_order</span> <span class="o">=</span> <span class="n">reduction_order</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">reduction_passes</span> <span class="o">=</span> <span class="n">reduction_passes</span>
-
-        <span class="c1"># We cache the result of the interestingness test - this is pretty</span>
-        <span class="c1"># standard in test-case reduction.</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">__cache</span> <span class="o">=</span> <span class="p">{}</span>
-
-        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_interesting</span><span class="p">(</span><span class="n">initial_test_case</span><span class="p">):</span>
-            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">"Cannot reduce uninteresting initial test case"</span><span class="p">)</span>
-
-    <span class="k">def</span> <span class="nf">is_interesting</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">test_case</span><span class="p">):</span>
-        <span class="k">try</span><span class="p">:</span>
-            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__cache</span><span class="p">[</span><span class="n">test_case</span><span class="p">]</span>
-        <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
-            <span class="k">pass</span>
-
-        <span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__is_interesting</span><span class="p">(</span><span class="n">test_case</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">__cache</span><span class="p">[</span><span class="n">test_case</span><span class="p">]</span> <span class="o">=</span> <span class="n">result</span>
-
-        <span class="c1"># If this is a smaller interesting test case than our current best</span>
-        <span class="c1"># known one, automatically update.</span>
-        <span class="k">if</span> <span class="p">(</span>
-            <span class="n">result</span> <span class="ow">and</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">reduction_order</span><span class="p">(</span><span class="n">test_case</span><span class="p">)</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">reduction_order</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span><span class="p">)</span>
-        <span class="p">):</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span> <span class="o">=</span> <span class="n">test_case</span>
-        <span class="k">return</span> <span class="n">result</span>
-
-    <span class="k">def</span> <span class="nf">reduce</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="n">prev</span> <span class="o">=</span> <span class="kc">None</span>
-        <span class="k">while</span> <span class="n">prev</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span><span class="p">:</span>
-            <span class="n">prev</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span>
-            <span class="c1"># Each reduction pass calls self.is_interesting in order to do</span>
-            <span class="c1"># any work, so we do not need to keep track of whether they</span>
-            <span class="c1"># succeeded or failed.</span>
-            <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">reduction_passes</span><span class="p">:</span>
-                <span class="n">f</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
-
-
-<span class="k">def</span> <span class="nf">reduce</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-    <span class="n">reducer</span> <span class="o">=</span> <span class="n">Reducer</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-    <span class="n">reducer</span><span class="o">.</span><span class="n">reduce</span><span class="p">()</span>
-    <span class="k">return</span> <span class="n">reducer</span><span class="o">.</span><span class="n">best_test_case</span>
-</pre></div>
-
-
-<p>A reduction pass in this framework looks something like the following (this is a greedy algorithm for deleting elements from a list or other sequence, like delta debugging without the delta step):</p>
-
-
-<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">greedy_deletion</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span><span class="p">):</span>
-        <span class="n">attempt</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span><span class="p">[:</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">:]</span>
-        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_interesting</span><span class="p">(</span><span class="n">attempt</span><span class="p">):</span>
-            <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
-</pre></div>
-
-
-<p>This design has a lot of flexibility to it. For example, it makes arbitrary reduction passes into an anytime algorithm, because you always know the current best test case,
-and so you can design it work with arbitrary interruptions.
-e.g. If you wanted to impose a limit on the maximum number of calls you could do it by modifying the reducer as follows:</p>
-
-
-<div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">StopReducing</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
-    <span class="k">pass</span>
-
-<span class="k">class</span> <span class="nc">Reducer</span><span class="p">:</span>
-
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
-        <span class="o">...</span><span class="p">,</span>
-        <span class="n">max_calls</span><span class="o">=</span><span class="mi">1000</span>
-    <span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">max_calls</span> <span class="o">=</span> <span class="n">max_calls</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">call_count</span> <span class="o">=</span> <span class="mi">0</span>
-        <span class="o">...</span>
-
-    <span class="k">def</span> <span class="nf">is_interesting</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">test_case</span><span class="p">):</span>
-        <span class="o">...</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">call_count</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">call_count</span> <span class="o">&gt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_calls</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="n">StopReducing</span><span class="p">()</span>
-        <span class="k">return</span> <span class="n">result</span>
-
-    <span class="k">def</span> <span class="nf">reduce</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">try</span><span class="p">:</span>
-            <span class="o">...</span>
-        <span class="k">except</span> <span class="n">StopReducing</span><span class="p">:</span>
-            <span class="k">pass</span>
-</pre></div>
-
-
-<p>(People will, at this point, complain that I am using exceptions for control flow. Yes I am. What of it?)</p>
-
-
-<p>One downside to this design is that it doesn't play that well with multithreading. This isn't a major problem in Python, so I haven't spent much time working on it, but roughly there are two obvious things you can do with this design: You can make the best test case thread local and then merge by taking the minimum when you join threads, or you can make your reduction passes single-threaded but use speculative concurrency to speed them up. This latter approach is roughly what reducers like <a href="https://github.com/googleprojectzero/halfempty">halfempty</a>. I've experimented a bit with this in some reducer prototypes, but not in Hypothesis where it's not especially useful because Python.</p>
-
-
-</section>
-
-
+</ul>
 <h2>2020-12</h2>
 
 <ul class=postarchive>
