@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2021-06-07T08:40:20+01:00</updated>
+  <updated>2021-06-07T08:42:30+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1012,7 +1012,7 @@ After running a reducer once it's typically "pretty close" to fixation, and runn
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-06-07-06:51.html</id>
     <title>A round-tripping problem with expected utility theory</title>
-    <updated>2021-06-07T08:40:20+01:00</updated>
+    <updated>2021-06-07T08:42:30+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;A round-tripping problem with expected utility theory&lt;/p&gt;
@@ -1077,7 +1077,7 @@ The hypothesis of the VNM theorem is that there is some point at which the switc
 &lt;p&gt;The problem is this: Suppose we have some procedure that calculates a relationship \(\preceq'\) based on such converging approximate utilities. We want \(\preceq'\) to be identical with \(\preceq\), so lets assume we've succeeded and see if this leads to a contradiction.&lt;/p&gt;
 
 
-&lt;p&gt;Let \(p\) be some number where the process doesn't terminate and ask whether \(M_p \preceq' M_p\) (using the same \(M_p\) as above). If \(\preceq'\) agrees with \(\preceq\) we will get the correct answer that \(\M_p \sim' M_p\).&lt;/p&gt;
+&lt;p&gt;Let \(p\) be some number where the process doesn't terminate and ask whether \(M_p \preceq' M_p\) (using the same \(M_p\) as above). If \(\preceq'\) agrees with \(\preceq\) we will get the correct answer that \(M_p \sim' M_p\).&lt;/p&gt;
 
 
 &lt;p&gt;Now, look at how many steps of the approximation you had to compute in order to get to that point, say \(k\). This gives us an interval \(q_k \leq p \leq r_k\).&lt;/p&gt;
