@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2021-07-02T09:29:00+01:00</updated>
+  <updated>2021-07-03T13:55:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,95 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-08-07-12:27.html</id>
-    <title>Ensuring Downward Paths</title>
-    <updated>2020-08-07T15:41:49+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Ensuring Downward Paths&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-08-07&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I had some half-formed thoughts about test-case reduction that I wanted to work through, and this notebook is a place for working through half-formed thoughts, so here we go...&lt;/p&gt;
-
-
-&lt;p&gt;The thing I've been working on on and off for about a month now is &lt;a href="https://notebook.drmaciver.com/posts/2020-07-05-11:29.html"&gt;using language inference to figure out new reduction passes&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;It can be thought of as a way of taking an idea that doesn't work (using L* for test case reduction) and combining it with an idea that works but doesn't generalise well (learning a table of small string substitutions to make),
-and getting an idea that does work and does generalise.&lt;/p&gt;
-
-
-&lt;p&gt;This has me thinking: What, exactly, does it mean for an approach to test-case reduction to generalise?&lt;/p&gt;
-
-
-&lt;p&gt;Also &lt;em&gt;does&lt;/em&gt; this approach generalise well? The big question with it is basically whether it works well when you change the interestingness test. I think it will, but it probably depends a lot on the choice of interestingness test and how close your reducer is to normalising it already.&lt;/p&gt;
-
-
-&lt;p&gt;In the approach to test-case reduction I favour, test-case reduction starts from set of test cases \(X\) and a total order \(\preceq\) over \(X\) called the &lt;em&gt;reduction order&lt;/em&gt;,
-and a test-case reducer is a function \(r(U, x)\) where \(x \in U \subseteq X\), \(r(U, x) \in U\), and \(r(U, x) \preceq x\). For me usually \(X\) is a set of strings and \(\preceq\) is the shortlex order where \(x \preceq y\) if \(|x| &amp;lt; |y|\) or \(|x| = |y|\) and \(x \leq y\) lexicographically.&lt;/p&gt;
-
-
-&lt;p&gt;Your prototypical test-case reducer starts from a bunch of small-step reductions, which gives you a function \(t: X \to X^{&amp;lt;\omega}\), where \(t(x)_i \prec x\),
-and the reducer greedily tries each of \(t(x)_i\) in order. If none of them are in \(U\) it returns \(x\), otherwise it it recurses and returns \(r(U, t(x)_i)\) for the first \(i\) with \(t(x)_i \in U\).&lt;/p&gt;
-
-
-&lt;p&gt;More generally given such a function we might say that a reducer is \(t\)-local if it satisfies the following conditions:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;\(t(U, x) = x\) if and only if \(t(x)_i \not\in U\) for all \(i\).&lt;/li&gt;
-&lt;li&gt;For all \(U, x\) is some sequence \(x = x_0, \ldots, x_n = r(U, x)\) with \(x_{i + 1} \in t(x)_i\) (note that we don't necessarily require that \(x_i \in U\)).&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;That is, basically a \(t\)-local reducer is one that looks like the prototypical reducer but may have some optimisations and fiddly bits. e.g. delta debugging is a \(t\) local reducer where \(t\) is maps \(x\) to all test cases that can be formed by deleting a single element of \(x\). Delta debugging starts by trying large bulk combinations of these deletions and gradually narrows it down until it's only trying the small ones. Another approach which uses the same \(t\) but a different algorithm is what I've called &lt;a href="https://www.drmaciver.com/2017/06/adaptive-delta-debugging/"&gt;adaptive delta debugging&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;Most reducers implemented in practice are roughly \(t\)-local for some \(t\) (often they fail to be \(t\)-local in some cases because they hit some internal limit and stop when they could be making more progress, and rerunning the reducer may produce further redctions) and I think this is good because it allows you to reason in terms of what transformations they are capable of performing.&lt;/p&gt;
-
-
-&lt;p&gt;So lets assume we have a \(t\)-local reducer. What makes it good?&lt;/p&gt;
-
-
-&lt;p&gt;Basically the tradeoff is this:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;The larger \(|t(x)|\) tends to be the better you will reduce \(x\).&lt;/li&gt;
-&lt;li&gt;The smaller \(|t(x)|\) is the better your reducer tends to perform.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;The ideal seems to be that you want \(|t(x)| = O(|x|)\), as per delta debugging, and the trick is to tweak the set within that constraints to try to get good results.&lt;/p&gt;
-
-
-&lt;p&gt;(Note that having \(|t(x)| = O(|x|)\) doesn't mean that the overall reducer runs in \(O(|x|)\) - even if you reduce the size at every step you can easily be made to make \(O(|x|^2)\) membership checks, and if you just make lexicographic transformations it's easy for performance to get exponentially bad)&lt;/p&gt;
-
-
-&lt;p&gt;The problem that you run into is that basically what you really want is not just for \(|t(x)|\) to be large, but for it to contain values that are in some sense "likely to be in \(U\)". One way this can fail to happen is when there is some sort of precondition on the range of \(U\) we are interested in. The biggest example of this is when interesting test cases have to be syntactically valid according to some grammar. When this happens, effectively you are censoring \(t\) by replacing it with its syntactically valid subset. Often when something like delta debugging gets stuck it's not because it's not because of any intrinsic limitation related to the interestingness test, it's just ended up at a point where \(t(x)\) contains no syntactically valid test-cases.&lt;/p&gt;
-
-
-&lt;p&gt;So, essentially what we want in order to get a good reducer for a format is to try to ensure that \(t(x)\) is always well populated with &lt;em&gt;syntactically valid&lt;/em&gt; reductions of \(x\). &lt;/p&gt;
-
-
-&lt;p&gt;One way to do this might be to artificially construct interestingness tests that are basically designed to expose small reductions. I'm not quite sure what those would be. One thing I was thinking of is having interestingness tests of where \(x\) is interesting if \(y \preceq x\) for some fixed \(y\), then once those are normalised gradually "censor" the tests by removing all intermediate parts, stopping when you can't learn anything other than the direct jump to \(y\).&lt;/p&gt;
-
-
-&lt;p&gt;This can be thought of as ensuring that whenever the final reduced result is \(y\) you have as rich a set of paths leading to it as the learning process is possibly able to find.&lt;/p&gt;
-
-
-&lt;p&gt;I don't yet know how likely this is to work. I'm planning to do more experiments soon on getting this running on hypothesis-csmith and we'll see how well it can learn that, but I think there's some interesting stuff to investigate here.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-08-07-12:27.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2020-12-28-16:19.html</id>
     <title>Reducing Weird Tests</title>
@@ -1048,7 +959,7 @@ The VNM theorem basically starts by saying "OK so first assume you're omniscient
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-07-02-09:29.html</id>
     <title>People are bad at defining things</title>
-    <updated>2021-07-02T09:29:00+01:00</updated>
+    <updated>2021-07-02T14:25:09+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;People are bad at defining things&lt;/p&gt;
@@ -1201,5 +1112,74 @@ at least outside of the realm of mathematics or constrained rule based environme
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2021-07-02-09:29.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2021-07-03-13:55.html</id>
+    <title>No shortage of things to write about</title>
+    <updated>2021-07-03T13:55:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;No shortage of things to write about&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2021-07-03&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Back in &lt;a href="https://drmaciver.substack.com/p/fragments-intellectual-diy"&gt;Intellectual DIY&lt;/a&gt; I recounted a conversation with my father in which I explained that all of my reading and writing was more by way of a vast intellectual DIY project:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Last year I had a conversation with my father in which he said how impressed he was with my memory and general breadth of knowledge and intellectual achievement, and that he could certainly never do anything like that.&lt;/p&gt;
+&lt;p&gt;I expressed polite scepticism at this claim and pointed out that his sheer breadth of practical knowledge far outstripped mine. He seems to know everything about DIY, and is generally prepared to wade in and do a good job on just about anything you might expect to do around the home, from heat pump engineering to building furniture. He's been building some stairs recently, as one does. He is finally starting to come around to the idea that maybe he doesn't have to do everything himself, but generally it's not a question of whether he can do it himself, but whether he can do this thing and all of the thousand other tasks he's taken on. This is of course all before we even start on his actual professional skill set (he was a banker before he retired).&lt;/p&gt;
+&lt;p&gt;He objected that this was not at all the same thing - he just figured things out as he went and refined his skills over time in the course of doing them. He didn't necessarily remember all these things, he just started with the problems he was trying to solve, had the confidence to try things out and see if they worked, and practiced them until he got the knack of it, and then builds on that prior experience for future problems.&lt;/p&gt;
+&lt;p&gt;“Well yes”, I said. “How do you think I do it?”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;This analogy continues to bear fruit, as I had another conversation with him recently, in which he expressed how he was impressed and surprised by how I never ran out of topics to write about. "Well, would you have trouble coming up with things to do on the Mill?", I replied. "No, I guess not." "Same thing, basically."&lt;/p&gt;
+
+
+&lt;p&gt;(The Mill is my parents' house. It's a converted water mill. It's lovely but also a significant amount of work)&lt;/p&gt;
+
+
+&lt;p&gt;I think when people think of writing, people think of it as trying to create something new in the world,
+but actually most of my writing has very little creativity to its selection of topics, I'm just responding to a particular concrete thing I've encountered.&lt;/p&gt;
+
+
+&lt;p&gt;If you look at &lt;a href="https://notebook.drmaciver.com/posts/2021-07-02-09:29.html"&gt;yesterday's piece about defining things&lt;/a&gt;, there was no primal act of creativity where I had to "come up" with a topic. I was experiencing a thing and I was annoyed about it, so I wrote about it.&lt;/p&gt;
+
+
+&lt;p&gt;Similarly, the day before's piece on the newsletter, &lt;a href="https://drmaciver.substack.com/p/telegraph-your-moves"&gt;Telegraph your moves&lt;/a&gt;, was a specific response to people's responses to some scheduling changes.&lt;/p&gt;
+
+
+&lt;p&gt;Both of these were very mundane prompts, but based on my own evaluation and other people's responses, they both produce pretty top tier pieces.&lt;/p&gt;
+
+
+&lt;p&gt;In general, life is full of problems, and even where there are no well defined problems there's a near infinite amount of detail.
+Almost all of that detail you can just look at and go "Huh. What's up with that?" and write something about it.&lt;/p&gt;
+
+
+&lt;p&gt;For me in particular a lot of my reading and writing fits into a sort of broad intellectual program of trying to help people get better at life, for values of "people" that first and foremost includes me. As a result, in order to run out of things to write, I'd have to basically have life solved. I'm uh a little ways away from that. &lt;/p&gt;
+
+
+&lt;p&gt;Generally the problem I have is the opposite: There is &lt;em&gt;too much&lt;/em&gt; to write about. This leads to two problems:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;How do I decide which bits to write about?&lt;/li&gt;
+&lt;li&gt;How do I write a short piece without pulling in everything?&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;The first part is genuinely hard, and I tend towards the less deliberate: I write about whatever happens to be particularly on my mind when I sit down to write. Sometimes I have to shuffle through a few topics until something clicks, but ultimately (as per &lt;a href="https://notebook.drmaciver.com/posts/2020-02-25-10:39.html"&gt;How to make decisions&lt;/a&gt;) when you've got a lot of things that could work the best way is to just pick something arbitrarily. This does result in my topics jumping around a lot, seemingly at random, but I'm OK with that and mostly don't care if other people aren't (and suspect, by and large, people enjoy the novelty factor).&lt;/p&gt;
+
+
+&lt;p&gt;For the second: The way I experience this is that I'm reaching into a giant tangle and tugging on a thread. I start somewhere that seems interesting (such as with a concrete problem), and as I pull related thoughts and information come along with it, constructing a linear narrative as I go. Eventually I find somewhere that feels like a natural stopping point, and I stop. Like right now.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2021-07-03-13:55.html" rel="alternate"/>
   </entry>
 </feed>
