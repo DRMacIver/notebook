@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2021-07-04T12:52:00+01:00</updated>
+  <updated>2021-07-04T13:34:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1082,7 +1082,7 @@ Almost all of that detail you can just look at and go "Huh. What's up with that?
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-07-04-12:52.html</id>
     <title>The humour test for expertise</title>
-    <updated>2021-07-04T12:52:00+01:00</updated>
+    <updated>2021-07-04T13:34:00+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;The humour test for expertise&lt;/p&gt;
@@ -1106,7 +1106,7 @@ Almost all of that detail you can just look at and go "Huh. What's up with that?
 &lt;p&gt;This video is hilarious. If you don't play Slay the Spire much you won't understand why. I can explain why, and I can even explain why well enough that you in some way understand it, but I cannot explain it in a way that allows you to find it funny without teaching you to play Slay the Spire, because the humour derives entirely from an understanding of the game.&lt;/p&gt;
 
 
-&lt;p&gt;Similarly, &lt;a href="https://github.com/mame/quine-relay"&gt;the quite relay&lt;/a&gt; is hilarious, but if you're not a programmer you absolutely won't find it funny, it's just weird and pointless.&lt;/p&gt;
+&lt;p&gt;Similarly, &lt;a href="https://github.com/mame/quine-relay"&gt;the quine relay&lt;/a&gt; is hilarious, but if you're not a programmer you absolutely won't find it funny, it's just weird and pointless.&lt;/p&gt;
 
 
 &lt;p&gt;The reason for this link between expertise and humour is basically &lt;a href="https://en.wikipedia.org/wiki/Theories_of_humor#Incongruous_juxtaposition_theory"&gt;the incongruity theory of humour&lt;/a&gt;: You have a particular set of expectations about how the game is played, and the video repeatedly violates those assumptions by playing the game in slightly unexpected ways. This is not how a Defect build is supposed to work, but it's definitely how &lt;em&gt;this&lt;/em&gt; Defect build works.&lt;/p&gt;
