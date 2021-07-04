@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2021-07-03T13:55:00+01:00</updated>
+  <updated>2021-07-04T12:52:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,109 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2020-12-28-16:19.html</id>
-    <title>Reducing Weird Tests</title>
-    <updated>2020-12-30T02:43:45+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Reducing Weird Tests&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2020-12-28&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Hillel recently wrote about &lt;a href="https://buttondown.email/hillelwayne/archive/fd1f0758-ae31-4e83-9138-33721cbd5ce3"&gt;cross-branch testing&lt;/a&gt; - comparing implementations of the same API in two different branches as a form of differential testing to see whether a change introduced any functional differences.
-As part of his example he ended up with what was functionally the following interestingness test:&lt;/p&gt;
-
-
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;is_interesting&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="n"&gt;out&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
-    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-        &lt;span class="n"&gt;out&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;out&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nb"&gt;abs&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-        &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;
-    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nb"&gt;abs&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;out&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="mi"&gt;100&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;9&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;He mentions in the article that this gives nondeterministic results for Hypothesis:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Running this gives us an erroneous input:&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;Falsifying example: test_f(a=5, b=6, c=5,)&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;This is nondeterministic: I’ve also gotten &lt;code&gt;(0, 4, 0)&lt;/code&gt; and &lt;code&gt;(-114, -114, -26354)&lt;/code&gt; as error cases.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;&lt;code&gt;(0, 4, 0)&lt;/code&gt; is the (probably globally) correct answer of all of these according to Hypothesis's reduction logic,
-but Hypothesis's test-case reduction is unable to reliably transform all of the failing examples to it.&lt;/p&gt;
-
-
-&lt;p&gt;I reacted to this as I always do to such things: "Oh, I wonder if I can make the test-case reducer better". But the answer is no, no I cannot, and the reason is that this test contains what is basically a hash function (not a very good hash function, but good enough), and as a result the test cases are pretty much uniformly distributed throughout the set of test cases - if you generate test cases where the values are between &lt;code&gt;-10&lt;/code&gt; and &lt;code&gt;10&lt;/code&gt;, then of the &lt;code&gt;9261&lt;/code&gt; possible test cases, &lt;code&gt;129&lt;/code&gt; are interesting, i.e. about &lt;code&gt;1.4%&lt;/code&gt; which is about what you'd expect if the computation of &lt;code&gt;abs(out) % 100&lt;/code&gt; were roughly randomly distributed.&lt;/p&gt;
-
-
-&lt;p&gt;For such functions we end up with the slightly awkward situation where:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;It's not that hard to find test cases (&lt;code&gt;1%&lt;/code&gt; isn't that infrequent! We can just exhaustively enumerate to find the globally minimal test case).&lt;/li&gt;
-&lt;li&gt;It's hard enough to find test cases that most test-cases are locally minimal.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;The reason for (2) is that if reductions are not any more likely to be interesting than any other test case (which seems roughly true for hillel's example and is true by construction for truly random examples), if you try \(N\) reductions you only expect \(0.01 N\) reductions to work. Suppose for a typical triple of integers we have, say, &lt;code&gt;10&lt;/code&gt; reductions we can perform, and those reductions are no more likely than chance to work, then &lt;code&gt;90%&lt;/code&gt; of interesting test cases are locally minimal, which means that we'll typically end the reduction process within a few steps.&lt;/p&gt;
-
-
-&lt;p&gt;In order to explore this, lets consider the following toy model: Our space of interesting test cases are triples of integers between &lt;code&gt;0&lt;/code&gt; and &lt;code&gt;10&lt;/code&gt;, and we have a local reducer that makes the following transformations:&lt;/p&gt;
-
-
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;reduce_tuple&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="c1"&gt;# First try sorting the tuple&lt;/span&gt;
-    &lt;span class="k"&gt;yield&lt;/span&gt; &lt;span class="nb"&gt;tuple&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;sorted&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
-
-    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt;
-            &lt;span class="n"&gt;reduced&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;list&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-            &lt;span class="n"&gt;reduced&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;reduced&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;reduced&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;reduced&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-            &lt;span class="k"&gt;yield&lt;/span&gt; &lt;span class="nb"&gt;tuple&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;reduced&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-
-    &lt;span class="c1"&gt;# Now try lowering each component&lt;/span&gt;
-    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)):&lt;/span&gt;
-        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-            &lt;span class="n"&gt;reduced&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;list&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-            &lt;span class="n"&gt;reduced&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;-=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
-            &lt;span class="k"&gt;yield&lt;/span&gt; &lt;span class="nb"&gt;tuple&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;reduced&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-            &lt;span class="c1"&gt;# If we can raise the next component then try that&lt;/span&gt;
-            &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="ow"&gt;and&lt;/span&gt; &lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-                &lt;span class="n"&gt;reduced&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
-                &lt;span class="k"&gt;yield&lt;/span&gt; &lt;span class="nb"&gt;tuple&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;reduced&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;(if this doesn't make sense to you don't worry about it too much, it's just the first local reducer that came to mind for triples of integers)&lt;/p&gt;
-
-
-&lt;p&gt;Suppose we're reducing subject to an interesting test where the maximal value &lt;code&gt;(10, 10, 10)&lt;/code&gt; is always interesting and every other test case is interesting with probability &lt;code&gt;p&lt;/code&gt;. What is the probability that this local reducer finds the globally optimal test case?&lt;/p&gt;
-
-
-&lt;p&gt;Based on some fairly crude simulations, the local reducer starts finding the globally optimal test-case more than half the time around &lt;code&gt;p = 0.93&lt;/code&gt;, which has the amusing property that the local reducer is reliably worse (in expectation) than the reducer that just always tries &lt;code&gt;(0, 0, 0)&lt;/code&gt; and gives up if that doesn't work (which finds the globally minimal test case with probability &lt;code&gt;p&lt;/code&gt;). Some equally crude simulation suggests that an approach that just enumerates the smallest test cases for a while returns at least as good a result in the same number of calls to the interestingness test in at least 80% of cases, regardless of the value of &lt;code&gt;p&lt;/code&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;I'm not sure if there's any sort of general lesson to derive here - most interestingness tests are not quite this adversarial - but I do feel like there is often something like this going on, where the reduction problem isn't that hard despite being in a local minimum, and I wonder if something loosely inspired by this that estimates the density of interesting test cases below the current interesting test case, but I'm not sure if that's entirely useful.&lt;/p&gt;
-
-
-&lt;p&gt;If one &lt;em&gt;did&lt;/em&gt; have some sort of easy way to sample from test cases that are strictly smaller than the current interesting test case, it might be worth running that for longer than it would be intuitively obviously useful as a sort of crude but perhaps surprisingly effective reducer? It's certainly more robust to this sort of problem than any kind of local transformation based reducer would be. &lt;/p&gt;
-
-
-&lt;p&gt;This also suggests that possibly test-case reducers should try a bit more bounded exploration of the small test cases than they currently do, but I think this is probably misleading due to the relatively small number of test cases in this example - for most formats of interest the number of test cases of size &lt;code&gt;n&lt;/code&gt; is exponential in &lt;code&gt;n&lt;/code&gt;, so any amount of enumeration other than trying the globally minimal test case (which &lt;em&gt;is&lt;/em&gt; usually worth doing) is probably not worth it.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2020-12-28-16:19.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-01-01-11:22.html</id>
     <title>Basic Reducer Design</title>
@@ -1116,7 +1013,7 @@ at least outside of the realm of mathematics or constrained rule based environme
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-07-03-13:55.html</id>
     <title>No shortage of things to write about</title>
-    <updated>2021-07-03T13:55:00+01:00</updated>
+    <updated>2021-07-03T15:04:38+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;No shortage of things to write about&lt;/p&gt;
@@ -1181,5 +1078,52 @@ Almost all of that detail you can just look at and go "Huh. What's up with that?
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2021-07-03-13:55.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2021-07-04-12:52.html</id>
+    <title>The humour test for expertise</title>
+    <updated>2021-07-04T12:52:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;The humour test for expertise&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2021-07-04&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;A heuristic I sometimes use is this: You understand something at a reasonably expert level if and only if you get the jokes at a level where you could find it funny.&lt;/p&gt;
+
+
+&lt;p&gt;I started thinking about this when I watched this video:&lt;/p&gt;
+
+
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/VD5I4l9oASg" title="YouTube video player" width="560"&gt;&lt;/iframe&gt;
+
+
+&lt;p&gt;This video is hilarious. If you don't play Slay the Spire much you won't understand why. I can explain why, and I can even explain why well enough that you in some way understand it, but I cannot explain it in a way that allows you to find it funny without teaching you to play Slay the Spire, because the humour derives entirely from an understanding of the game.&lt;/p&gt;
+
+
+&lt;p&gt;Similarly, &lt;a href="https://github.com/mame/quine-relay"&gt;the quite relay&lt;/a&gt; is hilarious, but if you're not a programmer you absolutely won't find it funny, it's just weird and pointless.&lt;/p&gt;
+
+
+&lt;p&gt;The reason for this link between expertise and humour is basically &lt;a href="https://en.wikipedia.org/wiki/Theories_of_humor#Incongruous_juxtaposition_theory"&gt;the incongruity theory of humour&lt;/a&gt;: You have a particular set of expectations about how the game is played, and the video repeatedly violates those assumptions by playing the game in slightly unexpected ways. This is not how a Defect build is supposed to work, but it's definitely how &lt;em&gt;this&lt;/em&gt; Defect build works.&lt;/p&gt;
+
+
+&lt;p&gt;Because humour derives from incongruity, if you can get the jokes in a field then you must have a sense of incongruity. This means that you've internalised the sort of intuition about what the expected normal for the field is - the field's norms of taste, a working knowledge for how everything typically goes and fits together. These are all signs of expertise, that you've progressed to the &lt;a href="https://en.wikipedia.org/wiki/Four_stages_of_competence"&gt;Unconscious Competence stage&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;The humour test for expertise is itself a sort of joke, and the fact that I find it funny is probably an indication that I've at least started to get something of a handle on the expertise literature (or just that I'm weird), but it's also serious and I think probably points in a number of interesting directions.&lt;/p&gt;
+
+
+&lt;p&gt;In particular, although you can't explain specialist jokes in a way that makes them funny, it may be worth explaining them, as it will often reveal interesting things about expert intuition that might not otherwise be readily accessible.&lt;/p&gt;
+
+
+&lt;p&gt;Another application of the test is that the jokes you find funny probably tell you something about your areas of expertise that you hadn't realised. This may be an uncomfortable realisation because e.g. it causes you to realise quite how much time you've spent playing Slay the Spire.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2021-07-04-12:52.html" rel="alternate"/>
   </entry>
 </feed>
