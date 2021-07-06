@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2021-07-05T10:30:00+01:00</updated>
+  <updated>2021-07-06T13:53:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,177 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2021-01-11-06:13.html</id>
-    <title>Representing Steps in Test-Case Reduction</title>
-    <updated>2021-01-11T07:50:20+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Representing Steps in Test-Case Reduction&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2021-01-11&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;In &lt;a href="https://notebook.drmaciver.com/posts/2021-01-01-11:22.html"&gt;my last post&lt;/a&gt; on reducer design I included the following deletion algorithm:&lt;/p&gt;
-
-
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;greedy_deletion&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
-    &lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;best_test_case&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-        &lt;span class="n"&gt;attempt&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;best_test_case&lt;/span&gt;&lt;span class="p"&gt;[:&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;best_test_case&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;:]&lt;/span&gt;
-        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="ow"&gt;not&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;is_interesting&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;attempt&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-            &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;This iterates forward through a sequence and tries deleting each element of it in turn to see if it's still interesting.
-It's a foundation for a lot of useful test-case reduction passes.&lt;/p&gt;
-
-
-&lt;p&gt;It's also in the wrong order. Really for most problems you probably want to write it as follows:&lt;/p&gt;
-
-
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;greedy_deletion&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;best_test_case&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
-    &lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-        &lt;span class="c1"&gt;# We're only calling this for the side effect of updating self.best_test_case&lt;/span&gt;
-        &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;is_interesting&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;best_test_case&lt;/span&gt;&lt;span class="p"&gt;[:&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;best_test_case&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;:])&lt;/span&gt;
-        &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;-=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;The reason for this order is that later elements often depend on early elements (e.g. if a variable declared earlier is used later),
-so this often does less wasted work because it takes fewer passes to get to a fixed point - going forward, you need to rerun the entire pass to delete the earlier bits that have been enabled by the later bits.&lt;/p&gt;
-
-
-&lt;p&gt;One problem with either of these is that they can lead to long stalls, where there's a large undeletable region and you're slowly going through all of it.
-This is particularly annoying because often if you'd made the test case much smaller before checking all of those bits it would be much faster to go through them,
-because the interestingness test is faster on smaller test cases.&lt;/p&gt;
-
-
-&lt;p&gt;In order to avoid these stalls it might be better to write it like this:&lt;/p&gt;
-
-
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;greedy_deletion&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="n"&gt;indices&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;list&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;best_test_case&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
-    &lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="n"&gt;indices&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-        &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pop_random&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;indices&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-        &lt;span class="c1"&gt;# Might no longer be true because we've successfully reduced&lt;/span&gt;
-        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;best_test_case&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-            &lt;span class="c1"&gt;# We're only calling this for the side effect of updating self.best_test_case&lt;/span&gt;
-            &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;is_interesting&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;best_test_case&lt;/span&gt;&lt;span class="p"&gt;[:&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;best_test_case&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;:])&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;This iterates over the test case in a random order, avoiding stalls as a result - if a fraction \(p\) of the test case is deletable this will only stall for around \(\frac{1}{p}\) steps, while either deterministic version can potentially stall for \(O(n)\) calls.&lt;/p&gt;
-
-
-&lt;p&gt;(this isn't a very good way of doing randomisation, and all of these are improved by &lt;a href="https://www.drmaciver.com/2017/06/adaptive-delta-debugging/"&gt;adaptive delta debugging&lt;/a&gt; of course, but we'll ignore that for now).&lt;/p&gt;
-
-
-&lt;p&gt;The problem of course is that all of these are basically the same algorithm with a lot of code duplication between them, and we would like to be able to flexibly swap between modes based on what's working.&lt;/p&gt;
-
-
-&lt;p&gt;Another related problem is that often we want to get an idea of how good a pass is before running it. If we were to e.g. run the random one for ten steps and see if it did anything before we decide whether to run the full thing, that would help a lot with the pass selection problem (how we know which reduction pass we should run right now).&lt;/p&gt;
-
-
-&lt;p&gt;This example also makes it seem easier than it is. Consider the following reduction pass:&lt;/p&gt;
-
-
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;put_in_order&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;best_test_case&lt;/span&gt;&lt;span class="p"&gt;)):&lt;/span&gt;
-        &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;min&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;best_test_case&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;9&lt;/span&gt;&lt;span class="p"&gt;)):&lt;/span&gt;
-            &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;best_test_case&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;best_test_case&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt;
-                &lt;span class="n"&gt;attempt&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;list&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;best_test_case&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-                &lt;span class="n"&gt;attempt&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;attempt&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;attempt&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;attempt&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-                &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;is_interesting&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;attempt&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;This tries swapping all nearby out of order pairs in order to make the test case more sorted (which is a reduction lexicographically).
-Here all the same considerations potentially apply, but there are two indices that vary instead of one.
-The question of what order to try things in is also even more complicated, as potentially this one might need &lt;em&gt;many&lt;/em&gt; passes to reach convergence (there are \(n!\) possible permutations of a sequence so I think this has the potential to take \(O(n!)\) calls to complete given an adversarial interestingness test).&lt;/p&gt;
-
-
-&lt;p&gt;All of this is problem set up as a preamble for telling you about how we solve the problem in Hypothesis, which is to consider a reduction pass as making a series of nondeterministic choices,
-which it must exhaustively try all of before reduction is considered to have finished.
-The API for making these choices looks as follows:&lt;/p&gt;
-
-
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;DeadBranch&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ne"&gt;Exception&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="sd"&gt;"""Raised when a reduction pass is unable to continue from&lt;/span&gt;
-&lt;span class="sd"&gt;    the current point."""&lt;/span&gt;
-
-
-&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Chooser&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-    &lt;span class="sd"&gt;"""A source of nondeterminism for use in reduction passes."""&lt;/span&gt;
-
-    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;choose&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;values&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;condition&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;lambda&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-        &lt;span class="sd"&gt;"""Returns a value ``x`` in ``values`` such that&lt;/span&gt;
-&lt;span class="sd"&gt;        ``condition(x)`` is True, possibly raising ``DeadBranch``&lt;/span&gt;
-&lt;span class="sd"&gt;        if there are no such values, or if it turns out we have&lt;/span&gt;
-&lt;span class="sd"&gt;        already exhausted all remaining values. """&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;The reduction passes above now look as follows:&lt;/p&gt;
-
-
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;greedy_deletion&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;chooser&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;chooser&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;choose&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;best_test_case&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
-    &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;is_interesting&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;best_test_case&lt;/span&gt;&lt;span class="p"&gt;[:&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;best_test_case&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;:])&lt;/span&gt;
-
-&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;put_in_order&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;chooser&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;chooser&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;choose&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;best_test_case&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
-
-    &lt;span class="c1"&gt;# NB: Possible no such j exists in which case this raises.&lt;/span&gt;
-    &lt;span class="n"&gt;j&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;chooser&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;choose&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;
-        &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;min&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;best_test_case&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;9&lt;/span&gt;&lt;span class="p"&gt;)),&lt;/span&gt;
-        &lt;span class="k"&gt;lambda&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;best_test_case&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;best_test_case&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-    &lt;span class="p"&gt;)&lt;/span&gt;
-
-    &lt;span class="n"&gt;attempt&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;list&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;best_test_case&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="n"&gt;attempt&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;attempt&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;attempt&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;attempt&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-    &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;is_interesting&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;attempt&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;The reducer is now free to try these in any order it likes, without the reduction passes overspecifying it.&lt;/p&gt;
-
-
-&lt;p&gt;Currently we try two different orders in different contexts:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Uniformly at random.&lt;/li&gt;
-&lt;li&gt;Iterating backwards in reverse lexicographic order.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;Switching between the two according some frankly fairly arbitrary internal heuristics that seem to work pretty well but are clearly suboptimal.&lt;/p&gt;
-
-
-&lt;p&gt;The thing that's worth noting however is the representation. You can see it in &lt;a href="https://github.com/HypothesisWorks/hypothesis/blob/master/hypothesis-python/src/hypothesis/internal/conjecture/choicetree.py"&gt;the relevant Python file&lt;/a&gt;, but the important features of it are basically:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;We maintain a rose tree, lazily built as we walk it, where each node has &lt;code&gt;len(values)&lt;/code&gt; children, &lt;code&gt;values&lt;/code&gt; being the collection of choices made at that point. Each node also maintains a count of how many "live" (that is, not fully explored) children it has.&lt;/li&gt;
-&lt;li&gt;When we complete running a pass step, we mark the final node as dead, decrement the count on its parent and if that is zero also mark it as dead and do the same with its parent etc.&lt;/li&gt;
-&lt;li&gt;Every time we successfully reduce the current target, we delete the tree and start over with a fresh one, but for deterministic iteration start from the same point in the tree (to the greatest degree possible)&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;Essentially we are representing a step in a reduction pass as a sequence of integers representing nondeterministic choices,
-and stopping when the full tree has been explored for the given shrink target.
-As well as turning out to be quite a convenient representation, this is pleasingly similar to &lt;a href="https://2020.ecoop.org/details/ecoop-2020-papers/13/Test-Case-Reduction-via-Test-Case-Generation-Insights-From-the-Hypothesis-Reducer"&gt;how Hypothesis represents test-case generation&lt;/a&gt;.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2021-01-11-06:13.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-01-14-14:00.html</id>
     <title>Rejection Sampling in Hypothesis</title>
@@ -985,7 +814,7 @@ Almost all of that detail you can just look at and go "Huh. What's up with that?
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-07-05-10:30.html</id>
     <title>Why do we need new terminology?</title>
-    <updated>2021-07-05T10:30:00+01:00</updated>
+    <updated>2021-07-05T16:19:40+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Why do we need new terminology?&lt;/p&gt;
@@ -1034,5 +863,79 @@ Almost all of that detail you can just look at and go "Huh. What's up with that?
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2021-07-05-10:30.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2021-07-06-13:53.html</id>
+    <title>Start from amazing</title>
+    <updated>2021-07-06T13:53:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Start from amazing&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2021-07-06&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I'm out of spoons for the piece about taste I was going to be writing today, so I'll finish it off some other day.
+Instead, here's a short piece to think about.&lt;/p&gt;
+
+
+&lt;p&gt;You know that thing that happens, where you say you don't like something, and someone tells you that you've probably just never tried a good example of it?&lt;/p&gt;
+
+
+&lt;p&gt;It's annoying, right?&lt;/p&gt;
+
+
+&lt;p&gt;Sometimes it's annoying in that way where someone tells you that you should exercise more, get more daylight, eat your greens. That sort of thing. You know it, and you know it's true, but god it sounds like so much &lt;em&gt;work&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Sometimes it's annoying because you &lt;em&gt;have&lt;/em&gt; tried versions that everyone tells you are good, and they still haven't worked for you.
+Maybe they were kinda fine, maybe they still had something you didn't like, maybe something else. Either way, you've tried the examples that people have collectively decided are good, and you've concluded the whole thing just isn't to you.&lt;/p&gt;
+
+
+&lt;p&gt;First off, I should say, it's completely OK to not like something. This is allowed. Not everything has to be for you. There's not nearly enough time to like everything, and there's no obligation to like things you don't want to.&lt;/p&gt;
+
+
+&lt;p&gt;But sometimes you find yourself in a position where you &lt;em&gt;want&lt;/em&gt; to like something, but the things everyone suggests as good aren't really working for you.&lt;/p&gt;
+
+
+&lt;p&gt;I think this is because the recommendation of trying good things is wrong. Don't try good things, try amazing things. When you're trying to learn to like something, anything short of amazing isn't going to cut it.&lt;/p&gt;
+
+
+&lt;p&gt;Ideally, try things that even people who are no more than passingly into the genre think are amazing, because that the scene thinks is amazing is often a bit esoteric and relies on things that you will not really appreciate until you are more familiar with the genre (in much the same way &lt;a href="https://notebook.drmaciver.com/posts/2021-07-04-12:52.html"&gt;that you won't yet get the jokes&lt;/a&gt;).&lt;/p&gt;
+
+
+&lt;p&gt;Really though, the goal here is not to use some external measure of amazingness - that's just a good way to find candidates - but to find things that &lt;em&gt;you&lt;/em&gt; think are amazing, that are so good that all of your objections to the genre are blown away and you find yourself faced with the inescapable conclusion that &lt;em&gt;of course&lt;/em&gt; you like this, how could you not?&lt;/p&gt;
+
+
+&lt;p&gt;In the long run, not everything you consume will be amazing of course, but finding things that are amazing lets you anchor your sense of what's good about what you are trying to learn to appreciate. The qualities that you experience in the amazing examples are the qualities you are looking for in subtler forms in the good. But it's easier to start with things that blow you away and work backwards from there than it is to spend a lot of time in an ambiguous space going "Am I enjoying this? I don't know? Maybe?" trying to appreciate the finer qualities of something that you are currently experiencing as merely OK.&lt;/p&gt;
+
+
+&lt;p&gt;Starting from the amazing examples is the &lt;a href="https://notebook.drmaciver.com/posts/2020-03-05-11:27.html"&gt;existence proof&lt;/a&gt; that you need. You have demonstrated that you &lt;em&gt;can&lt;/em&gt; enjoy the thing, all you need now is to expand outwards Now you just need to work outwards from there using the &lt;a href="https://www.drmaciver.com/2019/05/how-to-do-hard-things/"&gt;fully general system&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Part of the context for this is that I have an ongoing sense that I would like to learn to appreciate poetry. Not that I &lt;em&gt;should&lt;/em&gt;, but that I would like to. I'll freely admit I haven't tried very hard, but what I have tried hasn't worked very well.&lt;/p&gt;
+
+
+&lt;p&gt;&lt;a href="https://twitter.com/LisaIRMcNulty"&gt;Lisa&lt;/a&gt; recently suggested that maybe I needed to listen to it instead of read it,
+because really poetry is always intended to be experienced in spoken form, and suggested I try some of the videos on &lt;a href="https://www.youtube.com/user/ButtonPoetry"&gt;Button Poetry&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;I spent a while clicking through some no doubt perfectly good poetry that was doing absolutely nothing for me, and was just about to conclude this as a failed experiment when I happened across the following:&lt;/p&gt;
+
+
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/tFTASR8BMps" title="YouTube video player" width="560"&gt;&lt;/iframe&gt;
+
+
+&lt;p&gt;The experience of watching this was not unlike accidentally stepping out in front of a truck full of feelings, and left me shaking for about an hour. It may not hit you that way, that's fine. This reaction isn't for you, it's for me.&lt;/p&gt;
+
+
+&lt;p&gt;But this is the level of reaction you should be seeking. Something that takes your previous ambivalence and washes it away it away in a flood, a revelation leaving you with no choice but to say "Oh. I get it now."&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2021-07-06-13:53.html" rel="alternate"/>
   </entry>
 </feed>
