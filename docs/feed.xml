@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2021-07-06T13:53:00+01:00</updated>
+  <updated>2021-07-07T14:11:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,119 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2021-01-14-14:00.html</id>
-    <title>Rejection Sampling in Hypothesis</title>
-    <updated>2021-01-14T14:48:06+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Rejection Sampling in Hypothesis&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2021-01-14&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;(This post assumes you know roughly how Hypothesis does test-case reduction and generation. See &lt;a href="https://2020.ecoop.org/details/ecoop-2020-papers/13/Test-Case-Reduction-via-Test-Case-Generation-Insights-From-the-Hypothesis-Reducer"&gt;our ECOOP paper&lt;/a&gt; for a high level explanation)&lt;/p&gt;
-
-
-&lt;p&gt;Suppose you have some generator &lt;code&gt;base&lt;/code&gt; and you want to sample from it conditionally.
-In Hypotheis you can do this with &lt;code&gt;base.filter(condition)&lt;/code&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;Conceptually, this does &lt;em&gt;rejection sampling&lt;/em&gt;, which works roughly like this:&lt;/p&gt;
-
-
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Filtered&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="fm"&gt;__init__&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;base&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;condition&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-        &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;__base&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;base&lt;/span&gt;
-        &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;__condition&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;condition&lt;/span&gt;
-
-    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;do_draw&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-        &lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-            &lt;span class="n"&gt;attempt&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;draw&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;__base&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-            &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;__condition&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;attempt&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-                &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;attempt&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;That is, we're attempting to draw from the conditional distribution of values that come from &lt;code&gt;base&lt;/code&gt; that satisfy &lt;code&gt;condition&lt;/code&gt; and we do this by repeatedly drawing values from it until one satisfies the condition.&lt;/p&gt;
-
-
-&lt;p&gt;This has a couple of problems:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;The underlying choice sequence contains a lot of probably useless garbage - we made a bunch of choices in each iteration of the loop when drawing from the base (and possibly even when calling the condition! This is allowed), and these are probably all irrelevant.&lt;/li&gt;
-&lt;li&gt;These loops are potentially very long, especially if the condition is hard or impossible to satisfy.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;We adopt the following heuristic approach to deal with the second problem:&lt;/p&gt;
-
-
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Filtered&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-    &lt;span class="o"&gt;...&lt;/span&gt;
-
-    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;do_draw&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-        &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;_&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-            &lt;span class="n"&gt;attempt&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;draw&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;__base&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-            &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;__condition&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;attempt&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-                &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;attempt&lt;/span&gt;
-        &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mark_invalid&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;That is, we terminate all rejection sampling at three iterations - it may well be possible to proceed from there, but if so we have a chance at trying again at the next generation, and spending longer seems largely not worth it.&lt;/p&gt;
-
-
-&lt;p&gt;(Why three you ask? Well, let me ask you a better question: Why not three?)&lt;/p&gt;
-
-
-&lt;p&gt;(That is to say, no good reason. It's a fairly arbitrarily chosen number that seems to work OK)&lt;/p&gt;
-
-
-&lt;p&gt;The first problem we have a slightly more principled way to deal with: We want to be able to reduce the choice sequence by removing all the redundant draws.&lt;/p&gt;
-
-
-&lt;p&gt;(This is made &lt;em&gt;slightly&lt;/em&gt; more complicated by the fact that the draws might not be redundant - Hypothesis generators are allowed to have side effects, such as inserting rows into a database, so it's possible for a filtered generator to do important work in the initial loops).&lt;/p&gt;
-
-
-&lt;p&gt;Assuming for the moment that &lt;code&gt;condition&lt;/code&gt; does not make any choices (which it mostly won't, and we're not that fussed about producing worse results if it does) this is actually relatively easy:
-The boundaries of the &lt;code&gt;draw&lt;/code&gt; call are marked on the choice sequence, and the reducer can try deleting that region of the choice sequence. This allows it to delete the early iterations of the loop,
-resulting in an effect where in a reduced choice sequence we just get implausibly lucky and always satisfy the condition first time.&lt;/p&gt;
-
-
-&lt;p&gt;We can, and do (although &lt;a href="https://github.com/HypothesisWorks/hypothesis/pull/2757"&gt;it turns out this got silently broken at some point and I fixed it as a result of writing this blog post&lt;/a&gt;), speed this up further by adding special boundary markers that indicate that the region is probably irrelevant.
-This looks like the following:&lt;/p&gt;
-
-
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Filtered&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-    &lt;span class="o"&gt;...&lt;/span&gt;
-
-    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;do_draw&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-        &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;_&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-            &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;start_example&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;FILTER_LABEL&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-            &lt;span class="n"&gt;attempt&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;draw&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;__base&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-            &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;__condition&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;attempt&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-                &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;stop_example&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-                &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;attempt&lt;/span&gt;
-            &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;stop_example&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;discard&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-        &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mark_invalid&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;The reason this helps is that we can gather together all regions of the choice sequence that have been marked as discarded and attempt to delete them simultaneously.
-This will, usually, work. In particular it allows us to make all filtered generators implausibly lucky simultaneously with one call.&lt;/p&gt;
-
-
-&lt;p&gt;This kind of annotation of the choice sequence with useful information about common patterns in generation is often quite helpful for Hypothesis's test-case reduction. I think a lot of it is not that necessary any more, but this distinction between used and discarded regions seems to help a great deal and often allows for some significant performance improvements during reduction.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2021-01-14-14:00.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-01-19-11:41.html</id>
     <title>Some Theory of Test-Case Reduction</title>
@@ -867,7 +754,7 @@ Almost all of that detail you can just look at and go "Huh. What's up with that?
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-07-06-13:53.html</id>
     <title>Start from amazing</title>
-    <updated>2021-07-06T13:53:00+01:00</updated>
+    <updated>2021-07-06T15:17:38+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Start from amazing&lt;/p&gt;
@@ -937,5 +824,63 @@ because really poetry is always intended to be experienced in spoken form, and s
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2021-07-06-13:53.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2021-07-07-14:11.html</id>
+    <title>Studying the mundane</title>
+    <updated>2021-07-07T14:11:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Studying the mundane&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2021-07-07&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;One of the things that you might notice about the things that I write is that they're often about really mundane topics.&lt;/p&gt;
+
+
+&lt;p&gt;Here are some examples:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://drmaciver.substack.com/p/telegraph-your-moves"&gt;Telegraph your moves&lt;/a&gt; contains a significant discussion of why you should tell people when you're running late.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://drmaciver.substack.com/p/you-should-complain-about-it"&gt;You should complain about it&lt;/a&gt; is about complaining (obviously).&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://drmaciver.substack.com/p/how-to-do-everything"&gt;How to do everything&lt;/a&gt; is almost entirely about this (I do briefly talk about mathematics and writing, but mostly it's not about that) and touches on profound topics such as how to catch a ball, how to clean your bathroom, and how to open a bag of rice.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;I do not write about mundane topics because they are sources of deep philosophical insight. I write about them because I am actually trying to solve mundane problems. I said in &lt;a href="https://notebook.drmaciver.com/posts/2021-07-03-13:55.html"&gt;No shortage of things to write about&lt;/a&gt; that "in order to run out of things to write, I'd have to basically have life solved. I'm uh a little ways away from that". This is true. But necessarily a significant number of the problems I have not solved in my life are mundane, because most of life is mundane, and I still think these problems are worth writing about.&lt;/p&gt;
+
+
+&lt;p&gt;This isn't to say that I'm &lt;em&gt;only&lt;/em&gt; interested in mundane problems, but mundane problems are important, and often &lt;a href="https://drmaciver.substack.com/p/life-complete-problems"&gt;life complete&lt;/a&gt; in interesting ways, and by their very mundanity will often have high impact. I don't know if my writing has ever made anyone blissfully happy, but I do know multiple people who have improved the way they cleaned their bathroom and had a slightly less annoying rice opening experience as a result, and that too is part of the good life.&lt;/p&gt;
+
+
+&lt;p&gt;A particular reason I study and think about mundane things is that I think that there's often a lot of low hanging fruit available for improving them. People don't spend much time thinking about mundane problems, and even less time on how to communicate improvements in them.&lt;/p&gt;
+
+
+&lt;p&gt;To a large degree this is rational: You essentially improve until what you've got is "good enough" and it's not worth figuring out how to improve further.
+Importantly though, the effort that isn't worth it is that of &lt;em&gt;figuring out&lt;/em&gt; how to improve further. Often doing better is lower effort than what you're doing now, or very high benefit. Once you know how to do something the better way, it's clearly worth doing it that way (if it weren't, it wouldn't be a better way, it would be a way with a different set of trade offs), but that doesn't mean it's worth inventing that better way.&lt;/p&gt;
+
+
+&lt;p&gt;(It may also still not be worth learning that better way, or you may not want to, and that's fine. I'm both not that great at tying my shoes and know full well I could fix this with a couple of hours spent studying &lt;a href="https://www.fieggen.com/shoelace/ianknot.htm"&gt;Ian Fieggen's Shoe Lace website&lt;/a&gt;, but have I done that? I absolutely have not)&lt;/p&gt;
+
+
+&lt;p&gt;I on the other hand am perfectly happy to put in that effort, because I find it interesting, and I have time to spend, and also there's a lot of stuff that other people seem to be "naturally" good at that I've had to figure out the hard way, so once I've invested all that mental infrastructure in learning this stuff I might as well keep going.&lt;/p&gt;
+
+
+&lt;p&gt;And... it turns out it's not that hard. There are some core skills that it's worth developing, but they're generally useful core skills for life, mundane or otherwise. Mostly you just need to learn to break out of habits, spot patterns, and identify where you've taken problems as immutable when they're actually easily fixable things. I'm not claiming this is &lt;em&gt;easy&lt;/em&gt;, but it's not rocket surgery or anything, and almost by definition it's a skillset for making most parts of your life better.&lt;/p&gt;
+
+
+&lt;p&gt;It does take time and energy, and I'm aware those are both often in short supply, so I don't expect too many people to do as much thinking about this as I do, but that's fine. I don't mind having a niche, and I expect I'll keep it. After all, literally nobody else is ever going to &lt;a href="https://drmaciver.substack.com/p/refusing-to-learn"&gt;explain how to keep your flat clean in terms of the work of James C. Scott on the early development of agrarian states&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;(Although I could totally see &lt;a href="https://goula.sh/"&gt;Meekaale&lt;/a&gt; doing this with Hubert Dreyfus and Alasdair MacIntyre instead)&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2021-07-07-14:11.html" rel="alternate"/>
   </entry>
 </feed>
