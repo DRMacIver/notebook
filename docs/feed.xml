@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2021-07-07T14:11:00+01:00</updated>
+  <updated>2021-07-08T15:18:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,83 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2021-01-19-11:41.html</id>
-    <title>Some Theory of Test-Case Reduction</title>
-    <updated>2021-01-19T14:39:06+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Some Theory of Test-Case Reduction&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2021-01-19&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;There's a bunch of test-case reduction theory that mostly lives in my head and currently-abandoned paper drafts.
-I'm doing a week of PhD related writing so I thought it would be good to write up a dump of these ideas here.&lt;/p&gt;
-
-
-&lt;p&gt;A test-case reducer is something that is designed to take an interesting test case and make it "simpler" in some sense while retaining the property of interest.&lt;/p&gt;
-
-
-&lt;p&gt;Formally, a test-case reducer on some set of test-cases \(T\) is a function \(\{r : \{(U, x) : x \in U \subseteq T\} \to T\) such that \(r(U, x) \in U\). The set \(\{(U, x) : x \in U \subseteq T\}\) is called the set of reduction problems on \(T\).&lt;/p&gt;
-
-
-&lt;p&gt;The first argument to the reducer is the interestingness test (the set of interesting test cases) and the second is some interesting test case that we want to reduce.&lt;/p&gt;
-
-
-&lt;p&gt;A partial order \(\preceq\) is a reduction order for \(r\) (or \(r\) is a reducer for \(\preceq\)) if \(r(U, x) \preceq x\).
-The reduction order captures what we mean by saying that a reducer makes the test case "simpler". A test case is simpler if it's smaller in the reduction order.&lt;/p&gt;
-
-
-&lt;p&gt;(It's hopefully faily uncontroversial that the "simpler" relationship should be a partial order - it's basically to avoid cycles where sometimes \(x\) reduces to \(y\) and sometimes \(y\) reduces to \(x\) depending on the interestingness test. It's easy to construct reducers that do have these cycles, so not every reducer has a reduction order, but generally I think those reducers are badly designed)&lt;/p&gt;
-
-
-&lt;p&gt;As I mentioned in &lt;a href="https://notebook.drmaciver.com/posts/2021-01-01-11:22.html"&gt;Basic Reducer Design&lt;/a&gt; I generally prefer the reduction order to be a total order.
-There's no reason it has to be, but there's also no reason for it not to be - any partial order can be extended to a total order, and if a function is a reducer for some partial order then it's a reducer for any extension of it.&lt;/p&gt;
-
-
-&lt;p&gt;One reason to prefer a total order is that if we want a test-case reducer to be normalizing (in the sense Groce et al. propose in &lt;a href="https://www.cefns.nau.edu/~adg326/issta17.pdf"&gt;One test to rule them all&lt;/a&gt;, that is its output does not depend on the initial test case) then it must be a total order because for any \(x, y\) we must have \(r(\{x, y\}, \cdot) = y\) or \(r(\{x, y\}, \cdot) = x\), so either \(x \preceq y\) or \(y \preceq x\).&lt;/p&gt;
-
-
-&lt;p&gt;One nice thing about reduction orders is that they guarantee that reducers compose nicely without undoing each other's work. Given reducers \(r_1, r_2\) we can define a composite reducer straightforwardly as \((r_1 \cdot r_2)(U, x) = r_1(U, r_2(U, x))\) - we apply \(r_2\) then we apply \(r_1\).  If \(\preceq\) is a reduction order for both of \(r_1\) and \(r_2\) then it also is for \(r_1 \cdot r_2\).&lt;/p&gt;
-
-
-&lt;p&gt;Without that common reduction order, you might end up in an annoying situation where \(r_2(U, x) = y\) and \(r_1(U, y) = x\). Note that you can have this even if \(r_1\) and \(r_2\) each have a reduction order but it's not the same one.&lt;/p&gt;
-
-
-&lt;p&gt;One thing to consider is when a reducer is "done". We say a reduction problem \((U, x)\) is fully reduced for \(r\) if \(r(U, x) = x\),
-and a reducer is idempotent if \((U, r(U, x))\) is fully reduced - i.e. running the reducer twice doesn't do any more than running the reducer once.&lt;/p&gt;
-
-
-&lt;p&gt;Another nice feature of reduction orders is that they guarantee that you can always iterate a reducer to an idempotent fixed point (assuming the reduction order is reasonable. The technical condition we require here is &lt;a href="https://en.wikipedia.org/wiki/Well-founded_relation"&gt;well-foundedness&lt;/a&gt; but in basically every case of interest the order has the much stronger property that \(\{y: y \preceq x\}\) is finite for any \(x\)). Given a reducer \(r\) you can define the reducer \(r^+\) where \(r^+(U, x)\) is defined by iterating the sequence \(x_0 = x\), \(x_{n + 1} = r(U, x_n)\) until you reach a fixed point. Without a reduction order you can get cycles in this sequence so it may never terminate.&lt;/p&gt;
-
-
-&lt;p&gt;You can also think of \(r^+\) as the fixed point of \(r\) under composition. i.e. \(r^+ = r \cdot r^+\), so we call \(r^+\) the &lt;em&gt;fixation&lt;/em&gt; of \(r\).&lt;/p&gt;
-
-
-&lt;p&gt;By the way, these two constructs of reducer composition and fixation are not particularly abstract but are actually how reducers are built in practice.
-You can think of your typical reducer as \((r_1 \cdot \ldots \cdot r_n\)^+) where the \(r_i\) are individual simpler reducers that are typically called &lt;em&gt;reduction passes&lt;/em&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;Generally speaking for a reducer we're most interested in the behaviour of \(r^+\) - what happens when you run the reducer to fixation - but it's often useful to consider reducers that are not necessarily run to fixation because of this pass structure. Anecdotally (and for solid heuristic reasons) it's generally better &lt;em&gt;not&lt;/em&gt; to run each pass to fixation before running the next one:
-After running a reducer once it's typically "pretty close" to fixation, and running it again is likely to be wasted effort, while if other passes have run it may have been perturbed enough that more work is useful.&lt;/p&gt;
-
-
-&lt;p&gt;Reasoning in terms of the fully reduced problems of a reducer also gives us another useful notion, which is that of reducer strength. We can say \(r_1\) is at least as strong as \(r_2\) if every reduction problem that is fully reduced for \(r_1\) is also fully reduced for \(r_2\) (and stronger if also there are some reduction problems that are fully reduced for \(r_2\) that are not for \(r_1\)).&lt;/p&gt;
-
-
-&lt;p&gt;This is a slightly weaker notion of strength than some we might consider. It's possible for \(r_1\) to be stronger than \(r_2\) but to sometimes have \(r_2(U, x) \prec r_1(U, x)\), because \(r_1\) took a path that causes it to get stuck at a worse point.&lt;/p&gt;
-
-
-&lt;p&gt;Under this notion of strength, \(r_1 \cdot r_2\) is at least as strong as each of \(r_1\) and \(r_2\), and \(r^+\) is equally strong to \(r\).&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2021-01-19-11:41.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-04-19-10:16.html</id>
     <title>Remastery Training</title>
@@ -828,7 +751,7 @@ because really poetry is always intended to be experienced in spoken form, and s
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-07-07-14:11.html</id>
     <title>Studying the mundane</title>
-    <updated>2021-07-07T14:11:00+01:00</updated>
+    <updated>2021-07-07T17:53:39+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Studying the mundane&lt;/p&gt;
@@ -882,5 +805,63 @@ Importantly though, the effort that isn't worth it is that of &lt;em&gt;figuring
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2021-07-07-14:11.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2021-07-08-15:18.html</id>
+    <title>Heading towards the ouch</title>
+    <updated>2021-07-08T15:18:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Heading towards the ouch&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2021-07-08&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Here's an interesting therapeutic technique that I've synthesized out of various practices.
+It's not exactly a &lt;em&gt;safe&lt;/em&gt; practice, but I do think it's a useful one.
+I deployed a bit of it earlier in a coaching session (after extensive checking in with the client that this was really what they wanted me to do, including asking "This is going to require me to be an asshole to you. Are you sure you want me to do that?"),
+but I haven't quite got a handle on how to facilitate it for someone else yet because I don't generally do it for other people.&lt;/p&gt;
+
+
+&lt;p&gt;The technique is as follows:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Say something that you don't want to say (or possibly think it clearly. Saying it out loud is supposed to work better, but I sometimes find the opposite).&lt;/li&gt;
+&lt;li&gt;Does it hurt? Good. Identify why it hurts.&lt;/li&gt;
+&lt;li&gt;Take the part that hurts and say something new based on it. If that hurts more, switch to that as your new starting point. If not, stick with the current one.&lt;/li&gt;
+&lt;li&gt;Keep doing this until you run out of "improvements" or it gets too much and you need to stop.&lt;/li&gt;
+&lt;li&gt;Use wherever you've ended up as a prompt for introspection. Explain why it feels so bad, in depth, what you're worried about, evaluate whether the statement is actually true, etc.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;For example, such a sequence for me might look like:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;I should get a real job.&lt;/li&gt;
+&lt;li&gt;I'm just kidding myself about being able to make writing work as a career.&lt;/li&gt;
+&lt;li&gt;I'm not going to see it through anyway.&lt;/li&gt;
+&lt;li&gt;I'll just quit as soon as it gets too difficult.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;I don't think this is necessarily true (I sure hope it's not!), but there's definitely some part of me that believes that,
+and I can notice a real physical discomfort increasing as I move down the list. I really don't like the last entry at all.&lt;/p&gt;
+
+
+&lt;p&gt;This is roughly a shadow work / Focusing hybrid. It's designed to help you uncover emotionally painful beliefs that you're trying to ignore.
+Generally these sorts of statements don't hurt unless some part of you believes on some level that they are true,
+and this process gets you to a point where you have identified a specific acutely painful belief to interrogate (and ideally do something like coherence therapy to to defuse it, if indeed that belief is false. See e.g. &lt;a href="https://notebook.drmaciver.com/posts/2020-02-20-09:31.html"&gt;Emotional reactions as legacy code&lt;/a&gt;).&lt;/p&gt;
+
+
+&lt;p&gt;It's also, I think, probably quite a good tool for learning Focusing because of how unsubtle it is. This is not staying with a fuzzy unclear feeling until it makes sense, this is confronting you with exactly what a felt sense dialled up to 11 is like. It's oddly similar to the strategy I outlined in &lt;a href="https://notebook.drmaciver.com/posts/2021-07-06-13:53.html"&gt;Start from amazing&lt;/a&gt;, in that it dials up the feelings until they can be clearly identified so you know what to look for, rather than leaving you in a fuzzy in between space where you're not sure if anything is going on there or not.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2021-07-08-15:18.html" rel="alternate"/>
   </entry>
 </feed>
