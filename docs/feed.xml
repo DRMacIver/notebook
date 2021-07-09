@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2021-07-08T15:18:00+01:00</updated>
+  <updated>2021-07-09T12:43:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,236 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2021-04-19-10:16.html</id>
-    <title>Remastery Training</title>
-    <updated>2021-04-19T11:10:12+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Remastery Training&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2021-04-19&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I play a lot of Slay the Spire.&lt;/p&gt;
-
-
-&lt;p&gt;Slay the Spire is a game where you build up a deck of cards, which you use to fight a series of battles of varying difficulty.&lt;/p&gt;
-
-
-&lt;p&gt;You ascend through the levels of the spire, until at the end of the game you attempt to defeat its heart.&lt;/p&gt;
-
-
-&lt;p&gt;The game is divided into four acts, at the end of each of which you fight a boss.&lt;/p&gt;
-
-
-&lt;p&gt;The heart is the boss of the fourth act.&lt;/p&gt;
-
-
-&lt;p&gt;To get to Act 4, you must collect three keys before the end of Act 3.&lt;/p&gt;
-
-
-&lt;p&gt;If you do not, the game ends early, with "Victory?" instead of "Victory"&lt;/p&gt;
-
-
-&lt;p&gt;Slay the Spire has four characters, Ironclad, Silent, Defect, and Watcher.&lt;/p&gt;
-
-
-&lt;p&gt;My preference goes Defect, Ironclad, Silent, Watcher, from favourite to least favourite.&lt;/p&gt;
-
-
-&lt;p&gt;Slay the Spire has a series of difficulties called "Ascension levels".&lt;/p&gt;
-
-
-&lt;p&gt;Ascension levels go from 0 to 20.&lt;/p&gt;
-
-
-&lt;p&gt;You start at Ascension 0, and every time you complete Act 3 on an ascension level, you unlock the next one for that character.&lt;/p&gt;
-
-
-&lt;p&gt;I would like to be able to defeat the heart on Ascension 20 with each character.&lt;/p&gt;
-
-
-&lt;p&gt;So far I have managed this only with Defect.&lt;/p&gt;
-
-
-&lt;p&gt;I am currently working on defeating the heart on Ascension 20 with Ironclad.&lt;/p&gt;
-
-
-&lt;p&gt;My current, more modest, goal is to defeat Act 3, but so far I have not even been able to manage that.&lt;/p&gt;
-
-
-&lt;p&gt;This is somewhat frustrating.&lt;/p&gt;
-
-
-&lt;p&gt;I've tried quite a few times at this point.&lt;/p&gt;
-
-
-&lt;p&gt;Probably not more than 10, but still.&lt;/p&gt;
-
-
-&lt;p&gt;The problem is that I am no longer getting better at it, at least not very quickly.&lt;/p&gt;
-
-
-&lt;p&gt;I have identified a strategy that would likely allow me to beat the heart, but I am very bad at it.&lt;/p&gt;
-
-
-&lt;p&gt;To tell you about this strategy, I must first tell you about relics.&lt;/p&gt;
-
-
-&lt;p&gt;Relics are items you acquire as you ascend the spire, which modify your abilities.&lt;/p&gt;
-
-
-&lt;p&gt;Each character has a starter relic, unique to them.&lt;/p&gt;
-
-
-&lt;p&gt;The Ironclad's starter relic is called "burning blood", and it heals you slightly at the end of each fight.&lt;/p&gt;
-
-
-&lt;p&gt;One way to think about this is that it makes the game slightly easier, without making your character more powerful.&lt;/p&gt;
-
-
-&lt;p&gt;This is not entirely right, but it's pretty close.&lt;/p&gt;
-
-
-&lt;p&gt;At the beginning of the game, you encounter Neow, who offers you a blessing.&lt;/p&gt;
-
-
-&lt;p&gt;One of the blessings you can get is to swap your starter relic for a random boss relic.&lt;/p&gt;
-
-
-&lt;p&gt;Boss relics are very different from the Ironclad starter relic, in that most of them make the game harder while also making your character more powerful.&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, I noticed that I was never taking boss relic swap, because I liked the Ironclad starter relic too much.&lt;/p&gt;
-
-
-&lt;p&gt;This suggested that my way through Ascension 20 might be to learn to boss relic swap on Ironclad.&lt;/p&gt;
-
-
-&lt;p&gt;I tried this, and I died badly every time, because Ascension 20 is too hard for me to experiment on.&lt;/p&gt;
-
-
-&lt;p&gt;So I went back down to Ascension 0.&lt;/p&gt;
-
-
-&lt;p&gt;But even with the boss relic swap, Ascension 0 is very easy for me now.&lt;/p&gt;
-
-
-&lt;p&gt;Slay the Spire is not an easy game, so a year or two ago this would have been inconceivable, but I've played more than 600 hours of it since then.&lt;/p&gt;
-
-
-&lt;p&gt;I'm not &lt;em&gt;amazing&lt;/em&gt; at the game, but I'm quite good at it and, as a result, I can all but sleepwalk my way through Ascension 0, even with the harder tactics.&lt;/p&gt;
-
-
-&lt;p&gt;So I decided that it wasn't enough for me to just beat act 3, I had to beat the heart to advance.&lt;/p&gt;
-
-
-&lt;p&gt;The idea being that I have to learn to overshoot my goal.&lt;/p&gt;
-
-
-&lt;p&gt;This starts to be at least a little difficult, even at the lower ascension levels.&lt;/p&gt;
-
-
-&lt;p&gt;Enough that I have to pay attention, certainly.&lt;/p&gt;
-
-
-&lt;p&gt;This approach lets me take advantage of the tighter feedback loops at lower ascension levels to focus on the parts of the game that I am still bad at.&lt;/p&gt;
-
-
-&lt;p&gt;It removes slack. &lt;/p&gt;
-
-
-&lt;p&gt;As a result I must be consistently good to progress, instead of just lucky.&lt;/p&gt;
-
-
-&lt;p&gt;I will still progress by luck to some degree, because the game is hard enough that if you get unlucky you can die, even at lower ascension levels.&lt;/p&gt;
-
-
-&lt;p&gt;But luck can only get you so far, and the changes I have made force me to develop more consistent skill.&lt;/p&gt;
-
-
-&lt;p&gt;This is a bit like an idea called Mastery Training.&lt;/p&gt;
-
-
-&lt;p&gt;Mastery Training is an approach where in order to learn something, you must master what comes before it.&lt;/p&gt;
-
-
-&lt;p&gt;For example, requiring an A in all the prerequisite courses before you're allowed to take a course.&lt;/p&gt;
-
-
-&lt;p&gt;This isn't always a good idea.&lt;/p&gt;
-
-
-&lt;p&gt;I suspect it's often a bad idea.&lt;/p&gt;
-
-
-&lt;p&gt;But what I'm doing here is an interesting variant of it.&lt;/p&gt;
-
-
-&lt;p&gt;It is not mastery, but remastery.&lt;/p&gt;
-
-
-&lt;p&gt;I have "completed the course" that is Ascensions 0 through 19.&lt;/p&gt;
-
-
-&lt;p&gt;And now I'm retaking them, but with additional constraints, and trying to retake them at a higher level.&lt;/p&gt;
-
-
-&lt;p&gt;I am relearning "familiar subjects" with the goal of getting an A in them this time.&lt;/p&gt;
-
-
-&lt;p&gt;The theory being that what is holding me back from progressing past my current level might be a lack of consistency at the foundations.&lt;/p&gt;
-
-
-&lt;p&gt;This seems like a good general lesson to apply.&lt;/p&gt;
-
-
-&lt;p&gt;When we are stuck, start again from the beginning, but this time you have to do it &lt;em&gt;right&lt;/em&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;You have a clear path you walked before.&lt;/p&gt;
-
-
-&lt;p&gt;You know the way.&lt;/p&gt;
-
-
-&lt;p&gt;But now you must walk it again.&lt;/p&gt;
-
-
-&lt;p&gt;This time carrying weights.&lt;/p&gt;
-
-
-&lt;p&gt;Or paying careful attention to how you place your feet.&lt;/p&gt;
-
-
-&lt;p&gt;Perhaps we should do this more generally?&lt;/p&gt;
-
-
-&lt;p&gt;When we have something that is too hard, we replace it with something that is too easy, but done differently.&lt;/p&gt;
-
-
-&lt;p&gt;For example, when we have reached a point where we feel our writing has plateaued, we start again with simpler writing, but done differently.&lt;/p&gt;
-
-
-&lt;p&gt;Perhaps with a writing exercise where we change the cadence of our writing.&lt;/p&gt;
-
-
-&lt;p&gt;And talk about mundane subjects.&lt;/p&gt;
-
-
-&lt;p&gt;And use this to practice our voice, or our editing.&lt;/p&gt;
-
-
-&lt;p&gt;You know, hypothetically.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2021-04-19-10:16.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-06-07-06:51.html</id>
     <title>A round-tripping problem with expected utility theory</title>
@@ -809,7 +579,7 @@ Importantly though, the effort that isn't worth it is that of &lt;em&gt;figuring
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-07-08-15:18.html</id>
     <title>Heading towards the ouch</title>
-    <updated>2021-07-08T15:18:00+01:00</updated>
+    <updated>2021-07-08T15:57:23+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Heading towards the ouch&lt;/p&gt;
@@ -863,5 +633,60 @@ and this process gets you to a point where you have identified a specific acutel
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2021-07-08-15:18.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2021-07-09-12:43.html</id>
+    <title>What does one do on bad days?</title>
+    <updated>2021-07-09T12:43:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;What does one do on bad days?&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2021-07-09&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Today is not a particularly good day for me. I guess it would be a stretch to call it a bad day, but I'm tired and out of sorts, struggling to focus as a result, and generally not at my finest. Not particularly depressed or anything, just a bit meh.&lt;/p&gt;
+
+
+&lt;p&gt;I'm writing this piece anyway, because I wanted to write something every day and I think it's good for me to stick to that - both in the sense that I'm able to do it and I committed to doing it, so I should, and also in the sense that I want to do it and I think it's helpful for me to do so.&lt;/p&gt;
+
+
+&lt;p&gt;But at the same time, I have some actually involved writing projects I want to do. I'm still figuring out a (paid) newsletter issue on taste that I have to finish, am planning to write up a lot of my old notebook posts on emotions into a more coherent form, and am still reading "Technology and the Character of Contemporary Life". None of that really appeals today, nor does the slightly more sophisticated notebook post I was going to write instead of this one.&lt;/p&gt;
+
+
+&lt;p&gt;And honestly it's reasonable that they don't appeal today. I could do them if I had to, it's not that I'm literally incapable of them, but possibly I'm impaired enough that I shouldn't: the benefit is reduced from me at my peak performance, and the cost increased. They're things that are definitely worth doing on a good day, but maybe they're not today.&lt;/p&gt;
+
+
+&lt;p&gt;This is something of a recurring pattern for me. I couldn't really tell you how often it happens (I probably should be able to, but I'm not sure what counts as "it". Also I hate data entry. Please don't give me advice on this, I don't want your advice, and I will shout at you in my &lt;a href="https://drmaciver.substack.com/p/no-backseating"&gt;No Backseating&lt;/a&gt; voice), but certainly it's not an unusual occurrence. I'd guess I have a day at least this bad most weeks, sometimes more often than that.&lt;/p&gt;
+
+
+&lt;p&gt;And this often leaves me thinking about the question of what to do with those days.
+Or, I guess, more specifically how to avoid losing them to dissociative activities. It's very easy to get to the end of a bad day and go "Wait, what did I &lt;em&gt;do&lt;/em&gt; today?" and discover that the answer is that you spent all of it on Twitter, or playing games, or watching youtube videos, or something else of that ilk.
+This seems bad.&lt;/p&gt;
+
+
+&lt;p&gt;If I had a real job of course (and sometimes even when I've not had a real job and it was purely self inflicted) what I would do with such days (if they fell on a weekday) is to sacrifice them on the altar of the god of presenteeism. Can't do anything useful today? Tough luck. We'll punish you for taking the day off, but turning up and being miserable and not getting any work done is fine, so...&lt;/p&gt;
+
+
+&lt;p&gt;It's relatively far down on the list of complaints I have about society, but definitely one of the failings is that we treat human beings as more reliable than they are, and then make it their problem when they fail to live up to that impossible ideal.&lt;/p&gt;
+
+
+&lt;p&gt;Setting that aside... In an ideal world, what would we like such days to be like?&lt;/p&gt;
+
+
+&lt;p&gt;I've suggested to coaching clients that it's good to build up a sort of library of things they can do for breaks, or when feeling bad. Going for a walk is one, doing some meditation or lying semisupine another, but these feel more like pause activities than fulfilling. Also I often don't &lt;em&gt;want&lt;/em&gt; to do these things.&lt;/p&gt;
+
+
+&lt;p&gt;Maybe I'm just being melodramatic due to my low mood, but it feels like this question is butting up against foundational questions like "What is life for?". Having a day where one is feeling tired and low motivation feels like one is butting up against the "&lt;a href="https://www.youtube.com/watch?v=vS-zEH8YmiM"&gt;We've got both kinds of sources of meaning, production &lt;em&gt;and&lt;/em&gt; consumption&lt;/a&gt;" that it feels too easy to settle into. You end up stripped of access to meaning, mostly by laying bare how limited your access to it was in the first place, and are forced to ask what's left. It's no wonder it's easy to lose these days in activities that are designed to help you fast forward life.&lt;/p&gt;
+
+
+&lt;p&gt;Reading that paragraph back to myself does rather feel like I was lying when I said I wasn't having a particularly depressed day, doesn't it? Oh well. I'm going to go for a walk and pretend to be thinking deep thoughts while I do.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2021-07-09-12:43.html" rel="alternate"/>
   </entry>
 </feed>
