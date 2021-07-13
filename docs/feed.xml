@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2021-07-12T17:36:00+01:00</updated>
+  <updated>2021-07-12T18:10:35+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,6 +10,163 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2021-07-02-09:29.html</id>
+    <title>People are bad at defining things</title>
+    <updated>2021-07-02T14:25:09+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;People are bad at defining things&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2021-07-02&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I'm currently reading a philosophy book, and as a result I am cranky about definitions.
+Like everyone who is not a mathematician (or culturally basically a mathematician, such as a computer scientist or theoretical physicist),
+philosophers are very bad at defining their terms. The key sin of philosophers is that they love doing it anyway, and think they're good at it, but are for the most part terrible about it unless they've lucked into learning how to do it well from some source that wasn't a bunch of philosophers who think "language games" meant you were supposed to play language as a competitive sport where you score points for using words that nobody else understands.&lt;/p&gt;
+
+
+&lt;p&gt;What I mean by "definition" here, is that when you introduce a new term (or even use an existing term in a specific or unfamilar way), you need to provide people with the ability to understand your usage of it. This doesn't require a precise definition that says exactly what the term means, like a mathematician would, though if you &lt;em&gt;can&lt;/em&gt; provide such a thing that is often helpful, but it does require you to introduce enough precision that people can understand what you're talking about.&lt;/p&gt;
+
+
+&lt;p&gt;Most people do not put in nearly enough work into defining novel terms in a way that is usable by the reader.
+When you introduce a definition without adequate support, you have essentially put a road block in the reader's path until they have sufficiently understood your definition to proceed.
+If you do not help them out in doing this, you have probably lost most of them as a reader,
+and almost certainly many of those you retain will misunderstand your point.&lt;/p&gt;
+
+
+&lt;h3&gt;What a good definition is&lt;/h3&gt;
+
+
+&lt;p&gt;The purpose of a definition is to give people enough to grab on to to be able to understand your usage of the term.
+As such, it should explain the term (see &lt;a href="https://www.drmaciver.com/2018/10/how-to-explain-anything-to-anyone/"&gt;How to explain anything to anyone&lt;/a&gt;) and give them some material to work with in developing their understanding on top of that explanation. &lt;/p&gt;
+
+
+&lt;p&gt;A gold standard for definitions contains all of the following characteristics:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;The term is well separated from surrounding text rather than buried somewhere. The mathematical convention is that we typically have a bolded "&lt;strong&gt;Definition:&lt;/strong&gt;" in front of it, often with a number you can refer back to.&lt;/li&gt;
+&lt;li&gt;It provides an explanation of &lt;em&gt;why we need the term&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;It provides an intuitive handle on the term.&lt;/li&gt;
+&lt;li&gt;It provides as precise an explanation of what the term means as is reasonable.&lt;/li&gt;
+&lt;li&gt;It is accompanied by at least one &lt;em&gt;positive example&lt;/em&gt;, an example of a thing that satisfies the definition, with an explanation of why it is an example.&lt;/li&gt;
+&lt;li&gt;It is accompanied by at least one &lt;em&gt;negative example&lt;/em&gt;, an example of a thing that is close to satisfying the definition but doesn't, with an explanation of why it is not an example.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;Of these, the examples are in many ways the most important and the most overlooked.&lt;/p&gt;
+
+
+&lt;h3&gt;An example of a bad definition&lt;/h3&gt;
+
+
+&lt;p&gt;In contrast the way most people do it is they shove a new term somewhere in the middle of a paragraph, gesture vaguely at what they mean by it, and then go on to use it in ways that completely fail to track the limited sense in which they've defined it.&lt;/p&gt;
+
+
+&lt;p&gt;The definition that I am currently being cranky about comes from Albert Borgmann's is as follows:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;The early scientific theories of the Western world had both world-articulating and world-explaining significance. To articulate something, i.e., to outline and highlight the crucial features of something is also a kind of explanation. It is the kind of explanation that can satisfy the request for an explanation of a concrete thing or event. I will call it deictic explanation to distinguish it from deductive-nomological or subsumptive explanation.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;If I am being very very charitable, this just about satisfies (2) and (4). It explains why we need the term (it distinguishes a type of explanation that is different from the sort we are considering in the context of a modern scientific explanation), and it more or less defines it as being the sort of explanation that you get by outlining and highlighting th ecrucial features of something. Fair enough.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, on the very next page this is how the word deictic is used:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;They do have deictic power in the sense of delimiting a set of possible worlds and ruling out certain impossible worlds. We can observe a similar pattern in the development from alchemy by way of chemistry to nuclear physics. Alchemy reflected in its laws a definite world of a limited number of stuffs and transformative forces and processes. Nuclear physics. being a microtheory, allows for an indefinite number of molar worlds.&lt;/p&gt;
+&lt;p&gt;This pattern in the progress of science has no a priori character. It is an empirical fact that the world can be explained in the powerful scientific theories that we now have. The pace of the discoveries of these theories is a matter of historical fact. But given these two facts, it was inevitable that the deictic power of the sciences waned and all but vanished. This is not a failure of science. Nor is it the case that the deictic achievement of the earlier sciences was unquestionable or unique. Art has always been the supreme deictic discipline. Art in turn has sometimes been one with philosophy, religion, and politics; at other times these disciplines have complemented or competed with one another as disciplines of deictic explanation.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;This subsequent usage &lt;em&gt;very&lt;/em&gt; much makes me question whether I have understood his meaning.&lt;/p&gt;
+
+
+&lt;p&gt;As near as I can tell, "deictic" means something along the lines of "indexical", which means something along the lines of "pointing to a specific thing" (thanks to &lt;a href="https://carcinisation.com/2020/01/27/ignorance-a-skilled-practice/"&gt;a literal banana for explaining this&lt;/a&gt;). Something is deictic to the degree that it concerns a specific thing in all its glory, in contrast to something being apodeictic. An explanation is deictic to the degree that it is focused on explaining &lt;em&gt;a particular thing&lt;/em&gt; and what is interesting about it specifically, while it is apodeictic to the degree that it is focused on explaining &lt;em&gt;a general phenomenon&lt;/em&gt; and the conditions under which it emerges.&lt;/p&gt;
+
+
+&lt;p&gt;Maybe. I can't tell for sure, because he doesn't provide me with any concrete examples to test this. Certainly I would very much not have thought of philosophy or religion as at all examples of things prone to deictic explanations. Art I will grant, certainly, and politics certainly is full of &lt;a href="https://en.wikipedia.org/wiki/Wicked_problem"&gt;wicked problems&lt;/a&gt;, which by their nature require attention to the specifics of the unique thing involved.&lt;/p&gt;
+
+
+&lt;p&gt;All of this confusion would easily have been cleared up with some examples and a bit more spelling out of his meaning.&lt;/p&gt;
+
+
+&lt;h3&gt;An example of a good definition&lt;/h3&gt;
+
+
+&lt;p&gt;In contrast, I think the following definition from Bernard Suits's "The Grasshopper", is very good:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;To play a game is to attempt to achieve a specific state of affairs [prelusory goal], using only means permitted by rules [lusory means], where the rules prohibit use of more efficient in favour of less efficient means [constitutive rules], and where the rules are accepted just because they make possible such activity [lusory attitude]. I also offer the following simpler and, so to speak, more portable version of the above: playing a game is the voluntary attempt to overcome unnecessary obstacles.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;This has both the precise definition and the intuitive handle on it. It then goes on for several pages more to investigate how this does and doesn't apply to specific examples, which I won't include here. It doesn't have a mathematician's "&lt;strong&gt;Definition:&lt;/strong&gt;" preamble, but that wouldn't really fit the style of the book, and it's still its own paragraph.&lt;/p&gt;
+
+
+&lt;h3&gt;Appropriate levels of precision&lt;/h3&gt;
+
+
+&lt;p&gt;In my gold standard for "good definition" I said "It provides as precise an explanation of what the term means as is reasonable".
+The reason for the "as is reasonable" clause is that it is rarely the case that one can define something perfectly precisely,
+at least outside of the realm of mathematics or constrained rule based environments (e.g. laws, rituals, games).&lt;/p&gt;
+
+
+&lt;p&gt;In reality many things cannot be this precisely defined, and we need more example-based (philosophers would say "ostensive") and sketch explanations. For example I can't really define "red" for you, but I can tell you that red is a colour (hopefully you don't need me to define "colour", because I'd really struggle with this one) and then point at examples of things that are red and things that are not red until you get the picture.&lt;/p&gt;
+
+
+&lt;p&gt;This is particularly common when you start talking about people, as people are reliably messy and complicated, and it becomes hard to precisely define a term rigorously. That's fine. We can still talk usefully about things like "love" without answering the question "What is love?", it just requires us to be a bit more careful about how we do it, and how we use examples. It may also require us to talk around a bit more about what we do and don't mean.&lt;/p&gt;
+
+
+&lt;p&gt;For an example of why one might need to do this, a question that came up in discussion recently is "What does 'unconditional' mean in 'unconditional love'?". It turned out everyone was using it differently (e.g. does it refer to how the love would change if circumstances change, or is it a character of the type of love felt in the moment?). This is the sort of confusion that comes up in the absence of a sufficiently precise definition. We cannot always solve it with that better definition, but we do need to navigate it.&lt;/p&gt;
+
+
+&lt;p&gt;This ties in to the question of teaching tacit knowledge that I talked about in &lt;a href="https://drmaciver.substack.com/p/how-to-teach-the-local-style"&gt;How to teach the local style&lt;/a&gt;. These definitions cannot perfectly capture the thing you want to convey, but you can get the rough idea, and you can correct any errors along the way.&lt;/p&gt;
+
+
+&lt;p&gt;One thing that I think is important is that when you've introduced something this way you need to hold people's hands more when you use the term. Every time it comes up in future is an opportunity to refine their understanding of it, and it's worth taking many of those opportunities.&lt;/p&gt;
+
+
+&lt;h3&gt;How bad definitions thrive&lt;/h3&gt;
+
+
+&lt;p&gt;Why do so few people meet my standards of good definitions?&lt;/p&gt;
+
+
+&lt;p&gt;I think, primarily, people write bad definitions for the following reasons:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Nobody taught them how to write good definitions, because the practice is so rare outside of mathematicians (and also nobody teaches mathematicians to do it well, they just hope they pick it up by example like everything else important in mathematics).&lt;/li&gt;
+&lt;li&gt;Writing good definitions is much harder work than defining things badly.&lt;/li&gt;
+&lt;li&gt;Writing good definitions will often reveal that the emperor has no clothes and you're using big words for no goddamn good reason to make yourself sound clever.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;I'm hoping in this essay I have done at least some small part to offset the first, although it probably needs a longer essay with more worked examples and better explanations of the various moving parts to really work for that.&lt;/p&gt;
+
+
+&lt;p&gt;The second is, in fact, good. Writing definitions &lt;em&gt;should&lt;/em&gt; be hard, because every time you introduce a new term (even when you introduce it well!) you are asking the reader to do a bunch of work, and significantly harming their ability to understand your text. Often the best way to define something is to figure out a way to not need it at all, and where you do need it it's worth putting in the work to make sure that people can actually use it.&lt;/p&gt;
+
+
+&lt;p&gt;The third is, I think, the most pernicious. I'm a big fan of Michael Billig's "Learn to write badly: How to succeed in the social sciences". I tried to find some good excerpts to include here, but it's not actually all that well suited to excerpting. In short, he argues that much of the use of jargon and technical terms in the social sciences is of an imprecise sort that &lt;em&gt;cannot&lt;/em&gt; be defined precisely in this way, because that would lose its social function, which is more about marketing your ideas and protecting them from criticism than it is about carefully and helpfully communicating them.&lt;/p&gt;
+
+
+&lt;p&gt;Charitably, I don't think most people are deliberately leaning into this incentive, but I do think many people are innocently writing in a style that these incentives have shaped, and demanding clear communication is a good way to push back on those incentives.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2021-07-02-09:29.html" rel="alternate"/>
+  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-07-03-13:55.html</id>
     <title>No shortage of things to write about</title>
@@ -523,23 +680,9 @@ This seems bad.&lt;/p&gt;
     <link href="https://notebook.drmaciver.com/posts/2021-07-11-11:03.html" rel="alternate"/>
   </entry>
   <entry>
-    <id>https://notebook.drmaciver.com/posts/2021-07-12-10:57.html</id>
-    <title>2021-07-12-10:57</title>
-    <updated>2021-07-12T10:57:00+01:00</updated>
-    <content type="html">
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2021-07-12&lt;/dd&gt;
-&lt;/dl&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2021-07-12-10:57.html" rel="alternate"/>
-  </entry>
-  <entry>
     <id>https://notebook.drmaciver.com/posts/2021-07-12-17:36.html</id>
     <title>A library of recurring ideas</title>
-    <updated>2021-07-12T17:36:00+01:00</updated>
+    <updated>2021-07-12T18:10:35+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;A library of recurring ideas&lt;/p&gt;
