@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2021-07-14T11:44:00+01:00</updated>
+  <updated>2021-07-15T10:56:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,53 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2021-07-04-12:52.html</id>
-    <title>The humour test for expertise</title>
-    <updated>2021-07-04T14:05:45+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;The humour test for expertise&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2021-07-04&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;A heuristic I sometimes use is this: You understand something at a reasonably expert level if and only if you get the jokes at a level where you could find it funny.&lt;/p&gt;
-
-
-&lt;p&gt;I started thinking about this when I watched this video:&lt;/p&gt;
-
-
-&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/VD5I4l9oASg" title="YouTube video player" width="560"&gt;&lt;/iframe&gt;
-
-
-&lt;p&gt;This video is hilarious. If you don't play Slay the Spire much you won't understand why. I can explain why, and I can even explain why well enough that you in some way understand it, but I cannot explain it in a way that allows you to find it funny without teaching you to play Slay the Spire, because the humour derives entirely from an understanding of the game.&lt;/p&gt;
-
-
-&lt;p&gt;Similarly, &lt;a href="https://github.com/mame/quine-relay"&gt;the quine relay&lt;/a&gt; is hilarious, but if you're not a programmer you absolutely won't find it funny, it's just weird and pointless.&lt;/p&gt;
-
-
-&lt;p&gt;The reason for this link between expertise and humour is basically &lt;a href="https://en.wikipedia.org/wiki/Theories_of_humor#Incongruous_juxtaposition_theory"&gt;the incongruity theory of humour&lt;/a&gt;: You have a particular set of expectations about how the game is played, and the video repeatedly violates those assumptions by playing the game in slightly unexpected ways. This is not how a Defect build is supposed to work, but it's definitely how &lt;em&gt;this&lt;/em&gt; Defect build works.&lt;/p&gt;
-
-
-&lt;p&gt;Because humour derives from incongruity, if you can get the jokes in a field then you must have a sense of incongruity. This means that you've internalised the sort of intuition about what the expected normal for the field is - the field's norms of taste, a working knowledge for how everything typically goes and fits together. These are all signs of expertise, that you've progressed to the &lt;a href="https://en.wikipedia.org/wiki/Four_stages_of_competence"&gt;Unconscious Competence stage&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;The humour test for expertise is itself a sort of joke, and the fact that I find it funny is probably an indication that I've at least started to get something of a handle on the expertise literature (or just that I'm weird), but it's also serious and I think probably points in a number of interesting directions.&lt;/p&gt;
-
-
-&lt;p&gt;In particular, although you can't explain specialist jokes in a way that makes them funny, it may be worth explaining them, as it will often reveal interesting things about expert intuition that might not otherwise be readily accessible.&lt;/p&gt;
-
-
-&lt;p&gt;Another application of the test is that the jokes you find funny probably tell you something about your areas of expertise that you hadn't realised. This may be an uncomfortable realisation because e.g. it causes you to realise quite how much time you've spent playing Slay the Spire.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2021-07-04-12:52.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-07-05-10:30.html</id>
     <title>Why do we need new terminology?</title>
@@ -624,7 +577,7 @@ Could be anything.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-07-14-11:44.html</id>
     <title>A lack of shared projects</title>
-    <updated>2021-07-14T11:44:00+01:00</updated>
+    <updated>2021-07-14T19:07:29+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;A lack of shared projects&lt;/p&gt;
@@ -669,5 +622,46 @@ We mostly do things because we want to spend time together, not because we're tr
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2021-07-14-11:44.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2021-07-15-10:56.html</id>
+    <title>Spiraling outwards</title>
+    <updated>2021-07-15T10:56:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Spiraling outwards&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2021-07-15&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I'm going to describe a problem that I have. I have not yet found a good solution for it, and this is why you are getting a very nominal post today in which I describe that problem and think out loud about it.&lt;/p&gt;
+
+
+&lt;p&gt;The problem is this: I start with something small, and then I think "Oh this is really good, I should do it justice". &lt;/p&gt;
+
+
+&lt;p&gt;Doing it justice makes it... not small. Often it increases the work of doing it by a factor of ten or more. Suddenly it becomes a thing that I need to spent much longer on than I had time allocated for it, and moves it up a project size category.&lt;/p&gt;
+
+
+&lt;p&gt;In concrete terms what happens is that I now have two pieces that started out life as notebook posts and are going to be newsletter issues that I need to finish. They should be pretty easy to finish but I probably won't have time to do so prior to the weekend.&lt;/p&gt;
+
+
+&lt;p&gt;Often they languish unfinished. This was very much my problem with writing papers. It felt like in order to write an academic paper I had to publish something that was substantially worse than the state of the art that existed in my head, because in order to get to the point where it was publishable I either had to stop thinking about the problem (impossible if I were to be interested enough to finish writing it) or publish something that I felt was worse than I could have done.&lt;/p&gt;
+
+
+&lt;p&gt;This isn't really a problem for many things which feel like I can just snip off a thread. The notebook is good for that, but often I end up wanting to write things which have a certain minimum size without which they would end up incomplete.&lt;/p&gt;
+
+
+&lt;p&gt;I think part of the problem here is really not that things become large, but that I need a better way to work on large projects. The paper problem felt like a mismatch between the sort of incrementalism I wanted to do and the sort of incrementalism that academia wanted me to do. The newsletter issue problem is more manageable, and I think I just need to get better at managing my draft backlog and allocating more time to it.&lt;/p&gt;
+
+
+&lt;p&gt;Perhaps I can treat drafts as an inbox problem and apply the &lt;a href="https://drmaciver.substack.com/p/triage-your-inboxes"&gt;How to triage your inboxes&lt;/a&gt; method to it?&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2021-07-15-10:56.html" rel="alternate"/>
   </entry>
 </feed>
