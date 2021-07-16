@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2021-07-15T10:56:00+01:00</updated>
+  <updated>2021-07-16T10:12:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,59 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2021-07-05-10:30.html</id>
-    <title>Why do we need new terminology?</title>
-    <updated>2021-07-05T16:19:40+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Why do we need new terminology?&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2021-07-05&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;This piece is off the back of &lt;a href="https://notebook.drmaciver.com/posts/2021-07-02-09:29.html"&gt;People are bad at defining things&lt;/a&gt;. You should read that piece first. You don't strictly &lt;em&gt;need&lt;/em&gt; to read that piece first, but this post will have a lot more context if you do.&lt;/p&gt;
-
-
-&lt;p&gt;When you try to write using only easy to understand words, it can be hard to say what you mean because you have to use many words where a smaller number will do. As well as making it harder to write, this can make it harder to read, because every time you want to use the thing that you talked about in many words you have to use all those words again.&lt;/p&gt;
-
-
-&lt;p&gt;When you do this it helps more people to understand what you have written, but every single person who could understand the shorter way of writing it will find it harder to understand the longer way of writing it because each time they read those many words they have to make sure it is the same thing.&lt;/p&gt;
-
-
-&lt;p&gt;Sometimes it helps to make up new words that you can use instead of the many words that you would have to write. This makes it easier for people to read what you have written because you can use the word you made up each time you would have written many words and they know it means the same thing each time.&lt;/p&gt;
-
-
-&lt;p&gt;I wrote that in the &lt;a href="https://splasho.com/upgoer5/"&gt;upgoer five text editor&lt;/a&gt;, which requires you to write using only the ten hundred most common words (thousand is not in the thousand most common words you see), and it was kinda annoying.&lt;/p&gt;
-
-
-&lt;p&gt;What I wanted to say is this: Using a small vocabulary helps more people understand what you write, but it makes the text much longer. As a result, every person who could understand the larger vocabulary easily will tend to find it easier to understand the version that uses it fully, because each new word replaces a concept that took many words in the smaller vocabulary. Reading that single word each time is faster and doesn't require people to read the longer phrase to understand that you mean the same thing each time. As a result, it's often useful to introduce new terms that represent complicated concepts you're talking about to give people a handle on the concept they can use while reading your text.&lt;/p&gt;
-
-
-&lt;p&gt;I don't know that the version with the larger vocabulary is &lt;em&gt;that&lt;/em&gt; much better than the version in up goer five. I'm certainly happier with it, but I think for short texts it doesn't matter that much and it's repetition over the course of a longer text that matters.&lt;/p&gt;
-
-
-&lt;p&gt;Also sometimes you have a thing that you don't totally understand yet and it is nice to have a word that you can use to mean that thing while you talk around it. You can show things that are not what you mean and things that are what you mean, but you can't say exactly what it is you mean. Here it's really important to have a single word for it so you don't have to keep saying "that thing that I mean and am talking around".&lt;/p&gt;
-
-
-&lt;p&gt;Which, translated out of upgoer five, is to say: Sometimes you have a concept that you don't know how to define precisely and want to talk about, and you can't just keep saying "that concept that I haven't defined yet that I introduced back there", you need some sort of placeholder you can talk about.&lt;/p&gt;
-
-
-&lt;p&gt;This is why I talked about example-based definitions: You introduce the terminology, and you do your best to convey the rough sense of what you mean and provide examples to help refine it. By introducing a new word, you have given yourself the ability to talk about something that you would previously only have been able to talk around.&lt;/p&gt;
-
-
-&lt;p&gt;To summarise all of this: We sometimes need new terminology because, used well, it helps you communicate what you mean in a way that people will find easier to understand.&lt;/p&gt;
-
-
-&lt;p&gt;If this feels like an alien concept, very different to your experience of how people use novel terminology, yes that's right. That's why I'm complaining about people using definitions badly.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2021-07-05-10:30.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-07-06-13:53.html</id>
     <title>Start from amazing</title>
@@ -626,7 +573,7 @@ We mostly do things because we want to spend time together, not because we're tr
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-07-15-10:56.html</id>
     <title>Spiraling outwards</title>
-    <updated>2021-07-15T10:56:00+01:00</updated>
+    <updated>2021-07-15T11:12:58+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Spiraling outwards&lt;/p&gt;
@@ -663,5 +610,66 @@ We mostly do things because we want to spend time together, not because we're tr
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2021-07-15-10:56.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2021-07-16-10:12.html</id>
+    <title>Clearing hurdles in education</title>
+    <updated>2021-07-16T10:12:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Clearing hurdles in education&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2021-07-16&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;The following is not true, but it's often close enough to true that it's worth using as a working model.&lt;/p&gt;
+
+
+&lt;p&gt;When learning a skill, the level of effort required to get to a given point typically looks something like this:&lt;/p&gt;
+
+
+&lt;p&gt;&lt;img src="/images/effortskillgraph.png"/&gt;&lt;/p&gt;
+
+
+&lt;p&gt;This corresponds to the following difficulties of improvement at any given point:&lt;/p&gt;
+
+
+&lt;p&gt;&lt;img src="/images/difficultyskillgraph.png"/&gt;&lt;/p&gt;
+
+
+&lt;p&gt;(These numbers are made up imaginary units, obviously)&lt;/p&gt;
+
+
+&lt;p&gt;That is, the difficulty of getting better is usually pretty easy, but occasionally there are spikes where the difficulty rapidly increases. The gentle bits are the places where the way to improve is to just do the thing, the spikes are the bits where &lt;a href="https://drmaciver.substack.com/p/how-to-do-everything"&gt;there's some insight you need to figure out to progress&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;A very simplistic model of human behaviour is that people do things that are worth the effort of doing. As a result, what often happens when people are learning a skill is that they progress as long as it's easy, and then they hit a part where it's difficult it's no longer worth it to them to keep progressing.&lt;/p&gt;
+
+
+&lt;p&gt;As a result what you end up with is people who stall out particular points in their skill progression, thinking they have reached the limit of their talent, when in fact all they needed was a sustained period of effort at which point they would have started getting better again.&lt;/p&gt;
+
+
+&lt;p&gt;I think people generally solve these problems in one of three ways:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Being smart tends to lower the effort in one of these spikes. I don't know how much of this is "intrinsic" smartness and how much is having already learned the right skills of learning, but if smartness is a thing at all it certainly reduces the effort of generating insights when you're blocked on skill development.&lt;/li&gt;
+&lt;li&gt;Being very into the subject makes more effort seem worth it, so someone with exactly the same level of "talent" but more interest will often get better because they reach a spike in difficulty and it's still worth it to them to overcome it.&lt;/li&gt;
+&lt;li&gt;Having a good teacher &lt;em&gt;hugely&lt;/em&gt; reduces the difficulty level of these spikes, because they already know the insights you're struggling to come up with and can help you discover them.&lt;/li&gt;
+&lt;li&gt;Believing in this model will often motivate you to put in more effort than seems reasonable until you've overcome the hump, banking on the promise of future reward (I think, to the degree that they do, this is a lot of why "growth mindset" interventions work).&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;This is what I tend to mean when I say that almost nobody is bottlenecked on talent. They're probably just at a point in their skill development where it wasn't worth it for them to get better on their own, and nobody provided them with the right external support they needed to overcome the current spike in difficulty.&lt;/p&gt;
+
+
+&lt;p&gt;This is then compounded by the fact that the messaging they get about skill tends to convince them that this is evidence that they lack talent and will never be good at the thing, when in fact they're probably not substantially less talented than many people who end up way better than them due to a mix of luck, privilege, and motivation.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2021-07-16-10:12.html" rel="alternate"/>
   </entry>
 </feed>
