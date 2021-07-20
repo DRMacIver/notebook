@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2021-07-19T09:20:00+01:00</updated>
+  <updated>2021-07-20T00:32:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,64 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2021-07-08-15:18.html</id>
-    <title>Heading towards the ouch</title>
-    <updated>2021-07-08T15:57:23+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Heading towards the ouch&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2021-07-08&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Here's an interesting therapeutic technique that I've synthesized out of various practices.
-It's not exactly a &lt;em&gt;safe&lt;/em&gt; practice, but I do think it's a useful one.
-I deployed a bit of it earlier in a coaching session (after extensive checking in with the client that this was really what they wanted me to do, including asking "This is going to require me to be an asshole to you. Are you sure you want me to do that?"),
-but I haven't quite got a handle on how to facilitate it for someone else yet because I don't generally do it for other people.&lt;/p&gt;
-
-
-&lt;p&gt;The technique is as follows:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Say something that you don't want to say (or possibly think it clearly. Saying it out loud is supposed to work better, but I sometimes find the opposite).&lt;/li&gt;
-&lt;li&gt;Does it hurt? Good. Identify why it hurts.&lt;/li&gt;
-&lt;li&gt;Take the part that hurts and say something new based on it. If that hurts more, switch to that as your new starting point. If not, stick with the current one.&lt;/li&gt;
-&lt;li&gt;Keep doing this until you run out of "improvements" or it gets too much and you need to stop.&lt;/li&gt;
-&lt;li&gt;Use wherever you've ended up as a prompt for introspection. Explain why it feels so bad, in depth, what you're worried about, evaluate whether the statement is actually true, etc.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;For example, such a sequence for me might look like:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;I should get a real job.&lt;/li&gt;
-&lt;li&gt;I'm just kidding myself about being able to make writing work as a career.&lt;/li&gt;
-&lt;li&gt;I'm not going to see it through anyway.&lt;/li&gt;
-&lt;li&gt;I'll just quit as soon as it gets too difficult.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;I don't think this is necessarily true (I sure hope it's not!), but there's definitely some part of me that believes that,
-and I can notice a real physical discomfort increasing as I move down the list. I really don't like the last entry at all.&lt;/p&gt;
-
-
-&lt;p&gt;This is roughly a shadow work / Focusing hybrid. It's designed to help you uncover emotionally painful beliefs that you're trying to ignore.
-Generally these sorts of statements don't hurt unless some part of you believes on some level that they are true,
-and this process gets you to a point where you have identified a specific acutely painful belief to interrogate (and ideally do something like coherence therapy to to defuse it, if indeed that belief is false. See e.g. &lt;a href="https://notebook.drmaciver.com/posts/2020-02-20-09:31.html"&gt;Emotional reactions as legacy code&lt;/a&gt;).&lt;/p&gt;
-
-
-&lt;p&gt;It's also, I think, probably quite a good tool for learning Focusing because of how unsubtle it is. This is not staying with a fuzzy unclear feeling until it makes sense, this is confronting you with exactly what a felt sense dialled up to 11 is like. It's oddly similar to the strategy I outlined in &lt;a href="https://notebook.drmaciver.com/posts/2021-07-06-13:53.html"&gt;Start from amazing&lt;/a&gt;, in that it dials up the feelings until they can be clearly identified so you know what to look for, rather than leaving you in a fuzzy in between space where you're not sure if anything is going on there or not.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2021-07-08-15:18.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-07-09-12:43.html</id>
     <title>What does one do on bad days?</title>
@@ -600,7 +542,7 @@ to which he politely thanked me and said he would love some advice, and we had a
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-07-19-09:20.html</id>
     <title>Making life less irritating</title>
-    <updated>2021-07-19T09:20:00+01:00</updated>
+    <updated>2021-07-19T14:28:02+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Making life less irritating&lt;/p&gt;
@@ -665,5 +607,108 @@ Also it looked like the type of key for the deadbolt on my flat door. Nothing to
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2021-07-19-09:20.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2021-07-20-00:32.html</id>
+    <title>The trauma model of talent blocks</title>
+    <updated>2021-07-20T00:32:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;The trauma model of talent blocks&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2021-07-20&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;There's something very important you learn as a result of doing a mathematics degree. It's this:
+People &lt;em&gt;really&lt;/em&gt; didn't like studying mathematics at school, and they are keen to tell you.&lt;/p&gt;
+
+
+&lt;p&gt;There's something like a 50% hit rate when you talk to normal people (people in tech don't count) that when you tell someone you did mathematics at university they say "Oh god I hated mathematics at school". Sometimes they say it in different words. "Oh.", in a very flat tone of voice. "You must be very clever". They look at you with the wary look of a gazelle facing off with a lion, fearful and ready to bolt at the slightest sign of you baring your teeth and trying to do an equation at them.&lt;/p&gt;
+
+
+&lt;p&gt;Unsurprisingly, I've historically found this quite irritating, but as time has gone on I've started looking at it differently.
+Instead of treating this as an attack on my interests, when people say this to me my first thought is more along the lines of "I'm sorry your mathematics teacher hurt you."&lt;/p&gt;
+
+
+&lt;p&gt;I don't usually say it that way, that's a good way to get punched. Instead I wince sympathetically and say "Yeah, it's often taught really badly."&lt;/p&gt;
+
+
+&lt;p&gt;Sometimes I add "Sorry about that".&lt;/p&gt;
+
+
+&lt;p&gt;In &lt;a href="https://notebook.drmaciver.com/posts/2021-07-16-10:12.html"&gt;clearing hurdles in learning&lt;/a&gt; I talked about how often what happens is that people hit a block where the they require help to progress and think of this as their natural talent limit.&lt;/p&gt;
+
+
+&lt;p&gt;The detail this missed out on is what happens next, which is that you get stuck and we do two things, in order:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Tell you to try harder.&lt;/li&gt;
+&lt;li&gt;Blame you for not succeeding and then tell you it's your fault and is an intrinsic feature of you and your abilities.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;A distinction I find quite useful is that between guilt and shame. Guilt is when you feel bad about what you do, shame is when you feel bad about who you are. "I did a bad thing" vs "I am bad". It's not a perfect distinction but it's a pretty good rule of thumb.&lt;/p&gt;
+
+
+&lt;p&gt;Another principle I find useful (see &lt;a href="https://www.drmaciver.com/2019/08/jiminy-cricket-must-die/"&gt;Jiminy Cricket Must Die&lt;/a&gt;, or "Voices: The Educational Formation of Conscience" by Thomas Green) is that moral emotions are the internalised judgement of others.&lt;/p&gt;
+
+
+&lt;p&gt;A third principle I find useful is that emotional reactions we learn tend to stick around until we find a way to actively engage with them and change them by recognising that our situations have changed (see &lt;a href="https://notebook.drmaciver.com/posts/2020-02-20-09:31.html"&gt;Emotional reactions as legacy code&lt;/a&gt;, &lt;a href="https://notebook.drmaciver.com/posts/2020-03-03-09:07.html"&gt;Your emotions are valid but probably wrong&lt;/a&gt;).&lt;/p&gt;
+
+
+&lt;p&gt;Sure &lt;em&gt;seems&lt;/em&gt; like having kids spend a substantial fraction of their entire childhood in an environment in which they are praised or punished for their academic achievement, then telling them that their failure to excel is the result of an intrinsic feature of themselves and punishing them for it anyway might have some uh lasting negative emotional side effects, huh?&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, let me tell you about my experience learning to drive.&lt;/p&gt;
+
+
+&lt;p&gt;My attempts to learn to drive went as follows:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;I had driving lessons when I was 18. I was bad at it. I stopped driving lessons and went to university in a town where I could cycle everywhere.&lt;/li&gt;
+&lt;li&gt;I moved back in with my parents for about six months post university, and used this as an opportunity to practice driving.&lt;/li&gt;
+&lt;li&gt;I took a few more driving lessons to fill in some gaps, I was fine, and I passed my practical test first time.&lt;/li&gt;
+&lt;li&gt;I'm absolutely fine at driving, and am comfortable enough doing it that I've done multiple long road trips.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;What made the difference between my first attempts at learning to drive and my subsequent attempts?&lt;/p&gt;
+
+
+&lt;p&gt;Well, my first driving instructor was a very angry person, and tended to shout when I made mistakes. The result was that I was so anxious learning to drive and so afraid of making errors that I was unable to drive to any degree of competence.&lt;/p&gt;
+
+
+&lt;p&gt;It's certainly not the case that I'm a natural driver. My physical coordination and spatial awareness are on the poor side. It's possibly genuinely true that I was dangerous and needed correcting in my first driving lessons.&lt;/p&gt;
+
+
+&lt;p&gt;And yet, somehow shouting at me about that didn't help, because it turns out that experiencing intense negative emotions every time you make an error is not &lt;em&gt;remotely&lt;/em&gt; conducive to the acquisition of complex skills.&lt;/p&gt;
+
+
+&lt;p&gt;I don't expect feeling shame every time you think of a subject is much different.&lt;/p&gt;
+
+
+&lt;p&gt;I want to be clear: This is, for the most part, not teachers' fault. There are definitely individual teachers who make the problem worse (e.g. by behaving like my driving instructor), and there are individual teachers who make the problem less bad, but fundamentally this is a function of the system. It arises from the system of grading, and is compounded by the fact that when you hit a block you need individually tailored help to overcome it, which our systems of teaching are absolutely not set up to provide unless your parents are rich enough to hire a tutor for you. While a great teacher can ameliorate the worst of this problem, attempting to solve it will break them because the task is too big.&lt;/p&gt;
+
+
+&lt;p&gt;But regardless of whose fault it is, it seems to hurt a lot of people pretty badly, because they end up hitting their "talent limits" - the bits where they needed help - and instead of either helping them progress or telling them that their current level was good enough, the education system chose violence and made their attempts to improve &lt;em&gt;harder&lt;/em&gt;, not just now but effectively forever until they unlearn the incorrect emotional lessons that they got instead of the lessons they should have been getting.&lt;/p&gt;
+
+
+&lt;p&gt;I suspect that above and beyond the specific subjects that we fail to learn as a result of this dynamic, it has a much broader impact on our conception of ourselves, because we think in terms of subjects we are good at and subjects we are bad at,
+when instead we should be thinking more in terms of how good we want to be a subject and how much help we need to get there.&lt;/p&gt;
+
+
+&lt;p&gt;I also suspect that many people would find it really helpful to get some one on one tutoring in subjects they struggled at at school where they feel bad about that.&lt;/p&gt;
+
+
+&lt;p&gt;But, suspicions aside, one thing I'm reasonably certain of is that there are a lot of adults walking around with lingering low-grade trauma from school that they think of as their "lack of talent", and would benefit a great deal from the following reframing: It's not that you're bad at it, whatever "it" is, you were just never given the sort of help you needed.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2021-07-20-00:32.html" rel="alternate"/>
   </entry>
 </feed>
