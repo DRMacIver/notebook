@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2021-07-20T00:32:00+01:00</updated>
+  <updated>2021-07-22T01:05:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,61 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2021-07-09-12:43.html</id>
-    <title>What does one do on bad days?</title>
-    <updated>2021-07-09T14:49:42+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;What does one do on bad days?&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2021-07-09&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Today is not a particularly good day for me. I guess it would be a stretch to call it a bad day, but I'm tired and out of sorts, struggling to focus as a result, and generally not at my finest. Not particularly depressed or anything, just a bit meh.&lt;/p&gt;
-
-
-&lt;p&gt;I'm writing this piece anyway, because I wanted to write something every day and I think it's good for me to stick to that - both in the sense that I'm able to do it and I committed to doing it, so I should, and also in the sense that I want to do it and I think it's helpful for me to do so.&lt;/p&gt;
-
-
-&lt;p&gt;But at the same time, I have some actually involved writing projects I want to do. I'm still figuring out a (paid) newsletter issue on taste that I have to finish, am planning to write up a lot of my old notebook posts on emotions into a more coherent form, and am still reading "Technology and the Character of Contemporary Life". None of that really appeals today, nor does the slightly more sophisticated notebook post I was going to write instead of this one.&lt;/p&gt;
-
-
-&lt;p&gt;And honestly it's reasonable that they don't appeal today. I could do them if I had to, it's not that I'm literally incapable of them, but possibly I'm impaired enough that I shouldn't: the benefit is reduced from me at my peak performance, and the cost increased. They're things that are definitely worth doing on a good day, but maybe they're not today.&lt;/p&gt;
-
-
-&lt;p&gt;This is something of a recurring pattern for me. I couldn't really tell you how often it happens (I probably should be able to, but I'm not sure what counts as "it". Also I hate data entry. Please don't give me advice on this, I don't want your advice, and I will shout at you in my &lt;a href="https://drmaciver.substack.com/p/no-backseating"&gt;No Backseating&lt;/a&gt; voice), but certainly it's not an unusual occurrence. I'd guess I have a day at least this bad most weeks, sometimes more often than that.&lt;/p&gt;
-
-
-&lt;p&gt;And this often leaves me thinking about the question of what to do with those days.
-Or, I guess, more specifically how to avoid losing them to dissociative activities. It's very easy to get to the end of a bad day and go "Wait, what did I &lt;em&gt;do&lt;/em&gt; today?" and discover that the answer is that you spent all of it on Twitter, or playing games, or watching youtube videos, or something else of that ilk.
-This seems bad.&lt;/p&gt;
-
-
-&lt;p&gt;If I had a real job of course (and sometimes even when I've not had a real job and it was purely self inflicted) what I would do with such days (if they fell on a weekday) is to sacrifice them on the altar of the god of presenteeism. Can't do anything useful today? Tough luck. We'll punish you for taking the day off, but turning up and being miserable and not getting any work done is fine, so...&lt;/p&gt;
-
-
-&lt;p&gt;It's relatively far down on the list of complaints I have about society, but definitely one of the failings is that we treat human beings as more reliable than they are, and then make it their problem when they fail to live up to that impossible ideal.&lt;/p&gt;
-
-
-&lt;p&gt;Setting that aside... In an ideal world, what would we like such days to be like?&lt;/p&gt;
-
-
-&lt;p&gt;I've suggested to coaching clients that it's good to build up a sort of library of things they can do for breaks, or when feeling bad. Going for a walk is one, doing some meditation or lying semisupine another, but these feel more like pause activities than fulfilling. Also I often don't &lt;em&gt;want&lt;/em&gt; to do these things.&lt;/p&gt;
-
-
-&lt;p&gt;Maybe I'm just being melodramatic due to my low mood, but it feels like this question is butting up against foundational questions like "What is life for?". Having a day where one is feeling tired and low motivation feels like one is butting up against the "&lt;a href="https://www.youtube.com/watch?v=vS-zEH8YmiM"&gt;We've got both kinds of sources of meaning, production &lt;em&gt;and&lt;/em&gt; consumption&lt;/a&gt;" that it feels too easy to settle into. You end up stripped of access to meaning, mostly by laying bare how limited your access to it was in the first place, and are forced to ask what's left. It's no wonder it's easy to lose these days in activities that are designed to help you fast forward life.&lt;/p&gt;
-
-
-&lt;p&gt;Reading that paragraph back to myself does rather feel like I was lying when I said I wasn't having a particularly depressed day, doesn't it? Oh well. I'm going to go for a walk and pretend to be thinking deep thoughts while I do.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2021-07-09-12:43.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-07-11-11:03.html</id>
     <title>You open one of the 999 boxes on this floor and find...</title>
@@ -611,7 +556,7 @@ Also it looked like the type of key for the deadbolt on my flat door. Nothing to
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-07-20-00:32.html</id>
     <title>The trauma model of talent blocks</title>
-    <updated>2021-07-20T00:32:00+01:00</updated>
+    <updated>2021-07-20T02:30:57+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;The trauma model of talent blocks&lt;/p&gt;
@@ -710,5 +655,55 @@ when instead we should be thinking more in terms of how good we want to be a sub
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2021-07-20-00:32.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2021-07-22-01:05.html</id>
+    <title>Learning from the real</title>
+    <updated>2021-07-22T01:05:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Learning from the real&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2021-07-22&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Back in &lt;a href="https://notebook.drmaciver.com/posts/2020-03-04-11:18.html"&gt;Skirting the edge of disaster&lt;/a&gt; I pointed out that most complex systems that have been running in production for a while (e.g. a legacy software system, the London underground, humanity) have the form that they do as a result of the following two rules:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;If an important system is broken, we fix it.&lt;/li&gt;
+&lt;li&gt;If a system has spare capacity, we place more demands on it.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;As you can tell from the title of the linked piece, I was mostly framing this as a bad thing: The consequence of being at a stable balance of these two things is that the system is constantly almost but not-quite broken, because every time it gets too far from broken it gets loaded more, and every time it breaks it gets fixed.&lt;/p&gt;
+
+
+&lt;p&gt;But there's another side to this that I think is interesting: If you encounter a reasonably stable complex system in the wild (and you do, very regularly), this reliably means:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;It does a lot of things, because capabilities kept accreting over time, and they're often not things you would have thought of without that infrastructure because it changes what's easy and cheap to do.&lt;/li&gt;
+&lt;li&gt;Everything that would have stopped it from doing those things has been solved.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;A lot of time, work, and ingenuity has often gone into getting it to that state, much of which would have been impossible to figure out from first principles because you had to &lt;a href="https://notebook.drmaciver.com/posts/2020-02-26-16:07.html"&gt;try things and see what happened&lt;/a&gt; before you could even learn that you needed to solve the problems, let alone how.&lt;/p&gt;
+
+
+&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/John_Gall_(author)"&gt;Gall's law&lt;/a&gt; is "A complex system that works is invariably found to have evolved from a simple system that worked. A complex system designed from scratch never works and cannot be patched up to make it work. You have to start over with a working simple system."&lt;/p&gt;
+
+
+&lt;p&gt;But this then leads to the question: OK smart guy, how do I make a working simple system?&lt;/p&gt;
+
+
+&lt;p&gt;And I think the answer is often this: Go find a complex system that does what you want, and study it until you understand it well enough to extract a simple system from it.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2021-07-22-01:05.html" rel="alternate"/>
   </entry>
 </feed>
