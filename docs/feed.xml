@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2021-07-23T16:26:00+01:00</updated>
+  <updated>2021-07-25T12:50:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,90 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2021-07-12-17:36.html</id>
-    <title>A library of recurring ideas</title>
-    <updated>2021-07-12T18:10:35+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;A library of recurring ideas&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2021-07-12&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;(This is a quick piece that I am writing because I realised I'm not going to finish the long piece I was writing today)&lt;/p&gt;
-
-
-&lt;p&gt;A thing I notice that I do more than many other people is that I just have a lot of ideas in my head that I pattern match to new situations.&lt;/p&gt;
-
-
-&lt;p&gt;Like e.g.&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/The_Market_for_Lemons"&gt;Market for lemons&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Satisficing"&gt;Satisficing&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Positive_deviance"&gt;Positive deviance&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Pluralistic_ignorance"&gt;Pluralistic ignorance&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.ribbonfarm.com/2010/07/26/a-big-little-idea-called-legibility/"&gt;Legibility&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Goodhart%27s_law"&gt;Goodhart's law&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Stuart_Kauffman"&gt;The adjacent possible&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;These seem to come up time and time again. I'm only mentioning these ones because they're all things that have come up recently,
-I'm sure there are dozens if not hundreds of others.&lt;/p&gt;
-
-
-&lt;p&gt;There are also plenty I've come up with too. e.g. &lt;a href="https://notebook.drmaciver.com/posts/2020-03-04-11:18.html"&gt;Skirting the edge of disaster&lt;/a&gt; and the &lt;a href="https://drmaciver.substack.com/p/a-fractal-of-lies"&gt;Fractal of Lies&lt;/a&gt; have both come up recently.&lt;/p&gt;
-
-
-&lt;p&gt;I don't really have any good evidence that I do this more than other people, but it sure feels like it. I think I even do it more than other people who have some of the same ideas - a lot more people know about the market for lemons than go "Oh, a market for lemons" whenever they encounter the pattern in the wild. I talk about "Things that you can't unsee" but really I might just mean "Things I can't unsee".&lt;/p&gt;
-
-
-&lt;p&gt;Part of my evidence that I do this to an unusual degree is that I am unusually good at explaining things (at least, I think so, and other people seem to agree), and I think having this sort of library of recurring ideas is part of that: When presented with something to explain, I probably have a ready tool to hand to reach for to take it apart and reveal interesting things about it (&lt;a href="https://drmaciver.substack.com/p/fragments-intellectual-diy"&gt;Intellectual DIY&lt;/a&gt; of course being another of my recurring ideas).&lt;/p&gt;
-
-
-&lt;p&gt;Another recurring idea that doesn't have a catchy name or something I can refer to, but which I think about a lot, is that anything someone can do is a skill that almost everyone can learn to do better (this doesn't deny talent, although I'm a low-key talent sceptic in a number of ways, I just have a lot of faith in people's ability to learn skills given the right environment).
-So if this &lt;em&gt;is&lt;/em&gt; something I do to an unusual degree, how can people learn to do it better?&lt;/p&gt;
-
-
-&lt;p&gt;Back in &lt;a href="https://www.drmaciver.com/2017/02/thinking-through-the-implications/"&gt;Thinking through the implications&lt;/a&gt; I suggested a couple of things that might work:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;When learning by doing, write down interesting things you learned so you remember them later explicitly.&lt;/li&gt;
-&lt;li&gt;When you learn new things, try to come up with at least one application of them outside the context you’re learning them in.&lt;/li&gt;
-&lt;li&gt;When you encounter a new problem, see if anything you learned recently applies to it.&lt;/li&gt;
-&lt;li&gt;When you re-encounter a problem that you previously believed was hard or impossible, spend at least 5 minutes thinking about why it is hard or impossible and if anything you’ve learned since then changes that.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;I think this is all good advice, but discounts the explanatory aspect of it. Perhaps the real thing to do is to just use them a lot - building up a conceptual framework in the way I discuss in &lt;a href="https://notebook.drmaciver.com/posts/2021-07-05-10:30.html"&gt;Why do we need new terminology?&lt;/a&gt; by writing things that they enable you to write.&lt;/p&gt;
-
-
-&lt;p&gt;In general, maybe writing is just the best way into this. Perhaps the reason I'm unusually good at this skill really is just writing? Or at least, writing in the way I write. In which case, perhaps the key to developing this skill is contained in:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.drmaciver.com/2018/10/how-to-explain-anything-to-anyone/"&gt;How to explain anything to anyone&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://notebook.drmaciver.com/posts/2021-07-02-09:29.html"&gt;People are bad at defining things&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://notebook.drmaciver.com/posts/2021-07-03-13:55.html"&gt;No shortage of things to write about&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://notebook.drmaciver.com/posts/2020-06-08-10:11.html"&gt;A guide to starting a daily writing practice&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;By writing about things as we encounter them, and connecting them to our library of ideas, we train ourselves to recognise these patterns as they occur.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2021-07-12-17:36.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-07-13-11:49.html</id>
     <title>Source: The noosphere, impersonal communication</title>
@@ -611,7 +527,7 @@ when instead we should be thinking more in terms of how good we want to be a sub
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-07-23-16:26.html</id>
     <title>First decide what's good enough</title>
-    <updated>2021-07-23T16:26:00+01:00</updated>
+    <updated>2021-07-23T17:05:33+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;First decide what's good enough&lt;/p&gt;
@@ -645,5 +561,65 @@ when instead we should be thinking more in terms of how good we want to be a sub
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2021-07-23-16:26.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2021-07-25-12:50.html</id>
+    <title>You can solve your problems, but you don't have to</title>
+    <updated>2021-07-25T12:50:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;You can solve your problems, but you don't have to&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2021-07-25&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Before I start, let me tell you some important truths:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Just because you can solve a problem, does not mean you are obliged to solve it.&lt;/li&gt;
+&lt;li&gt;Just because you choose not to solve a problem, doesn't mean you don't care about it.&lt;/li&gt;
+&lt;li&gt;Just because you don't care about a problem you think is important, doesn't make you a bad person.&lt;/li&gt;
+&lt;li&gt;Just because other people think a problem is important, doesn't mean you have to.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;You are a small and finite human being, and you only have so much capacity to deal with the world,
+and the world can absorb all of that capacity before you engage with the tiniest fraction of its problems.
+There are more than seven billion people out there, every one of them has problems,
+and even trying to solve all of &lt;em&gt;your&lt;/em&gt; problems is probably going to overwhelm you.
+Among the billions upon billions of important problems you could devote your efforts to, you've probably got the capacity for at most a few dozen at any given time, and you're probably doing less than that because running permanently at full capacity will make you miserable (and eventually reduce your capacity anyway).&lt;/p&gt;
+
+
+&lt;p&gt;I hope you know these things intellectually, but I bet you don't believe all of them emotionally,
+and my evidence is this: There are a lot of problems that I could tell you how to solve that would cause you to immediately get mad at me for suggesting that you can solve them.&lt;/p&gt;
+
+
+&lt;p&gt;I don't know what they are, they very from person to person, but most people are walking around with easily solvable problems that they are steadfastly maintaining that they can't solve, because if they could solve them they would still not want to, and then they would feel guilty about that.&lt;/p&gt;
+
+
+&lt;p&gt;People are very good at maintaining a set of beliefs that allow them to not feel guilty,
+and the easiest way to do this is to believe that anything you think you should do but don't want to is impossible.
+If you argue this belief convincingly enough, often other people will believe you and stop trying to get you to solve the problem you don't want to do.&lt;/p&gt;
+
+
+&lt;p&gt;It's a genuinely good strategy, as long as you don't mind (or mind less than the alternatives) walking around in constant fear that you might one day discover the truth.&lt;/p&gt;
+
+
+&lt;p&gt;One way this comes out is that every time I offer generic advice on Twitter, I get people mad at me for suggesting that they could solve the problem I'm advising on.
+They're very insistent that it's literally impossible this advice will work. Usually their reason is one that the advice was specifically designed with in mind. e.g. I hear a lot of my advice is terrible because it doesn't work for ADHD. This is particularly funny because it's often developed by listening to or talking with people with ADHD, and developed further to work with my own more ADHD tendencies given that I'm only just below the diagnostic thresholds myself.&lt;/p&gt;
+
+
+&lt;p&gt;Not every problem in your life is solvable, some really are immutable features of reality, but I am almost certain that vastly more of them are than you're pretending. I fully endorse your right and respect your choice not to solve them. I even fully endorse your right to not listen to me when I tell you that they're solvable. But I do not endorse your right to give me a hard time for talking about solutions, because many people are helped by trying to solve the problems they want to solve, and I have no desire to be complicit in maintaining a shared lie that hurts those people.&lt;/p&gt;
+
+
+&lt;p&gt;Options exist. If you want to choose to believe otherwise, that's on you, but don't make your self-protective strategies an excuse to sabotage others.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2021-07-25-12:50.html" rel="alternate"/>
   </entry>
 </feed>
