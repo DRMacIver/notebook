@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2021-07-26T16:39:33+01:00</updated>
+  <updated>2021-07-27T04:25:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,55 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2021-07-14-11:44.html</id>
-    <title>A lack of shared projects</title>
-    <updated>2021-07-14T19:07:29+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;A lack of shared projects&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2021-07-14&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I've been visiting my parents out in the country recently,
-and as a result I was &lt;a href="https://twitter.com/DRMacIver/status/1414139777654431744"&gt;talking on Twitter the other day&lt;/a&gt; about an idea I have from a book called "The Art of Frugal Hedonism" (though the idea is hardly revolutionary and &lt;a href="https://notebook.drmaciver.com/posts/2021-07-13-11:49.html"&gt;definitely isn't something I feel like I &lt;em&gt;have&lt;/em&gt; to cite&lt;/a&gt;) that a great and commonly underrated way to spend your time is to have a mundane task to do with your hands while sitting around a table with your friends and loved ones chatting.&lt;/p&gt;
-
-
-&lt;p&gt;Their example was podding peas, in our case the event that prompted me thinking about it was picking and processing red currants with my family. Honestly, I think they're spot on. Having the shared task to focus on made the conversation flow very smoothly, and there was a satisfaction to doing a task that would have been slightly tedious without the company. They pair very well.&lt;/p&gt;
-
-
-&lt;p&gt;This got me thinking how few things in modern life look like this.&lt;/p&gt;
-
-
-&lt;p&gt;One thing that's interesting about it is the physicality of it, and indeed we don't do a lot of work with our hands.
-Much ink has been spilled talking about this sort of thing. I too have read Shop Class as Soulcraft (and I suppose recommend it, maybe, sortof), and various takes in this space. I won't be talking about that today.&lt;/p&gt;
-
-
-&lt;p&gt;Instead the thing that struck me as anomalous is that we were doing something useful together,
-and that's surprisingly rare. We do it at work, we do it when living together as a family. Those honestly seem like the main widespread examples to me. I can think of a few others, but they all feel in some way unusual to me.&lt;/p&gt;
-
-
-&lt;p&gt;I'm not saying nobody does practical projects with their friends, obviously people do, but it seems anomalous to me? Like it's a relatively rare thing, and it so easily gets coopted by work. e.g. open source projects are kinda this, but they sure mostly feel like free work rather than a practical project with friends done for our own sakes.
-Sometimes you ask friends for favours and they help you achieve something, but even that feels rare and socially discouraged.&lt;/p&gt;
-
-
-&lt;p&gt;Doing things with friends is certainly a thing, but when we do things with friends it tends to be leisure activities.
-We mostly do things because we want to spend time together, not because we're trying to achieve something.&lt;/p&gt;
-
-
-&lt;p&gt;I wonder if this is related to the longing some people have for community? In &lt;a href="https://drmaciver.substack.com/p/communities-construct-a-sense-of"&gt;Communities construct a sense of purpose&lt;/a&gt; I suggested that a lot of the function of communities is structure our emotional evaluations of what matters, and thereby construct a sense of purpose. This certainly seems related to that - trying to achieve things in tandem with people you care about feels like an almost central example of purpose.&lt;/p&gt;
-
-
-&lt;p&gt;I don't really have a firm conclusion here. I just find I'm staring at this in vague incomprehension going "No, this must be a thing, right? What am I missing?", and feel very strongly like something weird is going on here.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2021-07-14-11:44.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-07-15-10:56.html</id>
     <title>Spiraling outwards</title>
@@ -541,7 +492,7 @@ They're very insistent that it's literally impossible this advice will work. Usu
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-07-26-09:00.html</id>
     <title>The edge of the familiar</title>
-    <updated>2021-07-26T16:39:33+01:00</updated>
+    <updated>2021-07-26T16:40:53+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;The edge of the familiar&lt;/p&gt;
@@ -589,5 +540,127 @@ and then tells you: Here we are. This is as far as I can take you. The rest is u
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2021-07-26-09:00.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2021-07-27-04:25.html</id>
+    <title>You have to do the easy bits first</title>
+    <updated>2021-07-27T04:25:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;You have to do the easy bits first&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2021-07-27&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I was helping a small child with a jigsaw puzzle the other day. We were assembling a map of Africa.&lt;/p&gt;
+
+
+&lt;p&gt;At some point she asked me "Why is this so easy for you and so hard for me?"&lt;/p&gt;
+
+
+&lt;p&gt;It was a good question.&lt;/p&gt;
+
+
+&lt;p&gt;The easy answer is just "I'm 31 years older than you, I’ve learned a few tricks".&lt;/p&gt;
+
+
+&lt;p&gt;I didn't say this, but I do think it's important. She's seven. There's no reason she should have figured out everything by now. She's still learning. That's what seven year olds do.&lt;/p&gt;
+
+
+&lt;p&gt;But really there was only one trick, and it’s well within the reach of a seven year old if they can learn how.&lt;/p&gt;
+
+
+&lt;p&gt;"Well, I’m doing the easy bits" I answered.&lt;/p&gt;
+
+
+&lt;p&gt;I explained a bit further, but I don’t think it quite landed.&lt;/p&gt;
+
+
+&lt;p&gt;So here is what I would say with &lt;a href="https://en.wikipedia.org/wiki/L%27esprit_de_l%27escalier"&gt;the wit of the staircase&lt;/a&gt; upon me.&lt;/p&gt;
+
+
+&lt;p&gt;What you are doing is picking up a piece, and trying to figure out where to put it. Or you see a space that needs filling, and looking for the piece to fill it.&lt;/p&gt;
+
+
+&lt;p&gt;This is much too hard. Of course you're struggling, I would struggle too if I tried to solve the puzzle that way.&lt;/p&gt;
+
+
+&lt;p&gt;Here is what I do instead: I do the same thing, and if it's hard, I stop. Then I look elsewhere. I put the piece aside, I look at another space, hoping that that one will be easier.&lt;/p&gt;
+
+
+&lt;p&gt;There are many pieces, and many spaces, on the puzzle board, and some of them are hard, and some of them are easy. A blue square in the middle of the ocean is hard, a country boundary with distinctive colours is probably easy.&lt;/p&gt;
+
+
+&lt;p&gt;You can get good at spotting which ones are likely to be easy, but you mostly don't need to. You just try to place a piece, and if it works, it was one of the easy ones. If it doesn't, you try something else.&lt;/p&gt;
+
+
+&lt;p&gt;Eventually you'll get good at spotting the easy pieces first, but you don't have to. Just be persistent, try them all. It usually won't take long to find an easy piece.&lt;/p&gt;
+
+
+&lt;p&gt;And when you've placed an easy piece, something funny happens: Pieces that were once hard, suddenly become easy.&lt;/p&gt;
+
+
+&lt;p&gt;You fill a space, and now you have one less piece to place, and new spaces to place it.&lt;/p&gt;
+
+
+&lt;p&gt;Bit by bit, the picture takes shape, and as it does the problem becomes easier, because you have more to work with.&lt;/p&gt;
+
+
+&lt;p&gt;If you've only got a few pieces, you can just try them all, and one of them will work. When you're down to a handful, there are no hard pieces left.&lt;/p&gt;
+
+
+&lt;p&gt;We can solve the hardest puzzles this way. All we need is a bit of persistence and some good tactics.&lt;/p&gt;
+
+
+&lt;p&gt;This isn't just about puzzles. You do the same with sudoku.&lt;/p&gt;
+
+
+&lt;p&gt;When we play sudoku together, you get stuck on a square. You look at it, trying to figure out what numbers go there.&lt;/p&gt;
+
+
+&lt;p&gt;Often you get frustrated. "I can't figure out what should go there".&lt;/p&gt;
+
+
+&lt;p&gt;Well of course you can't. You've picked one of the hard squares. Pick an easy square.&lt;/p&gt;
+
+
+&lt;p&gt;This is what's happening when I point to another square and say "Do you know what goes in this square?" - I look at the board until I find the easy square, and then I show it to you, and you find it easy, because you're perfectly able to solve the sudoku if you look in the right place.&lt;/p&gt;
+
+
+&lt;p&gt;And once you've solved the easy square, now you know more about the other squares. A three went there, so there can't be a three in these squares, which means that one must be a two, which means that that one must be a four...&lt;/p&gt;
+
+
+&lt;p&gt;As soon as you've done the easy bit, everything around it becomes easier. This is the way we solve the puzzle.&lt;/p&gt;
+
+
+&lt;p&gt;This is also the way we fix the world.&lt;/p&gt;
+
+
+&lt;p&gt;This is a story about a seven year old, but it's not really a story about a seven year old, because people far older than me seem to miss this too.&lt;/p&gt;
+
+
+&lt;p&gt;People often ask me how I know so many different subjects, or write about so many different things, when they struggle to do a tenth that.&lt;/p&gt;
+
+
+&lt;p&gt;Well, I'm doing the easy bits.&lt;/p&gt;
+
+
+&lt;p&gt;If I run into a problem I can't solve yet, or I encounter a subject that's too hard for me, I go "Huh, interesting", and save it for later, or leave it to someone better suited to it.&lt;/p&gt;
+
+
+&lt;p&gt;I don't &lt;em&gt;give up&lt;/em&gt;. This is important. I just move on to something else, often something nearby.&lt;/p&gt;
+
+
+&lt;p&gt;I find a problem I can solve, and then I solve it.&lt;/p&gt;
+
+
+&lt;p&gt;And everything else becomes easier.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2021-07-27-04:25.html" rel="alternate"/>
   </entry>
 </feed>
