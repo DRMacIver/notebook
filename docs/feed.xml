@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2021-07-27T04:57:41+01:00</updated>
+  <updated>2021-07-28T04:40:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,47 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2021-07-15-10:56.html</id>
-    <title>Spiraling outwards</title>
-    <updated>2021-07-15T11:12:58+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Spiraling outwards&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2021-07-15&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I'm going to describe a problem that I have. I have not yet found a good solution for it, and this is why you are getting a very nominal post today in which I describe that problem and think out loud about it.&lt;/p&gt;
-
-
-&lt;p&gt;The problem is this: I start with something small, and then I think "Oh this is really good, I should do it justice". &lt;/p&gt;
-
-
-&lt;p&gt;Doing it justice makes it... not small. Often it increases the work of doing it by a factor of ten or more. Suddenly it becomes a thing that I need to spent much longer on than I had time allocated for it, and moves it up a project size category.&lt;/p&gt;
-
-
-&lt;p&gt;In concrete terms what happens is that I now have two pieces that started out life as notebook posts and are going to be newsletter issues that I need to finish. They should be pretty easy to finish but I probably won't have time to do so prior to the weekend.&lt;/p&gt;
-
-
-&lt;p&gt;Often they languish unfinished. This was very much my problem with writing papers. It felt like in order to write an academic paper I had to publish something that was substantially worse than the state of the art that existed in my head, because in order to get to the point where it was publishable I either had to stop thinking about the problem (impossible if I were to be interested enough to finish writing it) or publish something that I felt was worse than I could have done.&lt;/p&gt;
-
-
-&lt;p&gt;This isn't really a problem for many things which feel like I can just snip off a thread. The notebook is good for that, but often I end up wanting to write things which have a certain minimum size without which they would end up incomplete.&lt;/p&gt;
-
-
-&lt;p&gt;I think part of the problem here is really not that things become large, but that I need a better way to work on large projects. The paper problem felt like a mismatch between the sort of incrementalism I wanted to do and the sort of incrementalism that academia wanted me to do. The newsletter issue problem is more manageable, and I think I just need to get better at managing my draft backlog and allocating more time to it.&lt;/p&gt;
-
-
-&lt;p&gt;Perhaps I can treat drafts as an inbox problem and apply the &lt;a href="https://drmaciver.substack.com/p/triage-your-inboxes"&gt;How to triage your inboxes&lt;/a&gt; method to it?&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2021-07-15-10:56.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-07-16-10:12.html</id>
     <title>Clearing hurdles in learning</title>
@@ -544,7 +503,7 @@ and then tells you: Here we are. This is as far as I can take you. The rest is u
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-07-27-04:25.html</id>
     <title>You have to do the easy bits first</title>
-    <updated>2021-07-27T04:57:41+01:00</updated>
+    <updated>2021-07-27T05:33:47+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;You have to do the easy bits first&lt;/p&gt;
@@ -662,5 +621,99 @@ and then tells you: Here we are. This is as far as I can take you. The rest is u
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2021-07-27-04:25.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2021-07-28-04:40.html</id>
+    <title>You can't write life down</title>
+    <updated>2021-07-28T04:40:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;You can't write life down&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2021-07-28&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;From "Trickster Makes this World", pages 313-314:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Toward the end of the nineteenth century, a certain Father J. Jetté, Jesuit missionary to the Athabascan Indians, lived among the Ten’a in the lower Yukon. In those days the Ten’a told the old stories in the dead of winter, from early December to the middle of January. The group with whom Father Jetté lived would go to bed in the early evening, a dozen or more rolling themselves in blankets on the floor around the cabin, their heads to the wall. The last one blew out the light, throwing the room into complete darkness (every chink and crack was caulked against the cold, and gunnysacks hung outside the windows to keep the window panes from frosting over). Before long, someone would start a story—“In old times, it is said …”—the listeners responding anni! anni! to keep the voice going. “A strange thing had occurred: the sun had disappeared, and all was in the dark. What was to be done? the old women asked. Who will get back the sun for us?” Peals of laughter as Raven is lured from seclusion by the promise of dog meat.&lt;/p&gt;
+&lt;p&gt;Father Jetté wanted very much to make a collection of tales, but there were difficulties. The Ten’a were reluctant to let the Raven stories be put in writing, for one thing (though another group of tales “the inane stories,” Jetté calls them—could be had for the asking). Jetté tried to transcribe tales as they were being told, but the utter darkness frustrated him. Nobody would repeat the stories in daylight, and at night whenever he struck a match to light a candle, the storyteller fell instantly silent.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;In case it needs be said, Jetté was in the wrong in this piece, and the Ten'a in the right.&lt;/p&gt;
+
+
+&lt;p&gt;Not for intrinsic reasons. I take no stance on whether writing down the Raven stories would have been good or bad,
+but from a moral standpoint the Ten'a had the right to refuse Jetté's desire to write those stories down,
+and Jetté had an obligation to respect that.&lt;/p&gt;
+
+
+&lt;p&gt;Nevertheless, I confess my sympathies are with Jetté.&lt;/p&gt;
+
+
+&lt;p&gt;I often feel significant distress at the sheer amount of the past that we will never know about.
+Depending on who you ask and how you count, modern humans have been around for 50,000 to 200,000 years,
+with (necessarily imprecise) estimates of the total numbers of humans who have ever lived being in the region of 100 billion.
+So many lives we'll never know anything about.&lt;/p&gt;
+
+
+&lt;p&gt;They're probably mostly fine with that. This is my problem, not theirs. Nevertheless, I feel it as a loss.&lt;/p&gt;
+
+
+&lt;p&gt;But really, what would be gained by writing it down? Sure, I would know about them, and that's not nothing,
+but it's not really a rendition of what happened either. You write &lt;em&gt;about&lt;/em&gt; what happened, but you can never capture the actual event.&lt;/p&gt;
+
+
+&lt;p&gt;"Peals of laughter as Raven is lured from seclusion by the promise of dog meat." - would I have laughed at the same story? Perhaps it might have elicited a chuckle, or a wry smile. Perhaps if I had been in the room with the Ten'a I might have shared their laughter. I doubt a written account would really convey it though. Maybe you have to be there?&lt;/p&gt;
+
+
+&lt;p&gt;Or maybe you have to be them. &lt;a href="https://notebook.drmaciver.com/posts/2021-07-04-12:52.html"&gt;Humour is a test of expertise&lt;/a&gt;, but the ultimate expertise is the full context of a life. There are always jokes that only work in context, and are hilarious but too specific to be able to extract.&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;When I first wrote about jokes, I thought of dividing them into the pure ones and the conditional ones. A conditional joke is one that can work only with certain audiences, and typically is meant only for those audiences. The audience must supply something in order either to get the joke or to be amused by it. That something is the condition on which the success of the joke depends. It is a vital feature of much joking that only a suitably qualified audience—one that can meet the condition—can receive the joke, and the audience often derives an additional satisfaction from knowing this about itself. A pure joke would be universal, would get through to everyone, because it presupposed nothing in the audience.&lt;/p&gt;
+&lt;p&gt;It now seems clear to me that there is no such thing as a pure joke. It is a kind of ideal, but it doesn’t exist. At the very least, the audience will have to understand the language of the joke, and probably much more. But even if all jokes are conditional, it is still useful to note just how strongly conditional a particular joke is, and just what kind of condition is presupposed.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;For something like this, the condition seems deeply cultural.&lt;/p&gt;
+
+
+&lt;p&gt;The idea of writing it down anyway is not, I think, intrinsically bad (except in that the Ten'a don't want you to), but the version of it that you have written down is not the version that the Ten'a told, and there is no way around this.&lt;/p&gt;
+
+
+&lt;p&gt;Walter Ong, in the subtitle of his "Orality and Literacy", calls writing the "technologising of the word", and Albert Borgmann in his "Technology and the Character of Contemporary Life" talks about how the role of technology is &lt;em&gt;commoditisation&lt;/em&gt;. You take "things", complex objects with rich history and context, and replace them with "devices", which are largely interchangeable objects whose purposes is to provide some good as an equally interchangeable commodity. A fireplace is a thing, a space heater is a device.&lt;/p&gt;
+
+
+&lt;p&gt;This feels like a good summation of what's happening here: We're treating these Raven stories, and the context in which they are embedded, as if they have a neat, singular, purpose that we can capture by writing it down. The "commodity" that the word provides is its content.&lt;/p&gt;
+
+
+&lt;p&gt;I learned about Cohen's book on Jokes from C. Thi Nguyen's &lt;a href="http://schwitzsplinters.blogspot.com/2021/07/the-philosophy-of-art-technology.html"&gt;The Philosophy of Art is the Philosophy of Technology&lt;/a&gt;, where he says:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;This observation [about how a change in the way people went tothe movies changed their contents] teaches us a few things. First: what’s most important about a medium for communication often isn’t in the raw material at the center, but in its social embeddedness. Much of what is crucial to the medium of film isn’t just in the images and sounds — it’s in the social process of theater-going. It’s in the fact that showtimes are, or aren’t, published in the newspaper. Second: tiny changes in the medium can have enormous social repercussions and shift the whole pattern of how people relate to an artform.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;Writing down the Raven stories would have utterly transformed them. Even if they had been preserved, the way people engaged with them would be different, and the results would be something new and probably lesser.&lt;/p&gt;
+
+
+&lt;p&gt;But now I will end with a confession: I still half wish someone had written those Raven stories down. I fully respect the right of the Ten'a to refuse this, and would not have pushed and would not push them to choose otherwise, but I am still sad about their absence.&lt;/p&gt;
+
+
+&lt;p&gt;The role of the word may be to commoditise knowledge, but everything feeds into everything else, and by writing things down, no matter how disconnected they are from their source, we can provide the seeds of new things that would not otherwise have existed.&lt;/p&gt;
+
+
+&lt;p&gt;We will then, of course, also fail to write those things down in a way that preserves them, but I am at peace with that.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2021-07-28-04:40.html" rel="alternate"/>
   </entry>
 </feed>
