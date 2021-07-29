@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2021-07-28T04:40:00+01:00</updated>
+  <updated>2021-07-29T16:22:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,67 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2021-07-16-10:12.html</id>
-    <title>Clearing hurdles in learning</title>
-    <updated>2021-07-16T10:51:31+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Clearing hurdles in learning&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2021-07-16&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;The following is not true, but it's often close enough to true that it's worth using as a working model.&lt;/p&gt;
-
-
-&lt;p&gt;When learning a skill, the level of effort required to get to a given point typically looks something like this:&lt;/p&gt;
-
-
-&lt;p&gt;&lt;img src="/images/effortskillgraph.png"/&gt;&lt;/p&gt;
-
-
-&lt;p&gt;This corresponds to the following difficulties of improvement at any given point:&lt;/p&gt;
-
-
-&lt;p&gt;&lt;img src="/images/difficultyskillgraph.png"/&gt;&lt;/p&gt;
-
-
-&lt;p&gt;(These numbers are made up imaginary units, obviously)&lt;/p&gt;
-
-
-&lt;p&gt;That is, the difficulty of getting better is usually pretty easy, but occasionally there are spikes where the difficulty rapidly increases. The gentle bits are the places where the way to improve is to just do the thing, the spikes are the bits where &lt;a href="https://drmaciver.substack.com/p/how-to-do-everything"&gt;there's some insight you need to figure out to progress&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;A very simplistic model of human behaviour is that people do things that are worth the effort of doing. As a result, what often happens when people are learning a skill is that they progress as long as it's easy, and then they hit a part where it's difficult it's no longer worth it to them to keep progressing.&lt;/p&gt;
-
-
-&lt;p&gt;As a result what you end up with is people who stall out particular points in their skill progression, thinking they have reached the limit of their talent, when in fact all they needed was a sustained period of effort at which point they would have started getting better again.&lt;/p&gt;
-
-
-&lt;p&gt;I think people generally solve these problems in one of three ways:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Being smart tends to lower the effort in one of these spikes. I don't know how much of this is "intrinsic" smartness and how much is having already learned the right skills of learning, but if smartness is a thing at all it certainly reduces the effort of generating insights when you're blocked on skill development.&lt;/li&gt;
-&lt;li&gt;Being very into the subject makes more effort seem worth it, so someone with exactly the same level of "talent" but more interest will often get better because they reach a spike in difficulty and it's still worth it to them to overcome it.&lt;/li&gt;
-&lt;li&gt;Having a good teacher &lt;em&gt;hugely&lt;/em&gt; reduces the difficulty level of these spikes, because they already know the insights you're struggling to come up with and can help you discover them.&lt;/li&gt;
-&lt;li&gt;Believing in this model will often motivate you to put in more effort than seems reasonable until you've overcome the hump, banking on the promise of future reward (I think, to the degree that they do, this is a lot of why "growth mindset" interventions work).&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;This is what I tend to mean when I say that almost nobody is bottlenecked on talent. They're probably just at a point in their skill development where it wasn't worth it for them to get better on their own, and nobody provided them with the right external support they needed to overcome the current spike in difficulty.&lt;/p&gt;
-
-
-&lt;p&gt;This is then compounded by the fact that the messaging they get about skill tends to convince them that this is evidence that they lack talent and will never be good at the thing, when in fact they're probably not substantially less talented than many people who end up way better than them due to a mix of luck, privilege, and motivation.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2021-07-16-10:12.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-07-17-14:20.html</id>
     <title>Would you like some advice?</title>
@@ -625,7 +564,7 @@ and then tells you: Here we are. This is as far as I can take you. The rest is u
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-07-28-04:40.html</id>
     <title>You can't write life down</title>
-    <updated>2021-07-28T04:40:00+01:00</updated>
+    <updated>2021-07-28T06:04:42+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;You can't write life down&lt;/p&gt;
@@ -715,5 +654,49 @@ but it's not really a rendition of what happened either. You write &lt;em&gt;abo
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2021-07-28-04:40.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2021-07-29-16:22.html</id>
+    <title>The changing nature of sick days</title>
+    <updated>2021-07-29T16:22:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;The changing nature of sick days&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2021-07-29&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;One of the interesting things about the COVID pandemic is that it very much changes the dynamics of sickness (if you're dealing with reasonable people anyway, which I acknowledge many of us are not).&lt;/p&gt;
+
+
+&lt;p&gt;Previously, if you called in a sick day, I feel like this was treated as a moral failing. You should just tough it out, come to work anyway, anything else is weakness.&lt;/p&gt;
+
+
+&lt;p&gt;COVID-19 has helped highlight the fact that actually no, the reason to call in sick is to avoid giving people a virus. COVID-19 is a particularly bad virus to give people, but it's not like the other ones floating around are much fun either.&lt;/p&gt;
+
+
+&lt;p&gt;The flip side of this of course is that although there's a stronger case to call in sick, when you're already working from home the fact that you just feel a bit grotty doesn't really stop you from working. It just reduces your capacity - unless you're really badly off you still &lt;em&gt;can&lt;/em&gt; do some work, you just would rather not. As a result, you take both more and fewer sick days, depending on how one interprets the term.&lt;/p&gt;
+
+
+&lt;p&gt;If you're not noticeably ill, this has no effect. If you're very ill, this also has no effect (or minimal - you need to convincingly demonstrate that you're very ill). In the middle it has the odd effect of making things better if you're not ill enough that you would previously have stayed home, and worse if you are ill enough that you would have.&lt;/p&gt;
+
+
+&lt;p&gt;Not that too many people are going in to the office right now anyway, so this is mostly hypothetical, I'm just interested in thinking about what impact COVID will have on our social norms. Maybe none.&lt;/p&gt;
+
+
+&lt;p&gt;For my part, the big differences are just that I'm more willing to cancel social events when I have a cold. I don't know if that will last when there's no longer a pandemic on.&lt;/p&gt;
+
+
+&lt;p&gt;I'm essentially self-employed, so COVID didn't make much difference to my attitude personally. I tend to do what I can, such as write a very mediocre post about sick days, when ill, and stick to coaching sessions I've committed to unless I'm utterly nonfunctional, but otherwise don't worry about it too much.&lt;/p&gt;
+
+
+&lt;p&gt;In general I feel like modern life is not well set up for the intrinsic unreliability of humans, especially humans as awash in different virus sources as modern life also brings us, but I'll leave musing further on that for some time when my brain is working better.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2021-07-29-16:22.html" rel="alternate"/>
   </entry>
 </feed>
