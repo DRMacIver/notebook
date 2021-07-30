@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2021-07-30T17:52:54+01:00</updated>
+  <updated>2021-07-30T17:53:35+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -645,7 +645,7 @@ but it's not really a rendition of what happened either. You write &lt;em&gt;abo
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-07-30-09:52.html</id>
     <title>Can you throw money at the Collatz Conjecture?</title>
-    <updated>2021-07-30T17:52:54+01:00</updated>
+    <updated>2021-07-30T17:53:35+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Can you throw money at the Collatz Conjecture?&lt;/p&gt;
