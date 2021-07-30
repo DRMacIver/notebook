@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2021-07-30T17:48:06+01:00</updated>
+  <updated>2021-07-30T17:51:56+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -645,7 +645,7 @@ but it's not really a rendition of what happened either. You write &lt;em&gt;abo
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-07-30-09:52.html</id>
     <title>Can you throw money at the Collatz Conjecture?</title>
-    <updated>2021-07-30T17:48:06+01:00</updated>
+    <updated>2021-07-30T17:51:56+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Can you throw money at the Collatz Conjecture?&lt;/p&gt;
@@ -724,7 +724,7 @@ and I've significantly underestimated how hard the Collatz conjecture is.&lt;/p&
 &lt;p&gt;Is the Collatz conjecture about as hard as FLT starting from 1900? I don't know. Based on my reading since Ben and my initial disagremeent... yeah, probably. Possibly even harder. We've got a number of partial results and angles of attack on it, but certainly nothing resembling a convincing story. It might be that it's actually amenable to some easy attack, but I don't think we've got any reason to expect that to be the case, and people who have studied it more than me seem to think it's probably too hard for us right now.&lt;/p&gt;
 
 
-&lt;p&gt;Suppose now that we could just turn money into mathematician-years. A high end mathematician salary seems to be about \$100k. Because we want the best, and also need support staff and infrastructure, lets double that and say that one mathematician year costs us \$200k. \$1 billion now gets us 5,000 mathematician years.&lt;/p&gt;
+&lt;p&gt;Suppose now that we could just turn money into mathematician-years. A high end mathematician salary seems to be about $$100k. Because we want the best, and also need support staff and infrastructure, lets double that and say that one mathematician year costs us $$200k. $$1 billion now gets us 5,000 mathematician years.&lt;/p&gt;
 
 
 &lt;p&gt;So, based on these (admittedly somewhat pessimistic) estimates, even if we could make a perfect beeline for the Collatz conjecture, if it's about as hard starting from now as Fermat's Last Theorem was starting from 1900, we should not expect to be able to solve it with a mere billion dollars.&lt;/p&gt;
