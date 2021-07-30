@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2021-07-29T16:22:00+01:00</updated>
+  <updated>2021-07-30T09:52:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,63 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2021-07-17-14:20.html</id>
-    <title>Would you like some advice?</title>
-    <updated>2021-07-17T14:45:55+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Would you like some advice?&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2021-07-17&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;If you wouldn't, too bad. You're here reading my writing, advice is one of the main things my writing is for. If you don't want my advice, don't read my writing.&lt;/p&gt;
-
-
-&lt;p&gt;Conversation, however, is different.&lt;/p&gt;
-
-
-&lt;p&gt;Here is a good rule of thumb: When a wide variety of people get annoyed at you for the same behaviour, it's more likely that you are behaving in an annoying way than that there is some bizarre conspiracy in which everyone has decided to behave irrationally for no good reason.&lt;/p&gt;
-
-
-&lt;p&gt;This seems obvious to me, and yet people persist in offering advice in contexts in which it's obviously unwanted and then getting surprised when people get annoyed at them for it.&lt;/p&gt;
-
-
-&lt;p&gt;&lt;a href="https://drmaciver.substack.com/p/you-should-complain-about-it"&gt;Complaining about things is good&lt;/a&gt;, and has many virtues above and beyond problem solving. People complain to process their feelings. People complain as a bonding activity. People complain because they're angry and want something to direct it. Sometimes people complain because they're mentioning something annoying in passing as part of a broader point. Complaining is normal, and it is not intrinsically a request for advice on how to solve the thing you are complaining about.&lt;/p&gt;
-
-
-&lt;p&gt;Notably: Often people complain about things where they have thought a great deal about the solution space already.&lt;/p&gt;
-
-
-&lt;p&gt;And then people offer advice anyway, and are surprised when this is &lt;a href="https://drmaciver.substack.com/p/no-backseating"&gt;just as unwelcome as unrequested advice usually is&lt;/a&gt;, and get all huffy about how they were just trying to help.&lt;/p&gt;
-
-
-&lt;p&gt;The prompting incident that made me think of this is that I was in a situation where someone was describing a problem they had. It was a category of problem I was pretty familiar with and was pretty sure I knew how to solve, but they hadn't asked for my help.
-This happens to me a lot, as you might imagine, because I listen to a lot of people and also problem solve professionally.
-Must be frustrating, right?&lt;/p&gt;
-
-
-&lt;p&gt;No it's not, the solution to this problem is very simple, to the point of being blindingly obvious.
-I said "I might have some useful advice on this if you'd like it?",
-to which he politely thanked me and said he would love some advice, and we had a good conversation about it.&lt;/p&gt;
-
-
-&lt;p&gt;This is what usually happens. Sometimes people say "No thank you", and I respect that, and we have a good conversation about it.&lt;/p&gt;
-
-
-&lt;p&gt;You know what never happens when I ask something like this though? Nobody ever gets mad at me. Because it's an &lt;em&gt;obviously reasonable thing to ask&lt;/em&gt;, and everyone is pleasantly surprised that I asked rather than leaping in with my opinion, and thanks me not only for my advice but also for checking if it was welcome.&lt;/p&gt;
-
-
-&lt;p&gt;So this is my advice: If you want to give someone advice in response to something they said which was not clearly a request for said advice, ask them if it would be welcome, and if they say no then respect that. Also if they're obviously going to say no, don't bother asking and just stay quiet about it rather than wasting their time and yours.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2021-07-17-14:20.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-07-19-09:20.html</id>
     <title>Making life less irritating</title>
@@ -658,7 +601,7 @@ but it's not really a rendition of what happened either. You write &lt;em&gt;abo
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-07-29-16:22.html</id>
     <title>The changing nature of sick days</title>
-    <updated>2021-07-29T16:22:00+01:00</updated>
+    <updated>2021-07-29T16:52:38+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;The changing nature of sick days&lt;/p&gt;
@@ -698,5 +641,127 @@ but it's not really a rendition of what happened either. You write &lt;em&gt;abo
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2021-07-29-16:22.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2021-07-30-09:52.html</id>
+    <title>Can you throw money at the Collatz Conjecture?</title>
+    <updated>2021-07-30T09:52:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Can you throw money at the Collatz Conjecture?&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2021-07-30&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Warning: Inside baseball, very much a set of notes rather than a coherent point.&lt;/p&gt;
+
+
+&lt;p&gt;For context, &lt;a href="https://en.wikipedia.org/wiki/Collatz_conjecture"&gt;the Collatz conjecture&lt;/a&gt; is the following:&lt;/p&gt;
+
+
+&lt;p&gt;For any given natural number \(n\), if \(n\) is even, move to \(\frac{n}{2}\), otherwise move to \(3n + 1\).
+The Collatz conjecture is that no matter which \(n\) we start with, we will eventually reach \(1\).&lt;/p&gt;
+
+
+&lt;p&gt;There is, as far as I know, no particular reason to care about the Collatz conjecture except that it's interesting and that we don't know how to solve it.&lt;/p&gt;
+
+
+&lt;p&gt;&lt;a href="https://twitter.com/DRMacIver/status/1421051043266408449"&gt;I claimed on Twitter that you could probably solve the Collatz conjecture in a decade, given $1 billion of funding&lt;/a&gt;.
+&lt;a href="https://twitter.com/bpgbcg/status/1421057248365776899"&gt;Ben Gunby disagrees&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;I don't think we disagreed a lot. My estimate was something like "this would probably work", and I think his is something like "this probably wouldn't work". As far as I can tell neither of us thinks the other's position is ridiculous, we've just got moderately different views on the problem. That being said, having written all of this up, I've concluded that he's right and I'm wrong, because I had significantly underestimated how hard the Collatz conjecture is.&lt;/p&gt;
+
+
+&lt;p&gt;I think the following is a fair summary of his argument that this is likely to be very hard:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;We are likely quite far away from techniques that would allow us to tackle the Collatz conjecture.&lt;/li&gt;
+&lt;li&gt;If this is the case, there is likely a long dependency chain in which we have to develop tools to develop tools to develop tools etc.&lt;/li&gt;
+&lt;li&gt;If this is the case, this likely passes through many fields unrelated to the Collatz conjecture.&lt;/li&gt;
+&lt;li&gt;$1 billion is a lot but it's not enough to literally bend the whole of mathematical research to your whims.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;To look at this from another perspective, one can think of this in terms of two questions:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;How many direct mathematician-years of work do we need to solve the Collatz conjecture? i.e. if you add up all the mathematician-years of work spent on the proof and things it depends on, what do you get?&lt;/li&gt;
+&lt;li&gt;How many mathematician-years of work do we realistically need to do in order to actually achieve that? This would be the same if you could just linearly proceed from A to B, but if you depend on unrelated fields you need to take into account work done in equally plausible unrelated fields that you couldn't have known in advance.&lt;/li&gt;
+&lt;li&gt;How much of that work is intrinsically sequential? e.g. if we decided that it will take 1000 mathematician-years, can we do that in 10 years with 100 mathematicians or are you going to have to do a full 1000 years of work with one mathematician building on the results of another, etc?&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;("mathematician-years" of course depends on how good the mathematicians in question are. I guess I'm assuming reasonably top end mathematicians)&lt;/p&gt;
+
+
+&lt;p&gt;I think Ben and my intuitions on these differ as follows:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;His estimate of the number of mathematician-years required is much higher than mine initially was.&lt;/li&gt;
+&lt;li&gt;I think you probably can cut out a lot of the unrelated work with a bit of work on focusing people.&lt;/li&gt;
+&lt;li&gt;I believe this is more parallelisable than he does.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;On further reading up on the difficulty of the literature I think that he is right and I am wrong about the first one,
+and I've significantly underestimated how hard the Collatz conjecture is.&lt;/p&gt;
+
+
+&lt;p&gt;For comparison, I think reasonable estimates for how many mathematician years went into solving Fermat's Last Theorem are somewhere in the region of 1000 to 10,000 mathmatician years, taking 1900 as the starting point (Most of the work on it that got real traction happened in the 20th century, I think). If on average 100 mathematicians were working on it full time at any given point of that century, that gets us to 10,000. If it's only 10, that's 1,000.&lt;/p&gt;
+
+
+&lt;p&gt;Is that realistic? I don't know. I could also make a convincing argument that it was less than that (e.g. a lot of the last stretch was Wiles working on his own for 7 years, followed by Wiles and Taylor finishing it off...). But lets say 10,000 mathematicians years is about how much FLT took. It's a nice round number.&lt;/p&gt;
+
+
+&lt;p&gt;Is the Collatz conjecture about as hard as FLT starting from 1900? I don't know. Based on my reading since Ben and my initial disagremeent... yeah, probably. Possibly even harder. We've got a number of partial results and angles of attack on it, but certainly nothing resembling a convincing story. It might be that it's actually amenable to some easy attack, but I don't think we've got any reason to expect that to be the case, and people who have studied it more than me seem to think it's probably too hard for us right now.&lt;/p&gt;
+
+
+&lt;p&gt;Suppose now that we could just turn money into mathematician-years. A high end mathematician salary seems to be about $100k. Because we want the best, and also need support staff and infrastructure, lets double that and say that one mathematician year costs us $200k. $1 billion now gets us 5,000 mathematician years.&lt;/p&gt;
+
+
+&lt;p&gt;So, based on these (admittedly somewhat pessimistic) estimates, even if we could make a perfect beeline for the Collatz conjecture, if it's about as hard starting from now as Fermat's Last Theorem was starting from 1900, we should not expect to be able to solve it with a mere billion dollars.&lt;/p&gt;
+
+
+&lt;p&gt;This is before we even get to the harder questions to quantify. What if exploring all the dead ends means we actually need 100,000 mathematician years?&lt;/p&gt;
+
+
+&lt;p&gt;Also, what happens with the dependencies problem? Can we, realistically, do even those 10,000 mathematician-years in 10 years even if we had infinite amounts of money to throw at it?&lt;/p&gt;
+
+
+&lt;p&gt;I don't have a good handle on this but think the answer is a resounding "Maybe". If we again use Fermat's Last Theorem as a benchmark it doesn't seem unreasonable to me to think that we could do this - that's only one order of magnitude reduction, and I think if we had the relevant parties in a room together and were able to more aggressively speed up the collaboration, offer them support, etc. I don't think this is &lt;em&gt;ridiculous&lt;/em&gt;. Wiles worked on FLT for 7 years on his own, and I wouldn't be surprised if he could have done that in half with a collaborator to discuss things with.&lt;/p&gt;
+
+
+&lt;p&gt;This is all speculative though, I genuinely don't know, and I don't have any way to know. &lt;a href="https://en.wikipedia.org/wiki/Polymath_Project"&gt;The polymath project&lt;/a&gt; gives me some hope that hard mathematical problems are parallelisable, but as far as I know it's never been tried on anything nearly this hard.&lt;/p&gt;
+
+
+&lt;p&gt;So, in conclusion, Ben is probably right. You probably can't solve this is in a decade with $1 billion.&lt;/p&gt;
+
+
+&lt;p&gt;I &lt;em&gt;do&lt;/em&gt; think you could probably make meaningful progress on the Collatz conjecture, up to and including solving it, with a mere $1 billion, but I think if I were to do that it would look more like trying to build resources and community around it in the broader mathematical community.&lt;/p&gt;
+
+
+&lt;p&gt;For example, for this sort of price tag one could fund:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Some sort of ongoing "residency" arrangement where a rotating group of mathematicians get together and work on the Collatz conjecture and related problems for a year.&lt;/li&gt;
+&lt;li&gt;Many small cash prizes for Collatz adjacent conjectures&lt;/li&gt;
+&lt;li&gt;Put together a small team whose primary job was to essentially shore up results, generate conjectures, and write up the state of the art of current Collatz research&lt;/li&gt;
+&lt;li&gt;Many post grad positions for getting people working on the problem for a period of time early in their career&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;An alternative approach would be to just hire Terence Tao and Jeffrey Lagarias, and any dozen or so other mathematicians they care to name, and let them go wild on the problem. I doubt it would work, but it might produce something interesting.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2021-07-30-09:52.html" rel="alternate"/>
   </entry>
 </feed>
