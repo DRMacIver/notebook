@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2021-08-07T08:15:00+01:00</updated>
+  <updated>2021-08-07T13:40:59+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -658,7 +658,7 @@ and I've significantly underestimated how hard the Collatz conjecture is. In par
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-08-07-08:15.html</id>
     <title>Notes towards a social technology R&amp;D lab</title>
-    <updated>2021-08-07T08:15:00+01:00</updated>
+    <updated>2021-08-07T13:40:59+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Notes towards a social technology R&amp;amp;D lab&lt;/p&gt;
@@ -691,7 +691,7 @@ So I thought I'd try to articulate this.&lt;/p&gt;
 &lt;h3&gt;What's social technology?&lt;/h3&gt;
 
 
-&lt;p&gt;I think people might have the wrong idea about what I mean by "social technology", which is fair enough because it's a term mostly idiosyncratic to me. By "social technology", I don't mean a type of software, I mean something more like sets of practices that people can do together, that have the character of technology in that they benefit from research and development.&lt;/p&gt;
+&lt;p&gt;I think people might have the wrong idea about what I mean by "social technology", which is fair enough as it's not a particularly commonly used term. By "social technology", I don't mean a type of software, I mean something more like sets of practices that people can do together, that have the character of technology, in that they are a well defined thing that benefits from research and development.&lt;/p&gt;
 
 
 &lt;p&gt;I talked about this in &lt;a href="https://www.drmaciver.com/2019/08/the-missing-social-technology-sector/"&gt;The missing social technology sector&lt;/a&gt;. My definition from there is:&lt;/p&gt;
@@ -705,7 +705,7 @@ So I thought I'd try to articulate this.&lt;/p&gt;
 &lt;p&gt;I've since read Nguyen's "Games: Agency as Art", which I think has helped refine my thoughts on this subject more. Social technology is technology built out of &lt;em&gt;group agency&lt;/em&gt;. It builds a structure to constrain and support the sort of actions that a group can take together, in a way that helps them achieve some desired end.&lt;/p&gt;
 
 
-&lt;p&gt;Here are three examples of a social technology:&lt;/p&gt;
+&lt;p&gt;Here are some examples of a social technology:&lt;/p&gt;
 
 
 &lt;ol&gt;
