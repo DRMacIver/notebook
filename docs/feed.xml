@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2021-07-31T09:29:00+01:00</updated>
+  <updated>2021-08-07T08:15:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,109 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2021-07-20-00:32.html</id>
-    <title>The trauma model of talent blocks</title>
-    <updated>2021-07-20T02:30:57+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;The trauma model of talent blocks&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2021-07-20&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;There's something very important you learn as a result of doing a mathematics degree. It's this:
-People &lt;em&gt;really&lt;/em&gt; didn't like studying mathematics at school, and they are keen to tell you.&lt;/p&gt;
-
-
-&lt;p&gt;There's something like a 50% hit rate when you talk to normal people (people in tech don't count) that when you tell someone you did mathematics at university they say "Oh god I hated mathematics at school". Sometimes they say it in different words. "Oh.", in a very flat tone of voice. "You must be very clever". They look at you with the wary look of a gazelle facing off with a lion, fearful and ready to bolt at the slightest sign of you baring your teeth and trying to do an equation at them.&lt;/p&gt;
-
-
-&lt;p&gt;Unsurprisingly, I've historically found this quite irritating, but as time has gone on I've started looking at it differently.
-Instead of treating this as an attack on my interests, when people say this to me my first thought is more along the lines of "I'm sorry your mathematics teacher hurt you."&lt;/p&gt;
-
-
-&lt;p&gt;I don't usually say it that way, that's a good way to get punched. Instead I wince sympathetically and say "Yeah, it's often taught really badly."&lt;/p&gt;
-
-
-&lt;p&gt;Sometimes I add "Sorry about that".&lt;/p&gt;
-
-
-&lt;p&gt;In &lt;a href="https://notebook.drmaciver.com/posts/2021-07-16-10:12.html"&gt;clearing hurdles in learning&lt;/a&gt; I talked about how often what happens is that people hit a block where the they require help to progress and think of this as their natural talent limit.&lt;/p&gt;
-
-
-&lt;p&gt;The detail this missed out on is what happens next, which is that you get stuck and we do two things, in order:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Tell you to try harder.&lt;/li&gt;
-&lt;li&gt;Blame you for not succeeding and then tell you it's your fault and is an intrinsic feature of you and your abilities.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;A distinction I find quite useful is that between guilt and shame. Guilt is when you feel bad about what you do, shame is when you feel bad about who you are. "I did a bad thing" vs "I am bad". It's not a perfect distinction but it's a pretty good rule of thumb.&lt;/p&gt;
-
-
-&lt;p&gt;Another principle I find useful (see &lt;a href="https://www.drmaciver.com/2019/08/jiminy-cricket-must-die/"&gt;Jiminy Cricket Must Die&lt;/a&gt;, or "Voices: The Educational Formation of Conscience" by Thomas Green) is that moral emotions are the internalised judgement of others.&lt;/p&gt;
-
-
-&lt;p&gt;A third principle I find useful is that emotional reactions we learn tend to stick around until we find a way to actively engage with them and change them by recognising that our situations have changed (see &lt;a href="https://notebook.drmaciver.com/posts/2020-02-20-09:31.html"&gt;Emotional reactions as legacy code&lt;/a&gt;, &lt;a href="https://notebook.drmaciver.com/posts/2020-03-03-09:07.html"&gt;Your emotions are valid but probably wrong&lt;/a&gt;).&lt;/p&gt;
-
-
-&lt;p&gt;Sure &lt;em&gt;seems&lt;/em&gt; like having kids spend a substantial fraction of their entire childhood in an environment in which they are praised or punished for their academic achievement, then telling them that their failure to excel is the result of an intrinsic feature of themselves and punishing them for it anyway might have some uh lasting negative emotional side effects, huh?&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, let me tell you about my experience learning to drive.&lt;/p&gt;
-
-
-&lt;p&gt;My attempts to learn to drive went as follows:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;I had driving lessons when I was 18. I was bad at it. I stopped driving lessons and went to university in a town where I could cycle everywhere.&lt;/li&gt;
-&lt;li&gt;I moved back in with my parents for about six months post university, and used this as an opportunity to practice driving.&lt;/li&gt;
-&lt;li&gt;I took a few more driving lessons to fill in some gaps, I was fine, and I passed my practical test first time.&lt;/li&gt;
-&lt;li&gt;I'm absolutely fine at driving, and am comfortable enough doing it that I've done multiple long road trips.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;What made the difference between my first attempts at learning to drive and my subsequent attempts?&lt;/p&gt;
-
-
-&lt;p&gt;Well, my first driving instructor was a very angry person, and tended to shout when I made mistakes. The result was that I was so anxious learning to drive and so afraid of making errors that I was unable to drive to any degree of competence.&lt;/p&gt;
-
-
-&lt;p&gt;It's certainly not the case that I'm a natural driver. My physical coordination and spatial awareness are on the poor side. It's possibly genuinely true that I was dangerous and needed correcting in my first driving lessons.&lt;/p&gt;
-
-
-&lt;p&gt;And yet, somehow shouting at me about that didn't help, because it turns out that experiencing intense negative emotions every time you make an error is not &lt;em&gt;remotely&lt;/em&gt; conducive to the acquisition of complex skills.&lt;/p&gt;
-
-
-&lt;p&gt;I don't expect feeling shame every time you think of a subject is much different.&lt;/p&gt;
-
-
-&lt;p&gt;I want to be clear: This is, for the most part, not teachers' fault. There are definitely individual teachers who make the problem worse (e.g. by behaving like my driving instructor), and there are individual teachers who make the problem less bad, but fundamentally this is a function of the system. It arises from the system of grading, and is compounded by the fact that when you hit a block you need individually tailored help to overcome it, which our systems of teaching are absolutely not set up to provide unless your parents are rich enough to hire a tutor for you. While a great teacher can ameliorate the worst of this problem, attempting to solve it will break them because the task is too big.&lt;/p&gt;
-
-
-&lt;p&gt;But regardless of whose fault it is, it seems to hurt a lot of people pretty badly, because they end up hitting their "talent limits" - the bits where they needed help - and instead of either helping them progress or telling them that their current level was good enough, the education system chose violence and made their attempts to improve &lt;em&gt;harder&lt;/em&gt;, not just now but effectively forever until they unlearn the incorrect emotional lessons that they got instead of the lessons they should have been getting.&lt;/p&gt;
-
-
-&lt;p&gt;I suspect that above and beyond the specific subjects that we fail to learn as a result of this dynamic, it has a much broader impact on our conception of ourselves, because we think in terms of subjects we are good at and subjects we are bad at,
-when instead we should be thinking more in terms of how good we want to be a subject and how much help we need to get there.&lt;/p&gt;
-
-
-&lt;p&gt;I also suspect that many people would find it really helpful to get some one on one tutoring in subjects they struggled at at school where they feel bad about that.&lt;/p&gt;
-
-
-&lt;p&gt;But, suspicions aside, one thing I'm reasonably certain of is that there are a lot of adults walking around with lingering low-grade trauma from school that they think of as their "lack of talent", and would benefit a great deal from the following reframing: It's not that you're bad at it, whatever "it" is, you were just never given the sort of help you needed.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2021-07-20-00:32.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-07-22-01:05.html</id>
     <title>Learning from the real</title>
@@ -698,7 +595,7 @@ and I've significantly underestimated how hard the Collatz conjecture is. In par
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-07-31-09:29.html</id>
     <title>Unlearning</title>
-    <updated>2021-07-31T09:29:00+01:00</updated>
+    <updated>2021-07-31T22:03:23+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Unlearning&lt;/p&gt;
@@ -757,5 +654,261 @@ and I've significantly underestimated how hard the Collatz conjecture is. In par
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2021-07-31-09:29.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2021-08-07-08:15.html</id>
+    <title>Notes towards a social technology R&amp;D lab</title>
+    <updated>2021-08-07T08:15:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Notes towards a social technology R&amp;amp;D lab&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2021-08-07&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I mentioned on Twitter that I'd like to run a "small R&amp;amp;D lab where we mostly do low budget weird social technology nonsense".
+This was not something I mentioned as a serious plan, but a throwaway comment about escapist fantasies.
+There was a surprising amount of interest in the idea though.&lt;/p&gt;
+
+
+&lt;blockquote class="twitter-tweet"&gt;&lt;p dir="ltr" lang="en"&gt;I should maybe mention that if you want to spot me about £2 million over a 3-4 year period to change the world, I'm all ears and we should definitely talk. &lt;a href="https://t.co/EvHd5tcDXh"&gt;https://t.co/EvHd5tcDXh&lt;/a&gt;&lt;/p&gt;— David R. MacIver (@DRMacIver) &lt;a href="https://twitter.com/DRMacIver/status/1423669891345813507?ref_src=twsrc%5Etfw"&gt;August 6, 2021&lt;/a&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;&lt;script async="" charset="utf-8" src="https://platform.twitter.com/widgets.js"&gt;&lt;/script&gt;&lt;/p&gt;
+
+
+&lt;p&gt;In response to this, people have quite reasonably be asking what it is I actually &lt;em&gt;mean&lt;/em&gt; by this plan, because it's not obvious.
+So I thought I'd try to articulate this.&lt;/p&gt;
+
+
+&lt;p&gt;(This is not really a proper pitch document, more of a sketch of the idea, but if you've got some spare cash and &lt;em&gt;want&lt;/em&gt; a proper pitch document it could definitely turn into one).&lt;/p&gt;
+
+
+&lt;h3&gt;What's social technology?&lt;/h3&gt;
+
+
+&lt;p&gt;I think people might have the wrong idea about what I mean by "social technology", which is fair enough because it's a term mostly idiosyncratic to me. By "social technology", I don't mean a type of software, I mean something more like sets of practices that people can do together, that have the character of technology in that they benefit from research and development.&lt;/p&gt;
+
+
+&lt;p&gt;I talked about this in &lt;a href="https://www.drmaciver.com/2019/08/the-missing-social-technology-sector/"&gt;The missing social technology sector&lt;/a&gt;. My definition from there is:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Social technology is “technology” built out of groups of people following rules, maybe with assistance from simple props, rather than software, machinery, etc.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;I've since read Nguyen's "Games: Agency as Art", which I think has helped refine my thoughts on this subject more. Social technology is technology built out of &lt;em&gt;group agency&lt;/em&gt;. It builds a structure to constrain and support the sort of actions that a group can take together, in a way that helps them achieve some desired end.&lt;/p&gt;
+
+
+&lt;p&gt;Here are three examples of a social technology:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;A pen and paper roleplaying game. Dungeons and Dragons is the classic example, but I think lightweight games like &lt;a href="http://www.onesevendesign.com/laserfeelings/"&gt;Lasers and Feelings&lt;/a&gt; or &lt;a href="https://img.fireden.net/tg/image/1491/35/1491350819880.pdf"&gt;Four Sherlock Holmes and a Vampire. (Who Is Also One of the Aforementioned Sherlock Holmes)&lt;/a&gt; where the rules fit in a page are a more interesting set of examples.&lt;/li&gt;
+&lt;li&gt;Speed dating.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://agilecoffee.com/leancoffee/"&gt;Lean Coffee&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Coaching and therapy type arrangements&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;These are designed with the following ends in mind:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;A roleplaying game has a &lt;em&gt;ludic end&lt;/em&gt; (the thing you are trying to achieve in the game - uncover the vampire, prevent Zorgon the Conqueror from building a quantum tunnel that will rip a hole in reality), but the ultimate end is to have fun, and you are adopting the ludic end in order to achieve that.&lt;/li&gt;
+&lt;li&gt;Speed dating you are looking for people to date.&lt;/li&gt;
+&lt;li&gt;Lean Coffee you are trying to have a productive discussion across a range of topics, and the structure supports you in picking interesting topics and keeping the meeting on track.&lt;/li&gt;
+&lt;li&gt;Coaching and therapy provide someone with a space to work through a particular problem of interest to them.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;There are plenty of other examples, both explicit and implicit. For example, &lt;a href="https://www.liberatingstructures.com/"&gt;Liberating Structures&lt;/a&gt; is an entire group of people designing social technology for meetings, and every interviewing pipeline is an ad hoc and buggy piece of social technology. The academic field of social choice theory (which mostly designs voting systems) is a really interesting area of social technology that to within rounding error of nobody uses.&lt;/p&gt;
+
+
+&lt;p&gt;Of course in a certain light almost everything people do is social technology. There isn't a hard and fast line that makes some things social technology and some things not social technology, in the same way "But is it art?" is an unanswerable question. As a concept, "social technology" is useful less for categorising things and more as a lens through which to view them.&lt;/p&gt;
+
+
+&lt;p&gt;In particular viewing something as social technology starts from asking two questions:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;What is this practice trying to do?&lt;/li&gt;
+&lt;li&gt;How can we do that better?&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;h3&gt;Why do we need social technology R&amp;amp;D?&lt;/h3&gt;
+
+
+&lt;p&gt;One of the most common pieces of social technology that I've encountered outside of games is meeting facilitation.
+Liberating Structures is one of the best examples of meeting facilitation social technology that I'm familiar with,
+and mostly seems to be very good.&lt;/p&gt;
+
+
+&lt;p&gt;In contrast, most other social technology I've encountered for meeting faciliation are quite bad, and leans heavily on the skill of the meeting facilitator rather than the technology, and the technology itself is often quite clunky.&lt;/p&gt;
+
+
+&lt;p&gt;Take lean coffee for example. A lot of people really like lean coffee. I attended some lean coffee sessions and they were awful. I loved the idea, I loved what it was trying to do, and the execution has obvious glaring flaws that I feel would have been obvious and easily fixable if they had ever done any sort of playtesting. I cannot imagine they did.
+In response I designed &lt;a href="https://github.com/DRMacIver/systems/blob/master/tempo.md"&gt;TickTalk&lt;/a&gt;, which I think is pretty good. It could certainly use more play testing itself, but it's had some and I really do think it's &lt;em&gt;far&lt;/em&gt; better than lean coffee.&lt;/p&gt;
+
+
+&lt;p&gt;Brainstorming is another example. Brainstorming doesn't work. We're pretty sure of this now. It produces results that are worse than not using it. Many things &lt;em&gt;like&lt;/em&gt; brainstorming work, and work well, but brainstorming itself very much doesn't.
+A little bit of development and experimentation could have revealed this early on, but instead as far as I can tell people just had an idea, slapped a name on it, and declared it the hot new thing that everyone should be doing, and it worked.&lt;/p&gt;
+
+
+&lt;p&gt;The common theme here (and why liberating structures tend to be Actually Good) is obvious I hope: &lt;em&gt;Playtest your social technology&lt;/em&gt;, and learn from it and improve it.
+People don't do this enough, and are using really bad systems as a result.&lt;/p&gt;
+
+
+&lt;p&gt;Social technology R&amp;amp;D is the solution to this problem. You treat these systems as a piece of technology like any other, and you develop them as such. You try things, you see what works, and you refine based on that.&lt;/p&gt;
+
+
+&lt;p&gt;This isn't a novel idea in social technology, everyone who designes games knows this. If you make a game and don't playtest it, you'll get a game that isn't fun and nobody plays. In contrast, when you design a meeting facilitation system, it only has to be less bad than an unfacilitated meeting (this isn't hard), and also you can usually impose it by fiat, so there's much less direct incentive to be good. This is ridiculous though - meetings are expensive and potentially high value, so anything that increases that value or decrease that cost is obviously good.&lt;/p&gt;
+
+
+&lt;h3&gt;Weird low budget social technology nonsense?&lt;/h3&gt;
+
+
+&lt;p&gt;What I'm interested in has two defining features:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Developing social technologies for a broad range of problems.&lt;/li&gt;
+&lt;li&gt;...that can be implemented easily and cheaply.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;For example, take speed dating. Has anyone actually ever done any speed dating R&amp;amp;D? Speed dating doesn't seem to work particularly well for people, and some of that is because dating is intrinsically awkward, but a lot of it does seem like the structure is just very poorly designed.&lt;/p&gt;
+
+
+&lt;p&gt;I'm pretty confident nobody has ever done a detailed user experience analysis of speed dating and tried to improve it in a principled way. Someone just had the idea, people tweaked it a bit, and it mostly works well enough. For the same reason meeting design lacks a strong incentive to improve (because meetings are so bad that anything helps), speed dating has little incentive to improve (because there's no shortage of single people who would really like some help with dating).&lt;/p&gt;
+
+
+&lt;p&gt;Additionally, speed dating is primarily a low value proposition. People don't pay a lot for speed dating, so where would the budget for improving it come from?&lt;/p&gt;
+
+
+&lt;p&gt;(People &lt;em&gt;do&lt;/em&gt; use speed dating for research, but it seems to be primarily using speed dating as a methodology for studying romantic interactions. i.e. it's people taking the social technology as read and using it to do social science)&lt;/p&gt;
+
+
+&lt;p&gt;Taking something like speed dating and improving it for its intended purpose, and also finding other interesting applications of those approaches (for example, what would a "Speed dating, but you're there to make friends" event look like? How should one do bi/poly speed dating? Could one do a speed dating event to start up a co-coaching network?), is the sort of low budget social technology I'd like to develop.&lt;/p&gt;
+
+
+&lt;p&gt;Another example of a problem I think would be interesting to study is this: &lt;a href="https://www.drmaciver.com/2016/11/democracy-for-lunch/"&gt;How do you decide where to go for lunch?&lt;/a&gt;. Or where to go to the cinema. Or what to cook tonight... You get the idea. Collective decision making is common, but I don't actually know how common, and I don't know what the best way to do it is.
+I have a history of &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-15:27.html"&gt;solving this for people by just telling them what to do&lt;/a&gt;, but it sure would be interesting to study this class of problem and how to do it better, wouldn't it?&lt;/p&gt;
+
+
+&lt;p&gt;In general, the sort of thing I would like to do is:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Identify reasonably common social problems.&lt;/li&gt;
+&lt;li&gt;Develop social technologies to improve them that can be explained in one or two pages, and implemented with cheap and/or commonly available tools.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;I think there is a &lt;em&gt;lot&lt;/em&gt; of low hanging fruit of this nature, mostly based on the fact that the individual examples that gain traction don't seem like they're still very much picking low hanging fruit, and it shouldn't be hard to find others.&lt;/p&gt;
+
+
+&lt;h3&gt;What would this look like in practice?&lt;/h3&gt;
+
+
+&lt;p&gt;Gosh, that's a great question, this has turned from a vague idea into something resembling a structured plan remarkably quickly, so this is the bit underspecified, so please bear in mind that I wasn't planning to do this for a while and part of the thing that this would look like in practice is getting a bunch of people together to figure out the details.&lt;/p&gt;
+
+
+&lt;p&gt;The general procedure we'd want to use for developing social technology is:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Create or identify a prototype piece of social technology with a Version 0 document describing it.&lt;/li&gt;
+&lt;li&gt;Playtest it amongst ourselves, then with random members of the public, until we're happy with it.&lt;/li&gt;
+&lt;li&gt;Publish a Version 1.0 version of the social technology in public, probably under a &lt;a href="https://creativecommons.org/licenses/by-sa/4.0/"&gt;CC BY-SA 4.0&lt;/a&gt; license.&lt;/li&gt;
+&lt;li&gt;Over time publish updated and improved versions of it in response to subsequent usage and feedback.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;Both (1) and (2) are the bits that need a lot of trial and error. The following are probably the two main sources of prototypes:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Study what people actually do in the wild and extract it into something standalone.&lt;ul&gt;
+&lt;li&gt;Often this can start from existing literature. e.g. speed dating comes pre studied. The "teaching open ended style" protocol from Vaughn Tan's The Uncertainty Mindset that I talked about in &lt;a href="https://drmaciver.substack.com/p/how-to-teach-the-local-style"&gt;How to teach the local style&lt;/a&gt; is another example where you can just get it from books.&lt;/li&gt;
+&lt;li&gt;Often you can get paid to find this out! Going into a company and consulting with them is a great way to find out what they actually do.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Starting from problems people have (e.g. we could find this out by offering coaching and consultancy services) and then trying to generate solutions to those. This would probably need us to work a bit on the social technology that supports generating these solutions, but I expect we'd be using Liberating Structures or the like as starting points for that rather than trying to invent new ones from scratch.&lt;/li&gt;
+&lt;li&gt;Actively work on the social technology underpinning how the group runs itself, and try to extract this into reusable standalone features.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;As well as producing the actual final products, there would probably be:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;A lot of writing about the things we learn along the way.&lt;/li&gt;
+&lt;li&gt;Various professional services built on top of this. I think there is quite a lot of scope for this to lead into a lucrative consulting and training business around these things, as a lot of it would be quite useful to companies.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h3&gt;What would this need?&lt;/h3&gt;
+
+
+&lt;p&gt;My dream version of this where I get to run an actual R&amp;amp;D institution looks something like this.&lt;/p&gt;
+
+
+&lt;p&gt;Staff would be:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;A small team of about 5 for the actual R&amp;amp;D.&lt;/li&gt;
+&lt;li&gt;Someone to do admin.&lt;/li&gt;
+&lt;li&gt;Probably someone to do sales and marketing? Certainly this would be needed eventually.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;A lot of this would need to be done in person (at least post COVID...). This would require an office and a studio space for running events.&lt;/p&gt;
+
+
+&lt;p&gt;On top of that there would need to be budget for:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;All the usual company stuff. Computers, paying for software, etc.&lt;/li&gt;
+&lt;li&gt;Quite a lot of training, partly for people's personal growth, partly because it's important research.&lt;/li&gt;
+&lt;li&gt;Hiring people on one off contracts, for a mix of:&lt;/li&gt;
+&lt;li&gt;Consulting specialists&lt;/li&gt;
+&lt;li&gt;Paying people to do initial playtesting.&lt;/li&gt;
+&lt;li&gt;A flexible group of people who we could bring in to do various research tasks (e.g. send out a bunch of interns to learn more about different meetup groups).&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;I'm expecting the professional services arm of the group would do quite well (it's potentially very high value for corporate customers). Initially (and to some degree ongoing - it's a good habit to keep your hand in on) this would be done by the R&amp;amp;D team. With increased demand, it would be necessary to bring on more staff to keep up with it, and eventually I would expect us to transition to having a full training arm.&lt;/p&gt;
+
+
+&lt;h3&gt;How plausible is all this?&lt;/h3&gt;
+
+
+&lt;p&gt;Honestly pretty plausible. Some of it is stuff I could do today, and may well start doing as I start providing more consulting and corporate training options built in to my existing work. It's possible that in five years time I may be doing exactly what I describe given no external intervention, assuming I still think it's a good idea.&lt;/p&gt;
+
+
+&lt;p&gt;The big questions are:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Is there as much low hanging fruit as I think there is? (I'm reasonably confident there is)&lt;/li&gt;
+&lt;li&gt;Am I underestimating the amount of work playtesting takes? (I don't think so, in the sense that the amount of work people currently do is so low that even modest amounts would be an improvement)&lt;/li&gt;
+&lt;li&gt;Is there really enough demand for this to fund it? (I'm genuinely unsure about this one, but I think it's likely that there is if it's pitched right).&lt;/li&gt;
+&lt;li&gt;Would this end up a niche thing used only by corporates and weirdos? (This is a totally plausible failure mode. Certainly I expect many of the things we develop would never see wide adoption. But I figure worst case scenario we make a lot of money improving various work environments and maybe make one or two useful prosocial innovations)&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;All told I'd be very surprised if &lt;em&gt;something&lt;/em&gt; in this space couldn't be made to work, and also very surprised if what ends up working looks exactly like I've outlined in this document, because technology startups never work out that way, and that's ultimately what this idea is.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2021-08-07-08:15.html" rel="alternate"/>
   </entry>
 </feed>

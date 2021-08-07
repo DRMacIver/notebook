@@ -65,6 +65,259 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
         
 
 <section>
+<h2><a href="/posts/2021-08-07-08:15.html">2021-08-07</a></h2>
+
+
+<p class="subtitle">Notes towards a social technology R&amp;D lab</p>
+
+
+<dl class="metadata">
+<dt>Published</dt>
+<dd class="post-date">2021-08-07</dd>
+</dl>
+
+
+<p>I mentioned on Twitter that I'd like to run a "small R&amp;D lab where we mostly do low budget weird social technology nonsense".
+This was not something I mentioned as a serious plan, but a throwaway comment about escapist fantasies.
+There was a surprising amount of interest in the idea though.</p>
+
+
+<blockquote class="twitter-tweet"><p dir="ltr" lang="en">I should maybe mention that if you want to spot me about £2 million over a 3-4 year period to change the world, I'm all ears and we should definitely talk. <a href="https://t.co/EvHd5tcDXh">https://t.co/EvHd5tcDXh</a></p>— David R. MacIver (@DRMacIver) <a href="https://twitter.com/DRMacIver/status/1423669891345813507?ref_src=twsrc%5Etfw">August 6, 2021</a></blockquote>
+
+
+<p><script async="" charset="utf-8" src="https://platform.twitter.com/widgets.js"></script></p>
+
+
+<p>In response to this, people have quite reasonably be asking what it is I actually <em>mean</em> by this plan, because it's not obvious.
+So I thought I'd try to articulate this.</p>
+
+
+<p>(This is not really a proper pitch document, more of a sketch of the idea, but if you've got some spare cash and <em>want</em> a proper pitch document it could definitely turn into one).</p>
+
+
+<h3>What's social technology?</h3>
+
+
+<p>I think people might have the wrong idea about what I mean by "social technology", which is fair enough because it's a term mostly idiosyncratic to me. By "social technology", I don't mean a type of software, I mean something more like sets of practices that people can do together, that have the character of technology in that they benefit from research and development.</p>
+
+
+<p>I talked about this in <a href="https://www.drmaciver.com/2019/08/the-missing-social-technology-sector/">The missing social technology sector</a>. My definition from there is:</p>
+
+
+<blockquote>
+<p>Social technology is “technology” built out of groups of people following rules, maybe with assistance from simple props, rather than software, machinery, etc.</p>
+</blockquote>
+
+
+<p>I've since read Nguyen's "Games: Agency as Art", which I think has helped refine my thoughts on this subject more. Social technology is technology built out of <em>group agency</em>. It builds a structure to constrain and support the sort of actions that a group can take together, in a way that helps them achieve some desired end.</p>
+
+
+<p>Here are three examples of a social technology:</p>
+
+
+<ol>
+<li>A pen and paper roleplaying game. Dungeons and Dragons is the classic example, but I think lightweight games like <a href="http://www.onesevendesign.com/laserfeelings/">Lasers and Feelings</a> or <a href="https://img.fireden.net/tg/image/1491/35/1491350819880.pdf">Four Sherlock Holmes and a Vampire. (Who Is Also One of the Aforementioned Sherlock Holmes)</a> where the rules fit in a page are a more interesting set of examples.</li>
+<li>Speed dating.</li>
+<li><a href="https://agilecoffee.com/leancoffee/">Lean Coffee</a></li>
+<li>Coaching and therapy type arrangements</li>
+</ol>
+
+
+<p>These are designed with the following ends in mind:</p>
+
+
+<ol>
+<li>A roleplaying game has a <em>ludic end</em> (the thing you are trying to achieve in the game - uncover the vampire, prevent Zorgon the Conqueror from building a quantum tunnel that will rip a hole in reality), but the ultimate end is to have fun, and you are adopting the ludic end in order to achieve that.</li>
+<li>Speed dating you are looking for people to date.</li>
+<li>Lean Coffee you are trying to have a productive discussion across a range of topics, and the structure supports you in picking interesting topics and keeping the meeting on track.</li>
+<li>Coaching and therapy provide someone with a space to work through a particular problem of interest to them.</li>
+</ol>
+
+
+<p>There are plenty of other examples, both explicit and implicit. For example, <a href="https://www.liberatingstructures.com/">Liberating Structures</a> is an entire group of people designing social technology for meetings, and every interviewing pipeline is an ad hoc and buggy piece of social technology. The academic field of social choice theory (which mostly designs voting systems) is a really interesting area of social technology that to within rounding error of nobody uses.</p>
+
+
+<p>Of course in a certain light almost everything people do is social technology. There isn't a hard and fast line that makes some things social technology and some things not social technology, in the same way "But is it art?" is an unanswerable question. As a concept, "social technology" is useful less for categorising things and more as a lens through which to view them.</p>
+
+
+<p>In particular viewing something as social technology starts from asking two questions:</p>
+
+
+<ol>
+<li>What is this practice trying to do?</li>
+<li>How can we do that better?</li>
+</ol>
+
+
+<h3>Why do we need social technology R&amp;D?</h3>
+
+
+<p>One of the most common pieces of social technology that I've encountered outside of games is meeting facilitation.
+Liberating Structures is one of the best examples of meeting facilitation social technology that I'm familiar with,
+and mostly seems to be very good.</p>
+
+
+<p>In contrast, most other social technology I've encountered for meeting faciliation are quite bad, and leans heavily on the skill of the meeting facilitator rather than the technology, and the technology itself is often quite clunky.</p>
+
+
+<p>Take lean coffee for example. A lot of people really like lean coffee. I attended some lean coffee sessions and they were awful. I loved the idea, I loved what it was trying to do, and the execution has obvious glaring flaws that I feel would have been obvious and easily fixable if they had ever done any sort of playtesting. I cannot imagine they did.
+In response I designed <a href="https://github.com/DRMacIver/systems/blob/master/tempo.md">TickTalk</a>, which I think is pretty good. It could certainly use more play testing itself, but it's had some and I really do think it's <em>far</em> better than lean coffee.</p>
+
+
+<p>Brainstorming is another example. Brainstorming doesn't work. We're pretty sure of this now. It produces results that are worse than not using it. Many things <em>like</em> brainstorming work, and work well, but brainstorming itself very much doesn't.
+A little bit of development and experimentation could have revealed this early on, but instead as far as I can tell people just had an idea, slapped a name on it, and declared it the hot new thing that everyone should be doing, and it worked.</p>
+
+
+<p>The common theme here (and why liberating structures tend to be Actually Good) is obvious I hope: <em>Playtest your social technology</em>, and learn from it and improve it.
+People don't do this enough, and are using really bad systems as a result.</p>
+
+
+<p>Social technology R&amp;D is the solution to this problem. You treat these systems as a piece of technology like any other, and you develop them as such. You try things, you see what works, and you refine based on that.</p>
+
+
+<p>This isn't a novel idea in social technology, everyone who designes games knows this. If you make a game and don't playtest it, you'll get a game that isn't fun and nobody plays. In contrast, when you design a meeting facilitation system, it only has to be less bad than an unfacilitated meeting (this isn't hard), and also you can usually impose it by fiat, so there's much less direct incentive to be good. This is ridiculous though - meetings are expensive and potentially high value, so anything that increases that value or decrease that cost is obviously good.</p>
+
+
+<h3>Weird low budget social technology nonsense?</h3>
+
+
+<p>What I'm interested in has two defining features:</p>
+
+
+<ol>
+<li>Developing social technologies for a broad range of problems.</li>
+<li>...that can be implemented easily and cheaply.</li>
+</ol>
+
+
+<p>For example, take speed dating. Has anyone actually ever done any speed dating R&amp;D? Speed dating doesn't seem to work particularly well for people, and some of that is because dating is intrinsically awkward, but a lot of it does seem like the structure is just very poorly designed.</p>
+
+
+<p>I'm pretty confident nobody has ever done a detailed user experience analysis of speed dating and tried to improve it in a principled way. Someone just had the idea, people tweaked it a bit, and it mostly works well enough. For the same reason meeting design lacks a strong incentive to improve (because meetings are so bad that anything helps), speed dating has little incentive to improve (because there's no shortage of single people who would really like some help with dating).</p>
+
+
+<p>Additionally, speed dating is primarily a low value proposition. People don't pay a lot for speed dating, so where would the budget for improving it come from?</p>
+
+
+<p>(People <em>do</em> use speed dating for research, but it seems to be primarily using speed dating as a methodology for studying romantic interactions. i.e. it's people taking the social technology as read and using it to do social science)</p>
+
+
+<p>Taking something like speed dating and improving it for its intended purpose, and also finding other interesting applications of those approaches (for example, what would a "Speed dating, but you're there to make friends" event look like? How should one do bi/poly speed dating? Could one do a speed dating event to start up a co-coaching network?), is the sort of low budget social technology I'd like to develop.</p>
+
+
+<p>Another example of a problem I think would be interesting to study is this: <a href="https://www.drmaciver.com/2016/11/democracy-for-lunch/">How do you decide where to go for lunch?</a>. Or where to go to the cinema. Or what to cook tonight... You get the idea. Collective decision making is common, but I don't actually know how common, and I don't know what the best way to do it is.
+I have a history of <a href="https://notebook.drmaciver.com/posts/2020-03-07-15:27.html">solving this for people by just telling them what to do</a>, but it sure would be interesting to study this class of problem and how to do it better, wouldn't it?</p>
+
+
+<p>In general, the sort of thing I would like to do is:</p>
+
+
+<ol>
+<li>Identify reasonably common social problems.</li>
+<li>Develop social technologies to improve them that can be explained in one or two pages, and implemented with cheap and/or commonly available tools.</li>
+</ol>
+
+
+<p>I think there is a <em>lot</em> of low hanging fruit of this nature, mostly based on the fact that the individual examples that gain traction don't seem like they're still very much picking low hanging fruit, and it shouldn't be hard to find others.</p>
+
+
+<h3>What would this look like in practice?</h3>
+
+
+<p>Gosh, that's a great question, this has turned from a vague idea into something resembling a structured plan remarkably quickly, so this is the bit underspecified, so please bear in mind that I wasn't planning to do this for a while and part of the thing that this would look like in practice is getting a bunch of people together to figure out the details.</p>
+
+
+<p>The general procedure we'd want to use for developing social technology is:</p>
+
+
+<ol>
+<li>Create or identify a prototype piece of social technology with a Version 0 document describing it.</li>
+<li>Playtest it amongst ourselves, then with random members of the public, until we're happy with it.</li>
+<li>Publish a Version 1.0 version of the social technology in public, probably under a <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license.</li>
+<li>Over time publish updated and improved versions of it in response to subsequent usage and feedback.</li>
+</ol>
+
+
+<p>Both (1) and (2) are the bits that need a lot of trial and error. The following are probably the two main sources of prototypes:</p>
+
+
+<ol>
+<li>Study what people actually do in the wild and extract it into something standalone.<ul>
+<li>Often this can start from existing literature. e.g. speed dating comes pre studied. The "teaching open ended style" protocol from Vaughn Tan's The Uncertainty Mindset that I talked about in <a href="https://drmaciver.substack.com/p/how-to-teach-the-local-style">How to teach the local style</a> is another example where you can just get it from books.</li>
+<li>Often you can get paid to find this out! Going into a company and consulting with them is a great way to find out what they actually do.</li>
+</ul>
+</li>
+<li>Starting from problems people have (e.g. we could find this out by offering coaching and consultancy services) and then trying to generate solutions to those. This would probably need us to work a bit on the social technology that supports generating these solutions, but I expect we'd be using Liberating Structures or the like as starting points for that rather than trying to invent new ones from scratch.</li>
+<li>Actively work on the social technology underpinning how the group runs itself, and try to extract this into reusable standalone features.</li>
+</ol>
+
+
+<p>As well as producing the actual final products, there would probably be:</p>
+
+
+<ul>
+<li>A lot of writing about the things we learn along the way.</li>
+<li>Various professional services built on top of this. I think there is quite a lot of scope for this to lead into a lucrative consulting and training business around these things, as a lot of it would be quite useful to companies.</li>
+</ul>
+
+
+<h3>What would this need?</h3>
+
+
+<p>My dream version of this where I get to run an actual R&amp;D institution looks something like this.</p>
+
+
+<p>Staff would be:</p>
+
+
+<ul>
+<li>A small team of about 5 for the actual R&amp;D.</li>
+<li>Someone to do admin.</li>
+<li>Probably someone to do sales and marketing? Certainly this would be needed eventually.</li>
+</ul>
+
+
+<p>A lot of this would need to be done in person (at least post COVID...). This would require an office and a studio space for running events.</p>
+
+
+<p>On top of that there would need to be budget for:</p>
+
+
+<ul>
+<li>All the usual company stuff. Computers, paying for software, etc.</li>
+<li>Quite a lot of training, partly for people's personal growth, partly because it's important research.</li>
+<li>Hiring people on one off contracts, for a mix of:</li>
+<li>Consulting specialists</li>
+<li>Paying people to do initial playtesting.</li>
+<li>A flexible group of people who we could bring in to do various research tasks (e.g. send out a bunch of interns to learn more about different meetup groups).</li>
+</ul>
+
+
+<p>I'm expecting the professional services arm of the group would do quite well (it's potentially very high value for corporate customers). Initially (and to some degree ongoing - it's a good habit to keep your hand in on) this would be done by the R&amp;D team. With increased demand, it would be necessary to bring on more staff to keep up with it, and eventually I would expect us to transition to having a full training arm.</p>
+
+
+<h3>How plausible is all this?</h3>
+
+
+<p>Honestly pretty plausible. Some of it is stuff I could do today, and may well start doing as I start providing more consulting and corporate training options built in to my existing work. It's possible that in five years time I may be doing exactly what I describe given no external intervention, assuming I still think it's a good idea.</p>
+
+
+<p>The big questions are:</p>
+
+
+<ol>
+<li>Is there as much low hanging fruit as I think there is? (I'm reasonably confident there is)</li>
+<li>Am I underestimating the amount of work playtesting takes? (I don't think so, in the sense that the amount of work people currently do is so low that even modest amounts would be an improvement)</li>
+<li>Is there really enough demand for this to fund it? (I'm genuinely unsure about this one, but I think it's likely that there is if it's pitched right).</li>
+<li>Would this end up a niche thing used only by corporates and weirdos? (This is a totally plausible failure mode. Certainly I expect many of the things we develop would never see wide adoption. But I figure worst case scenario we make a lot of money improving various work environments and maybe make one or two useful prosocial innovations)</li>
+</ol>
+
+
+<p>All told I'd be very surprised if <em>something</em> in this space couldn't be made to work, and also very surprised if what ends up working looks exactly like I've outlined in this document, because technology startups never work out that way, and that's ultimately what this idea is.</p>
+
+
+</section>
+<section>
 <h2><a href="/posts/2021-07-31-09:29.html">2021-07-31</a></h2>
 
 
@@ -375,130 +628,12 @@ but it's not really a rendition of what happened either. You write <em>about</em
 
 
 </section>
-<section>
-<h2><a href="/posts/2021-07-27-04:25.html">2021-07-27</a></h2>
-
-
-<p class="subtitle">You have to do the easy bits first</p>
-
-
-<dl class="metadata">
-<dt>Published</dt>
-<dd class="post-date">2021-07-27</dd>
-</dl>
-
-
-<p>I was helping a small child with a jigsaw puzzle the other day. We were assembling a map of Africa.</p>
-
-
-<p>At some point she asked me "Why is this so easy for you and so hard for me?"</p>
-
-
-<p>It was a good question.</p>
-
-
-<p>The easy answer is just "I'm 31 years older than you, I’ve learned a few tricks".</p>
-
-
-<p>I didn't say this, but I do think it's important. She's seven. There's no reason she should have figured out everything by now. She's still learning. That's what seven year olds do.</p>
-
-
-<p>But really there was only one trick, and it’s well within the reach of a seven year old if they can learn how.</p>
-
-
-<p>"Well, I’m doing the easy bits" I answered.</p>
-
-
-<p>I explained a bit further, but I don’t think it quite landed.</p>
-
-
-<p>So here is what I would say with <a href="https://en.wikipedia.org/wiki/L%27esprit_de_l%27escalier">the wit of the staircase</a> upon me.</p>
-
-
-<p>What you are doing is picking up a piece, and trying to figure out where to put it. Or you see a space that needs filling, and look for the piece that will fit it.</p>
-
-
-<p>This is much too hard. Of course you're struggling, I would struggle too if I tried to solve the puzzle that way.</p>
-
-
-<p>Here is what I do instead: I do the same thing, and if it's hard, I stop. Then I look elsewhere. I put the piece aside, I look at another space, hoping that that one will be easier.</p>
-
-
-<p>There are many pieces, and many spaces, on the puzzle board, and some of them are hard, and some of them are easy. A blue square in the middle of the ocean is hard, a country boundary with distinctive colours is probably easy.</p>
-
-
-<p>You can get good at spotting which ones are likely to be easy, but you mostly don't need to. You just try to place a piece, and if it works, it was one of the easy ones. If it doesn't, you try something else.</p>
-
-
-<p>Eventually you'll get good at spotting the easy pieces first, but you don't have to. Just be persistent, try them all. It usually won't take long to find an easy piece.</p>
-
-
-<p>And when you've placed an easy piece, something funny happens: Pieces that were once hard, suddenly become easy.</p>
-
-
-<p>You fill a space, and now you have one less piece to place, and new spaces to place it.</p>
-
-
-<p>Bit by bit, the picture takes shape, and as it does the problem becomes easier, because you have more to work with.</p>
-
-
-<p>If you've only got a few pieces, you can just try them all, and one of them will work. When you're down to a handful, there are no hard pieces left.</p>
-
-
-<p>We can solve the hardest puzzles this way. All we need is a bit of persistence and some good tactics.</p>
-
-
-<p>This isn't just about puzzles. You do the same with sudoku.</p>
-
-
-<p>When we play sudoku together, you get stuck on a square. You look at it, trying to figure out what numbers go there.</p>
-
-
-<p>Often you get frustrated. "I can't figure out what should go there".</p>
-
-
-<p>Well of course you can't. You've picked one of the hard squares. Pick an easy square.</p>
-
-
-<p>This is what's happening when I point to another square and say "Do you know what goes in this square?" - I look at the board until I find the easy square, and then I show it to you, and you find it easy, because you're perfectly able to solve the sudoku if you look in the right place.</p>
-
-
-<p>And once you've solved the easy square, now you know more about the other squares. A three went there, so there can't be a three in these squares, which means that one must be a two, which means that that one must be a four...</p>
-
-
-<p>As soon as you've done the easy bit, everything around it becomes easier. This is the way we solve the puzzle.</p>
-
-
-<p>This is also the way we fix the world.</p>
-
-
-<p>This is a story about a seven year old, but it's not really a story about a seven year old, because people far older than me seem to miss this too.</p>
-
-
-<p>People often ask me how I know so many different subjects, or write about so many different things, when they struggle to do a tenth that.</p>
-
-
-<p>Well, I'm doing the easy bits.</p>
-
-
-<p>If I run into a problem I can't solve yet, or I encounter a subject that's too hard for me, I go "Huh, interesting", and save it for later, or leave it to someone better suited to it.</p>
-
-
-<p>I don't <em>give up</em>. This is important. I just move on to something else, often something nearby.</p>
-
-
-<p>I find a problem I can solve, and then I solve it.</p>
-
-
-<p>And everything else becomes easier.</p>
-
-
-</section>
 
 
 <h2>2021-07</h2>
 
 <ul class=postarchive>
+<li><a href="/posts/2021-07-27-04:25.html">You have to do the easy bits first</a></li>
 <li><a href="/posts/2021-07-26-09:00.html">The edge of the familiar</a></li>
 <li><a href="/posts/2021-07-25-12:50.html">You can solve your problems, but you don't have to</a></li>
 <li><a href="/posts/2021-07-23-16:26.html">First decide what's good enough</a></li>
