@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2021-08-07T13:40:59+01:00</updated>
+  <updated>2021-08-08T12:28:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,56 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2021-07-22-01:05.html</id>
-    <title>Learning from the real</title>
-    <updated>2021-07-22T06:13:45+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Learning from the real&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2021-07-22&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Back in &lt;a href="https://notebook.drmaciver.com/posts/2020-03-04-11:18.html"&gt;Skirting the edge of disaster&lt;/a&gt; I pointed out that most complex systems that have been running in production for a while (e.g. a legacy software system, the London underground, humanity) have the form that they do as a result of the following two rules:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;If an important system is broken, we fix it.&lt;/li&gt;
-&lt;li&gt;If a system has spare capacity, we place more demands on it.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;As you can tell from the title of the linked piece, I was mostly framing this as a bad thing: The consequence of being at a stable balance of these two things is that the system is constantly almost but not-quite broken, because every time it gets too far from broken it gets loaded more, and every time it breaks it gets fixed.&lt;/p&gt;
-
-
-&lt;p&gt;But there's another side to this that I think is interesting: If you encounter a reasonably stable complex system in the wild (and you do, very regularly), this reliably means:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;It does a lot of things, because capabilities kept accreting over time, and they're often not things you would have thought of without that infrastructure because it changes what's easy and cheap to do.&lt;/li&gt;
-&lt;li&gt;Everything that would have stopped it from doing those things has been solved.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;A lot of time, work, and ingenuity has often gone into getting it to that state, much of which would have been impossible to figure out from first principles because you had to &lt;a href="https://notebook.drmaciver.com/posts/2020-02-26-16:07.html"&gt;try things and see what happened&lt;/a&gt; before you could even learn that you needed to solve the problems, let alone how.&lt;/p&gt;
-
-
-&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/John_Gall_(author)"&gt;Gall's law&lt;/a&gt; is "A complex system that works is invariably found to have evolved from a simple system that worked. A complex system designed from scratch never works and cannot be patched up to make it work. You have to start over with a working simple system."&lt;/p&gt;
-
-
-&lt;p&gt;But this then leads to the question: OK smart guy, how do I make a working simple system?&lt;/p&gt;
-
-
-&lt;p&gt;And I think the answer is often this: Go find a complex system that does what you want, and study it until you understand it well enough to extract a simple system from it.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2021-07-22-01:05.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-07-23-16:26.html</id>
     <title>First decide what's good enough</title>
@@ -658,7 +608,7 @@ and I've significantly underestimated how hard the Collatz conjecture is. In par
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-08-07-08:15.html</id>
     <title>Notes towards a social technology R&amp;D lab</title>
-    <updated>2021-08-07T13:40:59+01:00</updated>
+    <updated>2021-08-07T13:51:05+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Notes towards a social technology R&amp;amp;D lab&lt;/p&gt;
@@ -910,5 +860,128 @@ I have a history of &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2021-08-07-08:15.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2021-08-08-12:28.html</id>
+    <title>how to write like this</title>
+    <updated>2021-08-08T12:28:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;how to write like this&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2021-08-08&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;&lt;a href="https://drossbucket.com/"&gt;Lucy&lt;/a&gt; and I were talking about the &lt;a href="https://notebook.drmaciver.com/posts/2021-07-27-04:25.html"&gt;You have to do the easy bits first&lt;/a&gt; piece, and she asked me how I wrote it.&lt;/p&gt;
+
+
+&lt;p&gt;It's a good question. I didn't answer it very well.&lt;/p&gt;
+
+
+&lt;p&gt;Here, let's have another go.&lt;/p&gt;
+
+
+&lt;p&gt;The way to write like this is to write like this.&lt;/p&gt;
+
+
+&lt;p&gt;That isn't a very helpful answer, huh.&lt;/p&gt;
+
+
+&lt;p&gt;One more time.&lt;/p&gt;
+
+
+&lt;p&gt;The way to write like THIS is to write like THIS!&lt;/p&gt;
+
+
+&lt;p&gt;the way to write&lt;/p&gt;
+
+
+&lt;p&gt;like this&lt;/p&gt;
+
+
+&lt;p&gt;is to write&lt;/p&gt;
+
+
+&lt;p&gt;like this&lt;/p&gt;
+
+
+&lt;p&gt;thewaytowritelikethisistowritelike this&lt;/p&gt;
+
+
+&lt;p&gt;You see?&lt;/p&gt;
+
+
+&lt;p&gt;The way to change how you write is to change how you write.&lt;/p&gt;
+
+
+&lt;p&gt;The best part of the answer I gave Lucy earlier is that the thing where the paragraphs are short (I said one sentence, but actually looking again they're not) is more important than you'd think.&lt;/p&gt;
+
+
+&lt;p&gt;The way to change the voice you write in is to write in a different voice.&lt;/p&gt;
+
+
+&lt;p&gt;And the voice of your writing is&lt;/p&gt;
+
+
+&lt;p&gt;determined by its form. As you shift&lt;/p&gt;
+
+
+&lt;p&gt;the layout&lt;/p&gt;
+
+
+&lt;p&gt;the format&lt;/p&gt;
+
+
+&lt;p&gt;the literal physical way the words appear on the page&lt;/p&gt;
+
+
+&lt;p&gt;the sound of what you are writing changes, and with it the voice in which you write moves to match.&lt;/p&gt;
+
+
+&lt;p&gt;When I write like this, in long discursive paragraphs, in which I patiently explain the thing I am doing to you, that is one voice. I can fuck with it if I want, right? Code switch mid paragraph. I don't have to write like a tedious book, but this is the tone that I naturally fall back into, because habits of writing are entrained ways of being, that one grows comfortable in. If you try to do a thing that is well served by a particular mode, you have to actively exert effort to avoid falling back into that mode. It's entirely possible, especially if you have other modes that you're used to and can borrow from, but without the clarity that those modes provide, it is difficult to avoid. It is hard to write differently without first deciding what that difference is, and the easiest form of difference is to be able to say "More like &lt;em&gt;that&lt;/em&gt;".&lt;/p&gt;
+
+
+&lt;p&gt;When you fuck with the form&lt;/p&gt;
+
+
+&lt;p&gt;you instantly break the habit&lt;/p&gt;
+
+
+&lt;p&gt;because&lt;/p&gt;
+
+
+&lt;p&gt;the habit can no longer serve you.&lt;/p&gt;
+
+
+&lt;p&gt;Will the result be good? Nah, probably not. That's OK.&lt;/p&gt;
+
+
+&lt;p&gt;&lt;a href="https://warwick.ac.uk/fac/arts/english/currentstudents/undergraduate/modules/fulllist/first/en122/lecturelist-2015-16-2/shklovsky.pdf"&gt;Viktor Shklovsky thinks that art is about defamiliarisation&lt;/a&gt;, and I think this is even more true for the artist than for the viewer of the art.
+In order to create art, you must first break out of your habitual mode of engaging with the thing you are depicting.
+Anything that breaks the habit by forcing you outside of what it can do will help you to achieve that,
+by pushing you into a mode where everything is strange, and giving you a space in which to learn that strangeness.&lt;/p&gt;
+
+
+&lt;p&gt;but if you do what you also do&lt;/p&gt;
+
+
+&lt;p&gt;you'll get what you always get.&lt;/p&gt;
+
+
+&lt;p&gt;This is uncomfortable at first, of course it is. You're learning a whole new way of engaging with the world through writing.
+Stay with that discomfort, and write through it, and see what happens.&lt;/p&gt;
+
+
+&lt;p&gt;Or, in short:&lt;/p&gt;
+
+
+&lt;p&gt;The way to write like this is to write like this.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2021-08-08-12:28.html" rel="alternate"/>
   </entry>
 </feed>
