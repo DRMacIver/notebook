@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2021-08-08T12:28:00+01:00</updated>
+  <updated>2021-10-02T08:53:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,44 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2021-07-23-16:26.html</id>
-    <title>First decide what's good enough</title>
-    <updated>2021-07-23T17:05:33+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;First decide what's good enough&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2021-07-23&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;One of my common pieces of advice is that when doing something or making something, you should separate your planning into two distinct goals:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;How good do you need the thing to be?&lt;/li&gt;
-&lt;li&gt;How good would you like the thing to be?&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;Your first priority is to come up with a plan that all but guarantees that the thing you make will be as good as you need it to be. For example, when giving a talk, you don't &lt;em&gt;need&lt;/em&gt; a lot. If your talk is coherent, vaguely interesting, and doesn't run over time, you've succeeded. You've given a talk that is good enough, well done.&lt;/p&gt;
-
-
-&lt;p&gt;Once you've ensured that, you can stop feeling anxious about it, because you've removed any uncertainty about whether you will succeed. You will succeed, it's just up for you to tinker with the details. You can make it better for as long as it's worth making it better, and when it's not worth it any more you can just stop there and declare your planning done.&lt;/p&gt;
-
-
-&lt;p&gt;Generally I find you actually produce better results by doing it this way, because removing the anxiety reliably improves performance.&lt;/p&gt;
-
-
-&lt;p&gt;You don't have to though. One nice thing about this approach is that you get very good at making sure something is good enough without having to put much effort on it. Then, when you have times where you really don't feel like putting in a lot of effort, you can massively phone it in, and that's fine too.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2021-07-23-16:26.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-07-25-12:50.html</id>
     <title>You can solve your problems, but you don't have to</title>
@@ -864,7 +826,7 @@ I have a history of &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-08-08-12:28.html</id>
     <title>how to write like this</title>
-    <updated>2021-08-08T12:28:00+01:00</updated>
+    <updated>2021-08-08T12:59:15+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;how to write like this&lt;/p&gt;
@@ -983,5 +945,64 @@ Stay with that discomfort, and write through it, and see what happens.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2021-08-08-12:28.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2021-10-02-08:53.html</id>
+    <title>On feeling blocked, redux</title>
+    <updated>2021-10-02T08:53:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;On feeling blocked, redux&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2021-10-02&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Ages ago, when struggling to write, I wrote &lt;a href="https://notebook.drmaciver.com/posts/2020-03-20-10:33.html"&gt;On feeling blocked&lt;/a&gt;, in which I describe the phenomenology of writer's block.&lt;/p&gt;
+
+
+&lt;p&gt;I've been really struggling with writing my newsletter recently, so I've decided to solve this with resuming daily writing, and it seemed natural to start by returning to the subject. A year and a half on I have a very different perspective on writer's block.&lt;/p&gt;
+
+
+&lt;p&gt;It's this: Writer's block is not wanting to write, or wanting not to write.&lt;/p&gt;
+
+
+&lt;p&gt;This may seem overly simple, but it's not. It just moves the complexity. Wanting is complicated.&lt;/p&gt;
+
+
+&lt;p&gt;In particular, often some parts of you will want to write, and some parts of you will want not to write, and the resulting inner conflict leads to writer's block.&lt;/p&gt;
+
+
+&lt;p&gt;In "On feeling blocked":&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Being blocked feels like this. It's not that there's an actual block, it's that you reach for a part of your brain where the words come from and it's not there. You can't run out of ideas and you know this, but you try to follow the steps of the idea generating process and the world glitches and you realise you cut off mid-sentence and have been reading Twitter for the last half hour.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;That sort of distraction is exactly what (at least one type of) an inner conflict feels like. A part of you drives you to write, a part of you resists with some emotional judo and redirects you somewhere else.&lt;/p&gt;
+
+
+&lt;p&gt;&lt;a href="https://amzn.to/3l08rfl"&gt;On Writer's Block&lt;/a&gt; by Victoria Nelson is a good book about the emotional dynamics of writer's block which, ultimately, boils down to a long discussion of reasons why you might want not to write. Typically they're some variation on wanting to write something that you don't feel able to, or that you feel scared about in some way.&lt;/p&gt;
+
+
+&lt;p&gt;In particular they often come down to trying to adhere to a standard that you don't feel you can be good enough for, or feeling that you should write in a way that isn't actually very good.
+e.g. a lot of people get blocked because they're trying to write like they learned to in school and everything comes out boring.&lt;/p&gt;
+
+
+&lt;p&gt;I'm blocked on my newsletter at the moment. I don't entirely know why, but the symptom is that I have lots of unfinished posts. The solution is probably to write the newsletter more like I do the notebook. I don't feel able to do that, I don't know why yet.&lt;/p&gt;
+
+
+&lt;p&gt;In the meantime, I'm going to get back to writing even if I can't write the newsletter. Life is much better when I write.&lt;/p&gt;
+
+
+&lt;p&gt;The fundamental principles are the same as they always are. &lt;a href="https://notebook.drmaciver.com/posts/2020-05-05-08:59.html"&gt;Make success trivial&lt;/a&gt; then apply &lt;a href="https://www.drmaciver.com/2019/05/how-to-do-hard-things/"&gt;the fully general system&lt;/a&gt;. The fact that in this case the hard thing is something that I already in theory know how to do doesn't matter, &lt;a href="https://notebook.drmaciver.com/posts/2020-05-12-08:19.html"&gt;things can be hard for lots of reasons&lt;/a&gt;.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2021-10-02-08:53.html" rel="alternate"/>
   </entry>
 </feed>
