@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2021-10-03T08:59:00+01:00</updated>
+  <updated>2021-10-04T07:03:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,128 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2021-07-27-04:25.html</id>
-    <title>You have to do the easy bits first</title>
-    <updated>2021-07-27T05:33:47+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;You have to do the easy bits first&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2021-07-27&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I was helping a small child with a jigsaw puzzle the other day. We were assembling a map of Africa.&lt;/p&gt;
-
-
-&lt;p&gt;At some point she asked me "Why is this so easy for you and so hard for me?"&lt;/p&gt;
-
-
-&lt;p&gt;It was a good question.&lt;/p&gt;
-
-
-&lt;p&gt;The easy answer is just "I'm 31 years older than you, I’ve learned a few tricks".&lt;/p&gt;
-
-
-&lt;p&gt;I didn't say this, but I do think it's important. She's seven. There's no reason she should have figured out everything by now. She's still learning. That's what seven year olds do.&lt;/p&gt;
-
-
-&lt;p&gt;But really there was only one trick, and it’s well within the reach of a seven year old if they can learn how.&lt;/p&gt;
-
-
-&lt;p&gt;"Well, I’m doing the easy bits" I answered.&lt;/p&gt;
-
-
-&lt;p&gt;I explained a bit further, but I don’t think it quite landed.&lt;/p&gt;
-
-
-&lt;p&gt;So here is what I would say with &lt;a href="https://en.wikipedia.org/wiki/L%27esprit_de_l%27escalier"&gt;the wit of the staircase&lt;/a&gt; upon me.&lt;/p&gt;
-
-
-&lt;p&gt;What you are doing is picking up a piece, and trying to figure out where to put it. Or you see a space that needs filling, and look for the piece that will fit it.&lt;/p&gt;
-
-
-&lt;p&gt;This is much too hard. Of course you're struggling, I would struggle too if I tried to solve the puzzle that way.&lt;/p&gt;
-
-
-&lt;p&gt;Here is what I do instead: I do the same thing, and if it's hard, I stop. Then I look elsewhere. I put the piece aside, I look at another space, hoping that that one will be easier.&lt;/p&gt;
-
-
-&lt;p&gt;There are many pieces, and many spaces, on the puzzle board, and some of them are hard, and some of them are easy. A blue square in the middle of the ocean is hard, a country boundary with distinctive colours is probably easy.&lt;/p&gt;
-
-
-&lt;p&gt;You can get good at spotting which ones are likely to be easy, but you mostly don't need to. You just try to place a piece, and if it works, it was one of the easy ones. If it doesn't, you try something else.&lt;/p&gt;
-
-
-&lt;p&gt;Eventually you'll get good at spotting the easy pieces first, but you don't have to. Just be persistent, try them all. It usually won't take long to find an easy piece.&lt;/p&gt;
-
-
-&lt;p&gt;And when you've placed an easy piece, something funny happens: Pieces that were once hard, suddenly become easy.&lt;/p&gt;
-
-
-&lt;p&gt;You fill a space, and now you have one less piece to place, and new spaces to place it.&lt;/p&gt;
-
-
-&lt;p&gt;Bit by bit, the picture takes shape, and as it does the problem becomes easier, because you have more to work with.&lt;/p&gt;
-
-
-&lt;p&gt;If you've only got a few pieces, you can just try them all, and one of them will work. When you're down to a handful, there are no hard pieces left.&lt;/p&gt;
-
-
-&lt;p&gt;We can solve the hardest puzzles this way. All we need is a bit of persistence and some good tactics.&lt;/p&gt;
-
-
-&lt;p&gt;This isn't just about puzzles. You do the same with sudoku.&lt;/p&gt;
-
-
-&lt;p&gt;When we play sudoku together, you get stuck on a square. You look at it, trying to figure out what numbers go there.&lt;/p&gt;
-
-
-&lt;p&gt;Often you get frustrated. "I can't figure out what should go there".&lt;/p&gt;
-
-
-&lt;p&gt;Well of course you can't. You've picked one of the hard squares. Pick an easy square.&lt;/p&gt;
-
-
-&lt;p&gt;This is what's happening when I point to another square and say "Do you know what goes in this square?" - I look at the board until I find the easy square, and then I show it to you, and you find it easy, because you're perfectly able to solve the sudoku if you look in the right place.&lt;/p&gt;
-
-
-&lt;p&gt;And once you've solved the easy square, now you know more about the other squares. A three went there, so there can't be a three in these squares, which means that one must be a two, which means that that one must be a four...&lt;/p&gt;
-
-
-&lt;p&gt;As soon as you've done the easy bit, everything around it becomes easier. This is the way we solve the puzzle.&lt;/p&gt;
-
-
-&lt;p&gt;This is also the way we fix the world.&lt;/p&gt;
-
-
-&lt;p&gt;This is a story about a seven year old, but it's not really a story about a seven year old, because people far older than me seem to miss this too.&lt;/p&gt;
-
-
-&lt;p&gt;People often ask me how I know so many different subjects, or write about so many different things, when they struggle to do a tenth that.&lt;/p&gt;
-
-
-&lt;p&gt;Well, I'm doing the easy bits.&lt;/p&gt;
-
-
-&lt;p&gt;If I run into a problem I can't solve yet, or I encounter a subject that's too hard for me, I go "Huh, interesting", and save it for later, or leave it to someone better suited to it.&lt;/p&gt;
-
-
-&lt;p&gt;I don't &lt;em&gt;give up&lt;/em&gt;. This is important. I just move on to something else, often something nearby.&lt;/p&gt;
-
-
-&lt;p&gt;I find a problem I can solve, and then I solve it.&lt;/p&gt;
-
-
-&lt;p&gt;And everything else becomes easier.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2021-07-27-04:25.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-07-28-04:40.html</id>
     <title>You can't write life down</title>
@@ -1135,7 +1013,7 @@ e.g. you can tell how politics is going by how Soviet the jokes get.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-10-03-08:59.html</id>
     <title>Notes on moral disorder</title>
-    <updated>2021-10-03T08:59:00+01:00</updated>
+    <updated>2021-10-03T10:04:42+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Notes on moral disorder&lt;/p&gt;
@@ -1212,5 +1090,52 @@ so attempting to feel fine by persuading yourself that your actions are fine won
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2021-10-03-08:59.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2021-10-04-07:03.html</id>
+    <title>What does a good person look like?</title>
+    <updated>2021-10-04T07:03:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;What does a good person look like?&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2021-10-04&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;From Intelligent Virtue by Julia Annas, page 106:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;"A philosopher", says "Hume, "might select this character as a model of perfect virtue". It is always hard to be sure that we have got Hume's tone right, but if he is not being ironic here it is obvious that something is amiss. A yuppy lawyer who is great company at parties is a model perfect virtue? Can this be serious? What has gone wrong here? We do not need to go into Hume's account of virtue in depth to discover it (one reasonw hy the example is useful in the present connection). What the description of Cleanthes brings out is that someone may have a character that is useful and agreeable to himself and others, and still be utterly &lt;em&gt;uninspiring&lt;/em&gt;, somebody tha tnobody could take an &lt;em&gt;ideal&lt;/em&gt; of a 8good* person to be.&lt;/p&gt;
+&lt;p&gt;Let us compare Cleanthes with someone who really is admirable and inspiring and has served as an ideal to countlessly many: Socrates. Socrates' dispositions were of course not all useful to himself or his family; his commitment to searching for truth led him to neglect his own business affairs and reduce them all to poverty. Socrates' character was in fact useful to the Athenians, in stirring them to think about their values, but this was hardly clear to them, since they recognised this too late after executing him. Also, Socrates' character may or may not have been agreeable to himself, but it was certainly very disagreeable to others.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;This passage follows a description of Cleanthes which makes him sounds pleasant but very bland.&lt;/p&gt;
+
+
+&lt;p&gt;When trying to be a better person, you can try to do less harm, or you can try to do more good.&lt;/p&gt;
+
+
+&lt;p&gt;In theory you can do both, but in practice doing good requires doing more and more interesting things, and this includes increased risk of doing harm. Also one has only so much time, and time spent working on learning to do less harm is often trading directly against time to do more good.&lt;/p&gt;
+
+
+&lt;p&gt;All of which is sortof irrelevant, because regardless of whether you &lt;em&gt;can&lt;/em&gt; be perfectly good, most people aren't, and this picture Annas paints does feel like it rings fairly true: You can have pleasant and harmless people who are, ultimately, fairly mediocre forces for good int he world, and the ones who are out there actively doing good are often deeply flawed people with many problems.&lt;/p&gt;
+
+
+&lt;p&gt;I feel like a lot of people, especially on the left, have an attitude that people like this are a problem. This tends to come from a good place ("Nobody is above criticism"), but I'm not sure it's helpful. &lt;/p&gt;
+
+
+&lt;p&gt;Perhaps this doesn't affect the people in question (Although they did very much kill Socrates), but it tends to drive people to become very morally risk averse, and provides a lack of good role models for developing agency, because the people who are actually doing good in the world are more likely to be held up as bad examples.&lt;/p&gt;
+
+
+&lt;p&gt;I don't have a good solution for this. It's important not to let good works act as moral license for bad - e.g. just because someone saves hundreds of lives it's not suddenly OK for them to murder just one person as a treat - but I do think we need to start cutting people some slack.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2021-10-04-07:03.html" rel="alternate"/>
   </entry>
 </feed>
