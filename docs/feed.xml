@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2021-10-06T01:29:04+01:00</updated>
+  <updated>2021-10-06T16:21:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,128 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2021-07-30-09:52.html</id>
-    <title>Can you throw money at the Collatz Conjecture?</title>
-    <updated>2021-07-30T18:41:30+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Can you throw money at the Collatz Conjecture?&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2021-07-30&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Warning: Inside baseball, very much a set of notes rather than a coherent point.&lt;/p&gt;
-
-
-&lt;p&gt;For context, &lt;a href="https://en.wikipedia.org/wiki/Collatz_conjecture"&gt;the Collatz conjecture&lt;/a&gt; is the following:&lt;/p&gt;
-
-
-&lt;p&gt;For any given natural number \(n\), if \(n\) is even, move to \(\frac{n}{2}\), otherwise move to \(3n + 1\).
-The Collatz conjecture is that no matter which \(n\) we start with, we will eventually reach \(1\).&lt;/p&gt;
-
-
-&lt;p&gt;There is, as far as I know, no particular reason to care about the Collatz conjecture except that it's interesting and that we don't know how to solve it.&lt;/p&gt;
-
-
-&lt;p&gt;&lt;a href="https://twitter.com/DRMacIver/status/1421051043266408449"&gt;I claimed on Twitter that you could probably solve the Collatz conjecture in a decade, given $1 billion of funding&lt;/a&gt;.
-&lt;a href="https://twitter.com/bpgbcg/status/1421057248365776899"&gt;Ben Gunby disagrees&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;I don't think we disagreed a lot. My estimate was something like "this would probably work", and I think his is something like "this probably wouldn't work". As far as I can tell neither of us thinks the other's position is ridiculous, we've just got moderately different views on the problem. That being said, having written all of this up, I've concluded that he's right and I'm wrong, because I had significantly underestimated how hard the Collatz conjecture is.&lt;/p&gt;
-
-
-&lt;p&gt;I think the following is a fair summary of his argument that this is likely to be very hard:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;We are likely quite far away from techniques that would allow us to tackle the Collatz conjecture.&lt;/li&gt;
-&lt;li&gt;If this is the case, there is likely a long dependency chain in which we have to develop tools to develop tools to develop tools etc.&lt;/li&gt;
-&lt;li&gt;If this is the case, this likely passes through many fields unrelated to the Collatz conjecture.&lt;/li&gt;
-&lt;li&gt;$1 billion is a lot but it's not enough to literally bend the whole of mathematical research to your whims.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;To look at this from another perspective, one can think of this in terms of two questions:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;How many direct mathematician-years of work do we need to solve the Collatz conjecture? i.e. if you add up all the mathematician-years of work spent on the proof and things it depends on, what do you get?&lt;/li&gt;
-&lt;li&gt;How many mathematician-years of work do we realistically need to do in order to actually achieve that? This would be the same if you could just linearly proceed from A to B, but if you depend on unrelated fields you need to take into account work done in equally plausible unrelated fields that you couldn't have known in advance.&lt;/li&gt;
-&lt;li&gt;How much of that work is intrinsically sequential? e.g. if we decided that it will take 1000 mathematician-years, can we do that in 10 years with 100 mathematicians or are you going to have to do a full 1000 years of work with one mathematician building on the results of another, etc?&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;("mathematician-years" of course depends on how good the mathematicians in question are. I guess I'm assuming reasonably top end mathematicians)&lt;/p&gt;
-
-
-&lt;p&gt;I think Ben and my intuitions on these differ as follows:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;His estimate of the number of mathematician-years required is much higher than mine initially was.&lt;/li&gt;
-&lt;li&gt;I think you probably can cut out a lot of the unrelated work with a bit of work on focusing people.&lt;/li&gt;
-&lt;li&gt;I believe this is more parallelisable than he does.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;On further reading up on the difficulty of the literature I think that he is right and I am wrong about the first one,
-and I've significantly underestimated how hard the Collatz conjecture is. In particular "The Ultimate Challenge" by Lagarias has a good survey that made me realise I'd underestimated the problem. &lt;a href="https://arxiv.org/pdf/1909.03562.pdf"&gt;Terence Tao made good progress on the problem in 2019&lt;/a&gt; and this good progress established a &lt;em&gt;substantially&lt;/em&gt; weaker result than the full conjecture. &lt;/p&gt;
-
-
-&lt;p&gt;For comparison, I think reasonable estimates for how many mathematician years went into solving Fermat's Last Theorem are somewhere in the region of 1000 to 10,000 mathmatician years, taking 1900 as the starting point (Most of the work on it that got real traction happened in the 20th century, I think). If on average 100 mathematicians were working on it full time at any given point of that century, that gets us to 10,000. If it's only 10, that's 1,000.&lt;/p&gt;
-
-
-&lt;p&gt;Is that realistic? I don't know. I could also make a convincing argument that it was less than that (e.g. a lot of the last stretch was Wiles working on his own for 7 years, followed by Wiles and Taylor finishing it off...). But lets say 10,000 mathematicians years is about how much FLT took. It's a nice round number.&lt;/p&gt;
-
-
-&lt;p&gt;Is the Collatz conjecture about as hard as FLT starting from 1900? I don't know. Based on my reading since Ben and my initial disagremeent... yeah, probably. Possibly even harder. We've got a number of partial results and angles of attack on it, but certainly nothing resembling a convincing story. It might be that it's actually amenable to some easy attack, but I don't think we've got any reason to expect that to be the case, and people who have studied it more than me seem to think it's probably too hard for us right now.&lt;/p&gt;
-
-
-&lt;p&gt;Suppose now that we could just turn money into mathematician-years. A high end mathematician salary seems to be about $100k. Because we want the best, and also need support staff and infrastructure, lets double that and say that one mathematician year costs us $200k. $1 billion now gets us 5,000 mathematician years.&lt;/p&gt;
-
-
-&lt;p&gt;So, based on these (admittedly somewhat pessimistic) estimates, even if we could make a perfect beeline for the Collatz conjecture, if it's about as hard starting from now as Fermat's Last Theorem was starting from 1900, we should not expect to be able to solve it with a mere billion dollars.&lt;/p&gt;
-
-
-&lt;p&gt;This is before we even get to the harder questions to quantify. What if exploring all the dead ends means we actually need 100,000 mathematician years?&lt;/p&gt;
-
-
-&lt;p&gt;Also, what happens with the dependencies problem? Can we, realistically, do even those 10,000 mathematician-years in 10 years even if we had infinite amounts of money to throw at it?&lt;/p&gt;
-
-
-&lt;p&gt;I don't have a good handle on this but think the answer is a resounding "Maybe". If we again use Fermat's Last Theorem as a benchmark it doesn't seem unreasonable to me to think that we could do this - that's only one order of magnitude reduction, and I think if we had the relevant parties in a room together and were able to more aggressively speed up the collaboration, offer them support, etc. I don't think this is &lt;em&gt;ridiculous&lt;/em&gt;. Wiles worked on FLT for 7 years on his own, and I wouldn't be surprised if he could have done that in half with a collaborator to discuss things with.&lt;/p&gt;
-
-
-&lt;p&gt;This is all speculative though, I genuinely don't know, and I don't have any way to know. &lt;a href="https://en.wikipedia.org/wiki/Polymath_Project"&gt;The polymath project&lt;/a&gt; gives me some hope that hard mathematical problems are parallelisable, but as far as I know it's never been tried on anything nearly this hard.&lt;/p&gt;
-
-
-&lt;p&gt;So, in conclusion, Ben is probably right. You probably can't solve this is in a decade with $1 billion.&lt;/p&gt;
-
-
-&lt;p&gt;I &lt;em&gt;do&lt;/em&gt; think you could probably make meaningful progress on the Collatz conjecture, up to and including solving it, with a mere $1 billion, but I think if I were to do that it would look more like trying to build resources and community around it in the broader mathematical community.&lt;/p&gt;
-
-
-&lt;p&gt;For example, for this sort of price tag one could fund:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;Some sort of ongoing "residency" arrangement where a rotating group of mathematicians get together and work on the Collatz conjecture and related problems for a year.&lt;/li&gt;
-&lt;li&gt;Many small cash prizes for Collatz adjacent conjectures&lt;/li&gt;
-&lt;li&gt;Put together a small team whose primary job was to essentially shore up results, generate conjectures, and write up the state of the art of current Collatz research&lt;/li&gt;
-&lt;li&gt;Many post grad positions for getting people working on the problem for a period of time early in their career&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;An alternative approach would be to just hire Terence Tao and Jeffrey Lagarias, and any dozen or so other mathematicians they care to name, and let them go wild on the problem. I doubt it would work, but it might produce something interesting.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2021-07-30-09:52.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-07-31-09:29.html</id>
     <title>Unlearning</title>
@@ -1237,7 +1115,7 @@ Typically you go out and help people anyway.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-10-06-00:02.html</id>
     <title>What's up with the unity of the virtues?</title>
-    <updated>2021-10-06T01:29:04+01:00</updated>
+    <updated>2021-10-06T01:54:05+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;What's up with the unity of the virtues?&lt;/p&gt;
@@ -1457,5 +1335,202 @@ Typically you go out and help people anyway.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2021-10-06-00:02.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2021-10-06-16:21.html</id>
+    <title>Revisiting Intelligent Virtue</title>
+    <updated>2021-10-06T16:21:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Revisiting Intelligent Virtue&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2021-10-06&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I'm not sure if it counts as a speedrun if you've already done the book, but I thought I'd spend another hour on Intelligent Virtue today, as I keep coming away from it thinking I haven't really done it justice.&lt;/p&gt;
+
+
+&lt;p&gt;I'm going to mix up the format of it a little bit by trying to do a chapter-by-chapter breakdown in this hour.&lt;/p&gt;
+
+
+&lt;h3&gt;Introduction&lt;/h3&gt;
+
+
+&lt;p&gt;On page 1:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;... the present distinctive account of virtue results from attending to two ideas. One is that exercising a virtue involves practical reasoning of a kind that can illuminatingly be compared to the kind of reasoning we find in someone exercising a practical skill. Rather than asking at the start how virtues relate to rules, principles, maximizing, or a final end, we will gain by looking at the way in which the acquisition and exercise of virtue can be seen to be in many ways like the acquisition and exercise of more mundane activities, such as farming, building, or playing the piano. The other idea is that virtue is part of the agent's happiness or flourishing, and that it is plausible to see virtue as actually constituting (wholly or in part) that happiness.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;So roughly her point is that:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Virtues are developed like skills.&lt;/li&gt;
+&lt;li&gt;Virtues are a key part of "human flourishing"&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;Oversimplifying, one can think of virtues as the skills of promoting human flourishing, which is how I tend to characterise it (in large part based on prior readings of this book).&lt;/p&gt;
+
+
+&lt;p&gt;The rest of the introduction mostly covers things that are going to be covered in future chapters.&lt;/p&gt;
+
+
+&lt;h3&gt;Virtue, Character, and Disposition&lt;/h3&gt;
+
+
+&lt;p&gt;This is the chapter in which she tries to explain what virtues are, and very much falls prety to the &lt;a href="https://notebook.drmaciver.com/posts/2021-07-02-09:29.html"&gt;People are bad at defining things&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Here are the places in this chapter where the phrase "virtue is" or "virtues are" occur, with some surrounding context:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;A virtue is a lasting feature of a person, a tendency for the person to be a certain way. It is not merely a lasting feature, however, one that just sits there undisturbed. It is active: to have it is to be disposed to act in certain ways&lt;/p&gt;
+&lt;p&gt;A virtue is not a static condition like [the tendency of glass to shatter]; it is a disposition as a result of which Jane acts and thinks in a certain way, and which is at any time strengthened by her generous responses and weakened by failures to have them. If she is generous, her generous actions and feelings both come from a virtue and fortify it.&lt;/p&gt;
+&lt;p&gt;A virtue is also a reliable disposition. If Jane is generous, it is no accident that she does the generous action and has generous feelings.&lt;/p&gt;
+&lt;p&gt;Further, a virtue is a disposition which is is, the virtuous (or vicious) person is acting in and from character when acting in a kindly, brave or restrained way. This is another way of putting the point that a virtue is a deep feature of the person. A virtue is a disposition which is central to the person, to whom he or she is, a way we standardly think of character.&lt;/p&gt;
+&lt;p&gt;...  virtue is a disposition which is from the start an active and developing one. It is not a passive product of a string of impacts from outside; it is the way I (or you), an active creature, develops a character through formation and education.&lt;/p&gt;
+&lt;p&gt;the virtues are educated developments of our unformed motivations. &lt;/p&gt;
+&lt;p&gt;Since virtue is a disposition of the above kind, becoming virtuous will naturally take time. Scrooge may have been converted suddenly to compassion and kindliness on Christmas Eve, but the story is careful to tell us that he continued over time the process of becoming a compassionate person. Coming to see that being loyal or brave is a worthwhile way to live is just the first step. Becoming virtuous requires habituation and experience.&lt;/p&gt;
+&lt;p&gt;It is natural to worry at this point whether habituation is just habit, and whether a virtuous disposition is just one built up by force of habit. Our experience leads us, in a number of areas of our lives, to develop habits which save time and effort. If developing a virtue is like this, why should we think it amounts to anything more than habit and even mere routine?&lt;/p&gt;
+&lt;p&gt;Virtue is unlike routine in a host of ways. [Followed by a long discussion of why piano playing is not a virtue that I don't entirely understand]&lt;/p&gt;
+&lt;p&gt;Skilled dispositions are not static conditions; they are always developing, being sustained or weakened. One of the major suggestions of this book is that virtue is like practical skill in this respect (as well as some others). Because a virtue is a disposition it requires time, experience, and habituation to develop it, but the result is not routine but the kind of actively and intelligently engaged practical mastery that we find in practical experts such as pianists and athletes.&lt;/p&gt;
+&lt;p&gt;A central feature of routine is that the reaction to the relevant situation is always the same, which is why routine can be depended on and predicted. But practical skill and virtue require more than predictably similar reaction; they require a response which is appropriate to the situation instead of merely being the same as that produced in response to other situations. This appropriateness comes from the habituated disposition that a virtue is. As Aristotle says: &lt;code&gt;It ... seems to be characteristic of the more courageous person to be unafraid and unruffled in sudden alarms rather than to be so in those that are foreseen; it comes more from his state of character [hexis, often translated&lt;/code&gt;disposition'], because less from preparation. &lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;I think this produces a set of &lt;em&gt;necessary&lt;/em&gt; conditions for something to count as a virtue. It must be:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;a characteristic disposition of the person to act in a particular way (generously, courageously).&lt;/li&gt;
+&lt;li&gt;in some way &lt;em&gt;fundamental&lt;/em&gt; to the person exercising it - that is, if you were to somehow take away the virtue they would have to be a very different person.&lt;/li&gt;
+&lt;li&gt;oriented towards something that we desire in and of itself (our "unformed motivations")&lt;/li&gt;
+&lt;li&gt;consciously and knowingly practiced, leading to its further development.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;I think this cannot count as sufficient to be a virtue because many vices could also satisfy this condition e.g. "nastiness" or "hedonistic debauchery" also satisfy this for people who are motivated towards such things, but it's a good start for at least distinguishing virtues from other skills.&lt;/p&gt;
+
+
+&lt;h3&gt;Skilled and virtuous action&lt;/h3&gt;
+
+
+&lt;p&gt;In this she is trying to further distinguish virtues from skills.&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Some practical skills do seem to involve mere routine - this is true of daily activities such as getting to work which we are sometimes prepared to call skills, though at other times we call them routines or rituals. (...) We find the important similarity of virtue to skill in skills where two things are united: the &lt;em&gt;need to learn&lt;/em&gt; and the &lt;em&gt;drive to aspire&lt;/em&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;So the "skill analogy" is highlighting the idea that virtues are things where excellence must be sought and is something we should desire in and of itself.&lt;/p&gt;
+
+
+&lt;p&gt;She goes on to say (some pages later after a bunch of detailed intermediate discussion)&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Virtue can most illuminatingly be seen as like this kind of skill; it shares the intellectual structure of a skill where we find not only the need to learn but the drive to aspire, and hence the need to `give an account, the need for articulate conveying of reasons why what is done is done. The learner in virtue, like the learner in a practical skill, needs to understand what she is doing, to achieve the ability to do it for herself, and to do it in a way that improves as she meets challenges, rather than coming out with predictable repetition. This conies about when the virtue is conveyed by the giving and receiving of reasons, in contrast with the non-rational picking up of a knack.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;This view does rather explain why she thinks people with Downs syndrome can't be virtuous, but suggests that perhaps one way of thinking about virtue ethics is that it's not actually intended to be universally normative. That is, it's entirely possible to be fully ethical without being virtuous.
+You can imagine (although I suspect no such person exists) someone who always unthinkingly does the right thing out of a natural pleasantness of character, and never strives for it.
+Such a person is ethical but not virtuous.&lt;/p&gt;
+
+
+&lt;p&gt;In this light, I think perhaps a good way to read Annas (and ethicists in general?) is as a sort of "Ethics for Nerds" - if you don't automatically know the right thing to do, how would you go about learning to do so?&lt;/p&gt;
+
+
+&lt;p&gt;Perhaps the way to think of the virtues is as a sufficient but not necessary set of conditions for being a good person.&lt;/p&gt;
+
+
+&lt;h3&gt;The Scope of Virtue&lt;/h3&gt;
+
+
+&lt;p&gt;In this she starts by defending virtue against the critique of relativism, but I am in fact completely comfortable with relativism and think her defence is probably wrong.&lt;/p&gt;
+
+
+&lt;p&gt;In it she mentions &lt;a href="https://www.virtuesproject.com/"&gt;The Virtues Project&lt;/a&gt; as an example of an attempt at a cross-cultural list of the virtues. This sounds interesting and I may spend more time with it, but also I did a card pick on it and it lead me to the &lt;a href="https://virtuesdev.com/vpicks/Prayerfulness.png"&gt;Prayerfulness&lt;/a&gt; virtue at which point I said "Oh fuck you" out loud and closed the site for now.&lt;/p&gt;
+
+
+&lt;p&gt;The chapter does contain the following interesting passage:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;As Aristotle says in the passage I have quoted more than once, everyone seeks the good, not just what their parents did. Becoming virtuous starts the process by making it clear that the virtuous life cannot just be the life your parents lead. Anyone can come to realize this, and anyone can continue the progressive enlargement of understanding.&lt;/p&gt;
+&lt;p&gt;Why then do so few do so? This is not a problem particular to thinking in terms of virtue, since any ethical theory has to face the fact that most people do not live by it. The answer given by the present account is that while we are all capable of aspiring to become virtuous, most of us resist being pulled away from our familiar original contexts by becoming progressively more virtuous. Rather than deal with the fact that our family is dishonest, our country jingoistic, the values we have learnt inadequate, we make rationalizations, or simply refuse to face facts. We are unwilling to criticize the contexts and institutions within which we learned the virtues, because we are unwilling to be pulled away from those contexts in the way that would be required. The community of the family, or society, is a visible and tangible one, providing real comfort and support. The community of the honest (the brave, the open-minded, and so on) is an invisible one composed of all those who, past, present, and future, act, reason, and feel in certain ways; accessible only through thought and reflection, it offers less help in getting through the day.' If we think of community as a form of solidarity, pre-existing solidarities can make it hard to be detached from them.' To identify with the community of the just, rather than with your own fellow citizens, is often hard, for it requires detachment from the existing support you get from relations with your fellow-citizens. What requires explanation, then, is not so much the slackness of most people in developing the virtues, but the strength of the few in achieving them.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;Strong vibes of what I've written about in the past in &lt;a href="https://notebook.drmaciver.com/posts/2020-02-29-10:30.html"&gt;The social obligation to be bad at things&lt;/a&gt; and &lt;a href="https://notebook.drmaciver.com/posts/2020-05-31-09:20.html"&gt;Norms of Excellence&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;I think what she is essentially arguing in this chapter is that culture can &lt;em&gt;limit&lt;/em&gt; our virtue, but that there is a single overarching but imperfectly expressed universal notion of virtue, which striving to be vituous allows us to move our communities towards.&lt;/p&gt;
+
+
+&lt;p&gt;To which I say: Well, maybe.&lt;/p&gt;
+
+
+&lt;h3&gt;Virtue and Enjoyment&lt;/h3&gt;
+
+
+&lt;p&gt;In this chapter she is arguing that one of the key features of virtue is that the virtuous like being virtuous. They don't experience it as a chore, but as a thing that is worthwhile in and of itself.&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;However, one aspect of the virtuous person's moral psychology, perhaps surprisingly, points us to another important analogy between skill and virtue. Aristotle famously comments that the virtuous person is distinguished by finding what he does pleasant: `We must take as an indication of a person's states the pleasure or pain consequent on what he does, because the person who abstains from bodily pleasures and finds his enjoyment in doing just this is temperate, while the person who finds doing it oppressive is intemperate; and the person who enjoys facing up to danger, or at least does not find it painful to do so, is courageous, while he who does find it painful is a coward. The temperance example is not hard to understand. Someone resolving to give up meat, for example, will at first have to fight against temptation and will find the forbidden food attractive; but as they develop the relevant disposition to be vegetarian they cease to find it tempting. Eventually they take more pleasure in not eating what they now reject than they did when they ate it; the vegetarian finds it more enjoyable to be a vegetarian than she did being someone who enjoyed eating meat.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;Honestly this sounds to me like the sort of thing you tell people even if it's false.
+My personal experience of being vegetarian (which may not be representative of "true virtue" in that I did eventually decide not to be) is that while I found the idea of eating meat actively unappealing, I never &lt;em&gt;enjoyed&lt;/em&gt; not eating meat. I enjoyed what I was eating, and I didn't want to eat meat, but there was never any sense that vegetarianism in and of itself was enjoyable, it was just a thing, and I expect this is normal. I think this is just a weak example though - I can certainly see the argument that some exercises of virtue are enjoyable, I just don't think vegetarianism works like this.&lt;/p&gt;
+
+
+&lt;p&gt;Much of the rest of the chapter is connecting up virtue with the idea of &lt;em&gt;flow&lt;/em&gt;, and that virtue is enjoyable because it creates flow. This seems too cute to me, but I think the core idea that virtue is enjoyable because it is a skilled practice and using your skills in worthwhile ways is enjoyable is reasonably solid.&lt;/p&gt;
+
+
+&lt;h3&gt;Virtues and the unity of the virtue&lt;/h3&gt;
+
+
+&lt;p&gt;I'm running out of time and feel like &lt;a href="https://notebook.drmaciver.com/posts/2021-10-06-00:02.html"&gt;I covered this adequately yesterday&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Can we say anything more specific about the distinctive kind of admiration called forth by virtue?&lt;/p&gt;
+&lt;p&gt;The first answer is that in the case of the virtues our admiration is for the person's character: possession of virtues indicates something about what the person is like, whereas possession of traits such as tidiness or wittiness indicates only traits that the person has. Take someone who is characteristically tidy, who, noticing that his car has got messy, cleans it out. What does this tell us about his character? Very little. Let us suppose that the same person is characteristically brave, and that in the course of the subsequent drive he stops and courageously rescues passengers trapped in a crashed and burning car. This action, unlike the previous one, does indicate what kind of person he is.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;Honestly I think tidiness tells you a lot about the sort of person someone is, and could legitimately get behind the idea that cleanliness is a virtue.&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;We might think at this point that the contrast here is not between virtues and other traits, but between virtues and vices on the one hand and other traits on the other. For surely, we think, vices indicate character as much as virtues do? This is true up to a point, and shows that virtues do more than merely indicate character. Suppose another person who sees the burning car, but pretends not to, and drives on. This is a cowardly act, and if it is characteristic of the person it does tell us something about him as a person, namely that he is a coward. But there is an important difference here, which can be brought out by the claim that the brave person is, by virtue of being brave, expressing a commitment to goodness, a commitment to positive value. Although this is a very general point, it is intuitive. The brave person's action reveals that he is committed to something valuable that is centrally important to him. &lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;This is, I think, where the idea of unity of the virtues comes from: The central feature of virtue is "commitment to goodness".&lt;/p&gt;
+
+
+&lt;h3&gt;In Conclusion&lt;/h3&gt;
+
+
+&lt;p&gt;I ran out of time at this point, without having finished covering the last few chapters, and I think this demonstrates the weakness of the format - Intelligent Virtue isn't even a very long book!&lt;/p&gt;
+
+
+&lt;p&gt;I think I'm going to rebrand these from "speedruns" to "studies", because it's clear that I can't do justice to a book in an hour (this is of course not surprising, although bear in mind these are also books I've already read), and I may well do a further study on the last couple of chapters of this book because they seem quite important.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2021-10-06-16:21.html" rel="alternate"/>
   </entry>
 </feed>
