@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2021-10-11T23:41:08+01:00</updated>
+  <updated>2021-10-14T12:00:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,245 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2021-10-02-12:17.html</id>
-    <title>Book speedrun: On Humour by Simon Critchley</title>
-    <updated>2021-10-02T14:52:06+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Book speedrun: On Humour by Simon Critchley&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2021-10-02&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Lucy Keer has a thing she does called &lt;a href="https://drossbucket.com/2021/09/17/research-speedruns/"&gt;Research Speedruns&lt;/a&gt; where she sets a timer for an hour and learns everything she can about a topic during that time, writing as she goes. I've liked the idea for a while but rarely have this sort of problem where there's a topic I want to speedrun finding out about, but I do have a lot of books that I'd like to delve more deeply into (usually ones I've done a first pass on) and an intention to write more, so I thought I'd try a similar experiment of doing book speedruns.&lt;/p&gt;
-
-
-&lt;p&gt;The basic plan is to just write about the book for an hour in whatever mode takes me. A lot of it will be about random prompts from the book, some of it will be non-random thoughts on the book. It won't necessarily hang together in any especially coherent way. In particular it's not a book review, it's just thoughts inspired by the book.&lt;/p&gt;
-
-
-&lt;p&gt;The book I'll be speedrunning to start with is "On Humour" by Simon Critchely. It's a book about philosophy of humour that I found because Critchley was mentioned in Carr and Greeve's book about humour "The Naked Jape". It's short and I've read it in full, but at the time I didn't feel like I got a great deal out of it. It was locally interesting, but I didn't feel like I really changed my thinking based on it at all, so I thought it would be good to see if a speedrun could help with that.&lt;/p&gt;
-
-
-&lt;h3&gt;Structured Fun&lt;/h3&gt;
-
-
-&lt;p&gt;From page 12:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Humour is being employed as a management tool by consultants - imagine, if you will, a company called 'Humour Solutions International' - who endeavour to show how it can produce greater cohesion amongst the workforce and thereby increase efficiency and productivity.&lt;/p&gt;
-&lt;p&gt;(...)&lt;/p&gt;
-&lt;p&gt;...it is difficult not to feel a little cynical about these endeavours, and the question that one wants to pose to the idea of 'structured fun' is: who is structure the fun and for what end?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;I must admit I've never run into this, and I'm very thankful for that because it probably wouldn't have gone well for me.&lt;/p&gt;
-
-
-&lt;p&gt;I have a couple objections to this sort of structured fun use of humour. I guess the morally strongest of them is the one that Critchley goes on to mention, which is that it's a tool of control by management, and trying to impose humour on people is interfering with their private lives.&lt;/p&gt;
-
-
-&lt;p&gt;It also reminds me of the whole problem of corporate mindfulness. One of the virtues of humour is that it helps cope with a bad situation, but when that virtue is being touted by people responsible for that bad situation, that seems intrinsically problematic.&lt;/p&gt;
-
-
-&lt;p&gt;I must admit though my true objection is that I bet such corporate workshops are painfully unfunny.
-I have a real aversion to people trying too hard to be funny and falling short.&lt;/p&gt;
-
-
-&lt;p&gt;I am in fact interested in humour partly for its benefits to organisations, and as a communal practice among workers, but I can't help but think that any attempt to impose that from above is likely to do more harm than good.&lt;/p&gt;
-
-
-&lt;h3&gt;Humour's us&lt;/h3&gt;
-
-
-&lt;p&gt;From page 73:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;So, humour is what returns us to our locale, to a specific &lt;em&gt;ethos&lt;/em&gt; which is often identified with a particular people possessing a shared set of customs and characteristics. A sense of humour is often what is felt to be best shared with people who are from the same place as us, and it is that aspect of social life which is perhaps the most difficult to explain to people from somewhere else.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;In context this is talking about literal places - countries, villages, etc. But I do think this is more general - in "Jokes: Philosophical Reflections on Joking Matters", Ted Cohen talks about how contextual humour is - there is always an audience of people for whom the joke is intended - and talks about &lt;em&gt;hermetic jokes&lt;/em&gt; which are those that you have to be part of a specific profession to get. I think humour can return us to a parochial "place" within their profession as well as their country. There are very much the sorts of jokes you tell as engineers, etc.&lt;/p&gt;
-
-
-&lt;p&gt;A shared sense of humour with someone is how you know they are "one of us", and helps define what that "us" is.&lt;/p&gt;
-
-
-&lt;p&gt;This ties back in to the &lt;a href="https://notebook.drmaciver.com/posts/2021-07-04-12:52.html"&gt;humour test for expertise&lt;/a&gt;, but in a very broad sense of expertise. Getting the national sense of humour is often how you know you're a native, fluent in the local culture.&lt;/p&gt;
-
-
-&lt;h3&gt;Humour's them&lt;/h3&gt;
-
-
-&lt;p&gt;From page 76:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;jokes can be read in terms of what or who a particular society is subordinating, scapegoating, or denigrating.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;The fact of the matter is that a lot of humour is about people you look down on. In context, Critchley is talking about anti-semitism and other racist jokes, and what they say about our subconscious feelings that we are repressing (though of course they can equally say things about the conscious things that we are expressing).&lt;/p&gt;
-
-
-&lt;p&gt;I can't help but tie this back to a bit from the structured fun section. From page 14:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Anyone who has worked in a factory or office knows how the most scurrilous and usually obscene stories, songs and cartoons about the management are the very bread and butter of survival. Humour might well be a management tool but it is also a tool against the management.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;This is of course very different from the case of racist jokes, in that it is humour against those with power rather than those who are marginalised (punching up vs punching down, if you must).&lt;/p&gt;
-
-
-&lt;p&gt;Nevertheless, the jokes do have one common function: They are very clearly delineating the line of us vs them. If "us" is the group of people we laugh &lt;em&gt;with&lt;/em&gt;, then "them" are the group of people we laugh &lt;em&gt;about&lt;/em&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;Whether this us and them division is bad is hard to comment on in generality - it seems like it's clearly sometimes bad and clearly sometimes a necessary coping mechanism.
-e.g. you can tell how politics is going by how Soviet the jokes get.&lt;/p&gt;
-
-
-&lt;p&gt;I can't find the original source of this joke but it's been doing the rounds recently:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Boris Johnson visited a village in Cornwall and asked the inhabitants what the government could do for them.&lt;/p&gt;
-&lt;p&gt;"We have two big needs" said the village spokesman. "The first is we have a health centre but no doctor."&lt;/p&gt;
-&lt;p&gt;Boris whipped out his phone, talked for a while then said, "OK, =that's sorted, you'll have a doctor here tomorrow. Now, what was your other need?"&lt;/p&gt;
-&lt;p&gt;"Well, we have no mobile reception at all in our village."&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;Yeah, so that's how our politics is going.&lt;/p&gt;
-
-
-&lt;p&gt;While I have you here, here's a joke from page 21 of "Forbidden Laughter (Soviet Underground Jokes)".&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;An old woman ran with all her might to catch the jam-packed city bus. "Thank God!" she sighed, having made it.&lt;/p&gt;
-&lt;p&gt;A citizen sitting next to her said: "You expressed that improperly, auntie. You should know that there is no God. You should have said 'Thank Stalin'."
-"You're right, son, you're right," said the old woman in agreement. "Excuse me, I'm a little behind the times."&lt;/p&gt;
-&lt;p&gt;But after thinking awhile, the old woman asked:&lt;/p&gt;
-&lt;p&gt;"God forbid this should happen, but what am I supposed to say if Stalin should die?"&lt;/p&gt;
-&lt;p&gt;"In that case, perhaps you may say 'Thank God'."&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;h3&gt;Well you've got to laugh about it&lt;/h3&gt;
-
-
-&lt;p&gt;Page 101 has a section called "Humour as an antidepressant". His approach to this is very Freudian and I'm not sure I fully follow his argument, but on page 102 he declares:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;I would argue that humour recalls to us the modesty and limitedness of the human condition, a limitedness that calls not only for tragic-heroic affirmation but comic &lt;em&gt;acknowledgement&lt;/em&gt;, not Promethean authencity but a laughable inauthenticity."&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;I recently finished reading John Marmysz's "Laughing at Nothing: Humour as a response to nihilism", which argues that nihilism can be viewed as a conjunction of three things:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Humanity is alienated from perfection (true meaning, perfect goodness, etc)&lt;/li&gt;
-&lt;li&gt;This is other than it should be.&lt;/li&gt;
-&lt;li&gt;This situation cannot be remedied.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;The book was a (ultimately somewhat unconvincing, though I enjoyed it anyway) argument that instead of, as nihilists traditionally do, regarding that combination as tragic, we can regard it as comedic, laughing at the incongruity.&lt;/p&gt;
-
-
-&lt;p&gt;Critchley's argument that humour acts as an antidepressant by reminding us of "the modesty and limitedness of the human condition" feels similar. We take the tragic and attempt to find it funny, perhaps by putting it into perspective.&lt;/p&gt;
-
-
-&lt;p&gt;This seems to tie in to the laughing at the people with power over you. That power exists and is other than it should be, but we can find it funny as well as oppressive.&lt;/p&gt;
-
-
-&lt;p&gt;At the end of the book, on page 111, Critchley recounts an extract from a French city that had been bombed in world war 2 and the concludes the book:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;For me, it is this smile - deriding the having and the not having, the pleasure and the pain, the sublimiity and suffering of the human situation - that is the essence of humour. This is the &lt;em&gt;risus purus&lt;/em&gt;, the highest laugh, the laugh that laughs at that which is unhappy, the mirthless laugh of the epigraph of this book. Yet, this smile does not bring unhappiness, but rather elevation and liberation, the lucidity of consolation. This is why, melancholy animals that we are, human beings are also the most cheerful. We smile and find ourselves ridiclous. Our wretchedness is our greatness.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;The epigraph in question is the following:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;The bitter, the hollow and - haw! haw! - the mirthless. The bitter laugh laughs at that which is not good, it is the ethical laugh. The holow laugh laughs at that which is not true, it is the intellectual laugh. Not good! Not true! Well, well. But the mirthless laugh is the dianoetic laugh, down the snout - haw! - so. It is the laugh of laughs, the &lt;em&gt;risusu purus&lt;/em&gt;, the laugh laughing at the laugh, the beholding, the saluting of the highest joke, in a word the laugh that laughs - silence please - at that which is unhappy.&lt;/p&gt;
-&lt;p&gt;Samuel Becket, &lt;strong&gt;Watt&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;Hey Critchley, what's yellow and equivalent to the axiom of choice? Zorn's Lemon.&lt;/p&gt;
-
-
-&lt;p&gt;Try finding some misery in that joke, gloomy guts.&lt;/p&gt;
-
-
-&lt;p&gt;As you can tell, I'm starting to lose a bit of patience with Critchley. If humour is, as he claims, an antidepressant, why is his book on humour coming across so morbid?&lt;/p&gt;
-
-
-&lt;p&gt;There is, I think, a thing that happens with a lot of philosophy of humour where you're supposed to make what is ultimately a light hearted subject very serious, and the easiest way to do that seems to be to ground it in human misery. Humour is cruel, humour is exclusionary, humour is a coping mechanism for the intrinsic misery of the human condition, etc.&lt;/p&gt;
-
-
-&lt;p&gt;All of this is true, but I do think it misses one of the most important features of humour, which is that humour is &lt;em&gt;funny&lt;/em&gt;, and in being funny is fun.&lt;/p&gt;
-
-
-&lt;p&gt;I think this is me being a little unfair to Critchley and is in part a consequence of the thread I pulled on with these samples so far, but I do think there is a significant undercurrent of this in the book, and the epigraph and conclusion very much highlight that.&lt;/p&gt;
-
-
-&lt;h3&gt;Only as good as its jokes&lt;/h3&gt;
-
-
-&lt;p&gt;From page 66:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Any study of humour, again like anthropology, requires fieldwork and detailed contextualisation. Finally, it is only as good as its examples.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;As I mentioned above, I recently finished reading "The Naked Jape". It's not an amazing book, but it's a lot of fun to read, and one of its virtues is that it has a joke at the bottom of every page.&lt;/p&gt;
-
-
-&lt;p&gt;I'm particularly fond of the following:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Two nuns are driving through Transylvania when Count Dracula suddenly jumps on their car. "Quick, show him your cross" says one of the nuns. The other nun shouts, "Hey, Dracula! Fuck off!"&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;(&lt;a href="https://twitter.com/rikkhill/status/1432051001264156674"&gt;Previously introduced to me by Rikk Hill&lt;/a&gt;)&lt;/p&gt;
-
-
-&lt;p&gt;And I think the difference between this and On Humour is telling. A study of humour might only be as good as its examples, but a book of philosophy of humour is only as good as its jokes, and honestly the jokes in On Humour aren't very good. There are a few that raised a smile (The chapter on humour of the body is entitled "Post-Colonal Theory", and I must admit that's a good one), but the book takes itself more seriously than I think is warranted, and some better jokes might have helped offset that.&lt;/p&gt;
-
-
-&lt;h3&gt;In Conclusion&lt;/h3&gt;
-
-
-&lt;p&gt;I'm sortof surprised by how this went, as I thought I liked the book, but I apparently have some quite negative feelings about it that I hadn't noticed before.&lt;/p&gt;
-
-
-&lt;p&gt;I liked doing a speedrun based on it, but I don't really feel like it gave the book a fair showing. Its was more like pulling on an interesting thread of the book, and that thread was certainly there in the book, but I don't think it was the whole of the book.&lt;/p&gt;
-
-
-&lt;p&gt;It might be worth returning to it later and doing another run through with a clear set of eyes and seeing if I get a different thread, but I will probably speedrun some other books first.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2021-10-02-12:17.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-10-03-08:59.html</id>
     <title>Notes on moral disorder</title>
@@ -1035,7 +796,7 @@ My personal experience of being vegetarian (which may not be representative of "
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-10-08-01:23.html</id>
     <title>Scurrying</title>
-    <updated>2021-10-08T02:25:43+01:00</updated>
+    <updated>2021-10-11T23:42:25+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Scurrying&lt;/p&gt;
@@ -1613,5 +1374,76 @@ and that I disagree with them less than I think I do, but if so they have very m
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2021-10-11-16:42.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2021-10-14-12:00.html</id>
+    <title>Learning how to tell a joke</title>
+    <updated>2021-10-14T12:00:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Learning how to tell a joke&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2021-10-14&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;From page 10 of Ted Cohen's "Jokes":&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Joking is a "two-stage" art, like music and theater. Someone must make up the joke, and someone must tell it, and these two jokers need not be the same. Those good at making up jokes are not the same as those good at telling them. Telling a joke well may require specific abilities, like being able to affect an Irish dialect, or it may require a subtle knack, like a sense of timing.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;He goes on to say that this presentation is particularly important because some jokes don't translate well onto the page, and illustrates this with the following joke that you are legally required to include in all books about philosophy of comedy or they take your license away:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Q: According to Freud, what comes between fear and sex?&lt;/p&gt;
+&lt;p&gt;A: Fünf.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;Cohen is wrong here, this joke translates to the page just fine, because you can just read it out loud.&lt;/p&gt;
+
+
+&lt;p&gt;This routine on the other hand is an example of a joke that &lt;em&gt;actually&lt;/em&gt; doesn't translate to the page:&lt;/p&gt;
+
+
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/XkCBhKs4faI" title="YouTube video player" width="560"&gt;&lt;/iframe&gt;
+
+
+&lt;p&gt;This both illustrates the strengths and the flaws of the two-stage art concept.&lt;/p&gt;
+
+
+&lt;p&gt;From a writing point of view, the joke isn't very good, right? It's perfectly well written, there's nothing wrong with it, but as written it's not funny, because the humour is entirely in the presentation.
+This is why it demonstrates the strength of the two stage model: it's a very good illustration of the verbal skills of humour.&lt;/p&gt;
+
+
+&lt;p&gt;But it also demonstrates that the idea is something of a lie, in that you can't actually separate this into two stages. It's not just that the joke doesn't work written down, it's that there is no joke without the performance of it here.&lt;/p&gt;
+
+
+&lt;p&gt;This is, perhaps, an artefact of the fact that comedy isn't really about telling jokes, it's about performing routines, but I think this distinction doesn't work, and you experience the same problems with hypercontextual jokes that cannot be extracted from their situation.&lt;/p&gt;
+
+
+&lt;p&gt;What instead is going on, I think, is that for any given joke there is a &lt;em&gt;skill of telling that joke&lt;/em&gt;, and some jokes you can teach that skill in writing better than others.&lt;/p&gt;
+
+
+&lt;p&gt;Another interesting example of this sort of skill is poetry reading. Some poems work written, but this one I've linked to before in &lt;a href="https://notebook.drmaciver.com/posts/2021-07-06-13:53.html"&gt;Start from amazing&lt;/a&gt; isn't one of them:&lt;/p&gt;
+
+
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/tFTASR8BMps" title="YouTube video player" width="560"&gt;&lt;/iframe&gt;
+
+
+&lt;p&gt;The poem is good, but the presentation of it is &lt;em&gt;very&lt;/em&gt; good, and the poem rests on the vocal skill of its delivery.&lt;/p&gt;
+
+
+&lt;p&gt;Back in &lt;a href="https://notebook.drmaciver.com/posts/2021-07-28-04:40.html"&gt;You can't write life down&lt;/a&gt; I talked about the difficulty in transcribing oral stories, and this feels like another aspect of that. At the time I talked about how taking a Raven story outside of its cultural context would lose essential features of the culture that created it, leaving it in a diminished and abstracted form, but actually I think the problem is deeper than that: You can write down a Raven story, but I'm not sure you can write down how to &lt;em&gt;tell&lt;/em&gt; a Raven story.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2021-10-14-12:00.html" rel="alternate"/>
   </entry>
 </feed>
