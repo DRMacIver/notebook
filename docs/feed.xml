@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2021-10-14T12:00:00+01:00</updated>
+  <updated>2021-10-19T10:53:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,87 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2021-10-03-08:59.html</id>
-    <title>Notes on moral disorder</title>
-    <updated>2021-10-03T10:04:42+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Notes on moral disorder&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2021-10-03&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;There's a problem I keep trying to write about and failing to write a coherent longer piece on,
-so here's some rough notes on it.&lt;/p&gt;
-
-
-&lt;p&gt;Many people have emotional problems that are centrally concerned with &lt;em&gt;moral emotions&lt;/em&gt;. Guilt, shame, pride (in the good sense of pride).
-Emotions that are centrally concerned with the question of whether you are acting or living morally.&lt;/p&gt;
-
-
-&lt;p&gt;The central example of moral disorder is this: Your life is made substantially worse, on an ongoing basis, by feelings of guilt and shame, stemming from a fear that your behaviour is bad or that you are a bad person.&lt;/p&gt;
-
-
-&lt;p&gt;Something that &lt;em&gt;might&lt;/em&gt; count as moral disorder is &lt;a href="https://drmaciver.substack.com/p/burnout-as-acedia"&gt;Acedia-based burnout&lt;/a&gt;, burnout from living out of line with your values. Not necessarily guilt and shame over your actions, but a lack of pride in your actions, &lt;/p&gt;
-
-
-&lt;p&gt;Non-examples of moral disorder include:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;Someone who has done a thing they feel guilty about, makes restitution, and stops feeling guilty about it (this is the emotion of guilt working as intended).&lt;/li&gt;
-&lt;li&gt;Someone who is a genuinely bad person but doesn't feel guilty about or ashamed of that (this is still a problem, but it's not what I would think of as moral disorder)&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;If you're experiencing moral disorder people will probably tell you that genuinely bad people don't feel this way, your therapist might tell you that it's an attachment problem, or help you analyse where these feelings come from, and doubtless you'll find that they're part of some lesson you learned incorrectly or from the wrong people or etc.&lt;/p&gt;
-
-
-&lt;p&gt;But very few people helping you with this problem will consider what I think is a crucial question here: What if the reason you feel like a bad person is that you're a bad person?&lt;/p&gt;
-
-
-&lt;p&gt;It is important to be able to ask this, even if the answer is no, because you can't trust the answer "no" unless the answer "yes" is allowed.
-If you are not able to acknowledge moral failings if you have them, you will keep worrying about the possibility because you can't just shove feelings of guilt away like that.&lt;/p&gt;
-
-
-&lt;p&gt;Also the answer is probably actually yes, sorry.&lt;/p&gt;
-
-
-&lt;p&gt;I think the most common reason for moral disorder actually &lt;em&gt;is&lt;/em&gt; something like "being a bad person".
-Moral disorder will often not shift in response to therapeutic means, because your emotional responses are broadly correct: Your actions are ones you consider morally bad,
-and you are experiencing the correct emotional response to that,
-so attempting to feel fine by persuading yourself that your actions are fine won't work because you're basically just gaslighting yourself.&lt;/p&gt;
-
-
-&lt;p&gt;Instead I think moral disorder typically comes from one of the following:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;An incorrect moral framework. A moral framework that declares necessary actions to be bad, or makes no allowance for human limitations, will leave you always feeling guilty because you cannot act in a way that you judge to be moral.&lt;/li&gt;
-&lt;li&gt;An incorrect understanding of the relationship between bad action and being a bad person - there is no option for doing good in the world that does not sometimes have you doing harm, and the appropriate response to a harm is to feel guilty and, if possible, make restitution. Importantly, the amount of guilt should be proportionate to the amount of badness. If you step on someone's toe you should say "oops, sorry" and then mostly forget about it. You don't need to go full "Oh no I am the worst I am a worm can you ever forgive me?"&lt;/li&gt;
-&lt;li&gt;Unhealthy emotional behaviours where you cannot deal with any amount of guilt, causing you to push it away, causing the level of guilt to rise until you can't ignore it, because that's how emotions work.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;(In case you're wondering which of these is me: Yes, all of them at one point or another)&lt;/p&gt;
-
-
-&lt;p&gt;There are definitely more problems than this, e.g. I haven't currently got a good theory for where moral disorder that is an absence of positive moral emotions come from, or what to do about it.&lt;/p&gt;
-
-
-&lt;p&gt;The solution, I think, is some combination of therapy and ethical philosophy (especially virtue ethics, which is the good one for this, and especially not utilitarianism, which is a central example of (1). Yes I've heard your argument about why if you do utilitarianism hard enough it's good actually because it becomes one of the moral systems that actually work. I'd prefer to &lt;em&gt;start&lt;/em&gt; with one that actually works without having to do five dimensional chess to get to the right answer though) - working with both right action and the emotions that go along with it.&lt;/p&gt;
-
-
-&lt;p&gt;The details? Ah, well, I'm still working on that.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2021-10-03-08:59.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-10-04-07:03.html</id>
     <title>What does a good person look like?</title>
@@ -1378,7 +1297,7 @@ and that I disagree with them less than I think I do, but if so they have very m
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-10-14-12:00.html</id>
     <title>Learning how to tell a joke</title>
-    <updated>2021-10-14T12:00:00+01:00</updated>
+    <updated>2021-10-14T16:23:07+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Learning how to tell a joke&lt;/p&gt;
@@ -1445,5 +1364,46 @@ This is why it demonstrates the strength of the two stage model: it's a very goo
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2021-10-14-12:00.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2021-10-19-10:53.html</id>
+    <title>A simple model of depression and "depressive realism"</title>
+    <updated>2021-10-19T10:53:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;A simple model of depression and "depressive realism"&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2021-10-19&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I was talking to &lt;a href="https://twitter.com/fvathynevgl/"&gt;Vathy&lt;/a&gt; about depressive realism,
+and when I expressed skepticism about its existence they asked me to say more. I did,
+and it seemed an unusual enough perspective that I thought I'd quickly write it up in a blog post.&lt;/p&gt;
+
+
+&lt;p&gt;So here's what I think, roughly. This is a simplified version of what I actually think (because what I actually think is a giant tangle of stuff I haven't fully figured out), and what I actually think is probably no more than roughly right, but I still think this is a good model that is helpful to bear in mind.&lt;/p&gt;
+
+
+&lt;p&gt;Basically it's this: Humans have all sorts of biases in their thinking. No matter what anyone tells you, this isn't bad. Biases are good, as long as you're expecting to make mistakes (and, I hate to break it to you, humans make a lot of mistakes and are going to keep doing that), because &lt;em&gt;not all mistakes are created equal&lt;/em&gt;. If you're going to make mistakes, you want to bias in the direction of mistakes that are safe to make.&lt;/p&gt;
+
+
+&lt;p&gt;(See e.g. &lt;a href="https://www.drmaciver.com/2020/02/theres-no-single-error-rate/"&gt;There's no single error rate&lt;/a&gt;).&lt;/p&gt;
+
+
+&lt;p&gt;One of the ways that depression differs from healthy cognition is that it has a much stronger bias in the direction of inaction than healthy cognition does. If you see a problem, you can decide to do something about it or not. A non-depressed person is much more likely than a depressed person to choose inaction,
+and as a result is more likely to believe things that justify that inaction (this latter feature isn't specific to depression - a non-depressed person who chooses action is more likely to believe things that justify that action. Motivated reasoning is a whole big thing).&lt;/p&gt;
+
+
+&lt;p&gt;As a result, a depressed person is more likely to get the right answer in situations where the right answer is inaction, and less likely to get the right answer in situations where the right answer is action.&lt;/p&gt;
+
+
+&lt;p&gt;In situations where the right answer is typically inaction (which can happen if you're in a dangerous environment which you have little control over, certainly, and as a matter of numbers this is probably more likely for depressed people) this will tend to mean that depressed people are more likely to be right than people who are neutral or biased towards action, but it's not that the depressed person is more realistic than the non-depressed person, it's that their biases are currently well adapted to their situation, and if the situation changes they would retain those biases and be less well adapted. I'm no more inclined to call this realism than I am to call a stopped clock accurate because it happens to be stopped at the current time.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2021-10-19-10:53.html" rel="alternate"/>
   </entry>
 </feed>
