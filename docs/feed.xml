@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2021-10-19T12:46:50+01:00</updated>
+  <updated>2021-10-19T13:18:23+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1368,7 +1368,7 @@ This is why it demonstrates the strength of the two stage model: it's a very goo
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-10-19-10:53.html</id>
     <title>A simple model of depression and "depressive realism"</title>
-    <updated>2021-10-19T12:46:50+01:00</updated>
+    <updated>2021-10-19T13:18:23+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;A simple model of depression and "depressive realism"&lt;/p&gt;
@@ -1394,7 +1394,7 @@ and it seemed an unusual enough perspective that I thought I'd quickly write it 
 &lt;p&gt;(See e.g. &lt;a href="https://www.drmaciver.com/2020/02/theres-no-single-error-rate/"&gt;There's no single error rate&lt;/a&gt;).&lt;/p&gt;
 
 
-&lt;p&gt;One of the ways that depression differs from healthy cognition is that it has a much stronger bias in the direction of inaction than healthy cognition does. If you see a problem, you can decide to do something about it or not. A non-depressed person is much more likely than a depressed person to choose inaction,
+&lt;p&gt;One of the ways that depression differs from healthy cognition is that it has a much stronger bias in the direction of inaction than healthy cognition does. If you see a problem, you can decide to do something about it or not. A depressed person is much more likely than a depressed person to choose inaction,
 and as a result is more likely to believe things that justify that inaction (this latter feature isn't specific to depression - a non-depressed person who chooses action is more likely to believe things that justify that action. Motivated reasoning is a whole big thing).&lt;/p&gt;
 
 
