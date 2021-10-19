@@ -90,3 +90,34 @@ At the time I was somewhat dismissive of the bits of it that were the obligatory
 In particular the question I find myself wondering about is whether one can really aspire in this sense.
 Not so much because I don't think people can change their values through rational action,
 but more because I think they can't not, and I have questions about the approach to it that she describes.
+
+# How I would spend a billion dollars
+
+(on the Collatz conjecture)
+
+[Yesterday I concluded that you probably couldn't just throw money at the Collatz conjecture](https://notebook.drmaciver.com/posts/2021-07-30-09:52.html). I still think this is true, in the sense that there probably isn't anything resembling a reasonable amount of money you could throw at the problem to guarantee solving it within a decade.
+
+All that being said, I feel like it is reasonably clear that you *can* throw money at the Collatz conjecture, in the sense that there is going to be a way of spending a billion dollars that maximises progress towards solving the Collatz conjecture.
+I thought I'd sketch out some thoughts on what that looked like.
+
+First off: Part of what it looks like is giving up on the decade timeline. It might be solvable in that timeline, it might not, it's very hard to say in advance ("If we knew what we were doing, we wouldn't call it research"), but based on the current state of things it at best seems *unlikely* that it would.
+
+I'm also going to be a bit sloppy about the billion dollars because I can't be bothered with such petty things as actual numbers when writing about mathematics, and more importantly the first thing to do with a billion dollars is to hire some people who are good at investing it, admin, etc. so the actual numbers are more flexible anyway.
+
+What I have in mind should be doable with about a billion dollars, give or take, but at some point it runs out of money (some of it gets left in funds for paying out prizes and such, but you need to scale down). It could be continued indefinitely at the annual budget of  $100 million / year implied by a billion dollars over a decade, or it can be gracefully wound down having left the field of research better for it.
+
+## High Level Plan
+
+The plan rests on roughly three pillars:
+
+1. Make it *easy* for people to work on the Collatz conjecture.
+2. Provide good incentives for doing so.
+3. Support a small core of people who are well placed to take advantage of any progress in the field.
+
+Very little of this plan is specific to the Collatz conjecture, except in the sense that I expect the Collatz conjecture to be too hard to directly tackle by throwing money at the problem more directly. If it were something like, say, the twin primes conjecture, I'd probably just fund a more normal research institute of people directly working on the problem. With the Collatz conjecture you potentially need to to lay foundations for whole new fields of mathematics.
+
+## The Collatz Institute
+
+This does of course require a research institute of people directly working on the problem, but the expectation isn't necessarily that the solution comes out of that institute, more that it creates the conditions in which such a solution can be created.
+
+
