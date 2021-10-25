@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2021-10-19T13:19:53+01:00</updated>
+  <updated>2021-10-25T17:53:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,53 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2021-10-04-07:03.html</id>
-    <title>What does a good person look like?</title>
-    <updated>2021-10-05T21:45:03+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;What does a good person look like?&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2021-10-04&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;From Intelligent Virtue by Julia Annas, page 106:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;"A philosopher", says "Hume, "might select this character as a model of perfect virtue". It is always hard to be sure that we have got Hume's tone right, but if he is not being ironic here it is obvious that something is amiss. A yuppy lawyer who is great company at parties is a model perfect virtue? Can this be serious? What has gone wrong here? We do not need to go into Hume's account of virtue in depth to discover it (one reasonw hy the example is useful in the present connection). What the description of Cleanthes brings out is that someone may have a character that is useful and agreeable to himself and others, and still be utterly &lt;em&gt;uninspiring&lt;/em&gt;, somebody tha tnobody could take an &lt;em&gt;ideal&lt;/em&gt; of a 8good* person to be.&lt;/p&gt;
-&lt;p&gt;Let us compare Cleanthes with someone who really is admirable and inspiring and has served as an ideal to countlessly many: Socrates. Socrates' dispositions were of course not all useful to himself or his family; his commitment to searching for truth led him to neglect his own business affairs and reduce them all to poverty. Socrates' character was in fact useful to the Athenians, in stirring them to think about their values, but this was hardly clear to them, since they recognised this too late after executing him. Also, Socrates' character may or may not have been agreeable to himself, but it was certainly very disagreeable to others.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;This passage follows a description of Cleanthes which makes him sounds pleasant but very bland.&lt;/p&gt;
-
-
-&lt;p&gt;When trying to be a better person, you can try to do less harm, or you can try to do more good.&lt;/p&gt;
-
-
-&lt;p&gt;In theory you can do both, but in practice doing good requires doing more and more interesting things, and this includes increased risk of doing harm. Also one has only so much time, and time spent working on learning to do less harm is often trading directly against time to do more good.&lt;/p&gt;
-
-
-&lt;p&gt;All of which is sortof irrelevant, because regardless of whether you &lt;em&gt;can&lt;/em&gt; be perfectly good, most people aren't, and this picture Annas paints does feel like it rings fairly true: You can have pleasant and harmless people who are, ultimately, fairly mediocre forces for good in the world, and the ones who are out there actively doing good are often deeply flawed people with many problems.&lt;/p&gt;
-
-
-&lt;p&gt;I feel like a lot of people, especially on the left, have an attitude that people like this are a problem. This tends to come from a good place ("Nobody is above criticism"), but I'm not sure it's helpful. &lt;/p&gt;
-
-
-&lt;p&gt;Perhaps this doesn't affect the people in question (Although they did very much kill Socrates), but it tends to drive people to become very morally risk averse, and provides a lack of good role models for developing agency, because the people who are actually doing good in the world are more likely to be held up as bad examples.&lt;/p&gt;
-
-
-&lt;p&gt;I don't have a good solution for this. It's important not to let good works act as moral license for bad - e.g. just because someone saves hundreds of lives it's not suddenly OK for them to murder just one person as a treat - but I do think we need to start cutting people some slack.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2021-10-04-07:03.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-10-04-18:40.html</id>
     <title>Book Speedrun: Intelligent Virtue by Julia Annas</title>
@@ -1368,7 +1321,7 @@ This is why it demonstrates the strength of the two stage model: it's a very goo
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-10-19-10:53.html</id>
     <title>A simple model of depression and "depressive realism"</title>
-    <updated>2021-10-19T13:19:53+01:00</updated>
+    <updated>2021-10-19T13:20:33+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;A simple model of depression and "depressive realism"&lt;/p&gt;
@@ -1405,5 +1358,82 @@ and as a result is more likely to believe things that justify that inaction (thi
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2021-10-19-10:53.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2021-10-25-17:53.html</id>
+    <title>How is laughter social?</title>
+    <updated>2021-10-25T17:53:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;How is laughter social?&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2021-10-25&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Random book prompt, from page 54 of John Moreall's "Comic Relief":&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;First, the natural setting for humor, as for play generally, is a group, not an individual. Kierkegaard asked a friend, "Answer me honestly ... do you really laugh when you are alone?" He concluded that you have to be "a little more than queer" if you do. According to Henri Bergson, "You would hardly appreciate the comic if you felt yourself isolated from others. Laughter appears to stand in need of an echo."&lt;/p&gt;
+&lt;p&gt;It's hard to get into the play mode by oneself. Often when I expereince events alone, especially those involving setbacks, I don't see the humor in them until I am later describing them to other people. And even if I expereince an event as funny while I'm by myself, it's unlikely that I'll enjoy it &lt;em&gt;as much&lt;/em&gt; as when I later share it in conversation.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;Perhaps I'm a little more than queer (I'm certainly more than a little queer), but I don't believe this at all. I think laughing on your own is normal and Kierkegaard needed to read funnier books.&lt;/p&gt;
+
+
+&lt;p&gt;In fact I think I am likely to laugh much harder on my own than in company.&lt;/p&gt;
+
+
+&lt;p&gt;For example, the hardest I've laughed recently was at the following image:&lt;/p&gt;
+
+
+&lt;p&gt;&lt;img src="/images/piiswhat.png"/&gt;&lt;/p&gt;
+
+
+&lt;p&gt;&lt;a href="https://twitter.com/saleemrash1d/status/1451195339084492801"&gt;From this tweet&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;I don't know why I find this as funny as I do. It's objectively very funny, but also I laughed to the point of struggling to breathe for nearly a minute. I was on my own.&lt;/p&gt;
+
+
+&lt;p&gt;I've similarly been in hysterics reading a Terry Pratchett novel, to a degree that I wouldn't normally in company.&lt;/p&gt;
+
+
+&lt;p&gt;In contrast, watching comedy, or having a funny conversation with a friend or partner, I will laugh regularly, but rarely to that level of intensity.&lt;/p&gt;
+
+
+&lt;p&gt;It does happen. My sister, L, and I have been known to trigger this in each other.&lt;/p&gt;
+
+
+&lt;p&gt;For example, a few years ago, she and I were sitting in the kitchen at my parents' place in the lead up to Christmas, having a long conversation. At some point the conversation was talking about how annoying it was that we'd both inherited the genes from my mother's side of the family that makes it very easy for us to put on weight (my brother is, in comparison to us, very skinny), and that we'd both like to be a bit lighter than we were.&lt;/p&gt;
+
+
+&lt;p&gt;At some point in this conversation, we looked down at our shared task, and our hands that were just absolutely &lt;em&gt;covered&lt;/em&gt; in chocolate from the brandy truffles that we were making (My grandmother's recipe. It's like &lt;a href="https://notebook.drmaciver.com/posts/2021-07-14-11:44.html"&gt;processing redcurrants&lt;/a&gt; but more delicious) and simultaneously cracked up.&lt;/p&gt;
+
+
+&lt;p&gt;L and I have done this a few times. There was a soup conversation that did it too, but you had to be there for that one to be even slightly funny.&lt;/p&gt;
+
+
+&lt;p&gt;It's fairly rare for me to be able to do this with someone (I think all my examples of this happening are family or romantic partners), and I think the reason is that in order to achieve this you have to have a fairly large degree of comfort and synchronicity with the other person or people, and even with such people it's not the norm unless you're currently &lt;em&gt;very&lt;/em&gt; in synch.&lt;/p&gt;
+
+
+&lt;p&gt;What happens instead seems to be that although you don't laugh as hard in company, you laugh more easily.&lt;/p&gt;
+
+
+&lt;p&gt;Social laughter seems to obey a very simple rule which explains both these things: You should be laughing about the same amount as everyone else.&lt;/p&gt;
+
+
+&lt;p&gt;As a result, laughter in a group follows a rise and a fall, where some people "seed" the laughter, and it rises, bringing everyone along with them for a bit, and then as people stop laughing it brings the overall level down and people follow, everyone dynamically adjusting their level of laughter to be not too far from the overall average.&lt;/p&gt;
+
+
+&lt;p&gt;As a result, you tend not to laugh too intensely unless everyone is in synch, because you have to raise your intensity at a rate everyone will follow, but also you tend to laugh more easily because once someone starts laughing probably so does everybody else.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2021-10-25-17:53.html" rel="alternate"/>
   </entry>
 </feed>
