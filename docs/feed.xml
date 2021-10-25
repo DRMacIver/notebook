@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2021-10-19T13:19:53+01:00</updated>
+  <updated>2021-10-21T15:53:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,53 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2021-10-04-07:03.html</id>
-    <title>What does a good person look like?</title>
-    <updated>2021-10-05T21:45:03+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;What does a good person look like?&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2021-10-04&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;From Intelligent Virtue by Julia Annas, page 106:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;"A philosopher", says "Hume, "might select this character as a model of perfect virtue". It is always hard to be sure that we have got Hume's tone right, but if he is not being ironic here it is obvious that something is amiss. A yuppy lawyer who is great company at parties is a model perfect virtue? Can this be serious? What has gone wrong here? We do not need to go into Hume's account of virtue in depth to discover it (one reasonw hy the example is useful in the present connection). What the description of Cleanthes brings out is that someone may have a character that is useful and agreeable to himself and others, and still be utterly &lt;em&gt;uninspiring&lt;/em&gt;, somebody tha tnobody could take an &lt;em&gt;ideal&lt;/em&gt; of a 8good* person to be.&lt;/p&gt;
-&lt;p&gt;Let us compare Cleanthes with someone who really is admirable and inspiring and has served as an ideal to countlessly many: Socrates. Socrates' dispositions were of course not all useful to himself or his family; his commitment to searching for truth led him to neglect his own business affairs and reduce them all to poverty. Socrates' character was in fact useful to the Athenians, in stirring them to think about their values, but this was hardly clear to them, since they recognised this too late after executing him. Also, Socrates' character may or may not have been agreeable to himself, but it was certainly very disagreeable to others.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;This passage follows a description of Cleanthes which makes him sounds pleasant but very bland.&lt;/p&gt;
-
-
-&lt;p&gt;When trying to be a better person, you can try to do less harm, or you can try to do more good.&lt;/p&gt;
-
-
-&lt;p&gt;In theory you can do both, but in practice doing good requires doing more and more interesting things, and this includes increased risk of doing harm. Also one has only so much time, and time spent working on learning to do less harm is often trading directly against time to do more good.&lt;/p&gt;
-
-
-&lt;p&gt;All of which is sortof irrelevant, because regardless of whether you &lt;em&gt;can&lt;/em&gt; be perfectly good, most people aren't, and this picture Annas paints does feel like it rings fairly true: You can have pleasant and harmless people who are, ultimately, fairly mediocre forces for good in the world, and the ones who are out there actively doing good are often deeply flawed people with many problems.&lt;/p&gt;
-
-
-&lt;p&gt;I feel like a lot of people, especially on the left, have an attitude that people like this are a problem. This tends to come from a good place ("Nobody is above criticism"), but I'm not sure it's helpful. &lt;/p&gt;
-
-
-&lt;p&gt;Perhaps this doesn't affect the people in question (Although they did very much kill Socrates), but it tends to drive people to become very morally risk averse, and provides a lack of good role models for developing agency, because the people who are actually doing good in the world are more likely to be held up as bad examples.&lt;/p&gt;
-
-
-&lt;p&gt;I don't have a good solution for this. It's important not to let good works act as moral license for bad - e.g. just because someone saves hundreds of lives it's not suddenly OK for them to murder just one person as a treat - but I do think we need to start cutting people some slack.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2021-10-04-07:03.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-10-04-18:40.html</id>
     <title>Book Speedrun: Intelligent Virtue by Julia Annas</title>
@@ -1368,7 +1321,7 @@ This is why it demonstrates the strength of the two stage model: it's a very goo
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-10-19-10:53.html</id>
     <title>A simple model of depression and "depressive realism"</title>
-    <updated>2021-10-19T13:19:53+01:00</updated>
+    <updated>2021-10-19T13:20:33+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;A simple model of depression and "depressive realism"&lt;/p&gt;
@@ -1405,5 +1358,86 @@ and as a result is more likely to believe things that justify that inaction (thi
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2021-10-19-10:53.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2021-10-21-15:53.html</id>
+    <title>Study: What is a conative drive?</title>
+    <updated>2021-10-21T15:53:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Study: What is a conative drive?&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2021-10-21&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Today I thought I'd do a study (one hour timebox of writing as I learn) on Experiences of Depression by Matthew Ratcliffe, slightly closer in format to Lucy's original speedruns in that I'm trying to answer a specfic question..&lt;/p&gt;
+
+
+&lt;p&gt;Specifically I would like to look at the following paragraph from page 177, and surrounding context:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Fuchs suggests that depression involves disturbances of both implicit and explicit time. He distinguishes two aspects of implicit time: its ‘affective-conative momentum’ and what Husserl calls its ‘protentional-retentional’ structure (Fuchs, 2013b). By ‘conative’ drive, Fuchs means a temporal orientation that we ordinarily take for granted, which also comprises a disposition towards activity. It is not a matter of having explicit desires or motives, but of feeling drawn towards a meaningful future in a manner that such attitudes presuppose.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;I'd like to ask the following question of this paragraph: What the fuck does &lt;em&gt;that&lt;/em&gt; mean?&lt;/p&gt;
+
+
+&lt;p&gt;The concept of conative drive has stuck with me as a description of something that sounds important but that I don't really understand what it means, so I thought it would be worth a try.&lt;/p&gt;
+
+
+&lt;p&gt;As a first pass I thought I would look up the reference, which is "Temporality and psychopathology" by Thomas Fuchs. Helpfully, the phrase "conative drive" never appears in this paper.&lt;/p&gt;
+
+
+&lt;p&gt;He does have this to say:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;The second prerequisite for implicit temporality is the basic “energetic”
+momentum of mental life which can be expressed by concepts such as drive,
+striving, urge or affection, which — unlike the more “cognitive” protentional–
+retentional structure — I would like to call affective–conative momentum, or in
+short, conation.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;With the following footnote explaining the etymology of conation:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;From the Latin conatus=endeavour, effort, drive, urge. The concept dates back to Stoic philosophy and
+was later used by Hobbes and Spinoza in particular to denote the living being’s striving for self-preservation
+(conatus sese conservandi), in close connection with affective–volitional life. For further reading, see e.g. Lin 2004.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;Lin 2004 is "Spinoza’s Metaphysics of Desire" by Martin Lin, which has me going "Oh no Spinoza", but let's at least check it out.&lt;/p&gt;
+
+
+&lt;p&gt;Unfortunately it does not mention the words "conative" or "conation", which appear to be coinages by Fuchs, but instead talks about &lt;em&gt;conatus&lt;/em&gt;, and Spinoza's "conatus dotrine", which is:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Each thing, insofar as it is in itself, strives to persevere in its being.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;This is obviously false, which makes sense because Spinoza reliably uses words incorrectly (he very likely has some highly technical definition of "thing", "in itself", and "being" that cause the sentence to mean something different and more complicated than it literally reads as, and still be wrong) and also believes ridiculous things, but perhaps this captures the idea that is being described here somewhat, or maybe these are both just about striving.&lt;/p&gt;
+
+
+&lt;p&gt;Also just looking it up in &lt;a href="https://en.wiktionary.org/wiki/conation"&gt;wiktionary&lt;/a&gt; which I definitely should have done first, Conation is:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;The power or act which directs or impels to effort of any kind, whether muscular or psychical.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2021-10-21-15:53.html" rel="alternate"/>
   </entry>
 </feed>
