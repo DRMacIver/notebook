@@ -65,6 +65,323 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
         
 
 <section>
+<h2><a href="/posts/2021-10-29-09:43.html">2021-10-29</a></h2>
+
+
+<p class="subtitle">Probably enough probability for you</p>
+
+
+<dl class="metadata">
+<dt>Published</dt>
+<dd class="post-date">2021-10-29</dd>
+</dl>
+
+
+<p>I found myself writing a new newsletter issue in which it would be really useful for readers to have a basic working knowledge of probability. I started trying to explain it in the middle of the issue, and this seemed like a bad idea, so instead here is an out of band explanation where I'll attempt to provide a decent working explanation of probability for people who are not already familiar with it.</p>
+
+
+<p>Advance warning: In this piece I will be expressing strong philosophical positions, not all of which will be perfectly aligned with other people's strong philosophical positions on the subject. Obviously mine are correct and everyone else is a fool, and I shall show them all.</p>
+
+
+<p>...which is to say, treat this as a useful way of thinking about it rather than necessarily a 100% definitive account that everyone else would agree with. My view on this is a somewhat pragmatic hybrid of two major schools of probability, which I think corresponds pretty well to what people actually do in practice, but I take that hybrid as central rather than treating one of them as correct and also grudgingly borrowing ideas from the other.</p>
+
+
+<p>Another thing to note is that I am being very sloppy with or brushing over details. This is because what I am trying to convey is a rough sense of probability sufficient to get a handle on what it's for and how to use it. If you want to fill in the details, that's more work, but it's also mostly not necessary.</p>
+
+
+<h3>What is a probability?</h3>
+
+
+<p>Probability is two separate things, which are often conflated:</p>
+
+
+<ol>
+<li>The skilled practice of putting a number on some source of uncertainty, in a way that usefully improves your ability to work with that uncertainty. These quantified uncertainties are called probabilities.</li>
+<li>A body of mathematical theory, based on certain idealised models of uncertainty that are only found in pure forms in mathematical objects, that nevertheless usefully describes and informs that skilled practice.</li>
+</ol>
+
+
+<p>Most explanations of probability start with the second, and end up a bit confused on the first.
+In particular they try to explain what probability <em>is</em>, when in reality probability is not a single thing,
+and is best thought of as something you do rather than something that exists.</p>
+
+
+<p>In particular you end up with a lot of arguments about whether probability is a subjective representation of uncertainty or a feature of the world itself, which is about as sensible a thing to argue about as whether numbers represent weights or lengths.
+Probability is a <em>tool of description</em>, and as such its use contains both subjective and objective elements,
+informed by both the thing being described, the entity describing it, and the specific details of the process resulting in the description (e.g. how much work is put in).</p>
+
+
+<p>Instead it is better to think of probability in a pluralist way: There are multiple notions of probability, each corresponding to a given instance of trying to quantify uncertainty, and the mathematical theory suggests various rules that a notion of probability should ideally attempt to follow, which may or may not be followed in practice.</p>
+
+
+<h3>Quantifying uncertainty</h3>
+
+
+<p>Here are several motivating questions, each of which invite different notions of probability:</p>
+
+
+<ol>
+<li>If you roll two dice, how likely is the total value shown on the dice to be greater than or equal to 10?</li>
+<li>How confident are you that there are currently more than 67 million people in the UK?</li>
+<li>How likely is it to rain tomorrow?</li>
+</ol>
+
+
+<p>A notion of probability associated with these questions is an attempt to answer them with a number. Conventionally, these numbers are between 0 and 1, with 0 representing "I am completely certain that this will not happen" and 1 representing "I am completely certain that this will happen", although often it's more natural to report them as a percentage between 0% (0) and 100% (1) instead.</p>
+
+
+<p>Slightly more formally, a notion of probability for some set of possibilities (rolls of a dice, range of plausible populations of the UK, weather over the course of the day) is any method of taking subsets of those possibilities (e.g. the subset where the dice roll total is greater than or equal to 10, the subset where there are more than 67 million, the subset where it rains at least once in the course of the day), and assigning a number between 0 and 1 (or, if you prefer, 0% and 100%) to that event. Intuitively that number represents some idea of how "likely" that event is, but that is not part of the notion of probability, it is part of what we are using the notion of probability to try to do.</p>
+
+
+<p>There are a couple reasons that I am emphasising this pluralism about probabilities,
+but the first and biggest one is that these questions each have a slightly different type of uncertainty to them.</p>
+
+
+<p>In the first instance, the dice are in some sense "truly random". There is an element of actual randomness in the world, and your uncertainty about it derives purely from that randomness (arguably you could perfectly predict the dice rolls if you had sufficiently good information and predictive power, but when I talk about dice or coin flips in this post please assume I mean ideal dice that are powered by some underlying source of genuine randomness like radioactive decay where you cannot predict it even in principle). This is sometimes called <em>aleatoric uncertainty</em>, meaning uncertainty deriving from pure randomness, but I'll avoid using the term much.</p>
+
+
+<p>In the second instance there is an objectively correct answer - there either are or aren't more than 67 million people in the UK right now - and you could in principle find it out, but your knowledge is imperfect. You can e.g. google and get a population estimate of 67.22 million which suggests pretty strongly the answer is yes, but where do those numbers come from? How recent are they? Do they take into account Brexit and COVID departures? etc. Taking into account all of these considerations might make you less certain, but either way that uncertainty lives in your head, not in the world, where there is a true answer to the question that you can in principle find out. This sort of uncertainty is often called <em>epistemic</em> uncertainty, meaning uncertainty purely in your knowledge, and again I won't use this term too much.</p>
+
+
+<p>The third example however combines the two. Weather forecasting is an imprecise science, but it's increasingly pretty good, especially with satellite imagery. Additionally, there are questions of general knowledge - e.g. if you have historical records you could answer with the fraction of times it's rained on that date - but at some point you start being affected by true underlying randomness and there is a limit to how well you can do regardless of how much knowledge you gain.</p>
+
+
+<p>This discussion of these three types of things hopefully indicates two important features:</p>
+
+
+<ol>
+<li>These questions do not uniquely define a notion of probability each. A notion of probability is a way of answering the question, but there are many different ways of answering the question.</li>
+<li>Some ways of answering the question produce better answers than others.</li>
+</ol>
+
+
+<p>For example, suppose I answered 0 to the dice question. Perfectly allowed, there's no rule against it. I could genuinely be 100% certain that two dice when rolled and added together will never total 10 or more. Of course, I will then look pretty stupid when the dice roll a 5 and a 6. This is in some sense a <em>bad</em> notion of probability, even if it's a perfectly valid one.</p>
+
+
+<p>I could take my best guess on the population thing (I'm like 95% certain that there are more than 67 million people in the UK right now. The 67.22 million figure is from mid-2020, and between COVID and Brexit I think there's a decent chance we've popped below the 67 million mark. 95% feels a bit low, but 99% feels too high). A "better" way of doing it would be to go out and exhaustively count every single person and report 0% if the answer is no and 100% if the answer is yes. Or we could run the survey that resulted in that 67.22 million again and see what it says and do the same, which is a bit lower effort than a perfect accounting but probably good enough.</p>
+
+
+<p>Similarly on the weather forecasting, we could make a complete guess ("IDK, 50%?"), we could use historical data, we could use satellite data, we could use complicated modelling... the more effort we put in to weather forecasting, the better we should hope our notion of probability that we get from those efforts is.</p>
+
+
+<p>But what does "better" mean?</p>
+
+
+<h3>Well calibrated probabilities</h3>
+
+
+<p>The only way to be obviously, definitively, wrong, is to assign a probability of 0 or 1 (0% or 100%). If I say something is impossible and it happens, I was wrong, there is no doubt about that.</p>
+
+
+<p>But it feels like this is too low a bar to clear, right? If I say something is a one in a million chance and it happens anyway then, well, maybe I just got unlucky, but if my one in a million chances happen nine times out of 10, this starts to look pretty fishy.</p>
+
+
+<p>A distinction I think it is useful to make here is that it is not that my one in a million chance estimate is <em>wrong</em> in these cases, it's that it's <em>bad</em>. I have not expressed total certainty in this outcome, so you could make a legitimate case that I am still technically correct in my opinion, but also in a practical action guiding sense my level of confidence is garbage and regardless of whether I am technically correct you shouldn't listen to me.</p>
+
+
+<p>The problem there is not I made a one in a million prediction, or even that something I predicted as one in a million happened. Things that you should predict as one in a million chances happen all the time, because there are millions of such things. If I claim that a million different things are each likely to happen with a one in a million chance, it's pretty reasonable that <em>one</em> of them happens.</p>
+
+
+<p>Say, for example, that I claim there's a one in a million chance of winning the lottery (it's actually much lower than this given a better notion of probability, but there's nothing stopping me <em>saying</em> this), and 50 million people play the lottery and someone wins. I would have said that each of their individual chances was one in a million, and the fact that <em>this person in particular</em> won is not evidence against that, because it could have been any one of the millions of others.</p>
+
+
+<p>In fact, the problem my prediction would have here is that far too few people would win for it to feel well calibrated. If 50 million people play, that suggests about 50 people should win, and the fact that only one person wins suggests that my one in a million claim was too high, and that a better notion of probability.</p>
+
+
+<p>This leads to the idea of the <em>calibration</em> of a notion of probability: My notion of probability is well calibrated on a series of questions, if when I assign a certain level of confidence to an outcome, the outcome happens about that often.</p>
+
+
+<p>This is a little subtle, so let me expand with some examples.</p>
+
+
+<p>Let's start with a series of (ideal) coin flips. Suppose, with each coin flip, you ask me to assign a probability that the coin will turn up heads, and I say 60%. You flip a coin, it turns up tails. This is not particularly strong evidence that my answer of 60% is badly calibrated - I said it was more likely than not to turn up heads, but I didn't claim tails was <em>very</em> unlikely. If I'd say 99.999% and it turned up tails, that would have been much stronger evidence that my notion was badly calibrated.</p>
+
+
+<p>If, on the other hand, you keep flipping the coin, I keep saying 60%, and after 10000 coin flips it's turned up heads 4897 times, that's pretty good evidence that my estimate of 60% is off - certainly an estimate of 50% would be better calibrated. Currently the number that would be <em>best</em> calibrated would be 48.97%, but if I kept flipping the coin another 10000 times and got 5041 heads this time, the new total would be 9938, or 49.69%, at which point 50% looks better calibrated than 48.97%.</p>
+
+
+<p>In some sense, for this very simple process, there is an objectively correct well calibrated answer that is that you should always be estimating 50%. This is because the uncertainty in it is "all in the randomness", and also beause we've supposed that by hypothesis.</p>
+
+
+<p>Over a more complicated series of questions, the question is less clear, in particular because the probability might not be the same every time. If you ask me each day whether or not it's going to rain, and I answered 60% each time, you could measure the calibration in the same way, but suppose some days I answered 10%, some days I answered 90%, how would you determine how well calibrated I was?</p>
+
+
+<p>One answer to this is what are called <em>scoring rules</em>, which attempt to score how well you do on a series of question. The way these work is that when you make a prediction, you are rewarded for a high probability if the event happened, or for a low probability if the event didn't happen. For example, a common choice of scoring rule is the <a href="https://en.wikipedia.org/wiki/Brier_score">Brier score</a>, where if you chose probability \(p\) you get a reward of \(p^2\) if the event happens, or \((1 - p)^2\) if it did not. In the extreme case where \(p = 1\) you get a reward of \(1\) where it happens and \(0\) if it doesn't (vice versa if you chose \(p = 0\)), while if you chose \(p = \frac{1}{2}\) you get a score of \(\frac{1}{4}\) either way.</p>
+
+
+<p>(Some scoring rules may not work exactly like this, in that they aren't necessarily an independent sum of your score on each question, but the general idea remains the same)</p>
+
+
+<p>There is a whole bunch of theory of scoring rules and what makes a good or bad scoring rule, but the most important part is that some scoring rules are <em>proper</em>, which means that the strategy that gets you the best score is to have perfectly calibrated set of probabilities, but different strategies will reward how close you are to being well calibrated in different ways. For example, the Brier score is fairly forgiving about if you occasionally said that something is a one in a million chance and it happens, while the <a href="https://en.wikipedia.org/wiki/Scoring_rule#Logarithmic_scoring_rule">Logarithmic scoring rule</a> will penalise that comparatively harshly.</p>
+
+
+<p>All of which is to say, as well as different notions of probability, there are also different ways of measuring how good a given notion of probability is.</p>
+
+
+<p>There is one particularly useful notion of practical calibration that I'll talk about in a bit, but before I do I want to really hammer home something about calibrated probabilities, partly because even though I thoroughly understand it I continue to find it intuitively weird.</p>
+
+
+<h3>Why are there multiple calibrated probabilities?</h3>
+
+
+<p>Let's go back to the question of predicting rainfall.</p>
+
+
+<p>Suppose, each day, you asked me if it would rain tomorrow somewhere in the UK, and each day I said 46.6% likely. This is the number <a href="https://www.statista.com/statistics/610677/annual-raindays-uk/">some brief googling gives me for 2020</a>, so this number is pretty well calibrated.</p>
+
+
+<p>This is what you can think of as the "zero effort well-calibrated" notion of probability. It's well calibrated, but I've made no attempt to take into account any information available to me.</p>
+
+
+<p>Now suppose I pay attention to if it's raining today. Say I claim that if it's raining today it's 60% likely to rain tomorrow, and if it's not raining today it's 35% likely to rain tomorrow (I have no idea if this is more accurate, I'd have to look at more data than I could find in 30 seconds of Googling, but <em>something</em> like it will be true - it's very unlikely that whether it rains tomorrow is completely independent of whether it rains today. Let's pretend it's right for the sake of simplicity).</p>
+
+
+<p>The difference between these two notions of probability is not that one is better calibrated than the other, it's that one takes into account more work and information. It is more useful for action guidance (although still probably not quite useful enough), because we can have a better sense of whether it's going to rain on any given day.</p>
+
+
+<p>("Is it going to rain anywhere in the UK?" is not necessarily particularly useful for action, mind, but you can imagine the same thing with more local forecasts).</p>
+
+
+<p>An important thing to note here is that sometimes the day-dependent prediction gives a higher chance of rain, and sometimes a lower chance of rain. If it had always produced a lower, or higher, chance of rain, both of them could not have been equally well calibrated, because over a long series of predictions calibration means that they have to be right on average about the same amount, and if one was consistently higher it would predict a higher number of rainy days than the other over time, so they can't both be consistently right.</p>
+
+
+<h3>The logic of probability</h3>
+
+
+<p>As well as calibration, one way you can judge how good probabilities are is whether they make sense when compared to each other. Perfectly calibrated probabilities will always make sense in this way under various technical assumptions, but this is one way of seeing that your probabilities are definitely not perfectly calibrated and maybe improving them if it seems worth it.</p>
+
+
+<p>For example, one obvious way your probabilities could be nonsensical is if you give an event that logically must be more likely than another a lower probability. The question "Will it rain in the next week?" cannot reasonably have a lower probability than "Will it rain tomorrow?", because every time it rains tomorrow it rains in the next week.</p>
+
+
+<p>This will show up as being badly calibrated through a series of questions which asks both at the same time, because over a large number of predictions the number of times it rained in the next week must be at least as high as the number of times it rained tomorrow, so if the probability given for the former was lower than that for the latter you'd end up with one or the other probabilities being wrong.</p>
+
+
+<p>(There are a number of reasons why this might actually show up as being the case if you arrange all the details right, but hopefully you can at least agree that such a prediction is silly).</p>
+
+
+<p>The most important rule probabilities should satisfy is this: If two events are disjoint, that is they cannot happen together, then the probability of at least one of them happening is the sum of the probabilities of either of them happening. For example, the probability you assign to a die roll being five or six should be the sum of the probability you assign to it rolling five plus the probability you assign to it rolling six.</p>
+
+
+<p>From this, we can derive most other useful rules about probability. For example, the first rule I mentioned can be expressed as follow: If whenever A happens, B also happens, then the probability of B is the probability of A plus the probability of B without A. The latter probability must be at least 0, so the probability of B must be the probability of A plus a non-negative quantity, and thus at least that of A.</p>
+
+
+<p>Another rule is that, because the probability we assign to certainty is 1, if we assign probability \(p\) to some event then we should assign probability \(1 - p\) to it <em>not</em> happening.</p>
+
+
+<p>I won't go into these logical rules of probability too much here, but it's worth noting that understanding them is often one of the most beneficial parts of learning probability theory, because they tend to result in fairly general rules of reasoning that you can use even when you're not using probability explicitly.</p>
+
+
+<p>For example, we've got the <a href="https://en.wikipedia.org/wiki/Conjunction_fallacy">conjunction fallacy</a>, which people often fall prey to:</p>
+
+
+<blockquote>
+<p>Linda is 31 years old, single, outspoken, and very bright. She majored in philosophy. As a student, she was deeply concerned with issues of discrimination and social justice, and also participated in anti-nuclear demonstrations.</p>
+<p>Which is more probable?</p>
+<ol>
+<li>Linda is a bank teller.</li>
+<li>Linda is a bank teller and is active in the feminist movement.</li>
+</ol>
+</blockquote>
+
+
+<p>The correct answer is (1), because if (2) is true then (1) has to be true as well, but people often get this wrong.</p>
+
+
+<p>(Although as a side note, I'm a little suspicious of this claim, and there are a number of critiques of it).</p>
+
+
+<p>Learning to spot problems in your reasoning like this tends to be one of the reasons people are very into probability theory.</p>
+
+
+<h3>From probability to expected values</h3>
+
+
+<p>Often when we make decisions based on probabilities, we're interested not just in the probabilities of events but some number that depends on them.
+For example, when we're planning a project, we will typically want to know how much it's going to cost.</p>
+
+
+<p>For a given notion of probability, we can define the <em>expected value</em> of some score, as the sum of the score under the various possible events.</p>
+
+
+<p>So for example, if we were to assign a probability of \(\frac{1}{6}\) to each possible face of a die when rolling it (which is, presumably, perfectly calibrated if the die is fair), the expected value of the roll is \(\frac{1 + 2 + 3 + 4 + 5 + 6}{6} = 3\frac{1}{2}\).</p>
+
+
+<p>The important thing about expected values is that when you have a well calibrated notion of probability,
+and take many actions, then the average actual value of those actions will be pretty close to the average expected value.</p>
+
+
+<p>This is a little hard to justify in general and this post has gone on long enough as it is, but to see it in the specific case let's look at the dice case:</p>
+
+
+<p>Suppose our probability of \(\frac{1}{6}\) for each face is well calibrated. Then over a large number of rolls,\(N\), typically about \(\frac{N}{6}\) of the rolls will have each value. Therefore the average is about \(\frac{N}{6} \times (1 + 2 + 3 + 4 + 5 + 6) \times \frac{1}{N} = \frac{1 + 2 + 3 + 4 + 5 + 6}{6} = 3\frac{1}{2}\), as desired.</p>
+
+
+<p>This argument will work for any similar situation where you're repeating exactly the same sort of action over and over again, but the claim is true in general (with some mild technical caveats), it's just harder to justify and I'll ask you to take it on faith.</p>
+
+
+<h3>Practical calibration through betting</h3>
+
+
+<p>This notion of expected values leads to one of the easiest indicators that you're well calibrated:
+you can make money from betting on your probabilities.</p>
+
+
+<p>Suppose I offer you a bet: If an event happens, I'll give you £1, otherwise you give me £1.
+Should you take the bet or not?</p>
+
+
+<p>Well, as a one off, it doesn't matter very much, but if you're presented with many such bets it starts to add up, and being able to make the bets well will lead to profit.</p>
+
+
+<p>Now, suppose you have a well calibrated notion of probability for these questions, and you give the event a probability of \(p\). How much do you make off this?</p>
+
+
+<p>Well, the expected value of your bet is \(p - (1 - p) = 2p - 1\), because if the event happens (probability \(p\)) you make £1, and if it doesn't (probability \(1 - p\) because your probabilities are well calibrated) you lose £1 (or "make" -£1).</p>
+
+
+<p>What this means is that if you think the event is more likely than not (i.e. \(p &gt; \frac{1}{2}\)) you would expect to make money, and so should take the bet, and otherwise you expect to lose (or not gain if \(p = \frac{1}{2}\)).</p>
+
+
+<p>More generally, if you make £n when the event happens or pay £m when it doesn't, you expect to earn \(np - m(1 - p) = p(n + m) - m\), so the expected value of the bet is positive when you assign \(p &gt; \frac{m}{m + n}\).</p>
+
+
+<p>Why should you bet on events with a positive expected value? Well, because of the property that over many bets you expect the average value of your bets to be roughly the average value of their expected values. As a result, if you make a lot of positive expected value bets, the average value of your bets is positive, and thus the total value of your bets is positive and you've made money.</p>
+
+
+<p>Now, I should add to this that actual practical gambling is much more complicated than this, and involves a lot of subjects like bankroll management. The above logic really only works as long as you are gambling amounts that are small compared to how much money you have in reserve: You only get to make many bets if you don't go bankrupt first!</p>
+
+
+<p>This also isn't <em>really</em> about gambling, and I probably don't recommend gambling as a general choice (particularly against professional bookies, who almost certainly have a better notion of probability than you do and can make sure the odds you're being offered are not worth it), but it's true for general strategic choices too: Trying many safe things that have, in some sense, a positive expected value for you, and you'll probably do pretty well.</p>
+
+
+<h3>Is all of this worth it?</h3>
+
+
+<p>One of the big philosophical debates around probability is between "All uncertainty can usefully be represented as probabilities" and "Oh yeah, how certain are you of that?".</p>
+
+
+<p>My view on the subject is this: You can always assign a probability to any question, but your probabilities will often not be very good, and whether it is worth the effort to make them better is highly variable.
+In particular on questions that are very complicated and involve a lot of unknown unknowns, it's very unclear that thinking of them in terms of probabilities improves your thinking on the subject much,
+or that "Making your probabilities better" is a good way to think about learning more.</p>
+
+
+<p>There are a lot of arguments that an ideal agent represents all uncertainty as probabilities. This may well be, I don't have a very strong opinion on the behaviour of ideal agents, but I think idealising often elides the fact that these ideal agents have suspiciously godlike powers of thought and observation.
+With actual real practical agents, quantifying your uncertainty that way may not be the best use of your time.</p>
+
+
+<p>However, there are situations in which probability really shines. In particular when you are dealing with many similar questions which involve a mix of genuine randomness and uncertain knowledge, it is often very helpful to be able to do at least a rough and ready probability estimate of various things in order to get a feel for how to reason about it, and for some jobs and tasks that are at the cutting edge of working with uncertainty (e.g. finance, logistics, forecasting), thinking in terms of probabilities is a vital skill.</p>
+
+
+<p>Even if you don't regularly encounter such situations, learning the basics of probability is often a useful thing to do, because it gives you tools for reasoning about the uncertainties of daily life, and generally gets you comfortable with working with uncertainty in a way that is hard to get elsewhere.</p>
+
+
+<p>Is it worth it to think of everything in terms of probability? Almost certainly (about 99.5%) not,
+but often it's worth learning <em>how</em> to think of everything in terms of probability so that you can then make the sensible choice not to.</p>
+
+
+</section>
+<section>
 <h2><a href="/posts/2021-10-25-17:53.html">2021-10-25</a></h2>
 
 
@@ -387,90 +704,12 @@ and that I disagree with them less than I think I do, but if so they have very m
 
 
 </section>
-<section>
-<h2><a href="/posts/2021-10-09-20:42.html">2021-10-09</a></h2>
-
-
-<p class="subtitle">The problem of Susan</p>
-
-
-<dl class="metadata">
-<dt>Published</dt>
-<dd class="post-date">2021-10-09</dd>
-</dl>
-
-
-<p>Up front warning: I increasingly hate Julia Annas's account of happiness and every post that is about this subject will likely be very cranky. This is one such post.</p>
-
-
-<p>From Intelligent Virtue, Page 141, we have the following example:</p>
-
-
-<blockquote>
-<p>Susan thinks of her life as a happy one; she is married with children, and all is well except that her husband is frequently away on business. She discovers that in fact these absences were spent with a second family, and that he has divided his time between the two families for some years. Uncontroversially, Susan evaluated her life positively before the discovery, and no longer did so after the discovery. The question is: before the discovery, was her life happy or not?</p>
-</blockquote>
-
-
-<p>I <a href="https://twitter.com/DRMacIver/status/1447177704760037376">asked about this on Twitter</a>. At present most people say yes, a couple of people make the subjective/objective happiness distinction that Annas is talking about in context.</p>
-
-
-<p>A couple of people point out that it's likely that she <em>wasn't</em> happy, because probably someone living a life like that is not actually experiencing a very good life, and many low grade unhappinesses will probably be clarified and recontextualised in the light of the revelation. It's also possible she was engaged in self-deception to maintain a belief that she was happy. "Sure, there are a few problems, but can't complain you know?".</p>
-
-
-<p>I think this is all true, but I'm happy to postulate that Susan could in principle have been genuinely happy with her life, even if it doesn't seem very likely. Likely that happiness came from other sources than her husband, but that's fine.</p>
-
-
-<p>None of this touches on my actual complaint with this example, which a few other people also shared, which is that it's obviously a category error, the question doesn't actually make sense.</p>
-
-
-<p>Moreover, it's clearly a <em>motivated</em> category error, one that only makes sense through conflating two distinct things that the author is committed to conflating in order to support her broader thesis.</p>
-
-
-<p>Was Susan's life happy or not? No, it's a life. Happy is not a things life can be, any more than physics can be happy. "Happy" is an emotional evaluation, and lives are not things with emotions. I understand that when people say "Did they have a happy life?" that is normal colloquial English that means something more like "Were they happy with their life?" but when you are trying to make a precise statement on the nature of happiness there is absolutely no excuse for this sort of ambiguity which blurs precisely the distinction you are trying to make.</p>
-
-
-<p>It's possible that I'm incorrectly translating the intent of this, but if so I think that makes it worse rather than better, because up to this point we have been talking about people seeking their own happiness, and if we mean something different from their own happiness by "having a happy life", why is this the question we're asking?</p>
-
-
-<p>The questions I believe should be and are not being asked here are:</p>
-
-
-<ul>
-<li>Was Susan happy with her life?</li>
-<li>Did Susan have a good life?</li>
-</ul>
-
-
-<p>And the only reason to blur the boundary between these very different questions is if you are committed to an unsupportable notion that happiness is the sole end of life, and to conflating the notion of "happy life" with "good life", in order to make them look like the same question.</p>
-
-
-<p>The following further unasked questions are also particularly loud:</p>
-
-
-<ul>
-<li>Would Susan have chosen this life?</li>
-<li>Before knowing the truth, would Susan have chosen to learn it if she knew the consequences?</li>
-<li>Once Susan knows the truth, would she choose to go back if she could?</li>
-</ul>
-
-
-<p>Asking these questions probably results in a fairly consistent clustering around "Susan was happy", "Susan would have chosen to know" (certainly this is my answer), which is a problem if you are committed to the position that people's driving goal is happiness</p>
-
-
-<blockquote>
-<p>If positive evaluation of your life is what happiness is, then Susan had a happy life until the discovery. But this runs into the problem that we are also inclined to say that after the discovery Susan discovered that her life never was a happy one; she was deceived into thinking that it was.</p>
-</blockquote>
-
-
-<p>Another presumptious we. I do not think it makes sense to say that she was deceived into believing her life was a happy one. She was deceived as to the nature of her life, and also she was happy.</p>
-
-
-</section>
 
 
 <h2>2021-10</h2>
 
 <ul class=postarchive>
+<li><a href="/posts/2021-10-09-20:42.html">The problem of Susan</a></li>
 <li><a href="/posts/2021-10-08-21:50.html">On Julia Annas's conception of happiness</a></li>
 <li><a href="/posts/2021-10-08-01:23.html">Scurrying</a></li>
 <li><a href="/posts/2021-10-06-16:21.html">Revisiting Intelligent Virtue</a></li>
