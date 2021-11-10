@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2021-10-29T09:43:00+01:00</updated>
+  <updated>2021-11-10T11:09:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,230 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2021-10-06-00:02.html</id>
-    <title>What's up with the unity of the virtues?</title>
-    <updated>2021-10-06T01:54:05+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;What's up with the unity of the virtues?&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2021-10-06&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;In &lt;a href="https://notebook.drmaciver.com/posts/2021-10-04-18:40.html"&gt;yesterday's post about Intelligent Virtue&lt;/a&gt; I said that The Unity of the Virtues deserved a speedrun all of its own, so this is me doing that speedrun.&lt;/p&gt;
-
-
-&lt;h3&gt;What does 'unity of the virtues' actually mean?&lt;/h3&gt;
-
-
-&lt;p&gt;Starting from Rosalind Hursthouse's "On Virtue Ethics" and just going through the index for unity of the virtues as a starting point leads me to the following interesting footnoe on Page 153:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Timothy Chappell, in an unpublished paper (now, alas, lost), once argued that there were (something like) thirty (!) versions of the doctrine of the unity of the virtues. I cannot now remember how he did it, but I think the first eight came from ‘(i) The possession of any one virtue is necessary and sufficient for (or (ii) necessary for or (iii) sufficient for or (iv) conducive to) the instantaneous possession (or (v–viii) the eventual possession) of all the other virtues too’ and the next eight from the same structure with ‘The possession of some one virtue (e.g. phronesis)’ as the opening clause.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;(Side note: Timothy Chappell has transitioned since the publication of this book and is now Sophie-Grace Chappell).&lt;/p&gt;
-
-
-&lt;p&gt;So part of why it's not totally clear to me what people really mean by "The unity of the virtues" is that people mean all sorts of different things. Great.&lt;/p&gt;
-
-
-&lt;h3&gt;Garbage arguments that unity of the virtues is plausible&lt;/h3&gt;
-
-
-&lt;p&gt;On page 155 is the following argument that we probably already believe in the unity of the virtues, and I hate it:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;That we do not believe in the disunity of the virtues is, I think, shown by our reaction to certain sorts of stories we sometimes read in the newspapers. We read of people doing what seems splendid; the sort of action that seems to call for an exceptional level of, say, courage or generosity. And then we learn about them that they have also done something morally repellent and we are surprised and often puzzled. I do not only mean something repellent in the same area—cowardly or selfish, as the case may be, which might immediately lead us to say that we had obviously made a mistake in ascribing courage or generosity to them in the first place. I mean something in a different area; the agent who dashed into the burning building and saved a stranger turns out to be a rapist; the one who has given a huge proportion of his income to the homeless turns out to be someone whose lies are keeping an innocent person in gaol. And we are surprised and puzzled: how could they be so splendid in the one instance and so despicable in another, we wonder? Now isn't that an interesting fact—that we are surprised and puzzled?&lt;/p&gt;
-&lt;p&gt;If we thought of the virtues as discrete, isolable traits, such that someone could be, for example, truly courageous but also cruel and licentious in character, or truly charitable but also cowardly and dishonest, there would be no reason to be surprised or puzzled. We would expect one who acts from courage to be reliable and predictable as far as courageous acts were concerned, but have no expectations about their kindness or honesty. But we do. We believe the virtues form some sort of unity.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;I think this argument is fairly suspicious, to the point of outright disbelieving it.&lt;/p&gt;
-
-
-&lt;p&gt;First off: I personally do not feel terribly surprised by any of these combinations. Hypocrisy and moral complexity abounds. It's in fact extremely common for people known for doing good to be total assholes in private.&lt;/p&gt;
-
-
-&lt;p&gt;Secondly, I think our intuitions about who is a good person and in what way they are a good person tend to be reliably wrong. We're more likely to judge attractive people to be good. We're more likely to judge someone we think is an asshole to be bad, but &lt;a href="https://notebook.drmaciver.com/posts/2021-10-04-07:03.html"&gt;this causes us to prefer Cleanthes to Socrates&lt;/a&gt;. Halo effects are a whole big thing and our judgement is &lt;em&gt;reliably&lt;/em&gt; compromised by them, and seeing people doing good is very much a form of halo. So even if people &lt;em&gt;are&lt;/em&gt; surprised, this is in a direction where their judgement is known to be compromised.&lt;/p&gt;
-
-
-&lt;p&gt;Thirdly, this is also what you would observe even if your judgement were entirely accurate and virtues were correlated but not unified.&lt;/p&gt;
-
-
-&lt;p&gt;My go to example of such a trait is strength. If Bob deadlifts more than Joe, I'd probably also expect Bob to beat Joe in an arm wrestling competition. But he might not! Because strength is very much not unitary, there are all sorts of different feats of strength that use different muscles and different skills.&lt;/p&gt;
-
-
-&lt;p&gt;But they're still pretty strongly correlated. If Bob and Joe are close in deadlift I won't be at all surprised if it flips for arm wrestling. If Bob deadlifts twice as much as Joe I'll be pretty surprised if it reverse for arm wrestling, but it wouldn't blow my mind or anything, it just violates expectations.&lt;/p&gt;
-
-
-&lt;p&gt;Not to go all rationalist at you, but surprise is probabilistic, and something can be surprising and yet completely consistent.&lt;/p&gt;
-
-
-&lt;p&gt;More, we have every reason to expect virtues to be correlated, because a desire to do good in the world is what drives one to cultivate the virtues, and so there is a common causal mechanism in the development of virtue. Therefore we would expect someone who exhibits one virtue to have spent at least some time cultivating the others, and thus to do better at them even if they were completely unrelated.&lt;/p&gt;
-
-
-&lt;p&gt;In conclusion, regardless of whether unity of the virtues is true, this is a garbage argument for it.&lt;/p&gt;
-
-
-&lt;h3&gt;The Limited Unity of Virtue&lt;/h3&gt;
-
-
-&lt;p&gt;I didn't find anything very convincing in Hursthouse's section on the unity of the virtues (which is quite short), but she references "The Limited Unity of Virtue" by Neera K. Badhwa, which is my next stop.&lt;/p&gt;
-
-
-&lt;p&gt;She opens with the following:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Aristotle's conception of virtue of character as a habitual emotional and rational disposition to feel, choose, and act in the right way for the right ends is accepted by many contemporary philosophers. But his claim that the virtues are united, such that you can have one virtue if and only if you have all of them is, typically, rejected out of hand. The doctrine of the unity of virtue follows from Aristotle's declaration that "we cannot be fully good without practical wisdom or practically wise without virtue of character, "and that "as soon as [someone] has practical wisdom, which is a single state, he has all the virtues as well."&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;"Practical wisdom" is normally left untranslated as "phronesis" and I suspect something is being lost in translation here. It would potentially be interesting to do a future speedrun on what people really mean by "phronesis". I think I've mentally been treating it as "the pragmatic skill of being good at getting shit done" - a sort of generalised competence - but perhaps it's more qualified than that. It's at this point I should confess that I've gotten distracted while reading the Nichomachean ethics multiple times. It's not you, Aristotle, it's me.&lt;/p&gt;
-
-
-&lt;p&gt;Badhwa proposes the following &lt;em&gt;limited unity of the virtues&lt;/em&gt; thesis:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;The existence of a virtue in a particular domain of a person's life does not imply the existence of that (or any other) virtue in any other domain. So P may be kind towards her friends and colleagues without being kind (or virtuous in any other way) towards acquaintances or strangers, or she may be kind towards those who have been unlucky in their careers without being kind towards those who have been unlucky in their personal relationships.&lt;/li&gt;
-&lt;li&gt;The existence of virtue in one domain implies the absence of vice as well as of ignorance in most other domains. Hence, if P is kind, just, etc. in her friendships, she cannot be vicious towards everyone else or, for that matter, ignorant of the basic elements of everyone else's good.&lt;/li&gt;
-&lt;li&gt;Every virtue requires the others within the same domain, and so none is incompatible with, or independent of, any other. Hence, if P is kind towards her friends and colleagues, she must also be generous, just, temperate, and courageous with respect to them.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;I think (3) is the most interesting of these three, in that it still seems to be a stronger claim than I think is necessarily obviously true, but I'm not sure if I'm just unclear on what she means by "must".&lt;/p&gt;
-
-
-&lt;p&gt;Reading onwards I find:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;A vicious person may be clever in achieving his ends, but since his ends are bad, he cannot be wise.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;OK so "practical wisdom" does include the requirement that the shit you're trying to get done is actually good.&lt;/p&gt;
-
-
-&lt;p&gt;Actually, I think this plus skimming the rest of the paper (no direct quotes sorry) makes me think that the unity of the virtues as being presented is roughly the following:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;In a given domain there is a well defined set of "good ends".&lt;/li&gt;
-&lt;li&gt;Phronesis, or practical wisdom, is the skill of achieving those ends.&lt;/li&gt;
-&lt;li&gt;Virtues are the character traits which dispose one, rationally and emotionally, towards achieving those good ends.&lt;/li&gt;
-&lt;li&gt;Thus virtues and phronesis are intimately intertwined, in that the development of phronesis is dependent on and in turn cultivates the virtues.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;This seems right to me, and largely agrees with &lt;a href="https://notebook.drmaciver.com/posts/2021-10-04-18:40.html"&gt;my comments about the skill analogy yesterday&lt;/a&gt; but I think the crucial feature of this is that the virtues are unified &lt;em&gt;with respect to a given set of good ends&lt;/em&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;I think the restriction to a domain makes this claim very limited indeed. If the domain is just a set of people or a given aim, that's not much of a restriction, but you can for example imagine someone who is very dedicated to helping people who are in danger but lacks patience with the emotional side of the problem - cultivating the virtue of courage but not of kindness. Is this just a restricted domain? They've included in their set of good ends people's physical but not emotional wellbeing.&lt;/p&gt;
-
-
-&lt;p&gt;I also think this has a sort of "in the limit" character to it - it's true, for example, that cultivating kindness is very important for firefighters, or soldiers, or people in other dangerous professions, but I bet you'll find they're skewed pretty heavily towards courage. Maxing out the skill of phronesis might require you to cultivate all the virtues, but I bet you can get pretty far on only some of them, and most people don't make it to the peak of any skill they develop.&lt;/p&gt;
-
-
-&lt;h3&gt;Teaching the virtues&lt;/h3&gt;
-
-
-&lt;p&gt;Returning to Intelligent Virtue, on page 84 we have the following:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Another important indication of the nature of virtue comes from the point that we can't teach the virtues in isolation, one by one, since they can't be learnt that way. Generosity gives us a good example here. A child doesn't learn to be generous by just giving her things away, or sharing things whether they belong to her or not. Generosity involves considerations of fairness and justice. For, as Aristotle points out, generosity requires taking from the right sources as well as giving to the right people in the right way.' And 'giving in the right way' involves a great deal. Giving a gift which is indifferent to what the recipient wants is not generous. Generosity requires intelligence about what people both need and want, and also about appropriate ways, times, and manners of giving, avoiding obtrusiveness and condescension. Generosity thus requires, at the least, benevolence, a real interest in other people, their needs, and their wants. To get it right in giving, how to give, when and to whom, not to mention how much, you have to have an interest in the welfare of others beyond their role as your beneficiaries; otherwise you risk your giving becoming selfish showing-off. Generosity thus requires real benevolent concern for others, along with minor virtues such as tact. Obviously children don't get all of this at once, and even as adults we find we constantly need improvement; the point here is that we can all see, in the course of ethical development, that some virtues 'cluster'. This indicates something about the nature of virtue; it is not just a casual point, extraneous to an account of virtue, about how we learn to be virtuous.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;This is, I think, a good point and ties in well with the above "limited unity of the virtue". Within a given domain, we have a set of "good ends", and we must learn to value those ends, and it often doesn't make sense to split them up. You don't learn to value being generous and value being fair, you learn to value other people and thus be generous and fair to them.&lt;/p&gt;
-
-
-&lt;p&gt;(As a side note, an ongoing point of annoyance with the world for me is that it seems most people &lt;em&gt;don't&lt;/em&gt; do this. They learn to value other people and then put in the minimum effort they can get away with with thinking through the implications of that)&lt;/p&gt;
-
-
-&lt;p&gt;Later on page 88:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;We do not need far-fetched thought experiments to grasp that the way we develop in one area of our lives can indeed have an impact on the way we develop in other parts. The compassionate person might well need courage to insist that a victim be treated properly, or to stand up to a bully on someone else's behalf. If he lacks courage, his compassion will be flawed too; victims can't rely on it, and others generally can't rely on him to be compassionate in appropriate circumstances. In general a virtue which is unreliable in its exercise because of facts about the person (rather than external circumstances) is a compromised virtue.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;This seems right. One of the things the drives unity of the virtues is that sometimes you might need both virtues at once. I think this is the same argument I put forth yesterday (which isn't surprising as my thoughts have previously been informed by this book, and I was reading bits of this chapter):&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;I think what seems to me the strongest argument in favour is roughly that to the degree that virtue is the skilled practice of being a good person, relative to a particular conception of good, virtue is unitary in the sense that you have to in principle be able to do all of it all of the time. A given situation might elicit both the virtues of generosity and courage, and one requires the practical wisdom to navigate the combination of the two. If their is a virtue of courage and a virtue of benevolence, there is a joint virtue of benevolence-and-courage, and the exercise of any one of the individual virtues will sometimes be bottlenecked on the exercise of the joint virtue.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;So virtues are unitary in the sense that one has to be able to unify them in order to reliably perform them.&lt;/p&gt;
-
-
-&lt;p&gt;She ties this in to virtues developed in separate domains and why we might expect them to be unified:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;A trial lawyer, for example, may develop adversarial traits in the courtroom which, in the context of her family, would distress both her and her family, where the virtues she exercises are cooperative. Often it is not clear that both sets of traits are in fact virtues, but let us suppose that they are. The person is still living in a compartmentalized way, one with divisions and compromises always present, and one in which the values sought in one aspect of life may well be in conflict with those pursued in another. Moreover, the less the person sees it as her aim to live an integrated life, the more these conflicts will be both painful and hard for her to predict. This is hardly an ideal for a virtuous life. For one thing, it comes into sharp conflict with the aspect of virtue discussed in the last chapter-the point that the virtuous person finds her life enjoyable, in part because of lack of inner conflict or its threat. &lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;Does virtue require a lack of inner conflict? It doesn't seem unreasonable to me, although I don't know that I have a strong feeling on it one way or the other. Certainly it seems plausible to me that cultivating virtue requires resolving inner conflicts, along the lines of the sort of therapy-meets-virtue-ethics I discussed in &lt;a href="https://notebook.drmaciver.com/posts/2021-10-03-08:59.html"&gt;Notes on moral disorder&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;h3&gt;Does maximal virtue imply omnicompetence?&lt;/h3&gt;
-
-
-&lt;p&gt;Intelligent virtue, page 94:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;The third objection is the most important. How can the virtues be so unified by practical intelligence that they imply one another, when different people obviously lead different ways of life and need to exercise different virtues? A soldier needs one set of virtues, a caregiver to an Alzheimer's patient needs another set. Someone in a position of leadership will need a different set of virtues from the people being directed.We are faced by an apparent dilemma. On the one hand, if we are committed to holding that nobody can be fully virtuous unless they can exercise all the virtues, we seem committed to the absurd conclusion that to live a fully virtuous life you will have to live the life of a soldier and that of a caregiver (and many more besides). For if you have all the virtues, you must be able to exercise all the virtues, and it seems that you must live a life in which opportunities to exercise all the virtues are available to you. An addition to this claim can be made: to exercise a virtue will probably require fairly specialized knowledge. The virtue of compassion is not exercised by merely standing around wishing you could help: the compassionate person actually helps the wounded, aids the suicidal, and so on. But now it looks as though the fully virtuous person, in being omni-virtuous also has to be omni-competent, equipped to be, on demand, a doctor, psychiatrist, computer expert, plumber, and so on; which is even more absurd.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;The next couple of pages include a bunch of discussion of this in which she tries to weasel out of this problem by saying that the &lt;em&gt;possession&lt;/em&gt; of the virtues is independent of whether your life offers you equal opportunity for the &lt;em&gt;expression&lt;/em&gt; of the virtues.&lt;/p&gt;
-
-
-&lt;p&gt;I think this is nonsense.&lt;/p&gt;
-
-
-&lt;p&gt;If we take the skill analogy for virtue that she advocates for seriously (and I do), this is like saying that just because one doesn't have any opportunity in one's life to practice piano one might still possess in principle the piano playing talents of a maestro. Obviously you don't. The development of a skill requires practice, and if your life does not offer opportunities for the use of a virtue then you will not develop it to its maximal potential.&lt;/p&gt;
-
-
-&lt;p&gt;Also that's fine.&lt;/p&gt;
-
-
-&lt;p&gt;I think it's in some sense clearly true that being omni-virtuous requires omni-competent, but so what? Being maximally virtuous is obviously completely unachievable for mortal beings. How could it be otherwise? If virtue ethics is to be usable (and its focus on practical wisdom suggests it must be) it must be focused on the sort of virtue pursuable by human beings, not gods, and that doesn't involve striving to be the best possible, only to be better.&lt;/p&gt;
-
-
-&lt;h3&gt;In Conclusion&lt;/h3&gt;
-
-
-&lt;p&gt;The argument that the virtues are unified via practical wisdom is interesting and seems to be pointing at something useful, but I think falls short. It's not that virtues are unitary, but that they unify, and that sometimes the thing we are bottlenecked on in improving one virtue is another virtue.&lt;/p&gt;
-
-
-&lt;p&gt;I do think the concept of practical wisdom having to be directed towards good ends very much hides the relativism implicit in virtue ethics. It's clear that virtues can only be unified within a given conception of the good. This isn't a problem as I'm comfortable with relativism, but it also makes the "the" in "the unity of the virtues" somewhat suspect.&lt;/p&gt;
-
-
-&lt;p&gt;All this being said, I think I need to spend more time with the unity of the virtues chapter in Intelligent Virtue, as I left it a bit to the end and don't feel like I really did it justice as a result. I may or may not actually do that.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2021-10-06-00:02.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-10-06-16:21.html</id>
     <title>Revisiting Intelligent Virtue</title>
@@ -1205,7 +981,7 @@ and as a result is more likely to believe things that justify that inaction (thi
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-10-29-09:43.html</id>
     <title>Probably enough probability for you</title>
-    <updated>2021-10-29T09:43:00+01:00</updated>
+    <updated>2021-10-30T09:21:13+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Probably enough probability for you&lt;/p&gt;
@@ -1521,5 +1297,243 @@ but often it's worth learning &lt;em&gt;how&lt;/em&gt; to think of everything in
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2021-10-29-09:43.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2021-11-10-11:09.html</id>
+    <title>Writing is (from the id)</title>
+    <updated>2021-11-10T11:09:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Writing is (from the id)&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2021-11-10&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Recently I've been experimenting with a bunch of different styles of writing.
+Some of these are in public under my real name, others aren't.
+&lt;a href="https://drmaciver.substack.com/p/first-hard-choice"&gt;The First Hard Choice&lt;/a&gt; is an example of me doing this on my newsletter.&lt;/p&gt;
+
+
+&lt;p&gt;On Twitter I recently described this as "writing from the id":&lt;/p&gt;
+
+
+&lt;blockquote class="twitter-tweet"&gt;&lt;p dir="ltr" lang="en"&gt;There's a writing trick I've figured out recently that is something like "writing from the id" and gosh I cannot exactly recommend it but it sure is interesting.&lt;/p&gt;— David R. MacIver (@DRMacIver) &lt;a href="https://twitter.com/DRMacIver/status/1458040657663123461?ref_src=twsrc%5Etfw"&gt;November 9, 2021&lt;/a&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;&lt;script async="" charset="utf-8" src="https://platform.twitter.com/widgets.js"&gt;&lt;/script&gt;&lt;/p&gt;
+
+
+&lt;p&gt;What I mean by this is that you just narrow in on a feeling that exists in your subconscious and pull on the thread and see what comes out, without any real concern about what you are trying to do or who you are trying to do it for other than yourself, and your success depends largely on how well you've narrowed in on some deep well of feeling.&lt;/p&gt;
+
+
+&lt;p&gt;I said I didn't know how to explain the mental motion, and then this morning I remembered that I have in fact written about 2/3rds of a draft explaining part of the key to the mental motion, months ago, and then never finished it because I lost the thread of the thought and it was impossible to resume.&lt;/p&gt;
+
+
+&lt;p&gt;Well, this is the notebook, the place for incomplete thoughts and bad explanations,
+and there's enough good in the draft that maybe it will help someone even as it is.&lt;/p&gt;
+
+
+&lt;h3&gt;Writing is&lt;/h3&gt;
+
+
+&lt;p&gt;Hey. Hey you. Listen up. You’ve been lied to. But I’m going to tell you the truth.&lt;/p&gt;
+
+
+&lt;p&gt;Well, no, I’m probably going to lie to you too. But they’ll be different lies. Maybe between the two lies you’ll figure out a bit of the truth.&lt;/p&gt;
+
+
+&lt;p&gt;This is a piece in three voices. You probably won’t need me to spell them out, you should be able to hear them in the writing. You could name them, if you like. Scholar, poet, bro.&lt;/p&gt;
+
+
+&lt;p&gt;Rude TBH.&lt;/p&gt;
+
+
+&lt;p&gt;But they are all me. I’m just doing an experiment in writing style, practicing code switching mid thought.&lt;/p&gt;
+
+
+&lt;p&gt;Code switching.
+Shape shifting.
+Dancing from form to form as the thought and the feeling shifts and twists.&lt;/p&gt;
+
+
+&lt;p&gt;Writing is
+Becoming the writer
+you need to be
+In order to write
+The words that
+you need to write&lt;/p&gt;
+
+
+&lt;p&gt;Following where it takes me.
+Not trying to hide the dance from you.
+The whirlwind lurking behind each piece.&lt;/p&gt;
+
+
+&lt;p&gt;You know why I write what I do, right?
+Because someone has to.
+This is no different.&lt;/p&gt;
+
+
+&lt;p&gt;It’s all a dumb trick of course. This piece is no different than any other. It’s not an escape from style, it’s just another style. More gimmick than truth. I give it a C-. Cute idea, lousy execution. Stick to the assignment, kid.&lt;/p&gt;
+
+
+&lt;p&gt;This is unfair of course. At school, assignments where I broke form usually got an A. Aside from some mutually embarrassing conversations about unintended sexual connotations, my English teacher rather liked my poetry. I got an A for a very funny chemistry report.&lt;/p&gt;
+
+
+&lt;p&gt;Oh good, an A. That makes it all better. That’s the lie, right there. You can’t grade writing. That’s not what it’s for. It’s bullshit. Writing isn’t there to be assessed, it’s there to get shit done. Nobody is grading your fucking tweets, and every single one is more useful than any essay you ever wrote in school. Writing is a way to&lt;/p&gt;
+
+
+&lt;p&gt;Make a connection
+An intimacy
+I can’t let you in
+Can’t show you what it’s like to be me
+But maybe I can give you a glimpse?
+Walk you through the steps
+Show you a little of what it’s like.&lt;/p&gt;
+
+
+&lt;p&gt;I tell people that writing is like pulling on the thread of a thought.
+This is true. This is a lie.&lt;/p&gt;
+
+
+&lt;p&gt;Writing is like stepping into the water. Sometimes the current is gentle and you can go where you want. Sometimes a torrent takes you and you have no choices left.&lt;/p&gt;
+
+
+&lt;p&gt;This isn’t how they tell you it works, of course. Plan, prepare, edit. Put on a performance for teacher. The things you write for yourself aren’t “real” writing”, are they?&lt;/p&gt;
+
+
+&lt;p&gt;You can tell they’re not real because nobody is watching you. Grading you. Telling you your the right sort of person, fitting into the nice tidy person shaped box they’ve laid out for you. What do you mean, it doesn’t fit? What, you want special treatment? Fuck you, you’re not special, you’re not worth it.&lt;/p&gt;
+
+
+&lt;p&gt;You are, of course.&lt;/p&gt;
+
+
+&lt;p&gt;The truth is they don’t know how to teach you to write. Neither do I.&lt;/p&gt;
+
+
+&lt;p&gt;Perhaps writing is not something you can teach, because all the most important parts are already there.&lt;/p&gt;
+
+
+&lt;p&gt;All you can do is
+Show them to the water
+Invite them in
+Tell them you’ve got them
+It’s safe
+It’s not real water
+You can’t drown
+Though you won’t always believe this
+when the current takes you.&lt;/p&gt;
+
+
+&lt;p&gt;We don’t know how to teach writing because writing is everything
+And everything can be writing
+How can you teach everything?
+We barely know how to teach something.&lt;/p&gt;
+
+
+&lt;p&gt;Remember when I said there were three voices here? That was a lie of course. There’s only one voice here. It’s all me.&lt;/p&gt;
+
+
+&lt;p&gt;You can wall off the different parts of you, keep them tidy and separate.&lt;/p&gt;
+
+
+&lt;p&gt;But there are no walls inside your mind
+Unless you put them there.&lt;/p&gt;
+
+
+&lt;p&gt;We learn particular ways of writing designed to please particular groups of people. Does this sound like a tweet? Does this sound like a paper? Have you learned to make yourself acceptable to us? How can we know what to make of you if you do not first make yourself into what we want you to be? In order to write, you must first decide who to write for.&lt;/p&gt;
+
+
+&lt;p&gt;Or you can make them
+By writing for them&lt;/p&gt;
+
+
+&lt;p&gt;You can write within a neat and tidy style, following all the rules. You should. The rules are an excellent place to learn. A style is where you learn not what to write but how. By following the rules and learning what they entail you can learn skills that you could never find left to your own devices.&lt;/p&gt;
+
+
+&lt;p&gt;But many of the rules you learn are shit. Dry, boring, forms, that do nothing but make you easy to assess. A great way to make it easy for someone to see what’s in your head without caring about it. But that isn’t what writing is for. Writing isn’t how you should what’s in your head. Writing is how you put new things in other people’s heads. Writing is&lt;/p&gt;
+
+
+&lt;p&gt;A borderland
+Where chaos and order meet
+Where the jumble and swirl of thoughts inside your head
+Take shape upon a page
+Into something that can live on in others&lt;/p&gt;
+
+
+&lt;p&gt;Writing is
+Always, ultimately, a way to explain part of yourself to others. This is how I see the world. This is what I think is important. This is what I think this is. This is what I see. This is how I feel.&lt;/p&gt;
+
+
+&lt;p&gt;But it’s cringe, right? Adults don’t write like this. There’s a reason for that. You left your poetry behind with your teenage years. Back then you still acted like your feelings mattered. But this wasn’t how you were supposed to write poetry. It was too raw, too crude. How could you think your clumsy words on a page could matter to anyone?&lt;/p&gt;
+
+
+&lt;p&gt;Writing is
+Chasing the leading edge of those feelings
+And seeing where they lead you
+Drawing out a thought
+Clearing a space into which it can emerge
+Surprising even you&lt;/p&gt;
+
+
+&lt;p&gt;Writing is
+Sitting in front of a page
+And pouring out words onto it
+Fresh from the place where words come from.&lt;/p&gt;
+
+
+&lt;p&gt;Writing is where you make a connection
+To others
+To yourself
+Where you bring together things that
+you didn’t know belonged together
+And place them upon the page and only then can say
+“Yes, that’s right. That’s how it is.”&lt;/p&gt;
+
+
+&lt;p&gt;Good writing matters. It is impossible to write about something that doesn’t matter to you. Instead you must become a writer to whom it matters, and write from there. Writing is taking a part of you that matters and sharing it with others, as a gift.&lt;/p&gt;
+
+
+&lt;p&gt;Or writing is taking a part of you that matters
+And putting it onto a page
+Never to be shown to others, because you are afraid that they might crush it.&lt;/p&gt;
+
+
+&lt;p&gt;The formal style provides a distance from the writing. You show yourself, but also hide yourself. You carefully, clinically, talk about your feelings, but never really show them. You couch your words in an accent of “well this is just what I think”, or an academic “one” in which the authorship of the piece is hidden behind a veil of indirection. No, look elsewhere, not at me. Throwing your passive voice.&lt;/p&gt;
+
+
+&lt;p&gt;You learned this style as a defence mechanism. It’s terrifying to put a piece of yourself out into the world and have it judged. We are not kind to others’ writing. We critique it, we comment on it, we focus on the wrong parts and take some random detail and tear it to shreds while the author looks on in horror, crying “No! Listen to what I’m saying. That’s not what matters here!”.&lt;/p&gt;
+
+
+&lt;p&gt;So we write armoured. We put out these pieces with only the barest sliver of ourselves, wrapped in so many defences and hedges and justifications that it was hardly worth writing. “Look at me”, we cry, “Hear what I’m saying”, behind so many caveats and hedges and with so little to say that they cannot possibly hear what we’re saying.&lt;/p&gt;
+
+
+&lt;p&gt;Or sometimes we disown the piece. Cast it out into the world in a manner that indicates we don’t really mean it. “Ha ha, only joking… unless?” &lt;/p&gt;
+
+
+&lt;p&gt;You can see it here, writing a piece like this required me to add a whole layer of ironic meta-commentary to make it safe.&lt;/p&gt;
+
+
+&lt;p&gt;No, fuck you, that’s not what this is. This is the lie again. Serious is not the same as formal.&lt;/p&gt;
+
+
+&lt;p&gt;Writing doesn’t have to be good. It’s not a neat and tidy medium in which every thought and feeling can be tidily cut and pressed and put on display. I don’t write in an informal style when I’m not serious, I write like this when I am so serious I can’t help it. I don’t have the time or energy to sit down and put things in a nice and tidy format in which I present all my arguments and put in fancy&lt;/p&gt;
+
+
+&lt;p&gt;Line breaks which somehow break the rhythm in a way that makes it art. Sometimes I’m just trying to talk to you, and what I want to talk about is important!
+Not everything is pretty. Not everything is neat. Not everything I write is because I have some cleverly packaged idea I want to communicate to you.&lt;/p&gt;
+
+
+&lt;p&gt;You know what writing is? Writing is pure unbridled rage. A scream at the world “be different!”. You lower your voice, learn to argue persuasively, learn to be nice and polite and tidy in a way &lt;/p&gt;
+
+
+&lt;p&gt;(This is where the draft ends, and I don’t intend to finish it)&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2021-11-10-11:09.html" rel="alternate"/>
   </entry>
 </feed>
