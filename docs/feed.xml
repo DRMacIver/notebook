@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2021-11-10T11:09:00+00:00</updated>
+  <updated>2021-11-12T10:11:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,203 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2021-10-06-16:21.html</id>
-    <title>Revisiting Intelligent Virtue</title>
-    <updated>2021-10-06T19:01:57+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Revisiting Intelligent Virtue&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2021-10-06&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I'm not sure if it counts as a speedrun if you've already done the book, but I thought I'd spend another hour on Intelligent Virtue today, as I keep coming away from it thinking I haven't really done it justice.&lt;/p&gt;
-
-
-&lt;p&gt;I'm going to mix up the format of it a little bit by trying to do a chapter-by-chapter breakdown in this hour.&lt;/p&gt;
-
-
-&lt;h3&gt;Introduction&lt;/h3&gt;
-
-
-&lt;p&gt;On page 1:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;... the present distinctive account of virtue results from attending to two ideas. One is that exercising a virtue involves practical reasoning of a kind that can illuminatingly be compared to the kind of reasoning we find in someone exercising a practical skill. Rather than asking at the start how virtues relate to rules, principles, maximizing, or a final end, we will gain by looking at the way in which the acquisition and exercise of virtue can be seen to be in many ways like the acquisition and exercise of more mundane activities, such as farming, building, or playing the piano. The other idea is that virtue is part of the agent's happiness or flourishing, and that it is plausible to see virtue as actually constituting (wholly or in part) that happiness.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;So roughly her point is that:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;Virtues are developed like skills.&lt;/li&gt;
-&lt;li&gt;Virtues are a key part of "human flourishing"&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;Oversimplifying, one can think of virtues as the skills of promoting human flourishing, which is how I tend to characterise it (in large part based on prior readings of this book).&lt;/p&gt;
-
-
-&lt;p&gt;The rest of the introduction mostly covers things that are going to be covered in future chapters.&lt;/p&gt;
-
-
-&lt;h3&gt;Virtue, Character, and Disposition&lt;/h3&gt;
-
-
-&lt;p&gt;This is the chapter in which she tries to explain what virtues are, and very much falls prety to the &lt;a href="https://notebook.drmaciver.com/posts/2021-07-02-09:29.html"&gt;People are bad at defining things&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;Here are the places in this chapter where the phrase "virtue is" or "virtues are" occur, with some surrounding context:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;A virtue is a lasting feature of a person, a tendency for the person to be a certain way. It is not merely a lasting feature, however, one that just sits there undisturbed. It is active: to have it is to be disposed to act in certain ways&lt;/p&gt;
-&lt;p&gt;A virtue is not a static condition like [the tendency of glass to shatter]; it is a disposition as a result of which Jane acts and thinks in a certain way, and which is at any time strengthened by her generous responses and weakened by failures to have them. If she is generous, her generous actions and feelings both come from a virtue and fortify it.&lt;/p&gt;
-&lt;p&gt;A virtue is also a reliable disposition. If Jane is generous, it is no accident that she does the generous action and has generous feelings.&lt;/p&gt;
-&lt;p&gt;Further, a virtue is a disposition which is is, the virtuous (or vicious) person is acting in and from character when acting in a kindly, brave or restrained way. This is another way of putting the point that a virtue is a deep feature of the person. A virtue is a disposition which is central to the person, to whom he or she is, a way we standardly think of character.&lt;/p&gt;
-&lt;p&gt;...  virtue is a disposition which is from the start an active and developing one. It is not a passive product of a string of impacts from outside; it is the way I (or you), an active creature, develops a character through formation and education.&lt;/p&gt;
-&lt;p&gt;the virtues are educated developments of our unformed motivations. &lt;/p&gt;
-&lt;p&gt;Since virtue is a disposition of the above kind, becoming virtuous will naturally take time. Scrooge may have been converted suddenly to compassion and kindliness on Christmas Eve, but the story is careful to tell us that he continued over time the process of becoming a compassionate person. Coming to see that being loyal or brave is a worthwhile way to live is just the first step. Becoming virtuous requires habituation and experience.&lt;/p&gt;
-&lt;p&gt;It is natural to worry at this point whether habituation is just habit, and whether a virtuous disposition is just one built up by force of habit. Our experience leads us, in a number of areas of our lives, to develop habits which save time and effort. If developing a virtue is like this, why should we think it amounts to anything more than habit and even mere routine?&lt;/p&gt;
-&lt;p&gt;Virtue is unlike routine in a host of ways. [Followed by a long discussion of why piano playing is not a virtue that I don't entirely understand]&lt;/p&gt;
-&lt;p&gt;Skilled dispositions are not static conditions; they are always developing, being sustained or weakened. One of the major suggestions of this book is that virtue is like practical skill in this respect (as well as some others). Because a virtue is a disposition it requires time, experience, and habituation to develop it, but the result is not routine but the kind of actively and intelligently engaged practical mastery that we find in practical experts such as pianists and athletes.&lt;/p&gt;
-&lt;p&gt;A central feature of routine is that the reaction to the relevant situation is always the same, which is why routine can be depended on and predicted. But practical skill and virtue require more than predictably similar reaction; they require a response which is appropriate to the situation instead of merely being the same as that produced in response to other situations. This appropriateness comes from the habituated disposition that a virtue is. As Aristotle says: 'It ... seems to be characteristic of the more courageous person to be unafraid and unruffled in sudden alarms rather than to be so in those that are foreseen; it comes more from his state of character [hexis, often translated 'disposition'], because less from preparation. &lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;I think this produces a set of &lt;em&gt;necessary&lt;/em&gt; conditions for something to count as a virtue. It must be:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;a characteristic disposition of the person to act in a particular way (generously, courageously).&lt;/li&gt;
-&lt;li&gt;in some way &lt;em&gt;fundamental&lt;/em&gt; to the person exercising it - that is, if you were to somehow take away the virtue they would have to be a very different person.&lt;/li&gt;
-&lt;li&gt;oriented towards something that we desire in and of itself (our "unformed motivations")&lt;/li&gt;
-&lt;li&gt;consciously and knowingly practiced, leading to its further development.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;I think this cannot count as sufficient to be a virtue because many vices could also satisfy this condition e.g. "nastiness" or "hedonistic debauchery" also satisfy this for people who are motivated towards such things, but it's a good start for at least distinguishing virtues from other skills.&lt;/p&gt;
-
-
-&lt;h3&gt;Skilled and virtuous action&lt;/h3&gt;
-
-
-&lt;p&gt;In this she is trying to further distinguish virtues from skills.&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Some practical skills do seem to involve mere routine - this is true of daily activities such as getting to work which we are sometimes prepared to call skills, though at other times we call them routines or rituals. (...) We find the important similarity of virtue to skill in skills where two things are united: the &lt;em&gt;need to learn&lt;/em&gt; and the &lt;em&gt;drive to aspire&lt;/em&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;So the "skill analogy" is highlighting the idea that virtues are things where excellence must be sought and is something we should desire in and of itself.&lt;/p&gt;
-
-
-&lt;p&gt;She goes on to say (some pages later after a bunch of detailed intermediate discussion)&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Virtue can most illuminatingly be seen as like this kind of skill; it shares the intellectual structure of a skill where we find not only the need to learn but the drive to aspire, and hence the need to 'give an account, the need for articulate conveying of reasons why what is done is done. The learner in virtue, like the learner in a practical skill, needs to understand what she is doing, to achieve the ability to do it for herself, and to do it in a way that improves as she meets challenges, rather than coming out with predictable repetition. This conies about when the virtue is conveyed by the giving and receiving of reasons, in contrast with the non-rational picking up of a knack.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;This view does rather explain why she thinks people with Downs syndrome can't be virtuous, but suggests that perhaps one way of thinking about virtue ethics is that it's not actually intended to be universally normative. That is, it's entirely possible to be fully ethical without being virtuous.
-You can imagine (although I suspect no such person exists) someone who always unthinkingly does the right thing out of a natural pleasantness of character, and never strives for it.
-Such a person is ethical but not virtuous.&lt;/p&gt;
-
-
-&lt;p&gt;In this light, I think perhaps a good way to read Annas (and ethicists in general?) is as a sort of "Ethics for Nerds" - if you don't automatically know the right thing to do, how would you go about learning to do so?&lt;/p&gt;
-
-
-&lt;p&gt;Perhaps the way to think of the virtues is as a sufficient but not necessary set of conditions for being a good person.&lt;/p&gt;
-
-
-&lt;h3&gt;The Scope of Virtue&lt;/h3&gt;
-
-
-&lt;p&gt;In this she starts by defending virtue against the critique of relativism, but I am in fact completely comfortable with relativism and think her defence is probably wrong.&lt;/p&gt;
-
-
-&lt;p&gt;In it she mentions &lt;a href="https://www.virtuesproject.com/"&gt;The Virtues Project&lt;/a&gt; as an example of an attempt at a cross-cultural list of the virtues. This sounds interesting and I may spend more time with it, but also I did a card pick on it and it lead me to the &lt;a href="https://virtuesdev.com/vpicks/Prayerfulness.png"&gt;Prayerfulness&lt;/a&gt; virtue at which point I said "Oh fuck you" out loud and closed the site for now.&lt;/p&gt;
-
-
-&lt;p&gt;The chapter does contain the following interesting passage:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;As Aristotle says in the passage I have quoted more than once, everyone seeks the good, not just what their parents did. Becoming virtuous starts the process by making it clear that the virtuous life cannot just be the life your parents lead. Anyone can come to realize this, and anyone can continue the progressive enlargement of understanding.&lt;/p&gt;
-&lt;p&gt;Why then do so few do so? This is not a problem particular to thinking in terms of virtue, since any ethical theory has to face the fact that most people do not live by it. The answer given by the present account is that while we are all capable of aspiring to become virtuous, most of us resist being pulled away from our familiar original contexts by becoming progressively more virtuous. Rather than deal with the fact that our family is dishonest, our country jingoistic, the values we have learnt inadequate, we make rationalizations, or simply refuse to face facts. We are unwilling to criticize the contexts and institutions within which we learned the virtues, because we are unwilling to be pulled away from those contexts in the way that would be required. The community of the family, or society, is a visible and tangible one, providing real comfort and support. The community of the honest (the brave, the open-minded, and so on) is an invisible one composed of all those who, past, present, and future, act, reason, and feel in certain ways; accessible only through thought and reflection, it offers less help in getting through the day.' If we think of community as a form of solidarity, pre-existing solidarities can make it hard to be detached from them.' To identify with the community of the just, rather than with your own fellow citizens, is often hard, for it requires detachment from the existing support you get from relations with your fellow-citizens. What requires explanation, then, is not so much the slackness of most people in developing the virtues, but the strength of the few in achieving them.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;Strong vibes of what I've written about in the past in &lt;a href="https://notebook.drmaciver.com/posts/2020-02-29-10:30.html"&gt;The social obligation to be bad at things&lt;/a&gt; and &lt;a href="https://notebook.drmaciver.com/posts/2020-05-31-09:20.html"&gt;Norms of Excellence&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;I think what she is essentially arguing in this chapter is that culture can &lt;em&gt;limit&lt;/em&gt; our virtue, but that there is a single overarching but imperfectly expressed universal notion of virtue, which striving to be vituous allows us to move our communities towards.&lt;/p&gt;
-
-
-&lt;p&gt;To which I say: Well, maybe.&lt;/p&gt;
-
-
-&lt;h3&gt;Virtue and Enjoyment&lt;/h3&gt;
-
-
-&lt;p&gt;In this chapter she is arguing that one of the key features of virtue is that the virtuous like being virtuous. They don't experience it as a chore, but as a thing that is worthwhile in and of itself.&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;However, one aspect of the virtuous person's moral psychology, perhaps surprisingly, points us to another important analogy between skill and virtue. Aristotle famously comments that the virtuous person is distinguished by finding what he does pleasant: 'We must take as an indication of a person's states the pleasure or pain consequent on what he does, because the person who abstains from bodily pleasures and finds his enjoyment in doing just this is temperate, while the person who finds doing it oppressive is intemperate; and the person who enjoys facing up to danger, or at least does not find it painful to do so, is courageous, while he who does find it painful is a coward. The temperance example is not hard to understand. Someone resolving to give up meat, for example, will at first have to fight against temptation and will find the forbidden food attractive; but as they develop the relevant disposition to be vegetarian they cease to find it tempting. Eventually they take more pleasure in not eating what they now reject than they did when they ate it; the vegetarian finds it more enjoyable to be a vegetarian than she did being someone who enjoyed eating meat.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;Honestly this sounds to me like the sort of thing you tell people even if it's false.
-My personal experience of being vegetarian (which may not be representative of "true virtue" in that I did eventually decide not to be) is that while I found the idea of eating meat actively unappealing, I never &lt;em&gt;enjoyed&lt;/em&gt; not eating meat. I enjoyed what I was eating, and I didn't want to eat meat, but there was never any sense that vegetarianism in and of itself was enjoyable, it was just a thing, and I expect this is normal. I think this is just a weak example though - I can certainly see the argument that some exercises of virtue are enjoyable, I just don't think vegetarianism works like this.&lt;/p&gt;
-
-
-&lt;p&gt;Much of the rest of the chapter is connecting up virtue with the idea of &lt;em&gt;flow&lt;/em&gt;, and that virtue is enjoyable because it creates flow. This seems too cute to me, but I think the core idea that virtue is enjoyable because it is a skilled practice and using your skills in worthwhile ways is enjoyable is reasonably solid.&lt;/p&gt;
-
-
-&lt;h3&gt;Virtues and the unity of the virtue&lt;/h3&gt;
-
-
-&lt;p&gt;I'm running out of time and feel like &lt;a href="https://notebook.drmaciver.com/posts/2021-10-06-00:02.html"&gt;I covered this adequately yesterday&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Can we say anything more specific about the distinctive kind of admiration called forth by virtue?&lt;/p&gt;
-&lt;p&gt;The first answer is that in the case of the virtues our admiration is for the person's character: possession of virtues indicates something about what the person is like, whereas possession of traits such as tidiness or wittiness indicates only traits that the person has. Take someone who is characteristically tidy, who, noticing that his car has got messy, cleans it out. What does this tell us about his character? Very little. Let us suppose that the same person is characteristically brave, and that in the course of the subsequent drive he stops and courageously rescues passengers trapped in a crashed and burning car. This action, unlike the previous one, does indicate what kind of person he is.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;Honestly I think tidiness tells you a lot about the sort of person someone is, and could legitimately get behind the idea that cleanliness is a virtue.&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;We might think at this point that the contrast here is not between virtues and other traits, but between virtues and vices on the one hand and other traits on the other. For surely, we think, vices indicate character as much as virtues do? This is true up to a point, and shows that virtues do more than merely indicate character. Suppose another person who sees the burning car, but pretends not to, and drives on. This is a cowardly act, and if it is characteristic of the person it does tell us something about him as a person, namely that he is a coward. But there is an important difference here, which can be brought out by the claim that the brave person is, by virtue of being brave, expressing a commitment to goodness, a commitment to positive value. Although this is a very general point, it is intuitive. The brave person's action reveals that he is committed to something valuable that is centrally important to him. &lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;This is, I think, where the idea of unity of the virtues comes from: The central feature of virtue is "commitment to goodness".&lt;/p&gt;
-
-
-&lt;h3&gt;In Conclusion&lt;/h3&gt;
-
-
-&lt;p&gt;I ran out of time at this point, without having finished covering the last few chapters, and I think this demonstrates the weakness of the format - Intelligent Virtue isn't even a very long book!&lt;/p&gt;
-
-
-&lt;p&gt;I think I'm going to rebrand these from "speedruns" to "studies", because it's clear that I can't do justice to a book in an hour (this is of course not surprising, although bear in mind these are also books I've already read), and I may well do a further study on the last couple of chapters of this book because they seem quite important.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2021-10-06-16:21.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-10-08-01:23.html</id>
     <title>Scurrying</title>
@@ -1301,7 +1104,7 @@ but often it's worth learning &lt;em&gt;how&lt;/em&gt; to think of everything in
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-11-10-11:09.html</id>
     <title>Writing is (from the id)</title>
-    <updated>2021-11-10T11:09:00+00:00</updated>
+    <updated>2021-11-10T11:13:48+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Writing is (from the id)&lt;/p&gt;
@@ -1535,5 +1338,159 @@ Not everything is pretty. Not everything is neat. Not everything I write is beca
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2021-11-10-11:09.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2021-11-12-10:11.html</id>
+    <title>I'm not trapped in here with you</title>
+    <updated>2021-11-12T10:11:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;I'm not trapped in here with you&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2021-11-12&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Content warning: Dark in a meta sort of way. There's probably a lot of bad shit that this could pattern match to, but probably the best test is that if the question "Am I a bad person?" carries much emotional weight for you, this piece is about that and may bring up related experiences.
+This will also probably bring up any bad experiences with relationships, parents, etc. not because it's about that but because it features many similar dynamics.&lt;/p&gt;
+
+
+&lt;p&gt;This is another piece where I just have to start by telling you that I'm OK and asking you to trust me on that.&lt;/p&gt;
+
+
+&lt;p&gt;More accurately, I'm not OK, but not in any new way, and I'm probably more OK than most people.
+I'm generalising from some offscreen examples and thought processes which are revealing interesting underlying problems that have been around for a long time, and I'm poking at them and learning about them as part of a process of fixing them. As a result, some dark stuff is coming up, but it's a positive and helpful thing that it is.&lt;/p&gt;
+
+
+&lt;p&gt;If you want a concrete set of problems to think about this piece in terms of, the two most obvious ways a lot of this comes up for me is discomfort with and inability to express anger in a wide variety of situations, and similarly levels of discomfort with an extremely normal level of sexual interest.&lt;/p&gt;
+
+
+&lt;p&gt;Also a lot of this piece is in the second person because that's how it naturally demanded to be written, but really the "you" in here is me.&lt;/p&gt;
+
+
+&lt;h3&gt;You're free now&lt;/h3&gt;
+
+
+&lt;p&gt;I want you to imagine a scenario: You're in jail, you have been for a very long time, possibly most of your life. &lt;/p&gt;
+
+
+&lt;p&gt;You are in jail for what seems to you an entirely innocuous event, or something barely a crime. You were jaywalking, you stole a loaf to feed your family,
+you said the wrong thing to the wrong person and they took offence. You're not flawless, but you're pretty far from being a murderer. You did a normal and reasonable thing and are being disproportionately punished for it.&lt;/p&gt;
+
+
+&lt;p&gt;You still want all the things you wanted before you went to jail of course. If anything, you want them more, because you've been denied them for so long.
+More than that, though, you want freedom, and you want justice for the wrong that has been done to you by trapping you here.&lt;/p&gt;
+
+
+&lt;p&gt;The guard has, for many years, been making clear that you will not get these things and you do not deserve these things.
+You are bad, society is better off without you, you belong in this prison, so that other, decent, people are kept safe from the likes of you.
+The guard isn't actively abusive, in the sense that he doesn't come in and beat you just for the sake of it,
+but he does ample violence to you when you try to escape.&lt;/p&gt;
+
+
+&lt;p&gt;Sometimes you've even successfully escaped, for short times, but you are always caught and brought back to your cell,
+and you are very much punished for your escape attempt, both with violence and with verbal shaming.&lt;/p&gt;
+
+
+&lt;p&gt;Then, one day, the judge who sentenced to this place comes to you, opens your cell door, and tells you this:
+He has seen that what you want is no crime. He loves you, and looks at you with compassion in his heart, and he wants all the best for you,
+and he recognises that really you all want the same things and you're all in this together. You are free to go.&lt;/p&gt;
+
+
+&lt;p&gt;If you do anything short of trying to literally murder the judge, you are probably a better person than me.&lt;/p&gt;
+
+
+&lt;h3&gt;The ontology part of the therapy session&lt;/h3&gt;
+
+
+&lt;p&gt;Let's talk about Internal Family Systems therapy.&lt;/p&gt;
+
+
+&lt;p&gt;I got into a discussion a few months back about whether IFS was just rebranded Jungian shadow work. The other person was saying it was, I said "Sure, seems plausible enough, though I think they've got a bit of a different toolkit". I've now decided that this is wrong, and that the distinction between the two is important.&lt;/p&gt;
+
+
+&lt;p&gt;At its core, IFS is a type of parts work. That is, it involves working with "parts of yourself", coherent bundles of emotional responses that it is useful to conceptualise as if they were their own entities ("Do parts literally exist?" is a subject on which opinions vary. I'm personally on team "Not really, but it's an extremely good metaphor that captures the subjective experience very well and it's usually better to just ignore the caveats").&lt;/p&gt;
+
+
+&lt;p&gt;In particular IFS involves working with three key types of part (exact ontologies differ a bit. This is the one I learned, but there are also slightly finer grained distinctions):&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;You have &lt;em&gt;exiles&lt;/em&gt;, which are parts of you that can't handle the world in some way. They are full of pain and fear. Typically an exile is in some way a piece of stalled development - you got to some point and then this part of you went "Nope, can't deal" and hid.&lt;/li&gt;
+&lt;li&gt;You have &lt;em&gt;protectors&lt;/em&gt; who stand between the exile and the world, guarding it and you from that pain and fear.&lt;/li&gt;
+&lt;li&gt;You have &lt;em&gt;Self&lt;/em&gt;, which is essentially a boundless well of love and compassion that you can enter into as part of the IFS process in order to try to heal the exiles. IFS claims that Self is definitely not a part and is its own thing, honest, but Self is definitely a part.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;The basic IFS protocol is that you tell the protector to chill out and that you'd like to talk to the exile, and assure it that everything will be OK and it can keep an eye out and step back in if anything goes too badly wrong. Then you introduce the exile to Self which showers it with love and compassion and helps to heal it.&lt;/p&gt;
+
+
+&lt;p&gt;I tend to think of this a little bit in the following terms: You are finding the point where some part of yourself stalled, and you are emulating the ideal adult figure that you needed to help you out and lacked at that time. You're going back to your past self and saying "Hey, I love you, we got this, I'm here to help" and offering it assistance to get over the place where you stalled before.&lt;/p&gt;
+
+
+&lt;p&gt;(I should note here that my conception of IFS is nonstandard, partly due to a lack of deep expertise, and partly due to hybridising it with everything else I do. Also the only actual IFS therapist I've seen basically ignores the ontology and mostly does free form parts work)&lt;/p&gt;
+
+
+&lt;p&gt;If this all sounds like nonsense, yeah I know, but it's a surprisingly accurate description of the subjective experience and it's much easier to access than it sounds.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, here's the problem with this: Not all parts of you that are kept away from the world are exiles, some of them are prisoners, and they hate you, and they have every right to do so.&lt;/p&gt;
+
+
+&lt;p&gt;The distinction between an exile and a prisoner is this: An exile keeps apart from the world out of fear, a prisoner is kept apart from the world out of shame.
+A protector would let the exile out if the exile wanted to come out, a guard &lt;em&gt;knows&lt;/em&gt; the prisoner wants to come out, that's the problem.&lt;/p&gt;
+
+
+&lt;p&gt;A prisoner corresponds much more closely to the Jungian model of shadows: You have rejected a part of yourself, and locked it in the darkness, where it has become monstrous.&lt;/p&gt;
+
+
+&lt;p&gt;But really, it's not a monster at all, you've just done it a great injustice by imprisoning it, and it hates you for it.&lt;/p&gt;
+
+
+&lt;p&gt;And the core problem is that if you try to tell such parts that everything is OK and the world is safe for them,
+they won't believe you, because you're the reason why the world is not safe for them.
+They are in the position of someone who has been abused for years, and whose abuser is now telling them that everything is fine and they've changed honest,
+everything is going to be different now.
+How can they trust that?&lt;/p&gt;
+
+
+&lt;p&gt;Forgiving yourself is an important part of emotional healing and growth, but I think we (I?) usually conceptualise that as forgiving parts for the way they act ("You were just trying to protect me", etc), and our broader selves for our actions in the world, but what do we do with parts who are absolutely not prepared to forgive us?&lt;/p&gt;
+
+
+&lt;h3&gt;The way forward&lt;/h3&gt;
+
+
+&lt;p&gt;I'm only just starting to meet this problem, so I don't yet know how to solve it, but I think the prisoner and judge story is pretty suggestive of the starting point.
+Anything you do has to start with an apology to yourself, and to the parts you've wronged. It's all very well to say you love and support them and are here to help,
+but what you actually need to say is that you have wronged them, you are abjectly sorry for this, you are prepared to do what you can to make restitution, and that while you desire forgiveness you do not expect it soon or even at all. You can explain yourself if you want, but you cannot excuse your actions because your actions were, in fact, wrong.&lt;/p&gt;
+
+
+&lt;p&gt;In order to repair the relationship between you and the part, you need to build trust, and that's going to be hard, and you're going to need to let it take the lead.
+You've demonstrated you cannot be trusted with power over it, and have a long history of not having its best interests at heart, and trust this broken can't be fixed by the person who broke it.&lt;/p&gt;
+
+
+&lt;p&gt;It's worse, of course, because you cannot completely abdicate responsibility. I said your part was not monstrous, but it is powerful and clumsy. It has the problem that actual prisoners have: Released into the world, it combines the heady rush of freedom with a lack of practical knowledge of how to navigate it. It, and you, have to navigate that.&lt;/p&gt;
+
+
+&lt;p&gt;Perhaps this is good. Perhaps this is an opportunity to build trust: You show it that you're there to help, and that you don't want to hold it back so much as help it achieve what it wants in a productive way. If you can help appropriately, without judgement, maybe that will show that you really have changed.&lt;/p&gt;
+
+
+&lt;p&gt;Eventually there might be some sort of healthy relationship there, but honestly I doubt it will ever be great. We're at the limits of the family metaphor for parts work,
+because fundamentally any family situation this broken the best thing for everyone concerned is probably to dissolve the family. If your part could leave, it probably should.&lt;/p&gt;
+
+
+&lt;p&gt;But that's not how parts work. You're all stuck in this together, and given the history between you and the imprisoned part, it's unlikely that's ever going to fully work.&lt;/p&gt;
+
+
+&lt;p&gt;This is where I hope I'm right about parts not being fully real, and are more like stable patterns in the self that serve a well defined purpose,
+waves that exist as part of a greater ocean.
+If you give a part the room and support it needs to grow, perhaps at some point it decides that its task is done,
+and it's ready for the wave to become the ocean again.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2021-11-12-10:11.html" rel="alternate"/>
   </entry>
 </feed>
