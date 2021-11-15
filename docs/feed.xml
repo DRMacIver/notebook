@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2021-11-12T10:11:00+00:00</updated>
+  <updated>2021-11-15T18:31:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,66 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2021-10-08-01:23.html</id>
-    <title>Scurrying</title>
-    <updated>2021-10-11T23:42:25+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Scurrying&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2021-10-08&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I was going to do another study on Intelligent Virtue today but the day kinda got away from me (ironically, partly due to an in depth discussion of virtue ethics on discord),
-and now I'm tired, so I'm not going to.&lt;/p&gt;
-
-
-&lt;p&gt;Instead let me tell you about the Alexander Technique lesson I had with &lt;a href="https://alexandercentre.co.uk/"&gt;Peter Nobes&lt;/a&gt; earlier, which gave me a good handle on a problem I didn't know existed.&lt;/p&gt;
-
-
-&lt;p&gt;Let me set the scene.&lt;/p&gt;
-
-
-&lt;p&gt;Peter and I were about to play catch (this is surprisingly helpful) and I spotted that I had left my coffee cup right behind him. I felt that my throwing balls in the direction of a nearly full cup of coffee was probably a poor idea, so I said "Hang on a second, let me just move that" and walked across the room to put it somewhere less precarious.&lt;/p&gt;
-
-
-&lt;p&gt;Peter stopped me. "Did you maintain your Alexander while doing that?" "No, probably not."&lt;/p&gt;
-
-
-&lt;p&gt;"I'm going to use an unkind word to describe what you just did. You were &lt;em&gt;scurrying&lt;/em&gt;."&lt;/p&gt;
-
-
-&lt;p&gt;We then had a good conversation about how I had also done this earlier when I arrived. I was in the middle of a conversation on Twitter and he came out a bit earlier than expected. Now I needed to put my bag on and pick up my coffee cup and oops I've forgotten my mask let me put the coffee cup down and...&lt;/p&gt;
-
-
-&lt;p&gt;The result is these abrupt and slightly flustered looking movements that signal "I need to do this in order to get to the important thing". A sort of furtive rushing through the motions.&lt;/p&gt;
-
-
-&lt;p&gt;The interesting thing about these motions is that they're not actually that much faster than calmly doing the thing, and to the degree that they are they are probably increasing the error rate (consider how I forgot my mask and had to go back and sort that out), so may even be slower. But what they do is &lt;em&gt;signal that you are going fast&lt;/em&gt; regardless of whether you are actually going fast. Moving in a way that indicates that you're trying to get this over and done with and you want those around you to know that.&lt;/p&gt;
-
-
-&lt;p&gt;I think henceforth this label of "scurrying" is going to live in my head as referring to specifically doing something in such a way as to indicate you're trying to trying to get it over with so you can get on to the important bit.&lt;/p&gt;
-
-
-&lt;p&gt;(This ties in to what Alexander Technique calls "end gaining", but I think "scurrying" points to something more specific here - it's not just that you're focused on the goal, but are simultaneously treating the goal as unimportant except in that it's necessary)&lt;/p&gt;
-
-
-&lt;p&gt;Is scurrying bad? Maybe. I don't think rushing through something to get on to the important bit is &lt;em&gt;necessarily&lt;/em&gt; bad, to the degree that it actually helps rather than is counterproductive, but I do think that often scurrying happens in cases where it shouldn't.&lt;/p&gt;
-
-
-&lt;p&gt;Take for example the earlier incident where I went to move the coffee. Why was I scurrying? I was there to learn to stay in the Alexander state and move accordingly, so getting the cup of coffee was every bit as important as playing a game of catch, but I treated the former as something to get out of the way in order to do the latter.&lt;/p&gt;
-
-
-&lt;p&gt;One of the nice things about scurrying as a concept here is that it's so visually clear as a set of movements. I've been struggling to really integrate anything Alexander Technique related into my life because I don't remember to do it, but scurrying is something I can go "Oh, I'm doing the thing. Do I want to be?" to, and use as a prompt for change.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2021-10-08-01:23.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-10-08-21:50.html</id>
     <title>On Julia Annas's conception of happiness</title>
@@ -1342,7 +1282,7 @@ Not everything is pretty. Not everything is neat. Not everything I write is beca
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-11-12-10:11.html</id>
     <title>I'm not trapped in here with you</title>
-    <updated>2021-11-12T10:11:00+00:00</updated>
+    <updated>2021-11-12T12:26:03+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;I'm not trapped in here with you&lt;/p&gt;
@@ -1492,5 +1432,52 @@ and it's ready for the wave to become the ocean again.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2021-11-12-10:11.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2021-11-15-18:31.html</id>
+    <title>My conception of parts work</title>
+    <updated>2021-11-15T18:31:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;My conception of parts work&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2021-11-15&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I was recently talking to Kaj Sotala on discord about what I mean when I say "Self is a part", and I ended up writing the following set of theses about what I actually believe by tabooing the words "Self" and "part". I thought I'd capture that here rather than having to search discord for it in future. The following is a lightly edited version of my explanation on Discord.&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Your emotional state can exhibit &lt;em&gt;stuck modes&lt;/em&gt;, which are essentially a coherent bundle of emotional reactions that it is useful to conceptualise as person-like due to feeling like a discrete entity. The ideal is to have no stuck modes, but this ideal is probably only theoretically achievable.&lt;/li&gt;
+&lt;li&gt;Most of your broader mental and emotional capabilities do not neatly fit into a discrete set of such stuck modes, but are a more flexibly adoptable and combineable set of underlying mental/emotional resources that you can use to construct &lt;em&gt;attitudes&lt;/em&gt; that are appropriate to the present context.&lt;/li&gt;
+&lt;li&gt;Many emotional problems correspond to stuck modes that are in some way unhappy, and that arose by essentially ossifying a particular set of responses from a past situation and being unable to grow past that point.&lt;/li&gt;
+&lt;li&gt;A useful set of mental motions is to essentially identify a stuck mode corresponding to a problem and adopt the attitude that that you would have needed from someone else at the time to not get stuck in that mode.&lt;/li&gt;
+&lt;li&gt;For many stuck modes this attitude corresponds to a sort of boundless love and acceptance. This is particularly likely to be the case for stuck modes that arose in childhood or romantic relationships, because there the problem arose from a lack of love from an external source.&lt;/li&gt;
+&lt;li&gt;This does not exhaust the possibilities of things that a stuck mode might need.&lt;/li&gt;
+&lt;li&gt;Additionally, due to the way we treat some of our stuck modes, a stuck mode may experience sufficient animosity to the broader self (lower case s - I mean "you overall", not anything corresponding to the IFS Self) that makes it unacceptable to it that you are the one providing the support it needs.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;Untabooing now to explain the relationship: in this terminology, an exile is a "stuck mode", and "Self" is an attitude (or more likely a range of broadly similar attitudes), which aligns with "Self is not a part" if we want to consider "part" and "stuck mode" synonymous, but I often find it useful to construct temporary unstuck parts, which are essentially attitudes and not stuck modes.&lt;/p&gt;
+
+
+&lt;p&gt;Examples of attitudes that I don't think are particularly Self-like and help sometimes: Something closer to a mediator part that's mostly just there to help integrate two stuck modes by acting as an inbetween and asking good questions until they realise that they feel in opposition and are basically on the same side. Something that is more like a mentor than a parent who basically goes "Oh yeah that sucks, shall we figure out what to do about it?" at the part until it's able to treat its state as a practical problem to be resolved rather than an existential crisis.
+And all of these have certain Self-like qualities to them (they require kindness, acceptance, etc) but the love is not the primary function.&lt;/p&gt;
+
+
+&lt;p&gt;Constructing a temporary part that is coherent enough to have a conversation with feels like roughly the same skill as coming up with a fictional character for your writing (at least the way I do it), by essentially coalescing an attitude and adding details that feel right until it feels relatively coherent. This is more work than accessing a stuck mode, but it's not necessarily a &lt;em&gt;lot&lt;/em&gt; of work.&lt;/p&gt;
+
+
+&lt;p&gt;Conversely, I think stuck modes are often a bit fuzzy around the edges, and can essentially be dissolved (and indeed IFS often ends up resulting in a process of dissolving them - a healed exile has essentially been dissolved).&lt;/p&gt;
+
+
+&lt;p&gt;The result is that it's not so much that "Self" and "parts" in the IFS ontology are the same thing as that there is not a clean division between the two things, and there is not a single special state called Self that is fundamentally unlike the parts it's used to heal.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2021-11-15-18:31.html" rel="alternate"/>
   </entry>
 </feed>
