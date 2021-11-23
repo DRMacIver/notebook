@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2021-11-15T18:40:41+00:00</updated>
+  <updated>2021-11-23T14:36:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,300 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2021-10-08-21:50.html</id>
-    <title>On Julia Annas's conception of happiness</title>
-    <updated>2021-10-08T23:01:05+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;On Julia Annas's conception of happiness&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2021-10-08&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I'm continuing to study Julia Annas's book "Intelligent Virtue", and exploring the one hour study format. Today I thought I'd go through Chapter 8, "Living Happily" in detail. I've copied out the whole chapter into this notebook and will be deleting most of it (I think this still counts as fair use. I hope!). I've done a bit of a skim through it but mostly am writing as I read it, so often I'll write comments that I'll later take back.&lt;/p&gt;
-
-
-&lt;p&gt;Page 119:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;The very idea that virtue might have any role in flourishing or happiness has seemed, for about two hundred years, deeply unlikely. Philosophers in that period have been among the most robust in insisting that the whole idea of thinking that virtue could lead to happiness is absurd. Bentham says of the idea that virtue is sufficient for happiness, 'What benefit, in any shape, could be derived from impregnating the memory with such nonsense? What instruction from a self-contradictory proposition?" Nietzsche is even more dismissive. 'Such assertions and promises as those of the antique philosophers concerning the unity of virtue and happiness or the Christian, "But seek ye first the kingdom of God, and his righteousness, and all these things shall be added unto you" have never been made with total honesty and yet always without a bad conscience: one has advanced such propositions, which one very much desires to be true, boldly as to the truth in the face of appearance.' This idea, that there is some kind of naive wish-fulfilment or over-optimism in the claim that the virtuous are happy, lingers more effectively than actual arguments. Up to this point I have used the interim term 'flourishing' rather than happiness, but this has not been intended to avoid the issue stated brutally by Bentham and Nietzsche, and I shall now talk in terms of happiness.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;I think a lot of this chapter will be spent defending the idea that happiness is not just simple pleasure and that it's plausible that virtue is a necessary component of it. I'm not sure I need that defence, as I'm already pretty on board with the idea. In &lt;a href="https://drmaciver.substack.com/p/burnout-as-acedia"&gt;Burnout as acedia&lt;/a&gt; I talk about how burnout often comes precisely because we are not living our life ethically in the way that we want, because we are out of line with our values.&lt;/p&gt;
-
-
-&lt;p&gt;More generally I think happiness comes from doing things we feel are worthwhile, and "What counts as worthwhile?" is a fundamentally ethical question.&lt;/p&gt;
-
-
-&lt;p&gt;The next couple of paragraphs are spent on justifying the question that we don't seem to really know what happiness is, which then leads into the discussion of eudaimonia, starting Page 120:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;What is a eudaimonist account? An account of how to live, one in which happiness, eudaimonia, is central (...) the entry point for ethical reflections is thinking about how your life is going, thinking that can only arise in people who already are, or are becoming, adult, and who are aware that everything in their life is not satisfactory. &lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;This is, more or less, my above view: You need to not just be happy but &lt;em&gt;happy with your life&lt;/em&gt;. To judge it as satisfactory.&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;So you step back from the ongoing happenings of your life, and wonder about how and in what direction it is going. This at once reveals a fundamental difference between two ways in which you can regard your life. One perspective is the everyday one, in which you do one thing after another, one action following another chronologically. You get up, go to work and so on, one thing after another until eventually it comes to an end when your life does. This is the linear way of thinking of your life, and it is important as you get through the day, and in many other ways. But reflection reveals another way in which your life enters your thoughts about it. We can call this the structured way of thinking of your life.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;(Long discussion of how we do things for reasons and have goals we are trying to achieve elided)&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Reflection thus both triggers and then furthers thinking about how to achieve the goals I have in the light of the constraints I have (time, money, energy) and their mutual achievability. (...) What is activated is not thinking in the abstract about types of goal and how they could fit together, but thinking about how I can achieve the goals I have in the life I have. It is thinking about my life and how it is going. It is practical thinking, thinking about my life and how I should structure it.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;"Thinking about my life and how I should structure it" seems like an important concept here. I think in many ways this is the goal of coaching - it draws you into that thinking.&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Thus the original everyday thinking about the way one thing I do is for the sake of another thing I do leads seamlessly into thinking about my life as a whole in a structured way. This is a global way of thinking about my life: I come to see that I have various goals that I aim at, and that in the one life I have, and which I am already living, these goals need to be structured in a unifying way in order for me to achieve them.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;Honestly I don't believe this account. I don't think most people have goals, and I don't think reflection naturally leads you to them. This may, partly, be because of my own baggage around goals, but I also think philosophers are very inclined to think in terms of goals.&lt;/p&gt;
-
-
-&lt;p&gt;This focus on goals also reminds me of yesterday's discussion of &lt;a href="https://notebook.drmaciver.com/posts/2021-10-08-01:23.html"&gt;Scurrying&lt;/a&gt;. Treating the thing you are currently doing as the unimportant thing you are doing to get to the goal.&lt;/p&gt;
-
-
-&lt;p&gt;But this is, ironically, actively the type of thing that virtue ethics in general and Annas in particular are arguing against: Thoughtlessly doing the thing, rather than doing it with the right emotions in your heart about it.&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;It is this - the idea of what my life as a whole is aimed at - which in ancient ethical theories is called the telos or overall goal of life.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;I very much reject the idea that life has an overall goal, and &lt;a href="https://meaningness.com/no-special-meaning"&gt;defer you to my friend David Chapman for the question of whether we should be upset about that&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Most of us have nothing like this specific grasp of what our lives are working towards achieving. We have only the vaguest idea of what we are aiming for in life as a whole.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;Ah, good.&lt;/p&gt;
-
-
-&lt;p&gt;. This is exactly what eudaimonism holds: we have at best a vague and possibly muddled idea of what our 'final end' is; it is most likely to be only the indeterminate and in itself unhelpful idea of 'a good life' or 'a life lived well'. This supports, rather than undermines, eudaimonism, for few of us have a determinate idea of what we are aiming at in our life as a whole at the start of ethical reflection.&lt;/p&gt;
-
-
-&lt;p&gt;Hmm. No this seems to still be back at the "but we &lt;em&gt;shuold&lt;/em&gt; have such a goal".&lt;/p&gt;
-
-
-&lt;p&gt;I don't deny that at any given point we should have &lt;em&gt;projects&lt;/em&gt;, and those should be meaningful, but I think if you're aiming at an overall purpose to your life you're going to make yourself miserable and also probably fail to achieve it. &lt;a href="https://notebook.drmaciver.com/posts/2020-03-23-15:52.html"&gt;Life is an anytime algorithm&lt;/a&gt; - whether your life was a success or failure should not be determined by the fact whether you achieve some grand goal, because you can get hit by a bus at any point along the way.&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;If we did, we would have no need of ethical reflection or theory; our aims would already be clear and the only problems we would have would lie in actually achieving them.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;What?&lt;/p&gt;
-
-
-&lt;p&gt;If you've got a good way to never make a mistake en route to your goal that needs clarification, I'd love to hear it.&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;What we find in fact is that nearly everyone (every moderately thoughtful person, in any case) is already living a life in which he or she is to some degree actively unifying the aims they have by working out what exactly those aims are and what form they should take.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;No, this seems false. Most people are just bumbling along. They probably have &lt;em&gt;immediate&lt;/em&gt; goals, but that's not the same thing.&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;The final end, then, is the indeterminate notion of what I am aiming at in my life as a whole. And the role of ethical thinking is to get us to think more determinately about it, to do a better and more intelligently ordered job of what we are already doing anyway.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;Hmm. I agree that the goal of of ethical thinking is to get us to do a better and more intelligently ordered job of what we were already doing anyway. I remain very very skeptical of this life goals thing.&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Can we say anything more specific about it? At this point Aristotle says that everyone agrees on something more determinate that we can say about it: it is happiness (eudaimonia); (...) Aristotle is bringing happiness in here merely as the only answer people can give, at the common-sense level, to the questions about why you are doing what you are doing, and how you can have all the goals that you have. That is, at the common-sense level, what is being appealed to is the idea that happiness always puts a stop to these questions. I may want to be healthy, to have a career, to have a family, as part of being happy, but I don't want to be happy as part of or a means to something further. It's just what I want; a terminus to my other goals.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;I'm pretty suspect of arguments like this. I think they're wrong in a slippery way, because anything else you claim as a terminal goal the arguer just goes "Ah but you want that because it makes you happy", and I don't think this is true. If I love someone, I want them to be happy, and I don't want them to be happy because their happiness makes me happy (it may or may not do so depending on the context and my current mood. I might be too depressed to be happy right now!), I want them to be happy because I &lt;em&gt;want them to be happy for their own sake&lt;/em&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;Side note: When thinking about this chapter I had a flashback to the first time I had this argument, which was standing at a bus stop waiting to go home from school when I was 17. I have no idea how it started, and I am surprised to learn that I have been arguing the nature of the good life for 21 years now. I thought this was a more recent phenomenon.&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;This role for happiness is extremely useful in ethical theory. At the common-sense level people disagree about what is worth aiming for in life, but all agree that, whether they are going for money-making, fame and fortune, or serving others, they are all aiming for happiness.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;No we don't, I literally just disagreed with you, please don't assume consensus you don't have.&lt;/p&gt;
-
-
-&lt;p&gt;I do think most people are aiming at happiness among other things, but people seem weirdly reluctant to do things that increase their happiness (citation: Various conversations on Twitter I can't be bothered to dig up right now).&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Happiness thus forms the point at which common sense agrees on a notion which forms the starting-point for ethical theory.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;Gosh I hope not.&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Starting to do ethical theory does not require throwing out all or most of everyday thinking about ethics (even though the theories themselves may produce results which are very counter-intuitive). Ethical theory helps us to improve what we are already about how are lives are going and how we can do better.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;That's the hope anyway.&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Happiness has the role of being, for each person, your happiness, the way you achieve living your life well. It is not some plan imposed on you from outside, or a demand made by some theory which has not arisen from your own thoughts about your life. At the same time it is not just anything you want it to be. There are better and worse ways of seeking happiness, for there are clearly better and worse ways of organizing your goals and aims in life, and of seeking to live a life that achieves them overall.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;This seems solidly true and important.&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Is happiness in this role in eudaimonist thinking happiness as we understand it?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;It's a good question.&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;There is one influential criticism of any account of happiness in eudaimonist thinking. Answering it helps to indicate an important feature of happiness. Grant that we all aim for something in our lives overall, vaguely and without being able to specify it beforehand.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;I do not grant this.&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Grant also that this is happiness, understood as a very general aim which we can achieve in a number of ways.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;No.&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Still, happiness is the point where ordinary thought meets theory: to achieve happiness we have to reflect about what we are doing to achieve it, and how this could be improved.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;One thing maybe worth mentioning here is that this is a very Greek attitude, and if you look at a Buddhist attitude they would argue that almost exactly the opposite is true. Happiness comes from letting go of attachment and being present in the moment.&lt;/p&gt;
-
-
-&lt;p&gt;(This is very oversimplified, IANABuddhist)&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Yet surely it is both intuitively repugnant, and at the level of theory objectionably paternalist, for some people to be in a position to tell others how to be happy. Some philosophers recoil at this point, seeing a spectre emerging from eudaimonism: some people imposing their own vision of the good life on others.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;I don't know, a lot of people seem like they could use some advice here. I think the problem is maybe &lt;a href="https://drmaciver.substack.com/p/how-to-give-good-advice"&gt;that those philosophers are bad at giving advice&lt;/a&gt;. &lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;When I start to reflect ethically there is much about my life which I have to recognize as the material I have to work on. The first ethical move is not to abstract from my individual context, still less to discount it, but rather to understand what it consists in, to achieve self-knowledge as far as I can, and then to think about how best to live my life in these circumstances. Only then will I be in a good position to consider the various options offered to me by different ethical theories.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;I do think this is a very important point.&lt;/p&gt;
-
-
-&lt;p&gt;From here I'm going to start skimming a bit more aggressively because a lot of the next bits are philosophy-is-arguing-with-other-philosophers and I'm running a bit low on time.&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Saying anything negative about pleasure is often wrongly thought to indicate puritanism. It is worth meeting this point by reflecting on the role of pleasure in the kind of life we want our children to lead. Suppose I am, ex hypothesi, not a puritan, and want my child to lead a happy life. I will want my child to enjoy her activities and have feelings of pleasure. But could this be what makes her life a happy one? This strikes two wrong notes. I will scarcely think that my wish has been granted if my child lives a life enjoying activities which are degraded or addictive."&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;This seems right, although I will note that I rarely trust parents to make a good judgement about "degraded" life choices.&lt;/p&gt;
-
-
-&lt;p&gt;That being said, I don't know that whether I would say that this sort of judgement is about the child's &lt;em&gt;happiness&lt;/em&gt;. I would tend to assume that someone leading a hedonistic life, or a drug addict, isn't "really" happy but this feels like an empirical claim rather than a self-evidently true one.&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;And even if an activity is a serious one, something has gone wrong if the person's life is made a happy one not by the activity but by the feelings of enjoyment she gets from it. Any parent would be disconcerted to find that their child had grown up to regard her life as happy because of the enjoyment she got from, say, helping others, but would unhesitatingly drop helping others the minute she ceased to enjoy it. This is, once again, not an adult attitude. And this seems right even before we are in a position to explain why something has gone wrong.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;Same objection. This seems like a valid judgement, but not obviously one that is about their happiness.&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;One factor helping to explain why it goes wrong is the point that pleasure lacks the right kind of relation to the rest of our moral psychology. This has been called lack of 'causal depth'." If we think of happiness as just feeling good, we cannot, for example, distinguish between the different kinds of impact on a person of unwelcome events.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;I don't want to comment on what your life is like, but I feel like if you don't realise that there are different levels of intensity of feeling good you maybe need to get out more.&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;In a revealing example from Daniel Haybron, take two scenarios, in one of which I have pleasant feelings and am feeling good, and then get a flat tyre, while in the other I am feeling good, but then my child dies. If happiness is just having pleasant feelings, the impact of these two events would appear to be the same: first I have pleasant feelings, then I don't, having painful ones instead. Since it is absurd for a theory not to be able to distinguish between these two ways of no longer feeling good, a supporter of pleasure has to say that my loss of pleasant feelings will be much more intense in the second case than in the first. But this plainly fails to give us the right distinction." The real difference lies in the wider impacts and ramifications of the second event; what is bad about it for me is not the intensity of loss of good feeling and occurrence of painful feelings, but the wide and connected effects in all areas of my life of this loss. Nothing like this happens with the flat tyre, which puts a stop to pleasant feeling but without wide or deep impact on my life.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;This seems like a disingenuous argument. I don't think it's at all hard to fit these examples into a pleasure view of happiness, because they are things that affect your ability to feel pleasure - both in the short and the long run.&lt;/p&gt;
-
-
-&lt;p&gt;Additionally, it seems like a "pure pleasure" view of happiness is an obvious strawman of a view that is actually "presence of pleasure and absence of pain", which trivially incorporates these examples.&lt;/p&gt;
-
-
-&lt;p&gt;Now, as it happens, I don't think pleasure provides a good account of happiness, but I think these arguments against it are pretty weak.&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;The idea that happiness might just consist in feelings of pleasure or the enjoyment of activities is not very plausible, once we bear in mind the role of happiness as our final end, something in the achieving of which we shape our lives. Pleasure is just not the right kind of item to play this role. It becomes clear that if happiness is construed as feelings of pleasure we have produced a conception of happiness which is not only radically different from the eudaimonist one, but strikingly trivialized.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;I agree that it is striking how much you have trivialized it, yes.&lt;/p&gt;
-
-
-&lt;h3&gt;In Conclusion&lt;/h3&gt;
-
-
-&lt;p&gt;I've not reached the end of the chapter, but this is a good place to stop given how much time is left on the timer. I'll return to the chapter later, probably tomorrow.&lt;/p&gt;
-
-
-&lt;p&gt;So far though I've been left pretty unhappy with the eudaimonist account of happiness. Both because of the quality of the arguments I've been savaging a bit up there, but more importantly the judgements seem entirely wrong to me.&lt;/p&gt;
-
-
-&lt;p&gt;In particular I'm &lt;em&gt;really&lt;/em&gt; unhappy with the goal orientation here. I guess I should have expected no less from an ethical theory that is oriented around the striving for excellence, but the more I stare at those bits the more I feel like this part of virtue ethics is not only wrong but actively misguided.&lt;/p&gt;
-
-
-&lt;p&gt;An argument I've been having on discord over the last few days is whether virtue ethics is consequentialist. I think my current position is that regardless of whether it &lt;em&gt;is&lt;/em&gt; consequentialist, discussions of it seem intimately bound up in ends, and that still seems to be the case.&lt;/p&gt;
-
-
-&lt;p&gt;The thing I &lt;em&gt;didn't&lt;/em&gt; necessarily expect would be that that this is the bit of the theory I &lt;em&gt;dislike&lt;/em&gt;.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2021-10-08-21:50.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-10-09-20:42.html</id>
     <title>The problem of Susan</title>
@@ -1436,7 +1142,7 @@ and it's ready for the wave to become the ocean again.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-11-15-18:31.html</id>
     <title>My conception of parts work</title>
-    <updated>2021-11-15T18:40:41+00:00</updated>
+    <updated>2021-11-15T18:43:05+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;My conception of parts work&lt;/p&gt;
@@ -1487,5 +1193,71 @@ And all of these have certain Self-like qualities to them (they require kindness
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2021-11-15-18:31.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2021-11-23-14:36.html</id>
+    <title>Social reality as a game</title>
+    <updated>2021-11-23T14:36:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Social reality as a game&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2021-11-23&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;We went out scrumping for drones earlier, and in the course of doing so I did something weird: I brought a mug of coffee with me.&lt;/p&gt;
+
+
+&lt;p&gt;This was weird not because I had coffee with me, that's normal, but because it was a normal ceramic mug that I was just wandering through the streets holding.&lt;/p&gt;
+
+
+&lt;p&gt;If it had been a paper cup that would have been fine, obviously. Similarly, a travel mug wouldn't have raised an eyebrow.
+But a normal ceramic mug? That's weird.&lt;/p&gt;
+
+
+&lt;p&gt;Why was I carrying a mug? Well, I wasn't going far - the drone tree was only about five minutes walk away - and I didn't have a travel mug, but I'd just made coffee and I wanted to drink my coffee. Sure, I might drop it, but the solution to that was to not drop it (I didn't drop it).&lt;/p&gt;
+
+
+&lt;p&gt;It was a perfectly reasonable practical solution, but ceramic mugs are a home item not a travel item, so it was weird.&lt;/p&gt;
+
+
+&lt;p&gt;Bernard Suits defines a game as "the voluntary attempt to overcome unecessary obstacles", and I think about that a lot.&lt;/p&gt;
+
+
+&lt;p&gt;How voluntary does it have to be? &lt;/p&gt;
+
+
+&lt;p&gt;Clearly it's still a game if you give in to social pressure to play it, right? The fact that your family will sulk at you if you don't play doesn't make Yahtzee suddenyl not a game (admittedly I could argue that it's not a game for other reasons, but it's certainly a Suitsian game in the sense that you're attempting to overcome your desire to die of boredom and the whole thing seems very unecessary. Also there are dice).&lt;/p&gt;
+
+
+&lt;p&gt;But who determines what's necessary?&lt;/p&gt;
+
+
+&lt;p&gt;More properly, the above his portable definition. He actually defines a game as:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;To play a game is to attempt to achieve a specific state of affairs [prelusory goal], using only means permitted by rules [lusory means], where the rules prohibit use of more efficient in favour of less efficient means [constitutive rules], and where the rules are accepted just because they make possible such activity [lusory attitude].&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;He offers the example of mountain climbing: Your prelusory goal is to get to the top of the mountain, but the lusory means are that you have to climb it. If you could just take a helicopter up, you would not be playing the "game" of mountain climbing.&lt;/p&gt;
+
+
+&lt;p&gt;Here's what I wonder: How much of our behaviour is governed by things that are, effectively, constitutive rules of a social game? I was certainly refusing to follow voluntarily adopted rules that prohibited me from using the more efficient means that I was currently employing. Those rules are, in some sense, accepted just because they make possible the activity of society.&lt;/p&gt;
+
+
+&lt;p&gt;In carrying a ceramic mug around with me outside was I, in small part, refusing to play a game in which everyone is implicitly participating in all the time?
+Maybe, but at least I got to drink my coffee.&lt;/p&gt;
+
+
+&lt;p&gt;We didn't manage to scrump any drones, incidentally.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2021-11-23-14:36.html" rel="alternate"/>
   </entry>
 </feed>
