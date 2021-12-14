@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2021-11-23T21:12:35+00:00</updated>
+  <updated>2021-12-14T12:27:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,88 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2021-10-09-20:42.html</id>
-    <title>The problem of Susan</title>
-    <updated>2021-10-09T21:49:59+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;The problem of Susan&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2021-10-09&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Up front warning: I increasingly hate Julia Annas's account of happiness and every post that is about this subject will likely be very cranky. This is one such post.&lt;/p&gt;
-
-
-&lt;p&gt;From Intelligent Virtue, Page 141, we have the following example:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Susan thinks of her life as a happy one; she is married with children, and all is well except that her husband is frequently away on business. She discovers that in fact these absences were spent with a second family, and that he has divided his time between the two families for some years. Uncontroversially, Susan evaluated her life positively before the discovery, and no longer did so after the discovery. The question is: before the discovery, was her life happy or not?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;I &lt;a href="https://twitter.com/DRMacIver/status/1447177704760037376"&gt;asked about this on Twitter&lt;/a&gt;. At present most people say yes, a couple of people make the subjective/objective happiness distinction that Annas is talking about in context.&lt;/p&gt;
-
-
-&lt;p&gt;A couple of people point out that it's likely that she &lt;em&gt;wasn't&lt;/em&gt; happy, because probably someone living a life like that is not actually experiencing a very good life, and many low grade unhappinesses will probably be clarified and recontextualised in the light of the revelation. It's also possible she was engaged in self-deception to maintain a belief that she was happy. "Sure, there are a few problems, but can't complain you know?".&lt;/p&gt;
-
-
-&lt;p&gt;I think this is all true, but I'm happy to postulate that Susan could in principle have been genuinely happy with her life, even if it doesn't seem very likely. Likely that happiness came from other sources than her husband, but that's fine.&lt;/p&gt;
-
-
-&lt;p&gt;None of this touches on my actual complaint with this example, which a few other people also shared, which is that it's obviously a category error, the question doesn't actually make sense.&lt;/p&gt;
-
-
-&lt;p&gt;Moreover, it's clearly a &lt;em&gt;motivated&lt;/em&gt; category error, one that only makes sense through conflating two distinct things that the author is committed to conflating in order to support her broader thesis.&lt;/p&gt;
-
-
-&lt;p&gt;Was Susan's life happy or not? No, it's a life. Happy is not a things life can be, any more than physics can be happy. "Happy" is an emotional evaluation, and lives are not things with emotions. I understand that when people say "Did they have a happy life?" that is normal colloquial English that means something more like "Were they happy with their life?" but when you are trying to make a precise statement on the nature of happiness there is absolutely no excuse for this sort of ambiguity which blurs precisely the distinction you are trying to make.&lt;/p&gt;
-
-
-&lt;p&gt;It's possible that I'm incorrectly translating the intent of this, but if so I think that makes it worse rather than better, because up to this point we have been talking about people seeking their own happiness, and if we mean something different from their own happiness by "having a happy life", why is this the question we're asking?&lt;/p&gt;
-
-
-&lt;p&gt;The questions I believe should be and are not being asked here are:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;Was Susan happy with her life?&lt;/li&gt;
-&lt;li&gt;Did Susan have a good life?&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;And the only reason to blur the boundary between these very different questions is if you are committed to an unsupportable notion that happiness is the sole end of life, and to conflating the notion of "happy life" with "good life", in order to make them look like the same question.&lt;/p&gt;
-
-
-&lt;p&gt;The following further unasked questions are also particularly loud:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;Would Susan have chosen this life?&lt;/li&gt;
-&lt;li&gt;Before knowing the truth, would Susan have chosen to learn it if she knew the consequences?&lt;/li&gt;
-&lt;li&gt;Once Susan knows the truth, would she choose to go back if she could?&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;Asking these questions probably results in a fairly consistent clustering around "Susan was happy", "Susan would have chosen to know" (certainly this is my answer), which is a problem if you are committed to the position that people's driving goal is happiness&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;If positive evaluation of your life is what happiness is, then Susan had a happy life until the discovery. But this runs into the problem that we are also inclined to say that after the discovery Susan discovered that her life never was a happy one; she was deceived into thinking that it was.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;Another presumptious we. I do not think it makes sense to say that she was deceived into believing her life was a happy one. She was deceived as to the nature of her life, and also she was happy.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2021-10-09-20:42.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-10-11-16:42.html</id>
     <title>We must imagine the steelman happy</title>
@@ -1197,7 +1115,7 @@ And all of these have certain Self-like qualities to them (they require kindness
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-11-23-14:36.html</id>
     <title>Social reality as a game</title>
-    <updated>2021-11-23T21:12:35+00:00</updated>
+    <updated>2021-11-23T22:44:47+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Social reality as a game&lt;/p&gt;
@@ -1259,5 +1177,63 @@ Maybe, but at least I got to drink my coffee.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2021-11-23-14:36.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2021-12-14-12:27.html</id>
+    <title>The landscape of</title>
+    <updated>2021-12-14T12:27:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;The landscape of&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2021-12-14&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;One of the features of &lt;a href="https://drmaciver.substack.com/p/labelling-feelings"&gt;my working model of emotions&lt;/a&gt; is that they exist as a tendency towards behaviours. Anger is a tendency to behave angrily, etc.&lt;/p&gt;
+
+
+&lt;p&gt;This tendency is experienced as something like the default thing that happens if you don't put in energy to avoid it happening. It's not that behaving angrily is inevitable when you are angry, it's that it is more work to avoid behaving angrily than it is to behave angrily. You have to constantly choose not to behave angrily.&lt;/p&gt;
+
+
+&lt;p&gt;I was having a miserable day yesterday, and I was wondering... what is that? What is miserable? Is it an emotion?&lt;/p&gt;
+
+
+&lt;p&gt;I want to say that miserable is not an emotion because it lacks intentionality, it's not about something (although there's some linguistic ambiguity - I feel like one can be miserable about specific things as well, but there's miserable-about and there's just miserable, and it's the latter I'm pointing to).&lt;/p&gt;
+
+
+&lt;p&gt;I want to say that miserable is not an emotion but a &lt;em&gt;mood&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;What's a mood? Well, a mood is to emotions as emotions are to behaviour: A tendency towards.&lt;/p&gt;
+
+
+&lt;p&gt;This ties into Ratcliffe and his notion of &lt;a href="https://notebook.drmaciver.com/posts/2020-03-06-07:46.html"&gt;Depression as constituted by existential feelings&lt;/a&gt;,
+and in particular as a restriction on the set of possible emotions, which suggests that "tendency towards" may be insufficiently strong in its connotations. Sometimes that tendency is overwhelming: A feeling of hopelessness creates not just a "tendency" against hope, but a feeling that hope is itself impossible.
+Moods contain not just slopes but also walls.&lt;/p&gt;
+
+
+&lt;p&gt;Does this in turn go back to emotions and behaviours? I think it does. If I'm absolutely furious with someone I may be able to behave calmly with them, but I probably can't behave warmly to them - I can go through the motions, but I will probably seem stiff and artificial (because I will be) because I do not have full control over my body language, and have to fight against my natural tendencies.&lt;/p&gt;
+
+
+&lt;p&gt;So perhaps a better way to think of emotions and behaviour is not the tendency towards behaviours but the landscape of behaviour. It is the set of hills and valleys and walls that behaviour operates in. You can apply energy to move up a slope, you probably can't move up a wall, but as soon as you stop applying energy you will fall into the local minimum.&lt;/p&gt;
+
+
+&lt;p&gt;Moods in turn are the landscape of emotions.&lt;/p&gt;
+
+
+&lt;p&gt;What is the landscape of mood?&lt;/p&gt;
+
+
+&lt;p&gt;I was going to say that it's temperament, but that isn't quite right. It's some combination of temperament and environment - part of why I was miserable yesterday is definitely environmental, prompted by how grey and unpleasant the weather is.&lt;/p&gt;
+
+
+&lt;p&gt;In general this feels like a fruitful question to ask even outside the context of mood and emotion: When you have a space of possibilities, what constitutes the landscape for it?&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2021-12-14-12:27.html" rel="alternate"/>
   </entry>
 </feed>
