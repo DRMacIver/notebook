@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2021-12-14T12:27:00+00:00</updated>
+  <updated>2022-01-01T13:23:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,152 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2021-10-11-16:42.html</id>
-    <title>We must imagine the steelman happy</title>
-    <updated>2021-10-11T23:41:08+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;We must imagine the steelman happy&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2021-10-11&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I'm getting increasingly frustrated with the core of virtue ethics around eudaimonia,
-so today I would like to put together a steelmanned version of something that is &lt;em&gt;almost&lt;/em&gt; what they are saying and I think is actually true.&lt;/p&gt;
-
-
-&lt;p&gt;It's entirely possible that what I am doing is recreating something they actually are saying,
-and that I disagree with them less than I think I do, but if so they have very much failed to communicate this to me.&lt;/p&gt;
-
-
-&lt;h3&gt;Do people pursue happiness?&lt;/h3&gt;
-
-
-&lt;p&gt;So here is, in summary, what I think virtue ethicists are claiming:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;People (unconsciously or consciously) organise their lives around a single goal, and that goal is happiness (or eudaimonia, but as far as I can tell eudaimonia just means "happiness but we don't like the connotations of that word").&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;It is possible that this is a strawman and if so I would appreciate correction. &lt;/p&gt;
-
-
-&lt;p&gt;I think this is wrong, and the true version of it is a composite of three things that almost but not quite add up to this.&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;People wish to be happy to a degree they endorse as appropriate for their situation.&lt;/li&gt;
-&lt;li&gt;They wish their situations to be ones that would make them happy under this endorsed happiness.&lt;/li&gt;
-&lt;li&gt;They take on ends that they believe will help them achieve this wish.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;Adding this up together you could summarise this as "People seek their happiness as an end", but I think that summary would be wrong in a way that the tripartite version is not.&lt;/p&gt;
-
-
-&lt;p&gt;(I don't think this tripartite version is &lt;em&gt;perfectly&lt;/em&gt; right either - I'll point out some problems in a bit).&lt;/p&gt;
-
-
-&lt;p&gt;Let's consider the following test case: Someone you love has just died. You are, understandably, quite unhappy about this. Someone offers you a pill that will erase all the grief and will cause you to feel euphoric. Do you take it?&lt;/p&gt;
-
-
-&lt;p&gt;Some people will say yes to this of course. Even more people would (and do) say yes to something that merely blunts the grief. I think, particularly near to the event, many people would say no. Certainly I would.&lt;/p&gt;
-
-
-&lt;p&gt;My point with this thought experiment is not that there is a correct answer. My point is that the correct answer is not &lt;em&gt;obviously&lt;/em&gt; that yes you should take the pill, and I don't think most people would consider it strange that it's not.&lt;/p&gt;
-
-
-&lt;p&gt;Further, this idea of appropriate happiness seems in general true. For example, I think most people who are not particularly sadistic would not want to be sadistic, even if it might strictly increase their happiness, because sadism does not seem like the sort of thing you should be happy about.&lt;/p&gt;
-
-
-&lt;p&gt;I don't think this is a controversial perspective in virtue ethics, but I think by binding together the ideas of "appropriately happy" and "happy" they have committed themselves to some weird takes where they have to say "Ah, but that's not &lt;em&gt;really&lt;/em&gt; happiness".&lt;/p&gt;
-
-
-&lt;p&gt;Take &lt;a href="https://notebook.drmaciver.com/posts/2021-10-09-20:42.html"&gt;The problem of Susan&lt;/a&gt; from the other day.&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Susan thinks of her life as a happy one; she is married with children, and all is well except that her husband is frequently away on business. She discovers that in fact these absences were spent with a second family, and that he has divided his time between the two families for some years. Uncontroversially, Susan evaluated her life positively before the discovery, and no longer did so after the discovery. The question is: before the discovery, was her life happy or not?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;This example is not remotely problematic under this separation: Susan was happy, but a version of Susan in posession of all the facts would not endorse that happiness as appropriate (even though Susan at the time might have).&lt;/p&gt;
-
-
-&lt;p&gt;I think one of the reasons virtue ethicists ignore this split is to some degree it goes away for virtuous agents, because one of the key features of the way virtue ethics treats virtue is that through the development of phronesis and the cultivation of the virtues one pursues (1) automatically: A perfectly virtuous agent feels happy precisely to the degree they would endorse as appropriate.&lt;/p&gt;
-
-
-&lt;p&gt;But note that the problem of Susan doesn't go away even if Susan is perfectly virtuous: The problem is not that prior to the revelation Susan was living unvirtuously, it's that she was deceived. A sufficiently intelligent adversary (e.g. a Cartesian demon) can deceive even a perfectly virtuous agent, and besides which a perfectly virtuous agent can simply be wrong by virtue of not being omniscient. I can be happy about the prospect of things that I expect to happen over the coming years, not knowing that actually the world is going to be destroyed by an unknown asteroid next year, and this is not a failure of appropriateness I just don't know everything.&lt;/p&gt;
-
-
-&lt;h3&gt;Do you even want to be happy?&lt;/h3&gt;
-
-
-&lt;p&gt;Another important way this split comes up is in therapy. People are unhappy, so they go to therapy to try to figure out how to be happy. And sometimes it's genuinely "just" an emotional issue, but more often than not it's actually perfectly reasonable for them to be unhappy and if they're really lucky they won't get a therapist who teaches them how to gaslight themselves into thinking otherwise.&lt;/p&gt;
-
-
-&lt;p&gt;I'm a fan of this piece in good housekeeping: &lt;a href="https://www.goodhousekeeping.com/life/a45386/gratitude-lists-dont-work/"&gt;Gratitude lists are BS&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;First she describes her attempts to be happier:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;After about 100 days of making gratitude lists, tens of thousands of dollars of psychotherapy, five different antidepressants, four months in an outpatient psychiatric hospital (where they strongly recommended we make gratitude lists) and myriad of high-priced alternative treatments, I had pretty much given up all hope of ever feeling better. Then my psychiatrist suggested I speak with a therapist in his office who worked with people with a history of trauma. Great, I thought, another opportunity to shell out more money to someone who can't help me. I shushed myself, told myself to be grateful for his offer — and to add it tomorrow's gratitude list.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;This didn't work for her, because...&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;My new therapist told me to write down everything I did and thought and said to myself throughout the day and send him the record each night so he could try to get some insight into what was really going on. I did, being sure to highlight the positives in my day to show him that I did recognize that there were some good things in my life. When I got to my next session, he told me the words I'd been so desperately longing to hear for years:&lt;/p&gt;
-&lt;p&gt;"Man, your life just SUCKS right now."&lt;/p&gt;
-&lt;p&gt;"It's not that bad," I said nervously, assuming he was either grossly incompetent or trying to trick me. "I have a lot to be grateful for."&lt;/p&gt;
-&lt;p&gt;"Really?" he replied, then proceeded to list off what he'd observed in my daily records: that I'd worked the overnight shift at jobs for years, which meant I barely slept; that the apartment I lived in was only so cheap because it was dark, cramped, ant-infested and falling apart; that my husband and I were raising a baby in one of the most expensive cities in the country, where decaying two-bedroom bungalows with no yards or parking spaces started at $800,000; that I had no family support system, since my closest relative lived 3,000 miles away; that years of working from home left me completely isolated with very few friends; that I was under extreme financial stress due to massive student loan debt; that I was a writer who had no time or energy to write because I was so busy trying to put out the fires in the rest of my life; that the few things I did have time to write got rejected over and over again; that I'd auditioned for over 150 commercials and had never booked one; that I'd blown my meager life savings on years of out-of-network psychotherapy treatment that hadn't worked; that I woke up in excruciating back pain every day; that I'd grown up in an emotionally abusive household where my mother encouraged me to watch "Pollyanna" on a regular basis while my father, who had combat PTSD and a traumatic brain injury, exploded in rages without warning; that I had to literally carry my baby over the passed out bodies of the homeless drug addicts who slept in front of our house; that my transmission had gone up in smoke four months after I'd paid my car; that all three of my cats had died over the past three years, and that my dog now had cancer — the most severe and fast moving case my vet said she'd seen in her 20 years of practice.&lt;/p&gt;
-&lt;p&gt;It all kind of sucked pretty effing hard, my new therapist said.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;I think it is reasonable to say that the problem here is not that she's unhappy, but that she is unhappy because of all of the problems, and that the natural and reasonable way to "pursue happiness" here is not to try to become happier but to try to solve the problems that are making her unhappy.&lt;/p&gt;
-
-
-&lt;p&gt;There is an argument to be made for acceptance, and I think there is a &lt;em&gt;strong&lt;/em&gt; argument to make that one should ideally be able to cope with those problems without becoming overwhelmingly depressed, but I think either approach starts with acknowledging that yeah actually these things suck, and you cannot "pursue happiness" as a goal independently from how you navigate the practical things that are impacting your happiness.&lt;/p&gt;
-
-
-&lt;p&gt;I suggest that the very idea that people want to be happy is a confusion of how situations like this work, and it's a harmful one. People don't want to be happy, happiness is the feeling of things going as you want.&lt;/p&gt;
-
-
-&lt;h3&gt;Acting while depressed&lt;/h3&gt;
-
-
-&lt;p&gt;Another way the notion of "endorsed happiness" is useful is that one can treat it as action guiding even while not currently feeling particularly equipped to feel happy. i.e. depressed.&lt;/p&gt;
-
-
-&lt;p&gt;Often when I'm depressed I do things not because I feel any emotional motivation to do them, but because I know that a less depressed version of me would. There is a sort of wanting to achieve things that is possible somewhat independently of the emotional motivation for it.&lt;/p&gt;
-
-
-&lt;p&gt;This tends to be hard during long depressive periods, or without much extrinsic motivation to do things, but I do find that it's possible to just weather through a short depressive period because you intellectually still know what you want even if you don't feel happy about getting it, and can just act on that. It's harder to give it your all, and you generally feel tired and low energy, but it's not like the conceptual understanding of what you want to achieve is inaccessible, it "just" doesn't &lt;em&gt;feel&lt;/em&gt; rewarding when you do those things.&lt;/p&gt;
-
-
-&lt;p&gt;This certainly isn't all that depression is, but I do think one of the key features of depression is &lt;a href="https://notebook.drmaciver.com/posts/2020-03-06-07:46.html"&gt;a restriction on emotional range&lt;/a&gt;, and a key part of that is that you can often still fully understand and act on your motivational structure without feeling it.&lt;/p&gt;
-
-
-&lt;h3&gt;Speaking of...&lt;/h3&gt;
-
-
-&lt;p&gt;Speaking of the emotional difficulties and motivational structure, writer's block just kicked in. Apparently I'm still struggling with writing complete essays even when it's on the notebook blog, so I'm going to finish here and maybe continue another day.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2021-10-11-16:42.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-10-14-12:00.html</id>
     <title>Learning how to tell a joke</title>
@@ -1181,7 +1035,7 @@ Maybe, but at least I got to drink my coffee.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-12-14-12:27.html</id>
     <title>The landscape of</title>
-    <updated>2021-12-14T12:27:00+00:00</updated>
+    <updated>2021-12-14T12:46:31+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;The landscape of&lt;/p&gt;
@@ -1235,5 +1089,76 @@ Moods contain not just slopes but also walls.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2021-12-14-12:27.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2022-01-01-13:23.html</id>
+    <title>Writing from the heart</title>
+    <updated>2022-01-01T13:23:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Writing from the heart&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2022-01-01&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I've been thinking about types of writing recently, and in particular about the following section from Hillary Rettig's excellent "7 Secrets of the prolific":&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Grandiosity is a problem for writers because our media and culture are permeated with grandiose myths and misconceptions about writing, which writers who are undermentored fall prey to. Red Smith’s famous bon mot about how, to write, you need only “sit down at a typewriter and open a vein,” and Gene Fowler’s similarly sanguinary advice to “sit staring at a blank sheet of paper until the drops of blood form on your forehead,” are nothing but macho grandiose posturing, as is William Faulkner’s overwrought encomium to monomaniacal selfishness, from his Paris Review interview:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The writer’s only responsibility is to his art. He will be completely ruthless if he is a good one. He has a dream. It anguishes him so much he must get rid of it. He has no peace until then. Everything goes by the board: honor, pride, decency, security, happiness, all, to get the book written. If a writer has to rob his mother, he will not hesitate; the “Ode on a Grecian Urn” is worth any number of old ladies.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Many of the most famous quotes about writing are grandiose. I’m not saying that all of these writers were posturing—perhaps that’s how they truly perceived themselves and their creativity. What I do know is that, for most writers, a strategy based on pain and deprivation is not a route to productivity. In fact, it is more likely a route to a block.&lt;/p&gt;
+&lt;p&gt;I actually find quotes about how awful writing and the writing life are to be not just perfectionist, but self-indulgent. No one’s forcing these writers to write, after all, and there are obviously far worse ways to spend one’s time, not to mention earn one’s living. &lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;I think Rettig is, broadly, right here about how most people should be writing most of the time, but I must admit that of all the wisdom in this section the one that's stuck with me is the line she's disagreeing with.&lt;/p&gt;
+
+
+&lt;p&gt;&lt;a href="https://quoteinvestigator.com/2011/09/14/writing-bleed/"&gt;According to Quote Investigator&lt;/a&gt;, Red Smith's full line is: &lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;You simply sit down at the typewriter, open your veins, and bleed.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;I think about this a lot because, contra Rettig, writing be like that sometimes.&lt;/p&gt;
+
+
+&lt;p&gt;It's useful to compare and contrast two recent newsletter issues of mine. &lt;a href="https://drmaciver.substack.com/p/labelling-feelings"&gt;Labelling feelings 101&lt;/a&gt; and &lt;a href="https://drmaciver.substack.com/p/first-hard-choice"&gt;The first hard choice&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Labelling feelings 101 was not a particularly taxing piece to write. It's just a summary of lots of things I've thought about. There's a moderate amount of myself in there, but only because it's explaining how I look at things. It's a look at part of the world through my eyes, but it's just explanatory prose, it's nothing particularly revealing.&lt;/p&gt;
+
+
+&lt;p&gt;The first hard choice on the other hand is weirder and more personal. I started writing, and then I continued writing, and it went in a very different direction than I intended. The underlying thought process is non-obvious, but I think it comes through that I'm writing about something that actually matters to me.&lt;/p&gt;
+
+
+&lt;p&gt;Tellingly, "Labelling feelings 101" has got more attention (it's certainly useful to more people) but "The first hard choice" has got more praise (and also more people checking in to make sure that I'm OK).&lt;/p&gt;
+
+
+&lt;p&gt;Writing is, a lot of the time, a way of expressing something deeply felt. You write from the heart, and it's hard to do that without bleeding onto the page.&lt;/p&gt;
+
+
+&lt;p&gt;Most writing isn't, and shouldn't, be like this. If you're writing an email to a coworker it doesn't have to express some profound truth. If you're writing some basic copy explaining how a product works, same. But if you're writing about your life, or about things that are personally important to you, and you are &lt;em&gt;never&lt;/em&gt; doing this, then you're probably holding your feelings at arms length, and that isn't great.&lt;/p&gt;
+
+
+&lt;p&gt;Am I being grandiose? Rettig would probably think so, and maybe I am. But some things are actually important, and it's hard to talk about that without sounding a little grandiose, and maybe that's OK.&lt;/p&gt;
+
+
+&lt;p&gt;I don't do this sort of writing enough, and I'd like to do it more - every time I have it's been in some way transformative.&lt;/p&gt;
+
+
+&lt;p&gt;In order to achieve this, I've come up with a very detailed and elaborate plan: I'm going to do it.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2022-01-01-13:23.html" rel="alternate"/>
   </entry>
 </feed>
