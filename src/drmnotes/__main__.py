@@ -1103,7 +1103,7 @@ def do_build(rebuild=False, full=True, name=""):
 
     posts.sort(key=lambda p: p.name, reverse=True)
 
-    new_count = 5
+    new_count = 0
     new_posts = posts[:new_count]
 
     old_posts = []
