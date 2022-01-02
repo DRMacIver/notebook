@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2022-01-01T13:41:36+00:00</updated>
+  <updated>2022-01-02T12:34:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,77 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2021-10-14-12:00.html</id>
-    <title>Learning how to tell a joke</title>
-    <updated>2021-10-14T16:23:07+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Learning how to tell a joke&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2021-10-14&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;From page 10 of Ted Cohen's "Jokes":&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Joking is a "two-stage" art, like music and theater. Someone must make up the joke, and someone must tell it, and these two jokers need not be the same. Those good at making up jokes are not the same as those good at telling them. Telling a joke well may require specific abilities, like being able to affect an Irish dialect, or it may require a subtle knack, like a sense of timing.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;He goes on to say that this presentation is particularly important because some jokes don't translate well onto the page, and illustrates this with the following joke that you are legally required to include in all books about philosophy of comedy or they take your license away:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Q: According to Freud, what comes between fear and sex?&lt;/p&gt;
-&lt;p&gt;A: Fünf.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;Cohen is wrong here, this joke translates to the page just fine, because you can just read it out loud.&lt;/p&gt;
-
-
-&lt;p&gt;This routine on the other hand is an example of a joke that &lt;em&gt;actually&lt;/em&gt; doesn't translate to the page:&lt;/p&gt;
-
-
-&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/XkCBhKs4faI" title="YouTube video player" width="560"&gt;&lt;/iframe&gt;
-
-
-&lt;p&gt;This both illustrates the strengths and the flaws of the two-stage art concept.&lt;/p&gt;
-
-
-&lt;p&gt;From a writing point of view, the joke isn't very good, right? It's perfectly well written, there's nothing wrong with it, but as written it's not funny, because the humour is entirely in the presentation.
-This is why it demonstrates the strength of the two stage model: it's a very good illustration of the verbal skills of humour.&lt;/p&gt;
-
-
-&lt;p&gt;But it also demonstrates that the idea is something of a lie, in that you can't actually separate this into two stages. It's not just that the joke doesn't work written down, it's that there is no joke without the performance of it here.&lt;/p&gt;
-
-
-&lt;p&gt;This is, perhaps, an artefact of the fact that comedy isn't really about telling jokes, it's about performing routines, but I think this distinction doesn't work, and you experience the same problems with hypercontextual jokes that cannot be extracted from their situation.&lt;/p&gt;
-
-
-&lt;p&gt;What instead is going on, I think, is that for any given joke there is a &lt;em&gt;skill of telling that joke&lt;/em&gt;, and some jokes you can teach that skill in writing better than others.&lt;/p&gt;
-
-
-&lt;p&gt;Another interesting example of this sort of skill is poetry reading. Some poems work written, but this one I've linked to before in &lt;a href="https://notebook.drmaciver.com/posts/2021-07-06-13:53.html"&gt;Start from amazing&lt;/a&gt; isn't one of them:&lt;/p&gt;
-
-
-&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/tFTASR8BMps" title="YouTube video player" width="560"&gt;&lt;/iframe&gt;
-
-
-&lt;p&gt;The poem is good, but the presentation of it is &lt;em&gt;very&lt;/em&gt; good, and the poem rests on the vocal skill of its delivery.&lt;/p&gt;
-
-
-&lt;p&gt;Back in &lt;a href="https://notebook.drmaciver.com/posts/2021-07-28-04:40.html"&gt;You can't write life down&lt;/a&gt; I talked about the difficulty in transcribing oral stories, and this feels like another aspect of that. At the time I talked about how taking a Raven story outside of its cultural context would lose essential features of the culture that created it, leaving it in a diminished and abstracted form, but actually I think the problem is deeper than that: You can write down a Raven story, but I'm not sure you can write down how to &lt;em&gt;tell&lt;/em&gt; a Raven story.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2021-10-14-12:00.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-10-19-10:53.html</id>
     <title>A simple model of depression and "depressive realism"</title>
@@ -1160,5 +1089,102 @@ Moods contain not just slopes but also walls.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2022-01-01-13:23.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2022-01-02-12:34.html</id>
+    <title>Wanting (to) help</title>
+    <updated>2022-01-02T12:34:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Wanting (to) help&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2022-01-02&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I said in &lt;a href="https://notebook.drmaciver.com/posts/2022-01-01-13:23.html"&gt;writing from the heart&lt;/a&gt; that I wanted to write more personal stuff.
+Well, here it is. Unfortunately, it turns out, bleeding onto the page hurts.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, on to the point.&lt;/p&gt;
+
+
+&lt;p&gt;You may or may not have noticed, but I'm a very helpful person.&lt;/p&gt;
+
+
+&lt;p&gt;Some of this comes out more with friends, family, etc. When I see someone I know who is having problems, I want to help. I'm aware this isn't always possible or welcome, and I don't force help on people by any means, but generally if you're my friend and need help I'm there for you.&lt;/p&gt;
+
+
+&lt;p&gt;Some of it also comes out with strangers. I've had fairly extensive conversations trying to help random strangers on the internet solve their problems or process their feelings.&lt;/p&gt;
+
+
+&lt;p&gt;There's also little things like, mostly for free, having a major impact on the quality of software testing in the Python ecosystem. I've at this point written about two million words on the internet, a decent chunk of which is just me helpfully explaining things to strangers.&lt;/p&gt;
+
+
+&lt;p&gt;I don't want to give you the impression that I'm constantly martyring myself for others. There are many people who are far more helpful than I am, and give an amount of their time and energy that I am both in awe of and have no desire to emulate. If one were to put together some arbitrary ranking of people in terms of helpfulness, I'm probably in the top 10%, likely in the top 5% (&lt;a href="https://danluu.com/p95-skill/"&gt;95%-ile isn't that good&lt;/a&gt;), and probably not in the top 1%.&lt;/p&gt;
+
+
+&lt;p&gt;I can't say I'm always good at helping.&lt;/p&gt;
+
+
+&lt;p&gt;I think I usually am good at helping when the problem is one that can be solved through the deployment of my very particular set of skills. Sometimes that means helping people problem solving, sometimes that means just showing up and listening and providing hugs, sometimes that involves more concrete help like turning up and providing manual labour, or providing a place to crash for the night. There are things my friends probably can't rely on me for though - if it needs organisational skills or fine motor control, I'm probably not the one that can help you.&lt;/p&gt;
+
+
+&lt;p&gt;Also sometimes I'd love to help but I'm overcommitted - either with my own stuff, or with helping other people, or both. Until my cloning project comes online, I'm only one man.&lt;/p&gt;
+
+
+&lt;p&gt;All of which is fine, in principle. I'm not helpful because I want to help people, I'm helpful because I want people to be helped. If you've got someone better suited than me to draw on, I'm delighted.&lt;/p&gt;
+
+
+&lt;p&gt;It rarely seems like this is the case though. People don't, for the most part, help their friends out that much. The typical friendship I see seems to be one where people pretend that connection without responsibility is possible.&lt;/p&gt;
+
+
+&lt;p&gt;As a result, this often makes me feel worse about not being able to help, because often the reason someone needs my help is that nobody else has been able to provide it.&lt;/p&gt;
+
+
+&lt;p&gt;This is, of course, all generalising heavily from my own very small pool of experience. I'm sure if you move to a different culture, or even a different social milieu within a given culture, it looks different. People live in very different worlds. But based on what I see this doesn't look &lt;em&gt;that&lt;/em&gt; weird.&lt;/p&gt;
+
+
+&lt;p&gt;This particularly stings because people are generally willing to draw on offered help, but pay it neither back nor forward.&lt;/p&gt;
+
+
+&lt;p&gt;I think a friendship in which one party feels no real responsibility to the other, and is unwilling to extend meaningful help, is in the long run doomed.
+Nobody is invincible, nobody can maintain good times for ever. You're going to have a bad period, and then the people who were just with you for a good time and don't feel any responsibility for you ghost or angrily leave. There's a reason we have the phrase "fair weather friends".&lt;/p&gt;
+
+
+&lt;p&gt;It doesn't even particularly require bad times. I've lost multiple friendships due to it turning out that the other party in a relationship that I had poured a huge amount of care and help into (which they happily accepted) felt absolutely no responsibility to me to reciprocate even a tiny fraction of that.&lt;/p&gt;
+
+
+&lt;p&gt;They would no doubt tell you this is a grossly unfair summary of the situation. I would, in turn, tell you that yes they would say that and can get fucked as far as I'm concerned. This is as close as I am prepared to come in providing a fair and balanced summary of events.&lt;/p&gt;
+
+
+&lt;p&gt;Friendships aren't, and shouldn't be, transactional, but they do need to be somewhat reciprocal if they're to work. There's a deep hypocrisy involved in being willing to accept arbitrary amounts of help from someone and then be horrified at the idea that you might be expected to return it.&lt;/p&gt;
+
+
+&lt;p&gt;Unfortunately it is, I think, an extremely common hypocrisy, because people are rarely going to say no to getting their needs met, and are rarely going to say yes to taking on a responsibility they don't have to. It's much easier to jettison the relationship and move on.&lt;/p&gt;
+
+
+&lt;p&gt;All of this is something I feel acutely, because the truth is that a lot of why I'm so helpful is that I've spent a lot of my life desperately wanting help and not getting it, so I've learned to help people in the ways that I've wished that someone would help me.&lt;/p&gt;
+
+
+&lt;p&gt;Don't get me wrong, I've had myriad advantages in life. Many of the problems that I've needed help with are, technically, &lt;a href="https://notebook.drmaciver.com/posts/2020-07-15-09:33.html"&gt;nice problems to have&lt;/a&gt;. Many of them were not, but I was able to compensate for them in some way or another. It's not hard to imagine some hypothetical other's thought process of "How can you say you need help when so many other people are worse off? You're doing fine". But I really wasn't, and to a large degree still am not, doing fine.&lt;/p&gt;
+
+
+&lt;p&gt;You can see this a lot in my writing - a lot of things I write have a model target audience of me of N years ago. They're something I desperately wished someone would teach me at the time, or desperately needed but didn't know even &lt;em&gt;could&lt;/em&gt; be taught, but nobody did. So I had to spend years of my life learning them the hard way, and now I'm paying it forward in the hopes that someone out there analogous to younger me gets the help they need.&lt;/p&gt;
+
+
+&lt;p&gt;It's hard for me to talk about all this without sounding extremely bitter about it. That's because I'm extremely bitter about it. But the result is that I mostly don't talk about it in public at all, and I don't think that's good either.&lt;/p&gt;
+
+
+&lt;p&gt;This is part of what a pervasive unwillingness to help does, I think. People's responses to pain are all very "Have you tried not being in pain?" or, if you're lucky, "Yeah me too".&lt;/p&gt;
+
+
+&lt;p&gt;I'm aware that not all of the help I've lacked has been due to others' unwillingness to help. Much of it is on me - I'm not very good at making it clear that I need help, or letting others help me when they do offer. There's a number of reasons for this, but mostly it's just a matter of getting burned too many times and finding it very hard to trust that this time it will be different. &lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2022-01-02-12:34.html" rel="alternate"/>
   </entry>
 </feed>
