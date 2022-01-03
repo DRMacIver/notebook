@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2022-01-02T15:20:35+00:00</updated>
+  <updated>2022-01-03T14:16:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,47 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2021-10-19-10:53.html</id>
-    <title>A simple model of depression and "depressive realism"</title>
-    <updated>2021-10-19T13:20:33+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;A simple model of depression and "depressive realism"&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2021-10-19&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I was talking to &lt;a href="https://twitter.com/fvathynevgl/"&gt;Vathy&lt;/a&gt; about depressive realism,
-and when I expressed skepticism about its existence they asked me to say more. I did,
-and it seemed an unusual enough perspective that I thought I'd quickly write it up in a blog post.&lt;/p&gt;
-
-
-&lt;p&gt;So here's what I think, roughly. This is a simplified version of what I actually think (because what I actually think is a giant tangle of stuff I haven't fully figured out), and what I actually think is probably no more than roughly right, but I still think this is a good model that is helpful to bear in mind.&lt;/p&gt;
-
-
-&lt;p&gt;Basically it's this: Humans have all sorts of biases in their thinking. No matter what anyone tells you, this isn't bad. Biases are good, as long as you're expecting to make mistakes (and, I hate to break it to you, humans make a lot of mistakes and are going to keep doing that), because &lt;em&gt;not all mistakes are created equal&lt;/em&gt;. If you're going to make mistakes, you want to bias in the direction of mistakes that are safe to make.&lt;/p&gt;
-
-
-&lt;p&gt;(See e.g. &lt;a href="https://www.drmaciver.com/2020/02/theres-no-single-error-rate/"&gt;There's no single error rate&lt;/a&gt;).&lt;/p&gt;
-
-
-&lt;p&gt;One of the ways that depression differs from healthy cognition is that it has a much stronger bias in the direction of inaction than healthy cognition does. If you see a problem, you can decide to do something about it or not. A depressed person is much more likely than a non-depressed person to choose inaction,
-and as a result is more likely to believe things that justify that inaction (this latter feature isn't specific to depression - a non-depressed person who chooses action is more likely to believe things that justify that action. Motivated reasoning is a whole big thing).&lt;/p&gt;
-
-
-&lt;p&gt;As a result, a depressed person is more likely to get the right answer in situations where the right answer is inaction, and less likely to get the right answer in situations where the right answer is action.&lt;/p&gt;
-
-
-&lt;p&gt;In situations where the right answer is typically inaction (which can happen if you're in a dangerous environment which you have little control over, certainly, and as a matter of numbers this is probably more likely for depressed people) this will tend to mean that depressed people are more likely to be right than people who are neutral or biased towards action, but it's not that the depressed person is more realistic than the non-depressed person, it's that their biases are currently well adapted to their situation, and if the situation changes they would retain those biases and be less well adapted. I'm no more inclined to call this realism than I am to call a stopped clock accurate because it happens to be stopped at the current time.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2021-10-19-10:53.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-10-25-17:53.html</id>
     <title>How is laughter social?</title>
@@ -1093,7 +1052,7 @@ Moods contain not just slopes but also walls.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-01-02-12:34.html</id>
     <title>Wanting (to) help</title>
-    <updated>2022-01-02T15:20:35+00:00</updated>
+    <updated>2022-01-02T15:54:14+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Wanting (to) help&lt;/p&gt;
@@ -1192,5 +1151,109 @@ Nobody is invincible, nobody can maintain good times for ever. You're going to h
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2022-01-02-12:34.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2022-01-03-14:16.html</id>
+    <title>Relearning curiosity</title>
+    <updated>2022-01-03T14:16:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Relearning curiosity&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2022-01-03&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Apparently when I start a daily writing practice in which I am honest about my feelings partly as a way to work myself out of a depressed period,
+everything I write is very sad. So, here we are again.&lt;/p&gt;
+
+
+&lt;p&gt;A while back I wrote &lt;a href="https://notebook.drmaciver.com/posts/2020-06-28-15:58.html"&gt;I'm not actually that curious&lt;/a&gt;. I explained that although I am a voracious reader and know a lot of stuff, it wasn't actually generally powered by a learn things for its own sake - I learn in aid of things I want to do, not primarily because I want to learn. Almost everything I learn has a goal in mind. I don't seek out knowledge because I'm curious, I seek it out because knowledge is useful.&lt;/p&gt;
+
+
+&lt;p&gt;Dear past me: You realise that's bad, right? Well, in case you don't realise that (I'm not sure you did), FYI that's bad.&lt;/p&gt;
+
+
+&lt;p&gt;It's also not how I used to be. I &lt;em&gt;definitely&lt;/em&gt; used to be curious, and just read about things because they were fun and interesting. I had a very nerdy notion of fun and interesting which means that this ended up me taking a book about classical mechanics (I still know a surprising amount about Lagrangian formulations of Newtonian physics, although it's all got a bit rusty) as my summer vacation reading when I was 16, but it was absolutely something I picked because I wanted to learn about it and not because I needed to.&lt;/p&gt;
+
+
+&lt;p&gt;My degree was in pure mathematics, which I certainly didn't get into because I had applications in mind for the connection between the axioms of set theory and questions in analysis (this was what my final year essay was on. It wasn't very good).&lt;/p&gt;
+
+
+&lt;p&gt;Apparently as a kid I would fairly regularly give adults mostly-correct lectures on various subjects I'd been learning about. Palm trees and black holes seem to be the topic that people tell stories about me doing this, but I'm sure there are others.&lt;/p&gt;
+
+
+&lt;p&gt;At some point this got lost. I don't really know when, or why.&lt;/p&gt;
+
+
+&lt;p&gt;It feels like part of the problem is agency. As a kid it's easy to be curious about things, because nothing you do actually matters, and also you're mostly bored out of your mind. So why not learn new things purely because they're interesting and you want to stuff your brain with knowledge?&lt;/p&gt;
+
+
+&lt;p&gt;Also, you're a child, and thus you're still full of energy. The fatigue of ageing and the burnout of life haven't set in.&lt;/p&gt;
+
+
+&lt;p&gt;(Not that those are inevitable. My parents seem like they still have way more energy than I do)&lt;/p&gt;
+
+
+&lt;p&gt;Now it feels like I've got such limited brain capacity and energy and such a greater degree of agency that &lt;em&gt;of course&lt;/em&gt; I spend it on useful things, because I feel guilty about not doing so.&lt;/p&gt;
+
+
+&lt;p&gt;Except I think even as I write it that that's a cope. If that were the case I'd probably be doing far more useful things than I do.&lt;/p&gt;
+
+
+&lt;p&gt;Really the core problem is that &lt;a href="https://drmaciver.substack.com/p/burnout-as-acedia"&gt;it's hard to care about things&lt;/a&gt;, and usefulness is a crutch.
+It's much easier to solve a problem, which is obviously good. It's even better if &lt;a href="https://notebook.drmaciver.com/posts/2022-01-02-12:34.html"&gt;it's somebody else's problem&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;I keep wanting to frame this in terms of justification, but I don't think that's quite right. The problem isn't that I feel like I have to be able to justify my actions to someone, but that they need to feel somehow purposeful. It's not that someone will attack me for doing it, it's that if I spend energy on something purposeless a huge wave of "What's the point?" rises up and I get distracted and go do something else.&lt;/p&gt;
+
+
+&lt;p&gt;Often it starts before that and I can't even generate the "purposeless" actvitity in the first place. I try to generate a plan for what to do and &lt;a href="https://notebook.drmaciver.com/posts/2021-10-02-08:53.html"&gt;my brain glitches&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;This is depression, of course. It's well-managed reasonably high functioning depression, but it's still depression.&lt;/p&gt;
+
+
+&lt;p&gt;I think of depression as a constriction of the felt world of possibilities. A narrowing of the actions that you feel able to take. A lot of my incessant "curiousity" in the search of the useful feels like I'm trying to squeeze a vast level of interest in the world through the narrow passages that depression has left me. What comes out is still pretty good, because I'm clever and competent, but it's fairly anemic compared to what I'd be doing if less depressed.&lt;/p&gt;
+
+
+&lt;p&gt;A lot of this focus on usefulness feels not so much like I'm motivated to be useful (I am, but it's more of a "make the pain go away" motivation than something I necessarily care deeply about), but that it's something to do while I'm here. I've got all these capabilities, there are things I can do that help make things better, might as well. It's slightly less fundamentally unsatisfying than wasting my day scrolling Twitter and reading YouTube.&lt;/p&gt;
+
+
+&lt;p&gt;I think I &lt;em&gt;do&lt;/em&gt; fundamentally care about helping people, but it's all swallowed up by the general meh. Certainly I would &lt;em&gt;like&lt;/em&gt; to be positively motivated towards helping people instead of it being something that hurts if I don't do it, but these days I'm struggling to be positively motivated about much of anything very serious.&lt;/p&gt;
+
+
+&lt;p&gt;&lt;a href="https://twitter.com/DRMacIver/status/1476967194101698561"&gt;I wrote on Twitter about how incredibly mind-numbingly bored I am of the pandemic&lt;/a&gt;, and that I really need more in person contact with people than I'm getting. That feels like part of this but I don't know how much of it.&lt;/p&gt;
+
+
+&lt;p&gt;The absence of curiousity feels in some way like a primary thing in its own right that I should take seriously just as much as the absence of people.
+Learning things should be a joyful activity, and the fact that it's not is a huge sign.&lt;/p&gt;
+
+
+&lt;p&gt;One of my working theories of how to work with depression is to be constantly exploring the edge of the depression comfort zone - do things that you feel &lt;em&gt;slightly&lt;/em&gt; too depressed to do. If depression comes from a restriction of what feels safe, exploring the boundaries of where you feel safe helps you relearn those as safe and then you can expand gradually outwards.&lt;/p&gt;
+
+
+&lt;p&gt;Sometimes this even works.&lt;/p&gt;
+
+
+&lt;p&gt;Well, that's too cynical. It often works, it's just a bit of a two steps forward one step back process. The depression comes back, but it's easier to claw your way out of it the next time because you believe you can do that.&lt;/p&gt;
+
+
+&lt;p&gt;So the starting point for solving the curiousity problem is something like asking how I would behave if I were as curious as I'd like to be, and walking in that direction until I hit the edge of the comfort zone.&lt;/p&gt;
+
+
+&lt;p&gt;The obvious thing is that I would learn things just for interest. For some reason the example that comes to mind here is physics youtube. I've been enjoying &lt;a href="https://www.youtube.com/c/SteveMould"&gt;Steve Mould's YouTube channel&lt;/a&gt; recently for example. I really respect the urge to just go "How does that work?" and put in the effort to find the answer. I definitely used to have some of that, and I'd like to have it again.&lt;/p&gt;
+
+
+&lt;p&gt;The other thing that comes to mind is that I'd talk to people more about things I find interesting. I really don't do this very much - these days all my writing is about stuff that's useful (in some very generalised sense of the term), which is a shame in and of itself - but really I have in person conversations in mind. Generally I just let other people take the lead, and feel very inhibited in proposing conversation topics and just going on about them, and that feels necessary if rather daunting.&lt;/p&gt;
+
+
+&lt;p&gt;Who knows if any of this will actually work, but it feels worth a try.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2022-01-03-14:16.html" rel="alternate"/>
   </entry>
 </feed>
