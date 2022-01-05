@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2022-01-04T14:48:00+00:00</updated>
+  <updated>2022-01-05T13:01:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,326 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2021-10-29-09:43.html</id>
-    <title>Probably enough probability for you</title>
-    <updated>2021-10-30T09:21:13+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Probably enough probability for you&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2021-10-29&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I found myself writing a new newsletter issue in which it would be really useful for readers to have a basic working knowledge of probability. I started trying to explain it in the middle of the issue, and this seemed like a bad idea, so instead here is an out of band explanation where I'll attempt to provide a decent working explanation of probability for people who are not already familiar with it.&lt;/p&gt;
-
-
-&lt;p&gt;Advance warning: In this piece I will be expressing strong philosophical positions, not all of which will be perfectly aligned with other people's strong philosophical positions on the subject. Obviously mine are correct and everyone else is a fool, and I shall show them all.&lt;/p&gt;
-
-
-&lt;p&gt;...which is to say, treat this as a useful way of thinking about it rather than necessarily a 100% definitive account that everyone else would agree with. My view on this is a somewhat pragmatic hybrid of two major schools of probability, which I think corresponds pretty well to what people actually do in practice, but I take that hybrid as central rather than treating one of them as correct and also grudgingly borrowing ideas from the other.&lt;/p&gt;
-
-
-&lt;p&gt;Another thing to note is that I am being very sloppy with or brushing over details. This is because what I am trying to convey is a rough sense of probability sufficient to get a handle on what it's for and how to use it. If you want to fill in the details, that's more work, but it's also mostly not necessary.&lt;/p&gt;
-
-
-&lt;h3&gt;What is a probability?&lt;/h3&gt;
-
-
-&lt;p&gt;Probability is two separate things, which are often conflated:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;The skilled practice of putting a number on some source of uncertainty, in a way that usefully improves your ability to work with that uncertainty. These quantified uncertainties are called probabilities.&lt;/li&gt;
-&lt;li&gt;A body of mathematical theory, based on certain idealised models of uncertainty that are only found in pure forms in mathematical objects, that nevertheless usefully describes and informs that skilled practice.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;Most explanations of probability start with the second, and end up a bit confused on the first.
-In particular they try to explain what probability &lt;em&gt;is&lt;/em&gt;, when in reality probability is not a single thing,
-and is best thought of as something you do rather than something that exists.&lt;/p&gt;
-
-
-&lt;p&gt;In particular you end up with a lot of arguments about whether probability is a subjective representation of uncertainty or a feature of the world itself, which is about as sensible a thing to argue about as whether numbers represent weights or lengths.
-Probability is a &lt;em&gt;tool of description&lt;/em&gt;, and as such its use contains both subjective and objective elements,
-informed by both the thing being described, the entity describing it, and the specific details of the process resulting in the description (e.g. how much work is put in).&lt;/p&gt;
-
-
-&lt;p&gt;Instead it is better to think of probability in a pluralist way: There are multiple notions of probability, each corresponding to a given instance of trying to quantify uncertainty, and the mathematical theory suggests various rules that a notion of probability should ideally attempt to follow, which may or may not be followed in practice.&lt;/p&gt;
-
-
-&lt;h3&gt;Quantifying uncertainty&lt;/h3&gt;
-
-
-&lt;p&gt;Here are several motivating questions, each of which invite different notions of probability:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;If you roll two dice, how likely is the total value shown on the dice to be greater than or equal to 10?&lt;/li&gt;
-&lt;li&gt;How confident are you that there are currently more than 67 million people in the UK?&lt;/li&gt;
-&lt;li&gt;How likely is it to rain tomorrow?&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;A notion of probability associated with these questions is an attempt to answer them with a number. Conventionally, these numbers are between 0 and 1, with 0 representing "I am completely certain that this will not happen" and 1 representing "I am completely certain that this will happen", although often it's more natural to report them as a percentage between 0% (0) and 100% (1) instead.&lt;/p&gt;
-
-
-&lt;p&gt;Slightly more formally, a notion of probability for some set of possibilities (rolls of a dice, range of plausible populations of the UK, weather over the course of the day) is any method of taking subsets of those possibilities (e.g. the subset where the dice roll total is greater than or equal to 10, the subset where there are more than 67 million, the subset where it rains at least once in the course of the day), and assigning a number between 0 and 1 (or, if you prefer, 0% and 100%) to that event. Intuitively that number represents some idea of how "likely" that event is, but that is not part of the notion of probability, it is part of what we are using the notion of probability to try to do.&lt;/p&gt;
-
-
-&lt;p&gt;There are a couple reasons that I am emphasising this pluralism about probabilities,
-but the first and biggest one is that these questions each have a slightly different type of uncertainty to them.&lt;/p&gt;
-
-
-&lt;p&gt;In the first instance, the dice are in some sense "truly random". There is an element of actual randomness in the world, and your uncertainty about it derives purely from that randomness (arguably you could perfectly predict the dice rolls if you had sufficiently good information and predictive power, but when I talk about dice or coin flips in this post please assume I mean ideal dice that are powered by some underlying source of genuine randomness like radioactive decay where you cannot predict it even in principle). This is sometimes called &lt;em&gt;aleatoric uncertainty&lt;/em&gt;, meaning uncertainty deriving from pure randomness, but I'll avoid using the term much.&lt;/p&gt;
-
-
-&lt;p&gt;In the second instance there is an objectively correct answer - there either are or aren't more than 67 million people in the UK right now - and you could in principle find it out, but your knowledge is imperfect. You can e.g. google and get a population estimate of 67.22 million which suggests pretty strongly the answer is yes, but where do those numbers come from? How recent are they? Do they take into account Brexit and COVID departures? etc. Taking into account all of these considerations might make you less certain, but either way that uncertainty lives in your head, not in the world, where there is a true answer to the question that you can in principle find out. This sort of uncertainty is often called &lt;em&gt;epistemic&lt;/em&gt; uncertainty, meaning uncertainty purely in your knowledge, and again I won't use this term too much.&lt;/p&gt;
-
-
-&lt;p&gt;The third example however combines the two. Weather forecasting is an imprecise science, but it's increasingly pretty good, especially with satellite imagery. Additionally, there are questions of general knowledge - e.g. if you have historical records you could answer with the fraction of times it's rained on that date - but at some point you start being affected by true underlying randomness and there is a limit to how well you can do regardless of how much knowledge you gain.&lt;/p&gt;
-
-
-&lt;p&gt;This discussion of these three types of things hopefully indicates two important features:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;These questions do not uniquely define a notion of probability each. A notion of probability is a way of answering the question, but there are many different ways of answering the question.&lt;/li&gt;
-&lt;li&gt;Some ways of answering the question produce better answers than others.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;For example, suppose I answered 0 to the dice question. Perfectly allowed, there's no rule against it. I could genuinely be 100% certain that two dice when rolled and added together will never total 10 or more. Of course, I will then look pretty stupid when the dice roll a 5 and a 6. This is in some sense a &lt;em&gt;bad&lt;/em&gt; notion of probability, even if it's a perfectly valid one.&lt;/p&gt;
-
-
-&lt;p&gt;I could take my best guess on the population thing (I'm like 95% certain that there are more than 67 million people in the UK right now. The 67.22 million figure is from mid-2020, and between COVID and Brexit I think there's a decent chance we've popped below the 67 million mark. 95% feels a bit low, but 99% feels too high). A "better" way of doing it would be to go out and exhaustively count every single person and report 0% if the answer is no and 100% if the answer is yes. Or we could run the survey that resulted in that 67.22 million again and see what it says and do the same, which is a bit lower effort than a perfect accounting but probably good enough.&lt;/p&gt;
-
-
-&lt;p&gt;Similarly on the weather forecasting, we could make a complete guess ("IDK, 50%?"), we could use historical data, we could use satellite data, we could use complicated modelling... the more effort we put in to weather forecasting, the better we should hope our notion of probability that we get from those efforts is.&lt;/p&gt;
-
-
-&lt;p&gt;But what does "better" mean?&lt;/p&gt;
-
-
-&lt;h3&gt;Well calibrated probabilities&lt;/h3&gt;
-
-
-&lt;p&gt;The only way to be obviously, definitively, wrong, is to assign a probability of 0 or 1 (0% or 100%). If I say something is impossible and it happens, I was wrong, there is no doubt about that.&lt;/p&gt;
-
-
-&lt;p&gt;But it feels like this is too low a bar to clear, right? If I say something is a one in a million chance and it happens anyway then, well, maybe I just got unlucky, but if my one in a million chances happen nine times out of 10, this starts to look pretty fishy.&lt;/p&gt;
-
-
-&lt;p&gt;A distinction I think it is useful to make here is that it is not that my one in a million chance estimate is &lt;em&gt;wrong&lt;/em&gt; in these cases, it's that it's &lt;em&gt;bad&lt;/em&gt;. I have not expressed total certainty in this outcome, so you could make a legitimate case that I am still technically correct in my opinion, but also in a practical action guiding sense my level of confidence is garbage and regardless of whether I am technically correct you shouldn't listen to me.&lt;/p&gt;
-
-
-&lt;p&gt;The problem there is not I made a one in a million prediction, or even that something I predicted as one in a million happened. Things that you should predict as one in a million chances happen all the time, because there are millions of such things. If I claim that a million different things are each likely to happen with a one in a million chance, it's pretty reasonable that &lt;em&gt;one&lt;/em&gt; of them happens.&lt;/p&gt;
-
-
-&lt;p&gt;Say, for example, that I claim there's a one in a million chance of winning the lottery (it's actually much lower than this given a better notion of probability, but there's nothing stopping me &lt;em&gt;saying&lt;/em&gt; this), and 50 million people play the lottery and someone wins. I would have said that each of their individual chances was one in a million, and the fact that &lt;em&gt;this person in particular&lt;/em&gt; won is not evidence against that, because it could have been any one of the millions of others.&lt;/p&gt;
-
-
-&lt;p&gt;In fact, the problem my prediction would have here is that far too few people would win for it to feel well calibrated. If 50 million people play, that suggests about 50 people should win, and the fact that only one person wins suggests that my one in a million claim was too high, and that a better notion of probability.&lt;/p&gt;
-
-
-&lt;p&gt;This leads to the idea of the &lt;em&gt;calibration&lt;/em&gt; of a notion of probability: My notion of probability is well calibrated on a series of questions, if when I assign a certain level of confidence to an outcome, the outcome happens about that often.&lt;/p&gt;
-
-
-&lt;p&gt;This is a little subtle, so let me expand with some examples.&lt;/p&gt;
-
-
-&lt;p&gt;Let's start with a series of (ideal) coin flips. Suppose, with each coin flip, you ask me to assign a probability that the coin will turn up heads, and I say 60%. You flip a coin, it turns up tails. This is not particularly strong evidence that my answer of 60% is badly calibrated - I said it was more likely than not to turn up heads, but I didn't claim tails was &lt;em&gt;very&lt;/em&gt; unlikely. If I'd say 99.999% and it turned up tails, that would have been much stronger evidence that my notion was badly calibrated.&lt;/p&gt;
-
-
-&lt;p&gt;If, on the other hand, you keep flipping the coin, I keep saying 60%, and after 10000 coin flips it's turned up heads 4897 times, that's pretty good evidence that my estimate of 60% is off - certainly an estimate of 50% would be better calibrated. Currently the number that would be &lt;em&gt;best&lt;/em&gt; calibrated would be 48.97%, but if I kept flipping the coin another 10000 times and got 5041 heads this time, the new total would be 9938, or 49.69%, at which point 50% looks better calibrated than 48.97%.&lt;/p&gt;
-
-
-&lt;p&gt;In some sense, for this very simple process, there is an objectively correct well calibrated answer that is that you should always be estimating 50%. This is because the uncertainty in it is "all in the randomness", and also beause we've supposed that by hypothesis.&lt;/p&gt;
-
-
-&lt;p&gt;Over a more complicated series of questions, the question is less clear, in particular because the probability might not be the same every time. If you ask me each day whether or not it's going to rain, and I answered 60% each time, you could measure the calibration in the same way, but suppose some days I answered 10%, some days I answered 90%, how would you determine how well calibrated I was?&lt;/p&gt;
-
-
-&lt;p&gt;One answer to this is what are called &lt;em&gt;scoring rules&lt;/em&gt;, which attempt to score how well you do on a series of question. The way these work is that when you make a prediction, you are rewarded for a high probability if the event happened, or for a low probability if the event didn't happen. For example, a common choice of scoring rule is the &lt;a href="https://en.wikipedia.org/wiki/Brier_score"&gt;Brier score&lt;/a&gt;, where if you chose probability \(p\) you get a reward of \(p^2\) if the event happens, or \((1 - p)^2\) if it did not. In the extreme case where \(p = 1\) you get a reward of \(1\) where it happens and \(0\) if it doesn't (vice versa if you chose \(p = 0\)), while if you chose \(p = \frac{1}{2}\) you get a score of \(\frac{1}{4}\) either way.&lt;/p&gt;
-
-
-&lt;p&gt;(Some scoring rules may not work exactly like this, in that they aren't necessarily an independent sum of your score on each question, but the general idea remains the same)&lt;/p&gt;
-
-
-&lt;p&gt;There is a whole bunch of theory of scoring rules and what makes a good or bad scoring rule, but the most important part is that some scoring rules are &lt;em&gt;proper&lt;/em&gt;, which means that the strategy that gets you the best score is to have perfectly calibrated set of probabilities, but different strategies will reward how close you are to being well calibrated in different ways. For example, the Brier score is fairly forgiving about if you occasionally said that something is a one in a million chance and it happens, while the &lt;a href="https://en.wikipedia.org/wiki/Scoring_rule#Logarithmic_scoring_rule"&gt;Logarithmic scoring rule&lt;/a&gt; will penalise that comparatively harshly.&lt;/p&gt;
-
-
-&lt;p&gt;All of which is to say, as well as different notions of probability, there are also different ways of measuring how good a given notion of probability is.&lt;/p&gt;
-
-
-&lt;p&gt;There is one particularly useful notion of practical calibration that I'll talk about in a bit, but before I do I want to really hammer home something about calibrated probabilities, partly because even though I thoroughly understand it I continue to find it intuitively weird.&lt;/p&gt;
-
-
-&lt;h3&gt;Why are there multiple calibrated probabilities?&lt;/h3&gt;
-
-
-&lt;p&gt;Let's go back to the question of predicting rainfall.&lt;/p&gt;
-
-
-&lt;p&gt;Suppose, each day, you asked me if it would rain tomorrow somewhere in the UK, and each day I said 46.6% likely. This is the number &lt;a href="https://www.statista.com/statistics/610677/annual-raindays-uk/"&gt;some brief googling gives me for 2020&lt;/a&gt;, so this number is pretty well calibrated.&lt;/p&gt;
-
-
-&lt;p&gt;This is what you can think of as the "zero effort well-calibrated" notion of probability. It's well calibrated, but I've made no attempt to take into account any information available to me.&lt;/p&gt;
-
-
-&lt;p&gt;Now suppose I pay attention to if it's raining today. Say I claim that if it's raining today it's 60% likely to rain tomorrow, and if it's not raining today it's 35% likely to rain tomorrow (I have no idea if this is more accurate, I'd have to look at more data than I could find in 30 seconds of Googling, but &lt;em&gt;something&lt;/em&gt; like it will be true - it's very unlikely that whether it rains tomorrow is completely independent of whether it rains today. Let's pretend it's right for the sake of simplicity).&lt;/p&gt;
-
-
-&lt;p&gt;The difference between these two notions of probability is not that one is better calibrated than the other, it's that one takes into account more work and information. It is more useful for action guidance (although still probably not quite useful enough), because we can have a better sense of whether it's going to rain on any given day.&lt;/p&gt;
-
-
-&lt;p&gt;("Is it going to rain anywhere in the UK?" is not necessarily particularly useful for action, mind, but you can imagine the same thing with more local forecasts).&lt;/p&gt;
-
-
-&lt;p&gt;An important thing to note here is that sometimes the day-dependent prediction gives a higher chance of rain, and sometimes a lower chance of rain. If it had always produced a lower, or higher, chance of rain, both of them could not have been equally well calibrated, because over a long series of predictions calibration means that they have to be right on average about the same amount, and if one was consistently higher it would predict a higher number of rainy days than the other over time, so they can't both be consistently right.&lt;/p&gt;
-
-
-&lt;h3&gt;The logic of probability&lt;/h3&gt;
-
-
-&lt;p&gt;As well as calibration, one way you can judge how good probabilities are is whether they make sense when compared to each other. Perfectly calibrated probabilities will always make sense in this way under various technical assumptions, but this is one way of seeing that your probabilities are definitely not perfectly calibrated and maybe improving them if it seems worth it.&lt;/p&gt;
-
-
-&lt;p&gt;For example, one obvious way your probabilities could be nonsensical is if you give an event that logically must be more likely than another a lower probability. The question "Will it rain in the next week?" cannot reasonably have a lower probability than "Will it rain tomorrow?", because every time it rains tomorrow it rains in the next week.&lt;/p&gt;
-
-
-&lt;p&gt;This will show up as being badly calibrated through a series of questions which asks both at the same time, because over a large number of predictions the number of times it rained in the next week must be at least as high as the number of times it rained tomorrow, so if the probability given for the former was lower than that for the latter you'd end up with one or the other probabilities being wrong.&lt;/p&gt;
-
-
-&lt;p&gt;(There are a number of reasons why this might actually show up as being the case if you arrange all the details right, but hopefully you can at least agree that such a prediction is silly).&lt;/p&gt;
-
-
-&lt;p&gt;The most important rule probabilities should satisfy is this: If two events are disjoint, that is they cannot happen together, then the probability of at least one of them happening is the sum of the probabilities of either of them happening. For example, the probability you assign to a die roll being five or six should be the sum of the probability you assign to it rolling five plus the probability you assign to it rolling six.&lt;/p&gt;
-
-
-&lt;p&gt;From this, we can derive most other useful rules about probability. For example, the first rule I mentioned can be expressed as follow: If whenever A happens, B also happens, then the probability of B is the probability of A plus the probability of B without A. The latter probability must be at least 0, so the probability of B must be the probability of A plus a non-negative quantity, and thus at least that of A.&lt;/p&gt;
-
-
-&lt;p&gt;Another rule is that, because the probability we assign to certainty is 1, if we assign probability \(p\) to some event then we should assign probability \(1 - p\) to it &lt;em&gt;not&lt;/em&gt; happening.&lt;/p&gt;
-
-
-&lt;p&gt;I won't go into these logical rules of probability too much here, but it's worth noting that understanding them is often one of the most beneficial parts of learning probability theory, because they tend to result in fairly general rules of reasoning that you can use even when you're not using probability explicitly.&lt;/p&gt;
-
-
-&lt;p&gt;For example, we've got the &lt;a href="https://en.wikipedia.org/wiki/Conjunction_fallacy"&gt;conjunction fallacy&lt;/a&gt;, which people often fall prey to:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Linda is 31 years old, single, outspoken, and very bright. She majored in philosophy. As a student, she was deeply concerned with issues of discrimination and social justice, and also participated in anti-nuclear demonstrations.&lt;/p&gt;
-&lt;p&gt;Which is more probable?&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Linda is a bank teller.&lt;/li&gt;
-&lt;li&gt;Linda is a bank teller and is active in the feminist movement.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;The correct answer is (1), because if (2) is true then (1) has to be true as well, but people often get this wrong.&lt;/p&gt;
-
-
-&lt;p&gt;(Although as a side note, I'm a little suspicious of this claim, and there are a number of critiques of it).&lt;/p&gt;
-
-
-&lt;p&gt;Learning to spot problems in your reasoning like this tends to be one of the reasons people are very into probability theory.&lt;/p&gt;
-
-
-&lt;h3&gt;From probability to expected values&lt;/h3&gt;
-
-
-&lt;p&gt;Often when we make decisions based on probabilities, we're interested not just in the probabilities of events but some number that depends on them.
-For example, when we're planning a project, we will typically want to know how much it's going to cost.&lt;/p&gt;
-
-
-&lt;p&gt;For a given notion of probability, we can define the &lt;em&gt;expected value&lt;/em&gt; of some score, as the sum of the score under the various possible events.&lt;/p&gt;
-
-
-&lt;p&gt;So for example, if we were to assign a probability of \(\frac{1}{6}\) to each possible face of a die when rolling it (which is, presumably, perfectly calibrated if the die is fair), the expected value of the roll is \(\frac{1 + 2 + 3 + 4 + 5 + 6}{6} = 3\frac{1}{2}\).&lt;/p&gt;
-
-
-&lt;p&gt;The important thing about expected values is that when you have a well calibrated notion of probability,
-and take many actions, then the average actual value of those actions will be pretty close to the average expected value.&lt;/p&gt;
-
-
-&lt;p&gt;This is a little hard to justify in general and this post has gone on long enough as it is, but to see it in the specific case let's look at the dice case:&lt;/p&gt;
-
-
-&lt;p&gt;Suppose our probability of \(\frac{1}{6}\) for each face is well calibrated. Then over a large number of rolls,\(N\), typically about \(\frac{N}{6}\) of the rolls will have each value. Therefore the average is about \(\frac{N}{6} \times (1 + 2 + 3 + 4 + 5 + 6) \times \frac{1}{N} = \frac{1 + 2 + 3 + 4 + 5 + 6}{6} = 3\frac{1}{2}\), as desired.&lt;/p&gt;
-
-
-&lt;p&gt;This argument will work for any similar situation where you're repeating exactly the same sort of action over and over again, but the claim is true in general (with some mild technical caveats), it's just harder to justify and I'll ask you to take it on faith.&lt;/p&gt;
-
-
-&lt;h3&gt;Practical calibration through betting&lt;/h3&gt;
-
-
-&lt;p&gt;This notion of expected values leads to one of the easiest indicators that you're well calibrated:
-you can make money from betting on your probabilities.&lt;/p&gt;
-
-
-&lt;p&gt;Suppose I offer you a bet: If an event happens, I'll give you £1, otherwise you give me £1.
-Should you take the bet or not?&lt;/p&gt;
-
-
-&lt;p&gt;Well, as a one off, it doesn't matter very much, but if you're presented with many such bets it starts to add up, and being able to make the bets well will lead to profit.&lt;/p&gt;
-
-
-&lt;p&gt;Now, suppose you have a well calibrated notion of probability for these questions, and you give the event a probability of \(p\). How much do you make off this?&lt;/p&gt;
-
-
-&lt;p&gt;Well, the expected value of your bet is \(p - (1 - p) = 2p - 1\), because if the event happens (probability \(p\)) you make £1, and if it doesn't (probability \(1 - p\) because your probabilities are well calibrated) you lose £1 (or "make" -£1).&lt;/p&gt;
-
-
-&lt;p&gt;What this means is that if you think the event is more likely than not (i.e. \(p &amp;gt; \frac{1}{2}\)) you would expect to make money, and so should take the bet, and otherwise you expect to lose (or not gain if \(p = \frac{1}{2}\)).&lt;/p&gt;
-
-
-&lt;p&gt;More generally, if you make £n when the event happens or pay £m when it doesn't, you expect to earn \(np - m(1 - p) = p(n + m) - m\), so the expected value of the bet is positive when you assign \(p &amp;gt; \frac{m}{m + n}\).&lt;/p&gt;
-
-
-&lt;p&gt;Why should you bet on events with a positive expected value? Well, because of the property that over many bets you expect the average value of your bets to be roughly the average value of their expected values. As a result, if you make a lot of positive expected value bets, the average value of your bets is positive, and thus the total value of your bets is positive and you've made money.&lt;/p&gt;
-
-
-&lt;p&gt;Now, I should add to this that actual practical gambling is much more complicated than this, and involves a lot of subjects like bankroll management. The above logic really only works as long as you are gambling amounts that are small compared to how much money you have in reserve: You only get to make many bets if you don't go bankrupt first!&lt;/p&gt;
-
-
-&lt;p&gt;This also isn't &lt;em&gt;really&lt;/em&gt; about gambling, and I probably don't recommend gambling as a general choice (particularly against professional bookies, who almost certainly have a better notion of probability than you do and can make sure the odds you're being offered are not worth it), but it's true for general strategic choices too: Trying many safe things that have, in some sense, a positive expected value for you, and you'll probably do pretty well.&lt;/p&gt;
-
-
-&lt;h3&gt;Is all of this worth it?&lt;/h3&gt;
-
-
-&lt;p&gt;One of the big philosophical debates around probability is between "All uncertainty can usefully be represented as probabilities" and "Oh yeah, how certain are you of that?".&lt;/p&gt;
-
-
-&lt;p&gt;My view on the subject is this: You can always assign a probability to any question, but your probabilities will often not be very good, and whether it is worth the effort to make them better is highly variable.
-In particular on questions that are very complicated and involve a lot of unknown unknowns, it's very unclear that thinking of them in terms of probabilities improves your thinking on the subject much,
-or that "Making your probabilities better" is a good way to think about learning more.&lt;/p&gt;
-
-
-&lt;p&gt;There are a lot of arguments that an ideal agent represents all uncertainty as probabilities. This may well be, I don't have a very strong opinion on the behaviour of ideal agents, but I think idealising often elides the fact that these ideal agents have suspiciously godlike powers of thought and observation.
-With actual real practical agents, quantifying your uncertainty that way may not be the best use of your time.&lt;/p&gt;
-
-
-&lt;p&gt;However, there are situations in which probability really shines. In particular when you are dealing with many similar questions which involve a mix of genuine randomness and uncertain knowledge, it is often very helpful to be able to do at least a rough and ready probability estimate of various things in order to get a feel for how to reason about it, and for some jobs and tasks that are at the cutting edge of working with uncertainty (e.g. finance, logistics, forecasting), thinking in terms of probabilities is a vital skill.&lt;/p&gt;
-
-
-&lt;p&gt;Even if you don't regularly encounter such situations, learning the basics of probability is often a useful thing to do, because it gives you tools for reasoning about the uncertainties of daily life, and generally gets you comfortable with working with uncertainty in a way that is hard to get elsewhere.&lt;/p&gt;
-
-
-&lt;p&gt;Is it worth it to think of everything in terms of probability? Almost certainly (about 99.5%) not,
-but often it's worth learning &lt;em&gt;how&lt;/em&gt; to think of everything in terms of probability so that you can then make the sensible choice not to.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2021-10-29-09:43.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-11-10-11:09.html</id>
     <title>Writing is (from the id)</title>
@@ -1182,7 +862,7 @@ Learning things should be a joyful activity, and the fact that it's not is a hug
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-01-04-14:48.html</id>
     <title>Being a brain at night</title>
-    <updated>2022-01-04T14:48:00+00:00</updated>
+    <updated>2022-01-04T16:24:29+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Being a brain at night&lt;/p&gt;
@@ -1268,5 +948,91 @@ It's not an irrecoverable panic attack, it's just that I close my eyes, try to s
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2022-01-04-14:48.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2022-01-05-13:01.html</id>
+    <title>Ready for ~anything~ less than you think</title>
+    <updated>2022-01-05T13:01:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Ready for ~anything~ less than you think&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2022-01-05&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I had to go to the hospital earlier. This wasn't a big deal, I just needed an X-ray on my knee, which has been giving me a hard time for a few months. I set up an appointment with my GP late last month, expecting it to take a while to get the referral sorted (this is incorrect, the NHS is actually very good at prompt X-ray referrals, but I always forget this because I rarely get X-rays and they're rather less prompt at many referrals on other things), so I'd have time for Omicron to settle down and have my knee looked when it was sensible and safe.&lt;/p&gt;
+
+
+&lt;p&gt;Then I got a call this morning at around 8:33. I was not at all awake at 8:33. I'd had another &lt;a href="https://notebook.drmaciver.com/posts/2022-01-04-14:48.html"&gt;night of bad sleep&lt;/a&gt;, and my alarm had gone off at 8:30 and so I was &lt;em&gt;technically&lt;/em&gt; conscious, but it was very confusing when my phone made a noise from the other room as if someone were uncouth enough to actually want to speak to me on it.&lt;/p&gt;
+
+
+&lt;p&gt;The person on the other end told me that they'd had an urgent X-ray referral from my GP (I'm not sure it was really urgent if I'm honest) and could I come to Charing Cross Hospital for 10:25?&lt;/p&gt;
+
+
+&lt;p&gt;My response was slightly more articulate than "Huh? What? Zzzz" but not vastly more. At first I Eventually my brain kicked into gear and I said I didn't think I could physically make it in time even if I left right that minute. Fortunately I checked Google Maps and determined that Charing Cross Hospital was not in fact anywhere near Charing Cross, but was in fact near Hammersmith, which is much easier for me to get to, and I determined that it would be tight but doable. So I said yes, I could do it.&lt;/p&gt;
+
+
+&lt;p&gt;A very rapid shower and a COVID test later, and a hurried message asking my partner to be in my flat to meet the Ocado delivery that was supposed to be arriving at 11, I dashed out the door to the bus stop.&lt;/p&gt;
+
+
+&lt;p&gt;The first problem I encountered was that after having promised me a very straightforward route, Google maps was now telling me that it was literally impossible to get there by public transport. It does that. The Google maps app sometimes believes my area (which is very well appointed with bus routes and not too bad to walk to various more civilised forms of public transport) is just utterly inaccessible to public transport, despite generally being OK on desktop web. I opened it on my phone's browser instead and it confirmed that yes the single direct bus to Hammersmith was still a perfectly viable option despite the app's lies.&lt;/p&gt;
+
+
+&lt;p&gt;The second problem was that I missed my bus. This wasn't a huge deal, as it wasn't &lt;em&gt;that&lt;/em&gt; tight and there was another one in 7 minutes, but as I was wondering whether it would make sense to get a taxi there I noticed my third problem: My phone was on 13% battery.&lt;/p&gt;
+
+
+&lt;p&gt;It shouldn't have been. I'd charged it overnight. When I got home I found out that the charger had partly fallen out of the power socket, so although the cable was connected to the phone this wasn't a problem.&lt;/p&gt;
+
+
+&lt;p&gt;This also shouldn't have been a problem. I basically &lt;em&gt;never&lt;/em&gt; travel without an external battery for my phone. But I couldn't find it when I was leaving, I was in a hurry, and figured it was fine - my phone was fully charged (oops) and I was only going to be out for a few hours.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, I turned my phone off in order to conserve power, got the bus, and happily read Robertson Davies writing about interpersonal drama between horny Canadian academics for half an hour or so until I got to Hammersmith.&lt;/p&gt;
+
+
+&lt;p&gt;Then I got off the bus, turned on my phone, and prepared to walk the last 5-10 minutes from Hammersmith to Charing Cross Hospital.&lt;/p&gt;
+
+
+&lt;p&gt;This should be easy, it's just a straight line from Hammersmith, more or less. I mean &lt;a href="https://www.google.co.uk/maps/dir/Hammersmith+Station,+London+W6+7AE/Charing+Cross+Hospital,+Fulham+Palace+Rd,+London+W6+8RF/@51.489909,-0.2257482,16.62z/data=!4m14!4m13!1m5!1m1!1s0x48760fb7e0b0070d:0x2398b7d670685535!2m2!1d-0.2248261!2d51.493483!1m5!1m1!1s0x48760fbbc7f7ed75:0x6cd065c43bb8bbf5!2m2!1d-0.2195543!2d51.4868889!3e2"&gt;look at this&lt;/a&gt;, it's not a complicated route.&lt;/p&gt;
+
+
+&lt;p&gt;Just one problem: Figuring out &lt;em&gt;which&lt;/em&gt; straight line it is is impossibly confusing, because when your phone is in low power mode Google Maps becomes all but useless at telling you where you are, and Google Maps has always been useless at orienting without GPS in the UK because it insists on displaying road numbers instead of names. I don't want to know that this is the fucking A315, Google, I want to know &lt;em&gt;what the name on the road sign is&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;I think I could have figured it out in about five minutes of wandering around the junction and staring (in retrospect, I knew which way North was, and if I'd oriented Google maps right I could have known I needed to head southish, and that would have been enough). Unfortunately I got about three minutes, which was how long my phone took to eat through the remaining 13% of battery. I don't know why it died so fast and should probably look into that.&lt;/p&gt;
+
+
+&lt;p&gt;It took me about 25 minutes to find Charing Cross Hospital. I asked five different people for directions in the course of that. They were all very nice about it - I do charming but flustered polite Englishman very well and it tends to work for getting strangers to help you out.&lt;/p&gt;
+
+
+&lt;p&gt;They were not, reliably, useful. Some of their directions were straight up wrong, some of them were in retrospect right but I failed to follow them correctly. The result was a lot of doubling back on myself. But I did find it before my appointment, though not as much before my appointment as they want you to be. I was tired, stressed, and had done enough running at that point (mostly to catch the bus, the rest was a brisk walk) that I'd probably aggravated the knee problem I was there to get checked.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway the X-ray all went fine, nothing to report there for now. They did make me do a rather uncomfortable lunge to get the knee right before the X-ray machine, which I'm probably going to pay for given that it's exactly the sort of motion that triggers the knee problem, but so far it's no worse than grumpy.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, the knee isn't really the point of this story (to the degree that there's a point rather than me just feeling like telling you about how my day went).&lt;/p&gt;
+
+
+&lt;p&gt;All of this has me thinking about preparedness, and the way it decays. This whole episode would have gone much better prior to the pandemic, because I would not have made the mistake with my phone - maybe it wouldn't have been charged, but I'd have had the battery. I'd have been less flustered by Google maps's problems because I'd have Citymapper installed (my phone is a bit low on space and I'm not actually travelling far right now so I uninstalled it).&lt;/p&gt;
+
+
+&lt;p&gt;Fundamentally, leaving the house involves a certain amount of skill and preparations. If you're travelling regularly, those are all fresh. If you're not, your skills have got rusty and your habits have been decayed - the battery that you always have access to has gotten tucked somewhere weird because you haven't used it recently for example.&lt;/p&gt;
+
+
+&lt;p&gt;Navigation was also like this to a degree - I'd utterly lost the skill. When I mentioned asking for directions, J said "Wow, asking for directions? What is this the 90s??" and it's true - I've had a smart phone on me for 11 years at this point. The idea of being lost is just alien. Asking for directions was fine, but following them from memory sure was hard.&lt;/p&gt;
+
+
+&lt;p&gt;It feels ridiculous to be bad at leaving the house in this way (finding it difficult to leave the house is less confusing, but successfully leaving the house and being bad at it is weird), because this is something that seems trivial and I've spent so long being competent at that it's part of my internalised self image that it's just something I can do at a moment's notice without it going wrong (a small achievement, but not an automatic one - I know many people who can't leave the house without forgetting something for example), but it's fairly natural, just not internalised.&lt;/p&gt;
+
+
+&lt;p&gt;I've been thinking about how long it's going to take for being in a crowd to feel normal again, even once it's safe, but I think maybe one of the interesting things is going to happen before that, as we gradually resume life and find out all the skills and habits we'd taken for granted have to be relearned from scratch.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2022-01-05-13:01.html" rel="alternate"/>
   </entry>
 </feed>
