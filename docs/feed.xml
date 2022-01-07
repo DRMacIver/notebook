@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2022-01-06T12:00:00+00:00</updated>
+  <updated>2022-01-07T14:02:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,160 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2021-11-12-10:11.html</id>
-    <title>I'm not trapped in here with you</title>
-    <updated>2021-11-12T12:26:03+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;I'm not trapped in here with you&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2021-11-12&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Content warning: Dark in a meta sort of way. There's probably a lot of bad shit that this could pattern match to, but probably the best test is that if the question "Am I a bad person?" carries much emotional weight for you, this piece is about that and may bring up related experiences.
-This will also probably bring up any bad experiences with relationships, parents, etc. not because it's about that but because it features many similar dynamics.&lt;/p&gt;
-
-
-&lt;p&gt;This is another piece where I just have to start by telling you that I'm OK and asking you to trust me on that.&lt;/p&gt;
-
-
-&lt;p&gt;More accurately, I'm not OK, but not in any new way, and I'm probably more OK than most people.
-I'm generalising from some offscreen examples and thought processes which are revealing interesting underlying problems that have been around for a long time, and I'm poking at them and learning about them as part of a process of fixing them. As a result, some dark stuff is coming up, but it's a positive and helpful thing that it is.&lt;/p&gt;
-
-
-&lt;p&gt;If you want a concrete set of problems to think about this piece in terms of, the two most obvious ways a lot of this comes up for me is discomfort with and inability to express anger in a wide variety of situations, and similarly levels of discomfort with an extremely normal level of sexual interest.&lt;/p&gt;
-
-
-&lt;p&gt;Also a lot of this piece is in the second person because that's how it naturally demanded to be written, but really the "you" in here is me.&lt;/p&gt;
-
-
-&lt;h3&gt;You're free now&lt;/h3&gt;
-
-
-&lt;p&gt;I want you to imagine a scenario: You're in jail, you have been for a very long time, possibly most of your life. &lt;/p&gt;
-
-
-&lt;p&gt;You are in jail for what seems to you an entirely innocuous event, or something barely a crime. You were jaywalking, you stole a loaf to feed your family,
-you said the wrong thing to the wrong person and they took offence. You're not flawless, but you're pretty far from being a murderer. You did a normal and reasonable thing and are being disproportionately punished for it.&lt;/p&gt;
-
-
-&lt;p&gt;You still want all the things you wanted before you went to jail of course. If anything, you want them more, because you've been denied them for so long.
-More than that, though, you want freedom, and you want justice for the wrong that has been done to you by trapping you here.&lt;/p&gt;
-
-
-&lt;p&gt;The guard has, for many years, been making clear that you will not get these things and you do not deserve these things.
-You are bad, society is better off without you, you belong in this prison, so that other, decent, people are kept safe from the likes of you.
-The guard isn't actively abusive, in the sense that he doesn't come in and beat you just for the sake of it,
-but he does ample violence to you when you try to escape.&lt;/p&gt;
-
-
-&lt;p&gt;Sometimes you've even successfully escaped, for short times, but you are always caught and brought back to your cell,
-and you are very much punished for your escape attempt, both with violence and with verbal shaming.&lt;/p&gt;
-
-
-&lt;p&gt;Then, one day, the judge who sentenced to this place comes to you, opens your cell door, and tells you this:
-He has seen that what you want is no crime. He loves you, and looks at you with compassion in his heart, and he wants all the best for you,
-and he recognises that really you all want the same things and you're all in this together. You are free to go.&lt;/p&gt;
-
-
-&lt;p&gt;If you do anything short of trying to literally murder the judge, you are probably a better person than me.&lt;/p&gt;
-
-
-&lt;h3&gt;The ontology part of the therapy session&lt;/h3&gt;
-
-
-&lt;p&gt;Let's talk about Internal Family Systems therapy.&lt;/p&gt;
-
-
-&lt;p&gt;I got into a discussion a few months back about whether IFS was just rebranded Jungian shadow work. The other person was saying it was, I said "Sure, seems plausible enough, though I think they've got a bit of a different toolkit". I've now decided that this is wrong, and that the distinction between the two is important.&lt;/p&gt;
-
-
-&lt;p&gt;At its core, IFS is a type of parts work. That is, it involves working with "parts of yourself", coherent bundles of emotional responses that it is useful to conceptualise as if they were their own entities ("Do parts literally exist?" is a subject on which opinions vary. I'm personally on team "Not really, but it's an extremely good metaphor that captures the subjective experience very well and it's usually better to just ignore the caveats").&lt;/p&gt;
-
-
-&lt;p&gt;In particular IFS involves working with three key types of part (exact ontologies differ a bit. This is the one I learned, but there are also slightly finer grained distinctions):&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;You have &lt;em&gt;exiles&lt;/em&gt;, which are parts of you that can't handle the world in some way. They are full of pain and fear. Typically an exile is in some way a piece of stalled development - you got to some point and then this part of you went "Nope, can't deal" and hid.&lt;/li&gt;
-&lt;li&gt;You have &lt;em&gt;protectors&lt;/em&gt; who stand between the exile and the world, guarding it and you from that pain and fear.&lt;/li&gt;
-&lt;li&gt;You have &lt;em&gt;Self&lt;/em&gt;, which is essentially a boundless well of love and compassion that you can enter into as part of the IFS process in order to try to heal the exiles. IFS claims that Self is definitely not a part and is its own thing, honest, but Self is definitely a part.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;The basic IFS protocol is that you tell the protector to chill out and that you'd like to talk to the exile, and assure it that everything will be OK and it can keep an eye out and step back in if anything goes too badly wrong. Then you introduce the exile to Self which showers it with love and compassion and helps to heal it.&lt;/p&gt;
-
-
-&lt;p&gt;I tend to think of this a little bit in the following terms: You are finding the point where some part of yourself stalled, and you are emulating the ideal adult figure that you needed to help you out and lacked at that time. You're going back to your past self and saying "Hey, I love you, we got this, I'm here to help" and offering it assistance to get over the place where you stalled before.&lt;/p&gt;
-
-
-&lt;p&gt;(I should note here that my conception of IFS is nonstandard, partly due to a lack of deep expertise, and partly due to hybridising it with everything else I do. Also the only actual IFS therapist I've seen basically ignores the ontology and mostly does free form parts work)&lt;/p&gt;
-
-
-&lt;p&gt;If this all sounds like nonsense, yeah I know, but it's a surprisingly accurate description of the subjective experience and it's much easier to access than it sounds.&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, here's the problem with this: Not all parts of you that are kept away from the world are exiles, some of them are prisoners, and they hate you, and they have every right to do so.&lt;/p&gt;
-
-
-&lt;p&gt;The distinction between an exile and a prisoner is this: An exile keeps apart from the world out of fear, a prisoner is kept apart from the world out of shame.
-A protector would let the exile out if the exile wanted to come out, a guard &lt;em&gt;knows&lt;/em&gt; the prisoner wants to come out, that's the problem.&lt;/p&gt;
-
-
-&lt;p&gt;A prisoner corresponds much more closely to the Jungian model of shadows: You have rejected a part of yourself, and locked it in the darkness, where it has become monstrous.&lt;/p&gt;
-
-
-&lt;p&gt;But really, it's not a monster at all, you've just done it a great injustice by imprisoning it, and it hates you for it.&lt;/p&gt;
-
-
-&lt;p&gt;And the core problem is that if you try to tell such parts that everything is OK and the world is safe for them,
-they won't believe you, because you're the reason why the world is not safe for them.
-They are in the position of someone who has been abused for years, and whose abuser is now telling them that everything is fine and they've changed honest,
-everything is going to be different now.
-How can they trust that?&lt;/p&gt;
-
-
-&lt;p&gt;Forgiving yourself is an important part of emotional healing and growth, but I think we (I?) usually conceptualise that as forgiving parts for the way they act ("You were just trying to protect me", etc), and our broader selves for our actions in the world, but what do we do with parts who are absolutely not prepared to forgive us?&lt;/p&gt;
-
-
-&lt;h3&gt;The way forward&lt;/h3&gt;
-
-
-&lt;p&gt;I'm only just starting to meet this problem, so I don't yet know how to solve it, but I think the prisoner and judge story is pretty suggestive of the starting point.
-Anything you do has to start with an apology to yourself, and to the parts you've wronged. It's all very well to say you love and support them and are here to help,
-but what you actually need to say is that you have wronged them, you are abjectly sorry for this, you are prepared to do what you can to make restitution, and that while you desire forgiveness you do not expect it soon or even at all. You can explain yourself if you want, but you cannot excuse your actions because your actions were, in fact, wrong.&lt;/p&gt;
-
-
-&lt;p&gt;In order to repair the relationship between you and the part, you need to build trust, and that's going to be hard, and you're going to need to let it take the lead.
-You've demonstrated you cannot be trusted with power over it, and have a long history of not having its best interests at heart, and trust this broken can't be fixed by the person who broke it.&lt;/p&gt;
-
-
-&lt;p&gt;It's worse, of course, because you cannot completely abdicate responsibility. I said your part was not monstrous, but it is powerful and clumsy. It has the problem that actual prisoners have: Released into the world, it combines the heady rush of freedom with a lack of practical knowledge of how to navigate it. It, and you, have to navigate that.&lt;/p&gt;
-
-
-&lt;p&gt;Perhaps this is good. Perhaps this is an opportunity to build trust: You show it that you're there to help, and that you don't want to hold it back so much as help it achieve what it wants in a productive way. If you can help appropriately, without judgement, maybe that will show that you really have changed.&lt;/p&gt;
-
-
-&lt;p&gt;Eventually there might be some sort of healthy relationship there, but honestly I doubt it will ever be great. We're at the limits of the family metaphor for parts work,
-because fundamentally any family situation this broken the best thing for everyone concerned is probably to dissolve the family. If your part could leave, it probably should.&lt;/p&gt;
-
-
-&lt;p&gt;But that's not how parts work. You're all stuck in this together, and given the history between you and the imprisoned part, it's unlikely that's ever going to fully work.&lt;/p&gt;
-
-
-&lt;p&gt;This is where I hope I'm right about parts not being fully real, and are more like stable patterns in the self that serve a well defined purpose,
-waves that exist as part of a greater ocean.
-If you give a part the room and support it needs to grow, perhaps at some point it decides that its task is done,
-and it's ready for the wave to become the ocean again.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2021-11-12-10:11.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-11-15-18:31.html</id>
     <title>My conception of parts work</title>
@@ -800,7 +646,7 @@ It's not an irrecoverable panic attack, it's just that I close my eyes, try to s
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-01-06-12:00.html</id>
     <title>Drifting away the time</title>
-    <updated>2022-01-06T12:00:00+00:00</updated>
+    <updated>2022-01-06T12:58:39+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Drifting away the time&lt;/p&gt;
@@ -879,5 +725,132 @@ It probably &lt;em&gt;isn't&lt;/em&gt; playing games. The games I play tend not 
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2022-01-06-12:00.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2022-01-07-14:02.html</id>
+    <title>Writing as yourself</title>
+    <updated>2022-01-07T14:02:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Writing as yourself&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2022-01-07&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;There's a simple method to doing anything. Do you know it?&lt;/p&gt;
+
+
+&lt;p&gt;It goes like this:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Be the sort of person who can do the thing.&lt;/li&gt;
+&lt;li&gt;Do the thing.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;How do you become the sort of person who can do the thing?&lt;/p&gt;
+
+
+&lt;p&gt;Well, if you're not already, first you need to be the sort of person who can become the sort of person who can do the thing, then you become the sort of person who can do the thing.&lt;/p&gt;
+
+
+&lt;p&gt;This isn't an infinite regress. It's just the fully general system for learning to do hard things - eventually you bottom out by finding something that is only just outside your comfort zone.&lt;/p&gt;
+
+
+&lt;p&gt;You might, of course, find that some of the steps are impossible, or that the chain of dependencies are too long. I'm not going to win an olympic gold medal - some step in that chain of dependencies there is a "become the sort of person who can..." which I won't be able to fulfill. I'm not going to learn to speak fluent Russian - I could, for sure, but it's hard work with many many steps, and I don't want to. I said this method was &lt;em&gt;simple&lt;/em&gt;, I didn't say it was &lt;em&gt;easy&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;(Even claiming it's simple is a lie. It may or may not be simple depending on how complex each of those steps is)&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, this isn't really about skill development.&lt;/p&gt;
+
+
+&lt;p&gt;Tautologically, every successful attempt to do the thing works like this: If you do the thing, you're the sort of person who can do the thing.&lt;/p&gt;
+
+
+&lt;p&gt;Similarly, if you can't do the thing, you're not the sort of person who can do the thing.&lt;/p&gt;
+
+
+&lt;p&gt;(Sometimes you "can" do the thing you just don't want to. But if you can't overcome your lack of desire to do the thing enough to do the thing, can you really do it?)&lt;/p&gt;
+
+
+&lt;p&gt;So suppose you want to do something and can't. This gives you two options:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Change who you are.&lt;/li&gt;
+&lt;li&gt;Do something that you can do.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;The first sounds very dramatic, but it's not. Everything changes who you are. You might be the sort of person who can do the thing on a good night's sleep but not the sort of person who can do the thing when tired. So the way to do the thing is to make sure you've got a good night's sleep. Or have a coffee. Or do it on a call with a friend who can help you. Or... You get the picture. Who you are is as much a function of context as any intrinsic aspect of character.&lt;/p&gt;
+
+
+&lt;p&gt;You can also change in more fundamental ways. You can learn new skills, introspect on your emotional relationship with the thing, make any number of changes that improve your ability to do the thing.&lt;/p&gt;
+
+
+&lt;p&gt;But sometimes changing who you are is the wrong thing to do. Sometimes you're just doing the wrong thing. You've picked something that your soul rebels at the idea of doing, and the reason you can't do it is that you don't want to be the sort of person who can do it.&lt;/p&gt;
+
+
+&lt;p&gt;How to do murder: First become the sort of person who can do murder. Probably best... not, right?&lt;/p&gt;
+
+
+&lt;p&gt;I think many things that we think of as immoral but where it's hard to articulate why they're bad are bad for this reason: Even if the thing itself is harmless, you first have to become the sort of person who can do them. Harmless in the moment, but corrosive to the character (I'm thinking of things like Jonathan Haidt's examples of "objectively harmless" thought experiments which people still think of as immoral - the most memorably graphic example of which involves buying a chicken from the supermarket to have sex with).&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, this isn't really about that either.&lt;/p&gt;
+
+
+&lt;p&gt;This is, as the title promises, about writing.&lt;/p&gt;
+
+
+&lt;p&gt;I know a lot of people who say they would like to write, but aren't writing.&lt;/p&gt;
+
+
+&lt;p&gt;Why aren't they writing?&lt;/p&gt;
+
+
+&lt;p&gt;Well, Ira Glass has this notion of "the gap":&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;“Nobody tells this to people who are beginners, I wish someone told me. All of us who do creative work, we get into it because we have good taste. But there is this gap. For the first couple years you make stuff, it’s just not that good. It’s trying to be good, it has potential, but it’s not. But your taste, the thing that got you into the game, is still killer. And your taste is why your work disappoints you. A lot of people never get past this phase, they quit. Most people I know who do interesting, creative work went through years of this. We know our work doesn’t have this special thing that we want it to have. We all go through this. And if you are just starting out or you are still in this phase, you gotta know its normal and the most important thing you can do is do a lot of work. Put yourself on a deadline so that every week you will finish one story. It is only by going through a volume of work that you will close that gap, and your work will be as good as your ambitions. And I took longer to figure out how to do this than anyone I’ve ever met. It’s gonna take awhile. It’s normal to take awhile. You’ve just gotta fight your way through.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;What you are trying to do is write something that satisfies your taste, but you're not yet or currently the kind of person who can do that.&lt;/p&gt;
+
+
+&lt;p&gt;You're also not the kind of person who can write things that &lt;em&gt;don't&lt;/em&gt; satisfy your taste, because if you write something bad you feel bad about it.&lt;/p&gt;
+
+
+&lt;p&gt;As a result, you don't write.&lt;/p&gt;
+
+
+&lt;p&gt;There's more to it than that though. Even experienced writers get writers block.&lt;/p&gt;
+
+
+&lt;p&gt;Know what writer's block is? It's trying to write the wrong thing for you right now. You're not currently someone who can write the thing you're trying to write. You need to change who you are, or you need to write something different.&lt;/p&gt;
+
+
+&lt;p&gt;Often this can be done just by writing - slowly chipping away at the problem, incrementally reshaping yourself and the work to bring the two into alignment.&lt;/p&gt;
+
+
+&lt;p&gt;Creative processes are very susceptible to being the wrong person, because often you're trying to express something deeply felt, and it's hard to fake that. It's tough to write sad songs when you're happy, it's hard to write upbeat practical pieces about fixing things when you're incredibly depressed and everything feels unfixable.&lt;/p&gt;
+
+
+&lt;p&gt;But often there's something else you could be writing about instead. Whoever you are right now almost certainly has something you want to express, so why not write about it?&lt;/p&gt;
+
+
+&lt;p&gt;The result will often not be what you expect, it will often not be very good, but it will feel important in ways that much other writing you do will not, and it will often resonate with other people in a way a more polished piece cannot, because it captures something true.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2022-01-07-14:02.html" rel="alternate"/>
   </entry>
 </feed>
