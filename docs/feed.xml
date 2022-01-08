@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2022-01-07T14:02:00+00:00</updated>
+  <updated>2022-01-08T08:36:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,61 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2021-11-15-18:31.html</id>
-    <title>My conception of parts work</title>
-    <updated>2021-11-15T18:43:05+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;My conception of parts work&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2021-11-15&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I was recently talking to Kaj Sotala on discord about what I mean when I say "Self is a part", and I ended up writing the following set of theses about what I actually believe by tabooing the words "Self" and "part". I thought I'd capture that here rather than having to search discord for it in future. The following is a lightly edited version of my explanation on Discord.&lt;/p&gt;
-
-
-&lt;p&gt;Your emotional state can exhibit &lt;em&gt;stuck modes&lt;/em&gt;, which are essentially a coherent bundle of emotional reactions that it is useful to conceptualise as person-like due to feeling like a discrete entity. The ideal is to have no stuck modes, but this ideal is probably only theoretically achievable.&lt;/p&gt;
-
-
-&lt;p&gt;Most of your broader mental and emotional capabilities do not neatly fit into a discrete set of such stuck modes, but are a more flexibly adoptable and combineable set of underlying mental/emotional resources that you can use to construct &lt;em&gt;attitudes&lt;/em&gt; that are appropriate to the present context.&lt;/p&gt;
-
-
-&lt;p&gt;Many emotional problems correspond to stuck modes that are in some way unhappy, and that arose by essentially ossifying a particular set of responses from a past situation and being unable to grow past that point.&lt;/p&gt;
-
-
-&lt;p&gt;A useful set of mental motions is to essentially identify a stuck mode corresponding to a problem and adopt the attitude that that you would have needed from someone else at the time to not get stuck in that mode.&lt;/p&gt;
-
-
-&lt;p&gt;For many stuck modes this attitude corresponds to a sort of boundless love and acceptance. This is particularly likely to be the case for stuck modes that arose in childhood or romantic relationships, because there the problem arose from a lack of love from an external source.&lt;/p&gt;
-
-
-&lt;p&gt;This does not exhaust the possibilities of things that a stuck mode might need.
-Additionally, due to the way we treat some of our stuck modes, a stuck mode may experience sufficient animosity to the broader self (lower case s - I mean "you overall", not anything corresponding to the IFS Self) that makes it unacceptable to it that you are the one providing the support it needs.&lt;/p&gt;
-
-
-&lt;p&gt;Untabooing now to explain the relationship: in this terminology, an exile is a "stuck mode", and "Self" is an attitude (or more likely a range of broadly similar attitudes), which aligns with "Self is not a part" if we want to consider "part" and "stuck mode" synonymous, but I often find it useful to construct temporary unstuck parts, which are essentially attitudes and not stuck modes.&lt;/p&gt;
-
-
-&lt;p&gt;Examples of attitudes that I don't think are particularly Self-like and help sometimes: Something closer to a mediator part that's mostly just there to help integrate two stuck modes by acting as an inbetween and asking good questions until they realise that they feel in opposition and are basically on the same side. Something that is more like a mentor than a parent who basically goes "Oh yeah that sucks, shall we figure out what to do about it?" at the part until it's able to treat its state as a practical problem to be resolved rather than an existential crisis.
-And all of these have certain Self-like qualities to them (they require kindness, acceptance, etc) but the love is not the primary function.&lt;/p&gt;
-
-
-&lt;p&gt;Constructing a temporary part that is coherent enough to have a conversation with feels like roughly the same skill as coming up with a fictional character for your writing (at least the way I do it), by essentially coalescing an attitude and adding details that feel right until it feels relatively coherent. This is more work than accessing a stuck mode, but it's not necessarily a &lt;em&gt;lot&lt;/em&gt; of work.&lt;/p&gt;
-
-
-&lt;p&gt;Conversely, I think stuck modes are often a bit fuzzy around the edges, and can essentially be dissolved (and indeed IFS often ends up resulting in a process of dissolving them - a healed exile has essentially been dissolved).&lt;/p&gt;
-
-
-&lt;p&gt;The result is that it's not so much that "Self" and "parts" in the IFS ontology are the same thing as that there is not a clean division between the two things, and there is not a single special state called Self that is fundamentally unlike the parts it's used to heal.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2021-11-15-18:31.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2021-11-23-14:36.html</id>
     <title>Social reality as a game</title>
@@ -729,7 +674,7 @@ It probably &lt;em&gt;isn't&lt;/em&gt; playing games. The games I play tend not 
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-01-07-14:02.html</id>
     <title>Writing as yourself</title>
-    <updated>2022-01-07T14:02:00+00:00</updated>
+    <updated>2022-01-07T16:49:01+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Writing as yourself&lt;/p&gt;
@@ -852,5 +797,74 @@ It probably &lt;em&gt;isn't&lt;/em&gt; playing games. The games I play tend not 
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2022-01-07-14:02.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2022-01-08-08:36.html</id>
+    <title>Grappling with vastness</title>
+    <updated>2022-01-08T08:36:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Grappling with vastness&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2022-01-08&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;It turns out I've written about &lt;a href="https://notebook.drmaciver.com/posts/2022-01-06-12:00.html"&gt;drifting&lt;/a&gt; before, albeit obliquely, in &lt;a href="https://drmaciver.substack.com/p/why-is-it-hard-to-choose-what-to"&gt;Why is it hard to choose what to do?&lt;/a&gt; where I talked about the difference between proactive and reactive work.&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;One reason why I’m interested in this split is that I’ve found that how proactive I’m able to be is a pretty reliable predictor of my mental health. On a bad day, the ability to be proactive goes long before the ability to be competently reactive.&lt;/p&gt;
+&lt;p&gt;For example, I often find myself having days where if you dropped me in a coaching call I would be perfectly alert and useful and able to do a decent job, and between calls I get nothing done1 - I check Twitter, or I watch YouTube, play a game, or maybe (probably not) I go for a walk or do some cleaning or the like.&lt;/p&gt;
+&lt;p&gt;The way this feels internally is that I’m perfectly able to do things, but what I’m unable to do is generate things to do. This is unfortunate, as in theory I have lots of free time and the ability to do quite interesting things, but often they don’t get done anyway.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;That is, on a bad mental health day, faced with the requirement to choose what to do, I drift.&lt;/p&gt;
+
+
+&lt;p&gt;Rereading this piece makes the difference between my newsletter and my current notebook writing fairly clear I think. It's a very intellectual approach to the problem - it's not that I don't talk about the feelings involved, but even there it speculates about them in a very detached way that I'm not sure is entirely helpful.&lt;/p&gt;
+
+
+&lt;p&gt;As &lt;a href="https://twitter.com/The_Lagrangian/status/1478122278307041280"&gt;Adam puts it&lt;/a&gt;:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;what if your cognitivist problems like "akrasia" and "low executive function" are actually emotional problems like "this scares me" or "i don't actually care"&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;I noted that drifting feels a lot like a freeze response ("I'm too tired to do anything" is a common feeling leading to drifting), and, well, maybe it is. Maybe I encounter the vastness of free choice available to me and Freeze in response to it.&lt;/p&gt;
+
+
+&lt;p&gt;It's not hard to see little versions of this sort of response.&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;What should I do with my life?&lt;/li&gt;
+&lt;li&gt;What should I do today?&lt;/li&gt;
+&lt;li&gt;What should I write today?&lt;/li&gt;
+&lt;li&gt;What should I write on my notebook today?&lt;/li&gt;
+&lt;li&gt;What should I write on my notebook today about what I've been thinking about recently?&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;As you move down the list the possibilities become more constrained, until it becomes narrower and more tractable.
+Towards the beginning of the list, you have to confront the vastness, and that's scary.&lt;/p&gt;
+
+
+&lt;p&gt;The problem isn't just that you have to make a choice from within infinite possibilities. It's that you have to grapple with your agency over those choices, and confront your lack thereof.&lt;/p&gt;
+
+
+&lt;p&gt;I started writing about how the problem was infinite freedom and some part of me rebelled, because it's not, is it? In fact there is very little freedom right now, and dealing with "What should I do today?" causes me to confront that head on, let alone "What should I do with my life?". Given free choice over what to do today I'd probably try to hang out with a group of friends in person, but even in the before times that's hard to organise on short notice, and right now it's all but impossible (or at least feels like a bad idea).&lt;/p&gt;
+
+
+&lt;p&gt;Choosing smaller problems allows me to grapple with things that are my size, and that I know I can handle, but as I expand the scope, I have to grapple with a world of possibilities that is vastly larger than me, and could easily crush me as and when it fights back, and honestly, yeah, this scares me.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2022-01-08-08:36.html" rel="alternate"/>
   </entry>
 </feed>
