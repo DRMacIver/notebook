@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2022-01-10T10:41:00+00:00</updated>
+  <updated>2022-01-11T03:23:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,77 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2022-01-01-13:23.html</id>
-    <title>Writing from the heart</title>
-    <updated>2022-01-01T13:41:36+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Writing from the heart&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2022-01-01&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I've been thinking about types of writing recently, and in particular about the following section from Hillary Rettig's excellent "7 Secrets of the prolific":&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Grandiosity is a problem for writers because our media and culture are permeated with grandiose myths and misconceptions about writing, which writers who are undermentored fall prey to. Red Smith’s famous bon mot about how, to write, you need only “sit down at a typewriter and open a vein,” and Gene Fowler’s similarly sanguinary advice to “sit staring at a blank sheet of paper until the drops of blood form on your forehead,” are nothing but macho grandiose posturing, as is William Faulkner’s overwrought encomium to monomaniacal selfishness, from his Paris Review interview:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The writer’s only responsibility is to his art. He will be completely ruthless if he is a good one. He has a dream. It anguishes him so much he must get rid of it. He has no peace until then. Everything goes by the board: honor, pride, decency, security, happiness, all, to get the book written. If a writer has to rob his mother, he will not hesitate; the “Ode on a Grecian Urn” is worth any number of old ladies.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Many of the most famous quotes about writing are grandiose. I’m not saying that all of these writers were posturing—perhaps that’s how they truly perceived themselves and their creativity. What I do know is that, for most writers, a strategy based on pain and deprivation is not a route to productivity. In fact, it is more likely a route to a block.&lt;/p&gt;
-&lt;p&gt;I actually find quotes about how awful writing and the writing life are to be not just perfectionist, but self-indulgent. No one’s forcing these writers to write, after all, and there are obviously far worse ways to spend one’s time, not to mention earn one’s living. &lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;I think Rettig is, broadly, right here about how most people should be writing most of the time, but I must admit that of all the wisdom in this section the one that's stuck with me is the line she's disagreeing with.&lt;/p&gt;
-
-
-&lt;p&gt;&lt;a href="https://quoteinvestigator.com/2011/09/14/writing-bleed/"&gt;According to Quote Investigator&lt;/a&gt;, Red Smith's full line is: &lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;You simply sit down at the typewriter, open your veins, and bleed.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;I think about this a lot because, contra Rettig, writing be like that sometimes.&lt;/p&gt;
-
-
-&lt;p&gt;It's useful to compare and contrast two recent newsletter issues of mine. &lt;a href="https://drmaciver.substack.com/p/labelling-feelings"&gt;Labelling feelings 101&lt;/a&gt; and &lt;a href="https://drmaciver.substack.com/p/first-hard-choice"&gt;The first hard choice&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;Labelling feelings 101 was not a particularly taxing piece to write. It's just a summary of lots of things I've thought about. There's a moderate amount of myself in there, but only because it's explaining how I look at things. It's a look at part of the world through my eyes, but it's just explanatory prose, it's nothing particularly revealing.&lt;/p&gt;
-
-
-&lt;p&gt;The first hard choice on the other hand is weirder and more personal. I started writing, and then I continued writing, and it went in a very different direction than I intended. The underlying thought process is non-obvious, but I think it comes through that I'm writing about something that actually matters to me.&lt;/p&gt;
-
-
-&lt;p&gt;Tellingly, "Labelling feelings 101" has got more attention (it's certainly useful to more people) but "The first hard choice" has got more praise (and also more people checking in to make sure that I'm OK).&lt;/p&gt;
-
-
-&lt;p&gt;Writing is, a lot of the time, a way of expressing something deeply felt. You write from the heart, and it's hard to do that without bleeding onto the page.&lt;/p&gt;
-
-
-&lt;p&gt;Most writing isn't, and shouldn't, be like this. If you're writing an email to a coworker it doesn't have to express some profound truth. If you're writing some basic copy explaining how a product works, same. But if you're writing about your life, or about things that are personally important to you, and you are &lt;em&gt;never&lt;/em&gt; doing this, then you're probably holding your feelings at arms length, and that isn't great.&lt;/p&gt;
-
-
-&lt;p&gt;Am I being grandiose? Rettig would probably think so, and maybe I am. But some things are actually important, and it's hard to talk about that without sounding a little grandiose, and maybe that's OK.&lt;/p&gt;
-
-
-&lt;p&gt;I don't do this sort of writing enough, and I'd like to do it more - every time I have it's been in some way transformative.&lt;/p&gt;
-
-
-&lt;p&gt;In order to achieve this, I've come up with a very detailed and elaborate plan: I'm going to do it.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2022-01-01-13:23.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-01-02-12:34.html</id>
     <title>Wanting (to) help</title>
@@ -847,7 +776,7 @@ Towards the beginning of the list, you have to confront the vastness, and that's
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-01-10-10:41.html</id>
     <title>Being unreliable</title>
-    <updated>2022-01-10T10:41:00+00:00</updated>
+    <updated>2022-01-10T15:52:30+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Being unreliable&lt;/p&gt;
@@ -921,5 +850,73 @@ I've had a few things that haven't gone this way - for example I have managed to
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2022-01-10-10:41.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2022-01-11-03:23.html</id>
+    <title>Being fragmented</title>
+    <updated>2022-01-11T03:23:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Being fragmented&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2022-01-11&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Being human is weird and I don't really get it.&lt;/p&gt;
+
+
+&lt;p&gt;This may be surprising to you, or it may not, given I've probably spilled most of a million words writing about it, but really that's how that works. People aren't good at explaining things they understand easily.&lt;/p&gt;
+
+
+&lt;p&gt;But a lot of that is about being a human among other humans. This is, admittedly, what being human is, and you can't really separate the human condition from the experience of other humans, but nevertheless there's something about the basic n=1 human experience that I feel like I don't get some times.&lt;/p&gt;
+
+
+&lt;p&gt;A while ago I asked &lt;a href="https://twitter.com/DRMacIver/status/1085634803381297152"&gt;if people experienced themselves as their body or their body as something they pilot&lt;/a&gt;. I've gotten better at experiencing my body as me since I asked that (though I'm still not perfect at it by any means), but the thing that's increasingly hard is experiencing my brain as me.&lt;/p&gt;
+
+
+&lt;p&gt;This sounds bad, maybe it is. It's not that I think my brain is anyone else. All of the bits I have ready access to feel like they're doing fine, but it feels like there's so much going on that I don't have access to, and it's very frustrating.&lt;/p&gt;
+
+
+&lt;p&gt;I can't tell how much this is just me and how much is just the human condition. Sometimes when I don't understand something fundamental like this it's because I'm missing something that other people get, but I think a lot of the time other people are also confused about it when it's pointed out them and just ignore it most of the time.&lt;/p&gt;
+
+
+&lt;p&gt;But it feels like there's clearly a lot going on under the surface. &lt;a href="https://notebook.drmaciver.com/posts/2022-01-09-10:00.html"&gt;My relationship with memory is very confusing&lt;/a&gt; and there's clearly a lot going on there that I don't have direct access to.&lt;/p&gt;
+
+
+&lt;p&gt;It's not totally clear to me whether I should &lt;em&gt;expect&lt;/em&gt; to be able to directly access these things. All of it feels a bit mysterious. It may well be like feelings, where you have to essentially use something else to "bridge" the parts of your brain that aren't talking to each other directly.&lt;/p&gt;
+
+
+&lt;p&gt;One thing that sometimes works as bridging is some sort of talk aloud protocol. Writing is, in theory, similar but I think doesn't work as well. Hearing yourself speak and noticing what comes out is often a surprisingly good means of finding out things about yourself. If only it didn't feel so weird to do.&lt;/p&gt;
+
+
+&lt;p&gt;I've been experimenting a little bit, on and off, with &lt;a href="https://photographyinsider.info/image-streaming-for-photographers/"&gt;image streaming&lt;/a&gt; as a way to learn visualisation. I've had precisely zero success with this method, precisely because speaking out loud seems to be hard for me in a way that disrupts the process. I've had a little more progress with doing the things they say don't work, just paying attention to vague visual impressions I have while half asleep in bed.&lt;/p&gt;
+
+
+&lt;p&gt;My working theory about visualisation is that it's basically a user interface to some sort of underlying capability, and I'm definitely not completely lacking that underlying capability, but it feels like I'm communicating with it in semaphore. e.g. I've got a pretty good spatial memory, and there's definitely &lt;em&gt;something&lt;/em&gt; I can do that is like mentally walking around in a place that I have lived for a while. Or even just spent a reasonable amount of time. There's even a bit of a somatic component to it - I have an experience as if walking around in the place. I could no more really tell you what I'm doing than I could tell you how I left my hand up. I just do it.&lt;/p&gt;
+
+
+&lt;p&gt;Similarly, I'm obviously not walking around in the space. It's more like the equivalent of an inner monologue - there's no confusing it for sound, and yet it has a sound like quality. This is what I assume (and have somewhat confirmed) visualisation is like for most people too.&lt;/p&gt;
+
+
+&lt;p&gt;But there's clearly still some of the things that visualisation is supposed to access going on. I can, e.g. describe what someone looks like from memory. It just doesn't go via an imagine appearing in my head. &lt;em&gt;Something&lt;/em&gt; is providing the information, in whatever form, I just don't have access to it as anything other than a black box feeding me information.&lt;/p&gt;
+
+
+&lt;p&gt;In general, all the capabilities of my mind feel fragmented. Like there are different pieces talking to each other, but large chunks fail to participate in any sort of unitary whole. This isn't plurality - I don't feel like multiple people occupying the same space - it's more like I'm a person with a computer, and some of the capabilities of the human-person computer reside in the computer which the person has to type commands into.&lt;/p&gt;
+
+
+&lt;p&gt;This sounds dramatic, but I'm pretty sure some degree of this is normal. Being human is weird, and the more you look at it the weirder it gets, so most people don't look at it.&lt;/p&gt;
+
+
+&lt;p&gt;Which is fine. It's mostly unproblematic as long as everything is working.&lt;/p&gt;
+
+
+&lt;p&gt;But often not everything is working. When tired, or ill, or half-asleep, capabilities stop working or become slow to respond. It feels like it's unsurprising that &lt;a href="https://notebook.drmaciver.com/posts/2022-01-04-14:48.html"&gt;I sometimes panic at night&lt;/a&gt; - the capabilities I rely on to function as me are disrupted, and the fragmented nature of thought starts showing.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2022-01-11-03:23.html" rel="alternate"/>
   </entry>
 </feed>
