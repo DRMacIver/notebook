@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2022-01-11T03:23:00+00:00</updated>
+  <updated>2022-01-12T00:46:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,109 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2022-01-02-12:34.html</id>
-    <title>Wanting (to) help</title>
-    <updated>2022-01-02T15:54:14+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Wanting (to) help&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2022-01-02&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I said in &lt;a href="https://notebook.drmaciver.com/posts/2022-01-01-13:23.html"&gt;writing from the heart&lt;/a&gt; that I wanted to write more personal stuff.
-Well, here it is. Unfortunately, it turns out, bleeding onto the page hurts.&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, on to the point.&lt;/p&gt;
-
-
-&lt;p&gt;You may or may not have noticed, but I'm a very helpful person.&lt;/p&gt;
-
-
-&lt;p&gt;Some of this comes out more with friends, family, etc. When I see someone I know who is having problems, I want to help. I'm aware this isn't always possible or welcome, and I don't force help on people by any means, but generally if you're my friend and need help I'm there for you.&lt;/p&gt;
-
-
-&lt;p&gt;Some of it also comes out with strangers. I've had fairly extensive conversations trying to help random strangers on the internet solve their problems or process their feelings.&lt;/p&gt;
-
-
-&lt;p&gt;There's also little things like, mostly for free, having a major impact on the quality of software testing in the Python ecosystem. I've at this point written about two million words on the internet, a decent chunk of which is just me helpfully explaining things to strangers.&lt;/p&gt;
-
-
-&lt;p&gt;I don't want to give you the impression that I'm constantly martyring myself for others. There are many people who are far more helpful than I am, and give an amount of their time and energy that I am both in awe of and have no desire to emulate. If one were to put together some arbitrary ranking of people in terms of helpfulness, I'm probably in the top 10%, likely in the top 5% (&lt;a href="https://danluu.com/p95-skill/"&gt;95%-ile isn't that good&lt;/a&gt;), and probably not in the top 1%.&lt;/p&gt;
-
-
-&lt;p&gt;I can't say I'm always good at helping.&lt;/p&gt;
-
-
-&lt;p&gt;I think I usually am good at helping when the problem is one that can be solved through the deployment of my very particular set of skills. Sometimes that means helping people problem solving, sometimes that means just showing up and listening and providing hugs, sometimes that involves more concrete help like turning up and providing manual labour, or providing a place to crash for the night. There are things my friends probably can't rely on me for though - if it needs organisational skills or fine motor control, I'm probably not the one that can help you.&lt;/p&gt;
-
-
-&lt;p&gt;Also sometimes I'd love to help but I'm overcommitted - either with my own stuff, or with helping other people, or both. Until my cloning project comes online, I'm only one man.&lt;/p&gt;
-
-
-&lt;p&gt;All of which is fine, in principle. I'm not helpful because I want to help people, I'm helpful because I want people to be helped. If you've got someone better suited than me to draw on, I'm delighted.&lt;/p&gt;
-
-
-&lt;p&gt;It rarely seems like this is the case though. People don't, for the most part, help their friends out that much. The typical friendship I see seems to be one where people pretend that connection without responsibility is possible.&lt;/p&gt;
-
-
-&lt;p&gt;As a result, this often makes me feel worse about not being able to help, because often the reason someone needs my help is that nobody else has been able to provide it.&lt;/p&gt;
-
-
-&lt;p&gt;This is, of course, all generalising heavily from my own very small pool of experience. I'm sure if you move to a different culture, or even a different social milieu within a given culture, it looks different. People live in very different worlds. But based on what I see this doesn't look &lt;em&gt;that&lt;/em&gt; weird.&lt;/p&gt;
-
-
-&lt;p&gt;This particularly stings because people are generally willing to draw on offered help, but pay it neither back nor forward.&lt;/p&gt;
-
-
-&lt;p&gt;I think a friendship in which one party feels no real responsibility to the other, and is unwilling to extend meaningful help, is in the long run doomed.
-Nobody is invincible, nobody can maintain good times for ever. You're going to have a bad period, and then the people who were just with you for a good time and don't feel any responsibility for you ghost or angrily leave. There's a reason we have the phrase "fair weather friends".&lt;/p&gt;
-
-
-&lt;p&gt;It doesn't even particularly require bad times. I've lost multiple friendships due to it turning out that the other party in a relationship that I had poured a huge amount of care and help into (which they happily accepted) felt absolutely no responsibility to me to reciprocate even a tiny fraction of that.&lt;/p&gt;
-
-
-&lt;p&gt;They would no doubt tell you this is a grossly unfair summary of the situation. I would, in turn, tell you that yes they would say that and can get fucked as far as I'm concerned. This is as close as I am prepared to come in providing a fair and balanced summary of events.&lt;/p&gt;
-
-
-&lt;p&gt;Friendships aren't, and shouldn't be, transactional, but they do need to be somewhat reciprocal if they're to work. There's a deep hypocrisy involved in being willing to accept arbitrary amounts of help from someone and then be horrified at the idea that you might be expected to return it.&lt;/p&gt;
-
-
-&lt;p&gt;Unfortunately it is, I think, an extremely common hypocrisy, because people are rarely going to say no to getting their needs met, and are rarely going to say yes to taking on a responsibility they don't have to. It's much easier to jettison the relationship and move on.&lt;/p&gt;
-
-
-&lt;p&gt;All of this is something I feel acutely, because the truth is that a lot of why I'm so helpful is that I've spent a lot of my life desperately wanting help and not getting it, so I've learned to help people in the ways that I've wished that someone would help me.&lt;/p&gt;
-
-
-&lt;p&gt;Don't get me wrong, I've had myriad advantages in life. Many of the problems that I've needed help with are, technically, &lt;a href="https://notebook.drmaciver.com/posts/2020-07-15-09:33.html"&gt;nice problems to have&lt;/a&gt;. Many of them were not, but I was able to compensate for them in some way or another. It's not hard to imagine some hypothetical other's thought process of "How can you say you need help when so many other people are worse off? You're doing fine". But I really wasn't, and to a large degree still am not, doing fine.&lt;/p&gt;
-
-
-&lt;p&gt;You can see this a lot in my writing - a lot of things I write have a model target audience of me of N years ago. They're something I desperately wished someone would teach me at the time, or desperately needed but didn't know even &lt;em&gt;could&lt;/em&gt; be taught, but nobody did. So I had to spend years of my life learning them the hard way, and now I'm paying it forward in the hopes that someone out there analogous to younger me gets the help they need.&lt;/p&gt;
-
-
-&lt;p&gt;It's hard for me to talk about all this without sounding extremely bitter about it. That's because I'm extremely bitter about it. But the result is that I mostly don't talk about it in public at all, and I don't think that's good either.&lt;/p&gt;
-
-
-&lt;p&gt;This is part of what a pervasive unwillingness to help does, I think. People's responses to pain are all very "Have you tried not being in pain?" or, if you're lucky, "Yeah me too" - an attempt to deflect a responsibility to help more than an attempt to help.&lt;/p&gt;
-
-
-&lt;p&gt;I'm aware that not all of the help I've lacked has been due to others' unwillingness to help. Much of it is on me - I'm not very good at making it clear that I need help, or letting others help me when they do offer. There's a number of reasons for this, but mostly it's just a matter of getting burned too many times and finding it very hard to trust that this time it will be different. &lt;/p&gt;
-
-
-&lt;p&gt;I think this is reasonably common, and is something of a vicious circle. I think, in fact, many people (probably not most) are in principle willing to help, but because it's hard to ask for help, most people won't be willing, and some people will punish you for it, we end up with this dysfunctional feedback loop where most friendships stay at the responsibility light version.&lt;/p&gt;
-
-
-&lt;p&gt;I'd like to break this cycle, but I don't really know how.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2022-01-02-12:34.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-01-03-14:16.html</id>
     <title>Relearning curiosity</title>
@@ -854,7 +751,7 @@ I've had a few things that haven't gone this way - for example I have managed to
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-01-11-03:23.html</id>
     <title>Being fragmented</title>
-    <updated>2022-01-11T03:23:00+00:00</updated>
+    <updated>2022-01-11T05:57:21+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Being fragmented&lt;/p&gt;
@@ -918,5 +815,83 @@ I've had a few things that haven't gone this way - for example I have managed to
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2022-01-11-03:23.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2022-01-12-00:46.html</id>
+    <title>Coffee as a way of life</title>
+    <updated>2022-01-12T00:46:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Coffee as a way of life&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2022-01-12&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Right now I &lt;em&gt;really&lt;/em&gt; want a coffee, and I shouldn't have one, so I'm compromising with a green tea. But this daily writing is about whatever is on my mind, and apparently coffee is what's on my mind today, so let's talk about coffee.&lt;/p&gt;
+
+
+&lt;p&gt;Back in early December I got the flu. It wasn't much fun, and I spent a couple of days basically unconscious.&lt;/p&gt;
+
+
+&lt;p&gt;As a result, I took the opportunity to break my caffeine addiction. This made it even less fun, but past a certain intensity it doesn't really matter if it gets a bit worse because I'm basically asleep and full of cocodamol either way.
+I had a coffee break scheduled for the week after anyway, so it wasn't bad timing.&lt;/p&gt;
+
+
+&lt;p&gt;I've been a coffee addict for about 20 years at this point - started when I went to university, and have continued ever since.&lt;/p&gt;
+
+
+&lt;p&gt;People look at you funny when you describe it that way. For some reason people don't think that the drug they take every day in order to feel normal is a real addiction.&lt;/p&gt;
+
+
+&lt;p&gt;Meanwhile Pact coffee, who I use(d) for coffee deliveries sent me this email after I started writing this post, and clearly know exactly what they're doing:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;You took a break from fresh coffee deliveries a while ago. I just wanted to check whether you're stocked up, or it it's time to unpause your plan? &lt;/p&gt;
+&lt;p&gt;If you're ready for your next hit of the good stuff, just hit 'Unpause my Plan' below, or you can log in to your Pact Account Page to unpause your Plan whenever you need to. &lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;People's responses when you tell them that you're quitting coffee are often absolutely infuriating. "Why would you ever want to quit?" is common - apparently the fact that they literally can't conceive of life without their drug of choice is evidence that it's &lt;em&gt;not&lt;/em&gt; a big deal...&lt;/p&gt;
+
+
+&lt;p&gt;Most users also skip their daily drug dose so rarely that it doesn't even occur to them that the withdrawal symptoms are related. My dad has a story about how he used to get these really mysterious headaches every weekend and he couldn't figure out what was up with them, until he eventually realised that maybe the large quantities of strong coffee he drunk at the office might have something to do with it...&lt;/p&gt;
+
+
+&lt;p&gt;The best piece of advice I've given to people talking to me about this is to imagine I'm saying "cigarettes" instead of "coffee" as a sanity check for whether what they're saying is helpful.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, quitting coffee is hard, because you end up building your whole day around it. The first priority in the morning is dealing with caffeine withdrawal (if you wake up feeling like shit every morning, sorry that's probably caffeine withdrawal), which drags you out of bed to make coffee. You drink your coffee, and now you need to go to the bathroom (coffee keeps you regular, although how pronounced this effect is depends on the type of coffee). Now you've got lots of energy (although not necessarily the good kind) and can get on with your day. This gradually wanes throughout the course of the day until by night time you've run out of caffeine, feel sleepy, and fall asleep.&lt;/p&gt;
+
+
+&lt;p&gt;Or at least that's how it is for me. Others differ.&lt;/p&gt;
+
+
+&lt;p&gt;Quitting coffee I have... none of that. This causes all sorts of problems. For example, since quitting I've been &lt;em&gt;really&lt;/em&gt; struggling to get out of bed in the morning because the cue I've been using has been the caffeine withdrawal, and &lt;a href="https://notebook.drmaciver.com/posts/2022-01-04-14:48.html"&gt;my current sleep problems&lt;/a&gt; seem to partly stem from not being sleepy enough at night due to the lack of caffeine withdrawal.&lt;/p&gt;
+
+
+&lt;p&gt;In general it feels like the loss of caffeine has destabilised my entire way of being in the world. I'm much less agitated and fidgetty, which is one of the key reasons why I wanted to quit it, but it turns out I used a lot of that agitated fidgetiness as the basis of getting things done. One of the benefits of the daily writing this month is that it solidly proves to me that I can write without caffeine which is honestly not something I entirely believe.&lt;/p&gt;
+
+
+&lt;p&gt;Is all of this worth it? Honestly, I don't know. I like not feeling like shit in the morning, and not spending my day either wired, sleepy, or both, is pretty neat. I can read hard nonfiction in the evenings now because my brain hasn't run out of caffeine to fuel it, which is also neat.&lt;/p&gt;
+
+
+&lt;p&gt;But sometimes I have really bad days and I desperately want a coffee because I think, often correctly, that it will help. And this isn't ideal because when my caffeine tolerance is low, caffeine is a hell of a drug (it's about 4 hours since I started writing this post as I had some calls in the middle, and I'm still buzzing off that green tea and a little worried that I won't be able to sleep tonight). Caffeine really helps me plaster over variance, and is one of the tools I've used to be &lt;a href="https://notebook.drmaciver.com/posts/2022-01-10-10:41.html"&gt;slightly more reliable&lt;/a&gt; over the years. Also it's very easy for one bad day to lead to another, especially if the caffeine I used to fix the first disrupts my sleep, and before long I've got a caffeine addiction again.&lt;/p&gt;
+
+
+&lt;p&gt;More than this though, it just feels like being a bit of a stranger to myself. There's the version of David that I was on caffeine, and there's the version I am now, and they're not miles away from each other but they're different enough that the whole thing feels disorienting. It feels like a healthier place to start from, but it also feels like I'm having to relearn basic things. Nothing about my day or my emotions works quite like I expect, because there are subtle shifts in how everything works - the rhythms of my day are different, and the mood I bring to tasks is different. It feels like I'm having to relearn a lot of things from scratch.&lt;/p&gt;
+
+
+&lt;p&gt;There's a pretty decent chance I fall off the wagon and go back to being caffeine David. It's not like this is the first time I've tried to quit coffee, and they usually fail - in my most successful attempts I get a couple months in and go "Wait am I just going to be this depressed forever? That sucks." and go back to drinking coffee.&lt;/p&gt;
+
+
+&lt;p&gt;But I'd like to stick with it this time. I like different things about caffeinated and decaffeinated David, but the latter seems like a better foundation for deciding who I want to be, even if I have to learn a lot of the basics of being him from scratch.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2022-01-12-00:46.html" rel="alternate"/>
   </entry>
 </feed>
