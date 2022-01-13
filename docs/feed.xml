@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2022-01-12T00:46:00+00:00</updated>
+  <updated>2022-01-13T04:16:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,110 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2022-01-03-14:16.html</id>
-    <title>Relearning curiosity</title>
-    <updated>2022-01-03T19:55:49+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Relearning curiosity&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2022-01-03&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Apparently when I start a daily writing practice in which I am honest about my feelings partly as a way to work myself out of a depressed period,
-everything I write is very sad. So, here we are again.&lt;/p&gt;
-
-
-&lt;p&gt;A while back I wrote &lt;a href="https://notebook.drmaciver.com/posts/2020-06-28-15:58.html"&gt;I'm not actually that curious&lt;/a&gt;. I explained that although I am a voracious reader and know a lot of stuff, it wasn't actually generally powered by a learn things for its own sake - I learn in aid of things I want to do, not primarily because I want to learn. Almost everything I learn has a goal in mind. I don't seek out knowledge because I'm curious, I seek it out because knowledge is useful.&lt;/p&gt;
-
-
-&lt;p&gt;Dear past me: You realise that's bad, right? Well, in case you don't realise that (I'm not sure you did), FYI that's bad.&lt;/p&gt;
-
-
-&lt;p&gt;It's also not how I used to be. I &lt;em&gt;definitely&lt;/em&gt; used to be curious, and just read about things because they were fun and interesting. I had a very nerdy notion of fun and interesting which means that this ended up me taking a book about classical mechanics (I still know a surprising amount about Lagrangian formulations of Newtonian physics, although it's all got a bit rusty) as my summer vacation reading when I was 16, but it was absolutely something I picked because I wanted to learn about it and not because I needed to.&lt;/p&gt;
-
-
-&lt;p&gt;My degree was in pure mathematics, which I certainly didn't get into because I had applications in mind for the connection between the axioms of set theory and questions in analysis (this was what my final year essay was on. It wasn't very good).&lt;/p&gt;
-
-
-&lt;p&gt;Apparently as a kid I would fairly regularly give adults mostly-correct lectures on various subjects I'd been learning about. Palm trees and black holes seem to be the topic that people tell stories about me doing this, but I'm sure there are others.&lt;/p&gt;
-
-
-&lt;p&gt;At some point this got lost. I don't really know when, or why.&lt;/p&gt;
-
-
-&lt;p&gt;It feels like part of the problem is agency. As a kid it's easy to be curious about things, because nothing you do actually matters, and also you're mostly bored out of your mind. So why not learn new things purely because they're interesting and you want to stuff your brain with knowledge?&lt;/p&gt;
-
-
-&lt;p&gt;Also, you're a child, and thus you're still full of energy. The fatigue of ageing and the burnout of life haven't set in.&lt;/p&gt;
-
-
-&lt;p&gt;(Not that those are inevitable. My parents seem like they still have way more energy than I do)&lt;/p&gt;
-
-
-&lt;p&gt;Now it feels like I've got such limited brain capacity and energy and such a greater degree of agency that &lt;em&gt;of course&lt;/em&gt; I spend it on useful things, because I feel guilty about not doing so.&lt;/p&gt;
-
-
-&lt;p&gt;Except I think even as I write it that that's a cope. If that were the case I'd probably be doing far more useful things than I do.&lt;/p&gt;
-
-
-&lt;p&gt;Really the core problem is that &lt;a href="https://drmaciver.substack.com/p/burnout-as-acedia"&gt;it's hard to care about things&lt;/a&gt;, and usefulness is a crutch.
-It's much easier to solve a problem, which is obviously good. It's even better if &lt;a href="https://notebook.drmaciver.com/posts/2022-01-02-12:34.html"&gt;it's somebody else's problem&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;I keep wanting to frame this in terms of justification, but I don't think that's quite right. The problem isn't that I feel like I have to be able to justify my actions to someone, but that they need to feel somehow purposeful. It's not that someone will attack me for doing it, it's that if I spend energy on something purposeless a huge wave of "What's the point?" rises up and I get distracted and go do something else.&lt;/p&gt;
-
-
-&lt;p&gt;Often it starts before that and I can't even generate the "purposeless" actvitity in the first place. I try to generate a plan for what to do and &lt;a href="https://notebook.drmaciver.com/posts/2021-10-02-08:53.html"&gt;my brain glitches&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;This is depression, of course. It's well-managed reasonably high functioning depression, but it's still depression.&lt;/p&gt;
-
-
-&lt;p&gt;I think of depression as a constriction of the felt world of possibilities. A narrowing of the actions that you feel able to take. A lot of my incessant "curiousity" in the search of the useful feels like I'm trying to squeeze a vast level of interest in the world through the narrow passages that depression has left me. What comes out is still pretty good, because I'm clever and competent, but it's fairly anemic compared to what I'd be doing if less depressed.&lt;/p&gt;
-
-
-&lt;p&gt;A lot of this focus on usefulness feels not so much like I'm motivated to be useful (I am, but it's more of a "make the pain go away" motivation than something I necessarily care deeply about), but that it's something to do while I'm here. I've got all these capabilities, there are things I can do that help make things better, might as well. It's slightly less fundamentally unsatisfying than wasting my day scrolling Twitter and reading YouTube.&lt;/p&gt;
-
-
-&lt;p&gt;I think I &lt;em&gt;do&lt;/em&gt; fundamentally care about helping people, but it's all swallowed up by the general meh. Certainly I would &lt;em&gt;like&lt;/em&gt; to be positively motivated towards helping people instead of it being something that hurts if I don't do it, but these days I'm struggling to be positively motivated about much of anything very serious.&lt;/p&gt;
-
-
-&lt;p&gt;&lt;a href="https://twitter.com/DRMacIver/status/1476967194101698561"&gt;I wrote on Twitter about how incredibly mind-numbingly bored I am of the pandemic&lt;/a&gt;, and that I really need more in person contact with people than I'm getting. That feels like part of this but I don't know how much of it.&lt;/p&gt;
-
-
-&lt;p&gt;The absence of curiousity feels in some way like a primary thing in its own right that I should take seriously just as much as the absence of people.
-Learning things should be a joyful activity, and the fact that it's not is a huge sign.&lt;/p&gt;
-
-
-&lt;p&gt;One of my working theories of how to work with depression is to be constantly exploring the edge of the depression comfort zone - do things that you feel &lt;em&gt;slightly&lt;/em&gt; too depressed to do. If depression comes from a restriction of what feels safe, exploring the boundaries of where you feel safe helps you relearn those as safe and then you can expand gradually outwards.&lt;/p&gt;
-
-
-&lt;p&gt;Sometimes this even works.&lt;/p&gt;
-
-
-&lt;p&gt;Well, that's too cynical. It often works, it's just a bit of a two steps forward one step back process. The depression comes back, but it's easier to claw your way out of it the next time because you believe you can do that.&lt;/p&gt;
-
-
-&lt;p&gt;So the starting point for solving the curiousity problem is something like asking how I would behave if I were as curious as I'd like to be, and walking in that direction until I hit the edge of the comfort zone.&lt;/p&gt;
-
-
-&lt;p&gt;The obvious thing is that I would learn things just for interest. For some reason the example that comes to mind here is physics youtube. I've been enjoying &lt;a href="https://www.youtube.com/c/SteveMould"&gt;Steve Mould's YouTube channel&lt;/a&gt; recently for example. I really respect the urge to just go "How does that work?" and put in the effort to find the answer. I definitely used to have some of that, and I'd like to have it again.&lt;/p&gt;
-
-
-&lt;p&gt;The other thing that comes to mind is that I'd talk to people more about things I find interesting. I really don't do this very much - these days all my writing is about stuff that's useful (in some very generalised sense of the term), which is a shame in and of itself - but really I have in person conversations in mind. Generally I just let other people take the lead, and feel very inhibited in proposing conversation topics and just going on about them, and that feels necessary if rather daunting.&lt;/p&gt;
-
-
-&lt;p&gt;Who knows if any of this will actually work, but it feels worth a try.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2022-01-03-14:16.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-01-04-14:48.html</id>
     <title>Being a brain at night</title>
@@ -819,7 +715,7 @@ I've had a few things that haven't gone this way - for example I have managed to
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-01-12-00:46.html</id>
     <title>Coffee as a way of life</title>
-    <updated>2022-01-12T00:46:00+00:00</updated>
+    <updated>2022-01-12T05:18:26+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Coffee as a way of life&lt;/p&gt;
@@ -893,5 +789,59 @@ I had a coffee break scheduled for the week after anyway, so it wasn't bad timin
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2022-01-12-00:46.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2022-01-13-04:16.html</id>
+    <title>Regrets and interventions</title>
+    <updated>2022-01-13T04:16:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Regrets and interventions&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2022-01-13&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I've seen a number of people write letters to their past selves recently. I keep thinking about doing so, but I have questions.&lt;/p&gt;
+
+
+&lt;p&gt;Mostly I want to know about what model of time travel we're using.
+Do I stop existing when my past self receives the letter, or do I create an alternate timeline?&lt;/p&gt;
+
+
+&lt;p&gt;I, by and large, like existing. I'm not sure what to think about continuity of self in general. I'd probably use a teleporter, but time travel based genocide/suicide in order to birth a new world with a different version of me in it seems like a step too far.&lt;/p&gt;
+
+
+&lt;p&gt;This isn't just pedantic quibbling about the question in which I try to avoid what it's &lt;em&gt;really&lt;/em&gt; asking. The question is important.&lt;/p&gt;
+
+
+&lt;p&gt;You see, a fantasy of sending a letter to your younger self expresses a very straightforward core belief: If you wished the best for the younger version of yourself, you would make sure they never become you.&lt;/p&gt;
+
+
+&lt;p&gt;I struggle to regret being me, mostly for the relationships in my life. I'm probably supposed to not regret being me for intrinsic reasons, but eh. I'm fine I guess. I'll admit to liking many of the other versions better. But those versions had different life paths, and met different people, and I'm sure those people are equally fine, but I like mine.&lt;/p&gt;
+
+
+&lt;p&gt;But in the scenario where I get to advise young David on his life path, I would definitely offer him plenty of advice, and if he listened to me it would lead to a very different life. Probably many very different lives.&lt;/p&gt;
+
+
+&lt;p&gt;It's difficult to look back at nearly 40 years of life and think how much you'd have done differently, and I think a lot of my memory "problems" probably come from avoiding doing that.&lt;/p&gt;
+
+
+&lt;p&gt;It feels like I've essentially meandered my way through a long series of choices that seemed like a good idea at the time but, in retrospect, weren't, or needed to be better thought out. As a result the point in life I've ended up in is... fine? But there's plenty of in-retrospect-obvious paths where a letter from future me would probably have been very life improving.&lt;/p&gt;
+
+
+&lt;p&gt;I don't feel bad over not having taken those paths exactly. Many of these better paths are ones where I wouldn't really have been able to figure them out at the time. Some of them are ones I'm still struggling with. There are past paths that I wish I'd stuck with, but this would have required a &lt;a href="https://notebook.drmaciver.com/posts/2022-01-10-10:41.html"&gt;level of reliability with which I'm still struggling&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;But I'm pretty sure &lt;em&gt;someone&lt;/em&gt; would have been able to figure them out. This is why I have &lt;a href="https://notebook.drmaciver.com/posts/2022-01-02-12:34.html"&gt;such strong feelings about help&lt;/a&gt;. There was no time travelling letter from my future self that could have fixed things, but there was an entire human civilisation in which I was embedded that seems weirdly indifferent to the growth and well-being of the people within it. Probably the people who could have helped existed, and maybe I could even have had access to them if I had sought them out, but I wouldn't have had the first idea how even if I knew that I needed to.&lt;/p&gt;
+
+
+&lt;p&gt;I guess, to a large degree, this is why I write much of what I do. I don't have the ability to send it back in time, but my problems are hardly unique, and maybe if they're in a similar position to me, what I write can substitute for someone else's letter from a future self that they're not getting either.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2022-01-13-04:16.html" rel="alternate"/>
   </entry>
 </feed>
