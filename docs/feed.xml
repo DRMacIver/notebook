@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2022-01-14T16:49:00+00:00</updated>
+  <updated>2022-01-15T17:03:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,92 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2022-01-05-13:01.html</id>
-    <title>Ready for less than you think</title>
-    <updated>2022-01-05T19:33:07+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Ready for less than you think&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2022-01-05&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I had to go to the hospital earlier. This wasn't a big deal, I just needed an X-ray on my knee, which has been giving me a hard time for a few months. I set up an appointment with my GP late last month, expecting it to take a while to get the referral sorted (this is incorrect, the NHS is actually very good at prompt X-ray referrals, but I always forget this because I rarely get X-rays and they're rather less prompt at many referrals on other things), so I'd have time for Omicron to settle down and have my knee looked when it was sensible and safe.&lt;/p&gt;
-
-
-&lt;p&gt;Then I got a call this morning at around 8:33. I was not at all awake at 8:33. I'd had another &lt;a href="https://notebook.drmaciver.com/posts/2022-01-04-14:48.html"&gt;night of bad sleep&lt;/a&gt;, and my alarm had gone off at 8:30 and so I was &lt;em&gt;technically&lt;/em&gt; conscious, but it was very confusing when my phone made a noise from the other room as if someone were uncouth enough to actually want to speak to me on it.&lt;/p&gt;
-
-
-&lt;p&gt;The person on the other end told me that they'd had an urgent X-ray referral from my GP (I'm not sure it was really urgent if I'm honest) and could I come to Charing Cross Hospital for 10:25?&lt;/p&gt;
-
-
-&lt;p&gt;My response was slightly more articulate than "Huh? What? Zzzz" but not vastly more. Eventually my brain kicked into gear and I said I didn't think I could physically make it in time even if I left right that minute. Fortunately I checked Google Maps and determined that Charing Cross Hospital was not in fact anywhere near Charing Cross, but was in fact near Hammersmith, which is much easier for me to get to, and I determined that it would be tight but doable. So I said yes, I could do it.&lt;/p&gt;
-
-
-&lt;p&gt;A very rapid shower and a COVID test later, and a hurried message asking my partner to be in my flat to meet the Ocado delivery that was supposed to be arriving at 11, I dashed out the door to the bus stop.&lt;/p&gt;
-
-
-&lt;p&gt;The first problem I encountered was that after having promised me a very straightforward route, Google maps was now telling me that it was literally impossible to get there by public transport. It does that. The Google maps app sometimes believes my area (which is very well appointed with bus routes and not too bad to walk to various more civilised forms of public transport) is just utterly inaccessible to public transport, despite generally being OK on desktop web. I opened it on my phone's browser instead and it confirmed that yes the single direct bus to Hammersmith was still a perfectly viable option despite the app's lies.&lt;/p&gt;
-
-
-&lt;p&gt;The second problem was that I missed my bus. This wasn't a huge deal, as it wasn't &lt;em&gt;that&lt;/em&gt; tight and there was another one in 7 minutes, but as I was wondering whether it would make sense to get a taxi there I noticed my third problem: My phone was on 13% battery.&lt;/p&gt;
-
-
-&lt;p&gt;It shouldn't have been. I'd charged it overnight. When I got home I found out that the charger had partly fallen out of the power socket, so although the cable was connected to the phone this wasn't a problem.&lt;/p&gt;
-
-
-&lt;p&gt;This also shouldn't have been a problem. I basically &lt;em&gt;never&lt;/em&gt; travel without an external battery for my phone. But I couldn't find it when I was leaving, I was in a hurry, and figured it was fine - my phone was fully charged (oops) and I was only going to be out for a few hours.&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, I turned my phone off in order to conserve power, got the bus, and happily read Robertson Davies writing about interpersonal drama between Canadian academics for half an hour or so until I got to Hammersmith.&lt;/p&gt;
-
-
-&lt;p&gt;Then I got off the bus, turned on my phone, and prepared to walk the last 5-10 minutes from Hammersmith to Charing Cross Hospital.&lt;/p&gt;
-
-
-&lt;p&gt;This should be easy, it's just a straight line from Hammersmith, more or less. I mean &lt;a href="https://www.google.co.uk/maps/dir/Hammersmith+Station,+London+W6+7AE/Charing+Cross+Hospital,+Fulham+Palace+Rd,+London+W6+8RF/@51.489909,-0.2257482,16.62z/data=!4m14!4m13!1m5!1m1!1s0x48760fb7e0b0070d:0x2398b7d670685535!2m2!1d-0.2248261!2d51.493483!1m5!1m1!1s0x48760fbbc7f7ed75:0x6cd065c43bb8bbf5!2m2!1d-0.2195543!2d51.4868889!3e2"&gt;look at this&lt;/a&gt;, it's not a complicated route.&lt;/p&gt;
-
-
-&lt;p&gt;Just one problem: Figuring out &lt;em&gt;which&lt;/em&gt; straight line it is is impossibly confusing, because when your phone is in low power mode Google Maps becomes all but useless at telling you where you are, and Google Maps has always been useless at orienting without GPS in the UK because it insists on displaying road numbers instead of names. I don't want to know that this is the fucking A315, Google, I want to know &lt;em&gt;what the name on the road sign is&lt;/em&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;I think I could have figured it out in about five minutes of wandering around the junction and staring (in retrospect, I knew which way North was, and if I'd oriented Google maps right I could have known I needed to head southish, and that would have been enough). Unfortunately I got about three minutes, which was how long my phone took to eat through the remaining 13% of battery. I don't know why it died so fast and should probably look into that.&lt;/p&gt;
-
-
-&lt;p&gt;It took me about 25 minutes to find Charing Cross Hospital. I asked five different people for directions in the course of that. They were all very nice about it - I do charming but flustered polite Englishman very well and it tends to work for getting strangers to help you out.&lt;/p&gt;
-
-
-&lt;p&gt;They were not, reliably, useful. Some of their directions were straight up wrong, some of them were in retrospect right but I failed to follow them correctly. The result was a lot of doubling back on myself. But I did find it before my appointment, though not as much before my appointment as they want you to be. I was tired, stressed, and had done enough running at that point (mostly to catch the bus, the rest was a brisk walk) that I'd probably aggravated the knee problem I was there to get checked.&lt;/p&gt;
-
-
-&lt;p&gt;Anyway the X-ray all went fine, nothing to report there for now. They did make me do a rather uncomfortable lunge to get the knee right before the X-ray machine, which I'm probably going to pay for given that it's exactly the sort of motion that triggers the knee problem, but so far it's no worse than grumpy.&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, the knee isn't really the point of this story (to the degree that there's a point rather than me just feeling like telling you about how my day went).&lt;/p&gt;
-
-
-&lt;p&gt;All of this has me thinking about preparedness, and the way it decays. This whole episode would have gone much better prior to the pandemic, because I would not have made the mistake with my phone - maybe it wouldn't have been charged, but I'd have had the battery. I'd have been less flustered by Google maps's problems because I'd have Citymapper installed (my phone is a bit low on space and I'm not actually travelling far right now so I uninstalled it).&lt;/p&gt;
-
-
-&lt;p&gt;Fundamentally, leaving the house involves a certain amount of skill and preparations. If you're travelling regularly, those are all fresh. If you're not, your skills have got rusty and your habits have been decayed - the battery that you always have access to has gotten tucked somewhere weird because you haven't used it recently for example.&lt;/p&gt;
-
-
-&lt;p&gt;Navigation was also like this to a degree - I'd utterly lost the skill. When I mentioned asking for directions, J said "Wow, asking for directions? What is this the 90s??" and it's true - I've had a smart phone on me for 11 years at this point. The idea of being lost is just alien. Asking for directions was fine, but following them from memory sure was hard.&lt;/p&gt;
-
-
-&lt;p&gt;It feels ridiculous to be bad at leaving the house in this way (finding it difficult to leave the house is less confusing, but successfully leaving the house and being bad at it is weird), because this is something that seems trivial and I've spent so long being competent at that it's part of my internalised self image that it's just something I can do at a moment's notice without it going wrong (a small achievement, but not an automatic one - I know many people who can't leave the house without forgetting something for example), but it's fairly natural, just not internalised.&lt;/p&gt;
-
-
-&lt;p&gt;I've been thinking about how long it's going to take for being in a crowd to feel normal again, even once it's safe, but I think maybe one of the interesting things is going to happen before that, as we gradually resume life and find out all the skills and habits we'd taken for granted have to be relearned from scratch.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2022-01-05-13:01.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-01-06-12:00.html</id>
     <title>Drifting away the time</title>
@@ -757,7 +671,7 @@ Do I stop existing when my past self receives the letter, or do I create an alte
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-01-14-16:49.html</id>
     <title>Walls of people</title>
-    <updated>2022-01-14T16:49:00+00:00</updated>
+    <updated>2022-01-14T17:54:01+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Walls of people&lt;/p&gt;
@@ -834,5 +748,87 @@ Naturally, I resent this bitterly.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2022-01-14-16:49.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2022-01-15-17:03.html</id>
+    <title>Being an ideas guy</title>
+    <updated>2022-01-15T17:03:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Being an ideas guy&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2022-01-15&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I have a complicated relationship with the fact that I am that much maligned creature, an ideas guy.&lt;/p&gt;
+
+
+&lt;p&gt;(I'm going to use the gendered term "ideas guy" throughout because a) The stereotype of the ideas guy is very much a guy b) We don't have a good gender neutral term as a result and c) I am a guy)&lt;/p&gt;
+
+
+&lt;p&gt;I am &lt;em&gt;much&lt;/em&gt; better at ideas than &lt;a href="https://notebook.drmaciver.com/posts/2022-01-10-10:41.html"&gt;follow through&lt;/a&gt;. My ideal situation is to be in an environment where my main role is to consult on or suggest problems rather than do the legwork of seeing things through to completion.&lt;/p&gt;
+
+
+&lt;p&gt;This is not a popular archetype. People like me are generally seen as being selfish - wanting to do the fun bits and let other people do the hard work.
+It's not entirely unfair. I'm not averse to hard work, but I am averse to &lt;em&gt;sustained&lt;/em&gt; hard work - ideally I'd work hard on a problem until I get bored of it and then hand it over to other people. Sometimes I get bored of things after a couple of days, sometimes they hold my attentionf or months, very rarely they hold my attention for years.&lt;/p&gt;
+
+
+&lt;p&gt;I will say in my defence that I've done my time in the hard work mines. My career has been an endless series of looking for places where I get to go do clever researchy things, I then come in and immediately concluded that what they needed wasn't clever research but responsible engineering and then, reluctantly, admitted that yes I could provide them with that.&lt;/p&gt;
+
+
+&lt;p&gt;I don't mind having done that. I think it's very hard to have any good ideas in a space you've not developed a solid foundation in. But I did it for ten years, and burned out, and enough is enough. This sort of thing is not what I'm for - I can do it, because I'm pretty generically competent, but it doesn't make me happy and burns me out.&lt;/p&gt;
+
+
+&lt;p&gt;It's also a poor use of my abilities, honestly. I am much, much, better at getting other people unstuck than I am at working reliably. As a result, if you add me to a team in this capacity, I probably expand the capacity of the team immensely, but if you add me to the team as one of an interchangeable set of developer roles I still make things better, but I'm just a good developer, nothing very exciting happens. I'm a far better force amplifier for other people than I am a worker on my own.&lt;/p&gt;
+
+
+&lt;p&gt;This is, I think, a major deficiency in our conception of teamwork. We treat "being a team player" as meaning being part of a homogenous group of people where you're supposed to take on the same responsibilities as everyone else. Sure, maybe you have different skills, but "I'm not able to do that work" is supposed to be the main reason to refuse work.&lt;/p&gt;
+
+
+&lt;p&gt;I don't think this really properly respects the strengths of heterogenous work, or the variation in people's individual abilities.
+Certainly it's not reasonable to expect to only get to do the fun work, but it's also not reasonable to to ignore your team's individual strengths and weaknesses when planning, and if someone is able to vastly improve the capabilities of others, it's better to have them doing that.
+Some of us are smarter than we are reliable, and trying to "fix" that will generally not result in someone who is both smart and reliable, but someone who is miserable and unmotivated and maybe if you're lucky slightly less unreliable than they otherwise would be.&lt;/p&gt;
+
+
+&lt;p&gt;I think the way out of this is partly to think about what ideas guys are for.&lt;/p&gt;
+
+
+&lt;p&gt;This notion of being a force amplifier for others is not, generally speaking, part of our typical conception of what an ideas guy does, and I think this is because we're confused about a number of things.&lt;/p&gt;
+
+
+&lt;p&gt;The first is that we assign credit too heavily based on who has the idea. The reason the ideas guy is so unpopular is that it's very attractive to people who want credit without doing any work. As a result you get a lot of glory seekers. Most of them also have shit ideas.&lt;/p&gt;
+
+
+&lt;p&gt;Ideas don't deserve none of the credit, don't get me wrong, but the people who do the work to actually execute on the idea are typically as or more important than the ideas guy that got them started.&lt;/p&gt;
+
+
+&lt;p&gt;Another is where we need ideas. I think your classic stereotypical ideas guy just comes up with an idea for a project then delegates it to other people and sits back and relaxes, or goes on to come up with another project to hand off to someone else. This is how you get &lt;a href="https://archiveofourown.org/works/3673335"&gt;the Stargate program&lt;/a&gt;. This is a bad use of the ideas guy, because they mostly end up creating work ungrounded in the reality of its execution.&lt;/p&gt;
+
+
+&lt;p&gt;I've been reading a bit about the history of Bell Labs recently, and one of the things that was most interesting about it was the role of AT&amp;amp;T in how effective Bell Labs was. Obviously they were a source of funding, which was important, but more importantly they were a source of &lt;em&gt;problems&lt;/em&gt;. John Gertner's "The Idea Factory" describes Bell Labs as a &lt;em&gt;problem-rich environment&lt;/em&gt;. You had rooms full of smart people, and their job was mostly to be on call when someone wanted to know how to best place telephone poles or reduce noise on a line.
+Bell Labs basically invented the entirety of modern computing (e.g. both the transistor and information theory came out of Bell Labs), but the thing that really made it work was that people there were doing research in response to many mundane and practical concerns.&lt;/p&gt;
+
+
+&lt;p&gt;Conveniently, almost every attempt to execute is a problem-rich environment, and it seems like it would be great to have an ideas guy responding to that - someone who you can go to get help when you're stuck, or who can proactively investigate ways to improve. You can think of this as the servant ideas guy, in analogue with servant leadership.&lt;/p&gt;
+
+
+&lt;p&gt;Something like this feels like my ideal role, or perhaps that it used to be.
+To a degree this is already &lt;a href="https://docs.google.com/document/d/1NyGGU3qDUpvO_7iP66Q8b7L5HjDe6biPiEjau8LJCO0/edit"&gt;what I do with my consulting work&lt;/a&gt;, although that's less embedded in the team than I would like.&lt;/p&gt;
+
+
+&lt;p&gt;I think what I want these days is some mix of servant ideas guy and classic ideas guy - I do actually want to have ideas for direction (although I need to get out of &lt;a href="https://notebook.drmaciver.com/posts/2022-01-03-14:16.html"&gt;my current malaise&lt;/a&gt; if I'm to do that), but I need other people around and working with me to properly go in that direction.&lt;/p&gt;
+
+
+&lt;p&gt;This doesn't necessarily involve me being "in charge" - it works just as well if a bunch of people get together to mutually agree to work on the same problem - but it also doesn't involve entirely working on other people's problems like consulting or normal employment do.&lt;/p&gt;
+
+
+&lt;p&gt;Either way though, it's time to get comfortable with this as a key part of who I am, and what I need to thrive. I suspect many others need this too.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2022-01-15-17:03.html" rel="alternate"/>
   </entry>
 </feed>
