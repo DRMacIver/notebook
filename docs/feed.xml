@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2022-01-16T08:40:00+00:00</updated>
+  <updated>2022-01-16T20:35:03+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -751,7 +751,7 @@ To a degree this is already &lt;a href="https://docs.google.com/document/d/1NyGG
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-01-16-08:40.html</id>
     <title>Curiosity is a team sport</title>
-    <updated>2022-01-16T08:40:00+00:00</updated>
+    <updated>2022-01-16T20:35:03+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Curiosity is a team sport&lt;/p&gt;
@@ -766,7 +766,7 @@ To a degree this is already &lt;a href="https://docs.google.com/document/d/1NyGG
 &lt;p&gt;Back in &lt;a href="https://notebook.drmaciver.com/posts/2022-01-03-14:16.html"&gt;Relearning curiosity&lt;/a&gt; I talked about the need to talk to others about things I'm interested in. I've been thinking some more about this some more and run into what is, in retrospect, an obvious problem: I don't have the first idea of how to do this, and I think this is because I'm doing something wrong prior to getting to that point.&lt;/p&gt;
 
 
-&lt;p&gt;Let me tell you about the one time I tried to do research level mathematics. The question I was interested in was this: Given a discontinuous function \(f: X \to \mathbb{R}\), where \(X\) is some topological space, how closely can it be approximated by a continuous function in the uniform norm? There is an "obvious" lower bound of \(\delta(f) = \sup\limits_{x \in X} \inf\limits_{U \ni x} \mathmf{diam}(f(U)\), where \(U\) ranges over open sets. Is this lower bound tight?
+&lt;p&gt;Let me tell you about the one time I tried to do research level mathematics. The question I was interested in was this: Given a discontinuous function \(f: X \to \mathbb{R}\), where \(X\) is some topological space, how closely can it be approximated by a continuous function in the uniform norm? There is an "obvious" lower bound of \(\delta(f) = \sup\limits_{x \in X} \inf\limits_{U \ni x} \textrm{diam}(f(U)\), where \(U\) ranges over open sets. Is this lower bound tight?
 The answer proves to be yes, if \(X\) is paracompact. Is the converse true? i.e. if \(X\) is &lt;em&gt;not&lt;/em&gt; paracompact, are we guaranteed that this bound is not tight?&lt;/p&gt;
 
 
