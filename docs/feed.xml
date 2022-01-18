@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2022-01-17T09:08:00+00:00</updated>
+  <updated>2022-01-18T13:15:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,75 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2022-01-08-08:36.html</id>
-    <title>Grappling with vastness</title>
-    <updated>2022-01-08T10:33:33+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Grappling with vastness&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2022-01-08&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;It turns out I've written about &lt;a href="https://notebook.drmaciver.com/posts/2022-01-06-12:00.html"&gt;drifting&lt;/a&gt; before, albeit obliquely, in &lt;a href="https://drmaciver.substack.com/p/why-is-it-hard-to-choose-what-to"&gt;Why is it hard to choose what to do?&lt;/a&gt; where I talked about the difference between proactive and reactive work.&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;One reason why I’m interested in this split is that I’ve found that how proactive I’m able to be is a pretty reliable predictor of my mental health. On a bad day, the ability to be proactive goes long before the ability to be competently reactive.&lt;/p&gt;
-&lt;p&gt;For example, I often find myself having days where if you dropped me in a coaching call I would be perfectly alert and useful and able to do a decent job, and between calls I get nothing done1 - I check Twitter, or I watch YouTube, play a game, or maybe (probably not) I go for a walk or do some cleaning or the like.&lt;/p&gt;
-&lt;p&gt;The way this feels internally is that I’m perfectly able to do things, but what I’m unable to do is generate things to do. This is unfortunate, as in theory I have lots of free time and the ability to do quite interesting things, but often they don’t get done anyway.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;That is, on a bad mental health day, faced with the requirement to choose what to do, I drift.&lt;/p&gt;
-
-
-&lt;p&gt;Rereading this piece makes the difference between my newsletter and my current notebook writing fairly clear I think. It's a very intellectual approach to the problem - it's not that I don't talk about the feelings involved, but even there it speculates about them in a very detached way that I'm not sure is entirely helpful.&lt;/p&gt;
-
-
-&lt;p&gt;As &lt;a href="https://twitter.com/The_Lagrangian/status/1478122278307041280"&gt;Adam puts it&lt;/a&gt;:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;what if your cognitivist problems like "akrasia" and "low executive function" are actually emotional problems like "this scares me" or "i don't actually care"&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;I noted that drifting feels a lot like a freeze response ("I'm too tired to do anything" is a common feeling leading to drifting), and, well, maybe it is. Maybe I encounter the vastness of free choice available to me and Freeze in response to it.&lt;/p&gt;
-
-
-&lt;p&gt;It's not hard to see little versions of this sort of response.&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;What should I do with my life?&lt;/li&gt;
-&lt;li&gt;What should I do today?&lt;/li&gt;
-&lt;li&gt;What should I write today?&lt;/li&gt;
-&lt;li&gt;What should I write on my notebook today?&lt;/li&gt;
-&lt;li&gt;What should I write on my notebook today about what I've been thinking about recently?&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;As you move down the list the possibilities become more constrained, until it becomes narrower and more tractable.
-Towards the beginning of the list, you have to confront the vastness, and that's scary.&lt;/p&gt;
-
-
-&lt;p&gt;The problem isn't just that you have to make a choice from within infinite possibilities. It's that you have to grapple with your agency over those choices, and confront your lack thereof.&lt;/p&gt;
-
-
-&lt;p&gt;I started writing about how the problem was infinite freedom and some part of me rebelled, because it's not, is it? In fact there is very little freedom right now, and dealing with "What should I do today?" causes me to confront that head on, let alone "What should I do with my life?". Given free choice over what to do today I'd probably try to hang out with a group of friends in person, but even in the before times that's hard to organise on short notice, and right now it's all but impossible (or at least feels like a bad idea).&lt;/p&gt;
-
-
-&lt;p&gt;Choosing smaller problems allows me to grapple with things that are my size, and that I know I can handle, but as I expand the scope, I have to grapple with a world of possibilities that is vastly larger than me, and could easily crush me as and when it fights back, and honestly, yeah, this scares me.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2022-01-08-08:36.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-01-09-10:00.html</id>
     <title>Memory and yearning</title>
@@ -691,7 +622,7 @@ But as &lt;a href="https://notebook.drmaciver.com/posts/2022-01-15-17:03.html"&g
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-01-17-09:08.html</id>
     <title>Fulfilling work</title>
-    <updated>2022-01-17T09:08:00+00:00</updated>
+    <updated>2022-01-17T10:31:45+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Fulfilling work&lt;/p&gt;
@@ -774,5 +705,71 @@ But as &lt;a href="https://notebook.drmaciver.com/posts/2022-01-15-17:03.html"&g
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2022-01-17-09:08.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2022-01-18-13:15.html</id>
+    <title>Difficulty finishing things</title>
+    <updated>2022-01-18T13:15:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Difficulty finishing things&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2022-01-18&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;There's a psychological quirk of mine that I've never really got to the bottom of. I've occasionally noticed it in others, and I wonder how common it is.&lt;/p&gt;
+
+
+&lt;p&gt;It's this: Some part of me clearly rebels at finishing things.&lt;/p&gt;
+
+
+&lt;p&gt;This isn't slacking. I do also slack on some things, granted, but that's not what I mean. I mean I do something like 90-99% of the work and then just... stop. I don't want to take the final step and complete it.&lt;/p&gt;
+
+
+&lt;p&gt;This shows up across a variety of areas. I'm not quite sure what the common thread is - there needs to be some sense in which it's a "task", but it happens for both enjoyable ones and unenjoyable ones.&lt;/p&gt;
+
+
+&lt;p&gt;A trivial example of this is that often I'll fail to wash up everything. I'll do almost all of it but I'll leave one or two items on the side because I can't be bothered to do those right now.&lt;/p&gt;
+
+
+&lt;p&gt;It also shows up on large writing projects - I'm the worst at large writing projects. I know I write a lot, but virtually all my successful writing happens in one sitting.&lt;/p&gt;
+
+
+&lt;p&gt;Games, too. There are a number of games I've played something like 90% of the game and then "got bored of". Sometimes this is because the game got too hard towards the end, but I don't think that's all of it. I definitely stopped playing before I plateaued.&lt;/p&gt;
+
+
+&lt;p&gt;I've also noticed this in what projects I'm attracted to. I really like problems where it's impossible to solve them optimally and there is always room for improvement. I still stop before the end, of course, but that's now because there is no end. My recent adventures in Wordle solving are an example of this.&lt;/p&gt;
+
+
+&lt;p&gt;Some things the source of the aversion to finishing is pretty clear: If I finish the project, I have to act on it. If I finish writing a paper, I have to go through the publication process. If I finish a blog post or newsletter issue I've spent ages on, I have to deal with the fact that it might not succeed, etc.&lt;/p&gt;
+
+
+&lt;p&gt;But this doesn't actually feel like a central example of the problem. As I've shown every day this month, it's not that hard for me to publish writing for the public. I do sometimes procrastinate a little on finishing it, but not much.&lt;/p&gt;
+
+
+&lt;p&gt;It feels like this is because the action of writing it is atomic in some way - the writing I do is generally something that is short enough that I can do it in one sitting (although I do often take breaks) and so it's just "one" task. The things that are hard to finish are composite, often done over many sittings.&lt;/p&gt;
+
+
+&lt;p&gt;Why does this happen? I honestly don't know. The best I can describe it is that there's a sort of ugh reaction as the finish approaches. It feels a bit like being tired of the task, but as I've noted before, I think tiredness responses like this are often fake.&lt;/p&gt;
+
+
+&lt;p&gt;Maybe this is a difficulty with transitions. The sharp end of a task is something to fear, in a way that a gradual drifting away from it is not.&lt;/p&gt;
+
+
+&lt;p&gt;I wonder if there's something comforting to a part of me about an unfinished task. As long as there are things to do, I don't have to confront &lt;a href="https://notebook.drmaciver.com/posts/2022-01-08-08:36.html"&gt;the real choice of what I do next&lt;/a&gt;. I'm always able, in principle, to return to an unfinished task, and that anchors me against having to make broader and scarier choices.
+I don't return of course. That would require finishing them, and abandoning the comfort of having something concrete to do.&lt;/p&gt;
+
+
+&lt;p&gt;I don't really know if this is it though. There's a sharp and unpleasant feeling to the idea of a completion that I can't really articulate at the moment, and whatever the reason the result is myriad unfinished and half-completed tasks around me at any given time.&lt;/p&gt;
+
+
+&lt;p&gt;All I really know is what I said at the beginning: Some part of me rebels at the notion of completing a task. I can feel it even now - it's insisting that I shouldn't publish this piece until I've got to the bottom of why. I shall resist its demands.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2022-01-18-13:15.html" rel="alternate"/>
   </entry>
 </feed>
