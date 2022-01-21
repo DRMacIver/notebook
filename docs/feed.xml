@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2022-01-19T16:42:00+00:00</updated>
+  <updated>2022-01-21T16:38:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,84 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2022-01-10-10:41.html</id>
-    <title>Being unreliable</title>
-    <updated>2022-01-10T15:52:30+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Being unreliable&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2022-01-10&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;One of the worst things about me is that I'm fairly unreliable.&lt;/p&gt;
-
-
-&lt;p&gt;Much of it is for reasons beyond my control. It always feels like an exaggeration to describe myself as "chronically ill", but I am on a literal reading of the phrase chronically ill. I get ill a lot. I spent all of December ill, more or less, between one virus or another. Started out with what was either a mild flu or a really bad cold, extended it with a fairly strong reaction to my COVID booster, and then kept daisy chaining new viruses on top of that, getting a new one each time I was feeling better from the last one. It sucked.&lt;/p&gt;
-
-
-&lt;p&gt;Then there are the days where I just wake up feeling terrible for no obvious reason and it doesn't let up. &lt;a href="https://twitter.com/DRMacIver/status/1480595949671964674"&gt;Apparently based on polling on Twitter this is not uncommon&lt;/a&gt; which is, I guess... not exactly a relief, but misery loves company. It's certainly concerning that the numbers are that large.&lt;/p&gt;
-
-
-&lt;p&gt;My &lt;a href="https://notebook.drmaciver.com/posts/2022-01-04-14:48.html"&gt;recent major sleep problems&lt;/a&gt; are also adding to this of course - sometimes I wake up and I've not had nearly enough sleep. Even before that my quality of sleep is highly variable. I used to think of this as a "sleep problem" in that I woke up feeling terrible and attributed that to a result of sleep, and it lingered, but I'm no longer totally sure this is the case. It certainly could be (e.g. one candidate cause is mouth breathing at night).&lt;/p&gt;
-
-
-&lt;p&gt;This sort of day to day unreliability makes it very visible to me how bad most work arrangements are for people who can't manage to reliably show up every day for a job. I'm not quite that bad in that I can &lt;em&gt;show up&lt;/em&gt;, but my level of function on a given day may not be meaningfully different from if I didn't. Fortunately I'm good enough at my job that most of my employers have never really noticed - I can just about fake function in a meeting, and my work on the good days tends to be more than enough to make up for the rest.&lt;/p&gt;
-
-
-&lt;p&gt;This is kinda what I mean by it feeling like an exaggeration to say I'm chronically ill. People with more severe chronic illnesses often can't clear that bar, or need more accommodation. Nevertheless, it sucks and I don't like it.&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, this isn't really intended to be complaining about my health, though maybe I should write about that as well some time.&lt;/p&gt;
-
-
-&lt;p&gt;A lot of the basis of my unreliability seems more emotional in nature. Maybe some of the emotions are underwritten by the physical unreliability, I don't know.&lt;/p&gt;
-
-
-&lt;p&gt;I'm also really unreliable for things at longer time scales. It's very hard for me to commit to things over a long period of time, because over time they acquire this massive... ugh isn't quite right. It's not that they're aversive, it's that the very idea of them feels exhausting.
-I've had a few things that haven't gone this way - for example I have managed to maintain a writing habit over a period of decades - but writing feels like more of a skill than a project. I have this problem just as badly with writing projects.&lt;/p&gt;
-
-
-&lt;p&gt;This is also, in large part, while I failed to complete my PhD. It hit the point where I just couldn't bear to work on it, so I didn't.&lt;/p&gt;
-
-
-&lt;p&gt;It also shows up on a day to day basis - I make a vague plan to do things and then never follow through. I set intentions to e.g. have a habit of cleaning regularly, and don't. A lot of &lt;a href="https://notebook.drmaciver.com/posts/2022-01-06-12:00.html"&gt;drifting&lt;/a&gt; happens when there are plenty of things that I could be doing that past-me intended to do and I intend future-me to do.&lt;/p&gt;
-
-
-&lt;p&gt;I'm aware this is yet another post that will cause people to say "David, you have ADHD" but I really don't think so. I'm certainly somewhat in that direction, but the assessment tests think I don't meet the threshold, and stimulants don't seem to help this problem all that much. Also my internal experience doesn't feel like it's all that much like people with ADHD describe theirs as.&lt;/p&gt;
-
-
-&lt;p&gt;I was going to claim that I don't feel wracked with guilt over this, and I guess this is true, but there's definitely a certain undercurrent of shame to this, and especially to talking about it.&lt;/p&gt;
-
-
-&lt;p&gt;In particular the way we treat reliability as a moral responsibility really adds to that. I do, largely, endorse that. I would like to be reliable, both for myself and other people, and think I would be a better person if I could be.&lt;/p&gt;
-
-
-&lt;p&gt;One way of doing that is not trying and just having better support structures. Being more reliable is definitely one of the things I most &lt;a href="https://notebook.drmaciver.com/posts/2022-01-02-12:34.html"&gt;want help&lt;/a&gt; on, but I have no idea how other people can help me on this. Working in a company does that to some degree, but going and working for someone else increasingly doesn't feel like the right fit. Definitely one of my fantasies for once my current business takes off in a big way (hopefully a when not an if) is having a PA to help keep me organised, but that only really scratches the surface of the problem - really I need collaborators. I'm not going to stay remotely on task for as long as I'd like to on a big project without some external assistance.&lt;/p&gt;
-
-
-&lt;p&gt;A lot of this is something I feel like there should be pre-existing structures for. Or at least it's something I &lt;em&gt;want&lt;/em&gt; there to be pre-existing structures for me to slot into. Maybe there are, maybe I just slipped through the cracks, but I don't think so.&lt;/p&gt;
-
-
-&lt;p&gt;The smart but unreliable person is pretty common, and we're very useful if you can give us the right support, but it increasingly feels taboo to even think about providing that support, let alone asking for it. You're supposed to be reliable on your own, and aren't entitled to anyone else's help in being so. How are you supposed to learn to be reliable if you're not automatically? Well, figuring that out is your responsibility too. Tough luck if you can't manage it.&lt;/p&gt;
-
-
-&lt;p&gt;In many ways this would be easier if it were ADHD. As well as being potentially manageable with medication (though truthfully I'm pretty reluctant to consider medication for my problems that feel like they have an emotional underpinning. No judgement to anyone else who does, this just feels like the wrong solution for me), ADHD gives you more of a social license to ask for accommodations - it's not my fault, I have ADHD, so you have to take that into account. Whether people &lt;em&gt;do&lt;/em&gt; take it into account is another story, but in principle the option is there.&lt;/p&gt;
-
-
-&lt;p&gt;I don't really know that I want accommodations anyway. I don't think of the things I want as accommodations - accommodations are things you give people to help them fit into a place in the world that is fundamentally not designed for them. Often this is much better than the alternative, which is that you &lt;em&gt;don't&lt;/em&gt; help them fit in and just let them suffer, but it's not ideal.&lt;/p&gt;
-
-
-&lt;p&gt;Really what I want is some mix of figuring out the underlying issues, both health and emotions, that allow me to be more reliable, and build a part of the world that fits me.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2022-01-10-10:41.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-01-11-03:23.html</id>
     <title>Being fragmented</title>
@@ -674,7 +596,7 @@ I don't return of course. That would require finishing them, and abandoning the 
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-01-19-16:42.html</id>
     <title>The usefulness of things you don't use</title>
-    <updated>2022-01-19T16:42:00+00:00</updated>
+    <updated>2022-01-19T17:22:29+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;The usefulness of things you don't use&lt;/p&gt;
@@ -749,5 +671,65 @@ I don't return of course. That would require finishing them, and abandoning the 
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2022-01-19-16:42.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2022-01-21-16:38.html</id>
+    <title>Projects that you can't run out of</title>
+    <updated>2022-01-21T16:38:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Projects that you can't run out of&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2022-01-21&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I was working on my new &lt;a href="https://consulting.drmaciver.com/"&gt;consulting website&lt;/a&gt; yesterday. I can't say it's the most exciting thing in the world, but one of the interesting things about working on it was that it gave me a project of a sort which I don't think I have that often, and that felt quite good.&lt;/p&gt;
+
+
+&lt;p&gt;I don't have a good term for such projects, but let me see if I can articulate what I'm pointing at.
+They have the following characteristics:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;They can usefully absorb pretty much as much work as you're willing to put into them - they may plateau, but the work never becomes pointless or harmful.&lt;/li&gt;
+&lt;li&gt;They don't &lt;em&gt;have&lt;/em&gt; to - you can stop pretty quickly and walk away and you'll have done something good.&lt;/li&gt;
+&lt;li&gt;What you've done stays done.&lt;/li&gt;
+&lt;li&gt;They feel neutral to positive to work on.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;For example writing a blog isn't this, because it fails (1) - after a certain level of effort, a post starts getting worse rather than better, and if you write too much you just overwhelm the audience (people who want to keep up are already behind on reading my notebook, and I'm only writing daily! That's no more than an hour of work a day).&lt;/p&gt;
+
+
+&lt;p&gt;Projects that take a very long time to pay off also aren't this. e.g. a PhD, or even a paper, very much isn't this because if you walk away from it before it's successful, you've failed.&lt;/p&gt;
+
+
+&lt;p&gt;Cleaning and general maintenance aren't this, partly because you have an obligation to keep on top of them - you can definitely fail to clean - and partly because they fail (3) and just undo themselves.&lt;/p&gt;
+
+
+&lt;p&gt;A lot of paid work fails at (4) but more interestingly paid work also often fails at (1). Paid work fairly rarely is something you can sink all your time into, because it starts to feel really bad to do that eventually - unless you're billing by the hour, you're being exploited. It goes against norms of work-life balance. Your coworkers resent you making them look bad. That sort of thing. Sometimes your employer &lt;em&gt;wants&lt;/em&gt; you to put unbounded amounts of effort into your paid work, but that's a different (and usually worse) problem which rarely results in positive feelings.&lt;/p&gt;
+
+
+&lt;p&gt;Projects like this are really satisfying to me. I think it's partly because they don't trigger the &lt;a href="https://notebook.drmaciver.com/posts/2022-01-18-13:15.html"&gt;difficulty finishing things&lt;/a&gt; but there's also something very satisfying about knowing that you can just give something your all and will be rewarded for it.
+They give you a reliable way of turning hard work into positive feelings, and are usually a ready source of flow, and that's pretty great.&lt;/p&gt;
+
+
+&lt;p&gt;One of the interesting things about such projects is that, contra my recent line of thinking, they're not very good as team projects, because the problem is that if you're reliant on other people for working on something then you can't put unbounded amounts of work into it - you can put work until you get to something where you're blocked on other people for. I think this is part of why personal software projects are often much more satisfying (or at least differently satisfying) than shared projects.&lt;/p&gt;
+
+
+&lt;p&gt;Some other examples of work like this for me are Hypothesis (when I was still working on it) and, for a more trivial recent example, working on my Wordle solver. They're interesting problems that can be endlessly tinkered with to improve upon, but that I very quickly got to a point where it's good that they exist and would still be good even if I walked away from them now.&lt;/p&gt;
+
+
+&lt;p&gt;Another interesting, darker, class of examples is that I think everything that gets used to &lt;a href="https://notebook.drmaciver.com/posts/2022-01-06-12:00.html"&gt;drift&lt;/a&gt; has this character, but in a less nourishing way. I think the key difference is something like short-term vs long-term positive feelings. If I spend time playing a game, that produces good short-term feelings. Depending on how much time it may also cause good feelings in retrospect. e.g. I genuinely enjoy Slay the Spire and think it's worth the time I spend on it, but if I sank 80 hours a week into playing it, I would not feel good about that looking back.&lt;/p&gt;
+
+
+&lt;p&gt;Perhaps drift is, partly, looking for something of this sort and, lacking a good source of it, turning to the least bad ones available to us?&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2022-01-21-16:38.html" rel="alternate"/>
   </entry>
 </feed>
