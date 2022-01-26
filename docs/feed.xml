@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2022-01-25T07:18:00+00:00</updated>
+  <updated>2022-01-26T19:35:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,88 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2022-01-15-17:03.html</id>
-    <title>Being an ideas guy</title>
-    <updated>2022-01-15T18:18:11+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Being an ideas guy&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2022-01-15&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I have a complicated relationship with the fact that I am that much maligned creature, an ideas guy.&lt;/p&gt;
-
-
-&lt;p&gt;(I'm going to use the gendered term "ideas guy" throughout because a) The stereotype of the ideas guy is very much a guy b) We don't have a good gender neutral term as a result and c) I am a guy)&lt;/p&gt;
-
-
-&lt;p&gt;I am &lt;em&gt;much&lt;/em&gt; better at ideas than &lt;a href="https://notebook.drmaciver.com/posts/2022-01-10-10:41.html"&gt;follow through&lt;/a&gt;. My ideal situation is to be in an environment where my main role is to consult on or suggest problems rather than do the legwork of seeing things through to completion.&lt;/p&gt;
-
-
-&lt;p&gt;This is not a popular archetype. People like me are generally seen as being selfish - wanting to do the fun bits and let other people do the hard work.
-It's not entirely unfair. I'm not averse to hard work, but I am averse to &lt;em&gt;sustained&lt;/em&gt; hard work - ideally I'd work hard on a problem until I get bored of it and then hand it over to other people. Sometimes I get bored of things after a couple of days, sometimes they hold my attentionf or months, very rarely they hold my attention for years.&lt;/p&gt;
-
-
-&lt;p&gt;I will say in my defence that I've done my time in the hard work mines. My career has been an endless series of looking for places where I get to go do clever researchy things, I then come in and immediately concluded that what they needed wasn't clever research but responsible engineering and then, reluctantly, admitted that yes I could provide them with that.&lt;/p&gt;
-
-
-&lt;p&gt;I don't mind having done that. I think it's very hard to have any good ideas in a space you've not developed a solid foundation in. But I did it for ten years, and burned out, and enough is enough. This sort of thing is not what I'm for - I can do it, because I'm pretty generically competent, but it doesn't make me happy and burns me out.&lt;/p&gt;
-
-
-&lt;p&gt;It's also a poor use of my abilities, honestly. I am much, much, better at getting other people unstuck than I am at working reliably. As a result, if you add me to a team in this capacity, I probably expand the capacity of the team immensely, but if you add me to the team as one of an interchangeable set of developer roles I still make things better, but I'm just a good developer, nothing very exciting happens. I'm a far better force amplifier for other people than I am a worker on my own.&lt;/p&gt;
-
-
-&lt;p&gt;This is, I think, a major deficiency in our conception of teamwork. We treat "being a team player" as meaning being part of a homogenous group of people where you're supposed to take on the same responsibilities as everyone else. Sure, maybe you have different skills, but "I'm not able to do that work" is supposed to be the main reason to refuse work.&lt;/p&gt;
-
-
-&lt;p&gt;I don't think this really properly respects the strengths of heterogenous work, or the variation in people's individual abilities.
-Certainly it's not reasonable to expect to only get to do the fun work, but it's also not reasonable to to ignore your team's individual strengths and weaknesses when planning, and if someone is able to vastly improve the capabilities of others, it's better to have them doing that.
-Some of us are smarter than we are reliable, and trying to "fix" that will generally not result in someone who is both smart and reliable, but someone who is miserable and unmotivated and maybe if you're lucky slightly less unreliable than they otherwise would be.&lt;/p&gt;
-
-
-&lt;p&gt;I think the way out of this is partly to think about what ideas guys are for.&lt;/p&gt;
-
-
-&lt;p&gt;This notion of being a force amplifier for others is not, generally speaking, part of our typical conception of what an ideas guy does, and I think this is because we're confused about a number of things.&lt;/p&gt;
-
-
-&lt;p&gt;The first is that we assign credit too heavily based on who has the idea. The reason the ideas guy is so unpopular is that it's very attractive to people who want credit without doing any work. As a result you get a lot of glory seekers. Most of them also have shit ideas.&lt;/p&gt;
-
-
-&lt;p&gt;Ideas don't deserve none of the credit, don't get me wrong, but the people who do the work to actually execute on the idea are typically as or more important than the ideas guy that got them started.&lt;/p&gt;
-
-
-&lt;p&gt;Another is where we need ideas. I think your classic stereotypical ideas guy just comes up with an idea for a project then delegates it to other people and sits back and relaxes, or goes on to come up with another project to hand off to someone else. This is how you get &lt;a href="https://archiveofourown.org/works/3673335"&gt;the Stargate program&lt;/a&gt;. This is a bad use of the ideas guy, because they mostly end up creating work ungrounded in the reality of its execution.&lt;/p&gt;
-
-
-&lt;p&gt;I've been reading a bit about the history of Bell Labs recently, and one of the things that was most interesting about it was the role of AT&amp;amp;T in how effective Bell Labs was. Obviously they were a source of funding, which was important, but more importantly they were a source of &lt;em&gt;problems&lt;/em&gt;. John Gertner's "The Idea Factory" describes Bell Labs as a &lt;em&gt;problem-rich environment&lt;/em&gt;. You had rooms full of smart people, and their job was mostly to be on call when someone wanted to know how to best place telephone poles or reduce noise on a line.
-Bell Labs basically invented the entirety of modern computing (e.g. both the transistor and information theory came out of Bell Labs), but the thing that really made it work was that people there were doing research in response to many mundane and practical concerns.&lt;/p&gt;
-
-
-&lt;p&gt;Conveniently, almost every attempt to execute is a problem-rich environment, and it seems like it would be great to have an ideas guy responding to that - someone who you can go to get help when you're stuck, or who can proactively investigate ways to improve. You can think of this as the servant ideas guy, in analogue with servant leadership.&lt;/p&gt;
-
-
-&lt;p&gt;Something like this feels like my ideal role, or perhaps that it used to be.
-To a degree this is already &lt;a href="https://docs.google.com/document/d/1NyGGU3qDUpvO_7iP66Q8b7L5HjDe6biPiEjau8LJCO0/edit"&gt;what I do with my consulting work&lt;/a&gt;, although that's less embedded in the team than I would like.&lt;/p&gt;
-
-
-&lt;p&gt;I think what I want these days is some mix of servant ideas guy and classic ideas guy - I do actually want to have ideas for direction (although I need to get out of &lt;a href="https://notebook.drmaciver.com/posts/2022-01-03-14:16.html"&gt;my current malaise&lt;/a&gt; if I'm to do that), but I need other people around and working with me to properly go in that direction.&lt;/p&gt;
-
-
-&lt;p&gt;This doesn't necessarily involve me being "in charge" - it works just as well if a bunch of people get together to mutually agree to work on the same problem - but it also doesn't involve entirely working on other people's problems like consulting or normal employment do.&lt;/p&gt;
-
-
-&lt;p&gt;Either way though, it's time to get comfortable with this as a key part of who I am, and what I need to thrive. I suspect many others need this too.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2022-01-15-17:03.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-01-16-08:40.html</id>
     <title>Curiosity is a team sport</title>
@@ -705,7 +623,7 @@ I've never met them, but I've seen them around a bit, and I know the daughter ca
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-01-25-07:18.html</id>
     <title>Failing to resist temptations</title>
-    <updated>2022-01-25T07:18:00+00:00</updated>
+    <updated>2022-01-25T08:03:25+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Failing to resist temptations&lt;/p&gt;
@@ -753,5 +671,97 @@ I've never met them, but I've seen them around a bit, and I know the daughter ca
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2022-01-25-07:18.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2022-01-26-19:35.html</id>
+    <title>The kindness of strangers</title>
+    <updated>2022-01-26T19:35:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;The kindness of strangers&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2022-01-26&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Hey, remember &lt;a href="https://notebook.drmaciver.com/posts/2022-01-05-13:01.html"&gt;that time when I got completely lost on the way to the hospital&lt;/a&gt; and had to be rescued by kind passersby giving me directions? Me too.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway it turns out I wasn't remotely done relying on the kindness of strangers.&lt;/p&gt;
+
+
+&lt;p&gt;I rented a car yesterday, picking it up not long after I finished writing &lt;a href="https://notebook.drmaciver.com/posts/2022-01-25-07:18.html"&gt;yesterday's post&lt;/a&gt;. It's technically not my first time renting a car, but the last time I was with an experienced other driver who did all the legwork, and I just signed the forms and paid (I was a last minute addition and, unlike the other two people in the car, I was coming back for the round trip, so it made more sense to be under my name). This time I did everything.&lt;/p&gt;
+
+
+&lt;p&gt;It turns out renting a car is easy. I think it had been in my head as one of those complicated things that adults do and I didn't understand how to make work but, no, renting a car is easy. Apparently it's often not easy and many car rental places screw you over. I solved this problem by going to one of the more expensive ones (mostly because every other option was a &lt;em&gt;much&lt;/em&gt; further walk from me) and being effortlessly charming and pretty at the staff, so everything went fine on the rental front (I've now returned the car, so the chickens in question are hatched and I shan't regret these words, although who knows what will happen the next time).&lt;/p&gt;
+
+
+&lt;p&gt;What didn't go so well was my ability to listen to instructions. The attendant who showed me the car did, I realise in retrospect, explain how to reverse the car correctly, but I misunderstood her directions, and foolishly didn't check before leaving the car park. Instead I discovered that I did not know how to reverse the car while trying to turn around on a hill, with the front of the car about a meter from shuttered entrance to an underground car park.&lt;/p&gt;
+
+
+&lt;p&gt;I tried three or four times to reverse and each time the car rolled forward. At first I thought I was just doing a reverse hill start badly, but after the second time I was convinced I was doing something fundamentally wrong, but I couldn't figure out what.&lt;/p&gt;
+
+
+&lt;p&gt;After that fourth time there was &lt;em&gt;not&lt;/em&gt; a lot of distance between the front of the car and the barrier (probably no more than about 20cm). At this point someone came out from the pedestrian entrance to the carpark and looked at me bemused. I explained my situation. "Would you like some help?", he asked. I very gratefully accepted, at which point he effortlessly reversed the car up the hill for me and backed it a bit up onto the curb. He explained how reverse hill starts need to use the handbrake. I said that I thought I had done that but clearly I must have done something wrong, and thanked him profusely.&lt;/p&gt;
+
+
+&lt;p&gt;I'd made two mistakes at this point.&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;The car was, in fact, still blocking the entrance, it was just now in less dire straits.&lt;/li&gt;
+&lt;li&gt;I had not asked my saviour to show me &lt;em&gt;exactly&lt;/em&gt; what he had done.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;As you can imagine it was at this point I learned that the problem wasn't hill starts (which I was pretty sure I was fine at and still maintain I am) but that I just didn't know how to reverse the car, and as a result could not easily get it out of the way of the car who arrived shortly after wanting to get into the carpark. I explained to her, very embarrassed, what was going on. She said no problem but didn't offer to help and I was too embarrassed to ask.&lt;/p&gt;
+
+
+&lt;p&gt;Not long after this a timber merchant turned up to do some deliveries. The man driving gave me a confused look. I explained. He offered to help, and I again gratefully accepted.&lt;/p&gt;
+
+
+&lt;p&gt;He did what the first person did not, which was that he explained to me like I was five how to use a manual gear stick. I mostly didn't need this as I actually mostly have driven manual (I've driven an automatic precisely once in my life). What I &lt;em&gt;did&lt;/em&gt; need demonstrating was that this gear stick, unlike every other one I have ever used, required you to pull up on the shaft in a frankly bizarre way to put it in reverse. If you didn't do that, you went into sixth instead. This is some seriously unintuitive modal interface bullshit, and I say this as a vim user.&lt;/p&gt;
+
+
+&lt;p&gt;My second saviour did look very amused and exasperated at me, and explained in very small words and with elaborate gestures and demonstrations, and I did not begrudge him this at all because I surely deserved it.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, there were no further problems with driving the car because I actually can drive just fine once I know how to reverse the car.&lt;/p&gt;
+
+
+&lt;p&gt;This piece was going to have more anecdotes about what driving was like, but then about a third of the way into writing it I had a sudden thought: "Wait, wasn't my passport supposed to be delivered today?"&lt;/p&gt;
+
+
+&lt;p&gt;The answer is yes, my passport was supposed to be delivered today, and TNT claimed to have delivered it. They had photo proof and everything. Specifically, after having had my passport sent via the passport office using their dedicated passport delivery service, they had shoved it through some letterbox without getting a signature and then taken a picture of the door. Needless to say this wasn't &lt;em&gt;my&lt;/em&gt; door, because I live in a block of flats.&lt;/p&gt;
+
+
+&lt;p&gt;I was, as you may imagine, mildly displeased by this.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway this was about 8PM so I did the obvious thing and went through every nearby door with a number 2 on it until I found the right one. This didn't take all that long (I got it on the second try). I knocked (no doorbell), but nobody was in, so I solved my problems the British way and went to the pub.&lt;/p&gt;
+
+
+&lt;p&gt;Specifically I went to the pub right nextdoor to this one, where I explained to the bartender very nicely what my problem was. She got the owner, and I explained again. He got in touch with the person who lived there, and also he had a key to it, so he want in and got the package and gave it to me.&lt;/p&gt;
+
+
+&lt;p&gt;I then ordered a large glass of gin, and we all groused about how shocking the situation was, and I affirmed that I would be having words with TNT and the passport office tomorrow when they're open.&lt;/p&gt;
+
+
+&lt;p&gt;All of this is to say... I've been complaining recently about &lt;a href="https://notebook.drmaciver.com/posts/2022-01-02-12:34.html"&gt;wanting and offering help&lt;/a&gt;, and &lt;a href="https://notebook.drmaciver.com/posts/2022-01-23-13:27.html"&gt;the difficulty of helping in atomised communities&lt;/a&gt;, but actually it's worth remembering that strangers are usually &lt;em&gt;incredibly&lt;/em&gt; helpful when you ask them.&lt;/p&gt;
+
+
+&lt;p&gt;There's something simultaneously very easy and utterly pure about helping a stranger. There is no reason to help a stranger except pure altruism and the hope that one day someone will help you back. Help offered freely to strangers can never be paid back, only forward, and it's easy to forget that we do in fact live in a world where people do this, and do this freely.&lt;/p&gt;
+
+
+&lt;p&gt;This doesn't always work. There's a privilege element to this, as with all things, and you run into difficulties with some problems - especially money ones, or other common requests for help (my emotional difficulties giving money to beggars for example). But nevertheless very often you can, in fact, rely on strangers to help you.&lt;/p&gt;
+
+
+&lt;p&gt;In many ways, it's easier to help a stranger, because there's no expectation that you'll have to help them again. Levinas thinks we have infinite responsibility to our fellow humans, but this isn't entirely true. Someone you will never see again and can help is that blessedly rare thing: A finite responsibility to others that you can discharge, and know that thereby you have done good in the world.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2022-01-26-19:35.html" rel="alternate"/>
   </entry>
 </feed>
