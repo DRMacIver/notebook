@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2022-01-26T19:35:00+00:00</updated>
+  <updated>2022-01-27T18:13:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,73 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2022-01-16-08:40.html</id>
-    <title>Curiosity is a team sport</title>
-    <updated>2022-01-16T20:36:10+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Curiosity is a team sport&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2022-01-16&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Back in &lt;a href="https://notebook.drmaciver.com/posts/2022-01-03-14:16.html"&gt;Relearning curiosity&lt;/a&gt; I talked about the need to talk to others about things I'm interested in. I've been thinking some more about this some more and run into what is, in retrospect, an obvious problem: I don't have the first idea of how to do this, and I think this is because I'm doing something wrong prior to getting to that point.&lt;/p&gt;
-
-
-&lt;p&gt;Let me tell you about the one time I tried to do research level mathematics. The question I was interested in was this: Given a discontinuous function \(f: X \to \mathbb{R}\), where \(X\) is some topological space, how closely can it be approximated by a continuous function in the uniform norm? There is an "obvious" lower bound of \(\delta(f) = \sup\limits_{x \in X} \inf\limits_{U \ni x} \textrm{diam}(f(U)\), where \(U\) ranges over open sets. Is this lower bound tight?
-The answer proves to be yes, if \(X\) is paracompact. Is the converse true? i.e. if \(X\) is &lt;em&gt;not&lt;/em&gt; paracompact, are we guaranteed that this bound is not tight?&lt;/p&gt;
-
-
-&lt;p&gt;It turns out, yes, more or less. This question had all been thoroughly explored by some German mathematician back in the 70s, which took me a while to find out because Google Scholar wasn't really a thing I knew about back then (it did exist, but I'm not sure I knew it existed and certainly I wasn't good at using it - this would have been 2005 or so). I can no longer find the reference, which shows how much I still care about the problem. But at the time it was a neat problem to get my teeth into.&lt;/p&gt;
-
-
-&lt;p&gt;This problem has a couple of characteristics of things that are easily interesting to me:&lt;/p&gt;
-
-
-&lt;p&gt;Firstly, the problem statement is relatively accessible. In this case that means it's relatively accessible if you have a certain amount of mathematical knowledge, which I did, but it's not &lt;em&gt;super&lt;/em&gt; off into the weeds. This will not be obvious to you because I've made no attempt to handhold you into it and also my idea of what counts as accessible is weird, but the point is that I could start tackling the problem immediately.&lt;/p&gt;
-
-
-&lt;p&gt;Secondly, it's pretty niche. Less niche than I thought, clearly, in that it &lt;em&gt;did&lt;/em&gt; have a niche of people who had worked on it a while ago, it's just that it was unfashionable. Also being unfashionable seems a common theme in my interests.&lt;/p&gt;
-
-
-&lt;p&gt;Thirdly, it's not all that useful, and if you asked me why it was interesting I wouldn't be able to give you a good answer (certainly not now, but probably even then). It's just neat, in a way that I can't really articulate or defend. It's within arm's length of practical things (for a pure mathematician's notion of practical), but not itself practical. There's no extrinsic reason to be interested in it.&lt;/p&gt;
-
-
-&lt;p&gt;Unlike most things I tend to get interested in of that nature, I did have the advantage of having a friend who I could interest in the topic. We worked on it together for a bit until we discovered the prior art and got disappointed. That doens't happen to me much these days.&lt;/p&gt;
-
-
-&lt;p&gt;Other things I've been interested in over the years include random voting, test-case reduction, various interesting algorithmic problems, etc. Recently I've been getting into writing Wordle solvers, just for the lulz. There have probably been many others.&lt;/p&gt;
-
-
-&lt;p&gt;The crucial feature of all of these is that I noticed something interesting that seemed under-researched, picked it up, and ran with it for a bit.&lt;/p&gt;
-
-
-&lt;p&gt;Which is to say uh... I appear to be picking my interests in a manner that actively selects for things that other people are not currently interested in, and then being very surprised pikachu when this results in not having people to share my interests.&lt;/p&gt;
-
-
-&lt;p&gt;I've tried to get other people interested in these sometimes. If I hadn't flamed out of my PhD, that was ostensibly the point of it - getting other people interested in test-case reduction to the degree that I was. It turns out marketing is hard. Hypothesis was a genuine opportunity to share my interests with people and collaborate on them, but unfortunately I mostly burned out on that by trying to make it do too much for me.&lt;/p&gt;
-
-
-&lt;p&gt;I can explain my interests to lots of people. &lt;a href="https://www.drmaciver.com/2018/10/how-to-explain-anything-to-anyone/"&gt;I'm very good at explaining&lt;/a&gt;. 
-But as &lt;a href="https://notebook.drmaciver.com/posts/2022-01-15-17:03.html"&gt;I wrote about yesterday&lt;/a&gt; I'm increasingly feeling like my ideal working environment is working in a team, and I think a lot of the time what I want is not for people to listen to my interests, but to engage with them fully and work with me on them.&lt;/p&gt;
-
-
-&lt;p&gt;Back in &lt;a href="https://drmaciver.substack.com/p/maintaining-niche-interests"&gt;Maintaining niche interests&lt;/a&gt; I talked about how if you've got niche interests you want to maintain, you probably need a community for that interest, but I think I understated the problem there. I tried to fix my increasingly lackluster level of interest in computer science by forming a computer science community, and that was a good thing for me to do but didn't help, because what it got me was an &lt;em&gt;audience&lt;/em&gt; for my interests, which falls very far short of partners.&lt;/p&gt;
-
-
-&lt;p&gt;And, well, if that's actually what I want, why the hell am I working on this as an individual and trying to interest people in what I've done after I've already picked something that makes it hard?&lt;/p&gt;
-
-
-&lt;p&gt;Surely, if you want to have interests you share with people, the thing to do is to start with people you want to share interests with, and then work together with them to find and develop those interests?&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2022-01-16-08:40.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-01-17-09:08.html</id>
     <title>Fulfilling work</title>
@@ -675,7 +608,7 @@ I've never met them, but I've seen them around a bit, and I know the daughter ca
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-01-26-19:35.html</id>
     <title>The kindness of strangers</title>
-    <updated>2022-01-26T19:35:00+00:00</updated>
+    <updated>2022-01-26T21:21:24+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;The kindness of strangers&lt;/p&gt;
@@ -763,5 +696,54 @@ I've never met them, but I've seen them around a bit, and I know the daughter ca
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2022-01-26-19:35.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2022-01-27-18:13.html</id>
+    <title>Irritation and fascination</title>
+    <updated>2022-01-27T18:13:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Irritation and fascination&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2022-01-27&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I was talking to &lt;a href="https://twitter.com/drossbucket"&gt;Lucy&lt;/a&gt; the other day about the book &lt;a href="https://vajrayananow.com/spectrum-of-ecstasy"&gt;spectrums of ecstacy&lt;/a&gt;,
+and she mentioned the concept from it that "anger is distorted clarity".&lt;/p&gt;
+
+
+&lt;p&gt;I found this puzzling, but am not going to do anything ridiculous like actually read the book to find out what they mean, so instead I'm going to riff irresponsibly off the idea.&lt;/p&gt;
+
+
+&lt;p&gt;(I may read the book to find out what they mean later)&lt;/p&gt;
+
+
+&lt;p&gt;It's not entirely in line with my experience in that anger certainly doesn't seem like to comes with clear &lt;em&gt;thinking&lt;/em&gt;, but what I eventually decided was that anger is a form of clarity of purpose. Anger draws a straight line from where you are, to where you want to be. It is a form of value clarity that is not easily accessible in the real world - a straightforward desire to win.&lt;/p&gt;
+
+
+&lt;p&gt;I've definitely found this while writing sometimes. There are a lot of things I write because I am annoyed that they don't exist for example. Sometimes I'm even straightforwardly angry that they exist, usually &lt;a href="https://notebook.drmaciver.com/posts/2022-01-13-04:16.html"&gt;on behalf of my past self&lt;/a&gt; who needed them.&lt;/p&gt;
+
+
+&lt;p&gt;Fascination is another thing that feels a bit like a line pulling you in a coherent direction. When I have a problem to work on, my thoughts drift towards it of their own accord. There's a problem to solve, and trying to avoid solving it is &lt;a href="https://notebook.drmaciver.com/posts/2022-01-25-07:18.html"&gt;like resisting temptation&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;But, in fact, I don't know that this isn't just another form of anger again. It's certainly &lt;em&gt;irritation&lt;/em&gt;. Often the thing that draws me to a problem is that it's a worthy opponent, and that I want to defeat it. I think this is part of the appeal of &lt;a href="https://notebook.drmaciver.com/posts/2022-01-21-16:38.html"&gt;problems that you can't run out of&lt;/a&gt; - you can challenge them again, and again, honing your strength against the impossible.&lt;/p&gt;
+
+
+&lt;p&gt;Fascination and irritation definitely feel similar in many regards. If you watch me playing a hard level on Celeste, you'll see me scream in rage and frustration a lot, followed by jubilation when I win.
+It's precisely this dynamic where the thing that drives me forward is a furious desire to defeat the mountain.&lt;/p&gt;
+
+
+&lt;p&gt;It's what I'm seeing with my current efforts with automated Wordle solving too. There's a core irritation with the problem. It has challenged me, and I must defeat it.&lt;/p&gt;
+
+
+&lt;p&gt;&lt;a href="https://notebook.drmaciver.com/posts/2022-01-03-14:16.html"&gt;I wondered where the curiosity went&lt;/a&gt;, and maybe this is it. I used to be a very angry person, and this had its problems for sure, but I have not been kind to the angry parts of me, and maybe when they hid they took my ability to be truly interested in things. Perhaps there is a burning furious fascination required to drive you forward to the efforts required to truly invest yourself in a project. If so, I need to find a way to rekindle that.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2022-01-27-18:13.html" rel="alternate"/>
   </entry>
 </feed>
