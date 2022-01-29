@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2022-01-27T19:02:55+00:00</updated>
+  <updated>2022-01-29T16:02:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,93 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2022-01-17-09:08.html</id>
-    <title>Fulfilling work</title>
-    <updated>2022-01-17T10:31:45+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Fulfilling work&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2022-01-17&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;It's &lt;a href="https://quoteinvestigator.com/2013/04/23/good-idea/"&gt;almost certainly apocryphal&lt;/a&gt;, but there's a supposed quote by Gandhi that goes as follows:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Journalist: What do you think of Western civilization?&lt;/p&gt;
-&lt;p&gt;Gandhi: I think it would be a good idea.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;Anyway, this is what I feel about the enobling power of work.&lt;/p&gt;
-
-
-&lt;p&gt;There's a thing I've noticed on and off which is that people who have never worked, in some generalisable sense, are &lt;em&gt;weird&lt;/em&gt;, in a way that I do not intend to be as complimentary as I often do when I describe someone as weird.&lt;/p&gt;
-
-
-&lt;p&gt;I don't necessarily mean "had a proper job", and there's all sorts of other things that count as "work" in my book here. My central example of someone like this is not someone on unemployment benefits, but a trust fund kid. People who are rich enough that their life hasn't ever really required them to work for things. They may still have had a hard life in other ways, and I'm sure they have myriad &lt;a href="https://notebook.drmaciver.com/posts/2020-07-15-09:33.html"&gt;nice problems to have&lt;/a&gt;, but there's something that feels very dysfunctional about them - a sort of purposelessness and failure to engage with the actual reality of the world, or their relations with other people, because they have never really had to test themselves against the former and have always had the resources to avoid relying on the latter.&lt;/p&gt;
-
-
-&lt;p&gt;This is a problem that, to some degree, I can relate to, and feel like I'm struggling with a bit myself. To the degree that I have not fallen into this trap, my history of actually working seems to be a large chunk of the character I rely on to avoid it.&lt;/p&gt;
-
-
-&lt;p&gt;I've not really had a "proper" job for the last 6 years - I've had projects, and I tried doing a PhD, and I've picked up freelance work on and off (which I'm properly taking seriously now so will be more on than it has been), so it's not like I've been idle or had no money coming in, but it's definitely felt more like being a NEET than like being in employment.&lt;/p&gt;
-
-
-&lt;p&gt;And there are aspects of employemnt I miss a great deal, even if there are other aspects that I do not miss at all.&lt;/p&gt;
-
-
-&lt;p&gt;To me it feels like there's some sort of central human experience which has all of the following components:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;A group of people, working together on a problem.&lt;/li&gt;
-&lt;li&gt;The problem has an actual (even if small) impact on the world.&lt;/li&gt;
-&lt;li&gt;The problem is difficult and without working hard on it they will fail.&lt;/li&gt;
-&lt;li&gt;All (or most) of the people in the group actually care about the problem and want to succeed.&lt;/li&gt;
-&lt;li&gt;No member of the group could succeed at the problem on their own.&lt;/li&gt;
-&lt;li&gt;Each member of the group is an active participant in the process, and the end result depends on how well they fulfill their role.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;Possibly this list isn't sufficient, but it all seems necessary to be an example of the thing I'm pointing to, which one might as well call something like "fulfilling work".&lt;/p&gt;
-
-
-&lt;p&gt;For me the optimal examples of such things are research and development, but they don't have to be. Renovating a house or working in a garden, for example. Hosting an event to some degree counts (it depends a lot on the event - certainly running something like a conference does. Throwing a party seems to be lacking something, probably the impact aspect).&lt;/p&gt;
-
-
-&lt;p&gt;I think many people have roughly zero experiences like this in their life, but their job is the thing that comes closest. Some people even have this in their jobs, although I think it's not the norm.&lt;/p&gt;
-
-
-&lt;p&gt;Certainly, jobs being fulfilling work is not my experience - my jobs have all failed on (4), in that I think roughly nothing I have ever been paid to work on as a software developer has felt like something I cared about for its own sake. Some have reached the heady heights of "Oh yes I guess that might be good to exist", some of them have been intellectually neat problems to work on (which I then reluctantly went and worked on the boring engineering they obviously actually needed rather than the neat problems they hired me for), but none of them have been things I would have considered worth my effort if, well, they weren't paying me a lot of money for it.&lt;/p&gt;
-
-
-&lt;p&gt;It was also a bit lacking in (6) - generally the end result wasn't bottlenecked on how well I fulfilled my role because the nature of working at startups is that the thing that will kill you is whether or not the people with power are competent to run a company and choose a product direction. Spoiler: They usually aren't.&lt;/p&gt;
-
-
-&lt;p&gt;It does, however, have all of the other characteristics, to a much larger degree than really anything else in my life.&lt;/p&gt;
-
-
-&lt;p&gt;(Hypothesis is a close second, but I sortof failed at working on it around the point it was starting to become truly collaborative, for unrelated reasons)&lt;/p&gt;
-
-
-&lt;p&gt;&lt;a href="https://notebook.drmaciver.com/posts/2022-01-16-08:40.html"&gt;Yesterday's post&lt;/a&gt; was partly me coming to terms with the fact that hobbies and personal interests &lt;em&gt;also&lt;/em&gt; don't fill this role, and the other people are a necessary part of it.&lt;/p&gt;
-
-
-&lt;p&gt;There's a lot of discourse that one could handwavily frame as "work vs leisure". Obviously you need both and the strawman versions of both of these positions are idiots, but I feel like the thing that is missing from both the pro and anti work discourse is that the sort of work you need is not just any work but &lt;em&gt;fulfilling&lt;/em&gt; work, and that much of what people experience at work is a cruel caricature of that experience.&lt;/p&gt;
-
-
-&lt;p&gt;And I do think that we need something of this nature, not just leisure. People create themselves in concern with other people, and test themselves against reality, and this sort of shared project that actually matters is our best tool for doing so.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2022-01-17-09:08.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-01-18-13:15.html</id>
     <title>Difficulty finishing things</title>
@@ -700,7 +613,7 @@ I've never met them, but I've seen them around a bit, and I know the daughter ca
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-01-27-18:13.html</id>
     <title>Irritation and fascination</title>
-    <updated>2022-01-27T19:02:55+00:00</updated>
+    <updated>2022-01-27T22:05:46+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Irritation and fascination&lt;/p&gt;
@@ -745,5 +658,66 @@ It's precisely this dynamic where the thing that drives me forward is a furious 
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2022-01-27-18:13.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2022-01-29-16:02.html</id>
+    <title>Learning and teaching</title>
+    <updated>2022-01-29T16:02:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Learning and teaching&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2022-01-29&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;As far as the fox vs hedgehog split goes, I'm thoroughly on the fox side. Nevertheless, I often find it interesting to think about what my big idea would be if I had a big idea.&lt;/p&gt;
+
+
+&lt;p&gt;The one &lt;a href="https://twitter.com/DRMacIver/status/1380094274373611521"&gt;I've suggested before&lt;/a&gt; is:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;If you have a problem, you should look into what people who have had similar problems do, and learn from that.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;I think this is the right idea, but maybe it goes deeper than that. It's something more like... the skilled practice of learning from each other underpins everything.&lt;/p&gt;
+
+
+&lt;p&gt;And I think most people are shockingly bad at it. It's mostly not their fault, we don't give people the opportunity to be good at it, and we don't teach them to be good at it.&lt;/p&gt;
+
+
+&lt;p&gt;I think it starts not with being bad at learning from others, but with being bad at helping others learn. If you're in an environment where there are very few good learning opportunities, such as a school, you've got very few chances to actually learn to learn, because you essentially start on hard mode. Skill development requires you to try to learn things that are &lt;em&gt;slightly&lt;/em&gt; outside of your comfort zone, and most of us aren't so much thrown into the deep end as set to paddle with the sharks.&lt;/p&gt;
+
+
+&lt;p&gt;One reason why why we're bad at it is that the things that we most need to learn afrom each other are ones that it's very hard to talk about. The piece of mine that is currently going aggressively viral, &lt;a href="https://drmaciver.substack.com/p/people-dont-work-as-much-as-you-think"&gt;People don't work as much as you think&lt;/a&gt; is not particularly good - I dashed it out in about an hour while half asleep - but it is &lt;em&gt;so&lt;/em&gt; valuable to (some) people because I'm telling them things that nobody else has. People tend not to talk about this publicly because they're ashamed, embarrassed, or scared to do so, and so a valuable learning opportunity is lost, and everyone is left needlessly in the dark and stressed out.&lt;/p&gt;
+
+
+&lt;p&gt;Another reason is that most things are just very badly explained. &lt;a href="https://www.drmaciver.com/2018/10/how-to-explain-anything-to-anyone/"&gt;I don't think explanation is that hard&lt;/a&gt;, but most people never really learn to do this. They assume concepts the other person doesn't have, they fail to use examples, they forget what they're trying to explain. It's all easy to do if you've not practiced explanation. They're also often wrong - there's the classic problem that if you ask someone who never had to explicitly learn a social norm works (e.g. because they grew up with it and are neurotypical), they'll probably give you a helpful, clear, and utterly wrong explanation because that's not how their knowledge of it works.&lt;/p&gt;
+
+
+&lt;p&gt;The combination results in a fairly hostile environment for learning, and I think most people go around confused about major aspects of their lives. Certainly I'm sure I do (I have in the past, and I have no reason to believe I have recently figured out the final pieces).&lt;/p&gt;
+
+
+&lt;p&gt;What's the solution? Well, sadly there probably isn't a singular and straightforward one.&lt;/p&gt;
+
+
+&lt;p&gt;You can read more, and I encourage it, both books and people on the internet. You can watch other people on YouTube, TikTok, etc. In general I'd recommend learning from people with more niche followings - the big names are (or can be) worth listening to, but people who have similar experiences to you and have learned a different piece of how to navigate them are where the really useful information is at.&lt;/p&gt;
+
+
+&lt;p&gt;It's also worth learning to communicate better, and I think the best possible place to start with that for this problem is to explain your own experiences. Be the person who has similar experiences for others.&lt;/p&gt;
+
+
+&lt;p&gt;I'm a big fan of people writing more openly and honestly about their lives like I've been doing recently. Maybe under a pseudonym or a Twitter alt, but telling people about the problems you face helps them realise it's not just them, and when they respond or &lt;a href="https://notebook.drmaciver.com/posts/2022-01-26-19:35.html"&gt;when they pay it forward&lt;/a&gt; and talk about something else, maybe you'll get to realise it's not just you either, and you can compare notes.&lt;/p&gt;
+
+
+&lt;p&gt;As well as writing in public, I'm a big fan of private one-on-one communication with trusted friends. Talk about your problems with your friends, learn from them, and generally try to figure out the world together. Maybe eventually we'll start to make sense of it.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2022-01-29-16:02.html" rel="alternate"/>
   </entry>
 </feed>
