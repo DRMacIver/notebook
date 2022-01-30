@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2022-01-29T16:02:00+00:00</updated>
+  <updated>2022-01-30T14:55:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,72 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2022-01-18-13:15.html</id>
-    <title>Difficulty finishing things</title>
-    <updated>2022-01-18T14:11:39+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Difficulty finishing things&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2022-01-18&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;There's a psychological quirk of mine that I've never really got to the bottom of. I've occasionally noticed it in others, and I wonder how common it is.&lt;/p&gt;
-
-
-&lt;p&gt;It's this: Some part of me clearly rebels at finishing things.&lt;/p&gt;
-
-
-&lt;p&gt;This isn't slacking. I do also slack on some things, granted, but that's not what I mean. I mean I do something like 90-99% of the work and then just... stop. I don't want to take the final step and complete it.&lt;/p&gt;
-
-
-&lt;p&gt;This shows up across a variety of areas. I'm not quite sure what the common thread is - there needs to be some sense in which it's a "task", but it happens for both enjoyable ones and unenjoyable ones.&lt;/p&gt;
-
-
-&lt;p&gt;A trivial example of this is that often I'll fail to wash up everything. I'll do almost all of it but I'll leave one or two items on the side because I can't be bothered to do those right now.&lt;/p&gt;
-
-
-&lt;p&gt;It also shows up on large writing projects - I'm the worst at large writing projects. I know I write a lot, but virtually all my successful writing happens in one sitting.&lt;/p&gt;
-
-
-&lt;p&gt;Games, too. There are a number of games I've played something like 90% of the game and then "got bored of". Sometimes this is because the game got too hard towards the end, but I don't think that's all of it. I definitely stopped playing before I plateaued.&lt;/p&gt;
-
-
-&lt;p&gt;I've also noticed this in what projects I'm attracted to. I really like problems where it's impossible to solve them optimally and there is always room for improvement. I still stop before the end, of course, but that's now because there is no end. My recent adventures in Wordle solving are an example of this.&lt;/p&gt;
-
-
-&lt;p&gt;Some things the source of the aversion to finishing is pretty clear: If I finish the project, I have to act on it. If I finish writing a paper, I have to go through the publication process. If I finish a blog post or newsletter issue I've spent ages on, I have to deal with the fact that it might not succeed, etc.&lt;/p&gt;
-
-
-&lt;p&gt;But this doesn't actually feel like a central example of the problem. As I've shown every day this month, it's not that hard for me to publish writing for the public. I do sometimes procrastinate a little on finishing it, but not much.&lt;/p&gt;
-
-
-&lt;p&gt;It feels like this is because the action of writing it is atomic in some way - the writing I do is generally something that is short enough that I can do it in one sitting (although I do often take breaks) and so it's just "one" task. The things that are hard to finish are composite, often done over many sittings.&lt;/p&gt;
-
-
-&lt;p&gt;Why does this happen? I honestly don't know. The best I can describe it is that there's a sort of ugh reaction as the finish approaches. It feels a bit like being tired of the task, but as I've noted before, I think tiredness responses like this are often fake.&lt;/p&gt;
-
-
-&lt;p&gt;Maybe this is a difficulty with transitions. The sharp end of a task is something to fear, in a way that a gradual drifting away from it is not.&lt;/p&gt;
-
-
-&lt;p&gt;I wonder if there's something comforting to a part of me about an unfinished task. As long as there are things to do, I don't have to confront &lt;a href="https://notebook.drmaciver.com/posts/2022-01-08-08:36.html"&gt;the real choice of what I do next&lt;/a&gt;. I'm always able, in principle, to return to an unfinished task, and that anchors me against having to make broader and scarier choices.
-I don't return of course. That would require finishing them, and abandoning the comfort of having something concrete to do.&lt;/p&gt;
-
-
-&lt;p&gt;I don't really know if this is it though. There's a sharp and unpleasant feeling to the idea of a completion that I can't really articulate at the moment, and whatever the reason the result is myriad unfinished and half-completed tasks around me at any given time.&lt;/p&gt;
-
-
-&lt;p&gt;All I really know is what I said at the beginning: Some part of me rebels at the notion of completing a task. I can feel it even now - it's insisting that I shouldn't publish this piece until I've got to the bottom of why. I shall resist its demands.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2022-01-18-13:15.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-01-19-16:42.html</id>
     <title>The usefulness of things you don't use</title>
@@ -662,7 +596,7 @@ It's precisely this dynamic where the thing that drives me forward is a furious 
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-01-29-16:02.html</id>
     <title>Learning and teaching</title>
-    <updated>2022-01-29T16:02:00+00:00</updated>
+    <updated>2022-01-29T17:22:57+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Learning and teaching&lt;/p&gt;
@@ -719,5 +653,63 @@ It's precisely this dynamic where the thing that drives me forward is a furious 
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2022-01-29-16:02.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2022-01-30-14:55.html</id>
+    <title>Ladders between communities</title>
+    <updated>2022-01-30T14:55:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Ladders between communities&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2022-01-30&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Today I had to do something that if you had asked me to do it a few years ago, I would probably have faked my death and run away to a foreign country.
+Specifically, I had to tell someone that they hadn't broken any rules, but we were collectively finding their presence extremely unpleasant, and they should leave now.
+I did chicken out and use the communal we, and I had gathered some basic consensus first, but it was ultimately my decision.&lt;/p&gt;
+
+
+&lt;p&gt;I don't think the person I asked to leave was a bad person. At worst clumsy and clueless. But I think that letting him stay would have made the community drastically worse, and I'm glad I've become a person who can make this kind of call, especially as I've seen multiple communities fail through not making similar calls. If you've got someone who dominates a community and everyone else finds vaguely unpleasant, the community gradually drifts away unless you can foreground the conflict. Unless a community has some central organising shared purpose and resources, which many modern communities lack, it's very hard to hold it together.&lt;/p&gt;
+
+
+&lt;p&gt;A lot of this is conflict aversion in the community members. I don't think this is a universal at all, it's a function of my particular demographic of weird vaguely traumatised nerds who can't handle social conflict. It's not &lt;em&gt;unique&lt;/em&gt; to us by any stretch, but I think we have this at a lower threshold. The same dynamic that allows people to behave badly without modifying their behaviour also tends to be the community members being conflict averse enough to find their presence too unpleasant to endure.&lt;/p&gt;
+
+
+&lt;p&gt;I want to be clear: I don't think the person I kicked out was a bad person. For my part, they seemed mostly fine. I didn't enjoy their presence either but I'd have been fine to put with it, and I expect on a one-on-one basis I'd have had a perfectly reasonable conversation with them and everything would have been fine.&lt;/p&gt;
+
+
+&lt;p&gt;But I do think leaving them in would have wrecked our community, which is why I took action. I hope they find a community better suited to them.&lt;/p&gt;
+
+
+&lt;p&gt;The problem is, fundamentally, that their presence makes the rest of the community unable to function. It was, for lack of a better term, a failure of culture fit. The gap between how they expected to behave in a community and the way the community needs to function was too large - we didn't think they were able to learn to be one of us, and we didn't think we would be able to be us if they didn't.&lt;/p&gt;
+
+
+&lt;p&gt;Communities are like this. I've got into a big fight in the past because someone was trying to argue that communities should have clear and transparent purposes and anyone aligned with that purpose should be welcome. This is, bluntly, a fucking terrible idea, and can only be held by someone who has never run or experienced a functioning community. Communities have to function first and foremost as communities, and this requires either a certain level of cultural and interpersonal alignment, or they fail.&lt;/p&gt;
+
+
+&lt;p&gt;I've talked in the past about &lt;a href="https://notebook.drmaciver.com/posts/2020-05-31-09:20.html"&gt;Norms of Excellence&lt;/a&gt;, and I try to run my discord broadly on these principles, but I think this incident demonstrates something missing: One of the most important norms of excellence is being able to say "I'm sorry, this is not the community for you". Excellence is sought among people with enough shared context and similar problems and skills to help each other out, and having to constantly include people who are absolutely not ready for that doesn't help those people while also wrecking your current ability to progress.&lt;/p&gt;
+
+
+&lt;p&gt;But I still hope those other people find their own communities of excellence, and this makes it even more important to figure out how to build such communities, because a small number of communities can't really support a wide variety of people. At least, not without subdividing those communities and essentially forming a community of communities.&lt;/p&gt;
+
+
+&lt;p&gt;There's a term of art I use, "communities of last resort", which basically means communities that will take anyone as long as they can put up with the community. I have in mind places like 4chan, and some of the other forums of that ilk. They're not good places, but for people who need a community of people who understand them, they're often the only option, and they're often surprisingly valuable. I definitely know people for whom 4chan was a positive and formative experience, and many others even more so.&lt;/p&gt;
+
+
+&lt;p&gt;I think what we often need is ladders out of these communities, and people who are from communities in "the next level up" to help people out. Less Wrong has served as this for a lot of people - many people find Less Wrong hugely life improving, partly because they come from a 4chan or Something Awful background, and this is the next community up from that for them and is willing to both tolerate their initial undersocialisation and help them improve their life.&lt;/p&gt;
+
+
+&lt;p&gt;There isn't really a strict hierarchy of communities like the ladder metaphor imples - often there are multiple communities where membership in either doesn't imply you're ready to be in the other - but I think the most important part of it is that when someone isn't ready to be in a community, there should be other communities to help them be ready.&lt;/p&gt;
+
+
+&lt;p&gt;Of course there often... aren't. The very idea seems impossibly utopian, with our current paucity of communities and lack of explicit support for this sort of personal development. But I can dream.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2022-01-30-14:55.html" rel="alternate"/>
   </entry>
 </feed>
