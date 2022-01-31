@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2022-01-30T14:55:00+00:00</updated>
+  <updated>2022-01-31T14:38:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,85 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2022-01-19-16:42.html</id>
-    <title>The usefulness of things you don't use</title>
-    <updated>2022-01-19T17:22:29+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;The usefulness of things you don't use&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2022-01-19&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Right before writing this post, I took the recycling down to the recycling bins.&lt;/p&gt;
-
-
-&lt;p&gt;Wait, sorry, that doesn't quite convey the right significance.&lt;/p&gt;
-
-
-&lt;p&gt;Right before writing this post, I took the recycling down to the recycling bins &lt;em&gt;for the first time in a month&lt;/em&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;This is stupid, I know it's stupid. But I really procrastinate on taking down the recycling a lot. I've tried various systems, and they often work for a time, but basically taking the recycling down is just &lt;em&gt;slightly&lt;/em&gt; too annoying. I don't particularly like going down to the basement car park where the bins are in the first place, and then on top of that sorting the recycling into the different bins for it is just quite fiddly. The whole thing takes about 10-15 minutes tops unless I've &lt;em&gt;really&lt;/em&gt; let it build up (which absolutely happens), and isn't objectively that bad, but inevitably it's always a task that is easier to leave to later than to do now.&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, the thing that got me take the recycling down is that I've implemented a new productivity system.&lt;/p&gt;
-
-
-&lt;p&gt;Wait, no, don't go! I promise the bit about the productivity system will be really short.&lt;/p&gt;
-
-
-&lt;p&gt;The new system is actually &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-11:33.html"&gt;an old system&lt;/a&gt; with a twist. The old system is just a simple daily list of things it would be useful for me to do today, which gets shredded without rollover at the end of the day (or, more typically, the beginning of the next day when I remember). I call them day plans. Day plans are very good for me, and I often remember that for weeks at a time and then stop using them. The twist is that I read &lt;a href="https://slimemoldtimemold.com/2022/01/18/todos-from-paper-systems"&gt;Slime Mold Time Mold's post about TODO systems&lt;/a&gt; earlier and I really liked their point about systems which create pride in your use of them, and the calendar with crossed out days looks perfect, so now I've got a calendar up on my fridge which I cross out days that I've used a day plan. This is day one, so that part isn't really relevant except in the sense that this is the first day I've done a day plan for in months.&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, the interesting thing about taking the recycling down is that the thought process that lead to me taking the recycling down is that I was just coming back from a walk and I had the following sequence of thoughts:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;While I have my shoes on I should take the recycling down.&lt;/li&gt;
-&lt;li&gt;I guess I'll add that to the day plan.&lt;/li&gt;
-&lt;li&gt;...&lt;/li&gt;
-&lt;li&gt;Or I could just take the recycling down?&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;So in fact I did this without actually using the day plan system.&lt;/p&gt;
-
-
-&lt;p&gt;Does this mean that I didn't need the day plan? No, I don't think so. The day plan was very useful for this, despite not being used for it, because its existence turns the problem of putting off taking the recycling down from one that I can't solve into one that I can. I've talked about such things as &lt;a href="https://notebook.drmaciver.com/posts/2020-03-05-11:27.html"&gt;existence proofs&lt;/a&gt; before - they let you conclude that a solution exists, now all you need to do is figure out what a good enough solution looks like.&lt;/p&gt;
-
-
-&lt;p&gt;In this case the solution was "just do it", but sometimes you do actually need to figure out an alternative solution. An example of this for me recently is sleeping pills. I've talked about &lt;a href="https://notebook.drmaciver.com/posts/2022-01-04-14:48.html"&gt;my recent problems with sleeping due to anxiety at night&lt;/a&gt;. One of my solutions to this is drugs. Initially the doctor prescribed some drowsy antihistamines, because they don't like to prescribe the good drugs because they're addictive. I decided it was better not to argue and just took the prescription, and hated them about as much as I expected - I feel &lt;em&gt;awful&lt;/em&gt; the next day.&lt;/p&gt;
-
-
-&lt;p&gt;Yesterday I had another conversation with a GP where I asked for some better sleeping pills. He explained that they don't like to prescribe those because you really shouldn't take them every night due to the addictive nature. I, in turn, explained that god I didn't want to take them every night. Ideally I'd &lt;em&gt;never&lt;/em&gt; take them, and that having them beside my bed and never taking them was really the optimal use of sleeping pills in my view.&lt;/p&gt;
-
-
-&lt;p&gt;See, the worst thing about anxiety at night is that it very easily escalates. If you're feeling slightly anxious it very easily turns into "oh no is this going to be another of &lt;em&gt;those&lt;/em&gt; nights again? I really don't want to be awake all night, that would be awful" etc. This rapidly turns into a much greater level of anxiety.&lt;/p&gt;
-
-
-&lt;p&gt;In contrast, if there are some sleeping pills next to the bed, the problem is solved. I've put a cap on how bad it can get, because the answer is just that it can get bad enough that I have to take a sleeping pill, and that's not that bad. The problem with the drowsy antihistamines is that it &lt;em&gt;is&lt;/em&gt; that bad to take them because the next day is going to suck.&lt;/p&gt;
-
-
-&lt;p&gt;As well as curbing the initial anxiety loop, this also opens up the opportunity to experiment more with other solutions. Get out of bed and have a chamomile tea, put on a Slay the Spire video, read for a little bit longer and try again, etc. A problem that you can guarantee is solved is one you can experiment with, because it lacks the sense of sense of desperation that surrounds a problem that is urgent, important, and possibly unsolvable.&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, the GP was very relieved to hear me say this and prescribed me some better sleeping pills (I've not actually picked them up yet though).&lt;/p&gt;
-
-
-&lt;p&gt;A third example relevant to me today is that I have an absolute rule that I don't have to write anything I don't feel comfortable writing. This month has mostly been &lt;a href="https://notebook.drmaciver.com/posts/2022-01-01-13:23.html"&gt;writing from the heart&lt;/a&gt;, and the process for that is that I rummage around and find something that feels important to write about, and then write about it. Or I safeword out - if the thing that feels important to write about is something where I go "No, absolutely not", I don't, I can just write something else. That happened today, but it hasn't otherwise happened. On the other hand, many of the topics I've written about probably wouldn't have felt safe to write about if I didn't have that out available to me. This is essentially a variant of &lt;a href="https://drmaciver.substack.com/p/believing-that-you-can-stop"&gt;Believing that you can stop&lt;/a&gt; - the ability to stop helps ensure that you don't have to.&lt;/p&gt;
-
-
-&lt;p&gt;I think this sort of situation is very common, and often results in critical things that look like slack getting cut. If I can get things done without the day plan, I don't need the day plan, right? If I can get to sleep without taking a sleeping pill, why do I need the sleeping pills? As a result, often you get rid of the thing you weren't using, and then are suprised when everything gets worse, because what the thing was doing for you was providing you with the ability to not need it.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2022-01-19-16:42.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-01-21-16:38.html</id>
     <title>Projects that you can't run out of</title>
@@ -657,7 +578,7 @@ It's precisely this dynamic where the thing that drives me forward is a furious 
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-01-30-14:55.html</id>
     <title>Ladders between communities</title>
-    <updated>2022-01-30T14:55:00+00:00</updated>
+    <updated>2022-01-30T17:15:21+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Ladders between communities&lt;/p&gt;
@@ -711,5 +632,160 @@ I did chicken out and use the communal we, and I had gathered some basic consens
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2022-01-30-14:55.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2022-01-31-14:38.html</id>
+    <title>Soul death</title>
+    <updated>2022-01-31T14:38:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Soul death&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2022-01-31&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Slight content warning: If internal family systems and other parts work is load bearing for you, and if I am right, there is a small possibility that this post contains information that will make your life actively worse, especially in the short term while you integrate it.&lt;/p&gt;
+
+
+&lt;p&gt;It's probably fine, and I'm currently hoping that this thought process is helpful (as I certainly can't unthink it), this is just a heads up. Proceed with caution.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, &lt;a href="https://twitter.com/the_wilderless/status/1456619189171638276"&gt;let me show you a hilarious tweet from the_wilderless&lt;/a&gt;:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;IFS people: how do I hunt this part down, slaughter it, and leave its carcass as an example to the others?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;The tweet itself is funny, but what's really funny about the tweet is the number of people in the replies clearly failing to recognise that it's a joke, and sounding really quite distressed about the very suggestion.&lt;/p&gt;
+
+
+&lt;p&gt;(Yes I'm laughing at distressed people, several of whom are my friends. I shall nevertheless regard the part of me that is a dick with unconditional love and compassion)&lt;/p&gt;
+
+
+&lt;p&gt;A lot of this reaction is much more funny-interesting than funny-ha-ha. This tweet is &lt;em&gt;obviously&lt;/em&gt; a joke, right? And yet people don't get this. It's not that they're responding to it as if it was a bad joke, they're responding to it as if it was not a joke at all. That's interesting, right?&lt;/p&gt;
+
+
+&lt;p&gt;I like Johnathan Morreall's theories of humour, from his book Comic Relief, in which he describes the characteristic features of humour as:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;The basic pattern [of humour] is that:
+1. We experience a cognitive shift – a rapid change in our perceptions or thoughts.
+2. We are in a play mode rather than a serious mode, disengaged from conceptual and practical concerns.
+3. Instead of responding to the cognitive shift with shock, confusion, puzzlement, fear, anger, or other negative emotions, we enjoy it.
+4. Our pleasure at the cognitive shift is expressed in laughter, which signals to others that they can relax and play too.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;Earlier in the book he discusses False Alarm laughter:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;To see what might have been involved in this disengaged mental processing, and how it might have benefited early humans, imagine the following scenario. A band of early humans is walking across the savanna, when they spot a lion in the clearing ahead. They freeze in their tracks for a moment, but then they see that the lion is feasting on a zebra and doesn’t even look up at them. With the sudden realization that the lion is not a threat, they laugh, signaling to each other “We’re safe. We can enjoy this.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;Humour requires something like this realisation: "We're safe. We can enjoy this."&lt;/p&gt;
+
+
+&lt;p&gt;So perhaps something about the wilderless's joke makes these respondents feel unsafe. That's interesting, right?&lt;/p&gt;
+
+
+&lt;p&gt;Consider another fictitious scenario. Suppose someone who you distrust and know could really genuinely hurt you makes a "joke" about hurting you. Do you think you would be able to interpret it as anything other than a threat?&lt;/p&gt;
+
+
+&lt;p&gt;I propose one possible explanation for why people reacted so badly to this tweet: They contain two parts, one of which would absolutely hunt down the other, slaughter it, and leave its carcass as an example to the others, and the other part very much knows this.&lt;/p&gt;
+
+
+&lt;p&gt;A core principle of IFS and other parts work is that you can't actually murder parts. You can treat them badly, you can suppress them, you can ignore them, but you don't actually have the ability to cut off a part of yourself and kill it.&lt;/p&gt;
+
+
+&lt;p&gt;Perhaps this is even true, but I can't help but notice that it's a very convenient belief to hold. Without it, doing IFS is like doing group therapy for a bunch of people all of whom are openly carrying firearms, and several of them are looking mighty twitchy. With it, the therapy environment isn't exactly &lt;em&gt;safe&lt;/em&gt;, but it's boundedly dangerous. You can hurt each other with angry words and feelings, but you're ultimately all in this together and stuck with each other.&lt;/p&gt;
+
+
+&lt;p&gt;As soon as the possibility of soul murder, where one part of you kills another, is on the table, it becomes very hard to create an environment in which healing is possible. You have to be able to tell parts that they are safe, and it is much easier to tell a part that it is &lt;em&gt;intrinsically&lt;/em&gt; safe because you &lt;em&gt;can't&lt;/em&gt; kill it, than it is to convince it that you could absolutely kill it if you wanted to and also some part of you wants to and also you won't because you love it honest.&lt;/p&gt;
+
+
+&lt;p&gt;This is particularly true with &lt;a href="https://notebook.drmaciver.com/posts/2021-11-12-10:11.html"&gt;the sort of part I've previously described as a prisoner&lt;/a&gt;:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Anyway, here's the problem with this: Not all parts of you that are kept away from the world are exiles, some of them are prisoners, and they hate you, and they have every right to do so.&lt;/p&gt;
+&lt;p&gt;The distinction between an exile and a prisoner is this: An exile keeps apart from the world out of fear, a prisoner is kept apart from the world out of shame. A protector would let the exile out if the exile wanted to come out, a guard knows the prisoner wants to come out, that's the problem.&lt;/p&gt;
+&lt;p&gt;A prisoner corresponds much more closely to the Jungian model of shadows: You have rejected a part of yourself, and locked it in the darkness, where it has become monstrous.&lt;/p&gt;
+&lt;p&gt;But really, it's not a monster at all, you've just done it a great injustice by imprisoning it, and it hates you for it.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;Can you possibly trust someone who is armed, dangerous, and has previously harmed you that they're not going to use their power and murder you?&lt;/p&gt;
+
+
+&lt;p&gt;Note that all of this is true &lt;em&gt;even if&lt;/em&gt; soul murder is impossible. What we're seeing here is not necessarily that people have a false belief, but that they have a belief that they are &lt;em&gt;very&lt;/em&gt; motivated to need it to be true. Even asking the question of whether soul murder is possible is very dangerous, because your entire practice rests on the parts you work with believing that it is not in order to feel safe enough to engage.&lt;/p&gt;
+
+
+&lt;p&gt;The additional problem is that I don't believe that soul murder is impossible. I think it is likely that it's entirely possible, it's just that people are doing it wrong. You don't murder a part through violence, you murder it by persuading it to kill itself.&lt;/p&gt;
+
+
+&lt;p&gt;One of the themes I've been trying to work with recently is  that of &lt;a href="https://notebook.drmaciver.com/posts/2022-01-22-17:13.html"&gt;holding myself too tightly&lt;/a&gt;. What is that part of me that does it best to maintain a calm reserve, refusing to let me engage with the world freely and joyously? It seems remarkably unwilling to budge on this. Why?&lt;/p&gt;
+
+
+&lt;p&gt;One key aspect of it is that it feels like budging is irreversible. Like if I release, I won't be able to pull myself back together. If I &lt;a href="https://notebook.drmaciver.com/posts/2022-01-23-13:27.html"&gt;acknowledge the pain of the world&lt;/a&gt; I will no longer be able to shut it out.&lt;/p&gt;
+
+
+&lt;p&gt;But when I try to access what that feels like from the part's point of view, the core feeling is something closer to this: "AAAAAAH I WILL DIE".&lt;/p&gt;
+
+
+&lt;p&gt;To which another part of me has only this to say: "Good".&lt;/p&gt;
+
+
+&lt;p&gt;On more sophisticated reflection, I do not endorse that this would be wholly good. This reserve has served me well in many regards, it has a genuine protective function. It is there to help me, and I appreciate it. I do not want it to go away and die. I wish to ritually sacrifice it, consume its flesh, and take its power for my own.&lt;/p&gt;
+
+
+&lt;p&gt;Needless to say, this metaphor is not wholly helpful for getting the part on side with this plan.&lt;/p&gt;
+
+
+&lt;p&gt;In my prisoners post I said:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;This is where I hope I'm right about parts not being fully real, and are more like stable patterns in the self that serve a well defined purpose, waves that exist as part of a greater ocean. If you give a part the room and support it needs to grow, perhaps at some point it decides that its task is done, and it's ready for the wave to become the ocean again.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;I've explained "parts not being fully real" thing in &lt;a href="https://notebook.drmaciver.com/posts/2021-11-15-18:31.html"&gt;My conception of parts work&lt;/a&gt;. A part is a stuck mode of being, and the goal of parts work is to be able to get them unstuck, to allow them to stop holding themselves too tightly and fluidly reintegrate into your broader whole. The boundary of the part dissolves, and the wave becomes the ocean again. The part has died.&lt;/p&gt;
+
+
+&lt;p&gt;I think the part of me responsible for this reserve knows what it needs to do. The "I will die" feeling isn't &lt;em&gt;exactly&lt;/em&gt; that of a refusal to die. It's not spitting defiance in the face of death and shouting "Not Today", it's more... it knows that it is time to let go, but it is afraid. I know how it feels, naturally, but I mean that on many levels.&lt;/p&gt;
+
+
+&lt;p&gt;Resident Contrarian &lt;a href="https://www.residentcontrarian.com/p/unsolicited-advice-on-the-institute"&gt;has a great piece on marriage&lt;/a&gt; that's mostly unrelated to this post, but in it there is a metaphor that has really stuck with me:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;A man was walking through the woods and in time came upon a ravine. Near the ravine was a man who, after a few moments, ran full-tilt at the ravine and leapt into the void over it as if to clear the entire gulf in one mighty jump.&lt;/p&gt;
+&lt;p&gt;But as the man observed the jumper, he also noticed that he was dragging a parachute; this slowed the jumper’s running as he approached the ravine. As the Jumper leapt, the parachute filled with air, stopping his forward motion completely. He then fell into the ravine; the parachute slowed his fall enough to make sure he wasn’t seriously injured, but he still scraped and banged against the sides on his way down.&lt;/p&gt;
+&lt;p&gt;The man watched as the jumper climbed back out and attempted the jump again with the same results. He approached him and asked “Why are you doing that?”. “Because I want to jump the ravine”, the Jumper replied. “No, I mean - why are you using the parachute when it keeps you from being successful?”. The Jumper looked at him like he was insane, and replied “That’s to minimize the damage from the fall.”.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;And, well, yeah.&lt;/p&gt;
+
+
+&lt;p&gt;Much of my approach to life, growth, healing, etc. is to &lt;a href="https://notebook.drmaciver.com/posts/2020-03-18-11:24.html"&gt;make things safe&lt;/a&gt; and then act freely within that safety. I work with careful, incremental, steps where I gradually clear out problems, make new things possible, and cautiously explore and enlarge the boundaries of my comfort zone. It's worked very well for me.&lt;/p&gt;
+
+
+&lt;p&gt;But with something like this, where I hold tightly to the belief that any change is irreversible, maybe there is no safe way forward? Maybe I have to accept that at a certain point, change becomes unsafe, and that you have to do it anyway, or choose cowardice.&lt;/p&gt;
+
+
+&lt;p&gt;Maybe at some point the only way forward is to take off the parachute and jump.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2022-01-31-14:38.html" rel="alternate"/>
   </entry>
 </feed>
