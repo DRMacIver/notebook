@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2022-02-17T10:36:00+00:00</updated>
+  <updated>2022-02-17T11:19:27+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -544,11 +544,21 @@ I did chicken out and use the communal we, and I had gathered some basic consens
 
 
 &lt;blockquote&gt;
-&lt;p&gt;The basic pattern [of humour] is that:
-1. We experience a cognitive shift – a rapid change in our perceptions or thoughts.
-2. We are in a play mode rather than a serious mode, disengaged from conceptual and practical concerns.
-3. Instead of responding to the cognitive shift with shock, confusion, puzzlement, fear, anger, or other negative emotions, we enjoy it.
-4. Our pleasure at the cognitive shift is expressed in laughter, which signals to others that they can relax and play too.&lt;/p&gt;
+&lt;p&gt;The basic pattern [of humour] is that:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;We experience a cognitive shift – a rapid change in our perceptions or thoughts.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;We are in a play mode rather than a serious mode, disengaged from conceptual and practical concerns.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Instead of responding to the cognitive shift with shock, confusion, puzzlement, fear, anger, or other negative emotions, we enjoy it.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Our pleasure at the cognitive shift is expressed in laughter, which signals to others that they can relax and play too.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 &lt;/blockquote&gt;
 
 
@@ -721,7 +731,7 @@ I did chicken out and use the communal we, and I had gathered some basic consens
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-02-17-10:36.html</id>
     <title>You are not expected to understand this</title>
-    <updated>2022-02-17T10:36:00+00:00</updated>
+    <updated>2022-02-17T11:19:27+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;You are not expected to understand this&lt;/p&gt;
