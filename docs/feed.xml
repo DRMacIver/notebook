@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2022-04-05T21:56:10+01:00</updated>
+  <updated>2022-05-25T09:47:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,135 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2022-01-24-17:12.html</id>
-    <title>Seeing clearly</title>
-    <updated>2022-01-24T20:03:20+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Seeing clearly&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2022-01-24&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;For the last day or two I've doing something I haven't done for years, and it's making everything so much clearer.&lt;/p&gt;
-
-
-&lt;p&gt;That is to say, I've got my glasses on.&lt;/p&gt;
-
-
-&lt;p&gt;They're not especially good glasses. Or rather they're very nice glasses that have the wrong prescription, because I got them in 2019 when I finally had to acknowledge that my vision was decaying and that ugh fine I should get some glasses. The prescription was &lt;em&gt;barely&lt;/em&gt; enough to matter - a mild astigmatism in my left eye, a little bit of short sightedness in my right - but it was enough that I was starting to notice and it seemed worth getting glasses to correct it.&lt;/p&gt;
-
-
-&lt;p&gt;Then I didn't wear glasses for the next two and a bit years.&lt;/p&gt;
-
-
-&lt;p&gt;I still in some sense don't "need" glasses. I can function fine without them. My eyes are even driving standard still. But there's been an increasingly noticable amount of eye strain. It's not that I can't read signs at a distance, or look at fine details across the room, it's just increasingly obvious that this is hard work. I've had a lot of tired eyes and headaches recently.&lt;/p&gt;
-
-
-&lt;p&gt;I've known for literal months that the lack of glasses was causing me trouble, so I did the obvious thing: I left them sitting exactly where they were, untouched. I certainly didn't put them on my face.&lt;/p&gt;
-
-
-&lt;p&gt;I've been wearing them for the last couple of days because I'm going to be driving a car tomorrow and that "driving standard" claim is, while technically true, not quite the standard I hold myself to when driving a car. I also don't drink when I'm going to be driving, not even an amount under the legal limit.&lt;/p&gt;
-
-
-&lt;p&gt;I really am safe to drive a car at my current level of vision. But... honestly compels me to admit that I'd certainly be &lt;em&gt;safer&lt;/em&gt; if I had slightly better vision. It's probably not enough to matter, but being at the wheel of a deadly weapon certainly puts you in contact with the reality of the world in a way that is hard for me to ignore. I can much more easily pretend my refusal to wear glasses isn't causing me a headache than I can pretend that it isn't increasing my chances of killing people.&lt;/p&gt;
-
-
-&lt;p&gt;This all makes me sound like a very nervous driver. I'm not. I'm pretty confident of my driving ability, and being nervous behind the wheel makes me less rather than more safe. So, I drive confidently, but when &lt;em&gt;not&lt;/em&gt; in the car I acknowledge that for all their upsides, a car has an unpleasantly high statistical murder-suicide rate, and I make decisions in advance that reduce that rate.&lt;/p&gt;
-
-
-&lt;p&gt;Further, radically changing your vision for the first time when you get behind the wheel of the aforementioned statistical murder-suicide machine is, to borrow a technical term, &lt;em&gt;fucking stupid&lt;/em&gt;, so I've been wearing my glasses for the last few days to get used to them.&lt;/p&gt;
-
-
-&lt;p&gt;The prescription isn't quite right, as I mentioned, and so I have begrudgingly booked an optician appointment for next week, but it's still a lot better than without the glasses. It's not an "&lt;a href="https://notebook.drmaciver.com/posts/2022-01-09-10:00.html"&gt;oh that's what a tree looks like&lt;/a&gt;" moment - I can see trees just fine thank you very much - but it's a "Oh I'm supposed to be able to read signs at &lt;em&gt;that&lt;/em&gt; distance am I?" moment. No doubt after I've had my eyes checked again and got some new glasses (or possibly just new lenses for these ones if that's an option) there will be similar revelations in my future for me to ignore.&lt;/p&gt;
-
-
-&lt;p&gt;I don't know how good you are at reading subtext, but chances are good you might have picked up on the subtle hint here and there that I &lt;em&gt;really&lt;/em&gt; don't want to wear glasses.&lt;/p&gt;
-
-
-&lt;p&gt;I should, perhaps, give you some context. Up until 2010 if I didn't have my glasses on I would have to hold a book several inches in front of my face to read. I probably wouldn't literally walk into things, because large blurry objects are still large objects that I can see coming, but if you were on the other side of the room from me I would be recognising you from height and colour palette only. Then in 2010 a nice man fired laser beams at my eyes and I acquired ~superpowers~ the ability to see things near-perfectly without further vision correction. Wait, no, I was right the first time. Superpowers. Compared to my previous state this definitely felt like superpowers.&lt;/p&gt;
-
-
-&lt;p&gt;Unfortunately, a decade passed, and during that time I failed to figure out a way to transcend the frailties of my mortal form, and as a result my eyes got older and weaker again, and now here I am with a need to strap an awkward contraption of glass and metal to my face in order to bring my basic functional capabilities up to human baseline and have fewer headaches.&lt;/p&gt;
-
-
-&lt;p&gt;My objection is not aesthetic. I look good in glasses. It's a very different look, especially given that the last time I regularly war glasses I had hair, but in many ways I look more like me in glasses than I do when not wearing glasses. Although, truthfully, that's maybe part of the problem - the me I look like is the me of my 20s. Maybe the me of my mid to late teens even. The me of my preteens and early teens wore awkward giant dorky glasses, before I started wearing thin frames and smaller rims, but I spent a long time with my face looking like this and a lot of it wasn't particularly good, and I'm not particularly proud of the version of me that existed back then. I want to reach back and give him a hug and tell him everything is going to be OK, but I don't particularly want to &lt;em&gt;be&lt;/em&gt; him.&lt;/p&gt;
-
-
-&lt;p&gt;I don't know if this is actually my real objection. It might be just a clever theory. The actual complaints that are coming up are that glasses feel weird on my face. I'm not used to the weight and the feeling of htem, and I feel hyperaware of their presence on my nose, and of the slight reduction in peripheral vision. It's likely that I'll just get used to it, but I don't especially want to.&lt;/p&gt;
-
-
-&lt;p&gt;Another resentment is definitely that I don't like aging. Yeah, me and everyone else, I know. Glasses feel like a particularly cruel reminder of it though - you know that problem you thought you'd fixed? Unfortunately, bodies!&lt;/p&gt;
-
-
-&lt;p&gt;I suspect some of this is also just a sort of... resentment at being forced to make a choice about a tradeoff? I've never really had to choose whether to wear glasses or not before. As a young child, I didn't know that seeing things was an option. As a slightly older child, I could choose between being able to see things and not being able to see things, so I went with the one that was obviously better. For most of the last 12 years, I've not needed to choose whether to wear glasses or not, because why would I I didn't need them?&lt;/p&gt;
-
-
-&lt;p&gt;Now though, I'm caught like &lt;a href="https://en.wikipedia.org/wiki/Buridan%27s_ass"&gt;Buridan's ass&lt;/a&gt; between two very similar options, except instead of choosing between two delicious bales of hay, I get to choose between two slightly crappy options.&lt;/p&gt;
-
-
-&lt;p&gt;I'm aware that many people are absolutely fine with glasses, and that I probably will once again become such a person and if not will eventually find another nice man (or woman, or other) to fire lasers at my face, but for now please forgive my petty resentments at the constraints placed upon me by my biology.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2022-01-24-17:12.html" rel="alternate"/>
-  </entry>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2022-01-25-07:18.html</id>
-    <title>Failing to resist temptations</title>
-    <updated>2022-01-25T08:03:25+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Failing to resist temptations&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2022-01-25&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I am, as I've mentioned, &lt;a href="https://notebook.drmaciver.com/posts/2022-01-18-13:15.html"&gt;bad at finishing things&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;You know what I'm not bad at finishing though? Crisps. You put a bag of crisps in front of me, it's gone.&lt;/p&gt;
-
-
-&lt;p&gt;I am fortunately saved from pringles by my dietary restrictions, because the following analogy that I used to talk about whether &lt;a href="https://notebook.drmaciver.com/posts/2022-01-06-12:00.html"&gt;drift&lt;/a&gt; was pleasant or unpleasant is 100% accurate to my experience:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Drifting is unpleasant in the same way that eating a tube of pringles is unpleasant. You know you shouldn't start, but then you do, and you're not really enjoying it, but you keep eating it, and then you get to the end and you think "Ugh, why did I eat that?" and then the next time a tube of pringles is opened in front of you you do it again.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;I'm not even good at resisting the temptation of things I &lt;em&gt;don't particularly like&lt;/em&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;&lt;a href="https://drmaciver.substack.com/p/first-hard-choice"&gt;The first hard choice&lt;/a&gt; is my post about temptation and addiction, and it's an odd post to be sure, but one of the oddest things about it is that I feel quite so strongly about this subject given that I don't have any particularly scary addictions. I don't even smoke, I drink in moderation, I have minimal to no experience with harder drugs (and what minimal experience I have only in countries where they're perfectly legal, naturally). My worst addiction is &lt;a href="https://notebook.drmaciver.com/posts/2022-01-12-00:46.html"&gt;coffee&lt;/a&gt;, and although that has this dynamic it also has other reinforcing problems. It's very much an addiction in the sense of it solving problems for me.&lt;/p&gt;
-
-
-&lt;p&gt;I have, incidentally, given up giving up coffee again. I made it to about two months before I came up with a very good justification for drinking coffee again. The problem is basically that coffee solves some very unpleasant gastrointestinal issues for me, so about once a week I have to make a decision between having a very upset stomach or drinking coffee (yes, it's partly that coffee makes you shit, but it's not just that. Decaf has the same property and doesn't seem sufficient), and having coffee about once a week means I spend the rest of the week craving coffee. I had a morning when I spent about 10 minutes of arguing with myself about whether I was allowed a coffee and eventually decided that this was stupid and if this was going to be my experience then it was clearly better to deal with the problems coffee causes rather than the problems that it solves.&lt;/p&gt;
-
-
-&lt;p&gt;Another example of the temptation problem for me is that I don't usually keep my phone in the bedroom. My alarm is dead right now and I needed to be up early this morning, so I made an exception and had my phone by my bed. Naturally, because my alarm was set for 6:30, I woke up at 5:30, and equally naturally because it's fucking cold right now and it was 5:30AM I didn't want to get out of bed, but then my phone was right there and before you knew it I was on Twitter. This is precisely why my phone isn't allowed in my bedroom.&lt;/p&gt;
-
-
-&lt;p&gt;A really stupid example of this is that I often shave in the shower. It's not good for my skin, and it doesn't produce a particularly good shave, but it's easy and it lets me extend my time in the shower, and no matter how often I have this argument with myself I often find myself gravitating back to this habit.&lt;/p&gt;
-
-
-&lt;p&gt;It's not particularly that I miss these things when they're not there. I do sometimes buy crisps despite knowing this, but mostly if I don't have crisps in the house I don't miss them. Coffee and Twitter solve problems for me, but not having Twitter in bed doesn't present a problem, and if you could somehow blanket ban shaving in the shower I would be completely fine.&lt;/p&gt;
-
-
-&lt;p&gt;But, in the presence of these temptations, I often cave. I appear to be really bad at listening to even a weak and off-tune siren song. I think it's that I can't not notice the call, and once I notice the call it's a constant nagging presence that I want to make go away, and I'm not very good at dealing with ongoing discomforts like that.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2022-01-25-07:18.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-01-26-19:35.html</id>
     <title>The kindness of strangers</title>
@@ -755,5 +626,403 @@ I think this is beautiful and I love you for it.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2022-04-05-21:53.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2022-04-30-11:56.html</id>
+    <title>Notes towards a name</title>
+    <updated>2022-04-30T11:56:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Notes towards a name&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2022-04-30&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;&lt;a href="https://twitter.com/connerdelights/status/1519705466854539265"&gt;Andrew Conner&lt;/a&gt; asked on Twitter "What would you call this?" where "this" means "the thing that is like philosophy but not", and this lead to a discussion between me, him, and David Chapman in which we all expressed our frustration as to what it is we actually &lt;em&gt;do&lt;/em&gt;.  More specifically, what do we call it?
+None of us know.&lt;/p&gt;
+
+
+&lt;p&gt;Hubristically, I replied, "This seems like a dumb problem for us to have. Maybe I'll fix it". So here I am, trying to fix it. These are some rough notes that I am writing because it is useful to write out my thoughts on the subject, and sharing because they may be interesting.&lt;/p&gt;
+
+
+&lt;h3&gt;What is it I actually do?&lt;/h3&gt;
+
+
+&lt;p&gt;I think the best way I can explain what I do is this: You know how some days you find yourself thinking "Holy shit why does being human not come with a user manual?". I'm trying to write that user manual.&lt;/p&gt;
+
+
+&lt;p&gt;This is, of course, a completely impossible task. Such a user manual would be unusably vast, and I am not qualified to write more than a tiny fraction of it. That's OK. I'm not trying to write more than a tiny fraction of it, and most people don't need more than a tiny fraction of it.&lt;/p&gt;
+
+
+&lt;p&gt;It's perhaps more accurate to say that what I am trying to do is develop the general skill of writing the thing that you would get if you were to look up the section of the humanity user manual that you need right now.&lt;/p&gt;
+
+
+&lt;p&gt;My basic question is "What is it like to be human and how can we be better at it?"&lt;/p&gt;
+
+
+&lt;p&gt;David Chapman has as a tagline "Better ways of thinking, feeling, and acting" and that definitely feels like part of what I do.&lt;/p&gt;
+
+
+&lt;p&gt;"How to live" is maybe closer. It's a bit too close to the Aristotelean "How to have a good life" (which is not a frame I like).&lt;/p&gt;
+
+
+&lt;p&gt;Perhaps "How to think about living" is closer?&lt;/p&gt;
+
+
+&lt;p&gt;My tagline for my newsletter is "Overthinking everything", which is a bit tongue in cheek, but I do think captures something important.&lt;/p&gt;
+
+
+&lt;p&gt;Perhaps "Tools of thought for living"? Or "Tools for living".&lt;/p&gt;
+
+
+&lt;p&gt;"How to think about living in a way that helps you flourish"&lt;/p&gt;
+
+
+&lt;p&gt;I have always liked "Human flourishing" as a turn of phrase. It's a little connected up to virtue ethics and the like, and I do tend to reject the eudaimonic frame of "happiness" as the end goal of life, partly because I don't think framing life as having a goal is helpful.&lt;/p&gt;
+
+
+&lt;p&gt;There is something fundamentally ethical about my project though. "How to live" is very much the classical point of ethics, although not of modern ethics.&lt;/p&gt;
+
+
+&lt;p&gt;This is in general a theme of what I do. It's &lt;em&gt;like&lt;/em&gt; a lot of things, but as they were meant to be and good though.&lt;/p&gt;
+
+
+&lt;p&gt;I do think that what distinguishes me from philosophy in general is that I'm more interested in the practical side of it. If you consider the think/feel/act split, I'm interested in all three but my goals are in decreasing order of priority:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Act&lt;/li&gt;
+&lt;li&gt;Feel&lt;/li&gt;
+&lt;li&gt;Think&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;This is funny because I'm primarily working on the think layer, but that's because it's a very high leverage layer (especially for me). How you think has a huge amount of impact on what you do and how you feel about it, and I'm trying to use thinking to improve your experience of the world. It is a focus on right action rather than right thought, and in getting these all to line up in a way that you feel good about.&lt;/p&gt;
+
+
+&lt;p&gt;This is part of why I'm not sure I'm a fan of applying the "philosophy" label to what I do. I don't love wisdom, I just say that to get it into bed.&lt;/p&gt;
+
+
+&lt;p&gt;It does tie back into the virtue ethics thing again, but I do like "phronesis" as a word - practical wisdom. And to a large degree this &lt;em&gt;is&lt;/em&gt; what I work on. Practical wisdom for living.&lt;/p&gt;
+
+
+&lt;h3&gt;What does David Chapman do?&lt;/h3&gt;
+
+
+&lt;p&gt;Honestly, beats me.&lt;/p&gt;
+
+
+&lt;p&gt;&lt;a href="https://twitter.com/DRMacIver/status/1519788775337074695"&gt;I said on Twitter&lt;/a&gt; that part of my problem with coming up with a common name is:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;sometimes I feel like you and I are working on basically the same problem and sometimes I feel like you and I are working on completely unrelated projects, and I'm not sure I could come up with a coherent justification for either feeling.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;I like David and I value our conversations, but I really don't know that I know what his project is about, and I suspect he feels the same way about me.&lt;/p&gt;
+
+
+&lt;p&gt;So let's start with how David and I differ (aside from in our last names).&lt;/p&gt;
+
+
+&lt;p&gt;I think his &lt;a href="https://metarationality.com/"&gt;metarationality&lt;/a&gt; project is probably heavily overlapping with mine, in that we're both concerned with the problem of how people think in practical contexts and how to do that better, but I think of his main work (certainly it's his Twitter handle!) is Meaningness, and this is the one I can't really tell if it's at all similar to what I'm doing.&lt;/p&gt;
+
+
+&lt;p&gt;If you look at &lt;a href="https://meaningness.com/"&gt;meaningness.com&lt;/a&gt; his tagline is:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Better ways of thinking, feeling, and acting—around problems of meaning and meaninglessness; self and society; ethics, purpose, and value.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;And we're kinda overlapping on all of this except... I don't feel like I'm particularly invested in the questions of meaning and purpose, which I think is rather his whole thing:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;This book is about meaningness. “Meaningness” is a word I invented, referring to the quality of being meaningful and/or meaningless.&lt;/p&gt;
+&lt;p&gt;The word “meaning” has two quite different meanings in English. It can refer to the meaning of symbols, such as words and road signs. This book is not about that kind of meaning.&lt;/p&gt;
+&lt;p&gt;People also speak of “the meaning of life.” That is the sort of meaningness this book is about. So I apply “meaningness” only to the sorts of things one could describe as “deeply meaningful” or “pretty meaningless.” The book is about matters such as purpose, ethics, and selfhood.&lt;/p&gt;
+&lt;p&gt;Meaningness is a quality, not a thing. I don’t think there is a definite meaning of life. Meaningness is always nebulous: indefinite, uncertain, ambiguous.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;And I must admit I don't find this very personally interesting. It's not &lt;em&gt;not&lt;/em&gt; connected to my project, but I think if someone came to me talking about this as their core issue I would probably start by checking if they were depressed, or if their life sucked in concrete manners.&lt;/p&gt;
+
+
+&lt;p&gt;I do basically buy &lt;a href="https://twitter.com/eggprophet/status/1470425201615773702"&gt;eggprophet's model&lt;/a&gt;:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;what if ur complicated, high status problems like "meaning crisis" "culture war" "societies fall in epicureanism" are actually simple, low-status problems like "bored" "want community" "need blanket"&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;"Bored" definitely feels closer to any problem I want to address than "lack of meaning" does.&lt;/p&gt;
+
+
+&lt;p&gt;I want to be clear, I don't mean this as a dismissal of David's project. I love it when other people get deeply invested in things that I don't find very interesting, because then I can come in afterwards and extract the bits that I care about and wouldn't have figured out on my own. But this does suggest that David's meaningness project and my project are not necessarily that closely tied.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2022-04-30-11:56.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2022-05-25-09:47.html</id>
+    <title>How to be lucky</title>
+    <updated>2022-05-25T09:47:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;How to be lucky&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2022-05-25&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I'm going to be doing some draft bankruptcy over the coming week or two,
+where I delete things from my newsletter drafts and post salvageable bits
+here on the notebook.&lt;/p&gt;
+
+
+&lt;p&gt;Here's some extracts from a piece called "How to be lucky" that I may or may
+not eventually write, but certainly will want to start from scratch with 
+a little bit of reused material rather than trying to ressurect this draft.&lt;/p&gt;
+
+
+&lt;h3&gt;Luck, happenstance, and circumstance&lt;/h3&gt;
+
+
+&lt;p&gt;I'd like to distinguish three different things that are often called
+luck, and I will only use "luck" to refer to one of them.&lt;/p&gt;
+
+
+&lt;p&gt;The first thing is what I'd like to call &lt;em&gt;happenstance&lt;/em&gt;. An event that
+happens as a result of chance. You might win the lottery, you might be
+late for a meeting, you might go a different route than usual and
+discover something interesting... These are all chance events, they
+might be good they might be bad, they might be neutral.&lt;/p&gt;
+
+
+&lt;p&gt;People will often refer to individual happenstance events as lucky or
+unlucky, which is perfectly reasonable in normal usage but not how I
+will be using the term. Winning the lottery is not, in the sense I will
+be using it, the result of luck, it's just random chance. Could have
+happened to anyone who played the lottery. If you exhibited a consistent
+tendency to win the lottery I would call &lt;em&gt;that&lt;/em&gt; luck, but not a single
+win no matter how large, it's just a highly positive happenstance.&lt;/p&gt;
+
+
+&lt;p&gt;Circumstance on the other hand is the conditions in which you find
+yourself. This too is often referred to as luck. e.g. you're lucky to be
+born into a rich family, you're lucky to have good friends, you're lucky
+to be in a secure job, etc. I again think this is perfectly reasonable
+usage, but it's not what I mean when I say "luck" here.&lt;/p&gt;
+
+
+&lt;p&gt;When I say luck, what I specifically mean is the aggregate effect of
+happenstance in your life. Good luck is the tendency of chance events
+to, on average, improve your life. Bad luck is the tendency of chance
+events to, again on average, make your life worse.&lt;/p&gt;
+
+
+&lt;h3&gt;Four types of circumstance&lt;/h3&gt;
+
+
+&lt;p&gt;Let's talk about circumstances and how they impact luck. Many of these
+things will be out of your control (or only weakly under your control),
+and I'll talk about things that are more under your control in a bit,
+but I think it's important to be up front about the different fortune
+landscapes people find themselves in.&lt;/p&gt;
+
+
+&lt;p&gt;One of the easiest ways to be lucky is to have circumstances that enable
+it. Here are some such circumstances.&lt;/p&gt;
+
+
+&lt;p&gt;The first way is that you can be rich, either in money or other
+resources. Luck is, ultimately, about being able to benefit from random
+chance, and this involves playing a lot of numbers games. By far the
+easiest way to be able to play numbers games is to have a lot of buffer
+against risk. If a great opportunity comes your way and it costs £1000
+but will probably earn you much more than that (in money or other
+value), then there are roughly three options: You might not be able to
+pay £1000 at all, in which case sucks to be you. £1000 might be
+affordable but not an amount you can comfortably risk, in which case you
+may or may not take the opportunity but you certainly can't take the
+next such opportunity that comes along if this one falls through. Or you
+can be well enough off that £1000 isn't a big deal to risk given the
+high upside. Rich people are luckier than poor people because they have
+the opportunity to take advantage of many sources of happenstances that
+improve their life that are too risky if you're poor.&lt;/p&gt;
+
+
+&lt;p&gt;The second way is that you can be extroverted, sociable, etc. Social
+connections are one of the biggest and most accessible source of luck in
+day to day life - you meet people who will transform your life, your
+social circumstances, give you access to opportunities you'd otherwise
+lack, etc. There's &lt;a href="https://journals.sagepub.com/doi/full/10.1177/0190272518812010"&gt;a whole paper about how the best way to be lucky is
+to go to more
+parties&lt;/a&gt;.
+It's much easier to take advantage of this if you naturally want to
+spend lots of time socialising, are good at it, and find it emotionally
+rewarding rather than a source of anxiety.&lt;/p&gt;
+
+
+&lt;p&gt;The third way is that you can be
+pretty (I tend to use "pretty" in a gender neutral sense. There are some very
+pretty men out there. That being said, the way this manifests is definitely different with different genders).
+This tends to raise the chances of success in a lot of circumstances - people will
+seek you out more, give you more opportunities, you'll benefit from halo
+effects, etc. Being pretty tends to both increase the number of
+opportunities (because they seek you out) and increase the chances of
+any of those opportunities that depend on the judgement of others from
+working.&lt;/p&gt;
+
+
+&lt;p&gt;All of these are somewhat changeable but are at best hard to change,
+and aren't necessarily where your bottleneck &lt;/p&gt;
+
+
+&lt;h3&gt;Luck as a skill&lt;/h3&gt;
+
+
+&lt;p&gt;Now, this doesn't mean you can learn to be supernaturally lucky. There's
+no way you can, for example, improve your ability to play the lottery.
+You will probably, on average, be luckier if you &lt;em&gt;don't&lt;/em&gt; play the
+lottery.&lt;/p&gt;
+
+
+&lt;p&gt;It also doesn't mean that everyone's luck is purely determined by their
+skill. There are roughly three components to luck, in decreasing order
+of importance for most people:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Skill&lt;/li&gt;
+&lt;li&gt;Privilege&lt;/li&gt;
+&lt;li&gt;Chance&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;Yes, chance is the &lt;em&gt;least&lt;/em&gt; important component of luck, I promise. It's
+not that chance doesn't matter, it's that if chance matters too much you
+are not actually being lucky.&lt;/p&gt;
+
+
+&lt;p&gt;The reason, in short, is that luck mostly occurs as the sum of many
+chance events, and statistically the chance effects average out over
+time. If you toss a coin 100 times, you've no ability to predict which
+way any given coin toss will go, but you'll get heads about 50 times,
+and you'll with overwhelming likelihood get heads between about 30 and
+70 times.&lt;/p&gt;
+
+
+&lt;p&gt;Privilege on the other hand can matter a great deal. For example, people
+who are unusually attractive or unusually intelligent will have a much
+easier time being lucky (more on why later). It's also &lt;em&gt;vastly&lt;/em&gt; easier
+to be lucky if you're wealthy or have other resources you can draw on.
+If that's you, you can capitalise on it, and it's worth paying attention
+to, but ultimately what matters more is how these affect your ability to
+develop the skill of luck than the privilege itself.&lt;/p&gt;
+
+
+&lt;p&gt;Which brings us to the most important part: Skill. This is the most
+important part both because it's the bit that matters the most, and also
+because it's the bit that's most under your control.&lt;/p&gt;
+
+
+&lt;h3&gt;An informal mathematical glossary&lt;/h3&gt;
+
+
+&lt;p&gt;Here I've deleted a lot of material that I covered better in &lt;a href="https://notebook.drmaciver.com/posts/2021-10-29-09:43.html"&gt;Probably enough probability for you&lt;/a&gt; so go read that bit instead.&lt;/p&gt;
+
+
+&lt;h3&gt;Luck 101&lt;/h3&gt;
+
+
+&lt;p&gt;Luck is a numbers game. Luck is the aggregate result of many small
+events, each of which is unlikely to have any upside, but which on
+average have a much greater upside than their cost. Let's call these
+events &lt;em&gt;opportunities&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Getting luckier is a process involving two things:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Increasing the number of opportunities you take.&lt;/li&gt;
+&lt;li&gt;Improving the average effectiveness of opportunities.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;Privilege affects these differently. e.g. Being resource-rich tends to
+make the first easy, being attractive tends to maximise the second, but
+both are under your control to a large degree.&lt;/p&gt;
+
+
+&lt;p&gt;Also, note that this is somewhat non-uniform, in that the &lt;em&gt;types&lt;/em&gt; of
+opportunities available to you matter a great deal. It's possible to
+e.g. be very lucky in business but have no luck in dating (or vice
+versa), due to being good at these in one context and bad in another.
+This is particularly true for people who have never spent much time
+strategizing about luck in general and have just, well, lucked into some
+good habits in some specific contexts.&lt;/p&gt;
+
+
+&lt;h3&gt;Lottery luck&lt;/h3&gt;
+
+
+&lt;p&gt;Imagine a simple lottery, you pay £1, you have a one in 10 million
+chance of winning £1 million. You play the lottery, and unsurprisingly
+you don't win. Someone else plays the lottery, and they do. Are they
+luckier than you?&lt;/p&gt;
+
+
+&lt;p&gt;In this specific instance, they have certainly been luckier than you,
+but in a generalisable sense they are not. What actually happened is
+that millions of people played the lottery, so even though every
+individual one was a sucker, one or two people got lucky. Those people
+have what you might call lottery luck - it's a one off unrepeatable event,
+and any strategy for improving your luck that relies on lottery luck is
+a losing game.&lt;/p&gt;
+
+
+&lt;p&gt;You can think of the basic practice of luck as being about trying
+repeatedly, and seeking lottery luck is &lt;em&gt;actively harmful&lt;/em&gt; for this
+because the more times you try the worse off you will be.&lt;/p&gt;
+
+
+&lt;h3&gt;What would have come next&lt;/h3&gt;
+
+
+&lt;p&gt;This is the point at which the draft trails off, which is unfortunate as what comes next is all the interesting bits.&lt;/p&gt;
+
+
+&lt;p&gt;What I was planning on covering next ties together:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;The work of Richard Wiseman in his book "The Luck Factor" which I think is
+  a very good book for getting better at an important but kinda boring type of
+  luck.&lt;/li&gt;
+&lt;li&gt;Brian Lui's notion of &lt;a href="https://brianlui.dog/2020/10/06/upside-decay/"&gt;Upside decay&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Lewis Hyde's book "Trickster Makes This World", which is about trickster myths and what they teach us about luck and creativity.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;The core idea being that the most interesting skill of luck is treating your engagement with the world as a creative process.&lt;/p&gt;
+
+
+&lt;p&gt;As a mild post mortem note, I think one thing this points to is that when writing a newsletter post I should &lt;em&gt;start by writing the interesting bits&lt;/em&gt;. Then I can backfill to give people an onramp to it if I think that's actually necessary. Write the newsletter more like the notebook, so that when I hit the point where I'm done and don't want to write any more I can just click send. Writing as &lt;a href="https://notebook.drmaciver.com/posts/2020-03-23-15:52.html"&gt;an anytime algorithm&lt;/a&gt;.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2022-05-25-09:47.html" rel="alternate"/>
   </entry>
 </feed>
