@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2022-05-25T09:47:00+01:00</updated>
+  <updated>2022-05-26T07:09:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,98 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2022-01-26-19:35.html</id>
-    <title>The kindness of strangers</title>
-    <updated>2022-01-26T21:21:24+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;The kindness of strangers&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2022-01-26&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Hey, remember &lt;a href="https://notebook.drmaciver.com/posts/2022-01-05-13:01.html"&gt;that time when I got completely lost on the way to the hospital&lt;/a&gt; and had to be rescued by kind passersby giving me directions? Me too.&lt;/p&gt;
-
-
-&lt;p&gt;Anyway it turns out I wasn't remotely done relying on the kindness of strangers.&lt;/p&gt;
-
-
-&lt;p&gt;I rented a car yesterday, picking it up not long after I finished writing &lt;a href="https://notebook.drmaciver.com/posts/2022-01-25-07:18.html"&gt;yesterday's post&lt;/a&gt;. It's technically not my first time renting a car, but the last time I was with an experienced other driver who did all the legwork, and I just signed the forms and paid (I was a last minute addition and, unlike the other two people in the car, I was coming back for the round trip, so it made more sense to be under my name). This time I did everything.&lt;/p&gt;
-
-
-&lt;p&gt;It turns out renting a car is easy. I think it had been in my head as one of those complicated things that adults do and I didn't understand how to make work but, no, renting a car is easy. Apparently it's often not easy and many car rental places screw you over. I solved this problem by going to one of the more expensive ones (mostly because every other option was a &lt;em&gt;much&lt;/em&gt; further walk from me) and being effortlessly charming and pretty at the staff, so everything went fine on the rental front (I've now returned the car, so the chickens in question are hatched and I shan't regret these words, although who knows what will happen the next time).&lt;/p&gt;
-
-
-&lt;p&gt;What didn't go so well was my ability to listen to instructions. The attendant who showed me the car did, I realise in retrospect, explain how to reverse the car correctly, but I misunderstood her directions, and foolishly didn't check before leaving the car park. Instead I discovered that I did not know how to reverse the car while trying to turn around on a hill, with the front of the car about a meter from shuttered entrance to an underground car park.&lt;/p&gt;
-
-
-&lt;p&gt;I tried three or four times to reverse and each time the car rolled forward. At first I thought I was just doing a reverse hill start badly, but after the second time I was convinced I was doing something fundamentally wrong, but I couldn't figure out what.&lt;/p&gt;
-
-
-&lt;p&gt;After that fourth time there was &lt;em&gt;not&lt;/em&gt; a lot of distance between the front of the car and the barrier (probably no more than about 20cm). At this point someone came out from the pedestrian entrance to the carpark and looked at me bemused. I explained my situation. "Would you like some help?", he asked. I very gratefully accepted, at which point he effortlessly reversed the car up the hill for me and backed it a bit up onto the curb. He explained how reverse hill starts need to use the handbrake. I said that I thought I had done that but clearly I must have done something wrong, and thanked him profusely.&lt;/p&gt;
-
-
-&lt;p&gt;I'd made two mistakes at this point.&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;The car was, in fact, still blocking the entrance, it was just now in less dire straits.&lt;/li&gt;
-&lt;li&gt;I had not asked my saviour to show me &lt;em&gt;exactly&lt;/em&gt; what he had done.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;As you can imagine it was at this point I learned that the problem wasn't hill starts (which I was pretty sure I was fine at and still maintain I am) but that I just didn't know how to reverse the car, and as a result could not easily get it out of the way of the car who arrived shortly after wanting to get into the carpark. I explained to her, very embarrassed, what was going on. She said no problem but didn't offer to help and I was too embarrassed to ask.&lt;/p&gt;
-
-
-&lt;p&gt;Not long after this a timber merchant turned up to do some deliveries. The man driving gave me a confused look. I explained. He offered to help, and I again gratefully accepted.&lt;/p&gt;
-
-
-&lt;p&gt;He did what the first person did not, which was that he explained to me like I was five how to use a manual gear stick. I mostly didn't need this as I actually mostly have driven manual (I've driven an automatic precisely once in my life). What I &lt;em&gt;did&lt;/em&gt; need demonstrating was that this gear stick, unlike every other one I have ever used, required you to pull up on the shaft in a frankly bizarre way to put it in reverse. If you didn't do that, you went into sixth instead. This is some seriously unintuitive modal interface bullshit, and I say this as a vim user.&lt;/p&gt;
-
-
-&lt;p&gt;My second saviour did look very amused and exasperated at me, and explained in very small words and with elaborate gestures and demonstrations, and I did not begrudge him this at all because I surely deserved it.&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, there were no further problems with driving the car because I actually can drive just fine once I know how to reverse the car.&lt;/p&gt;
-
-
-&lt;p&gt;This piece was going to have more anecdotes about what driving was like, but then about a third of the way into writing it I had a sudden thought: "Wait, wasn't my passport supposed to be delivered today?"&lt;/p&gt;
-
-
-&lt;p&gt;The answer is yes, my passport was supposed to be delivered today, and TNT claimed to have delivered it. They had photo proof and everything. Specifically, after having had my passport sent via the passport office using their dedicated passport delivery service, they had shoved it through some letterbox without getting a signature and then taken a picture of the door. Needless to say this wasn't &lt;em&gt;my&lt;/em&gt; door, because I live in a block of flats.&lt;/p&gt;
-
-
-&lt;p&gt;I was, as you may imagine, mildly displeased by this.&lt;/p&gt;
-
-
-&lt;p&gt;Anyway this was about 8PM so I did the obvious thing and went through every nearby door with a number 2 on it until I found the right one. This didn't take all that long (I got it on the second try). I knocked (no doorbell), but nobody was in, so I solved my problems the British way and went to the pub.&lt;/p&gt;
-
-
-&lt;p&gt;Specifically I went to the pub right nextdoor to this one, where I explained to the bartender very nicely what my problem was. She got the owner, and I explained again. He got in touch with the person who lived there, and also he had a key to it, so he want in and got the package and gave it to me.&lt;/p&gt;
-
-
-&lt;p&gt;I then ordered a large glass of gin, and we all groused about how shocking the situation was, and I affirmed that I would be having words with TNT and the passport office tomorrow when they're open.&lt;/p&gt;
-
-
-&lt;p&gt;All of this is to say... I've been complaining recently about &lt;a href="https://notebook.drmaciver.com/posts/2022-01-02-12:34.html"&gt;wanting and offering help&lt;/a&gt;, and &lt;a href="https://notebook.drmaciver.com/posts/2022-01-23-13:27.html"&gt;the difficulty of helping in atomised communities&lt;/a&gt;, but actually it's worth remembering that strangers are usually &lt;em&gt;incredibly&lt;/em&gt; helpful when you ask them.&lt;/p&gt;
-
-
-&lt;p&gt;There's something simultaneously very easy and utterly pure about helping a stranger. There is no reason to help a stranger except pure altruism and the hope that one day someone will help you back. Help offered freely to strangers can never be paid back, only forward, and it's easy to forget that we do in fact live in a world where people do this, and do this freely.&lt;/p&gt;
-
-
-&lt;p&gt;This doesn't always work. There's a privilege element to this, as with all things, and you run into difficulties with some problems - especially money ones, or other common requests for help (my emotional difficulties giving money to beggars for example). But nevertheless very often you can, in fact, rely on strangers to help you.&lt;/p&gt;
-
-
-&lt;p&gt;In many ways, it's easier to help a stranger, because there's no expectation that you'll have to help them again. Levinas thinks we have infinite responsibility to our fellow humans, but this isn't entirely true. Someone you will never see again and can help is that blessedly rare thing: A finite responsibility to others that you can discharge, and know that thereby you have done good in the world.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2022-01-26-19:35.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-01-27-18:13.html</id>
     <title>Irritation and fascination</title>
@@ -774,7 +682,7 @@ None of us know.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-05-25-09:47.html</id>
     <title>How to be lucky</title>
-    <updated>2022-05-25T09:47:00+01:00</updated>
+    <updated>2022-05-25T10:01:29+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;How to be lucky&lt;/p&gt;
@@ -1024,5 +932,75 @@ because the more times you try the worse off you will be.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2022-05-25-09:47.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2022-05-26-07:09.html</id>
+    <title>Promethean work</title>
+    <updated>2022-05-26T07:09:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Promethean work&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2022-05-26&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;This is another draft bankruptcy post. The following is the only
+bit I had written from a post entitled "Stealing lifehacks from the gods":&lt;/p&gt;
+
+
+&lt;p&gt;Do you ever think about how weird it would be to be in the myth of
+Prometheus?&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Prometheus stumbles into camp, looking haggard.&lt;/p&gt;
+&lt;p&gt;"Prometheus, you have returned from Mount Olympus! What have you
+brought back from your time among the gods?"&lt;/p&gt;
+&lt;p&gt;"Uh, well, I've brought back the secret of fire. Pretty sure that'll
+be helpful. Very useful stuff, fire."&lt;/p&gt;
+&lt;p&gt;"Tell us, oh great Prometheus! What powers must we invoke to summon
+fire? What rituals must we perform?"&lt;/p&gt;
+&lt;p&gt;"Um, yes. Rituals. OK, so, you take some dry grass, and two sticks."&lt;/p&gt;
+&lt;p&gt;"Grass... and sticks? Do we fashion these into an offering? Do we
+carve runes into them?"&lt;/p&gt;
+&lt;p&gt;"No, you see, what you do is, you rub the sticks together. After a
+while they'll get real hot. Then you put the hot sticks on the grass
+and it'll catch fire because dry things catch fire when they get hot."&lt;/p&gt;
+&lt;p&gt;"What the actual fuck, Prometheus."&lt;/p&gt;
+&lt;p&gt;"Yeah, kicking myself for not thinking of it on my own TBH. Still,
+it's a simple enough trick that at least the gods won't be super mad
+at me for borrowing it, huh?"&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;(Please note that this both entirely misrepresents &lt;a href="https://en.wikipedia.org/wiki/Prometheus"&gt;the myth of
+Prometheus&lt;/a&gt; and also &lt;a href="https://www.youtube.com/watch?v=l8C8qPoMZdo"&gt;how to
+start a fire with sticks&lt;/a&gt;.
+But in my defence it's funnier that way)&lt;/p&gt;
+
+
+&lt;h3&gt;Postscript&lt;/h3&gt;
+
+
+&lt;p&gt;This actually &lt;a href="https://twitter.com/DRMacIver/status/1521187395319836676"&gt;got turned into a tweet&lt;/a&gt; way earlier,
+and was probably more like a tweet worth of idea.&lt;/p&gt;
+
+
+&lt;p&gt;The core to this is that a lot of what I do is go into complicated specialised disciplines and try to take their most accessible ideas and make them broadly useful. This is Promethean work.&lt;/p&gt;
+
+
+&lt;p&gt;Another &lt;a href="https://twitter.com/DRMacIver/status/1520007832556474368"&gt;related tweet&lt;/a&gt;:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;If I have seen far, it is because I have repeatedly wandered up to giants and asked "Gosh! How did you get so tall?"&lt;/p&gt;
+&lt;/blockquote&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2022-05-26-07:09.html" rel="alternate"/>
   </entry>
 </feed>
