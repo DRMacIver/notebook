@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2022-05-26T07:12:18+01:00</updated>
+  <updated>2022-05-27T14:08:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,55 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2022-01-27-18:13.html</id>
-    <title>Irritation and fascination</title>
-    <updated>2022-01-27T22:05:46+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Irritation and fascination&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2022-01-27&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I was talking to &lt;a href="https://twitter.com/drossbucket"&gt;Lucy&lt;/a&gt; the other day about the book &lt;a href="https://vajrayananow.com/spectrum-of-ecstasy"&gt;spectrums of ecstacy&lt;/a&gt;,
-and she mentioned the concept from it that "anger is distorted clarity".&lt;/p&gt;
-
-
-&lt;p&gt;I found this puzzling, but am not going to do anything ridiculous like actually read the book to find out what they mean, so instead I'm going to riff irresponsibly off the idea.&lt;/p&gt;
-
-
-&lt;p&gt;(I may read the book to find out what they mean later)&lt;/p&gt;
-
-
-&lt;p&gt;It's not entirely in line with my experience, in that anger certainly doesn't seem like it comes with clear &lt;em&gt;thinking&lt;/em&gt;, but what I eventually decided was that anger is a form of clarity of purpose. Anger draws a straight line from where you are, to where you want to be. It is a form of value clarity that is not easily accessible in the real world - a straightforward desire to win.&lt;/p&gt;
-
-
-&lt;p&gt;I've definitely found this while writing sometimes. There are a lot of things I write because I am annoyed that they don't exist for example. Sometimes I'm even straightforwardly angry that they exist, usually &lt;a href="https://notebook.drmaciver.com/posts/2022-01-13-04:16.html"&gt;on behalf of my past self&lt;/a&gt; who needed them.&lt;/p&gt;
-
-
-&lt;p&gt;Fascination is another thing that feels a bit like a line pulling you in a coherent direction. When I have a problem to work on, my thoughts drift towards it of their own accord. There's a problem to solve, and trying to avoid solving it is &lt;a href="https://notebook.drmaciver.com/posts/2022-01-25-07:18.html"&gt;like resisting temptation&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;But, in fact, I don't know that this isn't just another form of anger again. It's certainly &lt;em&gt;irritation&lt;/em&gt;. Often the thing that draws me to a problem is that it's a worthy opponent, and that I want to defeat it. I think this is part of the appeal of &lt;a href="https://notebook.drmaciver.com/posts/2022-01-21-16:38.html"&gt;problems that you can't run out of&lt;/a&gt; - you can challenge them again, and again, honing your strength against the impossible.&lt;/p&gt;
-
-
-&lt;p&gt;Fascination and irritation definitely feel similar in many regards. If you watch me playing a hard level on Celeste, you'll see me scream in rage and frustration a lot, followed by jubilation when I win.
-It's precisely this dynamic where the thing that drives me forward is a furious desire to defeat the mountain.&lt;/p&gt;
-
-
-&lt;p&gt;It's what I'm seeing with my current efforts with automated Wordle solving too. There's a core irritation with the problem. It has challenged me, and I must defeat it.&lt;/p&gt;
-
-
-&lt;p&gt;&lt;a href="https://notebook.drmaciver.com/posts/2022-01-03-14:16.html"&gt;I wondered where the curiosity went&lt;/a&gt;, and maybe this is it. I used to be a very angry person, and this had its problems for sure, but I have not been kind to the angry parts of me, and maybe when they hid they took my ability to be truly interested in things. Perhaps there is a burning furious fascination required to drive you forward to the efforts required to truly invest yourself in a project. If so, I need to find a way to rekindle that.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2022-01-27-18:13.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-01-29-16:02.html</id>
     <title>Learning and teaching</title>
@@ -1002,5 +953,48 @@ and was probably more like a tweet worth of idea.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2022-05-26-07:09.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2022-05-27-14:08.html</id>
+    <title>Leaving shiny things behind</title>
+    <updated>2022-05-27T14:08:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Leaving shiny things behind&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2022-05-27&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Something I've been thinking about recently is how useful it is to have names to describe crucial aspects of your problems.
+Not that this is a new thought, but it's been on my mind.&lt;/p&gt;
+
+
+&lt;p&gt;As a result of this thought process, I realised I needed a name for a particular phenomenon: The way it is very hard for me to focus in the presence of my phone, which tends to grab my attention and lead to me checking Twitter without really meaning to.&lt;/p&gt;
+
+
+&lt;p&gt;I propose the following name: The phone is a &lt;em&gt;shiny thing&lt;/em&gt;. Shiny things catch your eye with their glint, in a way that makes it hard to avoid looking at them. As long as they are in your field of awareness somehow, you have to put in active effort to not pay attention to them, because they have a natural gravity to them that distracts and captures your attention.&lt;/p&gt;
+
+
+&lt;p&gt;Shiny things aren't necessarily interesting or desirable.
+Another example of a shiny thing is when the TV is on in a room, even with the sound off - even if you literally couldn't care less about what's on the TV, the fact that it is there with its attractive moving pictures tends to naturally draw your attention. Observe how much less engaged a conversation happening in a room with the TV on in the background is, even when you could in theory easily ignore it.&lt;/p&gt;
+
+
+&lt;p&gt;Shiny things aren't intrinsically bad - I like my phone, I like Twitter, I like watching TV - but they are bad to have around &lt;em&gt;when your purpose is not to engage with the shiny thing&lt;/em&gt;, because they entice and draw your attention. Even if you successfully avoid them, you expend energy on doing so that could be more productively used. &lt;/p&gt;
+
+
+&lt;p&gt;It's possible that a sufficiently advanced set of mental skills could allow one to be immune to shiny things. It's not unlike &lt;a href="https://drmaciver.substack.com/p/first-hard-choice"&gt;The first hard choice&lt;/a&gt;, where you would like to be able to listen to the sirens' song without being drawn onto the rocks.&lt;/p&gt;
+
+
+&lt;p&gt;But unlike the sirens, there is no virtue to being in the presence of a shiny thing that you don't currently want to use. It's just a pure cost. They can be there when you actively choose to use them, but they should be put away when you do not.&lt;/p&gt;
+
+
+&lt;p&gt;Lately I've been going on my stupid little walks for my stupid mental and physical health without my phone, and it has greatly improved the experience. Sometimes I bring a book, sometimes I bring a dictaphone, but neither of these are shiny in the way that my phone is, and so they do not distract me from doing whatever it is I choose to do in the moment.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2022-05-27-14:08.html" rel="alternate"/>
   </entry>
 </feed>
