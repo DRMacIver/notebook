@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2022-05-29T05:50:00+01:00</updated>
+  <updated>2022-05-29T05:59:24+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1220,7 +1220,7 @@ following two previous posts of mine here on the notebook:&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-05-29-05:50.html</id>
     <title>What every programming tutorial gets wrong</title>
-    <updated>2022-05-29T05:50:00+01:00</updated>
+    <updated>2022-05-29T05:59:24+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;What every programming tutorial gets wrong&lt;/p&gt;
@@ -1260,14 +1260,14 @@ have come away with any knowledge of programming without it.&lt;/p&gt;
 the example was something like:&lt;/p&gt;
 
 
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;&amp;gt;&amp;gt;&amp;gt; user = {}&lt;/span&gt;
-&lt;span class="err"&gt;&amp;gt;&amp;gt;&amp;gt; user["login"] = "Bob"&lt;/span&gt;
-&lt;span class="err"&gt;&amp;gt;&amp;gt;&amp;gt; user["login"]&lt;/span&gt;
-&lt;span class="err"&gt;"Bob"&lt;/span&gt;
-&lt;span class="err"&gt;&amp;gt;&amp;gt;&amp;gt; user["some other key"]&lt;/span&gt;
-&lt;span class="err"&gt;Traceback (most recent call last):&lt;/span&gt;
-&lt;span class="err"&gt;  File "&amp;lt;stdin&amp;gt;", line 1, in &amp;lt;module&amp;gt;&lt;/span&gt;
-&lt;span class="c"&gt;KeyError: 'some other key'&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="gp"&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span class="n"&gt;user&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;
+&lt;span class="gp"&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span class="n"&gt;user&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"login"&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;"Bob"&lt;/span&gt;
+&lt;span class="gp"&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span class="n"&gt;user&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"login"&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="go"&gt;"Bob"&lt;/span&gt;
+&lt;span class="gp"&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span class="n"&gt;user&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"some other key"&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="gt"&gt;Traceback (most recent call last):&lt;/span&gt;
+  File &lt;span class="nb"&gt;"&amp;lt;stdin&amp;gt;"&lt;/span&gt;, line &lt;span class="m"&gt;1&lt;/span&gt;, in &lt;span class="n"&gt;&amp;lt;module&amp;gt;&lt;/span&gt;
+&lt;span class="gr"&gt;KeyError&lt;/span&gt;: &lt;span class="n"&gt;'some other key'&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 

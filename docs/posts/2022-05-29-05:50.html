@@ -89,14 +89,14 @@ me, and that I could answer it, because I can\'t imagine that she would
 have come away with any knowledge of programming without it.</p>
 <p>I can't remember the specific thing we were talking about, but I think
 the example was something like:</p>
-<div class="codehilite"><pre><span></span><span class="err">&gt;&gt;&gt; user = {}</span>
-<span class="err">&gt;&gt;&gt; user["login"] = "Bob"</span>
-<span class="err">&gt;&gt;&gt; user["login"]</span>
-<span class="err">"Bob"</span>
-<span class="err">&gt;&gt;&gt; user["some other key"]</span>
-<span class="err">Traceback (most recent call last):</span>
-<span class="err">  File "&lt;stdin&gt;", line 1, in &lt;module&gt;</span>
-<span class="c">KeyError: 'some other key'</span>
+<div class="codehilite"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">user</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">user</span><span class="p">[</span><span class="s2">"login"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"Bob"</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">user</span><span class="p">[</span><span class="s2">"login"</span><span class="p">]</span>
+<span class="go">"Bob"</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">user</span><span class="p">[</span><span class="s2">"some other key"</span><span class="p">]</span>
+<span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">KeyError</span>: <span class="n">'some other key'</span>
 </pre></div>
 <p>This is entirely clear if you're a programmer (especially if you're a
 Python programmer, but it's sufficiently universal that probably most
