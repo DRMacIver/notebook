@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+DRMacIver's Notebook: What every programming tutorial gets wrong
+    </title>
+
+    <meta property="og:title" content="What every programming tutorial gets wrong">
+
+    <meta property="og:url" content="https://notebook.drmaciver.com/posts/2022-05-29-05:50.html" />
+    <link rel="canonical" href="https://notebook.drmaciver.com/posts/2022-05-29-05:50.html" />
+    <script src="https://hypothes.is/embed.js" async></script>
+
+
+    <meta name="twitter:card" content="summary" />
+
+    <meta property="og:creator" content="@DRMacIver">
+
+    <link rel="stylesheet" href="/pygments.css"/>
+    <link rel="stylesheet" href="/tufte.css"/>
+    <link rel="stylesheet" href="/latex.css"/>
+    <link rel="stylesheet" href="/drmnotes.css"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
+});
+
+MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
+  console.log(message)
+});
+
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169185204-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169185204-1');
+</script>
+
+  </head>
+
+  <body>
+    <article>
+        <h1><a href="/">DRMacIver's Notebook</a></h1>
+        <p class=subtitle>What every programming tutorial gets wrong</p>
+
+        
+
+<section id="the-post">
+<p class=subtitle>What every programming tutorial gets wrong</p>
+<dl class=metadata>
+<dt>Published</dt>
+<dd class="post-date">2022-05-29</dd>
+</dl>
+
+<p>Another piece of draft bankruptcy. This is my attempt to explain a common
+failure mode of programming tutorials. I got quite far, but eventually
+abandoned it.</p>
+<h3>Scene setting</h3>
+<p>A while ago I was helping teach a coding workshop to a bunch of people
+who had never coded before, and we were working through the written
+materials which were very "Do this, then do that". Copy this code and
+you should see this happen, etc.</p>
+<p>At some point a student asked me "OK, but what is actually going on
+here? What does any of this mean? I can follow the steps, but I have no
+idea what is going on."</p>
+<p>This was an incredibly reasonable question and I\'m glad she asked it of
+me, and that I could answer it, because I can\'t imagine that she would
+have come away with any knowledge of programming without it.</p>
+<p>I can't remember the specific thing we were talking about, but I think
+the example was something like:</p>
+<div class="codehilite"><pre><span></span><span class="err">&gt;&gt;&gt; user = {}</span>
+<span class="err">&gt;&gt;&gt; user["login"] = "Bob"</span>
+<span class="err">&gt;&gt;&gt; user["login"]</span>
+<span class="err">"Bob"</span>
+<span class="err">&gt;&gt;&gt; user["some other key"]</span>
+<span class="err">Traceback (most recent call last):</span>
+<span class="err">  File "&lt;stdin&gt;", line 1, in &lt;module&gt;</span>
+<span class="c">KeyError: 'some other key'</span>
+</pre></div>
+<p>This is entirely clear if you're a programmer (especially if you're a
+Python programmer, but it's sufficiently universal that probably most
+programmers will have a pretty good idea of what's going on), but if
+you've never programmed before it's just so much noise.</p>
+<p>In response to this question I would have said something as follows:</p>
+<p>The program you're using here is called the REPL(Read-Evaluate-Print-Loop,
+but don't worry about that. It's pronounced
+repple, like ripple with an eh). You're entering commands into it by writing statements in a
+programming language called Python.</p>
+<p>The interpreter keeps track of a number of "objects", which are a chunk
+of data along with a particular set of commands that can you can use to
+change that data, ask questions about it, etc. There are also commands
+that let you interact with the computer more broadly (e.g. reading and
+writing files) but we won't worry about them just yet in this tutorial.</p>
+<p>Here what we're doing is creating an object, giving it the name <em>user</em>
+that we can refer to it by, and issuing some commands and seeing what
+happens.</p>
+<p>Specifically, we are:</p>
+<ol>
+<li>
+<p>Creating an object of a specific type called a <em>dictionary</em> and
+    referring to it by the name <em>user</em>. The curly brackets <code>{}</code> create a
+    new dictionary, and "<code>user =</code>" is where we declare that we will
+    refer to it as <em>user</em>.</p>
+</li>
+<li>
+<p>A dictionary is an object whose job is to keep track of a table of
+    information. It maps <em>keys</em> to <em>values</em>, which are just arbitrary
+    things you can put into it, so that if you tell it to associate a
+    value with particular key, and then later ask for the value
+    associated with that key, you get the same thing back.</p>
+</li>
+<li>
+<p>Telling the dictionary we have just created (referred to by its
+    name, <em>user</em>) that it should associate the value "Bob" with the key
+    "login". "Bob" and "login" are objects of a type called <em>string</em>,
+    which represents a piece of text.</p>
+</li>
+<li>
+<p>Looking up the key "login" and getting the expected value "Bob"
+    back.</p>
+</li>
+<li>
+<p>Looking up the key "some other key" and getting an error that tells
+    us that the dictionary has not yet been told to associate any values
+    with that key.</p>
+</li>
+</ol>
+<p>This isn't a perfect answer, because I just made it up on the spot and
+haven't tested it against students to see what questions they ask, but
+it's probably pretty good. It certainly gives them more of a hook to
+play around with dictionaries in the interpreter and see what happens,
+and it gives them better questions to ask than "Help I don't understand
+anything about what's going on".</p>
+<h3>Theory, examples, and ability</h3>
+<p>I'm going to be using "theory", "examples", and "ability", in slightly
+specific ways (which are possibly slightly idiosyncratic to me, although
+I think compatible with normal use) in this issue, so I'll try to
+explain what I mean by them.</p>
+<p>An example is just any concrete version of the thing being taught. For
+example, "do these steps in the REPL" above is an example. Showing
+someone a program is an example. Showing someone a mathematical proof is
+an example.</p>
+<p>"Theory" is the knowledge that you need to answer questions like "What's
+going on here?" and explain the behaviour of a particular example. For
+example, in the above, you need some sort of theory to answer the
+question "Why did typing <code>user["login"]</code> show <code>"Bob"</code> but typing
+<code>user["some other key"]</code> showed an error message?"</p>
+<p>"Ability" is the set of things the student can now do themselves. The
+goal of teaching is to help the student expand their abilities. People
+don't generally expand their abilities directly as the result of
+teaching - you can only learn to do things by doing things - but
+teaching points them in the right direction by giving them better ideas
+of things to try. They still learn by trial and error, but teaching can
+give them better things to try and help them understand their errors.</p>
+<p>The goal of the above tutorial was to help them develop the ability to
+write simple Python programs involving dictionaries, and to some degree
+it succeeded. After going through this tutorial the student knows how to
+launch the Python REPL, and has at least one example of something
+reasonable to experiment with. Given a little bit of time to sit and
+play with the REPL they might come up with a pretty reasonable theory
+for explaining its behaviour.</p>
+<p>Why do they need to develop that theory? Because theory gives them the
+ability to <em>generalise</em>. If you have a theory that can explain why a
+given action succeeded or failed, you now believe that any action that
+matches that same explanation will also work or fail. This lets you try
+out other things and see whether they confirm or deny your theory, which
+is typically a much more productive model of trial and error than one
+can manage without a theory of what's going on.</p>
+<h3>Examples are vitally important</h3>
+<p>I should be clear: It is very good that the tutorial we were doing was
+dumping people in the REPL and getting them to play around with it. This
+is not my complaint, it's the correct thing to do. My complaint is that
+the tutorial did not then contain anything like my answer above.</p>
+<p>One of my pet peeves that has been coming out in places on the notebook
+blog recently is that I hate people who introduce theory without
+supporting examples in which to understand it. See e.g. <a href="https://notebook.drmaciver.com/posts/2021-07-02-09:29.html">People are bad
+at defining
+things</a>.</p>
+<p>In particular it's often worth having examples <em>first</em> (this isn't
+always possible), because then you can refer to concrete features of
+them while introducing the theory. You saw a bit of that in how I
+explained what was going on in the programming tutorial: I started with
+an example, and then I highlighted specific features of it to ground the
+theory (We're creating a thing called an objec</p>
+<p>The examples are particularly important. In order to understand a
+theory, you need to be able to see how it applies to real concrete
+things. Abstracting from concrete instances is literally the point of
+theory, so without seeing how it relates to the things it abstracts
+theory is just so many words.</p>
+<p>On top of that, examples are often key to developing abilities. People
+do not, generally speaking, reason from first principles from a theory.
+If you read the literature on naturalised decision
+making, what people
+tend to do is <a href="https://en.wikipedia.org/wiki/Recognition_primed_decision">recognition-primed decision
+making</a>. They
+look at what's in front of them, they reason by analogy, thinking "Oh,
+this looks like that thing I saw before, let me see what happens if I do
+the same thing that I did there...". Having a rich and varied library of
+examples is vitally important for this.</p>
+<p>(I'd recommend Cedric Chin's <a href="https://commoncog.com/blog/a-framework-for-putting-mental-models-to-practice/">A Framework for Putting Mental Models into
+Practice</a>,
+but it's also worth reading Gary Klein's "Sources of Power" and maybe
+some of his other work.)</p>
+<h3>Theory helps you remember examples</h3>
+<p>Let's look at our example again:</p>
+<div class="codehilite"><pre><span></span><span class="err">&gt;&gt;&gt; user = {}</span>
+<span class="err">&gt;&gt;&gt; user["login"] = "Bob"</span>
+<span class="err">&gt;&gt;&gt; user["login"]</span>
+<span class="err">"Bob"</span>
+<span class="err">&gt;&gt;&gt; user["some other key"]</span>
+<span class="err">Traceback (most recent call last):</span>
+<span class="err">   File "&lt;stdin&gt;", line 1, in &lt;module&gt;</span>
+<span class="c">KeyError: 'some other key'</span>
+</pre></div>
+<p>Do you think you could recreate this example from memory? I certainly
+could, and I think most programmers could with only a little bit of
+thought. It possibly wouldn't be character by character perfect, but you
+could certainly get the right general idea.</p>
+<p>Now consider the following highly readable example. Do you think you
+could recreate <em>this</em> from memory?</p>
+<div class="codehilite"><pre><span></span><span class="o">&lt;&lt;&lt;</span> <span class="n">d</span><span class="s">"T{ o Bm</span>
+<span class="o">&lt;&lt;&lt;</span> <span class="n">d</span><span class="s">"T{sn)gK[ena o n:g}n</span>
+<span class="o">&lt;&lt;&lt;</span> <span class="n">d</span><span class="s">"T{sn)gK[ena</span>
+<span class="nl">n</span><span class="p">:</span><span class="n">g</span><span class="p">}</span><span class="n">n</span>
+<span class="o">&lt;&lt;&lt;</span> <span class="n">d</span><span class="s">"T{sn"</span><span class="n">gyT</span> <span class="n">g</span><span class="p">](</span><span class="n">T</span><span class="p">{</span> <span class="n">tTuna</span>
+<span class="o">&gt;</span><span class="p">{</span><span class="n">ilT</span><span class="p">}</span><span class="n">ilt</span> <span class="n">kyg</span><span class="s">"] {TlTe] li)) )i"</span><span class="p">]</span><span class="err">'</span><span class="mi">1</span>
+   <span class="p">,[)</span><span class="n">T</span> <span class="n">nE</span><span class="s">"]h[e&lt;n= )[eT b= [e Eyghd)T&lt;</span>
+<span class="n">FTuc</span><span class="p">{{</span><span class="n">g</span><span class="p">{</span><span class="mi">1</span> <span class="n">r</span><span class="s">"gyT g](T{ tTur</span>
+</pre></div>
+<p>If you haven't figured out the trick, this is the same example as above,
+I've just jumbled all the letters through a mapping that replaces them
+(e.g. &gt; gets replaced with \&lt;).</p>
+<p>Do you think you could recreate this example from memory? I sure
+couldn't.</p>
+<p>In some sense this contains exactly the same information as the
+original, but because you're unable to easily turn it into a sensible
+representation, it's much harder to remember and thus much harder to
+understand. As well as the Python specific bits you also rely on e.g.
+brackets matching, quotes matching, familiar understanding of the
+meaning of the = symbol, the ability to clearly distinguish which bits
+are identifiers because they're contained in quotes, etc.</p>
+<p>When we know what's going on, we can describe the example as the
+following sequence of steps:</p>
+<ol>
+<li>
+<p>Create a dictionary called user.</p>
+</li>
+<li>
+<p>Insert the value "Bob" into "user" with the key "login"</p>
+</li>
+<li>
+<p>Look up the key "login" in "user" and get the result</p>
+</li>
+<li>
+<p>Look up the key "some other key" in "user" and see an error from
+    looking up a missing key</p>
+</li>
+</ol>
+<p>This is a <em>high level representation</em> of what's going on. It describes
+the steps we are taking, not the specific details that we know. This is
+easy to remember, because it's a set of comprehensible steps.</p>
+<p>Now, we're not expecting students to actually memorise specific
+examples, but ability to memorise is a pretty good proxy for how well
+the example fits in their head - if you can't easily remember what
+should be a fairly simple example, that's a sign that there's too much
+going for you to really figure it out and you're trying to learn too
+much at once.</p>
+<p>This sort of translation into a high level representation is what theory
+does for you, and lets you organise your mental library of examples.</p>
+<h3>Theory helps you generalise</h3>
+<p>As well as helping you remember examples you've seen before, theory lets
+you <em>adapt</em> those previous examples to your needs.</p>
+<p>This high level representation does a number of important things for us:</p>
+<ol>
+<li>
+<p>It allows us to understand the meaning of the thing we are writing
+    in terms of what we are trying to do rather than the literal
+    characters on the screen.</p>
+</li>
+<li>
+<p>This makes it easier to remember because we can remember "Create a
+    dictionary called user" separately from the literal syntax for
+    creating a dictionary. We still have to remember both, but the
+    latter is a fact we can more easily look up and will use often
+    enough to remember.</p>
+</li>
+<li>
+<p>It lets us make predictions for what we would see if we changed the
+    example.</p>
+</li>
+</ol>
+<h3>Doing (the right) things is the most important</h3>
+<p>This particularly shows up in the trial and error process of learning.
+While you are still floundering around trying to figure things out, good
+specific examples are especially important because you will lean hard
+on emulating examples, so having good examples to emulate is crucial.</p>
+<h3>Postscript</h3>
+<p>This is where I stalled. I'm not quite sure why. I think partly the
+post was getting too long, and I didn't know how to continue, or
+I ran out of energy.</p>
+<p>It's a known problem that I'm very bad at revisiting things once
+I've stopped writing them, and as a result I tend to fail to
+finish longer pieces. I would like to work on that but have not
+yet managed.</p>
+</section>
+
+    </article>
+<footer>
+Copyright David R. MacIver.
+
+CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
+</footer>
+  </body>
+</html>
