@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2022-05-29T06:00:16+01:00</updated>
+  <updated>2022-05-29T06:01:06+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1220,7 +1220,7 @@ following two previous posts of mine here on the notebook:&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-05-29-05:50.html</id>
     <title>What every programming tutorial gets wrong</title>
-    <updated>2022-05-29T06:00:16+01:00</updated>
+    <updated>2022-05-29T06:01:06+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;What every programming tutorial gets wrong&lt;/p&gt;
@@ -1251,8 +1251,8 @@ here? What does any of this mean? I can follow the steps, but I have no
 idea what is going on."&lt;/p&gt;
 
 
-&lt;p&gt;This was an incredibly reasonable question and I\'m glad she asked it of
-me, and that I could answer it, because I can\'t imagine that she would
+&lt;p&gt;This was an incredibly reasonable question and I'm glad she asked it of
+me, and that I could answer it, because I can't imagine that she would
 have come away with any knowledge of programming without it.&lt;/p&gt;
 
 
