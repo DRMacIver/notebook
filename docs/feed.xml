@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2022-05-29T05:59:24+01:00</updated>
+  <updated>2022-05-29T06:00:16+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1220,7 +1220,7 @@ following two previous posts of mine here on the notebook:&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-05-29-05:50.html</id>
     <title>What every programming tutorial gets wrong</title>
-    <updated>2022-05-29T05:59:24+01:00</updated>
+    <updated>2022-05-29T06:00:16+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;What every programming tutorial gets wrong&lt;/p&gt;
@@ -1445,14 +1445,14 @@ some of his other work.)&lt;/p&gt;
 &lt;p&gt;Let's look at our example again:&lt;/p&gt;
 
 
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;&amp;gt;&amp;gt;&amp;gt; user = {}&lt;/span&gt;
-&lt;span class="err"&gt;&amp;gt;&amp;gt;&amp;gt; user["login"] = "Bob"&lt;/span&gt;
-&lt;span class="err"&gt;&amp;gt;&amp;gt;&amp;gt; user["login"]&lt;/span&gt;
-&lt;span class="err"&gt;"Bob"&lt;/span&gt;
-&lt;span class="err"&gt;&amp;gt;&amp;gt;&amp;gt; user["some other key"]&lt;/span&gt;
-&lt;span class="err"&gt;Traceback (most recent call last):&lt;/span&gt;
-&lt;span class="err"&gt;   File "&amp;lt;stdin&amp;gt;", line 1, in &amp;lt;module&amp;gt;&lt;/span&gt;
-&lt;span class="c"&gt;KeyError: 'some other key'&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="gp"&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span class="n"&gt;user&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;
+&lt;span class="gp"&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span class="n"&gt;user&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"login"&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;"Bob"&lt;/span&gt;
+&lt;span class="gp"&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span class="n"&gt;user&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"login"&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="go"&gt;"Bob"&lt;/span&gt;
+&lt;span class="gp"&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span class="n"&gt;user&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"some other key"&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="gt"&gt;Traceback (most recent call last):&lt;/span&gt;
+&lt;span class="gr"&gt;   File "&amp;lt;stdin&amp;gt;", line 1, in &amp;lt;module&amp;gt;&lt;/span&gt;
+&lt;span class="gr"&gt;KeyError&lt;/span&gt;: &lt;span class="n"&gt;'some other key' &lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -1466,14 +1466,14 @@ could certainly get the right general idea.&lt;/p&gt;
 could recreate &lt;em&gt;this&lt;/em&gt; from memory?&lt;/p&gt;
 
 
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="s"&gt;"T{ o Bm&lt;/span&gt;
-&lt;span class="o"&gt;&amp;lt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="s"&gt;"T{sn)gK[ena o n:g}n&lt;/span&gt;
-&lt;span class="o"&gt;&amp;lt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="s"&gt;"T{sn)gK[ena&lt;/span&gt;
-&lt;span class="nl"&gt;n&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;g&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;
-&lt;span class="o"&gt;&amp;lt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="s"&gt;"T{sn"&lt;/span&gt;&lt;span class="n"&gt;gyT&lt;/span&gt; &lt;span class="n"&gt;g&lt;/span&gt;&lt;span class="p"&gt;](&lt;/span&gt;&lt;span class="n"&gt;T&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;tTuna&lt;/span&gt;
-&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="n"&gt;ilT&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="n"&gt;ilt&lt;/span&gt; &lt;span class="n"&gt;kyg&lt;/span&gt;&lt;span class="s"&gt;"] {TlTe] li)) )i"&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="err"&gt;'&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;
-   &lt;span class="p"&gt;,[)&lt;/span&gt;&lt;span class="n"&gt;T&lt;/span&gt; &lt;span class="n"&gt;nE&lt;/span&gt;&lt;span class="s"&gt;"]h[e&amp;lt;n= )[eT b= [e Eyghd)T&amp;lt;&lt;/span&gt;
-&lt;span class="n"&gt;FTuc&lt;/span&gt;&lt;span class="p"&gt;{{&lt;/span&gt;&lt;span class="n"&gt;g&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="s"&gt;"gyT g](T{ tTur&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="go"&gt;&amp;lt;&amp;lt;&amp;lt; d"T{ o Bm&lt;/span&gt;
+&lt;span class="go"&gt;&amp;lt;&amp;lt;&amp;lt; d"T{sn)gK[ena o n:g}n&lt;/span&gt;
+&lt;span class="go"&gt;&amp;lt;&amp;lt;&amp;lt; d"T{sn)gK[ena&lt;/span&gt;
+&lt;span class="go"&gt;n:g}n&lt;/span&gt;
+&lt;span class="go"&gt;&amp;lt;&amp;lt;&amp;lt; d"T{sn"gyT g](T{ tTuna&lt;/span&gt;
+&lt;span class="go"&gt;&amp;gt;{ilT}ilt kyg"] {TlTe] li)) )i"]'1&lt;/span&gt;
+&lt;span class="go"&gt;   ,[)T nE"]h[e&amp;lt;n= )[eT b= [e Eyghd)T&amp;lt;&lt;/span&gt;
+&lt;span class="go"&gt;FTuc{{g{1 r"gyT g](T{ tTur&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 

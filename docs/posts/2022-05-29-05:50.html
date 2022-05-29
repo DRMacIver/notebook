@@ -224,14 +224,14 @@ but it's also worth reading Gary Klein's "Sources of Power" and maybe
 some of his other work.)</p>
 <h3>Theory helps you remember examples</h3>
 <p>Let's look at our example again:</p>
-<div class="codehilite"><pre><span></span><span class="err">&gt;&gt;&gt; user = {}</span>
-<span class="err">&gt;&gt;&gt; user["login"] = "Bob"</span>
-<span class="err">&gt;&gt;&gt; user["login"]</span>
-<span class="err">"Bob"</span>
-<span class="err">&gt;&gt;&gt; user["some other key"]</span>
-<span class="err">Traceback (most recent call last):</span>
-<span class="err">   File "&lt;stdin&gt;", line 1, in &lt;module&gt;</span>
-<span class="c">KeyError: 'some other key'</span>
+<div class="codehilite"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">user</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">user</span><span class="p">[</span><span class="s2">"login"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"Bob"</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">user</span><span class="p">[</span><span class="s2">"login"</span><span class="p">]</span>
+<span class="go">"Bob"</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">user</span><span class="p">[</span><span class="s2">"some other key"</span><span class="p">]</span>
+<span class="gt">Traceback (most recent call last):</span>
+<span class="gr">   File "&lt;stdin&gt;", line 1, in &lt;module&gt;</span>
+<span class="gr">KeyError</span>: <span class="n">'some other key' </span>
 </pre></div>
 <p>Do you think you could recreate this example from memory? I certainly
 could, and I think most programmers could with only a little bit of
@@ -239,14 +239,14 @@ thought. It possibly wouldn't be character by character perfect, but you
 could certainly get the right general idea.</p>
 <p>Now consider the following highly readable example. Do you think you
 could recreate <em>this</em> from memory?</p>
-<div class="codehilite"><pre><span></span><span class="o">&lt;&lt;&lt;</span> <span class="n">d</span><span class="s">"T{ o Bm</span>
-<span class="o">&lt;&lt;&lt;</span> <span class="n">d</span><span class="s">"T{sn)gK[ena o n:g}n</span>
-<span class="o">&lt;&lt;&lt;</span> <span class="n">d</span><span class="s">"T{sn)gK[ena</span>
-<span class="nl">n</span><span class="p">:</span><span class="n">g</span><span class="p">}</span><span class="n">n</span>
-<span class="o">&lt;&lt;&lt;</span> <span class="n">d</span><span class="s">"T{sn"</span><span class="n">gyT</span> <span class="n">g</span><span class="p">](</span><span class="n">T</span><span class="p">{</span> <span class="n">tTuna</span>
-<span class="o">&gt;</span><span class="p">{</span><span class="n">ilT</span><span class="p">}</span><span class="n">ilt</span> <span class="n">kyg</span><span class="s">"] {TlTe] li)) )i"</span><span class="p">]</span><span class="err">'</span><span class="mi">1</span>
-   <span class="p">,[)</span><span class="n">T</span> <span class="n">nE</span><span class="s">"]h[e&lt;n= )[eT b= [e Eyghd)T&lt;</span>
-<span class="n">FTuc</span><span class="p">{{</span><span class="n">g</span><span class="p">{</span><span class="mi">1</span> <span class="n">r</span><span class="s">"gyT g](T{ tTur</span>
+<div class="codehilite"><pre><span></span><span class="go">&lt;&lt;&lt; d"T{ o Bm</span>
+<span class="go">&lt;&lt;&lt; d"T{sn)gK[ena o n:g}n</span>
+<span class="go">&lt;&lt;&lt; d"T{sn)gK[ena</span>
+<span class="go">n:g}n</span>
+<span class="go">&lt;&lt;&lt; d"T{sn"gyT g](T{ tTuna</span>
+<span class="go">&gt;{ilT}ilt kyg"] {TlTe] li)) )i"]'1</span>
+<span class="go">   ,[)T nE"]h[e&lt;n= )[eT b= [e Eyghd)T&lt;</span>
+<span class="go">FTuc{{g{1 r"gyT g](T{ tTur</span>
 </pre></div>
 <p>If you haven't figured out the trick, this is the same example as above,
 I've just jumbled all the letters through a mapping that replaces them
