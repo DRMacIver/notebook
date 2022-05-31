@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+DRMacIver's Notebook: Intelligence problems
+    </title>
+
+    <meta property="og:title" content="Intelligence problems">
+
+    <meta property="og:url" content="https://notebook.drmaciver.com/posts/2022-05-31-11:06.html" />
+    <link rel="canonical" href="https://notebook.drmaciver.com/posts/2022-05-31-11:06.html" />
+    <script src="https://hypothes.is/embed.js" async></script>
+
+
+    <meta name="twitter:card" content="summary" />
+
+    <meta property="og:creator" content="@DRMacIver">
+
+    <link rel="stylesheet" href="/pygments.css"/>
+    <link rel="stylesheet" href="/tufte.css"/>
+    <link rel="stylesheet" href="/latex.css"/>
+    <link rel="stylesheet" href="/drmnotes.css"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
+});
+
+MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
+  console.log(message)
+});
+
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169185204-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169185204-1');
+</script>
+
+  </head>
+
+  <body>
+    <article>
+        <h1><a href="/">DRMacIver's Notebook</a></h1>
+        <p class=subtitle>Intelligence problems</p>
+
+        
+
+<section id="the-post">
+<p class=subtitle>Intelligence problems</p>
+<dl class=metadata>
+<dt>Published</dt>
+<dd class="post-date">2022-05-31</dd>
+</dl>
+
+<p>Here's a draft I abandoned basically because I find this subject extremely
+stressful to talk about and low-key expect people to shout at me every time
+I talk about it.</p>
+<p>This sucks, because it's an important subject to me that I genuinely think
+most people I know would benefit from understanding better, so I've decided
+that even if I can't bring myself to finish this as is I'm just going to post
+what I've got and hope it's useful to people.</p>
+<p>Please don't shout at me about it. I'll be sad.</p>
+<h3>Unspoken privileges</h3>
+<p>I need to start with some theory, because it will help contextualise the
+thing I want to actually talk about today.</p>
+<p>The feminist concept of "privilege" is very important and useful, and
+also tends to get people's backs up because people (including those who
+are most willing to level it as an accusation at others) rarely like being
+called privileged.</p>
+<p>(Ages ago I saw a proposal to replace the term with "blind spots", but it
+never caught on. Unclear to what degree that was because it's kinda
+ableist, and to what degree that was because it was much harder to hurl
+it as an insult at your opponent in a fight on the internet.)</p>
+<p>I tend to use a slightly modified version which replaces "privilege"
+with "privileges". It's not a question of whether you are or aren't
+privileged, but instead what privileges you do and don't have. We all
+have privileges, but some of us have significantly more privileges than
+others, and many of those privileges are in some way connected to shared
+characteristics - e.g. I have male privileges, those privileges
+associated with being male, or with being white, two of the main sources of
+privilege typically discussed in feminist contexts.</p>
+<p>A "privilege" in this context just means any benefit I typically get or,
+in particular, any source of problems that I get not to have. Anything
+that makes your life easier or better, and is not reliably shared with
+everyone else. e.g. due to the aforementioned being white and male,
+there are a lot of contexts I can just walk into and assume (mostly
+correctly) that I will be taken seriously and this does indeed make my
+life easier and better.</p>
+<p>But there are a number of privileges that I don't think get talked about
+enough, because it's considered in poor taste to admit that you have
+them, and I think this is a major problem because these are also
+privileges that I think are among the best predictors of success.</p>
+<p>The chief unspoken privileges of this form that I'm aware of are being
+rich, being attractive, and being smart. You're not supposed to talk
+about them because doing so seems like boasting. It's safe to talk about
+white privilege, or male privilege, or to some degree middle class
+privilege, because you're able to talk about them on the assumption that
+these in some sense "should" be value neutral. But when you talk about
+wealth, attractiveness, or intelligence, there is always an implied
+subtext of "These are the privileges I have for being better than
+you..." and that goes down about as well as you might expect.</p>
+<p>This results in a peculiar norm in a lot of lefty spaces where you are
+supposed to acknowledge all your privileges <em>except for some of the most
+impactful ones, which you are encouraged to downplay</em>. I consider this a
+tad suspect.</p>
+<p>More importantly, this results in a very distorted view of the world,
+where people are not properly able to understand the advantages that
+they have and others lack. I think it's important to understand these
+clearly, both in order to have more empathy for others and the problems
+they face, and also to understand <a href="https://notebook.drmaciver.com/posts/2020-07-15-09:33.html">the nice problems to
+have</a> that
+they bring you.</p>
+<h3>What is intelligence?</h3>
+<p>The one I want to talk about today is intelligence. First I need to
+convince you that intelligence is a real thing. Fortunately, you
+probably already believe this really, but I'm going to spend some time
+convincing you of it anyway so that we're on the same page.</p>
+<p>First, let's talk about IQ, because a lot of misconceptions about
+intelligence come down to politically-motivated (in both directions)
+misunderstandings about IQ.</p>
+<p>You've probably heard a lot about how IQ is bullshit. This is generally
+coming from a very well-intentioned place, but is wrong. There are many
+exaggerated or incorrect arguments made on the basis of it, but IQ
+itself is extremely well-validated psychometrics which serves a
+genuinely useful role, especially for diagnostic purposes during
+education. e.g. the reason I've had a proper IQ test was to diagnose a
+learning disability that manifested as having <em>extremely</em> large
+differences in my verbal and spatial IQs (these gaps have mostly closed
+now), which has been very helpful for understanding my own thinking.</p>
+<p>IQ is not a perfect measure of intelligence by any means, but nobody
+serious claims it is. I highly recommend the book "Intelligence: A Very
+Short Introduction" by Ian Deary for a review of the literature, and the
+strengths and limitations of IQ. It's also just an excellent and very
+readable example of good science communication.</p>
+<p>So... given that, what is IQ?</p>
+<p>Well, first off, IQ isn't really one thing. It is a family of different
+IQ tests all of which are trying to do roughly the same thing and which
+are normalised to the same distribution of scores, but are imperfectly
+predictive of each other. That means that if you took two different IQ
+tests, you would not expect to get the same result on each. This is
+fine, because IQ is not intended to be an absolute measure of anything
+in particular, it's a score that indicates general tendencies and is
+usefully descriptive.</p>
+<p>What's it describing? Well, "intelligence" obviously, but what's that?</p>
+<p>It is, again, not entirely one thing. And this makes sense, right? If
+you consider, say, a brilliant scientist and a brilliant novelist, there
+are clearly different senses in which you'd expect them to be brilliant
+- e.g. one would be better with words and attention to detail, one with
+numbers and abstraction.</p>
+<p>But, and here is the bit that is perhaps surprising, generally you would
+also expect each of them to be better at the other's area of brilliance
+than a typical member of the population. Although they are distinctively
+brilliant in their different ways, they tend to be better at a whole
+bunch of seemingly unrelated things.</p>
+<p>This is the basic empirical claim that underlies IQ's utility: There are
+a number of different tests we can perform that you might reasonably
+consider "tests of intelligence" and, surprisingly, they are typically
+positively correlated with each other. That is, good performance on one
+test tends to predict good performance on another, despite the fact that
+when you compare two people one person can do better on one and worse on
+another.</p>
+<p>A good analogy here might be strength. Someone who can bench press a
+higher weight than me can probably also do more push ups than me, or
+more reps in their deadlift at the same
+weight (None of these are particularly impressive bars to clear, mind, because I
+desperately need to start going back to the gym).</p>
+<p>We could take a number of measures like this and turn them into an SQ, a
+strength quotient, that measures your aggregate strength, and it would
+function in very similar ways to an IQ as a general test of ability -
+for tasks where you wanted someone strong, someone with a higher SQ is
+typically likely to be better. For a specific strength task and two
+people with relatively similar SQs it's not terribly surprising if one
+is much better than the other, but when there is a very large SQ
+difference you should at least be surprised when the person with the
+lower SQ outperforms the larger. The world's best dead-lifter and the
+world bench press record holder probably have quite similar SQs, but
+sometimes one will be better at something and sometimes the other, but
+they're both going to be better than me at almost everything strength
+related.</p>
+<p>IQ is similar to our hypothetical SQ, but instead of things like bench
+press weight, push ups, etc. we instead test things like memory,
+performing complex tasks under time pressure, speed of generating
+associations, etc.</p>
+<p>It's also different from SQ, in that different things are empirically
+true about it. e.g. one of the surprising and deeply frustrating facts
+about IQ is that it mostly seems pretty stable over your lifetime. Some
+movement is possible (and there is also just random variation based on
+the particular test you take and what sort of day you're having), but
+generally IQ seems better at reflecting some underlying hard to
+influence capabilities than SQ, which responds well to exercise. It's
+possible that there are some better tests of underlying strength
+capabilities that are less amenable to training that would make for a
+similarly stable SQ, but if so I don't know what they are.</p>
+<p>The following are things I think are characteristically easier for
+people with high intelligence:</p>
+<ul>
+<li>
+<p>Quickly picking up new information and skills.</p>
+</li>
+<li>
+<p>Following complex arguments and instructions.</p>
+</li>
+<li>
+<p>Holding multiple things in mind at once.</p>
+</li>
+<li>
+<p>Recalling relevant information to the current situation.</p>
+</li>
+</ul>
+<p>Facility with these things is something that people genuinely vary on.
+Most of it improves with practice, but even the ones which improve with
+practice tend to improve <em>more</em> with practice if you're naturally smart,
+in much the same way that you get stronger with practice but your build,
+nutrition, and general genetic makeup determines a lot about how well
+that works for you.</p>
+<p>A wrong but useful analogy here is that smarter people are running their
+brains on better hardware - e.g. faster processing, more memory, larger
+hard drive, etc. If you're less smart, you can probably still do
+everything that a smarter person can do, but at some point the
+"software" becomes unusably slow to the point where it's too frustrating
+to be worth doing, at which point you might either have to ask someone
+else to do it or find an approach better suited to your current
+strengths (e.g. by externalising more of the process when you hit the
+limits of what you can do in your head).</p>
+<h3>Intelligence isn't everything</h3>
+<p>I want to be clear, I don't think that your intelligence defines you.
+Many people recognised as geniuses had fairly unremarkable IQs, and many
+people with high IQs don't achieve anything particularly impressive.</p>
+<p>In my anecdotal experience, very few people are bottlenecked on their
+intelligence, because people tend to naturally gravitate to doing things
+that are about right for them, so the result is that people are often
+doing jobs that someone much less smart than them <em>would</em> be bottlenecked
+on intelligence in, and someone much smarter than them would find very
+boring, but there's usually a pretty wide band around any given job of
+people who will basically be fine.</p>
+<p>(I think I wanted to include something about how intelligence also
+doesn't determine your moral worth etc. I don't have anything non-obvious
+to say here other than duh intelligence doesn't determine your moral
+worth, and I'm not going to try something long about that now because it
+will result in me not posting this instead)</p>
+<h3>Why am I telling you this?</h3>
+<p>I am telling you this because, if you read my work, I assume you are to
+some large degree like me. In particular I expect you are smarter than
+average, possibly significantly so. I say this not to flatter you, it's
+just really unlikely that you'd be interested in my
+overly-intellectualised view of the world if that was not the case.</p>
+<p>If you're also like me politically or emotionally, you've probably spent
+a lot of time in denial about the significance of this, and as a result
+being quite unfair to both yourself and the people around you. <a href="https://drmaciver.substack.com/p/how-to-be-smarter">I've
+previously made strong claims about the irrelevance of empirical
+questions about
+intelligence</a> and I
+think these are still <em>mostly</em> right, but miss an important point: It's
+valid to have this sort of growth mindset attitude to intelligence for
+your <em>own</em> abilities, but when interacting with other people it results
+in being unkind and pushy in ways that do not help you or them.</p>
+<p>There are things you need to know about how intelligence affects you and
+others when you are smarter than most of the people around you, and
+because of the unspoken privilege nature of intelligence probably nobody
+has ever really sat you down and helped you understand those things.
+Certainly I was well into my thirties before I finally properly started
+internalising this.</p>
+<p>People are often impressed with things I do - this newsletter and
+<a href="https://github.com/HypothesisWorks/hypothesis">Hypothesis</a> being major
+examples - and I'm usually inclined to dismiss this. Anyone could do the
+things I do, right? It's just a matter of hard work, a few tricks, and
+an interest in doing it.</p>
+<p>I do, in fact, think this is true to some degree. Given the right
+training and willingness to apply themselves, I think most people could
+do most of the things I do. Also I think it would be vastly harder for
+them to do so, to the point where it might not be worth it. If I see
+something instantly that you could see after sitting down for an hour,
+or even a couple of minutes, it will often be worth me doing things that
+it's not worth you doing.</p>
+<p>When I was younger, this resulted in me being very impatient with
+people. There were so many things that are so <em>easy</em> that it seemed like
+nobody could be bothered to do. Did they just not actually care? Were
+they lazy?</p>
+<p>Over time I learned to be less of a dick about it, and just got better
+at explaining things to others, helping them out, and generally
+expecting less of them. This was certainly politer than my younger
+behaviour, but I don't necessarily think it was fairer, because there
+was always a sort of premise that if I show you how this works then
+you'll be able to do it as well as me, right?</p>
+<p>The result was a great deal of low grade disappointment on my end,
+because the answer is rarely that they can do the things I am explaining
+as well as I can. There will be plenty of things they can do <em>better</em>
+than me, that play to their strengths and interests that I lack, but if
+it's something I've spent enough time, interest, and effort on (even if
+it felt this way) to get very good at it, chances are it's actually very
+hard for them to catch up with me.</p>
+<p>I think the result is that over the years I've been, inadvertently,
+rather discouraging to some people, by telling them that things are easy
+that aren't easy, or that they can do things that realistically they're
+never going to do.</p>
+<p>"You can do it" is only a reassuring message if they actually can do it,
+and if you've accurately conveyed the work that it takes to do it.
+Without that, you're just setting people up for disappointment.</p>
+<p>Chances are, you're probably making this mistake too. If you often feel
+frustrated with the people around you for just not getting it, or for
+being weirdly slow or bad at things you find easy, it's pretty likely
+that they're not actually slacking off, those things are just much
+easier for you than they are for them.</p>
+<h3>This sucks for you too</h3>
+<p>If you are significantly smarter than average, either uniformly across
+the board or in some particular way, your mind literally works
+differently from the people around you. There's a word for that:
+Neurodivergence.</p>
+<p>There's a general phenomenon of "gifted kid syndrome" that Twitter gets
+in a furore about every six months where a bunch of smart kids talk
+about how traumatic they found their childhood experience of that, and
+the rest of Twitter is about equally divided between calling them
+entitled tech bros (regardless of whether they are male or work in tech)
+and going "Oh man this is great I haven't had such a good opportunity to
+bully nerds in years". Generally there's a large subtext of "You're
+talking about an advantage, therefore you don't get to complain about
+the negative consequences of having that advantage for you, because
+other people have it worse". I am, to put it mildly, not a fan of this
+messaging.</p>
+<p>In general, one of the worst problems with problems that derive from
+being smarter than the people around you is that they are almost by
+definition unrelatable, and people try to make you feel bad for having
+them. This is a central feature of what I call <a href="https://notebook.drmaciver.com/posts/2020-07-15-09:33.html">Nice problems to
+have</a>:</p>
+<blockquote>
+<p>What we generally mean when we say "nice problem to have" is that
+the <em>preconditions</em> for having this problem are nice to have. i.e. you
+cannot have this problem unless some other nice thing happens first.
+This is not at all a reliable predictor of the amount of suffering
+involved.</p>
+<p>(...)</p>
+<p>The thing is, by definition, "nice problems to have" are ones that
+are not going to be shared by a lot of people (otherwise the
+preconditions would just be normal behaviour and it wouldn't be a
+nice problem to have). As a result:</p>
+<ol>
+<li>
+<p>Most people probably won't be able to relate to it, because their
+    lived experiences will be so different.</p>
+</li>
+<li>
+<p>People will be envious of you for the nice thing.</p>
+</li>
+</ol>
+<p>Thus the defining characteristic about nice problems to have is not
+that they are nice, but that you will be afforded no sympathy for
+having them. Nice problems to have are the opposite of nice: They
+isolate you from the ability to <a href="https://drmaciver.substack.com/p/you-should-complain-about-it">complain about
+them</a>,
+which removes a major bonding activity with people who have not been
+successful in the same way as you, and also causes you to feel worse
+about the problems with those who do not share your burden.</p>
+</blockquote>
+<p>The distinguishing feature of high intelligence is that many things are
+easy for you that are not easy for other people. On the one hand this is
+great, on the other hand this has the knock on effect that you are
+constantly under-stimulated, because the world is not designed on the
+assumption that you find this easy.</p>
+<p>In order to get a sense of what this is like, imagine the following:
+You, as you are now, are forced to attend class with a bunch of 7 year
+olds doing their times tables. You are required to pay attention. If you
+do not pay attention, you will be scolded for this. If you explain you
+already understand the material, you will be scolded for disrupting the
+class. You have no choice but to sit there, "learning" material you
+thoroughly understand, day in day out, while those around you struggle
+with it for reasons you can barely understand and wouldn't be allowed to
+help with even if you did because that too would be disruptive.</p>
+<p>This is pretty much my experience of most classes growing up, and I
+think that's quite typical for anyone reasonably smart, because classes
+at school are generally not that hard in the first place. This results
+in a lot of complaints that are not particularly well received because
+they sound like normal problems. A lot of modern childhood just <em>is</em>
+boring, so when someone complains about that experience it sounds like
+they're complaining about a normal childhood
+experience (Which, to be clear, is very reasonable to do in its own right. It's
+<em>extremely bad</em> that childhood is boring), and easy to miss that they are
+describing a much more boring experience than you're imagining.</p>
+<h3>Postscript</h3>
+<p>This piece is definitely a combination of two problems: It's very stressful
+to write, and also I as usual had to do a lot of work explaining what I consider
+very 101 level context. I wish I could write a piece where I don't have to
+spend the first half of it explaining both "Opression is a real thing" and
+"Intelligence is a real thing", but a lot of people need one or both of
+these, and most people who don't need one of these very much need the other -
+partly this piece was born out of my frustration with having to explain to
+so many very well intentioned friends of mine that no IQ isn't actually fake
+I promise.</p>
+<p>This is also a good example of explanation as defence - I do tend to over-explain
+when I get stressed, on the hope that once people see how very reasonable I'm
+being they won't be mad. This is exactly as bad a strategy as it sounds.</p>
+<p>Anyway I'd like to be able to write about things like this that are important
+and stressful, but apparently I'm not currently able to do that. A pseudonym
+might help, but it's not currently worth it to me to have writing that isn't
+well integrated into my main body of work.</p>
+</section>
+
+    </article>
+<footer>
+Copyright David R. MacIver.
+
+CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
+</footer>
+  </body>
+</html>
