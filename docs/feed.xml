@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2022-06-05T14:14:58+01:00</updated>
+  <updated>2022-06-05T14:26:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,150 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2022-04-30-11:56.html</id>
-    <title>Notes towards a name</title>
-    <updated>2022-04-30T11:56:00+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Notes towards a name&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2022-04-30&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;&lt;a href="https://twitter.com/connerdelights/status/1519705466854539265"&gt;Andrew Conner&lt;/a&gt; asked on Twitter "What would you call this?" where "this" means "the thing that is like philosophy but not", and this lead to a discussion between me, him, and David Chapman in which we all expressed our frustration as to what it is we actually &lt;em&gt;do&lt;/em&gt;.  More specifically, what do we call it?
-None of us know.&lt;/p&gt;
-
-
-&lt;p&gt;Hubristically, I replied, "This seems like a dumb problem for us to have. Maybe I'll fix it". So here I am, trying to fix it. These are some rough notes that I am writing because it is useful to write out my thoughts on the subject, and sharing because they may be interesting.&lt;/p&gt;
-
-
-&lt;h3&gt;What is it I actually do?&lt;/h3&gt;
-
-
-&lt;p&gt;I think the best way I can explain what I do is this: You know how some days you find yourself thinking "Holy shit why does being human not come with a user manual?". I'm trying to write that user manual.&lt;/p&gt;
-
-
-&lt;p&gt;This is, of course, a completely impossible task. Such a user manual would be unusably vast, and I am not qualified to write more than a tiny fraction of it. That's OK. I'm not trying to write more than a tiny fraction of it, and most people don't need more than a tiny fraction of it.&lt;/p&gt;
-
-
-&lt;p&gt;It's perhaps more accurate to say that what I am trying to do is develop the general skill of writing the thing that you would get if you were to look up the section of the humanity user manual that you need right now.&lt;/p&gt;
-
-
-&lt;p&gt;My basic question is "What is it like to be human and how can we be better at it?"&lt;/p&gt;
-
-
-&lt;p&gt;David Chapman has as a tagline "Better ways of thinking, feeling, and acting" and that definitely feels like part of what I do.&lt;/p&gt;
-
-
-&lt;p&gt;"How to live" is maybe closer. It's a bit too close to the Aristotelean "How to have a good life" (which is not a frame I like).&lt;/p&gt;
-
-
-&lt;p&gt;Perhaps "How to think about living" is closer?&lt;/p&gt;
-
-
-&lt;p&gt;My tagline for my newsletter is "Overthinking everything", which is a bit tongue in cheek, but I do think captures something important.&lt;/p&gt;
-
-
-&lt;p&gt;Perhaps "Tools of thought for living"? Or "Tools for living".&lt;/p&gt;
-
-
-&lt;p&gt;"How to think about living in a way that helps you flourish"&lt;/p&gt;
-
-
-&lt;p&gt;I have always liked "Human flourishing" as a turn of phrase. It's a little connected up to virtue ethics and the like, and I do tend to reject the eudaimonic frame of "happiness" as the end goal of life, partly because I don't think framing life as having a goal is helpful.&lt;/p&gt;
-
-
-&lt;p&gt;There is something fundamentally ethical about my project though. "How to live" is very much the classical point of ethics, although not of modern ethics.&lt;/p&gt;
-
-
-&lt;p&gt;This is in general a theme of what I do. It's &lt;em&gt;like&lt;/em&gt; a lot of things, but as they were meant to be and good though.&lt;/p&gt;
-
-
-&lt;p&gt;I do think that what distinguishes me from philosophy in general is that I'm more interested in the practical side of it. If you consider the think/feel/act split, I'm interested in all three but my goals are in decreasing order of priority:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Act&lt;/li&gt;
-&lt;li&gt;Feel&lt;/li&gt;
-&lt;li&gt;Think&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;This is funny because I'm primarily working on the think layer, but that's because it's a very high leverage layer (especially for me). How you think has a huge amount of impact on what you do and how you feel about it, and I'm trying to use thinking to improve your experience of the world. It is a focus on right action rather than right thought, and in getting these all to line up in a way that you feel good about.&lt;/p&gt;
-
-
-&lt;p&gt;This is part of why I'm not sure I'm a fan of applying the "philosophy" label to what I do. I don't love wisdom, I just say that to get it into bed.&lt;/p&gt;
-
-
-&lt;p&gt;It does tie back into the virtue ethics thing again, but I do like "phronesis" as a word - practical wisdom. And to a large degree this &lt;em&gt;is&lt;/em&gt; what I work on. Practical wisdom for living.&lt;/p&gt;
-
-
-&lt;h3&gt;What does David Chapman do?&lt;/h3&gt;
-
-
-&lt;p&gt;Honestly, beats me.&lt;/p&gt;
-
-
-&lt;p&gt;&lt;a href="https://twitter.com/DRMacIver/status/1519788775337074695"&gt;I said on Twitter&lt;/a&gt; that part of my problem with coming up with a common name is:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;sometimes I feel like you and I are working on basically the same problem and sometimes I feel like you and I are working on completely unrelated projects, and I'm not sure I could come up with a coherent justification for either feeling.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;I like David and I value our conversations, but I really don't know that I know what his project is about, and I suspect he feels the same way about me.&lt;/p&gt;
-
-
-&lt;p&gt;So let's start with how David and I differ (aside from in our last names).&lt;/p&gt;
-
-
-&lt;p&gt;I think his &lt;a href="https://metarationality.com/"&gt;metarationality&lt;/a&gt; project is probably heavily overlapping with mine, in that we're both concerned with the problem of how people think in practical contexts and how to do that better, but I think of his main work (certainly it's his Twitter handle!) is Meaningness, and this is the one I can't really tell if it's at all similar to what I'm doing.&lt;/p&gt;
-
-
-&lt;p&gt;If you look at &lt;a href="https://meaningness.com/"&gt;meaningness.com&lt;/a&gt; his tagline is:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Better ways of thinking, feeling, and acting—around problems of meaning and meaninglessness; self and society; ethics, purpose, and value.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;And we're kinda overlapping on all of this except... I don't feel like I'm particularly invested in the questions of meaning and purpose, which I think is rather his whole thing:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;This book is about meaningness. “Meaningness” is a word I invented, referring to the quality of being meaningful and/or meaningless.&lt;/p&gt;
-&lt;p&gt;The word “meaning” has two quite different meanings in English. It can refer to the meaning of symbols, such as words and road signs. This book is not about that kind of meaning.&lt;/p&gt;
-&lt;p&gt;People also speak of “the meaning of life.” That is the sort of meaningness this book is about. So I apply “meaningness” only to the sorts of things one could describe as “deeply meaningful” or “pretty meaningless.” The book is about matters such as purpose, ethics, and selfhood.&lt;/p&gt;
-&lt;p&gt;Meaningness is a quality, not a thing. I don’t think there is a definite meaning of life. Meaningness is always nebulous: indefinite, uncertain, ambiguous.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;And I must admit I don't find this very personally interesting. It's not &lt;em&gt;not&lt;/em&gt; connected to my project, but I think if someone came to me talking about this as their core issue I would probably start by checking if they were depressed, or if their life sucked in concrete manners.&lt;/p&gt;
-
-
-&lt;p&gt;I do basically buy &lt;a href="https://twitter.com/eggprophet/status/1470425201615773702"&gt;eggprophet's model&lt;/a&gt;:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;what if ur complicated, high status problems like "meaning crisis" "culture war" "societies fall in epicureanism" are actually simple, low-status problems like "bored" "want community" "need blanket"&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;"Bored" definitely feels closer to any problem I want to address than "lack of meaning" does.&lt;/p&gt;
-
-
-&lt;p&gt;I want to be clear, I don't mean this as a dismissal of David's project. I love it when other people get deeply invested in things that I don't find very interesting, because then I can come in afterwards and extract the bits that I care about and wouldn't have figured out on my own. But this does suggest that David's meaningness project and my project are not necessarily that closely tied.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2022-04-30-11:56.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-05-25-09:47.html</id>
     <title>How to be lucky</title>
@@ -1912,7 +1768,7 @@ out of control or away from us.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-06-05-14:11.html</id>
     <title>How can we create healthy geniuses?</title>
-    <updated>2022-06-05T14:14:58+01:00</updated>
+    <updated>2022-06-05T14:17:42+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;How can we create healthy geniuses?&lt;/p&gt;
@@ -2115,5 +1971,144 @@ punished, so they learn "not to" care about it.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2022-06-05-14:11.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2022-06-05-14:26.html</id>
+    <title>Life is made of found things</title>
+    <updated>2022-06-05T14:26:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Life is made of found things&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2022-06-05&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Here's another piece from draft bankruptcy. I don't seem to have got very far with it and don't know where I was going with it, but what's here is interesting.&lt;/p&gt;
+
+
+&lt;h3&gt;Historical contingency&lt;/h3&gt;
+
+
+&lt;p&gt;An early event that I can point to as crucial to how my life has turned
+out was a Christmas gift from a family friend, of the GURPS second
+edition basic set (the rules for a roleplaying game).&lt;/p&gt;
+
+
+&lt;p&gt;This isn't because GURPS has been a particularly major influence on my
+life (Though it was honestly quite good creativity training, and introduced me
+to the warehouse 23 basement &lt;a href="https://notebook.drmaciver.com/posts/2021-07-11-11:03.html"&gt;which is also very good for grinding a
+particular skill
+set&lt;/a&gt;), it just set
+certain wheels in motion. It got me into particular online communities,
+where I made a friend, Greg, who was a couple years older than me and
+already at Cambridge university. When it came to applying to Cambridge I
+didn't honestly have much basis for deciding which college I went to,
+and he made a good case for his (Pembroke), which checked out and so I
+applied there.&lt;/p&gt;
+
+
+&lt;p&gt;This may seem like a pretty bad way to pick a college, and perhaps it
+was, but I think the reality was that there were many equally good
+options, and not much basis to choose between them, so picking one and
+verifying that it works well isn't a bad way to do it. I can't say
+Pembroke was the optimal choice, but it was a fairly respectable
+&lt;a href="https://www.drmaciver.com/2019/10/vocabulary-building-satisficing/"&gt;satisfice&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Once at Pembroke, I met particular people, made particular friends, had
+particular supervisors and life advice. Other colleges would probably
+have been about equally good - in some ways better, in some ways worse,
+but importantly they would have been &lt;em&gt;different&lt;/em&gt;. I'd have met different
+people, who would have influenced me in different ways, and my life path
+would have diverged substantially as a result.&lt;/p&gt;
+
+
+&lt;p&gt;Given how large the effect of a single Christmas gift was, it seems fair
+to say that at some point in those four years something would have gone
+differently enough that I'd be a very different person today for the
+change.&lt;/p&gt;
+
+
+&lt;p&gt;This is &lt;em&gt;historical contingency&lt;/em&gt;. The way your life turns out depends a
+great deal on prior conditions, and on the choices you make, and the
+type of person you are, but it also just depends on chance happenstance
+and the knock on effects of it.&lt;/p&gt;
+
+
+&lt;h3&gt;Two-road chances&lt;/h3&gt;
+
+
+&lt;p&gt;I'm a big fan of the book "Trickster makes this world".&lt;/p&gt;
+
+
+&lt;p&gt;I found this book because it's recommended in Chuck
+Palahniuk's (Yes, the fight club guy) "Consider This", a
+book about writing, where he lists it among a number of other books that
+will fundamentally change your view of the world. I think he was right,
+but I'd perhaps struggle to describe exactly how. Let me try.&lt;/p&gt;
+
+
+&lt;p&gt;(Reader: I didn't try)&lt;/p&gt;
+
+
+&lt;h3&gt;More contigency&lt;/h3&gt;
+
+
+&lt;p&gt;This was originally a very long footnote, but my notebook doesn't currently support footnotes (I'd like it to, but it's fiddly for various reasons)&lt;/p&gt;
+
+
+&lt;p&gt;I read "Consider This" because someone on &lt;a href="https://discord.gg/8GtRapR"&gt;bookchat
+discord&lt;/a&gt; recommended it, in the #writing
+channel. Bookchat discord exists... I don't remember exactly why. Doing
+some research on Twitter identifies the seed of the idea here.&lt;/p&gt;
+
+
+&lt;blockquote class="twitter-tweet"&gt;&lt;p dir="ltr" lang="en"&gt;&lt;a href="https://t.co/ky6KcwnCTN"&gt;https://t.co/ky6KcwnCTN&lt;/a&gt; gives me so many feels.&lt;br/&gt;&lt;br/&gt;A thing I've been finding deeply frustrating is the difficulty of talking about how much I read without making everyone around me (typically fellow readers) feel guilty about their comparatively smaller reading list.&lt;/p&gt;— David R. MacIver (@DRMacIver) &lt;a href="https://twitter.com/DRMacIver/status/1133686806711590912?ref_src=twsrc%5Etfw"&gt;May 29, 2019&lt;/a&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;&lt;script async="" charset="utf-8" src="https://platform.twitter.com/widgets.js"&gt;&lt;/script&gt;&lt;/p&gt;
+
+
+&lt;p&gt;I can't remember exactly why I read that. Probably because I'd read "The
+Year of Reading Dangerously", which I'd read... I think as a result of a
+family Christmas present project I was doing? I think it was 2018 that I
+created a small family library, which was well received but didn't
+actually result in much increase in reading I think.&lt;/p&gt;
+
+
+&lt;p&gt;I didn't actually publicise the discord until some months later:&lt;/p&gt;
+
+
+&lt;blockquote class="twitter-tweet"&gt;&lt;p dir="ltr" lang="en"&gt;I've just remembered that ages ago I was talking about starting a book chat group and got as far as setting up a discord server for it and then got distracted. I still like the idea, so lets give it a go. &lt;a href="https://t.co/MoYdiUAne3"&gt;https://t.co/MoYdiUAne3&lt;/a&gt;&lt;/p&gt;— David R. MacIver (@DRMacIver) &lt;a href="https://twitter.com/DRMacIver/status/1203288683262218240?ref_src=twsrc%5Etfw"&gt;December 7, 2019&lt;/a&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;&lt;script async="" charset="utf-8" src="https://platform.twitter.com/widgets.js"&gt;&lt;/script&gt;&lt;/p&gt;
+
+
+&lt;p&gt;I believe this was my first foray into discord, which I knew about
+because of a conversation with a friend of a friend some time earlier
+(probably in 2018?) in which he expounded on how discord was the future
+of social and we were all like "What? Discord? Isn't that a gaming
+thing?".&lt;/p&gt;
+
+
+&lt;p&gt;I can chart this lineage further, but it's not that exciting. Mostly I'm
+pointing out that a lot of historical contingency happened here too.&lt;/p&gt;
+
+
+&lt;h3&gt;Postscript&lt;/h3&gt;
+
+
+&lt;p&gt;I apparently keep failing to write about "Trickster makes this world", as this was also the point at which I abandoned &lt;a href="https://notebook.drmaciver.com/posts/2022-05-25-09:47.html"&gt;How to be lucky&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;In general I am surprisingly bad at writing about books I've read.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2022-06-05-14:26.html" rel="alternate"/>
   </entry>
 </feed>
