@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2022-06-05T15:15:00+01:00</updated>
+  <updated>2022-06-05T15:16:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,378 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2022-05-29-05:50.html</id>
-    <title>What every programming tutorial gets wrong</title>
-    <updated>2022-05-29T08:43:46+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;What every programming tutorial gets wrong&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2022-05-29&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Another piece of draft bankruptcy. This is my attempt to explain a common
-failure mode of programming tutorials. I got quite far, but eventually
-abandoned it.&lt;/p&gt;
-
-
-&lt;h3&gt;Scene setting&lt;/h3&gt;
-
-
-&lt;p&gt;A while ago I was helping teach a coding workshop to a bunch of people
-who had never coded before, and we were working through the written
-materials which were very "Do this, then do that". Copy this code and
-you should see this happen, etc.&lt;/p&gt;
-
-
-&lt;p&gt;At some point a student asked me "OK, but what is actually going on
-here? What does any of this mean? I can follow the steps, but I have no
-idea what is going on."&lt;/p&gt;
-
-
-&lt;p&gt;This was an incredibly reasonable question and I'm glad she asked it of
-me, and that I could answer it, because I can't imagine that she would
-have come away with any knowledge of programming without it.&lt;/p&gt;
-
-
-&lt;p&gt;I can't remember the specific thing we were talking about, but I think
-the example was something like:&lt;/p&gt;
-
-
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="gp"&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span class="n"&gt;user&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;
-&lt;span class="gp"&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span class="n"&gt;user&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"login"&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;"Bob"&lt;/span&gt;
-&lt;span class="gp"&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span class="n"&gt;user&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"login"&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-&lt;span class="go"&gt;"Bob"&lt;/span&gt;
-&lt;span class="gp"&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span class="n"&gt;user&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"some other key"&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-&lt;span class="gt"&gt;Traceback (most recent call last):&lt;/span&gt;
-  File &lt;span class="nb"&gt;"&amp;lt;stdin&amp;gt;"&lt;/span&gt;, line &lt;span class="m"&gt;1&lt;/span&gt;, in &lt;span class="n"&gt;&amp;lt;module&amp;gt;&lt;/span&gt;
-&lt;span class="gr"&gt;KeyError&lt;/span&gt;: &lt;span class="n"&gt;'some other key'&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;This is entirely clear if you're a programmer (especially if you're a
-Python programmer, but it's sufficiently universal that probably most
-programmers will have a pretty good idea of what's going on), but if
-you've never programmed before it's just so much noise.&lt;/p&gt;
-
-
-&lt;p&gt;In response to this question I would have said something as follows:&lt;/p&gt;
-
-
-&lt;p&gt;The program you're using here is called the REPL(Read-Evaluate-Print-Loop,
-but don't worry about that. It's pronounced
-repple, like ripple with an eh). You're entering commands into it by writing statements in a
-programming language called Python.&lt;/p&gt;
-
-
-&lt;p&gt;The interpreter keeps track of a number of "objects", which are a chunk
-of data along with a particular set of commands that can you can use to
-change that data, ask questions about it, etc. There are also commands
-that let you interact with the computer more broadly (e.g. reading and
-writing files) but we won't worry about them just yet in this tutorial.&lt;/p&gt;
-
-
-&lt;p&gt;Here what we're doing is creating an object, giving it the name &lt;em&gt;user&lt;/em&gt;
-that we can refer to it by, and issuing some commands and seeing what
-happens.&lt;/p&gt;
-
-
-&lt;p&gt;Specifically, we are:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Creating an object of a specific type called a &lt;em&gt;dictionary&lt;/em&gt; and
-    referring to it by the name &lt;em&gt;user&lt;/em&gt;. The curly brackets &lt;code&gt;{}&lt;/code&gt; create a
-    new dictionary, and "&lt;code&gt;user =&lt;/code&gt;" is where we declare that we will
-    refer to it as &lt;em&gt;user&lt;/em&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;A dictionary is an object whose job is to keep track of a table of
-    information. It maps &lt;em&gt;keys&lt;/em&gt; to &lt;em&gt;values&lt;/em&gt;, which are just arbitrary
-    things you can put into it, so that if you tell it to associate a
-    value with particular key, and then later ask for the value
-    associated with that key, you get the same thing back.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Telling the dictionary we have just created (referred to by its
-    name, &lt;em&gt;user&lt;/em&gt;) that it should associate the value "Bob" with the key
-    "login". "Bob" and "login" are objects of a type called &lt;em&gt;string&lt;/em&gt;,
-    which represents a piece of text.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Looking up the key "login" and getting the expected value "Bob"
-    back.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Looking up the key "some other key" and getting an error that tells
-    us that the dictionary has not yet been told to associate any values
-    with that key.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;This isn't a perfect answer, because I just made it up on the spot and
-haven't tested it against students to see what questions they ask, but
-it's probably pretty good. It certainly gives them more of a hook to
-play around with dictionaries in the interpreter and see what happens,
-and it gives them better questions to ask than "Help I don't understand
-anything about what's going on".&lt;/p&gt;
-
-
-&lt;h3&gt;Theory, examples, and ability&lt;/h3&gt;
-
-
-&lt;p&gt;I'm going to be using "theory", "examples", and "ability", in slightly
-specific ways (which are possibly slightly idiosyncratic to me, although
-I think compatible with normal use) in this issue, so I'll try to
-explain what I mean by them.&lt;/p&gt;
-
-
-&lt;p&gt;An example is just any concrete version of the thing being taught. For
-example, "do these steps in the REPL" above is an example. Showing
-someone a program is an example. Showing someone a mathematical proof is
-an example.&lt;/p&gt;
-
-
-&lt;p&gt;"Theory" is the knowledge that you need to answer questions like "What's
-going on here?" and explain the behaviour of a particular example. For
-example, in the above, you need some sort of theory to answer the
-question "Why did typing &lt;code&gt;user["login"]&lt;/code&gt; show &lt;code&gt;"Bob"&lt;/code&gt; but typing
-&lt;code&gt;user["some other key"]&lt;/code&gt; showed an error message?"&lt;/p&gt;
-
-
-&lt;p&gt;"Ability" is the set of things the student can now do themselves. The
-goal of teaching is to help the student expand their abilities. People
-don't generally expand their abilities directly as the result of
-teaching - you can only learn to do things by doing things - but
-teaching points them in the right direction by giving them better ideas
-of things to try. They still learn by trial and error, but teaching can
-give them better things to try and help them understand their errors.&lt;/p&gt;
-
-
-&lt;p&gt;The goal of the above tutorial was to help them develop the ability to
-write simple Python programs involving dictionaries, and to some degree
-it succeeded. After going through this tutorial the student knows how to
-launch the Python REPL, and has at least one example of something
-reasonable to experiment with. Given a little bit of time to sit and
-play with the REPL they might come up with a pretty reasonable theory
-for explaining its behaviour.&lt;/p&gt;
-
-
-&lt;p&gt;Why do they need to develop that theory? Because theory gives them the
-ability to &lt;em&gt;generalise&lt;/em&gt;. If you have a theory that can explain why a
-given action succeeded or failed, you now believe that any action that
-matches that same explanation will also work or fail. This lets you try
-out other things and see whether they confirm or deny your theory, which
-is typically a much more productive model of trial and error than one
-can manage without a theory of what's going on.&lt;/p&gt;
-
-
-&lt;h3&gt;Examples are vitally important&lt;/h3&gt;
-
-
-&lt;p&gt;I should be clear: It is very good that the tutorial we were doing was
-dumping people in the REPL and getting them to play around with it. This
-is not my complaint, it's the correct thing to do. My complaint is that
-the tutorial did not then contain anything like my answer above.&lt;/p&gt;
-
-
-&lt;p&gt;One of my pet peeves that has been coming out in places on the notebook
-blog recently is that I hate people who introduce theory without
-supporting examples in which to understand it. See e.g. &lt;a href="https://notebook.drmaciver.com/posts/2021-07-02-09:29.html"&gt;People are bad
-at defining
-things&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;In particular it's often worth having examples &lt;em&gt;first&lt;/em&gt; (this isn't
-always possible), because then you can refer to concrete features of
-them while introducing the theory. You saw a bit of that in how I
-explained what was going on in the programming tutorial: I started with
-an example, and then I highlighted specific features of it to ground the
-theory (We're creating a thing called an object, it's a specific type
-of object called a dictionary, then we're doing this to it, etc.)&lt;/p&gt;
-
-
-&lt;p&gt;The examples are particularly important. In order to understand a
-theory, you need to be able to see how it applies to real concrete
-things. Abstracting from concrete instances is literally the point of
-theory, so without seeing how it relates to the things it abstracts
-theory is just so many words.&lt;/p&gt;
-
-
-&lt;p&gt;On top of that, examples are often key to developing abilities. People
-do not, generally speaking, reason from first principles from a theory.
-If you read the literature on naturalised decision
-making, what people
-tend to do is &lt;a href="https://en.wikipedia.org/wiki/Recognition_primed_decision"&gt;recognition-primed decision
-making&lt;/a&gt;. They
-look at what's in front of them, they reason by analogy, thinking "Oh,
-this looks like that thing I saw before, let me see what happens if I do
-the same thing that I did there...". Having a rich and varied library of
-examples is vitally important for this.&lt;/p&gt;
-
-
-&lt;p&gt;(I'd recommend Cedric Chin's &lt;a href="https://commoncog.com/blog/a-framework-for-putting-mental-models-to-practice/"&gt;A Framework for Putting Mental Models into
-Practice&lt;/a&gt;,
-but it's also worth reading Gary Klein's "Sources of Power" and maybe
-some of his other work.)&lt;/p&gt;
-
-
-&lt;h3&gt;Theory helps you remember examples&lt;/h3&gt;
-
-
-&lt;p&gt;Let's look at our example again:&lt;/p&gt;
-
-
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="gp"&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span class="n"&gt;user&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;
-&lt;span class="gp"&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span class="n"&gt;user&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"login"&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;"Bob"&lt;/span&gt;
-&lt;span class="gp"&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span class="n"&gt;user&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"login"&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-&lt;span class="go"&gt;"Bob"&lt;/span&gt;
-&lt;span class="gp"&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span class="n"&gt;user&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"some other key"&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-&lt;span class="gt"&gt;Traceback (most recent call last):&lt;/span&gt;
-&lt;span class="gr"&gt;   File "&amp;lt;stdin&amp;gt;", line 1, in &amp;lt;module&amp;gt;&lt;/span&gt;
-&lt;span class="gr"&gt;KeyError&lt;/span&gt;: &lt;span class="n"&gt;'some other key' &lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;Do you think you could recreate this example from memory? I certainly
-could, and I think most programmers could with only a little bit of
-thought. It possibly wouldn't be character by character perfect, but you
-could certainly get the right general idea.&lt;/p&gt;
-
-
-&lt;p&gt;Now consider the following highly readable example. Do you think you
-could recreate &lt;em&gt;this&lt;/em&gt; from memory?&lt;/p&gt;
-
-
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="go"&gt;&amp;lt;&amp;lt;&amp;lt; d"T{ o Bm&lt;/span&gt;
-&lt;span class="go"&gt;&amp;lt;&amp;lt;&amp;lt; d"T{sn)gK[ena o n:g}n&lt;/span&gt;
-&lt;span class="go"&gt;&amp;lt;&amp;lt;&amp;lt; d"T{sn)gK[ena&lt;/span&gt;
-&lt;span class="go"&gt;n:g}n&lt;/span&gt;
-&lt;span class="go"&gt;&amp;lt;&amp;lt;&amp;lt; d"T{sn"gyT g](T{ tTuna&lt;/span&gt;
-&lt;span class="go"&gt;&amp;gt;{ilT}ilt kyg"] {TlTe] li)) )i"]'1&lt;/span&gt;
-&lt;span class="go"&gt;   ,[)T nE"]h[e&amp;lt;n= )[eT b= [e Eyghd)T&amp;lt;&lt;/span&gt;
-&lt;span class="go"&gt;FTuc{{g{1 r"gyT g](T{ tTur&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;If you haven't figured out the trick, this is the same example as above,
-I've just jumbled all the letters through a mapping that replaces them
-(e.g. &amp;gt; gets replaced with &amp;lt;).&lt;/p&gt;
-
-
-&lt;p&gt;Do you think you could recreate this example from memory? I sure
-couldn't.&lt;/p&gt;
-
-
-&lt;p&gt;In some sense this contains exactly the same information as the
-original, but because you're unable to easily turn it into a sensible
-representation, it's much harder to remember and thus much harder to
-understand. As well as the Python specific bits you also rely on e.g.
-brackets matching, quotes matching, familiar understanding of the
-meaning of the = symbol, the ability to clearly distinguish which bits
-are identifiers because they're contained in quotes, etc.&lt;/p&gt;
-
-
-&lt;p&gt;When we know what's going on, we can describe the example as the
-following sequence of steps:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Create a dictionary called user.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Insert the value "Bob" into "user" with the key "login"&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Look up the key "login" in "user" and get the result&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Look up the key "some other key" in "user" and see an error from
-    looking up a missing key&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;This is a &lt;em&gt;high level representation&lt;/em&gt; of what's going on. It describes
-the steps we are taking, not the specific details that we know. This is
-easy to remember, because it's a set of comprehensible steps.&lt;/p&gt;
-
-
-&lt;p&gt;Now, we're not expecting students to actually memorise specific
-examples, but ability to memorise is a pretty good proxy for how well
-the example fits in their head - if you can't easily remember what
-should be a fairly simple example, that's a sign that there's too much
-going for you to really figure it out and you're trying to learn too
-much at once.&lt;/p&gt;
-
-
-&lt;p&gt;This sort of translation into a high level representation is what theory
-does for you, and lets you organise your mental library of examples.&lt;/p&gt;
-
-
-&lt;h3&gt;Theory helps you generalise&lt;/h3&gt;
-
-
-&lt;p&gt;As well as helping you remember examples you've seen before, theory lets
-you &lt;em&gt;adapt&lt;/em&gt; those previous examples to your needs.&lt;/p&gt;
-
-
-&lt;p&gt;This high level representation does a number of important things for us:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;It allows us to understand the meaning of the thing we are writing
-    in terms of what we are trying to do rather than the literal
-    characters on the screen.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;This makes it easier to remember because we can remember "Create a
-    dictionary called user" separately from the literal syntax for
-    creating a dictionary. We still have to remember both, but the
-    latter is a fact we can more easily look up and will use often
-    enough to remember.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;It lets us make predictions for what we would see if we changed the
-    example.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;h3&gt;Doing (the right) things is the most important&lt;/h3&gt;
-
-
-&lt;p&gt;This particularly shows up in the trial and error process of learning.
-While you are still floundering around trying to figure things out, good
-specific examples are especially important because you will lean hard
-on emulating examples, so having good examples to emulate is crucial.&lt;/p&gt;
-
-
-&lt;h3&gt;Postscript&lt;/h3&gt;
-
-
-&lt;p&gt;This is where I stalled. I'm not quite sure why. I think partly the
-post was getting too long, and I didn't know how to continue, or
-I ran out of energy.&lt;/p&gt;
-
-
-&lt;p&gt;It's a known problem that I'm very bad at revisiting things once
-I've stopped writing them, and as a result I tend to fail to
-finish longer pieces. I would like to work on that but have not
-yet managed.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2022-05-29-05:50.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-05-30-18:41.html</id>
     <title>Victims of metonymy</title>
@@ -2075,7 +1703,7 @@ and explaining why it's bad removes the need to label it.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-06-05-15:15.html</id>
     <title>You don't learn in a straight line</title>
-    <updated>2022-06-05T15:15:00+01:00</updated>
+    <updated>2022-06-05T15:15:41+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;You don't learn in a straight line&lt;/p&gt;
@@ -2226,5 +1854,110 @@ others because of their specific difficulties.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2022-06-05-15:15.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2022-06-05-15:16.html</id>
+    <title>Consensually treating people as things</title>
+    <updated>2022-06-05T15:16:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Consensually treating people as things&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2022-06-05&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Here's a section from a post that I didn't manage to get any of the real meat of written:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;\"There\'s no greys, only white that\'s got grubby. I\'m surprised you
+don\'t know that. And sin, young man, is when you treat people like
+things. Including yourself. That\'s what sin is.\"&lt;/p&gt;
+&lt;p&gt;\"It\'s a lot more complicated than that--\"&lt;/p&gt;
+&lt;p&gt;\"No. It ain\'t. When people say things are a lot more complicated
+than that, they means they\'re getting worried that they won\'t like
+the truth. People as things, that\'s where it starts.\"&lt;/p&gt;
+&lt;p&gt;\"Oh, I\'m sure there are worse crimes--\"&lt;/p&gt;
+&lt;p&gt;\"But they &lt;em&gt;starts&lt;/em&gt; with thinking about people as things...\"&lt;/p&gt;
+&lt;p&gt;- the Reverend Mightily Oats and Granny Weatherwax, in conversation
+in Terry Pratchett's "Carpe Jugulum"&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;In this post I will be going "Yes, people as things, very bad. Quite
+sinful. But... sure is useful, isn't it?"&lt;/p&gt;
+
+
+&lt;p&gt;Moreover, if we take this definition seriously, I think most of modern
+civilization can reasonably be considered a technology of sin. The whole
+&lt;em&gt;point&lt;/em&gt; of markets and supply chains is that we can treat these complex
+systems that are made mostly of people as things to achieve a particular
+purpose. A supermarket is a thing for acquiring stuff we want, and we
+get to mostly ignore the fact that it's made up of people. Sure, we
+interact with supermarket staff a bit, and we hopefully treat them well,
+but this ignores the giant invisible mass of people behind them -
+delivery, warehouse workers, factories, etc.&lt;/p&gt;
+
+
+&lt;p&gt;I've written about this before in &lt;a href="https://drmaciver.substack.com/p/the-usefulness-of-bad-people"&gt;The usefulness of bad
+people&lt;/a&gt;:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;The core of this problem is is that the price system works as a black
+box, hiding the implementation of where things come from from its
+consumers.&lt;/p&gt;
+&lt;p&gt;Modern supply chains and commodity markets are an incredibly intricate
+system of interdependent parts that is far too complex to really
+understand. This complexity is, in fact, part of the benefit, because
+it grants us plausible deniability around the ethics of our actions.
+If everything is too complex to track then we don't have to notice all
+of the bad people downstream of our decisions.&lt;/p&gt;
+&lt;p&gt;Importantly, as with the sales people, we never &lt;em&gt;ask&lt;/em&gt; those people to
+be bad, we just say "I want this thing at this price, the details are
+up to you" and get to be shocked, shocked I say, when the only way to
+provide the thing at that price is slavery.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;And yet, for all its flaws, I'm not quite prepared to say "Well, modern
+civilization is built on sin, burn it to the ground". I &lt;em&gt;like&lt;/em&gt; modern
+civilization and, more importantly, don't actually think this is a net
+increase in treating people like things. The past was pretty bad for
+this too.&lt;/p&gt;
+
+
+&lt;p&gt;Also, for the most part, being treated as a thing in this way can be
+perfectly fine. A lot of the nice thing about a job is that you &lt;em&gt;don't&lt;/em&gt;
+have to bring your whole self to work. You can narrowly act in a
+specific capacity for achieving a well defined goal, without your
+customers having to worry about what you get done outside of the job, or
+you having to worry about the whole giant tangled mess of your life
+there.&lt;/p&gt;
+
+
+&lt;p&gt;But this is only true if you got to choose that. Being a thing that is a
+high priced software consultant is a very different experience than
+being a thing that is an exploited worker in a cocoa plantation. The
+latter might theoretically have consented (in that it's better than the
+alternative), or they might be literal slaves who have no choice but to
+be there, but either way&lt;/p&gt;
+
+
+&lt;p&gt;I think the moral resolution to this is something along the following:
+The problem with treating people as things is not that you are treating them as things, it is one of consent. When your conception of someone as a thing combines with your power over them, you force thingness upon them. It's quite literally a form of objectification.&lt;/p&gt;
+
+
+&lt;h3&gt;Postscript&lt;/h3&gt;
+
+
+&lt;p&gt;This was in fact meant to be a post about the use of "Focus" in Vernor Vinge's novel "A Deepness in the Sky", and what this tells us about group dynamics. But I didn't write any of that bit, because I got too caught up in justifying that the thing I wanted to write about wasn't morally bad, honest.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2022-06-05-15:16.html" rel="alternate"/>
   </entry>
 </feed>
