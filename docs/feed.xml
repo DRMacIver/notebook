@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2022-06-05T15:04:00+01:00</updated>
+  <updated>2022-06-05T15:15:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,345 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2022-05-28-08:54.html</id>
-    <title>The costs of being understood</title>
-    <updated>2022-05-29T12:12:08+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;The costs of being understood&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2022-05-28&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Here's another abandoned draft, which is about the costs that being illegible
-impose on your interactions with the world.&lt;/p&gt;
-
-
-&lt;h3&gt;Many to one interactions&lt;/h3&gt;
-
-
-&lt;p&gt;Let me start with some experiences of mine that you may or may not share
-that I think are usefully illustrative of a broader problem.&lt;/p&gt;
-
-
-&lt;p&gt;Have you ever had a tweet, or blog post, or something similar become
-unexpectedly popular? The &lt;a href="https://drmaciver.substack.com/p/people-dont-work-as-much-as-you-think"&gt;People don't work as much as you
-think&lt;/a&gt;
-piece was this for me recently. To a much lesser degree, &lt;a href="https://twitter.com/DRMacIver/status/1493181712427274241"&gt;this recent
-tweet about many versions of a thing being evidence that none of them
-are good&lt;/a&gt; is
-another one.&lt;/p&gt;
-
-
-&lt;p&gt;What happens is this: You get a lot of people responding in obvious
-ways. Maybe they've misunderstood you. Maybe they're picking up on
-something you missed, or didn't think was worth mentioning. Maybe they
-disagree with you on ideological grounds. There are plenty of reasons to
-make an obvious response.&lt;/p&gt;
-
-
-&lt;p&gt;At first, you can respond reasonably enough to these - pointing out
-their misunderstandings, acknowledging that yes thank you for pointing
-out that edge case but you were already aware of it and don't think it's
-a problem, etc.&lt;/p&gt;
-
-
-&lt;p&gt;By the fifth time someone has made the same point at you, it's much
-harder to stay polite, and by the hundredth message it doesn't really
-matter if the observation is novel you just want these people to shut up
-and leave you alone.&lt;/p&gt;
-
-
-&lt;p&gt;You can try getting cranky at them, and indeed it will probably be
-incredibly hard work not to get cranky at them, but fundamentally it
-doesn't work because the only reason crankiness can be a useful strategy
-is when other people notice it &lt;em&gt;before&lt;/em&gt; you have to get cranky at them
-and modify their behaviour accordingly, and if the people doing this
-were actually paying attention to others' behaviour they wouldn't be
-repeating the same points you've already heard a dozen time.&lt;/p&gt;
-
-
-&lt;p&gt;This is an example of an &lt;em&gt;asymmetric cost&lt;/em&gt; - although the cost of the
-interaction is about the same for you and the other party, when you are
-interacting with many people, the cost of their behaviour on you is
-effectively much larger than any cost you can impose on them, because
-they only have to pay it once, while you have to pay it once for each of
-them. The cost of the interaction is effectively multiplied by the
-number of people you have to have it with, which for you is large and
-for them is you.&lt;/p&gt;
-
-
-&lt;p&gt;This is not just a Twitter thing. Another (comparatively trivial)
-example of this is that I have to explain my name to people over and
-over again, and it gets tiresome. Yes that's a capital I, not a lower
-case l. No, it's pronounced Mack-ee-ver, not Mack-ay-ver. Yes, it's
-Scottish, but I'm not. No, it's not spelled or pronounced like the guy
-with the paperclips. Yes that joke you've just made about it is
-extremely witty and I definitely haven't heard if five hundred times
-before. Ha ha.&lt;/p&gt;
-
-
-&lt;p&gt;It's not a big deal, and I generally remain polite throughout these
-conversations, but there is definitely an internal sigh of resignation
-as I think "Oh, we're having this conversation again are we?" each time.&lt;/p&gt;
-
-
-&lt;p&gt;The problem with these sorts of asymmetric costs is that, like the
-Twitter thing, they're almost by definition invisible to those who
-impose them on you, because if they were there during That Conversation,
-even if it was initiated with someone else, they wouldn't have to have
-it again.&lt;/p&gt;
-
-
-&lt;h3&gt;Many to few interactions&lt;/h3&gt;
-
-
-&lt;p&gt;This comes up in more serious conversations too. Vegetarians are often
-tired of having a conversation justifying their vegetarianism, people
-are often tired of having a conversation justifying their religion or
-lack thereof. Coming out as queer, poly, trans, etc. is something you
-end up doing over and over again, and for most people it's tiring and
-scary every time.&lt;/p&gt;
-
-
-&lt;p&gt;The difference with these conversations however is that you're not the
-only one having them and, as a result, chances may be pretty good that
-someone you encounter outside of your group has already encountered one
-of you.&lt;/p&gt;
-
-
-&lt;p&gt;If you're in a population with a 50/50 split between two groups (e.g.
-gender), there is no asymmetry in the obvious conversations you have -
-there is one man for every woman, more or less, so the number of obvious
-day to day conversations you have is about equal. This falls apart in a
-whole number of cases - e.g. in environments with large gender skews (In
-either direction! There are large asymmetric costs in being e.g. a dad
-in parental spaces dominated by mums, as well as e.g. being a woman in
-software), and in situations in which the size of your demographic is in
-some sense "artificially lowered" because of visibility (e.g. you'll get
-to have all sorts of obvious conversations with men if you're a woman
-whose tweet goes unexpectedly popular). But, by default, regardless of
-how bad communication tends to be between the two groups there tends not
-to be asymmetry of the sort that I'm talking about because the numbers
-are broadly equal.&lt;/p&gt;
-
-
-&lt;p&gt;In contrast, as the groups get smaller the asymmetry grows sharply. If
-your group is x% of the conversation, then there are (100 - x) / x
-people not in your group for every member who is. For example if you're
-20% of the population, there are four of them for every one of you, if
-you're 1% of the population there are 99 of them for every one of you,
-etc. This means that, all else being equal, the smaller your group is,
-the higher the asymmetric costs you experience as a member of it
-interacting with people outside it are.&lt;/p&gt;
-
-
-&lt;p&gt;Of course, all else is rarely equal. I am, for example, a member of the
-group of people with weird names. We're a relatively small group, but
-also the cost per interaction is relatively
-low, (Once you reach adulthood anyway. Children are &lt;em&gt;brutal&lt;/em&gt; about this),
-so even though the costs imposed are highly asymmetric, the total costs are still not that bad.&lt;/p&gt;
-
-
-&lt;h3&gt;Necessary conversations&lt;/h3&gt;
-
-
-&lt;p&gt;A lot of the time this problem can be solved by just ignoring it. I
-don't have to correct people on my name, you don't have to tell people
-about your vegetarianism, or your religion, or any other thing that
-makes you unusual, unless it's directly relevant to the interaction.
-This often brings down the rate enough to be manageable even if the cost
-per interaction is relatively high.&lt;/p&gt;
-
-
-&lt;p&gt;This works great right up until the point where you need to do it. For
-example, if you're vegetarian, you will often need to explain this to
-people in order to be able to make sure you can eat something at a
-location. If you have disabilities (visible or otherwise) you may need
-to explain them in order to get accommodations.&lt;/p&gt;
-
-
-&lt;p&gt;Sometimes you need to be understood not for your sake, but because it's
-the only way to get other people off your back. For example I think
-about &lt;a href="https://astralcodexten.substack.com/p/why-is-it-hard-to-acknowledge-preferences?r=514ov"&gt;this Astral Codex Ten post about respecting
-preferences&lt;/a&gt;
-a lot:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;I recently stayed at a B&amp;amp;B owned by a nice elderly couple. Very, very
-nice. The moment I stepped in the door, they asked how my flight was,
-where I was from, what I did, how I'd enjoyed my three minutes of
-visiting their city so far, what kind of food I liked, what my
-favorite color was, et cetera. I played along - no point in offending
-people - but I warned that my friend, who would be arriving a little
-later, was much more introverted, and would appreciate being
-efficiently directed to her room without the welcome committee.&lt;/p&gt;
-&lt;p&gt;A little later, my friend arrived. From my room, I could hear them
-start welcoming her, ask her how her flight had been, start trying to
-get to know her - until I ran out and rescued her, for which she
-reports gratitude. For the rest of our stay, they continued to talk
-both of our ears off, with my friend growing increasingly annoyed and
-uncomfortable.&lt;/p&gt;
-&lt;p&gt;We spent the trip back dissecting what had gone wrong. Neither of us
-believed the proprietors didn't care about her feelings: they were so
-very, very nice. They couldn't have forgotten my warning; my friend
-arrived less than an hour after I did. We concluded that they were
-just inexplicably bad at some sort of mental gear-shifting.&lt;/p&gt;
-&lt;p&gt;The worst part was, I knew this would happen. When I told them to
-please respect my friend's introversion, there was a voice in my head
-quietly adding "...even though you obviously won't and I have no
-idea why I am even making this request".&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;I don't think all that's going on here is a failure of understanding,
-but I do think it starts with a failure of understanding. People hear
-preferences and round them out to someone just making a fuss, because
-they can't internalise what an extremely big deal that preference is for
-the other person.&lt;/p&gt;
-
-
-&lt;p&gt;I think, to some degree, this is reasonable - people are constantly
-imposing their preferences on us, and it's impossible to respect all of
-them, so people tend to disregard a lot of things as unimportant, or as
-something they're not obliged to respect. Just because you have a
-preference to be referred to as Your Majesty and tithed 10% of my wealth
-annually, doesn't mean that I have to do that. In order for me to
-respect that preference you must either force or convince me to do so.
-Generally we frown upon the "force" option unless you're &lt;em&gt;actually&lt;/em&gt; an
-imperial power, so you should try to convince me.&lt;/p&gt;
-
-
-&lt;p&gt;This happens with more reasonable preferences too - to continue the
-vegetarianism example, there's a lot of work that goes in to persuading
-people to respect your dietary preferences. Virtually everyone who has
-such preferences have stories of them being argued with or ignored
-(often covertly! Many people think it's perfectly reasonable to e.g.
-sneak butter into something that they serve to someone who has said they
-can't eat dairy. This is a really bad idea, but distressingly common).&lt;/p&gt;
-
-
-&lt;p&gt;You can argue that people shouldn't need to understand your preferences
-in order to respect them and you'd be, more or less, right, but the fact
-of the matter is regardless of whether they should do that people mostly
-do, and I'd argue that some degree of this is pretty much inevitable.
-It's really hard to respect preferences you don't understand - it goes
-against how memory works, you reliably fuck details up, etc.&lt;/p&gt;
-
-
-&lt;p&gt;Certainly people should be a lot better at this than they currently are,
-but expecting people to be maximally good at meeting preferences without
-understanding them very much goes against how humans work, and besides
-which can only possibly work at a very shallow level (though the shallow
-level is still important for interactions with strangers).&lt;/p&gt;
-
-
-&lt;h3&gt;When you are hard to understand&lt;/h3&gt;
-
-
-&lt;p&gt;So you want to respect people's dietary constraints and preferences?
-Thanks, that's great. I don't eat dairy, wheat (really most cereals in
-its family are bad. "gluten free" isn't quite right but to a first
-approximation is probably fine), brassicas, or lamb. Some onions are
-fine if they're cooked but too many is likely to be a problem. Lentil
-heavy dishes are probably a bad idea, but things that use lentil flour
-seem to be mostly fine. Also I prefer not to eat fish for ethical
-reasons, but don't worry about that as a one off.&lt;/p&gt;
-
-
-&lt;p&gt;You've probably almost immediately forgotten the details of that
-paragraph. As well you should. Why would you memorise the details of my
-food preferences if you're not cooking extremely regularly for me?&lt;/p&gt;
-
-
-&lt;p&gt;My experience is that almost nobody can keep track of my dietary
-preferences, even before you get to the complicated ones. I normally
-don't even mention anything past "No wheat, no dairy, no brassicas, and
-you're probably fine but maybe check in with me if you're unsure?", and
-this is usually still at least one too many details to keep track of
-(people never remember the brassicas one, but unfortunately it's very
-important).&lt;/p&gt;
-
-
-&lt;p&gt;This is actually completely reasonable, because there are two different
-asymmetric costs that are going on here: The first is the one to me, the
-annoying conversation around dietary preferences that I have to have
-with everyone who cooks for me. The second is the one that people have
-when they cook for others, trying to keep track of everyone's food
-preferences. Sometimes one cost dominates, sometimes the other, but
-either way it's really quite a lot of work to keep track of everything
-that everyone can and can't eat (I think I'm unusually good at this, and it's a lot of work to be good at
-it and also I still get things wrong.)&lt;/p&gt;
-
-
-&lt;p&gt;The problem with my particular set of food constraints is that there is
-no sensible organising principle to them. It's just a list of
-empirically derived things that trigger my digestive system to freak
-out. If there were a simple term that allowed people to check whether
-something was suitable for me (e.g. gluten-free and dairy-free are both
-examples of that, and people can usually stretch themselves to
-remembering two terms) and that they could remember as being normal
-problems for people to have, they would probably mostly
-remember.&lt;/p&gt;
-
-
-&lt;p&gt;(Though people absolutely can and do get these wrong. If you're not used
-to doing it it's really hard to remember to check the ingredients list
-and see if some asshole has snuck wheat into somewhere where wheat
-really doesn't need to go.)&lt;/p&gt;
-
-
-&lt;p&gt;Even with more reasonable food constraints, you end up with a problem
-that asymmetric costs are not always additive. It's much harder to cook
-for someone who is both dairy-free and gluten-free than it is to cook
-for someone who is one but not both. (It's also much harder to cook for
-two people where one is dairy-free and one is gluten-free at the same
-time, for much the same reason). It's not &lt;em&gt;quite&lt;/em&gt; as hard to cook for
-them if you don't have to do it at the same time (e.g. one guest one
-night, one guest another), but it is easier to cook for two separate
-gluten-free or two separate dairy-free guests than it is to cook for one
-gluten-free and one dairy-free guest, because you learn skills and
-habits with each - it's not just a matter of not doing the thing after
-all, it's a matter of learning how to achieve your goal (producing a
-delicious meal) while not achieving the thing, and that takes actual
-effort.&lt;/p&gt;
-
-
-&lt;p&gt;It's easy to discount this effort, because you have curse of knowledge
-around your own experience - it's hard to remember how hard it is to
-understand something once you already understand it - but it is a real
-effort that people have to expend to understand you. And it's not just
-about diet, it's about everything else - things that annoy you, your
-preferences for social interaction, triggers, pronouns, etc. All things
-that it's completely reasonable to want other people to keep track of,
-but also all things that contribute to the cognitive load of what others
-have to keep track about us.&lt;/p&gt;
-
-
-&lt;h3&gt;The web of legibility&lt;/h3&gt;
-
-
-&lt;p&gt;At this point the post basically turns into an attempt to integrate the
-following two previous posts of mine here on the notebook:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://notebook.drmaciver.com/posts/2020-03-02-09:31.html"&gt;Legibility as a relationship&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://notebook.drmaciver.com/posts/2020-02-23-09:37.html"&gt;Legibility privileges&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;I think this is another one where I did all the framing work and ran out of energy by the point I got to the meat of the post.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2022-05-28-08:54.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-05-29-05:50.html</id>
     <title>What every programming tutorial gets wrong</title>
@@ -2164,7 +1825,7 @@ do a lot more of it than they do.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-06-05-15:04.html</id>
     <title>Knowledge and justice</title>
-    <updated>2022-06-05T15:04:00+01:00</updated>
+    <updated>2022-06-05T15:06:40+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Knowledge and justice&lt;/p&gt;
@@ -2410,5 +2071,160 @@ and explaining why it's bad removes the need to label it.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2022-06-05-15:04.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2022-06-05-15:15.html</id>
+    <title>You don't learn in a straight line</title>
+    <updated>2022-06-05T15:15:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;You don't learn in a straight line&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2022-06-05&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Here's another abandoned draft from the newsletter archive.&lt;/p&gt;
+
+
+&lt;p&gt;I'd like to talk about learning things, and how the way we learned as
+children&lt;/p&gt;
+
+
+&lt;h3&gt;Learning things in order&lt;/h3&gt;
+
+
+&lt;p&gt;Have you ever thought about what determines the order you learn things
+in? Some things you learn at the same time of course, but you're
+learning throughout your life and so inevitably you learn some things
+before others.&lt;/p&gt;
+
+
+&lt;p&gt;Sometimes there's no particular rhyme or reason to the ordering. I
+learned to play the bassoon before I learned to program, but likely
+plenty of people do it the other way around, and that's not not
+particularly surprising, and many people learn only one or neither of
+them. There's no dependency between the two, the only thing determining
+the order is the particular details of my life story. Call that a
+&lt;em&gt;coincidental ordering&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;But other things the order feels more intrinsic. You have to learn to
+walk before you have to learn to run. You have to learn to read before
+you learn to write.&lt;/p&gt;
+
+
+&lt;p&gt;This is an order where there is some sort of &lt;em&gt;dependency&lt;/em&gt; &lt;em&gt;ordering&lt;/em&gt;
+between the two. It might in theory be logically possible to learn to
+write before you learn to read, or to learn to run before you learn to
+walk, but it's pretty hard to imagine there being common circumstances
+under which that makes sense (Not completely impossible, mind. I learned to swim before I learned to
+walk, and I can imagine that there might be effective ways of teaching
+that teach reading and writing simultaneously).&lt;/p&gt;
+
+
+&lt;p&gt;But do you have to learn to run before you learn to read? It's clearly
+not logically necessary, and it's also not universally the case. Some
+people will never run at all, due to physical disabilities. Presumably
+some people will have developmental delays in their gross motor skills
+but not fine motor skills, delaying when they learn to run, so it's
+fairly likely that there are people out there who learned to write
+before they learned to run, and maybe even before they learned to walk.&lt;/p&gt;
+
+
+&lt;p&gt;You can think of this particular type of dependency as a &lt;em&gt;typical
+ordering&lt;/em&gt;. It's one that's determined by the normal developmental
+development of children: Most people are ready to learn one thing before
+they're ready to learn the other, and it's good (or we think it's good)
+for them to learn it as soon as they're ready.&lt;/p&gt;
+
+
+&lt;h3&gt;Teaching things in order&lt;/h3&gt;
+
+
+&lt;p&gt;There's a little bit of a sleight of hand up there, did you notice? What
+does it mean to learn to write?&lt;/p&gt;
+
+
+&lt;p&gt;Well, let me give you a clue: I was in my mid teens before I learned to
+write to the standard that we expect most kids to write before they're
+10, and arguably I'm still not there. Also, before I was 10, I was
+writing very well (by the standards we'd judge someone of that age).&lt;/p&gt;
+
+
+&lt;p&gt;How does this work? Well, "writing" means two different things here.
+When we talk about teaching kids to write, we primarily talk about
+teaching them to &lt;em&gt;handwrite&lt;/em&gt;. This is bottlenecked on the development of
+their fine motor coordination, not on their verbal ability, and my fine
+motor coordination lagged considerably behind my verbal development
+(this is part of something called dyspraxia). As a result, my "writing"
+in the sense of "handwriting" was terrible, but if you put me in front
+of a keyboard I could write pretty competently.&lt;/p&gt;
+
+
+&lt;p&gt;I honestly don't remember the details of how much trouble this caused me
+in school. After a while of struggling I just refused to write in
+anything other than block capitals (I eventually learned to fix this, no
+thanks to the schooling), and this "solved" the problem by aging out of
+the period where any teacher thought it was their job to comment on my
+handwriting, but the period up to that point was I think pretty
+stressful.&lt;/p&gt;
+
+
+&lt;p&gt;More importantly, it was a stress that permeated &lt;em&gt;everything&lt;/em&gt;, because
+every class I was in expected me to be able to handwrite my answers (I
+could at least type homework in some cases).&lt;/p&gt;
+
+
+&lt;p&gt;You can think of this perhaps as a &lt;em&gt;normative ordering&lt;/em&gt; in how we learn
+things. It's not that there's actually any logical necessity to learn to
+handwrite to any reasonable standard before you learn, say, history or
+physics, but the entire system is set up to give you a pretty bad time
+if you don't.&lt;/p&gt;
+
+
+&lt;p&gt;I don't really consider this a great injustice perpetrated against me -
+at the time computers were more expensive and generally less widespread
+than they are now. It would have been genuinely hard to computerise
+everything, and there are still major challenges to that today. But it
+was still a problem I experienced that I wouldn't have with another way
+of teaching (There's a whole complicated story with me getting special permission to
+use a laptop at school that I won't get into here because it's besides
+the point, and I compensated OK by being otherwise good at the subjects
+I cared about, so I don't know that I suffered much in the way of
+lasting consequences from this, but it was at best unpleasant at the
+time.)&lt;/p&gt;
+
+
+&lt;p&gt;This problem gets worse with people who have reading difficulties (e.g.
+because dyslexia). A lot of subjects could in theory be taught purely
+orally - you don't actually need to be able to read to do philosophy for
+example, and many classic philosophers were actively against reading and
+writing - but the way we teach them is intimately tied up with reading
+and writing.&lt;/p&gt;
+
+
+&lt;p&gt;To be clear, I'm not saying this is bad. I'm saying this is a trade off,
+where we have adopted a particular style of teaching that works for most
+people, and some people get a worse deal under this trade off than
+others because of their specific difficulties.&lt;/p&gt;
+
+
+&lt;h3&gt;Typical orderings become normative&lt;/h3&gt;
+
+
+&lt;p&gt;I apparently never wrote this section, but the basic idea feels fairly obvious to me: If it's super convenient to teach in one set order, then that order becomes widely adopted, and it's not long before failing to learn in that order is treated as a problem with the student instead of the system.&lt;/p&gt;
+
+
+&lt;h3&gt;Postscript&lt;/h3&gt;
+
+
+&lt;p&gt;No idea why I abandoned this one. It feels like it's only a short section away from being complete. I may just have got distracted.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2022-06-05-15:15.html" rel="alternate"/>
   </entry>
 </feed>
