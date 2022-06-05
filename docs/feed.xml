@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2022-06-05T14:35:40+01:00</updated>
+  <updated>2022-06-05T14:43:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,260 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2022-05-25-09:47.html</id>
-    <title>How to be lucky</title>
-    <updated>2022-05-25T10:01:29+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;How to be lucky&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2022-05-25&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I'm going to be doing some draft bankruptcy over the coming week or two,
-where I delete things from my newsletter drafts and post salvageable bits
-here on the notebook.&lt;/p&gt;
-
-
-&lt;p&gt;Here's some extracts from a piece called "How to be lucky" that I may or may
-not eventually write, but certainly will want to start from scratch with 
-a little bit of reused material rather than trying to ressurect this draft.&lt;/p&gt;
-
-
-&lt;h3&gt;Luck, happenstance, and circumstance&lt;/h3&gt;
-
-
-&lt;p&gt;I'd like to distinguish three different things that are often called
-luck, and I will only use "luck" to refer to one of them.&lt;/p&gt;
-
-
-&lt;p&gt;The first thing is what I'd like to call &lt;em&gt;happenstance&lt;/em&gt;. An event that
-happens as a result of chance. You might win the lottery, you might be
-late for a meeting, you might go a different route than usual and
-discover something interesting... These are all chance events, they
-might be good they might be bad, they might be neutral.&lt;/p&gt;
-
-
-&lt;p&gt;People will often refer to individual happenstance events as lucky or
-unlucky, which is perfectly reasonable in normal usage but not how I
-will be using the term. Winning the lottery is not, in the sense I will
-be using it, the result of luck, it's just random chance. Could have
-happened to anyone who played the lottery. If you exhibited a consistent
-tendency to win the lottery I would call &lt;em&gt;that&lt;/em&gt; luck, but not a single
-win no matter how large, it's just a highly positive happenstance.&lt;/p&gt;
-
-
-&lt;p&gt;Circumstance on the other hand is the conditions in which you find
-yourself. This too is often referred to as luck. e.g. you're lucky to be
-born into a rich family, you're lucky to have good friends, you're lucky
-to be in a secure job, etc. I again think this is perfectly reasonable
-usage, but it's not what I mean when I say "luck" here.&lt;/p&gt;
-
-
-&lt;p&gt;When I say luck, what I specifically mean is the aggregate effect of
-happenstance in your life. Good luck is the tendency of chance events
-to, on average, improve your life. Bad luck is the tendency of chance
-events to, again on average, make your life worse.&lt;/p&gt;
-
-
-&lt;h3&gt;Four types of circumstance&lt;/h3&gt;
-
-
-&lt;p&gt;Let's talk about circumstances and how they impact luck. Many of these
-things will be out of your control (or only weakly under your control),
-and I'll talk about things that are more under your control in a bit,
-but I think it's important to be up front about the different fortune
-landscapes people find themselves in.&lt;/p&gt;
-
-
-&lt;p&gt;One of the easiest ways to be lucky is to have circumstances that enable
-it. Here are some such circumstances.&lt;/p&gt;
-
-
-&lt;p&gt;The first way is that you can be rich, either in money or other
-resources. Luck is, ultimately, about being able to benefit from random
-chance, and this involves playing a lot of numbers games. By far the
-easiest way to be able to play numbers games is to have a lot of buffer
-against risk. If a great opportunity comes your way and it costs £1000
-but will probably earn you much more than that (in money or other
-value), then there are roughly three options: You might not be able to
-pay £1000 at all, in which case sucks to be you. £1000 might be
-affordable but not an amount you can comfortably risk, in which case you
-may or may not take the opportunity but you certainly can't take the
-next such opportunity that comes along if this one falls through. Or you
-can be well enough off that £1000 isn't a big deal to risk given the
-high upside. Rich people are luckier than poor people because they have
-the opportunity to take advantage of many sources of happenstances that
-improve their life that are too risky if you're poor.&lt;/p&gt;
-
-
-&lt;p&gt;The second way is that you can be extroverted, sociable, etc. Social
-connections are one of the biggest and most accessible source of luck in
-day to day life - you meet people who will transform your life, your
-social circumstances, give you access to opportunities you'd otherwise
-lack, etc. There's &lt;a href="https://journals.sagepub.com/doi/full/10.1177/0190272518812010"&gt;a whole paper about how the best way to be lucky is
-to go to more
-parties&lt;/a&gt;.
-It's much easier to take advantage of this if you naturally want to
-spend lots of time socialising, are good at it, and find it emotionally
-rewarding rather than a source of anxiety.&lt;/p&gt;
-
-
-&lt;p&gt;The third way is that you can be
-pretty (I tend to use "pretty" in a gender neutral sense. There are some very
-pretty men out there. That being said, the way this manifests is definitely different with different genders).
-This tends to raise the chances of success in a lot of circumstances - people will
-seek you out more, give you more opportunities, you'll benefit from halo
-effects, etc. Being pretty tends to both increase the number of
-opportunities (because they seek you out) and increase the chances of
-any of those opportunities that depend on the judgement of others from
-working.&lt;/p&gt;
-
-
-&lt;p&gt;All of these are somewhat changeable but are at best hard to change,
-and aren't necessarily where your bottleneck &lt;/p&gt;
-
-
-&lt;h3&gt;Luck as a skill&lt;/h3&gt;
-
-
-&lt;p&gt;Now, this doesn't mean you can learn to be supernaturally lucky. There's
-no way you can, for example, improve your ability to play the lottery.
-You will probably, on average, be luckier if you &lt;em&gt;don't&lt;/em&gt; play the
-lottery.&lt;/p&gt;
-
-
-&lt;p&gt;It also doesn't mean that everyone's luck is purely determined by their
-skill. There are roughly three components to luck, in decreasing order
-of importance for most people:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Skill&lt;/li&gt;
-&lt;li&gt;Privilege&lt;/li&gt;
-&lt;li&gt;Chance&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;Yes, chance is the &lt;em&gt;least&lt;/em&gt; important component of luck, I promise. It's
-not that chance doesn't matter, it's that if chance matters too much you
-are not actually being lucky.&lt;/p&gt;
-
-
-&lt;p&gt;The reason, in short, is that luck mostly occurs as the sum of many
-chance events, and statistically the chance effects average out over
-time. If you toss a coin 100 times, you've no ability to predict which
-way any given coin toss will go, but you'll get heads about 50 times,
-and you'll with overwhelming likelihood get heads between about 30 and
-70 times.&lt;/p&gt;
-
-
-&lt;p&gt;Privilege on the other hand can matter a great deal. For example, people
-who are unusually attractive or unusually intelligent will have a much
-easier time being lucky (more on why later). It's also &lt;em&gt;vastly&lt;/em&gt; easier
-to be lucky if you're wealthy or have other resources you can draw on.
-If that's you, you can capitalise on it, and it's worth paying attention
-to, but ultimately what matters more is how these affect your ability to
-develop the skill of luck than the privilege itself.&lt;/p&gt;
-
-
-&lt;p&gt;Which brings us to the most important part: Skill. This is the most
-important part both because it's the bit that matters the most, and also
-because it's the bit that's most under your control.&lt;/p&gt;
-
-
-&lt;h3&gt;An informal mathematical glossary&lt;/h3&gt;
-
-
-&lt;p&gt;Here I've deleted a lot of material that I covered better in &lt;a href="https://notebook.drmaciver.com/posts/2021-10-29-09:43.html"&gt;Probably enough probability for you&lt;/a&gt; so go read that bit instead.&lt;/p&gt;
-
-
-&lt;h3&gt;Luck 101&lt;/h3&gt;
-
-
-&lt;p&gt;Luck is a numbers game. Luck is the aggregate result of many small
-events, each of which is unlikely to have any upside, but which on
-average have a much greater upside than their cost. Let's call these
-events &lt;em&gt;opportunities&lt;/em&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;Getting luckier is a process involving two things:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Increasing the number of opportunities you take.&lt;/li&gt;
-&lt;li&gt;Improving the average effectiveness of opportunities.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;Privilege affects these differently. e.g. Being resource-rich tends to
-make the first easy, being attractive tends to maximise the second, but
-both are under your control to a large degree.&lt;/p&gt;
-
-
-&lt;p&gt;Also, note that this is somewhat non-uniform, in that the &lt;em&gt;types&lt;/em&gt; of
-opportunities available to you matter a great deal. It's possible to
-e.g. be very lucky in business but have no luck in dating (or vice
-versa), due to being good at these in one context and bad in another.
-This is particularly true for people who have never spent much time
-strategizing about luck in general and have just, well, lucked into some
-good habits in some specific contexts.&lt;/p&gt;
-
-
-&lt;h3&gt;Lottery luck&lt;/h3&gt;
-
-
-&lt;p&gt;Imagine a simple lottery, you pay £1, you have a one in 10 million
-chance of winning £1 million. You play the lottery, and unsurprisingly
-you don't win. Someone else plays the lottery, and they do. Are they
-luckier than you?&lt;/p&gt;
-
-
-&lt;p&gt;In this specific instance, they have certainly been luckier than you,
-but in a generalisable sense they are not. What actually happened is
-that millions of people played the lottery, so even though every
-individual one was a sucker, one or two people got lucky. Those people
-have what you might call lottery luck - it's a one off unrepeatable event,
-and any strategy for improving your luck that relies on lottery luck is
-a losing game.&lt;/p&gt;
-
-
-&lt;p&gt;You can think of the basic practice of luck as being about trying
-repeatedly, and seeking lottery luck is &lt;em&gt;actively harmful&lt;/em&gt; for this
-because the more times you try the worse off you will be.&lt;/p&gt;
-
-
-&lt;h3&gt;What would have come next&lt;/h3&gt;
-
-
-&lt;p&gt;This is the point at which the draft trails off, which is unfortunate as what comes next is all the interesting bits.&lt;/p&gt;
-
-
-&lt;p&gt;What I was planning on covering next ties together:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;The work of Richard Wiseman in his book "The Luck Factor" which I think is
-  a very good book for getting better at an important but kinda boring type of
-  luck.&lt;/li&gt;
-&lt;li&gt;Brian Lui's notion of &lt;a href="https://brianlui.dog/2020/10/06/upside-decay/"&gt;Upside decay&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Lewis Hyde's book "Trickster Makes This World", which is about trickster myths and what they teach us about luck and creativity.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;The core idea being that the most interesting skill of luck is treating your engagement with the world as a creative process.&lt;/p&gt;
-
-
-&lt;p&gt;As a mild post mortem note, I think one thing this points to is that when writing a newsletter post I should &lt;em&gt;start by writing the interesting bits&lt;/em&gt;. Then I can backfill to give people an onramp to it if I think that's actually necessary. Write the newsletter more like the notebook, so that when I hit the point where I'm done and don't want to write any more I can just click send. Writing as &lt;a href="https://notebook.drmaciver.com/posts/2020-03-23-15:52.html"&gt;an anytime algorithm&lt;/a&gt;.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2022-05-25-09:47.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-05-26-07:09.html</id>
     <title>Promethean work</title>
@@ -1975,7 +1721,7 @@ punished, so they learn "not to" care about it.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-06-05-14:26.html</id>
     <title>Historical contingency</title>
-    <updated>2022-06-05T14:35:40+01:00</updated>
+    <updated>2022-06-05T14:39:47+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Historical contingency&lt;/p&gt;
@@ -2107,5 +1853,85 @@ pointing out that a lot of historical contingency happened here too.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2022-06-05-14:26.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2022-06-05-14:43.html</id>
+    <title>How to use philosophy</title>
+    <updated>2022-06-05T14:43:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;How to use philosophy&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2022-06-05&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Here's another draft bankruptcy piece that was from a longer post in which I was apparently trying to puzzle out the meaning of life. This obviously went as well as you'd expect, but here's a section from it that I liked.&lt;/p&gt;
+
+
+&lt;p&gt;I used to be part of a support group, where we got together as a group of
+four people every three weeks and talked about our problems. In one session I found myself saying "If I never solve the problem and continue
+this way for the rest of my life then I guess I would..." and I
+couldn't finish the sentence.&lt;/p&gt;
+
+
+&lt;p&gt;I know exactly why I couldn't finish the sentence, it was because the
+words that I'd intended to say were "be fine with that". I couldn't say
+them because as soon as I started I realised they would be a lie, and I
+don't lie to support group.&lt;/p&gt;
+
+
+&lt;p&gt;There's a joke I'm a huge fan of. It goes as follows:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;A certain man was in quest of immortality. He read many occult books
+on the subject, but none of them gave him any practical advice on how
+to become immortal. Then he heard of a certain great sage of the East
+who knew the true secret of immortality. It took him twelve years to
+find the sage, and when he did, he asked, "Is it really possible to
+become immortal?" The sage replied, "It is really quite easy, if you
+do just two things." "And what are they?" the man asked quite eagerly.
+"First of all," replied the sage, "from now on, you must always tell
+the truth. You must never make a false statement. That's a small price
+to pay for immortality, isn't it?" "Of course!" was the reply.
+"Secondly," continued the sage just say, "I will repeat this sentence
+tomorrow." If you do these two things, I guarantee you will live
+forever."&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;(from The Gödelian Puzzle Book by Raymond Smullyan)&lt;/p&gt;
+
+
+&lt;p&gt;Sadly I haven't mastered the second step yet, but I'm still working on
+the first, and it comes with its own advantages.&lt;/p&gt;
+
+
+&lt;p&gt;After a certain amount of work (largely the sort of things I talk about in &lt;a href="https://drmaciver.substack.com/p/labelling-feelings"&gt;labelling feelings&lt;/a&gt;) you get to the point where it's really hard to unintentionally say
+things you believe to be false, and attempting to do so is often a good
+way to find out what you believes different things than you thought it
+did.&lt;/p&gt;
+
+
+&lt;p&gt;Philosophy is at its most valuable when combined with this sense,
+because you go through the philosophical argument, and you then identify
+which parts of it don't feel right, and you use that feeling to guide
+yourself to one or more of better self-understanding or better
+philosophy.&lt;/p&gt;
+
+
+&lt;p&gt;The result is &lt;em&gt;not&lt;/em&gt; that you argue yourself into feeling differently,
+but that by paying attention to the argument and your feelings about it,
+you learn more about both the argument and how you feel about the
+subject. Sometimes this changes your feelings, sometimes it changes your
+philosophy, sometimes it changes both. The only way to fail is for it to
+change neither.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2022-06-05-14:43.html" rel="alternate"/>
   </entry>
 </feed>
