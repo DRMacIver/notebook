@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2022-06-05T14:11:00+01:00</updated>
+  <updated>2022-06-05T14:14:58+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1912,7 +1912,7 @@ out of control or away from us.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-06-05-14:11.html</id>
     <title>How can we create healthy geniuses?</title>
-    <updated>2022-06-05T14:11:00+01:00</updated>
+    <updated>2022-06-05T14:14:58+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;How can we create healthy geniuses?&lt;/p&gt;
@@ -1922,6 +1922,9 @@ out of control or away from us.&lt;/p&gt;
 &lt;dt&gt;Published&lt;/dt&gt;
 &lt;dd class="post-date"&gt;2022-06-05&lt;/dd&gt;
 &lt;/dl&gt;
+
+
+&lt;p&gt;Here's another abandoned draft. I think this one was intended for the paid subscriber archives. It's clearly related to &lt;a href="https://drmaciver.substack.com/p/how-do-we-treat-unique-talents-32a"&gt;How do we treat unique talents?&lt;/a&gt;, although I don't remember which one came first.&lt;/p&gt;
 
 
 &lt;p&gt;A recurring talking point in parts of where I hang out on Twitter is
@@ -1970,7 +1973,7 @@ I cannot imagine many people would take that deal.)&lt;/p&gt;
 drawing diagrams, but &lt;em&gt;I&lt;/em&gt; find it helpful.&lt;/p&gt;
 
 
-&lt;p&gt;&lt;img alt="" src="https://bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/dced7dc9-7adb-4bc4-8e3f-a6db0f91287f_778x739.png"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="/images/genius-1.png"/&gt;&lt;/p&gt;
 
 
 &lt;p&gt;In this diagram imagine each vertical line is a person at their skill
@@ -1988,7 +1991,7 @@ hypercompetent individual in our above example, but the skill level
 smoothly climbs towards their level:&lt;/p&gt;
 
 
-&lt;p&gt;&lt;img alt="" src="https://bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/8b93ca0e-9680-4be7-90e9-77a3847c9180_778x739.png"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="/images/genius-2.png"/&gt;&lt;/p&gt;
 
 
 &lt;p&gt;They are no less skilled than the hypercompetent individual, and they
