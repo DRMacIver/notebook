@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2022-06-10T02:33:21+01:00</updated>
+  <updated>2022-07-14T10:44:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,475 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2022-05-31-11:06.html</id>
-    <title>Intelligence problems</title>
-    <updated>2022-05-31T11:27:28+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Intelligence problems&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2022-05-31&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Here's a draft I abandoned basically because I find this subject extremely
-stressful to talk about and low-key expect people to shout at me every time
-I talk about it.&lt;/p&gt;
-
-
-&lt;p&gt;This sucks, because it's an important subject to me that I genuinely think
-most people I know would benefit from understanding better, so I've decided
-that even if I can't bring myself to finish this as is I'm just going to post
-what I've got and hope it's useful to people.&lt;/p&gt;
-
-
-&lt;p&gt;Please don't shout at me about it. I'll be sad.&lt;/p&gt;
-
-
-&lt;h3&gt;Unspoken privileges&lt;/h3&gt;
-
-
-&lt;p&gt;I need to start with some theory, because it will help contextualise the
-thing I want to actually talk about today.&lt;/p&gt;
-
-
-&lt;p&gt;The feminist concept of "privilege" is very important and useful, and
-also tends to get people's backs up because people (including those who
-are most willing to level it as an accusation at others) rarely like being
-called privileged.&lt;/p&gt;
-
-
-&lt;p&gt;(Ages ago I saw a proposal to replace the term with "blind spots", but it
-never caught on. Unclear to what degree that was because it's kinda
-ableist, and to what degree that was because it was much harder to hurl
-it as an insult at your opponent in a fight on the internet.)&lt;/p&gt;
-
-
-&lt;p&gt;I tend to use a slightly modified version which replaces "privilege"
-with "privileges". It's not a question of whether you are or aren't
-privileged, but instead what privileges you do and don't have. We all
-have privileges, but some of us have significantly more privileges than
-others, and many of those privileges are in some way connected to shared
-characteristics - e.g. I have male privileges, those privileges
-associated with being male, or with being white, two of the main sources of
-privilege typically discussed in feminist contexts.&lt;/p&gt;
-
-
-&lt;p&gt;A "privilege" in this context just means any benefit I typically get or,
-in particular, any source of problems that I get not to have. Anything
-that makes your life easier or better, and is not reliably shared with
-everyone else. e.g. due to the aforementioned being white and male,
-there are a lot of contexts I can just walk into and assume (mostly
-correctly) that I will be taken seriously and this does indeed make my
-life easier and better.&lt;/p&gt;
-
-
-&lt;p&gt;But there are a number of privileges that I don't think get talked about
-enough, because it's considered in poor taste to admit that you have
-them, and I think this is a major problem because these are also
-privileges that I think are among the best predictors of success.&lt;/p&gt;
-
-
-&lt;p&gt;The chief unspoken privileges of this form that I'm aware of are being
-rich, being attractive, and being smart. You're not supposed to talk
-about them because doing so seems like boasting. It's safe to talk about
-white privilege, or male privilege, or to some degree middle class
-privilege, because you're able to talk about them on the assumption that
-these in some sense "should" be value neutral. But when you talk about
-wealth, attractiveness, or intelligence, there is always an implied
-subtext of "These are the privileges I have for being better than
-you..." and that goes down about as well as you might expect.&lt;/p&gt;
-
-
-&lt;p&gt;This results in a peculiar norm in a lot of lefty spaces where you are
-supposed to acknowledge all your privileges &lt;em&gt;except for some of the most
-impactful ones, which you are encouraged to downplay&lt;/em&gt;. I consider this a
-tad suspect.&lt;/p&gt;
-
-
-&lt;p&gt;More importantly, this results in a very distorted view of the world,
-where people are not properly able to understand the advantages that
-they have and others lack. I think it's important to understand these
-clearly, both in order to have more empathy for others and the problems
-they face, and also to understand &lt;a href="https://notebook.drmaciver.com/posts/2020-07-15-09:33.html"&gt;the nice problems to
-have&lt;/a&gt; that
-they bring you.&lt;/p&gt;
-
-
-&lt;h3&gt;What is intelligence?&lt;/h3&gt;
-
-
-&lt;p&gt;The one I want to talk about today is intelligence. First I need to
-convince you that intelligence is a real thing. Fortunately, you
-probably already believe this really, but I'm going to spend some time
-convincing you of it anyway so that we're on the same page.&lt;/p&gt;
-
-
-&lt;p&gt;First, let's talk about IQ, because a lot of misconceptions about
-intelligence come down to politically-motivated (in both directions)
-misunderstandings about IQ.&lt;/p&gt;
-
-
-&lt;p&gt;You've probably heard a lot about how IQ is bullshit. This is generally
-coming from a very well-intentioned place, but is wrong. There are many
-exaggerated or incorrect arguments made on the basis of it, but IQ
-itself is extremely well-validated psychometrics which serves a
-genuinely useful role, especially for diagnostic purposes during
-education. e.g. the reason I've had a proper IQ test was to diagnose a
-learning disability that manifested as having &lt;em&gt;extremely&lt;/em&gt; large
-differences in my verbal and spatial IQs (these gaps have mostly closed
-now), which has been very helpful for understanding my own thinking.&lt;/p&gt;
-
-
-&lt;p&gt;IQ is not a perfect measure of intelligence by any means, but nobody
-serious claims it is. I highly recommend the book "Intelligence: A Very
-Short Introduction" by Ian Deary for a review of the literature, and the
-strengths and limitations of IQ. It's also just an excellent and very
-readable example of good science communication.&lt;/p&gt;
-
-
-&lt;p&gt;So... given that, what is IQ?&lt;/p&gt;
-
-
-&lt;p&gt;Well, first off, IQ isn't really one thing. It is a family of different
-IQ tests all of which are trying to do roughly the same thing and which
-are normalised to the same distribution of scores, but are imperfectly
-predictive of each other. That means that if you took two different IQ
-tests, you would not expect to get the same result on each. This is
-fine, because IQ is not intended to be an absolute measure of anything
-in particular, it's a score that indicates general tendencies and is
-usefully descriptive.&lt;/p&gt;
-
-
-&lt;p&gt;What's it describing? Well, "intelligence" obviously, but what's that?&lt;/p&gt;
-
-
-&lt;p&gt;It is, again, not entirely one thing. And this makes sense, right? If
-you consider, say, a brilliant scientist and a brilliant novelist, there
-are clearly different senses in which you'd expect them to be brilliant
-- e.g. one would be better with words and attention to detail, one with
-numbers and abstraction.&lt;/p&gt;
-
-
-&lt;p&gt;But, and here is the bit that is perhaps surprising, generally you would
-also expect each of them to be better at the other's area of brilliance
-than a typical member of the population. Although they are distinctively
-brilliant in their different ways, they tend to be better at a whole
-bunch of seemingly unrelated things.&lt;/p&gt;
-
-
-&lt;p&gt;This is the basic empirical claim that underlies IQ's utility: There are
-a number of different tests we can perform that you might reasonably
-consider "tests of intelligence" and, surprisingly, they are typically
-positively correlated with each other. That is, good performance on one
-test tends to predict good performance on another, despite the fact that
-when you compare two people one person can do better on one and worse on
-another.&lt;/p&gt;
-
-
-&lt;p&gt;A good analogy here might be strength. Someone who can bench press a
-higher weight than me can probably also do more push ups than me, or
-more reps in their deadlift at the same
-weight (None of these are particularly impressive bars to clear, mind, because I
-desperately need to start going back to the gym).&lt;/p&gt;
-
-
-&lt;p&gt;We could take a number of measures like this and turn them into an SQ, a
-strength quotient, that measures your aggregate strength, and it would
-function in very similar ways to an IQ as a general test of ability -
-for tasks where you wanted someone strong, someone with a higher SQ is
-typically likely to be better. For a specific strength task and two
-people with relatively similar SQs it's not terribly surprising if one
-is much better than the other, but when there is a very large SQ
-difference you should at least be surprised when the person with the
-lower SQ outperforms the larger. The world's best dead-lifter and the
-world bench press record holder probably have quite similar SQs, but
-sometimes one will be better at something and sometimes the other, but
-they're both going to be better than me at almost everything strength
-related.&lt;/p&gt;
-
-
-&lt;p&gt;IQ is similar to our hypothetical SQ, but instead of things like bench
-press weight, push ups, etc. we instead test things like memory,
-performing complex tasks under time pressure, speed of generating
-associations, etc.&lt;/p&gt;
-
-
-&lt;p&gt;It's also different from SQ, in that different things are empirically
-true about it. e.g. one of the surprising and deeply frustrating facts
-about IQ is that it mostly seems pretty stable over your lifetime. Some
-movement is possible (and there is also just random variation based on
-the particular test you take and what sort of day you're having), but
-generally IQ seems better at reflecting some underlying hard to
-influence capabilities than SQ, which responds well to exercise. It's
-possible that there are some better tests of underlying strength
-capabilities that are less amenable to training that would make for a
-similarly stable SQ, but if so I don't know what they are.&lt;/p&gt;
-
-
-&lt;p&gt;The following are things I think are characteristically easier for
-people with high intelligence:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;Quickly picking up new information and skills.&lt;/li&gt;
-&lt;li&gt;Following complex arguments and instructions.&lt;/li&gt;
-&lt;li&gt;Holding multiple things in mind at once.&lt;/li&gt;
-&lt;li&gt;Recalling relevant information to the current situation.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;Facility with these things is something that people genuinely vary on.
-Most of it improves with practice, but even the ones which improve with
-practice tend to improve &lt;em&gt;more&lt;/em&gt; with practice if you're naturally smart,
-in much the same way that you get stronger with practice but your build,
-nutrition, and general genetic makeup determines a lot about how well
-that works for you.&lt;/p&gt;
-
-
-&lt;p&gt;A wrong but useful analogy here is that smarter people are running their
-brains on better hardware - e.g. faster processing, more memory, larger
-hard drive, etc. If you're less smart, you can probably still do
-everything that a smarter person can do, but at some point the
-"software" becomes unusably slow to the point where it's too frustrating
-to be worth doing, at which point you might either have to ask someone
-else to do it or find an approach better suited to your current
-strengths (e.g. by externalising more of the process when you hit the
-limits of what you can do in your head).&lt;/p&gt;
-
-
-&lt;h3&gt;Intelligence isn't everything&lt;/h3&gt;
-
-
-&lt;p&gt;I want to be clear, I don't think that your intelligence defines you.
-Many people recognised as geniuses had fairly unremarkable IQs, and many
-people with high IQs don't achieve anything particularly impressive.&lt;/p&gt;
-
-
-&lt;p&gt;In my anecdotal experience, very few people are bottlenecked on their
-intelligence, because people tend to naturally gravitate to doing things
-that are about right for them, so the result is that people are often
-doing jobs that someone much less smart than them &lt;em&gt;would&lt;/em&gt; be bottlenecked
-on intelligence in, and someone much smarter than them would find very
-boring, but there's usually a pretty wide band around any given job of
-people who will basically be fine.&lt;/p&gt;
-
-
-&lt;p&gt;(I think I wanted to include something about how intelligence also
-doesn't determine your moral worth etc. I don't have anything non-obvious
-to say here other than duh intelligence doesn't determine your moral
-worth, and I'm not going to try something long about that now because it
-will result in me not posting this instead)&lt;/p&gt;
-
-
-&lt;h3&gt;Why am I telling you this?&lt;/h3&gt;
-
-
-&lt;p&gt;I am telling you this because, if you read my work, I assume you are to
-some large degree like me. In particular I expect you are smarter than
-average, possibly significantly so. I say this not to flatter you, it's
-just really unlikely that you'd be interested in my
-overly-intellectualised view of the world if that was not the case.&lt;/p&gt;
-
-
-&lt;p&gt;If you're also like me politically or emotionally, you've probably spent
-a lot of time in denial about the significance of this, and as a result
-being quite unfair to both yourself and the people around you. &lt;a href="https://drmaciver.substack.com/p/how-to-be-smarter"&gt;I've
-previously made strong claims about the irrelevance of empirical
-questions about
-intelligence&lt;/a&gt; and I
-think these are still &lt;em&gt;mostly&lt;/em&gt; right, but miss an important point: It's
-valid to have this sort of growth mindset attitude to intelligence for
-your &lt;em&gt;own&lt;/em&gt; abilities, but when interacting with other people it results
-in being unkind and pushy in ways that do not help you or them.&lt;/p&gt;
-
-
-&lt;p&gt;There are things you need to know about how intelligence affects you and
-others when you are smarter than most of the people around you, and
-because of the unspoken privilege nature of intelligence probably nobody
-has ever really sat you down and helped you understand those things.
-Certainly I was well into my thirties before I finally properly started
-internalising this.&lt;/p&gt;
-
-
-&lt;p&gt;People are often impressed with things I do - this newsletter and
-&lt;a href="https://github.com/HypothesisWorks/hypothesis"&gt;Hypothesis&lt;/a&gt; being major
-examples - and I'm usually inclined to dismiss this. Anyone could do the
-things I do, right? It's just a matter of hard work, a few tricks, and
-an interest in doing it.&lt;/p&gt;
-
-
-&lt;p&gt;I do, in fact, think this is true to some degree. Given the right
-training and willingness to apply themselves, I think most people could
-do most of the things I do. Also I think it would be vastly harder for
-them to do so, to the point where it might not be worth it. If I see
-something instantly that you could see after sitting down for an hour,
-or even a couple of minutes, it will often be worth me doing things that
-it's not worth you doing.&lt;/p&gt;
-
-
-&lt;p&gt;When I was younger, this resulted in me being very impatient with
-people. There were so many things that are so &lt;em&gt;easy&lt;/em&gt; that it seemed like
-nobody could be bothered to do. Did they just not actually care? Were
-they lazy?&lt;/p&gt;
-
-
-&lt;p&gt;Over time I learned to be less of a dick about it, and just got better
-at explaining things to others, helping them out, and generally
-expecting less of them. This was certainly politer than my younger
-behaviour, but I don't necessarily think it was fairer, because there
-was always a sort of premise that if I show you how this works then
-you'll be able to do it as well as me, right?&lt;/p&gt;
-
-
-&lt;p&gt;The result was a great deal of low grade disappointment on my end,
-because the answer is rarely that they can do the things I am explaining
-as well as I can. There will be plenty of things they can do &lt;em&gt;better&lt;/em&gt;
-than me, that play to their strengths and interests that I lack, but if
-it's something I've spent enough time, interest, and effort on (even if
-it felt this way) to get very good at it, chances are it's actually very
-hard for them to catch up with me.&lt;/p&gt;
-
-
-&lt;p&gt;I think the result is that over the years I've been, inadvertently,
-rather discouraging to some people, by telling them that things are easy
-that aren't easy, or that they can do things that realistically they're
-never going to do.&lt;/p&gt;
-
-
-&lt;p&gt;"You can do it" is only a reassuring message if they actually can do it,
-and if you've accurately conveyed the work that it takes to do it.
-Without that, you're just setting people up for disappointment.&lt;/p&gt;
-
-
-&lt;p&gt;Chances are, you're probably making this mistake too. If you often feel
-frustrated with the people around you for just not getting it, or for
-being weirdly slow or bad at things you find easy, it's pretty likely
-that they're not actually slacking off, those things are just much
-easier for you than they are for them.&lt;/p&gt;
-
-
-&lt;h3&gt;This sucks for you too&lt;/h3&gt;
-
-
-&lt;p&gt;If you are significantly smarter than average, either uniformly across
-the board or in some particular way, your mind literally works
-differently from the people around you. There's a word for that:
-Neurodivergence.&lt;/p&gt;
-
-
-&lt;p&gt;There's a general phenomenon of "gifted kid syndrome" that Twitter gets
-in a furore about every six months where a bunch of smart kids talk
-about how traumatic they found their childhood experience of that, and
-the rest of Twitter is about equally divided between calling them
-entitled tech bros (regardless of whether they are male or work in tech)
-and going "Oh man this is great I haven't had such a good opportunity to
-bully nerds in years". Generally there's a large subtext of "You're
-talking about an advantage, therefore you don't get to complain about
-the negative consequences of having that advantage for you, because
-other people have it worse". I am, to put it mildly, not a fan of this
-messaging.&lt;/p&gt;
-
-
-&lt;p&gt;In general, one of the worst problems with problems that derive from
-being smarter than the people around you is that they are almost by
-definition unrelatable, and people try to make you feel bad for having
-them. This is a central feature of what I call &lt;a href="https://notebook.drmaciver.com/posts/2020-07-15-09:33.html"&gt;Nice problems to
-have&lt;/a&gt;:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;What we generally mean when we say "nice problem to have" is that
-the &lt;em&gt;preconditions&lt;/em&gt; for having this problem are nice to have. i.e. you
-cannot have this problem unless some other nice thing happens first.
-This is not at all a reliable predictor of the amount of suffering
-involved.&lt;/p&gt;
-&lt;p&gt;(...)&lt;/p&gt;
-&lt;p&gt;The thing is, by definition, "nice problems to have" are ones that
-are not going to be shared by a lot of people (otherwise the
-preconditions would just be normal behaviour and it wouldn't be a
-nice problem to have). As a result:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Most people probably won't be able to relate to it, because their
-    lived experiences will be so different.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;People will be envious of you for the nice thing.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Thus the defining characteristic about nice problems to have is not
-that they are nice, but that you will be afforded no sympathy for
-having them. Nice problems to have are the opposite of nice: They
-isolate you from the ability to &lt;a href="https://drmaciver.substack.com/p/you-should-complain-about-it"&gt;complain about
-them&lt;/a&gt;,
-which removes a major bonding activity with people who have not been
-successful in the same way as you, and also causes you to feel worse
-about the problems with those who do not share your burden.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;The distinguishing feature of high intelligence is that many things are
-easy for you that are not easy for other people. On the one hand this is
-great, on the other hand this has the knock on effect that you are
-constantly under-stimulated, because the world is not designed on the
-assumption that you find this easy.&lt;/p&gt;
-
-
-&lt;p&gt;In order to get a sense of what this is like, imagine the following:
-You, as you are now, are forced to attend class with a bunch of 7 year
-olds doing their times tables. You are required to pay attention. If you
-do not pay attention, you will be scolded for this. If you explain you
-already understand the material, you will be scolded for disrupting the
-class. You have no choice but to sit there, "learning" material you
-thoroughly understand, day in day out, while those around you struggle
-with it for reasons you can barely understand and wouldn't be allowed to
-help with even if you did because that too would be disruptive.&lt;/p&gt;
-
-
-&lt;p&gt;This is pretty much my experience of most classes growing up, and I
-think that's quite typical for anyone reasonably smart, because classes
-at school are generally not that hard in the first place. This results
-in a lot of complaints that are not particularly well received because
-they sound like normal problems. A lot of modern childhood just &lt;em&gt;is&lt;/em&gt;
-boring, so when someone complains about that experience it sounds like
-they're complaining about a normal childhood
-experience (Which, to be clear, is very reasonable to do in its own right. It's
-&lt;em&gt;extremely bad&lt;/em&gt; that childhood is boring), and easy to miss that they are
-describing a much more boring experience than you're imagining.&lt;/p&gt;
-
-
-&lt;h3&gt;Postscript&lt;/h3&gt;
-
-
-&lt;p&gt;This piece is definitely a combination of two problems: It's very stressful
-to write, and also I as usual had to do a lot of work explaining what I consider
-very 101 level context. I wish I could write a piece where I don't have to
-spend the first half of it explaining both "Opression is a real thing" and
-"Intelligence is a real thing", but a lot of people need one or both of
-these, and most people who don't need one of these very much need the other -
-partly this piece was born out of my frustration with having to explain to
-so many very well intentioned friends of mine that no IQ isn't actually fake
-I promise.&lt;/p&gt;
-
-
-&lt;p&gt;This is also a good example of explanation as defence - I do tend to over-explain
-when I get stressed, on the hope that once people see how very reasonable I'm
-being they won't be mad. This is exactly as bad a strategy as it sounds.&lt;/p&gt;
-
-
-&lt;p&gt;Anyway I'd like to be able to write about things like this that are important
-and stressful, but apparently I'm not currently able to do that. A pseudonym
-might help, but it's not currently worth it to me to have writing that isn't
-well integrated into my main body of work.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2022-05-31-11:06.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-06-01-08:19.html</id>
     <title>Abstraction and concretization</title>
@@ -1890,7 +1421,7 @@ The problem with treating people as things is not that you are treating them as 
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-06-10-02:24.html</id>
     <title>Rules as moral training wheels</title>
-    <updated>2022-06-10T02:33:21+01:00</updated>
+    <updated>2022-06-10T02:34:50+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Rules as moral training wheels&lt;/p&gt;
@@ -2292,5 +1823,117 @@ to write about.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2022-06-10-02:24.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2022-07-14-10:44.html</id>
+    <title>How you should have learned mental arithmetic</title>
+    <updated>2022-07-14T10:44:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;How you should have learned mental arithmetic&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2022-07-14&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Draft bankruptcy is over, but I got about a quarter of the way into writing this post before I realised that it was going to be much longer than I expected and also that I had no fucking idea why I was writing this post, so this is the point I stopped at.&lt;/p&gt;
+
+
+&lt;p&gt;I had a conversation the other day with a small child and her father, in which I opined that the eight times tables was one of the easy ones because you could just multiply by two three times. &lt;/p&gt;
+
+
+&lt;p&gt;This was apparently confusing. “How would you do 7 times 8 by multiplying by two three times?” “14 28 56, done.” “Huh I wouldn’t have thought of that”.&lt;/p&gt;
+
+
+&lt;p&gt;The father in question is certainly decent at mathematics, although not a mathematician,  so this is probably a relatively common point of confusion.&lt;/p&gt;
+
+
+&lt;p&gt;7 times 8 is pretty easy in general. For example 7 times 7 is 49, so you can just add 7 to that to get 56 (because 6 is 7 - 1). Also really sometimes when multiplying by 8 it’s easier to go the other way and remember that 8 is 10 - 2, so 7 times 8 is 70 - 14, which is 60 - 4, which is 56.&lt;/p&gt;
+
+
+&lt;p&gt;But no, you’re not supposed to do any of that, you’re supposed to just know that 7 times 8 is 56. If you work it out you’re not doing the task of learning your times tables properly. That’s cheating that is.&lt;/p&gt;
+
+
+&lt;h3&gt;Desire lines in the mind&lt;/h3&gt;
+
+
+&lt;p&gt;For developmental reasons it probably does make sense to start kids off with learning their times tables. I’m not sure, I’m not actually very good at teaching small children, but the fact that people don’t then go on to learn how to do mental arithmetic properly is, I think, one of the injustices at the core of how we teach mathematics. Not because mental arithmetic is particularly important, but because it’s one of the easiest places to learn to think about mathematics like a mathematician does - rather than trying to memorise a bunch of information, you see how it all fits together.&lt;/p&gt;
+
+
+&lt;p&gt;I’ve talked about this before in the context of learning ROT13, but I think the non-serious nature of that post hid this somewhat (mental arithmetic is of course very serious). There is a specific technique of learning that works very well for mathematics in particular (but is, I think, general): Rather than trying to memorise the information, you instead learn how to work it out from first principles or other remembered information. This, in turn, will usually allow you to memorise a bunch of information, but it will be the right information - that which you actually use.&lt;/p&gt;
+
+
+&lt;p&gt;The way this works is simple: Being able to work out the information means that you have a reliable feedback loop for learning it, because every time you use it you will access it by the fastest method readily available to you - whether that’s simply remembering it, or working it out from scratch, or skipping steps that you remember the results of… Each time you use it, your access to it will get faster and more fluent, until the things you use most commonly are readily to hand. But even if you don’t memorise it, you’ll be able to get there.&lt;/p&gt;
+
+
+&lt;p&gt;You can think of this approach to memorisation as that of building desire lines. Desire lines are those lines in the grass that you see on parks where people have clearly decided it’s more efficient to walk across the diagonal than follow the paved path the long way round. People build a path by walking it.&lt;/p&gt;
+
+
+&lt;p&gt;In addition, by giving people the ability to build desire lines, you give them the ability to explore. Someone who has learned a large body of information this way has not only learned that information, they’ve learned how to learn new information like it. Memorising your 8 times table by brute force is not easier for having memorised your 7 times table, but the more mental arithmetic you learn to do “properly”, the more you start to understand how numbers work, the more other types of mental arithmetic and related mathematics are accessible to you.&lt;/p&gt;
+
+
+&lt;h3&gt;How to do addition&lt;/h3&gt;
+
+
+&lt;p&gt;I’m now going to teach you arithmetic from scratch. This will start out with me spelling out some things you might find either confusing or painfully obvious. Sorry. It’s important I promise.&lt;/p&gt;
+
+
+&lt;p&gt;If you start from the absolute basics of how mathematicians define addition (of natural numbers. If you don't understand this aside, please ignore this aside), it comes down to the following rules:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;m + 0 = m&lt;/li&gt;
+&lt;li&gt;m + 1 is the next biggest number after m&lt;/li&gt;
+&lt;li&gt;m + (n + 1) = (m + 1) + n&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;Or, in words:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;If you take any number (which we will call m), and you add zero to it, you get the same number (m) back. So e.g. 7 + 0 is 7.&lt;/li&gt;
+&lt;li&gt;Add 1 is just counting upwards to the next number. So e.g. 2 + 1 is 3, because 3 comes after 2.&lt;/li&gt;
+&lt;li&gt;If you take any number (which we will call m), and you add some number to it that is bigger than 0 (which we will call n + 1, which we can do because there’s at least one rock in it, so it’s just the number before it plus one), then this is the same as adding the number right before the second number (n) to the number right after the first number (m + 1). e.g. 8 + 6 = 9 + 5. We “move” a single object from the second number to the first.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;If you think of numbers as representing counting objects (which you should), you can think of addition as saying “If you have this many objects on the left, and this many objects on the right, how many are in the combined pile?”. I find it’s particularly helpful to think in terms of counting piles of rocks if you want a concrete example. &lt;/p&gt;
+
+
+&lt;p&gt;Our rules combined says that you can count the combined pile by moving rocks from the right pile to the left pile one at a time (which always preserves the number of rocks), and then when the rightmost pile is empty you’ll have all the rocks in the pile on the left.&lt;/p&gt;
+
+
+&lt;p&gt;Or, to see this with numbers, suppose we want to to calculate 9 + 7. We can do this by moving one from the right, one step at a time. So 9 + 7 = 10 + 6 = 11 + 5 = 12 + 4 = 13 + 3 = 14 + 2 = 15 + 1 = 16 + 0 = 16. Done.&lt;/p&gt;
+
+
+&lt;p&gt;Using this method you can now calculate any addition. Great! So easy, right?&lt;/p&gt;
+
+
+&lt;p&gt;I will admit, there are one or two downsides. Mostly, it’s extremely slow if the number on the right is large. So we probably don’t want to use this as our main method of calculation, but nevertheless, it is our starting point, and we now have our first reliable slow method for doing mental arithmetic.&lt;/p&gt;
+
+
+&lt;p&gt;The first thing to notice is that even through we don’t always want to follow it the whole way, it’s often a pretty good tactic to deploy.&lt;/p&gt;
+
+
+&lt;p&gt;For example, what’s 99 + 37? Well, it’s 100 + 36 (moved one from the right to the left), and 100 + 36 is easy it’s just 136.&lt;/p&gt;
+
+
+&lt;p&gt;This leads to the most important thing to understand about how to do mental arithmetic (and mathematics in general): Mental arithmetic is done by figuring out tactics to change your problem into an easier one.&lt;/p&gt;
+
+
+&lt;p&gt;There is a more general version of this tactic, which we can represent as m + (n + k) = (m + k) + n. That is, we if we have our left pile (m) and our right pile (n), we can always take away some number of rocks (k) that is no larger than the pile on the right, and move that to the pile on the left, we’ve now got k more rocks on the left and k fewer rocks on the right. &lt;/p&gt;
+
+
+&lt;p&gt;Often this is useful for making there be more multiples of 10 or other nice numbers to add together. For example, suppose you wanted to figure out 96 + 13. You could do this by noting that 13 = 9 + 4, so 96 + 13 = 96 + (9 + 4) = (96 + 4) + 9 = 109.&lt;/p&gt;
+
+
+&lt;p&gt;Another tactic we could use here that looks very similar is this: We could write this as 96 + 13 = 90 + 6 + 10 + 3 = (90 + 10) + (6 + 3) = 100 + 9 = 109.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2022-07-14-10:44.html" rel="alternate"/>
   </entry>
 </feed>
