@@ -73,7 +73,7 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
 <dd class="post-date">2022-10-02</dd>
 </dl>
 
-<p>Advance warning: You don't care about this post.</p>
+<p>Advance warning: You don't care about this post. Tersely written notes about a question you've probably never wondered about.</p>
 <p>A problem I've been thinking about on and off for a month or two is as follows:</p>
 <p>Let \(A\), \(B\) be partial orders. You can combine them with the following operations:</p>
 <ol>
@@ -86,13 +86,38 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
 <p>Here are some vaguely negative results in this space.</p>
 <ol>
 <li>There are irreducible partial orders of size \(n\) for every \(n &gt; 3\). There are no irreducible partial orders of size \(2\) or \(3\).</li>
-<li>There are at least \(O(2^n)\) non-isomorphic irreducible partial orders of size \(n\).</li>
+<li>There are at least \(O(2^{O(n)})\) non-isomorphic irreducible partial orders of size \(n\).</li>
 </ol>
 <p>As a warm up let's see why there are no irreducible partial orders of size \(2\) or \(3\).</p>
 <p>\(2\) is easy. Let \(P = \{a, b\}\) be a partial order of size \(2\). If \(a \preceq b\) then \(P = \{a\} // \{b\}\). Similarly the other way round. Otherwise, \(P = \{a\} \sqcup \{b\}\).</p>
 <p>\(3\) is slightly more complicated.</p>
-<p>It's helpful to think about this in terms of the level decomposition. The level of an element \(x \in P\) is the length of the longest chain ending in \(x\). Call that \(l(x)\). The height of \(P\) is the maximum level of an element of \(P\) (equivalently, the length of the longest chain in \(P\)). A level of \(P\) is a set of the form \(\{x \in P: l(x) = k\}\) for some \(k\).</p>
-<p>Suppose \(P\) were an irreducible poset of size \(3\). If it has \(3\) levels, then it's a chain, so can be decomposed with \(//\).</p>
+<p>It's helpful to think about this in terms of the level decomposition. The level of an element \(x \in P\) is the length of the longest chain ending in \(x\). Call that \(l(x)\). The height of \(P\) is the maximum level of an element of \(P\) (equivalently, the length of the longest chain in \(P\)), which we will call \(h(P)\). A level of \(P\) is a set of the form \(\{x \in P: l(x) = k\}\) for some \(k\).</p>
+<p>Suppose \(P\) were an irreducible poset of size \(3\). If it has \(3\) levels, then it's a chain, so can be decomposed with \(//\).
+If it has \(1\) level, it's an antichain so can be decomposed with \(\sqcup\). So it must have \(2\) levels. Thus we can write \(P = \{a, b, c\}\) with \(a \leq b\).</p>
+<p>If \(c\) is in level \(2\), then \(a \leq c\) (because \(a\) is the only element of level \(1\)), and so we can write \(P = \{a\} // \{b, c\}\). If \(c\) is in level \(1\), then if \(c \neq\preceq b\), we can write \(P = \{a, b\} \sqcup \{c\}\), so \(P\) is reducible. Therefore \(c \preceq b\), and so we can write \(P = \{a\} // \{b, c\}\). Thus, \(P\) could not have been irreducible.</p>
+<p>Now to see that for \(n &gt; 3\) there is always an irreducible poset.</p>
+<p>Construct a poset as \(P = \{a_1, \ldots, a_{n - 2}, b, c\}\) and order it as follows: \(a_i \leq b\) for all \(i\), and only \(a_ \leq c\).</p>
+<p>This is irreducible. It's clearly not reducible by \(\sqcup\) because every element is connected to every other by some sequence of comparisons. It's clearly not reducible by \(//\) because not every element of the bottom level is comparible with every element of the second level (this is where we used \(n &gt; 3\) - we need an \(a_2\) for this to be true).</p>
+<p>To see it's not reducible by \(\times\), we need to know that \(h(A \times B) = h(A) + h(B)\). This is true because you can basically create a maximal length chain by moving up each coordinate's chain in a zigzag fashion.</p>
+<p>Thus if \(P = A \times B\), we must have \(h(A) + h(B) = 2\). This requires both \(A\) and \(B\) to have height \(1\), which would make them antichains, so \(P\) would be an antichain, but it's not.</p>
+<p>In fact a stronger result holds: If \(h(P) \leq 3\), then if \(h\) is reducible by \(\times\), it's reducible by \(\sqcup\).</p>
+<p>We saw the \(h(P) = 2\) case above. If \(h(P) = 3\) and \(P = A \times B\) with \(A, B\) non-trivial then we must have one of \(A\) or \(B\) have height \(1\). Say it's \(A\). Then \(A\) is an antichain and because it's non-trivial has more than one element, so we can write \(A = X \sqcup Y\) with \(X, Y\) non-empty. Then \(P = X \times B \sqcup Y \times B\).</p>
+<p>Anyway, we can extend the idea behind this as follows to construct families of lots of non-isomorphic irreducible partial orders as follows.</p>
+<p>Let \(k &gt; 0\). Construct a partial follow out of elements \(P = \{a_1, \ldots, a_k\} \cup \{b_1, \ldots, b_k\} \cup \{c_U: U \subseteq \{1, \ldots, k\}, U \neq \emptyset\} \cup \{q\}\).</p>
+<p>The rules are:</p>
+<ol>
+<li>\(a_i \leq b_j\) iff \(i \leq j\).</li>
+<li>\(a_i \leq c_U\) iff \(i \in U\).</li>
+<li>\(b_j \leq q\)</li>
+</ol>
+<p>The idea of this construction is that there are \(O(2^k)\) elements in this partial order, and all of them are distinguishable up to isomorphism. i.e. the set has a trivial automorphism group.</p>
+<p>To see this, let \(f : P \to P\) be an automorphism. Then \(h(f(q)) = h(q) = 3\), so \(f(q) = q\) because \(q\) is the only level \(3\) element. Thus \(f(\{b_i\}) = \{b_i\}\), because they're the only elements directly below \(q\), and we can distinguish the \(b_i\) by how many elements are under them. Thus \(f\) must also preserve the \(a_i\), and thus also the \(c_U\).</p>
+<p>\(P\) is irreducible by our above result, but more importantly now let \(X \subseteq \{c_i\}\). Define \(P_X = P \cup d_X\), where \(d \leq c_U\) iff \(c_U \in X\).</p>
+<p>This is still height \(3\), and still clearly not reducible by either \(\sqcup\) or \(//\), so is an irreducible set.</p>
+<p>More, for \(X \neq Y\), we have \(P_X \neq P_Y\), because any isomorphism betweem them would have to preserve the \(C_U\), and so would fail to be an isomorphism because \(d_X\) and \(d_Y\) are below different \(c_U\).</p>
+<p>This gives of \(O(2^{O(|P|)})\) non-isomorphic irreducible partial orders of size \(|P| + 1\).</p>
+<p>For general \(n\), construct the largest version of \(P\) such that \(|P| + 1 \leq n\), and just add in a bunch of extra elements more or less any way that works, and you'll get the same bounds.</p>
+<p>It may still be that there's some interesting deep structure to look at for irreducible finite partial orders, but I think these examples show that there's probably not: There are just too many of them, and it's all a bit messy.</p>
 </section>
 
     </article>
