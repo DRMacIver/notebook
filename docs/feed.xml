@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2022-07-14T10:44:00+01:00</updated>
+  <updated>2022-10-02T06:24:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,348 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2022-06-01-08:19.html</id>
-    <title>Abstraction and concretization</title>
-    <updated>2022-06-01T08:21:34+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Abstraction and concretization&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2022-06-01&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;This is another draft bankruptcy post. It's the only section I actually wrote
-from a longer piece called "opposing mental motions".&lt;/p&gt;
-
-
-&lt;p&gt;Abstraction is when you take something concrete and make it more
-abstract. Dually, concretization is when you take something abstract and
-make it concrete. You can also think of these as "Zooming out" and
-"Zooming in", which also captures the feeling of them pretty well: As
-you zoom out, you see more but can make out fewer relevant details. As
-you zoom in, you can see the details clearly but lack the bigger
-picture.&lt;/p&gt;
-
-
-&lt;p&gt;Abstraction is when you ask "What general principles is this an example
-of?". Concretization is "What are some examples of this principle?".
-When you abstract, you zoom out. When you reify,&lt;/p&gt;
-
-
-&lt;p&gt;This isn't just a single step. You can zoom out to more and more general
-situations, or you can zoom in on more and more specific details.&lt;/p&gt;
-
-
-&lt;p&gt;For example, here's a zooming in series:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Replacing complex systems from scratch is a fraught business.&lt;/li&gt;
-&lt;li&gt;Often you discover that many of the specific features of the
-    original system were much harder and less well understood than you
-    thought they were (zooming in on the problem from "fraught
-    business").&lt;/li&gt;
-&lt;li&gt;For example in programming we've got the "second system effect",
-    where second systems typically go
-    badly and part
-    of this is trying to recreate all sorts of tacit knowledge in the
-    first system and maintaining bugwards compatibility with it for
-    users' use case (This isn't the primary thing second system effect usually refers to, but it's still a thing that tends to happen in second systems).&lt;/li&gt;
-&lt;li&gt;e.g. when Firefox replaced the original Mozilla web browser.&lt;/li&gt;
-&lt;li&gt;A specific thing that happened in that development...&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;Concretization here is a gradual move from general claim to specific
-illustrative anecdote.&lt;/p&gt;
-
-
-&lt;p&gt;Concretization can fail. For example I think it's reasonable to argue
-that Firefox is not actually a good example of the general principle
-(it's also reasonable to argue that it is), and that maybe even second
-system effect isn't really a good concretization because it tends to be
-more about the second system trying to do too much (I think it's both).
-A concretizing move is not unambiguously correct, and tends to work to
-precisely degree that the audience finds it illustrative of the general
-point.&lt;/p&gt;
-
-
-&lt;p&gt;Abstraction is often tightly coupled with looking for an explanation for
-specific behaviours and responses.&lt;/p&gt;
-
-
-&lt;p&gt;For a trivial example:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;I was watching Foundation. I hated it, it was super boring.&lt;/li&gt;
-&lt;li&gt;Why did I hate it? Well because it was mediocre. It was very well
-    executed, but there was nothing interesting about it.&lt;/li&gt;
-&lt;li&gt;This is an instance of a general pattern where things tend to try to
-    polish off their flaws without finding a real strength to emphasise,
-    and I tend to hate that.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;Like concretization, abstraction can fail if you try to move to a
-general claim that isn't actually true, or that the concrete claim
-didn't demonstrate well.&lt;/p&gt;
-
-
-&lt;p&gt;For example, I was talking about how I hate Rincewind the other day
-(Rincewind is the protagonist of most of the early Discworld books. He's
-the worst, and is the primary reason you should skip the early Discworld
-books). I might have claimed that I hated Rincewind because he was a
-protagonist who so clearly didn't want to be there and didn't want
-anything to do with the events of the story. This claim doesn't hold up,
-and you can see that it doesn't hold up by considering that Bilbo
-Baggins (the protagonist of The Hobbit) also clearly doesn't want to be
-there, but I like him just fine. If this were the correct explanation
-for why I hate Rincewind, it would also work for Bilbo, so it cannot be
-entirely correct.&lt;/p&gt;
-
-
-&lt;p&gt;(The actual reason I hate Rincewind is probably that he experiences no
-growth or progress at any point. He starts contemptible, remains
-contemptible, and at no point has any desires other than the return of
-the status quo. The fact that he doesn't want to be there is &lt;em&gt;part&lt;/em&gt; of
-it, but it's more like a refusal to engage with his world)&lt;/p&gt;
-
-
-&lt;p&gt;Here you can use the two opposing motions to check that your move in one
-direction is correct. You zoom out to the claim, then zoom back in to
-another example of that claim to see whether it works in the same way as
-the original. It doesn't, so the abstracting move must have been wrong.&lt;/p&gt;
-
-
-&lt;p&gt;You can also fact check in the other direction by going "You have
-claimed that this concrete thing is an example of this principle, but is
-it not in fact an example of this other principle?". e.g. the
-counterarguments to my use of second-system effect as an example of the
-complex systems thing have this form: They claim that second-systems go
-wrong for different reasons.&lt;/p&gt;
-
-
-&lt;p&gt;In this way, the two conceptual motions provide a stabilising effect on
-each other: The fact that we can move in one direction helps ensure that
-we can move in the other direction safely, without the process getting
-out of control or away from us.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2022-06-01-08:19.html" rel="alternate"/>
-  </entry>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2022-06-05-14:11.html</id>
-    <title>How can we create healthy geniuses?</title>
-    <updated>2022-06-05T14:17:42+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;How can we create healthy geniuses?&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2022-06-05&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Here's another abandoned draft. I think this one was intended for the paid subscriber archives. It's clearly related to &lt;a href="https://drmaciver.substack.com/p/how-do-we-treat-unique-talents-32a"&gt;How do we treat unique talents?&lt;/a&gt;, although I don't remember which one came first.&lt;/p&gt;
-
-
-&lt;p&gt;A recurring talking point in parts of where I hang out on Twitter is
-something along the lines of "hypercompetence is a sign of trauma,
-healthy individuals aren't hypercompetent". This seems to me to be
-broadly true, but I think it's true for nonobvious reasons that I'd like
-to explore.&lt;/p&gt;
-
-
-&lt;h3&gt;What is Hypercompetence?&lt;/h3&gt;
-
-
-&lt;p&gt;Hypercompetence is some truly unusual degree of expertise in some
-specific skill. People are not, generally, hypercompetent in some fully
-general sense, they are hypercompetent at something in particular. This
-might be a professional skill (mathematics, writing, golf, etc), a
-hobby, a social skill, or something else entirely.&lt;/p&gt;
-
-
-&lt;p&gt;I think it is worth distinguishing hypercompetence from normal
-expertise. Expertise is normal - you just have to work hard at getting
-good at a thing, and eventually you will be. In the sense of &lt;a href="https://drmaciver.substack.com/p/difficult-problems-and-hard-weeks"&gt;Difficult
-Problems and Hard
-Work&lt;/a&gt;,
-for most people and skills, acquiring expertise in that skill is just
-hard work rather than a difficult problem. The hypercompetent individual
-however is somehow on a whole other level.&lt;/p&gt;
-
-
-&lt;p&gt;The distinguishing feature of hypercompetence is not that it is
-&lt;em&gt;competence&lt;/em&gt; but that it is &lt;em&gt;hyper&lt;/em&gt;. You look at them compared to their
-peers, and there is a major qualitative difference between them that
-seemingly cannot be explained by normal skill development. I'm imagining
-here someone like &lt;a href="https://en.wikipedia.org/wiki/Paul_Erd%C5%91s"&gt;Paul
-Erdős&lt;/a&gt;, who was just the
-most ridiculously prolific
-mathematician.&lt;/p&gt;
-
-
-&lt;p&gt;(Also a good example of "healthy people aren't hypercompetent". If the
-price for being as good as Paul Erdős was that you had to be Paul Erdős,
-I cannot imagine many people would take that deal.)&lt;/p&gt;
-
-
-&lt;p&gt;Here is a diagram. It may not make much sense because I am bad at
-drawing diagrams, but &lt;em&gt;I&lt;/em&gt; find it helpful.&lt;/p&gt;
-
-
-&lt;p&gt;&lt;img alt="" src="/images/genius-1.png"/&gt;&lt;/p&gt;
-
-
-&lt;p&gt;In this diagram imagine each vertical line is a person at their skill
-level, so the width of the shaded area is proportionate to the number of
-people at that skill level (not realyl to scale - the spike in the
-middle is meant to be a single person, but I broadened it for clarity).
-So you've got a normal level of expertise that gradually tapers off as
-you go up, and then you've got the hypercompetent individual who is out
-there on their own, as much above the normal experts as the normal
-experts are above the average member of the population.&lt;/p&gt;
-
-
-&lt;p&gt;In contrast, the following person is exactly as competent as the
-hypercompetent individual in our above example, but the skill level
-smoothly climbs towards their level:&lt;/p&gt;
-
-
-&lt;p&gt;&lt;img alt="" src="/images/genius-2.png"/&gt;&lt;/p&gt;
-
-
-&lt;p&gt;They are no less skilled than the hypercompetent individual, and they
-are still the most competent individual in the population, but the key
-difference is that they are surrounded by people who are only slightly
-less competent than they are. There is a clear path to where they are,
-with every step along the way populated.&lt;/p&gt;
-
-
-&lt;p&gt;I am fairly into the goal of helping everyone be the best versions of
-themselves, so I much prefer the latter scenario. In the former, there a
-sharp cliff where people have no real idea how to improve past other
-than this one outlier who we don't know how to replicate. This seems
-like a missed opportunity, and I would like to figure out how we can use
-instances of the former to produce the latter.&lt;/p&gt;
-
-
-&lt;h3&gt;Social Superpowers&lt;/h3&gt;
-
-
-&lt;p&gt;At least some hypercompetence, especially with social skills, is learned
-in response to suffering. The Ferret argues that &lt;a href="https://www.theferrett.com/2021/01/28/your-superpower-is-a-compensation-for-old-trauma/"&gt;"superpowers" are
-compensation for old
-trauma&lt;/a&gt;
-- if you're, for example, super attuned to other people's emotional
-states, it might be because you grew up in an environment where you
-needed to be hyperaware of people's emotional states to stay safe.&lt;/p&gt;
-
-
-&lt;p&gt;This seems obviously bad (although the competencies arrived at this way
-are often good). It can be worth treating the superpower as somewhat
-diagnostic of things to look at, but the superpower doesn't just go away
-because you fix the underlying issue, you've still learned how to do it.
-e.g. I'm very good at explaining things, this turns out to be partly due
-to a somewhat inaccurate belief that if people are being mean to me and
-I just explain myself really well they'll understand and stop being mean
-to me. This works about as well as it sounds, but it appears to have
-prompted some useful skill development.&lt;/p&gt;
-
-
-&lt;p&gt;Social superpowers are hard to learn because we're incredibly bad at
-teaching social skills, to the point of not even trying. I suspect this
-is a scenario where the solution to the problem starts with trying
-literally anything at all.&lt;/p&gt;
-
-
-&lt;h3&gt;Why is genius bad so often?&lt;/h3&gt;
-
-
-&lt;p&gt;I'm more interested in the sort of hypercompetence that might reasonably
-be called "genius", which I think tends to arise out of some amount of
-baseline ability, adequate resources to make use of it, and some sort of
-overriding obsession.&lt;/p&gt;
-
-
-&lt;p&gt;(Of the three, I most clearly lack the obsession. I have a bit of an
-internal debate as to whether this is missing the boat or dodging a
-bullet, but I think for some of the reasons I discuss here my life is
-the better for it. Which is not to say that I think I'd be a genius if I could be sufficiently obsessed, but I think I'm at least in with a chance)&lt;/p&gt;
-
-
-&lt;p&gt;Being vastly better at something you care about than people around you
-who also care about that thing is very unpleasant. It triggers many of
-the norms I described in &lt;a href="https://notebook.drmaciver.com/posts/2020-02-29-10:30.html"&gt;The social obligation to be bad at
-things&lt;/a&gt;, and
-it is the very definition of a &lt;a href="https://notebook.drmaciver.com/posts/2020-07-15-09:33.html"&gt;nice problem to
-have&lt;/a&gt;,
-isolating you from those around you who think they would love to have
-your problems.&lt;/p&gt;
-
-
-&lt;p&gt;This is bad because being socially censured and/or isolated is bad for
-people. It's also bad because it means they don't have peers they can
-readily discuss their problems with to get a different perspective on it
-- the run-of-the-mill experts can to some degree serve these functions,
-but they can't really relate to the hypercompetent individual that well,
-and in many ways are probably more resentful of them than your average
-run of the mill citizen who didn't care that much about being good at
-the thing in the first place.&lt;/p&gt;
-
-
-&lt;p&gt;The other reason why it is bad is that it indicates that the
-hypercompetent individual is someone who chose to do it anyway, and
-that's probably not a sign of a healthy person.&lt;/p&gt;
-
-
-&lt;p&gt;A useful heuristic is that, to the best of their abilities and
-resources, people get the life they optimise for. A genius "could" have
-chosen to just go hang out on the beach and drink margaritas, but that
-is not the life they chose. Instead, they chose a life which
-deliberately isolates them, because they have decided that they care far
-more about their particular level of competency than they do connection
-with other people.&lt;/p&gt;
-
-
-&lt;p&gt;More than this, they are so far past the typical level of those around
-them that what happened is that they got to the point of social censure,
-looked around them, and kept going because it was that important to
-them.&lt;/p&gt;
-
-
-&lt;p&gt;I can, perhaps, imagine a healthy person rationally choosing to do that
-given sufficient positive motivations to do this. If that's you, no
-judgement. But for most people I don't think that's what's happening:
-Instead they struggle to connect with others, and as a result they end
-up (either deliberately or emotionally) concluding that they can't, and
-so they set it aside.&lt;/p&gt;
-
-
-&lt;p&gt;I think what often happens here is something akin to the protective
-mechanism I described in &lt;a href="https://drmaciver.substack.com/p/burnout-as-acedia"&gt;Burnout as
-Acedia&lt;/a&gt;. People
-learn that caring about social connection is not rewarded, and may be
-punished, so they learn "not to" care about it.&lt;/p&gt;
-
-
-&lt;h3&gt;Postscript&lt;/h3&gt;
-
-
-&lt;p&gt;I don't know why this particular piece got abandoned. It's been sitting in the drafts folder for too long. I suspect it's simply that I don't know how to answer the question, and so didn't know how to wrap it up.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2022-06-05-14:11.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-06-05-14:26.html</id>
     <title>Historical contingency</title>
@@ -1827,7 +1485,7 @@ to write about.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-07-14-10:44.html</id>
     <title>How you should have learned mental arithmetic</title>
-    <updated>2022-07-14T10:44:00+01:00</updated>
+    <updated>2022-07-14T10:46:27+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;How you should have learned mental arithmetic&lt;/p&gt;
@@ -1935,5 +1593,172 @@ to write about.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2022-07-14-10:44.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2022-08-07-00:51.html</id>
+    <title>Notes on the design of a conference scheduler</title>
+    <updated>2022-08-07T00:51:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Notes on the design of a conference scheduler&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2022-08-07&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;One of my lesser known but surprisingly impactful contributions to the world is the talk &lt;a href="https://www.youtube.com/watch?v=OkusHEBOhmQ"&gt;Easy solutions to hard problems&lt;/a&gt;, which is about mixed integer linear programming (MILP) and in particular about how to use integer linear programming to schedule conferences. Off the back of this, several conferences, including &lt;a href="https://www.emfcamp.org/"&gt;Electromagnetic field&lt;/a&gt; have scheduled their conferences using MILP.&lt;/p&gt;
+
+
+&lt;p&gt;I now think that was a mistake. Sorry.&lt;/p&gt;
+
+
+&lt;p&gt;There are roughly three problems with this approach:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;It's actually really slow. Not as slow as scheduling it by hand maybe, but the EMF scheduler apparently takes most of a day to run.&lt;/li&gt;
+&lt;li&gt;It gives totally opaque error messages when things go wrong.&lt;/li&gt;
+&lt;li&gt;Every time I've attended a conference scheduled this way I'm left with a vague sense that the schedule is just not very good. It's a bit all over the place in a way that I feel like a human scheduler would have done better.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;Set against this, you really &lt;em&gt;do&lt;/em&gt; want a computer in the loop because scheduling things by hand is such a nightmare that this is still preferable for the organisers despite the trade off.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway I was thinking about this recently and realised that there's probably a nicer way to do this.&lt;/p&gt;
+
+
+&lt;p&gt;The basic design is to follow the model from &lt;a href="http://oro.open.ac.uk/3275/4/Can_a_machine_design.pdf"&gt;Can a machine design?&lt;/a&gt; for human-machine collaboration, which is that it is the job of a computer to propose solutions and for the human to correct them. So instead of designing a &lt;em&gt;scheduler&lt;/em&gt; we are effectively designing a &lt;em&gt;schedule editor&lt;/em&gt;. The computer proposes an initial schedule, which is expected to not be especially good, and then maintains the schedule and all its constraints as the human makes edits to it.&lt;/p&gt;
+
+
+&lt;p&gt;This solves the problem of the schedule missing the human touch, because the human can make changes until they're happy with the schedule, and it's the job of the computer to make those changes work. &lt;/p&gt;
+
+
+&lt;p&gt;The UI I'm imagining this is essentially a version of the schedule, in which a user can drag things around and have everything reorder itself to make it work.&lt;/p&gt;
+
+
+&lt;p&gt;The basic operations I'm imagining are:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Lock a talk into the slot it's currently scheduled in, so it will not be moved in future.&lt;/li&gt;
+&lt;li&gt;Move a talk into a new slot, replacing the talk that's currently there. This will either succeed, or the software will say that it's forbidden (because the talk is not allowed into that slot because of e.g. constraints on when the speaker can manage), or that it has to unlock the following talks in order to make it work (with an explanation of why).&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;Many more operations are implementable (e.g. you could easily implement a "Move this talk somewhere else, I don't care where as long as it fits the requirement" operation), these are just the obvious basics. &lt;/p&gt;
+
+
+&lt;p&gt;Implementing the UI for this should be relatively straightforward for anyone who is actually good at UI. I'm not, and I'm not invested enough in this problem to want to pick up the relevant skills. If you're interested in this problem and already good at UI, feel free to drop me a line and talk about collaborating on this, because I pretty much know how all the algorithmic details should work!&lt;/p&gt;
+
+
+&lt;h3&gt;Implementation&lt;/h3&gt;
+
+
+&lt;p&gt;These operations are relatively easy to implement, and the basic algorithmic toolkit for this is to use &lt;a href="https://en.wikipedia.org/wiki/Hall%27s_marriage_theorem"&gt;Hall's marriage theorem&lt;/a&gt;.
+Hall's marriage theorem says that if you have some set of items (talks) you want to put into boxes (slots in the schedule), and each item can only go in some boxes (each talk can only be scheduled in certain slots), and each box can only hold one item (each slot can only have one talk), then either you can find an assignment that works, or you can find some set of items which is strictly larger than the number of boxes that are allowed to hold those items. e.g. there are three slots but four talks that all have to go in one of those three slots.&lt;/p&gt;
+
+
+&lt;p&gt;Hall's marriage theorem is relatively easy to implement an efficient algorithm for if you have access to an implementation of the &lt;a href="https://en.wikipedia.org/wiki/Hopcroft%E2%80%93Karp_algorithm"&gt;Hopcroft-Karp algorithm&lt;/a&gt; (and fortunately &lt;a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.csgraph.maximum_bipartite_matching.html"&gt;scipy has just such an implementation&lt;/a&gt;).
+You use this to find the largest possible assignment of items to boxes. If this assigns every item to a box, great you're done. If not, you can use the unassigned items to construct a &lt;a href="https://en.wikipedia.org/wiki/Hall_violator"&gt;Hall violator&lt;/a&gt; - a set of items that cannot possibly be put into distinct boxes because there aren't enough boxes.&lt;/p&gt;
+
+
+&lt;p&gt;As a side note, one nice thing about this algorithm is that it has the opposite efficiency characteristics to using MILP for this: The more constrained your problem gets, the faster it runs. As a result, it should (I think) be viable to use it the way I need to use it for this design, because we'll mostly want to run it with quite constrained problems.&lt;/p&gt;
+
+
+&lt;p&gt;(You can also use MILP to solve the maximum matching problem and it may under some circumstances me more efficient to do that. This is something that would require experimentation. Certainly using a MILP gets you more flexibility than using Hall's theorem, because it lets you handle things like "these two talks shouldn't clash" natively)&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, it's easy enough to use Hall's marriage theorem for the initial schedule: You just run it on your constraints, and it either gives you a schedule or tells you that you e.g. have too many talks that have to go into a particular day.&lt;/p&gt;
+
+
+&lt;p&gt;Here's how to use it to power what should be a pretty good schedule editor:&lt;/p&gt;
+
+
+&lt;p&gt;You always have a current schedule that you are working on. In response to requests from the user, the scheduler makes (ideally small) edits to the schedule by rearranging sets of talks.&lt;/p&gt;
+
+
+&lt;p&gt;Each talk has an epoch, which is the last time it was moved. The goal is to have the schedule converge to stability, so we always prefer to move talks that are from a more recent epoch. Initially, all talks are given a random distinct epoch. A talk may also be locked (as marked by the user), in which case it will not be moved without the user asking. We will also sometimes temporarily lock talks as part of a rescheduling.&lt;/p&gt;
+
+
+&lt;p&gt;When a user moves a talk to a new slot, the following happens:&lt;/p&gt;
+
+
+&lt;p&gt;First, check if the talk is allowed in its new slot (i.e. it satisfies the constraints as to which rooms, times, etc the talk is allowed in). If not, complain to the user and don't move it.&lt;/p&gt;
+
+
+&lt;p&gt;Second, if the talk that is already there is allowed in the slot you're moving out of, swap the two. Similarly if the slot is empty because you don't have a full schedule, just move the talk there.&lt;/p&gt;
+
+
+&lt;p&gt;Finally, if&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2022-08-07-00:51.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2022-10-02-06:24.html</id>
+    <title>There are a lot of irreducible finite partial orders</title>
+    <updated>2022-10-02T06:24:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;There are a lot of irreducible finite partial orders&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2022-10-02&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Advance warning: You don't care about this post.&lt;/p&gt;
+
+
+&lt;p&gt;A problem I've been thinking about on and off for a month or two is as follows:&lt;/p&gt;
+
+
+&lt;p&gt;Let \(A\), \(B\) be partial orders. You can combine them with the following operations:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;\(A \sqcup B\) is the partial order on the disjoint union of \(A\) and \(B\) such that no element of \(A\) is comparable to an element of \(B\) (and elements of \(A\) and \(B\) compare as usual).&lt;/li&gt;
+&lt;li&gt;\(A // B\)  is the partial order on the disjoint union of \(A\) and \(B\) such that \(a \preceq b\) for \(a \in A\) and \(b \in B\) (and elements of \(A\) and \(B\) compare as usual).&lt;/li&gt;
+&lt;li&gt;\(A \times B\) is the partial order on the product of \(A\) and \(B\) such that \((r, s) \preceq (u, v)\) iff \(r \preceq u\) and \(s \preceq v\).&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;Say a partial order is irreducible if it cannot be expressed as a combination of two non-trivial smaller partial orders with one of these operations (note: non-trivial means "non-empty" for the first two and "more than one element" for the third).&lt;/p&gt;
+
+
+&lt;p&gt;You can think of the irreducible finite partial orders as a sort of building block for the finite partial orders, and something I've been wondering is if irreducible finite partial orders have a nice characterisation and how many there are. I now think the answers are: Probably not, and lots.&lt;/p&gt;
+
+
+&lt;p&gt;Here are some vaguely negative results in this space.&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;There are irreducible partial orders of size \(n\) for every \(n &amp;gt; 3\). There are no irreducible partial orders of size \(2\) or \(3\).&lt;/li&gt;
+&lt;li&gt;There are at least \(O(2^n)\) non-isomorphic irreducible partial orders of size \(n\).&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;As a warm up let's see why there are no irreducible partial orders of size \(2\) or \(3\).&lt;/p&gt;
+
+
+&lt;p&gt;\(2\) is easy. Let \(P = \{a, b\}\) be a partial order of size \(2\). If \(a \preceq b\) then \(P = \{a\} // \{b\}\). Similarly the other way round. Otherwise, \(P = \{a\} \sqcup \{b\}\).&lt;/p&gt;
+
+
+&lt;p&gt;\(3\) is slightly more complicated.&lt;/p&gt;
+
+
+&lt;p&gt;It's helpful to think about this in terms of the level decomposition. The level of an element \(x \in P\) is the length of the longest chain ending in \(x\). Call that \(l(x)\). The height of \(P\) is the maximum level of an element of \(P\) (equivalently, the length of the longest chain in \(P\)). A level of \(P\) is a set of the form \(\{x \in P: l(x) = k\}\) for some \(k\).&lt;/p&gt;
+
+
+&lt;p&gt;Suppose \(P\) were an irreducible poset of size \(3\). If it has \(3\) levels, then it's a chain, so can be decomposed with \(//\).&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2022-10-02-06:24.html" rel="alternate"/>
   </entry>
 </feed>

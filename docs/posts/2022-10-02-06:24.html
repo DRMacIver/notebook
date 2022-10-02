@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+DRMacIver's Notebook: There are a lot of irreducible finite partial orders
+    </title>
+
+    <meta property="og:title" content="There are a lot of irreducible finite partial orders">
+
+    <meta property="og:url" content="https://notebook.drmaciver.com/posts/2022-10-02-06:24.html" />
+    <link rel="canonical" href="https://notebook.drmaciver.com/posts/2022-10-02-06:24.html" />
+    <script src="https://hypothes.is/embed.js" async></script>
+
+
+    <meta name="twitter:card" content="summary" />
+
+    <meta property="og:creator" content="@DRMacIver">
+
+    <link rel="stylesheet" href="/pygments.css"/>
+    <link rel="stylesheet" href="/tufte.css"/>
+    <link rel="stylesheet" href="/latex.css"/>
+    <link rel="stylesheet" href="/drmnotes.css"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
+});
+
+MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
+  console.log(message)
+});
+
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169185204-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169185204-1');
+</script>
+
+  </head>
+
+  <body>
+    <article>
+        <h1><a href="/">DRMacIver's Notebook</a></h1>
+        <p class=subtitle>There are a lot of irreducible finite partial orders</p>
+
+        
+
+<section id="the-post">
+<p class=subtitle>There are a lot of irreducible finite partial orders</p>
+<dl class=metadata>
+<dt>Published</dt>
+<dd class="post-date">2022-10-02</dd>
+</dl>
+
+<p>Advance warning: You don't care about this post.</p>
+<p>A problem I've been thinking about on and off for a month or two is as follows:</p>
+<p>Let \(A\), \(B\) be partial orders. You can combine them with the following operations:</p>
+<ol>
+<li>\(A \sqcup B\) is the partial order on the disjoint union of \(A\) and \(B\) such that no element of \(A\) is comparable to an element of \(B\) (and elements of \(A\) and \(B\) compare as usual).</li>
+<li>\(A // B\)  is the partial order on the disjoint union of \(A\) and \(B\) such that \(a \preceq b\) for \(a \in A\) and \(b \in B\) (and elements of \(A\) and \(B\) compare as usual).</li>
+<li>\(A \times B\) is the partial order on the product of \(A\) and \(B\) such that \((r, s) \preceq (u, v)\) iff \(r \preceq u\) and \(s \preceq v\).</li>
+</ol>
+<p>Say a partial order is irreducible if it cannot be expressed as a combination of two non-trivial smaller partial orders with one of these operations (note: non-trivial means "non-empty" for the first two and "more than one element" for the third).</p>
+<p>You can think of the irreducible finite partial orders as a sort of building block for the finite partial orders, and something I've been wondering is if irreducible finite partial orders have a nice characterisation and how many there are. I now think the answers are: Probably not, and lots.</p>
+<p>Here are some vaguely negative results in this space.</p>
+<ol>
+<li>There are irreducible partial orders of size \(n\) for every \(n &gt; 3\). There are no irreducible partial orders of size \(2\) or \(3\).</li>
+<li>There are at least \(O(2^n)\) non-isomorphic irreducible partial orders of size \(n\).</li>
+</ol>
+<p>As a warm up let's see why there are no irreducible partial orders of size \(2\) or \(3\).</p>
+<p>\(2\) is easy. Let \(P = \{a, b\}\) be a partial order of size \(2\). If \(a \preceq b\) then \(P = \{a\} // \{b\}\). Similarly the other way round. Otherwise, \(P = \{a\} \sqcup \{b\}\).</p>
+<p>\(3\) is slightly more complicated.</p>
+<p>It's helpful to think about this in terms of the level decomposition. The level of an element \(x \in P\) is the length of the longest chain ending in \(x\). Call that \(l(x)\). The height of \(P\) is the maximum level of an element of \(P\) (equivalently, the length of the longest chain in \(P\)). A level of \(P\) is a set of the form \(\{x \in P: l(x) = k\}\) for some \(k\).</p>
+<p>Suppose \(P\) were an irreducible poset of size \(3\). If it has \(3\) levels, then it's a chain, so can be decomposed with \(//\).</p>
+</section>
+
+    </article>
+<footer>
+Copyright David R. MacIver.
+
+CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
+</footer>
+  </body>
+</html>
