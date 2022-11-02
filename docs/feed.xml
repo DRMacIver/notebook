@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2022-11-02T15:46:00+00:00</updated>
+  <updated>2022-11-02T16:13:52+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1473,6 +1473,9 @@ to write about.&lt;/p&gt;
 &lt;/dl&gt;
 
 
+&lt;p&gt;NB: This post is unfinished but it accidentally got added to the index and people keep asking about it, so I decided to publish it as is.&lt;/p&gt;
+
+
 &lt;p&gt;One of my lesser known but surprisingly impactful contributions to the world is the talk &lt;a href="https://www.youtube.com/watch?v=OkusHEBOhmQ"&gt;Easy solutions to hard problems&lt;/a&gt;, which is about mixed integer linear programming (MILP) and in particular about how to use integer linear programming to schedule conferences. Off the back of this, several conferences, including &lt;a href="https://www.emfcamp.org/"&gt;Electromagnetic field&lt;/a&gt; have scheduled their conferences using MILP.&lt;/p&gt;
 
 
@@ -1693,7 +1696,7 @@ If it has \(1\) level, it's an antichain so can be decomposed with \(\sqcup\). S
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-11-02-15:46.html</id>
     <title>Examples of missing support networks</title>
-    <updated>2022-11-02T15:46:00+00:00</updated>
+    <updated>2022-11-02T16:13:52+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Examples of missing support networks&lt;/p&gt;

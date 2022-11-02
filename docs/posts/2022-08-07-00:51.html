@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+DRMacIver's Notebook: Notes on the design of a conference scheduler
+    </title>
+
+    <meta property="og:title" content="Notes on the design of a conference scheduler">
+
+    <meta property="og:url" content="https://notebook.drmaciver.com/posts/2022-08-07-00:51.html" />
+    <link rel="canonical" href="https://notebook.drmaciver.com/posts/2022-08-07-00:51.html" />
+    <script src="https://hypothes.is/embed.js" async></script>
+
+
+    <meta name="twitter:card" content="summary" />
+
+    <meta property="og:creator" content="@DRMacIver">
+
+    <link rel="stylesheet" href="/pygments.css"/>
+    <link rel="stylesheet" href="/tufte.css"/>
+    <link rel="stylesheet" href="/latex.css"/>
+    <link rel="stylesheet" href="/drmnotes.css"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
+});
+
+MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
+  console.log(message)
+});
+
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169185204-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169185204-1');
+</script>
+
+  </head>
+
+  <body>
+    <article>
+        <h1><a href="/">DRMacIver's Notebook</a></h1>
+        <p class=subtitle>Notes on the design of a conference scheduler</p>
+
+        
+
+<section id="the-post">
+<p class=subtitle>Notes on the design of a conference scheduler</p>
+<dl class=metadata>
+<dt>Published</dt>
+<dd class="post-date">2022-08-07</dd>
+</dl>
+
+<p>NB: This post is unfinished but it accidentally got added to the index and people keep asking about it, so I decided to publish it as is.</p>
+<p>One of my lesser known but surprisingly impactful contributions to the world is the talk <a href="https://www.youtube.com/watch?v=OkusHEBOhmQ">Easy solutions to hard problems</a>, which is about mixed integer linear programming (MILP) and in particular about how to use integer linear programming to schedule conferences. Off the back of this, several conferences, including <a href="https://www.emfcamp.org/">Electromagnetic field</a> have scheduled their conferences using MILP.</p>
+<p>I now think that was a mistake. Sorry.</p>
+<p>There are roughly three problems with this approach:</p>
+<ol>
+<li>It's actually really slow. Not as slow as scheduling it by hand maybe, but the EMF scheduler apparently takes most of a day to run.</li>
+<li>It gives totally opaque error messages when things go wrong.</li>
+<li>Every time I've attended a conference scheduled this way I'm left with a vague sense that the schedule is just not very good. It's a bit all over the place in a way that I feel like a human scheduler would have done better.</li>
+</ol>
+<p>Set against this, you really <em>do</em> want a computer in the loop because scheduling things by hand is such a nightmare that this is still preferable for the organisers despite the trade off.</p>
+<p>Anyway I was thinking about this recently and realised that there's probably a nicer way to do this.</p>
+<p>The basic design is to follow the model from <a href="http://oro.open.ac.uk/3275/4/Can_a_machine_design.pdf">Can a machine design?</a> for human-machine collaboration, which is that it is the job of a computer to propose solutions and for the human to correct them. So instead of designing a <em>scheduler</em> we are effectively designing a <em>schedule editor</em>. The computer proposes an initial schedule, which is expected to not be especially good, and then maintains the schedule and all its constraints as the human makes edits to it.</p>
+<p>This solves the problem of the schedule missing the human touch, because the human can make changes until they're happy with the schedule, and it's the job of the computer to make those changes work. </p>
+<p>The UI I'm imagining this is essentially a version of the schedule, in which a user can drag things around and have everything reorder itself to make it work.</p>
+<p>The basic operations I'm imagining are:</p>
+<ol>
+<li>Lock a talk into the slot it's currently scheduled in, so it will not be moved in future.</li>
+<li>Move a talk into a new slot, replacing the talk that's currently there. This will either succeed, or the software will say that it's forbidden (because the talk is not allowed into that slot because of e.g. constraints on when the speaker can manage), or that it has to unlock the following talks in order to make it work (with an explanation of why).</li>
+</ol>
+<p>Many more operations are implementable (e.g. you could easily implement a "Move this talk somewhere else, I don't care where as long as it fits the requirement" operation), these are just the obvious basics. </p>
+<p>Implementing the UI for this should be relatively straightforward for anyone who is actually good at UI. I'm not, and I'm not invested enough in this problem to want to pick up the relevant skills. If you're interested in this problem and already good at UI, feel free to drop me a line and talk about collaborating on this, because I pretty much know how all the algorithmic details should work!</p>
+<h3>Implementation</h3>
+<p>These operations are relatively easy to implement, and the basic algorithmic toolkit for this is to use <a href="https://en.wikipedia.org/wiki/Hall%27s_marriage_theorem">Hall's marriage theorem</a>.
+Hall's marriage theorem says that if you have some set of items (talks) you want to put into boxes (slots in the schedule), and each item can only go in some boxes (each talk can only be scheduled in certain slots), and each box can only hold one item (each slot can only have one talk), then either you can find an assignment that works, or you can find some set of items which is strictly larger than the number of boxes that are allowed to hold those items. e.g. there are three slots but four talks that all have to go in one of those three slots.</p>
+<p>Hall's marriage theorem is relatively easy to implement an efficient algorithm for if you have access to an implementation of the <a href="https://en.wikipedia.org/wiki/Hopcroft%E2%80%93Karp_algorithm">Hopcroft-Karp algorithm</a> (and fortunately <a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.csgraph.maximum_bipartite_matching.html">scipy has just such an implementation</a>).
+You use this to find the largest possible assignment of items to boxes. If this assigns every item to a box, great you're done. If not, you can use the unassigned items to construct a <a href="https://en.wikipedia.org/wiki/Hall_violator">Hall violator</a> - a set of items that cannot possibly be put into distinct boxes because there aren't enough boxes.</p>
+<p>As a side note, one nice thing about this algorithm is that it has the opposite efficiency characteristics to using MILP for this: The more constrained your problem gets, the faster it runs. As a result, it should (I think) be viable to use it the way I need to use it for this design, because we'll mostly want to run it with quite constrained problems.</p>
+<p>(You can also use MILP to solve the maximum matching problem and it may under some circumstances me more efficient to do that. This is something that would require experimentation. Certainly using a MILP gets you more flexibility than using Hall's theorem, because it lets you handle things like "these two talks shouldn't clash" natively)</p>
+<p>Anyway, it's easy enough to use Hall's marriage theorem for the initial schedule: You just run it on your constraints, and it either gives you a schedule or tells you that you e.g. have too many talks that have to go into a particular day.</p>
+<p>Here's how to use it to power what should be a pretty good schedule editor:</p>
+<p>You always have a current schedule that you are working on. In response to requests from the user, the scheduler makes (ideally small) edits to the schedule by rearranging sets of talks.</p>
+<p>Each talk has an epoch, which is the last time it was moved. The goal is to have the schedule converge to stability, so we always prefer to move talks that are from a more recent epoch. Initially, all talks are given a random distinct epoch. A talk may also be locked (as marked by the user), in which case it will not be moved without the user asking. We will also sometimes temporarily lock talks as part of a rescheduling.</p>
+<p>When a user moves a talk to a new slot, the following happens:</p>
+<p>First, check if the talk is allowed in its new slot (i.e. it satisfies the constraints as to which rooms, times, etc the talk is allowed in). If not, complain to the user and don't move it.</p>
+<p>Second, if the talk that is already there is allowed in the slot you're moving out of, swap the two. Similarly if the slot is empty because you don't have a full schedule, just move the talk there.</p>
+<p>Finally, if</p>
+</section>
+
+    </article>
+<footer>
+Copyright David R. MacIver.
+
+CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
+</footer>
+  </body>
+</html>
