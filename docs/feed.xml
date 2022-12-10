@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2022-12-08T20:25:00+00:00</updated>
+  <updated>2022-12-10T14:53:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,346 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2022-06-05-14:53.html</id>
-    <title>Getting to know the right people</title>
-    <updated>2022-06-05T14:58:24+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Getting to know the right people&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2022-06-05&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Here's a draft bankruptcy piece about how you solve the problem of finding good people in areas you lack expertise in.&lt;/p&gt;
-
-
-&lt;h3&gt;It's hard to find good people these days&lt;/h3&gt;
-
-
-&lt;p&gt;How do you find a good plumber?&lt;/p&gt;
-
-
-&lt;p&gt;Easy. You ask a good plumber who they'd recommend.&lt;/p&gt;
-
-
-&lt;p&gt;No, you can't just google for a good plumber. You'll find a plumber
-but they probably won't be a good one. Good plumbers mostly don't
-advertise, they've already got far more work than they need. Also
-there's a market for lemons problem with unknown tradespeople - most
-tradespeople are bad to OK (because most people in any job are bad to
-OK), the ones that are good are worth their weight in gold, but you
-don't know which you're getting and you don't want to pay the latter
-like the former and the latter don't want to work for the rate you'd
-be willing to pay the former.&lt;/p&gt;
-
-
-&lt;p&gt;(Why do you need a good plumber if you already know a good plumber? Well
-because they're a good plumber, and thus they're probably too busy for
-you, or because you live on a boat and they don't do boats, or because
-you live in a house and they don't do houses, or...)&lt;/p&gt;
-
-
-&lt;p&gt;This makes it sound harder than it is. You can also e.g. ask a good
-joiner who they'd recommend.&lt;/p&gt;
-
-
-&lt;p&gt;How do you find a good joiner? Well you find a good plumber and ask them
-who they'd recommend.&lt;/p&gt;
-
-
-&lt;p&gt;How do you make new friends? Just go to parties and find people you hit
-it off with.&lt;/p&gt;
-
-
-&lt;p&gt;How do you go to parties? Well, ask your friends to invite you along to
-them.&lt;/p&gt;
-
-
-&lt;p&gt;How do you find someone to date? Meet people through your friends.&lt;/p&gt;
-
-
-&lt;p&gt;How do you make those friends? Well if the parties option isn't working
-out for you you can always find someone to date and make friends with
-their friends.&lt;/p&gt;
-
-
-&lt;p&gt;How do you find a good plumber? Well you make friends with the sort of
-people who need plumbers and ask them for their recommendations.&lt;/p&gt;
-
-
-&lt;p&gt;(This mostly doesn't work in reverse, especially in the city. You
-probably can't make friends with your plumber - not because it's
-intrinsically impossible, but the interactions you have with trades
-people are not necessarily conducive to this. I'm sure it works for
-some people from time to time, but it's not a reliable strategy)&lt;/p&gt;
-
-
-&lt;h3&gt;It's all about who you know&lt;/h3&gt;
-
-
-&lt;p&gt;In general, the way to find the right people is to know the right
-people, and the right people generally form a network of similar right
-people, so as soon as you know some it becomes much easier to find many.&lt;/p&gt;
-
-
-&lt;p&gt;Finding the first couple of right people can be almost impossibly hard.
-For some of these things (e.g. plumbers) you can solve this problem by
-throwing enough money at it - if you try 10 plumbers eventually one will
-probably be OK. You might even have the skill to be able to tell
-they're OK. For finding friends in a new city, you can't really buy
-friendship, that's not how it works.&lt;/p&gt;
-
-
-&lt;p&gt;Your relationship with a network goes in roughly the following levels of
-strength:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;You can be completely disconnected from it.&lt;/li&gt;
-&lt;li&gt;You can be &lt;em&gt;tenuously connected&lt;/em&gt; to it - you know a small number of
-    people in it, but not necessarily particularly robustly. It's
-    difficult to ask favours of them because you're in a &lt;a href="https://notebook.drmaciver.com/posts/2020-03-24-09:46.html"&gt;low trust /
-    high
-    importance&lt;/a&gt; scenario.
-    You need these people to transition to stage 3, but also if you lean
-    on them enough to do that they might get upset with you and
-    disconnect you from the network entirely, putting you back in
-    stage 1.&lt;/li&gt;
-&lt;li&gt;You are &lt;em&gt;well connected&lt;/em&gt; to the network - you have no trouble
-    accessing it, and can use it in the way that you need.&lt;/li&gt;
-&lt;li&gt;You are &lt;em&gt;part&lt;/em&gt; of the network - you don't just have access to it,
-    members of it consider you one of them in some way, and people
-    access you through it.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;Moving from weaker to stronger connections to a network is what I think
-of as the &lt;em&gt;network bootstrapping&lt;/em&gt; problem. Your future strength is built
-on your current strength.&lt;/p&gt;
-
-
-&lt;p&gt;Transitions from (1) to (2) and (2) to (3) are both very hard, and
-require quite different skillsets. I'm still myself only really figuring
-out what those skillsets are, but I'll do my best to explain.&lt;/p&gt;
-
-
-&lt;p&gt;Being in stage (4) is complicated and tends to vary with types of
-network - with networks of friends there's a well defined transition (3)
-to (4). With networks of plumbers the way you become part of the network
-starts with being a plumber. I'm mostly not going to talk about stage 4.&lt;/p&gt;
-
-
-&lt;h3&gt;Meet the network&lt;/h3&gt;
-
-
-&lt;p&gt;Suppose you want to connect to a network that you are completely
-disconnected from. What do you do?&lt;/p&gt;
-
-
-&lt;p&gt;Well, first off, bear in mind that you might not be able to do that.
-Many networks are Not For People Like You - you're the wrong race,
-class, or gender. You didn't go to the right schools. Your family's
-ancestors didn't subjugate the right people three generations back along
-with the other members of the network. Or maybe you're just too weird
-and the people in the network don't want to put up with that. Some
-networks are just exclusive and nothing you can do will gain you access
-to them.&lt;/p&gt;
-
-
-&lt;p&gt;This is bad, obviously. I want to be clear on this: This is bad. It's a
-major source of inequality. I mention it not because I think this is how
-networks &lt;em&gt;should&lt;/em&gt; work, but because prejudice is a real thing that
-exists in the world and it's important to recognise that this problem is
-linked in with that.&lt;/p&gt;
-
-
-&lt;p&gt;But assuming the network is one that you could, in principle, connect to
-if you knew how, how do you actually do that?&lt;/p&gt;
-
-
-&lt;p&gt;The common solution for the initial connection to a network is to
-bootstrap it from another network. Ask your friends about plumbers, ask
-your friends in one city about people to connect to in another. Turn
-Twitter friends into IRL friends. This works great if you already have
-networks you're well connected to, and those networks are ones that are
-well connected to other networks. It requires going out on a limb and
-asking for favours from people, which can be socially tricky and anxiety
-provoking, but most people are happy to help in this regard.&lt;/p&gt;
-
-
-&lt;p&gt;Specific tip: It's better to ask for introductions one on one rather
-than e.g. posting a message on a shared group. You're more likely to get
-an honest response that way, and often what will happen in a shared
-group is that the least trustworthy member of the group will post a bad
-answer and other people won't find it worth the effort of arguing with
-you.&lt;/p&gt;
-
-
-&lt;p&gt;If meeting the network via one of your other networks is not really an
-option (e.g. because you don't really have any other networks, or
-because nobody in your networks knows a good plumber), you need to work
-harder.&lt;/p&gt;
-
-
-&lt;p&gt;I've got to be honest, I'm still figuring out how this works. Here is my
-very sketchy understanding of how things work:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;If you have access to existing networks you are well connected to,
-    you really really should be using them. Ask for favours and
-    introductions. It's scary, but it's mostly fine.&lt;/li&gt;
-&lt;li&gt;Some networks are in some sense "open entry" in that you can gain
-    access to them without knowing people. If you have a job, your work
-    network is like this (Unfortunately &lt;em&gt;finding&lt;/em&gt; a job is quite network dependent. Chances are if
-    you don't have good social connections your first job won't be very
-    good, but you can use it to bootstrap to a better one. Recruiters are
-    also a way of getting what is basically paid (by the company) access to
-    a network and are less good than personal connections but cast a much
-    broader net). There are also e.g. churches, activity groups
-    (these haven't worked very well for me), professional networking
-    events. These are often a good grounding for finding other higher
-    value local networks.&lt;/li&gt;
-&lt;li&gt;Often you can find people in the network you want to connect to and
-    just cold approach them. This doesn't work for the plumber problem
-    (because if you could find them without a network you wouldn't have
-    the problem), but it does work for many other networks. e.g. if you
-    want to know people in an academic discipline you can just find and
-    follow some people on Twitter in that field who seem nice and start
-    talking to them.&lt;/li&gt;
-&lt;li&gt;Many networks are connected to other more visible networks. e.g. I
-    have a hunch that if you walk up to a random house boat and say
-    "Excuse me, I have an odd question", pause as they brace themselves
-    for the inevitable "what's it like to live on a boat?" question and
-    then ask "Can you recommend me a plumber?" they will be utterly
-    nonplussed and then recommend you an excellent plumber because
-    they're a house boater and they &lt;em&gt;definitely&lt;/em&gt; know or know someone
-    who knows a good plumber as a result. I suspect going into a
-    builders' merchant (which tend to be more visible) and asking one of
-    the staff members will have a similar result.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;In general I think this is a problem that requires a level of
-systematicity that people often feel uncomfortable bringing to bear on
-social problems, and requires you to think about people in fairly
-strategic terms. My recommendation is to treat every individual you
-interact with as respect, and to otherwise suck it up and deal with it.
-It's unpleasant, will result in a fair bit of low-grade rejection, but
-generally nothing actually bad will happen and the problem is fairly
-amenable to hard work.&lt;/p&gt;
-
-
-&lt;h4&gt;Starting from zero&lt;/h4&gt;
-
-
-&lt;p&gt;The problem is... harder if you don't have any well connected networks,
-which many people don't. It's been about 15 years since I've had this
-problem, so I may not be the best to advise on it, but here is how I
-understand the process to work.&lt;/p&gt;
-
-
-&lt;p&gt;The basic idea is that some networks are essentially "open entry"&lt;/p&gt;
-
-
-&lt;p&gt;In that case the solution is to build some networks from scratch and
-just accept that everything is going to be much harder than it needs to
-be until you solve this problem, but also accept that things will become
-&lt;em&gt;much&lt;/em&gt; easier after you have solved this problem and thus that it is
-worth doing (I think a lot of people get trapped assuming that they will
-forever be isolated).&lt;/p&gt;
-
-
-&lt;p&gt;I think the solution is to essentially start with easier to join
-networks. A lot of networks make it easy to attach to, because you have
-a natural entry point into them. For example:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;Getting a job gets you a professional network, which you can try to
-    turn into a friend network.&lt;/li&gt;
-&lt;li&gt;Making friends on Twitter is much easier than making friends
-    offline.&lt;/li&gt;
-&lt;li&gt;Joining a church is supposedly a good way to connect to a
-    pre-established network, although this didn't work for me (it was a
-    UU church, which may not be representative of the general
-    experience).&lt;/li&gt;
-&lt;li&gt;There are a lot of professional meetup groups that are basically
-    explicitly networking events. Software development is particularly
-    good for this.&lt;/li&gt;
-&lt;li&gt;People always recommend activity groups for this. This maybe true,
-    but it didn't really work out that way for me. I think there's a
-    skill to using them this way that I lack.&lt;/li&gt;
-&lt;li&gt;There's more support for bootstrapping a romantic partner than a
-    friend network, so you can always find people to date using the apps
-    and steal their friendship
-    network (Personally I found online dating the absolute worst and cannot recommend this strategy at all, but I do know people for whom it's worked).&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;h3&gt;Connect to the network&lt;/h3&gt;
-
-
-&lt;p&gt;I had an empty section here. No idea what I was going to write here.&lt;/p&gt;
-
-
-&lt;h3&gt;So what?&lt;/h3&gt;
-
-
-&lt;p&gt;I'm interested in this pattern for a couple of reasons.&lt;/p&gt;
-
-
-&lt;p&gt;The first is just that sometimes I need to actually find a good plumber,
-or the equivalent thereof in some other field of expertise. e.g. I've
-been vaguely intending to find a good singing teacher and didn't have
-the faintest idea of where to start until one happened to attach to my
-network of friends (I don't yet know if she's good or not - I start
-next week), and I'd like to develop some general skills for doing this
-better.&lt;/p&gt;
-
-
-&lt;p&gt;I think some of those general skills consist of just being better about
-noticing this is a thing and asking for introductions.&lt;/p&gt;
-
-
-&lt;p&gt;The second is that I think it's a really underappreciated form of
-inequality. Having a rich set of networks that you are well attached to
-makes life &lt;em&gt;so&lt;/em&gt; much easier, and almost by definition we don't really
-notice the people on the fringes or who are not well connected to our
-networks. Such people are both experiencing a much harder life than
-people with better social connections, and also are deprived of an
-environment where they can learn those skills of network bootstrapping
-because they're not connected to anyone who can teach them!&lt;/p&gt;
-
-
-&lt;p&gt;(This also scales way further upwards than I have access to - the
-networks you get access to from having the right families, the right
-wealth, etc. are things of immense power that I have only the vaguest
-conception of)&lt;/p&gt;
-
-
-&lt;p&gt;One consequence of this is that if you're well connected to a network,
-helping other people join it is almost certainly &lt;em&gt;hugely&lt;/em&gt; life improving
-for them, much more so than you realise. Looking out for people who need
-help being onboarded into a network that they might not even know
-exists, and helping them connect to it, is one of the most
-transformative things you can do for another person, and people should
-do a lot more of it than they do.&lt;/p&gt;
-
-
-&lt;h3&gt;Postscript&lt;/h3&gt;
-
-
-&lt;p&gt;Not really sure why this piece was abandoned. I think it was too large and I didn't quite know what I was building up to, partially because I was theorising about a problem that I haven't had a huge amount of success with personally.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2022-06-05-14:53.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-06-05-15:04.html</id>
     <title>Knowledge and justice</title>
@@ -1693,7 +1353,7 @@ If it has \(1\) level, it's an antichain so can be decomposed with \(\sqcup\). S
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-12-08-20:25.html</id>
     <title>Notes on shaking</title>
-    <updated>2022-12-08T20:25:00+00:00</updated>
+    <updated>2022-12-09T17:14:30+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Notes on shaking&lt;/p&gt;
@@ -1992,5 +1652,144 @@ Acting on the motion feels like lighting. Based on what actually happens, it pro
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2022-12-08-20:25.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2022-12-10-14:53.html</id>
+    <title>Three key problems with Von-Neumann Morgenstern Utility Theory</title>
+    <updated>2022-12-10T14:53:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Three key problems with Von-Neumann Morgenstern Utility Theory&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2022-12-10&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;People semi-routinely argue about Von-Neumann Morgenstern Utility Theory with me.
+This rarely goes well - it doesn't change any minds and I don't enjoy it - so I am writing up what I think the core of my objections once and for all so that I can stop having this argument.&lt;/p&gt;
+
+
+&lt;p&gt;I don't really expect it to convince you, but also I'm not going to argue with you on this subject until you've read it and can tell me a good reason why you disagree.&lt;/p&gt;
+
+
+&lt;p&gt;I am not going to argue that VNM theory is never useful, nor that utilities in general are not. I am going to argue that VNM theory is an overly idealised model of agent behaviour that if you try to apply it to a general purpose agent fails in crucial ways.&lt;/p&gt;
+
+
+&lt;h3&gt;A brief recap&lt;/h3&gt;
+
+
+&lt;p&gt;VNM theory works as follows: You have a finite set of outcomes \(O_1, \ldots, O_n\), you are given lotteries which are some precisely known mixture of these outcomes, and you have the ability to make binary choices between these lotteries, where given any two lotteries you should either strictly prefer one of them or be indifferent between the two.&lt;/p&gt;
+
+
+&lt;p&gt;Under some allegedly reasonable assumptions, for any of these outcomes \(O_i\), you should be indifferent between it and some lottery \(p B + (1 - p) W\), where \(B\) is the (possibly joint) best outcome of the \(O_i\) and \(W\) is the (possibly joint) worst outcome. This \(p\) can then be considered the utility of \(O_i\) and under a bunch more (mostly actually reasonable) assumptions you should be making your choice to maximise the expected utility of lotteries.&lt;/p&gt;
+
+
+&lt;h3&gt;Fredkin's paradox, the doom of VNM theory&lt;/h3&gt;
+
+
+&lt;p&gt;I've written about two key issues with this setup before:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="https://notebook.drmaciver.com/posts/2018-09-09-21:02.html"&gt;Physical agents can't implement discontinuous functions&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://notebook.drmaciver.com/posts/2021-06-07-06:51.html"&gt;You may have to do an infinite amount of computation to get that utility&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;Both of these are variations on a key problem with VNM theory: It ignores the cost of decision making, which comes up as &lt;em&gt;Fredkin's paradox&lt;/em&gt; - the difficulty of making a decision between two very similar options is much greater than the difficulty when one is much better than the other.&lt;/p&gt;
+
+
+&lt;p&gt;The first part is about physical difficulties with measurement - you can only know the probabilities up to some finite precision.
+VNM theory handwaves this away by saying that the probabilities are perfectly known, but this doesn't help you because that just moves the problem to be a computational one, and requires you to be able to solve the halting problem.
+e.g. choose between \(L_1 = p B + (1-p) W\) and \(L_2 = q B + (1-q) W\) where \(p = 0.0\ldots\) until machine \(M1\) halts and \(1\) after and \(q\) is the same but for machine \(M2\).&lt;/p&gt;
+
+
+&lt;p&gt;The second demonstrates that what you get out of the VNM theorem &lt;em&gt;is not a utility function&lt;/em&gt;. It is an algorithm that produces a sequence converging to a utility function, and you cannot recreate even the original decision procedure from that sequence without being able to take the limit (which requires running an infinite computation, again giving you the ability to solve the halting problem) near the boundary.&lt;/p&gt;
+
+
+&lt;p&gt;Both of these have the same core problem: In order to be able to identify the decision boundary that is essential for the VNM theory to work, you have to be omniscient. If you accept the flawed premise of knowing the probabilities with perfect knowledge, you can get away with only logical omniscience, but in order to know the probabilities with perfect knowledge you also have to be actually omniscient and not constrained by mere mortal abilities like having to observe the world to acquire knowledge of it.&lt;/p&gt;
+
+
+&lt;p&gt;Is this a nitpicky objection? Kindof, but I think it's important, for two reasons:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;It does fairly directly demonstrate why the central thing required for VNM theory to work cannot possibly work.&lt;/li&gt;
+&lt;li&gt;It does so in a way that shows that the model of VNM theory fails precisely because it fails to capture the behaviour of actually reasonable agents.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;The correct thing to do with Fredkin's paradox is to not care about it. An actual agent faced with anything like the VNM setup will choose non-deterministically in the region of indifference, with much of the nondeterminism coming from imprecision in their measurements. When your two alternatives are very close together, your preference will be more or less like a coin toss, when your two alternatives are very far apart it will be close to (or actually deterministic), but the continuity argument shows that you &lt;em&gt;have&lt;/em&gt; to have intermediate values - e.g. sometimes you'll pick \(A\) over \(B\) about 60% of the time.&lt;/p&gt;
+
+
+&lt;h3&gt;Bounded and known preferences&lt;/h3&gt;
+
+
+&lt;p&gt;The VNM setup uses the finite number of options to ensure that there is a best and worst outcome, and calculates your utility in terms of those best and worst options. Additionally it assumes that you know exactly how bad literally the worst thing that can possibly happen is and how good literally the best thing that can possibly happen is.&lt;/p&gt;
+
+
+&lt;p&gt;This means that VNM theory can only be useful in very well understood bounded domains. Getting to the point where you can even start running the computation for utility of somethign requires \(O(n)\) work to figure out the best and worst thing, you need to be familiar enough with all the options to have real preferences over them, and also there just can't be that many options.&lt;/p&gt;
+
+
+&lt;p&gt;For example, VNM theory is very poorly suited to dealing with anything to do with money, which has unbounded utility. This is pretty impressive going for a normative utility theory. Good job failing to handle literally the most utility like problem.&lt;/p&gt;
+
+
+&lt;p&gt;You could argue that there is a maximum amount of money that matters and for many bounded domain cases that's true and reasonable, but if that maximum amount is "literally the entire world economy", I argue that even if you treat this as the best possible thing, you have really very little conception of how good it is, and cannot possibly do so.&lt;/p&gt;
+
+
+&lt;p&gt;Even if you could have a reasonable opion, it's worth bearing in mind that you are now multiplying very large numbers by very small numbers. This makes the VNM utility extremely impractical, because you've basically reduced choosing what to have for lunch to the problem of Pascal's Wager.&lt;/p&gt;
+
+
+&lt;h3&gt;Updating preferences as a result of decisions&lt;/h3&gt;
+
+
+&lt;p&gt;In making its reasonableness assumptions, VNM theory equates two things that are distinct in any real agent: Instantaneous preferences and actual decisions over time. For example, it uses the possibility of being dutch booked as an argument against intransitive preferences.&lt;/p&gt;
+
+
+&lt;p&gt;But dutch booking is not a thing you can do to preferences, it's a thing you can do to decisions, and you can only use dutch books to extract infinite money from intransitive decisions if the agent is forced to make the same decision every time, i.e. can't learn from experience.&lt;/p&gt;
+
+
+&lt;p&gt;(Dutch booking is more complicated with non-deterministic decisions, but a broadly similar argument applies where instead of requiring transitivity you require certain bounds on sums of cycles. We're not going to worry about that here)&lt;/p&gt;
+
+
+&lt;p&gt;One easy way to learn from experience is to stop accepting offers from people who are trying to dutch book you, but even without that many patterns of intransitive decision making that are exhibited during learning are not susceptible to dutch booking, because they converge over time to transitive ones. e.g. an agent playing a multi-armed bandit problem (this again assumes imperfect knowledge of probabilities which VNM theory assumes away so isn't strictly applicable, but it's a good example) will regularly swap its preferences between arms as it plays, exhibiting many cycles.&lt;/p&gt;
+
+
+&lt;p&gt;One reason these differ is assumed away by VNM theory, which is that you know the probabilities. In actual decision making, you learn the probabilities through making choices which refine your world model. e.g. if you look at a multi-armed bandit algorithm, even though it has a perfectly well defined utility function, it routinely reverses its decisions as it learns more about the distribution of results of pulling a particular lever.&lt;/p&gt;
+
+
+&lt;p&gt;Even with known probabilities, real agents will change their mind, because often the only way to know how to value something is to try it. If you offer me a Durian, I'm probably going to say yes. If you offer me a Durian a second time, I'm probably going to say no. This isn't inconsistency, it's just learning from experience.&lt;/p&gt;
+
+
+&lt;p&gt;Another way decisions can change is because choices you make have actual consequences. For example, consider a betting agent. Given a choice between two monetary lotteries, one of which satisfies the Kelly criterion and one of which doesn't, they should pick the one that does, or in general the one that maximises the expected logarithm of their bankroll after making it, but then after the lottery is run their bankroll will be different, and so their future preferences will change.&lt;/p&gt;
+
+
+&lt;p&gt;Now, I already know the objection, VNM theory is about states of the world, not individual decisions, but this objection falls flat for several key reasons:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;It justifies the reasonableness of its assumptions based on patterns of decision making, not behaviour of preferences, because without any consequence for preferences anything goes.&lt;/li&gt;
+&lt;li&gt;The number of possible states of the world is &lt;em&gt;very&lt;/em&gt; large, which runs into the problem that it is poorly suited to large and unbounded domains, so it is also bad for this.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;h3&gt;Where does VNM theory work?&lt;/h3&gt;
+
+
+&lt;p&gt;Basically it doesn't. VNM theory is bad, even in situations where utility theory is good.
+It is a poor normative argument that people have taken far more seriously than it deserves, with most of its foundation points failing to actually be viable for real agents.&lt;/p&gt;
+
+
+&lt;p&gt;That doesn't mean utility theory is never useful.
+In general, people &lt;em&gt;will&lt;/em&gt; converge over time to some sort of approximately utility maximising behaviour for some utility function in small domains that can be well understood and that have strong incentives for maximisation. Even there you will tend to run into the Fredkin's paradox problem, with significantly more nondeterminism at the decision margins than VNM theory would suggest.&lt;/p&gt;
+
+
+&lt;p&gt;It does mean however that in large unbounded high uncertainty environments with agents who learn their preferences over time and actually impact the state of the world, VNM theory cannot possibly predict their behaviour, and its claims to have normative force over their behaviour don't hold up.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2022-12-10-14:53.html" rel="alternate"/>
   </entry>
 </feed>
