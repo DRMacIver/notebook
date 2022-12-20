@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2022-12-10T14:53:00+00:00</updated>
+  <updated>2022-12-13T11:39:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,256 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2022-06-05-15:04.html</id>
-    <title>Knowledge and justice</title>
-    <updated>2022-06-05T15:06:40+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Knowledge and justice&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2022-06-05&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;This was an abandoned attempt to introduce the ideas of &lt;em&gt;Epistemic Injustice&lt;/em&gt; in
-an accessible manner.&lt;/p&gt;
-
-
-&lt;p&gt;You should need approximately zero philosophy to
-understand this, though I'll occasionally refer back to the relevant
-philosophical terminology to connect it up.&lt;/p&gt;
-
-
-&lt;h3&gt;Credit&lt;/h3&gt;
-
-
-&lt;p&gt;The idea of Epistemic Injustice comes from the philosopher Miranda
-Fricker, who wrote &lt;a href="https://amzn.to/2OB2HYH"&gt;a book of the same name&lt;/a&gt;
-about it. My understanding of the subject has been heavily informed by
-Kristie Dotson's "&lt;a href="https://www.jstor.org/stable/10.5250/fronjwomestud.33.1.0024?seq=1"&gt;A Cautionary Tale: On Limiting Epistemic
-Oppression&lt;/a&gt;".
-I'll also be drawing a little bit on Elizabeth Anderson's &lt;a href="https://philpapers.org/rec/ANDEJA"&gt;Epistemic
-Justice as a Virtue of Social
-Institutions&lt;/a&gt; and Rittberg et. al's
-&lt;a href="http://philsci-archive.pitt.edu/15133/1/Epistemic%20Injustice%20in%20Mathematics%20%28to%20appear%29.pdf"&gt;Epistemic Injustice in
-Mathematics&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;Beyond that, I'll be synthesising a little bit with some broader themes.
-I'll be drawing on some of the work of James C. Scott in &lt;a href="https://amzn.to/30ktRbu"&gt;Seeing Like a
-State&lt;/a&gt; and &lt;a href="https://amzn.to/2DSR7py"&gt;Domination and the Arts of
-Resistance&lt;/a&gt;, and Jean-Francois Lyotard's &lt;a href="https://amzn.to/32vPDfj"&gt;The
-Postmodern Condition: A Report on Knowledge&lt;/a&gt;.
-I'll also be drawing on some of CN Lester's book &lt;a href="https://amzn.to/32zHUN8"&gt;Trans Like
-Me&lt;/a&gt; for an example of epistemic injustice that
-I've not seen discussed in the literature.&lt;/p&gt;
-
-
-&lt;p&gt;Because of this synthesis I won't necessarily be explaining any of this
-in the terms that the authors would use, but I'll do my best to
-highlight all the places we differ explicitly.&lt;/p&gt;
-
-
-&lt;h3&gt;Knowledge is Social&lt;/h3&gt;
-
-
-&lt;p&gt;How do you know what you know?&lt;/p&gt;
-
-
-&lt;p&gt;This isn't a trick question. I'm not going to probe deep into the nature
-of knowledge here. I mean it much more literally: You, presumably, know
-things. How? Where did you learn them?&lt;/p&gt;
-
-
-&lt;p&gt;Well, mostly, you learned them from other people.&lt;/p&gt;
-
-
-&lt;p&gt;Some of it of course you will have learned through direct experience, or
-figuring out on your own, but even that tends to blur in with the bits
-you learned from other people - I know that I am typing this newsletter
-on a laptop, and that is knowledge I have from direct experience, but
-the fact that I know what "typing" is, or even "a laptop" is is
-knowledge that, ultimately, came from someone else. Although the
-&lt;em&gt;experience&lt;/em&gt; is mine, the knowledge that allows me to interpret and
-understand it is part of a shared canon that I have learned from and
-with the people around me.&lt;/p&gt;
-
-
-&lt;p&gt;Don't get me wrong, a lot of my knowledge is of my own making: I'm
-clever, I've figured things out. I'm sure you have too. But even for
-people a lot cleverer than me it's a &lt;em&gt;lot&lt;/em&gt; easier to figure things out
-with others' help.&lt;/p&gt;
-
-
-&lt;p&gt;This help both with the knowledge that we have learned from them, and
-with their direct help when we have a problem to solve that we need to
-figure out. Knowledge isn't just collective in the sense that we learn
-things from other people - we go to other people with our problems, talk
-them out, explain them and solve them together. At the end of the
-discussion changes are that &lt;em&gt;everyone&lt;/em&gt; involved has learned something
-about it, and you have a little more shared and common knowledge.&lt;/p&gt;
-
-
-&lt;h3&gt;What is Epistemic Injustice?&lt;/h3&gt;
-
-
-&lt;p&gt;As with anything involving more than one person, this process of
-constructing knowledge together can be done in ways that are unjust.
-This is what Fricker calls &lt;em&gt;Epistemic Injustice&lt;/em&gt; (Epistemic just means
-"Concerning knowledge"): An injustice done to or by you in your capacity
-as someone participating in the process of constructing knowledge
-together.&lt;/p&gt;
-
-
-&lt;p&gt;Examples of epistemic injustices include:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Unjustly dismissing someone's testimony. e.g. "You would say that,
-    you're a woman". By doing this you are refusing their contributions
-    to the process of collective knowledge. Fricker calls this a
-    &lt;em&gt;testimonial injustice&lt;/em&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Unjustly denying someone the knowledge they need to solve their
-    problems. e.g. Fricker cites the example of women needing the term
-    "sexual harassment" to explain an aspect of their lived experience,
-    and previously lacking it partly due to a prejudicial environment
-    that prevented them from identifying it. Fricker calls this example
-    a &lt;em&gt;hermeneutical injustice&lt;/em&gt; but she means something slightly more
-    specific than denial of knowledge.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Unjustly refusing to acquire (or acknowledge the validity of) the
-    knowledge that allows you to engage properly with someone else's
-    worldview. e.g. white people refusing to engage properly with people
-    of colour's views on racism. Dotson calls this &lt;em&gt;contributory
-    injustice&lt;/em&gt; (though again means something slightly more specific).&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Spreading lies about a particular subject (e.g. about trans people,
-    their behaviour, their medical treatment) so that when people of a
-    particular group try to tell the truth about their lives they are
-    dismissed because "everybody knows" things that contradict that.
-    (This is what CN Lester calls "The production of ignorance")&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;h3&gt;What makes it injustice?&lt;/h3&gt;
-
-
-&lt;p&gt;I tend to differ from a lot of the canon on some of the details of
-epistemic injustice, and you're reading my newsletter so you're going to
-get my view on the subject (sorry). Here I'll spell out some of those
-differences.&lt;/p&gt;
-
-
-&lt;p&gt;For Fricker, Epistemic Injustice is tied to a very specific conception
-of justice, and in order to count it has to be an injustice that is
-specifically &lt;em&gt;identity prejudicial&lt;/em&gt;: That is, it's done to you based on
-some stable aspect of your identity (e.g. race, gender).&lt;/p&gt;
-
-
-&lt;p&gt;I tend not to insist on that for two reasons:&lt;/p&gt;
-
-
-&lt;p&gt;The first is that it ties you concepts of justice to whatever way you
-happen to bucket people into categories. Unless you are &lt;em&gt;really&lt;/em&gt;
-confident that you understand the myriad ways in which humans can vary,
-tying your notion of justice to your particular favoured labelling
-scheme is itself prejudicial (I wrote about this a bit before in
-&lt;a href="https://notebook.drmaciver.com/posts/2020-02-23-09:37.html"&gt;Legibility
-Privileges&lt;/a&gt;).&lt;/p&gt;
-
-
-&lt;p&gt;Fricker herself makes significant errors in the book as a result of this
-- e.g. she has the example of treating someone as dishonest (and thus
-discounting them as a source of knowledge) because they don't want to
-make eye contact as &lt;em&gt;not&lt;/em&gt; an example of an injustice because it's based
-on an individual trait of e.g. shyness rather than their identity,
-completely ignoring that it might be because they're autistic.&lt;/p&gt;
-
-
-&lt;p&gt;The second reason I tend to discount this view is that it's just weird
-and obviously wrong. Although many injustices &lt;em&gt;are&lt;/em&gt; identity prejudicial
-in nature, by no means all are (e.g. you can do someone an injustice
-just by behaving like an asshole to them when they've done nothing to
-deserve it, just because you don't like them). It puts us in the
-situation where something might be obviously epistemic in nature,
-obviously an injustice, and yet not an epistemic injustice.&lt;/p&gt;
-
-
-&lt;p&gt;So if not identity prejudice, what makes something an epistemic
-&lt;em&gt;injustice&lt;/em&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;Pass, sorry.&lt;/p&gt;
-
-
-&lt;p&gt;In all of my examples of epistemic injustice I just said "This thing
-happens, and also it's unjust" and that's about the level of specificity
-I'm willing to get into. I think trying to pin down when exactly
-something is an epistemic injustice is a very hard problem and will
-depend on your theory of and feelings about justice more broadly.&lt;/p&gt;
-
-
-&lt;p&gt;This is somewhere where Fricker's focus on identity prejudice based
-injustices does a lot of work, because it allows her to focus on cases
-where you can just say "Yeah obviously this is bad". e.g. Dismissing
-someone's mathematical work because they're black is &lt;em&gt;obviously&lt;/em&gt; an
-injustice (unless you're really extremely racist), and you don't have to
-do much work to justify this. Dismissing the same person's mathematical
-work because they are telling you they have a one page proof of Fermat's
-last theorem on the other hand is entirely justified because you'd do
-exactly the same if they were white.&lt;/p&gt;
-
-
-&lt;p&gt;I assume you have your own conceptions of justice, and I do not plan to
-solve the problem of justice in this newsletter issue (maybe a later
-one...). Instead I think understanding epistemic injustice will come
-down to understanding how things play out in the field of collective
-knowledge, and then carrying over your normal beliefs about justice to
-that field. What is distinct about epistemic injustice is not that it
-requires its own notion of justice, but that it requires paying
-attention to and understanding how we relate to knowledge.&lt;/p&gt;
-
-
-&lt;h3&gt;Different Types of Epistemic Injustice&lt;/h3&gt;
-
-
-&lt;p&gt;Another way I differ from the canon is that I find this attempt to
-pigeonhole epistemic injustices into different categories (testimonial,
-hermeneutical, contributory...) &lt;em&gt;really&lt;/em&gt; uninteresting. There are always
-going to be more ways to do an injustice than we can conveniently label,
-and having all these labels feels like an instance of &lt;a href="https://notebook.lisamcnulty.co.uk/2020/05/28/the-fallacy-fallacy/"&gt;the Fallacy
-Fallacy&lt;/a&gt;
-- labelling something doesn't necessarily help you explain why it's bad,
-and explaining why it's bad removes the need to label it.&lt;/p&gt;
-
-
-&lt;h3&gt;Postscript&lt;/h3&gt;
-
-
-&lt;p&gt;I also had the following two section titles, completely empty:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;Understanding the Epistemic Playing Field&lt;/li&gt;
-&lt;li&gt;Structural vs Individual Epistemic Harms&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;I'm not very surprised I abandoned this piece. I hate this type of summarisation work, not so much because it's unimportant as because I never know where to stop.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2022-06-05-15:04.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-06-05-15:15.html</id>
     <title>You don't learn in a straight line</title>
@@ -1656,7 +1406,7 @@ Acting on the motion feels like lighting. Based on what actually happens, it pro
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-12-10-14:53.html</id>
     <title>Three key problems with Von-Neumann Morgenstern Utility Theory</title>
-    <updated>2022-12-10T14:53:00+00:00</updated>
+    <updated>2022-12-10T16:38:16+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Three key problems with Von-Neumann Morgenstern Utility Theory&lt;/p&gt;
@@ -1791,5 +1541,116 @@ In general, people &lt;em&gt;will&lt;/em&gt; converge over time to some sort of 
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2022-12-10-14:53.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2022-12-13-11:39.html</id>
+    <title>Mathematics as a form of ritual magic</title>
+    <updated>2022-12-13T11:39:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Mathematics as a form of ritual magic&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2022-12-13&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;One of the eternal debates in philosophy of mathematics is what mathematics actually is. Working mathematicians mostly pretend not to care about this despite having strong implicit assumptions about this.&lt;/p&gt;
+
+
+&lt;p&gt;Two somewhat caricature versions of extreme positions on this question are strict formalism, in which you regard mathematics as a meaningless game played by manipulating arbitrary symbols, and strict platonism, in which you regard mathematics as the study of abstract forms that live in the platonic realm.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, in this post I want to argue that what mathematics really is is a practice of ritual magic, in which we create worlds and summon entities from them to shape the universe to our will.&lt;/p&gt;
+
+
+&lt;p&gt;This will make sense soon, honest.&lt;/p&gt;
+
+
+&lt;h3&gt;Mathematics as gaming&lt;/h3&gt;
+
+
+&lt;p&gt;But first, let's talk about the formalist position.&lt;/p&gt;
+
+
+&lt;p&gt;Is mathematics a "meaningless game played with arbitrary symbols"? No, obviously not. There's clearly a great deal of meaning in mathematics, and the symbols are selected for a particular purpose and not at all arbitrary.&lt;/p&gt;
+
+
+&lt;p&gt;This is, you might note, pretty much the same as all games. People don't generally play meaningless games, and they don't do them with arbitrary symbols. Games are designed to work well with human intuition and interests. Very abstract games tend to have quite simple rules, and have interpretation on top of it. e.g. Go is a quite abstract game with relatively simple rules (though very complex strategy!) and Chess has slightly more complex rules (though somewhat simpler strategy) and slightly more symbolism.&lt;/p&gt;
+
+
+&lt;p&gt;Both however are relatively simple rules. If you look at more modern, complex, board games, they tend to be rich in symbolism. Look at a game like &lt;a href="https://boardgamegeek.com/boardgame/102794/caverna-cave-farmers"&gt;Caverna&lt;/a&gt; - you can view it as an entirely abstract game with no interpretation, just numbers you make go up and down, objects you allocate to slots, etc. None of the game play depends on any flavour text or interpretation, it's all just a game of chance and decision making.&lt;/p&gt;
+
+
+&lt;p&gt;Also it would be unplayable this way.&lt;/p&gt;
+
+
+&lt;p&gt;Caverna is, fundamentally, a game about controlling a clan of dwarves. It relies on this for its appeal - it would be a boring game if you were playing it as a glorified spreadsheet - and also in order to get a handle on it - it's much easier to remember the "Exploration" phase than "Phase 5", it's much easier to think of your resources when they're rocks and wood and pumpkins than when they're members of sets A, B, C.&lt;/p&gt;
+
+
+&lt;p&gt;Although the interpretation is not an essential part of the game, it is an essential part of how humans play the game. You could choose a different theming, and most themes would produce similar games, but part of that is that the game constrains the set of themes that will play well with it. You might be able to make a version of Caverna in which you were mining asteroids in space, but you probably couldn't make a game equivalent to Caverna about Formula One racing, or bartending. You could try, and I suppose it's not impossible you'd succeed, but it would be very hard work to make it work in a way that gave the same sort of handle on the ability to engage with the abstract game.&lt;/p&gt;
+
+
+&lt;p&gt;Crucially, also, much of that abstract game was designed not as an abstract game but as a game created to model being a clan of dwarves. You can start with the abstract game sometimes, but generally you either come up with the interpretation first, or at least early in the game design before you've fully play tested it, and it informs the design of the game.&lt;/p&gt;
+
+
+&lt;p&gt;Remember, these interpretations do not affect the literal game play. They do, however, allow you to reason about it in a way you would not have access to without it. You can think in terms of territory, forces moving, control, etc. Concepts that you may have a very good intuitive handle that you can bring to bear on the problem of playing the game, and that inform your strategies in it, even if they imperfectly match the actual gameplay.&lt;/p&gt;
+
+
+&lt;p&gt;This, I think, dismisses one of the major objections to formalism: Even if mathematics were purely formal mathematics, and even if formal mathematics was purely a game, it wouldn't be meaningless and the symbols wouldn't be arbitrary. That's not how games work.&lt;/p&gt;
+
+
+&lt;p&gt;The real core problem with formalism is that it doesn't actually accurately describe the behaviour of real mathematicians. Proof simply doesn't follow the rules of formal logic most of the time, it's an informal social process, whose main success criterion is that you've convinced other mathematicians of the truth of your result, in a manner generally accepted as valid mathematical proof.&lt;/p&gt;
+
+
+&lt;p&gt;But that's OK. There are games that work like this too - roleplaying games. Although a roleplaying game comes with a rigid set of rules, the actual play is constituted by more flexible social practices. e.g. if the rules say how to do something but it would be long and tedious and you'd obviously be successful, the GM will usually say "Sure, you do the thing" rather than make you go through all the steps. This is also how mathematics works: Sometimes you can brush aside a long tedious argument by just asserting the result, and the reader will go "Yeah that checks out, I bet I could fill in the details". Occasionally they would be wrong to do so and an error lurks in that step, in much the same way that yes you could critical fail all your rolls in the long tedious process of doing some basic task, but most of the time it's not really worth worrying about that. &lt;/p&gt;
+
+
+&lt;p&gt;You could think of mathematics as a roleplaying game set in the platonic realm and you wouldn't be too far off.&lt;/p&gt;
+
+
+&lt;p&gt;Another thing to consider here is that it's not totally clear that RPGs like dungeons and dragons are a game, at least in the formal philosophical sense. Bernard Suits defines a game as follows:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;To play a game is to attempt to achieve a specific state of affairs [prelusory goal], using only means permitted by rules [lusory means], where the rules prohibit use of more efficient in favour of less efficient means [constitutive rules], and where the rules are accepted just because they make possible such activity [lusory attitude].&lt;/p&gt;
+&lt;p&gt;I also offer the following simpler and, so to speak, more portable version of the above: playing a game is the voluntary attempt to overcome unnecessary obstacles.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;D&amp;amp;D does not specify the prelusory goal - it could be anything - so D&amp;amp;D itself is not a game in the Suitsian sense. It is more like a game construction toolkit. You can play a game of D&amp;amp;D, but the game requires you to fill in many details that are not specified by D&amp;amp;D itself before it counts as gamelike. A dungeon crawl is a game of D&amp;amp;D, but D&amp;amp;D doesn't say you have to crawl a dungeon.&lt;/p&gt;
+
+
+&lt;p&gt;Similarly, mathematics lacks a goal. Much like you don't just play D&amp;amp;D without some sort of goal for your particular game of it (you can, but it tends not to go amazingly), you don't tend to do mathematics in an undirected manner - you're exploring some question, or trying to prove some theorem, or in some other way trying to achieve something. This is particularly true with &lt;em&gt;published&lt;/em&gt; mathematics - the private act of mathematical practice is less goal directed.&lt;/p&gt;
+
+
+&lt;p&gt;It's in many ways hard &lt;em&gt;not&lt;/em&gt; to regard publishing a mathematical proof as a game in the Suitsian sense. This is partly because most things are easy to regard as a game in the Suitsian sense, but what I really mean is that doing so is in some ways informative.&lt;/p&gt;
+
+
+&lt;p&gt;You have a particular goal (asserting that a theorem is true), and you are trying to do so through the means that are broadly acknowledged as constituting mathematical proof. These are a set of rules, largely informally specified, collectively agreed to by the mathematical community. There are regular arguments about what those rules should be (e.g. whether computerised proofs are allowed) but there are clearly &lt;em&gt;some&lt;/em&gt; rules, and those rules are at least partially arbitrary (why accept this method and not that, which bits do and don't require spelling out, etc).&lt;/p&gt;
+
+
+&lt;p&gt;Other things that are disallowed are just asserting something because you've checked enough of it for your purposes. e.g. prior to its proof you could still assert that Fermat's last theorem was true when doing something that depended on it in a computer program and you would probably (we now know, certainly) never have gone wrong by doing that, but this would still not count as mathematical proof even though you were reliably asserting a mathematical claim.&lt;/p&gt;
+
+
+&lt;p&gt;Does this mean mathematics is a game? I think it's clear that mathematics contains many practices that satisfy the Suitsian definition of games, and game playing may be an informative analogy in general. But if you still don't think mathematics &lt;em&gt;is&lt;/em&gt; a game, that's fine, all I want to point out is that thinking of mathematics as &lt;em&gt;like&lt;/em&gt; a game may sometimes be helpful.&lt;/p&gt;
+
+
+&lt;p&gt;In particular, recall the discussion of Caverna, and the relationship between the game and its interpretations.
+Mathematics, too, has much of these layers of interpretation and meaning, which is required as the interface between the human and the abstract concepts they are working with.&lt;/p&gt;
+
+
+&lt;h3&gt;Mathematics as ritual&lt;/h3&gt;
+
+
+&lt;p&gt;There are many other philosophies of mathematics than just the formalist and the platonist views. I like the one described in Reuben Hersh's "What is mathematics, really?" which he describes as a "humanist" philosophy.&lt;/p&gt;
+
+
+&lt;p&gt;(There are other positions on the subject, for example mathematical structuralism, which argues that mathematics is the study of the structure of things independent of any specific objects implementing those structures, and "humanist" philosophy of mathematics a la Reuben Hersh, which I shall be drawing on extensively shortly)&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2022-12-13-11:39.html" rel="alternate"/>
   </entry>
 </feed>
