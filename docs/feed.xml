@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2022-12-10T14:53:00+00:00</updated>
+  <updated>2022-12-20T17:21:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,256 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2022-06-05-15:04.html</id>
-    <title>Knowledge and justice</title>
-    <updated>2022-06-05T15:06:40+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Knowledge and justice&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2022-06-05&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;This was an abandoned attempt to introduce the ideas of &lt;em&gt;Epistemic Injustice&lt;/em&gt; in
-an accessible manner.&lt;/p&gt;
-
-
-&lt;p&gt;You should need approximately zero philosophy to
-understand this, though I'll occasionally refer back to the relevant
-philosophical terminology to connect it up.&lt;/p&gt;
-
-
-&lt;h3&gt;Credit&lt;/h3&gt;
-
-
-&lt;p&gt;The idea of Epistemic Injustice comes from the philosopher Miranda
-Fricker, who wrote &lt;a href="https://amzn.to/2OB2HYH"&gt;a book of the same name&lt;/a&gt;
-about it. My understanding of the subject has been heavily informed by
-Kristie Dotson's "&lt;a href="https://www.jstor.org/stable/10.5250/fronjwomestud.33.1.0024?seq=1"&gt;A Cautionary Tale: On Limiting Epistemic
-Oppression&lt;/a&gt;".
-I'll also be drawing a little bit on Elizabeth Anderson's &lt;a href="https://philpapers.org/rec/ANDEJA"&gt;Epistemic
-Justice as a Virtue of Social
-Institutions&lt;/a&gt; and Rittberg et. al's
-&lt;a href="http://philsci-archive.pitt.edu/15133/1/Epistemic%20Injustice%20in%20Mathematics%20%28to%20appear%29.pdf"&gt;Epistemic Injustice in
-Mathematics&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;Beyond that, I'll be synthesising a little bit with some broader themes.
-I'll be drawing on some of the work of James C. Scott in &lt;a href="https://amzn.to/30ktRbu"&gt;Seeing Like a
-State&lt;/a&gt; and &lt;a href="https://amzn.to/2DSR7py"&gt;Domination and the Arts of
-Resistance&lt;/a&gt;, and Jean-Francois Lyotard's &lt;a href="https://amzn.to/32vPDfj"&gt;The
-Postmodern Condition: A Report on Knowledge&lt;/a&gt;.
-I'll also be drawing on some of CN Lester's book &lt;a href="https://amzn.to/32zHUN8"&gt;Trans Like
-Me&lt;/a&gt; for an example of epistemic injustice that
-I've not seen discussed in the literature.&lt;/p&gt;
-
-
-&lt;p&gt;Because of this synthesis I won't necessarily be explaining any of this
-in the terms that the authors would use, but I'll do my best to
-highlight all the places we differ explicitly.&lt;/p&gt;
-
-
-&lt;h3&gt;Knowledge is Social&lt;/h3&gt;
-
-
-&lt;p&gt;How do you know what you know?&lt;/p&gt;
-
-
-&lt;p&gt;This isn't a trick question. I'm not going to probe deep into the nature
-of knowledge here. I mean it much more literally: You, presumably, know
-things. How? Where did you learn them?&lt;/p&gt;
-
-
-&lt;p&gt;Well, mostly, you learned them from other people.&lt;/p&gt;
-
-
-&lt;p&gt;Some of it of course you will have learned through direct experience, or
-figuring out on your own, but even that tends to blur in with the bits
-you learned from other people - I know that I am typing this newsletter
-on a laptop, and that is knowledge I have from direct experience, but
-the fact that I know what "typing" is, or even "a laptop" is is
-knowledge that, ultimately, came from someone else. Although the
-&lt;em&gt;experience&lt;/em&gt; is mine, the knowledge that allows me to interpret and
-understand it is part of a shared canon that I have learned from and
-with the people around me.&lt;/p&gt;
-
-
-&lt;p&gt;Don't get me wrong, a lot of my knowledge is of my own making: I'm
-clever, I've figured things out. I'm sure you have too. But even for
-people a lot cleverer than me it's a &lt;em&gt;lot&lt;/em&gt; easier to figure things out
-with others' help.&lt;/p&gt;
-
-
-&lt;p&gt;This help both with the knowledge that we have learned from them, and
-with their direct help when we have a problem to solve that we need to
-figure out. Knowledge isn't just collective in the sense that we learn
-things from other people - we go to other people with our problems, talk
-them out, explain them and solve them together. At the end of the
-discussion changes are that &lt;em&gt;everyone&lt;/em&gt; involved has learned something
-about it, and you have a little more shared and common knowledge.&lt;/p&gt;
-
-
-&lt;h3&gt;What is Epistemic Injustice?&lt;/h3&gt;
-
-
-&lt;p&gt;As with anything involving more than one person, this process of
-constructing knowledge together can be done in ways that are unjust.
-This is what Fricker calls &lt;em&gt;Epistemic Injustice&lt;/em&gt; (Epistemic just means
-"Concerning knowledge"): An injustice done to or by you in your capacity
-as someone participating in the process of constructing knowledge
-together.&lt;/p&gt;
-
-
-&lt;p&gt;Examples of epistemic injustices include:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Unjustly dismissing someone's testimony. e.g. "You would say that,
-    you're a woman". By doing this you are refusing their contributions
-    to the process of collective knowledge. Fricker calls this a
-    &lt;em&gt;testimonial injustice&lt;/em&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Unjustly denying someone the knowledge they need to solve their
-    problems. e.g. Fricker cites the example of women needing the term
-    "sexual harassment" to explain an aspect of their lived experience,
-    and previously lacking it partly due to a prejudicial environment
-    that prevented them from identifying it. Fricker calls this example
-    a &lt;em&gt;hermeneutical injustice&lt;/em&gt; but she means something slightly more
-    specific than denial of knowledge.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Unjustly refusing to acquire (or acknowledge the validity of) the
-    knowledge that allows you to engage properly with someone else's
-    worldview. e.g. white people refusing to engage properly with people
-    of colour's views on racism. Dotson calls this &lt;em&gt;contributory
-    injustice&lt;/em&gt; (though again means something slightly more specific).&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Spreading lies about a particular subject (e.g. about trans people,
-    their behaviour, their medical treatment) so that when people of a
-    particular group try to tell the truth about their lives they are
-    dismissed because "everybody knows" things that contradict that.
-    (This is what CN Lester calls "The production of ignorance")&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;h3&gt;What makes it injustice?&lt;/h3&gt;
-
-
-&lt;p&gt;I tend to differ from a lot of the canon on some of the details of
-epistemic injustice, and you're reading my newsletter so you're going to
-get my view on the subject (sorry). Here I'll spell out some of those
-differences.&lt;/p&gt;
-
-
-&lt;p&gt;For Fricker, Epistemic Injustice is tied to a very specific conception
-of justice, and in order to count it has to be an injustice that is
-specifically &lt;em&gt;identity prejudicial&lt;/em&gt;: That is, it's done to you based on
-some stable aspect of your identity (e.g. race, gender).&lt;/p&gt;
-
-
-&lt;p&gt;I tend not to insist on that for two reasons:&lt;/p&gt;
-
-
-&lt;p&gt;The first is that it ties you concepts of justice to whatever way you
-happen to bucket people into categories. Unless you are &lt;em&gt;really&lt;/em&gt;
-confident that you understand the myriad ways in which humans can vary,
-tying your notion of justice to your particular favoured labelling
-scheme is itself prejudicial (I wrote about this a bit before in
-&lt;a href="https://notebook.drmaciver.com/posts/2020-02-23-09:37.html"&gt;Legibility
-Privileges&lt;/a&gt;).&lt;/p&gt;
-
-
-&lt;p&gt;Fricker herself makes significant errors in the book as a result of this
-- e.g. she has the example of treating someone as dishonest (and thus
-discounting them as a source of knowledge) because they don't want to
-make eye contact as &lt;em&gt;not&lt;/em&gt; an example of an injustice because it's based
-on an individual trait of e.g. shyness rather than their identity,
-completely ignoring that it might be because they're autistic.&lt;/p&gt;
-
-
-&lt;p&gt;The second reason I tend to discount this view is that it's just weird
-and obviously wrong. Although many injustices &lt;em&gt;are&lt;/em&gt; identity prejudicial
-in nature, by no means all are (e.g. you can do someone an injustice
-just by behaving like an asshole to them when they've done nothing to
-deserve it, just because you don't like them). It puts us in the
-situation where something might be obviously epistemic in nature,
-obviously an injustice, and yet not an epistemic injustice.&lt;/p&gt;
-
-
-&lt;p&gt;So if not identity prejudice, what makes something an epistemic
-&lt;em&gt;injustice&lt;/em&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;Pass, sorry.&lt;/p&gt;
-
-
-&lt;p&gt;In all of my examples of epistemic injustice I just said "This thing
-happens, and also it's unjust" and that's about the level of specificity
-I'm willing to get into. I think trying to pin down when exactly
-something is an epistemic injustice is a very hard problem and will
-depend on your theory of and feelings about justice more broadly.&lt;/p&gt;
-
-
-&lt;p&gt;This is somewhere where Fricker's focus on identity prejudice based
-injustices does a lot of work, because it allows her to focus on cases
-where you can just say "Yeah obviously this is bad". e.g. Dismissing
-someone's mathematical work because they're black is &lt;em&gt;obviously&lt;/em&gt; an
-injustice (unless you're really extremely racist), and you don't have to
-do much work to justify this. Dismissing the same person's mathematical
-work because they are telling you they have a one page proof of Fermat's
-last theorem on the other hand is entirely justified because you'd do
-exactly the same if they were white.&lt;/p&gt;
-
-
-&lt;p&gt;I assume you have your own conceptions of justice, and I do not plan to
-solve the problem of justice in this newsletter issue (maybe a later
-one...). Instead I think understanding epistemic injustice will come
-down to understanding how things play out in the field of collective
-knowledge, and then carrying over your normal beliefs about justice to
-that field. What is distinct about epistemic injustice is not that it
-requires its own notion of justice, but that it requires paying
-attention to and understanding how we relate to knowledge.&lt;/p&gt;
-
-
-&lt;h3&gt;Different Types of Epistemic Injustice&lt;/h3&gt;
-
-
-&lt;p&gt;Another way I differ from the canon is that I find this attempt to
-pigeonhole epistemic injustices into different categories (testimonial,
-hermeneutical, contributory...) &lt;em&gt;really&lt;/em&gt; uninteresting. There are always
-going to be more ways to do an injustice than we can conveniently label,
-and having all these labels feels like an instance of &lt;a href="https://notebook.lisamcnulty.co.uk/2020/05/28/the-fallacy-fallacy/"&gt;the Fallacy
-Fallacy&lt;/a&gt;
-- labelling something doesn't necessarily help you explain why it's bad,
-and explaining why it's bad removes the need to label it.&lt;/p&gt;
-
-
-&lt;h3&gt;Postscript&lt;/h3&gt;
-
-
-&lt;p&gt;I also had the following two section titles, completely empty:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;Understanding the Epistemic Playing Field&lt;/li&gt;
-&lt;li&gt;Structural vs Individual Epistemic Harms&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;I'm not very surprised I abandoned this piece. I hate this type of summarisation work, not so much because it's unimportant as because I never know where to stop.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2022-06-05-15:04.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-06-05-15:15.html</id>
     <title>You don't learn in a straight line</title>
@@ -1656,7 +1406,7 @@ Acting on the motion feels like lighting. Based on what actually happens, it pro
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-12-10-14:53.html</id>
     <title>Three key problems with Von-Neumann Morgenstern Utility Theory</title>
-    <updated>2022-12-10T14:53:00+00:00</updated>
+    <updated>2022-12-10T16:38:16+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Three key problems with Von-Neumann Morgenstern Utility Theory&lt;/p&gt;
@@ -1791,5 +1541,91 @@ In general, people &lt;em&gt;will&lt;/em&gt; converge over time to some sort of 
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2022-12-10-14:53.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2022-12-20-17:21.html</id>
+    <title>Action generators</title>
+    <updated>2022-12-20T17:21:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Action generators&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2022-12-20&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Quick, do something.&lt;/p&gt;
+
+
+&lt;p&gt;Now do something without leaving your current position. e.g. if you're sitting down stand up.&lt;/p&gt;
+
+
+&lt;p&gt;Now, without leaving your current position, do something with your left hand.&lt;/p&gt;
+
+
+&lt;p&gt;Now, without leaving your current position, do something with your left hand without touching anything with it.&lt;/p&gt;
+
+
+&lt;p&gt;Now, without leaving your current position, do something with your left hand that feels good, without touching anything with it.&lt;/p&gt;
+
+
+&lt;p&gt;Each of these instructions is an action generator: Something that prompts you to act in the world. These can be instructions, but they can also be observations, thoughts, etc. If a ball comes flying towards your head, you hopefully duck. Action generator!&lt;/p&gt;
+
+
+&lt;p&gt;Any action generator has the default response to it: Do nothing. When I told you to do something, you probably ignored it and kept reading (this is of course doing something). Possibly by the end the instructions were interesting enough that you went "Oh, sure, I'll give that a go.", possibly not.&lt;/p&gt;
+
+
+&lt;p&gt;Doing nothing isn't always a good idea. If you have a do nothing response to the ball flying towards your head, you get hit. Hope it's not a cricket ball. Those hurt. A lot.&lt;/p&gt;
+
+
+&lt;p&gt;The thing about the list of action generators I gave above is that each of them is more specific than the one preceding it, and yet it is &lt;em&gt;very&lt;/em&gt; unlikely that the actions generated by the last are ones you would have thought of in response to the first action generator.&lt;/p&gt;
+
+
+&lt;p&gt;This is because the broader the action generator is, the more possibilities there are, the harder it is to navigate to any particular possibility in particular.&lt;/p&gt;
+
+
+&lt;p&gt;It's also because the more specific action generator gives you permission. The ball coming at your head generates an action of duck, so you duck. You could have ducked even if the ball wasn't coming at your head, but why would you?&lt;/p&gt;
+
+
+&lt;p&gt;Action generators are often useful for doing things that you could have done with a broader action generator but, for one reason or another, didn't.&lt;/p&gt;
+
+
+&lt;p&gt;If someone is coming around, that's an action generator to clean your house. You could have done this at any time before, but you didn't. That isn't necessarily bad, but sometimes you &lt;em&gt;wanted&lt;/em&gt; to do it before and still didn't.&lt;/p&gt;
+
+
+&lt;p&gt;This points to the fact that an action generator really has at least two properties:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;What actions it &lt;em&gt;can&lt;/em&gt; generate.&lt;/li&gt;
+&lt;li&gt;What actions it encourages you to take.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;Someone coming over doesn't constrain your actions much compared to the default action generator, but it does create a very strong incentive to tidy up, in much the same way that you're free to do whatever you like in the lead up to the ball arriving, but after that if your actions have not taken the ball into account you're going to deal with the consequences.&lt;/p&gt;
+
+
+&lt;p&gt;One thing I'd like to highlight from the hand thing is that to a large degree, making the action generator more specific automatically creates an encouragement to action, because it lowers the activation energy to acting by removing a large class of decisions. "What should I do with my life?" - vast and impossible set of decisions. "What should I do today?" can still be pretty daunting. "What should I eat for breakfast?" - now pretty accessible. &lt;a href="https://twitter.com/DRMacIver/status/1603792788667207681"&gt;Onward! Towards the abyss&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Another thing worth noting is that any theory about the world is an action generator. You create a model of the world, and this gives you a set of actions that makes sense under that model. For example, when we &lt;a href="https://drmaciver.substack.com/i/53848690/inventing-symbolic-games"&gt;invent symbolic games&lt;/a&gt; to improve our ability at something, we are doing this.&lt;/p&gt;
+
+
+&lt;p&gt;Importantly, a theory works as an action generator &lt;em&gt;even if it's wrong&lt;/em&gt;. You can still adopt the theory and act based on it, and often those actions will be perfectly fine, because they're interesting in their own right even if the reasons that lead to them aren't correct. This is akin to the saying that all models are wrong, but some are useful. All models are useful, in that having action generators is useful because it may lead you to things that you wouldn't otherwise have thought of.&lt;/p&gt;
+
+
+&lt;p&gt;I think many "bad" theories persist because they're useful action generators. More, though, I think often bad theories are better than good theories, because they generate actions that you would never have thought of if you were constrained to adopting more reasonable theories.&lt;/p&gt;
+
+
+&lt;p&gt;For example, I think a lot of therapy modalities work like this. My reliably experience reading therapy books is that they explain their theory and I go "lol, sure" and they provide their evidence and I go "an easier explanation of this is that you're lying", and then I do their exercises and... well, most of the time it doesn't work, but it does something interesting often enough that it was worth reading the book.&lt;/p&gt;
+
+
+&lt;p&gt;I think this is often the case: It's worth having a stable of bad theories lying around that generate actions that you wouldn't otherwise have thought of and that are basically harmless in the worst case, and possibly interesting in the best case.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2022-12-20-17:21.html" rel="alternate"/>
   </entry>
 </feed>
