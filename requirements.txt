@@ -9,7 +9,7 @@ decorator==4.4.2
 -e .
 feedgen==0.9.0
 idna==2.9
-ipython==7.13.0
+ipython==8.10.0
 ipython-genutils==0.2.0
 jedi==0.16.0
 kiwisolver==1.1.0
