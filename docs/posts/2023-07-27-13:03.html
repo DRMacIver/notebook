@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+DRMacIver's Notebook: Adaptive parallel test-case reduction
+    </title>
+
+    <meta property="og:title" content="Adaptive parallel test-case reduction">
+
+    <meta property="og:url" content="https://notebook.drmaciver.com/posts/2023-07-27-13:03.html" />
+    <link rel="canonical" href="https://notebook.drmaciver.com/posts/2023-07-27-13:03.html" />
+    <script src="https://hypothes.is/embed.js" async></script>
+
+
+    <meta name="twitter:card" content="summary" />
+
+    <meta property="og:creator" content="@DRMacIver">
+
+    <link rel="stylesheet" href="/pygments.css"/>
+    <link rel="stylesheet" href="/tufte.css"/>
+    <link rel="stylesheet" href="/latex.css"/>
+    <link rel="stylesheet" href="/drmnotes.css"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
+});
+
+MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
+  console.log(message)
+});
+
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169185204-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169185204-1');
+</script>
+
+  </head>
+
+  <body>
+    <article>
+        <h1><a href="/">DRMacIver's Notebook</a></h1>
+        <p class=subtitle>Adaptive parallel test-case reduction</p>
+
+        
+
+<section id="the-post">
+<p class=subtitle>Adaptive parallel test-case reduction</p>
+<dl class=metadata>
+<dt>Published</dt>
+<dd class="post-date">2023-07-27</dd>
+</dl>
+
+<p>There's a very simple algorithm I call "adaptive parallel deletion", which I think of as completely standard and thus often forget that literally nobody but me uses.
+I haven't written it down anywhere, so here's me finally getting around to doing that.</p>
+<p>This algorithm is a component of test-case reduction that replaces the classic delta debugging algorithm - that it is, it takes some sequence and produces a subsequence of it satisfying some condition,
+such that if you remove any one element from its output the condition is no longer satisfied.</p>
+<p>The core features of adaptive parallel deletion are:</p>
+<ol>
+<li>When there are large reductions that can be made, it will usually run in <code>O(log(n))</code>.</li>
+<li>When there are no reductions that can be made, it will run in <code>O(n)</code>, but with the work scaling to as much parallelism as you can give it.</li>
+<li>It will scale fairly gracefully in between the two.</li>
+</ol>
+<p>Here it is:</p>
+<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">single_pass_delete</span><span class="p">(</span><span class="n">test_case</span><span class="p">,</span> <span class="n">condition</span><span class="p">):</span>
+    <span class="sd">"""Returns a version of `test_case` that satisfies `condition` and</span>
+<span class="sd">    is "one-minimal" in the sense that you cannot delete any single</span>
+<span class="sd">    member of it and have it still satisfy the condition."""</span>
+    <span class="n">test_case</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">test_case</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">can_delete</span><span class="p">(</span><span class="n">j</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">condition</span><span class="p">(</span><span class="n">test_case</span><span class="p">[:</span><span class="n">j</span><span class="p">]</span> <span class="o">+</span> <span class="n">test_case</span><span class="p">[</span><span class="n">k</span><span class="p">:])</span>
+
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">test_case</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">i</span> <span class="o">=</span> <span class="n">find_first</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">test_case</span><span class="p">),</span> <span class="k">lambda</span> <span class="n">j</span><span class="p">:</span> <span class="n">can_delete</span><span class="p">(</span><span class="n">j</span><span class="p">,</span> <span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="k">except</span> <span class="n">NotFound</span><span class="p">:</span>
+            <span class="k">break</span>
+
+        <span class="k">del</span> <span class="n">test_case</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="n">k</span> <span class="o">=</span> <span class="n">find_integer</span><span class="p">(</span><span class="k">lambda</span> <span class="n">k</span><span class="p">:</span> <span class="n">i</span> <span class="o">+</span> <span class="n">k</span> <span class="o">&lt;=</span> <span class="nb">len</span><span class="p">(</span><span class="n">test_case</span><span class="p">)</span> <span class="ow">and</span> <span class="n">can_delete</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">i</span> <span class="o">+</span> <span class="n">k</span><span class="p">))</span>
+        <span class="k">del</span> <span class="n">test_case</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span><span class="o">+</span><span class="n">k</span><span class="p">]</span>
+
+    <span class="k">return</span> <span class="n">test_case</span>
+</pre></div>
+<p>Where the functions this uses are <code>find_integer</code> that I've <a href="https://notebook.drmaciver.com/posts/2019-04-30-13:03.html">previously written about here</a> which is just an exponential probe and binary search (so runs in <code>O(log(k))</code> when it returns <code>k</code>) and <code>find_first</code> is defined as follows:</p>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">islice</span>
+
+
+<span class="k">class</span> <span class="nc">NotFound</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
+    <span class="k">pass</span>
+
+
+<span class="k">def</span> <span class="nf">find_first</span><span class="p">(</span><span class="n">target</span><span class="p">,</span> <span class="n">predict</span><span class="p">):</span>
+    <span class="sd">"""Returns the first element of `target` that satisfies `predicate`,</span>
+<span class="sd">    or raises `NotFound` if none do."""</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">target</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">NotFound</span><span class="p">()</span>
+
+    <span class="n">parallelism</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">cpu_count</span><span class="p">()</span>
+
+    <span class="k">if</span> <span class="n">parallelism</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">target</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+                <span class="k">return</span> <span class="n">x</span>
+        <span class="k">raise</span> <span class="n">NotFound</span><span class="p">()</span>
+    <span class="n">etargete</span><span class="p">:</span>
+        <span class="k">with</span> <span class="n">ThreadPoolExecutor</span><span class="p">(</span><span class="n">max_workers</span><span class="o">=</span><span class="n">parallelism</span><span class="p">)</span> <span class="k">as</span> <span class="n">executor</span><span class="p">:</span>
+            <span class="n">it</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="n">target</span><span class="p">)</span>
+            <span class="n">chunk_size</span> <span class="o">=</span> <span class="mi">1</span>
+            <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+                <span class="n">chunk</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">islice</span><span class="p">(</span><span class="n">it</span><span class="p">,</span> <span class="n">chunk_size</span><span class="p">))</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="n">chunk</span><span class="p">:</span>
+                    <span class="k">raise</span> <span class="n">NotFound</span><span class="p">()</span>
+                <span class="k">for</span> <span class="n">x</span><span class="p">,</span> <span class="n">b</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">chunk</span><span class="p">,</span> <span class="n">executor</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">chunk</span><span class="p">)):</span>
+                    <span class="k">if</span> <span class="n">b</span><span class="p">:</span>
+                        <span class="k">return</span> <span class="n">x</span>
+                <span class="n">chunk_size</span> <span class="o">*=</span> <span class="mi">2</span>
+</pre></div>
+<p>In particular <code>find_first</code> is designed so that when it does not find an answer it scales up rapidly to be embarrassingly parallel, but when it finds an answer early on it doesn't do much redundant work (you still have the overhead of the thread pool and such, but it doesn't actually run much extra code).</p>
+</section>
+
+    </article>
+<footer>
+Copyright David R. MacIver.
+
+CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
+</footer>
+  </body>
+</html>
