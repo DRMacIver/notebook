@@ -129,7 +129,7 @@ such that if you remove any one element from its output the condition is no long
             <span class="k">if</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
                 <span class="k">return</span> <span class="n">x</span>
         <span class="k">raise</span> <span class="n">NotFound</span><span class="p">()</span>
-    <span class="n">etargete</span><span class="p">:</span>
+    <span class="k">else</span><span class="p">:</span>
         <span class="k">with</span> <span class="n">ThreadPoolExecutor</span><span class="p">(</span><span class="n">max_workers</span><span class="o">=</span><span class="n">parallelism</span><span class="p">)</span> <span class="k">as</span> <span class="n">executor</span><span class="p">:</span>
             <span class="n">it</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="n">target</span><span class="p">)</span>
             <span class="n">chunk_size</span> <span class="o">=</span> <span class="mi">1</span>
