@@ -96,13 +96,29 @@ such that if you remove any one element from its output the condition is no long
     <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">test_case</span><span class="p">):</span>
         <span class="k">try</span><span class="p">:</span>
+            <span class="c1"># Scan in parallel for the first location where we can delete</span>
+            <span class="c1"># a single element of the list. If no more elements are deletable</span>
+            <span class="c1"># this will run with as much parallelism as we can give it.</span>
             <span class="n">i</span> <span class="o">=</span> <span class="n">find_first</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">test_case</span><span class="p">),</span> <span class="k">lambda</span> <span class="n">j</span><span class="p">:</span> <span class="n">can_delete</span><span class="p">(</span><span class="n">j</span><span class="p">,</span> <span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
         <span class="k">except</span> <span class="n">NotFound</span><span class="p">:</span>
             <span class="k">break</span>
 
         <span class="k">del</span> <span class="n">test_case</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="c1"># Now that we've found an area where there's at least one deletable</span>
+        <span class="c1"># element, we hope that it's part of a large chunk of deletable elements.</span>
+        <span class="c1"># This finds an integer k so that we can delete the next k elements</span>
+        <span class="c1"># and not the next k + 1 elements, running in O(log(k)). This hopefully</span>
+        <span class="c1"># lets us delete a reasonable large chunk at a time.</span>
         <span class="n">k</span> <span class="o">=</span> <span class="n">find_integer</span><span class="p">(</span><span class="k">lambda</span> <span class="n">k</span><span class="p">:</span> <span class="n">i</span> <span class="o">+</span> <span class="n">k</span> <span class="o">&lt;=</span> <span class="nb">len</span><span class="p">(</span><span class="n">test_case</span><span class="p">)</span> <span class="ow">and</span> <span class="n">can_delete</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">i</span> <span class="o">+</span> <span class="n">k</span><span class="p">))</span>
         <span class="k">del</span> <span class="n">test_case</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span><span class="o">+</span><span class="n">k</span><span class="p">]</span>
+
+        <span class="c1"># Because we chose k such that k + 1 elements are not deletable, we know</span>
+        <span class="c1"># that the element left at i (if any, we might have deleted the whole list)</span>
+        <span class="c1"># is now not deletable, so we increment i to skip past it on the next</span>
+        <span class="c1"># iteration. This is purely a performance optimisation, but in the worst</span>
+        <span class="c1"># case might cause us to make twice as many calls to `condition` as we</span>
+        <span class="c1"># need to if we skip it.</span>
+        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
 
     <span class="k">return</span> <span class="n">test_case</span>
 </pre></div>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2023-07-27T13:22:59+01:00</updated>
+  <updated>2023-07-27T13:59:13+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1138,7 +1138,7 @@ some detailed research. I do think at the levels I'm taking it at it's probably 
   <entry>
     <id>https://notebook.drmaciver.com/posts/2023-07-27-13:03.html</id>
     <title>Adaptive parallel test-case reduction</title>
-    <updated>2023-07-27T13:22:59+01:00</updated>
+    <updated>2023-07-27T13:59:13+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Adaptive parallel test-case reduction&lt;/p&gt;
@@ -1183,13 +1183,29 @@ such that if you remove any one element from its output the condition is no long
     &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
     &lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;test_case&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
         &lt;span class="k"&gt;try&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+            &lt;span class="c1"&gt;# Scan in parallel for the first location where we can delete&lt;/span&gt;
+            &lt;span class="c1"&gt;# a single element of the list. If no more elements are deletable&lt;/span&gt;
+            &lt;span class="c1"&gt;# this will run with as much parallelism as we can give it.&lt;/span&gt;
             &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;find_first&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;test_case&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="k"&gt;lambda&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;can_delete&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
         &lt;span class="k"&gt;except&lt;/span&gt; &lt;span class="n"&gt;NotFound&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
             &lt;span class="k"&gt;break&lt;/span&gt;
 
         &lt;span class="k"&gt;del&lt;/span&gt; &lt;span class="n"&gt;test_case&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+        &lt;span class="c1"&gt;# Now that we've found an area where there's at least one deletable&lt;/span&gt;
+        &lt;span class="c1"&gt;# element, we hope that it's part of a large chunk of deletable elements.&lt;/span&gt;
+        &lt;span class="c1"&gt;# This finds an integer k so that we can delete the next k elements&lt;/span&gt;
+        &lt;span class="c1"&gt;# and not the next k + 1 elements, running in O(log(k)). This hopefully&lt;/span&gt;
+        &lt;span class="c1"&gt;# lets us delete a reasonable large chunk at a time.&lt;/span&gt;
         &lt;span class="n"&gt;k&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;find_integer&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;lambda&lt;/span&gt; &lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;k&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;=&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;test_case&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="ow"&gt;and&lt;/span&gt; &lt;span class="n"&gt;can_delete&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
         &lt;span class="k"&gt;del&lt;/span&gt; &lt;span class="n"&gt;test_case&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+
+        &lt;span class="c1"&gt;# Because we chose k such that k + 1 elements are not deletable, we know&lt;/span&gt;
+        &lt;span class="c1"&gt;# that the element left at i (if any, we might have deleted the whole list)&lt;/span&gt;
+        &lt;span class="c1"&gt;# is now not deletable, so we increment i to skip past it on the next&lt;/span&gt;
+        &lt;span class="c1"&gt;# iteration. This is purely a performance optimisation, but in the worst&lt;/span&gt;
+        &lt;span class="c1"&gt;# case might cause us to make twice as many calls to `condition` as we&lt;/span&gt;
+        &lt;span class="c1"&gt;# need to if we skip it.&lt;/span&gt;
+        &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
 
     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;test_case&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
