@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2023-08-25T10:32:00+01:00</updated>
+  <updated>2023-07-27T13:59:13+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,6 +10,118 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2022-07-14-10:44.html</id>
+    <title>How you should have learned mental arithmetic</title>
+    <updated>2022-07-14T10:46:27+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;How you should have learned mental arithmetic&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2022-07-14&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Draft bankruptcy is over, but I got about a quarter of the way into writing this post before I realised that it was going to be much longer than I expected and also that I had no fucking idea why I was writing this post, so this is the point I stopped at.&lt;/p&gt;
+
+
+&lt;p&gt;I had a conversation the other day with a small child and her father, in which I opined that the eight times tables was one of the easy ones because you could just multiply by two three times. &lt;/p&gt;
+
+
+&lt;p&gt;This was apparently confusing. “How would you do 7 times 8 by multiplying by two three times?” “14 28 56, done.” “Huh I wouldn’t have thought of that”.&lt;/p&gt;
+
+
+&lt;p&gt;The father in question is certainly decent at mathematics, although not a mathematician,  so this is probably a relatively common point of confusion.&lt;/p&gt;
+
+
+&lt;p&gt;7 times 8 is pretty easy in general. For example 7 times 7 is 49, so you can just add 7 to that to get 56 (because 6 is 7 - 1). Also really sometimes when multiplying by 8 it’s easier to go the other way and remember that 8 is 10 - 2, so 7 times 8 is 70 - 14, which is 60 - 4, which is 56.&lt;/p&gt;
+
+
+&lt;p&gt;But no, you’re not supposed to do any of that, you’re supposed to just know that 7 times 8 is 56. If you work it out you’re not doing the task of learning your times tables properly. That’s cheating that is.&lt;/p&gt;
+
+
+&lt;h3&gt;Desire lines in the mind&lt;/h3&gt;
+
+
+&lt;p&gt;For developmental reasons it probably does make sense to start kids off with learning their times tables. I’m not sure, I’m not actually very good at teaching small children, but the fact that people don’t then go on to learn how to do mental arithmetic properly is, I think, one of the injustices at the core of how we teach mathematics. Not because mental arithmetic is particularly important, but because it’s one of the easiest places to learn to think about mathematics like a mathematician does - rather than trying to memorise a bunch of information, you see how it all fits together.&lt;/p&gt;
+
+
+&lt;p&gt;I’ve talked about this before in the context of learning ROT13, but I think the non-serious nature of that post hid this somewhat (mental arithmetic is of course very serious). There is a specific technique of learning that works very well for mathematics in particular (but is, I think, general): Rather than trying to memorise the information, you instead learn how to work it out from first principles or other remembered information. This, in turn, will usually allow you to memorise a bunch of information, but it will be the right information - that which you actually use.&lt;/p&gt;
+
+
+&lt;p&gt;The way this works is simple: Being able to work out the information means that you have a reliable feedback loop for learning it, because every time you use it you will access it by the fastest method readily available to you - whether that’s simply remembering it, or working it out from scratch, or skipping steps that you remember the results of… Each time you use it, your access to it will get faster and more fluent, until the things you use most commonly are readily to hand. But even if you don’t memorise it, you’ll be able to get there.&lt;/p&gt;
+
+
+&lt;p&gt;You can think of this approach to memorisation as that of building desire lines. Desire lines are those lines in the grass that you see on parks where people have clearly decided it’s more efficient to walk across the diagonal than follow the paved path the long way round. People build a path by walking it.&lt;/p&gt;
+
+
+&lt;p&gt;In addition, by giving people the ability to build desire lines, you give them the ability to explore. Someone who has learned a large body of information this way has not only learned that information, they’ve learned how to learn new information like it. Memorising your 8 times table by brute force is not easier for having memorised your 7 times table, but the more mental arithmetic you learn to do “properly”, the more you start to understand how numbers work, the more other types of mental arithmetic and related mathematics are accessible to you.&lt;/p&gt;
+
+
+&lt;h3&gt;How to do addition&lt;/h3&gt;
+
+
+&lt;p&gt;I’m now going to teach you arithmetic from scratch. This will start out with me spelling out some things you might find either confusing or painfully obvious. Sorry. It’s important I promise.&lt;/p&gt;
+
+
+&lt;p&gt;If you start from the absolute basics of how mathematicians define addition (of natural numbers. If you don't understand this aside, please ignore this aside), it comes down to the following rules:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;m + 0 = m&lt;/li&gt;
+&lt;li&gt;m + 1 is the next biggest number after m&lt;/li&gt;
+&lt;li&gt;m + (n + 1) = (m + 1) + n&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;Or, in words:&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;If you take any number (which we will call m), and you add zero to it, you get the same number (m) back. So e.g. 7 + 0 is 7.&lt;/li&gt;
+&lt;li&gt;Add 1 is just counting upwards to the next number. So e.g. 2 + 1 is 3, because 3 comes after 2.&lt;/li&gt;
+&lt;li&gt;If you take any number (which we will call m), and you add some number to it that is bigger than 0 (which we will call n + 1, which we can do because there’s at least one rock in it, so it’s just the number before it plus one), then this is the same as adding the number right before the second number (n) to the number right after the first number (m + 1). e.g. 8 + 6 = 9 + 5. We “move” a single object from the second number to the first.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;If you think of numbers as representing counting objects (which you should), you can think of addition as saying “If you have this many objects on the left, and this many objects on the right, how many are in the combined pile?”. I find it’s particularly helpful to think in terms of counting piles of rocks if you want a concrete example. &lt;/p&gt;
+
+
+&lt;p&gt;Our rules combined says that you can count the combined pile by moving rocks from the right pile to the left pile one at a time (which always preserves the number of rocks), and then when the rightmost pile is empty you’ll have all the rocks in the pile on the left.&lt;/p&gt;
+
+
+&lt;p&gt;Or, to see this with numbers, suppose we want to to calculate 9 + 7. We can do this by moving one from the right, one step at a time. So 9 + 7 = 10 + 6 = 11 + 5 = 12 + 4 = 13 + 3 = 14 + 2 = 15 + 1 = 16 + 0 = 16. Done.&lt;/p&gt;
+
+
+&lt;p&gt;Using this method you can now calculate any addition. Great! So easy, right?&lt;/p&gt;
+
+
+&lt;p&gt;I will admit, there are one or two downsides. Mostly, it’s extremely slow if the number on the right is large. So we probably don’t want to use this as our main method of calculation, but nevertheless, it is our starting point, and we now have our first reliable slow method for doing mental arithmetic.&lt;/p&gt;
+
+
+&lt;p&gt;The first thing to notice is that even through we don’t always want to follow it the whole way, it’s often a pretty good tactic to deploy.&lt;/p&gt;
+
+
+&lt;p&gt;For example, what’s 99 + 37? Well, it’s 100 + 36 (moved one from the right to the left), and 100 + 36 is easy it’s just 136.&lt;/p&gt;
+
+
+&lt;p&gt;This leads to the most important thing to understand about how to do mental arithmetic (and mathematics in general): Mental arithmetic is done by figuring out tactics to change your problem into an easier one.&lt;/p&gt;
+
+
+&lt;p&gt;There is a more general version of this tactic, which we can represent as m + (n + k) = (m + k) + n. That is, we if we have our left pile (m) and our right pile (n), we can always take away some number of rocks (k) that is no larger than the pile on the right, and move that to the pile on the left, we’ve now got k more rocks on the left and k fewer rocks on the right. &lt;/p&gt;
+
+
+&lt;p&gt;Often this is useful for making there be more multiples of 10 or other nice numbers to add together. For example, suppose you wanted to figure out 96 + 13. You could do this by noting that 13 = 9 + 4, so 96 + 13 = 96 + (9 + 4) = (96 + 4) + 9 = 109.&lt;/p&gt;
+
+
+&lt;p&gt;Another tactic we could use here that looks very similar is this: We could write this as 96 + 13 = 90 + 6 + 10 + 3 = (90 + 10) + (6 + 3) = 100 + 9 = 109.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2022-07-14-10:44.html" rel="alternate"/>
+  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-08-07-00:51.html</id>
     <title>Notes on the design of a conference scheduler</title>
@@ -1026,7 +1138,7 @@ some detailed research. I do think at the levels I'm taking it at it's probably 
   <entry>
     <id>https://notebook.drmaciver.com/posts/2023-07-27-13:03.html</id>
     <title>Adaptive parallel test-case reduction</title>
-    <updated>2023-07-28T09:05:39+01:00</updated>
+    <updated>2023-07-27T13:59:13+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Adaptive parallel test-case reduction&lt;/p&gt;
@@ -1143,82 +1255,5 @@ such that if you remove any one element from its output the condition is no long
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2023-07-27-13:03.html" rel="alternate"/>
-  </entry>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2023-08-25-10:32.html</id>
-    <title>Why should we act according to reasons?</title>
-    <updated>2023-08-25T10:32:00+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Why should we act according to reasons?&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2023-08-25&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I'm currently doing a close read of J. David Velleman's excellent book "Self to Self". It is interesting, well argued, and built on foundations that I think are wrong in basically every way. This means that it is likely to be weak in areas where my worldview is strong, but also that it's likely to be strong in ways where my worldview is weak. As such it seems worth engaging with seriously. So I'm going to be writing posts in response to specific points in it.&lt;/p&gt;
-
-
-&lt;p&gt;This post is a response to his first chapter, "A Brief Introduction to Kantian Ethics" with a particular focus in the titular question: Why should we act according to reasons?&lt;/p&gt;
-
-
-&lt;p&gt;I want to first provide an account of Velleman's argument, then take apart what I think is a subtle but important error in it, and then build it back up in a way that I think, while weaker in its conclusions, retains many of its positive characteristics while resulting in something with a less Kantian flavour (You may recall I subscribe to a sort of &lt;a href="https://www.drmaciver.com/2019/09/being-an-example-to-others/"&gt;Kant lite&lt;/a&gt; where you must take into account how your actions generalise, but this taking into account falls well short of Kant's universal categorical imperatives).&lt;/p&gt;
-
-
-&lt;h3&gt;Responding to Velleman&lt;/h3&gt;
-
-
-&lt;p&gt;Here is, in a very brief summary, what I think of as a core feature of Velleman's argument (built on, but not identical to, Kant's arguments) that I want to engage with today.&lt;/p&gt;
-
-
-&lt;p&gt;Consider duties. A duty is a practical requirement, imposed by some authority (which could be an entity - such as the US government, God, your peers, etc - or could be an abstract principle such as upholding the truth, care for others, etc). Most duties are &lt;em&gt;escapable&lt;/em&gt;, in the sense that they only exist to the degree that we acknowledge the validity of the authority. We may always ask "Why should I obey this authority?" as a means of escaping the duty - either the answer to this is a duty that does not derive from their authority, or we end up with a circularity where we must be obedient to the authority because we must be obedient to the authority. In order to figure out our absolute moral duties, we must find duties which are &lt;em&gt;inescapable&lt;/em&gt;, in that they do not depend on an authority outside themselves for their validity. A source of such inescapable duties is implicit in the question "Why?" - we treat the answer to this as having some authority. We can thus ask "Why should reasons compel us to act?" (Velleman phrases this as "why should we act for reasons?" which is a subtly different in presentation but much stronger claim that I think his argument doesn't support) and the answer to this question is a reason, which cannot compel us to act unless reasons can always compel us to act. Thus asking "Why should reasons compel us to act?" is self-defeating.
-We can still escape this requirement by not being compelled by reasons at all, but in the absence of that escape we must accept the authority of reasons as self-supporting.&lt;/p&gt;
-
-
-&lt;p&gt;This is perhaps a somewhat unfair summary of Velleman - I've done my best, but I'm genuinely unsure that I have successfully captured what he thinks is important - so here is the core of it from him directly:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;[...] any purported source of practical authority depends on reasons for obeying it – and hence on the authority of reasons. Suppose, then, that we attempted to question the authority of reasons themselves, as we earlier questioned other authorities. Where we previously asked “Why should I act on my desire?” let us now ask “Why should I act for reasons?” Shouldn’t this question open up a route of escape from all requirements?&lt;/p&gt;
-&lt;p&gt;As soon as we ask why we should act for reasons, however, we can hear something odd in our question. To ask “Why should I?” is to demand a reason; and so to ask “Why should I act for reasons?” is to demand a reason for acting for reasons. This demand implicitly concedes the very authority that it purports to question – namely, the authority of reasons. Why would we demand a reason if we didn’t envision acting for it? If we really didn’t feel required to act for reasons, then a reason for doing so certainly wouldn’t help. So there is something self-defeating about asking for a reason to act for reasons.&lt;/p&gt;
-&lt;p&gt;Yet the argument does more than close off one avenue of escape from the requirement to act for reasons. It shows that we are subject to this requirement if we are subject to any requirements at all. The require- ment to act for reasons is the fundamental requirement, from which the authority of all other requirements is derived, since the authority of other requirements just consists in there being reasons for us to obey them. There may be nothing that is required of us; but if anything is required of us, then acting for reasons is required.&lt;/p&gt;
-&lt;p&gt;Hence the foregoing argument, though possibly unable to foreclose escape from the requirement to act for reasons, does succeed in raising the stakes. It shows that we cannot escape the requirement to act for reasons without escaping the force of requirements altogether. Either we think of ourselves as under the requirement to act for reasons, or we think of ourselves as under no requirements at all. And we cannot stand outside both ways of thinking and ask for reasons to enter into one or the other, since to ask for reasons is already to think of ourselves as subject to requirements.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;I like this argument but think it's confused, and in the places where it is confused errors creep in in important ways.&lt;/p&gt;
-
-
-&lt;p&gt;The first source of its confusion is that it is operating under a very anemic notion of authority.&lt;/p&gt;
-
-
-&lt;p&gt;For example, why should I obey the laws of my country in cases where I think they are morally wrong? Let's say drugs. e.g. Suppose I am in a country where marijuana is illegal, a friend is suffering from something for which medical marijuana is a genuinely life-improving drug, and I can easily obtain it for them.
-It is, in this circumstance, perfectly reasonable for me to ask "Why should I obey the authorities?" and to get the answer "Morally speaking, you shouldn't".
-But the actual answer to the question is that the authorities have guns and a willingness to use them to enforce their laws.&lt;/p&gt;
-
-
-&lt;p&gt;Does this mean you shouldn't commit crimes? Well I am not a lawyer etc. etc. but also this is beside the point. The point is not what you &lt;em&gt;should&lt;/em&gt; do, but that this authority is in a particular sense inescapable:
-It doesn't matter whether you acknowledge it, you are still subject to the consequences it imposes.&lt;/p&gt;
-
-
-&lt;p&gt;This is what authority &lt;em&gt;does&lt;/em&gt;. You don't obey authorities primarily because of nice tidy logical reasons for obedience, you obey authorities because they create consequences for your actions based on whether you obey them - they reward actions they regard as good, and punish actions they regard as bad. This is true even when the authority is more abstract and morality focused - e.g. you obey an authority because it causes you to think of yourself as good, or bad.&lt;/p&gt;
-
-
-&lt;p&gt;The counter to this is, of course, that these duties are still escapable. You can escape treating those duties as practical requirements by not caring about those consequences.&lt;/p&gt;
-
-
-&lt;p&gt;To which my counter is: OK. Try it.&lt;/p&gt;
-
-
-&lt;p&gt;The claim &lt;/p&gt;
-
-
-&lt;p&gt;This brings me to my next objection to Velleman's account: I think "inescapable" is a bad criterion because it is much too strong. Many things are escapable in principle but not in practice. I can escape obedience to the authority by not caring about the fact that they will shoot me, but I can't actually do that because I don't want to be shot.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2023-08-25-10:32.html" rel="alternate"/>
   </entry>
 </feed>
