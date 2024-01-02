@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-01-02T12:56:38+00:00</updated>
+  <updated>2024-01-02T13:04:46+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1093,7 +1093,7 @@ Most of them will be short, and will end whenever I feel done with writing them 
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-02-12:56.html</id>
     <title>Is philosophy bad?</title>
-    <updated>2024-01-02T12:56:00+00:00</updated>
+    <updated>2024-01-02T13:04:46+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Is philosophy bad?&lt;/p&gt;
@@ -1176,6 +1176,9 @@ Most of them will be short, and will end whenever I feel done with writing them 
 
 
 &lt;p&gt;This isn't the first time I've tried to write that piece. &lt;a href="https://notebook.drmaciver.com/posts/2022-06-05-14:43.html"&gt;How to use philosophy&lt;/a&gt; is another similarly brief draft bankruptcy piece trying to do much the same thing.&lt;/p&gt;
+
+
+&lt;p&gt;&lt;a href="https://drmaciver.substack.com/p/reading-philosophy-for-the-examples"&gt;Reading Philosophy for the Examples&lt;/a&gt; and &lt;a href="https://drmaciver.substack.com/p/how-to-use-thought-experiments"&gt;How to use thought experiments&lt;/a&gt; maybe capture this better. Perhaps part of the problem is that I've tried to do too much with this topic and it needs something larger if I'm to write the whole thing. Or maybe just many smaller things.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2024-01-02-12:56.html" rel="alternate"/>
