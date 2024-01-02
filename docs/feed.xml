@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-01-02T12:56:17+00:00</updated>
+  <updated>2024-01-02T12:56:38+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,113 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2022-08-07-00:51.html</id>
-    <title>Notes on the design of a conference scheduler</title>
-    <updated>2022-11-02T16:15:57+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Notes on the design of a conference scheduler&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2022-08-07&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;NB: This post is unfinished but it accidentally got added to the index and people keep asking about it, so I decided to publish it as is.&lt;/p&gt;
-
-
-&lt;p&gt;One of my lesser known but surprisingly impactful contributions to the world is the talk &lt;a href="https://www.youtube.com/watch?v=OkusHEBOhmQ"&gt;Easy solutions to hard problems&lt;/a&gt;, which is about mixed integer linear programming (MILP) and in particular about how to use integer linear programming to schedule conferences. Off the back of this, several conferences, including &lt;a href="https://www.emfcamp.org/"&gt;Electromagnetic field&lt;/a&gt; have scheduled their conferences using MILP.&lt;/p&gt;
-
-
-&lt;p&gt;I now think that was a mistake. Sorry.&lt;/p&gt;
-
-
-&lt;p&gt;There are roughly three problems with this approach:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;It's actually really slow. Not as slow as scheduling it by hand maybe, but the EMF scheduler apparently takes most of a day to run.&lt;/li&gt;
-&lt;li&gt;It gives totally opaque error messages when things go wrong.&lt;/li&gt;
-&lt;li&gt;Every time I've attended a conference scheduled this way I'm left with a vague sense that the schedule is just not very good. It's a bit all over the place in a way that I feel like a human scheduler would have done better.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;Set against this, you really &lt;em&gt;do&lt;/em&gt; want a computer in the loop because scheduling things by hand is such a nightmare that this is still preferable for the organisers despite the trade off.&lt;/p&gt;
-
-
-&lt;p&gt;Anyway I was thinking about this recently and realised that there's probably a nicer way to do this.&lt;/p&gt;
-
-
-&lt;p&gt;The basic design is to follow the model from &lt;a href="http://oro.open.ac.uk/3275/4/Can_a_machine_design.pdf"&gt;Can a machine design?&lt;/a&gt; for human-machine collaboration, which is that it is the job of a computer to propose solutions and for the human to correct them. So instead of designing a &lt;em&gt;scheduler&lt;/em&gt; we are effectively designing a &lt;em&gt;schedule editor&lt;/em&gt;. The computer proposes an initial schedule, which is expected to not be especially good, and then maintains the schedule and all its constraints as the human makes edits to it.&lt;/p&gt;
-
-
-&lt;p&gt;This solves the problem of the schedule missing the human touch, because the human can make changes until they're happy with the schedule, and it's the job of the computer to make those changes work. &lt;/p&gt;
-
-
-&lt;p&gt;The UI I'm imagining this is essentially a version of the schedule, in which a user can drag things around and have everything reorder itself to make it work.&lt;/p&gt;
-
-
-&lt;p&gt;The basic operations I'm imagining are:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Lock a talk into the slot it's currently scheduled in, so it will not be moved in future.&lt;/li&gt;
-&lt;li&gt;Move a talk into a new slot, replacing the talk that's currently there. This will either succeed, or the software will say that it's forbidden (because the talk is not allowed into that slot because of e.g. constraints on when the speaker can manage), or that it has to unlock the following talks in order to make it work (with an explanation of why).&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;Many more operations are implementable (e.g. you could easily implement a "Move this talk somewhere else, I don't care where as long as it fits the requirement" operation), these are just the obvious basics. &lt;/p&gt;
-
-
-&lt;p&gt;Implementing the UI for this should be relatively straightforward for anyone who is actually good at UI. I'm not, and I'm not invested enough in this problem to want to pick up the relevant skills. If you're interested in this problem and already good at UI, feel free to drop me a line and talk about collaborating on this, because I pretty much know how all the algorithmic details should work!&lt;/p&gt;
-
-
-&lt;h3&gt;Implementation&lt;/h3&gt;
-
-
-&lt;p&gt;These operations are relatively easy to implement, and the basic algorithmic toolkit for this is to use &lt;a href="https://en.wikipedia.org/wiki/Hall%27s_marriage_theorem"&gt;Hall's marriage theorem&lt;/a&gt;.
-Hall's marriage theorem says that if you have some set of items (talks) you want to put into boxes (slots in the schedule), and each item can only go in some boxes (each talk can only be scheduled in certain slots), and each box can only hold one item (each slot can only have one talk), then either you can find an assignment that works, or you can find some set of items which is strictly larger than the number of boxes that are allowed to hold those items. e.g. there are three slots but four talks that all have to go in one of those three slots.&lt;/p&gt;
-
-
-&lt;p&gt;Hall's marriage theorem is relatively easy to implement an efficient algorithm for if you have access to an implementation of the &lt;a href="https://en.wikipedia.org/wiki/Hopcroft%E2%80%93Karp_algorithm"&gt;Hopcroft-Karp algorithm&lt;/a&gt; (and fortunately &lt;a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.csgraph.maximum_bipartite_matching.html"&gt;scipy has just such an implementation&lt;/a&gt;).
-You use this to find the largest possible assignment of items to boxes. If this assigns every item to a box, great you're done. If not, you can use the unassigned items to construct a &lt;a href="https://en.wikipedia.org/wiki/Hall_violator"&gt;Hall violator&lt;/a&gt; - a set of items that cannot possibly be put into distinct boxes because there aren't enough boxes.&lt;/p&gt;
-
-
-&lt;p&gt;As a side note, one nice thing about this algorithm is that it has the opposite efficiency characteristics to using MILP for this: The more constrained your problem gets, the faster it runs. As a result, it should (I think) be viable to use it the way I need to use it for this design, because we'll mostly want to run it with quite constrained problems.&lt;/p&gt;
-
-
-&lt;p&gt;(You can also use MILP to solve the maximum matching problem and it may under some circumstances me more efficient to do that. This is something that would require experimentation. Certainly using a MILP gets you more flexibility than using Hall's theorem, because it lets you handle things like "these two talks shouldn't clash" natively)&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, it's easy enough to use Hall's marriage theorem for the initial schedule: You just run it on your constraints, and it either gives you a schedule or tells you that you e.g. have too many talks that have to go into a particular day.&lt;/p&gt;
-
-
-&lt;p&gt;Here's how to use it to power what should be a pretty good schedule editor:&lt;/p&gt;
-
-
-&lt;p&gt;You always have a current schedule that you are working on. In response to requests from the user, the scheduler makes (ideally small) edits to the schedule by rearranging sets of talks.&lt;/p&gt;
-
-
-&lt;p&gt;Each talk has an epoch, which is the last time it was moved. The goal is to have the schedule converge to stability, so we always prefer to move talks that are from a more recent epoch. Initially, all talks are given a random distinct epoch. A talk may also be locked (as marked by the user), in which case it will not be moved without the user asking. We will also sometimes temporarily lock talks as part of a rescheduling.&lt;/p&gt;
-
-
-&lt;p&gt;When a user moves a talk to a new slot, the following happens:&lt;/p&gt;
-
-
-&lt;p&gt;First, check if the talk is allowed in its new slot (i.e. it satisfies the constraints as to which rooms, times, etc the talk is allowed in). If not, complain to the user and don't move it.&lt;/p&gt;
-
-
-&lt;p&gt;Second, if the talk that is already there is allowed in the slot you're moving out of, swap the two. Similarly if the slot is empty because you don't have a full schedule, just move the talk there.&lt;/p&gt;
-
-
-&lt;p&gt;Finally, if&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2022-08-07-00:51.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-10-02-06:24.html</id>
     <title>There are a lot of irreducible finite partial orders</title>
@@ -1147,7 +1040,7 @@ such that if you remove any one element from its output the condition is no long
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-02-12:48.html</id>
     <title>January is a daily writing month</title>
-    <updated>2024-01-02T12:56:17+00:00</updated>
+    <updated>2024-01-02T12:56:38+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;January is a daily writing month&lt;/p&gt;
@@ -1196,5 +1089,95 @@ Most of them will be short, and will end whenever I feel done with writing them 
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2024-01-02-12:48.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2024-01-02-12:56.html</id>
+    <title>Is philosophy bad?</title>
+    <updated>2024-01-02T12:56:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Is philosophy bad?&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2024-01-02&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;This is a draft bankruptcy piece. It contains a few interesting things, but I abandoned it because it fundamentally didn't work.&lt;/p&gt;
+
+
+&lt;p&gt;I threatened to write “Contra David Chapman on Philosophy” as a response to David’s repeated insistence that philosophy is bad. This piece isn’t exactly that, but it’s not exactly not that.&lt;/p&gt;
+
+
+&lt;h3&gt;Chavid Dapman on Philosophy&lt;/h3&gt;
+
+
+&lt;p&gt;Allow me to introduce my correspondent for this piece, Chavid Dapman. Chavid is a fictional character created by Claude to approximate David Chapman’s opinions on the subject. Given real world David Chapman’s opinions on AI, this is probably a very irritating thing of me to do. Sorry, David.&lt;/p&gt;
+
+
+&lt;p&gt;I’ve tried to inform Claude when I think Chavid says something that David wouldn’t, but this is an imperfect process. As Claude would put it, “Chavid Dapman is a fictional character created for narrative purposes. His critical opinions on philosophy should not be taken as precisely representative of thinker David Chapman's more nuanced perspectives.”&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, here is Chavid’s opinion on philosophy:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Philosophy is an intellectual tradition that aims to find absolute answers to questions about life, knowledge, ethics, and existence through logic, thought experiments and reasoning. However, after thousands of years, philosophy has failed to deliver definitive answers, especially compared to the progress of science. Logic and thought experiments have clear limits. And philosophy tends to neglect empirical research and interactive empiricism.&lt;/p&gt;
+&lt;p&gt;Yet the deeper issue is that philosophy pursues misguided questions based on false assumptions, such as: What constitutes a good life? What is the meaning of existence? What is human consciousness? The search for abstract absolute answers presumes these are coherent topics, when they are not.&lt;/p&gt;
+&lt;p&gt;Philosophy goes astray in seeking universal essences, rather than understanding experience as an ongoing, embodied process. Contemplating pseudoproblems based on flawed metaphysics cannot elucidate anything. We should reject the search for absolute abstract answers and eternal philosophical truths. Philosophy needs to engage the physical world pragmatically and empirically.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;Editor's note: I ran this by actual David Chapman and he doesn't think it reflects his views at all and is instead a generic and not terribly well thought out critique. I agree. &lt;/p&gt;
+
+
+&lt;h3&gt;I like philosophy&lt;/h3&gt;
+
+
+&lt;p&gt;Let’s just get this out of the way: I like philosophy, and I get a lot out of it. Reading philosophy has been significantly life improving for me, and informed a lot of my thinking. This makes it hard for me to accept a blanket “philosophy is bad” claim when a lot of philosophy is clearly good for me, and I’m writing from that perspective.&lt;/p&gt;
+
+
+&lt;p&gt;There’s also plenty of philosophy I dislike. Frankly, it’s almost impossible to like a thing without this being true, because almost everything has good and bad examples, and also examples that are and aren’t to your tastes.&lt;/p&gt;
+
+
+&lt;p&gt;I think one of the differences between Chavids opinions of philosophy and mine are quite straightforwardly that I tend to think of the examples of philosophy that I like as sufficient evidence that philosophy is good, and Chavid tends to think of the examples of philosophy that he doesn’t like as sufficient evidence that philosophy is bad.&lt;/p&gt;
+
+
+&lt;p&gt;This disagreement is partly what Adam Mastroianni calls a &lt;a href="https://www.experimental-history.com/p/science-is-a-strong-link-problem"&gt;strong vs weak link problem&lt;/a&gt;. Some things are as strong as their weakest link, some as their strongest. With science (in Mastroianni’s example), progress doesn’t really depend on the worst science we’re doing but the best. I think the same is true of philosophy: Although there are many bad (both by my standards and theirs) examples of philosophy, there are also many good examples, and you can get value out of the good examples and mostly ignore the bad ones.&lt;/p&gt;
+
+
+&lt;p&gt;I think Chavid is basically right in saying that “a good life” is a bad abstraction (although I’m sympathetic to what happens to the question when you verb it, which is “How can you live well?” rather than “What is a good life?” - I think this is hard to answer, but worthwhile engaging with), but also this is almost never the sort of philosophy I read.&lt;/p&gt;
+
+
+&lt;p&gt;In contrast, here are two examples of philosophy I’ve got a lot out of:&lt;/p&gt;
+
+
+&lt;p&gt;“Games: Agency as Art” by C Thi Nguyen is a book about games, and what the fact that we play games tells us about humanity, and defending them as a distinctive form of art whose medium is constructing structures of agency. This book isn’t “empirical” in the sense that it gathers a lot of data, but is deeply engaged in the world by basically centring its philosophy on many games Nguyen has played.&lt;/p&gt;
+
+
+&lt;p&gt;“Epistemic Injustice” by Miranda Fricker is a book about ethics that consists of looking at a bunch of examples of things that are bad and saying “these seem to have some sort of shared distinctive character. What is it?”. Many of these examples are fictional, but even those feel like they connect to plausible shared experiences.&lt;/p&gt;
+
+
+&lt;p&gt;These are examples for me of the sort of thing philosophy really shines at: Pointing at something specific and going “There’s something interesting here. What is it?”. They don’t go astray into big abstract questions, but they use the same sort of methods that philosophers tend to engage with big abstract questions on and focus them on something specific and try to clarify our engagement with them. &lt;/p&gt;
+
+
+&lt;h3&gt;Where was this going?&lt;/h3&gt;
+
+
+&lt;p&gt;That was the point at which I abandoned this. I would still like to write a pro philosophy piece, but I think arguing against David Chapman's views on it is the wrong way to do it.&lt;/p&gt;
+
+
+&lt;p&gt;I like Joe Carlsmith's &lt;a href="https://joecarlsmith.com/2023/02/17/seeing-more-whole"&gt;Seeing More Whole&lt;/a&gt; viewpoint, which is (in very brief summary) that philosophy is about using logical reasoning to discover what sorts of person it is possible to be. This seems an important viewpoint to me.&lt;/p&gt;
+
+
+&lt;p&gt;I've previously ha-ha-only-serious joked that the fundamental philosophical question is "That's weird, right? You get that that's weird?". I think the big thing that I get out of good philosophy is that it forces you to actually look at the details of life and how it works, rather than implicitly skipping over the bits that don't make sense.&lt;/p&gt;
+
+
+&lt;p&gt;This isn't the first time I've tried to write that piece. &lt;a href="https://notebook.drmaciver.com/posts/2022-06-05-14:43.html"&gt;How to use philosophy&lt;/a&gt; is another similarly brief draft bankruptcy piece trying to do much the same thing.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2024-01-02-12:56.html" rel="alternate"/>
   </entry>
 </feed>
