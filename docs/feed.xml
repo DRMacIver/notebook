@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-01-03T12:09:16+00:00</updated>
+  <updated>2024-01-03T12:27:23+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1059,7 +1059,7 @@ Most of them will be short, and will end whenever I feel done with writing them 
     <id>https://notebook.drmaciver.com/posts/2024-01-03-10:13.html</id>
     <title>Some Philosophy of
 Mathematics</title>
-    <updated>2024-01-03T12:09:16+00:00</updated>
+    <updated>2024-01-03T12:27:23+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Some Philosophy of
@@ -1087,10 +1087,10 @@ generality. I’m trying to convey the sense of what mathematics
 &lt;label class="margin-toggle sidenote-number" for="fn1"&gt;
 &lt;/label&gt;
 &lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;
-&lt;span&gt;&lt;p&gt;Especially modernish mathematics. I think most of what
+&lt;span class="sidenote"&gt;Especially modernish mathematics. I think most of what
 I’m saying works as a description of historical mathematics, but it
 certainly wouldn’t have been the way people thought about it prior to
-some time in the 20th century.&lt;/p&gt;&lt;/span&gt;
+some time in the 20th century.&lt;/span&gt;
  is typically like rather than
 attempting to come up with a grand unifying theory of mathematical
 practice.&lt;/p&gt;
@@ -1102,7 +1102,7 @@ explaining this is that the way we typically
 &lt;label class="margin-toggle sidenote-number" for="fn2"&gt;
 &lt;/label&gt;
 &lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;
-&lt;span&gt;&lt;p&gt;I don’t know how reliable my sense of how we typically
+&lt;span class="sidenote"&gt;I don’t know how reliable my sense of how we typically
 present axioms is and was worried this might be a&lt;a href="https://www.lisamcnulty.co.uk/essays/phantom-opinions"&gt;&lt;/a&gt;&lt;a href="https://www.lisamcnulty.co.uk/essays/phantom-opinions"&gt;&lt;em&gt;phantom
 opinion&lt;/em&gt;&lt;/a&gt;, so I checked and it’s not. I did some casual googling,
 checked Wikipedia, and asked ChatGPT which is usually a pretty good
@@ -1111,7 +1111,7 @@ opinion on things. I also&lt;a href="https://twitter.com/DRMacIver/status/171381
 some polling on Twitter&lt;/em&gt;&lt;/a&gt; and I think most of the answers are
 confusing in the relevant way. I think that my view is probably
 relatively typical among working mathematicians, but not of how we talk
-about mathematics to non-mathematicians.&lt;/p&gt;&lt;/span&gt;
+about mathematics to non-mathematicians.&lt;/span&gt;
 
 present axioms philosophically is unhelpful for understanding what’s
 going on in mathematics.&lt;/p&gt;
@@ -1131,9 +1131,9 @@ universe that we have no way to prove but wholeheartedly believe
 &lt;label class="margin-toggle sidenote-number" for="fn3"&gt;
 &lt;/label&gt;
 &lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;
-&lt;span&gt;&lt;p&gt;This is one potential source of axioms of course, as the
+&lt;span class="sidenote"&gt;This is one potential source of axioms of course, as the
 universe is one of the things we want to reason about, but it is not
-what axioms &lt;em&gt;are&lt;/em&gt;.&lt;/p&gt;&lt;/span&gt;
+what axioms &lt;em&gt;are&lt;/em&gt;.&lt;/span&gt;
 , they are taken to be true in the
 sense that they represent defining properties of the class of thing we
 are interested in talking about.&lt;/p&gt;
@@ -1157,8 +1157,8 @@ wrong?” or “How do you &lt;em&gt;know&lt;/em&gt; your axioms are true?”
 &lt;label class="margin-toggle sidenote-number" for="fn4"&gt;
 &lt;/label&gt;
 &lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;
-&lt;span&gt;&lt;p&gt;These questions are not meaningless or bad necessarily,
-but they’re usually asked in the wrong place.&lt;/p&gt;&lt;/span&gt;
+&lt;span class="sidenote"&gt;These questions are not meaningless or bad necessarily,
+but they’re usually asked in the wrong place.&lt;/span&gt;
 . With axioms as picking out objects
 of interest, these problems go away - you can argue about whether the
 objects in question are interesting or whether any examples of them
@@ -1186,10 +1186,10 @@ Postulate&lt;/a&gt;:
 &lt;label class="margin-toggle sidenote-number" for="fn5"&gt;
 &lt;/label&gt;
 &lt;input class="margin-toggle" id="fn5" type="checkbox"/&gt;
-&lt;span&gt;&lt;p&gt;Note: This is all somewhat ahistorical and simplified
+&lt;span class="sidenote"&gt;Note: This is all somewhat ahistorical and simplified
 for illustrative purposes. Euclid’s account of geometry wasn’t fully
 axiomatic, and the version of the parallel postulate stated is not
-Euclid’s original and is only equivalent to it given the other axioms.&lt;/p&gt;&lt;/span&gt;
+Euclid’s original and is only equivalent to it given the other axioms.&lt;/span&gt;
 &lt;/p&gt;
 
 
@@ -1249,8 +1249,8 @@ this notion of axiom is useful.&lt;/p&gt;
 &lt;label class="margin-toggle sidenote-number" for="fn6"&gt;
 &lt;/label&gt;
 &lt;input class="margin-toggle" id="fn6" type="checkbox"/&gt;
-&lt;span&gt;&lt;p&gt;Slightly strawman versions of these positions, but I
-think morally accurate.&lt;/p&gt;&lt;/span&gt;
+&lt;span class="sidenote"&gt;Slightly strawman versions of these positions, but I
+think morally accurate.&lt;/span&gt;
  conceptions of
 mathematical foundations:&lt;/p&gt;
 
@@ -1292,7 +1292,7 @@ should be like.
 &lt;label class="margin-toggle sidenote-number" for="fn7"&gt;
 &lt;/label&gt;
 &lt;input class="margin-toggle" id="fn7" type="checkbox"/&gt;
-&lt;span&gt;&lt;p&gt;In this view, mathematics is a ritual practice in the
+&lt;span class="sidenote"&gt;In this view, mathematics is a ritual practice in the
 sense of Seligman et al’s “Ritual and its Consequences”. It is the
 creation of a &lt;em&gt;subjunctive world&lt;/em&gt; in which certain rules and
 claims are treated as inviolable properties of the ritual space, because
@@ -1301,7 +1301,7 @@ non-ritual consequences. e.g. politeness norms are viewed as a ritual in
 this sense, because maintaining them allows for civil interactions which
 everyone enjoys. In practice they are not inviolable, but if everyone
 treats them as such they are not violated and thus you get to operate in
-a world where you can trust them as if they were inviolable.&lt;/p&gt;&lt;/span&gt;
+a world where you can trust them as if they were inviolable.&lt;/span&gt;
 &lt;/p&gt;
 
 
@@ -1314,10 +1314,10 @@ world.
 &lt;label class="margin-toggle sidenote-number" for="fn8"&gt;
 &lt;/label&gt;
 &lt;input class="margin-toggle" id="fn8" type="checkbox"/&gt;
-&lt;span&gt;&lt;p&gt;This is a nontrivial constraint on a hypothetical world.
+&lt;span class="sidenote"&gt;This is a nontrivial constraint on a hypothetical world.
 e.g. fairy tales have a logic of their own, but it is not a simple if A
 then B sort of logical reasoning you can count on. The realm in which
-mathematical objects exist is posited to be one that makes sense.&lt;/p&gt;&lt;/span&gt;
+mathematical objects exist is posited to be one that makes sense.&lt;/span&gt;
 &lt;/p&gt;
 
 
@@ -1344,9 +1344,9 @@ blocks of our mathematical world
 &lt;label class="margin-toggle sidenote-number" for="fn9"&gt;
 &lt;/label&gt;
 &lt;input class="margin-toggle" id="fn9" type="checkbox"/&gt;
-&lt;span&gt;&lt;p&gt;Which we want to do because every primitive mathematical
+&lt;span class="sidenote"&gt;Which we want to do because every primitive mathematical
 object is a sort of leap of faith as to whether the rules actually make
-sense.&lt;/p&gt;&lt;/span&gt;
+sense.&lt;/span&gt;
 .&lt;/p&gt;
 
 
@@ -1357,11 +1357,11 @@ objects that we just assume exist
 &lt;label class="margin-toggle sidenote-number" for="fn10"&gt;
 &lt;/label&gt;
 &lt;input class="margin-toggle" id="fn10" type="checkbox"/&gt;
-&lt;span&gt;&lt;p&gt;In fact, in modern (i.e. dating from the early 20th
+&lt;span class="sidenote"&gt;In fact, in modern (i.e. dating from the early 20th
 century) we construct these too out of other mathematical objects - sets
 - but you can do the mathematics of numbers without doing the
 mathematics of sets, and numbers are in some sense “more basic” to
-mathematics.&lt;/p&gt;&lt;/span&gt;
+mathematics.&lt;/span&gt;
  in our mathematical
 world, according to the following rules for constructing them:&lt;/p&gt;
 
@@ -1398,14 +1398,14 @@ problem at all.
 &lt;label class="margin-toggle sidenote-number" for="fn11"&gt;
 &lt;/label&gt;
 &lt;input class="margin-toggle" id="fn11" type="checkbox"/&gt;
-&lt;span&gt;&lt;p&gt;And there are sometimes reasons to, even if you only
+&lt;span class="sidenote"&gt;And there are sometimes reasons to, even if you only
 care about real world countable quantities! Sometimes you want to prove
 a mathematical result and it requires you to e.g. look at all the
 subsets of some set of a reasonable size. Although 1,000,000 is a
 perfectly reasonable number, 21,000,000 is again more than the atoms of
 the universe. From a mathematical point of view, proving results that
 use that number are completely legitimate, even if it has no physical
-analogue.&lt;/p&gt;&lt;/span&gt;
+analogue.&lt;/span&gt;
 &lt;/p&gt;
 
 
@@ -1414,7 +1414,7 @@ us to avoid concerns about infinity
 &lt;label class="margin-toggle sidenote-number" for="fn12"&gt;
 &lt;/label&gt;
 &lt;input class="margin-toggle" id="fn12" type="checkbox"/&gt;
-&lt;span&gt;&lt;p&gt;And concern ourselves with the merely very large.&lt;/p&gt;&lt;/span&gt;
+&lt;span class="sidenote"&gt;And concern ourselves with the merely very large.&lt;/span&gt;
  is the mathematical
 objects corresponding to &lt;em&gt;game states&lt;/em&gt;.&lt;/p&gt;
 
@@ -1427,9 +1427,9 @@ point of view of a game of chess, you have not made a change
 &lt;label class="margin-toggle sidenote-number" for="fn13"&gt;
 &lt;/label&gt;
 &lt;input class="margin-toggle" id="fn13" type="checkbox"/&gt;
-&lt;span&gt;&lt;p&gt;In tournament rules you may have committed yourself to
+&lt;span class="sidenote"&gt;In tournament rules you may have committed yourself to
 moving this piece, but the point remains: If you moved this piece to
-that square prior to nudging it, that makes no difference.&lt;/p&gt;&lt;/span&gt;
+that square prior to nudging it, that makes no difference.&lt;/span&gt;
 , because all that matters is which
 square the piece is in, not exactly where it is.&lt;/p&gt;
 
@@ -1469,9 +1469,9 @@ means that this is not a game of chess.
 &lt;label class="margin-toggle sidenote-number" for="fn14"&gt;
 &lt;/label&gt;
 &lt;input class="margin-toggle" id="fn14" type="checkbox"/&gt;
-&lt;span&gt;&lt;p&gt;Some games do explicitly allow cheating as part of the
+&lt;span class="sidenote"&gt;Some games do explicitly allow cheating as part of the
 game, but that doesn’t change the basic point, it’s just a more
-complicated ruleset.&lt;/p&gt;&lt;/span&gt;
+complicated ruleset.&lt;/span&gt;
 &lt;/p&gt;
 
 
@@ -1504,9 +1504,9 @@ chess positions to reach.
 &lt;label class="margin-toggle sidenote-number" for="fn15"&gt;
 &lt;/label&gt;
 &lt;input class="margin-toggle" id="fn15" type="checkbox"/&gt;
-&lt;span&gt;&lt;p&gt;Actually much less than that, because not all of those
+&lt;span class="sidenote"&gt;Actually much less than that, because not all of those
 chess positions are in fact possible, but even a 100-order of magnitude
-reduction makes this an impossibly large number of states.&lt;/p&gt;&lt;/span&gt;
+reduction makes this an impossibly large number of states.&lt;/span&gt;
  While in theory this
 is a finite number with a definite answer, there’s no guarantee we can
 calculate it.&lt;/p&gt;&lt;/li&gt;
