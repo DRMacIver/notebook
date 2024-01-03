@@ -25,6 +25,7 @@ import random
 from prompt_toolkit.shortcuts import radiolist_dialog
 import csv
 from tqdm import tqdm
+from copy import copy
 
 _DATABASE = None
 
@@ -874,6 +875,7 @@ class MathJaxAlignExtension(markdown.Extension):
         md.inlinePatterns.add("del", SimpleTagPattern(DEL_RE, "del"), ">not_strong")
 
 
+@cached
 def md(text, use_pandoc=True):
     if use_pandoc:
         return subprocess.check_output([
@@ -926,6 +928,8 @@ def mine(url):
 
 def ignore_url(url):
     parsed = urllib.parse.urlparse(url)
+    if parsed.scheme not in ('http', 'https'):
+        return True
     if parsed.path == "/" and mine(url):
         return True
     if parsed.netloc in ("twitter.com", "www.twitter.com"):
@@ -1039,6 +1043,58 @@ def template_cache_key():
     return __template_cache_key
 
 
+SIDENOTE_TEMPLATE = """
+<label for="%(footnotename)s"
+       class="margin-toggle sidenote-number">
+</label>
+<input type="checkbox"
+       id="%(footnotename)s"
+       class="margin-toggle"/>
+<span class=sidenote></span>
+"""
+
+BREAK = BeautifulSoup('<br>', 'html.parser')
+
+
+def sidenotify(soup):
+    footnotes = {
+        fn['id']: fn.contents
+        for fn_section in soup.select("section.footnotes")
+        for child in fn_section.extract().children
+        if child.name == 'ol'
+        for fn in child.children
+        if fn.name == 'li'
+    }
+
+    for k, fn in list(footnotes.items()):
+        first_p = True
+        for elt in fn:
+            for back in elt.select("a.footnote-back"):
+                back.decompose()
+
+        new_contents = []
+        for elt in fn:
+            if elt.name == 'p':
+                if not first_p:
+                    new_contents.extend(copy(BREAK))
+                first_p = False
+
+                new_contents.extend(elt.contents)
+            else:
+                new_contents.append(elt)
+        footnotes[k] = new_contents
+
+    for fn_ref in soup.select("a.footnote-ref"):
+        if fn_ref['href'].startswith('#'):
+            fn_id = fn_ref['href'][1:]
+            if fn_id in footnotes:
+                new_html = BeautifulSoup(SIDENOTE_TEMPLATE % {'footnotename': fn_id}, 'html.parser')
+                span, = new_html.select('span')
+                span.contents = footnotes[fn_id]
+                fn_ref.replace_with(new_html)
+
+
+
 @cached
 def post_html(_unused_key, name, source_text):
     source_html = md(source_text)
@@ -1055,6 +1111,8 @@ def post_html(_unused_key, name, source_text):
     for d in [3, 2]:
         for f in soup.findAll("h%d" % (d,)):
             f.name = "h%d" % (d + 1,)
+
+    sidenotify(soup)
 
     date = datetime.strptime(name, POST_DATE_FORMAT)
     post_template = TEMPLATE_LOOKUP.get_template("post.html")
