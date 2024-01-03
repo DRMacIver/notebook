@@ -84,12 +84,34 @@ overly ambitious project that I lost interest in finishing.</p>
 pandoc, so probably a whole bunch of things will break.</p>
 <p>I’m going to be making a few sweeping generalisations about
 philosophy of mathematics. I’m sure some of them don’t hold in complete
-generality. I’m trying to convey the sense of what mathematics<a class="footnote-ref" href="#fn1" id="fnref1" role="doc-noteref"><sup>1</sup></a> is typically like rather than
+generality. I’m trying to convey the sense of what mathematics
+<label class="margin-toggle sidenote-number" for="fn1">
+</label>
+<input class="margin-toggle" id="fn1" type="checkbox"/>
+<span><p>Especially modernish mathematics. I think most of what
+I’m saying works as a description of historical mathematics, but it
+certainly wouldn’t have been the way people thought about it prior to
+some time in the 20th century.</p></span>
+ is typically like rather than
 attempting to come up with a grand unifying theory of mathematical
 practice.</p>
 <p>This piece comes out of trying to explain a bit about mathematical
 incompleteness to a philosopher and realising that the core problem in
-explaining this is that the way we typically<a class="footnote-ref" href="#fn2" id="fnref2" role="doc-noteref"><sup>2</sup></a>
+explaining this is that the way we typically
+<label class="margin-toggle sidenote-number" for="fn2">
+</label>
+<input class="margin-toggle" id="fn2" type="checkbox"/>
+<span><p>I don’t know how reliable my sense of how we typically
+present axioms is and was worried this might be a<a href="https://www.lisamcnulty.co.uk/essays/phantom-opinions"></a><a href="https://www.lisamcnulty.co.uk/essays/phantom-opinions"><em>phantom
+opinion</em></a>, so I checked and it’s not. I did some casual googling,
+checked Wikipedia, and asked ChatGPT which is usually a pretty good
+representation of the sort of the typical but oversimplified vox populi
+opinion on things. I also<a href="https://twitter.com/DRMacIver/status/1713814331224170566"></a><a href="https://twitter.com/DRMacIver/status/1713814331224170566"><em>did
+some polling on Twitter</em></a> and I think most of the answers are
+confusing in the relevant way. I think that my view is probably
+relatively typical among working mathematicians, but not of how we talk
+about mathematics to non-mathematicians.</p></span>
+
 present axioms philosophically is unhelpful for understanding what’s
 going on in mathematics.</p>
 <p>So, let’s fix this.</p>
@@ -98,7 +120,14 @@ going on in mathematics.</p>
 take to be true in the sense that “a bachelor is an unmarried man” or “a
 bishop moves any number of vacant squares diagonally”. They are not
 taken to be true in the sense that they represent deep truths about the
-universe that we have no way to prove but wholeheartedly believe<a class="footnote-ref" href="#fn3" id="fnref3" role="doc-noteref"><sup>3</sup></a>, they are taken to be true in the
+universe that we have no way to prove but wholeheartedly believe
+<label class="margin-toggle sidenote-number" for="fn3">
+</label>
+<input class="margin-toggle" id="fn3" type="checkbox"/>
+<span><p>This is one potential source of axioms of course, as the
+universe is one of the things we want to reason about, but it is not
+what axioms <em>are</em>.</p></span>
+, they are taken to be true in the
 sense that they represent defining properties of the class of thing we
 are interested in talking about.</p>
 <p>For this to make sense, we need to realise that mathematics isn’t
@@ -113,7 +142,13 @@ about.</p>
 <p>In contrast, most people think of axioms as things that are “self
 evidently true” or, slightly more accurately, “assumptions”, but this
 immediately invites the question “But what if your assumptions are
-wrong?” or “How do you <em>know</em> your axioms are true?”<a class="footnote-ref" href="#fn4" id="fnref4" role="doc-noteref"><sup>4</sup></a>. With axioms as picking out objects
+wrong?” or “How do you <em>know</em> your axioms are true?”
+<label class="margin-toggle sidenote-number" for="fn4">
+</label>
+<input class="margin-toggle" id="fn4" type="checkbox"/>
+<span><p>These questions are not meaningless or bad necessarily,
+but they’re usually asked in the wrong place.</p></span>
+. With axioms as picking out objects
 of interest, these problems go away - you can argue about whether the
 objects in question are interesting or whether any examples of them
 exist (“exist” is complicated. More on that later), but not whether the
@@ -131,8 +166,16 @@ incompatible, they’re just about different games.</p>
 axioms of geometry. Simplified version: Euclid came up with a set of
 axioms for geometry, describing how points, lines, and circles worked.
 There were a bunch of perfectly sensible axioms, and then there was the
-rather awkward<a href="https://en.wikipedia.org/wiki/Parallel_postulate"></a><a href="https://en.wikipedia.org/wiki/Parallel_postulate"><em>Parallel
-Postulate</em></a>:<a class="footnote-ref" href="#fn5" id="fnref5" role="doc-noteref"><sup>5</sup></a></p>
+rather awkward <a href="https://en.wikipedia.org/wiki/Parallel_postulate">Parallel
+Postulate</a>:
+<label class="margin-toggle sidenote-number" for="fn5">
+</label>
+<input class="margin-toggle" id="fn5" type="checkbox"/>
+<span><p>Note: This is all somewhat ahistorical and simplified
+for illustrative purposes. Euclid’s account of geometry wasn’t fully
+axiomatic, and the version of the parallel postulate stated is not
+Euclid’s original and is only equivalent to it given the other axioms.</p></span>
+</p>
 <blockquote>
 <p>In a plane, given a line and a point not on it, at most one line
 parallel to the given line can be drawn through the point.</p>
@@ -169,7 +212,13 @@ important point of this conception of axioms: It’s actually slightly
 agnostic to foundational questions like this. As long as there is
 something called a mathematical object and you can do proofs about it,
 this notion of axiom is useful.</p>
-<p>In particular, consider two<a class="footnote-ref" href="#fn6" id="fnref6" role="doc-noteref"><sup>6</sup></a> conceptions of
+<p>In particular, consider two
+<label class="margin-toggle sidenote-number" for="fn6">
+</label>
+<input class="margin-toggle" id="fn6" type="checkbox"/>
+<span><p>Slightly strawman versions of these positions, but I
+think morally accurate.</p></span>
+ conceptions of
 mathematical foundations:</p>
 <ol type="1">
 <li><p>Mathematics is reasoning about real entities that exist in some
@@ -196,13 +245,35 @@ about foundations, mathematicians in practice behave more like
 platonists: Regardless of whether mathematical objects “actually exist”,
 mathematics is done by behaving <em>as if</em> mathematical objects
 exist, and proceeding from that starting point to reason about what they
-should be like.<a class="footnote-ref" href="#fn7" id="fnref7" role="doc-noteref"><sup>7</sup></a></p>
+should be like.
+<label class="margin-toggle sidenote-number" for="fn7">
+</label>
+<input class="margin-toggle" id="fn7" type="checkbox"/>
+<span><p>In this view, mathematics is a ritual practice in the
+sense of Seligman et al’s “Ritual and its Consequences”. It is the
+creation of a <em>subjunctive world</em> in which certain rules and
+claims are treated as inviolable properties of the ritual space, because
+doing so allows the ritual to occur, which is desirable for its
+non-ritual consequences. e.g. politeness norms are viewed as a ritual in
+this sense, because maintaining them allows for civil interactions which
+everyone enjoys. In practice they are not inviolable, but if everyone
+treats them as such they are not violated and thus you get to operate in
+a world where you can trust them as if they were inviolable.</p></span>
+</p>
 <p>I sometimes joke that the formalists are right that mathematics is a
 game, but it’s not a purely symbolic one, it’s an RPG set in the
 Platonic realm. We are reasoning about some world that we agree to
 behave as if it existed, contained certain objects, and was subject to
 logical reasoning of the sort that we would expect to hold in the real
-world.<a class="footnote-ref" href="#fn8" id="fnref8" role="doc-noteref"><sup>8</sup></a></p>
+world.
+<label class="margin-toggle sidenote-number" for="fn8">
+</label>
+<input class="margin-toggle" id="fn8" type="checkbox"/>
+<span><p>This is a nontrivial constraint on a hypothetical world.
+e.g. fairy tales have a logic of their own, but it is not a simple if A
+then B sort of logical reasoning you can count on. The realm in which
+mathematical objects exist is posited to be one that makes sense.</p></span>
+</p>
 <p>This still leaves us to ask: What sort of mathematical objects do we
 posit exist? Fictional worlds are very different depending on the world
 building you’ve done for them.</p>
@@ -216,11 +287,27 @@ something in the physical world.</p></li>
 doing them for some purpose, and that purpose is often to represent
 something that in some way looks like the real world. This helps us
 avoid positing too many “primitive” mathematical objects - the building
-blocks of our mathematical world<a class="footnote-ref" href="#fn9" id="fnref9" role="doc-noteref"><sup>9</sup></a>.</p>
+blocks of our mathematical world
+<label class="margin-toggle sidenote-number" for="fn9">
+</label>
+<input class="margin-toggle" id="fn9" type="checkbox"/>
+<span><p>Which we want to do because every primitive mathematical
+object is a sort of leap of faith as to whether the rules actually make
+sense.</p></span>
+.</p>
 <p>The classic example of something which is purely built as an
 abstracted and generalised version of something in the physical world is
 a natural (counting) number. The numbers 0, 1, 2, … are mathematical
-objects that we just assume exist<a class="footnote-ref" href="#fn10" id="fnref10" role="doc-noteref"><sup>10</sup></a> in our mathematical
+objects that we just assume exist
+<label class="margin-toggle sidenote-number" for="fn10">
+</label>
+<input class="margin-toggle" id="fn10" type="checkbox"/>
+<span><p>In fact, in modern (i.e. dating from the early 20th
+century) we construct these too out of other mathematical objects - sets
+- but you can do the mathematics of numbers without doing the
+mathematics of sets, and numbers are in some sense “more basic” to
+mathematics.</p></span>
+ in our mathematical
 world, according to the following rules for constructing them:</p>
 <ol type="1">
 <li><p>There is a number 0.</p></li>
@@ -244,15 +331,39 @@ that if n exists then so does 10n. But that means that 10 exists, 100
 exists, 1,000,000 exists… 10<sup>10000000000 </sup>also exists, which is
 vastly more things to count than there are atoms in the universe. In the
 real world, you can’t count that high. In the mathematical world, no
-problem at all.<a class="footnote-ref" href="#fn11" id="fnref11" role="doc-noteref"><sup>11</sup></a></p>
+problem at all.
+<label class="margin-toggle sidenote-number" for="fn11">
+</label>
+<input class="margin-toggle" id="fn11" type="checkbox"/>
+<span><p>And there are sometimes reasons to, even if you only
+care about real world countable quantities! Sometimes you want to prove
+a mathematical result and it requires you to e.g. look at all the
+subsets of some set of a reasonable size. Although 1,000,000 is a
+perfectly reasonable number, 21,000,000 is again more than the atoms of
+the universe. From a mathematical point of view, proving results that
+use that number are completely legitimate, even if it has no physical
+analogue.</p></span>
+</p>
 <p>Another, more concrete, example of a mathematical object that allows
-us to avoid concerns about infinity<a class="footnote-ref" href="#fn12" id="fnref12" role="doc-noteref"><sup>12</sup></a> is the mathematical
+us to avoid concerns about infinity
+<label class="margin-toggle sidenote-number" for="fn12">
+</label>
+<input class="margin-toggle" id="fn12" type="checkbox"/>
+<span><p>And concern ourselves with the merely very large.</p></span>
+ is the mathematical
 objects corresponding to <em>game states</em>.</p>
 <p>Consider a game of chess, with the pieces on the board somewhere.
 Suppose you nudge a piece slightly, keeping it in the same square but
 just shifting it slightly to the left. In one sense, you’ve changed the
 state of the board - a piece is in a different location. But, from the
-point of view of a game of chess, you have not made a change<a class="footnote-ref" href="#fn13" id="fnref13" role="doc-noteref"><sup>13</sup></a>, because all that matters is which
+point of view of a game of chess, you have not made a change
+<label class="margin-toggle sidenote-number" for="fn13">
+</label>
+<input class="margin-toggle" id="fn13" type="checkbox"/>
+<span><p>In tournament rules you may have committed yourself to
+moving this piece, but the point remains: If you moved this piece to
+that square prior to nudging it, that makes no difference.</p></span>
+, because all that matters is which
 square the piece is in, not exactly where it is.</p>
 <p>Similarly, if you were to take another chess board and set and place
 the pieces from that set in the same squares as they were in the
@@ -279,7 +390,14 @@ throw it across the room, you can steal their pawn while they’re not
 looking, nothing stops you from doing these things, except the fact that
 in doing them you are no longer playing chess. The rules of chess exist
 precisely in order to enable you to play chess, and violating the rules
-means that this is not a game of chess.<a class="footnote-ref" href="#fn14" id="fnref14" role="doc-noteref"><sup>14</sup></a></p>
+means that this is not a game of chess.
+<label class="margin-toggle sidenote-number" for="fn14">
+</label>
+<input class="margin-toggle" id="fn14" type="checkbox"/>
+<span><p>Some games do explicitly allow cheating as part of the
+game, but that doesn’t change the basic point, it’s just a more
+complicated ruleset.</p></span>
+</p>
 <p>These abstract chess states and the rules for moving between them are
 mathematical objects that exist in the same sort of “mathematical realm”
 as numbers. You can also do mathematics to them.</p>
@@ -299,7 +417,14 @@ relevant to or part of the mathematics.</p></li>
 <li><p>It has the same sort of unboundedness problem that counting
 numbers do. This question actually does have a definite answer, but the
 definite answer might require considering 2<sup>2048 </sup>different
-chess positions to reach.<a class="footnote-ref" href="#fn15" id="fnref15" role="doc-noteref"><sup>15</sup></a> While in theory this
+chess positions to reach.
+<label class="margin-toggle sidenote-number" for="fn15">
+</label>
+<input class="margin-toggle" id="fn15" type="checkbox"/>
+<span><p>Actually much less than that, because not all of those
+chess positions are in fact possible, but even a 100-order of magnitude
+reduction makes this an impossibly large number of states.</p></span>
+ While in theory this
 is a finite number with a definite answer, there’s no guarantee we can
 calculate it.</p></li>
 </ol>
@@ -340,76 +465,7 @@ really clear goal to it. This was one of those times.</p>
 <p>I’d like a solution to this problem, but I’m not sure there is a
 solution other than to accept my own mortality and finite energy
 reserves and not worry so much about other people being wrong.</p>
-<section class="footnotes footnotes-end-of-document" id="footnotes" role="doc-endnotes">
-<hr/>
-<ol>
-<li id="fn1"><p>Especially modernish mathematics. I think most of what
-I’m saying works as a description of historical mathematics, but it
-certainly wouldn’t have been the way people thought about it prior to
-some time in the 20th century.<a class="footnote-back" href="#fnref1" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>I don’t know how reliable my sense of how we typically
-present axioms is and was worried this might be a<a href="https://www.lisamcnulty.co.uk/essays/phantom-opinions"></a><a href="https://www.lisamcnulty.co.uk/essays/phantom-opinions"><em>phantom
-opinion</em></a>, so I checked and it’s not. I did some casual googling,
-checked Wikipedia, and asked ChatGPT which is usually a pretty good
-representation of the sort of the typical but oversimplified vox populi
-opinion on things. I also<a href="https://twitter.com/DRMacIver/status/1713814331224170566"></a><a href="https://twitter.com/DRMacIver/status/1713814331224170566"><em>did
-some polling on Twitter</em></a> and I think most of the answers are
-confusing in the relevant way. I think that my view is probably
-relatively typical among working mathematicians, but not of how we talk
-about mathematics to non-mathematicians.<a class="footnote-back" href="#fnref2" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>This is one potential source of axioms of course, as the
-universe is one of the things we want to reason about, but it is not
-what axioms <em>are</em>.<a class="footnote-back" href="#fnref3" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p>These questions are not meaningless or bad necessarily,
-but they’re usually asked in the wrong place.<a class="footnote-back" href="#fnref4" role="doc-backlink">↩︎</a></p></li>
-<li id="fn5"><p>Note: This is all somewhat ahistorical and simplified
-for illustrative purposes. Euclid’s account of geometry wasn’t fully
-axiomatic, and the version of the parallel postulate stated is not
-Euclid’s original and is only equivalent to it given the other axioms.<a class="footnote-back" href="#fnref5" role="doc-backlink">↩︎</a></p></li>
-<li id="fn6"><p>Slightly strawman versions of these positions, but I
-think morally accurate.<a class="footnote-back" href="#fnref6" role="doc-backlink">↩︎</a></p></li>
-<li id="fn7"><p>In this view, mathematics is a ritual practice in the
-sense of Seligman et al’s “Ritual and its Consequences”. It is the
-creation of a <em>subjunctive world</em> in which certain rules and
-claims are treated as inviolable properties of the ritual space, because
-doing so allows the ritual to occur, which is desirable for its
-non-ritual consequences. e.g. politeness norms are viewed as a ritual in
-this sense, because maintaining them allows for civil interactions which
-everyone enjoys. In practice they are not inviolable, but if everyone
-treats them as such they are not violated and thus you get to operate in
-a world where you can trust them as if they were inviolable.<a class="footnote-back" href="#fnref7" role="doc-backlink">↩︎</a></p></li>
-<li id="fn8"><p>This is a nontrivial constraint on a hypothetical world.
-e.g. fairy tales have a logic of their own, but it is not a simple if A
-then B sort of logical reasoning you can count on. The realm in which
-mathematical objects exist is posited to be one that makes sense.<a class="footnote-back" href="#fnref8" role="doc-backlink">↩︎</a></p></li>
-<li id="fn9"><p>Which we want to do because every primitive mathematical
-object is a sort of leap of faith as to whether the rules actually make
-sense.<a class="footnote-back" href="#fnref9" role="doc-backlink">↩︎</a></p></li>
-<li id="fn10"><p>In fact, in modern (i.e. dating from the early 20th
-century) we construct these too out of other mathematical objects - sets
-- but you can do the mathematics of numbers without doing the
-mathematics of sets, and numbers are in some sense “more basic” to
-mathematics.<a class="footnote-back" href="#fnref10" role="doc-backlink">↩︎</a></p></li>
-<li id="fn11"><p>And there are sometimes reasons to, even if you only
-care about real world countable quantities! Sometimes you want to prove
-a mathematical result and it requires you to e.g. look at all the
-subsets of some set of a reasonable size. Although 1,000,000 is a
-perfectly reasonable number, 21,000,000 is again more than the atoms of
-the universe. From a mathematical point of view, proving results that
-use that number are completely legitimate, even if it has no physical
-analogue.<a class="footnote-back" href="#fnref11" role="doc-backlink">↩︎</a></p></li>
-<li id="fn12"><p>And concern ourselves with the merely very large.<a class="footnote-back" href="#fnref12" role="doc-backlink">↩︎</a></p></li>
-<li id="fn13"><p>In tournament rules you may have committed yourself to
-moving this piece, but the point remains: If you moved this piece to
-that square prior to nudging it, that makes no difference.<a class="footnote-back" href="#fnref13" role="doc-backlink">↩︎</a></p></li>
-<li id="fn14"><p>Some games do explicitly allow cheating as part of the
-game, but that doesn’t change the basic point, it’s just a more
-complicated ruleset.<a class="footnote-back" href="#fnref14" role="doc-backlink">↩︎</a></p></li>
-<li id="fn15"><p>Actually much less than that, because not all of those
-chess positions are in fact possible, but even a 100-order of magnitude
-reduction makes this an impossibly large number of states.<a class="footnote-back" href="#fnref15" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section>
+
 
 </section>
 
