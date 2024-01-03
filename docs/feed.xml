@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-01-03T13:17:58+00:00</updated>
+  <updated>2024-01-03T13:25:11+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1059,7 +1059,7 @@ Most of them will be short, and will end whenever I feel done with writing them 
     <id>https://notebook.drmaciver.com/posts/2024-01-03-10:13.html</id>
     <title>Some Philosophy of
 Mathematics</title>
-    <updated>2024-01-03T13:17:58+00:00</updated>
+    <updated>2024-01-03T13:25:11+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Some Philosophy of
@@ -1391,7 +1391,7 @@ existence of mathematical numbers that have no corresponding real world
 counted quantity. Why? Well, it follows from the rules we have for
 counting numbers (which I haven’t spelled out, but it does I promise)
 that if n exists then so does 10n. But that means that 10 exists, 100
-exists, 1,000,000 exists… &lt;span class="math inline"&gt;\(10^10000000000\)&lt;/span&gt; also exists, which is
+exists, 1,000,000 exists… &lt;span class="math inline"&gt;\(10^{10000000000}\)&lt;/span&gt; also exists, which is
 vastly more things to count than there are atoms in the universe. In the
 real world, you can’t count that high. In the mathematical world, no
 problem at all.
@@ -1402,8 +1402,8 @@ problem at all.
 care about real world countable quantities! Sometimes you want to prove
 a mathematical result and it requires you to e.g. look at all the
 subsets of some set of a reasonable size. Although 1,000,000 is a
-perfectly reasonable number, &lt;span class="math inline"&gt;\(2^1000000\)&lt;/span&gt; is again more than the atoms of
-the universe. From a mathematical point of view, proving results that
+perfectly reasonable number, &lt;span class="math inline"&gt;\(2^{1000000}\)&lt;/span&gt; is again more than the atoms
+of the universe. From a mathematical point of view, proving results that
 use that number are completely legitimate, even if it has no physical
 analogue.&lt;/span&gt;
 &lt;/p&gt;
@@ -1499,17 +1499,17 @@ the board, their emotional states, etc. None of these are considered
 relevant to or part of the mathematics.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;It has the same sort of unboundedness problem that counting
 numbers do. This question actually does have a definite answer, but the
-definite answer might require considering 2&lt;sup&gt;2048 &lt;/sup&gt;different
-chess positions to reach.
+definite answer might require considering &lt;span class="math inline"&gt;\(2^{2048}\)&lt;/span&gt; different chess positions to
+reach.
 &lt;label class="margin-toggle sidenote-number" for="fn15"&gt;
 &lt;/label&gt;
 &lt;input class="margin-toggle" id="fn15" type="checkbox"/&gt;
 &lt;span class="sidenote"&gt;Actually much less than that, because not all of those
 chess positions are in fact possible, but even a 100-order of magnitude
 reduction makes this an impossibly large number of states.&lt;/span&gt;
- While in theory this
-is a finite number with a definite answer, there’s no guarantee we can
-calculate it.&lt;/p&gt;&lt;/li&gt;
+ While in theory this is a finite
+number with a definite answer, there’s no guarantee we can calculate
+it.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 
