@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-01-03T12:27:23+00:00</updated>
+  <updated>2024-01-03T12:28:47+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1059,7 +1059,7 @@ Most of them will be short, and will end whenever I feel done with writing them 
     <id>https://notebook.drmaciver.com/posts/2024-01-03-10:13.html</id>
     <title>Some Philosophy of
 Mathematics</title>
-    <updated>2024-01-03T12:27:23+00:00</updated>
+    <updated>2024-01-03T12:28:47+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Some Philosophy of
@@ -1103,15 +1103,15 @@ explaining this is that the way we typically
 &lt;/label&gt;
 &lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;
 &lt;span class="sidenote"&gt;I don’t know how reliable my sense of how we typically
-present axioms is and was worried this might be a&lt;a href="https://www.lisamcnulty.co.uk/essays/phantom-opinions"&gt;&lt;/a&gt;&lt;a href="https://www.lisamcnulty.co.uk/essays/phantom-opinions"&gt;&lt;em&gt;phantom
-opinion&lt;/em&gt;&lt;/a&gt;, so I checked and it’s not. I did some casual googling,
+present axioms is and was worried this might be a &lt;a href="https://www.lisamcnulty.co.uk/essays/phantom-opinions"&gt;phantom
+opinion&lt;/a&gt;, so I checked and it’s not. I did some casual googling,
 checked Wikipedia, and asked ChatGPT which is usually a pretty good
 representation of the sort of the typical but oversimplified vox populi
-opinion on things. I also&lt;a href="https://twitter.com/DRMacIver/status/1713814331224170566"&gt;&lt;/a&gt;&lt;a href="https://twitter.com/DRMacIver/status/1713814331224170566"&gt;&lt;em&gt;did
-some polling on Twitter&lt;/em&gt;&lt;/a&gt; and I think most of the answers are
-confusing in the relevant way. I think that my view is probably
-relatively typical among working mathematicians, but not of how we talk
-about mathematics to non-mathematicians.&lt;/span&gt;
+opinion on things. I also &lt;a href="https://twitter.com/DRMacIver/status/1713814331224170566"&gt;did some
+polling on Twitter&lt;/a&gt; and I think most of the answers are confusing in
+the relevant way. I think that my view is probably relatively typical
+among working mathematicians, but not of how we talk about mathematics
+to non-mathematicians.&lt;/span&gt;
 
 present axioms philosophically is unhelpful for understanding what’s
 going on in mathematics.&lt;/p&gt;
@@ -1200,7 +1200,7 @@ parallel to the given line can be drawn through the point.&lt;/p&gt;
 
 
 &lt;p&gt;People spent ages trying to prove the parallel postulate from the
-other axioms, and then someone pointed out that&lt;a href="https://en.wikipedia.org/wiki/Spherical_geometry"&gt;Spherical
+other axioms, and then someone pointed out that &lt;a href="https://en.wikipedia.org/wiki/Spherical_geometry"&gt;Spherical
 Geometry&lt;/a&gt; demonstrated that you couldn’t do this: If you take a
 sphere and interpret “line” as meaning “great circle” (a circle on the
 surface of the sphere whose centre is the centre of the sphere. e.g the
