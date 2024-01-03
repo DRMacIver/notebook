@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-01-03T13:15:49+00:00</updated>
+  <updated>2024-01-03T13:16:25+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1059,7 +1059,7 @@ Most of them will be short, and will end whenever I feel done with writing them 
     <id>https://notebook.drmaciver.com/posts/2024-01-03-10:13.html</id>
     <title>Some Philosophy of
 Mathematics</title>
-    <updated>2024-01-03T13:15:49+00:00</updated>
+    <updated>2024-01-03T13:16:25+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Some Philosophy of
@@ -1140,7 +1140,7 @@ are interested in talking about.&lt;/p&gt;
 
 
 &lt;p&gt;For this to make sense, we need to realise that mathematics isn’t
-really about proofs, it’s about &lt;em&gt;things, &lt;/em&gt;”mathematical objects”.
+really about proofs, it’s about &lt;em&gt;things&lt;/em&gt;, “mathematical objects”.
 Proofs are for discovering properties of mathematical objects. They say:
 “Suppose I’ve got some object and it has these properties. What else do
 I know about it?”. Those properties are the axioms, but you’re not
