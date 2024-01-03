@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-01-03T13:15:22+00:00</updated>
+  <updated>2024-01-03T13:15:49+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1059,7 +1059,7 @@ Most of them will be short, and will end whenever I feel done with writing them 
     <id>https://notebook.drmaciver.com/posts/2024-01-03-10:13.html</id>
     <title>Some Philosophy of
 Mathematics</title>
-    <updated>2024-01-03T13:15:22+00:00</updated>
+    <updated>2024-01-03T13:15:49+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Some Philosophy of
@@ -1391,7 +1391,7 @@ existence of mathematical numbers that have no corresponding real world
 counted quantity. Why? Well, it follows from the rules we have for
 counting numbers (which I haven’t spelled out, but it does I promise)
 that if n exists then so does 10n. But that means that 10 exists, 100
-exists, 1,000,000 exists… 10^10000000000 also exists, which is vastly
+exists, 1,000,000 exists… (10^10000000000) also exists, which is vastly
 more things to count than there are atoms in the universe. In the real
 world, you can’t count that high. In the mathematical world, no problem
 at all.
@@ -1402,7 +1402,7 @@ at all.
 care about real world countable quantities! Sometimes you want to prove
 a mathematical result and it requires you to e.g. look at all the
 subsets of some set of a reasonable size. Although 1,000,000 is a
-perfectly reasonable number, 2^1000000 is again more than the atoms of
+perfectly reasonable number, (2^1000000) is again more than the atoms of
 the universe. From a mathematical point of view, proving results that
 use that number are completely legitimate, even if it has no physical
 analogue.&lt;/span&gt;
