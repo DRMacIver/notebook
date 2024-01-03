@@ -874,16 +874,20 @@ class MathJaxAlignExtension(markdown.Extension):
         md.inlinePatterns.add("del", SimpleTagPattern(DEL_RE, "del"), ">not_strong")
 
 
-@cached
-def md(text):
-    return markdown.markdown(
-        text,
-        extensions=[
-            MathJaxAlignExtension(),
-            "markdown.extensions.fenced_code",
-            "markdown.extensions.codehilite",
-        ],
-    )
+def md(text, use_pandoc=True):
+    if use_pandoc:
+        return subprocess.check_output([
+            'pandoc', '--from=markdown', '--to=html'
+        ], input=text, universal_newlines=True)
+    else:
+        return markdown.markdown(
+            text,
+            extensions=[
+                MathJaxAlignExtension(),
+                "markdown.extensions.fenced_code",
+                "markdown.extensions.codehilite",
+            ],
+        )
 
 
 PULL_IN_TAGS = re.compile("\s+</", re.MULTILINE)
