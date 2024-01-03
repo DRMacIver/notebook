@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-01-03T10:27:22+00:00</updated>
+  <updated>2024-01-03T12:09:16+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1059,7 +1059,7 @@ Most of them will be short, and will end whenever I feel done with writing them 
     <id>https://notebook.drmaciver.com/posts/2024-01-03-10:13.html</id>
     <title>Some Philosophy of
 Mathematics</title>
-    <updated>2024-01-03T10:27:22+00:00</updated>
+    <updated>2024-01-03T12:09:16+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Some Philosophy of
@@ -1200,7 +1200,7 @@ parallel to the given line can be drawn through the point.&lt;/p&gt;
 
 
 &lt;p&gt;People spent ages trying to prove the parallel postulate from the
-other axioms, and then someone pointed out that&lt;a href="https://en.wikipedia.org/wiki/Spherical_geometry"&gt;&lt;/a&gt;&lt;a href="https://en.wikipedia.org/wiki/Spherical_geometry"&gt;Spherical
+other axioms, and then someone pointed out that&lt;a href="https://en.wikipedia.org/wiki/Spherical_geometry"&gt;Spherical
 Geometry&lt;/a&gt; demonstrated that you couldn’t do this: If you take a
 sphere and interpret “line” as meaning “great circle” (a circle on the
 surface of the sphere whose centre is the centre of the sphere. e.g the
