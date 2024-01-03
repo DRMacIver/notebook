@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-01-03T10:13:00+00:00</updated>
+  <updated>2024-01-03T10:25:34+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1059,7 +1059,7 @@ Most of them will be short, and will end whenever I feel done with writing them 
     <id>https://notebook.drmaciver.com/posts/2024-01-03-10:13.html</id>
     <title>Some Philosophy of
 Mathematics</title>
-    <updated>2024-01-03T10:13:00+00:00</updated>
+    <updated>2024-01-03T10:25:34+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Some Philosophy of
@@ -1208,13 +1208,13 @@ mathematical foundations:&lt;/p&gt;
 
 &lt;ol type="1"&gt;
 &lt;li&gt;&lt;p&gt;Mathematics is reasoning about real entities that exist in some
-sort &amp;gt; of abstract platonic realm of ideal forms
-(&lt;strong&gt;Mathematical &amp;gt; platonism&lt;/strong&gt;)&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Mathematics is a purely formal game of manipulating symbols &amp;gt;
-representing purely formal entities according to agreed upon &amp;gt; rules,
-which can be put in correspondence with real entities but &amp;gt; do not
-intrinsically correspond to things that “exist”. &amp;gt;
-(&lt;strong&gt;Mathematical formalism&lt;/strong&gt;)&lt;/p&gt;&lt;/li&gt;
+sort of abstract platonic realm of ideal forms (&lt;em&gt;Mathematical
+platonism&lt;/em&gt;)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Mathematics is a purely formal game of manipulating symbols
+representing purely formal entities according to agreed upon rules,
+which can be put in correspondence with real entities but do not
+intrinsically correspond to things that “exist”. (&lt;em&gt;Mathematical
+formalism&lt;/em&gt;)&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 
