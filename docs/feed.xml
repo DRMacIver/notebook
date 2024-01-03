@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-01-02T13:04:46+00:00</updated>
+  <updated>2024-01-03T10:13:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,134 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2022-10-02-06:24.html</id>
-    <title>There are a lot of irreducible finite partial orders</title>
-    <updated>2022-10-02T07:19:04+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;There are a lot of irreducible finite partial orders&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2022-10-02&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Advance warning: You don't care about this post. Tersely written notes about a question you've probably never wondered about.&lt;/p&gt;
-
-
-&lt;p&gt;A problem I've been thinking about on and off for a month or two is as follows:&lt;/p&gt;
-
-
-&lt;p&gt;Let \(A\), \(B\) be partial orders. You can combine them with the following operations:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;\(A \sqcup B\) is the partial order on the disjoint union of \(A\) and \(B\) such that no element of \(A\) is comparable to an element of \(B\) (and elements of \(A\) and \(B\) compare as usual).&lt;/li&gt;
-&lt;li&gt;\(A // B\)  is the partial order on the disjoint union of \(A\) and \(B\) such that \(a \preceq b\) for \(a \in A\) and \(b \in B\) (and elements of \(A\) and \(B\) compare as usual).&lt;/li&gt;
-&lt;li&gt;\(A \times B\) is the partial order on the product of \(A\) and \(B\) such that \((r, s) \preceq (u, v)\) iff \(r \preceq u\) and \(s \preceq v\).&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;Say a partial order is irreducible if it cannot be expressed as a combination of two non-trivial smaller partial orders with one of these operations (note: non-trivial means "non-empty" for the first two and "more than one element" for the third).&lt;/p&gt;
-
-
-&lt;p&gt;You can think of the irreducible finite partial orders as a sort of building block for the finite partial orders, and something I've been wondering is if irreducible finite partial orders have a nice characterisation and how many there are. I now think the answers are: Probably not, and lots.&lt;/p&gt;
-
-
-&lt;p&gt;Here are some vaguely negative results in this space.&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;There are irreducible partial orders of size \(n\) for every \(n &amp;gt; 3\). There are no irreducible partial orders of size \(2\) or \(3\).&lt;/li&gt;
-&lt;li&gt;There are at least \(O(2^{O(n)})\) non-isomorphic irreducible partial orders of size \(n\).&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;As a warm up let's see why there are no irreducible partial orders of size \(2\) or \(3\).&lt;/p&gt;
-
-
-&lt;p&gt;\(2\) is easy. Let \(P = \{a, b\}\) be a partial order of size \(2\). If \(a \preceq b\) then \(P = \{a\} // \{b\}\). Similarly the other way round. Otherwise, \(P = \{a\} \sqcup \{b\}\).&lt;/p&gt;
-
-
-&lt;p&gt;\(3\) is slightly more complicated.&lt;/p&gt;
-
-
-&lt;p&gt;It's helpful to think about this in terms of the level decomposition. The level of an element \(x \in P\) is the length of the longest chain ending in \(x\). Call that \(l(x)\). The height of \(P\) is the maximum level of an element of \(P\) (equivalently, the length of the longest chain in \(P\)), which we will call \(h(P)\). A level of \(P\) is a set of the form \(\{x \in P: l(x) = k\}\) for some \(k\).&lt;/p&gt;
-
-
-&lt;p&gt;Suppose \(P\) were an irreducible poset of size \(3\). If it has \(3\) levels, then it's a chain, so can be decomposed with \(//\).
-If it has \(1\) level, it's an antichain so can be decomposed with \(\sqcup\). So it must have \(2\) levels. Thus we can write \(P = \{a, b, c\}\) with \(a \leq b\).&lt;/p&gt;
-
-
-&lt;p&gt;If \(c\) is in level \(2\), then \(a \leq c\) (because \(a\) is the only element of level \(1\)), and so we can write \(P = \{a\} // \{b, c\}\). If \(c\) is in level \(1\), then if \(c \neq\preceq b\), we can write \(P = \{a, b\} \sqcup \{c\}\), so \(P\) is reducible. Therefore \(c \preceq b\), and so we can write \(P = \{a\} // \{b, c\}\). Thus, \(P\) could not have been irreducible.&lt;/p&gt;
-
-
-&lt;p&gt;Now to see that for \(n &amp;gt; 3\) there is always an irreducible poset.&lt;/p&gt;
-
-
-&lt;p&gt;Construct a poset as \(P = \{a_1, \ldots, a_{n - 2}, b, c\}\) and order it as follows: \(a_i \leq b\) for all \(i\), and only \(a_ \leq c\).&lt;/p&gt;
-
-
-&lt;p&gt;This is irreducible. It's clearly not reducible by \(\sqcup\) because every element is connected to every other by some sequence of comparisons. It's clearly not reducible by \(//\) because not every element of the bottom level is comparible with every element of the second level (this is where we used \(n &amp;gt; 3\) - we need an \(a_2\) for this to be true).&lt;/p&gt;
-
-
-&lt;p&gt;To see it's not reducible by \(\times\), we need to know that \(h(A \times B) = h(A) + h(B)\). This is true because you can basically create a maximal length chain by moving up each coordinate's chain in a zigzag fashion.&lt;/p&gt;
-
-
-&lt;p&gt;Thus if \(P = A \times B\), we must have \(h(A) + h(B) = 2\). This requires both \(A\) and \(B\) to have height \(1\), which would make them antichains, so \(P\) would be an antichain, but it's not.&lt;/p&gt;
-
-
-&lt;p&gt;In fact a stronger result holds: If \(h(P) \leq 3\), then if \(h\) is reducible by \(\times\), it's reducible by \(\sqcup\).&lt;/p&gt;
-
-
-&lt;p&gt;We saw the \(h(P) = 2\) case above. If \(h(P) = 3\) and \(P = A \times B\) with \(A, B\) non-trivial then we must have one of \(A\) or \(B\) have height \(1\). Say it's \(A\). Then \(A\) is an antichain and because it's non-trivial has more than one element, so we can write \(A = X \sqcup Y\) with \(X, Y\) non-empty. Then \(P = X \times B \sqcup Y \times B\).&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, we can extend the idea behind this as follows to construct families of lots of non-isomorphic irreducible partial orders as follows.&lt;/p&gt;
-
-
-&lt;p&gt;Let \(k &amp;gt; 0\). Construct a partial follow out of elements \(P = \{a_1, \ldots, a_k\} \cup \{b_1, \ldots, b_k\} \cup \{c_U: U \subseteq \{1, \ldots, k\}, U \neq \emptyset\} \cup \{q\}\).&lt;/p&gt;
-
-
-&lt;p&gt;The rules are:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;\(a_i \leq b_j\) iff \(i \leq j\).&lt;/li&gt;
-&lt;li&gt;\(a_i \leq c_U\) iff \(i \in U\).&lt;/li&gt;
-&lt;li&gt;\(b_j \leq q\)&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;The idea of this construction is that there are \(O(2^k)\) elements in this partial order, and all of them are distinguishable up to isomorphism. i.e. the set has a trivial automorphism group.&lt;/p&gt;
-
-
-&lt;p&gt;To see this, let \(f : P \to P\) be an automorphism. Then \(h(f(q)) = h(q) = 3\), so \(f(q) = q\) because \(q\) is the only level \(3\) element. Thus \(f(\{b_i\}) = \{b_i\}\), because they're the only elements directly below \(q\), and we can distinguish the \(b_i\) by how many elements are under them. Thus \(f\) must also preserve the \(a_i\), and thus also the \(c_U\).&lt;/p&gt;
-
-
-&lt;p&gt;\(P\) is irreducible by our above result, but more importantly now let \(X \subseteq \{c_i\}\). Define \(P_X = P \cup d_X\), where \(d \leq c_U\) iff \(c_U \in X\).&lt;/p&gt;
-
-
-&lt;p&gt;This is still height \(3\), and still clearly not reducible by either \(\sqcup\) or \(//\), so is an irreducible set.&lt;/p&gt;
-
-
-&lt;p&gt;More, for \(X \neq Y\), we have \(P_X \neq P_Y\), because any isomorphism betweem them would have to preserve the \(C_U\), and so would fail to be an isomorphism because \(d_X\) and \(d_Y\) are below different \(c_U\).&lt;/p&gt;
-
-
-&lt;p&gt;This gives of \(O(2^{O(|P|)})\) non-isomorphic irreducible partial orders of size \(|P| + 1\).&lt;/p&gt;
-
-
-&lt;p&gt;For general \(n\), construct the largest version of \(P\) such that \(|P| + 1 \leq n\), and just add in a bunch of extra elements more or less any way that works, and you'll get the same bounds.&lt;/p&gt;
-
-
-&lt;p&gt;It may still be that there's some interesting deep structure to look at for irreducible finite partial orders, but I think these examples show that there's probably not: There are just too many of them, and it's all a bit messy.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2022-10-02-06:24.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-11-02-15:46.html</id>
     <title>Examples of missing support networks</title>
@@ -1093,7 +965,7 @@ Most of them will be short, and will end whenever I feel done with writing them 
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-02-12:56.html</id>
     <title>Is philosophy bad?</title>
-    <updated>2024-01-02T13:04:46+00:00</updated>
+    <updated>2024-01-02T13:05:54+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Is philosophy bad?&lt;/p&gt;
@@ -1182,5 +1054,471 @@ Most of them will be short, and will end whenever I feel done with writing them 
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2024-01-02-12:56.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2024-01-03-10:13.html</id>
+    <title>Some Philosophy of
+Mathematics</title>
+    <updated>2024-01-03T10:13:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Some Philosophy of
+Mathematics&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2024-01-03&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;This is another draft bankruptcy piece, pulled out of a random Google
+doc. I think what I’ve got here is perfectly reasonable but it was an
+overly ambitious project that I lost interest in finishing.&lt;/p&gt;
+
+
+&lt;p&gt;It’s also my first attempt at moving my blog rendering over to
+pandoc, so probably a whole bunch of things will break.&lt;/p&gt;
+
+
+&lt;p&gt;I’m going to be making a few sweeping generalisations about
+philosophy of mathematics. I’m sure some of them don’t hold in complete
+generality. I’m trying to convey the sense of what mathematics&lt;a class="footnote-ref" href="#fn1" id="fnref1" role="doc-noteref"&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; is typically like rather than
+attempting to come up with a grand unifying theory of mathematical
+practice.&lt;/p&gt;
+
+
+&lt;p&gt;This piece comes out of trying to explain a bit about mathematical
+incompleteness to a philosopher and realising that the core problem in
+explaining this is that the way we typically&lt;a class="footnote-ref" href="#fn2" id="fnref2" role="doc-noteref"&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;
+present axioms philosophically is unhelpful for understanding what’s
+going on in mathematics.&lt;/p&gt;
+
+
+&lt;p&gt;So, let’s fix this.&lt;/p&gt;
+
+
+&lt;h3 id="what-are-axioms"&gt;What are axioms?&lt;/h3&gt;
+
+
+&lt;p&gt;Axioms are things that we take to be true, but they are things we
+take to be true in the sense that “a bachelor is an unmarried man” or “a
+bishop moves any number of vacant squares diagonally”. They are not
+taken to be true in the sense that they represent deep truths about the
+universe that we have no way to prove but wholeheartedly believe&lt;a class="footnote-ref" href="#fn3" id="fnref3" role="doc-noteref"&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;, they are taken to be true in the
+sense that they represent defining properties of the class of thing we
+are interested in talking about.&lt;/p&gt;
+
+
+&lt;p&gt;For this to make sense, we need to realise that mathematics isn’t
+really about proofs, it’s about &lt;em&gt;things, &lt;/em&gt;”mathematical objects”.
+Proofs are for discovering properties of mathematical objects. They say:
+“Suppose I’ve got some object and it has these properties. What else do
+I know about it?”. Those properties are the axioms, but you’re not
+“assuming” that the object has those properties in the sense that they
+are things that might be false but you’re postulating for now, those
+properties define the class of object that you are interested in talking
+about.&lt;/p&gt;
+
+
+&lt;p&gt;In contrast, most people think of axioms as things that are “self
+evidently true” or, slightly more accurately, “assumptions”, but this
+immediately invites the question “But what if your assumptions are
+wrong?” or “How do you &lt;em&gt;know&lt;/em&gt; your axioms are true?”&lt;a class="footnote-ref" href="#fn4" id="fnref4" role="doc-noteref"&gt;&lt;sup&gt;4&lt;/sup&gt;&lt;/a&gt;. With axioms as picking out objects
+of interest, these problems go away - you can argue about whether the
+objects in question are interesting or whether any examples of them
+exist (“exist” is complicated. More on that later), but not whether the
+axioms are true.&lt;/p&gt;
+
+
+&lt;p&gt;One of the easiest places to see how this works is with the
+mathematics of games, because there the axioms are just the
+&lt;em&gt;constitutive rules&lt;/em&gt; of the game. You can do mathematics around
+games of chess (e.g. “From this position, can checkmate be forced in 5
+moves?” is implicitly a mathematical sort of question), and in asking
+this question you are restricted to the sort of moves that chess allows.
+If you were playing with a different rule set, the conclusion might be
+different, but that doesn’t mean that the two conclusions are
+incompatible, they’re just about different games.&lt;/p&gt;
+
+
+&lt;p&gt;Another, more historical, example is the parallel postulate and the
+axioms of geometry. Simplified version: Euclid came up with a set of
+axioms for geometry, describing how points, lines, and circles worked.
+There were a bunch of perfectly sensible axioms, and then there was the
+rather awkward&lt;a href="https://en.wikipedia.org/wiki/Parallel_postulate"&gt;&lt;/a&gt;&lt;a href="https://en.wikipedia.org/wiki/Parallel_postulate"&gt;&lt;em&gt;Parallel
+Postulate&lt;/em&gt;&lt;/a&gt;:&lt;a class="footnote-ref" href="#fn5" id="fnref5" role="doc-noteref"&gt;&lt;sup&gt;5&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;In a plane, given a line and a point not on it, at most one line
+parallel to the given line can be drawn through the point.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;People spent ages trying to prove the parallel postulate from the
+other axioms, and then someone pointed out that&lt;a href="https://en.wikipedia.org/wiki/Spherical_geometry"&gt;&lt;/a&gt;&lt;a href="https://en.wikipedia.org/wiki/Spherical_geometry"&gt;Spherical
+Geometry&lt;/a&gt; demonstrated that you couldn’t do this: If you take a
+sphere and interpret “line” as meaning “great circle” (a circle on the
+surface of the sphere whose centre is the centre of the sphere. e.g the
+equator, or a line of longitude, but not in general a line of latitude
+because those are “off centre” for the sphere), you get something that
+satisfies all the basic axioms of geometry but for which the parallel
+postulate is false (because there are no parallel lines, because all
+great circles intersect at two points on the sphere).&lt;/p&gt;
+
+
+&lt;p&gt;If you think of geometry as trying to derive universal truths of
+geometry, this information can be very distressing. How do you know
+which axioms to use?&lt;/p&gt;
+
+
+&lt;p&gt;If, on the other hand, you instead think of there being such a thing
+as &lt;em&gt;a geometry&lt;/em&gt; then all you’re trying to do is figure out
+properties of particular geometries of interest, and you can pick
+whichever one you want to work on. Sometimes you might want to work with
+a Euclidean geometry, sometimes you might want to work with a spherical
+geometry. It’s up to you! They’re both equally valid mathematical
+objects for doing geometry on.&lt;/p&gt;
+
+
+&lt;h3 id="what-are-mathematical-objects"&gt;What are mathematical
+objects?&lt;/h3&gt;
+
+
+&lt;p&gt;If axioms pick out which mathematical objects we are talking about,
+we need to follow this by answering a much harder question: What are
+mathematical objects?&lt;/p&gt;
+
+
+&lt;p&gt;I need to start with a slightly slippery mathematician’s definition:
+Mathematical objects are the things you can do proofs about.&lt;/p&gt;
+
+
+&lt;p&gt;This definition is actually quite useful, because it highlights an
+important point of this conception of axioms: It’s actually slightly
+agnostic to foundational questions like this. As long as there is
+something called a mathematical object and you can do proofs about it,
+this notion of axiom is useful.&lt;/p&gt;
+
+
+&lt;p&gt;In particular, consider two&lt;a class="footnote-ref" href="#fn6" id="fnref6" role="doc-noteref"&gt;&lt;sup&gt;6&lt;/sup&gt;&lt;/a&gt; conceptions of
+mathematical foundations:&lt;/p&gt;
+
+
+&lt;ol type="1"&gt;
+&lt;li&gt;&lt;p&gt;Mathematics is reasoning about real entities that exist in some
+sort &amp;gt; of abstract platonic realm of ideal forms
+(&lt;strong&gt;Mathematical &amp;gt; platonism&lt;/strong&gt;)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Mathematics is a purely formal game of manipulating symbols &amp;gt;
+representing purely formal entities according to agreed upon &amp;gt; rules,
+which can be put in correspondence with real entities but &amp;gt; do not
+intrinsically correspond to things that “exist”. &amp;gt;
+(&lt;strong&gt;Mathematical formalism&lt;/strong&gt;)&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;Mathematicians often behave liked platonists but fall back on
+formalism as a sort of philosophical justification.&lt;/p&gt;
+
+
+&lt;p&gt;A third competing view that I like is Reuben Hersch’s definition of
+mathematical objects as “socio-historical objects”. Things that only
+exist because we, as people doing mathematics, agree they exist,
+similarly to other things like money, rules, games.&lt;/p&gt;
+
+
+&lt;p&gt;I think this is mostly right, but I’d like to propose a slight
+refinement: Mathematical objects are things that we agree to &lt;em&gt;behave
+as if they existed&lt;/em&gt; because doing so allows us to do mathematics,
+and mathematics is useful.&lt;/p&gt;
+
+
+&lt;p&gt;I think this makes sense of why, regardless of what they believe
+about foundations, mathematicians in practice behave more like
+platonists: Regardless of whether mathematical objects “actually exist”,
+mathematics is done by behaving &lt;em&gt;as if&lt;/em&gt; mathematical objects
+exist, and proceeding from that starting point to reason about what they
+should be like.&lt;a class="footnote-ref" href="#fn7" id="fnref7" role="doc-noteref"&gt;&lt;sup&gt;7&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;p&gt;I sometimes joke that the formalists are right that mathematics is a
+game, but it’s not a purely symbolic one, it’s an RPG set in the
+Platonic realm. We are reasoning about some world that we agree to
+behave as if it existed, contained certain objects, and was subject to
+logical reasoning of the sort that we would expect to hold in the real
+world.&lt;a class="footnote-ref" href="#fn8" id="fnref8" role="doc-noteref"&gt;&lt;sup&gt;8&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;p&gt;This still leaves us to ask: What sort of mathematical objects do we
+posit exist? Fictional worlds are very different depending on the world
+building you’ve done for them.&lt;/p&gt;
+
+
+&lt;p&gt;Generally mathematical objects are one of two types:&lt;/p&gt;
+
+
+&lt;ol type="1"&gt;
+&lt;li&gt;&lt;p&gt;Something we’ve built as an abstracted and generalised version of
+something in the physical world.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Something we’ve built out of other mathematical objects.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;Often it’s both: When we build mathematical objects, we’re usually
+doing them for some purpose, and that purpose is often to represent
+something that in some way looks like the real world. This helps us
+avoid positing too many “primitive” mathematical objects - the building
+blocks of our mathematical world&lt;a class="footnote-ref" href="#fn9" id="fnref9" role="doc-noteref"&gt;&lt;sup&gt;9&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;The classic example of something which is purely built as an
+abstracted and generalised version of something in the physical world is
+a natural (counting) number. The numbers 0, 1, 2, … are mathematical
+objects that we just assume exist&lt;a class="footnote-ref" href="#fn10" id="fnref10" role="doc-noteref"&gt;&lt;sup&gt;10&lt;/sup&gt;&lt;/a&gt; in our mathematical
+world, according to the following rules for constructing them:&lt;/p&gt;
+
+
+&lt;ol type="1"&gt;
+&lt;li&gt;&lt;p&gt;There is a number 0.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;If there is a number n, there is a next number immediately after
+it (n + 1, although we want to do this before we’ve defined addition so
+this is usually written S(n), for successor of n).&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;We then agree that these mathematical objects satisfy what we think
+of as the idealised rules of counting numbers.&lt;/p&gt;
+
+
+&lt;p&gt;These counting numbers are abstract in the following sense: There is
+no way to point to the number four. You can point to four rocks, four
+caling birds, four tally marks. You can point to the arabic number 4, or
+the roman numeral IV. These all in some sense “represent” the number
+four (as does the word “four”), but they are not the mathematical object
+four, they are a real object that in some sense has fourness.&lt;/p&gt;
+
+
+&lt;p&gt;These counting numbers are also generalised, in that we posit the
+existence of mathematical numbers that have no corresponding real world
+counted quantity. Why? Well, it follows from the rules we have for
+counting numbers (which I haven’t spelled out, but it does I promise)
+that if n exists then so does 10n. But that means that 10 exists, 100
+exists, 1,000,000 exists… 10&lt;sup&gt;10000000000 &lt;/sup&gt;also exists, which is
+vastly more things to count than there are atoms in the universe. In the
+real world, you can’t count that high. In the mathematical world, no
+problem at all.&lt;a class="footnote-ref" href="#fn11" id="fnref11" role="doc-noteref"&gt;&lt;sup&gt;11&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;p&gt;Another, more concrete, example of a mathematical object that allows
+us to avoid concerns about infinity&lt;a class="footnote-ref" href="#fn12" id="fnref12" role="doc-noteref"&gt;&lt;sup&gt;12&lt;/sup&gt;&lt;/a&gt; is the mathematical
+objects corresponding to &lt;em&gt;game states&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Consider a game of chess, with the pieces on the board somewhere.
+Suppose you nudge a piece slightly, keeping it in the same square but
+just shifting it slightly to the left. In one sense, you’ve changed the
+state of the board - a piece is in a different location. But, from the
+point of view of a game of chess, you have not made a change&lt;a class="footnote-ref" href="#fn13" id="fnref13" role="doc-noteref"&gt;&lt;sup&gt;13&lt;/sup&gt;&lt;/a&gt;, because all that matters is which
+square the piece is in, not exactly where it is.&lt;/p&gt;
+
+
+&lt;p&gt;Similarly, if you were to take another chess board and set and place
+the pieces from that set in the same squares as they were in the
+original board, this would represent the same game of chess. This is
+true even if one board is physical and the other electronic. You could
+even copy the chess board position onto paper by hand - either as a
+picture, or as a list of positions in a standard chess notation. These
+would all represent the same game of chess.&lt;/p&gt;
+
+
+&lt;p&gt;Although chess is a game whose state is represented by physical
+objects (which might be a physical chess board, might be a computer,
+might even be solely in the heads of the participants!), chess is played
+as the &lt;em&gt;abstract game state &lt;/em&gt;- all that matters is the chess
+position, which is represented by the physical object but not synonymous
+with it.&lt;/p&gt;
+
+
+&lt;p&gt;One important feature of this is that not all physical arrangements
+of a chess board have a corresponding abstract chess state. e.g. you
+could have a piece halfway between two squares. You could have a board
+with no kings. These are not valid chess states, they’re just things you
+can do with the physical chess board.&lt;/p&gt;
+
+
+&lt;p&gt;Similarly, you’ve got the rules of chess which describe how abstract
+chess states are transformed into each other. Nothing stops you
+physically violating these rules - you can pick someone’s king up and
+throw it across the room, you can steal their pawn while they’re not
+looking, nothing stops you from doing these things, except the fact that
+in doing them you are no longer playing chess. The rules of chess exist
+precisely in order to enable you to play chess, and violating the rules
+means that this is not a game of chess.&lt;a class="footnote-ref" href="#fn14" id="fnref14" role="doc-noteref"&gt;&lt;sup&gt;14&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;p&gt;These abstract chess states and the rules for moving between them are
+mathematical objects that exist in the same sort of “mathematical realm”
+as numbers. You can also do mathematics to them.&lt;/p&gt;
+
+
+&lt;p&gt;For example, the question “Is a checkmate guaranteed for white from
+this position?” is a mathematical question. You are trying to reason
+about whether white has a strategy that guarantees that all series of
+moves from the current chess position result in a checkmate for
+white.&lt;/p&gt;
+
+
+&lt;p&gt;Although this mathematical question nominally answers a question
+about real games of chess being played by the players, it differs in
+several ways:&lt;/p&gt;
+
+
+&lt;ol type="1"&gt;
+&lt;li&gt;&lt;p&gt;It doesn’t describe anything about the game other than the
+abstract states - you don’t know how the players physically move around
+the board, their emotional states, etc. None of these are considered
+relevant to or part of the mathematics.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;It has the same sort of unboundedness problem that counting
+numbers do. This question actually does have a definite answer, but the
+definite answer might require considering 2&lt;sup&gt;2048 &lt;/sup&gt;different
+chess positions to reach.&lt;a class="footnote-ref" href="#fn15" id="fnref15" role="doc-noteref"&gt;&lt;sup&gt;15&lt;/sup&gt;&lt;/a&gt; While in theory this
+is a finite number with a definite answer, there’s no guarantee we can
+calculate it.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;h3 id="detritus"&gt;Detritus&lt;/h3&gt;
+
+
+&lt;p&gt;Editor’s note: This was a section with random cuttings that had been
+removed from the text elsewhere because it didn’t fit the flow.&lt;/p&gt;
+
+
+&lt;p&gt;One of the most important features of this explanation is that it
+makes much more sense of the social role of axioms. If axioms are
+universal truths then they arrive through some sort of deep a priori
+knowledge or divine revelation or something, but if axioms just pick out
+the objects you’re talking about they arrive in a much more
+straightforward way: Someone picks up a mathematical object and goes
+“Hey, look at this thing! Interesting, innit?” and then proceeds to try
+to describe what’s interesting about it.&lt;/p&gt;
+
+
+&lt;p&gt;You have to do a bit of fiddling around to figure out which
+properties of the object you do and don’t care about, and what a good
+set of axioms to represent them are, but that’s just work, it’s not
+anything particularly mysterious you just have to come up with a good
+design. Once you’ve identified an object, or some objects, of interest,
+you can just axiomatise them.&lt;/p&gt;
+
+
+&lt;p&gt;This helpfully reduces the question “Where do axioms come from?” to
+the much harder question “Where do mathematical objects come from?”,
+which in turn first requires us to&lt;/p&gt;
+
+
+&lt;p&gt;I think there are roughly two sources for mathematical objects:&lt;/p&gt;
+
+
+&lt;ol type="1"&gt;
+&lt;li&gt;&lt;p&gt;We make them out of other mathematical objects.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;We abstract them from real things (which may be physical objects,
+properties of such objects, processes, etc).&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;We can do the first because (I have no idea how I was intending to
+continue this sentence).&lt;/p&gt;
+
+
+&lt;h3 id="reflections"&gt;Reflections&lt;/h3&gt;
+
+
+&lt;p&gt;I often find that there’s a large body of understanding that lives in
+my head and that I think is more sensible than how other people seem to
+view it, but when it comes time to try to explain it I find it’s all too
+interconnected to be worth the effort of explaining unless there’s some
+really clear goal to it. This was one of those times.&lt;/p&gt;
+
+
+&lt;p&gt;I’d like a solution to this problem, but I’m not sure there is a
+solution other than to accept my own mortality and finite energy
+reserves and not worry so much about other people being wrong.&lt;/p&gt;
+
+
+&lt;section class="footnotes footnotes-end-of-document" id="footnotes" role="doc-endnotes"&gt;
+&lt;hr/&gt;
+&lt;ol&gt;
+&lt;li id="fn1"&gt;&lt;p&gt;Especially modernish mathematics. I think most of what
+I’m saying works as a description of historical mathematics, but it
+certainly wouldn’t have been the way people thought about it prior to
+some time in the 20th century.&lt;a class="footnote-back" href="#fnref1" role="doc-backlink"&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id="fn2"&gt;&lt;p&gt;I don’t know how reliable my sense of how we typically
+present axioms is and was worried this might be a&lt;a href="https://www.lisamcnulty.co.uk/essays/phantom-opinions"&gt;&lt;/a&gt;&lt;a href="https://www.lisamcnulty.co.uk/essays/phantom-opinions"&gt;&lt;em&gt;phantom
+opinion&lt;/em&gt;&lt;/a&gt;, so I checked and it’s not. I did some casual googling,
+checked Wikipedia, and asked ChatGPT which is usually a pretty good
+representation of the sort of the typical but oversimplified vox populi
+opinion on things. I also&lt;a href="https://twitter.com/DRMacIver/status/1713814331224170566"&gt;&lt;/a&gt;&lt;a href="https://twitter.com/DRMacIver/status/1713814331224170566"&gt;&lt;em&gt;did
+some polling on Twitter&lt;/em&gt;&lt;/a&gt; and I think most of the answers are
+confusing in the relevant way. I think that my view is probably
+relatively typical among working mathematicians, but not of how we talk
+about mathematics to non-mathematicians.&lt;a class="footnote-back" href="#fnref2" role="doc-backlink"&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id="fn3"&gt;&lt;p&gt;This is one potential source of axioms of course, as the
+universe is one of the things we want to reason about, but it is not
+what axioms &lt;em&gt;are&lt;/em&gt;.&lt;a class="footnote-back" href="#fnref3" role="doc-backlink"&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id="fn4"&gt;&lt;p&gt;These questions are not meaningless or bad necessarily,
+but they’re usually asked in the wrong place.&lt;a class="footnote-back" href="#fnref4" role="doc-backlink"&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id="fn5"&gt;&lt;p&gt;Note: This is all somewhat ahistorical and simplified
+for illustrative purposes. Euclid’s account of geometry wasn’t fully
+axiomatic, and the version of the parallel postulate stated is not
+Euclid’s original and is only equivalent to it given the other axioms.&lt;a class="footnote-back" href="#fnref5" role="doc-backlink"&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id="fn6"&gt;&lt;p&gt;Slightly strawman versions of these positions, but I
+think morally accurate.&lt;a class="footnote-back" href="#fnref6" role="doc-backlink"&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id="fn7"&gt;&lt;p&gt;In this view, mathematics is a ritual practice in the
+sense of Seligman et al’s “Ritual and its Consequences”. It is the
+creation of a &lt;em&gt;subjunctive world&lt;/em&gt; in which certain rules and
+claims are treated as inviolable properties of the ritual space, because
+doing so allows the ritual to occur, which is desirable for its
+non-ritual consequences. e.g. politeness norms are viewed as a ritual in
+this sense, because maintaining them allows for civil interactions which
+everyone enjoys. In practice they are not inviolable, but if everyone
+treats them as such they are not violated and thus you get to operate in
+a world where you can trust them as if they were inviolable.&lt;a class="footnote-back" href="#fnref7" role="doc-backlink"&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id="fn8"&gt;&lt;p&gt;This is a nontrivial constraint on a hypothetical world.
+e.g. fairy tales have a logic of their own, but it is not a simple if A
+then B sort of logical reasoning you can count on. The realm in which
+mathematical objects exist is posited to be one that makes sense.&lt;a class="footnote-back" href="#fnref8" role="doc-backlink"&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id="fn9"&gt;&lt;p&gt;Which we want to do because every primitive mathematical
+object is a sort of leap of faith as to whether the rules actually make
+sense.&lt;a class="footnote-back" href="#fnref9" role="doc-backlink"&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id="fn10"&gt;&lt;p&gt;In fact, in modern (i.e. dating from the early 20th
+century) we construct these too out of other mathematical objects - sets
+- but you can do the mathematics of numbers without doing the
+mathematics of sets, and numbers are in some sense “more basic” to
+mathematics.&lt;a class="footnote-back" href="#fnref10" role="doc-backlink"&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id="fn11"&gt;&lt;p&gt;And there are sometimes reasons to, even if you only
+care about real world countable quantities! Sometimes you want to prove
+a mathematical result and it requires you to e.g. look at all the
+subsets of some set of a reasonable size. Although 1,000,000 is a
+perfectly reasonable number, 21,000,000 is again more than the atoms of
+the universe. From a mathematical point of view, proving results that
+use that number are completely legitimate, even if it has no physical
+analogue.&lt;a class="footnote-back" href="#fnref11" role="doc-backlink"&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id="fn12"&gt;&lt;p&gt;And concern ourselves with the merely very large.&lt;a class="footnote-back" href="#fnref12" role="doc-backlink"&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id="fn13"&gt;&lt;p&gt;In tournament rules you may have committed yourself to
+moving this piece, but the point remains: If you moved this piece to
+that square prior to nudging it, that makes no difference.&lt;a class="footnote-back" href="#fnref13" role="doc-backlink"&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id="fn14"&gt;&lt;p&gt;Some games do explicitly allow cheating as part of the
+game, but that doesn’t change the basic point, it’s just a more
+complicated ruleset.&lt;a class="footnote-back" href="#fnref14" role="doc-backlink"&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id="fn15"&gt;&lt;p&gt;Actually much less than that, because not all of those
+chess positions are in fact possible, but even a 100-order of magnitude
+reduction makes this an impossibly large number of states.&lt;a class="footnote-back" href="#fnref15" role="doc-backlink"&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2024-01-03-10:13.html" rel="alternate"/>
   </entry>
 </feed>
