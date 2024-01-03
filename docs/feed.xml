@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-01-03T12:28:47+00:00</updated>
+  <updated>2024-01-03T12:30:38+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1059,7 +1059,7 @@ Most of them will be short, and will end whenever I feel done with writing them 
     <id>https://notebook.drmaciver.com/posts/2024-01-03-10:13.html</id>
     <title>Some Philosophy of
 Mathematics</title>
-    <updated>2024-01-03T12:28:47+00:00</updated>
+    <updated>2024-01-03T12:30:38+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Some Philosophy of
@@ -1391,10 +1391,10 @@ existence of mathematical numbers that have no corresponding real world
 counted quantity. Why? Well, it follows from the rules we have for
 counting numbers (which I haven’t spelled out, but it does I promise)
 that if n exists then so does 10n. But that means that 10 exists, 100
-exists, 1,000,000 exists… 10&lt;sup&gt;10000000000 &lt;/sup&gt;also exists, which is
-vastly more things to count than there are atoms in the universe. In the
-real world, you can’t count that high. In the mathematical world, no
-problem at all.
+exists, 1,000,000 exists… 10^10000000000 also exists, which is vastly
+more things to count than there are atoms in the universe. In the real
+world, you can’t count that high. In the mathematical world, no problem
+at all.
 &lt;label class="margin-toggle sidenote-number" for="fn11"&gt;
 &lt;/label&gt;
 &lt;input class="margin-toggle" id="fn11" type="checkbox"/&gt;
