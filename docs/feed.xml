@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-01-04T10:11:22+00:00</updated>
+  <updated>2024-01-04T10:17:54+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1500,7 +1500,7 @@ reserves and not worry so much about other people being wrong.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-04-10:02.html</id>
     <title>Honesty is kinder than lying</title>
-    <updated>2024-01-04T10:11:22+00:00</updated>
+    <updated>2024-01-04T10:17:54+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Honesty is kinder than lying&lt;/p&gt;
@@ -1528,13 +1528,8 @@ syndrome.&lt;/h3&gt;
 
 
 &lt;p&gt;For various reasons I’ve been thinking recently about something I
-helped a client with a while ago.
-&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;
-&lt;/label&gt;
-&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;
-&lt;span class="sidenote"&gt;Details slightly altered and kept vague for
-confidentiality reasons.&lt;/span&gt;
-&lt;/p&gt;
+helped a client with a while ago.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Details slightly altered and kept vague for
+confidentiality reasons.&lt;/span&gt;&lt;/p&gt;
 
 
 &lt;p&gt;Roughly the scenario they found themselves in was this: Someone new
@@ -1564,25 +1559,15 @@ be able to do, nothing terribly out of the ordinary.&lt;/p&gt;
 
 &lt;p&gt;What I’m &lt;em&gt;not&lt;/em&gt; sure about is whether in an alternate history
 their subordinate could have been capable of doing the job at that
-point. Certainly in this history they weren’t.
-&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;
-&lt;/label&gt;
-&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;
-&lt;span class="sidenote"&gt;Unfortunately I also don’t know if they became so. Due
+point. Certainly in this history they weren’t.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Unfortunately I also don’t know if they became so. Due
 to a mix of funding changes at the client’s company and me winding down
 that part of my business, this was only a month or two before my last
 session with that client, so I don’t know how the story ends. It doesn’t
-matter for the point I’m making though.&lt;/span&gt;
-&lt;/p&gt;
+matter for the point I’m making though.&lt;/span&gt;&lt;/p&gt;
 
 
-&lt;p&gt;And part of why they weren’t is that my client had, bluntly
-&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;
-&lt;/label&gt;
-&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;
-&lt;span class="sidenote"&gt;Somewhat more bluntly than I put it at the time,
-although I think I was at least clear about what they’d done wrong.&lt;/span&gt;
- spent the last couple of months
+&lt;p&gt;And part of why they weren’t is that my client had, bluntly&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Somewhat more bluntly than I put it at the time,
+although I think I was at least clear about what they’d done wrong.&lt;/span&gt; spent the last couple of months
 lying to them about their performance.&lt;/p&gt;
 
 
@@ -1632,16 +1617,11 @@ problem and do our best to get it for you.&lt;/p&gt;
 
 
 &lt;p&gt;This is, of course, taking on a lot of work, and it’s also taking on
-a lot of responsibility. Now in the quite likely
-&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;
-&lt;/label&gt;
-&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;
-&lt;span class="sidenote"&gt;A sad reality is that many people are in fact not good
+a lot of responsibility. Now in the quite likely&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;A sad reality is that many people are in fact not good
 enough at the jobs they’ve been hired to do, for reasons that are
 outside of anyone’s power to fix, or at least to fix fast enough to be
 viable. When this happens it’s important to treat them well, but it’s
 also important to not retain them in that role.&lt;/span&gt;
-
 event that their subordinate failed to perform and had to be let go at
 the end of their probation period, it would be in part be because they
 had failed to help them.&lt;/p&gt;
@@ -1664,14 +1644,9 @@ commit a lot of resources. What do you want to do?&lt;/p&gt;
 
 
 &lt;p&gt;This sucks to hear and it sucks to say. This is not going to be an
-easy conversation
-&lt;label class="margin-toggle sidenote-number" for="fn5"&gt;
-&lt;/label&gt;
-&lt;input class="margin-toggle" id="fn5" type="checkbox"/&gt;
-&lt;span class="sidenote"&gt;And in this particular example and depending on where
+easy conversation&lt;label class="margin-toggle sidenote-number" for="fn5"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn5" type="checkbox"/&gt;&lt;span class="sidenote"&gt;And in this particular example and depending on where
 you are can run into employment law complications. Not legal advice
-etc.&lt;/span&gt;
-, but it is necessary, and the
+etc.&lt;/span&gt;, but it is necessary, and the
 results of not having it are worse. Again, this is why I think avoiding
 conversations like this is a form of moral cowardice. Not having these
 conversations allows you to pretend that the failure is not your
@@ -1700,13 +1675,8 @@ to do to a friend, but bad to do to yourself because you can see through
 the ruse.&lt;/p&gt;
 
 
-&lt;p&gt;This objection is a commendable level of self honesty
-&lt;label class="margin-toggle sidenote-number" for="fn6"&gt;
-&lt;/label&gt;
-&lt;input class="margin-toggle" id="fn6" type="checkbox"/&gt;
-&lt;span class="sidenote"&gt;Although I think self honesty of this form is often too
-“brutal honesty”.&lt;/span&gt;
-,
+&lt;p&gt;This objection is a commendable level of self honesty&lt;label class="margin-toggle sidenote-number" for="fn6"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn6" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Although I think self honesty of this form is often too
+“brutal honesty”.&lt;/span&gt;,
 but also reveals how much we let our friends down.&lt;/p&gt;
 
 
@@ -1764,21 +1734,11 @@ people wouldn’t be, and this rounds to brutal honesty.&lt;/p&gt;
 &lt;p&gt;But my primary association with people who self describe as “brutally
 honest” is that they tend to care more about the brutal part than the
 honest part, and that when you are being “brutally honest” with someone
-it tends to be more because you don’t care about their feelings
-&lt;label class="margin-toggle sidenote-number" for="fn7"&gt;
-&lt;/label&gt;
-&lt;input class="margin-toggle" id="fn7" type="checkbox"/&gt;
-&lt;span class="sidenote"&gt;Or do care about their feelings, in that you want them
-to feel bad.&lt;/span&gt;
- than it is because you care about
-telling them the truth.
-&lt;label class="margin-toggle sidenote-number" for="fn8"&gt;
-&lt;/label&gt;
-&lt;input class="margin-toggle" id="fn8" type="checkbox"/&gt;
-&lt;span class="sidenote"&gt;That doesn’t mean you’re necessarily &lt;em&gt;not&lt;/em&gt;
+it tends to be more because you don’t care about their feelings&lt;label class="margin-toggle sidenote-number" for="fn7"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn7" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Or do care about their feelings, in that you want them
+to feel bad.&lt;/span&gt; than it is because you care about
+telling them the truth.&lt;label class="margin-toggle sidenote-number" for="fn8"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn8" type="checkbox"/&gt;&lt;span class="sidenote"&gt;That doesn’t mean you’re necessarily &lt;em&gt;not&lt;/em&gt;
 telling them the truth, but it does usually mean that you’re telling
-them only the bits of the truth that hurt the most.&lt;/span&gt;
-&lt;/p&gt;
+them only the bits of the truth that hurt the most.&lt;/span&gt;&lt;/p&gt;
 
 
 &lt;p&gt;I think brutal honesty has a missing mood. Something along the lines
@@ -1823,12 +1783,7 @@ question.&lt;/p&gt;
 
 
 &lt;p&gt;I do honestly think that my way is better. I’m not blind to its
-downsides, and it requires skill to do well
-&lt;label class="margin-toggle sidenote-number" for="fn9"&gt;
-&lt;/label&gt;
-&lt;input class="margin-toggle" id="fn9" type="checkbox"/&gt;
-&lt;span class="sidenote"&gt;And sometimes I even have that skill!&lt;/span&gt;
-,
+downsides, and it requires skill to do well&lt;label class="margin-toggle sidenote-number" for="fn9"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn9" type="checkbox"/&gt;&lt;span class="sidenote"&gt;And sometimes I even have that skill!&lt;/span&gt;,
 but I think the downsides of the status quo are much worse, and choosing
 them feels like a sort of collective cowardice to me.&lt;/p&gt;
 
