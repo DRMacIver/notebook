@@ -878,8 +878,12 @@ class MathJaxAlignExtension(markdown.Extension):
 @cached
 def md(text, use_pandoc=True):
     if use_pandoc:
+        text = text.replace('\\(', '$')
+        text = text.replace('\\)', '$')
+
         return subprocess.check_output([
-            'pandoc', '--from=markdown', '--to=html'
+            'pandoc', '--from=markdown', '--to=html',
+            '--mathjax=https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML'
         ], input=text, universal_newlines=True)
     else:
         return markdown.markdown(
@@ -1043,15 +1047,7 @@ def template_cache_key():
     return __template_cache_key
 
 
-SIDENOTE_TEMPLATE = """
-<label for="%(footnotename)s"
-       class="margin-toggle sidenote-number">
-</label>
-<input type="checkbox"
-       id="%(footnotename)s"
-       class="margin-toggle"/>
-<span class=sidenote></span>
-"""
+SIDENOTE_TEMPLATE = """<label for="%(footnotename)s" class="margin-toggle sidenote-number"></label><input type="checkbox" id="%(footnotename)s" class="margin-toggle"/><span class=sidenote></span>"""
 
 BREAK = BeautifulSoup('<br>', 'html.parser')
 
