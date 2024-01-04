@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-01-03T13:25:11+00:00</updated>
+  <updated>2024-01-04T10:02:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,83 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2022-11-02-15:46.html</id>
-    <title>Examples of missing support networks</title>
-    <updated>2022-11-02T16:13:52+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Examples of missing support networks&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2022-11-02&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I did a popular tweet:&lt;/p&gt;
-
-
-&lt;blockquote class="twitter-tweet"&gt;&lt;p dir="ltr" lang="en"&gt;The modern condition is mostly trying to do things on your own that people have historically achieved with a large support network and wondering why you're tired all the time.&lt;/p&gt;— David R. MacIver (@DRMacIver) &lt;a href="https://twitter.com/DRMacIver/status/1586850511726206983?ref_src=twsrc%5Etfw"&gt;October 30, 2022&lt;/a&gt;&lt;/blockquote&gt;
-
-
-&lt;p&gt;&lt;script async="" charset="utf-8" src="https://platform.twitter.com/widgets.js"&gt;&lt;/script&gt;&lt;/p&gt;
-
-
-&lt;p&gt;People are, quite reasonably, asking me for examples beyond the really obvious one of parenting.&lt;/p&gt;
-
-
-&lt;p&gt;In truth, I do think my tweet is overly simplistic, and there's a lot more going on. I wrote it partly because I'm living on my own at the moment and really don't like it, and I'm soon going to be living in a much more extended household and very much looking forward to it, and just the general ease of being relied upon and being able to rely on other people for the little things, and the changes I'm expecting (not, I think, to an unwarranted degree - it's different, but it's far from the first time I've lived with others) are many and small, so pointing at specific examples feels almost beside the point.&lt;/p&gt;
-
-
-&lt;p&gt;Nevertheless, here are a few big examples. It's not a terribly well thought out list, this is just off the top of my head. It feels more pervasive than these examples would suggest, as I think this is often an aggregate of many small things.&lt;/p&gt;
-
-
-&lt;p&gt;One of the examples that often comes up that makes me think about this is that if you look at a lot of past (and to some degree current) examples of extremely successful scientists etc. who published a million books, it turns out the "trick" behind their productivity was that they certainly had their wife acting as their personal secretary and possibly an entire household because they were aristocracy.&lt;/p&gt;
-
-
-&lt;p&gt;This is a super privileged position of course, but when you look at people trying to achieve similar things today they certainly aren't in that super privileged position but are trying to achieve the same things.&lt;/p&gt;
-
-
-&lt;p&gt;You see this at work too - e.g. most positions you would previously have secretaries, admin staff, etc. helping you out, and you would be able to rely on your housewife keeping home for you.&lt;/p&gt;
-
-
-&lt;p&gt;This isn't a "feminism is bad" take don't worry. But it's important to bear in mind that the workload and assumptions of most jobs are designed around the idea that keeping house, life admin, etc. is something someone else is doing for you.&lt;/p&gt;
-
-
-&lt;p&gt;Also on the work front there was much more in the way of apprenticeships and mentorships, and the expectation that you would have a long-term career at a given place got you (in theory, and sometimes also in practice) a lot more support from a network of people at work.&lt;/p&gt;
-
-
-&lt;p&gt;The gig economy in which everyone is an independent contractor is the ultimate version of stripping this community of support away at work.&lt;/p&gt;
-
-
-&lt;p&gt;From the consumer side, companies were often part of your support network in a way they no longer are, with increasingly large amounts of &lt;a href="https://en.wikipedia.org/wiki/Shadow_work"&gt;shadow work&lt;/a&gt; where things that you could previously get help on are now your responsibility, increasing your workload.&lt;/p&gt;
-
-
-&lt;p&gt;On top of this, there's plenty of absent general community support stuff - having friends you can call on to help you out with a task (e.g. my "&lt;a href="https://twitter.com/DRMacIver/status/1564603678484566019"&gt;oh shit how do I get a table upstairs?&lt;/a&gt;" recently), or who will check up on you when you're ill, or whatever is much harder than it should be and historically often was (and to some degree still is in smaller communities, but my impression is that even there it's much less of a thing now).&lt;/p&gt;
-
-
-&lt;p&gt;In general one of the big functions of support networks is that they absorb variance - even things that you're fine to do on your own 90-95% of the time, you sometimes need someone else to pick up the slack when things go bad.&lt;/p&gt;
-
-
-&lt;p&gt;Emotional support is like this too. "Go to therapy" is a way of making an individual responsiblity of emotional problems that often need a whole community to support you. Often historically (and perhaps currently? I'm not very familiar with religious culture except second hand, but my impression this is at least &lt;em&gt;less&lt;/em&gt; true than it used to be) this would be a religious community. You'd have your priest, but you'd also have other members of the congegration to help you out.&lt;/p&gt;
-
-
-&lt;p&gt;Regardless of the religious content, when you're having a bad time you should be able to draw on a community of people who have your back, and heart emojis on social media when you sadpost doesn't quite cut it.&lt;/p&gt;
-
-
-&lt;p&gt;Distributed trust is another one. I've complained about the problem of e.g. &lt;a href="https://notebook.drmaciver.com/posts/2022-06-05-14:53.html"&gt;how to find a good plumber&lt;/a&gt; before, but historically this is something you solve by asking your community. Communities maintain social knowledge and help you figure out how to navigate the world.&lt;/p&gt;
-
-
-&lt;p&gt;One of the discussions in the replies to my tweet is about housework and cooking and such. I think this is ambiguously an example - an extended family living under one roof does absolutely count as a support network for doing this, but in the middle class UK/USA cultures I'm most familiar with the lack of these is only "modern" in the sense that it's a 20th century trend. The actual solution we've had more recently which is now also gone was generally housewives again. With both partners working, or someone living alone or with flatmates with whom they don't really share a life, you're implicitly trying to do the work of two people. Not a "large" support network, but support nonetheless.&lt;/p&gt;
-
-
-&lt;p&gt;A lot of these have "replacements" from technology or the market. I think it's good that those exist, and it's good that people can do more as individuals, but they are far from a complete replacement for a full support network, and based on the slightly overwhelming amount of responses this tweet got, it seems like other people feel similarly.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2022-11-02-15:46.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-12-08-20:25.html</id>
     <title>Notes on shaking</title>
@@ -1059,7 +982,7 @@ Most of them will be short, and will end whenever I feel done with writing them 
     <id>https://notebook.drmaciver.com/posts/2024-01-03-10:13.html</id>
     <title>Some Philosophy of
 Mathematics</title>
-    <updated>2024-01-03T13:25:11+00:00</updated>
+    <updated>2024-01-03T13:26:05+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Some Philosophy of
@@ -1573,5 +1496,289 @@ reserves and not worry so much about other people being wrong.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2024-01-03-10:13.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2024-01-04-10:02.html</id>
+    <title>Honesty is kinder than lying</title>
+    <updated>2024-01-04T10:02:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Honesty is kinder than lying&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2024-01-04&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Another draft bankruptcy post. This is one of those posts that I
+started writing because I was annoyed about something (I forget what, I
+don’t think it’s present anywhere in the text), and stopped writing when
+I lost steam on that annoyance. I still think it’s important and worth
+saying, but I lost the impetus to keep saying it.&lt;/p&gt;
+
+
+&lt;p&gt;Advance warning: I am not pulling any punches in this issue.&lt;/p&gt;
+
+
+&lt;h3 id="do-you-want-impostor-syndrome-because-thats-how-you-get-impostor-syndrome."&gt;Do
+you want impostor syndrome? Because that’s how you get impostor
+syndrome.&lt;/h3&gt;
+
+
+&lt;p&gt;For various reasons I’ve been thinking recently about something I
+helped a client with a while ago.
+&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;
+&lt;/label&gt;
+&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;
+&lt;span class="sidenote"&gt;Details slightly altered and kept vague for
+confidentiality reasons.&lt;/span&gt;
+&lt;/p&gt;
+
+
+&lt;p&gt;Roughly the scenario they found themselves in was this: Someone new
+had joined their staff, and this person wasn’t &lt;em&gt;bad&lt;/em&gt; at their
+job, but they were very slow at it, taking much longer to complete basic
+tasks than seemed reasonable.&lt;/p&gt;
+
+
+&lt;p&gt;More, this person knew it, and was clearly very bothered by it, and
+kept apologising for it. My client kept reassuring them that this was
+fine and it was normal to take a while to get started. This didn’t seem
+to help, and they kept being anxious about it.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, a couple of months of this had passed and my client now had a
+problem: Their staff member was &lt;em&gt;still&lt;/em&gt; too slow at their job. It
+could no longer be written off as just slowness getting up to speed,
+they actually weren’t fast enough at the job to keep up with the needed
+workload, and weren’t showing any signs of improvement.&lt;/p&gt;
+
+
+&lt;p&gt;I’m reasonably confident that the problem isn’t that the client’s
+expectations were unreasonable. We talked a bit about it and it was a
+set of requirements that it was perfectly normal to expect a person to
+be able to do, nothing terribly out of the ordinary.&lt;/p&gt;
+
+
+&lt;p&gt;What I’m &lt;em&gt;not&lt;/em&gt; sure about is whether in an alternate history
+their subordinate could have been capable of doing the job at that
+point. Certainly in this history they weren’t.[2]&lt;/p&gt;
+
+
+&lt;p&gt;And part of why they weren’t is that my client had, bluntly[3] spent
+the last couple of months lying to them about their performance.&lt;/p&gt;
+
+
+&lt;p&gt;This wasn’t the client’s fault. It’s what we’re all trained to do.
+When someone is expressing anxiety, you reassure them that the thing
+they’re anxious about couldn’t possibly happen and everything will be
+fine. When someone is expressing guilt about how they fucked up, you
+tell them that it’s not their fault and there’s nothing they could have
+done. There’s this deep seated cultural assumption that the way to be
+kind to people is that you lie to them.&lt;/p&gt;
+
+
+&lt;p&gt;I hate this and think it’s a travesty.&lt;/p&gt;
+
+
+&lt;p&gt;In the spirit of honesty, I will admit that I do this sometimes. Much
+much less than most people do, I think, but it’s hard not to. There are
+a lot of forces pushing you to do it. When I find myself doing it, I try
+to learn from that and do better in future.&lt;/p&gt;
+
+
+&lt;p&gt;In a similar spirit of honesty, I know that you probably do this too,
+and I’m &lt;a href="https://drmaciver.substack.com/p/just-disappointed" rel="noopener noreferrer nofollow" target="_blank"&gt;disappointed&lt;/a&gt; in
+you for doing so. I would like you to do better.&lt;/p&gt;
+
+
+&lt;p&gt;The reason we all lie to each other like this is often framed as
+kindness. I don’t think it is. I think it’s a form of cowardice. Honesty
+has consequences that we have to own in a way that dishonesty would not.
+If we speak the truth, we are responsible for any hurt inflicted, and
+might have to face the other’s negative reaction to our words. If we
+tell a nice lie we are not responsible when the problem we are lying
+about inevitably has consequences.&lt;/p&gt;
+
+
+&lt;p&gt;Doing better requires both the courage to face those consequences,
+and a sense of responsibility for events that are not our “fault” that
+everyone is keen to disavow.&lt;/p&gt;
+
+
+&lt;p&gt;The correct way to handle something like my client’s situation is, in
+my opinion, to say something along the lines of: Yes, you’re
+underperforming compared to what I’d hope for. It’s not a problem yet,
+but if it continues it will become one. I’ve got your back in trying to
+prevent that. Let’s figure out together what you need to solve this
+problem and do our best to get it for you.&lt;/p&gt;
+
+
+&lt;p&gt;This is, of course, taking on a lot of work, and it’s also taking on
+a lot of responsibility. Now in the quite likely
+&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;
+&lt;/label&gt;
+&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;
+&lt;span class="sidenote"&gt;A sad reality is that many people are in fact not good
+enough at the jobs they’ve been hired to do, for reasons that are
+outside of anyone’s power to fix, or at least to fix fast enough to be
+viable. When this happens it’s important to treat them well, but it’s
+also important to not retain them in that role.&lt;/span&gt;
+
+event that their subordinate failed to perform and had to be let go at
+the end of their probation period, it would be in part be because they
+had failed to help them.&lt;/p&gt;
+
+
+&lt;p&gt;Depending on how much capacity is available, that might not be an
+option. I was talking to a friend recently about their company’s
+situation and he was in a similar position but absolutely didn’t have
+the capacity spare to help the person in question learn to perform at
+the level he needed (and suspected that they couldn’t or wouldn’t
+anyway).&lt;/p&gt;
+
+
+&lt;p&gt;In such a circumstance I honestly think the kindest thing to say to
+someone is something along the lines of: Look, this is what we need, and
+the fact that you can’t give it is a problem. If you’re willing to take
+responsibility for stepping up, we’re happy to give you the space you
+need to do that, and can make some changes to support that but cannot
+commit a lot of resources. What do you want to do?&lt;/p&gt;
+
+
+&lt;p&gt;This sucks to hear and it sucks to say. This is not going to be an
+easy conversation[5], but it is necessary, and the results of not having
+it are worse. Again, this is why I think avoiding conversations like
+this is a form of moral cowardice. Not having these conversations allows
+you to pretend that the failure is not your responsibility.&lt;/p&gt;
+
+
+&lt;h3 id="you-shouldnt-lie-to-your-friends"&gt;You shouldn’t lie to your
+friends&lt;/h3&gt;
+
+
+&lt;p&gt;Anyway, I don’t care that much about the employment example right
+now. It’s important, but it’s not why this has been on my mind.&lt;/p&gt;
+
+
+&lt;p&gt;I was talking to some friends recently about the advice “when you
+find yourself beating yourself up over something, imagine you’re talking
+to a friend or loved one and ask if you would talk to them that
+way”.&lt;/p&gt;
+
+
+&lt;p&gt;One of the objections to this advice raised is that when talking to a
+friend or loved one you will tend to lie to them in the ways I’ve been
+discussing. You diminish the degree to which the situation is their
+fault, you downplay the possibility of bad consequences. This feels fine
+to do to a friend, but bad to do to yourself because you can see through
+the ruse.&lt;/p&gt;
+
+
+&lt;p&gt;This objection is a commendable level of self honesty&lt;a href="#footnote-6"&gt;6&lt;/a&gt;, but also reveals how much we let our friends
+down.&lt;/p&gt;
+
+
+&lt;p&gt;Because here’s the thing: Your friends can see through the ruse too.
+The thing about having a social norm of lying to people is that
+&lt;em&gt;everybody knows you lie to people in this way&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Recall the example of my client. One of the problems with lying to
+his subordinate is that it didn’t give them the support they needed to
+improve. But it &lt;em&gt;also didn’t make them less anxious&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;And of course it didn’t. If people are going to tell you that
+something isn’t a problem even when it’s a problem, you can’t trust that
+reassurance at all, so why would it help?&lt;/p&gt;
+
+
+&lt;p&gt;If you want to be able to reassure people that something isn’t a
+problem when it’s not a problem, they need to be able to believe that
+you would tell them that it’s a problem if it were one.&lt;/p&gt;
+
+
+&lt;p&gt;You can achieve this belief in one of three ways:&lt;/p&gt;
+
+
+&lt;ol type="1"&gt;
+&lt;li&gt;It can be true.&lt;/li&gt;
+&lt;li&gt;They can have poor judgement.&lt;/li&gt;
+&lt;li&gt;They can lie to themselves.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;That is, when you lie to people, you either fail to help them, or you
+make them complicit in the lie, and at some level that’s hard to
+maintain, and it’s bad for them and it’s bad for the relationship.&lt;/p&gt;
+
+
+&lt;h3 id="the-problem-of-brutal-honesty"&gt;The problem of brutal
+honesty&lt;/h3&gt;
+
+
+&lt;p&gt;Honesty has &lt;a href="https://notebook.drmaciver.com/posts/2020-03-28-10:26.html"&gt;a
+differing thresholds problem&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;I often get accused of being brutally honest. It’s certainly
+sometimes true - I think this post is erring on the side of brutal
+honesty, partly because I’m fed up and partly because I don’t think a
+softer version would land - but I think actually most of the time I’m
+&lt;em&gt;not&lt;/em&gt; brutally honest, I’m just honest in situations where other
+people wouldn’t be, and this rounds to brutal honesty.&lt;/p&gt;
+
+
+&lt;p&gt;But my primary association with people who self describe as “brutally
+honest” is that they tend to care more about the brutal part than the
+honest part, and that when you are being “brutally honest” with someone
+it tends to be more because you don’t care about their feelings
+&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;
+&lt;/label&gt;
+&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;
+&lt;span class="sidenote"&gt;Or do care about their feelings, in that you want them
+to feel bad.&lt;/span&gt;
+ than it is because you care about
+telling them the truth.[8]&lt;/p&gt;
+
+
+&lt;p&gt;I think brutal honesty has a missing mood. Something along the lines
+of “It is regrettable that I must hurt this person but the truth is in
+this instance more important than their feelings”. Instead, the attitude
+seems to be much more “truth hurts, suck it up”. This is not an attitude
+I want to encourage.&lt;/p&gt;
+
+
+&lt;h3 id="you-probably-shouldnt-lie-to-yourself-either"&gt;You probably
+shouldn’t lie to yourself either&lt;/h3&gt;
+
+
+&lt;p&gt;One of the reasons why I’ve been thinking about this recently is that
+I was talking about self-help books the other day, and realising that
+there’s really one fundamental message that underlies the vast majority
+of self help books.&lt;/p&gt;
+
+
+&lt;p&gt;It’s this: You know that problem you’ve been having? It’s not your
+fault. You don’t have to feel bad about having it.&lt;/p&gt;
+
+
+&lt;p&gt;Sometimes this is a useful message for people to hear, because it
+lets them get a bit of emotional distance from the problem that they
+need to solve it.&lt;/p&gt;
+
+
+&lt;p&gt;And if it helps them achieve that, and they then solve the problem,
+(Editor’s note: I apparently stopped writing this post mid sentence
+here).&lt;/p&gt;
+
+
+&lt;h3 id="postscript"&gt;Postscript&lt;/h3&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2024-01-04-10:02.html" rel="alternate"/>
   </entry>
 </feed>
