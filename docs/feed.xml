@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-01-04T10:10:12+00:00</updated>
+  <updated>2024-01-04T10:11:15+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1500,7 +1500,7 @@ reserves and not worry so much about other people being wrong.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-04-10:02.html</id>
     <title>Honesty is kinder than lying</title>
-    <updated>2024-01-04T10:10:12+00:00</updated>
+    <updated>2024-01-04T10:11:15+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Honesty is kinder than lying&lt;/p&gt;
@@ -1771,7 +1771,14 @@ it tends to be more because you don’t care about their feelings
 &lt;span class="sidenote"&gt;Or do care about their feelings, in that you want them
 to feel bad.&lt;/span&gt;
  than it is because you care about
-telling them the truth.[8]&lt;/p&gt;
+telling them the truth.
+&lt;label class="margin-toggle sidenote-number" for="fn8"&gt;
+&lt;/label&gt;
+&lt;input class="margin-toggle" id="fn8" type="checkbox"/&gt;
+&lt;span class="sidenote"&gt;That doesn’t mean you’re necessarily &lt;em&gt;not&lt;/em&gt;
+telling them the truth, but it does usually mean that you’re telling
+them only the bits of the truth that hurt the most.&lt;/span&gt;
+&lt;/p&gt;
 
 
 &lt;p&gt;I think brutal honesty has a missing mood. Something along the lines
