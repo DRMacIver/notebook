@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-01-05T11:11:00+00:00</updated>
+  <updated>2024-01-05T11:15:42+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1490,7 +1490,7 @@ them feels like a sort of collective cowardice to me.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-05-11:11.html</id>
     <title>Reason as a moral mechanism</title>
-    <updated>2024-01-05T11:11:00+00:00</updated>
+    <updated>2024-01-05T11:15:42+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Reason as a moral mechanism&lt;/p&gt;
@@ -1515,10 +1515,10 @@ such.&lt;/p&gt;
 
 &lt;p&gt;Attention conservation notice: This piece is quite inside baseball. I
 think it’s of interest to a general audience in where it ends up, which
-is why it’s on the newsletter rather than the &lt;a href="https://notebook.drmaciver.com/"&gt;notebook&lt;/a&gt; (Editor’s note: lol
-never mind), but it &lt;em&gt;starts&lt;/em&gt; by arguing about the logical
-underpinnings of Kantian ethics. You should not however require much
-philosophy background to read it.&lt;/p&gt;
+is why it’s on the newsletter rather than the &lt;a href="https://notebook.drmaciver.com/"&gt;notebook&lt;/a&gt;&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Editor’s note: lol never mind.&lt;/span&gt;,
+but it &lt;em&gt;starts&lt;/em&gt; by arguing about the logical underpinnings of
+Kantian ethics. You should not however require much philosophy
+background to read it.&lt;/p&gt;
 
 
 &lt;p&gt;I’m currently doing a read through of Velleman’s “Self to Self”. You
@@ -1608,7 +1608,7 @@ already has authority over you.&lt;/p&gt;
 &lt;p&gt;The rest of the chapter tacitly acknowledges all of this by basically
 trying to work through a set of reasons for acting for reasons, it just
 can’t say out loud because it’s built on this premise that reasons are
-an inescapable&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;In general the idea of escapability of authority in
+an inescapable&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;In general the idea of escapability of authority in
 Velleman’s account of Kantian ethics seems (Editor’s note: What does it
 seem?? I apparently left this sentence hanging)&lt;/span&gt; source of authority.&lt;/p&gt;
 
@@ -1629,7 +1629,7 @@ tautologically satisfied - all your actions are caused by something. If
 a “reason” is a verbal explanation of why things happened as they did,
 then it will generally come after the fact rather than prior to it -
 almost everything we do well, we do without a significant amount of
-verbal reasoning prior to it.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;For an elaboration on this last point, I recommend “The
+verbal reasoning prior to it.&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;For an elaboration on this last point, I recommend “The
 Enigma of Reason” by Dan Sperber and Hugo Mercier, and “Sources of
 Power” by Gary Klein&lt;/span&gt;&lt;/p&gt;
 
@@ -1640,7 +1640,7 @@ answer to a “Why?” question. I will use &lt;strong&gt;actual cause&lt;/stron
 refer to something like… the state of the world that lead to a
 particular outcome, a set of conditions which would lead to the same
 outcome reliably. A &lt;strong&gt;reason&lt;/strong&gt; is a &lt;em&gt;necessarily
-incomplete&lt;/em&gt; description of the &lt;strong&gt;actual cause&lt;/strong&gt;.&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I’m using bold here to indicate that I intend these to
+incomplete&lt;/em&gt; description of the &lt;strong&gt;actual cause&lt;/strong&gt;.&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I’m using bold here to indicate that I intend these to
 be precise terms which are compatible with but more specific than
 colloquial meanings. When I use a bolded term without bolding I will
 usually be referring to someone else using the colloquial word. Or I
@@ -1768,7 +1768,7 @@ behaviour.&lt;/p&gt;
 at the cinema and you never show, even by the time the movie was
 supposed to have &lt;em&gt;ended&lt;/em&gt; let alone started. You’ve not sent me a
 text, you’re not responding to mine. By default, I’m likely to be pretty
-pissed off at you.&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;There’s likely some cultural variation in this,
+pissed off at you.&lt;label class="margin-toggle sidenote-number" for="fn5"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn5" type="checkbox"/&gt;&lt;span class="sidenote"&gt;There’s likely some cultural variation in this,
 especially if you’re merely late - I’m a stickler for punctuality, but
 know people from places where turning up an hour late is considered
 completely normal. Regardless though, I’m not making a universal claim
