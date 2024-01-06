@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-01-05T11:16:34+00:00</updated>
+  <updated>2024-01-06T07:04:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,145 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2022-12-10-14:53.html</id>
-    <title>Three key problems with Von-Neumann Morgenstern Utility Theory</title>
-    <updated>2022-12-10T16:38:16+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Three key problems with Von-Neumann Morgenstern Utility Theory&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2022-12-10&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;People semi-routinely argue about Von-Neumann Morgenstern Utility Theory with me.
-This rarely goes well - it doesn't change any minds and I don't enjoy it - so I am writing up what I think the core of my objections once and for all so that I can stop having this argument.&lt;/p&gt;
-
-
-&lt;p&gt;I don't really expect it to convince you, but also I'm not going to argue with you on this subject until you've read it and can tell me a good reason why you disagree.&lt;/p&gt;
-
-
-&lt;p&gt;I am not going to argue that VNM theory is never useful, nor that utilities in general are not. I am going to argue that VNM theory is an overly idealised model of agent behaviour that if you try to apply it to a general purpose agent fails in crucial ways.&lt;/p&gt;
-
-
-&lt;h3&gt;A brief recap&lt;/h3&gt;
-
-
-&lt;p&gt;VNM theory works as follows: You have a finite set of outcomes \(O_1, \ldots, O_n\), you are given lotteries which are some precisely known mixture of these outcomes, and you have the ability to make binary choices between these lotteries, where given any two lotteries you should either strictly prefer one of them or be indifferent between the two.&lt;/p&gt;
-
-
-&lt;p&gt;Under some allegedly reasonable assumptions, for any of these outcomes \(O_i\), you should be indifferent between it and some lottery \(p B + (1 - p) W\), where \(B\) is the (possibly joint) best outcome of the \(O_i\) and \(W\) is the (possibly joint) worst outcome. This \(p\) can then be considered the utility of \(O_i\) and under a bunch more (mostly actually reasonable) assumptions you should be making your choice to maximise the expected utility of lotteries.&lt;/p&gt;
-
-
-&lt;h3&gt;Fredkin's paradox, the doom of VNM theory&lt;/h3&gt;
-
-
-&lt;p&gt;I've written about two key issues with this setup before:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;&lt;a href="https://notebook.drmaciver.com/posts/2018-09-09-21:02.html"&gt;Physical agents can't implement discontinuous functions&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://notebook.drmaciver.com/posts/2021-06-07-06:51.html"&gt;You may have to do an infinite amount of computation to get that utility&lt;/a&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;Both of these are variations on a key problem with VNM theory: It ignores the cost of decision making, which comes up as &lt;em&gt;Fredkin's paradox&lt;/em&gt; - the difficulty of making a decision between two very similar options is much greater than the difficulty when one is much better than the other.&lt;/p&gt;
-
-
-&lt;p&gt;The first part is about physical difficulties with measurement - you can only know the probabilities up to some finite precision.
-VNM theory handwaves this away by saying that the probabilities are perfectly known, but this doesn't help you because that just moves the problem to be a computational one, and requires you to be able to solve the halting problem.
-e.g. choose between \(L_1 = p B + (1-p) W\) and \(L_2 = q B + (1-q) W\) where \(p = 0.0\ldots\) until machine \(M1\) halts and \(1\) after and \(q\) is the same but for machine \(M2\).&lt;/p&gt;
-
-
-&lt;p&gt;The second demonstrates that what you get out of the VNM theorem &lt;em&gt;is not a utility function&lt;/em&gt;. It is an algorithm that produces a sequence converging to a utility function, and you cannot recreate even the original decision procedure from that sequence without being able to take the limit (which requires running an infinite computation, again giving you the ability to solve the halting problem) near the boundary.&lt;/p&gt;
-
-
-&lt;p&gt;Both of these have the same core problem: In order to be able to identify the decision boundary that is essential for the VNM theory to work, you have to be omniscient. If you accept the flawed premise of knowing the probabilities with perfect knowledge, you can get away with only logical omniscience, but in order to know the probabilities with perfect knowledge you also have to be actually omniscient and not constrained by mere mortal abilities like having to observe the world to acquire knowledge of it.&lt;/p&gt;
-
-
-&lt;p&gt;Is this a nitpicky objection? Kindof, but I think it's important, for two reasons:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;It does fairly directly demonstrate why the central thing required for VNM theory to work cannot possibly work.&lt;/li&gt;
-&lt;li&gt;It does so in a way that shows that the model of VNM theory fails precisely because it fails to capture the behaviour of actually reasonable agents.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;The correct thing to do with Fredkin's paradox is to not care about it. An actual agent faced with anything like the VNM setup will choose non-deterministically in the region of indifference, with much of the nondeterminism coming from imprecision in their measurements. When your two alternatives are very close together, your preference will be more or less like a coin toss, when your two alternatives are very far apart it will be close to (or actually deterministic), but the continuity argument shows that you &lt;em&gt;have&lt;/em&gt; to have intermediate values - e.g. sometimes you'll pick \(A\) over \(B\) about 60% of the time.&lt;/p&gt;
-
-
-&lt;h3&gt;Bounded and known preferences&lt;/h3&gt;
-
-
-&lt;p&gt;The VNM setup uses the finite number of options to ensure that there is a best and worst outcome, and calculates your utility in terms of those best and worst options. Additionally it assumes that you know exactly how bad literally the worst thing that can possibly happen is and how good literally the best thing that can possibly happen is.&lt;/p&gt;
-
-
-&lt;p&gt;This means that VNM theory can only be useful in very well understood bounded domains. Getting to the point where you can even start running the computation for utility of somethign requires \(O(n)\) work to figure out the best and worst thing, you need to be familiar enough with all the options to have real preferences over them, and also there just can't be that many options.&lt;/p&gt;
-
-
-&lt;p&gt;For example, VNM theory is very poorly suited to dealing with anything to do with money, which has unbounded utility. This is pretty impressive going for a normative utility theory. Good job failing to handle literally the most utility like problem.&lt;/p&gt;
-
-
-&lt;p&gt;You could argue that there is a maximum amount of money that matters and for many bounded domain cases that's true and reasonable, but if that maximum amount is "literally the entire world economy", I argue that even if you treat this as the best possible thing, you have really very little conception of how good it is, and cannot possibly do so.&lt;/p&gt;
-
-
-&lt;p&gt;Even if you could have a reasonable opion, it's worth bearing in mind that you are now multiplying very large numbers by very small numbers. This makes the VNM utility extremely impractical, because you've basically reduced choosing what to have for lunch to the problem of Pascal's Wager.&lt;/p&gt;
-
-
-&lt;h3&gt;Updating preferences as a result of decisions&lt;/h3&gt;
-
-
-&lt;p&gt;In making its reasonableness assumptions, VNM theory equates two things that are distinct in any real agent: Instantaneous preferences and actual decisions over time. For example, it uses the possibility of being dutch booked as an argument against intransitive preferences.&lt;/p&gt;
-
-
-&lt;p&gt;But dutch booking is not a thing you can do to preferences, it's a thing you can do to decisions, and you can only use dutch books to extract infinite money from intransitive decisions if the agent is forced to make the same decision every time, i.e. can't learn from experience.&lt;/p&gt;
-
-
-&lt;p&gt;(Dutch booking is more complicated with non-deterministic decisions, but a broadly similar argument applies where instead of requiring transitivity you require certain bounds on sums of cycles. We're not going to worry about that here)&lt;/p&gt;
-
-
-&lt;p&gt;One easy way to learn from experience is to stop accepting offers from people who are trying to dutch book you, but even without that many patterns of intransitive decision making that are exhibited during learning are not susceptible to dutch booking, because they converge over time to transitive ones. e.g. an agent playing a multi-armed bandit problem (this again assumes imperfect knowledge of probabilities which VNM theory assumes away so isn't strictly applicable, but it's a good example) will regularly swap its preferences between arms as it plays, exhibiting many cycles.&lt;/p&gt;
-
-
-&lt;p&gt;One reason these differ is assumed away by VNM theory, which is that you know the probabilities. In actual decision making, you learn the probabilities through making choices which refine your world model. e.g. if you look at a multi-armed bandit algorithm, even though it has a perfectly well defined utility function, it routinely reverses its decisions as it learns more about the distribution of results of pulling a particular lever.&lt;/p&gt;
-
-
-&lt;p&gt;Even with known probabilities, real agents will change their mind, because often the only way to know how to value something is to try it. If you offer me a Durian, I'm probably going to say yes. If you offer me a Durian a second time, I'm probably going to say no. This isn't inconsistency, it's just learning from experience.&lt;/p&gt;
-
-
-&lt;p&gt;Another way decisions can change is because choices you make have actual consequences. For example, consider a betting agent. Given a choice between two monetary lotteries, one of which satisfies the Kelly criterion and one of which doesn't, they should pick the one that does, or in general the one that maximises the expected logarithm of their bankroll after making it, but then after the lottery is run their bankroll will be different, and so their future preferences will change.&lt;/p&gt;
-
-
-&lt;p&gt;Now, I already know the objection, VNM theory is about states of the world, not individual decisions, but this objection falls flat for several key reasons:&lt;/p&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;It justifies the reasonableness of its assumptions based on patterns of decision making, not behaviour of preferences, because without any consequence for preferences anything goes.&lt;/li&gt;
-&lt;li&gt;The number of possible states of the world is &lt;em&gt;very&lt;/em&gt; large, which runs into the problem that it is poorly suited to large and unbounded domains, so it is also bad for this.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;h3&gt;Where does VNM theory work?&lt;/h3&gt;
-
-
-&lt;p&gt;Basically it doesn't. VNM theory is bad, even in situations where utility theory is good.
-It is a poor normative argument that people have taken far more seriously than it deserves, with most of its foundation points failing to actually be viable for real agents.&lt;/p&gt;
-
-
-&lt;p&gt;That doesn't mean utility theory is never useful.
-In general, people &lt;em&gt;will&lt;/em&gt; converge over time to some sort of approximately utility maximising behaviour for some utility function in small domains that can be well understood and that have strong incentives for maximisation. Even there you will tend to run into the Fredkin's paradox problem, with significantly more nondeterminism at the decision margins than VNM theory would suggest.&lt;/p&gt;
-
-
-&lt;p&gt;It does mean however that in large unbounded high uncertainty environments with agents who learn their preferences over time and actually impact the state of the world, VNM theory cannot possibly predict their behaviour, and its claims to have normative force over their behaviour don't hold up.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2022-12-10-14:53.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2022-12-20-17:21.html</id>
     <title>Action generators</title>
@@ -1490,7 +1351,7 @@ them feels like a sort of collective cowardice to me.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-05-11:11.html</id>
     <title>Reason as a moral mechanism</title>
-    <updated>2024-01-05T11:16:34+00:00</updated>
+    <updated>2024-01-05T11:19:55+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Reason as a moral mechanism&lt;/p&gt;
@@ -1883,5 +1744,130 @@ like to try to articulate more at some point.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2024-01-05-11:11.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2024-01-06-07:04.html</id>
+    <title>Disingenuous Advice</title>
+    <updated>2024-01-06T07:04:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Disingenuous Advice&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2024-01-06&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I’m a big fan of giving advice. You should give more advice. &lt;a href="https://notebook.drmaciver.com/posts/2021-07-17-14:20.html"&gt;Appropriately&lt;/a&gt;
+and &lt;a href="https://drmaciver.substack.com/p/how-to-give-good-advice"&gt;effectively&lt;/a&gt;,
+but helping people is good and advice, done well, is one of the easiest
+ways to help people.&lt;/p&gt;
+
+
+&lt;p&gt;But a thing I’ve been noticing for a while is that a lot of advice
+isn’t really designed to help people. It’s designed to discharge your
+responsibility, real or imagined, for helping them, in a way that makes
+having the problem their problem rather than yours.&lt;/p&gt;
+
+
+&lt;p&gt;The characteristic features of this sort of disingenuous advice
+are:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;It’s not exactly &lt;em&gt;bad&lt;/em&gt; advice. It’s important that it could,
+in theory, solve the problem.&lt;/li&gt;
+&lt;li&gt;It tends to be quite one-size-fits-all. It shows very little
+engagement with the actual problem - if you were going to put in enough
+effort to tailor your advice, you’d probably make at least some effort
+to give reasonable advice.&lt;/li&gt;
+&lt;li&gt;It tends to be quite simple, so as to make it seem easy. It’s the
+sort of thing that you could very naturally use the word “just” in.&lt;/li&gt;
+&lt;li&gt;It seems to encourage closing off further conversation until you’ve
+tried to follow the advice. Reasons why the advice won’t work sound like
+excuses.&lt;/li&gt;
+&lt;li&gt;It is, in fact, very hard to follow this advice and even following
+the advice isn’t guaranteed to work.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;The prompt for me to start noticing this pattern is how often “go to
+therapy” is this. Therapy is a perfectly valuable tool that, if you can
+afford it, can help with many categories of emotional problems. It also
+tends to be suggested very blindly, for large categories of problems
+that it’s not especially suited for, and to people who are probably not
+well set up to benefit from it (e.g. because they can’t afford it, or
+because the real problem is that their life sucks in very tangible ways
+and their negative emotions mostly stem from that). But by suggesting
+going to therapy you make it very clear that their problems aren’t
+yours, you’ve suggested a solution now, they should go make it a
+therapist’s problem.&lt;/p&gt;
+
+
+&lt;p&gt;“Learn to code” as a response to career problems is another common
+one. It’s not necessarily bad advice - software is a pretty good career
+option for some people. But it’s not a catch all solution to career
+problems - not everyone is actually well suited to work in software,
+retraining is hard, getting your first software job is hard, and there
+may be many better lateral transfers for most people that actually get
+to use their current experience.[^Also not all jobs can be software jobs
+you do actually have to move atoms as well as bits.]&lt;/p&gt;
+
+
+&lt;p&gt;Another example that came up on discord recently was students having
+to ask permission to go to the bathroom in class, and how bad this is
+(especially given that it can be refused). The advice “you should have
+gone to the bathroom between classes” absolves your responsibility to
+them by making it the student’s fault for their lack of forethought.&lt;/p&gt;
+
+
+&lt;p&gt;All of these very effectively discharge your responsibility without
+being in any way helpful. They are, at best, &lt;a href="https://drmaciver.substack.com/i/39151933/checklist-advice"&gt;checklist
+advice&lt;/a&gt;, without any suggestion that you’re willing to do the rest of
+the checklist or, heaven forbid, actually offer real advice once the
+checklist is completed.&lt;/p&gt;
+
+
+&lt;p&gt;Now, often it’s perfectly reasonable not to want their problem to be
+yours. If it’s some stranger on the internet asking you to feel bad for
+them and care about their problems then… I don’t know, I probably think
+&lt;a href="https://notebook.drmaciver.com/posts/2022-01-23-13:27.html"&gt;you
+should feel bad for them&lt;/a&gt;. Certainly it’s not fard, but it might be
+mustahabb.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I got the &lt;a href="https://en.wikipedia.org/wiki/Fard"&gt;Islamic tiers of moral
+obligation&lt;/a&gt; from &lt;a href="/images/islamic-moral-tiers.webp"&gt;some
+random Tumblr post that no longer seems to exist on the internet&lt;/a&gt; but
+it’s very useful and somewhat better grain than most of the equivalent
+English words. The point I’m making here is that this is a morally good
+act that you are not required to do.&lt;/span&gt; But this is hard, and most people
+don’t want to do it. What they do want, however, is to feel good about
+themselves, so giving a plausible appearance of caring is helpful. Or,
+even better, being able to credibly suggest that in fact the speaker is
+bad for having this problem and it’s their fault for not having solved
+it already, thus not only discharging your obligations but making it
+clear that you didn’t have any obligations to discharge in the first
+place.&lt;/p&gt;
+
+
+&lt;p&gt;This is particularly bad behaviour when you’re not in the “strangers
+on the internet” scenario and it’s someone who you do have some sort of
+responsibility to - a personal relationship, one of your reports at
+work, a student of yours, etc. There it is not just a disavowal of
+responsibility that you don’t want to have, it’s a refusal to accept the
+responsibility that you &lt;em&gt;do&lt;/em&gt; have.&lt;/p&gt;
+
+
+&lt;p&gt;Even when you don’t have any responsibility to the person, I do think
+it is your responsibility not to give this sort of disingenuous advice.
+As well as being &lt;a href="https://notebook.drmaciver.com/posts/2024-01-04-10:02.html"&gt;dishonest&lt;/a&gt;,
+the sheer ubiquity of this behaviour is a failure of &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-14:34.html"&gt;collective
+responsibility&lt;/a&gt;, and while you might have no individual
+responsibility to the advice recipient, I do think you have an
+individual responsibility not to make these collective problems
+worse.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2024-01-06-07:04.html" rel="alternate"/>
   </entry>
 </feed>
