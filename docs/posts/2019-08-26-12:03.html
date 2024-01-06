@@ -17,6 +17,7 @@ DRMacIver's Notebook: Expected Time To Hit A Score Difference
 
     <meta property="og:creator" content="@DRMacIver">
 
+    <link rel="stylesheet" href="/pandoc.css"/>
     <link rel="stylesheet" href="/pygments.css"/>
     <link rel="stylesheet" href="/tufte.css"/>
     <link rel="stylesheet" href="/latex.css"/>
@@ -73,23 +74,36 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
 <dd class="post-date">2019-08-26</dd>
 </dl>
 
-<p>For reasons I've recently found myself interested in the following problem:
-Suppose you have a series of bernoulli random variables \(X_1, \ldots, X_n, \ldots\) independently distributed with identical parameter \(p &gt; \frac{1}{2}\).
-What is the expected time until you have at least \(k\) more successes than failures?</p>
-<p>I spent an annoyingly long time with it before realising in the shower this morning that it's actually very easy. The key to solving this is to realise the critical role that the \(k = 1\) version plays.</p>
-<p>Let \(a_k\) be the expected time to get \(k\) more successes than failures.
-Then \(a_0 = 0\) clearly.
-The key observation is that for \(n \geq 1\) we have \(a_n = 1 + (1 - p)(a_1 + a_n) + p a_{n - 1}\).</p>
+<p>For reasons I’ve recently found myself interested in the following
+problem: Suppose you have a series of bernoulli random variables <span class="math inline">\(X_1, \ldots, X_n, \ldots\)</span> independently
+distributed with identical parameter <span class="math inline">\(p &gt;
+\frac{1}{2}\)</span>. What is the expected time until you have at least
+<span class="math inline">\(k\)</span> more successes than failures?</p>
+<p>I spent an annoyingly long time with it before realising in the
+shower this morning that it’s actually very easy. The key to solving
+this is to realise the critical role that the <span class="math inline">\(k = 1\)</span> version plays.</p>
+<p>Let <span class="math inline">\(a_k\)</span> be the expected time to
+get <span class="math inline">\(k\)</span> more successes than failures.
+Then <span class="math inline">\(a_0 = 0\)</span> clearly. The key
+observation is that for <span class="math inline">\(n \geq 1\)</span> we
+have <span class="math inline">\(a_n = 1 + (1 - p)(a_1 + a_n) + p a_{n -
+1}\)</span>.</p>
 <p>Why does this hold?</p>
-<p>Think of it as an infinite state markov chain. When you are at state \(n\), you can either drop down to state \(n - 1\) with probability \(p\),
-or go up to state \(n + 1\) with probability \(1 - p\).
-If we go up a state, in order to return to the current state subsequent draws need to have exactly one more success than failure.
-By definition, this takes an expected time of \(a_1\).</p>
-<p>We can now plug in \(a_1\) to this and do some simple algebra to get that \(a_1 = (2 p - 1)^{-1}\).</p>
-<p>For \(n &gt; 1\) we again do some algebra and get \(a_n = p^{-1}(1 + (1 - p)a_1) + a_{n - 1}\),
-or \(a_n = (2p - 1)^{-1} + a_{n - 1}\).
-Putting these all together we get that \(a_n = n (2p - 1)^{-1}\)</p>
+<p>Think of it as an infinite state markov chain. When you are at state
+<span class="math inline">\(n\)</span>, you can either drop down to
+state <span class="math inline">\(n - 1\)</span> with probability <span class="math inline">\(p\)</span>, or go up to state <span class="math inline">\(n + 1\)</span> with probability <span class="math inline">\(1 - p\)</span>. If we go up a state, in order to
+return to the current state subsequent draws need to have exactly one
+more success than failure. By definition, this takes an expected time of
+<span class="math inline">\(a_1\)</span>.</p>
+<p>We can now plug in <span class="math inline">\(a_1\)</span> to this
+and do some simple algebra to get that <span class="math inline">\(a_1 =
+(2 p - 1)^{-1}\)</span>.</p>
+<p>For <span class="math inline">\(n &gt; 1\)</span> we again do some
+algebra and get <span class="math inline">\(a_n = p^{-1}(1 + (1 - p)a_1)
++ a_{n - 1}\)</span>, or <span class="math inline">\(a_n = (2p - 1)^{-1}
++ a_{n - 1}\)</span>. Putting these all together we get that <span class="math inline">\(a_n = n (2p - 1)^{-1}\)</span></p>
 <p>Which all told is a much nicer result than I was expecting.</p>
+
 </section>
 
     </article>

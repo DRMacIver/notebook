@@ -17,6 +17,7 @@ DRMacIver's Notebook: Learning from the real
 
     <meta property="og:creator" content="@DRMacIver">
 
+    <link rel="stylesheet" href="/pandoc.css"/>
     <link rel="stylesheet" href="/pygments.css"/>
     <link rel="stylesheet" href="/tufte.css"/>
     <link rel="stylesheet" href="/latex.css"/>
@@ -73,21 +74,46 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
 <dd class="post-date">2021-07-22</dd>
 </dl>
 
-<p>Back in <a href="https://notebook.drmaciver.com/posts/2020-03-04-11:18.html">Skirting the edge of disaster</a> I pointed out that most complex systems that have been running in production for a while (e.g. a legacy software system, the London underground, humanity) have the form that they do as a result of the following two rules:</p>
-<ol>
+<p>Back in <a href="https://notebook.drmaciver.com/posts/2020-03-04-11:18.html">Skirting
+the edge of disaster</a> I pointed out that most complex systems that
+have been running in production for a while (e.g. a legacy software
+system, the London underground, humanity) have the form that they do as
+a result of the following two rules:</p>
+<ol type="1">
 <li>If an important system is broken, we fix it.</li>
 <li>If a system has spare capacity, we place more demands on it.</li>
 </ol>
-<p>As you can tell from the title of the linked piece, I was mostly framing this as a bad thing: The consequence of being at a stable balance of these two things is that the system is constantly almost but not-quite broken, because every time it gets too far from broken it gets loaded more, and every time it breaks it gets fixed.</p>
-<p>But there's another side to this that I think is interesting: If you encounter a reasonably stable complex system in the wild (and you do, very regularly), this reliably means:</p>
-<ol>
-<li>It does a lot of things, because capabilities kept accreting over time, and they're often not things you would have thought of without that infrastructure because it changes what's easy and cheap to do.</li>
-<li>Everything that would have stopped it from doing those things has been solved.</li>
+<p>As you can tell from the title of the linked piece, I was mostly
+framing this as a bad thing: The consequence of being at a stable
+balance of these two things is that the system is constantly almost but
+not-quite broken, because every time it gets too far from broken it gets
+loaded more, and every time it breaks it gets fixed.</p>
+<p>But there’s another side to this that I think is interesting: If you
+encounter a reasonably stable complex system in the wild (and you do,
+very regularly), this reliably means:</p>
+<ol type="1">
+<li>It does a lot of things, because capabilities kept accreting over
+time, and they’re often not things you would have thought of without
+that infrastructure because it changes what’s easy and cheap to do.</li>
+<li>Everything that would have stopped it from doing those things has
+been solved.</li>
 </ol>
-<p>A lot of time, work, and ingenuity has often gone into getting it to that state, much of which would have been impossible to figure out from first principles because you had to <a href="https://notebook.drmaciver.com/posts/2020-02-26-16:07.html">try things and see what happened</a> before you could even learn that you needed to solve the problems, let alone how.</p>
-<p><a href="https://en.wikipedia.org/wiki/John_Gall_(author)">Gall's law</a> is "A complex system that works is invariably found to have evolved from a simple system that worked. A complex system designed from scratch never works and cannot be patched up to make it work. You have to start over with a working simple system."</p>
-<p>But this then leads to the question: OK smart guy, how do I make a working simple system?</p>
-<p>And I think the answer is often this: Go find a complex system that does what you want, and study it until you understand it well enough to extract a simple system from it.</p>
+<p>A lot of time, work, and ingenuity has often gone into getting it to
+that state, much of which would have been impossible to figure out from
+first principles because you had to <a href="https://notebook.drmaciver.com/posts/2020-02-26-16:07.html">try
+things and see what happened</a> before you could even learn that you
+needed to solve the problems, let alone how.</p>
+<p><a href="https://en.wikipedia.org/wiki/John_Gall_(author)">Gall’s
+law</a> is “A complex system that works is invariably found to have
+evolved from a simple system that worked. A complex system designed from
+scratch never works and cannot be patched up to make it work. You have
+to start over with a working simple system.”</p>
+<p>But this then leads to the question: OK smart guy, how do I make a
+working simple system?</p>
+<p>And I think the answer is often this: Go find a complex system that
+does what you want, and study it until you understand it well enough to
+extract a simple system from it.</p>
+
 </section>
 
     </article>

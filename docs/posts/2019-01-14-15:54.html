@@ -17,6 +17,7 @@ DRMacIver's Notebook: Reducer Pass Budgeting
 
     <meta property="og:creator" content="@DRMacIver">
 
+    <link rel="stylesheet" href="/pandoc.css"/>
     <link rel="stylesheet" href="/pygments.css"/>
     <link rel="stylesheet" href="/tufte.css"/>
     <link rel="stylesheet" href="/latex.css"/>
@@ -73,30 +74,45 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
 <dd class="post-date">2019-01-14</dd>
 </dl>
 
-<p>One of the hard problems in designing test-case reducers is pass ordering: You've split the reducer up into a number of different passes,
+<p>One of the hard problems in designing test-case reducers is pass
+ordering: You’ve split the reducer up into a number of different passes,
 now you want to know what order to run them in.</p>
-<p>A lot of why this is tricky is that some passes you just really don't want to run until you have to because they're much more expensive.
-I'm currently exploring a solution to this problem that mostly avoids it by just making that not the case.</p>
-<p>The solution is <em>budgeting</em> - running a reduction pass with a maximum number of calls it's allowed to make.</p>
+<p>A lot of why this is tricky is that some passes you just really don’t
+want to run until you have to because they’re much more expensive. I’m
+currently exploring a solution to this problem that mostly avoids it by
+just making that not the case.</p>
+<p>The solution is <em>budgeting</em> - running a reduction pass with a
+maximum number of calls it’s allowed to make.</p>
 <p>The following algorithm seems to work fairly well:</p>
-<ol>
+<ol type="1">
 <li>Set the budget to infinity, mark all passes as active.</li>
-<li>For each active reduction pass:<ol>
-<li>Run it, but halt it once it has made a number of <em>unsuccessful</em> calls that exceed the current budget.</li>
-<li>If it succeeded, set the budget to something appropriate. I'm currently trying double the mean number of calls made by a successful pass on this run through.</li>
+<li>For each active reduction pass:
+<ol type="1">
+<li>Run it, but halt it once it has made a number of
+<em>unsuccessful</em> calls that exceed the current budget.</li>
+<li>If it succeeded, set the budget to something appropriate. I’m
+currently trying double the mean number of calls made by a successful
+pass on this run through.</li>
 <li>If it failed, mark the pass as inactive.</li>
+</ol></li>
+<li>If the number of active passes is one or fewer, mark all passes as
+active.</li>
+<li>If no passes made progress, halt (note that the budget is infinite
+unless a pass has made progress, so this doesn’t affect correctness).
+Otherwise go back to step 2.</li>
 </ol>
-</li>
-<li>If the number of active passes is one or fewer, mark all passes as active.</li>
-<li>If no passes made progress, halt (note that the budget is infinite unless a pass has made progress, so this doesn't affect correctness). Otherwise go back to step 2.</li>
-</ol>
-<p>This seems to do a pretty decent job of keeping the badly behaved passes under control while still making good progress.</p>
+<p>This seems to do a pretty decent job of keeping the badly behaved
+passes under control while still making good progress.</p>
 <p>Other things I have tried:</p>
-<ol>
-<li>Starting the budget low and working upwards causes a lot of wasted work.</li>
-<li>Being more aggressive with lowering the budget on each pass does the same.</li>
-<li>Allowing just a single pass to remain active tends to result in a lot of pointless small shrinks and not much useful progress.</li>
+<ol type="1">
+<li>Starting the budget low and working upwards causes a lot of wasted
+work.</li>
+<li>Being more aggressive with lowering the budget on each pass does the
+same.</li>
+<li>Allowing just a single pass to remain active tends to result in a
+lot of pointless small shrinks and not much useful progress.</li>
 </ol>
+
 </section>
 
     </article>

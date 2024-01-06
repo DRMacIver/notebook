@@ -17,6 +17,7 @@ DRMacIver's Notebook: Caching interactions with an arbitrary interface
 
     <meta property="og:creator" content="@DRMacIver">
 
+    <link rel="stylesheet" href="/pandoc.css"/>
     <link rel="stylesheet" href="/pygments.css"/>
     <link rel="stylesheet" href="/tufte.css"/>
     <link rel="stylesheet" href="/latex.css"/>
@@ -73,99 +74,128 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
 <dd class="post-date">2019-02-15</dd>
 </dl>
 
-<p>This is a trick I've figured out recently for Hypothesis. I've yet to decide whether it's something I want to use, but it's a neat trick.
-It's much more easily implemented in a dynamically typed language, though I expect you could make something like it work in a statically typed language relatively easily with macros and metaprogramming and suchlike.</p>
-<p>Suppose you have some interface that has the following two properties:</p>
-<ol>
+<p>This is a trick I’ve figured out recently for Hypothesis. I’ve yet to
+decide whether it’s something I want to use, but it’s a neat trick. It’s
+much more easily implemented in a dynamically typed language, though I
+expect you could make something like it work in a statically typed
+language relatively easily with macros and metaprogramming and
+suchlike.</p>
+<p>Suppose you have some interface that has the following two
+properties:</p>
+<ol type="1">
 <li>All of the arguments to its methods are immutable.</li>
-<li>All of the return values of its methods are both immutable and hashable (for the sake of simplicity I will assume that none of its methods throw exceptions, but this can easily be made to work if they do).</li>
+<li>All of the return values of its methods are both immutable and
+hashable (for the sake of simplicity I will assume that none of its
+methods throw exceptions, but this can easily be made to work if they
+do).</li>
 </ol>
-<p>Now suppose you have a deterministic function that takes any implementation of this interface and returns an immutable value.
-You can cache that function, which may be a big win if it is very slow (as it may be if it's a complicated test function as in Hypothesis).</p>
-<p>You do not need to know anything about the implementation of the interface in order to do this.
-The cache will work by returning the value of any prior implementation of the interface that it is called with that is observationally equivalent to the current implementation.</p>
+<p>Now suppose you have a deterministic function that takes any
+implementation of this interface and returns an immutable value. You can
+cache that function, which may be a big win if it is very slow (as it
+may be if it’s a complicated test function as in Hypothesis).</p>
+<p>You do not need to know anything about the implementation of the
+interface in order to do this. The cache will work by returning the
+value of any prior implementation of the interface that it is called
+with that is observationally equivalent to the current
+implementation.</p>
 <p>How could this be?</p>
-<p>Because the function is deterministic, what it does next is determined entirely by what has happened so far,
-which is in turn determined entirely by the sequence of return values from the object it is called with.
-Thus every result of calling the function corresponds to a unique sequence of return values.
-Additionally, none of these sequences can be a prefix of another, because that would be non-deterministic behaviour - once the function ran and called another method after this point,
-another time it didn't.</p>
+<p>Because the function is deterministic, what it does next is
+determined entirely by what has happened so far, which is in turn
+determined entirely by the sequence of return values from the object it
+is called with. Thus every result of calling the function corresponds to
+a unique sequence of return values. Additionally, none of these
+sequences can be a prefix of another, because that would be
+non-deterministic behaviour - once the function ran and called another
+method after this point, another time it didn’t.</p>
 <p>This structure makes it very easy to store the results in a tree.
-Each node either records which method was called and its arguments, or that no more methods were called and is a leaf storing the return value, or stores a sentinel value to record that we don't know what happens here and need to ask the underlying test function (this is helpful for the representation):</p>
-<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">attr</span>
-<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
+Each node either records which method was called and its arguments, or
+that no more methods were called and is a leaf storing the return value,
+or stores a sentinel value to record that we don’t know what happens
+here and need to ask the underlying test function (this is helpful for
+the representation):</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a aria-hidden="true" href="#cb1-1" tabindex="-1"></a><span class="im">import</span> attr</span>
+<span id="cb1-2"><a aria-hidden="true" href="#cb1-2" tabindex="-1"></a><span class="im">from</span> collections <span class="im">import</span> defaultdict</span>
+<span id="cb1-3"><a aria-hidden="true" href="#cb1-3" tabindex="-1"></a></span>
+<span id="cb1-4"><a aria-hidden="true" href="#cb1-4" tabindex="-1"></a></span>
+<span id="cb1-5"><a aria-hidden="true" href="#cb1-5" tabindex="-1"></a><span class="at">@attr.s</span>()</span>
+<span id="cb1-6"><a aria-hidden="true" href="#cb1-6" tabindex="-1"></a><span class="kw">class</span> TreeNode(<span class="bu">object</span>):</span>
+<span id="cb1-7"><a aria-hidden="true" href="#cb1-7" tabindex="-1"></a>    <span class="co">"""Node wrapping a previous observation. Having a mutable</span></span>
+<span id="cb1-8"><a aria-hidden="true" href="#cb1-8" tabindex="-1"></a><span class="co">    wrapper class around the value makes the implementation a lot</span></span>
+<span id="cb1-9"><a aria-hidden="true" href="#cb1-9" tabindex="-1"></a><span class="co">    tidier."""</span></span>
+<span id="cb1-10"><a aria-hidden="true" href="#cb1-10" tabindex="-1"></a>    observation <span class="op">=</span> attr.ib(default<span class="op">=</span><span class="va">None</span>)</span>
+<span id="cb1-11"><a aria-hidden="true" href="#cb1-11" tabindex="-1"></a></span>
+<span id="cb1-12"><a aria-hidden="true" href="#cb1-12" tabindex="-1"></a><span class="at">@attr.s</span>()</span>
+<span id="cb1-13"><a aria-hidden="true" href="#cb1-13" tabindex="-1"></a><span class="kw">class</span> Result(<span class="bu">object</span>):</span>
+<span id="cb1-14"><a aria-hidden="true" href="#cb1-14" tabindex="-1"></a>    <span class="co">"""A previously observed return value."""</span></span>
+<span id="cb1-15"><a aria-hidden="true" href="#cb1-15" tabindex="-1"></a>    value <span class="op">=</span> attr.ib()</span>
+<span id="cb1-16"><a aria-hidden="true" href="#cb1-16" tabindex="-1"></a></span>
+<span id="cb1-17"><a aria-hidden="true" href="#cb1-17" tabindex="-1"></a><span class="at">@attr.s</span>()</span>
+<span id="cb1-18"><a aria-hidden="true" href="#cb1-18" tabindex="-1"></a><span class="kw">class</span> Decision(<span class="bu">object</span>):</span>
+<span id="cb1-19"><a aria-hidden="true" href="#cb1-19" tabindex="-1"></a>    <span class="co">"""A previously observed call to the underlying implementation."""</span></span>
+<span id="cb1-20"><a aria-hidden="true" href="#cb1-20" tabindex="-1"></a>    method <span class="op">=</span> attr.ib()</span>
+<span id="cb1-21"><a aria-hidden="true" href="#cb1-21" tabindex="-1"></a>    args <span class="op">=</span> attr.ib()</span>
+<span id="cb1-22"><a aria-hidden="true" href="#cb1-22" tabindex="-1"></a>    children <span class="op">=</span> attr.ib(default<span class="op">=</span>attr.Factory(<span class="kw">lambda</span>: defaultdict(TreeNode)))</span></code></pre></div>
+<p>To populate the tree you use the following wrapper around the
+implementation which proxies method calls to the underlying
+implementation and puts the observations in the tree:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a aria-hidden="true" href="#cb2-1" tabindex="-1"></a><span class="kw">class</span> WrapperImplementation(<span class="bu">object</span>):</span>
+<span id="cb2-2"><a aria-hidden="true" href="#cb2-2" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, tree, underlying):</span>
+<span id="cb2-3"><a aria-hidden="true" href="#cb2-3" tabindex="-1"></a>        <span class="va">self</span>.__tree <span class="op">=</span> tree</span>
+<span id="cb2-4"><a aria-hidden="true" href="#cb2-4" tabindex="-1"></a>        <span class="va">self</span>.__underlying <span class="op">=</span> underlying</span>
+<span id="cb2-5"><a aria-hidden="true" href="#cb2-5" tabindex="-1"></a></span>
+<span id="cb2-6"><a aria-hidden="true" href="#cb2-6" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__getattr__</span>(<span class="va">self</span>, name):</span>
+<span id="cb2-7"><a aria-hidden="true" href="#cb2-7" tabindex="-1"></a>        base <span class="op">=</span> <span class="bu">getattr</span>(<span class="va">self</span>.__underlying, <span class="st">'name'</span>)</span>
+<span id="cb2-8"><a aria-hidden="true" href="#cb2-8" tabindex="-1"></a>        <span class="cf">if</span> <span class="kw">not</span> <span class="bu">callable</span>(base):</span>
+<span id="cb2-9"><a aria-hidden="true" href="#cb2-9" tabindex="-1"></a>            <span class="cf">return</span> base</span>
+<span id="cb2-10"><a aria-hidden="true" href="#cb2-10" tabindex="-1"></a></span>
+<span id="cb2-11"><a aria-hidden="true" href="#cb2-11" tabindex="-1"></a>        <span class="kw">def</span> accept(<span class="op">*</span>args):</span>
+<span id="cb2-12"><a aria-hidden="true" href="#cb2-12" tabindex="-1"></a>            <span class="cf">if</span> <span class="va">self</span>.__tree.observation <span class="kw">is</span> <span class="va">None</span>:</span>
+<span id="cb2-13"><a aria-hidden="true" href="#cb2-13" tabindex="-1"></a>                <span class="va">self</span>.__tree.observation <span class="op">=</span> Decision(name, args)</span>
+<span id="cb2-14"><a aria-hidden="true" href="#cb2-14" tabindex="-1"></a>            rv <span class="op">=</span> base(<span class="op">*</span>args)</span>
+<span id="cb2-15"><a aria-hidden="true" href="#cb2-15" tabindex="-1"></a>            <span class="va">self</span>.__tree <span class="op">=</span> <span class="va">self</span>.__tree.observation.children[rv]</span>
+<span id="cb2-16"><a aria-hidden="true" href="#cb2-16" tabindex="-1"></a></span>
+<span id="cb2-17"><a aria-hidden="true" href="#cb2-17" tabindex="-1"></a></span>
+<span id="cb2-18"><a aria-hidden="true" href="#cb2-18" tabindex="-1"></a><span class="kw">def</span> call_recorded(fn, tree, implementation):</span>
+<span id="cb2-19"><a aria-hidden="true" href="#cb2-19" tabindex="-1"></a>    <span class="co">"""Call fn(implementation) and update the tree to reflect the</span></span>
+<span id="cb2-20"><a aria-hidden="true" href="#cb2-20" tabindex="-1"></a><span class="co">    interaction."""</span></span>
+<span id="cb2-21"><a aria-hidden="true" href="#cb2-21" tabindex="-1"></a>    <span class="cf">return</span> fn(WrapperImplementation(tree, implementaiton))</span></code></pre></div>
+<p>We can then define a cached version of the test function as
+follows:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a aria-hidden="true" href="#cb3-1" tabindex="-1"></a></span>
+<span id="cb3-2"><a aria-hidden="true" href="#cb3-2" tabindex="-1"></a><span class="kw">class</span> UnknownResult(<span class="pp">Exception</span>):</span>
+<span id="cb3-3"><a aria-hidden="true" href="#cb3-3" tabindex="-1"></a>    <span class="cf">pass</span></span>
+<span id="cb3-4"><a aria-hidden="true" href="#cb3-4" tabindex="-1"></a></span>
+<span id="cb3-5"><a aria-hidden="true" href="#cb3-5" tabindex="-1"></a><span class="kw">def</span> simulated_function(tree, implementation)</span>
+<span id="cb3-6"><a aria-hidden="true" href="#cb3-6" tabindex="-1"></a>    <span class="co">"""Either returns a previous result we've saved in the tree from</span></span>
+<span id="cb3-7"><a aria-hidden="true" href="#cb3-7" tabindex="-1"></a><span class="co">    calling this implementation, or raise UnknownResult."""</span></span>
+<span id="cb3-8"><a aria-hidden="true" href="#cb3-8" tabindex="-1"></a></span>
+<span id="cb3-9"><a aria-hidden="true" href="#cb3-9" tabindex="-1"></a>    previous <span class="op">=</span> tree.observation</span>
+<span id="cb3-10"><a aria-hidden="true" href="#cb3-10" tabindex="-1"></a></span>
+<span id="cb3-11"><a aria-hidden="true" href="#cb3-11" tabindex="-1"></a>    <span class="cf">if</span> previous <span class="kw">is</span> <span class="va">None</span>:</span>
+<span id="cb3-12"><a aria-hidden="true" href="#cb3-12" tabindex="-1"></a>        <span class="cf">raise</span> UnknownResult()</span>
+<span id="cb3-13"><a aria-hidden="true" href="#cb3-13" tabindex="-1"></a></span>
+<span id="cb3-14"><a aria-hidden="true" href="#cb3-14" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">isinstance</span>(previous, Result):</span>
+<span id="cb3-15"><a aria-hidden="true" href="#cb3-15" tabindex="-1"></a>        <span class="cf">return</span> previous.value</span>
+<span id="cb3-16"><a aria-hidden="true" href="#cb3-16" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb3-17"><a aria-hidden="true" href="#cb3-17" tabindex="-1"></a>        rv <span class="op">=</span> <span class="bu">getattr</span>(implementation, previous.method)(<span class="op">*</span>args)</span>
+<span id="cb3-18"><a aria-hidden="true" href="#cb3-18" tabindex="-1"></a>        tree <span class="op">=</span> previous.children[rv]</span></code></pre></div>
+<p>In order get a cached outcome of an arbitrary implementation it’s a
+little complicated and I can’t be bothered to sketch out the code: If
+you can reset the implementation to empty it’s easy, you just call it
+with the simulated function, reset it, and then call it recorded with
+the real function. If you can’t reset it then you can define a new
+wrapper implementation that replays the prefix that was observed in
+<code>simulated_function</code> without calling the underlying
+implementation, then starts calling the real implementation once you’re
+in unknown territory. You can implement this in terms of a resettable
+wrapper around the implementation.</p>
+<p>How useful is this technique? Unsure. It’s pretty niche. I think it
+might help a lot in Hypothesis though, where we’re currently having some
+significant scalability issues for large and hard to reduce examples,
+and having something like this will allow us to avoid keeping them
+around because of how easy it is to recreate the data without reinvoking
+the test function.</p>
 
-
-<span class="nd">@attr</span><span class="o">.</span><span class="n">s</span><span class="p">()</span>
-<span class="k">class</span> <span class="nc">TreeNode</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
-    <span class="sd">"""Node wrapping a previous observation. Having a mutable</span>
-<span class="sd">    wrapper class around the value makes the implementation a lot</span>
-<span class="sd">    tidier."""</span>
-    <span class="n">observation</span> <span class="o">=</span> <span class="n">attr</span><span class="o">.</span><span class="n">ib</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
-
-<span class="nd">@attr</span><span class="o">.</span><span class="n">s</span><span class="p">()</span>
-<span class="k">class</span> <span class="nc">Result</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
-    <span class="sd">"""A previously observed return value."""</span>
-    <span class="n">value</span> <span class="o">=</span> <span class="n">attr</span><span class="o">.</span><span class="n">ib</span><span class="p">()</span>
-
-<span class="nd">@attr</span><span class="o">.</span><span class="n">s</span><span class="p">()</span>
-<span class="k">class</span> <span class="nc">Decision</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
-    <span class="sd">"""A previously observed call to the underlying implementation."""</span>
-    <span class="n">method</span> <span class="o">=</span> <span class="n">attr</span><span class="o">.</span><span class="n">ib</span><span class="p">()</span>
-    <span class="n">args</span> <span class="o">=</span> <span class="n">attr</span><span class="o">.</span><span class="n">ib</span><span class="p">()</span>
-    <span class="n">children</span> <span class="o">=</span> <span class="n">attr</span><span class="o">.</span><span class="n">ib</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="n">attr</span><span class="o">.</span><span class="n">Factory</span><span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="n">defaultdict</span><span class="p">(</span><span class="n">TreeNode</span><span class="p">)))</span>
-</pre></div>
-<p>To populate the tree you use the following wrapper around the implementation which proxies method calls to the underlying implementation and puts the observations in the tree:</p>
-<div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">WrapperImplementation</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tree</span><span class="p">,</span> <span class="n">underlying</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">__tree</span> <span class="o">=</span> <span class="n">tree</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">__underlying</span> <span class="o">=</span> <span class="n">underlying</span>
-
-    <span class="k">def</span> <span class="fm">__getattr__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
-        <span class="n">base</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__underlying</span><span class="p">,</span> <span class="s1">'name'</span><span class="p">)</span>
-        <span class="k">if</span> <span class="ow">not</span> <span class="n">callable</span><span class="p">(</span><span class="n">base</span><span class="p">):</span>
-            <span class="k">return</span> <span class="n">base</span>
-
-        <span class="k">def</span> <span class="nf">accept</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
-            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__tree</span><span class="o">.</span><span class="n">observation</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-                <span class="bp">self</span><span class="o">.</span><span class="n">__tree</span><span class="o">.</span><span class="n">observation</span> <span class="o">=</span> <span class="n">Decision</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">args</span><span class="p">)</span>
-            <span class="n">rv</span> <span class="o">=</span> <span class="n">base</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">)</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">__tree</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__tree</span><span class="o">.</span><span class="n">observation</span><span class="o">.</span><span class="n">children</span><span class="p">[</span><span class="n">rv</span><span class="p">]</span>
-
-
-<span class="k">def</span> <span class="nf">call_recorded</span><span class="p">(</span><span class="n">fn</span><span class="p">,</span> <span class="n">tree</span><span class="p">,</span> <span class="n">implementation</span><span class="p">):</span>
-    <span class="sd">"""Call fn(implementation) and update the tree to reflect the</span>
-<span class="sd">    interaction."""</span>
-    <span class="k">return</span> <span class="n">fn</span><span class="p">(</span><span class="n">WrapperImplementation</span><span class="p">(</span><span class="n">tree</span><span class="p">,</span> <span class="n">implementaiton</span><span class="p">))</span>
-</pre></div>
-<p>We can then define a cached version of the test function as follows:</p>
-<div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">UnknownResult</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
-    <span class="k">pass</span>
-
-<span class="k">def</span> <span class="nf">simulated_function</span><span class="p">(</span><span class="n">tree</span><span class="p">,</span> <span class="n">implementation</span><span class="p">)</span>
-    <span class="sd">"""Either returns a previous result we've saved in the tree from</span>
-<span class="sd">    calling this implementation, or raise UnknownResult."""</span>
-
-    <span class="n">previous</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">observation</span>
-
-    <span class="k">if</span> <span class="n">previous</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="k">raise</span> <span class="n">UnknownResult</span><span class="p">()</span>
-
-    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">previous</span><span class="p">,</span> <span class="n">Result</span><span class="p">):</span>
-        <span class="k">return</span> <span class="n">previous</span><span class="o">.</span><span class="n">value</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">rv</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">implementation</span><span class="p">,</span> <span class="n">previous</span><span class="o">.</span><span class="n">method</span><span class="p">)(</span><span class="o">*</span><span class="n">args</span><span class="p">)</span>
-        <span class="n">tree</span> <span class="o">=</span> <span class="n">previous</span><span class="o">.</span><span class="n">children</span><span class="p">[</span><span class="n">rv</span><span class="p">]</span>
-</pre></div>
-<p>In order get a cached outcome of an arbitrary implementation it's a little complicated and I can't be bothered to sketch out the code:
-If you can reset the implementation to empty it's easy, you just call it with the simulated function,
-reset it, and then call it recorded with the real function.
-If you can't reset it then you can define a new wrapper implementation that replays the prefix that was observed in <code>simulated_function</code> without calling the underlying implementation,
-then starts calling the real implementation once you're in unknown territory.
-You can implement this in terms of a resettable wrapper around the implementation.</p>
-<p>How useful is this technique? Unsure. It's pretty niche. I think it might help a lot in Hypothesis though,
-where we're currently having some significant scalability issues for large and hard to reduce examples,
-and having something like this will allow us to avoid keeping them around because of how easy it is to recreate the data without reinvoking the test function.</p>
 </section>
 
     </article>

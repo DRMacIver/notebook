@@ -17,6 +17,7 @@ DRMacIver's Notebook: We are surrounded by ghosts
 
     <meta property="og:creator" content="@DRMacIver">
 
+    <link rel="stylesheet" href="/pandoc.css"/>
     <link rel="stylesheet" href="/pygments.css"/>
     <link rel="stylesheet" href="/tufte.css"/>
     <link rel="stylesheet" href="/latex.css"/>
@@ -73,86 +74,133 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
 <dd class="post-date">2020-02-16</dd>
 </dl>
 
-<p>(This is part of an attempt to get back to using my notebook to write more half formed thoughts)</p>
-<p>I recently read "Epistemic injustice in mathematics" by Rittberg, Tanswell, and Van Bendegem.
-In it they talk about the idea of <em>ghost theorems</em>:</p>
+<p>(This is part of an attempt to get back to using my notebook to write
+more half formed thoughts)</p>
+<p>I recently read “Epistemic injustice in mathematics” by Rittberg,
+Tanswell, and Van Bendegem. In it they talk about the idea of <em>ghost
+theorems</em>:</p>
 <blockquote>
-<p>There are mathematical results which are taken as accepted in a mathematical community,
-relied upon in talks, discussion, and proving further results, but which cannot be
-traced to a concrete proof in the literature. These results are part of the expert knowledge
-one is expected to have in certain communities and we will present examples
-below.
-...
-The kind of result we wish to discuss, i.e. the kind of result whose proof cannot be traced
-in the literature, thus seems to be a special kind of folk theorem for which we propose
-the term “ghost theorem”; these theorems are immaterial in the sense that they are not
-proven in the literature yet they “haunt” parts of daily mathematical life.</p>
+<p>There are mathematical results which are taken as accepted in a
+mathematical community, relied upon in talks, discussion, and proving
+further results, but which cannot be traced to a concrete proof in the
+literature. These results are part of the expert knowledge one is
+expected to have in certain communities and we will present examples
+below. … The kind of result we wish to discuss, i.e. the kind of result
+whose proof cannot be traced in the literature, thus seems to be a
+special kind of folk theorem for which we propose the term “ghost
+theorem”; these theorems are immaterial in the sense that they are not
+proven in the literature yet they “haunt” parts of daily mathematical
+life.</p>
 </blockquote>
-<p>They highlight ghost theorems as a particular source of <em>epistemic injustice</em> against people trying to participate in mathematics as an epistemic community.
-They focus on an example of someone trying to get some results published, and having them be rejected because they were ghost theorems - even though their submission had never been published, it was "obvious".
-I think it would still have been an injustice of sorts without that gatekeeping,
-because presumably these results are useful, and there is no way to discover them without privileged access to the community.
-As someone who does a lot of solo reading in a variety of fields,
-a kind of <a href="https://fanlore.org/wiki/Feral_(glossary_term)">feral fan</a> for a variety of academic disciplines,
-this is an injustice that particularly matters to me:
-There are probably many things that are <em>completely obvious</em> if you've been trained in, say, phenomenology,
-that I as an outsider will never discover no matter how much of the literature on the subject I read.</p>
-<p>I'd like to call the more general phenomenon that this is a specific instance of this "ghost knowledge":
-It is knowledge that is present <em>somewhere</em> in the epistemic community, and is perhaps readily accessible to some central member of that community,
-but it is not really written down anywhere and it's not clear how to access it.
+<p>They highlight ghost theorems as a particular source of <em>epistemic
+injustice</em> against people trying to participate in mathematics as an
+epistemic community. They focus on an example of someone trying to get
+some results published, and having them be rejected because they were
+ghost theorems - even though their submission had never been published,
+it was “obvious”. I think it would still have been an injustice of sorts
+without that gatekeeping, because presumably these results are useful,
+and there is no way to discover them without privileged access to the
+community. As someone who does a lot of solo reading in a variety of
+fields, a kind of <a href="https://fanlore.org/wiki/Feral_(glossary_term)">feral fan</a> for
+a variety of academic disciplines, this is an injustice that
+particularly matters to me: There are probably many things that are
+<em>completely obvious</em> if you’ve been trained in, say,
+phenomenology, that I as an outsider will never discover no matter how
+much of the literature on the subject I read.</p>
+<p>I’d like to call the more general phenomenon that this is a specific
+instance of this “ghost knowledge”: It is knowledge that is present
+<em>somewhere</em> in the epistemic community, and is perhaps readily
+accessible to some central member of that community, but it is not
+really written down anywhere and it’s not clear how to access it.
 Roughly what makes something ghost knowledge is two things:</p>
-<ol>
-<li>It is readily discoverable if you have trusted access to expert members of the community.</li>
+<ol type="1">
+<li>It is readily discoverable if you have trusted access to expert
+members of the community.</li>
 <li>It is almost completely inaccessible if you are not.</li>
 </ol>
-<p>In this sense, <em>most</em> knowledge is ghost, particularly if you take an expansive view of what counts as an epistemic community.</p>
-<p>A recent (more recent than the publishing of this paper) related example was "Eigenvectors from Eigenvalues: a survey of a basic identity in linear algebra" by Denton, Parke, Tao, and Zhang.
-A couple of physicists found an interesting (to them, and apparently to others who care about such things, I confess I find it too technical to be interesting - I understand the mathematics well enough but don't work in this field so have a differently tuned sense of interest).
-The story of this as I understand it is roughly:</p>
-<ol>
-<li>A bunch of physicists discovered an interesting and, apparently, novel identity.</li>
-<li>They emailed Terence Tao and he almost immediately was able to provide multiple proofs of it.</li>
+<p>In this sense, <em>most</em> knowledge is ghost, particularly if you
+take an expansive view of what counts as an epistemic community.</p>
+<p>A recent (more recent than the publishing of this paper) related
+example was “Eigenvectors from Eigenvalues: a survey of a basic identity
+in linear algebra” by Denton, Parke, Tao, and Zhang. A couple of
+physicists found an interesting (to them, and apparently to others who
+care about such things, I confess I find it too technical to be
+interesting - I understand the mathematics well enough but don’t work in
+this field so have a differently tuned sense of interest). The story of
+this as I understand it is roughly:</p>
+<ol type="1">
+<li>A bunch of physicists discovered an interesting and, apparently,
+novel identity.</li>
+<li>They emailed Terence Tao and he almost immediately was able to
+provide multiple proofs of it.</li>
 <li>They published a paper together.</li>
-<li>It got a lot of press because Terence Tao is something of a big deal and discovering a new result in such a mature field is surprising.</li>
-<li>Turns out it was actually a result that was not so much "well known" as repeatedly rediscovered in myriad different places, but had never made a splash before.</li>
+<li>It got a lot of press because Terence Tao is something of a big deal
+and discovering a new result in such a mature field is surprising.</li>
+<li>Turns out it was actually a result that was not so much “well known”
+as repeatedly rediscovered in myriad different places, but had never
+made a splash before.</li>
 <li>They wrote a new survey paper about this.</li>
 </ol>
-<p>If you look at only parts (1-3) this is a perfect example of ghost knowledge.
-But <em>the result already existed in the literature</em>.</p>
+<p>If you look at only parts (1-3) this is a perfect example of ghost
+knowledge. But <em>the result already existed in the
+literature</em>.</p>
 <p>To quote a great philosopher:</p>
 <blockquote>
-<p>“But the plans were on display…”
-“On display? I eventually had to go down to the cellar to find them.”
-“That’s the display department.”
-“With a flashlight.”
-“Ah, well, the lights had probably gone.”
-“So had the stairs.”
-“But look, you found the notice, didn’t you?”
-“Yes,” said Arthur, “yes I did. It was on display in the bottom of a locked filing cabinet stuck in a disused lavatory with a sign on the door saying ‘Beware of the Leopard.”</p>
+<p>“But the plans were on display…” “On display? I eventually had to go
+down to the cellar to find them.” “That’s the display department.” “With
+a flashlight.” “Ah, well, the lights had probably gone.” “So had the
+stairs.” “But look, you found the notice, didn’t you?” “Yes,” said
+Arthur, “yes I did. It was on display in the bottom of a locked filing
+cabinet stuck in a disused lavatory with a sign on the door saying
+’Beware of the Leopard.”</p>
 </blockquote>
-<p>It is very often the case that even when knowledge <em>is</em> written down somewhere, it's nearly impossible to find it.
-This has happened to me in mathematics before:
-A friend and I once discovered a result that we thought was very interesting (under certain conditions, the best possible continuous approximation to a discontinuous fucntion exists), only to eventually discover that the result <em>was</em> known, it had just been published in an obscure mathematical journal, in the 1970s, in Poland,
-so virtually nobody knew about it.
-Fortunately we had never put in much serious effort into trying to publish it before discovering that (honestly we probably should have, but neither of us were professional mathematicians by that point),
-but it was still annoying.</p>
-<p>The core problem that causes all of this is that there's a leaky pipeline of knowledge from epistemic communities to the outside world.
+<p>It is very often the case that even when knowledge <em>is</em>
+written down somewhere, it’s nearly impossible to find it. This has
+happened to me in mathematics before: A friend and I once discovered a
+result that we thought was very interesting (under certain conditions,
+the best possible continuous approximation to a discontinuous fucntion
+exists), only to eventually discover that the result <em>was</em> known,
+it had just been published in an obscure mathematical journal, in the
+1970s, in Poland, so virtually nobody knew about it. Fortunately we had
+never put in much serious effort into trying to publish it before
+discovering that (honestly we probably should have, but neither of us
+were professional mathematicians by that point), but it was still
+annoying.</p>
+<p>The core problem that causes all of this is that there’s a leaky
+pipeline of knowledge from epistemic communities to the outside world.
 In order for you to discover a piece of knowledge:</p>
-<ol>
-<li>It has to be interesting enough for someone to think it is worth writing down.</li>
-<li>It has to be interesting enough that it gets accepted (though if not, it may end up on a random blog post if you're lucky).</li>
-<li>It has to be interesting or well organised enough that it gets surfaced in a way you can find.</li>
-<li>It has to be accessible enough for you to be able to find it (e.g. it can't use super technical terms that you'll have no way to ever discover without access to an expert).</li>
+<ol type="1">
+<li>It has to be interesting enough for someone to think it is worth
+writing down.</li>
+<li>It has to be interesting enough that it gets accepted (though if
+not, it may end up on a random blog post if you’re lucky).</li>
+<li>It has to be interesting or well organised enough that it gets
+surfaced in a way you can find.</li>
+<li>It has to be accessible enough for you to be able to find it
+(e.g. it can’t use super technical terms that you’ll have no way to ever
+discover without access to an expert).</li>
 </ol>
-<p>This pipeline is leaky enough that it would be very surprising if <em>most</em> knowledge produced by an epistemic community were accessible to you.</p>
-<p>This may not seem like a big deal when you think of communities like mathematics, where most consumers of its contents are also members of the community, but it's a big deal when you consider two things:</p>
-<ol>
-<li><em>Everything</em> is like this, including subjects that everyone would benefit from. I read a lot of therapy books for example and I'll bet that there's at least two orders of magnitude more ghost knowledge about therapy than I have access to.</li>
-<li>Every community is an epistemic community. Many lessons are e.g. learned over and over again inside companies, and are never written down anywhere, or when they are are so defanged that nobody can benefit from them. The pipeline is different, but the problem is the same.</li>
+<p>This pipeline is leaky enough that it would be very surprising if
+<em>most</em> knowledge produced by an epistemic community were
+accessible to you.</p>
+<p>This may not seem like a big deal when you think of communities like
+mathematics, where most consumers of its contents are also members of
+the community, but it’s a big deal when you consider two things:</p>
+<ol type="1">
+<li><em>Everything</em> is like this, including subjects that everyone
+would benefit from. I read a lot of therapy books for example and I’ll
+bet that there’s at least two orders of magnitude more ghost knowledge
+about therapy than I have access to.</li>
+<li>Every community is an epistemic community. Many lessons are
+e.g. learned over and over again inside companies, and are never written
+down anywhere, or when they are are so defanged that nobody can benefit
+from them. The pipeline is different, but the problem is the same.</li>
 </ol>
-<p>Given this, we are surrounded by ghosts:
-The information that is written down and that we can access is so thin on the ground compared to what's actually out there,
-it's astonishing that we ever get anything done.</p>
+<p>Given this, we are surrounded by ghosts: The information that is
+written down and that we can access is so thin on the ground compared to
+what’s actually out there, it’s astonishing that we ever get anything
+done.</p>
+
 </section>
 
     </article>

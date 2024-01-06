@@ -17,6 +17,7 @@ DRMacIver's Notebook: Almost every set is immune
 
     <meta property="og:creator" content="@DRMacIver">
 
+    <link rel="stylesheet" href="/pandoc.css"/>
     <link rel="stylesheet" href="/pygments.css"/>
     <link rel="stylesheet" href="/tufte.css"/>
     <link rel="stylesheet" href="/latex.css"/>
@@ -73,30 +74,65 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
 <dd class="post-date">2019-12-07</dd>
 </dl>
 
-<p>A set \(A \subseteq N\) is recursively enumerable if it can be enumerated by a computable function (formally, if there is some turing machine that halts on an input if and only if it's in the set).
-If an infinite set contains no infinite recursively enumerable subsets, it is called immune.
-I was introduced to this concept by <a href="https://twitter.com/gfredericks_/status/1203345019115053056">Gary Fredericks</a>:</p>
+<p>A set <span class="math inline">\(A \subseteq N\)</span> is
+recursively enumerable if it can be enumerated by a computable function
+(formally, if there is some turing machine that halts on an input if and
+only if it’s in the set). If an infinite set contains no infinite
+recursively enumerable subsets, it is called immune. I was introduced to
+this concept by <a href="https://twitter.com/gfredericks_/status/1203345019115053056">Gary
+Fredericks</a>:</p>
 <blockquote>
-<p>An "immune set" is an infinite set of natural numbers of which no computer program can print out any infinite subset.</p>
-<p>The fact that they "exist" at all is pretty weird.</p>
+<p>An “immune set” is an infinite set of natural numbers of which no
+computer program can print out any infinite subset.</p>
+<p>The fact that they “exist” at all is pretty weird.</p>
 </blockquote>
-<p>In fact they are not weird, they are normal. Almost every infinite subset of \(\mathbb{N}\) is immune.</p>
-<p>To see this, consider the set \(C = \{0, 1\}^\mathbb{N}\). This can be mapped to the power set of the natural numbers by mapping a set to its indicator function \(1_A\), where \(1_A(x) = 1\) if \(x \in A\) and \(0\) otherwise.
-Every \(x \in C\) is the indicator function of \(A = \{n: x_n = 1\}\) so this mapping is a bijection.</p>
-<p>\(C\) is <a href="https://en.wikipedia.org/wiki/Probability_space">a probability space</a>, with the probability corresponding to the probability of observing an event with an infinite sequence of uniform coin tosses.
-This is equivalent to picking a set by randomly assigning every natural number to be an element of it with probability \(\frac{1}{2}\).</p>
-<p>In this note I'll show that a randomly chosen \(x \in C\) corresponds to an immune set with probability one.</p>
-<p>To see this, let \(A \subseteq \mathbb{N}\) be any infinite set. The probability that a random element of \(C\) contains \(A\) as a subset of its corresponding set must be zero, because this happens if and only if \(x_n = 1\) for all \(n \in A\).
-The probability of any \(n\) given coordinates being \(1\) is \(2^{-n}\), so the probability of infinitely many specified coordinates being \(1\) must be \(\leq 2^{n}\) for all \(n\), i.e. \(0\).</p>
-<p>There are only countably many infinite recursively enumerable sets (because each is defined by a turing machine and there are only countably many turing machines).
-Enumerate them as \(R_i\).
-\(P(x \text{ is not immune}) = P(\bigcup\limits_n \{1_C : R_n \subseteq C\}) \leq \sum\limits_n P(\{1_C: R_n \subseteq C\}) = \sum\limits_n 0 = 0\).
-So the probability of a randomly picked subset of \(\mathbb{N}\) <em>not</em> being immune is zero,
-and thus the probability of a randomly picked subset of \(\mathbb{N}\) is \(1\).</p>
-<p>Another way of seeing more or less the same thing (they are not actually the same theorem, but they have the same interpretation that the "typical" set is immune - it's just a different notion of typicality): the set of points containing some infinite set \(A\) is a closed set (because its complement is \(\bigcup\limits_{i \in A} \{x: x_i = 0\}\)) and has empty interior (because for any finite set of natural numbers there is some \(i \in A\) not in that set, so those numbers are not enough to demonstate membership of \(A\)). Therefore the set of non-immune sets is <a href="https://en.wikipedia.org/wiki/Meagre_set">meager</a>. The comeager sets are another type of "large" set, and in particular by <a href="https://en.wikipedia.org/wiki/Baire_category_theorem">the Baire Category Theorem</a> comeager sets are necessarily uncountable.</p>
-<p>This kind of reasoning might be a bit strange if you're not used to it, but it's fairly common in set theory - rather than constructing objects satisfying a particular property,
-we show that in some sense it is "typical" that objects satisfy that property,
-and the ones that don't that we normally concern ourselves with are a weird uncommon special case (this sort of reasoning is also common in more concrete subjects like combinatorics).</p>
+<p>In fact they are not weird, they are normal. Almost every infinite
+subset of <span class="math inline">\(\mathbb{N}\)</span> is immune.</p>
+<p>To see this, consider the set <span class="math inline">\(C = \{0,
+1\}^\mathbb{N}\)</span>. This can be mapped to the power set of the
+natural numbers by mapping a set to its indicator function <span class="math inline">\(1_A\)</span>, where <span class="math inline">\(1_A(x) = 1\)</span> if <span class="math inline">\(x \in A\)</span> and <span class="math inline">\(0\)</span> otherwise. Every <span class="math inline">\(x \in C\)</span> is the indicator function of
+<span class="math inline">\(A = \{n: x_n = 1\}\)</span> so this mapping
+is a bijection.</p>
+<p><span class="math inline">\(C\)</span> is <a href="https://en.wikipedia.org/wiki/Probability_space">a probability
+space</a>, with the probability corresponding to the probability of
+observing an event with an infinite sequence of uniform coin tosses.
+This is equivalent to picking a set by randomly assigning every natural
+number to be an element of it with probability <span class="math inline">\(\frac{1}{2}\)</span>.</p>
+<p>In this note I’ll show that a randomly chosen <span class="math inline">\(x \in C\)</span> corresponds to an immune set with
+probability one.</p>
+<p>To see this, let <span class="math inline">\(A \subseteq
+\mathbb{N}\)</span> be any infinite set. The probability that a random
+element of <span class="math inline">\(C\)</span> contains <span class="math inline">\(A\)</span> as a subset of its corresponding set
+must be zero, because this happens if and only if <span class="math inline">\(x_n = 1\)</span> for all <span class="math inline">\(n \in A\)</span>. The probability of any <span class="math inline">\(n\)</span> given coordinates being <span class="math inline">\(1\)</span> is <span class="math inline">\(2^{-n}\)</span>, so the probability of infinitely
+many specified coordinates being <span class="math inline">\(1\)</span>
+must be <span class="math inline">\(\leq 2^{n}\)</span> for all <span class="math inline">\(n\)</span>, i.e. <span class="math inline">\(0\)</span>.</p>
+<p>There are only countably many infinite recursively enumerable sets
+(because each is defined by a turing machine and there are only
+countably many turing machines). Enumerate them as <span class="math inline">\(R_i\)</span>. <span class="math inline">\(P(x
+\text{ is not immune}) = P(\bigcup\limits_n \{1_C : R_n \subseteq C\})
+\leq \sum\limits_n P(\{1_C: R_n \subseteq C\}) = \sum\limits_n 0 =
+0\)</span>. So the probability of a randomly picked subset of <span class="math inline">\(\mathbb{N}\)</span> <em>not</em> being immune is
+zero, and thus the probability of a randomly picked subset of <span class="math inline">\(\mathbb{N}\)</span> is <span class="math inline">\(1\)</span>.</p>
+<p>Another way of seeing more or less the same thing (they are not
+actually the same theorem, but they have the same interpretation that
+the “typical” set is immune - it’s just a different notion of
+typicality): the set of points containing some infinite set <span class="math inline">\(A\)</span> is a closed set (because its complement
+is <span class="math inline">\(\bigcup\limits_{i \in A} \{x: x_i =
+0\}\)</span>) and has empty interior (because for any finite set of
+natural numbers there is some <span class="math inline">\(i \in
+A\)</span> not in that set, so those numbers are not enough to
+demonstate membership of <span class="math inline">\(A\)</span>).
+Therefore the set of non-immune sets is <a href="https://en.wikipedia.org/wiki/Meagre_set">meager</a>. The comeager
+sets are another type of “large” set, and in particular by <a href="https://en.wikipedia.org/wiki/Baire_category_theorem">the Baire
+Category Theorem</a> comeager sets are necessarily uncountable.</p>
+<p>This kind of reasoning might be a bit strange if you’re not used to
+it, but it’s fairly common in set theory - rather than constructing
+objects satisfying a particular property, we show that in some sense it
+is “typical” that objects satisfy that property, and the ones that don’t
+that we normally concern ourselves with are a weird uncommon special
+case (this sort of reasoning is also common in more concrete subjects
+like combinatorics).</p>
+
 </section>
 
     </article>

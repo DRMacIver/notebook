@@ -17,6 +17,7 @@ DRMacIver's Notebook: Notation for test-case reducers
 
     <meta property="og:creator" content="@DRMacIver">
 
+    <link rel="stylesheet" href="/pandoc.css"/>
     <link rel="stylesheet" href="/pygments.css"/>
     <link rel="stylesheet" href="/tufte.css"/>
     <link rel="stylesheet" href="/latex.css"/>
@@ -73,22 +74,33 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
 <dd class="post-date">2018-09-01</dd>
 </dl>
 
-<p>A thing I've been noticing recently is that it's really useful to have compact notation for describing things.
-Usually this is equivalent to primivitives + some combinators.</p>
-<p>One thing that I think it would be useful to have such a notation for is (greedy) test-case reduction passes.
-They combine pretty well, and it makes it useful to discuss various things.</p>
-<p>For example, if you have reducers \(A\), \(B\), you can define the reducer \(AB\) which runs \(A\), then
-runs \(B\) on its result. You can also define the reducer \(A^+\) which runs \(A\) to a fixed point.</p>
-<p>Another interesting combinator is \(/\). \(A / B\) runs \(A\), then runs \(B\) if \(A\) didn't do anything..</p>
-<p>There are a bunch of really basic algebraic relations that hold, like composition and \(/\) are associative,
-and \((A^+)^+ = A^+\), but not a huge amount beyond that.</p>
-<p>A bunch of interesting questions about test-case reduction can be compactly expressed in this notation though.
-For example, suppose you want to reduce to something that is a fixed point of both \(A\) and \(B\).
-You could do \((AB)^+\), but you could also do \((A^+B^+)^+\), and it's quite natural to do this in some contexts.
-My suspicion, which I've yet to verify, is that it's almost never the right thing to do.</p>
-<p>You can kinda regard the quadratic mode failure of greedy search as an instance of this problem:
-If \(\delta_i\) is the operation that deletes the element at position \(i\), the correct pass to run for greedy deletion is \((\delta_0^+ \ldots \delta_n^+)^+\),
-but if you start again at the beginning every time you succeed you are running \((\delta_0 / \ldots / \delta_n)^+\).</p>
+<p>A thing I’ve been noticing recently is that it’s really useful to
+have compact notation for describing things. Usually this is equivalent
+to primivitives + some combinators.</p>
+<p>One thing that I think it would be useful to have such a notation for
+is (greedy) test-case reduction passes. They combine pretty well, and it
+makes it useful to discuss various things.</p>
+<p>For example, if you have reducers <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span>, you can define the reducer <span class="math inline">\(AB\)</span> which runs <span class="math inline">\(A\)</span>, then runs <span class="math inline">\(B\)</span> on its result. You can also define the
+reducer <span class="math inline">\(A^+\)</span> which runs <span class="math inline">\(A\)</span> to a fixed point.</p>
+<p>Another interesting combinator is <span class="math inline">\(/\)</span>. <span class="math inline">\(A /
+B\)</span> runs <span class="math inline">\(A\)</span>, then runs <span class="math inline">\(B\)</span> if <span class="math inline">\(A\)</span> didn’t do anything..</p>
+<p>There are a bunch of really basic algebraic relations that hold, like
+composition and <span class="math inline">\(/\)</span> are associative,
+and <span class="math inline">\((A^+)^+ = A^+\)</span>, but not a huge
+amount beyond that.</p>
+<p>A bunch of interesting questions about test-case reduction can be
+compactly expressed in this notation though. For example, suppose you
+want to reduce to something that is a fixed point of both <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>. You could do <span class="math inline">\((AB)^+\)</span>, but you could also do <span class="math inline">\((A^+B^+)^+\)</span>, and it’s quite natural to do
+this in some contexts. My suspicion, which I’ve yet to verify, is that
+it’s almost never the right thing to do.</p>
+<p>You can kinda regard the quadratic mode failure of greedy search as
+an instance of this problem: If <span class="math inline">\(\delta_i\)</span> is the operation that deletes
+the element at position <span class="math inline">\(i\)</span>, the
+correct pass to run for greedy deletion is <span class="math inline">\((\delta_0^+ \ldots \delta_n^+)^+\)</span>, but if
+you start again at the beginning every time you succeed you are running
+<span class="math inline">\((\delta_0 / \ldots /
+\delta_n)^+\)</span>.</p>
+
 </section>
 
     </article>

@@ -17,6 +17,7 @@ DRMacIver's Notebook: A Boltzmann Agent with Very Bad Judgement
 
     <meta property="og:creator" content="@DRMacIver">
 
+    <link rel="stylesheet" href="/pandoc.css"/>
     <link rel="stylesheet" href="/pygments.css"/>
     <link rel="stylesheet" href="/tufte.css"/>
     <link rel="stylesheet" href="/latex.css"/>
@@ -73,11 +74,29 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
 <dd class="post-date">2019-04-02</dd>
 </dl>
 
-<p>As per <a href="https://notebook.drmaciver.com/posts/2019-03-26-17:59.html">previous post</a>, it can make sense when looking at a set of consistent propositions to consider agents as Boltzmann samplers over the set of valid consistent beliefs, with their reliability measured by the expected number of true beliefs.</p>
-<p>A thing I hadn't previously realised is that this can cause an agent that is on average reliable to be reliably wrong for some propositions.</p>
-<p>Consider a chain of propositions of the form \(P_1 \implies \ldots \implies P_n\). There are exactly \(n + 1\) possible consistent beliefs for this sampler (each defined by the first \(P_i\) that the agent believes), so the Boltzmann generating function is \(B(x) = 1 + \ldots + x^n\).
-Suppose \(n = 10\). Some simple maths (by which I mean I used sympy) shows that this agent ends up believing \(P_1\) with probability at least half only when \(x \approx 2\), which leds to the expected number of propositions believed being \(\approx 9\). So in order to achieve \(50%\) reliability on the base proposition we have to achieve \(90%\) overall reliability!</p>
-<p>This isn't very surprising in some sense, but probably puts a bound on how good we can expect judgement aggregation to be in this case.</p>
+<p>As per <a href="https://notebook.drmaciver.com/posts/2019-03-26-17:59.html">previous
+post</a>, it can make sense when looking at a set of consistent
+propositions to consider agents as Boltzmann samplers over the set of
+valid consistent beliefs, with their reliability measured by the
+expected number of true beliefs.</p>
+<p>A thing I hadn’t previously realised is that this can cause an agent
+that is on average reliable to be reliably wrong for some
+propositions.</p>
+<p>Consider a chain of propositions of the form <span class="math inline">\(P_1 \implies \ldots \implies P_n\)</span>. There
+are exactly <span class="math inline">\(n + 1\)</span> possible
+consistent beliefs for this sampler (each defined by the first <span class="math inline">\(P_i\)</span> that the agent believes), so the
+Boltzmann generating function is <span class="math inline">\(B(x) = 1 +
+\ldots + x^n\)</span>. Suppose <span class="math inline">\(n =
+10\)</span>. Some simple maths (by which I mean I used sympy) shows that
+this agent ends up believing <span class="math inline">\(P_1\)</span>
+with probability at least half only when <span class="math inline">\(x
+\approx 2\)</span>, which leds to the expected number of propositions
+believed being <span class="math inline">\(\approx 9\)</span>. So in
+order to achieve <span class="math inline">\(50%\)</span> reliability on
+the base proposition we have to achieve <span class="math inline">\(90%\)</span> overall reliability!</p>
+<p>This isn’t very surprising in some sense, but probably puts a bound
+on how good we can expect judgement aggregation to be in this case.</p>
+
 </section>
 
     </article>

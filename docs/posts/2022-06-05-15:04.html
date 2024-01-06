@@ -17,6 +17,7 @@ DRMacIver's Notebook: Knowledge and justice
 
     <meta property="og:creator" content="@DRMacIver">
 
+    <link rel="stylesheet" href="/pandoc.css"/>
     <link rel="stylesheet" href="/pygments.css"/>
     <link rel="stylesheet" href="/tufte.css"/>
     <link rel="stylesheet" href="/latex.css"/>
@@ -73,169 +74,164 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
 <dd class="post-date">2022-06-05</dd>
 </dl>
 
-<p>This was an abandoned attempt to introduce the ideas of <em>Epistemic Injustice</em> in
-an accessible manner.</p>
-<p>You should need approximately zero philosophy to
-understand this, though I'll occasionally refer back to the relevant
-philosophical terminology to connect it up.</p>
-<h3>Credit</h3>
+<p>This was an abandoned attempt to introduce the ideas of <em>Epistemic
+Injustice</em> in an accessible manner.</p>
+<p>You should need approximately zero philosophy to understand this,
+though I’ll occasionally refer back to the relevant philosophical
+terminology to connect it up.</p>
+<h3 id="credit">Credit</h3>
 <p>The idea of Epistemic Injustice comes from the philosopher Miranda
-Fricker, who wrote <a href="https://amzn.to/2OB2HYH">a book of the same name</a>
-about it. My understanding of the subject has been heavily informed by
-Kristie Dotson's "<a href="https://www.jstor.org/stable/10.5250/fronjwomestud.33.1.0024?seq=1">A Cautionary Tale: On Limiting Epistemic
-Oppression</a>".
-I'll also be drawing a little bit on Elizabeth Anderson's <a href="https://philpapers.org/rec/ANDEJA">Epistemic
-Justice as a Virtue of Social
-Institutions</a> and Rittberg et. al's
-<a href="http://philsci-archive.pitt.edu/15133/1/Epistemic%20Injustice%20in%20Mathematics%20%28to%20appear%29.pdf">Epistemic Injustice in
-Mathematics</a>.</p>
-<p>Beyond that, I'll be synthesising a little bit with some broader themes.
-I'll be drawing on some of the work of James C. Scott in <a href="https://amzn.to/30ktRbu">Seeing Like a
-State</a> and <a href="https://amzn.to/2DSR7py">Domination and the Arts of
-Resistance</a>, and Jean-Francois Lyotard's <a href="https://amzn.to/32vPDfj">The
-Postmodern Condition: A Report on Knowledge</a>.
-I'll also be drawing on some of CN Lester's book <a href="https://amzn.to/32zHUN8">Trans Like
-Me</a> for an example of epistemic injustice that
-I've not seen discussed in the literature.</p>
-<p>Because of this synthesis I won't necessarily be explaining any of this
-in the terms that the authors would use, but I'll do my best to
+Fricker, who wrote <a href="https://amzn.to/2OB2HYH">a book of the same
+name</a> about it. My understanding of the subject has been heavily
+informed by Kristie Dotson’s “<a href="https://www.jstor.org/stable/10.5250/fronjwomestud.33.1.0024?seq=1">A
+Cautionary Tale: On Limiting Epistemic Oppression</a>”. I’ll also be
+drawing a little bit on Elizabeth Anderson’s <a href="https://philpapers.org/rec/ANDEJA">Epistemic Justice as a Virtue
+of Social Institutions</a> and Rittberg et. al’s <a href="http://philsci-archive.pitt.edu/15133/1/Epistemic%20Injustice%20in%20Mathematics%20%28to%20appear%29.pdf">Epistemic
+Injustice in Mathematics</a>.</p>
+<p>Beyond that, I’ll be synthesising a little bit with some broader
+themes. I’ll be drawing on some of the work of James C. Scott in <a href="https://amzn.to/30ktRbu">Seeing Like a State</a> and <a href="https://amzn.to/2DSR7py">Domination and the Arts of
+Resistance</a>, and Jean-Francois Lyotard’s <a href="https://amzn.to/32vPDfj">The Postmodern Condition: A Report on
+Knowledge</a>. I’ll also be drawing on some of CN Lester’s book <a href="https://amzn.to/32zHUN8">Trans Like Me</a> for an example of
+epistemic injustice that I’ve not seen discussed in the literature.</p>
+<p>Because of this synthesis I won’t necessarily be explaining any of
+this in the terms that the authors would use, but I’ll do my best to
 highlight all the places we differ explicitly.</p>
-<h3>Knowledge is Social</h3>
+<h3 id="knowledge-is-social">Knowledge is Social</h3>
 <p>How do you know what you know?</p>
-<p>This isn't a trick question. I'm not going to probe deep into the nature
-of knowledge here. I mean it much more literally: You, presumably, know
-things. How? Where did you learn them?</p>
+<p>This isn’t a trick question. I’m not going to probe deep into the
+nature of knowledge here. I mean it much more literally: You,
+presumably, know things. How? Where did you learn them?</p>
 <p>Well, mostly, you learned them from other people.</p>
-<p>Some of it of course you will have learned through direct experience, or
-figuring out on your own, but even that tends to blur in with the bits
-you learned from other people - I know that I am typing this newsletter
-on a laptop, and that is knowledge I have from direct experience, but
-the fact that I know what "typing" is, or even "a laptop" is is
-knowledge that, ultimately, came from someone else. Although the
-<em>experience</em> is mine, the knowledge that allows me to interpret and
-understand it is part of a shared canon that I have learned from and
-with the people around me.</p>
-<p>Don't get me wrong, a lot of my knowledge is of my own making: I'm
-clever, I've figured things out. I'm sure you have too. But even for
-people a lot cleverer than me it's a <em>lot</em> easier to figure things out
-with others' help.</p>
+<p>Some of it of course you will have learned through direct experience,
+or figuring out on your own, but even that tends to blur in with the
+bits you learned from other people - I know that I am typing this
+newsletter on a laptop, and that is knowledge I have from direct
+experience, but the fact that I know what “typing” is, or even “a
+laptop” is is knowledge that, ultimately, came from someone else.
+Although the <em>experience</em> is mine, the knowledge that allows me
+to interpret and understand it is part of a shared canon that I have
+learned from and with the people around me.</p>
+<p>Don’t get me wrong, a lot of my knowledge is of my own making: I’m
+clever, I’ve figured things out. I’m sure you have too. But even for
+people a lot cleverer than me it’s a <em>lot</em> easier to figure
+things out with others’ help.</p>
 <p>This help both with the knowledge that we have learned from them, and
 with their direct help when we have a problem to solve that we need to
-figure out. Knowledge isn't just collective in the sense that we learn
+figure out. Knowledge isn’t just collective in the sense that we learn
 things from other people - we go to other people with our problems, talk
 them out, explain them and solve them together. At the end of the
-discussion changes are that <em>everyone</em> involved has learned something
-about it, and you have a little more shared and common knowledge.</p>
-<h3>What is Epistemic Injustice?</h3>
+discussion changes are that <em>everyone</em> involved has learned
+something about it, and you have a little more shared and common
+knowledge.</p>
+<h3 id="what-is-epistemic-injustice">What is Epistemic Injustice?</h3>
 <p>As with anything involving more than one person, this process of
 constructing knowledge together can be done in ways that are unjust.
-This is what Fricker calls <em>Epistemic Injustice</em> (Epistemic just means
-"Concerning knowledge"): An injustice done to or by you in your capacity
-as someone participating in the process of constructing knowledge
-together.</p>
+This is what Fricker calls <em>Epistemic Injustice</em> (Epistemic just
+means “Concerning knowledge”): An injustice done to or by you in your
+capacity as someone participating in the process of constructing
+knowledge together.</p>
 <p>Examples of epistemic injustices include:</p>
 <ul>
-<li>
-<p>Unjustly dismissing someone's testimony. e.g. "You would say that,
-    you're a woman". By doing this you are refusing their contributions
-    to the process of collective knowledge. Fricker calls this a
-    <em>testimonial injustice</em>.</p>
-</li>
-<li>
-<p>Unjustly denying someone the knowledge they need to solve their
-    problems. e.g. Fricker cites the example of women needing the term
-    "sexual harassment" to explain an aspect of their lived experience,
-    and previously lacking it partly due to a prejudicial environment
-    that prevented them from identifying it. Fricker calls this example
-    a <em>hermeneutical injustice</em> but she means something slightly more
-    specific than denial of knowledge.</p>
-</li>
-<li>
-<p>Unjustly refusing to acquire (or acknowledge the validity of) the
-    knowledge that allows you to engage properly with someone else's
-    worldview. e.g. white people refusing to engage properly with people
-    of colour's views on racism. Dotson calls this <em>contributory
-    injustice</em> (though again means something slightly more specific).</p>
-</li>
-<li>
-<p>Spreading lies about a particular subject (e.g. about trans people,
-    their behaviour, their medical treatment) so that when people of a
-    particular group try to tell the truth about their lives they are
-    dismissed because "everybody knows" things that contradict that.
-    (This is what CN Lester calls "The production of ignorance")</p>
-</li>
+<li><p>Unjustly dismissing someone’s testimony. e.g. “You would say
+that, you’re a woman”. By doing this you are refusing their
+contributions to the process of collective knowledge. Fricker calls this
+a <em>testimonial injustice</em>.</p></li>
+<li><p>Unjustly denying someone the knowledge they need to solve their
+problems. e.g. Fricker cites the example of women needing the term
+“sexual harassment” to explain an aspect of their lived experience, and
+previously lacking it partly due to a prejudicial environment that
+prevented them from identifying it. Fricker calls this example a
+<em>hermeneutical injustice</em> but she means something slightly more
+specific than denial of knowledge.</p></li>
+<li><p>Unjustly refusing to acquire (or acknowledge the validity of) the
+knowledge that allows you to engage properly with someone else’s
+worldview. e.g. white people refusing to engage properly with people of
+colour’s views on racism. Dotson calls this <em>contributory
+injustice</em> (though again means something slightly more
+specific).</p></li>
+<li><p>Spreading lies about a particular subject (e.g. about trans
+people, their behaviour, their medical treatment) so that when people of
+a particular group try to tell the truth about their lives they are
+dismissed because “everybody knows” things that contradict that. (This
+is what CN Lester calls “The production of ignorance”)</p></li>
 </ul>
-<h3>What makes it injustice?</h3>
+<h3 id="what-makes-it-injustice">What makes it injustice?</h3>
 <p>I tend to differ from a lot of the canon on some of the details of
-epistemic injustice, and you're reading my newsletter so you're going to
-get my view on the subject (sorry). Here I'll spell out some of those
+epistemic injustice, and you’re reading my newsletter so you’re going to
+get my view on the subject (sorry). Here I’ll spell out some of those
 differences.</p>
-<p>For Fricker, Epistemic Injustice is tied to a very specific conception
-of justice, and in order to count it has to be an injustice that is
-specifically <em>identity prejudicial</em>: That is, it's done to you based on
-some stable aspect of your identity (e.g. race, gender).</p>
+<p>For Fricker, Epistemic Injustice is tied to a very specific
+conception of justice, and in order to count it has to be an injustice
+that is specifically <em>identity prejudicial</em>: That is, it’s done
+to you based on some stable aspect of your identity (e.g. race,
+gender).</p>
 <p>I tend not to insist on that for two reasons:</p>
 <p>The first is that it ties you concepts of justice to whatever way you
 happen to bucket people into categories. Unless you are <em>really</em>
 confident that you understand the myriad ways in which humans can vary,
 tying your notion of justice to your particular favoured labelling
-scheme is itself prejudicial (I wrote about this a bit before in
-<a href="https://notebook.drmaciver.com/posts/2020-02-23-09:37.html">Legibility
+scheme is itself prejudicial (I wrote about this a bit before in <a href="https://notebook.drmaciver.com/posts/2020-02-23-09:37.html">Legibility
 Privileges</a>).</p>
-<p>Fricker herself makes significant errors in the book as a result of this
-- e.g. she has the example of treating someone as dishonest (and thus
-discounting them as a source of knowledge) because they don't want to
-make eye contact as <em>not</em> an example of an injustice because it's based
-on an individual trait of e.g. shyness rather than their identity,
-completely ignoring that it might be because they're autistic.</p>
-<p>The second reason I tend to discount this view is that it's just weird
-and obviously wrong. Although many injustices <em>are</em> identity prejudicial
-in nature, by no means all are (e.g. you can do someone an injustice
-just by behaving like an asshole to them when they've done nothing to
-deserve it, just because you don't like them). It puts us in the
-situation where something might be obviously epistemic in nature,
-obviously an injustice, and yet not an epistemic injustice.</p>
+<p>Fricker herself makes significant errors in the book as a result of
+this - e.g. she has the example of treating someone as dishonest (and
+thus discounting them as a source of knowledge) because they don’t want
+to make eye contact as <em>not</em> an example of an injustice because
+it’s based on an individual trait of e.g. shyness rather than their
+identity, completely ignoring that it might be because they’re
+autistic.</p>
+<p>The second reason I tend to discount this view is that it’s just
+weird and obviously wrong. Although many injustices <em>are</em>
+identity prejudicial in nature, by no means all are (e.g. you can do
+someone an injustice just by behaving like an asshole to them when
+they’ve done nothing to deserve it, just because you don’t like them).
+It puts us in the situation where something might be obviously epistemic
+in nature, obviously an injustice, and yet not an epistemic
+injustice.</p>
 <p>So if not identity prejudice, what makes something an epistemic
 <em>injustice</em>.</p>
 <p>Pass, sorry.</p>
-<p>In all of my examples of epistemic injustice I just said "This thing
-happens, and also it's unjust" and that's about the level of specificity
-I'm willing to get into. I think trying to pin down when exactly
+<p>In all of my examples of epistemic injustice I just said “This thing
+happens, and also it’s unjust” and that’s about the level of specificity
+I’m willing to get into. I think trying to pin down when exactly
 something is an epistemic injustice is a very hard problem and will
 depend on your theory of and feelings about justice more broadly.</p>
-<p>This is somewhere where Fricker's focus on identity prejudice based
+<p>This is somewhere where Fricker’s focus on identity prejudice based
 injustices does a lot of work, because it allows her to focus on cases
-where you can just say "Yeah obviously this is bad". e.g. Dismissing
-someone's mathematical work because they're black is <em>obviously</em> an
-injustice (unless you're really extremely racist), and you don't have to
-do much work to justify this. Dismissing the same person's mathematical
-work because they are telling you they have a one page proof of Fermat's
-last theorem on the other hand is entirely justified because you'd do
-exactly the same if they were white.</p>
-<p>I assume you have your own conceptions of justice, and I do not plan to
-solve the problem of justice in this newsletter issue (maybe a later
-one...). Instead I think understanding epistemic injustice will come
-down to understanding how things play out in the field of collective
+where you can just say “Yeah obviously this is bad”. e.g. Dismissing
+someone’s mathematical work because they’re black is <em>obviously</em>
+an injustice (unless you’re really extremely racist), and you don’t have
+to do much work to justify this. Dismissing the same person’s
+mathematical work because they are telling you they have a one page
+proof of Fermat’s last theorem on the other hand is entirely justified
+because you’d do exactly the same if they were white.</p>
+<p>I assume you have your own conceptions of justice, and I do not plan
+to solve the problem of justice in this newsletter issue (maybe a later
+one…). Instead I think understanding epistemic injustice will come down
+to understanding how things play out in the field of collective
 knowledge, and then carrying over your normal beliefs about justice to
 that field. What is distinct about epistemic injustice is not that it
 requires its own notion of justice, but that it requires paying
 attention to and understanding how we relate to knowledge.</p>
-<h3>Different Types of Epistemic Injustice</h3>
+<h3 id="different-types-of-epistemic-injustice">Different Types of
+Epistemic Injustice</h3>
 <p>Another way I differ from the canon is that I find this attempt to
 pigeonhole epistemic injustices into different categories (testimonial,
-hermeneutical, contributory...) <em>really</em> uninteresting. There are always
-going to be more ways to do an injustice than we can conveniently label,
-and having all these labels feels like an instance of <a href="https://notebook.lisamcnulty.co.uk/2020/05/28/the-fallacy-fallacy/">the Fallacy
-Fallacy</a>
-- labelling something doesn't necessarily help you explain why it's bad,
-and explaining why it's bad removes the need to label it.</p>
-<h3>Postscript</h3>
+hermeneutical, contributory…) <em>really</em> uninteresting. There are
+always going to be more ways to do an injustice than we can conveniently
+label, and having all these labels feels like an instance of <a href="https://notebook.lisamcnulty.co.uk/2020/05/28/the-fallacy-fallacy/">the
+Fallacy Fallacy</a> - labelling something doesn’t necessarily help you
+explain why it’s bad, and explaining why it’s bad removes the need to
+label it.</p>
+<h3 id="postscript">Postscript</h3>
 <p>I also had the following two section titles, completely empty:</p>
 <ul>
 <li>Understanding the Epistemic Playing Field</li>
 <li>Structural vs Individual Epistemic Harms</li>
 </ul>
-<p>I'm not very surprised I abandoned this piece. I hate this type of summarisation work, not so much because it's unimportant as because I never know where to stop.</p>
+<p>I’m not very surprised I abandoned this piece. I hate this type of
+summarisation work, not so much because it’s unimportant as because I
+never know where to stop.</p>
+
 </section>
 
     </article>

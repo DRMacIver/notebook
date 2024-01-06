@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8"/>
     <title>
-DRMacIver's Notebook: Notes on "Towards a general mathematical theory of experimental science"
+DRMacIver's Notebook: Notes on “Towards a general mathematical theory of experimental science”
     </title>
 
-    <meta property="og:title" content="Notes on &#34;Towards a general mathematical theory of experimental science&#34;">
+    <meta property="og:title" content="Notes on “Towards a general mathematical theory of experimental science”">
 
     <meta property="og:url" content="https://notebook.drmaciver.com/posts/2018-11-02-12:16.html" />
     <link rel="canonical" href="https://notebook.drmaciver.com/posts/2018-11-02-12:16.html" />
@@ -17,6 +17,7 @@ DRMacIver's Notebook: Notes on "Towards a general mathematical theory of experim
 
     <meta property="og:creator" content="@DRMacIver">
 
+    <link rel="stylesheet" href="/pandoc.css"/>
     <link rel="stylesheet" href="/pygments.css"/>
     <link rel="stylesheet" href="/tufte.css"/>
     <link rel="stylesheet" href="/latex.css"/>
@@ -62,62 +63,110 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
   <body>
     <article>
         <h1><a href="/">DRMacIver's Notebook</a></h1>
-        <p class=subtitle>Notes on "Towards a general mathematical theory of experimental science"</p>
+        <p class=subtitle>Notes on “Towards a general mathematical theory of experimental science”</p>
 
         
 
 <section id="the-post">
-<p class=subtitle>Notes on "Towards a general mathematical theory of experimental science"</p>
+<p class=subtitle>Notes on “Towards a general mathematical theory of experimental science”</p>
 <dl class=metadata>
 <dt>Published</dt>
 <dd class="post-date">2018-11-02</dd>
 </dl>
 
-<p>A friend <a href="https://arxiv.org/pdf/1807.07896.pdf">linked to this paper</a> and I thought it sounded interesting.
-These are my first-pass notes. The paper failed to clear my threshold for a close reading, which was a shame because I was quite into it in the abstract.
-I would potentially like to do a close reading of something longer on this subject, but I don't feel this paper would be worth the close reading.</p>
-<h3>Close Reading Questions</h3>
-<p>Scores go from -1 to +2. The threshold for a close reading is that the total score must be 2 or higher.</p>
+<p>A friend <a href="https://arxiv.org/pdf/1807.07896.pdf">linked to
+this paper</a> and I thought it sounded interesting. These are my
+first-pass notes. The paper failed to clear my threshold for a close
+reading, which was a shame because I was quite into it in the abstract.
+I would potentially like to do a close reading of something longer on
+this subject, but I don’t feel this paper would be worth the close
+reading.</p>
+<h3 id="close-reading-questions">Close Reading Questions</h3>
+<p>Scores go from -1 to +2. The threshold for a close reading is that
+the total score must be 2 or higher.</p>
 <ul>
 <li>Is this paper interesting? +1</li>
 <li>Is this paper useful? -1</li>
 <li>Is this paper well written? +1</li>
 </ul>
 <p>Total score: 1</p>
-<h3>Summary</h3>
-<p>The general goal here is to provide an abstract mathematical notion of what it means to do experimental science.
-I believe they have provided a reasonable basis for doing so, but it is unclear to me what the actual implications of this are and I feel like if they have really been working on it for as long as they say then one of the following must be true:</p>
-<ol>
-<li>There aren't any very interesting ones.</li>
+<h3 id="summary">Summary</h3>
+<p>The general goal here is to provide an abstract mathematical notion
+of what it means to do experimental science. I believe they have
+provided a reasonable basis for doing so, but it is unclear to me what
+the actual implications of this are and I feel like if they have really
+been working on it for as long as they say then one of the following
+must be true:</p>
+<ol type="1">
+<li>There aren’t any very interesting ones.</li>
 <li>The authors are weirdly bad at motivating their work.</li>
 </ol>
-<p>Based on the fact that the paper is reasonably well written and that <a href="https://www.drmaciver.com/2017/10/reality-is-a-countably-infinite-sierpinski-cube/">I have also thought about this issue and didn't come up with any very interesting implications</a>,
-I am inclined to think that it is the former,
-but I hope to be wrong.</p>
+<p>Based on the fact that the paper is reasonably well written and that
+<a href="https://www.drmaciver.com/2017/10/reality-is-a-countably-infinite-sierpinski-cube/">I
+have also thought about this issue and didn’t come up with any very
+interesting implications</a>, I am inclined to think that it is the
+former, but I hope to be wrong.</p>
 <p>Roughly the model of the paper is the following:</p>
-<p>We have some abstract set of statements associated with physical reality.
-These are closed under arbitrary boolean functions (i.e. if we have some set of statements \(U\) and a function \(f: \mathbb{B}^U \to \mathbb{B}\), where \(\mathbb{B} = \{\text{true}, \text{false}\}\),
-we can construct a statement \(f(U)\) which is interpreted as combining the truth values of all of the elements of \(U\) and passing them to \(f\).
-This assumption gives the statements (up to equivalence) the structure of a complete boolean algebra.</p>
-<p>They consider as a starting point statements which are <em>verifiable</em> - that is, there are is some experimental procedure that would allow us to eventually determine that the statement were true. These procedures are allowed to run for infinite time if the statement is false, but must eventually terminate in finite time if the statement is true.
-The verifiable statements are closed under finite disjunction (i.e. if A and B are both verifiable then the statement "A and B" is also verifiable) and countably infinite disjunction (i.e. if \(A_n\) are all verifiable then \(A_1\) or \(A_2\) or \(\ldots\) is verifiable).</p>
-<p>They make the interesting (to me) observation that is useful to define an experimental science in terms of two sets of statements:
-An <em>experimental domain</em>, which is a set of statements we interpret as being verifiable by some set of experimental procedures and thus is closed under countable disjunction and finite conjunction,
-and a <em>theoretical domain</em>, which is the closure of the experimental domain under those operations plus negation. i.e. we can state theoretically things which we cannot verify but can only refute.
-This seems like a sensible and useful distinction, and their reasoning for doing so seems sound.</p>
-<p>They then define the "possibilities" as the elements of the theoretical domain that are sufficient to determine the truth value of all other statements in the theoretical domain.
-These form the points that we are trying to distinguish by experimental procedure.</p>
-<p>Probably the key observation of the paper is that these points acquire two natural structures - from the experimental domain they acquire a <em>topological</em> structure,
-while from the theoretical domain they acquire the structure of a \(\sigma\)-algebra. This is a nice observation.</p>
-<h3>Problems I have with the paper</h3>
-<p>My biggest problem is the one I already alluded to above - "OK but so what?". I think the formalism is interesting, but without seeing anything built on it it currently just stands as a pleasing intellectual curiosity.
-I don't have a problem with such, but this one doesn't really give me anything to get excited about beyond a sense of "Huh, neat",
-and I feel like the authors are treating this as a much deeper result than it actually justifies at present.
-If they <em>can</em> show some interesting implications from it, then I would revise this opinion.</p>
-<p>I also found some of the formalism a bit sloppy. There are a bunch of places where I've written "???" or "suspish" on the paper that I would want to work through more carefully if I were to do a close reading.
-Notably I think they're playing quite fast and loose with the countability arguments, and I am rather suspicious of the claim that statements are closed under <em>arbitrary</em> boolean functions - I would have expected some continuity requirement,
-and I think the fact that they don't impose that calls into question some of their other claims about countable generation.</p>
-<p>I think these formalism issues can probably be fixed, but as I said I don't plan to do a closer reading of the paper at present, so I haven't worked through the details of how.</p>
+<p>We have some abstract set of statements associated with physical
+reality. These are closed under arbitrary boolean functions (i.e. if we
+have some set of statements <span class="math inline">\(U\)</span> and a
+function <span class="math inline">\(f: \mathbb{B}^U \to
+\mathbb{B}\)</span>, where <span class="math inline">\(\mathbb{B} =
+\{\text{true}, \text{false}\}\)</span>, we can construct a statement
+<span class="math inline">\(f(U)\)</span> which is interpreted as
+combining the truth values of all of the elements of <span class="math inline">\(U\)</span> and passing them to <span class="math inline">\(f\)</span>. This assumption gives the statements
+(up to equivalence) the structure of a complete boolean algebra.</p>
+<p>They consider as a starting point statements which are
+<em>verifiable</em> - that is, there are is some experimental procedure
+that would allow us to eventually determine that the statement were
+true. These procedures are allowed to run for infinite time if the
+statement is false, but must eventually terminate in finite time if the
+statement is true. The verifiable statements are closed under finite
+disjunction (i.e. if A and B are both verifiable then the statement “A
+and B” is also verifiable) and countably infinite disjunction (i.e. if
+<span class="math inline">\(A_n\)</span> are all verifiable then <span class="math inline">\(A_1\)</span> or <span class="math inline">\(A_2\)</span> or <span class="math inline">\(\ldots\)</span> is verifiable).</p>
+<p>They make the interesting (to me) observation that is useful to
+define an experimental science in terms of two sets of statements: An
+<em>experimental domain</em>, which is a set of statements we interpret
+as being verifiable by some set of experimental procedures and thus is
+closed under countable disjunction and finite conjunction, and a
+<em>theoretical domain</em>, which is the closure of the experimental
+domain under those operations plus negation. i.e. we can state
+theoretically things which we cannot verify but can only refute. This
+seems like a sensible and useful distinction, and their reasoning for
+doing so seems sound.</p>
+<p>They then define the “possibilities” as the elements of the
+theoretical domain that are sufficient to determine the truth value of
+all other statements in the theoretical domain. These form the points
+that we are trying to distinguish by experimental procedure.</p>
+<p>Probably the key observation of the paper is that these points
+acquire two natural structures - from the experimental domain they
+acquire a <em>topological</em> structure, while from the theoretical
+domain they acquire the structure of a <span class="math inline">\(\sigma\)</span>-algebra. This is a nice
+observation.</p>
+<h3 id="problems-i-have-with-the-paper">Problems I have with the
+paper</h3>
+<p>My biggest problem is the one I already alluded to above - “OK but so
+what?”. I think the formalism is interesting, but without seeing
+anything built on it it currently just stands as a pleasing intellectual
+curiosity. I don’t have a problem with such, but this one doesn’t really
+give me anything to get excited about beyond a sense of “Huh, neat”, and
+I feel like the authors are treating this as a much deeper result than
+it actually justifies at present. If they <em>can</em> show some
+interesting implications from it, then I would revise this opinion.</p>
+<p>I also found some of the formalism a bit sloppy. There are a bunch of
+places where I’ve written “???” or “suspish” on the paper that I would
+want to work through more carefully if I were to do a close reading.
+Notably I think they’re playing quite fast and loose with the
+countability arguments, and I am rather suspicious of the claim that
+statements are closed under <em>arbitrary</em> boolean functions - I
+would have expected some continuity requirement, and I think the fact
+that they don’t impose that calls into question some of their other
+claims about countable generation.</p>
+<p>I think these formalism issues can probably be fixed, but as I said I
+don’t plan to do a closer reading of the paper at present, so I haven’t
+worked through the details of how.</p>
+
 </section>
 
     </article>

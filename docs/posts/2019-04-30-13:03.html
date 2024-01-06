@@ -17,6 +17,7 @@ DRMacIver's Notebook: Improving Binary Search by Guessing
 
     <meta property="og:creator" content="@DRMacIver">
 
+    <link rel="stylesheet" href="/pandoc.css"/>
     <link rel="stylesheet" href="/pygments.css"/>
     <link rel="stylesheet" href="/tufte.css"/>
     <link rel="stylesheet" href="/latex.css"/>
@@ -73,102 +74,132 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
 <dd class="post-date">2019-04-30</dd>
 </dl>
 
-<p>The following code (lightly modified from Hypothesis code for clarity) is among the most useful things I have ever written:</p>
-<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">find_integer</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
-    <span class="sd">"""Finds a (hopefully large) integer n such that f(n) is True and f(n + 1)</span>
-<span class="sd">    is False. Runs in O(log(n)).</span>
-
-<span class="sd">    f(0) is assumed to be True and will not be checked. May not terminate unless</span>
-<span class="sd">    f(n) is False for all sufficiently large n.</span>
-<span class="sd">    """</span>
-    <span class="c1"># We first do a linear scan over the small numbers and only start to do</span>
-    <span class="c1"># anything intelligent if f(4) is true. This is because it's very hard to</span>
-    <span class="c1"># win big when the result is small. If the result is 0 and we try 2 first</span>
-    <span class="c1"># then we've done twice as much work as we needed to!</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">):</span>
-        <span class="k">if</span> <span class="ow">not</span> <span class="n">f</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
-            <span class="k">return</span> <span class="n">i</span> <span class="o">-</span> <span class="mi">1</span>
-
-    <span class="c1"># We now know that f(4) is true. We want to find some number for which</span>
-    <span class="c1"># f(n) is *not* true.</span>
-    <span class="c1"># lo is the largest number for which we know that f(lo) is true.</span>
-    <span class="n">lo</span> <span class="o">=</span> <span class="mi">4</span>
-
-    <span class="c1"># Exponential probe upwards until we find some value hi such that f(hi)</span>
-    <span class="c1"># is not true. Subsequently we maintain the invariant that hi is the</span>
-    <span class="c1"># smallest number for which we know that f(hi) is not true.</span>
-    <span class="n">hi</span> <span class="o">=</span> <span class="mi">5</span>
-    <span class="k">while</span> <span class="n">f</span><span class="p">(</span><span class="n">hi</span><span class="p">):</span>
-        <span class="n">lo</span> <span class="o">=</span> <span class="n">hi</span>
-        <span class="n">hi</span> <span class="o">*=</span> <span class="mi">2</span>
-
-    <span class="c1"># Now binary search until lo + 1 = hi. At that point we have f(lo) and not</span>
-    <span class="c1"># f(lo + 1), as desired..</span>
-    <span class="k">while</span> <span class="n">lo</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">&lt;</span> <span class="n">hi</span><span class="p">:</span>
-        <span class="n">mid</span> <span class="o">=</span> <span class="p">(</span><span class="n">lo</span> <span class="o">+</span> <span class="n">hi</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span>
-        <span class="k">if</span> <span class="n">f</span><span class="p">(</span><span class="n">mid</span><span class="p">):</span>
-            <span class="n">lo</span> <span class="o">=</span> <span class="n">mid</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">hi</span> <span class="o">=</span> <span class="n">mid</span>
-    <span class="k">return</span> <span class="n">lo</span>
-</pre></div>
+<p>The following code (lightly modified from Hypothesis code for
+clarity) is among the most useful things I have ever written:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a aria-hidden="true" href="#cb1-1" tabindex="-1"></a></span>
+<span id="cb1-2"><a aria-hidden="true" href="#cb1-2" tabindex="-1"></a><span class="kw">def</span> find_integer(f):</span>
+<span id="cb1-3"><a aria-hidden="true" href="#cb1-3" tabindex="-1"></a>    <span class="co">"""Finds a (hopefully large) integer n such that f(n) is True and f(n + 1)</span></span>
+<span id="cb1-4"><a aria-hidden="true" href="#cb1-4" tabindex="-1"></a><span class="co">    is False. Runs in O(log(n)).</span></span>
+<span id="cb1-5"><a aria-hidden="true" href="#cb1-5" tabindex="-1"></a></span>
+<span id="cb1-6"><a aria-hidden="true" href="#cb1-6" tabindex="-1"></a><span class="co">    f(0) is assumed to be True and will not be checked. May not terminate unless</span></span>
+<span id="cb1-7"><a aria-hidden="true" href="#cb1-7" tabindex="-1"></a><span class="co">    f(n) is False for all sufficiently large n.</span></span>
+<span id="cb1-8"><a aria-hidden="true" href="#cb1-8" tabindex="-1"></a><span class="co">    """</span></span>
+<span id="cb1-9"><a aria-hidden="true" href="#cb1-9" tabindex="-1"></a>    <span class="co"># We first do a linear scan over the small numbers and only start to do</span></span>
+<span id="cb1-10"><a aria-hidden="true" href="#cb1-10" tabindex="-1"></a>    <span class="co"># anything intelligent if f(4) is true. This is because it's very hard to</span></span>
+<span id="cb1-11"><a aria-hidden="true" href="#cb1-11" tabindex="-1"></a>    <span class="co"># win big when the result is small. If the result is 0 and we try 2 first</span></span>
+<span id="cb1-12"><a aria-hidden="true" href="#cb1-12" tabindex="-1"></a>    <span class="co"># then we've done twice as much work as we needed to!</span></span>
+<span id="cb1-13"><a aria-hidden="true" href="#cb1-13" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">5</span>):</span>
+<span id="cb1-14"><a aria-hidden="true" href="#cb1-14" tabindex="-1"></a>        <span class="cf">if</span> <span class="kw">not</span> f(i):</span>
+<span id="cb1-15"><a aria-hidden="true" href="#cb1-15" tabindex="-1"></a>            <span class="cf">return</span> i <span class="op">-</span> <span class="dv">1</span></span>
+<span id="cb1-16"><a aria-hidden="true" href="#cb1-16" tabindex="-1"></a></span>
+<span id="cb1-17"><a aria-hidden="true" href="#cb1-17" tabindex="-1"></a>    <span class="co"># We now know that f(4) is true. We want to find some number for which</span></span>
+<span id="cb1-18"><a aria-hidden="true" href="#cb1-18" tabindex="-1"></a>    <span class="co"># f(n) is *not* true.</span></span>
+<span id="cb1-19"><a aria-hidden="true" href="#cb1-19" tabindex="-1"></a>    <span class="co"># lo is the largest number for which we know that f(lo) is true.</span></span>
+<span id="cb1-20"><a aria-hidden="true" href="#cb1-20" tabindex="-1"></a>    lo <span class="op">=</span> <span class="dv">4</span></span>
+<span id="cb1-21"><a aria-hidden="true" href="#cb1-21" tabindex="-1"></a></span>
+<span id="cb1-22"><a aria-hidden="true" href="#cb1-22" tabindex="-1"></a>    <span class="co"># Exponential probe upwards until we find some value hi such that f(hi)</span></span>
+<span id="cb1-23"><a aria-hidden="true" href="#cb1-23" tabindex="-1"></a>    <span class="co"># is not true. Subsequently we maintain the invariant that hi is the</span></span>
+<span id="cb1-24"><a aria-hidden="true" href="#cb1-24" tabindex="-1"></a>    <span class="co"># smallest number for which we know that f(hi) is not true.</span></span>
+<span id="cb1-25"><a aria-hidden="true" href="#cb1-25" tabindex="-1"></a>    hi <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb1-26"><a aria-hidden="true" href="#cb1-26" tabindex="-1"></a>    <span class="cf">while</span> f(hi):</span>
+<span id="cb1-27"><a aria-hidden="true" href="#cb1-27" tabindex="-1"></a>        lo <span class="op">=</span> hi</span>
+<span id="cb1-28"><a aria-hidden="true" href="#cb1-28" tabindex="-1"></a>        hi <span class="op">*=</span> <span class="dv">2</span></span>
+<span id="cb1-29"><a aria-hidden="true" href="#cb1-29" tabindex="-1"></a></span>
+<span id="cb1-30"><a aria-hidden="true" href="#cb1-30" tabindex="-1"></a>    <span class="co"># Now binary search until lo + 1 = hi. At that point we have f(lo) and not</span></span>
+<span id="cb1-31"><a aria-hidden="true" href="#cb1-31" tabindex="-1"></a>    <span class="co"># f(lo + 1), as desired..</span></span>
+<span id="cb1-32"><a aria-hidden="true" href="#cb1-32" tabindex="-1"></a>    <span class="cf">while</span> lo <span class="op">+</span> <span class="dv">1</span> <span class="op">&lt;</span> hi:</span>
+<span id="cb1-33"><a aria-hidden="true" href="#cb1-33" tabindex="-1"></a>        mid <span class="op">=</span> (lo <span class="op">+</span> hi) <span class="op">//</span> <span class="dv">2</span></span>
+<span id="cb1-34"><a aria-hidden="true" href="#cb1-34" tabindex="-1"></a>        <span class="cf">if</span> f(mid):</span>
+<span id="cb1-35"><a aria-hidden="true" href="#cb1-35" tabindex="-1"></a>            lo <span class="op">=</span> mid</span>
+<span id="cb1-36"><a aria-hidden="true" href="#cb1-36" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb1-37"><a aria-hidden="true" href="#cb1-37" tabindex="-1"></a>            hi <span class="op">=</span> mid</span>
+<span id="cb1-38"><a aria-hidden="true" href="#cb1-38" tabindex="-1"></a>    <span class="cf">return</span> lo</span></code></pre></div>
 <p>This is loosely based on ideas from <a href="https://bugs.python.org/file4451/timsort.txt">timsort</a>.</p>
-<p>The reason this code is so useful is that it lets you make many operations <em>adaptive</em> at zero cost:
-If you have an operation that it may be useful to do some large number of times, you can compose it and do only \(O(\log(n))\) checks to do \(O(n)\) work.</p>
-<p>In particular the nice feature of this that justifies the term adaptive is that the amount of work it does is logarithmic in the size of the <em>output</em>.
-It either gives you a very large result or costs very little.</p>
-<p>An example of how this gets used in test-case reduction is the following:</p>
-<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">reduction_pass</span><span class="p">(</span><span class="n">ls</span><span class="p">,</span> <span class="n">predicate</span><span class="p">);</span>
-    <span class="n">ls</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">ls</span><span class="p">)</span>
-    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">ls</span><span class="p">):</span>
-        <span class="c1"># Will delete a sequence of length n in O(log(n))</span>
-        <span class="n">k</span> <span class="o">=</span> <span class="n">find_integer</span><span class="p">(</span><span class="k">lambda</span> <span class="n">k</span><span class="p">:</span> <span class="n">predicate</span><span class="p">(</span><span class="n">ls</span><span class="p">[:</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">ls</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="n">k</span><span class="p">:]))</span>
-        <span class="k">del</span> <span class="n">ls</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span> <span class="o">+</span> <span class="n">k</span><span class="p">]</span>
-        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
-</pre></div>
-<p>This allows for a test-case reduction pass that never does substantially more work than the naive greedy algorithm which tries deleting one item at a time,
-but can potentially do very large deletions with much less work than that when the opportunity arises.</p>
-<p>A neat variant I realised earlier is that you can use this function to define the following variant of binary search:</p>
-<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">binary_search_with_guess</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">lo</span><span class="p">,</span> <span class="n">hi</span><span class="p">,</span> <span class="n">guess</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-    <span class="sd">"""Find n such that lo &lt;= n &lt; hi and f(lo) == f(n) != f(n + 1). It is</span>
-<span class="sd">    assumed that f(hi) != f(lo) and will not be checked.</span>
+<p>The reason this code is so useful is that it lets you make many
+operations <em>adaptive</em> at zero cost: If you have an operation that
+it may be useful to do some large number of times, you can compose it
+and do only <span class="math inline">\(O(\log(n))\)</span> checks to do
+<span class="math inline">\(O(n)\)</span> work.</p>
+<p>In particular the nice feature of this that justifies the term
+adaptive is that the amount of work it does is logarithmic in the size
+of the <em>output</em>. It either gives you a very large result or costs
+very little.</p>
+<p>An example of how this gets used in test-case reduction is the
+following:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a aria-hidden="true" href="#cb2-1" tabindex="-1"></a><span class="kw">def</span> reduction_pass(ls, predicate)<span class="op">;</span></span>
+<span id="cb2-2"><a aria-hidden="true" href="#cb2-2" tabindex="-1"></a>    ls <span class="op">=</span> <span class="bu">list</span>(ls)</span>
+<span id="cb2-3"><a aria-hidden="true" href="#cb2-3" tabindex="-1"></a>    i <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb2-4"><a aria-hidden="true" href="#cb2-4" tabindex="-1"></a>    <span class="cf">while</span> i <span class="op">&lt;</span> <span class="bu">len</span>(ls):</span>
+<span id="cb2-5"><a aria-hidden="true" href="#cb2-5" tabindex="-1"></a>        <span class="co"># Will delete a sequence of length n in O(log(n))</span></span>
+<span id="cb2-6"><a aria-hidden="true" href="#cb2-6" tabindex="-1"></a>        k <span class="op">=</span> find_integer(<span class="kw">lambda</span> k: predicate(ls[:i] <span class="op">+</span> ls[i <span class="op">+</span> k:]))</span>
+<span id="cb2-7"><a aria-hidden="true" href="#cb2-7" tabindex="-1"></a>        <span class="kw">del</span> ls[i:i <span class="op">+</span> k]</span>
+<span id="cb2-8"><a aria-hidden="true" href="#cb2-8" tabindex="-1"></a>        i <span class="op">+=</span> <span class="dv">1</span></span></code></pre></div>
+<p>This allows for a test-case reduction pass that never does
+substantially more work than the naive greedy algorithm which tries
+deleting one item at a time, but can potentially do very large deletions
+with much less work than that when the opportunity arises.</p>
+<p>A neat variant I realised earlier is that you can use this function
+to define the following variant of binary search:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a aria-hidden="true" href="#cb3-1" tabindex="-1"></a><span class="kw">def</span> binary_search_with_guess(f, lo, hi, guess<span class="op">=</span><span class="va">None</span>):</span>
+<span id="cb3-2"><a aria-hidden="true" href="#cb3-2" tabindex="-1"></a>    <span class="co">"""Find n such that lo &lt;= n &lt; hi and f(lo) == f(n) != f(n + 1). It is</span></span>
+<span id="cb3-3"><a aria-hidden="true" href="#cb3-3" tabindex="-1"></a><span class="co">    assumed that f(hi) != f(lo) and will not be checked.</span></span>
+<span id="cb3-4"><a aria-hidden="true" href="#cb3-4" tabindex="-1"></a></span>
+<span id="cb3-5"><a aria-hidden="true" href="#cb3-5" tabindex="-1"></a><span class="co">    ``guess`` is a prediction of the value of n and defaults to lo.</span></span>
+<span id="cb3-6"><a aria-hidden="true" href="#cb3-6" tabindex="-1"></a><span class="co">    This function runs in O(log(abs(guess - n))).</span></span>
+<span id="cb3-7"><a aria-hidden="true" href="#cb3-7" tabindex="-1"></a><span class="co">    """</span></span>
+<span id="cb3-8"><a aria-hidden="true" href="#cb3-8" tabindex="-1"></a></span>
+<span id="cb3-9"><a aria-hidden="true" href="#cb3-9" tabindex="-1"></a>    <span class="cf">if</span> guess <span class="kw">is</span> <span class="va">None</span>:</span>
+<span id="cb3-10"><a aria-hidden="true" href="#cb3-10" tabindex="-1"></a>        guess <span class="op">=</span> lo</span>
+<span id="cb3-11"><a aria-hidden="true" href="#cb3-11" tabindex="-1"></a></span>
+<span id="cb3-12"><a aria-hidden="true" href="#cb3-12" tabindex="-1"></a>    <span class="cf">assert</span> lo <span class="op">&lt;=</span> guess <span class="op">&lt;</span> hi</span>
+<span id="cb3-13"><a aria-hidden="true" href="#cb3-13" tabindex="-1"></a></span>
+<span id="cb3-14"><a aria-hidden="true" href="#cb3-14" tabindex="-1"></a>    good <span class="op">=</span> f(lo)</span>
+<span id="cb3-15"><a aria-hidden="true" href="#cb3-15" tabindex="-1"></a></span>
+<span id="cb3-16"><a aria-hidden="true" href="#cb3-16" tabindex="-1"></a>    <span class="cf">if</span> f(guess) <span class="op">==</span> good:</span>
+<span id="cb3-17"><a aria-hidden="true" href="#cb3-17" tabindex="-1"></a>        <span class="co"># Our guess was equivalent to lo, so we want to find some point after it.</span></span>
+<span id="cb3-18"><a aria-hidden="true" href="#cb3-18" tabindex="-1"></a>        k <span class="op">=</span> find_integer(<span class="kw">lambda</span> k: guess <span class="op">+</span> k <span class="op">&lt;</span> hi <span class="kw">and</span> f(guess <span class="op">+</span> k) <span class="op">==</span> good)</span>
+<span id="cb3-19"><a aria-hidden="true" href="#cb3-19" tabindex="-1"></a>        <span class="cf">return</span> guess <span class="op">+</span> k</span>
+<span id="cb3-20"><a aria-hidden="true" href="#cb3-20" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb3-21"><a aria-hidden="true" href="#cb3-21" tabindex="-1"></a>        <span class="co"># Our guess was equivalent to hi , so we want to find some point before it.</span></span>
+<span id="cb3-22"><a aria-hidden="true" href="#cb3-22" tabindex="-1"></a>        k <span class="op">=</span> find_integer(<span class="kw">lambda</span> k: guess <span class="op">-</span> k <span class="op">&gt;=</span> lo <span class="kw">and</span> f(guess <span class="op">-</span> k) <span class="op">!=</span> good)</span>
+<span id="cb3-23"><a aria-hidden="true" href="#cb3-23" tabindex="-1"></a>        <span class="cf">return</span> guess <span class="op">-</span> k <span class="op">-</span> <span class="dv">1</span></span></code></pre></div>
+<p>This is a binary search with a twist, which is that you start with a
+<em>guess</em> as to what you expect the answer to be. The cost of the
+search is still logarithmic, but it’s logarithmic with respect to how
+bad your guess is rather than how large the range of the search is. If
+you can rely on your guess being pretty good, this will sometimes let
+you do the binary search in <span class="math inline">\(O(1)\)</span>
+instead of <span class="math inline">\(O(\log(n))\)</span>.</p>
+<p>Naturally this can’t improve on binary search (which is optimal) in
+the general case, so how useful this is depends entirely on how good
+your guess is. If your guess is maximally bad (i.e. you guess one end
+and the correct answer was the other), this can make up to twice as many
+calls to the test function as a classic binary search does, but as long
+as your guesses are on average pretty good it will tend to win out.</p>
+<p>The reason this came up for me was that I’m working on a variant of
+<a href="https://people.eecs.berkeley.edu/~dawnsong/teaching/s10/papers/angluin87.pdf">Angluin’s
+L* algorithm</a> with the <a href="https://people.csail.mit.edu/rivest/RivestSchapire-InferenceOfFiniteAutomataUsingHomingSequences-STOC89.pdf">Rivest
+and Schapire modifications</a>. Without going into details, you have a
+sequence of <span class="math inline">\(N\)</span> elements. You know
+the first one is good, and the last one is bad, and you want to find a
+good element which is directly followed by a bad one, and so so using
+binary search. You then make a change to your model that makes that bad
+element good, but this can have an unknown knock-on effect on the other
+elements, so you need to repeat the procedure. The use of the guess here
+is this: Generally speaking, most elements are bad, and elements rarely
+go from good to bad as a result of our fix procedure (it absolutely
+<em>can</em> happen, it just usually doesn’t). This means that a pretty
+reasonable guess is <span class="math inline">\(0\)</span> on the first
+iteration, and the element we just made good on the subsequent ones
+(because the elements before it probably haven’t changed from good to
+bad, and the element we just fixed is probably now good).</p>
+<p>How much of an improvement this is would require more benchmarking
+than I’ve done (i.e. anything other than eyeballing the times), but
+anecdotally this guessing heuristic seems to be mostly very accurate, so
+in theory it should be a factor of five to ten performance improvement
+just based on the size of the examples (because it cuts out a <span class="math inline">\(\log(n)\)</span> factor and the sequences are a
+few hundred items long)..</p>
 
-<span class="sd">    ``guess`` is a prediction of the value of n and defaults to lo.</span>
-<span class="sd">    This function runs in O(log(abs(guess - n))).</span>
-<span class="sd">    """</span>
-
-    <span class="k">if</span> <span class="n">guess</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="n">guess</span> <span class="o">=</span> <span class="n">lo</span>
-
-    <span class="k">assert</span> <span class="n">lo</span> <span class="o">&lt;=</span> <span class="n">guess</span> <span class="o">&lt;</span> <span class="n">hi</span>
-
-    <span class="n">good</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">lo</span><span class="p">)</span>
-
-    <span class="k">if</span> <span class="n">f</span><span class="p">(</span><span class="n">guess</span><span class="p">)</span> <span class="o">==</span> <span class="n">good</span><span class="p">:</span>
-        <span class="c1"># Our guess was equivalent to lo, so we want to find some point after it.</span>
-        <span class="n">k</span> <span class="o">=</span> <span class="n">find_integer</span><span class="p">(</span><span class="k">lambda</span> <span class="n">k</span><span class="p">:</span> <span class="n">guess</span> <span class="o">+</span> <span class="n">k</span> <span class="o">&lt;</span> <span class="n">hi</span> <span class="ow">and</span> <span class="n">f</span><span class="p">(</span><span class="n">guess</span> <span class="o">+</span> <span class="n">k</span><span class="p">)</span> <span class="o">==</span> <span class="n">good</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">guess</span> <span class="o">+</span> <span class="n">k</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="c1"># Our guess was equivalent to hi , so we want to find some point before it.</span>
-        <span class="n">k</span> <span class="o">=</span> <span class="n">find_integer</span><span class="p">(</span><span class="k">lambda</span> <span class="n">k</span><span class="p">:</span> <span class="n">guess</span> <span class="o">-</span> <span class="n">k</span> <span class="o">&gt;=</span> <span class="n">lo</span> <span class="ow">and</span> <span class="n">f</span><span class="p">(</span><span class="n">guess</span> <span class="o">-</span> <span class="n">k</span><span class="p">)</span> <span class="o">!=</span> <span class="n">good</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">guess</span> <span class="o">-</span> <span class="n">k</span> <span class="o">-</span> <span class="mi">1</span>
-</pre></div>
-<p>This is a binary search with a twist, which is that you start with a <em>guess</em> as to what you expect the answer to be.
-The cost of the search is still logarithmic, but it's logarithmic with respect to how bad your guess is rather than how large the range of the search is.
-If you can rely on your guess being pretty good, this will sometimes let you do the binary search in \(O(1)\) instead of \(O(\log(n))\).</p>
-<p>Naturally this can't improve on binary search (which is optimal) in the general case, so how useful this is depends entirely on how good your guess is.
-If your guess is maximally bad (i.e. you guess one end and the correct answer was the other), this can make up to twice as many calls to the test function as a classic binary search does,
-but as long as your guesses are on average pretty good it will tend to win out.</p>
-<p>The reason this came up for me was that I'm working on a variant of <a href="https://people.eecs.berkeley.edu/~dawnsong/teaching/s10/papers/angluin87.pdf">Angluin's L* algorithm</a> with the <a href="https://people.csail.mit.edu/rivest/RivestSchapire-InferenceOfFiniteAutomataUsingHomingSequences-STOC89.pdf">Rivest and Schapire modifications</a>.
-Without going into details, you have a sequence of \(N\) elements. You know the first one is good, and the last one is bad, and you want to find a good element which is directly followed by a bad one,
-and so so using binary search. You then make a change to your model that makes that bad element good,
-but this can have an unknown knock-on effect on the other elements, so you need to repeat the procedure.
-The use of the guess here is this:
-Generally speaking, most elements are bad, and elements rarely go from good to bad as a result of our fix procedure (it absolutely <em>can</em> happen, it just usually doesn't).
-This means that a pretty reasonable guess is \(0\) on the first iteration, and the element we just made good on the subsequent ones (because the elements before it probably haven't changed from good to bad, and the element we just fixed is probably now good).</p>
-<p>How much of an improvement this is would require more benchmarking than I've done (i.e. anything other than eyeballing the times), but anecdotally this guessing heuristic seems to be mostly very accurate,
-so in theory it should be a factor of five to ten performance improvement just based on the size of the examples (because it cuts out a \(\log(n)\) factor and the sequences are a few hundred items long)..</p>
 </section>
 
     </article>

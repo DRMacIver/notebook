@@ -17,6 +17,7 @@ DRMacIver's Notebook: There are a lot of irreducible finite partial orders
 
     <meta property="og:creator" content="@DRMacIver">
 
+    <link rel="stylesheet" href="/pandoc.css"/>
     <link rel="stylesheet" href="/pygments.css"/>
     <link rel="stylesheet" href="/tufte.css"/>
     <link rel="stylesheet" href="/latex.css"/>
@@ -73,51 +74,139 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
 <dd class="post-date">2022-10-02</dd>
 </dl>
 
-<p>Advance warning: You don't care about this post. Tersely written notes about a question you've probably never wondered about.</p>
-<p>A problem I've been thinking about on and off for a month or two is as follows:</p>
-<p>Let \(A\), \(B\) be partial orders. You can combine them with the following operations:</p>
-<ol>
-<li>\(A \sqcup B\) is the partial order on the disjoint union of \(A\) and \(B\) such that no element of \(A\) is comparable to an element of \(B\) (and elements of \(A\) and \(B\) compare as usual).</li>
-<li>\(A // B\)  is the partial order on the disjoint union of \(A\) and \(B\) such that \(a \preceq b\) for \(a \in A\) and \(b \in B\) (and elements of \(A\) and \(B\) compare as usual).</li>
-<li>\(A \times B\) is the partial order on the product of \(A\) and \(B\) such that \((r, s) \preceq (u, v)\) iff \(r \preceq u\) and \(s \preceq v\).</li>
+<p>Advance warning: You don’t care about this post. Tersely written
+notes about a question you’ve probably never wondered about.</p>
+<p>A problem I’ve been thinking about on and off for a month or two is
+as follows:</p>
+<p>Let <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span> be partial orders. You can combine them
+with the following operations:</p>
+<ol type="1">
+<li><span class="math inline">\(A \sqcup B\)</span> is the partial order
+on the disjoint union of <span class="math inline">\(A\)</span> and
+<span class="math inline">\(B\)</span> such that no element of <span class="math inline">\(A\)</span> is comparable to an element of <span class="math inline">\(B\)</span> (and elements of <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> compare as usual).</li>
+<li><span class="math inline">\(A // B\)</span> is the partial order on
+the disjoint union of <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> such that <span class="math inline">\(a
+\preceq b\)</span> for <span class="math inline">\(a \in A\)</span> and
+<span class="math inline">\(b \in B\)</span> (and elements of <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> compare as usual).</li>
+<li><span class="math inline">\(A \times B\)</span> is the partial order
+on the product of <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> such that <span class="math inline">\((r, s) \preceq (u, v)\)</span> iff <span class="math inline">\(r \preceq u\)</span> and <span class="math inline">\(s \preceq v\)</span>.</li>
 </ol>
-<p>Say a partial order is irreducible if it cannot be expressed as a combination of two non-trivial smaller partial orders with one of these operations (note: non-trivial means "non-empty" for the first two and "more than one element" for the third).</p>
-<p>You can think of the irreducible finite partial orders as a sort of building block for the finite partial orders, and something I've been wondering is if irreducible finite partial orders have a nice characterisation and how many there are. I now think the answers are: Probably not, and lots.</p>
+<p>Say a partial order is irreducible if it cannot be expressed as a
+combination of two non-trivial smaller partial orders with one of these
+operations (note: non-trivial means “non-empty” for the first two and
+“more than one element” for the third).</p>
+<p>You can think of the irreducible finite partial orders as a sort of
+building block for the finite partial orders, and something I’ve been
+wondering is if irreducible finite partial orders have a nice
+characterisation and how many there are. I now think the answers are:
+Probably not, and lots.</p>
 <p>Here are some vaguely negative results in this space.</p>
-<ol>
-<li>There are irreducible partial orders of size \(n\) for every \(n &gt; 3\). There are no irreducible partial orders of size \(2\) or \(3\).</li>
-<li>There are at least \(O(2^{O(n)})\) non-isomorphic irreducible partial orders of size \(n\).</li>
+<ol type="1">
+<li>There are irreducible partial orders of size <span class="math inline">\(n\)</span> for every <span class="math inline">\(n
+&gt; 3\)</span>. There are no irreducible partial orders of size <span class="math inline">\(2\)</span> or <span class="math inline">\(3\)</span>.</li>
+<li>There are at least <span class="math inline">\(O(2^{O(n)})\)</span>
+non-isomorphic irreducible partial orders of size <span class="math inline">\(n\)</span>.</li>
 </ol>
-<p>As a warm up let's see why there are no irreducible partial orders of size \(2\) or \(3\).</p>
-<p>\(2\) is easy. Let \(P = \{a, b\}\) be a partial order of size \(2\). If \(a \preceq b\) then \(P = \{a\} // \{b\}\). Similarly the other way round. Otherwise, \(P = \{a\} \sqcup \{b\}\).</p>
-<p>\(3\) is slightly more complicated.</p>
-<p>It's helpful to think about this in terms of the level decomposition. The level of an element \(x \in P\) is the length of the longest chain ending in \(x\). Call that \(l(x)\). The height of \(P\) is the maximum level of an element of \(P\) (equivalently, the length of the longest chain in \(P\)), which we will call \(h(P)\). A level of \(P\) is a set of the form \(\{x \in P: l(x) = k\}\) for some \(k\).</p>
-<p>Suppose \(P\) were an irreducible poset of size \(3\). If it has \(3\) levels, then it's a chain, so can be decomposed with \(//\).
-If it has \(1\) level, it's an antichain so can be decomposed with \(\sqcup\). So it must have \(2\) levels. Thus we can write \(P = \{a, b, c\}\) with \(a \leq b\).</p>
-<p>If \(c\) is in level \(2\), then \(a \leq c\) (because \(a\) is the only element of level \(1\)), and so we can write \(P = \{a\} // \{b, c\}\). If \(c\) is in level \(1\), then if \(c \neq\preceq b\), we can write \(P = \{a, b\} \sqcup \{c\}\), so \(P\) is reducible. Therefore \(c \preceq b\), and so we can write \(P = \{a\} // \{b, c\}\). Thus, \(P\) could not have been irreducible.</p>
-<p>Now to see that for \(n &gt; 3\) there is always an irreducible poset.</p>
-<p>Construct a poset as \(P = \{a_1, \ldots, a_{n - 2}, b, c\}\) and order it as follows: \(a_i \leq b\) for all \(i\), and only \(a_ \leq c\).</p>
-<p>This is irreducible. It's clearly not reducible by \(\sqcup\) because every element is connected to every other by some sequence of comparisons. It's clearly not reducible by \(//\) because not every element of the bottom level is comparible with every element of the second level (this is where we used \(n &gt; 3\) - we need an \(a_2\) for this to be true).</p>
-<p>To see it's not reducible by \(\times\), we need to know that \(h(A \times B) = h(A) + h(B)\). This is true because you can basically create a maximal length chain by moving up each coordinate's chain in a zigzag fashion.</p>
-<p>Thus if \(P = A \times B\), we must have \(h(A) + h(B) = 2\). This requires both \(A\) and \(B\) to have height \(1\), which would make them antichains, so \(P\) would be an antichain, but it's not.</p>
-<p>In fact a stronger result holds: If \(h(P) \leq 3\), then if \(h\) is reducible by \(\times\), it's reducible by \(\sqcup\).</p>
-<p>We saw the \(h(P) = 2\) case above. If \(h(P) = 3\) and \(P = A \times B\) with \(A, B\) non-trivial then we must have one of \(A\) or \(B\) have height \(1\). Say it's \(A\). Then \(A\) is an antichain and because it's non-trivial has more than one element, so we can write \(A = X \sqcup Y\) with \(X, Y\) non-empty. Then \(P = X \times B \sqcup Y \times B\).</p>
-<p>Anyway, we can extend the idea behind this as follows to construct families of lots of non-isomorphic irreducible partial orders as follows.</p>
-<p>Let \(k &gt; 0\). Construct a partial follow out of elements \(P = \{a_1, \ldots, a_k\} \cup \{b_1, \ldots, b_k\} \cup \{c_U: U \subseteq \{1, \ldots, k\}, U \neq \emptyset\} \cup \{q\}\).</p>
+<p>As a warm up let’s see why there are no irreducible partial orders of
+size <span class="math inline">\(2\)</span> or <span class="math inline">\(3\)</span>.</p>
+<p><span class="math inline">\(2\)</span> is easy. Let <span class="math inline">\(P = \{a, b\}\)</span> be a partial order of size
+<span class="math inline">\(2\)</span>. If <span class="math inline">\(a
+\preceq b\)</span> then <span class="math inline">\(P = \{a\} //
+\{b\}\)</span>. Similarly the other way round. Otherwise, <span class="math inline">\(P = \{a\} \sqcup \{b\}\)</span>.</p>
+<p><span class="math inline">\(3\)</span> is slightly more
+complicated.</p>
+<p>It’s helpful to think about this in terms of the level decomposition.
+The level of an element <span class="math inline">\(x \in P\)</span> is
+the length of the longest chain ending in <span class="math inline">\(x\)</span>. Call that <span class="math inline">\(l(x)\)</span>. The height of <span class="math inline">\(P\)</span> is the maximum level of an element of
+<span class="math inline">\(P\)</span> (equivalently, the length of the
+longest chain in <span class="math inline">\(P\)</span>), which we will
+call <span class="math inline">\(h(P)\)</span>. A level of <span class="math inline">\(P\)</span> is a set of the form <span class="math inline">\(\{x \in P: l(x) = k\}\)</span> for some <span class="math inline">\(k\)</span>.</p>
+<p>Suppose <span class="math inline">\(P\)</span> were an irreducible
+poset of size <span class="math inline">\(3\)</span>. If it has <span class="math inline">\(3\)</span> levels, then it’s a chain, so can be
+decomposed with <span class="math inline">\(//\)</span>. If it has <span class="math inline">\(1\)</span> level, it’s an antichain so can be
+decomposed with <span class="math inline">\(\sqcup\)</span>. So it must
+have <span class="math inline">\(2\)</span> levels. Thus we can write
+<span class="math inline">\(P = \{a, b, c\}\)</span> with <span class="math inline">\(a \leq b\)</span>.</p>
+<p>If <span class="math inline">\(c\)</span> is in level <span class="math inline">\(2\)</span>, then <span class="math inline">\(a
+\leq c\)</span> (because <span class="math inline">\(a\)</span> is the
+only element of level <span class="math inline">\(1\)</span>), and so we
+can write <span class="math inline">\(P = \{a\} // \{b, c\}\)</span>. If
+<span class="math inline">\(c\)</span> is in level <span class="math inline">\(1\)</span>, then if <span class="math inline">\(c
+\neq\preceq b\)</span>, we can write <span class="math inline">\(P =
+\{a, b\} \sqcup \{c\}\)</span>, so <span class="math inline">\(P\)</span> is reducible. Therefore <span class="math inline">\(c \preceq b\)</span>, and so we can write <span class="math inline">\(P = \{a\} // \{b, c\}\)</span>. Thus, <span class="math inline">\(P\)</span> could not have been irreducible.</p>
+<p>Now to see that for <span class="math inline">\(n &gt; 3\)</span>
+there is always an irreducible poset.</p>
+<p>Construct a poset as <span class="math inline">\(P = \{a_1, \ldots,
+a_{n - 2}, b, c\}\)</span> and order it as follows: <span class="math inline">\(a_i \leq b\)</span> for all <span class="math inline">\(i\)</span>, and only <span class="math inline">\(a_ \leq c\)</span>.</p>
+<p>This is irreducible. It’s clearly not reducible by <span class="math inline">\(\sqcup\)</span> because every element is connected
+to every other by some sequence of comparisons. It’s clearly not
+reducible by <span class="math inline">\(//\)</span> because not every
+element of the bottom level is comparible with every element of the
+second level (this is where we used <span class="math inline">\(n &gt;
+3\)</span> - we need an <span class="math inline">\(a_2\)</span> for
+this to be true).</p>
+<p>To see it’s not reducible by <span class="math inline">\(\times\)</span>, we need to know that <span class="math inline">\(h(A \times B) = h(A) + h(B)\)</span>. This is true
+because you can basically create a maximal length chain by moving up
+each coordinate’s chain in a zigzag fashion.</p>
+<p>Thus if <span class="math inline">\(P = A \times B\)</span>, we must
+have <span class="math inline">\(h(A) + h(B) = 2\)</span>. This requires
+both <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> to have height <span class="math inline">\(1\)</span>, which would make them antichains, so
+<span class="math inline">\(P\)</span> would be an antichain, but it’s
+not.</p>
+<p>In fact a stronger result holds: If <span class="math inline">\(h(P)
+\leq 3\)</span>, then if <span class="math inline">\(h\)</span> is
+reducible by <span class="math inline">\(\times\)</span>, it’s reducible
+by <span class="math inline">\(\sqcup\)</span>.</p>
+<p>We saw the <span class="math inline">\(h(P) = 2\)</span> case above.
+If <span class="math inline">\(h(P) = 3\)</span> and <span class="math inline">\(P = A \times B\)</span> with <span class="math inline">\(A, B\)</span> non-trivial then we must have one of
+<span class="math inline">\(A\)</span> or <span class="math inline">\(B\)</span> have height <span class="math inline">\(1\)</span>. Say it’s <span class="math inline">\(A\)</span>. Then <span class="math inline">\(A\)</span> is an antichain and because it’s
+non-trivial has more than one element, so we can write <span class="math inline">\(A = X \sqcup Y\)</span> with <span class="math inline">\(X, Y\)</span> non-empty. Then <span class="math inline">\(P = X \times B \sqcup Y \times B\)</span>.</p>
+<p>Anyway, we can extend the idea behind this as follows to construct
+families of lots of non-isomorphic irreducible partial orders as
+follows.</p>
+<p>Let <span class="math inline">\(k &gt; 0\)</span>. Construct a
+partial follow out of elements <span class="math inline">\(P = \{a_1,
+\ldots, a_k\} \cup \{b_1, \ldots, b_k\} \cup \{c_U: U \subseteq \{1,
+\ldots, k\}, U \neq \emptyset\} \cup \{q\}\)</span>.</p>
 <p>The rules are:</p>
-<ol>
-<li>\(a_i \leq b_j\) iff \(i \leq j\).</li>
-<li>\(a_i \leq c_U\) iff \(i \in U\).</li>
-<li>\(b_j \leq q\)</li>
+<ol type="1">
+<li><span class="math inline">\(a_i \leq b_j\)</span> iff <span class="math inline">\(i \leq j\)</span>.</li>
+<li><span class="math inline">\(a_i \leq c_U\)</span> iff <span class="math inline">\(i \in U\)</span>.</li>
+<li><span class="math inline">\(b_j \leq q\)</span></li>
 </ol>
-<p>The idea of this construction is that there are \(O(2^k)\) elements in this partial order, and all of them are distinguishable up to isomorphism. i.e. the set has a trivial automorphism group.</p>
-<p>To see this, let \(f : P \to P\) be an automorphism. Then \(h(f(q)) = h(q) = 3\), so \(f(q) = q\) because \(q\) is the only level \(3\) element. Thus \(f(\{b_i\}) = \{b_i\}\), because they're the only elements directly below \(q\), and we can distinguish the \(b_i\) by how many elements are under them. Thus \(f\) must also preserve the \(a_i\), and thus also the \(c_U\).</p>
-<p>\(P\) is irreducible by our above result, but more importantly now let \(X \subseteq \{c_i\}\). Define \(P_X = P \cup d_X\), where \(d \leq c_U\) iff \(c_U \in X\).</p>
-<p>This is still height \(3\), and still clearly not reducible by either \(\sqcup\) or \(//\), so is an irreducible set.</p>
-<p>More, for \(X \neq Y\), we have \(P_X \neq P_Y\), because any isomorphism betweem them would have to preserve the \(C_U\), and so would fail to be an isomorphism because \(d_X\) and \(d_Y\) are below different \(c_U\).</p>
-<p>This gives of \(O(2^{O(|P|)})\) non-isomorphic irreducible partial orders of size \(|P| + 1\).</p>
-<p>For general \(n\), construct the largest version of \(P\) such that \(|P| + 1 \leq n\), and just add in a bunch of extra elements more or less any way that works, and you'll get the same bounds.</p>
-<p>It may still be that there's some interesting deep structure to look at for irreducible finite partial orders, but I think these examples show that there's probably not: There are just too many of them, and it's all a bit messy.</p>
+<p>The idea of this construction is that there are <span class="math inline">\(O(2^k)\)</span> elements in this partial order,
+and all of them are distinguishable up to isomorphism. i.e. the set has
+a trivial automorphism group.</p>
+<p>To see this, let <span class="math inline">\(f : P \to P\)</span> be
+an automorphism. Then <span class="math inline">\(h(f(q)) = h(q) =
+3\)</span>, so <span class="math inline">\(f(q) = q\)</span> because
+<span class="math inline">\(q\)</span> is the only level <span class="math inline">\(3\)</span> element. Thus <span class="math inline">\(f(\{b_i\}) = \{b_i\}\)</span>, because they’re the
+only elements directly below <span class="math inline">\(q\)</span>, and
+we can distinguish the <span class="math inline">\(b_i\)</span> by how
+many elements are under them. Thus <span class="math inline">\(f\)</span> must also preserve the <span class="math inline">\(a_i\)</span>, and thus also the <span class="math inline">\(c_U\)</span>.</p>
+<p><span class="math inline">\(P\)</span> is irreducible by our above
+result, but more importantly now let <span class="math inline">\(X
+\subseteq \{c_i\}\)</span>. Define <span class="math inline">\(P_X = P
+\cup d_X\)</span>, where <span class="math inline">\(d \leq c_U\)</span>
+iff <span class="math inline">\(c_U \in X\)</span>.</p>
+<p>This is still height <span class="math inline">\(3\)</span>, and
+still clearly not reducible by either <span class="math inline">\(\sqcup\)</span> or <span class="math inline">\(//\)</span>, so is an irreducible set.</p>
+<p>More, for <span class="math inline">\(X \neq Y\)</span>, we have
+<span class="math inline">\(P_X \neq P_Y\)</span>, because any
+isomorphism betweem them would have to preserve the <span class="math inline">\(C_U\)</span>, and so would fail to be an
+isomorphism because <span class="math inline">\(d_X\)</span> and <span class="math inline">\(d_Y\)</span> are below different <span class="math inline">\(c_U\)</span>.</p>
+<p>This gives of <span class="math inline">\(O(2^{O(|P|)})\)</span>
+non-isomorphic irreducible partial orders of size <span class="math inline">\(|P| + 1\)</span>.</p>
+<p>For general <span class="math inline">\(n\)</span>, construct the
+largest version of <span class="math inline">\(P\)</span> such that
+<span class="math inline">\(|P| + 1 \leq n\)</span>, and just add in a
+bunch of extra elements more or less any way that works, and you’ll get
+the same bounds.</p>
+<p>It may still be that there’s some interesting deep structure to look
+at for irreducible finite partial orders, but I think these examples
+show that there’s probably not: There are just too many of them, and
+it’s all a bit messy.</p>
+
 </section>
 
     </article>

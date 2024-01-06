@@ -17,6 +17,7 @@ DRMacIver's Notebook: Representing Steps in Test-Case Reduction
 
     <meta property="og:creator" content="@DRMacIver">
 
+    <link rel="stylesheet" href="/pandoc.css"/>
     <link rel="stylesheet" href="/pygments.css"/>
     <link rel="stylesheet" href="/tufte.css"/>
     <link rel="stylesheet" href="/latex.css"/>
@@ -73,106 +74,153 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
 <dd class="post-date">2021-01-11</dd>
 </dl>
 
-<p>In <a href="https://notebook.drmaciver.com/posts/2021-01-01-11:22.html">my last post</a> on reducer design I included the following deletion algorithm:</p>
-<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">greedy_deletion</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span><span class="p">):</span>
-        <span class="n">attempt</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span><span class="p">[:</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">:]</span>
-        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_interesting</span><span class="p">(</span><span class="n">attempt</span><span class="p">):</span>
-            <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
-</pre></div>
-<p>This iterates forward through a sequence and tries deleting each element of it in turn to see if it's still interesting.
-It's a foundation for a lot of useful test-case reduction passes.</p>
-<p>It's also in the wrong order. Really for most problems you probably want to write it as follows:</p>
-<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">greedy_deletion</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="n">i</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
-    <span class="k">while</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="c1"># We're only calling this for the side effect of updating self.best_test_case</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">is_interesting</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span><span class="p">[:</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">:])</span>
-        <span class="n">i</span> <span class="o">-=</span> <span class="mi">1</span>
-</pre></div>
-<p>The reason for this order is that later elements often depend on early elements (e.g. if a variable declared earlier is used later),
-so this often does less wasted work because it takes fewer passes to get to a fixed point - going forward, you need to rerun the entire pass to delete the earlier bits that have been enabled by the later bits.</p>
-<p>One problem with either of these is that they can lead to long stalls, where there's a large undeletable region and you're slowly going through all of it.
-This is particularly annoying because often if you'd made the test case much smaller before checking all of those bits it would be much faster to go through them,
-because the interestingness test is faster on smaller test cases.</p>
-<p>In order to avoid these stalls it might be better to write it like this:</p>
-<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">greedy_deletion</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="n">indices</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span><span class="p">)))</span>
-    <span class="k">while</span> <span class="n">indices</span><span class="p">:</span>
-        <span class="n">i</span> <span class="o">=</span> <span class="n">pop_random</span><span class="p">(</span><span class="n">indices</span><span class="p">)</span>
-        <span class="c1"># Might no longer be true because we've successfully reduced</span>
-        <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span><span class="p">):</span>
-            <span class="c1"># We're only calling this for the side effect of updating self.best_test_case</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">is_interesting</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span><span class="p">[:</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">:])</span>
-</pre></div>
-<p>This iterates over the test case in a random order, avoiding stalls as a result - if a fraction \(p\) of the test case is deletable this will only stall for around \(\frac{1}{p}\) steps, while either deterministic version can potentially stall for \(O(n)\) calls.</p>
-<p>(this isn't a very good way of doing randomisation, and all of these are improved by <a href="https://www.drmaciver.com/2017/06/adaptive-delta-debugging/">adaptive delta debugging</a> of course, but we'll ignore that for now).</p>
-<p>The problem of course is that all of these are basically the same algorithm with a lot of code duplication between them, and we would like to be able to flexibly swap between modes based on what's working.</p>
-<p>Another related problem is that often we want to get an idea of how good a pass is before running it. If we were to e.g. run the random one for ten steps and see if it did anything before we decide whether to run the full thing, that would help a lot with the pass selection problem (how we know which reduction pass we should run right now).</p>
-<p>This example also makes it seem easier than it is. Consider the following reduction pass:</p>
-<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">put_in_order</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span><span class="p">)):</span>
-        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">min</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span><span class="p">),</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">9</span><span class="p">)):</span>
-            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span><span class="p">[</span><span class="n">j</span><span class="p">]:</span>
-                <span class="n">attempt</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span><span class="p">)</span>
-                <span class="n">attempt</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">attempt</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">attempt</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="n">attempt</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-                <span class="bp">self</span><span class="o">.</span><span class="n">is_interesting</span><span class="p">(</span><span class="n">attempt</span><span class="p">)</span>
-</pre></div>
-<p>This tries swapping all nearby out of order pairs in order to make the test case more sorted (which is a reduction lexicographically).
-Here all the same considerations potentially apply, but there are two indices that vary instead of one.
-The question of what order to try things in is also even more complicated, as potentially this one might need <em>many</em> passes to reach convergence (there are \(n!\) possible permutations of a sequence so I think this has the potential to take \(O(n!)\) calls to complete given an adversarial interestingness test).</p>
-<p>All of this is problem set up as a preamble for telling you about how we solve the problem in Hypothesis, which is to consider a reduction pass as making a series of nondeterministic choices,
-which it must exhaustively try all of before reduction is considered to have finished.
+<p>In <a href="https://notebook.drmaciver.com/posts/2021-01-01-11:22.html">my
+last post</a> on reducer design I included the following deletion
+algorithm:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a aria-hidden="true" href="#cb1-1" tabindex="-1"></a></span>
+<span id="cb1-2"><a aria-hidden="true" href="#cb1-2" tabindex="-1"></a><span class="kw">def</span> greedy_deletion(<span class="va">self</span>):</span>
+<span id="cb1-3"><a aria-hidden="true" href="#cb1-3" tabindex="-1"></a>    i <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb1-4"><a aria-hidden="true" href="#cb1-4" tabindex="-1"></a>    <span class="cf">while</span> i <span class="op">&lt;</span> <span class="bu">len</span>(<span class="va">self</span>.best_test_case):</span>
+<span id="cb1-5"><a aria-hidden="true" href="#cb1-5" tabindex="-1"></a>        attempt <span class="op">=</span> <span class="va">self</span>.best_test_case[:i] <span class="op">+</span> <span class="va">self</span>.best_test_case[i <span class="op">+</span> <span class="dv">1</span>:]</span>
+<span id="cb1-6"><a aria-hidden="true" href="#cb1-6" tabindex="-1"></a>        <span class="cf">if</span> <span class="kw">not</span> <span class="va">self</span>.is_interesting(attempt):</span>
+<span id="cb1-7"><a aria-hidden="true" href="#cb1-7" tabindex="-1"></a>            i <span class="op">+=</span> <span class="dv">1</span></span></code></pre></div>
+<p>This iterates forward through a sequence and tries deleting each
+element of it in turn to see if it’s still interesting. It’s a
+foundation for a lot of useful test-case reduction passes.</p>
+<p>It’s also in the wrong order. Really for most problems you probably
+want to write it as follows:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a aria-hidden="true" href="#cb2-1" tabindex="-1"></a></span>
+<span id="cb2-2"><a aria-hidden="true" href="#cb2-2" tabindex="-1"></a><span class="kw">def</span> greedy_deletion(<span class="va">self</span>):</span>
+<span id="cb2-3"><a aria-hidden="true" href="#cb2-3" tabindex="-1"></a>    i <span class="op">=</span> <span class="bu">len</span>(<span class="va">self</span>.best_test_case) <span class="op">-</span> <span class="dv">1</span></span>
+<span id="cb2-4"><a aria-hidden="true" href="#cb2-4" tabindex="-1"></a>    <span class="cf">while</span> i <span class="op">&gt;=</span> <span class="dv">0</span>:</span>
+<span id="cb2-5"><a aria-hidden="true" href="#cb2-5" tabindex="-1"></a>        <span class="co"># We're only calling this for the side effect of updating self.best_test_case</span></span>
+<span id="cb2-6"><a aria-hidden="true" href="#cb2-6" tabindex="-1"></a>        <span class="va">self</span>.is_interesting(<span class="va">self</span>.best_test_case[:i] <span class="op">+</span> <span class="va">self</span>.best_test_case[i <span class="op">+</span> <span class="dv">1</span>:])</span>
+<span id="cb2-7"><a aria-hidden="true" href="#cb2-7" tabindex="-1"></a>        i <span class="op">-=</span> <span class="dv">1</span></span></code></pre></div>
+<p>The reason for this order is that later elements often depend on
+early elements (e.g. if a variable declared earlier is used later), so
+this often does less wasted work because it takes fewer passes to get to
+a fixed point - going forward, you need to rerun the entire pass to
+delete the earlier bits that have been enabled by the later bits.</p>
+<p>One problem with either of these is that they can lead to long
+stalls, where there’s a large undeletable region and you’re slowly going
+through all of it. This is particularly annoying because often if you’d
+made the test case much smaller before checking all of those bits it
+would be much faster to go through them, because the interestingness
+test is faster on smaller test cases.</p>
+<p>In order to avoid these stalls it might be better to write it like
+this:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a aria-hidden="true" href="#cb3-1" tabindex="-1"></a><span class="kw">def</span> greedy_deletion(<span class="va">self</span>):</span>
+<span id="cb3-2"><a aria-hidden="true" href="#cb3-2" tabindex="-1"></a>    indices <span class="op">=</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="bu">len</span>(<span class="va">self</span>.best_test_case)))</span>
+<span id="cb3-3"><a aria-hidden="true" href="#cb3-3" tabindex="-1"></a>    <span class="cf">while</span> indices:</span>
+<span id="cb3-4"><a aria-hidden="true" href="#cb3-4" tabindex="-1"></a>        i <span class="op">=</span> pop_random(indices)</span>
+<span id="cb3-5"><a aria-hidden="true" href="#cb3-5" tabindex="-1"></a>        <span class="co"># Might no longer be true because we've successfully reduced</span></span>
+<span id="cb3-6"><a aria-hidden="true" href="#cb3-6" tabindex="-1"></a>        <span class="cf">if</span> i <span class="op">&lt;</span> <span class="bu">len</span>(<span class="va">self</span>.best_test_case):</span>
+<span id="cb3-7"><a aria-hidden="true" href="#cb3-7" tabindex="-1"></a>            <span class="co"># We're only calling this for the side effect of updating self.best_test_case</span></span>
+<span id="cb3-8"><a aria-hidden="true" href="#cb3-8" tabindex="-1"></a>            <span class="va">self</span>.is_interesting(<span class="va">self</span>.best_test_case[:i] <span class="op">+</span> <span class="va">self</span>.best_test_case[i <span class="op">+</span> <span class="dv">1</span>:])</span></code></pre></div>
+<p>This iterates over the test case in a random order, avoiding stalls
+as a result - if a fraction <span class="math inline">\(p\)</span> of
+the test case is deletable this will only stall for around <span class="math inline">\(\frac{1}{p}\)</span> steps, while either
+deterministic version can potentially stall for <span class="math inline">\(O(n)\)</span> calls.</p>
+<p>(this isn’t a very good way of doing randomisation, and all of these
+are improved by <a href="https://www.drmaciver.com/2017/06/adaptive-delta-debugging/">adaptive
+delta debugging</a> of course, but we’ll ignore that for now).</p>
+<p>The problem of course is that all of these are basically the same
+algorithm with a lot of code duplication between them, and we would like
+to be able to flexibly swap between modes based on what’s working.</p>
+<p>Another related problem is that often we want to get an idea of how
+good a pass is before running it. If we were to e.g. run the random one
+for ten steps and see if it did anything before we decide whether to run
+the full thing, that would help a lot with the pass selection problem
+(how we know which reduction pass we should run right now).</p>
+<p>This example also makes it seem easier than it is. Consider the
+following reduction pass:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a aria-hidden="true" href="#cb4-1" tabindex="-1"></a><span class="kw">def</span> put_in_order(<span class="va">self</span>):</span>
+<span id="cb4-2"><a aria-hidden="true" href="#cb4-2" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(<span class="va">self</span>.best_test_case)):</span>
+<span id="cb4-3"><a aria-hidden="true" href="#cb4-3" tabindex="-1"></a>        <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(i <span class="op">+</span> <span class="dv">1</span>, <span class="bu">min</span>(<span class="bu">len</span>(<span class="va">self</span>.best_test_case), i <span class="op">+</span> <span class="dv">9</span>)):</span>
+<span id="cb4-4"><a aria-hidden="true" href="#cb4-4" tabindex="-1"></a>            <span class="cf">if</span> <span class="va">self</span>.best_test_case[i] <span class="op">&gt;</span> <span class="va">self</span>.best_test_case[j]:</span>
+<span id="cb4-5"><a aria-hidden="true" href="#cb4-5" tabindex="-1"></a>                attempt <span class="op">=</span> <span class="bu">list</span>(<span class="va">self</span>.best_test_case)</span>
+<span id="cb4-6"><a aria-hidden="true" href="#cb4-6" tabindex="-1"></a>                attempt[i], attempt[j] <span class="op">=</span> attempt[j], attempt[i]</span>
+<span id="cb4-7"><a aria-hidden="true" href="#cb4-7" tabindex="-1"></a>                <span class="va">self</span>.is_interesting(attempt)</span></code></pre></div>
+<p>This tries swapping all nearby out of order pairs in order to make
+the test case more sorted (which is a reduction lexicographically). Here
+all the same considerations potentially apply, but there are two indices
+that vary instead of one. The question of what order to try things in is
+also even more complicated, as potentially this one might need
+<em>many</em> passes to reach convergence (there are <span class="math inline">\(n!\)</span> possible permutations of a sequence so
+I think this has the potential to take <span class="math inline">\(O(n!)\)</span> calls to complete given an
+adversarial interestingness test).</p>
+<p>All of this is problem set up as a preamble for telling you about how
+we solve the problem in Hypothesis, which is to consider a reduction
+pass as making a series of nondeterministic choices, which it must
+exhaustively try all of before reduction is considered to have finished.
 The API for making these choices looks as follows:</p>
-<div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">DeadBranch</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
-    <span class="sd">"""Raised when a reduction pass is unable to continue from</span>
-<span class="sd">    the current point."""</span>
-
-
-<span class="k">class</span> <span class="nc">Chooser</span><span class="p">:</span>
-    <span class="sd">"""A source of nondeterminism for use in reduction passes."""</span>
-
-    <span class="k">def</span> <span class="nf">choose</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">values</span><span class="p">,</span> <span class="n">condition</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="kc">True</span><span class="p">):</span>
-        <span class="sd">"""Returns a value ``x`` in ``values`` such that</span>
-<span class="sd">        ``condition(x)`` is True, possibly raising ``DeadBranch``</span>
-<span class="sd">        if there are no such values, or if it turns out we have</span>
-<span class="sd">        already exhausted all remaining values. """</span>
-</pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a aria-hidden="true" href="#cb5-1" tabindex="-1"></a></span>
+<span id="cb5-2"><a aria-hidden="true" href="#cb5-2" tabindex="-1"></a><span class="kw">class</span> DeadBranch(<span class="pp">Exception</span>):</span>
+<span id="cb5-3"><a aria-hidden="true" href="#cb5-3" tabindex="-1"></a>    <span class="co">"""Raised when a reduction pass is unable to continue from</span></span>
+<span id="cb5-4"><a aria-hidden="true" href="#cb5-4" tabindex="-1"></a><span class="co">    the current point."""</span></span>
+<span id="cb5-5"><a aria-hidden="true" href="#cb5-5" tabindex="-1"></a></span>
+<span id="cb5-6"><a aria-hidden="true" href="#cb5-6" tabindex="-1"></a></span>
+<span id="cb5-7"><a aria-hidden="true" href="#cb5-7" tabindex="-1"></a><span class="kw">class</span> Chooser:</span>
+<span id="cb5-8"><a aria-hidden="true" href="#cb5-8" tabindex="-1"></a>    <span class="co">"""A source of nondeterminism for use in reduction passes."""</span></span>
+<span id="cb5-9"><a aria-hidden="true" href="#cb5-9" tabindex="-1"></a></span>
+<span id="cb5-10"><a aria-hidden="true" href="#cb5-10" tabindex="-1"></a>    <span class="kw">def</span> choose(<span class="va">self</span>, values, condition<span class="op">=</span><span class="kw">lambda</span> x: <span class="va">True</span>):</span>
+<span id="cb5-11"><a aria-hidden="true" href="#cb5-11" tabindex="-1"></a>        <span class="co">"""Returns a value ``x`` in ``values`` such that</span></span>
+<span id="cb5-12"><a aria-hidden="true" href="#cb5-12" tabindex="-1"></a><span class="co">        ``condition(x)`` is True, possibly raising ``DeadBranch``</span></span>
+<span id="cb5-13"><a aria-hidden="true" href="#cb5-13" tabindex="-1"></a><span class="co">        if there are no such values, or if it turns out we have</span></span>
+<span id="cb5-14"><a aria-hidden="true" href="#cb5-14" tabindex="-1"></a><span class="co">        already exhausted all remaining values. """</span></span></code></pre></div>
 <p>The reduction passes above now look as follows:</p>
-<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">greedy_deletion</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">chooser</span><span class="p">):</span>
-    <span class="n">i</span> <span class="o">=</span> <span class="n">chooser</span><span class="o">.</span><span class="n">choose</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span><span class="p">)))</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">is_interesting</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span><span class="p">[:</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">:])</span>
-
-<span class="k">def</span> <span class="nf">put_in_order</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">chooser</span><span class="p">):</span>
-    <span class="n">i</span> <span class="o">=</span> <span class="n">chooser</span><span class="o">.</span><span class="n">choose</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span><span class="p">)))</span>
-
-    <span class="c1"># NB: Possible no such j exists in which case this raises.</span>
-    <span class="n">j</span> <span class="o">=</span> <span class="n">chooser</span><span class="o">.</span><span class="n">choose</span><span class="p">(</span>
-        <span class="nb">range</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">min</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span><span class="p">),</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">9</span><span class="p">)),</span>
-        <span class="k">lambda</span> <span class="n">j</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-    <span class="p">)</span>
-
-    <span class="n">attempt</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span><span class="p">)</span>
-    <span class="n">attempt</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">attempt</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">attempt</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="n">attempt</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">is_interesting</span><span class="p">(</span><span class="n">attempt</span><span class="p">)</span>
-</pre></div>
-<p>The reducer is now free to try these in any order it likes, without the reduction passes overspecifying it.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a aria-hidden="true" href="#cb6-1" tabindex="-1"></a></span>
+<span id="cb6-2"><a aria-hidden="true" href="#cb6-2" tabindex="-1"></a><span class="kw">def</span> greedy_deletion(<span class="va">self</span>, chooser):</span>
+<span id="cb6-3"><a aria-hidden="true" href="#cb6-3" tabindex="-1"></a>    i <span class="op">=</span> chooser.choose(<span class="bu">range</span>(<span class="bu">len</span>(<span class="va">self</span>.best_test_case)))</span>
+<span id="cb6-4"><a aria-hidden="true" href="#cb6-4" tabindex="-1"></a>    <span class="va">self</span>.is_interesting(<span class="va">self</span>.best_test_case[:i] <span class="op">+</span> <span class="va">self</span>.best_test_case[i <span class="op">+</span> <span class="dv">1</span>:])</span>
+<span id="cb6-5"><a aria-hidden="true" href="#cb6-5" tabindex="-1"></a></span>
+<span id="cb6-6"><a aria-hidden="true" href="#cb6-6" tabindex="-1"></a><span class="kw">def</span> put_in_order(<span class="va">self</span>, chooser):</span>
+<span id="cb6-7"><a aria-hidden="true" href="#cb6-7" tabindex="-1"></a>    i <span class="op">=</span> chooser.choose(<span class="bu">range</span>(<span class="bu">len</span>(<span class="va">self</span>.best_test_case)))</span>
+<span id="cb6-8"><a aria-hidden="true" href="#cb6-8" tabindex="-1"></a></span>
+<span id="cb6-9"><a aria-hidden="true" href="#cb6-9" tabindex="-1"></a>    <span class="co"># NB: Possible no such j exists in which case this raises.</span></span>
+<span id="cb6-10"><a aria-hidden="true" href="#cb6-10" tabindex="-1"></a>    j <span class="op">=</span> chooser.choose(</span>
+<span id="cb6-11"><a aria-hidden="true" href="#cb6-11" tabindex="-1"></a>        <span class="bu">range</span>(i <span class="op">+</span> <span class="dv">1</span>, <span class="bu">min</span>(<span class="bu">len</span>(<span class="va">self</span>.best_test_case), i <span class="op">+</span> <span class="dv">9</span>)),</span>
+<span id="cb6-12"><a aria-hidden="true" href="#cb6-12" tabindex="-1"></a>        <span class="kw">lambda</span> j: <span class="va">self</span>.best_test_case[j] <span class="op">&lt;</span> <span class="va">self</span>.best_test_case[i]</span>
+<span id="cb6-13"><a aria-hidden="true" href="#cb6-13" tabindex="-1"></a>    )</span>
+<span id="cb6-14"><a aria-hidden="true" href="#cb6-14" tabindex="-1"></a></span>
+<span id="cb6-15"><a aria-hidden="true" href="#cb6-15" tabindex="-1"></a>    attempt <span class="op">=</span> <span class="bu">list</span>(<span class="va">self</span>.best_test_case)</span>
+<span id="cb6-16"><a aria-hidden="true" href="#cb6-16" tabindex="-1"></a>    attempt[i], attempt[j] <span class="op">=</span> attempt[j], attempt[i]</span>
+<span id="cb6-17"><a aria-hidden="true" href="#cb6-17" tabindex="-1"></a>    <span class="va">self</span>.is_interesting(attempt)</span></code></pre></div>
+<p>The reducer is now free to try these in any order it likes, without
+the reduction passes overspecifying it.</p>
 <p>Currently we try two different orders in different contexts:</p>
-<ol>
+<ol type="1">
 <li>Uniformly at random.</li>
 <li>Iterating backwards in reverse lexicographic order.</li>
 </ol>
-<p>Switching between the two according some frankly fairly arbitrary internal heuristics that seem to work pretty well but are clearly suboptimal.</p>
-<p>The thing that's worth noting however is the representation. You can see it in <a href="https://github.com/HypothesisWorks/hypothesis/blob/master/hypothesis-python/src/hypothesis/internal/conjecture/choicetree.py">the relevant Python file</a>, but the important features of it are basically:</p>
-<ol>
-<li>We maintain a rose tree, lazily built as we walk it, where each node has <code>len(values)</code> children, <code>values</code> being the collection of choices made at that point. Each node also maintains a count of how many "live" (that is, not fully explored) children it has.</li>
-<li>When we complete running a pass step, we mark the final node as dead, decrement the count on its parent and if that is zero also mark it as dead and do the same with its parent etc.</li>
-<li>Every time we successfully reduce the current target, we delete the tree and start over with a fresh one, but for deterministic iteration start from the same point in the tree (to the greatest degree possible)</li>
+<p>Switching between the two according some frankly fairly arbitrary
+internal heuristics that seem to work pretty well but are clearly
+suboptimal.</p>
+<p>The thing that’s worth noting however is the representation. You can
+see it in <a href="https://github.com/HypothesisWorks/hypothesis/blob/master/hypothesis-python/src/hypothesis/internal/conjecture/choicetree.py">the
+relevant Python file</a>, but the important features of it are
+basically:</p>
+<ol type="1">
+<li>We maintain a rose tree, lazily built as we walk it, where each node
+has <code>len(values)</code> children, <code>values</code> being the
+collection of choices made at that point. Each node also maintains a
+count of how many “live” (that is, not fully explored) children it
+has.</li>
+<li>When we complete running a pass step, we mark the final node as
+dead, decrement the count on its parent and if that is zero also mark it
+as dead and do the same with its parent etc.</li>
+<li>Every time we successfully reduce the current target, we delete the
+tree and start over with a fresh one, but for deterministic iteration
+start from the same point in the tree (to the greatest degree
+possible)</li>
 </ol>
-<p>Essentially we are representing a step in a reduction pass as a sequence of integers representing nondeterministic choices,
-and stopping when the full tree has been explored for the given shrink target.
-As well as turning out to be quite a convenient representation, this is pleasingly similar to <a href="https://2020.ecoop.org/details/ecoop-2020-papers/13/Test-Case-Reduction-via-Test-Case-Generation-Insights-From-the-Hypothesis-Reducer">how Hypothesis represents test-case generation</a>.</p>
+<p>Essentially we are representing a step in a reduction pass as a
+sequence of integers representing nondeterministic choices, and stopping
+when the full tree has been explored for the given shrink target. As
+well as turning out to be quite a convenient representation, this is
+pleasingly similar to <a href="https://2020.ecoop.org/details/ecoop-2020-papers/13/Test-Case-Reduction-via-Test-Case-Generation-Insights-From-the-Hypothesis-Reducer">how
+Hypothesis represents test-case generation</a>.</p>
+
 </section>
 
     </article>

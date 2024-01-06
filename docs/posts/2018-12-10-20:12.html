@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8"/>
     <title>
-DRMacIver's Notebook: Levy's theorem
+DRMacIver's Notebook: Levy’s theorem
     </title>
 
-    <meta property="og:title" content="Levy&#39;s theorem">
+    <meta property="og:title" content="Levy’s theorem">
 
     <meta property="og:url" content="https://notebook.drmaciver.com/posts/2018-12-10-20:12.html" />
     <link rel="canonical" href="https://notebook.drmaciver.com/posts/2018-12-10-20:12.html" />
@@ -17,6 +17,7 @@ DRMacIver's Notebook: Levy's theorem
 
     <meta property="og:creator" content="@DRMacIver">
 
+    <link rel="stylesheet" href="/pandoc.css"/>
     <link rel="stylesheet" href="/pygments.css"/>
     <link rel="stylesheet" href="/tufte.css"/>
     <link rel="stylesheet" href="/latex.css"/>
@@ -62,46 +63,73 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
   <body>
     <article>
         <h1><a href="/">DRMacIver's Notebook</a></h1>
-        <p class=subtitle>Levy's theorem</p>
+        <p class=subtitle>Levy’s theorem</p>
 
         
 
 <section id="the-post">
-<p class=subtitle>Levy's theorem</p>
+<p class=subtitle>Levy’s theorem</p>
 <dl class=metadata>
 <dt>Published</dt>
 <dd class="post-date">2018-12-10</dd>
 </dl>
 
-<p>I have this theorem from "Combinatorics of Permutations" by Miklós Bóna, where it's frustratingly referred to as Levy's theorem and neither proved nor referenced.
-Fortunately despite its incredibly odd looking nature it's not actually that hard to prove.</p>
-<p>Theorem: Let \(a_0, \ldots, a_n\) be a sequence of non-negative real numbers and let \(A(z) = \sum a_k z^k\).
-If \(A(z) &gt; 1\) then the following two statements are equiovalent:</p>
+<p>I have this theorem from “Combinatorics of Permutations” by Miklós
+Bóna, where it’s frustratingly referred to as Levy’s theorem and neither
+proved nor referenced. Fortunately despite its incredibly odd looking
+nature it’s not actually that hard to prove.</p>
+<p>Theorem: Let <span class="math inline">\(a_0, \ldots, a_n\)</span> be
+a sequence of non-negative real numbers and let <span class="math inline">\(A(z) = \sum a_k z^k\)</span>. If <span class="math inline">\(A(z) &gt; 1\)</span> then the following two
+statements are equiovalent:</p>
 <ul>
-<li>The polynomial \(A(z)\) is either constant or has real zeros only.</li>
-<li>There are probabilities \(p_i\) such that if \(X_i\) are independent Bernoulli random variables with \(P(X_i = 1) = p_i\) then \(P(\sum X_i = k) = \frac{a_k}{A(1)}\). The roots of \(A(z)\) are \(-\frac{1 - p_i}{p_i}\) for the \(p_i\) with \(p_i &gt; 0\). </li>
+<li>The polynomial <span class="math inline">\(A(z)\)</span> is either
+constant or has real zeros only.</li>
+<li>There are probabilities <span class="math inline">\(p_i\)</span>
+such that if <span class="math inline">\(X_i\)</span> are independent
+Bernoulli random variables with <span class="math inline">\(P(X_i = 1) =
+p_i\)</span> then <span class="math inline">\(P(\sum X_i = k) =
+\frac{a_k}{A(1)}\)</span>. The roots of <span class="math inline">\(A(z)\)</span> are <span class="math inline">\(-\frac{1 - p_i}{p_i}\)</span> for the <span class="math inline">\(p_i\)</span> with <span class="math inline">\(p_i
+&gt; 0\)</span>.</li>
 </ul>
-<p>This theorem took me completely aback when I saw it but once you see the proof it's quite natural.</p>
-<p>Let \(p_i\) be arbitrary probabilities. Without loss of generality assume that \(p_i &gt; 0\) (if some of the \(p_i\) are non-zero this will just result in some of the high coefficients being 0).
-Let \(X_i\) be independent bernoulli variables as above, and let \(d_k = P(\sum X_i = k)\).</p>
-<p>Construct the generating function \(f(z) = \sum d_k z^k\).
-This can be written as \(f(z) = \sum\limits_{A \subseteq [n]} \prod\limits_{i \in A} z p_i  \prod\limits_{i \not\in A} (1 - p_i)\),
-but this is \(\prod\limits_{i} (z_i p_i + 1 - p_i)\).
-This is a polynomial with roots at \(z = -\frac{1 - p_i}{p_i}\) as desired.</p>
-<p>This gives us our implication from the second to the first. By construction and the fact that \(f(1) = P(0 \leq \sum X_i \leq n) = 1\), \(A(z) = A(1) f(z)\),
-so the roots of \(A(z)\) are the roots of \(f\) and \(d_k = \frac{a_k}{A(1)}\).</p>
-<p>To get the other implication we just need to show every possible \(A(z)\) arises this way.
-i.e. we can always find \(p_i\) such that \(A(z) = A(1) f(z)\).</p>
-<p>Let \(A(z)\) be non-constant and have real roots. Note that these roots must be negative, because for any \(z &gt; 0\) we have \(A(z) \geq a_0 + \min(z, z^n) \min\limits_{i \geq 1} a_i &gt; 0\).
-So suppose these roots are \(r_1, \ldots r_n\).</p>
-<p>Because the formula for the roots of \(f\) takes the value \(0\) when \(p_i = 1\) and tends to \(-\infty\) as \(p_i \to 0\),
-we can choose our \(p_i\) so that \(r_i = -\frac{1 - p_i}{p_i}\).
-This ensures that \(A\) is proportional to \(f\), and again because \(f(z) = 1\) this means that \(A(z) = A(1) f(z)\) as desired.</p>
+<p>This theorem took me completely aback when I saw it but once you see
+the proof it’s quite natural.</p>
+<p>Let <span class="math inline">\(p_i\)</span> be arbitrary
+probabilities. Without loss of generality assume that <span class="math inline">\(p_i &gt; 0\)</span> (if some of the <span class="math inline">\(p_i\)</span> are non-zero this will just result in
+some of the high coefficients being 0$. Let <span class="math inline">\(X_i\)</span> be independent bernoulli variables as
+above, and let <span class="math inline">\(d_k = P(\sum X_i =
+k)\)</span>.</p>
+<p>Construct the generating function <span class="math inline">\(f(z) =
+\sum d_k z^k\)</span>. This can be written as <span class="math inline">\(f(z) = \sum\limits_{A \subseteq [n]}
+\prod\limits_{i \in A} z p_i  \prod\limits_{i \not\in A} (1 -
+p_i)\)</span>, but this is <span class="math inline">\(\prod\limits_{i}
+(z_i p_i + 1 - p_i)\)</span>. This is a polynomial with roots at <span class="math inline">\(z = -\frac{1 - p_i}{p_i}\)</span> as desired.</p>
+<p>This gives us our implication from the second to the first. By
+construction and the fact that <span class="math inline">\(f(1) = P(0
+\leq \sum X_i \leq n) = 1\)</span>, <span class="math inline">\(A(z) =
+A(1) f(z)\)</span>, so the roots of <span class="math inline">\(A(z)\)</span> are the roots of <span class="math inline">\(f\)</span> and <span class="math inline">\(d_k =
+\frac{a_k}{A(1)}\)</span>.</p>
+<p>To get the other implication we just need to show every possible
+<span class="math inline">\(A(z)\)</span> arises this way. i.e. we can
+always find <span class="math inline">\(p_i\)</span> such that <span class="math inline">\(A(z) = A(1) f(z)\)</span>.</p>
+<p>Let <span class="math inline">\(A(z)\)</span> be non-constant and
+have real roots. Note that these roots must be negative, because for any
+<span class="math inline">\(z &gt; 0\)</span> we have <span class="math inline">\(A(z) \geq a_0 + \min(z, z^n) \min\limits_{i \geq
+1} a_i &gt; 0\)</span>. So suppose these roots are <span class="math inline">\(r_1, \ldots r_n\)</span>.</p>
+<p>Because the formula for the roots of <span class="math inline">\(f\)</span> takes the value <span class="math inline">\(0\)</span> when <span class="math inline">\(p_i =
+1\)</span> and tends to <span class="math inline">\(-\infty\)</span> as
+<span class="math inline">\(p_i \to 0\)</span>, we can choose our <span class="math inline">\(p_i\)</span> so that <span class="math inline">\(r_i = -\frac{1 - p_i}{p_i}\)</span>. This ensures
+that <span class="math inline">\(A\)</span> is proportional to <span class="math inline">\(f\)</span>, and again because <span class="math inline">\(f(z) = 1\)</span> this means that <span class="math inline">\(A(z) = A(1) f(z)\)</span> as desired.</p>
 <p>QED</p>
-<p>A rather surprising (to me) implication of this theorem is that unless there are \(j, k\) such that \(a_i &gt; 0\) if and only if \(j \leq i \leq k\),
-\(A(z)\) has at least one non-real root.
-There's presumably some elementary way of proving that, but it's direct from Levy's theorem because the probabilities of getting \(k\) successes have this property.</p>
-<p>In general this seems to put strong constraints on the coefficients of polynomials with non-negative coefficients and real zeroes, but I haven't fully understood what they are yet (something to do with log concativity of their coefficients?).</p>
+<p>A rather surprising (to me) implication of this theorem is that
+unless there are <span class="math inline">\(j, k\)</span> such that
+<span class="math inline">\(a_i &gt; 0\)</span> if and only if <span class="math inline">\(j \leq i \leq k\)</span>, <span class="math inline">\(A(z)\)</span> has at least one non-real root.
+There’s presumably some elementary way of proving that, but it’s direct
+from Levy’s theorem because the probabilities of getting <span class="math inline">\(k\)</span> successes have this property.</p>
+<p>In general this seems to put strong constraints on the coefficients
+of polynomials with non-negative coefficients and real zeroes, but I
+haven’t fully understood what they are yet (something to do with log
+concativity of their coefficients?).</p>
+
 </section>
 
     </article>

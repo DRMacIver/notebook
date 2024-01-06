@@ -17,6 +17,7 @@ DRMacIver's Notebook: Using unsound A* search to improve a greedy algorithm
 
     <meta property="og:creator" content="@DRMacIver">
 
+    <link rel="stylesheet" href="/pandoc.css"/>
     <link rel="stylesheet" href="/pygments.css"/>
     <link rel="stylesheet" href="/tufte.css"/>
     <link rel="stylesheet" href="/latex.css"/>
@@ -73,22 +74,40 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
 <dd class="post-date">2019-01-03</dd>
 </dl>
 
-<p>I figured out something quite neat today,
-which is that you can use improper \(A^*\) search to find a good set of test-case reduction pass orderings.</p>
-<p>The basic idea is that you have some set of interesting test cases \(X\) a number of reduction passes \(f_i: X \to (\mathbb{N}^+, X)\) with \(f(x)_1 \leq x\).
-The pass returns a shrink (possibly the same value) and a cost (i.e. number of test evaluations) of getting there.
-We're looking for a minimum cost sequence of applications of the \(f_i\) until we get to a fixed point.</p>
-<p>This can be viewed as a graph search problem. Each \(f_i\) defines an edge of weight \(f_i(x)_0\) from \(x\) to \(f_i(x)_1\).
-You can run Dijsktra's algorithm to find an exact shortest path to a fixed point,
-but this takes basically forever.</p>
-<p>\(A^*\) is an algorithm that speeds up Dijsktra by using a lower bound on the possible path length to preferentially select good directions.
-There's no way to run a <em>proper</em> version of \(A^*\) because the problem is not well enough posed to get a good lower bound on the cost of reduction,
-but you can run an improper one by setting that lower bound heuristic to whatever you like.
-Depending on how close it is to being a true lower bound you may still get a good path which may or may not be optimal (in my experiments it seems to be within about 10-20% of optimal, which is pretty good).</p>
-<p>The trick for test-case reduciton is that greedy search works pretty well but not brilliantly.
-You can set the lower bound heuristic to be the cost of running a greedy search (I'm using one which always selects the lowest cost edge that makes progress).
-This then ensures that your lower bound always corresponds to the cost of <em>some</em> path, even if it's not the optimal one. In particular if you wanted it to be this could become an any time algorithm.</p>
-<p>I suspect this trick generalises but I haven't quite figured out its essential characteristics yet.</p>
+<p>I figured out something quite neat today, which is that you can use
+improper <span class="math inline">\(A^*\)</span> search to find a good
+set of test-case reduction pass orderings.</p>
+<p>The basic idea is that you have some set of interesting test cases
+<span class="math inline">\(X\)</span> a number of reduction passes
+<span class="math inline">\(f_i: X \to (\mathbb{N}^+, X)\)</span> with
+<span class="math inline">\(f(x)_1 \leq x\)</span>. The pass returns a
+shrink (possibly the same value) and a cost (i.e. number of test
+evaluations) of getting there. We’re looking for a minimum cost sequence
+of applications of the <span class="math inline">\(f_i\)</span> until we
+get to a fixed point.</p>
+<p>This can be viewed as a graph search problem. Each <span class="math inline">\(f_i\)</span> defines an edge of weight <span class="math inline">\(f_i(x)_0\)</span> from <span class="math inline">\(x\)</span> to <span class="math inline">\(f_i(x)_1\)</span>. You can run Dijsktra’s
+algorithm to find an exact shortest path to a fixed point, but this
+takes basically forever.</p>
+<p><span class="math inline">\(A^*\)</span> is an algorithm that speeds
+up Dijsktra by using a lower bound on the possible path length to
+preferentially select good directions. There’s no way to run a
+<em>proper</em> version of <span class="math inline">\(A^*\)</span>
+because the problem is not well enough posed to get a good lower bound
+on the cost of reduction, but you can run an improper one by setting
+that lower bound heuristic to whatever you like. Depending on how close
+it is to being a true lower bound you may still get a good path which
+may or may not be optimal (in my experiments it seems to be within about
+10-20% of optimal, which is pretty good).</p>
+<p>The trick for test-case reduciton is that greedy search works pretty
+well but not brilliantly. You can set the lower bound heuristic to be
+the cost of running a greedy search (I’m using one which always selects
+the lowest cost edge that makes progress). This then ensures that your
+lower bound always corresponds to the cost of <em>some</em> path, even
+if it’s not the optimal one. In particular if you wanted it to be this
+could become an any time algorithm.</p>
+<p>I suspect this trick generalises but I haven’t quite figured out its
+essential characteristics yet.</p>
+
 </section>
 
     </article>

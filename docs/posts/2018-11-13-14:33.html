@@ -17,6 +17,7 @@ DRMacIver's Notebook: Testing if nearness is an equivalence.
 
     <meta property="og:creator" content="@DRMacIver">
 
+    <link rel="stylesheet" href="/pandoc.css"/>
     <link rel="stylesheet" href="/pygments.css"/>
     <link rel="stylesheet" href="/tufte.css"/>
     <link rel="stylesheet" href="/latex.css"/>
@@ -73,39 +74,48 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
 <dd class="post-date">2018-11-13</dd>
 </dl>
 
-<p>Suppose you have points \(X = \{x_1, \ldots, x_n\}\) and an arbitrary pseudometric \(d: X^2 \to \mathbb{R}^+\).
-Let \(\epsilon &gt; 0\).
-Can you decide whether the relationship \(x \tilde y \equiv d(x, y) \leq \epsilon\) is an equivalence relationship in better than \(O(n^3)\) time?</p>
-<p>You certainly can't do it in less than \(O(n^2)\) time.
-Consider \(d(x_i, x_j) = 1_{(i, j) = (u, v)}\) and \(\epsilon = \frac{1}{2}\).
-Any algorithm that has not checked all pairs \(u, v\) will fail to distinguish one of these from the pseudometric that is always \(0\).</p>
-<p>I'm reasonably confident the answer is that there is no better than \(O(n^3)\) solution but I haven't checked.
-I'm just writing this problem down because I popped into my head and I wanted to get it out of there.</p>
-<p>Update: No I'm being stupid. There's a general \(O(n^2 \log(n))\) algorithm to check if any reflexive and symmetric relationship is an equivalence relationship.
-It works as follows:</p>
-<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">itertools</span>
+<p>Suppose you have points <span class="math inline">\(X = \{x_1,
+\ldots, x_n\}\)</span> and an arbitrary pseudometric <span class="math inline">\(d: X^2 \to \mathbb{R}^+\)</span>. Let <span class="math inline">\(\epsilon &gt; 0\)</span>. Can you decide whether
+the relationship <span class="math inline">\(x \tilde y \equiv d(x, y)
+\leq \epsilon\)</span> is an equivalence relationship in better than
+<span class="math inline">\(O(n^3)\)</span> time?</p>
+<p>You certainly can’t do it in less than <span class="math inline">\(O(n^2)\)</span> time. Consider <span class="math inline">\(d(x_i, x_j) = 1_{(i, j) = (u, v)}\)</span> and
+<span class="math inline">\(\epsilon = \frac{1}{2}\)</span>. Any
+algorithm that has not checked all pairs <span class="math inline">\(u,
+v\)</span> will fail to distinguish one of these from the pseudometric
+that is always <span class="math inline">\(0\)</span>.</p>
+<p>I’m reasonably confident the answer is that there is no better than
+<span class="math inline">\(O(n^3)\)</span> solution but I haven’t
+checked. I’m just writing this problem down because I popped into my
+head and I wanted to get it out of there.</p>
+<p>Update: No I’m being stupid. There’s a general <span class="math inline">\(O(n^2 \log(n))\)</span> algorithm to check if any
+reflexive and symmetric relationship is an equivalence relationship. It
+works as follows:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a aria-hidden="true" href="#cb1-1" tabindex="-1"></a><span class="im">import</span> itertools</span>
+<span id="cb1-2"><a aria-hidden="true" href="#cb1-2" tabindex="-1"></a></span>
+<span id="cb1-3"><a aria-hidden="true" href="#cb1-3" tabindex="-1"></a><span class="kw">def</span> is_equivalence(points, r):</span>
+<span id="cb1-4"><a aria-hidden="true" href="#cb1-4" tabindex="-1"></a>  vec_to_fingerprint <span class="op">=</span> {}</span>
+<span id="cb1-5"><a aria-hidden="true" href="#cb1-5" tabindex="-1"></a></span>
+<span id="cb1-6"><a aria-hidden="true" href="#cb1-6" tabindex="-1"></a>  fingerprints <span class="op">=</span> {</span>
+<span id="cb1-7"><a aria-hidden="true" href="#cb1-7" tabindex="-1"></a>    x: vec_to_fingerprint.setdefault(</span>
+<span id="cb1-8"><a aria-hidden="true" href="#cb1-8" tabindex="-1"></a>      <span class="bu">tuple</span>(r(x, y) <span class="cf">for</span> y <span class="kw">in</span> points),</span>
+<span id="cb1-9"><a aria-hidden="true" href="#cb1-9" tabindex="-1"></a>      <span class="bu">len</span>(vec_to_fingerprint)</span>
+<span id="cb1-10"><a aria-hidden="true" href="#cb1-10" tabindex="-1"></a>    )</span>
+<span id="cb1-11"><a aria-hidden="true" href="#cb1-11" tabindex="-1"></a>    <span class="cf">for</span> x <span class="kw">in</span> points</span>
+<span id="cb1-12"><a aria-hidden="true" href="#cb1-12" tabindex="-1"></a>  }</span>
+<span id="cb1-13"><a aria-hidden="true" href="#cb1-13" tabindex="-1"></a></span>
+<span id="cb1-14"><a aria-hidden="true" href="#cb1-14" tabindex="-1"></a>  <span class="cf">return</span> <span class="bu">all</span>(</span>
+<span id="cb1-15"><a aria-hidden="true" href="#cb1-15" tabindex="-1"></a>    <span class="kw">not</span> r(u, v) <span class="kw">or</span> (fingerprints[u] <span class="op">==</span> fingerprints[v])</span>
+<span id="cb1-16"><a aria-hidden="true" href="#cb1-16" tabindex="-1"></a>    <span class="cf">for</span> u, v <span class="kw">in</span> itertools.combinations(points, <span class="dv">2</span>)</span>
+<span id="cb1-17"><a aria-hidden="true" href="#cb1-17" tabindex="-1"></a>  )</span></code></pre></div>
+<p>We “fingerprint” each point by the set of points it is equivalent to,
+turning it into integers we can compare in <span class="math inline">\(O(\log(n))\)</span> time. We now test whether
+every equivalent pair has the same fingerprint. If yes, then the
+equivalence relationship is just whether the two points have the same
+fingerprint. If no, that witnesses an intransitivity.</p>
+<p>I don’t know if you can get rid of the <span class="math inline">\(\log(n)\)</span> factor, but now I <em>really</em>
+don’t care.</p>
 
-<span class="k">def</span> <span class="nf">is_equivalence</span><span class="p">(</span><span class="n">points</span><span class="p">,</span> <span class="n">r</span><span class="p">):</span>
-  <span class="n">vec_to_fingerprint</span> <span class="o">=</span> <span class="p">{}</span>
-
-  <span class="n">fingerprints</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="n">x</span><span class="p">:</span> <span class="n">vec_to_fingerprint</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span>
-      <span class="nb">tuple</span><span class="p">(</span><span class="n">r</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">points</span><span class="p">),</span>
-      <span class="nb">len</span><span class="p">(</span><span class="n">vec_to_fingerprint</span><span class="p">)</span>
-    <span class="p">)</span>
-    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">points</span>
-  <span class="p">}</span>
-
-  <span class="k">return</span> <span class="nb">all</span><span class="p">(</span>
-    <span class="ow">not</span> <span class="n">r</span><span class="p">(</span><span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">fingerprints</span><span class="p">[</span><span class="n">u</span><span class="p">]</span> <span class="o">==</span> <span class="n">fingerprints</span><span class="p">[</span><span class="n">v</span><span class="p">])</span>
-    <span class="k">for</span> <span class="n">u</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">itertools</span><span class="o">.</span><span class="n">combinations</span><span class="p">(</span><span class="n">points</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-  <span class="p">)</span>
-</pre></div>
-<p>We "fingerprint" each point by the set of points it is equivalent to, turning it into integers we can compare in \(O(\log(n))\) time.
-We now test whether every equivalent pair has the same fingerprint.
-If yes, then the equivalence relationship is just whether the two points have the same fingerprint.
-If no, that witnesses an intransitivity.</p>
-<p>I don't know if you can get rid of the \(\log(n)\) factor, but now I <em>really</em> don't care.</p>
 </section>
 
     </article>

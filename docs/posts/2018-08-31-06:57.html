@@ -16,6 +16,7 @@ DRMacIver's Notebook
 
     <meta property="og:creator" content="@DRMacIver">
 
+    <link rel="stylesheet" href="/pandoc.css"/>
     <link rel="stylesheet" href="/pygments.css"/>
     <link rel="stylesheet" href="/tufte.css"/>
     <link rel="stylesheet" href="/latex.css"/>
@@ -69,71 +70,120 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
 <dt>Published</dt>
 <dd class="post-date">2018-08-31</dd>
 </dl>
-<p>I'm a big fan of the <a href="https://en.wikipedia.org/wiki/Brzozowski_derivative">Brzozowski derivative</a>,
-introduced in "Derivatives of regular expressions" by Janusz A. Brzozowski.</p>
-<p>The basic idea is that given some language \(L\) over an alphabet \(A\),
-and some string \(u\) over \(L\),
-you can define the derivative language \(\partial(L, u) = \{v: uv \in L\}\).
-We can extend this further (and it will be useful to do so below).
-If \(M\) is some other language, we can define \(\partial(L, M) = \{v: \exists u \in M, uv \in L\}\).
-I'm not currently sure if the derivative of a regular language by a regular langauge is regular in general. It is in the case we'll see later,
-and I suspect it is in general.</p>
-<p>This seems like a pretty trivial observation until you realise the following three things:</p>
-<ol>
-<li>\(u \in L\) if and only if \(\epsilon \in \partial(L, u)\)</li>
-<li>\(uv \in L\) if and only if \(v \in \partial(L, u)\)</li>
-<li>For most common representations of languages, it's actually pretty easy to calculate a representation of their derivative.</li>
+<p>I’m a big fan of the <a href="https://en.wikipedia.org/wiki/Brzozowski_derivative">Brzozowski
+derivative</a>, introduced in “Derivatives of regular expressions” by
+Janusz A. Brzozowski.</p>
+<p>The basic idea is that given some language <span class="math inline">\(L\)</span> over an alphabet <span class="math inline">\(A\)</span>, and some string <span class="math inline">\(u\)</span> over <span class="math inline">\(L\)</span>, you can define the derivative language
+<span class="math inline">\(\partial(L, u) = \{v: uv \in L\}\)</span>.
+We can extend this further (and it will be useful to do so below). If
+<span class="math inline">\(M\)</span> is some other language, we can
+define <span class="math inline">\(\partial(L, M) = \{v: \exists u \in
+M, uv \in L\}\)</span>. I’m not currently sure if the derivative of a
+regular language by a regular langauge is regular in general. It is in
+the case we’ll see later, and I suspect it is in general.</p>
+<p>This seems like a pretty trivial observation until you realise the
+following three things:</p>
+<ol type="1">
+<li><span class="math inline">\(u \in L\)</span> if and only if <span class="math inline">\(\epsilon \in \partial(L, u)\)</span></li>
+<li><span class="math inline">\(uv \in L\)</span> if and only if <span class="math inline">\(v \in \partial(L, u)\)</span></li>
+<li>For most common representations of languages, it’s actually pretty
+easy to calculate a representation of their derivative.</li>
 </ol>
-<p>Putting these together, you can use the Brzozowski derivative to calculate a deterministic (not necessarily finite!) automaton for almost any language that you can easily represent.
-You label states with descriptions of languages,
-a state is accepting if it matches the empty string,
-and transitions to the states labelled by the derivatives.</p>
-<p><a href="http://www.ccs.neu.edu/home/turon/re-deriv.pdf">Regular-expression derivatives reexamined</a> by Owens et al. has some nice practical details of doing this in the context of functional programming.</p>
-<p>To see this in action, consider the standard regular expression operators.
-These satisfy the following identifies:</p>
-<ol>
-<li>\(\partial(A | B, u) = \partial(A, u) | \partial(B, u)\)</li>
-<li>\(\partial(AB, u) = \partial(A, u)B | \nu(A) \partial(B, u)\), where \(\nu(A) = \epsilon\) if \(\epsilon \in A\) or \(\emptyset\) otherwise (i.e. the derivative can skip over \(A\) if and only if \(A\) contains the empty string)</li>
-<li>\(\partial(A^*, u) = \partial(A, u) A^*\)</li>
+<p>Putting these together, you can use the Brzozowski derivative to
+calculate a deterministic (not necessarily finite!) automaton for almost
+any language that you can easily represent. You label states with
+descriptions of languages, a state is accepting if it matches the empty
+string, and transitions to the states labelled by the derivatives.</p>
+<p><a href="http://www.ccs.neu.edu/home/turon/re-deriv.pdf">Regular-expression
+derivatives reexamined</a> by Owens et al. has some nice practical
+details of doing this in the context of functional programming.</p>
+<p>To see this in action, consider the standard regular expression
+operators. These satisfy the following identifies:</p>
+<ol type="1">
+<li><span class="math inline">\(\partial(A | B, u) = \partial(A, u) |
+\partial(B, u)\)</span></li>
+<li><span class="math inline">\(\partial(AB, u) = \partial(A, u)B |
+\nu(A) \partial(B, u)\)</span>, where <span class="math inline">\(\nu(A)
+= \epsilon\)</span> if <span class="math inline">\(\epsilon \in
+A\)</span> or <span class="math inline">\(\emptyset\)</span> otherwise
+(i.e. the derivative can skip over <span class="math inline">\(A\)</span> if and only if <span class="math inline">\(A\)</span> contains the empty string)</li>
+<li><span class="math inline">\(\partial(A^*, u) = \partial(A, u)
+A^*\)</span></li>
 </ol>
-<p>A result proved in Brzozowski's original paper (apparently. I can't currently seem to access it, and am going off thecite in "Regular-expression derivatives reexamined) is that a small number of reasonable normalisation rules over the representation of the language is enough to ensure that you only get finitely many states in the state machine generated by partial derivatives of regular expressions.
-It's certainly true that you only get finitely many if you have full equivalence for the regular languages labelling the states - the derivative automaton is actually the minimal automaton representing a language.</p>
-<p>There are two very nice things about this representation of the language's automaton though:</p>
-<ol>
-<li>It can be done <em>lazily</em>. This means that even when your deterministic automaton has exponentially (or infinitely!) many states, you only ever need to explore the states that you walk when matching strings.</li>
+<p>A result proved in Brzozowski’s original paper (apparently. I can’t
+currently seem to access it, and am going off thecite in
+“Regular-expression derivatives reexamined) is that a small number of
+reasonable normalisation rules over the representation of the language
+is enough to ensure that you only get finitely many states in the state
+machine generated by partial derivatives of regular expressions. It’s
+certainly true that you only get finitely many if you have full
+equivalence for the regular languages labelling the states - the
+derivative automaton is actually the minimal automaton representing a
+language.</p>
+<p>There are two very nice things about this representation of the
+language’s automaton though:</p>
+<ol type="1">
+<li>It can be done <em>lazily</em>. This means that even when your
+deterministic automaton has exponentially (or infinitely!) many states,
+you only ever need to explore the states that you walk when matching
+strings.</li>
 <li>It is very easy to extend with new operators.</li>
 </ol>
-<p>An example of (2) is that regular expressions reexamined actually does it for extended regular expressions with intersection and negation, because might as well right? It's no harder than doing it with the normal ones, even though adding these to your regular expression language can cause exponential blowup in the size of the automata compiled from your regex.</p>
-<p>But there are even more interesting ones if you're prepared to go for more esoteric operations!</p>
-<p>Have you heard of the <a href="https://en.wikipedia.org/wiki/Levenshtein_automaton">Levenshtein automaton</a>? The set of strings within some finite edit distance of another string is a regular language and you can define a nice automaton matching it.
-But in fact, a stronger result is true: For any regular language \(L\) and natural number \(n\), the set \(E(L, n) = \{u: \exists v \in L, d(u, v) \leq n\}\) is a regular language.
-Why?</p>
-<p>Well, we can calculate its derivative!
-The derivative of \(E\) is \(\partial(E(L, n), u) = E(\partial(L, u), n) | E(L, n - 1) | E(\partial(L, \cdot), n - 1) | \partial(E(\partial(L, \cdot), n - 1), u)\).
-That is, at each character we can either:</p>
-<ol>
+<p>An example of (2) is that regular expressions reexamined actually
+does it for extended regular expressions with intersection and negation,
+because might as well right? It’s no harder than doing it with the
+normal ones, even though adding these to your regular expression
+language can cause exponential blowup in the size of the automata
+compiled from your regex.</p>
+<p>But there are even more interesting ones if you’re prepared to go for
+more esoteric operations!</p>
+<p>Have you heard of the <a href="https://en.wikipedia.org/wiki/Levenshtein_automaton">Levenshtein
+automaton</a>? The set of strings within some finite edit distance of
+another string is a regular language and you can define a nice automaton
+matching it. But in fact, a stronger result is true: For any regular
+language <span class="math inline">\(L\)</span> and natural number <span class="math inline">\(n\)</span>, the set <span class="math inline">\(E(L, n) = \{u: \exists v \in L, d(u, v) \leq
+n\}\)</span> is a regular language. Why?</p>
+<p>Well, we can calculate its derivative! The derivative of <span class="math inline">\(E\)</span> is <span class="math inline">\(\partial(E(L, n), u) = E(\partial(L, u), n) | E(L,
+n - 1) | E(\partial(L, \cdot), n - 1) | \partial(E(\partial(L, \cdot), n
+- 1), u)\)</span>. That is, at each character we can either:</p>
+<ol type="1">
 <li>Continue matching the original language (cost 0).</li>
-<li>Insert a new character in front of something in the original language (cost 1)</li>
-<li>Replace a character in the original language with \(u\) (cost 1)</li>
-<li>Drop a character from the original language and try again (cost 1)</li>
+<li>Insert a new character in front of something in the original
+language (cost 1)</li>
+<li>Replace a character in the original language with <span class="math inline">\(u\)</span> (cost 1)</li>
+<li>Drop a character from the original language and try again (cost
+1)</li>
 </ol>
 <p>In the course of doing this we apply the following rewrite rules:</p>
-<ol>
-<li>\(E(L, 0) = L\)</li>
-<li>\(E(\emptyset, n) = \emptyset\)</li>
+<ol type="1">
+<li><span class="math inline">\(E(L, 0) = L\)</span></li>
+<li><span class="math inline">\(E(\emptyset, n) =
+\emptyset\)</span></li>
 </ol>
-<p>As long as the number of reachable representations for the original languages is finite,
-so is the number of reachable states in our Levenshtein construction:
-Every state is labelled by a set of languages of the form \(E(\partial(L, U), k)\) where \(U\) is a language defined by \(u_1 \ldots u_m\) with each \(u_i\) either a single character or a \(\cdot\),
-and \(m + k \leq n\). There are only finitely many such labels as long as there are only finitely many derivatives of \(L\),
-although in principle there may be exponentially many.
-Because of the laziness of our construction that often won't matter - you can still determine membership for a string of length \(k\) with only \(O(k)\) state traversals (though calculating those states could in principle require up to \(O(nm)\) work, where \(m\) is the number of states in the original automaton).</p>
-<p>You can also use this to determine the minimum edit distance between two regular languages,
-because you can test whether \(E(L, n) \cap L' = \emptyset\) by calculating and walking the generated DFA for the left hand side,
-so this gives you a decision procedure for \(d(L, L') \leq n\).</p>
-<p>Is this a practical algorithm? Not sure. I've played with it a little bit, but I've not really put it to the test,
-but I think it's an interesting example of the flexibility of the Brzozowski derivative,
-and it was at least mildly surprising to me that the edit ball of a regular language is itself regular.</p>
+<p>As long as the number of reachable representations for the original
+languages is finite, so is the number of reachable states in our
+Levenshtein construction: Every state is labelled by a set of languages
+of the form <span class="math inline">\(E(\partial(L, U), k)\)</span>
+where <span class="math inline">\(U\)</span> is a language defined by
+<span class="math inline">\(u_1 \ldots u_m\)</span> with each <span class="math inline">\(u_i\)</span> either a single character or a <span class="math inline">\(\cdot\)</span>, and <span class="math inline">\(m
++ k \leq n\)</span>. There are only finitely many such labels as long as
+there are only finitely many derivatives of <span class="math inline">\(L\)</span>, although in principle there may be
+exponentially many. Because of the laziness of our construction that
+often won’t matter - you can still determine membership for a string of
+length <span class="math inline">\(k\)</span> with only <span class="math inline">\(O(k)\)</span> state traversals (though calculating
+those states could in principle require up to <span class="math inline">\(O(nm)\)</span> work, where <span class="math inline">\(m\)</span> is the number of states in the original
+automaton).</p>
+<p>You can also use this to determine the minimum edit distance between
+two regular languages, because you can test whether <span class="math inline">\(E(L, n) \cap L' = \emptyset\)</span> by
+calculating and walking the generated DFA for the left hand side, so
+this gives you a decision procedure for <span class="math inline">\(d(L,
+L') \leq n\)</span>.</p>
+<p>Is this a practical algorithm? Not sure. I’ve played with it a little
+bit, but I’ve not really put it to the test, but I think it’s an
+interesting example of the flexibility of the Brzozowski derivative, and
+it was at least mildly surprising to me that the edit ball of a regular
+language is itself regular.</p>
+
 </section>
 
     </article>

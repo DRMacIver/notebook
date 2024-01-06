@@ -16,6 +16,7 @@ DRMacIver's Notebook
 
     <meta property="og:creator" content="@DRMacIver">
 
+    <link rel="stylesheet" href="/pandoc.css"/>
     <link rel="stylesheet" href="/pygments.css"/>
     <link rel="stylesheet" href="/tufte.css"/>
     <link rel="stylesheet" href="/latex.css"/>
@@ -69,49 +70,82 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
 <dt>Published</dt>
 <dd class="post-date">2018-09-06</dd>
 </dl>
-<p>Follow on to <a href="https://notebook.drmaciver.com/posts/2018-09-05-13:24.html">misc thoughts about voting design for talk scheduling</a>.</p>
-<p>Here's how a system that is much closer to classic STV could work.
-Assume everyone has a ranking of all the talks they wish to attend (this isn't actually reasonable to ask for, but you could get people to score talks according to some ordinal scores and then randomly tie break, or tie break in organiser preferred order or something).</p>
+<p>Follow on to <a href="https://notebook.drmaciver.com/posts/2018-09-05-13:24.html">misc
+thoughts about voting design for talk scheduling</a>.</p>
+<p>Here’s how a system that is much closer to classic STV could work.
+Assume everyone has a ranking of all the talks they wish to attend (this
+isn’t actually reasonable to ask for, but you could get people to score
+talks according to some ordinal scores and then randomly tie break, or
+tie break in organiser preferred order or something).</p>
 <p>The system has the following three parameters:</p>
-<ol>
+<ol type="1">
 <li>The number of time slots.</li>
 <li>The number of talks per time slot.</li>
-<li>The minimum number of attendees required for a talk to be worthwhile (should be at least one). Callt his the threshold.</li>
+<li>The minimum number of attendees required for a talk to be worthwhile
+(should be at least one). Callt his the threshold.</li>
 </ol>
-<p>You also need to pick a quota system. Either the <a href="https://en.wikipedia.org/wiki/Comparison_of_the_Hare_and_Droop_quotas">Droop or the Hare quota</a> are the obvious choices.
-My natural bias is to use the Hare quota, as it's better for minority interests and I think that's a nice feature to have in your conference talk selection (conferences have a tendency to have the same talks over and over again and I think this would help offset that).</p>
-<p>The system could easily be adapted to more complicated constraints in which not all talk/time slot combinations are valid, but I'm going to ignore that.</p>
-<p>Conceptually what happens is everyone is given one voting-buck,
-and a talk slot "costs" an amount of voting-bucks equal to the quota.
-People band together to form buying blocs and each spend the same percentage of their remaining pool of voting money to buy a slot (this is basically how normal STV works too).</p>
-<p>The system involves running the following process to a fixed point:</p>
-<ol>
-<li>Set the list of eligible talks to all talks which have at least the threshold number of people voted for them.</li>
-<li>Give everyone exactly one vote (note: as the process evolves, people will have fractional votes).</li>
-<li>People vote for (talk, slot) pairs, where the slot has not already been filled and the talk is both eligible and not yet scheduled.
-   They will vote for a pair if:<ol>
+<p>You also need to pick a quota system. Either the <a href="https://en.wikipedia.org/wiki/Comparison_of_the_Hare_and_Droop_quotas">Droop
+or the Hare quota</a> are the obvious choices. My natural bias is to use
+the Hare quota, as it’s better for minority interests and I think that’s
+a nice feature to have in your conference talk selection (conferences
+have a tendency to have the same talks over and over again and I think
+this would help offset that).</p>
+<p>The system could easily be adapted to more complicated constraints in
+which not all talk/time slot combinations are valid, but I’m going to
+ignore that.</p>
+<p>Conceptually what happens is everyone is given one voting-buck, and a
+talk slot “costs” an amount of voting-bucks equal to the quota. People
+band together to form buying blocs and each spend the same percentage of
+their remaining pool of voting money to buy a slot (this is basically
+how normal STV works too).</p>
+<p>The system involves running the following process to a fixed
+point:</p>
+<ol type="1">
+<li>Set the list of eligible talks to all talks which have at least the
+threshold number of people voted for them.</li>
+<li>Give everyone exactly one vote (note: as the process evolves, people
+will have fractional votes).</li>
+<li>People vote for (talk, slot) pairs, where the slot has not already
+been filled and the talk is both eligible and not yet scheduled. They
+will vote for a pair if:
+<ol type="1">
 <li>The talk their highest ranked talk among the available talks.</li>
-<li>If there are slots which have no talks they want to see in them, they will only vote for pairs in those slots.
-   Otherwise they will vote for pairs where they prefer the talk to the one currently scheduled there.
-   Note that a voter can vote for multiple (talk, slot) pairs.</li>
+<li>If there are slots which have no talks they want to see in them,
+they will only vote for pairs in those slots. Otherwise they will vote
+for pairs where they prefer the talk to the one currently scheduled
+there. Note that a voter can vote for multiple (talk, slot) pairs.</li>
+</ol></li>
+<li>If there are no such pairs, we have scheduled all of the talks we
+can (even if there still unfilled slots). Stop and report this as the
+schedule.</li>
+<li>If any of the pairs has a total number of votes exceeding the quota,
+pick the one with the most votes and schedule that. For each voter who
+voted for it, multiply their remaining vote by <span class="math inline">\(1 - \frac{q}{r}\)</span>, where <span class="math inline">\(q\)</span> is the quota and <span class="math inline">\(r\)</span> is the total vote for the elected slot
+(i.e. we’ve removed <span class="math inline">\(q\)</span> from their
+total vote and everybody pays it equally).</li>
+<li>If no pair was elected, take the talk with the lowest maximum vote
+over all vote pairs, and remove it from the list of eligible talks.</li>
+<li>If a pair was elected, now check if any talks can no longer meet the
+threshold - i.e. if for every slot you could schedule them in, count the
+number of people for whom that is their favourite talk in that slot. If
+there are no slots where this exceeds the threshold, remove the talk
+from the eligible list.</li>
+<li>If we removed any talks from the eligible list, reset all of the
+state except the list of eligible talks and go back to step 2. Otherwise
+go back to step 3.</li>
 </ol>
-</li>
-<li>If there are no such pairs, we have scheduled all of the talks we can (even if there still unfilled slots). Stop and report this as the schedule.</li>
-<li>If any of the pairs has a total number of votes exceeding the quota, pick the one with the most votes and schedule that.
-   For each voter who voted for it, multiply their remaining vote by \(1 - \frac{q}{r}\), where \(q\) is the quota and \(r\) is the total vote for the elected slot
-   (i.e. we've removed \(q\) from their total vote and everybody pays it equally).</li>
-<li>If no pair was elected, take the talk with the lowest maximum vote over all vote pairs, and remove it from the list of eligible talks.</li>
-<li>If a pair was elected, now check if any talks can no longer meet the threshold - i.e. if for every slot you could schedule them in,
-   count the number of people for whom that is their favourite talk in that slot. If there are no slots where this exceeds the threshold, remove the talk from the eligible list.</li>
-<li>If we removed any talks from the eligible list, reset all of the state except the list of eligible talks and go back to step 2. Otherwise go back to step 3.</li>
-</ol>
-<p>Most of this is just variant STV, with some of the specific details owing to specific types of STV.
-The main difference is that because the same voter may cast their vote for multiple options simultaneously,
-we need to be careful not to elect more than one "candidate" at once,
-plus the specialised drop-out rule for talks that fail to meet the threshold.</p>
-<p>Most of my problems with it are the same as my problems with STV in general: It looks like an iterative optimisation process, but it's not at all clear what it is you are optimising for.
-So it might work well, but I'm not really sure how you would measure "well" in this context.
-It seems plausibly worth a try though.</p>
+<p>Most of this is just variant STV, with some of the specific details
+owing to specific types of STV. The main difference is that because the
+same voter may cast their vote for multiple options simultaneously, we
+need to be careful not to elect more than one “candidate” at once, plus
+the specialised drop-out rule for talks that fail to meet the
+threshold.</p>
+<p>Most of my problems with it are the same as my problems with STV in
+general: It looks like an iterative optimisation process, but it’s not
+at all clear what it is you are optimising for. So it might work well,
+but I’m not really sure how you would measure “well” in this context. It
+seems plausibly worth a try though.</p>
+
 </section>
 
     </article>

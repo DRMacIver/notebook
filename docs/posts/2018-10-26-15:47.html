@@ -17,6 +17,7 @@ DRMacIver's Notebook: Deleting larger intervals in test case reduction
 
     <meta property="og:creator" content="@DRMacIver">
 
+    <link rel="stylesheet" href="/pandoc.css"/>
     <link rel="stylesheet" href="/pygments.css"/>
     <link rel="stylesheet" href="/tufte.css"/>
     <link rel="stylesheet" href="/latex.css"/>
@@ -73,13 +74,34 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
 <dd class="post-date">2018-10-26</dd>
 </dl>
 
-<p>So here's a surprising fact I just noticed.</p>
-<p>Suppose you've got some sequence \(S\) and a predicate \(p\) and you want to do test-case reduction on \(S\) with respect to \(p\).</p>
-<p>Classically we try to get the result to be one-minimal. I'm <em>pretty</em> sure that by choosing \(p\) carefully you can always force this to require \({|S|\choose 2}\) evaluations of \(p\). You certainly can with the greedy algorithm. See <a href="https://mathoverflow.net/questions/313669/what-is-the-minimum-worst-case-length-of-an-element-removal-game">this mathoverflow question I asked about generalising</a>.</p>
-<p>A stronger condition you might want is what you might call <em>interval</em> minimality. That is you want to find \(S'\) with \(p(S')\) such that \(p([S_1', \ldots, S_i', S_j', \ldots, S_n'])\) is false for any \(i &lt; j\).</p>
-<p>The funny thing is that these tasks have the same worst case complexity.</p>
-<p>If you run the brute force algorithm that tries to delete each interval of length \(k\) at a time, increasing \(k\) when that fails, if you delete an interval of size \(m\) then this takes you worst case \(m \frac{2n - m + 1}{2}\) evaluations, but it decreases the size of the sequence by \(m\). By doing induction and seeing where the maximum lies, this means that the actual number of predicate evaluations to get to a fixed point can also never exceed \({|S|\choose 2}\).</p>
-<p>The <em>typical</em> case is generally not going to be as good, but it's interesting that the worst case is the same.</p>
+<p>So here’s a surprising fact I just noticed.</p>
+<p>Suppose you’ve got some sequence <span class="math inline">\(S\)</span> and a predicate <span class="math inline">\(p\)</span> and you want to do test-case reduction
+on <span class="math inline">\(S\)</span> with respect to <span class="math inline">\(p\)</span>.</p>
+<p>Classically we try to get the result to be one-minimal. I’m
+<em>pretty</em> sure that by choosing <span class="math inline">\(p\)</span> carefully you can always force this to
+require <span class="math inline">\({|S|\choose 2}\)</span> evaluations
+of <span class="math inline">\(p\)</span>. You certainly can with the
+greedy algorithm. See <a href="https://mathoverflow.net/questions/313669/what-is-the-minimum-worst-case-length-of-an-element-removal-game">this
+mathoverflow question I asked about generalising</a>.</p>
+<p>A stronger condition you might want is what you might call
+<em>interval</em> minimality. That is you want to find <span class="math inline">\(S'\)</span> with <span class="math inline">\(p(S')\)</span> such that <span class="math inline">\(p([S_1', \ldots, S_i', S_j', \ldots,
+S_n'])\)</span> is false for any <span class="math inline">\(i &lt;
+j\)</span>.</p>
+<p>The funny thing is that these tasks have the same worst case
+complexity.</p>
+<p>If you run the brute force algorithm that tries to delete each
+interval of length <span class="math inline">\(k\)</span> at a time,
+increasing <span class="math inline">\(k\)</span> when that fails, if
+you delete an interval of size <span class="math inline">\(m\)</span>
+then this takes you worst case <span class="math inline">\(m \frac{2n -
+m + 1}{2}\)</span> evaluations, but it decreases the size of the
+sequence by <span class="math inline">\(m\)</span>. By doing induction
+and seeing where the maximum lies, this means that the actual number of
+predicate evaluations to get to a fixed point can also never exceed
+<span class="math inline">\({|S|\choose 2}\)</span>.</p>
+<p>The <em>typical</em> case is generally not going to be as good, but
+it’s interesting that the worst case is the same.</p>
+
 </section>
 
     </article>

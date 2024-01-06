@@ -17,6 +17,7 @@ DRMacIver's Notebook: There are no deterministic voting systems
 
     <meta property="og:creator" content="@DRMacIver">
 
+    <link rel="stylesheet" href="/pandoc.css"/>
     <link rel="stylesheet" href="/pygments.css"/>
     <link rel="stylesheet" href="/tufte.css"/>
     <link rel="stylesheet" href="/latex.css"/>
@@ -73,56 +74,88 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
 <dd class="post-date">2020-03-01</dd>
 </dl>
 
-<p>As many of you are aware, one of my weird niche fandoms is random ballot, which I initially proposed <a href="https://www.drmaciver.com/2013/09/towards-a-more-perfect-democracy/">using for parliamentary democracy</a> but am also keen on for <a href="https://www.drmaciver.com/2016/11/democracy-for-lunch/">deciding where to eat</a> and many other decisions.</p>
-<p>One of the objections that I often hear to it is that people don't like nondeterminism in their voting systems.
-Well, I have bad news for you: There are no deterministic voting systems.
-The question is not whether you have nondeterminism, the question is how sharp the transitions between regions where the probability of an outcome is nearly deterministic are.</p>
-<p>Lets take an easy example: Suppose you have a vote between two options, and the population of voters is largeish, say a thousand people for convenience. You want to choose between these two with a simple majority.
-Suppose, despite that large population, you somehow manage to get an <em>exact</em> tie.
-\(500\) people vote for the bikeshed to be blue, \(500\) for it to be orange.</p>
-<p>What you do in this circumstance is flip a coin, right? This is a time honoured tradition for resolving ties.</p>
-<p>So, even our simple, deterministic, majority system has at least one case where it's nondeterministic. However that seems fine: In practice that doesn't really happen, right?</p>
-<p>Now suppose that the vote goes slightly differently and \(501\) people vote for orange and the other \(499\) vote for blue. This is a "clear" win for orange.</p>
-<p>Does it seem vastly more fair than coin flipping though? It doesn't to me, but it's OK if it does to you, and it's indeed deterministic in these regions.</p>
-<p>There's a problem though: The determinacy is an illusion. It's a deterministic function of <em>votes cast</em>, it's not a deterministic function of <em>voters' actual beliefs</em>,
-it just moves the nondeterminacy from the voting system and into the voters.</p>
-<p>Suppose voters fail to vote with a dropout rate of \(1\%\). e.g. through getting lost on the way to the ballot box, misreading the instructions, spoiling their ballot, etc.
-What are the chances of orange winning now?</p>
-<p>Here's some Python code for calculating these probabilities:</p>
-<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">scipy.stats</span> <span class="k">as</span> <span class="nn">st</span>
+<p>As many of you are aware, one of my weird niche fandoms is random
+ballot, which I initially proposed <a href="https://www.drmaciver.com/2013/09/towards-a-more-perfect-democracy/">using
+for parliamentary democracy</a> but am also keen on for <a href="https://www.drmaciver.com/2016/11/democracy-for-lunch/">deciding
+where to eat</a> and many other decisions.</p>
+<p>One of the objections that I often hear to it is that people don’t
+like nondeterminism in their voting systems. Well, I have bad news for
+you: There are no deterministic voting systems. The question is not
+whether you have nondeterminism, the question is how sharp the
+transitions between regions where the probability of an outcome is
+nearly deterministic are.</p>
+<p>Lets take an easy example: Suppose you have a vote between two
+options, and the population of voters is largeish, say a thousand people
+for convenience. You want to choose between these two with a simple
+majority. Suppose, despite that large population, you somehow manage to
+get an <em>exact</em> tie. <span class="math inline">\(500\)</span>
+people vote for the bikeshed to be blue, <span class="math inline">\(500\)</span> for it to be orange.</p>
+<p>What you do in this circumstance is flip a coin, right? This is a
+time honoured tradition for resolving ties.</p>
+<p>So, even our simple, deterministic, majority system has at least one
+case where it’s nondeterministic. However that seems fine: In practice
+that doesn’t really happen, right?</p>
+<p>Now suppose that the vote goes slightly differently and <span class="math inline">\(501\)</span> people vote for orange and the other
+<span class="math inline">\(499\)</span> vote for blue. This is a
+“clear” win for orange.</p>
+<p>Does it seem vastly more fair than coin flipping though? It doesn’t
+to me, but it’s OK if it does to you, and it’s indeed deterministic in
+these regions.</p>
+<p>There’s a problem though: The determinacy is an illusion. It’s a
+deterministic function of <em>votes cast</em>, it’s not a deterministic
+function of <em>voters’ actual beliefs</em>, it just moves the
+nondeterminacy from the voting system and into the voters.</p>
+<p>Suppose voters fail to vote with a dropout rate of <span class="math inline">\(1\%\)</span>. e.g. through getting lost on the way
+to the ballot box, misreading the instructions, spoiling their ballot,
+etc. What are the chances of orange winning now?</p>
+<p>Here’s some Python code for calculating these probabilities:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a aria-hidden="true" href="#cb1-1" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a aria-hidden="true" href="#cb1-2" tabindex="-1"></a><span class="im">import</span> scipy.stats <span class="im">as</span> st</span>
+<span id="cb1-3"><a aria-hidden="true" href="#cb1-3" tabindex="-1"></a></span>
+<span id="cb1-4"><a aria-hidden="true" href="#cb1-4" tabindex="-1"></a><span class="kw">def</span> win_probability(a, b, dropout<span class="op">=</span><span class="fl">0.01</span>):</span>
+<span id="cb1-5"><a aria-hidden="true" href="#cb1-5" tabindex="-1"></a>    <span class="co">"""If there are ``a`` votes for orange and ``b`` votes</span></span>
+<span id="cb1-6"><a aria-hidden="true" href="#cb1-6" tabindex="-1"></a><span class="co">    for blue, and people drop out with a dropout rate of</span></span>
+<span id="cb1-7"><a aria-hidden="true" href="#cb1-7" tabindex="-1"></a><span class="co">    ``dropout```, what is the probability of orange winning?</span></span>
+<span id="cb1-8"><a aria-hidden="true" href="#cb1-8" tabindex="-1"></a><span class="co">    """</span></span>
+<span id="cb1-9"><a aria-hidden="true" href="#cb1-9" tabindex="-1"></a>    p_voted <span class="op">=</span> <span class="dv">1</span> <span class="op">-</span> dropout</span>
+<span id="cb1-10"><a aria-hidden="true" href="#cb1-10" tabindex="-1"></a>    a_votes <span class="op">=</span> st.binom(a, p_voted)</span>
+<span id="cb1-11"><a aria-hidden="true" href="#cb1-11" tabindex="-1"></a>    b_votes <span class="op">=</span> st.binom(b, p_voted)</span>
+<span id="cb1-12"><a aria-hidden="true" href="#cb1-12" tabindex="-1"></a>    tie_possibilities <span class="op">=</span> np.arange(<span class="bu">min</span>(a, b) <span class="op">+</span> <span class="dv">1</span>)</span>
+<span id="cb1-13"><a aria-hidden="true" href="#cb1-13" tabindex="-1"></a></span>
+<span id="cb1-14"><a aria-hidden="true" href="#cb1-14" tabindex="-1"></a>    <span class="co"># Probability of winning from a tie is the probability</span></span>
+<span id="cb1-15"><a aria-hidden="true" href="#cb1-15" tabindex="-1"></a>    <span class="co"># of the two having the same number of votes exactly</span></span>
+<span id="cb1-16"><a aria-hidden="true" href="#cb1-16" tabindex="-1"></a>    <span class="co"># times half for the coin flip.</span></span>
+<span id="cb1-17"><a aria-hidden="true" href="#cb1-17" tabindex="-1"></a>    tie_wins <span class="op">=</span> <span class="fl">0.5</span> <span class="op">*</span> np.<span class="bu">sum</span>(</span>
+<span id="cb1-18"><a aria-hidden="true" href="#cb1-18" tabindex="-1"></a>        a_votes.pmf(tie_possibilities) <span class="op">*</span> b_votes.pmf(tie_possibilities)</span>
+<span id="cb1-19"><a aria-hidden="true" href="#cb1-19" tabindex="-1"></a>    )</span>
+<span id="cb1-20"><a aria-hidden="true" href="#cb1-20" tabindex="-1"></a></span>
+<span id="cb1-21"><a aria-hidden="true" href="#cb1-21" tabindex="-1"></a>    <span class="co"># A clear win happens when a has strictly more votes</span></span>
+<span id="cb1-22"><a aria-hidden="true" href="#cb1-22" tabindex="-1"></a>    <span class="co"># than b.</span></span>
+<span id="cb1-23"><a aria-hidden="true" href="#cb1-23" tabindex="-1"></a>    all_possibilities <span class="op">=</span> np.arange(<span class="bu">max</span>(a, b) <span class="op">+</span> <span class="dv">1</span>)</span>
+<span id="cb1-24"><a aria-hidden="true" href="#cb1-24" tabindex="-1"></a>    b_chances <span class="op">=</span> b_votes.pmf(all_possibilities)</span>
+<span id="cb1-25"><a aria-hidden="true" href="#cb1-25" tabindex="-1"></a>    a_exceeding <span class="op">=</span> <span class="dv">1</span> <span class="op">-</span> a_votes.cdf(all_possibilities)</span>
+<span id="cb1-26"><a aria-hidden="true" href="#cb1-26" tabindex="-1"></a>    clear_wins <span class="op">=</span> np.<span class="bu">sum</span>(a_exceeding <span class="op">*</span> b_chances)</span>
+<span id="cb1-27"><a aria-hidden="true" href="#cb1-27" tabindex="-1"></a>    <span class="cf">return</span> tie_wins <span class="op">+</span> clear_wins</span></code></pre></div>
+<p>You can play with this a bit to get a feel for it, but the short
+version is that the result is nondeterministic but quite sharp. With the
+numbers above orange has a <span class="math inline">\(74\%\)</span>
+chance of winning. If the dropout rate goes up to <span class="math inline">\(5\%\)</span> orange has a <span class="math inline">\(61%\)</span> chance of winnning.</p>
+<p>In contrast if we raise the majority to <span class="math inline">\(510\)</span> vs <span class="math inline">\(490\)</span> the dropout rate has to go really
+very high before it becomes nondeterministic. A dropout rate of <span class="math inline">\(10\%\)</span> gives orange a <span class="math inline">\(97\%\)</span> chance of winning, a dropout rate of
+<span class="math inline">\(50\%\)</span> gives it a <span class="math inline">\(74\%\)</span>.</p>
+<p>Under this model simple majority voting is a nondeterministic system,
+but it’s one where the curve between regions that are “morally”
+deterministic is very sharp. Exactly how sharp depends on the dropout
+rate.</p>
+<p>How high is the dropout rate in practice? Hard to say, but given that
+voter turnout rates in the UK seem to hover in the <span class="math inline">\(60\% - 80\%\)</span> region, <span class="math inline">\(5\%\)</span> seems if anything optimistically
+low.</p>
+<p>None of this is intended to suggest that because voting is
+intrinsically nondeterministic any nondeterminism is valid. What I want
+to do by pointing this out is to shift the argument from “Is
+nondeterministic voting acceptable?” to “How do we want to manage
+nondeterminism in voting?”</p>
 
-<span class="k">def</span> <span class="nf">win_probability</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">dropout</span><span class="o">=</span><span class="mf">0.01</span><span class="p">):</span>
-    <span class="sd">"""If there are ``a`` votes for orange and ``b`` votes</span>
-<span class="sd">    for blue, and people drop out with a dropout rate of</span>
-<span class="sd">    ``dropout```, what is the probability of orange winning?</span>
-<span class="sd">    """</span>
-    <span class="n">p_voted</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">dropout</span>
-    <span class="n">a_votes</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">binom</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">p_voted</span><span class="p">)</span>
-    <span class="n">b_votes</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">binom</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">p_voted</span><span class="p">)</span>
-    <span class="n">tie_possibilities</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
-
-    <span class="c1"># Probability of winning from a tie is the probability</span>
-    <span class="c1"># of the two having the same number of votes exactly</span>
-    <span class="c1"># times half for the coin flip.</span>
-    <span class="n">tie_wins</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span>
-        <span class="n">a_votes</span><span class="o">.</span><span class="n">pmf</span><span class="p">(</span><span class="n">tie_possibilities</span><span class="p">)</span> <span class="o">*</span> <span class="n">b_votes</span><span class="o">.</span><span class="n">pmf</span><span class="p">(</span><span class="n">tie_possibilities</span><span class="p">)</span>
-    <span class="p">)</span>
-
-    <span class="c1"># A clear win happens when a has strictly more votes</span>
-    <span class="c1"># than b.</span>
-    <span class="n">all_possibilities</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
-    <span class="n">b_chances</span> <span class="o">=</span> <span class="n">b_votes</span><span class="o">.</span><span class="n">pmf</span><span class="p">(</span><span class="n">all_possibilities</span><span class="p">)</span>
-    <span class="n">a_exceeding</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">a_votes</span><span class="o">.</span><span class="n">cdf</span><span class="p">(</span><span class="n">all_possibilities</span><span class="p">)</span>
-    <span class="n">clear_wins</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">a_exceeding</span> <span class="o">*</span> <span class="n">b_chances</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">tie_wins</span> <span class="o">+</span> <span class="n">clear_wins</span>
-</pre></div>
-<p>You can play with this a bit to get a feel for it, but the short version is that the result is nondeterministic but quite sharp. With the numbers above orange has a \(74\%\) chance of winning. If the dropout rate goes up to \(5\%\) orange has a \(61%\) chance of winnning.</p>
-<p>In contrast if we raise the majority to \(510\) vs \(490\) the dropout rate has to go really very high before it becomes nondeterministic. A dropout rate of \(10\%\) gives orange a \(97\%\) chance of winning, a dropout rate of \(50\%\) gives it a \(74\%\).</p>
-<p>Under this model simple majority voting is a nondeterministic system, but it's one where the curve between regions that are "morally" deterministic is very sharp. Exactly how sharp depends on the dropout rate.</p>
-<p>How high is the dropout rate in practice? Hard to say, but given that voter turnout rates in the UK seem to hover in the \(60\% - 80\%\) region, \(5\%\) seems if anything optimistically low.</p>
-<p>None of this is intended to suggest that because voting is intrinsically nondeterministic any nondeterminism is valid.
-What I want to do by pointing this out is to shift the argument from "Is nondeterministic voting acceptable?" to "How do we want to manage nondeterminism in voting?"</p>
 </section>
 
     </article>

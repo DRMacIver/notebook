@@ -17,6 +17,7 @@ DRMacIver's Notebook: Adaptive parallel test-case reduction
 
     <meta property="og:creator" content="@DRMacIver">
 
+    <link rel="stylesheet" href="/pandoc.css"/>
     <link rel="stylesheet" href="/pygments.css"/>
     <link rel="stylesheet" href="/tufte.css"/>
     <link rel="stylesheet" href="/latex.css"/>
@@ -73,92 +74,107 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
 <dd class="post-date">2023-07-27</dd>
 </dl>
 
-<p>There's a very simple algorithm I call "adaptive parallel deletion", which I think of as completely standard and thus often forget that literally nobody but me uses.
-I haven't written it down anywhere, so here's me finally getting around to doing that.</p>
-<p>This algorithm is a component of test-case reduction that replaces the classic delta debugging algorithm - that it is, it takes some sequence and produces a subsequence of it satisfying some condition,
-such that if you remove any one element from its output the condition is no longer satisfied.</p>
+<p>There’s a very simple algorithm I call “adaptive parallel deletion”,
+which I think of as completely standard and thus often forget that
+literally nobody but me uses. I haven’t written it down anywhere, so
+here’s me finally getting around to doing that.</p>
+<p>This algorithm is a component of test-case reduction that replaces
+the classic delta debugging algorithm - that it is, it takes some
+sequence and produces a subsequence of it satisfying some condition,
+such that if you remove any one element from its output the condition is
+no longer satisfied.</p>
 <p>The core features of adaptive parallel deletion are:</p>
-<ol>
-<li>When there are large reductions that can be made, it will usually run in <code>O(log(n))</code>.</li>
-<li>When there are no reductions that can be made, it will run in <code>O(n)</code>, but with the work scaling to as much parallelism as you can give it.</li>
+<ol type="1">
+<li>When there are large reductions that can be made, it will usually
+run in <code>O(log(n))</code>.</li>
+<li>When there are no reductions that can be made, it will run in
+<code>O(n)</code>, but with the work scaling to as much parallelism as
+you can give it.</li>
 <li>It will scale fairly gracefully in between the two.</li>
 </ol>
 <p>Here it is:</p>
-<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">single_pass_delete</span><span class="p">(</span><span class="n">test_case</span><span class="p">,</span> <span class="n">condition</span><span class="p">):</span>
-    <span class="sd">"""Returns a version of `test_case` that satisfies `condition` and</span>
-<span class="sd">    is "one-minimal" in the sense that you cannot delete any single</span>
-<span class="sd">    member of it and have it still satisfy the condition."""</span>
-    <span class="n">test_case</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">test_case</span><span class="p">)</span>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a aria-hidden="true" href="#cb1-1" tabindex="-1"></a><span class="kw">def</span> single_pass_delete(test_case, condition):</span>
+<span id="cb1-2"><a aria-hidden="true" href="#cb1-2" tabindex="-1"></a>    <span class="co">"""Returns a version of `test_case` that satisfies `condition` and</span></span>
+<span id="cb1-3"><a aria-hidden="true" href="#cb1-3" tabindex="-1"></a><span class="co">    is "one-minimal" in the sense that you cannot delete any single</span></span>
+<span id="cb1-4"><a aria-hidden="true" href="#cb1-4" tabindex="-1"></a><span class="co">    member of it and have it still satisfy the condition."""</span></span>
+<span id="cb1-5"><a aria-hidden="true" href="#cb1-5" tabindex="-1"></a>    test_case <span class="op">=</span> <span class="bu">list</span>(test_case)</span>
+<span id="cb1-6"><a aria-hidden="true" href="#cb1-6" tabindex="-1"></a></span>
+<span id="cb1-7"><a aria-hidden="true" href="#cb1-7" tabindex="-1"></a>    <span class="kw">def</span> can_delete(j, k):</span>
+<span id="cb1-8"><a aria-hidden="true" href="#cb1-8" tabindex="-1"></a>        <span class="cf">return</span> condition(test_case[:j] <span class="op">+</span> test_case[k:])</span>
+<span id="cb1-9"><a aria-hidden="true" href="#cb1-9" tabindex="-1"></a></span>
+<span id="cb1-10"><a aria-hidden="true" href="#cb1-10" tabindex="-1"></a>    i <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb1-11"><a aria-hidden="true" href="#cb1-11" tabindex="-1"></a>    <span class="cf">while</span> i <span class="op">&lt;</span> <span class="bu">len</span>(test_case):</span>
+<span id="cb1-12"><a aria-hidden="true" href="#cb1-12" tabindex="-1"></a>        <span class="cf">try</span>:</span>
+<span id="cb1-13"><a aria-hidden="true" href="#cb1-13" tabindex="-1"></a>            <span class="co"># Scan in parallel for the first location where we can delete</span></span>
+<span id="cb1-14"><a aria-hidden="true" href="#cb1-14" tabindex="-1"></a>            <span class="co"># a single element of the list. If no more elements are deletable</span></span>
+<span id="cb1-15"><a aria-hidden="true" href="#cb1-15" tabindex="-1"></a>            <span class="co"># this will run with as much parallelism as we can give it.</span></span>
+<span id="cb1-16"><a aria-hidden="true" href="#cb1-16" tabindex="-1"></a>            i <span class="op">=</span> find_first(<span class="bu">range</span>(i, <span class="bu">len</span>(test_case), <span class="kw">lambda</span> j: can_delete(j, j <span class="op">+</span> <span class="dv">1</span>)</span>
+<span id="cb1-17"><a aria-hidden="true" href="#cb1-17" tabindex="-1"></a>        <span class="cf">except</span> NotFound:</span>
+<span id="cb1-18"><a aria-hidden="true" href="#cb1-18" tabindex="-1"></a>            <span class="cf">break</span></span>
+<span id="cb1-19"><a aria-hidden="true" href="#cb1-19" tabindex="-1"></a></span>
+<span id="cb1-20"><a aria-hidden="true" href="#cb1-20" tabindex="-1"></a>        <span class="kw">del</span> test_case[i]</span>
+<span id="cb1-21"><a aria-hidden="true" href="#cb1-21" tabindex="-1"></a>        <span class="co"># Now that we've found an area where there's at least one deletable</span></span>
+<span id="cb1-22"><a aria-hidden="true" href="#cb1-22" tabindex="-1"></a>        <span class="co"># element, we hope that it's part of a large chunk of deletable elements.</span></span>
+<span id="cb1-23"><a aria-hidden="true" href="#cb1-23" tabindex="-1"></a>        <span class="co"># This finds an integer k so that we can delete the next k elements</span></span>
+<span id="cb1-24"><a aria-hidden="true" href="#cb1-24" tabindex="-1"></a>        <span class="co"># and not the next k + 1 elements, running in O(log(k)). This hopefully</span></span>
+<span id="cb1-25"><a aria-hidden="true" href="#cb1-25" tabindex="-1"></a>        <span class="co"># lets us delete a reasonable large chunk at a time.</span></span>
+<span id="cb1-26"><a aria-hidden="true" href="#cb1-26" tabindex="-1"></a>        k <span class="op">=</span> find_integer(<span class="kw">lambda</span> k: i <span class="op">+</span> k <span class="op">&lt;=</span> <span class="bu">len</span>(test_case) <span class="kw">and</span> can_delete(i, i <span class="op">+</span> k))</span>
+<span id="cb1-27"><a aria-hidden="true" href="#cb1-27" tabindex="-1"></a>        <span class="kw">del</span> test_case[i:i<span class="op">+</span>k]</span>
+<span id="cb1-28"><a aria-hidden="true" href="#cb1-28" tabindex="-1"></a></span>
+<span id="cb1-29"><a aria-hidden="true" href="#cb1-29" tabindex="-1"></a>        <span class="co"># Because we chose k such that k + 1 elements are not deletable, we know</span></span>
+<span id="cb1-30"><a aria-hidden="true" href="#cb1-30" tabindex="-1"></a>        <span class="co"># that the element left at i (if any, we might have deleted the whole list)</span></span>
+<span id="cb1-31"><a aria-hidden="true" href="#cb1-31" tabindex="-1"></a>        <span class="co"># is now not deletable, so we increment i to skip past it on the next</span></span>
+<span id="cb1-32"><a aria-hidden="true" href="#cb1-32" tabindex="-1"></a>        <span class="co"># iteration. This is purely a performance optimisation, but in the worst</span></span>
+<span id="cb1-33"><a aria-hidden="true" href="#cb1-33" tabindex="-1"></a>        <span class="co"># case might cause us to make twice as many calls to `condition` as we</span></span>
+<span id="cb1-34"><a aria-hidden="true" href="#cb1-34" tabindex="-1"></a>        <span class="co"># need to if we skip it.</span></span>
+<span id="cb1-35"><a aria-hidden="true" href="#cb1-35" tabindex="-1"></a>        i <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb1-36"><a aria-hidden="true" href="#cb1-36" tabindex="-1"></a></span>
+<span id="cb1-37"><a aria-hidden="true" href="#cb1-37" tabindex="-1"></a>    <span class="cf">return</span> test_case</span></code></pre></div>
+<p>Where the functions this uses are <code>find_integer</code> that I’ve
+<a href="https://notebook.drmaciver.com/posts/2019-04-30-13:03.html">previously
+written about here</a> which is just an exponential probe and binary
+search (so runs in <code>O(log(k))</code> when it returns
+<code>k</code>) and <code>find_first</code> is defined as follows:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a aria-hidden="true" href="#cb2-1" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb2-2"><a aria-hidden="true" href="#cb2-2" tabindex="-1"></a><span class="im">from</span> itertools <span class="im">import</span> islice</span>
+<span id="cb2-3"><a aria-hidden="true" href="#cb2-3" tabindex="-1"></a></span>
+<span id="cb2-4"><a aria-hidden="true" href="#cb2-4" tabindex="-1"></a></span>
+<span id="cb2-5"><a aria-hidden="true" href="#cb2-5" tabindex="-1"></a><span class="kw">class</span> NotFound(<span class="pp">Exception</span>):</span>
+<span id="cb2-6"><a aria-hidden="true" href="#cb2-6" tabindex="-1"></a>    <span class="cf">pass</span></span>
+<span id="cb2-7"><a aria-hidden="true" href="#cb2-7" tabindex="-1"></a></span>
+<span id="cb2-8"><a aria-hidden="true" href="#cb2-8" tabindex="-1"></a></span>
+<span id="cb2-9"><a aria-hidden="true" href="#cb2-9" tabindex="-1"></a><span class="kw">def</span> find_first(target, predict):</span>
+<span id="cb2-10"><a aria-hidden="true" href="#cb2-10" tabindex="-1"></a>    <span class="co">"""Returns the first element of `target` that satisfies `predicate`,</span></span>
+<span id="cb2-11"><a aria-hidden="true" href="#cb2-11" tabindex="-1"></a><span class="co">    or raises `NotFound` if none do."""</span></span>
+<span id="cb2-12"><a aria-hidden="true" href="#cb2-12" tabindex="-1"></a></span>
+<span id="cb2-13"><a aria-hidden="true" href="#cb2-13" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> target:</span>
+<span id="cb2-14"><a aria-hidden="true" href="#cb2-14" tabindex="-1"></a>        <span class="cf">raise</span> NotFound()</span>
+<span id="cb2-15"><a aria-hidden="true" href="#cb2-15" tabindex="-1"></a></span>
+<span id="cb2-16"><a aria-hidden="true" href="#cb2-16" tabindex="-1"></a>    parallelism <span class="op">=</span> os.cpu_count()</span>
+<span id="cb2-17"><a aria-hidden="true" href="#cb2-17" tabindex="-1"></a></span>
+<span id="cb2-18"><a aria-hidden="true" href="#cb2-18" tabindex="-1"></a>    <span class="cf">if</span> parallelism <span class="op">&lt;=</span> <span class="dv">1</span>:</span>
+<span id="cb2-19"><a aria-hidden="true" href="#cb2-19" tabindex="-1"></a>        <span class="cf">for</span> x <span class="kw">in</span> target:</span>
+<span id="cb2-20"><a aria-hidden="true" href="#cb2-20" tabindex="-1"></a>            <span class="cf">if</span> f(x):</span>
+<span id="cb2-21"><a aria-hidden="true" href="#cb2-21" tabindex="-1"></a>                <span class="cf">return</span> x</span>
+<span id="cb2-22"><a aria-hidden="true" href="#cb2-22" tabindex="-1"></a>        <span class="cf">raise</span> NotFound()</span>
+<span id="cb2-23"><a aria-hidden="true" href="#cb2-23" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb2-24"><a aria-hidden="true" href="#cb2-24" tabindex="-1"></a>        <span class="cf">with</span> ThreadPoolExecutor(max_workers<span class="op">=</span>parallelism) <span class="im">as</span> executor:</span>
+<span id="cb2-25"><a aria-hidden="true" href="#cb2-25" tabindex="-1"></a>            it <span class="op">=</span> <span class="bu">iter</span>(target)</span>
+<span id="cb2-26"><a aria-hidden="true" href="#cb2-26" tabindex="-1"></a>            chunk_size <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb2-27"><a aria-hidden="true" href="#cb2-27" tabindex="-1"></a>            <span class="cf">while</span> <span class="va">True</span>:</span>
+<span id="cb2-28"><a aria-hidden="true" href="#cb2-28" tabindex="-1"></a>                chunk <span class="op">=</span> <span class="bu">list</span>(islice(it, chunk_size))</span>
+<span id="cb2-29"><a aria-hidden="true" href="#cb2-29" tabindex="-1"></a>                <span class="cf">if</span> <span class="kw">not</span> chunk:</span>
+<span id="cb2-30"><a aria-hidden="true" href="#cb2-30" tabindex="-1"></a>                    <span class="cf">raise</span> NotFound()</span>
+<span id="cb2-31"><a aria-hidden="true" href="#cb2-31" tabindex="-1"></a>                <span class="cf">for</span> x, b <span class="kw">in</span> <span class="bu">zip</span>(chunk, executor.<span class="bu">map</span>(f, chunk)):</span>
+<span id="cb2-32"><a aria-hidden="true" href="#cb2-32" tabindex="-1"></a>                    <span class="cf">if</span> b:</span>
+<span id="cb2-33"><a aria-hidden="true" href="#cb2-33" tabindex="-1"></a>                        <span class="cf">return</span> x</span>
+<span id="cb2-34"><a aria-hidden="true" href="#cb2-34" tabindex="-1"></a>                chunk_size <span class="op">*=</span> <span class="dv">2</span></span></code></pre></div>
+<p>In particular <code>find_first</code> is designed so that when it
+does not find an answer it scales up rapidly to be embarrassingly
+parallel, but when it finds an answer early on it doesn’t do much
+redundant work (you still have the overhead of the thread pool and such,
+but it doesn’t actually run much extra code).</p>
 
-    <span class="k">def</span> <span class="nf">can_delete</span><span class="p">(</span><span class="n">j</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
-        <span class="k">return</span> <span class="n">condition</span><span class="p">(</span><span class="n">test_case</span><span class="p">[:</span><span class="n">j</span><span class="p">]</span> <span class="o">+</span> <span class="n">test_case</span><span class="p">[</span><span class="n">k</span><span class="p">:])</span>
-
-    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">test_case</span><span class="p">):</span>
-        <span class="k">try</span><span class="p">:</span>
-            <span class="c1"># Scan in parallel for the first location where we can delete</span>
-            <span class="c1"># a single element of the list. If no more elements are deletable</span>
-            <span class="c1"># this will run with as much parallelism as we can give it.</span>
-            <span class="n">i</span> <span class="o">=</span> <span class="n">find_first</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">test_case</span><span class="p">),</span> <span class="k">lambda</span> <span class="n">j</span><span class="p">:</span> <span class="n">can_delete</span><span class="p">(</span><span class="n">j</span><span class="p">,</span> <span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
-        <span class="k">except</span> <span class="n">NotFound</span><span class="p">:</span>
-            <span class="k">break</span>
-
-        <span class="k">del</span> <span class="n">test_case</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-        <span class="c1"># Now that we've found an area where there's at least one deletable</span>
-        <span class="c1"># element, we hope that it's part of a large chunk of deletable elements.</span>
-        <span class="c1"># This finds an integer k so that we can delete the next k elements</span>
-        <span class="c1"># and not the next k + 1 elements, running in O(log(k)). This hopefully</span>
-        <span class="c1"># lets us delete a reasonable large chunk at a time.</span>
-        <span class="n">k</span> <span class="o">=</span> <span class="n">find_integer</span><span class="p">(</span><span class="k">lambda</span> <span class="n">k</span><span class="p">:</span> <span class="n">i</span> <span class="o">+</span> <span class="n">k</span> <span class="o">&lt;=</span> <span class="nb">len</span><span class="p">(</span><span class="n">test_case</span><span class="p">)</span> <span class="ow">and</span> <span class="n">can_delete</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">i</span> <span class="o">+</span> <span class="n">k</span><span class="p">))</span>
-        <span class="k">del</span> <span class="n">test_case</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span><span class="o">+</span><span class="n">k</span><span class="p">]</span>
-
-        <span class="c1"># Because we chose k such that k + 1 elements are not deletable, we know</span>
-        <span class="c1"># that the element left at i (if any, we might have deleted the whole list)</span>
-        <span class="c1"># is now not deletable, so we increment i to skip past it on the next</span>
-        <span class="c1"># iteration. This is purely a performance optimisation, but in the worst</span>
-        <span class="c1"># case might cause us to make twice as many calls to `condition` as we</span>
-        <span class="c1"># need to if we skip it.</span>
-        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
-
-    <span class="k">return</span> <span class="n">test_case</span>
-</pre></div>
-<p>Where the functions this uses are <code>find_integer</code> that I've <a href="https://notebook.drmaciver.com/posts/2019-04-30-13:03.html">previously written about here</a> which is just an exponential probe and binary search (so runs in <code>O(log(k))</code> when it returns <code>k</code>) and <code>find_first</code> is defined as follows:</p>
-<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
-<span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">islice</span>
-
-
-<span class="k">class</span> <span class="nc">NotFound</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
-    <span class="k">pass</span>
-
-
-<span class="k">def</span> <span class="nf">find_first</span><span class="p">(</span><span class="n">target</span><span class="p">,</span> <span class="n">predict</span><span class="p">):</span>
-    <span class="sd">"""Returns the first element of `target` that satisfies `predicate`,</span>
-<span class="sd">    or raises `NotFound` if none do."""</span>
-
-    <span class="k">if</span> <span class="ow">not</span> <span class="n">target</span><span class="p">:</span>
-        <span class="k">raise</span> <span class="n">NotFound</span><span class="p">()</span>
-
-    <span class="n">parallelism</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">cpu_count</span><span class="p">()</span>
-
-    <span class="k">if</span> <span class="n">parallelism</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">:</span>
-        <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">target</span><span class="p">:</span>
-            <span class="k">if</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-                <span class="k">return</span> <span class="n">x</span>
-        <span class="k">raise</span> <span class="n">NotFound</span><span class="p">()</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">with</span> <span class="n">ThreadPoolExecutor</span><span class="p">(</span><span class="n">max_workers</span><span class="o">=</span><span class="n">parallelism</span><span class="p">)</span> <span class="k">as</span> <span class="n">executor</span><span class="p">:</span>
-            <span class="n">it</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="n">target</span><span class="p">)</span>
-            <span class="n">chunk_size</span> <span class="o">=</span> <span class="mi">1</span>
-            <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-                <span class="n">chunk</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">islice</span><span class="p">(</span><span class="n">it</span><span class="p">,</span> <span class="n">chunk_size</span><span class="p">))</span>
-                <span class="k">if</span> <span class="ow">not</span> <span class="n">chunk</span><span class="p">:</span>
-                    <span class="k">raise</span> <span class="n">NotFound</span><span class="p">()</span>
-                <span class="k">for</span> <span class="n">x</span><span class="p">,</span> <span class="n">b</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">chunk</span><span class="p">,</span> <span class="n">executor</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">chunk</span><span class="p">)):</span>
-                    <span class="k">if</span> <span class="n">b</span><span class="p">:</span>
-                        <span class="k">return</span> <span class="n">x</span>
-                <span class="n">chunk_size</span> <span class="o">*=</span> <span class="mi">2</span>
-</pre></div>
-<p>In particular <code>find_first</code> is designed so that when it does not find an answer it scales up rapidly to be embarrassingly parallel, but when it finds an answer early on it doesn't do much redundant work (you still have the overhead of the thread pool and such, but it doesn't actually run much extra code).</p>
 </section>
 
     </article>

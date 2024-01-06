@@ -17,6 +17,7 @@ DRMacIver's Notebook: Basic Reducer Design
 
     <meta property="og:creator" content="@DRMacIver">
 
+    <link rel="stylesheet" href="/pandoc.css"/>
     <link rel="stylesheet" href="/pygments.css"/>
     <link rel="stylesheet" href="/tufte.css"/>
     <link rel="stylesheet" href="/latex.css"/>
@@ -73,111 +74,134 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
 <dd class="post-date">2021-01-01</dd>
 </dl>
 
-<p>There's a design of test-case reducer that I use and consider the natural way to do test-case reducers,
-but seems to be mildly idiosyncratic to me (though most of the details of it are found in other test-case reducers),
-which is basically this:</p>
-<ol>
-<li>Test cases are given some total order, the <em>reduction order</em>, and the goal of test-case reduction is to (ideally) find the minimal interesting test case in that reduction order.</li>
-<li>Test-case reduction is managed by a stateful object that automatically simplifies the book keeping of doing that.</li>
-<li>Test-case reduction consists of a sequence of passes that are run until none of them lowers the current most interesting test case.</li>
+<p>There’s a design of test-case reducer that I use and consider the
+natural way to do test-case reducers, but seems to be mildly
+idiosyncratic to me (though most of the details of it are found in other
+test-case reducers), which is basically this:</p>
+<ol type="1">
+<li>Test cases are given some total order, the <em>reduction order</em>,
+and the goal of test-case reduction is to (ideally) find the minimal
+interesting test case in that reduction order.</li>
+<li>Test-case reduction is managed by a stateful object that
+automatically simplifies the book keeping of doing that.</li>
+<li>Test-case reduction consists of a sequence of passes that are run
+until none of them lowers the current most interesting test case.</li>
 </ol>
-<p>(the fact that there is a total reduction order plus some of the book keeping are the bits that seem not totally standard)</p>
-<p>The reduction order lets us keep track of the current best test case and this significantly simplifies keeping track of the progress of the reducer.
-This can all be encapsulated as the following Python code:</p>
-<div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">Reducer</span><span class="p">:</span>
+<p>(the fact that there is a total reduction order plus some of the book
+keeping are the bits that seem not totally standard)</p>
+<p>The reduction order lets us keep track of the current best test case
+and this significantly simplifies keeping track of the progress of the
+reducer. This can all be encapsulated as the following Python code:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a aria-hidden="true" href="#cb1-1" tabindex="-1"></a></span>
+<span id="cb1-2"><a aria-hidden="true" href="#cb1-2" tabindex="-1"></a><span class="kw">class</span> Reducer:</span>
+<span id="cb1-3"><a aria-hidden="true" href="#cb1-3" tabindex="-1"></a></span>
+<span id="cb1-4"><a aria-hidden="true" href="#cb1-4" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(</span>
+<span id="cb1-5"><a aria-hidden="true" href="#cb1-5" tabindex="-1"></a>        <span class="va">self</span>,</span>
+<span id="cb1-6"><a aria-hidden="true" href="#cb1-6" tabindex="-1"></a>        initial_test_case,</span>
+<span id="cb1-7"><a aria-hidden="true" href="#cb1-7" tabindex="-1"></a>        is_interesting, </span>
+<span id="cb1-8"><a aria-hidden="true" href="#cb1-8" tabindex="-1"></a>        reduction_order,</span>
+<span id="cb1-9"><a aria-hidden="true" href="#cb1-9" tabindex="-1"></a>        reduction_passes,</span>
+<span id="cb1-10"><a aria-hidden="true" href="#cb1-10" tabindex="-1"></a>    ):</span>
+<span id="cb1-11"><a aria-hidden="true" href="#cb1-11" tabindex="-1"></a>        <span class="va">self</span>.best_test_case <span class="op">=</span> initial_test_case</span>
+<span id="cb1-12"><a aria-hidden="true" href="#cb1-12" tabindex="-1"></a>        <span class="va">self</span>.__is_interesting <span class="op">=</span> is_interesting</span>
+<span id="cb1-13"><a aria-hidden="true" href="#cb1-13" tabindex="-1"></a>        <span class="va">self</span>.reduction_order <span class="op">=</span> reduction_order</span>
+<span id="cb1-14"><a aria-hidden="true" href="#cb1-14" tabindex="-1"></a>        <span class="va">self</span>.reduction_passes <span class="op">=</span> reduction_passes</span>
+<span id="cb1-15"><a aria-hidden="true" href="#cb1-15" tabindex="-1"></a></span>
+<span id="cb1-16"><a aria-hidden="true" href="#cb1-16" tabindex="-1"></a>        <span class="co"># We cache the result of the interestingness test - this is pretty</span></span>
+<span id="cb1-17"><a aria-hidden="true" href="#cb1-17" tabindex="-1"></a>        <span class="co"># standard in test-case reduction.</span></span>
+<span id="cb1-18"><a aria-hidden="true" href="#cb1-18" tabindex="-1"></a>        <span class="va">self</span>.__cache <span class="op">=</span> {}</span>
+<span id="cb1-19"><a aria-hidden="true" href="#cb1-19" tabindex="-1"></a></span>
+<span id="cb1-20"><a aria-hidden="true" href="#cb1-20" tabindex="-1"></a>        <span class="cf">if</span> <span class="kw">not</span> <span class="va">self</span>.is_interesting(initial_test_case):</span>
+<span id="cb1-21"><a aria-hidden="true" href="#cb1-21" tabindex="-1"></a>            <span class="cf">raise</span> <span class="pp">ValueError</span>(<span class="st">"Cannot reduce uninteresting initial test case"</span>)</span>
+<span id="cb1-22"><a aria-hidden="true" href="#cb1-22" tabindex="-1"></a></span>
+<span id="cb1-23"><a aria-hidden="true" href="#cb1-23" tabindex="-1"></a>    <span class="kw">def</span> is_interesting(<span class="va">self</span>, test_case):</span>
+<span id="cb1-24"><a aria-hidden="true" href="#cb1-24" tabindex="-1"></a>        <span class="cf">try</span>:</span>
+<span id="cb1-25"><a aria-hidden="true" href="#cb1-25" tabindex="-1"></a>            <span class="cf">return</span> <span class="va">self</span>.__cache[test_case]</span>
+<span id="cb1-26"><a aria-hidden="true" href="#cb1-26" tabindex="-1"></a>        <span class="cf">except</span> <span class="pp">KeyError</span>:</span>
+<span id="cb1-27"><a aria-hidden="true" href="#cb1-27" tabindex="-1"></a>            <span class="cf">pass</span></span>
+<span id="cb1-28"><a aria-hidden="true" href="#cb1-28" tabindex="-1"></a></span>
+<span id="cb1-29"><a aria-hidden="true" href="#cb1-29" tabindex="-1"></a>        result <span class="op">=</span> <span class="va">self</span>.__is_interesting(test_case)</span>
+<span id="cb1-30"><a aria-hidden="true" href="#cb1-30" tabindex="-1"></a>        <span class="va">self</span>.__cache[test_case] <span class="op">=</span> result</span>
+<span id="cb1-31"><a aria-hidden="true" href="#cb1-31" tabindex="-1"></a></span>
+<span id="cb1-32"><a aria-hidden="true" href="#cb1-32" tabindex="-1"></a>        <span class="co"># If this is a smaller interesting test case than our current best</span></span>
+<span id="cb1-33"><a aria-hidden="true" href="#cb1-33" tabindex="-1"></a>        <span class="co"># known one, automatically update.</span></span>
+<span id="cb1-34"><a aria-hidden="true" href="#cb1-34" tabindex="-1"></a>        <span class="cf">if</span> (</span>
+<span id="cb1-35"><a aria-hidden="true" href="#cb1-35" tabindex="-1"></a>            result <span class="kw">and</span></span>
+<span id="cb1-36"><a aria-hidden="true" href="#cb1-36" tabindex="-1"></a>            <span class="va">self</span>.reduction_order(test_case) <span class="op">&lt;</span> <span class="va">self</span>.reduction_order(<span class="va">self</span>.best_test_case)</span>
+<span id="cb1-37"><a aria-hidden="true" href="#cb1-37" tabindex="-1"></a>        ):</span>
+<span id="cb1-38"><a aria-hidden="true" href="#cb1-38" tabindex="-1"></a>            <span class="va">self</span>.best_test_case <span class="op">=</span> test_case</span>
+<span id="cb1-39"><a aria-hidden="true" href="#cb1-39" tabindex="-1"></a>        <span class="cf">return</span> result</span>
+<span id="cb1-40"><a aria-hidden="true" href="#cb1-40" tabindex="-1"></a></span>
+<span id="cb1-41"><a aria-hidden="true" href="#cb1-41" tabindex="-1"></a>    <span class="kw">def</span> <span class="bu">reduce</span>(<span class="va">self</span>):</span>
+<span id="cb1-42"><a aria-hidden="true" href="#cb1-42" tabindex="-1"></a>        prev <span class="op">=</span> <span class="va">None</span></span>
+<span id="cb1-43"><a aria-hidden="true" href="#cb1-43" tabindex="-1"></a>        <span class="cf">while</span> prev <span class="kw">is</span> <span class="kw">not</span> <span class="va">self</span>.best_test_case:</span>
+<span id="cb1-44"><a aria-hidden="true" href="#cb1-44" tabindex="-1"></a>            prev <span class="op">=</span> <span class="va">self</span>.best_test_case</span>
+<span id="cb1-45"><a aria-hidden="true" href="#cb1-45" tabindex="-1"></a>            <span class="co"># Each reduction pass calls self.is_interesting in order to do</span></span>
+<span id="cb1-46"><a aria-hidden="true" href="#cb1-46" tabindex="-1"></a>            <span class="co"># any work, so we do not need to keep track of whether they</span></span>
+<span id="cb1-47"><a aria-hidden="true" href="#cb1-47" tabindex="-1"></a>            <span class="co"># succeeded or failed.</span></span>
+<span id="cb1-48"><a aria-hidden="true" href="#cb1-48" tabindex="-1"></a>            <span class="cf">for</span> f <span class="kw">in</span> <span class="va">self</span>.reduction_passes:</span>
+<span id="cb1-49"><a aria-hidden="true" href="#cb1-49" tabindex="-1"></a>                f(<span class="va">self</span>)</span>
+<span id="cb1-50"><a aria-hidden="true" href="#cb1-50" tabindex="-1"></a></span>
+<span id="cb1-51"><a aria-hidden="true" href="#cb1-51" tabindex="-1"></a></span>
+<span id="cb1-52"><a aria-hidden="true" href="#cb1-52" tabindex="-1"></a><span class="kw">def</span> <span class="bu">reduce</span>(<span class="op">*</span>args, <span class="op">**</span>kwargs):</span>
+<span id="cb1-53"><a aria-hidden="true" href="#cb1-53" tabindex="-1"></a>    reducer <span class="op">=</span> Reducer(<span class="op">*</span>args, <span class="op">**</span>kwargs)</span>
+<span id="cb1-54"><a aria-hidden="true" href="#cb1-54" tabindex="-1"></a>    reducer.<span class="bu">reduce</span>()</span>
+<span id="cb1-55"><a aria-hidden="true" href="#cb1-55" tabindex="-1"></a>    <span class="cf">return</span> reducer.best_test_case</span></code></pre></div>
+<p>A reduction pass in this framework looks something like the following
+(this is a greedy algorithm for deleting elements from a list or other
+sequence, like delta debugging without the delta step):</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a aria-hidden="true" href="#cb2-1" tabindex="-1"></a></span>
+<span id="cb2-2"><a aria-hidden="true" href="#cb2-2" tabindex="-1"></a><span class="kw">def</span> greedy_deletion(<span class="va">self</span>):</span>
+<span id="cb2-3"><a aria-hidden="true" href="#cb2-3" tabindex="-1"></a>    i <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb2-4"><a aria-hidden="true" href="#cb2-4" tabindex="-1"></a>    <span class="cf">while</span> i <span class="op">&lt;</span> <span class="bu">len</span>(<span class="va">self</span>.best_test_case):</span>
+<span id="cb2-5"><a aria-hidden="true" href="#cb2-5" tabindex="-1"></a>        attempt <span class="op">=</span> <span class="va">self</span>.best_test_case[:i] <span class="op">+</span> <span class="va">self</span>.best_test_case[i <span class="op">+</span> <span class="dv">1</span>:]</span>
+<span id="cb2-6"><a aria-hidden="true" href="#cb2-6" tabindex="-1"></a>        <span class="cf">if</span> <span class="kw">not</span> <span class="va">self</span>.is_interesting(attempt):</span>
+<span id="cb2-7"><a aria-hidden="true" href="#cb2-7" tabindex="-1"></a>            i <span class="op">+=</span> <span class="dv">1</span></span></code></pre></div>
+<p>This design has a lot of flexibility to it. For example, it makes
+arbitrary reduction passes into an anytime algorithm, because you always
+know the current best test case, and so you can design it work with
+arbitrary interruptions. e.g. If you wanted to impose a limit on the
+maximum number of calls you could do it by modifying the reducer as
+follows:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a aria-hidden="true" href="#cb3-1" tabindex="-1"></a></span>
+<span id="cb3-2"><a aria-hidden="true" href="#cb3-2" tabindex="-1"></a><span class="kw">class</span> StopReducing(<span class="pp">Exception</span>):</span>
+<span id="cb3-3"><a aria-hidden="true" href="#cb3-3" tabindex="-1"></a>    <span class="cf">pass</span></span>
+<span id="cb3-4"><a aria-hidden="true" href="#cb3-4" tabindex="-1"></a></span>
+<span id="cb3-5"><a aria-hidden="true" href="#cb3-5" tabindex="-1"></a><span class="kw">class</span> Reducer:</span>
+<span id="cb3-6"><a aria-hidden="true" href="#cb3-6" tabindex="-1"></a></span>
+<span id="cb3-7"><a aria-hidden="true" href="#cb3-7" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(</span>
+<span id="cb3-8"><a aria-hidden="true" href="#cb3-8" tabindex="-1"></a>        ...,</span>
+<span id="cb3-9"><a aria-hidden="true" href="#cb3-9" tabindex="-1"></a>        max_calls<span class="op">=</span><span class="dv">1000</span></span>
+<span id="cb3-10"><a aria-hidden="true" href="#cb3-10" tabindex="-1"></a>    ):</span>
+<span id="cb3-11"><a aria-hidden="true" href="#cb3-11" tabindex="-1"></a>        <span class="va">self</span>.max_calls <span class="op">=</span> max_calls</span>
+<span id="cb3-12"><a aria-hidden="true" href="#cb3-12" tabindex="-1"></a>        <span class="va">self</span>.call_count <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb3-13"><a aria-hidden="true" href="#cb3-13" tabindex="-1"></a>        ...</span>
+<span id="cb3-14"><a aria-hidden="true" href="#cb3-14" tabindex="-1"></a></span>
+<span id="cb3-15"><a aria-hidden="true" href="#cb3-15" tabindex="-1"></a>    <span class="kw">def</span> is_interesting(<span class="va">self</span>, test_case):</span>
+<span id="cb3-16"><a aria-hidden="true" href="#cb3-16" tabindex="-1"></a>        ...</span>
+<span id="cb3-17"><a aria-hidden="true" href="#cb3-17" tabindex="-1"></a>        <span class="va">self</span>.call_count <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb3-18"><a aria-hidden="true" href="#cb3-18" tabindex="-1"></a>        <span class="cf">if</span> <span class="va">self</span>.call_count <span class="op">&gt;=</span> <span class="va">self</span>.max_calls:</span>
+<span id="cb3-19"><a aria-hidden="true" href="#cb3-19" tabindex="-1"></a>            <span class="cf">raise</span> StopReducing()</span>
+<span id="cb3-20"><a aria-hidden="true" href="#cb3-20" tabindex="-1"></a>        <span class="cf">return</span> result</span>
+<span id="cb3-21"><a aria-hidden="true" href="#cb3-21" tabindex="-1"></a></span>
+<span id="cb3-22"><a aria-hidden="true" href="#cb3-22" tabindex="-1"></a>    <span class="kw">def</span> <span class="bu">reduce</span>(<span class="va">self</span>):</span>
+<span id="cb3-23"><a aria-hidden="true" href="#cb3-23" tabindex="-1"></a>        <span class="cf">try</span>:</span>
+<span id="cb3-24"><a aria-hidden="true" href="#cb3-24" tabindex="-1"></a>            ...</span>
+<span id="cb3-25"><a aria-hidden="true" href="#cb3-25" tabindex="-1"></a>        <span class="cf">except</span> StopReducing:</span>
+<span id="cb3-26"><a aria-hidden="true" href="#cb3-26" tabindex="-1"></a>            <span class="cf">pass</span></span></code></pre></div>
+<p>(People will, at this point, complain that I am using exceptions for
+control flow. Yes I am. What of it?)</p>
+<p>One downside to this design is that it doesn’t play that well with
+multithreading. This isn’t a major problem in Python, so I haven’t spent
+much time working on it, but roughly there are two obvious things you
+can do with this design: You can make the best test case thread local
+and then merge by taking the minimum when you join threads, or you can
+make your reduction passes single-threaded but use speculative
+concurrency to speed them up. This latter approach is roughly what
+reducers like <a href="https://github.com/googleprojectzero/halfempty">halfempty</a>.
+I’ve experimented a bit with this in some reducer prototypes, but not in
+Hypothesis where it’s not especially useful because Python.</p>
 
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
-        <span class="bp">self</span><span class="p">,</span>
-        <span class="n">initial_test_case</span><span class="p">,</span>
-        <span class="n">is_interesting</span><span class="p">,</span> 
-        <span class="n">reduction_order</span><span class="p">,</span>
-        <span class="n">reduction_passes</span><span class="p">,</span>
-    <span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span> <span class="o">=</span> <span class="n">initial_test_case</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">__is_interesting</span> <span class="o">=</span> <span class="n">is_interesting</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">reduction_order</span> <span class="o">=</span> <span class="n">reduction_order</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">reduction_passes</span> <span class="o">=</span> <span class="n">reduction_passes</span>
-
-        <span class="c1"># We cache the result of the interestingness test - this is pretty</span>
-        <span class="c1"># standard in test-case reduction.</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">__cache</span> <span class="o">=</span> <span class="p">{}</span>
-
-        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_interesting</span><span class="p">(</span><span class="n">initial_test_case</span><span class="p">):</span>
-            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">"Cannot reduce uninteresting initial test case"</span><span class="p">)</span>
-
-    <span class="k">def</span> <span class="nf">is_interesting</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">test_case</span><span class="p">):</span>
-        <span class="k">try</span><span class="p">:</span>
-            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__cache</span><span class="p">[</span><span class="n">test_case</span><span class="p">]</span>
-        <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
-            <span class="k">pass</span>
-
-        <span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__is_interesting</span><span class="p">(</span><span class="n">test_case</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">__cache</span><span class="p">[</span><span class="n">test_case</span><span class="p">]</span> <span class="o">=</span> <span class="n">result</span>
-
-        <span class="c1"># If this is a smaller interesting test case than our current best</span>
-        <span class="c1"># known one, automatically update.</span>
-        <span class="k">if</span> <span class="p">(</span>
-            <span class="n">result</span> <span class="ow">and</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">reduction_order</span><span class="p">(</span><span class="n">test_case</span><span class="p">)</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">reduction_order</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span><span class="p">)</span>
-        <span class="p">):</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span> <span class="o">=</span> <span class="n">test_case</span>
-        <span class="k">return</span> <span class="n">result</span>
-
-    <span class="k">def</span> <span class="nf">reduce</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="n">prev</span> <span class="o">=</span> <span class="kc">None</span>
-        <span class="k">while</span> <span class="n">prev</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span><span class="p">:</span>
-            <span class="n">prev</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span>
-            <span class="c1"># Each reduction pass calls self.is_interesting in order to do</span>
-            <span class="c1"># any work, so we do not need to keep track of whether they</span>
-            <span class="c1"># succeeded or failed.</span>
-            <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">reduction_passes</span><span class="p">:</span>
-                <span class="n">f</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
-
-
-<span class="k">def</span> <span class="nf">reduce</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-    <span class="n">reducer</span> <span class="o">=</span> <span class="n">Reducer</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-    <span class="n">reducer</span><span class="o">.</span><span class="n">reduce</span><span class="p">()</span>
-    <span class="k">return</span> <span class="n">reducer</span><span class="o">.</span><span class="n">best_test_case</span>
-</pre></div>
-<p>A reduction pass in this framework looks something like the following (this is a greedy algorithm for deleting elements from a list or other sequence, like delta debugging without the delta step):</p>
-<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">greedy_deletion</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span><span class="p">):</span>
-        <span class="n">attempt</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span><span class="p">[:</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">best_test_case</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">:]</span>
-        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_interesting</span><span class="p">(</span><span class="n">attempt</span><span class="p">):</span>
-            <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
-</pre></div>
-<p>This design has a lot of flexibility to it. For example, it makes arbitrary reduction passes into an anytime algorithm, because you always know the current best test case,
-and so you can design it work with arbitrary interruptions.
-e.g. If you wanted to impose a limit on the maximum number of calls you could do it by modifying the reducer as follows:</p>
-<div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">StopReducing</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
-    <span class="k">pass</span>
-
-<span class="k">class</span> <span class="nc">Reducer</span><span class="p">:</span>
-
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
-        <span class="o">...</span><span class="p">,</span>
-        <span class="n">max_calls</span><span class="o">=</span><span class="mi">1000</span>
-    <span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">max_calls</span> <span class="o">=</span> <span class="n">max_calls</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">call_count</span> <span class="o">=</span> <span class="mi">0</span>
-        <span class="o">...</span>
-
-    <span class="k">def</span> <span class="nf">is_interesting</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">test_case</span><span class="p">):</span>
-        <span class="o">...</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">call_count</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">call_count</span> <span class="o">&gt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_calls</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="n">StopReducing</span><span class="p">()</span>
-        <span class="k">return</span> <span class="n">result</span>
-
-    <span class="k">def</span> <span class="nf">reduce</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">try</span><span class="p">:</span>
-            <span class="o">...</span>
-        <span class="k">except</span> <span class="n">StopReducing</span><span class="p">:</span>
-            <span class="k">pass</span>
-</pre></div>
-<p>(People will, at this point, complain that I am using exceptions for control flow. Yes I am. What of it?)</p>
-<p>One downside to this design is that it doesn't play that well with multithreading. This isn't a major problem in Python, so I haven't spent much time working on it, but roughly there are two obvious things you can do with this design: You can make the best test case thread local and then merge by taking the minimum when you join threads, or you can make your reduction passes single-threaded but use speculative concurrency to speed them up. This latter approach is roughly what reducers like <a href="https://github.com/googleprojectzero/halfempty">halfempty</a>. I've experimented a bit with this in some reducer prototypes, but not in Hypothesis where it's not especially useful because Python.</p>
 </section>
 
     </article>

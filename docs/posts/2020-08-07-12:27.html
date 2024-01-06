@@ -17,6 +17,7 @@ DRMacIver's Notebook: Ensuring Downward Paths
 
     <meta property="og:creator" content="@DRMacIver">
 
+    <link rel="stylesheet" href="/pandoc.css"/>
     <link rel="stylesheet" href="/pygments.css"/>
     <link rel="stylesheet" href="/tufte.css"/>
     <link rel="stylesheet" href="/latex.css"/>
@@ -73,36 +74,115 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
 <dd class="post-date">2020-08-07</dd>
 </dl>
 
-<p>I had some half-formed thoughts about test-case reduction that I wanted to work through, and this notebook is a place for working through half-formed thoughts, so here we go...</p>
-<p>The thing I've been working on on and off for about a month now is <a href="https://notebook.drmaciver.com/posts/2020-07-05-11:29.html">using language inference to figure out new reduction passes</a>.</p>
-<p>It can be thought of as a way of taking an idea that doesn't work (using L* for test case reduction) and combining it with an idea that works but doesn't generalise well (learning a table of small string substitutions to make),
-and getting an idea that does work and does generalise.</p>
-<p>This has me thinking: What, exactly, does it mean for an approach to test-case reduction to generalise?</p>
-<p>Also <em>does</em> this approach generalise well? The big question with it is basically whether it works well when you change the interestingness test. I think it will, but it probably depends a lot on the choice of interestingness test and how close your reducer is to normalising it already.</p>
-<p>In the approach to test-case reduction I favour, test-case reduction starts from set of test cases \(X\) and a total order \(\preceq\) over \(X\) called the <em>reduction order</em>,
-and a test-case reducer is a function \(r(U, x)\) where \(x \in U \subseteq X\), \(r(U, x) \in U\), and \(r(U, x) \preceq x\). For me usually \(X\) is a set of strings and \(\preceq\) is the shortlex order where \(x \preceq y\) if \(|x| &lt; |y|\) or \(|x| = |y|\) and \(x \leq y\) lexicographically.</p>
-<p>Your prototypical test-case reducer starts from a bunch of small-step reductions, which gives you a function \(t: X \to X^{&lt;\omega}\), where \(t(x)_i \prec x\),
-and the reducer greedily tries each of \(t(x)_i\) in order. If none of them are in \(U\) it returns \(x\), otherwise it it recurses and returns \(r(U, t(x)_i)\) for the first \(i\) with \(t(x)_i \in U\).</p>
-<p>More generally given such a function we might say that a reducer is \(t\)-local if it satisfies the following conditions:</p>
-<ol>
-<li>\(t(U, x) = x\) if and only if \(t(x)_i \not\in U\) for all \(i\).</li>
-<li>For all \(U, x\) is some sequence \(x = x_0, \ldots, x_n = r(U, x)\) with \(x_{i + 1} \in t(x)_i\) (note that we don't necessarily require that \(x_i \in U\)).</li>
+<p>I had some half-formed thoughts about test-case reduction that I
+wanted to work through, and this notebook is a place for working through
+half-formed thoughts, so here we go…</p>
+<p>The thing I’ve been working on on and off for about a month now is <a href="https://notebook.drmaciver.com/posts/2020-07-05-11:29.html">using
+language inference to figure out new reduction passes</a>.</p>
+<p>It can be thought of as a way of taking an idea that doesn’t work
+(using L* for test case reduction) and combining it with an idea that
+works but doesn’t generalise well (learning a table of small string
+substitutions to make), and getting an idea that does work and does
+generalise.</p>
+<p>This has me thinking: What, exactly, does it mean for an approach to
+test-case reduction to generalise?</p>
+<p>Also <em>does</em> this approach generalise well? The big question
+with it is basically whether it works well when you change the
+interestingness test. I think it will, but it probably depends a lot on
+the choice of interestingness test and how close your reducer is to
+normalising it already.</p>
+<p>In the approach to test-case reduction I favour, test-case reduction
+starts from set of test cases <span class="math inline">\(X\)</span> and
+a total order <span class="math inline">\(\preceq\)</span> over <span class="math inline">\(X\)</span> called the <em>reduction order</em>,
+and a test-case reducer is a function <span class="math inline">\(r(U,
+x)\)</span> where <span class="math inline">\(x \in U \subseteq
+X\)</span>, <span class="math inline">\(r(U, x) \in U\)</span>, and
+<span class="math inline">\(r(U, x) \preceq x\)</span>. For me usually
+<span class="math inline">\(X\)</span> is a set of strings and <span class="math inline">\(\preceq\)</span> is the shortlex order where <span class="math inline">\(x \preceq y\)</span> if <span class="math inline">\(|x| &lt; |y|\)</span> or <span class="math inline">\(|x| = |y|\)</span> and <span class="math inline">\(x \leq y\)</span> lexicographically.</p>
+<p>Your prototypical test-case reducer starts from a bunch of small-step
+reductions, which gives you a function <span class="math inline">\(t: X
+\to X^{&lt;\omega}\)</span>, where <span class="math inline">\(t(x)_i
+\prec x\)</span>, and the reducer greedily tries each of <span class="math inline">\(t(x)_i\)</span> in order. If none of them are in
+<span class="math inline">\(U\)</span> it returns <span class="math inline">\(x\)</span>, otherwise it it recurses and returns
+<span class="math inline">\(r(U, t(x)_i)\)</span> for the first <span class="math inline">\(i\)</span> with <span class="math inline">\(t(x)_i
+\in U\)</span>.</p>
+<p>More generally given such a function we might say that a reducer is
+<span class="math inline">\(t\)</span>-local if it satisfies the
+following conditions:</p>
+<ol type="1">
+<li><span class="math inline">\(t(U, x) = x\)</span> if and only if
+<span class="math inline">\(t(x)_i \not\in U\)</span> for all <span class="math inline">\(i\)</span>.</li>
+<li>For all <span class="math inline">\(U, x\)</span> is some sequence
+<span class="math inline">\(x = x_0, \ldots, x_n = r(U, x)\)</span> with
+<span class="math inline">\(x_{i + 1} \in t(x)_i\)</span> (note that we
+don’t necessarily require that <span class="math inline">\(x_i \in
+U\)</span>).</li>
 </ol>
-<p>That is, basically a \(t\)-local reducer is one that looks like the prototypical reducer but may have some optimisations and fiddly bits. e.g. delta debugging is a \(t\) local reducer where \(t\) is maps \(x\) to all test cases that can be formed by deleting a single element of \(x\). Delta debugging starts by trying large bulk combinations of these deletions and gradually narrows it down until it's only trying the small ones. Another approach which uses the same \(t\) but a different algorithm is what I've called <a href="https://www.drmaciver.com/2017/06/adaptive-delta-debugging/">adaptive delta debugging</a>.</p>
-<p>Most reducers implemented in practice are roughly \(t\)-local for some \(t\) (often they fail to be \(t\)-local in some cases because they hit some internal limit and stop when they could be making more progress, and rerunning the reducer may produce further redctions) and I think this is good because it allows you to reason in terms of what transformations they are capable of performing.</p>
-<p>So lets assume we have a \(t\)-local reducer. What makes it good?</p>
+<p>That is, basically a <span class="math inline">\(t\)</span>-local
+reducer is one that looks like the prototypical reducer but may have
+some optimisations and fiddly bits. e.g. delta debugging is a <span class="math inline">\(t\)</span> local reducer where <span class="math inline">\(t\)</span> is maps <span class="math inline">\(x\)</span> to all test cases that can be formed by
+deleting a single element of <span class="math inline">\(x\)</span>.
+Delta debugging starts by trying large bulk combinations of these
+deletions and gradually narrows it down until it’s only trying the small
+ones. Another approach which uses the same <span class="math inline">\(t\)</span> but a different algorithm is what I’ve
+called <a href="https://www.drmaciver.com/2017/06/adaptive-delta-debugging/">adaptive
+delta debugging</a>.</p>
+<p>Most reducers implemented in practice are roughly <span class="math inline">\(t\)</span>-local for some <span class="math inline">\(t\)</span> (often they fail to be <span class="math inline">\(t\)</span>-local in some cases because they hit
+some internal limit and stop when they could be making more progress,
+and rerunning the reducer may produce further redctions) and I think
+this is good because it allows you to reason in terms of what
+transformations they are capable of performing.</p>
+<p>So lets assume we have a <span class="math inline">\(t\)</span>-local
+reducer. What makes it good?</p>
 <p>Basically the tradeoff is this:</p>
-<ol>
-<li>The larger \(|t(x)|\) tends to be the better you will reduce \(x\).</li>
-<li>The smaller \(|t(x)|\) is the better your reducer tends to perform.</li>
+<ol type="1">
+<li>The larger <span class="math inline">\(|t(x)|\)</span> tends to be
+the better you will reduce <span class="math inline">\(x\)</span>.</li>
+<li>The smaller <span class="math inline">\(|t(x)|\)</span> is the
+better your reducer tends to perform.</li>
 </ol>
-<p>The ideal seems to be that you want \(|t(x)| = O(|x|)\), as per delta debugging, and the trick is to tweak the set within that constraints to try to get good results.</p>
-<p>(Note that having \(|t(x)| = O(|x|)\) doesn't mean that the overall reducer runs in \(O(|x|)\) - even if you reduce the size at every step you can easily be made to make \(O(|x|^2)\) membership checks, and if you just make lexicographic transformations it's easy for performance to get exponentially bad)</p>
-<p>The problem that you run into is that basically what you really want is not just for \(|t(x)|\) to be large, but for it to contain values that are in some sense "likely to be in \(U\)". One way this can fail to happen is when there is some sort of precondition on the range of \(U\) we are interested in. The biggest example of this is when interesting test cases have to be syntactically valid according to some grammar. When this happens, effectively you are censoring \(t\) by replacing it with its syntactically valid subset. Often when something like delta debugging gets stuck it's not because it's not because of any intrinsic limitation related to the interestingness test, it's just ended up at a point where \(t(x)\) contains no syntactically valid test-cases.</p>
-<p>So, essentially what we want in order to get a good reducer for a format is to try to ensure that \(t(x)\) is always well populated with <em>syntactically valid</em> reductions of \(x\). </p>
-<p>One way to do this might be to artificially construct interestingness tests that are basically designed to expose small reductions. I'm not quite sure what those would be. One thing I was thinking of is having interestingness tests of where \(x\) is interesting if \(y \preceq x\) for some fixed \(y\), then once those are normalised gradually "censor" the tests by removing all intermediate parts, stopping when you can't learn anything other than the direct jump to \(y\).</p>
-<p>This can be thought of as ensuring that whenever the final reduced result is \(y\) you have as rich a set of paths leading to it as the learning process is possibly able to find.</p>
-<p>I don't yet know how likely this is to work. I'm planning to do more experiments soon on getting this running on hypothesis-csmith and we'll see how well it can learn that, but I think there's some interesting stuff to investigate here.</p>
+<p>The ideal seems to be that you want <span class="math inline">\(|t(x)| = O(|x|)\)</span>, as per delta debugging,
+and the trick is to tweak the set within that constraints to try to get
+good results.</p>
+<p>(Note that having <span class="math inline">\(|t(x)| =
+O(|x|)\)</span> doesn’t mean that the overall reducer runs in <span class="math inline">\(O(|x|)\)</span> - even if you reduce the size at
+every step you can easily be made to make <span class="math inline">\(O(|x|^2)\)</span> membership checks, and if you
+just make lexicographic transformations it’s easy for performance to get
+exponentially bad)</p>
+<p>The problem that you run into is that basically what you really want
+is not just for <span class="math inline">\(|t(x)|\)</span> to be large,
+but for it to contain values that are in some sense “likely to be in
+<span class="math inline">\(U\)</span>”. One way this can fail to happen
+is when there is some sort of precondition on the range of <span class="math inline">\(U\)</span> we are interested in. The biggest
+example of this is when interesting test cases have to be syntactically
+valid according to some grammar. When this happens, effectively you are
+censoring <span class="math inline">\(t\)</span> by replacing it with
+its syntactically valid subset. Often when something like delta
+debugging gets stuck it’s not because it’s not because of any intrinsic
+limitation related to the interestingness test, it’s just ended up at a
+point where <span class="math inline">\(t(x)\)</span> contains no
+syntactically valid test-cases.</p>
+<p>So, essentially what we want in order to get a good reducer for a
+format is to try to ensure that <span class="math inline">\(t(x)\)</span> is always well populated with
+<em>syntactically valid</em> reductions of <span class="math inline">\(x\)</span>.</p>
+<p>One way to do this might be to artificially construct interestingness
+tests that are basically designed to expose small reductions. I’m not
+quite sure what those would be. One thing I was thinking of is having
+interestingness tests of where <span class="math inline">\(x\)</span> is
+interesting if <span class="math inline">\(y \preceq x\)</span> for some
+fixed <span class="math inline">\(y\)</span>, then once those are
+normalised gradually “censor” the tests by removing all intermediate
+parts, stopping when you can’t learn anything other than the direct jump
+to <span class="math inline">\(y\)</span>.</p>
+<p>This can be thought of as ensuring that whenever the final reduced
+result is <span class="math inline">\(y\)</span> you have as rich a set
+of paths leading to it as the learning process is possibly able to
+find.</p>
+<p>I don’t yet know how likely this is to work. I’m planning to do more
+experiments soon on getting this running on hypothesis-csmith and we’ll
+see how well it can learn that, but I think there’s some interesting
+stuff to investigate here.</p>
+
 </section>
 
     </article>

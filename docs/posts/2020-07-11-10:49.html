@@ -17,6 +17,7 @@ DRMacIver's Notebook: Automatic Boltzmann Sampling for Context Free Grammars
 
     <meta property="og:creator" content="@DRMacIver">
 
+    <link rel="stylesheet" href="/pandoc.css"/>
     <link rel="stylesheet" href="/pygments.css"/>
     <link rel="stylesheet" href="/tufte.css"/>
     <link rel="stylesheet" href="/latex.css"/>
@@ -73,48 +74,121 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
 <dd class="post-date">2020-07-11</dd>
 </dl>
 
-<p>A Boltzmann sampler of parameter \(x\) for some class of combinatorial objects (e.g. strings in some language) is a random sampler that picks an object of size \(n\) with probability proportional to \(x^n\).</p>
-<p><a href="https://www.drmaciver.com/2017/03/fully-automated-luxury-boltzmann-sampling-for-regular-languages/">Ages ago</a> I figured out how to do Boltzmann Sampling for arbitrary regular languages, by computing the deterministic finite automaton for the language and doing some linear algebra.</p>
-<p>Its major limitation was basically that it required computing the whole deterministic finite automaton, which may be exponentially large. Implicitly this also meant that it doesn't work on anything <em>other</em> than regular languages, because you have to have finitely many states.</p>
-<p>Anyway, shower thought for this morning is that I can lift both these restrictions and automatically derive a Boltzmann sampler for any context free language, as long as \(|x| &lt; \frac{1}{|A|}\) (where \(x\) is the Boltzmann parameter and \(A\) is the alphabet of the language). This condition isn't too onerous and is necessary to guarantee that a Boltzmann sampler exists for any language over that alphabet, though some languages may have Boltzmann samplers with larger parameter values.</p>
-<p>The technique is actually very simple: Much simpler than the previous one in some ways, although partly because the complexity lives in black boxes.</p>
+<p>A Boltzmann sampler of parameter <span class="math inline">\(x\)</span> for some class of combinatorial objects
+(e.g. strings in some language) is a random sampler that picks an object
+of size <span class="math inline">\(n\)</span> with probability
+proportional to <span class="math inline">\(x^n\)</span>.</p>
+<p><a href="https://www.drmaciver.com/2017/03/fully-automated-luxury-boltzmann-sampling-for-regular-languages/">Ages
+ago</a> I figured out how to do Boltzmann Sampling for arbitrary regular
+languages, by computing the deterministic finite automaton for the
+language and doing some linear algebra.</p>
+<p>Its major limitation was basically that it required computing the
+whole deterministic finite automaton, which may be exponentially large.
+Implicitly this also meant that it doesn’t work on anything
+<em>other</em> than regular languages, because you have to have finitely
+many states.</p>
+<p>Anyway, shower thought for this morning is that I can lift both these
+restrictions and automatically derive a Boltzmann sampler for any
+context free language, as long as <span class="math inline">\(|x| &lt;
+\frac{1}{|A|}\)</span> (where <span class="math inline">\(x\)</span> is
+the Boltzmann parameter and <span class="math inline">\(A\)</span> is
+the alphabet of the language). This condition isn’t too onerous and is
+necessary to guarantee that a Boltzmann sampler exists for any language
+over that alphabet, though some languages may have Boltzmann samplers
+with larger parameter values.</p>
+<p>The technique is actually very simple: Much simpler than the previous
+one in some ways, although partly because the complexity lives in black
+boxes.</p>
 <p>It works by breaking it down into two parts:</p>
-<ol>
-<li>Pick the size of the target string according to the right distribution.</li>
+<ol type="1">
+<li>Pick the size of the target string according to the right
+distribution.</li>
 <li>Sample uniformly among strings of that size.</li>
 </ol>
 <p>So all we need to do is figure out how to do these things.</p>
-<p>In order to do the first, let \(c(n)\) be the number of strings in the language of length \(n\).
-Necessarily \(c(n) \leq |A|^n\) because there are at most \(|A|^n\) strings of length \(n\), let alone in the language.</p>
-<p>The Boltzmann sampler distribution is that we pick a string of length \(n\) with probability proportional to \(c(n) x^n\).</p>
-<p>We can thus pick the length as follows: Pick a real number \(z\) uniformly at random in the region \([0, B(x)]\), where \(B(x) = \sum c(n) x^n\) and choose the first \(n\) such that \(\sum\limits_{k=0}^n c(k) x^k \geq z\).</p>
-<p>Unfortunately we don't know this infinite sum. You can calculate it relatively easy for some classes of language, but if the grammar for your language is ambiguous that gets harder.</p>
-<p>However! We don't actually need to do that at all, because the restriction on the parameter choice allows us to create increasingly good upper bounds on this sum as follows. Because we know that \(c(n) \leq |A|^n\) we know that \(\sum\limits_{k = n}^\infty c(k) x^k \leq \frac{(|A|x)^n}{1 - |A| x}\). Thus we can define sequences \(L_n = \sum\limits_{k \leq n} c(k) x^k \) and \(U_n = \frac{(|A| x)^{n + 1}}{1 - |A|x} + L_n\). These have the property that \(L_n \leq B(x) \leq U_n\), the \(L_n\) are monotonically increasing, the \(U_n\) are monotonically decreasing, and they both converge to \(B(x)\).</p>
+<p>In order to do the first, let <span class="math inline">\(c(n)\)</span> be the number of strings in the
+language of length <span class="math inline">\(n\)</span>. Necessarily
+<span class="math inline">\(c(n) \leq |A|^n\)</span> because there are
+at most <span class="math inline">\(|A|^n\)</span> strings of length
+<span class="math inline">\(n\)</span>, let alone in the language.</p>
+<p>The Boltzmann sampler distribution is that we pick a string of length
+<span class="math inline">\(n\)</span> with probability proportional to
+<span class="math inline">\(c(n) x^n\)</span>.</p>
+<p>We can thus pick the length as follows: Pick a real number <span class="math inline">\(z\)</span> uniformly at random in the region <span class="math inline">\([0, B(x)]\)</span>, where <span class="math inline">\(B(x) = \sum c(n) x^n\)</span> and choose the first
+<span class="math inline">\(n\)</span> such that <span class="math inline">\(\sum\limits_{k=0}^n c(k) x^k \geq z\)</span>.</p>
+<p>Unfortunately we don’t know this infinite sum. You can calculate it
+relatively easy for some classes of language, but if the grammar for
+your language is ambiguous that gets harder.</p>
+<p>However! We don’t actually need to do that at all, because the
+restriction on the parameter choice allows us to create increasingly
+good upper bounds on this sum as follows. Because we know that <span class="math inline">\(c(n) \leq |A|^n\)</span> we know that <span class="math inline">\(\sum\limits_{k = n}^\infty c(k) x^k \leq
+\frac{(|A|x)^n}{1 - |A| x}\)</span>. Thus we can define sequences $L_n =
+_{k n} c(k) x^k $ and <span class="math inline">\(U_n = \frac{(|A| x)^{n
++ 1}}{1 - |A|x} + L_n\)</span>. These have the property that <span class="math inline">\(L_n \leq B(x) \leq U_n\)</span>, the <span class="math inline">\(L_n\)</span> are monotonically increasing, the
+<span class="math inline">\(U_n\)</span> are monotonically decreasing,
+and they both converge to <span class="math inline">\(B(x)\)</span>.</p>
 <p>We can now sample the size as follows:</p>
-<ol>
-<li>Maintain a value \(m\) which we have evaluated \(L_m, U_m\) up to.</li>
-<li>Pick a real number \(z\) uniformly in \([0, U_m]\).</li>
-<li>If \(z \leq L_m\) then as before find and return the first \(n\) such that \(L_n \leq z\). Necessarily \(n \leq m\).</li>
-<li>Otherwise, find \(m' &gt; m\) such that either \(z \leq L_{m'}\) or \(U_{m'} &lt; z\).<ol>
-<li>Set \(m = m'\).</li>
-<li>If \(z \leq m'\) then pick \(n\) as in (3) and stop.</li>
-<li>Go back to (2), drawing a new value of \(z\) based on our new \(m\).</li>
+<ol type="1">
+<li>Maintain a value <span class="math inline">\(m\)</span> which we
+have evaluated <span class="math inline">\(L_m, U_m\)</span> up to.</li>
+<li>Pick a real number <span class="math inline">\(z\)</span> uniformly
+in <span class="math inline">\([0, U_m]\)</span>.</li>
+<li>If <span class="math inline">\(z \leq L_m\)</span> then as before
+find and return the first <span class="math inline">\(n\)</span> such
+that <span class="math inline">\(L_n \leq z\)</span>. Necessarily <span class="math inline">\(n \leq m\)</span>.</li>
+<li>Otherwise, find <span class="math inline">\(m' &gt; m\)</span>
+such that either <span class="math inline">\(z \leq L_{m'}\)</span>
+or <span class="math inline">\(U_{m'} &lt; z\)</span>.
+<ol type="1">
+<li>Set <span class="math inline">\(m = m'\)</span>.</li>
+<li>If <span class="math inline">\(z \leq m'\)</span> then pick
+<span class="math inline">\(n\)</span> as in (3) and stop.</li>
+<li>Go back to (2), drawing a new value of <span class="math inline">\(z\)</span> based on our new <span class="math inline">\(m\)</span>.</li>
+</ol></li>
 </ol>
-</li>
+<p>(This is a relatively well known technique for values of “relatively
+well known” that mean “if you work in a very niche field you’ve
+definitely heard about it” but I think I independently reinvented it a
+while back because I don’t work in that very niche field so hadn’t heard
+about it)</p>
+<p>So that’s how we pick the size. Now we are left with two
+problems:</p>
+<ol type="1">
+<li>How do we calculate <span class="math inline">\(c(n)\)</span>?</li>
+<li>How do we pick uniformly among values of size <span class="math inline">\(n\)</span>?</li>
 </ol>
-<p>(This is a relatively well known technique for values of "relatively well known" that mean "if you work in a very niche field you've definitely heard about it" but I think I independently reinvented it a while back because I don't work in that very niche field so hadn't heard about it)</p>
-<p>So that's how we pick the size. Now we are left with two problems:</p>
-<ol>
-<li>How do we calculate \(c(n)\)?</li>
-<li>How do we pick uniformly among values of size \(n\)?</li>
-</ol>
-<p>The answer to both is that we use the things I've been writing about recently!</p>
-<p>First, note that we can turn any context-free grammar into a deterministic <em>infinite</em> automaton by using language derivatives, as per the <a href="http://matt.might.net/articles/parsing-with-derivatives/">Parsing with Derivatives</a> approach: States are labelled by a derivative of the initial grammar, and are created lazily on demand as you traverse the automaton.</p>
-<p>You can now from this automaton use the same techniques I described in <a href="https://notebook.drmaciver.com/posts/2020-07-06-09:52.html">Indexing a DFA in shortlex order</a>, which work equally well on an infinite automaton (they only ever require looking a finite depth away from a given state).
-This means we can easily calculate \(c(n)\) using dynamic programming as before, and we can sample uniformly from the strings of length \(c(n)\) using the same technique we used to index: Pick a random integer \(i\) in the range \([0, c(n) - 1]\) and then walk the DFA the i'th string of length \(n\) in lexicographic order.</p>
-<p>One potential issue with the conversion to a DFA that this neatly avoids is that you can run into cases with context free languages where it is undecidable if the grammar contains any strings. Fortunately, for random sampling this doesn't matter! Because long strings are increasingly unlikely, there is (probabilistically speaking) no observable difference between a state that has no strings starting from it and a state that only has ridiculously long strings.</p>
-<p>How practical is this? I don't know exactly, but my suspicion is that for a lot of simple grammars it will work very well. I may attempt to put together an implementation soon.</p>
-<p>PS. It's likely that the parameter restriction can be lifted by making more precise estimates of the tail sums using the automaton, but I haven't quite figured out how yet. For my purposes it's generally a relatively mild restriction so I'm not that worried about it.</p>
+<p>The answer to both is that we use the things I’ve been writing about
+recently!</p>
+<p>First, note that we can turn any context-free grammar into a
+deterministic <em>infinite</em> automaton by using language derivatives,
+as per the <a href="http://matt.might.net/articles/parsing-with-derivatives/">Parsing
+with Derivatives</a> approach: States are labelled by a derivative of
+the initial grammar, and are created lazily on demand as you traverse
+the automaton.</p>
+<p>You can now from this automaton use the same techniques I described
+in <a href="https://notebook.drmaciver.com/posts/2020-07-06-09:52.html">Indexing
+a DFA in shortlex order</a>, which work equally well on an infinite
+automaton (they only ever require looking a finite depth away from a
+given state). This means we can easily calculate <span class="math inline">\(c(n)\)</span> using dynamic programming as before,
+and we can sample uniformly from the strings of length <span class="math inline">\(c(n)\)</span> using the same technique we used to
+index: Pick a random integer <span class="math inline">\(i\)</span> in
+the range <span class="math inline">\([0, c(n) - 1]\)</span> and then
+walk the DFA the i’th string of length <span class="math inline">\(n\)</span> in lexicographic order.</p>
+<p>One potential issue with the conversion to a DFA that this neatly
+avoids is that you can run into cases with context free languages where
+it is undecidable if the grammar contains any strings. Fortunately, for
+random sampling this doesn’t matter! Because long strings are
+increasingly unlikely, there is (probabilistically speaking) no
+observable difference between a state that has no strings starting from
+it and a state that only has ridiculously long strings.</p>
+<p>How practical is this? I don’t know exactly, but my suspicion is that
+for a lot of simple grammars it will work very well. I may attempt to
+put together an implementation soon.</p>
+<p>PS. It’s likely that the parameter restriction can be lifted by
+making more precise estimates of the tail sums using the automaton, but
+I haven’t quite figured out how yet. For my purposes it’s generally a
+relatively mild restriction so I’m not that worried about it.</p>
+
 </section>
 
     </article>

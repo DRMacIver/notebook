@@ -1090,7 +1090,6 @@ def sidenotify(soup):
                 fn_ref.replace_with(new_html)
 
 
-
 @cached
 def post_html(_unused_key, name, source_text):
     source_html = md(source_text)
@@ -1102,6 +1101,7 @@ def post_html(_unused_key, name, source_text):
         title = None
     else:
         title = " ".join(map(str, title_elt.contents))
+        title = re.compile("\s+", re.MULTILINE).sub(" ", title).strip()
         title_elt.decompose()
 
     for d in [3, 2]:

@@ -17,6 +17,7 @@ DRMacIver's Notebook: A Fun Puzzle
 
     <meta property="og:creator" content="@DRMacIver">
 
+    <link rel="stylesheet" href="/pandoc.css"/>
     <link rel="stylesheet" href="/pygments.css"/>
     <link rel="stylesheet" href="/tufte.css"/>
     <link rel="stylesheet" href="/latex.css"/>
@@ -73,43 +74,74 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
 <dd class="post-date">2019-08-03</dd>
 </dl>
 
-<p><a href="https://twitter.com/Ghast_NEOH/status/1157366361200451585">From Twitter</a>:</p>
+<p><a href="https://twitter.com/Ghast_NEOH/status/1157366361200451585">From
+Twitter</a>:</p>
 <blockquote>
 <p>fun math game:</p>
-<p>there are two players, and a machine that outputs a random number between 0.0 and 1.0 when you press a button </p>
+<p>there are two players, and a machine that outputs a random number
+between 0.0 and 1.0 when you press a button</p>
 <p>(inclusive, chosen uniformly and independently, from the reals, etc)
-player 1 pushes the button twice, and multiplies the two outputs together to get a score (e.g. 0.45 x 0.9=0.4).</p>
-<p>then player 2 pushes the button once, and squares the result to get their score (e.g. 0.67 x 0.67 = 0.4489)</p>
+player 1 pushes the button twice, and multiplies the two outputs
+together to get a score (e.g. 0.45 x 0.9=0.4).</p>
+<p>then player 2 pushes the button once, and squares the result to get
+their score (e.g. 0.67 x 0.67 = 0.4489)</p>
 <p>the higher score wins. which player wins more often?</p>
 </blockquote>
-<p>The answer is that player two wins with probability \(\frac{5}{9}\).</p>
+<p>The answer is that player two wins with probability <span class="math inline">\(\frac{5}{9}\)</span>.</p>
 <p>Why?</p>
-<p>I originally just brute forced solved the integral, but it's easier to see after a change of variables.
-The log of a uniform \(0, 1\) random variable is exponentially distributed with parameter \(1\).
-So this boils down to the claim that if \(X, Y, Z \sim \textrm{Exp}(1)\) then \(P(X + Y \leq 2Z) = \frac{5}{9}\).</p>
+<p>I originally just brute forced solved the integral, but it’s easier
+to see after a change of variables. The log of a uniform <span class="math inline">\(0, 1\)</span> random variable is exponentially
+distributed with parameter <span class="math inline">\(1\)</span>. So
+this boils down to the claim that if <span class="math inline">\(X, Y, Z
+\sim \textrm{Exp}(1)\)</span> then <span class="math inline">\(P(X + Y
+\leq 2Z) = \frac{5}{9}\)</span>.</p>
 <p>The proof of this is as follows:</p>
-<p>\begin{align}
+<p><span class="math display">\[\begin{align}
 P(X + Y \leq 2Z) &amp;= P\left(Z \geq \frac{X + Y}{2}\right) \\
-&amp; = \int\limits_{x, y \geq 0} e^{-x - y} \int\limits_{z \geq \frac{x + y}{2}} e^{-z} dz dx dy \\
-&amp; = \int\limits_{x, y \geq 0} e^{-x - y} \left(1 - e^{-\frac{x + y}{2}}\right) dx dy \\
-&amp; = \int\limits_{x, y \geq 0} e^{-x} e^{- y} dx dy  - \int\limits_{x, y \geq 0} e^{-\frac{3}{2} x}  e^{-\frac{3}{2} y} dx dy  \\
-&amp; = \left(\int\limits_{x, y \geq 0} e^{-x} dx\right)^2  -  \left(\int\limits_{x, y \geq 0} e^{-\frac{3}{2}x} dx\right)^2 \\
+&amp; = \int\limits_{x, y \geq 0} e^{-x - y} \int\limits_{z \geq \frac{x
++ y}{2}} e^{-z} dz dx dy \\
+&amp; = \int\limits_{x, y \geq 0} e^{-x - y} \left(1 - e^{-\frac{x +
+y}{2}}\right) dx dy \\
+&amp; = \int\limits_{x, y \geq 0} e^{-x} e^{- y} dx dy  -
+\int\limits_{x, y \geq 0} e^{-\frac{3}{2} x}  e^{-\frac{3}{2} y} dx
+dy  \\
+&amp; = \left(\int\limits_{x, y \geq 0} e^{-x}
+dx\right)^2  -  \left(\int\limits_{x, y \geq 0} e^{-\frac{3}{2}x}
+dx\right)^2 \\
 &amp; = 1^2 - \left(\frac{2}{3}\right)^2 \\
 &amp; = \frac{5}{9} \\
-\end{align}</p>
-<p>I still feel like there should be a nicer solution than this. It's a step above just brute force solving the integral in tidiness, but I don't feel it makes it any more intuitive where the actual number comes from.</p>
-<p>Update: OK, here is probably as nice as it's going to get.</p>
-<p>For a random variable \(A\) define the moment generating function of \(A\) as \(F_A(t) = E(e^{tA})\).
-Note that if \(A, B\) are independent then \(F_{A + B}(t) = E(e^{t(A + N)}) = E(e^{tA} e^t{B}) =  E(e^{tA}) E(e^t{B})  = F_A(t) F_B(t)\).</p>
-<p>Note also that if \(Z \sim \mathrm{Exp}(\lambda)\)  and \(P(A \geq 0) = 1\) then \(P(Z \geq A) = E(P(Z \geq a | A = a)) = E(e^{-\lambda A}) = F_A(-\lambda)\).</p>
-<p>Now, with \(X, Y, Z\) as above, we have:</p>
-<ol>
-<li>\(P(X + Y \geq 2Z) = F_{X + Y}(-\frac{1}{2})\) (because if \(Z \sim \mathrm{Exp}(1)\) then \(2Z \sim \mathrm{Exp}(\frac{1}{2})\)).</li>
-<li>If \(t &lt; 1\) then \(F_X(t) = F_Y(t) = \int\limits_0^\infty e^{(t - 1)x} = \frac{1}{1 - t}\)</li>
-<li>\(F_{X + Y}(t) = F_X(t) F_Y(t) = F_X(t)^2 = \frac{1}{(1 - t)^2}\)</li>
+\end{align}\]</span></p>
+<p>I still feel like there should be a nicer solution than this. It’s a
+step above just brute force solving the integral in tidiness, but I
+don’t feel it makes it any more intuitive where the actual number comes
+from.</p>
+<p>Update: OK, here is probably as nice as it’s going to get.</p>
+<p>For a random variable <span class="math inline">\(A\)</span> define
+the moment generating function of <span class="math inline">\(A\)</span>
+as <span class="math inline">\(F_A(t) = E(e^{tA})\)</span>. Note that if
+<span class="math inline">\(A, B\)</span> are independent then <span class="math inline">\(F_{A + B}(t) = E(e^{t(A + N)}) = E(e^{tA} e^t{B})
+=  E(e^{tA}) E(e^t{B})  = F_A(t) F_B(t)\)</span>.</p>
+<p>Note also that if <span class="math inline">\(Z \sim
+\mathrm{Exp}(\lambda)\)</span> and <span class="math inline">\(P(A \geq
+0) = 1\)</span> then <span class="math inline">\(P(Z \geq A) = E(P(Z
+\geq a | A = a)) = E(e^{-\lambda A}) = F_A(-\lambda)\)</span>.</p>
+<p>Now, with <span class="math inline">\(X, Y, Z\)</span> as above, we
+have:</p>
+<ol type="1">
+<li><span class="math inline">\(P(X + Y \geq 2Z) = F_{X +
+Y}(-\frac{1}{2})\)</span> (because if <span class="math inline">\(Z \sim
+\mathrm{Exp}(1)\)</span> then <span class="math inline">\(2Z \sim
+\mathrm{Exp}(\frac{1}{2})\)</span>).</li>
+<li>If <span class="math inline">\(t &lt; 1\)</span> then <span class="math inline">\(F_X(t) = F_Y(t) = \int\limits_0^\infty e^{(t -
+1)x} = \frac{1}{1 - t}\)</span></li>
+<li><span class="math inline">\(F_{X + Y}(t) = F_X(t) F_Y(t) = F_X(t)^2
+= \frac{1}{(1 - t)^2}\)</span></li>
 </ol>
-<p>Thus, plugging in the numbers, we have \(P(X + Y \geq 2Z) = \left(\frac{1}{1 + \frac{1}{2}}\right)^2 = \frac{4}{9}\) as desired.</p>
-<p>Update 2: <a href="https://twitter.com/icecolbeveridge/status/1157575092806868992">Colin's solution is much better than mine</a>.</p>
+<p>Thus, plugging in the numbers, we have <span class="math inline">\(P(X + Y \geq 2Z) = \left(\frac{1}{1 +
+\frac{1}{2}}\right)^2 = \frac{4}{9}\)</span> as desired.</p>
+<p>Update 2: <a href="https://twitter.com/icecolbeveridge/status/1157575092806868992">Colin’s
+solution is much better than mine</a>.</p>
+
 </section>
 
     </article>

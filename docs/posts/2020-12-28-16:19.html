@@ -17,6 +17,7 @@ DRMacIver's Notebook: Reducing Weird Tests
 
     <meta property="og:creator" content="@DRMacIver">
 
+    <link rel="stylesheet" href="/pandoc.css"/>
     <link rel="stylesheet" href="/pygments.css"/>
     <link rel="stylesheet" href="/tufte.css"/>
     <link rel="stylesheet" href="/latex.css"/>
@@ -73,58 +74,124 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
 <dd class="post-date">2020-12-28</dd>
 </dl>
 
-<p>Hillel recently wrote about <a href="https://buttondown.email/hillelwayne/archive/fd1f0758-ae31-4e83-9138-33721cbd5ce3">cross-branch testing</a> - comparing implementations of the same API in two different branches as a form of differential testing to see whether a change introduced any functional differences.
-As part of his example he ended up with what was functionally the following interestingness test:</p>
-<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">is_interesting</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">):</span>
-    <span class="n">out</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
-        <span class="n">out</span> <span class="o">=</span> <span class="n">out</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="nb">abs</span><span class="p">(</span><span class="n">y</span> <span class="o">*</span> <span class="n">z</span> <span class="o">-</span> <span class="n">i</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
-        <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="n">y</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">x</span>
-    <span class="k">return</span> <span class="nb">abs</span><span class="p">(</span><span class="n">out</span><span class="p">)</span> <span class="o">%</span> <span class="mi">100</span> <span class="o">==</span> <span class="mi">9</span>
-</pre></div>
-<p>He mentions in the article that this gives nondeterministic results for Hypothesis:</p>
+<p>Hillel recently wrote about <a href="https://buttondown.email/hillelwayne/archive/fd1f0758-ae31-4e83-9138-33721cbd5ce3">cross-branch
+testing</a> - comparing implementations of the same API in two different
+branches as a form of differential testing to see whether a change
+introduced any functional differences. As part of his example he ended
+up with what was functionally the following interestingness test:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a aria-hidden="true" href="#cb1-1" tabindex="-1"></a><span class="kw">def</span> is_interesting(x, y, z):</span>
+<span id="cb1-2"><a aria-hidden="true" href="#cb1-2" tabindex="-1"></a>    out <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb1-3"><a aria-hidden="true" href="#cb1-3" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">10</span>):</span>
+<span id="cb1-4"><a aria-hidden="true" href="#cb1-4" tabindex="-1"></a>        out <span class="op">=</span> out <span class="op">*</span> x <span class="op">+</span> <span class="bu">abs</span>(y <span class="op">*</span> z <span class="op">-</span> i <span class="op">**</span> <span class="dv">2</span>)</span>
+<span id="cb1-5"><a aria-hidden="true" href="#cb1-5" tabindex="-1"></a>        x, y, z <span class="op">=</span> y <span class="op">+</span> <span class="dv">1</span>, z, x</span>
+<span id="cb1-6"><a aria-hidden="true" href="#cb1-6" tabindex="-1"></a>    <span class="cf">return</span> <span class="bu">abs</span>(out) <span class="op">%</span> <span class="dv">100</span> <span class="op">==</span> <span class="dv">9</span></span></code></pre></div>
+<p>He mentions in the article that this gives nondeterministic results
+for Hypothesis:</p>
 <blockquote>
 <p>Running this gives us an erroneous input:</p>
 <p><code>Falsifying example: test_f(a=5, b=6, c=5,)</code></p>
-<p>This is nondeterministic: I’ve also gotten <code>(0, 4, 0)</code> and <code>(-114, -114, -26354)</code> as error cases.</p>
+<p>This is nondeterministic: I’ve also gotten <code>(0, 4, 0)</code> and
+<code>(-114, -114, -26354)</code> as error cases.</p>
 </blockquote>
-<p><code>(0, 4, 0)</code> is the (probably globally) correct answer of all of these according to Hypothesis's reduction logic,
-but Hypothesis's test-case reduction is unable to reliably transform all of the failing examples to it.</p>
-<p>I reacted to this as I always do to such things: "Oh, I wonder if I can make the test-case reducer better". But the answer is no, no I cannot, and the reason is that this test contains what is basically a hash function (not a very good hash function, but good enough), and as a result the test cases are pretty much uniformly distributed throughout the set of test cases - if you generate test cases where the values are between <code>-10</code> and <code>10</code>, then of the <code>9261</code> possible test cases, <code>129</code> are interesting, i.e. about <code>1.4%</code> which is about what you'd expect if the computation of <code>abs(out) % 100</code> were roughly randomly distributed.</p>
-<p>For such functions we end up with the slightly awkward situation where:</p>
-<ol>
-<li>It's not that hard to find test cases (<code>1%</code> isn't that infrequent! We can just exhaustively enumerate to find the globally minimal test case).</li>
-<li>It's hard enough to find test cases that most test-cases are locally minimal.</li>
+<p><code>(0, 4, 0)</code> is the (probably globally) correct answer of
+all of these according to Hypothesis’s reduction logic, but Hypothesis’s
+test-case reduction is unable to reliably transform all of the failing
+examples to it.</p>
+<p>I reacted to this as I always do to such things: “Oh, I wonder if I
+can make the test-case reducer better”. But the answer is no, no I
+cannot, and the reason is that this test contains what is basically a
+hash function (not a very good hash function, but good enough), and as a
+result the test cases are pretty much uniformly distributed throughout
+the set of test cases - if you generate test cases where the values are
+between <code>-10</code> and <code>10</code>, then of the
+<code>9261</code> possible test cases, <code>129</code> are interesting,
+i.e. about <code>1.4%</code> which is about what you’d expect if the
+computation of <code>abs(out) % 100</code> were roughly randomly
+distributed.</p>
+<p>For such functions we end up with the slightly awkward situation
+where:</p>
+<ol type="1">
+<li>It’s not that hard to find test cases (<code>1%</code> isn’t that
+infrequent! We can just exhaustively enumerate to find the globally
+minimal test case).</li>
+<li>It’s hard enough to find test cases that most test-cases are locally
+minimal.</li>
 </ol>
-<p>The reason for (2) is that if reductions are not any more likely to be interesting than any other test case (which seems roughly true for hillel's example and is true by construction for truly random examples), if you try \(N\) reductions you only expect \(0.01 N\) reductions to work. Suppose for a typical triple of integers we have, say, <code>10</code> reductions we can perform, and those reductions are no more likely than chance to work, then <code>90%</code> of interesting test cases are locally minimal, which means that we'll typically end the reduction process within a few steps.</p>
-<p>In order to explore this, lets consider the following toy model: Our space of interesting test cases are triples of integers between <code>0</code> and <code>10</code>, and we have a local reducer that makes the following transformations:</p>
-<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">reduce_tuple</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
-    <span class="c1"># First try sorting the tuple</span>
-    <span class="k">yield</span> <span class="nb">tuple</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">t</span><span class="p">))</span>
+<p>The reason for (2) is that if reductions are not any more likely to
+be interesting than any other test case (which seems roughly true for
+hillel’s example and is true by construction for truly random examples),
+if you try <span class="math inline">\(N\)</span> reductions you only
+expect <span class="math inline">\(0.01 N\)</span> reductions to work.
+Suppose for a typical triple of integers we have, say, <code>10</code>
+reductions we can perform, and those reductions are no more likely than
+chance to work, then <code>90%</code> of interesting test cases are
+locally minimal, which means that we’ll typically end the reduction
+process within a few steps.</p>
+<p>In order to explore this, lets consider the following toy model: Our
+space of interesting test cases are triples of integers between
+<code>0</code> and <code>10</code>, and we have a local reducer that
+makes the following transformations:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a aria-hidden="true" href="#cb2-1" tabindex="-1"></a><span class="kw">def</span> reduce_tuple(t):</span>
+<span id="cb2-2"><a aria-hidden="true" href="#cb2-2" tabindex="-1"></a>    <span class="co"># First try sorting the tuple</span></span>
+<span id="cb2-3"><a aria-hidden="true" href="#cb2-3" tabindex="-1"></a>    <span class="cf">yield</span> <span class="bu">tuple</span>(<span class="bu">sorted</span>(t))</span>
+<span id="cb2-4"><a aria-hidden="true" href="#cb2-4" tabindex="-1"></a></span>
+<span id="cb2-5"><a aria-hidden="true" href="#cb2-5" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(t) <span class="op">-</span> <span class="dv">1</span>):</span>
+<span id="cb2-6"><a aria-hidden="true" href="#cb2-6" tabindex="-1"></a>        <span class="cf">if</span> t[i <span class="op">+</span> <span class="dv">1</span>] <span class="op">&lt;</span> t[i]:</span>
+<span id="cb2-7"><a aria-hidden="true" href="#cb2-7" tabindex="-1"></a>            reduced <span class="op">=</span> <span class="bu">list</span>(t)</span>
+<span id="cb2-8"><a aria-hidden="true" href="#cb2-8" tabindex="-1"></a>            reduced[i], reduced[i <span class="op">+</span> <span class="dv">1</span>] <span class="op">=</span> reduced[i <span class="op">+</span> <span class="dv">1</span>], reduced[i]</span>
+<span id="cb2-9"><a aria-hidden="true" href="#cb2-9" tabindex="-1"></a>            <span class="cf">yield</span> <span class="bu">tuple</span>(reduced)</span>
+<span id="cb2-10"><a aria-hidden="true" href="#cb2-10" tabindex="-1"></a></span>
+<span id="cb2-11"><a aria-hidden="true" href="#cb2-11" tabindex="-1"></a>    <span class="co"># Now try lowering each component</span></span>
+<span id="cb2-12"><a aria-hidden="true" href="#cb2-12" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(t)):</span>
+<span id="cb2-13"><a aria-hidden="true" href="#cb2-13" tabindex="-1"></a>        <span class="cf">if</span> t[i] <span class="op">&gt;</span> <span class="dv">0</span>:</span>
+<span id="cb2-14"><a aria-hidden="true" href="#cb2-14" tabindex="-1"></a>            reduced <span class="op">=</span> <span class="bu">list</span>(t)</span>
+<span id="cb2-15"><a aria-hidden="true" href="#cb2-15" tabindex="-1"></a>            reduced[i] <span class="op">-=</span> <span class="dv">1</span></span>
+<span id="cb2-16"><a aria-hidden="true" href="#cb2-16" tabindex="-1"></a>            <span class="cf">yield</span> <span class="bu">tuple</span>(reduced)</span>
+<span id="cb2-17"><a aria-hidden="true" href="#cb2-17" tabindex="-1"></a>            <span class="co"># If we can raise the next component then try that</span></span>
+<span id="cb2-18"><a aria-hidden="true" href="#cb2-18" tabindex="-1"></a>            <span class="cf">if</span> i <span class="op">+</span> <span class="dv">1</span> <span class="op">&lt;</span> <span class="bu">len</span>(t) <span class="kw">and</span> t[i <span class="op">+</span> <span class="dv">1</span>] <span class="op">&lt;</span> <span class="dv">10</span>:</span>
+<span id="cb2-19"><a aria-hidden="true" href="#cb2-19" tabindex="-1"></a>                reduced[i <span class="op">+</span> <span class="dv">1</span>] <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb2-20"><a aria-hidden="true" href="#cb2-20" tabindex="-1"></a>                <span class="cf">yield</span> <span class="bu">tuple</span>(reduced)</span></code></pre></div>
+<p>(if this doesn’t make sense to you don’t worry about it too much,
+it’s just the first local reducer that came to mind for triples of
+integers)</p>
+<p>Suppose we’re reducing subject to an interesting test where the
+maximal value <code>(10, 10, 10)</code> is always interesting and every
+other test case is interesting with probability <code>p</code>. What is
+the probability that this local reducer finds the globally optimal test
+case?</p>
+<p>Based on some fairly crude simulations, the local reducer starts
+finding the globally optimal test-case more than half the time around
+<code>p = 0.93</code>, which has the amusing property that the local
+reducer is reliably worse (in expectation) than the reducer that just
+always tries <code>(0, 0, 0)</code> and gives up if that doesn’t work
+(which finds the globally minimal test case with probability
+<code>p</code>). Some equally crude simulation suggests that an approach
+that just enumerates the smallest test cases for a while returns at
+least as good a result in the same number of calls to the
+interestingness test in at least 80% of cases, regardless of the value
+of <code>p</code>.</p>
+<p>I’m not sure if there’s any sort of general lesson to derive here -
+most interestingness tests are not quite this adversarial - but I do
+feel like there is often something like this going on, where the
+reduction problem isn’t that hard despite being in a local minimum, and
+I wonder if something loosely inspired by this that estimates the
+density of interesting test cases below the current interesting test
+case, but I’m not sure if that’s entirely useful.</p>
+<p>If one <em>did</em> have some sort of easy way to sample from test
+cases that are strictly smaller than the current interesting test case,
+it might be worth running that for longer than it would be intuitively
+obviously useful as a sort of crude but perhaps surprisingly effective
+reducer? It’s certainly more robust to this sort of problem than any
+kind of local transformation based reducer would be.</p>
+<p>This also suggests that possibly test-case reducers should try a bit
+more bounded exploration of the small test cases than they currently do,
+but I think this is probably misleading due to the relatively small
+number of test cases in this example - for most formats of interest the
+number of test cases of size <code>n</code> is exponential in
+<code>n</code>, so any amount of enumeration other than trying the
+globally minimal test case (which <em>is</em> usually worth doing) is
+probably not worth it.</p>
 
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
-        <span class="k">if</span> <span class="n">t</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">t</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
-            <span class="n">reduced</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
-            <span class="n">reduced</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">reduced</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">reduced</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">],</span> <span class="n">reduced</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-            <span class="k">yield</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">reduced</span><span class="p">)</span>
-
-    <span class="c1"># Now try lowering each component</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">)):</span>
-        <span class="k">if</span> <span class="n">t</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-            <span class="n">reduced</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
-            <span class="n">reduced</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-=</span> <span class="mi">1</span>
-            <span class="k">yield</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">reduced</span><span class="p">)</span>
-            <span class="c1"># If we can raise the next component then try that</span>
-            <span class="k">if</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> <span class="ow">and</span> <span class="n">t</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
-                <span class="n">reduced</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
-                <span class="k">yield</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">reduced</span><span class="p">)</span>
-</pre></div>
-<p>(if this doesn't make sense to you don't worry about it too much, it's just the first local reducer that came to mind for triples of integers)</p>
-<p>Suppose we're reducing subject to an interesting test where the maximal value <code>(10, 10, 10)</code> is always interesting and every other test case is interesting with probability <code>p</code>. What is the probability that this local reducer finds the globally optimal test case?</p>
-<p>Based on some fairly crude simulations, the local reducer starts finding the globally optimal test-case more than half the time around <code>p = 0.93</code>, which has the amusing property that the local reducer is reliably worse (in expectation) than the reducer that just always tries <code>(0, 0, 0)</code> and gives up if that doesn't work (which finds the globally minimal test case with probability <code>p</code>). Some equally crude simulation suggests that an approach that just enumerates the smallest test cases for a while returns at least as good a result in the same number of calls to the interestingness test in at least 80% of cases, regardless of the value of <code>p</code>.</p>
-<p>I'm not sure if there's any sort of general lesson to derive here - most interestingness tests are not quite this adversarial - but I do feel like there is often something like this going on, where the reduction problem isn't that hard despite being in a local minimum, and I wonder if something loosely inspired by this that estimates the density of interesting test cases below the current interesting test case, but I'm not sure if that's entirely useful.</p>
-<p>If one <em>did</em> have some sort of easy way to sample from test cases that are strictly smaller than the current interesting test case, it might be worth running that for longer than it would be intuitively obviously useful as a sort of crude but perhaps surprisingly effective reducer? It's certainly more robust to this sort of problem than any kind of local transformation based reducer would be. </p>
-<p>This also suggests that possibly test-case reducers should try a bit more bounded exploration of the small test cases than they currently do, but I think this is probably misleading due to the relatively small number of test cases in this example - for most formats of interest the number of test cases of size <code>n</code> is exponential in <code>n</code>, so any amount of enumeration other than trying the globally minimal test case (which <em>is</em> usually worth doing) is probably not worth it.</p>
 </section>
 
     </article>

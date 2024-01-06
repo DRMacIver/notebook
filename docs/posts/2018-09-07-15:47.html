@@ -16,6 +16,7 @@ DRMacIver's Notebook
 
     <meta property="og:creator" content="@DRMacIver">
 
+    <link rel="stylesheet" href="/pandoc.css"/>
     <link rel="stylesheet" href="/pygments.css"/>
     <link rel="stylesheet" href="/tufte.css"/>
     <link rel="stylesheet" href="/latex.css"/>
@@ -69,40 +70,65 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
 <dt>Published</dt>
 <dd class="post-date">2018-09-07</dd>
 </dl>
-<p>The thing I called <a href="https://notebook.drmaciver.com/posts/2018-08-30-07:50.html">the Feynmann style</a> relates to Tim Gowers's <a href="https://www.dpmms.cam.ac.uk/~wtg10/2cultures.pdf">The Two Cultures of Mathematics</a>,
-where he suggests that there are two cultures of mathematics: Theory building and problem solving. The latter tends to get organised not along the lines of general big ideas and broad theorems,
-but instead along heuristics and guiding principles.</p>
-<p>Gowers refers to the areas of mathematics that are primarily problem-solving as <em>combinatorial</em>,
-but I feel like this kind of problem solving is one that it doesn't seem right to refer to as combinatorial - it's more... calculation?</p>
-<p>There's a similar sense of being guided by heuristics and general ideas though.</p>
-<p>For example, one general idea is "replace annoying terms with integrals over some new variables, then swap out the variable".</p>
-<p>Suppose we didn't know what \(\sum\limits_{n = 1}^\infty (-1)^{n - 1} \frac{1}{n}\) was.
-How would we deal with this?</p>
-<p>(Note: There's all sorts of playing fast and loose with convergence in this post that you can shore up later with some proper calculation but I'm not actually going to do. That's very common in this sort of proof).</p>
-<p>Well, that \(\frac{1}{n}\) is an annoying term. Lets get rid of it with.
-A classic way of doing this is to replace it with \(\int\limits_0^1 x^{n - 1} dx\).</p>
+<p>The thing I called <a href="https://notebook.drmaciver.com/posts/2018-08-30-07:50.html">the
+Feynmann style</a> relates to Tim Gowers’s <a href="https://www.dpmms.cam.ac.uk/~wtg10/2cultures.pdf">The Two Cultures
+of Mathematics</a>, where he suggests that there are two cultures of
+mathematics: Theory building and problem solving. The latter tends to
+get organised not along the lines of general big ideas and broad
+theorems, but instead along heuristics and guiding principles.</p>
+<p>Gowers refers to the areas of mathematics that are primarily
+problem-solving as <em>combinatorial</em>, but I feel like this kind of
+problem solving is one that it doesn’t seem right to refer to as
+combinatorial - it’s more… calculation?</p>
+<p>There’s a similar sense of being guided by heuristics and general
+ideas though.</p>
+<p>For example, one general idea is “replace annoying terms with
+integrals over some new variables, then swap out the variable”.</p>
+<p>Suppose we didn’t know what <span class="math inline">\(\sum\limits_{n = 1}^\infty (-1)^{n - 1}
+\frac{1}{n}\)</span> was. How would we deal with this?</p>
+<p>(Note: There’s all sorts of playing fast and loose with convergence
+in this post that you can shore up later with some proper calculation
+but I’m not actually going to do. That’s very common in this sort of
+proof).</p>
+<p>Well, that <span class="math inline">\(\frac{1}{n}\)</span> is an
+annoying term. Lets get rid of it with. A classic way of doing this is
+to replace it with <span class="math inline">\(\int\limits_0^1 x^{n - 1}
+dx\)</span>.</p>
 <p>We can now do the computation as follows:</p>
-<p>\begin{align}
-\sum\limits_{n = 1}^\infty (-1)^{n - 1} \frac{1}{n} &amp; = \sum\limits_{n = 1}^\infty (-1)^{n - 1} \int\limits_0^1 x^{n - 1} \\
+<p><span class="math display">\[\begin{align}
+\sum\limits_{n = 1}^\infty (-1)^{n - 1} \frac{1}{n} &amp; =
+\sum\limits_{n = 1}^\infty (-1)^{n - 1} \int\limits_0^1 x^{n - 1} \\
 &amp; = \sum\limits_{n = 0}^\infty (-1)^n \int\limits_0^1 x^n \\
 &amp; = \int\limits_0^1 \sum\limits_{n = 0}^\infty (-x)^n \\
 &amp; = \int\limits_0^1 \frac{1}{1 + x} \\
 &amp; = \ln(1 + x) \\
-\end{align}</p>
+\end{align}\]</span></p>
 <p>Roughly the steps here are:</p>
-<ol>
+<ol type="1">
 <li>Try replacing tricky terms with integrals over simpler terms</li>
 <li>Use standard sums that you already know the answer for</li>
 <li>Try swapping sums and integrations</li>
 </ol>
-<p>Another useful calculational heuristic is "try changing the variable".</p>
-<p>e.g. what's the limit as \(n \to \infty\) of \(n \ln (1 + \frac{1}{n})\)?</p>
-<p>Well, let \(x = \frac{1}{n}\). This expression is now \(\frac{ln(1 + x)}{x} = \frac{ln(1 + x) - \ln(1)}{x}\) as \(x \to 0\).
-i.e. it's the derivative of \(\ln\) at \(1\), i.e. \(1\).</p>
-<p>It's hard to explain exactly what the thought process is here. It's like solving a puzzle - you have a bunch of known tricks that you think might work and you try to apply them all.
-If you were to mechanize the process then it wuold end up looking like a brute force solver for the problem, but by using intuition you can kinda guide the way.</p>
-<p>I think maybe one part of the split between problem-solving and theory building is how much of what you end up building escapes the head of the mathematician building it:
-Problem-solving skills are much harder to teach to another person than theory is (once that other person has build the skill of acquiring theory, which is also hard to teach)</p>
+<p>Another useful calculational heuristic is “try changing the
+variable”.</p>
+<p>e.g. what’s the limit as <span class="math inline">\(n \to
+\infty\)</span> of <span class="math inline">\(n \ln (1 +
+\frac{1}{n})\)</span>?</p>
+<p>Well, let <span class="math inline">\(x = \frac{1}{n}\)</span>. This
+expression is now <span class="math inline">\(\frac{ln(1 + x)}{x} =
+\frac{ln(1 + x) - \ln(1)}{x}\)</span> as <span class="math inline">\(x
+\to 0\)</span>. i.e. it’s the derivative of <span class="math inline">\(\ln\)</span> at <span class="math inline">\(1\)</span>, i.e. <span class="math inline">\(1\)</span>.</p>
+<p>It’s hard to explain exactly what the thought process is here. It’s
+like solving a puzzle - you have a bunch of known tricks that you think
+might work and you try to apply them all. If you were to mechanize the
+process then it wuold end up looking like a brute force solver for the
+problem, but by using intuition you can kinda guide the way.</p>
+<p>I think maybe one part of the split between problem-solving and
+theory building is how much of what you end up building escapes the head
+of the mathematician building it: Problem-solving skills are much harder
+to teach to another person than theory is (once that other person has
+build the skill of acquiring theory, which is also hard to teach)</p>
+
 </section>
 
     </article>

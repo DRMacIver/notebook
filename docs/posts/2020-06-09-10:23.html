@@ -17,6 +17,7 @@ DRMacIver's Notebook: A Book is a Tool for Thinking With
 
     <meta property="og:creator" content="@DRMacIver">
 
+    <link rel="stylesheet" href="/pandoc.css"/>
     <link rel="stylesheet" href="/pygments.css"/>
     <link rel="stylesheet" href="/tufte.css"/>
     <link rel="stylesheet" href="/latex.css"/>
@@ -73,28 +74,94 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
 <dd class="post-date">2020-06-09</dd>
 </dl>
 
-<p>From <a href="https://amzn.to/2WYeYew">Talking About Machines</a> by Julian Orr, page 106:</p>
+<p>From <a href="https://amzn.to/2WYeYew">Talking About Machines</a> by
+Julian Orr, page 106:</p>
 <blockquote>
-<p>...documentation is not just a representation of the machine and its prescriptions but must be regarded as a mechanism in and of itself. A service manual is a device which someone constructs to convey information to someone else, and choices of inclusion and exclusion significantly constrain what can be done with the manual.</p>
+<p>…documentation is not just a representation of the machine and its
+prescriptions but must be regarded as a mechanism in and of itself. A
+service manual is a device which someone constructs to convey
+information to someone else, and choices of inclusion and exclusion
+significantly constrain what can be done with the manual.</p>
 </blockquote>
-<p>I think this is an underappreciated point, especially when writing technical documentation, but I would go further than this: A document is not just a device for conveying information, it is a tool for thinking with.</p>
-<p>You can see this in, well, the current post where I'm using <a href="https://notebook.drmaciver.com/posts/2020-06-08-10:11.html">the random book prompt I described before</a> (although I actually picked page 107 and scanned backwards for context and found this passage was the one that I wanted to write about).
-The random prompt isn't really "conveying information" per se (I've already read this passage and am already aware of the general theme), but I am using the book as a way to have thoughts that I wouldn't otherwise have had, by picking a random passage from it and writing about it, which causes me to have thoughts that I would not otherwise have been having.</p>
-<p>As I talked about in <a href="https://notebook.drmaciver.com/posts/2020-05-13-09:56.html">How to read a book</a>, the actual physical design of the tool (the book) matters quite significantly for its use. If you just think of it as a document for conveying information, the information is all that matters, but the physical design constrains its usage. <a href="https://ramble.rixx.de/2020/06/08/a-blog-upon-the-deep.html">As Tobi discovered yesterday</a>, if all you've got is a library of ebooks you're significantly constrained in your ability to pick random passages from it (unless you create your own programmatic tooling on top).</p>
-<p>Over the next few pages, Orr talks about the corporation's use of "directive documentation" - documentation which goes through explicit procedures that you are supposed to follow exactly in the course of debugging the (photocopier) machine:</p>
+<p>I think this is an underappreciated point, especially when writing
+technical documentation, but I would go further than this: A document is
+not just a device for conveying information, it is a tool for thinking
+with.</p>
+<p>You can see this in, well, the current post where I’m using <a href="https://notebook.drmaciver.com/posts/2020-06-08-10:11.html">the
+random book prompt I described before</a> (although I actually picked
+page 107 and scanned backwards for context and found this passage was
+the one that I wanted to write about). The random prompt isn’t really
+“conveying information” per se (I’ve already read this passage and am
+already aware of the general theme), but I am using the book as a way to
+have thoughts that I wouldn’t otherwise have had, by picking a random
+passage from it and writing about it, which causes me to have thoughts
+that I would not otherwise have been having.</p>
+<p>As I talked about in <a href="https://notebook.drmaciver.com/posts/2020-05-13-09:56.html">How to
+read a book</a>, the actual physical design of the tool (the book)
+matters quite significantly for its use. If you just think of it as a
+document for conveying information, the information is all that matters,
+but the physical design constrains its usage. <a href="https://ramble.rixx.de/2020/06/08/a-blog-upon-the-deep.html">As
+Tobi discovered yesterday</a>, if all you’ve got is a library of ebooks
+you’re significantly constrained in your ability to pick random passages
+from it (unless you create your own programmatic tooling on top).</p>
+<p>Over the next few pages, Orr talks about the corporation’s use of
+“directive documentation” - documentation which goes through explicit
+procedures that you are supposed to follow exactly in the course of
+debugging the (photocopier) machine:</p>
 <blockquote>
-<p>The directive documentation is designed not to provide information for thinking about the machine and its problems but to direct the technician to the solution through a minimal decision tree.</p>
+<p>The directive documentation is designed not to provide information
+for thinking about the machine and its problems but to direct the
+technician to the solution through a minimal decision tree.</p>
 </blockquote>
-<p>He then goes on to explain how this doesn't really work, because reality is irreducibly messy. The technicians use the documentation anyway, because it is often the result of knowledge they don't have (e.g. about the specific workings of a specific machine), but they do so in their own way:</p>
+<p>He then goes on to explain how this doesn’t really work, because
+reality is irreducibly messy. The technicians use the documentation
+anyway, because it is often the result of knowledge they don’t have
+(e.g. about the specific workings of a specific machine), but they do so
+in their own way:</p>
 <blockquote>
-<p>...a system that fixes the machine without either customer or technician knowing how or why is unlikely to be acceptable. Consequently, when the technicians use the directive documentation, they try to determine the purpose of the various tests, to understand what the documentation is testing, to know what they are doing.</p>
-<p>This is not done just so they can reassure the customer; the technicians are also developing their understanding for future problems.</p>
+<p>…a system that fixes the machine without either customer or
+technician knowing how or why is unlikely to be acceptable.
+Consequently, when the technicians use the directive documentation, they
+try to determine the purpose of the various tests, to understand what
+the documentation is testing, to know what they are doing.</p>
+<p>This is not done just so they can reassure the customer; the
+technicians are also developing their understanding for future
+problems.</p>
 </blockquote>
-<p>As I keep saying <a href="https://notebook.drmaciver.com/posts/2020-02-26-16:07.html">the fastest way to learn something is to do something</a>, but often you run into the problem is that you have no idea what to do in order to learn something. Working through a preset procedure is often a good way to go.</p>
-<p>A lot of people were complaining at me recently because I had the audacity to suggest that you could learn programming from books. Obviously you learn programming from doing programming, and the idea of learning programming from books is ridiculous (except for all of these books that are <em>not</em> about programming that you should read to become a better programmer, because apparently it's perfectly possible to learn about programming by reading as long as you pretend you're not doing that).</p>
-<p>I suggest that one reason why people think this is that they are using books wrong. They have this wrong-headed idea that the way a book is supposed to work is that you read the book, you now have the book's information, and you now know the subject. Because this is not possible with programming (you <em>do</em> have to program to learn to program, there really is no way around that), it must be impossible to learn programming from a book.</p>
-<p>This is, of course, obviously nonsense, because this is a fully general argument against learning <em>anything</em> from a book. Everything you learn has to be actively engaged with in order to learn it - even books which are pure information content you still need a much more active process of learning than that or the information will mostly disappear from your brain as soon as it enters, leaving only a vague sense that there's a there there (which is still useful of course - this is a form of <a href="https://jmestn.com/15485/naval-doesn-t-take-notes">reading to maximize your exposure to ideas</a>).</p>
-<p>Instead, books about programming (or any other subject) should be thought of as tools you can use as part of your learning process. Just reading a book won't help you any more than thoroughly learning the details of a hammer will. You have to actually hit things with it. </p>
+<p>As I keep saying <a href="https://notebook.drmaciver.com/posts/2020-02-26-16:07.html">the
+fastest way to learn something is to do something</a>, but often you run
+into the problem is that you have no idea what to do in order to learn
+something. Working through a preset procedure is often a good way to
+go.</p>
+<p>A lot of people were complaining at me recently because I had the
+audacity to suggest that you could learn programming from books.
+Obviously you learn programming from doing programming, and the idea of
+learning programming from books is ridiculous (except for all of these
+books that are <em>not</em> about programming that you should read to
+become a better programmer, because apparently it’s perfectly possible
+to learn about programming by reading as long as you pretend you’re not
+doing that).</p>
+<p>I suggest that one reason why people think this is that they are
+using books wrong. They have this wrong-headed idea that the way a book
+is supposed to work is that you read the book, you now have the book’s
+information, and you now know the subject. Because this is not possible
+with programming (you <em>do</em> have to program to learn to program,
+there really is no way around that), it must be impossible to learn
+programming from a book.</p>
+<p>This is, of course, obviously nonsense, because this is a fully
+general argument against learning <em>anything</em> from a book.
+Everything you learn has to be actively engaged with in order to learn
+it - even books which are pure information content you still need a much
+more active process of learning than that or the information will mostly
+disappear from your brain as soon as it enters, leaving only a vague
+sense that there’s a there there (which is still useful of course - this
+is a form of <a href="https://jmestn.com/15485/naval-doesn-t-take-notes">reading to
+maximize your exposure to ideas</a>).</p>
+<p>Instead, books about programming (or any other subject) should be
+thought of as tools you can use as part of your learning process. Just
+reading a book won’t help you any more than thoroughly learning the
+details of a hammer will. You have to actually hit things with it.</p>
+
 </section>
 
     </article>

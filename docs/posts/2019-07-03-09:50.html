@@ -17,6 +17,7 @@ DRMacIver's Notebook: Separating Sampling and Removal
 
     <meta property="og:creator" content="@DRMacIver">
 
+    <link rel="stylesheet" href="/pandoc.css"/>
     <link rel="stylesheet" href="/pygments.css"/>
     <link rel="stylesheet" href="/tufte.css"/>
     <link rel="stylesheet" href="/latex.css"/>
@@ -73,99 +74,118 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
 <dd class="post-date">2019-07-03</dd>
 </dl>
 
-<p>This is a weird data structure that as far as I know I invented (it's plausibly a reinvention, but it might also just be too niche a set of requirements for anyone else to have bothered with) and I quite like.
-It uses a combination of two neat tricks to support all the following operations in O(1):</p>
+<p>This is a weird data structure that as far as I know I invented (it’s
+plausibly a reinvention, but it might also just be too niche a set of
+requirements for anyone else to have bothered with) and I quite like. It
+uses a combination of two neat tricks to support all the following
+operations in O(1):</p>
 <ul>
 <li>Initialize with N elements.</li>
-<li>Sample randomly from one of the remaining elements or raise an error if the collection is empty.</li>
+<li>Sample randomly from one of the remaining elements or raise an error
+if the collection is empty.</li>
 <li>Remove a single copy of a value from the collection.</li>
 </ul>
-<p>It does assume that the values in the collection are hashable, but honestly I've only ever wanted to use it with integers.</p>
+<p>It does assume that the values in the collection are hashable, but
+honestly I’ve only ever wanted to use it with integers.</p>
 <p>It builds on the following trick:</p>
-<div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">LazySequenceCopy</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
-    <span class="sd">"""A "copy" of a sequence that works by inserting a mask in front</span>
-<span class="sd">    of the underlying sequence, so that you can mutate it without changing</span>
-<span class="sd">    the underlying sequence. Effectively behaves as if you could do list(x)</span>
-<span class="sd">    in O(1) time. The full list API is not supported yet but there's no reason</span>
-<span class="sd">    in principle it couldn't be."""</span>
-
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">values</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">__values</span> <span class="o">=</span> <span class="n">values</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">__len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">__mask</span> <span class="o">=</span> <span class="kc">None</span>
-
-    <span class="k">def</span> <span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__len</span>
-
-    <span class="k">def</span> <span class="nf">pop</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="ne">IndexError</span><span class="p">(</span><span class="s2">"Cannot pop from empty list"</span><span class="p">)</span>
-        <span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">__len</span> <span class="o">-=</span> <span class="mi">1</span>
-        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__mask</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">__mask</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__len</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">result</span>
-
-    <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
-        <span class="n">i</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__check_index</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-        <span class="n">default</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__values</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__mask</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-            <span class="k">return</span> <span class="n">default</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__mask</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">default</span><span class="p">)</span>
-
-    <span class="k">def</span> <span class="fm">__setitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">v</span><span class="p">):</span>
-        <span class="n">i</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__check_index</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__mask</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">__mask</span> <span class="o">=</span> <span class="p">{}</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">__mask</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span>
-
-    <span class="k">def</span> <span class="nf">__check_index</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
-        <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
-        <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="o">-</span><span class="n">n</span> <span class="ow">or</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="n">n</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="ne">IndexError</span><span class="p">(</span><span class="s2">"Index </span><span class="si">%d</span><span class="s2"> out of range [0, </span><span class="si">%d</span><span class="s2">)"</span> <span class="o">%</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">n</span><span class="p">))</span>
-        <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
-            <span class="n">i</span> <span class="o">+=</span> <span class="n">n</span>
-        <span class="k">assert</span> <span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span>
-        <span class="k">return</span> <span class="n">i</span>
-</pre></div>
-<p>This allows us to make a copy of the initial sequence without actually copying it.</p>
-<p>Now if we wanted to do sampling without replacement it's easy: We can just do a lazy fisher yates shuffle:</p>
-<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">sample_without_replacement</span><span class="p">(</span><span class="n">random</span><span class="p">,</span> <span class="n">sequence</span><span class="p">):</span>
-    <span class="n">i</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">sequence</span><span class="p">))</span>
-    <span class="n">j</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">sequence</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
-    <span class="n">sequence</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">sequence</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">sequence</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="n">sequence</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-    <span class="k">return</span> <span class="n">sequence</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
-</pre></div>
-<p>We pick a random element, swap it to the end, and then pop the last element. This lets us randomly sample and then remove in O(1) because we don't care about preserving the order of the sequence.</p>
-<p>The tricky bit is what to do when you want to sample and then decide later whether you want to remove the value or not. I e.g. run into this requirement when randomly but exhaustively exploring a state space - sometimes we discover that a node is fully explored and we want to remove it, but we can't know that at the time of sampling.</p>
-<p>The idea is to do deferred deletion. Rather than attempting to actually delete it at the time of deletion, we simply record that we wanted to delete it, and the next time we sample we remove any elements we encounter.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a aria-hidden="true" href="#cb1-1" tabindex="-1"></a></span>
+<span id="cb1-2"><a aria-hidden="true" href="#cb1-2" tabindex="-1"></a><span class="kw">class</span> LazySequenceCopy(<span class="bu">object</span>):</span>
+<span id="cb1-3"><a aria-hidden="true" href="#cb1-3" tabindex="-1"></a>    <span class="co">"""A "copy" of a sequence that works by inserting a mask in front</span></span>
+<span id="cb1-4"><a aria-hidden="true" href="#cb1-4" tabindex="-1"></a><span class="co">    of the underlying sequence, so that you can mutate it without changing</span></span>
+<span id="cb1-5"><a aria-hidden="true" href="#cb1-5" tabindex="-1"></a><span class="co">    the underlying sequence. Effectively behaves as if you could do list(x)</span></span>
+<span id="cb1-6"><a aria-hidden="true" href="#cb1-6" tabindex="-1"></a><span class="co">    in O(1) time. The full list API is not supported yet but there's no reason</span></span>
+<span id="cb1-7"><a aria-hidden="true" href="#cb1-7" tabindex="-1"></a><span class="co">    in principle it couldn't be."""</span></span>
+<span id="cb1-8"><a aria-hidden="true" href="#cb1-8" tabindex="-1"></a></span>
+<span id="cb1-9"><a aria-hidden="true" href="#cb1-9" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, values):</span>
+<span id="cb1-10"><a aria-hidden="true" href="#cb1-10" tabindex="-1"></a>        <span class="va">self</span>.__values <span class="op">=</span> values</span>
+<span id="cb1-11"><a aria-hidden="true" href="#cb1-11" tabindex="-1"></a>        <span class="va">self</span>.__len <span class="op">=</span> <span class="bu">len</span>(values)</span>
+<span id="cb1-12"><a aria-hidden="true" href="#cb1-12" tabindex="-1"></a>        <span class="va">self</span>.__mask <span class="op">=</span> <span class="va">None</span></span>
+<span id="cb1-13"><a aria-hidden="true" href="#cb1-13" tabindex="-1"></a></span>
+<span id="cb1-14"><a aria-hidden="true" href="#cb1-14" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__len__</span>(<span class="va">self</span>):</span>
+<span id="cb1-15"><a aria-hidden="true" href="#cb1-15" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">self</span>.__len</span>
+<span id="cb1-16"><a aria-hidden="true" href="#cb1-16" tabindex="-1"></a></span>
+<span id="cb1-17"><a aria-hidden="true" href="#cb1-17" tabindex="-1"></a>    <span class="kw">def</span> pop(<span class="va">self</span>):</span>
+<span id="cb1-18"><a aria-hidden="true" href="#cb1-18" tabindex="-1"></a>        <span class="cf">if</span> <span class="bu">len</span>(<span class="va">self</span>) <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb1-19"><a aria-hidden="true" href="#cb1-19" tabindex="-1"></a>            <span class="cf">raise</span> <span class="pp">IndexError</span>(<span class="st">"Cannot pop from empty list"</span>)</span>
+<span id="cb1-20"><a aria-hidden="true" href="#cb1-20" tabindex="-1"></a>        result <span class="op">=</span> <span class="va">self</span>[<span class="op">-</span><span class="dv">1</span>]</span>
+<span id="cb1-21"><a aria-hidden="true" href="#cb1-21" tabindex="-1"></a>        <span class="va">self</span>.__len <span class="op">-=</span> <span class="dv">1</span></span>
+<span id="cb1-22"><a aria-hidden="true" href="#cb1-22" tabindex="-1"></a>        <span class="cf">if</span> <span class="va">self</span>.__mask <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</span>
+<span id="cb1-23"><a aria-hidden="true" href="#cb1-23" tabindex="-1"></a>            <span class="va">self</span>.__mask.pop(<span class="va">self</span>.__len, <span class="va">None</span>)</span>
+<span id="cb1-24"><a aria-hidden="true" href="#cb1-24" tabindex="-1"></a>        <span class="cf">return</span> result</span>
+<span id="cb1-25"><a aria-hidden="true" href="#cb1-25" tabindex="-1"></a></span>
+<span id="cb1-26"><a aria-hidden="true" href="#cb1-26" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__getitem__</span>(<span class="va">self</span>, i):</span>
+<span id="cb1-27"><a aria-hidden="true" href="#cb1-27" tabindex="-1"></a>        i <span class="op">=</span> <span class="va">self</span>.__check_index(i)</span>
+<span id="cb1-28"><a aria-hidden="true" href="#cb1-28" tabindex="-1"></a>        default <span class="op">=</span> <span class="va">self</span>.__values[i]</span>
+<span id="cb1-29"><a aria-hidden="true" href="#cb1-29" tabindex="-1"></a>        <span class="cf">if</span> <span class="va">self</span>.__mask <span class="kw">is</span> <span class="va">None</span>:</span>
+<span id="cb1-30"><a aria-hidden="true" href="#cb1-30" tabindex="-1"></a>            <span class="cf">return</span> default</span>
+<span id="cb1-31"><a aria-hidden="true" href="#cb1-31" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb1-32"><a aria-hidden="true" href="#cb1-32" tabindex="-1"></a>            <span class="cf">return</span> <span class="va">self</span>.__mask.get(i, default)</span>
+<span id="cb1-33"><a aria-hidden="true" href="#cb1-33" tabindex="-1"></a></span>
+<span id="cb1-34"><a aria-hidden="true" href="#cb1-34" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__setitem__</span>(<span class="va">self</span>, i, v):</span>
+<span id="cb1-35"><a aria-hidden="true" href="#cb1-35" tabindex="-1"></a>        i <span class="op">=</span> <span class="va">self</span>.__check_index(i)</span>
+<span id="cb1-36"><a aria-hidden="true" href="#cb1-36" tabindex="-1"></a>        <span class="cf">if</span> <span class="va">self</span>.__mask <span class="kw">is</span> <span class="va">None</span>:</span>
+<span id="cb1-37"><a aria-hidden="true" href="#cb1-37" tabindex="-1"></a>            <span class="va">self</span>.__mask <span class="op">=</span> {}</span>
+<span id="cb1-38"><a aria-hidden="true" href="#cb1-38" tabindex="-1"></a>        <span class="va">self</span>.__mask[i] <span class="op">=</span> v</span>
+<span id="cb1-39"><a aria-hidden="true" href="#cb1-39" tabindex="-1"></a></span>
+<span id="cb1-40"><a aria-hidden="true" href="#cb1-40" tabindex="-1"></a>    <span class="kw">def</span> __check_index(<span class="va">self</span>, i):</span>
+<span id="cb1-41"><a aria-hidden="true" href="#cb1-41" tabindex="-1"></a>        n <span class="op">=</span> <span class="bu">len</span>(<span class="va">self</span>)</span>
+<span id="cb1-42"><a aria-hidden="true" href="#cb1-42" tabindex="-1"></a>        <span class="cf">if</span> i <span class="op">&lt;</span> <span class="op">-</span>n <span class="kw">or</span> i <span class="op">&gt;=</span> n:</span>
+<span id="cb1-43"><a aria-hidden="true" href="#cb1-43" tabindex="-1"></a>            <span class="cf">raise</span> <span class="pp">IndexError</span>(<span class="st">"Index </span><span class="sc">%d</span><span class="st"> out of range [0, </span><span class="sc">%d</span><span class="st">)"</span> <span class="op">%</span> (i, n))</span>
+<span id="cb1-44"><a aria-hidden="true" href="#cb1-44" tabindex="-1"></a>        <span class="cf">if</span> i <span class="op">&lt;</span> <span class="dv">0</span>:</span>
+<span id="cb1-45"><a aria-hidden="true" href="#cb1-45" tabindex="-1"></a>            i <span class="op">+=</span> n</span>
+<span id="cb1-46"><a aria-hidden="true" href="#cb1-46" tabindex="-1"></a>        <span class="cf">assert</span> <span class="dv">0</span> <span class="op">&lt;=</span> i <span class="op">&lt;</span> n</span>
+<span id="cb1-47"><a aria-hidden="true" href="#cb1-47" tabindex="-1"></a>        <span class="cf">return</span> i</span></code></pre></div>
+<p>This allows us to make a copy of the initial sequence without
+actually copying it.</p>
+<p>Now if we wanted to do sampling without replacement it’s easy: We can
+just do a lazy fisher yates shuffle:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a aria-hidden="true" href="#cb2-1" tabindex="-1"></a><span class="kw">def</span> sample_without_replacement(random, sequence):</span>
+<span id="cb2-2"><a aria-hidden="true" href="#cb2-2" tabindex="-1"></a>    i <span class="op">=</span> random.randrange(<span class="dv">0</span>, <span class="bu">len</span>(sequence))</span>
+<span id="cb2-3"><a aria-hidden="true" href="#cb2-3" tabindex="-1"></a>    j <span class="op">=</span> <span class="bu">len</span>(sequence) <span class="op">-</span> <span class="dv">1</span></span>
+<span id="cb2-4"><a aria-hidden="true" href="#cb2-4" tabindex="-1"></a>    sequence[i], sequence[j] <span class="op">=</span> sequence[j], sequence[i]</span>
+<span id="cb2-5"><a aria-hidden="true" href="#cb2-5" tabindex="-1"></a>    <span class="cf">return</span> sequence.pop()</span></code></pre></div>
+<p>We pick a random element, swap it to the end, and then pop the last
+element. This lets us randomly sample and then remove in O(1) because we
+don’t care about preserving the order of the sequence.</p>
+<p>The tricky bit is what to do when you want to sample and then decide
+later whether you want to remove the value or not. I e.g. run into this
+requirement when randomly but exhaustively exploring a state space -
+sometimes we discover that a node is fully explored and we want to
+remove it, but we can’t know that at the time of sampling.</p>
+<p>The idea is to do deferred deletion. Rather than attempting to
+actually delete it at the time of deletion, we simply record that we
+wanted to delete it, and the next time we sample we remove any elements
+we encounter.</p>
 <p>This works as follows:</p>
-<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Counter</span>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a aria-hidden="true" href="#cb3-1" tabindex="-1"></a><span class="im">from</span> collections <span class="im">import</span> Counter</span>
+<span id="cb3-2"><a aria-hidden="true" href="#cb3-2" tabindex="-1"></a></span>
+<span id="cb3-3"><a aria-hidden="true" href="#cb3-3" tabindex="-1"></a><span class="kw">class</span> RemovableSampler(<span class="bu">object</span>):</span>
+<span id="cb3-4"><a aria-hidden="true" href="#cb3-4" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, values):</span>
+<span id="cb3-5"><a aria-hidden="true" href="#cb3-5" tabindex="-1"></a>        <span class="va">self</span>.__values <span class="op">=</span> LazySequenceCopy(values)</span>
+<span id="cb3-6"><a aria-hidden="true" href="#cb3-6" tabindex="-1"></a>        <span class="va">self</span>.__deletions <span class="op">=</span> Counter()</span>
+<span id="cb3-7"><a aria-hidden="true" href="#cb3-7" tabindex="-1"></a></span>
+<span id="cb3-8"><a aria-hidden="true" href="#cb3-8" tabindex="-1"></a>    <span class="kw">def</span> sample(<span class="va">self</span>, random):</span>
+<span id="cb3-9"><a aria-hidden="true" href="#cb3-9" tabindex="-1"></a>        <span class="cf">while</span> <span class="va">True</span>:</span>
+<span id="cb3-10"><a aria-hidden="true" href="#cb3-10" tabindex="-1"></a>            i <span class="op">=</span> random.randrange(<span class="dv">0</span>, <span class="bu">len</span>(<span class="va">self</span>.values))</span>
+<span id="cb3-11"><a aria-hidden="true" href="#cb3-11" tabindex="-1"></a>            v <span class="op">=</span> <span class="va">self</span>.values[i]</span>
+<span id="cb3-12"><a aria-hidden="true" href="#cb3-12" tabindex="-1"></a>            <span class="cf">if</span> <span class="va">self</span>.__deletions[v] <span class="op">&gt;</span> <span class="dv">0</span>:</span>
+<span id="cb3-13"><a aria-hidden="true" href="#cb3-13" tabindex="-1"></a>                j <span class="op">=</span> <span class="bu">len</span>(sequence) <span class="op">-</span> <span class="dv">1</span></span>
+<span id="cb3-14"><a aria-hidden="true" href="#cb3-14" tabindex="-1"></a>                sequence[i], sequence[j] <span class="op">=</span> sequence[j], sequence[i]</span>
+<span id="cb3-15"><a aria-hidden="true" href="#cb3-15" tabindex="-1"></a>                sequence.pop()</span>
+<span id="cb3-16"><a aria-hidden="true" href="#cb3-16" tabindex="-1"></a>                <span class="va">self</span>.__deletions[v] <span class="op">-=</span> <span class="dv">1</span></span>
+<span id="cb3-17"><a aria-hidden="true" href="#cb3-17" tabindex="-1"></a>            <span class="cf">else</span>:</span>
+<span id="cb3-18"><a aria-hidden="true" href="#cb3-18" tabindex="-1"></a>                <span class="cf">return</span> v</span>
+<span id="cb3-19"><a aria-hidden="true" href="#cb3-19" tabindex="-1"></a></span>
+<span id="cb3-20"><a aria-hidden="true" href="#cb3-20" tabindex="-1"></a>    <span class="kw">def</span> delete(<span class="va">self</span>, value):</span>
+<span id="cb3-21"><a aria-hidden="true" href="#cb3-21" tabindex="-1"></a>        <span class="va">self</span>.__deletions[value] <span class="op">+=</span> <span class="dv">1</span></span></code></pre></div>
+<p>i.e. we reuse the procedure from the lazy fisher yates shuffle but we
+only remove if we’re <em>not</em> going to return the value because
+we’ve previously deleted it.</p>
+<p>We can see that this is ammortized O(1) by using a “debt” model. Each
+call to delete increases the total debt by one, and each iteration of
+sample either returns or repays one debt, so the total cost done is
+never more than O(deletes + samples).</p>
 
-<span class="k">class</span> <span class="nc">RemovableSampler</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">values</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">__values</span> <span class="o">=</span> <span class="n">LazySequenceCopy</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">__deletions</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">()</span>
-
-    <span class="k">def</span> <span class="nf">sample</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">random</span><span class="p">):</span>
-        <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-            <span class="n">i</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">values</span><span class="p">))</span>
-            <span class="n">v</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__deletions</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-                <span class="n">j</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">sequence</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
-                <span class="n">sequence</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">sequence</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">sequence</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="n">sequence</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-                <span class="n">sequence</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
-                <span class="bp">self</span><span class="o">.</span><span class="n">__deletions</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">-=</span> <span class="mi">1</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="k">return</span> <span class="n">v</span>
-
-    <span class="k">def</span> <span class="nf">delete</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">__deletions</span><span class="p">[</span><span class="n">value</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
-</pre></div>
-<p>i.e. we reuse the procedure from the lazy fisher yates shuffle but we only remove if we're <em>not</em> going to return the value because we've previously deleted it.</p>
-<p>We can see that this is ammortized O(1) by using a "debt" model. Each call to delete increases the total debt by one, and each iteration of sample either returns or repays one debt,
-so the total cost done is never more than O(deletes + samples).</p>
 </section>
 
     </article>

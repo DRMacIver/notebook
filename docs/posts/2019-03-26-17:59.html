@@ -17,6 +17,7 @@ DRMacIver's Notebook: Boltzmann Samplers for Consistent Epistemic Actors
 
     <meta property="og:creator" content="@DRMacIver">
 
+    <link rel="stylesheet" href="/pandoc.css"/>
     <link rel="stylesheet" href="/pygments.css"/>
     <link rel="stylesheet" href="/tufte.css"/>
     <link rel="stylesheet" href="/latex.css"/>
@@ -74,45 +75,76 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
 </dl>
 
 <p>(This post will make little sense to you)</p>
-<p>A question I have been wondering in relation to judgement aggregation is how we should be measuring reliability on sets of connected proposition.</p>
-<p>Suppose we have \(C = A \wedge B\), with the true state of the world being that \(A\) and \(B\) are both true,
-If we choose \(A\) and \(B\) independently with probability \(p\) then we conclude \(C\) with probability \(p^2\).
-This leads to the result that a majority can be right about each of \(A\) and \(B\) but wrong about \(C = A \wedge B\) if \(0.5 &lt; p &lt; 0.5^{0.5} \approx 0.71\).</p>
-<p>But what if the problem here is that we have a bad measure of reliability? Judges with \(p &gt; 0.50\) is enough to get the right answer on each of \(A\) and \(B\), but as most of the time they get the wrong conclusion they're clearly not a very good judge.
-Certainly it would be <em>nice</em> to be able to assemble unreliable actors into reliable parts, but it's hard to do that if we don't know what reliability looks like.</p>
-<p>Suppose we measured the reliability of a judge on a set of propositions with the expected fraction they got right.
-For independent propositions this is just \(p\) as above, but if we add \(C\) into the set then the reliability is \(r(p) = \frac{2p + p^2}{3}\).
-Some basic calculation (for which I used sympy) shows us that if \(p &gt; 0.582\) then \(r(p) &gt; 0.5\),
-and that the when \(P(C) = 0.5\), \(r(p) \approx 0.64\).
-So under this notion of reliability we can still have that a "reliable" judge will get \(C\) wrong most of the time.</p>
-<p>What if the problem is now our generative model? Why are we picking \(A\) and \(B\) independently rather than considering \(C\)?
-Suppose we want to consider a maximally uninformative distribution of possible beliefs given a fixed reliability, what should we do?</p>
+<p>A question I have been wondering in relation to judgement aggregation
+is how we should be measuring reliability on sets of connected
+proposition.</p>
+<p>Suppose we have <span class="math inline">\(C = A \wedge B\)</span>,
+with the true state of the world being that <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are both true, If we choose <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> independently with probability <span class="math inline">\(p\)</span> then we conclude <span class="math inline">\(C\)</span> with probability <span class="math inline">\(p^2\)</span>. This leads to the result that a
+majority can be right about each of <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> but wrong about <span class="math inline">\(C = A \wedge B\)</span> if <span class="math inline">\(0.5 &lt; p &lt; 0.5^{0.5} \approx
+0.71\)</span>.</p>
+<p>But what if the problem here is that we have a bad measure of
+reliability? Judges with <span class="math inline">\(p &gt;
+0.50\)</span> is enough to get the right answer on each of <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>, but as most of the time they get the
+wrong conclusion they’re clearly not a very good judge. Certainly it
+would be <em>nice</em> to be able to assemble unreliable actors into
+reliable parts, but it’s hard to do that if we don’t know what
+reliability looks like.</p>
+<p>Suppose we measured the reliability of a judge on a set of
+propositions with the expected fraction they got right. For independent
+propositions this is just <span class="math inline">\(p\)</span> as
+above, but if we add <span class="math inline">\(C\)</span> into the set
+then the reliability is <span class="math inline">\(r(p) = \frac{2p +
+p^2}{3}\)</span>. Some basic calculation (for which I used sympy) shows
+us that if <span class="math inline">\(p &gt; 0.582\)</span> then <span class="math inline">\(r(p) &gt; 0.5\)</span>, and that the when <span class="math inline">\(P(C) = 0.5\)</span>, <span class="math inline">\(r(p) \approx 0.64\)</span>. So under this notion
+of reliability we can still have that a “reliable” judge will get <span class="math inline">\(C\)</span> wrong most of the time.</p>
+<p>What if the problem is now our generative model? Why are we picking
+<span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> independently rather than considering
+<span class="math inline">\(C\)</span>? Suppose we want to consider a
+maximally uninformative distribution of possible beliefs given a fixed
+reliability, what should we do?</p>
 <p>Well, this is a <em>Boltzmann sampler</em>.</p>
-<p>If size is number of true propositions believed, the Boltzmann generating function for this problem is \(B(x) = 1 + 2x + x^3\),
-so the expected size of a Boltzmann sampler is \(E(x) = x \frac{B'(x)}{B(x)} = \frac{2x^2 + 3x^3}{1 + 2x + x^3}\).
-This has a reliability of \(0.5\) for \(x \approx 1.21\).
-At this value of \(x\) we have \(P(C) = \frac{x^3}{B(x) \approx 0.35\).
-We have \(P(C) = 0.5\) for \(x \approx 1.62\), which corresponds to a reliability of \(\approx 0.63\).
-This is only a slightly lower reliability than in the model where we chose \(A\) and \(B\) independently.</p>
-<p>Now, suppose we take into account the logic structure of the propositions in our voting as follows:
-For each voter we define the <em>distance</em> of their beliefs to the chosen outcome,
-and we choose the consistent set of beliefs that minimizes the total distance to each voter's belief.
-(You could think of this as analogous to the Kemeny-Young rule)
-What outcome does this give us?</p>
-<p>Well, we can calculate the expected distance of each possible outcome.
-The possible outcomes are \(v_1 = \neg A \wedge \neg B \wedge \neg C, v2 = A \wedge \neg B \wedge \neg C, v3 = \neg A \wedge B \wedge \neg C, v4 = A \wedge B \wedge C\).</p>
-<p>Discounting the \(B(x)\) factor, we get expected scores proportional to:</p>
+<p>If size is number of true propositions believed, the Boltzmann
+generating function for this problem is <span class="math inline">\(B(x)
+= 1 + 2x + x^3\)</span>, so the expected size of a Boltzmann sampler is
+<span class="math inline">\(E(x) = x \frac{B'(x)}{B(x)} = \frac{2x^2
++ 3x^3}{1 + 2x + x^3}\)</span>. This has a reliability of <span class="math inline">\(0.5\)</span> for <span class="math inline">\(x
+\approx 1.21\)</span>. At this value of <span class="math inline">\(x\)</span> we have <span class="math inline">\(P(C) = \frac{x^3}{B(x) \approx 0.35\)</span>. We
+have <span class="math inline">\(P(C) = 0.5\)</span> for <span class="math inline">\(x \approx 1.62\)</span>, which corresponds to a
+reliability of <span class="math inline">\(\approx 0.63\)</span>. This
+is only a slightly lower reliability than in the model where we chose
+<span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> independently.</p>
+<p>Now, suppose we take into account the logic structure of the
+propositions in our voting as follows: For each voter we define the
+<em>distance</em> of their beliefs to the chosen outcome, and we choose
+the consistent set of beliefs that minimizes the total distance to each
+voter’s belief. (You could think of this as analogous to the
+Kemeny-Young rule) What outcome does this give us?</p>
+<p>Well, we can calculate the expected distance of each possible
+outcome. The possible outcomes are <span class="math inline">\(v_1 =
+\neg A \wedge \neg B \wedge \neg C, v2 = A \wedge \neg B \wedge \neg C,
+v3 = \neg A \wedge B \wedge \neg C, v4 = A \wedge B \wedge
+C\)</span>.</p>
+<p>Discounting the <span class="math inline">\(B(x)\)</span> factor, we
+get expected scores proportional to:</p>
 <ul>
-<li>\(S_1 = 2 x + 3 x^3\)</li>
-<li>\(S_2 = S_3 = 1 + 3x + 2 x^3\)</li>
-<li>\(S_4 = 3 + 4 x \)</li>
+<li><span class="math inline">\(S_1 = 2 x + 3 x^3\)</span></li>
+<li><span class="math inline">\(S_2 = S_3 = 1 + 3x + 2 x^3\)</span></li>
+<li>$S_4 = 3 + 4 x $</li>
 </ul>
-<p>We have \(S_4 \leq \max(S_1, S_2, S_3)\) for \(x \geq 1.29\),
-which corresponds to a reliability of \(\approx 0.525\).
-This is <em>much</em> lower than the reliability we required to get the majority of people believing in \(C\) under any model where we voted on the propositions independently.
-Because we knew the logical structure of the problem space, we could take advantage of that to combine the independent support for \(A\) and \(B\) into support for \(C\).</p>
-<p>One of the debates in judgement aggregation is about how to do this without dividing the set of propositions up into premises and conclusions, and this does that pretty well.
-My suspicion is this sort of agreement maximisation will tend to produce relatively high reliability results from relatively low reliability inputs.</p>
+<p>We have <span class="math inline">\(S_4 \leq \max(S_1, S_2,
+S_3)\)</span> for <span class="math inline">\(x \geq 1.29\)</span>,
+which corresponds to a reliability of <span class="math inline">\(\approx 0.525\)</span>. This is <em>much</em>
+lower than the reliability we required to get the majority of people
+believing in <span class="math inline">\(C\)</span> under any model
+where we voted on the propositions independently. Because we knew the
+logical structure of the problem space, we could take advantage of that
+to combine the independent support for <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> into support for <span class="math inline">\(C\)</span>.</p>
+<p>One of the debates in judgement aggregation is about how to do this
+without dividing the set of propositions up into premises and
+conclusions, and this does that pretty well. My suspicion is this sort
+of agreement maximisation will tend to produce relatively high
+reliability results from relatively low reliability inputs.</p>
+
 </section>
 
     </article>

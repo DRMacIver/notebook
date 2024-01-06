@@ -17,6 +17,7 @@ DRMacIver's Notebook: Notes on Blocking Sets
 
     <meta property="og:creator" content="@DRMacIver">
 
+    <link rel="stylesheet" href="/pandoc.css"/>
     <link rel="stylesheet" href="/pygments.css"/>
     <link rel="stylesheet" href="/tufte.css"/>
     <link rel="stylesheet" href="/latex.css"/>
@@ -73,27 +74,44 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
 <dd class="post-date">2018-10-31</dd>
 </dl>
 
-<p>Here's some stuff I'm playing with related to some problems in the combinatorics of test case reduction.</p>
-<p>Let \(X = \{1, \ldots, n\}\).</p>
-<p>Let \(S \subseteq X\) and \(\pi\) be a permutation of \(X\). Say \(S\) <em>starts</em> \(\pi\) if \(S = \{\pi_1, \ldots, \pi_{|S|}\}\).</p>
-<p>Let \(B \subseteq \mathcal{P}(X)\). Say \(B\) blocks \(\pi\) if \(S\) starts \(\pi\) for some \(S \in B\).
-If \(B\) blocks every possible \(\pi\), say it is blocking.</p>
-<p>Lemma: Suppose \(B\) is a blocking set such that \(k \leq |U| \leq n - k\) for all \(U \in B\). Then \(|B| \geq n\choose{k}\),
-and this bound is tight.</p>
+<p>Here’s some stuff I’m playing with related to some problems in the
+combinatorics of test case reduction.</p>
+<p>Let <span class="math inline">\(X = \{1, \ldots, n\}\)</span>.</p>
+<p>Let <span class="math inline">\(S \subseteq X\)</span> and <span class="math inline">\(\pi\)</span> be a permutation of <span class="math inline">\(X\)</span>. Say <span class="math inline">\(S\)</span> <em>starts</em> <span class="math inline">\(\pi\)</span> if <span class="math inline">\(S =
+\{\pi_1, \ldots, \pi_{|S|}\}\)</span>.</p>
+<p>Let <span class="math inline">\(B \subseteq \mathcal{P}(X)\)</span>.
+Say <span class="math inline">\(B\)</span> blocks <span class="math inline">\(\pi\)</span> if <span class="math inline">\(S\)</span> starts <span class="math inline">\(\pi\)</span> for some <span class="math inline">\(S \in B\)</span>. If <span class="math inline">\(B\)</span> blocks every possible <span class="math inline">\(\pi\)</span>, say it is blocking.</p>
+<p>Lemma: Suppose <span class="math inline">\(B\)</span> is a blocking
+set such that <span class="math inline">\(k \leq |U| \leq n - k\)</span>
+for all <span class="math inline">\(U \in B\)</span>. Then <span class="math inline">\(|B| \geq n\choose{k}\)</span>, and this bound is
+tight.</p>
 <p>Proof:</p>
-<p>To see that the bound must be tight note that the we can choose the set of all subsets of \(X\) of size \(k\),
-and this is a blocking set of the desired size.</p>
-<p>Suppose now that \(|B| &lt;  n\choose{k}\). Pick a permutation \(\pi\) uniformly at random. For each \(k\), \(\pi\) starts with each subset of \(X\) of size \(k\) with equal probability.
-Thus for any given subset of size \(k\) the probability that \(\pi\) starts with it is \(\frac{1}{n\choose{k}}\).
-Thus the expected number of sets in \(B\) that start \(\pi\) is \(\sum\limits_{U \in B} \frac{1}{n\choose{|U|}} \leq \frac{|B|}{n\choose{k}} &lt; 1\).</p>
-<p>If the expected number of sets that start \(\pi\) is less than one, then the probability of it being equal to zero must be non-zero. In particular,
-there is some \(\pi\) that does not start with any of these sets, and thus is not blocked by \(B\). Therefore \(B\) is not blocking.</p>
+<p>To see that the bound must be tight note that the we can choose the
+set of all subsets of <span class="math inline">\(X\)</span> of size
+<span class="math inline">\(k\)</span>, and this is a blocking set of
+the desired size.</p>
+<p>Suppose now that <span class="math inline">\(|B|
+&lt;  n\choose{k}\)</span>. Pick a permutation <span class="math inline">\(\pi\)</span> uniformly at random. For each <span class="math inline">\(k\)</span>, <span class="math inline">\(\pi\)</span> starts with each subset of <span class="math inline">\(X\)</span> of size <span class="math inline">\(k\)</span> with equal probability. Thus for any
+given subset of size <span class="math inline">\(k\)</span> the
+probability that <span class="math inline">\(\pi\)</span> starts with it
+is <span class="math inline">\(\frac{1}{n\choose{k}}\)</span>. Thus the
+expected number of sets in <span class="math inline">\(B\)</span> that
+start <span class="math inline">\(\pi\)</span> is <span class="math inline">\(\sum\limits_{U \in B} \frac{1}{n\choose{|U|}} \leq
+\frac{|B|}{n\choose{k}} &lt; 1\)</span>.</p>
+<p>If the expected number of sets that start <span class="math inline">\(\pi\)</span> is less than one, then the
+probability of it being equal to zero must be non-zero. In particular,
+there is some <span class="math inline">\(\pi\)</span> that does not
+start with any of these sets, and thus is not blocked by <span class="math inline">\(B\)</span>. Therefore <span class="math inline">\(B\)</span> is not blocking.</p>
 <p>QED</p>
-<p>The question I'm really interested in is the following:</p>
-<p>Say \(S\) is a critical set for \(B\) if \(B\) is non-blocking but \(B \cup \{S\}\) is blocking.</p>
-<p>Suppose \(B\) is some non-blocking set such that \(|U| \geq 2\) for all \(U \in B\), and suppose that \(B\) has a critical set of size \(2\).
-How small can \(B\) be?</p>
-<p>I believe the answer is that it most have at least \({n - 1}\choose{2}\) elements, but I keep failing to pin down the details.</p>
+<p>The question I’m really interested in is the following:</p>
+<p>Say <span class="math inline">\(S\)</span> is a critical set for
+<span class="math inline">\(B\)</span> if <span class="math inline">\(B\)</span> is non-blocking but <span class="math inline">\(B \cup \{S\}\)</span> is blocking.</p>
+<p>Suppose <span class="math inline">\(B\)</span> is some non-blocking
+set such that <span class="math inline">\(|U| \geq 2\)</span> for all
+<span class="math inline">\(U \in B\)</span>, and suppose that <span class="math inline">\(B\)</span> has a critical set of size <span class="math inline">\(2\)</span>. How small can <span class="math inline">\(B\)</span> be?</p>
+<p>I believe the answer is that it most have at least <span class="math inline">\({n - 1}\choose{2}\)</span> elements, but I keep
+failing to pin down the details.</p>
+
 </section>
 
     </article>
