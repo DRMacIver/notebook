@@ -882,7 +882,7 @@ def md(text, use_pandoc=True):
         text = text.replace('\\)', '$')
 
         return subprocess.check_output([
-            'pandoc', '--from=markdown', '--to=html',
+            'pandoc', '--from=markdown+inline_notes', '--to=html',
             '--mathjax=https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML'
         ], input=text, universal_newlines=True)
     else:
