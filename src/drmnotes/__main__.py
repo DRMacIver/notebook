@@ -26,6 +26,9 @@ from prompt_toolkit.shortcuts import radiolist_dialog
 import csv
 from tqdm import tqdm
 from copy import copy
+import inspect
+import hashlib
+
 
 _DATABASE = None
 
@@ -57,11 +60,15 @@ def json_cached(f):
 def cached(f):
     name = f.__name__
 
+    key_base = hashlib.sha1()
+
+    source_hash = hashlib.sha1(inspect.getsource(f).encode('utf-8')).hexdigest()
+
     cache = {}
 
     @functools.wraps(f)
     def accept(*args):
-        key = cache_key(":".join(args))
+        key = cache_key(source_hash + '/' + ":".join(args))
 
         try:
             return cache[key]
@@ -155,6 +162,9 @@ CACHE_DIR = os.path.join(ROOT, ".cache")
 
 
 TEMPLATES = os.path.join(ROOT, "templates")
+
+TEMPLATES_HASH = None
+
 POSTS = os.path.join(ROOT, "posts")
 
 HTML_ROOT = os.path.join(ROOT, "docs")
@@ -1040,7 +1050,7 @@ def template_cache_key():
     global __template_cache_key
     if __template_cache_key is None:
         hasher = hashlib.sha1()
-        for f in sorted(glob(os.path.join(TEMPLATES, ".html"))):
+        for f in sorted(glob(os.path.join(TEMPLATES, "*.html"))):
             with open(f, "rb") as i:
                 hasher.update(i.read())
         __template_cache_key = hasher.hexdigest()
@@ -1129,7 +1139,9 @@ def do_build(rebuild=False, full=True, name=""):
     except FileExistsError:
         pass
 
-    for name in tqdm(post_names()):
+    template_age = max(os.path.getmtime(t) for t in glob(os.path.join(TEMPLATES, '*.html')))
+
+    for name in tqdm(post_names(), desc='Building posts'):
         source = os.path.join(POSTS, name + ".md")
         if not name.startswith(only):
             continue
@@ -1139,6 +1151,7 @@ def do_build(rebuild=False, full=True, name=""):
         if not (
             rebuild
             or not os.path.exists(dest)
+            or template_age > os.path.getmtime(dest)
             or os.path.getmtime(source) > os.path.getmtime(dest)
         ):
             continue
@@ -1157,7 +1170,7 @@ def do_build(rebuild=False, full=True, name=""):
         if not os.path.exists(source):
             os.unlink(post)
 
-    posts = [post_object(name) for name in tqdm(post_names())]
+    posts = [post_object(name) for name in tqdm(post_names(), desc='Getting post objects')]
 
     posts.sort(key=lambda p: p.name, reverse=True)
 
