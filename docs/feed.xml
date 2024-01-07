@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-01-07T08:50:00+00:00</updated>
+  <updated>2024-01-07T11:03:07+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1947,7 +1947,7 @@ worse.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-07-08:50.html</id>
     <title>How to be better at everything</title>
-    <updated>2024-01-07T08:50:00+00:00</updated>
+    <updated>2024-01-07T11:03:07+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;How to be better at everything&lt;/p&gt;
@@ -2045,8 +2045,9 @@ doing the following:&lt;/p&gt;
 
 
 &lt;ol type="1"&gt;
-&lt;li&gt;Write more tests.&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Ideally, tracking coverage and aiming for 100%
-coverage.&lt;a class="footnote-ref" href="#fn4" id="fnref4" role="doc-noteref"&gt;&lt;sup&gt;4&lt;/sup&gt;&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Write more tests, ideally tracking coverage and aiming for 100%
+coverage.&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;By which I mean 100% coverage with the explicit get-out
+clause that you’re allowed to mark some lines as not covered.&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;Run a linter and fix everything it complains about.&lt;/li&gt;
 &lt;li&gt;Write more comments.&lt;/li&gt;
 &lt;/ol&gt;
@@ -2072,6 +2073,20 @@ good reasons to do something badly.&lt;/p&gt;
 you doing that is, rightly or wrongly, you&lt;label class="margin-toggle sidenote-number" for="fn7"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn7" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Possibly collective-you rather than you-personally if
 it’s a managerial/team thing.&lt;/span&gt;
 don’t want to do the work.&lt;/p&gt;
+
+
+&lt;p&gt;I think this is probably a pretty general theme: Any time you want to
+be better at something, it’s tempting to treat your performance as being
+at the leading edge of your current skill level, but it’s actually not.
+It’s at the leading edge of your current skill level &lt;em&gt;at the level of
+effort you are currently putting in&lt;/em&gt;, and putting in more effort
+will get you better results, and trying to develop more skill without
+increasing your effort level won’t.&lt;/p&gt;
+
+
+&lt;p&gt;We want getting better to be a &lt;a href="https://drmaciver.substack.com/p/difficult-problems-and-hard-weeks"&gt;difficult
+problem&lt;/a&gt;, because that means we can solve it, but in fact getting
+better is more effectively done with hard work.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2024-01-07-08:50.html" rel="alternate"/>
