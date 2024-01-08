@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-01-07T11:03:07+00:00</updated>
+  <updated>2024-01-07T11:06:16+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1947,7 +1947,7 @@ worse.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-07-08:50.html</id>
     <title>How to be better at everything</title>
-    <updated>2024-01-07T11:03:07+00:00</updated>
+    <updated>2024-01-07T11:06:16+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;How to be better at everything&lt;/p&gt;
@@ -2049,18 +2049,22 @@ doing the following:&lt;/p&gt;
 coverage.&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;By which I mean 100% coverage with the explicit get-out
 clause that you’re allowed to mark some lines as not covered.&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;Run a linter and fix everything it complains about.&lt;/li&gt;
-&lt;li&gt;Write more comments.&lt;/li&gt;
+&lt;li&gt;Write more comments.&lt;label class="margin-toggle sidenote-number" for="fn5"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn5" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I’ve got some pushback on this one, and I think it’s
+true that of the three of these, comments are by far the easiest to do
+badly enough to be a net negative, but I think it’s probably on balance
+still better to write comments than not when you’re operating at what
+feels like the edge of your skill level.&lt;/span&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 
-&lt;p&gt;But this seems annoying and fiddly and so you don’t do it.&lt;label class="margin-toggle sidenote-number" for="fn5"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn5" type="checkbox"/&gt;&lt;span class="sidenote"&gt;To be clear, it is annoying and fiddly, and I also often
+&lt;p&gt;But this seems annoying and fiddly and so you don’t do it.&lt;label class="margin-toggle sidenote-number" for="fn6"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn6" type="checkbox"/&gt;&lt;span class="sidenote"&gt;To be clear, it is annoying and fiddly, and I also often
 don’t do it. But whenever I actually &lt;em&gt;need&lt;/em&gt; a project to be good,
 I will do this, and a bunch of other things besides.&lt;/span&gt;&lt;/p&gt;
 
 
 &lt;p&gt;It’s not that there’s no skill in doing these things well. There
 absolutely is. It’s that doing them badly is still better than not doing
-them,&lt;label class="margin-toggle sidenote-number" for="fn6"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn6" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Most of the time. You can do them badly enough for it to
+them,&lt;label class="margin-toggle sidenote-number" for="fn7"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn7" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Most of the time. You can do them badly enough for it to
 be a negative.&lt;/span&gt; and if you do them consistently then
 you’ll eventually learn to do them well.&lt;/p&gt;
 
@@ -2070,7 +2074,7 @@ good reasons to do something badly.&lt;/p&gt;
 
 
 &lt;p&gt;But they will always make your code better, and the thing stopping
-you doing that is, rightly or wrongly, you&lt;label class="margin-toggle sidenote-number" for="fn7"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn7" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Possibly collective-you rather than you-personally if
+you doing that is, rightly or wrongly, you&lt;label class="margin-toggle sidenote-number" for="fn8"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn8" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Possibly collective-you rather than you-personally if
 it’s a managerial/team thing.&lt;/span&gt;
 don’t want to do the work.&lt;/p&gt;
 
