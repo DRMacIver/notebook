@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-01-07T11:06:16+00:00</updated>
+  <updated>2024-01-08T05:49:09+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,149 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2023-02-14-23:37.html</id>
-    <title>My current protocol for energy levels</title>
-    <updated>2023-02-15T04:39:37+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;My current protocol for energy levels&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2023-02-14&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;People keep asking me questions about my recent miracle increase in
-mood and energy level, so this is a full write up of what I’m doing.&lt;/p&gt;
-
-
-&lt;p&gt;Disclaimer: None of this is medical advice. I’m not competent to give
-you medical advice. This is a document of what I’m currently doing,
-which it may or may not help you to emulate, but also depending on your
-current health situation some or all of it may not be a good idea for
-you, and I’m not competent to tell you which bits.&lt;/p&gt;
-
-
-&lt;h3 id="background"&gt;Background&lt;/h3&gt;
-
-
-&lt;p&gt;I’ve recently had a really dramatic increase in mood and mental
-energy levels, reversing a years long trend of things getting worse and
-worse for me over time. I credit this mostly to taking Inositol,
-although there are some confounding factors and fears of placebo effect
-that make me less confident in that than I’d like to be (I’m still very
-confident, but it feels obviously true and then I have to add in a bunch
-of “OK, but…” caveats).&lt;/p&gt;
-
-
-&lt;p&gt;The theory goes as follows: Inositol is an essential sugar that the
-brain uses. Its lack causes issues in energy levels and mental health,
-among other things, and as a result it can be an effective treatment for
-those. It is produced by digestion, so if you have digestive problems
-you may not be producing enough of it, and supplementing with it can
-plausibly help.&lt;/p&gt;
-
-
-&lt;p&gt;To the best of my ability to determine the above is pretty
-established science, though inositol as a medical intervention for these
-issues does not seem to be common (it’s considered an established
-treatment for PCOS, and the fact that it can help mood seems to be known
-but not commonly used).&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, I started taking inositol after &lt;a href="https://acesounderglass.com/"&gt;Elizabeth Van Nostrand&lt;/a&gt; suggested
-it in a conversation, and immeditaely felt more like a functioning human
-being than I had in years. I’ve mentioned this on Twitter and discord
-and a bunch of people went “Well I’ll give it a go” and some small but
-non-negligible fraction of them seem to have seen the same results. I
-think we’re up to 5 or 6, but I don’t know how many people have tried
-it. My guess is this corresponds to somewhere in the 1-10% region, in a
-population probably heavily selected for having these problems.&lt;/p&gt;
-
-
-&lt;p&gt;Known side effects of inositol which at least one person has reported
-after this are headaches, tiredness, and stomach problems. I had some
-stomach problems at the beginning, but not particularly bad ones and
-frankly I’m used to a bit of stomach pain so I ignord it. It seems to
-have gone away, but that may be because of other things I’m doing to fix
-my digestion.&lt;/p&gt;
-
-
-&lt;p&gt;In addition, there may be long-term consequences (unclear to me if
-&lt;em&gt;bad&lt;/em&gt; consequences) to taking inositol. I don’t really understand
-these yet, but the reason it gets used as a treatment for PCOS is that
-it has effects on a bunch of hormones. I’m currently ignoring this, but
-do need to do some detailed research. I do think at the levels I’m
-taking it at it’s probably pretty safe.&lt;/p&gt;
-
-
-&lt;h3 id="what-im-taking"&gt;What I’m taking&lt;/h3&gt;
-
-
-&lt;p&gt;I’m currently taking 1-1.5g of inositol in the morning, and sometimes
-I take another 0.5-1g in the afternoon. Variation is because I’m doing
-some not very scientific experiment to find the right amount and timing.
-I started at 0.5g first thing and even that made a big impact.&lt;/p&gt;
-
-
-&lt;p&gt;I’m currently treating 2g as the maximum definitely safe daily dose,
-but it’s likely that it’s higher than that. 2g is roughly the amount
-that your body is supposed to produce per day, PCOS treatment protocols
-seem to be 4g or even higher. At present I have no plans to go above 2g,
-and am hoping to reduce that over time if the rest of what I’m doing
-works.&lt;/p&gt;
-
-
-&lt;p&gt;The rest of what I’m doing, which is plausibly what made the stomach
-side effects from inositol go away, is an attempt to actually fix the
-digestion problems that I think are probably underlying why inositol has
-such a large benefit for me.&lt;/p&gt;
-
-
-&lt;p&gt;These are:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://bioandme.co.uk/"&gt;Bio&amp;amp;Me&lt;/a&gt; “Super seedy and
-nutty” porridge every morning (I’ve actually been doing this one for
-about a year)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://athleticgreens.com/en"&gt;Athletic greens&lt;/a&gt; every
-morning as an aggressive nutritional supplement for anything I might not
-be getting properly.&lt;/li&gt;
-&lt;li&gt;Strong dose of probiotic every morning. I am currently using three
-sachets of &lt;a href="https://www.vsl3.co.uk/"&gt;VSL3&lt;/a&gt;. I’m not sold on
-this being the correct probiotic, but it does seem to help. My plan is
-to cycle through various brands of plausible probiotics. I will try &lt;a href="https://www.visbiome.com/"&gt;visbiome&lt;/a&gt; next, and possibly &lt;a href="https://seed.com/"&gt;Seed&lt;/a&gt; after that.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.amazon.co.uk/gp/product/B01I3O6PJ4/"&gt;Digestive
-enzymes&lt;/a&gt; with every meal.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;I’m also trying to eat a little bit of sauerkraut every day.
-Fermented vegetables are meant to be good for gut health, and I have
-problems with digesting brassicas, and some vague notion that eating a
-little bit of it while also trying to repair my gut microbiome might
-encourage the sort of bacteria that are good at digesting brassicas.
-This seems to be at the bare minimum not hurting. Maybe it’s also
-helping, who knows.&lt;/p&gt;
-
-
-&lt;p&gt;I’ve also today started adding a scoop of freeze-dried pineapple to
-my morning green-stuff-and-bacteria drink. There are a bunch of ultra
-low confidence reasons why this might be a good idea, but I wouldn’t put
-much faith in this particular suggestion for now.&lt;/p&gt;
-
-
-&lt;p&gt;My stomach and digestion seem to be significantly happier as a result
-of these, although I have no idea at the moment whether this will result
-in a long term fix or just a short term palliative.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2023-02-14-23:37.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2023-06-20-17:00.html</id>
     <title>Larger selves</title>
@@ -1947,7 +1804,7 @@ worse.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-07-08:50.html</id>
     <title>How to be better at everything</title>
-    <updated>2024-01-07T11:06:16+00:00</updated>
+    <updated>2024-01-08T05:49:09+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;How to be better at everything&lt;/p&gt;
@@ -2094,5 +1951,153 @@ better is more effectively done with hard work.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2024-01-07-08:50.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2024-01-08-05:49.html</id>
+    <title>The skill element of (not) working harder</title>
+    <updated>2024-01-08T05:49:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;The skill element of (not) working harder&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2024-01-08&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;&lt;a href="https://notebook.drmaciver.com/posts/2024-01-07-08:50.html"&gt;Yesterday
+I wrote&lt;/a&gt; about how the key to getting better at things was to be
+willing to diligently do things that seem annoyingly fiddly.&lt;/p&gt;
+
+
+&lt;p&gt;I still think this is basically correct, but I subsequently performed
+an experiment which made me realise that it was incomplete, in ways that
+probably should have been obvious to me but apparently weren’t.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Fortunately, the notebook is not a place where I’m
+compelled to be diligent, and off-the-cuff poorly thought through hot
+takes are fine here. Where, you might reasonably ask, do I practice
+diligently doing annoyingly fiddly writing work? Ah, excellent
+question.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;The experiment was this: I wanted to find out if I was actually right
+that carefully babying relic counters in Slay the Spire would improve my
+play as much as I think it does. So I decided to add a twist to my
+current attempts at win streaking and use the console to give myself an
+ink bottle at the start of the run&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I guess this is “cheating” but I don’t really care. It’s
+not like I’m competing in any sort of official rankings here, and it’s
+for learning purposes.&lt;/span&gt; and play with the goal
+of getting the ink bottle on 9 or as close to 9 as possible at the end
+of each fight, so that I started each fight with an extra card draw.&lt;/p&gt;
+
+
+&lt;p&gt;The first one of these went pretty straightforwardly and was indeed
+quite strong. The second one, the spire decided to hand me a happy
+flower and a nunchuku&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;This probably all sounds insane if you don’t know much
+about Slay the Spire. These are other relics which have the same
+property of preserving state between combats.&lt;/span&gt; to keep things interesting, and I
+felt compelled to do my best to keep them on the right numbers at the
+end of combat too, although I didn’t commit to it to quite the same
+degree. This was exactly as annoying as I expected it to be.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, from these two runs I’ve tentatively come to the following
+conclusions:&lt;/p&gt;
+
+
+&lt;ol type="1"&gt;
+&lt;li&gt;I was right that this would significantly improve my play. Some of
+this is definitely that I’m starting with more of an advantage (a whole
+extra relic!). Some of it is probably that it’s forcing me to play more
+thoughtfully. But I do think a lot of it is that relic tracking is just
+genuinely a very strong thing to do.&lt;/li&gt;
+&lt;li&gt;I was &lt;em&gt;slightly&lt;/em&gt; wrong about how much skill is involved in
+doing this. I can definitely do this, it’s not beyond my skill level,
+but there’s room to improve on it. The biggest thing is that it’s easy
+to build decks which stop you from doing this because they kill the
+enemy at a rate not under your control.&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Two ways I’ve screwed this up: Combust, which deals
+constant damage per turn, and Corruption, which eventually removes your
+ability to play cards that don’t kill the enemy.&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;I’ve completely misunderstood the role of skill in making this sort
+of diligence not annoying and fiddly.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;The thing about this run where I was keeping track of all the relics
+is that it wasn’t just every bit as irritating as I expected, it was
+&lt;em&gt;much&lt;/em&gt; more irritating than I expected from having watched
+streamers do it. Some of that is just that I could have been better at
+it. There were definitely fights where I screwed up the counting and had
+to start again,&lt;label class="margin-toggle sidenote-number" for="fn5"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn5" type="checkbox"/&gt;&lt;span class="sidenote"&gt;And a few where I screwed up the counting and killed the
+enemy at the wrong time and so couldn’t start again.&lt;/span&gt; and probably some more where I
+adopted a suboptimal strategy for getting the relic on the right number,
+but I probably couldn’t have done that in a way that was more than two
+or three times less irritating even with the best skill in the world.
+It’s just a lot to keep track of.&lt;/p&gt;
+
+
+&lt;p&gt;But there’s actually a much bigger skill difference between me and
+the streamers I’ve seen doing it, that significantly changes the
+annoyingness level: Most of the time, they’re not doing it at all.&lt;/p&gt;
+
+
+&lt;p&gt;As far as I can tell, expert players will make sure to get a relic on
+the right number in basically two cases:&lt;/p&gt;
+
+
+&lt;ol type="1"&gt;
+&lt;li&gt;It’s easy, and they can opportunistically do it.&lt;/li&gt;
+&lt;li&gt;They’ve got a big scary fight coming up that they are worried enough
+about to optimise for.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;It’s not a case of consistently doing the maximal amount of effort,
+it is a case of &lt;em&gt;knowing when it’s worth it to put in more
+effort&lt;/em&gt;, and how much effort you’ll have to put in. You do the extra
+work when it’s much easier than normal or much more worth it than
+normal. You’re still putting more effort in in aggregate than people who
+are not doing this&lt;label class="margin-toggle sidenote-number" for="fn6"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn6" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Although that depends how you count. You’re putting in
+less effort per victory, but more effort per unit time.&lt;/span&gt;, but a lot less than doing it
+constantly would take.&lt;label class="margin-toggle sidenote-number" for="fn7"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn7" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Unless you’re XecnaR I guess.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;I think the same is true of programming. I talked about the slow
+methodical way of debugging, but honestly 95% of the time my debugging
+process is that I look at the stack trace and go “Oh yeah I know what’s
+going on, it’s that bullshit I’ve seen before.”&lt;label class="margin-toggle sidenote-number" for="fn8"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn8" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I recently had an experience where I did this twice in a
+row with a very smart and capable colleague who was less experienced in
+the ways of weird computer bullshit than I am, and I think it looked
+like complete witchcraft to him.&lt;/span&gt;
+Even in the remaining 5% I very rarely need to put in the effort of
+extracting a full confession from my broken software, I take shortcuts
+and do simpler things.&lt;/p&gt;
+
+
+&lt;p&gt;Similarly, I don’t always write fully commented, fully tested, lint
+free code. A lot of my code is some bullshit I wrote in an IPython
+terminal, or that I hacked on while running the program and seeing if it
+works.&lt;label class="margin-toggle sidenote-number" for="fn9"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn9" type="checkbox"/&gt;&lt;span class="sidenote"&gt;More of &lt;a href="https://github.com/DRMacIver/shrinkray"&gt;Shrink Ray&lt;/a&gt; is like
+this than ideal right now.&lt;/span&gt; But I’ve got enough experience that
+even my some bullshit code is shaped by having written much better code
+than that, and also to know when I can get away with it.&lt;/p&gt;
+
+
+&lt;p&gt;How do you learn these intuitions?&lt;/p&gt;
+
+
+&lt;p&gt;Honestly, probably you learn them by doing it the hard way first.
+Sorry. I still think the conclusion of the last post is basically
+correct - if you want to do better, you need to work more
+diligently.&lt;/p&gt;
+
+
+&lt;p&gt;But I do think this offers a glimmer of hope that actually on the
+other side of that you can probably go back to being less diligent
+again, except when you really need to be.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2024-01-08-05:49.html" rel="alternate"/>
   </entry>
 </feed>
