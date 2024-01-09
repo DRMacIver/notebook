@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-01-09T08:51:00+00:00</updated>
+  <updated>2024-01-09T08:57:44+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1957,7 +1957,7 @@ again, except when you really need to be.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-09-08:51.html</id>
     <title>Safety Advice and Judgment in Emergencies</title>
-    <updated>2024-01-09T08:51:00+00:00</updated>
+    <updated>2024-01-09T08:57:44+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Safety Advice and Judgment in Emergencies&lt;/p&gt;
@@ -2243,9 +2243,10 @@ this recently, in which I flagrantly ignored safety advice, which is
 that my house had a gas leak recently.&lt;/p&gt;
 
 
-&lt;p&gt;We’d had a smart meter fitted on Wednesday. The person who fitted it
-did a sufficiently bad job that the person who fixed his work had a
-legal requirement to report him.&lt;/p&gt;
+&lt;p&gt;We’d had a smart meter fitted on Wednesday&lt;label class="margin-toggle sidenote-number" for="fn6"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn6" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Editor’s note: This was written over a year ago, so the
+Wednesday in question was in December 2022.&lt;/span&gt;.
+The person who fitted it did a sufficiently bad job that the person who
+fixed his work had a legal requirement to report him.&lt;/p&gt;
 
 
 &lt;p&gt;We noticed this problem on Friday when I noticed that operating our
@@ -2313,7 +2314,7 @@ will be an engineer with there to deal with them rapidly.&lt;/li&gt;
 &lt;li&gt;I was extremely confident in my ability to assess how bad this gas
 leak was, because I knew exactly where it was occurring, I had turned
 off the gas supply, ventilated the property, and sniffed around to
-confirm a total absence of the smell of gas.&lt;label class="margin-toggle sidenote-number" for="fn6"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn6" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Technically of mercaptan, the additive they put in gas
+confirm a total absence of the smell of gas.&lt;label class="margin-toggle sidenote-number" for="fn7"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn7" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Technically of mercaptan, the additive they put in gas
 to make sure you can smell it.&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;When someone tells me “I can’t possibly comment” when I ask them
 whether “As soon as possible” means “Some time today”, I know I’m in for
@@ -2351,7 +2352,7 @@ that my judgement is trustworthy.&lt;/p&gt;
 
 &lt;p&gt;If their advice was “If you think it’s safe, treat it as safe”, this
 would probably get more people killed, because most people probably
-don’t have judgement you can trust.&lt;label class="margin-toggle sidenote-number" for="fn7"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn7" type="checkbox"/&gt;&lt;span class="sidenote"&gt;As this whole episode shows, you can’t even trust gas
+don’t have judgement you can trust.&lt;label class="margin-toggle sidenote-number" for="fn8"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn8" type="checkbox"/&gt;&lt;span class="sidenote"&gt;As this whole episode shows, you can’t even trust gas
 safety certified engineers to reliably have good judgement.&lt;/span&gt;&lt;/p&gt;
 
 
@@ -2376,6 +2377,16 @@ was correct. Everything would have been fine if I’d tried to fix it, and
 I knew that it would be fine if I tried to fix it, and I also knew that
 I would still think it would probably be fine in many scenarios that end
 with us being blown up or poisoned.&lt;/p&gt;
+
+
+&lt;h3 id="afterword"&gt;Afterword&lt;/h3&gt;
+
+
+&lt;p&gt;I think all that stopped me finishing writing this piece was I didn’t
+have a very satisfying way to wrap it up other than to say “learn when
+to trust your judgement, butplease don’t get yourself killed”. So uh,
+learn when to trust your judgment, but please don’t get yourself
+killed.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2024-01-09-08:51.html" rel="alternate"/>
