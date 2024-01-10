@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-01-09T08:57:44+00:00</updated>
+  <updated>2024-01-10T07:48:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,141 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2023-07-27-13:03.html</id>
-    <title>Adaptive parallel test-case reduction</title>
-    <updated>2023-07-28T09:05:39+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Adaptive parallel test-case reduction&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2023-07-27&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;There’s a very simple algorithm I call “adaptive parallel deletion”,
-which I think of as completely standard and thus often forget that
-literally nobody but me uses. I haven’t written it down anywhere, so
-here’s me finally getting around to doing that.&lt;/p&gt;
-
-
-&lt;p&gt;This algorithm is a component of test-case reduction that replaces
-the classic delta debugging algorithm - that it is, it takes some
-sequence and produces a subsequence of it satisfying some condition,
-such that if you remove any one element from its output the condition is
-no longer satisfied.&lt;/p&gt;
-
-
-&lt;p&gt;The core features of adaptive parallel deletion are:&lt;/p&gt;
-
-
-&lt;ol type="1"&gt;
-&lt;li&gt;When there are large reductions that can be made, it will usually
-run in &lt;code&gt;O(log(n))&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;When there are no reductions that can be made, it will run in
-&lt;code&gt;O(n)&lt;/code&gt;, but with the work scaling to as much parallelism as
-you can give it.&lt;/li&gt;
-&lt;li&gt;It will scale fairly gracefully in between the two.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;Here it is:&lt;/p&gt;
-
-
-&lt;div class="sourceCode" id="cb1"&gt;&lt;pre class="sourceCode python"&gt;&lt;code class="sourceCode python"&gt;&lt;span id="cb1-1"&gt;&lt;a aria-hidden="true" href="#cb1-1" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="kw"&gt;def&lt;/span&gt; single_pass_delete(test_case, condition):&lt;/span&gt;
-&lt;span id="cb1-2"&gt;&lt;a aria-hidden="true" href="#cb1-2" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="co"&gt;"""Returns a version of `test_case` that satisfies `condition` and&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-3"&gt;&lt;a aria-hidden="true" href="#cb1-3" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="co"&gt;    is "one-minimal" in the sense that you cannot delete any single&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-4"&gt;&lt;a aria-hidden="true" href="#cb1-4" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="co"&gt;    member of it and have it still satisfy the condition."""&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-5"&gt;&lt;a aria-hidden="true" href="#cb1-5" tabindex="-1"&gt;&lt;/a&gt;    test_case &lt;span class="op"&gt;=&lt;/span&gt; &lt;span class="bu"&gt;list&lt;/span&gt;(test_case)&lt;/span&gt;
-&lt;span id="cb1-6"&gt;&lt;a aria-hidden="true" href="#cb1-6" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb1-7"&gt;&lt;a aria-hidden="true" href="#cb1-7" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="kw"&gt;def&lt;/span&gt; can_delete(j, k):&lt;/span&gt;
-&lt;span id="cb1-8"&gt;&lt;a aria-hidden="true" href="#cb1-8" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="cf"&gt;return&lt;/span&gt; condition(test_case[:j] &lt;span class="op"&gt;+&lt;/span&gt; test_case[k:])&lt;/span&gt;
-&lt;span id="cb1-9"&gt;&lt;a aria-hidden="true" href="#cb1-9" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb1-10"&gt;&lt;a aria-hidden="true" href="#cb1-10" tabindex="-1"&gt;&lt;/a&gt;    i &lt;span class="op"&gt;=&lt;/span&gt; &lt;span class="dv"&gt;0&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-11"&gt;&lt;a aria-hidden="true" href="#cb1-11" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="cf"&gt;while&lt;/span&gt; i &lt;span class="op"&gt;&amp;lt;&lt;/span&gt; &lt;span class="bu"&gt;len&lt;/span&gt;(test_case):&lt;/span&gt;
-&lt;span id="cb1-12"&gt;&lt;a aria-hidden="true" href="#cb1-12" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="cf"&gt;try&lt;/span&gt;:&lt;/span&gt;
-&lt;span id="cb1-13"&gt;&lt;a aria-hidden="true" href="#cb1-13" tabindex="-1"&gt;&lt;/a&gt;            &lt;span class="co"&gt;# Scan in parallel for the first location where we can delete&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-14"&gt;&lt;a aria-hidden="true" href="#cb1-14" tabindex="-1"&gt;&lt;/a&gt;            &lt;span class="co"&gt;# a single element of the list. If no more elements are deletable&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-15"&gt;&lt;a aria-hidden="true" href="#cb1-15" tabindex="-1"&gt;&lt;/a&gt;            &lt;span class="co"&gt;# this will run with as much parallelism as we can give it.&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-16"&gt;&lt;a aria-hidden="true" href="#cb1-16" tabindex="-1"&gt;&lt;/a&gt;            i &lt;span class="op"&gt;=&lt;/span&gt; find_first(&lt;span class="bu"&gt;range&lt;/span&gt;(i, &lt;span class="bu"&gt;len&lt;/span&gt;(test_case), &lt;span class="kw"&gt;lambda&lt;/span&gt; j: can_delete(j, j &lt;span class="op"&gt;+&lt;/span&gt; &lt;span class="dv"&gt;1&lt;/span&gt;)&lt;/span&gt;
-&lt;span id="cb1-17"&gt;&lt;a aria-hidden="true" href="#cb1-17" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="cf"&gt;except&lt;/span&gt; NotFound:&lt;/span&gt;
-&lt;span id="cb1-18"&gt;&lt;a aria-hidden="true" href="#cb1-18" tabindex="-1"&gt;&lt;/a&gt;            &lt;span class="cf"&gt;break&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-19"&gt;&lt;a aria-hidden="true" href="#cb1-19" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb1-20"&gt;&lt;a aria-hidden="true" href="#cb1-20" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="kw"&gt;del&lt;/span&gt; test_case[i]&lt;/span&gt;
-&lt;span id="cb1-21"&gt;&lt;a aria-hidden="true" href="#cb1-21" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="co"&gt;# Now that we've found an area where there's at least one deletable&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-22"&gt;&lt;a aria-hidden="true" href="#cb1-22" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="co"&gt;# element, we hope that it's part of a large chunk of deletable elements.&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-23"&gt;&lt;a aria-hidden="true" href="#cb1-23" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="co"&gt;# This finds an integer k so that we can delete the next k elements&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-24"&gt;&lt;a aria-hidden="true" href="#cb1-24" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="co"&gt;# and not the next k + 1 elements, running in O(log(k)). This hopefully&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-25"&gt;&lt;a aria-hidden="true" href="#cb1-25" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="co"&gt;# lets us delete a reasonable large chunk at a time.&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-26"&gt;&lt;a aria-hidden="true" href="#cb1-26" tabindex="-1"&gt;&lt;/a&gt;        k &lt;span class="op"&gt;=&lt;/span&gt; find_integer(&lt;span class="kw"&gt;lambda&lt;/span&gt; k: i &lt;span class="op"&gt;+&lt;/span&gt; k &lt;span class="op"&gt;&amp;lt;=&lt;/span&gt; &lt;span class="bu"&gt;len&lt;/span&gt;(test_case) &lt;span class="kw"&gt;and&lt;/span&gt; can_delete(i, i &lt;span class="op"&gt;+&lt;/span&gt; k))&lt;/span&gt;
-&lt;span id="cb1-27"&gt;&lt;a aria-hidden="true" href="#cb1-27" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="kw"&gt;del&lt;/span&gt; test_case[i:i&lt;span class="op"&gt;+&lt;/span&gt;k]&lt;/span&gt;
-&lt;span id="cb1-28"&gt;&lt;a aria-hidden="true" href="#cb1-28" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb1-29"&gt;&lt;a aria-hidden="true" href="#cb1-29" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="co"&gt;# Because we chose k such that k + 1 elements are not deletable, we know&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-30"&gt;&lt;a aria-hidden="true" href="#cb1-30" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="co"&gt;# that the element left at i (if any, we might have deleted the whole list)&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-31"&gt;&lt;a aria-hidden="true" href="#cb1-31" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="co"&gt;# is now not deletable, so we increment i to skip past it on the next&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-32"&gt;&lt;a aria-hidden="true" href="#cb1-32" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="co"&gt;# iteration. This is purely a performance optimisation, but in the worst&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-33"&gt;&lt;a aria-hidden="true" href="#cb1-33" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="co"&gt;# case might cause us to make twice as many calls to `condition` as we&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-34"&gt;&lt;a aria-hidden="true" href="#cb1-34" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="co"&gt;# need to if we skip it.&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-35"&gt;&lt;a aria-hidden="true" href="#cb1-35" tabindex="-1"&gt;&lt;/a&gt;        i &lt;span class="op"&gt;+=&lt;/span&gt; &lt;span class="dv"&gt;1&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-36"&gt;&lt;a aria-hidden="true" href="#cb1-36" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb1-37"&gt;&lt;a aria-hidden="true" href="#cb1-37" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="cf"&gt;return&lt;/span&gt; test_case&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;Where the functions this uses are &lt;code&gt;find_integer&lt;/code&gt; that I’ve
-&lt;a href="https://notebook.drmaciver.com/posts/2019-04-30-13:03.html"&gt;previously
-written about here&lt;/a&gt; which is just an exponential probe and binary
-search (so runs in &lt;code&gt;O(log(k))&lt;/code&gt; when it returns
-&lt;code&gt;k&lt;/code&gt;) and &lt;code&gt;find_first&lt;/code&gt; is defined as follows:&lt;/p&gt;
-
-
-&lt;div class="sourceCode" id="cb2"&gt;&lt;pre class="sourceCode python"&gt;&lt;code class="sourceCode python"&gt;&lt;span id="cb2-1"&gt;&lt;a aria-hidden="true" href="#cb2-1" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="im"&gt;import&lt;/span&gt; os&lt;/span&gt;
-&lt;span id="cb2-2"&gt;&lt;a aria-hidden="true" href="#cb2-2" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="im"&gt;from&lt;/span&gt; itertools &lt;span class="im"&gt;import&lt;/span&gt; islice&lt;/span&gt;
-&lt;span id="cb2-3"&gt;&lt;a aria-hidden="true" href="#cb2-3" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb2-4"&gt;&lt;a aria-hidden="true" href="#cb2-4" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb2-5"&gt;&lt;a aria-hidden="true" href="#cb2-5" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="kw"&gt;class&lt;/span&gt; NotFound(&lt;span class="pp"&gt;Exception&lt;/span&gt;):&lt;/span&gt;
-&lt;span id="cb2-6"&gt;&lt;a aria-hidden="true" href="#cb2-6" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="cf"&gt;pass&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb2-7"&gt;&lt;a aria-hidden="true" href="#cb2-7" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb2-8"&gt;&lt;a aria-hidden="true" href="#cb2-8" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb2-9"&gt;&lt;a aria-hidden="true" href="#cb2-9" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="kw"&gt;def&lt;/span&gt; find_first(target, predict):&lt;/span&gt;
-&lt;span id="cb2-10"&gt;&lt;a aria-hidden="true" href="#cb2-10" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="co"&gt;"""Returns the first element of `target` that satisfies `predicate`,&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb2-11"&gt;&lt;a aria-hidden="true" href="#cb2-11" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="co"&gt;    or raises `NotFound` if none do."""&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb2-12"&gt;&lt;a aria-hidden="true" href="#cb2-12" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb2-13"&gt;&lt;a aria-hidden="true" href="#cb2-13" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="cf"&gt;if&lt;/span&gt; &lt;span class="kw"&gt;not&lt;/span&gt; target:&lt;/span&gt;
-&lt;span id="cb2-14"&gt;&lt;a aria-hidden="true" href="#cb2-14" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="cf"&gt;raise&lt;/span&gt; NotFound()&lt;/span&gt;
-&lt;span id="cb2-15"&gt;&lt;a aria-hidden="true" href="#cb2-15" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb2-16"&gt;&lt;a aria-hidden="true" href="#cb2-16" tabindex="-1"&gt;&lt;/a&gt;    parallelism &lt;span class="op"&gt;=&lt;/span&gt; os.cpu_count()&lt;/span&gt;
-&lt;span id="cb2-17"&gt;&lt;a aria-hidden="true" href="#cb2-17" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb2-18"&gt;&lt;a aria-hidden="true" href="#cb2-18" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="cf"&gt;if&lt;/span&gt; parallelism &lt;span class="op"&gt;&amp;lt;=&lt;/span&gt; &lt;span class="dv"&gt;1&lt;/span&gt;:&lt;/span&gt;
-&lt;span id="cb2-19"&gt;&lt;a aria-hidden="true" href="#cb2-19" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="cf"&gt;for&lt;/span&gt; x &lt;span class="kw"&gt;in&lt;/span&gt; target:&lt;/span&gt;
-&lt;span id="cb2-20"&gt;&lt;a aria-hidden="true" href="#cb2-20" tabindex="-1"&gt;&lt;/a&gt;            &lt;span class="cf"&gt;if&lt;/span&gt; f(x):&lt;/span&gt;
-&lt;span id="cb2-21"&gt;&lt;a aria-hidden="true" href="#cb2-21" tabindex="-1"&gt;&lt;/a&gt;                &lt;span class="cf"&gt;return&lt;/span&gt; x&lt;/span&gt;
-&lt;span id="cb2-22"&gt;&lt;a aria-hidden="true" href="#cb2-22" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="cf"&gt;raise&lt;/span&gt; NotFound()&lt;/span&gt;
-&lt;span id="cb2-23"&gt;&lt;a aria-hidden="true" href="#cb2-23" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="cf"&gt;else&lt;/span&gt;:&lt;/span&gt;
-&lt;span id="cb2-24"&gt;&lt;a aria-hidden="true" href="#cb2-24" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="cf"&gt;with&lt;/span&gt; ThreadPoolExecutor(max_workers&lt;span class="op"&gt;=&lt;/span&gt;parallelism) &lt;span class="im"&gt;as&lt;/span&gt; executor:&lt;/span&gt;
-&lt;span id="cb2-25"&gt;&lt;a aria-hidden="true" href="#cb2-25" tabindex="-1"&gt;&lt;/a&gt;            it &lt;span class="op"&gt;=&lt;/span&gt; &lt;span class="bu"&gt;iter&lt;/span&gt;(target)&lt;/span&gt;
-&lt;span id="cb2-26"&gt;&lt;a aria-hidden="true" href="#cb2-26" tabindex="-1"&gt;&lt;/a&gt;            chunk_size &lt;span class="op"&gt;=&lt;/span&gt; &lt;span class="dv"&gt;1&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb2-27"&gt;&lt;a aria-hidden="true" href="#cb2-27" tabindex="-1"&gt;&lt;/a&gt;            &lt;span class="cf"&gt;while&lt;/span&gt; &lt;span class="va"&gt;True&lt;/span&gt;:&lt;/span&gt;
-&lt;span id="cb2-28"&gt;&lt;a aria-hidden="true" href="#cb2-28" tabindex="-1"&gt;&lt;/a&gt;                chunk &lt;span class="op"&gt;=&lt;/span&gt; &lt;span class="bu"&gt;list&lt;/span&gt;(islice(it, chunk_size))&lt;/span&gt;
-&lt;span id="cb2-29"&gt;&lt;a aria-hidden="true" href="#cb2-29" tabindex="-1"&gt;&lt;/a&gt;                &lt;span class="cf"&gt;if&lt;/span&gt; &lt;span class="kw"&gt;not&lt;/span&gt; chunk:&lt;/span&gt;
-&lt;span id="cb2-30"&gt;&lt;a aria-hidden="true" href="#cb2-30" tabindex="-1"&gt;&lt;/a&gt;                    &lt;span class="cf"&gt;raise&lt;/span&gt; NotFound()&lt;/span&gt;
-&lt;span id="cb2-31"&gt;&lt;a aria-hidden="true" href="#cb2-31" tabindex="-1"&gt;&lt;/a&gt;                &lt;span class="cf"&gt;for&lt;/span&gt; x, b &lt;span class="kw"&gt;in&lt;/span&gt; &lt;span class="bu"&gt;zip&lt;/span&gt;(chunk, executor.&lt;span class="bu"&gt;map&lt;/span&gt;(f, chunk)):&lt;/span&gt;
-&lt;span id="cb2-32"&gt;&lt;a aria-hidden="true" href="#cb2-32" tabindex="-1"&gt;&lt;/a&gt;                    &lt;span class="cf"&gt;if&lt;/span&gt; b:&lt;/span&gt;
-&lt;span id="cb2-33"&gt;&lt;a aria-hidden="true" href="#cb2-33" tabindex="-1"&gt;&lt;/a&gt;                        &lt;span class="cf"&gt;return&lt;/span&gt; x&lt;/span&gt;
-&lt;span id="cb2-34"&gt;&lt;a aria-hidden="true" href="#cb2-34" tabindex="-1"&gt;&lt;/a&gt;                chunk_size &lt;span class="op"&gt;*=&lt;/span&gt; &lt;span class="dv"&gt;2&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;In particular &lt;code&gt;find_first&lt;/code&gt; is designed so that when it
-does not find an answer it scales up rapidly to be embarrassingly
-parallel, but when it finds an answer early on it doesn’t do much
-redundant work (you still have the overhead of the thread pool and such,
-but it doesn’t actually run much extra code).&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2023-07-27-13:03.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-02-12:48.html</id>
     <title>January is a daily writing month</title>
@@ -1957,7 +1822,7 @@ again, except when you really need to be.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-09-08:51.html</id>
     <title>Safety Advice and Judgment in Emergencies</title>
-    <updated>2024-01-09T08:57:44+00:00</updated>
+    <updated>2024-01-09T09:00:30+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Safety Advice and Judgment in Emergencies&lt;/p&gt;
@@ -2390,5 +2255,174 @@ killed.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2024-01-09-08:51.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2024-01-10-07:48.html</id>
+    <title>Showing people the door</title>
+    <updated>2024-01-10T07:48:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Showing people the door&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2024-01-10&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Another draft bankruptcy post. I think this was abandoned for a
+fairly common reason for me to abandon posts: I tried to write it
+because it was important, but it’s actually a fairly depressing subject
+for me to write about and I didn’t particularly want to write it.&lt;/p&gt;
+
+
+&lt;hr/&gt;
+
+
+&lt;p&gt;I run a small&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Officially we’re about 400 people, with a regulars list
+of about 100 people, of whom maybe half are regularly active.&lt;/span&gt; but fairly successful discord
+server. &lt;a href="https://discord.gg/bY5XKnWMQj"&gt;You can join if you want
+to&lt;/a&gt;. Nominally it’s about this newsletter, and occasionally we even
+remember that, but mostly it’s just a bunch of nerds who hang out on the
+internet, help each other navigate life better, and talk about stuff we
+like. I think it’s pretty great.&lt;/p&gt;
+
+
+&lt;p&gt;I act as the sole authority figure for how the community works.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;It’s not a cult, I promise.&lt;/span&gt;. This is a space on the internet I
+manage to cultivate the sort of community and conversations I want to
+exist. It’s what I’ve called &lt;a href="https://notebook.drmaciver.com/posts/2020-07-14-13:42.html"&gt;Living
+Room Rules&lt;/a&gt; before - it’s the equivalent of people coming around to
+my house to hang out.&lt;/p&gt;
+
+
+&lt;p&gt;This doesn’t mean the community do whatever I want. Truthfully, it’s
+like herding cats sometimes. But it does mean that when the community
+isn’t working, it’s my responsibility to fix it. Often in consultation
+with others, but ultimately I’m the one who makes the call.&lt;/p&gt;
+
+
+&lt;p&gt;The hardest part of this is that sometimes you have to show people
+the door.&lt;/p&gt;
+
+
+&lt;p&gt;I had to do this with someone yesterday&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Possibly he’s reading this. If so, sorry. Editor’s note:
+Presumably not on the notebook. Also this “yesterday” was actually more
+than a year ago.&lt;/span&gt;. He
+wasn’t right for the community.&lt;/p&gt;
+
+
+&lt;p&gt;This is only the second time I’ve had to ask someone to leave this
+discord (I’ve &lt;em&gt;banned&lt;/em&gt; some people for outright terrible
+behaviour, but that’s different), but I’ve seen it with other
+communities in the past. Crucially, I’ve seen it with other communities
+in the past because the community leadership &lt;em&gt;didn’t&lt;/em&gt; ask the
+person to leave. This kills the community.&lt;/p&gt;
+
+
+&lt;p&gt;One of the key things you are there for in a community - what
+&lt;em&gt;makes&lt;/em&gt; it a community - is the other people. A community is, at
+its core, a group of people who do stuff together. Having someone who
+fails to gel with the group and can’t easily be avoided around disrupts
+that, because it adds friction to every interaction.&lt;/p&gt;
+
+
+&lt;p&gt;What this means is that if some is disrupting the group’s ability to
+interact, there is less of the thing that brings people there, and some
+people who were already marginal stop showing up so much. This in turn
+means that the people who were there partly to hang out with those
+people stop showing up so much, which in turn…&lt;/p&gt;
+
+
+&lt;p&gt;It’s not a complete death spiral even in the worst case. Usually some
+subset of the community stays - those who don’t have any better options,
+or who are still too attached to what the community used to be - but the
+community turns into a shell of its former self.&lt;/p&gt;
+
+
+&lt;p&gt;More commonly, one person who doesn’t mesh with the others isn’t
+enough to offset the rest of the benefits people are getting, but the
+community contracts a bit and what’s left feels slightly less thriving.
+If you add more such people, it may get worse, .&lt;/p&gt;
+
+
+&lt;p&gt;Internet communities without a shared project are particularly
+vulnerable to this, because there’s &lt;em&gt;nothing&lt;/em&gt; bringing people
+there except the other people, so if you ruin those interactions you’ve
+got nothing.&lt;/p&gt;
+
+
+&lt;p&gt;In contrast, communities built around something are a bit more
+robust. e.g.&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;An open source project you have the motivation of the project itself
+- you’re there because you want it for stuff. A sufficiently toxic
+contributor can definitely drive you off, and someone you don’t get
+along with can definitely sap your motivation to contribute&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Open source is pretty good at doing this on its own,
+honestly.&lt;/span&gt;, but you’re at least there for some
+specific purpose external to the people involved.&lt;/li&gt;
+&lt;li&gt;Volunteer-driven physical projects (e.g. charitable works,
+maintenance of some space, etc) are the same but more so.&lt;/li&gt;
+&lt;li&gt;Communities built around access to some resource. e.g. you’re
+probably not going to stop hanging out on the midjourney discord just
+because you don’t like the people there, because that’s where you go to
+use midjourney.&lt;/li&gt;
+&lt;li&gt;Physical communities with shared physical resources are even more
+like this. The people at your local maker space or tennis club might be
+super annoying, but if it’s the only place you can go to get access to a
+laser cutter or a tennis court, you’re still going to keep going.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;These places still can be harmed by people who don’t mesh well with
+the group, and sometimes even outright ruined, but it’s much harder and
+they’re more robust against it because of the additional draw to keep
+coming back beyond just liking the people there.&lt;/p&gt;
+
+
+&lt;h3 id="who-needs-to-leave"&gt;Who needs to leave?&lt;/h3&gt;
+
+
+&lt;p&gt;Importantly, the person who I asked to leave wasn’t an asshole. He
+was a bit hard to deal with, but he didn’t cross any lines where I could
+feel good about just pressing the ban button. He just consistently
+failed to mesh with the community in a way that made everyone else’s
+experience worse when he was in the room.&lt;/p&gt;
+
+
+&lt;p&gt;Frankly, he was probably just of an age where relatively few people
+would fit in with the rest of us - we’re mostly in our 30s, and he was
+in his late teens or early 20s, and I think most people of that age
+wouldn’t have fit. Certainly I can’t imagine a 19 year old version of me
+doing well there. There’s just too large an experience gap.&lt;/p&gt;
+
+
+&lt;p&gt;This sort of thing is, in general, the problem zone: People who have
+not and probably never will do anything that lets you go “Right, you’ve
+crossed a line” and kick them out, but you really wish they would.&lt;/p&gt;
+
+
+&lt;p&gt;When you start feeling that way about someone, you probably need to
+think seriously about asking them to leave. If you don’t, people you
+want in the community much more will leave on their own instead.&lt;/p&gt;
+
+
+&lt;h1 id="afterword"&gt;Afterword&lt;/h1&gt;
+
+
+&lt;p&gt;I tapered out there partially because I don’t really have good advice
+on how to navigate this. This is hard, and I’ve not got more than a
+handful of personal examples of doing it, and I’m not confident that I
+handled it especially well, or that I know what handling it well looks
+like in full generality.&lt;/p&gt;
+
+
+&lt;p&gt;All I know is that I’ve seen communities die by not doing this, and
+it’s a problem that needs solving&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2024-01-10-07:48.html" rel="alternate"/>
   </entry>
 </feed>
