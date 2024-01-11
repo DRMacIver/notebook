@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-01-11T08:07:00+00:00</updated>
+  <updated>2024-01-11T09:00:55+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -12,17 +12,24 @@
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-02-12:56.html</id>
-    <title>Is philosophy bad?</title>
+    <title>"placeholder"</title>
     <updated>2024-01-02T13:05:54+00:00</updated>
     <content type="html">
 
-&lt;p class="subtitle"&gt;Is philosophy bad?&lt;/p&gt;
+&lt;p class="subtitle"&gt;"placeholder"&lt;/p&gt;
 
 
 &lt;dl class="metadata"&gt;
 &lt;dt&gt;Published&lt;/dt&gt;
 &lt;dd class="post-date"&gt;2024-01-02&lt;/dd&gt;
 &lt;/dl&gt;
+
+
+&lt;header id="title-block-header"&gt;
+&lt;/header&gt;
+
+
+&lt;h1 id="is-philosophy-bad"&gt;Is philosophy bad?&lt;/h1&gt;
 
 
 &lt;p&gt;This is a draft bankruptcy piece. It contains a few interesting
@@ -189,17 +196,25 @@ many smaller things.&lt;/p&gt;
   </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-03-10:13.html</id>
-    <title>Some Philosophy of Mathematics</title>
+    <title>"placeholder"</title>
     <updated>2024-01-03T13:26:05+00:00</updated>
     <content type="html">
 
-&lt;p class="subtitle"&gt;Some Philosophy of Mathematics&lt;/p&gt;
+&lt;p class="subtitle"&gt;"placeholder"&lt;/p&gt;
 
 
 &lt;dl class="metadata"&gt;
 &lt;dt&gt;Published&lt;/dt&gt;
 &lt;dd class="post-date"&gt;2024-01-03&lt;/dd&gt;
 &lt;/dl&gt;
+
+
+&lt;header id="title-block-header"&gt;
+&lt;/header&gt;
+
+
+&lt;h1 id="some-philosophy-of-mathematics"&gt;Some Philosophy of
+Mathematics&lt;/h1&gt;
 
 
 &lt;p&gt;This is another draft bankruptcy piece, pulled out of a random Google
@@ -631,17 +646,24 @@ reserves and not worry so much about other people being wrong.&lt;/p&gt;
   </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-04-10:02.html</id>
-    <title>Honesty is kinder than lying</title>
+    <title>"placeholder"</title>
     <updated>2024-01-04T11:26:13+00:00</updated>
     <content type="html">
 
-&lt;p class="subtitle"&gt;Honesty is kinder than lying&lt;/p&gt;
+&lt;p class="subtitle"&gt;"placeholder"&lt;/p&gt;
 
 
 &lt;dl class="metadata"&gt;
 &lt;dt&gt;Published&lt;/dt&gt;
 &lt;dd class="post-date"&gt;2024-01-04&lt;/dd&gt;
 &lt;/dl&gt;
+
+
+&lt;header id="title-block-header"&gt;
+&lt;/header&gt;
+
+
+&lt;h1 id="honesty-is-kinder-than-lying"&gt;Honesty is kinder than lying&lt;/h1&gt;
 
 
 &lt;p&gt;Another draft bankruptcy post. This is one of those posts that I
@@ -1460,17 +1482,25 @@ worse.&lt;/p&gt;
   </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-07-08:50.html</id>
-    <title>How to be better at everything</title>
+    <title>"placeholder"</title>
     <updated>2024-01-08T05:49:09+00:00</updated>
     <content type="html">
 
-&lt;p class="subtitle"&gt;How to be better at everything&lt;/p&gt;
+&lt;p class="subtitle"&gt;"placeholder"&lt;/p&gt;
 
 
 &lt;dl class="metadata"&gt;
 &lt;dt&gt;Published&lt;/dt&gt;
 &lt;dd class="post-date"&gt;2024-01-07&lt;/dd&gt;
 &lt;/dl&gt;
+
+
+&lt;header id="title-block-header"&gt;
+&lt;/header&gt;
+
+
+&lt;h1 id="how-to-be-better-at-everything"&gt;How to be better at
+everything&lt;/h1&gt;
 
 
 &lt;p&gt;I’m undergoing one of my periodic attempts to be better at Slay the
@@ -1611,17 +1641,25 @@ better is more effectively done with hard work.&lt;/p&gt;
   </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-08-05:49.html</id>
-    <title>The skill element of (not) working harder</title>
+    <title>"placeholder"</title>
     <updated>2024-01-08T07:46:17+00:00</updated>
     <content type="html">
 
-&lt;p class="subtitle"&gt;The skill element of (not) working harder&lt;/p&gt;
+&lt;p class="subtitle"&gt;"placeholder"&lt;/p&gt;
 
 
 &lt;dl class="metadata"&gt;
 &lt;dt&gt;Published&lt;/dt&gt;
 &lt;dd class="post-date"&gt;2024-01-08&lt;/dd&gt;
 &lt;/dl&gt;
+
+
+&lt;header id="title-block-header"&gt;
+&lt;/header&gt;
+
+
+&lt;h1 id="the-skill-element-of-not-working-harder"&gt;The skill element of
+(not) working harder&lt;/h1&gt;
 
 
 &lt;p&gt;&lt;a href="https://notebook.drmaciver.com/posts/2024-01-07-08:50.html"&gt;Yesterday
@@ -1759,17 +1797,25 @@ again, except when you really need to be.&lt;/p&gt;
   </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-09-08:51.html</id>
-    <title>Safety Advice and Judgment in Emergencies</title>
+    <title>"placeholder"</title>
     <updated>2024-01-09T09:00:30+00:00</updated>
     <content type="html">
 
-&lt;p class="subtitle"&gt;Safety Advice and Judgment in Emergencies&lt;/p&gt;
+&lt;p class="subtitle"&gt;"placeholder"&lt;/p&gt;
 
 
 &lt;dl class="metadata"&gt;
 &lt;dt&gt;Published&lt;/dt&gt;
 &lt;dd class="post-date"&gt;2024-01-09&lt;/dd&gt;
 &lt;/dl&gt;
+
+
+&lt;header id="title-block-header"&gt;
+&lt;/header&gt;
+
+
+&lt;h1 id="safety-advice-and-judgment-in-emergencies"&gt;Safety Advice and
+Judgment in Emergencies&lt;/h1&gt;
 
 
 &lt;p&gt;Another draft bankruptcy post. I don’t know why I didn’t finish this
@@ -2196,17 +2242,24 @@ killed.&lt;/p&gt;
   </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-10-07:48.html</id>
-    <title>Showing people the door</title>
+    <title>"placeholder"</title>
     <updated>2024-01-10T07:59:43+00:00</updated>
     <content type="html">
 
-&lt;p class="subtitle"&gt;Showing people the door&lt;/p&gt;
+&lt;p class="subtitle"&gt;"placeholder"&lt;/p&gt;
 
 
 &lt;dl class="metadata"&gt;
 &lt;dt&gt;Published&lt;/dt&gt;
 &lt;dd class="post-date"&gt;2024-01-10&lt;/dd&gt;
 &lt;/dl&gt;
+
+
+&lt;header id="title-block-header"&gt;
+&lt;/header&gt;
+
+
+&lt;h1 id="showing-people-the-door"&gt;Showing people the door&lt;/h1&gt;
 
 
 &lt;p&gt;Another draft bankruptcy post. I think this was abandoned for a
@@ -2366,7 +2419,7 @@ it’s a problem that needs solving&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-11-08:07.html</id>
     <title>"placeholder"</title>
-    <updated>2024-01-11T08:07:00+00:00</updated>
+    <updated>2024-01-11T09:00:55+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;"placeholder"&lt;/p&gt;
@@ -2468,8 +2521,8 @@ around the rubbish in the same way as it would any large rock or
 intrusion into it.&lt;/p&gt;
 
 
-&lt;p&gt;&lt;img src="/images/rock-garden.jpg"/&gt; &lt;em&gt;&lt;a href="https://commons.wikimedia.org/wiki/File:Harima-ankokuji-sekitei01.jpg"&gt;Picture
-of a Japanese rock garden by wikimedia user Jnn&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;figure&gt;&lt;img src="/images/rock-garden.jpg"/&gt; &lt;figcaption&gt;&lt;a href="https://commons.wikimedia.org/wiki/File:Harima-ankokuji-sekitei01.jpg"&gt;Picture
+of a Japanese rock garden by wikimedia user Jnn&lt;/a&gt;&lt;/figcaption&gt;&lt;/figure&gt;
 
 
 &lt;p&gt;This is often how my mind feels to me. Things appear in it from the
@@ -2517,8 +2570,8 @@ philosophy for the examples&lt;/a&gt;, where having a whole rich example for a
 concept makes it much more relevant.&lt;/p&gt;
 
 
-&lt;p&gt;&lt;img src="/images/duck-guy.png"/&gt; &lt;em&gt;Purple suited man riding a
-rocket duck, as you do.&lt;/em&gt;&lt;/p&gt;
+&lt;figure&gt;&lt;img src="/images/duck-guy.png"/&gt; &lt;figcaption&gt;Purple suited man riding a
+rocket duck, as you do.&lt;/figcaption&gt;&lt;/figure&gt;
 
 
 &lt;p&gt;Even in that post the images help. I’ve still got a concept for duck
