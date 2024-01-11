@@ -26,7 +26,9 @@ dl.metadata dd {
   margin-left: 1em 
 }
 
-#the-post p.subtitle { display: none; }
+#the-post p.subtitle, #the-essay p.subtitle { display: none; }
+
+#the-essay { margin-top: -2em; }
 
 h4 { font-style: italic;
      font-weight: 400;
@@ -49,4 +51,7 @@ ul#the-bibliography li {
     list-style-type: none;
 }
 
+nav#TOC ol li {
+    list-style-type: decimal;
+}
 
