@@ -55,3 +55,14 @@ nav#TOC ol li {
     list-style-type: decimal;
 }
 
+figure figcaption {
+    width: 100%;
+    margin: 0;
+    padding: 0 0 0 0;
+    text-align: center;
+    display: block;
+}
+
+figure {
+    display: block;
+}
