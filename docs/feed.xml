@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-01-11T09:00:55+00:00</updated>
+  <updated>2024-01-12T08:42:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,183 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2024-01-02-12:56.html</id>
-    <title>Is philosophy bad?</title>
-    <updated>2024-01-02T13:05:54+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Is philosophy bad?&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2024-01-02&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;This is a draft bankruptcy piece. It contains a few interesting
-things, but I abandoned it because it fundamentally didn’t work.&lt;/p&gt;
-
-
-&lt;p&gt;I threatened to write “Contra David Chapman on Philosophy” as a
-response to David’s repeated insistence that philosophy is bad. This
-piece isn’t exactly that, but it’s not exactly not that.&lt;/p&gt;
-
-
-&lt;h3 id="chavid-dapman-on-philosophy"&gt;Chavid Dapman on Philosophy&lt;/h3&gt;
-
-
-&lt;p&gt;Allow me to introduce my correspondent for this piece, Chavid Dapman.
-Chavid is a fictional character created by Claude to approximate David
-Chapman’s opinions on the subject. Given real world David Chapman’s
-opinions on AI, this is probably a very irritating thing of me to do.
-Sorry, David.&lt;/p&gt;
-
-
-&lt;p&gt;I’ve tried to inform Claude when I think Chavid says something that
-David wouldn’t, but this is an imperfect process. As Claude would put
-it, “Chavid Dapman is a fictional character created for narrative
-purposes. His critical opinions on philosophy should not be taken as
-precisely representative of thinker David Chapman’s more nuanced
-perspectives.”&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, here is Chavid’s opinion on philosophy:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Philosophy is an intellectual tradition that aims to find absolute
-answers to questions about life, knowledge, ethics, and existence
-through logic, thought experiments and reasoning. However, after
-thousands of years, philosophy has failed to deliver definitive answers,
-especially compared to the progress of science. Logic and thought
-experiments have clear limits. And philosophy tends to neglect empirical
-research and interactive empiricism.&lt;/p&gt;
-&lt;p&gt;Yet the deeper issue is that philosophy pursues misguided questions
-based on false assumptions, such as: What constitutes a good life? What
-is the meaning of existence? What is human consciousness? The search for
-abstract absolute answers presumes these are coherent topics, when they
-are not.&lt;/p&gt;
-&lt;p&gt;Philosophy goes astray in seeking universal essences, rather than
-understanding experience as an ongoing, embodied process. Contemplating
-pseudoproblems based on flawed metaphysics cannot elucidate anything. We
-should reject the search for absolute abstract answers and eternal
-philosophical truths. Philosophy needs to engage the physical world
-pragmatically and empirically.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;Editor’s note: I ran this by actual David Chapman and he doesn’t
-think it reflects his views at all and is instead a generic and not
-terribly well thought out critique. I agree.&lt;/p&gt;
-
-
-&lt;h3 id="i-like-philosophy"&gt;I like philosophy&lt;/h3&gt;
-
-
-&lt;p&gt;Let’s just get this out of the way: I like philosophy, and I get a
-lot out of it. Reading philosophy has been significantly life improving
-for me, and informed a lot of my thinking. This makes it hard for me to
-accept a blanket “philosophy is bad” claim when a lot of philosophy is
-clearly good for me, and I’m writing from that perspective.&lt;/p&gt;
-
-
-&lt;p&gt;There’s also plenty of philosophy I dislike. Frankly, it’s almost
-impossible to like a thing without this being true, because almost
-everything has good and bad examples, and also examples that are and
-aren’t to your tastes.&lt;/p&gt;
-
-
-&lt;p&gt;I think one of the differences between Chavids opinions of philosophy
-and mine are quite straightforwardly that I tend to think of the
-examples of philosophy that I like as sufficient evidence that
-philosophy is good, and Chavid tends to think of the examples of
-philosophy that he doesn’t like as sufficient evidence that philosophy
-is bad.&lt;/p&gt;
-
-
-&lt;p&gt;This disagreement is partly what Adam Mastroianni calls a &lt;a href="https://www.experimental-history.com/p/science-is-a-strong-link-problem"&gt;strong
-vs weak link problem&lt;/a&gt;. Some things are as strong as their weakest
-link, some as their strongest. With science (in Mastroianni’s example),
-progress doesn’t really depend on the worst science we’re doing but the
-best. I think the same is true of philosophy: Although there are many
-bad (both by my standards and theirs) examples of philosophy, there are
-also many good examples, and you can get value out of the good examples
-and mostly ignore the bad ones.&lt;/p&gt;
-
-
-&lt;p&gt;I think Chavid is basically right in saying that “a good life” is a
-bad abstraction (although I’m sympathetic to what happens to the
-question when you verb it, which is “How can you live well?” rather than
-“What is a good life?” - I think this is hard to answer, but worthwhile
-engaging with), but also this is almost never the sort of philosophy I
-read.&lt;/p&gt;
-
-
-&lt;p&gt;In contrast, here are two examples of philosophy I’ve got a lot out
-of:&lt;/p&gt;
-
-
-&lt;p&gt;“Games: Agency as Art” by C Thi Nguyen is a book about games, and
-what the fact that we play games tells us about humanity, and defending
-them as a distinctive form of art whose medium is constructing
-structures of agency. This book isn’t “empirical” in the sense that it
-gathers a lot of data, but is deeply engaged in the world by basically
-centring its philosophy on many games Nguyen has played.&lt;/p&gt;
-
-
-&lt;p&gt;“Epistemic Injustice” by Miranda Fricker is a book about ethics that
-consists of looking at a bunch of examples of things that are bad and
-saying “these seem to have some sort of shared distinctive character.
-What is it?”. Many of these examples are fictional, but even those feel
-like they connect to plausible shared experiences.&lt;/p&gt;
-
-
-&lt;p&gt;These are examples for me of the sort of thing philosophy really
-shines at: Pointing at something specific and going “There’s something
-interesting here. What is it?”. They don’t go astray into big abstract
-questions, but they use the same sort of methods that philosophers tend
-to engage with big abstract questions on and focus them on something
-specific and try to clarify our engagement with them.&lt;/p&gt;
-
-
-&lt;h3 id="where-was-this-going"&gt;Where was this going?&lt;/h3&gt;
-
-
-&lt;p&gt;That was the point at which I abandoned this. I would still like to
-write a pro philosophy piece, but I think arguing against David
-Chapman’s views on it is the wrong way to do it.&lt;/p&gt;
-
-
-&lt;p&gt;I like Joe Carlsmith’s &lt;a href="https://joecarlsmith.com/2023/02/17/seeing-more-whole"&gt;Seeing More
-Whole&lt;/a&gt; viewpoint, which is (in very brief summary) that philosophy is
-about using logical reasoning to discover what sorts of person it is
-possible to be. This seems an important viewpoint to me.&lt;/p&gt;
-
-
-&lt;p&gt;I’ve previously ha-ha-only-serious joked that the fundamental
-philosophical question is “That’s weird, right? You get that that’s
-weird?”. I think the big thing that I get out of good philosophy is that
-it forces you to actually look at the details of life and how it works,
-rather than implicitly skipping over the bits that don’t make sense.&lt;/p&gt;
-
-
-&lt;p&gt;This isn’t the first time I’ve tried to write that piece. &lt;a href="https://notebook.drmaciver.com/posts/2022-06-05-14:43.html"&gt;How to
-use philosophy&lt;/a&gt; is another similarly brief draft bankruptcy piece
-trying to do much the same thing.&lt;/p&gt;
-
-
-&lt;p&gt;&lt;a href="https://drmaciver.substack.com/p/reading-philosophy-for-the-examples"&gt;Reading
-Philosophy for the Examples&lt;/a&gt; and &lt;a href="https://drmaciver.substack.com/p/how-to-use-thought-experiments"&gt;How
-to use thought experiments&lt;/a&gt; maybe capture this better. Perhaps part
-of the problem is that I’ve tried to do too much with this topic and it
-needs something larger if I’m to write the whole thing. Or maybe just
-many smaller things.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2024-01-02-12:56.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-03-10:13.html</id>
     <title>Some Philosophy of Mathematics</title>
@@ -2352,7 +2175,7 @@ it’s a problem that needs solving&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-11-08:07.html</id>
     <title>Thinking in memes</title>
-    <updated>2024-01-11T09:00:55+00:00</updated>
+    <updated>2024-01-11T09:15:58+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Thinking in memes&lt;/p&gt;
@@ -2582,5 +2405,231 @@ thinking about.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2024-01-11-08:07.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2024-01-12-08:42.html</id>
+    <title>Working hours: A report on an anomaly</title>
+    <updated>2024-01-12T08:42:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Working hours: A report on an anomaly&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2024-01-12&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;One of my most read posts is &lt;a href="https://drmaciver.substack.com/p/people-dont-work-as-much-as-you-think"&gt;People
+don’t work as much as you think&lt;/a&gt;. In it, I report:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Here is my estimate of how much work I can get done in a day:&lt;/p&gt;
+&lt;ol type="1"&gt;
+&lt;li&gt;Most days I can do somewhere between one and two hours of hard
+thinky work. Writing, programming, etc. Good days or easy tasks it might
+be three. It’s rarely four, and over a week almost never averages more
+than two.&lt;/li&gt;
+&lt;li&gt;I can probably do some low effort reading, not very high quality
+code review (more at the level of “scan for obvious flaws” than “do an
+in depth study of the design”) on top of that without it massively
+eating into my energy levels.&lt;/li&gt;
+&lt;li&gt;Four hours of coaching in a day, i.e. face to face time in which I
+have to be on and intelligently responding, is pretty close to my
+absolute limit - I can do five in a push but I will not be very
+competent for the fifth - and I cannot do this two days running. I have
+estimated 20 hours to be my absolute upper bound for coaching I could do
+in a week, and I’ve set my comfortable limit as 10 hours if I want to be
+able to maintain little things like getting any writing done or having
+remotely functional mental health1.&lt;/li&gt;
+&lt;li&gt;I can probably do 4-6 hours of very routine stuff (e.g. mostly
+mechanical refactoring of code).&lt;/li&gt;
+&lt;li&gt;I can sometimes do 4-6 hours of flow-state work (e.g. debugging a
+hard problem). This requires a problem with tight feedback loops, no
+interruptions, and a good physical and mental health day. I almost never
+get this combination at the moment, and when I had normal jobs this
+happened maybe a couple of times per year for a few days running at most
+each time.&lt;/li&gt;
+&lt;li&gt;Idlework, where I think about a problem in the background while
+going for a walk or having a shower or the like, is mostly free.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;I’ve got longstanding problems with &lt;a href="https://twitter.com/DRMacIver/status/1711673235891257441"&gt;stamina&lt;/a&gt;
+and energy levels that I want to improve. My health isn’t great, and I
+suffer from something that isn’t really chronic fatigue but is certainly
+chronic and certainly fatigue. It’s what the doctors dismissively call
+“tired all the time”.&lt;/p&gt;
+
+
+&lt;p&gt;A lot of these things feel like very intrinsic hard limits where it’s
+not that I don’t want to do more, it’s that I hit some sort of block
+where my brain stops working and I couldn’t do more if I wanted.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, recently (last few weeks, plus a good chunk of December) I’ve
+been working pretty solid six to eight hour days. I’ve also been ending
+these days… mostly fine? I’m noticeably a bit tired, but it’s not like I
+get to the end of the day and I’m dead. I’ve felt much worse on days
+I’ve done much less.&lt;/p&gt;
+
+
+&lt;p&gt;I don’t know if this will continue to be the case. I doubt it’s fully
+long-term sustainable,&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;and even if it is, it’s come with some fairly
+significant downsides in terms of available capacity for non-work things
+which is a problem.&lt;/span&gt; but it also doesn’t feel like I’ve
+been pushing myself &lt;em&gt;especially&lt;/em&gt; hard to achieve it.&lt;/p&gt;
+
+
+&lt;p&gt;As the rationalists say, I notice that I am confused.&lt;/p&gt;
+
+
+&lt;p&gt;Part of this is definitely a mix of my schedule and the project I’m
+on. Here’s roughly how that goes:&lt;/p&gt;
+
+
+&lt;ol type="1"&gt;
+&lt;li&gt;I wake up whenever I like&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Or at least whenever my body likes, which is not always
+the same thing.&lt;/span&gt;. Sometimes to an alarm,
+often not. This might be any time between 7AM (if I’ve slept well and
+got to bed on time) or 10AM (if I haven’t or didn’t).&lt;/li&gt;
+&lt;li&gt;The morning is mostly not spent working. I check project Slack, I
+check on any jobs that have run overnight, anything I want to be ready
+for the afternoon I start running and write whatever I need to do to
+enable that. On a busy morning or one that starts early this might add
+up to two hours work. Most mornings it’s probably somewhere in the half
+hour to hour region. Mostly though I potter around, do home things,
+write, etc, and do whatever is needed to gradually become human.
+Sometimes I eat breakfast, sometimes I don’t.&lt;/li&gt;
+&lt;li&gt;At around noon through one I have lunch. This is usually a full
+meal.&lt;/li&gt;
+&lt;li&gt;At 1PM I switch into full on work mode. I work pretty solidly on
+code for the next four hours until people in US time zones start waking
+up.&lt;/li&gt;
+&lt;li&gt;From about 5PM to 7PM I may still be working solo but I’m probably
+in calls or meetings for at least half of it.&lt;/li&gt;
+&lt;li&gt;As close to 7PM sharp as I can, I close my work computer and stop
+working.&lt;/li&gt;
+&lt;li&gt;Sometimes I’ll do about another half an hour of work over the course
+of the rest of the evening as I check on running jobs, etc. I try not
+to.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;Most of these details feel essential to how much I’ve been getting
+done - the flexible mornings, the large chunk of flow state work, the
+transition out of flow state work to work with other people, and the
+hard cut off.&lt;/p&gt;
+
+
+&lt;p&gt;I don’t &lt;em&gt;think&lt;/em&gt; these are sufficient though. Certainly I’ve
+had, you know, jobs before, and I wasn’t this reliably productive in
+them. What I’m describing would be possible on a good day, but good days
+were in short supply.&lt;/p&gt;
+
+
+&lt;p&gt;Here’s a list of everything that might be being helpful about the
+work itself:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;It might be the nature of the work. It’s at a very good level for me
+where it’s at the cutting edge of my skill but not beyond it. There’s
+always something I can obviously do, but it’s never obvious that it’s
+going to work and I’m constantly having to learn new things in order to
+do it (while generally being able to learn them as I go rather than
+having a huge amount of moving parts all of which I have to stand)&lt;/li&gt;
+&lt;li&gt;This is the most consistently my primary focus has been on writing
+code in a while and I’ve definitely spent the last few years starved for
+&lt;a href="https://drmaciver.substack.com/p/two-types-of-work"&gt;crunchy
+work&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;There’s very little uncertainty in what I do next. The incoming task
+queue is very well saturated.&lt;/li&gt;
+&lt;li&gt;The fact that I do not usually have meetings until the end of the
+day helps a lot.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;And some tmore general things:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;I quit caffeine for a while and resumed in mid December, and my
+caffeine intake has been gradually ramping up in line with this, so it’s
+very plausible that I am currently in a period where caffeine actually
+works for the first time in a while and that’s helping.&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;My relationship with caffeine is so annoyingly
+problematic. It’s both great for me and terrible for me.&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;I am working in a room with a very bright corn bulb, which I started
+doing to combat seasonal depression. I started this year &lt;em&gt;very&lt;/em&gt;
+depressed before I got back into the swing of things, so clearly
+something is working for that.&lt;/li&gt;
+&lt;li&gt;Relatedly, I started daily writing again a little bit before my
+productivity took off at the beginning of this year, and that too has
+been very helpful for depression.&lt;/li&gt;
+&lt;li&gt;My diet is OK at the moment (not great) and I’m taking a probiotic
+pretty reliably.&lt;/li&gt;
+&lt;li&gt;I’m doing regular pilates and jumping on a trampoline a lot&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;We made it for the child, but I’m the second biggest
+user. Well, I’m the biggest user, but I’m the second most frequent
+user.&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;The pilates has significantly reduced my chronic joint pain
+issues.&lt;/li&gt;
+&lt;li&gt;Things are going pretty well in my personal life. Not perfectly,
+everything is more than a bit stressful right now, but on balance
+everything is trending in a good direction.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;Here’s are some things that it probably isn’t:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://notebook.drmaciver.com/posts/2023-02-14-23:37.html"&gt;Inositol&lt;/a&gt;.
+I’ve been forgetting to take it reliably recently. I should fix that but
+it hasn’t felt necessary.&lt;/li&gt;
+&lt;li&gt;Other supplements. I was trying a whole bunch of things before and I
+mostly lost the habit and haven’t resumed. I’m drinking &lt;a href="https://drinkag1.com/en-uk"&gt;Athletic Greens&lt;/a&gt; a couple times a
+week when it feels like I’m lacking in something, but I don’t know if
+that’s really doing anything.&lt;/li&gt;
+&lt;li&gt;Non-caffeine stimulants. “Take amphetamines” is the most common
+advice I’ve seen for this level of hyper productivity. I haven’t needed
+to take amphetamines to achieve this. I experimented a bit with nicotine
+lozenges in December but it mostly made me nauseous (I’ve had some luck
+with it before and may try again).&lt;label class="margin-toggle sidenote-number" for="fn5"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn5" type="checkbox"/&gt;&lt;span class="sidenote"&gt;That being said, my state of mind does feel a bit like
+it used to when I took modafinil, a thing I definitely did legally and
+with a prescription don’t do drugs kids. There’s a similar level of
+singlemindedness of focus and slight irritability at things that intrude
+on that focus. I’m even ending the day with my appetite feeling somewhat
+suppressed. But this is genuinely without taking any stimulant stronger
+than caffeine so no idea why.&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Some fundamental shift in the nature of my being. It doesn’t feel
+unprecedented to have days like this, only to have them this reliably.
+All of the sensations are familiar, it’s just unfamiliar that it keeps
+happening.&lt;/li&gt;
+&lt;li&gt;I don’t think I’ve actually fixed my health problems. They’re all
+still there, they just feel less like bottlenecks right now.&lt;/li&gt;
+&lt;li&gt;My chronic headaches are still there and in fact I have a mild
+headache most of the time right now.&lt;label class="margin-toggle sidenote-number" for="fn6"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn6" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Another thing that feels similar to taking modafinil.&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;Another thing maybe worth noting is that there was a significantly
+dip in this around the end of the holiday season. As mentioned, I
+started the year massively depressed, and it took a little bit to get
+back into the flow of it, and I had to gradually ramp up into this state
+over a period of a few days.&lt;/p&gt;
+
+
+&lt;p&gt;My best guess is that the core of it is that spending energy is
+actually energising rather than debilitating, as long as you can
+experience the demands on you as eustress rather than destress. I’m not
+sure I’ll be able to continue that, and it’s very very likely that
+there’s some sort of hidden precondition that I’ve not identified, but
+fingers crossed that it stays this way.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2024-01-12-08:42.html" rel="alternate"/>
   </entry>
 </feed>
