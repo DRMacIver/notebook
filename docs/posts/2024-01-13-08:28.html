@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+DRMacIver's Notebook: Writing good programming abstractions
+    </title>
+
+    <meta property="og:title" content="Writing good programming abstractions">
+
+    <meta property="og:url" content="https://notebook.drmaciver.com/posts/2024-01-13-08:28.html" />
+    <link rel="canonical" href="https://notebook.drmaciver.com/posts/2024-01-13-08:28.html" />
+    <script src="https://hypothes.is/embed.js" async></script>
+
+
+    <meta name="twitter:card" content="summary" />
+
+    <meta property="og:creator" content="@DRMacIver">
+
+    <link rel="stylesheet" href="/pandoc.css"/>
+    <link rel="stylesheet" href="/pygments.css"/>
+    <link rel="stylesheet" href="/tufte.css"/>
+    <link rel="stylesheet" href="/latex.css"/>
+    <link rel="stylesheet" href="/drmnotes.css"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
+});
+
+MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
+  console.log(message)
+});
+
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169185204-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169185204-1');
+</script>
+
+  </head>
+
+  <body>
+    <article>
+        <h1><a href="/">DRMacIver's Notebook</a></h1>
+        <p class=subtitle>Writing good programming abstractions</p>
+
+        
+
+<section id="the-post">
+<p class=subtitle>Writing good programming abstractions</p>
+<dl class=metadata>
+<dt>Published</dt>
+<dd class="post-date">2024-01-13</dd>
+</dl>
+
+<p>I was talking to <a href="https://nelhage.com/">Nelson</a> about
+programming abstractions the other day, and how you identify a good
+abstraction, and I hit on a heuristic that once I suggested it seemed
+obviously correct to me but that is very at odds with how I think people
+normally think about introducing abstractions in their codebase.<label class="margin-toggle sidenote-number" for="fn1"></label><input class="margin-toggle" id="fn1" type="checkbox"/><span class="sidenote">I don’t mean anything fancy by abstraction. Implementing
+a new class or a new function for example.</span></p>
+<p>It’s this: When you introduce an abstraction, it has to be an
+improvement at each call site. That is, even if you never reuse it, it
+should be make your code better.</p>
+<p>Another way of thinking about this: If you implemented this, and then
+you deleted all but one of the call sites, would you be tempted to
+inline the abstraction? If yes, you shouldn’t do it. If you were in a
+fresh codebase and wanted to do something similar to your previous uses
+of the abstraction, would you inclined to copy the previous abstraction
+into your codebase in order to make use of it? That’s a sign that it’s
+probably a pretty good abstraction.</p>
+<p>In contrast, I think most people’s intuitions about abstraction are
+around reducing code duplication. You introduce a function when you see
+duplicate code, because duplicate code is bad and you want to reduce it.
+I think this intuition is almost entirely wrong. It leads you to create
+bad abstractions, sometimes where you didn’t even need one at all, and
+it also means you miss important abstractions that you could have
+introduced even without any duplication.</p>
+<p>Now, it’s not that duplication can’t be the <em>prompt</em> for
+abstraction. In the conversation Nelson and I were having, I’d
+introduced a class that managed a bunch of state for gathering
+statistics about some work in progress and doing cleanup when particular
+conditions were met. Originally I wrote that logic and state inline in
+the class managing those tasks. Then I needed it again, in a slightly
+different way with slightly different constraints, so I extracted a
+class for the common state and logic. This is a perfectly reasonable
+example of abstraction in the classic sense of reducing duplication.</p>
+<p>But also, even before I’d written the second call site, the code got
+much cleaner, because doing this made me think about the actual
+interface I wanted, and I replaced a bunch of raw calls to heapq and set
+management with a nice API that declared what I was actually doing. This
+was a big improvement.</p>
+<p>The repetition served the following purposes:</p>
+<ol type="1">
+<li>It was a <em>prompt</em> to think “Can I abstract this?”</li>
+<li>By the fact that I had needed it twice, I had a better idea of how
+to abstract it.</li>
+<li>It <em>justified the work of making the abstraction</em>.</li>
+</ol>
+<p>The third is an important clarification of the heuristic: It’s not
+that the abstraction has to be justifiable without the duplication.
+There are two things to consider when making a change: How much of an
+improvement it is, and how much effort it is to implement. An
+abstraction that is a lot of work for only a mild improvement might not
+be worth it for one call site but clearly worth it if you’re going to
+use it in multiple places.</p>
+<p>I think the best way to think about abstraction is that its purpose
+is to <em>make programming less annoying</em>. Writing the same code
+over and over again is annoying, and abstraction can reduce that
+annoyance, but it only reduces the annoyance if the abstracted code is
+actually less annoying than repeating yourself.</p>
+<p>This judgement of annoyance does of course require developing a
+degree of taste, which makes it somewhat uninformative if you’re just
+starting out. Here are some ways code can be annoying that’s worth
+factoring out:</p>
+<ul>
+<li>If you’ve got multiple pieces of state that are always used
+together, it can be worth putting them together into an object if you
+can figure out a clean API for that object.</li>
+<li>Similarly, if there are a lot of intermediate variables that aren’t
+used outside of calculation, it might be worth extracting a function to
+reduce their visibility - it means you don’t have to keep track of where
+they’re used, and it’s harder to make stupid typos where you
+accidentally refer to a different variable where you mean.</li>
+<li>If a function is really hard to follow, it can be worth extracting
+parts of it into smaller functions. e.g. recently I refactored a
+function to just extract the bodies of various branches of an if
+statement into functions. Those functions will never be called from
+anywhere else, but the control flow of the code was impossible to follow
+in a way that had previously masked a bug.</li>
+<li>If code is irritating to get right, it can be worth thinking about
+whether there is an abstraction that makes it easier to get right. For
+example, it can be useful to factor out error handling into context
+managers in Python.</li>
+<li>Sometimes there is a sort of logical “abstract algorithm” to code
+that is worth factoring out into a higher order function. e.g. I’ve
+talked about <a href="https://notebook.drmaciver.com/posts/2019-04-30-13:03.html"><code>find_integer</code></a>
+before, which I end up reusing all over the place.</li>
+</ul>
+<p>In the other direction, it’s probably better not to introduce an
+abstraction if:</p>
+<ul>
+<li>It requires introducing a function with a lot of arguments.</li>
+<li>It significantly increases the number of lines of code when you
+first introduce it at one call site.</li>
+<li>The abstraction is significantly complicated by different needs from
+different call sites.</li>
+</ul>
+<p>In general, I think it’s worth erring on the side of not abstracting.
+If you’re not feeling the pain of not abstracting, it’s probably
+fine.</p>
+<p>For example, here’s some code I often write variations of<label class="margin-toggle sidenote-number" for="fn2"></label><input class="margin-toggle" id="fn2" type="checkbox"/><span class="sidenote">I work on test-case reduction, so this sort of thing
+comes up a lot. I’m aware that almost nobody else regularly needs to
+write code that looks like this. Also yes I’m aware of the quadratic
+nature of this code. It’s fine, I promise. It’s not <a href="https://accidentallyquadratic.tumblr.com/">accidentally
+quadratic</a>, it’s intrinsically quadratic because the
+<code>can_delete</code> checks are already O(n) and have much higher
+constant factors.</span>:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a aria-hidden="true" href="#cb1-1" tabindex="-1"></a>i <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb1-2"><a aria-hidden="true" href="#cb1-2" tabindex="-1"></a><span class="cf">while</span> i <span class="op">&lt;</span> <span class="bu">len</span>(ls):</span>
+<span id="cb1-3"><a aria-hidden="true" href="#cb1-3" tabindex="-1"></a>    <span class="cf">if</span> can_delete(ls, i):</span>
+<span id="cb1-4"><a aria-hidden="true" href="#cb1-4" tabindex="-1"></a>        <span class="kw">del</span> ls[i]</span>
+<span id="cb1-5"><a aria-hidden="true" href="#cb1-5" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb1-6"><a aria-hidden="true" href="#cb1-6" tabindex="-1"></a>        i <span class="op">+=</span> <span class="dv">1</span> </span></code></pre></div>
+<p>And this code is a bit fiddly and I could definitely do something
+along the lines of:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a aria-hidden="true" href="#cb2-1" tabindex="-1"></a><span class="kw">class</span> DeletableListIterator:</span>
+<span id="cb2-2"><a aria-hidden="true" href="#cb2-2" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, ls):</span>
+<span id="cb2-3"><a aria-hidden="true" href="#cb2-3" tabindex="-1"></a>        <span class="va">self</span>.ls <span class="op">=</span> ls</span>
+<span id="cb2-4"><a aria-hidden="true" href="#cb2-4" tabindex="-1"></a>        <span class="va">self</span>.i <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb2-5"><a aria-hidden="true" href="#cb2-5" tabindex="-1"></a></span>
+<span id="cb2-6"><a aria-hidden="true" href="#cb2-6" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__iter__</span>(<span class="va">self</span>):</span>
+<span id="cb2-7"><a aria-hidden="true" href="#cb2-7" tabindex="-1"></a>        <span class="cf">while</span> <span class="va">self</span>.i <span class="op">&lt;</span> <span class="bu">len</span>(<span class="va">self</span>.ls):</span>
+<span id="cb2-8"><a aria-hidden="true" href="#cb2-8" tabindex="-1"></a>            <span class="cf">yield</span> <span class="va">self</span>.i</span>
+<span id="cb2-9"><a aria-hidden="true" href="#cb2-9" tabindex="-1"></a>            i <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb2-10"><a aria-hidden="true" href="#cb2-10" tabindex="-1"></a></span>
+<span id="cb2-11"><a aria-hidden="true" href="#cb2-11" tabindex="-1"></a>    <span class="kw">def</span> delete(<span class="va">self</span>):</span>
+<span id="cb2-12"><a aria-hidden="true" href="#cb2-12" tabindex="-1"></a>        <span class="kw">del</span> <span class="va">self</span>.ls[<span class="va">self</span>.i]</span>
+<span id="cb2-13"><a aria-hidden="true" href="#cb2-13" tabindex="-1"></a>        <span class="va">self</span>.i <span class="op">-=</span> <span class="dv">1</span></span></code></pre></div>
+<p>And then I could use this as:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a aria-hidden="true" href="#cb3-1" tabindex="-1"></a>list_iterator <span class="op">=</span> DeletableListIterator(ls)</span>
+<span id="cb3-2"><a aria-hidden="true" href="#cb3-2" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> list_iterator:</span>
+<span id="cb3-3"><a aria-hidden="true" href="#cb3-3" tabindex="-1"></a>    <span class="cf">if</span> can_delete(ls, i):</span>
+<span id="cb3-4"><a aria-hidden="true" href="#cb3-4" tabindex="-1"></a>        list_iterator.delete()</span></code></pre></div>
+<p>And it’s not really an improvement. I find this if anything slightly
+harder to follow than the original, though there’s not much in it. But
+more importantly, sometimes I want to write code like the following:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a aria-hidden="true" href="#cb4-1" tabindex="-1"></a>i <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb4-2"><a aria-hidden="true" href="#cb4-2" tabindex="-1"></a><span class="cf">while</span> i <span class="op">&lt;</span> <span class="bu">len</span>(ls):</span>
+<span id="cb4-3"><a aria-hidden="true" href="#cb4-3" tabindex="-1"></a>    <span class="cf">if</span> can_delete(ls, i, i <span class="op">+</span> k):</span>
+<span id="cb4-4"><a aria-hidden="true" href="#cb4-4" tabindex="-1"></a>        <span class="kw">del</span> ls[i:i<span class="op">+</span>k]</span>
+<span id="cb4-5"><a aria-hidden="true" href="#cb4-5" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb4-6"><a aria-hidden="true" href="#cb4-6" tabindex="-1"></a>        i <span class="op">+=</span> <span class="dv">1</span> </span></code></pre></div>
+<p>And now I need to fiddle with the implementation to support this
+too.</p>
+<p>There is almost certainly an abstraction that would make support this
+well - e.g. from what I know of C++’s iterator protocol it seems
+probably actually quite good for this.</p>
+<p>But also… this code is fine without it? It’s a bit weird, and
+slightly ugly, but it’s not actually hard to get right, it’s not a lot
+longer than it needs to be, and once you’re familiar with the pattern
+it’s pretty straightforward to work with.</p>
+<p>None of this is to discourage you from creating abstractions in
+general. I’m a big fan of well factored code. But it’s easy to abstract
+too much, or abstract the wrong things, and I think paying attention to
+what’s irritating about working on your codebase and fixing that is a
+good way to prioritise.</p>
+
+
+</section>
+
+    </article>
+<footer>
+Copyright David R. MacIver.
+
+CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
+</footer>
+  </body>
+</html>
