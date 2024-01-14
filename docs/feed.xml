@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-01-14T09:41:44+00:00</updated>
+  <updated>2024-01-14T09:54:36+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -2123,7 +2123,7 @@ good way to prioritise.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-14-09:38.html</id>
     <title>Defining definition</title>
-    <updated>2024-01-14T09:41:44+00:00</updated>
+    <updated>2024-01-14T09:54:36+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Defining definition&lt;/p&gt;
@@ -2568,6 +2568,14 @@ intuitive sense of.&lt;/p&gt;
 &lt;p&gt;In contrast “a voluntary attempt to overcome unnecessary obstacles”
 is pretty intuitively comprehensible and it is easy to see its gamelike
 structure.&lt;/p&gt;
+
+
+&lt;h3 id="afterword"&gt;Afterword&lt;/h3&gt;
+
+
+&lt;p&gt;And that’s where it randomly cuts off. Chalk this one up to another
+victim of “things I wish other people understood but that I don’t find
+worth the effort of explaining”&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2024-01-14-09:38.html" rel="alternate"/>
