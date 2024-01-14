@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+DRMacIver's Notebook: Defining definition
+    </title>
+
+    <meta property="og:title" content="Defining definition">
+
+    <meta property="og:url" content="https://notebook.drmaciver.com/posts/2024-01-14-09:38.html" />
+    <link rel="canonical" href="https://notebook.drmaciver.com/posts/2024-01-14-09:38.html" />
+    <script src="https://hypothes.is/embed.js" async></script>
+
+
+    <meta name="twitter:card" content="summary" />
+
+    <meta property="og:creator" content="@DRMacIver">
+
+    <link rel="stylesheet" href="/pandoc.css"/>
+    <link rel="stylesheet" href="/pygments.css"/>
+    <link rel="stylesheet" href="/tufte.css"/>
+    <link rel="stylesheet" href="/latex.css"/>
+    <link rel="stylesheet" href="/drmnotes.css"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
+});
+
+MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
+  console.log(message)
+});
+
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169185204-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169185204-1');
+</script>
+
+  </head>
+
+  <body>
+    <article>
+        <h1><a href="/">DRMacIver's Notebook</a></h1>
+        <p class=subtitle>Defining definition</p>
+
+        
+
+<section id="the-post">
+<p class=subtitle>Defining definition</p>
+<dl class=metadata>
+<dt>Published</dt>
+<dd class="post-date">2024-01-14</dd>
+</dl>
+
+<p>Another abandoned draft, this one dredged up from an old Google doc.
+It was meant to be part of a longer book-length project but I lost
+steam, because that’s what happens when I undertake longer book-length
+projects.</p>
+<hr/>
+<p>When we use a word, we might know exactly what we mean by it, but
+unless other people know what we mean by it our use of it isn’t very
+useful. If I wrote a long essay about the strengths and weaknesses of
+incorporating scamprooft<label class="margin-toggle sidenote-number" for="fn1"></label><input class="margin-toggle" id="fn1" type="checkbox"/><span class="sidenote">These are of course all completely made up words.</span> into our florbnoggle practices, this
+would not be very helpful to a reader that doesn’t know what scamprooft
+is and hasn’t ever practised florbnoggle in their life.<label class="margin-toggle sidenote-number" for="fn2"></label><input class="margin-toggle" id="fn2" type="checkbox"/><span class="sidenote">Of course, such a reader probably won’t benefit from
+reading such an essay in most circumstances, but they might if you can
+adequately communicate them that florbnoggling is basically the same as
+bungipopping, a practice they are quite familiar with, except you zeft
+when in bungipopping you would smork.</span> We
+can solve this problem by giving people <em>definitions</em> of concepts
+we are using that they might not be familiar with, in order to help them
+understand what we mean by them.</p>
+<p>A definition, informally, is an explanation of what some concept
+(usually labelled with a word or a phrase) means. That is, it tells you
+how to apply the concept.<label class="margin-toggle sidenote-number" for="fn3"></label><input class="margin-toggle" id="fn3" type="checkbox"/><span class="sidenote">“Definition” is used in a variety of other related ways.
+For example, you can “define the problem”, you can “define the terms of
+an agreement” etc. When I talk about definitions in this chapter, I
+don’t mean those senses, I mean specifically defining the meaning of
+some term.</span></p>
+<p>The key thing that a definition lets you do is understand when some
+item fits the concept. This provides you with <em>conditions</em>
+(things you can check) that allow you to tell whether something is an
+instance of that concept or not. That is, a definition is supposed to
+communicate to you some sort of decision procedure that you can use to
+check whether the concept applies in a given instance.</p>
+<p>Most definitions we use in practice are in some sense incomplete -
+there will be some things that the definition gives you a clear yes to,
+some that it gives you a clear no to, and a large class of states
+(often, but not always, somewhere between the two) where it doesn’t give
+you a clear answer. Sometimes that’s a limitation of the definition and
+a better definition would decide between them, sometimes it’s just that
+the precise boundary is just genuinely fuzzy.</p>
+<p>Additionally, some things are just extremely hard to define without
+introducing some sort of circularity or non-linguistic explanation. We
+explain the colour “red” by pointing to red things until you get the
+pattern.</p>
+<p>Defining things perfectly is hard to impossible, and often even
+undesirable, but some amount of definition is necessary if we’re to be
+able to communicate at all. This chapter is about how to use definitions
+well, and to do that we’re going to have to dig in to what a definition
+actually does, and how to take advantage of definition’s strengths while
+compensating for its weaknesses.</p>
+<h3 id="necessary-and-sufficient-conditions">Necessary and sufficient
+conditions</h3>
+<p>The <em>ideal</em> of a definition is the sort of definition you
+would see in mathematics, which takes some concept and provides strict
+necessary and sufficient rules for when it applies. For example: a
+square is a shape with four straight sides, all of equal lengths, and
+each corner having the same angle.</p>
+<p>What it means to say that these are <em>necessary</em> conditions is
+that if something doesn’t satisfy all of them it is not a square. For
+example, an equilateral triangle is a shape with three straight sides,
+all of equal lengths, and each corner having the same angle. You can
+tell that it’s not a square because it fails the condition of having
+four straight sides even though it satisfies all the others.</p>
+<p>What it means to say that these are <em>sufficient</em> conditions is
+that if something satisfies all of them it’s definitely a square.
+There’s no possibility of saying “Oh whoops I forget that there’s a
+secret extra requirement”, these conditions lay out what it means to be
+a square and anything that satisfies them is one. We will often write
+sufficient conditions as an “if” statement. e.g. “A shape is a square
+if…”.</p>
+<p>To look it another way: A necessary condition is something you can
+check in order to show that an item of interest <em>isn’t</em> the
+thing. A sufficient condition tells you something you can check to show
+that an item of interest <em>is</em> the thing. We will often write
+necessary conditions as an “only if” statement. e.g. “A shape is a
+square only if…”.</p>
+<p>Having a set of conditions which is both necessary and sufficient is
+very convenient because it gives you a precise</p>
+<p>It’s possible to have sets of conditions that are necessary but not
+sufficient.</p>
+<p>For example, you <em>weaken</em> a set of necessary conditions by
+removing parts and they’ll still be necessary, so e.g. “a shape with
+four sides of equal lengths” is a condition that is necessary for being
+a square (every square has four sides with equal lengths) but not
+sufficient because e.g. a rhombus (a square which has been skewed so
+that all sides have equal lengths but some corners are pointier than
+others) satisfies these but is not a square.</p>
+<p>Similarly you can <em>strengthen</em> a set of sufficient conditions
+and still have a set of sufficient conditions. e.g. Anything satisfying
+“a shape with four sides of length one and all angles equal” is a
+square, but a square with sides of length two does not satisfy these
+conditions so they are not necessary.</p>
+<p>Generally with non-mathematical objects we’re not so lucky as to have
+simple necessary and sufficient conditions. Those that are tend to refer
+to human-constructed concepts that are built as having necessary and
+sufficient conditions deliberately. e.g. legal concepts tend to come
+with a very explicit decision procedure for determining that they apply.
+You’re “officially married in the country of X”<label class="margin-toggle sidenote-number" for="fn4"></label><input class="margin-toggle" id="fn4" type="checkbox"/><span class="sidenote">Normally one would just say “married” here, but this
+blurs multiple related but distinct concepts together, and also elides
+historical marriages from before state records begin.</span> if
+you’re officially recorded as married in X or by some country whose
+marriages are recognised by X (and if your marriage is of a type that is
+recognised by as permissible by X due to e.g. constraints on gender).<label class="margin-toggle sidenote-number" for="fn5"></label><input class="margin-toggle" id="fn5" type="checkbox"/><span class="sidenote">It’s almost certainly more complicated than this. I am
+not a lawyer.</span></p>
+<p>For things that are more about describing things that actually exist
+in the physical world, what you tend to find is that it’s easy to
+provide sufficient conditions and it’s easy to provide necessary
+conditions, but there’s a large gap in the middle. e.g. the sorites
+paradox (how many grains of sand count as a heap?) can be thought of as
+being about this gap: It’s easy to provide a sufficient condition
+(e.g. if you’ve got between one and two million grains in a pile, that
+counts as a heap), it’s easy to provide a necessary condition (e.g. you
+need more than one grain to count as a heap), but somewhere in the
+middle the question gets hard to resolve. You’ll have this problem with
+most continuous quantities - how tall do you have to be before you count
+as tall? How old do you have to be before you count as elderly? There
+isn’t a clear boundary, but it’s easy to create necessary conditions and
+easy to create sufficient conditions, it’s just not easy to create
+conditions that are both.</p>
+<p>Running into problems like this is often what stops people coming up
+with good definitions for things: They are aiming for a mathematical
+style set of necessary-and-sufficient conditions, this doesn’t work, and
+then they give up on the whole thing as indefinable.</p>
+<p>In fact, definitions are perfectly possible for real-world concepts.
+We have to give up on them being as nice as mathematical definitions,
+but we can still use them to provide people with helpful handles on what
+we mean, and it starts by recognising that we’re often going to want to
+provide separate necessary conditions and sufficient conditions, and
+we’ll almost always have ambiguous edge cases that any definition we
+provide won’t cover. This doesn’t stop them being useful.</p>
+<p>For example, a necessary condition for being a definition is that it
+is an attempt to explain what a term means using language. This is not a
+sufficient condition (e.g. talking about the history of the use of a
+term satisfies this condition but is not really a definition).</p>
+<p>A sufficient condition for something being a definition is that it
+has the form “A (term) is a (thing) which…”. This gives you something
+very like the mathematical type of definition, and you can sure that
+something that looks like this is, or at least can function as, a
+definition.</p>
+<p>Much of the interesting work of defining things lies between the
+regions set by these two conditions.</p>
+<h3 id="ostensive-definition">Ostensive Definition</h3>
+<p>One useful way of defining things is by <em>ostensive
+definition,</em> which means roughly “definition by showing”.
+Classically, you point out a bunch of examples and define your term as
+meaning “this sort of thing”. When you see it in writing it will often
+look like “By this term, I mean things like…”</p>
+<p>Ostensive definition as defined this way is bad and I don’t like it,
+but the thing that it is trying to point to is good, so I’m going to
+shamelessly redefine the term (in a way that includes the original
+usage) as meaning a definition which uses examples in some essential way
+(i.e. not just as illustrations of some point).</p>
+<p>The limitation of definition by just pointing at examples is this:
+You can think of an example of a concept as being an <em>extremely</em>
+specific sufficient condition, and you need at least some sort of
+necessary condition preventing you from generalising that condition too
+far. “You see this thing? It’s a cat.” gives you a sufficient definition
+for being a cat, but it doesn’t tell you what else is a cat. It would be
+perfectly reasonable from this one example to assume that cat meant, for
+example, animal, and start calling dogs cats as well.<label class="margin-toggle sidenote-number" for="fn6"></label><input class="margin-toggle" id="fn6" type="checkbox"/><span class="sidenote">This isn’t pedantry! It’s an actual problem in language
+acquisition, both first language and foreign languages.</span> At
+the bare minimum, defining things ostensively requires you to point at
+both examples of the concept and non-examples of the concept.</p>
+<p>In theory, you can define anything you like ostensively as long as
+you’re able to interact with the recipient. You give them a bunch of
+examples, and then they point at more examples and you say whether they
+are or aren’t an instance of the thing.</p>
+<p>In practice, most of the time, this doesn’t work very well. Both
+because you’re not necessarily getting to interact with the people
+you’re defining things for (e.g. if you’re writing it down), and also
+it’s very slow because it can take a very long time for them to figure
+out the right decision procedure for the concept.</p>
+<p>The problem is that people are not necessarily generalising in the
+way that you want them to. If you show them a bunch of examples and they
+come up with a rule for distinguishing them, there can be many rules
+that work.This means that they will consistently have errors in their
+understanding of the concept.</p>
+<p>Worse, often you won’t even be able to <em>tell</em> what those
+errors are, because either they’re in important but rare edge cases, or
+the back-and-forth testing has blind spots because they’re looking for
+examples that confirm their theory<label class="margin-toggle sidenote-number" for="fn7"></label><input class="margin-toggle" id="fn7" type="checkbox"/><span class="sidenote">There’s a classic experiment called the Wason reflection
+task which asks you which cards you need to turn over to see if a rule
+is satisfied. People very regularly fail to turn over the cards that
+they would need to determine that the rule <em>isn’t</em> satisfied. For
+example, given the rule “if a card shows an even number on one face,
+then its opposite face is blue”, you need to turn over red cards and
+even cards, but instead people turn over blue cards, which can provide
+no information. People don’t tend to show this error in subjects with
+which they’re familiar, but they do show it with subjects with which
+they’re not, which is exactly the situation you find yourself in when
+learning a new concept.</span>, and you don’t
+understand what the examples you need to show their theory is wrong are
+because you don’t know what their theory is.</p>
+<p>You can solve, or at least mitigate this, by giving each of your
+examples a generalisation - in the case of a positive example (an
+example where the concept holds), a sufficient condition that that
+example satisfies that makes it an instance of the concept, and in the
+case of a negative example (an example where the concept doesn’t hold) a
+necessary condition it fails to satisfy.</p>
+<p>For example, I’ve given you a couple of examples of definitions, but
+I haven’t given you examples of things that <em>aren’t</em>
+definitions.</p>
+<p>Here’s an easy example of something that isn’t a definition: A cat.
+You can tell it’s not a definition because it’s not a use of language,
+it’s a cat. A necessary condition for being a definition is that it
+involves some degree of use of language (even if it’s just to say “This
+is an X” when pointing at an X).<label class="margin-toggle sidenote-number" for="fn8"></label><input class="margin-toggle" id="fn8" type="checkbox"/><span class="sidenote">“Is a cat an instance of this concept?” is a
+surprisingly good starting point in general, because it forces you to
+define the boundaries of what sort of thing this concept applies to.</span></p>
+<p>Here’s a more interesting example of something that is not a
+definition:</p>
+<blockquote>
+<p>Priests are identifiable by their consistent attire and groomed
+appearance. When not occupied with their official duties, they can be
+spotted around town engaged in leisurely activities. They reside in
+modest accommodations among the public. Priests dedicate time to
+advancing their knowledge and serving the community. They make
+themselves available to offer guidance. Though often solitary, priests
+derive purpose from their vocation. During infrequent breaks, they
+partake in simple enjoyments.</p>
+</blockquote>
+<p>This is a <em>description,</em> not a definition. It tells you what
+priests <em>are like</em><label class="margin-toggle sidenote-number" for="fn9"></label><input class="margin-toggle" id="fn9" type="checkbox"/><span class="sidenote">At least stereotypically. Very few of these things are
+universally true of priests of course.</span>, not what a priest <em>is</em>. This
+may be useful information about priests and how to spot one, but it
+doesn’t tell you anything about what makes someone a priest, or really
+even how to tell if they are a priest.</p>
+<p>Using examples like this is an important part of doing ostensive
+definition well: If you only pick examples that are far from the
+boundary between being instances of the concept and not being instances,
+you don’t help people really learn how to make the decision in the cases
+where it’s difficult.</p>
+<p>Another thing that can be helpful is to provide examples where it’s
+genuinely ambiguous as to whether it’s an instance of the concept, or at
+least it’s not a very good instance. For example, here’s an alternative
+paragraph about priests:</p>
+<blockquote>
+<p><mark>Priests are people who wear special clothes and live in
+churches. They spend a lot of time reading old books and talking to
+people about being nice. Priests tell stories to children and sometimes
+help people when they are sad.</mark></p>
+</blockquote>
+<p><mark>Is this a definition? I <em>guess</em>? It tells you just
+enough about what a priest is and what they’re for that I suppose I’d
+count it as a definition. But it’s not one I’d be particularly happy
+with giving.</mark></p>
+<p><mark>This sort of ostensive definition is often useful to provide
+even if you’re providing a more direct sort of definition, because it
+greatly helps the reader understand how the definition works to have
+examples and illustrations of how they fit into the
+definition.</mark></p>
+<h3 id="working-definitions">Working definitions</h3>
+<p>There’s one small defect with this view of definitions in terms of
+necessary and sufficient conditions: It’s wrong. Or, at least, it’s very
+limiting - it fails to cover many definitions that exist in practice and
+serve a useful functional process.</p>
+<p>A nice example of this is from Bernard Suits’s book “The
+Grasshopper”, which is about philosophy of games. He offers two
+definitions of a game. The first is:</p>
+<blockquote>
+<p>To play a game is to attempt to achieve a specific state of affairs
+[prelusory goal], using only means permitted by rules [lusory means],
+where the rules prohibit use of more efficient in favour of less
+efficient means [constitutive rules], and where the rules are accepted
+just because they make possible such activity [lusory attitude].</p>
+</blockquote>
+<p>He then offers the following “portable” definition:</p>
+<blockquote>
+<p>a voluntary attempt to overcome unnecessary obstacles</p>
+</blockquote>
+<p>These do not define the same concept - satisfying either of them is
+neither a necessary nor a sufficient condition for satisfying the
+other.</p>
+<p>For example, suppose you’re going somewhere and you decide to take
+the long way around just to add some variety. You discover there’s a
+road blocked for maintenance. You could backtrack, but you’re feeling
+stubborn, so you instead try to find your way around the road block.</p>
+<p>This is a voluntary (you’re doing it for no other reason that you
+feel like it) attempt to overcome an unnecessary (you could always
+backtrack) obstacle. It’s not a game in the full sense that Suits
+defines it, because it lacks constitutive rules. The thing that is
+stopping you from backtracking is not that it would be a rules
+violation, it’s that you’re feeling stubborn.</p>
+<p>You could argue that there <em>are</em> constitutive rules that
+you’re making up on the fly, but I think that’s cheating and requires
+diluting the meaning of “rules” too much.<label class="margin-toggle sidenote-number" for="fn10"></label><input class="margin-toggle" id="fn10" type="checkbox"/><span class="sidenote">I think a better argument would be that Suits is
+putting too much emphasis on “rules” and that the things that constitute
+a game may not be rules in any sort of formal sense, and any sort of
+taking on a restriction to achieve an activity that is constituted by
+that restriction is at least somewhat gamelike. Under this view, this
+example is a game but not a “Suitsian game” to use Nguyen’s term for
+it.</span>
+This is particularly true because I think what happens when you violate
+these putative rules is different than what happens if you violate the
+rules of a game.</p>
+<p>An example from C Thi Nguyen’s account of games is mountain climbing:
+There you have the prelusory goal of getting to the top of the mountain,
+and a set of constitutive rules about how to do it (you have to climb
+the mountain). You could achieve the goal of getting to the top of the
+mountain by travelling there in a helicopter. You would still have
+achieved the goal, but in violating the rules you are <em>not doing
+mountain climbing</em>. In contrast, in our detour example it’s not that
+you’ve failed to do something well-defined. There’s no game of “take the
+long way around” that you’re now not playing. It’s just not what you
+want to do.</p>
+<p>In the other direction, suppose someone threatens to kill you unless
+you beat them at chess. Your playing of this game of chess is in no way
+voluntary, but you’re still playing a game in the full definition.</p>
+<p>So, in the strictly idealised mathematical sense of definitions as
+providing necessary and sufficient conditions, these aren’t the same
+definition, they’re barely even related. And yet, it sure seems like
+Suits’s portable definition adds something to your understanding of the
+meaning of games on top of the full definition.</p>
+<p>Part of what it adds is <em>convenience</em> - the full definition of
+games is somewhat unwieldy, and introduces many other terms as part of
+its definition. It’s strictly a better definition in terms of giving you
+the full concept in detail and making it easier to analyse something in
+terms of Suits’s conception of a game, but it’s hard to get much of an
+intuitive sense of.</p>
+<p>In contrast “a voluntary attempt to overcome unnecessary obstacles”
+is pretty intuitively comprehensible and it is easy to see its gamelike
+structure.</p>
+
+
+</section>
+
+    </article>
+<footer>
+Copyright David R. MacIver.
+
+CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
+</footer>
+  </body>
+</html>

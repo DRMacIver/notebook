@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-01-13T08:28:00+00:00</updated>
+  <updated>2024-01-14T09:38:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,299 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2024-01-04-10:02.html</id>
-    <title>Honesty is kinder than lying</title>
-    <updated>2024-01-04T11:26:13+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Honesty is kinder than lying&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2024-01-04&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Another draft bankruptcy post. This is one of those posts that I
-started writing because I was annoyed about something (I forget what, I
-don’t think it’s present anywhere in the text), and stopped writing when
-I lost steam on that annoyance. I still think it’s important and worth
-saying, but I lost the impetus to keep saying it.&lt;/p&gt;
-
-
-&lt;p&gt;Advance warning: I am not pulling any punches in this post.&lt;/p&gt;
-
-
-&lt;h3 id="do-you-want-impostor-syndrome-because-thats-how-you-get-impostor-syndrome."&gt;Do
-you want impostor syndrome? Because that’s how you get impostor
-syndrome.&lt;/h3&gt;
-
-
-&lt;p&gt;For various reasons I’ve been thinking recently about something I
-helped a client with a while ago.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Details slightly altered and kept vague for
-confidentiality reasons.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;Roughly the scenario they found themselves in was this: Someone new
-had joined their staff, and this person wasn’t &lt;em&gt;bad&lt;/em&gt; at their
-job, but they were very slow at it, taking much longer to complete basic
-tasks than seemed reasonable.&lt;/p&gt;
-
-
-&lt;p&gt;More, this person knew it, and was clearly very bothered by it, and
-kept apologising for it. My client kept reassuring them that this was
-fine and it was normal to take a while to get started. This didn’t seem
-to help, and they kept being anxious about it.&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, a couple of months of this had passed and my client now had a
-problem: Their staff member was &lt;em&gt;still&lt;/em&gt; too slow at their job. It
-could no longer be written off as just slowness getting up to speed,
-they actually weren’t fast enough at the job to keep up with the needed
-workload, and weren’t showing any signs of improvement.&lt;/p&gt;
-
-
-&lt;p&gt;I’m reasonably confident that the problem isn’t that the client’s
-expectations were unreasonable. We talked a bit about it and it was a
-set of requirements that it was perfectly normal to expect a person to
-be able to do, nothing terribly out of the ordinary.&lt;/p&gt;
-
-
-&lt;p&gt;What I’m &lt;em&gt;not&lt;/em&gt; sure about is whether in an alternate history
-their subordinate could have been capable of doing the job at that
-point. Certainly in this history they weren’t.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Unfortunately I also don’t know if they became so. Due
-to a mix of funding changes at the client’s company and me winding down
-that part of my business, this was only a month or two before my last
-session with that client, so I don’t know how the story ends. It doesn’t
-matter for the point I’m making though.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;And part of why they weren’t is that my client had, bluntly&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Somewhat more bluntly than I put it at the time,
-although I think I was at least clear about what they’d done wrong.&lt;/span&gt; spent the last couple of months
-lying to them about their performance.&lt;/p&gt;
-
-
-&lt;p&gt;This wasn’t the client’s fault. It’s what we’re all trained to do.
-When someone is expressing anxiety, you reassure them that the thing
-they’re anxious about couldn’t possibly happen and everything will be
-fine. When someone is expressing guilt about how they fucked up, you
-tell them that it’s not their fault and there’s nothing they could have
-done. There’s this deep seated cultural assumption that the way to be
-kind to people is that you lie to them.&lt;/p&gt;
-
-
-&lt;p&gt;I hate this and think it’s a travesty.&lt;/p&gt;
-
-
-&lt;p&gt;In the spirit of honesty, I will admit that I do this sometimes. Much
-much less than most people do, I think, but it’s hard not to. There are
-a lot of forces pushing you to do it. When I find myself doing it, I try
-to learn from that and do better in future.&lt;/p&gt;
-
-
-&lt;p&gt;In a similar spirit of honesty, I know that you probably do this too,
-and I’m &lt;a href="https://drmaciver.substack.com/p/just-disappointed"&gt;disappointed&lt;/a&gt;
-in you for doing so. I would like you to do better.&lt;/p&gt;
-
-
-&lt;p&gt;The reason we all lie to each other like this is often framed as
-kindness. I don’t think it is. I think it’s a form of cowardice. Honesty
-has consequences that we have to own in a way that dishonesty would not.
-If we speak the truth, we are responsible for any hurt inflicted, and
-might have to face the other’s negative reaction to our words. If we
-tell a nice lie we are not responsible when the problem we are lying
-about inevitably has consequences.&lt;/p&gt;
-
-
-&lt;p&gt;Doing better requires both the courage to face those consequences,
-and a sense of responsibility for events that are not our “fault” that
-everyone is keen to disavow.&lt;/p&gt;
-
-
-&lt;p&gt;The correct way to handle something like my client’s situation is, in
-my opinion, to say something along the lines of: Yes, you’re
-underperforming compared to what I’d hope for. It’s not a problem yet,
-but if it continues it will become one. I’ve got your back in trying to
-prevent that. Let’s figure out together what you need to solve this
-problem and do our best to get it for you.&lt;/p&gt;
-
-
-&lt;p&gt;This is, of course, taking on a lot of work, and it’s also taking on
-a lot of responsibility. Now in the quite likely&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;A sad reality is that many people are in fact not good
-enough at the jobs they’ve been hired to do, for reasons that are
-outside of anyone’s power to fix, or at least to fix fast enough to be
-viable. When this happens it’s important to treat them well, but it’s
-also important to not retain them in that role.&lt;/span&gt;
-event that their subordinate failed to perform and had to be let go at
-the end of their probation period, it would be in part be because they
-had failed to help them.&lt;/p&gt;
-
-
-&lt;p&gt;Depending on how much capacity is available, that might not be an
-option. I was talking to a friend recently about their company’s
-situation and he was in a similar position but absolutely didn’t have
-the capacity spare to help the person in question learn to perform at
-the level he needed (and suspected that they couldn’t or wouldn’t
-anyway).&lt;/p&gt;
-
-
-&lt;p&gt;In such a circumstance I honestly think the kindest thing to say to
-someone is something along the lines of: Look, this is what we need, and
-the fact that you can’t give it is a problem. If you’re willing to take
-responsibility for stepping up, we’re happy to give you the space you
-need to do that, and can make some changes to support that but cannot
-commit a lot of resources. What do you want to do?&lt;/p&gt;
-
-
-&lt;p&gt;This sucks to hear and it sucks to say. This is not going to be an
-easy conversation&lt;label class="margin-toggle sidenote-number" for="fn5"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn5" type="checkbox"/&gt;&lt;span class="sidenote"&gt;And in this particular example and depending on where
-you are can run into employment law complications. Not legal advice
-etc.&lt;/span&gt;, but it is necessary, and the
-results of not having it are worse. Again, this is why I think avoiding
-conversations like this is a form of moral cowardice. Not having these
-conversations allows you to pretend that the failure is not your
-responsibility.&lt;/p&gt;
-
-
-&lt;h3 id="you-shouldnt-lie-to-your-friends"&gt;You shouldn’t lie to your
-friends&lt;/h3&gt;
-
-
-&lt;p&gt;Anyway, I don’t care that much about the employment example right
-now. It’s important, but it’s not why this has been on my mind.&lt;/p&gt;
-
-
-&lt;p&gt;I was talking to some friends recently about the advice “when you
-find yourself beating yourself up over something, imagine you’re talking
-to a friend or loved one and ask if you would talk to them that
-way”.&lt;/p&gt;
-
-
-&lt;p&gt;One of the objections to this advice raised is that when talking to a
-friend or loved one you will tend to lie to them in the ways I’ve been
-discussing. You diminish the degree to which the situation is their
-fault, you downplay the possibility of bad consequences. This feels fine
-to do to a friend, but bad to do to yourself because you can see through
-the ruse.&lt;/p&gt;
-
-
-&lt;p&gt;This objection is a commendable level of self honesty&lt;label class="margin-toggle sidenote-number" for="fn6"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn6" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Although I think self honesty of this form is often too
-“brutal honesty”.&lt;/span&gt;,
-but also reveals how much we let our friends down.&lt;/p&gt;
-
-
-&lt;p&gt;Because here’s the thing: Your friends can see through the ruse too.
-The thing about having a social norm of lying to people is that
-&lt;em&gt;everybody knows you lie to people in this way&lt;/em&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;Recall the example of my client. One of the problems with lying to
-his subordinate is that it didn’t give them the support they needed to
-improve. But it &lt;em&gt;also didn’t make them less anxious&lt;/em&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;And of course it didn’t. If people are going to tell you that
-something isn’t a problem even when it’s a problem, you can’t trust that
-reassurance at all, so why would it help?&lt;/p&gt;
-
-
-&lt;p&gt;If you want to be able to reassure people that something isn’t a
-problem when it’s not a problem, they need to be able to believe that
-you would tell them that it’s a problem if it were one.&lt;/p&gt;
-
-
-&lt;p&gt;You can achieve this belief in one of three ways:&lt;/p&gt;
-
-
-&lt;ol type="1"&gt;
-&lt;li&gt;It can be true.&lt;/li&gt;
-&lt;li&gt;They can have poor judgement.&lt;/li&gt;
-&lt;li&gt;They can lie to themselves.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;That is, when you lie to people, you either fail to help them, or you
-make them complicit in the lie, and at some level that’s hard to
-maintain, and it’s bad for them and it’s bad for the relationship.&lt;/p&gt;
-
-
-&lt;h3 id="the-problem-of-brutal-honesty"&gt;The problem of brutal
-honesty&lt;/h3&gt;
-
-
-&lt;p&gt;Honesty has &lt;a href="https://notebook.drmaciver.com/posts/2020-03-28-10:26.html"&gt;a
-differing thresholds problem&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;I often get accused of being brutally honest. It’s certainly
-sometimes true - I think this post is erring on the side of brutal
-honesty, partly because I’m fed up and partly because I don’t think a
-softer version would land - but I think actually most of the time I’m
-&lt;em&gt;not&lt;/em&gt; brutally honest, I’m just honest in situations where other
-people wouldn’t be, and this rounds to brutal honesty.&lt;/p&gt;
-
-
-&lt;p&gt;But my primary association with people who self describe as “brutally
-honest” is that they tend to care more about the brutal part than the
-honest part, and that when you are being “brutally honest” with someone
-it tends to be more because you don’t care about their feelings&lt;label class="margin-toggle sidenote-number" for="fn7"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn7" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Or do care about their feelings, in that you want them
-to feel bad.&lt;/span&gt; than it is because you care about
-telling them the truth.&lt;label class="margin-toggle sidenote-number" for="fn8"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn8" type="checkbox"/&gt;&lt;span class="sidenote"&gt;That doesn’t mean you’re necessarily &lt;em&gt;not&lt;/em&gt;
-telling them the truth, but it does usually mean that you’re telling
-them only the bits of the truth that hurt the most.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;I think brutal honesty has a missing mood. Something along the lines
-of “It is regrettable that I must hurt this person but the truth is in
-this instance more important than their feelings”. Instead, the attitude
-seems to be much more “truth hurts, suck it up”. This is not an attitude
-I want to encourage.&lt;/p&gt;
-
-
-&lt;h3 id="you-probably-shouldnt-lie-to-yourself-either"&gt;You probably
-shouldn’t lie to yourself either&lt;/h3&gt;
-
-
-&lt;p&gt;One of the reasons why I’ve been thinking about this recently is that
-I was talking about self-help books the other day, and realising that
-there’s really one fundamental message that underlies the vast majority
-of self help books.&lt;/p&gt;
-
-
-&lt;p&gt;It’s this: You know that problem you’ve been having? It’s not your
-fault. You don’t have to feel bad about having it.&lt;/p&gt;
-
-
-&lt;p&gt;Sometimes this is a useful message for people to hear, because it
-lets them get a bit of emotional distance from the problem that they
-need to solve it.&lt;/p&gt;
-
-
-&lt;p&gt;And if it helps them achieve that, and they then solve the problem,
-(Editor’s note: I apparently stopped writing this post mid sentence
-here).&lt;/p&gt;
-
-
-&lt;h3 id="postscript"&gt;Postscript&lt;/h3&gt;
-
-
-&lt;p&gt;I think I should revisit this theme at some point as honesty is
-somewhere where my moral intuitions seem to sharply differ from other
-people’s, in a way that causes frictions when ~I’m right and they’re
-wrong~ we have differing intuitions about how to e.g. answer a
-question.&lt;/p&gt;
-
-
-&lt;p&gt;I do honestly think that my way is better. I’m not blind to its
-downsides, and it requires skill to do well&lt;label class="margin-toggle sidenote-number" for="fn9"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn9" type="checkbox"/&gt;&lt;span class="sidenote"&gt;And sometimes I even have that skill!&lt;/span&gt;,
-but I think the downsides of the status quo are much worse, and choosing
-them feels like a sort of collective cowardice to me.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2024-01-04-10:02.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-05-11:11.html</id>
     <title>Reason as a moral mechanism</title>
@@ -2193,7 +1900,7 @@ fingers crossed that it stays this way.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-13-08:28.html</id>
     <title>Writing good programming abstractions</title>
-    <updated>2024-01-13T08:28:00+00:00</updated>
+    <updated>2024-01-13T11:55:04+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Writing good programming abstractions&lt;/p&gt;
@@ -2412,5 +2119,458 @@ good way to prioritise.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2024-01-13-08:28.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2024-01-14-09:38.html</id>
+    <title>Defining definition</title>
+    <updated>2024-01-14T09:38:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Defining definition&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2024-01-14&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Another abandoned draft, this one dredged up from an old Google doc.
+It was meant to be part of a longer book-length project but I lost
+steam, because that’s what happens when I undertake longer book-length
+projects.&lt;/p&gt;
+
+
+&lt;hr/&gt;
+
+
+&lt;p&gt;When we use a word, we might know exactly what we mean by it, but
+unless other people know what we mean by it our use of it isn’t very
+useful. If I wrote a long essay about the strengths and weaknesses of
+incorporating scamprooft&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;These are of course all completely made up words.&lt;/span&gt; into our florbnoggle practices, this
+would not be very helpful to a reader that doesn’t know what scamprooft
+is and hasn’t ever practised florbnoggle in their life.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Of course, such a reader probably won’t benefit from
+reading such an essay in most circumstances, but they might if you can
+adequately communicate them that florbnoggling is basically the same as
+bungipopping, a practice they are quite familiar with, except you zeft
+when in bungipopping you would smork.&lt;/span&gt; We
+can solve this problem by giving people &lt;em&gt;definitions&lt;/em&gt; of concepts
+we are using that they might not be familiar with, in order to help them
+understand what we mean by them.&lt;/p&gt;
+
+
+&lt;p&gt;A definition, informally, is an explanation of what some concept
+(usually labelled with a word or a phrase) means. That is, it tells you
+how to apply the concept.&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;“Definition” is used in a variety of other related ways.
+For example, you can “define the problem”, you can “define the terms of
+an agreement” etc. When I talk about definitions in this chapter, I
+don’t mean those senses, I mean specifically defining the meaning of
+some term.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;The key thing that a definition lets you do is understand when some
+item fits the concept. This provides you with &lt;em&gt;conditions&lt;/em&gt;
+(things you can check) that allow you to tell whether something is an
+instance of that concept or not. That is, a definition is supposed to
+communicate to you some sort of decision procedure that you can use to
+check whether the concept applies in a given instance.&lt;/p&gt;
+
+
+&lt;p&gt;Most definitions we use in practice are in some sense incomplete -
+there will be some things that the definition gives you a clear yes to,
+some that it gives you a clear no to, and a large class of states
+(often, but not always, somewhere between the two) where it doesn’t give
+you a clear answer. Sometimes that’s a limitation of the definition and
+a better definition would decide between them, sometimes it’s just that
+the precise boundary is just genuinely fuzzy.&lt;/p&gt;
+
+
+&lt;p&gt;Additionally, some things are just extremely hard to define without
+introducing some sort of circularity or non-linguistic explanation. We
+explain the colour “red” by pointing to red things until you get the
+pattern.&lt;/p&gt;
+
+
+&lt;p&gt;Defining things perfectly is hard to impossible, and often even
+undesirable, but some amount of definition is necessary if we’re to be
+able to communicate at all. This chapter is about how to use definitions
+well, and to do that we’re going to have to dig in to what a definition
+actually does, and how to take advantage of definition’s strengths while
+compensating for its weaknesses.&lt;/p&gt;
+
+
+&lt;h3 id="necessary-and-sufficient-conditions"&gt;Necessary and sufficient
+conditions&lt;/h3&gt;
+
+
+&lt;p&gt;The &lt;em&gt;ideal&lt;/em&gt; of a definition is the sort of definition you
+would see in mathematics, which takes some concept and provides strict
+necessary and sufficient rules for when it applies. For example: a
+square is a shape with four straight sides, all of equal lengths, and
+each corner having the same angle.&lt;/p&gt;
+
+
+&lt;p&gt;What it means to say that these are &lt;em&gt;necessary&lt;/em&gt; conditions is
+that if something doesn’t satisfy all of them it is not a square. For
+example, an equilateral triangle is a shape with three straight sides,
+all of equal lengths, and each corner having the same angle. You can
+tell that it’s not a square because it fails the condition of having
+four straight sides even though it satisfies all the others.&lt;/p&gt;
+
+
+&lt;p&gt;What it means to say that these are &lt;em&gt;sufficient&lt;/em&gt; conditions is
+that if something satisfies all of them it’s definitely a square.
+There’s no possibility of saying “Oh whoops I forget that there’s a
+secret extra requirement”, these conditions lay out what it means to be
+a square and anything that satisfies them is one. We will often write
+sufficient conditions as an “if” statement. e.g. “A shape is a square
+if…”.&lt;/p&gt;
+
+
+&lt;p&gt;To look it another way: A necessary condition is something you can
+check in order to show that an item of interest &lt;em&gt;isn’t&lt;/em&gt; the
+thing. A sufficient condition tells you something you can check to show
+that an item of interest &lt;em&gt;is&lt;/em&gt; the thing. We will often write
+necessary conditions as an “only if” statement. e.g. “A shape is a
+square only if…”.&lt;/p&gt;
+
+
+&lt;p&gt;Having a set of conditions which is both necessary and sufficient is
+very convenient because it gives you a precise&lt;/p&gt;
+
+
+&lt;p&gt;It’s possible to have sets of conditions that are necessary but not
+sufficient.&lt;/p&gt;
+
+
+&lt;p&gt;For example, you &lt;em&gt;weaken&lt;/em&gt; a set of necessary conditions by
+removing parts and they’ll still be necessary, so e.g. “a shape with
+four sides of equal lengths” is a condition that is necessary for being
+a square (every square has four sides with equal lengths) but not
+sufficient because e.g. a rhombus (a square which has been skewed so
+that all sides have equal lengths but some corners are pointier than
+others) satisfies these but is not a square.&lt;/p&gt;
+
+
+&lt;p&gt;Similarly you can &lt;em&gt;strengthen&lt;/em&gt; a set of sufficient conditions
+and still have a set of sufficient conditions. e.g. Anything satisfying
+“a shape with four sides of length one and all angles equal” is a
+square, but a square with sides of length two does not satisfy these
+conditions so they are not necessary.&lt;/p&gt;
+
+
+&lt;p&gt;Generally with non-mathematical objects we’re not so lucky as to have
+simple necessary and sufficient conditions. Those that are tend to refer
+to human-constructed concepts that are built as having necessary and
+sufficient conditions deliberately. e.g. legal concepts tend to come
+with a very explicit decision procedure for determining that they apply.
+You’re “officially married in the country of X”&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Normally one would just say “married” here, but this
+blurs multiple related but distinct concepts together, and also elides
+historical marriages from before state records begin.&lt;/span&gt; if
+you’re officially recorded as married in X or by some country whose
+marriages are recognised by X (and if your marriage is of a type that is
+recognised by as permissible by X due to e.g. constraints on gender).&lt;label class="margin-toggle sidenote-number" for="fn5"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn5" type="checkbox"/&gt;&lt;span class="sidenote"&gt;It’s almost certainly more complicated than this. I am
+not a lawyer.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;For things that are more about describing things that actually exist
+in the physical world, what you tend to find is that it’s easy to
+provide sufficient conditions and it’s easy to provide necessary
+conditions, but there’s a large gap in the middle. e.g. the sorites
+paradox (how many grains of sand count as a heap?) can be thought of as
+being about this gap: It’s easy to provide a sufficient condition
+(e.g. if you’ve got between one and two million grains in a pile, that
+counts as a heap), it’s easy to provide a necessary condition (e.g. you
+need more than one grain to count as a heap), but somewhere in the
+middle the question gets hard to resolve. You’ll have this problem with
+most continuous quantities - how tall do you have to be before you count
+as tall? How old do you have to be before you count as elderly? There
+isn’t a clear boundary, but it’s easy to create necessary conditions and
+easy to create sufficient conditions, it’s just not easy to create
+conditions that are both.&lt;/p&gt;
+
+
+&lt;p&gt;Running into problems like this is often what stops people coming up
+with good definitions for things: They are aiming for a mathematical
+style set of necessary-and-sufficient conditions, this doesn’t work, and
+then they give up on the whole thing as indefinable.&lt;/p&gt;
+
+
+&lt;p&gt;In fact, definitions are perfectly possible for real-world concepts.
+We have to give up on them being as nice as mathematical definitions,
+but we can still use them to provide people with helpful handles on what
+we mean, and it starts by recognising that we’re often going to want to
+provide separate necessary conditions and sufficient conditions, and
+we’ll almost always have ambiguous edge cases that any definition we
+provide won’t cover. This doesn’t stop them being useful.&lt;/p&gt;
+
+
+&lt;p&gt;For example, a necessary condition for being a definition is that it
+is an attempt to explain what a term means using language. This is not a
+sufficient condition (e.g. talking about the history of the use of a
+term satisfies this condition but is not really a definition).&lt;/p&gt;
+
+
+&lt;p&gt;A sufficient condition for something being a definition is that it
+has the form “A (term) is a (thing) which…”. This gives you something
+very like the mathematical type of definition, and you can sure that
+something that looks like this is, or at least can function as, a
+definition.&lt;/p&gt;
+
+
+&lt;p&gt;Much of the interesting work of defining things lies between the
+regions set by these two conditions.&lt;/p&gt;
+
+
+&lt;h3 id="ostensive-definition"&gt;Ostensive Definition&lt;/h3&gt;
+
+
+&lt;p&gt;One useful way of defining things is by &lt;em&gt;ostensive
+definition,&lt;/em&gt; which means roughly “definition by showing”.
+Classically, you point out a bunch of examples and define your term as
+meaning “this sort of thing”. When you see it in writing it will often
+look like “By this term, I mean things like…”&lt;/p&gt;
+
+
+&lt;p&gt;Ostensive definition as defined this way is bad and I don’t like it,
+but the thing that it is trying to point to is good, so I’m going to
+shamelessly redefine the term (in a way that includes the original
+usage) as meaning a definition which uses examples in some essential way
+(i.e. not just as illustrations of some point).&lt;/p&gt;
+
+
+&lt;p&gt;The limitation of definition by just pointing at examples is this:
+You can think of an example of a concept as being an &lt;em&gt;extremely&lt;/em&gt;
+specific sufficient condition, and you need at least some sort of
+necessary condition preventing you from generalising that condition too
+far. “You see this thing? It’s a cat.” gives you a sufficient definition
+for being a cat, but it doesn’t tell you what else is a cat. It would be
+perfectly reasonable from this one example to assume that cat meant, for
+example, animal, and start calling dogs cats as well.&lt;label class="margin-toggle sidenote-number" for="fn6"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn6" type="checkbox"/&gt;&lt;span class="sidenote"&gt;This isn’t pedantry! It’s an actual problem in language
+acquisition, both first language and foreign languages.&lt;/span&gt; At
+the bare minimum, defining things ostensively requires you to point at
+both examples of the concept and non-examples of the concept.&lt;/p&gt;
+
+
+&lt;p&gt;In theory, you can define anything you like ostensively as long as
+you’re able to interact with the recipient. You give them a bunch of
+examples, and then they point at more examples and you say whether they
+are or aren’t an instance of the thing.&lt;/p&gt;
+
+
+&lt;p&gt;In practice, most of the time, this doesn’t work very well. Both
+because you’re not necessarily getting to interact with the people
+you’re defining things for (e.g. if you’re writing it down), and also
+it’s very slow because it can take a very long time for them to figure
+out the right decision procedure for the concept.&lt;/p&gt;
+
+
+&lt;p&gt;The problem is that people are not necessarily generalising in the
+way that you want them to. If you show them a bunch of examples and they
+come up with a rule for distinguishing them, there can be many rules
+that work.This means that they will consistently have errors in their
+understanding of the concept.&lt;/p&gt;
+
+
+&lt;p&gt;Worse, often you won’t even be able to &lt;em&gt;tell&lt;/em&gt; what those
+errors are, because either they’re in important but rare edge cases, or
+the back-and-forth testing has blind spots because they’re looking for
+examples that confirm their theory&lt;label class="margin-toggle sidenote-number" for="fn7"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn7" type="checkbox"/&gt;&lt;span class="sidenote"&gt;There’s a classic experiment called the Wason reflection
+task which asks you which cards you need to turn over to see if a rule
+is satisfied. People very regularly fail to turn over the cards that
+they would need to determine that the rule &lt;em&gt;isn’t&lt;/em&gt; satisfied. For
+example, given the rule “if a card shows an even number on one face,
+then its opposite face is blue”, you need to turn over red cards and
+even cards, but instead people turn over blue cards, which can provide
+no information. People don’t tend to show this error in subjects with
+which they’re familiar, but they do show it with subjects with which
+they’re not, which is exactly the situation you find yourself in when
+learning a new concept.&lt;/span&gt;, and you don’t
+understand what the examples you need to show their theory is wrong are
+because you don’t know what their theory is.&lt;/p&gt;
+
+
+&lt;p&gt;You can solve, or at least mitigate this, by giving each of your
+examples a generalisation - in the case of a positive example (an
+example where the concept holds), a sufficient condition that that
+example satisfies that makes it an instance of the concept, and in the
+case of a negative example (an example where the concept doesn’t hold) a
+necessary condition it fails to satisfy.&lt;/p&gt;
+
+
+&lt;p&gt;For example, I’ve given you a couple of examples of definitions, but
+I haven’t given you examples of things that &lt;em&gt;aren’t&lt;/em&gt;
+definitions.&lt;/p&gt;
+
+
+&lt;p&gt;Here’s an easy example of something that isn’t a definition: A cat.
+You can tell it’s not a definition because it’s not a use of language,
+it’s a cat. A necessary condition for being a definition is that it
+involves some degree of use of language (even if it’s just to say “This
+is an X” when pointing at an X).&lt;label class="margin-toggle sidenote-number" for="fn8"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn8" type="checkbox"/&gt;&lt;span class="sidenote"&gt;“Is a cat an instance of this concept?” is a
+surprisingly good starting point in general, because it forces you to
+define the boundaries of what sort of thing this concept applies to.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;Here’s a more interesting example of something that is not a
+definition:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Priests are identifiable by their consistent attire and groomed
+appearance. When not occupied with their official duties, they can be
+spotted around town engaged in leisurely activities. They reside in
+modest accommodations among the public. Priests dedicate time to
+advancing their knowledge and serving the community. They make
+themselves available to offer guidance. Though often solitary, priests
+derive purpose from their vocation. During infrequent breaks, they
+partake in simple enjoyments.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;This is a &lt;em&gt;description,&lt;/em&gt; not a definition. It tells you what
+priests &lt;em&gt;are like&lt;/em&gt;&lt;label class="margin-toggle sidenote-number" for="fn9"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn9" type="checkbox"/&gt;&lt;span class="sidenote"&gt;At least stereotypically. Very few of these things are
+universally true of priests of course.&lt;/span&gt;, not what a priest &lt;em&gt;is&lt;/em&gt;. This
+may be useful information about priests and how to spot one, but it
+doesn’t tell you anything about what makes someone a priest, or really
+even how to tell if they are a priest.&lt;/p&gt;
+
+
+&lt;p&gt;Using examples like this is an important part of doing ostensive
+definition well: If you only pick examples that are far from the
+boundary between being instances of the concept and not being instances,
+you don’t help people really learn how to make the decision in the cases
+where it’s difficult.&lt;/p&gt;
+
+
+&lt;p&gt;Another thing that can be helpful is to provide examples where it’s
+genuinely ambiguous as to whether it’s an instance of the concept, or at
+least it’s not a very good instance. For example, here’s an alternative
+paragraph about priests:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;mark&gt;Priests are people who wear special clothes and live in
+churches. They spend a lot of time reading old books and talking to
+people about being nice. Priests tell stories to children and sometimes
+help people when they are sad.&lt;/mark&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;&lt;mark&gt;Is this a definition? I &lt;em&gt;guess&lt;/em&gt;? It tells you just
+enough about what a priest is and what they’re for that I suppose I’d
+count it as a definition. But it’s not one I’d be particularly happy
+with giving.&lt;/mark&gt;&lt;/p&gt;
+
+
+&lt;p&gt;&lt;mark&gt;This sort of ostensive definition is often useful to provide
+even if you’re providing a more direct sort of definition, because it
+greatly helps the reader understand how the definition works to have
+examples and illustrations of how they fit into the
+definition.&lt;/mark&gt;&lt;/p&gt;
+
+
+&lt;h3 id="working-definitions"&gt;Working definitions&lt;/h3&gt;
+
+
+&lt;p&gt;There’s one small defect with this view of definitions in terms of
+necessary and sufficient conditions: It’s wrong. Or, at least, it’s very
+limiting - it fails to cover many definitions that exist in practice and
+serve a useful functional process.&lt;/p&gt;
+
+
+&lt;p&gt;A nice example of this is from Bernard Suits’s book “The
+Grasshopper”, which is about philosophy of games. He offers two
+definitions of a game. The first is:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;To play a game is to attempt to achieve a specific state of affairs
+[prelusory goal], using only means permitted by rules [lusory means],
+where the rules prohibit use of more efficient in favour of less
+efficient means [constitutive rules], and where the rules are accepted
+just because they make possible such activity [lusory attitude].&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;He then offers the following “portable” definition:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;a voluntary attempt to overcome unnecessary obstacles&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;These do not define the same concept - satisfying either of them is
+neither a necessary nor a sufficient condition for satisfying the
+other.&lt;/p&gt;
+
+
+&lt;p&gt;For example, suppose you’re going somewhere and you decide to take
+the long way around just to add some variety. You discover there’s a
+road blocked for maintenance. You could backtrack, but you’re feeling
+stubborn, so you instead try to find your way around the road block.&lt;/p&gt;
+
+
+&lt;p&gt;This is a voluntary (you’re doing it for no other reason that you
+feel like it) attempt to overcome an unnecessary (you could always
+backtrack) obstacle. It’s not a game in the full sense that Suits
+defines it, because it lacks constitutive rules. The thing that is
+stopping you from backtracking is not that it would be a rules
+violation, it’s that you’re feeling stubborn.&lt;/p&gt;
+
+
+&lt;p&gt;You could argue that there &lt;em&gt;are&lt;/em&gt; constitutive rules that
+you’re making up on the fly, but I think that’s cheating and requires
+diluting the meaning of “rules” too much.&lt;label class="margin-toggle sidenote-number" for="fn10"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn10" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I think a better argument would be that Suits is
+putting too much emphasis on “rules” and that the things that constitute
+a game may not be rules in any sort of formal sense, and any sort of
+taking on a restriction to achieve an activity that is constituted by
+that restriction is at least somewhat gamelike. Under this view, this
+example is a game but not a “Suitsian game” to use Nguyen’s term for
+it.&lt;/span&gt;
+This is particularly true because I think what happens when you violate
+these putative rules is different than what happens if you violate the
+rules of a game.&lt;/p&gt;
+
+
+&lt;p&gt;An example from C Thi Nguyen’s account of games is mountain climbing:
+There you have the prelusory goal of getting to the top of the mountain,
+and a set of constitutive rules about how to do it (you have to climb
+the mountain). You could achieve the goal of getting to the top of the
+mountain by travelling there in a helicopter. You would still have
+achieved the goal, but in violating the rules you are &lt;em&gt;not doing
+mountain climbing&lt;/em&gt;. In contrast, in our detour example it’s not that
+you’ve failed to do something well-defined. There’s no game of “take the
+long way around” that you’re now not playing. It’s just not what you
+want to do.&lt;/p&gt;
+
+
+&lt;p&gt;In the other direction, suppose someone threatens to kill you unless
+you beat them at chess. Your playing of this game of chess is in no way
+voluntary, but you’re still playing a game in the full definition.&lt;/p&gt;
+
+
+&lt;p&gt;So, in the strictly idealised mathematical sense of definitions as
+providing necessary and sufficient conditions, these aren’t the same
+definition, they’re barely even related. And yet, it sure seems like
+Suits’s portable definition adds something to your understanding of the
+meaning of games on top of the full definition.&lt;/p&gt;
+
+
+&lt;p&gt;Part of what it adds is &lt;em&gt;convenience&lt;/em&gt; - the full definition of
+games is somewhat unwieldy, and introduces many other terms as part of
+its definition. It’s strictly a better definition in terms of giving you
+the full concept in detail and making it easier to analyse something in
+terms of Suits’s conception of a game, but it’s hard to get much of an
+intuitive sense of.&lt;/p&gt;
+
+
+&lt;p&gt;In contrast “a voluntary attempt to overcome unnecessary obstacles”
+is pretty intuitively comprehensible and it is easy to see its gamelike
+structure.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2024-01-14-09:38.html" rel="alternate"/>
   </entry>
 </feed>
