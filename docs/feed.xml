@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-01-14T09:55:58+00:00</updated>
+  <updated>2024-01-15T07:13:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,403 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2024-01-05-11:11.html</id>
-    <title>Reason as a moral mechanism</title>
-    <updated>2024-01-05T11:19:55+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Reason as a moral mechanism&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2024-01-05&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Another draft bankruptcy post. This ended up being another
-overambitious philosophy piece of the sort I haven’t really figured a
-time or place to write.&lt;/p&gt;
-
-
-&lt;p&gt;I’ve since learned that these go better in a google doc. Maybe they’d
-go better yet if I expanded my notebook site to have an essays section
-now that I’ve got sidenotes and full pandoc support for references and
-such.&lt;/p&gt;
-
-
-&lt;p&gt;Attention conservation notice: This piece is quite inside baseball. I
-think it’s of interest to a general audience in where it ends up, which
-is why it’s on the newsletter rather than the &lt;a href="https://notebook.drmaciver.com/"&gt;notebook&lt;/a&gt;&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Editor’s note: lol never mind.&lt;/span&gt;,
-but it &lt;em&gt;starts&lt;/em&gt; by arguing about the logical underpinnings of
-Kantian ethics. You should not however require much philosophy
-background to read it.&lt;/p&gt;
-
-
-&lt;p&gt;I’m currently doing a read through of Velleman’s “Self to Self”. You
-can follow along with my increasingly frustrated noises I make as I try
-to decode it on &lt;a href="https://www.youtube.com/playlist?list=PLxO1bY9tS9Kr1gkHMPa0kaJtIIIKxJgzH"&gt;my
-YouTube channel&lt;/a&gt; (Editor’s note: I also abandoned this series and
-project), but be warned the production quality is approximately zero
-these are very much notes I am taking in my reading.&lt;/p&gt;
-
-
-&lt;p&gt;I’m mostly still stuck on chapter 1, which is his introduction to
-Kantian ethics. I find the content a frustrating mix of tantalisingly
-close to pointing at something important I’m missing and just wildly
-wrong. This post is an attempt to explain some of my frustrations with
-it, try to make sense of what it might mean, and reconstruct something
-that I think actually works and is pointing roughly in the same
-direction, but definitely isn’t what Kant or Velleman mean.&lt;/p&gt;
-
-
-&lt;h3 id="why-should-i-act-according-to-reasons"&gt;Why should I act
-according to reasons?&lt;/h3&gt;
-
-
-&lt;p&gt;One of the core premises of Velleman’s account of Kantian ethics is
-that we have a basic obligation to “act according to reasons”. He
-justifies this as such:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Where we previously asked “Why should I act on my desire?” let us now
-ask “Why should I act for reasons?” Shouldn’t this question open up a
-route of escape from &lt;em&gt;all&lt;/em&gt; requirements?&lt;/p&gt;
-&lt;p&gt;As soon as we ask why we should act for reasons, however, we can hear
-something odd in our question. To ask “Why should I?” is to demand a
-reason; and so to ask “Why should I act for reasons?” is to demand a
-reason for acting for reasons. This demand implicitly concedes the very
-authority that it purports to question – namely, the authority of
-reasons. Why would we demand a reason if we didn’t envision acting for
-it? If we really didn’t feel required to act for reasons, then a reason
-for doing so certainly wouldn’t help. So there is something
-self-defeating about asking for a reason to act for reasons.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;If you’re like me, your response to this is something along the lines
-of “What? No.” or possibly “What on earth are you talking about?”&lt;/p&gt;
-
-
-&lt;p&gt;This argument is too clever by half and relies in a fundamental way
-on an ambiguity in the term “reason” that, once you resolve, causes the
-argument to dissolve into uselessness.&lt;/p&gt;
-
-
-&lt;p&gt;The ambiguity is this: When you ask “Why should I do the thing?” the
-answer to this is an &lt;em&gt;explanation&lt;/em&gt; of why you should do the
-thing&lt;em&gt;,&lt;/em&gt; which may or may not itself be present prior to your
-doing the thing.&lt;/p&gt;
-
-
-&lt;p&gt;An answer to the question “Why should I act according to reasons?” is
-not necessarily providing the sort of reason that compels action,
-because the answer is intrinsically descriptive.&lt;/p&gt;
-
-
-&lt;p&gt;The core problem in all of this is that it is attempting to weasel
-out of the normative content of a “should” resting on you actually
-caring about something by trying to figure something that you logically
-must care about. But you can just not do that - I don’t need a logical
-argument to care about not being hurt for example, I can do things to
-avoid pain without needing a compelling logical justification for this.
-“Because if you don’t the reason fairy will appear and hit you with a
-big stick” is a &lt;em&gt;perfectly logically consistent&lt;/em&gt; answer to “Why
-should I act according to reasons?” that does not have any
-circularity.&lt;/p&gt;
-
-
-&lt;p&gt;It grounds out the authority of reasons in the authority of pain, but
-that’s fine if you’re willing to accept an ethics for human beings who
-don’t like pain rather than an ethics for perfectly spherical ethicists
-in a vacuum. It is only circular if you think “Why should I act to
-minimise pain?” roots the authority of pain in the authority of reasons,
-but that’s not what that question means - it is asking for an
-explanation, not delegating authority, because the avoidance of pain
-already has authority over you.&lt;/p&gt;
-
-
-&lt;p&gt;The rest of the chapter tacitly acknowledges all of this by basically
-trying to work through a set of reasons for acting for reasons, it just
-can’t say out loud because it’s built on this premise that reasons are
-an inescapable&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;In general the idea of escapability of authority in
-Velleman’s account of Kantian ethics seems (Editor’s note: What does it
-seem?? I apparently left this sentence hanging)&lt;/span&gt; source of authority.&lt;/p&gt;
-
-
-&lt;p&gt;This is a shame, because I think the actual source of the authority
-of reasons is much more interesting.&lt;/p&gt;
-
-
-&lt;h3 id="what-does-any-of-this-even-mean"&gt;What does any of this even
-mean?&lt;/h3&gt;
-
-
-&lt;p&gt;I think Velleman considers the meaning of “act according to reasons”
-self-explanatory, but I think it’s not just not self-explanatory but
-borders on meaningless given the ambiguity of the word “reasons”. If a
-“reason” is a thing that causes something, then the obligation is
-tautologically satisfied - all your actions are caused by something. If
-a “reason” is a verbal explanation of why things happened as they did,
-then it will generally come after the fact rather than prior to it -
-almost everything we do well, we do without a significant amount of
-verbal reasoning prior to it.&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;For an elaboration on this last point, I recommend “The
-Enigma of Reason” by Dan Sperber and Hugo Mercier, and “Sources of
-Power” by Gary Klein&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;Throughout, I will use “&lt;strong&gt;reason&lt;/strong&gt;” to mean something
-like “verbal causal explanation” - i.e. something you would say in
-answer to a “Why?” question. I will use &lt;strong&gt;actual cause&lt;/strong&gt; to
-refer to something like… the state of the world that lead to a
-particular outcome, a set of conditions which would lead to the same
-outcome reliably. A &lt;strong&gt;reason&lt;/strong&gt; is a &lt;em&gt;necessarily
-incomplete&lt;/em&gt; description of the &lt;strong&gt;actual cause&lt;/strong&gt;.&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I’m using bold here to indicate that I intend these to
-be precise terms which are compatible with but more specific than
-colloquial meanings. When I use a bolded term without bolding I will
-usually be referring to someone else using the colloquial word. Or I
-forgot.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;Importantly, &lt;strong&gt;reasons&lt;/strong&gt; are not normally present in our
-mind at the point of action (they can be, but not necessarily). So when
-you are acting “according” to a &lt;strong&gt;reason&lt;/strong&gt;, in that the
-reason accurately describes the &lt;strong&gt;actual cause&lt;/strong&gt;, that
-reason is not itself &lt;em&gt;part&lt;/em&gt; of the &lt;strong&gt;actual cause&lt;/strong&gt;.
-This is what I mean by the argument resting on an ambiguity: If you are
-asking for a &lt;strong&gt;reason&lt;/strong&gt; to act in accordance with
-&lt;strong&gt;reasons&lt;/strong&gt;, the fact that you can answer the question does
-not create a circularity because your answer need not be part of the
-&lt;strong&gt;actual cause&lt;/strong&gt; for acting for reasons.&lt;/p&gt;
-
-
-&lt;p&gt;One easy way to see this is that often the &lt;strong&gt;actual
-cause&lt;/strong&gt; exists prior to it being possible to give an explanation
-for it. This is especially true for causes that are in some sense
-physical. e.g. if you ask me why I’m not working my best today and I
-have a low grade virus that is sapping my energy, that is part of the
-&lt;strong&gt;actual cause&lt;/strong&gt; regardless of whether I know I have a
-virus, or even have the concept of virus. Both “I have a virus” and “I
-don’t know, I’m just not feeling it today” count as
-&lt;strong&gt;reasons&lt;/strong&gt;. I could even answer “I’m lazy”, which would
-arguably count as an incorrect &lt;strong&gt;reason&lt;/strong&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;Additionally, there is often far more &lt;strong&gt;reason&lt;/strong&gt; than
-you are aware of in the moment, so you &lt;em&gt;could not&lt;/em&gt; have thought
-of all the reasons in the time you had prior to action. Suppose you see
-someone who has injured themself. You help them get to a safe place, and
-then call the emergency services. Why did you do this? Because they were
-hurt. Why is “because they were hurt” a sufficient
-&lt;strong&gt;reason&lt;/strong&gt;? Because it’s morally the right thing to do. Why
-must you do the morally right thing? Because I want to, and will feel
-guilty if I don’t. Why would you feel guilty if you didn’t? Because I
-was raised proper… etc.&lt;/p&gt;
-
-
-&lt;p&gt;There is a long chain of verbal &lt;strong&gt;reasons&lt;/strong&gt; you can give
-for this and &lt;em&gt;almost none of them went through your head when you
-helped&lt;/em&gt;. You might have verbalised something like “Oh they’re
-injured, I should help them”. Maybe you considered a couple arguments
-and counter-arguments. But there was not a long chain of verbal
-reasoning for why you should help them, the helping comes with an
-immediacy of its own as the thing for you to do.&lt;/p&gt;
-
-
-&lt;p&gt;The &lt;strong&gt;actual cause&lt;/strong&gt; is thus not the reasons you give
-for it, because those reasons were not present at the point of action.
-The &lt;strong&gt;actual cause&lt;/strong&gt; is necessarily something like “because
-I am the kind of person who in these kinds of circumstances performs
-these kinds of actions”, with the &lt;strong&gt;reasons&lt;/strong&gt; attempting to
-define some boundaries on all of those “kind of”s.&lt;/p&gt;
-
-
-&lt;p&gt;This should, I think, still be considered acting &lt;em&gt;according&lt;/em&gt;
-to &lt;strong&gt;reasons&lt;/strong&gt;, in that “I helped them because they were
-hurt” is a &lt;strong&gt;reason&lt;/strong&gt; that accurately describes your
-actions.&lt;/p&gt;
-
-
-&lt;p&gt;This is, however, now a very weak requirement. All it demands is that
-your actions be in some way comprehensible. “I helped him because his
-shirt was yellow”, or “I helped him because I felt like it” are both
-also potential &lt;strong&gt;reasons&lt;/strong&gt;. This weakness is not a failing
-of the Kantian account, which is in many ways all about deciding what
-counts as a good &lt;strong&gt;reason&lt;/strong&gt; (although I think it is
-incorrect in how it goes about doing this), it’s just important to point
-out because we’re also going to need to strengthen it.&lt;/p&gt;
-
-
-&lt;p&gt;Two directions that I think are reasonable to strengthen it are as
-follows:&lt;/p&gt;
-
-
-&lt;ol type="1"&gt;
-&lt;li&gt;&lt;p&gt;You should be able to provide &lt;strong&gt;reasons&lt;/strong&gt; for your
-actions to peers (that it’s to peers will be significant later) who want
-them.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Those &lt;strong&gt;reasons&lt;/strong&gt; should remain relatively stable,
-in the sense that if they would apply in future then they should contain
-to describe your actions, or you should be able to provide a
-&lt;strong&gt;reason&lt;/strong&gt; why they don’t.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;What does “should” mean here? i.e. why should you act according to
-&lt;strong&gt;reasons&lt;/strong&gt; in this sense? Kant and Velleman want this to
-be through logical necessity, but I don’t think that’s valid, and I
-think the weaker form that I am aiming at here is in many ways better.
-It allows for more empirically accurate descriptions of how ethics
-works, and in many cases by being weaker allows for stronger norms.&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, my answer is that you should because life will go better for
-you if you do.&lt;/p&gt;
-
-
-&lt;h3 id="norming-and-consequences"&gt;Norming and consequences&lt;/h3&gt;
-
-
-&lt;p&gt;One of the things we do in our groups of peers is we create norms of
-behaviour. What is, and isn’t, an acceptable to behave. We do this by
-imposing consequences for that behaviour - we might chastise each other
-for bad behaviour, withdraw future opportunities, etc. e.g. you might
-not get a promotion if you behave badly at work, or you might just get
-reprimanded the first time, in an extreme case you might get fired.
-Similarly if you behave like a dick at a party I invited you to, you’re
-not going to get invited back. Extreme cases might also include e.g.
-physical violence, but most norming tends to be at least slightly more
-subtle than this.&lt;/p&gt;
-
-
-&lt;p&gt;Evaluating reasons is part of how we do this. When someone does
-something, especially something we disapprove of, we will often ask why
-they did it, and this factors in to our evaluation of their
-behaviour.&lt;/p&gt;
-
-
-&lt;p&gt;e.g. suppose we’re going to the movies together. I’m waiting for you
-at the cinema and you never show, even by the time the movie was
-supposed to have &lt;em&gt;ended&lt;/em&gt; let alone started. You’ve not sent me a
-text, you’re not responding to mine. By default, I’m likely to be pretty
-pissed off at you.&lt;label class="margin-toggle sidenote-number" for="fn5"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn5" type="checkbox"/&gt;&lt;span class="sidenote"&gt;There’s likely some cultural variation in this,
-especially if you’re merely late - I’m a stickler for punctuality, but
-know people from places where turning up an hour late is considered
-completely normal. Regardless though, I’m not making a universal claim
-that it is &lt;em&gt;right&lt;/em&gt; to be pissed off about this, I’m saying that I
-would be. Feel free to substitute your own example of someone letting
-you down.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;It is likely that when we finally make contact, my first question is
-going to be some variant on “What happened?” - I expect you to provide a
-&lt;strong&gt;reason&lt;/strong&gt; for the fact that you didn’t show when we’d
-previously agreed to.&lt;/p&gt;
-
-
-&lt;p&gt;Consider how I might respond differently to the following three
-answers:&lt;/p&gt;
-
-
-&lt;ol type="1"&gt;
-&lt;li&gt;“I don’t know, no reason really, I just didn’t feel like it.”&lt;/li&gt;
-&lt;li&gt;“I got the day wrong, was caught up in work, and didn’t hear the
-notification and completely forgot.”&lt;/li&gt;
-&lt;li&gt;“I was on my way here and there was someone in a terrible accident
-and I had to stop and help and keep them conscious while waiting for the
-ambulance.”&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;These would change my response significantly. (1) would probably make
-me &lt;em&gt;more&lt;/em&gt; angry at you. (2) would probably reduce my anger a bit,
-with how sorry you seemed about it and how many times you’d made this
-sort of error error mattering more than the actual
-&lt;strong&gt;reason&lt;/strong&gt;. (3) on the other hand my anger would probably
-instantly evaporate, because I would agree that under these
-circumstances that was completely the right thing to do. Indeed, if
-instead you’d turned up and told me that there was such an accident but
-you didn’t stop to help because it would make you late to the cinema,
-I’d probably be angry at you for an entire different reason - of course
-you shouldn’t prioritise going to the movies with me over helping
-someone.&lt;/p&gt;
-
-
-&lt;p&gt;Part of this judgement is that we now have more context for the
-action, and we can now ask not just how we feel about this particular
-outcome, but how we feel about the process that lead to it. i.e. if
-similar circumstances were to occur again, and you were to behave in the
-same way in them, how would I feel about that?&lt;/p&gt;
-
-
-&lt;p&gt;This is a very lightened version of Kant’s categorical imperative.
-Instead of asking whether you are acting according to
-&lt;strong&gt;reasons&lt;/strong&gt; that constitute &lt;em&gt;universal&lt;/em&gt; law, we are
-asking wether in our particular relational context your
-&lt;strong&gt;reasons&lt;/strong&gt; are ones I would consider acceptable if they
-consistently described your behaviour. Your behaviour is judged not
-based on its consequences, but on what the &lt;em&gt;generalisation&lt;/em&gt; of it
-(as described by your provided &lt;strong&gt;reasons&lt;/strong&gt;) looks like. By
-requesting &lt;strong&gt;reasons&lt;/strong&gt;, we can judge you (positively as
-well as negatively) not just by your one-off actions but by &lt;em&gt;how you
-tend to behave -&lt;/em&gt; i.e. what sort of person you are.&lt;/p&gt;
-
-
-&lt;h3 id="trusting-our-peers"&gt;Trusting our peers&lt;/h3&gt;
-
-
-&lt;p&gt;Of course, I can only judge what sort of person you are based on your
-reasons for action if the &lt;strong&gt;reason&lt;/strong&gt; you provide is one
-that you are likely to act in accord with in future.&lt;/p&gt;
-
-
-&lt;p&gt;I am a big fan of C. Thi Nguyen’s paper “Trust as an unquestioning
-attitude”. My light generalisation of it is that you
-&lt;strong&gt;trust&lt;/strong&gt; that X to the degree that you do not really have
-to entertain the possibility of not X. e.g. you &lt;strong&gt;trust&lt;/strong&gt;
-that the sun will come up tomorrow, because even if you think about
-whether or not it will the possibility that it will not seems neither
-plausible nor emotionally relevant. You &lt;strong&gt;trust&lt;/strong&gt; that your
-partner is not secretly a serial killer because if you think about the
-possibility it doesn’t seem remotely plausible. You also
-&lt;strong&gt;trust&lt;/strong&gt; to a lesser extent that your long-term business
-partner isn’t going to betray you, your friends don’t secretly hate you,
-etc. - it’s not that there is zero concern here, and you may worry about
-it a bit, but it’s not a major part of your day to day experience.&lt;/p&gt;
-
-
-&lt;p&gt;Importantly, you &lt;strong&gt;trust&lt;/strong&gt; that something will or won’t
-happen. You might &lt;strong&gt;trust&lt;/strong&gt; totally that someone won’t
-betray you, but that doesn’t necessarily mean that you
-&lt;strong&gt;trust&lt;/strong&gt; them to fly a plane.&lt;/p&gt;
-
-
-&lt;p&gt;You can still &lt;strong&gt;trust&lt;/strong&gt; someone in a more generalised
-sense, in that the better you know them the more you
-&lt;strong&gt;trust&lt;/strong&gt; about them. When I first meet someone I can’t
-&lt;strong&gt;trust&lt;/strong&gt; that they won’t be a dick to me, or that they’re
-reliable, or that they are fun to be around, but as I get to know them
-better I learn the ways in which I can &lt;strong&gt;trust&lt;/strong&gt; them (and
-the ways I cannot).&lt;/p&gt;
-
-
-&lt;h3 id="afterword"&gt;Afterword&lt;/h3&gt;
-
-
-&lt;p&gt;I actually still think that there’s something important here and I’d
-like to try to revisit it at some point, but I think this kind of
-dissecting of someone else’s arguments isn’t really for me.&lt;/p&gt;
-
-
-&lt;p&gt;In particular the role of trust and reason in constituting our moral
-behaviour is something that I’ve been thinking about since and would
-like to try to articulate more at some point.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2024-01-05-11:11.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-06-07:04.html</id>
     <title>Disingenuous Advice</title>
@@ -2123,7 +1726,7 @@ good way to prioritise.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-14-09:38.html</id>
     <title>Defining definition</title>
-    <updated>2024-01-14T09:55:58+00:00</updated>
+    <updated>2024-01-14T09:56:08+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Defining definition&lt;/p&gt;
@@ -2579,5 +2182,369 @@ worth the effort of explaining”.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2024-01-14-09:38.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2024-01-15-07:13.html</id>
+    <title>Things I believe about ethics and personal development</title>
+    <updated>2024-01-15T07:13:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Things I believe about ethics and personal development&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2024-01-15&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;This isn’t exactly an abandoned draft, in that it’s more or less
+complete as it is, but it’s pulled out of an old Google doc and I wanted
+it to be somewhere more permanent and visible.&lt;/p&gt;
+
+
+&lt;hr/&gt;
+
+
+&lt;p&gt;There is a core to my self-work that I struggle to articulate and
+that end up mostly showing up as empty space that I write around. I’d
+like to articulate these, with a particular focus on providing clear
+statements of belief that are easy for others to disagree with.&lt;/p&gt;
+
+
+&lt;p&gt;Many of these probably require deeper articulation, I am trying to
+resist the urge to articulate them. If there is one that you’d like to
+discuss, I’m happy to elaborate as much as you need.&lt;/p&gt;
+
+
+&lt;p&gt;By self-work I mean “things that are sort of like therapy”. Anything
+that is designed to in some way change your experience of yourself as a
+person, your emotional responses, etc.&lt;/p&gt;
+
+
+&lt;ol type="1"&gt;
+&lt;li&gt;&lt;p&gt;You can, and probably should, change your nature as a person.&lt;/p&gt;
+&lt;ol type="a"&gt;
+&lt;li&gt;“Self-acceptance” in the sense of not constantly beating yourself up
+is important and you should do that one.&lt;/li&gt;
+&lt;li&gt;“Self-acceptance” in the sense that you’re fine as you are and don’t
+need to change is bad for you and bad for others.&lt;/li&gt;
+&lt;li&gt;You can get better at things that matter with you.&lt;/li&gt;
+&lt;li&gt;Things that make you unhappy or hurt others are problems, and you
+can likely fix them or work around them.&lt;/li&gt;
+&lt;li&gt;Very little of the things that you think of as inherent features of
+yourself are actually immutable. If you want to change or compensate for
+them you probably can.
+&lt;ol type="i"&gt;
+&lt;li&gt;But it’s sometimes going to be a lot of work.&lt;/li&gt;
+&lt;li&gt;And sometimes you’re better off just leaning into them.&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;What you do matters.&lt;/p&gt;
+&lt;ol type="a"&gt;
+&lt;li&gt;People will evaluate you based on your actions and they are right to
+do so.&lt;/li&gt;
+&lt;li&gt;Self-work fundamentally needs to start with acting in the
+world.&lt;/li&gt;
+&lt;li&gt;It is important to change how you think and feel, but it is more
+important to change what you do and change the others in support of
+that.&lt;/li&gt;
+&lt;li&gt;By this I mean change &lt;em&gt;now&lt;/em&gt;, not later when you’re done
+healing.&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Self-work can and should be directed towards becoming a morally
+better person.&lt;/p&gt;
+&lt;ol type="a"&gt;
+&lt;li&gt;Without this, it is doomed to fail.&lt;/li&gt;
+&lt;li&gt;Attempting “ethics-free” self work will likely make you a morally
+worse person.&lt;/li&gt;
+&lt;li&gt;One of the central links between self-work and ethics is your
+relationship with guilt.&lt;/li&gt;
+&lt;li&gt;Becoming a morally better person does not usually mean feeling
+guiltier.&lt;/li&gt;
+&lt;li&gt;Feeling easily overwhelmed with guilt is in fact a moral
+failing.&lt;/li&gt;
+&lt;li&gt;Never feeling guilt is also a moral failing.
+&lt;ol type="i"&gt;
+&lt;li&gt;Either you’ve suppressed the feeling of guilt, which means you can’t
+tell when you’re doing a bad thing.&lt;/li&gt;
+&lt;li&gt;Or you’re over-scrupulously avoiding doing anything that makes you
+feel guilty, in which case you are ineffective.&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Conversely, ethics is fundamentally grounded in self-work.&lt;/p&gt;
+&lt;ol type="a"&gt;
+&lt;li&gt;It is useless to ask what you should do in the abstract, because the
+most important ethical question is “How do I become the sort of person
+who does that?”&lt;/li&gt;
+&lt;li&gt;Making yourself miserable in the pursuit of ethics probably in the
+long run produces worse results than learning how to be happy being a
+good person.&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Community building is vitally important for both self-work and
+ethical development.&lt;/p&gt;
+&lt;ol type="a"&gt;
+&lt;li&gt;Self-work is fundamentally interpersonal, because being a person is
+fundamentally in relationship to others.&lt;/li&gt;
+&lt;li&gt;If you do not have a community supporting your self-work you will
+fail.&lt;/li&gt;
+&lt;li&gt;If you are leading such a community, your self-work needs to at
+least be partly directed to being the sort of person who can lead a
+community, or your community will fail and it will be your fault.&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Moral realism is clearly fake and distracts from the actual role
+of realism in ethics.&lt;/p&gt;
+&lt;ol type="a"&gt;
+&lt;li&gt;Ethics shape actions and actions have consequences.&lt;/li&gt;
+&lt;li&gt;Ethics shapes relationships and relationships shape people.&lt;/li&gt;
+&lt;li&gt;There is no objective point of view for ethics. Ethics starts from
+subjects and their relationships to others.&lt;/li&gt;
+&lt;li&gt;A core feature of ethics is “alliance building” - I behave this way
+because you agree to also behave in a complementary way.&lt;/li&gt;
+&lt;li&gt;But ethics goes beyond alliance building because of the way group
+norms shape people. It’s not just about building alliances but about
+&lt;em&gt;becoming the sort of person with whom explicit alliances are not
+needed&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Moral language is in one sense just expressing a personal
+preference, but these preferences are not devoid of content, they are
+rooted in consequences. e.g. engineering has many ethical judgements
+around competence and care that are ultimately rooted in preferences
+like “It is bad when bridges fall down”.&lt;/li&gt;
+&lt;li&gt;When we use moral language we are expressing something that is more
+than personal but less than fully objective - “X is good (bad)” means
+something like “according to the sort of people who I would consider
+good, X is (un)desirable, usually based on its outcomes, but sometimes
+something intrinsic about it.”&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Ethics is fundamentally about conflict in the Schelling sense -
+the best thing for me is not the best thing for you and vice versa, but
+there is an outcome where we cooperate that is better for each of us
+than not cooperating.&lt;/p&gt;
+&lt;ol type="a"&gt;
+&lt;li&gt;Contra Schelling, we change our values each time we cooperate. By
+cooperating with you we build trust and love, and I value your wellbeing
+more, and vice versa, and this lowers the level of conflict because a
+good outcome for the other is also a good outcome for us.&lt;/li&gt;
+&lt;li&gt;By repeatedly cooperating we become the sort of people who value
+cooperating.&lt;/li&gt;
+&lt;li&gt;It is also important to value not cooperating with people who don’t
+cooperate. Altruistic punishment when someone behaves selfishly is an
+important part of this sort of interaction.&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Judging people is good and is an important form of altruistic
+punishment.&lt;/p&gt;
+&lt;ol type="a"&gt;
+&lt;li&gt;Many people fall short of their own standards, and it is right and
+proper to note that and think less well of them for that.&lt;/li&gt;
+&lt;li&gt;You should have standards for other people that are at least as
+stringent as “Does not fail by their own standards”. e.g. Someone not
+treating others as well as you feel they deserve, regardless of whether
+they agree with you.&lt;/li&gt;
+&lt;li&gt;This judgement does not require an objective morality to be useful
+and important. These are judgements by &lt;em&gt;your&lt;/em&gt; moral
+standards.&lt;/li&gt;
+&lt;li&gt;These moral standards are how you decide what sort of person to
+be.&lt;/li&gt;
+&lt;li&gt;These moral standards are also how you decide what sort of
+relationships to have.&lt;/li&gt;
+&lt;li&gt;In many ways those are the same thing.&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Helping people is good.&lt;/p&gt;
+&lt;ol type="a"&gt;
+&lt;li&gt;I think most people are reasonably altruistic and will feel good if
+they help others, and that if this is not the case they probably have
+unlearned altruism somewhere along the way.&lt;/li&gt;
+&lt;li&gt;Regardless of whether you are intrinsically altruistic, being in a
+community that helps others is selfishly better than being in a
+community where people don’t help each other.&lt;/li&gt;
+&lt;li&gt;One of the ways you should help others is to help them live up to
+their own standards.&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Punishing people is good.&lt;/p&gt;
+&lt;ol type="a"&gt;
+&lt;li&gt;When people fall short of your ethical standards, you can and should
+make them experience consequences for that.&lt;/li&gt;
+&lt;li&gt;By default this shouldn’t go much further than expressing
+disapproval and maybe downgrading the relationship.&lt;/li&gt;
+&lt;li&gt;This is how you express your preferences for what sort of person to
+be in community with.&lt;/li&gt;
+&lt;li&gt;Sometimes this will result in breaking the relationship. This is a
+failure, possibly a big one, but it is usually better than not having
+attempted correction, and often better than many “successes”
+(e.g. having to put a huge amount of work into fixing a relatively
+unimportant relationship).&lt;/li&gt;
+&lt;li&gt;For severe ethical failures it can and should go further (call outs,
+getting them fired, reporting for crimes, etc. In some cases physical
+violence may be appropriate though I’m not personally a fan)&lt;/li&gt;
+&lt;li&gt;Without punishment for transgression of shared norms, communities
+die.&lt;/li&gt;
+&lt;li&gt;Ideally punishment goes hand in hand with helping - “I will hold you
+to high standards and help you achieve them” but this isn’t always
+possible.&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Competence is a moral issue.&lt;/p&gt;
+&lt;ol type="a"&gt;
+&lt;li&gt;It’s no good having good intentions if you won’t put in the work to
+be able to act on them.&lt;/li&gt;
+&lt;li&gt;Helping people learn to competently act on your shared ethics is one
+of the points of communities.&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Taking responsibility is good.&lt;/p&gt;
+&lt;ol type="a"&gt;
+&lt;li&gt;Bad things happen in part because people don’t stop them.&lt;/li&gt;
+&lt;li&gt;People are over-focused on &lt;em&gt;not being blamed for bad
+things&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;People should focus more on &lt;em&gt;not wanting bad things to
+happen&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;It is definitely possible to take too much responsibility but most
+people do not take enough.&lt;/li&gt;
+&lt;li&gt;This will sometimes result in you being blamed more (because you got
+involved and bad things still happen) and being OK with that is one of
+the reasons you need to be comfortable with guilt if you are to be more
+ethical.&lt;/li&gt;
+&lt;li&gt;A common failure mode of this is feeling responsible for things
+going badly without actually doing anything to stop them from going
+badly. This is strictly worse than not feeling responsible.&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Thinking about things is good.&lt;/p&gt;
+&lt;ol type="a"&gt;
+&lt;li&gt;A lot of people in self-work space have had a very disordered
+relationship with thinking in the past and so have decided that thinking
+is bad. This makes about as much sense as “I was repeatedly punching
+myself in the face, so I cut off my hands to stop myself doing that”.
+Just stop hitting yourself, idiot.&lt;/li&gt;
+&lt;li&gt;You shouldn’t ignore your feelings when thinking about things
+(you’re not doing very good thinking if you are), and you shouldn’t
+think to the exclusion of action, but thinking is an essential part of
+the acting/feeling/thinking cognitive triangle.&lt;/li&gt;
+&lt;li&gt;Done well, thinking is fun.&lt;/li&gt;
+&lt;li&gt;Part of why people don’t like thinking about things verbally is that
+they are conflict averse. If you express your thoughts too clearly then
+people can disagree with them.&lt;/li&gt;
+&lt;li&gt;Rumination is not a central example of thinking, and is an example
+of the thinking/feeling part of the triangle going wrong together. You
+can often break out of rumination by doing thinking better - e.g. by
+writing down your thoughts as clearly as you can.&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Health is heterogenous&lt;/p&gt;
+&lt;ol type="a"&gt;
+&lt;li&gt;There is a sort of “perfectly spherical idealised human in a vacuum”
+generic version of health that a lot of spiritual and therapeutic
+practices try to push you towards. This is probably bad for you.&lt;/li&gt;
+&lt;li&gt;The healthy versions of two different people will often look very
+different from each other.&lt;/li&gt;
+&lt;li&gt;It is possible to have a very healthy life that is dominated by
+intellectual pursuits.&lt;/li&gt;
+&lt;li&gt;It is possible to have a very healthy life that is dominated by
+physical pursuits.&lt;/li&gt;
+&lt;li&gt;It is likely that the optimal healthy life for you involves more of
+the generic version of health than you are naturally inclined to
+(e.g. more physical activity, more intellectual activity).&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Health is not mandatory.&lt;/p&gt;
+&lt;ol type="a"&gt;
+&lt;li&gt;A healthy life is often something you should be pursuing, but it may
+not be achievable.&lt;/li&gt;
+&lt;li&gt;Often it will be achievable but you correctly choose not to
+prioritise it - it’s too much work, it’s in conflict with other
+important things.&lt;/li&gt;
+&lt;li&gt;Even if it’s achievable, it may take a long time to achieve.&lt;/li&gt;
+&lt;li&gt;Also the world is better with broken people in it. Many of the most
+important changes in modern history have come from people who are
+clearly emotionally unhealthy, and who have given their lives to some
+overriding obsession and made the world a vastly better place as a
+result because e.g. they invented half of the vaccines we use today, or
+popularised stainless steel. Maybe any given one of their lives would be
+better if they were perfectly emotionally healthy, but their lives would
+be worse if the &lt;em&gt;others&lt;/em&gt; were perfectly emotionally healthy.&lt;/li&gt;
+&lt;li&gt;Even to the degree that you treat working towards health as
+normatively desirable, nobody is there yet, and punishing people for not
+being perfectly healthy already is unlikely to achieve the desired
+result.&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Allowing for heterogeneity is important.&lt;/p&gt;
+&lt;ol type="a"&gt;
+&lt;li&gt;This is because people are heterogenous and don’t magically become
+homogenous because you don’t approve of that.&lt;/li&gt;
+&lt;li&gt;Many people cannot and will not conform to your ideal of how people
+should be, and you need to be able to coexist with them without a state
+of total war.&lt;/li&gt;
+&lt;li&gt;Ideally you should be able to form friendships with people who are
+very different from you (although not all differences are possible, or
+desirable, to form friendships across)&lt;/li&gt;
+&lt;li&gt;You should certainly be able to support people who are very
+different from you.&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Exclusive communities are important&lt;/p&gt;
+&lt;ol type="a"&gt;
+&lt;li&gt;Communities should be more homogenous than the general population.
+It’s important to have communities of people who are in some sense like
+you.&lt;/li&gt;
+&lt;li&gt;These communities should have a degree of gate keeping to them,
+where people who do not fit the target demographic of the community are,
+if not outright excluded, at least expected to expend more effort
+fitting in.&lt;/li&gt;
+&lt;li&gt;In particular these communities establish common knowledge within
+them, and it is reasonable to expect people who do not share that common
+knowledge to acquire it in order to participate.&lt;/li&gt;
+&lt;li&gt;Communities also allow people to establish norms that would not work
+in the broader world. This can include both stricter norms of good
+behaviour, and also weaker norms in which behaviour that would not be
+tolerated between strangers is permissible.&lt;/li&gt;
+&lt;li&gt;One of the functions of such communities is supporting people who
+struggle with the broader world. Ideally by helping them navigate it
+better, but in extreme cases by sheltering them from it and providing
+them an environment in which they can nevertheless contribute.&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Loyalty is important&lt;/p&gt;
+&lt;ol type="a"&gt;
+&lt;li&gt;People adapt norms for low-context low-trust environments to their
+private relationships, and this makes them bad people.&lt;/li&gt;
+&lt;li&gt;A prior relationship with someone is in fact a reason to maintain
+that relationship and treat it as valuable and give them more leeway and
+benefit of the doubt.&lt;/li&gt;
+&lt;li&gt;If you’re not prepared to do that, you cannot maintain healthy
+relationships.&lt;/li&gt;
+&lt;li&gt;This does not mean that you should take arbitrary shit from people
+you are in relationship with, but it does mean that by being in that
+relationship it is reasonable to expect a certain degree of
+collaboration in fixing the problems with it.&lt;/li&gt;
+&lt;li&gt;There is a degree of relationship failure past which this is not
+reasonable, but that degree has to be pretty severe or chronic before
+you break off the relationship.&lt;/li&gt;
+&lt;li&gt;Because loyalty is important, treating other people’s loyalties as
+important is important. Just because you would not form a relationship
+with someone does not mean you should punish other people for
+maintaining such a relationship.&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Disagreement and conflict are good and important (disclaimer:
+This section is something that I am currently still sorting my shit out
+on. I’m not actually good at it).&lt;/p&gt;
+&lt;ol type="a"&gt;
+&lt;li&gt;One of the advantages of a high trust relationship is that it should
+be robust enough to support disagreement.&lt;/li&gt;
+&lt;li&gt;One advantage of a low importance relationship is that if the
+disagreement breaks it that’s no big deal.&lt;/li&gt;
+&lt;li&gt;Disagreement clarifies your thinking, and thinking is good.&lt;/li&gt;
+&lt;li&gt;It also is the basis for understanding and improving your shared
+norms.&lt;/li&gt;
+&lt;li&gt;If we cannot disagree, we cannot find the places where we
+agree.&lt;/li&gt;
+&lt;li&gt;Disagreement is foundational in being able to orient towards good
+together.&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;h1 id="afterword"&gt;Afterword&lt;/h1&gt;
+
+
+&lt;p&gt;This feels unsatisfyingly lacking in an ending that pulls everything
+together, but I think that’s part of the point of writing it - I still
+haven’t figured out how to pull all of this together. I still think it’s
+mostly correct and important though.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2024-01-15-07:13.html" rel="alternate"/>
   </entry>
 </feed>
