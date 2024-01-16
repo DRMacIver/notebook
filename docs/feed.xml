@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-01-15T07:13:00+00:00</updated>
+  <updated>2024-01-16T13:11:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,131 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2024-01-06-07:04.html</id>
-    <title>Disingenuous Advice</title>
-    <updated>2024-01-06T08:32:15+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Disingenuous Advice&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2024-01-06&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I’m a big fan of giving advice. You should give more advice. &lt;a href="https://notebook.drmaciver.com/posts/2021-07-17-14:20.html"&gt;Appropriately&lt;/a&gt;
-and &lt;a href="https://drmaciver.substack.com/p/how-to-give-good-advice"&gt;effectively&lt;/a&gt;,
-but helping people is good and advice, done well, is one of the easiest
-ways to help people.&lt;/p&gt;
-
-
-&lt;p&gt;But a thing I’ve been noticing for a while is that a lot of advice
-isn’t really designed to help people. It’s designed to discharge your
-responsibility, real or imagined, for helping them, in a way that makes
-having the problem their problem rather than yours.&lt;/p&gt;
-
-
-&lt;p&gt;The characteristic features of this sort of disingenuous advice
-are:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;It’s not exactly &lt;em&gt;bad&lt;/em&gt; advice. It’s important that it could,
-in theory, solve the problem.&lt;/li&gt;
-&lt;li&gt;It tends to be quite one-size-fits-all. It shows very little
-engagement with the actual problem - if you were going to put in enough
-effort to tailor your advice, you’d probably make at least some effort
-to give reasonable advice.&lt;/li&gt;
-&lt;li&gt;It tends to be quite simple, so as to make it seem easy. It’s the
-sort of thing that you could very naturally use the word “just” in.&lt;/li&gt;
-&lt;li&gt;It seems to encourage closing off further conversation until you’ve
-tried to follow the advice. Reasons why the advice won’t work sound like
-excuses.&lt;/li&gt;
-&lt;li&gt;It is, in fact, very hard to follow this advice and even following
-the advice isn’t guaranteed to work.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;The prompt for me to start noticing this pattern is how often “go to
-therapy” is this. Therapy is a perfectly valuable tool that, if you can
-afford it, can help with many categories of emotional problems. It also
-tends to be suggested very blindly, for large categories of problems
-that it’s not especially suited for, and to people who are probably not
-well set up to benefit from it (e.g. because they can’t afford it, or
-because the real problem is that their life sucks in very tangible ways
-and their negative emotions mostly stem from that). But by suggesting
-going to therapy you make it very clear that their problems aren’t
-yours, you’ve suggested a solution now, they should go make it a
-therapist’s problem.&lt;/p&gt;
-
-
-&lt;p&gt;“Learn to code” as a response to career problems is another common
-one. It’s not necessarily bad advice - software is a pretty good career
-option for some people. But it’s not a catch all solution to career
-problems - not everyone is actually well suited to work in software,
-retraining is hard, getting your first software job is hard, and there
-may be many better lateral transfers for most people that actually get
-to use their current experience.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Also not all jobs can be software jobs you do actually
-have to move atoms as well as bits.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;Another example that came up on discord recently was students having
-to ask permission to go to the bathroom in class, and how bad this is
-(especially given that it can be refused). The advice “you should have
-gone to the bathroom between classes” absolves your responsibility to
-them by making it the student’s fault for their lack of forethought.&lt;/p&gt;
-
-
-&lt;p&gt;All of these very effectively discharge your responsibility without
-being in any way helpful. They are, at best, &lt;a href="https://drmaciver.substack.com/i/39151933/checklist-advice"&gt;checklist
-advice&lt;/a&gt;, without any suggestion that you’re willing to do the rest of
-the checklist or, heaven forbid, actually offer real advice once the
-checklist is completed.&lt;/p&gt;
-
-
-&lt;p&gt;Now, often it’s perfectly reasonable not to want their problem to be
-yours. If it’s some stranger on the internet asking you to feel bad for
-them and care about their problems then… I don’t know, I probably think
-&lt;a href="https://notebook.drmaciver.com/posts/2022-01-23-13:27.html"&gt;you
-should feel bad for them&lt;/a&gt;. Certainly it’s not fard, but it might be
-mustahabb.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I got the &lt;a href="https://en.wikipedia.org/wiki/Fard"&gt;Islamic tiers of moral
-obligation&lt;/a&gt; from &lt;a href="/images/islamic-moral-tiers.webp"&gt;some
-random Tumblr post that no longer seems to exist on the internet&lt;/a&gt; but
-it’s very useful and somewhat better grain than most of the equivalent
-English words. The point I’m making here is that this is a morally good
-act that you are not required to do.&lt;/span&gt; But this is hard, and most people
-don’t want to do it. What they do want, however, is to feel good about
-themselves, so giving a plausible appearance of caring is helpful. Or,
-even better, being able to credibly suggest that in fact the speaker is
-bad for having this problem and it’s their fault for not having solved
-it already, thus not only discharging your obligations but making it
-clear that you didn’t have any obligations to discharge in the first
-place.&lt;/p&gt;
-
-
-&lt;p&gt;This is particularly bad behaviour when you’re not in the “strangers
-on the internet” scenario and it’s someone who you do have some sort of
-responsibility to - a personal relationship, one of your reports at
-work, a student of yours, etc. There it is not just a disavowal of
-responsibility that you don’t want to have, it’s a refusal to accept the
-responsibility that you &lt;em&gt;do&lt;/em&gt; have.&lt;/p&gt;
-
-
-&lt;p&gt;Even when you don’t have any responsibility to the person, I do think
-it is your responsibility not to give this sort of disingenuous advice.
-As well as being &lt;a href="https://notebook.drmaciver.com/posts/2024-01-04-10:02.html"&gt;dishonest&lt;/a&gt;,
-the sheer ubiquity of this behaviour is a failure of &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-14:34.html"&gt;collective
-responsibility&lt;/a&gt;, and while you might have no individual
-responsibility to the advice recipient, I do think you have an
-individual responsibility not to make these collective problems
-worse.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2024-01-06-07:04.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-07-08:50.html</id>
     <title>How to be better at everything</title>
@@ -2186,7 +2061,7 @@ worth the effort of explaining”.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-15-07:13.html</id>
     <title>Things I believe about ethics and personal development</title>
-    <updated>2024-01-15T07:13:00+00:00</updated>
+    <updated>2024-01-15T07:18:28+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Things I believe about ethics and personal development&lt;/p&gt;
@@ -2546,5 +2421,260 @@ mostly correct and important though.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2024-01-15-07:13.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2024-01-16-13:11.html</id>
+    <title>Journaling as a foundational practice</title>
+    <updated>2024-01-16T13:11:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Journaling as a foundational practice&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2024-01-16&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;This is another draft bankruptcy, excerpted from another abandoned
+book project. Most of the rest of the project is very sketchy but this
+is one of the more fleshed out chapters.&lt;/p&gt;
+
+
+&lt;hr/&gt;
+
+
+&lt;p&gt;Journaling is writing about your life, ideally every day, in a way
+that helps you observe key things about it, understand them, and start
+to improve them. It returns you to the question of what’s going on in
+your life and how you can understand it and improve it over and over
+again. It helps you figure out what matters to you.&lt;/p&gt;
+
+
+&lt;p&gt;If there is one thing that I wish I had kept up as a practice
+throughout the last five years, it’s daily journaling. Every time I’ve
+done it it’s been important and transformative and then for one reason
+or another I’ve just… stopped.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Editor’s note: Don’t ask how well I’m doing on this
+right now please…&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;Continuity of journaling practice is hard, and the design of the
+practice matters both for feeling like you’re getting something out of
+it and for making it robust against failure.&lt;/p&gt;
+
+
+&lt;p&gt;Here is what I currently consider an ideal journaling practice:&lt;/p&gt;
+
+
+&lt;p&gt;Journaling is done by hand, with a fountain pen, in an A5 notebook.
+For reference, &lt;a href="https://www.amazon.co.uk/dp/B0B8M88JW9"&gt;I use
+this one&lt;/a&gt;, and I think it’s reasonably well designed for the purpose,
+but it’s nothing special. Write on some flat surface, with your arm well
+supported (note: I am still figuring out ideal writing posture, and may
+need to update this advice). Pages in the journal should be dated. I
+usually only add a date for the first page of every day (dating every
+page is also fine, I just rarely bother). I have a dedicated writing
+desk from which phones and computers are banned, but this may be hard to
+find space for.&lt;/p&gt;
+
+
+&lt;p&gt;You should have a foundational journaling prompt that you use every
+day. The idea of the foundational prompt is that it takes you straight
+into just writing without having to make decisions about what to write
+about, and it creates a diverse range of different starting points to
+get you to examine things from many different angles.&lt;/p&gt;
+
+
+&lt;p&gt;Mine is this: I draw a tarot card from a standard Rider-Waite-Smith
+deck, I consult Joan Bunning’s “Big Book of Tarot” entry for that card.
+I read the description of the card out loud. I then write two pages
+inspired by it. “Inspired” can be anything that feels right. Often I
+pick out some characteristic from the list of characteristics that
+describes some problem I’m currently having. Sometimes the card lands
+with a big “ouch, too accurate” and I know exactly what to write.
+Sometimes the card completely fails to land and I instead describe the
+&lt;em&gt;absence&lt;/em&gt; of the card’s qualities from my life. If the card is a
+court card I often talk about what it would be like to be the person
+represented.&lt;/p&gt;
+
+
+&lt;p&gt;If you are comfortable with Tarot (this does not require attributing
+any mystical significance to it. I don’t), I recommend adopting this as
+your specific practice. If you want to try it out without committing to
+buying a deck and the book, you can use &lt;a href="https://randomtarotcard.com/"&gt;https://randomtarotcard.com/&lt;/a&gt; for
+your card draw and look up the card in &lt;a href="http://www.learntarot.com/cards.htm"&gt;http://www.learntarot.com/cards.htm&lt;/a&gt;
+(which is by the same author as the book I use, but the book often has
+expanded descriptions).&lt;/p&gt;
+
+
+&lt;p&gt;If you’re not comfortable with tarot, I’ll list some alternative
+prompts further down.&lt;/p&gt;
+
+
+&lt;p&gt;(Note: In actual fact I currently do not my foundational journaling
+in my journal, I’m doing it on A4 sheets, because I started it as a
+project of working through the deck one card at a time without
+replacement and introduced the journal midway through and want to
+complete the deck before I switch over to the journal. This section may
+be updated if I discover that the switchover doesn’t work, but I have
+used a tarot deck this way in the past and expect it to work fine)&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Editor’s note: This project has now been completed. See
+&lt;a href="https://drmaciver.substack.com/p/completing-completable-projects"&gt;Completing
+completable projects&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;The goal is that the foundational journaling should be done by noon.
+If you notice that it is after noon, you should treat it as a matter of
+some urgency to go complete it.&lt;/p&gt;
+
+
+&lt;p&gt;Immediately after you have done your foundational journaling, you
+will ideally write another page of journaling about anything you feel
+like writing about. If literally nothing comes to mind, don’t worry
+about it. This page is not a requirement of the practice, it’s just a
+point at which you are invited to journal.&lt;/p&gt;
+
+
+&lt;p&gt;In general, you should try to journal in whole pages. Keep writing
+until the page is full, and then stop. As you notice you’re coming to
+the end of a page, try to sum up or fine some appropriate way to drop
+the mic at the end.&lt;/p&gt;
+
+
+&lt;p&gt;Something else I find useful is to light a candle while journaling.
+The way the candle works is that it serves as a sort of anchor: If the
+candle is lit, I’m supposed to be journaling. If I notice it is lit, I
+should make a decision to go back to journaling or snuff it out. As long
+as I’ve completed my foundational journaling, it’s fine to choose to
+stop journaling, the candle just serves as a reminder to make the
+decision.&lt;/p&gt;
+
+
+&lt;p&gt;Throughout the day if at any point you feel like you need to think
+something through or want to express something, go write a page in your
+journal about it. The ideal is to cultivate the journal as something you
+&lt;em&gt;want&lt;/em&gt; to use and keep going back to. There is no such thing as
+too much journaling as long as most pages you write in your journal feel
+productive to have written.&lt;/p&gt;
+
+
+&lt;h3 id="debugging-notes"&gt;Debugging Notes&lt;/h3&gt;
+
+
+&lt;p&gt;This is a good opportunity to practise debugging.&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Editor’s note: This is partly a reference to a previous
+chapter on debugging in this book attempt, but I never actually wrote
+that chapter. I may attempt to turn its stub into a notebook post at
+some point soon.&lt;/span&gt;
+Chances are, if you try to copy the above verbatim, you’ll run into some
+problems. I don’t know what they are (if you do run into some problems,
+please tell me! I’d like to debug them with you)&lt;/p&gt;
+
+
+&lt;p&gt;I promise that the daily journaling habit is going to be worth it, so
+it’s worth spending some time figuring out why it isn’t working for you
+and changing that.&lt;/p&gt;
+
+
+&lt;p&gt;Here are some variants you can try for the physical form:&lt;/p&gt;
+
+
+&lt;ol type="1"&gt;
+&lt;li&gt;You can, if you must, journal on the computer. I think it’s a bad
+idea, but the best system is the one you can actually follow, so if you
+hate handwriting and can’t bring yourself to do it, don’t.&lt;/li&gt;
+&lt;li&gt;You can reduce the volume of journaling, either by writing fewer
+pages, switching to a smaller journal, allowing yourself to stop at the
+half page mark, etc.&lt;/li&gt;
+&lt;li&gt;You could journal on disposable paper - write it on an A4 sheet and
+then shred it if you don’t want to keep it around.&lt;/li&gt;
+&lt;li&gt;Experiment with different pens and journals. Do you hate fountain
+pens? Do you prefer squared over lined? etc.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;For the content you could try different foundational practices.
+e.g.&lt;/p&gt;
+
+
+&lt;ol type="1"&gt;
+&lt;li&gt;Pick some book of special significance to you (a bible for example,
+but it could also be a favourite novel) and use that as a source of
+prompts. Turn to a random page, read the page out loud, and focus in on
+some passage that feels salient in some way.&lt;/li&gt;
+&lt;li&gt;Rather than having a special book, you could have a book that you
+rotate. Pick some book of your shelves, use that for a while. When you
+feel like moving on after journaling, switch it out for something
+else.&lt;/li&gt;
+&lt;li&gt;A variation on the above is that rather than random pages you could
+work through the book sequentially - read a few pages before journaling
+until you find something&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;The core of the foundational practice is that it needs a random
+prompt to get you started, and those random prompts have to have a
+reasonable amount of range, and a lot of flexibility for interpreting
+them.&lt;/p&gt;
+
+
+&lt;p&gt;Another common way the journaling practice is likely to fail is that
+you just stop doing it. Usually you forget to do it one day, and it
+makes it easier to forget to do it the next, etc. The practice I
+described above has a number of features designed to offset that:&lt;/p&gt;
+
+
+&lt;ol type="1"&gt;
+&lt;li&gt;It has a specific centre that is easy to return to (do your
+foundational journaling before noon).&lt;/li&gt;
+&lt;li&gt;It makes that centre easy to achieve (it uses a random prompt)&lt;/li&gt;
+&lt;li&gt;It has the candle as an anchor to help stabilise the practice.&lt;/li&gt;
+&lt;li&gt;Similarly it has a physical book for that.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;But these are all predicated on the fact that it’s relatively easy
+for me to find time in the morning to do it, and I have a good physical
+space for it. Your problems might be different.&lt;/p&gt;
+
+
+&lt;p&gt;The core thing to do though is to decide:&lt;/p&gt;
+
+
+&lt;ol type="1"&gt;
+&lt;li&gt;When are you going to do your journaling?&lt;/li&gt;
+&lt;li&gt;What are you going to do when you miss that slot?&lt;/li&gt;
+&lt;li&gt;Where are you going to do your journaling?&lt;/li&gt;
+&lt;li&gt;What are you going to do if you’re not able to do it there? (e.g.
+because traveling)&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;For me the answers are:&lt;/p&gt;
+
+
+&lt;ol type="1"&gt;
+&lt;li&gt;Ideally while I drink my morning coffee, but any time before noon is
+fine.&lt;/li&gt;
+&lt;li&gt;As soon as I can after noon I go do my journaling.&lt;/li&gt;
+&lt;li&gt;At my writing desk.&lt;/li&gt;
+&lt;li&gt;I’ll bring my journal with me and try to do some journaling on the
+right schedule, but it often won’t be my foundational practice because I
+don’t have the tarot deck I’m using with me.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;h3 id="afterword"&gt;Afterword&lt;/h3&gt;
+
+
+&lt;p&gt;This excerpt was a good reminder that I should try to journal more
+reliably again. I haven’t stopped doing it, but I probably average about
+once a week.&lt;/p&gt;
+
+
+&lt;p&gt;Partly this is because this daily writing project is taking up the
+time slot that would otherwise be used for journalling.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2024-01-16-13:11.html" rel="alternate"/>
   </entry>
 </feed>
