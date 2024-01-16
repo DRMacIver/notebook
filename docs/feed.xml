@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-01-16T12:31:00+00:00</updated>
+  <updated>2024-01-15T07:13:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,6 +10,131 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2024-01-06-07:04.html</id>
+    <title>Disingenuous Advice</title>
+    <updated>2024-01-06T08:32:15+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Disingenuous Advice&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2024-01-06&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I’m a big fan of giving advice. You should give more advice. &lt;a href="https://notebook.drmaciver.com/posts/2021-07-17-14:20.html"&gt;Appropriately&lt;/a&gt;
+and &lt;a href="https://drmaciver.substack.com/p/how-to-give-good-advice"&gt;effectively&lt;/a&gt;,
+but helping people is good and advice, done well, is one of the easiest
+ways to help people.&lt;/p&gt;
+
+
+&lt;p&gt;But a thing I’ve been noticing for a while is that a lot of advice
+isn’t really designed to help people. It’s designed to discharge your
+responsibility, real or imagined, for helping them, in a way that makes
+having the problem their problem rather than yours.&lt;/p&gt;
+
+
+&lt;p&gt;The characteristic features of this sort of disingenuous advice
+are:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;It’s not exactly &lt;em&gt;bad&lt;/em&gt; advice. It’s important that it could,
+in theory, solve the problem.&lt;/li&gt;
+&lt;li&gt;It tends to be quite one-size-fits-all. It shows very little
+engagement with the actual problem - if you were going to put in enough
+effort to tailor your advice, you’d probably make at least some effort
+to give reasonable advice.&lt;/li&gt;
+&lt;li&gt;It tends to be quite simple, so as to make it seem easy. It’s the
+sort of thing that you could very naturally use the word “just” in.&lt;/li&gt;
+&lt;li&gt;It seems to encourage closing off further conversation until you’ve
+tried to follow the advice. Reasons why the advice won’t work sound like
+excuses.&lt;/li&gt;
+&lt;li&gt;It is, in fact, very hard to follow this advice and even following
+the advice isn’t guaranteed to work.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;The prompt for me to start noticing this pattern is how often “go to
+therapy” is this. Therapy is a perfectly valuable tool that, if you can
+afford it, can help with many categories of emotional problems. It also
+tends to be suggested very blindly, for large categories of problems
+that it’s not especially suited for, and to people who are probably not
+well set up to benefit from it (e.g. because they can’t afford it, or
+because the real problem is that their life sucks in very tangible ways
+and their negative emotions mostly stem from that). But by suggesting
+going to therapy you make it very clear that their problems aren’t
+yours, you’ve suggested a solution now, they should go make it a
+therapist’s problem.&lt;/p&gt;
+
+
+&lt;p&gt;“Learn to code” as a response to career problems is another common
+one. It’s not necessarily bad advice - software is a pretty good career
+option for some people. But it’s not a catch all solution to career
+problems - not everyone is actually well suited to work in software,
+retraining is hard, getting your first software job is hard, and there
+may be many better lateral transfers for most people that actually get
+to use their current experience.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Also not all jobs can be software jobs you do actually
+have to move atoms as well as bits.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;Another example that came up on discord recently was students having
+to ask permission to go to the bathroom in class, and how bad this is
+(especially given that it can be refused). The advice “you should have
+gone to the bathroom between classes” absolves your responsibility to
+them by making it the student’s fault for their lack of forethought.&lt;/p&gt;
+
+
+&lt;p&gt;All of these very effectively discharge your responsibility without
+being in any way helpful. They are, at best, &lt;a href="https://drmaciver.substack.com/i/39151933/checklist-advice"&gt;checklist
+advice&lt;/a&gt;, without any suggestion that you’re willing to do the rest of
+the checklist or, heaven forbid, actually offer real advice once the
+checklist is completed.&lt;/p&gt;
+
+
+&lt;p&gt;Now, often it’s perfectly reasonable not to want their problem to be
+yours. If it’s some stranger on the internet asking you to feel bad for
+them and care about their problems then… I don’t know, I probably think
+&lt;a href="https://notebook.drmaciver.com/posts/2022-01-23-13:27.html"&gt;you
+should feel bad for them&lt;/a&gt;. Certainly it’s not fard, but it might be
+mustahabb.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I got the &lt;a href="https://en.wikipedia.org/wiki/Fard"&gt;Islamic tiers of moral
+obligation&lt;/a&gt; from &lt;a href="/images/islamic-moral-tiers.webp"&gt;some
+random Tumblr post that no longer seems to exist on the internet&lt;/a&gt; but
+it’s very useful and somewhat better grain than most of the equivalent
+English words. The point I’m making here is that this is a morally good
+act that you are not required to do.&lt;/span&gt; But this is hard, and most people
+don’t want to do it. What they do want, however, is to feel good about
+themselves, so giving a plausible appearance of caring is helpful. Or,
+even better, being able to credibly suggest that in fact the speaker is
+bad for having this problem and it’s their fault for not having solved
+it already, thus not only discharging your obligations but making it
+clear that you didn’t have any obligations to discharge in the first
+place.&lt;/p&gt;
+
+
+&lt;p&gt;This is particularly bad behaviour when you’re not in the “strangers
+on the internet” scenario and it’s someone who you do have some sort of
+responsibility to - a personal relationship, one of your reports at
+work, a student of yours, etc. There it is not just a disavowal of
+responsibility that you don’t want to have, it’s a refusal to accept the
+responsibility that you &lt;em&gt;do&lt;/em&gt; have.&lt;/p&gt;
+
+
+&lt;p&gt;Even when you don’t have any responsibility to the person, I do think
+it is your responsibility not to give this sort of disingenuous advice.
+As well as being &lt;a href="https://notebook.drmaciver.com/posts/2024-01-04-10:02.html"&gt;dishonest&lt;/a&gt;,
+the sheer ubiquity of this behaviour is a failure of &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-14:34.html"&gt;collective
+responsibility&lt;/a&gt;, and while you might have no individual
+responsibility to the advice recipient, I do think you have an
+individual responsibility not to make these collective problems
+worse.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2024-01-06-07:04.html" rel="alternate"/>
+  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-07-08:50.html</id>
     <title>How to be better at everything</title>
@@ -2061,7 +2186,7 @@ worth the effort of explaining”.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-15-07:13.html</id>
     <title>Things I believe about ethics and personal development</title>
-    <updated>2024-01-15T07:18:28+00:00</updated>
+    <updated>2024-01-15T07:13:00+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Things I believe about ethics and personal development&lt;/p&gt;
@@ -2421,26 +2546,5 @@ mostly correct and important though.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2024-01-15-07:13.html" rel="alternate"/>
-  </entry>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2024-01-16-12:31.html</id>
-    <title>Problems and other solutions</title>
-    <updated>2024-01-16T12:31:00+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Problems and other solutions&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2024-01-16&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;(Title ~flagrantly ripped off from~ riffing on Allie Brosh’s &lt;a href="https://www.amazon.co.uk/Solutions-Other-Problems-Allie-Brosh/dp/1982156945"&gt;Solutions
-and other problems&lt;/a&gt;)&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2024-01-16-12:31.html" rel="alternate"/>
   </entry>
 </feed>
