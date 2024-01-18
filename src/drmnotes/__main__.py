@@ -67,7 +67,7 @@ def cached(f):
     cache = {}
 
     @functools.wraps(f)
-    def accept(*args):
+    def accept(*args, ignore_cache=False):
         key = cache_key(source_hash + '/' + ":".join(args))
 
         try:
@@ -79,10 +79,16 @@ def cached(f):
         cursor.execute(
             "create table if not exists cache_objects(name text, key unsigned bigint, result text, unique (name, key))"
         )
-        cursor.execute(
-            "select result from cache_objects where name = ? and key = ?", (name, key)
-        )
-        row = cursor.fetchone()
+        if ignore_cache:
+            cursor.execute(
+                "delete from cache_objects where name = ? and key = ?", (name, key)
+            )
+            row = None
+        else:
+            cursor.execute(
+                "select result from cache_objects where name = ? and key = ?", (name, key)
+            )
+            row = cursor.fetchone()
         if row is None:
             result = f(*args)
             cursor.execute(
@@ -166,12 +172,14 @@ TEMPLATES = os.path.join(ROOT, "templates")
 TEMPLATES_HASH = None
 
 POSTS = os.path.join(ROOT, "posts")
+ESSAYS = os.path.join(ROOT, "essays")
 
 HTML_ROOT = os.path.join(ROOT, "docs")
 
 INDEX_PAGE = os.path.join(HTML_ROOT, "index.html")
 
 HTML_POSTS = os.path.join(HTML_ROOT, "posts")
+HTML_ESSAYS = os.path.join(HTML_ROOT, "essays")
 
 EDITOR = "vim"
 
@@ -218,7 +226,7 @@ def edit_and_commit_post(name, prompt=None):
             os.unlink(post_file)
         return
 
-    do_build(rebuild=False)
+    do_build(rebuild=False, name=name)
     files = [post_file, os.path.join(HTML_POSTS, name + ".html")]
     git("add", *files)
     git("add", "-u", HTML_ROOT)
@@ -886,24 +894,25 @@ class MathJaxAlignExtension(markdown.Extension):
 
 
 @cached
-def md(text, use_pandoc=True):
-    if use_pandoc:
-        text = text.replace('\\(', '$')
-        text = text.replace('\\)', '$')
+def md(text):
+    text = text.replace('\\(', '$')
+    text = text.replace('\\)', '$')
 
-        return subprocess.check_output([
-            'pandoc', '--from=markdown+inline_notes', '--to=html',
-            '--mathjax=https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML'
-        ], input=text, universal_newlines=True)
-    else:
-        return markdown.markdown(
-            text,
-            extensions=[
-                MathJaxAlignExtension(),
-                "markdown.extensions.fenced_code",
-                "markdown.extensions.codehilite",
-            ],
-        )
+    result = subprocess.check_output([
+        'pandoc', '--from=markdown+inline_notes+citations', '--toc', '--to=html',
+        '--mathjax=https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML',
+        f"--bibliography={os.path.join(ROOT, 'references.bib')}",
+        '--citeproc',
+        # '--standalone', '--metadata', 'title="placeholder"',
+    ], input=text, universal_newlines=True)
+
+    return result
+
+    # We run as standalone to get a TOC, but we don't actually want it to be standalone so
+    # we then parse and extract the body.
+    soup = BeautifulSoup(result, 'html.parser')
+    body, = soup.select('body')
+    return ''.join(str(c) for c in body.children)
 
 
 PULL_IN_TAGS = re.compile("\s+</", re.MULTILINE)
@@ -928,6 +937,10 @@ def cache_key(s):
 
 def post_names():
     return [os.path.basename(f)[:-3] for f in glob(os.path.join(POSTS, "*.md"))]
+
+
+def essays():
+    return [os.path.basename(f)[:-3] for f in glob(os.path.join(ESSAYS, "*.md"))]
 
 
 def mine(url):
@@ -1100,6 +1113,16 @@ def sidenotify(soup):
                 fn_ref.replace_with(new_html)
 
 
+def make_image_captions(soup):
+    replacements = []
+    for img in soup.select('img'):
+        parent = img.parent
+        parent.name = 'figure'
+        for caption in parent.select('em'):
+            break
+            caption.name = 'figcaption'
+        
+
 @cached
 def post_html(_unused_key, name, source_text):
     source_html = md(source_text)
@@ -1119,6 +1142,10 @@ def post_html(_unused_key, name, source_text):
             f.name = "h%d" % (d + 1,)
 
     sidenotify(soup)
+    make_image_captions(soup)
+
+    for toc in soup.select('nav#TOC'):
+        toc.decompose()
 
     date = datetime.strptime(name, POST_DATE_FORMAT)
     post_template = TEMPLATE_LOOKUP.get_template("post.html")
@@ -1127,6 +1154,75 @@ def post_html(_unused_key, name, source_text):
         post=clean_html(soup),
         title=title,
         date=date.strftime("%Y-%m-%d"),
+        url=f"https://notebook.drmaciver.com/posts/{name}.html",
+    )
+
+
+@cached
+def essay_html(_unused_key, name, source_text):
+    source_html = md(source_text)
+    soup = BeautifulSoup(source_html, "html.parser")
+
+    title_elt = soup.find("h1")
+
+    if title_elt is None:
+        title = None
+    else:
+        title = " ".join(map(str, title_elt.contents))
+        title = re.compile("\s+", re.MULTILINE).sub(" ", title).strip()
+        title_elt.decompose()
+
+    for d in [3, 2]:
+        for f in soup.findAll("h%d" % (d,)):
+            f.name = "h%d" % (d + 1,)
+
+    references = soup.select_one("div.references")
+    assert references
+    if references:
+        references.name = 'section'
+        section_title = soup.new_tag('h2')
+        section_title.append('Bibliography')
+        references.insert(0, section_title)
+
+        bib_entries = [e.extract() for e in references.select("div.csl-entry")]
+
+        new_list = soup.new_tag('ul')
+        new_list['id'] = 'the-bibliography'
+
+        for b in bib_entries:
+            b.name = 'li'
+            new_list.append(b)
+
+        references.append(new_list)
+
+    sidenotify(soup)
+    make_image_captions(soup)
+
+    soup = BeautifulSoup(str(soup), 'html.parser')
+
+    tocs = soup.select('nav#TOC')
+    assert len(tocs) <= 1
+    if tocs:
+        toc_section, = tocs
+
+        toc_header = soup.new_tag('h3')
+        toc_header.insert(0, 'Table of Contents')
+        toc_section.insert(0, toc_header)
+
+        toc, = soup.select('nav#TOC > ul')
+
+        actual_toc, = toc.select('nav#TOC > ul > li > ul')
+        actual_toc.name = 'ol'
+        for ul in actual_toc.select('ul'):
+            ul.name = 'ol'
+
+        toc.replace_with(actual_toc.extract())
+
+    essay_template = TEMPLATE_LOOKUP.get_template("essay.html")
+
+    return essay_template.render(
+        post=clean_html(soup),
+        title=title,
         url=f"https://notebook.drmaciver.com/posts/{name}.html",
     )
 
@@ -1140,6 +1236,7 @@ def do_build(rebuild=False, full=True, name=""):
         pass
 
     template_age = max(os.path.getmtime(t) for t in glob(os.path.join(TEMPLATES, '*.html')))
+    template_age = max(template_age, os.path.getmtime(__file__))
 
     for name in tqdm(post_names(), desc='Building posts'):
         source = os.path.join(POSTS, name + ".md")
@@ -1160,7 +1257,29 @@ def do_build(rebuild=False, full=True, name=""):
             source_text = i.read()
 
         with open(dest, "w") as o:
-            o.write(post_html(template_cache_key(), name, source_text))
+            o.write(post_html(template_cache_key(), name, source_text, ignore_cache=rebuild))
+
+    for name in tqdm(essays(), desc='Building essays'):
+        source = os.path.join(ESSAYS, name + ".md")
+        if not name.startswith(only):
+            continue
+
+        dest = os.path.join(HTML_ESSAYS, name + ".html")
+
+        if not (
+            rebuild
+            or not os.path.exists(dest)
+            or template_age > os.path.getmtime(dest)
+            or os.path.getmtime(source) > os.path.getmtime(dest)
+            or True
+        ):
+            continue
+
+        with open(source) as i:
+            source_text = i.read()
+
+        with open(dest, "w") as o:
+            o.write(essay_html(template_cache_key(), name, source_text, ignore_cache=rebuild))
 
     if not full:
         return
