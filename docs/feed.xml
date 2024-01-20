@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-01-18T10:00:00+00:00</updated>
+  <updated>2024-01-20T11:18:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,443 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2024-01-09-08:51.html</id>
-    <title>Safety Advice and Judgment in Emergencies</title>
-    <updated>2024-01-09T09:00:30+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Safety Advice and Judgment in Emergencies&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2024-01-09&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Another draft bankruptcy post. I don’t know why I didn’t finish this
-one. I barely remember writing it - it’s from a full year ago - and it
-looks pretty close to complete to me.&lt;/p&gt;
-
-
-&lt;hr/&gt;
-
-
-&lt;p&gt;Please note that improper application of what follows can literally
-get you killed.&lt;/p&gt;
-
-
-&lt;p&gt;This is not a joke. I’m about to explain how safety advice works, and
-the reason it works the way it does is so that you don’t die. If you
-read this article and go “Ah I see, safety advice is for dumb people,
-but I am smart and know better so I can disregard it”, you will probably
-die.&lt;/p&gt;
-
-
-&lt;p&gt;I am emphasizing this because that is absolutely a risk factor
-associated with this article. I would like you not to die and, equally
-importantly to me, I would like not to get blamed if you do.&lt;/p&gt;
-
-
-&lt;p&gt;In fact, my &lt;em&gt;official&lt;/em&gt; advice&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;In my very official capacity as that guy wot writes on
-the internet.&lt;/span&gt; is
-that you should always follow safety advice to the letter. I’m now going
-to explain to you why this isn’t always a good idea, and give some
-examples where I have not done so. If, based on this, you sometimes
-don’t follow safety advice, please don’t blame me. This newsletter is
-for informational purposes only etc etc.&lt;/p&gt;
-
-
-&lt;p&gt;So, let me be clear: Under normal circumstances, you should follow
-safety advice. Under moderately abnormal circumstances, you should
-follow safety advice. Under exceptional circumstances, after a careful
-balancing of the trade offs and proper consideration, it might be
-correct sometimes to not follow safety advice, but as far as my advice
-is concerned, you should follow safety advice and if you don’t then
-that’s on you.&lt;/p&gt;
-
-
-&lt;p&gt;Now, with those caveats aside, let’s talk about how safety advice
-works.&lt;/p&gt;
-
-
-&lt;p&gt;Back in 2018, I went to A&amp;amp;E&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Accident and Emergency. British English for the ER /
-Emergency Room.&lt;/span&gt; twice in one week.&lt;/p&gt;
-
-
-&lt;p&gt;Why?&lt;/p&gt;
-
-
-&lt;p&gt;Well, at night I was having a bit of trouble breathing. I wasn’t
-gasping, I wasn’t really struggling for breath, but my chest felt a bit
-tight and it felt like my breaths were never quite sufficiently
-deep.&lt;/p&gt;
-
-
-&lt;p&gt;So I called 111, the non-emergency medical advice helpline, and had
-the following conversation:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Me: (describes above symptoms)&lt;/p&gt;
-&lt;p&gt;Operator: Yeah you need to go to A&amp;amp;E right away.&lt;/p&gt;
-&lt;p&gt;Me: Are you sure? It doesn’t feel dangerous, just unpleasant.&lt;/p&gt;
-&lt;p&gt;Operator: We’re sending you an ambulance right now.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;So I went to A&amp;amp;E, waited a few hours in the middle of the night,
-they duly did an ECG, found nothing wrong, and told me I was probably
-fine. I got told to take some ibuprofen and an antihistamine and it’d
-probably make the symptoms go away.&lt;/p&gt;
-
-
-&lt;p&gt;Then it happened again a few days later, and basically the same story
-repeated.&lt;/p&gt;
-
-
-&lt;p&gt;The third time this happened I did the obvious sensible thing: I
-didn’t tell a medical professional about it.&lt;/p&gt;
-
-
-&lt;p&gt;Also at that point I figured out what was triggering it&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;A buckwheat pillow I’d got for correcting neck posture
-at night apparently set off some sort of allergic reaction, though I am
-not as far as anyone can tell allergic to buckwheat.&lt;/span&gt; and
-removed it from my bedroom and after that I didn't have the symptoms
-again.&lt;/p&gt;
-
-
-&lt;p&gt;But, if I had called 111 for advice that third time, I would have
-found myself in an ambulance, because as far as 111 is concerned, if
-you’re having trouble breathing, you go to A&amp;amp;E.&lt;/p&gt;
-
-
-&lt;p&gt;This is a completely reasonable thing for them to do, because they
-are not in the position of doing a detailed medical diagnosis, they are
-in the position of dispensing safety advice.&lt;/p&gt;
-
-
-&lt;p&gt;Safety advice has three key properties:&lt;/p&gt;
-
-
-&lt;ol type="1"&gt;
-&lt;li&gt;&lt;p&gt;It is designed to help you avoid situations in which you die, or
-other terrible things happen to you.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;It is designed to be used with minimal information or skill, on
-either the part of the person receiving it or the person giving
-it.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;It has a very limited set of concerns and treats everything
-outside of those concerns as irrelevant.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;When you call 111, you are not talking to someone who has a medical
-degree. It’s a standard call center job with standard call center job
-requirements. &lt;a href="https://www.londonambulance.nhs.uk/working-for-us/career-opportunities/111-health-advisor-faqs/"&gt;The
-entry requirements are as follows&lt;/a&gt;:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Experience of dealing with members of the public over the
-telephone&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Ability to remain calm when working under pressure&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Ability to work to defined policies and procedures&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Ability to work on own initiative&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Age 18 years or older (in line with legislation)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;There is presumably on the job training, but they are very much not
-medical professionals, they are there to go through a decision tree as
-to whether there is something simple you can/should do, or whether you
-need to escalate to a medical professional - either “go to the GP”, “go
-to A&amp;amp;E”, or things of that ilk.&lt;/p&gt;
-
-
-&lt;p&gt;In this decision tree they are working through with you, some of the
-branches involve you dying. They don’t want that to happen.&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Most importantly, they don’t want to get blamed when
-that happens.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;You can think of this part of the decision tree as the big that
-decides “Do I send them to A&amp;amp;E or not?”. &lt;a href="https://www.drmaciver.com/2020/02/theres-no-single-error-rate/"&gt;There
-are two types of errors&lt;/a&gt; they can make here:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;They can send you to A&amp;amp;E when they don’t need to.&lt;/li&gt;
-&lt;li&gt;They can not send you to A&amp;amp;E when you do need to.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;In the second one, you probably die, and they almost certainly get in
-trouble (either personally or as an organisation).&lt;/p&gt;
-
-
-&lt;p&gt;The first isn’t free. If it were free they’d send everyone to
-A&amp;amp;E. But it’s a lot preferable to you dying.&lt;/p&gt;
-
-
-&lt;p&gt;Basically, there are three costs here:&lt;/p&gt;
-
-
-&lt;ol type="1"&gt;
-&lt;li&gt;Risk to you.&lt;/li&gt;
-&lt;li&gt;Burden on medical system.&lt;/li&gt;
-&lt;li&gt;Inconvenience to you.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;From the point of view of the 111 operator, these are in decreasing
-order of importance, and their importance decreases &lt;em&gt;sharply&lt;/em&gt;
-with each item - they very much don’t want you to die, they don’t want
-to create unnecessary work for doctors, and also they probably care a
-little bit about not inconveniencing you but let’s be honest it’s barely
-on their radar.&lt;/p&gt;
-
-
-&lt;p&gt;This means that in any circumstances where the risk to you is high,
-they will tell you to go to A&amp;amp;E, and they will right to do so. In
-particular when there is a non-negligible chance that you might
-literally die, they will tell you to go to A&amp;amp;E.&lt;/p&gt;
-
-
-&lt;p&gt;Now, here’s the wrinkle: “chance that you might die” is not purely an
-objective property of the world. There’s “genuine” uncertainty - given
-the true facts about your state, how at risk you are - but there’s also
-epistemic uncertainty - given what we know about your state, how at risk
-you might be.&lt;/p&gt;
-
-
-&lt;p&gt;What you &lt;em&gt;want&lt;/em&gt; in an ideal case is to make all the judgements
-based on the genuine uncertainty. If you’re actually at risk, go to
-A&amp;amp;E. If you’re not actively at risk, take care of yourself at home
-and see your GP when necessary.&lt;/p&gt;
-
-
-&lt;p&gt;The problem is that you don’t know the genuine uncertainty. You’ve
-got some approximation of it cobbled together by your (unreliable) self
-reports over the phone and someone who’s had a couple of weeks of
-training and has access to an internal knowledge base which probably
-isn’t much better than the NHS website.&lt;/p&gt;
-
-
-&lt;p&gt;What this means, is that they are very very strongly incentivised to
-err on the side of caution. They have simple rules, and rather than try
-to refine them, they offload them to people who are competent to do the
-actual risk assessment. Thus most of the uncertainty in their assessment
-is epistemic, not genuine, and they hand you over to a medical
-professional to reduce it when it seems like it needs reducing because
-it looks uncomfortable far from zero.&lt;/p&gt;
-
-
-&lt;p&gt;In the case of difficulty breathing, this sounds sufficiently like I
-might be having one of several rapidly fatal problems, that they very
-much want to reduce that epistemic uncertainty down to zero and find out
-if I’m actually going to die. Off to A&amp;amp;E with me.&lt;/p&gt;
-
-
-&lt;p&gt;This is good. It’s how the system is supposed to work. I want to be
-clear on that.&lt;/p&gt;
-
-
-&lt;p&gt;BUT it does mean that you can make better decisions than the system
-under two particular types of circumstance:&lt;/p&gt;
-
-
-&lt;ol type="1"&gt;
-&lt;li&gt;You have significantly more applicable knowledge than they do.&lt;/li&gt;
-&lt;li&gt;Your preferences are significantly different than the ones they’re
-optimised for.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;In my case with the A&amp;amp;E visits, both applied.&lt;/p&gt;
-
-
-&lt;p&gt;I at this point had significantly more applicable knowledge than they
-did - I’d talked to doctors about it and they’d examined me. Twice. I
-literally had more relevant medical knowledge about my problem than the
-operator at 111 could ever acquire, because I’d talked to medical
-experts about this.&lt;/p&gt;
-
-
-&lt;p&gt;My preferences were significantly different than theirs - being in
-A&amp;amp;E for 3 hours starting at midnight &lt;em&gt;sucks&lt;/em&gt;. I didn’t want
-to do it. They didn’t care about this.&lt;/p&gt;
-
-
-&lt;p&gt;It’s tempting to say that they should be able to have a conversation
-with me that takes these preferences into account. They shouldn’t!
-That’s not what they’re for. They’re a human interface to the system. If
-I want to have a proper conversation about the problem, I need to talk
-to an expert&lt;label class="margin-toggle sidenote-number" for="fn5"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn5" type="checkbox"/&gt;&lt;span class="sidenote"&gt;The experts also tend not to be very good at respecting
-patient preferences and knowledge, but that’s a separate problem.&lt;/span&gt;, the phone operator, in trying to
-act as such an expert, is likely to make significant errors, and those
-errors are likely to kill people.&lt;/p&gt;
-
-
-&lt;p&gt;The solution, unfortunately, is to not put them in a situation where
-they are forced to give you bad advice. This is not always available,
-and it requires you to have good judgement about when that is.&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, I’m writing all this because I ran into another problem like
-this recently, in which I flagrantly ignored safety advice, which is
-that my house had a gas leak recently.&lt;/p&gt;
-
-
-&lt;p&gt;We’d had a smart meter fitted on Wednesday&lt;label class="margin-toggle sidenote-number" for="fn6"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn6" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Editor’s note: This was written over a year ago, so the
-Wednesday in question was in December 2022.&lt;/span&gt;.
-The person who fitted it did a sufficiently bad job that the person who
-fixed his work had a legal requirement to report him.&lt;/p&gt;
-
-
-&lt;p&gt;We noticed this problem on Friday when I noticed that operating our
-gas stove caused a strong smell of gas in the living room. I turned off
-the stove, checked the meter cupboard, and sure enough there was an even
-stronger smell of gas coming from there.&lt;/p&gt;
-
-
-&lt;p&gt;I turned off the gas, which solved the immediate problem, and called
-the national gas emergency line, as one does when you have a gas
-leak.&lt;/p&gt;
-
-
-&lt;p&gt;They informed me that a gas engineer would be with me as soon as
-possible (“as soon as possible” turned out to be about 50 hours later.
-We did not get gas restored until Sunday evening), and then very
-insistently informed me that we must:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;Not operate any electrical appliances.&lt;/li&gt;
-&lt;li&gt;Keep doors and windows open to ventilate the property.&lt;/li&gt;
-&lt;li&gt;Stay out of any attics.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;I earnestly informed them that yes I would absolutely do this. Then I
-opened the back door, waited a bit, verified that I could not smell gas
-anywhere, and turned on a space heater.&lt;/p&gt;
-
-
-&lt;p&gt;According to the official safety advice, I’d just behaved horribly
-irresponsibly and was now going to blow up my house. This didn’t happen,
-in case you’re worrying.&lt;/p&gt;
-
-
-&lt;p&gt;Why did I behave in such a seemingly flagrantly irresponsible
-way?&lt;/p&gt;
-
-
-&lt;p&gt;Because:&lt;/p&gt;
-
-
-&lt;ol type="1"&gt;
-&lt;li&gt;It was -6C outside (about 20F).&lt;/li&gt;
-&lt;li&gt;There was no longer a gas leak, because the gas was off.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;From their perspective when writing the safety advice:&lt;/p&gt;
-
-
-&lt;ol type="1"&gt;
-&lt;li&gt;Gas leaks are very very bad, and you should not trust inexpert
-judgement as to how bad a particular gas leak is.&lt;/li&gt;
-&lt;li&gt;The cost of gas leak mitigations is relatively low, because there
-will be an engineer with there to deal with them rapidly.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;From my perspective:&lt;/p&gt;
-
-
-&lt;ol type="1"&gt;
-&lt;li&gt;I was extremely confident in my ability to assess how bad this gas
-leak was, because I knew exactly where it was occurring, I had turned
-off the gas supply, ventilated the property, and sniffed around to
-confirm a total absence of the smell of gas.&lt;label class="margin-toggle sidenote-number" for="fn7"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn7" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Technically of mercaptan, the additive they put in gas
-to make sure you can smell it.&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;When someone tells me “I can’t possibly comment” when I ask them
-whether “As soon as possible” means “Some time today”, I know I’m in for
-a long wait, and I was absolutely not going to have a long wait in sub
-freezing temperatures with no heat.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;The result was that the next 48 hours, while extremely unpleasant,
-were not actively dangerous to my health. If I had followed their safety
-advice, it would have been actively dangerous.&lt;/p&gt;
-
-
-&lt;p&gt;Honestly, this is not good safety advice. It might be good safety
-advice in the normal course of things where you really can count on a
-two hour response time, but even then it’s not great.&lt;/p&gt;
-
-
-&lt;p&gt;The problem is that this had two assumptions about the world encoded
-into it:&lt;/p&gt;
-
-
-&lt;ol type="1"&gt;
-&lt;li&gt;I am incompetent to assess whether there is a gas leak.&lt;/li&gt;
-&lt;li&gt;They will respond fast enough that any inconveniences are
-minor.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;The first assumption is, honestly, probably fair enough. Gas is scary
-and most people are indeed incompetent. I was happy to trust my own
-judgement, but they probably do not have the information to determine
-that my judgement is trustworthy.&lt;/p&gt;
-
-
-&lt;p&gt;If their advice was “If you think it’s safe, treat it as safe”, this
-would probably get more people killed, because most people probably
-don’t have judgement you can trust.&lt;label class="margin-toggle sidenote-number" for="fn8"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn8" type="checkbox"/&gt;&lt;span class="sidenote"&gt;As this whole episode shows, you can’t even trust gas
-safety certified engineers to reliably have good judgement.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;But, eh, regardless of whether they trust my judgement, I trust my
-judgement! And I’m pretty sure I’m right to do so. The problem is, of
-course, that many other people who also think this about their own
-judgement do so incorrectly. This is part of why my official advice is
-not “trust your judgement”.&lt;/p&gt;
-
-
-&lt;p&gt;I don’t really know what to tell you about how to tell whether you
-should actually trust your judgement, but one partial test is that you
-know when &lt;em&gt;not&lt;/em&gt; to trust your judgement. For example, I was at
-the time basically 100% confident that I knew what the problem was and
-that I could fix it. I was proven correct in retrospect too - the
-problem was exactly what I thought it was, and doing what I thought
-would fix it would have indeed fixed it.&lt;/p&gt;
-
-
-&lt;p&gt;I sat on my hands for the full 48 hours and refused to touch it. This
-was correct. Everything would have been fine if I’d tried to fix it, and
-I knew that it would be fine if I tried to fix it, and I also knew that
-I would still think it would probably be fine in many scenarios that end
-with us being blown up or poisoned.&lt;/p&gt;
-
-
-&lt;h3 id="afterword"&gt;Afterword&lt;/h3&gt;
-
-
-&lt;p&gt;I think all that stopped me finishing writing this piece was I didn’t
-have a very satisfying way to wrap it up other than to say “learn when
-to trust your judgement, butplease don’t get yourself killed”. So uh,
-learn when to trust your judgment, but please don’t get yourself
-killed.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2024-01-09-08:51.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-10-07:48.html</id>
     <title>Showing people the door</title>
@@ -2550,7 +2113,7 @@ thoughts on guilt.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-18-10:00.html</id>
     <title>Something isn’t working</title>
-    <updated>2024-01-18T10:00:00+00:00</updated>
+    <updated>2024-01-18T10:24:43+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Something isn’t working&lt;/p&gt;
@@ -2682,5 +2245,172 @@ as you do when something isn’t working, and then fix that.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2024-01-18-10:00.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2024-01-20-11:18.html</id>
+    <title>Shared frustrations</title>
+    <updated>2024-01-20T11:18:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Shared frustrations&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2024-01-20&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I am, it will shock you to know, annoyingly finickity about things
+being done correctly. It hurts me somewhere deep in my soul when people
+do things in obviously suboptimal ways.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Importantly I’m fine with people doing things less well
+because it’s easier. What annoys me is when people are obviously failing
+&lt;em&gt;by their own standards&lt;/em&gt;, getting worse outcomes for a worse
+experience of doing the thing.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;I try to reign this in. I don’t actually like telling people off, so
+I’ll often be silently frustrated rather than telling someone about
+it.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;This is a bad idea for anything recurring, because as a
+result I sound super annoyed by minor things when I finally break and do
+say something about it. I’m not saying I don’t do that, I’m just saying
+I do that and I know it’s a bad idea. If you will, an obviously
+suboptimal approach that is failing even by my own standards…&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;Let me tell you two instances of this recently and something
+interesting I learned from them.&lt;/p&gt;
+
+
+&lt;p&gt;The first is this: We have an instant pot. Its pressure cooking mode
+gets used for roughly two categoires of things: Making stock (usually
+beef, sometimes chicken), and what you might think of as “normal
+cooking” - stews, etc.&lt;/p&gt;
+
+
+&lt;p&gt;Crucially, these take very different times. Stock takes about four
+hours, normal cooking takes somewhere between 20 and 45 minutes.&lt;/p&gt;
+
+
+&lt;p&gt;Adjusting the time on an instant pot is very slow. This makes
+switching between these two times irritating. Fortunately, the instant
+pot has a feature for this: The pressure cooker remembers two previous
+times, and you can press the pressure cook button to switch between
+them. So you can have it remember a four hour time and a half hour time,
+and everything is fine.&lt;/p&gt;
+
+
+&lt;p&gt;At least, everything is fine if people use this feature and don’t set
+both timers to four hours, forcing me to do the slow adjustment process
+every time I used the normal cooking mode. Very annoying.&lt;/p&gt;
+
+
+&lt;p&gt;I did eventually explain this feature to the others in my house, and
+of course neither of them knew about this feature - it’s not like they
+would have been maliciously setting the timer wrong, and it’s a pretty
+non obvious feature until you know about it, and I only found out about
+it relatively recently. Problem solved. But I’d been vaguely annoyed
+every time I used the instant pot for the entire several month period
+between discovering this feature and telling people about it.&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;To be clear I don’t use the instant pot &lt;em&gt;that&lt;/em&gt;
+often, so we’re talking about maybe 3 or 4 times at most.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;More on this in a moment, but now let me tell you about another
+kitchen irritation: Someone has been stacking the pots wrong. This means
+that the cupboard doesn’t close properly because the pot stack is too
+tall.&lt;/p&gt;
+
+
+&lt;p&gt;There’s a specific stacking order to the pots. If you get it right,
+the pot stack is short enough for everything to work fine. If you get it
+wrong, they don’t nest and it’s too tall. Someone had been placing pots
+in a non-nesting order, and this was causing problems.&lt;/p&gt;
+
+
+&lt;p&gt;Eventually we were in the kitchen together at the time when the pots
+needed stacking, and I showed them how to do it. “Oh, that’s how you
+stack them! I had no idea those nested, they look exactly the same size.
+That’s been so annoying.”&lt;/p&gt;
+
+
+&lt;p&gt;There are two interesting things about this response:&lt;/p&gt;
+
+
+&lt;ol type="1"&gt;
+&lt;li&gt;They were in fact correct, it was slightly non-obvious. The pots are
+&lt;em&gt;not&lt;/em&gt; exactly the same size, but they do look pretty similar from
+the outside, it’s just that one has much thinner metal than the other so
+although they look similar in size the slightly smaller one nests easily
+in the slightly larger one, because the interior of the slightly larger
+one is much larger relative to the slightly smaller one than their
+exterior would suggest.&lt;/li&gt;
+&lt;li&gt;They’d been annoyed by this too, and I hadn’t shown them how to
+solve their annoying problem.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;This recontextualised some things for me.&lt;/p&gt;
+
+
+&lt;p&gt;That instant pot thing? Adjusting the timer to four hours from half
+an hour is just as annoying as adjusting the timer from four hours to
+half an hour. I shared it as a “this is a thing you do that is annoying
+to me and here is how to not do it” but in actual fact it was probably a
+thing we &lt;em&gt;both&lt;/em&gt; were finding frustrating, and that I could easily
+have shared as “Hey you know that annoying thing? I’ve figured out the
+solution!”.&lt;/p&gt;
+
+
+&lt;p&gt;The thing about being annoyingly finickity is that because I care
+about doing things right, and because I &lt;a href="https://notebook.drmaciver.com/posts/2024-01-18-10:00.html"&gt;debug
+everything so reflexively&lt;/a&gt; is that “obviously suboptimal ways” is not
+actually obvious to others. It’s obvious to me because I’ve &lt;em&gt;figured
+it out&lt;/em&gt;. Sometimes through careful problem solving and sometimes
+because I accidentally pressed the button twice and noticed what
+happened when I did.&lt;/p&gt;
+
+
+&lt;p&gt;When I’ve done that, I can share this knowledge.&lt;/p&gt;
+
+
+&lt;p&gt;The silly thing is that I’m actually very good at sharing knowledge a
+lot of the time. I have a sort of habitual attitude of teaching when
+people ask me for help. e.g. a great habit of mine that you should
+definitely steal is that when people can’t find a link and I find it
+using search, I give them both the link and also tell them how I found
+it. This is a great way of helping people be better at search, which is
+a surprisingly deep and hard to learn skill.&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;The downside of this habit is that it sounds a bit too
+“let me google that for you” if you’re not careful. I usually &lt;a href="https://drmaciver.substack.com/p/telegraph-your-moves"&gt;telegraph&lt;/a&gt;
+why I’m doing this quite carefully, and am very explicit that it’s not a
+problem if they apologise for not googling for it themselves.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;Similarly, I’m good at sharing information spontaneously - you’re
+reading this on one of my outlets for doing so.&lt;/p&gt;
+
+
+&lt;p&gt;But volunteering information to someone specific, in response to
+something that they’re doing wrong, feels different. Like I said, it
+feels like telling them off, and I don’t like doing that. It feels bad
+for me to do it, and I’m worried about people reacting badly to it. Most
+people don’t like unsolicited advice. Not that I expect anything to go
+terribly wrong from telling partners about minor things, but it might
+hurt their feelings and I don’t actually like doing that.&lt;/p&gt;
+
+
+&lt;p&gt;I do think this fear is somewhat real - a lot of the time people
+don’t like being told they’re doing it wrong, and often wrong is
+subjective. Sometimes &lt;em&gt;I’m&lt;/em&gt; wrong because the suboptimal way is
+in fact optimising for some preference I don’t know about. I suspect
+it’s exaggerated in my head, but it is a real possibility.&lt;/p&gt;
+
+
+&lt;p&gt;But I think a lot of the time, the fear is largely the result of a
+skill issue on my part, and I need to stop thinking in terms of “argh
+you’re doing it wrong” and more “boy it looks annoying to do it that
+way. Can I show you a thing?” and see how people respond.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2024-01-20-11:18.html" rel="alternate"/>
   </entry>
 </feed>
