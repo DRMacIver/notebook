@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-01-20T11:18:00+00:00</updated>
+  <updated>2024-01-20T12:01:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,175 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2024-01-10-07:48.html</id>
-    <title>Showing people the door</title>
-    <updated>2024-01-10T07:59:43+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Showing people the door&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2024-01-10&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Another draft bankruptcy post. I think this was abandoned for a
-fairly common reason for me to abandon posts: I tried to write it
-because it was important, but it’s actually a fairly depressing subject
-for me to write about and I didn’t particularly want to write it.&lt;/p&gt;
-
-
-&lt;hr/&gt;
-
-
-&lt;p&gt;I run a small&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Officially we’re about 400 people, with a regulars list
-of about 100 people, of whom maybe half are regularly active.&lt;/span&gt; but fairly successful discord
-server. &lt;a href="https://discord.gg/bY5XKnWMQj"&gt;You can join if you want
-to&lt;/a&gt;. Nominally it’s about this newsletter, and occasionally we even
-remember that, but mostly it’s just a bunch of nerds who hang out on the
-internet, help each other navigate life better, and talk about stuff we
-like. I think it’s pretty great.&lt;/p&gt;
-
-
-&lt;p&gt;I act as the sole authority figure for how the community works.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;It’s not a cult, I promise.&lt;/span&gt;. This is a space on the internet I
-manage to cultivate the sort of community and conversations I want to
-exist. It’s what I’ve called &lt;a href="https://notebook.drmaciver.com/posts/2020-07-14-13:42.html"&gt;Living
-Room Rules&lt;/a&gt; before - it’s the equivalent of people coming around to
-my house to hang out.&lt;/p&gt;
-
-
-&lt;p&gt;This doesn’t mean the community do whatever I want. Truthfully, it’s
-like herding cats sometimes. But it does mean that when the community
-isn’t working, it’s my responsibility to fix it. Often in consultation
-with others, but ultimately I’m the one who makes the call.&lt;/p&gt;
-
-
-&lt;p&gt;The hardest part of this is that sometimes you have to show people
-the door.&lt;/p&gt;
-
-
-&lt;p&gt;I had to do this with someone yesterday&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Possibly he’s reading this. If so, sorry. Editor’s note:
-Presumably not on the notebook. Also this “yesterday” was actually more
-than a year ago.&lt;/span&gt;. He
-wasn’t right for the community.&lt;/p&gt;
-
-
-&lt;p&gt;This is only the second time I’ve had to ask someone to leave this
-discord (I’ve &lt;em&gt;banned&lt;/em&gt; some people for outright terrible
-behaviour, but that’s different), but I’ve seen it with other
-communities in the past. Crucially, I’ve seen it with other communities
-in the past because the community leadership &lt;em&gt;didn’t&lt;/em&gt; ask the
-person to leave. This kills the community.&lt;/p&gt;
-
-
-&lt;p&gt;One of the key things you are there for in a community - what
-&lt;em&gt;makes&lt;/em&gt; it a community - is the other people. A community is, at
-its core, a group of people who do stuff together. Having someone who
-fails to gel with the group and can’t easily be avoided around disrupts
-that, because it adds friction to every interaction.&lt;/p&gt;
-
-
-&lt;p&gt;What this means is that if some is disrupting the group’s ability to
-interact, there is less of the thing that brings people there, and some
-people who were already marginal stop showing up so much. This in turn
-means that the people who were there partly to hang out with those
-people stop showing up so much, which in turn…&lt;/p&gt;
-
-
-&lt;p&gt;It’s not a complete death spiral even in the worst case. Usually some
-subset of the community stays - those who don’t have any better options,
-or who are still too attached to what the community used to be - but the
-community turns into a shell of its former self.&lt;/p&gt;
-
-
-&lt;p&gt;More commonly, one person who doesn’t mesh with the others isn’t
-enough to offset the rest of the benefits people are getting, but the
-community contracts a bit and what’s left feels slightly less thriving.
-If you add more such people, it may get worse, .&lt;/p&gt;
-
-
-&lt;p&gt;Internet communities without a shared project are particularly
-vulnerable to this, because there’s &lt;em&gt;nothing&lt;/em&gt; bringing people
-there except the other people, so if you ruin those interactions you’ve
-got nothing.&lt;/p&gt;
-
-
-&lt;p&gt;In contrast, communities built around something are a bit more
-robust. e.g.&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;An open source project you have the motivation of the project itself
-- you’re there because you want it for stuff. A sufficiently toxic
-contributor can definitely drive you off, and someone you don’t get
-along with can definitely sap your motivation to contribute&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Open source is pretty good at doing this on its own,
-honestly.&lt;/span&gt;, but you’re at least there for some
-specific purpose external to the people involved.&lt;/li&gt;
-&lt;li&gt;Volunteer-driven physical projects (e.g. charitable works,
-maintenance of some space, etc) are the same but more so.&lt;/li&gt;
-&lt;li&gt;Communities built around access to some resource. e.g. you’re
-probably not going to stop hanging out on the midjourney discord just
-because you don’t like the people there, because that’s where you go to
-use midjourney.&lt;/li&gt;
-&lt;li&gt;Physical communities with shared physical resources are even more
-like this. The people at your local maker space or tennis club might be
-super annoying, but if it’s the only place you can go to get access to a
-laser cutter or a tennis court, you’re still going to keep going.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;These places still can be harmed by people who don’t mesh well with
-the group, and sometimes even outright ruined, but it’s much harder and
-they’re more robust against it because of the additional draw to keep
-coming back beyond just liking the people there.&lt;/p&gt;
-
-
-&lt;h3 id="who-needs-to-leave"&gt;Who needs to leave?&lt;/h3&gt;
-
-
-&lt;p&gt;Importantly, the person who I asked to leave wasn’t an asshole. He
-was a bit hard to deal with, but he didn’t cross any lines where I could
-feel good about just pressing the ban button. He just consistently
-failed to mesh with the community in a way that made everyone else’s
-experience worse when he was in the room.&lt;/p&gt;
-
-
-&lt;p&gt;Frankly, he was probably just of an age where relatively few people
-would fit in with the rest of us - we’re mostly in our 30s, and he was
-in his late teens or early 20s, and I think most people of that age
-wouldn’t have fit. Certainly I can’t imagine a 19 year old version of me
-doing well there. There’s just too large an experience gap.&lt;/p&gt;
-
-
-&lt;p&gt;This sort of thing is, in general, the problem zone: People who have
-not and probably never will do anything that lets you go “Right, you’ve
-crossed a line” and kick them out, but you really wish they would.&lt;/p&gt;
-
-
-&lt;p&gt;When you start feeling that way about someone, you probably need to
-think seriously about asking them to leave. If you don’t, people you
-want in the community much more will leave on their own instead.&lt;/p&gt;
-
-
-&lt;h3 id="afterword"&gt;Afterword&lt;/h3&gt;
-
-
-&lt;p&gt;I tapered out there partially because I don’t really have good advice
-on how to navigate this. This is hard, and I’ve not got more than a
-handful of personal examples of doing it, and I’m not confident that I
-handled it especially well, or that I know what handling it well looks
-like in full generality.&lt;/p&gt;
-
-
-&lt;p&gt;All I know is that I’ve seen communities die by not doing this, and
-it’s a problem that needs solving&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2024-01-10-07:48.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-11-08:07.html</id>
     <title>Thinking in memes</title>
@@ -2249,7 +2080,7 @@ as you do when something isn’t working, and then fix that.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-20-11:18.html</id>
     <title>Shared frustrations</title>
-    <updated>2024-01-20T11:18:00+00:00</updated>
+    <updated>2024-01-20T12:00:45+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Shared frustrations&lt;/p&gt;
@@ -2412,5 +2243,160 @@ way. Can I show you a thing?” and see how people respond.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2024-01-20-11:18.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2024-01-20-12:01.html</id>
+    <title>Developing new capacities</title>
+    <updated>2024-01-20T12:01:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Developing new capacities&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2024-01-20&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;There’s a general phenomenon that I think of as “capacities” - your
+ability to do things.&lt;/p&gt;
+
+
+&lt;p&gt;A capacity can be anything. It can be a broad skill, it can be a
+narrow trick that you know how to solve some particular problem with. It
+can be a physical item. It can be someone you know who you can do the
+thing for you. It can be some complex emergent combination of all of
+these thigns.&lt;/p&gt;
+
+
+&lt;p&gt;A capacity is not just that you can or can’t do the thing. It’s
+&lt;em&gt;how&lt;/em&gt; you do the thing, and a crucial part is how easy it is for
+you to do the thing.&lt;/p&gt;
+
+
+&lt;p&gt;A good illustration of this for me is cars. I’ve owned a car, for the
+first time in my life, for a bit over a year. Previously, whenever I
+needed a car I rented one.&lt;/p&gt;
+
+
+&lt;p&gt;From a financial perspective, I’d probably still have spent less
+money on my car if every time I used it over the last year I rented a
+car instead. We’re getting to a point where it might be close, but I
+think I’d still have spent about 50% less money.&lt;/p&gt;
+
+
+&lt;p&gt;In actual fact I’d have spent a lot less than that of course, because
+most of the times I’ve used the car over that year I just wouldn’t have
+bothered. It’s not just about the financial cost, it’s about the fact
+that my car is literally right there and I can just get in and drive.
+Renting a car adds a significant effort overhead that makes small
+transactions not worth it.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Yes, I’m aware of Zipcar and the like. In my experience
+they’re exactly optimised for use cases I don’t have, and end up
+strictly worse for almost anything I care about.&lt;/span&gt; In theory, owning the
+car doesn’t make me able to do anything that renting a car wouldn’t, but
+in practice the different effort levels involved make it a very
+qualitatively different capacity.&lt;/p&gt;
+
+
+&lt;p&gt;Also, as well as the cost and convenience, having the ability to
+casually drive means I get better at driving because I do it more
+regularly. This makes driving less stressful, so I’m more willing to do
+it. Having the capacity teaches you to use the capacity, and thereby
+enlarges it.&lt;/p&gt;
+
+
+&lt;p&gt;I did know this prior to owning a car, but I probably still
+undervalued it. The main thing I bought a car for was to be able to
+drive to and from my parents’ house - it’s about an hour’s drive from me
+by car, and essentially has no public transport options to get there in
+under three hours.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;In actual fact, I would probably still just about be
+ahead on cost if I’d taken a taxi to and from my parents’ every time
+I’ve visited them since buying this car. It would come to maybe £200 for
+the round trip, and I’ve probably visited them maybe 20 times since
+then, which is only £4,000. But also many of the trips would not have
+happened at this price tag - it’s easy to pop around for dinner on a
+whim with a car, but that wouldn’t happen with a £200 price tag and the
+need for advance planning that comes with a taxi.&lt;/span&gt; It was very much a response to a
+particular problem I had.&lt;/p&gt;
+
+
+&lt;p&gt;But once you have a car, you can just use it for easy things. I use
+it for shopping from time to time, I use it for moving big things. I can
+bring a giant stack of firewood back from my parents’ place if I want,
+which a taxi would side eye me on. I can pop over to the next town
+easily.&lt;/p&gt;
+
+
+&lt;p&gt;I probably still underutilise the car to be honest. Part of this is
+that I feel at some level I shouldn’t be driving too much (I think this
+is true but that I’m probably overstating it). Part of this is just that
+I’m still used to a mindset that I’ve had for most of my life, where I
+don’t own a car and can’t do car things as a result.&lt;/p&gt;
+
+
+&lt;p&gt;This seems like something I should fix. The car is useful, and
+expensive to maintain, so I might as well figure out how to make use of
+it.&lt;/p&gt;
+
+
+&lt;p&gt;This is a much more &lt;a href="https://drmaciver.substack.com/p/why-is-it-hard-to-choose-what-to"&gt;proactive
+mode&lt;/a&gt; than I often remember to deploy. I’m all about “That does seem
+like a problem. Have you tried solving it?” but this is much more “That
+does seem like a solution. Have you tried finding problems to solve with
+it?”. It’s worth doing, I just don’t habitually do that.&lt;/p&gt;
+
+
+&lt;p&gt;Importantly: I don’t know that I could have done it nearly so well
+without owning a car and starting to recontextualise how useful they
+are. Once you have the capacity and you figure out how to use it well,
+you unlock a lot of hidden value that just thinking in terms of what
+problems you already have that could be solved with it, because it
+doesn’t just solve existing problems for you, it opens up things that
+you don’t even think of as problems because it doesn’t occur to you that
+you can do them.&lt;/p&gt;
+
+
+&lt;p&gt;Part of why I’ve been thinking about this recently is that my income
+has gone up a lot over the last year, and money is very much a capacity,
+and I’ve been trying to figure out ways to deploy that capacity for life
+improvement recently. It’s going pretty well. There are fairly modest
+low hanging fruits available that you just don’t think about when money
+is tight, and aren’t even that expensive once it’s loosened up a bit.
+For example I paid for an ironing service recently, because I like
+wearing collared shirts&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Although I haven’t actually started wearing them again
+yet. Lost the habit and I’ve been busy.&lt;/span&gt; but hate ironing. It cost about £20
+to get literally every shirt I own ironed. Not free by any means, but
+very affordable.&lt;/p&gt;
+
+
+&lt;p&gt;Another capacity I’ve been working on that flows out of this recently
+is that I realised that my household would very much benefit from some
+additional help with admin, so we’ve hired a part-time PA&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;How did I find a PA? I posted on the local Facebook
+group asking if anyone was available for such work. Another thing I
+recently discovered existed, and thereby developed a capacity I
+previously lacked.&lt;/span&gt; on
+an experimental basis. We’ll basically give her odd jobs and pay her
+weekly at a rate of £15/hour for however much work she’s done during
+that week. This is an &lt;em&gt;extremely&lt;/em&gt; early days experiment, so there
+are loads of things that may or may not work about it, but I’m very
+happy to have done it nevertheless.&lt;/p&gt;
+
+
+&lt;p&gt;One of the interesting things about this decision is that I don’t
+really know what sort of tasks we’ll give her. The specific prompt was I
+wanted someone to offload a search for a good cleaner to, but that’s
+totally something I could do myself&lt;label class="margin-toggle sidenote-number" for="fn5"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn5" type="checkbox"/&gt;&lt;span class="sidenote"&gt;And has been totally something I could do myself for
+months…&lt;/span&gt;. We’ve got a bunch of
+other small tasks like that, but there’s a very real possibility that
+we’ll just work through a TODO list and then by done.&lt;/p&gt;
+
+
+&lt;p&gt;But I don’t think so. I think having someone like this to offload
+tasks to is going to be a really good capacity to have, and I’m looking
+forward to finding out ways to use it.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2024-01-20-12:01.html" rel="alternate"/>
   </entry>
 </feed>
