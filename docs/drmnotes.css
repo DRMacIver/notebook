@@ -71,6 +71,10 @@ section>blockquote{
     width: 55%;
 }
 
+section>blockquote p{
+    width: 90%;
+}
+
 span.sidenote{
     margin-bottom: 1em;
 }
