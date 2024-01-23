@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-01-22T07:54:00-08:00</updated>
+  <updated>2024-01-23T06:57:00-08:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,229 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2024-01-13-08:28.html</id>
-    <title>Writing good programming abstractions</title>
-    <updated>2024-01-13T11:55:04+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Writing good programming abstractions&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2024-01-13&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I was talking to &lt;a href="https://nelhage.com/"&gt;Nelson&lt;/a&gt; about
-programming abstractions the other day, and how you identify a good
-abstraction, and I hit on a heuristic that once I suggested it seemed
-obviously correct to me but that is very at odds with how I think people
-normally think about introducing abstractions in their codebase.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I don’t mean anything fancy by abstraction. Implementing
-a new class or a new function for example.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;It’s this: When you introduce an abstraction, it has to be an
-improvement at each call site. That is, even if you never reuse it, it
-should be make your code better.&lt;/p&gt;
-
-
-&lt;p&gt;Another way of thinking about this: If you implemented this, and then
-you deleted all but one of the call sites, would you be tempted to
-inline the abstraction? If yes, you shouldn’t do it. If you were in a
-fresh codebase and wanted to do something similar to your previous uses
-of the abstraction, would you inclined to copy the previous abstraction
-into your codebase in order to make use of it? That’s a sign that it’s
-probably a pretty good abstraction.&lt;/p&gt;
-
-
-&lt;p&gt;In contrast, I think most people’s intuitions about abstraction are
-around reducing code duplication. You introduce a function when you see
-duplicate code, because duplicate code is bad and you want to reduce it.
-I think this intuition is almost entirely wrong. It leads you to create
-bad abstractions, sometimes where you didn’t even need one at all, and
-it also means you miss important abstractions that you could have
-introduced even without any duplication.&lt;/p&gt;
-
-
-&lt;p&gt;Now, it’s not that duplication can’t be the &lt;em&gt;prompt&lt;/em&gt; for
-abstraction. In the conversation Nelson and I were having, I’d
-introduced a class that managed a bunch of state for gathering
-statistics about some work in progress and doing cleanup when particular
-conditions were met. Originally I wrote that logic and state inline in
-the class managing those tasks. Then I needed it again, in a slightly
-different way with slightly different constraints, so I extracted a
-class for the common state and logic. This is a perfectly reasonable
-example of abstraction in the classic sense of reducing duplication.&lt;/p&gt;
-
-
-&lt;p&gt;But also, even before I’d written the second call site, the code got
-much cleaner, because doing this made me think about the actual
-interface I wanted, and I replaced a bunch of raw calls to heapq and set
-management with a nice API that declared what I was actually doing. This
-was a big improvement.&lt;/p&gt;
-
-
-&lt;p&gt;The repetition served the following purposes:&lt;/p&gt;
-
-
-&lt;ol type="1"&gt;
-&lt;li&gt;It was a &lt;em&gt;prompt&lt;/em&gt; to think “Can I abstract this?”&lt;/li&gt;
-&lt;li&gt;By the fact that I had needed it twice, I had a better idea of how
-to abstract it.&lt;/li&gt;
-&lt;li&gt;It &lt;em&gt;justified the work of making the abstraction&lt;/em&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;The third is an important clarification of the heuristic: It’s not
-that the abstraction has to be justifiable without the duplication.
-There are two things to consider when making a change: How much of an
-improvement it is, and how much effort it is to implement. An
-abstraction that is a lot of work for only a mild improvement might not
-be worth it for one call site but clearly worth it if you’re going to
-use it in multiple places.&lt;/p&gt;
-
-
-&lt;p&gt;I think the best way to think about abstraction is that its purpose
-is to &lt;em&gt;make programming less annoying&lt;/em&gt;. Writing the same code
-over and over again is annoying, and abstraction can reduce that
-annoyance, but it only reduces the annoyance if the abstracted code is
-actually less annoying than repeating yourself.&lt;/p&gt;
-
-
-&lt;p&gt;This judgement of annoyance does of course require developing a
-degree of taste, which makes it somewhat uninformative if you’re just
-starting out. Here are some ways code can be annoying that’s worth
-factoring out:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;If you’ve got multiple pieces of state that are always used
-together, it can be worth putting them together into an object if you
-can figure out a clean API for that object.&lt;/li&gt;
-&lt;li&gt;Similarly, if there are a lot of intermediate variables that aren’t
-used outside of calculation, it might be worth extracting a function to
-reduce their visibility - it means you don’t have to keep track of where
-they’re used, and it’s harder to make stupid typos where you
-accidentally refer to a different variable where you mean.&lt;/li&gt;
-&lt;li&gt;If a function is really hard to follow, it can be worth extracting
-parts of it into smaller functions. e.g. recently I refactored a
-function to just extract the bodies of various branches of an if
-statement into functions. Those functions will never be called from
-anywhere else, but the control flow of the code was impossible to follow
-in a way that had previously masked a bug.&lt;/li&gt;
-&lt;li&gt;If code is irritating to get right, it can be worth thinking about
-whether there is an abstraction that makes it easier to get right. For
-example, it can be useful to factor out error handling into context
-managers in Python.&lt;/li&gt;
-&lt;li&gt;Sometimes there is a sort of logical “abstract algorithm” to code
-that is worth factoring out into a higher order function. e.g. I’ve
-talked about &lt;a href="https://notebook.drmaciver.com/posts/2019-04-30-13:03.html"&gt;&lt;code&gt;find_integer&lt;/code&gt;&lt;/a&gt;
-before, which I end up reusing all over the place.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;In the other direction, it’s probably better not to introduce an
-abstraction if:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;It requires introducing a function with a lot of arguments.&lt;/li&gt;
-&lt;li&gt;It significantly increases the number of lines of code when you
-first introduce it at one call site.&lt;/li&gt;
-&lt;li&gt;The abstraction is significantly complicated by different needs from
-different call sites.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;In general, I think it’s worth erring on the side of not abstracting.
-If you’re not feeling the pain of not abstracting, it’s probably
-fine.&lt;/p&gt;
-
-
-&lt;p&gt;For example, here’s some code I often write variations of&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I work on test-case reduction, so this sort of thing
-comes up a lot. I’m aware that almost nobody else regularly needs to
-write code that looks like this. Also yes I’m aware of the quadratic
-nature of this code. It’s fine, I promise. It’s not &lt;a href="https://accidentallyquadratic.tumblr.com/"&gt;accidentally
-quadratic&lt;/a&gt;, it’s intrinsically quadratic because the
-&lt;code&gt;can_delete&lt;/code&gt; checks are already O(n) and have much higher
-constant factors.&lt;/span&gt;:&lt;/p&gt;
-
-
-&lt;div class="sourceCode" id="cb1"&gt;&lt;pre class="sourceCode python"&gt;&lt;code class="sourceCode python"&gt;&lt;span id="cb1-1"&gt;&lt;a aria-hidden="true" href="#cb1-1" tabindex="-1"&gt;&lt;/a&gt;i &lt;span class="op"&gt;=&lt;/span&gt; &lt;span class="dv"&gt;0&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-2"&gt;&lt;a aria-hidden="true" href="#cb1-2" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="cf"&gt;while&lt;/span&gt; i &lt;span class="op"&gt;&amp;lt;&lt;/span&gt; &lt;span class="bu"&gt;len&lt;/span&gt;(ls):&lt;/span&gt;
-&lt;span id="cb1-3"&gt;&lt;a aria-hidden="true" href="#cb1-3" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="cf"&gt;if&lt;/span&gt; can_delete(ls, i):&lt;/span&gt;
-&lt;span id="cb1-4"&gt;&lt;a aria-hidden="true" href="#cb1-4" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="kw"&gt;del&lt;/span&gt; ls[i]&lt;/span&gt;
-&lt;span id="cb1-5"&gt;&lt;a aria-hidden="true" href="#cb1-5" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="cf"&gt;else&lt;/span&gt;:&lt;/span&gt;
-&lt;span id="cb1-6"&gt;&lt;a aria-hidden="true" href="#cb1-6" tabindex="-1"&gt;&lt;/a&gt;        i &lt;span class="op"&gt;+=&lt;/span&gt; &lt;span class="dv"&gt;1&lt;/span&gt; &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;And this code is a bit fiddly and I could definitely do something
-along the lines of:&lt;/p&gt;
-
-
-&lt;div class="sourceCode" id="cb2"&gt;&lt;pre class="sourceCode python"&gt;&lt;code class="sourceCode python"&gt;&lt;span id="cb2-1"&gt;&lt;a aria-hidden="true" href="#cb2-1" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="kw"&gt;class&lt;/span&gt; DeletableListIterator:&lt;/span&gt;
-&lt;span id="cb2-2"&gt;&lt;a aria-hidden="true" href="#cb2-2" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="kw"&gt;def&lt;/span&gt; &lt;span class="fu"&gt;__init__&lt;/span&gt;(&lt;span class="va"&gt;self&lt;/span&gt;, ls):&lt;/span&gt;
-&lt;span id="cb2-3"&gt;&lt;a aria-hidden="true" href="#cb2-3" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="va"&gt;self&lt;/span&gt;.ls &lt;span class="op"&gt;=&lt;/span&gt; ls&lt;/span&gt;
-&lt;span id="cb2-4"&gt;&lt;a aria-hidden="true" href="#cb2-4" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="va"&gt;self&lt;/span&gt;.i &lt;span class="op"&gt;=&lt;/span&gt; &lt;span class="dv"&gt;0&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb2-5"&gt;&lt;a aria-hidden="true" href="#cb2-5" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb2-6"&gt;&lt;a aria-hidden="true" href="#cb2-6" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="kw"&gt;def&lt;/span&gt; &lt;span class="fu"&gt;__iter__&lt;/span&gt;(&lt;span class="va"&gt;self&lt;/span&gt;):&lt;/span&gt;
-&lt;span id="cb2-7"&gt;&lt;a aria-hidden="true" href="#cb2-7" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="cf"&gt;while&lt;/span&gt; &lt;span class="va"&gt;self&lt;/span&gt;.i &lt;span class="op"&gt;&amp;lt;&lt;/span&gt; &lt;span class="bu"&gt;len&lt;/span&gt;(&lt;span class="va"&gt;self&lt;/span&gt;.ls):&lt;/span&gt;
-&lt;span id="cb2-8"&gt;&lt;a aria-hidden="true" href="#cb2-8" tabindex="-1"&gt;&lt;/a&gt;            &lt;span class="cf"&gt;yield&lt;/span&gt; &lt;span class="va"&gt;self&lt;/span&gt;.i&lt;/span&gt;
-&lt;span id="cb2-9"&gt;&lt;a aria-hidden="true" href="#cb2-9" tabindex="-1"&gt;&lt;/a&gt;            i &lt;span class="op"&gt;+=&lt;/span&gt; &lt;span class="dv"&gt;1&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb2-10"&gt;&lt;a aria-hidden="true" href="#cb2-10" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb2-11"&gt;&lt;a aria-hidden="true" href="#cb2-11" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="kw"&gt;def&lt;/span&gt; delete(&lt;span class="va"&gt;self&lt;/span&gt;):&lt;/span&gt;
-&lt;span id="cb2-12"&gt;&lt;a aria-hidden="true" href="#cb2-12" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="kw"&gt;del&lt;/span&gt; &lt;span class="va"&gt;self&lt;/span&gt;.ls[&lt;span class="va"&gt;self&lt;/span&gt;.i]&lt;/span&gt;
-&lt;span id="cb2-13"&gt;&lt;a aria-hidden="true" href="#cb2-13" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="va"&gt;self&lt;/span&gt;.i &lt;span class="op"&gt;-=&lt;/span&gt; &lt;span class="dv"&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;And then I could use this as:&lt;/p&gt;
-
-
-&lt;div class="sourceCode" id="cb3"&gt;&lt;pre class="sourceCode python"&gt;&lt;code class="sourceCode python"&gt;&lt;span id="cb3-1"&gt;&lt;a aria-hidden="true" href="#cb3-1" tabindex="-1"&gt;&lt;/a&gt;list_iterator &lt;span class="op"&gt;=&lt;/span&gt; DeletableListIterator(ls)&lt;/span&gt;
-&lt;span id="cb3-2"&gt;&lt;a aria-hidden="true" href="#cb3-2" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="cf"&gt;for&lt;/span&gt; i &lt;span class="kw"&gt;in&lt;/span&gt; list_iterator:&lt;/span&gt;
-&lt;span id="cb3-3"&gt;&lt;a aria-hidden="true" href="#cb3-3" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="cf"&gt;if&lt;/span&gt; can_delete(ls, i):&lt;/span&gt;
-&lt;span id="cb3-4"&gt;&lt;a aria-hidden="true" href="#cb3-4" tabindex="-1"&gt;&lt;/a&gt;        list_iterator.delete()&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;And it’s not really an improvement. I find this if anything slightly
-harder to follow than the original, though there’s not much in it. But
-more importantly, sometimes I want to write code like the following:&lt;/p&gt;
-
-
-&lt;div class="sourceCode" id="cb4"&gt;&lt;pre class="sourceCode python"&gt;&lt;code class="sourceCode python"&gt;&lt;span id="cb4-1"&gt;&lt;a aria-hidden="true" href="#cb4-1" tabindex="-1"&gt;&lt;/a&gt;i &lt;span class="op"&gt;=&lt;/span&gt; &lt;span class="dv"&gt;0&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb4-2"&gt;&lt;a aria-hidden="true" href="#cb4-2" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="cf"&gt;while&lt;/span&gt; i &lt;span class="op"&gt;&amp;lt;&lt;/span&gt; &lt;span class="bu"&gt;len&lt;/span&gt;(ls):&lt;/span&gt;
-&lt;span id="cb4-3"&gt;&lt;a aria-hidden="true" href="#cb4-3" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="cf"&gt;if&lt;/span&gt; can_delete(ls, i, i &lt;span class="op"&gt;+&lt;/span&gt; k):&lt;/span&gt;
-&lt;span id="cb4-4"&gt;&lt;a aria-hidden="true" href="#cb4-4" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="kw"&gt;del&lt;/span&gt; ls[i:i&lt;span class="op"&gt;+&lt;/span&gt;k]&lt;/span&gt;
-&lt;span id="cb4-5"&gt;&lt;a aria-hidden="true" href="#cb4-5" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="cf"&gt;else&lt;/span&gt;:&lt;/span&gt;
-&lt;span id="cb4-6"&gt;&lt;a aria-hidden="true" href="#cb4-6" tabindex="-1"&gt;&lt;/a&gt;        i &lt;span class="op"&gt;+=&lt;/span&gt; &lt;span class="dv"&gt;1&lt;/span&gt; &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;And now I need to fiddle with the implementation to support this
-too.&lt;/p&gt;
-
-
-&lt;p&gt;There is almost certainly an abstraction that would make support this
-well - e.g. from what I know of C++’s iterator protocol it seems
-probably actually quite good for this.&lt;/p&gt;
-
-
-&lt;p&gt;But also… this code is fine without it? It’s a bit weird, and
-slightly ugly, but it’s not actually hard to get right, it’s not a lot
-longer than it needs to be, and once you’re familiar with the pattern
-it’s pretty straightforward to work with.&lt;/p&gt;
-
-
-&lt;p&gt;None of this is to discourage you from creating abstractions in
-general. I’m a big fan of well factored code. But it’s easy to abstract
-too much, or abstract the wrong things, and I think paying attention to
-what’s irritating about working on your codebase and fixing that is a
-good way to prioritise.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2024-01-13-08:28.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-14-09:38.html</id>
     <title>Defining definition</title>
@@ -2026,7 +1803,7 @@ as a place to generate half formed thoughts for drawing on.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-22-07:54.html</id>
     <title>Landmarks</title>
-    <updated>2024-01-22T07:54:00-08:00</updated>
+    <updated>2024-01-22T08:10:54-08:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Landmarks&lt;/p&gt;
@@ -2128,5 +1905,124 @@ it?&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2024-01-22-07:54.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2024-01-23-06:57.html</id>
+    <title>I don’t wanna</title>
+    <updated>2024-01-23T06:57:00-08:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;I don’t wanna&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2024-01-23&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;There’s a particular feeling that I think of as the “I don’t wanna”
+feeling. It’s a kind of sluggish resentment, of the sort you get when
+someone asks you to do something when you’re tired, or ill, or
+hungover.&lt;/p&gt;
+
+
+&lt;p&gt;It’s the sort of feeling where &lt;a href="https://the-toast.net/2014/02/13/woman-has-to-do-the-same-shit-tomorrow/"&gt;Woman
+Amazed And Horrified She Has To Just Keep Getting Up And Doing The Same
+Shit Again Tomorrow&lt;/a&gt; starts to become extremely relatable:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;“This isn’t an actual problem,” this woman tried to tell herself.
+“The fact that I have to…do things to exist, that isn’t an actual
+problem.”&lt;/p&gt;
+&lt;p&gt;“Which, oh God,” she realized, “means there’s no actual
+solution.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;I definitely find the frequency with which this feeling comes is a
+depression sign. Feeling like this regularly and about regular things is
+absolutely not a sign that you’re in a healthy emotional state.&lt;/p&gt;
+
+
+&lt;p&gt;But I think it’s interesting to note the places that it comes up even
+when I’m &lt;em&gt;not&lt;/em&gt; especially depressed.&lt;/p&gt;
+
+
+&lt;p&gt;For example, it’s often the specific feeling underlying &lt;a href="https://drmaciver.substack.com/p/you-cant-solve-procrastination"&gt;procrastination&lt;/a&gt;
+for me. Especially on certain classes of task. e.g. I hate cleaning my
+room. I’m aware this is childish.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;And probably if I dig deep there’s some &lt;a href="https://drmaciver.substack.com/p/parts-of-you-havent-grown-up-yet-004"&gt;child
+part&lt;/a&gt; expressing some specificoutrage there&lt;/span&gt;. That’s often how “I
+don’t wanna” feels.&lt;/p&gt;
+
+
+&lt;p&gt;But another more interesting place it comes up is tasks for which it
+feels like this way &lt;em&gt;sometimes&lt;/em&gt;. Writer’s block is a very “I
+don’t wanna” feeling for example.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I leave it as an exercise to the interested reader to
+infer why I picked this particular topic to write about today.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;It’s often possible to work past this particular instance of “I don’t
+wanna” with a sort of gentle self-coaxing, but it tends to be a bit like
+pulling teeth, with every step along the way requiring a constant level
+of coaxing. “You don’t have to do very much, just write a short piece”
+or “If you can’t think of anything, why not use this prompt…?”. These
+strategies work as long as I &lt;a href="https://drmaciver.substack.com/p/believing-that-you-can-stop"&gt;believe
+that you can stop&lt;/a&gt;,&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Of course to a degree that promise is to some degree
+fake. e.g. I really am going to write a notebook post every day
+regardless of how I feel about it, and I’m not going to abandon a post
+literally midway through, though I might cut it short.&lt;/span&gt; sometimes, but there’s a sort of low
+bubbling resentment at being made to do the thing throughout the entire
+experience.&lt;/p&gt;
+
+
+&lt;p&gt;One of the interesting things about the feeling of “I don’t wanna” is
+that it very much comes with a feeling that the thing being requested is
+&lt;em&gt;too hard&lt;/em&gt;, but this is clearly fake. You can tell it’s fake
+because the internal response to making the thing easier is a sort of
+“Fuck you”, and because a great deal more effort than the thing itself
+would take is spent resisting it.&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Again, leading credence to the idea that it’s some sort
+of child part.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;I think a more accurate reading of this “it’s too hard” feeling is “I
+don’t wanna do the thing, so I’m going to &lt;em&gt;make sure&lt;/em&gt; that it’s
+too hard to be worth it”.&lt;/p&gt;
+
+
+&lt;p&gt;The feeling is also sortof recursively resistant to introspection.
+The feeling that comes up when I try to introspect an “I don’t wanna” is
+an “I don’t wanna!!”.&lt;label class="margin-toggle sidenote-number" for="fn5"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn5" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I probably don’t need to keep pointing out how extremely
+literally this seems like interacting with a child.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;One of the things that’s interesting is how often the “I don’t wanna”
+isn’t exactly wrong and is more of an “I’m not ready”. There have been
+enough instances of having this sort of feeling on something - writing a
+thing, fixing a bug, etc. where all I needed to do was sleep on it and
+the next day was able to easily and fluently work on it.&lt;/p&gt;
+
+
+&lt;p&gt;Unfortunately, in the other direction waiting for the next day is
+often actively unhelpful, because it can let the I don’t wanna feeling
+really take hold and a long period of &lt;a href="https://notebook.drmaciver.com/posts/2022-01-06-12:00.html"&gt;drifting&lt;/a&gt;
+can easily begin. That’s the sort of time when an I don’t wanna feeling
+is secretly depression. I don’t think my model of depression as a &lt;a href="https://notebook.drmaciver.com/posts/2021-10-19-10:53.html"&gt;consistent
+bias towards inaction&lt;/a&gt; is the whole of the picture&lt;label class="margin-toggle sidenote-number" for="fn6"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn6" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Especially because depression is multifaceted and this
+is only one type of depression I’m talking about.&lt;/span&gt;,
+but it does seem to keep rearing its head.&lt;/p&gt;
+
+
+&lt;p&gt;One place this feeling really comes up, no matter how depressed or
+not I am at the moment, is anything that feels like it’s trying to
+“force” creativity. If I’m in a creative mood, being creative is easy,
+but it’s not like I stop being able to be creative when I’m not in the
+mood - I understand creativity well enough that I have systems that
+would absolutely let me do it if I could bring myself to use them when
+blocked, but unfortunately most of the time I very much don’t wanna.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2024-01-23-06:57.html" rel="alternate"/>
   </entry>
 </feed>
