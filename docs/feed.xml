@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-01-25T19:45:00-08:00</updated>
+  <updated>2024-01-26T06:32:00-08:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,261 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2024-01-16-13:11.html</id>
-    <title>Journaling as a foundational practice</title>
-    <updated>2024-01-16T13:18:15+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Journaling as a foundational practice&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2024-01-16&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;This is another draft bankruptcy, excerpted from another abandoned
-book project. Most of the rest of the project is very sketchy but this
-is one of the more fleshed out chapters.&lt;/p&gt;
-
-
-&lt;hr/&gt;
-
-
-&lt;p&gt;Journaling is writing about your life, ideally every day, in a way
-that helps you observe key things about it, understand them, and start
-to improve them. It returns you to the question of what’s going on in
-your life and how you can understand it and improve it over and over
-again. It helps you figure out what matters to you.&lt;/p&gt;
-
-
-&lt;p&gt;If there is one thing that I wish I had kept up as a practice
-throughout the last five years, it’s daily journaling. Every time I’ve
-done it it’s been important and transformative and then for one reason
-or another I’ve just… stopped.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Editor’s note: Don’t ask how well I’m doing on this
-right now please…&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;Continuity of journaling practice is hard, and the design of the
-practice matters both for feeling like you’re getting something out of
-it and for making it robust against failure.&lt;/p&gt;
-
-
-&lt;p&gt;Here is what I currently consider an ideal journaling practice:&lt;/p&gt;
-
-
-&lt;p&gt;Journaling is done by hand, with a fountain pen, in an A5 notebook.
-For reference, &lt;a href="https://www.amazon.co.uk/dp/B0B8M88JW9"&gt;I use
-this one&lt;/a&gt;, and I think it’s reasonably well designed for the purpose,
-but it’s nothing special. Write on some flat surface, with your arm well
-supported (note: I am still figuring out ideal writing posture, and may
-need to update this advice). Pages in the journal should be dated. I
-usually only add a date for the first page of every day (dating every
-page is also fine, I just rarely bother). I have a dedicated writing
-desk from which phones and computers are banned, but this may be hard to
-find space for.&lt;/p&gt;
-
-
-&lt;p&gt;You should have a foundational journaling prompt that you use every
-day. The idea of the foundational prompt is that it takes you straight
-into just writing without having to make decisions about what to write
-about, and it creates a diverse range of different starting points to
-get you to examine things from many different angles.&lt;/p&gt;
-
-
-&lt;p&gt;Mine is this: I draw a tarot card from a standard Rider-Waite-Smith
-deck, I consult Joan Bunning’s “Big Book of Tarot” entry for that card.
-I read the description of the card out loud. I then write two pages
-inspired by it. “Inspired” can be anything that feels right. Often I
-pick out some characteristic from the list of characteristics that
-describes some problem I’m currently having. Sometimes the card lands
-with a big “ouch, too accurate” and I know exactly what to write.
-Sometimes the card completely fails to land and I instead describe the
-&lt;em&gt;absence&lt;/em&gt; of the card’s qualities from my life. If the card is a
-court card I often talk about what it would be like to be the person
-represented.&lt;/p&gt;
-
-
-&lt;p&gt;If you are comfortable with Tarot (this does not require attributing
-any mystical significance to it. I don’t), I recommend adopting this as
-your specific practice. If you want to try it out without committing to
-buying a deck and the book, you can use &lt;a href="https://randomtarotcard.com/"&gt;https://randomtarotcard.com/&lt;/a&gt; for
-your card draw and look up the card in &lt;a href="http://www.learntarot.com/cards.htm"&gt;http://www.learntarot.com/cards.htm&lt;/a&gt;
-(which is by the same author as the book I use, but the book often has
-expanded descriptions).&lt;/p&gt;
-
-
-&lt;p&gt;If you’re not comfortable with tarot, I’ll list some alternative
-prompts further down.&lt;/p&gt;
-
-
-&lt;p&gt;(Note: In actual fact I currently do not my foundational journaling
-in my journal, I’m doing it on A4 sheets, because I started it as a
-project of working through the deck one card at a time without
-replacement and introduced the journal midway through and want to
-complete the deck before I switch over to the journal. This section may
-be updated if I discover that the switchover doesn’t work, but I have
-used a tarot deck this way in the past and expect it to work fine)&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Editor’s note: This project has now been completed. See
-&lt;a href="https://drmaciver.substack.com/p/completing-completable-projects"&gt;Completing
-completable projects&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;The goal is that the foundational journaling should be done by noon.
-If you notice that it is after noon, you should treat it as a matter of
-some urgency to go complete it.&lt;/p&gt;
-
-
-&lt;p&gt;Immediately after you have done your foundational journaling, you
-will ideally write another page of journaling about anything you feel
-like writing about. If literally nothing comes to mind, don’t worry
-about it. This page is not a requirement of the practice, it’s just a
-point at which you are invited to journal.&lt;/p&gt;
-
-
-&lt;p&gt;In general, you should try to journal in whole pages. Keep writing
-until the page is full, and then stop. As you notice you’re coming to
-the end of a page, try to sum up or fine some appropriate way to drop
-the mic at the end.&lt;/p&gt;
-
-
-&lt;p&gt;Something else I find useful is to light a candle while journaling.
-The way the candle works is that it serves as a sort of anchor: If the
-candle is lit, I’m supposed to be journaling. If I notice it is lit, I
-should make a decision to go back to journaling or snuff it out. As long
-as I’ve completed my foundational journaling, it’s fine to choose to
-stop journaling, the candle just serves as a reminder to make the
-decision.&lt;/p&gt;
-
-
-&lt;p&gt;Throughout the day if at any point you feel like you need to think
-something through or want to express something, go write a page in your
-journal about it. The ideal is to cultivate the journal as something you
-&lt;em&gt;want&lt;/em&gt; to use and keep going back to. There is no such thing as
-too much journaling as long as most pages you write in your journal feel
-productive to have written.&lt;/p&gt;
-
-
-&lt;h3 id="debugging-notes"&gt;Debugging Notes&lt;/h3&gt;
-
-
-&lt;p&gt;This is a good opportunity to practise debugging.&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Editor’s note: This is partly a reference to a previous
-chapter on debugging in this book attempt, but I never actually wrote
-that chapter. I may attempt to turn its stub into a notebook post at
-some point soon.&lt;/span&gt;
-Chances are, if you try to copy the above verbatim, you’ll run into some
-problems. I don’t know what they are (if you do run into some problems,
-please tell me! I’d like to debug them with you)&lt;/p&gt;
-
-
-&lt;p&gt;I promise that the daily journaling habit is going to be worth it, so
-it’s worth spending some time figuring out why it isn’t working for you
-and changing that.&lt;/p&gt;
-
-
-&lt;p&gt;Here are some variants you can try for the physical form:&lt;/p&gt;
-
-
-&lt;ol type="1"&gt;
-&lt;li&gt;You can, if you must, journal on the computer. I think it’s a bad
-idea, but the best system is the one you can actually follow, so if you
-hate handwriting and can’t bring yourself to do it, don’t.&lt;/li&gt;
-&lt;li&gt;You can reduce the volume of journaling, either by writing fewer
-pages, switching to a smaller journal, allowing yourself to stop at the
-half page mark, etc.&lt;/li&gt;
-&lt;li&gt;You could journal on disposable paper - write it on an A4 sheet and
-then shred it if you don’t want to keep it around.&lt;/li&gt;
-&lt;li&gt;Experiment with different pens and journals. Do you hate fountain
-pens? Do you prefer squared over lined? etc.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;For the content you could try different foundational practices.
-e.g.&lt;/p&gt;
-
-
-&lt;ol type="1"&gt;
-&lt;li&gt;Pick some book of special significance to you (a bible for example,
-but it could also be a favourite novel) and use that as a source of
-prompts. Turn to a random page, read the page out loud, and focus in on
-some passage that feels salient in some way.&lt;/li&gt;
-&lt;li&gt;Rather than having a special book, you could have a book that you
-rotate. Pick some book of your shelves, use that for a while. When you
-feel like moving on after journaling, switch it out for something
-else.&lt;/li&gt;
-&lt;li&gt;A variation on the above is that rather than random pages you could
-work through the book sequentially - read a few pages before journaling
-until you find something&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;The core of the foundational practice is that it needs a random
-prompt to get you started, and those random prompts have to have a
-reasonable amount of range, and a lot of flexibility for interpreting
-them.&lt;/p&gt;
-
-
-&lt;p&gt;Another common way the journaling practice is likely to fail is that
-you just stop doing it. Usually you forget to do it one day, and it
-makes it easier to forget to do it the next, etc. The practice I
-described above has a number of features designed to offset that:&lt;/p&gt;
-
-
-&lt;ol type="1"&gt;
-&lt;li&gt;It has a specific centre that is easy to return to (do your
-foundational journaling before noon).&lt;/li&gt;
-&lt;li&gt;It makes that centre easy to achieve (it uses a random prompt)&lt;/li&gt;
-&lt;li&gt;It has the candle as an anchor to help stabilise the practice.&lt;/li&gt;
-&lt;li&gt;Similarly it has a physical book for that.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;But these are all predicated on the fact that it’s relatively easy
-for me to find time in the morning to do it, and I have a good physical
-space for it. Your problems might be different.&lt;/p&gt;
-
-
-&lt;p&gt;The core thing to do though is to decide:&lt;/p&gt;
-
-
-&lt;ol type="1"&gt;
-&lt;li&gt;When are you going to do your journaling?&lt;/li&gt;
-&lt;li&gt;What are you going to do when you miss that slot?&lt;/li&gt;
-&lt;li&gt;Where are you going to do your journaling?&lt;/li&gt;
-&lt;li&gt;What are you going to do if you’re not able to do it there? (e.g.
-because traveling)&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;For me the answers are:&lt;/p&gt;
-
-
-&lt;ol type="1"&gt;
-&lt;li&gt;Ideally while I drink my morning coffee, but any time before noon is
-fine.&lt;/li&gt;
-&lt;li&gt;As soon as I can after noon I go do my journaling.&lt;/li&gt;
-&lt;li&gt;At my writing desk.&lt;/li&gt;
-&lt;li&gt;I’ll bring my journal with me and try to do some journaling on the
-right schedule, but it often won’t be my foundational practice because I
-don’t have the tarot deck I’m using with me.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;h3 id="afterword"&gt;Afterword&lt;/h3&gt;
-
-
-&lt;p&gt;This excerpt was a good reminder that I should try to journal more
-reliably again. I haven’t stopped doing it, but I probably average about
-once a week.&lt;/p&gt;
-
-
-&lt;p&gt;Partly this is because this daily writing project is taking up the
-time slot that would otherwise be used for journalling.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2024-01-16-13:11.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-17-09:02.html</id>
     <title>Cheeseburger Ethics</title>
@@ -1301,7 +1046,7 @@ out what it was that wasn’t working&lt;/a&gt;.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-25-19:45.html</id>
     <title>Noticing things as life happens</title>
-    <updated>2024-01-25T19:45:00-08:00</updated>
+    <updated>2024-01-25T20:44:24-08:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Noticing things as life happens&lt;/p&gt;
@@ -1481,5 +1226,119 @@ what happens in it is probably a really important tool.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2024-01-25-19:45.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2024-01-26-06:32.html</id>
+    <title>The Candle Exercise</title>
+    <updated>2024-01-26T06:32:00-08:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;The Candle Exercise&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2024-01-26&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I did an A Level&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;The last two years of school before university in the
+UK.&lt;/span&gt; in Chemistry. I mostly disliked
+it.&lt;/p&gt;
+
+
+&lt;p&gt;There were however a couple things I liked that occurred in it. I
+think they were all despite the curriculum rather than because of it -
+one of my chemistry teachers was pretty good, and she set us a bunch of
+work that was off curriculum (and largely I think about teaching us a
+more general scientific attitude than chemistry itself).&lt;/p&gt;
+
+
+&lt;p&gt;One thing was that quite early on she set us an exercise in
+observational writing which stuck with me. The exercise is this: Take a
+candle, light it, and then write down everything you can observe about
+it.&lt;/p&gt;
+
+
+&lt;p&gt;What you will quickly find is that you can observe quite a lot. I
+don’t have a candle with me right now, but here’s a picture of one (from
+&lt;a href="https://commons.wikimedia.org/wiki/File:Candle_flame.JPG"&gt;wikimedia
+commons&lt;/a&gt;):&lt;/p&gt;
+
+
+&lt;p&gt;&lt;img alt="Picture of a candle" src="/images/candle.jpg"/&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;I won’t do the exercise in full but, for example, notice how the
+candle flame has quite a complex structure. It’s more transparent around
+the wick and becomes yellow as you move up. You can also notice that
+only the tip of the wick glows.&lt;/p&gt;
+
+
+&lt;p&gt;You can try to generate hypotheses about why these things are
+happening, and it can be enlightening to do so, but importantly
+&lt;em&gt;that’s not part of the exercise&lt;/em&gt;. You’re here to observe. Write
+down everything you see, with as little interpretation as possible.&lt;/p&gt;
+
+
+&lt;p&gt;What you find is that there is an awful lot to observe about a
+candle. Even just looking at it, a candle has a lot of detail. Some of
+it general to candles, some specific to the one you’re looking at.
+e.g. where does wax run down the side? What’s the structure of the lip
+near there and far away from it?&lt;/p&gt;
+
+
+&lt;p&gt;You can also use your other senses. Touch it!&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;You probably shouldn’t touch the flame, but it might be
+informative to put your hand near it.&lt;/span&gt;
+Where is the candle warm? How does heat conduct through the wax? You can
+also smell it (though if it’s a paraffin wax candle like most are it
+probably won’t smell like much). You can listen to it - what does a
+burning candle sound like?&lt;/p&gt;
+
+
+&lt;p&gt;You can also interact with it. What happens when you tip the candle?
+What happens if you blow on it briefly? What do you observe if you blow
+it out? And then relight it?&lt;/p&gt;
+
+
+&lt;p&gt;For my chemistry class I only wrote a page or two, but I think you’d
+find you can probably easily write 10,000 words or more about a single
+candle.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, it’s a very interesting exercise that as you can see has
+stuck with me for a very long time. It’s a very good and immediate way
+of experiencing the fact that &lt;a href="http://johnsalvatier.org/blog/2017/reality-has-a-surprising-amount-of-detail"&gt;reality
+has a surprising amount of detail&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;This isn’t super specific to candles. Any object will do, but a
+candle is particularly good for it with its range of sensory experiences
+and the fact that it’s an actual dynamic object doing something.&lt;/p&gt;
+
+
+&lt;p&gt;I’m thinking about this as a follow on to &lt;a href="https://notebook.drmaciver.com/posts/2024-01-25-19:45.html"&gt;my
+recent thoughts about noticing interesting things&lt;/a&gt; about your life of
+course. If there’s this much interesting detail to notice about a
+candle, surely an entire day has at least as much interesting
+detail?&lt;/p&gt;
+
+
+&lt;p&gt;It doesn’t always feel like it of course. It’s very common to get to
+the end of the day and go “What even happened today?”. &lt;a href="https://notebook.drmaciver.com/posts/2022-01-06-12:00.html"&gt;Drifting&lt;/a&gt;
+is if anything a strategy to achieve that.&lt;/p&gt;
+
+
+&lt;p&gt;There was an exercise I was doing from &lt;a href="https://www.amazon.co.uk/Making-Magic-Together-Everyday-Extraordinary/dp/1683642481"&gt;Making
+Magic&lt;/a&gt; that I committed to doing for thirty days and then… didn’t.&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;This happens a lot.&lt;/span&gt; - I probably only managed about 8 -
+which is that each morning you try to journal about what happened the
+previous day. I think this would be a good exercise for me to revisit,
+but with a focus on trying to identify small numbers of things to write
+about in detail rather than trying to provide a full account of the day
+like I did previously. The goal isn’t to remember everything, but to
+identify things worth remembering.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2024-01-26-06:32.html" rel="alternate"/>
   </entry>
 </feed>
