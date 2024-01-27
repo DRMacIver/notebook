@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-01-26T07:11:26-08:00</updated>
+  <updated>2024-01-27T13:16:00-08:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,175 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2024-01-17-09:02.html</id>
-    <title>Cheeseburger Ethics</title>
-    <updated>2024-01-17T10:50:05+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Cheeseburger Ethics&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2024-01-17&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Another draft-amnesty post extracting a usable excerpt from an
-attempted book length project, though lightly edited from the version in
-draft. Originally based on &lt;a href="https://twitter.com/DRMacIver/status/1557717189159010304"&gt;a
-Twitter thread of mine&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;hr/&gt;
-
-
-&lt;p&gt;An important tool of ethical reasoning I use is the &lt;em&gt;cheeseburger
-threshold&lt;/em&gt;: Asking whether an act is ethically better or worse than
-eating a cheeseburger.&lt;/p&gt;
-
-
-&lt;p&gt;This is useful because some bad things we do are bad like murder, and
-some are bad like eating cheeseburgers, and the standards we hold those
-different types of act to should be very different.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;This is not unlike the classic distinction between a
-venial and a mortal sin, but I like making the distinction this way
-better, both for the examples and because I’m not that interested in
-whether your action counts as turning away from god.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;The key distinguish factor is that something is murder-bad if the
-ethically correct amount to do of it is zero, while it is
-cheeseburger-bad if some amount of it is morally permissible and
-incremental reductions are morally virtuous even if they don’t - and
-aren’t intended to - get you to zero.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;There are of coure strict vegetarians who would hold
-that eating a cheeseburger is as bad as murder, but even most
-vegetarians who believe that the correct amount of cheeseburgers to eat
-is zero will generally treat it as being in a different reference class
-to murder.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;Why cheeseburger-bad?&lt;/p&gt;
-
-
-&lt;p&gt;There are clearly negative consequences to eating a cheeseburger -
-the meat industry has many ethical problems, and even the most ethically
-produced cheeseburger in which everyone in the pipeline was well paid,
-all the animals were well treated, etc. has significant environmental
-costs. Probably even if not vegetarian one should assign some ethical
-significance to the life of the cows killed in making the cheeseburger
-(both for the meat and for the cheese), and that too should be factored
-in.&lt;/p&gt;
-
-
-&lt;p&gt;But also cheeseburgers are convenient and delicious and widely
-culturally accepted as permissible to eat and so, despite the harms, we
-eat cheeseburgers.&lt;/p&gt;
-
-
-&lt;p&gt;Possibly you’re vegetarian, or vegan, or hindu, or keep kosher. In
-which case I encourage you to substitute your own similar badness act
-for the cheeseburger. I like the cheeseburger example because the harms
-are so clear - as much as we like to ignore them - and eating it is so
-clearly culturally permitted. But you could consider, for example,
-driving a car as another cheeseburger style act (environmental cost,
-noise pollution, risk of injury to others, etc).&lt;/p&gt;
-
-
-&lt;p&gt;Another cheeseburger-bad act might be pirating movies or TV shows.
-It’s on its own a “victimless” crime if you wouldn’t otherwise have
-bought the thing pirated (of course, it’s easy to convince yourself of
-that. Would you really not have?). Certainly the harms of pirating a
-digital good are relatively minor. And yet, in aggregate, piracy does
-seem to cause a lot of harms, especially to independent authors,
-publishers, and developers.&lt;/p&gt;
-
-
-&lt;p&gt;I will continue to be using cheeseburgers as my example.&lt;/p&gt;
-
-
-&lt;p&gt;The point is that cheeseburger-bad acts are things that we
-acknowledge have harms, and that a maximally virtuous version of
-yourself might choose to avoid cheeseburgers entirely. The current
-version of you could, and possibly should, also choose to eat fewer
-cheeseburgers, and we would acknowledge this as morally virtuous,
-without requiring that you cut out on cheeseburgers entirely for it to
-count.&lt;/p&gt;
-
-
-&lt;p&gt;In contrast, the ethically correct amount of murder is zero. You do
-not get points for saying “Yeah, I know murder is bad, I’m trying to cut
-down”. Murder is bad enough that by the time “I’m trying to cut down” is
-a consideration, you are already beyond the ethical pale.&lt;/p&gt;
-
-
-&lt;p&gt;Although I’ve phrased it as a threshold for how bad an act is, using
-this tool more a question of how (if at all) you can reform from
-performing such an act.&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I think this may be a sign that I’m framing this wrong
-tbh. “Is it as bad as eating a cheeseburger?” is a useful framing
-question, but really what I’m talking about is something more like
-categories of ethical acts. Commensurability of acts is part of it but
-not all of it.&lt;/span&gt; A habitual murderer doesn’t need to
-cut down, they need to change their very way of being. A habitual
-cheeseburger-eater just needs to cut down.&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;This is again a subject on which many vegetarians would
-differ because they would in fact regard cheeseburger-eating as
-requiring a fundamental reform of your character. I suggest again
-replacing this with another example.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;I think it’s very hard for sufficiently many cheeseburger-bad acts to
-add up to murder-bad. Someone who eats cheeseburgers for breakfast,
-lunch, and dinner, is rude to everyone he meets, drives loud gas
-guzzling cars everywhere, and generally goes out of his way to do every
-pettily immoral and inconsiderate act he can think of is still not doing
-something murder-bad. The correct approach here is still to cut down,
-and every step along the way to doing so is morally praiseworthy.&lt;label class="margin-toggle sidenote-number" for="fn5"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn5" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Although they may be enough of a jerk that you don’t
-want to praise them. You can think of this instead as being
-incrementally less morally blameworthy.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;In contrast, say, running a scam is murder-bad despite not being
-nearly as bad as murder - you can’t think of reform from this as trying
-to cut down on the scams you run, you need to become a person who does
-not run scams.&lt;/p&gt;
-
-
-&lt;p&gt;Why make this distinction?&lt;/p&gt;
-
-
-&lt;p&gt;The main reason is because it’s important to be able to acknowledge
-that some things we do are bad without it being a big deal. Having a
-class of actions which we acknowledge are bad but don’t consider
-ourselves morally obliged to eliminate entirely allows us to make
-incremental improvements, which has good effects. If we treated all
-cheeseburger-bad things as murder-bad, this creates a very strong
-incentive against recognising them as bad at all.&lt;/p&gt;
-
-
-&lt;p&gt;The cheeseburger example works very well here: Even from a strict
-vegetarian’s point of view, it should be considered preferable for 100%
-of people to cut out 90% of their meat consumption than for 50% of
-people to go full vegetarian. Also, most people aren’t and are not going
-to become vegetarian, and being able to view their actions as worth
-reducing without having to&lt;/p&gt;
-
-
-&lt;p&gt;Being able to acknowledge the harms of our own behaviour without
-being overwhelmed with guilt allows us to take a proper reflective look
-at our own behaviour and, where we decide it’s worth it, improve it, and
-where we decide that’s too much work, helps put it in perspective.&lt;/p&gt;
-
-
-&lt;h3 id="afterword"&gt;Afterword&lt;/h3&gt;
-
-
-&lt;p&gt;See also &lt;a href="https://notebook.drmaciver.com/posts/2024-01-15-07:13.html"&gt;Things
-I believe about ethics and personal development&lt;/a&gt; and some of its
-thoughts on guilt.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2024-01-17-09:02.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-18-10:00.html</id>
     <title>Something isn’t working</title>
@@ -1230,7 +1061,7 @@ what happens in it is probably a really important tool.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-26-06:32.html</id>
     <title>The Candle Exercise</title>
-    <updated>2024-01-26T07:11:26-08:00</updated>
+    <updated>2024-01-26T07:53:36-08:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;The Candle Exercise&lt;/p&gt;
@@ -1343,5 +1174,104 @@ identify things worth remembering.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2024-01-26-06:32.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2024-01-27-13:16.html</id>
+    <title>Restrictions</title>
+    <updated>2024-01-27T13:16:00-08:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Restrictions&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2024-01-27&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I’m staying on the 16th floor of a hotel at the moment. When I
+arrived, this was a pleasing novelty. Buildings are rarely this tall at
+home so I thought it was neat to have this casually be a thing.&lt;/p&gt;
+
+
+&lt;p&gt;Then the fire alarm went off yesterday and I had to walk down 16
+flights of stairs. I was less pleased by the novelty after that.&lt;/p&gt;
+
+
+&lt;p&gt;(It turned out to be a false alarm, but I only found that out on the
+ground floor)&lt;/p&gt;
+
+
+&lt;p&gt;It occurred to me belatedly that in actual fact I probably
+&lt;em&gt;shouldn’t&lt;/em&gt; stay on the 16th floor of a hotel, because there’s no
+guarantee of my ability to walk down 16 flights of stairs. As I
+sometimes half-joke, it’s not that I’m disabled, I just sometimes can’t
+walk. It doesn’t happen often, but maybe once every few months with no
+warning my right knee goes and I can barely walk on it, and I would have
+really struggled to make it down all those stairs if that had
+happened.&lt;/p&gt;
+
+
+&lt;p&gt;On top of that, today I am paying the cost of that with a significant
+increase in the chronic pain in my right leg. My hip in particular
+really doesn’t like me right now. Although I was able to walk, it comes
+with genuine consequences.&lt;/p&gt;
+
+
+&lt;p&gt;I hadn’t thought about this before because tall hotels are largely
+outside of my experience, so the thought never occurred. But not it has,
+and I am aware of the risk. So, taking this new knowledge into account,
+in future I should probably make a particular request when staying at
+hotels to stay on a lower numbered floor. It’s the safe and responsible
+thing to do.&lt;/p&gt;
+
+
+&lt;p&gt;I’m not going to do that.&lt;/p&gt;
+
+
+&lt;p&gt;Part of this is just not wanting to overcorrect on rare events. I
+think this is the first time I’ve had a fire alarm in a hotel I’ve
+stayed in, and I’ve stayed in quite a few hotels. A rare event happened
+and no terrible consequences occurred. This is a lousy prompt to create
+a policy. Life doesn’t need more organisational scar tissue.&lt;/p&gt;
+
+
+&lt;p&gt;Granted, asking to be on a lower floor isn’t a big deal (though it
+would have required significantly more interaction with the hotel than I
+did before arriving), but the aggregate effect of many things that are
+individually not big deals adds up to quite a lot of effort.&lt;/p&gt;
+
+
+&lt;p&gt;But more than that… adding many little restrictions and
+accommodations results in a much smaller life. In the &lt;a href="https://notebook.drmaciver.com/posts/2024-01-20-12:01.html"&gt;capacities&lt;/a&gt;
+post I talked about how having a car lowers the activation energy of
+many things, and so it’s not just that it’s easier to do the things you
+were doing before, you do things that you wouldn’t previously done.
+Adding restrictions makes many things that would previously have been
+worth it not.&lt;/p&gt;
+
+
+&lt;p&gt;Food is like this for me. I love eating out, and I love trying new
+cuisines, but the difficulty of satisfying my dietary restrictions means
+that I lose a lot of upside (many delicious things I can’t eat) and
+experience a lot more downside (risk of digestive problems, awkward high
+effort interactions with staff) and this means that many things are not
+worth the effort.&lt;/p&gt;
+
+
+&lt;p&gt;Individually, the losses are small. In aggregate though it makes
+quite a meaningful impact to my life.&lt;/p&gt;
+
+
+&lt;p&gt;I’ve no great attachment to staying in tall hotels, but it’s quite
+nice - it’s a pleasant novelty, and I enjoy the view. It would be no
+great loss if I never did it again, but I do think the aggregate effect
+of choosing to avoid these sorts of minor risks for an increase in
+effort and a decrease in novelty would end up large, and would result in
+a smaller and less lived life.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2024-01-27-13:16.html" rel="alternate"/>
   </entry>
 </feed>
