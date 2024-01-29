@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-01-27T13:16:00-08:00</updated>
+  <updated>2024-01-28T16:21:00-08:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,142 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2024-01-18-10:00.html</id>
-    <title>Something isn’t working</title>
-    <updated>2024-01-18T10:24:43+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Something isn’t working&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2024-01-18&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Loosely based on a stub chapter from the same work as &lt;a href="https://notebook.drmaciver.com/posts/2024-01-16-13:11.html"&gt;Journaling
-as a foundational practice&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;The core of my approach to a lot of things is embarrassingly simple:
-If you’re getting outcomes you don’t like, that means something about
-what you’re doing isn’t working, and you can fix that. A system is
-perfectly designed to achieve the outcomes it achieves, so if you don’t
-like the outcomes you have to change the system.&lt;/p&gt;
-
-
-&lt;p&gt;This is in direct contrast to &lt;a href="https://drmaciver.substack.com/p/dont-just-try-harder"&gt;doubling
-down on the thing you’re doing&lt;/a&gt; because if it isn’t working then
-clearly the solution is to try harder, or to get mad about the fact that
-it doesn’t work and conclude it must be some failure of yours.&lt;/p&gt;
-
-
-&lt;p&gt;I have a running joke that when I do coaching, a great deal of the
-value I add is to listen patiently and then say “Yes, that does sound
-like a problem. Have you tried solving it?”&lt;/p&gt;
-
-
-&lt;p&gt;I very rarely literally say this, but I do often say variants of
-this. “What have you tried?” is a common one. Often the answer is that
-they’ve not tried anything. Sometimes they have tried many things, but
-they haven’t worked.&lt;/p&gt;
-
-
-&lt;p&gt;“They” of course also often means “me”. Sometimes I need someone to
-say “Have you tried solving the problem?” to me too.&lt;/p&gt;
-
-
-&lt;p&gt;My approach to writing software isn’t that much different. I write
-software. It’s software, so it has problems. I fix those problems. &lt;a href="https://www.drmaciver.com/2013/03/what-the-fuck-are-we-doing/"&gt;Sometimes
-I probably shouldn’t&lt;/a&gt;, but ultimately this approach has produced very
-good results that would otherwise seem impossible, just by fixing the
-problem in front of me repeatedly and seeing what happens.&lt;/p&gt;
-
-
-&lt;p&gt;Fixing things that aren’t working consists of trying to understand
-them, based on that understanding trying to change something that you
-think will help, and learning from what happens then - either its
-success or its failure.&lt;/p&gt;
-
-
-&lt;p&gt;Ultimately this is a process of &lt;em&gt;debugging&lt;/em&gt;, and it feels very
-much like debugging software, where you systematically narrow down what
-causes a problem until it’s clear enough to fix.&lt;/p&gt;
-
-
-&lt;p&gt;Software and other &lt;a href="https://drmaciver.substack.com/p/two-types-of-work"&gt;crunchy
-work&lt;/a&gt; is very good for teaching this skill, because it provides you
-with a very tight feedback loop that rewards systematically going
-through everything. It’s a good type of work for learning &lt;a href="https://notebook.drmaciver.com/posts/2024-01-07-08:50.html"&gt;how to
-be better at everything&lt;/a&gt; because of how much it rewards diligence.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;This is interesting contrast to my advice not to just
-try harder, but I think they’re compatible. The unified advice is that
-if you’re going to put in more work, don’t put it in by doing more of
-the thing you’re currently doing, do it on things that you’re not doing
-because they seem like too much work.&lt;/span&gt; A lot of these skills then transfer
-reasonably well to other environments, as long as you’re prepared to
-understand how crunchy work and squishy work differ. Nobody likes a
-software developer who treats everything like a software problem, but
-part of why that type is so common is that the basic attitude
-&lt;em&gt;works&lt;/em&gt;. Treat things as understandable, and fixable.&lt;/p&gt;
-
-
-&lt;p&gt;For me in particular I use “debugging” as a concept a lot in
-emotional contexts. e.g. &lt;a href="https://notebook.drmaciver.com/posts/2020-05-20-17:58.html"&gt;How I
-fix anxiety triggers&lt;/a&gt; is very much a debugging process.&lt;/p&gt;
-
-
-&lt;p&gt;One of the most important things to debug is when you get &lt;a href="https://drmaciver.substack.com/p/how-to-give-good-advice"&gt;advice&lt;/a&gt;
-from other people and it doesn’t work for you. It might be that you’re
-doing it wrong, but it might also be that the advice is not well suited
-for you.&lt;/p&gt;
-
-
-&lt;p&gt;I’ve &lt;a href="https://twitter.com/DRMacIver/status/1656631345165000704"&gt;said
-before&lt;/a&gt; that the universal disclaimer of self-help books is “This
-advice has a domain of applicability, and the author is not competent to
-assess what it is”. i.e. This will help some people, but the author
-doesn’t actually know who. This applies to all advice, really.&lt;/p&gt;
-
-
-&lt;p&gt;Some (non-exhaustive) ways advice can fail to apply to you:&lt;/p&gt;
-
-
-&lt;ol type="1"&gt;
-&lt;li&gt;There is some ideal middle ground, and this advice is designed for
-people on the far side of that from you.&lt;/li&gt;
-&lt;li&gt;This advice relies on capabilities you lack.&lt;/li&gt;
-&lt;li&gt;This advice solves something that’s not your bottleneck.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;But from a debugging point of view, this makes such advice actually
-quite useful.&lt;/p&gt;
-
-
-&lt;p&gt;There’s a book called &lt;a href="https://www.amazon.co.uk/How-Measure-Anything-Intangibles-Business/dp/1118539273"&gt;How
-to measure anything&lt;/a&gt; that I am mostly&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I think that there is a target audience for whom it is
-very good, and I am not that target audience.&lt;/span&gt;
-indifferent to, but that had a fundamental premise that has entirely
-justified the read for me: A measurement is anything that reduces
-uncertainty.&lt;/p&gt;
-
-
-&lt;p&gt;In this sense, everything you try while debugging is a measurement.
-Either it solves the problem, in which case you’ve solved the problem
-and also learned something, or it doesn’t and you’ve learned something
-through how it fails. Use that measurement to find out more about the
-problem. Everything you try is &lt;a href="https://notebook.drmaciver.com/posts/2020-06-26-09:43.html"&gt;a
-forking path&lt;/a&gt; that tells you something about the system.&lt;/p&gt;
-
-
-&lt;p&gt;So here is my advice: Try more things, take more advice, but notice
-as you do when something isn’t working, and then fix that.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2024-01-18-10:00.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-20-11:18.html</id>
     <title>Shared frustrations</title>
@@ -1178,7 +1042,7 @@ identify things worth remembering.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-27-13:16.html</id>
     <title>Restrictions</title>
-    <updated>2024-01-27T13:16:00-08:00</updated>
+    <updated>2024-01-27T13:39:05-08:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Restrictions&lt;/p&gt;
@@ -1273,5 +1137,145 @@ a smaller and less lived life.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2024-01-27-13:16.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2024-01-28-16:21.html</id>
+    <title>Visible parts of internal states</title>
+    <updated>2024-01-28T16:21:00-08:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Visible parts of internal states&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2024-01-28&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I write a lot about feelings, emotions, etc. I’m well known for it,
+and people say they find my writing on it helpful. So, let me tell you
+something that I’m genuinely quite concerned about: What if everything
+I’m saying is basically fake?&lt;/p&gt;
+
+
+&lt;p&gt;I’m very good at theorising and coming up with plausible explanations
+for things, much better than I am at being reliably correct about them&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Not through any deep personal failings or idiosyncracies
+you understand. Being correct is just hard.&lt;/span&gt;, so I’d probably be able to write
+all this stuff even if actually it didn’t work at all and I was just
+kidding myself about what had happened to me.&lt;/p&gt;
+
+
+&lt;p&gt;To be clear, I don’t think this is the case. I’m &lt;em&gt;extremely&lt;/em&gt;
+convinced that it’s not 100% the case. I’m… less convinced that it’s 0%
+the case. A specific percentage is hard to pin down, but I do know that
+I’m missing some important things, and I suspect some of them are in
+areas that I’m pretty convinced I understand.&lt;/p&gt;
+
+
+&lt;p&gt;The problem with &lt;a href="https://drmaciver.substack.com/p/describing-imaginary-experiences"&gt;describing
+internal experiences&lt;/a&gt; is that there are no external reference points
+that you can point to as a shared object. Part of why my &lt;a href="https://drmaciver.substack.com/p/labelling-feelings"&gt;explanation
+of labelling feelings&lt;/a&gt; focuses so heavily on externally visible
+behaviour is that those are the bits that you can see. They constitute a
+shared object you can talk about together.&lt;/p&gt;
+
+
+&lt;p&gt;I think this is a good partial measure of emotional progress. You
+know that someone shouting and shaking their fist at you about how good
+they are at anger management, how dare you say they’re not, is probably
+fooling themselves.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;They could just be lying, but it’s such a bad lie that
+fooling themselves seems more likely.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;This is an extreme example, but I think you see a lot of this in the
+self help space. e.g. I’ve seen plenty of people talk about how to
+become less neurotic whose behaviour I’ve observed and, well, will not
+be taking their advice too seriously.&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Is it plausible that this is just because of their high
+starting point and the thing they did is a genuine improvement?
+Definitely! But it tends to be coupled with a lack of self awareness
+about where they’ve ended up that makes me suspicious.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;For my part, I think some of my claims to improvement are more
+credible than others. I’ve definitely reduced my anxiety levels,&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Although experiences of attending dance classes have
+definitely demonstrated that some claims I’ve made in the past to have
+“fixed” my social anxiety are at best suspect. It does feel like a
+different sort of thing - I find the experience stressful rather than
+anxiety inducing - but I’m not sure the externally visible behaviour is
+that different.&lt;/span&gt;, and I think a lot of my
+presentation is more confident than it used to be.&lt;/p&gt;
+
+
+&lt;p&gt;If, on the other hand, I claimed to have fixed my depression I think
+you should look at a lot of my recent writing and put on your best
+skeptical face.&lt;label class="margin-toggle sidenote-number" for="fn5"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn5" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I’m working on it, OK?&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;I do think there’s a sort of general… knowing myself better, and
+being better able to act on what I want, that I have improved at but am
+still not good at. I can’t articulate this in a way that’s very
+convincing though. It’s enough that I think it’s real, but maybe not
+enough that you should too.&lt;/p&gt;
+
+
+&lt;p&gt;The point is not, however, that you should only believe things are
+real if you’ve got really clear visible evidence that they are. A lot of
+purely internal things are real. It’s just hard to have full confidence
+in them.&lt;/p&gt;
+
+
+&lt;p&gt;This means it’s &lt;em&gt;really nice&lt;/em&gt; when something nebulous and
+internal that you’re trying to improve has some really clear externally
+visible correlate. If nothing else, it makes it much easier to improve
+the thing because you can just track whether the visible thing
+improves.&lt;label class="margin-toggle sidenote-number" for="fn6"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn6" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Though beware &lt;a href="https://philarchive.org/rec/NGUVCH"&gt;value capture&lt;/a&gt;. No visible
+improvement at all is suspicious, but once you start getting some
+visible improvement more visible improvement will not continue to be
+better indefinitely.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, one interesting handle I found on all of this recently is,
+oddly, pilates.&lt;/p&gt;
+
+
+&lt;p&gt;I’ve tried doing pilates and things like it in the past and I was bad
+at it. Most of why I’m doing much better this time is not through any
+deep personal progress or growth as a human being, I’m just paying a
+really good teacher for one on one lessons.&lt;/p&gt;
+
+
+&lt;p&gt;But there is one specific thing that I’ve noticed that I can do now
+that I don’t think I used to be able to do, which is that when I’m told
+to do a movement and I can’t do the movement I can &lt;em&gt;figure out how to
+do the movement&lt;/em&gt;. Most of the time anyway. There’s a specific sort
+of introspection which feels a bit like… mentally rummaging around in
+the relevant body part, wiggling it a bit and seeing what happens, until
+I figure out how to use the right muscles to do the thing. I’m almost
+certain I didn’t use to be able to do this, and now I can, and it feels
+very much adjacent to the sort of introspection skills I’ve picked up
+when doing Focusing or IFS or the like. This isn’t strong evidence for
+any of that being useful of course, but it’s at least an interesting
+link.&lt;/p&gt;
+
+
+&lt;p&gt;I think this observation of visible versions of internal goals
+extends a lot into the exercise space more generally, although of course
+most forms of exercise are visible to some degree. My overall exercise
+goals are very internal in that they’re largely centred on being less in
+pain. But subjective comparison of pain over time is hard. Sure I can
+tell the difference between being in pain and not being in pain, but can
+I tell the difference between being more in pain and less in pain? Not
+reliably.&lt;/p&gt;
+
+
+&lt;p&gt;I can, on the other hand, tell the difference between being able to
+do an asian squat better or worse, or measure how long I can stand on
+one leg for, and these are pretty good visible versions of the internal
+experience of having better leg strength and mobility, so work well as
+things to focus on.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2024-01-28-16:21.html" rel="alternate"/>
   </entry>
 </feed>
