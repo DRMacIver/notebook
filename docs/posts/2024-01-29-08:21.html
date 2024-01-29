@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+DRMacIver's Notebook: Adaptive planning and grid systems
+    </title>
+
+    <meta property="og:title" content="Adaptive planning and grid systems">
+
+    <meta property="og:url" content="https://notebook.drmaciver.com/posts/2024-01-29-08:21.html" />
+    <link rel="canonical" href="https://notebook.drmaciver.com/posts/2024-01-29-08:21.html" />
+    <script src="https://hypothes.is/embed.js" async></script>
+
+
+    <meta name="twitter:card" content="summary" />
+
+    <meta property="og:creator" content="@DRMacIver">
+
+    <link rel="stylesheet" href="/pandoc.css"/>
+    <link rel="stylesheet" href="/pygments.css"/>
+    <link rel="stylesheet" href="/tufte.css"/>
+    <link rel="stylesheet" href="/latex.css"/>
+    <link rel="stylesheet" href="/drmnotes.css"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
+});
+
+MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
+  console.log(message)
+});
+
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169185204-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169185204-1');
+</script>
+
+  </head>
+
+  <body>
+    <article>
+        <h1><a href="/">DRMacIver's Notebook</a></h1>
+        <p class=subtitle>Adaptive planning and grid systems</p>
+
+        
+
+<section id="the-post">
+<p class=subtitle>Adaptive planning and grid systems</p>
+<dl class=metadata>
+<dt>Published</dt>
+<dd class="post-date">2024-01-29</dd>
+</dl>
+
+<p>Consider, if you will, a perfectly flat city laid out in a perfectly
+even grid, aligned with the compass directions.</p>
+<p>Suppose you are at grid reference (0, 0) and want to be at grid
+reference (10, 10). You ask Google maps for a plan. What does it
+say?</p>
+<p>It will probably tell you something like “Go East 10 blocks, then go
+North ten blocks”.</p>
+<p>This is somewhat unintuitive but correct. You naturally think that
+the shortest path between two points is a straight line and want to do a
+sort of diagonal where you go East, then North, then East, then North,
+then East, etc. or something like that, but on a grid system this
+doesn’t buy you anything because each time you go North or East you
+travel exactly one block, so every route you take must be exactly 20
+blocks long. There is no route to your destination shorter than 20
+blocks.</p>
+<p>Also, a human ignoring Google maps will get there sooner than one
+following it.</p>
+<p>Here is the correct fastest algorithm for getting to your
+destination: Every time you are at an intersection, if there is a green
+light for going either North or East, and that is a useful direction for
+you to take (i.e. if you’re still South of destination and there’s a
+North light, or if you’re still West of your destination and there’s an
+East light), take it.</p>
+<p>Following this algorithm doesn’t reduce your travel distance. It
+doesn’t even significantly reduce the amount of time you spend actually
+driving. But it <em>significantly</em> shortens your wait times along
+the way.<label class="margin-toggle sidenote-number" for="fn1"></label><input class="margin-toggle" id="fn1" type="checkbox"/><span class="sidenote">An interesting feature of this algorithm that I can’t
+decide if it is a coincidence or not is that the resulting path will
+look a lot closer to the straight line that you might have intuitively
+drawn.</span></p>
+<p>The thing about this algorithm is that it’s completely outside of
+Google Maps’s ability to give you this plan. It’s not just that it’s not
+a thing it considers, it’s not a thing that it <em>can</em> consider,
+because there’s too much variability to predict exactly when the lights
+are going to change on your journey, even if it had precise timing data.
+This is however no problem for following the algorithm, because it is
+<em>adaptive</em> - it takes into account the information that you have
+access to at the time of making the decision but do not have in
+advance.</p>
+<p>Planning in advance is very useful, but it will always lack access to
+this sort of on the ground information, and you can often improve on
+purely up front plans by introducing an adaptive element to it like
+this..</p>
+<p>The flipside of course is that we were able to do this here because
+the decisions we confront in navigating a grid are <a href="https://drmaciver.substack.com/p/how-to-make-easy-decisions">easy</a>.
+Trying to make hard decisions adaptively introduces a significant cost
+to executing the plan. One of the most important things to decide in
+advance is how you are going to make decisions on the fly.</p>
+
+
+</section>
+
+    </article>
+<footer>
+Copyright David R. MacIver.
+
+CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
+</footer>
+  </body>
+</html>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-01-28T16:21:00-08:00</updated>
+  <updated>2024-01-29T08:21:00-08:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,173 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2024-01-20-11:18.html</id>
-    <title>Shared frustrations</title>
-    <updated>2024-01-20T12:00:45+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Shared frustrations&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2024-01-20&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I am, it will shock you to know, annoyingly finickity about things
-being done correctly. It hurts me somewhere deep in my soul when people
-do things in obviously suboptimal ways.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Importantly I’m fine with people doing things less well
-because it’s easier. What annoys me is when people are obviously failing
-&lt;em&gt;by their own standards&lt;/em&gt;, getting worse outcomes for a worse
-experience of doing the thing.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;I try to reign this in. I don’t actually like telling people off, so
-I’ll often be silently frustrated rather than telling someone about
-it.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;This is a bad idea for anything recurring, because as a
-result I sound super annoyed by minor things when I finally break and do
-say something about it. I’m not saying I don’t do that, I’m just saying
-I do that and I know it’s a bad idea. If you will, an obviously
-suboptimal approach that is failing even by my own standards…&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;Let me tell you two instances of this recently and something
-interesting I learned from them.&lt;/p&gt;
-
-
-&lt;p&gt;The first is this: We have an instant pot. Its pressure cooking mode
-gets used for roughly two categoires of things: Making stock (usually
-beef, sometimes chicken), and what you might think of as “normal
-cooking” - stews, etc.&lt;/p&gt;
-
-
-&lt;p&gt;Crucially, these take very different times. Stock takes about four
-hours, normal cooking takes somewhere between 20 and 45 minutes.&lt;/p&gt;
-
-
-&lt;p&gt;Adjusting the time on an instant pot is very slow. This makes
-switching between these two times irritating. Fortunately, the instant
-pot has a feature for this: The pressure cooker remembers two previous
-times, and you can press the pressure cook button to switch between
-them. So you can have it remember a four hour time and a half hour time,
-and everything is fine.&lt;/p&gt;
-
-
-&lt;p&gt;At least, everything is fine if people use this feature and don’t set
-both timers to four hours, forcing me to do the slow adjustment process
-every time I used the normal cooking mode. Very annoying.&lt;/p&gt;
-
-
-&lt;p&gt;I did eventually explain this feature to the others in my house, and
-of course neither of them knew about this feature - it’s not like they
-would have been maliciously setting the timer wrong, and it’s a pretty
-non obvious feature until you know about it, and I only found out about
-it relatively recently. Problem solved. But I’d been vaguely annoyed
-every time I used the instant pot for the entire several month period
-between discovering this feature and telling people about it.&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;To be clear I don’t use the instant pot &lt;em&gt;that&lt;/em&gt;
-often, so we’re talking about maybe 3 or 4 times at most.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;More on this in a moment, but now let me tell you about another
-kitchen irritation: Someone has been stacking the pots wrong. This means
-that the cupboard doesn’t close properly because the pot stack is too
-tall.&lt;/p&gt;
-
-
-&lt;p&gt;There’s a specific stacking order to the pots. If you get it right,
-the pot stack is short enough for everything to work fine. If you get it
-wrong, they don’t nest and it’s too tall. Someone had been placing pots
-in a non-nesting order, and this was causing problems.&lt;/p&gt;
-
-
-&lt;p&gt;Eventually we were in the kitchen together at the time when the pots
-needed stacking, and I showed them how to do it. “Oh, that’s how you
-stack them! I had no idea those nested, they look exactly the same size.
-That’s been so annoying.”&lt;/p&gt;
-
-
-&lt;p&gt;There are two interesting things about this response:&lt;/p&gt;
-
-
-&lt;ol type="1"&gt;
-&lt;li&gt;They were in fact correct, it was slightly non-obvious. The pots are
-&lt;em&gt;not&lt;/em&gt; exactly the same size, but they do look pretty similar from
-the outside, it’s just that one has much thinner metal than the other so
-although they look similar in size the slightly smaller one nests easily
-in the slightly larger one, because the interior of the slightly larger
-one is much larger relative to the slightly smaller one than their
-exterior would suggest.&lt;/li&gt;
-&lt;li&gt;They’d been annoyed by this too, and I hadn’t shown them how to
-solve their annoying problem.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;This recontextualised some things for me.&lt;/p&gt;
-
-
-&lt;p&gt;That instant pot thing? Adjusting the timer to four hours from half
-an hour is just as annoying as adjusting the timer from four hours to
-half an hour. I shared it as a “this is a thing you do that is annoying
-to me and here is how to not do it” but in actual fact it was probably a
-thing we &lt;em&gt;both&lt;/em&gt; were finding frustrating, and that I could easily
-have shared as “Hey you know that annoying thing? I’ve figured out the
-solution!”.&lt;/p&gt;
-
-
-&lt;p&gt;The thing about being annoyingly finickity is that because I care
-about doing things right, and because I &lt;a href="https://notebook.drmaciver.com/posts/2024-01-18-10:00.html"&gt;debug
-everything so reflexively&lt;/a&gt; is that “obviously suboptimal ways” is not
-actually obvious to others. It’s obvious to me because I’ve &lt;em&gt;figured
-it out&lt;/em&gt;. Sometimes through careful problem solving and sometimes
-because I accidentally pressed the button twice and noticed what
-happened when I did.&lt;/p&gt;
-
-
-&lt;p&gt;When I’ve done that, I can share this knowledge.&lt;/p&gt;
-
-
-&lt;p&gt;The silly thing is that I’m actually very good at sharing knowledge a
-lot of the time. I have a sort of habitual attitude of teaching when
-people ask me for help. e.g. a great habit of mine that you should
-definitely steal is that when people can’t find a link and I find it
-using search, I give them both the link and also tell them how I found
-it. This is a great way of helping people be better at search, which is
-a surprisingly deep and hard to learn skill.&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;The downside of this habit is that it sounds a bit too
-“let me google that for you” if you’re not careful. I usually &lt;a href="https://drmaciver.substack.com/p/telegraph-your-moves"&gt;telegraph&lt;/a&gt;
-why I’m doing this quite carefully, and am very explicit that it’s not a
-problem if they apologise for not googling for it themselves.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;Similarly, I’m good at sharing information spontaneously - you’re
-reading this on one of my outlets for doing so.&lt;/p&gt;
-
-
-&lt;p&gt;But volunteering information to someone specific, in response to
-something that they’re doing wrong, feels different. Like I said, it
-feels like telling them off, and I don’t like doing that. It feels bad
-for me to do it, and I’m worried about people reacting badly to it. Most
-people don’t like unsolicited advice. Not that I expect anything to go
-terribly wrong from telling partners about minor things, but it might
-hurt their feelings and I don’t actually like doing that.&lt;/p&gt;
-
-
-&lt;p&gt;I do think this fear is somewhat real - a lot of the time people
-don’t like being told they’re doing it wrong, and often wrong is
-subjective. Sometimes &lt;em&gt;I’m&lt;/em&gt; wrong because the suboptimal way is
-in fact optimising for some preference I don’t know about. I suspect
-it’s exaggerated in my head, but it is a real possibility.&lt;/p&gt;
-
-
-&lt;p&gt;But I think a lot of the time, the fear is largely the result of a
-skill issue on my part, and I need to stop thinking in terms of “argh
-you’re doing it wrong” and more “boy it looks annoying to do it that
-way. Can I show you a thing?” and see how people respond.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2024-01-20-11:18.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-20-12:01.html</id>
     <title>Developing new capacities</title>
@@ -1141,7 +974,7 @@ a smaller and less lived life.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-28-16:21.html</id>
     <title>Visible parts of internal states</title>
-    <updated>2024-01-28T16:21:00-08:00</updated>
+    <updated>2024-01-28T17:37:20-08:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Visible parts of internal states&lt;/p&gt;
@@ -1277,5 +1110,90 @@ things to focus on.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2024-01-28-16:21.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2024-01-29-08:21.html</id>
+    <title>Adaptive planning and grid systems</title>
+    <updated>2024-01-29T08:21:00-08:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Adaptive planning and grid systems&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2024-01-29&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Consider, if you will, a perfectly flat city laid out in a perfectly
+even grid, aligned with the compass directions.&lt;/p&gt;
+
+
+&lt;p&gt;Suppose you are at grid reference (0, 0) and want to be at grid
+reference (10, 10). You ask Google maps for a plan. What does it
+say?&lt;/p&gt;
+
+
+&lt;p&gt;It will probably tell you something like “Go East 10 blocks, then go
+North ten blocks”.&lt;/p&gt;
+
+
+&lt;p&gt;This is somewhat unintuitive but correct. You naturally think that
+the shortest path between two points is a straight line and want to do a
+sort of diagonal where you go East, then North, then East, then North,
+then East, etc. or something like that, but on a grid system this
+doesn’t buy you anything because each time you go North or East you
+travel exactly one block, so every route you take must be exactly 20
+blocks long. There is no route to your destination shorter than 20
+blocks.&lt;/p&gt;
+
+
+&lt;p&gt;Also, a human ignoring Google maps will get there sooner than one
+following it.&lt;/p&gt;
+
+
+&lt;p&gt;Here is the correct fastest algorithm for getting to your
+destination: Every time you are at an intersection, if there is a green
+light for going either North or East, and that is a useful direction for
+you to take (i.e. if you’re still South of destination and there’s a
+North light, or if you’re still West of your destination and there’s an
+East light), take it.&lt;/p&gt;
+
+
+&lt;p&gt;Following this algorithm doesn’t reduce your travel distance. It
+doesn’t even significantly reduce the amount of time you spend actually
+driving. But it &lt;em&gt;significantly&lt;/em&gt; shortens your wait times along
+the way.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;An interesting feature of this algorithm that I can’t
+decide if it is a coincidence or not is that the resulting path will
+look a lot closer to the straight line that you might have intuitively
+drawn.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;The thing about this algorithm is that it’s completely outside of
+Google Maps’s ability to give you this plan. It’s not just that it’s not
+a thing it considers, it’s not a thing that it &lt;em&gt;can&lt;/em&gt; consider,
+because there’s too much variability to predict exactly when the lights
+are going to change on your journey, even if it had precise timing data.
+This is however no problem for following the algorithm, because it is
+&lt;em&gt;adaptive&lt;/em&gt; - it takes into account the information that you have
+access to at the time of making the decision but do not have in
+advance.&lt;/p&gt;
+
+
+&lt;p&gt;Planning in advance is very useful, but it will always lack access to
+this sort of on the ground information, and you can often improve on
+purely up front plans by introducing an adaptive element to it like
+this..&lt;/p&gt;
+
+
+&lt;p&gt;The flipside of course is that we were able to do this here because
+the decisions we confront in navigating a grid are &lt;a href="https://drmaciver.substack.com/p/how-to-make-easy-decisions"&gt;easy&lt;/a&gt;.
+Trying to make hard decisions adaptively introduces a significant cost
+to executing the plan. One of the most important things to decide in
+advance is how you are going to make decisions on the fly.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2024-01-29-08:21.html" rel="alternate"/>
   </entry>
 </feed>
