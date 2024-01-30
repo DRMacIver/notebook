@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-01-29T08:21:00-08:00</updated>
+  <updated>2024-01-30T07:03:00-08:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,161 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2024-01-20-12:01.html</id>
-    <title>Developing new capacities</title>
-    <updated>2024-01-20T12:44:36+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Developing new capacities&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2024-01-20&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;There’s a general phenomenon that I think of as “capacities” - your
-ability to do things.&lt;/p&gt;
-
-
-&lt;p&gt;A capacity can be anything. It can be a broad skill, it can be a
-narrow trick that you know how to solve some particular problem with. It
-can be a physical item. It can be someone you know who you can do the
-thing for you. It can be some complex emergent combination of all of
-these thigns.&lt;/p&gt;
-
-
-&lt;p&gt;A capacity is not just that you can or can’t do the thing. It’s
-&lt;em&gt;how&lt;/em&gt; you do the thing, and a crucial part is how easy it is for
-you to do the thing.&lt;/p&gt;
-
-
-&lt;p&gt;A good illustration of this for me is cars. I’ve owned a car, for the
-first time in my life, for a bit over a year. Previously, whenever I
-needed a car I rented one.&lt;/p&gt;
-
-
-&lt;p&gt;From a financial perspective, I’d probably still have spent less
-money on my car if every time I used it over the last year I rented a
-car instead. We’re getting to a point where it might be close, but I
-think I’d still have spent about 50% less money.&lt;/p&gt;
-
-
-&lt;p&gt;In actual fact I’d have spent a lot less than that of course, because
-most of the times I’ve used the car over that year I just wouldn’t have
-bothered. It’s not just about the financial cost, it’s about the fact
-that my car is literally right there and I can just get in and drive.
-Renting a car adds a significant effort overhead that makes small
-transactions not worth it.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Yes, I’m aware of Zipcar and the like. In my experience
-they’re exactly optimised for use cases I don’t have, and end up
-strictly worse for almost anything I care about.&lt;/span&gt; In theory, owning the
-car doesn’t make me able to do anything that renting a car wouldn’t, but
-in practice the different effort levels involved make it a very
-qualitatively different capacity.&lt;/p&gt;
-
-
-&lt;p&gt;Also, as well as the cost and convenience, having the ability to
-casually drive means I get better at driving because I do it more
-regularly. This makes driving less stressful, so I’m more willing to do
-it. Having the capacity teaches you to use the capacity, and thereby
-enlarges it.&lt;/p&gt;
-
-
-&lt;p&gt;I did know this prior to owning a car, but I probably still
-undervalued it. The main thing I bought a car for was to be able to
-drive to and from my parents’ house - it’s about an hour’s drive from me
-by car, and essentially has no public transport options to get there in
-under three hours.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;In actual fact, I would probably still just about be
-ahead on cost if I’d taken a taxi to and from my parents’ every time
-I’ve visited them since buying this car. It would come to maybe £200 for
-the round trip, and I’ve probably visited them maybe 20 times since
-then, which is only £4,000. But also many of the trips would not have
-happened at this price tag - it’s easy to pop around for dinner on a
-whim with a car, but that wouldn’t happen with a £200 price tag and the
-need for advance planning that comes with a taxi.&lt;/span&gt; It was very much a response to a
-particular problem I had.&lt;/p&gt;
-
-
-&lt;p&gt;But once you have a car, you can just use it for easy things. I use
-it for shopping from time to time, I use it for moving big things. I can
-bring a giant stack of firewood back from my parents’ place if I want,
-which a taxi would side eye me on. I can pop over to the next town
-easily.&lt;/p&gt;
-
-
-&lt;p&gt;I probably still underutilise the car to be honest. Part of this is
-that I feel at some level I shouldn’t be driving too much (I think this
-is true but that I’m probably overstating it). Part of this is just that
-I’m still used to a mindset that I’ve had for most of my life, where I
-don’t own a car and can’t do car things as a result.&lt;/p&gt;
-
-
-&lt;p&gt;This seems like something I should fix. The car is useful, and
-expensive to maintain, so I might as well figure out how to make use of
-it.&lt;/p&gt;
-
-
-&lt;p&gt;This is a much more &lt;a href="https://drmaciver.substack.com/p/why-is-it-hard-to-choose-what-to"&gt;proactive
-mode&lt;/a&gt; than I often remember to deploy. I’m all about “That does seem
-like a problem. Have you tried solving it?” but this is much more “That
-does seem like a solution. Have you tried finding problems to solve with
-it?”. It’s worth doing, I just don’t habitually do that.&lt;/p&gt;
-
-
-&lt;p&gt;Importantly: I don’t know that I could have done it nearly so well
-without owning a car and starting to recontextualise how useful they
-are. Once you have the capacity and you figure out how to use it well,
-you unlock a lot of hidden value that just thinking in terms of what
-problems you already have that could be solved with it, because it
-doesn’t just solve existing problems for you, it opens up things that
-you don’t even think of as problems because it doesn’t occur to you that
-you can do them.&lt;/p&gt;
-
-
-&lt;p&gt;Part of why I’ve been thinking about this recently is that my income
-has gone up a lot over the last year, and money is very much a capacity,
-and I’ve been trying to figure out ways to deploy that capacity for life
-improvement recently. It’s going pretty well. There are fairly modest
-low hanging fruits available that you just don’t think about when money
-is tight, and aren’t even that expensive once it’s loosened up a bit.
-For example I paid for an ironing service recently, because I like
-wearing collared shirts&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Although I haven’t actually started wearing them again
-yet. Lost the habit and I’ve been busy.&lt;/span&gt; but hate ironing. It cost about £20
-to get literally every shirt I own ironed. Not free by any means, but
-very affordable.&lt;/p&gt;
-
-
-&lt;p&gt;Another capacity I’ve been working on that flows out of this recently
-is that I realised that my household would very much benefit from some
-additional help with admin, so we’ve hired a part-time PA&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;How did I find a PA? I posted on the local Facebook
-group asking if anyone was available for such work. Another thing I
-recently discovered existed, and thereby developed a capacity I
-previously lacked.&lt;/span&gt; on
-an experimental basis. We’ll basically give her odd jobs and pay her
-weekly at a rate of £15/hour for however much work she’s done during
-that week. This is an &lt;em&gt;extremely&lt;/em&gt; early days experiment, so there
-are loads of things that may or may not work about it, but I’m very
-happy to have done it nevertheless.&lt;/p&gt;
-
-
-&lt;p&gt;One of the interesting things about this decision is that I don’t
-really know what sort of tasks we’ll give her. The specific prompt was I
-wanted someone to offload a search for a good cleaner to, but that’s
-totally something I could do myself&lt;label class="margin-toggle sidenote-number" for="fn5"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn5" type="checkbox"/&gt;&lt;span class="sidenote"&gt;And has been totally something I could do myself for
-months…&lt;/span&gt;. We’ve got a bunch of
-other small tasks like that, but there’s a very real possibility that
-we’ll just work through a TODO list and then by done.&lt;/p&gt;
-
-
-&lt;p&gt;But I don’t think so. I think having someone like this to offload
-tasks to is going to be a really good capacity to have, and I’m looking
-forward to finding out ways to use it.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2024-01-20-12:01.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-21-09:41.html</id>
     <title>Drawing on resources</title>
@@ -1114,7 +959,7 @@ things to focus on.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-29-08:21.html</id>
     <title>Adaptive planning and grid systems</title>
-    <updated>2024-01-29T08:21:00-08:00</updated>
+    <updated>2024-01-29T08:32:32-08:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Adaptive planning and grid systems&lt;/p&gt;
@@ -1195,5 +1040,105 @@ advance is how you are going to make decisions on the fly.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2024-01-29-08:21.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2024-01-30-07:03.html</id>
+    <title>Computer ghost stories</title>
+    <updated>2024-01-30T07:03:00-08:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Computer ghost stories&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2024-01-30&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I was talking to a friend the other day and she related a story about
+a friend of hers which she described as “Exactly the sort of story that
+happens to him” and it occurred to me that I had recently had a story
+that feels like exactly the sort of thing that happens to me. Given my
+current interest in &lt;a href="https://notebook.drmaciver.com/posts/2024-01-25-19:45.html"&gt;writing
+stories about life&lt;/a&gt; it seems worth trying to develop a feel for that
+sort of characteristic story.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, this is one of my characteristic sorts of stories: Ones in
+which computers are haunted, and then Scooby Doo style you pull off the
+mask and find it was old man unintended feature interactions all
+along.&lt;/p&gt;
+
+
+&lt;p&gt;Let me set the scene: A week or so ago I was doing some work. All of
+a sudden, focus was stolen out from under me,&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;This is, of course, one of the worst crimes that a
+computer can commit. Even worse than playing sound that I haven’t asked
+for. Unfortunately we live in a high computer crime world.&lt;/span&gt; as
+my browser insisted that I absolutely had to see the following
+webcomic:&lt;/p&gt;
+
+
+&lt;p&gt;&lt;a href="https://xkcd.com/353/"&gt;&lt;img alt="XKCD comic about flying using Python" src="https://imgs.xkcd.com/comics/python.png"/&gt;&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;p&gt;I want you to pause for a moment and think about why this might have
+happened. I’ll explain shortly. Here’s a placeholder image to prevent
+you from reading the spoilers too soon:&lt;/p&gt;
+
+
+&lt;figure&gt;
+&lt;img alt="A snake offering someone an apple" src="/images/applesnake.png"/&gt;
+&lt;figcaption aria-hidden="true"&gt;A snake offering someone an
+apple&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+
+&lt;p&gt;Anyway, the first thing you need to know is that this is what happens
+when someone types “import antigravity” in Python. It’s a longstanding
+and very tedious easter egg, of the sort that programmers think is
+funny.&lt;/p&gt;
+
+
+&lt;p&gt;The second thing you need to know is that I was in VS Code. Also my
+Python virtualenv was lightly broken and as a result VS Code was failing
+to find imports and I hadn’t gotten around to fixing this.&lt;/p&gt;
+
+
+&lt;p&gt;This meant that when I was typing &lt;code&gt;import attrs&lt;/code&gt; it didn’t
+find the &lt;code&gt;attrs&lt;/code&gt; library.&lt;/p&gt;
+
+
+&lt;p&gt;And &lt;em&gt;this&lt;/em&gt; means that VS Code went into its aggressively fuzzy
+search mode, where it tries its hardest to find anything that might
+match what you’re looking for.&lt;/p&gt;
+
+
+&lt;p&gt;So, when I went back to VS Code to recreate what I’d just been doing
+to trigger this, I tried retyping &lt;code&gt;import attrs&lt;/code&gt; and what
+happened is that as I got to &lt;code&gt;import attr&lt;/code&gt; I saw that it was
+displaying “import
+&lt;strong&gt;a&lt;/strong&gt;n&lt;strong&gt;t&lt;/strong&gt;ig&lt;strong&gt;r&lt;/strong&gt;avi&lt;strong&gt;t&lt;/strong&gt;y”.
+The fact that all the characters in “attr” exist in “antigravity”
+(albeit not in the same order) was enough to trigger that as a
+suggestion.&lt;/p&gt;
+
+
+&lt;p&gt;And apparently, the fact that it was being suggested was enough to
+trigger an import. Which runs arbitrary code. In this case, opening a
+web browser.&lt;/p&gt;
+
+
+&lt;p&gt;I like this example because of how totally cursed it is, but it’s
+also interesting in terms of how utterly inscrutable it is until you put
+together two very easy pieces. Nobody I presented it to was able to
+figure it out without me essentially giving the game away (I doubt I
+would have been able to either). If you know about the easter egg it’s
+at least clear what must have happened, but not how. But if you’re there
+in front of the problem you can just retrace your steps and it’s almost
+immediately clear what must have happened.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2024-01-30-07:03.html" rel="alternate"/>
   </entry>
 </feed>
