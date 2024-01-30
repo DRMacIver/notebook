@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-01-30T07:53:54-08:00</updated>
+  <updated>2024-01-30T07:59:43-08:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1044,7 +1044,7 @@ advance is how you are going to make decisions on the fly.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-30-07:03.html</id>
     <title>Computer ghost stories</title>
-    <updated>2024-01-30T07:53:54-08:00</updated>
+    <updated>2024-01-30T07:59:43-08:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Computer ghost stories&lt;/p&gt;
@@ -1130,7 +1130,7 @@ web browser.&lt;/p&gt;
 
 
 &lt;p&gt;[I like this example because of how totally cursed it
-is(https://drmaciver.substack.com/p/delight-in-the-imperfect), but it’s
+is[(https://drmaciver.substack.com/p/delight-in-the-imperfect), but it’s
 also interesting in terms of how utterly inscrutable it is until you put
 together two very easy pieces. Nobody I presented it to was able to
 figure it out without me essentially giving the game away (I doubt I
