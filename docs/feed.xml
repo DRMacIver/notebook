@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-02-04T13:26:00+00:00</updated>
+  <updated>2024-02-04T14:50:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,190 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2024-01-25-19:45.html</id>
-    <title>Noticing things as life happens</title>
-    <updated>2024-01-25T20:44:24-08:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Noticing things as life happens&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2024-01-25&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I was at an event recently where someone tried to kill me.&lt;/p&gt;
-
-
-&lt;p&gt;I’m being a little overdramatic here. It wasn’t &lt;em&gt;personally&lt;/em&gt;
-directed at me. Also I wouldn’t have died even if they had succeeded in
-their attempt, it would just have ruined my day.&lt;/p&gt;
-
-
-&lt;p&gt;Probably very few people indeed would have died from the specific
-thing they did. Plenty would be hospitalised, certainly, and even among
-those not hospitalised, many would have had a much much worse time than
-I did.&lt;/p&gt;
-
-
-&lt;p&gt;But only slight variations on what they did could absolutely have
-been fatal.&lt;/p&gt;
-
-
-&lt;p&gt;I am, of course, talking about the catering.&lt;/p&gt;
-
-
-&lt;p&gt;To be less vague, here’s what happened: I was having the pleasant
-experience of looking around a buffet and seeing a lot of things I could
-actually eat, all clearly labelled with allergens.&lt;/p&gt;
-
-
-&lt;p&gt;I’d actually already eaten, so I didn’t get much, but I did wander
-over to the desserts section. There there was a selection of delicious
-looking creams. Unfortunately, I cannot eat delicious looking creams, as
-they’re made mainly of wheat and dairy, my two big dietary nemeses.&lt;/p&gt;
-
-
-&lt;p&gt;But! They had vegan cashew creams which, unlike their non-vegan
-neighbours, were not listed as containing gluten. Hurrah, dessert for
-me. I piled a small plate with them.&lt;/p&gt;
-
-
-&lt;p&gt;Then I looked at them, and I looked at their gluten-containing
-neighbours with a literally identical shell to the allegedly gluten free
-ones I was holding, and a little voice in my head said “hmmmm. I have
-doubts.”I queried with the staff, and they confirmed that yes in fact
-the vegan cashew creams were, while vegan, not gluten free.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Side note: It’s an ongoing bugbear of mine that “vegan”
-is often treated as maximally inclusive. Big fan of there being vegan
-food for vegans, but it’s actually quite a lot harder to make vegan food
-compatible with other dietary requirements and also still be good and
-massively limits your options.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, I put down my plate, sulked away, and kicked up a fuss with
-the event organisers. They, thankfully, took it very seriously, and
-raised it with the vendor.&lt;/p&gt;
-
-
-&lt;p&gt;I think there are a couple of interesting things about this
-story.&lt;/p&gt;
-
-
-&lt;p&gt;The first is: This error is really really bad. The dish in question
-listed allergens, and other dishes listed the allergen I was looking out
-for, but this dish did &lt;em&gt;not&lt;/em&gt; list that allergen despite
-containing it. This about the most dangerous possible way to be
-unreliable with your allergen info, because it’s practically guaranteed
-to create a false sense of security. Doing this is much worse than not
-including allerrgen info at all.&lt;/p&gt;
-
-
-&lt;p&gt;As I say, I’m lucky in that my dietary problems just aren’t that bad.
-I’d have had a bad day if I’d eaten these. People with celiac disease
-would have had a much much worse time. And if someone had a really
-severe allergy to an ingredient they’d done this on, they could have
-died.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I do expect that anyone with that severe an allergy is
-even more cautious than me and would have caught this, but I sure
-wouldn’t want to count on that.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;The second is: Boy did I not take it seriously enough given that. I
-should have stayed with the tray until it had a big sign saying
-“contains wheat” on it.&lt;/p&gt;
-
-
-&lt;p&gt;Part of the problem is that I’d had a day of petty food annoyances at
-this point. Nothing serious, just a mix of bad luck, oversights, and
-mild inconsideration from various people. This sort of thing makes me
-disproportionately annoyed, because an already stressful experience of
-trying to navigate food is made more stressful, I’m extremely picky
-about meal plans being disrupted, and I have to deal with all of this
-while hangry.&lt;/p&gt;
-
-
-&lt;p&gt;What this meant is that when this happened to me I went “Oh, another
-bloody petty food annoyance. Fuck sake”. It was only when thinking about
-it some more and reporting it to the event staff that it dawned on me
-quite what a big deal this actually was.&lt;/p&gt;
-
-
-&lt;p&gt;Another interesting thing about this was that apparently it was
-relatively common knowledge among the attendees that this vendor was not
-trustworthy in this way. I was just left ignorant of that as a relative
-newcomer. I don’t quite know what could have been done to communicate
-that to me (especially as I hadn’t made a big deal of my dietary
-requirements, which I usually don’t), so I don’t really blame anyone for
-that, but it’s interesting context.&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;It probably also means that the event was safer than it
-seems due to the relative lack of people who could be affected.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;Yet another interesting thing is that I noticed this at all.
-Visually, the shell of these creams wasn’t &lt;em&gt;blatantly&lt;/em&gt; wheat
-based. It’s totally plausible they could have been made out of some sort
-of gluten-free flour. Without the reference point of other similar
-things that were clearly made of wheat, I could easily have fallen for
-it. But there was that moment of looking from one to the other and
-paying attention to a dawning suspicion that made it worth checking. I
-think this would have been easy for me to overlook, but I didn’t.
-Possibly this is because my bad food day had primed me for suspicion,
-possibly this is just because this is the kind of discrepancy I look for
-in the world.&lt;/p&gt;
-
-
-&lt;p&gt;But the final interesting thing is just how many interesting things
-there are about this.&lt;/p&gt;
-
-
-&lt;p&gt;Something I’ve been thinking about recently is storytelling. My
-ability to write fiction is often a really good barometer of my mental
-health.&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Pay no attention to how long it’s been since I’ve
-written any fiction. I’m fine! Fine, I tell you!&lt;/span&gt; I think it’s partly because in order
-to write fiction I have to be able to tackle questions like… what sort
-of life is worth paying attention to? Like sure I could write some sort
-of &lt;a href="https://drmaciver.substack.com/p/psychology-of-litrpg"&gt;trash
-litrpg&lt;/a&gt; but I probably couldn’t because the whole point of litrpg for
-me is disengagement, and story telling requires you to engage with the
-lives of the characters.&lt;/p&gt;
-
-
-&lt;p&gt;Which uh, requires engaging with life at all, and as you may be
-picking up a certain vibe from recent&lt;label class="margin-toggle sidenote-number" for="fn5"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn5" type="checkbox"/&gt;&lt;span class="sidenote"&gt;And not so recent. I keep looking at random notebook
-posts and finding posts from years ago about depression that are
-annoyingly relatable.&lt;/span&gt; I’m a bit depressed at
-the moment, which makes that difficult. Mostly what I want is stuff to
-hyperfocus on so I can ignore all… this (gestures broadly).&lt;/p&gt;
-
-
-&lt;p&gt;I was rereading this old post of mine about &lt;a href="https://notebook.drmaciver.com/posts/2022-01-03-14:16.html"&gt;relearning
-curiosity&lt;/a&gt;&lt;label class="margin-toggle sidenote-number" for="fn6"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn6" type="checkbox"/&gt;&lt;span class="sidenote"&gt;On the subject of old posts about depression…&lt;/span&gt; and it strikes me that the precursor
-to curiosity is &lt;em&gt;finding things interesting&lt;/em&gt;, and cultivating the
-skill of doing that and applying it broadly.&lt;/p&gt;
-
-
-&lt;p&gt;And, depressed or not, I’m actually quite good at finding interesting
-things. It’s the same skill as the one that let me spot the secretly
-wheaty cashew creams, or &lt;a href="https://notebook.drmaciver.com/posts/2024-01-24-22:09.html"&gt;write
-a post about standing on one leg and generalisable lessons from
-that&lt;/a&gt;. You look at stuff, you notice how it fits in with other
-things, and you notice how it doesn’t.&lt;/p&gt;
-
-
-&lt;p&gt;One of the foundational realisations that set me on my current path
-is this: You’re allowed to find your own problems interesting.&lt;/p&gt;
-
-
-&lt;p&gt;I think this perhaps doesn’t go far enough. You’re allowed to find
-&lt;em&gt;all&lt;/em&gt; of your life interesting, whether it has problems in it or
-not. Paying attention to what happens and engaging with it is probably
-very important, and learning to tell interesting (to you) stories about
-what happens in it is probably a really important tool.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2024-01-25-19:45.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-26-06:32.html</id>
     <title>The Candle Exercise</title>
@@ -1041,7 +857,7 @@ lifting up your arches and expecting the problem to be solved.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-02-04-13:26.html</id>
     <title>Invitations and exclusions</title>
-    <updated>2024-02-04T13:26:00+00:00</updated>
+    <updated>2024-02-04T13:48:26+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Invitations and exclusions&lt;/p&gt;
@@ -1120,5 +936,82 @@ lightly miserable.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2024-02-04-13:26.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2024-02-04-14:50.html</id>
+    <title>Help is easy to find these days</title>
+    <updated>2024-02-04T14:50:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Help is easy to find these days&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2024-02-04&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I’ve previously written &lt;a href="https://notebook.drmaciver.com/posts/2022-06-05-14:53.html"&gt;Getting
+to know the right people&lt;/a&gt; about how it’s very hard to find quality
+tradespeople and the best way to do it is through networking from
+existing quality tradespeople, but there’s a bootstrapping problem of
+how you find the original ones. I’ve now figured out the solution to
+this problem and it’s sortof embarrassingly easy.&lt;/p&gt;
+
+
+&lt;p&gt;It’s this: You find your local Facebook group&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;You almost certainly have a local Facebook group. I live
+in a small town and there’s a 20k strong group for it and a few
+neighbouring towns. Looking at the last two places I lived in London I
+also find such groups&lt;/span&gt; and
+ask there whether anyone can recommend someone to do this. This will
+give you a mix of potential candidates responding to you directly and
+recommendations from people who have had good experiences. The latter
+aren’t &lt;em&gt;necessarily&lt;/em&gt; trustworthy, but they’re still a decent
+positive signal.&lt;/p&gt;
+
+
+&lt;p&gt;I wrote about this a bit in &lt;a href="https://notebook.drmaciver.com/posts/2024-01-20-12:01.html"&gt;the
+post on developing capacities&lt;/a&gt;, but I’m taking advantage of it again
+right now and it felt like it was worth its own post, where I used the
+group to find a PA.&lt;/p&gt;
+
+
+&lt;p&gt;The PA in question unfortunately hasn’t really worked out, which is
+representative of the problem in the original “getting to know the right
+people” post. The title of this post is &lt;em&gt;help&lt;/em&gt; is easy to find
+these days, but that doesn’t mean &lt;em&gt;good&lt;/em&gt; help is. You still have
+to find reliable people. But with the PA not having worked out, I’ll
+just be going back to the original post and looking through the 5-10
+other responses. There are plenty of candidates, some of whom are
+vouched for, and it’s easy enough to try them out.&lt;/p&gt;
+
+
+&lt;p&gt;I’ll have to find a different trial task though, because now that
+I’ve got this approach just finding us a cleaner is a bit too easy of a
+task. I’ve replied to a cleaner who got in touch regarding our initial
+PA posting (I mentioned this as an example task there) and they’re
+coming by on Thursday.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Or possibly they’ll come by on Thursday, be a disaster,
+and we’ll have this task live again. Who knows?&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;But for me this is a much easier approach than previously where I was
+using Google, because there I have to search, then I have to contact
+them, and so on. Cold contacting is the worst, and also it tends to
+result in a very rate of non or negative answers. e.g. when I last
+looked for cleaners I did try contacting a couple and none of them had
+availability. In contrast, asking for people on the Facebook group
+heavily selects for people who have availability, and more importantly
+they will come to you for you to respond to, which is much easier.&lt;/p&gt;
+
+
+&lt;p&gt;I think it particularly helps to start this with lots of easy
+problems, because then you end up building up a network of people early
+on before you really need it. e.g. A cleaner or a PA are much lower risk
+things to try out than a plumber, because when they get things wrong it
+doesn’t generally flood your house.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2024-02-04-14:50.html" rel="alternate"/>
   </entry>
 </feed>
