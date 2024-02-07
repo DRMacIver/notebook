@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-02-06T11:39:54+00:00</updated>
+  <updated>2024-02-07T07:44:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,146 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2024-01-28-16:21.html</id>
-    <title>Visible parts of internal states</title>
-    <updated>2024-01-28T17:37:20-08:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Visible parts of internal states&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2024-01-28&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I write a lot about feelings, emotions, etc. I’m well known for it,
-and people say they find my writing on it helpful. So, let me tell you
-something that I’m genuinely quite concerned about: What if everything
-I’m saying is basically fake?&lt;/p&gt;
-
-
-&lt;p&gt;I’m very good at theorising and coming up with plausible explanations
-for things, much better than I am at being reliably correct about them&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Not through any deep personal failings or idiosyncracies
-you understand. Being correct is just hard.&lt;/span&gt;, so I’d probably be able to write
-all this stuff even if actually it didn’t work at all and I was just
-kidding myself about what had happened to me.&lt;/p&gt;
-
-
-&lt;p&gt;To be clear, I don’t think this is the case. I’m &lt;em&gt;extremely&lt;/em&gt;
-convinced that it’s not 100% the case. I’m… less convinced that it’s 0%
-the case. A specific percentage is hard to pin down, but I do know that
-I’m missing some important things, and I suspect some of them are in
-areas that I’m pretty convinced I understand.&lt;/p&gt;
-
-
-&lt;p&gt;The problem with &lt;a href="https://drmaciver.substack.com/p/describing-imaginary-experiences"&gt;describing
-internal experiences&lt;/a&gt; is that there are no external reference points
-that you can point to as a shared object. Part of why my &lt;a href="https://drmaciver.substack.com/p/labelling-feelings"&gt;explanation
-of labelling feelings&lt;/a&gt; focuses so heavily on externally visible
-behaviour is that those are the bits that you can see. They constitute a
-shared object you can talk about together.&lt;/p&gt;
-
-
-&lt;p&gt;I think this is a good partial measure of emotional progress. You
-know that someone shouting and shaking their fist at you about how good
-they are at anger management, how dare you say they’re not, is probably
-fooling themselves.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;They could just be lying, but it’s such a bad lie that
-fooling themselves seems more likely.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;This is an extreme example, but I think you see a lot of this in the
-self help space. e.g. I’ve seen plenty of people talk about how to
-become less neurotic whose behaviour I’ve observed and, well, will not
-be taking their advice too seriously.&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Is it plausible that this is just because of their high
-starting point and the thing they did is a genuine improvement?
-Definitely! But it tends to be coupled with a lack of self awareness
-about where they’ve ended up that makes me suspicious.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;For my part, I think some of my claims to improvement are more
-credible than others. I’ve definitely reduced my anxiety levels,&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Although experiences of attending dance classes have
-definitely demonstrated that some claims I’ve made in the past to have
-“fixed” my social anxiety are at best suspect. It does feel like a
-different sort of thing - I find the experience stressful rather than
-anxiety inducing - but I’m not sure the externally visible behaviour is
-that different.&lt;/span&gt;, and I think a lot of my
-presentation is more confident than it used to be.&lt;/p&gt;
-
-
-&lt;p&gt;If, on the other hand, I claimed to have fixed my depression I think
-you should look at a lot of my recent writing and put on your best
-skeptical face.&lt;label class="margin-toggle sidenote-number" for="fn5"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn5" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I’m working on it, OK?&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;I do think there’s a sort of general… knowing myself better, and
-being better able to act on what I want, that I have improved at but am
-still not good at. I can’t articulate this in a way that’s very
-convincing though. It’s enough that I think it’s real, but maybe not
-enough that you should too.&lt;/p&gt;
-
-
-&lt;p&gt;The point is not, however, that you should only believe things are
-real if you’ve got really clear visible evidence that they are. A lot of
-purely internal things are real. It’s just hard to have full confidence
-in them.&lt;/p&gt;
-
-
-&lt;p&gt;This means it’s &lt;em&gt;really nice&lt;/em&gt; when something nebulous and
-internal that you’re trying to improve has some really clear externally
-visible correlate. If nothing else, it makes it much easier to improve
-the thing because you can just track whether the visible thing
-improves.&lt;label class="margin-toggle sidenote-number" for="fn6"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn6" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Though beware &lt;a href="https://philarchive.org/rec/NGUVCH"&gt;value capture&lt;/a&gt;. No visible
-improvement at all is suspicious, but once you start getting some
-visible improvement more visible improvement will not continue to be
-better indefinitely.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, one interesting handle I found on all of this recently is,
-oddly, pilates.&lt;/p&gt;
-
-
-&lt;p&gt;I’ve tried doing pilates and things like it in the past and I was bad
-at it. Most of why I’m doing much better this time is not through any
-deep personal progress or growth as a human being, I’m just paying a
-really good teacher for one on one lessons.&lt;/p&gt;
-
-
-&lt;p&gt;But there is one specific thing that I’ve noticed that I can do now
-that I don’t think I used to be able to do, which is that when I’m told
-to do a movement and I can’t do the movement I can &lt;em&gt;figure out how to
-do the movement&lt;/em&gt;. Most of the time anyway. There’s a specific sort
-of introspection which feels a bit like… mentally rummaging around in
-the relevant body part, wiggling it a bit and seeing what happens, until
-I figure out how to use the right muscles to do the thing. I’m almost
-certain I didn’t use to be able to do this, and now I can, and it feels
-very much adjacent to the sort of introspection skills I’ve picked up
-when doing Focusing or IFS or the like. This isn’t strong evidence for
-any of that being useful of course, but it’s at least an interesting
-link.&lt;/p&gt;
-
-
-&lt;p&gt;I think this observation of visible versions of internal goals
-extends a lot into the exercise space more generally, although of course
-most forms of exercise are visible to some degree. My overall exercise
-goals are very internal in that they’re largely centred on being less in
-pain. But subjective comparison of pain over time is hard. Sure I can
-tell the difference between being in pain and not being in pain, but can
-I tell the difference between being more in pain and less in pain? Not
-reliably.&lt;/p&gt;
-
-
-&lt;p&gt;I can, on the other hand, tell the difference between being able to
-do an asian squat better or worse, or measure how long I can stand on
-one leg for, and these are pretty good visible versions of the internal
-experience of having better leg strength and mobility, so work well as
-things to focus on.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2024-01-28-16:21.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-29-08:21.html</id>
     <title>Adaptive planning and grid systems</title>
@@ -912,7 +772,7 @@ information &lt;em&gt;and&lt;/em&gt; fixing the problem.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-02-06-10:51.html</id>
     <title>Taking responsibility for failure</title>
-    <updated>2024-02-06T11:39:54+00:00</updated>
+    <updated>2024-02-06T11:42:06+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Taking responsibility for failure&lt;/p&gt;
@@ -1083,5 +943,312 @@ to interact with you until you find a way to become a better person.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2024-02-06-10:51.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2024-02-07-07:44.html</id>
+    <title>The obligation to be who you are</title>
+    <updated>2024-02-07T07:44:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;The obligation to be who you are&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2024-02-07&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;This post is extremely in the weeds. If you don’t care about moral
+philosophy, it’s possibly not for you, though I do think the claim I am
+making has important practical implications beyond the theoretical
+argument. Also I ran out of steam towards the end.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, the following footnote to &lt;a href="https://notebook.drmaciver.com/posts/2024-02-06-10:51.html"&gt;yesterday’s
+post about responsibility&lt;/a&gt; sparked some discussion about moral
+relativism.&lt;/p&gt;
+
+
+&lt;p&gt;I’d like to stake out a particular position. First, I’m going to need
+to stake out some idiosyncratic terminology.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Possibly many of these have existing terms in the
+philosophical literature, or the terms I’m using mean something subtly
+different in the literature, but I’m a programmer so I haven’t done the
+reading and have to rewrite things in my own terms to understand them.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;First, let’s sketch out what I mean by an &lt;strong&gt;moral
+framework&lt;/strong&gt;. I’m not going to define this precisely, but I mean
+something like a coherent body of theory and practice that lets you do
+things like make judgements about “good” and “bad” and in particular to
+make “should” claims, especially about behaviour. Ethical frameworks let
+you make judgements about specific questions, and also have a body of
+principles and practices for making arguments about moral claims.&lt;/p&gt;
+
+
+&lt;p&gt;The boundaries of specific moral frameworks are fuzzy, and it can be
+hard to point and say that two things you might think of as moral
+frameworks definitively are the same, but it’s often easy to point out
+that they’re definitely not the same by finding subjects on which they
+disagree. e.g. someone operating in an moral framework that embraces
+vegetarianism will disagree with someone who is non-vegetarian’s moral
+framework around wether eating meat is bad.&lt;/p&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Moral realism&lt;/strong&gt; is the position that there is one&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Up to isomorphism.&lt;/span&gt; correct moral framework and all
+others are good to the degree they approximate that framework.&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Note that this doesn’t require making a claim that a
+particular moral framework is the objectively correct one, or even that
+the objectively correct one is in principle fully discoverable.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Moral relativism&lt;/strong&gt; is the position that there are at
+least two moral frameworks that disagree on crucial details and that you
+cannot decide between in a non-arbitrary way.&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Note that, at least how I use it, moral relativism is
+compatible with the claim that some moral frameworks are objectively
+better than other moral frameworks. It doesn’t require that you can’t
+decide between &lt;em&gt;any&lt;/em&gt; two moral frameworks in a non-arbitrary way,
+only that there are genuine degrees of freedom in how you adopt an moral
+framework.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;I’d like to then subdivide these further:&lt;/p&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Abstract&lt;/strong&gt; realism/relativism is the set of claims of
+realism and relativism respectively as regards to whether the moral
+framework is theoretically defensible. i.e. it’s a claim about which one
+is in some sense “objectively correct”.&lt;/p&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Practical&lt;/strong&gt; realism/relativism is about how you orient
+to other people operating in other moral frameworks than your own, and
+whether you treat their moral frameworks as valid for them. This is more
+a matter of degrees than the theoretical version is I think (or at
+least, certainly is a matter of degrees, and if the theoretical one is
+then it’s not obvious to me).&lt;/p&gt;
+
+
+&lt;p&gt;I think it’s clear that everyone operates on some minimal degree of
+practical realism, in that people disagree about ethics without needing
+to constantly argue about it, and it’s quite important that in a
+multicultural society people be allowed to do this.&lt;label class="margin-toggle sidenote-number" for="fn5"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn5" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Even if you think multiculturalism is bad, you still
+have to deal with the fact that other cultures exist and you have to
+interact with them. I will grant that someone who is a total cultural
+isolationist may not be operating on any degree of practical relativism,
+but that would be one of those moral frameworks that I do think is
+objectively worse than others.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;But I’d like to argue for the compatibility of a particular moral
+claim that demonstrates the compatibility of strong forms of abstract
+realism with practical relativism, based on the following claim: Given
+two people, let’s call them Alex and Charlie, who agree on a shared
+moral framework (which I’ll make certain implicit basic assumptions
+about not being too alien from my own) as the “universally correct” one,
+it is possible (and indeed likely, although I won’t argue for this too
+strongly), for Alex and Charlie to want to adopt more specific moral
+frameworks for their behaviour that make stronger claims than their
+shared framework, and each of which make moral claims that are
+incompatible with the other’s.&lt;/p&gt;
+
+
+&lt;p&gt;In this view, even if Alex and Charlie are both abstract moral
+realists and think that their shared moral framework is objectively
+correct, they become practical moral relativists of a particularly
+strong form: Each has their own “moral truths” that do not apply to the
+other, and they consider both binding for themselves and non-binding for
+the other, without thinking the other is wrong for holding their own
+moral framework.&lt;/p&gt;
+
+
+&lt;p&gt;First, let’s consider two categories of example where Alex and
+Charlie make different moral judgements about their own behaviour that
+are &lt;em&gt;not&lt;/em&gt; examples of relativism, but will point us in the right
+direction:&lt;/p&gt;
+
+
+&lt;ol type="1"&gt;
+&lt;li&gt;Should I kiss this attractive person who is enthusiastically hitting
+on me (and who satisfies all relevant criteria such as being e.g. above
+the age of consent, unrelated to me, uncommitted to anyone else,
+etc)?&lt;/li&gt;
+&lt;li&gt;Should I build a bridge that I’ve been asked to build as part of my
+job?&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;The first hinges on a particular person-centric question: Do I have
+any obligations not to do that? e.g. am I in a committed monogamous
+relationship with someone else?&lt;/p&gt;
+
+
+&lt;p&gt;This isn’t moral relativism in that the actual moral principle being
+adopted is something like “If you do not have any obligations that are
+not committing you to not do so, go for it buddy”. What differs is not
+the moral framework but the individual’s specific obligations.&lt;/p&gt;
+
+
+&lt;p&gt;Note that this already gets you quite far towards relativism. If
+e.g. you profess to be a devout Christian, this creates a significant
+set of obligations to behave as a devout Christian, even if those moral
+commitments are not ones that you would have in generality.&lt;label class="margin-toggle sidenote-number" for="fn6"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn6" type="checkbox"/&gt;&lt;span class="sidenote"&gt;For a sufficienly Christianity-incompatible objective
+morality you might of course have an obligation not to be a devout
+Christian. No comment here on whether that’s the case, just highlighting
+the conditional.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;The second depends a lot on whether you’re good at building bridges
+or not. If you are, and it’s your job (and you’re not in some outlandish
+situation where the existence of the bridge itself would be immoral),
+then yeah you probably should. If on the other hand you have no
+bridge-building related skills, you should signal strongly that this is
+not your thing and no you will not build a bridge because it falls
+down.&lt;/p&gt;
+
+
+&lt;p&gt;Again, similarly to the above, there is no actual conflict here. I
+think you can quite straightforwardly make a moral principle of “don’t
+do things you don’t have the skills to do, especially if peoples’ safety
+is on the line” which both Alex and Charlie agree on and that just
+happens to cash out differently depending on their respective
+skills.&lt;/p&gt;
+
+
+&lt;p&gt;Both of these point to a sort of “scoped moral framework” of a type
+that I think should be perfectly uncontroversial even for the most
+adamant of moral realists (though they might object to labelling it a
+“moral framework”): The moral framework you get when you take your
+broader moral framework and specialise it down to specific
+characteristics of the person in question. The body of judgements etc of
+what’s good and bad for someone who is a monogamous artist, or a poly
+engineer, or…&lt;/p&gt;
+
+
+&lt;p&gt;These scoped moral frameworks are, from a logically omniscient point
+of view, just a subset of the broader moral framework. You just delete
+the bits that don’t apply to you, and your behaviour will be perfectly
+in line with the broader moral framework because all the bits that could
+apply to you are the same as the broader framework’s judgements.&lt;/p&gt;
+
+
+&lt;p&gt;But we’re not logically omniscient. We’re finite beings. And as a
+result when you cut down your moral framework more of it comes into
+focus and you get to see how more of the parts of it interact. If you
+regularly have interactions of a particular type, even if you derive
+those interactions from first principles in your broader moral
+framework, you’ll get better at that particular action and subsequently
+others like it, and this will clarify some of your obligations…&lt;/p&gt;
+
+
+&lt;p&gt;Here’s a trivial example: When you leave the pub, do you take your
+empty glasses back to the bar?&lt;/p&gt;
+
+
+&lt;p&gt;If you’ve worked bar, or you know other people who have, you are
+probably aware that this makes their lives much easier, especially if
+the pub is busy right now. Having the relevant life experience makes you
+aware of this, but the facts of the matter are derivable from perfectly
+general principles, you just haven’t noticed.&lt;label class="margin-toggle sidenote-number" for="fn7"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn7" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Or possibly have a genuine disagreement about your
+obligations in this space! But even without this genuine disagreement
+you can have a different awareness of obligations.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;Here’s another similar example that went by recently:&lt;/p&gt;
+
+
+&lt;p&gt;&lt;a href="https://twitter.com/Kirsten3531/status/1755148835083411515"&gt;&lt;img src="/images/baby-plate.png"/&gt;&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;p&gt;I think this is perfectly obvious if you have the relevant life
+experiences, and does not require those relevant life experiences to act
+on, but is easy to miss.&lt;/p&gt;
+
+
+&lt;p&gt;Everyone is going to have their own collection of these little moral
+duties&lt;label class="margin-toggle sidenote-number" for="fn8"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn8" type="checkbox"/&gt;&lt;span class="sidenote"&gt;If you don’t like the word duty here, me neither. Feel
+free to pick some other word. I don’t have a good word that means “like
+a duty but not really fully obligatory, just good to do” and while I
+like &lt;a href="https://en.wikipedia.org/wiki/Ahkam"&gt;the Islamic
+labels&lt;/a&gt; I don’t know how to idiomatically apply them here.&lt;/span&gt; that they adhere to. Even when they
+are all derivable in principle from their shared understanding of what
+leads to a moral duty, you’ll only have the ones you happen to have
+learned, and the specific set will be idiosyncratic to you.&lt;/p&gt;
+
+
+&lt;p&gt;More, it’s not even totally clear that these should all “port
+upwards” to be general norms, because of our finiteness. I think it’s
+pretty plausible that the collective set of these little moral duties is
+too large for any one person to keep in their head and reliably
+implement without exhausting themselves, and that we’re better served by
+a degree of heterogeneity where different people keep track of different
+ones. I think it would be far too happy a coincidence for the exact
+distribution that occurs to be the morally optimal one, but I think it’s
+at least plausible that it is morally optimal for there to be some
+distribution like it.&lt;/p&gt;
+
+
+&lt;p&gt;This creates a, I think intrinsically quite relativistic, stance of
+“I acknowledge that this duty would be good to take on, and that it is
+good that you have done, but I’m not going to choose to adopt it”.
+Perhaps this is a &lt;a href="https://notebook.drmaciver.com/posts/2024-01-17-09:02.html"&gt;cheeseburger
+ethics&lt;/a&gt; thing but it feels different to me.&lt;/p&gt;
+
+
+&lt;p&gt;This also ties into the skill issue. Many of these duties exist
+&lt;em&gt;because you notice things&lt;/em&gt;, and one of the key things expertise
+does is change your perception of the world. Possessing a skill, even
+when you’re not actively using it, can cause all sorts of things to come
+into focus that you’d otherwise miss.&lt;/p&gt;
+
+
+&lt;p&gt;Note for readers: It was at this point I started running out of steam
+in writing this and wanting to wrap it up, so the rest will be more of a
+sketch than I intended it to be.&lt;/p&gt;
+
+
+&lt;p&gt;The other thing that I think drives these sorts of individual moral
+duties is something like character. e.g. our professions don’t exist in
+isolation. If we’re an engineer, we are implicitly committing to being
+the sort of person who can do engineering well, and this will tend to
+bleed into other areas &lt;em&gt;and we should probably let it&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;For example, another thing that came up in discussion of the
+responsibilities post is that, as (responsible) software developers,
+when problems occur with systems we see, we want to fix the system not
+just the problem, and this isn’t widely shared. It seems both good to
+retain this habit, both because it’s generally useful and also because
+it’s part of the habit of character that allows us to be good at our
+jobs, but also it’s sortof hard to argue that it’s a moral duty for
+someone who doesn’t have a great deal of professional feedback on how to
+develop this skill to also do these things, and a little unreasonable
+for us to expect them to understand it when we try to point this out.&lt;label class="margin-toggle sidenote-number" for="fn9"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn9" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Though I still want them to fix the issue, dammit.&lt;/span&gt; This is the skill issue again, but
+running in the other direction: It’s not just that the skill alerts us
+to obligations that we already have, but that trying to suppress the use
+of it is in some sense detrimental to our character as developers.&lt;/p&gt;
+
+
+&lt;p&gt;All of this remains fully compatible with the possibility of a shared
+broad moral framework, but the problem is that you can’t really
+implement the fully worked out broad moral framework on humans. If Alex
+and Charlie have their own moral frameworks with their own well thought
+out details, there almost certainly &lt;em&gt;is&lt;/em&gt; a moral framework that
+unifies the two - it’s the shared framework, as implemented by someone
+who has full knowledge of all of Alex and Charlie’s experiences and
+possesses all of their skills. The problem is, taking that union quickly
+exceeds human capacities.&lt;/p&gt;
+
+
+&lt;p&gt;For my part, I find it easier to think about this in terms of people
+just having different moral frameworks. There are practices for sharing
+things between our moral frameworks and a broad practice of moral
+discourse, and in general we should expect our moral frameworks to be
+more or less similar to those we share characteristics with and discuss
+our lives with, but there remain plenty of incompatibilities where I can
+acknowledge your moral duty as a moral truth for you, but choose not to
+take it on as my own..&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2024-02-07-07:44.html" rel="alternate"/>
   </entry>
 </feed>
