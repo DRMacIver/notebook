@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-02-07T07:44:00+00:00</updated>
+  <updated>2024-02-16T11:33:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,91 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2024-01-29-08:21.html</id>
-    <title>Adaptive planning and grid systems</title>
-    <updated>2024-01-29T08:32:32-08:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Adaptive planning and grid systems&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2024-01-29&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Consider, if you will, a perfectly flat city laid out in a perfectly
-even grid, aligned with the compass directions.&lt;/p&gt;
-
-
-&lt;p&gt;Suppose you are at grid reference (0, 0) and want to be at grid
-reference (10, 10). You ask Google maps for a plan. What does it
-say?&lt;/p&gt;
-
-
-&lt;p&gt;It will probably tell you something like “Go East 10 blocks, then go
-North ten blocks”.&lt;/p&gt;
-
-
-&lt;p&gt;This is somewhat unintuitive but correct. You naturally think that
-the shortest path between two points is a straight line and want to do a
-sort of diagonal where you go East, then North, then East, then North,
-then East, etc. or something like that, but on a grid system this
-doesn’t buy you anything because each time you go North or East you
-travel exactly one block, so every route you take must be exactly 20
-blocks long. There is no route to your destination shorter than 20
-blocks.&lt;/p&gt;
-
-
-&lt;p&gt;Also, a human ignoring Google maps will get there sooner than one
-following it.&lt;/p&gt;
-
-
-&lt;p&gt;Here is the correct fastest algorithm for getting to your
-destination: Every time you are at an intersection, if there is a green
-light for going either North or East, and that is a useful direction for
-you to take (i.e. if you’re still South of destination and there’s a
-North light, or if you’re still West of your destination and there’s an
-East light), take it.&lt;/p&gt;
-
-
-&lt;p&gt;Following this algorithm doesn’t reduce your travel distance. It
-doesn’t even significantly reduce the amount of time you spend actually
-driving. But it &lt;em&gt;significantly&lt;/em&gt; shortens your wait times along
-the way.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;An interesting feature of this algorithm that I can’t
-decide if it is a coincidence or not is that the resulting path will
-look a lot closer to the straight line that you might have intuitively
-drawn.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;The thing about this algorithm is that it’s completely outside of
-Google Maps’s ability to give you this plan. It’s not just that it’s not
-a thing it considers, it’s not a thing that it &lt;em&gt;can&lt;/em&gt; consider,
-because there’s too much variability to predict exactly when the lights
-are going to change on your journey, even if it had precise timing data.
-This is however no problem for following the algorithm, because it is
-&lt;em&gt;adaptive&lt;/em&gt; - it takes into account the information that you have
-access to at the time of making the decision but do not have in
-advance.&lt;/p&gt;
-
-
-&lt;p&gt;Planning in advance is very useful, but it will always lack access to
-this sort of on the ground information, and you can often improve on
-purely up front plans by introducing an adaptive element to it like
-this..&lt;/p&gt;
-
-
-&lt;p&gt;The flipside of course is that we were able to do this here because
-the decisions we confront in navigating a grid are &lt;a href="https://drmaciver.substack.com/p/how-to-make-easy-decisions"&gt;easy&lt;/a&gt;.
-Trying to make hard decisions adaptively introduces a significant cost
-to executing the plan. One of the most important things to decide in
-advance is how you are going to make decisions on the fly.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2024-01-29-08:21.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-30-07:03.html</id>
     <title>Computer ghost stories</title>
@@ -947,7 +862,7 @@ to interact with you until you find a way to become a better person.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-02-07-07:44.html</id>
     <title>The obligation to be who you are</title>
-    <updated>2024-02-07T07:44:00+00:00</updated>
+    <updated>2024-02-07T09:40:30+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;The obligation to be who you are&lt;/p&gt;
@@ -1250,5 +1165,208 @@ take it on as my own..&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2024-02-07-07:44.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2024-02-16-11:33.html</id>
+    <title>Silently losing critical life infrastructure</title>
+    <updated>2024-02-16T11:33:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Silently losing critical life infrastructure&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2024-02-16&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I’ve been having a pretty bad time recently. I don’t intend to talk
+about the details, but suffice it to say I’ve been extremely stressed,
+depressed, and anxious, and my appetite and sleep have completely fallen
+apart.&lt;/p&gt;
+
+
+&lt;p&gt;This isn’t about that, not directly. It’s about some interesting
+things that this has revealed about my personal infrastructure for
+supporting my mental health.&lt;/p&gt;
+
+
+&lt;p&gt;One piece of infrastructure is the daily writing. That completely
+dropped off during this period, as you’ve probably noticed. I think
+that’s… fine. The daily writing is absolutely intended as a mood and
+meaning-making support, but it’s designed for chronic conditions, and I
+think in acute cases it diverts resources that probably need to be spent
+elsewhere. I’m not sure that’s true, but it felt impossible to continue,
+so I didn’t. Maybe that was a mistake but I’m not sure what I could have
+done differently at the time.&lt;/p&gt;
+
+
+&lt;p&gt;Another piece of mental health infrastructure that &lt;em&gt;hasn’t&lt;/em&gt;
+fallen off on the other hand is exercise. I’ve kept going to Pilates,
+I’ve kept going to the gym. I haven’t necessarily done a great job of
+it, but I’ve kept going and that’s I think been helpful. Insufficient to
+solve the problems, but that’s a bit much to ask of it. The fact that it
+was somethign that I could just show up to and it’s fine even if I don’t
+particularly engage with it made it infrastructure that didn’t fall
+apart in a crisis.&lt;/p&gt;
+
+
+&lt;p&gt;Another thing I’m tentatively chalking up to an infrastructure
+success is that, astonishingly, I haven’t really got significantly ill
+during this time period, despite illness sweeping the house. This might
+be my body going “I don’t have time to get ill!!!” and I’m going to get
+every cold at once when I finally relax, but I’m chalking this up as
+tentative evidence that &lt;a href="https://notebook.drmaciver.com/posts/2024-02-01-15:09.html"&gt;this
+nonsense zinc mouthwash I’m using&lt;/a&gt; really is doing something.&lt;/p&gt;
+
+
+&lt;p&gt;But there are two interesting major failures of infrastructure, which
+it turns out fell apart before things went wrong and I only discovered
+that they’d fallen apart too late.&lt;/p&gt;
+
+
+&lt;p&gt;The first is that I’d run out of sleeping pills months ago. This is,
+in the normal course of things, absolutely fine. A normal heavy period
+of using sleeping pills for me involves taking half a tablet in a month,
+and I’d figured out non-chemical tools for getting to sleep on difficult
+nights, so when my single packet of sleeping pills that I’d had for over
+a year ran out, I didn’t think it was worth renewing. It took me until
+my third night on two hours of sleep to realise that this was
+incorrect.&lt;/p&gt;
+
+
+&lt;p&gt;Fortunately I managed to get an emergency sleeping pill prescription
+on a Friday and took half a pill every night for a few night until the
+worst of the acute night time anxiety had passed. I’m now (thankfully, I
+hate the experience of using them, I just hate it less than the
+experience of not using them when I need them) managing to sleep merely
+badly without them, so I’m back to not using them again, but they were
+an absolute life saver both for getting through the bad nights and also
+for being functional enough to get things moving in the right
+direction.&lt;/p&gt;
+
+
+&lt;p&gt;I don’t necessarily want to say that it was a mistake to not renew my
+sleeping pill prescription. I genuinely thought I didn’t need them any
+more, and I’ve gone most of my life just fine without having them. I
+think it was an arguably reasonable call at the time. But I’m sure not
+going to let myself be in a situation where I don’t have any sleeping
+pills left again.&lt;/p&gt;
+
+
+&lt;p&gt;I think this is an interesting example because the sleeping pills are
+very much dampeners for low probability events. The normal events they
+damp our are something like 3% probability events, and are survivable
+without them. A night like I’ve been having recently where I get 2 hours
+sleep are maybe something like… 0.2% probability events. I maybe get a
+night that bad every few years. Having several nights like that in a row
+is too unprecedented for me to assign a probability. I think it’s a
+proper black swan event for me, as I wouldn’t actually have predicted it
+was possible - I’d have assumed the first night would exhaust me enough
+that the second night I would sleep no matter how anxious I was.&lt;/p&gt;
+
+
+&lt;p&gt;So what happened is that all of the events of medium severity that
+happened sufficiently often that I regularly encountered them were now
+solved, and I incorrectly generalised from this to determine that the
+infrastructure was no longer useful, and this turned out to be
+incorrect.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, having experienced this, I declared my lesson learned and
+that I would no longer abandon infrastructure that was a solution to a
+predictable class of problems, even if I thought it was no longer
+necessary.&lt;/p&gt;
+
+
+&lt;p&gt;This makes the second infrastructure failure especially
+infuriating.&lt;/p&gt;
+
+
+&lt;p&gt;A few days ago, I was talking to Lisa about how everything was
+terrible and I was utterly miserable. Then I went to bed. Then I came
+down about an hour later to get something, and we talked a bit, and she
+noted that I’d perked up significantly in that hour. “Huh, have I?” was
+my response, and I went back to bed.&lt;/p&gt;
+
+
+&lt;p&gt;Then I introspected and decided she was right. It’s not that anything
+had become less terrible than it was previously, but it sure felt more
+manageable. There were major problems, but I could engage with them
+rather than despair about them.&lt;/p&gt;
+
+
+&lt;p&gt;Then I thought about it a bit more and realised that I was an
+absolute fucking idiot.&lt;/p&gt;
+
+
+&lt;p&gt;What had happened between those two times was that I’d gone “Oh yeah,
+&lt;a href="https://acesounderglass.com/2023/09/08/luck-based-medicine-inositol/"&gt;inositol&lt;/a&gt;
+helps with my mood, and I’ve got a bit left, maybe I should take some
+inositol”, so I took some inositol.&lt;/p&gt;
+
+
+&lt;p&gt;I’d stopped taking it a few months ago, not really through any
+deliberate decision, it just stopped doing much for me. I attributed
+this to the fact that my diet had improved and I was regularly taking a
+probiotic. At some point I’d mostly run out and stopped having a regular
+supplement regime so it just got quietly forgotten.&lt;/p&gt;
+
+
+&lt;p&gt;Unfortunately, I stopped having a regular supplement regime, so I
+also stopped reliably taking my probiotic.&lt;/p&gt;
+
+
+&lt;p&gt;Also, as I got more stressed, my appetite was suppressed and I was
+eating less well.&lt;/p&gt;
+
+
+&lt;p&gt;So, apparently, quietly, all of the problems that inositol solved for
+me previously, gradually and quietly came back, and because things were
+actually terrible, and because I didn’t have a good poitn of comparison
+of events on and off inositol, I didn’t realise that that was what was
+happening.&lt;/p&gt;
+
+
+&lt;p&gt;This is interestingly almost the polar opposite of the sleeping pill
+thing, because it’s a chronic problem that gets worse in… I don’t want
+to say non-obvious, because the results are very obvious, but let’s say
+difficult-to-attribute ways… if I neglect the infrastructure
+maintenance. I don’t realise I need it not because of the irregularity
+of the events, but because of the regularity of the events. If I don’t
+ever take the inositol, I don’t notice how large the impact of it is,
+and the fact that my mental health infrastructure is in slow collapse
+just looks like everything being terrible.&lt;/p&gt;
+
+
+&lt;p&gt;I’m not sure I have a good generalised lesson from this other than
+“Yes, David, you need to take the fucking inositol even if you don’t
+think it’s doing something”, but I do want to share a related
+observation from the other day.&lt;/p&gt;
+
+
+&lt;p&gt;There are two different skills for dealing with anxiety. One of them
+&lt;a href="https://notebook.drmaciver.com/posts/2020-05-20-17:58.html"&gt;I’ve
+written about before&lt;/a&gt; and is about only feeling anxiety in situations
+where it’s an appropriate response. But the other, equally important
+one, is that when the appropriate response is a high level of anxiety,
+you should be able to deal with it.&lt;/p&gt;
+
+
+&lt;p&gt;In this case I couldn’t really say anxiety was inappropriate. &lt;a href="https://notebook.drmaciver.com/posts/2020-04-03-13:40.html"&gt;There
+was a high level of uncertainty&lt;/a&gt; and it was legitimately scary&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;There still is. But also there was.&lt;/span&gt;. But &lt;em&gt;boy&lt;/em&gt; was I not able to
+deal with it. At the time I thought this was a generalisable thing about
+me, and to some degree it is, but in retrospect I was dealing with it
+much less well than I might have.&lt;/p&gt;
+
+
+&lt;p&gt;So I guess this leaves me with the following question: If you’re
+struggling to deal with something, is this maybe because the
+infrastructure you’d use to deal with it has collapsed or gone away and
+you didn’t notice because you didn’t think you needed it any more?&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2024-02-16-11:33.html" rel="alternate"/>
   </entry>
 </feed>
