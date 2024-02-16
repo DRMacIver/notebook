@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-02-13T10:18:00+00:00</updated>
+  <updated>2024-02-07T07:44:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,6 +10,91 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2024-01-29-08:21.html</id>
+    <title>Adaptive planning and grid systems</title>
+    <updated>2024-01-29T08:32:32-08:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Adaptive planning and grid systems&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2024-01-29&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Consider, if you will, a perfectly flat city laid out in a perfectly
+even grid, aligned with the compass directions.&lt;/p&gt;
+
+
+&lt;p&gt;Suppose you are at grid reference (0, 0) and want to be at grid
+reference (10, 10). You ask Google maps for a plan. What does it
+say?&lt;/p&gt;
+
+
+&lt;p&gt;It will probably tell you something like “Go East 10 blocks, then go
+North ten blocks”.&lt;/p&gt;
+
+
+&lt;p&gt;This is somewhat unintuitive but correct. You naturally think that
+the shortest path between two points is a straight line and want to do a
+sort of diagonal where you go East, then North, then East, then North,
+then East, etc. or something like that, but on a grid system this
+doesn’t buy you anything because each time you go North or East you
+travel exactly one block, so every route you take must be exactly 20
+blocks long. There is no route to your destination shorter than 20
+blocks.&lt;/p&gt;
+
+
+&lt;p&gt;Also, a human ignoring Google maps will get there sooner than one
+following it.&lt;/p&gt;
+
+
+&lt;p&gt;Here is the correct fastest algorithm for getting to your
+destination: Every time you are at an intersection, if there is a green
+light for going either North or East, and that is a useful direction for
+you to take (i.e. if you’re still South of destination and there’s a
+North light, or if you’re still West of your destination and there’s an
+East light), take it.&lt;/p&gt;
+
+
+&lt;p&gt;Following this algorithm doesn’t reduce your travel distance. It
+doesn’t even significantly reduce the amount of time you spend actually
+driving. But it &lt;em&gt;significantly&lt;/em&gt; shortens your wait times along
+the way.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;An interesting feature of this algorithm that I can’t
+decide if it is a coincidence or not is that the resulting path will
+look a lot closer to the straight line that you might have intuitively
+drawn.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;The thing about this algorithm is that it’s completely outside of
+Google Maps’s ability to give you this plan. It’s not just that it’s not
+a thing it considers, it’s not a thing that it &lt;em&gt;can&lt;/em&gt; consider,
+because there’s too much variability to predict exactly when the lights
+are going to change on your journey, even if it had precise timing data.
+This is however no problem for following the algorithm, because it is
+&lt;em&gt;adaptive&lt;/em&gt; - it takes into account the information that you have
+access to at the time of making the decision but do not have in
+advance.&lt;/p&gt;
+
+
+&lt;p&gt;Planning in advance is very useful, but it will always lack access to
+this sort of on the ground information, and you can often improve on
+purely up front plans by introducing an adaptive element to it like
+this..&lt;/p&gt;
+
+
+&lt;p&gt;The flipside of course is that we were able to do this here because
+the decisions we confront in navigating a grid are &lt;a href="https://drmaciver.substack.com/p/how-to-make-easy-decisions"&gt;easy&lt;/a&gt;.
+Trying to make hard decisions adaptively introduces a significant cost
+to executing the plan. One of the most important things to decide in
+advance is how you are going to make decisions on the fly.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2024-01-29-08:21.html" rel="alternate"/>
+  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-30-07:03.html</id>
     <title>Computer ghost stories</title>
@@ -862,7 +947,7 @@ to interact with you until you find a way to become a better person.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-02-07-07:44.html</id>
     <title>The obligation to be who you are</title>
-    <updated>2024-02-07T09:40:30+00:00</updated>
+    <updated>2024-02-07T07:44:00+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;The obligation to be who you are&lt;/p&gt;
@@ -1165,56 +1250,5 @@ take it on as my own..&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2024-02-07-07:44.html" rel="alternate"/>
-  </entry>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2024-02-13-10:18.html</id>
-    <title>Streak maintenance is complicated</title>
-    <updated>2024-02-13T10:18:00+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Streak maintenance is complicated&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2024-02-13&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I’m a big fan of daily writing. I think it does things that almost
-any other writing frequency doesn’t manage, and I like to keep it up
-when I can. I’ve done it pretty well this year, with a few days missed
-and made up for the previous day, but by and large I’ve managed the
-daily habit if we allow for that cheat rule. Some of the posts have been
-phoned in, a lot of them have been cobbled together from whatever spare
-material I’ve had around, but a lot of them have been novel and some of
-them have been good, and there’s even some overlap between those two
-categories. Even the ones that aren’t either have felt at least lightly
-worth doing.&lt;/p&gt;
-
-
-&lt;p&gt;Then, as you might have noticed, I didn’t write anything for five
-days. There’ve been reasons. They don’t matter right now. What I want to
-talk about is the experience of resuming after a break like that.&lt;/p&gt;
-
-
-&lt;p&gt;The first thing is that I have no intention of making up those
-missing days. In fact, I’m actively declaring that I will &lt;em&gt;not&lt;/em&gt;
-make up those missing days. It would be a bad idea. The streak is
-broken, in a way that a day of catch up does not count as breaking, and
-that’s fine.&lt;/p&gt;
-
-
-&lt;p&gt;The problem with daily writing is that it turns writing into a streak
-maintenance problem. The measure of your success is how long you’ve
-managed to keep the streak going, and you are motivated to make number
-go up.&lt;/p&gt;
-
-
-&lt;p&gt;Unfortunately, what this means is that the longer the streak’s been
-going for, the worst losing it feels.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2024-02-13-10:18.html" rel="alternate"/>
   </entry>
 </feed>
