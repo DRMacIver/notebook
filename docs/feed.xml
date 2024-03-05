@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-02-24T12:59:00+00:00</updated>
+  <updated>2024-02-16T12:44:04+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,6 +10,107 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2024-01-30-07:03.html</id>
+    <title>Computer ghost stories</title>
+    <updated>2024-01-30T08:34:48-08:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Computer ghost stories&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2024-01-30&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I was talking to a friend the other day and she related a story about
+a friend of hers which she described as “Exactly the sort of story that
+happens to him” and it occurred to me that I had recently had a story
+that feels like exactly the sort of thing that happens to me. Given my
+current interest in &lt;a href="https://notebook.drmaciver.com/posts/2024-01-25-19:45.html"&gt;writing
+stories about life&lt;/a&gt; it seems worth trying to develop a feel for that
+sort of characteristic story.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, this is one of my characteristic sorts of stories: Ones in
+which computers are haunted, and then Scooby Doo style you pull off the
+mask and find it was old man unintended feature interactions all
+along.&lt;/p&gt;
+
+
+&lt;p&gt;Let me set the scene: A week or so ago I was doing some work. All of
+a sudden, focus was stolen out from under me,&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;This is, of course, one of the worst crimes that a
+computer can commit. Even worse than playing sound that I haven’t asked
+for. Unfortunately we live in a high computer crime world.&lt;/span&gt; as
+my browser insisted that I absolutely had to see the following
+webcomic:&lt;/p&gt;
+
+
+&lt;p&gt;&lt;a href="https://xkcd.com/353/"&gt;&lt;img alt="XKCD comic about flying using Python" src="https://imgs.xkcd.com/comics/python.png"/&gt;&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;p&gt;I want you to pause for a moment and think about why this might have
+happened. I’ll explain shortly. Here’s a placeholder image to prevent
+you from reading the spoilers too soon:&lt;/p&gt;
+
+
+&lt;figure&gt;
+&lt;img alt="A snake offering someone an apple" src="/images/applesnake.png"/&gt;
+&lt;figcaption aria-hidden="true"&gt;A snake offering someone an
+apple&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+
+&lt;p&gt;Anyway, the first thing you need to know is that this is what happens
+when someone types “import antigravity” in Python. It’s a longstanding
+and very tedious easter egg, of the sort that programmers think is
+funny.&lt;/p&gt;
+
+
+&lt;p&gt;The second thing you need to know is that I was in VS Code. Also my
+Python virtualenv was lightly broken and as a result VS Code was failing
+to find imports and I hadn’t gotten around to fixing this.&lt;/p&gt;
+
+
+&lt;p&gt;This meant that when I was typing &lt;code&gt;import attrs&lt;/code&gt; it didn’t
+find the &lt;code&gt;attrs&lt;/code&gt; library.&lt;/p&gt;
+
+
+&lt;p&gt;And &lt;em&gt;this&lt;/em&gt; means that VS Code went into its aggressively fuzzy
+search mode, where it tries its hardest to find anything that might
+match what you’re looking for.&lt;/p&gt;
+
+
+&lt;p&gt;So, when I went back to VS Code to recreate what I’d just been doing
+to trigger this, I tried retyping &lt;code&gt;import attrs&lt;/code&gt; and what
+happened is that as I got to &lt;code&gt;import attr&lt;/code&gt; I saw that it was
+displaying “import
+&lt;strong&gt;a&lt;/strong&gt;n&lt;strong&gt;t&lt;/strong&gt;ig&lt;strong&gt;r&lt;/strong&gt;avi&lt;strong&gt;t&lt;/strong&gt;y”.
+The fact that all the characters in “attr” exist in “antigravity”
+(albeit not in the same order) was enough to trigger that as a
+suggestion.&lt;/p&gt;
+
+
+&lt;p&gt;And apparently, the fact that it was being suggested was enough to
+trigger an import. Which runs arbitrary code. In this case, opening a
+web browser.&lt;/p&gt;
+
+
+&lt;p&gt;&lt;a href="https://drmaciver.substack.com/p/delight-in-the-imperfect"&gt;I
+like this example because of how totally cursed it is&lt;/a&gt;, but it’s also
+interesting in terms of how utterly inscrutable it is until you put
+together two very easy pieces. Nobody I presented it to was able to
+figure it out without me essentially giving the game away (I doubt I
+would have been able to either). If you know about the easter egg it’s
+at least clear what must have happened, but not how. But if you’re there
+in front of the problem you can just retrace your steps and it’s almost
+immediately clear what must have happened.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2024-01-30-07:03.html" rel="alternate"/>
+  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-01-31-07:40.html</id>
     <title>Learning from experts in having problems</title>
@@ -1068,7 +1169,7 @@ take it on as my own..&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-02-16-11:33.html</id>
     <title>Silently losing critical life infrastructure</title>
-    <updated>2024-02-16T12:59:48+00:00</updated>
+    <updated>2024-02-16T12:44:04+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Silently losing critical life infrastructure&lt;/p&gt;
@@ -1275,43 +1376,5 @@ you didn’t notice because you didn’t think you needed it any more?&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2024-02-16-11:33.html" rel="alternate"/>
-  </entry>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2024-02-24-12:59.html</id>
-    <title>The trouble with habits</title>
-    <updated>2024-02-24T12:59:00+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;The trouble with habits&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2024-02-24&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I’d like to resume writing here.&lt;/p&gt;
-
-
-&lt;p&gt;The problem is that I’d like to do daily writing, but don’t think I
-can keep up with daily writing right now.&lt;/p&gt;
-
-
-&lt;p&gt;This combination of facts means that, emotionally, it’s hard to write
-at all, because it seems like my choices are between not doing the
-thing, and failing at doing the thing, and the former is emotionally
-much easier.&lt;/p&gt;
-
-
-&lt;p&gt;This is, of course, ridiculous. Writing is better than not writing,
-therefore doing some writing but not daily writing should not feel worse
-than doing no writing.&lt;/p&gt;
-
-
-&lt;p&gt;At the same time I do think there’s something to it.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2024-02-24-12:59.html" rel="alternate"/>
   </entry>
 </feed>
