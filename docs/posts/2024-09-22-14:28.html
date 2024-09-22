@@ -86,64 +86,70 @@ problems expressed in CNF:</p>
 <span id="cb1-2"><a aria-hidden="true" href="#cb1-2" tabindex="-1"></a><span class="im">from</span> .cnfbuilder <span class="im">import</span> CNFBuilder</span>
 <span id="cb1-3"><a aria-hidden="true" href="#cb1-3" tabindex="-1"></a></span>
 <span id="cb1-4"><a aria-hidden="true" href="#cb1-4" tabindex="-1"></a></span>
-<span id="cb1-5"><a aria-hidden="true" href="#cb1-5" tabindex="-1"></a><span class="kw">def</span> setminus(A, B):</span>
+<span id="cb1-5"><a aria-hidden="true" href="#cb1-5" tabindex="-1"></a><span class="kw">def</span> setminus(A: <span class="bu">list</span>[<span class="bu">list</span>[<span class="bu">int</span>]], B: <span class="bu">list</span>[<span class="bu">list</span>[<span class="bu">int</span>]]) <span class="op">-&gt;</span> <span class="bu">list</span>[<span class="bu">list</span>[<span class="bu">int</span>]]:</span>
 <span id="cb1-6"><a aria-hidden="true" href="#cb1-6" tabindex="-1"></a>    <span class="co">"""Returns a set of SAT clauses such that the satisfying</span></span>
 <span id="cb1-7"><a aria-hidden="true" href="#cb1-7" tabindex="-1"></a><span class="co">    solutions are precisely the satisfying solutions of A that</span></span>
-<span id="cb1-8"><a aria-hidden="true" href="#cb1-8" tabindex="-1"></a><span class="co">    do not satisfy B."""</span></span>
+<span id="cb1-8"><a aria-hidden="true" href="#cb1-8" tabindex="-1"></a><span class="co">    do not satisfy B.</span></span>
 <span id="cb1-9"><a aria-hidden="true" href="#cb1-9" tabindex="-1"></a></span>
-<span id="cb1-10"><a aria-hidden="true" href="#cb1-10" tabindex="-1"></a>    <span class="co"># Set of clauses that we incrementally expand until their</span></span>
-<span id="cb1-11"><a aria-hidden="true" href="#cb1-11" tabindex="-1"></a>    <span class="co"># satisfying solutions are solutions(A) - solutions(B).</span></span>
-<span id="cb1-12"><a aria-hidden="true" href="#cb1-12" tabindex="-1"></a>    result_clauses <span class="op">=</span> <span class="bu">list</span>(A)</span>
-<span id="cb1-13"><a aria-hidden="true" href="#cb1-13" tabindex="-1"></a></span>
-<span id="cb1-14"><a aria-hidden="true" href="#cb1-14" tabindex="-1"></a>    B <span class="op">=</span> <span class="bu">list</span>(B)</span>
+<span id="cb1-10"><a aria-hidden="true" href="#cb1-10" tabindex="-1"></a><span class="co">    A, B are SAT formulae represented in CNF in the usual way</span></span>
+<span id="cb1-11"><a aria-hidden="true" href="#cb1-11" tabindex="-1"></a><span class="co">    (positive literals correspond to a variable, negative literals</span></span>
+<span id="cb1-12"><a aria-hidden="true" href="#cb1-12" tabindex="-1"></a><span class="co">    to the negation fo that variable). The returned formula is in</span></span>
+<span id="cb1-13"><a aria-hidden="true" href="#cb1-13" tabindex="-1"></a><span class="co">    the same format.</span></span>
+<span id="cb1-14"><a aria-hidden="true" href="#cb1-14" tabindex="-1"></a><span class="co">    """</span></span>
 <span id="cb1-15"><a aria-hidden="true" href="#cb1-15" tabindex="-1"></a></span>
-<span id="cb1-16"><a aria-hidden="true" href="#cb1-16" tabindex="-1"></a>    <span class="co"># We are only interested in clauses in B that are not also in A,</span></span>
-<span id="cb1-17"><a aria-hidden="true" href="#cb1-17" tabindex="-1"></a>    <span class="co"># as every clause that is in A is always satisfied by an element</span></span>
-<span id="cb1-18"><a aria-hidden="true" href="#cb1-18" tabindex="-1"></a>    <span class="co"># of our result.</span></span>
-<span id="cb1-19"><a aria-hidden="true" href="#cb1-19" tabindex="-1"></a>    target_clauses <span class="op">=</span> {<span class="bu">tuple</span>(<span class="bu">sorted</span>(c)) <span class="cf">for</span> c <span class="kw">in</span> B} <span class="op">-</span> {<span class="bu">tuple</span>(<span class="bu">sorted</span>(c)) <span class="cf">for</span> c <span class="kw">in</span> A}</span>
-<span id="cb1-20"><a aria-hidden="true" href="#cb1-20" tabindex="-1"></a></span>
-<span id="cb1-21"><a aria-hidden="true" href="#cb1-21" tabindex="-1"></a>    <span class="co"># Every element of A satisfies B, so the set is empty.</span></span>
-<span id="cb1-22"><a aria-hidden="true" href="#cb1-22" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> target_clauses:</span>
-<span id="cb1-23"><a aria-hidden="true" href="#cb1-23" tabindex="-1"></a>        <span class="cf">return</span> [[<span class="dv">1</span>], [<span class="op">-</span><span class="dv">1</span>]]</span>
-<span id="cb1-24"><a aria-hidden="true" href="#cb1-24" tabindex="-1"></a></span>
-<span id="cb1-25"><a aria-hidden="true" href="#cb1-25" tabindex="-1"></a>    builder <span class="op">=</span> CNFBuilder(A)</span>
+<span id="cb1-16"><a aria-hidden="true" href="#cb1-16" tabindex="-1"></a>    <span class="co"># Set of clauses that we incrementally expand until their</span></span>
+<span id="cb1-17"><a aria-hidden="true" href="#cb1-17" tabindex="-1"></a>    <span class="co"># satisfying solutions are solutions(A) - solutions(B).</span></span>
+<span id="cb1-18"><a aria-hidden="true" href="#cb1-18" tabindex="-1"></a>    result_clauses <span class="op">=</span> <span class="bu">list</span>(A)</span>
+<span id="cb1-19"><a aria-hidden="true" href="#cb1-19" tabindex="-1"></a></span>
+<span id="cb1-20"><a aria-hidden="true" href="#cb1-20" tabindex="-1"></a>    B <span class="op">=</span> <span class="bu">list</span>(B)</span>
+<span id="cb1-21"><a aria-hidden="true" href="#cb1-21" tabindex="-1"></a></span>
+<span id="cb1-22"><a aria-hidden="true" href="#cb1-22" tabindex="-1"></a>    <span class="co"># We are only interested in clauses in B that are not also in A,</span></span>
+<span id="cb1-23"><a aria-hidden="true" href="#cb1-23" tabindex="-1"></a>    <span class="co"># as every clause that is in A is always satisfied by an element</span></span>
+<span id="cb1-24"><a aria-hidden="true" href="#cb1-24" tabindex="-1"></a>    <span class="co"># of our result.</span></span>
+<span id="cb1-25"><a aria-hidden="true" href="#cb1-25" tabindex="-1"></a>    target_clauses <span class="op">=</span> {<span class="bu">tuple</span>(<span class="bu">sorted</span>(c)) <span class="cf">for</span> c <span class="kw">in</span> B} <span class="op">-</span> {<span class="bu">tuple</span>(<span class="bu">sorted</span>(c)) <span class="cf">for</span> c <span class="kw">in</span> A}</span>
 <span id="cb1-26"><a aria-hidden="true" href="#cb1-26" tabindex="-1"></a></span>
-<span id="cb1-27"><a aria-hidden="true" href="#cb1-27" tabindex="-1"></a>    b_is_satisfied <span class="op">=</span> builder.<span class="bu">all</span>([builder.<span class="bu">any</span>(c) <span class="cf">for</span> c <span class="kw">in</span> target_clauses])</span>
-<span id="cb1-28"><a aria-hidden="true" href="#cb1-28" tabindex="-1"></a></span>
-<span id="cb1-29"><a aria-hidden="true" href="#cb1-29" tabindex="-1"></a>    <span class="co"># This is a set of clauses for the intersection of our current</span></span>
-<span id="cb1-30"><a aria-hidden="true" href="#cb1-30" tabindex="-1"></a>    <span class="co"># best answer with B. If these are satisfiable we're not done yet.</span></span>
-<span id="cb1-31"><a aria-hidden="true" href="#cb1-31" tabindex="-1"></a>    intersection_clauses <span class="op">=</span> <span class="bu">list</span>(A) <span class="op">+</span> <span class="bu">list</span>(B)</span>
+<span id="cb1-27"><a aria-hidden="true" href="#cb1-27" tabindex="-1"></a>    <span class="co"># Every element of A satisfies B, so the set is empty.</span></span>
+<span id="cb1-28"><a aria-hidden="true" href="#cb1-28" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> target_clauses:</span>
+<span id="cb1-29"><a aria-hidden="true" href="#cb1-29" tabindex="-1"></a>        <span class="cf">return</span> [[<span class="dv">1</span>], [<span class="op">-</span><span class="dv">1</span>]]</span>
+<span id="cb1-30"><a aria-hidden="true" href="#cb1-30" tabindex="-1"></a></span>
+<span id="cb1-31"><a aria-hidden="true" href="#cb1-31" tabindex="-1"></a>    builder <span class="op">=</span> CNFBuilder(A)</span>
 <span id="cb1-32"><a aria-hidden="true" href="#cb1-32" tabindex="-1"></a></span>
-<span id="cb1-33"><a aria-hidden="true" href="#cb1-33" tabindex="-1"></a>    <span class="co"># This is a set of clauses with new variables introduced</span></span>
-<span id="cb1-34"><a aria-hidden="true" href="#cb1-34" tabindex="-1"></a>    <span class="co"># such that an assignment is valid iff it can be extended</span></span>
-<span id="cb1-35"><a aria-hidden="true" href="#cb1-35" tabindex="-1"></a>    <span class="co"># to a valid assignment of these clauses.</span></span>
-<span id="cb1-36"><a aria-hidden="true" href="#cb1-36" tabindex="-1"></a>    general_clauses <span class="op">=</span> builder.clauses <span class="op">+</span> [[<span class="op">-</span>b_is_satisfied]]</span>
-<span id="cb1-37"><a aria-hidden="true" href="#cb1-37" tabindex="-1"></a></span>
-<span id="cb1-38"><a aria-hidden="true" href="#cb1-38" tabindex="-1"></a>    <span class="cf">while</span> <span class="va">True</span>:</span>
-<span id="cb1-39"><a aria-hidden="true" href="#cb1-39" tabindex="-1"></a>        solver <span class="op">=</span> Glucose4(intersection_clauses)</span>
-<span id="cb1-40"><a aria-hidden="true" href="#cb1-40" tabindex="-1"></a>        <span class="cf">if</span> <span class="kw">not</span> solver.solve():</span>
-<span id="cb1-41"><a aria-hidden="true" href="#cb1-41" tabindex="-1"></a>            <span class="cf">return</span> result_clauses</span>
-<span id="cb1-42"><a aria-hidden="true" href="#cb1-42" tabindex="-1"></a></span>
-<span id="cb1-43"><a aria-hidden="true" href="#cb1-43" tabindex="-1"></a>        <span class="co"># This is a solution to our result_clauses that is also in</span></span>
-<span id="cb1-44"><a aria-hidden="true" href="#cb1-44" tabindex="-1"></a>        <span class="co"># B, and so indicates that we're not done.</span></span>
-<span id="cb1-45"><a aria-hidden="true" href="#cb1-45" tabindex="-1"></a>        counter_example <span class="op">=</span> solver.get_model()</span>
-<span id="cb1-46"><a aria-hidden="true" href="#cb1-46" tabindex="-1"></a></span>
-<span id="cb1-47"><a aria-hidden="true" href="#cb1-47" tabindex="-1"></a>        <span class="co"># We now feed it in to the general clauses. This cannot be</span></span>
-<span id="cb1-48"><a aria-hidden="true" href="#cb1-48" tabindex="-1"></a>        <span class="co"># extended to a satisfying solution, because a solution is</span></span>
-<span id="cb1-49"><a aria-hidden="true" href="#cb1-49" tabindex="-1"></a>        <span class="co"># satisfying for general_clauses if and only if it corresponds</span></span>
-<span id="cb1-50"><a aria-hidden="true" href="#cb1-50" tabindex="-1"></a>        <span class="co"># to the unique extension of some satisfaction of A setminus B.</span></span>
-<span id="cb1-51"><a aria-hidden="true" href="#cb1-51" tabindex="-1"></a>        clause_generator <span class="op">=</span> Glucose4(general_clauses)</span>
-<span id="cb1-52"><a aria-hidden="true" href="#cb1-52" tabindex="-1"></a>        solved <span class="op">=</span> clause_generator.solve(assumptions<span class="op">=</span>counter_example)</span>
-<span id="cb1-53"><a aria-hidden="true" href="#cb1-53" tabindex="-1"></a>        <span class="cf">assert</span> <span class="kw">not</span> solved</span>
-<span id="cb1-54"><a aria-hidden="true" href="#cb1-54" tabindex="-1"></a></span>
-<span id="cb1-55"><a aria-hidden="true" href="#cb1-55" tabindex="-1"></a>        <span class="co"># This gives us a minimal clause that any solution to A setminus B must</span></span>
-<span id="cb1-56"><a aria-hidden="true" href="#cb1-56" tabindex="-1"></a>        <span class="co"># satisfy k</span></span>
-<span id="cb1-57"><a aria-hidden="true" href="#cb1-57" tabindex="-1"></a>        core <span class="op">=</span> clause_generator.get_core()</span>
-<span id="cb1-58"><a aria-hidden="true" href="#cb1-58" tabindex="-1"></a>        <span class="cf">assert</span> core <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span></span>
-<span id="cb1-59"><a aria-hidden="true" href="#cb1-59" tabindex="-1"></a>        new_clause <span class="op">=</span> [<span class="op">-</span>v <span class="cf">for</span> v <span class="kw">in</span> core]</span>
-<span id="cb1-60"><a aria-hidden="true" href="#cb1-60" tabindex="-1"></a>        general_clauses.append(new_clause)</span>
-<span id="cb1-61"><a aria-hidden="true" href="#cb1-61" tabindex="-1"></a>        intersection_clauses.append(new_clause)</span>
-<span id="cb1-62"><a aria-hidden="true" href="#cb1-62" tabindex="-1"></a>        result_clauses.append(new_clause)</span></code></pre></div>
+<span id="cb1-33"><a aria-hidden="true" href="#cb1-33" tabindex="-1"></a>    b_is_satisfied <span class="op">=</span> builder.<span class="bu">all</span>([builder.<span class="bu">any</span>(c) <span class="cf">for</span> c <span class="kw">in</span> target_clauses])</span>
+<span id="cb1-34"><a aria-hidden="true" href="#cb1-34" tabindex="-1"></a></span>
+<span id="cb1-35"><a aria-hidden="true" href="#cb1-35" tabindex="-1"></a>    <span class="co"># This is a set of clauses for the intersection of our current</span></span>
+<span id="cb1-36"><a aria-hidden="true" href="#cb1-36" tabindex="-1"></a>    <span class="co"># best answer with B. If these are satisfiable we're not done yet.</span></span>
+<span id="cb1-37"><a aria-hidden="true" href="#cb1-37" tabindex="-1"></a>    intersection_clauses <span class="op">=</span> <span class="bu">list</span>(A) <span class="op">+</span> <span class="bu">list</span>(B)</span>
+<span id="cb1-38"><a aria-hidden="true" href="#cb1-38" tabindex="-1"></a></span>
+<span id="cb1-39"><a aria-hidden="true" href="#cb1-39" tabindex="-1"></a>    <span class="co"># This is a set of clauses with new variables introduced</span></span>
+<span id="cb1-40"><a aria-hidden="true" href="#cb1-40" tabindex="-1"></a>    <span class="co"># such that an assignment is valid iff it can be extended</span></span>
+<span id="cb1-41"><a aria-hidden="true" href="#cb1-41" tabindex="-1"></a>    <span class="co"># to a valid assignment of these clauses.</span></span>
+<span id="cb1-42"><a aria-hidden="true" href="#cb1-42" tabindex="-1"></a>    general_clauses <span class="op">=</span> builder.clauses <span class="op">+</span> [[<span class="op">-</span>b_is_satisfied]]</span>
+<span id="cb1-43"><a aria-hidden="true" href="#cb1-43" tabindex="-1"></a></span>
+<span id="cb1-44"><a aria-hidden="true" href="#cb1-44" tabindex="-1"></a>    <span class="cf">while</span> <span class="va">True</span>:</span>
+<span id="cb1-45"><a aria-hidden="true" href="#cb1-45" tabindex="-1"></a>        solver <span class="op">=</span> Glucose4(intersection_clauses)</span>
+<span id="cb1-46"><a aria-hidden="true" href="#cb1-46" tabindex="-1"></a>        <span class="cf">if</span> <span class="kw">not</span> solver.solve():</span>
+<span id="cb1-47"><a aria-hidden="true" href="#cb1-47" tabindex="-1"></a>            <span class="cf">return</span> result_clauses</span>
+<span id="cb1-48"><a aria-hidden="true" href="#cb1-48" tabindex="-1"></a></span>
+<span id="cb1-49"><a aria-hidden="true" href="#cb1-49" tabindex="-1"></a>        <span class="co"># This is a solution to our result_clauses that is also in</span></span>
+<span id="cb1-50"><a aria-hidden="true" href="#cb1-50" tabindex="-1"></a>        <span class="co"># B, and so indicates that we're not done.</span></span>
+<span id="cb1-51"><a aria-hidden="true" href="#cb1-51" tabindex="-1"></a>        counter_example <span class="op">=</span> solver.get_model()</span>
+<span id="cb1-52"><a aria-hidden="true" href="#cb1-52" tabindex="-1"></a></span>
+<span id="cb1-53"><a aria-hidden="true" href="#cb1-53" tabindex="-1"></a>        <span class="co"># We now feed it in to the general clauses. This cannot be</span></span>
+<span id="cb1-54"><a aria-hidden="true" href="#cb1-54" tabindex="-1"></a>        <span class="co"># extended to a satisfying solution, because a solution is</span></span>
+<span id="cb1-55"><a aria-hidden="true" href="#cb1-55" tabindex="-1"></a>        <span class="co"># satisfying for general_clauses if and only if it corresponds</span></span>
+<span id="cb1-56"><a aria-hidden="true" href="#cb1-56" tabindex="-1"></a>        <span class="co"># to the unique extension of some satisfaction of A setminus B.</span></span>
+<span id="cb1-57"><a aria-hidden="true" href="#cb1-57" tabindex="-1"></a>        clause_generator <span class="op">=</span> Glucose4(general_clauses)</span>
+<span id="cb1-58"><a aria-hidden="true" href="#cb1-58" tabindex="-1"></a>        solved <span class="op">=</span> clause_generator.solve(assumptions<span class="op">=</span>counter_example)</span>
+<span id="cb1-59"><a aria-hidden="true" href="#cb1-59" tabindex="-1"></a>        <span class="cf">assert</span> <span class="kw">not</span> solved</span>
+<span id="cb1-60"><a aria-hidden="true" href="#cb1-60" tabindex="-1"></a></span>
+<span id="cb1-61"><a aria-hidden="true" href="#cb1-61" tabindex="-1"></a>        <span class="co"># This gives us a minimal clause that any solution to A setminus B must</span></span>
+<span id="cb1-62"><a aria-hidden="true" href="#cb1-62" tabindex="-1"></a>        <span class="co"># satisfy k</span></span>
+<span id="cb1-63"><a aria-hidden="true" href="#cb1-63" tabindex="-1"></a>        core <span class="op">=</span> clause_generator.get_core()</span>
+<span id="cb1-64"><a aria-hidden="true" href="#cb1-64" tabindex="-1"></a>        <span class="cf">assert</span> core <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span></span>
+<span id="cb1-65"><a aria-hidden="true" href="#cb1-65" tabindex="-1"></a>        new_clause <span class="op">=</span> [<span class="op">-</span>v <span class="cf">for</span> v <span class="kw">in</span> core]</span>
+<span id="cb1-66"><a aria-hidden="true" href="#cb1-66" tabindex="-1"></a>        general_clauses.append(new_clause)</span>
+<span id="cb1-67"><a aria-hidden="true" href="#cb1-67" tabindex="-1"></a>        intersection_clauses.append(new_clause)</span>
+<span id="cb1-68"><a aria-hidden="true" href="#cb1-68" tabindex="-1"></a>        result_clauses.append(new_clause)</span></code></pre></div>
 <p>Where CNFBuilder is the following fairly straightforward class for
 building up a set of clauses:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a aria-hidden="true" href="#cb2-1" tabindex="-1"></a><span class="kw">class</span> CNFBuilder:</span>
@@ -246,75 +252,78 @@ have a satisfying solution if and only if there is some assignment of
 the removed variable that satisfies them. Here’s some code that does
 that:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a aria-hidden="true" href="#cb3-1" tabindex="-1"></a><span class="kw">def</span> remove_one_variable(clauses, variable):</span>
-<span id="cb3-2"><a aria-hidden="true" href="#cb3-2" tabindex="-1"></a>    <span class="cf">assert</span> variable <span class="op">&gt;</span> <span class="dv">0</span></span>
-<span id="cb3-3"><a aria-hidden="true" href="#cb3-3" tabindex="-1"></a></span>
-<span id="cb3-4"><a aria-hidden="true" href="#cb3-4" tabindex="-1"></a>    solver <span class="op">=</span> Glucose4(clauses)</span>
-<span id="cb3-5"><a aria-hidden="true" href="#cb3-5" tabindex="-1"></a></span>
-<span id="cb3-6"><a aria-hidden="true" href="#cb3-6" tabindex="-1"></a>    <span class="co"># Current set of clauses representing our result set. Initially starts</span></span>
-<span id="cb3-7"><a aria-hidden="true" href="#cb3-7" tabindex="-1"></a>    <span class="co"># out as all clauses that do not reference the variable to remove.</span></span>
-<span id="cb3-8"><a aria-hidden="true" href="#cb3-8" tabindex="-1"></a>    refined_clauses: <span class="bu">list</span>[Clause] <span class="op">=</span> []</span>
-<span id="cb3-9"><a aria-hidden="true" href="#cb3-9" tabindex="-1"></a></span>
-<span id="cb3-10"><a aria-hidden="true" href="#cb3-10" tabindex="-1"></a>    <span class="co"># All clauses in the original where the variable appears positively.</span></span>
-<span id="cb3-11"><a aria-hidden="true" href="#cb3-11" tabindex="-1"></a>    positive_clauses <span class="op">=</span> []</span>
+<span id="cb3-2"><a aria-hidden="true" href="#cb3-2" tabindex="-1"></a>    <span class="co">"""Return a set of SAT clauses not containing `variable` that accepts only</span></span>
+<span id="cb3-3"><a aria-hidden="true" href="#cb3-3" tabindex="-1"></a><span class="co">    assignments that can be turned into satisfying assignments of `clauses` through</span></span>
+<span id="cb3-4"><a aria-hidden="true" href="#cb3-4" tabindex="-1"></a><span class="co">    a suitable choice of assignment for `variable`."""</span></span>
+<span id="cb3-5"><a aria-hidden="true" href="#cb3-5" tabindex="-1"></a>    <span class="cf">assert</span> variable <span class="op">&gt;</span> <span class="dv">0</span></span>
+<span id="cb3-6"><a aria-hidden="true" href="#cb3-6" tabindex="-1"></a></span>
+<span id="cb3-7"><a aria-hidden="true" href="#cb3-7" tabindex="-1"></a>    solver <span class="op">=</span> Glucose4(clauses)</span>
+<span id="cb3-8"><a aria-hidden="true" href="#cb3-8" tabindex="-1"></a></span>
+<span id="cb3-9"><a aria-hidden="true" href="#cb3-9" tabindex="-1"></a>    <span class="co"># Current set of clauses representing our result set. Initially starts</span></span>
+<span id="cb3-10"><a aria-hidden="true" href="#cb3-10" tabindex="-1"></a>    <span class="co"># out as all clauses that do not reference the variable to remove.</span></span>
+<span id="cb3-11"><a aria-hidden="true" href="#cb3-11" tabindex="-1"></a>    refined_clauses: <span class="bu">list</span>[Clause] <span class="op">=</span> []</span>
 <span id="cb3-12"><a aria-hidden="true" href="#cb3-12" tabindex="-1"></a></span>
-<span id="cb3-13"><a aria-hidden="true" href="#cb3-13" tabindex="-1"></a>    <span class="co"># All clauses in the original where the variable appears negatively.</span></span>
-<span id="cb3-14"><a aria-hidden="true" href="#cb3-14" tabindex="-1"></a>    negative_clauses <span class="op">=</span> []</span>
+<span id="cb3-13"><a aria-hidden="true" href="#cb3-13" tabindex="-1"></a>    <span class="co"># All clauses in the original where the variable appears positively.</span></span>
+<span id="cb3-14"><a aria-hidden="true" href="#cb3-14" tabindex="-1"></a>    positive_clauses <span class="op">=</span> []</span>
 <span id="cb3-15"><a aria-hidden="true" href="#cb3-15" tabindex="-1"></a></span>
-<span id="cb3-16"><a aria-hidden="true" href="#cb3-16" tabindex="-1"></a>    <span class="cf">for</span> clause <span class="kw">in</span> clauses:</span>
-<span id="cb3-17"><a aria-hidden="true" href="#cb3-17" tabindex="-1"></a>        <span class="cf">if</span> variable <span class="kw">in</span> clause:</span>
-<span id="cb3-18"><a aria-hidden="true" href="#cb3-18" tabindex="-1"></a>            clause <span class="op">=</span> <span class="bu">sorted</span>(<span class="bu">set</span>(clause) <span class="op">-</span> {variable})</span>
-<span id="cb3-19"><a aria-hidden="true" href="#cb3-19" tabindex="-1"></a>            positive_clauses.append(clause)</span>
-<span id="cb3-20"><a aria-hidden="true" href="#cb3-20" tabindex="-1"></a>        <span class="cf">elif</span> <span class="op">-</span>variable <span class="kw">in</span> clause:</span>
-<span id="cb3-21"><a aria-hidden="true" href="#cb3-21" tabindex="-1"></a>            clause <span class="op">=</span> <span class="bu">sorted</span>(<span class="bu">set</span>(clause) <span class="op">-</span> {<span class="op">-</span>variable})</span>
-<span id="cb3-22"><a aria-hidden="true" href="#cb3-22" tabindex="-1"></a>            negative_clauses.append(clause)</span>
-<span id="cb3-23"><a aria-hidden="true" href="#cb3-23" tabindex="-1"></a>        <span class="cf">else</span>:</span>
-<span id="cb3-24"><a aria-hidden="true" href="#cb3-24" tabindex="-1"></a>            refined_clauses.append(clause)</span>
-<span id="cb3-25"><a aria-hidden="true" href="#cb3-25" tabindex="-1"></a></span>
-<span id="cb3-26"><a aria-hidden="true" href="#cb3-26" tabindex="-1"></a>    <span class="cf">assert</span> positive_clauses <span class="kw">or</span> negative_clauses</span>
-<span id="cb3-27"><a aria-hidden="true" href="#cb3-27" tabindex="-1"></a></span>
-<span id="cb3-28"><a aria-hidden="true" href="#cb3-28" tabindex="-1"></a>    builder <span class="op">=</span> CNFBuilder(refined_clauses)</span>
-<span id="cb3-29"><a aria-hidden="true" href="#cb3-29" tabindex="-1"></a></span>
-<span id="cb3-30"><a aria-hidden="true" href="#cb3-30" tabindex="-1"></a>    positive_satisfied <span class="op">=</span> builder.<span class="bu">all</span>(</span>
-<span id="cb3-31"><a aria-hidden="true" href="#cb3-31" tabindex="-1"></a>        [builder.<span class="bu">any</span>(clause) <span class="cf">for</span> clause <span class="kw">in</span> positive_clauses]</span>
-<span id="cb3-32"><a aria-hidden="true" href="#cb3-32" tabindex="-1"></a>    )</span>
-<span id="cb3-33"><a aria-hidden="true" href="#cb3-33" tabindex="-1"></a></span>
-<span id="cb3-34"><a aria-hidden="true" href="#cb3-34" tabindex="-1"></a>    negative_satisfied <span class="op">=</span> builder.<span class="bu">all</span>(</span>
-<span id="cb3-35"><a aria-hidden="true" href="#cb3-35" tabindex="-1"></a>        [builder.<span class="bu">any</span>(clause) <span class="cf">for</span> clause <span class="kw">in</span> negative_clauses]</span>
-<span id="cb3-36"><a aria-hidden="true" href="#cb3-36" tabindex="-1"></a>    )</span>
-<span id="cb3-37"><a aria-hidden="true" href="#cb3-37" tabindex="-1"></a></span>
-<span id="cb3-38"><a aria-hidden="true" href="#cb3-38" tabindex="-1"></a>    <span class="co"># These clauses are satisfied if and only if all of our</span></span>
-<span id="cb3-39"><a aria-hidden="true" href="#cb3-39" tabindex="-1"></a>    <span class="co"># current result clauses are satisfied but there is no possible</span></span>
-<span id="cb3-40"><a aria-hidden="true" href="#cb3-40" tabindex="-1"></a>    <span class="co"># assignment of the removed variable that makes the original set</span></span>
-<span id="cb3-41"><a aria-hidden="true" href="#cb3-41" tabindex="-1"></a>    <span class="co"># of clauses satisfied.</span></span>
-<span id="cb3-42"><a aria-hidden="true" href="#cb3-42" tabindex="-1"></a>    oracle_clauses <span class="op">=</span> builder.clauses</span>
-<span id="cb3-43"><a aria-hidden="true" href="#cb3-43" tabindex="-1"></a>    oracle_clauses.append([<span class="op">-</span>positive_satisfied])</span>
-<span id="cb3-44"><a aria-hidden="true" href="#cb3-44" tabindex="-1"></a>    oracle_clauses.append([<span class="op">-</span>negative_satisfied])</span>
-<span id="cb3-45"><a aria-hidden="true" href="#cb3-45" tabindex="-1"></a>    oracle <span class="op">=</span> Glucose4(oracle_clauses)</span>
-<span id="cb3-46"><a aria-hidden="true" href="#cb3-46" tabindex="-1"></a></span>
-<span id="cb3-47"><a aria-hidden="true" href="#cb3-47" tabindex="-1"></a>    <span class="cf">while</span> <span class="va">True</span>:</span>
-<span id="cb3-48"><a aria-hidden="true" href="#cb3-48" tabindex="-1"></a>        <span class="co"># Every solution of our refined_clauses has a satisfying extension,</span></span>
-<span id="cb3-49"><a aria-hidden="true" href="#cb3-49" tabindex="-1"></a>        <span class="co"># so we're done.</span></span>
-<span id="cb3-50"><a aria-hidden="true" href="#cb3-50" tabindex="-1"></a>        <span class="cf">if</span> <span class="kw">not</span> oracle.solve():</span>
-<span id="cb3-51"><a aria-hidden="true" href="#cb3-51" tabindex="-1"></a>            <span class="cf">return</span> refined_clauses</span>
-<span id="cb3-52"><a aria-hidden="true" href="#cb3-52" tabindex="-1"></a></span>
-<span id="cb3-53"><a aria-hidden="true" href="#cb3-53" tabindex="-1"></a>        <span class="co"># We've got some solution to the refined clauses that cannot be extended.</span></span>
-<span id="cb3-54"><a aria-hidden="true" href="#cb3-54" tabindex="-1"></a>        <span class="co"># Turn it into a set of assumptions that cannot be satisfied in the original</span></span>
-<span id="cb3-55"><a aria-hidden="true" href="#cb3-55" tabindex="-1"></a>        <span class="co"># SAT problem.</span></span>
-<span id="cb3-56"><a aria-hidden="true" href="#cb3-56" tabindex="-1"></a>        counterexample <span class="op">=</span> oracle.get_model()</span>
-<span id="cb3-57"><a aria-hidden="true" href="#cb3-57" tabindex="-1"></a>        <span class="cf">assert</span> counterexample <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span></span>
-<span id="cb3-58"><a aria-hidden="true" href="#cb3-58" tabindex="-1"></a>        assumptions <span class="op">=</span> [</span>
-<span id="cb3-59"><a aria-hidden="true" href="#cb3-59" tabindex="-1"></a>            literal <span class="cf">for</span> literal <span class="kw">in</span> counterexample <span class="cf">if</span> <span class="bu">abs</span>(literal) <span class="op">!=</span> variable</span>
-<span id="cb3-60"><a aria-hidden="true" href="#cb3-60" tabindex="-1"></a>        ]</span>
-<span id="cb3-61"><a aria-hidden="true" href="#cb3-61" tabindex="-1"></a></span>
-<span id="cb3-62"><a aria-hidden="true" href="#cb3-62" tabindex="-1"></a>        solved_assumptions <span class="op">=</span> solver.solve(assumptions<span class="op">=</span>assumptions)</span>
-<span id="cb3-63"><a aria-hidden="true" href="#cb3-63" tabindex="-1"></a>        <span class="cf">assert</span> <span class="kw">not</span> solved_assumptions</span>
-<span id="cb3-64"><a aria-hidden="true" href="#cb3-64" tabindex="-1"></a>        core <span class="op">=</span> solver.get_core()</span>
-<span id="cb3-65"><a aria-hidden="true" href="#cb3-65" tabindex="-1"></a>        <span class="cf">assert</span> core <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span></span>
-<span id="cb3-66"><a aria-hidden="true" href="#cb3-66" tabindex="-1"></a></span>
-<span id="cb3-67"><a aria-hidden="true" href="#cb3-67" tabindex="-1"></a>        <span class="co"># We've learned a new clause that must always hold for the remaining variables.</span></span>
-<span id="cb3-68"><a aria-hidden="true" href="#cb3-68" tabindex="-1"></a>        new_clause <span class="op">=</span> <span class="bu">tuple</span>([<span class="op">-</span>literal <span class="cf">for</span> literal <span class="kw">in</span> core])</span>
-<span id="cb3-69"><a aria-hidden="true" href="#cb3-69" tabindex="-1"></a>        refined_clauses.append(new_clause)</span>
-<span id="cb3-70"><a aria-hidden="true" href="#cb3-70" tabindex="-1"></a>        oracle.add_clause(new_clause)</span></code></pre></div>
+<span id="cb3-16"><a aria-hidden="true" href="#cb3-16" tabindex="-1"></a>    <span class="co"># All clauses in the original where the variable appears negatively.</span></span>
+<span id="cb3-17"><a aria-hidden="true" href="#cb3-17" tabindex="-1"></a>    negative_clauses <span class="op">=</span> []</span>
+<span id="cb3-18"><a aria-hidden="true" href="#cb3-18" tabindex="-1"></a></span>
+<span id="cb3-19"><a aria-hidden="true" href="#cb3-19" tabindex="-1"></a>    <span class="cf">for</span> clause <span class="kw">in</span> clauses:</span>
+<span id="cb3-20"><a aria-hidden="true" href="#cb3-20" tabindex="-1"></a>        <span class="cf">if</span> variable <span class="kw">in</span> clause:</span>
+<span id="cb3-21"><a aria-hidden="true" href="#cb3-21" tabindex="-1"></a>            clause <span class="op">=</span> <span class="bu">sorted</span>(<span class="bu">set</span>(clause) <span class="op">-</span> {variable})</span>
+<span id="cb3-22"><a aria-hidden="true" href="#cb3-22" tabindex="-1"></a>            positive_clauses.append(clause)</span>
+<span id="cb3-23"><a aria-hidden="true" href="#cb3-23" tabindex="-1"></a>        <span class="cf">elif</span> <span class="op">-</span>variable <span class="kw">in</span> clause:</span>
+<span id="cb3-24"><a aria-hidden="true" href="#cb3-24" tabindex="-1"></a>            clause <span class="op">=</span> <span class="bu">sorted</span>(<span class="bu">set</span>(clause) <span class="op">-</span> {<span class="op">-</span>variable})</span>
+<span id="cb3-25"><a aria-hidden="true" href="#cb3-25" tabindex="-1"></a>            negative_clauses.append(clause)</span>
+<span id="cb3-26"><a aria-hidden="true" href="#cb3-26" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb3-27"><a aria-hidden="true" href="#cb3-27" tabindex="-1"></a>            refined_clauses.append(clause)</span>
+<span id="cb3-28"><a aria-hidden="true" href="#cb3-28" tabindex="-1"></a></span>
+<span id="cb3-29"><a aria-hidden="true" href="#cb3-29" tabindex="-1"></a>    <span class="cf">assert</span> positive_clauses <span class="kw">or</span> negative_clauses</span>
+<span id="cb3-30"><a aria-hidden="true" href="#cb3-30" tabindex="-1"></a></span>
+<span id="cb3-31"><a aria-hidden="true" href="#cb3-31" tabindex="-1"></a>    builder <span class="op">=</span> CNFBuilder(refined_clauses)</span>
+<span id="cb3-32"><a aria-hidden="true" href="#cb3-32" tabindex="-1"></a></span>
+<span id="cb3-33"><a aria-hidden="true" href="#cb3-33" tabindex="-1"></a>    positive_satisfied <span class="op">=</span> builder.<span class="bu">all</span>(</span>
+<span id="cb3-34"><a aria-hidden="true" href="#cb3-34" tabindex="-1"></a>        [builder.<span class="bu">any</span>(clause) <span class="cf">for</span> clause <span class="kw">in</span> positive_clauses]</span>
+<span id="cb3-35"><a aria-hidden="true" href="#cb3-35" tabindex="-1"></a>    )</span>
+<span id="cb3-36"><a aria-hidden="true" href="#cb3-36" tabindex="-1"></a></span>
+<span id="cb3-37"><a aria-hidden="true" href="#cb3-37" tabindex="-1"></a>    negative_satisfied <span class="op">=</span> builder.<span class="bu">all</span>(</span>
+<span id="cb3-38"><a aria-hidden="true" href="#cb3-38" tabindex="-1"></a>        [builder.<span class="bu">any</span>(clause) <span class="cf">for</span> clause <span class="kw">in</span> negative_clauses]</span>
+<span id="cb3-39"><a aria-hidden="true" href="#cb3-39" tabindex="-1"></a>    )</span>
+<span id="cb3-40"><a aria-hidden="true" href="#cb3-40" tabindex="-1"></a></span>
+<span id="cb3-41"><a aria-hidden="true" href="#cb3-41" tabindex="-1"></a>    <span class="co"># These clauses are satisfied if and only if all of our</span></span>
+<span id="cb3-42"><a aria-hidden="true" href="#cb3-42" tabindex="-1"></a>    <span class="co"># current result clauses are satisfied but there is no possible</span></span>
+<span id="cb3-43"><a aria-hidden="true" href="#cb3-43" tabindex="-1"></a>    <span class="co"># assignment of the removed variable that makes the original set</span></span>
+<span id="cb3-44"><a aria-hidden="true" href="#cb3-44" tabindex="-1"></a>    <span class="co"># of clauses satisfied.</span></span>
+<span id="cb3-45"><a aria-hidden="true" href="#cb3-45" tabindex="-1"></a>    oracle_clauses <span class="op">=</span> builder.clauses</span>
+<span id="cb3-46"><a aria-hidden="true" href="#cb3-46" tabindex="-1"></a>    oracle_clauses.append([<span class="op">-</span>positive_satisfied])</span>
+<span id="cb3-47"><a aria-hidden="true" href="#cb3-47" tabindex="-1"></a>    oracle_clauses.append([<span class="op">-</span>negative_satisfied])</span>
+<span id="cb3-48"><a aria-hidden="true" href="#cb3-48" tabindex="-1"></a>    oracle <span class="op">=</span> Glucose4(oracle_clauses)</span>
+<span id="cb3-49"><a aria-hidden="true" href="#cb3-49" tabindex="-1"></a></span>
+<span id="cb3-50"><a aria-hidden="true" href="#cb3-50" tabindex="-1"></a>    <span class="cf">while</span> <span class="va">True</span>:</span>
+<span id="cb3-51"><a aria-hidden="true" href="#cb3-51" tabindex="-1"></a>        <span class="co"># Every solution of our refined_clauses has a satisfying extension,</span></span>
+<span id="cb3-52"><a aria-hidden="true" href="#cb3-52" tabindex="-1"></a>        <span class="co"># so we're done.</span></span>
+<span id="cb3-53"><a aria-hidden="true" href="#cb3-53" tabindex="-1"></a>        <span class="cf">if</span> <span class="kw">not</span> oracle.solve():</span>
+<span id="cb3-54"><a aria-hidden="true" href="#cb3-54" tabindex="-1"></a>            <span class="cf">return</span> refined_clauses</span>
+<span id="cb3-55"><a aria-hidden="true" href="#cb3-55" tabindex="-1"></a></span>
+<span id="cb3-56"><a aria-hidden="true" href="#cb3-56" tabindex="-1"></a>        <span class="co"># We've got some solution to the refined clauses that cannot be extended.</span></span>
+<span id="cb3-57"><a aria-hidden="true" href="#cb3-57" tabindex="-1"></a>        <span class="co"># Turn it into a set of assumptions that cannot be satisfied in the original</span></span>
+<span id="cb3-58"><a aria-hidden="true" href="#cb3-58" tabindex="-1"></a>        <span class="co"># SAT problem.</span></span>
+<span id="cb3-59"><a aria-hidden="true" href="#cb3-59" tabindex="-1"></a>        counterexample <span class="op">=</span> oracle.get_model()</span>
+<span id="cb3-60"><a aria-hidden="true" href="#cb3-60" tabindex="-1"></a>        <span class="cf">assert</span> counterexample <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span></span>
+<span id="cb3-61"><a aria-hidden="true" href="#cb3-61" tabindex="-1"></a>        assumptions <span class="op">=</span> [</span>
+<span id="cb3-62"><a aria-hidden="true" href="#cb3-62" tabindex="-1"></a>            literal <span class="cf">for</span> literal <span class="kw">in</span> counterexample <span class="cf">if</span> <span class="bu">abs</span>(literal) <span class="op">!=</span> variable</span>
+<span id="cb3-63"><a aria-hidden="true" href="#cb3-63" tabindex="-1"></a>        ]</span>
+<span id="cb3-64"><a aria-hidden="true" href="#cb3-64" tabindex="-1"></a></span>
+<span id="cb3-65"><a aria-hidden="true" href="#cb3-65" tabindex="-1"></a>        solved_assumptions <span class="op">=</span> solver.solve(assumptions<span class="op">=</span>assumptions)</span>
+<span id="cb3-66"><a aria-hidden="true" href="#cb3-66" tabindex="-1"></a>        <span class="cf">assert</span> <span class="kw">not</span> solved_assumptions</span>
+<span id="cb3-67"><a aria-hidden="true" href="#cb3-67" tabindex="-1"></a>        core <span class="op">=</span> solver.get_core()</span>
+<span id="cb3-68"><a aria-hidden="true" href="#cb3-68" tabindex="-1"></a>        <span class="cf">assert</span> core <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span></span>
+<span id="cb3-69"><a aria-hidden="true" href="#cb3-69" tabindex="-1"></a></span>
+<span id="cb3-70"><a aria-hidden="true" href="#cb3-70" tabindex="-1"></a>        <span class="co"># We've learned a new clause that must always hold for the remaining variables.</span></span>
+<span id="cb3-71"><a aria-hidden="true" href="#cb3-71" tabindex="-1"></a>        new_clause <span class="op">=</span> <span class="bu">tuple</span>([<span class="op">-</span>literal <span class="cf">for</span> literal <span class="kw">in</span> core])</span>
+<span id="cb3-72"><a aria-hidden="true" href="#cb3-72" tabindex="-1"></a>        refined_clauses.append(new_clause)</span>
+<span id="cb3-73"><a aria-hidden="true" href="#cb3-73" tabindex="-1"></a>        oracle.add_clause(new_clause)</span></code></pre></div>
 <p>The idea here is that we use our oracle to find some assignment of
 our current set of clauses over all the remaining variables that cannot
 be satisfied, then use the original set of clauses to turn that into a
