@@ -77,7 +77,10 @@ MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
 <p>I’ve figured out a neat trick recently that I’ve not seen before,
 although I don’t know if it’s actually novel. It’s a fairly general
 method for manipulating SAT problems in CNF form to perform arbitrary
-set options on their solution set.</p>
+set options on their solution set, without adding additional variables
+to the problem.<label class="margin-toggle sidenote-number" for="fn1"></label><input class="margin-toggle" id="fn1" type="checkbox"/><span class="sidenote">It’s somewhere between well-known and obvious that you
+can do it with adding additional variables, and I make use of that for
+doing this.</span></p>
 <p>(Disclaimer: The idea definitely works, and I’ve run the code I’m
 posting and it seems to work, but it’s undertested and may be buggy)</p>
 <p>Here’s some code for calculating the set difference of two SAT
@@ -235,15 +238,15 @@ every element of your desired target set satisfies.</li>
 </ol>
 <p>You then just iteratively add clauses to your initial set of clauses
 until you are done.</p>
-<p>You can always use the empty set of clauses for (1),<label class="margin-toggle sidenote-number" for="fn1"></label><input class="margin-toggle" id="fn1" type="checkbox"/><span class="sidenote">This isn’t great though, because the runtime of this is
+<p>You can always use the empty set of clauses for (1),<label class="margin-toggle sidenote-number" for="fn2"></label><input class="margin-toggle" id="fn2" type="checkbox"/><span class="sidenote">This isn’t great though, because the runtime of this is
 that it takes two calls to a SAT solver per clause added, so where
 possible you want to start with a set of clauses that closely
 approximates your target.</span> and
 in the absence of a more convenient choice of oracle for (2) you can
 always construct it in the same way that the oracle for (3) is
 constructed, by adding new variables.</p>
-<p>Another neat thing you can do with essentially the same idea<label class="margin-toggle sidenote-number" for="fn2"></label><input class="margin-toggle" id="fn2" type="checkbox"/><span class="sidenote">And, in fact, where I first figured this out.</span> is you can take a SAT problem and
-remove a variable from it<label class="margin-toggle sidenote-number" for="fn3"></label><input class="margin-toggle" id="fn3" type="checkbox"/><span class="sidenote">You can use this to refine to arbitrary subsets of the
+<p>Another neat thing you can do with essentially the same idea<label class="margin-toggle sidenote-number" for="fn3"></label><input class="margin-toggle" id="fn3" type="checkbox"/><span class="sidenote">And, in fact, where I first figured this out.</span> is you can take a SAT problem and
+remove a variable from it<label class="margin-toggle sidenote-number" for="fn4"></label><input class="margin-toggle" id="fn4" type="checkbox"/><span class="sidenote">You can use this to refine to arbitrary subsets of the
 variables by removing one variable at a time, but I’ve not found a
 better way to do it than that - the natural ways of representing it all
 introduce exponentially many new variables in the number of variables

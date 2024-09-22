@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-09-22T15:17:37+01:00</updated>
+  <updated>2024-09-22T16:37:11+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1387,7 +1387,7 @@ cannot have a suitable notion of “appropriate”.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-09-22-14:28.html</id>
     <title>Set operations on SAT problems</title>
-    <updated>2024-09-22T15:17:37+01:00</updated>
+    <updated>2024-09-22T16:37:11+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Set operations on SAT problems&lt;/p&gt;
@@ -1402,7 +1402,10 @@ cannot have a suitable notion of “appropriate”.&lt;/p&gt;
 &lt;p&gt;I’ve figured out a neat trick recently that I’ve not seen before,
 although I don’t know if it’s actually novel. It’s a fairly general
 method for manipulating SAT problems in CNF form to perform arbitrary
-set options on their solution set.&lt;/p&gt;
+set options on their solution set, without adding additional variables
+to the problem.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;It’s somewhere between well-known and obvious that you
+can do it with adding additional variables, and I make use of that for
+doing this.&lt;/span&gt;&lt;/p&gt;
 
 
 &lt;p&gt;(Disclaimer: The idea definitely works, and I’ve run the code I’m
@@ -1590,7 +1593,7 @@ every element of your desired target set satisfies.&lt;/li&gt;
 until you are done.&lt;/p&gt;
 
 
-&lt;p&gt;You can always use the empty set of clauses for (1),&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;This isn’t great though, because the runtime of this is
+&lt;p&gt;You can always use the empty set of clauses for (1),&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;This isn’t great though, because the runtime of this is
 that it takes two calls to a SAT solver per clause added, so where
 possible you want to start with a set of clauses that closely
 approximates your target.&lt;/span&gt; and
@@ -1599,8 +1602,8 @@ always construct it in the same way that the oracle for (3) is
 constructed, by adding new variables.&lt;/p&gt;
 
 
-&lt;p&gt;Another neat thing you can do with essentially the same idea&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;And, in fact, where I first figured this out.&lt;/span&gt; is you can take a SAT problem and
-remove a variable from it&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;You can use this to refine to arbitrary subsets of the
+&lt;p&gt;Another neat thing you can do with essentially the same idea&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;And, in fact, where I first figured this out.&lt;/span&gt; is you can take a SAT problem and
+remove a variable from it&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;You can use this to refine to arbitrary subsets of the
 variables by removing one variable at a time, but I’ve not found a
 better way to do it than that - the natural ways of representing it all
 introduce exponentially many new variables in the number of variables
