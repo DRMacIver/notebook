@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+DRMacIver's Notebook: Set operations on SAT problems
+    </title>
+
+    <meta property="og:title" content="Set operations on SAT problems">
+
+    <meta property="og:url" content="https://notebook.drmaciver.com/posts/2024-09-22-14:28.html" />
+    <link rel="canonical" href="https://notebook.drmaciver.com/posts/2024-09-22-14:28.html" />
+    <script src="https://hypothes.is/embed.js" async></script>
+
+
+    <meta name="twitter:card" content="summary" />
+
+    <meta property="og:creator" content="@DRMacIver">
+
+    <link rel="stylesheet" href="/pandoc.css"/>
+    <link rel="stylesheet" href="/pygments.css"/>
+    <link rel="stylesheet" href="/tufte.css"/>
+    <link rel="stylesheet" href="/latex.css"/>
+    <link rel="stylesheet" href="/drmnotes.css"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
+});
+
+MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
+  console.log(message)
+});
+
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169185204-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169185204-1');
+</script>
+
+  </head>
+
+  <body>
+    <article>
+        <h1><a href="/">DRMacIver's Notebook</a></h1>
+        <p class=subtitle>Set operations on SAT problems</p>
+
+        
+
+<section id="the-post">
+<p class=subtitle>Set operations on SAT problems</p>
+<dl class=metadata>
+<dt>Published</dt>
+<dd class="post-date">2024-09-22</dd>
+</dl>
+
+<p>I’ve figured out a neat trick recently that I’ve not seen before,
+although I don’t know if it’s actually novel. It’s a fairly general
+method for manipulating SAT problems in CNF form to perform arbitrary
+set options on their solution set.</p>
+<p>(Disclaimer: The idea definitely works, and I’ve run the code I’m
+posting and it seems to work, but it’s undertested and may be buggy)</p>
+<p>Here’s some code for calculating the set difference of two SAT
+problems expressed in CNF:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a aria-hidden="true" href="#cb1-1" tabindex="-1"></a><span class="im">from</span> pysat.solvers <span class="im">import</span> Glucose4</span>
+<span id="cb1-2"><a aria-hidden="true" href="#cb1-2" tabindex="-1"></a><span class="im">from</span> .cnfbuilder <span class="im">import</span> CNFBuilder</span>
+<span id="cb1-3"><a aria-hidden="true" href="#cb1-3" tabindex="-1"></a></span>
+<span id="cb1-4"><a aria-hidden="true" href="#cb1-4" tabindex="-1"></a></span>
+<span id="cb1-5"><a aria-hidden="true" href="#cb1-5" tabindex="-1"></a><span class="kw">def</span> setminus(A, B):</span>
+<span id="cb1-6"><a aria-hidden="true" href="#cb1-6" tabindex="-1"></a>    <span class="co">"""Returns a set of SAT clauses such that the satisfying</span></span>
+<span id="cb1-7"><a aria-hidden="true" href="#cb1-7" tabindex="-1"></a><span class="co">    solutions are precisely the satisfying solutions of A that</span></span>
+<span id="cb1-8"><a aria-hidden="true" href="#cb1-8" tabindex="-1"></a><span class="co">    do not satisfy B."""</span></span>
+<span id="cb1-9"><a aria-hidden="true" href="#cb1-9" tabindex="-1"></a></span>
+<span id="cb1-10"><a aria-hidden="true" href="#cb1-10" tabindex="-1"></a>    <span class="co"># Set of clauses that we incrementally expand until their</span></span>
+<span id="cb1-11"><a aria-hidden="true" href="#cb1-11" tabindex="-1"></a>    <span class="co"># satisfying solutions are solutions(A) - solutions(B).</span></span>
+<span id="cb1-12"><a aria-hidden="true" href="#cb1-12" tabindex="-1"></a>    result_clauses <span class="op">=</span> <span class="bu">list</span>(A)</span>
+<span id="cb1-13"><a aria-hidden="true" href="#cb1-13" tabindex="-1"></a></span>
+<span id="cb1-14"><a aria-hidden="true" href="#cb1-14" tabindex="-1"></a>    B <span class="op">=</span> <span class="bu">list</span>(B)</span>
+<span id="cb1-15"><a aria-hidden="true" href="#cb1-15" tabindex="-1"></a></span>
+<span id="cb1-16"><a aria-hidden="true" href="#cb1-16" tabindex="-1"></a>    <span class="co"># We are only interested in clauses in B that are not also in A,</span></span>
+<span id="cb1-17"><a aria-hidden="true" href="#cb1-17" tabindex="-1"></a>    <span class="co"># as every clause that is in A is always satisfied by an element</span></span>
+<span id="cb1-18"><a aria-hidden="true" href="#cb1-18" tabindex="-1"></a>    <span class="co"># of our result.</span></span>
+<span id="cb1-19"><a aria-hidden="true" href="#cb1-19" tabindex="-1"></a>    target_clauses <span class="op">=</span> {<span class="bu">tuple</span>(<span class="bu">sorted</span>(c)) <span class="cf">for</span> c <span class="kw">in</span> B} <span class="op">-</span> {<span class="bu">tuple</span>(<span class="bu">sorted</span>(c)) <span class="cf">for</span> c <span class="kw">in</span> A}</span>
+<span id="cb1-20"><a aria-hidden="true" href="#cb1-20" tabindex="-1"></a></span>
+<span id="cb1-21"><a aria-hidden="true" href="#cb1-21" tabindex="-1"></a>    <span class="co"># Every element of A satisfies B, so the set is empty.</span></span>
+<span id="cb1-22"><a aria-hidden="true" href="#cb1-22" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> target_clauses:</span>
+<span id="cb1-23"><a aria-hidden="true" href="#cb1-23" tabindex="-1"></a>        <span class="cf">return</span> [[<span class="dv">1</span>], [<span class="op">-</span><span class="dv">1</span>]]</span>
+<span id="cb1-24"><a aria-hidden="true" href="#cb1-24" tabindex="-1"></a></span>
+<span id="cb1-25"><a aria-hidden="true" href="#cb1-25" tabindex="-1"></a>    builder <span class="op">=</span> CNFBuilder(A)</span>
+<span id="cb1-26"><a aria-hidden="true" href="#cb1-26" tabindex="-1"></a></span>
+<span id="cb1-27"><a aria-hidden="true" href="#cb1-27" tabindex="-1"></a>    b_is_satisfied <span class="op">=</span> builder.<span class="bu">all</span>([builder.<span class="bu">any</span>(c) <span class="cf">for</span> c <span class="kw">in</span> target_clauses])</span>
+<span id="cb1-28"><a aria-hidden="true" href="#cb1-28" tabindex="-1"></a></span>
+<span id="cb1-29"><a aria-hidden="true" href="#cb1-29" tabindex="-1"></a>    <span class="co"># This is a set of clauses for the intersection of our current</span></span>
+<span id="cb1-30"><a aria-hidden="true" href="#cb1-30" tabindex="-1"></a>    <span class="co"># best answer with B. If these are satisfiable we're not done yet.</span></span>
+<span id="cb1-31"><a aria-hidden="true" href="#cb1-31" tabindex="-1"></a>    intersection_clauses <span class="op">=</span> <span class="bu">list</span>(A) <span class="op">+</span> <span class="bu">list</span>(B)</span>
+<span id="cb1-32"><a aria-hidden="true" href="#cb1-32" tabindex="-1"></a></span>
+<span id="cb1-33"><a aria-hidden="true" href="#cb1-33" tabindex="-1"></a>    <span class="co"># This is a set of clauses with new variables introduced</span></span>
+<span id="cb1-34"><a aria-hidden="true" href="#cb1-34" tabindex="-1"></a>    <span class="co"># such that an assignment is valid iff it can be extended</span></span>
+<span id="cb1-35"><a aria-hidden="true" href="#cb1-35" tabindex="-1"></a>    <span class="co"># to a valid assignment of these clauses.</span></span>
+<span id="cb1-36"><a aria-hidden="true" href="#cb1-36" tabindex="-1"></a>    general_clauses <span class="op">=</span> builder.clauses <span class="op">+</span> [[<span class="op">-</span>b_is_satisfied]]</span>
+<span id="cb1-37"><a aria-hidden="true" href="#cb1-37" tabindex="-1"></a></span>
+<span id="cb1-38"><a aria-hidden="true" href="#cb1-38" tabindex="-1"></a>    <span class="cf">while</span> <span class="va">True</span>:</span>
+<span id="cb1-39"><a aria-hidden="true" href="#cb1-39" tabindex="-1"></a>        solver <span class="op">=</span> Glucose4(intersection_clauses)</span>
+<span id="cb1-40"><a aria-hidden="true" href="#cb1-40" tabindex="-1"></a>        <span class="cf">if</span> <span class="kw">not</span> solver.solve():</span>
+<span id="cb1-41"><a aria-hidden="true" href="#cb1-41" tabindex="-1"></a>            <span class="cf">return</span> result_clauses</span>
+<span id="cb1-42"><a aria-hidden="true" href="#cb1-42" tabindex="-1"></a></span>
+<span id="cb1-43"><a aria-hidden="true" href="#cb1-43" tabindex="-1"></a>        <span class="co"># This is a solution to our result_clauses that is also in</span></span>
+<span id="cb1-44"><a aria-hidden="true" href="#cb1-44" tabindex="-1"></a>        <span class="co"># B, and so indicates that we're not done.</span></span>
+<span id="cb1-45"><a aria-hidden="true" href="#cb1-45" tabindex="-1"></a>        counter_example <span class="op">=</span> solver.get_model()</span>
+<span id="cb1-46"><a aria-hidden="true" href="#cb1-46" tabindex="-1"></a></span>
+<span id="cb1-47"><a aria-hidden="true" href="#cb1-47" tabindex="-1"></a>        <span class="co"># We now feed it in to the general clauses. This cannot be</span></span>
+<span id="cb1-48"><a aria-hidden="true" href="#cb1-48" tabindex="-1"></a>        <span class="co"># extended to a satisfying solution, because a solution is</span></span>
+<span id="cb1-49"><a aria-hidden="true" href="#cb1-49" tabindex="-1"></a>        <span class="co"># satisfying for general_clauses if and only if it corresponds</span></span>
+<span id="cb1-50"><a aria-hidden="true" href="#cb1-50" tabindex="-1"></a>        <span class="co"># to the unique extension of some satisfaction of A setminus B.</span></span>
+<span id="cb1-51"><a aria-hidden="true" href="#cb1-51" tabindex="-1"></a>        clause_generator <span class="op">=</span> Glucose4(general_clauses)</span>
+<span id="cb1-52"><a aria-hidden="true" href="#cb1-52" tabindex="-1"></a>        solved <span class="op">=</span> clause_generator.solve(assumptions<span class="op">=</span>counter_example)</span>
+<span id="cb1-53"><a aria-hidden="true" href="#cb1-53" tabindex="-1"></a>        <span class="cf">assert</span> <span class="kw">not</span> solved</span>
+<span id="cb1-54"><a aria-hidden="true" href="#cb1-54" tabindex="-1"></a></span>
+<span id="cb1-55"><a aria-hidden="true" href="#cb1-55" tabindex="-1"></a>        <span class="co"># This gives us a minimal clause that any solution to A setminus B must</span></span>
+<span id="cb1-56"><a aria-hidden="true" href="#cb1-56" tabindex="-1"></a>        <span class="co"># satisfy k</span></span>
+<span id="cb1-57"><a aria-hidden="true" href="#cb1-57" tabindex="-1"></a>        core <span class="op">=</span> clause_generator.get_core()</span>
+<span id="cb1-58"><a aria-hidden="true" href="#cb1-58" tabindex="-1"></a>        <span class="cf">assert</span> core <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span></span>
+<span id="cb1-59"><a aria-hidden="true" href="#cb1-59" tabindex="-1"></a>        new_clause <span class="op">=</span> [<span class="op">-</span>v <span class="cf">for</span> v <span class="kw">in</span> core]</span>
+<span id="cb1-60"><a aria-hidden="true" href="#cb1-60" tabindex="-1"></a>        general_clauses.append(new_clause)</span>
+<span id="cb1-61"><a aria-hidden="true" href="#cb1-61" tabindex="-1"></a>        intersection_clauses.append(new_clause)</span>
+<span id="cb1-62"><a aria-hidden="true" href="#cb1-62" tabindex="-1"></a>        result_clauses.append(new_clause)</span></code></pre></div>
+<p>Where CNFBuilder is the following fairly straightforward class for
+building up a set of clauses:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a aria-hidden="true" href="#cb2-1" tabindex="-1"></a><span class="kw">class</span> CNFBuilder:</span>
+<span id="cb2-2"><a aria-hidden="true" href="#cb2-2" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, clauses):</span>
+<span id="cb2-3"><a aria-hidden="true" href="#cb2-3" tabindex="-1"></a>        <span class="va">self</span>.clauses <span class="op">=</span> <span class="bu">list</span>(clauses)</span>
+<span id="cb2-4"><a aria-hidden="true" href="#cb2-4" tabindex="-1"></a>        <span class="va">self</span>.__nextvar <span class="op">=</span> (</span>
+<span id="cb2-5"><a aria-hidden="true" href="#cb2-5" tabindex="-1"></a>            <span class="bu">max</span>(<span class="bu">abs</span>(literal) <span class="cf">for</span> clause <span class="kw">in</span> clauses <span class="cf">for</span> literal <span class="kw">in</span> clause) <span class="op">+</span> <span class="dv">1</span></span>
+<span id="cb2-6"><a aria-hidden="true" href="#cb2-6" tabindex="-1"></a>        )</span>
+<span id="cb2-7"><a aria-hidden="true" href="#cb2-7" tabindex="-1"></a></span>
+<span id="cb2-8"><a aria-hidden="true" href="#cb2-8" tabindex="-1"></a>    <span class="kw">def</span> <span class="bu">any</span>(<span class="va">self</span>, variables) <span class="op">-&gt;</span> <span class="bu">int</span>:</span>
+<span id="cb2-9"><a aria-hidden="true" href="#cb2-9" tabindex="-1"></a>        result <span class="op">=</span> <span class="va">self</span>.__newvar()</span>
+<span id="cb2-10"><a aria-hidden="true" href="#cb2-10" tabindex="-1"></a>        <span class="co"># Any variable being true implies the result variable is true.</span></span>
+<span id="cb2-11"><a aria-hidden="true" href="#cb2-11" tabindex="-1"></a>        <span class="cf">for</span> v <span class="kw">in</span> variables:</span>
+<span id="cb2-12"><a aria-hidden="true" href="#cb2-12" tabindex="-1"></a>            <span class="va">self</span>.__implies(v, result)</span>
+<span id="cb2-13"><a aria-hidden="true" href="#cb2-13" tabindex="-1"></a></span>
+<span id="cb2-14"><a aria-hidden="true" href="#cb2-14" tabindex="-1"></a>        <span class="co"># If none of the variables are true, then any(variables) is false.</span></span>
+<span id="cb2-15"><a aria-hidden="true" href="#cb2-15" tabindex="-1"></a>        <span class="va">self</span>.clauses.append([<span class="op">-</span>result] <span class="op">+</span> [v <span class="cf">for</span> v <span class="kw">in</span> variables])</span>
+<span id="cb2-16"><a aria-hidden="true" href="#cb2-16" tabindex="-1"></a>        <span class="cf">return</span> result</span>
+<span id="cb2-17"><a aria-hidden="true" href="#cb2-17" tabindex="-1"></a></span>
+<span id="cb2-18"><a aria-hidden="true" href="#cb2-18" tabindex="-1"></a>    <span class="kw">def</span> <span class="bu">all</span>(<span class="va">self</span>, variables) <span class="op">-&gt;</span> <span class="bu">int</span>:</span>
+<span id="cb2-19"><a aria-hidden="true" href="#cb2-19" tabindex="-1"></a>        result <span class="op">=</span> <span class="va">self</span>.__newvar()</span>
+<span id="cb2-20"><a aria-hidden="true" href="#cb2-20" tabindex="-1"></a>        <span class="cf">for</span> v <span class="kw">in</span> variables:</span>
+<span id="cb2-21"><a aria-hidden="true" href="#cb2-21" tabindex="-1"></a>            <span class="va">self</span>.__implies(result, v)</span>
+<span id="cb2-22"><a aria-hidden="true" href="#cb2-22" tabindex="-1"></a></span>
+<span id="cb2-23"><a aria-hidden="true" href="#cb2-23" tabindex="-1"></a>        <span class="co"># If all of the variables are true, then all(variables) is true.</span></span>
+<span id="cb2-24"><a aria-hidden="true" href="#cb2-24" tabindex="-1"></a>        <span class="va">self</span>.clauses.append([result] <span class="op">+</span> [<span class="op">-</span>v <span class="cf">for</span> v <span class="kw">in</span> variables])</span>
+<span id="cb2-25"><a aria-hidden="true" href="#cb2-25" tabindex="-1"></a>        <span class="cf">return</span> result</span>
+<span id="cb2-26"><a aria-hidden="true" href="#cb2-26" tabindex="-1"></a></span>
+<span id="cb2-27"><a aria-hidden="true" href="#cb2-27" tabindex="-1"></a>    <span class="kw">def</span> __implies(<span class="va">self</span>, l, r):</span>
+<span id="cb2-28"><a aria-hidden="true" href="#cb2-28" tabindex="-1"></a>        <span class="va">self</span>.clauses.append([<span class="op">-</span>l, r])</span>
+<span id="cb2-29"><a aria-hidden="true" href="#cb2-29" tabindex="-1"></a></span>
+<span id="cb2-30"><a aria-hidden="true" href="#cb2-30" tabindex="-1"></a>    <span class="kw">def</span> __newvar(<span class="va">self</span>):</span>
+<span id="cb2-31"><a aria-hidden="true" href="#cb2-31" tabindex="-1"></a>        result <span class="op">=</span> <span class="va">self</span>.__nextvar</span>
+<span id="cb2-32"><a aria-hidden="true" href="#cb2-32" tabindex="-1"></a>        <span class="va">self</span>.__nextvar <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb2-33"><a aria-hidden="true" href="#cb2-33" tabindex="-1"></a>        <span class="cf">return</span> result</span></code></pre></div>
+<p>Let’s unpack this:</p>
+<p>We’ve got sets of clauses A, B, and we want to calculate a set of
+clauses that represents the set of solutions solutions(A) -
+solutions(B). We do this by starting from A, and iteratively refining it
+to exclude solutions we don’t want.</p>
+<p>This works by building up a set of clauses C as follows:</p>
+<ol type="1">
+<li>Initially, C = A. We maintain throughout that
+<code>solutions(A) - solutions(B) subset solutions(C) subset solutions(A)</code>.</li>
+<li>We check if there are any solutions to C that are also solutions to
+B. If there are not, we’re done and
+<code>solutions(C) = solutions(A) - solutions(B)</code>.</li>
+<li>If not, we find a subset of the resulting assignment such that no
+extension of that partial assignment can be in
+<code>solutions(A) - solutions(B)</code>.</li>
+<li>We add a negation of that subset to C as a new clause, and
+repeat.</li>
+</ol>
+<p>Part (2) is easy: If you concatenate two sets of clauses, you’ll get
+a set of clauses whose solutions are precisely the intersection of the
+two solutions.
+i.e. <code>solutions(C + B) = solutions(C) &amp; solutions(B)</code>. So
+any solution to <code>solutions(C) + solutions(B)</code> gives us the
+desired example.</p>
+<p>Part (3) is solved through two observations: Firstly, we can easily
+construct a larger SAT problem with more variables such that
+<code>x in solutions(A) - solutions(B)</code> iff <code>x</code> extends
+to a solution of the larger problem. We do this by introducing variables
+that correspond to B being satisfied (first we introduce a variable for
+each clause in B that is not in A, and then we introduce a variable
+corresponding to their intersection). We can then feed in our solution
+to an incremental SAT solver, get a minimal subset of it that cannot be
+extended to a solution (and thus is not present in any member of
+<code>solutions(A) - solutions(B)</code>, and add this as a clause
+ruling out our counterexample and anything like it, without ruling out
+any solutions we want to include.</p>
+<p>This is a fairly general solution that can be used to perform
+arbitrary boolean operations on SAT problems, because the components you
+need are:</p>
+<ol type="1">
+<li>Some set of clauses representing a superset of your desired target
+set.</li>
+<li>An oracle that will provide you with an example satisfying your set
+of clauses that is not in the desired target set (or say that none
+exists).</li>
+<li>An oracle that will take that example and turn it into clause that
+every element of your desired target set satisfies.</li>
+</ol>
+<p>You then just iteratively add clauses to your initial set of clauses
+until you are done.</p>
+<p>You can always use the empty set of clauses for (1),<label class="margin-toggle sidenote-number" for="fn1"></label><input class="margin-toggle" id="fn1" type="checkbox"/><span class="sidenote">This isn’t great though, because the runtime of this is
+that it takes two calls to a SAT solver per clause added, so where
+possible you want to start with a set of clauses that closely
+approximates your target.</span> and
+in the absence of a more convenient choice of oracle for (2) you can
+always construct it in the same way that the oracle for (3) is
+constructed, by adding new variables.</p>
+<p>Another neat thing you can do with essentially the same idea<label class="margin-toggle sidenote-number" for="fn2"></label><input class="margin-toggle" id="fn2" type="checkbox"/><span class="sidenote">And, in fact, where I first figured this out.</span> is you can take a SAT problem and
+remove a variable from it<label class="margin-toggle sidenote-number" for="fn3"></label><input class="margin-toggle" id="fn3" type="checkbox"/><span class="sidenote">You can use this to refine to arbitrary subsets of the
+variables by removing one variable at a time, but I’ve not found a
+better way to do it than that - the natural ways of representing it all
+introduce exponentially many new variables in the number of variables
+you want to remove.</span>, creating the set of clauses that
+have a satisfying solution if and only if there is some assignment of
+the removed variable that satisfies them. Here’s some code that does
+that:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a aria-hidden="true" href="#cb3-1" tabindex="-1"></a><span class="kw">def</span> remove_one_variable(clauses, variable):</span>
+<span id="cb3-2"><a aria-hidden="true" href="#cb3-2" tabindex="-1"></a>    <span class="cf">assert</span> variable <span class="op">&gt;</span> <span class="dv">0</span></span>
+<span id="cb3-3"><a aria-hidden="true" href="#cb3-3" tabindex="-1"></a></span>
+<span id="cb3-4"><a aria-hidden="true" href="#cb3-4" tabindex="-1"></a>    solver <span class="op">=</span> Glucose4(clauses)</span>
+<span id="cb3-5"><a aria-hidden="true" href="#cb3-5" tabindex="-1"></a></span>
+<span id="cb3-6"><a aria-hidden="true" href="#cb3-6" tabindex="-1"></a>    <span class="co"># Current set of clauses representing our result set. Initially starts</span></span>
+<span id="cb3-7"><a aria-hidden="true" href="#cb3-7" tabindex="-1"></a>    <span class="co"># out as all clauses that do not reference the variable to remove.</span></span>
+<span id="cb3-8"><a aria-hidden="true" href="#cb3-8" tabindex="-1"></a>    refined_clauses: <span class="bu">list</span>[Clause] <span class="op">=</span> []</span>
+<span id="cb3-9"><a aria-hidden="true" href="#cb3-9" tabindex="-1"></a></span>
+<span id="cb3-10"><a aria-hidden="true" href="#cb3-10" tabindex="-1"></a>    <span class="co"># All clauses in the original where the variable appears positively.</span></span>
+<span id="cb3-11"><a aria-hidden="true" href="#cb3-11" tabindex="-1"></a>    positive_clauses <span class="op">=</span> []</span>
+<span id="cb3-12"><a aria-hidden="true" href="#cb3-12" tabindex="-1"></a></span>
+<span id="cb3-13"><a aria-hidden="true" href="#cb3-13" tabindex="-1"></a>    <span class="co"># All clauses in the original where the variable appears negatively.</span></span>
+<span id="cb3-14"><a aria-hidden="true" href="#cb3-14" tabindex="-1"></a>    negative_clauses <span class="op">=</span> []</span>
+<span id="cb3-15"><a aria-hidden="true" href="#cb3-15" tabindex="-1"></a></span>
+<span id="cb3-16"><a aria-hidden="true" href="#cb3-16" tabindex="-1"></a>    <span class="cf">for</span> clause <span class="kw">in</span> clauses:</span>
+<span id="cb3-17"><a aria-hidden="true" href="#cb3-17" tabindex="-1"></a>        <span class="cf">if</span> variable <span class="kw">in</span> clause:</span>
+<span id="cb3-18"><a aria-hidden="true" href="#cb3-18" tabindex="-1"></a>            clause <span class="op">=</span> <span class="bu">sorted</span>(<span class="bu">set</span>(clause) <span class="op">-</span> {variable})</span>
+<span id="cb3-19"><a aria-hidden="true" href="#cb3-19" tabindex="-1"></a>            positive_clauses.append(clause)</span>
+<span id="cb3-20"><a aria-hidden="true" href="#cb3-20" tabindex="-1"></a>        <span class="cf">elif</span> <span class="op">-</span>variable <span class="kw">in</span> clause:</span>
+<span id="cb3-21"><a aria-hidden="true" href="#cb3-21" tabindex="-1"></a>            clause <span class="op">=</span> <span class="bu">sorted</span>(<span class="bu">set</span>(clause) <span class="op">-</span> {<span class="op">-</span>variable})</span>
+<span id="cb3-22"><a aria-hidden="true" href="#cb3-22" tabindex="-1"></a>            negative_clauses.append(clause)</span>
+<span id="cb3-23"><a aria-hidden="true" href="#cb3-23" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb3-24"><a aria-hidden="true" href="#cb3-24" tabindex="-1"></a>            refined_clauses.append(clause)</span>
+<span id="cb3-25"><a aria-hidden="true" href="#cb3-25" tabindex="-1"></a></span>
+<span id="cb3-26"><a aria-hidden="true" href="#cb3-26" tabindex="-1"></a>    <span class="cf">assert</span> positive_clauses <span class="kw">or</span> negative_clauses</span>
+<span id="cb3-27"><a aria-hidden="true" href="#cb3-27" tabindex="-1"></a></span>
+<span id="cb3-28"><a aria-hidden="true" href="#cb3-28" tabindex="-1"></a>    builder <span class="op">=</span> CNFBuilder(refined_clauses)</span>
+<span id="cb3-29"><a aria-hidden="true" href="#cb3-29" tabindex="-1"></a></span>
+<span id="cb3-30"><a aria-hidden="true" href="#cb3-30" tabindex="-1"></a>    positive_satisfied <span class="op">=</span> builder.<span class="bu">all</span>(</span>
+<span id="cb3-31"><a aria-hidden="true" href="#cb3-31" tabindex="-1"></a>        [builder.<span class="bu">any</span>(clause) <span class="cf">for</span> clause <span class="kw">in</span> positive_clauses]</span>
+<span id="cb3-32"><a aria-hidden="true" href="#cb3-32" tabindex="-1"></a>    )</span>
+<span id="cb3-33"><a aria-hidden="true" href="#cb3-33" tabindex="-1"></a></span>
+<span id="cb3-34"><a aria-hidden="true" href="#cb3-34" tabindex="-1"></a>    negative_satisfied <span class="op">=</span> builder.<span class="bu">all</span>(</span>
+<span id="cb3-35"><a aria-hidden="true" href="#cb3-35" tabindex="-1"></a>        [builder.<span class="bu">any</span>(clause) <span class="cf">for</span> clause <span class="kw">in</span> negative_clauses]</span>
+<span id="cb3-36"><a aria-hidden="true" href="#cb3-36" tabindex="-1"></a>    )</span>
+<span id="cb3-37"><a aria-hidden="true" href="#cb3-37" tabindex="-1"></a></span>
+<span id="cb3-38"><a aria-hidden="true" href="#cb3-38" tabindex="-1"></a>    <span class="co"># These clauses are satisfied if and only if all of our</span></span>
+<span id="cb3-39"><a aria-hidden="true" href="#cb3-39" tabindex="-1"></a>    <span class="co"># current result clauses are satisfied but there is no possible</span></span>
+<span id="cb3-40"><a aria-hidden="true" href="#cb3-40" tabindex="-1"></a>    <span class="co"># assignment of the removed variable that makes the original set</span></span>
+<span id="cb3-41"><a aria-hidden="true" href="#cb3-41" tabindex="-1"></a>    <span class="co"># of clauses satisfied.</span></span>
+<span id="cb3-42"><a aria-hidden="true" href="#cb3-42" tabindex="-1"></a>    oracle_clauses <span class="op">=</span> builder.clauses</span>
+<span id="cb3-43"><a aria-hidden="true" href="#cb3-43" tabindex="-1"></a>    oracle_clauses.append([<span class="op">-</span>positive_satisfied])</span>
+<span id="cb3-44"><a aria-hidden="true" href="#cb3-44" tabindex="-1"></a>    oracle_clauses.append([<span class="op">-</span>negative_satisfied])</span>
+<span id="cb3-45"><a aria-hidden="true" href="#cb3-45" tabindex="-1"></a>    oracle <span class="op">=</span> Glucose4(oracle_clauses)</span>
+<span id="cb3-46"><a aria-hidden="true" href="#cb3-46" tabindex="-1"></a></span>
+<span id="cb3-47"><a aria-hidden="true" href="#cb3-47" tabindex="-1"></a>    <span class="cf">while</span> <span class="va">True</span>:</span>
+<span id="cb3-48"><a aria-hidden="true" href="#cb3-48" tabindex="-1"></a>        <span class="co"># Every solution of our refined_clauses has a satisfying extension,</span></span>
+<span id="cb3-49"><a aria-hidden="true" href="#cb3-49" tabindex="-1"></a>        <span class="co"># so we're done.</span></span>
+<span id="cb3-50"><a aria-hidden="true" href="#cb3-50" tabindex="-1"></a>        <span class="cf">if</span> <span class="kw">not</span> oracle.solve():</span>
+<span id="cb3-51"><a aria-hidden="true" href="#cb3-51" tabindex="-1"></a>            <span class="cf">return</span> refined_clauses</span>
+<span id="cb3-52"><a aria-hidden="true" href="#cb3-52" tabindex="-1"></a></span>
+<span id="cb3-53"><a aria-hidden="true" href="#cb3-53" tabindex="-1"></a>        <span class="co"># We've got some solution to the refined clauses that cannot be extended.</span></span>
+<span id="cb3-54"><a aria-hidden="true" href="#cb3-54" tabindex="-1"></a>        <span class="co"># Turn it into a set of assumptions that cannot be satisfied in the original</span></span>
+<span id="cb3-55"><a aria-hidden="true" href="#cb3-55" tabindex="-1"></a>        <span class="co"># SAT problem.</span></span>
+<span id="cb3-56"><a aria-hidden="true" href="#cb3-56" tabindex="-1"></a>        counterexample <span class="op">=</span> oracle.get_model()</span>
+<span id="cb3-57"><a aria-hidden="true" href="#cb3-57" tabindex="-1"></a>        <span class="cf">assert</span> counterexample <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span></span>
+<span id="cb3-58"><a aria-hidden="true" href="#cb3-58" tabindex="-1"></a>        assumptions <span class="op">=</span> [</span>
+<span id="cb3-59"><a aria-hidden="true" href="#cb3-59" tabindex="-1"></a>            literal <span class="cf">for</span> literal <span class="kw">in</span> counterexample <span class="cf">if</span> <span class="bu">abs</span>(literal) <span class="op">!=</span> variable</span>
+<span id="cb3-60"><a aria-hidden="true" href="#cb3-60" tabindex="-1"></a>        ]</span>
+<span id="cb3-61"><a aria-hidden="true" href="#cb3-61" tabindex="-1"></a></span>
+<span id="cb3-62"><a aria-hidden="true" href="#cb3-62" tabindex="-1"></a>        solved_assumptions <span class="op">=</span> solver.solve(assumptions<span class="op">=</span>assumptions)</span>
+<span id="cb3-63"><a aria-hidden="true" href="#cb3-63" tabindex="-1"></a>        <span class="cf">assert</span> <span class="kw">not</span> solved_assumptions</span>
+<span id="cb3-64"><a aria-hidden="true" href="#cb3-64" tabindex="-1"></a>        core <span class="op">=</span> solver.get_core()</span>
+<span id="cb3-65"><a aria-hidden="true" href="#cb3-65" tabindex="-1"></a>        <span class="cf">assert</span> core <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span></span>
+<span id="cb3-66"><a aria-hidden="true" href="#cb3-66" tabindex="-1"></a></span>
+<span id="cb3-67"><a aria-hidden="true" href="#cb3-67" tabindex="-1"></a>        <span class="co"># We've learned a new clause that must always hold for the remaining variables.</span></span>
+<span id="cb3-68"><a aria-hidden="true" href="#cb3-68" tabindex="-1"></a>        new_clause <span class="op">=</span> <span class="bu">tuple</span>([<span class="op">-</span>literal <span class="cf">for</span> literal <span class="kw">in</span> core])</span>
+<span id="cb3-69"><a aria-hidden="true" href="#cb3-69" tabindex="-1"></a>        refined_clauses.append(new_clause)</span>
+<span id="cb3-70"><a aria-hidden="true" href="#cb3-70" tabindex="-1"></a>        oracle.add_clause(new_clause)</span></code></pre></div>
+<p>The idea here is that we use our oracle to find some assignment of
+our current set of clauses over all the remaining variables that cannot
+be satisfied, then use the original set of clauses to turn that into a
+new learned clause. It’s not <em>exactly</em> the same as the set
+operations method, but it involves essentially the same ideas and
+technologies.</p>
+<p>The downside of all of these methods is that they take two SAT calls
+per added clause, and there’s no guarantee that they don’t add
+exponentially many clauses. This isn’t just an “I can’t prove they
+don’t” no guarantee - sometimes they actually do. For example, in the
+context I was trying this, I found that most of the variables in my SAT
+problem were easily removable by adding 10s of clauses, but some seemed
+to run forever. This isn’t actually a problem for my use case for the
+most part (because I can just skip the ones that take too long), but it
+is a fairly fundamental limitation of the approach.</p>
+<p>I’m reasonably sure this is just intrinsic to the problem - you can
+represent any boolean expression as CNF, but there’s no guarantee that
+the CNF isn’t exponentially larger than the represented expression, so
+where it is you’ll end up with exactly this sort of blow up.</p>
+<p>Anyway, like I said, I don’t know if this is a new idea. I’ve not
+seen it before, and I think I would have if it was common knowledge, but
+it’s totally possible I’ve just not read the right bits of the
+literature to run into it.</p>
+
+
+</section>
+
+    </article>
+<footer>
+Copyright David R. MacIver.
+
+CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
+</footer>
+  </body>
+</html>
