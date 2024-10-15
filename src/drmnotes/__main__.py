@@ -28,6 +28,7 @@ from tqdm import tqdm
 from copy import copy
 import inspect
 import hashlib
+import black
 
 
 _DATABASE = None
@@ -897,6 +898,27 @@ class MathJaxAlignExtension(markdown.Extension):
 def md(text):
     text = text.replace('\\(', '$')
     text = text.replace('\\)', '$')
+
+    bits = []
+    python_start = "```python" 
+    python_end = "```"
+
+    while True:
+        if python_start not in text:
+            bits.append(text)
+            break
+
+        i = text.index(python_start)
+        bits.append(text[:i])
+        text = text[i + len(python_start):]
+        i = text.index(python_end)
+        python = text[:i]
+        python = black.format_str(python, mode=black.Mode(line_length=80))
+        text = text[i + len(python_end):]
+
+        bits.append('\n'.join((python_start, python,  python_end)))
+
+    text = '\n'.join(bits)
 
     result = subprocess.check_output([
         'pandoc', '--from=markdown+inline_notes+citations', '--toc', '--to=html',
