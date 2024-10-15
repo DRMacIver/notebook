@@ -106,62 +106,7 @@ guaranteed better way to do this than brute force enumeration. But I
 have figured out how to do the brute force enumeration
 <em>faster</em>.</p>
 <p>The core is the following function:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a aria-hidden="true" href="#cb1-1" tabindex="-1"></a><span class="im">from</span> pysat.solvers <span class="im">import</span> Glucose4</span>
-<span id="cb1-2"><a aria-hidden="true" href="#cb1-2" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb1-3"><a aria-hidden="true" href="#cb1-3" tabindex="-1"></a></span>
-<span id="cb1-4"><a aria-hidden="true" href="#cb1-4" tabindex="-1"></a><span class="kw">def</span> refine_assignment_table(clauses, variables, table):</span>
-<span id="cb1-5"><a aria-hidden="true" href="#cb1-5" tabindex="-1"></a>    <span class="co">"""Take a k x n table of assignments of n variables,</span></span>
-<span id="cb1-6"><a aria-hidden="true" href="#cb1-6" tabindex="-1"></a><span class="co">    and refine it so that it contains only satisfying assignments</span></span>
-<span id="cb1-7"><a aria-hidden="true" href="#cb1-7" tabindex="-1"></a><span class="co">    of a set of SAT clauses, where a row in the table is interpreted</span></span>
-<span id="cb1-8"><a aria-hidden="true" href="#cb1-8" tabindex="-1"></a><span class="co">    such that row[i] is the assigned value of variables[i]."""</span></span>
-<span id="cb1-9"><a aria-hidden="true" href="#cb1-9" tabindex="-1"></a>    </span>
-<span id="cb1-10"><a aria-hidden="true" href="#cb1-10" tabindex="-1"></a>    n <span class="op">=</span> <span class="bu">len</span>(variables)</span>
-<span id="cb1-11"><a aria-hidden="true" href="#cb1-11" tabindex="-1"></a>    <span class="cf">assert</span> table.shape[<span class="dv">1</span>] <span class="op">==</span> n</span>
-<span id="cb1-12"><a aria-hidden="true" href="#cb1-12" tabindex="-1"></a>    </span>
-<span id="cb1-13"><a aria-hidden="true" href="#cb1-13" tabindex="-1"></a>    variables <span class="op">=</span> np.array(variables)</span>
-<span id="cb1-14"><a aria-hidden="true" href="#cb1-14" tabindex="-1"></a>    variable_indexes <span class="op">=</span> {v: i <span class="cf">for</span> i, v <span class="kw">in</span> <span class="bu">enumerate</span>(variables)}</span>
-<span id="cb1-15"><a aria-hidden="true" href="#cb1-15" tabindex="-1"></a></span>
-<span id="cb1-16"><a aria-hidden="true" href="#cb1-16" tabindex="-1"></a>    sub_clauses <span class="op">=</span> []</span>
-<span id="cb1-17"><a aria-hidden="true" href="#cb1-17" tabindex="-1"></a></span>
-<span id="cb1-18"><a aria-hidden="true" href="#cb1-18" tabindex="-1"></a>    solver <span class="op">=</span> Glucose4(clauses)</span>
-<span id="cb1-19"><a aria-hidden="true" href="#cb1-19" tabindex="-1"></a></span>
-<span id="cb1-20"><a aria-hidden="true" href="#cb1-20" tabindex="-1"></a>    i <span class="op">=</span> <span class="dv">0</span></span>
-<span id="cb1-21"><a aria-hidden="true" href="#cb1-21" tabindex="-1"></a>    <span class="cf">while</span> i <span class="op">&lt;</span> <span class="bu">len</span>(table):</span>
-<span id="cb1-22"><a aria-hidden="true" href="#cb1-22" tabindex="-1"></a>        row <span class="op">=</span> table[i]</span>
-<span id="cb1-23"><a aria-hidden="true" href="#cb1-23" tabindex="-1"></a>        <span class="cf">assert</span> <span class="bu">len</span>(row) <span class="op">==</span> <span class="bu">len</span>(variables)</span>
-<span id="cb1-24"><a aria-hidden="true" href="#cb1-24" tabindex="-1"></a>        assignment <span class="op">=</span> [<span class="bu">int</span>(v <span class="cf">if</span> x <span class="cf">else</span> <span class="op">-</span>v) <span class="cf">for</span> x, v <span class="kw">in</span> <span class="bu">zip</span>(row, variables)]</span>
-<span id="cb1-25"><a aria-hidden="true" href="#cb1-25" tabindex="-1"></a>        <span class="cf">if</span> solver.solve(assignment):</span>
-<span id="cb1-26"><a aria-hidden="true" href="#cb1-26" tabindex="-1"></a>            <span class="co"># This row is a valid assignment. Move on to the next one.</span></span>
-<span id="cb1-27"><a aria-hidden="true" href="#cb1-27" tabindex="-1"></a>            i <span class="op">+=</span> <span class="dv">1</span></span>
-<span id="cb1-28"><a aria-hidden="true" href="#cb1-28" tabindex="-1"></a>            <span class="cf">continue</span></span>
-<span id="cb1-29"><a aria-hidden="true" href="#cb1-29" tabindex="-1"></a></span>
-<span id="cb1-30"><a aria-hidden="true" href="#cb1-30" tabindex="-1"></a>        <span class="co"># This row is an invalid assignment, so we can learn a new clause</span></span>
-<span id="cb1-31"><a aria-hidden="true" href="#cb1-31" tabindex="-1"></a>        <span class="co"># from it by extracting an unsatisfying core.</span></span>
-<span id="cb1-32"><a aria-hidden="true" href="#cb1-32" tabindex="-1"></a>        clause <span class="op">=</span> [<span class="op">-</span>v <span class="cf">for</span> v <span class="kw">in</span> solver.get_core()]</span>
-<span id="cb1-33"><a aria-hidden="true" href="#cb1-33" tabindex="-1"></a>        sub_clauses.append(clause)</span>
-<span id="cb1-34"><a aria-hidden="true" href="#cb1-34" tabindex="-1"></a></span>
-<span id="cb1-35"><a aria-hidden="true" href="#cb1-35" tabindex="-1"></a>        <span class="co"># We now remove all rows that don't satisfy this clause. Note that</span></span>
-<span id="cb1-36"><a aria-hidden="true" href="#cb1-36" tabindex="-1"></a>        <span class="co"># all rows before this one must satisfy it as they are valid</span></span>
-<span id="cb1-37"><a aria-hidden="true" href="#cb1-37" tabindex="-1"></a>        <span class="co"># assignments.</span></span>
-<span id="cb1-38"><a aria-hidden="true" href="#cb1-38" tabindex="-1"></a>        clause_mask <span class="op">=</span> np.array(clause)</span>
-<span id="cb1-39"><a aria-hidden="true" href="#cb1-39" tabindex="-1"></a>        positive_mask <span class="op">=</span> np.zeros(n, dtype<span class="op">=</span><span class="bu">bool</span>)</span>
-<span id="cb1-40"><a aria-hidden="true" href="#cb1-40" tabindex="-1"></a>        negative_mask <span class="op">=</span> np.zeros(n, dtype<span class="op">=</span><span class="bu">bool</span>)</span>
-<span id="cb1-41"><a aria-hidden="true" href="#cb1-41" tabindex="-1"></a></span>
-<span id="cb1-42"><a aria-hidden="true" href="#cb1-42" tabindex="-1"></a>        <span class="cf">for</span> v <span class="kw">in</span> clause:</span>
-<span id="cb1-43"><a aria-hidden="true" href="#cb1-43" tabindex="-1"></a>            <span class="cf">if</span> v <span class="op">&gt;</span> <span class="dv">0</span>:</span>
-<span id="cb1-44"><a aria-hidden="true" href="#cb1-44" tabindex="-1"></a>                positive_mask[variable_indexes[v]] <span class="op">=</span> <span class="va">True</span></span>
-<span id="cb1-45"><a aria-hidden="true" href="#cb1-45" tabindex="-1"></a>            <span class="cf">else</span>:</span>
-<span id="cb1-46"><a aria-hidden="true" href="#cb1-46" tabindex="-1"></a>                negative_mask[variable_indexes[<span class="op">-</span>v]] <span class="op">=</span> <span class="va">True</span></span>
-<span id="cb1-47"><a aria-hidden="true" href="#cb1-47" tabindex="-1"></a>                </span>
-<span id="cb1-48"><a aria-hidden="true" href="#cb1-48" tabindex="-1"></a>        positive_satisfaction <span class="op">=</span> table[:, positive_mask] <span class="op">==</span> <span class="va">True</span></span>
-<span id="cb1-49"><a aria-hidden="true" href="#cb1-49" tabindex="-1"></a>        negative_satisfaction <span class="op">=</span> table[:, negative_mask] <span class="op">==</span> <span class="va">False</span>        </span>
-<span id="cb1-50"><a aria-hidden="true" href="#cb1-50" tabindex="-1"></a>        satisfying <span class="op">=</span> np.<span class="bu">any</span>(</span>
-<span id="cb1-51"><a aria-hidden="true" href="#cb1-51" tabindex="-1"></a>            np.concatenate([positive_satisfaction, negative_satisfaction], axis<span class="op">=</span><span class="dv">1</span>),</span>
-<span id="cb1-52"><a aria-hidden="true" href="#cb1-52" tabindex="-1"></a>            axis<span class="op">=</span><span class="dv">1</span></span>
-<span id="cb1-53"><a aria-hidden="true" href="#cb1-53" tabindex="-1"></a>        )</span>
-<span id="cb1-54"><a aria-hidden="true" href="#cb1-54" tabindex="-1"></a>        <span class="cf">assert</span> <span class="bu">len</span>(satisfying) <span class="op">==</span> <span class="bu">len</span>(table)</span>
-<span id="cb1-55"><a aria-hidden="true" href="#cb1-55" tabindex="-1"></a>        table <span class="op">=</span> table[satisfying]</span>
-<span id="cb1-56"><a aria-hidden="true" href="#cb1-56" tabindex="-1"></a>    <span class="cf">return</span> sub_clauses, table</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"></code></pre></div>
 <p>This takes some table of assignments of the set of variables and
 refines it until it contains only valid assignments, learning a set of
 clauses along the way required to achieve that subset. This allows us to
@@ -180,55 +125,7 @@ you.</p>
 <p>We can then just run this on a table consisting of the set of all
 possible assignments of the variables, but we can do slightly better
 than that by breaking the variables up as follows:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a aria-hidden="true" href="#cb2-1" tabindex="-1"></a><span class="kw">def</span> enumerate_subsets(n):</span>
-<span id="cb2-2"><a aria-hidden="true" href="#cb2-2" tabindex="-1"></a>    <span class="co">"""Returns a 2^n x n table of all possible subsets of {0, ..., n - 1}"""</span></span>
-<span id="cb2-3"><a aria-hidden="true" href="#cb2-3" tabindex="-1"></a>    numbers <span class="op">=</span> np.arange(<span class="dv">2</span><span class="op">**</span>n, dtype<span class="op">=</span>np.uint32)[:, np.newaxis]</span>
-<span id="cb2-4"><a aria-hidden="true" href="#cb2-4" tabindex="-1"></a>    powers_of_two <span class="op">=</span> <span class="dv">2</span><span class="op">**</span>np.arange(n, dtype<span class="op">=</span>np.uint32)</span>
-<span id="cb2-5"><a aria-hidden="true" href="#cb2-5" tabindex="-1"></a>    <span class="cf">return</span> (numbers <span class="op">&amp;</span> powers_of_two) <span class="op">!=</span> <span class="dv">0</span></span>
-<span id="cb2-6"><a aria-hidden="true" href="#cb2-6" tabindex="-1"></a></span>
-<span id="cb2-7"><a aria-hidden="true" href="#cb2-7" tabindex="-1"></a><span class="kw">def</span> concatenate_matrix_rows(matrix1, matrix2):</span>
-<span id="cb2-8"><a aria-hidden="true" href="#cb2-8" tabindex="-1"></a>    <span class="co">"""Return a matrix containing every concatenation of a row</span></span>
-<span id="cb2-9"><a aria-hidden="true" href="#cb2-9" tabindex="-1"></a><span class="co">    from each of its two source matrices."""</span></span>
-<span id="cb2-10"><a aria-hidden="true" href="#cb2-10" tabindex="-1"></a>    m, n <span class="op">=</span> matrix1.shape</span>
-<span id="cb2-11"><a aria-hidden="true" href="#cb2-11" tabindex="-1"></a>    j, k <span class="op">=</span> matrix2.shape</span>
-<span id="cb2-12"><a aria-hidden="true" href="#cb2-12" tabindex="-1"></a>    </span>
-<span id="cb2-13"><a aria-hidden="true" href="#cb2-13" tabindex="-1"></a>    reshaped1 <span class="op">=</span> matrix1.reshape(m, <span class="dv">1</span>, n).repeat(j, axis<span class="op">=</span><span class="dv">1</span>)</span>
-<span id="cb2-14"><a aria-hidden="true" href="#cb2-14" tabindex="-1"></a>    </span>
-<span id="cb2-15"><a aria-hidden="true" href="#cb2-15" tabindex="-1"></a>    reshaped2 <span class="op">=</span> matrix2.reshape(<span class="dv">1</span>, j, k).repeat(m, axis<span class="op">=</span><span class="dv">0</span>)</span>
-<span id="cb2-16"><a aria-hidden="true" href="#cb2-16" tabindex="-1"></a>    </span>
-<span id="cb2-17"><a aria-hidden="true" href="#cb2-17" tabindex="-1"></a>    result <span class="op">=</span> np.concatenate([reshaped1, reshaped2], axis<span class="op">=</span><span class="dv">2</span>).reshape(m<span class="op">*</span>j, n<span class="op">+</span>k)</span>
-<span id="cb2-18"><a aria-hidden="true" href="#cb2-18" tabindex="-1"></a>    </span>
-<span id="cb2-19"><a aria-hidden="true" href="#cb2-19" tabindex="-1"></a>    <span class="cf">return</span> result</span>
-<span id="cb2-20"><a aria-hidden="true" href="#cb2-20" tabindex="-1"></a></span>
-<span id="cb2-21"><a aria-hidden="true" href="#cb2-21" tabindex="-1"></a></span>
-<span id="cb2-22"><a aria-hidden="true" href="#cb2-22" tabindex="-1"></a><span class="kw">def</span> assignment_table_and_clauses(clauses, variables):</span>
-<span id="cb2-23"><a aria-hidden="true" href="#cb2-23" tabindex="-1"></a>    <span class="co">"""Returns a set of sub-clauses over `variables` such that</span></span>
-<span id="cb2-24"><a aria-hidden="true" href="#cb2-24" tabindex="-1"></a><span class="co">    an assignment of variables can be extended to an assignment</span></span>
-<span id="cb2-25"><a aria-hidden="true" href="#cb2-25" tabindex="-1"></a><span class="co">    for the whole set of clauses iff it satisfies those subclauses,</span></span>
-<span id="cb2-26"><a aria-hidden="true" href="#cb2-26" tabindex="-1"></a><span class="co">    together with an assignment table representing all valid assignments</span></span>
-<span id="cb2-27"><a aria-hidden="true" href="#cb2-27" tabindex="-1"></a><span class="co">    of the variables."""</span></span>
-<span id="cb2-28"><a aria-hidden="true" href="#cb2-28" tabindex="-1"></a></span>
-<span id="cb2-29"><a aria-hidden="true" href="#cb2-29" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">len</span>(variables) <span class="op">&lt;=</span> <span class="dv">8</span>:</span>
-<span id="cb2-30"><a aria-hidden="true" href="#cb2-30" tabindex="-1"></a>        sub_clauses <span class="op">=</span> []</span>
-<span id="cb2-31"><a aria-hidden="true" href="#cb2-31" tabindex="-1"></a>        table <span class="op">=</span> enumerate_subsets(<span class="bu">len</span>(variables))</span>
-<span id="cb2-32"><a aria-hidden="true" href="#cb2-32" tabindex="-1"></a>    <span class="cf">else</span>:</span>
-<span id="cb2-33"><a aria-hidden="true" href="#cb2-33" tabindex="-1"></a>        <span class="co"># Solve the problem for two halves of the variables and then</span></span>
-<span id="cb2-34"><a aria-hidden="true" href="#cb2-34" tabindex="-1"></a>        <span class="co"># merge the tables. NB: If we had a reliable heuristic for</span></span>
-<span id="cb2-35"><a aria-hidden="true" href="#cb2-35" tabindex="-1"></a>        <span class="co"># grouping variables together that have a lot of influence</span></span>
-<span id="cb2-36"><a aria-hidden="true" href="#cb2-36" tabindex="-1"></a>        <span class="co"># on each other we should probably use it here. e.g. it probably</span></span>
-<span id="cb2-37"><a aria-hidden="true" href="#cb2-37" tabindex="-1"></a>        <span class="co"># makes sense to group variables in the same clause together.</span></span>
-<span id="cb2-38"><a aria-hidden="true" href="#cb2-38" tabindex="-1"></a>        split <span class="op">=</span> <span class="bu">len</span>(variables) <span class="op">//</span> <span class="dv">2</span></span>
-<span id="cb2-39"><a aria-hidden="true" href="#cb2-39" tabindex="-1"></a>        sub_clauses_left, table_left <span class="op">=</span> assignment_table_and_clauses(</span>
-<span id="cb2-40"><a aria-hidden="true" href="#cb2-40" tabindex="-1"></a>            clauses, variables[:split]</span>
-<span id="cb2-41"><a aria-hidden="true" href="#cb2-41" tabindex="-1"></a>        )</span>
-<span id="cb2-42"><a aria-hidden="true" href="#cb2-42" tabindex="-1"></a>        sub_clauses_right, table_right <span class="op">=</span> assignment_table_and_clauses(</span>
-<span id="cb2-43"><a aria-hidden="true" href="#cb2-43" tabindex="-1"></a>            clauses, variables[split:]</span>
-<span id="cb2-44"><a aria-hidden="true" href="#cb2-44" tabindex="-1"></a>        )</span>
-<span id="cb2-45"><a aria-hidden="true" href="#cb2-45" tabindex="-1"></a>        sub_clauses <span class="op">=</span> cub_clauses_left <span class="op">+</span> sub_clauses_right</span>
-<span id="cb2-46"><a aria-hidden="true" href="#cb2-46" tabindex="-1"></a>        table <span class="op">=</span> concatenate_matrix_rows(table_left, table_right)</span>
-<span id="cb2-47"><a aria-hidden="true" href="#cb2-47" tabindex="-1"></a></span>
-<span id="cb2-48"><a aria-hidden="true" href="#cb2-48" tabindex="-1"></a>    new_clauses, table <span class="op">=</span> refine_assignment_table(clauses, variables, table)</span>
-<span id="cb2-49"><a aria-hidden="true" href="#cb2-49" tabindex="-1"></a>    <span class="cf">return</span> sub_clauses <span class="op">+</span> new_clauses, table</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"></code></pre></div>
 <p>When there are subsets of the variables that also have fairly
 restricted assignments, working out their possible assignments first
 means that you can do a little better than exponential. If those subsets
