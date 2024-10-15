@@ -155,10 +155,13 @@ have figured out how to do the brute force enumeration
 <span id="cb1-47"><a aria-hidden="true" href="#cb1-47" tabindex="-1"></a>                </span>
 <span id="cb1-48"><a aria-hidden="true" href="#cb1-48" tabindex="-1"></a>        positive_satisfaction <span class="op">=</span> table[:, positive_mask] <span class="op">==</span> <span class="va">True</span></span>
 <span id="cb1-49"><a aria-hidden="true" href="#cb1-49" tabindex="-1"></a>        negative_satisfaction <span class="op">=</span> table[:, negative_mask] <span class="op">==</span> <span class="va">False</span>        </span>
-<span id="cb1-50"><a aria-hidden="true" href="#cb1-50" tabindex="-1"></a>        satisfying <span class="op">=</span> np.<span class="bu">any</span>(np.concatenate([positive_satisfaction, negative_satisfaction], axis<span class="op">=</span><span class="dv">1</span>), axis<span class="op">=</span><span class="dv">1</span>)</span>
-<span id="cb1-51"><a aria-hidden="true" href="#cb1-51" tabindex="-1"></a>        <span class="cf">assert</span> <span class="bu">len</span>(satisfying) <span class="op">==</span> <span class="bu">len</span>(table)</span>
-<span id="cb1-52"><a aria-hidden="true" href="#cb1-52" tabindex="-1"></a>        table <span class="op">=</span> table[satisfying]</span>
-<span id="cb1-53"><a aria-hidden="true" href="#cb1-53" tabindex="-1"></a>    <span class="cf">return</span> sub_clauses, table</span></code></pre></div>
+<span id="cb1-50"><a aria-hidden="true" href="#cb1-50" tabindex="-1"></a>        satisfying <span class="op">=</span> np.<span class="bu">any</span>(</span>
+<span id="cb1-51"><a aria-hidden="true" href="#cb1-51" tabindex="-1"></a>            np.concatenate([positive_satisfaction, negative_satisfaction], axis<span class="op">=</span><span class="dv">1</span>),</span>
+<span id="cb1-52"><a aria-hidden="true" href="#cb1-52" tabindex="-1"></a>            axis<span class="op">=</span><span class="dv">1</span></span>
+<span id="cb1-53"><a aria-hidden="true" href="#cb1-53" tabindex="-1"></a>        )</span>
+<span id="cb1-54"><a aria-hidden="true" href="#cb1-54" tabindex="-1"></a>        <span class="cf">assert</span> <span class="bu">len</span>(satisfying) <span class="op">==</span> <span class="bu">len</span>(table)</span>
+<span id="cb1-55"><a aria-hidden="true" href="#cb1-55" tabindex="-1"></a>        table <span class="op">=</span> table[satisfying]</span>
+<span id="cb1-56"><a aria-hidden="true" href="#cb1-56" tabindex="-1"></a>    <span class="cf">return</span> sub_clauses, table</span></code></pre></div>
 <p>This takes some table of assignments of the set of variables and
 refines it until it contains only valid assignments, learning a set of
 clauses along the way required to achieve that subset. This allows us to
@@ -215,13 +218,17 @@ than that by breaking the variables up as follows:</p>
 <span id="cb2-36"><a aria-hidden="true" href="#cb2-36" tabindex="-1"></a>        <span class="co"># on each other we should probably use it here. e.g. it probably</span></span>
 <span id="cb2-37"><a aria-hidden="true" href="#cb2-37" tabindex="-1"></a>        <span class="co"># makes sense to group variables in the same clause together.</span></span>
 <span id="cb2-38"><a aria-hidden="true" href="#cb2-38" tabindex="-1"></a>        split <span class="op">=</span> <span class="bu">len</span>(variables) <span class="op">//</span> <span class="dv">2</span></span>
-<span id="cb2-39"><a aria-hidden="true" href="#cb2-39" tabindex="-1"></a>        sub_clauses_left, table_left <span class="op">=</span> assignment_table_and_clauses(clauses, variables[:split])</span>
-<span id="cb2-40"><a aria-hidden="true" href="#cb2-40" tabindex="-1"></a>        sub_clauses_right, table_right <span class="op">=</span> assignment_table_and_clauses(clauses, variables[split:])</span>
-<span id="cb2-41"><a aria-hidden="true" href="#cb2-41" tabindex="-1"></a>        sub_clauses <span class="op">=</span> cub_clauses_left <span class="op">+</span> sub_clauses_right</span>
-<span id="cb2-42"><a aria-hidden="true" href="#cb2-42" tabindex="-1"></a>        table <span class="op">=</span> concatenate_matrix_rows(table_left, table_right)</span>
-<span id="cb2-43"><a aria-hidden="true" href="#cb2-43" tabindex="-1"></a></span>
-<span id="cb2-44"><a aria-hidden="true" href="#cb2-44" tabindex="-1"></a>    new_clauses, table <span class="op">=</span> refine_assignment_table(clauses, variables, table)</span>
-<span id="cb2-45"><a aria-hidden="true" href="#cb2-45" tabindex="-1"></a>    <span class="cf">return</span> sub_clauses <span class="op">+</span> new_clauses, table</span></code></pre></div>
+<span id="cb2-39"><a aria-hidden="true" href="#cb2-39" tabindex="-1"></a>        sub_clauses_left, table_left <span class="op">=</span> assignment_table_and_clauses(</span>
+<span id="cb2-40"><a aria-hidden="true" href="#cb2-40" tabindex="-1"></a>            clauses, variables[:split]</span>
+<span id="cb2-41"><a aria-hidden="true" href="#cb2-41" tabindex="-1"></a>        )</span>
+<span id="cb2-42"><a aria-hidden="true" href="#cb2-42" tabindex="-1"></a>        sub_clauses_right, table_right <span class="op">=</span> assignment_table_and_clauses(</span>
+<span id="cb2-43"><a aria-hidden="true" href="#cb2-43" tabindex="-1"></a>            clauses, variables[split:]</span>
+<span id="cb2-44"><a aria-hidden="true" href="#cb2-44" tabindex="-1"></a>        )</span>
+<span id="cb2-45"><a aria-hidden="true" href="#cb2-45" tabindex="-1"></a>        sub_clauses <span class="op">=</span> cub_clauses_left <span class="op">+</span> sub_clauses_right</span>
+<span id="cb2-46"><a aria-hidden="true" href="#cb2-46" tabindex="-1"></a>        table <span class="op">=</span> concatenate_matrix_rows(table_left, table_right)</span>
+<span id="cb2-47"><a aria-hidden="true" href="#cb2-47" tabindex="-1"></a></span>
+<span id="cb2-48"><a aria-hidden="true" href="#cb2-48" tabindex="-1"></a>    new_clauses, table <span class="op">=</span> refine_assignment_table(clauses, variables, table)</span>
+<span id="cb2-49"><a aria-hidden="true" href="#cb2-49" tabindex="-1"></a>    <span class="cf">return</span> sub_clauses <span class="op">+</span> new_clauses, table</span></code></pre></div>
 <p>When there are subsets of the variables that also have fairly
 restricted assignments, working out their possible assignments first
 means that you can do a little better than exponential. If those subsets

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-10-15T09:00:00+01:00</updated>
+  <updated>2024-10-15T11:08:01+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1629,7 +1629,7 @@ literature to run into it.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-10-15-09:00.html</id>
     <title>“Fast” enumeration of partial assignments in SAT problems</title>
-    <updated>2024-10-15T09:00:00+01:00</updated>
+    <updated>2024-10-15T11:08:01+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;“Fast” enumeration of partial assignments in SAT problems&lt;/p&gt;
@@ -1736,10 +1736,13 @@ have figured out how to do the brute force enumeration
 &lt;span id="cb1-47"&gt;&lt;a aria-hidden="true" href="#cb1-47" tabindex="-1"&gt;&lt;/a&gt;                &lt;/span&gt;
 &lt;span id="cb1-48"&gt;&lt;a aria-hidden="true" href="#cb1-48" tabindex="-1"&gt;&lt;/a&gt;        positive_satisfaction &lt;span class="op"&gt;=&lt;/span&gt; table[:, positive_mask] &lt;span class="op"&gt;==&lt;/span&gt; &lt;span class="va"&gt;True&lt;/span&gt;&lt;/span&gt;
 &lt;span id="cb1-49"&gt;&lt;a aria-hidden="true" href="#cb1-49" tabindex="-1"&gt;&lt;/a&gt;        negative_satisfaction &lt;span class="op"&gt;=&lt;/span&gt; table[:, negative_mask] &lt;span class="op"&gt;==&lt;/span&gt; &lt;span class="va"&gt;False&lt;/span&gt;        &lt;/span&gt;
-&lt;span id="cb1-50"&gt;&lt;a aria-hidden="true" href="#cb1-50" tabindex="-1"&gt;&lt;/a&gt;        satisfying &lt;span class="op"&gt;=&lt;/span&gt; np.&lt;span class="bu"&gt;any&lt;/span&gt;(np.concatenate([positive_satisfaction, negative_satisfaction], axis&lt;span class="op"&gt;=&lt;/span&gt;&lt;span class="dv"&gt;1&lt;/span&gt;), axis&lt;span class="op"&gt;=&lt;/span&gt;&lt;span class="dv"&gt;1&lt;/span&gt;)&lt;/span&gt;
-&lt;span id="cb1-51"&gt;&lt;a aria-hidden="true" href="#cb1-51" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="cf"&gt;assert&lt;/span&gt; &lt;span class="bu"&gt;len&lt;/span&gt;(satisfying) &lt;span class="op"&gt;==&lt;/span&gt; &lt;span class="bu"&gt;len&lt;/span&gt;(table)&lt;/span&gt;
-&lt;span id="cb1-52"&gt;&lt;a aria-hidden="true" href="#cb1-52" tabindex="-1"&gt;&lt;/a&gt;        table &lt;span class="op"&gt;=&lt;/span&gt; table[satisfying]&lt;/span&gt;
-&lt;span id="cb1-53"&gt;&lt;a aria-hidden="true" href="#cb1-53" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="cf"&gt;return&lt;/span&gt; sub_clauses, table&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span id="cb1-50"&gt;&lt;a aria-hidden="true" href="#cb1-50" tabindex="-1"&gt;&lt;/a&gt;        satisfying &lt;span class="op"&gt;=&lt;/span&gt; np.&lt;span class="bu"&gt;any&lt;/span&gt;(&lt;/span&gt;
+&lt;span id="cb1-51"&gt;&lt;a aria-hidden="true" href="#cb1-51" tabindex="-1"&gt;&lt;/a&gt;            np.concatenate([positive_satisfaction, negative_satisfaction], axis&lt;span class="op"&gt;=&lt;/span&gt;&lt;span class="dv"&gt;1&lt;/span&gt;),&lt;/span&gt;
+&lt;span id="cb1-52"&gt;&lt;a aria-hidden="true" href="#cb1-52" tabindex="-1"&gt;&lt;/a&gt;            axis&lt;span class="op"&gt;=&lt;/span&gt;&lt;span class="dv"&gt;1&lt;/span&gt;&lt;/span&gt;
+&lt;span id="cb1-53"&gt;&lt;a aria-hidden="true" href="#cb1-53" tabindex="-1"&gt;&lt;/a&gt;        )&lt;/span&gt;
+&lt;span id="cb1-54"&gt;&lt;a aria-hidden="true" href="#cb1-54" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="cf"&gt;assert&lt;/span&gt; &lt;span class="bu"&gt;len&lt;/span&gt;(satisfying) &lt;span class="op"&gt;==&lt;/span&gt; &lt;span class="bu"&gt;len&lt;/span&gt;(table)&lt;/span&gt;
+&lt;span id="cb1-55"&gt;&lt;a aria-hidden="true" href="#cb1-55" tabindex="-1"&gt;&lt;/a&gt;        table &lt;span class="op"&gt;=&lt;/span&gt; table[satisfying]&lt;/span&gt;
+&lt;span id="cb1-56"&gt;&lt;a aria-hidden="true" href="#cb1-56" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="cf"&gt;return&lt;/span&gt; sub_clauses, table&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;This takes some table of assignments of the set of variables and
@@ -1804,13 +1807,17 @@ than that by breaking the variables up as follows:&lt;/p&gt;
 &lt;span id="cb2-36"&gt;&lt;a aria-hidden="true" href="#cb2-36" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="co"&gt;# on each other we should probably use it here. e.g. it probably&lt;/span&gt;&lt;/span&gt;
 &lt;span id="cb2-37"&gt;&lt;a aria-hidden="true" href="#cb2-37" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="co"&gt;# makes sense to group variables in the same clause together.&lt;/span&gt;&lt;/span&gt;
 &lt;span id="cb2-38"&gt;&lt;a aria-hidden="true" href="#cb2-38" tabindex="-1"&gt;&lt;/a&gt;        split &lt;span class="op"&gt;=&lt;/span&gt; &lt;span class="bu"&gt;len&lt;/span&gt;(variables) &lt;span class="op"&gt;//&lt;/span&gt; &lt;span class="dv"&gt;2&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb2-39"&gt;&lt;a aria-hidden="true" href="#cb2-39" tabindex="-1"&gt;&lt;/a&gt;        sub_clauses_left, table_left &lt;span class="op"&gt;=&lt;/span&gt; assignment_table_and_clauses(clauses, variables[:split])&lt;/span&gt;
-&lt;span id="cb2-40"&gt;&lt;a aria-hidden="true" href="#cb2-40" tabindex="-1"&gt;&lt;/a&gt;        sub_clauses_right, table_right &lt;span class="op"&gt;=&lt;/span&gt; assignment_table_and_clauses(clauses, variables[split:])&lt;/span&gt;
-&lt;span id="cb2-41"&gt;&lt;a aria-hidden="true" href="#cb2-41" tabindex="-1"&gt;&lt;/a&gt;        sub_clauses &lt;span class="op"&gt;=&lt;/span&gt; cub_clauses_left &lt;span class="op"&gt;+&lt;/span&gt; sub_clauses_right&lt;/span&gt;
-&lt;span id="cb2-42"&gt;&lt;a aria-hidden="true" href="#cb2-42" tabindex="-1"&gt;&lt;/a&gt;        table &lt;span class="op"&gt;=&lt;/span&gt; concatenate_matrix_rows(table_left, table_right)&lt;/span&gt;
-&lt;span id="cb2-43"&gt;&lt;a aria-hidden="true" href="#cb2-43" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb2-44"&gt;&lt;a aria-hidden="true" href="#cb2-44" tabindex="-1"&gt;&lt;/a&gt;    new_clauses, table &lt;span class="op"&gt;=&lt;/span&gt; refine_assignment_table(clauses, variables, table)&lt;/span&gt;
-&lt;span id="cb2-45"&gt;&lt;a aria-hidden="true" href="#cb2-45" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="cf"&gt;return&lt;/span&gt; sub_clauses &lt;span class="op"&gt;+&lt;/span&gt; new_clauses, table&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span id="cb2-39"&gt;&lt;a aria-hidden="true" href="#cb2-39" tabindex="-1"&gt;&lt;/a&gt;        sub_clauses_left, table_left &lt;span class="op"&gt;=&lt;/span&gt; assignment_table_and_clauses(&lt;/span&gt;
+&lt;span id="cb2-40"&gt;&lt;a aria-hidden="true" href="#cb2-40" tabindex="-1"&gt;&lt;/a&gt;            clauses, variables[:split]&lt;/span&gt;
+&lt;span id="cb2-41"&gt;&lt;a aria-hidden="true" href="#cb2-41" tabindex="-1"&gt;&lt;/a&gt;        )&lt;/span&gt;
+&lt;span id="cb2-42"&gt;&lt;a aria-hidden="true" href="#cb2-42" tabindex="-1"&gt;&lt;/a&gt;        sub_clauses_right, table_right &lt;span class="op"&gt;=&lt;/span&gt; assignment_table_and_clauses(&lt;/span&gt;
+&lt;span id="cb2-43"&gt;&lt;a aria-hidden="true" href="#cb2-43" tabindex="-1"&gt;&lt;/a&gt;            clauses, variables[split:]&lt;/span&gt;
+&lt;span id="cb2-44"&gt;&lt;a aria-hidden="true" href="#cb2-44" tabindex="-1"&gt;&lt;/a&gt;        )&lt;/span&gt;
+&lt;span id="cb2-45"&gt;&lt;a aria-hidden="true" href="#cb2-45" tabindex="-1"&gt;&lt;/a&gt;        sub_clauses &lt;span class="op"&gt;=&lt;/span&gt; cub_clauses_left &lt;span class="op"&gt;+&lt;/span&gt; sub_clauses_right&lt;/span&gt;
+&lt;span id="cb2-46"&gt;&lt;a aria-hidden="true" href="#cb2-46" tabindex="-1"&gt;&lt;/a&gt;        table &lt;span class="op"&gt;=&lt;/span&gt; concatenate_matrix_rows(table_left, table_right)&lt;/span&gt;
+&lt;span id="cb2-47"&gt;&lt;a aria-hidden="true" href="#cb2-47" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
+&lt;span id="cb2-48"&gt;&lt;a aria-hidden="true" href="#cb2-48" tabindex="-1"&gt;&lt;/a&gt;    new_clauses, table &lt;span class="op"&gt;=&lt;/span&gt; refine_assignment_table(clauses, variables, table)&lt;/span&gt;
+&lt;span id="cb2-49"&gt;&lt;a aria-hidden="true" href="#cb2-49" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="cf"&gt;return&lt;/span&gt; sub_clauses &lt;span class="op"&gt;+&lt;/span&gt; new_clauses, table&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;When there are subsets of the variables that also have fairly
