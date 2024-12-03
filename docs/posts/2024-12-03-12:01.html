@@ -79,24 +79,25 @@ figured out how to solve it well in the shower this morning. The
 solution is obvious in retrospect, but I thought I’d share it anyway as
 it’s an interesting algorithm that I’d not seen before.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a aria-hidden="true" href="#cb1-1" tabindex="-1"></a><span class="kw">def</span> filtered_sample(random, values, lower_bound, upper_bound):</span>
-<span id="cb1-2"><a aria-hidden="true" href="#cb1-2" tabindex="-1"></a>    <span class="co">"""Samples a random value `x` from `values` such that lower_bound &lt;=</span></span>
-<span id="cb1-3"><a aria-hidden="true" href="#cb1-3" tabindex="-1"></a><span class="co">    x &lt;= upper_bound, or raises ValueError if there are no such values."""</span></span>
-<span id="cb1-4"><a aria-hidden="true" href="#cb1-4" tabindex="-1"></a>    <span class="co"># Invariant: If 0 &lt;= i &lt; lo then values[i] &lt; lower_bound</span></span>
-<span id="cb1-5"><a aria-hidden="true" href="#cb1-5" tabindex="-1"></a>    lo <span class="op">=</span> <span class="dv">0</span></span>
-<span id="cb1-6"><a aria-hidden="true" href="#cb1-6" tabindex="-1"></a>    <span class="co"># Invariant: If hi &lt;= i &lt; len(values) then values[i] &gt; upper_bound</span></span>
-<span id="cb1-7"><a aria-hidden="true" href="#cb1-7" tabindex="-1"></a>    hi <span class="op">=</span> <span class="bu">len</span>(values)</span>
-<span id="cb1-8"><a aria-hidden="true" href="#cb1-8" tabindex="-1"></a>    <span class="cf">while</span> lo <span class="op">&lt;</span> hi:</span>
-<span id="cb1-9"><a aria-hidden="true" href="#cb1-9" tabindex="-1"></a>        i <span class="op">=</span> random.randrange(lo, hi)</span>
-<span id="cb1-10"><a aria-hidden="true" href="#cb1-10" tabindex="-1"></a>        x <span class="op">=</span> values[i]</span>
-<span id="cb1-11"><a aria-hidden="true" href="#cb1-11" tabindex="-1"></a>        <span class="cf">if</span> x <span class="op">&lt;</span> lower_bound:</span>
-<span id="cb1-12"><a aria-hidden="true" href="#cb1-12" tabindex="-1"></a>            lo <span class="op">=</span> i <span class="op">+</span> <span class="dv">1</span></span>
-<span id="cb1-13"><a aria-hidden="true" href="#cb1-13" tabindex="-1"></a>        <span class="cf">elif</span> x <span class="op">&gt;</span> upper_bound:</span>
-<span id="cb1-14"><a aria-hidden="true" href="#cb1-14" tabindex="-1"></a>            hi <span class="op">=</span> i</span>
-<span id="cb1-15"><a aria-hidden="true" href="#cb1-15" tabindex="-1"></a>        <span class="cf">else</span>:</span>
-<span id="cb1-16"><a aria-hidden="true" href="#cb1-16" tabindex="-1"></a>            <span class="cf">return</span> x</span>
-<span id="cb1-17"><a aria-hidden="true" href="#cb1-17" tabindex="-1"></a>    <span class="cf">raise</span> <span class="pp">ValueError</span>(</span>
-<span id="cb1-18"><a aria-hidden="true" href="#cb1-18" tabindex="-1"></a>        <span class="ss">f"`values` does not contain any elements between </span><span class="sc">{</span>lower_bound<span class="sc">}</span><span class="ss"> and </span><span class="sc">{</span>upper_bound<span class="sc">}</span><span class="ss">"</span></span>
-<span id="cb1-19"><a aria-hidden="true" href="#cb1-19" tabindex="-1"></a>    )</span></code></pre></div>
+<span id="cb1-2"><a aria-hidden="true" href="#cb1-2" tabindex="-1"></a>    <span class="co">"""Samples a random value `x` from `values`, which must be a sorted list,</span></span>
+<span id="cb1-3"><a aria-hidden="true" href="#cb1-3" tabindex="-1"></a><span class="co">    such that lower_bound &lt;= x &lt;= upper_bound, or raises ValueError if there are no such values.</span></span>
+<span id="cb1-4"><a aria-hidden="true" href="#cb1-4" tabindex="-1"></a><span class="co">    """</span></span>
+<span id="cb1-5"><a aria-hidden="true" href="#cb1-5" tabindex="-1"></a>    <span class="co"># Invariant: If 0 &lt;= i &lt; lo then values[i] &lt; lower_bound</span></span>
+<span id="cb1-6"><a aria-hidden="true" href="#cb1-6" tabindex="-1"></a>    lo <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb1-7"><a aria-hidden="true" href="#cb1-7" tabindex="-1"></a>    <span class="co"># Invariant: If hi &lt;= i &lt; len(values) then values[i] &gt; upper_bound</span></span>
+<span id="cb1-8"><a aria-hidden="true" href="#cb1-8" tabindex="-1"></a>    hi <span class="op">=</span> <span class="bu">len</span>(values)</span>
+<span id="cb1-9"><a aria-hidden="true" href="#cb1-9" tabindex="-1"></a>    <span class="cf">while</span> lo <span class="op">&lt;</span> hi:</span>
+<span id="cb1-10"><a aria-hidden="true" href="#cb1-10" tabindex="-1"></a>        i <span class="op">=</span> random.randrange(lo, hi)</span>
+<span id="cb1-11"><a aria-hidden="true" href="#cb1-11" tabindex="-1"></a>        x <span class="op">=</span> values[i]</span>
+<span id="cb1-12"><a aria-hidden="true" href="#cb1-12" tabindex="-1"></a>        <span class="cf">if</span> x <span class="op">&lt;</span> lower_bound:</span>
+<span id="cb1-13"><a aria-hidden="true" href="#cb1-13" tabindex="-1"></a>            lo <span class="op">=</span> i <span class="op">+</span> <span class="dv">1</span></span>
+<span id="cb1-14"><a aria-hidden="true" href="#cb1-14" tabindex="-1"></a>        <span class="cf">elif</span> x <span class="op">&gt;</span> upper_bound:</span>
+<span id="cb1-15"><a aria-hidden="true" href="#cb1-15" tabindex="-1"></a>            hi <span class="op">=</span> i</span>
+<span id="cb1-16"><a aria-hidden="true" href="#cb1-16" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb1-17"><a aria-hidden="true" href="#cb1-17" tabindex="-1"></a>            <span class="cf">return</span> x</span>
+<span id="cb1-18"><a aria-hidden="true" href="#cb1-18" tabindex="-1"></a>    <span class="cf">raise</span> <span class="pp">ValueError</span>(</span>
+<span id="cb1-19"><a aria-hidden="true" href="#cb1-19" tabindex="-1"></a>        <span class="ss">f"`values` does not contain any elements between </span><span class="sc">{</span>lower_bound<span class="sc">}</span><span class="ss"> and </span><span class="sc">{</span>upper_bound<span class="sc">}</span><span class="ss">"</span></span>
+<span id="cb1-20"><a aria-hidden="true" href="#cb1-20" tabindex="-1"></a>    )</span></code></pre></div>
 <p>This is a nice example algorithm that varies smoothly between two
 slightly more obvious algorithms:</p>
 <ol type="1">
