@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2024-10-15T11:20:08+01:00</updated>
+  <updated>2024-12-03T12:01:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,89 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2024-02-04-13:26.html</id>
-    <title>Invitations and exclusions</title>
-    <updated>2024-02-04T13:48:26+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Invitations and exclusions&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2024-02-04&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;There’s a thing that I do in the design of my discord server that to
-me seems just absolutely blindingly obviously the correct way to do it,
-and is also directly the opposite of how everyone else does it, in a way
-that very obviously causes problems.&lt;/p&gt;
-
-
-&lt;p&gt;It’s this: A channel is an &lt;em&gt;invitation to start a conversation
-about a subject&lt;/em&gt;, not a place where &lt;em&gt;only that subject is
-appropriate&lt;/em&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;For example, we’ve got the #games channel. This is a place where you
-are invited to talk about games. Sometimes it’s also a place where we
-talk about philosophy, or programming, or parenting… but it’s mostly
-about games. Looking at the #games channel I don’t really see much that
-isn’t about games recently, and that’s fine too.&lt;/p&gt;
-
-
-&lt;p&gt;There is one very big consequence of this approach: We almost never
-have to have talk about something being off-topic and request moving it
-to a different channel.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;There are a few cases where we do that, but it’s always
-because of more specific rules than a general “stay on topic” category.
-During the height of the pandemic, we tried to uh quarantine pandemic
-chat to #pandemic, and the owner of a &lt;a href="https://tasshin.com/blog/feeds-an-anthropological-report-on-a-powerful-online-social-technology/"&gt;feed&lt;/a&gt;
-can always ask for conversations to be moved elsewhere.&lt;/span&gt; This removes a constant source of
-background anxiety about staying on topic, and also it allows for many
-conversations to occur that otherwise would be stifled.&lt;/p&gt;
-
-
-&lt;p&gt;The reason #games is a place to talk about anything isn’t because
-people come to #games to talk about anything. It would be weird to just
-randomly post a picture of your lunch in #games, because that’s not how
-you start a conversation about #games. We don’t police that, it’s just
-not a thing that people do because why would they? But if, for example,
-you were talking about games you play with your kid, and it branched
-into a more general conversation about parenting, that would be
-absolutely fine, and the conversation could continue to be about
-parenting for as long as you wanted it to, without any sense that you
-were doing something wrong.&lt;/p&gt;
-
-
-&lt;p&gt;Another consequence of this approach is it changes when channels are
-created. In the traditional approach, you create channels when volume on
-a particular topic gets too high, and you want a place for it to go,&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;We do occasionally do this of course. We created
-#dubious-ontologies when sandwich discourse took over #chatter for the
-third day running, and we branched off #slay-the-spire from #games
-because Slay the Spire conversation was dominating too much and people
-wanted a space where they could talk about games despite not being
-interested in Slay the Spire.&lt;/span&gt; while on my discord I create
-channels when there’s a particular topic I want to encourage more
-conversation about (or when someone else suggests similar) and creating
-a channel for it invites that conversation.&lt;/p&gt;
-
-
-&lt;p&gt;On top of that… This system obviously works better on a bunch of
-specific practical factors, but to me the most important part of it is
-that it removes a general background level of… cop behaviour from the
-discord. In places where there’s a big focus on staying on topic, it
-feels like everyone is constantly policing other people using a channel
-wrong, and everyone is constantly worried that they might be using a
-channel wrong, and this creates a pervasive background of low-grade
-suspicion and anxiety that I don’t think is good for anyone, and in
-general I really recommend designing systems that don’t make everyone
-lightly miserable.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2024-02-04-13:26.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-02-04-14:50.html</id>
     <title>Help is easy to find these days</title>
@@ -1843,5 +1760,83 @@ boundary to have pushed up a bit.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2024-10-15-09:00.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2024-12-03-12:01.html</id>
+    <title>Filtered sampling from sorted values with incremental binary search</title>
+    <updated>2024-12-03T12:01:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Filtered sampling from sorted values with incremental binary search&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2024-12-03&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I had a problem recently that I solved badly. As is traditional, I
+figured out how to solve it well in the shower this morning. The
+solution is obvious in retrospect, but I thought I’d share it anyway as
+it’s an interesting algorithm that I’d not seen before.&lt;/p&gt;
+
+
+&lt;div class="sourceCode" id="cb1"&gt;&lt;pre class="sourceCode python"&gt;&lt;code class="sourceCode python"&gt;&lt;span id="cb1-1"&gt;&lt;a aria-hidden="true" href="#cb1-1" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="kw"&gt;def&lt;/span&gt; filtered_sample(random, values, lower_bound, upper_bound):&lt;/span&gt;
+&lt;span id="cb1-2"&gt;&lt;a aria-hidden="true" href="#cb1-2" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="co"&gt;"""Samples a random value `x` from `values` such that lower_bound &amp;lt;=&lt;/span&gt;&lt;/span&gt;
+&lt;span id="cb1-3"&gt;&lt;a aria-hidden="true" href="#cb1-3" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="co"&gt;    x &amp;lt;= upper_bound, or raises ValueError if there are no such values."""&lt;/span&gt;&lt;/span&gt;
+&lt;span id="cb1-4"&gt;&lt;a aria-hidden="true" href="#cb1-4" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="co"&gt;# Invariant: If 0 &amp;lt;= i &amp;lt; lo then values[i] &amp;lt; lower_bound&lt;/span&gt;&lt;/span&gt;
+&lt;span id="cb1-5"&gt;&lt;a aria-hidden="true" href="#cb1-5" tabindex="-1"&gt;&lt;/a&gt;    lo &lt;span class="op"&gt;=&lt;/span&gt; &lt;span class="dv"&gt;0&lt;/span&gt;&lt;/span&gt;
+&lt;span id="cb1-6"&gt;&lt;a aria-hidden="true" href="#cb1-6" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="co"&gt;# Invariant: If hi &amp;lt;= i &amp;lt; len(values) then values[i] &amp;gt; upper_bound&lt;/span&gt;&lt;/span&gt;
+&lt;span id="cb1-7"&gt;&lt;a aria-hidden="true" href="#cb1-7" tabindex="-1"&gt;&lt;/a&gt;    hi &lt;span class="op"&gt;=&lt;/span&gt; &lt;span class="bu"&gt;len&lt;/span&gt;(values)&lt;/span&gt;
+&lt;span id="cb1-8"&gt;&lt;a aria-hidden="true" href="#cb1-8" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="cf"&gt;while&lt;/span&gt; lo &lt;span class="op"&gt;&amp;lt;&lt;/span&gt; hi:&lt;/span&gt;
+&lt;span id="cb1-9"&gt;&lt;a aria-hidden="true" href="#cb1-9" tabindex="-1"&gt;&lt;/a&gt;        i &lt;span class="op"&gt;=&lt;/span&gt; random.randrange(lo, hi)&lt;/span&gt;
+&lt;span id="cb1-10"&gt;&lt;a aria-hidden="true" href="#cb1-10" tabindex="-1"&gt;&lt;/a&gt;        x &lt;span class="op"&gt;=&lt;/span&gt; values[i]&lt;/span&gt;
+&lt;span id="cb1-11"&gt;&lt;a aria-hidden="true" href="#cb1-11" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="cf"&gt;if&lt;/span&gt; x &lt;span class="op"&gt;&amp;lt;&lt;/span&gt; lower_bound:&lt;/span&gt;
+&lt;span id="cb1-12"&gt;&lt;a aria-hidden="true" href="#cb1-12" tabindex="-1"&gt;&lt;/a&gt;            lo &lt;span class="op"&gt;=&lt;/span&gt; i &lt;span class="op"&gt;+&lt;/span&gt; &lt;span class="dv"&gt;1&lt;/span&gt;&lt;/span&gt;
+&lt;span id="cb1-13"&gt;&lt;a aria-hidden="true" href="#cb1-13" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="cf"&gt;elif&lt;/span&gt; x &lt;span class="op"&gt;&amp;gt;&lt;/span&gt; upper_bound:&lt;/span&gt;
+&lt;span id="cb1-14"&gt;&lt;a aria-hidden="true" href="#cb1-14" tabindex="-1"&gt;&lt;/a&gt;            hi &lt;span class="op"&gt;=&lt;/span&gt; i&lt;/span&gt;
+&lt;span id="cb1-15"&gt;&lt;a aria-hidden="true" href="#cb1-15" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="cf"&gt;else&lt;/span&gt;:&lt;/span&gt;
+&lt;span id="cb1-16"&gt;&lt;a aria-hidden="true" href="#cb1-16" tabindex="-1"&gt;&lt;/a&gt;            &lt;span class="cf"&gt;return&lt;/span&gt; x&lt;/span&gt;
+&lt;span id="cb1-17"&gt;&lt;a aria-hidden="true" href="#cb1-17" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="cf"&gt;raise&lt;/span&gt; &lt;span class="pp"&gt;ValueError&lt;/span&gt;(&lt;/span&gt;
+&lt;span id="cb1-18"&gt;&lt;a aria-hidden="true" href="#cb1-18" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="ss"&gt;f"`values` does not contain any elements between &lt;/span&gt;&lt;span class="sc"&gt;{&lt;/span&gt;lower_bound&lt;span class="sc"&gt;}&lt;/span&gt;&lt;span class="ss"&gt; and &lt;/span&gt;&lt;span class="sc"&gt;{&lt;/span&gt;upper_bound&lt;span class="sc"&gt;}&lt;/span&gt;&lt;span class="ss"&gt;"&lt;/span&gt;&lt;/span&gt;
+&lt;span id="cb1-19"&gt;&lt;a aria-hidden="true" href="#cb1-19" tabindex="-1"&gt;&lt;/a&gt;    )&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;This is a nice example algorithm that varies smoothly between two
+slightly more obvious algorithms:&lt;/p&gt;
+
+
+&lt;ol type="1"&gt;
+&lt;li&gt;Rejection sampling (just sample until you get a value in the right
+range)&lt;/li&gt;
+&lt;li&gt;Always do a binary search to find the bounds, and then random sample
+within that range.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;Rejection sampling is the best when almost all of the values are in
+range. Binary search is best when few or none are (in particular the
+first cannot easily detect it. There are ways to mitigate that
+though)&lt;/p&gt;
+
+
+&lt;p&gt;My initial implementation did one round of rejection sampling and
+then the binary search, which is a sort of awkward compromise. The way
+the new algorithm works is essentially doing only as much of the binary
+search as you need. If a sample gives you a suitable value now, you can
+stop and return that. If it doesn’t, you’ve effectively chosen a
+midpoint in your binary search and can update the bounds for the next
+round of the sample.&lt;/p&gt;
+
+
+&lt;p&gt;The first algorithm basically only works as well as whichever is
+better of the first two, while the new algorithm smoothly varies between
+the two extremes. I believe (but haven’t checked the details) that it
+runs in &lt;code&gt;O(log(n / (k + 1))&lt;/code&gt; where &lt;code&gt;k&lt;/code&gt; is the
+number of elements in the array satisfying the condition.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2024-12-03-12:01.html" rel="alternate"/>
   </entry>
 </feed>

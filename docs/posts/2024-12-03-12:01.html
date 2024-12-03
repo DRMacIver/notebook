@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+DRMacIver's Notebook: Filtered sampling from sorted values with incremental binary search
+    </title>
+
+    <meta property="og:title" content="Filtered sampling from sorted values with incremental binary search">
+
+    <meta property="og:url" content="https://notebook.drmaciver.com/posts/2024-12-03-12:01.html" />
+    <link rel="canonical" href="https://notebook.drmaciver.com/posts/2024-12-03-12:01.html" />
+    <script src="https://hypothes.is/embed.js" async></script>
+
+
+    <meta name="twitter:card" content="summary" />
+
+    <meta property="og:creator" content="@DRMacIver">
+
+    <link rel="stylesheet" href="/pandoc.css"/>
+    <link rel="stylesheet" href="/pygments.css"/>
+    <link rel="stylesheet" href="/tufte.css"/>
+    <link rel="stylesheet" href="/latex.css"/>
+    <link rel="stylesheet" href="/drmnotes.css"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
+});
+
+MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
+  console.log(message)
+});
+
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169185204-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169185204-1');
+</script>
+
+  </head>
+
+  <body>
+    <article>
+        <h1><a href="/">DRMacIver's Notebook</a></h1>
+        <p class=subtitle>Filtered sampling from sorted values with incremental binary search</p>
+
+        
+
+<section id="the-post">
+<p class=subtitle>Filtered sampling from sorted values with incremental binary search</p>
+<dl class=metadata>
+<dt>Published</dt>
+<dd class="post-date">2024-12-03</dd>
+</dl>
+
+<p>I had a problem recently that I solved badly. As is traditional, I
+figured out how to solve it well in the shower this morning. The
+solution is obvious in retrospect, but I thought I’d share it anyway as
+it’s an interesting algorithm that I’d not seen before.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a aria-hidden="true" href="#cb1-1" tabindex="-1"></a><span class="kw">def</span> filtered_sample(random, values, lower_bound, upper_bound):</span>
+<span id="cb1-2"><a aria-hidden="true" href="#cb1-2" tabindex="-1"></a>    <span class="co">"""Samples a random value `x` from `values` such that lower_bound &lt;=</span></span>
+<span id="cb1-3"><a aria-hidden="true" href="#cb1-3" tabindex="-1"></a><span class="co">    x &lt;= upper_bound, or raises ValueError if there are no such values."""</span></span>
+<span id="cb1-4"><a aria-hidden="true" href="#cb1-4" tabindex="-1"></a>    <span class="co"># Invariant: If 0 &lt;= i &lt; lo then values[i] &lt; lower_bound</span></span>
+<span id="cb1-5"><a aria-hidden="true" href="#cb1-5" tabindex="-1"></a>    lo <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb1-6"><a aria-hidden="true" href="#cb1-6" tabindex="-1"></a>    <span class="co"># Invariant: If hi &lt;= i &lt; len(values) then values[i] &gt; upper_bound</span></span>
+<span id="cb1-7"><a aria-hidden="true" href="#cb1-7" tabindex="-1"></a>    hi <span class="op">=</span> <span class="bu">len</span>(values)</span>
+<span id="cb1-8"><a aria-hidden="true" href="#cb1-8" tabindex="-1"></a>    <span class="cf">while</span> lo <span class="op">&lt;</span> hi:</span>
+<span id="cb1-9"><a aria-hidden="true" href="#cb1-9" tabindex="-1"></a>        i <span class="op">=</span> random.randrange(lo, hi)</span>
+<span id="cb1-10"><a aria-hidden="true" href="#cb1-10" tabindex="-1"></a>        x <span class="op">=</span> values[i]</span>
+<span id="cb1-11"><a aria-hidden="true" href="#cb1-11" tabindex="-1"></a>        <span class="cf">if</span> x <span class="op">&lt;</span> lower_bound:</span>
+<span id="cb1-12"><a aria-hidden="true" href="#cb1-12" tabindex="-1"></a>            lo <span class="op">=</span> i <span class="op">+</span> <span class="dv">1</span></span>
+<span id="cb1-13"><a aria-hidden="true" href="#cb1-13" tabindex="-1"></a>        <span class="cf">elif</span> x <span class="op">&gt;</span> upper_bound:</span>
+<span id="cb1-14"><a aria-hidden="true" href="#cb1-14" tabindex="-1"></a>            hi <span class="op">=</span> i</span>
+<span id="cb1-15"><a aria-hidden="true" href="#cb1-15" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb1-16"><a aria-hidden="true" href="#cb1-16" tabindex="-1"></a>            <span class="cf">return</span> x</span>
+<span id="cb1-17"><a aria-hidden="true" href="#cb1-17" tabindex="-1"></a>    <span class="cf">raise</span> <span class="pp">ValueError</span>(</span>
+<span id="cb1-18"><a aria-hidden="true" href="#cb1-18" tabindex="-1"></a>        <span class="ss">f"`values` does not contain any elements between </span><span class="sc">{</span>lower_bound<span class="sc">}</span><span class="ss"> and </span><span class="sc">{</span>upper_bound<span class="sc">}</span><span class="ss">"</span></span>
+<span id="cb1-19"><a aria-hidden="true" href="#cb1-19" tabindex="-1"></a>    )</span></code></pre></div>
+<p>This is a nice example algorithm that varies smoothly between two
+slightly more obvious algorithms:</p>
+<ol type="1">
+<li>Rejection sampling (just sample until you get a value in the right
+range)</li>
+<li>Always do a binary search to find the bounds, and then random sample
+within that range.</li>
+</ol>
+<p>Rejection sampling is the best when almost all of the values are in
+range. Binary search is best when few or none are (in particular the
+first cannot easily detect it. There are ways to mitigate that
+though)</p>
+<p>My initial implementation did one round of rejection sampling and
+then the binary search, which is a sort of awkward compromise. The way
+the new algorithm works is essentially doing only as much of the binary
+search as you need. If a sample gives you a suitable value now, you can
+stop and return that. If it doesn’t, you’ve effectively chosen a
+midpoint in your binary search and can update the bounds for the next
+round of the sample.</p>
+<p>The first algorithm basically only works as well as whichever is
+better of the first two, while the new algorithm smoothly varies between
+the two extremes. I believe (but haven’t checked the details) that it
+runs in <code>O(log(n / (k + 1))</code> where <code>k</code> is the
+number of elements in the array satisfying the condition.</p>
+
+</section>
+
+    </article>
+<footer>
+Copyright David R. MacIver.
+
+CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
+</footer>
+  </body>
+</html>
