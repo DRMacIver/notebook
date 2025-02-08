@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-02-08T09:26:00+00:00</updated>
+  <updated>2025-02-08T14:34:42+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1766,7 +1766,7 @@ number of elements in the array satisfying the condition.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-02-08-09:26.html</id>
     <title>How do LLMs work?</title>
-    <updated>2025-02-08T09:26:00+00:00</updated>
+    <updated>2025-02-08T14:34:42+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;How do LLMs work?&lt;/p&gt;
@@ -2241,7 +2241,7 @@ is a bug not a feature.&lt;/span&gt;&lt;/p&gt;
 
 
 &lt;p&gt;Once you have a base model, you create a chat model in the
-post-training phase. This involves creatin ga loss function that
+post-training phase. This involves creating a loss function that
 represents “how good it is at being a chatbot”. You do this by giving it
 a large number of starting texts to a completion engine using the model
 (some of which might be as simple as “Human:”, letting it generate the
