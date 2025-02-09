@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-02-08T14:34:42+00:00</updated>
+  <updated>2025-02-08T20:03:18+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1766,7 +1766,7 @@ number of elements in the array satisfying the condition.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-02-08-09:26.html</id>
     <title>How do LLMs work?</title>
-    <updated>2025-02-08T14:34:42+00:00</updated>
+    <updated>2025-02-08T20:03:18+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;How do LLMs work?&lt;/p&gt;
@@ -1840,7 +1840,7 @@ with probability 90% and “is a bit of a good idea” with probability
 chat bot you get depends entirely on the quality of the underlying
 language model. All of the big innovations of the last couple of years
 have been in learning to build much better language models than we’ve
-historically got, and part of the key to that is in the word “large” in
+historically had, and part of the key to that is in the word “large” in
 “large language model”. The language models we’re building are just much
 large than ones we used to build - ones at the smallest end are still a
 couple of gigabytes. This is partly because we’ve got hardware that can
@@ -2072,8 +2072,11 @@ different examples of such a model.&lt;/p&gt;
 
 
 &lt;blockquote&gt;
-&lt;p&gt;dt ,gsadeaohti yee Pauml th ooid hso ,;lt .rec arsn . ae ,khe
-tIr’Tpym rHil aim em n wt m,ssou&lt;/p&gt;
+&lt;p&gt;dt ,gsadeaohti yee Pauml th ooid hso&lt;/p&gt;
+&lt;p&gt;,;lt .rec arsn . ae&lt;/p&gt;
+&lt;p&gt;,khe tIr’Tpym rHil aim em&lt;/p&gt;
+&lt;p&gt;n wt&lt;/p&gt;
+&lt;p&gt;m,ssou&lt;/p&gt;
 &lt;/blockquote&gt;
 
 
