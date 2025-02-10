@@ -333,7 +333,7 @@ OLSire hthe w theind ha CHestisthoo</p>
 </blockquote>
 <p>Again, it’s not exactly Shakespeare, but it’s <em>less</em> not
 exactly Shakespeare than either of the previous examples. Adding more
-ability to look at the text the it’s given gives you the ability to
+ability to look at the text that it’s given gives you the ability to
 produce something that looks more and more like coherent text. You can
 extend this idea further, letting it look at more characters at a time,
 and eventually you get something that starts to look almost like
@@ -399,15 +399,19 @@ mistakes it makes.</span> The process we use is what’s called
 <em>gradient descent</em>. This is a very conceptually straightforward
 process<label class="margin-toggle sidenote-number" for="fn17"></label><input class="margin-toggle" id="fn17" type="checkbox"/><span class="sidenote">with a huge amount of technical detail to make work
 well enough</span>, which basically consists of taking
-your current weights, adjusting them very slightly, and then if that
-improves (i.e. lowers) your loss function, you replace your weights with
-those modified ones, and keep going, You do this for as long as you
-want, stopping when you can’t find any way to improve the loss function
-or, more likely, you’ve exceeded your budget for computer time. When
-training a model, you start from some previous model that you got from
-your last training run, or if you don’t have one you just set all of its
-weights to arbitrary values (typically random), and then you use
-gradient descent to improve it.</p>
+your current weights, and finding a very small adjustment to them that
+descreases the loss function slightly.<label class="margin-toggle sidenote-number" for="fn18"></label><input class="margin-toggle" id="fn18" type="checkbox"/><span class="sidenote">How to actually find that is a little bit technical.
+You can imagine trying lots of small variations and seeing if any of
+them work, but usually it’s possible to do better than that. Getting
+this step fast is one of the big things that we’ve needed to develop a
+lot of robust technology in order to make progress in this field.</span>
+You replace your weights with those modified ones, and keep going, You
+do this for as long as you want, stopping when you can’t find any way to
+improve the loss function or, more likely, you’ve exceeded your budget
+for computer time. When training a model, you start from some previous
+model that you got from your last training run, or if you don’t have one
+you just set all of its weights to arbitrary values (typically random),
+and then you use gradient descent to improve it.</p>
 <p>A large language model is trained in two stages. Funnily, these are
 called “pre-training” and “post-training”, with no training stage. These
 correspond to different loss functions.</p>
@@ -418,7 +422,7 @@ of the internet). Here, the loss function feeds it many short chunks of
 text, and measures how often it correctly predicts the following text.
 In this way, the base model ends up “learning” a lot of the knowledge
 encoded in its text, because it is able to represent it well enough to
-predict what comes next.<label class="margin-toggle sidenote-number" for="fn18"></label><input class="margin-toggle" id="fn18" type="checkbox"/><span class="sidenote">It could of course do this by memorisation, and
+predict what comes next.<label class="margin-toggle sidenote-number" for="fn19"></label><input class="margin-toggle" id="fn19" type="checkbox"/><span class="sidenote">It could of course do this by memorisation, and
 sometimes it will do this, but generally you don’t <em>want</em> it to
 do that. You want it to encode the knowledge in a way that generalises
 to unfamiliar text, representing it as efficiently as possible. One of
@@ -457,7 +461,7 @@ in that process would take literally forever.</p>
 and gives it a score, which we expect to correspond to a score that a
 human would give it This gives us a program that we can use as a good
 proxy for human feedback: We expect it to score texts roughly as a human
-would.<label class="margin-toggle sidenote-number" for="fn19"></label><input class="margin-toggle" id="fn19" type="checkbox"/><span class="sidenote">You may of course be noticing that there’s a key
+would.<label class="margin-toggle sidenote-number" for="fn20"></label><input class="margin-toggle" id="fn20" type="checkbox"/><span class="sidenote">You may of course be noticing that there’s a key
 problem with this: A preference model can only learn the texts as well
 as its structure allows it to. If humans are scoring things well or
 badly based on whether they’re correct in some way an LLM can’t actually
