@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-03-05T10:29:24+00:00</updated>
+  <updated>2025-03-05T11:53:31+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -2320,7 +2320,7 @@ me to write about this subject!&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-03-05-10:29.html</id>
     <title>World counting as a tool for understanding probability</title>
-    <updated>2025-03-05T10:29:00+00:00</updated>
+    <updated>2025-03-05T11:53:31+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;World counting as a tool for understanding probability&lt;/p&gt;
@@ -2435,7 +2435,11 @@ ruled out.&lt;/li&gt;
 &lt;/ol&gt;
 
 
-&lt;p&gt;So, with our two coins example,&lt;/p&gt;
+&lt;p&gt;So, with our two coins example, we start with a world weighted at
+(say) 4, we first split it into (H, 2), (T, 2), and then again into (HH,
+1), (HT, 1), (T, 2). This gets us the intuitive result that the T world
+is twice as big as each of the HH and HT worlds (but has the same weight
+as them combined).&lt;/p&gt;
 
 
 &lt;p&gt;Here’s the problem where I first realised quite how useful this
