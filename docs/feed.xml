@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-03-05T11:53:31+00:00</updated>
+  <updated>2025-03-05T12:10:19+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -2320,7 +2320,7 @@ me to write about this subject!&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-03-05-10:29.html</id>
     <title>World counting as a tool for understanding probability</title>
-    <updated>2025-03-05T11:53:31+00:00</updated>
+    <updated>2025-03-05T12:10:19+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;World counting as a tool for understanding probability&lt;/p&gt;
@@ -2390,8 +2390,11 @@ wrong.&lt;/p&gt;
 &lt;p&gt;One way to fix this is to imagine that we flip the second coin
 regardless but that flip is only “visible” if we got heads on the first
 flip. This gives us the worlds HH, HT, TH, TT, where to the observer TH
-and TT look identical, and we recover the right probability (&lt;span class="math inline"&gt;\(\frac{1}{2}\)&lt;/span&gt;). This feels a little
-convoluted though.&lt;/p&gt;
+and TT look identical, and we recover the right probability (&lt;span class="math inline"&gt;\(\frac{1}{2}\)&lt;/span&gt;). For the purpose of getting
+the right answer, this is a perfectly valid approach and can sometimes
+be very useful, but it doesn’t help that well for understanding what’s
+going on and why it wasn’t valid to treat the HH, HT, and T worlds as
+equally likely.&lt;/p&gt;
 
 
 &lt;p&gt;The real problem here is that the world counting method I described
