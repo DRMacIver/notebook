@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-02-18T10:11:00+00:00</updated>
+  <updated>2025-03-05T10:29:24+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,181 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2024-02-06-10:51.html</id>
-    <title>Taking responsibility for failure</title>
-    <updated>2024-02-06T11:42:06+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Taking responsibility for failure&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2024-02-06&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Up front warning: I am about to be super judgy. Also, I’m angry, and
-correct,&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;There is an argument for cultural relativism here, and I
-in some sense buy this is a valid argument to be made, but I consider it
-an important cultural touchstone for me that while you are entitled to
-your own culture’s beliefs and practices, my cultural practice in
-response to them is allowed to be that you can fuck right off.&lt;/span&gt; and will brook little argument on
-this subject.&lt;/p&gt;
-
-
-&lt;p&gt;There’s an ethical norm I consider blindlingly obvious, like a basic
-prerequisite of taking part in a functioning society, that is clearly
-not widely shared given how many people fail to meet it. I do not think
-this is a failure of the norm.&lt;/p&gt;
-
-
-&lt;p&gt;The norm is this: If I rely on you for X, and it is reasonable for me
-to do so (e.g. you have promised that X, X is a normal part of your job,
-X is something you obviously have an obligation to do like not running
-into me), then when you don’t do X, or do X in a way that is clearly
-inadequate or harmful, you take responsibility for this fact.&lt;/p&gt;
-
-
-&lt;p&gt;If you do not adhere to this norm I will judge you very harshly, and
-will probably seek to minimise any interaction with you where the
-consequences of your actions are in any way relevant to me. Also I will
-think you are a terrible person, and I will be right.&lt;/p&gt;
-
-
-&lt;p&gt;Importantly: This doesn’t mean that you can’t fail to do X. It
-doesn’t even mean you can’t &lt;em&gt;repeatedly&lt;/em&gt; fail to do X. It doesn’t
-even mean you have to do a terrible act of self flagellation every time
-you fail to do X.&lt;/p&gt;
-
-
-&lt;p&gt;Most of the time, I’m not expecting much more than a “sorry”.&lt;/p&gt;
-
-
-&lt;p&gt;The specific prompt for writing this post is that I was trying to
-book an appointment with someone recently. The email exchange went
-something like this:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Me: I’d like to book an appointment.&lt;/p&gt;
-&lt;p&gt;Them: OK I can do next Wednesday at noon or the Monday after at
-9:45.&lt;/p&gt;
-&lt;p&gt;Me (immediately replying, like within minutes): I can’t do Wednesday
-but the Monday slot is perfect, thanks, let’s do that.&lt;/p&gt;
-&lt;p&gt;Them (three days later): OK I can do Monday at 8:45&lt;/p&gt;
-&lt;p&gt;Me: Uhhh… that’s not what you said before? I can do 8:45 if needs be
-but I’d rather not.&lt;/p&gt;
-&lt;p&gt;Them: Yes I booked someone else in that slot.&lt;/p&gt;
-&lt;p&gt;Me: It’s not ideal but OK.&lt;/p&gt;
-&lt;p&gt;Them: I did it again but I can still do that day at 8:00&lt;/p&gt;
-&lt;p&gt;Me (a day later after I waited long enough for the rage to subside
-that I could make a clear decision and not spit fire in my email): I
-don’t think I’m interested any more.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;I want to be clear: The problem here is not, primarily, their
-organisational skills. Their organisational skills &lt;em&gt;are&lt;/em&gt; bad, but
-I was booking a long appointment and I think they have two calendaring
-systems they’re manually reconciling for their normal appointments and
-their long appointments. This isn’t great behaviour, but it’s an
-understandable thing to have difficulties with, especially temporary
-ones (though I personally deeply doubt that these are temporary).&lt;/p&gt;
-
-
-&lt;p&gt;The problem is that at &lt;em&gt;no point&lt;/em&gt; in this interaction did they
-in any way indicate that their behaviour was a problem or that they were
-even slightly sorry for that. They barely even acknowledged that they
-were doing it. This entire interaction could so easily have been rescued
-with words to the effect “I’m really sorry, I’m (e.g. having trouble
-with my calendaring system), can you do this time instead?”. I’m not
-looking for perfection, I’m looking for a basic acknowledgement of the
-fact that you understand that your actions have consequences for others
-and that those consequences are your responsibility.&lt;/p&gt;
-
-
-&lt;p&gt;I’ve had plenty of similar interactions where someone has had to move
-their appointment with me, even an initial appointment, due to
-childcare, illness, etc. Sometimes I’ve been that someone to other
-people. It’s just not a big deal, all you need is an acknowledgement of
-the fact that you’re doing it, an explanation that gives enough
-accountability that you know that it’s not just “I don’t really care
-about you enough to be reliable”&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;and to be clear, it’s not the end of the world if you
-just accidentally flaked. I’ve got to be honest, I’ll be a bit pissed
-off even if you apologise, but these things happen and if you seem
-adequately sorry for flaking I’ll probably let it slide a couple of
-times, and it’s not like I’ve never done this to anyone myself.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;In this particular case her response to my final email &lt;em&gt;also&lt;/em&gt;
-failed to acknowledge any wrongdoing (“Thank you for letting me know”),
-which I consider an extremely validating meta failure of this norm: It’s
-not a norm I expect perfect adherence to, but I do think that when
-you’ve failed to adhere to it you owe an apology for that too.&lt;/p&gt;
-
-
-&lt;p&gt;I find this sort of interaction particularly frustrating because the
-thing I am looking for is so low effort, but there’s another version of
-this, when the impact of the failure is quite large.&lt;/p&gt;
-
-
-&lt;p&gt;When I was first setting up my business I had an accountant. I forget
-the exact thing, but at some point they sent me a form to fill out.
-Except… it was already filled out. By someone else. With her personal
-details, including home address, bank account, etc. all in the form. I
-replied pointing this out and telling them that I had deleted the
-information locally but that this was really bad.&lt;/p&gt;
-
-
-&lt;p&gt;I think their reply &lt;em&gt;did&lt;/em&gt; include the word sorry, but it was
-very casual. I was looking for something more along the lines of “Oh
-shit”.&lt;/p&gt;
-
-
-&lt;p&gt;This was a &lt;em&gt;major&lt;/em&gt; failure. It’s the sort of major failure
-where it’s not just the fact that the failure occurred that is
-significant, it’s that the failure could have occurred at all. As an
-accountant, not sharing your clients’ confidential financial information
-is a pretty key part of your job, and making sure that you don’t do that
-is part of the basic structure of running an accountancy firm.&lt;/p&gt;
-
-
-&lt;p&gt;What I was looking for here that would have satisfied me was
-something along the lines of “That was really bad. It shouldn’t have
-happened. We’re going to figure out why it happened and do our best to
-make sure it doesn’t happen again”. What I got was a vague apology and a
-fresh form to fill out. Instead of a filled out form, they got fired.&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;This was actually the second major error from them. I
-can’t talk about the first, but in retrospect I should also have fired
-them for that.This was a serious enough error that I’m not sure it’s
-plausible that they could have rescued the interaction, but a show of
-taking it seriously would at least have meant that I didn’t quite so
-actively warn anyone I knew off using them. I would instead have said
-something like “I’ve had bad experiences with them. They showed willing
-to improve. If you think they’re your best option, go for it, but be
-alert for red flags.”&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;I think some people behave this way because they genuinely don’t
-care, but a lot of people behave this way because they don’t want to be
-blamed and feel like if they acknowledge responsibility they will be.
-But I already blame you, because it’s already obviously your fault, and
-trying to pretend otherwise isn’t fooling anyone, it’s just making you
-look worse.&lt;/p&gt;
-
-
-&lt;p&gt;Ultimately, this is a question of trust. I don’t need to be able to
-trust you perfectly to interact with you - there’s nobody I trust
-perfectly (though many I trust a great deal), that’s not what I’m
-looking for. What I’m looking for is the possibility that there can be
-trust between us, and that you behave as if your actions and their
-consequences for me matter, and if you don’t do that then I do not want
-to interact with you until you find a way to become a better person.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2024-02-06-10:51.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-02-07-07:44.html</id>
     <title>The obligation to be who you are</title>
@@ -2246,7 +2071,7 @@ human feedback.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-02-18-10:11.html</id>
     <title>You only need shallow justifications</title>
-    <updated>2025-02-18T10:11:00+00:00</updated>
+    <updated>2025-03-05T10:29:24+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;You only need shallow justifications&lt;/p&gt;
@@ -2491,5 +2316,238 @@ me to write about this subject!&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2025-02-18-10:11.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2025-03-05-10:29.html</id>
+    <title>World counting as a tool for understanding probability</title>
+    <updated>2025-03-05T10:29:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;World counting as a tool for understanding probability&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2025-03-05&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;There are a number of basic conditional probability problems that
+seem counter-intuitive but become intuitive with an extremely basic
+technique.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;So basic that it’s almost embarrassing to describe it as
+a technique to be honest, but then I see people getting confused on
+problems trivially solvable by it and think it probably warrants that
+label after all.&lt;/span&gt; I thought it would be worth
+explaining this technique, as I think it’s both a good tool to have in
+your toolkit explicitly, and is potentially a good route in for teaching
+people to reason about probability.&lt;/p&gt;
+
+
+&lt;p&gt;The technique is “world counting”. You enumerate all the possible
+versions of the world, cross out any ones that have been ruled out by
+evidence, and then work out what fraction of the worlds remaining have
+the property of interest.&lt;/p&gt;
+
+
+&lt;p&gt;For example, say I roll two dice, and tell you only that I rolled a
+sum of 8 or more. What is the probability that at least one of those
+rolls was a 6?&lt;/p&gt;
+
+
+&lt;p&gt;First, we enumerate all the possible rolls: 1/1, 1/2, …, 2/1, …,
+6/6.&lt;/p&gt;
+
+
+&lt;p&gt;Now, we cut out all of the ones where the sum is less than 8, and get
+the following combinations remaining: 2/6, 3/5, 3/6, 4/4, 4/5, 4/6, 5/3,
+5/4, 5/5, 5/6, 6/2, 6/3, 6/4, 6/5, 6/6&lt;/p&gt;
+
+
+&lt;p&gt;That gives us 15 worlds, of which 9 have a 6 in them, so the
+probability of a 6 is &lt;span class="math inline"&gt;\(\frac{9}{15} =
+0.6\)&lt;/span&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;This works well with the dice example, but we run into a wrinkle with
+a slightly more complicated one.&lt;/p&gt;
+
+
+&lt;p&gt;Consider the following problem: I flip a coin. If it shows heads, I
+flip it again. If it shows tails, I don’t.&lt;/p&gt;
+
+
+&lt;p&gt;This gives us three worlds: HH, HT, T. Two where I got heads the
+first time, one where I got tails the second time.&lt;/p&gt;
+
+
+&lt;p&gt;Now, what is the probability of getting heads on the first toss? It’s
+half, obviously, but the world enumeration approach as I’ve described it
+so far gives &lt;span class="math inline"&gt;\(\frac{2}{3}\)&lt;/span&gt; because
+there are twice as many worlds with heads as tails. This is clearly
+wrong.&lt;/p&gt;
+
+
+&lt;p&gt;One way to fix this is to imagine that we flip the second coin
+regardless but that flip is only “visible” if we got heads on the first
+flip. This gives us the worlds HH, HT, TH, TT, where to the observer TH
+and TT look identical, and we recover the right probability (&lt;span class="math inline"&gt;\(\frac{1}{2}\)&lt;/span&gt;). This feels a little
+convoluted though.&lt;/p&gt;
+
+
+&lt;p&gt;The real problem here is that the world counting method I described
+only works for situations where every world is equally likely, and in
+this case that’s not true. The T world is twice as likely as either the
+HT or the HH worlds.&lt;/p&gt;
+
+
+&lt;p&gt;So, let’s generalise the technique slightly: A &lt;em&gt;weighted world
+enumeration&lt;/em&gt; is a non-empty list of possible worlds together with
+some non-zero weight associated with each of them. In order to calculate
+the probability of something, you add up the weight of the worlds in
+which it’s true, and divide by the total weight of the worlds.&lt;/p&gt;
+
+
+&lt;p&gt;Now, the question is… how do you get weighted world enumerations?&lt;/p&gt;
+
+
+&lt;p&gt;You build them as follows:&lt;/p&gt;
+
+
+&lt;ol type="1"&gt;
+&lt;li&gt;You start from a basic enumeration which is just a single world in
+which anything could happen, and some arbitrary weight (it doesn’t
+matter what. Conventionally it would be 1, but you can pick this for
+convenience)&lt;/li&gt;
+&lt;li&gt;You can at any point split a world into one or more subworlds which
+are mutually incompatible. e.g. if I flip a coin, you could split the
+world into the subworlds where it comes up heads and the subworlds that
+it comes up tails. The weights you assign to those subworlds can be
+whatever you like, as long as they add up to the weight of the original
+world. If you think of the subworlds as equally likely you should split
+the weight between them evenly.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Note that you’re allowed to throw away possibilities
+when you do this split. e.g. if you believe that something is a
+necessary consequence of one of your worlds, you can replace it with
+some more specialised condition without changing the weights.&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;To get a conditional weighted world enumeration (i.e. the world
+enumeration you want after observing something that rules out some of
+the worlds), you just remove everything from the list that has been
+ruled out.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;So, with our two coins example,&lt;/p&gt;
+
+
+&lt;p&gt;Here’s the problem where I first realised quite how useful this
+technique is:&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Paraphrased from &lt;a href="https://x.com/julianboolean_/status/1836867126360944873"&gt;this
+tweet&lt;/a&gt;. In the original form it asks whether the probability that
+there’s a ball under the cup has gone up or down, and this doesn’t
+actually require you to calculate the probability, because of an
+interesting general principle: If &lt;span class="math inline"&gt;\(A,
+B\)&lt;/span&gt; are disjoint events with non-zero probabilities of occurring,
+then necessarily &lt;span class="math inline"&gt;\(P(A | \neg B) &amp;gt;
+P(A)\)&lt;/span&gt;.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;There are 10 opaque cups face down on a table. I flipped a fair coin,
+if it was heads I picked 1 cup uniformly at random and placed a ball
+under it.&lt;/p&gt;
+
+
+&lt;p&gt;You flip the first 9 cups. No ball.&lt;/p&gt;
+
+
+&lt;p&gt;What is the probability that there’s a ball under cup 10?&lt;/p&gt;
+
+
+&lt;p&gt;We can build up our world enumeration as follows:&lt;/p&gt;
+
+
+&lt;p&gt;First, for convenience, pick the initial weight to be 20.&lt;/p&gt;
+
+
+&lt;p&gt;Now, split this into two worlds based on the flip of a coin. Our
+world enumeration is now (H, 10), (T, 10). Half the world weight goes to
+each coin flip.&lt;/p&gt;
+
+
+&lt;p&gt;If we picked heads, we now pick a cup at random. This splits the H
+world into the 10 possible subworlds, one for each cup. So now we have
+(T, 10), (H1, 1), (H2, 1), …, (H10, 1).&lt;/p&gt;
+
+
+&lt;p&gt;Now, we want our conditional world enumeration, which has determined
+that there is no ball in the first 9 cups. This removes all the worlds
+in which we placed a ball there, so now our world enumeration is (T,
+10), (H10, 1).&lt;/p&gt;
+
+
+&lt;p&gt;This means that the probability that the ball is in the 10th cup is
+&lt;span class="math inline"&gt;\(\frac{1}{10 + 1} = \frac{1}{11}\)&lt;/span&gt;,
+because the total weight of the worlds remaining is &lt;span class="math inline"&gt;\(11\)&lt;/span&gt; and of that weight, &lt;span class="math inline"&gt;\(1\)&lt;/span&gt; of it has the ball there.&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;So to answer the original question, it goes up, because
+the original probability before revealing those balls is &lt;span class="math inline"&gt;\(\frac{1}{20}\)&lt;/span&gt;.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;I think this approach is also useful for reasoning about the dreaded
+&lt;a href="https://en.wikipedia.org/wiki/Monty_Hall_problem"&gt;Monty Hall
+problem&lt;/a&gt;:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Suppose you’re on a game show, and you’re given the choice of three
+doors: Behind one door is a car; behind the others, goats. You pick a
+door, say No. 1, and the host, who knows what’s behind the doors, opens
+another door, say No. 3, which has a goat. He then says to you, “Do you
+want to pick door No. 2?” Is it to your advantage to switch your
+choice?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;We start with our initial world, which we’ll give weight 1 out of
+convention, and split it three ways based on which door has a car behind
+it: 1, 2, 3. We believe these to be equally likely&lt;label class="margin-toggle sidenote-number" for="fn5"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn5" type="checkbox"/&gt;&lt;span class="sidenote"&gt;If we didn’t believe that we could in our head shuffle
+the doors and relabel them to make this the case.&lt;/span&gt;, so
+give them each weight &lt;span class="math inline"&gt;\(\frac{1}{3}\)&lt;/span&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Monty then picks a door, 2 or 3. This gives us 6 theoretically
+possible worlds. 12, 13, 22, 23, 32, 33.&lt;/p&gt;
+
+
+&lt;p&gt;Now, we know that Monty knows which door the car is behind, and thus
+presumably is deliberately picking a door which doesn’t have a car. This
+means that the worlds 22 and 33 are actually impossible, because Monte
+will never pick that door. Thus our actual list is 12, 13, 23, 32.&lt;/p&gt;
+
+
+&lt;p&gt;The worlds in which it’s an advantage to us to switch are 23 and 32,
+so to calculate how likely it is for switching to be good we need to
+know their total weight. We don’t know the weights of 12, 13, but we do
+know that the total weight stayed unchanged (as we’ve not removed any
+possible worlds, only impossible ones that we’d have had to assign
+weight zero to), so the total weight is &lt;span class="math inline"&gt;\(1\)&lt;/span&gt; and the probability that switching is
+good for us is the sum of the weights of worlds 23 and 32, which is
+&lt;span class="math inline"&gt;\(\frac{2}{3}\)&lt;/span&gt;. So switching is good
+most of the time.&lt;/p&gt;
+
+
+&lt;p&gt;It’s interesting to compare this to the version in which Monty
+doesn’t know which door has the car behind it and picks randomly (with
+you just losing immediately if he picks a car). We now have all six of
+our possible worlds 12, 13, 22, 23, 32, 33, with each of these having an
+equal weight of &lt;span class="math inline"&gt;\(\frac{1}{6}\)&lt;/span&gt;. Now,
+we’ve observed a goat, which cuts out the worlds 22 and 33, so now we’ve
+got worlds 12, 13, 23, 32. But this time all of these have equal weight,
+so switching is to our advantage with probabilityh &lt;span class="math inline"&gt;\(\frac{1}{2}\)&lt;/span&gt;, and there is no benefit (or
+disadvantage) to switching.&lt;/p&gt;
+
+
+&lt;p&gt;You can extend this technique to general Bayesian reasoning, which is
+essentially a modification where rather than cutting out worlds that are
+impossible you reweight them based on how likely they are to show the
+relevant data, but that’s a topic for another time.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2025-03-05-10:29.html" rel="alternate"/>
   </entry>
 </feed>

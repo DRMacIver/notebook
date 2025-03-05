@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+DRMacIver's Notebook: World counting as a tool for understanding probability
+    </title>
+
+    <meta property="og:title" content="World counting as a tool for understanding probability">
+
+    <meta property="og:url" content="https://notebook.drmaciver.com/posts/2025-03-05-10:29.html" />
+    <link rel="canonical" href="https://notebook.drmaciver.com/posts/2025-03-05-10:29.html" />
+    <script src="https://hypothes.is/embed.js" async></script>
+
+
+    <meta name="twitter:card" content="summary" />
+
+    <meta property="og:creator" content="@DRMacIver">
+
+    <link rel="stylesheet" href="/pandoc.css"/>
+    <link rel="stylesheet" href="/pygments.css"/>
+    <link rel="stylesheet" href="/tufte.css"/>
+    <link rel="stylesheet" href="/latex.css"/>
+    <link rel="stylesheet" href="/drmnotes.css"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
+});
+
+MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
+  console.log(message)
+});
+
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169185204-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169185204-1');
+</script>
+
+  </head>
+
+  <body>
+    <article>
+        <h1><a href="/">DRMacIver's Notebook</a></h1>
+        <p class=subtitle>World counting as a tool for understanding probability</p>
+
+        
+
+<section id="the-post">
+<p class=subtitle>World counting as a tool for understanding probability</p>
+<dl class=metadata>
+<dt>Published</dt>
+<dd class="post-date">2025-03-05</dd>
+</dl>
+
+<p>There are a number of basic conditional probability problems that
+seem counter-intuitive but become intuitive with an extremely basic
+technique.<label class="margin-toggle sidenote-number" for="fn1"></label><input class="margin-toggle" id="fn1" type="checkbox"/><span class="sidenote">So basic that it’s almost embarrassing to describe it as
+a technique to be honest, but then I see people getting confused on
+problems trivially solvable by it and think it probably warrants that
+label after all.</span> I thought it would be worth
+explaining this technique, as I think it’s both a good tool to have in
+your toolkit explicitly, and is potentially a good route in for teaching
+people to reason about probability.</p>
+<p>The technique is “world counting”. You enumerate all the possible
+versions of the world, cross out any ones that have been ruled out by
+evidence, and then work out what fraction of the worlds remaining have
+the property of interest.</p>
+<p>For example, say I roll two dice, and tell you only that I rolled a
+sum of 8 or more. What is the probability that at least one of those
+rolls was a 6?</p>
+<p>First, we enumerate all the possible rolls: 1/1, 1/2, …, 2/1, …,
+6/6.</p>
+<p>Now, we cut out all of the ones where the sum is less than 8, and get
+the following combinations remaining: 2/6, 3/5, 3/6, 4/4, 4/5, 4/6, 5/3,
+5/4, 5/5, 5/6, 6/2, 6/3, 6/4, 6/5, 6/6</p>
+<p>That gives us 15 worlds, of which 9 have a 6 in them, so the
+probability of a 6 is <span class="math inline">\(\frac{9}{15} =
+0.6\)</span>.</p>
+<p>This works well with the dice example, but we run into a wrinkle with
+a slightly more complicated one.</p>
+<p>Consider the following problem: I flip a coin. If it shows heads, I
+flip it again. If it shows tails, I don’t.</p>
+<p>This gives us three worlds: HH, HT, T. Two where I got heads the
+first time, one where I got tails the second time.</p>
+<p>Now, what is the probability of getting heads on the first toss? It’s
+half, obviously, but the world enumeration approach as I’ve described it
+so far gives <span class="math inline">\(\frac{2}{3}\)</span> because
+there are twice as many worlds with heads as tails. This is clearly
+wrong.</p>
+<p>One way to fix this is to imagine that we flip the second coin
+regardless but that flip is only “visible” if we got heads on the first
+flip. This gives us the worlds HH, HT, TH, TT, where to the observer TH
+and TT look identical, and we recover the right probability (<span class="math inline">\(\frac{1}{2}\)</span>). This feels a little
+convoluted though.</p>
+<p>The real problem here is that the world counting method I described
+only works for situations where every world is equally likely, and in
+this case that’s not true. The T world is twice as likely as either the
+HT or the HH worlds.</p>
+<p>So, let’s generalise the technique slightly: A <em>weighted world
+enumeration</em> is a non-empty list of possible worlds together with
+some non-zero weight associated with each of them. In order to calculate
+the probability of something, you add up the weight of the worlds in
+which it’s true, and divide by the total weight of the worlds.</p>
+<p>Now, the question is… how do you get weighted world enumerations?</p>
+<p>You build them as follows:</p>
+<ol type="1">
+<li>You start from a basic enumeration which is just a single world in
+which anything could happen, and some arbitrary weight (it doesn’t
+matter what. Conventionally it would be 1, but you can pick this for
+convenience)</li>
+<li>You can at any point split a world into one or more subworlds which
+are mutually incompatible. e.g. if I flip a coin, you could split the
+world into the subworlds where it comes up heads and the subworlds that
+it comes up tails. The weights you assign to those subworlds can be
+whatever you like, as long as they add up to the weight of the original
+world. If you think of the subworlds as equally likely you should split
+the weight between them evenly.<label class="margin-toggle sidenote-number" for="fn2"></label><input class="margin-toggle" id="fn2" type="checkbox"/><span class="sidenote">Note that you’re allowed to throw away possibilities
+when you do this split. e.g. if you believe that something is a
+necessary consequence of one of your worlds, you can replace it with
+some more specialised condition without changing the weights.</span></li>
+<li>To get a conditional weighted world enumeration (i.e. the world
+enumeration you want after observing something that rules out some of
+the worlds), you just remove everything from the list that has been
+ruled out.</li>
+</ol>
+<p>So, with our two coins example,</p>
+<p>Here’s the problem where I first realised quite how useful this
+technique is:<label class="margin-toggle sidenote-number" for="fn3"></label><input class="margin-toggle" id="fn3" type="checkbox"/><span class="sidenote">Paraphrased from <a href="https://x.com/julianboolean_/status/1836867126360944873">this
+tweet</a>. In the original form it asks whether the probability that
+there’s a ball under the cup has gone up or down, and this doesn’t
+actually require you to calculate the probability, because of an
+interesting general principle: If <span class="math inline">\(A,
+B\)</span> are disjoint events with non-zero probabilities of occurring,
+then necessarily <span class="math inline">\(P(A | \neg B) &gt;
+P(A)\)</span>.</span></p>
+<p>There are 10 opaque cups face down on a table. I flipped a fair coin,
+if it was heads I picked 1 cup uniformly at random and placed a ball
+under it.</p>
+<p>You flip the first 9 cups. No ball.</p>
+<p>What is the probability that there’s a ball under cup 10?</p>
+<p>We can build up our world enumeration as follows:</p>
+<p>First, for convenience, pick the initial weight to be 20.</p>
+<p>Now, split this into two worlds based on the flip of a coin. Our
+world enumeration is now (H, 10), (T, 10). Half the world weight goes to
+each coin flip.</p>
+<p>If we picked heads, we now pick a cup at random. This splits the H
+world into the 10 possible subworlds, one for each cup. So now we have
+(T, 10), (H1, 1), (H2, 1), …, (H10, 1).</p>
+<p>Now, we want our conditional world enumeration, which has determined
+that there is no ball in the first 9 cups. This removes all the worlds
+in which we placed a ball there, so now our world enumeration is (T,
+10), (H10, 1).</p>
+<p>This means that the probability that the ball is in the 10th cup is
+<span class="math inline">\(\frac{1}{10 + 1} = \frac{1}{11}\)</span>,
+because the total weight of the worlds remaining is <span class="math inline">\(11\)</span> and of that weight, <span class="math inline">\(1\)</span> of it has the ball there.<label class="margin-toggle sidenote-number" for="fn4"></label><input class="margin-toggle" id="fn4" type="checkbox"/><span class="sidenote">So to answer the original question, it goes up, because
+the original probability before revealing those balls is <span class="math inline">\(\frac{1}{20}\)</span>.</span></p>
+<p>I think this approach is also useful for reasoning about the dreaded
+<a href="https://en.wikipedia.org/wiki/Monty_Hall_problem">Monty Hall
+problem</a>:</p>
+<blockquote>
+<p>Suppose you’re on a game show, and you’re given the choice of three
+doors: Behind one door is a car; behind the others, goats. You pick a
+door, say No. 1, and the host, who knows what’s behind the doors, opens
+another door, say No. 3, which has a goat. He then says to you, “Do you
+want to pick door No. 2?” Is it to your advantage to switch your
+choice?</p>
+</blockquote>
+<p>We start with our initial world, which we’ll give weight 1 out of
+convention, and split it three ways based on which door has a car behind
+it: 1, 2, 3. We believe these to be equally likely<label class="margin-toggle sidenote-number" for="fn5"></label><input class="margin-toggle" id="fn5" type="checkbox"/><span class="sidenote">If we didn’t believe that we could in our head shuffle
+the doors and relabel them to make this the case.</span>, so
+give them each weight <span class="math inline">\(\frac{1}{3}\)</span>.</p>
+<p>Monty then picks a door, 2 or 3. This gives us 6 theoretically
+possible worlds. 12, 13, 22, 23, 32, 33.</p>
+<p>Now, we know that Monty knows which door the car is behind, and thus
+presumably is deliberately picking a door which doesn’t have a car. This
+means that the worlds 22 and 33 are actually impossible, because Monte
+will never pick that door. Thus our actual list is 12, 13, 23, 32.</p>
+<p>The worlds in which it’s an advantage to us to switch are 23 and 32,
+so to calculate how likely it is for switching to be good we need to
+know their total weight. We don’t know the weights of 12, 13, but we do
+know that the total weight stayed unchanged (as we’ve not removed any
+possible worlds, only impossible ones that we’d have had to assign
+weight zero to), so the total weight is <span class="math inline">\(1\)</span> and the probability that switching is
+good for us is the sum of the weights of worlds 23 and 32, which is
+<span class="math inline">\(\frac{2}{3}\)</span>. So switching is good
+most of the time.</p>
+<p>It’s interesting to compare this to the version in which Monty
+doesn’t know which door has the car behind it and picks randomly (with
+you just losing immediately if he picks a car). We now have all six of
+our possible worlds 12, 13, 22, 23, 32, 33, with each of these having an
+equal weight of <span class="math inline">\(\frac{1}{6}\)</span>. Now,
+we’ve observed a goat, which cuts out the worlds 22 and 33, so now we’ve
+got worlds 12, 13, 23, 32. But this time all of these have equal weight,
+so switching is to our advantage with probabilityh <span class="math inline">\(\frac{1}{2}\)</span>, and there is no benefit (or
+disadvantage) to switching.</p>
+<p>You can extend this technique to general Bayesian reasoning, which is
+essentially a modification where rather than cutting out worlds that are
+impossible you reweight them based on how likely they are to show the
+relevant data, but that’s a topic for another time.</p>
+
+
+</section>
+
+    </article>
+<footer>
+Copyright David R. MacIver.
+
+CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
+</footer>
+  </body>
+</html>
