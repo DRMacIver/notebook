@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-03-22T22:41:58+00:00</updated>
+  <updated>2025-03-23T21:48:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,217 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2024-02-16-11:33.html</id>
-    <title>Silently losing critical life infrastructure</title>
-    <updated>2024-02-16T12:59:48+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Silently losing critical life infrastructure&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2024-02-16&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I’ve been having a pretty bad time recently. I don’t intend to talk
-about the details, but suffice it to say I’ve been extremely stressed,
-depressed, and anxious, and my appetite and sleep have completely fallen
-apart.&lt;/p&gt;
-
-
-&lt;p&gt;This isn’t about that, not directly. It’s about some interesting
-things that this has revealed about my personal infrastructure for
-supporting my mental health.&lt;/p&gt;
-
-
-&lt;p&gt;One piece of infrastructure is the daily writing. That completely
-dropped off during this period, as you’ve probably noticed. I think
-that’s… fine. The daily writing is absolutely intended as a mood and
-meaning-making support, but it’s designed for chronic conditions, and I
-think in acute cases it diverts resources that probably need to be spent
-elsewhere. I’m not sure that’s true, but it felt impossible to continue,
-so I didn’t. Maybe that was a mistake but I’m not sure what I could have
-done differently at the time.&lt;/p&gt;
-
-
-&lt;p&gt;Another piece of mental health infrastructure that &lt;em&gt;hasn’t&lt;/em&gt;
-fallen off on the other hand is exercise. I’ve kept going to Pilates,
-I’ve kept going to the gym. I haven’t necessarily done a great job of
-it, but I’ve kept going and that’s I think been helpful. Insufficient to
-solve the problems, but that’s a bit much to ask of it. The fact that it
-was somethign that I could just show up to and it’s fine even if I don’t
-particularly engage with it made it infrastructure that didn’t fall
-apart in a crisis.&lt;/p&gt;
-
-
-&lt;p&gt;Another thing I’m tentatively chalking up to an infrastructure
-success is that, astonishingly, I haven’t really got significantly ill
-during this time period, despite illness sweeping the house. This might
-be my body going “I don’t have time to get ill!!!” and I’m going to get
-every cold at once when I finally relax, but I’m chalking this up as
-tentative evidence that &lt;a href="https://notebook.drmaciver.com/posts/2024-02-01-15:09.html"&gt;this
-nonsense zinc mouthwash I’m using&lt;/a&gt; really is doing something.&lt;/p&gt;
-
-
-&lt;p&gt;But there are two interesting major failures of infrastructure, which
-it turns out fell apart before things went wrong and I only discovered
-that they’d fallen apart too late.&lt;/p&gt;
-
-
-&lt;p&gt;The first is that I’d run out of sleeping pills months ago. This is,
-in the normal course of things, absolutely fine. A normal heavy period
-of using sleeping pills for me involves taking half a tablet in a month,
-and I’d figured out non-chemical tools for getting to sleep on difficult
-nights, so when my single packet of sleeping pills that I’d had for over
-a year ran out, I didn’t think it was worth renewing. It took me until
-my third night on two hours of sleep to realise that this was
-incorrect.&lt;/p&gt;
-
-
-&lt;p&gt;Fortunately I managed to get an emergency sleeping pill prescription
-on a Friday and took half a pill every night for a few nights until the
-worst of the acute night-time anxiety had passed. I’m now (thankfully, I
-hate the experience of using them, I just hate it less than the
-experience of not using them when I need them) managing to sleep merely
-badly without them, so I’m back to not using them again, but they were
-an absolute life saver both for getting through the bad nights and also
-for being functional enough to get things moving in the right
-direction.&lt;/p&gt;
-
-
-&lt;p&gt;I don’t necessarily want to say that it was a mistake to not renew my
-sleeping pill prescription. I genuinely thought I didn’t need them any
-more, and I’ve gone most of my life just fine without having them. I
-think it was an arguably reasonable call at the time. But I’m sure not
-going to let myself be in a situation where I don’t have any sleeping
-pills left again.&lt;/p&gt;
-
-
-&lt;p&gt;I think this is an interesting example because the sleeping pills are
-very much dampeners for low probability events. The normal events they
-damp out are something like 3% probability events, and are survivable
-without them. Nights like I’ve been having recently where I get 2 hours
-sleep are maybe something like… 0.2% probability events, in that I maybe
-get a night that bad every few years. Having several nights like that in
-a row is too unprecedented for me to assign a probability. I think it’s
-a proper black swan event for me, as I wouldn’t actually have predicted
-it was possible - I’d have assumed the first night would exhaust me
-enough that the second night I would sleep no matter how anxious I
-was.&lt;/p&gt;
-
-
-&lt;p&gt;So what happened is that all of the events of medium severity that
-happened sufficiently often that I regularly encountered them were now
-solved, and I incorrectly generalised from this to determine that the
-infrastructure was no longer useful, and this turned out to be
-incorrect.&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, having experienced this, I declared my lesson learned and
-that I would no longer abandon infrastructure that was a solution to a
-predictable class of problems, even if I thought it was no longer
-necessary.&lt;/p&gt;
-
-
-&lt;p&gt;This makes the second infrastructure failure especially
-infuriating.&lt;/p&gt;
-
-
-&lt;p&gt;A few days ago, I was talking to Lisa about how everything was
-terrible and I was utterly miserable. Then I went to bed. Then I came
-down about an hour later to get something, and we talked a bit, and she
-noted that I’d perked up significantly in that hour. “Huh, have I?” was
-my response, and I went back to bed.&lt;/p&gt;
-
-
-&lt;p&gt;Then I introspected and decided she was right. It’s not that anything
-had become less terrible than it was previously, but it sure felt more
-manageable. There were major problems, but I could engage with them
-rather than despair about them.&lt;/p&gt;
-
-
-&lt;p&gt;Then I thought about it a bit more and realised that I was an
-absolute fucking idiot.&lt;/p&gt;
-
-
-&lt;p&gt;What had happened between those two times was that I’d gone “Oh yeah,
-&lt;a href="https://acesounderglass.com/2023/09/08/luck-based-medicine-inositol/"&gt;inositol&lt;/a&gt;
-helps with my mood, and I’ve got a bit left, maybe I should take some
-inositol”, so I took some inositol.&lt;/p&gt;
-
-
-&lt;p&gt;I’d stopped taking it a few months ago, not really through any
-deliberate decision, it just stopped doing much for me. I attributed
-this to the fact that my diet had improved and I was regularly taking a
-probiotic. At some point I’d mostly run out and stopped having a regular
-supplement regime so it just got quietly forgotten.&lt;/p&gt;
-
-
-&lt;p&gt;Unfortunately, I stopped having a regular supplement regime, so I
-also stopped reliably taking my probiotic.&lt;/p&gt;
-
-
-&lt;p&gt;Also, as I got more stressed, my appetite was suppressed and I was
-eating less well.&lt;/p&gt;
-
-
-&lt;p&gt;So, apparently, quietly, all of the problems that inositol solved for
-me previously, gradually and quietly came back, and because things were
-actually terrible, and because I didn’t have a good poitn of comparison
-of events on and off inositol, I didn’t realise that that was what was
-happening.&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, I’ve been taking it regularly again for a few days, and the
-effect has persisted. Everything is still terrible, but I’m more able to
-cope.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Admittedly there are some other improvements in the
-situation which help, but there does feel like a qualitative difference
-that I can’t explain with that alone.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;This is interestingly almost the polar opposite of the sleeping pill
-thing, because it’s a chronic problem that gets worse in… I don’t want
-to say non-obvious, because the results are very obvious, but let’s say
-difficult-to-attribute ways… if I neglect the infrastructure
-maintenance. I don’t realise I need it not because of the irregularity
-of the events, but because of the regularity of the events. If I don’t
-ever take the inositol, I don’t notice how large the impact of it is,
-and the fact that my mental health infrastructure is in slow collapse
-just looks like everything being terrible.&lt;/p&gt;
-
-
-&lt;p&gt;I’m not sure I have a good generalised lesson from this other than
-“Yes, David, you need to take the fucking inositol even if you don’t
-think it’s doing something”, but I do want to share a related
-observation from the other day.&lt;/p&gt;
-
-
-&lt;p&gt;There are two different skills for dealing with anxiety. One of them
-&lt;a href="https://notebook.drmaciver.com/posts/2020-05-20-17:58.html"&gt;I’ve
-written about before&lt;/a&gt; and is about only feeling anxiety in situations
-where it’s an appropriate response. But the other, equally important
-one, is that when the appropriate response is a high level of anxiety,
-you should be able to deal with it.&lt;/p&gt;
-
-
-&lt;p&gt;In this case I couldn’t really say anxiety was inappropriate. &lt;a href="https://notebook.drmaciver.com/posts/2020-04-03-13:40.html"&gt;There
-was a high level of uncertainty&lt;/a&gt; and it was legitimately scary&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;There still is. But also there was.&lt;/span&gt;. But &lt;em&gt;boy&lt;/em&gt; was I not able to
-deal with it. At the time I thought this was a generalisable thing about
-me, and to some degree it is, but in retrospect I was dealing with it
-much less well than I might have.&lt;/p&gt;
-
-
-&lt;p&gt;So I guess this leaves me with the following question: If you’re
-struggling to deal with something, is this maybe because the
-infrastructure you’d use to deal with it has collapsed or gone away and
-you didn’t notice because you didn’t think you needed it any more?&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2024-02-16-11:33.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-03-16-13:07.html</id>
     <title>Finding exercise motivations that work</title>
@@ -2253,7 +2042,7 @@ relevant data, but that’s a topic for another time.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-03-22-21:54.html</id>
     <title>There is no sludge</title>
-    <updated>2025-03-22T22:41:58+00:00</updated>
+    <updated>2025-03-22T22:50:58+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;There is no sludge&lt;/p&gt;
@@ -2428,5 +2217,179 @@ that lets you act on them appropriately.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2025-03-22-21:54.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2025-03-23-21:48.html</id>
+    <title>How I clean my kitchen at the end of the day</title>
+    <updated>2025-03-23T21:48:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;How I clean my kitchen at the end of the day&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2025-03-23&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;This is a guide on how to clean my kitchen. I wrote it up because I
+was writing it in my head while cleaning my kitchen and found that
+helpful. The intended audience of this post is most useful me, and when
+I say “you” in it the you in question is mostly me, but some of the
+general points might be of broad interest.&lt;/p&gt;
+
+
+&lt;p&gt;However, many of the specifics of this are only useful if you share a
+kitchen with me, and thus have the exact same sets of problems,
+constraints, and affordances. If so this post isn’t really intended for
+you as that would be massively passive aggressive for me to write a
+whole essay telling you how to clean the kitchen. Instead, if you share
+a kitchen with me, I refer you to the large poster with helpfully big
+letters and clear easy to understand instructions that I have posted on
+the kitchen wall.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Ha ha, just kidding. I haven’t really done that. Yet.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, there are some things you should understand before embarking
+on cleaning the kitchen:&lt;/p&gt;
+
+
+&lt;p&gt;The first is that it will, in fact, take about an hour. It might take
+a bit less. If it’s a really big dinner or a lot of debris has built up
+over the course of the day it might take more. But it will probably take
+about an hour, and trying to speed that up massively is going to mostly
+stress you out without saving a huge amount of time. You should probably
+just let it take an hour. You can resent that, or you can just put up
+with it, and you’ll have a better time in that hour if you do the
+latter. Put on some music, or a noise track and spend the time in
+contemplation, or if you must put on an audiobook or something. Maybe
+you can write a blog post about how to clean the kitchen in your head or
+something.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Some of this process can be sped up by having an extra
+pair of helping hands but honestly our kitchen is a nightmare to have
+multiple people in and it doesn’t speed things up that much so I mostly
+just prefer to do it solo.&lt;/span&gt; Whatever you’re doing though, assume
+it will take an hour, so make sure to start at least an hour before
+bedtime.&lt;/p&gt;
+
+
+&lt;p&gt;The second thing to understand is that there is no such thing as
+“clean”, there is only “clean enough”. You are not attempting
+perfection, you are attempting to achieve a consistent standard of
+cleaning. This standard mostly consists of the following:&lt;/p&gt;
+
+
+&lt;ol type="1"&gt;
+&lt;li&gt;There are no full bins.&lt;/li&gt;
+&lt;li&gt;The dishwasher is running.&lt;/li&gt;
+&lt;li&gt;The surfaces are clean.&lt;/li&gt;
+&lt;li&gt;The handwashing has been done.&lt;/li&gt;
+&lt;li&gt;The floor is not covered in debris.&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I’ve not historically been super reliable about this,
+and am trying to add sweeping the kitchen to my cleaning process, but I
+don’t yet know if it will stick.&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;The sink should be empty and clean.&lt;/li&gt;
+&lt;li&gt;The kitchen should pass a “general inspection” for anything that
+seems like it really should be done every time and isn’t explicitly on
+this list and doesn’t massively increase the workload.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;The third thing to understand is that it doesn’t matter if you’re too
+tired to clean the kitchen. The kitchen still needs to be cleaned, and
+if you don’t do it then tomorrow will go much worse. If you get part way
+through the process and you really can’t continue, you can stop, but
+you’ll probably be fine, because the process is on your side.&lt;/p&gt;
+
+
+&lt;p&gt;The fourth thing to remember is that the process is on your side.
+It’s there to help keep momentum up, make it feel achievable to do more,
+and minimise the amount of decision making you have to do, so you can
+mostly just autopilot the entire experience, and it’s there so that if
+you do give up midway through (you probably won’t), you’ve done the
+right things first, and so that you won’t at any point have to go “Oh
+fuck, I didn’t do that thing, I can’t be bothered to do that now…”.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, here is the process.&lt;/p&gt;
+
+
+&lt;p&gt;The process consists of a rolling series of goals. You should always
+do the highest priority one.&lt;/p&gt;
+
+
+&lt;p&gt;The first goal is &lt;em&gt;there should be no full bins&lt;/em&gt;. There is a
+recycling bin, a waste bin, and a food scraps bin, and if at any point
+(including the start) of the process one fills up, you should stop
+whatever you are doing and empty it. If it’s obvious at some point that
+it’s going to fill up later, you can prioritise filling it up and then
+emptying it, but this isn’t required.&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I’ve not historically been super reliable about this
+making this top priority is a modification that became clearly good as a
+result of drafting this post.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;The second goal is &lt;em&gt;the dishwasher should be running&lt;/em&gt;. Once
+the bins are empty, all actions should be directed towards getting
+things in the dishwasher and getting it running. If it’s currently got
+clean dishes in it, first empty it, then load it, then run it.&lt;/p&gt;
+
+
+&lt;p&gt;The third goal is &lt;em&gt;surfaces outside the kitchen should be
+cleared&lt;/em&gt;. That means the dining room and living room table need to
+have everything taken off them and the tables need to be wiped down.&lt;/p&gt;
+
+
+&lt;p&gt;From here, it’s a process of narrowing the area that still needs to
+be cleaned over time, one surface at a time.&lt;/p&gt;
+
+
+&lt;p&gt;My kitchen has two counters. Let’s call them sinkside and kettleside.
+The next goal is to &lt;em&gt;get the kettleside counter cleaned and wiped
+down&lt;/em&gt;. This is partly as a restriction move, and partly because
+you’ll need the space to put extra drying up. Once it’s clear, lay some
+cloths down to put extra drying up on it.&lt;/p&gt;
+
+
+&lt;p&gt;The sinkside counter has two halves, left of stove and right of
+stove. Now clean the surface left of stove, corralling all remaining
+dirty dishes onto the stove top and right of stove area.&lt;/p&gt;
+
+
+&lt;p&gt;Your priority is now to &lt;em&gt;wash the subset of those dishes that
+can’t go in the dishwasher when it’s finished running&lt;/em&gt;. These will
+be left to dry, you’re not going to manually dry them up.&lt;/p&gt;
+
+
+&lt;p&gt;At this point if you’re genuinely exhausted and it’s late, you may
+stop, but ideally you would not.&lt;/p&gt;
+
+
+&lt;p&gt;Your next goal is to &lt;em&gt;handwash any of the dishes that could go in
+the dishwasher tomorrow&lt;/em&gt;, because this enabled the following goal
+which is &lt;em&gt;get the right of stove counter completely clean&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;If you can face it, &lt;em&gt;clean the stove&lt;/em&gt;. Don’t do a proper deap
+clean of it, that’s not your job, but do get the worst of debris and the
+like off it.&lt;label class="margin-toggle sidenote-number" for="fn5"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn5" type="checkbox"/&gt;&lt;span class="sidenote"&gt;We have a gas stove and I hate it so much. I dislike gas
+in general, but I especially hate how gross and hard to clean it is.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;Now, &lt;em&gt;clean the sink&lt;/em&gt;. Throw out any food caught in the food
+traps, give it a general wipe down.&lt;/p&gt;
+
+
+&lt;p&gt;Finally, &lt;em&gt;sweep the floor&lt;/em&gt;. Doesn’t have to be super thorough,
+just get the most obvious debris off the floor.&lt;/p&gt;
+
+
+&lt;p&gt;And, finally, done. Good job.&lt;/p&gt;
+
+
+&lt;p&gt;As I said before: Having a process like this really helps, because it
+lets you maintain momentum, see clear and visible progress as you go,
+and prioritise in a way that makes sure the most important tasks all get
+done.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2025-03-23-21:48.html" rel="alternate"/>
   </entry>
 </feed>
