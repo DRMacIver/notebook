@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-03-24T21:45:00+00:00</updated>
+  <updated>2025-03-25T20:16:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,104 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2024-07-31-14:05.html</id>
-    <title>Asymmetric vices and the unity of virtue</title>
-    <updated>2024-07-31T14:16:15+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Asymmetric vices and the unity of virtue&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2024-07-31&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I was trying to find a post I’d written about this and then realised
-it was &lt;a href="https://x.com/DRMacIver/status/1662193450450649092"&gt;a
-Twitter thread&lt;/a&gt;. This post is just me copying out that thread and
-lightly editing it for format so I have somewhere more stable to refer
-to it.&lt;/p&gt;
-
-
-&lt;p&gt;Aristotle’s conception of “virtue” is as a golden mean between two
-vices: One of deficit, one of success. e.g. courage is the virtue that
-lies between cowardice and foolhardiness.&lt;/p&gt;
-
-
-&lt;p&gt;Something I realised is that there’s a sort of fundamental asymmetry
-between these two vices. A vice of excess has a totally different
-character from a vice of deficit. If you think of a virtue as a kind of
-drive in a direction, one vice is a lack of that drive, but the other is
-not in fact an excess of it.&lt;/p&gt;
-
-
-&lt;p&gt;Take honesty as the virtue defined by valuing truth. A dearth of
-valuing truth is certainly a vice. But the vice of being “too honest” is
-not really about valuing truth too much. An excess of honesty is bad not
-because too much truth is bad but because of non-truth considerations.
-e.g. you’re overly blunt if you tell the truth without consideration for
-others’ feelings. You’re foolhardy if you speak truth to power without
-care for consequences.&lt;/p&gt;
-
-
-&lt;p&gt;The vice of being overly honest is not that your drive to truth is
-too strong, but that you’ve not stabilised it by taking into account
-other things.&lt;/p&gt;
-
-
-&lt;p&gt;What other things do you need to take into account? Anything you
-value.&lt;/p&gt;
-
-
-&lt;p&gt;Not everything you value is valued for good reasons. e.g. if you tell
-or omit the truth in the circumstances where that is the right thing to
-do, but it’s because you’re lazy and it’s too hard work in the cases
-where you should be circumspect, that’s not true virtue even if results
-are good.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;In large part because this is not going to reliably
-track the situations in which you should tell or omit the truth. If
-somehow laziness were exactly tracking the right thing to do, I think it
-would be reasonable to call it a virtue, but it doesn’t. Sometimes you
-need to tell the truth even when it’s hard work.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;What’s a properly virtuous stabilising force?&lt;/p&gt;
-
-
-&lt;p&gt;Well, another virtue.&lt;/p&gt;
-
-
-&lt;p&gt;You are properly practicing the virtue of honesty if your desire for
-truth is tempered by the other virtuous desires you’ve cultivated.
-i.e. the proper exercise of a virtue requires that it be tempered by all
-the others.&lt;/p&gt;
-
-
-&lt;p&gt;This is not, I think, exactly what Aristotle means by the unity of
-the virtues, but it’s pretty close.&lt;/p&gt;
-
-
-&lt;p&gt;It is, however, partly an artifact of us insisting that there
-&lt;em&gt;is&lt;/em&gt; a unified good to aim for, and it’s not clear that all such
-goods unify the same way.&lt;/p&gt;
-
-
-&lt;p&gt;If we take the drive towards truth, this is not naturally unified
-with the drive to face fears. But once we allow for the fact that both
-matter, we are forced to unify them in some way by allowing for there to
-be an “appropriate” amount of each, in which each balances the
-other.&lt;/p&gt;
-
-
-&lt;p&gt;By defining virtues as the appropriate level of exercising individual
-drives for the good, we demand their unity, because without unity we
-cannot have a suitable notion of “appropriate”.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2024-07-31-14:05.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-09-22-14:28.html</id>
     <title>Set operations on SAT problems</title>
@@ -2177,7 +2079,7 @@ done.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-03-24-21:45.html</id>
     <title>Particularity</title>
-    <updated>2025-03-24T21:45:00+00:00</updated>
+    <updated>2025-03-24T23:02:31+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Particularity&lt;/p&gt;
@@ -2286,5 +2188,103 @@ itself.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2025-03-24-21:45.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2025-03-25-20:16.html</id>
+    <title>Figuring out what hurts</title>
+    <updated>2025-03-25T20:16:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Figuring out what hurts&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2025-03-25&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;One of the biggest reasons why the &lt;a href="https://notebook.drmaciver.com/posts/2022-05-30-18:41.html"&gt;victim
+of metonymy&lt;/a&gt; concept is important is that it helps you figure out
+what you need to vary to fix a problem.&lt;/p&gt;
+
+
+&lt;p&gt;Something interesting that’s happened to me recently is that I’ve had
+several work calls that were 2-3 hours long. Part of why this is
+interesting is that they didn’t &lt;em&gt;feel&lt;/em&gt; that long, because we were
+pair programming on Tuple. This meant we weren’t looking at each other’s
+faces (didn’t even have our webcams on).&lt;/p&gt;
+
+
+&lt;p&gt;Not that there’s anything wrong with my colleague’s face you
+understand. But there’s something about &lt;em&gt;looking at faces on video
+calls&lt;/em&gt; that ends up producing something like fatigue&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Your regular reminder that fatigue isn’t a real thing.&lt;/span&gt;. I
+have recurring video calls with dear friends and family whose faces I
+enjoy seeing very much, and usually my brain is mush an hour in.&lt;/p&gt;
+
+
+&lt;p&gt;I also have a recurring phone call with a friend, which I usually
+take while walking or doing chores, and I have no such mush effect. I’m
+reasonably sure the difference is the fact that it’s voice only and my
+attention is focused on something rather than someone.&lt;/p&gt;
+
+
+&lt;p&gt;In constrast, spending time with someone in person has no such
+limitations. Part of that is that you don’t actually spend most of your
+in person interactions staring directly at someone’s face, you look
+around, you look at things together, your gaze wanders. This is normal.
+There’s somethign about the fixity of the face on the screen that is a
+real problem.&lt;/p&gt;
+
+
+&lt;p&gt;Video calls seem particularly prone to being treated as a unitary
+thing that just has intrinsic problems, even when those problems are
+easily fixed or avoided. e.g. back during the height of the pandemic I
+did singing lessons online. I’m glad I did it but it was, frankly, a bit
+of a miserable experience to do online. My singing teacher clearly
+thought so too.&lt;/p&gt;
+
+
+&lt;p&gt;One of the things that was bad about it was that she insisted on
+trying to keep time with me as I sung. It took quite some time of me
+explaining in detail how latency worked and how what she was asking for
+was literally a violation of the laws of physics&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I think this isn’t technically true and we were
+physically close enough that a point to point laser comms could have got
+latency acceptably low.&lt;/span&gt;
+before we figured out better ways to do time keeping using a metronome
+app.&lt;/p&gt;
+
+
+&lt;p&gt;I assume she would have figured this out eventually - we’re now at a
+point where &lt;em&gt;most&lt;/em&gt; people have figured out you can’t sing
+together on a video call at least - but it was just sortof baffling to
+be faced with someone so specifically doing the thing that obviously
+wasn’t working and just blaming it on “well video calls suck”.&lt;/p&gt;
+
+
+&lt;p&gt;Once we’d fixed this and switched to using a local metronome it
+worked much better. I still didn’t love doing singing lessons online,
+but it was no longer an active exercise in frustration.&lt;/p&gt;
+
+
+&lt;p&gt;This is the thing about attending to the specific: When you know
+what, precisely, it is about it that hurts, you can fix that.&lt;/p&gt;
+
+
+&lt;p&gt;Not all my calls with friends and family have moved to the less
+painful mode, for one reason or another, but I’ve figured out my own
+affordances for them. Sometimes I cook while talking, sometimes I play
+Slay the Spire during a call, and both of these engage my eyes in a way
+that allows me to maintain the actual conversation.&lt;/p&gt;
+
+
+&lt;p&gt;And sometimes I just put up with it. Looking at my friends and family
+has its upsides! But knowing the source of the specific problem gives me
+options that I wouldn’t have if I just treated the effect as a
+mysterious gestalt effect of video calls.&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Not that I actually fully understand why the specific
+thing causes this problem, but I don’t need to to work aroudn it.&lt;/span&gt;&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2025-03-25-20:16.html" rel="alternate"/>
   </entry>
 </feed>
