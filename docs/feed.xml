@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-03-25T20:16:00+00:00</updated>
+  <updated>2025-03-26T19:06:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,343 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2024-09-22-14:28.html</id>
-    <title>Set operations on SAT problems</title>
-    <updated>2024-09-22T17:58:14+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Set operations on SAT problems&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2024-09-22&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I’ve figured out a neat trick recently that I’ve not seen before,
-although I don’t know if it’s actually novel. It’s a fairly general
-method for manipulating SAT problems in CNF form to perform arbitrary
-set options on their solution set, without adding additional variables
-to the problem.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;It’s somewhere between well-known and obvious that you
-can do it with adding additional variables, and I make use of that for
-doing this.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;(Disclaimer: The idea definitely works, and I’ve run the code I’m
-posting and it seems to work, but it’s undertested and may be buggy)&lt;/p&gt;
-
-
-&lt;p&gt;Here’s some code for calculating the set difference of two SAT
-problems expressed in CNF:&lt;/p&gt;
-
-
-&lt;div class="sourceCode" id="cb1"&gt;&lt;pre class="sourceCode python"&gt;&lt;code class="sourceCode python"&gt;&lt;span id="cb1-1"&gt;&lt;a aria-hidden="true" href="#cb1-1" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="im"&gt;from&lt;/span&gt; pysat.solvers &lt;span class="im"&gt;import&lt;/span&gt; Glucose4&lt;/span&gt;
-&lt;span id="cb1-2"&gt;&lt;a aria-hidden="true" href="#cb1-2" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="im"&gt;from&lt;/span&gt; .cnfbuilder &lt;span class="im"&gt;import&lt;/span&gt; CNFBuilder&lt;/span&gt;
-&lt;span id="cb1-3"&gt;&lt;a aria-hidden="true" href="#cb1-3" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb1-4"&gt;&lt;a aria-hidden="true" href="#cb1-4" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb1-5"&gt;&lt;a aria-hidden="true" href="#cb1-5" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="kw"&gt;def&lt;/span&gt; setminus(A: &lt;span class="bu"&gt;list&lt;/span&gt;[&lt;span class="bu"&gt;list&lt;/span&gt;[&lt;span class="bu"&gt;int&lt;/span&gt;]], B: &lt;span class="bu"&gt;list&lt;/span&gt;[&lt;span class="bu"&gt;list&lt;/span&gt;[&lt;span class="bu"&gt;int&lt;/span&gt;]]) &lt;span class="op"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="bu"&gt;list&lt;/span&gt;[&lt;span class="bu"&gt;list&lt;/span&gt;[&lt;span class="bu"&gt;int&lt;/span&gt;]]:&lt;/span&gt;
-&lt;span id="cb1-6"&gt;&lt;a aria-hidden="true" href="#cb1-6" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="co"&gt;"""Returns a set of SAT clauses such that the satisfying&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-7"&gt;&lt;a aria-hidden="true" href="#cb1-7" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="co"&gt;    solutions are precisely the satisfying solutions of A that&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-8"&gt;&lt;a aria-hidden="true" href="#cb1-8" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="co"&gt;    do not satisfy B.&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-9"&gt;&lt;a aria-hidden="true" href="#cb1-9" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb1-10"&gt;&lt;a aria-hidden="true" href="#cb1-10" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="co"&gt;    A, B are SAT formulae represented in CNF in the usual way&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-11"&gt;&lt;a aria-hidden="true" href="#cb1-11" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="co"&gt;    (positive literals correspond to a variable, negative literals&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-12"&gt;&lt;a aria-hidden="true" href="#cb1-12" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="co"&gt;    to the negation fo that variable). The returned formula is in&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-13"&gt;&lt;a aria-hidden="true" href="#cb1-13" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="co"&gt;    the same format.&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-14"&gt;&lt;a aria-hidden="true" href="#cb1-14" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="co"&gt;    """&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-15"&gt;&lt;a aria-hidden="true" href="#cb1-15" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb1-16"&gt;&lt;a aria-hidden="true" href="#cb1-16" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="co"&gt;# Set of clauses that we incrementally expand until their&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-17"&gt;&lt;a aria-hidden="true" href="#cb1-17" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="co"&gt;# satisfying solutions are solutions(A) - solutions(B).&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-18"&gt;&lt;a aria-hidden="true" href="#cb1-18" tabindex="-1"&gt;&lt;/a&gt;    result_clauses &lt;span class="op"&gt;=&lt;/span&gt; &lt;span class="bu"&gt;list&lt;/span&gt;(A)&lt;/span&gt;
-&lt;span id="cb1-19"&gt;&lt;a aria-hidden="true" href="#cb1-19" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb1-20"&gt;&lt;a aria-hidden="true" href="#cb1-20" tabindex="-1"&gt;&lt;/a&gt;    B &lt;span class="op"&gt;=&lt;/span&gt; &lt;span class="bu"&gt;list&lt;/span&gt;(B)&lt;/span&gt;
-&lt;span id="cb1-21"&gt;&lt;a aria-hidden="true" href="#cb1-21" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb1-22"&gt;&lt;a aria-hidden="true" href="#cb1-22" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="co"&gt;# We are only interested in clauses in B that are not also in A,&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-23"&gt;&lt;a aria-hidden="true" href="#cb1-23" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="co"&gt;# as every clause that is in A is always satisfied by an element&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-24"&gt;&lt;a aria-hidden="true" href="#cb1-24" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="co"&gt;# of our result.&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-25"&gt;&lt;a aria-hidden="true" href="#cb1-25" tabindex="-1"&gt;&lt;/a&gt;    target_clauses &lt;span class="op"&gt;=&lt;/span&gt; {&lt;span class="bu"&gt;tuple&lt;/span&gt;(&lt;span class="bu"&gt;sorted&lt;/span&gt;(c)) &lt;span class="cf"&gt;for&lt;/span&gt; c &lt;span class="kw"&gt;in&lt;/span&gt; B} &lt;span class="op"&gt;-&lt;/span&gt; {&lt;span class="bu"&gt;tuple&lt;/span&gt;(&lt;span class="bu"&gt;sorted&lt;/span&gt;(c)) &lt;span class="cf"&gt;for&lt;/span&gt; c &lt;span class="kw"&gt;in&lt;/span&gt; A}&lt;/span&gt;
-&lt;span id="cb1-26"&gt;&lt;a aria-hidden="true" href="#cb1-26" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb1-27"&gt;&lt;a aria-hidden="true" href="#cb1-27" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="co"&gt;# Every element of A satisfies B, so the set is empty.&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-28"&gt;&lt;a aria-hidden="true" href="#cb1-28" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="cf"&gt;if&lt;/span&gt; &lt;span class="kw"&gt;not&lt;/span&gt; target_clauses:&lt;/span&gt;
-&lt;span id="cb1-29"&gt;&lt;a aria-hidden="true" href="#cb1-29" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="cf"&gt;return&lt;/span&gt; [[&lt;span class="dv"&gt;1&lt;/span&gt;], [&lt;span class="op"&gt;-&lt;/span&gt;&lt;span class="dv"&gt;1&lt;/span&gt;]]&lt;/span&gt;
-&lt;span id="cb1-30"&gt;&lt;a aria-hidden="true" href="#cb1-30" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb1-31"&gt;&lt;a aria-hidden="true" href="#cb1-31" tabindex="-1"&gt;&lt;/a&gt;    builder &lt;span class="op"&gt;=&lt;/span&gt; CNFBuilder(A)&lt;/span&gt;
-&lt;span id="cb1-32"&gt;&lt;a aria-hidden="true" href="#cb1-32" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb1-33"&gt;&lt;a aria-hidden="true" href="#cb1-33" tabindex="-1"&gt;&lt;/a&gt;    b_is_satisfied &lt;span class="op"&gt;=&lt;/span&gt; builder.&lt;span class="bu"&gt;all&lt;/span&gt;([builder.&lt;span class="bu"&gt;any&lt;/span&gt;(c) &lt;span class="cf"&gt;for&lt;/span&gt; c &lt;span class="kw"&gt;in&lt;/span&gt; target_clauses])&lt;/span&gt;
-&lt;span id="cb1-34"&gt;&lt;a aria-hidden="true" href="#cb1-34" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb1-35"&gt;&lt;a aria-hidden="true" href="#cb1-35" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="co"&gt;# This is a set of clauses for the intersection of our current&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-36"&gt;&lt;a aria-hidden="true" href="#cb1-36" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="co"&gt;# best answer with B. If these are satisfiable we're not done yet.&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-37"&gt;&lt;a aria-hidden="true" href="#cb1-37" tabindex="-1"&gt;&lt;/a&gt;    intersection_clauses &lt;span class="op"&gt;=&lt;/span&gt; &lt;span class="bu"&gt;list&lt;/span&gt;(A) &lt;span class="op"&gt;+&lt;/span&gt; &lt;span class="bu"&gt;list&lt;/span&gt;(B)&lt;/span&gt;
-&lt;span id="cb1-38"&gt;&lt;a aria-hidden="true" href="#cb1-38" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb1-39"&gt;&lt;a aria-hidden="true" href="#cb1-39" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="co"&gt;# This is a set of clauses with new variables introduced&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-40"&gt;&lt;a aria-hidden="true" href="#cb1-40" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="co"&gt;# such that an assignment is valid iff it can be extended&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-41"&gt;&lt;a aria-hidden="true" href="#cb1-41" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="co"&gt;# to a valid assignment of these clauses.&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-42"&gt;&lt;a aria-hidden="true" href="#cb1-42" tabindex="-1"&gt;&lt;/a&gt;    general_clauses &lt;span class="op"&gt;=&lt;/span&gt; builder.clauses &lt;span class="op"&gt;+&lt;/span&gt; [[&lt;span class="op"&gt;-&lt;/span&gt;b_is_satisfied]]&lt;/span&gt;
-&lt;span id="cb1-43"&gt;&lt;a aria-hidden="true" href="#cb1-43" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb1-44"&gt;&lt;a aria-hidden="true" href="#cb1-44" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="cf"&gt;while&lt;/span&gt; &lt;span class="va"&gt;True&lt;/span&gt;:&lt;/span&gt;
-&lt;span id="cb1-45"&gt;&lt;a aria-hidden="true" href="#cb1-45" tabindex="-1"&gt;&lt;/a&gt;        solver &lt;span class="op"&gt;=&lt;/span&gt; Glucose4(intersection_clauses)&lt;/span&gt;
-&lt;span id="cb1-46"&gt;&lt;a aria-hidden="true" href="#cb1-46" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="cf"&gt;if&lt;/span&gt; &lt;span class="kw"&gt;not&lt;/span&gt; solver.solve():&lt;/span&gt;
-&lt;span id="cb1-47"&gt;&lt;a aria-hidden="true" href="#cb1-47" tabindex="-1"&gt;&lt;/a&gt;            &lt;span class="cf"&gt;return&lt;/span&gt; result_clauses&lt;/span&gt;
-&lt;span id="cb1-48"&gt;&lt;a aria-hidden="true" href="#cb1-48" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb1-49"&gt;&lt;a aria-hidden="true" href="#cb1-49" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="co"&gt;# This is a solution to our result_clauses that is also in&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-50"&gt;&lt;a aria-hidden="true" href="#cb1-50" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="co"&gt;# B, and so indicates that we're not done.&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-51"&gt;&lt;a aria-hidden="true" href="#cb1-51" tabindex="-1"&gt;&lt;/a&gt;        counter_example &lt;span class="op"&gt;=&lt;/span&gt; solver.get_model()&lt;/span&gt;
-&lt;span id="cb1-52"&gt;&lt;a aria-hidden="true" href="#cb1-52" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb1-53"&gt;&lt;a aria-hidden="true" href="#cb1-53" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="co"&gt;# We now feed it in to the general clauses. This cannot be&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-54"&gt;&lt;a aria-hidden="true" href="#cb1-54" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="co"&gt;# extended to a satisfying solution, because a solution is&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-55"&gt;&lt;a aria-hidden="true" href="#cb1-55" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="co"&gt;# satisfying for general_clauses if and only if it corresponds&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-56"&gt;&lt;a aria-hidden="true" href="#cb1-56" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="co"&gt;# to the unique extension of some satisfaction of A setminus B.&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-57"&gt;&lt;a aria-hidden="true" href="#cb1-57" tabindex="-1"&gt;&lt;/a&gt;        clause_generator &lt;span class="op"&gt;=&lt;/span&gt; Glucose4(general_clauses)&lt;/span&gt;
-&lt;span id="cb1-58"&gt;&lt;a aria-hidden="true" href="#cb1-58" tabindex="-1"&gt;&lt;/a&gt;        solved &lt;span class="op"&gt;=&lt;/span&gt; clause_generator.solve(assumptions&lt;span class="op"&gt;=&lt;/span&gt;counter_example)&lt;/span&gt;
-&lt;span id="cb1-59"&gt;&lt;a aria-hidden="true" href="#cb1-59" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="cf"&gt;assert&lt;/span&gt; &lt;span class="kw"&gt;not&lt;/span&gt; solved&lt;/span&gt;
-&lt;span id="cb1-60"&gt;&lt;a aria-hidden="true" href="#cb1-60" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb1-61"&gt;&lt;a aria-hidden="true" href="#cb1-61" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="co"&gt;# This gives us a minimal clause that any solution to A setminus B must&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-62"&gt;&lt;a aria-hidden="true" href="#cb1-62" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="co"&gt;# satisfy k&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-63"&gt;&lt;a aria-hidden="true" href="#cb1-63" tabindex="-1"&gt;&lt;/a&gt;        core &lt;span class="op"&gt;=&lt;/span&gt; clause_generator.get_core()&lt;/span&gt;
-&lt;span id="cb1-64"&gt;&lt;a aria-hidden="true" href="#cb1-64" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="cf"&gt;assert&lt;/span&gt; core &lt;span class="kw"&gt;is&lt;/span&gt; &lt;span class="kw"&gt;not&lt;/span&gt; &lt;span class="va"&gt;None&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-65"&gt;&lt;a aria-hidden="true" href="#cb1-65" tabindex="-1"&gt;&lt;/a&gt;        new_clause &lt;span class="op"&gt;=&lt;/span&gt; [&lt;span class="op"&gt;-&lt;/span&gt;v &lt;span class="cf"&gt;for&lt;/span&gt; v &lt;span class="kw"&gt;in&lt;/span&gt; core]&lt;/span&gt;
-&lt;span id="cb1-66"&gt;&lt;a aria-hidden="true" href="#cb1-66" tabindex="-1"&gt;&lt;/a&gt;        general_clauses.append(new_clause)&lt;/span&gt;
-&lt;span id="cb1-67"&gt;&lt;a aria-hidden="true" href="#cb1-67" tabindex="-1"&gt;&lt;/a&gt;        intersection_clauses.append(new_clause)&lt;/span&gt;
-&lt;span id="cb1-68"&gt;&lt;a aria-hidden="true" href="#cb1-68" tabindex="-1"&gt;&lt;/a&gt;        result_clauses.append(new_clause)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;Where CNFBuilder is the following fairly straightforward class for
-building up a set of clauses:&lt;/p&gt;
-
-
-&lt;div class="sourceCode" id="cb2"&gt;&lt;pre class="sourceCode python"&gt;&lt;code class="sourceCode python"&gt;&lt;span id="cb2-1"&gt;&lt;a aria-hidden="true" href="#cb2-1" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="kw"&gt;class&lt;/span&gt; CNFBuilder:&lt;/span&gt;
-&lt;span id="cb2-2"&gt;&lt;a aria-hidden="true" href="#cb2-2" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="kw"&gt;def&lt;/span&gt; &lt;span class="fu"&gt;__init__&lt;/span&gt;(&lt;span class="va"&gt;self&lt;/span&gt;, clauses):&lt;/span&gt;
-&lt;span id="cb2-3"&gt;&lt;a aria-hidden="true" href="#cb2-3" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="va"&gt;self&lt;/span&gt;.clauses &lt;span class="op"&gt;=&lt;/span&gt; &lt;span class="bu"&gt;list&lt;/span&gt;(clauses)&lt;/span&gt;
-&lt;span id="cb2-4"&gt;&lt;a aria-hidden="true" href="#cb2-4" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="va"&gt;self&lt;/span&gt;.__nextvar &lt;span class="op"&gt;=&lt;/span&gt; (&lt;/span&gt;
-&lt;span id="cb2-5"&gt;&lt;a aria-hidden="true" href="#cb2-5" tabindex="-1"&gt;&lt;/a&gt;            &lt;span class="bu"&gt;max&lt;/span&gt;(&lt;span class="bu"&gt;abs&lt;/span&gt;(literal) &lt;span class="cf"&gt;for&lt;/span&gt; clause &lt;span class="kw"&gt;in&lt;/span&gt; clauses &lt;span class="cf"&gt;for&lt;/span&gt; literal &lt;span class="kw"&gt;in&lt;/span&gt; clause) &lt;span class="op"&gt;+&lt;/span&gt; &lt;span class="dv"&gt;1&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb2-6"&gt;&lt;a aria-hidden="true" href="#cb2-6" tabindex="-1"&gt;&lt;/a&gt;        )&lt;/span&gt;
-&lt;span id="cb2-7"&gt;&lt;a aria-hidden="true" href="#cb2-7" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb2-8"&gt;&lt;a aria-hidden="true" href="#cb2-8" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="kw"&gt;def&lt;/span&gt; &lt;span class="bu"&gt;any&lt;/span&gt;(&lt;span class="va"&gt;self&lt;/span&gt;, variables) &lt;span class="op"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="bu"&gt;int&lt;/span&gt;:&lt;/span&gt;
-&lt;span id="cb2-9"&gt;&lt;a aria-hidden="true" href="#cb2-9" tabindex="-1"&gt;&lt;/a&gt;        result &lt;span class="op"&gt;=&lt;/span&gt; &lt;span class="va"&gt;self&lt;/span&gt;.__newvar()&lt;/span&gt;
-&lt;span id="cb2-10"&gt;&lt;a aria-hidden="true" href="#cb2-10" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="co"&gt;# Any variable being true implies the result variable is true.&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb2-11"&gt;&lt;a aria-hidden="true" href="#cb2-11" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="cf"&gt;for&lt;/span&gt; v &lt;span class="kw"&gt;in&lt;/span&gt; variables:&lt;/span&gt;
-&lt;span id="cb2-12"&gt;&lt;a aria-hidden="true" href="#cb2-12" tabindex="-1"&gt;&lt;/a&gt;            &lt;span class="va"&gt;self&lt;/span&gt;.__implies(v, result)&lt;/span&gt;
-&lt;span id="cb2-13"&gt;&lt;a aria-hidden="true" href="#cb2-13" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb2-14"&gt;&lt;a aria-hidden="true" href="#cb2-14" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="co"&gt;# If none of the variables are true, then any(variables) is false.&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb2-15"&gt;&lt;a aria-hidden="true" href="#cb2-15" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="va"&gt;self&lt;/span&gt;.clauses.append([&lt;span class="op"&gt;-&lt;/span&gt;result] &lt;span class="op"&gt;+&lt;/span&gt; [v &lt;span class="cf"&gt;for&lt;/span&gt; v &lt;span class="kw"&gt;in&lt;/span&gt; variables])&lt;/span&gt;
-&lt;span id="cb2-16"&gt;&lt;a aria-hidden="true" href="#cb2-16" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="cf"&gt;return&lt;/span&gt; result&lt;/span&gt;
-&lt;span id="cb2-17"&gt;&lt;a aria-hidden="true" href="#cb2-17" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb2-18"&gt;&lt;a aria-hidden="true" href="#cb2-18" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="kw"&gt;def&lt;/span&gt; &lt;span class="bu"&gt;all&lt;/span&gt;(&lt;span class="va"&gt;self&lt;/span&gt;, variables) &lt;span class="op"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="bu"&gt;int&lt;/span&gt;:&lt;/span&gt;
-&lt;span id="cb2-19"&gt;&lt;a aria-hidden="true" href="#cb2-19" tabindex="-1"&gt;&lt;/a&gt;        result &lt;span class="op"&gt;=&lt;/span&gt; &lt;span class="va"&gt;self&lt;/span&gt;.__newvar()&lt;/span&gt;
-&lt;span id="cb2-20"&gt;&lt;a aria-hidden="true" href="#cb2-20" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="cf"&gt;for&lt;/span&gt; v &lt;span class="kw"&gt;in&lt;/span&gt; variables:&lt;/span&gt;
-&lt;span id="cb2-21"&gt;&lt;a aria-hidden="true" href="#cb2-21" tabindex="-1"&gt;&lt;/a&gt;            &lt;span class="va"&gt;self&lt;/span&gt;.__implies(result, v)&lt;/span&gt;
-&lt;span id="cb2-22"&gt;&lt;a aria-hidden="true" href="#cb2-22" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb2-23"&gt;&lt;a aria-hidden="true" href="#cb2-23" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="co"&gt;# If all of the variables are true, then all(variables) is true.&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb2-24"&gt;&lt;a aria-hidden="true" href="#cb2-24" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="va"&gt;self&lt;/span&gt;.clauses.append([result] &lt;span class="op"&gt;+&lt;/span&gt; [&lt;span class="op"&gt;-&lt;/span&gt;v &lt;span class="cf"&gt;for&lt;/span&gt; v &lt;span class="kw"&gt;in&lt;/span&gt; variables])&lt;/span&gt;
-&lt;span id="cb2-25"&gt;&lt;a aria-hidden="true" href="#cb2-25" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="cf"&gt;return&lt;/span&gt; result&lt;/span&gt;
-&lt;span id="cb2-26"&gt;&lt;a aria-hidden="true" href="#cb2-26" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb2-27"&gt;&lt;a aria-hidden="true" href="#cb2-27" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="kw"&gt;def&lt;/span&gt; __implies(&lt;span class="va"&gt;self&lt;/span&gt;, l, r):&lt;/span&gt;
-&lt;span id="cb2-28"&gt;&lt;a aria-hidden="true" href="#cb2-28" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="va"&gt;self&lt;/span&gt;.clauses.append([&lt;span class="op"&gt;-&lt;/span&gt;l, r])&lt;/span&gt;
-&lt;span id="cb2-29"&gt;&lt;a aria-hidden="true" href="#cb2-29" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb2-30"&gt;&lt;a aria-hidden="true" href="#cb2-30" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="kw"&gt;def&lt;/span&gt; __newvar(&lt;span class="va"&gt;self&lt;/span&gt;):&lt;/span&gt;
-&lt;span id="cb2-31"&gt;&lt;a aria-hidden="true" href="#cb2-31" tabindex="-1"&gt;&lt;/a&gt;        result &lt;span class="op"&gt;=&lt;/span&gt; &lt;span class="va"&gt;self&lt;/span&gt;.__nextvar&lt;/span&gt;
-&lt;span id="cb2-32"&gt;&lt;a aria-hidden="true" href="#cb2-32" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="va"&gt;self&lt;/span&gt;.__nextvar &lt;span class="op"&gt;+=&lt;/span&gt; &lt;span class="dv"&gt;1&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb2-33"&gt;&lt;a aria-hidden="true" href="#cb2-33" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="cf"&gt;return&lt;/span&gt; result&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;Let’s unpack this:&lt;/p&gt;
-
-
-&lt;p&gt;We’ve got sets of clauses A, B, and we want to calculate a set of
-clauses that represents the set of solutions solutions(A) -
-solutions(B). We do this by starting from A, and iteratively refining it
-to exclude solutions we don’t want.&lt;/p&gt;
-
-
-&lt;p&gt;This works by building up a set of clauses C as follows:&lt;/p&gt;
-
-
-&lt;ol type="1"&gt;
-&lt;li&gt;Initially, C = A. We maintain throughout that
-&lt;code&gt;solutions(A) - solutions(B) subset solutions(C) subset solutions(A)&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;We check if there are any solutions to C that are also solutions to
-B. If there are not, we’re done and
-&lt;code&gt;solutions(C) = solutions(A) - solutions(B)&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;If not, we find a subset of the resulting assignment such that no
-extension of that partial assignment can be in
-&lt;code&gt;solutions(A) - solutions(B)&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;We add a negation of that subset to C as a new clause, and
-repeat.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;Part (2) is easy: If you concatenate two sets of clauses, you’ll get
-a set of clauses whose solutions are precisely the intersection of the
-two solutions.
-i.e. &lt;code&gt;solutions(C + B) = solutions(C) &amp;amp; solutions(B)&lt;/code&gt;. So
-any solution to &lt;code&gt;solutions(C) + solutions(B)&lt;/code&gt; gives us the
-desired example.&lt;/p&gt;
-
-
-&lt;p&gt;Part (3) is solved through two observations: Firstly, we can easily
-construct a larger SAT problem with more variables such that
-&lt;code&gt;x in solutions(A) - solutions(B)&lt;/code&gt; iff &lt;code&gt;x&lt;/code&gt; extends
-to a solution of the larger problem. We do this by introducing variables
-that correspond to B being satisfied (first we introduce a variable for
-each clause in B that is not in A, and then we introduce a variable
-corresponding to their intersection). We can then feed in our solution
-to an incremental SAT solver, get a minimal subset of it that cannot be
-extended to a solution (and thus is not present in any member of
-&lt;code&gt;solutions(A) - solutions(B)&lt;/code&gt;, and add this as a clause
-ruling out our counterexample and anything like it, without ruling out
-any solutions we want to include.&lt;/p&gt;
-
-
-&lt;p&gt;This is a fairly general solution that can be used to perform
-arbitrary boolean operations on SAT problems, because the components you
-need are:&lt;/p&gt;
-
-
-&lt;ol type="1"&gt;
-&lt;li&gt;Some set of clauses representing a superset of your desired target
-set.&lt;/li&gt;
-&lt;li&gt;An oracle that will provide you with an example satisfying your set
-of clauses that is not in the desired target set (or say that none
-exists).&lt;/li&gt;
-&lt;li&gt;An oracle that will take that example and turn it into clause that
-every element of your desired target set satisfies.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;You then just iteratively add clauses to your initial set of clauses
-until you are done.&lt;/p&gt;
-
-
-&lt;p&gt;You can always use the empty set of clauses for (1),&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;This isn’t great though, because the runtime of this is
-that it takes two calls to a SAT solver per clause added, so where
-possible you want to start with a set of clauses that closely
-approximates your target.&lt;/span&gt; and
-in the absence of a more convenient choice of oracle for (2) you can
-always construct it in the same way that the oracle for (3) is
-constructed, by adding new variables.&lt;/p&gt;
-
-
-&lt;p&gt;Another neat thing you can do with essentially the same idea&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;And, in fact, where I first figured this out.&lt;/span&gt; is you can take a SAT problem and
-remove a variable from it&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;You can use this to refine to arbitrary subsets of the
-variables by removing one variable at a time, but I’ve not found a
-better way to do it than that - the natural ways of representing it all
-introduce exponentially many new variables in the number of variables
-you want to remove.&lt;/span&gt;, creating the set of clauses that
-have a satisfying solution if and only if there is some assignment of
-the removed variable that satisfies them. Here’s some code that does
-that:&lt;/p&gt;
-
-
-&lt;div class="sourceCode" id="cb3"&gt;&lt;pre class="sourceCode python"&gt;&lt;code class="sourceCode python"&gt;&lt;span id="cb3-1"&gt;&lt;a aria-hidden="true" href="#cb3-1" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="kw"&gt;def&lt;/span&gt; remove_one_variable(clauses, variable):&lt;/span&gt;
-&lt;span id="cb3-2"&gt;&lt;a aria-hidden="true" href="#cb3-2" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="co"&gt;"""Return a set of SAT clauses not containing `variable` that accepts only&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb3-3"&gt;&lt;a aria-hidden="true" href="#cb3-3" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="co"&gt;    assignments that can be turned into satisfying assignments of `clauses` through&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb3-4"&gt;&lt;a aria-hidden="true" href="#cb3-4" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="co"&gt;    a suitable choice of assignment for `variable`."""&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb3-5"&gt;&lt;a aria-hidden="true" href="#cb3-5" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="cf"&gt;assert&lt;/span&gt; variable &lt;span class="op"&gt;&amp;gt;&lt;/span&gt; &lt;span class="dv"&gt;0&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb3-6"&gt;&lt;a aria-hidden="true" href="#cb3-6" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb3-7"&gt;&lt;a aria-hidden="true" href="#cb3-7" tabindex="-1"&gt;&lt;/a&gt;    solver &lt;span class="op"&gt;=&lt;/span&gt; Glucose4(clauses)&lt;/span&gt;
-&lt;span id="cb3-8"&gt;&lt;a aria-hidden="true" href="#cb3-8" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb3-9"&gt;&lt;a aria-hidden="true" href="#cb3-9" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="co"&gt;# Current set of clauses representing our result set. Initially starts&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb3-10"&gt;&lt;a aria-hidden="true" href="#cb3-10" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="co"&gt;# out as all clauses that do not reference the variable to remove.&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb3-11"&gt;&lt;a aria-hidden="true" href="#cb3-11" tabindex="-1"&gt;&lt;/a&gt;    refined_clauses: &lt;span class="bu"&gt;list&lt;/span&gt;[Clause] &lt;span class="op"&gt;=&lt;/span&gt; []&lt;/span&gt;
-&lt;span id="cb3-12"&gt;&lt;a aria-hidden="true" href="#cb3-12" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb3-13"&gt;&lt;a aria-hidden="true" href="#cb3-13" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="co"&gt;# All clauses in the original where the variable appears positively.&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb3-14"&gt;&lt;a aria-hidden="true" href="#cb3-14" tabindex="-1"&gt;&lt;/a&gt;    positive_clauses &lt;span class="op"&gt;=&lt;/span&gt; []&lt;/span&gt;
-&lt;span id="cb3-15"&gt;&lt;a aria-hidden="true" href="#cb3-15" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb3-16"&gt;&lt;a aria-hidden="true" href="#cb3-16" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="co"&gt;# All clauses in the original where the variable appears negatively.&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb3-17"&gt;&lt;a aria-hidden="true" href="#cb3-17" tabindex="-1"&gt;&lt;/a&gt;    negative_clauses &lt;span class="op"&gt;=&lt;/span&gt; []&lt;/span&gt;
-&lt;span id="cb3-18"&gt;&lt;a aria-hidden="true" href="#cb3-18" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb3-19"&gt;&lt;a aria-hidden="true" href="#cb3-19" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="cf"&gt;for&lt;/span&gt; clause &lt;span class="kw"&gt;in&lt;/span&gt; clauses:&lt;/span&gt;
-&lt;span id="cb3-20"&gt;&lt;a aria-hidden="true" href="#cb3-20" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="cf"&gt;if&lt;/span&gt; variable &lt;span class="kw"&gt;in&lt;/span&gt; clause:&lt;/span&gt;
-&lt;span id="cb3-21"&gt;&lt;a aria-hidden="true" href="#cb3-21" tabindex="-1"&gt;&lt;/a&gt;            clause &lt;span class="op"&gt;=&lt;/span&gt; &lt;span class="bu"&gt;sorted&lt;/span&gt;(&lt;span class="bu"&gt;set&lt;/span&gt;(clause) &lt;span class="op"&gt;-&lt;/span&gt; {variable})&lt;/span&gt;
-&lt;span id="cb3-22"&gt;&lt;a aria-hidden="true" href="#cb3-22" tabindex="-1"&gt;&lt;/a&gt;            positive_clauses.append(clause)&lt;/span&gt;
-&lt;span id="cb3-23"&gt;&lt;a aria-hidden="true" href="#cb3-23" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="cf"&gt;elif&lt;/span&gt; &lt;span class="op"&gt;-&lt;/span&gt;variable &lt;span class="kw"&gt;in&lt;/span&gt; clause:&lt;/span&gt;
-&lt;span id="cb3-24"&gt;&lt;a aria-hidden="true" href="#cb3-24" tabindex="-1"&gt;&lt;/a&gt;            clause &lt;span class="op"&gt;=&lt;/span&gt; &lt;span class="bu"&gt;sorted&lt;/span&gt;(&lt;span class="bu"&gt;set&lt;/span&gt;(clause) &lt;span class="op"&gt;-&lt;/span&gt; {&lt;span class="op"&gt;-&lt;/span&gt;variable})&lt;/span&gt;
-&lt;span id="cb3-25"&gt;&lt;a aria-hidden="true" href="#cb3-25" tabindex="-1"&gt;&lt;/a&gt;            negative_clauses.append(clause)&lt;/span&gt;
-&lt;span id="cb3-26"&gt;&lt;a aria-hidden="true" href="#cb3-26" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="cf"&gt;else&lt;/span&gt;:&lt;/span&gt;
-&lt;span id="cb3-27"&gt;&lt;a aria-hidden="true" href="#cb3-27" tabindex="-1"&gt;&lt;/a&gt;            refined_clauses.append(clause)&lt;/span&gt;
-&lt;span id="cb3-28"&gt;&lt;a aria-hidden="true" href="#cb3-28" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb3-29"&gt;&lt;a aria-hidden="true" href="#cb3-29" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="cf"&gt;assert&lt;/span&gt; positive_clauses &lt;span class="kw"&gt;or&lt;/span&gt; negative_clauses&lt;/span&gt;
-&lt;span id="cb3-30"&gt;&lt;a aria-hidden="true" href="#cb3-30" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb3-31"&gt;&lt;a aria-hidden="true" href="#cb3-31" tabindex="-1"&gt;&lt;/a&gt;    builder &lt;span class="op"&gt;=&lt;/span&gt; CNFBuilder(refined_clauses)&lt;/span&gt;
-&lt;span id="cb3-32"&gt;&lt;a aria-hidden="true" href="#cb3-32" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb3-33"&gt;&lt;a aria-hidden="true" href="#cb3-33" tabindex="-1"&gt;&lt;/a&gt;    positive_satisfied &lt;span class="op"&gt;=&lt;/span&gt; builder.&lt;span class="bu"&gt;all&lt;/span&gt;(&lt;/span&gt;
-&lt;span id="cb3-34"&gt;&lt;a aria-hidden="true" href="#cb3-34" tabindex="-1"&gt;&lt;/a&gt;        [builder.&lt;span class="bu"&gt;any&lt;/span&gt;(clause) &lt;span class="cf"&gt;for&lt;/span&gt; clause &lt;span class="kw"&gt;in&lt;/span&gt; positive_clauses]&lt;/span&gt;
-&lt;span id="cb3-35"&gt;&lt;a aria-hidden="true" href="#cb3-35" tabindex="-1"&gt;&lt;/a&gt;    )&lt;/span&gt;
-&lt;span id="cb3-36"&gt;&lt;a aria-hidden="true" href="#cb3-36" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb3-37"&gt;&lt;a aria-hidden="true" href="#cb3-37" tabindex="-1"&gt;&lt;/a&gt;    negative_satisfied &lt;span class="op"&gt;=&lt;/span&gt; builder.&lt;span class="bu"&gt;all&lt;/span&gt;(&lt;/span&gt;
-&lt;span id="cb3-38"&gt;&lt;a aria-hidden="true" href="#cb3-38" tabindex="-1"&gt;&lt;/a&gt;        [builder.&lt;span class="bu"&gt;any&lt;/span&gt;(clause) &lt;span class="cf"&gt;for&lt;/span&gt; clause &lt;span class="kw"&gt;in&lt;/span&gt; negative_clauses]&lt;/span&gt;
-&lt;span id="cb3-39"&gt;&lt;a aria-hidden="true" href="#cb3-39" tabindex="-1"&gt;&lt;/a&gt;    )&lt;/span&gt;
-&lt;span id="cb3-40"&gt;&lt;a aria-hidden="true" href="#cb3-40" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb3-41"&gt;&lt;a aria-hidden="true" href="#cb3-41" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="co"&gt;# These clauses are satisfied if and only if all of our&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb3-42"&gt;&lt;a aria-hidden="true" href="#cb3-42" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="co"&gt;# current result clauses are satisfied but there is no possible&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb3-43"&gt;&lt;a aria-hidden="true" href="#cb3-43" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="co"&gt;# assignment of the removed variable that makes the original set&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb3-44"&gt;&lt;a aria-hidden="true" href="#cb3-44" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="co"&gt;# of clauses satisfied.&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb3-45"&gt;&lt;a aria-hidden="true" href="#cb3-45" tabindex="-1"&gt;&lt;/a&gt;    oracle_clauses &lt;span class="op"&gt;=&lt;/span&gt; builder.clauses&lt;/span&gt;
-&lt;span id="cb3-46"&gt;&lt;a aria-hidden="true" href="#cb3-46" tabindex="-1"&gt;&lt;/a&gt;    oracle_clauses.append([&lt;span class="op"&gt;-&lt;/span&gt;positive_satisfied])&lt;/span&gt;
-&lt;span id="cb3-47"&gt;&lt;a aria-hidden="true" href="#cb3-47" tabindex="-1"&gt;&lt;/a&gt;    oracle_clauses.append([&lt;span class="op"&gt;-&lt;/span&gt;negative_satisfied])&lt;/span&gt;
-&lt;span id="cb3-48"&gt;&lt;a aria-hidden="true" href="#cb3-48" tabindex="-1"&gt;&lt;/a&gt;    oracle &lt;span class="op"&gt;=&lt;/span&gt; Glucose4(oracle_clauses)&lt;/span&gt;
-&lt;span id="cb3-49"&gt;&lt;a aria-hidden="true" href="#cb3-49" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb3-50"&gt;&lt;a aria-hidden="true" href="#cb3-50" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="cf"&gt;while&lt;/span&gt; &lt;span class="va"&gt;True&lt;/span&gt;:&lt;/span&gt;
-&lt;span id="cb3-51"&gt;&lt;a aria-hidden="true" href="#cb3-51" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="co"&gt;# Every solution of our refined_clauses has a satisfying extension,&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb3-52"&gt;&lt;a aria-hidden="true" href="#cb3-52" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="co"&gt;# so we're done.&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb3-53"&gt;&lt;a aria-hidden="true" href="#cb3-53" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="cf"&gt;if&lt;/span&gt; &lt;span class="kw"&gt;not&lt;/span&gt; oracle.solve():&lt;/span&gt;
-&lt;span id="cb3-54"&gt;&lt;a aria-hidden="true" href="#cb3-54" tabindex="-1"&gt;&lt;/a&gt;            &lt;span class="cf"&gt;return&lt;/span&gt; refined_clauses&lt;/span&gt;
-&lt;span id="cb3-55"&gt;&lt;a aria-hidden="true" href="#cb3-55" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb3-56"&gt;&lt;a aria-hidden="true" href="#cb3-56" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="co"&gt;# We've got some solution to the refined clauses that cannot be extended.&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb3-57"&gt;&lt;a aria-hidden="true" href="#cb3-57" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="co"&gt;# Turn it into a set of assumptions that cannot be satisfied in the original&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb3-58"&gt;&lt;a aria-hidden="true" href="#cb3-58" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="co"&gt;# SAT problem.&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb3-59"&gt;&lt;a aria-hidden="true" href="#cb3-59" tabindex="-1"&gt;&lt;/a&gt;        counterexample &lt;span class="op"&gt;=&lt;/span&gt; oracle.get_model()&lt;/span&gt;
-&lt;span id="cb3-60"&gt;&lt;a aria-hidden="true" href="#cb3-60" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="cf"&gt;assert&lt;/span&gt; counterexample &lt;span class="kw"&gt;is&lt;/span&gt; &lt;span class="kw"&gt;not&lt;/span&gt; &lt;span class="va"&gt;None&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb3-61"&gt;&lt;a aria-hidden="true" href="#cb3-61" tabindex="-1"&gt;&lt;/a&gt;        assumptions &lt;span class="op"&gt;=&lt;/span&gt; [&lt;/span&gt;
-&lt;span id="cb3-62"&gt;&lt;a aria-hidden="true" href="#cb3-62" tabindex="-1"&gt;&lt;/a&gt;            literal &lt;span class="cf"&gt;for&lt;/span&gt; literal &lt;span class="kw"&gt;in&lt;/span&gt; counterexample &lt;span class="cf"&gt;if&lt;/span&gt; &lt;span class="bu"&gt;abs&lt;/span&gt;(literal) &lt;span class="op"&gt;!=&lt;/span&gt; variable&lt;/span&gt;
-&lt;span id="cb3-63"&gt;&lt;a aria-hidden="true" href="#cb3-63" tabindex="-1"&gt;&lt;/a&gt;        ]&lt;/span&gt;
-&lt;span id="cb3-64"&gt;&lt;a aria-hidden="true" href="#cb3-64" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb3-65"&gt;&lt;a aria-hidden="true" href="#cb3-65" tabindex="-1"&gt;&lt;/a&gt;        solved_assumptions &lt;span class="op"&gt;=&lt;/span&gt; solver.solve(assumptions&lt;span class="op"&gt;=&lt;/span&gt;assumptions)&lt;/span&gt;
-&lt;span id="cb3-66"&gt;&lt;a aria-hidden="true" href="#cb3-66" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="cf"&gt;assert&lt;/span&gt; &lt;span class="kw"&gt;not&lt;/span&gt; solved_assumptions&lt;/span&gt;
-&lt;span id="cb3-67"&gt;&lt;a aria-hidden="true" href="#cb3-67" tabindex="-1"&gt;&lt;/a&gt;        core &lt;span class="op"&gt;=&lt;/span&gt; solver.get_core()&lt;/span&gt;
-&lt;span id="cb3-68"&gt;&lt;a aria-hidden="true" href="#cb3-68" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="cf"&gt;assert&lt;/span&gt; core &lt;span class="kw"&gt;is&lt;/span&gt; &lt;span class="kw"&gt;not&lt;/span&gt; &lt;span class="va"&gt;None&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb3-69"&gt;&lt;a aria-hidden="true" href="#cb3-69" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb3-70"&gt;&lt;a aria-hidden="true" href="#cb3-70" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="co"&gt;# We've learned a new clause that must always hold for the remaining variables.&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb3-71"&gt;&lt;a aria-hidden="true" href="#cb3-71" tabindex="-1"&gt;&lt;/a&gt;        new_clause &lt;span class="op"&gt;=&lt;/span&gt; &lt;span class="bu"&gt;tuple&lt;/span&gt;([&lt;span class="op"&gt;-&lt;/span&gt;literal &lt;span class="cf"&gt;for&lt;/span&gt; literal &lt;span class="kw"&gt;in&lt;/span&gt; core])&lt;/span&gt;
-&lt;span id="cb3-72"&gt;&lt;a aria-hidden="true" href="#cb3-72" tabindex="-1"&gt;&lt;/a&gt;        refined_clauses.append(new_clause)&lt;/span&gt;
-&lt;span id="cb3-73"&gt;&lt;a aria-hidden="true" href="#cb3-73" tabindex="-1"&gt;&lt;/a&gt;        oracle.add_clause(new_clause)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;The idea here is that we use our oracle to find some assignment of
-our current set of clauses over all the remaining variables that cannot
-be satisfied, then use the original set of clauses to turn that into a
-new learned clause. It’s not &lt;em&gt;exactly&lt;/em&gt; the same as the set
-operations method, but it involves essentially the same ideas and
-technologies.&lt;/p&gt;
-
-
-&lt;p&gt;The downside of all of these methods is that they take two SAT calls
-per added clause, and there’s no guarantee that they don’t add
-exponentially many clauses. This isn’t just an “I can’t prove they
-don’t” no guarantee - sometimes they actually do. For example, in the
-context I was trying this, I found that most of the variables in my SAT
-problem were easily removable by adding 10s of clauses, but some seemed
-to run forever. This isn’t actually a problem for my use case for the
-most part (because I can just skip the ones that take too long), but it
-is a fairly fundamental limitation of the approach.&lt;/p&gt;
-
-
-&lt;p&gt;I’m reasonably sure this is just intrinsic to the problem - you can
-represent any boolean expression as CNF, but there’s no guarantee that
-the CNF isn’t exponentially larger than the represented expression, so
-where it is you’ll end up with exactly this sort of blow up.&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, like I said, I don’t know if this is a new idea. I’ve not
-seen it before, and I think I would have if it was common knowledge, but
-it’s totally possible I’ve just not read the right bits of the
-literature to run into it.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2024-09-22-14:28.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2024-10-15-09:00.html</id>
     <title>“Fast” enumeration of partial assignments in SAT problems</title>
@@ -2192,7 +1855,7 @@ itself.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-03-25-20:16.html</id>
     <title>Figuring out what hurts</title>
-    <updated>2025-03-25T20:16:00+00:00</updated>
+    <updated>2025-03-25T21:29:41+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Figuring out what hurts&lt;/p&gt;
@@ -2286,5 +1949,169 @@ thing causes this problem, but I don’t need to to work aroudn it.&lt;/span&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2025-03-25-20:16.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2025-03-26-19:06.html</id>
+    <title>Creativity on demand</title>
+    <updated>2025-03-26T19:06:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Creativity on demand&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2025-03-26&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;One of the things in my bags of tricks is using random prompts for
+things. What should I write about today? IDK, draw a tarot card, flip to
+a random page of a book. Write something in response to it.&lt;/p&gt;
+
+
+&lt;p&gt;Another thing in my bag of tricks is making big lists. Can’t think of
+anything? Think of 100 things instead! Can’t think how to start the
+list? Come up with a bad idea. Or, even worse, a mediocre one.&lt;/p&gt;
+
+
+&lt;p&gt;Another thing in my bag of tricks is to look at something mundane and
+figure out what’s interesting about it. &lt;a href="https://notebook.drmaciver.com/posts/2025-03-23-21:48.html"&gt;Cleaning
+the kitchen&lt;/a&gt; is an example of that. &lt;a href="https://drmaciver.substack.com/p/using-what-youre-given"&gt;So is
+making apples&lt;/a&gt;. To some degree the entire &lt;a href="https://drmaciver.substack.com/p/my-no-longer-secret-magical-practice"&gt;spellcraft
+thing&lt;/a&gt; is about this.&lt;/p&gt;
+
+
+&lt;p&gt;The point that I’m trying to get at is that with all these tools in
+my toolkit, it’s pretty easy for me to solve any drying up of the
+creative wellspring. Not only &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-09:44.html"&gt;can’t
+you run out of ideas&lt;/a&gt;, there are reliable procedures for producing
+more ideas.&lt;/p&gt;
+
+
+&lt;p&gt;For example, here off the top of my head is a spell for writing a
+blog post at the end of the day:&lt;/p&gt;
+
+
+&lt;p&gt;Get a sheet of paper. Write down what you did today - not in detail,
+just a list of high level things.&lt;/p&gt;
+
+
+&lt;p&gt;Pick one. If one of them catches your eye, use that, otherwise pick
+semi-randomly.&lt;/p&gt;
+
+
+&lt;p&gt;Try to pick out some specific features of it - things that remind you
+of other things, or some way it’s unlike other things in that category.
+Especially focus on how you made any decisions about it, or how it
+felt.&lt;/p&gt;
+
+
+&lt;p&gt;Write about that.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway you’ll notice I’m not using this spell right now. I can’t rule
+out that I might in future - I did do the first part of listing out
+stuff that happened in my day, and for example I thought I might write
+something about some work I’m doing on parsing with derivatives, which I
+thought was interesting because of a series of pickles I got myself in
+and out of, or I thought I might write about the lunch I made for
+myself, in which I took some leftovers from our sunday roast and some
+vegetables and turned it into a vaguely Chinese meal.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Fun fact: Left over roast potatoes are great when stir
+fried with a bit of ginger.&lt;/span&gt;
+There’s also something to be said about the experience of waking up, or
+&lt;a href="https://drmaciver.substack.com/p/losing-yourself-in-an-audiobook"&gt;my
+changing relationship with audiobooks&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;I didn’t though, partially because I’d already started on this,
+partially because I didn’t really feel like it.&lt;/p&gt;
+
+
+&lt;p&gt;I’m reading a recent translation of Max Weber’s “Science ad a
+Vocation” right now, and the following passage struck me:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;In both [a laboratory and a factory] it is necessary for somethign,
+and the right thing at that, to &lt;em&gt;occur&lt;/em&gt; to people if they are to
+achieve anything worthwhile.&lt;/p&gt;
+&lt;p&gt;But inspiration cannot be produced to order. And it has nothing in
+common with cold calculation.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;I’ve also recently been reading “The Cult of Information” by Theodore
+Roszak, which is surprisingly good, and it has a similar thing in it
+about how a computer-focused education with its heavy emphasis on
+procedural thinking cannot possibly teach children the full range of
+creative and intuitive thought that we need them to develop.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, the point is that on some level I think they’re wrong.
+Intuitively I believe that I really could write a couple of pages of
+instructions that you could semi-mechanically follow and produce a
+pretty good essay out of. I’m not claiming you could produce
+&lt;em&gt;every&lt;/em&gt; good essay this way you understand, only that it’s
+possible to produce a pretty good generator of essays this way, one that
+means that you should never have to suffer the problem of sitting down
+in front of the computer and not know what to write.&lt;/p&gt;
+
+
+&lt;p&gt;And yet, every time I think about actually doing this, my soul
+rebels.&lt;/p&gt;
+
+
+&lt;p&gt;Things like the random book prompt or tarot prompt or the like seem
+mostly fine. The above spell for coming up with something interesting
+about your day to report on also seems mostly fine - maybe a little over
+constraining, and requires me to look at uncomfortable questions like
+“What &lt;em&gt;did&lt;/em&gt; I do today?” sometimes, but it’s actually an
+interesting exercise.&lt;/p&gt;
+
+
+&lt;p&gt;But if you tell me to, say, roll a die and use it to determine on the
+basis of that what to write today, I will fight you.&lt;/p&gt;
+
+
+&lt;p&gt;If, on the other hand, you tell me that if I’m not sure which one to
+write then I &lt;em&gt;get to&lt;/em&gt; roll a dice to pick one, that’s just &lt;a href="https://drmaciver.substack.com/p/how-to-make-easy-decisions"&gt;a
+spell for making decisions&lt;/a&gt;. Great stuff, no complaints. Big fan,
+even.&lt;/p&gt;
+
+
+&lt;p&gt;The thing about procedures is that they’re great tools and terrible
+masters. The kitchen cleaning procedure is very good because I need to
+do the thing and I don’t want to have to make decisions about how to do
+the thing. A writing procedure that removes all decisions would be
+terrible, because the decisions &lt;em&gt;are&lt;/em&gt; the creative process. I can
+be aided in making them, but anything that tries to take the ultimate
+authority away from me causes me to bristle.&lt;/p&gt;
+
+
+&lt;p&gt;And this is sortof a problem for the goal of creativity on demand,
+because the problem isn’t actually that I can’t produce creativity on
+demand - I can - it’s that I &lt;em&gt;don’t want to&lt;/em&gt;. The whole
+experience is one of dragging myself kicking and screaming towards some
+goal.&lt;/p&gt;
+
+
+&lt;p&gt;The idea of a fully mechanized process for writing, even one with
+explicitly allowances for breaking out of it and doing your own thing,
+is still fundamentally designed to take away the first and most
+important decision about creating something: Whether you want to do it
+at all. Once that decision is taken away from it, the creative part of
+my mind mostly just wants to sit there and sulk and refuse to
+participate.&lt;/p&gt;
+
+
+&lt;p&gt;And you know what? Too bad. Gonna write anyway. When the dishes gotta
+be done, you do the dishes whether you like it or not. When the daily
+writing gotta be done, you do the daily writing whether you like it or
+not. It’s probably not going to be as bad as you think, and if it is &lt;a href="https://drmaciver.substack.com/p/believing-that-you-can-stop"&gt;you
+can stop&lt;/a&gt;, but that’s no reason not to start.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2025-03-26-19:06.html" rel="alternate"/>
   </entry>
 </feed>
