@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-03-27T10:24:00+00:00</updated>
+  <updated>2025-03-28T12:43:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,85 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2024-12-03-12:01.html</id>
-    <title>Filtered sampling from sorted values with incremental binary search</title>
-    <updated>2024-12-03T13:19:13+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Filtered sampling from sorted values with incremental binary search&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2024-12-03&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I had a problem recently that I solved badly. As is traditional, I
-figured out how to solve it well in the shower this morning. The
-solution is obvious in retrospect, but I thought I’d share it anyway as
-it’s an interesting algorithm that I’d not seen before.&lt;/p&gt;
-
-
-&lt;div class="sourceCode" id="cb1"&gt;&lt;pre class="sourceCode python"&gt;&lt;code class="sourceCode python"&gt;&lt;span id="cb1-1"&gt;&lt;a aria-hidden="true" href="#cb1-1" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="kw"&gt;def&lt;/span&gt; filtered_sample(random, values, lower_bound, upper_bound):&lt;/span&gt;
-&lt;span id="cb1-2"&gt;&lt;a aria-hidden="true" href="#cb1-2" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="co"&gt;"""Samples a random value `x` from `values`, which must be a sorted list,&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-3"&gt;&lt;a aria-hidden="true" href="#cb1-3" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="co"&gt;    such that lower_bound &amp;lt;= x &amp;lt;= upper_bound, or raises ValueError if there are no such values.&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-4"&gt;&lt;a aria-hidden="true" href="#cb1-4" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="co"&gt;    """&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-5"&gt;&lt;a aria-hidden="true" href="#cb1-5" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="co"&gt;# Invariant: If 0 &amp;lt;= i &amp;lt; lo then values[i] &amp;lt; lower_bound&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-6"&gt;&lt;a aria-hidden="true" href="#cb1-6" tabindex="-1"&gt;&lt;/a&gt;    lo &lt;span class="op"&gt;=&lt;/span&gt; &lt;span class="dv"&gt;0&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-7"&gt;&lt;a aria-hidden="true" href="#cb1-7" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="co"&gt;# Invariant: If hi &amp;lt;= i &amp;lt; len(values) then values[i] &amp;gt; upper_bound&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-8"&gt;&lt;a aria-hidden="true" href="#cb1-8" tabindex="-1"&gt;&lt;/a&gt;    hi &lt;span class="op"&gt;=&lt;/span&gt; &lt;span class="bu"&gt;len&lt;/span&gt;(values)&lt;/span&gt;
-&lt;span id="cb1-9"&gt;&lt;a aria-hidden="true" href="#cb1-9" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="cf"&gt;while&lt;/span&gt; lo &lt;span class="op"&gt;&amp;lt;&lt;/span&gt; hi:&lt;/span&gt;
-&lt;span id="cb1-10"&gt;&lt;a aria-hidden="true" href="#cb1-10" tabindex="-1"&gt;&lt;/a&gt;        i &lt;span class="op"&gt;=&lt;/span&gt; random.randrange(lo, hi)&lt;/span&gt;
-&lt;span id="cb1-11"&gt;&lt;a aria-hidden="true" href="#cb1-11" tabindex="-1"&gt;&lt;/a&gt;        x &lt;span class="op"&gt;=&lt;/span&gt; values[i]&lt;/span&gt;
-&lt;span id="cb1-12"&gt;&lt;a aria-hidden="true" href="#cb1-12" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="cf"&gt;if&lt;/span&gt; x &lt;span class="op"&gt;&amp;lt;&lt;/span&gt; lower_bound:&lt;/span&gt;
-&lt;span id="cb1-13"&gt;&lt;a aria-hidden="true" href="#cb1-13" tabindex="-1"&gt;&lt;/a&gt;            lo &lt;span class="op"&gt;=&lt;/span&gt; i &lt;span class="op"&gt;+&lt;/span&gt; &lt;span class="dv"&gt;1&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-14"&gt;&lt;a aria-hidden="true" href="#cb1-14" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="cf"&gt;elif&lt;/span&gt; x &lt;span class="op"&gt;&amp;gt;&lt;/span&gt; upper_bound:&lt;/span&gt;
-&lt;span id="cb1-15"&gt;&lt;a aria-hidden="true" href="#cb1-15" tabindex="-1"&gt;&lt;/a&gt;            hi &lt;span class="op"&gt;=&lt;/span&gt; i&lt;/span&gt;
-&lt;span id="cb1-16"&gt;&lt;a aria-hidden="true" href="#cb1-16" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="cf"&gt;else&lt;/span&gt;:&lt;/span&gt;
-&lt;span id="cb1-17"&gt;&lt;a aria-hidden="true" href="#cb1-17" tabindex="-1"&gt;&lt;/a&gt;            &lt;span class="cf"&gt;return&lt;/span&gt; x&lt;/span&gt;
-&lt;span id="cb1-18"&gt;&lt;a aria-hidden="true" href="#cb1-18" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="cf"&gt;raise&lt;/span&gt; &lt;span class="pp"&gt;ValueError&lt;/span&gt;(&lt;/span&gt;
-&lt;span id="cb1-19"&gt;&lt;a aria-hidden="true" href="#cb1-19" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="ss"&gt;f"`values` does not contain any elements between &lt;/span&gt;&lt;span class="sc"&gt;{&lt;/span&gt;lower_bound&lt;span class="sc"&gt;}&lt;/span&gt;&lt;span class="ss"&gt; and &lt;/span&gt;&lt;span class="sc"&gt;{&lt;/span&gt;upper_bound&lt;span class="sc"&gt;}&lt;/span&gt;&lt;span class="ss"&gt;"&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-20"&gt;&lt;a aria-hidden="true" href="#cb1-20" tabindex="-1"&gt;&lt;/a&gt;    )&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;This is a nice example algorithm that varies smoothly between two
-slightly more obvious algorithms:&lt;/p&gt;
-
-
-&lt;ol type="1"&gt;
-&lt;li&gt;Rejection sampling (just sample until you get a value in the right
-range)&lt;/li&gt;
-&lt;li&gt;Always do a binary search to find the bounds, and then random sample
-within that range.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;Rejection sampling is the best when almost all of the values are in
-range. Binary search is best when few or none are (in particular the
-first cannot easily detect it. There are ways to mitigate that
-though)&lt;/p&gt;
-
-
-&lt;p&gt;My initial implementation did one round of rejection sampling and
-then the binary search, which is a sort of awkward compromise. The way
-the new algorithm works is essentially doing only as much of the binary
-search as you need. If a sample gives you a suitable value now, you can
-stop and return that. If it doesn’t, you’ve effectively chosen a
-midpoint in your binary search and can update the bounds for the next
-round of the sample.&lt;/p&gt;
-
-
-&lt;p&gt;The first algorithm basically only works as well as whichever is
-better of the first two, while the new algorithm smoothly varies between
-the two extremes. I believe (but haven’t checked the details) that it
-runs in &lt;code&gt;O(log(n / (k + 1))&lt;/code&gt; where &lt;code&gt;k&lt;/code&gt; is the
-number of elements in the array satisfying the condition.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2024-12-03-12:01.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-02-08-09:26.html</id>
     <title>How do LLMs work?</title>
@@ -1899,7 +1820,7 @@ can stop&lt;/a&gt;, but that’s no reason not to start.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-03-27-10:24.html</id>
     <title>Censored solutions</title>
-    <updated>2025-03-27T10:24:00+00:00</updated>
+    <updated>2025-03-27T11:42:20+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Censored solutions&lt;/p&gt;
@@ -2086,5 +2007,125 @@ those work for you instead.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2025-03-27-10:24.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2025-03-28-12:43.html</id>
+    <title>Behaving as if you were trying to succeed</title>
+    <updated>2025-03-28T12:43:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Behaving as if you were trying to succeed&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2025-03-28&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;In a flat I shared a while back, for some reason we owned a wooden
+meat tenderising mallet.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Disgusting object. Can’t recommend.&lt;/span&gt; One of my flatmates was the main
+person who used it, so I assume it was hers, but it lived with all of
+the other kitchen utensils.&lt;/p&gt;
+
+
+&lt;p&gt;One day I discovered it had been put away still covered in bits of
+raw chicken. I politely expressed some disapproval of this fact.&lt;/p&gt;
+
+
+&lt;p&gt;She seemed vaguely baffled by this objection. I don’t remember her
+exact words, but it was something to the tune of “I did wash it! But
+it’s hard to clean”.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;As a side note, I should observe that this was a long
+time ago. I no longer live with her but we’re still in touch and I
+believe she has become a vastly cleaner person in more recent years. I
+also very much enjoyed living with her at the time despite these
+foibles. This is not a story about how terrible she was as a flatmate.&lt;/span&gt; I, in turn, expressed the sentiment
+that if something is hard to clean then that means you &lt;em&gt;clean it more
+thoroughly&lt;/em&gt;, or don’t use it, but that putting things away with raw
+meat stuck to them was not among the acceptable set of outcomes.&lt;/p&gt;
+
+
+&lt;p&gt;She did rewash it, but I’m not sure my point really stuck.&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Unlike the chicken.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;I’ve thought about this example over and over again since then, in
+various shared living situations, because I’ve run into a surprising
+number of people who are bad at washing up in a particular way: It’s not
+that they’re incompetent at the basic mechanical actions of washing up&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Although to some degree they probably are this too,
+because they lack a basic feedback mechanism required to get good at
+it.&lt;/span&gt;, but that they &lt;em&gt;don’t check if
+the thing they’ve washed up is clean afterwards&lt;/em&gt;, and as a result a
+substantial fraction of things they wash up still have food stuck to
+them. It’s usually not as bad as the raw chicken incident, but it’s bad
+enough that I don’t consider the things they washed up to be clean
+enough to put away without double checking.&lt;/p&gt;
+
+
+&lt;p&gt;As a result, I typically ended up rewashing stuff they’ve washed,&lt;label class="margin-toggle sidenote-number" for="fn5"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn5" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Depending on how bitchy I’m feeling sometimes I’d get
+them to do it instead, but that’s often more stressful than doing it
+myself. This is not a good strategy and I don’t endorse it, but it is
+the one I tend to follow.&lt;/span&gt; which means they’ve put in a bunch
+of work for literally zero effect, and made me more annoyed at them than
+I would be if they hadn’t done anything at all.&lt;/p&gt;
+
+
+&lt;p&gt;Similarly, back when I used to work in more end-user-facing software
+with an actual web interface and such,&lt;label class="margin-toggle sidenote-number" for="fn6"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn6" type="checkbox"/&gt;&lt;span class="sidenote"&gt;This is less necessary with library code because the
+code is the user interface and you can see it being used in the tests.&lt;/span&gt;, I
+used to deploy this really exciting magical code review technique that
+reliably found problems with people’s pull requests: I checked out the
+branch, launched the web application, and tried actually using the
+feature. Often it had obvious problems.&lt;/p&gt;
+
+
+&lt;p&gt;This has become something of a bugbear of mine in general: People
+doing things as if the thing itself was the point, rather than a tool
+you are using to achieve a specific outcome, and not thinking about
+whether their actions will actually in any way help them achieve their
+goal. The result of this is often that they put in about 90% of the
+effort required to do it properly, and get 0% of the actual benefit
+because what they did didn’t actually work.&lt;/p&gt;
+
+
+&lt;p&gt;The easiest way to fix this is to &lt;em&gt;check whether what you did
+worked&lt;/em&gt; after doing it. Initially, this will slow you down a bit and
+add delays, but as you get good at it you will basically internalise the
+process and it doesn’t slow you down much.&lt;label class="margin-toggle sidenote-number" for="fn7"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn7" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Except in the sense that sometimes you’ll find problems
+and have to fix them.&lt;/span&gt; I
+do, however, suspect that in many of these cases the actual thing you
+need to do to fix this is to become someone who actually cares about the
+end result rather than just wanting to avoid being blamed for not doing
+the thing and hoping nobody will notice.&lt;label class="margin-toggle sidenote-number" for="fn8"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn8" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Bad news! I will notice. Yes, including that time you
+thought you got away with it.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;This is also important because there are many examples where you
+can’t really check if it worked. For example, I still semi-often see
+people wearing face masks in public. I rarely do these days, but
+consider this a completely reasonable choice. Unless, that is, you’re
+wearing your facemask pulled down so it doesn’t cover your nose. In
+which case &lt;em&gt;what on earth are you doing?&lt;/em&gt; How have you made it to
+2025 without looking up basic mask usage? But you’re never going to
+figure out that you did this wrong by checking. What are you going to
+check? Did I get a virus Y/N? That’s an incredibly noisy signal, and
+tracing it back to the specific error you made is going to be almost
+impossible. The only way to get this right is to actually care about
+getting things right and then take whatever action is appropriate for
+achieving this.&lt;/p&gt;
+
+
+&lt;p&gt;Now, to be clear, I’m not claiming I always succeed. Sometimes I’m
+rushing and forget to check something. Sometimes I check something
+insufficiently carefully. Sometimes I check something and misinterpret
+it, or otherwise make a stupid error. I’m not saying I’m perfect, I’m
+not asking you or anyone else to be perfect.&lt;/p&gt;
+
+
+&lt;p&gt;But I am asking you to care about succeeding, and when you are
+failing, &lt;a href="https://notebook.drmaciver.com/posts/2025-03-25-20:16.html"&gt;try to
+figure out why and do better&lt;/a&gt;.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2025-03-28-12:43.html" rel="alternate"/>
   </entry>
 </feed>

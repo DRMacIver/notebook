@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+DRMacIver's Notebook: Behaving as if you were trying to succeed
+    </title>
+
+    <meta property="og:title" content="Behaving as if you were trying to succeed">
+
+    <meta property="og:url" content="https://notebook.drmaciver.com/posts/2025-03-28-12:43.html" />
+    <link rel="canonical" href="https://notebook.drmaciver.com/posts/2025-03-28-12:43.html" />
+    <script src="https://hypothes.is/embed.js" async></script>
+
+
+    <meta name="twitter:card" content="summary" />
+
+    <meta property="og:creator" content="@DRMacIver">
+
+    <link rel="stylesheet" href="/pandoc.css"/>
+    <link rel="stylesheet" href="/pygments.css"/>
+    <link rel="stylesheet" href="/tufte.css"/>
+    <link rel="stylesheet" href="/latex.css"/>
+    <link rel="stylesheet" href="/drmnotes.css"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
+});
+
+MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
+  console.log(message)
+});
+
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169185204-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169185204-1');
+</script>
+
+  </head>
+
+  <body>
+    <article>
+        <h1><a href="/">DRMacIver's Notebook</a></h1>
+        <p class=subtitle>Behaving as if you were trying to succeed</p>
+
+        
+
+<section id="the-post">
+<p class=subtitle>Behaving as if you were trying to succeed</p>
+<dl class=metadata>
+<dt>Published</dt>
+<dd class="post-date">2025-03-28</dd>
+</dl>
+
+<p>In a flat I shared a while back, for some reason we owned a wooden
+meat tenderising mallet.<label class="margin-toggle sidenote-number" for="fn1"></label><input class="margin-toggle" id="fn1" type="checkbox"/><span class="sidenote">Disgusting object. Can’t recommend.</span> One of my flatmates was the main
+person who used it, so I assume it was hers, but it lived with all of
+the other kitchen utensils.</p>
+<p>One day I discovered it had been put away still covered in bits of
+raw chicken. I politely expressed some disapproval of this fact.</p>
+<p>She seemed vaguely baffled by this objection. I don’t remember her
+exact words, but it was something to the tune of “I did wash it! But
+it’s hard to clean”.<label class="margin-toggle sidenote-number" for="fn2"></label><input class="margin-toggle" id="fn2" type="checkbox"/><span class="sidenote">As a side note, I should observe that this was a long
+time ago. I no longer live with her but we’re still in touch and I
+believe she has become a vastly cleaner person in more recent years. I
+also very much enjoyed living with her at the time despite these
+foibles. This is not a story about how terrible she was as a flatmate.</span> I, in turn, expressed the sentiment
+that if something is hard to clean then that means you <em>clean it more
+thoroughly</em>, or don’t use it, but that putting things away with raw
+meat stuck to them was not among the acceptable set of outcomes.</p>
+<p>She did rewash it, but I’m not sure my point really stuck.<label class="margin-toggle sidenote-number" for="fn3"></label><input class="margin-toggle" id="fn3" type="checkbox"/><span class="sidenote">Unlike the chicken.</span></p>
+<p>I’ve thought about this example over and over again since then, in
+various shared living situations, because I’ve run into a surprising
+number of people who are bad at washing up in a particular way: It’s not
+that they’re incompetent at the basic mechanical actions of washing up<label class="margin-toggle sidenote-number" for="fn4"></label><input class="margin-toggle" id="fn4" type="checkbox"/><span class="sidenote">Although to some degree they probably are this too,
+because they lack a basic feedback mechanism required to get good at
+it.</span>, but that they <em>don’t check if
+the thing they’ve washed up is clean afterwards</em>, and as a result a
+substantial fraction of things they wash up still have food stuck to
+them. It’s usually not as bad as the raw chicken incident, but it’s bad
+enough that I don’t consider the things they washed up to be clean
+enough to put away without double checking.</p>
+<p>As a result, I typically ended up rewashing stuff they’ve washed,<label class="margin-toggle sidenote-number" for="fn5"></label><input class="margin-toggle" id="fn5" type="checkbox"/><span class="sidenote">Depending on how bitchy I’m feeling sometimes I’d get
+them to do it instead, but that’s often more stressful than doing it
+myself. This is not a good strategy and I don’t endorse it, but it is
+the one I tend to follow.</span> which means they’ve put in a bunch
+of work for literally zero effect, and made me more annoyed at them than
+I would be if they hadn’t done anything at all.</p>
+<p>Similarly, back when I used to work in more end-user-facing software
+with an actual web interface and such,<label class="margin-toggle sidenote-number" for="fn6"></label><input class="margin-toggle" id="fn6" type="checkbox"/><span class="sidenote">This is less necessary with library code because the
+code is the user interface and you can see it being used in the tests.</span>, I
+used to deploy this really exciting magical code review technique that
+reliably found problems with people’s pull requests: I checked out the
+branch, launched the web application, and tried actually using the
+feature. Often it had obvious problems.</p>
+<p>This has become something of a bugbear of mine in general: People
+doing things as if the thing itself was the point, rather than a tool
+you are using to achieve a specific outcome, and not thinking about
+whether their actions will actually in any way help them achieve their
+goal. The result of this is often that they put in about 90% of the
+effort required to do it properly, and get 0% of the actual benefit
+because what they did didn’t actually work.</p>
+<p>The easiest way to fix this is to <em>check whether what you did
+worked</em> after doing it. Initially, this will slow you down a bit and
+add delays, but as you get good at it you will basically internalise the
+process and it doesn’t slow you down much.<label class="margin-toggle sidenote-number" for="fn7"></label><input class="margin-toggle" id="fn7" type="checkbox"/><span class="sidenote">Except in the sense that sometimes you’ll find problems
+and have to fix them.</span> I
+do, however, suspect that in many of these cases the actual thing you
+need to do to fix this is to become someone who actually cares about the
+end result rather than just wanting to avoid being blamed for not doing
+the thing and hoping nobody will notice.<label class="margin-toggle sidenote-number" for="fn8"></label><input class="margin-toggle" id="fn8" type="checkbox"/><span class="sidenote">Bad news! I will notice. Yes, including that time you
+thought you got away with it.</span></p>
+<p>This is also important because there are many examples where you
+can’t really check if it worked. For example, I still semi-often see
+people wearing face masks in public. I rarely do these days, but
+consider this a completely reasonable choice. Unless, that is, you’re
+wearing your facemask pulled down so it doesn’t cover your nose. In
+which case <em>what on earth are you doing?</em> How have you made it to
+2025 without looking up basic mask usage? But you’re never going to
+figure out that you did this wrong by checking. What are you going to
+check? Did I get a virus Y/N? That’s an incredibly noisy signal, and
+tracing it back to the specific error you made is going to be almost
+impossible. The only way to get this right is to actually care about
+getting things right and then take whatever action is appropriate for
+achieving this.</p>
+<p>Now, to be clear, I’m not claiming I always succeed. Sometimes I’m
+rushing and forget to check something. Sometimes I check something
+insufficiently carefully. Sometimes I check something and misinterpret
+it, or otherwise make a stupid error. I’m not saying I’m perfect, I’m
+not asking you or anyone else to be perfect.</p>
+<p>But I am asking you to care about succeeding, and when you are
+failing, <a href="https://notebook.drmaciver.com/posts/2025-03-25-20:16.html">try to
+figure out why and do better</a>.</p>
+
+
+</section>
+
+    </article>
+<footer>
+Copyright David R. MacIver.
+
+CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
+</footer>
+  </body>
+</html>
