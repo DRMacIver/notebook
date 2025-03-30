@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-03-29T12:08:30+00:00</updated>
+  <updated>2025-03-30T11:41:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,255 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2025-02-18-10:11.html</id>
-    <title>You only need shallow justifications</title>
-    <updated>2025-03-05T10:29:24+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;You only need shallow justifications&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2025-02-18&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;This started off on the newsletter and then wandered in a direction I
-didn’t intend and as a result stalled at turning into something
-adequately newsletter shaped, so I’ve moved it over here to finish it
-off in whatever form it wants to be in.&lt;/p&gt;
-
-
-&lt;hr/&gt;
-
-
-&lt;p&gt;I have a concept of “the legitimacy of conflict” that I’ve been
-trying to articulate for ages and failing to really get a good handle
-on. I’ve recently had a hit tweet that I think gives me part of that
-handle.&lt;/p&gt;
-
-
-&lt;p&gt;&lt;a href="https://x.com/DRMacIver/status/1887844134196515016"&gt;The
-tweet goes as follows&lt;/a&gt;:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;One mistake people make in salary negotiations is that they try to
-make a practical or moral argument for the higher value. This can be
-useful, but I’ve had surprisingly good luck recently with words to the
-tune of “I like money. How about you offer more money than that?”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;The point is that you don’t need to justify wanting more money.
-Obviously you want more money. All you need to communicate is that the
-amount of money that has currently been offered isn’t enough for you to
-say yes on the spot, and more would be welcomed.&lt;/p&gt;
-
-
-&lt;p&gt;Sometimes they will just say yes and offer you more money. Generally
-speaking, hiring is expensive and finding a good candidate is hard, and
-by the time you’ve got to this point, there’s a pretty wide range of
-amounts they’re willing to pay, and they haven’t offered you the highest
-amount they’d be willing off the bat.&lt;/p&gt;
-
-
-&lt;p&gt;Sometimes they will flat out say no. Sometimes they’ll even mean it.
-If you want more money at this point you’ll need to either walk away or
-&lt;a href="https://books.rixx.de/chris-voss/never-split-the-difference/"&gt;break
-out a more serious negotiating toolkit&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;Most of the time this will result in a further discussion about the
-value you bring, or how to justify the decision to someone else, or
-something of that ilk. Essentially never&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;OK, essentially never under the assumption that you’re
-operating in a relatively high strength negotiating position. There’s a
-decent chance of this going badly in e.g. minimum wage jobs that are
-oversupplied with candidates and run by petty tyrants.&lt;/span&gt;
-will they ask you why you want more money, or descend into some Oliver
-Twist style rant about how dare you ask for more you miserable little
-urchin.&lt;/p&gt;
-
-
-&lt;p&gt;Generally speaking though, in a remotely healthy environment the
-discussion will never involve asking why you want more money, it will
-always be about why you are worth more money to the company. Because,
-from a business point of view, of course you want more money. Money is
-good. Sure maybe you need it to pay the rent, or to care for your
-seventeen children, or one of any other reasons you might have, but this
-does not actually affect any of the basic business reality, which is
-that it’s perfectly reasonable for you to want more money and it’s also
-perfectly reasonable for them to not to spend more money.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Now the reality is that the person you’re talking to
-does not have incentives perfectly aligned with the business, and as a
-result telling them a sob story about how you’ve got all these cute
-orphans you’re looking after and you need the extra money to buy them
-expensive medicine for their rare genetic diseases please sir won’t you
-think of the orphans, might well sway them to try to work a bit harder
-to offer you more money. But now, functionally, you’ve just got a repeat
-of the general situation with you and them working together to negotiate
-with the broader business which is, ultimately, not in the business of
-curing rare genetic diseases in orphans for free, but instead makes
-widgets.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;A negotiation like this is a great example of what I mean when I talk
-about a conflict, and why conflict is legitimate.&lt;/p&gt;
-
-
-&lt;p&gt;Specifically, I’m using “conflict” in the economics sense of Thomas
-Schelling, as articulated in his great book “The Strategy of Conflict”:
-A conflict is a positive-sum game with imperfect alignment.&lt;/p&gt;
-
-
-&lt;p&gt;That is, you have a situation with two (or more) parties in
-which:&lt;/p&gt;
-
-
-&lt;p&gt;There are outcomes which are better for all parties than not
-participating in the situation.&lt;/p&gt;
-
-
-&lt;p&gt;Among those outcomes, there is disagreement as to which is the best
-outcome.&lt;/p&gt;
-
-
-&lt;p&gt;Whenever I use the word “conflict” in this article, I mean it in this
-sense of conflicting desires in a situation where it is to your mutual
-benefit to figure out an outcome compatible with them both.&lt;/p&gt;
-
-
-&lt;p&gt;A salary negotiation is precisely this sort of scenario:
-Participation is getting hired (which requires both your agreement), and
-getting hired is at this point in the process presumed to be better for
-both of you than not getting hired (you want the job, they want someone
-to do the job and think you would be a good such someone), but the best
-outcome for you is that they pay you a lot, and the best outcome for
-them is that they pay you a little.&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;There are all sorts of complexities to this about
-retention, ethics, etc. Try to ignore those. At any rate, even to the
-degree that those matter, they matter mostly for large changes. A 1%
-difference either way probably doesn’t affect either of those that much,
-but a 1% pay raise is clearly slightly better for you, and a 1% pay
-decrease is clearly slightly better for them.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;One of the difficulties I’ve had in articulating the legitimacy of
-conflict is that people hear “conflict” and they think “fight”, where
-Schelling and I mean it more in the sense of “things that are in tension
-with each other that you need to resolve to make the situation work
-well”.&lt;/p&gt;
-
-
-&lt;p&gt;The other difficulty is that part of the problem I’m pointing at is
-that I don’t think people emotionally distinguish the two and do, in
-fact, experience something like this as if it were a fight.&lt;/p&gt;
-
-
-&lt;h3 id="no-correct-answers"&gt;No correct answers&lt;/h3&gt;
-
-
-&lt;p&gt;I think one reason people experience the salary negotiation as a
-fight is that it feels too easy to frame it in moral terms. There’s an
-amount of money you “deserve” and if you ask for more than that you’re
-greedy and if you get less than that the company is greedy. Either way
-someone is bad. This viewpoint is, I must emphasise, wrong, and you’ll
-make less miserable and earn less money than you could if you adopt it,
-but it’s a very easy trap to fall into. But I think it’s hard to see
-that starting from this scenario.&lt;/p&gt;
-
-
-&lt;p&gt;Here’s another example, I think originally from Schelling:&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Though his originally example was probably a bit
-different. I think it involved the movies?&lt;/span&gt; Suppose you and I want to hang out,
-and settle on going out for a meal. We rule out anything literally
-unacceptable to one of us (e.g. as much as I’d like to I can’t eat
-pizza, you need options that aren’t super spicy) and settle on a number
-of options that we’d be fine with. My favourite is the Thai option,
-yours is the Mexican option. Either of us would be fine with either
-option, but each of us has a clear preference for one over the other.&lt;label class="margin-toggle sidenote-number" for="fn5"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn5" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Why not find a third option that we both like? Well,
-what are you, some sort of fancy big city type with lots of restaurant
-options? In my small town, you’re lucky if there’s one restaurant you
-like! Two is just luxury.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;More seriously, this is always a tempting rebuttal but I think
-basically doesn’t work. There just sometimes aren’t such options. Some
-people really do have incompatible food preferences where you’re never
-going to find a meal that delights them both, and “delights one of them
-and is more or less fine for the other” is probably the best outcome you
-can achieve.&lt;/p&gt;
-
-
-&lt;p&gt;This is particularly true once you add hard constraints. Try feeding
-a vegan at the same time as someone with soy and nut allergies and see
-how well that goes for you.&lt;/p&gt;
-
-
-&lt;p&gt;This is a clear conflict: We both want to go out for a meal. We don’t
-agree which restaurant is best, but we’d prefer either to not going out
-for a meal.&lt;/p&gt;
-
-
-&lt;p&gt;It would also, I feel, be utterly idiotic for this conflict to turn
-into a fight. We’re friends. It’s not just that we can resolve this
-amicably, it’s that it getting unamicable in the first place at all
-would be a little weird. We can flip a coin, or take turns deciding, or
-you can decide where we eat and I decide what bar we go to after, or
-adopt one of a variety of other resolution mechanisms, and it will be
-fine.&lt;/p&gt;
-
-
-&lt;p&gt;One thing we shouldn’t do is decide on the basis of who wants their
-outcome more. Or, we might do that sometimes - if there’s a cool new
-Mexican place in town that you’ve been really excited to try out, and I
-want to go to the Thai place I’m familiar with because it’s consistently
-pretty good, it seems reasonable that we should pick the Mexican place.
-If, however, every time we go out you’re like this, and I never really
-acquire your taste for novelty despite our best efforts, I think I’d
-quite reasonably feel a little hard done by if my preferences never got
-a hearing.&lt;label class="margin-toggle sidenote-number" for="fn6"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn6" type="checkbox"/&gt;&lt;span class="sidenote"&gt;This may seem like a suspiciously specific example, but
-it’s honestly entirely fictional.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;Because this is a negotiation as part of an ongoing relationship,
-it’s clear that there doesn’t have to be a single right answer to the
-conflict in desires, you resolve so that mostly everybody is happy.&lt;label class="margin-toggle sidenote-number" for="fn7"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn7" type="checkbox"/&gt;&lt;span class="sidenote"&gt; I originally wrote “so that everything averages out
-over time” but actually I think this is not correct. It may well just be
-the case that the result is consistently “unfair” but still better than
-not participating. Many different dynamics can lead to this, and it’s
-not intrinsically a problem.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;h3 id="resource-constraints"&gt;Resource Constraints&lt;/h3&gt;
-
-
-&lt;p&gt;Another example of a conflict I often use is: Do you take the last &lt;a href="https://en.wikipedia.org/wiki/%C3%89clair"&gt;Eclair&lt;/a&gt; in the shop?
-Someone else might want it after all!&lt;label class="margin-toggle sidenote-number" for="fn8"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn8" type="checkbox"/&gt;&lt;span class="sidenote"&gt;This is a slightly strange example of a positive sum
-game because although participating is never worse than not
-participating, unless there’s an Eclair there it’s not really better
-either. Unless you needed to go to the shop anyway.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;I think, clearly, the answer is yes.&lt;label class="margin-toggle sidenote-number" for="fn9"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn9" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Although when I’m buying a lot of something, I will
-usually make sure to leave at least one on the shelves. e.g. there’s a
-particular frozen chicken curry that the child is currently obsessed
-with and that we’re perfectly happy to be a default meal for her, so I
-bought a bunch of them recently, and made sure to leave one in the
-freezer. It’ll get restocked soon, but in the immediate future if
-there’s someone looking for a mediocre Morrisons own brand butter
-chicken, they won’t go lacking.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;h3 id="abandonment-note"&gt;Abandonment note&lt;/h3&gt;
-
-
-&lt;p&gt;At this point I stopped writing and I’ve lost enough context that I
-no longer intend to resume at this point. I did say that it’s hard for
-me to write about this subject!&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2025-02-18-10:11.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-03-05-10:29.html</id>
     <title>World counting as a tool for understanding probability</title>
@@ -1540,7 +1291,7 @@ figure out why and do better&lt;/a&gt;.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-03-29-10:40.html</id>
     <title>Well you gotta</title>
-    <updated>2025-03-29T12:08:30+00:00</updated>
+    <updated>2025-03-29T12:10:21+00:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Well you gotta&lt;/p&gt;
@@ -1696,5 +1447,180 @@ attitude and stop being goddamn freeloaders.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2025-03-29-10:40.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2025-03-30-11:41.html</id>
+    <title>Necessity creates possibility</title>
+    <updated>2025-03-30T11:41:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Necessity creates possibility&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2025-03-30&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;One of the big reasons I’m doing daily writing right now is that I
+quit caffeine. I have a very entrenched belief that quitting caffeine
+makes it harder for me to think, and my evidence for this is that my
+writing habit evaporates every time I quit caffeine.&lt;/p&gt;
+
+
+&lt;p&gt;It is, as a factual matter, true that I stop writing when I quit
+caffeine. That is a thing that happens. &lt;a href="https://notebook.drmaciver.com/posts/2025-03-22-21:54.html"&gt;Writing
+feels impossible&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;But there is, it turns out, a great technique for doing impossible
+things.&lt;/p&gt;
+
+
+&lt;ol type="1"&gt;
+&lt;li&gt;Try to do the thing and fail.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://notebook.drmaciver.com/posts/2025-03-25-20:16.html"&gt;Figure
+out the actual specific thing that went wrong&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix that.&lt;/li&gt;
+&lt;li&gt;Try again.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;Here is my proposed default thing that goes wrong when you try to do
+something that feels impossible: You think about doing the thing, you
+are overcome with despair, you declare that it’s just impossible right
+now, and then you flinch away from it and go do some dissociative
+activity to self soothe from the aftermath of your terrible encounter
+with the impossible.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Ask me how I know…&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;Part of why I’m big on &lt;a href="https://notebook.drmaciver.com/posts/2025-03-29-10:40.html"&gt;necessity&lt;/a&gt;
+is that it is a fix for this problem. If not doing something you find
+aversive is an option, not doing thing is likely to be the option you
+pick. If you’re definitely going to do the thing, you’re able to have a
+genuine encounter with it without much fuss.&lt;/p&gt;
+
+
+&lt;p&gt;It is, as a purely factual matter, not the case that it’s impossible
+for me to write while not on caffeine. I write on WhatsApp or discord or
+Twitter&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Well, not that one any more.&lt;/span&gt; all the time when off caffeine. The
+actual mechanical act of writing is not that hard for me, and I often
+say perfectly interesting things.&lt;/p&gt;
+
+
+&lt;p&gt;I could absolutely just open up the notebook, paste a comment from
+discord, and write here every day without thinking. I could flip to a
+random page of a book and copy out some text on here. I could write “I
+am a fish” 500 times.&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I am tempted to just do this one day to stop this from
+being a hypothetical that I use and make it a real live possibility.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;This means that the only thing that is preventing me from writing
+here every day is that I am &lt;em&gt;choosing not to&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;So, step one: Choose to. Put daily writing in the category of
+necessity. This forces me to admit that it’s not actually impossible -
+it’s not actually even terribly difficult - it is just mildly
+uncomfortable.&lt;/p&gt;
+
+
+&lt;p&gt;This, in turn, creates encounters with the real problems that you’re
+avoiding. Turns out, for me, I was struggling to find things that were
+interesting for me to write about. &lt;a href="https://notebook.drmaciver.com/posts/2025-03-26-19:06.html"&gt;It’s
+not that I don’t know how to generate things to write about&lt;/a&gt;, but
+those don’t feel interesting either.&lt;/p&gt;
+
+
+&lt;p&gt;I think part of what’s happening here is that there are two major
+relevant differences between my brain on caffeine and my brain off
+caffeine:&lt;/p&gt;
+
+
+&lt;ol type="1"&gt;
+&lt;li&gt;With caffeine, my threshold for something seeming interesting is
+much lower.&lt;/li&gt;
+&lt;li&gt;With caffeine, my thoughts are buzzing all around and generating
+many different overlapping ideas all the time.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;So when I’m caffeinated, sitting down to write is basically just a
+matter of waiting for an idea to come along, grabbing it out of the air,
+and pulling on it until the thread of an essay comes out. On the rare
+occasions I’m stuck, I use a random prompt to lightly prime the process,
+but really even with the random prompts it works in part because my
+brain is extremely prone to going “AND THAT REMINDS ME OF FIVE OTHER
+THINGS”.&lt;/p&gt;
+
+
+&lt;p&gt;When I’ve actually got something to write about, it’s not actually
+that bad to write. It requires dealing with a degree of discomfort and
+anxiety about the process, but it’s just a little bit slower and more
+halting, it’s not actually a big deal it’s just mildly unpleasant.&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;This is more true for notebook posts than for full
+fledged essays that I actually have to think about because of how much
+I’m just basically writing down my chain of thought reasoning here
+rather than trying to make a clear well-articulated point.&lt;/span&gt;. But sitting down and going “argh
+fuck argh what do I write about?” is torture, partly because it’s
+intrinsically unpleasant and partly because it triggers a whole “oh god
+my brain is broken how can I live without caffeine? Woe is me, for I am
+an abject wretch, deprived of that which gives my life meaning!”.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway that sounds like a problem, David, have you tried solving
+it?&lt;/p&gt;
+
+
+&lt;p&gt;Yes I have, and it turns out it’s extremely easily solved, and the
+magic was inside me all along because I’ve solved this problem before.
+&lt;a href="https://drmaciver.substack.com/p/using-a-list-to-manage-executive"&gt;The
+solution is to make a list of things I could write about&lt;/a&gt;. I’ve now
+just got a little pad of paper on my desk with the heading “Things I
+could write about”. When something comes to mind during the day that
+seems interesting to write about, I jot down some slightly cryptic
+phrase or sentence describing it, and when I come to write something I
+look at what’s on the page. &lt;a href="https://notebook.drmaciver.com/posts/2025-03-27-10:24.html"&gt;Censored
+solutions&lt;/a&gt; was the first post I wrote using this system (partly
+because writing &lt;a href="https://notebook.drmaciver.com/posts/2025-03-26-19:06.html"&gt;Creativity
+on demand&lt;/a&gt; is what helped me spot it), and it’s been great since.
+There are currenly 20 items on the list (including ones already
+written).&lt;/p&gt;
+
+
+&lt;p&gt;The key thing that makes this work is that although it turns out that
+I can’t currently generate ideas of what to write about at a rate that
+means they just freely appear when I sit down to write, I sure generate
+a lot of ideas in a day, the problem is that they don’t reliably stick
+in my memory. As long as over the course of a day I generate more than
+one idea to write about&lt;label class="margin-toggle sidenote-number" for="fn5"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn5" type="checkbox"/&gt;&lt;span class="sidenote"&gt;It looks like right now I generate about five. It’s
+likely that that will go down over time, but not necessarily - writing
+begets more writing, because it gives you new things to think about.&lt;/span&gt;, the list will always be full.^[I
+haven’t yet decided what to do when the list fills up. I need to figure
+that out after finishing writing this post.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, the point I’m making is not this specific technique is great
+(although it is), it’s that this specific technique was in fact &lt;em&gt;very
+easy to create&lt;/em&gt;, and I’ve tried and failed to write through caffeine
+withdrawal multiple times before without creating it.&lt;label class="margin-toggle sidenote-number" for="fn6"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn6" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I have actually tried a daily writing habit while off
+caffeine before and it didn’t stick, but the way it failed was that I
+was having a terrible time for other reasons and went back on coffee
+before I ran out of backlog of ideas of what to write about.&lt;/span&gt;
+Taking the option of not writing off the table and just making it my
+problem to figure out how to do it any way forced me to figure out what
+the real, specific, problem was, and do something about it rather than
+just treating it as impossible.&lt;/p&gt;
+
+
+&lt;p&gt;Necessity creates possibility: If you &lt;em&gt;have&lt;/em&gt; to do something,
+probably you’ll figure out how.&lt;label class="margin-toggle sidenote-number" for="fn7"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn7" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Or, you know, fail horribly and die. But it’s hard to
+fuck up a writing habit so hard you die.&lt;/span&gt; If it’s optional, it’s
+too easy to make excuses as to why you couldn’t possibly do it.
+Frequently those excuses will feel very real and plausible, but
+evaporate as soon as confronted with a firm insistence that you try.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2025-03-30-11:41.html" rel="alternate"/>
   </entry>
 </feed>
