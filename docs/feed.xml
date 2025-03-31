@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-03-30T15:31:49+01:00</updated>
+  <updated>2025-03-31T18:47:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,246 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2025-03-05-10:29.html</id>
-    <title>World counting as a tool for understanding probability</title>
-    <updated>2025-03-05T17:10:42+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;World counting as a tool for understanding probability&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2025-03-05&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;There are a number of basic conditional probability problems that
-seem counter-intuitive but become intuitive with an extremely basic
-technique.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;So basic that it’s almost embarrassing to describe it as
-a technique to be honest, but then I see people getting confused on
-problems trivially solvable by it and think it probably warrants that
-label after all.&lt;/span&gt; I thought it would be worth
-explaining this technique, as I think it’s both a good tool to have in
-your toolkit explicitly, and is potentially a good route in for teaching
-people to reason about probability.&lt;/p&gt;
-
-
-&lt;p&gt;The technique is “world counting”. You enumerate all the possible
-versions of the world, cross out any ones that have been ruled out by
-evidence, and then work out what fraction of the worlds remaining have
-the property of interest.&lt;/p&gt;
-
-
-&lt;p&gt;For example, say I roll two dice, and tell you only that I rolled a
-sum of 8 or more. What is the probability that at least one of those
-rolls was a 6?&lt;/p&gt;
-
-
-&lt;p&gt;First, we enumerate all the possible rolls: 1/1, 1/2, …, 2/1, …,
-6/6.&lt;/p&gt;
-
-
-&lt;p&gt;Now, we cut out all of the ones where the sum is less than 8, and get
-the following combinations remaining: 2/6, 3/5, 3/6, 4/4, 4/5, 4/6, 5/3,
-5/4, 5/5, 5/6, 6/2, 6/3, 6/4, 6/5, 6/6&lt;/p&gt;
-
-
-&lt;p&gt;That gives us 15 worlds, of which 9 have a 6 in them, so the
-probability of a 6 is &lt;span class="math inline"&gt;\(\frac{9}{15} =
-0.6\)&lt;/span&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;This works well with the dice example, but we run into a wrinkle with
-a slightly more complicated one.&lt;/p&gt;
-
-
-&lt;p&gt;Consider the following problem: I flip a coin. If it shows heads, I
-flip it again. If it shows tails, I don’t.&lt;/p&gt;
-
-
-&lt;p&gt;This gives us three worlds: HH, HT, T. Two where I got heads the
-first time, one where I got tails the second time.&lt;/p&gt;
-
-
-&lt;p&gt;Now, what is the probability of getting heads on the first toss? It’s
-half, obviously, but the world enumeration approach as I’ve described it
-so far gives &lt;span class="math inline"&gt;\(\frac{2}{3}\)&lt;/span&gt; because
-there are twice as many worlds with heads as tails. This is clearly
-wrong.&lt;/p&gt;
-
-
-&lt;p&gt;One way to fix this is to imagine that we flip the second coin
-regardless but that flip is only “visible” if we got heads on the first
-flip. This gives us the worlds HH, HT, TH, TT, where to the observer TH
-and TT look identical, and we recover the right probability (&lt;span class="math inline"&gt;\(\frac{1}{2}\)&lt;/span&gt;). For the purpose of getting
-the right answer, this is a perfectly valid approach and can sometimes
-be very useful, but it doesn’t help that well for understanding what’s
-going on and why it wasn’t valid to treat the HH, HT, and T worlds as
-equally likely.&lt;/p&gt;
-
-
-&lt;p&gt;The real problem here is that the world counting method I described
-only works for situations where every world is equally likely, and in
-this case that’s not true. The T world is twice as likely as either the
-HT or the HH worlds.&lt;/p&gt;
-
-
-&lt;p&gt;So, let’s generalise the technique slightly: A &lt;em&gt;weighted world
-enumeration&lt;/em&gt; is a non-empty list of possible worlds together with
-some non-zero weight associated with each of them. In order to calculate
-the probability of something, you add up the weight of the worlds in
-which it’s true, and divide by the total weight of the worlds.&lt;/p&gt;
-
-
-&lt;p&gt;Now, the question is… how do you get weighted world enumerations?&lt;/p&gt;
-
-
-&lt;p&gt;You build them as follows:&lt;/p&gt;
-
-
-&lt;ol type="1"&gt;
-&lt;li&gt;You start from a basic enumeration which is just a single world in
-which anything could happen, and some arbitrary weight (it doesn’t
-matter what. Conventionally it would be 1, but you can pick this for
-convenience)&lt;/li&gt;
-&lt;li&gt;You can at any point split a world into one or more subworlds which
-are mutually incompatible. e.g. if I flip a coin, you could split the
-world into the subworlds where it comes up heads and the subworlds that
-it comes up tails. The weights you assign to those subworlds can be
-whatever you like, as long as they add up to the weight of the original
-world. If you think of the subworlds as equally likely you should split
-the weight between them evenly.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Note that you’re allowed to throw away possibilities
-when you do this split. e.g. if you believe that something is a
-necessary consequence of one of your worlds, you can replace it with
-some more specialised condition without changing the weights.&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;To get a conditional weighted world enumeration (i.e. the world
-enumeration you want after observing something that rules out some of
-the worlds), you just remove everything from the list that has been
-ruled out.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;So, with our two coins example, we start with a world weighted at
-(say) 4, we first split it into (H, 2), (T, 2), and then again into (HH,
-1), (HT, 1), (T, 2). This gets us the intuitive result that the T world
-is twice as big as each of the HH and HT worlds (but has the same weight
-as them combined).&lt;/p&gt;
-
-
-&lt;p&gt;Here’s the problem where I first realised quite how useful this
-technique is:&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Paraphrased from &lt;a href="https://x.com/julianboolean_/status/1836867126360944873"&gt;this
-tweet&lt;/a&gt;. In the original form it asks whether the probability that
-there’s a ball under the cup has gone up or down, and this doesn’t
-actually require you to calculate the probability, because of an
-interesting general principle: If &lt;span class="math inline"&gt;\(A,
-B\)&lt;/span&gt; are disjoint events with non-zero probabilities of occurring,
-then necessarily &lt;span class="math inline"&gt;\(P(A | \neg B) &amp;gt;
-P(A)\)&lt;/span&gt;.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;There are 10 opaque cups face down on a table. I flipped a fair coin,
-if it was heads I picked 1 cup uniformly at random and placed a ball
-under it.&lt;/p&gt;
-
-
-&lt;p&gt;You flip the first 9 cups. No ball.&lt;/p&gt;
-
-
-&lt;p&gt;What is the probability that there’s a ball under cup 10?&lt;/p&gt;
-
-
-&lt;p&gt;We can build up our world enumeration as follows:&lt;/p&gt;
-
-
-&lt;p&gt;First, for convenience, pick the initial weight to be 20.&lt;/p&gt;
-
-
-&lt;p&gt;Now, split this into two worlds based on the flip of a coin. Our
-world enumeration is now (H, 10), (T, 10). Half the world weight goes to
-each coin flip.&lt;/p&gt;
-
-
-&lt;p&gt;If we picked heads, we now pick a cup at random. This splits the H
-world into the 10 possible subworlds, one for each cup. So now we have
-(T, 10), (H1, 1), (H2, 1), …, (H10, 1).&lt;/p&gt;
-
-
-&lt;p&gt;Now, we want our conditional world enumeration, which has determined
-that there is no ball in the first 9 cups. This removes all the worlds
-in which we placed a ball there, so now our world enumeration is (T,
-10), (H10, 1).&lt;/p&gt;
-
-
-&lt;p&gt;This means that the probability that the ball is in the 10th cup is
-&lt;span class="math inline"&gt;\(\frac{1}{10 + 1} = \frac{1}{11}\)&lt;/span&gt;,
-because the total weight of the worlds remaining is &lt;span class="math inline"&gt;\(11\)&lt;/span&gt; and of that weight, &lt;span class="math inline"&gt;\(1\)&lt;/span&gt; of it has the ball there.&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;So to answer the original question, it goes up, because
-the original probability before revealing those balls is &lt;span class="math inline"&gt;\(\frac{1}{20}\)&lt;/span&gt;.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;I think this approach is also useful for reasoning about the dreaded
-&lt;a href="https://en.wikipedia.org/wiki/Monty_Hall_problem"&gt;Monty Hall
-problem&lt;/a&gt;:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Suppose you’re on a game show, and you’re given the choice of three
-doors: Behind one door is a car; behind the others, goats. You pick a
-door, say No. 1, and the host, who knows what’s behind the doors, opens
-another door, say No. 3, which has a goat. He then says to you, “Do you
-want to pick door No. 2?” Is it to your advantage to switch your
-choice?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;We start with our initial world, which we’ll give weight 1 out of
-convention, and split it three ways based on which door has a car behind
-it: 1, 2, 3. We believe these to be equally likely&lt;label class="margin-toggle sidenote-number" for="fn5"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn5" type="checkbox"/&gt;&lt;span class="sidenote"&gt;If we didn’t believe that we could in our head shuffle
-the doors and relabel them to make this the case.&lt;/span&gt;, so
-give them each weight &lt;span class="math inline"&gt;\(\frac{1}{3}\)&lt;/span&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;Monty then picks a door, 2 or 3. This gives us 6 theoretically
-possible worlds. 12, 13, 22, 23, 32, 33.&lt;/p&gt;
-
-
-&lt;p&gt;Now, we know that Monty knows which door the car is behind, and thus
-presumably is deliberately picking a door which doesn’t have a car. This
-means that the worlds 22 and 33 are actually impossible, because Monte
-will never pick that door. Thus our actual list is 12, 13, 23, 32.&lt;/p&gt;
-
-
-&lt;p&gt;The worlds in which it’s an advantage to us to switch are 23 and 32,
-so to calculate how likely it is for switching to be good we need to
-know their total weight. We don’t know the weights of 12, 13, but we do
-know that the total weight stayed unchanged (as we’ve not removed any
-possible worlds, only impossible ones that we’d have had to assign
-weight zero to), so the total weight is &lt;span class="math inline"&gt;\(1\)&lt;/span&gt; and the probability that switching is
-good for us is the sum of the weights of worlds 23 and 32, which is
-&lt;span class="math inline"&gt;\(\frac{2}{3}\)&lt;/span&gt;. So switching is good
-most of the time.&lt;/p&gt;
-
-
-&lt;p&gt;It’s interesting to compare this to the version in which Monty
-doesn’t know which door has the car behind it and picks randomly (with
-you just losing immediately if he picks a car). We now have all six of
-our possible worlds 12, 13, 22, 23, 32, 33, with each of these having an
-equal weight of &lt;span class="math inline"&gt;\(\frac{1}{6}\)&lt;/span&gt;. Now,
-we’ve observed a goat, which cuts out the worlds 22 and 33, so now we’ve
-got worlds 12, 13, 23, 32. But this time all of these have equal weight,
-so switching is to our advantage with probabilityh &lt;span class="math inline"&gt;\(\frac{1}{2}\)&lt;/span&gt;, and there is no benefit (or
-disadvantage) to switching.&lt;/p&gt;
-
-
-&lt;p&gt;You can extend this technique to general Bayesian reasoning, which is
-essentially a modification where rather than cutting out worlds that are
-impossible you reweight them based on how likely they are to show the
-relevant data, but that’s a topic for another time.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2025-03-05-10:29.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-03-22-21:54.html</id>
     <title>There is no sludge</title>
@@ -1451,7 +1211,7 @@ attitude and stop being goddamn freeloaders.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-03-30-11:41.html</id>
     <title>Necessity creates possibility</title>
-    <updated>2025-03-30T15:31:49+01:00</updated>
+    <updated>2025-03-30T15:42:55+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Necessity creates possibility&lt;/p&gt;
@@ -1621,5 +1381,105 @@ evaporate as soon as confronted with a firm insistence that you try.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2025-03-30-11:41.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2025-03-31-18:47.html</id>
+    <title>Win Streaking and Reliability</title>
+    <updated>2025-03-31T18:47:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Win Streaking and Reliability&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2025-03-31&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I’ve been trying to learn to win streak in Slay the Spire recently.
+That is, get several wins back to back. I’m only playing on Ascension 1
+for this, although I am trying to kill the heart (if you don’t know what
+this means: Challenging but not the hardest mode).&lt;/p&gt;
+
+
+&lt;p&gt;I’m pretty good at Slay the Spire. I’m not the best, not even close,
+but I can semi-regularly beat it on the hardest mode, which is a
+reasonably difficult achievement.&lt;/p&gt;
+
+
+&lt;p&gt;But I think one of the things this experiment is very much
+demosntrating to me is that I’m playing it wrong. I’m very much engaged
+in what you might call “vibe play”&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Get your mind out of the gutter.&lt;/span&gt;, where I’ve got a pretty
+well honed intuition as to how to play it, and mostly follow that with a
+little bit of tactical reasoning layered on top.&lt;/p&gt;
+
+
+&lt;p&gt;This doesn’t produce many win streaks. I think on good days I win
+maybe… 5-10% of my ascension 20 games, and probably somewhere in 40%
+region for ascension 1. This is good for generating lots of wins, but
+very bad for win streaking. At 40%, you’ll get some two-streaks,
+occasionally three-streaks, and very rarely four-streaks.&lt;/p&gt;
+
+
+&lt;p&gt;This is, I think, an intrinsic limitation on vibe play, and if I want
+to actually win streak I need to start doing some sort of deliberate
+play. The problem in slay the spire is that it’s very easy to learn ways
+of playing that work very well if the game hands you gimmes. e.g. I
+think everyone can beat the heart on A20 most of the time when they get
+dead branch/corruption, but you don’t get that very often. If that
+happens in, say, 1% of games, you can pretty easily vibe-play your way
+to an appreciable win rate.&lt;/p&gt;
+
+
+&lt;p&gt;A more general example, one that I think I’m prone to, is that it’s
+very easy to take too many risks in Act 1, which will let you either get
+very strong early on or die early on. This pretty rapidly gets you up to
+a decent win rate where you win a substantial fraction of the time that
+you don’t die in Act 1.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;This is definitely a little bit my problem, although I’m
+more likely to die in Act 2 than Act 1 because Act 2 is the hard act.&lt;/span&gt;, but you have a high loss rate in
+Act 1, and trying to fix that ends up actually lowering your win rate
+because you’re not strong.&lt;/p&gt;
+
+
+&lt;p&gt;One of the things I’m trying to point to in &lt;a href="https://notebook.drmaciver.com/posts/2025-03-30-11:41.html"&gt;Necessity
+Creates Possibility&lt;/a&gt; is that it’s very easy to end up in this
+situation in real life too. It’s very easy to write when you’re in the
+mood to write. That gets your win % on writing up to an appreciable
+amount above zero. But if you don’t learn to write when you don’t feel
+like writing, you end up very limited in how far you can improve.&lt;/p&gt;
+
+
+&lt;p&gt;The problem with moving off vibe play is that part of how you learn
+vibe play is that it’s fun.&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Stop snickering.&lt;/span&gt; Learning to step outside
+that requires taking a more deliberate perspective on the game. I’ve
+talked before about &lt;a href="https://drmaciver.substack.com/p/record-yourself"&gt;recording
+yourself playing&lt;/a&gt; to do this, but at this point I’m probably better
+off actually breaking out pencil and paper and sketching out things
+like:&lt;/p&gt;
+
+
+&lt;ol type="1"&gt;
+&lt;li&gt;What’s my goal?&lt;/li&gt;
+&lt;li&gt;What do I need to have achieved by floor X?&lt;/li&gt;
+&lt;li&gt;What probability do I assign to clearing this act?&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;And having a very slow methodical approach to the problem, where I
+actually think about what I’m doing.&lt;/p&gt;
+
+
+&lt;p&gt;Sounds boring TBH.&lt;/p&gt;
+
+
+&lt;p&gt;I think this is often a problem you get: You can succeed on pure
+talent and enjoyment as long as things are going your way, but in order
+to get really good you have to become reliable, and in order to do that
+you have to figure out how to succeed even when the world isn’t
+cooperating with you.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2025-03-31-18:47.html" rel="alternate"/>
   </entry>
 </feed>
