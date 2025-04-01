@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-03-31T18:47:00+01:00</updated>
+  <updated>2025-04-01T21:49:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,185 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2025-03-22-21:54.html</id>
-    <title>There is no sludge</title>
-    <updated>2025-03-22T22:50:58+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;There is no sludge&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2025-03-22&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I’ve been thinking recently about sludge.&lt;/p&gt;
-
-
-&lt;p&gt;Specifically, as a metaphor. When thinking is hard, or motivation is
-hard, it feels like trying to think through sludge. Details are hard to
-see, everything is harder, and whatever you do it ends up coming away
-sortof grimy. It’s a very compelling metaphor. It’s also a common one
-for people who, like me, are coming off a stimulant&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;If you have ADHD and rely on stimulants to manage that,
-please assume I’m suitably sympathetic to your situation and there are
-whatever caveats you need to not treat this article about my own
-personal experience with them as an attack. For me they come with
-significant downsides and I’m trying to figure out my way to manage
-without them, but that doesn’t mean I think they’re in principle an
-invalid solution.&lt;/span&gt;
-addiction.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Which is to say, I’ve stopped drinking coffee again.
-I’ve also heard this from people who quit cigarettes. I assume it’s a
-thing for people who quit stronger stimulants but I don’t know for
-sure.&lt;/span&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;Withdrawal is real, of course, I’m not denying that. I’ve certainly
-had the agonising headaches to prove it. But when you’re past the first
-few weeks of caffeine withdrawal, everything still feels like sludge.
-But I think maybe it’s just a skill issue.&lt;/p&gt;
-
-
-&lt;p&gt;The thing about stimulants is… stimulants are really good at solving
-problems. Having a button you can press and make a whole class of of
-problems go away is fantastic. Need to get some work done? Drink some
-coffee. Feeling tired? Drink some coffee. Bored and feeling kinda
-listless? Drink some coffee. Taking a stimulant amps up your general
-ability to do things, and that’s pretty good if you’ve got a problem
-shaped like needing to do something and not doing it. I’m struggling to
-keep focus on writing this right now, and a coffee sure would help.&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Except for the fact that it’s 10PM and drinking coffee
-right now would be a disaster at the best of times.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;I think a bunch about addiction. I’m not sure I think correct things
-about it, but some toy models I have of it are really interesting for
-illuminating other things.&lt;/p&gt;
-
-
-&lt;p&gt;Take heroin, for example.&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Which is to say, it’s best if you don’t take heroin.&lt;/span&gt; It’s not hard to imagine
-the appeal of what basically amounts to wireheading. Push button, be
-happy. Currently unhappy? Take some heroin, that will fix it!&lt;label class="margin-toggle sidenote-number" for="fn5"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn5" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I do want to reemphasise that this is a rhetorical
-flourish and not advice.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;Except… it’s not generally my impression that the typical heroin user
-is particularly happy. Probably they’re at least temporarily happy while
-on heroin, but that doesn’t get to be a 24/7 state.&lt;/p&gt;
-
-
-&lt;p&gt;&lt;a href="https://drmaciver.substack.com/i/43763473/choosing-not-to-eat-the-lotus"&gt;I’ve
-talked about this example before&lt;/a&gt; and one of the pieces of feedback I
-got from people who have used heroin is that it’s honestly not that
-compelling to them when their life is going well. I think that makes
-sense. My guess is &lt;a href="https://en.wikipedia.org/wiki/Rat_Park"&gt;rat
-park&lt;/a&gt; is mostly fake&lt;label class="margin-toggle sidenote-number" for="fn6"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn6" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I base this on two key facts: The first is that it
-didn’t replicate, the second more important one is that it’s 20th
-century psych research.&lt;/span&gt;, but I do still more or less buy the
-addiction-as-solution model.&lt;/p&gt;
-
-
-&lt;p&gt;But… I’m not sure the thing the addiction is solving is unhappiness
-exactly. My guess is that if you compare the average heroin user’s life
-to one without heroin, the one without is probably in aggregate still
-happier. I think the thing the addiction is providing is
-&lt;em&gt;clarity&lt;/em&gt;. There is a simple solution to all your problems, it’s
-heroin. At any given moment where you have a problem, the heroin will
-make your life better, the only cost is that each time you pick this
-solution you overall make your life much worse, as an increasingly large
-fraction of the problems that heroin solves for you, it also causes.&lt;/p&gt;
-
-
-&lt;p&gt;Similarly, if you compare my life without coffee to my life with
-coffee,&lt;label class="margin-toggle sidenote-number" for="fn7"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn7" type="checkbox"/&gt;&lt;span class="sidenote"&gt;My experience with caffeine is probably worse than
-you’re imagining, but even so I am aware this is comparing two very
-different extremes, you don’t need to point it out.&lt;/span&gt; I am in fact on average more
-functional without coffee than with. But it’s higher variance, and on
-any given day where I really need to function, coffee sure would help a
-lot… But the cost is that I’m highly likely to relapse and find myself
-with another problem which coffee would help a lot with the next day or
-so, and then suddenly I’m having coffee every few days, and then daily,
-and oh no I can’t quit now I can’t afford to lose three days to
-headaches.&lt;label class="margin-toggle sidenote-number" for="fn8"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn8" type="checkbox"/&gt;&lt;span class="sidenote"&gt;If this sounds overdramatic to you, I promise you it’s
-not. I’ve quit coffee and relapsed like this multiple times. Even
-knowing this I can’t rule out that it’s going to happen again. Although
-I have in fact had caffeine exactly once since quitting. I think it was
-justified in context, and thankfully it did not result in a second
-time.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, sludge.&lt;/p&gt;
-
-
-&lt;p&gt;My theory is that “sludge” is actually fake, and is the addict
-response to leaving a world of false clarity and encountering the
-messiness of normal human experience.&lt;/p&gt;
-
-
-&lt;p&gt;Stimulants help you do things, and they do this by helping you bypass
-parts of the normal process by which you &lt;em&gt;decide&lt;/em&gt; to do things.
-And that process, like all real mature human interaction with the world,
-is situation dependent. You have a specific problem, it admits a
-specific solution.&lt;/p&gt;
-
-
-&lt;p&gt;One of the things I notice much more without coffee is that there’s a
-sort of anxiety that adheres to the basic act of creation. I’m feeling
-quite tense right now just trying to put words on the page, even in a
-notebook quality way. There’s a genuine sense of fear and anxiety
-manifesting in my upper body. It’s honestly very weird. It keeps making
-me want to bounce off the process. Everything feels… not hard and
-effortful exactly, but &lt;em&gt;painful&lt;/em&gt;. Like there’s a literal physical
-pain to it.&lt;/p&gt;
-
-
-&lt;p&gt;But that’s not the only thing of course. Sometimes I’m just tired.&lt;label class="margin-toggle sidenote-number" for="fn9"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn9" type="checkbox"/&gt;&lt;span class="sidenote"&gt;No! Fake! Tired isn’t a real thing. It’s many different
-real things.&lt;/span&gt; Sometimes I know what I have to do
-and there’s no anxiety associated with it but it’s &lt;em&gt;boring&lt;/em&gt; and I
-don’t want to do it.&lt;/p&gt;
-
-
-&lt;p&gt;Sometimes, even worse, I might have to voluntarily do something
-mildly uncomfortable.&lt;/p&gt;
-
-
-&lt;p&gt;Sometimes in order to decide what to do I have to engage with the
-most terrifying question of all: What do I actually want?&lt;/p&gt;
-
-
-&lt;p&gt;All of these are different situations which, if I don’t pay attention
-to their fine grained texture, feel like sludge.&lt;/p&gt;
-
-
-&lt;p&gt;And they’re all completely different situations. The only thing that
-unifies them is that stimulants are a solution to them.&lt;/p&gt;
-
-
-&lt;p&gt;And if I’ve rejected stimulants as a solution &lt;em&gt;there is no
-unification&lt;/em&gt;, and their different character becomes apparent as soon
-as I attend to my actual experience and try to solve the problem.&lt;/p&gt;
-
-
-&lt;p&gt;That’s hard. If I’ve spent my entire adult life papering over a
-problem, no wonder there’s a skill issue, both with finding out what the
-specific problem is and also with solving it.&lt;/p&gt;
-
-
-&lt;p&gt;But if I ignore it and just talk about sludge, I’m being &lt;a href="https://notebook.drmaciver.com/posts/2022-05-30-18:41.html"&gt;a
-victim of metonymy&lt;/a&gt;, and worse I’m doing it by conflating a specific
-problem &lt;em&gt;with a broader category I don’t have access to&lt;/em&gt; unless I
-choose to adopt the category of solution I’ve rejected. I shouldn’t do
-that.&lt;/p&gt;
-
-
-&lt;p&gt;Don’t adopt ontologies that force you into strategies you want to
-avoid. Attend to the specific, and understand your problems in a way
-that lets you act on them appropriately.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2025-03-22-21:54.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-03-23-21:48.html</id>
     <title>How I clean my kitchen at the end of the day</title>
@@ -1385,7 +1206,7 @@ evaporate as soon as confronted with a firm insistence that you try.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-03-31-18:47.html</id>
     <title>Win Streaking and Reliability</title>
-    <updated>2025-03-31T18:47:00+01:00</updated>
+    <updated>2025-03-31T19:10:48+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Win Streaking and Reliability&lt;/p&gt;
@@ -1481,5 +1302,143 @@ cooperating with you.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2025-03-31-18:47.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2025-04-01-21:49.html</id>
+    <title>You create rules, rules create you</title>
+    <updated>2025-04-01T21:49:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;You create rules, rules create you&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2025-04-01&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I used to be a huge &lt;a href="https://www.beeminder.com/"&gt;Beeminder&lt;/a&gt; fan.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;In some ways I still am a huge Beeminder fan (certainly
+I’m a big fan of the Beeminder team), I just happen to be a
+non-practicing one.&lt;/span&gt; For
+those who don’t know, Beeminder is a commitment system. You say “I’m
+going to do this thing X times a week”, or “I’ll spend at most X hours a
+week doing this”, or any other commitment about your life that you can
+phrase as a metric.&lt;/p&gt;
+
+
+&lt;p&gt;One of the features of it I thought was extremely well thought out
+was the way changing this commitment worked, which is that you can
+change it at any time… and that change will take a week to take effect.
+You’re always allowed to let future you off the hook, but the fact that
+you don’t want to adhere to your commitment right this very minute
+doesn’t get you off the hook.&lt;/p&gt;
+
+
+&lt;p&gt;You can, of course, fail to uphold your commitment (“derail”), at
+which point you pay Beeminder a previously agreed penalty.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;You can also email them with an excuse as to why you
+should be let off the hook and an actual human will read it. Sometimes
+they’ll just let you off the hook, sometimes they’ll say “Are you sure
+that’s a good enough reason?” and maybe you’ll shuffle your feet and say
+“No I guess not” and pay them or maybe you’ll stick to your guns.&lt;/span&gt; It
+essentially makes the entire thing a sort of asynchronous negotiation
+between your past and future selves. You can decide what commitments you
+want to hold your future self to, and you can choose whether to break
+your current commitments to your past self, but you cannot
+&lt;em&gt;forgive&lt;/em&gt; those commitments. You are forced to either uphold them
+or pay the costs of not doing so.&lt;/p&gt;
+
+
+&lt;p&gt;I think this is often a good model for trying to choose who to be,
+even when it’s not as cleanly mediated by beeminder. When I talk about
+&lt;a href="https://notebook.drmaciver.com/posts/2025-03-30-11:41.html"&gt;necessity&lt;/a&gt;
+it’s really this sort of commitment made by your past self that I’m
+talking about. I don’t pay a financial penalty for failing to write
+daily, but I do pay the emotional cost by knowing that I’ve let down
+this thing that past me has committed to. At some point I will indeed
+decide to stop the daily writing&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Typically I keep it up for 1-3 months before it starts
+to lose the appeal, and that’s fine. But also… maybe I won’t. Maybe I’ll
+just keep up the daily writing forever, possibly with some
+modifications. Who knows?&lt;/span&gt;, but when that happens
+it won’t be because one day I’ve just decided I have enough, it will be
+because I choose to release future me from his commitments to
+writing.&lt;/p&gt;
+
+
+&lt;p&gt;Probably at some point in that time I will fail to write some day.
+That was nearly today, honestly. It’s not been a great day. This isn’t
+the end of the world. Maybe there will be a good reason for it and I
+won’t feel bad, maybe there won’t be a good reason and I’ll resolve to
+do better, but the important thing is that I will acknowledge that the
+rule was broken, and this was an important fact that I should respond
+appropriately to, and that I should consider this fact when deciding
+whether to break the rule or not - ask myself if I &lt;em&gt;really&lt;/em&gt; need
+to or if I could in fact do the thing.&lt;/p&gt;
+
+
+&lt;p&gt;I think being able to choose rules that you follow and then stick to
+them is very important, and you can use them to shape your emotional
+reactions to things, and make aspiring towards be the sort of person you
+want to be easier.&lt;/p&gt;
+
+
+&lt;p&gt;One problem with the Beeminder analogy&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;And part of why I don’t use Beeminder any more.&lt;/span&gt; is
+that it makes it sound like the rules you follow are mostly about
+creating negative emotions - they create ways of punishing yourself for
+not upholding the ideal. I don’t think this has to be the case. For
+example, with the daily writing there’s certainly a sort of “Ugh, I
+guess &lt;a href="https://notebook.drmaciver.com/posts/2025-03-29-10:40.html"&gt;I’ve
+gotta&lt;/a&gt;” feeling because I know I’ll feel bad if I don’t do it, but
+then I follow the rule it feels &lt;em&gt;good&lt;/em&gt;. There’s something very
+satisfying about writing every day, above and beyond the general
+satisfaction of writing. It helps elaborate a stream of thinking that
+ties thought into life in a way that I very much appreciate.&lt;/p&gt;
+
+
+&lt;p&gt;You can also have rules that are more lightweight or even purely
+positive. For example, one rule I live by is that I always say hello to
+ducks if I see ducks. Why? Dunno. I started doing it, and I enjoyed it,
+so I kept doing it. It’s not a rule I would feel guilty for not
+following, but it is a rule I actively try to follow and it pleases me
+to do so.&lt;/p&gt;
+
+
+&lt;p&gt;I think you can also do this by creating your own &lt;a href="https://drmaciver.substack.com/p/fragments-intellectual-diy"&gt;idiosyncratic
+categories and distinctions&lt;/a&gt; about the world. For example, I have a
+mental category of “proper meal” which is basically defined by it having
+to have three different vegetables in it.&lt;label class="margin-toggle sidenote-number" for="fn5"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn5" type="checkbox"/&gt;&lt;span class="sidenote"&gt;There is a series of complicated rules and codicils to
+this rule. For example: Neither mango, obviously, nor onions are
+vegetables, but a dish which combines mangos and onions counts as one
+vegetable. I’m aware this is a stupid piece of convoluted Byzantine
+logic, but also it’s obviously correct so shut up.&lt;/span&gt; I
+try to have at least one proper meal in this sense per day. I don’t
+firmly commit to doing this, but a day in which I have at least one
+proper meal feels better than a day in which I don’t, because I’ve
+decided that this is the sort of meal I should cook.&lt;/p&gt;
+
+
+&lt;p&gt;One of the things I learned with Beeminder is that you can’t add too
+many rules at once. It quickly gets overwhelming and you quit the whole
+thing in distress as your willingness to engage with the experience
+collapses under the burden of it. But for many of the rules we live by,
+the actual rule has long dissolved into being just… you. I occasionally
+reach for the proper meal rule when I’m trying to figure out what to do
+and having some explicit guidance would help, but mostly it’s just baked
+in to how I cook and eat. I don’t even think about the ducks rule, I
+just see ducks and I say hello. I brush my teeth twice a day, but that’s
+not a rule at all at this point it just wouldn’t occur to me not to and
+it would feel wrong until I fixed it.&lt;/p&gt;
+
+
+&lt;p&gt;But when you’re trying to shift who you are, particularly when you’re
+trying to &lt;a href="https://notebook.drmaciver.com/posts/2025-03-31-18:47.html"&gt;more
+reliably be the sort of person you can only sometimes be&lt;/a&gt;, sometimes
+a rule and the ability to commit to it is just what you need. You’ll get
+the rules wrong sometimes, and when you do you absolutely need to be
+able to change them without guilt, but before you can change them you
+need to follow them.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2025-04-01-21:49.html" rel="alternate"/>
   </entry>
 </feed>
