@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-04-02T18:59:00+01:00</updated>
+  <updated>2025-04-03T11:36:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,119 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2025-03-24-21:45.html</id>
-    <title>Particularity</title>
-    <updated>2025-03-24T23:02:31+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Particularity&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2025-03-24&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;&lt;a href="https://notebook.drmaciver.com/posts/2025-03-23-21:48.html"&gt;I
-wrote a post about cleaning my kitchen&lt;/a&gt; yesterday. You might have
-seen it.&lt;/p&gt;
-
-
-&lt;p&gt;I posted it on discord saying “this is probably really boring”. I
-shouldn’t have done that, it was just random self-deprecation for the
-fact that I’d written about such a “mundane” subject, but really I knew
-it was a pretty good piece, and people liked it as expected. More
-importantly, this is the sort of thing I think we need more of rather
-than less, so I shouldn’t put it down.&lt;/p&gt;
-
-
-&lt;p&gt;One of the things I’ve been worrying about recently is… deskilling I
-guess. One of the concerns I have about AI in its current and near
-future form is that there are a lot of things where people feel it’s
-just no longe rworth doing things pretty well. If you’re bad at art, AI
-is probably better at art than you. If you’re bad at writing, an LLM is
-probably better at writing than you. Even if you’re pretty good at
-these, a lot of the time they can do a good enough job much faster than
-you.&lt;/p&gt;
-
-
-&lt;p&gt;This isn’t a new problem. A lot of progress has been devaluing old
-skills because they’ve been replaced with something cheaper. e.g. many
-things are no longer worth repairing (or can’t be repaired) and you just
-replace them when they break.&lt;/p&gt;
-
-
-&lt;p&gt;The big problem with this is that being bad at things is how you get
-good at things, so this creates a real difficulty where you’re sortof
-discouraged from getting good at things because all the initial steps
-are taken away from you.&lt;/p&gt;
-
-
-&lt;p&gt;The thing is… I think this problem is economically real, in that a
-lot of demand for this sort of thing &lt;em&gt;is&lt;/em&gt; sortof fungible and
-replacing an expensive human with a machine that can cheaply produce
-good enough work &lt;em&gt;is&lt;/em&gt; a win for many use cases, but the problem
-is also sortof fake in that a lot of people experience it as “what’s the
-point of producing things if you’re not already a genius?” and that’s
-really not how it works.&lt;/p&gt;
-
-
-&lt;p&gt;The “How I clean my kitchen” essay is, in a real sense, not possible
-for an AI to have written. I don’t mean it couldn’t literally put words
-like that on a page. An AI can totally write an essay about how it
-cleans its kitchen. &lt;a href="https://claude.site/artifacts/6cb6635f-a7d8-4954-8392-d7c17fa7ec39"&gt;Here’s
-one&lt;/a&gt;. I got Claude to write it for me in a couple of minutes of
-prompting. It’s sortof overwrote and mawkish and you don’t learn much
-about cleaning from it, but it is certainly an essay that one could
-write about how to clean a kitchen. &lt;a href="https://claude.site/artifacts/baa1d8f0-3163-4b2b-a3a2-6b81c1488134"&gt;Here’s
-another one&lt;/a&gt; where I told it to be a bit more useful. It will create
-as many essays about cleaning kitchens for you as you like! If you ask
-nicely it might even do one by someone who isn’t a woman named Chen with
-a charmingly rustic kitchen.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Claude has a major mode collapse problem where it’s not
-very creative when comig up with characters.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;A sufficiently advanced version of Claude might even do this in a
-psychologically realistic and practically useful way. We can definitely
-imagine a world in which Claude is much better at writing essays about
-cleaning its kitchen than I am.&lt;/p&gt;
-
-
-&lt;p&gt;But there is one very important difference between Claude’s version
-of the essay and mine: Claude doesn’t have a kitchen, and didn’t get any
-better at cleaning it as a result of writing about it.&lt;/p&gt;
-
-
-&lt;p&gt;Additionally, Claude doesn’t have friends or people who are
-interested in its specific ways of relating to the world that can learn
-about it and how it is similar and different to them by reading about
-its relationship with the kitchen. Claude could have created any
-personality you want. &lt;a href="https://claude.site/artifacts/94c552ac-2c51-4b08-9dd6-5fdda565c633"&gt;Here’s
-one by a ballerina biker named Magnus “Sledge” Thornton&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;None of these people are real, you can’t have real relationships with
-them. As fictional artefacts, they can be interesting,&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Although honestly all of these have the flavour of slop
-to me, and I sortof cringe and my eyes slide off them as I try to read
-them, so I’ve only skimmed any of them.&lt;/span&gt; but
-they don’t have a particular human at their center.&lt;/p&gt;
-
-
-&lt;p&gt;Creation is relational, and it is particular. When you put yourself
-in a situation where the value of what you do is interchangeable with
-anyone else doing it, of course you end up being devalued by machines.
-Economics can force you to be in that position, but that doesn’t mean
-that what you do lacks value in and of itself. The fact that you
-produced something gives it a value in how it related you to the world -
-it changes you to create it, and in being particular it also matters
-more to those who are relationship to you, above the artefact
-itself.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2025-03-24-21:45.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-03-25-20:16.html</id>
     <title>Figuring out what hurts</title>
@@ -1271,7 +1158,7 @@ need to follow them.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-02-18:59.html</id>
     <title>Building a library of stories</title>
-    <updated>2025-04-02T18:59:00+01:00</updated>
+    <updated>2025-04-02T21:09:14+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Building a library of stories&lt;/p&gt;
@@ -1401,5 +1288,131 @@ declaration to experiment than a well articulated thesis.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2025-04-02-18:59.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2025-04-03-11:36.html</id>
+    <title>Threads of existence</title>
+    <updated>2025-04-03T11:36:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Threads of existence&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2025-04-03&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I have a sort of running “joke” that I don’t have chronic fatigue,
+I’m just… fatigued… chronically. Same with pain. Similarly I’m not
+disabled, it’s just that sometimes I can’t walk.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, I don’t have depersonalisation…&lt;/p&gt;
+
+
+&lt;p&gt;Someone on discord recently described my writing as:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;this guy has actually thought about the most basic mechanics of
+“being a person in the world”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;One of the reasons I have to do that is that I don’t feel very good
+at being a person, and I’m having to figure it out the hard way.&lt;/p&gt;
+
+
+&lt;p&gt;I genuinely don’t think I actually meet many (any?) of the diagnostic
+criteria for depersonalisation, but there’s definitely some sort of
+background feeling of… what would it like to actually just effortlessly
+be a person?&lt;/p&gt;
+
+
+&lt;p&gt;To be clear, I’m not actually under any illusions about whether I am
+or am not a person, and don’t actually benefit from external
+reassurances about this. I’m factually clear on the empirical question
+of my personhood. But it doesn’t feel like I’m very good at it, and I
+don’t trust external observers’ opinions on the subject.&lt;/p&gt;
+
+
+&lt;p&gt;The reason I don’t trust external observers here is that I think
+people rarely notice this about me, because I’m highly functional in
+short bursts and in company, and so this adds up to seeming extremely
+like a person in any externally observable scenario. But what that feels
+like from the inside is that I &lt;a href="https://drmaciver.substack.com/p/cohering-and-decohering"&gt;cohere&lt;/a&gt;
+when observed or otherwise prompted to by circumstances, but can’t
+easily do so under my own steam, and by default just collapse into a
+sort of decohered blob that left to its own devices will just &lt;a href="https://notebook.drmaciver.com/posts/2022-01-06-12:00.html"&gt;drift&lt;/a&gt;.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;If you’re wondering if that’s related to the
+aforementioned definitely-don’t-have-chronic-fatigue, yeah me too. I
+don’t know how much, or in which direction, but it sure seems like a
+thing. If you’re thinking “gosh David, it sure sounds like what you’re
+describing is depression”, yes I know. I did start by talking about a
+key major common diagnostic feature of depression after all…&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;It feels, almost, like having a self that lacks object permanence.
+It’s not there if someone isn’t looking. And, sure, it’s relatively
+stable in its characteristics each fresh time it exists, because it’s
+made out of roughly the same parts each time, but it still went through
+a phase of not existing and coming back into existence, with a
+discontinuity between those two things.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, this seems bad, and I’d like to fix it. In some ways, fixing
+it is probably a core feature of my project, although I don’t know that
+I’ve done a very good job of that.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I tend to think of my personal project as something more
+like “Figure out how to be less depressed”, but it has a lot of details
+and pulls in a lot of life in general&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;Part of fixing it is just &lt;a href="https://notebook.drmaciver.com/posts/2025-03-31-18:47.html"&gt;finding
+more circumstances in which I can cohere&lt;/a&gt;, but I think another bigger
+part is a sort of… OK, sometimes you’re not a person. That’s normal.
+Going to sleep for example is a legitimate interruption in continuity.
+Or sometimes you just lose yourself in flow in a way that interrupts
+your conscious awareness of what’s going on, or get drunk, or are ill,
+or… You get the idea. If an enduring sense of self requires full
+continuity, you’re never going to have it.&lt;/p&gt;
+
+
+&lt;p&gt;I think the analogy to object permanence is interesting, because the
+thing about lacking object permanence is that &lt;em&gt;objects actually are
+permanent&lt;/em&gt;. The fact that they cease to exist for you in between
+viewings doesn’t actually mean they cease to exist. What’s lacking is
+not a permanence to their existence, but your sense of that permanence
+as a unified thing.&lt;/p&gt;
+
+
+&lt;p&gt;I think part of how you build that unity between different fragments
+of yourself across time is that you start to build links between them.
+Part of what’s interesting about the &lt;a href="https://notebook.drmaciver.com/posts/2025-03-30-11:41.html"&gt;attitude
+to commitments&lt;/a&gt; I’m trying to foster is that it is casting a link
+forward in the future between yourself now and who you will be. Being
+able to do this reliably starts to help you feel that you will continue
+to exist in the future as an entity contiguous with who you are now. You
+are, but actually being able to act on that helps you &lt;a href="https://notebook.drmaciver.com/posts/2020-03-14-13:55.html"&gt;alieve&lt;/a&gt;
+that.&lt;/p&gt;
+
+
+&lt;p&gt;I think &lt;a href="https://notebook.drmaciver.com/posts/2025-04-02-18:59.html"&gt;telling
+stories about your life&lt;/a&gt; is likely the other part of this link, and
+it’s part of why I’m trying to figure out how to explore that. In much
+the same ways commitments cast a link forward, a story casts a link
+backwards, connecting up who you are now with who you were then.&lt;/p&gt;
+
+
+&lt;p&gt;Alasdair MacIntyre has this notion of “narrative identity” as the
+thing that constitutes selfhood. I haven’t read much about this, though
+I do keep vaguely intending to. I guess I’m gesturing at something like
+that, although I’m not sure we’re talking about exactly the same sort of
+thing. I don’t think you can view self as wholly constituted by
+narrative, but I do think that narrative is perhaps an important tool
+for building a skeleton that a self can grow on top of.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2025-04-03-11:36.html" rel="alternate"/>
   </entry>
 </feed>
