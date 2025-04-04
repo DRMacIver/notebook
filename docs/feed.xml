@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-04-03T11:36:00+01:00</updated>
+  <updated>2025-04-04T13:33:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,104 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2025-03-25-20:16.html</id>
-    <title>Figuring out what hurts</title>
-    <updated>2025-03-25T21:29:41+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Figuring out what hurts&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2025-03-25&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;One of the biggest reasons why the &lt;a href="https://notebook.drmaciver.com/posts/2022-05-30-18:41.html"&gt;victim
-of metonymy&lt;/a&gt; concept is important is that it helps you figure out
-what you need to vary to fix a problem.&lt;/p&gt;
-
-
-&lt;p&gt;Something interesting that’s happened to me recently is that I’ve had
-several work calls that were 2-3 hours long. Part of why this is
-interesting is that they didn’t &lt;em&gt;feel&lt;/em&gt; that long, because we were
-pair programming on Tuple. This meant we weren’t looking at each other’s
-faces (didn’t even have our webcams on).&lt;/p&gt;
-
-
-&lt;p&gt;Not that there’s anything wrong with my colleague’s face you
-understand. But there’s something about &lt;em&gt;looking at faces on video
-calls&lt;/em&gt; that ends up producing something like fatigue&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Your regular reminder that fatigue isn’t a real thing.&lt;/span&gt;. I
-have recurring video calls with dear friends and family whose faces I
-enjoy seeing very much, and usually my brain is mush an hour in.&lt;/p&gt;
-
-
-&lt;p&gt;I also have a recurring phone call with a friend, which I usually
-take while walking or doing chores, and I have no such mush effect. I’m
-reasonably sure the difference is the fact that it’s voice only and my
-attention is focused on something rather than someone.&lt;/p&gt;
-
-
-&lt;p&gt;In constrast, spending time with someone in person has no such
-limitations. Part of that is that you don’t actually spend most of your
-in person interactions staring directly at someone’s face, you look
-around, you look at things together, your gaze wanders. This is normal.
-There’s somethign about the fixity of the face on the screen that is a
-real problem.&lt;/p&gt;
-
-
-&lt;p&gt;Video calls seem particularly prone to being treated as a unitary
-thing that just has intrinsic problems, even when those problems are
-easily fixed or avoided. e.g. back during the height of the pandemic I
-did singing lessons online. I’m glad I did it but it was, frankly, a bit
-of a miserable experience to do online. My singing teacher clearly
-thought so too.&lt;/p&gt;
-
-
-&lt;p&gt;One of the things that was bad about it was that she insisted on
-trying to keep time with me as I sung. It took quite some time of me
-explaining in detail how latency worked and how what she was asking for
-was literally a violation of the laws of physics&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I think this isn’t technically true and we were
-physically close enough that a point to point laser comms could have got
-latency acceptably low.&lt;/span&gt;
-before we figured out better ways to do time keeping using a metronome
-app.&lt;/p&gt;
-
-
-&lt;p&gt;I assume she would have figured this out eventually - we’re now at a
-point where &lt;em&gt;most&lt;/em&gt; people have figured out you can’t sing
-together on a video call at least - but it was just sortof baffling to
-be faced with someone so specifically doing the thing that obviously
-wasn’t working and just blaming it on “well video calls suck”.&lt;/p&gt;
-
-
-&lt;p&gt;Once we’d fixed this and switched to using a local metronome it
-worked much better. I still didn’t love doing singing lessons online,
-but it was no longer an active exercise in frustration.&lt;/p&gt;
-
-
-&lt;p&gt;This is the thing about attending to the specific: When you know
-what, precisely, it is about it that hurts, you can fix that.&lt;/p&gt;
-
-
-&lt;p&gt;Not all my calls with friends and family have moved to the less
-painful mode, for one reason or another, but I’ve figured out my own
-affordances for them. Sometimes I cook while talking, sometimes I play
-Slay the Spire during a call, and both of these engage my eyes in a way
-that allows me to maintain the actual conversation.&lt;/p&gt;
-
-
-&lt;p&gt;And sometimes I just put up with it. Looking at my friends and family
-has its upsides! But knowing the source of the specific problem gives me
-options that I wouldn’t have if I just treated the effect as a
-mysterious gestalt effect of video calls.&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Not that I actually fully understand why the specific
-thing causes this problem, but I don’t need to to work aroudn it.&lt;/span&gt;&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2025-03-25-20:16.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-03-26-19:06.html</id>
     <title>Creativity on demand</title>
@@ -1292,7 +1194,7 @@ declaration to experiment than a well articulated thesis.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-03-11:36.html</id>
     <title>Threads of existence</title>
-    <updated>2025-04-03T11:36:00+01:00</updated>
+    <updated>2025-04-03T12:53:50+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Threads of existence&lt;/p&gt;
@@ -1414,5 +1316,70 @@ for building a skeleton that a self can grow on top of.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2025-04-03-11:36.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2025-04-04-13:33.html</id>
+    <title>Why do you do things?</title>
+    <updated>2025-04-04T13:33:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Why do you do things?&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2025-04-04&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I recently watched CJTheX’s &lt;a href="https://www.youtube.com/watch?v=GZg_36utl2w"&gt;6 Shapes of God&lt;/a&gt;.
+I don’t really know if I recommend it or not. I recommend giving it a go
+and either you’ll find it weirdly compelling and watch it or you won’t
+want to watch it and both are fine outcomes.&lt;/p&gt;
+
+
+&lt;p&gt;One of the things they talk about in it, partially rooted in some
+work by the philosopher Harry Frankfurt that I’m passingly familiar
+with&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;And really should read more of. I find Frankfurt a bit
+dry, but generally he makes really interesting points about stuff I care
+about.&lt;/span&gt; is that there’s a sort of division
+into “instrumental ends” (e.g. I want to make money) and “terminal ends”
+(I want to have fun) that is natural to make, and also is sortof fake,
+because we also take on our “terminal ends” for instrumental reasons: If
+we didn’t have something to strive for, we’d be bored.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I think I might here be conflating Harry Frankfurt’s
+views with Elijah Millgram’s “On being bored out of your mind”, but in
+my defence that paper is specifically building on Frankfurt’s work
+here.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;Frankfurt&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I think.&lt;/span&gt; introduces the idea of “maeutic”
+ends - ends which lead to you taking on other ends in order to achieve
+them. e.g. you might want to be happy, but merely aiming directly at
+happiness doesn’t work. In order to achieve happiness, the most
+effective means is to find something that can matter to you for its own
+sake, and then &lt;em&gt;sincerely take that on as an end&lt;/em&gt;, and happiness
+will emerge. e.g. when deciding what to do with your life, you might
+decide to be a doctor because that seems fulfilling to you, but you
+can’t be a doctor to seek fulfillment and expect to be fulfilled, you
+need to decide that being a doctor genuinely matters. You might later
+decide that it is not if it’s making you miserable and lacks the
+qualities that matter to you, but in the moment your day-to-day reason
+has to be about the end of &lt;em&gt;being a doctor&lt;/em&gt;, not &lt;em&gt;being a
+doctor in order to be fulfilled&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;The instrumental/terminal distinction is still useful though, it’s
+just important to understand that “why?” answers are weird and
+defeasible and necessarily incomplete.&lt;/p&gt;
+
+
+&lt;p&gt;Why did you eat that cake? Because it was delicious.&lt;/p&gt;
+
+
+&lt;p&gt;If you look at this as a sort of pure logical syllogism sort of
+answer&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2025-04-04-13:33.html" rel="alternate"/>
   </entry>
 </feed>
