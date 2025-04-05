@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-04-04T21:27:21+01:00</updated>
+  <updated>2025-04-05T10:53:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,170 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2025-03-26-19:06.html</id>
-    <title>Creativity on demand</title>
-    <updated>2025-03-26T20:53:13+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Creativity on demand&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2025-03-26&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;One of the things in my bags of tricks is using random prompts for
-things. What should I write about today? IDK, draw a tarot card, flip to
-a random page of a book. Write something in response to it.&lt;/p&gt;
-
-
-&lt;p&gt;Another thing in my bag of tricks is making big lists. Can’t think of
-anything? Think of 100 things instead! Can’t think how to start the
-list? Come up with a bad idea. Or, even worse, a mediocre one.&lt;/p&gt;
-
-
-&lt;p&gt;Another thing in my bag of tricks is to look at something mundane and
-figure out what’s interesting about it. &lt;a href="https://notebook.drmaciver.com/posts/2025-03-23-21:48.html"&gt;Cleaning
-the kitchen&lt;/a&gt; is an example of that. &lt;a href="https://drmaciver.substack.com/p/using-what-youre-given"&gt;So is
-making apples&lt;/a&gt;. To some degree the entire &lt;a href="https://drmaciver.substack.com/p/my-no-longer-secret-magical-practice"&gt;spellcraft
-thing&lt;/a&gt; is about this.&lt;/p&gt;
-
-
-&lt;p&gt;The point that I’m trying to get at is that with all these tools in
-my toolkit, it’s pretty easy for me to solve any drying up of the
-creative wellspring. Not only &lt;a href="https://notebook.drmaciver.com/posts/2020-03-07-09:44.html"&gt;can’t
-you run out of ideas&lt;/a&gt;, there are reliable procedures for producing
-more ideas.&lt;/p&gt;
-
-
-&lt;p&gt;For example, here off the top of my head is a spell for writing a
-blog post at the end of the day:&lt;/p&gt;
-
-
-&lt;p&gt;Get a sheet of paper. Write down what you did today - not in detail,
-just a list of high level things.&lt;/p&gt;
-
-
-&lt;p&gt;Pick one. If one of them catches your eye, use that, otherwise pick
-semi-randomly.&lt;/p&gt;
-
-
-&lt;p&gt;Try to pick out some specific features of it - things that remind you
-of other things, or some way it’s unlike other things in that category.
-Especially focus on how you made any decisions about it, or how it
-felt.&lt;/p&gt;
-
-
-&lt;p&gt;Write about that.&lt;/p&gt;
-
-
-&lt;p&gt;Anyway you’ll notice I’m not using this spell right now. I can’t rule
-out that I might in future - I did do the first part of listing out
-stuff that happened in my day, and for example I thought I might write
-something about some work I’m doing on parsing with derivatives, which I
-thought was interesting because of a series of pickles I got myself in
-and out of, or I thought I might write about the lunch I made for
-myself, in which I took some leftovers from our sunday roast and some
-vegetables and turned it into a vaguely Chinese meal.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Fun fact: Left over roast potatoes are great when stir
-fried with a bit of ginger.&lt;/span&gt;
-There’s also something to be said about the experience of waking up, or
-&lt;a href="https://drmaciver.substack.com/p/losing-yourself-in-an-audiobook"&gt;my
-changing relationship with audiobooks&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;I didn’t though, partially because I’d already started on this,
-partially because I didn’t really feel like it.&lt;/p&gt;
-
-
-&lt;p&gt;I’m reading a recent translation of Max Weber’s “Science ad a
-Vocation” right now, and the following passage struck me:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;In both [a laboratory and a factory] it is necessary for somethign,
-and the right thing at that, to &lt;em&gt;occur&lt;/em&gt; to people if they are to
-achieve anything worthwhile.&lt;/p&gt;
-&lt;p&gt;But inspiration cannot be produced to order. And it has nothing in
-common with cold calculation.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;I’ve also recently been reading “The Cult of Information” by Theodore
-Roszak, which is surprisingly good, and it has a similar thing in it
-about how a computer-focused education with its heavy emphasis on
-procedural thinking cannot possibly teach children the full range of
-creative and intuitive thought that we need them to develop.&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, the point is that on some level I think they’re wrong.
-Intuitively I believe that I really could write a couple of pages of
-instructions that you could semi-mechanically follow and produce a
-pretty good essay out of. I’m not claiming you could produce
-&lt;em&gt;every&lt;/em&gt; good essay this way you understand, only that it’s
-possible to produce a pretty good generator of essays this way, one that
-means that you should never have to suffer the problem of sitting down
-in front of the computer and not know what to write.&lt;/p&gt;
-
-
-&lt;p&gt;And yet, every time I think about actually doing this, my soul
-rebels.&lt;/p&gt;
-
-
-&lt;p&gt;Things like the random book prompt or tarot prompt or the like seem
-mostly fine. The above spell for coming up with something interesting
-about your day to report on also seems mostly fine - maybe a little over
-constraining, and requires me to look at uncomfortable questions like
-“What &lt;em&gt;did&lt;/em&gt; I do today?” sometimes, but it’s actually an
-interesting exercise.&lt;/p&gt;
-
-
-&lt;p&gt;But if you tell me to, say, roll a die and use it to determine on the
-basis of that what to write today, I will fight you.&lt;/p&gt;
-
-
-&lt;p&gt;If, on the other hand, you tell me that if I’m not sure which one to
-write then I &lt;em&gt;get to&lt;/em&gt; roll a dice to pick one, that’s just &lt;a href="https://drmaciver.substack.com/p/how-to-make-easy-decisions"&gt;a
-spell for making decisions&lt;/a&gt;. Great stuff, no complaints. Big fan,
-even.&lt;/p&gt;
-
-
-&lt;p&gt;The thing about procedures is that they’re great tools and terrible
-masters. The kitchen cleaning procedure is very good because I need to
-do the thing and I don’t want to have to make decisions about how to do
-the thing. A writing procedure that removes all decisions would be
-terrible, because the decisions &lt;em&gt;are&lt;/em&gt; the creative process. I can
-be aided in making them, but anything that tries to take the ultimate
-authority away from me causes me to bristle.&lt;/p&gt;
-
-
-&lt;p&gt;And this is sortof a problem for the goal of creativity on demand,
-because the problem isn’t actually that I can’t produce creativity on
-demand - I can - it’s that I &lt;em&gt;don’t want to&lt;/em&gt;. The whole
-experience is one of dragging myself kicking and screaming towards some
-goal.&lt;/p&gt;
-
-
-&lt;p&gt;The idea of a fully mechanized process for writing, even one with
-explicitly allowances for breaking out of it and doing your own thing,
-is still fundamentally designed to take away the first and most
-important decision about creating something: Whether you want to do it
-at all. Once that decision is taken away from it, the creative part of
-my mind mostly just wants to sit there and sulk and refuse to
-participate.&lt;/p&gt;
-
-
-&lt;p&gt;And you know what? Too bad. Gonna write anyway. When the dishes gotta
-be done, you do the dishes whether you like it or not. When the daily
-writing gotta be done, you do the daily writing whether you like it or
-not. It’s probably not going to be as bad as you think, and if it is &lt;a href="https://drmaciver.substack.com/p/believing-that-you-can-stop"&gt;you
-can stop&lt;/a&gt;, but that’s no reason not to start.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2025-03-26-19:06.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-03-27-10:24.html</id>
     <title>Censored solutions</title>
@@ -1320,7 +1156,7 @@ for building a skeleton that a self can grow on top of.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-04-13:33.html</id>
     <title>Why do you do things?</title>
-    <updated>2025-04-04T21:27:21+01:00</updated>
+    <updated>2025-04-04T22:03:21+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Why do you do things?&lt;/p&gt;
@@ -1513,5 +1349,112 @@ finish here and sleep on the rest of this.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2025-04-04-13:33.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2025-04-05-10:53.html</id>
+    <title>Sources, Sinks, and Flows</title>
+    <updated>2025-04-05T10:53:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Sources, Sinks, and Flows&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2025-04-05&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;This is going to be a very computer flavoured self help post.&lt;/p&gt;
+
+
+&lt;p&gt;Here, for you, is a very useful general organising principle, which
+is that there is &lt;em&gt;stuff&lt;/em&gt;, and there are things that &lt;em&gt;operate
+on stuff&lt;/em&gt;&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Those things, can themselves, be stuff, although usually
+at any given level of representation it’s not helpful to consider them
+as part of the stuff being operated on.&lt;/span&gt;:&lt;/p&gt;
+
+
+&lt;ol type="1"&gt;
+&lt;li&gt;&lt;em&gt;Sources&lt;/em&gt; are where stuff comes from.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Sinks&lt;/em&gt; are where stuff goes to.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Flows&lt;/em&gt; are what guide stuff between sources to sinks.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;Often there are different types of stuff. For example, you can view
+&lt;a href="https://notebook.drmaciver.com/posts/2025-03-23-21:48.html"&gt;my
+process for cleaning the kitchen&lt;/a&gt; through this lens, and two types of
+stuff here are &lt;em&gt;clean dishes&lt;/em&gt;&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Which further subdivide into &lt;em&gt;wet clean dishes&lt;/em&gt;
+and &lt;em&gt;dry clean dishes&lt;/em&gt;, but that’s mostly not relevant for the
+process which stops at the point where they’re left for air drying.&lt;/span&gt; and &lt;em&gt;dirty
+dishes&lt;/em&gt;. The sink is, appropriately, a sink for dirty dishes, but it
+is a source for clean dishes. One flow in this system is the process of
+washing up by which dirty dishs go into the sink and clean dishes come
+out.&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I’m being a bit imprecise about all of this. I recommend
+not worrying about it.&lt;/span&gt;. There are plenty others -
+e.g. there are sources of dirty dishes on the dining room table, which
+flow to sinks (not usually the literal sink) in the kitchen, from which
+they flow through to one of various sinks for dirty dishes (literal sink
+or dishwasher) until they come out clean, from where they flow to one of
+various sinks for clean dishes (a place where they can sit to air
+dry).&lt;/p&gt;
+
+
+&lt;p&gt;Often when systems don’t work it’s due to badly designed flows.&lt;/p&gt;
+
+
+&lt;p&gt;For example: I talked in &lt;a href="https://notebook.drmaciver.com/posts/2025-03-30-11:41.html"&gt;Necessity
+creates possibility&lt;/a&gt; about my new writing habit of writing down ideas
+when they occur to me, and then using that to figure out how to write
+about.&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;That habit has broken down a bit and needs tinkering. I
+didn’t, it turns out, have a good system for what happens when the list
+fills up.&lt;/span&gt; What was happening there is that I
+had good sources of ideas to write about (they come to me when e.g. in
+the shower, on a walk, doing the dishes, talking to someone), but there
+was no reliable flow directing them to the sink for ideas to write about
+(the actual process of writing). Introducing a written list creates a
+reliable flow by means of adding a persistent queue to the process
+rather than just having them fall into the sink of forgetting.&lt;/p&gt;
+
+
+&lt;p&gt;Sometimes the problem is that there are &lt;em&gt;very&lt;/em&gt; good flows, but
+they direct your sources to sinks you don’t want them to go. e.g. I find
+&lt;a href="https://notebook.drmaciver.com/posts/2022-01-06-12:00.html"&gt;drifting&lt;/a&gt;
+often plays out this way. If I block myself from the internet, suddenly
+all the attention that was flowing into the “idly scrolling” sink stops
+vanishing down an infinite black hole of distraction and I just start
+spontaneously doing stuff.&lt;/p&gt;
+
+
+&lt;p&gt;And sometimes the problem is that there aren’t any sinks that you
+want things to go into, and as a result the source gets stifled.&lt;/p&gt;
+
+
+&lt;p&gt;Part of what I’m pointing at with the “means and ends” thing in &lt;a href="https://notebook.drmaciver.com/posts/2025-04-04-13:33.html"&gt;Why do
+you do things?&lt;/a&gt; is that sometimes you need to create outlets that
+don’t exist. A sink that it feels actually worthwhile for your source to
+flow into. Like… imagine having all of these shower thoughts and
+conversations and so on and &lt;em&gt;not&lt;/em&gt; writing about them? I bet most
+of you don’t have to imagine very hard.&lt;/p&gt;
+
+
+&lt;p&gt;One easy fix I have access to is creating discord channels. I
+suddenly got much better at remembering my dreams when we created a
+#dreams channel to report dreams into&lt;label class="margin-toggle sidenote-number" for="fn5"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn5" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I’ve lost the habit of this. I should get back into
+it.&lt;/span&gt; I’ve created an
+#anecdotes channel for similar stories about our lives to see if that
+helps here.&lt;label class="margin-toggle sidenote-number" for="fn6"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn6" type="checkbox"/&gt;&lt;span class="sidenote"&gt;NB neither of these channels are publicly accessible to
+people immediately joining the discord.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;In general it seems to me that there’s something unhealthy about
+getting &lt;em&gt;stuck&lt;/em&gt;, and that if you have a regular source of stuff
+being produced, it needs an outlet to go somewhere. If you don’t find
+somewhere good for it to go, it will probably go somewhere bad instead,
+and that seems like a problem worth solving.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2025-04-05-10:53.html" rel="alternate"/>
   </entry>
 </feed>
