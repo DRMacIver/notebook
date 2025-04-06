@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+DRMacIver's Notebook: Good queues and bad queues
+    </title>
+
+    <meta property="og:title" content="Good queues and bad queues">
+
+    <meta property="og:url" content="https://notebook.drmaciver.com/posts/2025-04-06-09:41.html" />
+    <link rel="canonical" href="https://notebook.drmaciver.com/posts/2025-04-06-09:41.html" />
+    <script src="https://hypothes.is/embed.js" async></script>
+
+
+    <meta name="twitter:card" content="summary" />
+
+    <meta property="og:creator" content="@DRMacIver">
+
+    <link rel="stylesheet" href="/pandoc.css"/>
+    <link rel="stylesheet" href="/pygments.css"/>
+    <link rel="stylesheet" href="/tufte.css"/>
+    <link rel="stylesheet" href="/latex.css"/>
+    <link rel="stylesheet" href="/drmnotes.css"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
+});
+
+MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
+  console.log(message)
+});
+
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169185204-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169185204-1');
+</script>
+
+  </head>
+
+  <body>
+    <article>
+        <h1><a href="/">DRMacIver's Notebook</a></h1>
+        <p class=subtitle>Good queues and bad queues</p>
+
+        
+
+<section id="the-post">
+<p class=subtitle>Good queues and bad queues</p>
+<dl class=metadata>
+<dt>Published</dt>
+<dd class="post-date">2025-04-06</dd>
+</dl>
+
+<p>This is a follow on from <a href="https://notebook.drmaciver.com/posts/2025-04-05-10:53.html">Sources,
+Sinks, and Flows</a> and won’t make much sense if you haven’t read
+that.</p>
+<p>An important category in this model is the <em>queue</em>. A queue is
+basically a source/sink pair in which stuff does nothing except enter
+and then leave at some point later.</p>
+<p>Some queues are bad. Some queues are good.</p>
+<p>Let me give you some examples:</p>
+<ul>
+<li>A literal queue of people waiting to be seen at the shops is a
+queue.</li>
+<li>The kitchen cleaning example has a lot of queues in it. Dirty dishes
+first move to the kitchen counter, where they are buffered until they
+are ready to be washed.</li>
+<li>The place where I write down ideas for what to write is a
+queue.</li>
+<li>That growing pile of papers that has been sitting ever grosing
+somewhere in your office waiting to be dealt with is also a queue.</li>
+<li>The storage space in your attic that you keep putting stuff into
+because you haven’t .</li>
+</ul>
+<p>I’m using “queue” somewhat informally here, as not all of these have
+FIFO (first-in/first-out) behaviour. Please ignore that.</p>
+<p>Some of these are very good because they improve the smooth flow of
+stuff through the system. You can get one task done before having to
+start on the next (imagine if you had to hand wash every dish as soon as
+you brought in into the kitchen rather than cleaning the dining room
+table first), and you can parallelise it (one person brings stuff into
+the kitchen, another washes).</p>
+<p>The place where I write down ideas is also a pretty good queue, but
+it has a significant problem viewed as a queue: If the only way for
+items to come off the queue is for me to write something, items are
+being added to the queue much more often than they are being removed
+from it, and this causes the queue to grow unboundedly. My current
+solution to this is that when the list fills up I start a new list and
+copy over anything from the old list that still feels appealing.<label class="margin-toggle sidenote-number" for="fn1"></label><input class="margin-toggle" id="fn1" type="checkbox"/><span class="sidenote">What will happen when all of the ideas seem appealing?
+Uhhh. Hope that doesn’t happen and if it does I guess I’ll just have to
+write more?? Problem for future David.</span></p>
+<p>The pile of papers on your desk? That’s a bad queue. That queue is
+not working.</p>
+<p>The two key features needed for a queue to be a good queue are:</p>
+<ol type="1">
+<li>Over some suitable period of time, as much has to come out of the
+queue as go into it. If you put stuff into a queue to “deal with it
+later”, <em>you have to actually deal with it later</em>, and the rate
+at which you deal with it must exceed the rate at which you create stuff
+to deal with.<label class="margin-toggle sidenote-number" for="fn2"></label><input class="margin-toggle" id="fn2" type="checkbox"/><span class="sidenote">As the <a href="https://x.com/tef_ebooks/status/875882791954677761">sage tells
+us</a>, basic queueing theory means that queues either grow unboundedly
+over time or reliably return to empty.</span></li>
+<li>The queue must either <em>not fill up</em> during the gap between
+stuff entering it and stuff leaving it, or you must have some graceful
+process for handling when it does.<label class="margin-toggle sidenote-number" for="fn3"></label><input class="margin-toggle" id="fn3" type="checkbox"/><span class="sidenote">Which can, and sometimes should, be “you start throwing
+stuff away”. This is particularly a good idea for queues of ideas of
+stuff to do.</span></li>
+</ol>
+<p>The biggest failure mode of queues is that often we introduce queues
+into our flows because <em>we don’t want to deal with the thing</em>.
+When this happens, the queue makes our life worse rather than better,
+because instead of having a small amount of stuff we don’t want to deal
+with we have a large amount of stuff we don’t want to deal with, and the
+result is our environment acquires a <a href="https://notebook.drmaciver.com/posts/2020-05-06-09:51.html">fnord</a>.</p>
+<p>In contrast, for stuff you’re perfectly happy to and have the
+capacity to deal with, a queue is often extremely useful for smoothing
+out irregularities - when you’ve got large bursts of production and a
+more gradual process of consumption such as in the dishes example - or
+to more efficiently connect up sources and sinks so that stuff doesn’t
+get lost and you don’t have to frantically multitask between different
+types of activity.</p>
+
+
+</section>
+
+    </article>
+<footer>
+Copyright David R. MacIver.
+
+CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
+</footer>
+  </body>
+</html>
