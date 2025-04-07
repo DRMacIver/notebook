@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+DRMacIver's Notebook: Python has structural pattern matching
+    </title>
+
+    <meta property="og:title" content="Python has structural pattern matching">
+
+    <meta property="og:url" content="https://notebook.drmaciver.com/posts/2025-04-07-18:38.html" />
+    <link rel="canonical" href="https://notebook.drmaciver.com/posts/2025-04-07-18:38.html" />
+    <script src="https://hypothes.is/embed.js" async></script>
+
+
+    <meta name="twitter:card" content="summary" />
+
+    <meta property="og:creator" content="@DRMacIver">
+
+    <link rel="stylesheet" href="/pandoc.css"/>
+    <link rel="stylesheet" href="/pygments.css"/>
+    <link rel="stylesheet" href="/tufte.css"/>
+    <link rel="stylesheet" href="/latex.css"/>
+    <link rel="stylesheet" href="/drmnotes.css"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
+});
+
+MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
+  console.log(message)
+});
+
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169185204-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169185204-1');
+</script>
+
+  </head>
+
+  <body>
+    <article>
+        <h1><a href="/">DRMacIver's Notebook</a></h1>
+        <p class=subtitle>Python has structural pattern matching</p>
+
+        
+
+<section id="the-post">
+<p class=subtitle>Python has structural pattern matching</p>
+<dl class=metadata>
+<dt>Published</dt>
+<dd class="post-date">2025-04-07</dd>
+</dl>
+
+<p>Hey, did you know that this works?</p>
+<pre class="pycon"><code>
+&gt;&gt;&gt; from dataclasses import dataclass
+&gt;&gt;&gt; @dataclass
+... class Foo:
+...     x: int
+...
+&gt;&gt;&gt; @dataclass
+... class Bar:
+...     x: str
+...
+&gt;&gt;&gt; match Foo(x=1):
+...     case object(x=x):
+...         print(x)
+...
+1
+&gt;&gt;&gt; match Bar(x=1):
+...     case object(x=2):
+...         print(x)
+...
+&gt;&gt;&gt; match Bar(x=1):
+...     case object(x=x):
+...         print(x)
+...
+1
+&gt;&gt;&gt; match Bar(x=1):
+...     case object(x=2):
+...         print(x)
+...     case object(x=1):
+...         print("hello!")
+...
+hello!</code></pre>
+<p>You can use “object” as a matcher to match based solely on whether a
+value being passed in has a particular field, and you can descend into
+the value of those fields with other match expressions as you like.</p>
+<p>Python’s pattern matching is a bit of a weird beast because those
+things in a case expression that look like constructor parameters are
+nothing of the sort, they’re just fields, and they don’t have any
+relationship to the type you’re matching on, they’ll just bind to the
+field of that name on the object being matched <em>and the match will
+fail if the field is not present</em>. The type you’re matching on is
+just an instanceof check<label class="margin-toggle sidenote-number" for="fn1"></label><input class="margin-toggle" id="fn1" type="checkbox"/><span class="sidenote">And, of course, <a href="https://www.hillelwayne.com/post/python-abc/">that instanceof
+check doesn’t have to be a real instanceof check and can use ABC
+subclass nonsense</a></span> and doesn’t have anything to do with
+the fields.</p>
+<p>As a result, you can use an <code>object</code> match (or any other
+type you want to match on) with arbitrary fields, and the match
+expression will check for the presence of the field.</p>
+<p>In some sense this is how it <em>has</em> to work but it was
+non-obvious to me that it would work. In particular I thought there was
+a decent chance that this would raise an AttributeError if you tried to
+match on a missing field, but instead it handles that and you get
+arbitrary structural pattern matching on record types if you want
+it.</p>
+<p>I can’t decide if this is cool or gross or both. More importantly, I
+can’t actually think of a case where I’d actually need to use this
+feature. I think it definitely straddles the line between “weird hack”
+and “genuinely interesting language feature”, but because we’ve mostly
+moved away from duck typing in Python, and because most of my usage of
+pattern matching is effectively with closed algebraic data types, I
+can’t actually immediately think of many places I’d want to use it.</p>
+
+
+</section>
+
+    </article>
+<footer>
+Copyright David R. MacIver.
+
+CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
+</footer>
+  </body>
+</html>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-04-07T18:06:51+01:00</updated>
+  <updated>2025-04-07T18:38:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,166 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2025-03-29-10:40.html</id>
-    <title>Well you gotta</title>
-    <updated>2025-03-29T12:10:21+00:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Well you gotta&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2025-03-29&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;&lt;a href="https://knowyourmeme.com/memes/for-the-better-right"&gt;The
-Anakin/Padme meme&lt;/a&gt; seems to have occupied a useful conceptual shape
-in my brain. You’ve probably seen it.&lt;/p&gt;
-
-
-&lt;p&gt;The original goes:&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Anakin: “I’m going to change the world.”&lt;/p&gt;
-&lt;p&gt;Padmé: “For the better, right?”&lt;/p&gt;
-&lt;p&gt;Anakin: (gazes in silence)&lt;/p&gt;
-&lt;p&gt;Padmé: “For the better, right?”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;For whatever reason, this particular shape appeals to me, so I see
-the pattern over and over again.&lt;/p&gt;
-
-
-&lt;p&gt;Lately I’ve been thinking about it in the context of one of my corner
-of the internet’s recurring catch phrases. “You can just do things”.&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Anakin: “You can just do things.”&lt;/p&gt;
-&lt;p&gt;Padmé: “That you want to, right?”&lt;/p&gt;
-&lt;p&gt;Anakin: (gazes in silence)&lt;/p&gt;
-&lt;p&gt;Padmé: “That you want to, right?”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;Part of why I think about this particular pattern a lot is parenting.
-It’s common interaction with the child that I tell her she needs to do a
-thing,&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Such as have a shower, clean her room, do her homework
-assignments, all of the incredibly boring mundane cliched tyrannies of
-parenting.&lt;/span&gt; and she replies “but I don’t
-wanna”.&lt;/p&gt;
-
-
-&lt;p&gt;I have yet to adequately convey the magnitude of my lack of interest
-in whether she wants to or not through anything other than the deeply
-nuanced philosophical position: “Well you gotta”.&lt;/p&gt;
-
-
-&lt;p&gt;This doesn’t particularly work for persuading her you understand, but
-neither does anything else, and it’s a more accurate, more honest, and,
-I think, healthier position than trying to convince her to do it because
-she should do it because she wants the end result, because often she
-doesn’t care (or claims not to care) about the end result either and I
-don’t consider her opinion on whether she’s allowed to be stinky or have
-cavities or whatever to be relevant. I would, of course, much rather she
-care about those things too, but one of the goals of parenting is that
-it’s your job to make sure good decisions are being made.&lt;/p&gt;
-
-
-&lt;p&gt;There are plenty of things of course where the fact that she doesn’t
-want to do them is, in fact, and important and overriding consideration.
-I’m not going to force her to play a board game she doesn’t want to play
-for example.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Though I will at least discourage her from quitting one
-midway through.&lt;/span&gt; The point is very much not that she
-should do whatever I (or her other parents) want. It’s the much more
-specific and important point that some things need to be done, and it
-doesn’t matter if you want to do them, they still need to get done and
-you need to be able to do them regardless of whether you wanna.&lt;/p&gt;
-
-
-&lt;p&gt;Another meme in my circles is non-coercion, which is the idea that
-you shouldn’t force yourself to do things. This also extends into
-non-coercive parenting, which is that you shouldn’t force your kids to
-do things. I suppose I don’t exactly disagree, but I think the details
-are important to get right, and when “doing something because you’re
-forced to” is treated as the opposite of “doing something because you
-want to”, something has gone very wrong.&lt;/p&gt;
-
-
-&lt;p&gt;Sometimes you want the ends and not the means. Sometimes you don’t
-even want the ends but have an obligation to do them.&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;You could argue that you want to fulfill your
-obligations, but I would argue in turn that fulfilling an obligation
-&lt;em&gt;feels&lt;/em&gt; very different from a positive motivation to do the thing
-most of the time.&lt;/span&gt; In
-these circumstances, forcing yourself to have to pretend to want the
-means in order to achieve the ends is &lt;em&gt;very bad for you&lt;/em&gt;, because
-it forces you to basically lie to yourself about what you want. Being
-able to calmly, and without any particular joy in your heart, do the
-thing because it needs to be done is a much more valuable attitude to be
-able to take.&lt;/p&gt;
-
-
-&lt;p&gt;Some of this comes down to parenting for me as well, and this is
-definitely an attitude I’ve inherited from my parents. My parents are
-both functioning workaholics. My dad, in particular, is in his 70s and
-seems absolutely tireless to me.&lt;/p&gt;
-
-
-&lt;p&gt;Except, in fact, he’s not. He’s tired a &lt;em&gt;lot&lt;/em&gt;. He’s got far
-worse sleeping problems than me - they run in the family, and he got
-them from his mother. So he often wakes up exhausted. And then he goes
-out and does a phenomenal amount of hard physical labour.&lt;/p&gt;
-
-
-&lt;p&gt;He once passed on a conversation he’d had with his mother about
-tiredness. Her advice went something like this: “Yes of course you’re
-tired. The trick is to not worry about it.&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I expect in the original version she sounded less like
-Lawrence of Arabia.&lt;/span&gt; You
-just have to get on with things anyway.”&lt;/p&gt;
-
-
-&lt;p&gt;At the time I hated this advice, but I’ve grown to see the wisdom of
-it.&lt;/p&gt;
-
-
-&lt;p&gt;When talking about &lt;a href="https://notebook.drmaciver.com/posts/2025-03-23-21:48.html"&gt;cleaning
-the kitchen&lt;/a&gt; I made the point that you can choose to resent the fact
-that it takes an hour or accept it, and that you’ll have to do the same
-amount of work either way but it will be much more pleasant for you if
-you don’t spend it resenting the effort.&lt;/p&gt;
-
-
-&lt;p&gt;The same is true with needing to do things. You can resent them, or
-you can just do them because they need to get done, and the latter will
-be in every way more pleasant for you, and even if you’re not happy
-about doing the thing you will be a happier person for being able
-to.&lt;/p&gt;
-
-
-&lt;p&gt;It is, of course, possible to take this too far, and end up burdened
-by obligations that you don’t want because you’re the most reliable
-person in the room because nobody else takes on this attitude. I’ve
-ended up in that situation in past workplaces for example.&lt;/p&gt;
-
-
-&lt;p&gt;The most reliable and viable solution to this is to couple the
-ability to do things that are needful with the ability to ask “OK, but
-is this actually my problem?”, and a degree of conflict tolerance that
-allows you to make it other people’s problem when it should be.&lt;/p&gt;
-
-
-&lt;p&gt;But, personally, the solution I would most prefer but have never
-quite been able to manage is for other people to also adopt this
-attitude and stop being goddamn freeloaders.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2025-03-29-10:40.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-03-30-11:41.html</id>
     <title>Necessity creates possibility</title>
@@ -1261,7 +1101,7 @@ types of activity.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-07-17:35.html</id>
     <title>Digital object permanence</title>
-    <updated>2025-04-07T18:06:51+01:00</updated>
+    <updated>2025-04-07T18:07:38+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Digital object permanence&lt;/p&gt;
@@ -1328,5 +1168,97 @@ relationships to it I’m not sure it does that reliably.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2025-04-07-17:35.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2025-04-07-18:38.html</id>
+    <title>Python has structural pattern matching</title>
+    <updated>2025-04-07T18:38:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Python has structural pattern matching&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2025-04-07&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Hey, did you know that this works?&lt;/p&gt;
+
+
+&lt;pre class="pycon"&gt;&lt;code&gt;
+&amp;gt;&amp;gt;&amp;gt; from dataclasses import dataclass
+&amp;gt;&amp;gt;&amp;gt; @dataclass
+... class Foo:
+...     x: int
+...
+&amp;gt;&amp;gt;&amp;gt; @dataclass
+... class Bar:
+...     x: str
+...
+&amp;gt;&amp;gt;&amp;gt; match Foo(x=1):
+...     case object(x=x):
+...         print(x)
+...
+1
+&amp;gt;&amp;gt;&amp;gt; match Bar(x=1):
+...     case object(x=2):
+...         print(x)
+...
+&amp;gt;&amp;gt;&amp;gt; match Bar(x=1):
+...     case object(x=x):
+...         print(x)
+...
+1
+&amp;gt;&amp;gt;&amp;gt; match Bar(x=1):
+...     case object(x=2):
+...         print(x)
+...     case object(x=1):
+...         print("hello!")
+...
+hello!&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;You can use “object” as a matcher to match based solely on whether a
+value being passed in has a particular field, and you can descend into
+the value of those fields with other match expressions as you like.&lt;/p&gt;
+
+
+&lt;p&gt;Python’s pattern matching is a bit of a weird beast because those
+things in a case expression that look like constructor parameters are
+nothing of the sort, they’re just fields, and they don’t have any
+relationship to the type you’re matching on, they’ll just bind to the
+field of that name on the object being matched &lt;em&gt;and the match will
+fail if the field is not present&lt;/em&gt;. The type you’re matching on is
+just an instanceof check&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;And, of course, &lt;a href="https://www.hillelwayne.com/post/python-abc/"&gt;that instanceof
+check doesn’t have to be a real instanceof check and can use ABC
+subclass nonsense&lt;/a&gt;&lt;/span&gt; and doesn’t have anything to do with
+the fields.&lt;/p&gt;
+
+
+&lt;p&gt;As a result, you can use an &lt;code&gt;object&lt;/code&gt; match (or any other
+type you want to match on) with arbitrary fields, and the match
+expression will check for the presence of the field.&lt;/p&gt;
+
+
+&lt;p&gt;In some sense this is how it &lt;em&gt;has&lt;/em&gt; to work but it was
+non-obvious to me that it would work. In particular I thought there was
+a decent chance that this would raise an AttributeError if you tried to
+match on a missing field, but instead it handles that and you get
+arbitrary structural pattern matching on record types if you want
+it.&lt;/p&gt;
+
+
+&lt;p&gt;I can’t decide if this is cool or gross or both. More importantly, I
+can’t actually think of a case where I’d actually need to use this
+feature. I think it definitely straddles the line between “weird hack”
+and “genuinely interesting language feature”, but because we’ve mostly
+moved away from duck typing in Python, and because most of my usage of
+pattern matching is effectively with closed algebraic data types, I
+can’t actually immediately think of many places I’d want to use it.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2025-04-07-18:38.html" rel="alternate"/>
   </entry>
 </feed>
