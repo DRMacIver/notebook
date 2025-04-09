@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-04-08T09:56:00+01:00</updated>
+  <updated>2025-04-09T18:44:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,106 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2025-03-31-18:47.html</id>
-    <title>Win Streaking and Reliability</title>
-    <updated>2025-03-31T19:10:48+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Win Streaking and Reliability&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2025-03-31&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I’ve been trying to learn to win streak in Slay the Spire recently.
-That is, get several wins back to back. I’m only playing on Ascension 1
-for this, although I am trying to kill the heart (if you don’t know what
-this means: Challenging but not the hardest mode).&lt;/p&gt;
-
-
-&lt;p&gt;I’m pretty good at Slay the Spire. I’m not the best, not even close,
-but I can semi-regularly beat it on the hardest mode, which is a
-reasonably difficult achievement.&lt;/p&gt;
-
-
-&lt;p&gt;But I think one of the things this experiment is very much
-demosntrating to me is that I’m playing it wrong. I’m very much engaged
-in what you might call “vibe play”&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Get your mind out of the gutter.&lt;/span&gt;, where I’ve got a pretty
-well honed intuition as to how to play it, and mostly follow that with a
-little bit of tactical reasoning layered on top.&lt;/p&gt;
-
-
-&lt;p&gt;This doesn’t produce many win streaks. I think on good days I win
-maybe… 5-10% of my ascension 20 games, and probably somewhere in 40%
-region for ascension 1. This is good for generating lots of wins, but
-very bad for win streaking. At 40%, you’ll get some two-streaks,
-occasionally three-streaks, and very rarely four-streaks.&lt;/p&gt;
-
-
-&lt;p&gt;This is, I think, an intrinsic limitation on vibe play, and if I want
-to actually win streak I need to start doing some sort of deliberate
-play. The problem in slay the spire is that it’s very easy to learn ways
-of playing that work very well if the game hands you gimmes. e.g. I
-think everyone can beat the heart on A20 most of the time when they get
-dead branch/corruption, but you don’t get that very often. If that
-happens in, say, 1% of games, you can pretty easily vibe-play your way
-to an appreciable win rate.&lt;/p&gt;
-
-
-&lt;p&gt;A more general example, one that I think I’m prone to, is that it’s
-very easy to take too many risks in Act 1, which will let you either get
-very strong early on or die early on. This pretty rapidly gets you up to
-a decent win rate where you win a substantial fraction of the time that
-you don’t die in Act 1.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;This is definitely a little bit my problem, although I’m
-more likely to die in Act 2 than Act 1 because Act 2 is the hard act.&lt;/span&gt;, but you have a high loss rate in
-Act 1, and trying to fix that ends up actually lowering your win rate
-because you’re not strong.&lt;/p&gt;
-
-
-&lt;p&gt;One of the things I’m trying to point to in &lt;a href="https://notebook.drmaciver.com/posts/2025-03-30-11:41.html"&gt;Necessity
-Creates Possibility&lt;/a&gt; is that it’s very easy to end up in this
-situation in real life too. It’s very easy to write when you’re in the
-mood to write. That gets your win % on writing up to an appreciable
-amount above zero. But if you don’t learn to write when you don’t feel
-like writing, you end up very limited in how far you can improve.&lt;/p&gt;
-
-
-&lt;p&gt;The problem with moving off vibe play is that part of how you learn
-vibe play is that it’s fun.&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Stop snickering.&lt;/span&gt; Learning to step outside
-that requires taking a more deliberate perspective on the game. I’ve
-talked before about &lt;a href="https://drmaciver.substack.com/p/record-yourself"&gt;recording
-yourself playing&lt;/a&gt; to do this, but at this point I’m probably better
-off actually breaking out pencil and paper and sketching out things
-like:&lt;/p&gt;
-
-
-&lt;ol type="1"&gt;
-&lt;li&gt;What’s my goal?&lt;/li&gt;
-&lt;li&gt;What do I need to have achieved by floor X?&lt;/li&gt;
-&lt;li&gt;What probability do I assign to clearing this act?&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;And having a very slow methodical approach to the problem, where I
-actually think about what I’m doing.&lt;/p&gt;
-
-
-&lt;p&gt;Sounds boring TBH.&lt;/p&gt;
-
-
-&lt;p&gt;I think this is often a problem you get: You can succeed on pure
-talent and enjoyment as long as things are going your way, but in order
-to get really good you have to become reliable, and in order to do that
-you have to figure out how to succeed even when the world isn’t
-cooperating with you.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2025-03-31-18:47.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-01-21:49.html</id>
     <title>You create rules, rules create you</title>
@@ -1090,7 +990,7 @@ can’t actually immediately think of many places I’d want to use it.&lt;/p&gt
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-08-09:56.html</id>
     <title>Asking for purpose disrupts action</title>
-    <updated>2025-04-08T09:56:00+01:00</updated>
+    <updated>2025-04-08T13:46:24+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Asking for purpose disrupts action&lt;/p&gt;
@@ -1188,5 +1088,200 @@ ask how it fits into the broader patterns of your life.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2025-04-08-09:56.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2025-04-09-18:44.html</id>
+    <title>When I learned to read</title>
+    <updated>2025-04-09T18:44:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;When I learned to read&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2025-04-09&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Recently Dave, Lisa, and I, were all helping sort through my parents’
+giant boxes of books that have been sitting untouched for years to
+decades. We were sorting them into various dubious ontologies - roughly…
+worth keeping, worth trying to sell, worth giving away, bin. Dave and
+Lisa in particular were trying to hunt out any gems that looked worth
+selling.&lt;/p&gt;
+
+
+&lt;p&gt;At some point, Lisa hands me this tiny battered book of some cheap
+adventure novel and said “Well, this one isn’t worth anything to
+anyone.”&lt;/p&gt;
+
+
+&lt;p&gt;She was, I think, unprepared for the look of absolute delight on my
+face as I grabbed it off her. “I’ve been trying to find this for so
+long!” I said.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, let me backtrack 35 years or so.&lt;/p&gt;
+
+
+&lt;p&gt;It’s extremely on brand that one of my first really coherent memories
+is of learning to read in my head.&lt;/p&gt;
+
+
+&lt;p&gt;My school had a reading system. It was a whole thing - there was a
+box of books, you picked what book you wanted, then you had to read it,
+log your reading of it, and return it when you were done.&lt;/p&gt;
+
+
+&lt;p&gt;It may surprise you to know that I &lt;em&gt;hated&lt;/em&gt; this. I dragged my
+heels over it and had to be nagged into reading. Couldn’t stand reading,
+me.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, one evening I was reading out loud to mum, begrudgingly, and
+complained about this. I don’t remember my specific complaint, but she
+told me that I didn’t have to read out loud to her if I didn’t want to,
+I could just read books in my head. I said “Oh, OK!” or words to that
+effect, sent her away, and finished the book.&lt;/p&gt;
+
+
+&lt;p&gt;It didn’t take me long to finish the rest of the books in that box
+after that, and I quickly turned from a kid who hated reading to one who
+was regularly getting through giant doorstopper books.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Not, you understand, good ones. I read a lot of Robert
+Jordan and Brian Lumley (don’t tell my parents about the second one.
+They were not age appropriate) and other authors of similar quality
+levels. My love of SFF trash continues to this day.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;It was a pretty life-defining moment - I’m sure I’d have had it at
+some point, but that was the specific point at which I had it, and it
+sticks in my mind.&lt;/p&gt;
+
+
+&lt;p&gt;I could even tell you quite a lot about the book that I was reading.
+It was quite a short book, about some British soldier who is trying to
+ship logs down from a mountain and wants to pass them through some
+underground river, but they get lost in the middle, so he rides a log
+through and finds a giant whirlpool there.&lt;/p&gt;
+
+
+&lt;p&gt;I’ve tried multiple times over the years to find it - asked around on
+reddit, did a bunch of searching. Never could find it. I can’t remember
+if I ever asked Claude or ChatGPT, but just testing it now Claude
+straight up hallucinates an answer.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;It says that it’s Rudyard Kipling’s “The Man Who Would
+Be King”. It’s not.&lt;/span&gt; I’d asked my parents
+about it but they had no specific memory of this event at all, let alone
+what the book was.&lt;/p&gt;
+
+
+&lt;p&gt;I was for a while half-convinced this was a fake memory.&lt;/p&gt;
+
+
+&lt;p&gt;And then, totally unexpectedly, Lisa just handed me the book.&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;“But David”, you may ask, “if it was a book from the
+school reading box, why did &lt;em&gt;you&lt;/em&gt; have it? That is an excellent
+question. I have no idea. But it does have a sticker on it with my
+school form so I’m pretty sure I should have returned it to a box and
+didn’t.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;I think this is another variant on the &lt;a href="https://notebook.drmaciver.com/posts/2025-04-07-17:35.html"&gt;digital
+object permanence&lt;/a&gt; thing. If I’d read this book on a kindle, there is
+no chance that I would ever have found in this way,&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I mean I could have searched in my kindle library, but
+do you want to take a bet that Amazon will maintain another 35 years of
+continuity of archive? Admittedly they’re doing OK with the 15 they’ve
+got so far, but I am not wildly confident. They also have a history of
+disappearing things that you’ve bought.&lt;/span&gt; but
+because the book just exists as a physical object in the world, it could
+just stick around in my parents’ house until I found it again.&lt;label class="margin-toggle sidenote-number" for="fn5"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn5" type="checkbox"/&gt;&lt;span class="sidenote"&gt;It wasn’t even the only book I found this way! I was
+also trying and failing to remember the name of Karen Traviss’s &lt;a href="https://en.wikipedia.org/wiki/Wess%27Har"&gt;Wess’har books&lt;/a&gt;, and
+found “City of Pearl” there, which helped me track down the whole
+thing.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;The book is “The Cave of Death”, by Ian Serrallier. It’s very little
+wonder that I couldn’t find it, because it barely exists. It’s part of
+the “Wide Horizon Reading Scheme”, which I can provide very little
+evidence of being a real thing that really existed other than a
+scattering of other books with the same labelling. It’s a retelling of a
+story originally written by J. H. Williams, in “In Quest of a Mermaid”.
+I originally thought it was an extract, and felt moderately grumpy about
+Ian Serraillier taking credit for it by being the only name on the
+cover, but actually having now acquired a copy of the original, it seems
+to be the same story entirely rewritten. I assume to make it more
+self-contained and accessible to children, but I don’t know.&lt;/p&gt;
+
+
+&lt;p&gt;It’s in many ways quite an interesting story. It’s very “boys own
+adventures” and quite colonialist, but… fundamentally it’s a children’s
+story about an engineering problem, and that feels rare to me.&lt;/p&gt;
+
+
+&lt;p&gt;Even the colonialism is surprisingly interesting - yes, it’s a book
+about a white British soldier leading a team of “natives” in Burma,
+assisted by a bunch of itinerant Chinese workers. Yes, there’s a whole
+bunch of racial stereotyping going on it. But… the fundamental message
+about race relations in it seems to be “different cultures have
+different beliefs, but they’re generally still good people, and you’ve
+got to respect their beliefs in order to work with them”. I’m not going
+to claim it’s completely unproblematic - the author would certainly get
+cancelled for writing such a book today - but it genuinely seems like
+quite a positive message for its time and probably quite a lot better
+than many things written today.&lt;label class="margin-toggle sidenote-number" for="fn6"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn6" type="checkbox"/&gt;&lt;span class="sidenote"&gt;And way less bad than, say, Narnia. All of this would
+have completely gone over my head at the time though, as evidenced by
+the fact that I was &lt;em&gt;living in Saudi Arabia&lt;/em&gt; when reading the
+Narnia books and didn’t notice the islamaphobia. In my defence I also
+didn’t notice the Christianity.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;But I think the really interesting thing for me about this whole
+thing is not the specific book, but the degree to which figuring out
+your past is just intertwined with actual mundane history, and how much
+of history is bordering on lost because it’s not, as Lisa said, really
+worth anything to anyone. This is an obscure book from an obscure
+series. Of course I couldn’t find it.&lt;/p&gt;
+
+
+&lt;p&gt;Except, of course, I totally could have. I bet you if I found a
+research librarian and gave them a couple hundred pounds, they’d have
+found the book for me in a few weeks, especially these days. I’m not
+sure this possibility even really occurred to me as a live one, but in
+retrospect it was very possible. I find these sorts of questions
+interesting - things which clearly have an empirical answer, and finding
+out the empirical answer is entirely within your means,&lt;label class="margin-toggle sidenote-number" for="fn7"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn7" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Although! This is only true in this case &lt;em&gt;if the
+answer is positive&lt;/em&gt;. If it turns out I’d dreamed the whole thing and
+the book didn’t exist, establishing that with any degree of certainty
+would be very costly.&lt;/span&gt; but
+it’s just not clearly worth it. My go to example of this is look at a
+random person passing you on the street, what’s their name? You could
+just go ask them. It would be weird, but they’d probably tell you.&lt;label class="margin-toggle sidenote-number" for="fn8"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn8" type="checkbox"/&gt;&lt;span class="sidenote"&gt;And if they don’t, you can probably still find out!
+Probably not ethically, possibly not without being arrested, but you
+can.&lt;/span&gt; And yet you don’t do it, because the
+question is just an idle fancy, and the effort isn’t worth it.&lt;/p&gt;
+
+
+&lt;p&gt;I think it’s often worth doing things that seem like they’re not
+worth it, and this seems like a potentially good learning opportunity.
+Even if the answer to the question isn’t worth the cost, maybe the
+experience of figuring out how to answer it is. If I’d thought to ask a
+research librarian of some sort about this, yes they’d have found the
+book, but also I’d have learned more about how to interact with research
+librarians, and that would in and of itself been worth it even if
+finding the book was not.&lt;/p&gt;
+
+
+&lt;p&gt;I don’t know if going to ask a random stranger on the street their
+name would be a good experience in the same way, but it seems like it
+might be. It seems harmless, and I think generally figuring out how to
+take greyed out options is good for you.&lt;/p&gt;
+
+
+&lt;p&gt;I think that, perhaps, it would be good to notice such questions as
+they arise, and every now and then even if it doesn’t seem worth it to
+try to answer the question, answer it anyway, and see how that changes
+you.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2025-04-09-18:44.html" rel="alternate"/>
   </entry>
 </feed>
