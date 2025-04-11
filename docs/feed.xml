@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-04-10T16:38:00+01:00</updated>
+  <updated>2025-04-11T11:41:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,140 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2025-04-02-18:59.html</id>
-    <title>Building a library of stories</title>
-    <updated>2025-04-02T21:09:14+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Building a library of stories&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2025-04-02&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;One comment I got on &lt;a href="https://notebook.drmaciver.com/posts/2025-03-28-12:43.html"&gt;Behaving
-as if you were trying to succeed&lt;/a&gt; was that the chicken thing was a
-great anecdote. I liked getting this comment, and it made me think:
-“Huh, yeah. It &lt;em&gt;is&lt;/em&gt; a great anecdote. I don’t have many of
-those.”&lt;/p&gt;
-
-
-&lt;p&gt;I think this is sortof weird. It’s not exactly like I haven’t had
-plenty of things happen to me that could take the form of great
-anecdotes. When I try to think of examples, I do worry that the rate of
-anecdotes per year has gone down a bit. I don’t know that this is
-actually true. e.g. &lt;a href="https://drmaciver.substack.com/p/using-what-youre-given"&gt;Using
-what you’re given&lt;/a&gt; is basically me telling a bunch of recent
-anecdotes.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Also my current life events are a rollercoaster of
-between two and five very dramatic storylines right now, it’s just that
-I’m in the middle of them and they involve other people’s privacy so I
-can’t exactly share them easily in public.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;Certainly a lot of historic anecdotes feel… wackier. For example,
-there was that time that I went to work in my pajamas. Or the time I
-brought a giant frog to a wedding. More recently, I do get a lot of
-mileage out of telling the story of my first date with my partners.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;It took me about halfway through the date to figure out
-that I was on a date and until our second date to realise that neither I
-nor they were poly prior to that point. I brought notes.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;But… I don’t know, I’m not sure it ever occurred to me to tell the
-chicken anecdote before, and it’s not exactly a big event.&lt;/p&gt;
-
-
-&lt;p&gt;I think part of what’s going on is that I simply don’t think of my
-life in terms of well packaged stories to tell, so anecdotes come up
-when I’m talking or writing about something and I pull on the thread of
-something and the next thing that comes out in the chain is something
-that actually happened to me. The anecdote, in this context, serves as a
-tool to solve a problem, but isn’t something I necessarily experience as
-a primary thing in its own right.&lt;/p&gt;
-
-
-&lt;p&gt;Not, I think, unrelatedly, I have very poor narrative memory. There
-are whole swathes of my life that feel just… gone. I bet they’re not
-though. I bet they’re just somewhere I’m not looking. Generally I find
-when I pull on a thread of thought or memory there’s quite a lot there,
-it’s just not indexed in a way that I easily have access to, but if I
-actually go digging I recall quite a lot.&lt;/p&gt;
-
-
-&lt;p&gt;For example (look, an anecdote!) Dave and I were talking about our
-seemingly-abandoned family D&amp;amp;D game the other day. We were vaguely
-talking about resuming it, and he said something like “The first
-challenge is anyone remembering what even happened in the last session”,
-to which I said “God even I don’t remember”.&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I am normally the one who remembers perfectly what
-happened in the previous session and tells everyone about it at the
-beginning of the session. No, I don’t know how this squares with my
-belief that I have poor narrative memory either. I think it’s because
-I’m using a different skill, the one where I just unwind the stack of
-the conversation and perfectly tell you the thread of what we’ve been
-talking about so far. It’s a weird superpower, but one I’m grateful to
-have.&lt;/span&gt;
-Then I said “hmmm… actually I do remember a bit, right. Jess joined us
-for that one, right? She was a monk. We’d just finished making friends
-with the flesh eating monster… Oh! And we fought the wizard we were
-ostensibly there to rescue.” and then went on filling in more and more
-details, each one becoming accessible as I remembered the bits adjacent
-to it.&lt;/p&gt;
-
-
-&lt;p&gt;So I think this claim that I don’t have a lot of anecdotes I can tell
-is just a skill issue. Or, not even really a skill issue, a habit issue.
-All the raw material is there, and I can forge it into anecdotes if I
-want to, I just don’t. I’m not really sure why not.&lt;/p&gt;
-
-
-&lt;p&gt;Some of “why not?” is of course that not doing things is the default,
-but there’s a sort of half formed feeling that this would be a good
-thing to do, therapeutically speaking, and also just useful as a way of
-improving my understanding of myself and my ability to communicate with
-others.&lt;/p&gt;
-
-
-&lt;p&gt;I think just starting to tell more anecdotes will probably just
-result in being much better at remembering and telling stories from my
-life in general. Talking about my dreams almost immediately started
-causing me to remember my dreams better, and I suspect this is similar -
-once you direct yourself towards some external goal, the internal
-experiences that you’ve been ignoring and need for this goal suddenly
-rise to the occasion.&lt;/p&gt;
-
-
-&lt;p&gt;I think there’s also a sort of… fluency issue here. There’s a book by
-Boris Shekhtman called “How to improve your foreign language
-immediately” that I think about a lot despite not really working much on
-speaking any foreign languages.&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Technically, I speak Spanish, French, and German as well
-as being a native English speaker. In practice, I speak all of these at
-such a bad level that I’d be unable to claim with a straight face that I
-really spoke them. I have been able to hold very basic conversations in
-German in the past, did get an A at French GCSE, and have been the least
-bad person at communicating with a waitress in Spanish in Mexico, but
-that was more because I was able to speak Spanish badly with confidence
-where everyone else around me was too shy. Oh, look, another anecdote.&lt;/span&gt; In particular one of the
-things he recommends is developing “islands of competence” - areas where
-you’ve gamed out a lot of the conversation in advance, where you’ve
-memorised certain set phrases, filled in gaps of your vocabulary,
-etc.&lt;/p&gt;
-
-
-&lt;p&gt;Practicing telling specific anecdotes feels like it’s adopting this
-strategy more broadly, because it helps you find interesting talking
-points about your life, and helps connect you up to a kind of fluency in
-living that feels hard to access sometimes.&lt;/p&gt;
-
-
-&lt;p&gt;I’m not quite sure how this will works. Consider this post more a
-declaration to experiment than a well articulated thesis.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2025-04-02-18:59.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-03-11:36.html</id>
     <title>Threads of existence</title>
@@ -1149,7 +1015,7 @@ you.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-10-16:38.html</id>
     <title>The scent of reality</title>
-    <updated>2025-04-10T16:38:00+01:00</updated>
+    <updated>2025-04-10T17:37:31+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;The scent of reality&lt;/p&gt;
@@ -1313,5 +1179,113 @@ be a part of that.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2025-04-10-16:38.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2025-04-11-11:41.html</id>
+    <title>Stable state</title>
+    <updated>2025-04-11T11:41:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Stable state&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2025-04-11&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Sometimes people come to us from the City.&lt;/p&gt;
+
+
+&lt;p&gt;It’s not common, but it’s not rare either. Most years we see one,
+maybe two, people stagger out of the door that opens in the shining
+silver wall.&lt;/p&gt;
+
+
+&lt;p&gt;Usually we take them in. If the harvest is good and we have food to
+spare, we will, but if they come to us in lean winter months when we
+have nothing to spare, their mere presence takes food from the mouths of
+others who need it. Better that they return to their City than that one
+of us go.&lt;/p&gt;
+
+
+&lt;p&gt;And we do go. The sick and the dying go to the City. When the harvest
+has been poor and the winter months draw in, the elderly often go. Some
+people go simply because they are curious, or because they do not fit in
+at home.&lt;/p&gt;
+
+
+&lt;p&gt;Of those who do go in, some promise to return. They never do. Some of
+the visitors tell us that once they came from the village, but if so
+they did so long before anyone now alive can remember.&lt;/p&gt;
+
+
+&lt;p&gt;Not everyone goes to the City eventually. Many choose to die rather
+than go into the City. Some despite what the visitors from the City tell
+us of it, some because of the same.&lt;/p&gt;
+
+
+&lt;p&gt;Because if you ask a visitor what the City is like, they all say more
+or less the same thing.&lt;/p&gt;
+
+
+&lt;p&gt;The first thing they tell you is that it is heaven. There is no want
+for any material thing - endless food of endless variety, warm homes all
+year round, no need to toil each day in the field - and endless delights
+and diversions, from parties and idle games to intellectual pursuits and
+competitions of skill. There are millions of people in City, and you can
+always find the perfect ones to spend your time with. Whatever your
+desire, it can be fulfilled in the City. It is heaven.&lt;/p&gt;
+
+
+&lt;p&gt;The second thing they tell you, if you press and ask them why then
+they left to come to the village, where our lives are defined by want
+and toil to survive, is that &lt;em&gt;something is missing in
+Heaven&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;The haunted looks on their faces at the second are almost as
+disturbing at the look of bliss on their faces at the first.&lt;/p&gt;
+
+
+&lt;p&gt;The City is a place of wonders, there is no doubt. Many of the
+visitors bring us gifts. Some of them we reject, and ask are returned to
+the City - delights and diversions that beckon us with the promise of
+more - but some are of a more practical sort. We still use the water
+purifier that was given to us a generation back, and the village’s oven
+is powered by a source of endless heat provided to us by the City. Many
+of our knives and other tools are City-made, and of far superior quality
+than we can buy from the travelling merchants. Living near to the City
+gives us many things.&lt;/p&gt;
+
+
+&lt;p&gt;But it also takes many things from us.&lt;/p&gt;
+
+
+&lt;p&gt;We mourn for those who go to the City, perhaps more so than those who
+die, because we know they are still in there, and we wonder what their
+lives are like in there.&lt;/p&gt;
+
+
+&lt;p&gt;The visitors who come to us tell us of the delights of the City and
+how many wonders there are in there and how blissful they found it, but
+if you ask them if they were happy there, they go quiet.&lt;/p&gt;
+
+
+&lt;p&gt;People who come from the City rarely stay. Sometimes it’s the first
+winter that does it, sometimes the second, but more often they leave in
+the height of summer. They rarely say much about why other than that
+they miss the City, but I can only imagine that they look a life of toil
+and simple pleasures and decide that, whatever was missing from heaven,
+at least it was still heaven.&lt;/p&gt;
+
+
+&lt;p&gt;I long ago decided that I would not go into the City, but sometimes
+when I pause in my work, I find myself looking upwards, staring at the
+shining walls, and wondering what heaven is like.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2025-04-11-11:41.html" rel="alternate"/>
   </entry>
 </feed>
