@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-04-12T16:30:00+01:00</updated>
+  <updated>2025-04-13T14:46:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,203 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2025-04-04-13:33.html</id>
-    <title>Why do you do things?</title>
-    <updated>2025-04-04T22:03:21+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Why do you do things?&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2025-04-04&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I recently watched CJTheX’s &lt;a href="https://www.youtube.com/watch?v=GZg_36utl2w"&gt;6 Shapes of God&lt;/a&gt;.
-I don’t really know if I recommend it or not. I recommend giving it a go
-and either you’ll find it weirdly compelling and watch it or you won’t
-want to watch it and both are fine outcomes.&lt;/p&gt;
-
-
-&lt;p&gt;One of the things they talk about in it, partially rooted in some
-work by the philosopher Harry Frankfurt that I’m passingly familiar
-with&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;And really should read more of. I find Frankfurt a bit
-dry, but generally he makes really interesting points about stuff I care
-about.&lt;/span&gt; is that there’s a sort of division
-into “instrumental ends” (e.g. I want to make money) and “terminal ends”
-(I want to have fun) that is natural to make, and also is sortof fake,
-because we also take on our “terminal ends” for instrumental reasons: If
-we didn’t have something to strive for, we’d be bored.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I think I might here be conflating Harry Frankfurt’s
-views with Elijah Millgram’s “On being bored out of your mind”, but in
-my defence that paper is specifically building on Frankfurt’s work
-here.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;Frankfurt&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I think.&lt;/span&gt; introduces the idea of “maeutic”
-ends - ends which lead to you taking on other ends in order to achieve
-them. e.g. you might want to be happy, but merely aiming directly at
-happiness doesn’t work. In order to achieve happiness, the most
-effective means is to find something that can matter to you for its own
-sake, and then &lt;em&gt;sincerely take that on as an end&lt;/em&gt;, and happiness
-will emerge. e.g. when deciding what to do with your life, you might
-decide to be a doctor because that seems fulfilling to you, but you
-can’t be a doctor to seek fulfillment and expect to be fulfilled, you
-need to decide that being a doctor genuinely matters. You might later
-decide that it is not if it’s making you miserable and lacks the
-qualities that matter to you, but in the moment your day-to-day reason
-has to be about the end of &lt;em&gt;being a doctor&lt;/em&gt;, not &lt;em&gt;being a
-doctor in order to be fulfilled&lt;/em&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;The instrumental/terminal distinction is still useful though, it’s
-just important to understand that “why?” answers are weird and
-defeasible and necessarily incomplete.&lt;/p&gt;
-
-
-&lt;p&gt;Why did you eat that cake? Because it was delicious.&lt;/p&gt;
-
-
-&lt;p&gt;If you look at this as a sort of pure logical syllogism sort of
-answer it’s obviously ridiculously incomplete. You’re not committing to
-eat all delicious cake. You’re just highlighting that deliciousness was
-among the most salient reasons to you for why you ate this particular
-cake.&lt;/p&gt;
-
-
-&lt;p&gt;I think you can tie yourself into logical knots very easily this way,
-but it’s still worth asking why you do things, and you can ask why those
-are motivating, etc. Some of htese will feel like more purely
-instrumental, some will feel more purely terminal, although most of them
-it will feel like you’re missing something.&lt;/p&gt;
-
-
-&lt;p&gt;I notice if I try to come up with a list of things that you get at
-the end of a chain of whys it doesn’t bottom out at a very large number
-of different things. e.g. I might come up with something like:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;because it was interesting&lt;/li&gt;
-&lt;li&gt;because it was funny&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://notebook.drmaciver.com/posts/2025-03-27-10:24.html"&gt;because
-I was horny&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;because it made something less distressing&lt;/li&gt;
-&lt;li&gt;because it was comforting in some way&lt;/li&gt;
-&lt;li&gt;because &lt;a href="https://notebook.drmaciver.com/posts/2025-03-29-10:40.html"&gt;it
-needed to be done&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;out of some sort of weird hard to understand compulsion&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I often experience “because it was delicious” and a lot
-of adjacent things like this actually. I find deliciousness initially
-motivating but it seems hard for me to treat this as the actual reason I
-continue eating the food. It might be the reason I go back for seconds.
-There’s something weird going on here though.&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;(This is in no way a complete list)&lt;/p&gt;
-
-
-&lt;p&gt;I notice that it’s relatively hard for me to treat something like
-“because it would bring me joy” as a motivating reason. Like… there’s
-something vaguely uncomfortable about that as an answer and I feel like
-I almost deflect it with some sort of interstitial answer. Like… if you
-asked me why I pet a cat, I would answer “because it was cute and
-fuzzy”. It feels somehow unnatural to take the next step. I don’t know
-that that’s necessarily wrong, in the same way that you &lt;a href="https://drmaciver.substack.com/p/a-good-start"&gt;feed the beggar
-because he is hungry&lt;/a&gt; but there’s &lt;em&gt;something&lt;/em&gt; weird there.&lt;/p&gt;
-
-
-&lt;p&gt;I think as useful a tool of introspection as “Why?” is, I think maybe
-the problem is that it assumes a causal structure that isn’t there. You
-don’t do things for reasons, reasons are things that you use to explain
-the things you do. In some global sense, the reason you do anything is
-that it fits naturally into the practical activities of your life at
-that point there. You can do the dishes for a reason, or you can just do
-the dishes because the dishes are what you do now. You can pet a cat
-because it brings you joy or because it is cute and fuzzy or you can
-just pet a cat.&lt;/p&gt;
-
-
-&lt;p&gt;Reasons for doing things aren’t something you need when your life is
-functioning fluidly on its own. They’re a tool to fix when it isn’t, or
-to communicate something to someone else.&lt;/p&gt;
-
-
-&lt;p&gt;But… I do often find myself casting around for reasons. Why? Partly
-because it’s interesting, but mostly because I am distressed and I am
-trying to understand so I can reduce this distress.&lt;/p&gt;
-
-
-&lt;p&gt;One of the other fake but useful distinctions in this space is the
-idea that you have ends and you have means and they’re distinct. You can
-partly see this because of all the implicit constraints on means - you
-can achieve an end you want through undesirable means. You could argue
-that this is just that you have multiple ends, and that’s certainly
-true, but I don’t think it’s unreasonable to think that using a
-particular means can be an end in itself. If you’ve got a skillset, you
-probably enjoy using that skillset, and that enjoyment is pretty close
-to a terminal end.&lt;/p&gt;
-
-
-&lt;p&gt;This comes up a lot in programming. e.g. I like using the union/find
-algorithm to solve problems. Why? I think it’s neat. I enjoy using it.
-Like yes I &lt;em&gt;suppose&lt;/em&gt; you could describe that as my terminal end
-being joy, but it feels weird to reduce my motivations here. The joy
-&lt;em&gt;describes the action&lt;/em&gt;, it doesn’t justify it. It’s the same as
-petting the cat: I do it because the cat is fuzzy and the algorithm is
-neat.&lt;/p&gt;
-
-
-&lt;p&gt;Part of why I’ve been thinking about this at the moment is that I’ve
-been noticing that there are all sorts of… free floating wants, that
-seem attached to a specific action but has no really clear “why?”
-associated with it. I think this is what David Chapman calls a &lt;a href="https://buddhism-for-vampires.com/hunting-the-shadow"&gt;velleity&lt;/a&gt;,&lt;label class="margin-toggle sidenote-number" for="fn5"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn5" type="checkbox"/&gt;&lt;span class="sidenote"&gt;It would be uncouth to point out that &lt;a href="https://en.wikipedia.org/wiki/Velleity"&gt;this is a Western
-philosophical term&lt;/a&gt;, a discipline that David Chapman &lt;a href="https://meaningness.substack.com/p/four-kinds-of-philosophy-i-dont-do"&gt;heartily
-rejects&lt;/a&gt;, so I will.&lt;/span&gt; but if so it feels like they are
-more complicated than I’d believed. A velleity is “the lowest degree of
-volition, a slight wish or tendency” but this doesn’t feel necessarily
-like it’s small. It can feel actually quite strong, but it feels strong
-in a way that doesn’t motivate action, or that feels like it requires &lt;a href="https://notebook.drmaciver.com/posts/2020-03-17-11:40.html"&gt;permission
-to act&lt;/a&gt; in some way that’s missing.&lt;/p&gt;
-
-
-&lt;p&gt;For example I’ve been &lt;a href="https://notebook.drmaciver.com/posts/2025-04-02-18:59.html"&gt;thinking
-about anecdotes recently&lt;/a&gt; and one of the problems I keep running into
-is &lt;em&gt;when do I tell anecdotes&lt;/em&gt;? And why? My writing is actually
-fairly peppered with anecdotes, but that’s fine because they’re there
-with a clear purpose. But… I don’t know, can you just &lt;em&gt;tell people
-things&lt;/em&gt;?&lt;/p&gt;
-
-
-&lt;p&gt;It feels like I’ve got a bunch of free floating anecdotes that are
-just sitting around with nothing clear to do. Means without an end
-attached to them. And I… think I’d like to share them? Or do something
-with them in some way?&lt;label class="margin-toggle sidenote-number" for="fn6"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn6" type="checkbox"/&gt;&lt;span class="sidenote"&gt;The complexity here is that there are a bunch of them
-that are quite embarrassing or shameful, either for me or for other, and
-I don’t know that sharing is what I want to do with them but if it’s not
-then I &lt;em&gt;don’t know what to do&lt;/em&gt;.&lt;/span&gt; They feel like they have to be
-&lt;em&gt;for&lt;/em&gt; something, but I don’t have a thing that they’re for.&lt;/p&gt;
-
-
-&lt;p&gt;Harry Frankfurt thinks we take on final ends for instrumental
-purposes to avoid being bored, but I think there’s another missing move:
-Sometimes we take on ends because we’ve got these means we want to use,
-and we choose them first and then set out to find reasons to use
-them.&lt;/p&gt;
-
-
-&lt;p&gt;Except… I don’t think I know how to do that. Maybe the answer is just
-make them into art, but I struggle with art at the best of times.&lt;/p&gt;
-
-
-&lt;p&gt;This is very much a half completed thought, but I think I need to
-finish here and sleep on the rest of this.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2025-04-04-13:33.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-05-10:53.html</id>
     <title>Sources, Sinks, and Flows</title>
@@ -1165,7 +968,7 @@ shining walls, and wondering what heaven is like.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-12-16:30.html</id>
     <title>Anytime Projects</title>
-    <updated>2025-04-12T16:30:00+01:00</updated>
+    <updated>2025-04-12T17:57:44+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Anytime Projects&lt;/p&gt;
@@ -1316,5 +1119,152 @@ project.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2025-04-12-16:30.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2025-04-13-14:46.html</id>
+    <title>An improvised meal</title>
+    <updated>2025-04-13T14:46:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;An improvised meal&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2025-04-13&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Due to a series of communication mixups where different people
+thought it was someone else’s turn to cook, I got home the other day at
+7:15 to discover that dinner had not even been started. We normally eat
+dinner at 7:30, and the planned meal for the evening (bolognese) takes
+several hours to cook. So I sprung into action and 45 minutes later we
+had the following entirely improvised meal for five:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Rice&lt;/li&gt;
+&lt;li&gt;Stir fried mixed greens with garlic and chilli&lt;/li&gt;
+&lt;li&gt;Thai omelettes&lt;/li&gt;
+&lt;li&gt;Ground pork and tofu with fermented soy beans, garlic, and
+chilli&lt;/li&gt;
+&lt;li&gt;Stir fried peppers with ginger&lt;/li&gt;
+&lt;li&gt;Sausages&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I did think about doing something more interesting with
+the sausages. e.g. turning them into tiny sausage meat balls and cooking
+them in something that would flavour match them to the rest of the
+dishes - they’d have worked pretty well with ginger and chilli and a bit
+of honey added at the end for example. But that sounded like work and
+the the child wouldn’t have eaten any.&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;A sliced raw pepper&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Mostly for the child who wasn’t going to eat either the
+cooked peppers or the stir fry green because they had too much flavour
+and “the texture is weird”.&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;The rate limiting factor was the rice really - our rice cooker takes
+about 45 minutes to make enough rice, so the rest was just down to what
+I could make while the rice cooked.&lt;/p&gt;
+
+
+&lt;p&gt;I think this demonstrates a couple of interesting things about
+improvised cooking.&lt;/p&gt;
+
+
+&lt;p&gt;The first is that there’s a base meal there that I can just do on
+autopilot: Rice, stir fried mixed greens, and thai omelettes.&lt;/p&gt;
+
+
+&lt;p&gt;The stir fried mixed greens are &lt;a href="https://strongroots.com/en-gb/products/stir-fry-greens"&gt;actually
+just from a packet&lt;/a&gt; but it’s a genuinely good product to have in the
+freezer.&lt;/p&gt;
+
+
+&lt;p&gt;Thai omelette is something of a staple dish in our house because the
+child loves them and everyone else likes them, and because they’re very
+easy to make. You should probably use &lt;a href="https://www.seriouseats.com/thai-style-omelet-khai-jiao-recipe"&gt;the
+serious eats recipe&lt;/a&gt; but ours is an extremely simple one: Take some
+eggs, add a nonspecific amount of fish sauce, whisk with a fork, and
+then fry in a hot pan with lots of oil.&lt;/p&gt;
+
+
+&lt;p&gt;I’m sure I’ve written about this before but I can’t come up with an
+immediate reference,&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Maybe &lt;a href="https://notebook.drmaciver.com/posts/2020-03-05-11:27.html"&gt;Seeking
+out existence proofs in everyday life&lt;/a&gt;?&lt;/span&gt; but a good general principle is that
+you should first make sure you can solve the problem adequately, and
+only then worry about improving on that. Having these sort of baseline
+meals that you can throw together and then build around is, to me, key
+to improvisational cooking.&lt;/p&gt;
+
+
+&lt;p&gt;After the base meal, the next important question is “What do we have
+that needs using up?”. e.g. you might notice that the sausages are a bit
+out of place in this meal. I cooked them anyway, because they were
+really on the last day they were still good, and we figured that they’d
+keep for another day cooked if not eaten and also they would definitely
+get eaten. They were.&lt;/p&gt;
+
+
+&lt;p&gt;The peppers were there partly because we had a large thing of sliced
+raw peppers in the fridge from a previous meal where we’d sliced way
+more peppers than we ended up eating. I dry fried them to get them nice
+and charred, then added frozen diced ginger, sugar, salt, and oil, then
+when they were cooked transferred them to a small bowl in the oven to
+keep warm and moved on to cooking the pork.&lt;/p&gt;
+
+
+&lt;p&gt;This is a pretty easy example of improvisational cooking I think:
+Take a base ingredient, cook it in a normal way, and add some flavours
+that would make it good. A lot of vegetables respond well to this
+treatment, including many you wouldn’t necessarily expect. e.g. I’ve
+stir fried leftover roast potatoes with ginger and soy sauce before and
+that works great.&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Not &lt;em&gt;every&lt;/em&gt; vegetable will work this way of
+course. Some vegetables don’t stir fry well, and some have such a
+distinctive flavour that doesn’t fit this style of cooking. e.g. I would
+not use leftover beetroot this way.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;The pork and tofu was a bit more of a genuine creation. We had about
+half a bag of tofu king deep fried tofu puffs left that were going off
+that day, and about a quarter of a packet (so, I guess, roughly 75g) of
+pork mince left over from a meal the other day that would have kept a
+bit longer but didn’t have an obvious job associated with it. I’ve
+enjoyed Mapo Tofu in the past, which is a completely different dish
+combining pork and a different style of tofu, and decided that this was
+worth an experiment, so I stir fried the pork with garlic and chilli
+from the freezer and some salted fermented soy beans I had in the
+fridge,&lt;label class="margin-toggle sidenote-number" for="fn5"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn5" type="checkbox"/&gt;&lt;span class="sidenote"&gt;A completely normal ingredient to have to hand, right?
+No, honestly, I picked them up on a whim the other day when passing a
+Chinese supermarket in Cambridge. But they’re really nice, I recommend
+them. &lt;a href="https://www.amazon.co.uk/ZHENG-FENG-Salted-Black-Soybean/dp/B0792GLN3S"&gt;These
+are the ones we have&lt;/a&gt;. A nontrivial part of the motivation of this
+dish was an excuse to experiment with them.&lt;/span&gt;. This is another appliation of the
+“Take a thing and stir fry it with some flavours that would be good with
+it”.&lt;/p&gt;
+
+
+&lt;p&gt;While that was cooking, I cut the tofu in half (as I’d noticed it was
+a bit chonky to cook well when I used the other half bag), and then
+added it to the stir fry. Once that was all looking cooked, I also put
+that in a bowl in the oven to keep warm, and cooked the greens (add a
+bit more sesame oil to the wok, pour the packet in, done).&lt;/p&gt;
+
+
+&lt;p&gt;In general, all of this was of course only possible because I was in
+my own kitchen, which has been stocked with a bunch of things that I
+know I can improvise around. We almost always have rice, eggs,&lt;label class="margin-toggle sidenote-number" for="fn6"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn6" type="checkbox"/&gt;&lt;span class="sidenote"&gt;We’ve got &lt;em&gt;so&lt;/em&gt; many eggs at the moment, because
+we traded our fridge for some recently.&lt;/span&gt; and stir fry greens available, so
+there was always a base meal to build around. Similarly, it’s a lot
+easier to take a baseline and add some flavours to it if you know you’ve
+got a ready supply of flavours to hand.&lt;/p&gt;
+
+
+&lt;p&gt;In general, preparation seems to be the key to improvisation: You
+prepare a solid base of skills to improvise around, and a variety of
+tools and resources that you know how to draw from, and the rest is just
+elaboration on whatever you have to hand using that.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2025-04-13-14:46.html" rel="alternate"/>
   </entry>
 </feed>
