@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-04-14T21:32:00+01:00</updated>
+  <updated>2025-04-15T22:18:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,118 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2025-04-06-09:41.html</id>
-    <title>Good queues and bad queues</title>
-    <updated>2025-04-06T16:49:05+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Good queues and bad queues&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2025-04-06&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;This is a follow on from &lt;a href="https://notebook.drmaciver.com/posts/2025-04-05-10:53.html"&gt;Sources,
-Sinks, and Flows&lt;/a&gt; and won’t make much sense if you haven’t read
-that.&lt;/p&gt;
-
-
-&lt;p&gt;An important category in this model is the &lt;em&gt;queue&lt;/em&gt;. A queue is
-basically a source/sink pair in which stuff does nothing except enter
-and then leave at some point later.&lt;/p&gt;
-
-
-&lt;p&gt;Some queues are bad. Some queues are good.&lt;/p&gt;
-
-
-&lt;p&gt;Let me give you some examples:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;A literal queue of people waiting to be seen at the shops is a
-queue.&lt;/li&gt;
-&lt;li&gt;The kitchen cleaning example has a lot of queues in it. Dirty dishes
-first move to the kitchen counter, where they are buffered until they
-are ready to be washed.&lt;/li&gt;
-&lt;li&gt;The place where I write down ideas for what to write is a
-queue.&lt;/li&gt;
-&lt;li&gt;That growing pile of papers that has been sitting ever grosing
-somewhere in your office waiting to be dealt with is also a queue.&lt;/li&gt;
-&lt;li&gt;The storage space in your attic that you keep putting stuff into
-because you don’t want to get rid of it but also don’t actually know
-what to do with it.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;I’m using “queue” somewhat informally here, as not all of these have
-FIFO (first-in/first-out) behaviour. Please ignore that.&lt;/p&gt;
-
-
-&lt;p&gt;Some of these are very good because they improve the smooth flow of
-stuff through the system. You can get one task done before having to
-start on the next (imagine if you had to hand wash every dish as soon as
-you brought in into the kitchen rather than cleaning the dining room
-table first), and you can parallelise it (one person brings stuff into
-the kitchen, another washes).&lt;/p&gt;
-
-
-&lt;p&gt;The place where I write down ideas is also a pretty good queue, but
-it has a significant problem viewed as a queue: If the only way for
-items to come off the queue is for me to write something, items are
-being added to the queue much more often than they are being removed
-from it, and this causes the queue to grow unboundedly. My current
-solution to this is that when the list fills up I start a new list and
-copy over anything from the old list that still feels appealing.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;What will happen when all of the ideas seem appealing?
-Uhhh. Hope that doesn’t happen and if it does I guess I’ll just have to
-write more?? Problem for future David.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;The pile of papers on your desk? That’s a bad queue. That queue is
-not working.&lt;/p&gt;
-
-
-&lt;p&gt;The two key features needed for a queue to be a good queue are:&lt;/p&gt;
-
-
-&lt;ol type="1"&gt;
-&lt;li&gt;Over some suitable period of time, as much has to come out of the
-queue as go into it. If you put stuff into a queue to “deal with it
-later”, &lt;em&gt;you have to actually deal with it later&lt;/em&gt;, and the rate
-at which you deal with it must exceed the rate at which you create stuff
-to deal with.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;As the &lt;a href="https://x.com/tef_ebooks/status/875882791954677761"&gt;sage tells
-us&lt;/a&gt;, basic queueing theory means that queues either grow unboundedly
-over time or reliably return to empty.&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;The queue must either &lt;em&gt;not fill up&lt;/em&gt; during the gap between
-stuff entering it and stuff leaving it, or you must have some graceful
-process for handling when it does.&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Which can, and sometimes should, be “you start throwing
-stuff away”. This is particularly a good idea for queues of ideas of
-stuff to do.&lt;/span&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;The biggest failure mode of queues is that often we introduce queues
-into our flows because &lt;em&gt;we don’t want to deal with the thing&lt;/em&gt;.
-When this happens, the queue makes our life worse rather than better,
-because instead of having a small amount of stuff we don’t want to deal
-with we have a large amount of stuff we don’t want to deal with, and the
-result is our environment acquires a &lt;a href="https://notebook.drmaciver.com/posts/2020-05-06-09:51.html"&gt;fnord&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;In contrast, for stuff you’re perfectly happy to and have the
-capacity to deal with, a queue is often extremely useful for smoothing
-out irregularities - when you’ve got large bursts of production and a
-more gradual process of consumption such as in the dishes example - or
-to more efficiently connect up sources and sinks so that stuff doesn’t
-get lost and you don’t have to frantically multitask between different
-types of activity.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2025-04-06-09:41.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-07-17:35.html</id>
     <title>Digital object permanence</title>
@@ -1163,7 +1051,7 @@ elaboration on whatever you have to hand using that.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-14-21:32.html</id>
     <title>Lessons from win streaking: Learning reliability skills</title>
-    <updated>2025-04-14T21:32:00+01:00</updated>
+    <updated>2025-04-14T21:55:14+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Lessons from win streaking: Learning reliability skills&lt;/p&gt;
@@ -1269,5 +1157,139 @@ avoiding or handling those situations.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2025-04-14-21:32.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2025-04-15-22:18.html</id>
+    <title>Real examples are messy</title>
+    <updated>2025-04-15T22:18:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Real examples are messy&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2025-04-15&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I’ve been reading “On Caring” by Milton Mayeroff today. It’s a mostly
+pretty good book, outlining a theory about what it means to care for
+something, but it has an example quite early on which set me off.&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Obligations that derive from devotion are a constituent element in
+caring, and I do not experience them as forced on me or as necessary
+evils; there is a convergence between what I feel I am supposed to do
+and what I want to do. The father who goes for the doctor in the middle
+of the night for his sick child does not experience this as a burden; he
+is simply caring for the child.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;I think that this example is obviously made up, and I think that you
+can partly tell that because of the straightforward lack of detail, but
+I just think it’s also not true.&lt;/p&gt;
+
+
+&lt;p&gt;If your child is currently in desperate need and on the way to ER
+then sure, obviously, you’re not going to experience this as burdensome,
+because your mind is focused on the immediate emergency, but that’s not
+even particularly because it’s your child. In the middle of an emergency
+I mostly find that I’m too focused on the actual crisis at hand to think
+about how burdened I am by it, although I might have a moment of
+thinking “Oh, what a pain” right at the beginning.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;And, in real emergencies, have.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;In contrast if your child is up with, say, a stomach bug, and has
+been vomiting, and you’ve just got off a long shift and you’re exhausted
+and want nothing more than to go to sleep, then &lt;em&gt;obviously&lt;/em&gt;
+you’re going to experienced this as burdensome. You’re exhausted, the
+whole thing is a pain, and you want to go to bed. You (hopefully) do it
+anyway, because its your child and you love them and you &lt;a href="https://notebook.drmaciver.com/posts/2025-03-29-10:40.html"&gt;do
+things because you gotta&lt;/a&gt;. But that doesn’t mean you will never
+experience it as burdensome, only that you bear that burden mostly
+willingly, albeit sometimes begrudgingly.&lt;/p&gt;
+
+
+&lt;p&gt;And I think that the idea that this devotion and caring in the
+context of a child means that you don’t experience any burdens just
+completely fails to capture the very normal experience of parenting. And
+I think that if you were to look at many actual concrete examples of day
+to day parenting you would find that parents experience those children
+as burdens fairly often. And typically they will regard those burdens as
+worth it, because they want what’s best for their child, but that
+doesn’t mean that they never experienced these “oh gosh, my life would
+be so much easier if I didn’t have to deal with this shit.” Most
+importantly, having these sorts of thoughts &lt;em&gt;doesn’t mean they don’t
+care about their child&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;And this is a big part of why I care quite a lot about this example
+and its basic failure to capture the essential humanity of real
+situations. If you’re in a parenting situation like this, where you’re
+exhausted and have to deal with a minor medical crisis or other such
+problem with your child, there is definitely going to be some part of
+you that goes like “oh god. Yet another fucking thing.” And, when it
+does, another part of you, which looks at that part and goes, “Gosh. You
+must be a bad parent for feeling that way.”&lt;/p&gt;
+
+
+&lt;p&gt;And this seems to me to be what happens when you start with these
+tidy narratives, theories of how things should be rather than looking at
+specific concrete examples of things as they actually are. You try to
+understand your experiences through that lens, and you fall short
+because you fail to be the perfectly spherical human in a vacuum that
+the theory predicts.&lt;/p&gt;
+
+
+&lt;p&gt;If, on the other hand, you talk to other parents about their
+experiences, pretty inevitably what will happen is they’ll tell you that
+yeah of course they feel like that sometimes too.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I can’t find a single biographical detail about
+Mayeroff, so I don’t know if he had kids. If he did, maybe he had an
+unusually saintly degree of equanimity. But I doubt it. I think he just
+had a theory and made up an example to fit it without thinking about
+whether it was true.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;If you instead listen to things as they actually are, as told by
+people who actually been through the experiences, what you’ll find is
+that there is a richness and a messiness to them that doesn’t conform to
+sort of very tidy theories that say how things should work. And I think
+this is key to personal growth, to self forgiveness, to navigating the
+world in a humane manner, and being kind to both yourself and others.
+You have to encounter humanity in all its messy complexity, rather than
+humanity as you would like to idealise it.&lt;/p&gt;
+
+
+&lt;p&gt;In a smaller context, I’ve been sort of developing this theme
+recently because I’ve been writing a bunch of really mundane blog posts.
+These are things like &lt;a href="https://notebook.drmaciver.com/posts/2025-03-23-21:48.html"&gt;here’s
+how I clean my kitchen&lt;/a&gt;, or &lt;a href="https://notebook.drmaciver.com/posts/2025-04-13-14:46.html"&gt;I had
+to cook something on short notice in 45 minutes&lt;/a&gt;, or even just &lt;a href="https://notebook.drmaciver.com/posts/2025-04-14-21:32.html"&gt;here’s
+some stuff I learned playing Slay the Spire&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Each of these starts from a very concrete experience, talking about
+how I navigated it and what I’ve learned in doing so. It’s not purely a
+narrative about a specific thing - it sort of tries to point out where
+I’ve used some idea that I think generalizes or some oddly useful
+principle, but it is still fundamentally the story of that particular
+event.&lt;/p&gt;
+
+
+&lt;p&gt;I think these pieces are in many ways much more useful because they
+are forced to grapple with the concrete reality of the task at hand. So
+they contain a lot of details and how those details were dealt with that
+would not have been present if I had started from some much more general
+theory. I do then tend to write a little bit about generalisable lessons
+from them of course, but I think starting from a real and detail-rich
+experience and trying to figure out how to transfer it to other similar
+situations gets you a lot further than trying to start from a tidy
+theory and forcing your life into its procrustean view of the world.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2025-04-15-22:18.html" rel="alternate"/>
   </entry>
 </feed>
