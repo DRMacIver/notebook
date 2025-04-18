@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-04-17T18:19:00+01:00</updated>
+  <updated>2025-04-18T23:33:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,108 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2025-04-08-09:56.html</id>
-    <title>Asking for purpose disrupts action</title>
-    <updated>2025-04-08T13:46:24+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Asking for purpose disrupts action&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2025-04-08&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I was feeling unmotivated by my back collection of suggested writing
-topics so I decided to try flicking through Hasok Chang’s “Realism for
-Realistic People” for inspiration, and I found a useful distinction that
-I think helps untangle one piece of what I was pointing at in &lt;a href="https://notebook.drmaciver.com/posts/2025-04-04-13:33.html"&gt;Why do
-you do things?&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;He makes the distinction between the “inherent aim” and “external
-functions” of an activity, using the example of lighting a match. If
-asked why you are moving a match in a particular way across a surface,
-your answer is simply “to light the match”. You can explain things in
-more detail - why holding it at this particular angle helps, why you
-have to move fast rather than slow, etc. but it is all relative to to
-the specific goal of trying to get a match lit.&lt;/p&gt;
-
-
-&lt;p&gt;You can also ask “Why are you lighting a match?”, to which the answer
-might be “I’m trying to light a bunsen burner” or “I’m trying to figure
-out how matches work” or “I like the pretty flames”. These are the
-&lt;em&gt;extenral functions&lt;/em&gt; of the activity of lighting a match.&lt;/p&gt;
-
-
-&lt;p&gt;This is as part of trying to point to what a well-defined activity
-is, and the inherent aim is part of what constitutes something being a
-particular activity. There is an action of “lighting a match” that you
-can do more or less well, independently of the external functions of the
-activity.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;This is of course not &lt;em&gt;quite&lt;/em&gt; true. If you’re
-trying to learn how matches work, your external function actually
-includes lighting matches badly as well as well, because you want to
-know what doesn’t work as well what does work. In contrast, if you’re
-trying to light a bunsen burner, you just want to light a match well. I
-think this is fine though - “lighting a match badly” can I think
-legitimately be argued as a distinct activity that you can succeed or
-fail at, even if it can externally look the same as trying to light a
-match well and failing.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;In “Games: Agency as Art”, C Thi Nguyen talks about games as an
-example of taking on &lt;em&gt;disposable ends&lt;/em&gt;. A game is an adoption of
-&lt;a href="https://en.wikipedia.org/wiki/Lusory_attitude"&gt;the lusory
-attitude&lt;/a&gt; - a voluntary attempt to overcome unnecessary obstacles.
-This lusory attitude is one of voluntarily taking on the activity of
-playing the game. With that activity, the &lt;em&gt;inherent aim&lt;/em&gt; is to
-score the most points (or achieve some other victory condition). The
-external function of the game might be to have fun, to spend time with
-your friends, etc.&lt;/p&gt;
-
-
-&lt;p&gt;If you focus on those external functions of the game as primary it
-can disrupt your abiltiy to play the game, which in turn can disrupt the
-ability to achieve those external functions.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Except this isn’t quite true! For example, when Dave and
-I play Root together, we often will go “This is probably a bad plan, but
-it would be funny…” and take a move that from the perspective of the
-game is clearly a suboptimal choice. I also do this in Slay the Spire
-pretty regularly. The external function can inform choices in the game,
-but I think it does this by changing the game you play. After making a
-funny but suboptimal move, you go back to sincerely trying to win the
-game.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;Nguyen points this out as an interesting and unusual feature of
-games, but actually I think maybe it’s not. I think it is &lt;em&gt;often&lt;/em&gt;
-the case that focusing on the external functions of the activity is
-disruptive to the activity itself.&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Sometimes that activity needs disruption of course. If
-you’re doing the wrong thing, thinking about the external functions will
-help you realise that and stop you doing the wrong thing. That’s
-disruptive, because you’re doing something that should be disrupted!&lt;/span&gt; Being able to focus on a
-singular goal and smoothly trying to achieve it allows you to enter an
-effective flow state around that goal, and only when it is completed do
-you find yourself returning to the question of why you were doing this
-in the first place. If you try to act with the full set of external
-functions of your activity in mind, most of the time you’ll fail to act
-fluidly.&lt;/p&gt;
-
-
-&lt;p&gt;This, to me, I think does a better job of capturing the right sorts
-of distinctions that I want to make about why we do things. You can talk
-about activities, and their aims, and how they fit together, and having
-the notion of an activity effectively creates boundaries in the chain of
-whys. Every end is terminal &lt;em&gt;while you are immersed in an activity
-with it as its aim&lt;/em&gt;, and only on emerging from the activity (either
-at its natural completion or as the result of some disruption) do you
-ask how it fits into the broader patterns of your life.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2025-04-08-09:56.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-09-18:44.html</id>
     <title>When I learned to read</title>
@@ -1266,7 +1164,7 @@ believe you should&lt;/a&gt; and start to let that go.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-17-18:19.html</id>
     <title>Moving the consistency bubble around</title>
-    <updated>2025-04-17T18:19:00+01:00</updated>
+    <updated>2025-04-17T21:52:40+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Moving the consistency bubble around&lt;/p&gt;
@@ -1389,5 +1287,167 @@ container that can be isolated from the rest of the sleep schedule.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2025-04-17-18:19.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2025-04-18-23:33.html</id>
+    <title>Sometimes things are actually important</title>
+    <updated>2025-04-18T23:33:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Sometimes things are actually important&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2025-04-18&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Buddha: happiness is obtained by embracing the four noble truths and
+relinquishing desire.&lt;/p&gt;
+&lt;p&gt;Satan: so what you’re saying is that if I were to relinquish the
+desire to torture Richard Nixon, that would make me… happy?&lt;/p&gt;
+&lt;p&gt;Buddha: well, no… I think that might be a special case.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;(From “Old Harry’s Game”, paraphrased from memory because I couldn’t
+be bothered to find the original)&lt;/p&gt;
+
+
+&lt;p&gt;I think Richard Nixon might also struggle to relinquish the desire to
+not be tortured by Satan.&lt;/p&gt;
+
+
+&lt;p&gt;I’m thinking about this exchange because I’m reading “The option
+method: the myth of unhappiness”, which is volume one of the collected
+works of Bruce Di Marsico, and it’s making me want to punch the author
+in the face and see whether he still believes that how you feel is
+purely a choice about whether or not to be happy.&lt;/p&gt;
+
+
+&lt;p&gt;In his defence, he does from time to time insist that he’s not
+telling anyone that they shouldn’t be unhappy. It’s just that he does
+this sprinkled occasionally throughout constant diatribes about how
+unhappiness isn’t real and you’re only unhappy if you choose to be.&lt;/p&gt;
+
+
+&lt;p&gt;There’s an attitude that I often wonder about that I generally
+attribute to inadequate mathematical education, which is when people
+make grand pronouncements and it’s clear they have not made any attempt
+to find a counterexample.&lt;/p&gt;
+
+
+&lt;p&gt;This book, in particular, it feels like it suffers from a pervasive
+problem in a lot of therapy culture: it doesn’t seem to understand that
+some things actually for real matter, and the nature of them mattering
+is not fully under your control, and while you do have some choice how
+to respond to it, many of the responses you could in theory choose are
+inaccessible to you and would in fact be bad if you could access
+them.&lt;/p&gt;
+
+
+&lt;p&gt;I’m imagining this method being applied to someone in an abusive
+relationship and Bruce telling the abused partner that their unhappiness
+is only in how they react to their partner’s violence, and I want to
+punch him all over again and this time not in order to make a rhetorical
+point.&lt;/p&gt;
+
+
+&lt;p&gt;I do not, I think, believe that he would in fact do this. Certainly I
+hope he would not. But he is making grand pronouncements about how the
+world works that would not hold up this example.&lt;/p&gt;
+
+
+&lt;p&gt;Similarly, the book talks a big talk about what it means to be crazy,
+in a way that makes it very clear that he has never experienced anyone
+having an actual psychotic episode.&lt;/p&gt;
+
+
+&lt;p&gt;There is a pervasive disclaimer that I maintain all advice, therapy,
+and self help has that it fails to include in the literal test: “this
+advice has a domain of applicability, and the author is not competent to
+assess that domain”.&lt;/p&gt;
+
+
+&lt;p&gt;But when you make grand universal claims about the nature of human
+experience, it tends to get my back up even if there might be something
+useful there. It does not feel like a genuine attempt to &lt;a href="https://notebook.drmaciver.com/posts/2025-04-15-22:18.html"&gt;actually
+engage iwth human experience&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;p&gt;Lisa has a good test question when trying to understand a new domain:
+“where wouldn’t you use this?”&lt;/p&gt;
+
+
+&lt;p&gt;I think this question is a little unfair in general because there are
+areas where there are easy answers to this but people are bad at
+answering because they’re not used to using their brains in minimally
+competent ways. That is, it’s very easy to answer, but only if you
+actually ever think in terms of looking for counterexamples.&lt;/p&gt;
+
+
+&lt;p&gt;In order to prime this, I often suggest a list of standard examples.
+For example, when trying to understand a new concept, try asking “is a
+cat an example of this concept?”. It often forces people to define the
+outside better than they naturally would.&lt;/p&gt;
+
+
+&lt;p&gt;So far at least, the option method does not do a good job of
+distinguishing why a cat is not happiness. More relevantly, it doesn’t
+seem to acknowledge that if you were bitten by a cat you might
+legitimately be unhappy about it.&lt;/p&gt;
+
+
+&lt;p&gt;In general, this book strikes me as an example of a pervasive problem
+with a lot of therapy: it fails to recognise that the real world
+actually exists and matters. It assumes that all problems come from
+within, and all the changes that matter are in yourself. If you feel bad
+about an event, the problem is in your response to the event. If you
+want to change how you feel, change yourself not the world that you are
+responding to. And often that’s true! I think particularly if you’re a
+therapist seeing an endless see of &lt;sub&gt;mediocrities&lt;/sub&gt; perfectly
+normal people who are miserable despite nothing terribly going wrong in
+their lives, you’re extra prone to thinking it’s true.&lt;/p&gt;
+
+
+&lt;p&gt;I’ve had very frustrating conversations with even otherwise very good
+therapists in the past where they really didn’t seem to grasp that yes
+that I recognised that it wasn’t solely my responsibility to solve a
+particular problem, but that the issue at hand was not my feelings of
+responsibility but that there was an actual problem that needed to be
+solved and nobody else who could take responsibility for it was, and
+regardless of whether it was my fault or not I would still feel bad if
+the bad thing happened because I cared about the outcome.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;There’s a wide range of things this could be referring
+to and I’m not being specific because of privacy reasons, but the actual
+example I have in mind was really boringly straightforward and obviously
+a problem in which a real actual person suffered and which only one of a
+handful of people could do anything about.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;Because the reality is that some things do actually matter, and while
+you can in theory choose how you react to those things, in practice I
+bet you can’t and also choosing to be happy about things that are
+actually bad (according to whatever standards are important to you) will
+go worse for you.&lt;/p&gt;
+
+
+&lt;p&gt;If what you are searching for is really a calm equanimity in the face
+of all things… well, let me know how it goes for you, and I wish you all
+the best, but it continues to be my position that what is needed is to
+help people act better in the world, and gaslighting people into
+thinking all their problems are in their beliefs about the situation
+doesn’t achieve that.&lt;/p&gt;
+
+
+&lt;p&gt;Part of why I’m reading about &lt;a href="https://notebook.drmaciver.com/posts/2025-04-16-18:31.html"&gt;care&lt;/a&gt;
+at the moment is that it seems to provide a better starting point.
+Regardless of how you feel, some things are &lt;em&gt;actually important&lt;/em&gt;,
+and you want to bring your feelings in line with that importance rather
+than just seeking happiness whatever happens.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2025-04-18-23:33.html" rel="alternate"/>
   </entry>
 </feed>
