@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-04-18T23:33:00+01:00</updated>
+  <updated>2025-04-21T20:49:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,201 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2025-04-09-18:44.html</id>
-    <title>When I learned to read</title>
-    <updated>2025-04-09T19:57:09+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;When I learned to read&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2025-04-09&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Recently Dave, Lisa, and I, were all helping sort through my parents’
-giant boxes of books that have been sitting untouched for years to
-decades. We were sorting them into various dubious ontologies - roughly…
-worth keeping, worth trying to sell, worth giving away, bin. Dave and
-Lisa in particular were trying to hunt out any gems that looked worth
-selling.&lt;/p&gt;
-
-
-&lt;p&gt;At some point, Lisa hands me this tiny battered book of some cheap
-adventure novel and said “Well, this one isn’t worth anything to
-anyone.”&lt;/p&gt;
-
-
-&lt;p&gt;She was, I think, unprepared for the look of absolute delight on my
-face as I grabbed it off her. “I’ve been trying to find this for so
-long!” I said.&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, let me backtrack 35 years or so.&lt;/p&gt;
-
-
-&lt;p&gt;It’s extremely on brand that one of my first really coherent memories
-is of learning to read in my head.&lt;/p&gt;
-
-
-&lt;p&gt;My school had a reading system. It was a whole thing - there was a
-box of books, you picked what book you wanted, then you had to read it,
-log your reading of it, and return it when you were done.&lt;/p&gt;
-
-
-&lt;p&gt;It may surprise you to know that I &lt;em&gt;hated&lt;/em&gt; this. I dragged my
-heels over it and had to be nagged into reading. Couldn’t stand reading,
-me.&lt;/p&gt;
-
-
-&lt;p&gt;Anyway, one evening I was reading out loud to mum, begrudgingly, and
-complained about this. I don’t remember my specific complaint, but she
-told me that I didn’t have to read out loud to her if I didn’t want to,
-I could just read books in my head. I said “Oh, OK!” or words to that
-effect, sent her away, and finished the book.&lt;/p&gt;
-
-
-&lt;p&gt;It didn’t take me long to finish the rest of the books in that box
-after that, and I quickly turned from a kid who hated reading to one who
-was regularly getting through giant doorstopper books.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Not, you understand, good ones. I read a lot of Robert
-Jordan and Brian Lumley (don’t tell my parents about the second one.
-They were not age appropriate) and other authors of similar quality
-levels. My love of SFF trash continues to this day.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;It was a pretty life-defining moment - I’m sure I’d have had it at
-some point, but that was the specific point at which I had it, and it
-sticks in my mind.&lt;/p&gt;
-
-
-&lt;p&gt;I could even tell you quite a lot about the book that I was reading.
-It was quite a short book, about some British soldier who is trying to
-ship logs down from a mountain and wants to pass them through some
-underground river, but they get lost in the middle, so he rides a log
-through and finds a giant whirlpool there.&lt;/p&gt;
-
-
-&lt;p&gt;I’ve tried multiple times over the years to find it - asked around on
-reddit, did a bunch of searching. Never could find it. I can’t remember
-if I ever asked Claude or ChatGPT, but just testing it now Claude
-straight up hallucinates an answer.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;It says that it’s Rudyard Kipling’s “The Man Who Would
-Be King”. It’s not.&lt;/span&gt; I’d asked my parents
-about it but they had no specific memory of this event at all, let alone
-what the book was.&lt;/p&gt;
-
-
-&lt;p&gt;I was for a while half-convinced this was a fake memory.&lt;/p&gt;
-
-
-&lt;p&gt;And then, totally unexpectedly, Lisa just handed me the book.&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;“But David”, you may ask, “if it was a book from the
-school reading box, why did &lt;em&gt;you&lt;/em&gt; have it? That is an excellent
-question. I have no idea. But it does have a sticker on it with my
-school form so I’m pretty sure I should have returned it to a box and
-didn’t.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;I think this is another variant on the &lt;a href="https://notebook.drmaciver.com/posts/2025-04-07-17:35.html"&gt;digital
-object permanence&lt;/a&gt; thing. If I’d read this book on a kindle, there is
-no chance that I would ever have found in this way,&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I mean I could have searched in my kindle library, but
-do you want to take a bet that Amazon will maintain another 35 years of
-continuity of archive? Admittedly they’re doing OK with the 15 they’ve
-got so far, but I am not wildly confident. They also have a history of
-disappearing things that you’ve bought.&lt;/span&gt; but
-because the book just exists as a physical object in the world, it could
-just stick around in my parents’ house until I found it again.&lt;label class="margin-toggle sidenote-number" for="fn5"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn5" type="checkbox"/&gt;&lt;span class="sidenote"&gt;It wasn’t even the only book I found this way! I was
-also trying and failing to remember the name of Karen Traviss’s &lt;a href="https://en.wikipedia.org/wiki/Wess%27Har"&gt;Wess’har books&lt;/a&gt;, and
-found “City of Pearl” there, which helped me track down the whole
-thing.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;The book is “The Cave of Death”, by Ian Serrallier. It’s very little
-wonder that I couldn’t find it, because it barely exists. It’s part of
-the “Wide Horizon Reading Scheme”, which I can provide very little
-evidence of being a real thing that really existed other than a
-scattering of other books with the same labelling. It’s a retelling of a
-story originally written by J. H. Williams, in “In Quest of a Mermaid”.
-I originally thought it was an extract, and felt moderately grumpy about
-Ian Serraillier taking credit for it by being the only name on the
-cover, but actually having now acquired a copy of the original, it seems
-to be the same story entirely rewritten. I assume to make it more
-self-contained and accessible to children, but I don’t know.&lt;/p&gt;
-
-
-&lt;p&gt;It’s in many ways quite an interesting story. It’s very “boys own
-adventures” and quite colonialist, but… fundamentally it’s a children’s
-story about an engineering problem, and that feels rare to me.&lt;/p&gt;
-
-
-&lt;p&gt;Even the colonialism is surprisingly interesting - yes, it’s a book
-about a white British soldier leading a team of “natives” in Burma,
-assisted by a bunch of itinerant Chinese workers. Yes, there’s a whole
-bunch of racial stereotyping going on it. But… the fundamental message
-about race relations in it seems to be “different cultures have
-different beliefs, but they’re generally still good people, and you’ve
-got to respect their beliefs in order to work with them”. I’m not going
-to claim it’s completely unproblematic - the author would certainly get
-cancelled for writing such a book today - but it genuinely seems like
-quite a positive message for its time and probably quite a lot better
-than many things written today.&lt;label class="margin-toggle sidenote-number" for="fn6"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn6" type="checkbox"/&gt;&lt;span class="sidenote"&gt;And way less bad than, say, Narnia. All of this would
-have completely gone over my head at the time though, as evidenced by
-the fact that I was &lt;em&gt;living in Saudi Arabia&lt;/em&gt; when reading the
-Narnia books and didn’t notice the islamaphobia. In my defence I also
-didn’t notice the Christianity.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;But I think the really interesting thing for me about this whole
-thing is not the specific book, but the degree to which figuring out
-your past is just intertwined with actual mundane history, and how much
-of history is bordering on lost because it’s not, as Lisa said, really
-worth anything to anyone. This is an obscure book from an obscure
-series. Of course I couldn’t find it.&lt;/p&gt;
-
-
-&lt;p&gt;Except, of course, I totally could have. I bet you if I found a
-research librarian and gave them a couple hundred pounds, they’d have
-found the book for me in a few weeks, especially these days. I’m not
-sure this possibility even really occurred to me as a live one, but in
-retrospect it was very possible. I find these sorts of questions
-interesting - things which clearly have an empirical answer, and finding
-out the empirical answer is entirely within your means,&lt;label class="margin-toggle sidenote-number" for="fn7"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn7" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Although! This is only true in this case &lt;em&gt;if the
-answer is positive&lt;/em&gt;. If it turns out I’d dreamed the whole thing and
-the book didn’t exist, establishing that with any degree of certainty
-would be very costly.&lt;/span&gt; but
-it’s just not clearly worth it. My go to example of this is look at a
-random person passing you on the street, what’s their name? You could
-just go ask them. It would be weird, but they’d probably tell you.&lt;label class="margin-toggle sidenote-number" for="fn8"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn8" type="checkbox"/&gt;&lt;span class="sidenote"&gt;And if they don’t, you can probably still find out!
-Probably not ethically, possibly not without being arrested, but you
-can.&lt;/span&gt; And yet you don’t do it, because the
-question is just an idle fancy, and the effort isn’t worth it.&lt;/p&gt;
-
-
-&lt;p&gt;I think it’s often worth doing things that seem like they’re not
-worth it, and this seems like a potentially good learning opportunity.
-Even if the answer to the question isn’t worth the cost, maybe the
-experience of figuring out how to answer it is. If I’d thought to ask a
-research librarian of some sort about this, yes they’d have found the
-book, but also I’d have learned more about how to interact with research
-librarians, and that would in and of itself been worth it even if
-finding the book was not.&lt;/p&gt;
-
-
-&lt;p&gt;I don’t know if going to ask a random stranger on the street their
-name would be a good experience in the same way, but it seems like it
-might be. It seems harmless, and I think generally figuring out how to
-take greyed out options is good for you.&lt;/p&gt;
-
-
-&lt;p&gt;I think that, perhaps, it would be good to notice such questions as
-they arise, and every now and then even if it doesn’t seem worth it to
-try to answer the question, answer it anyway, and see how that changes
-you.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2025-04-09-18:44.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-10-16:38.html</id>
     <title>The scent of reality</title>
@@ -1291,7 +1096,7 @@ container that can be isolated from the rest of the sleep schedule.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-18-23:33.html</id>
     <title>Sometimes things are actually important</title>
-    <updated>2025-04-18T23:33:00+01:00</updated>
+    <updated>2025-04-18T23:48:09+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Sometimes things are actually important&lt;/p&gt;
@@ -1449,5 +1254,45 @@ than just seeking happiness whatever happens.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2025-04-18-23:33.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2025-04-21-20:49.html</id>
+    <title>Resuming habits</title>
+    <updated>2025-04-21T20:49:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Resuming habits&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2025-04-21&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I took a deliberate break from the daily posting habit over the
+easter weekend. I think this was the right choice.&lt;/p&gt;
+
+
+&lt;p&gt;But now, I’m faced with a perennial difficult problem: Once you’ve
+paused a habit, you’ve lost inertia, and now you have to deal with the
+difficult task of starting again from a cold start.&lt;/p&gt;
+
+
+&lt;p&gt;What I’ve often found in the past is that this causes you to delay,
+and then the habit develops an ugh field, and this makes it harder and
+harder to start, and suddenly months have passed without you having
+touched it.&lt;/p&gt;
+
+
+&lt;p&gt;I think the solution to this is that whenever resuming a habit, even
+after an incredibly short break but certainly after a long one, you
+should deliberately do so in the lowest effort way possible.&lt;/p&gt;
+
+
+&lt;p&gt;Like this.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2025-04-21-20:49.html" rel="alternate"/>
   </entry>
 </feed>
