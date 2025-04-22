@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-04-22T17:59:53+01:00</updated>
+  <updated>2025-04-22T18:02:18+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1130,7 +1130,7 @@ should deliberately do so in the lowest effort way possible.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-22-16:32.html</id>
     <title>Algebra and insight</title>
-    <updated>2025-04-22T17:59:53+01:00</updated>
+    <updated>2025-04-22T18:02:18+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Algebra and insight&lt;/p&gt;
@@ -1232,12 +1232,14 @@ stationary.&lt;/p&gt;
 &lt;p&gt;I think mathematics - and many other things - benefits hugely from
 this sort of chewing on a problem and seeing it from different angles
 until it actually makes sense. If you just know that a result is true,
-you often find yourself unable to really use it unless you understand at
-an intuitive level why it’s true. Proof without developing insight
-alongside it is certainly better than no proof, but it’s in some sense
-fundamentally fragile and untrustworthy, and it’s often better to mull
-it over until you find the right way to break up the problem to actually
-allow it to make sense at an emotional level.&lt;/p&gt;
+you often find yourself unable to really use it. If you understand at an
+intuitive level why it’s true, it will stick with you and you can really
+see how to apply it, including in cases where it doesn’t quite hold but
+something similar does. Proof without developing insight alongside it is
+certainly better than no proof, but it’s in some sense fundamentally
+fragile and untrustworthy, and it’s often better to mull it over until
+you find the right way to break up the problem to actually allow it to
+make sense at an emotional level.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2025-04-22-16:32.html" rel="alternate"/>
