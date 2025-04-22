@@ -79,11 +79,17 @@ reminding myself about them and partly filling in some gaps in my
 knowledge.</p>
 <p>One bit I was reading about was reversible distributions. If you’ve
 got some transition matrix <span class="math inline">\(P_{ij}\)</span>,
-a reversible distribution for it is a probability distribution <span class="math inline">\(q\)</span> over the states such that <span class="math inline">\(q_i P_{ij} = q_j P_{ji}\)</span>.</p>
-<p>It’s a theorem that every reversible distribution is stationary. That
-is, if <span class="math inline">\(q\)</span> is reversible then <span class="math inline">\(q_i = \sum\limits_j P_{ji} q_j\)</span> for all
-<span class="math inline">\(i\)</span> - the distribution is not changed
-by running the Markov chain forwards.</p>
+a reversible distribution for it is a probability distribution <span class="math inline">\(q\)</span> over the states such that <span class="math inline">\(q_i P_{ij} = q_j P_{ji}\)</span>. If you also lack
+any intuition about what that means, me too at the point at which it’s
+introduced. The broad intuition is that a Markov chain in a reversible
+distribution can be “run backwards in time” and you can’t tell the
+difference, but the main significance is that it’s an easy property to
+verify that has strong consequences.</p>
+<p>Specifically, it’s a theorem that every reversible distribution is
+stationary. That is, if <span class="math inline">\(q\)</span> is
+reversible then <span class="math inline">\(q_i = \sum\limits_j P_{ji}
+q_j\)</span> for all <span class="math inline">\(i\)</span> - the
+distribution is not changed by running the Markov chain forwards.</p>
 <p>The proof of this presented in the text I was reading is as
 follows:</p>
 <p>We can write <span class="math inline">\(q_i = q_i \sum\limits_j

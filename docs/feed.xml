@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-04-22T16:54:27+01:00</updated>
+  <updated>2025-04-22T17:59:53+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1130,7 +1130,7 @@ should deliberately do so in the lowest effort way possible.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-22-16:32.html</id>
     <title>Algebra and insight</title>
-    <updated>2025-04-22T16:54:27+01:00</updated>
+    <updated>2025-04-22T17:59:53+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Algebra and insight&lt;/p&gt;
@@ -1149,13 +1149,19 @@ knowledge.&lt;/p&gt;
 
 &lt;p&gt;One bit I was reading about was reversible distributions. If you’ve
 got some transition matrix &lt;span class="math inline"&gt;\(P_{ij}\)&lt;/span&gt;,
-a reversible distribution for it is a probability distribution &lt;span class="math inline"&gt;\(q\)&lt;/span&gt; over the states such that &lt;span class="math inline"&gt;\(q_i P_{ij} = q_j P_{ji}\)&lt;/span&gt;.&lt;/p&gt;
+a reversible distribution for it is a probability distribution &lt;span class="math inline"&gt;\(q\)&lt;/span&gt; over the states such that &lt;span class="math inline"&gt;\(q_i P_{ij} = q_j P_{ji}\)&lt;/span&gt;. If you also lack
+any intuition about what that means, me too at the point at which it’s
+introduced. The broad intuition is that a Markov chain in a reversible
+distribution can be “run backwards in time” and you can’t tell the
+difference, but the main significance is that it’s an easy property to
+verify that has strong consequences.&lt;/p&gt;
 
 
-&lt;p&gt;It’s a theorem that every reversible distribution is stationary. That
-is, if &lt;span class="math inline"&gt;\(q\)&lt;/span&gt; is reversible then &lt;span class="math inline"&gt;\(q_i = \sum\limits_j P_{ji} q_j\)&lt;/span&gt; for all
-&lt;span class="math inline"&gt;\(i\)&lt;/span&gt; - the distribution is not changed
-by running the Markov chain forwards.&lt;/p&gt;
+&lt;p&gt;Specifically, it’s a theorem that every reversible distribution is
+stationary. That is, if &lt;span class="math inline"&gt;\(q\)&lt;/span&gt; is
+reversible then &lt;span class="math inline"&gt;\(q_i = \sum\limits_j P_{ji}
+q_j\)&lt;/span&gt; for all &lt;span class="math inline"&gt;\(i\)&lt;/span&gt; - the
+distribution is not changed by running the Markov chain forwards.&lt;/p&gt;
 
 
 &lt;p&gt;The proof of this presented in the text I was reading is as
