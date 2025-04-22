@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-04-22T16:32:00+01:00</updated>
+  <updated>2025-04-22T16:53:35+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1130,7 +1130,7 @@ should deliberately do so in the lowest effort way possible.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-22-16:32.html</id>
     <title>Algebra and insight</title>
-    <updated>2025-04-22T16:32:00+01:00</updated>
+    <updated>2025-04-22T16:53:35+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Algebra and insight&lt;/p&gt;
@@ -1188,7 +1188,7 @@ at each step that you run the Markov chain, this probability mass flows
 around the graph.&lt;/p&gt;
 
 
-&lt;p&gt;When you’ve got a probability distribution &lt;span class="math inline"&gt;\(q\)&lt;/span&gt;, all of &lt;span class="math inline"&gt;\(q_i\)&lt;/span&gt; flows out of node &lt;span class="math inline"&gt;\(i\)&lt;/span&gt;, and &lt;span class="math inline"&gt;\(\sum\limits_j q_j P_{ji\)&lt;/span&gt; flows into it.
+&lt;p&gt;When you’ve got a probability distribution &lt;span class="math inline"&gt;\(q\)&lt;/span&gt;, all of &lt;span class="math inline"&gt;\(q_i\)&lt;/span&gt; flows out of node &lt;span class="math inline"&gt;\(i\)&lt;/span&gt;, and &lt;span class="math inline"&gt;\(\sum\limits_j q_j P_{ji}\)&lt;/span&gt; flows into it.
 That is, for each node &lt;span class="math inline"&gt;\(j\)&lt;/span&gt;, the mass
 in it flows out to every other node, and the fraction of it that goes to
 &lt;span class="math inline"&gt;\(i\)&lt;/span&gt; is &lt;span class="math inline"&gt;\(P_{ji}\)&lt;/span&gt;.&lt;/p&gt;
