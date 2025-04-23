@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+DRMacIver's Notebook: What is probabilistic programming?
+    </title>
+
+    <meta property="og:title" content="What is probabilistic programming?">
+
+    <meta property="og:url" content="https://notebook.drmaciver.com/posts/2025-04-23-14:03.html" />
+    <link rel="canonical" href="https://notebook.drmaciver.com/posts/2025-04-23-14:03.html" />
+    <script src="https://hypothes.is/embed.js" async></script>
+
+
+    <meta name="twitter:card" content="summary" />
+
+    <meta property="og:creator" content="@DRMacIver">
+
+    <link rel="stylesheet" href="/pandoc.css"/>
+    <link rel="stylesheet" href="/pygments.css"/>
+    <link rel="stylesheet" href="/tufte.css"/>
+    <link rel="stylesheet" href="/latex.css"/>
+    <link rel="stylesheet" href="/drmnotes.css"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
+});
+
+MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
+  console.log(message)
+});
+
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169185204-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169185204-1');
+</script>
+
+  </head>
+
+  <body>
+    <article>
+        <h1><a href="/">DRMacIver's Notebook</a></h1>
+        <p class=subtitle>What is probabilistic programming?</p>
+
+        
+
+<section id="the-post">
+<p class=subtitle>What is probabilistic programming?</p>
+<dl class=metadata>
+<dt>Published</dt>
+<dd class="post-date">2025-04-23</dd>
+</dl>
+
+<p>Friends and family often ask me what probabilistic programming is.
+This isn’t very surprising, as I currently work in probabilistic
+programming. Unfortunately I haven’t had a <em>very</em> good answer for
+them, as this is quite a recent development for me and I haven’t fully
+understood the boundaries of the field.</p>
+<p>I think also it’s hard to answer because the field is a little
+confused about what it is, and there’s a “What the field says it is”
+answer and “What the field actually is” answer.</p>
+<p>So I’m going to try to give my own answer of what I think the field
+is. It will be a bit overbroad and claim some territory that could
+equally be put in other fields, but I think the overbroad definition is
+more informative than the overly narrow one.</p>
+<p>First, let me give you a narrow answer that I think people would
+classically give:<label class="margin-toggle sidenote-number" for="fn1"></label><input class="margin-toggle" id="fn1" type="checkbox"/><span class="sidenote">And <a href="https://en.wikipedia.org/wiki/Probabilistic_programming">the
+wikipedia page</a> gives.</span> Probabilistic programming is the
+field of developing probabilistic programming languages.</p>
+<p>What’s a probabilistic programming language? Well it’s a particular
+type of tool for doing the thing I’m about to describe in the general
+answer.</p>
+<p>So, this is what I think: Probabilistic programming is the field of
+constructing random samplers with precise distributional properties,
+centrally but not exclusively<label class="margin-toggle sidenote-number" for="fn2"></label><input class="margin-toggle" id="fn2" type="checkbox"/><span class="sidenote">That is, this is the origin of the field and the major
+driver of progress in it, but the techniques are more broadly useful and
+using them to do other things would still be considered probabilistic
+programming.</span> with the goal of
+developing better Monte Carlo methods for doing statistics.</p>
+<p>I will now unpack all of those terms so that this definition actually
+makes sense.</p>
+<p>A <em>random sampler</em> is a program that, when run, generates some
+value, typically at random. You could imagine e.g. a coin flip, which
+randomly generates either “heads” or “tails” as your prototypical random
+sampler. The work I did in Hypothesis is also an example of a random
+sampler, where it generates test cases for checking your program with by
+making a bunch of choices at random.</p>
+<p>Random samplers have the virtue of being very easy to construct - you
+can just write a simple program that makes a bunch of random choices and
+bam you’ve got a random sampler.</p>
+<p>However, it’s often hard to reason about the behaviour of random
+samplers, and in particular to construct random samplers that behave in
+particular ways.</p>
+<p>For example, suppose you were creating a random sampler to simulate
+some physical process - say, the weather - it’s quite important that if
+about 10% of your random samples say it’s going to rain tomorrow, then
+you should expect that about 10% of the time tomorrow there will be
+rain.<label class="margin-toggle sidenote-number" for="fn3"></label><input class="margin-toggle" id="fn3" type="checkbox"/><span class="sidenote">What does that mean? Don’t worry about it too precisely.
+If you want to worry about it more precisely, read <a href="https://notebook.drmaciver.com/posts/2021-10-29-09:43.html">Probably
+enough probability for you</a> and <a href="https://notebook.drmaciver.com/posts/2025-03-05-10:29.html">World
+counting as a tool for understanding probability</a></span></p>
+<p>Having random samplers that have accurate distributional properties
+like this - e.g. that our random model of the weather accurately
+reflects what we should believe about the weather - is an essential
+property for doing <em>monte carlo simulations</em>, which just means
+that you run a bunch of random simulations and use those as a
+representative of the range for the true value you’re trying to
+calculate. e.g. if you want to know if it’s going to rain on Tuesday,
+run a few thousand weather simulations and see what fraction of them
+rain on Tuesday. If you want to know the total rainfall you should
+expect, average the total rainfall across all of your simulations,
+etc.</p>
+<p>These are not the exact calculations that you might hope for in
+classical statistics - what you get is a random number, and if you reran
+the simulation you’d get a slightly different number, but it is a random
+number that you can count on being very close to the true number you
+want,<label class="margin-toggle sidenote-number" for="fn4"></label><input class="margin-toggle" id="fn4" type="checkbox"/><span class="sidenote">Figuring out how close is part of the general body of
+theory needed and developed in doing probabilistic programming.</span> and you can get it as close as you
+like by running more simulations.</p>
+<p>Now, that’s all very well, but what this gives you is an accurate
+estimator of these values <em>in your simulation</em>. How do you get
+your simulation right?</p>
+<p>This is where probabilistic programming and its toolkit for trying to
+control distributional properties of samplers comes in.</p>
+<p>In particular it often comes in via trying to do <em>Bayesian
+inference</em>.</p>
+<p>Bayesian inference works as follows:</p>
+<ol type="1">
+<li>You start with some very general model of the world (a “prior
+distribution”), and what data you would expect to see given specific
+configurations of that world.</li>
+<li>You feed in a bunch of actual data.</li>
+<li>You get an updated model of the world (a “posterior distribution”)
+out.</li>
+</ol>
+<p>A great deal of probabilistic programming is concerned with how to do
+this sort of Bayesian updating on random samplers.</p>
+<p>This allows for a very general approach to doing statistics:</p>
+<ol type="1">
+<li>You write a random sampler for a very broad world model.</li>
+<li>You feed in a bunch of data and do a Bayesian update on your sampler
+to take into account the data.</li>
+<li>You run Monte Carlo simulations and use them to make predictions
+about the world.</li>
+</ol>
+<p>All of the hard part is in Step 2. This is an almost impossibly
+difficult problem to do in general. Many of the classic probabilistic
+programming tools try to do this, and what you get is tools that
+sometimes work very well and sometimes just run unusably slowly, with
+very little ability to predict which situation you’ll be in or much
+recourse for fixing it when it happens.</p>
+<p>What the lab I’m in tries to do is to instead provide a toolkit that
+makes it easy to write your own algorithms for your specific problem, by
+providing an API for samples that you can perform a variety of
+manipulations on - either standard algorithms or ones of your own
+creation - that let you perform the update.</p>
+<p>But, in general, doing this bit well is where most of the active work
+in probabilistic programming is, and why the tools have historically
+been a bit underused. We’re hopeful that a mix of new improvements in
+computing and new advances in probabilistic programming allow us to do a
+lot better than we’ve previously seen, but this is still an active
+research and development area, so we’ll see how that goes.</p>
+
+
+</section>
+
+    </article>
+<footer>
+Copyright David R. MacIver.
+
+CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
+</footer>
+  </body>
+</html>
