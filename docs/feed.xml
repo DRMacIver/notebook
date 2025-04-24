@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-04-23T14:03:00+01:00</updated>
+  <updated>2025-04-24T10:00:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,161 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2025-04-12-16:30.html</id>
-    <title>Anytime Projects</title>
-    <updated>2025-04-12T17:57:44+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Anytime Projects&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2025-04-12&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Something I’ve found over and over again is that there is a
-particular way of structuring projects that, when you can manage it,
-works very well. I call them Anytime Projects.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Named after &lt;a href="https://en.wikipedia.org/wiki/Anytime_algorithm"&gt;anytime
-algorithms&lt;/a&gt;, which are algorithsm which you can interrupt at any
-point prior to completion and they will tell you their current best
-answer.&lt;/span&gt;
-I’ve written about it &lt;a href="https://drmaciver.substack.com/p/completing-completable-projects"&gt;a
-bit before&lt;/a&gt; but never really fully articulated what Anytime Projects
-are and why they work so well.&lt;/p&gt;
-
-
-&lt;p&gt;The distinguishing feature of an Anytime Project is that can stop at
-any point, and little of your time will have been wasted.&lt;/p&gt;
-
-
-&lt;p&gt;You make an anytime project as follows:&lt;/p&gt;
-
-
-&lt;ol type="1"&gt;
-&lt;li&gt;You make a minimum viable version of the solution as quickly as
-possible. This might just be the status quo, or it might be some initial
-basic implementation of the thing you’re aiming at.&lt;/li&gt;
-&lt;li&gt;You proceed in a series of individually relatively small steps, each
-of which leaves the project better off on completion.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;Optional features:&lt;/p&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;The project may not even be possible to finish. Many projects are
-amenable to constant improvement over time.&lt;/li&gt;
-&lt;li&gt;It can be helpful to prioritise, so that you get a lot of the high
-reward to effort tasks done first.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;For example, the way I &lt;a href="https://notebook.drmaciver.com/posts/2025-03-23-21:48.html"&gt;clean
-the kitchen&lt;/a&gt; structures it as an anytime project. There &lt;em&gt;is&lt;/em&gt; a
-well-defined end state, but it’s done in a series of stages, where each
-stage is fairly completable in its own right, and each stage being
-completed is an improvement.&lt;/p&gt;
-
-
-&lt;p&gt;In contrast, I recently converted my office in our house into a spare
-bedroom&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;The office moved into the “box room” which is basically
-a wide corridor joining the landing to the bedroom, and that I used as a
-slightly awkard storage and study room before, so this is no great
-hardship, except for the actual process of doing the rearrangement. I
-actually like my new desk position better than my old one.&lt;/span&gt;, and the priority was getting the
-new room usable in time for someone to use it, so my first step was
-rapidly extracting everything from the office, much of which got dumped
-in my bedroom.&lt;/p&gt;
-
-
-&lt;p&gt;This was &lt;em&gt;not&lt;/em&gt; an anytime project, because although I made
-clear progress on getting the office ready to become a guest room, I did
-not leave the system in a state where it was interruptible if I wanted
-to be able to sleep that night.&lt;/p&gt;
-
-
-&lt;p&gt;This is, I think, one of the key feature sof an anytime project: At
-any given point, you are a relatively small amount of work from just
-being able to stop.&lt;/p&gt;
-
-
-&lt;p&gt;Why didn’t I do it that part as an anytime project? Too many moving
-parts, too many dependency chains. I probably could have if I’d put in a
-bit more forethought, but it would have been more work and taken longer
-on the most important metric, which was getting the room ready.&lt;/p&gt;
-
-
-&lt;p&gt;This is true in general I think: Unless something is &lt;em&gt;very&lt;/em&gt;
-naturally an anytime project, it’s usually going to be more work to do
-it as one, and there will often be a faster route to any particular
-point than doing it that way.&lt;/p&gt;
-
-
-&lt;p&gt;So why do things as anytime projects?&lt;/p&gt;
-
-
-&lt;p&gt;One reason is just the definition: Whenever you end up abandoing the
-project, you’ll still have ended up with something usable and worth
-doing.&lt;/p&gt;
-
-
-&lt;p&gt;But secondly, it’s actually been my experience that anytime projects
-are &lt;em&gt;much&lt;/em&gt; more motivating, and the result is that you’re
-&lt;em&gt;less&lt;/em&gt; likely to abandon the project! When there’s a huge amount
-of work in front of you before you see any results, it can be quite
-daunting. If in contrast you are presented with a constant stream of
-easy ways to improve the situation, it’s easy to keep going until you’re
-done - it always feels worth it to do one more thing.&lt;/p&gt;
-
-
-&lt;p&gt;It’s also possible to have many anytime projects on the go and pick
-them up and put them down as and when you’re motivated to do a bit of
-work on them. A blog is an anytime project, as is most software once
-it’s in a releasable state - you can sit down, do something to it, and
-make it better by publishing an article or adding a feature or fixing a
-bug or something. This makes anytime projects &lt;a href="https://notebook.drmaciver.com/posts/2020-03-23-15:52.html"&gt;a more
-natural part of your life&lt;/a&gt; than many larger more monolithic
-options.&lt;/p&gt;
-
-
-&lt;p&gt;Some things you end up wanting to structure them partially as anytime
-projects. e.g. right now in the room move, dealing with the fallout of
-it is an anytime project. After I tidied up the worst of the stuff I’d
-moved into my bedroom, my bedroom and new office are usable, but there’s
-still a lot to do, but I can just do it in small life-improving chunks
-each day.&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Sometimes I even do that.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;I think there’s often a very natural split of a project into two
-phases: An initial prototyping or drafting phase where you do whatever
-is needed to get some usable first version, and then an Anytime Project
-of finishing it off. e.g. I’ve often used “writing a book” as an example
-of something that isn’t an anytime project, but I think this is only
-sortof true. &lt;em&gt;Writing a first draft&lt;/em&gt; is not, but after that draft
-is written there’s a long process of editing and improvement which does
-mostly naturally fit the anytime pattern of project design.&lt;/p&gt;
-
-
-&lt;p&gt;I’ve thought of myself as bad at completing projects in the past, but
-I think perhaps what I need to get better at is &lt;em&gt;completing
-drafts&lt;/em&gt;. In &lt;a href="https://drmaciver.substack.com/i/136296748/mode-shifts"&gt;Completing
-Completable Projects&lt;/a&gt; I identified the idea of a &lt;em&gt;mode shift&lt;/em&gt;
-in projects where the sort of activity you need to perform changes as
-the projet nears completion. I think at the time I didn’t notice the
-transition to anytime as a mode shift because the project I was talking
-about didn’t have an editing phase, but I think this is notion of mode
-shift is perhaps a good way of thinking about project planing: The first
-stage of a project is to get it into anytime mode, as quickly and easily
-as possible, and then after that you mode shift it into an anytime
-project.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2025-04-12-16:30.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-13-14:46.html</id>
     <title>An improvised meal</title>
@@ -1139,7 +984,7 @@ make sense at an emotional level.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-23-14:03.html</id>
     <title>What is probabilistic programming?</title>
-    <updated>2025-04-23T14:03:00+01:00</updated>
+    <updated>2025-04-23T15:34:22+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;What is probabilistic programming?&lt;/p&gt;
@@ -1309,5 +1154,506 @@ research and development area, so we’ll see how that goes.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2025-04-23-14:03.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2025-04-24-10:00.html</id>
+    <title>A brief introduction to mathematics with one example many times</title>
+    <updated>2025-04-24T10:00:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;A brief introduction to mathematics with one example many times&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2025-04-24&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;There’s a story repeated so often that it’s a cliche of &lt;a href="https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss"&gt;Gauss&lt;/a&gt;’s
+mathematics teacher setting the class the task of adding up the numbers
+1 to 100, supposedly to waste their time and give them a break, only for
+Gauss to almost immediately give the correct answer.&lt;/p&gt;
+
+
+&lt;p&gt;I think it’s a usefully illustrative example to look at for learning
+some of the basics of mathematics. Partly this is because it illustrates
+one of the key uses and methods of mathematics: Getting an answer that
+you could in theory work out laboriously much faster through logical
+deducation.&lt;/p&gt;
+
+
+&lt;p&gt;Mostly, though, I’m going to use it to showcase a bunch of different
+ways of thinking through a mathematical problem, and use it to teach
+some common mathematical notation.&lt;/p&gt;
+
+
+&lt;p&gt;So, let’s figure out how to do this.&lt;/p&gt;
+
+
+&lt;p&gt;The first thing we need to figure out is to how to write it down.
+Here are two obvious ways:&lt;/p&gt;
+
+
+&lt;ol type="1"&gt;
+&lt;li&gt;“The sum of all numbers from 1 to 100.”&lt;/li&gt;
+&lt;li&gt;&lt;span class="math inline"&gt;\(1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 +
+11 + 12 + 13 + 14 + 15 + 16 + 17 + 18 + 19 + 20 + 21 + 22 + 23 + 24 + 25
++ 26 + 27 + 28 + 29 + 30 + 31 + 32 + 33 + 34 + 35 + 36 + 37 + 38 + 39 +
+40 + 41 + 42 + 43 + 44 + 45 + 46 + 47 + 48 + 49 + 50 + 51 + 52 + 53 + 54
++ 55 + 56 + 57 + 58 + 59 + 60 + 61 + 62 + 63 + 64 + 65 + 66 + 67 + 68 +
+69 + 70 + 71 + 72 + 73 + 74 + 75 + 76 + 77 + 78 + 79 + 80 + 81 + 82 + 83
++ 84 + 85 + 86 + 87 + 88 + 89 + 90 + 91 + 92 + 93 + 94 + 95 + 96 + 97 +
+98 + 99 + 100\)&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;Neither of these are actually very good.&lt;/p&gt;
+
+
+&lt;p&gt;One of the first lessons of doing mathematics: A lot of mathematics
+is about developing good notation for representing the problem. The
+problem with the first, plain English, one is that it’s hard to
+manipulate. We want to be able to do algebra with it, and it’s hard to
+do algebra with plain English language. Modern mathematics owes a lot to
+&lt;a href="https://en.wikipedia.org/wiki/Robert_Recorde"&gt;Robert
+Recorde&lt;/a&gt; for giving us the equals sign (and popularising the plus and
+minus signs), because trying to manipulate sums with plain English
+language is an absolute pain.&lt;/p&gt;
+
+
+&lt;p&gt;The second one is bad for two main reasons:&lt;/p&gt;
+
+
+&lt;ol type="1"&gt;
+&lt;li&gt;It’s very clunky and unwieldy. If you’re going to be repeating the
+expression a lot, you don’t want to write that out over and over again.
+Also, are you sure you’re reading it correctly? Would you have noticed
+if I’d dropped 31 from the middle, or repeated 23 twice?&lt;/li&gt;
+&lt;li&gt;It doesn’t generalise well. Suppose we wanted instead to add up all
+the numbers from 1 to 50, or 1 to 1000, we’d have to write an entirely
+new expression for it. There’s no way to do algebra where the end point
+is variable with this expression.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;So let me give you two other ways to write it:&lt;/p&gt;
+
+
+&lt;ol type="1"&gt;
+&lt;li&gt;&lt;span class="math inline"&gt;\(1 + \ldots + 100\)&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class="math inline"&gt;\(\sum\limits_{i = 1}^{100}
+i\)&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;In the first, the &lt;span class="math inline"&gt;\(\ldots\)&lt;/span&gt; just
+means “and so on”. You’re expected to figure out what it means from
+context, but you’re also expected not to write it unless it’s obvious
+from context what you mean. If we’d wanted to make it a bit more obvious
+we could have written it &lt;span class="math inline"&gt;\(1 + 2 + \ldots + 99
++ 100\)&lt;/span&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;The second is a much more precise notation and looks completely
+inscrutable when you first encounter it, but has a fairly
+straightforward meaning: The &lt;span class="math inline"&gt;\(\sum\)&lt;/span&gt;
+represents a sum of an expression, where the expression references a
+variable &lt;span class="math inline"&gt;\(i\)&lt;/span&gt; that varies over some
+range. The &lt;span class="math inline"&gt;\(i = 1\)&lt;/span&gt; at the bottom
+indicates that the sum is over a range of values of &lt;span class="math inline"&gt;\(i\)&lt;/span&gt; starting with &lt;span class="math inline"&gt;\(1\)&lt;/span&gt;, and the &lt;span class="math inline"&gt;\(100\)&lt;/span&gt; at the top indicates that &lt;span class="math inline"&gt;\(100\)&lt;/span&gt; is the last element. The &lt;span class="math inline"&gt;\(i\)&lt;/span&gt; to the right means that the expression
+we are summing is &lt;span class="math inline"&gt;\(i\)&lt;/span&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;So, for example, &lt;span class="math inline"&gt;\(\sum\limits_{i = 1}^3 i
+= 1 + 2 + 3\)&lt;/span&gt;, or &lt;span class="math inline"&gt;\(\sum\limits_{i =
+2}^3 i^2 = 2^2 + 3^2\)&lt;/span&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;The &lt;span class="math inline"&gt;\(\sum\)&lt;/span&gt; notation is very
+convenient because it allows us to compactly represent complicated
+expressions. It’s also useful for making generalisations. e.g. if we
+wanted to work out the answer to this for any number, we could write
+&lt;span class="math inline"&gt;\(\sum\limits_{i=1}^n i\)&lt;/span&gt; to indicate
+that the end point is an arbitrary integer &lt;span class="math inline"&gt;\(n\)&lt;/span&gt;.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;There are some implicit notational conventions here by
+the way. &lt;span class="math inline"&gt;\(i\)&lt;/span&gt; is usually an index
+variable. &lt;span class="math inline"&gt;\(i\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(n\)&lt;/span&gt; are both expected to be integers by
+that choice. This isn’t required, but it’s conventional. However, you
+would only ever use integers as sum indexed or bounds like this, and
+that’s not conventional, it doesn’t really make sense to use
+non-integers here.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;To start with though, we’ll keep working with the &lt;span class="math inline"&gt;\(\ldots\)&lt;/span&gt; notation.&lt;/p&gt;
+
+
+&lt;p&gt;Now, let’s solve the problem.&lt;/p&gt;
+
+
+&lt;p&gt;We can write &lt;span class="math inline"&gt;\(1 + \ldots + 100\)&lt;/span&gt; as
+&lt;span class="math inline"&gt;\((1 + \ldots 50) + (51 + \ldots
+100)\)&lt;/span&gt;, because we can break up the sum however we like.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Technically speaking we are using what’s called the
+associativity rule of addition here.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;We can also reverse a sum if we want, so we could write the second
+one equally well as &lt;span class="math inline"&gt;\(100 + \ldots +
+51\)&lt;/span&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Now, there are exactly 50 elements in each sum, so we can pair them
+up and rearrange the sum as follows. &lt;span class="math inline"&gt;\((1 +
+100) + (2 + 99) + \ldots + (49 + 52) + (50 + 51)\)&lt;/span&gt;. Now, notice
+that each of these terms adds up to exactly 101. You can check that
+&lt;span class="math inline"&gt;\(1 + 100 = 101, 2 + 99 = 101\)&lt;/span&gt; etc but
+you can also this because each time you move right, you add one to the
+first term and subtract one from the second, so the value stays
+constant. This means that this sum is exactly 50 copies of 101, so the
+sum is &lt;span class="math inline"&gt;\(50 \times 101 = 5050\)&lt;/span&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;I think a pretty reasonable question for you to ask at this point is
+how on earth you’re expected to come up with a trick like that. If
+you’ve seen this problem before it’s old hat, but if you had to come up
+with it on the spot, how would you do that?&lt;/p&gt;
+
+
+&lt;p&gt;The honest answer is I don’t know. A lot of things like this you just
+figure out by fiddling with the problem and getting an instinct for what
+works. This sort of approach is what I think of as a “trick”, and
+sometimes you spot the trick which lets you massively simplify the
+problem, and sometimes you don’t. As you do more mathematics, you
+develop both a familiar bag of tricks, and you learn to apply them in
+new circumstances. The trick here is something like “try grouping
+different parts of the sum together to see if they add up to something
+convenient”.&lt;/p&gt;
+
+
+&lt;p&gt;For example, here’s another way you could use a similar trick.
+Suppose I asked you to calculate &lt;span class="math inline"&gt;\(1 - 2 + 3 -
+4 + \ldots + 99 - 100\)&lt;/span&gt; (you could also write this as &lt;span class="math inline"&gt;\(\sum\limits_{i = 1}^{100} (-1)^{i - 1} i\)&lt;/span&gt;
+) - that is, it’s the same sum as before, but this time the signs
+alternate between positive and negative.&lt;/p&gt;
+
+
+&lt;p&gt;Well, here you could group it as follows: &lt;span class="math inline"&gt;\((1 - 2) + (3 - 4) + \ldots + (99 - 100)\)&lt;/span&gt;.
+Each of those expressions in brackets is &lt;span class="math inline"&gt;\(-1\)&lt;/span&gt;, because each time the number on the
+right is exactly one more than the number on the left. As before we have
+exactly 50 elements, so the result is &lt;span class="math inline"&gt;\((-1)
+\times 50 = -50\)&lt;/span&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;This is basically the same trick, but with a different grouping.&lt;/p&gt;
+
+
+&lt;p&gt;Mathematics doesn’t necessarily rely on knowing and spotting things
+like this, but it’s a very common part of mathematical practice.
+Sometimes they’re essential and you can’t figure out any other way to
+solve the problem without some sort of trick like this, but often
+they’re just a way of bypassing some tedious calculation or another.&lt;/p&gt;
+
+
+&lt;p&gt;Now, one problem with the way we solved this is that it doesn’t
+generalise all that well. For example, suppose I asked you to add up all
+the numbers between &lt;span class="math inline"&gt;\(1\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(101\)&lt;/span&gt;, how would you do it?&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Well you’d add 101 to 5050 and get 5151 of course,
+because you just worked out the sum from 1 to 100. But suppose you
+&lt;em&gt;hadn’t&lt;/em&gt; done that.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;The previous trick doesn’t work because it relied on there being an
+even number of values in the sum. If we tried to do the same thing as
+before we’d have to break the sum up as something like &lt;span class="math inline"&gt;\((1 + \ldots + 50) + 51 + (52 + \ldots
+101)\)&lt;/span&gt;, because there’s a number left over in the middle. We can
+then do the same pairing as before and get &lt;span class="math inline"&gt;\((1 + 101) + (2 + 100) + \ldots + (50 +
+52)\)&lt;/span&gt; for the paired sums, and the result is &lt;span class="math inline"&gt;\(51 + 102 \times 50 = 51 + 5100 = 5151\)&lt;/span&gt;.
+Which is, conveniently, &lt;span class="math inline"&gt;\(5050 + 101\)&lt;/span&gt;,
+so we’ve not messed up the calculation somewhere.&lt;/p&gt;
+
+
+&lt;p&gt;This works but is unsatisfying. In particular, let’s try to work it
+out for a general number &lt;span class="math inline"&gt;\(n\)&lt;/span&gt;. In
+order to do this as above, we’ll have to consider two special cases:
+First, let’s assume that &lt;span class="math inline"&gt;\(n\)&lt;/span&gt; is an
+even number. Let’s say &lt;span class="math inline"&gt;\(n = 2m\)&lt;/span&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Then we can write &lt;span class="math inline"&gt;\(1 + \ldots n = (1 +
+\ldots m) + ((m + 1) + \ldots n)\)&lt;/span&gt; as before, and use the same
+pairing trick to get &lt;span class="math inline"&gt;\((1 + n) + (2 + (n - 1))
++ \ldots (m + (m + 1))\)&lt;/span&gt;. As before, each of these individual
+bracketed expressions are always equal to &lt;span class="math inline"&gt;\(n
++ 1\)&lt;/span&gt;, and we have &lt;span class="math inline"&gt;\(m\)&lt;/span&gt; copies
+of the expression, so the answer is &lt;span class="math inline"&gt;\(m (n +
+1) = \frac{n (n + 1)}{2}\)&lt;/span&gt; (because &lt;span class="math inline"&gt;\(m
+= \frac{n}{2}\)&lt;/span&gt;).&lt;/p&gt;
+
+
+&lt;p&gt;Now, suppose &lt;span class="math inline"&gt;\(n\)&lt;/span&gt; is odd. We could
+repeat the pairing trick, but we can also use &lt;span class="math inline"&gt;\(1 + \ldots + n = (1 + \ldots + (n - 1)) +
+n\)&lt;/span&gt;, and if &lt;span class="math inline"&gt;\(n\)&lt;/span&gt; is odd then
+&lt;span class="math inline"&gt;\(n - 1\)&lt;/span&gt; is even, so we can use the
+previous expression for the sum when &lt;span class="math inline"&gt;\(n\)&lt;/span&gt; is even, plugging in &lt;span class="math inline"&gt;\(n - 1\)&lt;/span&gt; in place of the &lt;span class="math inline"&gt;\(n\)&lt;/span&gt;. This gives us &lt;span class="math inline"&gt;\(\frac{(n - 1)(n + 1 - 1)}{2} = \frac{(n -
+1)n}{2}\)&lt;/span&gt; for the sum up to &lt;span class="math inline"&gt;\(n -
+1\)&lt;/span&gt;, and thus &lt;span class="math inline"&gt;\(\frac{(n - 1)n}{2} +
+n\)&lt;/span&gt; for the whole sum.&lt;/p&gt;
+
+
+&lt;p&gt;Now, let’s make that expression a bit nicer. $ + n = = = $.&lt;/p&gt;
+
+
+&lt;p&gt;Something worth noting here is that although we had to handle the odd
+and even cases differently, we got the same expression out in both
+cases. This should make us a little suspicious that we’re missing
+something and that there’s a nicer proof here.&lt;/p&gt;
+
+
+&lt;p&gt;Another thing that should make us suspicious but that is actually
+fine is that the answer to this question should be an integer, as we’ve
+only added up integers, but we’ve got a fraction in the answer. It’s
+worth doing a sanity check that this is fine, but it is: Exactly one of
+&lt;span class="math inline"&gt;\(n\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(n
++ 1\)&lt;/span&gt; must be even (because if you add one to an even number you
+get an odd number, and vice versa), so the expression on top is always
+even, and dividing it by two gets you an even number.&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;It’s very easy to make mistakes in mathematics, so it’s
+good to have a habit of doing little cross checks like this where you
+look at the answer you came up with and ask if it could possibly be
+correct.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, there’s another trick, and that fraction is a clue. We made
+this work by pairing up numbers together, and there’s a 2 in the end, so
+perhaps we would find it easier to work out twice the answer than we do
+to work out the answer directly.&lt;/p&gt;
+
+
+&lt;p&gt;We can write &lt;span class="math inline"&gt;\(2 \times (1 + \ldots + n) =
+(1 + \ldots + n) + (1 + \ldots + n) = (1 + \ldots + n) + (n + \ldots +
+1) = (n + 1) + \ldots + (1 + n)\)&lt;/span&gt;. This gives us &lt;span class="math inline"&gt;\(n\)&lt;/span&gt; copies of &lt;span class="math inline"&gt;\(n
++ 1\)&lt;/span&gt;, so twice the answer is &lt;span class="math inline"&gt;\(n (n +
+1))\)&lt;/span&gt; and the answer is &lt;span class="math inline"&gt;\(\frac{n(n +
+1)}{2}\)&lt;/span&gt; as desired. This is a much neater proof, but I think a
+slightly harder trick to spot.&lt;/p&gt;
+
+
+&lt;p&gt;I think this is a good time to write some Greek.&lt;/p&gt;
+
+
+&lt;p&gt;We can write &lt;span class="math inline"&gt;\(\sum\limits_{i = 1}^n i =
+\sum\limits_{i = 1}^n (n + 1 - i)\)&lt;/span&gt;. This is basically “running
+the sum backwards” like we did above. The first element is &lt;span class="math inline"&gt;\(n + 1 - 1 = n\)&lt;/span&gt;, then &lt;span class="math inline"&gt;\(n + 1 - 2 = n - 1\)&lt;/span&gt;, etc. all the way to
+the end where it’s &lt;span class="math inline"&gt;\(n + 1 - n =
+1\)&lt;/span&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;This means that &lt;span class="math inline"&gt;\(2 \sum\limits_{i = 1}^n
+i  = \sum\limits_{i = 1}^n i + \sum\limits_{i = 1}^n i = \sum\limits_{i
+= 1}^n i + \sum\limits_{i = 1}^n (n + 1 - i)\)&lt;/span&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Now, because these sums are over the same range, we can group the
+expressions inside them together, so &lt;span class="math inline"&gt;\(2
+\sum\limits_{i = 1}^n i = \sum\limits_{i = 1}^n i + (n + 1 - i) =
+\sum\limits_{i = 1}^n (n + 1) = n (n + 1)\)&lt;/span&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;If you’re unused to dense mathematical notation this may not seem
+obviously clearer or better than the above, but it has the advantage of
+being compact and easy to manipulate, and it lets you result a lot of
+complex reasoning to fairly simple mechanical manipulation.&lt;/p&gt;
+
+
+&lt;p&gt;So now we’ve seen how to work out this answer. But why is it
+true?&lt;/p&gt;
+
+
+&lt;p&gt;This is another key feature of doing mathematics:&lt;label class="margin-toggle sidenote-number" for="fn5"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn5" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I wrote about this in &lt;a href="https://notebook.drmaciver.com/posts/2025-04-22-16:32.html"&gt;algebra
+and insight&lt;/a&gt; but that example only works if you’re already a
+moderately advanced mathematician.&lt;/span&gt;
+Often you should be unsatisfied with mere answers, and looking at the
+problem from another angle will help you really understand it.&lt;/p&gt;
+
+
+&lt;p&gt;Is this particular example worth really understanding? Well… probably
+not. I think if you find yourself doing a lot of this sort of sums&lt;label class="margin-toggle sidenote-number" for="fn6"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn6" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Applications include “being a mathematician in the early
+to mid 20th century”, “taking a maths exam”, “for the sheer joy of it”,
+and “if you do a really large amount of mathematics every now and then
+you will run into a case where you really do have a use for this and you
+will be so delighted that you’ll ignore how rusty you’ve got at it”.
+Also probably combinatorics or something like that.&lt;/span&gt;, it’s worth playing around with a
+lot of simple examples like this in order to get a really good intuition
+for how everything fits together.&lt;/p&gt;
+
+
+&lt;p&gt;But right now it’s worth really understanding this because it’s a
+nice illustrative example of the general mathematical phenomenon.&lt;/p&gt;
+
+
+&lt;p&gt;Imagine, or draw&lt;label class="margin-toggle sidenote-number" for="fn7"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn7" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I really should include a diagram here but I can’t be
+bothered, sorry. If you’re wondering how to draw &lt;span class="math inline"&gt;\(n\)&lt;/span&gt; boxes, the answer is you don’t you draw
+some fixed small number and assume that it generalises. This is why I
+don’t like visual proofs that much.&lt;/span&gt; the numbers as rows of blocks
+stacked on top of each other. On the bottom row you’ve got &lt;span class="math inline"&gt;\(n\)&lt;/span&gt; numbers, then &lt;span class="math inline"&gt;\(n - 1\)&lt;/span&gt;, and so on, until you’ve got &lt;span class="math inline"&gt;\(1\)&lt;/span&gt; block on the final row. The result is a
+sort of ragged triangle.&lt;/p&gt;
+
+
+&lt;p&gt;Now, take a copy of that, and flip it upside down, and stack it on
+top of the other one. The jagged edges will line up, and you’ll get a
+rectangle. How big is the rectangle? Well, it’s got &lt;span class="math inline"&gt;\(n\)&lt;/span&gt; items on the base, because that was
+your bottom row, and it’s &lt;span class="math inline"&gt;\(n + 1\)&lt;/span&gt;
+tall, because your triangle is &lt;span class="math inline"&gt;\(n\)&lt;/span&gt;
+tall and you had to stack an extra row on top. So there are &lt;span class="math inline"&gt;\(n(n + 1)\)&lt;/span&gt; blocks in the rectangle, of
+which exactly half must have come from our original triangle, so there
+were &lt;span class="math inline"&gt;\(\frac{n(n + 1)}{2}\)&lt;/span&gt; blocks in
+the original triangle, and &lt;span class="math inline"&gt;\(1 + \ldots + n =
+\frac{n(n + 1)}{2}\)&lt;/span&gt; as desired.&lt;/p&gt;
+
+
+&lt;p&gt;This is, in some sense, the same proof as we had before, but the
+geometrical representation of it seems helpful for people, and for more
+complicated examples it can be genuinely very useful.&lt;/p&gt;
+
+
+&lt;p&gt;Here is, I promise, one final&lt;label class="margin-toggle sidenote-number" for="fn8"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn8" type="checkbox"/&gt;&lt;span class="sidenote"&gt;For the purpose of this post I mean. There are
+infinitely many ways to do this, and at least several of the other ones
+are interesting in their own right.&lt;/span&gt; way to do it, which is
+also often useful: We take a guess, and prove that that guess was
+correct. For example, suppose that we guessed the answer was &lt;span class="math inline"&gt;\(\frac{n(n + 1)}{2}\)&lt;/span&gt;. How might we prove
+that we were right?&lt;/p&gt;
+
+
+&lt;p&gt;The answer is to use something called “proof by induction”&lt;label class="margin-toggle sidenote-number" for="fn9"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn9" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Any philosophers reading this, don’t panic! It’s a
+completely different meaning of the word “induction” that has nothing to
+do with the philosophical notion of induction.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;The way a proof by induction of some claim (your “induction
+property”) works is that you establish:&lt;/p&gt;
+
+
+&lt;ol type="1"&gt;
+&lt;li&gt;It’s true for &lt;span class="math inline"&gt;\(1\)&lt;/span&gt; (or anywhere
+else you want to start - your “base case”)&lt;/li&gt;
+&lt;li&gt;If it’s true for $n - 1) then it’s true for &lt;span class="math inline"&gt;\(n\)&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;And this is sufficient to prove that it’s true for every integer
+greater than or equal to your base case.&lt;/p&gt;
+
+
+&lt;p&gt;Why? Well, because of a proof by contradiction. A proof by
+contradiction is when you assume something that you’re not sure is true,
+work through the consequences, and conclude something false, which means
+your original assumption must be false.&lt;/p&gt;
+
+
+&lt;p&gt;To see that proof by induction works, assume the opposite: Suppose
+there were some &lt;span class="math inline"&gt;\(n\)&lt;/span&gt; for which the
+induction property were false. Then there must be some &lt;em&gt;smallest&lt;/em&gt;
+such &lt;span class="math inline"&gt;\(n\)&lt;/span&gt; for which the property is
+false. If so, then the property must be true for &lt;span class="math inline"&gt;\(n - 1\)&lt;/span&gt;, as the property holds for &lt;span class="math inline"&gt;\(1\)&lt;/span&gt;, so we must have &lt;span class="math inline"&gt;\(n &amp;gt; 1\)&lt;/span&gt; so &lt;span class="math inline"&gt;\(n
+- 1\)&lt;/span&gt; is still an integer greater than or equal to &lt;span class="math inline"&gt;\(1\)&lt;/span&gt;, and it’s smaller than &lt;span class="math inline"&gt;\(n\)&lt;/span&gt;, which we picked to be the smallest
+integer for which the property is false. But the second part of our
+induction conditions was that it’s true for &lt;span class="math inline"&gt;\(n - 1\)&lt;/span&gt; then it’s true for &lt;span class="math inline"&gt;\(n\)&lt;/span&gt;, which contradicts our claim that it
+was false for &lt;span class="math inline"&gt;\(n\)&lt;/span&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, proof by induction.&lt;/p&gt;
+
+
+&lt;p&gt;Our inductive property is that &lt;span class="math inline"&gt;\(\sigma\limits_{i = 1}^n i = \frac{n(n +
+1)}{2}\)&lt;/span&gt;. This is true for &lt;span class="math inline"&gt;\(1\)&lt;/span&gt;, you can just check that by calculating
+&lt;span class="math inline"&gt;\(\frac{2}{2}\)&lt;/span&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Suppose it’s true for &lt;span class="math inline"&gt;\(n - 1\)&lt;/span&gt;.
+That is, &lt;span class="math inline"&gt;\(\sigma\limits_{i = 1}^{n - 1} i =
+\frac{(n - 1)n}{2}\)&lt;/span&gt;. Then &lt;span class="math inline"&gt;\(\sigma\limits_{i = 1}^n i = n + \sigma\limits_{i =
+1}^{n - 1} i = n + \frac{n(n -1)}{2} = \frac{n(n + 1){2}\)&lt;/span&gt;.&lt;label class="margin-toggle sidenote-number" for="fn10"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn10" type="checkbox"/&gt;&lt;span class="sidenote"&gt;This is in fact the same calculation we did in the
+even/odd case above.&lt;/span&gt; So the property holds for &lt;span class="math inline"&gt;\(n\)&lt;/span&gt; as well, and the result is proved by
+induction.&lt;/p&gt;
+
+
+&lt;p&gt;This does, of course, invite the question of how on earth we would
+have made this guess if we didn’t already know the answer.&lt;/p&gt;
+
+
+&lt;p&gt;I think there are roughly three ways that can come about.&lt;/p&gt;
+
+
+&lt;p&gt;The first is that you can just look at the first couple elements of
+the sequence and try to puzzle out a formula that works. &lt;span class="math inline"&gt;\(1, 3, 6, 10, 15, \ldots\)&lt;/span&gt; seems plausible
+that there should be a factor of &lt;span class="math inline"&gt;\(n\)&lt;/span&gt;
+in there, so what happens if we divide by &lt;span class="math inline"&gt;\(n\)&lt;/span&gt;? We get &lt;span class="math inline"&gt;\(1,
+\frac{3}{2}, 2, \frac{5}{2}, 3, \ldots\)&lt;/span&gt;, so that looks like it’s
+going up by half each time, so &lt;span class="math inline"&gt;\(\frac{n +
+1}{2}\)&lt;/span&gt;, and that gives us our guess.&lt;/p&gt;
+
+
+&lt;p&gt;The second is that sometimes you just have a hunch. I think it would
+be weird to have a hunch in this case and not be able to spot the better
+proof, but in other cases it will often be the case. This is
+particularly true when think it’s true because of some sort of
+“heuristic argument” that doesn’t actually work rigorously, but does
+give you a pretty good idea of what the answer should be.&lt;label class="margin-toggle sidenote-number" for="fn11"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn11" type="checkbox"/&gt;&lt;span class="sidenote"&gt;This is particularly common when you’re trying to show
+something a bit weaker than strict equality, such as e.g. that some
+quantity never gets too large.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;The third common way is that you proved it another way first, but
+that proof was long and complicated or involved some advanced concepts
+you don’t want to introduce here, so you “guessed” in the sense that you
+already knew the right answer, but it was easier to prove it by
+induction than convince the reader of it another way.&lt;/p&gt;
+
+
+&lt;p&gt;OK, that’s enough adding numbers.&lt;/p&gt;
+
+
+&lt;p&gt;What should you take away from this post?&lt;/p&gt;
+
+
+&lt;p&gt;The first thing I’d like you to take away from it is a certain
+familiarity with the notation. Being able to read this sort of notation
+is entirely essential if you’re to read any mathematics at all.
+Mathematics is built on notation, and the notation I’ve used here is
+very common.&lt;/p&gt;
+
+
+&lt;p&gt;Another thing I’d like you to take away from this is that there are
+many ways to get the answer &lt;em&gt;and they all get the same answer&lt;/em&gt;.
+There isn’t a single right way to do it, and there can’t be. Mathematics
+is a discipline built on solving problems, and if there were always a
+single correct way to do it, every problem would be trivial. Doing
+mathematics is about developing facility with mathematical problems, and
+getting a sense of how to solve them.&lt;/p&gt;
+
+
+&lt;p&gt;Another is that figuring out which mathematical tool to use is a
+skilled practice like any other - through repeated encounters with
+mathematics you develop intuitions about what works and what to try.&lt;/p&gt;
+
+
+&lt;p&gt;Reading other people’s mathematics is a good way to start with this
+but importantly the proof that people show you is often not the proof
+they used to come up with the idea. This means that often when reading
+someone’s proof you will have some reaction like “Oh, that’s clever, but
+I have no idea how you’d come up with that.” or “What the fuck is going
+on here? I have no intuition for any of this”. If you’re lucky you can
+just ask them how they came up with it, but if not then I think it’s
+worth trying to prove it yourself by figuring out how all the different
+pieces fit together and see how you’d do it for yourself.&lt;/p&gt;
+
+
+&lt;p&gt;One reason these multiple avenues of proof are important is that
+mathematics is not &lt;em&gt;just&lt;/em&gt; a discipline of problem solving, it’s a
+discipline of concept formation, and one of the things that drives
+concepts is developing a certain aesthetic sense and desire for
+intuition around the problems you solve. Many concepts are discovered
+because you look at a proof and go “I don’t like that proof. Can I do
+better?”&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2025-04-24-10:00.html" rel="alternate"/>
   </entry>
 </feed>

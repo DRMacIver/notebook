@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+DRMacIver's Notebook: A brief introduction to mathematics with one example many times
+    </title>
+
+    <meta property="og:title" content="A brief introduction to mathematics with one example many times">
+
+    <meta property="og:url" content="https://notebook.drmaciver.com/posts/2025-04-24-10:00.html" />
+    <link rel="canonical" href="https://notebook.drmaciver.com/posts/2025-04-24-10:00.html" />
+    <script src="https://hypothes.is/embed.js" async></script>
+
+
+    <meta name="twitter:card" content="summary" />
+
+    <meta property="og:creator" content="@DRMacIver">
+
+    <link rel="stylesheet" href="/pandoc.css"/>
+    <link rel="stylesheet" href="/pygments.css"/>
+    <link rel="stylesheet" href="/tufte.css"/>
+    <link rel="stylesheet" href="/latex.css"/>
+    <link rel="stylesheet" href="/drmnotes.css"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
+});
+
+MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
+  console.log(message)
+});
+
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169185204-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169185204-1');
+</script>
+
+  </head>
+
+  <body>
+    <article>
+        <h1><a href="/">DRMacIver's Notebook</a></h1>
+        <p class=subtitle>A brief introduction to mathematics with one example many times</p>
+
+        
+
+<section id="the-post">
+<p class=subtitle>A brief introduction to mathematics with one example many times</p>
+<dl class=metadata>
+<dt>Published</dt>
+<dd class="post-date">2025-04-24</dd>
+</dl>
+
+<p>There’s a story repeated so often that it’s a cliche of <a href="https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss">Gauss</a>’s
+mathematics teacher setting the class the task of adding up the numbers
+1 to 100, supposedly to waste their time and give them a break, only for
+Gauss to almost immediately give the correct answer.</p>
+<p>I think it’s a usefully illustrative example to look at for learning
+some of the basics of mathematics. Partly this is because it illustrates
+one of the key uses and methods of mathematics: Getting an answer that
+you could in theory work out laboriously much faster through logical
+deducation.</p>
+<p>Mostly, though, I’m going to use it to showcase a bunch of different
+ways of thinking through a mathematical problem, and use it to teach
+some common mathematical notation.</p>
+<p>So, let’s figure out how to do this.</p>
+<p>The first thing we need to figure out is to how to write it down.
+Here are two obvious ways:</p>
+<ol type="1">
+<li>“The sum of all numbers from 1 to 100.”</li>
+<li><span class="math inline">\(1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 +
+11 + 12 + 13 + 14 + 15 + 16 + 17 + 18 + 19 + 20 + 21 + 22 + 23 + 24 + 25
++ 26 + 27 + 28 + 29 + 30 + 31 + 32 + 33 + 34 + 35 + 36 + 37 + 38 + 39 +
+40 + 41 + 42 + 43 + 44 + 45 + 46 + 47 + 48 + 49 + 50 + 51 + 52 + 53 + 54
++ 55 + 56 + 57 + 58 + 59 + 60 + 61 + 62 + 63 + 64 + 65 + 66 + 67 + 68 +
+69 + 70 + 71 + 72 + 73 + 74 + 75 + 76 + 77 + 78 + 79 + 80 + 81 + 82 + 83
++ 84 + 85 + 86 + 87 + 88 + 89 + 90 + 91 + 92 + 93 + 94 + 95 + 96 + 97 +
+98 + 99 + 100\)</span></li>
+</ol>
+<p>Neither of these are actually very good.</p>
+<p>One of the first lessons of doing mathematics: A lot of mathematics
+is about developing good notation for representing the problem. The
+problem with the first, plain English, one is that it’s hard to
+manipulate. We want to be able to do algebra with it, and it’s hard to
+do algebra with plain English language. Modern mathematics owes a lot to
+<a href="https://en.wikipedia.org/wiki/Robert_Recorde">Robert
+Recorde</a> for giving us the equals sign (and popularising the plus and
+minus signs), because trying to manipulate sums with plain English
+language is an absolute pain.</p>
+<p>The second one is bad for two main reasons:</p>
+<ol type="1">
+<li>It’s very clunky and unwieldy. If you’re going to be repeating the
+expression a lot, you don’t want to write that out over and over again.
+Also, are you sure you’re reading it correctly? Would you have noticed
+if I’d dropped 31 from the middle, or repeated 23 twice?</li>
+<li>It doesn’t generalise well. Suppose we wanted instead to add up all
+the numbers from 1 to 50, or 1 to 1000, we’d have to write an entirely
+new expression for it. There’s no way to do algebra where the end point
+is variable with this expression.</li>
+</ol>
+<p>So let me give you two other ways to write it:</p>
+<ol type="1">
+<li><span class="math inline">\(1 + \ldots + 100\)</span></li>
+<li><span class="math inline">\(\sum\limits_{i = 1}^{100}
+i\)</span></li>
+</ol>
+<p>In the first, the <span class="math inline">\(\ldots\)</span> just
+means “and so on”. You’re expected to figure out what it means from
+context, but you’re also expected not to write it unless it’s obvious
+from context what you mean. If we’d wanted to make it a bit more obvious
+we could have written it <span class="math inline">\(1 + 2 + \ldots + 99
++ 100\)</span>.</p>
+<p>The second is a much more precise notation and looks completely
+inscrutable when you first encounter it, but has a fairly
+straightforward meaning: The <span class="math inline">\(\sum\)</span>
+represents a sum of an expression, where the expression references a
+variable <span class="math inline">\(i\)</span> that varies over some
+range. The <span class="math inline">\(i = 1\)</span> at the bottom
+indicates that the sum is over a range of values of <span class="math inline">\(i\)</span> starting with <span class="math inline">\(1\)</span>, and the <span class="math inline">\(100\)</span> at the top indicates that <span class="math inline">\(100\)</span> is the last element. The <span class="math inline">\(i\)</span> to the right means that the expression
+we are summing is <span class="math inline">\(i\)</span>.</p>
+<p>So, for example, <span class="math inline">\(\sum\limits_{i = 1}^3 i
+= 1 + 2 + 3\)</span>, or <span class="math inline">\(\sum\limits_{i =
+2}^3 i^2 = 2^2 + 3^2\)</span>.</p>
+<p>The <span class="math inline">\(\sum\)</span> notation is very
+convenient because it allows us to compactly represent complicated
+expressions. It’s also useful for making generalisations. e.g. if we
+wanted to work out the answer to this for any number, we could write
+<span class="math inline">\(\sum\limits_{i=1}^n i\)</span> to indicate
+that the end point is an arbitrary integer <span class="math inline">\(n\)</span>.<label class="margin-toggle sidenote-number" for="fn1"></label><input class="margin-toggle" id="fn1" type="checkbox"/><span class="sidenote">There are some implicit notational conventions here by
+the way. <span class="math inline">\(i\)</span> is usually an index
+variable. <span class="math inline">\(i\)</span> and <span class="math inline">\(n\)</span> are both expected to be integers by
+that choice. This isn’t required, but it’s conventional. However, you
+would only ever use integers as sum indexed or bounds like this, and
+that’s not conventional, it doesn’t really make sense to use
+non-integers here.</span></p>
+<p>To start with though, we’ll keep working with the <span class="math inline">\(\ldots\)</span> notation.</p>
+<p>Now, let’s solve the problem.</p>
+<p>We can write <span class="math inline">\(1 + \ldots + 100\)</span> as
+<span class="math inline">\((1 + \ldots 50) + (51 + \ldots
+100)\)</span>, because we can break up the sum however we like.<label class="margin-toggle sidenote-number" for="fn2"></label><input class="margin-toggle" id="fn2" type="checkbox"/><span class="sidenote">Technically speaking we are using what’s called the
+associativity rule of addition here.</span></p>
+<p>We can also reverse a sum if we want, so we could write the second
+one equally well as <span class="math inline">\(100 + \ldots +
+51\)</span>.</p>
+<p>Now, there are exactly 50 elements in each sum, so we can pair them
+up and rearrange the sum as follows. <span class="math inline">\((1 +
+100) + (2 + 99) + \ldots + (49 + 52) + (50 + 51)\)</span>. Now, notice
+that each of these terms adds up to exactly 101. You can check that
+<span class="math inline">\(1 + 100 = 101, 2 + 99 = 101\)</span> etc but
+you can also this because each time you move right, you add one to the
+first term and subtract one from the second, so the value stays
+constant. This means that this sum is exactly 50 copies of 101, so the
+sum is <span class="math inline">\(50 \times 101 = 5050\)</span>.</p>
+<p>I think a pretty reasonable question for you to ask at this point is
+how on earth you’re expected to come up with a trick like that. If
+you’ve seen this problem before it’s old hat, but if you had to come up
+with it on the spot, how would you do that?</p>
+<p>The honest answer is I don’t know. A lot of things like this you just
+figure out by fiddling with the problem and getting an instinct for what
+works. This sort of approach is what I think of as a “trick”, and
+sometimes you spot the trick which lets you massively simplify the
+problem, and sometimes you don’t. As you do more mathematics, you
+develop both a familiar bag of tricks, and you learn to apply them in
+new circumstances. The trick here is something like “try grouping
+different parts of the sum together to see if they add up to something
+convenient”.</p>
+<p>For example, here’s another way you could use a similar trick.
+Suppose I asked you to calculate <span class="math inline">\(1 - 2 + 3 -
+4 + \ldots + 99 - 100\)</span> (you could also write this as <span class="math inline">\(\sum\limits_{i = 1}^{100} (-1)^{i - 1} i\)</span>
+) - that is, it’s the same sum as before, but this time the signs
+alternate between positive and negative.</p>
+<p>Well, here you could group it as follows: <span class="math inline">\((1 - 2) + (3 - 4) + \ldots + (99 - 100)\)</span>.
+Each of those expressions in brackets is <span class="math inline">\(-1\)</span>, because each time the number on the
+right is exactly one more than the number on the left. As before we have
+exactly 50 elements, so the result is <span class="math inline">\((-1)
+\times 50 = -50\)</span>.</p>
+<p>This is basically the same trick, but with a different grouping.</p>
+<p>Mathematics doesn’t necessarily rely on knowing and spotting things
+like this, but it’s a very common part of mathematical practice.
+Sometimes they’re essential and you can’t figure out any other way to
+solve the problem without some sort of trick like this, but often
+they’re just a way of bypassing some tedious calculation or another.</p>
+<p>Now, one problem with the way we solved this is that it doesn’t
+generalise all that well. For example, suppose I asked you to add up all
+the numbers between <span class="math inline">\(1\)</span> and <span class="math inline">\(101\)</span>, how would you do it?<label class="margin-toggle sidenote-number" for="fn3"></label><input class="margin-toggle" id="fn3" type="checkbox"/><span class="sidenote">Well you’d add 101 to 5050 and get 5151 of course,
+because you just worked out the sum from 1 to 100. But suppose you
+<em>hadn’t</em> done that.</span></p>
+<p>The previous trick doesn’t work because it relied on there being an
+even number of values in the sum. If we tried to do the same thing as
+before we’d have to break the sum up as something like <span class="math inline">\((1 + \ldots + 50) + 51 + (52 + \ldots
+101)\)</span>, because there’s a number left over in the middle. We can
+then do the same pairing as before and get <span class="math inline">\((1 + 101) + (2 + 100) + \ldots + (50 +
+52)\)</span> for the paired sums, and the result is <span class="math inline">\(51 + 102 \times 50 = 51 + 5100 = 5151\)</span>.
+Which is, conveniently, <span class="math inline">\(5050 + 101\)</span>,
+so we’ve not messed up the calculation somewhere.</p>
+<p>This works but is unsatisfying. In particular, let’s try to work it
+out for a general number <span class="math inline">\(n\)</span>. In
+order to do this as above, we’ll have to consider two special cases:
+First, let’s assume that <span class="math inline">\(n\)</span> is an
+even number. Let’s say <span class="math inline">\(n = 2m\)</span>.</p>
+<p>Then we can write <span class="math inline">\(1 + \ldots n = (1 +
+\ldots m) + ((m + 1) + \ldots n)\)</span> as before, and use the same
+pairing trick to get <span class="math inline">\((1 + n) + (2 + (n - 1))
++ \ldots (m + (m + 1))\)</span>. As before, each of these individual
+bracketed expressions are always equal to <span class="math inline">\(n
++ 1\)</span>, and we have <span class="math inline">\(m\)</span> copies
+of the expression, so the answer is <span class="math inline">\(m (n +
+1) = \frac{n (n + 1)}{2}\)</span> (because <span class="math inline">\(m
+= \frac{n}{2}\)</span>).</p>
+<p>Now, suppose <span class="math inline">\(n\)</span> is odd. We could
+repeat the pairing trick, but we can also use <span class="math inline">\(1 + \ldots + n = (1 + \ldots + (n - 1)) +
+n\)</span>, and if <span class="math inline">\(n\)</span> is odd then
+<span class="math inline">\(n - 1\)</span> is even, so we can use the
+previous expression for the sum when <span class="math inline">\(n\)</span> is even, plugging in <span class="math inline">\(n - 1\)</span> in place of the <span class="math inline">\(n\)</span>. This gives us <span class="math inline">\(\frac{(n - 1)(n + 1 - 1)}{2} = \frac{(n -
+1)n}{2}\)</span> for the sum up to <span class="math inline">\(n -
+1\)</span>, and thus <span class="math inline">\(\frac{(n - 1)n}{2} +
+n\)</span> for the whole sum.</p>
+<p>Now, let’s make that expression a bit nicer. $ + n = = = $.</p>
+<p>Something worth noting here is that although we had to handle the odd
+and even cases differently, we got the same expression out in both
+cases. This should make us a little suspicious that we’re missing
+something and that there’s a nicer proof here.</p>
+<p>Another thing that should make us suspicious but that is actually
+fine is that the answer to this question should be an integer, as we’ve
+only added up integers, but we’ve got a fraction in the answer. It’s
+worth doing a sanity check that this is fine, but it is: Exactly one of
+<span class="math inline">\(n\)</span> and <span class="math inline">\(n
++ 1\)</span> must be even (because if you add one to an even number you
+get an odd number, and vice versa), so the expression on top is always
+even, and dividing it by two gets you an even number.<label class="margin-toggle sidenote-number" for="fn4"></label><input class="margin-toggle" id="fn4" type="checkbox"/><span class="sidenote">It’s very easy to make mistakes in mathematics, so it’s
+good to have a habit of doing little cross checks like this where you
+look at the answer you came up with and ask if it could possibly be
+correct.</span></p>
+<p>Anyway, there’s another trick, and that fraction is a clue. We made
+this work by pairing up numbers together, and there’s a 2 in the end, so
+perhaps we would find it easier to work out twice the answer than we do
+to work out the answer directly.</p>
+<p>We can write <span class="math inline">\(2 \times (1 + \ldots + n) =
+(1 + \ldots + n) + (1 + \ldots + n) = (1 + \ldots + n) + (n + \ldots +
+1) = (n + 1) + \ldots + (1 + n)\)</span>. This gives us <span class="math inline">\(n\)</span> copies of <span class="math inline">\(n
++ 1\)</span>, so twice the answer is <span class="math inline">\(n (n +
+1))\)</span> and the answer is <span class="math inline">\(\frac{n(n +
+1)}{2}\)</span> as desired. This is a much neater proof, but I think a
+slightly harder trick to spot.</p>
+<p>I think this is a good time to write some Greek.</p>
+<p>We can write <span class="math inline">\(\sum\limits_{i = 1}^n i =
+\sum\limits_{i = 1}^n (n + 1 - i)\)</span>. This is basically “running
+the sum backwards” like we did above. The first element is <span class="math inline">\(n + 1 - 1 = n\)</span>, then <span class="math inline">\(n + 1 - 2 = n - 1\)</span>, etc. all the way to
+the end where it’s <span class="math inline">\(n + 1 - n =
+1\)</span>.</p>
+<p>This means that <span class="math inline">\(2 \sum\limits_{i = 1}^n
+i  = \sum\limits_{i = 1}^n i + \sum\limits_{i = 1}^n i = \sum\limits_{i
+= 1}^n i + \sum\limits_{i = 1}^n (n + 1 - i)\)</span>.</p>
+<p>Now, because these sums are over the same range, we can group the
+expressions inside them together, so <span class="math inline">\(2
+\sum\limits_{i = 1}^n i = \sum\limits_{i = 1}^n i + (n + 1 - i) =
+\sum\limits_{i = 1}^n (n + 1) = n (n + 1)\)</span>.</p>
+<p>If you’re unused to dense mathematical notation this may not seem
+obviously clearer or better than the above, but it has the advantage of
+being compact and easy to manipulate, and it lets you result a lot of
+complex reasoning to fairly simple mechanical manipulation.</p>
+<p>So now we’ve seen how to work out this answer. But why is it
+true?</p>
+<p>This is another key feature of doing mathematics:<label class="margin-toggle sidenote-number" for="fn5"></label><input class="margin-toggle" id="fn5" type="checkbox"/><span class="sidenote">I wrote about this in <a href="https://notebook.drmaciver.com/posts/2025-04-22-16:32.html">algebra
+and insight</a> but that example only works if you’re already a
+moderately advanced mathematician.</span>
+Often you should be unsatisfied with mere answers, and looking at the
+problem from another angle will help you really understand it.</p>
+<p>Is this particular example worth really understanding? Well… probably
+not. I think if you find yourself doing a lot of this sort of sums<label class="margin-toggle sidenote-number" for="fn6"></label><input class="margin-toggle" id="fn6" type="checkbox"/><span class="sidenote">Applications include “being a mathematician in the early
+to mid 20th century”, “taking a maths exam”, “for the sheer joy of it”,
+and “if you do a really large amount of mathematics every now and then
+you will run into a case where you really do have a use for this and you
+will be so delighted that you’ll ignore how rusty you’ve got at it”.
+Also probably combinatorics or something like that.</span>, it’s worth playing around with a
+lot of simple examples like this in order to get a really good intuition
+for how everything fits together.</p>
+<p>But right now it’s worth really understanding this because it’s a
+nice illustrative example of the general mathematical phenomenon.</p>
+<p>Imagine, or draw<label class="margin-toggle sidenote-number" for="fn7"></label><input class="margin-toggle" id="fn7" type="checkbox"/><span class="sidenote">I really should include a diagram here but I can’t be
+bothered, sorry. If you’re wondering how to draw <span class="math inline">\(n\)</span> boxes, the answer is you don’t you draw
+some fixed small number and assume that it generalises. This is why I
+don’t like visual proofs that much.</span> the numbers as rows of blocks
+stacked on top of each other. On the bottom row you’ve got <span class="math inline">\(n\)</span> numbers, then <span class="math inline">\(n - 1\)</span>, and so on, until you’ve got <span class="math inline">\(1\)</span> block on the final row. The result is a
+sort of ragged triangle.</p>
+<p>Now, take a copy of that, and flip it upside down, and stack it on
+top of the other one. The jagged edges will line up, and you’ll get a
+rectangle. How big is the rectangle? Well, it’s got <span class="math inline">\(n\)</span> items on the base, because that was
+your bottom row, and it’s <span class="math inline">\(n + 1\)</span>
+tall, because your triangle is <span class="math inline">\(n\)</span>
+tall and you had to stack an extra row on top. So there are <span class="math inline">\(n(n + 1)\)</span> blocks in the rectangle, of
+which exactly half must have come from our original triangle, so there
+were <span class="math inline">\(\frac{n(n + 1)}{2}\)</span> blocks in
+the original triangle, and <span class="math inline">\(1 + \ldots + n =
+\frac{n(n + 1)}{2}\)</span> as desired.</p>
+<p>This is, in some sense, the same proof as we had before, but the
+geometrical representation of it seems helpful for people, and for more
+complicated examples it can be genuinely very useful.</p>
+<p>Here is, I promise, one final<label class="margin-toggle sidenote-number" for="fn8"></label><input class="margin-toggle" id="fn8" type="checkbox"/><span class="sidenote">For the purpose of this post I mean. There are
+infinitely many ways to do this, and at least several of the other ones
+are interesting in their own right.</span> way to do it, which is
+also often useful: We take a guess, and prove that that guess was
+correct. For example, suppose that we guessed the answer was <span class="math inline">\(\frac{n(n + 1)}{2}\)</span>. How might we prove
+that we were right?</p>
+<p>The answer is to use something called “proof by induction”<label class="margin-toggle sidenote-number" for="fn9"></label><input class="margin-toggle" id="fn9" type="checkbox"/><span class="sidenote">Any philosophers reading this, don’t panic! It’s a
+completely different meaning of the word “induction” that has nothing to
+do with the philosophical notion of induction.</span></p>
+<p>The way a proof by induction of some claim (your “induction
+property”) works is that you establish:</p>
+<ol type="1">
+<li>It’s true for <span class="math inline">\(1\)</span> (or anywhere
+else you want to start - your “base case”)</li>
+<li>If it’s true for $n - 1) then it’s true for <span class="math inline">\(n\)</span></li>
+</ol>
+<p>And this is sufficient to prove that it’s true for every integer
+greater than or equal to your base case.</p>
+<p>Why? Well, because of a proof by contradiction. A proof by
+contradiction is when you assume something that you’re not sure is true,
+work through the consequences, and conclude something false, which means
+your original assumption must be false.</p>
+<p>To see that proof by induction works, assume the opposite: Suppose
+there were some <span class="math inline">\(n\)</span> for which the
+induction property were false. Then there must be some <em>smallest</em>
+such <span class="math inline">\(n\)</span> for which the property is
+false. If so, then the property must be true for <span class="math inline">\(n - 1\)</span>, as the property holds for <span class="math inline">\(1\)</span>, so we must have <span class="math inline">\(n &gt; 1\)</span> so <span class="math inline">\(n
+- 1\)</span> is still an integer greater than or equal to <span class="math inline">\(1\)</span>, and it’s smaller than <span class="math inline">\(n\)</span>, which we picked to be the smallest
+integer for which the property is false. But the second part of our
+induction conditions was that it’s true for <span class="math inline">\(n - 1\)</span> then it’s true for <span class="math inline">\(n\)</span>, which contradicts our claim that it
+was false for <span class="math inline">\(n\)</span>.</p>
+<p>Anyway, proof by induction.</p>
+<p>Our inductive property is that <span class="math inline">\(\sigma\limits_{i = 1}^n i = \frac{n(n +
+1)}{2}\)</span>. This is true for <span class="math inline">\(1\)</span>, you can just check that by calculating
+<span class="math inline">\(\frac{2}{2}\)</span>.</p>
+<p>Suppose it’s true for <span class="math inline">\(n - 1\)</span>.
+That is, <span class="math inline">\(\sigma\limits_{i = 1}^{n - 1} i =
+\frac{(n - 1)n}{2}\)</span>. Then <span class="math inline">\(\sigma\limits_{i = 1}^n i = n + \sigma\limits_{i =
+1}^{n - 1} i = n + \frac{n(n -1)}{2} = \frac{n(n + 1){2}\)</span>.<label class="margin-toggle sidenote-number" for="fn10"></label><input class="margin-toggle" id="fn10" type="checkbox"/><span class="sidenote">This is in fact the same calculation we did in the
+even/odd case above.</span> So the property holds for <span class="math inline">\(n\)</span> as well, and the result is proved by
+induction.</p>
+<p>This does, of course, invite the question of how on earth we would
+have made this guess if we didn’t already know the answer.</p>
+<p>I think there are roughly three ways that can come about.</p>
+<p>The first is that you can just look at the first couple elements of
+the sequence and try to puzzle out a formula that works. <span class="math inline">\(1, 3, 6, 10, 15, \ldots\)</span> seems plausible
+that there should be a factor of <span class="math inline">\(n\)</span>
+in there, so what happens if we divide by <span class="math inline">\(n\)</span>? We get <span class="math inline">\(1,
+\frac{3}{2}, 2, \frac{5}{2}, 3, \ldots\)</span>, so that looks like it’s
+going up by half each time, so <span class="math inline">\(\frac{n +
+1}{2}\)</span>, and that gives us our guess.</p>
+<p>The second is that sometimes you just have a hunch. I think it would
+be weird to have a hunch in this case and not be able to spot the better
+proof, but in other cases it will often be the case. This is
+particularly true when think it’s true because of some sort of
+“heuristic argument” that doesn’t actually work rigorously, but does
+give you a pretty good idea of what the answer should be.<label class="margin-toggle sidenote-number" for="fn11"></label><input class="margin-toggle" id="fn11" type="checkbox"/><span class="sidenote">This is particularly common when you’re trying to show
+something a bit weaker than strict equality, such as e.g. that some
+quantity never gets too large.</span></p>
+<p>The third common way is that you proved it another way first, but
+that proof was long and complicated or involved some advanced concepts
+you don’t want to introduce here, so you “guessed” in the sense that you
+already knew the right answer, but it was easier to prove it by
+induction than convince the reader of it another way.</p>
+<p>OK, that’s enough adding numbers.</p>
+<p>What should you take away from this post?</p>
+<p>The first thing I’d like you to take away from it is a certain
+familiarity with the notation. Being able to read this sort of notation
+is entirely essential if you’re to read any mathematics at all.
+Mathematics is built on notation, and the notation I’ve used here is
+very common.</p>
+<p>Another thing I’d like you to take away from this is that there are
+many ways to get the answer <em>and they all get the same answer</em>.
+There isn’t a single right way to do it, and there can’t be. Mathematics
+is a discipline built on solving problems, and if there were always a
+single correct way to do it, every problem would be trivial. Doing
+mathematics is about developing facility with mathematical problems, and
+getting a sense of how to solve them.</p>
+<p>Another is that figuring out which mathematical tool to use is a
+skilled practice like any other - through repeated encounters with
+mathematics you develop intuitions about what works and what to try.</p>
+<p>Reading other people’s mathematics is a good way to start with this
+but importantly the proof that people show you is often not the proof
+they used to come up with the idea. This means that often when reading
+someone’s proof you will have some reaction like “Oh, that’s clever, but
+I have no idea how you’d come up with that.” or “What the fuck is going
+on here? I have no intuition for any of this”. If you’re lucky you can
+just ask them how they came up with it, but if not then I think it’s
+worth trying to prove it yourself by figuring out how all the different
+pieces fit together and see how you’d do it for yourself.</p>
+<p>One reason these multiple avenues of proof are important is that
+mathematics is not <em>just</em> a discipline of problem solving, it’s a
+discipline of concept formation, and one of the things that drives
+concepts is developing a certain aesthetic sense and desire for
+intuition around the problems you solve. Many concepts are discovered
+because you look at a proof and go “I don’t like that proof. Can I do
+better?”</p>
+
+
+</section>
+
+    </article>
+<footer>
+Copyright David R. MacIver.
+
+CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
+</footer>
+  </body>
+</html>
