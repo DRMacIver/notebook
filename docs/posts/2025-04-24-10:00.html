@@ -350,12 +350,12 @@ integer for which the property is false. But the second part of our
 induction conditions was that it’s true for <span class="math inline">\(n - 1\)</span> then it’s true for <span class="math inline">\(n\)</span>, which contradicts our claim that it
 was false for <span class="math inline">\(n\)</span>.</p>
 <p>Anyway, proof by induction.</p>
-<p>Our inductive property is that <span class="math inline">\(\sigma\limits_{i = 1}^n i = \frac{n(n +
+<p>Our inductive property is that <span class="math inline">\(\sum\limits_{i = 1}^n i = \frac{n(n +
 1)}{2}\)</span>. This is true for <span class="math inline">\(1\)</span>, you can just check that by calculating
 <span class="math inline">\(\frac{2}{2}\)</span>.</p>
 <p>Suppose it’s true for <span class="math inline">\(n - 1\)</span>.
-That is, <span class="math inline">\(\sigma\limits_{i = 1}^{n - 1} i =
-\frac{(n - 1)n}{2}\)</span>. Then <span class="math inline">\(\sigma\limits_{i = 1}^n i = n + \sigma\limits_{i =
+That is, <span class="math inline">\(\sum\limits_{i = 1}^{n - 1} i =
+\frac{(n - 1)n}{2}\)</span>. Then <span class="math inline">\(\sum\limits_{i = 1}^n i = n + \sum\limits_{i =
 1}^{n - 1} i = n + \frac{n(n -1)}{2} = \frac{n(n + 1){2}\)</span>.<label class="margin-toggle sidenote-number" for="fn10"></label><input class="margin-toggle" id="fn10" type="checkbox"/><span class="sidenote">This is in fact the same calculation we did in the
 even/odd case above.</span> So the property holds for <span class="math inline">\(n\)</span> as well, and the result is proved by
 induction.</p>
