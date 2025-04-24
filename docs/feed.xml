@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-04-24T13:44:07+01:00</updated>
+  <updated>2025-04-24T13:44:46+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1158,7 +1158,7 @@ research and development area, so we’ll see how that goes.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-24-10:00.html</id>
     <title>A brief introduction to mathematics with one example many times</title>
-    <updated>2025-04-24T13:44:07+01:00</updated>
+    <updated>2025-04-24T13:44:46+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;A brief introduction to mathematics with one example many times&lt;/p&gt;
@@ -1567,10 +1567,18 @@ was false for &lt;span class="math inline"&gt;\(n\)&lt;/span&gt;.&lt;/p&gt;
 
 &lt;p&gt;Suppose it’s true for &lt;span class="math inline"&gt;\(n - 1\)&lt;/span&gt;.
 That is, &lt;span class="math inline"&gt;\(\sum\limits_{i = 1}^{n - 1} i =
-\frac{(n - 1)n}{2}\)&lt;/span&gt;. Then &lt;span class="math inline"&gt;\(\sum\limits_{i = 1}^n i = n + \sum\limits_{i =
-1}^{n - 1} i = n + \frac{n(n -1)}{2} = \frac{n(n + 1){2}\)&lt;/span&gt; .&lt;label class="margin-toggle sidenote-number" for="fn10"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn10" type="checkbox"/&gt;&lt;span class="sidenote"&gt;This is in fact the same calculation we did in the
-even/odd case above.&lt;/span&gt; So the property holds for &lt;span class="math inline"&gt;\(n\)&lt;/span&gt; as well, and the result is proved by
-induction.&lt;/p&gt;
+\frac{(n - 1)n}{2}\)&lt;/span&gt;. Then&lt;label class="margin-toggle sidenote-number" for="fn10"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn10" type="checkbox"/&gt;&lt;span class="sidenote"&gt;This is in fact the same calculation we did in the
+even/odd case above.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;[&lt;span class="math display"&gt;\[\begin{align*}
+\sum\limits_{i = 1}^n i &amp;amp; = n + \sum\limits_{i = 1}^{n - 1} i \\
+&amp;amp; = n + \frac{n(n -1)}{2} = \frac{n(n + 1){2}
+\end{align*}\]&lt;/span&gt;]&lt;/p&gt;
+
+
+&lt;p&gt;So the property holds for &lt;span class="math inline"&gt;\(n\)&lt;/span&gt; as
+well, and the result is proved by induction.&lt;/p&gt;
 
 
 &lt;p&gt;This does, of course, invite the question of how on earth we would
