@@ -39,7 +39,11 @@ MathJax.Hub.Config({
   },
   SVG: { 
        linebreaks: { automatic: true } 
+  },
+  CommonHTML: {
+    linebreaks: {automatic: true}
   }
+}
 });
 
 MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
