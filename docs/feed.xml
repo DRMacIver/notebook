@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-04-24T13:49:04+01:00</updated>
+  <updated>2025-04-24T13:49:31+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1158,7 +1158,7 @@ research and development area, so we’ll see how that goes.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-24-10:00.html</id>
     <title>A brief introduction to mathematics with one example many times</title>
-    <updated>2025-04-24T13:49:04+01:00</updated>
+    <updated>2025-04-24T13:49:31+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;A brief introduction to mathematics with one example many times&lt;/p&gt;
@@ -1429,11 +1429,11 @@ to work out the answer directly.&lt;/p&gt;
 &lt;p&gt;We can write&lt;/p&gt;
 
 
-&lt;p&gt;$ &lt;span class="math display"&gt;\[\begin{align*}
+&lt;p&gt;&lt;span class="math display"&gt;\[\begin{align*}
 2 \times (1 + \ldots + n) &amp;amp; = (1 + \ldots + n) + (1 + \ldots + n) \\
 &amp;amp; = (1 + \ldots + n) + (n + \ldots + 1) \\
 &amp;amp; = (n + 1) + \ldots + (1 + n) \\
-\end{align*}\]&lt;/span&gt; $&lt;/p&gt;
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
 
 
 &lt;p&gt;This gives us &lt;span class="math inline"&gt;\(n\)&lt;/span&gt; copies of &lt;span class="math inline"&gt;\(n + 1\)&lt;/span&gt;, so twice the answer is &lt;span class="math inline"&gt;\(n (n + 1))\)&lt;/span&gt; and the answer is &lt;span class="math inline"&gt;\(\frac{n(n + 1)}{2}\)&lt;/span&gt; as desired. This is a
