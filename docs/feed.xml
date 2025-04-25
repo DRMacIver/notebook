@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-04-25T14:19:44+01:00</updated>
+  <updated>2025-04-25T14:20:04+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1529,7 +1529,7 @@ better?”&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-25-13:33.html</id>
     <title>Using generating functions to work out sums</title>
-    <updated>2025-04-25T14:19:44+01:00</updated>
+    <updated>2025-04-25T14:20:04+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Using generating functions to work out sums&lt;/p&gt;
@@ -1629,8 +1629,8 @@ just add an extra &lt;span class="math inline"&gt;\(\frac{n(n +
 
 
 &lt;p&gt;Now, let &lt;span class="math inline"&gt;\(g(x) = \sum\limits_{i=1}^n i(i -
-1) x^{i - 2}\)&lt;/span&gt;. This is now the second derivative of $_{i = 1}^n
-x^i $, which we can work out&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I asked Wolfram Alpha, because I was lazy, but you could
+1) x^{i - 2}\)&lt;/span&gt;. This is now the second derivative of &lt;span class="math inline"&gt;\(\sum\limits_{i = 1}^n x^i\)&lt;/span&gt;, which we can
+work out&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I asked Wolfram Alpha, because I was lazy, but you could
 do this by hand through the application of the usual rules for
 calculating derivatives if you can be bothered. I mostly didn’t because
 writing it up in my notebook software is a pain.&lt;/span&gt; is &lt;span class="math inline"&gt;\(\frac{x^n (n^2 (x - 1)^2 - n x^2 + n + 2 x) - 2
