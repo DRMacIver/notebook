@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-04-25T13:33:00+01:00</updated>
+  <updated>2025-04-25T13:46:49+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1529,7 +1529,7 @@ better?”&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-25-13:33.html</id>
     <title>Using generating functions to work out sums</title>
-    <updated>2025-04-25T13:33:00+01:00</updated>
+    <updated>2025-04-25T13:46:49+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Using generating functions to work out sums&lt;/p&gt;
@@ -1578,22 +1578,122 @@ f_n(x) &amp;amp; = \sum\limits_{i = 1}^n i x^i \\
 1)^2} \right) \\
 &amp;amp; = x \left(\frac{(n + 1)x^n(x - 1) - x^{n + 1} + 1}{(x - 1)^2}
 \right) \\
-&amp;amp; = x \left(\frac{n x^n(x - 1) - x^{n + 1} + 1}{(x - 1)^2} \right)
-\\
-&amp;amp; = x \left(\frac{(n - 1) x^{n + 1} - n x^n + 1}{(x - 1)^2} \right)
-\\
+&amp;amp; = x \left(\frac{(n + 1)x^{n + 1} - (n + 1)x^n - x^{n + 1} + 1}{(x
+- 1)^2} \right) \\
+&amp;amp; = x \left(\frac{nx^{n + 1} - (n + 1)x^n + 1}{(x - 1)^2} \right) \\
 \end{align*}\]&lt;/span&gt;&lt;/p&gt;
 
 
 &lt;p&gt;We want to evaluate &lt;span class="math inline"&gt;\(f_n(1)\)&lt;/span&gt;, but
 this would require us to divide 0 by 0, so we have to take limits. We
-can do this with two applications of l’Hopital’s rule.&lt;/p&gt;
+can do this with two applications of &lt;a href="https://en.wikipedia.org/wiki/L%27H%C3%B4pital%27s_rule"&gt;L’Hôpital’s
+rule&lt;/a&gt;.&lt;/p&gt;
 
 
 &lt;p&gt;&lt;span class="math display"&gt;\[\begin{align*}
-\lim_{x \to 1} \frac{(n - 1) x^{n + 1} - n x^n + 1}{(x - 1)^2} &amp;amp;
-=  \frac{(n - 1)(n + 1) x^n - n^2 x^{n -1}}{2(x - 1)}\\
+\lim_{x \to 1} x \frac{nx^{n + 1} - (n + 1)x^n + 1}{(x - 1)^2}
+&amp;amp;=  \lim_{x \to 1} x \lim_{x \to 1} \frac{n (n + 1) x^n - (n + 1) n
+x^{n - 1}}{2(x - 1)} \\
+&amp;amp; =  \frac{n (n + 1) n x^{n - 1} - (n + 1) n (n - 1) x^{n - 2}}{2}
+\\
+&amp;amp; = \lim_{x \to 1} \frac{n (n + 1)  x^{n - 2} (n x - n + 1)}{2} \\
+&amp;amp; = \frac{n (n + 1)}{2} \\
 \end{align*}\]&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;Which is the desired result.&lt;/p&gt;
+
+
+&lt;p&gt;Now, I think it would be reasonable to consider this approach to be
+in almost every way worse than the last one. I don’t disagree. That was
+a whole bunch of symbol shuffling from which you cannot, I think, derive
+much insight about the nature of the problem.&lt;/p&gt;
+
+
+&lt;p&gt;But, on the other hand, I think it’s worth realising that sometimes
+that’s good actually. Sometimes you don’t really need the insight, or
+can’t find it, and you just want to shut up and calculate. This sort of
+tool is very useful to have handy for that.&lt;/p&gt;
+
+
+&lt;p&gt;For example, suppose you wanted to calculate &lt;span class="math inline"&gt;\(\sum\limits_{i=1}^n i^2\)&lt;/span&gt; instead. Our
+previous methods don’t help us here because there are no nice sums to
+rearrange. But with this technique it’s actually quite straightforward
+(if, admittedly, ugly).&lt;/p&gt;
+
+
+&lt;p&gt;First, let’s make use of our previously solved problem to simplify
+this slightly. We’re actually going to calculate &lt;span class="math inline"&gt;\(\sum\limits_{i=1}^n i(i - 1)\)&lt;/span&gt;. We can then
+just add an extra &lt;span class="math inline"&gt;\(\frac{n(n +
+1)}{2}\)&lt;/span&gt; to the result to get our desired sum.&lt;/p&gt;
+
+
+&lt;p&gt;Now, let &lt;span class="math inline"&gt;\(g(x) = \sum\limits_{i=1}^n i(i -
+1) x^{i - 2}\)&lt;/span&gt;. This is now the second derivative of $_{i = 1}^n
+x^i $, which we can work out&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I asked Wolfram Alpha, because I was lazy, but you could
+do this by hand through the application of the usual rules for
+calculating derivatives if you can be bothered. I mostly didn’t because
+writing it up in my notebook software is a pain.&lt;/span&gt; is &lt;span class="math inline"&gt;\(\frac{x^n (n^2 (x - 1)^2 - n x^2 + n + 2 x) - 2
+x)}{((x - 1)^3 x)}\)&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;Taking three derivatives with L’Hôpital’s rule&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Wolfram alpha again. Sorry.&lt;/span&gt; we
+get:&lt;/p&gt;
+
+
+&lt;p&gt;&lt;span class="math display"&gt;\[\begin{align*}
+g(1) &amp;amp;= \lim_{x \to 1} \frac{x^n (n^2 (x - 1)^2 - n x^2 + n + 2 x) -
+2 x)}{((x - 1)^3 x)}\\
+&amp;amp;= \lim_{x \to 1} \frac{ (n - 1) n (n + 1) x^(n - 3) (n^2 (x - 1)^2
++ 2 n (x^2 - 1) + 2 x)}{6(4x - 3)} \\
+= \frac{ (n - 1) n (n + 1) (2)}{6} \\
+= \frac{ (n - 1) n (n + 1) }{3} \\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;This means that our desired result is&lt;/p&gt;
+
+
+&lt;p&gt;&lt;span class="math display"&gt;\[\begin{align*}
+\sum\limits_{i = 1}^n i^2 =  \frac{(n - 1) n (n + 1) }{3} + \frac{n(n +
+1)}{2} \\
+\sum\limits_{i = 1}^n i^2 = \frac{2 (n - 1) n (n + 1)  + 3 n(n + 1) }{6}
+\\
+\sum\limits_{i = 1}^n i^2 = \frac{n (n + 1) ( 2n - 2  + 3)}{6} \\
+\sum\limits_{i = 1}^n i^2 = \frac{n (n + 1) ( 2n + 1)}{6} \\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;This is&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;conveniently, because I really didn’t want to track down
+the error if I made one.&lt;/span&gt; the correct answer, as you can
+verify by checking the first couple results.&lt;/p&gt;
+
+
+&lt;p&gt;Now… Do you ever need to be able to do this? Honestly, not really. I
+get the impression that this used to be a much more important skill, and
+these days you can mostly use symbolic algebra packages to do it for
+you, and also you mostly don’t need it anyway, but mathematicians used
+to get very excited about this sort of formula, and I think they’re
+still important in a bunch of places. e.g. I bet people who do
+combinatorics care much more about being able to do calculations like
+this than I do, because you often reduce counting problems to this sort
+of calculation.&lt;/p&gt;
+
+
+&lt;p&gt;Personally, I like it at least partly for its illustrative value.
+It’s sometimes very helpful to know that you &lt;em&gt;could&lt;/em&gt; solve a
+problem if you were just willing to shut up, sit down, and do the
+algebra. There’s also a satisfying sudoku-like quality to do it.&lt;/p&gt;
+
+
+&lt;p&gt;It’s also interesting having this sort of skillset at all because I
+get the feeling that basically nobody learns it any more. I learned it
+because I read “Schaum’s Outlines of Advanced Calculus” at a formative
+age, and it taught me all sorts of tricks like this, but it meant I went
+into university with this whole bag of tricks that nobody else had. They
+weren’t &lt;em&gt;useful&lt;/em&gt; tricks to have exactly, but they were
+interesting, and I do feel like it shaped how I look at mathematics a
+fair bit.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2025-04-25-13:33.html" rel="alternate"/>

@@ -99,18 +99,91 @@ f_n(x) &amp; = \sum\limits_{i = 1}^n i x^i \\
 1)^2} \right) \\
 &amp; = x \left(\frac{(n + 1)x^n(x - 1) - x^{n + 1} + 1}{(x - 1)^2}
 \right) \\
-&amp; = x \left(\frac{n x^n(x - 1) - x^{n + 1} + 1}{(x - 1)^2} \right)
-\\
-&amp; = x \left(\frac{(n - 1) x^{n + 1} - n x^n + 1}{(x - 1)^2} \right)
-\\
+&amp; = x \left(\frac{(n + 1)x^{n + 1} - (n + 1)x^n - x^{n + 1} + 1}{(x
+- 1)^2} \right) \\
+&amp; = x \left(\frac{nx^{n + 1} - (n + 1)x^n + 1}{(x - 1)^2} \right) \\
 \end{align*}\]</span></p>
 <p>We want to evaluate <span class="math inline">\(f_n(1)\)</span>, but
 this would require us to divide 0 by 0, so we have to take limits. We
-can do this with two applications of l’Hopital’s rule.</p>
+can do this with two applications of <a href="https://en.wikipedia.org/wiki/L%27H%C3%B4pital%27s_rule">L’Hôpital’s
+rule</a>.</p>
 <p><span class="math display">\[\begin{align*}
-\lim_{x \to 1} \frac{(n - 1) x^{n + 1} - n x^n + 1}{(x - 1)^2} &amp;
-=  \frac{(n - 1)(n + 1) x^n - n^2 x^{n -1}}{2(x - 1)}\\
+\lim_{x \to 1} x \frac{nx^{n + 1} - (n + 1)x^n + 1}{(x - 1)^2}
+&amp;=  \lim_{x \to 1} x \lim_{x \to 1} \frac{n (n + 1) x^n - (n + 1) n
+x^{n - 1}}{2(x - 1)} \\
+&amp; =  \frac{n (n + 1) n x^{n - 1} - (n + 1) n (n - 1) x^{n - 2}}{2}
+\\
+&amp; = \lim_{x \to 1} \frac{n (n + 1)  x^{n - 2} (n x - n + 1)}{2} \\
+&amp; = \frac{n (n + 1)}{2} \\
 \end{align*}\]</span></p>
+<p>Which is the desired result.</p>
+<p>Now, I think it would be reasonable to consider this approach to be
+in almost every way worse than the last one. I don’t disagree. That was
+a whole bunch of symbol shuffling from which you cannot, I think, derive
+much insight about the nature of the problem.</p>
+<p>But, on the other hand, I think it’s worth realising that sometimes
+that’s good actually. Sometimes you don’t really need the insight, or
+can’t find it, and you just want to shut up and calculate. This sort of
+tool is very useful to have handy for that.</p>
+<p>For example, suppose you wanted to calculate <span class="math inline">\(\sum\limits_{i=1}^n i^2\)</span> instead. Our
+previous methods don’t help us here because there are no nice sums to
+rearrange. But with this technique it’s actually quite straightforward
+(if, admittedly, ugly).</p>
+<p>First, let’s make use of our previously solved problem to simplify
+this slightly. We’re actually going to calculate <span class="math inline">\(\sum\limits_{i=1}^n i(i - 1)\)</span>. We can then
+just add an extra <span class="math inline">\(\frac{n(n +
+1)}{2}\)</span> to the result to get our desired sum.</p>
+<p>Now, let <span class="math inline">\(g(x) = \sum\limits_{i=1}^n i(i -
+1) x^{i - 2}\)</span>. This is now the second derivative of $_{i = 1}^n
+x^i $, which we can work out<label class="margin-toggle sidenote-number" for="fn1"></label><input class="margin-toggle" id="fn1" type="checkbox"/><span class="sidenote">I asked Wolfram Alpha, because I was lazy, but you could
+do this by hand through the application of the usual rules for
+calculating derivatives if you can be bothered. I mostly didn’t because
+writing it up in my notebook software is a pain.</span> is <span class="math inline">\(\frac{x^n (n^2 (x - 1)^2 - n x^2 + n + 2 x) - 2
+x)}{((x - 1)^3 x)}\)</span></p>
+<p>Taking three derivatives with L’Hôpital’s rule<label class="margin-toggle sidenote-number" for="fn2"></label><input class="margin-toggle" id="fn2" type="checkbox"/><span class="sidenote">Wolfram alpha again. Sorry.</span> we
+get:</p>
+<p><span class="math display">\[\begin{align*}
+g(1) &amp;= \lim_{x \to 1} \frac{x^n (n^2 (x - 1)^2 - n x^2 + n + 2 x) -
+2 x)}{((x - 1)^3 x)}\\
+&amp;= \lim_{x \to 1} \frac{ (n - 1) n (n + 1) x^(n - 3) (n^2 (x - 1)^2
++ 2 n (x^2 - 1) + 2 x)}{6(4x - 3)} \\
+= \frac{ (n - 1) n (n + 1) (2)}{6} \\
+= \frac{ (n - 1) n (n + 1) }{3} \\
+\end{align*}\]</span></p>
+<p>This means that our desired result is</p>
+<p><span class="math display">\[\begin{align*}
+\sum\limits_{i = 1}^n i^2 =  \frac{(n - 1) n (n + 1) }{3} + \frac{n(n +
+1)}{2} \\
+\sum\limits_{i = 1}^n i^2 = \frac{2 (n - 1) n (n + 1)  + 3 n(n + 1) }{6}
+\\
+\sum\limits_{i = 1}^n i^2 = \frac{n (n + 1) ( 2n - 2  + 3)}{6} \\
+\sum\limits_{i = 1}^n i^2 = \frac{n (n + 1) ( 2n + 1)}{6} \\
+\end{align*}\]</span></p>
+<p>This is<label class="margin-toggle sidenote-number" for="fn3"></label><input class="margin-toggle" id="fn3" type="checkbox"/><span class="sidenote">conveniently, because I really didn’t want to track down
+the error if I made one.</span> the correct answer, as you can
+verify by checking the first couple results.</p>
+<p>Now… Do you ever need to be able to do this? Honestly, not really. I
+get the impression that this used to be a much more important skill, and
+these days you can mostly use symbolic algebra packages to do it for
+you, and also you mostly don’t need it anyway, but mathematicians used
+to get very excited about this sort of formula, and I think they’re
+still important in a bunch of places. e.g. I bet people who do
+combinatorics care much more about being able to do calculations like
+this than I do, because you often reduce counting problems to this sort
+of calculation.</p>
+<p>Personally, I like it at least partly for its illustrative value.
+It’s sometimes very helpful to know that you <em>could</em> solve a
+problem if you were just willing to shut up, sit down, and do the
+algebra. There’s also a satisfying sudoku-like quality to do it.</p>
+<p>It’s also interesting having this sort of skillset at all because I
+get the feeling that basically nobody learns it any more. I learned it
+because I read “Schaum’s Outlines of Advanced Calculus” at a formative
+age, and it taught me all sorts of tricks like this, but it meant I went
+into university with this whole bag of tricks that nobody else had. They
+weren’t <em>useful</em> tricks to have exactly, but they were
+interesting, and I do feel like it shaped how I look at mathematics a
+fair bit.</p>
+
 
 </section>
 
