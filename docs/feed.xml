@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-04-25T13:46:49+01:00</updated>
+  <updated>2025-04-25T14:19:44+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1529,7 +1529,7 @@ better?”&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-25-13:33.html</id>
     <title>Using generating functions to work out sums</title>
-    <updated>2025-04-25T13:46:49+01:00</updated>
+    <updated>2025-04-25T14:19:44+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Using generating functions to work out sums&lt;/p&gt;
@@ -1664,7 +1664,7 @@ g(1) &amp;amp;= \lim_{x \to 1} \frac{x^n (n^2 (x - 1)^2 - n x^2 + n + 2 x) -
 \end{align*}\]&lt;/span&gt;&lt;/p&gt;
 
 
-&lt;p&gt;This is&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;conveniently, because I really didn’t want to track down
+&lt;p&gt;This is&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Conveniently, because I really didn’t want to track down
 the error if I made one.&lt;/span&gt; the correct answer, as you can
 verify by checking the first couple results.&lt;/p&gt;
 
