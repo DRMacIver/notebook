@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-04-25T14:20:04+01:00</updated>
+  <updated>2025-04-25T14:21:51+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1529,7 +1529,7 @@ better?”&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-25-13:33.html</id>
     <title>Using generating functions to work out sums</title>
-    <updated>2025-04-25T14:20:04+01:00</updated>
+    <updated>2025-04-25T14:21:51+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Using generating functions to work out sums&lt;/p&gt;
@@ -1634,7 +1634,7 @@ work out&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&
 do this by hand through the application of the usual rules for
 calculating derivatives if you can be bothered. I mostly didn’t because
 writing it up in my notebook software is a pain.&lt;/span&gt; is &lt;span class="math inline"&gt;\(\frac{x^n (n^2 (x - 1)^2 - n x^2 + n + 2 x) - 2
-x)}{((x - 1)^3 x)}\)&lt;/span&gt;&lt;/p&gt;
+x)}{(x - 1)^3 x}\)&lt;/span&gt;&lt;/p&gt;
 
 
 &lt;p&gt;Taking three derivatives with L’Hôpital’s rule&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Wolfram alpha again. Sorry.&lt;/span&gt; we
