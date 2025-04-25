@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+DRMacIver's Notebook: Using generating functions to work out sums
+    </title>
+
+    <meta property="og:title" content="Using generating functions to work out sums">
+
+    <meta property="og:url" content="https://notebook.drmaciver.com/posts/2025-04-25-13:33.html" />
+    <link rel="canonical" href="https://notebook.drmaciver.com/posts/2025-04-25-13:33.html" />
+    <script src="https://hypothes.is/embed.js" async></script>
+
+
+    <meta name="twitter:card" content="summary" />
+
+    <meta property="og:creator" content="@DRMacIver">
+
+    <link rel="stylesheet" href="/pandoc.css"/>
+    <link rel="stylesheet" href="/pygments.css"/>
+    <link rel="stylesheet" href="/tufte.css"/>
+    <link rel="stylesheet" href="/latex.css"/>
+    <link rel="stylesheet" href="/drmnotes.css"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
+});
+
+MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
+  console.log(message)
+});
+
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169185204-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169185204-1');
+</script>
+
+  </head>
+
+  <body>
+    <article>
+        <h1><a href="/">DRMacIver's Notebook</a></h1>
+        <p class=subtitle>Using generating functions to work out sums</p>
+
+        
+
+<section id="the-post">
+<p class=subtitle>Using generating functions to work out sums</p>
+<dl class=metadata>
+<dt>Published</dt>
+<dd class="post-date">2025-04-25</dd>
+</dl>
+
+<p>In <a href="https://notebook.drmaciver.com/posts/2025-04-24-10:00.html">my
+last post</a> I talked about the problem of working out <span class="math inline">\(\sum\limits_{i = 1}^n i\)</span>. In it, I
+strongly implied that there wasn’t a way to just work out the
+answer.</p>
+<p>This isn’t actually true. There’s a quite straightforward way to just
+work out the answer. It still requires a little bit of spotting the
+trick, but the tricks in question are more like puzzle pieces that you
+have to fit together than genuine insights.</p>
+<p>However, it requires a bunch more calculus than I wanted to assume in
+my last post, so I left it out. If you do know the calculus it might be
+informative though.</p>
+<p>The idea is this: Rather than work out <span class="math inline">\(\sum\limits_{i = 1}^n i\)</span>, we work out
+<span class="math inline">\(f_n(x) = \sum\limits_{i = 1}^n i
+x^i\)</span>, and then evaluate <span class="math inline">\(f(1)\)</span>.</p>
+<p>This will, weirdly, turn out to be easier.</p>
+<p>How do we do this? Like so:</p>
+<p><span class="math display">\[\begin{align*}
+f_n(x) &amp; = \sum\limits_{i = 1}^n i x^i \\
+&amp; = x \sum\limits_{i = 1}^n i x^{i - 1} \\
+&amp; = x \frac{d}{dx} \sum\limits_{i = 1}^n x^i \\
+&amp; = x \frac{d}{dx} \frac{x^{n + 1} - 1}{x - 1} \\
+&amp; = x \left(\frac{(n + 1)x^n}{x - 1} - \frac{x^{n + 1} - 1}{(x -
+1)^2} \right) \\
+&amp; = x \left(\frac{(n + 1)x^n(x - 1) - x^{n + 1} + 1}{(x - 1)^2}
+\right) \\
+&amp; = x \left(\frac{n x^n(x - 1) - x^{n + 1} + 1}{(x - 1)^2} \right)
+\\
+&amp; = x \left(\frac{(n - 1) x^{n + 1} - n x^n + 1}{(x - 1)^2} \right)
+\\
+\end{align*}\]</span></p>
+<p>We want to evaluate <span class="math inline">\(f_n(1)\)</span>, but
+this would require us to divide 0 by 0, so we have to take limits. We
+can do this with two applications of l’Hopital’s rule.</p>
+<p><span class="math display">\[\begin{align*}
+\lim_{x \to 1} \frac{(n - 1) x^{n + 1} - n x^n + 1}{(x - 1)^2} &amp;
+=  \frac{(n - 1)(n + 1) x^n - n^2 x^{n -1}}{2(x - 1)}\\
+\end{align*}\]</span></p>
+
+</section>
+
+    </article>
+<footer>
+Copyright David R. MacIver.
+
+CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
+</footer>
+  </body>
+</html>
