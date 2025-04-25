@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-04-25T14:22:45+01:00</updated>
+  <updated>2025-04-25T14:23:15+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1528,11 +1528,11 @@ better?”&lt;/p&gt;
   </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-25-13:33.html</id>
-    <title>Using generating functions to work out sums</title>
-    <updated>2025-04-25T14:22:45+01:00</updated>
+    <title>Introducing a parameter to work out sums</title>
+    <updated>2025-04-25T14:23:15+01:00</updated>
     <content type="html">
 
-&lt;p class="subtitle"&gt;Using generating functions to work out sums&lt;/p&gt;
+&lt;p class="subtitle"&gt;Introducing a parameter to work out sums&lt;/p&gt;
 
 
 &lt;dl class="metadata"&gt;
