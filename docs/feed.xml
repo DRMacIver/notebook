@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-04-25T14:23:15+01:00</updated>
+  <updated>2025-04-26T09:39:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,116 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2025-04-14-21:32.html</id>
-    <title>Lessons from win streaking: Learning reliability skills</title>
-    <updated>2025-04-14T21:55:14+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Lessons from win streaking: Learning reliability skills&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2025-04-14&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I’m &lt;a href="https://notebook.drmaciver.com/posts/2025-03-31-18:47.html"&gt;still
-working on win streaking&lt;/a&gt;. Recently, I got my win streak up from two
-to nine.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I was about as annoyed not to make it to an even 10 as
-you might imagine, but my actual goal was 5, so I’m still pretty pleased
-with myself..&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;How?&lt;/p&gt;
-
-
-&lt;p&gt;Well, uh, I switched characters. I’m much better at Ironclad than
-Defect&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;So is almost everyone else. Ironclad is just an easier
-character.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;This brings up my win streak for an obvious reason, which is that
-it’s easier, but I think it also brings it up for a non-obvious one:
-Because it’s easier, I can more readily tell what I’m doing wrong. It’s
-very hard to learn from failure without good feedback loops, and in
-easier games your feedback is clearer because there are fewer things for
-you to do wrong.&lt;/p&gt;
-
-
-&lt;p&gt;In doing so, I’ve noticed a couple of interesting things. They are
-somewhat obvious in retrospect, but they were at least a little
-non-obvious to me in foresight.&lt;/p&gt;
-
-
-&lt;p&gt;The first is: Once I try to win streak, my appetite for risk changes
-significantly. That is, previously I would take risks that had a small
-(say, 5-10%) chance of killing me, because they seemed fun or because I
-thought I needed to. If you take a few of those chances per run, they
-add up pretty rapidly and your win streaks are cut short.&lt;/p&gt;
-
-
-&lt;p&gt;Why take risks at all? Because risks are how you get rewards. In Slay
-the Spire the biggest instance of this is fighting elites - hard
-monsters that drop a lot of treasure. If you don’t fight enough elites,
-you don’t gain enough strength, and then you die to the boss fights
-(which you can’t skip). So you want to take as many elites as you can,
-but you also want to not die, and success is about balancing this.&lt;/p&gt;
-
-
-&lt;p&gt;This means that one of the most important skills for learning to win
-streak in slay the spire is to be able to accurately assess the current
-strength of your deck: To ask “Can I beat this elite?” and also “Can I
-beat the upcoming boss?” and weigh your chances accordingly, and make
-contingency plans.&lt;/p&gt;
-
-
-&lt;p&gt;As a result, since starting to win streak, I’ve skipped a lot more
-elite fights,&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;On average probably 1-4 per game. In some cases because
-I deliberately swerve before the elite, in others because I’m forced
-onto a path with fewer elites.&lt;/span&gt; because I’ve looked at the upcoming
-elite, gone “Can I take it?” and thought “Nah”. The streak I lost, I
-actually knew I was likely to lose, because I’d correctly assessed that
-I couldn’t take an elite fight and wasn’t offered a path that let me
-skip elites for long enough.&lt;/p&gt;
-
-
-&lt;p&gt;Some of this process of assessment is just vibe play writ small -
-I’ve got a good intuitive sense of what fights the deck can and can’t
-take, and that has a better feedback loop than the game overall - but
-some of it is being able to ask more specific and concrete questions
-like “How much damage are Slavers going to do to me in the first two
-turns and is that more than my hit points?” or “When Nemesis attacks me
-for 45 damage, what exactly am I going to do other than block it with my
-face?”&lt;/p&gt;
-
-
-&lt;p&gt;This also informs the game more broadly, because when you realise
-that the answer is “No, you can’t take it”, it tells you how your deck
-needs to improve.&lt;/p&gt;
-
-
-&lt;p&gt;An interesting side effect is that it’s also improved my potion
-use,&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Potions are one-time use resources that grant you
-specific effects when you use them. A &lt;em&gt;remarkable&lt;/em&gt; amount of Slay
-the Spire skill seems to come down to knowing when to use a potion and
-when to hold it.&lt;/span&gt; because sometimes the answer when I
-ask this question is “Probably not, but you can spend potions to fix
-this”. I’ve used potions more aggressively to win elite fights and
-bought more potions in shops than I normally do.&lt;/p&gt;
-
-
-&lt;p&gt;I think, in general, improving reliability looks like this. It’s easy
-to think of reliability as just a number, but it’s actually composed of
-specific situations, and improving your reliability is about identifying
-those situations. You improve reliability by &lt;a href="https://notebook.drmaciver.com/posts/2020-04-03-13:40.html"&gt;figuring
-out what you should worry about&lt;/a&gt;, and come up with specific plans for
-avoiding or handling those situations.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2025-04-14-21:32.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-15-22:18.html</id>
     <title>Real examples are messy</title>
@@ -1529,7 +1419,7 @@ better?”&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-25-13:33.html</id>
     <title>Introducing a parameter to work out sums</title>
-    <updated>2025-04-25T14:23:15+01:00</updated>
+    <updated>2025-04-25T15:47:04+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Introducing a parameter to work out sums&lt;/p&gt;
@@ -1696,5 +1586,115 @@ fair bit.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2025-04-25-13:33.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2025-04-26-09:39.html</id>
+    <title>More ways to work out sums</title>
+    <updated>2025-04-26T09:39:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;More ways to work out sums&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2025-04-26&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Sorry, still on different ways to calculate the sum of the first n
+integers. I’ll get bored eventually.&lt;/p&gt;
+
+
+&lt;p&gt;My last post &lt;a href="https://notebook.drmaciver.com/posts/2025-04-25-13:33.html"&gt;Introducing
+a parameter to work out sums&lt;/a&gt; was originally called “Using generating
+functions to work out sums”, but the things I was using in it weren’t
+generating functions, and doing it with a generating function ends up
+&lt;em&gt;much&lt;/em&gt; nicer, in a way that is obvious in retrospect.&lt;/p&gt;
+
+
+&lt;p&gt;The generating function of a series &lt;span class="math inline"&gt;\(a_n\)&lt;/span&gt; is &lt;span class="math inline"&gt;\(\sum\limits_{n \geq 0} a_n x^n\)&lt;/span&gt;. Often you
+can work out the generating function then take its power series
+expansion to calculuate jhe original series.&lt;/p&gt;
+
+
+&lt;p&gt;Here’s how it works:&lt;/p&gt;
+
+
+&lt;p&gt;&lt;span class="math display"&gt;\[\begin{align*}
+f(x) &amp;amp;= \sum\limits_{n &amp;gt;= 0} \sum\limits_{i = 1}^n i x^n \\
+&amp;amp;= \sum\limits_{i &amp;gt;= 1} \sum\limits_{n \geq i} i x^n \\
+&amp;amp;= \sum\limits_{i &amp;gt;= 1} i \sum\limits_{n \geq i} x^n \\
+&amp;amp;= \sum\limits_{i &amp;gt;= 1} \frac{i x^i}{1 - x} \\
+&amp;amp;= \frac{x}{1-x} \sum\limits_{i &amp;gt;= 1} i x^{i - 1}\\
+&amp;amp;= \frac{x}{1-x} \frac{d}{dx} \sum\limits_{i &amp;gt;= 1} x^i \\
+&amp;amp;= \frac{x}{1-x} \frac{d}{dx} \sum\limits_{i &amp;gt;= 0} x^i \\
+&amp;amp;= \frac{x}{1-x} \frac{d}{dx} \frac{1}{1 - x} \\
+&amp;amp;= \frac{x}{(1-x)^3} \\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;Now, to get the power series, we just need to work out the kth
+derivative of &lt;span class="math inline"&gt;\(\frac{1}{(1 - x)^3}\)&lt;/span&gt;.
+This is &lt;span class="math inline"&gt;\(\frac{3 (3 + 1) \ldots (3 + k -
+1)}{(1 - x)^(3 + k)} = \frac{(k + 2)!}{(1 - x)^3+k}\)&lt;/span&gt;.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;You can prove this with induction if you like. This is a
+good example of the sort of thing that induction is useful for, where
+you spot the pattern and just want to go “and so on”. But you can also
+just go “and so on” if you feel like it.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;So, plugging in &lt;span class="math inline"&gt;\(x = 0\)&lt;/span&gt; to get the
+derivates at 0 we get&lt;/p&gt;
+
+
+&lt;p&gt;&lt;span class="math display"&gt;\[\begin{align*}
+f(x) &amp;amp;= \frac{x}{(1-x)^3} \\
+&amp;amp;= x \sum\limits_{n \geq 0} \frac{(n + 2)!}{2 n!} x^n \\
+&amp;amp;= \sum\limits_{n \geq 0} \frac{(n + 1)(n + 2}{2} x^{n + 1} \\
+&amp;amp;= \sum\limits_{n \geq 1} \frac{n (n + 1)}{2} x^{n + 1} \\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;Giving us, once again, the desired result.&lt;/p&gt;
+
+
+&lt;p&gt;You could use a basically similar argument to calculate &lt;span class="math inline"&gt;\(\sum\limits_{n \geq k} n (n - 1) \ldots (n -
+k)\)&lt;/span&gt;, and from that work out &lt;span class="math inline"&gt;\(\sum
+i^k\)&lt;/span&gt; for any &lt;span class="math inline"&gt;\(k\)&lt;/span&gt;, but I can’t
+be bothered at present.&lt;/p&gt;
+
+
+&lt;p&gt;In order to not salami slice this topic over too many more posts,
+here’s another proof I spotted yesterday, which uses a standard
+combinatorial trick of counting the same thing two different ways:&lt;/p&gt;
+
+
+&lt;p&gt;Consider all distinct pairs of numbers drawn from &lt;span class="math inline"&gt;\(\{1, \ldots, n + 1\}\)&lt;/span&gt;. Counted one way,
+this is just &lt;span class="math inline"&gt;\({(n + 1)\choose 2} = \frac{n (n
++ 1)}{2\)&lt;/span&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Now, count it another way: If the smaller number in the pair is &lt;span class="math inline"&gt;\(k\)&lt;/span&gt;, then there are exactly &lt;span class="math inline"&gt;\(n + 1 - k\)&lt;/span&gt; choices for the larger number.
+Therefore there are &lt;span class="math inline"&gt;\(\sum\limits_{k=1}^n (n +
+1 - k) = \sum\limits_{k = 1}^n k\)&lt;/span&gt; choices in total, so &lt;span class="math inline"&gt;\(\sum\limits_{k = 1}^n k = \frac{n (n +
+1)}{2}\)&lt;/span&gt; as desired.&lt;/p&gt;
+
+
+&lt;p&gt;As an additional note, one thing I’ve been noticing when working
+these out is just how much better pen&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I know, I know, a true mathematician would use a
+pencil.&lt;/span&gt; and paper is for working
+these out than trying to type them up on the computer is. Part of this
+is that my notebook doesn’t have the best affordances around LaTeX, but
+I think a lot of it is genuine ease. Mathematics really still feels like
+it’s best done by hand to me.&lt;/p&gt;
+
+
+&lt;p&gt;I think that if I were using an actual interactive theorem prover, or
+even just a symbolic algebra library in Python, or the like that might
+stop being the case, but writing LaTeX feels too obviously like a
+presentation tool, not a tool for actually working things out.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2025-04-26-09:39.html" rel="alternate"/>
   </entry>
 </feed>

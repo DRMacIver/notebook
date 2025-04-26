@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+DRMacIver's Notebook: More ways to work out sums
+    </title>
+
+    <meta property="og:title" content="More ways to work out sums">
+
+    <meta property="og:url" content="https://notebook.drmaciver.com/posts/2025-04-26-09:39.html" />
+    <link rel="canonical" href="https://notebook.drmaciver.com/posts/2025-04-26-09:39.html" />
+    <script src="https://hypothes.is/embed.js" async></script>
+
+
+    <meta name="twitter:card" content="summary" />
+
+    <meta property="og:creator" content="@DRMacIver">
+
+    <link rel="stylesheet" href="/pandoc.css"/>
+    <link rel="stylesheet" href="/pygments.css"/>
+    <link rel="stylesheet" href="/tufte.css"/>
+    <link rel="stylesheet" href="/latex.css"/>
+    <link rel="stylesheet" href="/drmnotes.css"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
+});
+
+MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
+  console.log(message)
+});
+
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169185204-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169185204-1');
+</script>
+
+  </head>
+
+  <body>
+    <article>
+        <h1><a href="/">DRMacIver's Notebook</a></h1>
+        <p class=subtitle>More ways to work out sums</p>
+
+        
+
+<section id="the-post">
+<p class=subtitle>More ways to work out sums</p>
+<dl class=metadata>
+<dt>Published</dt>
+<dd class="post-date">2025-04-26</dd>
+</dl>
+
+<p>Sorry, still on different ways to calculate the sum of the first n
+integers. I’ll get bored eventually.</p>
+<p>My last post <a href="https://notebook.drmaciver.com/posts/2025-04-25-13:33.html">Introducing
+a parameter to work out sums</a> was originally called “Using generating
+functions to work out sums”, but the things I was using in it weren’t
+generating functions, and doing it with a generating function ends up
+<em>much</em> nicer, in a way that is obvious in retrospect.</p>
+<p>The generating function of a series <span class="math inline">\(a_n\)</span> is <span class="math inline">\(\sum\limits_{n \geq 0} a_n x^n\)</span>. Often you
+can work out the generating function then take its power series
+expansion to calculuate jhe original series.</p>
+<p>Here’s how it works:</p>
+<p><span class="math display">\[\begin{align*}
+f(x) &amp;= \sum\limits_{n &gt;= 0} \sum\limits_{i = 1}^n i x^n \\
+&amp;= \sum\limits_{i &gt;= 1} \sum\limits_{n \geq i} i x^n \\
+&amp;= \sum\limits_{i &gt;= 1} i \sum\limits_{n \geq i} x^n \\
+&amp;= \sum\limits_{i &gt;= 1} \frac{i x^i}{1 - x} \\
+&amp;= \frac{x}{1-x} \sum\limits_{i &gt;= 1} i x^{i - 1}\\
+&amp;= \frac{x}{1-x} \frac{d}{dx} \sum\limits_{i &gt;= 1} x^i \\
+&amp;= \frac{x}{1-x} \frac{d}{dx} \sum\limits_{i &gt;= 0} x^i \\
+&amp;= \frac{x}{1-x} \frac{d}{dx} \frac{1}{1 - x} \\
+&amp;= \frac{x}{(1-x)^3} \\
+\end{align*}\]</span></p>
+<p>Now, to get the power series, we just need to work out the kth
+derivative of <span class="math inline">\(\frac{1}{(1 - x)^3}\)</span>.
+This is <span class="math inline">\(\frac{3 (3 + 1) \ldots (3 + k -
+1)}{(1 - x)^(3 + k)} = \frac{(k + 2)!}{(1 - x)^3+k}\)</span>.<label class="margin-toggle sidenote-number" for="fn1"></label><input class="margin-toggle" id="fn1" type="checkbox"/><span class="sidenote">You can prove this with induction if you like. This is a
+good example of the sort of thing that induction is useful for, where
+you spot the pattern and just want to go “and so on”. But you can also
+just go “and so on” if you feel like it.</span></p>
+<p>So, plugging in <span class="math inline">\(x = 0\)</span> to get the
+derivates at 0 we get</p>
+<p><span class="math display">\[\begin{align*}
+f(x) &amp;= \frac{x}{(1-x)^3} \\
+&amp;= x \sum\limits_{n \geq 0} \frac{(n + 2)!}{2 n!} x^n \\
+&amp;= \sum\limits_{n \geq 0} \frac{(n + 1)(n + 2}{2} x^{n + 1} \\
+&amp;= \sum\limits_{n \geq 1} \frac{n (n + 1)}{2} x^{n + 1} \\
+\end{align*}\]</span></p>
+<p>Giving us, once again, the desired result.</p>
+<p>You could use a basically similar argument to calculate <span class="math inline">\(\sum\limits_{n \geq k} n (n - 1) \ldots (n -
+k)\)</span>, and from that work out <span class="math inline">\(\sum
+i^k\)</span> for any <span class="math inline">\(k\)</span>, but I can’t
+be bothered at present.</p>
+<p>In order to not salami slice this topic over too many more posts,
+here’s another proof I spotted yesterday, which uses a standard
+combinatorial trick of counting the same thing two different ways:</p>
+<p>Consider all distinct pairs of numbers drawn from <span class="math inline">\(\{1, \ldots, n + 1\}\)</span>. Counted one way,
+this is just <span class="math inline">\({(n + 1)\choose 2} = \frac{n (n
++ 1)}{2\)</span>.</p>
+<p>Now, count it another way: If the smaller number in the pair is <span class="math inline">\(k\)</span>, then there are exactly <span class="math inline">\(n + 1 - k\)</span> choices for the larger number.
+Therefore there are <span class="math inline">\(\sum\limits_{k=1}^n (n +
+1 - k) = \sum\limits_{k = 1}^n k\)</span> choices in total, so <span class="math inline">\(\sum\limits_{k = 1}^n k = \frac{n (n +
+1)}{2}\)</span> as desired.</p>
+<p>As an additional note, one thing I’ve been noticing when working
+these out is just how much better pen<label class="margin-toggle sidenote-number" for="fn2"></label><input class="margin-toggle" id="fn2" type="checkbox"/><span class="sidenote">I know, I know, a true mathematician would use a
+pencil.</span> and paper is for working
+these out than trying to type them up on the computer is. Part of this
+is that my notebook doesn’t have the best affordances around LaTeX, but
+I think a lot of it is genuine ease. Mathematics really still feels like
+it’s best done by hand to me.</p>
+<p>I think that if I were using an actual interactive theorem prover, or
+even just a symbolic algebra library in Python, or the like that might
+stop being the case, but writing LaTeX feels too obviously like a
+presentation tool, not a tool for actually working things out.</p>
+
+
+</section>
+
+    </article>
+<footer>
+Copyright David R. MacIver.
+
+CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
+</footer>
+  </body>
+</html>
