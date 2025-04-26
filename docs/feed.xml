@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-04-26T10:20:00+01:00</updated>
+  <updated>2025-04-26T10:21:24+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1590,7 +1590,7 @@ fair bit.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-26-09:39.html</id>
     <title>More ways to work out sums</title>
-    <updated>2025-04-26T10:20:00+01:00</updated>
+    <updated>2025-04-26T10:21:24+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;More ways to work out sums&lt;/p&gt;
@@ -1637,7 +1637,7 @@ f(x) &amp;amp;= \sum\limits_{n &amp;gt;= 0} \sum\limits_{i = 1}^n i x^n \\
 &lt;p&gt;Now, to get the power series, we just need to work out the kth
 derivative of &lt;span class="math inline"&gt;\(\frac{1}{(1 - x)^3}\)&lt;/span&gt;.
 This is &lt;span class="math inline"&gt;\(\frac{3 (3 + 1) \ldots (3 + k -
-1)}{(1 - x)^(3 + k)} = \frac{(k + 2)!}{(1 - x)^{3+k}}\)&lt;/span&gt;.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;You can prove this with induction if you like. This is a
+1)}{(1 - x)^{3 + k}} = \frac{(k + 2)!}{(1 - x)^{3+k}}\)&lt;/span&gt;.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;You can prove this with induction if you like. This is a
 good example of the sort of thing that induction is useful for, where
 you spot the pattern and just want to go “and so on”. But you can also
 just go “and so on” if you feel like it.&lt;/span&gt;&lt;/p&gt;
