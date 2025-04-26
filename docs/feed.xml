@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-04-26T10:22:14+01:00</updated>
+  <updated>2025-04-26T10:22:39+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1590,7 +1590,7 @@ fair bit.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-26-09:39.html</id>
     <title>More ways to work out sums</title>
-    <updated>2025-04-26T10:22:14+01:00</updated>
+    <updated>2025-04-26T10:22:39+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;More ways to work out sums&lt;/p&gt;
@@ -1632,6 +1632,11 @@ f(x) &amp;amp;= \sum\limits_{n &amp;gt;= 0} \sum\limits_{i = 1}^n i x^n \\
 &amp;amp;= \frac{x}{1-x} \frac{d}{dx} \frac{1}{1 - x} \\
 &amp;amp;= \frac{x}{(1-x)^3} \\
 \end{align*}\]&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;Rearranging order of sums like this is a fairly standard trick for
+working out doubly infinite sums. It’s technically justified whenever
+the sums absolutely converge.&lt;/p&gt;
 
 
 &lt;p&gt;Now, to get the power series, we just need to work out the kth
