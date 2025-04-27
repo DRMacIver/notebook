@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-04-26T10:22:39+01:00</updated>
+  <updated>2025-04-27T12:34:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,140 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2025-04-15-22:18.html</id>
-    <title>Real examples are messy</title>
-    <updated>2025-04-15T22:53:15+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Real examples are messy&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2025-04-15&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I’ve been reading “On Caring” by Milton Mayeroff today. It’s a mostly
-pretty good book, outlining a theory about what it means to care for
-something, but it has an example quite early on which set me off.&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Obligations that derive from devotion are a constituent element in
-caring, and I do not experience them as forced on me or as necessary
-evils; there is a convergence between what I feel I am supposed to do
-and what I want to do. The father who goes for the doctor in the middle
-of the night for his sick child does not experience this as a burden; he
-is simply caring for the child.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;I think that this example is obviously made up, and I think that you
-can partly tell that because of the straightforward lack of detail, but
-I just think it’s also not true.&lt;/p&gt;
-
-
-&lt;p&gt;If your child is currently in desperate need and on the way to ER
-then sure, obviously, you’re not going to experience this as burdensome,
-because your mind is focused on the immediate emergency, but that’s not
-even particularly because it’s your child. In the middle of an emergency
-I mostly find that I’m too focused on the actual crisis at hand to think
-about how burdened I am by it, although I might have a moment of
-thinking “Oh, what a pain” right at the beginning.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;And, in real emergencies, have.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;In contrast if your child is up with, say, a stomach bug, and has
-been vomiting, and you’ve just got off a long shift and you’re exhausted
-and want nothing more than to go to sleep, then &lt;em&gt;obviously&lt;/em&gt;
-you’re going to experienced this as burdensome. You’re exhausted, the
-whole thing is a pain, and you want to go to bed. You (hopefully) do it
-anyway, because its your child and you love them and you &lt;a href="https://notebook.drmaciver.com/posts/2025-03-29-10:40.html"&gt;do
-things because you gotta&lt;/a&gt;. But that doesn’t mean you will never
-experience it as burdensome, only that you bear that burden mostly
-willingly, albeit sometimes begrudgingly.&lt;/p&gt;
-
-
-&lt;p&gt;And I think that the idea that this devotion and caring in the
-context of a child means that you don’t experience any burdens just
-completely fails to capture the very normal experience of parenting. And
-I think that if you were to look at many actual concrete examples of day
-to day parenting you would find that parents experience those children
-as burdens fairly often. And typically they will regard those burdens as
-worth it, because they want what’s best for their child, but that
-doesn’t mean that they never experienced these “oh gosh, my life would
-be so much easier if I didn’t have to deal with this shit.” moments.
-Most importantly, having these sorts of thoughts &lt;em&gt;doesn’t mean they
-don’t care about their child&lt;/em&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;And this is a big part of why I care quite a lot about this example
-and its basic failure to capture the essential humanity of real
-situations. If you’re in a parenting situation like this, where you’re
-exhausted and have to deal with a minor medical crisis or other such
-problem with your child, there is definitely going to be some part of
-you that goes “oh god. Yet another fucking thing.” And, when it does,
-there’s another part of you which looks at that part and goes “Gosh. You
-must be a bad parent for feeling that way.”&lt;/p&gt;
-
-
-&lt;p&gt;And this seems to me to be what happens when you start with these
-tidy narratives, theories of how things should be rather than looking at
-specific concrete examples of things as they actually are. You try to
-understand your experiences through that lens, and you fall short
-because you fail to be the perfectly spherical human in a vacuum that
-the theory predicts.&lt;/p&gt;
-
-
-&lt;p&gt;If, on the other hand, you talk to other parents about their
-experiences, pretty inevitably what will happen is they’ll tell you that
-yeah of course they feel like that sometimes too.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I can’t find a single biographical detail about
-Mayeroff, so I don’t know if he had kids. If he did, maybe he had an
-unusually saintly degree of equanimity. But I doubt it. I think he just
-had a theory and made up an example to fit it without thinking about
-whether it was true.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;If you instead listen to things as they actually are, as told by
-people who actually been through the experiences, what you’ll find is
-that there is a richness and a messiness to them that doesn’t conform to
-sort of very tidy theories that say how things should work. And I think
-this is key to personal growth, to self forgiveness, to navigating the
-world in a humane manner, and being kind to both yourself and others.
-You have to encounter humanity in all its messy complexity, rather than
-humanity as you would like to idealise it.&lt;/p&gt;
-
-
-&lt;p&gt;In a smaller context, I’ve been sort of developing this theme
-recently because I’ve been writing a bunch of really mundane blog posts.
-These are things like &lt;a href="https://notebook.drmaciver.com/posts/2025-03-23-21:48.html"&gt;here’s
-how I clean my kitchen&lt;/a&gt;, or &lt;a href="https://notebook.drmaciver.com/posts/2025-04-13-14:46.html"&gt;I had
-to cook something on short notice in 45 minutes&lt;/a&gt;, or even just &lt;a href="https://notebook.drmaciver.com/posts/2025-04-14-21:32.html"&gt;here’s
-some stuff I learned playing Slay the Spire&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;Each of these starts from a very concrete experience, talking about
-how I navigated it and what I’ve learned in doing so. It’s not purely a
-narrative about a specific thing - it sort of tries to point out where
-I’ve used some idea that I think generalizes or some oddly useful
-principle, but it is still fundamentally the story of that particular
-event.&lt;/p&gt;
-
-
-&lt;p&gt;I think these pieces are in many ways much more useful because they
-are forced to grapple with the concrete reality of the task at hand. So
-they contain a lot of details and how those details were dealt with that
-would not have been present if I had started from some much more general
-theory. I do then tend to write a little bit about generalisable lessons
-from them of course, but I think starting from a real and detail-rich
-experience and trying to figure out how to transfer it to other similar
-situations gets you a lot further than trying to start from a tidy
-theory and forcing your life into its procrustean view of the world.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2025-04-15-22:18.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-16-18:31.html</id>
     <title>Recovering desire with care</title>
@@ -1590,7 +1456,7 @@ fair bit.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-26-09:39.html</id>
     <title>More ways to work out sums</title>
-    <updated>2025-04-26T10:22:39+01:00</updated>
+    <updated>2025-04-26T10:23:28+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;More ways to work out sums&lt;/p&gt;
@@ -1701,5 +1567,148 @@ presentation tool, not a tool for actually working things out.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2025-04-26-09:39.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2025-04-27-12:34.html</id>
+    <title>Speaking from the heart</title>
+    <updated>2025-04-27T12:34:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Speaking from the heart&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2025-04-27&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;“Focusing” is the name for a basic therapy skill coined by Eugene
+Gendlin.&lt;/p&gt;
+
+
+&lt;p&gt;The story goes&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I believe that this story is apocryphal and Gendlin
+already knew the conclusion he wanted to reach and then used this as a
+sort of post hoc justification for it. But it seems both plausible to me
+that this is what you observe and also I think the method works, so it’s
+a useful illustration regardless.&lt;/span&gt; that Gendlin and his students wanted
+to figure out what caused some people to improve in therapy and others
+not, so they looked at transcripts of lots of therapy patients and
+analysed them for what made the difference. Eventually they realised
+that the biggest impact was not from anything the therapists did, but
+whether the patients said “Um” a lot.&lt;/p&gt;
+
+
+&lt;p&gt;The explanation for this observation is this: If you’re speaking
+effortlessly and fluently about your experiences, &lt;em&gt;you probably
+aren’t paying attention to how you’re feeling&lt;/em&gt;, and in particular
+you’re not checking in with whether what you’re saying actually feels
+like. If you imagine someone saying “Yup everything is absolutely great,
+I’m doing fine” while their face calls them a liar, that’s the sort of
+thing I’m talking about. Frequently people will do this not because
+they’re lying, but because they don’t even notice that they’re not
+telling the truth.&lt;/p&gt;
+
+
+&lt;p&gt;When progress happens, they instead say “Yup everything is absolutely
+great, I’m doing fine. Um. Except…” and then start talking about the
+actually important thing.&lt;/p&gt;
+
+
+&lt;p&gt;Gendlin describes the process of realising what you said wasn’t true
+and noticing the feeling you get about it as paying attention to it as
+noticing the &lt;em&gt;felt sense&lt;/em&gt; of the problem. This example comes from
+an exercise he suggests somewhere&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;This might have been in his book, Focusing, but I think
+I remember this as a suggestion from a friend reporting on Gendlin, so
+it might also be something else.&lt;/span&gt; is to say out loud
+“Everything in my life is completely fine.”, notice how that feels, and
+then start saying “Except…” until you run out of things to list.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway this is the core of Focusing as I’ve understood it to date:
+It’s a fundamentally corrective process, where you say things, then you
+find out the ways in which they’re not true, and you use the felt sense
+to correct them. I’m pretty good at this part.&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Thus granting me a good grade in therapy, a thing that
+is both normal to want and possible to achieve.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;But there’s another part to it that I’ve never been very good at,
+which is where you let the felt sense “speak directly”.&lt;/p&gt;
+
+
+&lt;p&gt;One problem with the speaking first and correcting it is that
+thoughts are fast and feelings are slow, and it’s very easy for whatever
+part of you that is feeling the thing to get overwhelmed, even when
+you’re trying your best to be helpful. I was trying to explain this to
+Lisa the other day and the analogy I used was imagine talking to a shy
+child who isn’t very good at speaking yet. Even if you correctly
+anticipate what it’s trying to say to you, the mere act of anticipating
+it can make it less willing to talk.&lt;/p&gt;
+
+
+&lt;p&gt;What you (or at least I) have to do instead is say some words,
+slowly, and then if it’s not actually clear to you what the next words
+to come out be that would feel right are… pause, and wait for them to
+come. Sit there, just letting there be a long gap in your sentence,
+until the next words come out.&lt;/p&gt;
+
+
+&lt;p&gt;The frustrating thing about this is that it works much much better if
+there’s someone listening, and that someone has to sit patiently with
+you and wait. This is hard.&lt;/p&gt;
+
+
+&lt;p&gt;I mentioned I was explaining this to Lisa the other day. This was a
+very good conversation in which I was trying to express some things I
+was feeling sad about, and part of it lead to a very good meta
+conversation about how to have such conversations. One thing that came
+up is that Lisa and I have very different internal experiences when
+we’re clearly struggling with words, and that in the ones that Lisa has
+and thus was expecting I was also having, trying to help complete the
+other party’s sentences is actually very helpful.&lt;/p&gt;
+
+
+&lt;p&gt;I think there are roughly three things I experience that lead to this
+sort of halting speech:&lt;/p&gt;
+
+
+&lt;ol type="1"&gt;
+&lt;li&gt;This thing of waiting for a felt sense to express itself
+properly.&lt;/li&gt;
+&lt;li&gt;“Tip of my tongue” style aphasia where I know the word but I’m
+struggling to find it.&lt;/li&gt;
+&lt;li&gt;Situations where I know what I want to say but feel paralysed from
+saying it, out of fear or similar.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;In the second two, completing a sentence correctly is quite useful.
+It either tells you there’s nothing to be afraid of because they already
+know what you’re going to say, or it gets you out of the aphasia.&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I actually don’t like it when people help me out when
+I’m having aphasia, but that’s a different and much less important
+issue.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;Even in the classic “corrective” sense of Focusing, where you’re
+trying to express a sentence that feels true, completing the sentence is
+quite helpful, because it gives you something concrete to check
+against.&lt;/p&gt;
+
+
+&lt;p&gt;But… when trying to express myself around something deeply felt and
+poorly understood, I think completing the sentence doesn’t help even
+when the completion is right, because much of the point is not just to
+say the true thing, but to experience the feeling fully, and if you skip
+to the end you don’t get to do that, and the whole process is left
+incomplete.&lt;/p&gt;
+
+
+&lt;p&gt;The result though is that you need patience when talking to someone
+doing this, even when that someone is yourself. It’s very easy to return
+to the lightning quick world of words and race ahead, but sometimes you
+just have to sit with the feeling until it’s ready to talk.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2025-04-27-12:34.html" rel="alternate"/>
   </entry>
 </feed>
