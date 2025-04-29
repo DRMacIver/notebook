@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-04-28T18:49:00+01:00</updated>
+  <updated>2025-04-29T20:18:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,133 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2025-04-17-18:19.html</id>
-    <title>Moving the consistency bubble around</title>
-    <updated>2025-04-17T21:52:40+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Moving the consistency bubble around&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2025-04-17&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Note: This is a post where I am thinking out loud about a problem I’m
-trying to solve. I expect I will find out the solution I outline in here
-doesn’t work or needs modification.&lt;/p&gt;
-
-
-&lt;p&gt;Something I have found is that, much to my regret, my life is much
-better when I am a morning person. It is also very hard for me to
-reliably be a morning person.&lt;/p&gt;
-
-
-&lt;p&gt;In theory, this is a simple matter. If I set my alarm to go off early
-every day, I’ll get up early every day.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;lol. lmao.&lt;/span&gt;
-This is what all of the good sleep hygiene advice suggests after
-all.&lt;/p&gt;
-
-
-&lt;p&gt;There’s just one problem: I don’t want to do this.&lt;/p&gt;
-
-
-&lt;p&gt;Well, OK. Why not?&lt;/p&gt;
-
-
-&lt;p&gt;Part of this is that I wake up feeling like death a lot of mornings.
-This isn’t as common as it was when I was still dependent on caffeine (a
-significant part of my problem with mornings when on caffeine is that I
-wake up with massive caffeine withdrawal). This both makes me very
-unwilling to get out of bed, but also means that I actually need the
-extra sleep or I’ll be kinda useless all day.&lt;/p&gt;
-
-
-&lt;p&gt;Why do I wake up feeling like shit in the morning?&lt;/p&gt;
-
-
-&lt;p&gt;Well, one reason is that my sleep onset time isn’t consistent. If I
-wake up at 7AM (which I usually do right now because of the dawn
-chorus), I’ll be fine if I got to sleep before midnight and feel
-exhausted if I got to sleep around 2AM.&lt;/p&gt;
-
-
-&lt;p&gt;So, in order to wake up in the morning, I need to make my bed time
-consistent.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;rofl&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;Obviously I’m not going to do that. I could try, but it’s the sort of
-habit change where it’s too easy to disrupt,&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;For example it might get to late and I might realise
-I’ve not written a notebook post today…&lt;/span&gt; and
-then disruptions compound. I &lt;em&gt;would&lt;/em&gt; like to go to bed before 11
-more consistently than I currently do, and that &lt;em&gt;would&lt;/em&gt; be a good
-thing to change, but I think if I make getting up in the morning reliant
-on going to bed before 11 I’ll end up failing at both. This is
-compounded because often the reason my bedtime is inconsistent is that
-some mornings I wake up late. So in order to get to sleep on time I need
-to wake up on time, and in order to wake up on time I have to get to
-sleep on time…&lt;/p&gt;
-
-
-&lt;p&gt;This is a common problem with anything with a feedback loop in it:
-Moving any part of the system requires moving every part of the system.
-This is hard, and as soon as one part fails it all comes tumbling down.
-The only way out is to break the feedback loop.&lt;/p&gt;
-
-
-&lt;p&gt;So the question is:&lt;/p&gt;
-
-
-&lt;ol type="1"&gt;
-&lt;li&gt;How do I get up reliably in the morning without having to go to bed
-reliably in the evening?&lt;/li&gt;
-&lt;li&gt;If I do that, how do I avoid feeling like shit during the day?&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;Previously, I’ve had a pretty good answer to that: Caffeine! I would
-wake up, take a caffeine pill, and then go back to sleep until it kicked
-in and I felt motivated to get out of bed. This worked pretty well. But…
-I’m not using caffeine any more.&lt;/p&gt;
-
-
-&lt;p&gt;One option would be to just &lt;a href="https://notebook.drmaciver.com/posts/2025-03-29-10:40.html"&gt;well
-you gotta&lt;/a&gt; and force myself out of bed knowing that I’ll feel shit on
-doing so, but I don’t think that’s going to work. If there’s a genuine
-thing that I gotta do in the morning, that’s one thing&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;When this was the case I have in fact managed to
-consistently be a morning person.&lt;/span&gt;,
-and force myself out of bed anyway. But morning David is not going to be
-amenable to this plan, because among other reasons I don’t like feeling
-like shit.&lt;/p&gt;
-
-
-&lt;p&gt;I think that the most reliable solution here is to try to address the
-“feel like shit” part on days where I fail to get enough sleep, and I
-think the solution to that is just… &lt;a href="https://drmaciver.substack.com/p/how-to-rest"&gt;have a nap&lt;/a&gt; if I
-need to. That way I’m not making a decision about whether or not to feel
-like shit today, I’m just making a decision about whether to get out of
-bed, and the nap is there as a safety net if I need it.&lt;/p&gt;
-
-
-&lt;p&gt;If I build into the schedule of the day that I have a nap some time
-late morning / early afternoon, but get up and shower consistently each
-morning, this adds consistency into the system and removes the negative
-feedback against it by creating an alternative safer place for
-inconsistency to arrive. I can expand or contract the amount of napping
-available, while trying to keep my normal wake up time consistent. I
-don’t know if this is going to work, but I think it’s plausible. This
-changes the sleep system into one where the parameter I want to control
-(inconsistency of when I sleep) is moved into trying to minimise nap
-time, and where destabilising will tend not to result in the whole thing
-spiralling out of control, because the variance is kept in a separate
-container that can be isolated from the rest of the sleep schedule.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2025-04-17-18:19.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-18-23:33.html</id>
     <title>Sometimes things are actually important</title>
@@ -1580,7 +1453,7 @@ just have to sit with the feeling until it’s ready to talk.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-28-18:49.html</id>
     <title>Motivation gradients</title>
-    <updated>2025-04-28T18:49:00+01:00</updated>
+    <updated>2025-04-28T20:02:14+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Motivation gradients&lt;/p&gt;
@@ -1658,5 +1531,136 @@ respond to the idea of doing something towards them.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2025-04-28-18:49.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2025-04-29-20:18.html</id>
+    <title>Where are your limits?</title>
+    <updated>2025-04-29T20:18:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Where are your limits?&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2025-04-29&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;A recurring theme recently has been doing things because they need to
+doing, regardless of whether you currently feel like doing them.&lt;/p&gt;
+
+
+&lt;p&gt;I’ve got some pushback on this, especially on using &lt;a href="https://notebook.drmaciver.com/posts/2025-03-30-11:41.html"&gt;this
+daily writing habit&lt;/a&gt; as an example, particularly around how “need” is
+fake.&lt;/p&gt;
+
+
+&lt;p&gt;And it’s true. Need is in some sense fake. You can always skip the
+dishes and let them pile up in a festering heap, rendering your kitchen
+ever more difficult to use. &lt;a href="https://drmaciver.substack.com/p/using-what-youre-given"&gt;You can
+always let the apples rot&lt;/a&gt;. There’s very little you &lt;em&gt;need&lt;/em&gt; to
+do in the sense that it is a logical necessity that you must do it.&lt;/p&gt;
+
+
+&lt;p&gt;But on the other hand, there are a lot of things that you should, on
+balance, choose to do, and being able to bind your future self to that
+path, and to be beholden by the commitments of your past self, is often
+going to go far better for you than not doing it. I might not want to do
+the dishes now, but future me would much rather that present me had, and
+even present me will probably feel better for doing it once I get over
+the initial hump. Being useful feels better than not being useful, most
+of the time.&lt;/p&gt;
+
+
+&lt;p&gt;But do I need to keep writing every day? Probably not. The biggest
+problem I had writing today was when figuring out what to write about
+was &lt;a href="https://notebook.drmaciver.com/posts/2025-04-28-18:49.html"&gt;once
+again&lt;/a&gt; asking myself the question: Well, what am I writing for? If I
+don’t really know why I’m writing, it doesn’t really matter what I write
+about.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;This continues to be a &lt;a href="https://drmaciver.substack.com/i/60442550/which-way-should-i-go"&gt;singularly
+unhelpful&lt;/a&gt; answer.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;In some sense, the reason why I’m writing is that I am writing is
+because writing every day is a good way to discover interesting things
+and articulate things you otherwise wouldn’t have articulated. This is a
+true and important reason and is a key part of why my past self decided
+to do it. But right now I don’t feel like I care about that.&lt;/p&gt;
+
+
+&lt;p&gt;The reason I am writing is because I’ve decided that I write every
+day. Eventually that will stop being enough, but right now it still
+is.&lt;/p&gt;
+
+
+&lt;p&gt;But I think there’s a question of… OK, past you has decided that
+you’re going to do a thing, or present you believes that you need to do
+a thing. When are they wrong?&lt;/p&gt;
+
+
+&lt;p&gt;One of my failure modes is that &lt;a href="https://notebook.drmaciver.com/posts/2022-01-02-12:34.html"&gt;I’m
+not good enough at asking for help&lt;/a&gt;, and one of the ways this shows
+up is that if I’ve decided that I need to do a thing, I will usually do
+the thing.&lt;/p&gt;
+
+
+&lt;p&gt;Part of this is that &lt;a href="https://notebook.drmaciver.com/posts/2021-10-19-10:53.html"&gt;depression
+is a bias towards inaction&lt;/a&gt;, and doing more than you feel like you
+can helps drag your way out of depression. So I legitimately don’t trust
+the feeling that something is too hard or too much, and I will generally
+feel better for doing it.&lt;/p&gt;
+
+
+&lt;p&gt;…except when I don’t. Because sometimes it’s actually a bad idea for
+me to do the thing, and I should make an exception.&lt;/p&gt;
+
+
+&lt;p&gt;I made an exception for daily writing over Easter weekend and that
+felt like the right thing to do.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I’m actually not sure that it was! I do feel like I’ve
+taken a significant hit to the habit since returning. But on balance it
+was still probably correct.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;Sometimes I have to be chased out of the kitchen because I’m clearly
+wobbling when I try to stand up and someone else should do the dishes.
+Sometimes everyone’s in this state and we have to admit that OK the
+dishes &lt;em&gt;can&lt;/em&gt; be done tomorrow.&lt;/p&gt;
+
+
+&lt;p&gt;The question, I think, is when you should make these sorts of
+exceptions.&lt;/p&gt;
+
+
+&lt;p&gt;&lt;a href="https://jml.io/galahad-principle/"&gt;The Galahad Principle&lt;/a&gt;
+says you shouldn’t make any exceptions! But I think that we can weasel
+our way out of them by saying that the thing we’re committing to 100% on
+is no &lt;em&gt;unprincipled&lt;/em&gt; exceptions. Act only according to exceptions
+that you would be willing to universalise. That is, if you made an
+exception in every case like this, would that be OK?&lt;/p&gt;
+
+
+&lt;p&gt;I don’t think this is quite sufficient though. Sometimes you
+experience genuine changes. If I were to lose my ability to type for
+whatever reason,&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Which would be very bad for dayjob reasons.&lt;/span&gt; I’d probably stop the daily writing,
+and that seems legitimate but also does call into question the
+“necessity” of doing it.&lt;/p&gt;
+
+
+&lt;p&gt;So I think as well as the ability to make exceptions you need to find
+out where your limits are, and learn what to do about them. It’s not
+always to accept them. Sometimes you &lt;em&gt;do&lt;/em&gt; just &lt;a href="https://notebook.drmaciver.com/posts/2024-01-07-08:50.html"&gt;need
+to work harder&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;But sometimes you need to acknowledge that the part of you that was
+saying that this was too hard was right, and actually decide that some
+things don’t need doing and change your commitments accordingly.&lt;/p&gt;
+
+
+&lt;p&gt;Not today though.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2025-04-29-20:18.html" rel="alternate"/>
   </entry>
 </feed>
