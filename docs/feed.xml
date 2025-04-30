@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-04-29T20:18:00+01:00</updated>
+  <updated>2025-04-30T18:50:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,168 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2025-04-18-23:33.html</id>
-    <title>Sometimes things are actually important</title>
-    <updated>2025-04-18T23:48:09+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Sometimes things are actually important&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2025-04-18&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Buddha: happiness is obtained by embracing the four noble truths and
-relinquishing desire.&lt;/p&gt;
-&lt;p&gt;Satan: so what you’re saying is that if I were to relinquish the
-desire to torture Richard Nixon, that would make me… happy?&lt;/p&gt;
-&lt;p&gt;Buddha: well, no… I think that might be a special case.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;(From “Old Harry’s Game”, paraphrased from memory because I couldn’t
-be bothered to find the original)&lt;/p&gt;
-
-
-&lt;p&gt;I think Richard Nixon might also struggle to relinquish the desire to
-not be tortured by Satan.&lt;/p&gt;
-
-
-&lt;p&gt;I’m thinking about this exchange because I’m reading “The option
-method: the myth of unhappiness”, which is volume one of the collected
-works of Bruce Di Marsico, and it’s making me want to punch the author
-in the face and see whether he still believes that how you feel is
-purely a choice about whether or not to be happy.&lt;/p&gt;
-
-
-&lt;p&gt;In his defence, he does from time to time insist that he’s not
-telling anyone that they shouldn’t be unhappy. It’s just that he does
-this sprinkled occasionally throughout constant diatribes about how
-unhappiness isn’t real and you’re only unhappy if you choose to be.&lt;/p&gt;
-
-
-&lt;p&gt;There’s an attitude that I often wonder about that I generally
-attribute to inadequate mathematical education, which is when people
-make grand pronouncements and it’s clear they have not made any attempt
-to find a counterexample.&lt;/p&gt;
-
-
-&lt;p&gt;This book, in particular, it feels like it suffers from a pervasive
-problem in a lot of therapy culture: it doesn’t seem to understand that
-some things actually for real matter, and the nature of them mattering
-is not fully under your control, and while you do have some choice how
-to respond to it, many of the responses you could in theory choose are
-inaccessible to you and would in fact be bad if you could access
-them.&lt;/p&gt;
-
-
-&lt;p&gt;I’m imagining this method being applied to someone in an abusive
-relationship and Bruce telling the abused partner that their unhappiness
-is only in how they react to their partner’s violence, and I want to
-punch him all over again and this time not in order to make a rhetorical
-point.&lt;/p&gt;
-
-
-&lt;p&gt;I do not, I think, believe that he would in fact do this. Certainly I
-hope he would not. But he is making grand pronouncements about how the
-world works that would not hold up this example.&lt;/p&gt;
-
-
-&lt;p&gt;Similarly, the book talks a big talk about what it means to be crazy,
-in a way that makes it very clear that he has never experienced anyone
-having an actual psychotic episode.&lt;/p&gt;
-
-
-&lt;p&gt;There is a pervasive disclaimer that I maintain all advice, therapy,
-and self help has that it fails to include in the literal test: “this
-advice has a domain of applicability, and the author is not competent to
-assess that domain”.&lt;/p&gt;
-
-
-&lt;p&gt;But when you make grand universal claims about the nature of human
-experience, it tends to get my back up even if there might be something
-useful there. It does not feel like a genuine attempt to &lt;a href="https://notebook.drmaciver.com/posts/2025-04-15-22:18.html"&gt;actually
-engage iwth human experience&lt;/a&gt;&lt;/p&gt;
-
-
-&lt;p&gt;Lisa has a good test question when trying to understand a new domain:
-“where wouldn’t you use this?”&lt;/p&gt;
-
-
-&lt;p&gt;I think this question is a little unfair in general because there are
-areas where there are easy answers to this but people are bad at
-answering because they’re not used to using their brains in minimally
-competent ways. That is, it’s very easy to answer, but only if you
-actually ever think in terms of looking for counterexamples.&lt;/p&gt;
-
-
-&lt;p&gt;In order to prime this, I often suggest a list of standard examples.
-For example, when trying to understand a new concept, try asking “is a
-cat an example of this concept?”. It often forces people to define the
-outside better than they naturally would.&lt;/p&gt;
-
-
-&lt;p&gt;So far at least, the option method does not do a good job of
-distinguishing why a cat is not happiness. More relevantly, it doesn’t
-seem to acknowledge that if you were bitten by a cat you might
-legitimately be unhappy about it.&lt;/p&gt;
-
-
-&lt;p&gt;In general, this book strikes me as an example of a pervasive problem
-with a lot of therapy: it fails to recognise that the real world
-actually exists and matters. It assumes that all problems come from
-within, and all the changes that matter are in yourself. If you feel bad
-about an event, the problem is in your response to the event. If you
-want to change how you feel, change yourself not the world that you are
-responding to. And often that’s true! I think particularly if you’re a
-therapist seeing an endless see of &lt;sub&gt;mediocrities&lt;/sub&gt; perfectly
-normal people who are miserable despite nothing terribly going wrong in
-their lives, you’re extra prone to thinking it’s true.&lt;/p&gt;
-
-
-&lt;p&gt;I’ve had very frustrating conversations with even otherwise very good
-therapists in the past where they really didn’t seem to grasp that yes
-that I recognised that it wasn’t solely my responsibility to solve a
-particular problem, but that the issue at hand was not my feelings of
-responsibility but that there was an actual problem that needed to be
-solved and nobody else who could take responsibility for it was, and
-regardless of whether it was my fault or not I would still feel bad if
-the bad thing happened because I cared about the outcome.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;There’s a wide range of things this could be referring
-to and I’m not being specific because of privacy reasons, but the actual
-example I have in mind was really boringly straightforward and obviously
-a problem in which a real actual person suffered and which only one of a
-handful of people could do anything about.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;Because the reality is that some things do actually matter, and while
-you can in theory choose how you react to those things, in practice I
-bet you can’t and also choosing to be happy about things that are
-actually bad (according to whatever standards are important to you) will
-go worse for you.&lt;/p&gt;
-
-
-&lt;p&gt;If what you are searching for is really a calm equanimity in the face
-of all things… well, let me know how it goes for you, and I wish you all
-the best, but it continues to be my position that what is needed is to
-help people act better in the world, and gaslighting people into
-thinking all their problems are in their beliefs about the situation
-doesn’t achieve that.&lt;/p&gt;
-
-
-&lt;p&gt;Part of why I’m reading about &lt;a href="https://notebook.drmaciver.com/posts/2025-04-16-18:31.html"&gt;care&lt;/a&gt;
-at the moment is that it seems to provide a better starting point.
-Regardless of how you feel, some things are &lt;em&gt;actually important&lt;/em&gt;,
-and you want to bring your feelings in line with that importance rather
-than just seeking happiness whatever happens.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2025-04-18-23:33.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-21-20:49.html</id>
     <title>Resuming habits</title>
@@ -1535,7 +1373,7 @@ respond to the idea of doing something towards them.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-29-20:18.html</id>
     <title>Where are your limits?</title>
-    <updated>2025-04-29T20:18:00+01:00</updated>
+    <updated>2025-04-29T21:03:56+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Where are your limits?&lt;/p&gt;
@@ -1662,5 +1500,181 @@ things don’t need doing and change your commitments accordingly.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2025-04-29-20:18.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2025-04-30-18:50.html</id>
+    <title>Heavy up front learning requirements</title>
+    <updated>2025-04-30T18:50:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Heavy up front learning requirements&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2025-04-30&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;So, Dave and I went to Cambridge recently to visit Dani Clode at the
+neuroplasticity lab. She developed a device called &lt;a href="https://www.daniclodedesign.com/thethirdthumb"&gt;the third
+thumb&lt;/a&gt;, which is pretty much what it sounds like - it’s an extra
+thumb you can attach to your hand on the opposite side of your normal
+thumb.&lt;/p&gt;
+
+
+&lt;figure&gt;
+&lt;img alt="Pictured, me with a third thumb." src="/images/third-thumb.png"/&gt;
+&lt;figcaption aria-hidden="true"&gt;Pictured, me with a third
+thumb.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+
+&lt;p&gt;It’s designed specifically as an augmentation, not a prosthesis,
+which I thought was an interesting choice. The difference is essentially
+that it’s not designed to exactly mimic a biological thumb, but instead
+has a couple of adjustments that are there to help you use it in ways
+that you wouldn’t normally use a thumb. e.g. they’ve got an example of
+essentially wrapping the thumb around a bottle while you twist the cap
+on and off with your hand.&lt;/p&gt;
+
+
+&lt;p&gt;One of the things that was interesting about it was that it was just
+very hard to use.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;For me. Dave found it very natural&lt;/span&gt; I was starting to get the hang of it
+by the end, but I was just constantly dropping things or holding them in
+weird ways that didn’t make much sense and often didn’t even actually
+use the third thumb. Some of that is just that it’s foot controlled,&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;You get two degrees of freedom. One with your left foot
+to move the thumb up and down, and one with your right foot which you
+use to grip.&lt;/span&gt; vnd I don’t have very good foot
+control, but I think a lot of it’s just that it is genuinely quite
+unintuitive. Dani told us that they’ve got a week-long training course
+that they run with these to show people how to use them, and people
+usually have the hang of it by the end of the week.&lt;/p&gt;
+
+
+&lt;p&gt;And I thought that was pretty interesting in its own right, because
+it’s fairly rare that I encounter a new sort of device that requires
+this much training to use. Implicitly, you do have that much training in
+how to use a keyboard or how to use a mouse but particularly with the
+keyboard example, there’s an easy onboarding route, you can always hunt
+and peck, right? It’s not that you need a huge amount of training in
+order to be able to use the keyboard at all. It’s that there is a
+fluency that you acquire through time and practice, but the baseline
+level of disfluency is still pretty effective.&lt;/p&gt;
+
+
+&lt;p&gt;The third thumb wasn’t like that at all. I was making a complete mess
+of things, as early on there is no equivalent to hunt and peck, and my
+ability to do things was made strictly worse by using the third thumb.
+You have to just have to figure out how to use it before it’s anything
+other than in the way. Now, we were not encountering it in the proper
+training setting, so this is very much not me saying that the third
+thumb is not a usable object, I’m saying that there is an effort
+required to onboard to using it it, and this is just an interesting
+contrast with most of the devices that we encounter.&lt;/p&gt;
+
+
+&lt;p&gt;Dave and Lisa are currently learning to drive, which seems in some
+ways like a good analogy to that, in that there isn’t an easy onboard to
+learning to drive. But honestly this is partly because there is a high
+safety requirement, and partly because you need to not just know how to
+use the car you need to know how to use it in a way that is predictable
+to others. You could learn to drive by just messing around in a car and
+seeing how that works. There’s nothing that in theory stops you from
+doing this, and presumably many early car users did learn to drive this
+way - formal licensing of drivers is a much more modern form than the
+car itself - but regardless of how artificial the gap is there’s still
+this sort of onboarding requirement.&lt;/p&gt;
+
+
+&lt;p&gt;In contrast, the most transformative technology I can think of that’s
+happened to me in recent years is still the smartphone.&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I know that’s not that recent anymore but I can’t think
+of anything as big since. AI isn’t there yet.&lt;/span&gt;
+Certainly this is probably the biggest example of augmentation in our
+day-to-day lives. But the smartphone is very much not like a third thumb
+or a car. It is designed with continuity to the mobile phone from
+before, which is designed for continuity with previous devices, and it’s
+designed to be easy for kids to pick up,&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Too easy if anything.&lt;/span&gt; and
+is generally a fairly gentle onboarding process. Although your use of it
+will improve with practice, you don’t really have to spend a whole bunch
+of time sitting down with your smartphone and trying to figure out how
+to use it before it’s useful, instead it starts useful and becomes more
+useful over time.&lt;/p&gt;
+
+
+&lt;p&gt;And it seems to me like there’s this split of how much effort you
+have to invest in before you know how to use a particular type of
+technology. It’s not exactly shallow vs steep learning curves, so much
+as it’s about time to first usefulness. There can be a lot of depth to
+learning a new technology, but if it’s rewarding from early on then it
+will be a very different experience from something with a high up front
+cost, and I feel like we’ve gotten very used to the idea that everything
+should be more like the smartphone than the third thumb.&lt;/p&gt;
+
+
+&lt;p&gt;This does on some level make sense of course. In some sense it’s
+clearly better to have this than not, right? It’s much more rewarding to
+immediately be able to use a thing and work from there to improve it
+than it is to have to invest a whole bunch of effort into something that
+isn’t useful until you spend that effort.&lt;label class="margin-toggle sidenote-number" for="fn5"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn5" type="checkbox"/&gt;&lt;span class="sidenote"&gt;In that it turns learning it into an &lt;a href="https://notebook.drmaciver.com/posts/2025-04-12-16:30.html"&gt;anytime
+project&lt;/a&gt;&lt;/span&gt;,
+but it seems like there’s limitations to that approach where not all
+things &lt;em&gt;can&lt;/em&gt; work like that, and that up front investment feels
+extremely daunting and unwelcome.&lt;/p&gt;
+
+
+&lt;p&gt;Part of why I care about this is that one of the things I like about
+the third thumb is that I do have a pervasive sense that the world
+should be weirder than it is. I think this is partly just my “where’s my
+flying car” instinct. I do have a sort of very science fiction type
+attachment to the idea that you can expand human capabilities, and feel
+like it’s a shame that we’ve largely not gone down that route and
+instead just embraced phones as a shitty ad-supported version of our
+cyborg future.&lt;/p&gt;
+
+
+&lt;p&gt;I don’t know how you would ever make physical augmentation useful
+from day one, because it’s such a fundamental change to your way of
+being in the world. In sensory augmentation, maybe, something like &lt;a href="https://web.archive.org/web/20240229152043/http://sensebridge.net/projects/northpaw/order/"&gt;the
+North Paw&lt;/a&gt; is a good example. Because it’s just providing you
+feedback. You can consciously interpret that feedback and gradually you
+internalize it over time. But something like the third thumb or
+prehensile tail, I don’t know how well you can possibly make that an
+incremental approach, and as a result this attachment to easy learning
+experiences feels like a limitation on human progress.&lt;/p&gt;
+
+
+&lt;p&gt;I’ve often thought that there just is a lot of sort of missing space
+in the range of UIs that we try out. And some of that is many of the
+alternatives we tried out just aren’t very good. You can sort of see
+this with VR where it turns into, like, turned out to be like a quite
+limited paradigm that we still haven’t figured out how to use well. But
+I was really interested in the idea of using the Kinect or Leap Motion
+as styles of interaction with a computer and doesn’t seem to have turned
+out that way, and I don’t think that was just the limitations of the
+technology, I think it was the degree to which it required both the
+users and the developers to actually learn something new.&lt;/p&gt;
+
+
+&lt;p&gt;And I think these sorts of cliffs where you have to do active
+training are part of that. I think people have gotten as used to the
+idea that UI should be seamless and intuitive as they are used to the
+idea that websites should be free and that seems like a shame.&lt;/p&gt;
+
+
+&lt;p&gt;Another problem with this is that even things where you don’t have to
+invest this sort of trained skill practice into, I bet we would actually
+benefit from deliberate practice. I bet actually, if I spent a week
+studying how to better use my smartphone and better fit it into my life,
+I probably would figure out important and interesting things about how
+to use it.&lt;/p&gt;
+
+
+&lt;p&gt;I think something I notice is that there is a general lack of
+deliberate practice for our everyday tools and habits built into life,
+and it seems like we are missing something as a result.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2025-04-30-18:50.html" rel="alternate"/>
   </entry>
 </feed>
