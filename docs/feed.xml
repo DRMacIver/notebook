@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-04-30T19:54:49+01:00</updated>
+  <updated>2025-05-01T17:47:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,46 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2025-04-21-20:49.html</id>
-    <title>Resuming habits</title>
-    <updated>2025-04-21T20:52:11+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Resuming habits&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2025-04-21&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I took a deliberate break from the daily posting habit over the
-easter weekend. I think this was the right choice.&lt;/p&gt;
-
-
-&lt;p&gt;But now, I’m faced with a perennial difficult problem: Once you’ve
-paused a habit, you’ve lost inertia, and now you have to deal with the
-difficult task of starting again from a cold start.&lt;/p&gt;
-
-
-&lt;p&gt;What I’ve often found in the past is that this causes you to delay,
-and then the habit develops an ugh field, and this makes it harder and
-harder to start, and suddenly months have passed without you having
-touched it.&lt;/p&gt;
-
-
-&lt;p&gt;I think the solution to this is that whenever resuming a habit, even
-after an incredibly short break but certainly after a long one, you
-should deliberately do so in the lowest effort way possible.&lt;/p&gt;
-
-
-&lt;p&gt;Like this.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2025-04-21-20:49.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-22-16:32.html</id>
     <title>Algebra and insight</title>
@@ -1504,7 +1464,7 @@ things don’t need doing and change your commitments accordingly.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-30-18:50.html</id>
     <title>Heavy up front learning requirements</title>
-    <updated>2025-04-30T19:54:49+01:00</updated>
+    <updated>2025-04-30T19:59:16+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Heavy up front learning requirements&lt;/p&gt;
@@ -1672,5 +1632,92 @@ and it seems like we are missing something as a result.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2025-04-30-18:50.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2025-05-01-17:47.html</id>
+    <title>Studying specifics</title>
+    <updated>2025-05-01T17:47:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Studying specifics&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2025-05-01&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;There’s something I deeply believe, and only very erratically manage
+to follow through on, which is that there’s a huge amount to be learned
+by studying something more than it seemingly warrants. This is in some
+sense the core of the post &lt;a href="https://drmaciver.substack.com/p/overthinking-overthinking"&gt;Overthinking
+overthinking&lt;/a&gt; which is what created the “Overthinking Everything”
+name that I now use for my newsletter and community.&lt;/p&gt;
+
+
+&lt;p&gt;One core reason for this is &lt;a href="https://notebook.drmaciver.com/posts/2020-03-05-11:27.html"&gt;existence
+proofs&lt;/a&gt;. If you put more effort into solving a problem than it really
+warrants, you’ve now demonstrated that that problem &lt;em&gt;was&lt;/em&gt;
+solvable, and you can potentially use that solution in other cases,
+gradually reducing its effort.&lt;/p&gt;
+
+
+&lt;p&gt;I think this relates to one of my points in &lt;a href="https://notebook.drmaciver.com/posts/2025-04-30-18:50.html"&gt;Heavy
+up front learning requirements&lt;/a&gt;, which is that it’s worth spending
+some time heavily studying skills you use regularly, even ones that
+don’t seem like they need it. Sometimes just by really levelling up one
+specific task, you should be able to learn generalisable lessons.&lt;/p&gt;
+
+
+&lt;p&gt;The problem is of course… how do you actually do this? How do you
+pick what specifics to study?&lt;/p&gt;
+
+
+&lt;p&gt;One part of the answer is to just do which ones bring you joy, but I
+think there’s a key problem with this: The specific prescription is to
+study something &lt;em&gt;more than it warrants&lt;/em&gt;. If it brings you joy to
+study it, hopefully you’re already using that joy to prompt you to spend
+more time on it.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Right? Right?? Um, OK, this theory might have some
+problems.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;You could study everything more than it warrants, but then you
+rapidly hit resource constraings. Where are you going to find time for
+that?&lt;/p&gt;
+
+
+&lt;p&gt;I think this is, often, the bottleneck on the joy version too: There
+are many things that if &lt;a href="https://notebook.drmaciver.com/posts/2022-01-03-14:16.html"&gt;you
+just followed your curiosity&lt;/a&gt; you’d find would bring you joy, but
+there are &lt;em&gt;too many things&lt;/em&gt;, and as a result you do none of
+them.&lt;/p&gt;
+
+
+&lt;p&gt;Instead, a better solution I think is to pick arbitrarily and
+capriciously. Perhaps, ideally, at random from those that you think seem
+like they would be interesting to do.&lt;/p&gt;
+
+
+&lt;p&gt;One of my recurring fantasy scenarios is what I’d do with an
+improbably large amount of money, and one of the regular projects I
+think about is just randomly sampling a few hundred people from the
+population and giving them near unlimited healthcare - extensive
+investigations of anything that’s a problem for them, suitable
+interventions (erring on the side of cheap and low risk ones), and then
+studying the data from that extensively to learn useable lessons for the
+broader population.&lt;/p&gt;
+
+
+&lt;p&gt;This strikes me as the right sort of general tool: By sampling
+randomly from the set of places you &lt;em&gt;could&lt;/em&gt; intervene, you learn
+plenty of things that will generalise out of that.&lt;/p&gt;
+
+
+&lt;p&gt;I don’t yet have a very good idea of how to implement this
+though.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2025-05-01-17:47.html" rel="alternate"/>
   </entry>
 </feed>
