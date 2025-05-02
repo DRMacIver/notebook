@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-05-01T17:47:00+01:00</updated>
+  <updated>2025-05-02T14:19:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,123 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2025-04-22-16:32.html</id>
-    <title>Algebra and insight</title>
-    <updated>2025-04-22T18:07:01+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Algebra and insight&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2025-04-22&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I was reading up on Markov Chains today, as one does, partially
-reminding myself about them and partly filling in some gaps in my
-knowledge.&lt;/p&gt;
-
-
-&lt;p&gt;One bit I was reading about was reversible distributions. If you’ve
-got some transition matrix &lt;span class="math inline"&gt;\(P_{ij}\)&lt;/span&gt;,
-a reversible distribution for it is a probability distribution &lt;span class="math inline"&gt;\(q\)&lt;/span&gt; over the states such that &lt;span class="math inline"&gt;\(q_i P_{ij} = q_j P_{ji}\)&lt;/span&gt;. If you also lack
-any intuition about what that means, me too at the point at which it’s
-introduced. The broad intuition is that a Markov chain in a reversible
-distribution can be “run backwards in time” and you can’t tell the
-difference, but the main significance is that it’s an easy property to
-verify that has strong consequences.&lt;/p&gt;
-
-
-&lt;p&gt;Specifically, it’s a theorem that every reversible distribution is
-stationary. That is, if &lt;span class="math inline"&gt;\(q\)&lt;/span&gt; is
-reversible then &lt;span class="math inline"&gt;\(q_i = \sum\limits_j P_{ji}
-q_j\)&lt;/span&gt; for all &lt;span class="math inline"&gt;\(i\)&lt;/span&gt; - the
-distribution is not changed by running the Markov chain forwards.&lt;/p&gt;
-
-
-&lt;p&gt;The proof of this presented in the text I was reading is as
-follows:&lt;/p&gt;
-
-
-&lt;p&gt;We can write &lt;span class="math inline"&gt;\(q_i = q_i \sum\limits_j
-P_{ij}\)&lt;/span&gt; (because it’s a standard property of transition matrices
-that this sum is 1), so &lt;span class="math inline"&gt;\(q_i = \sum\limits_j
-q_i P_{ij} = \sum\limits_j q_j P_{ji}\)&lt;/span&gt;, so &lt;span class="math inline"&gt;\(q\)&lt;/span&gt; is stationary.&lt;/p&gt;
-
-
-&lt;p&gt;I can follow this proof of course. It’s very simple algebra. But
-there’s something about it that feels like a magic trick. I don’t feel
-like I’ve got any actual insight into the nature of reversible
-distributions or have any sense of why they must be stationary from
-this. I’m sure there are plenty of mathematicians who could, and I’m not
-even sure that I &lt;em&gt;need&lt;/em&gt; that insight, but it bugged me.&lt;/p&gt;
-
-
-&lt;p&gt;Thinking about it a bit more lead me to come up with the following
-alternative proof&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Which I suspect I have cribbed in some sort of
-half-remembered manner from Geoffrey Grimmett’s “Probability on Graphs”,
-but if so it was useful to recreate it from memory anyway.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;One way to think about distributions on markov chains is that you’ve
-got a certain amount of “stuff” (probability mass) floating around, and
-at each step that you run the Markov chain, this probability mass flows
-around the graph.&lt;/p&gt;
-
-
-&lt;p&gt;When you’ve got a probability distribution &lt;span class="math inline"&gt;\(q\)&lt;/span&gt;, all of &lt;span class="math inline"&gt;\(q_i\)&lt;/span&gt; flows out of node &lt;span class="math inline"&gt;\(i\)&lt;/span&gt;, and &lt;span class="math inline"&gt;\(\sum\limits_j q_j P_{ji}\)&lt;/span&gt; flows into it.
-That is, for each node &lt;span class="math inline"&gt;\(j\)&lt;/span&gt;, the mass
-in it flows out to every other node, and the fraction of it that goes to
-&lt;span class="math inline"&gt;\(i\)&lt;/span&gt; is &lt;span class="math inline"&gt;\(P_{ji}\)&lt;/span&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;A distribution is stationary if for all &lt;span class="math inline"&gt;\(i\)&lt;/span&gt;, &lt;span class="math inline"&gt;\(q_i =
-\sum\limits_j P_{ji} q_j\)&lt;/span&gt;, but equally we can write this as
-&lt;span class="math inline"&gt;\(q_i - \sum\limits_j P_{ji} q_j  =
-0\)&lt;/span&gt;. The net flow of mass out of &lt;span class="math inline"&gt;\(i\)&lt;/span&gt; is 0.&lt;/p&gt;
-
-
-&lt;p&gt;We can write this flow of mass out of &lt;span class="math inline"&gt;\(q_i\)&lt;/span&gt; as &lt;span class="math inline"&gt;\(q_i =
-\sum\limits_j q_i P_{ij}\)&lt;/span&gt; - the sum of the mass flowing to each
-&lt;span class="math inline"&gt;\(j\)&lt;/span&gt;. So the net flow of mass out of
-&lt;span class="math inline"&gt;\(i\)&lt;/span&gt; is &lt;span class="math inline"&gt;\(\sum\limits_j P_{ij} q_i - P_{ji} q_j\)&lt;/span&gt;.
-That is, there is a net flow along each edge, let’s say &lt;span class="math inline"&gt;\(f_{ij} = P_{ij} q_i - P_{ji} q_j\)&lt;/span&gt;. The
-probability of &lt;span class="math inline"&gt;\(i\)&lt;/span&gt; remains unchanged
-if &lt;span class="math inline"&gt;\(\sum\limits_j f_{ij} = 0\)&lt;/span&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;However, the reversability condition is precisely that all of the
-&lt;span class="math inline"&gt;\(f_{ij} = 0\)&lt;/span&gt;. That is, there is no
-net flow of mass along each edge. As a result, a reversible distribution
-is necessarily stationary, because a much stronger condition applies:
-Not only is the total net flow across the edges from &lt;span class="math inline"&gt;\(i\)&lt;/span&gt; equal to 0, it’s 0 along each edge.&lt;/p&gt;
-
-
-&lt;p&gt;This proof is in some sense much worse. It’s longer and involves more
-algebra rather than less. But after reading this proof I felt like I
-understood why reversibility obviously implied a distribution was
-stationary, and also why it was a much stronger condition than being
-stationary.&lt;/p&gt;
-
-
-&lt;p&gt;I think mathematics - and many other things - benefits hugely from
-this sort of chewing on a problem and seeing it from different angles
-until it actually makes sense. If you just know that a result is true,
-you often find yourself unable to really use it. If you understand at an
-intuitive level why it’s true, it will stick with you and you can really
-see how to apply it, including in cases where it doesn’t quite hold but
-something similar does. Proof without developing insight alongside it is
-certainly better than no proof, but it’s in some sense fundamentally
-fragile and untrustworthy, and it’s often better to mull it over until
-you find the right way to break up the problem to actually allow it to
-make sense at an emotional level.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2025-04-22-16:32.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-23-14:03.html</id>
     <title>What is probabilistic programming?</title>
@@ -1636,7 +1519,7 @@ and it seems like we are missing something as a result.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-05-01-17:47.html</id>
     <title>Studying specifics</title>
-    <updated>2025-05-01T17:47:00+01:00</updated>
+    <updated>2025-05-01T19:34:10+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Studying specifics&lt;/p&gt;
@@ -1719,5 +1602,102 @@ though.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2025-05-01-17:47.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2025-05-02-14:19.html</id>
+    <title>No</title>
+    <updated>2025-05-02T14:19:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;No&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2025-05-02&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;People often talk about needing to be better at saying no.&lt;/p&gt;
+
+
+&lt;p&gt;This is treated as a monolithic skill or general character trait, but
+I think this might be another &lt;a href="https://notebook.drmaciver.com/posts/2022-05-30-18:41.html"&gt;victim
+of metonymy&lt;/a&gt;, and there are actually a number of very different
+circumstances under which you might need to learn this skill. For
+example, here are a few:&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Claude helped with some of these, but I deleted about
+50% of its suggestions and edited most of the rest.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;ol type="1"&gt;
+&lt;li&gt;Saying no to someone who has authority and will legitimately
+pressure you to say yes.&lt;/li&gt;
+&lt;li&gt;Saying no to someone who has authority but does actually want you to
+say no if you can’t do the thing but you’re afraid to disappoint
+them.&lt;/li&gt;
+&lt;li&gt;Saying no to things that you do want to do when you’re too tired to
+do them.&lt;/li&gt;
+&lt;li&gt;Saying no when you really don’t want to do a thing but know the
+person who would do it instead also doesn’t want to do the thing.&lt;/li&gt;
+&lt;li&gt;Saying no to a friend who consistently asks for favors but rarely
+reciprocates.&lt;/li&gt;
+&lt;li&gt;Saying no to family members who expect you to participate in
+traditions that you no longer feel comfortable in.&lt;/li&gt;
+&lt;li&gt;Saying no to a romantic partner who wants to move faster in the
+relationship than you’re comfortable with.&lt;/li&gt;
+&lt;li&gt;Saying no to a project at work that you could help on but isn’t what
+you want to be doing.&lt;/li&gt;
+&lt;li&gt;Saying no to a child who wants something that isn’t good for them,
+despite tears.&lt;/li&gt;
+&lt;li&gt;Saying no to participating in gossip or conversations that make you
+uncomfortable.&lt;/li&gt;
+&lt;li&gt;Saying no to a request that you think is unethicaly.&lt;/li&gt;
+&lt;li&gt;Saying no to requests for information that feel inappropriate..&lt;/li&gt;
+&lt;li&gt;Saying no to taking on additional responsibilities when others
+aren’t doing their share.&lt;/li&gt;
+&lt;li&gt;Saying no to providing help when you are legitimately the best
+person to do it but don’t have the capacity to do so right now.&lt;/li&gt;
+&lt;li&gt;Saying no to providing help when you are legitimately the best
+person to do it when you could do it but really don’t want to.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;For me, I’m pretty good at saying no in circumstances where I’m
+really over capacity, especially if I don’t particularly care about the
+asker. I’m also good at saying no even when there’s a power
+gradient.&lt;/p&gt;
+
+
+&lt;p&gt;However, I’m &lt;em&gt;very bad&lt;/em&gt; at saying no to doing something when
+someone I care about would have to do it instead and also clearly
+doesn’t want to do it.&lt;/p&gt;
+
+
+&lt;p&gt;In some sense, I endorse being bad at that, you &lt;em&gt;should&lt;/em&gt; do
+things for people you care about, but also that caring is (hopefully)
+reciprocated, and you should let them do that for you too, and that’s
+the part I’m bad at letting (or encouraging to) happen. Also you’ll
+often end up in specific instances where &lt;a href="https://notebook.drmaciver.com/posts/2025-03-29-10:40.html"&gt;someone’s
+gotta&lt;/a&gt; and sometimes it’s easier to just do the thing than navigate
+who that someone should be.&lt;/p&gt;
+
+
+&lt;p&gt;Regardless though, this feels like a much more specific problem to
+engage with, for at least two reasons:&lt;/p&gt;
+
+
+&lt;ol type="1"&gt;
+&lt;li&gt;You can look at a specific circumstance and actually engage with the
+concrete feelings around it much better than you can a sort of vague
+“I’m bad at saying no”.&lt;/li&gt;
+&lt;li&gt;You can ask for help on specific circumstances, especially recurring
+ones, in a way that you can’t with the general. Rather than “I need to
+get better at saying no”, you can start with “I need to ask for help
+here”, and it’s a concrete enough problem that help will hopefully be
+forthcoming.&lt;/li&gt;
+&lt;/ol&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2025-05-02-14:19.html" rel="alternate"/>
   </entry>
 </feed>
