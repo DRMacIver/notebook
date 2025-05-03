@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-05-02T14:19:00+01:00</updated>
+  <updated>2025-05-03T16:49:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,180 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2025-04-23-14:03.html</id>
-    <title>What is probabilistic programming?</title>
-    <updated>2025-04-23T15:34:22+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;What is probabilistic programming?&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2025-04-23&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Friends and family often ask me what probabilistic programming is.
-This isn’t very surprising, as I currently work in probabilistic
-programming. Unfortunately I haven’t had a &lt;em&gt;very&lt;/em&gt; good answer for
-them, as this is quite a recent development for me and I haven’t fully
-understood the boundaries of the field.&lt;/p&gt;
-
-
-&lt;p&gt;I think also it’s hard to answer because the field is a little
-confused about what it is, and there’s a “What the field says it is”
-answer and “What the field actually is” answer.&lt;/p&gt;
-
-
-&lt;p&gt;So I’m going to try to give my own answer of what I think the field
-is. It will be a bit overbroad and claim some territory that could
-equally be put in other fields, but I think the overbroad definition is
-more informative than the overly narrow one.&lt;/p&gt;
-
-
-&lt;p&gt;First, let me give you a narrow answer that I think people would
-classically give:&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;And &lt;a href="https://en.wikipedia.org/wiki/Probabilistic_programming"&gt;the
-wikipedia page&lt;/a&gt; gives.&lt;/span&gt; Probabilistic programming is the
-field of developing probabilistic programming languages.&lt;/p&gt;
-
-
-&lt;p&gt;What’s a probabilistic programming language? Well it’s a particular
-type of tool for doing the thing I’m about to describe in the general
-answer.&lt;/p&gt;
-
-
-&lt;p&gt;So, this is what I think: Probabilistic programming is the field of
-constructing random samplers with precise distributional properties,
-centrally but not exclusively&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;That is, this is the origin of the field and the major
-driver of progress in it, but the techniques are more broadly useful and
-using them to do other things would still be considered probabilistic
-programming.&lt;/span&gt; with the goal of
-developing better Monte Carlo methods for doing statistics.&lt;/p&gt;
-
-
-&lt;p&gt;I will now unpack all of those terms so that this definition actually
-makes sense.&lt;/p&gt;
-
-
-&lt;p&gt;A &lt;em&gt;random sampler&lt;/em&gt; is a program that, when run, generates some
-value, typically at random. You could imagine e.g. a coin flip, which
-randomly generates either “heads” or “tails” as your prototypical random
-sampler. The work I did in Hypothesis is also an example of a random
-sampler, where it generates test cases for checking your program with by
-making a bunch of choices at random.&lt;/p&gt;
-
-
-&lt;p&gt;Random samplers have the virtue of being very easy to construct - you
-can just write a simple program that makes a bunch of random choices and
-bam you’ve got a random sampler.&lt;/p&gt;
-
-
-&lt;p&gt;However, it’s often hard to reason about the behaviour of random
-samplers, and in particular to construct random samplers that behave in
-particular ways.&lt;/p&gt;
-
-
-&lt;p&gt;For example, suppose you were creating a random sampler to simulate
-some physical process - say, the weather - it’s quite important that if
-about 10% of your random samples say it’s going to rain tomorrow, then
-you should expect that about 10% of the time tomorrow there will be
-rain.&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;What does that mean? Don’t worry about it too precisely.
-If you want to worry about it more precisely, read &lt;a href="https://notebook.drmaciver.com/posts/2021-10-29-09:43.html"&gt;Probably
-enough probability for you&lt;/a&gt; and &lt;a href="https://notebook.drmaciver.com/posts/2025-03-05-10:29.html"&gt;World
-counting as a tool for understanding probability&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;Having random samplers that have accurate distributional properties
-like this - e.g. that our random model of the weather accurately
-reflects what we should believe about the weather - is an essential
-property for doing &lt;em&gt;monte carlo simulations&lt;/em&gt;, which just means
-that you run a bunch of random simulations and use those as a
-representative of the range for the true value you’re trying to
-calculate. e.g. if you want to know if it’s going to rain on Tuesday,
-run a few thousand weather simulations and see what fraction of them
-rain on Tuesday. If you want to know the total rainfall you should
-expect, average the total rainfall across all of your simulations,
-etc.&lt;/p&gt;
-
-
-&lt;p&gt;These are not the exact calculations that you might hope for in
-classical statistics - what you get is a random number, and if you reran
-the simulation you’d get a slightly different number, but it is a random
-number that you can count on being very close to the true number you
-want,&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Figuring out how close is part of the general body of
-theory needed and developed in doing probabilistic programming.&lt;/span&gt; and you can get it as close as you
-like by running more simulations.&lt;/p&gt;
-
-
-&lt;p&gt;Now, that’s all very well, but what this gives you is an accurate
-estimator of these values &lt;em&gt;in your simulation&lt;/em&gt;. How do you get
-your simulation right?&lt;/p&gt;
-
-
-&lt;p&gt;This is where probabilistic programming and its toolkit for trying to
-control distributional properties of samplers comes in.&lt;/p&gt;
-
-
-&lt;p&gt;In particular it often comes in via trying to do &lt;em&gt;Bayesian
-inference&lt;/em&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;Bayesian inference works as follows:&lt;/p&gt;
-
-
-&lt;ol type="1"&gt;
-&lt;li&gt;You start with some very general model of the world (a “prior
-distribution”), and what data you would expect to see given specific
-configurations of that world.&lt;/li&gt;
-&lt;li&gt;You feed in a bunch of actual data.&lt;/li&gt;
-&lt;li&gt;You get an updated model of the world (a “posterior distribution”)
-out.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;A great deal of probabilistic programming is concerned with how to do
-this sort of Bayesian updating on random samplers.&lt;/p&gt;
-
-
-&lt;p&gt;This allows for a very general approach to doing statistics:&lt;/p&gt;
-
-
-&lt;ol type="1"&gt;
-&lt;li&gt;You write a random sampler for a very broad world model.&lt;/li&gt;
-&lt;li&gt;You feed in a bunch of data and do a Bayesian update on your sampler
-to take into account the data.&lt;/li&gt;
-&lt;li&gt;You run Monte Carlo simulations and use them to make predictions
-about the world.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;All of the hard part is in Step 2. This is an almost impossibly
-difficult problem to do in general. Many of the classic probabilistic
-programming tools try to do this, and what you get is tools that
-sometimes work very well and sometimes just run unusably slowly, with
-very little ability to predict which situation you’ll be in or much
-recourse for fixing it when it happens.&lt;/p&gt;
-
-
-&lt;p&gt;What the lab I’m in tries to do is to instead provide a toolkit that
-makes it easy to write your own algorithms for your specific problem, by
-providing an API for samples that you can perform a variety of
-manipulations on - either standard algorithms or ones of your own
-creation - that let you perform the update.&lt;/p&gt;
-
-
-&lt;p&gt;But, in general, doing this bit well is where most of the active work
-in probabilistic programming is, and why the tools have historically
-been a bit underused. We’re hopeful that a mix of new improvements in
-computing and new advances in probabilistic programming allow us to do a
-lot better than we’ve previously seen, but this is still an active
-research and development area, so we’ll see how that goes.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2025-04-23-14:03.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-24-10:00.html</id>
     <title>A brief introduction to mathematics with one example many times</title>
@@ -1606,7 +1432,7 @@ though.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-05-02-14:19.html</id>
     <title>No</title>
-    <updated>2025-05-02T14:19:00+01:00</updated>
+    <updated>2025-05-02T14:51:20+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;No&lt;/p&gt;
@@ -1699,5 +1525,178 @@ forthcoming.&lt;/li&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2025-05-02-14:19.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2025-05-03-16:49.html</id>
+    <title>The wheel turns</title>
+    <updated>2025-05-03T16:49:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;The wheel turns&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2025-05-03&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Please note: This will contain some spoilers for the entire Wheel of
+Time series of books and up to the end of Season 3 for the show.&lt;/p&gt;
+
+
+&lt;p&gt;Some of my earliest memories of reading Proper Fiction are of the
+Wheel of Time books by Robert Jordan.&lt;/p&gt;
+
+
+&lt;p&gt;I’m not going to claim they’re great literature. I’m not even going
+to claim they’re &lt;em&gt;good&lt;/em&gt; literature. I’ve tried rereading them as
+an adult and just couldn’t. But as a kid they were definitely doing
+something for me, above and beyond their key virtue of being long and
+available in airports.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I grew up in Saudi Arabia but came to England multiple
+times per year, so my childhood involved a lot of flights.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;As a result, I’ve read these books a &lt;em&gt;lot&lt;/em&gt; over the years.
+Certainly every book up to around… let’s say book 8 I think, I’ve read
+multiple times. The Fires of Heaven, book 5, I believe I have read no
+fewer than four times, but that was because it was the only book I had
+with me in a very unpleasant situation, so I read it cover to cover
+several times back to back as a form of very literal escapism. I don’t
+think I’ve done that with any other book before or since.&lt;/p&gt;
+
+
+&lt;p&gt;Also, notably, I couldn’t tell you a single thing about what happened
+in The Fires of Heaven. I was going to say that this was because it was
+one of the books where nothing happened, but &lt;a href="https://en.wikipedia.org/wiki/The_Fires_of_Heaven"&gt;looking it up
+on Wikipedia&lt;/a&gt; I’m not sure that’s true. A bunch of quite notable
+things happen in it. Probably the real reason why I don’t remember it
+very well is because I read it in 1993 and that was, allegedly, quite
+some time ago.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I’m actually a little confused by this chronology
+because I don’t see how the events in question could have occurred in
+1993, and 1994 seems much more plausible, but I was reading a hardcover
+copy of The Fires of Heaven for the first time, which was presumably
+around when it came out in 1993. But maybe this was the lag of books
+making it over to the UK back when the delays were longer or
+something.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;I feel like this series was a sufficiently big part of my childhood
+that I should have more memories tied up in it, but I don’t really.
+Fragments of conversations about it with friends and family as kids come
+to mind (including several about how weird Robert Jordan was about
+girls), and an early realisation about differences in visualisation
+ability from talking to a childhood friend about our respective attempts
+to recreate the flame and the void exercise.&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I never did manage to figure out how to channel
+though.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, I was pretty excited about the TV show, though I tried to
+temper that down to cautiously optimistic.&lt;/p&gt;
+
+
+&lt;p&gt;My emotions since have been… mixed.&lt;/p&gt;
+
+
+&lt;p&gt;They’ve made a bunch of changes to the books and I think that this is
+mostly good. I’m a little irked by some of them - for example, I think
+giving Perrin a wife only to fridge her in the first episode in order to
+give him a more tragic backstory was extremely Not On. I also felt like
+they worked a bit too hard on giving Mat a tragic backstory. And I’m not
+sold on the new backstory for Nynaeve either.&lt;/p&gt;
+
+
+&lt;p&gt;In general, it feels like… they didn’t like how protagonisty Rand
+was, and they felt the need to make everyone else have more protagonist
+energy in order to make the whole show more of an ensemble show than it
+would naturally be (which matches how the books are later, but early on
+Rand is definitely The Protagonist), and I’m not sure that really
+improved things.&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I think it especially didn’t improve things for Nynaeve,
+who is incredibly well cast and didn’t really need the extra support.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;This also shows up in the whole “we don’t know which one of them is
+the dragon” thing. I thought it was an interesting conceit, but also it
+didn’t work. I particularly think that “We don’t know if the dragon will
+be a man or a woman” part really is too big a departure from the books
+and ruins a lot of the worldbuilding such as e.g. the role of the Red
+Ajah. Some of this is an attempt to update the gender politics of the
+books to be less… Robert Jordan… and I generally approve of that, but I
+think there’s a tricky balance to be struck there.&lt;/p&gt;
+
+
+&lt;p&gt;You could see the discomfort with Rand as protagonist play out
+particularly badly in the end of Season 2 where they basically felt the
+need to give everyone a participation trophy. The big battle scene at
+Falme was… incredibly weak, and lacked any of the drama of the books.
+Frankly, I hated the ending of Season 2, and that’s part of why I took
+so long to start on Season 3. I’d given them a pass for Season 1 ending
+so badly, which was apparently mostly due to COVID, but Season 2 was
+them writing a season ending without those problems and the result was…
+extremely mediocre.&lt;/p&gt;
+
+
+&lt;p&gt;I think one thing this emphasised for me is that I do have a nagging
+feeling that the showrunners don’t really understand what was good about
+Robert Jordan’s writing. That’s understandable. I don’t really
+understand what was good about Robert Jordan’s writing, and I used to
+consider myself a big fan, but I think the contrast with the show has
+actually helped me understand that.&lt;/p&gt;
+
+
+&lt;p&gt;And I think one thing that Robert Jordan &lt;em&gt;was&lt;/em&gt; very good at
+was endings. Many or most of his books have big dramatic endings that
+have both major plot impact and a real sense of grandeur to them. The
+season endings so far… didn’t. The season 3 ending is much better than 1
+or 2, but even that it feels like it was a bit lacking.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, Season 3 makes some pretty dramatic changes from the books,
+partly in that it mostly follows book 4 and skips book 3 (presumably to
+incorporate it more into season 3), and I think that’s great. I’m
+actually a huge fan of most of the changes.&lt;/p&gt;
+
+
+&lt;p&gt;One of the big things that I feel like we’re starting to see is that
+they’re pruning plotlines. For example, there’s an entire plotline with
+Siuan Sanche post-stilling that got um… quite aggressively pruned, and I
+think the series is stronger for it. I think ditching the Choedan Kal
+(the giant sa’angreal) is a great choice.&lt;label class="margin-toggle sidenote-number" for="fn5"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn5" type="checkbox"/&gt;&lt;span class="sidenote"&gt;And not just because I think Callandor deserves
+better.&lt;/span&gt;
+This is I think really good, because one of the big problems Robert
+Jordan had as a writer was that he was absolutely incapable of doing
+that. Every plotline spawned two more plotlines, and a lot of why the
+books turned glacial as he wrote more and more of them was that there
+was too much going on for each book.&lt;/p&gt;
+
+
+&lt;p&gt;I’m not so sure about the change to Nynaeve overcoming her block this
+early on,&lt;label class="margin-toggle sidenote-number" for="fn6"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn6" type="checkbox"/&gt;&lt;span class="sidenote"&gt;In the books, that’s book 7.&lt;/span&gt; but mostly because of the degree it
+required Leandrin to be holding the idiot ball to set it up.&lt;/p&gt;
+
+
+&lt;p&gt;Another change I’m cautiously a fan of is the Aviendha/Elayne
+relationship. I actually quite like that one of my formative series as a
+kid had… actually reasonably healthy depictions of poly relationships,
+even if they were much more along the lines of a very heterosexual
+polygamous / harem fantasy,&lt;label class="margin-toggle sidenote-number" for="fn7"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn7" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Though often reverse harem too! I don’t think it’s
+literally canon that the green ajah and their warders were often in
+relationships, but even if they weren’t literally having sex it’s very
+much a poly life partnership.&lt;/span&gt; and I like that that’s
+potentially better balanced out in the series.&lt;label class="margin-toggle sidenote-number" for="fn8"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn8" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Although I’m a little concerned that they’re just going
+to pair people up and Rand will only end up with one of them. Certainly
+it seems like Mat and Min are getting paired up. Rand, Aviendha, and
+Elayne, seems like a plausible triad though given the Aiel traditions.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, Season 3 has definitely restored me to my cautious optimism.
+I still don’t think that this series is &lt;em&gt;great&lt;/em&gt;, but it’s
+starting to manage to be a meaningful improvement on the source
+material, which is how I felt it might turn out at the beginning of
+Season 1 and didn’t really feel throughout most of Season 2. As a
+result, I find myself actually looking forward to Season 4.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2025-05-03-16:49.html" rel="alternate"/>
   </entry>
 </feed>
