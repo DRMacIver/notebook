@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-06-01T13:18:30+01:00</updated>
+  <updated>2025-06-01T13:19:07+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1095,7 +1095,7 @@ potatoes.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-06-01-11:38.html</id>
     <title>Understanding through calculation</title>
-    <updated>2025-06-01T13:18:30+01:00</updated>
+    <updated>2025-06-01T13:19:07+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Understanding through calculation&lt;/p&gt;
@@ -1182,7 +1182,7 @@ sampling&lt;/a&gt; but we can do the calculation directly:&lt;/p&gt;
 
 
 &lt;p&gt;&lt;span class="math display"&gt;\[\begin{align*}
-E(\frac{X_N}{q(N)} &amp;amp; = E(\sum\limits_{n} P(N = n) \frac{X_n}{q(n)})
+E(\frac{X_N}{q(N)}) &amp;amp; = E(\sum\limits_{n} P(N = n) \frac{X_n}{q(n)})
 \\
 &amp;amp; = E(\sum\limits_{n} q(n) \frac{X_n}{q(n)}) \\
 &amp;amp; = E(\sum\limits_{n} X_n) \\
