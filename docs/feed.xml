@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-06-01T13:19:07+01:00</updated>
+  <updated>2025-06-01T13:19:19+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1095,7 +1095,7 @@ potatoes.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-06-01-11:38.html</id>
     <title>Understanding through calculation</title>
-    <updated>2025-06-01T13:19:07+01:00</updated>
+    <updated>2025-06-01T13:19:19+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Understanding through calculation&lt;/p&gt;
@@ -1188,7 +1188,7 @@ E(\frac{X_N}{q(N)}) &amp;amp; = E(\sum\limits_{n} P(N = n) \frac{X_n}{q(n)})
 &amp;amp; = E(\sum\limits_{n} X_n) \\
 &amp;amp; = \sum\limits_{n} E(X_n) \\
 &amp;amp; = \sum\limits_{n} \mu_n \\
-&amp;amp; = \mu_n \\
+&amp;amp; = \mu \\
 \end{align*}\]&lt;/span&gt;&lt;/p&gt;
 
 
@@ -1211,7 +1211,7 @@ like estimator&lt;/a&gt;”:&lt;/p&gt;
 
 
 &lt;p&gt;Draw &lt;span class="math inline"&gt;\(n\)&lt;/span&gt; from &lt;span class="math inline"&gt;\(N\)&lt;/span&gt;, sample &lt;span class="math inline"&gt;\(x_i\)&lt;/span&gt; from &lt;span class="math inline"&gt;\(i =
-0, \ldots, n\)&lt;/span&gt;, and return &lt;span class="math inline"&gt;\(\sigma\limits_{i = 0}^n \frac{x_i}{P(N \geq
+0, \ldots, n\)&lt;/span&gt;, and return &lt;span class="math inline"&gt;\(\sum\limits_{i = 0}^n \frac{x_i}{P(N \geq
 i)}\)&lt;/span&gt;.&lt;/p&gt;
 
 

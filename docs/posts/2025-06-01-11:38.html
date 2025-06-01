@@ -135,7 +135,7 @@ E(\frac{X_N}{q(N)}) &amp; = E(\sum\limits_{n} P(N = n) \frac{X_n}{q(n)})
 &amp; = E(\sum\limits_{n} X_n) \\
 &amp; = \sum\limits_{n} E(X_n) \\
 &amp; = \sum\limits_{n} \mu_n \\
-&amp; = \mu_n \\
+&amp; = \mu \\
 \end{align*}\]</span></p>
 <p>Basically, dividing by <span class="math inline">\(q(n)\)</span>
 “cancels out” the frequency with which we sample <span class="math inline">\(n\)</span>, and so as a result we get exactly the
@@ -150,7 +150,7 @@ information you get from the first <span class="math inline">\(n -
 described as a “<a href="https://en.wikipedia.org/wiki/Horvitz%E2%80%93Thompson_estimator">Horvitz-Thompson
 like estimator</a>”:</p>
 <p>Draw <span class="math inline">\(n\)</span> from <span class="math inline">\(N\)</span>, sample <span class="math inline">\(x_i\)</span> from <span class="math inline">\(i =
-0, \ldots, n\)</span>, and return <span class="math inline">\(\sigma\limits_{i = 0}^n \frac{x_i}{P(N \geq
+0, \ldots, n\)</span>, and return <span class="math inline">\(\sum\limits_{i = 0}^n \frac{x_i}{P(N \geq
 i)}\)</span>.</p>
 <p>I’ve spent about a week stumped about why this works. I haven’t been
 thinking about it constantly, but when I have I’ve been trying to gain
