@@ -116,11 +116,10 @@ struggling with because I lacked insight was just shut up and calculate,
 and <em>after doing the calculation the result was obvious</em>.</p>
 <p>Here’s the problem:</p>
 <p>Suppose you’ve got some quantity <span class="math inline">\(\mu =
-\sum\limits_{n \geq 0} \mu_n\)</span>, and you have unbiased estimators
-<span class="math inline">\(X_i\)</span> for the summands, i.e. <span class="math inline">\(E(X_i) = \mu_i\)</span>.<label class="margin-toggle sidenote-number" for="fn2"></label><input class="margin-toggle" id="fn2" type="checkbox"/><span class="sidenote">NB these estimators might not be independent and that’s
-fine.</span> How
-do you construct an unbiased estimator for <span class="math inline">\(x\)</span>?</p>
-<p>Here’s an easy version that I learned from <a href="https://alexlew.net/">Alex Lew</a>’s PhD thesis.<label class="margin-toggle sidenote-number" for="fn3"></label><input class="margin-toggle" id="fn3" type="checkbox"/><span class="sidenote">You’re going to be hearing about Alex a lot in these
+\sum\limits_{n \geq 0} \mu_n\)</span>, and you have unbiased (but not
+necessarily independent) estimators <span class="math inline">\(X_i\)</span> for the summands, i.e. <span class="math inline">\(E(X_i) = \mu_i\)</span>.How do you construct an
+unbiased estimator for <span class="math inline">\(\mu\)</span>?</p>
+<p>Here’s an easy version that I learned from <a href="https://alexlew.net/">Alex Lew</a>’s PhD thesis.<label class="margin-toggle sidenote-number" for="fn2"></label><input class="margin-toggle" id="fn2" type="checkbox"/><span class="sidenote">You’re going to be hearing about Alex a lot in these
 posts I suspect, as a nontrivial amount of what I’m trying to do right
 now is to mainline his entire body of work until I understand all the
 bits of it I care about.</span></p>
@@ -142,7 +141,7 @@ E(\frac{X_N}{q(N)}) &amp; = E(\sum\limits_{n} P(N = n) \frac{X_n}{q(n)})
 expectation we want. I’m not sure how it looks to you, but for me this
 calculation very much ends with me feeling like I get the result.</p>
 <p>Something Alex pointed out to me is that in the case we’re interested
-in, you more or less have to evaluate the <span class="math inline">\(X_i\)</span> in sequence.<label class="margin-toggle sidenote-number" for="fn4"></label><input class="margin-toggle" id="fn4" type="checkbox"/><span class="sidenote">Specifically they’re all unbiased estimators for <span class="math inline">\(Y^n\)</span> for some random variable <span class="math inline">\(Y\)</span>, and you calculate <span class="math inline">\(X_n\)</span> from <span class="math inline">\(n\)</span> independent draws of <span class="math inline">\(Y\)</span>.</span>
+in, you more or less have to evaluate the <span class="math inline">\(X_i\)</span> in sequence.<label class="margin-toggle sidenote-number" for="fn3"></label><input class="margin-toggle" id="fn3" type="checkbox"/><span class="sidenote">Specifically they’re all unbiased estimators for <span class="math inline">\(Y^n\)</span> for some random variable <span class="math inline">\(Y\)</span>, and you calculate <span class="math inline">\(X_n\)</span> from <span class="math inline">\(n\)</span> independent draws of <span class="math inline">\(Y\)</span>.</span>
 This makes this method quite wasteful, because it ignores all of the
 information you get from the first <span class="math inline">\(n -
 1\)</span> coefficients.</p>
@@ -156,7 +155,7 @@ i)}\)</span>.</p>
 thinking about it constantly, but when I have I’ve been trying to gain
 insight into it. In particular this is apparently understandable as an
 application of Alex’s <a href="https://arxiv.org/abs/2203.02836">RAVI
-framework</a><label class="margin-toggle sidenote-number" for="fn5"></label><input class="margin-toggle" id="fn5" type="checkbox"/><span class="sidenote">Which is still very much at the stage where I stare at
+framework</a><label class="margin-toggle sidenote-number" for="fn4"></label><input class="margin-toggle" id="fn4" type="checkbox"/><span class="sidenote">Which is still very much at the stage where I stare at
 the calculations and Don’t Quite Get It for me. All of the pieces make
 sense, but I haven’t got it to cohere into something I can actually use
 yet.</span>, and I was very much failing to get
@@ -166,7 +165,7 @@ how that worked here.</p>
 can just shut up and calculate and it’s easy then.</p>
 <p>Here’s how it works: First, draw some random finite set of integers
 <span class="math inline">\(S\)</span>, according to whatever
-distribution you like.<label class="margin-toggle sidenote-number" for="fn6"></label><input class="margin-toggle" id="fn6" type="checkbox"/><span class="sidenote">But, crucially, independently of the <span class="math inline">\(X_i\)</span>.</span> For our use case it will be <span class="math inline">\(S = \{0, \ldots, N\}\)</span> but the result
+distribution you like.<label class="margin-toggle sidenote-number" for="fn5"></label><input class="margin-toggle" id="fn5" type="checkbox"/><span class="sidenote">But, crucially, independently of the <span class="math inline">\(X_i\)</span>.</span> For our use case it will be <span class="math inline">\(S = \{0, \ldots, N\}\)</span> but the result
 doesn’t depend on that.</p>
 <p>Now, construct the random variable <span class="math inline">\(T =
 \sum\limits_{i \in S} c_i X_i\)</span> for some coefficients <span class="math inline">\(c_i\)</span> that we’ll choose later. Now:</p>
@@ -197,7 +196,7 @@ is a perfectly valid method, but it does feel a little bit unsatisfying.
 On the other hand, I think given the linearity of expectation and the
 law of conditional expectation, it’s pretty reasonable to expect that
 <em>something</em> like this would work, so I’m not sure.</p>
-<p>Either way, I think probably part of derusting my mathematics<label class="margin-toggle sidenote-number" for="fn7"></label><input class="margin-toggle" id="fn7" type="checkbox"/><span class="sidenote">Actually I’m not sure this even counts as derusting. I
+<p>Either way, I think probably part of derusting my mathematics<label class="margin-toggle sidenote-number" for="fn6"></label><input class="margin-toggle" id="fn6" type="checkbox"/><span class="sidenote">Actually I’m not sure this even counts as derusting. I
 feel like calculation has always been the part of mathematics I was
 worst at.</span> is going to be getting comfortable
 with gaining understanding through calculation, and figuring out when

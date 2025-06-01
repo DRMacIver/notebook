@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-06-01T13:22:48+01:00</updated>
+  <updated>2025-06-01T13:23:14+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1095,7 +1095,7 @@ potatoes.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-06-01-11:38.html</id>
     <title>Understanding through calculation</title>
-    <updated>2025-06-01T13:22:48+01:00</updated>
+    <updated>2025-06-01T13:23:14+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Understanding through calculation&lt;/p&gt;
@@ -1161,13 +1161,12 @@ and &lt;em&gt;after doing the calculation the result was obvious&lt;/em&gt;.&lt;
 
 
 &lt;p&gt;Suppose you’ve got some quantity &lt;span class="math inline"&gt;\(\mu =
-\sum\limits_{n \geq 0} \mu_n\)&lt;/span&gt;, and you have unbiased estimators
-&lt;span class="math inline"&gt;\(X_i\)&lt;/span&gt; for the summands, i.e. &lt;span class="math inline"&gt;\(E(X_i) = \mu_i\)&lt;/span&gt;.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;NB these estimators might not be independent and that’s
-fine.&lt;/span&gt; How
-do you construct an unbiased estimator for &lt;span class="math inline"&gt;\(x\)&lt;/span&gt;?&lt;/p&gt;
+\sum\limits_{n \geq 0} \mu_n\)&lt;/span&gt;, and you have unbiased (but not
+necessarily independent) estimators &lt;span class="math inline"&gt;\(X_i\)&lt;/span&gt; for the summands, i.e. &lt;span class="math inline"&gt;\(E(X_i) = \mu_i\)&lt;/span&gt;.How do you construct an
+unbiased estimator for &lt;span class="math inline"&gt;\(\mu\)&lt;/span&gt;?&lt;/p&gt;
 
 
-&lt;p&gt;Here’s an easy version that I learned from &lt;a href="https://alexlew.net/"&gt;Alex Lew&lt;/a&gt;’s PhD thesis.&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;You’re going to be hearing about Alex a lot in these
+&lt;p&gt;Here’s an easy version that I learned from &lt;a href="https://alexlew.net/"&gt;Alex Lew&lt;/a&gt;’s PhD thesis.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;You’re going to be hearing about Alex a lot in these
 posts I suspect, as a nontrivial amount of what I’m trying to do right
 now is to mainline his entire body of work until I understand all the
 bits of it I care about.&lt;/span&gt;&lt;/p&gt;
@@ -1199,7 +1198,7 @@ calculation very much ends with me feeling like I get the result.&lt;/p&gt;
 
 
 &lt;p&gt;Something Alex pointed out to me is that in the case we’re interested
-in, you more or less have to evaluate the &lt;span class="math inline"&gt;\(X_i\)&lt;/span&gt; in sequence.&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Specifically they’re all unbiased estimators for &lt;span class="math inline"&gt;\(Y^n\)&lt;/span&gt; for some random variable &lt;span class="math inline"&gt;\(Y\)&lt;/span&gt;, and you calculate &lt;span class="math inline"&gt;\(X_n\)&lt;/span&gt; from &lt;span class="math inline"&gt;\(n\)&lt;/span&gt; independent draws of &lt;span class="math inline"&gt;\(Y\)&lt;/span&gt;.&lt;/span&gt;
+in, you more or less have to evaluate the &lt;span class="math inline"&gt;\(X_i\)&lt;/span&gt; in sequence.&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Specifically they’re all unbiased estimators for &lt;span class="math inline"&gt;\(Y^n\)&lt;/span&gt; for some random variable &lt;span class="math inline"&gt;\(Y\)&lt;/span&gt;, and you calculate &lt;span class="math inline"&gt;\(X_n\)&lt;/span&gt; from &lt;span class="math inline"&gt;\(n\)&lt;/span&gt; independent draws of &lt;span class="math inline"&gt;\(Y\)&lt;/span&gt;.&lt;/span&gt;
 This makes this method quite wasteful, because it ignores all of the
 information you get from the first &lt;span class="math inline"&gt;\(n -
 1\)&lt;/span&gt; coefficients.&lt;/p&gt;
@@ -1219,7 +1218,7 @@ i)}\)&lt;/span&gt;.&lt;/p&gt;
 thinking about it constantly, but when I have I’ve been trying to gain
 insight into it. In particular this is apparently understandable as an
 application of Alex’s &lt;a href="https://arxiv.org/abs/2203.02836"&gt;RAVI
-framework&lt;/a&gt;&lt;label class="margin-toggle sidenote-number" for="fn5"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn5" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Which is still very much at the stage where I stare at
+framework&lt;/a&gt;&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Which is still very much at the stage where I stare at
 the calculations and Don’t Quite Get It for me. All of the pieces make
 sense, but I haven’t got it to cohere into something I can actually use
 yet.&lt;/span&gt;, and I was very much failing to get
@@ -1233,7 +1232,7 @@ can just shut up and calculate and it’s easy then.&lt;/p&gt;
 
 &lt;p&gt;Here’s how it works: First, draw some random finite set of integers
 &lt;span class="math inline"&gt;\(S\)&lt;/span&gt;, according to whatever
-distribution you like.&lt;label class="margin-toggle sidenote-number" for="fn6"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn6" type="checkbox"/&gt;&lt;span class="sidenote"&gt;But, crucially, independently of the &lt;span class="math inline"&gt;\(X_i\)&lt;/span&gt;.&lt;/span&gt; For our use case it will be &lt;span class="math inline"&gt;\(S = \{0, \ldots, N\}\)&lt;/span&gt; but the result
+distribution you like.&lt;label class="margin-toggle sidenote-number" for="fn5"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn5" type="checkbox"/&gt;&lt;span class="sidenote"&gt;But, crucially, independently of the &lt;span class="math inline"&gt;\(X_i\)&lt;/span&gt;.&lt;/span&gt; For our use case it will be &lt;span class="math inline"&gt;\(S = \{0, \ldots, N\}\)&lt;/span&gt; but the result
 doesn’t depend on that.&lt;/p&gt;
 
 
@@ -1278,7 +1277,7 @@ law of conditional expectation, it’s pretty reasonable to expect that
 &lt;em&gt;something&lt;/em&gt; like this would work, so I’m not sure.&lt;/p&gt;
 
 
-&lt;p&gt;Either way, I think probably part of derusting my mathematics&lt;label class="margin-toggle sidenote-number" for="fn7"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn7" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Actually I’m not sure this even counts as derusting. I
+&lt;p&gt;Either way, I think probably part of derusting my mathematics&lt;label class="margin-toggle sidenote-number" for="fn6"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn6" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Actually I’m not sure this even counts as derusting. I
 feel like calculation has always been the part of mathematics I was
 worst at.&lt;/span&gt; is going to be getting comfortable
 with gaining understanding through calculation, and figuring out when
