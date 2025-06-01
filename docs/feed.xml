@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-06-01T13:19:19+01:00</updated>
+  <updated>2025-06-01T13:19:47+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1095,7 +1095,7 @@ potatoes.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-06-01-11:38.html</id>
     <title>Understanding through calculation</title>
-    <updated>2025-06-01T13:19:19+01:00</updated>
+    <updated>2025-06-01T13:19:47+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Understanding through calculation&lt;/p&gt;
@@ -1281,8 +1281,8 @@ law of conditional expectation, it’s pretty reasonable to expect that
 &lt;p&gt;Either way, I think probably part of derusting my mathematics&lt;label class="margin-toggle sidenote-number" for="fn7"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn7" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Actually I’m not sure this even counts as derusting. I
 feel like calculation has always been the part of mathematics I was
 worst at.&lt;/span&gt; is going to be getting comfortable
-with getting insight from calculation, and figuring out when and how
-that works.&lt;/p&gt;
+with gaining understanding through calculation, and figuring out when
+and how that works.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2025-06-01-11:38.html" rel="alternate"/>
