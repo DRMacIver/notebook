@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-05-04T09:53:00+01:00</updated>
+  <updated>2025-06-01T11:38:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,177 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2025-04-25-13:33.html</id>
-    <title>Introducing a parameter to work out sums</title>
-    <updated>2025-04-25T15:47:04+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Introducing a parameter to work out sums&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2025-04-25&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;In &lt;a href="https://notebook.drmaciver.com/posts/2025-04-24-10:00.html"&gt;my
-last post&lt;/a&gt; I talked about the problem of working out &lt;span class="math inline"&gt;\(\sum\limits_{i = 1}^n i\)&lt;/span&gt;. In it, I
-strongly implied that there wasn’t a way to just work out the
-answer.&lt;/p&gt;
-
-
-&lt;p&gt;This isn’t actually true. There’s a quite straightforward way to just
-work out the answer. It still requires a little bit of spotting the
-trick, but the tricks in question are more like puzzle pieces that you
-have to fit together than genuine insights.&lt;/p&gt;
-
-
-&lt;p&gt;However, it requires a bunch more calculus than I wanted to assume in
-my last post, so I left it out. If you do know the calculus it might be
-informative though.&lt;/p&gt;
-
-
-&lt;p&gt;The idea is this: Rather than work out &lt;span class="math inline"&gt;\(\sum\limits_{i = 1}^n i\)&lt;/span&gt;, we work out
-&lt;span class="math inline"&gt;\(f_n(x) = \sum\limits_{i = 1}^n i
-x^i\)&lt;/span&gt;, and then evaluate &lt;span class="math inline"&gt;\(f(1)\)&lt;/span&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;This will, weirdly, turn out to be easier.&lt;/p&gt;
-
-
-&lt;p&gt;How do we do this? Like so:&lt;/p&gt;
-
-
-&lt;p&gt;&lt;span class="math display"&gt;\[\begin{align*}
-f_n(x) &amp;amp; = \sum\limits_{i = 1}^n i x^i \\
-&amp;amp; = x \sum\limits_{i = 1}^n i x^{i - 1} \\
-&amp;amp; = x \frac{d}{dx} \sum\limits_{i = 1}^n x^i \\
-&amp;amp; = x \frac{d}{dx} \frac{x^{n + 1} - 1}{x - 1} \\
-&amp;amp; = x \left(\frac{(n + 1)x^n}{x - 1} - \frac{x^{n + 1} - 1}{(x -
-1)^2} \right) \\
-&amp;amp; = x \left(\frac{(n + 1)x^n(x - 1) - x^{n + 1} + 1}{(x - 1)^2}
-\right) \\
-&amp;amp; = x \left(\frac{(n + 1)x^{n + 1} - (n + 1)x^n - x^{n + 1} + 1}{(x
-- 1)^2} \right) \\
-&amp;amp; = x \left(\frac{nx^{n + 1} - (n + 1)x^n + 1}{(x - 1)^2} \right) \\
-\end{align*}\]&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;We want to evaluate &lt;span class="math inline"&gt;\(f_n(1)\)&lt;/span&gt;, but
-this would require us to divide 0 by 0, so we have to take limits. We
-can do this with two applications of &lt;a href="https://en.wikipedia.org/wiki/L%27H%C3%B4pital%27s_rule"&gt;L’Hôpital’s
-rule&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;&lt;span class="math display"&gt;\[\begin{align*}
-\lim_{x \to 1} x \frac{nx^{n + 1} - (n + 1)x^n + 1}{(x - 1)^2}
-&amp;amp;=  \lim_{x \to 1} x \lim_{x \to 1} \frac{n (n + 1) x^n - (n + 1) n
-x^{n - 1}}{2(x - 1)} \\
-&amp;amp; =  \frac{n (n + 1) n x^{n - 1} - (n + 1) n (n - 1) x^{n - 2}}{2}
-\\
-&amp;amp; = \lim_{x \to 1} \frac{n (n + 1)  x^{n - 2} (n x - n + 1)}{2} \\
-&amp;amp; = \frac{n (n + 1)}{2} \\
-\end{align*}\]&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;Which is the desired result.&lt;/p&gt;
-
-
-&lt;p&gt;Now, I think it would be reasonable to consider this approach to be
-in almost every way worse than the last one. I don’t disagree. That was
-a whole bunch of symbol shuffling from which you cannot, I think, derive
-much insight about the nature of the problem.&lt;/p&gt;
-
-
-&lt;p&gt;But, on the other hand, I think it’s worth realising that sometimes
-that’s good actually. Sometimes you don’t really need the insight, or
-can’t find it, and you just want to shut up and calculate. This sort of
-tool is very useful to have handy for that.&lt;/p&gt;
-
-
-&lt;p&gt;For example, suppose you wanted to calculate &lt;span class="math inline"&gt;\(\sum\limits_{i=1}^n i^2\)&lt;/span&gt; instead. Our
-previous methods don’t help us here because there are no nice sums to
-rearrange. But with this technique it’s actually quite straightforward
-(if, admittedly, ugly).&lt;/p&gt;
-
-
-&lt;p&gt;First, let’s make use of our previously solved problem to simplify
-this slightly. We’re actually going to calculate &lt;span class="math inline"&gt;\(\sum\limits_{i=1}^n i(i - 1)\)&lt;/span&gt;. We can then
-just add an extra &lt;span class="math inline"&gt;\(\frac{n(n +
-1)}{2}\)&lt;/span&gt; to the result to get our desired sum.&lt;/p&gt;
-
-
-&lt;p&gt;Now, let &lt;span class="math inline"&gt;\(g(x) = \sum\limits_{i=1}^n i(i -
-1) x^{i - 2}\)&lt;/span&gt;. This is now the second derivative of &lt;span class="math inline"&gt;\(\sum\limits_{i = 1}^n x^i\)&lt;/span&gt;, which we can
-work out&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I asked Wolfram Alpha, because I was lazy, but you could
-do this by hand through the application of the usual rules for
-calculating derivatives if you can be bothered. I mostly didn’t because
-writing it up in my notebook software is a pain.&lt;/span&gt; is &lt;span class="math inline"&gt;\(\frac{x^n (n^2 (x - 1)^2 - n x^2 + n + 2 x) - 2
-x)}{(x - 1)^3 x}\)&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;Taking three derivatives with L’Hôpital’s rule&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Wolfram alpha again. Sorry.&lt;/span&gt; we
-get:&lt;/p&gt;
-
-
-&lt;p&gt;&lt;span class="math display"&gt;\[\begin{align*}
-g(1) &amp;amp;= \lim_{x \to 1} \frac{x^n (n^2 (x - 1)^2 - n x^2 + n + 2 x) -
-2 x)}{((x - 1)^3 x)}\\
-&amp;amp;= \lim_{x \to 1} \frac{ (n - 1) n (n + 1) x^(n - 3) (n^2 (x - 1)^2
-+ 2 n (x^2 - 1) + 2 x)}{6(4x - 3)} \\
-&amp;amp; = \frac{ (n - 1) n (n + 1) (2)}{6} \\
-&amp;amp; = \frac{ (n - 1) n (n + 1) }{3} \\
-\end{align*}\]&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;This means that our desired result is&lt;/p&gt;
-
-
-&lt;p&gt;&lt;span class="math display"&gt;\[\begin{align*}
-\sum\limits_{i = 1}^n i^2 &amp;amp; =  \frac{(n - 1) n (n + 1) }{3} +
-\frac{n(n + 1)}{2} \\
-&amp;amp; = \frac{2 (n - 1) n (n + 1)  + 3 n(n + 1) }{6} \\
-&amp;amp; = \frac{n (n + 1) ( 2n - 2  + 3)}{6} \\
-&amp;amp; = \frac{n (n + 1) ( 2n + 1)}{6} \\
-\end{align*}\]&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;This is&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Conveniently, because I really didn’t want to track down
-the error if I made one.&lt;/span&gt; the correct answer, as you can
-verify by checking the first couple results.&lt;/p&gt;
-
-
-&lt;p&gt;Now… Do you ever need to be able to do this? Honestly, not really. I
-get the impression that this used to be a much more important skill, and
-these days you can mostly use symbolic algebra packages to do it for
-you, and also you mostly don’t need it anyway, but mathematicians used
-to get very excited about this sort of formula, and I think they’re
-still important in a bunch of places. e.g. I bet people who do
-combinatorics care much more about being able to do calculations like
-this than I do, because you often reduce counting problems to this sort
-of calculation.&lt;/p&gt;
-
-
-&lt;p&gt;Personally, I like it at least partly for its illustrative value.
-It’s sometimes very helpful to know that you &lt;em&gt;could&lt;/em&gt; solve a
-problem if you were just willing to shut up, sit down, and do the
-algebra. There’s also a satisfying sudoku-like quality to do it.&lt;/p&gt;
-
-
-&lt;p&gt;It’s also interesting having this sort of skillset at all because I
-get the feeling that basically nobody learns it any more. I learned it
-because I read “Schaum’s Outlines of Advanced Calculus” at a formative
-age, and it taught me all sorts of tricks like this, but it meant I went
-into university with this whole bag of tricks that nobody else had. They
-weren’t &lt;em&gt;useful&lt;/em&gt; tricks to have exactly, but they were
-interesting, and I do feel like it shaped how I look at mathematics a
-fair bit.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2025-04-25-13:33.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-26-09:39.html</id>
     <title>More ways to work out sums</title>
@@ -1184,7 +1013,7 @@ result, I find myself actually looking forward to Season 4.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-05-04-09:53.html</id>
     <title>How to cook frozen chips</title>
-    <updated>2025-05-04T09:53:00+01:00</updated>
+    <updated>2025-05-04T10:11:52+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;How to cook frozen chips&lt;/p&gt;
@@ -1262,5 +1091,200 @@ potatoes.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2025-05-04-09:53.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2025-06-01-11:38.html</id>
+    <title>Understanding through calculation</title>
+    <updated>2025-06-01T11:38:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Understanding through calculation&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2025-06-01&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I’m in the process of trying to derust my maths skills, so I’m going
+to try posting about mathematics every day for June and see if that
+helps.&lt;/p&gt;
+
+
+&lt;p&gt;One of the things I’ve been noticing with a lot of what I’ve been
+reading (which has mostly been about probability) is that there are a
+lot of points where you want to prove some result, and the way you do
+that is just a bunch of algebra, and I tend to get… not exactly lost,
+but unsatisfied. I can understand the calculation, and I could even
+recreate it, but I don’t feel like I understand &lt;em&gt;why&lt;/em&gt; the result
+is true more at the end than I did at the beginning.&lt;/p&gt;
+
+
+&lt;p&gt;I pointed at part of this in &lt;a href="https://notebook.drmaciver.com/posts/2025-04-22-16:32.html"&gt;algebra
+and insight&lt;/a&gt;, where a result that was very easy to prove through
+calculation became much easier to understand by reformulating the
+problem with an insight. Crucially, that insight &lt;em&gt;didn’t actually
+reduce the amount of calculation&lt;/em&gt;, but it replaced a completely
+opaque calculation with one that was more about confirming the insight
+actually worked.&lt;/p&gt;
+
+
+&lt;p&gt;Thing is… I don’t think you can get away without doing any
+uninformative calculations. Calculations are important, and sometimes
+what you need is an actual concrete result, and you need to calculate to
+do that. I think probably you can mine most calculations for insight,
+but I don’t think there’s any particularly deep reason that &lt;span class="math inline"&gt;\(3 \times 106 = 318\)&lt;/span&gt;, that’s just what you
+get when you run the calculation.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;This isn’t entirely true, as a whole bunch of mental
+arithmetic comes down to breaking numbers down and seeing how they fit
+together. For example, this one is clearly true because &lt;span class="math inline"&gt;\(3 \times 106 = 3 \times 100 + 3 \times 6 = 300 +
+18 = 318\)&lt;/span&gt;. So it’s not that the insights don’t exist, it’s more
+like the claim doesn’t feel like it needs justifying. The fact that
+&lt;span class="math inline"&gt;\(3 \times 106 = 318\)&lt;/span&gt; is more or less
+allowed to stand on its own. It still needs checking, and if I’d told
+you for example that &lt;span class="math inline"&gt;\(3 \times 106 =
+315\)&lt;/span&gt; you should immediately have a suspicious reaction to that,
+so the true answer in some ways needs less insight than the false
+answer. I’m not sure what point I’m making and I think I’m sortof
+disagreeing with the main thrust of my argument at this point. I think
+what I mean to say is that this sort of calculation is one you might
+reasonably feel comfortable leaving insightless.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;But I ran into an interesting example in the opposite direction this
+morning, where the key to understanding something that I’d been
+struggling with because I lacked insight was just shut up and calculate,
+and &lt;em&gt;after doing the calculation the result was obvious&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Here’s the problem:&lt;/p&gt;
+
+
+&lt;p&gt;Suppose you’ve got some quantity &lt;span class="math inline"&gt;\(\mu =
+\sum\limits_{n \geq 0} \mu_n\)&lt;/span&gt;, and you have unbiased estimators
+&lt;span class="math inline"&gt;\(X_i\)&lt;/span&gt; for the summands, i.e. &lt;span class="math inline"&gt;\(E(X_i) = \mu_i\)&lt;/span&gt;.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;NB these estimators might not be independent and that’s
+fine.&lt;/span&gt; How
+do you construct an unbiased estimator for &lt;span class="math inline"&gt;\(x\)&lt;/span&gt;?&lt;/p&gt;
+
+
+&lt;p&gt;Here’s an easy version that I learned from &lt;a href="https://alexlew.net/"&gt;Alex Lew&lt;/a&gt;’s PhD thesis.&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;You’re going to be hearing about Alex a lot in these
+posts I suspect, as a nontrivial amount of what I’m trying to do right
+now is to mainline his entire body of work until I understand all the
+bits of it I care about.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;First, take some random positive integer valued variable &lt;span class="math inline"&gt;\(N\)&lt;/span&gt;, with &lt;span class="math inline"&gt;\(P(N=n) = q(n)\)&lt;/span&gt;, such that &lt;span class="math inline"&gt;\(q(n) &amp;gt; 0\)&lt;/span&gt; for all &lt;span class="math inline"&gt;\(n \geq 0\)&lt;/span&gt;. Sample a value &lt;span class="math inline"&gt;\(n\)&lt;/span&gt; from it, sample &lt;span class="math inline"&gt;\(x_n\)&lt;/span&gt; from &lt;span class="math inline"&gt;\(X_n\)&lt;/span&gt; and return &lt;span class="math inline"&gt;\(\frac{x_n}{q(n)}\)&lt;/span&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Why does this work? Well, it’s part of a general phenomenon of things
+that work, called &lt;a href="https://en.wikipedia.org/wiki/Importance_sampling"&gt;importance
+sampling&lt;/a&gt; but we can do the calculation directly:&lt;/p&gt;
+
+
+&lt;p&gt;&lt;span class="math display"&gt;\[\begin{align*}
+E(\frac{X_N}{q(N)}$ &amp;amp; = E(\sum\limits_{n} P(N = n) \frac{X_n}{q(n)})
+\\
+&amp;amp; = E(\sum\limits_{n} q(n) \frac{X_n}{q(n)}) \\
+&amp;amp; = E(\sum\limits_{n} X_n) \\
+&amp;amp; = \sum\limits_{n} E(X_n) \\
+&amp;amp; = \sum\limits_{n} \mu_n \\
+&amp;amp; = \mu_n \\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;Basically, dividing by &lt;span class="math inline"&gt;\(q(n)\)&lt;/span&gt;
+“cancels out” the frequency with which we sample &lt;span class="math inline"&gt;\(n\)&lt;/span&gt;, and so as a result we get exactly the
+expectation we want. I’m not sure how it looks to you, but for me this
+calculation very much ends with me feeling like I get the result.&lt;/p&gt;
+
+
+&lt;p&gt;Something Alex pointed out to me is that in the case we’re interested
+in, you more or less have to evaluate the &lt;span class="math inline"&gt;\(X_i\)&lt;/span&gt; in sequence.&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Specifically they’re all unbiased estimators for &lt;span class="math inline"&gt;\(Y^n\)&lt;/span&gt; for some random variable &lt;span class="math inline"&gt;\(Y\)&lt;/span&gt;, and you calculate &lt;span class="math inline"&gt;\(X_n\)&lt;/span&gt; from &lt;span class="math inline"&gt;\(n\)&lt;/span&gt; independent draws of &lt;span class="math inline"&gt;\(Y\)&lt;/span&gt;.&lt;/span&gt;
+This makes this method quite wasteful, because it ignores all of the
+information you get from the first &lt;span class="math inline"&gt;\(n -
+1\)&lt;/span&gt; coefficients.&lt;/p&gt;
+
+
+&lt;p&gt;Instead, he pointed out that the following method works, which he
+described as a “&lt;a href="https://en.wikipedia.org/wiki/Horvitz%E2%80%93Thompson_estimator"&gt;Horvitz-Thompson
+like estimator&lt;/a&gt;”:&lt;/p&gt;
+
+
+&lt;p&gt;Draw &lt;span class="math inline"&gt;\(n\)&lt;/span&gt; from &lt;span class="math inline"&gt;\(N\)&lt;/span&gt;, sample &lt;span class="math inline"&gt;\(x_i\)&lt;/span&gt; from &lt;span class="math inline"&gt;\(i =
+0, \ldots, n\)&lt;/span&gt;, and return &lt;span class="math inline"&gt;\(\sigma\limits_{i = 0}^n \frac{x_i}{P(N \geq
+i)}\)&lt;/span&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;I’ve spent about a week stumped about why this works. I haven’t been
+thinking about it constantly, but when I have I’ve been trying to gain
+insight into it. In particular this is apparently understandable as an
+application of Alex’s &lt;a href="https://arxiv.org/abs/2203.02836"&gt;RAVI
+framework&lt;/a&gt;&lt;label class="margin-toggle sidenote-number" for="fn5"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn5" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Which is still very much at the stage where I stare at
+the calculations and Don’t Quite Get It for me. All of the pieces make
+sense, but I haven’t got it to cohere into something I can actually use
+yet.&lt;/span&gt;, and I was very much failing to get
+how that worked here.&lt;/p&gt;
+
+
+&lt;p&gt;But this morning, I realised that if you frame it the right way
+(which Alex had already more or less said and I’d failed to realise) you
+can just shut up and calculate and it’s easy then.&lt;/p&gt;
+
+
+&lt;p&gt;Here’s how it works: First, draw some random finite set of integers
+&lt;span class="math inline"&gt;\(S\)&lt;/span&gt;, according to whatever
+distribution you like.&lt;label class="margin-toggle sidenote-number" for="fn6"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn6" type="checkbox"/&gt;&lt;span class="sidenote"&gt;But, crucially, independently of the &lt;span class="math inline"&gt;\(X_i\)&lt;/span&gt;.&lt;/span&gt; For our use case it will be &lt;span class="math inline"&gt;\(S = \{0, \ldots, N\}\)&lt;/span&gt; but the result
+doesn’t depend on that.&lt;/p&gt;
+
+
+&lt;p&gt;Now, construct the random variable &lt;span class="math inline"&gt;\(T =
+\sum\limits_{i in S} c_i X_i\)&lt;/span&gt; for some coefficients &lt;span class="math inline"&gt;\(c_i\)&lt;/span&gt; that we’ll choose later. Now:&lt;/p&gt;
+
+
+&lt;p&gt;&lt;span class="math display"&gt;\[\begin{align*}
+E(T) &amp;amp;= E(\sum\limits_{i in S} c_i X_i) \\
+&amp;amp;= E(\sum\limits_{i \geq 0} 1_{i \in S} c_i X_i) \\
+&amp;amp;= \sum\limits_{i \geq 0} E(1_{i \in S} c_i X_i) \\
+&amp;amp;= \sum\limits_{i \geq 0} c_i E(1_{i \in S}) E(X_i)) \\
+&amp;amp;= \sum\limits_{i \geq 0} c_i P(i \in S) \mu_i \\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;So, in order to get &lt;span class="math inline"&gt;\(E(T) = \mu\)&lt;/span&gt;,
+we just have to pick &lt;span class="math inline"&gt;\(c_i = \frac{1}{P(i \in
+S)}\)&lt;/span&gt;. When we substitute in the choice &lt;span class="math inline"&gt;\(S = \{0, \ldots, N\}\)&lt;/span&gt;, this gives us our
+desired estimator.&lt;/p&gt;
+
+
+&lt;p&gt;Again, I don’t know if you’ll feel the same way, but for me this
+calculation is &lt;em&gt;extremely clear&lt;/em&gt;. I feel like I now get why this
+estimator works, and it works precisely because the calculation says it
+does. I think some of this is because I worked out the details for
+myself, but I do also think that in some sense the calculation is both
+clear and the only way that you can possibly get a result like this.&lt;/p&gt;
+
+
+&lt;p&gt;I do feel like there’s still some need for insight there. For example
+I think this would have been much less clear (although would have still
+worked just fine) if I’d used the specific instance of the set based
+random variable instead of the general one.&lt;/p&gt;
+
+
+&lt;p&gt;There’s maybe also a little bit of a question of how you figure out
+that such an estimator is reasonable in the first place. Guess and check
+is a perfectly valid method, but it does feel a little bit unsatisfying.
+On the other hand, I think given the linearity of expectation and the
+law of conditional expectation, it’s pretty reasonable to expect that
+&lt;em&gt;something&lt;/em&gt; like this would work, so I’m not sure.&lt;/p&gt;
+
+
+&lt;p&gt;Either way, I think probably part of derusting my mathematics&lt;label class="margin-toggle sidenote-number" for="fn7"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn7" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Actually I’m not sure this even counts as derusting. I
+feel like calculation has always been the part of mathematics I was
+worst at.&lt;/span&gt; is going to be getting comfortable
+with getting insight from calculation, and figuring out when and how
+that works.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2025-06-01-11:38.html" rel="alternate"/>
   </entry>
 </feed>

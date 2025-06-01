@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+DRMacIver's Notebook: Understanding through calculation
+    </title>
+
+    <meta property="og:title" content="Understanding through calculation">
+
+    <meta property="og:url" content="https://notebook.drmaciver.com/posts/2025-06-01-11:38.html" />
+    <link rel="canonical" href="https://notebook.drmaciver.com/posts/2025-06-01-11:38.html" />
+    <script src="https://hypothes.is/embed.js" async></script>
+
+
+    <meta name="twitter:card" content="summary" />
+
+    <meta property="og:creator" content="@DRMacIver">
+
+    <link rel="stylesheet" href="/pandoc.css"/>
+    <link rel="stylesheet" href="/pygments.css"/>
+    <link rel="stylesheet" href="/tufte.css"/>
+    <link rel="stylesheet" href="/latex.css"/>
+    <link rel="stylesheet" href="/drmnotes.css"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
+});
+
+MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
+  console.log(message)
+});
+
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169185204-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169185204-1');
+</script>
+
+  </head>
+
+  <body>
+    <article>
+        <h1><a href="/">DRMacIver's Notebook</a></h1>
+        <p class=subtitle>Understanding through calculation</p>
+
+        
+
+<section id="the-post">
+<p class=subtitle>Understanding through calculation</p>
+<dl class=metadata>
+<dt>Published</dt>
+<dd class="post-date">2025-06-01</dd>
+</dl>
+
+<p>I’m in the process of trying to derust my maths skills, so I’m going
+to try posting about mathematics every day for June and see if that
+helps.</p>
+<p>One of the things I’ve been noticing with a lot of what I’ve been
+reading (which has mostly been about probability) is that there are a
+lot of points where you want to prove some result, and the way you do
+that is just a bunch of algebra, and I tend to get… not exactly lost,
+but unsatisfied. I can understand the calculation, and I could even
+recreate it, but I don’t feel like I understand <em>why</em> the result
+is true more at the end than I did at the beginning.</p>
+<p>I pointed at part of this in <a href="https://notebook.drmaciver.com/posts/2025-04-22-16:32.html">algebra
+and insight</a>, where a result that was very easy to prove through
+calculation became much easier to understand by reformulating the
+problem with an insight. Crucially, that insight <em>didn’t actually
+reduce the amount of calculation</em>, but it replaced a completely
+opaque calculation with one that was more about confirming the insight
+actually worked.</p>
+<p>Thing is… I don’t think you can get away without doing any
+uninformative calculations. Calculations are important, and sometimes
+what you need is an actual concrete result, and you need to calculate to
+do that. I think probably you can mine most calculations for insight,
+but I don’t think there’s any particularly deep reason that <span class="math inline">\(3 \times 106 = 318\)</span>, that’s just what you
+get when you run the calculation.<label class="margin-toggle sidenote-number" for="fn1"></label><input class="margin-toggle" id="fn1" type="checkbox"/><span class="sidenote">This isn’t entirely true, as a whole bunch of mental
+arithmetic comes down to breaking numbers down and seeing how they fit
+together. For example, this one is clearly true because <span class="math inline">\(3 \times 106 = 3 \times 100 + 3 \times 6 = 300 +
+18 = 318\)</span>. So it’s not that the insights don’t exist, it’s more
+like the claim doesn’t feel like it needs justifying. The fact that
+<span class="math inline">\(3 \times 106 = 318\)</span> is more or less
+allowed to stand on its own. It still needs checking, and if I’d told
+you for example that <span class="math inline">\(3 \times 106 =
+315\)</span> you should immediately have a suspicious reaction to that,
+so the true answer in some ways needs less insight than the false
+answer. I’m not sure what point I’m making and I think I’m sortof
+disagreeing with the main thrust of my argument at this point. I think
+what I mean to say is that this sort of calculation is one you might
+reasonably feel comfortable leaving insightless.</span></p>
+<p>But I ran into an interesting example in the opposite direction this
+morning, where the key to understanding something that I’d been
+struggling with because I lacked insight was just shut up and calculate,
+and <em>after doing the calculation the result was obvious</em>.</p>
+<p>Here’s the problem:</p>
+<p>Suppose you’ve got some quantity <span class="math inline">\(\mu =
+\sum\limits_{n \geq 0} \mu_n\)</span>, and you have unbiased estimators
+<span class="math inline">\(X_i\)</span> for the summands, i.e. <span class="math inline">\(E(X_i) = \mu_i\)</span>.<label class="margin-toggle sidenote-number" for="fn2"></label><input class="margin-toggle" id="fn2" type="checkbox"/><span class="sidenote">NB these estimators might not be independent and that’s
+fine.</span> How
+do you construct an unbiased estimator for <span class="math inline">\(x\)</span>?</p>
+<p>Here’s an easy version that I learned from <a href="https://alexlew.net/">Alex Lew</a>’s PhD thesis.<label class="margin-toggle sidenote-number" for="fn3"></label><input class="margin-toggle" id="fn3" type="checkbox"/><span class="sidenote">You’re going to be hearing about Alex a lot in these
+posts I suspect, as a nontrivial amount of what I’m trying to do right
+now is to mainline his entire body of work until I understand all the
+bits of it I care about.</span></p>
+<p>First, take some random positive integer valued variable <span class="math inline">\(N\)</span>, with <span class="math inline">\(P(N=n) = q(n)\)</span>, such that <span class="math inline">\(q(n) &gt; 0\)</span> for all <span class="math inline">\(n \geq 0\)</span>. Sample a value <span class="math inline">\(n\)</span> from it, sample <span class="math inline">\(x_n\)</span> from <span class="math inline">\(X_n\)</span> and return <span class="math inline">\(\frac{x_n}{q(n)}\)</span>.</p>
+<p>Why does this work? Well, it’s part of a general phenomenon of things
+that work, called <a href="https://en.wikipedia.org/wiki/Importance_sampling">importance
+sampling</a> but we can do the calculation directly:</p>
+<p><span class="math display">\[\begin{align*}
+E(\frac{X_N}{q(N)}$ &amp; = E(\sum\limits_{n} P(N = n) \frac{X_n}{q(n)})
+\\
+&amp; = E(\sum\limits_{n} q(n) \frac{X_n}{q(n)}) \\
+&amp; = E(\sum\limits_{n} X_n) \\
+&amp; = \sum\limits_{n} E(X_n) \\
+&amp; = \sum\limits_{n} \mu_n \\
+&amp; = \mu_n \\
+\end{align*}\]</span></p>
+<p>Basically, dividing by <span class="math inline">\(q(n)\)</span>
+“cancels out” the frequency with which we sample <span class="math inline">\(n\)</span>, and so as a result we get exactly the
+expectation we want. I’m not sure how it looks to you, but for me this
+calculation very much ends with me feeling like I get the result.</p>
+<p>Something Alex pointed out to me is that in the case we’re interested
+in, you more or less have to evaluate the <span class="math inline">\(X_i\)</span> in sequence.<label class="margin-toggle sidenote-number" for="fn4"></label><input class="margin-toggle" id="fn4" type="checkbox"/><span class="sidenote">Specifically they’re all unbiased estimators for <span class="math inline">\(Y^n\)</span> for some random variable <span class="math inline">\(Y\)</span>, and you calculate <span class="math inline">\(X_n\)</span> from <span class="math inline">\(n\)</span> independent draws of <span class="math inline">\(Y\)</span>.</span>
+This makes this method quite wasteful, because it ignores all of the
+information you get from the first <span class="math inline">\(n -
+1\)</span> coefficients.</p>
+<p>Instead, he pointed out that the following method works, which he
+described as a “<a href="https://en.wikipedia.org/wiki/Horvitz%E2%80%93Thompson_estimator">Horvitz-Thompson
+like estimator</a>”:</p>
+<p>Draw <span class="math inline">\(n\)</span> from <span class="math inline">\(N\)</span>, sample <span class="math inline">\(x_i\)</span> from <span class="math inline">\(i =
+0, \ldots, n\)</span>, and return <span class="math inline">\(\sigma\limits_{i = 0}^n \frac{x_i}{P(N \geq
+i)}\)</span>.</p>
+<p>I’ve spent about a week stumped about why this works. I haven’t been
+thinking about it constantly, but when I have I’ve been trying to gain
+insight into it. In particular this is apparently understandable as an
+application of Alex’s <a href="https://arxiv.org/abs/2203.02836">RAVI
+framework</a><label class="margin-toggle sidenote-number" for="fn5"></label><input class="margin-toggle" id="fn5" type="checkbox"/><span class="sidenote">Which is still very much at the stage where I stare at
+the calculations and Don’t Quite Get It for me. All of the pieces make
+sense, but I haven’t got it to cohere into something I can actually use
+yet.</span>, and I was very much failing to get
+how that worked here.</p>
+<p>But this morning, I realised that if you frame it the right way
+(which Alex had already more or less said and I’d failed to realise) you
+can just shut up and calculate and it’s easy then.</p>
+<p>Here’s how it works: First, draw some random finite set of integers
+<span class="math inline">\(S\)</span>, according to whatever
+distribution you like.<label class="margin-toggle sidenote-number" for="fn6"></label><input class="margin-toggle" id="fn6" type="checkbox"/><span class="sidenote">But, crucially, independently of the <span class="math inline">\(X_i\)</span>.</span> For our use case it will be <span class="math inline">\(S = \{0, \ldots, N\}\)</span> but the result
+doesn’t depend on that.</p>
+<p>Now, construct the random variable <span class="math inline">\(T =
+\sum\limits_{i in S} c_i X_i\)</span> for some coefficients <span class="math inline">\(c_i\)</span> that we’ll choose later. Now:</p>
+<p><span class="math display">\[\begin{align*}
+E(T) &amp;= E(\sum\limits_{i in S} c_i X_i) \\
+&amp;= E(\sum\limits_{i \geq 0} 1_{i \in S} c_i X_i) \\
+&amp;= \sum\limits_{i \geq 0} E(1_{i \in S} c_i X_i) \\
+&amp;= \sum\limits_{i \geq 0} c_i E(1_{i \in S}) E(X_i)) \\
+&amp;= \sum\limits_{i \geq 0} c_i P(i \in S) \mu_i \\
+\end{align*}\]</span></p>
+<p>So, in order to get <span class="math inline">\(E(T) = \mu\)</span>,
+we just have to pick <span class="math inline">\(c_i = \frac{1}{P(i \in
+S)}\)</span>. When we substitute in the choice <span class="math inline">\(S = \{0, \ldots, N\}\)</span>, this gives us our
+desired estimator.</p>
+<p>Again, I don’t know if you’ll feel the same way, but for me this
+calculation is <em>extremely clear</em>. I feel like I now get why this
+estimator works, and it works precisely because the calculation says it
+does. I think some of this is because I worked out the details for
+myself, but I do also think that in some sense the calculation is both
+clear and the only way that you can possibly get a result like this.</p>
+<p>I do feel like there’s still some need for insight there. For example
+I think this would have been much less clear (although would have still
+worked just fine) if I’d used the specific instance of the set based
+random variable instead of the general one.</p>
+<p>There’s maybe also a little bit of a question of how you figure out
+that such an estimator is reasonable in the first place. Guess and check
+is a perfectly valid method, but it does feel a little bit unsatisfying.
+On the other hand, I think given the linearity of expectation and the
+law of conditional expectation, it’s pretty reasonable to expect that
+<em>something</em> like this would work, so I’m not sure.</p>
+<p>Either way, I think probably part of derusting my mathematics<label class="margin-toggle sidenote-number" for="fn7"></label><input class="margin-toggle" id="fn7" type="checkbox"/><span class="sidenote">Actually I’m not sure this even counts as derusting. I
+feel like calculation has always been the part of mathematics I was
+worst at.</span> is going to be getting comfortable
+with getting insight from calculation, and figuring out when and how
+that works.</p>
+
+
+</section>
+
+    </article>
+<footer>
+Copyright David R. MacIver.
+
+CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
+</footer>
+  </body>
+</html>
