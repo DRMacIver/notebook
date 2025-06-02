@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-06-02T08:51:00+01:00</updated>
+  <updated>2025-06-01T13:23:14+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,6 +10,121 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2025-04-26-09:39.html</id>
+    <title>More ways to work out sums</title>
+    <updated>2025-04-26T10:23:28+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;More ways to work out sums&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2025-04-26&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Sorry, still on different ways to calculate the sum of the first n
+integers. I’ll get bored eventually.&lt;/p&gt;
+
+
+&lt;p&gt;My last post &lt;a href="https://notebook.drmaciver.com/posts/2025-04-25-13:33.html"&gt;Introducing
+a parameter to work out sums&lt;/a&gt; was originally called “Using generating
+functions to work out sums”, but the things I was using in it weren’t
+generating functions, and doing it with a generating function ends up
+&lt;em&gt;much&lt;/em&gt; nicer, in a way that is obvious in retrospect.&lt;/p&gt;
+
+
+&lt;p&gt;The generating function of a series &lt;span class="math inline"&gt;\(a_n\)&lt;/span&gt; is &lt;span class="math inline"&gt;\(\sum\limits_{n \geq 0} a_n x^n\)&lt;/span&gt;. Often you
+can work out the generating function then take its power series
+expansion to calculuate jhe original series.&lt;/p&gt;
+
+
+&lt;p&gt;Here’s how it works:&lt;/p&gt;
+
+
+&lt;p&gt;&lt;span class="math display"&gt;\[\begin{align*}
+f(x) &amp;amp;= \sum\limits_{n &amp;gt;= 0} \sum\limits_{i = 1}^n i x^n \\
+&amp;amp;= \sum\limits_{i &amp;gt;= 1} \sum\limits_{n \geq i} i x^n \\
+&amp;amp;= \sum\limits_{i &amp;gt;= 1} i \sum\limits_{n \geq i} x^n \\
+&amp;amp;= \sum\limits_{i &amp;gt;= 1} \frac{i x^i}{1 - x} \\
+&amp;amp;= \frac{x}{1-x} \sum\limits_{i &amp;gt;= 1} i x^{i - 1}\\
+&amp;amp;= \frac{x}{1-x} \frac{d}{dx} \sum\limits_{i &amp;gt;= 1} x^i \\
+&amp;amp;= \frac{x}{1-x} \frac{d}{dx} \sum\limits_{i &amp;gt;= 0} x^i \\
+&amp;amp;= \frac{x}{1-x} \frac{d}{dx} \frac{1}{1 - x} \\
+&amp;amp;= \frac{x}{(1-x)^3} \\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;Rearranging order of sums like this is a fairly standard trick for
+working out doubly infinite sums. It’s technically justified whenever
+the sums absolutely converge.&lt;/p&gt;
+
+
+&lt;p&gt;Now, to get the power series, we just need to work out the kth
+derivative of &lt;span class="math inline"&gt;\(\frac{1}{(1 - x)^3}\)&lt;/span&gt;.
+This is &lt;span class="math inline"&gt;\(\frac{3 (3 + 1) \ldots (3 + k -
+1)}{(1 - x)^{3 + k}} = \frac{(k + 2)!}{(1 - x)^{3+k}}\)&lt;/span&gt;.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;You can prove this with induction if you like. This is a
+good example of the sort of thing that induction is useful for, where
+you spot the pattern and just want to go “and so on”. But you can also
+just go “and so on” if you feel like it.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;So, plugging in &lt;span class="math inline"&gt;\(x = 0\)&lt;/span&gt; to get the
+derivates at 0 we get&lt;/p&gt;
+
+
+&lt;p&gt;&lt;span class="math display"&gt;\[\begin{align*}
+f(x) &amp;amp;= \frac{x}{(1-x)^3} \\
+&amp;amp;= x \sum\limits_{n \geq 0} \frac{(n + 2)!}{2 n!} x^n \\
+&amp;amp;= \sum\limits_{n \geq 0} \frac{(n + 1)(n + 2}{2} x^{n + 1} \\
+&amp;amp;= \sum\limits_{n \geq 1} \frac{n (n + 1)}{2} x^{n + 1} \\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;Giving us, once again, the desired result.&lt;/p&gt;
+
+
+&lt;p&gt;You could use a basically similar argument to calculate &lt;span class="math inline"&gt;\(\sum\limits_{n \geq k} n (n - 1) \ldots (n -
+k)\)&lt;/span&gt;, and from that work out &lt;span class="math inline"&gt;\(\sum
+i^k\)&lt;/span&gt; for any &lt;span class="math inline"&gt;\(k\)&lt;/span&gt;, but I can’t
+be bothered at present.&lt;/p&gt;
+
+
+&lt;p&gt;In order to not salami slice this topic over too many more posts,
+here’s another proof I spotted yesterday, which uses a standard
+combinatorial trick of counting the same thing two different ways:&lt;/p&gt;
+
+
+&lt;p&gt;Consider all distinct pairs of numbers drawn from &lt;span class="math inline"&gt;\(\{1, \ldots, n + 1\}\)&lt;/span&gt;. Counted one way,
+this is just &lt;span class="math inline"&gt;\({{n + 1}\choose 2} = \frac{n (n
++ 1)}{2}\)&lt;/span&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Now, count it another way: If the smaller number in the pair is &lt;span class="math inline"&gt;\(k\)&lt;/span&gt;, then there are exactly &lt;span class="math inline"&gt;\(n + 1 - k\)&lt;/span&gt; choices for the larger number.
+Therefore there are &lt;span class="math inline"&gt;\(\sum\limits_{k=1}^n (n +
+1 - k) = \sum\limits_{k = 1}^n k\)&lt;/span&gt; choices in total, so &lt;span class="math inline"&gt;\(\sum\limits_{k = 1}^n k = \frac{n (n +
+1)}{2}\)&lt;/span&gt; as desired.&lt;/p&gt;
+
+
+&lt;p&gt;As an additional note, one thing I’ve been noticing when working
+these out is just how much better pen&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I know, I know, a true mathematician would use a
+pencil.&lt;/span&gt; and paper is for working
+these out than trying to type them up on the computer is. Part of this
+is that my notebook doesn’t have the best affordances around LaTeX, but
+I think a lot of it is genuine ease. Mathematics really still feels like
+it’s best done by hand to me.&lt;/p&gt;
+
+
+&lt;p&gt;I think that if I were using an actual interactive theorem prover, or
+even just a symbolic algebra library in Python, or the like that might
+stop being the case, but writing LaTeX feels too obviously like a
+presentation tool, not a tool for actually working things out.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2025-04-26-09:39.html" rel="alternate"/>
+  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-27-12:34.html</id>
     <title>Speaking from the heart</title>
@@ -980,7 +1095,7 @@ potatoes.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-06-01-11:38.html</id>
     <title>Understanding through calculation</title>
-    <updated>2025-06-01T17:18:29+01:00</updated>
+    <updated>2025-06-01T13:23:14+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Understanding through calculation&lt;/p&gt;
@@ -1170,35 +1285,5 @@ and how that works.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2025-06-01-11:38.html" rel="alternate"/>
-  </entry>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2025-06-02-08:51.html</id>
-    <title>The Weierstrass approximation theorem as a probabilistic result</title>
-    <updated>2025-06-02T08:51:00+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;The Weierstrass approximation theorem as a probabilistic result&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2025-06-02&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I was reading through Probability with Martingales, which is one of
-the books I’m studying at the moment&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;A bit haphazardly, it must be said.&lt;/span&gt; and was surprised to run
-into a proof of the Weirstrass Approximation Theorem, the theorem that
-the polynomials are dense in the space &lt;span class="math inline"&gt;\(C([a,
-b])\)&lt;/span&gt; equipped with the supremum measure. The proof presented is
-apparently actually the original proof, but I’d somehow either never
-seen it before, or saw it stripped of the probability somehow.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I think it’s possible that I’ve only ever seen the proof
-of the Stone-Weirstrass Theorem, which is a fully more general result,
-but I’m not sure. I think it’s impossible that I’ve never seen a proof
-of this result some time in my maths career, but for whatever reason it
-hasn’t stuck in my mind at all.&lt;/span&gt;&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2025-06-02-08:51.html" rel="alternate"/>
   </entry>
 </feed>
