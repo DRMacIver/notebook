@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-06-01T13:23:14+01:00</updated>
+  <updated>2025-08-24T12:11:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,346 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2025-04-26-09:39.html</id>
-    <title>More ways to work out sums</title>
-    <updated>2025-04-26T10:23:28+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;More ways to work out sums&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2025-04-26&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;Sorry, still on different ways to calculate the sum of the first n
-integers. I’ll get bored eventually.&lt;/p&gt;
-
-
-&lt;p&gt;My last post &lt;a href="https://notebook.drmaciver.com/posts/2025-04-25-13:33.html"&gt;Introducing
-a parameter to work out sums&lt;/a&gt; was originally called “Using generating
-functions to work out sums”, but the things I was using in it weren’t
-generating functions, and doing it with a generating function ends up
-&lt;em&gt;much&lt;/em&gt; nicer, in a way that is obvious in retrospect.&lt;/p&gt;
-
-
-&lt;p&gt;The generating function of a series &lt;span class="math inline"&gt;\(a_n\)&lt;/span&gt; is &lt;span class="math inline"&gt;\(\sum\limits_{n \geq 0} a_n x^n\)&lt;/span&gt;. Often you
-can work out the generating function then take its power series
-expansion to calculuate jhe original series.&lt;/p&gt;
-
-
-&lt;p&gt;Here’s how it works:&lt;/p&gt;
-
-
-&lt;p&gt;&lt;span class="math display"&gt;\[\begin{align*}
-f(x) &amp;amp;= \sum\limits_{n &amp;gt;= 0} \sum\limits_{i = 1}^n i x^n \\
-&amp;amp;= \sum\limits_{i &amp;gt;= 1} \sum\limits_{n \geq i} i x^n \\
-&amp;amp;= \sum\limits_{i &amp;gt;= 1} i \sum\limits_{n \geq i} x^n \\
-&amp;amp;= \sum\limits_{i &amp;gt;= 1} \frac{i x^i}{1 - x} \\
-&amp;amp;= \frac{x}{1-x} \sum\limits_{i &amp;gt;= 1} i x^{i - 1}\\
-&amp;amp;= \frac{x}{1-x} \frac{d}{dx} \sum\limits_{i &amp;gt;= 1} x^i \\
-&amp;amp;= \frac{x}{1-x} \frac{d}{dx} \sum\limits_{i &amp;gt;= 0} x^i \\
-&amp;amp;= \frac{x}{1-x} \frac{d}{dx} \frac{1}{1 - x} \\
-&amp;amp;= \frac{x}{(1-x)^3} \\
-\end{align*}\]&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;Rearranging order of sums like this is a fairly standard trick for
-working out doubly infinite sums. It’s technically justified whenever
-the sums absolutely converge.&lt;/p&gt;
-
-
-&lt;p&gt;Now, to get the power series, we just need to work out the kth
-derivative of &lt;span class="math inline"&gt;\(\frac{1}{(1 - x)^3}\)&lt;/span&gt;.
-This is &lt;span class="math inline"&gt;\(\frac{3 (3 + 1) \ldots (3 + k -
-1)}{(1 - x)^{3 + k}} = \frac{(k + 2)!}{(1 - x)^{3+k}}\)&lt;/span&gt;.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;You can prove this with induction if you like. This is a
-good example of the sort of thing that induction is useful for, where
-you spot the pattern and just want to go “and so on”. But you can also
-just go “and so on” if you feel like it.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;So, plugging in &lt;span class="math inline"&gt;\(x = 0\)&lt;/span&gt; to get the
-derivates at 0 we get&lt;/p&gt;
-
-
-&lt;p&gt;&lt;span class="math display"&gt;\[\begin{align*}
-f(x) &amp;amp;= \frac{x}{(1-x)^3} \\
-&amp;amp;= x \sum\limits_{n \geq 0} \frac{(n + 2)!}{2 n!} x^n \\
-&amp;amp;= \sum\limits_{n \geq 0} \frac{(n + 1)(n + 2}{2} x^{n + 1} \\
-&amp;amp;= \sum\limits_{n \geq 1} \frac{n (n + 1)}{2} x^{n + 1} \\
-\end{align*}\]&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;Giving us, once again, the desired result.&lt;/p&gt;
-
-
-&lt;p&gt;You could use a basically similar argument to calculate &lt;span class="math inline"&gt;\(\sum\limits_{n \geq k} n (n - 1) \ldots (n -
-k)\)&lt;/span&gt;, and from that work out &lt;span class="math inline"&gt;\(\sum
-i^k\)&lt;/span&gt; for any &lt;span class="math inline"&gt;\(k\)&lt;/span&gt;, but I can’t
-be bothered at present.&lt;/p&gt;
-
-
-&lt;p&gt;In order to not salami slice this topic over too many more posts,
-here’s another proof I spotted yesterday, which uses a standard
-combinatorial trick of counting the same thing two different ways:&lt;/p&gt;
-
-
-&lt;p&gt;Consider all distinct pairs of numbers drawn from &lt;span class="math inline"&gt;\(\{1, \ldots, n + 1\}\)&lt;/span&gt;. Counted one way,
-this is just &lt;span class="math inline"&gt;\({{n + 1}\choose 2} = \frac{n (n
-+ 1)}{2}\)&lt;/span&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;Now, count it another way: If the smaller number in the pair is &lt;span class="math inline"&gt;\(k\)&lt;/span&gt;, then there are exactly &lt;span class="math inline"&gt;\(n + 1 - k\)&lt;/span&gt; choices for the larger number.
-Therefore there are &lt;span class="math inline"&gt;\(\sum\limits_{k=1}^n (n +
-1 - k) = \sum\limits_{k = 1}^n k\)&lt;/span&gt; choices in total, so &lt;span class="math inline"&gt;\(\sum\limits_{k = 1}^n k = \frac{n (n +
-1)}{2}\)&lt;/span&gt; as desired.&lt;/p&gt;
-
-
-&lt;p&gt;As an additional note, one thing I’ve been noticing when working
-these out is just how much better pen&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I know, I know, a true mathematician would use a
-pencil.&lt;/span&gt; and paper is for working
-these out than trying to type them up on the computer is. Part of this
-is that my notebook doesn’t have the best affordances around LaTeX, but
-I think a lot of it is genuine ease. Mathematics really still feels like
-it’s best done by hand to me.&lt;/p&gt;
-
-
-&lt;p&gt;I think that if I were using an actual interactive theorem prover, or
-even just a symbolic algebra library in Python, or the like that might
-stop being the case, but writing LaTeX feels too obviously like a
-presentation tool, not a tool for actually working things out.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2025-04-26-09:39.html" rel="alternate"/>
-  </entry>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2025-04-27-12:34.html</id>
-    <title>Speaking from the heart</title>
-    <updated>2025-04-27T13:18:35+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Speaking from the heart&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2025-04-27&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;“Focusing” is the name for a basic therapy skill coined by Eugene
-Gendlin.&lt;/p&gt;
-
-
-&lt;p&gt;The story goes&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I believe that this story is apocryphal and Gendlin
-already knew the conclusion he wanted to reach and then used this as a
-sort of post hoc justification for it. But it seems both plausible to me
-that this is what you observe and also I think the method works, so it’s
-a useful illustration regardless.&lt;/span&gt; that Gendlin and his students wanted
-to figure out what caused some people to improve in therapy and others
-not, so they looked at transcripts of lots of therapy patients and
-analysed them for what made the difference. Eventually they realised
-that the biggest impact was not from anything the therapists did, but
-whether the patients said “Um” a lot.&lt;/p&gt;
-
-
-&lt;p&gt;The explanation for this observation is this: If you’re speaking
-effortlessly and fluently about your experiences, &lt;em&gt;you probably
-aren’t paying attention to how you’re feeling&lt;/em&gt;, and in particular
-you’re not checking in with whether what you’re saying actually feels
-like. If you imagine someone saying “Yup everything is absolutely great,
-I’m doing fine” while their face calls them a liar, that’s the sort of
-thing I’m talking about. Frequently people will do this not because
-they’re lying, but because they don’t even notice that they’re not
-telling the truth.&lt;/p&gt;
-
-
-&lt;p&gt;When progress happens, they instead say “Yup everything is absolutely
-great, I’m doing fine. Um. Except…” and then start talking about the
-actually important thing.&lt;/p&gt;
-
-
-&lt;p&gt;Gendlin describes the process of realising what you said wasn’t true
-and noticing the feeling you get about it as paying attention to it as
-noticing the &lt;em&gt;felt sense&lt;/em&gt; of the problem. This example comes from
-an exercise he suggests somewhere&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;This might have been in his book, Focusing, but I think
-I remember this as a suggestion from a friend reporting on Gendlin, so
-it might also be something else.&lt;/span&gt; is to say out loud
-“Everything in my life is completely fine.”, notice how that feels, and
-then start saying “Except…” until you run out of things to list.&lt;/p&gt;
-
-
-&lt;p&gt;Anyway this is the core of Focusing as I’ve understood it to date:
-It’s a fundamentally corrective process, where you say things, then you
-find out the ways in which they’re not true, and you use the felt sense
-to correct them. I’m pretty good at this part.&lt;label class="margin-toggle sidenote-number" for="fn3"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn3" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Thus granting me a good grade in therapy, a thing that
-is both normal to want and possible to achieve.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;But there’s another part to it that I’ve never been very good at,
-which is where you let the felt sense “speak directly”.&lt;/p&gt;
-
-
-&lt;p&gt;One problem with the speaking first and correcting it is that
-thoughts are fast and feelings are slow, and it’s very easy for whatever
-part of you that is feeling the thing to get overwhelmed, even when
-you’re trying your best to be helpful. I was trying to explain this to
-Lisa the other day and the analogy I used was imagine talking to a shy
-child who isn’t very good at speaking yet. Even if you correctly
-anticipate what it’s trying to say to you, the mere act of anticipating
-it can make it less willing to talk.&lt;/p&gt;
-
-
-&lt;p&gt;What you (or at least I) have to do instead is say some words,
-slowly, and then if it’s not actually clear to you what the next words
-to come out be that would feel right are… pause, and wait for them to
-come. Sit there, just letting there be a long gap in your sentence,
-until the next words come out.&lt;/p&gt;
-
-
-&lt;p&gt;The frustrating thing about this is that it works much much better if
-there’s someone listening, and that someone has to sit patiently with
-you and wait. This is hard.&lt;/p&gt;
-
-
-&lt;p&gt;I mentioned I was explaining this to Lisa the other day. This was a
-very good conversation in which I was trying to express some things I
-was feeling sad about, and part of it lead to a very good meta
-conversation about how to have such conversations. One thing that came
-up is that Lisa and I have very different internal experiences when
-we’re clearly struggling with words, and that in the ones that Lisa has
-and thus was expecting I was also having, trying to help complete the
-other party’s sentences is actually very helpful.&lt;/p&gt;
-
-
-&lt;p&gt;I think there are roughly three things I experience that lead to this
-sort of halting speech:&lt;/p&gt;
-
-
-&lt;ol type="1"&gt;
-&lt;li&gt;This thing of waiting for a felt sense to express itself
-properly.&lt;/li&gt;
-&lt;li&gt;“Tip of my tongue” style aphasia where I know the word but I’m
-struggling to find it.&lt;/li&gt;
-&lt;li&gt;Situations where I know what I want to say but feel paralysed from
-saying it, out of fear or similar.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;In the second two, completing a sentence correctly is quite useful.
-It either tells you there’s nothing to be afraid of because they already
-know what you’re going to say, or it gets you out of the aphasia.&lt;label class="margin-toggle sidenote-number" for="fn4"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn4" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I actually don’t like it when people help me out when
-I’m having aphasia, but that’s a different and much less important
-issue.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;Even in the classic “corrective” sense of Focusing, where you’re
-trying to express a sentence that feels true, completing the sentence is
-quite helpful, because it gives you something concrete to check
-against.&lt;/p&gt;
-
-
-&lt;p&gt;But… when trying to express myself around something deeply felt and
-poorly understood, I think completing the sentence doesn’t help even
-when the completion is right, because much of the point is not just to
-say the true thing, but to experience the feeling fully, and if you skip
-to the end you don’t get to do that, and the whole process is left
-incomplete.&lt;/p&gt;
-
-
-&lt;p&gt;The result though is that you need patience when talking to someone
-doing this, even when that someone is yourself. It’s very easy to return
-to the lightning quick world of words and race ahead, but sometimes you
-just have to sit with the feeling until it’s ready to talk.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2025-04-27-12:34.html" rel="alternate"/>
-  </entry>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2025-04-28-18:49.html</id>
-    <title>Motivation gradients</title>
-    <updated>2025-04-28T20:02:14+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Motivation gradients&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2025-04-28&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;There’s a type of depression that I’ve written about before where it
-feels like a restriction of the possible. You want to do normal things,
-but doing them feels completely impossible, even when in a more literal
-sense it’s perfectly possible to do them.&lt;/p&gt;
-
-
-&lt;p&gt;But there’s another type where everything just feels sortof flat.
-It’s not actually difficult to do things - there’s not much internal
-resistance per se, but there’s also no ability to orient. The feeling is
-not “I can’t do things”, but “I can do things, but why would I do this
-thing in particular?”. When presented with any particular choice of
-writing topic, the bit where interest or disinterest would be responds
-as a sort of emptiness. It’s not an unwillingness to do the thing, it’s
-more like a total directionless neutrality on the subject.&lt;/p&gt;
-
-
-&lt;p&gt;Anyway this is what I’m feeling about writing right at this minute,
-so I’m just writing down the phenomenology of what I’m currently
-experiencing, because that seems like a good default.&lt;/p&gt;
-
-
-&lt;p&gt;One of the interesting things is that I’d lost my pad of writing
-ideas.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Bad labelling and organisation on my part got it mixed
-in with a bunch of other identical pads of paper and I couldn’t find
-which one was it.&lt;/span&gt; I initially thought this might be
-the source of the problem, so I tried to generate some more ideas, and I
-didn’t actually find it very hard to generate a new list of ideas. Many
-of them are ones that I abstractly recognise would be good to write
-about, but I look at them and try to imagine writing about them right
-now the answer is still that empty sort of why.&lt;/p&gt;
-
-
-&lt;p&gt;I think part of the problem is heat, honestly. It’s about 25C in my
-office right now, which isn’t scorching, but that’s after significant
-attempts at heat management, and I think part of what’s happening is
-that my brain and body are going into a sleepy heat crash.&lt;/p&gt;
-
-
-&lt;p&gt;One perhaps telling indication of this is that as soon as I thought
-of that and started thinking about steps to take to reduce heat in this
-room it became very easy to take actions for that.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Mostly I bought fittings so I can get out my proper AC
-unit and install it somewhere useful, and I filled up and turned on the
-swamp cooler I have in my room.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;The weird thing is that I don’t feel particularly hot. I feel…
-lethargic maybe, but I’m not getting any strong signals about
-temperature, just behavioural responses to it.&lt;/p&gt;
-
-
-&lt;p&gt;One of the things I pointed out in &lt;a href="https://drmaciver.substack.com/p/labelling-feelings"&gt;labelling
-feelings&lt;/a&gt; is that you’re allowed to figure out what you’re feeling
-based on observing your own actions like you would for anyone else.
-Something I hadn’t noticed before is that when trying to figure out what
-you want, you can partially infer this by finding things that are
-unusually easy for you to do right now.&lt;/p&gt;
-
-
-&lt;p&gt;I think a lot of the time this will end up in unendorsed actions,
-like doomscrolling, but I think if you cast around and explore the space
-of alternatives maybe you’ll find there are some unexpected things in
-there that are much easier to do than expected because how easily you
-respond to the idea of doing something towards them.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2025-04-28-18:49.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-04-29-20:18.html</id>
     <title>Where are your limits?</title>
@@ -1095,7 +755,7 @@ potatoes.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-06-01-11:38.html</id>
     <title>Understanding through calculation</title>
-    <updated>2025-06-01T13:23:14+01:00</updated>
+    <updated>2025-06-01T17:18:29+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Understanding through calculation&lt;/p&gt;
@@ -1285,5 +945,291 @@ and how that works.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2025-06-01-11:38.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2025-06-02-08:51.html</id>
+    <title>The Weierstrass approximation theorem as a probabilistic result</title>
+    <updated>2025-06-02T08:51:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;The Weierstrass approximation theorem as a probabilistic result&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2025-06-02&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I was reading through Probability with Martingales, which is one of
+the books I’m studying at the moment&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;A bit haphazardly, it must be said.&lt;/span&gt; and was surprised to run
+into a proof of the Weirstrass Approximation Theorem, the theorem that
+the polynomials are dense in the space &lt;span class="math inline"&gt;\(C([a,
+b])\)&lt;/span&gt; equipped with the supremum measure. The proof presented is
+apparently actually the original proof, but I’d somehow either never
+seen it before, or saw it stripped of the probability somehow.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I think it’s possible that I’ve only ever seen the proof
+of the Stone-Weirstrass Theorem, which is a fully more general result,
+but I’m not sure. I think it’s impossible that I’ve never seen a proof
+of this result some time in my maths career, but for whatever reason it
+hasn’t stuck in my mind at all.&lt;/span&gt;&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2025-06-02-08:51.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2025-06-02-14:56.html</id>
+    <title>Variance of elementary symmetric polynomials</title>
+    <updated>2025-06-02T14:56:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Variance of elementary symmetric polynomials&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2025-06-02&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I was trying to figure out what the variance of a certain estimator
+should be, and found it helpful to work through a special case. You…
+probably don’t care about any of this, sorry, but the end result was
+nice so I thought I’d write it up.&lt;/p&gt;
+
+
+&lt;p&gt;Suppose you’ve got independent random variables &lt;span class="math inline"&gt;\(X_1, \ldots, X_n\)&lt;/span&gt; with &lt;span class="math inline"&gt;\(E(X_i) = 0\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(Var(X_i) = 1\)&lt;/span&gt;. The &lt;span class="math inline"&gt;\(X_i\)&lt;/span&gt; don’t necessarily have the same
+distribution beyond that.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Though in the case I actually care about they do.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;Now, suppose we have some &lt;span class="math inline"&gt;\(k\)&lt;/span&gt; with
+&lt;span class="math inline"&gt;\(0 \leq k \leq n\)&lt;/span&gt;. The elementary
+symmetric polynomial $e_k(x) = &lt;em&gt;{u n^k } &lt;/em&gt;{i u} x_i $, where
+&lt;span class="math inline"&gt;\([n]^k\)&lt;/span&gt; is the set of all subsets of
+${1, , n}) of size &lt;span class="math inline"&gt;\(k\)&lt;/span&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;It’s easy to see that &lt;span class="math inline"&gt;\(E(e_k(X)) =
+0\)&lt;/span&gt;, because all of the summands are a product of independent
+variables with expected &lt;span class="math inline"&gt;\(0\)&lt;/span&gt;. The
+question I wanted to answer was what is &lt;span class="math inline"&gt;\(Var(e_k(X))\)&lt;/span&gt;?&lt;/p&gt;
+
+
+&lt;p&gt;First, write $Q_u = _{i u} X_i $, so &lt;span class="math inline"&gt;\(e_k(X) = \sum Q_u\)&lt;/span&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Then we have &lt;span class="math inline"&gt;\(Var(e_k(X)) =
+\sum\limits_{u, v \in [n]^k} Cov(Q_u, Q_v)\)&lt;/span&gt;. So we just need to
+work out those covariances.&lt;/p&gt;
+
+
+&lt;p&gt;It turns out, that if &lt;span class="math inline"&gt;\(u \neq v\)&lt;/span&gt;
+then &lt;span class="math inline"&gt;\(Cov(Q_u, Q_v) = 0\)&lt;/span&gt;, because we
+can write&lt;/p&gt;
+
+
+&lt;p&gt;[Q_u Q_v = X_j &lt;em&gt;{i u {j}} X_i &lt;/em&gt;{i v {j}} X_i ]&lt;/p&gt;
+
+
+&lt;p&gt;The second two terms are independent of &lt;span class="math inline"&gt;\(X_j\)&lt;/span&gt;, so &lt;span class="math inline"&gt;\(E(Q_u
+Q_v) = E(X_j) E(\ldots) = 0\)&lt;/span&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;This is slightly interesting as they’re &lt;em&gt;not&lt;/em&gt; in general
+independent.&lt;/p&gt;
+
+
+&lt;p&gt;Now, we just have to work out &lt;span class="math inline"&gt;\(Var(Q_u)\)&lt;/span&gt;, but this is easy, because &lt;span class="math inline"&gt;\(E(Q_u) = 0\)&lt;/span&gt;, so &lt;span class="math inline"&gt;\(Var(Q_u) = E(\prod\limits_{i \in u} X_i^2)
+=  \prod\limits_{i \in u} E(X_i^2) = 1\)&lt;/span&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;As a result:&lt;/p&gt;
+
+
+&lt;p&gt;&lt;span class="math display"&gt;\[\begin{align*}
+Var(e_k(X)) &amp;amp;= \sum\limits_{u \in [n]^k } 1 \\
+&amp;amp; = |[n]^k| \\
+&amp;amp; = {n \choose k} \\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;hr/&gt;
+
+
+&lt;p&gt;The reason this is interesting is actually related to &lt;a href="https://notebook.drmaciver.com/posts/2025-06-01-11:38.html"&gt;my
+last post&lt;/a&gt;. The idea is that if you’ve got some independent unbiased
+estimators &lt;span class="math inline"&gt;\(X_i\)&lt;/span&gt; for a quantity &lt;span class="math inline"&gt;\(\mu\)&lt;/span&gt;, and you want to construct
+independent unbiased estimators for &lt;span class="math inline"&gt;\(\mu^k\)&lt;/span&gt;, you can do this by multiplying
+&lt;span class="math inline"&gt;\(X_1, \ldots, X_n\)&lt;/span&gt;. But if you’re
+already sampling from those, you can also get estimators for the
+quantities &lt;span class="math inline"&gt;\(\mu^k\)&lt;/span&gt; with &lt;span class="math inline"&gt;\(k &amp;lt; n\)&lt;/span&gt;, “for free”, by just multiplying
+any &lt;span class="math inline"&gt;\(k\)&lt;/span&gt; of the &lt;span class="math inline"&gt;\(X_i\)&lt;/span&gt; you’ve sampled from. But by just
+picking one, you’re throwing away a lot of possible data you could use
+for estimation. Taking &lt;em&gt;all&lt;/em&gt; the possible products and averaging
+them should in theory get you a lower-variance unbiased estimator.&lt;/p&gt;
+
+
+&lt;p&gt;This post came out of me trying to figure out exactly how much lower
+variance, and the answer is actually quite a lot in the special case of
+mean 0 and variance 1, as the above result shows that after taking the
+average the variance of this estimator is &lt;span class="math inline"&gt;\(\frac{1}{n \choose k}\)&lt;/span&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;You can calculate all of these estimators at once using dynamic
+programming:&lt;/p&gt;
+
+
+&lt;div class="sourceCode" id="cb1"&gt;&lt;pre class="sourceCode python"&gt;&lt;code class="sourceCode python"&gt;&lt;span id="cb1-1"&gt;&lt;a aria-hidden="true" href="#cb1-1" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="im"&gt;import&lt;/span&gt; numpy &lt;span class="im"&gt;as&lt;/span&gt; np&lt;/span&gt;
+&lt;span id="cb1-2"&gt;&lt;a aria-hidden="true" href="#cb1-2" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
+&lt;span id="cb1-3"&gt;&lt;a aria-hidden="true" href="#cb1-3" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
+&lt;span id="cb1-4"&gt;&lt;a aria-hidden="true" href="#cb1-4" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="kw"&gt;def&lt;/span&gt; elementary_means(xs):&lt;/span&gt;
+&lt;span id="cb1-5"&gt;&lt;a aria-hidden="true" href="#cb1-5" tabindex="-1"&gt;&lt;/a&gt;    means &lt;span class="op"&gt;=&lt;/span&gt; np.zeros(&lt;span class="bu"&gt;len&lt;/span&gt;(xs) &lt;span class="op"&gt;+&lt;/span&gt; &lt;span class="dv"&gt;1&lt;/span&gt;)&lt;/span&gt;
+&lt;span id="cb1-6"&gt;&lt;a aria-hidden="true" href="#cb1-6" tabindex="-1"&gt;&lt;/a&gt;    means[&lt;span class="dv"&gt;0&lt;/span&gt;] &lt;span class="op"&gt;=&lt;/span&gt; &lt;span class="dv"&gt;1&lt;/span&gt;&lt;/span&gt;
+&lt;span id="cb1-7"&gt;&lt;a aria-hidden="true" href="#cb1-7" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="cf"&gt;for&lt;/span&gt; n, xn &lt;span class="kw"&gt;in&lt;/span&gt; &lt;span class="bu"&gt;enumerate&lt;/span&gt;(xs, &lt;span class="dv"&gt;1&lt;/span&gt;):&lt;/span&gt;
+&lt;span id="cb1-8"&gt;&lt;a aria-hidden="true" href="#cb1-8" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="cf"&gt;for&lt;/span&gt; k &lt;span class="kw"&gt;in&lt;/span&gt; &lt;span class="bu"&gt;range&lt;/span&gt;(&lt;span class="bu"&gt;len&lt;/span&gt;(means) &lt;span class="op"&gt;-&lt;/span&gt; &lt;span class="dv"&gt;1&lt;/span&gt;, &lt;span class="dv"&gt;0&lt;/span&gt;, &lt;span class="op"&gt;-&lt;/span&gt;&lt;span class="dv"&gt;1&lt;/span&gt;):&lt;/span&gt;
+&lt;span id="cb1-9"&gt;&lt;a aria-hidden="true" href="#cb1-9" tabindex="-1"&gt;&lt;/a&gt;            means[k] &lt;span class="op"&gt;+=&lt;/span&gt; (means[k &lt;span class="op"&gt;-&lt;/span&gt; &lt;span class="dv"&gt;1&lt;/span&gt;] &lt;span class="op"&gt;*&lt;/span&gt; xn &lt;span class="op"&gt;-&lt;/span&gt; means[k]) &lt;span class="op"&gt;*&lt;/span&gt; k &lt;span class="op"&gt;/&lt;/span&gt; n&lt;/span&gt;
+&lt;span id="cb1-10"&gt;&lt;a aria-hidden="true" href="#cb1-10" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="cf"&gt;return&lt;/span&gt; means&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;(Algorithm from &lt;a href="https://d1qx31qr3h6wln.cloudfront.net/publications/urm.pdf"&gt;An
+unbiased ray-marching transmittance estimator&lt;/a&gt;)&lt;/p&gt;
+
+
+&lt;p&gt;This does seem to give the right answer, but I’m a little worried
+about its numerical stability. Part of why I wanted to work out the 0/1
+case was to test out whether the variances I was getting were right, and
+it looks like this ends up producing too high a variance for &lt;span class="math inline"&gt;\(e_n\)&lt;/span&gt;. I don’t entirely know why, as the
+other variances seem right, but it’s an easy fix to just replace that
+one in particular with the easily calculable product of all the
+samples.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2025-06-02-14:56.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2025-08-24-12:11.html</id>
+    <title>Stable attention as a prerequisite for skill</title>
+    <updated>2025-08-24T12:11:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Stable attention as a prerequisite for skill&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2025-08-24&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;As is traditional when trying to recover from a drought of writing,
+I’m going to write about not writing.&lt;/p&gt;
+
+
+&lt;p&gt;Specifically, my current difficulty with writing seems to be
+primarily… what to write about.&lt;/p&gt;
+
+
+&lt;p&gt;Some context: Part of why I’ve been having “difficulty writing” is
+that over the last couple of months I’ve been very into mathematics. The
+difficult thing hasn’t actually been writing. I’ve had very little
+difficulty writing about mathematics, or figuring out new and
+interesting bits of mathematics. Much of this hasn’t happened in
+particularly public places, but it has happened.&lt;/p&gt;
+
+
+&lt;p&gt;I think there are at least two reasons for this, but they happened at
+the same time. One of them is that I’ve started a new job which very
+much needs me to be good at maths, so I’ve been dusting off a lot of old
+mathematical skills and applying them. This has been great,
+honestly.&lt;/p&gt;
+
+
+&lt;p&gt;The other reason is that at more or less the same time I started on
+Wellbutrin. My initial experience of it was also pretty great, my
+ongoing experience is… more mixed, but I think still positive.&lt;/p&gt;
+
+
+&lt;p&gt;Whatever the reason, the last couple of months have seen me with a
+&lt;em&gt;very&lt;/em&gt; strong preference for &lt;a href="https://drmaciver.substack.com/p/two-types-of-work"&gt;crunchy work
+over squishy work&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Something I noticed almost immediately on starting it is that I lost
+a skill, which is the ability to tell myself stories in my head. I
+tend(ed) to do this a lot, especially when trying to fall asleep, and
+within a few days of starting Wellbutrin it seemed nearly impossible to
+do. I could start just fine - coming up with a premise for a story and
+starting to tell it isn’t any more difficult, but the problem is that I
+would lose the train of thought. I’d tell myself a story for a minute or
+two, and then I’d start thinking about something else.&lt;/p&gt;
+
+
+&lt;p&gt;Unfortunately being able to do something for only short snatches at a
+time before losing the thread is pretty indistinguishable from not being
+able to do the thing&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Especially when holding attention is the main point of
+the activity, as it is when trying to use this to fall asleep.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;Ironically I got distracted from writing this right after writing
+that sentence. I’m trying to use a secondary anchor to keep focus, and
+it is helping, but not perhaps as much as I’d like.&lt;/p&gt;
+
+
+&lt;p&gt;I originally titled this post “Holding interest as a prerequisite for
+skill”, but actually that’s not right. What’s needed is
+&lt;em&gt;attention&lt;/em&gt;. Holding interest is one way to maintain attention,
+but it’s not the only way. You should, ideally, be able to hold
+attention on something regardless of whether you find it
+interesting.&lt;/p&gt;
+
+
+&lt;p&gt;And when you can’t, the skill usually falls apart. I think this is
+the mechanism behind the “I can only do things I find interesting”
+problem a lot of us with or vaguely in the direction of ADHD have, but I
+think it’s a general phenomenon: If you want to be good at something,
+you first need to be able to hold your attention on doing the thing.&lt;/p&gt;
+
+
+&lt;p&gt;Some skills eventually you grow out of needing attention on them and
+can do by rote, but most things will go better if you can pay attention
+to them.&lt;/p&gt;
+
+
+&lt;p&gt;This is true even for things that you &lt;em&gt;can&lt;/em&gt; do without paying
+attention to. I’ve noticed, for example, that Pilates goes &lt;em&gt;much&lt;/em&gt;
+better for me if I’m paying attention to the actual physical act I’m
+performing and how it feels than it does if I’m designing algorithms in
+my head. I’m often designing algorithms in my head anyway, so I’m not
+all that good at Pilates. I can still do the exercises, but not
+necessarily well. I do it anyway because doing Pilates badly is better
+than not doing Pilates, but the difference is noticeable.&lt;/p&gt;
+
+
+&lt;p&gt;I think part of the problem with the storytelling, and the writing,
+is that as my brain went maths brained, there was no longer a thread of
+interest holding my attention on the task, and as a result my mind
+wanders off the idea whenever I try.&lt;/p&gt;
+
+
+&lt;p&gt;I think there’s a motivation component to it too. Certainly part of
+the problem is that I’m choosing not to write rather than just not
+writing. But, at least in theory, &lt;a href="https://notebook.drmaciver.com/posts/2025-03-29-10:40.html"&gt;I can
+solve that problem&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;I don’t have to want to write in order to write, but also it’s more
+complicated than that. I &lt;em&gt;do&lt;/em&gt; want to write, I just don’t find
+any particular thing I want to write appealling, but that doesn’t mean I
+won’t appreciate the result in the end. I could choose to write, I just
+need to be able to maintain the thread while doing so.&lt;/p&gt;
+
+
+&lt;p&gt;I don’t quite know how one cultivates this skill of holding attention
+without interest. Maybe it’s something meditation should help with (it
+certainly sounds like it should be), but I suspect also it’s just a case
+of doing the thing until it feels natural, so let’s see if some more
+daily writing fixes it.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2025-08-24-12:11.html" rel="alternate"/>
   </entry>
 </feed>
