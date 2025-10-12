@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-10-12T13:31:17+01:00</updated>
+  <updated>2025-10-12T13:31:43+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1047,7 +1047,7 @@ sharing timezone facts&lt;/a&gt;.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-10-12-12:43.html</id>
     <title>Speeding up conditional sampling with divide and conquer</title>
-    <updated>2025-10-12T13:31:17+01:00</updated>
+    <updated>2025-10-12T13:31:43+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Speeding up conditional sampling with divide and conquer&lt;/p&gt;
@@ -1117,7 +1117,7 @@ some constraint &lt;span class="math inline"&gt;\(h: U \times V \to \{0,
 0\)&lt;/span&gt;, and we want to sample from the conditional distribution
 &lt;span class="math inline"&gt;\(A, B | h(A, B)\)&lt;/span&gt;. That is, we want
 random variables &lt;span class="math inline"&gt;\(X, Y\)&lt;/span&gt; such that
-&lt;span class="math inline"&gt;\(P(X = x, Y = y) = \frac{q(x,
+&lt;span class="math inline"&gt;\(P(X = x, Y = y) = \frac{q(x, y) h(x,
 y)}{Z}\)&lt;/span&gt;.&lt;/p&gt;
 
 
