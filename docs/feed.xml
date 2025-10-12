@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-10-12T12:43:00+01:00</updated>
+  <updated>2025-10-12T13:23:34+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1047,7 +1047,7 @@ sharing timezone facts&lt;/a&gt;.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-10-12-12:43.html</id>
     <title>Speeding up conditional sampling with divide and conquer</title>
-    <updated>2025-10-12T12:43:00+01:00</updated>
+    <updated>2025-10-12T13:23:34+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Speeding up conditional sampling with divide and conquer&lt;/p&gt;
@@ -1083,13 +1083,13 @@ in the sequence.&lt;/p&gt;
 
 
 &lt;p&gt;Here’s a way of improving the performance , if for each character
-&lt;span class="math inline"&gt;\(c\)&lt;/span&gt;, we can calculate &lt;span class="math inline"&gt;\(a(c) = P(h(S) | S \mathrm{starts with}
+&lt;span class="math inline"&gt;\(c\)&lt;/span&gt;, we can calculate &lt;span class="math inline"&gt;\(a(c) = P(h(S) | S \text normal{starts with}
 c)\)&lt;/span&gt;.&lt;/p&gt;
 
 
 &lt;p&gt;We do this by reweighting the probability of each start character
-&lt;span class="math inline"&gt;\(c\)&lt;/span&gt; by &lt;span class="math inline"&gt;\(\tau(c)\)&lt;/span&gt;, so we choose &lt;span class="math inline"&gt;\(c\)&lt;/span&gt; with probability proportional to &lt;span class="math inline"&gt;\(P(S \matrhm{starts with} c) \tau(c)\)&lt;/span&gt;. If
-&lt;span class="math inline"&gt;\(c\)&lt;/span&gt; is the special EOS token, we
+&lt;span class="math inline"&gt;\(c\)&lt;/span&gt; by &lt;span class="math inline"&gt;\(\tau(c)\)&lt;/span&gt;, so we choose &lt;span class="math inline"&gt;\(c\)&lt;/span&gt; with probability proportional to &lt;span class="math inline"&gt;\(P(S \text normal{starts with} c) \tau(c)\)&lt;/span&gt;.
+If &lt;span class="math inline"&gt;\(c\)&lt;/span&gt; is the special EOS token, we
 stop, otherwise we then recursively apply this method to the rest of the
 string, reweighting the next character in a similar way (with newly
 calculated probabilities).&lt;/p&gt;
