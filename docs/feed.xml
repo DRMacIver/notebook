@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-10-12T13:30:42+01:00</updated>
+  <updated>2025-10-12T13:30:56+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -1047,7 +1047,7 @@ sharing timezone facts&lt;/a&gt;.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-10-12-12:43.html</id>
     <title>Speeding up conditional sampling with divide and conquer</title>
-    <updated>2025-10-12T13:30:42+01:00</updated>
+    <updated>2025-10-12T13:30:56+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Speeding up conditional sampling with divide and conquer&lt;/p&gt;
@@ -1157,11 +1157,12 @@ P(X = x) &amp;amp;= P(A = x | h(A, B)) \\
 
 &lt;p&gt;&lt;span class="math display"&gt;\[\begin{align*}
 P(Y = y | X = x) &amp;amp;= P(B = y | A = x, h(A, B)) \\
+&amp;amp;= \frac{P(B = y,  A = x, h(A, B))}{A = x, h(A, B)} \\
+&amp;amp;= \frac{q(x, y) h(x, y)}{P(A = x, h(A, B))} \\
 \end{align*}\]&lt;/span&gt;&lt;/p&gt;
 
 
-&lt;p&gt;&amp;amp;= \frac{P(B = y, A = x, h(A, B))}{A = x, h(A, B) \ &amp;amp;= \ So
-then multiplying these together we get:&lt;/p&gt;
+&lt;p&gt;So then multiplying these together we get:&lt;/p&gt;
 
 
 &lt;p&gt;&lt;span class="math display"&gt;\[\begin{align*}

@@ -138,9 +138,10 @@ P(X = x) &amp;= P(A = x | h(A, B)) \\
 <p>Then:</p>
 <p><span class="math display">\[\begin{align*}
 P(Y = y | X = x) &amp;= P(B = y | A = x, h(A, B)) \\
+&amp;= \frac{P(B = y,  A = x, h(A, B))}{A = x, h(A, B)} \\
+&amp;= \frac{q(x, y) h(x, y)}{P(A = x, h(A, B))} \\
 \end{align*}\]</span></p>
-<p>&amp;= \frac{P(B = y, A = x, h(A, B))}{A = x, h(A, B) \ &amp;= \ So
-then multiplying these together we get:</p>
+<p>So then multiplying these together we get:</p>
 <p><span class="math display">\[\begin{align*}
 P(X = x, Y = y)  &amp; = P(X = x) P(Y = y | X = x) \\
 &amp; = \frac{P(A = x, h(A, B))}{Z} \frac{q(x, y) h(x, y)}{A = x, h(A,
