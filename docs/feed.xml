@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-08-26T18:34:00+01:00</updated>
+  <updated>2025-10-12T12:43:00+01:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
@@ -10,93 +10,6 @@
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2025-05-01-17:47.html</id>
-    <title>Studying specifics</title>
-    <updated>2025-05-01T19:34:10+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Studying specifics&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2025-05-01&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;There’s something I deeply believe, and only very erratically manage
-to follow through on, which is that there’s a huge amount to be learned
-by studying something more than it seemingly warrants. This is in some
-sense the core of the post &lt;a href="https://drmaciver.substack.com/p/overthinking-overthinking"&gt;Overthinking
-overthinking&lt;/a&gt; which is what created the “Overthinking Everything”
-name that I now use for my newsletter and community.&lt;/p&gt;
-
-
-&lt;p&gt;One core reason for this is &lt;a href="https://notebook.drmaciver.com/posts/2020-03-05-11:27.html"&gt;existence
-proofs&lt;/a&gt;. If you put more effort into solving a problem than it really
-warrants, you’ve now demonstrated that that problem &lt;em&gt;was&lt;/em&gt;
-solvable, and you can potentially use that solution in other cases,
-gradually reducing its effort.&lt;/p&gt;
-
-
-&lt;p&gt;I think this relates to one of my points in &lt;a href="https://notebook.drmaciver.com/posts/2025-04-30-18:50.html"&gt;Heavy
-up front learning requirements&lt;/a&gt;, which is that it’s worth spending
-some time heavily studying skills you use regularly, even ones that
-don’t seem like they need it. Sometimes just by really levelling up one
-specific task, you should be able to learn generalisable lessons.&lt;/p&gt;
-
-
-&lt;p&gt;The problem is of course… how do you actually do this? How do you
-pick what specifics to study?&lt;/p&gt;
-
-
-&lt;p&gt;One part of the answer is to just do which ones bring you joy, but I
-think there’s a key problem with this: The specific prescription is to
-study something &lt;em&gt;more than it warrants&lt;/em&gt;. If it brings you joy to
-study it, hopefully you’re already using that joy to prompt you to spend
-more time on it.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Right? Right?? Um, OK, this theory might have some
-problems.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;You could study everything more than it warrants, but then you
-rapidly hit resource constraings. Where are you going to find time for
-that?&lt;/p&gt;
-
-
-&lt;p&gt;I think this is, often, the bottleneck on the joy version too: There
-are many things that if &lt;a href="https://notebook.drmaciver.com/posts/2022-01-03-14:16.html"&gt;you
-just followed your curiosity&lt;/a&gt; you’d find would bring you joy, but
-there are &lt;em&gt;too many things&lt;/em&gt;, and as a result you do none of
-them.&lt;/p&gt;
-
-
-&lt;p&gt;Instead, a better solution I think is to pick arbitrarily and
-capriciously. Perhaps, ideally, at random from those that you think seem
-like they would be interesting to do.&lt;/p&gt;
-
-
-&lt;p&gt;One of my recurring fantasy scenarios is what I’d do with an
-improbably large amount of money, and one of the regular projects I
-think about is just randomly sampling a few hundred people from the
-population and giving them near unlimited healthcare - extensive
-investigations of anything that’s a problem for them, suitable
-interventions (erring on the side of cheap and low risk ones), and then
-studying the data from that extensively to learn useable lessons for the
-broader population.&lt;/p&gt;
-
-
-&lt;p&gt;This strikes me as the right sort of general tool: By sampling
-randomly from the set of places you &lt;em&gt;could&lt;/em&gt; intervene, you learn
-plenty of things that will generalise out of that.&lt;/p&gt;
-
-
-&lt;p&gt;I don’t yet have a very good idea of how to implement this
-though.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2025-05-01-17:47.html" rel="alternate"/>
-  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-05-02-14:19.html</id>
     <title>No</title>
@@ -1023,7 +936,7 @@ risks the big things crowding out the small things.&lt;/p&gt;
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-08-26-18:34.html</id>
     <title>Types of enjoyment</title>
-    <updated>2025-08-26T18:34:00+01:00</updated>
+    <updated>2025-08-26T19:14:16+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Types of enjoyment&lt;/p&gt;
@@ -1130,5 +1043,143 @@ sharing timezone facts&lt;/a&gt;.&lt;/p&gt;
 
 </content>
     <link href="https://notebook.drmaciver.com/posts/2025-08-26-18:34.html" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2025-10-12-12:43.html</id>
+    <title>Speeding up conditional sampling with divide and conquer</title>
+    <updated>2025-10-12T12:43:00+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Speeding up conditional sampling with divide and conquer&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2025-10-12&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;I got myself into a bit of a mess trying to explain why a particular
+result was true the other day, so this is my write up of a proof.&lt;/p&gt;
+
+
+&lt;p&gt;Suppose you’re sampling from some language model (large or otherwise)
+and you want to apply a constraint &lt;span class="math inline"&gt;\(h\)&lt;/span&gt;. That is, you’ve got some random
+variable &lt;span class="math inline"&gt;\(S\)&lt;/span&gt;, and you want to sample
+a random variable &lt;span class="math inline"&gt;\(T\)&lt;/span&gt; such that &lt;span class="math inline"&gt;\(P(T = t) \propto P(S = t) h(t)\)&lt;/span&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;One way to achieve this is rejection sampling: You just repeatedly
+sample from IID copies of &lt;span class="math inline"&gt;\(S\)&lt;/span&gt; until
+you get one that satisfies &lt;span class="math inline"&gt;\(h\)&lt;/span&gt;.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I’m playing a bit fast and loose with random variables
+here and just assuming you can take IID copies of any of them. Really
+our “random variables” of interest are randomized programs.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;The problem with this is that it’s potentially very slow. It might
+require a lot of samples from &lt;span class="math inline"&gt;\(S\)&lt;/span&gt;,
+especially if you make bad choices on your initial choices of characters
+in the sequence.&lt;/p&gt;
+
+
+&lt;p&gt;Here’s a way of improving the performance , if for each character
+&lt;span class="math inline"&gt;\(c\)&lt;/span&gt;, we can calculate &lt;span class="math inline"&gt;\(a(c) = P(h(S) | S \mathrm{starts with}
+c)\)&lt;/span&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;We do this by reweighting the probability of each start character
+&lt;span class="math inline"&gt;\(c\)&lt;/span&gt; by &lt;span class="math inline"&gt;\(\tau(c)\)&lt;/span&gt;, so we choose &lt;span class="math inline"&gt;\(c\)&lt;/span&gt; with probability proportional to &lt;span class="math inline"&gt;\(P(S \matrhm{starts with} c) \tau(c)\)&lt;/span&gt;. If
+&lt;span class="math inline"&gt;\(c\)&lt;/span&gt; is the special EOS token, we
+stop, otherwise we then recursively apply this method to the rest of the
+string, reweighting the next character in a similar way (with newly
+calculated probabilities).&lt;/p&gt;
+
+
+&lt;p&gt;The advantage of this method is that we never have to backtrack or
+repeat ourselves: Our reweighting of the characters automatically takes
+the constraint into account without having to ever start over again.&lt;/p&gt;
+
+
+&lt;p&gt;The disadvantage is that we have to get these &lt;span class="math inline"&gt;\(\tau\)&lt;/span&gt; reweights from somewhere, which may
+or may not be possible in general. I’m interested in some special cases
+where it’s easy because the condition has a nice simple structure that
+just comes from deleting prefixes, but we won’t go into that here.&lt;/p&gt;
+
+
+&lt;p&gt;The reason this works is essecially a light variant of the &lt;a href="https://www.cambridge.org/core/journals/combinatorics-probability-and-computing/article/abs/probabilistic-divideandconquer-a-new-exact-simulation-method-with-integer-partitions-as-an-example/85C6175903F96D32609D1BF6820A4664"&gt;Probabilistic
+divide and conquer method&lt;/a&gt;, which rests on the following lemma:&lt;/p&gt;
+
+
+&lt;p&gt;Suppose we have discrete random variables &lt;span class="math inline"&gt;\(A, B\)&lt;/span&gt; on &lt;span class="math inline"&gt;\(U,
+V\)&lt;/span&gt;, with joint law &lt;span class="math inline"&gt;\(q\)&lt;/span&gt; and
+some constraint &lt;span class="math inline"&gt;\(h: U \times V \to \{0,
+1\}\)&lt;/span&gt; with &lt;span class="math inline"&gt;\(Z = E(h(A, B)) &amp;gt;
+0\)&lt;/span&gt;, and we want to sample from the conditional distribution
+&lt;span class="math inline"&gt;\(A, B | h(A, B)\)&lt;/span&gt;. That is, we want
+random variables &lt;span class="math inline"&gt;\(X, Y\)&lt;/span&gt; such that
+&lt;span class="math inline"&gt;\(P(X = x, Y = y) = \frac{q(x,
+y)}{Z}\)&lt;/span&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Construct &lt;span class="math inline"&gt;\(X, Y\)&lt;/span&gt; as follows:&lt;/p&gt;
+
+
+&lt;ol type="1"&gt;
+&lt;li&gt;Sample &lt;span class="math inline"&gt;\(X\)&lt;/span&gt; such that &lt;span class="math inline"&gt;\(P(X = x) = P(A = x | h(A, B))\)&lt;/span&gt;.&lt;/li&gt;
+&lt;li&gt;Then sample &lt;span class="math inline"&gt;\(Y\)&lt;/span&gt; such that &lt;span class="math inline"&gt;\(P(Y = y) = P(B = y | h(A, B), A =
+x)\)&lt;/span&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;If you can do this, then &lt;span class="math inline"&gt;\(P(X = x, Y = y)
+= \frac{q(x, y)}{Z}\)&lt;/span&gt; as desired.&lt;/p&gt;
+
+
+&lt;p&gt;In the original PDC paper they describe this as a simple application
+of Bayes’ formula, which maybe it is but I then got myself into a muddle
+trying to prove it. In the end I found it easier to go back to just a
+straightforward definition of conditional probability. First, &lt;span class="math inline"&gt;\(P(X = x, Y = y)  = P(X = x) P(Y = y | X =
+x)\)&lt;/span&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;We now calculate these two quantities:&lt;/p&gt;
+
+
+&lt;p&gt;&lt;span class="math display"&gt;\[\begin{align*}
+P(X = x) &amp;amp;= P(A = x | h(A, B)) \\
+&amp;amp;= \frac{P(A = x, h(A, B))}{P(h(A, B))} \\
+&amp;amp;= \frac{P(A = x, h(A, B))}{Z} \\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;&lt;span class="math display"&gt;\[\begin{align*}
+P(Y = y | X = x) &amp;amp;= P(B = y | A = x, h(A, B)) \\
+&amp;amp;= \frac{P(B = y,  A = x, h(A, B))}{A = x, h(A, B) \\
+&amp;amp;= \frac{q(x, y) h(x, y)}{P(A = x, h(A, B))} \\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;So then multiplying these together we get:&lt;/p&gt;
+
+
+&lt;p&gt;&lt;span class="math display"&gt;\[\begin{align*}
+P(X = x, Y = y)  &amp;amp; = P(X = x) P(Y = y | X = x) \\
+&amp;amp; = \frac{P(A = x, h(A, B))}{Z} \frac{q(x, y) h(x, y)}{A = x, h(A,
+B)} \\
+&amp;amp; = \frac{q(x, y) h(x, y)}{Z} \\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;As desired.&lt;/p&gt;
+
+
+&lt;p&gt;This result is practically trivial, and it’s not obvious a priori
+that sampling this way is in fact any easier than the original
+constrained sampling problem, but the observation of PDC is that
+sometimes it is, and that when it is it can be a huge speed
+improvement.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2025-10-12-12:43.html" rel="alternate"/>
   </entry>
 </feed>

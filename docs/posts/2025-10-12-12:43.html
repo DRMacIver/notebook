@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+DRMacIver's Notebook: Speeding up conditional sampling with divide and conquer
+    </title>
+
+    <meta property="og:title" content="Speeding up conditional sampling with divide and conquer">
+
+    <meta property="og:url" content="https://notebook.drmaciver.com/posts/2025-10-12-12:43.html" />
+    <link rel="canonical" href="https://notebook.drmaciver.com/posts/2025-10-12-12:43.html" />
+    <script src="https://hypothes.is/embed.js" async></script>
+
+
+    <meta name="twitter:card" content="summary" />
+
+    <meta property="og:creator" content="@DRMacIver">
+
+    <link rel="stylesheet" href="/pandoc.css"/>
+    <link rel="stylesheet" href="/pygments.css"/>
+    <link rel="stylesheet" href="/tufte.css"/>
+    <link rel="stylesheet" href="/latex.css"/>
+    <link rel="stylesheet" href="/drmnotes.css"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
+});
+
+MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
+  console.log(message)
+});
+
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169185204-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169185204-1');
+</script>
+
+  </head>
+
+  <body>
+    <article>
+        <h1><a href="/">DRMacIver's Notebook</a></h1>
+        <p class=subtitle>Speeding up conditional sampling with divide and conquer</p>
+
+        
+
+<section id="the-post">
+<p class=subtitle>Speeding up conditional sampling with divide and conquer</p>
+<dl class=metadata>
+<dt>Published</dt>
+<dd class="post-date">2025-10-12</dd>
+</dl>
+
+<p>I got myself into a bit of a mess trying to explain why a particular
+result was true the other day, so this is my write up of a proof.</p>
+<p>Suppose you’re sampling from some language model (large or otherwise)
+and you want to apply a constraint <span class="math inline">\(h\)</span>. That is, you’ve got some random
+variable <span class="math inline">\(S\)</span>, and you want to sample
+a random variable <span class="math inline">\(T\)</span> such that <span class="math inline">\(P(T = t) \propto P(S = t) h(t)\)</span>.</p>
+<p>One way to achieve this is rejection sampling: You just repeatedly
+sample from IID copies of <span class="math inline">\(S\)</span> until
+you get one that satisfies <span class="math inline">\(h\)</span>.<label class="margin-toggle sidenote-number" for="fn1"></label><input class="margin-toggle" id="fn1" type="checkbox"/><span class="sidenote">I’m playing a bit fast and loose with random variables
+here and just assuming you can take IID copies of any of them. Really
+our “random variables” of interest are randomized programs.</span></p>
+<p>The problem with this is that it’s potentially very slow. It might
+require a lot of samples from <span class="math inline">\(S\)</span>,
+especially if you make bad choices on your initial choices of characters
+in the sequence.</p>
+<p>Here’s a way of improving the performance , if for each character
+<span class="math inline">\(c\)</span>, we can calculate <span class="math inline">\(a(c) = P(h(S) | S \mathrm{starts with}
+c)\)</span>.</p>
+<p>We do this by reweighting the probability of each start character
+<span class="math inline">\(c\)</span> by <span class="math inline">\(\tau(c)\)</span>, so we choose <span class="math inline">\(c\)</span> with probability proportional to <span class="math inline">\(P(S \matrhm{starts with} c) \tau(c)\)</span>. If
+<span class="math inline">\(c\)</span> is the special EOS token, we
+stop, otherwise we then recursively apply this method to the rest of the
+string, reweighting the next character in a similar way (with newly
+calculated probabilities).</p>
+<p>The advantage of this method is that we never have to backtrack or
+repeat ourselves: Our reweighting of the characters automatically takes
+the constraint into account without having to ever start over again.</p>
+<p>The disadvantage is that we have to get these <span class="math inline">\(\tau\)</span> reweights from somewhere, which may
+or may not be possible in general. I’m interested in some special cases
+where it’s easy because the condition has a nice simple structure that
+just comes from deleting prefixes, but we won’t go into that here.</p>
+<p>The reason this works is essecially a light variant of the <a href="https://www.cambridge.org/core/journals/combinatorics-probability-and-computing/article/abs/probabilistic-divideandconquer-a-new-exact-simulation-method-with-integer-partitions-as-an-example/85C6175903F96D32609D1BF6820A4664">Probabilistic
+divide and conquer method</a>, which rests on the following lemma:</p>
+<p>Suppose we have discrete random variables <span class="math inline">\(A, B\)</span> on <span class="math inline">\(U,
+V\)</span>, with joint law <span class="math inline">\(q\)</span> and
+some constraint <span class="math inline">\(h: U \times V \to \{0,
+1\}\)</span> with <span class="math inline">\(Z = E(h(A, B)) &gt;
+0\)</span>, and we want to sample from the conditional distribution
+<span class="math inline">\(A, B | h(A, B)\)</span>. That is, we want
+random variables <span class="math inline">\(X, Y\)</span> such that
+<span class="math inline">\(P(X = x, Y = y) = \frac{q(x,
+y)}{Z}\)</span>.</p>
+<p>Construct <span class="math inline">\(X, Y\)</span> as follows:</p>
+<ol type="1">
+<li>Sample <span class="math inline">\(X\)</span> such that <span class="math inline">\(P(X = x) = P(A = x | h(A, B))\)</span>.</li>
+<li>Then sample <span class="math inline">\(Y\)</span> such that <span class="math inline">\(P(Y = y) = P(B = y | h(A, B), A =
+x)\)</span>.</li>
+</ol>
+<p>If you can do this, then <span class="math inline">\(P(X = x, Y = y)
+= \frac{q(x, y)}{Z}\)</span> as desired.</p>
+<p>In the original PDC paper they describe this as a simple application
+of Bayes’ formula, which maybe it is but I then got myself into a muddle
+trying to prove it. In the end I found it easier to go back to just a
+straightforward definition of conditional probability. First, <span class="math inline">\(P(X = x, Y = y)  = P(X = x) P(Y = y | X =
+x)\)</span>.</p>
+<p>We now calculate these two quantities:</p>
+<p><span class="math display">\[\begin{align*}
+P(X = x) &amp;= P(A = x | h(A, B)) \\
+&amp;= \frac{P(A = x, h(A, B))}{P(h(A, B))} \\
+&amp;= \frac{P(A = x, h(A, B))}{Z} \\
+\end{align*}\]</span></p>
+<p><span class="math display">\[\begin{align*}
+P(Y = y | X = x) &amp;= P(B = y | A = x, h(A, B)) \\
+&amp;= \frac{P(B = y,  A = x, h(A, B))}{A = x, h(A, B) \\
+&amp;= \frac{q(x, y) h(x, y)}{P(A = x, h(A, B))} \\
+\end{align*}\]</span></p>
+<p>So then multiplying these together we get:</p>
+<p><span class="math display">\[\begin{align*}
+P(X = x, Y = y)  &amp; = P(X = x) P(Y = y | X = x) \\
+&amp; = \frac{P(A = x, h(A, B))}{Z} \frac{q(x, y) h(x, y)}{A = x, h(A,
+B)} \\
+&amp; = \frac{q(x, y) h(x, y)}{Z} \\
+\end{align*}\]</span></p>
+<p>As desired.</p>
+<p>This result is practically trivial, and it’s not obvious a priori
+that sampling this way is in fact any easier than the original
+constrained sampling problem, but the observation of PDC is that
+sometimes it is, and that when it is it can be a huge speed
+improvement.</p>
+
+
+</section>
+
+    </article>
+<footer>
+Copyright David R. MacIver.
+
+CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
+</footer>
+  </body>
+</html>
