@@ -90,10 +90,10 @@ require a lot of samples from <span class="math inline">\(S\)</span>,
 especially if you make bad choices on your initial choices of characters
 in the sequence.</p>
 <p>Here’s a way of improving the performance , if for each character
-<span class="math inline">\(c\)</span>, we can calculate <span class="math inline">\(a(c) = P(h(S) | S \text normal{starts with}
+<span class="math inline">\(c\)</span>, we can calculate <span class="math inline">\(a(c) = P(h(S) | S \textnormal{starts with}
 c)\)</span>.</p>
 <p>We do this by reweighting the probability of each start character
-<span class="math inline">\(c\)</span> by <span class="math inline">\(\tau(c)\)</span>, so we choose <span class="math inline">\(c\)</span> with probability proportional to <span class="math inline">\(P(S \text normal{starts with} c) \tau(c)\)</span>.
+<span class="math inline">\(c\)</span> by <span class="math inline">\(\tau(c)\)</span>, so we choose <span class="math inline">\(c\)</span> with probability proportional to <span class="math inline">\(P(S \textnormal{starts with} c) \tau(c)\)</span>.
 If <span class="math inline">\(c\)</span> is the special EOS token, we
 stop, otherwise we then recursively apply this method to the rest of the
 string, reweighting the next character in a similar way (with newly
