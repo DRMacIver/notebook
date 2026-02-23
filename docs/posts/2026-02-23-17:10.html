@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+DRMacIver's Notebook: Temporary processing loops as a sometimes replacement for background threads
+    </title>
+
+    <meta property="og:title" content="Temporary processing loops as a sometimes replacement for background threads">
+
+    <meta property="og:url" content="https://notebook.drmaciver.com/posts/2026-02-23-17:10.html" />
+    <link rel="canonical" href="https://notebook.drmaciver.com/posts/2026-02-23-17:10.html" />
+    <script src="https://hypothes.is/embed.js" async></script>
+
+
+    <meta name="twitter:card" content="summary" />
+
+    <meta property="og:creator" content="@DRMacIver">
+
+    <link rel="stylesheet" href="/pandoc.css"/>
+    <link rel="stylesheet" href="/pygments.css"/>
+    <link rel="stylesheet" href="/tufte.css"/>
+    <link rel="stylesheet" href="/latex.css"/>
+    <link rel="stylesheet" href="/drmnotes.css"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['\\(', '\\)']]},
+  multiLine: true,
+  "HTML-CSS": { 
+       linebreaks: { automatic: true }
+  },
+  SVG: { 
+       linebreaks: { automatic: true } 
+  }
+});
+
+MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
+  console.log(message)
+});
+
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169185204-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169185204-1');
+</script>
+
+  </head>
+
+  <body>
+    <article>
+        <h1><a href="/">DRMacIver's Notebook</a></h1>
+        <p class=subtitle>Temporary processing loops as a sometimes replacement for background threads</p>
+
+        
+
+<section id="the-post">
+<p class=subtitle>Temporary processing loops as a sometimes replacement for background threads</p>
+<dl class=metadata>
+<dt>Published</dt>
+<dd class="post-date">2026-02-23</dd>
+</dl>
+
+<p>There’s a trick I’ve used twice now, and I figure any trick worth
+using twice is worth writing up. I’ve never seen anyone else using it,
+possibly because it’s not actually very useful, or is secretly a bad
+idea for reasons that I’m unaware of. It’s obvious enough that I’d be
+surprised if it was original to me, but I also expect most other people
+haven’t seen it either.</p>
+<p>The basic idea is this: Suppose you have a bunch of tasks running in
+different threads, and you need some sort of background thread running
+to keep them happy. For example:</p>
+<ul>
+<li>In <a href="https://github.com/DRMacIver/shrinkray">shrinkray</a>
+the tasks are attempts to apply patches to a test case, and the
+background thread is a sort of “merge queue” which is responsible for
+trying to combine successful patches together.</li>
+<li>In a recent project, I have a number of communication channels, and
+messages coming in from them on a single connection, and the background
+thread is reading those messages, figuring out where they need to go,
+and dispatching them to a queue for the right channel.</li>
+</ul>
+<p>…those are actually the only two examples I have right now. I could
+probably imagine more, but those are the ones I’ve concretely tried this
+in.</p>
+<p>In any case, in both of these the background thread was sortof a pain
+in the ass. In the shrinkray case, there was a bunch of lifecycle
+management I had to worry about (the “thread” was actually a trio task,
+and in some of these use cases it was annoying to scope it to a
+nursery). In the messages case, it was viable, but it was difficult to
+debug and I wanted it to work in a language with kinda shit threading,
+so I’d rather not use a background thread if I didn’t have to.</p>
+<p>Anyway, there turns out to be a common trick: In both of these cases,
+we are doing a thing in the calling thread, and that thing will return
+back to us only once the background thread has got to processing our
+particular need.</p>
+<ul>
+<li>In shrinkray, we only care that the merge queue has run for long
+enough to either accept or reject the patch.</li>
+<li>In the message processing case, we only care that the dispatcher has
+run for long enough that there is at least one message in our
+inbox.</li>
+</ul>
+<p>As a result, in both of these cases, we are essentially blocking
+until the dispatcher thread has got to our particular need. Which means
+there doesn’t need to be a dispatcher thread at all - we can just
+temporarily become it. Look at me, I’m the dispatcher thread now.</p>
+<p>let’s look at some pseudocode for this. Here is how our message
+dispatcher might work with a background thread:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a aria-hidden="true" href="#cb1-1" tabindex="-1"></a>channels: <span class="bu">dict</span>[<span class="bu">str</span>, SimpleQueue] <span class="op">=</span> {}</span>
+<span id="cb1-2"><a aria-hidden="true" href="#cb1-2" tabindex="-1"></a></span>
+<span id="cb1-3"><a aria-hidden="true" href="#cb1-3" tabindex="-1"></a></span>
+<span id="cb1-4"><a aria-hidden="true" href="#cb1-4" tabindex="-1"></a><span class="kw">def</span> run_dispatcher():</span>
+<span id="cb1-5"><a aria-hidden="true" href="#cb1-5" tabindex="-1"></a>    <span class="cf">while</span> <span class="va">True</span>:</span>
+<span id="cb1-6"><a aria-hidden="true" href="#cb1-6" tabindex="-1"></a>        msg <span class="op">=</span> get_message()</span>
+<span id="cb1-7"><a aria-hidden="true" href="#cb1-7" tabindex="-1"></a>        channnels[msg.<span class="bu">id</span>].put(msg)</span>
+<span id="cb1-8"><a aria-hidden="true" href="#cb1-8" tabindex="-1"></a></span>
+<span id="cb1-9"><a aria-hidden="true" href="#cb1-9" tabindex="-1"></a></span>
+<span id="cb1-10"><a aria-hidden="true" href="#cb1-10" tabindex="-1"></a>Thread(target<span class="op">=</span>run_dispatcher).start()</span>
+<span id="cb1-11"><a aria-hidden="true" href="#cb1-11" tabindex="-1"></a></span>
+<span id="cb1-12"><a aria-hidden="true" href="#cb1-12" tabindex="-1"></a></span>
+<span id="cb1-13"><a aria-hidden="true" href="#cb1-13" tabindex="-1"></a><span class="kw">def</span> get_messsage(<span class="bu">id</span>: <span class="bu">str</span>):</span>
+<span id="cb1-14"><a aria-hidden="true" href="#cb1-14" tabindex="-1"></a>    <span class="cf">return</span> channels[<span class="bu">id</span>].get()</span></code></pre></div>
+<p>And with inline processing:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a aria-hidden="true" href="#cb2-1" tabindex="-1"></a>channels: <span class="bu">dict</span>[<span class="bu">str</span>, SimpleQueue] <span class="op">=</span> {}</span>
+<span id="cb2-2"><a aria-hidden="true" href="#cb2-2" tabindex="-1"></a></span>
+<span id="cb2-3"><a aria-hidden="true" href="#cb2-3" tabindex="-1"></a>lock <span class="op">=</span> Lock()</span>
+<span id="cb2-4"><a aria-hidden="true" href="#cb2-4" tabindex="-1"></a></span>
+<span id="cb2-5"><a aria-hidden="true" href="#cb2-5" tabindex="-1"></a></span>
+<span id="cb2-6"><a aria-hidden="true" href="#cb2-6" tabindex="-1"></a><span class="kw">def</span> get_messsage(<span class="bu">id</span>: <span class="bu">str</span>):</span>
+<span id="cb2-7"><a aria-hidden="true" href="#cb2-7" tabindex="-1"></a>    queue <span class="op">=</span> channels[<span class="bu">id</span>]</span>
+<span id="cb2-8"><a aria-hidden="true" href="#cb2-8" tabindex="-1"></a>    <span class="cf">while</span> queue.empty():</span>
+<span id="cb2-9"><a aria-hidden="true" href="#cb2-9" tabindex="-1"></a>        <span class="cf">with</span> lock:</span>
+<span id="cb2-10"><a aria-hidden="true" href="#cb2-10" tabindex="-1"></a>            msg <span class="op">=</span> get_message()</span>
+<span id="cb2-11"><a aria-hidden="true" href="#cb2-11" tabindex="-1"></a>            channnels[msg.<span class="bu">id</span>].put(msg)</span>
+<span id="cb2-12"><a aria-hidden="true" href="#cb2-12" tabindex="-1"></a>    <span class="cf">return</span> queue.get()</span></code></pre></div>
+<p>The shrinkray one <a href="https://github.com/DRMacIver/shrinkray/blob/9115fed50c0cff24604fde7c5794607ab4fc70ec/src/shrinkray/passes/patching.py#L69">looks
+a bit different</a> because the merge queue operates on many patches at
+a time rather than being single message like the dispatcher case, but is
+basically the same principle: Check if we need to become the merge
+thread, if we do start doing that until our patch is merged or rejected,
+and if not just wait on the (guaranteed to be running) merge thread
+until we get to that point.</p>
+<p>Do you need this trick? No, probably not. But it has solved a genuine
+need for me twice, so maybe you’ll be the third time it was useful.</p>
+
+</section>
+
+    </article>
+<footer>
+Copyright David R. MacIver.
+
+CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
+</footer>
+  </body>
+</html>

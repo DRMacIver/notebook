@@ -2,14 +2,101 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://notebook.drmaciver.com/</id>
   <title>DRMacIver's notebook</title>
-  <updated>2025-10-12T13:31:43+01:00</updated>
+  <updated>2026-02-23T17:10:00+00:00</updated>
   <author>
     <name>David R. MacIver</name>
     <email>david@drmaciver.com</email>
   </author>
   <link href="https://notebook.drmaciver.com" rel="alternate"/>
   <link href="https://notebook.drmaciver.com/feed.xml" rel="self"/>
-  <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
+  <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2025-05-01-17:47.html</id>
+    <title>Studying specifics</title>
+    <updated>2025-05-01T19:34:10+01:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Studying specifics&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2025-05-01&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;There’s something I deeply believe, and only very erratically manage
+to follow through on, which is that there’s a huge amount to be learned
+by studying something more than it seemingly warrants. This is in some
+sense the core of the post &lt;a href="https://drmaciver.substack.com/p/overthinking-overthinking"&gt;Overthinking
+overthinking&lt;/a&gt; which is what created the “Overthinking Everything”
+name that I now use for my newsletter and community.&lt;/p&gt;
+
+
+&lt;p&gt;One core reason for this is &lt;a href="https://notebook.drmaciver.com/posts/2020-03-05-11:27.html"&gt;existence
+proofs&lt;/a&gt;. If you put more effort into solving a problem than it really
+warrants, you’ve now demonstrated that that problem &lt;em&gt;was&lt;/em&gt;
+solvable, and you can potentially use that solution in other cases,
+gradually reducing its effort.&lt;/p&gt;
+
+
+&lt;p&gt;I think this relates to one of my points in &lt;a href="https://notebook.drmaciver.com/posts/2025-04-30-18:50.html"&gt;Heavy
+up front learning requirements&lt;/a&gt;, which is that it’s worth spending
+some time heavily studying skills you use regularly, even ones that
+don’t seem like they need it. Sometimes just by really levelling up one
+specific task, you should be able to learn generalisable lessons.&lt;/p&gt;
+
+
+&lt;p&gt;The problem is of course… how do you actually do this? How do you
+pick what specifics to study?&lt;/p&gt;
+
+
+&lt;p&gt;One part of the answer is to just do which ones bring you joy, but I
+think there’s a key problem with this: The specific prescription is to
+study something &lt;em&gt;more than it warrants&lt;/em&gt;. If it brings you joy to
+study it, hopefully you’re already using that joy to prompt you to spend
+more time on it.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Right? Right?? Um, OK, this theory might have some
+problems.&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;p&gt;You could study everything more than it warrants, but then you
+rapidly hit resource constraings. Where are you going to find time for
+that?&lt;/p&gt;
+
+
+&lt;p&gt;I think this is, often, the bottleneck on the joy version too: There
+are many things that if &lt;a href="https://notebook.drmaciver.com/posts/2022-01-03-14:16.html"&gt;you
+just followed your curiosity&lt;/a&gt; you’d find would bring you joy, but
+there are &lt;em&gt;too many things&lt;/em&gt;, and as a result you do none of
+them.&lt;/p&gt;
+
+
+&lt;p&gt;Instead, a better solution I think is to pick arbitrarily and
+capriciously. Perhaps, ideally, at random from those that you think seem
+like they would be interesting to do.&lt;/p&gt;
+
+
+&lt;p&gt;One of my recurring fantasy scenarios is what I’d do with an
+improbably large amount of money, and one of the regular projects I
+think about is just randomly sampling a few hundred people from the
+population and giving them near unlimited healthcare - extensive
+investigations of anything that’s a problem for them, suitable
+interventions (erring on the side of cheap and low risk ones), and then
+studying the data from that extensively to learn useable lessons for the
+broader population.&lt;/p&gt;
+
+
+&lt;p&gt;This strikes me as the right sort of general tool: By sampling
+randomly from the set of places you &lt;em&gt;could&lt;/em&gt; intervene, you learn
+plenty of things that will generalise out of that.&lt;/p&gt;
+
+
+&lt;p&gt;I don’t yet have a very good idea of how to implement this
+though.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2025-05-01-17:47.html"/>
+  </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-05-02-14:19.html</id>
     <title>No</title>
@@ -105,7 +192,7 @@ forthcoming.&lt;/li&gt;
 &lt;/ol&gt;
 
 </content>
-    <link href="https://notebook.drmaciver.com/posts/2025-05-02-14:19.html" rel="alternate"/>
+    <link href="https://notebook.drmaciver.com/posts/2025-05-02-14:19.html"/>
   </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-05-03-16:49.html</id>
@@ -278,7 +365,7 @@ Season 1 and didn’t really feel throughout most of Season 2. As a
 result, I find myself actually looking forward to Season 4.&lt;/p&gt;
 
 </content>
-    <link href="https://notebook.drmaciver.com/posts/2025-05-03-16:49.html" rel="alternate"/>
+    <link href="https://notebook.drmaciver.com/posts/2025-05-03-16:49.html"/>
   </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-05-04-09:53.html</id>
@@ -360,7 +447,7 @@ additional effort.&lt;/p&gt;
 potatoes.&lt;/p&gt;
 
 </content>
-    <link href="https://notebook.drmaciver.com/posts/2025-05-04-09:53.html" rel="alternate"/>
+    <link href="https://notebook.drmaciver.com/posts/2025-05-04-09:53.html"/>
   </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-06-01-11:38.html</id>
@@ -554,166 +641,7 @@ with gaining understanding through calculation, and figuring out when
 and how that works.&lt;/p&gt;
 
 </content>
-    <link href="https://notebook.drmaciver.com/posts/2025-06-01-11:38.html" rel="alternate"/>
-  </entry>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2025-06-02-08:51.html</id>
-    <title>The Weierstrass approximation theorem as a probabilistic result</title>
-    <updated>2025-06-02T08:51:00+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;The Weierstrass approximation theorem as a probabilistic result&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2025-06-02&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I was reading through Probability with Martingales, which is one of
-the books I’m studying at the moment&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;A bit haphazardly, it must be said.&lt;/span&gt; and was surprised to run
-into a proof of the Weirstrass Approximation Theorem, the theorem that
-the polynomials are dense in the space &lt;span class="math inline"&gt;\(C([a,
-b])\)&lt;/span&gt; equipped with the supremum measure. The proof presented is
-apparently actually the original proof, but I’d somehow either never
-seen it before, or saw it stripped of the probability somehow.&lt;label class="margin-toggle sidenote-number" for="fn2"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn2" type="checkbox"/&gt;&lt;span class="sidenote"&gt;I think it’s possible that I’ve only ever seen the proof
-of the Stone-Weirstrass Theorem, which is a fully more general result,
-but I’m not sure. I think it’s impossible that I’ve never seen a proof
-of this result some time in my maths career, but for whatever reason it
-hasn’t stuck in my mind at all.&lt;/span&gt;&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2025-06-02-08:51.html" rel="alternate"/>
-  </entry>
-  <entry>
-    <id>https://notebook.drmaciver.com/posts/2025-06-02-14:56.html</id>
-    <title>Variance of elementary symmetric polynomials</title>
-    <updated>2025-06-02T14:56:00+01:00</updated>
-    <content type="html">
-
-&lt;p class="subtitle"&gt;Variance of elementary symmetric polynomials&lt;/p&gt;
-
-
-&lt;dl class="metadata"&gt;
-&lt;dt&gt;Published&lt;/dt&gt;
-&lt;dd class="post-date"&gt;2025-06-02&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;p&gt;I was trying to figure out what the variance of a certain estimator
-should be, and found it helpful to work through a special case. You…
-probably don’t care about any of this, sorry, but the end result was
-nice so I thought I’d write it up.&lt;/p&gt;
-
-
-&lt;p&gt;Suppose you’ve got independent random variables &lt;span class="math inline"&gt;\(X_1, \ldots, X_n\)&lt;/span&gt; with &lt;span class="math inline"&gt;\(E(X_i) = 0\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(Var(X_i) = 1\)&lt;/span&gt;. The &lt;span class="math inline"&gt;\(X_i\)&lt;/span&gt; don’t necessarily have the same
-distribution beyond that.&lt;label class="margin-toggle sidenote-number" for="fn1"&gt;&lt;/label&gt;&lt;input class="margin-toggle" id="fn1" type="checkbox"/&gt;&lt;span class="sidenote"&gt;Though in the case I actually care about they do.&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;p&gt;Now, suppose we have some &lt;span class="math inline"&gt;\(k\)&lt;/span&gt; with
-&lt;span class="math inline"&gt;\(0 \leq k \leq n\)&lt;/span&gt;. The elementary
-symmetric polynomial $e_k(x) = &lt;em&gt;{u n^k } &lt;/em&gt;{i u} x_i $, where
-&lt;span class="math inline"&gt;\([n]^k\)&lt;/span&gt; is the set of all subsets of
-${1, , n}) of size &lt;span class="math inline"&gt;\(k\)&lt;/span&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;It’s easy to see that &lt;span class="math inline"&gt;\(E(e_k(X)) =
-0\)&lt;/span&gt;, because all of the summands are a product of independent
-variables with expected &lt;span class="math inline"&gt;\(0\)&lt;/span&gt;. The
-question I wanted to answer was what is &lt;span class="math inline"&gt;\(Var(e_k(X))\)&lt;/span&gt;?&lt;/p&gt;
-
-
-&lt;p&gt;First, write $Q_u = _{i u} X_i $, so &lt;span class="math inline"&gt;\(e_k(X) = \sum Q_u\)&lt;/span&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;Then we have &lt;span class="math inline"&gt;\(Var(e_k(X)) =
-\sum\limits_{u, v \in [n]^k} Cov(Q_u, Q_v)\)&lt;/span&gt;. So we just need to
-work out those covariances.&lt;/p&gt;
-
-
-&lt;p&gt;It turns out, that if &lt;span class="math inline"&gt;\(u \neq v\)&lt;/span&gt;
-then &lt;span class="math inline"&gt;\(Cov(Q_u, Q_v) = 0\)&lt;/span&gt;, because we
-can write&lt;/p&gt;
-
-
-&lt;p&gt;[Q_u Q_v = X_j &lt;em&gt;{i u {j}} X_i &lt;/em&gt;{i v {j}} X_i ]&lt;/p&gt;
-
-
-&lt;p&gt;The second two terms are independent of &lt;span class="math inline"&gt;\(X_j\)&lt;/span&gt;, so &lt;span class="math inline"&gt;\(E(Q_u
-Q_v) = E(X_j) E(\ldots) = 0\)&lt;/span&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;This is slightly interesting as they’re &lt;em&gt;not&lt;/em&gt; in general
-independent.&lt;/p&gt;
-
-
-&lt;p&gt;Now, we just have to work out &lt;span class="math inline"&gt;\(Var(Q_u)\)&lt;/span&gt;, but this is easy, because &lt;span class="math inline"&gt;\(E(Q_u) = 0\)&lt;/span&gt;, so &lt;span class="math inline"&gt;\(Var(Q_u) = E(\prod\limits_{i \in u} X_i^2)
-=  \prod\limits_{i \in u} E(X_i^2) = 1\)&lt;/span&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;As a result:&lt;/p&gt;
-
-
-&lt;p&gt;&lt;span class="math display"&gt;\[\begin{align*}
-Var(e_k(X)) &amp;amp;= \sum\limits_{u \in [n]^k } 1 \\
-&amp;amp; = |[n]^k| \\
-&amp;amp; = {n \choose k} \\
-\end{align*}\]&lt;/span&gt;&lt;/p&gt;
-
-
-&lt;hr/&gt;
-
-
-&lt;p&gt;The reason this is interesting is actually related to &lt;a href="https://notebook.drmaciver.com/posts/2025-06-01-11:38.html"&gt;my
-last post&lt;/a&gt;. The idea is that if you’ve got some independent unbiased
-estimators &lt;span class="math inline"&gt;\(X_i\)&lt;/span&gt; for a quantity &lt;span class="math inline"&gt;\(\mu\)&lt;/span&gt;, and you want to construct
-independent unbiased estimators for &lt;span class="math inline"&gt;\(\mu^k\)&lt;/span&gt;, you can do this by multiplying
-&lt;span class="math inline"&gt;\(X_1, \ldots, X_n\)&lt;/span&gt;. But if you’re
-already sampling from those, you can also get estimators for the
-quantities &lt;span class="math inline"&gt;\(\mu^k\)&lt;/span&gt; with &lt;span class="math inline"&gt;\(k &amp;lt; n\)&lt;/span&gt;, “for free”, by just multiplying
-any &lt;span class="math inline"&gt;\(k\)&lt;/span&gt; of the &lt;span class="math inline"&gt;\(X_i\)&lt;/span&gt; you’ve sampled from. But by just
-picking one, you’re throwing away a lot of possible data you could use
-for estimation. Taking &lt;em&gt;all&lt;/em&gt; the possible products and averaging
-them should in theory get you a lower-variance unbiased estimator.&lt;/p&gt;
-
-
-&lt;p&gt;This post came out of me trying to figure out exactly how much lower
-variance, and the answer is actually quite a lot in the special case of
-mean 0 and variance 1, as the above result shows that after taking the
-average the variance of this estimator is &lt;span class="math inline"&gt;\(\frac{1}{n \choose k}\)&lt;/span&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;You can calculate all of these estimators at once using dynamic
-programming:&lt;/p&gt;
-
-
-&lt;div class="sourceCode" id="cb1"&gt;&lt;pre class="sourceCode python"&gt;&lt;code class="sourceCode python"&gt;&lt;span id="cb1-1"&gt;&lt;a aria-hidden="true" href="#cb1-1" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="im"&gt;import&lt;/span&gt; numpy &lt;span class="im"&gt;as&lt;/span&gt; np&lt;/span&gt;
-&lt;span id="cb1-2"&gt;&lt;a aria-hidden="true" href="#cb1-2" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb1-3"&gt;&lt;a aria-hidden="true" href="#cb1-3" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id="cb1-4"&gt;&lt;a aria-hidden="true" href="#cb1-4" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="kw"&gt;def&lt;/span&gt; elementary_means(xs):&lt;/span&gt;
-&lt;span id="cb1-5"&gt;&lt;a aria-hidden="true" href="#cb1-5" tabindex="-1"&gt;&lt;/a&gt;    means &lt;span class="op"&gt;=&lt;/span&gt; np.zeros(&lt;span class="bu"&gt;len&lt;/span&gt;(xs) &lt;span class="op"&gt;+&lt;/span&gt; &lt;span class="dv"&gt;1&lt;/span&gt;)&lt;/span&gt;
-&lt;span id="cb1-6"&gt;&lt;a aria-hidden="true" href="#cb1-6" tabindex="-1"&gt;&lt;/a&gt;    means[&lt;span class="dv"&gt;0&lt;/span&gt;] &lt;span class="op"&gt;=&lt;/span&gt; &lt;span class="dv"&gt;1&lt;/span&gt;&lt;/span&gt;
-&lt;span id="cb1-7"&gt;&lt;a aria-hidden="true" href="#cb1-7" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="cf"&gt;for&lt;/span&gt; n, xn &lt;span class="kw"&gt;in&lt;/span&gt; &lt;span class="bu"&gt;enumerate&lt;/span&gt;(xs, &lt;span class="dv"&gt;1&lt;/span&gt;):&lt;/span&gt;
-&lt;span id="cb1-8"&gt;&lt;a aria-hidden="true" href="#cb1-8" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="cf"&gt;for&lt;/span&gt; k &lt;span class="kw"&gt;in&lt;/span&gt; &lt;span class="bu"&gt;range&lt;/span&gt;(&lt;span class="bu"&gt;len&lt;/span&gt;(means) &lt;span class="op"&gt;-&lt;/span&gt; &lt;span class="dv"&gt;1&lt;/span&gt;, &lt;span class="dv"&gt;0&lt;/span&gt;, &lt;span class="op"&gt;-&lt;/span&gt;&lt;span class="dv"&gt;1&lt;/span&gt;):&lt;/span&gt;
-&lt;span id="cb1-9"&gt;&lt;a aria-hidden="true" href="#cb1-9" tabindex="-1"&gt;&lt;/a&gt;            means[k] &lt;span class="op"&gt;+=&lt;/span&gt; (means[k &lt;span class="op"&gt;-&lt;/span&gt; &lt;span class="dv"&gt;1&lt;/span&gt;] &lt;span class="op"&gt;*&lt;/span&gt; xn &lt;span class="op"&gt;-&lt;/span&gt; means[k]) &lt;span class="op"&gt;*&lt;/span&gt; k &lt;span class="op"&gt;/&lt;/span&gt; n&lt;/span&gt;
-&lt;span id="cb1-10"&gt;&lt;a aria-hidden="true" href="#cb1-10" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="cf"&gt;return&lt;/span&gt; means&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;(Algorithm from &lt;a href="https://d1qx31qr3h6wln.cloudfront.net/publications/urm.pdf"&gt;An
-unbiased ray-marching transmittance estimator&lt;/a&gt;)&lt;/p&gt;
-
-
-&lt;p&gt;This does seem to give the right answer, but I’m a little worried
-about its numerical stability. Part of why I wanted to work out the 0/1
-case was to test out whether the variances I was getting were right, and
-it looks like this ends up producing too high a variance for &lt;span class="math inline"&gt;\(e_n\)&lt;/span&gt;. I don’t entirely know why, as the
-other variances seem right, but it’s an easy fix to just replace that
-one in particular with the easily calculable product of all the
-samples.&lt;/p&gt;
-
-</content>
-    <link href="https://notebook.drmaciver.com/posts/2025-06-02-14:56.html" rel="alternate"/>
+    <link href="https://notebook.drmaciver.com/posts/2025-06-01-11:38.html"/>
   </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-08-24-12:11.html</id>
@@ -840,7 +768,7 @@ of doing the thing until it feels natural, so let’s see if some more
 daily writing fixes it.&lt;/p&gt;
 
 </content>
-    <link href="https://notebook.drmaciver.com/posts/2025-08-24-12:11.html" rel="alternate"/>
+    <link href="https://notebook.drmaciver.com/posts/2025-08-24-12:11.html"/>
   </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-08-25-10:56.html</id>
@@ -931,7 +859,7 @@ risks the big things crowding out the small things.&lt;/p&gt;
 &lt;p&gt;But I’ll save further experiments for another day.&lt;/p&gt;
 
 </content>
-    <link href="https://notebook.drmaciver.com/posts/2025-08-25-10:56.html" rel="alternate"/>
+    <link href="https://notebook.drmaciver.com/posts/2025-08-25-10:56.html"/>
   </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-08-26-18:34.html</id>
@@ -1042,12 +970,12 @@ things that gross them out. Although oddly I think in that case they
 sharing timezone facts&lt;/a&gt;.&lt;/p&gt;
 
 </content>
-    <link href="https://notebook.drmaciver.com/posts/2025-08-26-18:34.html" rel="alternate"/>
+    <link href="https://notebook.drmaciver.com/posts/2025-08-26-18:34.html"/>
   </entry>
   <entry>
     <id>https://notebook.drmaciver.com/posts/2025-10-12-12:43.html</id>
     <title>Speeding up conditional sampling with divide and conquer</title>
-    <updated>2025-10-12T13:31:43+01:00</updated>
+    <updated>2025-10-12T14:14:02+01:00</updated>
     <content type="html">
 
 &lt;p class="subtitle"&gt;Speeding up conditional sampling with divide and conquer&lt;/p&gt;
@@ -1183,6 +1111,133 @@ sometimes it is, and that when it is it can be a huge speed
 improvement.&lt;/p&gt;
 
 </content>
-    <link href="https://notebook.drmaciver.com/posts/2025-10-12-12:43.html" rel="alternate"/>
+    <link href="https://notebook.drmaciver.com/posts/2025-10-12-12:43.html"/>
+  </entry>
+  <entry>
+    <id>https://notebook.drmaciver.com/posts/2026-02-23-17:10.html</id>
+    <title>Temporary processing loops as a sometimes replacement for background threads</title>
+    <updated>2026-02-23T17:10:00+00:00</updated>
+    <content type="html">
+
+&lt;p class="subtitle"&gt;Temporary processing loops as a sometimes replacement for background threads&lt;/p&gt;
+
+
+&lt;dl class="metadata"&gt;
+&lt;dt&gt;Published&lt;/dt&gt;
+&lt;dd class="post-date"&gt;2026-02-23&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;There’s a trick I’ve used twice now, and I figure any trick worth
+using twice is worth writing up. I’ve never seen anyone else using it,
+possibly because it’s not actually very useful, or is secretly a bad
+idea for reasons that I’m unaware of. It’s obvious enough that I’d be
+surprised if it was original to me, but I also expect most other people
+haven’t seen it either.&lt;/p&gt;
+
+
+&lt;p&gt;The basic idea is this: Suppose you have a bunch of tasks running in
+different threads, and you need some sort of background thread running
+to keep them happy. For example:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;In &lt;a href="https://github.com/DRMacIver/shrinkray"&gt;shrinkray&lt;/a&gt;
+the tasks are attempts to apply patches to a test case, and the
+background thread is a sort of “merge queue” which is responsible for
+trying to combine successful patches together.&lt;/li&gt;
+&lt;li&gt;In a recent project, I have a number of communication channels, and
+messages coming in from them on a single connection, and the background
+thread is reading those messages, figuring out where they need to go,
+and dispatching them to a queue for the right channel.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;…those are actually the only two examples I have right now. I could
+probably imagine more, but those are the ones I’ve concretely tried this
+in.&lt;/p&gt;
+
+
+&lt;p&gt;In any case, in both of these the background thread was sortof a pain
+in the ass. In the shrinkray case, there was a bunch of lifecycle
+management I had to worry about (the “thread” was actually a trio task,
+and in some of these use cases it was annoying to scope it to a
+nursery). In the messages case, it was viable, but it was difficult to
+debug and I wanted it to work in a language with kinda shit threading,
+so I’d rather not use a background thread if I didn’t have to.&lt;/p&gt;
+
+
+&lt;p&gt;Anyway, there turns out to be a common trick: In both of these cases,
+we are doing a thing in the calling thread, and that thing will return
+back to us only once the background thread has got to processing our
+particular need.&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;In shrinkray, we only care that the merge queue has run for long
+enough to either accept or reject the patch.&lt;/li&gt;
+&lt;li&gt;In the message processing case, we only care that the dispatcher has
+run for long enough that there is at least one message in our
+inbox.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;As a result, in both of these cases, we are essentially blocking
+until the dispatcher thread has got to our particular need. Which means
+there doesn’t need to be a dispatcher thread at all - we can just
+temporarily become it. Look at me, I’m the dispatcher thread now.&lt;/p&gt;
+
+
+&lt;p&gt;let’s look at some pseudocode for this. Here is how our message
+dispatcher might work with a background thread:&lt;/p&gt;
+
+
+&lt;div class="sourceCode" id="cb1"&gt;&lt;pre class="sourceCode python"&gt;&lt;code class="sourceCode python"&gt;&lt;span id="cb1-1"&gt;&lt;a aria-hidden="true" href="#cb1-1" tabindex="-1"&gt;&lt;/a&gt;channels: &lt;span class="bu"&gt;dict&lt;/span&gt;[&lt;span class="bu"&gt;str&lt;/span&gt;, SimpleQueue] &lt;span class="op"&gt;=&lt;/span&gt; {}&lt;/span&gt;
+&lt;span id="cb1-2"&gt;&lt;a aria-hidden="true" href="#cb1-2" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
+&lt;span id="cb1-3"&gt;&lt;a aria-hidden="true" href="#cb1-3" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
+&lt;span id="cb1-4"&gt;&lt;a aria-hidden="true" href="#cb1-4" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="kw"&gt;def&lt;/span&gt; run_dispatcher():&lt;/span&gt;
+&lt;span id="cb1-5"&gt;&lt;a aria-hidden="true" href="#cb1-5" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="cf"&gt;while&lt;/span&gt; &lt;span class="va"&gt;True&lt;/span&gt;:&lt;/span&gt;
+&lt;span id="cb1-6"&gt;&lt;a aria-hidden="true" href="#cb1-6" tabindex="-1"&gt;&lt;/a&gt;        msg &lt;span class="op"&gt;=&lt;/span&gt; get_message()&lt;/span&gt;
+&lt;span id="cb1-7"&gt;&lt;a aria-hidden="true" href="#cb1-7" tabindex="-1"&gt;&lt;/a&gt;        channnels[msg.&lt;span class="bu"&gt;id&lt;/span&gt;].put(msg)&lt;/span&gt;
+&lt;span id="cb1-8"&gt;&lt;a aria-hidden="true" href="#cb1-8" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
+&lt;span id="cb1-9"&gt;&lt;a aria-hidden="true" href="#cb1-9" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
+&lt;span id="cb1-10"&gt;&lt;a aria-hidden="true" href="#cb1-10" tabindex="-1"&gt;&lt;/a&gt;Thread(target&lt;span class="op"&gt;=&lt;/span&gt;run_dispatcher).start()&lt;/span&gt;
+&lt;span id="cb1-11"&gt;&lt;a aria-hidden="true" href="#cb1-11" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
+&lt;span id="cb1-12"&gt;&lt;a aria-hidden="true" href="#cb1-12" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
+&lt;span id="cb1-13"&gt;&lt;a aria-hidden="true" href="#cb1-13" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="kw"&gt;def&lt;/span&gt; get_messsage(&lt;span class="bu"&gt;id&lt;/span&gt;: &lt;span class="bu"&gt;str&lt;/span&gt;):&lt;/span&gt;
+&lt;span id="cb1-14"&gt;&lt;a aria-hidden="true" href="#cb1-14" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="cf"&gt;return&lt;/span&gt; channels[&lt;span class="bu"&gt;id&lt;/span&gt;].get()&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;And with inline processing:&lt;/p&gt;
+
+
+&lt;div class="sourceCode" id="cb2"&gt;&lt;pre class="sourceCode python"&gt;&lt;code class="sourceCode python"&gt;&lt;span id="cb2-1"&gt;&lt;a aria-hidden="true" href="#cb2-1" tabindex="-1"&gt;&lt;/a&gt;channels: &lt;span class="bu"&gt;dict&lt;/span&gt;[&lt;span class="bu"&gt;str&lt;/span&gt;, SimpleQueue] &lt;span class="op"&gt;=&lt;/span&gt; {}&lt;/span&gt;
+&lt;span id="cb2-2"&gt;&lt;a aria-hidden="true" href="#cb2-2" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
+&lt;span id="cb2-3"&gt;&lt;a aria-hidden="true" href="#cb2-3" tabindex="-1"&gt;&lt;/a&gt;lock &lt;span class="op"&gt;=&lt;/span&gt; Lock()&lt;/span&gt;
+&lt;span id="cb2-4"&gt;&lt;a aria-hidden="true" href="#cb2-4" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
+&lt;span id="cb2-5"&gt;&lt;a aria-hidden="true" href="#cb2-5" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
+&lt;span id="cb2-6"&gt;&lt;a aria-hidden="true" href="#cb2-6" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="kw"&gt;def&lt;/span&gt; get_messsage(&lt;span class="bu"&gt;id&lt;/span&gt;: &lt;span class="bu"&gt;str&lt;/span&gt;):&lt;/span&gt;
+&lt;span id="cb2-7"&gt;&lt;a aria-hidden="true" href="#cb2-7" tabindex="-1"&gt;&lt;/a&gt;    queue &lt;span class="op"&gt;=&lt;/span&gt; channels[&lt;span class="bu"&gt;id&lt;/span&gt;]&lt;/span&gt;
+&lt;span id="cb2-8"&gt;&lt;a aria-hidden="true" href="#cb2-8" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="cf"&gt;while&lt;/span&gt; queue.empty():&lt;/span&gt;
+&lt;span id="cb2-9"&gt;&lt;a aria-hidden="true" href="#cb2-9" tabindex="-1"&gt;&lt;/a&gt;        &lt;span class="cf"&gt;with&lt;/span&gt; lock:&lt;/span&gt;
+&lt;span id="cb2-10"&gt;&lt;a aria-hidden="true" href="#cb2-10" tabindex="-1"&gt;&lt;/a&gt;            msg &lt;span class="op"&gt;=&lt;/span&gt; get_message()&lt;/span&gt;
+&lt;span id="cb2-11"&gt;&lt;a aria-hidden="true" href="#cb2-11" tabindex="-1"&gt;&lt;/a&gt;            channnels[msg.&lt;span class="bu"&gt;id&lt;/span&gt;].put(msg)&lt;/span&gt;
+&lt;span id="cb2-12"&gt;&lt;a aria-hidden="true" href="#cb2-12" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="cf"&gt;return&lt;/span&gt; queue.get()&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The shrinkray one &lt;a href="https://github.com/DRMacIver/shrinkray/blob/9115fed50c0cff24604fde7c5794607ab4fc70ec/src/shrinkray/passes/patching.py#L69"&gt;looks
+a bit different&lt;/a&gt; because the merge queue operates on many patches at
+a time rather than being single message like the dispatcher case, but is
+basically the same principle: Check if we need to become the merge
+thread, if we do start doing that until our patch is merged or rejected,
+and if not just wait on the (guaranteed to be running) merge thread
+until we get to that point.&lt;/p&gt;
+
+
+&lt;p&gt;Do you need this trick? No, probably not. But it has solved a genuine
+need for me twice, so maybe you’ll be the third time it was useful.&lt;/p&gt;
+
+</content>
+    <link href="https://notebook.drmaciver.com/posts/2026-02-23-17:10.html"/>
   </entry>
 </feed>
