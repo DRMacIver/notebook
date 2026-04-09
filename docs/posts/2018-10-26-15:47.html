@@ -1,114 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <title>
-DRMacIver's Notebook: Deleting larger intervals in test case reduction
-    </title>
-
-    <meta property="og:title" content="Deleting larger intervals in test case reduction">
-
-    <meta property="og:url" content="https://notebook.drmaciver.com/posts/2018-10-26-15:47.html" />
-    <link rel="canonical" href="https://notebook.drmaciver.com/posts/2018-10-26-15:47.html" />
-    <script src="https://hypothes.is/embed.js" async></script>
-
-
-    <meta name="twitter:card" content="summary" />
-
-    <meta property="og:creator" content="@DRMacIver">
-
-    <link rel="stylesheet" href="/pandoc.css"/>
-    <link rel="stylesheet" href="/pygments.css"/>
-    <link rel="stylesheet" href="/tufte.css"/>
-    <link rel="stylesheet" href="/latex.css"/>
-    <link rel="stylesheet" href="/drmnotes.css"/>
-    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {inlineMath: [['\\(', '\\)']]},
-  multiLine: true,
-  "HTML-CSS": { 
-       linebreaks: { automatic: true }
-  },
-  SVG: { 
-       linebreaks: { automatic: true } 
-  }
-});
-
-MathJax.Hub.Register.MessageHook("Math Processing Error", function(message) {
-  console.log(message)
-});
-
-</script>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169185204-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-169185204-1');
-</script>
-
-  </head>
-
-  <body>
-    <article>
-        <h1><a href="/">DRMacIver's Notebook</a></h1>
-        <p class=subtitle>Deleting larger intervals in test case reduction</p>
-
-        
-
-<section id="the-post">
-<p class=subtitle>Deleting larger intervals in test case reduction</p>
-<dl class=metadata>
-<dt>Published</dt>
-<dd class="post-date">2018-10-26</dd>
-</dl>
-
-<p>So here’s a surprising fact I just noticed.</p>
-<p>Suppose you’ve got some sequence <span class="math inline">\(S\)</span> and a predicate <span class="math inline">\(p\)</span> and you want to do test-case reduction
-on <span class="math inline">\(S\)</span> with respect to <span class="math inline">\(p\)</span>.</p>
-<p>Classically we try to get the result to be one-minimal. I’m
-<em>pretty</em> sure that by choosing <span class="math inline">\(p\)</span> carefully you can always force this to
-require <span class="math inline">\({|S|\choose 2}\)</span> evaluations
-of <span class="math inline">\(p\)</span>. You certainly can with the
-greedy algorithm. See <a href="https://mathoverflow.net/questions/313669/what-is-the-minimum-worst-case-length-of-an-element-removal-game">this
-mathoverflow question I asked about generalising</a>.</p>
-<p>A stronger condition you might want is what you might call
-<em>interval</em> minimality. That is you want to find <span class="math inline">\(S'\)</span> with <span class="math inline">\(p(S')\)</span> such that <span class="math inline">\(p([S_1', \ldots, S_i', S_j', \ldots,
-S_n'])\)</span> is false for any <span class="math inline">\(i &lt;
-j\)</span>.</p>
-<p>The funny thing is that these tasks have the same worst case
-complexity.</p>
-<p>If you run the brute force algorithm that tries to delete each
-interval of length <span class="math inline">\(k\)</span> at a time,
-increasing <span class="math inline">\(k\)</span> when that fails, if
-you delete an interval of size <span class="math inline">\(m\)</span>
-then this takes you worst case <span class="math inline">\(m \frac{2n -
-m + 1}{2}\)</span> evaluations, but it decreases the size of the
-sequence by <span class="math inline">\(m\)</span>. By doing induction
-and seeing where the maximum lies, this means that the actual number of
-predicate evaluations to get to a fixed point can also never exceed
-<span class="math inline">\({|S|\choose 2}\)</span>.</p>
-<p>The <em>typical</em> case is generally not going to be as good, but
-it’s interesting that the worst case is the same.</p>
-
-</section>
-
-    </article>
-<footer>
-Copyright David R. MacIver.
-
-CSS mostly due to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.
-</footer>
-  </body>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="refresh" content="0; url=https://drmaciver.com/notebook/2018/10/deleting-larger-intervals-in-test-case-reduction/">
+<link rel="canonical" href="https://drmaciver.com/notebook/2018/10/deleting-larger-intervals-in-test-case-reduction/">
+<title>Redirect</title>
+</head>
+<body>
+<p>This page has moved to <a href="https://drmaciver.com/notebook/2018/10/deleting-larger-intervals-in-test-case-reduction/">https://drmaciver.com/notebook/2018/10/deleting-larger-intervals-in-test-case-reduction/</a>.</p>
+</body>
 </html>
